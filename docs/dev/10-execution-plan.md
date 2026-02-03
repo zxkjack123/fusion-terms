@@ -476,7 +476,14 @@
 
 - [x] 清洗增强有单测（refs/table/caption 等）
 - [x] 提供 filtered candidates 输出（min-count/top-k/stopwords）
-- [ ] 人工抽查 top-100：噪声明显下降
+- [x] 2026-02-03：完成一次 top-100 抽查记录（见下）
+- [ ] 人工抽查 top-100：噪声明显下降（仍待达成）
+
+抽查记录（2026-02-03）：
+
+- 样本：真实语料子集 `--max-files 500`
+- 命令：`python3 -m pipeline.extract_candidates --source-root /home/gw/ComputeData/pdf2md/ZoteroIngest/staging --out-dir artifacts --max-files 500 --min-count-zh 3 --topk-zh 120 --incremental`
+- 观察：`candidates_zh.filtered.tsv` 的 top-30 仍出现大量通用/结构性片段（如：`其中`、`例如`、`所示`、`此外`、`所以`、`但是`、`得到`、`因此`、`如图`、`从式`、`称为`、`左右`、`以上`、`量级` 等），说明中文侧还需要进一步降噪（下一步通常会倾向引入 `--zh-stopwords` 的常用噪声词表 + 更强的结构性行过滤/分割策略）。
 
 ### 阶段 3：增量更新
 
