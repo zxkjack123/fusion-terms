@@ -1,0 +1,48 @@
+# Chinese stopwords for filtered candidate review
+# One token per line. Comments (#) and empty lines are ignored.
+#
+# Goal: remove common structural/non-term spans frequently extracted from academic prose.
+# Keep this list conservative; prefer adding only high-frequency, low-value items.
+
+其中
+例如
+所示
+此外
+所以
+但是
+因此
+得到
+如图
+从图
+在图
+表示
+由于
+问题
+分析
+条件
+使用
+模型
+不同
+过程
+公式
+以及
+以上
+左右
+量级
+称为
+
+# Paper scaffolding / section words (often not terms)
+本文
+研究
+结果
+方法
+讨论
+结论
+定义
+
+# Citation / figure/table boilerplate
+出处同图
+参考
+文献
+图
+表

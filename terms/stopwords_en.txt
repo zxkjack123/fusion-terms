@@ -1,0 +1,14 @@
+# English stopwords for filtered candidate review
+# One token per line. Comments (#) and empty lines are ignored.
+#
+# This is for *filtered output* only (extract_candidates --en-stopwords).
+# Keep conservative; avoid removing legit acronyms or device names.
+
+Figure
+Table
+Eq
+Fig
+
+# Common non-term words that sometimes appear as ALLCAPS acronyms in text metadata
+# (Add only after you confirm they are noise in your corpus.)
+

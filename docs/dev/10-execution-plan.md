@@ -170,6 +170,11 @@
   - `--min-count-zh` / `--min-count-en`
   - `--topk-zh` / `--topk-en`
   - （可选）`--zh-stopwords path` / `--en-stopwords path`
+
+建议：把 stopwords 作为 repo 内可协作维护的种子文件（方便持续降噪），例如：
+
+- `terms/stopwords_zh.txt`
+- `terms/stopwords_en.txt`
 - 新增产物（建议命名）：
   - `artifacts/candidates_zh.filtered.tsv`
   - `artifacts/candidates_en.filtered.tsv`
@@ -476,6 +481,7 @@
 
 - [x] 清洗增强有单测（refs/table/caption 等）
 - [x] 提供 filtered candidates 输出（min-count/top-k/stopwords）
+- [x] 提供 repo 内 stopwords 种子（`terms/stopwords_zh.txt` / `terms/stopwords_en.txt`）
 - [x] 2026-02-03：完成一次 top-100 抽查记录（见下）
 - [ ] 人工抽查 top-100：噪声明显下降（仍待达成）
 
