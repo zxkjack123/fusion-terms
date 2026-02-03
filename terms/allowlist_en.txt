@@ -1,9 +1,56 @@
-# One term per line (English / mixed).
-# Examples:
-# ITER
-# tokamak
-# H-mode
-# ICRH
-# ELM
-# Nb3Sn
-# D-T
+# One term per line (English / mixed). No whitespace.
+# Note: multi-word phrases are stored as atomic tokens (e.g., neutral + beam).
+
+# --- Devices / facilities
+ITER
+EAST
+JET
+KSTAR
+DIII-D
+ASDEX
+W7-X
+JT-60SA
+
+# --- Concepts / regimes / instabilities
+tokamak
+stellarator
+H-mode
+L-mode
+ELM
+NTM
+disruption
+
+# --- Heating / current drive (acronyms)
+NBI
+ICRH
+ECRH
+LHCD
+
+# --- Diagnostics (acronyms / key tokens)
+TS
+CXRS
+bolometry
+interferometry
+
+# --- Materials / alloys / mixtures
+tungsten
+beryllium
+graphite
+molybdenum
+Nb3Sn
+CuCrZr
+W/Be
+D-T
+
+# --- Parameters / symbols (keep both ASCII and Greek where useful)
+q95
+q_95
+beta_N
+β_N
+tau_E
+τ_E
+
+# --- Phrase components (optional; can be generic)
+neutral
+beam
+injection

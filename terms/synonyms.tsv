@@ -1,7 +1,21 @@
 # alias	preferred	lang(optional)
 #
 # Use this to normalize casing, hyphenation, and common aliases.
-# Examples:
+# IMPORTANT: token-only contract. Do NOT put whitespace in alias/preferred.
+# (If you need multi-word phrase handling, split into atomic tokens instead.)
+#
+# Examples (token-only):
 # Tokamak	tokamak	en
-# H mode	H-mode	en
-# 托卡马克	托卡马克	zh
+# Hmode	H-mode	en
+
+# --- Hyphen / punctuation normalizations
+Hmode	H-mode	en
+Lmode	L-mode	en
+DT	D-T	en
+W-Be	W/Be	en
+WBe	W/Be	en
+
+# --- Parameter spellings (ASCII variants)
+q_95	q95	en
+betaN	beta_N	en
+tauE	tau_E	en

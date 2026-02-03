@@ -4,3 +4,17 @@
 # Figure
 # Table
 # https
+
+# Common document boilerplate / noise tokens
+Figure
+Table
+References
+Acknowledgements
+Abstract
+https
+http
+doi
+
+# Bib-style fragments
+et
+al

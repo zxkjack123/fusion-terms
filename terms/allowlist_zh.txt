@@ -1,5 +1,23 @@
-# One term per line (Chinese).
-# Examples:
-# 托卡马克
-# 等离子体
-# 磁约束聚变
+# One term per line (Chinese). No whitespace.
+
+# --- Core concepts
+托卡马克
+等离子体
+磁约束聚变
+核聚变
+
+# --- Components / systems
+第一壁
+偏滤器
+真空室
+超导磁体
+
+# --- Regimes / phenomena (keep short, commonly used)
+H模
+L模
+边界局域模
+
+# --- Common diagnostics (Chinese forms)
+汤姆逊散射
+干涉仪
+磁探针
