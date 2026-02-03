@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.dist/
+.venv/
+venv/
+
+# Tool caches
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Editors / OS
+.vscode/settings.json
+.DS_Store
+
+# Local caches & large intermediates
+artifacts/.cache/
+artifacts/.cache.json
+artifacts/candidates_*.tsv
+artifacts/candidates_*.jsonl
+artifacts/*.log
+
+# Generated artifacts
+artifacts/domain_terms.txt
+artifacts/extract_stats.json
+artifacts/extract_delta.json
+
+# Optional local-only pointers
+sources/local_paths.txt

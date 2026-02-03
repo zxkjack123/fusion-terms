@@ -1,0 +1,6 @@
+# One token per line. Exact-match filters applied during build.
+# Add obvious noise fragments here.
+# Examples:
+# Figure
+# Table
+# https

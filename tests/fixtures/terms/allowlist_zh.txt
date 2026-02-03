@@ -1,0 +1,2 @@
+# minimal zh allowlist for smoke tests
+托卡马克

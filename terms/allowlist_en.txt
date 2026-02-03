@@ -1,0 +1,9 @@
+# One term per line (English / mixed).
+# Examples:
+# ITER
+# tokamak
+# H-mode
+# ICRH
+# ELM
+# Nb3Sn
+# D-T

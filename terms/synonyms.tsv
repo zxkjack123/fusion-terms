@@ -1,0 +1,7 @@
+# alias	preferred	lang(optional)
+#
+# Use this to normalize casing, hyphenation, and common aliases.
+# Examples:
+# Tokamak	tokamak	en
+# H mode	H-mode	en
+# 托卡马克	托卡马克	zh

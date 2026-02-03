@@ -1,0 +1,503 @@
+# fusion-terms 执行计划（分阶段实施）
+
+> 本文把 `docs/dev/*` 的设计方案，落成可直接指导实施的工程执行计划。
+>
+> 核心原则：**不把 userdb 当源数据**，repo 内以 `terms/*` 为唯一真相；流水线保持可复现：
+>
+> `sources (外部 Markdown 语料)` → `candidates (候选)` → `review (allow/deny/synonyms)` → `artifacts (产物)` → `Rime 导入/词典`
+
+## 0. 当前工作区现状（基线）
+
+仓库路径：`/home/gw/opt/fusion-terms`
+
+已具备：
+
+- 配置：`config.toml`（默认语料根目录：`/home/gw/ComputeData/pdf2md/ZoteroIngest/staging`）
+- 抽词：`pipeline/extract_candidates.py`
+  - 输出：`artifacts/candidates_zh.tsv`、`artifacts/candidates_en.tsv`、`artifacts/extract_stats.json`
+- 构建：`pipeline/build_terms.py`
+  - 输入：`terms/allowlist_zh.txt`、`terms/allowlist_en.txt`、`terms/denylist.txt`、`terms/synonyms.tsv`
+  - 输出：`artifacts/domain_terms.txt`
+- Rime 导入辅助：`pipeline/rime_export.py`（复用 `/home/gw/.local/bin/rime_import_wordlist.py`）
+- 同步到 Fcitx/Rime wordlists：`pipeline/sync_to_fcitx.py`
+- VS Code Tasks：`.vscode/tasks.json`（extract/build/sync/export/import）
+- 设计文档：`docs/dev/01..04`（架构、流水线、Rime 集成、英文短语增强模式规划）
+
+本执行计划在不破坏上述结构的前提下，按阶段增强：可复现性、抽词质量、增量更新、审核体验、Rime 稳定集成、发布协作。
+
+---
+
+## 1. 阶段 0：工程化基线（可复现 + 可检查）
+
+### 任务 0.1：仓库卫生与工程约束（lint/test/ignore/CI）
+
+**目标**
+
+- 把“能跑”升级为“可复现、可协作、可持续迭代”。
+- 明确哪些产物提交、哪些不提交，避免 artifacts/缓存污染 git。
+
+**修改内容**
+
+- 新增（或完善）工程配置：
+  - `pyproject.toml`（推荐）：统一 Python 工具配置（pytest/ruff/black/isort/mypy 等，可分阶段启用）
+  - `tests/`：最小单测框架与 fixtures
+  - `.gitignore`：补全忽略项（如 `.mypy_cache/`、临时 artifacts、缓存）
+- （可选）新增 CI：GitHub Actions 在 PR 上跑最小测试集。
+
+**测试内容**
+
+- 在 `tests/fixtures/` 小语料上跑通：`extract → build`。
+- 确认 VS Code tasks 仍正常（尤其 `python -m pipeline.*` 模式 import 不受 cwd 影响）。
+
+**验收指标**
+
+- 新机器 clone 后，仅依赖 Python，即可在 fixtures 上一键跑通流程。
+- git status 不被缓存/大文件污染。
+
+---
+
+## 2. 阶段 1：第一版“可用词库”（立刻提升输入法体验）
+
+### 任务 1.1：审核准则定稿（review 的“宪法”）
+
+**目标**
+
+- 将 `docs/dev/01-architecture.md` 的范围，固化为更可执行的审核规则，减少每次审核决策成本。
+
+**修改内容**
+
+- 在以下两种方式中二选一（推荐 A）：
+  - A）新增 `docs/dev/05-review-rules.md`
+  - B）在 `docs/dev/01-architecture.md` 追加“命名/规范化约定”章节
+
+建议至少写清：
+
+- 英文大小写规范：缩写全大写（`NBI`），普通英文单词按惯例（一般小写；专名按惯例）
+- 连字符与空格：`H-mode` vs `H mode` 的 preferred form
+- 数字/符号：`q95`、`β_N`、`D-T`、`W/Be` 的收录与规范
+- 中英双收策略：例如 “托卡马克 / tokamak” 是否双收，还是 synonyms 归一
+- 英文多词词组策略（重要）：**词组不作为一个词条入库**。
+  - 例：`neutral beam` 只需确保 `neutral` 与 `beam` 在词表中即可
+  - 明确不做：`neutralbeam` / `neutral_beam` 这类“无空格二元搭配”
+  - 这会带来取舍：短语级一键输出不追求；靠“原子词 + 输入法联想/补全/学习”满足日常输入
+
+**测试内容**
+
+- 取 20 个典型术语（装置/方法/材料/参数/缩写/短语），按规则走一遍，能得出一致结论。
+
+**验收指标**
+
+- ≥90% 的典型术语能“按规则一眼决定收不收、怎么写”。
+
+### 任务 1.2：allowlist/denylist/synonyms 种子集（覆盖核心类别）
+
+**目标**
+
+- 形成第一版高价值术语集，马上能导入并显著改善输入法。
+
+**修改内容**
+
+- 编辑：
+  - `terms/allowlist_zh.txt`
+  - `terms/allowlist_en.txt`
+  - `terms/denylist.txt`
+  - `terms/synonyms.tsv`
+
+建议按类别分段注释（不会影响解析）：
+
+- Devices：ITER/EAST/JET/DIII-D/…
+- Heating：NBI/ICRH/ECRH/LHCD/…
+- Diagnostics：Thomson scattering / interferometry / bolometry / …
+- Materials：tungsten / beryllium / Nb3Sn / CuCrZr / …
+- Parameters/regimes：q95 / beta_N / pedestal / confinement / …
+
+**测试内容**
+
+- 运行 VS Code task：
+  - `fusion-terms: build final wordlist`
+  - `fusion-terms: generate rime import file`
+  - （可选）`fusion-terms: sync to fcitx wordlists`
+  - （可选）`fusion-terms: generate + import to Rime`
+
+**验收指标**
+
+- `artifacts/domain_terms.txt` 生成成功：无空行/奇怪空格/明显噪声。
+- `artifacts/domain_terms.txt` 中不应出现包含空格的英文词条（即每行必须是单个 token）。
+- 导入后：至少 30 个代表性术语能稳定打出（中英文各测一些）。
+
+---
+
+## 3. 阶段 2：抽词质量提升（降噪优先，随后提召回）
+
+> 当前中文候选量巨大属于预期；此阶段目标是让候选更“可审”。
+
+### 任务 2.1：Markdown 清洗增强（高性价比降噪）
+
+**目标**
+
+- 更好地丢弃：参考文献段落、表格噪声、图注/表注、公式碎片、模板化句子等。
+
+**修改内容**
+
+- 增强 `pipeline/common.py::clean_markdown_lines()`：
+  - 识别并截断 references/参考文献区
+  - 表格行（`| a | b |`）与长数字/符号密集行的过滤策略
+  - 常见论文样板语行级过滤（注意避免误伤术语）
+- 新增单测：
+  - `tests/test_clean_markdown.py`
+  - `tests/fixtures/` 中加入包含 code fence / table / refs 的 markdown
+
+**测试内容**
+
+- 单元测试：fixtures 清洗输出符合预期。
+- 小样本抽词（如 `--max-files 10`）：对比清洗增强前后 top 候选的噪声占比。
+
+**验收指标**
+
+- 清洗相关单测覆盖关键噪声样式。
+- 小样本下：top-100 候选中“明显非术语”比例显著下降。
+
+### 任务 2.2：候选过滤输出（不破坏原始 TSV 合同）
+
+**目标**
+
+- 在保留 `candidates_*.tsv` 原始输出的同时，新增“过滤版候选”以提升审核效率。
+
+**修改内容**
+
+- 扩展 `pipeline/extract_candidates.py`（保持默认行为不变）：
+  - `--min-count-zh` / `--min-count-en`
+  - `--topk-zh` / `--topk-en`
+  - （可选）`--zh-stopwords path` / `--en-stopwords path`
+- 新增产物（建议命名）：
+  - `artifacts/candidates_zh.filtered.tsv`
+  - `artifacts/candidates_en.filtered.tsv`
+
+**测试内容**
+
+- 单测：min-count/top-k 的过滤正确。
+- 集成：小样本下 filtered 行数显著减少且包含预期术语。
+
+**验收指标**
+
+- 审核者可在 30–60 分钟内从 filtered 候选中挑出一批高价值术语。
+- 原始候选仍保留用于回溯与调参。
+
+---
+
+## 4. 阶段 3：增量抽取（把“持续更新”成本降到接近 0）
+
+### 任务 3.1：文件哈希缓存（只处理新增/变更语料）
+
+**目标**
+
+- 避免每次全量扫描海量 Markdown；支持增量抽取与 delta 报告。
+
+**修改内容**
+
+- 新增缓存（建议放 `artifacts/.cache.json` 或 `artifacts/.cache/`）：
+  - file path → content hash → last processed → stats
+- `pipeline/extract_candidates.py` 新增：
+  - `--incremental`：跳过未变化文件
+  - （可选）`--since YYYY-MM-DD`：仅处理某日期后新增/变更
+- 新增 delta 报告：`artifacts/extract_delta.json`
+
+**测试内容**
+
+- 单测：同一文件二次运行会被跳过；内容变化后会重新处理。
+- 集成：fixtures 模拟变更，delta 统计正确。
+
+**验收指标**
+
+- 二次运行跳过 >90% 未变化文件（取决于真实语料更新量）。
+- delta 报告可直接指导“本次要审核哪些新增候选”。
+
+---
+
+## 5. 阶段 4：英文多词词组处理（按 token 入库；短语仅作“发现线索”可选）
+
+> 你已明确：不需要无空格形式的二元搭配；多词英文词组（如 `neutral beam`）**按两个单词分别入库**即可。
+> 因此本阶段的默认目标不是“让短语作为一个词条可触发”，而是：确保组成词覆盖完善、规范化一致。
+
+### 任务 4.1：英文 token 规范化与拆分约束（默认 on）
+
+**目标**
+
+- 确保英文入库单位是单个 token（每行一个），避免后续 Rime 侧出现“带空格词条不触发/不稳定”的不确定性。
+- 对多词词组：不追求短语级体验，专注把组成词（以及必要的缩写/符号 token）收全。
+
+**修改内容**
+
+- 在 `pipeline/build_terms.py` 的校验阶段（后续“构建加固”任务中实现）增加硬性规则：
+  - 丢弃/报错：包含空格或制表符的 term
+  - 允许：连字符、斜杠、点号、数字、希腊字母（按既定规范）
+- 在 `docs/dev/05-review-rules.md`（或 `01-architecture.md`）把该约束写成强规则：英文词组只拆分入库，不做拼接。
+
+**测试内容**
+
+- 单测：构建时遇到包含空格的 term 会被阻止进入 `artifacts/domain_terms.txt`（并给出可定位的报错/统计）。
+
+**验收指标**
+
+- `artifacts/domain_terms.txt` 满足“每行单 token”约束。
+
+### 任务 4.2（可选/后续）：英文短语挖掘（YAKE/RAKE/spaCy）仅作为“词汇发现线索”
+
+**说明**
+
+- 若未来需要“更快发现候选词”，可以启用短语挖掘，但输出只用于提示“哪些 token 值得加入 allowlist/denylist/synonyms”，而不是把短语本身导入词表。
+- 该可选项的设计仍保留在 `docs/dev/04-english-phrase-extraction.md`，但其验收不再要求短语可在 Rime 中作为一个词条触发。
+
+---
+
+## 6. 阶段 5：审核工具化（Review Pack / Diff / 指导审核）
+
+### 任务 5.1：生成审阅包与差分报告
+
+**目标**
+
+- 将审核从“翻大 TSV”升级为“定向审核新增/高价值候选”。
+
+**修改内容**
+
+- 新增脚本（建议）：
+  - `pipeline/review_pack.py`：输出分组审阅包（Markdown/CSV）
+  - `pipeline/diff_candidates.py`：对比上次候选，生成新增/上升项列表
+- 文档补充：在 `docs/dev/02` 中写清建议审核节奏（每周/每次增量）。
+
+**测试内容**
+
+- 单测：diff 逻辑正确。
+- 人工验收：review pack 是否显著提升审核速度。
+
+**验收指标**
+
+- 每次增量更新审核可在 30–90 分钟完成一轮有效迭代（视新增量）。
+
+---
+
+## 7. 阶段 6：Rime 集成加固（导入安全、可回滚、可验证）
+
+### 任务 6.1：导入安全与幂等
+
+**目标**
+
+- Option A（导入 userdb）变得可控：备份、dry-run、失败可回滚。
+
+**修改内容**
+
+- 增强 `pipeline/rime_export.py` 或新增 `pipeline/rime_import_safe.py`：
+  - `--dry-run`（只生成 import 文件不导入）
+  - 导入前备份关键文件（写日志）
+  - 导入后给出验证提示/检查项
+- 更新 `docs/dev/03-rime-integration.md`：补充回滚流程。
+
+**测试内容**
+
+- dry-run 的行为测试。
+- 真实导入属于手工集成测试（避免自动化脚本破坏用户环境）。
+
+**验收指标**
+
+- 任意一次导入都可回滚。
+- 导入失败不会静默，错误信息可定位。
+
+### 任务 6.2：Option B baked dictionary（`.dict.yaml`）
+
+**目标**
+
+- 生成 `fusion_terms.dict.yaml` 并能被 rime-ice 引用，获得最稳定的迁移与一致性。
+
+**修改内容**
+
+- 新增生成器：`pipeline/generate_dict_yaml.py`
+- 文档：在 `docs/dev/03` 写清接入方式（`import_tables` 或 `table_translator`）与 deploy 步骤。
+
+**测试内容**
+
+- YAML 结构校验（关键字段齐全）。
+- 手工：Rime deploy 成功且可打出。
+
+**验收指标**
+
+- 新机器无需依赖 userdb 学习状态，也能一致获得术语体验。
+
+---
+
+## 8. 阶段 7：发布与共享（可选，但强烈建议）
+
+### 任务 7.1：版本与变更记录
+
+**目标**
+
+- 每次更新可回答“改了什么/为什么”，便于回滚与协作。
+
+**修改内容**
+
+- 新增 `CHANGELOG.md`（或 `docs/releases/`）
+- `pipeline/build_terms.py` 输出摘要统计：新增/删除/总数、按语言占比
+
+**测试内容**
+
+- build 输出稳定、统计一致。
+
+**验收指标**
+
+- 任意版本可追溯变更与原因。
+
+---
+
+## 9. Known risks / non-goals / measurement plan
+
+本节把当前方案中已识别的风险点显式化，并给出“落地条目 + 验收用例表”，避免项目推进到中后期才发现关键缺口。
+
+### 9.1 Known risks（已知风险）与对应缓解措施
+
+#### 风险 A：中文候选量爆炸，审核不可持续
+
+- **现象**：当前中文抽取策略偏“固定长度汉字片段”，会产出大量非术语子串。
+- **影响**：候选 TSV 过大→审核效率极低→allowlist 增长停滞。
+- **缓解措施（落地条目）**：
+  - 优先做阶段 2：
+    - 2.1 强化清洗（references、表格、图注、公式噪声）
+    - 2.2 输出 filtered candidates（min-count/top-k/stopwords）
+  - 引入“审阅友好输出”作为强制工序：每次 review 只看 filtered。
+- **验收**：`candidates_zh.filtered.tsv` 的 top-100 中“明显非术语”比例显著下降（人工抽查）。
+
+#### 风险 B：英文 `count` 语义易被误用
+
+- **现象**：英文候选计数可能是“按行出现次数（line-frequency）”，不等于真实 token 出现次数。
+- **影响**：阈值过滤/Top-K 策略可能失真（误杀或误留）。
+- **缓解措施（落地条目）**：
+  - 在 `docs/dev/02-pipeline.md` 或本文件中明确 `count` 的定义。
+  - 若后续需要，提供两种计数（line-frequency 与 occurrence）并在 TSV 列名区分。
+- **验收**：过滤参数（如 `--min-count-en`）能被一致解释；review 时不会因误解 `count` 做出错误取舍。
+
+#### 风险 C：参数/符号类术语覆盖不足（q95、β_N、τ_E 等）
+
+- **现象**：参数名常包含小写+数字、希腊字母、下划线、乘号、LaTeX 转义（例如 `\\beta_N`）。
+- **影响**：你最关心的一类（参数名）可能“抽不到/很难靠自动候选发现”，只能手工 seed。
+- **缓解措施（落地条目）**：
+  - 阶段 1.2 先手工 seed 一批关键参数（确保立即可用）。
+  - 阶段 2.2/后续增强英文候选规则：加入 parameter token pattern（例如 `q\\d+`、`beta_N`/`β_N`、`tau_E`/`τ_E`、`E×B`/`ExB` 等）。
+  - 清洗阶段保留有意义的符号，不要在清洗里把它们全部剔除。
+- **验收**：参数类术语在候选与最终 artifacts 中有稳定覆盖（见 9.3 验收用例表）。
+
+#### 风险 D：英文词组按 token 入库会“丢失短语级一键输出”
+
+- **现象**：你选择不把 `neutral beam` 这类多词短语作为单条词条导入，因此无法保证“输入一次就出整段短语”。
+- **影响**：短语级输入效率可能不如“短语词条”方案；但工程复杂度与不确定性显著下降。
+- **缓解措施（落地条目）**：
+  - 确保组成词覆盖足够：`neutral`、`beam`、`injection` 等必须进入 allowlist（或能从候选中稳定浮现）。
+  - 对强需求的短语，优先考虑引入/固化缩写（如 `NBI`）而不是做无空格拼接。
+  - 继续保留 Option B baked dict 作为“将来真的需要短语体验”时的升级通道，但不作为当前验收要求。
+- **验收**：组成词在 Rime 中都可稳定触发；缩写类术语能满足多数高频输入。
+
+#### 风险 E：`synonyms.tsv` 第三列（lang）在实现中可能未生效
+
+- **现象**：文档允许 `alias\tpreferred\tlang(optional)`，但实现若只读前两列，则第三列仅是注释。
+- **影响**：未来想做“按语言不同归一策略”时可能踩坑。
+- **缓解措施（落地条目）**：
+  - 要么实现支持 lang；要么在文档中明确“当前忽略第三列”。
+- **验收**：团队成员不会误以为 lang 已生效；或实现确实按 lang 生效。
+
+#### 风险 F：全量语料抽取的性能与内存边界
+
+- **现象**：候选字典（term→count/examples/files）可能很大，全量处理会耗时/占内存。
+- **影响**：跑不动/跑很慢，阻断迭代。
+- **缓解措施（落地条目）**：
+  - 阶段 3.1 做增量缓存（hash cache）。
+  - 限制 examples/files 保存上限（当前已有），并在全量下复核是否足够。
+  - 必要时引入 streaming/分桶（例如先写临时计数，再归并）。
+- **验收**：二次运行增量模式能明显加速；全量模式可在可接受时间内完成（以你机器为准）。
+
+### 9.2 Non-goals（非目标，避免范围失控）
+
+- 不追求“完全自动、零人工”的术语库：**allowlist 审核**是质量保证核心。
+- 不追求一次性覆盖“所有专业术语”：以迭代方式提升覆盖率。
+- 不在早期就引入复杂的中文 NLP 分词/依存句法：先把清洗、过滤、review 体系做稳。
+- 不把 `*.userdb` 当成可合并的源数据：它只是消费端缓存/学习状态。
+
+### 9.3 Measurement plan（度量与验收用例表）
+
+#### 关键度量指标（建议每轮迭代记录）
+
+- **候选质量**：
+  - filtered top-100 的“可接受率”（人工抽查）：目标逐步提升
+  - 噪声主要来源分类（refs/table/caption/通用词/子串）
+- **审核效率**：
+  - 每小时可稳定新增多少个高质量术语（allowlist 增量）
+- **覆盖面**：
+  - 装置名/缩写/方法/材料/参数五类是否都有稳定增长
+- **导入可靠性**：
+  - 固定验收用例集导入后是否可触发
+- **增量性能**：
+  - `--incremental` 模式下跳过比例、运行时间变化
+
+#### 验收用例表（建议作为阶段 6 的固定回归集）
+
+下表是一套最小但覆盖关键类型的用例。每次做了“清洗/抽取/构建/导入”相关改动，都建议跑一遍。
+
+| 类别         | 代表用例（示例）                                        |    预期出现在 candidates | 预期出现在 artifacts/domain_terms.txt | 预期在 Rime 可触发（A 或 B） |
+| ------------ | ------------------------------------------------------- | -----------------------: | ------------------------------------: | ---------------------------: |
+| 装置/设施    | ITER, EAST, JET, DIII-D                                 |                 是（en） |                                    是 |                           是 |
+| 缩写         | ICRH, ECRH, NBI, ELM, H-mode                            |                 是（en） |                                    是 |                           是 |
+| 英文词组拆分 | neutral beam injection（拆分为 neutral/beam/injection） |                 是（en） |                                    是 |                           是 |
+| 材料/牌号    | Nb3Sn, CuCrZr, tungsten, beryllium                      |                 是（en） |                                    是 |                           是 |
+| 参数/符号    | q95, beta_N / β_N, tau_E / τ_E                          | 规则增强后：应为是（en） |                                    是 |                           是 |
+| 混合串       | D-T, W/Be                                               |                 是（en） |                                    是 |                           是 |
+
+说明：
+
+- 若某一类在 candidates 中长期缺失，应优先通过“规则增强 + 清洗不误伤”解决，而不是完全依赖手工 seed。
+- 本方案不要求“英文短语带空格”作为单条词条可触发；验收仅关注拆分后的 token 覆盖与可触发性。
+
+---
+
+## 10. 进度跟踪 Checklist（建议贴到 issue/项目看板）
+
+### 阶段 0：基线
+
+- [x] `.gitignore` 完整忽略缓存（含 `.mypy_cache/`）
+- [x] `tests/fixtures` + 最小单测框架已建立
+- [x] fixtures 上 `extract → build` 可复现跑通
+
+### 阶段 1：第一版可用词表
+
+- [ ] 审核规则文档定稿（大小写/连字符/混写/符号）
+- [ ] `allowlist_zh/en` 有覆盖核心类别的种子术语
+- [ ] `synonyms.tsv` 覆盖常见变体归一
+- [ ] 构建 + 导入后：关键术语可稳定打出
+
+### 阶段 2：降噪与审阅友好
+
+- [ ] 清洗增强有单测（refs/table/caption 等）
+- [ ] 提供 filtered candidates 输出（min-count/top-k/stopwords）
+- [ ] 人工抽查 top-100：噪声明显下降
+
+### 阶段 3：增量更新
+
+- [ ] 有 hash cache，未变文件可跳过
+- [ ] 有 delta 报告（新/变/跳过统计）
+- [ ] 增量审核成本显著下降
+
+### 阶段 4：英文词组处理（token 级）
+
+- [ ] 构建产物不含空格词条（每行单 token）
+- [ ] 多词词组的组成词（neutral/beam/injection 等）能在候选与最终词表中稳定覆盖
+- [ ] （可选）短语挖掘仅作为“发现线索”启用，不作为验收项
+
+### 阶段 5：审核工具化
+
+- [ ] review pack / diff 新增候选可用
+- [ ] allow/deny/synonyms 更新更省时
+
+### 阶段 6：Rime 稳定集成
+
+- [ ] 导入安全（备份/回滚/dry-run/验证）
+- [ ] baked dict 方案可用（可选，但建议最终上）
+
+### 阶段 7：发布协作
+
+- [ ] changelog/版本策略明确
+- [ ] 构建统计报表（新增/删除/归一化）可生成

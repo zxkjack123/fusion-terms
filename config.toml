@@ -1,0 +1,19 @@
+# fusion-terms configuration
+
+[sources]
+# Your Markdown corpus root (pdf2md output). Can be overridden by CLI flags.
+root = "/home/gw/ComputeData/pdf2md/ZoteroIngest/staging"
+
+[extract]
+# Chinese candidate span length bounds
+min_zh_len = 2
+max_zh_len = 8
+
+# How many example contexts to store per term
+max_examples = 3
+
+# Cap per-term file list to avoid huge TSVs
+max_files_per_term = 20
+
+[artifacts]
+out_dir = "artifacts"

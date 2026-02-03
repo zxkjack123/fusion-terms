@@ -1,0 +1,7 @@
+# minimal en allowlist for smoke tests
+ITER
+NBI
+H-mode
+Nb3Sn
+W/Be
+beta_N

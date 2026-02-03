@@ -1,0 +1,5 @@
+# One term per line (Chinese).
+# Examples:
+# 托卡马克
+# 等离子体
+# 磁约束聚变

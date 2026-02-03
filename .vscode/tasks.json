@@ -1,0 +1,60 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "fusion-terms: extract candidates",
+            "type": "shell",
+            "command": "python3",
+            "args": [
+                "-m",
+                "pipeline.extract_candidates",
+                "--config",
+                "${workspaceFolder}/config.toml"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "fusion-terms: build final wordlist",
+            "type": "shell",
+            "command": "python3",
+            "args": [
+                "-m",
+                "pipeline.build_terms",
+                "--config",
+                "${workspaceFolder}/config.toml"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "fusion-terms: sync to fcitx wordlists",
+            "type": "shell",
+            "command": "python3",
+            "args": [
+                "-m",
+                "pipeline.sync_to_fcitx"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "fusion-terms: generate rime import file",
+            "type": "shell",
+            "command": "python3",
+            "args": [
+                "-m",
+                "pipeline.rime_export"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "fusion-terms: generate + import to Rime",
+            "type": "shell",
+            "command": "python3",
+            "args": [
+                "-m",
+                "pipeline.rime_export",
+                "--import"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}
