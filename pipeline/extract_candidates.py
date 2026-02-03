@@ -1,9 +1,11 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import re
 from collections import Counter, defaultdict
+from dataclasses import dataclass
 from pathlib import Path
 from typing import DefaultDict
 
@@ -29,6 +31,72 @@ MATERIAL_FORMULA_RE = re.compile(r"\b[A-Z][a-z]?(?:\d+)(?:[A-Z][a-z]?\d+)*\b")
 SLASH_MIX_RE = re.compile(r"\b[A-Za-z]{1,6}\/[A-Za-z]{1,6}\b")
 
 
+CACHE_SCHEMA_VERSION = 1
+
+
+def _sha256_text(text: str) -> str:
+    return hashlib.sha256(text.encode("utf-8", errors="ignore")).hexdigest()
+
+
+def _sha1_str(s: str) -> str:
+    return hashlib.sha1(s.encode("utf-8", errors="ignore")).hexdigest()
+
+
+def _extractor_signature(*, min_zh_len: int, max_zh_len: int) -> str:
+    # Any extraction-rule change should change this signature.
+    payload = "\n".join(
+        [
+            f"schema={CACHE_SCHEMA_VERSION}",
+            f"min_zh_len={min_zh_len}",
+            f"max_zh_len={max_zh_len}",
+            f"ACRONYM_RE={ACRONYM_RE.pattern}",
+            f"HYPHEN_TERM_RE={HYPHEN_TERM_RE.pattern}",
+            f"MATERIAL_FORMULA_RE={MATERIAL_FORMULA_RE.pattern}",
+            f"SLASH_MIX_RE={SLASH_MIX_RE.pattern}",
+        ]
+    )
+    return _sha1_str(payload)
+
+
+@dataclass
+class _CacheIndexEntry:
+    mtime_ns: int
+    size: int
+    sha256: str
+    result_relpath: str
+
+
+def _load_cache_index(cache_dir: Path) -> dict:
+    idx_path = cache_dir / "index.json"
+    if not idx_path.exists():
+        return {}
+    try:
+        return json.loads(idx_path.read_text("utf-8"))
+    except Exception:
+        # Corrupt cache; treat as missing.
+        return {}
+
+
+def _save_cache_index(cache_dir: Path, index: dict) -> None:
+    cache_dir.mkdir(parents=True, exist_ok=True)
+    (cache_dir / "index.json").write_text(
+        json.dumps(index, ensure_ascii=False, indent=2),
+        "utf-8",
+    )
+
+
+def _cache_entry_from_dict(d: dict) -> _CacheIndexEntry | None:
+    try:
+        return _CacheIndexEntry(
+            mtime_ns=int(d["mtime_ns"]),
+            size=int(d["size"]),
+            sha256=str(d.get("sha256", "")),
+            result_relpath=str(d["result_relpath"]),
+        )
+    except Exception:
+        return None
+
+
 def load_config(config_path: Path) -> dict:
     if not config_path.exists():
         return {}
@@ -50,6 +118,8 @@ def extract(
     topk_en: int | None,
     zh_stopwords: set[str] | None,
     en_stopwords: set[str] | None,
+    incremental: bool,
+    cache_dir: Path | None,
 ) -> None:
     zh_re = re.compile(
         ZH_RE_TEMPLATE.format(min_len=min_zh_len, max_len=max_zh_len)
@@ -64,21 +134,189 @@ def extract(
     zh_files: DefaultDict[str, list[str]] = defaultdict(list)
     en_files: DefaultDict[str, list[str]] = defaultdict(list)
 
+    extractor_sig = _extractor_signature(
+        min_zh_len=min_zh_len,
+        max_zh_len=max_zh_len,
+    )
+
+    cache_enabled = incremental or cache_dir is not None
+    cache_dir = cache_dir
+    if cache_enabled and cache_dir is None:
+        cache_dir = out_dir / ".cache" / "extract_v1"
+
+    cache_hits = 0
+    cache_misses = 0
+    processed_files = 0
+    skipped_files = 0
+    cache_invalidated = False
+
+    cache_index: dict = {}
+    cache_files: dict[str, dict] = {}
+    if cache_enabled and cache_dir is not None:
+        cache_index = _load_cache_index(cache_dir)
+        if (
+            cache_index.get("version") != CACHE_SCHEMA_VERSION
+            or cache_index.get("extractor_sig") != extractor_sig
+        ):
+            cache_index = {
+                "version": CACHE_SCHEMA_VERSION,
+                "extractor_sig": extractor_sig,
+                "files": {},
+            }
+            cache_invalidated = True
+        cache_files = cache_index.setdefault("files", {})
+
+    # Delta report: aggregate term changes across processed files.
+    zh_added_delta: Counter[str] = Counter()
+    zh_removed_delta: Counter[str] = Counter()
+    en_added_delta: Counter[str] = Counter()
+    en_removed_delta: Counter[str] = Counter()
+    processed_paths_sample: list[str] = []
+
+    def _merge_file_contrib(
+        md_path: Path,
+        file_zh_counts: dict[str, int],
+        file_en_counts: dict[str, int],
+        file_zh_examples: dict[str, list[str]],
+        file_en_examples: dict[str, list[str]],
+    ) -> None:
+        # counts
+        zh_counts.update(file_zh_counts)
+        en_counts.update(file_en_counts)
+
+        # files list per term
+        md_str = str(md_path)
+        for term in file_zh_counts.keys():
+            if len(zh_files[term]) < max_files_per_term:
+                zh_files[term].append(md_str)
+        for tok in file_en_counts.keys():
+            if len(en_files[tok]) < max_files_per_term:
+                en_files[tok].append(md_str)
+
+        # examples (bounded)
+        for term, ex_list in file_zh_examples.items():
+            if len(zh_examples[term]) >= max_examples:
+                continue
+            for ex in ex_list:
+                if len(zh_examples[term]) >= max_examples:
+                    break
+                zh_examples[term].append(ex)
+        for tok, ex_list in file_en_examples.items():
+            if len(en_examples[tok]) >= max_examples:
+                continue
+            for ex in ex_list:
+                if len(en_examples[tok]) >= max_examples:
+                    break
+                en_examples[tok].append(ex)
+
     scanned = 0
     for md_path in iter_markdown_files(source_root):
         if max_files is not None and scanned >= max_files:
             break
         scanned += 1
 
+        st = md_path.stat()
+        md_key = str(md_path)
+        cached_entry = (
+            _cache_entry_from_dict(cache_files.get(md_key, {}))
+            if cache_enabled
+            else None
+        )
+
+        can_use_cache = False
+        cached_result_path: Path | None = None
+        if (
+            cache_enabled
+            and cached_entry is not None
+            and cache_dir is not None
+        ):
+            if (
+                cached_entry.mtime_ns == st.st_mtime_ns
+                and cached_entry.size == st.st_size
+            ):
+                cached_result_path = cache_dir / cached_entry.result_relpath
+                if cached_result_path.exists():
+                    can_use_cache = True
+
+        if incremental and can_use_cache:
+            # Static type narrowing: can_use_cache implies these.
+            assert cache_dir is not None
+            assert cached_entry is not None
+            assert cached_result_path is not None
+
+            try:
+                data = json.loads(cached_result_path.read_text("utf-8"))
+            except Exception:
+                # Corrupt cache entry; fall back to re-processing.
+                can_use_cache = False
+            else:
+                cache_hits += 1
+                skipped_files += 1
+                _merge_file_contrib(
+                    md_path,
+                    file_zh_counts={
+                        k: int(v)
+                        for k, v in data.get("zh_counts", {}).items()
+                    },
+                    file_en_counts={
+                        k: int(v)
+                        for k, v in data.get("en_counts", {}).items()
+                    },
+                    file_zh_examples={
+                        k: list(v)
+                        for k, v in data.get("zh_examples", {}).items()
+                    },
+                    file_en_examples={
+                        k: list(v)
+                        for k, v in data.get("en_examples", {}).items()
+                    },
+                )
+                continue
+
+        # Cache miss or full processing.
+        if cache_enabled:
+            cache_misses += 1
+        processed_files += 1
+        if len(processed_paths_sample) < 50:
+            processed_paths_sample.append(md_key)
+
+        old_zh_counts: dict[str, int] = {}
+        old_en_counts: dict[str, int] = {}
+        if (
+            incremental
+            and cache_enabled
+            and cache_dir is not None
+            and cached_entry is not None
+        ):
+            old_path = cache_dir / cached_entry.result_relpath
+            if old_path.exists():
+                try:
+                    old_data = json.loads(old_path.read_text("utf-8"))
+                    old_zh_counts = {
+                        k: int(v)
+                        for k, v in old_data.get("zh_counts", {}).items()
+                    }
+                    old_en_counts = {
+                        k: int(v)
+                        for k, v in old_data.get("en_counts", {}).items()
+                    }
+                except Exception:
+                    old_zh_counts = {}
+                    old_en_counts = {}
+
+        file_zh_counts: Counter[str] = Counter()
+        file_en_counts: Counter[str] = Counter()
+        file_zh_examples: dict[str, list[str]] = {}
+        file_en_examples: dict[str, list[str]] = {}
+
         text = read_text_file(md_path)
         for line in clean_markdown_lines(text):
             # Chinese spans
             for term in zh_re.findall(line):
-                zh_counts[term] += 1
-                if len(zh_examples[term]) < max_examples:
-                    zh_examples[term].append(line)
-                if len(zh_files[term]) < max_files_per_term:
-                    zh_files[term].append(str(md_path))
+                file_zh_counts[term] += 1
+                if term not in file_zh_examples:
+                    # Keep at most 1 example per term per file (cache bounded).
+                    file_zh_examples[term] = [line]
 
             # English/mixed tokens
             tokens = set()
@@ -88,11 +326,76 @@ def extract(
             tokens.update(SLASH_MIX_RE.findall(line))
 
             for tok in tokens:
-                en_counts[tok] += 1
-                if len(en_examples[tok]) < max_examples:
-                    en_examples[tok].append(line)
-                if len(en_files[tok]) < max_files_per_term:
-                    en_files[tok].append(str(md_path))
+                file_en_counts[tok] += 1
+                if tok not in file_en_examples:
+                    file_en_examples[tok] = [line]
+
+        # Update delta counters (only meaningful when incremental).
+        if incremental:
+            new_zh = dict(file_zh_counts)
+            new_en = dict(file_en_counts)
+
+            for term, new_cnt in new_zh.items():
+                old_cnt = old_zh_counts.get(term, 0)
+                if new_cnt > old_cnt:
+                    zh_added_delta[term] += new_cnt - old_cnt
+            for term, old_cnt in old_zh_counts.items():
+                new_cnt = new_zh.get(term, 0)
+                if old_cnt > new_cnt:
+                    zh_removed_delta[term] += old_cnt - new_cnt
+
+            for tok, new_cnt in new_en.items():
+                old_cnt = old_en_counts.get(tok, 0)
+                if new_cnt > old_cnt:
+                    en_added_delta[tok] += new_cnt - old_cnt
+            for tok, old_cnt in old_en_counts.items():
+                new_cnt = new_en.get(tok, 0)
+                if old_cnt > new_cnt:
+                    en_removed_delta[tok] += old_cnt - new_cnt
+
+        # Merge file contribution into globals.
+        _merge_file_contrib(
+            md_path,
+            file_zh_counts=dict(file_zh_counts),
+            file_en_counts=dict(file_en_counts),
+            file_zh_examples=file_zh_examples,
+            file_en_examples=file_en_examples,
+        )
+
+        # Persist per-file cache.
+        if cache_enabled and cache_dir is not None:
+            relpath = f"files/{_sha1_str(md_key)}.json"
+            result_path = cache_dir / relpath
+            result_path.parent.mkdir(parents=True, exist_ok=True)
+
+            payload = {
+                "version": CACHE_SCHEMA_VERSION,
+                "extractor_sig": extractor_sig,
+                "path": md_key,
+                "mtime_ns": int(st.st_mtime_ns),
+                "size": int(st.st_size),
+                "sha256": _sha256_text(text),
+                "zh_counts": dict(file_zh_counts),
+                "en_counts": dict(file_en_counts),
+                "zh_examples": file_zh_examples,
+                "en_examples": file_en_examples,
+            }
+            result_path.write_text(
+                json.dumps(payload, ensure_ascii=False, indent=2),
+                "utf-8",
+            )
+            cache_files[md_key] = {
+                "mtime_ns": int(st.st_mtime_ns),
+                "size": int(st.st_size),
+                "sha256": payload["sha256"],
+                "result_relpath": relpath,
+            }
+
+    if cache_enabled and cache_dir is not None:
+        cache_index["version"] = CACHE_SCHEMA_VERSION
+        cache_index["extractor_sig"] = extractor_sig
+        cache_index["files"] = cache_files
+        _save_cache_index(cache_dir, cache_index)
 
     ensure_dir(out_dir)
 
@@ -133,7 +436,14 @@ def extract(
     # Filtered outputs (only written when any filter flag is provided)
     want_filtered = any(
         v is not None
-        for v in [min_count_zh, min_count_en, topk_zh, topk_en, zh_stopwords, en_stopwords]
+        for v in [
+            min_count_zh,
+            min_count_en,
+            topk_zh,
+            topk_en,
+            zh_stopwords,
+            en_stopwords,
+        ]
     )
     if want_filtered:
         write_tsv(
@@ -155,18 +465,75 @@ def extract(
             stopwords=en_stopwords,
         )
 
-    stats = {
+    outputs: dict[str, str | None] = {
+        "zh": str(zh_tsv),
+        "en": str(en_tsv),
+        "zh_filtered": str(zh_filtered_tsv) if want_filtered else None,
+        "en_filtered": str(en_filtered_tsv) if want_filtered else None,
+    }
+
+    stats: dict[str, object] = {
         "source_root": str(source_root),
         "files_scanned": scanned,
         "zh_terms": len(zh_counts),
         "en_terms": len(en_counts),
-        "outputs": {
-            "zh": str(zh_tsv),
-            "en": str(en_tsv),
-            "zh_filtered": str(zh_filtered_tsv) if want_filtered else None,
-            "en_filtered": str(en_filtered_tsv) if want_filtered else None,
+        "cache": {
+            "enabled": cache_enabled,
+            "incremental": incremental,
+            "dir": str(cache_dir) if cache_dir is not None else None,
+            "extractor_sig": extractor_sig,
+            "hits": cache_hits,
+            "misses": cache_misses,
+            "processed_files": processed_files,
+            "skipped_files": skipped_files,
+            "invalidated": cache_invalidated,
         },
+        "outputs": outputs,
     }
+
+    # Stage 3.1: delta report (only meaningful for incremental runs)
+    if incremental:
+        def _top_delta(counter: Counter[str], n: int = 200):
+            return [
+                {"term": t, "delta": int(d)}
+                for t, d in counter.most_common(n)
+            ]
+
+        delta = {
+            "source_root": str(source_root),
+            "files": {
+                "scanned": scanned,
+                "processed": processed_files,
+                "skipped": skipped_files,
+                "processed_sample": processed_paths_sample,
+            },
+            "cache": {
+                "dir": str(cache_dir) if cache_dir is not None else None,
+                "extractor_sig": extractor_sig,
+                "hits": cache_hits,
+                "misses": cache_misses,
+                "invalidated": cache_invalidated,
+            },
+            "terms": {
+                "zh": {
+                    "added": _top_delta(zh_added_delta),
+                    "removed": _top_delta(zh_removed_delta),
+                    "added_total": int(sum(zh_added_delta.values())),
+                    "removed_total": int(sum(zh_removed_delta.values())),
+                },
+                "en": {
+                    "added": _top_delta(en_added_delta),
+                    "removed": _top_delta(en_removed_delta),
+                    "added_total": int(sum(en_added_delta.values())),
+                    "removed_total": int(sum(en_removed_delta.values())),
+                },
+            },
+        }
+        (out_dir / "extract_delta.json").write_text(
+            json.dumps(delta, ensure_ascii=False, indent=2),
+            "utf-8",
+        )
+        outputs["delta"] = str(out_dir / "extract_delta.json")
     (out_dir / "extract_stats.json").write_text(
         json.dumps(stats, ensure_ascii=False, indent=2),
         "utf-8",
@@ -201,6 +568,22 @@ def main() -> None:
         type=int,
         default=None,
         help="Limit number of markdown files for quick runs",
+    )
+
+    # Stage 3.1: incremental extraction cache
+    parser.add_argument(
+        "--incremental",
+        action="store_true",
+        help=(
+            "Incremental: skip unchanged files; writes extract_delta.json"
+        ),
+    )
+    parser.add_argument(
+        "--cache-dir",
+        default=None,
+        help=(
+            "Cache dir (default: <out_dir>/.cache/extract_v1 when incremental)"
+        ),
     )
 
     # Stage 2.2: filtered candidates for review efficiency
@@ -283,6 +666,8 @@ def main() -> None:
     if not source_root.exists():
         raise SystemExit(f"source root does not exist: {source_root}")
 
+    cache_dir = Path(args.cache_dir).expanduser() if args.cache_dir else None
+
     extract(
         source_root=source_root,
         out_dir=out_dir,
@@ -297,6 +682,8 @@ def main() -> None:
         topk_en=args.topk_en,
         zh_stopwords=zh_stop,
         en_stopwords=en_stop,
+        incremental=bool(args.incremental),
+        cache_dir=cache_dir,
     )
 
 

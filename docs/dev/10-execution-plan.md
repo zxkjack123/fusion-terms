@@ -480,8 +480,8 @@
 
 ### 阶段 3：增量更新
 
-- [ ] 有 hash cache，未变文件可跳过
-- [ ] 有 delta 报告（新/变/跳过统计）
+- [x] 有 hash cache，未变文件可跳过（`extract_candidates --incremental`）
+- [x] 有 delta 报告（新/变/跳过统计；见 `artifacts/extract_delta.json`）
 - [ ] 增量审核成本显著下降
 
 ### 阶段 4：英文词组处理（token 级）
