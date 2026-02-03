@@ -13,6 +13,26 @@ URL_RE = re.compile(r"https?://\S+", re.IGNORECASE)
 MD_LINK_RE = re.compile(r"\[([^\]]+)\]\(([^)]+)\)")
 MD_IMAGE_RE = re.compile(r"!\[([^\]]*)\]\(([^)]+)\)")
 
+# Common academic-doc noise patterns
+REF_HEADING_RE = re.compile(
+    r"^\s*(?:#{1,6}\s*)?(references|bibliography|参考文献)\s*[:：]?\s*$",
+    re.IGNORECASE,
+)
+CAPTION_EN_RE = re.compile(
+    r"^\s*(?:figure|fig\.?|table)\s*\d+(?:\.\d+)*\s*[:.：]",
+    re.IGNORECASE,
+)
+CAPTION_ZH_RE = re.compile(r"^\s*[图表]\s*\d+(?:\.\d+)*\s*[:.：]")
+TABLE_SEP_RE = re.compile(
+    r"^\s*\|?\s*:?-{2,}:?\s*(?:\|\s*:?-{2,}:?\s*)+\|?\s*$"
+)
+
+MATH_FENCE_DOLLAR_RE = re.compile(r"^\s*\$\$\s*$")
+MATH_FENCE_BRACKET_OPEN_RE = re.compile(r"^\s*\\\[\s*$")
+MATH_FENCE_BRACKET_CLOSE_RE = re.compile(r"^\s*\\\]\s*$")
+INLINE_MATH_RE = re.compile(r"\$[^$]+\$")
+WORDLIKE_RE = re.compile(r"[A-Za-z0-9\u4e00-\u9fff]")
+
 
 @dataclass(frozen=True)
 class Example:
@@ -41,11 +61,23 @@ def clean_markdown_lines(text: str) -> list[str]:
     This is deliberately conservative and fast.
     """
 
+    def is_symbol_heavy(s: str) -> bool:
+        compact = re.sub(r"\s+", "", s)
+        if len(compact) < 40:
+            return False
+        wordlike = len(WORDLIKE_RE.findall(compact))
+        return (wordlike / max(1, len(compact))) < 0.30
+
     lines_out: list[str] = []
     in_fence = False
+    in_math = False
 
     for raw_line in text.splitlines():
         line = raw_line
+
+        # Stop at references/bibliography sections (usually mostly citations).
+        if REF_HEADING_RE.match(line):
+            break
 
         if FENCE_RE.match(line):
             in_fence = not in_fence
@@ -53,6 +85,27 @@ def clean_markdown_lines(text: str) -> list[str]:
 
         if in_fence:
             continue
+
+        # Drop display-math blocks.
+        if (
+            MATH_FENCE_DOLLAR_RE.match(line)
+            or MATH_FENCE_BRACKET_OPEN_RE.match(line)
+            or MATH_FENCE_BRACKET_CLOSE_RE.match(line)
+        ):
+            in_math = not in_math
+            continue
+        if in_math:
+            continue
+
+        # Drop figure/table captions (high noise; keep the body text instead).
+        if CAPTION_EN_RE.match(line) or CAPTION_ZH_RE.match(line):
+            continue
+
+        # Drop table separator rows, but keep table content rows by flattening pipes.
+        if TABLE_SEP_RE.match(line):
+            continue
+        if line.count("|") >= 2:
+            line = line.replace("|", " ")
 
         # images first (avoid keeping alt text noise like 'Figure')
         line = MD_IMAGE_RE.sub(" ", line)
@@ -63,12 +116,15 @@ def clean_markdown_lines(text: str) -> list[str]:
         # inline code
         line = INLINE_CODE_RE.sub(" ", line)
 
+        # inline math: keep inner content, drop surrounding $...$
+        line = INLINE_MATH_RE.sub(lambda m: m.group(0)[1:-1], line)
+
         # bare urls
         line = URL_RE.sub(" ", line)
 
         # collapse whitespace
         line = re.sub(r"\s+", " ", line).strip()
-        if line:
+        if line and not is_symbol_heavy(line):
             lines_out.append(line)
 
     return lines_out
