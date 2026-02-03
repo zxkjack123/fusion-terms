@@ -44,6 +44,12 @@ def extract(
     max_examples: int,
     max_files_per_term: int,
     max_files: int | None,
+    min_count_zh: int | None,
+    min_count_en: int | None,
+    topk_zh: int | None,
+    topk_en: int | None,
+    zh_stopwords: set[str] | None,
+    en_stopwords: set[str] | None,
 ) -> None:
     zh_re = re.compile(
         ZH_RE_TEMPLATE.format(min_len=min_zh_len, max_len=max_zh_len)
@@ -93,28 +99,73 @@ def extract(
     zh_tsv = out_dir / "candidates_zh.tsv"
     en_tsv = out_dir / "candidates_en.tsv"
 
+    zh_filtered_tsv = out_dir / "candidates_zh.filtered.tsv"
+    en_filtered_tsv = out_dir / "candidates_en.filtered.tsv"
+
     def write_tsv(
         path: Path,
         counts: Counter[str],
         examples: dict[str, list[str]],
         files: dict[str, list[str]],
+        *,
+        min_count: int | None = None,
+        topk: int | None = None,
+        stopwords: set[str] | None = None,
     ) -> None:
         with path.open("w", encoding="utf-8") as f:
             f.write("term\tcount\texamples\tfiles\n")
+            written = 0
             for term, cnt in counts.most_common():
+                if stopwords is not None and term in stopwords:
+                    continue
+                if min_count is not None and cnt < min_count:
+                    continue
+                if topk is not None and written >= topk:
+                    break
                 ex = " | ".join(examples.get(term, []))
                 fl = " | ".join(files.get(term, []))
                 f.write(f"{term}\t{cnt}\t{ex}\t{fl}\n")
+                written += 1
 
     write_tsv(zh_tsv, zh_counts, zh_examples, zh_files)
     write_tsv(en_tsv, en_counts, en_examples, en_files)
+
+    # Filtered outputs (only written when any filter flag is provided)
+    want_filtered = any(
+        v is not None
+        for v in [min_count_zh, min_count_en, topk_zh, topk_en, zh_stopwords, en_stopwords]
+    )
+    if want_filtered:
+        write_tsv(
+            zh_filtered_tsv,
+            zh_counts,
+            zh_examples,
+            zh_files,
+            min_count=min_count_zh,
+            topk=topk_zh,
+            stopwords=zh_stopwords,
+        )
+        write_tsv(
+            en_filtered_tsv,
+            en_counts,
+            en_examples,
+            en_files,
+            min_count=min_count_en,
+            topk=topk_en,
+            stopwords=en_stopwords,
+        )
 
     stats = {
         "source_root": str(source_root),
         "files_scanned": scanned,
         "zh_terms": len(zh_counts),
         "en_terms": len(en_counts),
-        "outputs": {"zh": str(zh_tsv), "en": str(en_tsv)},
+        "outputs": {
+            "zh": str(zh_tsv),
+            "en": str(en_tsv),
+            "zh_filtered": str(zh_filtered_tsv) if want_filtered else None,
+            "en_filtered": str(en_filtered_tsv) if want_filtered else None,
+        },
     }
     (out_dir / "extract_stats.json").write_text(
         json.dumps(stats, ensure_ascii=False, indent=2),
@@ -152,6 +203,42 @@ def main() -> None:
         help="Limit number of markdown files for quick runs",
     )
 
+    # Stage 2.2: filtered candidates for review efficiency
+    parser.add_argument(
+        "--min-count-zh",
+        type=int,
+        default=None,
+        help="Write candidates_zh.filtered.tsv with terms of count >= N",
+    )
+    parser.add_argument(
+        "--min-count-en",
+        type=int,
+        default=None,
+        help="Write candidates_en.filtered.tsv with terms of count >= N",
+    )
+    parser.add_argument(
+        "--topk-zh",
+        type=int,
+        default=None,
+        help="Write candidates_zh.filtered.tsv with top K terms by count",
+    )
+    parser.add_argument(
+        "--topk-en",
+        type=int,
+        default=None,
+        help="Write candidates_en.filtered.tsv with top K terms by count",
+    )
+    parser.add_argument(
+        "--zh-stopwords",
+        default=None,
+        help="Path to zh stopwords (one token per line) for filtered output",
+    )
+    parser.add_argument(
+        "--en-stopwords",
+        default=None,
+        help="Path to en stopwords (one token per line) for filtered output",
+    )
+
     args = parser.parse_args()
 
     cfg = load_config(Path(args.config))
@@ -176,6 +263,23 @@ def main() -> None:
         or cfg.get("extract", {}).get("max_files_per_term", 20)
     )
 
+    def load_stopwords(path_str: str | None) -> set[str] | None:
+        if not path_str:
+            return None
+        p = Path(path_str).expanduser()
+        if not p.exists():
+            raise SystemExit(f"stopwords file does not exist: {p}")
+        out: set[str] = set()
+        for line in p.read_text("utf-8", errors="ignore").splitlines():
+            s = line.strip()
+            if not s or s.startswith("#"):
+                continue
+            out.add(s)
+        return out
+
+    zh_stop = load_stopwords(args.zh_stopwords)
+    en_stop = load_stopwords(args.en_stopwords)
+
     if not source_root.exists():
         raise SystemExit(f"source root does not exist: {source_root}")
 
@@ -187,6 +291,12 @@ def main() -> None:
         max_examples=max_examples,
         max_files_per_term=max_files_per_term,
         max_files=args.max_files,
+        min_count_zh=args.min_count_zh,
+        min_count_en=args.min_count_en,
+        topk_zh=args.topk_zh,
+        topk_en=args.topk_en,
+        zh_stopwords=zh_stop,
+        en_stopwords=en_stop,
     )
 
 

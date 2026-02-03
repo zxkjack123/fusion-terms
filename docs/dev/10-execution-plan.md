@@ -475,7 +475,7 @@
 ### 阶段 2：降噪与审阅友好
 
 - [x] 清洗增强有单测（refs/table/caption 等）
-- [ ] 提供 filtered candidates 输出（min-count/top-k/stopwords）
+- [x] 提供 filtered candidates 输出（min-count/top-k/stopwords）
 - [ ] 人工抽查 top-100：噪声明显下降
 
 ### 阶段 3：增量更新
