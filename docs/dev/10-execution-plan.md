@@ -42,7 +42,8 @@
   - `pyproject.toml`（推荐）：统一 Python 工具配置（pytest/ruff/black/isort/mypy 等，可分阶段启用）
   - `tests/`：最小单测框架与 fixtures
   - `.gitignore`：补全忽略项（如 `.mypy_cache/`、临时 artifacts、缓存）
-- （可选）新增 CI：GitHub Actions 在 PR 上跑最小测试集。
+- （可选）新增 CI：GitHub Actions 在 PR 上跑最小测试集（已添加：`.github/workflows/ci.yml`）。
+- （可选）新增 pre-commit：提交前自动做基础检查（已添加：`.pre-commit-config.yaml`）。
 
 **测试内容**
 
@@ -461,6 +462,8 @@
 - [x] `.gitignore` 完整忽略缓存（含 `.mypy_cache/`）
 - [x] `tests/fixtures` + 最小单测框架已建立
 - [x] fixtures 上 `extract → build` 可复现跑通
+- [x] pre-commit 配置已提供（`.pre-commit-config.yaml`）
+- [x] CI 已提供（`.github/workflows/ci.yml`，运行 pytest + compileall）
 
 ### 阶段 1：第一版可用词表
 

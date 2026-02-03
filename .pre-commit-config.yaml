@@ -1,0 +1,22 @@
+# Minimal, low-friction pre-commit setup.
+# Focus: prevent obvious mistakes (whitespace, broken YAML/TOML) and keep tests green.
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-merge-conflict
+      - id: check-yaml
+      - id: check-toml
+
+  # Run unit tests on commit (fast for this repo). Disable with SKIP=pytest if needed.
+  - repo: local
+    hooks:
+      - id: pytest
+        name: pytest
+        entry: pytest
+        language: system
+        args: ["-q"]
+        pass_filenames: false
