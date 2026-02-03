@@ -95,3 +95,41 @@ def test_extract_then_build_smoke(tmp_path: Path) -> None:
     assert "托卡马克" in terms
     assert "ITER" in terms
     assert "NBI" in terms
+
+
+def test_build_rejects_whitespace_terms(tmp_path: Path) -> None:
+    repo_root = Path(__file__).resolve().parents[1]
+
+    terms_dir = tmp_path / "terms"
+    terms_dir.mkdir(parents=True, exist_ok=True)
+
+    # Minimal curated lists
+    (terms_dir / "allowlist_zh.txt").write_text("托卡马克\n", encoding="utf-8")
+    (terms_dir / "allowlist_en.txt").write_text(
+        "ITER\nneutral beam\n",
+        encoding="utf-8",
+    )
+    (terms_dir / "denylist.txt").write_text("", encoding="utf-8")
+    (terms_dir / "synonyms.tsv").write_text("", encoding="utf-8")
+
+    out_dir = tmp_path / "artifacts"
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    p = subprocess.run(
+        [
+            sys.executable,
+            "-m",
+            "pipeline.build_terms",
+            "--terms-dir",
+            str(terms_dir),
+            "--out-dir",
+            str(out_dir),
+        ],
+        cwd=str(repo_root),
+        text=True,
+        capture_output=True,
+    )
+    assert p.returncode != 0
+    combined = (p.stdout or "") + "\n" + (p.stderr or "")
+    assert "must not contain whitespace" in combined
+    assert "neutral beam" in combined

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import re
 from pathlib import Path
 
 try:
@@ -9,6 +10,29 @@ except ModuleNotFoundError:  # pragma: no cover
     import tomli as tomllib  # type: ignore
 
 from pipeline.common import ensure_dir, load_simple_list, load_synonyms_tsv
+
+
+WHITESPACE_RE = re.compile(r"\s")
+
+
+def validate_no_whitespace_terms(terms: set[str], *, context: str) -> None:
+    """Fail fast if any term contains whitespace.
+
+    This repository's wordlist contract is one-term-per-line, and (by design)
+    English multi-word phrases must be split into atomic tokens.
+    """
+
+    bad = sorted({t for t in terms if WHITESPACE_RE.search(t)})
+    if not bad:
+        return
+
+    preview = "\n".join(f"- {t!r}" for t in bad[:20])
+    more = "" if len(bad) <= 20 else f"\n... and {len(bad) - 20} more"
+    raise SystemExit(
+        "wordlist terms must not contain whitespace "
+        f"({context}); split phrases into tokens instead.\n"
+        f"offending terms:\n{preview}{more}"
+    )
 
 
 def load_config(config_path: Path) -> dict:
@@ -90,6 +114,8 @@ def main() -> None:
         synonyms=synonyms,
         keep_aliases=args.keep_aliases,
     )
+
+    validate_no_whitespace_terms(final_terms, context="after deny/synonyms normalization")
 
     ensure_dir(out_dir)
     out_path = out_dir / args.output
