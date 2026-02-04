@@ -503,6 +503,7 @@
 - [x] `synonyms.tsv` 冲突映射会被构建拒绝（同 alias 不同 preferred）
 - [x] 构建拒绝不可见/控制字符词条（例如零宽空格 U+200B）
 - [ ] 构建 + 导入后：关键术语可稳定打出
+  - [x] 提供手工验收包生成器（`python -m pipeline.ime_acceptance_pack` 生成 `ime_acceptance_terms.txt/json`）
 
 ### 阶段 2：降噪与审阅友好
 

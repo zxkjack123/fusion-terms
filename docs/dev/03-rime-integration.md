@@ -87,3 +87,25 @@ This repo’s pipeline is designed so that adding a `.dict.yaml` generator later
 
 由于不同发行版 / rime-ice 版本的 schema 结构可能不同，这里不强行给出“唯一正确”的 patch。
 建议做法是：先把文件放入目录 → 执行 deploy → 再用固定验收用例集（ITER/EAST/NBI/H-mode/q95/β_N/τ_E/托卡马克 等）做一次手工验证。
+
+## Manual acceptance pack (typing checklist)
+
+阶段 1 的验收项“构建 + 导入后：关键术语可稳定打出”属于**手工集成测试**（需要你在真实输入环境里验证）。
+
+为减少每次手工验收的随机性，仓库提供一个“小工具”生成验收包：
+
+- `python -m pipeline.ime_acceptance_pack --wordlist artifacts/domain_terms.txt --out-dir artifacts`
+
+它会写出：
+
+- `artifacts/ime_acceptance_pack.json`：must-have 术语是否在 wordlist 中（缺失项可直接指导补种/归一）。
+- `artifacts/ime_acceptance_terms.txt`：建议你在 IME 中逐条测试的术语列表（默认 30 条，可 `--pick-n` 调整）。
+
+建议手工步骤（Option A 或 B 均适用）：
+
+1) 确保已构建出 `artifacts/domain_terms.txt`
+2) 生成验收包（命令如上）
+3) 按你的集成方案导入/部署（Option A：userdb import；Option B：dict.yaml + deploy）
+4) 打开任意输入框，按 `ime_acceptance_terms.txt` 逐条尝试输出
+
+> 注意：该工具只能检查“词表里有没有”，不能自动判断“在你的 schema / 码表中是否能稳定触发”。稳定触发仍以手工验收为准。

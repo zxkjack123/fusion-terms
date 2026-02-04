@@ -1,0 +1,217 @@
+from __future__ import annotations
+
+import argparse
+import json
+from pathlib import Path
+
+
+def _is_zh_term(t: str) -> bool:
+    return any("\u4e00" <= ch <= "\u9fff" for ch in t)
+
+
+def _load_wordlist(path: Path) -> list[str]:
+    if not path.exists():
+        raise SystemExit(f"wordlist not found: {path}")
+    terms: list[str] = []
+    for ln in path.read_text("utf-8", errors="ignore").splitlines():
+        s = ln.strip()
+        if not s:
+            continue
+        terms.append(s)
+    # De-dup but preserve order.
+    seen: set[str] = set()
+    out: list[str] = []
+    for t in terms:
+        if t in seen:
+            continue
+        seen.add(t)
+        out.append(t)
+    return out
+
+
+DEFAULT_MUST_HAVE = [
+    # Devices / facilities
+    "ITER",
+    "EAST",
+    "JET",
+    "DIII-D",
+    # Acronyms / regimes
+    "NBI",
+    "ICRH",
+    "ECRH",
+    "ELM",
+    "H-mode",
+    # Phrase components (token-level)
+    "neutral",
+    "beam",
+    "injection",
+    # Materials / mixed
+    "Nb3Sn",
+    "CuCrZr",
+    "tungsten",
+    "beryllium",
+    "D-T",
+    "W/Be",
+    # Parameters / symbols
+    "q95",
+    "β_N",
+    "τ_E",
+    # Chinese
+    "托卡马克",
+    "等离子体",
+]
+
+
+def build_acceptance_pack(
+    *,
+    wordlist_path: Path,
+    out_json: Path,
+    out_terms_txt: Path,
+    must_have: list[str],
+    pick_n: int,
+) -> dict[str, object]:
+    terms_ordered = _load_wordlist(wordlist_path)
+    terms_set = set(terms_ordered)
+
+    zh = [t for t in terms_ordered if _is_zh_term(t)]
+    en = [t for t in terms_ordered if t not in set(zh)]
+
+    checks: list[dict[str, object]] = []
+    missing: list[str] = []
+    for t in must_have:
+        ok = t in terms_set
+        checks.append({"term": t, "in_wordlist": ok})
+        if not ok:
+            missing.append(t)
+
+    # Deterministic suggested typing list:
+    # - must-have first (in the given order)
+    # - then fill with additional terms from the wordlist (lexicographic)
+    # Note: we never truncate must-have terms; if pick_n is smaller than
+    # len(must_have), we raise it to keep the acceptance list intact.
+    target_n = max(int(pick_n), len(must_have))
+    suggested: list[str] = []
+    seen: set[str] = set()
+    for t in must_have:
+        if t not in seen:
+            seen.add(t)
+            suggested.append(t)
+
+    extras = sorted([t for t in terms_set if t not in seen])
+    for t in extras:
+        if len(suggested) >= target_n:
+            break
+        suggested.append(t)
+
+    pack = {
+        "schema_version": 1,
+        "wordlist": str(wordlist_path),
+        "outputs": {
+            "json": str(out_json),
+            "typing_terms": str(out_terms_txt),
+        },
+        "counts": {
+            "total": len(terms_set),
+            "zh": len(set(zh)),
+            "en": len(set(en)),
+            "must_have": len(must_have),
+            "missing_must_have": len(missing),
+            "suggested_typing_terms": len(suggested),
+        },
+        "must_have": must_have,
+        "checks": checks,
+        "missing_must_have": missing,
+        "suggested_typing_terms": suggested,
+    }
+
+    out_json.parent.mkdir(parents=True, exist_ok=True)
+    out_json.write_text(
+        json.dumps(pack, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+    out_terms_txt.parent.mkdir(parents=True, exist_ok=True)
+    out_terms_txt.write_text("\n".join(suggested) + "\n", encoding="utf-8")
+
+    return pack
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(
+        description=(
+            "Generate an IME manual acceptance pack (JSON + typing list) from a built wordlist."
+        )
+    )
+    parser.add_argument(
+        "--wordlist",
+        default="artifacts/domain_terms.txt",
+        help="Built wordlist path (default: artifacts/domain_terms.txt)",
+    )
+    parser.add_argument(
+        "--out-dir",
+        default="artifacts",
+        help="Output directory for acceptance pack artifacts (default: artifacts)",
+    )
+    parser.add_argument(
+        "--out-json",
+        default=None,
+        help="Optional JSON output path (default: <out-dir>/ime_acceptance_pack.json)",
+    )
+    parser.add_argument(
+        "--out-terms",
+        default=None,
+        help=(
+            "Optional typing-terms output path (default: <out-dir>/ime_acceptance_terms.txt)"
+        ),
+    )
+    parser.add_argument(
+        "--must-have",
+        action="append",
+        default=[],
+        help="Must-have term to check (repeatable). If omitted, uses a default list.",
+    )
+    parser.add_argument(
+        "--pick-n",
+        type=int,
+        default=30,
+        help=(
+            "Target number of terms in suggested_typing_terms (default: 30). "
+            "Will be raised to at least len(must_have) to avoid truncating must-have terms."
+        ),
+    )
+
+    args = parser.parse_args()
+
+    wordlist_path = Path(args.wordlist).expanduser()
+    out_dir = Path(args.out_dir).expanduser()
+    out_json = (
+        Path(args.out_json).expanduser()
+        if args.out_json
+        else (out_dir / "ime_acceptance_pack.json")
+    )
+    out_terms = (
+        Path(args.out_terms).expanduser()
+        if args.out_terms
+        else (out_dir / "ime_acceptance_terms.txt")
+    )
+
+    must_have = [str(x) for x in (args.must_have or [])]
+    if not must_have:
+        must_have = list(DEFAULT_MUST_HAVE)
+
+    pack = build_acceptance_pack(
+        wordlist_path=wordlist_path,
+        out_json=out_json,
+        out_terms_txt=out_terms,
+        must_have=must_have,
+        pick_n=int(args.pick_n),
+    )
+
+    print(
+        "ime acceptance pack written: "
+        f"missing_must_have={pack['counts']['missing_must_have']} "
+        f"typing_terms={pack['counts']['suggested_typing_terms']}"
+    )
+
+
+if __name__ == "__main__":
+    main()
