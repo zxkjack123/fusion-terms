@@ -78,6 +78,11 @@
 
 - `python -m pipeline.export_registry --terms-dir terms --out-dir artifacts`
 
+已实现的导出项：
+
+- Vale：`artifacts/vale/accept.txt`、`artifacts/vale/reject.txt`
+- 检索扩展：`artifacts/query_expansions.json`（`--query-expansions`）
+
 ### 3.1 `terms/registry/concepts.tsv`
 
 每行一个概念（概念主表）。建议字段（可先实现前 6 列）：

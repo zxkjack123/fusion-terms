@@ -31,5 +31,11 @@ artifacts/domain_terms.txt
 artifacts/extract_stats.json
 artifacts/extract_delta.json
 
+# Registry exports (multi-consumer)
+artifacts/registry_exports.json
+artifacts/query_expansions.json
+artifacts/tag_rules.jsonl
+artifacts/vale/
+
 # Optional local-only pointers
 sources/local_paths.txt
