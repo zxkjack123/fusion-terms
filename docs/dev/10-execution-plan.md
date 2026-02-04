@@ -506,6 +506,7 @@
   - [x] 提供手工验收包生成器（`python -m pipeline.ime_acceptance_pack` 生成 `ime_acceptance_terms.txt/json`）
   - [x] 手工验收包包含符号术语的 typing hints（`ime_acceptance_terms_hints.tsv` + JSON `typing_hints`）
   - [x] 手工验收包包含可勾选的报告模板（`ime_acceptance_report.md`）
+  - [x] 提供可提交的验收记录模板（`docs/dev/acceptance/ime-YYYY-MM-DD.md`）
 
 ### 阶段 2：降噪与审阅友好
 

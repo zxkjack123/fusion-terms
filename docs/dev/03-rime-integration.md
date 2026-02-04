@@ -103,6 +103,16 @@ This repo’s pipeline is designed so that adding a `.dict.yaml` generator later
 - `artifacts/ime_acceptance_terms_hints.tsv`：对 **含希腊字母/非 ASCII 符号** 的术语给出若干“可能的可输入别名”提示（例如 `β_N → beta_N / betaN`），用于你在 schema 侧做 alias/码表映射或自定义词典时参考。
 - `artifacts/ime_acceptance_report.md`：一份可直接勾选/记录的手工验收报告模板（包含 must-have 检查结果 + 逐条触发 checklist，符号术语会附带 hints）。
 
+### Keep acceptance evidence in git (recommended)
+
+`artifacts/` 下的文件是生成物，通常会被 `.gitignore` 忽略；但“是否稳定可打出”的验收结论需要可追溯。
+
+推荐做法：每次做一次真实 IME 验收，都在 repo 内新增一份独立记录：
+
+- `docs/dev/acceptance/ime-YYYY-MM-DD.md`
+
+你可以把 `artifacts/ime_acceptance_report.md` 的勾选结果复制/整理进去，并补充：环境（Fcitx/Rime 版本）、集成方案（A/B）、失败项与后续动作。
+
 建议手工步骤（Option A 或 B 均适用）：
 
 1) 确保已构建出 `artifacts/domain_terms.txt`
