@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import re
+import unicodedata
 from pathlib import Path
 
 try:
@@ -13,6 +14,44 @@ from pipeline.common import ensure_dir, load_simple_list, load_synonyms_tsv
 
 
 WHITESPACE_RE = re.compile(r"\s")
+
+
+def validate_no_control_or_invisible_terms(terms: set[str], *, context: str) -> None:
+    """Fail fast if any term contains control/invisible Unicode characters.
+
+    This protects against accidental copy/paste artifacts (e.g. ZERO WIDTH SPACE)
+    that are nearly impossible to spot in reviews but can break downstream tools.
+    """
+
+    offenders: list[tuple[str, list[str]]] = []
+    for t in terms:
+        bad_desc: list[str] = []
+        for ch in t:
+            cat = unicodedata.category(ch)
+            if cat.startswith("C"):
+                name = unicodedata.name(ch, "<unknown>")
+                bad_desc.append(f"U+{ord(ch):04X} {name} ({cat})")
+        if bad_desc:
+            offenders.append((t, bad_desc))
+
+    if not offenders:
+        return
+
+    offenders.sort(key=lambda x: x[0])
+    preview_lines: list[str] = []
+    for term, bad in offenders[:20]:
+        shown = ", ".join(bad[:3])
+        more = "" if len(bad) <= 3 else f", ... +{len(bad) - 3} more"
+        preview_lines.append(f"- {term!r}: {shown}{more}")
+    preview = "\n".join(preview_lines)
+    more_terms = "" if len(offenders) <= 20 else f"\n... and {len(offenders) - 20} more"
+
+    raise SystemExit(
+        "wordlist terms must not contain control/invisible Unicode characters "
+        f"({context}).\n"
+        "Tip: watch for zero-width spaces when copy/pasting from PDFs/Markdown.\n"
+        f"offending terms:\n{preview}{more_terms}"
+    )
 
 
 def validate_no_whitespace_terms(terms: set[str], *, context: str) -> None:
@@ -116,6 +155,9 @@ def main() -> None:
     )
 
     validate_no_whitespace_terms(final_terms, context="after deny/synonyms normalization")
+    validate_no_control_or_invisible_terms(
+        final_terms, context="after deny/synonyms normalization"
+    )
 
     ensure_dir(out_dir)
     out_path = out_dir / args.output
