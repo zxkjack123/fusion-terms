@@ -70,6 +70,10 @@
 
 说明：`evidence.tsv` 里允许先用 `internal:TODO:...` 占位，后续逐步补齐 DOI/标准号/内部链接。
 
+为避免“真相漂移”（registry 与 `terms/*` 并存），建议把一致性校验作为常规门禁。当前仓库已提供最小校验器：
+
+- `python -m pipeline.validate_registry --terms-dir terms`
+
 ### 3.1 `terms/registry/concepts.tsv`
 
 每行一个概念（概念主表）。建议字段（可先实现前 6 列）：

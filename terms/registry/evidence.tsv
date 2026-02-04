@@ -1,7 +1,7 @@
 # concept_id	source	quote	added_by	added_at
 # source can be DOI/URL/standard-id/internal-doc-path
 iter	https://www.iter.org			2026-02-04
-EAST	https://en.wikipedia.org/wiki/Experimental_Advanced_Superconducting_Tokamak			2026-02-04
+east	https://en.wikipedia.org/wiki/Experimental_Advanced_Superconducting_Tokamak			2026-02-04
 tokamak	https://en.wikipedia.org/wiki/Tokamak			2026-02-04
 neutral-beam-injection	https://en.wikipedia.org/wiki/Neutral_beam_injection			2026-02-04
 thomson-scattering	https://en.wikipedia.org/wiki/Thomson_scattering			2026-02-04

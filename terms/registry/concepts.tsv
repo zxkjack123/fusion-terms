@@ -3,7 +3,7 @@
 # - preferred_en MAY be a phrase (registry-level concept name). IME export must split into tokens.
 # - status: active|deprecated|draft
 iter	device		ITER	ITER	active	International Thermonuclear Experimental Reactor
-EAST	device		EAST	EAST	active	Experimental Advanced Superconducting Tokamak
+east	device		EAST	EAST	active	Experimental Advanced Superconducting Tokamak
 tokamak	concept	托卡马克	tokamak		active	Core device concept
 neutral-beam-injection	method		neutral beam injection	NBI	active	Heating/current drive method (concept-level name is a phrase)
 thomson-scattering	diagnostic		Thomson scattering		active	Diagnostic method (concept-level name is a phrase)

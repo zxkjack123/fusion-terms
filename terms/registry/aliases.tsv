@@ -2,7 +2,7 @@
 # - kind: preferred|alias|deprecated|forbidden
 ITER	iter	abbr	preferred	canonical abbr
 International Thermonuclear Experimental Reactor	iter	en	alias	full expansion
-EAST	EAST	abbr	preferred	device abbr
+EAST	east	abbr	preferred	device abbr
 托卡马克	tokamak	zh	preferred	preferred zh
 tokamak	tokamak	en	preferred	preferred en token
 NBI	neutral-beam-injection	abbr	preferred	canonical abbr
