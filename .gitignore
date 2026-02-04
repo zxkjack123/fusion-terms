@@ -36,6 +36,7 @@ artifacts/extract_delta.json
 artifacts/ime_acceptance_pack.json
 artifacts/ime_acceptance_terms.txt
 artifacts/ime_acceptance_terms_hints.tsv
+artifacts/ime_acceptance_report.md
 
 # Review pack (incremental review helpers)
 artifacts/review_pack/

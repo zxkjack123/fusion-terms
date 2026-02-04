@@ -101,6 +101,7 @@ This repo’s pipeline is designed so that adding a `.dict.yaml` generator later
 - `artifacts/ime_acceptance_pack.json`：must-have 术语是否在 wordlist 中（缺失项可直接指导补种/归一）。
 - `artifacts/ime_acceptance_terms.txt`：建议你在 IME 中逐条测试的术语列表（默认 30 条，可 `--pick-n` 调整）。
 - `artifacts/ime_acceptance_terms_hints.tsv`：对 **含希腊字母/非 ASCII 符号** 的术语给出若干“可能的可输入别名”提示（例如 `β_N → beta_N / betaN`），用于你在 schema 侧做 alias/码表映射或自定义词典时参考。
+- `artifacts/ime_acceptance_report.md`：一份可直接勾选/记录的手工验收报告模板（包含 must-have 检查结果 + 逐条触发 checklist，符号术语会附带 hints）。
 
 建议手工步骤（Option A 或 B 均适用）：
 
@@ -115,3 +116,4 @@ This repo’s pipeline is designed so that adding a `.dict.yaml` generator later
 
 - `ime_acceptance_pack.json` 里包含 `typing_hints` 字段（仅对非 ASCII 且非中文的 term 生成），和 `ime_acceptance_terms_hints.tsv` 内容一致。
 - `typing_hints` 是 best-effort 提示，不保证与你的 Rime schema 完全一致；但它能把“明显难打的符号术语”提前暴露出来，避免你在验收时才发现需要补 alias。
+- `ime_acceptance_report.md` 默认使用当天日期；如需可复现/可对比的固定报告头，可用 `--report-date YYYY-MM-DD`。

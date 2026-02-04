@@ -28,6 +28,8 @@ def test_ime_acceptance_pack_detects_missing_and_writes_outputs(tmp_path: Path) 
             str(out_dir),
             "--pick-n",
             "10",
+            "--report-date",
+            "2026-02-04",
         ],
         cwd=str(repo_root),
         text=True,
@@ -38,9 +40,11 @@ def test_ime_acceptance_pack_detects_missing_and_writes_outputs(tmp_path: Path) 
     pack_path = out_dir / "ime_acceptance_pack.json"
     terms_path = out_dir / "ime_acceptance_terms.txt"
     hints_path = out_dir / "ime_acceptance_terms_hints.tsv"
+    report_path = out_dir / "ime_acceptance_report.md"
     assert pack_path.exists()
     assert terms_path.exists()
     assert hints_path.exists()
+    assert report_path.exists()
 
     pack = json.loads(pack_path.read_text("utf-8"))
     assert pack["schema_version"] == 1
@@ -75,3 +79,9 @@ def test_ime_acceptance_pack_detects_missing_and_writes_outputs(tmp_path: Path) 
     assert tsv_lines[0].split("\t")[:2] == ["term", "hints"]
     assert any(ln.startswith("β_N\t") and "beta" in ln.lower() for ln in tsv_lines[1:])
     assert any(ln.startswith("τ_E\t") and "tau" in ln.lower() for ln in tsv_lines[1:])
+
+    # Markdown report should include the fixed date and hint rendering.
+    report = report_path.read_text("utf-8")
+    assert "generated_date: 2026-02-04" in report
+    assert "- [ ] β_N" in report
+    assert "hints:" in report and "beta" in report.lower()

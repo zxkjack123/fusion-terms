@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+from datetime import date
 from pathlib import Path
 
 
@@ -138,6 +139,8 @@ def build_acceptance_pack(
     out_json: Path,
     out_terms_txt: Path,
     out_hints_tsv: Path,
+    out_report_md: Path,
+    report_date: str,
     must_have: list[str],
     pick_n: int,
 ) -> dict[str, object]:
@@ -187,6 +190,7 @@ def build_acceptance_pack(
             "json": str(out_json),
             "typing_terms": str(out_terms_txt),
             "typing_hints_tsv": str(out_hints_tsv),
+            "report_md": str(out_report_md),
         },
         "counts": {
             "total": len(terms_set),
@@ -220,6 +224,43 @@ def build_acceptance_pack(
             continue
         lines.append(f"{t}\t{'|'.join(hints)}")
     out_hints_tsv.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+    out_report_md.parent.mkdir(parents=True, exist_ok=True)
+    report_lines: list[str] = []
+    report_lines.append("# IME manual acceptance report")
+    report_lines.append("")
+    report_lines.append(f"- generated_date: {report_date}")
+    report_lines.append(f"- wordlist: {wordlist_path}")
+    report_lines.append(f"- pack_json: {out_json}")
+    report_lines.append(f"- typing_terms: {out_terms_txt}")
+    report_lines.append(f"- typing_hints_tsv: {out_hints_tsv}")
+    report_lines.append("")
+    report_lines.append("## Pre-checks (wordlist presence)")
+    report_lines.append("")
+    report_lines.append(f"- must_have: {len(must_have)}")
+    report_lines.append(f"- missing_must_have: {len(missing)}")
+    if missing:
+        report_lines.append("")
+        report_lines.append("Missing terms (must fix before IME testing):")
+        for t in missing:
+            report_lines.append(f"- {t}")
+
+    report_lines.append("")
+    report_lines.append("## Manual IME trigger checklist (fill in)")
+    report_lines.append("")
+    report_lines.append("> Tips: test each term in a real input field after import/deploy; if a term is hard to type, consider adding an alias mapping in your schema/dict.")
+    report_lines.append("")
+
+    must_have_set = set(must_have)
+    for t in suggested:
+        mark = "must-have" if t in must_have_set else "extra"
+        hints = typing_hints.get(t)
+        if hints:
+            report_lines.append(f"- [ ] {t} ({mark}; hints: {' | '.join(hints)})")
+        else:
+            report_lines.append(f"- [ ] {t} ({mark})")
+
+    out_report_md.write_text("\n".join(report_lines) + "\n", encoding="utf-8")
 
     return pack
 
@@ -260,6 +301,21 @@ def main() -> None:
         ),
     )
     parser.add_argument(
+        "--out-report",
+        default=None,
+        help=(
+            "Optional Markdown report output path (default: <out-dir>/ime_acceptance_report.md)"
+        ),
+    )
+    parser.add_argument(
+        "--report-date",
+        default=None,
+        help=(
+            "Optional report date string for ime_acceptance_report.md (default: today, YYYY-MM-DD). "
+            "Useful for deterministic tests."
+        ),
+    )
+    parser.add_argument(
         "--must-have",
         action="append",
         default=[],
@@ -294,6 +350,13 @@ def main() -> None:
         if args.out_hints_tsv
         else (out_dir / "ime_acceptance_terms_hints.tsv")
     )
+    out_report_md = (
+        Path(args.out_report).expanduser()
+        if args.out_report
+        else (out_dir / "ime_acceptance_report.md")
+    )
+
+    report_date = str(args.report_date) if args.report_date else date.today().isoformat()
 
     must_have = [str(x) for x in (args.must_have or [])]
     if not must_have:
@@ -304,6 +367,8 @@ def main() -> None:
         out_json=out_json,
         out_terms_txt=out_terms,
         out_hints_tsv=out_hints_tsv,
+        out_report_md=out_report_md,
+        report_date=report_date,
         must_have=must_have,
         pick_n=int(args.pick_n),
     )
