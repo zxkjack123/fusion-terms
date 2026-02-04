@@ -538,7 +538,7 @@
 ### 阶段 5：审核工具化
 
 - [x] review pack / diff 新增候选可用（入口：`python -m pipeline.review_pack --out-dir artifacts`）
-- [ ] allow/deny/synonyms 更新更省时
+- [x] allow/deny/synonyms 更新更省时（入口：`python -m pipeline.apply_decisions --terms-dir terms --decisions artifacts/review_pack/decisions.tsv --apply`；默认 dry-run）
 
 ### 阶段 6：Rime 稳定集成
 
