@@ -417,6 +417,24 @@
   - 必要时引入 streaming/分桶（例如先写临时计数，再归并）。
 - **验收**：二次运行增量模式能明显加速；全量模式可在可接受时间内完成（以你机器为准）。
 
+#### 风险 G：registry 与 `terms/*` 双源并存导致“真相漂移”
+
+- **现象**：当 `terms/allowlist_* / denylist / synonyms.tsv` 仍在使用，同时又新增 `terms/registry/*` 时，同一概念可能出现两套不同的 preferred/alias/禁用写法。
+- **影响**：
+  - IME 词表与写作门禁（Vale）给出的推荐/禁用提示不一致
+  - 检索扩展/自动标签归一到的概念节点与实际入库 token 不一致
+  - 让“多工具稳定服务”的定位失效（工具之间互相打架）
+- **缓解措施（落地条目）**：
+  - 在阶段 8 引入**一致性校验**（强制失败，而不是静默容忍）：
+    - concept_id 唯一
+    - alias 不允许映射到多个 concept_id（除非显式标记为允许多义，后续再做）
+    - 禁用写法（forbidden/deprecated）不得出现在 IME 输出词表中
+  - 明确迁移策略：阶段 8 先让 registry 服务 Vale/query/tag；当覆盖率足够后，再引入“从 registry 生成 allowlist/synonyms”的工具，并用回归测试保证两条路径一致。
+- **验收**：
+  - registry 导出产物（Vale/query/tag）是可复现的（deterministic）
+  - 同一 alias 不会在不同产物中指向不同概念
+  - 禁用写法不会“漏进”最终 IME 词表
+
 ### 9.2 Non-goals（非目标，避免范围失控）
 
 - 不追求“完全自动、零人工”的术语库：**allowlist 审核**是质量保证核心。
@@ -439,6 +457,11 @@
   - 固定验收用例集导入后是否可触发
 - **增量性能**：
   - `--incremental` 模式下跳过比例、运行时间变化
+
+- **registry 质量（多工具一致性）**：
+  - 证据覆盖率：核心概念中有来源（evidence/source）的比例
+  - 分类覆盖率：各 category（装置/指标/方法/材料/数据字段/软件工具）概念数量的变化趋势
+  - 漂移告警数：同一文档内出现 deprecated/forbidden 写法的命中次数（未来由 drift scan 产物统计）
 
 #### 验收用例表（建议作为阶段 6 的固定回归集）
 
@@ -533,7 +556,14 @@
 > 兼容策略：先新增 registry 源数据与导出产物；不打断现有 `terms/*` → `build_terms` → `domain_terms.txt` 的输入法路径。
 
 - [x] 增加 registry 设计文档与最小数据模型（concepts/aliases/evidence）（见 `docs/dev/06-terminology-registry-upgrade.md`）
-- [ ] 在 `terms/registry/` 引入最小可用源数据（少量核心概念即可）
-- [ ] 导出写作门禁产物（Vale accept/reject）与检索扩展产物（query expansions）
-- [ ] 导出自动标签/索引规则（alias → concept_id/category）
-- [ ] 引入一致性校验与回归测试（概念 id 唯一、alias 冲突、非法字符、可复现导出）
+- [ ] 任务 8.1：落地最小 registry 源数据（`terms/registry/concepts.tsv` + `aliases.tsv` + `evidence.tsv`）
+  - 验收：至少覆盖一小批 must-have 概念（装置/缩写/指标/材料/方法各≥1），并能表达 preferred/alias/forbidden
+- [ ] 任务 8.2：registry 一致性校验（validator）
+  - 验收：概念 id 唯一；alias 不冲突；非法字符被拒绝；forbidden 不得进入 IME 词表（通过测试或校验报告保证）
+- [ ] 任务 8.3：导出多消费者产物（exporter）
+  - Vale：`accept.txt` / `reject.txt`
+  - 检索扩展：`query_expansions.json`
+  - 自动标签：`tag_rules.jsonl`（alias → concept_id/category）
+  - 验收：导出可复现（排序稳定），且同一 alias 在各产物指向一致
+- [ ] 任务 8.4：与现有 IME 路径的关系固化（不破坏兼容）
+  - 验收：现有 `build_terms` 行为不变；registry 产物的引入不会要求用户更改 IME 工作流
