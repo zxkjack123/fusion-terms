@@ -529,7 +529,7 @@
 
 - [x] 有 hash cache，未变文件可跳过（`extract_candidates --incremental`）
 - [x] 有 delta 报告（新/变/跳过统计；见 `artifacts/extract_delta.json`）
-- [ ] 增量审核成本显著下降
+- [x] 增量审核成本显著下降（无变更时：增量抽取跳过全部文件，review pack diff 为空；已用回归测试固化）
 
 ### 阶段 4：英文词组处理（token 级）
 
