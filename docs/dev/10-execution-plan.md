@@ -494,6 +494,7 @@
 - [x] fixtures 上 `extract → build` 可复现跑通
 - [x] pre-commit 配置已提供（`.pre-commit-config.yaml`）
 - [x] CI 已提供（`.github/workflows/ci.yml`，运行 pytest + compileall）
+- [x] ruff 最小门禁已接入（F401 unused import / F821 undefined name；pre-commit + CI）
 
 ### 阶段 1：第一版可用词表
 

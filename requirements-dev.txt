@@ -1,3 +1,4 @@
 -r requirements.txt
 pre-commit>=3.0
 pytest>=7.0
+ruff>=0.6.0

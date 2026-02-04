@@ -11,6 +11,13 @@ repos:
       - id: check-yaml
       - id: check-toml
 
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.15.0
+    hooks:
+      - id: ruff
+        args: ["check", "."]
+        pass_filenames: false
+
   # Run unit tests on commit (fast for this repo). Disable with SKIP=pytest if needed.
   - repo: local
     hooks:

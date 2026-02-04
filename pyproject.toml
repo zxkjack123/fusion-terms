@@ -2,3 +2,16 @@
 minversion = "7.0"
 testpaths = ["tests"]
 addopts = ["-q"]
+
+[tool.ruff]
+target-version = "py311"
+extend-exclude = [
+	".venv",
+	"artifacts",
+]
+
+[tool.ruff.lint]
+# Minimal, high-signal lint gate:
+# - F401: unused imports
+# - F821: undefined names
+select = ["F401", "F821"]

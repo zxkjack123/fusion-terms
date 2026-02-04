@@ -164,6 +164,10 @@ def _extractor_signature(
     en_phrases: str,
 ) -> str:
     # Any extraction-rule change should change this signature.
+    # NOTE: Keep this compatible with Python 3.11 syntax. In particular,
+    # avoid backslashes inside f-string expressions.
+    stopwords_blob = "\n".join(sorted(COMMON_EN_STOPWORDS))
+    stopwords_sha1 = _sha1_str(stopwords_blob)
     payload = "\n".join(
         [
             f"schema={CACHE_SCHEMA_VERSION}",
@@ -174,7 +178,7 @@ def _extractor_signature(
             f"MATERIAL_FORMULA_RE={MATERIAL_FORMULA_RE.pattern}",
             f"SLASH_MIX_RE={SLASH_MIX_RE.pattern}",
             f"EN_WORD_RE={EN_WORD_RE.pattern}",
-            f"COMMON_EN_STOPWORDS_SHA1={_sha1_str('\\n'.join(sorted(COMMON_EN_STOPWORDS)))}",
+            f"COMMON_EN_STOPWORDS_SHA1={stopwords_sha1}",
             f"en_phrases={en_phrases}",
             f"PHRASE_WORD_RE={PHRASE_WORD_RE.pattern}",
         ]
