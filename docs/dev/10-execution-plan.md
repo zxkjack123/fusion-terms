@@ -535,7 +535,7 @@
 
 - [x] 构建产物不含空格词条（每行单 token）
 - [x] 多词词组的组成词（neutral/beam/injection 等）能在候选与最终词表中稳定覆盖（英文候选抽取会从含技术 token 的行补充提取小写组成词）
-- [ ] （可选）短语挖掘仅作为“发现线索”启用，不作为验收项
+- [x] （可选）短语挖掘仅作为“发现线索”启用，不作为验收项（`extract_candidates --en-phrases rake` 写出 `candidates_en_phrases.tsv`）
 
 ### 阶段 5：审核工具化
 

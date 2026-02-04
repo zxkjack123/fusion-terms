@@ -96,9 +96,14 @@ Phrase candidates are still just **candidates**:
 
 ##### Upgrade path (how to introduce this without breaking the repo)
 
-This enhancement mode should be implemented as an optional extractor that can be enabled via a flag such as:
+This enhancement mode is implemented as an optional extractor that can be enabled via:
 
 - `--en-phrases=off|yake|rake|spacy`
+
+Current implementation status:
+
+- `--en-phrases off` (default): does not write any phrase candidates.
+- `--en-phrases rake`: writes `artifacts/candidates_en_phrases.tsv` (discovery-only).
 
 and should:
 

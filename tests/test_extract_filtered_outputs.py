@@ -174,3 +174,62 @@ def test_extract_en_phrase_components_from_technical_lines(tmp_path: Path) -> No
     # Phrase components should be harvested as lowercase tokens.
     for expected in ["neutral", "beam", "injection"]:
         assert f"{expected}\t" in raw_en
+
+
+def test_extract_en_phrase_mode_writes_phrase_tsv(tmp_path: Path) -> None:
+    repo_root = Path(__file__).resolve().parents[1]
+
+    corpus_root = tmp_path / "corpus"
+    corpus_root.mkdir(parents=True, exist_ok=True)
+    (corpus_root / "a.md").write_text(
+        "Neutral beam injection is a heating method.\n"
+        "Thomson scattering is a diagnostic.\n",
+        encoding="utf-8",
+    )
+
+    out_dir = tmp_path / "artifacts"
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    # Default: phrase file should not be written.
+    p0 = subprocess.run(
+        [
+            sys.executable,
+            "-m",
+            "pipeline.extract_candidates",
+            "--source-root",
+            str(corpus_root),
+            "--out-dir",
+            str(out_dir),
+        ],
+        cwd=str(repo_root),
+        text=True,
+        capture_output=True,
+    )
+    assert p0.returncode == 0, f"stdout:\n{p0.stdout}\nstderr:\n{p0.stderr}"
+    assert not (out_dir / "candidates_en_phrases.tsv").exists()
+
+    # Enabled: write candidates_en_phrases.tsv.
+    p1 = subprocess.run(
+        [
+            sys.executable,
+            "-m",
+            "pipeline.extract_candidates",
+            "--source-root",
+            str(corpus_root),
+            "--out-dir",
+            str(out_dir),
+            "--en-phrases",
+            "rake",
+        ],
+        cwd=str(repo_root),
+        text=True,
+        capture_output=True,
+    )
+    assert p1.returncode == 0, f"stdout:\n{p1.stdout}\nstderr:\n{p1.stderr}"
+
+    phrases_path = out_dir / "candidates_en_phrases.tsv"
+    assert phrases_path.exists()
+    text = phrases_path.read_text("utf-8", errors="ignore")
+    assert text.splitlines()[0].startswith("term\tcount\t")
+    for expected in ["neutral beam injection", "thomson scattering"]:
+        assert f"{expected}\t" in text

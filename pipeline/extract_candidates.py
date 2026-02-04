@@ -108,6 +108,43 @@ COMMON_EN_STOPWORDS: set[str] = {
     "your",
 }
 
+# Phrase extraction: conservative RAKE-like segmentation.
+PHRASE_WORD_RE = re.compile(r"\b[A-Za-z][A-Za-z0-9-]{1,}\b")
+
+
+def _extract_en_phrases_rake(line: str, *, stopwords: set[str]) -> set[str]:
+    """Extract English phrases from a cleaned line.
+
+    - Remove acronyms (so e.g. "(NBI)" doesn't pollute phrases).
+    - Tokenize words with hyphen support.
+    - Split on stopwords.
+    - Keep 2-6 word phrases.
+
+    NOTE: This is for *candidate discovery only* and is intentionally conservative.
+    """
+
+    # Drop acronyms so they don't get folded into phrases.
+    s = ACRONYM_RE.sub(" ", line)
+    words = [w.lower() for w in PHRASE_WORD_RE.findall(s)]
+
+    phrases: set[str] = set()
+    buf: list[str] = []
+    for w in words:
+        if w in stopwords:
+            if 2 <= len(buf) <= 6:
+                phrases.add(" ".join(buf))
+            buf = []
+            continue
+        buf.append(w)
+        if len(buf) > 6:
+            # If it gets too long, keep the tail window to avoid unbounded phrases.
+            buf = buf[-6:]
+
+    if 2 <= len(buf) <= 6:
+        phrases.add(" ".join(buf))
+
+    return phrases
+
 
 CACHE_SCHEMA_VERSION = 1
 
@@ -120,7 +157,12 @@ def _sha1_str(s: str) -> str:
     return hashlib.sha1(s.encode("utf-8", errors="ignore")).hexdigest()
 
 
-def _extractor_signature(*, min_zh_len: int, max_zh_len: int) -> str:
+def _extractor_signature(
+    *,
+    min_zh_len: int,
+    max_zh_len: int,
+    en_phrases: str,
+) -> str:
     # Any extraction-rule change should change this signature.
     payload = "\n".join(
         [
@@ -133,6 +175,8 @@ def _extractor_signature(*, min_zh_len: int, max_zh_len: int) -> str:
             f"SLASH_MIX_RE={SLASH_MIX_RE.pattern}",
             f"EN_WORD_RE={EN_WORD_RE.pattern}",
             f"COMMON_EN_STOPWORDS_SHA1={_sha1_str('\\n'.join(sorted(COMMON_EN_STOPWORDS)))}",
+            f"en_phrases={en_phrases}",
+            f"PHRASE_WORD_RE={PHRASE_WORD_RE.pattern}",
         ]
     )
     return _sha1_str(payload)
@@ -198,6 +242,7 @@ def extract(
     topk_en: int | None,
     zh_stopwords: set[str] | None,
     en_stopwords: set[str] | None,
+    en_phrases: str,
     incremental: bool,
     cache_dir: Path | None,
 ) -> None:
@@ -208,15 +253,21 @@ def extract(
     zh_counts: Counter[str] = Counter()
     en_counts: Counter[str] = Counter()
 
+    want_en_phrases = (en_phrases or "off") != "off"
+    en_phrase_counts: Counter[str] = Counter()
+
     zh_examples: DefaultDict[str, list[str]] = defaultdict(list)
     en_examples: DefaultDict[str, list[str]] = defaultdict(list)
+    en_phrase_examples: DefaultDict[str, list[str]] = defaultdict(list)
 
     zh_files: DefaultDict[str, list[str]] = defaultdict(list)
     en_files: DefaultDict[str, list[str]] = defaultdict(list)
+    en_phrase_files: DefaultDict[str, list[str]] = defaultdict(list)
 
     extractor_sig = _extractor_signature(
         min_zh_len=min_zh_len,
         max_zh_len=max_zh_len,
+        en_phrases=str(en_phrases or "off"),
     )
 
     cache_enabled = incremental or cache_dir is not None
@@ -351,6 +402,30 @@ def extract(
                         for k, v in data.get("en_examples", {}).items()
                     },
                 )
+
+                if want_en_phrases:
+                    cached_phr_counts = {
+                        k: int(v)
+                        for k, v in data.get("en_phrase_counts", {}).items()
+                    }
+                    en_phrase_counts.update(cached_phr_counts)
+
+                    md_str = str(md_path)
+                    for phr in cached_phr_counts.keys():
+                        if len(en_phrase_files[phr]) < max_files_per_term:
+                            en_phrase_files[phr].append(md_str)
+
+                    cached_phr_examples = {
+                        k: list(v)
+                        for k, v in data.get("en_phrase_examples", {}).items()
+                    }
+                    for phr, ex_list in cached_phr_examples.items():
+                        if len(en_phrase_examples[phr]) >= max_examples:
+                            continue
+                        for ex in ex_list:
+                            if len(en_phrase_examples[phr]) >= max_examples:
+                                break
+                            en_phrase_examples[phr].append(ex)
                 continue
 
         # Cache miss or full processing.
@@ -386,8 +461,10 @@ def extract(
 
         file_zh_counts: Counter[str] = Counter()
         file_en_counts: Counter[str] = Counter()
+        file_en_phrase_counts: Counter[str] = Counter()
         file_zh_examples: dict[str, list[str]] = {}
         file_en_examples: dict[str, list[str]] = {}
+        file_en_phrase_examples: dict[str, list[str]] = {}
 
         text = read_text_file(md_path)
         for line in clean_markdown_lines(text):
@@ -419,6 +496,14 @@ def extract(
                 if tok not in file_en_examples:
                     file_en_examples[tok] = [line]
 
+            if want_en_phrases and en_phrases == "rake":
+                phrase_stop = COMMON_EN_STOPWORDS
+                phrases = _extract_en_phrases_rake(line, stopwords=phrase_stop)
+                for phr in phrases:
+                    file_en_phrase_counts[phr] += 1
+                    if phr not in file_en_phrase_examples:
+                        file_en_phrase_examples[phr] = [line]
+
         # Update delta counters (only meaningful when incremental).
         if incremental:
             new_zh = dict(file_zh_counts)
@@ -442,6 +527,9 @@ def extract(
                 if old_cnt > new_cnt:
                     en_removed_delta[tok] += old_cnt - new_cnt
 
+            # Phrase deltas are intentionally not tracked in extract_delta.json
+            # (discovery-only output).
+
         # Merge file contribution into globals.
         _merge_file_contrib(
             md_path,
@@ -450,6 +538,22 @@ def extract(
             file_zh_examples=file_zh_examples,
             file_en_examples=file_en_examples,
         )
+
+        if want_en_phrases:
+            en_phrase_counts.update(dict(file_en_phrase_counts))
+
+            md_str = str(md_path)
+            for phr in file_en_phrase_counts.keys():
+                if len(en_phrase_files[phr]) < max_files_per_term:
+                    en_phrase_files[phr].append(md_str)
+
+            for phr, ex_list in file_en_phrase_examples.items():
+                if len(en_phrase_examples[phr]) >= max_examples:
+                    continue
+                for ex in ex_list:
+                    if len(en_phrase_examples[phr]) >= max_examples:
+                        break
+                    en_phrase_examples[phr].append(ex)
 
         # Persist per-file cache.
         if cache_enabled and cache_dir is not None:
@@ -468,6 +572,8 @@ def extract(
                 "en_counts": dict(file_en_counts),
                 "zh_examples": file_zh_examples,
                 "en_examples": file_en_examples,
+                "en_phrase_counts": dict(file_en_phrase_counts) if want_en_phrases else {},
+                "en_phrase_examples": file_en_phrase_examples if want_en_phrases else {},
             }
             result_path.write_text(
                 json.dumps(payload, ensure_ascii=False, indent=2),
@@ -490,6 +596,7 @@ def extract(
 
     zh_tsv = out_dir / "candidates_zh.tsv"
     en_tsv = out_dir / "candidates_en.tsv"
+    en_phr_tsv = out_dir / "candidates_en_phrases.tsv"
 
     zh_filtered_tsv = out_dir / "candidates_zh.filtered.tsv"
     en_filtered_tsv = out_dir / "candidates_en.filtered.tsv"
@@ -559,6 +666,7 @@ def extract(
         "en": str(en_tsv),
         "zh_filtered": str(zh_filtered_tsv) if want_filtered else None,
         "en_filtered": str(en_filtered_tsv) if want_filtered else None,
+        "en_phrases": str(en_phr_tsv) if want_en_phrases else None,
     }
 
     stats: dict[str, object] = {
@@ -566,6 +674,7 @@ def extract(
         "files_scanned": scanned,
         "zh_terms": len(zh_counts),
         "en_terms": len(en_counts),
+        "en_phrase_terms": len(en_phrase_counts) if want_en_phrases else 0,
         "cache": {
             "enabled": cache_enabled,
             "incremental": incremental,
@@ -627,6 +736,14 @@ def extract(
         json.dumps(stats, ensure_ascii=False, indent=2),
         "utf-8",
     )
+
+    if want_en_phrases:
+        write_tsv(
+            en_phr_tsv,
+            en_phrase_counts,
+            en_phrase_examples,
+            en_phrase_files,
+        )
 
 
 def main() -> None:
@@ -711,6 +828,17 @@ def main() -> None:
         help="Path to en stopwords (one token per line) for filtered output",
     )
 
+    # Stage 4.2 (optional): phrase discovery mode
+    parser.add_argument(
+        "--en-phrases",
+        default="off",
+        choices=["off", "rake"],
+        help=(
+            "Optional English phrase discovery mode (writes candidates_en_phrases.tsv). "
+            "Default: off"
+        ),
+    )
+
     args = parser.parse_args()
 
     cfg = load_config(Path(args.config))
@@ -771,6 +899,7 @@ def main() -> None:
         topk_en=args.topk_en,
         zh_stopwords=zh_stop,
         en_stopwords=en_stop,
+        en_phrases=str(args.en_phrases),
         incremental=bool(args.incremental),
         cache_dir=cache_dir,
     )
