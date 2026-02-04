@@ -41,5 +41,8 @@ artifacts/query_expansions.json
 artifacts/tag_rules.jsonl
 artifacts/vale/
 
+# Rime baked dictionary
+artifacts/fusion_terms.dict.yaml
+
 # Optional local-only pointers
 sources/local_paths.txt

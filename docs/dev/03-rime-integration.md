@@ -61,3 +61,29 @@ Upgrade to Option B (`fusion_terms.dict.yaml`) when:
 - you want to share the same dictionary with teammates
 
 This repo’s pipeline is designed so that adding a `.dict.yaml` generator later is a small incremental change.
+
+### Generate `fusion_terms.dict.yaml`
+
+仓库已提供生成器：
+
+- `python -m pipeline.generate_dict_yaml`
+
+它会复用现有的 `rime_import_wordlist.py` 来生成 3 列 TSV payload（`text/code/weight`），并包装成 Rime 可直接引用的 `.dict.yaml`。
+
+示例：
+
+- `python -m pipeline.generate_dict_yaml --input artifacts/domain_terms.txt --out-dir artifacts`
+
+输出默认是：
+
+- `artifacts/fusion_terms.dict.yaml`
+
+### Minimal integration notes (conceptual)
+
+把生成的 `fusion_terms.dict.yaml` 放到你的 Rime 配置目录（例如 `~/.config/fcitx/rime/`）后，按你使用的方案接入：
+
+- 方案 1：在 schema 里通过 `import_tables` 引入（常见做法）
+- 方案 2：使用 `table_translator` 指向 `fusion_terms`（取决于你当前的 schema 结构）
+
+由于不同发行版 / rime-ice 版本的 schema 结构可能不同，这里不强行给出“唯一正确”的 patch。
+建议做法是：先把文件放入目录 → 执行 deploy → 再用固定验收用例集（ITER/EAST/NBI/H-mode/q95/β_N/τ_E/托卡马克 等）做一次手工验证。

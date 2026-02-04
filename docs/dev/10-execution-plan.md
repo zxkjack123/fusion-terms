@@ -543,7 +543,7 @@
 ### 阶段 6：Rime 稳定集成
 
 - [x] 导入安全（备份/回滚/dry-run/验证；入口：`python -m pipeline.rime_import_safe`；真实导入仍建议手工集成测试）
-- [ ] baked dict 方案可用（可选，但建议最终上）
+- [x] baked dict 方案可用（可选，但建议最终上；入口：`python -m pipeline.generate_dict_yaml`；Rime deploy 属于手工集成测试）
 
 ### 阶段 7：发布协作
 
