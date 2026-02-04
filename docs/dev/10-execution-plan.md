@@ -560,10 +560,10 @@
   - 验收：至少覆盖一小批 must-have 概念（装置/缩写/指标/材料/方法各≥1），并能表达 preferred/alias/forbidden
 - [x] 任务 8.2：registry 一致性校验（validator）
   - 验收：概念 id 唯一；alias 不冲突；非法字符被拒绝；forbidden/deprecated 不得出现在 IME allowlists（由 `python -m pipeline.validate_registry` 与单测保证）
-- [ ] 任务 8.3：导出多消费者产物（exporter）
+- [x] 任务 8.3：导出多消费者产物（exporter）
   - [x] 8.3a Vale：`artifacts/vale/accept.txt` / `artifacts/vale/reject.txt`（入口：`python -m pipeline.export_registry`）
   - [x] 8.3b 检索扩展：`artifacts/query_expansions.json`（入口：`python -m pipeline.export_registry --query-expansions`）
-  - [ ] 8.3c 自动标签：`artifacts/tag_rules.jsonl`（alias → concept_id/category）
+  - [x] 8.3c 自动标签：`artifacts/tag_rules.jsonl`（alias → concept_id/category；入口：`python -m pipeline.export_registry --tag-rules`）
   - 验收：导出可复现（排序稳定），且同一 alias 在各产物指向一致
 - [ ] 任务 8.4：与现有 IME 路径的关系固化（不破坏兼容）
   - 验收：现有 `build_terms` 行为不变；registry 产物的引入不会要求用户更改 IME 工作流

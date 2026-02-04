@@ -13,6 +13,15 @@ from pipeline.common import ensure_dir
 from pipeline.validate_registry import validate_registry
 
 
+_KIND_SEVERITY: dict[str, int] = {
+    # Higher wins when the same alias appears multiple times.
+    "forbidden": 3,
+    "deprecated": 2,
+    "preferred": 1,
+    "alias": 0,
+}
+
+
 def _load_config(config_path: Path) -> dict:
     if not config_path.exists():
         return {}
@@ -201,6 +210,81 @@ def export_query_expansions(*, terms_dir: Path, out_dir: Path) -> dict[str, obje
     }
 
 
+def export_tag_rules(*, terms_dir: Path, out_dir: Path) -> dict[str, object]:
+    """Export tag rules for auto-tagging / indexing.
+
+    Output: artifacts/tag_rules.jsonl
+
+    Each line is a JSON object describing a literal match rule:
+      {alias, concept_id, category, lang, kind, match}
+
+    Notes:
+    - We export all alias kinds (preferred/alias/deprecated/forbidden).
+      Consumers can decide whether to ignore forbidden/deprecated at runtime.
+    - If the same alias appears multiple times (same concept_id), we coalesce
+      to a single rule using kind severity: forbidden > deprecated > preferred > alias.
+    """
+
+    registry_dir = terms_dir / "registry"
+    concepts_path = registry_dir / "concepts.tsv"
+    aliases_path = registry_dir / "aliases.tsv"
+
+    concepts_rows = _iter_concept_rows(concepts_path)
+    concepts: dict[str, dict[str, str]] = {r["concept_id"]: r for r in concepts_rows}
+
+    rows = _iter_alias_rows(aliases_path)
+
+    # Coalesce by alias to keep output stable and easy to consume.
+    by_alias: dict[str, dict[str, str]] = {}
+    for r in rows:
+        alias = r["alias"]
+        concept_id = r["concept_id"]
+        kind = r["kind"]
+
+        existing = by_alias.get(alias)
+        if existing is None:
+            by_alias[alias] = r
+            continue
+
+        # Same alias mapping to multiple concepts is already rejected by validator.
+        # Still, prefer deterministic behavior if invoked without validation.
+        if existing.get("concept_id") != concept_id:
+            # Keep the existing entry; downstream should rely on validator.
+            continue
+
+        sev_new = _KIND_SEVERITY.get(kind, 0)
+        sev_old = _KIND_SEVERITY.get(existing.get("kind", "alias"), 0)
+        if sev_new > sev_old:
+            by_alias[alias] = r
+        elif sev_new == sev_old:
+            # Tie-breaker for determinism: pick lexicographically smallest lang.
+            if (r.get("lang", "") or "") < (existing.get("lang", "") or ""):
+                by_alias[alias] = r
+
+    out_path = out_dir / "tag_rules.jsonl"
+    lines: list[str] = []
+    for alias in sorted(by_alias.keys()):
+        r = by_alias[alias]
+        concept_id = r["concept_id"]
+        c = concepts.get(concept_id, {})
+        rule = {
+            "alias": alias,
+            "concept_id": concept_id,
+            "category": c.get("category", ""),
+            "lang": r.get("lang", ""),
+            "kind": r.get("kind", ""),
+            "match": "literal",
+        }
+        lines.append(json.dumps(rule, ensure_ascii=False, sort_keys=True))
+
+    out_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+    return {
+        "tag_rules": str(out_path),
+        "tag_rule_count": len(lines),
+    }
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(
         description="Export multi-consumer artifacts from terms/registry (currently: Vale accept/reject)."
@@ -230,6 +314,11 @@ def main() -> None:
         action="store_true",
         help="Export query expansions JSON (artifacts/query_expansions.json)",
     )
+    parser.add_argument(
+        "--tag-rules",
+        action="store_true",
+        help="Export tag rules JSONL (artifacts/tag_rules.jsonl)",
+    )
 
     args = parser.parse_args()
 
@@ -242,6 +331,7 @@ def main() -> None:
     # Default behavior: export Vale unless explicitly disabled.
     do_vale = not args.no_vale
     do_query = bool(args.query_expansions)
+    do_tag = bool(args.tag_rules)
 
     # Gate: registry must be consistent.
     validate_registry(terms_dir)
@@ -253,6 +343,8 @@ def main() -> None:
         manifest.update(export_vale_terms(terms_dir=terms_dir, out_dir=out_dir))
     if do_query:
         manifest.update(export_query_expansions(terms_dir=terms_dir, out_dir=out_dir))
+    if do_tag:
+        manifest.update(export_tag_rules(terms_dir=terms_dir, out_dir=out_dir))
 
     # Emit a small manifest to make downstream tooling simpler.
     manifest_path = out_dir / "registry_exports.json"

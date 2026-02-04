@@ -82,6 +82,7 @@
 
 - Vale：`artifacts/vale/accept.txt`、`artifacts/vale/reject.txt`
 - 检索扩展：`artifacts/query_expansions.json`（`--query-expansions`）
+- 自动标签：`artifacts/tag_rules.jsonl`（`--tag-rules`）
 
 ### 3.1 `terms/registry/concepts.tsv`
 
