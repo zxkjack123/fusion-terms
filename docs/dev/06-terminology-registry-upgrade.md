@@ -74,6 +74,10 @@
 
 - `python -m pipeline.validate_registry --terms-dir terms`
 
+导出多消费者产物的入口（当前已实现 Vale accept/reject；query/tag 导出在后续小任务中补齐）：
+
+- `python -m pipeline.export_registry --terms-dir terms --out-dir artifacts`
+
 ### 3.1 `terms/registry/concepts.tsv`
 
 每行一个概念（概念主表）。建议字段（可先实现前 6 列）：
