@@ -135,3 +135,42 @@ def test_extract_filtered_outputs_respects_zh_stopwords(tmp_path: Path) -> None:
     )
     for banned in ["其中", "例如", "所示"]:
         assert f"{banned}\t" not in filt_zh
+
+
+def test_extract_en_phrase_components_from_technical_lines(tmp_path: Path) -> None:
+    repo_root = Path(__file__).resolve().parents[1]
+
+    corpus_root = tmp_path / "corpus"
+    corpus_root.mkdir(parents=True, exist_ok=True)
+    (corpus_root / "a.md").write_text(
+        "neutral beam injection (NBI) is a heating method.\n",
+        encoding="utf-8",
+    )
+
+    out_dir = tmp_path / "artifacts"
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    p = subprocess.run(
+        [
+            sys.executable,
+            "-m",
+            "pipeline.extract_candidates",
+            "--source-root",
+            str(corpus_root),
+            "--out-dir",
+            str(out_dir),
+            "--max-files",
+            "100",
+        ],
+        cwd=str(repo_root),
+        text=True,
+        capture_output=True,
+    )
+    assert p.returncode == 0, f"stdout:\n{p.stdout}\nstderr:\n{p.stderr}"
+
+    raw_en = (out_dir / "candidates_en.tsv").read_text("utf-8", errors="ignore")
+    # High-precision token should exist.
+    assert "NBI\t" in raw_en
+    # Phrase components should be harvested as lowercase tokens.
+    for expected in ["neutral", "beam", "injection"]:
+        assert f"{expected}\t" in raw_en

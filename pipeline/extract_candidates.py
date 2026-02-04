@@ -30,6 +30,84 @@ HYPHEN_TERM_RE = re.compile(r"\b[A-Za-z0-9]{1,12}(?:-[A-Za-z0-9]{1,12})+\b")
 MATERIAL_FORMULA_RE = re.compile(r"\b[A-Z][a-z]?(?:\d+)(?:[A-Z][a-z]?\d+)*\b")
 SLASH_MIX_RE = re.compile(r"\b[A-Za-z]{1,6}\/[A-Za-z]{1,6}\b")
 
+# Lowercase English word tokens (used to capture phrase components like neutral/beam/injection).
+# We keep this conservative to avoid swamping candidates with generic prose.
+EN_WORD_RE = re.compile(r"\b[a-z]{3,24}\b")
+
+# Minimal built-in stopwords for the EN_WORD_RE path only.
+# This is intentionally small; a full stopword list should live in terms/stopwords_en.txt
+# and be applied via --en-stopwords for filtered outputs.
+COMMON_EN_STOPWORDS: set[str] = {
+    "a",
+    "an",
+    "and",
+    "are",
+    "as",
+    "at",
+    "be",
+    "been",
+    "but",
+    "by",
+    "can",
+    "could",
+    "did",
+    "do",
+    "does",
+    "for",
+    "from",
+    "had",
+    "has",
+    "have",
+    "he",
+    "her",
+    "here",
+    "him",
+    "his",
+    "how",
+    "if",
+    "in",
+    "into",
+    "is",
+    "it",
+    "its",
+    "may",
+    "more",
+    "most",
+    "not",
+    "of",
+    "on",
+    "one",
+    "or",
+    "our",
+    "out",
+    "she",
+    "should",
+    "such",
+    "than",
+    "that",
+    "the",
+    "their",
+    "there",
+    "these",
+    "they",
+    "this",
+    "those",
+    "to",
+    "too",
+    "was",
+    "we",
+    "were",
+    "what",
+    "when",
+    "which",
+    "who",
+    "will",
+    "with",
+    "would",
+    "you",
+    "your",
+}
+
 
 CACHE_SCHEMA_VERSION = 1
 
@@ -53,6 +131,8 @@ def _extractor_signature(*, min_zh_len: int, max_zh_len: int) -> str:
             f"HYPHEN_TERM_RE={HYPHEN_TERM_RE.pattern}",
             f"MATERIAL_FORMULA_RE={MATERIAL_FORMULA_RE.pattern}",
             f"SLASH_MIX_RE={SLASH_MIX_RE.pattern}",
+            f"EN_WORD_RE={EN_WORD_RE.pattern}",
+            f"COMMON_EN_STOPWORDS_SHA1={_sha1_str('\\n'.join(sorted(COMMON_EN_STOPWORDS)))}",
         ]
     )
     return _sha1_str(payload)
@@ -324,6 +404,15 @@ def extract(
             tokens.update(HYPHEN_TERM_RE.findall(line))
             tokens.update(MATERIAL_FORMULA_RE.findall(line))
             tokens.update(SLASH_MIX_RE.findall(line))
+
+            # Phrase component words: only harvest plain lowercase words from
+            # lines that already contain some technical token.
+            if tokens:
+                low = line.lower()
+                for w in EN_WORD_RE.findall(low):
+                    if w in COMMON_EN_STOPWORDS:
+                        continue
+                    tokens.add(w)
 
             for tok in tokens:
                 file_en_counts[tok] += 1
