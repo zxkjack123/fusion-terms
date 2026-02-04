@@ -37,8 +37,10 @@ def test_ime_acceptance_pack_detects_missing_and_writes_outputs(tmp_path: Path) 
 
     pack_path = out_dir / "ime_acceptance_pack.json"
     terms_path = out_dir / "ime_acceptance_terms.txt"
+    hints_path = out_dir / "ime_acceptance_terms_hints.tsv"
     assert pack_path.exists()
     assert terms_path.exists()
+    assert hints_path.exists()
 
     pack = json.loads(pack_path.read_text("utf-8"))
     assert pack["schema_version"] == 1
@@ -59,3 +61,17 @@ def test_ime_acceptance_pack_detects_missing_and_writes_outputs(tmp_path: Path) 
     suggested = pack["suggested_typing_terms"]
     lines = [ln.strip() for ln in terms_path.read_text("utf-8").splitlines() if ln.strip()]
     assert lines == suggested
+
+    # Symbol-heavy terms should carry typing hints (best-effort romanization).
+    typing_hints = pack.get("typing_hints")
+    assert isinstance(typing_hints, dict)
+    assert "β_N" in typing_hints
+    assert any("beta" in h.lower() for h in typing_hints["β_N"])
+    assert "τ_E" in typing_hints
+    assert any("tau" in h.lower() for h in typing_hints["τ_E"])
+
+    # TSV hints file should include at least those hint rows.
+    tsv_lines = [ln.rstrip("\n") for ln in hints_path.read_text("utf-8").splitlines() if ln.strip()]
+    assert tsv_lines[0].split("\t")[:2] == ["term", "hints"]
+    assert any(ln.startswith("β_N\t") and "beta" in ln.lower() for ln in tsv_lines[1:])
+    assert any(ln.startswith("τ_E\t") and "tau" in ln.lower() for ln in tsv_lines[1:])

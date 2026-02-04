@@ -28,8 +28,14 @@ artifacts/*.log
 
 # Generated artifacts
 artifacts/domain_terms.txt
+artifacts/*_build_stats.json
 artifacts/extract_stats.json
 artifacts/extract_delta.json
+
+# IME acceptance pack artifacts
+artifacts/ime_acceptance_pack.json
+artifacts/ime_acceptance_terms.txt
+artifacts/ime_acceptance_terms_hints.tsv
 
 # Review pack (incremental review helpers)
 artifacts/review_pack/

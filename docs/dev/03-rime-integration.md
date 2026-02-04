@@ -100,6 +100,7 @@ This repo’s pipeline is designed so that adding a `.dict.yaml` generator later
 
 - `artifacts/ime_acceptance_pack.json`：must-have 术语是否在 wordlist 中（缺失项可直接指导补种/归一）。
 - `artifacts/ime_acceptance_terms.txt`：建议你在 IME 中逐条测试的术语列表（默认 30 条，可 `--pick-n` 调整）。
+- `artifacts/ime_acceptance_terms_hints.tsv`：对 **含希腊字母/非 ASCII 符号** 的术语给出若干“可能的可输入别名”提示（例如 `β_N → beta_N / betaN`），用于你在 schema 侧做 alias/码表映射或自定义词典时参考。
 
 建议手工步骤（Option A 或 B 均适用）：
 
@@ -109,3 +110,8 @@ This repo’s pipeline is designed so that adding a `.dict.yaml` generator later
 4) 打开任意输入框，按 `ime_acceptance_terms.txt` 逐条尝试输出
 
 > 注意：该工具只能检查“词表里有没有”，不能自动判断“在你的 schema / 码表中是否能稳定触发”。稳定触发仍以手工验收为准。
+
+补充说明：
+
+- `ime_acceptance_pack.json` 里包含 `typing_hints` 字段（仅对非 ASCII 且非中文的 term 生成），和 `ime_acceptance_terms_hints.tsv` 内容一致。
+- `typing_hints` 是 best-effort 提示，不保证与你的 Rime schema 完全一致；但它能把“明显难打的符号术语”提前暴露出来，避免你在验收时才发现需要补 alias。

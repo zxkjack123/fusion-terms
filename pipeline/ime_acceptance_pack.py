@@ -5,8 +5,78 @@ import json
 from pathlib import Path
 
 
+_GREEK_ROMANIZATION: dict[str, str] = {
+    "α": "alpha",
+    "β": "beta",
+    "γ": "gamma",
+    "δ": "delta",
+    "ε": "epsilon",
+    "κ": "kappa",
+    "λ": "lambda",
+    "μ": "mu",
+    "ν": "nu",
+    "π": "pi",
+    "ρ": "rho",
+    "σ": "sigma",
+    "τ": "tau",
+    "φ": "phi",
+    "χ": "chi",
+    "ω": "omega",
+    "Ω": "Omega",
+}
+
+
 def _is_zh_term(t: str) -> bool:
     return any("\u4e00" <= ch <= "\u9fff" for ch in t)
+
+
+def _has_non_ascii_non_zh(t: str) -> bool:
+    """True if the term contains non-ASCII chars that are not CJK."""
+    for ch in t:
+        if ord(ch) < 128:
+            continue
+        if "\u4e00" <= ch <= "\u9fff":
+            continue
+        return True
+    return False
+
+
+def _typing_hints_for_term(t: str) -> list[str]:
+    """Best-effort typing hints for symbol-heavy/non-ASCII (non-CJK) terms.
+
+    Notes:
+    - Hints are *suggestions*; actual triggerability depends on the user's schema.
+    - We intentionally only generate hints for non-ASCII non-CJK terms to keep
+      output focused.
+    """
+
+    if _is_zh_term(t):
+        return []
+    if not _has_non_ascii_non_zh(t):
+        return []
+
+    romanized = "".join(_GREEK_ROMANIZATION.get(ch, ch) for ch in t)
+    ascii_only = "".join(ch for ch in romanized if ord(ch) < 128)
+
+    hints: list[str] = []
+
+    def _add(x: str) -> None:
+        s = x.strip()
+        if not s:
+            return
+        if s not in hints:
+            hints.append(s)
+
+    _add(ascii_only)
+    _add(ascii_only.lower())
+    _add(ascii_only.replace("_", ""))
+    _add(ascii_only.lower().replace("_", ""))
+    _add(ascii_only.replace("-", ""))
+    _add(ascii_only.lower().replace("-", ""))
+    _add(ascii_only.replace("/", ""))
+    _add(ascii_only.lower().replace("/", ""))
+
+    return hints
 
 
 def _load_wordlist(path: Path) -> list[str]:
@@ -67,6 +137,7 @@ def build_acceptance_pack(
     wordlist_path: Path,
     out_json: Path,
     out_terms_txt: Path,
+    out_hints_tsv: Path,
     must_have: list[str],
     pick_n: int,
 ) -> dict[str, object]:
@@ -103,12 +174,19 @@ def build_acceptance_pack(
             break
         suggested.append(t)
 
+    typing_hints: dict[str, list[str]] = {}
+    for t in suggested:
+        hints = _typing_hints_for_term(t)
+        if hints:
+            typing_hints[t] = hints
+
     pack = {
         "schema_version": 1,
         "wordlist": str(wordlist_path),
         "outputs": {
             "json": str(out_json),
             "typing_terms": str(out_terms_txt),
+            "typing_hints_tsv": str(out_hints_tsv),
         },
         "counts": {
             "total": len(terms_set),
@@ -117,11 +195,13 @@ def build_acceptance_pack(
             "must_have": len(must_have),
             "missing_must_have": len(missing),
             "suggested_typing_terms": len(suggested),
+            "typing_hints_terms": len(typing_hints),
         },
         "must_have": must_have,
         "checks": checks,
         "missing_must_have": missing,
         "suggested_typing_terms": suggested,
+        "typing_hints": typing_hints,
     }
 
     out_json.parent.mkdir(parents=True, exist_ok=True)
@@ -131,6 +211,15 @@ def build_acceptance_pack(
     )
     out_terms_txt.parent.mkdir(parents=True, exist_ok=True)
     out_terms_txt.write_text("\n".join(suggested) + "\n", encoding="utf-8")
+
+    out_hints_tsv.parent.mkdir(parents=True, exist_ok=True)
+    lines: list[str] = ["term\thints"]
+    for t in suggested:
+        hints = typing_hints.get(t)
+        if not hints:
+            continue
+        lines.append(f"{t}\t{'|'.join(hints)}")
+    out_hints_tsv.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
     return pack
 
@@ -164,6 +253,13 @@ def main() -> None:
         ),
     )
     parser.add_argument(
+        "--out-hints-tsv",
+        default=None,
+        help=(
+            "Optional typing-hints TSV output path (default: <out-dir>/ime_acceptance_terms_hints.tsv)"
+        ),
+    )
+    parser.add_argument(
         "--must-have",
         action="append",
         default=[],
@@ -193,6 +289,11 @@ def main() -> None:
         if args.out_terms
         else (out_dir / "ime_acceptance_terms.txt")
     )
+    out_hints_tsv = (
+        Path(args.out_hints_tsv).expanduser()
+        if args.out_hints_tsv
+        else (out_dir / "ime_acceptance_terms_hints.tsv")
+    )
 
     must_have = [str(x) for x in (args.must_have or [])]
     if not must_have:
@@ -202,6 +303,7 @@ def main() -> None:
         wordlist_path=wordlist_path,
         out_json=out_json,
         out_terms_txt=out_terms,
+        out_hints_tsv=out_hints_tsv,
         must_have=must_have,
         pick_n=int(args.pick_n),
     )

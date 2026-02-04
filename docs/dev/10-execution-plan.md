@@ -504,6 +504,7 @@
 - [x] 构建拒绝不可见/控制字符词条（例如零宽空格 U+200B）
 - [ ] 构建 + 导入后：关键术语可稳定打出
   - [x] 提供手工验收包生成器（`python -m pipeline.ime_acceptance_pack` 生成 `ime_acceptance_terms.txt/json`）
+  - [x] 手工验收包包含符号术语的 typing hints（`ime_acceptance_terms_hints.tsv` + JSON `typing_hints`）
 
 ### 阶段 2：降噪与审阅友好
 
