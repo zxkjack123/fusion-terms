@@ -549,7 +549,7 @@
 
 ### 阶段 7：发布协作
 
-- [ ] changelog/版本策略明确
+- [x] changelog/版本策略明确（见仓库根目录 `CHANGELOG.md`）
 - [x] 构建统计报表（新增/删除/归一化）可生成（`build_terms` 默认写出 `*_build_stats.json`）
 
 ### 阶段 8：术语注册表（registry）升级（多工具稳定服务）

@@ -1,0 +1,29 @@
+# Changelog
+
+本项目的变更记录与版本策略。
+
+## 版本策略（CalVer）
+
+- 采用 **CalVer**（日历版本）：`vYYYY.MM.DD`。
+- 若同一天需要多次发布：`vYYYY.MM.DD.N`（从 1 开始递增）。
+- “发布（release）”的最小动作：
+  1) 更新本文件的 *Unreleased* 区块（把条目移动到新版本号下）。
+  2) 确保质量门禁全绿：`python -m compileall` + `pytest`。
+  3) 打 Git tag：`vYYYY.MM.DD`（或 `vYYYY.MM.DD.N`）。
+
+> 说明：导出产物中的 `schema_version`（例如 `*_build_stats.json`、registry 导出 manifest 等）用于 **数据格式/兼容性**；它与项目的 CalVer tag 不同维度，按需要独立演进。
+
+## Unreleased
+
+### Added
+
+- 构建统计报表：`pipeline.build_terms` 默认写出 `*_build_stats.json`（新增/删除/总数、zh/en 拆分、synonyms 归一化计数）。
+- Rime 集成加固：安全导入包装器（dry-run/备份/失败回滚）与 baked dict 生成器（`fusion_terms.dict.yaml`）。
+- 审核工具化：review pack（候选增量 diff）与 decisions apply（将审阅决定确定性写入 allow/deny/synonyms）。
+- registry 升级：validator + 多消费者导出（Vale accept/reject、query expansions、tag rules）与 IME 兼容回归保障。
+
+### Changed
+
+- 构建门禁更严格：拒绝 whitespace 词条、不可见/控制字符、以及冲突 synonyms 映射。
+- 抽词流水线：增量 cache + delta report；提供 filtered candidates 输出与 stopwords 种子支持。
+
