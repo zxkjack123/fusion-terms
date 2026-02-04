@@ -31,6 +31,10 @@ artifacts/domain_terms.txt
 artifacts/extract_stats.json
 artifacts/extract_delta.json
 
+# Review pack (incremental review helpers)
+artifacts/review_pack/
+artifacts/.review_baseline/
+
 # Registry exports (multi-consumer)
 artifacts/registry_exports.json
 artifacts/query_expansions.json

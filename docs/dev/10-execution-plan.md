@@ -537,7 +537,7 @@
 
 ### 阶段 5：审核工具化
 
-- [ ] review pack / diff 新增候选可用
+- [x] review pack / diff 新增候选可用（入口：`python -m pipeline.review_pack --out-dir artifacts`）
 - [ ] allow/deny/synonyms 更新更省时
 
 ### 阶段 6：Rime 稳定集成
