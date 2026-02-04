@@ -342,6 +342,8 @@
 
 - 新增 `CHANGELOG.md`（或 `docs/releases/`）
 - `pipeline/build_terms.py` 输出摘要统计：新增/删除/总数、按语言占比
+  - 默认写入：`<out-dir>/<output_stem>_build_stats.json`（例如 `artifacts/domain_terms_build_stats.json`）
+  - 字段：`counts.total/zh/en/added/removed/synonyms_mapped` + `added[]/removed[]`（用于审计，可忽略）
 
 **测试内容**
 
@@ -548,7 +550,7 @@
 ### 阶段 7：发布协作
 
 - [ ] changelog/版本策略明确
-- [ ] 构建统计报表（新增/删除/归一化）可生成
+- [x] 构建统计报表（新增/删除/归一化）可生成（`build_terms` 默认写出 `*_build_stats.json`）
 
 ### 阶段 8：术语注册表（registry）升级（多工具稳定服务）
 

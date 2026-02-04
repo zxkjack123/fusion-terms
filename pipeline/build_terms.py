@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import re
 import unicodedata
 from pathlib import Path
@@ -100,6 +101,21 @@ def normalize_terms(
     return out
 
 
+def _is_zh_term(t: str) -> bool:
+    return any("\u4e00" <= ch <= "\u9fff" for ch in t)
+
+
+def _load_wordlist_terms(path: Path) -> set[str]:
+    if not path.exists():
+        return set()
+    out: set[str] = set()
+    for line in path.read_text("utf-8", errors="ignore").splitlines():
+        s = line.strip()
+        if s:
+            out.add(s)
+    return out
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(
         description="Build final fusion term wordlist from curated lists."
@@ -129,6 +145,14 @@ def main() -> None:
         default="domain_terms.txt",
         help="Output filename under out-dir",
     )
+    parser.add_argument(
+        "--stats-json",
+        default=None,
+        help=(
+            "Optional build stats JSON output path. "
+            "Default: <out-dir>/<output_stem>_build_stats.json"
+        ),
+    )
 
     args = parser.parse_args()
 
@@ -154,6 +178,15 @@ def main() -> None:
         keep_aliases=args.keep_aliases,
     )
 
+    # Stats: how many inputs were normalized by synonyms.
+    synonyms_mapped = 0
+    for t in merged:
+        if t in deny:
+            continue
+        preferred = synonyms.get(t, t)
+        if preferred != t and preferred not in deny:
+            synonyms_mapped += 1
+
     validate_no_whitespace_terms(final_terms, context="after deny/synonyms normalization")
     validate_no_control_or_invisible_terms(
         final_terms, context="after deny/synonyms normalization"
@@ -162,14 +195,48 @@ def main() -> None:
     ensure_dir(out_dir)
     out_path = out_dir / args.output
 
+    prev_terms = _load_wordlist_terms(out_path)
+
     # Stable ordering: zh first (roughly), then en; within each: lexicographic
-    zh = sorted(
-        [t for t in final_terms if any("\u4e00" <= ch <= "\u9fff" for ch in t)]
-    )
+    zh = sorted([t for t in final_terms if _is_zh_term(t)])
     en = sorted([t for t in final_terms if t not in set(zh)])
 
     out_path.write_text("\n".join(zh + en) + "\n", encoding="utf-8")
     print(f"wrote {out_path} ({len(final_terms)} terms)")
+
+    # Build stats report (deterministic JSON).
+    output_stem = Path(args.output).stem
+    stats_path = (
+        Path(args.stats_json).expanduser()
+        if args.stats_json
+        else (out_dir / f"{output_stem}_build_stats.json")
+    )
+
+    added = sorted(final_terms - prev_terms)
+    removed = sorted(prev_terms - final_terms)
+
+    stats = {
+        "schema_version": 1,
+        "wordlist": str(out_path),
+        "stats_path": str(stats_path),
+        "counts": {
+            "total": len(final_terms),
+            "zh": len(zh),
+            "en": len(en),
+            "synonyms_mapped": int(synonyms_mapped),
+            "added": len(added),
+            "removed": len(removed),
+        },
+        # Keep full lists for auditability; consumers can ignore.
+        "added": added,
+        "removed": removed,
+    }
+
+    stats_path.write_text(
+        json.dumps(stats, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+    print(f"wrote {stats_path}")
 
 
 if __name__ == "__main__":
