@@ -1,7 +1,12 @@
 # fusion-terms: architecture & design
 
 ## Goal
-Build a **versioned, reproducible fusion-domain terminology lexicon** that can be reliably consumed by Rime (雾凇拼音 / rime-ice).
+Build a **versioned, reproducible fusion-domain terminology lexicon** that can be reliably consumed by Rime (雾凇拼音 / rime-ice),
+and can be upgraded into a multi-consumer **terminology registry** (writing gates / search / tagging / data-dictionary).
+
+For the upgrade path and proposed registry data model, see:
+
+- `docs/dev/06-terminology-registry-upgrade.md`
 
 Key properties:
 

@@ -526,3 +526,14 @@
 
 - [ ] changelog/版本策略明确
 - [ ] 构建统计报表（新增/删除/归一化）可生成
+
+### 阶段 8：术语注册表（registry）升级（多工具稳定服务）
+
+> 目标：让本项目不仅生成 IME token 词表，还能稳定服务写作门禁（Vale）、检索扩展、自动标签、以及后续的指标口径/单位等“知识基础设施”。
+> 兼容策略：先新增 registry 源数据与导出产物；不打断现有 `terms/*` → `build_terms` → `domain_terms.txt` 的输入法路径。
+
+- [x] 增加 registry 设计文档与最小数据模型（concepts/aliases/evidence）（见 `docs/dev/06-terminology-registry-upgrade.md`）
+- [ ] 在 `terms/registry/` 引入最小可用源数据（少量核心概念即可）
+- [ ] 导出写作门禁产物（Vale accept/reject）与检索扩展产物（query expansions）
+- [ ] 导出自动标签/索引规则（alias → concept_id/category）
+- [ ] 引入一致性校验与回归测试（概念 id 唯一、alias 冲突、非法字符、可复现导出）
