@@ -565,5 +565,5 @@
   - [x] 8.3b 检索扩展：`artifacts/query_expansions.json`（入口：`python -m pipeline.export_registry --query-expansions`）
   - [x] 8.3c 自动标签：`artifacts/tag_rules.jsonl`（alias → concept_id/category；入口：`python -m pipeline.export_registry --tag-rules`）
   - 验收：导出可复现（排序稳定），且同一 alias 在各产物指向一致
-- [ ] 任务 8.4：与现有 IME 路径的关系固化（不破坏兼容）
-  - 验收：现有 `build_terms` 行为不变；registry 产物的引入不会要求用户更改 IME 工作流
+- [x] 任务 8.4：与现有 IME 路径的关系固化（不破坏兼容）
+  - 验收：现有 `build_terms` 行为不变；registry 产物的引入不会要求用户更改 IME 工作流（已用回归测试覆盖）
