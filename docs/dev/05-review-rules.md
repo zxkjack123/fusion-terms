@@ -66,7 +66,9 @@
 ## 6. synonyms.tsv 规范
 
 - 格式：`alias\tpreferred\tlang(optional)`
+- **第三列 `lang` 当前仅作为注释/保留字段**：构建流程目前只读取前两列（alias/preferred），不会按语言做不同处理。不要依赖 `lang` 生效。
 - **alias 和 preferred 都必须是单 token（无空白）**。
+- **同一个 alias 不能映射到多个 preferred**：若出现冲突（同 alias 不同 preferred），构建会失败（避免“后者覆盖前者”的隐蔽行为）。
 - 只做“形式归一”，不做“扩写短语”：
   - ✅ `DT → D-T`
   - ✅ `Hmode → H-mode`

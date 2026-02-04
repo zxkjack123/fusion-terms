@@ -158,15 +158,24 @@ def load_simple_list(path: Path) -> set[str]:
 def load_synonyms_tsv(path: Path) -> dict[str, str]:
     """Load alias->preferred mapping from a TSV file.
 
-    Format: alias\tpreferred\tlang(optional)
+        Format: alias\tpreferred\tlang(optional)
     Lines starting with # are ignored.
+
+        Note:
+        - The 3rd column (lang) is currently ignored by the build pipeline.
+            It is treated as documentation / future extension only.
+        - Conflicting mappings (same alias mapped to different preferred forms)
+            are rejected to avoid non-deterministic 'last one wins' behavior.
     """
 
     if not path.exists():
         return {}
 
     mapping: dict[str, str] = {}
-    for line in path.read_text("utf-8", errors="ignore").splitlines():
+    for lineno, line in enumerate(
+        path.read_text("utf-8", errors="ignore").splitlines(),
+        start=1,
+    ):
         s = line.strip()
         if not s or s.startswith("#"):
             continue
@@ -174,6 +183,15 @@ def load_synonyms_tsv(path: Path) -> dict[str, str]:
         if len(parts) < 2:
             continue
         alias, preferred = parts[0].strip(), parts[1].strip()
-        if alias and preferred:
-            mapping[alias] = preferred
+        if not (alias and preferred):
+            continue
+
+        if alias in mapping and mapping[alias] != preferred:
+            raise SystemExit(
+                "conflicting synonyms mapping in "
+                f"{path}:{lineno}: {alias!r} maps to both "
+                f"{mapping[alias]!r} and {preferred!r}"
+            )
+
+        mapping[alias] = preferred
     return mapping
