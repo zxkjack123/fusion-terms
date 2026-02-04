@@ -1,0 +1,16 @@
+# concept_id	category	preferred_zh	preferred_en	preferred_abbr	status	notes
+# - concept_id: stable id, lowercase with hyphens, e.g. neutral-beam-injection
+# - preferred_en MAY be a phrase (registry-level concept name). IME export must split into tokens.
+# - status: active|deprecated|draft
+iter	device		ITER	ITER	active	International Thermonuclear Experimental Reactor
+EAST	device		EAST	EAST	active	Experimental Advanced Superconducting Tokamak
+tokamak	concept	托卡马克	tokamak		active	Core device concept
+neutral-beam-injection	method		neutral beam injection	NBI	active	Heating/current drive method (concept-level name is a phrase)
+thomson-scattering	diagnostic		Thomson scattering		active	Diagnostic method (concept-level name is a phrase)
+tritium-retention	metric	氚滞留	tritium retention		active	Key safety/material metric
+q95	metric		q95		active	Safety factor at 95% poloidal flux
+beta-n	metric		beta_N		active	Normalized beta (ASCII preferred here; can alias to β_N)
+tau-e	metric		tau_E		active	Energy confinement time (ASCII preferred here; can alias to τ_E)
+tungsten	material		w	W	active	Material / element (token preferred is W)
+beryllium	material		Be	Be	active	Material / element
+nb3sn	material		Nb3Sn		active	Superconductor (Nb3Sn)

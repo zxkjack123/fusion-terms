@@ -1,0 +1,27 @@
+# alias	concept_id	lang	kind	comment
+# - kind: preferred|alias|deprecated|forbidden
+ITER	iter	abbr	preferred	canonical abbr
+International Thermonuclear Experimental Reactor	iter	en	alias	full expansion
+EAST	EAST	abbr	preferred	device abbr
+托卡马克	tokamak	zh	preferred	preferred zh
+tokamak	tokamak	en	preferred	preferred en token
+NBI	neutral-beam-injection	abbr	preferred	canonical abbr
+neutral beam injection	neutral-beam-injection	en	preferred	concept-level phrase
+neutral-beam injection	neutral-beam-injection	en	alias	hyphen variant
+Thomson scattering	thomson-scattering	en	preferred	concept-level phrase
+thomson scattering	thomson-scattering	en	alias	case variant
+氚滞留	tritium-retention	zh	preferred	preferred zh
+tritium retention	tritium-retention	en	preferred	concept-level phrase
+T retention	tritium-retention	en	alias	shorthand
+q95	q95	en	preferred	parameter token
+q_95	q95	en	alias	underscore variant
+beta_N	beta-n	en	preferred	ASCII token
+β_N	beta-n	mixed	alias	Greek variant
+tau_E	tau-e	en	preferred	ASCII token
+τ_E	tau-e	mixed	alias	Greek variant
+W	tungsten	abbr	preferred	element symbol
+tungsten	tungsten	en	alias	word form (consider allowlist depending on IME preference)
+Be	beryllium	abbr	preferred	element symbol
+beryllium	beryllium	en	alias	word form
+Nb3Sn	nb3sn	mixed	preferred	token
+Nb-3Sn	nb3sn	mixed	alias	hyphen variant

@@ -556,7 +556,7 @@
 > 兼容策略：先新增 registry 源数据与导出产物；不打断现有 `terms/*` → `build_terms` → `domain_terms.txt` 的输入法路径。
 
 - [x] 增加 registry 设计文档与最小数据模型（concepts/aliases/evidence）（见 `docs/dev/06-terminology-registry-upgrade.md`）
-- [ ] 任务 8.1：落地最小 registry 源数据（`terms/registry/concepts.tsv` + `aliases.tsv` + `evidence.tsv`）
+- [x] 任务 8.1：落地最小 registry 源数据（`terms/registry/concepts.tsv` + `aliases.tsv` + `evidence.tsv`）
   - 验收：至少覆盖一小批 must-have 概念（装置/缩写/指标/材料/方法各≥1），并能表达 preferred/alias/forbidden
 - [ ] 任务 8.2：registry 一致性校验（validator）
   - 验收：概念 id 唯一；alias 不冲突；非法字符被拒绝；forbidden 不得进入 IME 词表（通过测试或校验报告保证）

@@ -62,6 +62,14 @@
   - `evidence.tsv`
   - `metrics.tsv`（可选，指标口径；后续再加）
 
+当前仓库已落地最小三张表（可从这里开始填充与迭代）：
+
+- `terms/registry/concepts.tsv`
+- `terms/registry/aliases.tsv`
+- `terms/registry/evidence.tsv`
+
+说明：`evidence.tsv` 里允许先用 `internal:TODO:...` 占位，后续逐步补齐 DOI/标准号/内部链接。
+
 ### 3.1 `terms/registry/concepts.tsv`
 
 每行一个概念（概念主表）。建议字段（可先实现前 6 列）：
