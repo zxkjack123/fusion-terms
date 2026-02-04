@@ -26,4 +26,3 @@
 
 - 构建门禁更严格：拒绝 whitespace 词条、不可见/控制字符、以及冲突 synonyms 映射。
 - 抽词流水线：增量 cache + delta report；提供 filtered candidates 输出与 stopwords 种子支持。
-
