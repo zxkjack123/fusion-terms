@@ -2,7 +2,18 @@
 
 [sources]
 # Your Markdown corpus root (pdf2md output). Can be overridden by CLI flags.
-root = "/home/gw/ComputeData/pdf2md/ZoteroIngest/staging"
+# For a real corpus, change this to your pdf2md output directory.
+# The default points to a tiny fixture corpus so the pipeline can run out-of-the-box.
+root = "tests/fixtures/corpus"
+
+# Exclude derived/noise markdown files produced by pdf2md stages.
+# These frequently duplicate content and introduce LaTeX/QA artifacts.
+exclude_globs = [
+	"*.qa_report.md",
+	"*.actionable_report.md",
+	"*.autofix.md",
+	"*_debug.md",
+]
 
 [extract]
 # Chinese candidate span length bounds

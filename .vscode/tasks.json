@@ -41,7 +41,7 @@
             "command": "python3",
             "args": [
                 "-m",
-                "pipeline.rime_export"
+                "pipeline.rime_import_safe"
             ],
             "problemMatcher": []
         },
@@ -51,8 +51,18 @@
             "command": "python3",
             "args": [
                 "-m",
-                "pipeline.rime_export",
-                "--import"
+                "pipeline.rime_import_safe",
+                "--import",
+                // Safety: back up whichever of these paths exists before importing.
+                // If none exist, rime_import_safe will refuse to import.
+                "--backup-path",
+                "~/.local/share/fcitx/rime",
+                "--backup-path",
+                "~/.local/share/fcitx5/rime",
+                "--backup-path",
+                "~/.config/fcitx/rime",
+                "--backup-path",
+                "~/.config/fcitx5/rime"
             ],
             "problemMatcher": []
         }

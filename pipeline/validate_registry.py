@@ -23,8 +23,16 @@ def _iter_tsv_rows(path: Path) -> list[Row]:
     if not path.exists():
         return []
 
+    try:
+        lines = path.read_text("utf-8").splitlines()
+    except UnicodeDecodeError as e:
+        raise SystemExit(
+            f"registry validation failed: {path} is not valid UTF-8 ({e}). "
+            "Tip: re-save this TSV as UTF-8 without BOM."
+        )
+
     rows: list[Row] = []
-    for lineno, line in enumerate(path.read_text("utf-8", errors="ignore").splitlines(), start=1):
+    for lineno, line in enumerate(lines, start=1):
         s = line.strip("\n")
         if not s.strip() or s.lstrip().startswith("#"):
             continue

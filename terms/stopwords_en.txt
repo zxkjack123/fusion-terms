@@ -9,5 +9,25 @@ Table
 Eq
 Fig
 
+# LaTeX / math noise tokens (pdf2md sometimes leaks these as plain words)
+mathrm
+mathbf
+boldsymbol
+mathcal
+mathit
+mathsf
+left
+right
+omega
+theta
+phi
+
+# Common math-function words that are usually not terminology candidates
+exp
+log
+sin
+cos
+tan
+
 # Common non-term words that sometimes appear as ALLCAPS acronyms in text metadata
 # (Add only after you confirm they are noise in your corpus.)

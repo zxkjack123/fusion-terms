@@ -17,12 +17,27 @@
 
 ### Added
 
+### Changed
+
+### Fixed
+
+## v2026.02.05
+
+### Added
+
 - 构建统计报表：`pipeline.build_terms` 默认写出 `*_build_stats.json`（新增/删除/总数、zh/en 拆分、synonyms 归一化计数）。
 - Rime 集成加固：安全导入包装器（dry-run/备份/失败回滚）与 baked dict 生成器（`fusion_terms.dict.yaml`）。
 - 审核工具化：review pack（候选增量 diff）与 decisions apply（将审阅决定确定性写入 allow/deny/synonyms）。
 - registry 升级：validator + 多消费者导出（Vale accept/reject、query expansions、tag rules）与 IME 兼容回归保障。
+- 抽词增强：支持按 glob 排除派生/噪声 Markdown 文件（`config.toml [sources].exclude_globs` + `--exclude-glob`）。
 
 ### Changed
 
 - 构建门禁更严格：拒绝 whitespace 词条、不可见/控制字符、以及冲突 synonyms 映射。
 - 抽词流水线：增量 cache + delta report；提供 filtered candidates 输出与 stopwords 种子支持。
+- 编码策略收紧：对 `terms/`、registry、decisions 等人工维护输入采用 UTF-8 strict（坏编码直接报错）；对外部语料 Markdown 读取在遇到坏字节时用 U+FFFD 替换并发出告警，避免静默丢字节。
+- 工作流更可移植：Rime importer 默认路径使用 `~/.local/bin/rime_import_wordlist.py`（不写死用户名/家目录）。
+
+### Fixed
+
+- 抽词文件遍历兼容：`iter_markdown_files()` 不再漏掉 `.MD`（大写扩展名）的 Markdown 文件。

@@ -53,7 +53,15 @@ def _parse_decisions(path: Path) -> list[Decision]:
         raise SystemExit(f"decisions apply failed: missing decisions file: {path}")
 
     out: list[Decision] = []
-    for lineno, line in enumerate(path.read_text("utf-8", errors="ignore").splitlines(), start=1):
+    try:
+        lines = path.read_text("utf-8").splitlines()
+    except UnicodeDecodeError as e:
+        raise SystemExit(
+            f"decisions apply failed: {path} is not valid UTF-8 ({e}). "
+            "Tip: re-save this file as UTF-8 without BOM."
+        )
+
+    for lineno, line in enumerate(lines, start=1):
         s = line.strip("\n")
         if not s.strip() or s.lstrip().startswith("#"):
             continue
@@ -99,7 +107,13 @@ def _parse_decisions(path: Path) -> list[Decision]:
 def _read_file_lines(path: Path) -> list[str]:
     if not path.exists():
         return []
-    return path.read_text("utf-8", errors="ignore").splitlines()
+    try:
+        return path.read_text("utf-8").splitlines()
+    except UnicodeDecodeError as e:
+        raise SystemExit(
+            f"decisions apply failed: failed to read UTF-8 file: {path} ({e}). "
+            "Tip: re-save this file as UTF-8 without BOM."
+        )
 
 
 def _rewrite_auto_inbox_list(path: Path, new_terms: set[str]) -> None:

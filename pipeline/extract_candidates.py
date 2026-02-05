@@ -34,6 +34,25 @@ SLASH_MIX_RE = re.compile(r"\b[A-Za-z]{1,6}\/[A-Za-z]{1,6}\b")
 # We keep this conservative to avoid swamping candidates with generic prose.
 EN_WORD_RE = re.compile(r"\b[a-z]{3,24}\b")
 
+# LaTeX / math noise tokens that are rarely meaningful as terminology candidates.
+# These can leak from PDF->MD conversion (sometimes losing the leading backslash).
+LATEX_NOISE_EN_WORDS: set[str] = {
+    "mathrm",
+    "mathbf",
+    "boldsymbol",
+    "mathcal",
+    "mathit",
+    "mathsf",
+    "textrm",
+    "text",
+    "left",
+    "right",
+    # Common Greek macro names observed as candidate noise
+    "omega",
+    "theta",
+    "phi",
+}
+
 # Minimal built-in stopwords for the EN_WORD_RE path only.
 # This is intentionally small; a full stopword list should live in terms/stopwords_en.txt
 # and be applied via --en-stopwords for filtered outputs.
@@ -125,7 +144,19 @@ def _extract_en_phrases_rake(line: str, *, stopwords: set[str]) -> set[str]:
 
     # Drop acronyms so they don't get folded into phrases.
     s = ACRONYM_RE.sub(" ", line)
-    words = [w.lower() for w in PHRASE_WORD_RE.findall(s)]
+
+    # Tokenize words with hyphen support, but ignore LaTeX macro names.
+    # Example: "\\omega" should not yield the token "omega".
+    words: list[str] = []
+    for m in PHRASE_WORD_RE.finditer(s):
+        # Ignore LaTeX macro names, robust to stray characters between the
+        # backslash and the word.
+        if "\\" in s[max(0, m.start() - 2) : m.start()]:
+            continue
+        w = m.group(0).lower()
+        if w in LATEX_NOISE_EN_WORDS:
+            continue
+        words.append(w)
 
     phrases: set[str] = set()
     buf: list[str] = []
@@ -168,9 +199,14 @@ def _extractor_signature(
     # avoid backslashes inside f-string expressions.
     stopwords_blob = "\n".join(sorted(COMMON_EN_STOPWORDS))
     stopwords_sha1 = _sha1_str(stopwords_blob)
+    latex_noise_blob = "\n".join(sorted(LATEX_NOISE_EN_WORDS))
+    latex_noise_sha1 = _sha1_str(latex_noise_blob)
     payload = "\n".join(
         [
             f"schema={CACHE_SCHEMA_VERSION}",
+            # Extraction rule version markers (bump when behavior changes).
+            "rule_latex_macro_gate=1",
+            "rule_clean_md_latex_style=1",
             f"min_zh_len={min_zh_len}",
             f"max_zh_len={max_zh_len}",
             f"ACRONYM_RE={ACRONYM_RE.pattern}",
@@ -179,6 +215,7 @@ def _extractor_signature(
             f"SLASH_MIX_RE={SLASH_MIX_RE.pattern}",
             f"EN_WORD_RE={EN_WORD_RE.pattern}",
             f"COMMON_EN_STOPWORDS_SHA1={stopwords_sha1}",
+            f"LATEX_NOISE_EN_WORDS_SHA1={latex_noise_sha1}",
             f"en_phrases={en_phrases}",
             f"PHRASE_WORD_RE={PHRASE_WORD_RE.pattern}",
         ]
@@ -249,6 +286,7 @@ def extract(
     en_phrases: str,
     incremental: bool,
     cache_dir: Path | None,
+    exclude_globs: list[str] | None = None,
 ) -> None:
     zh_re = re.compile(
         ZH_RE_TEMPLATE.format(min_len=min_zh_len, max_len=max_zh_len)
@@ -345,7 +383,7 @@ def extract(
                 en_examples[tok].append(ex)
 
     scanned = 0
-    for md_path in iter_markdown_files(source_root):
+    for md_path in iter_markdown_files(source_root, exclude_globs=exclude_globs or None):
         if max_files is not None and scanned >= max_files:
             break
         scanned += 1
@@ -490,7 +528,15 @@ def extract(
             # lines that already contain some technical token.
             if tokens:
                 low = line.lower()
-                for w in EN_WORD_RE.findall(low):
+                for m in EN_WORD_RE.finditer(low):
+                    w = m.group(0)
+                    # LaTeX macro name like "\\omega". Be robust to stray/invisible
+                    # characters between the backslash and the macro name by
+                    # checking a small lookback window.
+                    if "\\" in low[max(0, m.start() - 2) : m.start()]:
+                        continue
+                    if w in LATEX_NOISE_EN_WORDS:
+                        continue
                     if w in COMMON_EN_STOPWORDS:
                         continue
                     tokens.add(w)
@@ -618,7 +664,8 @@ def extract(
         with path.open("w", encoding="utf-8") as f:
             f.write("term\tcount\texamples\tfiles\n")
             written = 0
-            for term, cnt in counts.most_common():
+            # Stable ordering: count desc, then term asc.
+            for term, cnt in sorted(counts.items(), key=lambda kv: (-kv[1], kv[0])):
                 if stopwords is not None and term in stopwords:
                     continue
                 if min_count is not None and cnt < min_count:
@@ -765,6 +812,16 @@ def main() -> None:
         help="Markdown corpus root (overrides config)",
     )
     parser.add_argument(
+        "--exclude-glob",
+        action="append",
+        default=[],
+        help=(
+            "Exclude markdown files by glob (repeatable). "
+            "Matched against both basename and path relative to source root. "
+            "Example: --exclude-glob '*.qa_report.md'"
+        ),
+    )
+    parser.add_argument(
         "--out-dir",
         default=None,
         help="Output dir (overrides config)",
@@ -874,7 +931,15 @@ def main() -> None:
         if not p.exists():
             raise SystemExit(f"stopwords file does not exist: {p}")
         out: set[str] = set()
-        for line in p.read_text("utf-8", errors="ignore").splitlines():
+        try:
+            lines = p.read_text("utf-8").splitlines()
+        except UnicodeDecodeError as e:
+            raise SystemExit(
+                f"stopwords file is not valid UTF-8: {p} ({e}). "
+                "Tip: re-save stopwords as UTF-8 without BOM."
+            )
+
+        for line in lines:
             s = line.strip()
             if not s or s.startswith("#"):
                 continue
@@ -886,6 +951,16 @@ def main() -> None:
 
     if not source_root.exists():
         raise SystemExit(f"source root does not exist: {source_root}")
+
+    # Optional: exclude derived/noise markdown files.
+    cfg_ex = cfg.get("sources", {}).get("exclude_globs", [])
+    exclude_globs: list[str] = []
+    if isinstance(cfg_ex, list):
+        exclude_globs.extend([str(x) for x in cfg_ex if str(x).strip()])
+    elif isinstance(cfg_ex, str) and cfg_ex.strip():
+        exclude_globs.append(cfg_ex.strip())
+
+    exclude_globs.extend([str(x) for x in (args.exclude_glob or []) if str(x).strip()])
 
     cache_dir = Path(args.cache_dir).expanduser() if args.cache_dir else None
 
@@ -906,6 +981,7 @@ def main() -> None:
         en_phrases=str(args.en_phrases),
         incremental=bool(args.incremental),
         cache_dir=cache_dir,
+        exclude_globs=exclude_globs or None,
     )
 
 

@@ -84,7 +84,15 @@ def _load_wordlist(path: Path) -> list[str]:
     if not path.exists():
         raise SystemExit(f"wordlist not found: {path}")
     terms: list[str] = []
-    for ln in path.read_text("utf-8", errors="ignore").splitlines():
+    try:
+        lines = path.read_text("utf-8").splitlines()
+    except UnicodeDecodeError as e:
+        raise SystemExit(
+            f"IME acceptance pack failed: input is not valid UTF-8: {path} ({e}). "
+            "Tip: regenerate artifacts with pipeline.build_terms."
+        )
+
+    for ln in lines:
         s = ln.strip()
         if not s:
             continue

@@ -103,3 +103,64 @@ def test_review_pack_diffs_and_updates_baseline(tmp_path: Path) -> None:
     assert summary3["counts"]["removed_zh"] == 0
     assert summary3["counts"]["new_en"] == 0
     assert summary3["counts"]["removed_en"] == 0
+
+
+def test_review_pack_can_exclude_known_allow_deny_terms(tmp_path: Path) -> None:
+    repo_root = Path(__file__).resolve().parents[1]
+
+    out_dir = tmp_path / "artifacts"
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    # Create a minimal curated terms dir.
+    terms_dir = tmp_path / "terms"
+    terms_dir.mkdir(parents=True, exist_ok=True)
+    (terms_dir / "allowlist_zh.txt").write_text("托卡马克\n", encoding="utf-8")
+    (terms_dir / "allowlist_en.txt").write_text("ITER\n", encoding="utf-8")
+    (terms_dir / "denylist.txt").write_text("偏滤器\nNBI\n", encoding="utf-8")
+    (terms_dir / "synonyms.tsv").write_text("", encoding="utf-8")
+
+    cur_zh = out_dir / "candidates_zh.filtered.tsv"
+    cur_en = out_dir / "candidates_en.filtered.tsv"
+
+    # Seed current candidates including already known allow/deny terms.
+    _write_tsv(cur_zh, [("托卡马克", 5), ("偏滤器", 3), ("位形", 2)])
+    _write_tsv(cur_en, [("ITER", 10), ("NBI", 4), ("ECRH", 2)])
+
+    # Baseline missing; without exclusion everything would be new.
+    p = subprocess.run(
+        [
+            sys.executable,
+            "-m",
+            "pipeline.review_pack",
+            "--out-dir",
+            str(out_dir),
+            "--exclude-known-terms",
+            "--terms-dir",
+            str(terms_dir),
+            # Don't update baseline in a unit test unless we need to.
+            "--no-update-baseline",
+        ],
+        cwd=str(repo_root),
+        text=True,
+        capture_output=True,
+    )
+    assert p.returncode == 0, f"stdout:\n{p.stdout}\nstderr:\n{p.stderr}"
+
+    rp_dir = out_dir / "review_pack"
+    summary = json.loads((rp_dir / "summary.json").read_text("utf-8"))
+
+    # Known allow/deny terms should not appear in new/removed.
+    assert summary["counts"]["new_zh"] == 1  # 位形 only
+    assert summary["counts"]["new_en"] == 1  # ECRH only
+    assert summary["counts"]["removed_zh"] == 0
+    assert summary["counts"]["removed_en"] == 0
+
+    new_zh_text = (rp_dir / f"new_{cur_zh.name}").read_text("utf-8")
+    assert "位形\t2" in new_zh_text
+    assert "托卡马克\t" not in new_zh_text
+    assert "偏滤器\t" not in new_zh_text
+
+    new_en_text = (rp_dir / f"new_{cur_en.name}").read_text("utf-8")
+    assert "ECRH\t2" in new_en_text
+    assert "ITER\t" not in new_en_text
+    assert "NBI\t" not in new_en_text

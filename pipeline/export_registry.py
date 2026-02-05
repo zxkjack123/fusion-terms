@@ -31,7 +31,14 @@ def _load_config(config_path: Path) -> dict:
 
 def _iter_alias_rows(aliases_path: Path) -> list[dict[str, str]]:
     rows: list[dict[str, str]] = []
-    for line in aliases_path.read_text("utf-8", errors="ignore").splitlines():
+    try:
+        lines = aliases_path.read_text("utf-8").splitlines()
+    except UnicodeDecodeError as e:
+        raise SystemExit(
+            f"export_registry failed: aliases TSV is not valid UTF-8: {aliases_path} ({e})"
+        )
+
+    for line in lines:
         if not line.strip() or line.lstrip().startswith("#"):
             continue
         parts = [c.strip() for c in line.split("\t")]
@@ -52,7 +59,14 @@ def _iter_alias_rows(aliases_path: Path) -> list[dict[str, str]]:
 
 def _iter_concept_rows(concepts_path: Path) -> list[dict[str, str]]:
     rows: list[dict[str, str]] = []
-    for line in concepts_path.read_text("utf-8", errors="ignore").splitlines():
+    try:
+        lines = concepts_path.read_text("utf-8").splitlines()
+    except UnicodeDecodeError as e:
+        raise SystemExit(
+            f"export_registry failed: concepts TSV is not valid UTF-8: {concepts_path} ({e})"
+        )
+
+    for line in lines:
         if not line.strip() or line.lstrip().startswith("#"):
             continue
         parts = [c.strip() for c in line.split("\t")]

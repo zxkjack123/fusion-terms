@@ -90,7 +90,7 @@ def generate_dict_yaml(
                 print(proc.stderr)
             raise SystemExit(proc.returncode)
 
-        payload = payload_path.read_text("utf-8", errors="ignore")
+        payload = payload_path.read_text("utf-8")
         # The importer should generate a 3-column TSV (text, code, weight).
         # We keep it as-is and wrap it into a .dict.yaml.
 
@@ -132,7 +132,7 @@ def main() -> None:
     )
     parser.add_argument(
         "--rime-script",
-        default="/home/gw/.local/bin/rime_import_wordlist.py",
+        default=str(Path("~/.local/bin/rime_import_wordlist.py")),
         help="Existing rime_import_wordlist.py path",
     )
     parser.add_argument(

@@ -109,7 +109,15 @@ def _load_wordlist_terms(path: Path) -> set[str]:
     if not path.exists():
         return set()
     out: set[str] = set()
-    for line in path.read_text("utf-8", errors="ignore").splitlines():
+    try:
+        lines = path.read_text("utf-8").splitlines()
+    except UnicodeDecodeError as e:
+        raise SystemExit(
+            f"failed to read UTF-8 wordlist: {path} ({e}). "
+            "Tip: regenerate artifacts with pipeline.build_terms."
+        )
+
+    for line in lines:
         s = line.strip()
         if s:
             out.add(s)

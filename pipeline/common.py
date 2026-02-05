@@ -1,7 +1,10 @@
 from __future__ import annotations
 
 import hashlib
+import fnmatch
+import os
 import re
+import warnings
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterator
@@ -41,13 +44,43 @@ class Example:
 
 
 def sha1_text(text: str) -> str:
-    return hashlib.sha1(text.encode("utf-8", errors="ignore")).hexdigest()
+    return hashlib.sha1(text.encode("utf-8")).hexdigest()
 
 
-def iter_markdown_files(root: Path) -> Iterator[Path]:
-    for p in root.rglob("*.md"):
-        if p.is_file():
-            yield p
+def iter_markdown_files(root: Path, *, exclude_globs: list[str] | None = None) -> Iterator[Path]:
+    """Yield markdown files under root in a deterministic order.
+
+    pathlib.Path.rglob() order is filesystem-dependent and can be non-deterministic.
+    We use a sorted os.walk() so extraction outputs are reproducible across runs.
+
+    Matches markdown files with a .md extension case-insensitively (e.g. .md, .MD).
+    """
+
+    root = root.expanduser()
+    exclude_globs = list(exclude_globs or [])
+    for dirpath, dirnames, filenames in os.walk(root):
+        dirnames.sort()
+        filenames.sort()
+        for name in filenames:
+            if not name.lower().endswith(".md"):
+                continue
+            p = Path(dirpath) / name
+            if p.is_file():
+                if exclude_globs:
+                    try:
+                        rel = p.relative_to(root)
+                        rel_posix = rel.as_posix()
+                    except Exception:
+                        rel_posix = str(p)
+
+                    # Match against both basename and posix-relative path.
+                    if any(
+                        fnmatch.fnmatchcase(name, pat)
+                        or fnmatch.fnmatchcase(rel_posix, pat)
+                        for pat in exclude_globs
+                    ):
+                        continue
+                yield p
 
 
 def clean_markdown_lines(text: str) -> list[str]:
@@ -119,6 +152,18 @@ def clean_markdown_lines(text: str) -> list[str]:
         # inline math: keep inner content, drop surrounding $...$
         line = INLINE_MATH_RE.sub(lambda m: m.group(0)[1:-1], line)
 
+        # Reduce common LaTeX styling commands that frequently leak into tokens
+        # (e.g. \mathrm{B}, \mathbf{x}). Keep the inner content.
+        # NOTE: We intentionally do NOT strip Greek macros like \beta, \omega;
+        # those are handled by extractor-side gates to preserve tests and traceability.
+        line = re.sub(
+            r"\\(?:mathrm|mathbf|boldsymbol|mathcal|mathit|mathsf|text)\s*\{([^{}]*)\}",
+            lambda m: m.group(1),
+            line,
+        )
+        # Drop delimiter-only commands that add no semantic content.
+        line = re.sub(r"\\(?:left|right)\b", " ", line)
+
         # bare urls
         line = URL_RE.sub(" ", line)
 
@@ -136,7 +181,24 @@ def read_text_file(path: Path, max_bytes: int = 10_000_000) -> str:
         data = f.read(max_bytes + 1)
     if len(data) > max_bytes:
         data = data[:max_bytes]
-    return data.decode("utf-8", errors="ignore")
+
+    # Prefer strict decoding so we do not silently drop bytes.
+    # For external corpora, we fall back to replacement to keep the pipeline running,
+    # but we always emit a warning so the user can fix the source encoding.
+    try:
+        return data.decode("utf-8")
+    except UnicodeDecodeError as e:
+        text = data.decode("utf-8", errors="replace")
+        rep = text.count("\ufffd")
+        warnings.warn(
+            (
+                "UTF-8 decode error while reading markdown; "
+                "invalid bytes were replaced with U+FFFD. "
+                f"path={path} replacements={rep} error={e}"
+            ),
+            RuntimeWarning,
+        )
+        return text
 
 
 def ensure_dir(path: Path) -> None:
@@ -147,7 +209,15 @@ def load_simple_list(path: Path) -> set[str]:
     if not path.exists():
         return set()
     out: set[str] = set()
-    for line in path.read_text("utf-8", errors="ignore").splitlines():
+    try:
+        lines = path.read_text("utf-8").splitlines()
+    except UnicodeDecodeError as e:
+        raise SystemExit(
+            f"failed to read UTF-8 text file: {path} ({e}). "
+            "Tip: re-save this file as UTF-8 without BOM."
+        )
+
+    for line in lines:
         s = line.strip()
         if not s or s.startswith("#"):
             continue
@@ -172,10 +242,15 @@ def load_synonyms_tsv(path: Path) -> dict[str, str]:
         return {}
 
     mapping: dict[str, str] = {}
-    for lineno, line in enumerate(
-        path.read_text("utf-8", errors="ignore").splitlines(),
-        start=1,
-    ):
+    try:
+        lines = path.read_text("utf-8").splitlines()
+    except UnicodeDecodeError as e:
+        raise SystemExit(
+            f"failed to read UTF-8 synonyms TSV: {path} ({e}). "
+            "Tip: re-save this file as UTF-8 without BOM."
+        )
+
+    for lineno, line in enumerate(lines, start=1):
         s = line.strip()
         if not s or s.startswith("#"):
             continue

@@ -23,7 +23,7 @@ def main() -> None:
     )
     parser.add_argument(
         "--rime-script",
-        default="/home/gw/.local/bin/rime_import_wordlist.py",
+        default=str(Path("~/.local/bin/rime_import_wordlist.py")),
         help="Existing rime_import_wordlist.py path",
     )
     parser.add_argument(

@@ -2,7 +2,13 @@
 
 ## Inputs
 
-- Markdown corpus root: `/home/gw/ComputeData/pdf2md/ZoteroIngest/staging` (recursive)
+- Markdown corpus root: configured in `config.toml` under `[sources].root` (recursive)
+- Optional exclusions: `config.toml` `[sources].exclude_globs` or CLI `--exclude-glob` (repeatable)
+
+Encoding expectations:
+
+- Curated inputs under `terms/` (allow/deny/synonyms, registry TSVs, decisions) must be **valid UTF-8**; the pipeline fails fast if not.
+- External Markdown corpora may contain bad bytes; extraction warns and uses U+FFFD replacement (so issues are visible, not silently dropped).
 
 The extractor reads `*.md` and performs lightweight cleaning:
 

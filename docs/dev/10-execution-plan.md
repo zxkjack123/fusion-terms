@@ -8,17 +8,17 @@
 
 ## 0. 当前工作区现状（基线）
 
-仓库路径：`/home/gw/opt/fusion-terms`
+仓库路径：`<repo_root>`
 
 已具备：
 
-- 配置：`config.toml`（默认语料根目录：`/home/gw/ComputeData/pdf2md/ZoteroIngest/staging`）
+- 配置：`config.toml`（默认语料根目录：见 `[sources].root`；按你的机器环境修改）
 - 抽词：`pipeline/extract_candidates.py`
   - 输出：`artifacts/candidates_zh.tsv`、`artifacts/candidates_en.tsv`、`artifacts/extract_stats.json`
 - 构建：`pipeline/build_terms.py`
   - 输入：`terms/allowlist_zh.txt`、`terms/allowlist_en.txt`、`terms/denylist.txt`、`terms/synonyms.tsv`
   - 输出：`artifacts/domain_terms.txt`
-- Rime 导入辅助：`pipeline/rime_export.py`（复用 `/home/gw/.local/bin/rime_import_wordlist.py`）
+- Rime 导入辅助：`pipeline/rime_import_safe.py`（复用 `~/.local/bin/rime_import_wordlist.py`；支持 dry-run/备份/回滚）
 - 同步到 Fcitx/Rime wordlists：`pipeline/sync_to_fcitx.py`
 - VS Code Tasks：`.vscode/tasks.json`（extract/build/sync/export/import）
 - 设计文档：`docs/dev/01..04`（架构、流水线、Rime 集成、英文短语增强模式规划）
@@ -292,7 +292,7 @@
 
 **修改内容**
 
-- 增强 `pipeline/rime_export.py` 或新增 `pipeline/rime_import_safe.py`：
+- 使用 `pipeline/rime_import_safe.py`（已实现）：
   - `--dry-run`（只生成 import 文件不导入）
   - 导入前备份关键文件（写日志）
   - 导入后给出验证提示/检查项
@@ -520,13 +520,13 @@
 抽查记录（2026-02-03）：
 
 - 样本：真实语料子集 `--max-files 500`
-- 命令：`python3 -m pipeline.extract_candidates --source-root /home/gw/ComputeData/pdf2md/ZoteroIngest/staging --out-dir artifacts --max-files 500 --min-count-zh 3 --topk-zh 120 --incremental`
+- 命令：`python3 -m pipeline.extract_candidates --source-root <your-corpus-root> --out-dir artifacts --max-files 500 --min-count-zh 3 --topk-zh 120 --incremental`
 - 观察：`candidates_zh.filtered.tsv` 的 top-30 仍出现大量通用/结构性片段（如：`其中`、`例如`、`所示`、`此外`、`所以`、`但是`、`得到`、`因此`、`如图`、`从式`、`称为`、`左右`、`以上`、`量级` 等），说明中文侧还需要进一步降噪（下一步通常会倾向引入 `--zh-stopwords` 的常用噪声词表 + 更强的结构性行过滤/分割策略）。
 
 抽查记录（2026-02-04）：
 
 - 样本：同上（真实语料子集 `--max-files 500`）
-- 命令：`python3 -m pipeline.extract_candidates --source-root /home/gw/ComputeData/pdf2md/ZoteroIngest/staging --out-dir artifacts --max-files 500 --min-count-zh 3 --topk-zh 120 --zh-stopwords terms/stopwords_zh.txt --incremental`
+- 命令：`python3 -m pipeline.extract_candidates --source-root <your-corpus-root> --out-dir artifacts --max-files 500 --min-count-zh 3 --topk-zh 120 --zh-stopwords terms/stopwords_zh.txt --incremental`
 - 观察：top-100 中上一轮的典型结构词（`其中/例如/所示/此外/所以/但是/因此/如图/量级...`）被 stopwords 有效剔除；本次用同一套启发式标记做粗略估计，noise-ish 从 **21/100** 降到 **5/100**（仅作对比参考，不是严格指标）。
 - 仍可能残留的通用噪声例子：`从式`、`这时`、`近年来`、`如果`、`也就是说` 等（可按实际 review 体验再决定是否加入 stopwords）。
 

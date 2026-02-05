@@ -9,7 +9,7 @@ This repo produces:
 
 You already have a working importer script:
 
-- `/home/gw/.local/bin/rime_import_wordlist.py`
+- `~/.local/bin/rime_import_wordlist.py`
 
 The flow becomes:
 
