@@ -27,6 +27,32 @@ def main() -> None:
         help="Existing rime_import_wordlist.py path",
     )
     parser.add_argument(
+        "--dict-name",
+        default="rime_ice",
+        help=(
+            "Rime dict_name to import into (only used with --import). "
+            "Default: rime_ice (for rime-ice)."
+        ),
+    )
+    parser.add_argument(
+        "--include-non-cjk",
+        action="store_true",
+        help="Also include non-CJK terms (passed through to rime_import_wordlist.py).",
+    )
+    parser.add_argument(
+        "--rime-user-dir",
+        default=None,
+        help=(
+            "Override Rime user dir when importing (passed through). "
+            "Example for fcitx-rime: ~/.config/fcitx/rime"
+        ),
+    )
+    parser.add_argument(
+        "--no-restart-fcitx",
+        action="store_true",
+        help="Do not auto-restart fcitx when the Rime userdb is locked (passed through).",
+    )
+    parser.add_argument(
         "--import",
         dest="do_import",
         action="store_true",
@@ -54,7 +80,14 @@ def main() -> None:
         "--output",
         str(output_path),
     ]
+    if args.include_non_cjk:
+        cmd.append("--include-non-cjk")
     if args.do_import:
+        cmd.extend(["--dict-name", args.dict_name])
+        if args.rime_user_dir:
+            cmd.extend(["--rime-user-dir", str(Path(args.rime_user_dir).expanduser())])
+        if args.no_restart_fcitx:
+            cmd.append("--no-restart-fcitx")
         cmd.append("--import")
 
     proc = subprocess.run(cmd, check=False, capture_output=True, text=True)

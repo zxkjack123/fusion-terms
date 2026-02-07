@@ -21,6 +21,19 @@
 
 ### Fixed
 
+## v2026.02.07
+
+### Added
+
+- 术语库扩充：补齐聚变装置工程体系的关键中文术语，覆盖仪控/联锁/DAQ、辐射监测细分、氚形态与取样、真空子部件、热工水力测量、辐照效应与制造连接工艺等。
+  - 默认配置下，`pipeline.build_terms` 生成的 `artifacts/domain_terms.txt` 词条规模提升到 **1066**。
+
+### Changed
+
+- Rime 导入/导出脚本增强：为调用 `rime_import_wordlist.py` 增加参数透传，支持指定 `dict_name`、覆盖 `rime_user_dir`、可选包含非 CJK 词条，以及在 userdb 锁定时禁用自动重启 fcitx。
+- 停用词与噪声治理：补充一批在语料中稳定出现的噪声 token（如章节编号、OCR/LaTeX 伪词等），降低候选抽取污染。
+
+
 ## v2026.02.05
 
 ### Added

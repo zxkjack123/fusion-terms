@@ -25,6 +25,10 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--input', required=True)
 parser.add_argument('--output', required=True)
 parser.add_argument('--import', dest='do_import', action='store_true')
+parser.add_argument('--dict-name', default='rime_ice')
+parser.add_argument('--rime-user-dir', default=None)
+parser.add_argument('--include-non-cjk', action='store_true')
+parser.add_argument('--no-restart-fcitx', action='store_true')
 args = parser.parse_args()
 
 # Always generate payload

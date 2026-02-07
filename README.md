@@ -54,6 +54,15 @@ Optional: sync to your local Fcitx/Rime wordlists path:
 - If you already use `~/.local/bin/rime_import_wordlist.py`, you can generate `artifacts/.rime_import_rime_ice.txt`.
 - For importing into your Rime userdb, prefer the safer flow (`pipeline.rime_import_safe`) which creates backups and supports rollback.
 
+Rime integration notes:
+
+- The safe importer/exporter now supports pass-through options commonly needed in practice:
+	- selecting target dict name (default: `rime_ice`)
+	- overriding Rime user dir (e.g. `~/.config/fcitx/rime`)
+	- optionally including non-CJK tokens
+	- optionally disabling auto-restart of fcitx when the userdb is locked
+- Import payload files (`artifacts/.rime_import_*.txt`), backup manifests (`artifacts/rime_backups/`), and `*.userdb/` directories are **machine-local state** and are not meant to be committed.
+
 ## Notes
 
 - This repo is the **source of truth**. Do not treat `*.userdb` as your canonical lexicon.

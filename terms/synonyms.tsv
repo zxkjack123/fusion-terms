@@ -19,3 +19,17 @@ WBe	W/Be	en
 q_95	q95	en
 betaN	beta_N	en
 tauE	tau_E	en
+
+# --- AUTO-INBOX (managed by pipeline.apply_decisions)
+Charge-exchange	charge-exchange	en
+beams	beam	en
+blankets	blanket	en
+currents	current	en
+ifmif	IFMIF	en
+neutrals	neutral	en
+neutrons	neutron	en
+pbli	PbLi	en
+pfc	PFC	en
+plasmas	plasma	en
+temperatures	temperature	en
+tokamaks	tokamak	en

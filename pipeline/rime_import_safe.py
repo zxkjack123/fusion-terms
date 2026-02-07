@@ -25,6 +25,30 @@ def _now_backup_name() -> str:
 
 
 def _run_importer(*, script: Path, input_path: Path, output_path: Path, do_import: bool) -> subprocess.CompletedProcess[str]:
+    # Backward-compatible wrapper for older callers/tests.
+    return _run_importer_v2(
+        script=script,
+        input_path=input_path,
+        output_path=output_path,
+        do_import=do_import,
+        dict_name="rime_ice",
+        include_non_cjk=False,
+        rime_user_dir=None,
+        no_restart_fcitx=False,
+    )
+
+
+def _run_importer_v2(
+    *,
+    script: Path,
+    input_path: Path,
+    output_path: Path,
+    do_import: bool,
+    dict_name: str,
+    include_non_cjk: bool,
+    rime_user_dir: Path | None,
+    no_restart_fcitx: bool,
+) -> subprocess.CompletedProcess[str]:
     cmd = [
         "python3",
         str(script),
@@ -33,7 +57,17 @@ def _run_importer(*, script: Path, input_path: Path, output_path: Path, do_impor
         "--output",
         str(output_path),
     ]
+
+    # Only add flags when they matter, to keep compatibility with user's existing scripts.
+    if include_non_cjk:
+        cmd.append("--include-non-cjk")
+
     if do_import:
+        cmd.extend(["--dict-name", dict_name])
+        if rime_user_dir is not None:
+            cmd.extend(["--rime-user-dir", str(rime_user_dir)])
+        if no_restart_fcitx:
+            cmd.append("--no-restart-fcitx")
         cmd.append("--import")
 
     return subprocess.run(cmd, check=False, capture_output=True, text=True)
@@ -138,6 +172,32 @@ def main() -> None:
         help="Existing rime_import_wordlist.py path",
     )
     parser.add_argument(
+        "--dict-name",
+        default="rime_ice",
+        help=(
+            "Rime dict_name to import into (passed through to rime_import_wordlist.py). "
+            "Default: rime_ice (for rime-ice)."
+        ),
+    )
+    parser.add_argument(
+        "--include-non-cjk",
+        action="store_true",
+        help="Also include non-CJK terms when generating payload (passed through).",
+    )
+    parser.add_argument(
+        "--rime-user-dir",
+        default=None,
+        help=(
+            "Override Rime user dir when importing (passed through). "
+            "Example for fcitx-rime: ~/.config/fcitx/rime"
+        ),
+    )
+    parser.add_argument(
+        "--no-restart-fcitx",
+        action="store_true",
+        help="Do not auto-restart fcitx when the Rime userdb is locked (passed through).",
+    )
+    parser.add_argument(
         "--import",
         dest="do_import",
         action="store_true",
@@ -188,11 +248,15 @@ def main() -> None:
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
     # Step 1) Always generate payload (safe, reproducible).
-    gen = _run_importer(
+    gen = _run_importer_v2(
         script=script_path,
         input_path=input_path,
         output_path=output_path,
         do_import=False,
+        dict_name=args.dict_name,
+        include_non_cjk=bool(args.include_non_cjk),
+        rime_user_dir=Path(args.rime_user_dir).expanduser() if args.rime_user_dir else None,
+        no_restart_fcitx=bool(args.no_restart_fcitx),
     )
     if gen.stdout:
         print(gen.stdout)
@@ -226,11 +290,15 @@ def main() -> None:
     print(f"backup created: {manifest_path}")
 
     # Step 3) Import.
-    imp = _run_importer(
+    imp = _run_importer_v2(
         script=script_path,
         input_path=input_path,
         output_path=output_path,
         do_import=True,
+        dict_name=args.dict_name,
+        include_non_cjk=bool(args.include_non_cjk),
+        rime_user_dir=Path(args.rime_user_dir).expanduser() if args.rime_user_dir else None,
+        no_restart_fcitx=bool(args.no_restart_fcitx),
     )
     if imp.stdout:
         print(imp.stdout)

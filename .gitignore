@@ -58,5 +58,10 @@ artifacts/_smoke_run/
 # Rime baked dictionary
 artifacts/fusion_terms.dict.yaml
 
+# Local Rime import payloads / backups / userdb (machine-local state)
+artifacts/.rime_import_*.txt
+artifacts/rime_backups/
+*.userdb/
+
 # Optional local-only pointers
 sources/local_paths.txt
