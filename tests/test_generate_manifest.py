@@ -123,3 +123,33 @@ def test_generate_manifest_accepts_counts_from_build_stats(tmp_path: Path) -> No
     assert m.counts["total"] == 1066
     assert m.counts["zh"] == 881
     assert m.counts["en"] == 185
+
+
+def test_generate_manifest_fails_fast_when_file_missing(tmp_path: Path) -> None:
+    root = tmp_path
+    (root / "domain_terms.txt").write_text("tokamak\n", encoding="utf-8")
+
+    with pytest.raises(SystemExit):
+        generate_manifest(
+            root=root,
+            version="v2026.02.08",
+            commit="f" * 40,
+            generated_at="2026-02-08T03:21:00Z",
+            files=["domain_terms.txt", "nope.txt"],
+        )
+
+
+def test_generate_manifest_rejects_unusable_counts_from(tmp_path: Path) -> None:
+    root = tmp_path
+    (root / "domain_terms.txt").write_text("tokamak\n", encoding="utf-8")
+    (root / "bad_stats.json").write_text("{}\n", encoding="utf-8")
+
+    with pytest.raises(SystemExit):
+        generate_manifest(
+            root=root,
+            version="v2026.02.08",
+            commit="0" * 40,
+            generated_at="2026-02-08T03:21:00Z",
+            files=["domain_terms.txt"],
+            counts_from="bad_stats.json",
+        )
