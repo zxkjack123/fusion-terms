@@ -218,9 +218,9 @@
 ### Milestone A：v1（manifest + release 包）
 
 - [ ] 契约文档 ACK（双方）
-- [ ] `pipeline/generate_manifest.py` 实现
-- [ ] manifest 字段齐全（version/commit/generated_at/counts/sha256）
-- [ ] manifest sha256 至少覆盖 `domain_terms.txt`
+- [x] `pipeline/generate_manifest.py` 实现
+- [x] manifest 字段齐全（version/commit/generated_at/counts/sha256）
+- [x] manifest sha256 至少覆盖 `domain_terms.txt`
 - [ ] `pipeline/release_pack.py` 生成 `fusion-terms-artifacts-<tag>.tar.gz`
 - [ ] 解包后 verify（或手动校验 sha256）100% 通过
 - [ ] pytest 覆盖 manifest + pack（最小集成测试）
