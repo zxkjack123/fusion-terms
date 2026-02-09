@@ -226,7 +226,8 @@
 - [x] 解包后 verify（或手动校验 sha256）100% 通过
 - [x] pytest 覆盖 manifest + pack（最小集成测试）
 - [x] `README.md` 补充对外接入示例（方式 A / 方式 B）
-- [ ] 更新 `CHANGELOG.md` 并发布 tag
+- [x] 更新 `CHANGELOG.md` 并（本地）打 tag（不 push）
+- [ ] push tag + 发布 GitHub Release 资产（需人工确认后执行）
 
 ### Milestone B：v1.1（substitution 强语义导出）
 
