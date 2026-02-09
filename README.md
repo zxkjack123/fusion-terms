@@ -63,6 +63,77 @@ Rime integration notes:
 	- optionally disabling auto-restart of fcitx when the userdb is locked
 - Import payload files (`artifacts/.rime_import_*.txt`), backup manifests (`artifacts/rime_backups/`), and `*.userdb/` directories are **machine-local state** and are not meant to be committed.
 
+## de-ai-fier integration (release contract)
+
+This repo can also be consumed as a **versioned, verifiable terminology data product** by downstream tooling (e.g. de-ai-fier).
+
+- Contract (what the files mean): `docs/dev/07-de-ai-fier-interface-contract.md`
+- Execution plan (how to produce them): `docs/dev/08-de-ai-fier-interface-execution-plan.md`
+
+Design principle:
+
+- Integration/build stage may run Python / fetch tags or release assets.
+- Runtime quality gate should be **offline** and only **read local files**.
+
+### What to consume
+
+Minimum (v1):
+
+- `domain_terms.txt` — token-only wordlist (one term per line; no whitespace inside a term)
+- `fusion_terms_manifest.json` — sha256 + counts + version/commit metadata
+
+Strongly recommended (v1.1):
+
+- `artifacts/terminology_substitutions.tsv` — strong-semantic substitutions derived from registry(kind)
+- `artifacts/vale/terminology_substitute.yml` — Vale-ready convenience layer (swap mapping)
+
+### Method A: pin tag and build (deterministic)
+
+In your integration/build pipeline, pin a tag and build a self-contained release root (or a tarball) with the manifest generated and verified.
+
+```bash
+TAG=v2026.02.09
+
+git clone https://github.com/zxkjack123/fusion-terms.git
+cd fusion-terms
+git checkout "$TAG"
+
+python3 -m venv .venv
+. .venv/bin/activate
+pip install -r requirements.txt
+
+# Build a staged release root + tar.gz (includes v1.1 substitution exports)
+python3 -m pipeline.release_pack \
+	--tag "$TAG" \
+	--include-registry-exports \
+	--substitutions \
+	--vale-substitute
+
+# (Optional) verify again using the staged directory printed by release_pack
+python3 -m pipeline.verify_release_contract --root "dist/stage/$TAG"
+```
+
+After this, your downstream project can copy the required files into its own repo/runtime image and keep runtime checks offline.
+
+### Method B: download release asset and verify
+
+If you prefer not to run the fusion-terms build pipeline, download the release tarball built by fusion-terms and verify locally.
+
+```bash
+TAG=v2026.02.09
+ASSET="fusion-terms-artifacts-${TAG}.tar.gz"
+URL="https://github.com/zxkjack123/fusion-terms/releases/download/${TAG}/${ASSET}"
+
+mkdir -p third_party/fusion-terms/${TAG}
+cd third_party/fusion-terms/${TAG}
+
+curl -L -o "$ASSET" "$URL"
+tar -xzf "$ASSET"
+
+# Verify contract (requires the verifier code; you can vendor it or run it from a pinned tag)
+python3 -m pipeline.verify_release_contract --root .
+```
+
 ## Notes
 
 - This repo is the **source of truth**. Do not treat `*.userdb` as your canonical lexicon.
