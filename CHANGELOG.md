@@ -17,7 +17,17 @@
 
 ### Added
 
+- 对外交付（de-ai-fier 接口 v1/v1.1）核心产物：
+  - manifest 生成器：`pipeline/generate_manifest.py`（生成 `fusion_terms_manifest.json`，包含 sha256 + counts）。
+  - 契约校验器：`pipeline/verify_release_contract.py`（校验 `domain_terms.txt` + manifest sha256 + counts 自洽）。
+  - release 打包器：`pipeline/release_pack.py`（生成 `fusion-terms-artifacts-<tag>.tar.gz`，可用于离线门禁接入）。
+- registry 强语义 substitution 导出（v1.1）：
+  - `pipeline.export_registry --substitutions`：导出 `artifacts/terminology_substitutions.tsv`。
+  - `pipeline.export_registry --vale-substitute`：导出 `artifacts/vale/terminology_substitute.yml`。
+
 ### Changed
+
+- release 包构建可选纳入 registry 导出产物（query expansions/tag rules/substitutions/Vale YAML），并由 manifest 的 sha256 覆盖校验。
 
 ### Fixed
 
