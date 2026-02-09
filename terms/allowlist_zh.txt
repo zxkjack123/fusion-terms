@@ -6,6 +6,20 @@
 磁约束聚变
 核聚变
 
+# --- p-11B / HB11 (hydrogen-boron fusion)
+氢硼
+氢硼聚变
+氢硼11
+氢硼-11
+硼11
+硼-11
+p-11B
+p11B
+HB11
+无中子聚变
+雪崩聚变
+轫致辐射
+
 # --- Components / systems
 第一壁
 偏滤器

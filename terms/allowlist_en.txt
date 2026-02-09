@@ -20,6 +20,22 @@ ELM
 NTM
 disruption
 
+# --- p-11B / HB11 (hydrogen-boron fusion)
+p-11B
+p11B
+HB11
+proton-boron
+proton-boron-11
+boron-11
+B-11
+11B
+aneutronic
+aneutronic-fusion
+avalanche
+avalanche-fusion
+bremsstrahlung
+bremsstrahlung-loss
+
 # --- Heating / current drive (acronyms)
 NBI
 ICRH
