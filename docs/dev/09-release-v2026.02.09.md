@@ -41,6 +41,25 @@
   - `pipeline.release_pack` 生成 staging + tar.gz
   - 解包 tar.gz 后，执行 `pipeline.verify_release_contract --root <extracted_root>` 通过（离线只读本地文件）
 
+## GitHub Release body (copy/paste)
+
+### Assets
+
+- `fusion-terms-artifacts-v2026.02.09.tar.gz`
+  - SHA256: `67e392c914308d877b3479200333327d9d29614250e53bffdaaa779a3f45d176`
+
+### Highlights
+
+- de-ai-fier 接口交付（v1/v1.1）：
+  - `domain_terms.txt`（token-only 基础术语表）
+  - `fusion_terms_manifest.json`（sha256 + counts + version/commit metadata）
+  - substitution 强语义导出（来自 registry(kind)）：
+    - `artifacts/terminology_substitutions.tsv`
+    - `artifacts/vale/terminology_substitute.yml`
+- Release 包可选纳入 registry 导出产物，并由 manifest sha256 覆盖校验。
+
+完整变更记录：见 `CHANGELOG.md` 的 `## v2026.02.09`。
+
 ## Manual publish steps (intentionally NOT executed here)
 
 > 注意：按项目约束，本阶段允许联网；但当前工作约定是“可 commit、不可 push”。因此以下步骤仅作为发布脚本/清单。
@@ -53,7 +72,7 @@
 
 - Release tag: `v2026.02.09`
 - Asset file to upload: `dist/fusion-terms-artifacts-v2026.02.09.tar.gz`
-- Suggested release text来源：`CHANGELOG.md` 中 `## v2026.02.09` 章节
+- Suggested release text：优先复制本文件的 “GitHub Release body (copy/paste)”；或使用 `CHANGELOG.md` 中 `## v2026.02.09` 章节
 
 （可选）若使用 GitHub CLI：
 
