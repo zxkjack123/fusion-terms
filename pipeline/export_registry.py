@@ -299,6 +299,105 @@ def export_tag_rules(*, terms_dir: Path, out_dir: Path) -> dict[str, object]:
     }
 
 
+def export_substitutions_tsv(*, terms_dir: Path, out_dir: Path) -> dict[str, object]:
+    """Export strong-semantic substitutions from registry aliases.
+
+    Output: artifacts/terminology_substitutions.tsv
+
+    Rules:
+    - Only deprecated/forbidden aliases are exported.
+    - preferred term is selected from kind=preferred within the same concept:
+        1) prefer same-lang preferred
+        2) else fallback to any preferred
+        3) tie-breaker: (lang, alias) lexicographic, pick first
+    - Each alias is exported at most once; forbidden wins over deprecated.
+    - alias==preferred is rejected (indicates broken registry data).
+    """
+
+    registry_dir = terms_dir / "registry"
+    aliases_path = registry_dir / "aliases.tsv"
+    rows = _iter_alias_rows(aliases_path)
+
+    preferred_by_concept: dict[str, list[dict[str, str]]] = {}
+    for r in rows:
+        if r.get("kind") == "preferred":
+            preferred_by_concept.setdefault(r.get("concept_id", ""), []).append(r)
+
+    def choose_preferred(*, concept_id: str, lang: str) -> dict[str, str]:
+        prefs = preferred_by_concept.get(concept_id, [])
+        if not prefs:
+            raise SystemExit(
+                "export_registry failed: substitutions export requires at least one preferred alias "
+                f"for concept_id={concept_id!r}"
+            )
+        same_lang = [p for p in prefs if p.get("lang", "") == lang]
+        candidates = same_lang or prefs
+        candidates_sorted = sorted(
+            candidates,
+            key=lambda p: ((p.get("lang", "") or ""), (p.get("alias", "") or "")),
+        )
+        return candidates_sorted[0]
+
+    # Coalesce by alias: forbidden wins over deprecated.
+    by_alias: dict[str, dict[str, str]] = {}
+    for r in rows:
+        kind = r.get("kind", "")
+        if kind not in {"forbidden", "deprecated"}:
+            continue
+        alias = r.get("alias", "")
+        if not alias:
+            continue
+
+        existing = by_alias.get(alias)
+        if existing is None:
+            by_alias[alias] = r
+            continue
+
+        sev_new = _KIND_SEVERITY.get(kind, 0)
+        sev_old = _KIND_SEVERITY.get(existing.get("kind", "deprecated"), 0)
+        if sev_new > sev_old:
+            by_alias[alias] = r
+        elif sev_new == sev_old:
+            # Tie-breaker for determinism: pick lexicographically smallest lang.
+            if (r.get("lang", "") or "") < (existing.get("lang", "") or ""):
+                by_alias[alias] = r
+
+    out_path = out_dir / "terminology_substitutions.tsv"
+
+    lines: list[str] = []
+    # Header as comment for TSV consumers.
+    lines.append("# alias\tpreferred\tstatus\tlang\tnote")
+
+    for alias in sorted(by_alias.keys()):
+        r = by_alias[alias]
+        concept_id = r.get("concept_id", "")
+        lang = r.get("lang", "")
+        status = r.get("kind", "")
+        note = (r.get("comment", "") or "").replace("\t", " ").replace("\n", " ").strip()
+
+        pref_row = choose_preferred(concept_id=concept_id, lang=lang)
+        preferred = pref_row.get("alias", "")
+        if not preferred:
+            raise SystemExit(
+                "export_registry failed: preferred term is empty while exporting substitutions; "
+                f"concept_id={concept_id!r} alias={alias!r}"
+            )
+        if alias == preferred:
+            raise SystemExit(
+                "export_registry failed: substitutions must not contain alias==preferred; "
+                f"concept_id={concept_id!r} alias={alias!r}"
+            )
+
+        lines.append(f"{alias}\t{preferred}\t{status}\t{lang}\t{note}")
+
+    out_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+    return {
+        "terminology_substitutions": str(out_path),
+        "substitution_count": len(by_alias),
+    }
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(
         description="Export multi-consumer artifacts from terms/registry (currently: Vale accept/reject)."
@@ -333,6 +432,11 @@ def main() -> None:
         action="store_true",
         help="Export tag rules JSONL (artifacts/tag_rules.jsonl)",
     )
+    parser.add_argument(
+        "--substitutions",
+        action="store_true",
+        help="Export strong-semantic substitutions TSV (artifacts/terminology_substitutions.tsv)",
+    )
 
     args = parser.parse_args()
 
@@ -346,6 +450,7 @@ def main() -> None:
     do_vale = not args.no_vale
     do_query = bool(args.query_expansions)
     do_tag = bool(args.tag_rules)
+    do_subs = bool(args.substitutions)
 
     # Gate: registry must be consistent.
     validate_registry(terms_dir)
@@ -359,6 +464,8 @@ def main() -> None:
         manifest.update(export_query_expansions(terms_dir=terms_dir, out_dir=out_dir))
     if do_tag:
         manifest.update(export_tag_rules(terms_dir=terms_dir, out_dir=out_dir))
+    if do_subs:
+        manifest.update(export_substitutions_tsv(terms_dir=terms_dir, out_dir=out_dir))
 
     # Emit a small manifest to make downstream tooling simpler.
     manifest_path = out_dir / "registry_exports.json"

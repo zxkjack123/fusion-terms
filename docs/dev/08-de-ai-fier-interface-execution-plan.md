@@ -230,9 +230,9 @@
 ### Milestone B：v1.1（substitution 强语义导出）
 
 - [ ] preferred 选择规则定稿（lang 优先 + fallback）
-- [ ] `artifacts/terminology_substitutions.tsv` 导出
+- [x] `artifacts/terminology_substitutions.tsv` 导出
 - [ ] `artifacts/vale/terminology_substitute.yml` 导出
-- [ ] pytest 覆盖：仅 deprecated/forbidden、无自映射、排序稳定
+- [x] pytest 覆盖：仅 deprecated/forbidden、无自映射、排序稳定（TSV）
 - [ ] release 包纳入上述文件并由 manifest 覆盖 sha256
 
 ### Milestone C：增强接口（可选）
