@@ -222,9 +222,9 @@
 - [x] manifest 字段齐全（version/commit/generated_at/counts/sha256）
 - [x] manifest sha256 至少覆盖 `domain_terms.txt`
 - [x] `pipeline/verify_release_contract.py` 实现（可选但强烈建议）
-- [ ] `pipeline/release_pack.py` 生成 `fusion-terms-artifacts-<tag>.tar.gz`
-- [ ] 解包后 verify（或手动校验 sha256）100% 通过
-- [ ] pytest 覆盖 manifest + pack（最小集成测试）
+- [x] `pipeline/release_pack.py` 生成 `fusion-terms-artifacts-<tag>.tar.gz`
+- [x] 解包后 verify（或手动校验 sha256）100% 通过
+- [x] pytest 覆盖 manifest + pack（最小集成测试）
 - [ ] 更新 `CHANGELOG.md` 并发布 tag
 
 ### Milestone B：v1.1（substitution 强语义导出）
