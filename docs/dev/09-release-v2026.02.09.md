@@ -1,23 +1,27 @@
 # Release draft: v2026.02.09 (local, not pushed yet)
 
 日期：2026-02-09  
-状态：本地准备完成（已产出 tar.gz + 已验收；尚未 push tag / 尚未创建 GitHub Release）
+状态：已发布（tag 已 push；GitHub Release 已创建并上传资产）
 
 本文件用于把一次发布需要的关键信息“钉死”，避免之后临时口径漂移。
 
 ## Release identity
 
-- Tag: `v2026.02.09`（annotated tag, local）
-- Target commit: `c09df47052a9c8a45a9e5d6230535b8262bd8663`
-- Commit subject: `chore: prep v2026.02.09 release (notes + tag checklist)`
+- Tag: `v2026.02.09`（annotated tag）
+- Target commit: `e2d543d2c2354416213581924cfc1a77182a70ec`
+- Commit subject: `docs: add copy/paste GitHub release body for v2026.02.09`
+
+GitHub Release:
+
+- https://github.com/zxkjack123/fusion-terms/releases/tag/v2026.02.09
 
 ## Release asset (local build)
 
 - File: `dist/fusion-terms-artifacts-v2026.02.09.tar.gz`
-- Size: ~19 KiB（本机生成）
+- Size: 18,899 bytes（GitHub Release 记录；本机约 ~19 KiB）
 - SHA256:
 
-  `67e392c914308d877b3479200333327d9d29614250e53bffdaaa779a3f45d176`
+  `b07f0f60bbd7e59cee7b8022fccfdd4f76cffb98407e1cc8df2fe3cab6897450`
 
 ### Asset contents (paths relative to release root)
 
@@ -41,12 +45,17 @@
   - `pipeline.release_pack` 生成 staging + tar.gz
   - 解包 tar.gz 后，执行 `pipeline.verify_release_contract --root <extracted_root>` 通过（离线只读本地文件）
 
+发布后校验：
+
+- 已通过 GitHub API 确认 Release 资产存在（asset 名称/size 与预期一致）。
+- 由于当前执行环境对 GitHub release asset 下载链接存在网络超时（`curl: (28) Connection timed out`），未能完成“从 GitHub 下载资产 → 解包 → verify”的在线回归。
+
 ## GitHub Release body (copy/paste)
 
 ### Assets
 
 - `fusion-terms-artifacts-v2026.02.09.tar.gz`
-  - SHA256: `67e392c914308d877b3479200333327d9d29614250e53bffdaaa779a3f45d176`
+  - SHA256: `b07f0f60bbd7e59cee7b8022fccfdd4f76cffb98407e1cc8df2fe3cab6897450`
 
 ### Highlights
 
@@ -60,9 +69,9 @@
 
 完整变更记录：见 `CHANGELOG.md` 的 `## v2026.02.09`。
 
-## Manual publish steps (intentionally NOT executed here)
+## Manual publish steps (completed)
 
-> 注意：按项目约束，本阶段允许联网；但当前工作约定是“可 commit、不可 push”。因此以下步骤仅作为发布脚本/清单。
+本节保留为发布记录。
 
 1) Push tag:
 

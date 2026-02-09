@@ -228,7 +228,8 @@
 - [x] `README.md` 补充对外接入示例（方式 A / 方式 B）
 - [x] 更新 `CHANGELOG.md` 并（本地）打 tag（不 push）
 - [x] 准备 Release draft（产物清单 + sha256 + 手工发布步骤）：`docs/dev/09-release-v2026.02.09.md`
-- [ ] push tag + 发布 GitHub Release 资产（需人工确认后执行）
+- [x] push tag + 发布 GitHub Release 资产
+- [ ] （可选）发布后在“干净环境”下载资产并完成解包校验（若 CI/网络环境允许）
 
 ### Milestone B：v1.1（substitution 强语义导出）
 
