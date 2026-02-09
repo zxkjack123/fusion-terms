@@ -233,7 +233,7 @@
 - [x] `artifacts/terminology_substitutions.tsv` 导出
 - [x] `artifacts/vale/terminology_substitute.yml` 导出
 - [x] pytest 覆盖：仅 deprecated/forbidden、无自映射、排序稳定（TSV/YAML）
-- [ ] release 包纳入上述文件并由 manifest 覆盖 sha256
+- [x] release 包可纳入上述文件并由 manifest 覆盖 sha256（release_pack 开启 registry exports 时）
 
 ### Milestone C：增强接口（可选）
 

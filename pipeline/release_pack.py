@@ -115,6 +115,8 @@ def build_release_pack(
     include_registry_exports: bool = False,
     include_query_expansions: bool = False,
     include_tag_rules: bool = False,
+    include_substitutions: bool = False,
+    include_vale_substitute: bool = False,
     force: bool = False,
 ) -> PackResult:
     """Build a v1 release artifact tarball from a clean staging directory.
@@ -181,6 +183,10 @@ def build_release_pack(
             args.append("--query-expansions")
         if include_tag_rules:
             args.append("--tag-rules")
+        if include_substitutions:
+            args.append("--substitutions")
+        if include_vale_substitute:
+            args.append("--vale-substitute")
         _run_module("pipeline.export_registry", args)
 
         # Collect all files we just created under artifacts/.
@@ -273,6 +279,16 @@ def main() -> None:
         help="When exporting registry, also include artifacts/tag_rules.jsonl",
     )
     p.add_argument(
+        "--substitutions",
+        action="store_true",
+        help="When exporting registry, also include artifacts/terminology_substitutions.tsv",
+    )
+    p.add_argument(
+        "--vale-substitute",
+        action="store_true",
+        help="When exporting registry, also include artifacts/vale/terminology_substitute.yml",
+    )
+    p.add_argument(
         "--force",
         action="store_true",
         help="Delete existing stage dir before building.",
@@ -300,6 +316,8 @@ def main() -> None:
         include_registry_exports=bool(args.include_registry_exports),
         include_query_expansions=bool(args.query_expansions),
         include_tag_rules=bool(args.tag_rules),
+        include_substitutions=bool(args.substitutions),
+        include_vale_substitute=bool(args.vale_substitute),
         force=bool(args.force),
     )
 
