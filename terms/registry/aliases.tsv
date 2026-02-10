@@ -7,12 +7,12 @@ EAST	east	abbr	preferred	device abbr
 tokamak	tokamak	en	preferred	preferred en token
 NBI	neutral-beam-injection	abbr	preferred	canonical abbr
 neutral beam injection	neutral-beam-injection	en	preferred	concept-level phrase
-neutral-beam injection	neutral-beam-injection	en	alias	hyphen variant
+neutral-beam injection	neutral-beam-injection	en	deprecated	style: prefer space-separated phrase
 Thomson scattering	thomson-scattering	en	preferred	concept-level phrase
 thomson scattering	thomson-scattering	en	alias	case variant
 氚滞留	tritium-retention	zh	preferred	preferred zh
 tritium retention	tritium-retention	en	preferred	concept-level phrase
-T retention	tritium-retention	en	alias	shorthand
+T retention	tritium-retention	en	deprecated	shorthand: use full term
 q95	q95	en	preferred	parameter token
 q_95	q95	en	alias	underscore variant
 beta_N	beta-n	en	preferred	ASCII token

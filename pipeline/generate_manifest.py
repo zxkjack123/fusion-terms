@@ -132,6 +132,35 @@ def _counts_from_build_stats(stats_path: Path) -> dict[str, int] | None:
     return out
 
 
+def _counts_from_registry_exports(exports_path: Path) -> dict[str, int] | None:
+    """Extract optional substitution-related counts from artifacts/registry_exports.json.
+
+    This is a best-effort enhancement for downstream acceptance gates.
+    Missing or malformed files should not break manifest generation.
+    """
+
+    if not exports_path.exists():
+        return None
+    try:
+        data = json.loads(exports_path.read_text("utf-8"))
+    except (UnicodeDecodeError, json.JSONDecodeError):
+        return None
+    if not isinstance(data, dict):
+        return None
+
+    out: dict[str, int] = {}
+    # Keep keys stable and explicit for consumers.
+    sub_count = data.get("substitution_count")
+    if isinstance(sub_count, int):
+        out["terminology_substitutions_count"] = int(sub_count)
+
+    vale_sub_count = data.get("vale_terminology_substitute_count")
+    if isinstance(vale_sub_count, int):
+        out["vale_terminology_substitute_count"] = int(vale_sub_count)
+
+    return out or None
+
+
 def _safe_relpath_under_root(root: Path, rel: str) -> Path:
     rel_path = Path(rel)
     if rel_path.is_absolute():
@@ -230,6 +259,14 @@ def generate_manifest(
         zh_set = set(zh)
         en = [t for t in terms if t not in zh_set]
         counts = {"total": len(terms), "zh": len(zh), "en": len(en)}
+
+    # Optional: carry substitution-related counts into the main manifest for easier downstream QA.
+    reg_counts = _counts_from_registry_exports(root / "artifacts" / "registry_exports.json")
+    if reg_counts:
+        # Do not overwrite the core keys; only add extra counters.
+        for k, v in reg_counts.items():
+            if k not in counts:
+                counts[k] = v
 
     # sha256
     sha256: dict[str, str] = {}
