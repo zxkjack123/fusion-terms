@@ -9,11 +9,32 @@ KSTAR
 DIII-D
 ASDEX
 W7-X
+LHD
+HSX
+TJ-II
+NCSX
+HELIAS
 JT-60SA
 
 # --- Concepts / regimes / instabilities
 tokamak
 stellarator
+heliotron
+torsatron
+quasi-symmetry
+quasi-axisymmetric
+quasi-helical
+rotational-transform
+iota
+flux-surface
+magnetic-axis
+neoclassical
+neoclassical-transport
+bootstrap-current
+radial-electric-field
+ripple
+effective-ripple
+magnetic-island
 H-mode
 L-mode
 ELM

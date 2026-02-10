@@ -15,6 +15,16 @@ DT	D-T	en
 W-Be	W/Be	en
 WBe	W/Be	en
 
+# --- Stellarator device casing / hyphenation
+W7X	W7-X	en
+W7x	W7-X	en
+w7-x	W7-X	en
+lhd	LHD	en
+hsx	HSX	en
+tjii	TJ-II	en
+ncsx	NCSX	en
+helias	HELIAS	en
+
 # --- Parameter spellings (ASCII variants)
 q_95	q95	en
 betaN	beta_N	en

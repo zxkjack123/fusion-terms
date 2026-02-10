@@ -20,6 +20,31 @@ HB11
 雪崩聚变
 轫致辐射
 
+# --- Stellarator / 3D magnetic geometry / neoclassical
+螺旋器
+螺旋装置
+螺旋仿星器
+赫利奥特龙
+托萨特龙
+模块化线圈仿星器
+模块化线圈
+准对称
+准轴对称
+准螺旋对称
+三维磁场
+磁轴
+磁面
+磁通坐标
+磁通面平均
+Boozer坐标
+Hamada坐标
+旋转变换
+纹波
+有效纹波
+新古典
+新古典输运
+径向电场
+
 # --- Components / systems
 第一壁
 偏滤器
