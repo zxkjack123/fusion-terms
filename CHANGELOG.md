@@ -17,7 +17,6 @@
 
 ### Added
 
-- v1.1 substitution 导出增强：在 registry 中补齐最小 deprecated 映射种子，使 `artifacts/terminology_substitutions.tsv` 与 `artifacts/vale/terminology_substitute.yml` 的 swap 非空；同时在 `fusion_terms_manifest.json` 的 counts 中增加 substitution 计数字段，便于下游验收。
 
 
 
@@ -26,6 +25,12 @@
 
 
 ### Fixed
+
+## v2026.02.11
+
+### Added
+
+- v1.1 substitution 导出增强：在 registry 中补齐最小 deprecated 映射种子，使 `artifacts/terminology_substitutions.tsv` 与 `artifacts/vale/terminology_substitute.yml` 的 swap 非空；同时在 `fusion_terms_manifest.json` 的 counts 中增加 substitution 计数字段，便于下游验收。
 
 ## v2026.02.10
 
