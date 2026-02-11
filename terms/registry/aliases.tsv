@@ -25,3 +25,115 @@ Be	beryllium	abbr	preferred	element symbol
 beryllium	beryllium	en	alias	word form
 Nb3Sn	nb3sn	mixed	preferred	token
 Nb-3Sn	nb3sn	mixed	alias	hyphen variant
+
+# ---- Tritium fuel cycle systems (acronyms + preferred full names)
+# NOTE: keep acronyms as kind=alias (not deprecated) to avoid leaking discouraged forms into IME allowlists.
+托卡马克排气处理系统	tokamak-exhaust-processing-system	zh	preferred	preferred zh
+托卡马克排灰系统	tokamak-exhaust-processing-system	zh	alias	variant used in some internal docs
+tokamak exhaust processing system	tokamak-exhaust-processing-system	en	preferred	preferred en (phrase)
+tokamak-exhaust-processing-system	tokamak-exhaust-processing-system	en	alias	IME token-only form
+tokamak-exhaust-processing	tokamak-exhaust-processing-system	en	alias	short form (token-only)
+TEP	tokamak-exhaust-processing-system	abbr	alias	acronym
+
+增殖剂氚提取系统	breeder-tritium-extraction-system	zh	preferred	preferred zh
+breeder tritium extraction system	breeder-tritium-extraction-system	en	preferred	preferred en (phrase)
+breeder-tritium-extraction-system	breeder-tritium-extraction-system	en	alias	IME token-only form
+tritium extraction system	breeder-tritium-extraction-system	en	alias	generic phrase variant
+tritium-extraction-system	breeder-tritium-extraction-system	en	alias	IME token-only form
+TES	breeder-tritium-extraction-system	abbr	alias	acronym
+
+同位素分离系统	isotope-separation-system	zh	preferred	preferred zh
+氢同位素分离系统	isotope-separation-system	zh	alias	more specific zh variant
+isotope separation system	isotope-separation-system	en	preferred	preferred en (phrase)
+isotope-separation-system	isotope-separation-system	en	alias	IME token-only form
+ISS	isotope-separation-system	abbr	alias	acronym
+
+水除氚系统	water-detritiation-system	zh	preferred	preferred zh
+water detritiation system	water-detritiation-system	en	preferred	preferred en (phrase)
+water-detritiation-system	water-detritiation-system	en	alias	IME token-only form
+WDS	water-detritiation-system	abbr	alias	acronym
+
+燃料储存与供应系统	storage-and-delivery-system	zh	preferred	preferred zh
+storage and delivery system	storage-and-delivery-system	en	preferred	preferred en (phrase)
+storage-and-delivery-system	storage-and-delivery-system	en	alias	IME token-only form
+fuel storage and delivery system	storage-and-delivery-system	en	alias	explicit phrase variant
+fuel-storage-and-delivery-system	storage-and-delivery-system	en	alias	IME token-only form
+SDS	storage-and-delivery-system	abbr	alias	acronym
+
+冷却剂净化系统	coolant-purification-system	zh	preferred	preferred zh
+coolant purification system	coolant-purification-system	en	preferred	preferred en (phrase)
+coolant-purification-system	coolant-purification-system	en	alias	IME token-only form
+CPS	coolant-purification-system	abbr	alias	acronym
+
+# ---- Safety analysis reports (acronyms + preferred full names)
+初步安全分析报告	preliminary-safety-analysis-report	zh	preferred	preferred zh
+Preliminary Safety Analysis Report	preliminary-safety-analysis-report	en	preferred	preferred en (phrase)
+preliminary-safety-analysis-report	preliminary-safety-analysis-report	en	alias	IME token-only form
+PSAR	preliminary-safety-analysis-report	abbr	alias	acronym
+
+最终安全分析报告	final-safety-analysis-report	zh	preferred	preferred zh
+Final Safety Analysis Report	final-safety-analysis-report	en	preferred	preferred en (phrase)
+final-safety-analysis-report	final-safety-analysis-report	en	alias	IME token-only form
+FSAR	final-safety-analysis-report	abbr	alias	acronym
+
+# ---- Radiation protection / shielding / limits
+合理可行尽量低	alara	zh	preferred	preferred zh
+合理可行尽可能低	alara	zh	alias	zh variant
+ALARA	alara	abbr	preferred	canonical acronym
+As Low As Reasonably Achievable	alara	en	alias	full expansion (title case)
+as low as reasonably achievable	alara	en	alias	full expansion (lowercase)
+as-low-as-reasonably-achievable	alara	en	alias	IME token-only form
+
+剂量约束	dose-constraint	zh	preferred	preferred zh
+dose constraint	dose-constraint	en	preferred	preferred en (phrase)
+dose-constraint	dose-constraint	en	alias	IME token-only form
+
+剂量限值	dose-limit	zh	preferred	preferred zh
+dose limit	dose-limit	en	preferred	preferred en (phrase)
+dose-limit	dose-limit	en	alias	IME token-only form
+
+屏蔽	radiation-shielding	zh	preferred	preferred zh
+radiation shielding	radiation-shielding	en	preferred	preferred en (phrase)
+radiation-shielding	radiation-shielding	en	alias	IME token-only form
+shielding	radiation-shielding	en	alias	common short form
+
+屏蔽穿透	shielding-penetration	zh	preferred	preferred zh
+shielding penetration	shielding-penetration	en	preferred	preferred en (phrase)
+shielding-penetration	shielding-penetration	en	alias	IME token-only form
+
+天空反照	skyshine	zh	preferred	preferred zh
+天空散射	skyshine	zh	alias	zh variant
+skyshine	skyshine	en	preferred	preferred en
+
+流道串流	radiation-streaming	zh	preferred	preferred zh
+辐射串流	radiation-streaming	zh	alias	zh variant
+中子串流	radiation-streaming	zh	alias	specific zh variant
+radiation streaming	radiation-streaming	en	preferred	preferred en (phrase)
+radiation-streaming	radiation-streaming	en	alias	IME token-only form
+
+迷宫通道	shielding-labyrinth	zh	preferred	preferred zh
+shielding labyrinth	shielding-labyrinth	en	preferred	preferred en (phrase)
+shielding-labyrinth	shielding-labyrinth	en	alias	IME token-only form
+labyrinth	shielding-labyrinth	en	alias	common short form
+
+# ---- Exposure / dose / air concentration
+职业照射	occupational-exposure	zh	preferred	preferred zh
+occupational exposure	occupational-exposure	en	preferred	preferred en (phrase)
+occupational-exposure	occupational-exposure	en	alias	IME token-only form
+
+公众照射	public-exposure	zh	preferred	preferred zh
+public exposure	public-exposure	en	preferred	preferred en (phrase)
+public-exposure	public-exposure	en	alias	IME token-only form
+
+有效剂量	effective-dose	zh	preferred	preferred zh
+effective dose	effective-dose	en	preferred	preferred en (phrase)
+effective-dose	effective-dose	en	alias	IME token-only form
+
+当量剂量	equivalent-dose	zh	preferred	preferred zh
+equivalent dose	equivalent-dose	en	preferred	preferred en (phrase)
+equivalent-dose	equivalent-dose	en	alias	IME token-only form
+
+导出空气浓度	derived-air-concentration	zh	preferred	preferred zh
+derived air concentration	derived-air-concentration	en	preferred	preferred en (phrase)
+derived-air-concentration	derived-air-concentration	en	alias	IME token-only form
+DAC	derived-air-concentration	abbr	alias	acronym (ambiguous in other domains; keep as alias)

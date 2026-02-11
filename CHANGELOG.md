@@ -18,14 +18,20 @@
 ### Added
 
 
-
-
-
-
 ### Changed
 
 
 ### Fixed
+
+## v2026.02.11.2
+
+### Added
+
+- 术语库扩充：补充氚燃料循环系统常用缩写及全称（TEP/TES/ISS/WDS/SDS/CPS），中英文 token-only。
+- registry：为上述缩写补充 concept/alias 映射（缩写作为 alias，全称作为 preferred），便于下游做规范化建议。
+- 术语库扩充：补充安全分析报告缩写及全称（PSAR/FSAR），中英文 token-only；并在 registry 中增加 acronyms→preferred 映射。
+- 术语库扩充：补充辐射防护与屏蔽相关术语（ALARA、剂量约束/限值、屏蔽穿透、天空反照、串流、迷宫通道等），并在 registry 中增加规范化映射。
+- 术语库扩充：补充辐射防护口径相关中文术语（职业照射、公众照射、有效剂量、当量剂量、导出空气浓度/DAC）并补齐 registry 映射。
 
 ## v2026.02.11.1
 

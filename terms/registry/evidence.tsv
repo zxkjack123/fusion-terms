@@ -12,3 +12,28 @@ tau-e	internal:TODO:add-definition-source			2026-02-04
 tungsten	https://en.wikipedia.org/wiki/Tungsten			2026-02-04
 beryllium	https://en.wikipedia.org/wiki/Beryllium			2026-02-04
 nb3sn	https://en.wikipedia.org/wiki/Niobium%E2%80%93tin			2026-02-04
+
+tokamak-exhaust-processing-system	internal:TRITIUM-CYCLE:system-abbreviations			2026-02-11
+breeder-tritium-extraction-system	internal:TRITIUM-CYCLE:system-abbreviations			2026-02-11
+isotope-separation-system	internal:TRITIUM-CYCLE:system-abbreviations			2026-02-11
+water-detritiation-system	internal:TRITIUM-CYCLE:system-abbreviations			2026-02-11
+storage-and-delivery-system	internal:TRITIUM-CYCLE:system-abbreviations			2026-02-11
+coolant-purification-system	internal:TRITIUM-CYCLE:system-abbreviations			2026-02-11
+
+preliminary-safety-analysis-report	internal:BEST:PSAR			2026-02-11
+final-safety-analysis-report	internal:BEST:FSAR			2026-02-11
+
+alara	internal:BEST:radiation-protection			2026-02-11
+dose-constraint	internal:BEST:radiation-protection			2026-02-11
+dose-limit	internal:BEST:radiation-protection			2026-02-11
+radiation-shielding	internal:FUSION-SHIELDING-2022			2026-02-11
+shielding-penetration	internal:FUSION-SHIELDING-2022			2026-02-11
+skyshine	internal:FUSION-SHIELDING-2022			2026-02-11
+radiation-streaming	internal:FUSION-SHIELDING-2022			2026-02-11
+shielding-labyrinth	internal:FUSION-SHIELDING-2022			2026-02-11
+
+occupational-exposure	internal:BEST:radiation-protection			2026-02-11
+public-exposure	internal:BEST:radiation-protection			2026-02-11
+effective-dose	internal:BEST:radiation-protection			2026-02-11
+equivalent-dose	internal:BEST:radiation-protection			2026-02-11
+derived-air-concentration	internal:BEST:radiation-protection			2026-02-11

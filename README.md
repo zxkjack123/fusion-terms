@@ -92,7 +92,7 @@ Strongly recommended (v1.1):
 In your integration/build pipeline, pin a tag and build a self-contained release root (or a tarball) with the manifest generated and verified.
 
 ```bash
-TAG=v2026.02.09
+TAG=v2026.02.11.2
 
 git clone https://github.com/zxkjack123/fusion-terms.git
 cd fusion-terms
@@ -120,7 +120,7 @@ After this, your downstream project can copy the required files into its own rep
 If you prefer not to run the fusion-terms build pipeline, download the release tarball built by fusion-terms and verify locally.
 
 ```bash
-TAG=v2026.02.09
+TAG=v2026.02.11.2
 ASSET="fusion-terms-artifacts-${TAG}.tar.gz"
 URL="https://github.com/zxkjack123/fusion-terms/releases/download/${TAG}/${ASSET}"
 

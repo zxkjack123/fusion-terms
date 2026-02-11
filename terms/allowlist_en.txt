@@ -110,6 +110,23 @@ ICRH
 ECRH
 LHCD
 
+# --- Tritium fuel cycle systems (acronyms + full names)
+TEP
+tokamak-exhaust-processing
+tokamak-exhaust-processing-system
+TES
+tritium-extraction-system
+breeder-tritium-extraction-system
+ISS
+isotope-separation-system
+WDS
+water-detritiation-system
+SDS
+storage-and-delivery-system
+fuel-storage-and-delivery-system
+CPS
+coolant-purification-system
+
 # --- Diagnostics (acronyms / key tokens)
 TS
 CXRS
@@ -133,6 +150,26 @@ beta_N
 β_N
 tau_E
 τ_E
+
+# --- Safety analysis reports (acronyms + full names)
+PSAR
+preliminary-safety-analysis-report
+FSAR
+final-safety-analysis-report
+
+# --- Radiation protection / shielding / limits (token-only)
+ALARA
+as-low-as-reasonably-achievable
+dose-constraint
+dose-limit
+radiation-shielding
+shielding
+shielding-penetration
+attenuation
+buildup-factor
+skyshine
+radiation-streaming
+labyrinth
 
 # --- Phrase components (optional; can be generic)
 neutral

@@ -27,6 +27,9 @@ artifacts/candidates_*.tsv
 artifacts/candidates_*.jsonl
 artifacts/*.log
 
+# Local exploratory exports (project-management snapshots)
+artifacts/pm_*.json
+
 # Generated artifacts
 artifacts/domain_terms.txt
 artifacts/*_build_stats.json

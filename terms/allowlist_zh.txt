@@ -78,6 +78,42 @@ DPA
 氢产额
 气体产额
 
+# --- Tritium fuel cycle systems (acronyms + full names)
+TEP
+托卡马克排灰系统
+托卡马克排气处理系统
+TES
+增殖剂氚提取系统
+ISS
+同位素分离系统
+氢同位素分离系统
+WDS
+水除氚系统
+SDS
+燃料储存与供应系统
+CPS
+冷却剂净化系统
+
+# --- Safety analysis reports (acronyms)
+PSAR
+FSAR
+
+# --- Radiation protection / shielding / limits (token-only)
+ALARA
+合理可行尽量低
+合理可行尽可能低
+职业照射
+公众照射
+导出空气浓度
+天空反照
+天空散射
+屏蔽穿透
+穿透孔
+流道串流
+辐射串流
+中子串流
+迷宫通道
+
 # --- Components / systems
 第一壁
 偏滤器

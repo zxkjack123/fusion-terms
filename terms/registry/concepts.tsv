@@ -14,3 +14,32 @@ tau-e	metric		tau_E		active	Energy confinement time (ASCII preferred here; can a
 tungsten	material		w	W	active	Material / element (token preferred is W)
 beryllium	material		Be	Be	active	Material / element
 nb3sn	material		Nb3Sn		active	Superconductor (Nb3Sn)
+
+# ---- Tritium fuel cycle systems (abbrev expansions)
+tokamak-exhaust-processing-system	system	托卡马克排气处理系统	tokamak exhaust processing system		active	Acronym expansion: TEP
+breeder-tritium-extraction-system	system	增殖剂氚提取系统	breeder tritium extraction system		active	Acronym expansion: TES
+isotope-separation-system	system	同位素分离系统	isotope separation system		active	Acronym expansion: ISS
+water-detritiation-system	system	水除氚系统	water detritiation system		active	Acronym expansion: WDS
+storage-and-delivery-system	system	燃料储存与供应系统	storage and delivery system		active	Acronym expansion: SDS
+coolant-purification-system	system	冷却剂净化系统	coolant purification system		active	Acronym expansion: CPS
+
+# ---- Safety analysis reports (acronym expansions)
+preliminary-safety-analysis-report	doc	初步安全分析报告	Preliminary Safety Analysis Report	PSAR	active	Safety analysis report: preliminary
+final-safety-analysis-report	doc	最终安全分析报告	Final Safety Analysis Report	FSAR	active	Safety analysis report: final
+
+# ---- Radiation protection / shielding / limits
+alara	principle	合理可行尽量低	ALARA	ALARA	active	As Low As Reasonably Achievable
+dose-constraint	limit	剂量约束	dose constraint		active	Dose constraint (planning/optimization)
+dose-limit	limit	剂量限值	dose limit		active	Dose limit (regulatory)
+radiation-shielding	concept	屏蔽	radiation shielding		active	Radiation shielding (general)
+shielding-penetration	concept	屏蔽穿透	shielding penetration		active	Penetrations in shielding that enable streaming
+skyshine	effect	天空反照	skyshine		active	Atmospheric scattering contribution to dose
+radiation-streaming	effect	流道串流	radiation streaming		active	Streaming through penetrations/ducts/labyrinths
+shielding-labyrinth	concept	迷宫通道	shielding labyrinth		active	Labyrinth for shielding penetrations
+
+# ---- Exposure / dose / air concentration
+occupational-exposure	metric	职业照射	occupational exposure		active	Occupational exposure
+public-exposure	metric	公众照射	public exposure		active	Public exposure
+effective-dose	metric	有效剂量	effective dose		active	Effective dose
+equivalent-dose	metric	当量剂量	equivalent dose		active	Equivalent dose
+derived-air-concentration	limit	导出空气浓度	derived air concentration	DAC	active	Derived air concentration
