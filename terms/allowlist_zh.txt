@@ -45,6 +45,39 @@ Hamada坐标
 新古典输运
 径向电场
 
+# --- MCNP / FISPACT / activation analysis (token-only)
+MCNP
+MCNP6
+MCNPX
+FISPACT
+FISPACT-II
+FISPACT-2007
+NJOY
+ACE
+xsdir
+ENDF
+ENDF-B
+JEFF
+JENDL
+FENDL
+TENDL
+EAF
+IRDF
+放射性清单
+放射性核素清单
+衰变伽马
+衰变伽马源项
+伽马源项
+关堆剂量率
+停堆剂量率
+接触剂量率
+D1S
+DPA
+位移每原子
+氦产额
+氢产额
+气体产额
+
 # --- Components / systems
 第一壁
 偏滤器
