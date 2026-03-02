@@ -4,6 +4,7 @@ import argparse
 import json
 import shutil
 import subprocess
+import sys
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
@@ -24,7 +25,13 @@ def _now_backup_name() -> str:
     return datetime.now().strftime("%Y%m%d-%H%M%S")
 
 
-def _run_importer(*, script: Path, input_path: Path, output_path: Path, do_import: bool) -> subprocess.CompletedProcess[str]:
+def _run_importer(
+    *,
+    script: Path,
+    input_path: Path,
+    output_path: Path,
+    do_import: bool,
+) -> subprocess.CompletedProcess[str]:
     # Backward-compatible wrapper for older callers/tests.
     return _run_importer_v2(
         script=script,
@@ -50,7 +57,7 @@ def _run_importer_v2(
     no_restart_fcitx: bool,
 ) -> subprocess.CompletedProcess[str]:
     cmd = [
-        "python3",
+        sys.executable,
         str(script),
         "--input",
         str(input_path),
@@ -58,7 +65,8 @@ def _run_importer_v2(
         str(output_path),
     ]
 
-    # Only add flags when they matter, to keep compatibility with user's existing scripts.
+    # Only add flags when they matter, to keep compatibility with
+    # user's existing scripts.
     if include_non_cjk:
         cmd.append("--include-non-cjk")
 
@@ -83,7 +91,12 @@ def _copy_any(src: Path, dst: Path) -> None:
         shutil.copy2(src, dst)
 
 
-def create_backup(*, backup_root: Path, backup_name: str, paths: list[Path]) -> Path:
+def create_backup(
+    *,
+    backup_root: Path,
+    backup_name: str,
+    paths: list[Path],
+) -> Path:
     """Create a backup snapshot and return manifest path."""
 
     snapshot_dir = backup_root / backup_name
@@ -98,10 +111,19 @@ def create_backup(*, backup_root: Path, backup_name: str, paths: list[Path]) -> 
         backup_path = snapshot_dir / rel
         kind = "dir" if p.is_dir() else "file"
         _copy_any(p, backup_path)
-        items.append(BackupItem(original=str(p), backup=str(backup_path), kind=kind))
+        items.append(
+            BackupItem(
+                original=str(p),
+                backup=str(backup_path),
+                kind=kind,
+            )
+        )
 
     if not items:
-        raise SystemExit("safe import failed: no existing backup paths found; refusing to import")
+        raise SystemExit(
+            "safe import failed: no existing backup paths found; "
+            "refusing to import"
+        )
 
     manifest = {
         "schema_version": 1,
@@ -113,7 +135,10 @@ def create_backup(*, backup_root: Path, backup_name: str, paths: list[Path]) -> 
 
     manifest_path = snapshot_dir / "manifest.json"
     manifest_path.write_text(
-        json.dumps(manifest, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+        (
+            json.dumps(manifest, ensure_ascii=False, indent=2, sort_keys=True)
+            + "\n"
+        ),
         encoding="utf-8",
     )
     return manifest_path
@@ -121,7 +146,9 @@ def create_backup(*, backup_root: Path, backup_name: str, paths: list[Path]) -> 
 
 def rollback_from_manifest(manifest_path: Path) -> None:
     if not manifest_path.exists():
-        raise SystemExit(f"rollback failed: manifest not found: {manifest_path}")
+        raise SystemExit(
+            f"rollback failed: manifest not found: {manifest_path}"
+        )
 
     data = json.loads(manifest_path.read_text("utf-8"))
     items = data.get("items", [])
@@ -140,20 +167,34 @@ def rollback_from_manifest(manifest_path: Path) -> None:
         # Ensure parent exists.
         orig.parent.mkdir(parents=True, exist_ok=True)
 
+        def _remove_existing(p: Path) -> None:
+            if not p.exists():
+                return
+            if p.is_dir() and not p.is_symlink():
+                shutil.rmtree(p)
+            else:
+                p.unlink()
+
         if bak.is_dir():
             if orig.exists():
-                shutil.rmtree(orig)
+                _remove_existing(orig)
             shutil.copytree(bak, orig)
         else:
+            if orig.exists():
+                _remove_existing(orig)
             shutil.copy2(bak, orig)
 
-    print(f"rollback OK: restored {len(items_sorted)} paths from {manifest_path}")
+    print(
+        f"rollback OK: restored {len(items_sorted)} paths from "
+        f"{manifest_path}"
+    )
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(
         description=(
-            "Safely generate a Rime import payload and (optionally) import into userdb with backups and rollback."
+            "Safely generate a Rime import payload and (optionally) "
+            "import into userdb with backups and rollback."
         )
     )
     parser.add_argument(
@@ -175,14 +216,18 @@ def main() -> None:
         "--dict-name",
         default="rime_ice",
         help=(
-            "Rime dict_name to import into (passed through to rime_import_wordlist.py). "
+            "Rime dict_name to import into "
+            "(passed through to rime_import_wordlist.py). "
             "Default: rime_ice (for rime-ice)."
         ),
     )
     parser.add_argument(
         "--include-non-cjk",
         action="store_true",
-        help="Also include non-CJK terms when generating payload (passed through).",
+        help=(
+            "Also include non-CJK terms when generating payload "
+            "(passed through)."
+        ),
     )
     parser.add_argument(
         "--rime-user-dir",
@@ -195,7 +240,10 @@ def main() -> None:
     parser.add_argument(
         "--no-restart-fcitx",
         action="store_true",
-        help="Do not auto-restart fcitx when the Rime userdb is locked (passed through).",
+        help=(
+            "Do not auto-restart fcitx when the Rime userdb is locked "
+            "(passed through)."
+        ),
     )
     parser.add_argument(
         "--import",
@@ -206,13 +254,19 @@ def main() -> None:
     parser.add_argument(
         "--dry-run",
         action="store_true",
-        help="Only generate import payload; do not import (overrides --import)",
+        help=(
+            "Only generate import payload; do not import "
+            "(overrides --import)"
+        ),
     )
     parser.add_argument(
         "--backup-path",
         action="append",
         default=[],
-        help="Path to back up before importing (repeatable). Can be file or dir.",
+        help=(
+            "Path to back up before importing (repeatable). "
+            "Can be file or dir."
+        ),
     )
     parser.add_argument(
         "--backup-root",
@@ -222,7 +276,10 @@ def main() -> None:
     parser.add_argument(
         "--backup-name",
         default=None,
-        help="Backup snapshot name (default: timestamp). Useful for deterministic tests.",
+        help=(
+            "Backup snapshot name (default: timestamp). "
+            "Useful for deterministic tests."
+        ),
     )
     parser.add_argument(
         "--rollback",
@@ -255,7 +312,11 @@ def main() -> None:
         do_import=False,
         dict_name=args.dict_name,
         include_non_cjk=bool(args.include_non_cjk),
-        rime_user_dir=Path(args.rime_user_dir).expanduser() if args.rime_user_dir else None,
+        rime_user_dir=(
+            Path(args.rime_user_dir).expanduser()
+            if args.rime_user_dir
+            else None
+        ),
         no_restart_fcitx=bool(args.no_restart_fcitx),
     )
     if gen.stdout:
@@ -268,7 +329,11 @@ def main() -> None:
     # Explicit dry-run: stop here.
     if args.dry_run or not args.do_import:
         print(f"generated import payload: {output_path}")
-        print("dry-run: no import performed" if args.dry_run else "no --import: payload only")
+        print(
+            "dry-run: no import performed"
+            if args.dry_run
+            else "no --import: payload only"
+        )
         return
 
     # Step 2) Backup paths before import.
@@ -278,7 +343,8 @@ def main() -> None:
 
     if not backup_paths:
         raise SystemExit(
-            "safe import failed: --import requires at least one --backup-path (file/dir) to enable rollback"
+            "safe import failed: --import requires at least one "
+            "--backup-path (file/dir) to enable rollback"
         )
 
     _ensure_dir(backup_root)
@@ -297,7 +363,11 @@ def main() -> None:
         do_import=True,
         dict_name=args.dict_name,
         include_non_cjk=bool(args.include_non_cjk),
-        rime_user_dir=Path(args.rime_user_dir).expanduser() if args.rime_user_dir else None,
+        rime_user_dir=(
+            Path(args.rime_user_dir).expanduser()
+            if args.rime_user_dir
+            else None
+        ),
         no_restart_fcitx=bool(args.no_restart_fcitx),
     )
     if imp.stdout:
@@ -313,8 +383,14 @@ def main() -> None:
     print("import OK")
     print("verification tips:")
     print("- restart Fcitx if needed")
-    print("- try a few fixed acceptance terms (ITER/EAST/NBI/H-mode/q95/β_N/τ_E/托卡马克)")
-    print(f"rollback command: python -m pipeline.rime_import_safe --rollback {manifest_path}")
+    print(
+        "- try a few fixed acceptance terms "
+        "(ITER/EAST/NBI/H-mode/q95/β_N/τ_E/托卡马克)"
+    )
+    print(
+        "rollback command: python -m pipeline.rime_import_safe "
+        f"--rollback {manifest_path}"
+    )
 
 
 if __name__ == "__main__":

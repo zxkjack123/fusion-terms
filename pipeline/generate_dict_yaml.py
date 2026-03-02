@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import subprocess
+import sys
 import tempfile
 from pathlib import Path
 
@@ -18,9 +19,14 @@ def _load_config(config_path: Path) -> dict:
         return tomllib.load(f)
 
 
-def _run_importer(*, script: Path, input_path: Path, output_path: Path) -> subprocess.CompletedProcess[str]:
+def _run_importer(
+    *,
+    script: Path,
+    input_path: Path,
+    output_path: Path,
+) -> subprocess.CompletedProcess[str]:
     cmd = [
-        "python3",
+        sys.executable,
         str(script),
         "--input",
         str(input_path),
@@ -108,7 +114,10 @@ def generate_dict_yaml(
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        description="Generate a baked Rime dictionary (.dict.yaml) from artifacts/domain_terms.txt via the existing importer script."
+        description=(
+            "Generate a baked Rime dictionary (.dict.yaml) from "
+            "artifacts/domain_terms.txt via the existing importer script."
+        )
     )
     parser.add_argument(
         "--config",
@@ -123,7 +132,10 @@ def main() -> None:
     parser.add_argument(
         "--output",
         default=None,
-        help="Output dict YAML path (default: <out-dir>/fusion_terms.dict.yaml)",
+        help=(
+            "Output dict YAML path "
+            "(default: <out-dir>/fusion_terms.dict.yaml)"
+        ),
     )
     parser.add_argument(
         "--out-dir",

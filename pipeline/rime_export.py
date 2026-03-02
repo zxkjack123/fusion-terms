@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import subprocess
+import sys
 from pathlib import Path
 
 
@@ -37,7 +38,10 @@ def main() -> None:
     parser.add_argument(
         "--include-non-cjk",
         action="store_true",
-        help="Also include non-CJK terms (passed through to rime_import_wordlist.py).",
+        help=(
+            "Also include non-CJK terms "
+            "(passed through to rime_import_wordlist.py)."
+        ),
     )
     parser.add_argument(
         "--rime-user-dir",
@@ -50,7 +54,10 @@ def main() -> None:
     parser.add_argument(
         "--no-restart-fcitx",
         action="store_true",
-        help="Do not auto-restart fcitx when the Rime userdb is locked (passed through).",
+        help=(
+            "Do not auto-restart fcitx when the Rime userdb is locked "
+            "(passed through)."
+        ),
     )
     parser.add_argument(
         "--import",
@@ -73,7 +80,7 @@ def main() -> None:
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
     cmd = [
-        "python3",
+        sys.executable,
         str(script_path),
         "--input",
         str(input_path),
@@ -85,7 +92,12 @@ def main() -> None:
     if args.do_import:
         cmd.extend(["--dict-name", args.dict_name])
         if args.rime_user_dir:
-            cmd.extend(["--rime-user-dir", str(Path(args.rime_user_dir).expanduser())])
+            cmd.extend(
+                [
+                    "--rime-user-dir",
+                    str(Path(args.rime_user_dir).expanduser()),
+                ]
+            )
         if args.no_restart_fcitx:
             cmd.append("--no-restart-fcitx")
         cmd.append("--import")

@@ -26,7 +26,8 @@ def test_review_pack_diffs_and_updates_baseline(tmp_path: Path) -> None:
     _write_tsv(cur_zh, [("托卡马克", 5), ("偏滤器", 3)])
     _write_tsv(cur_en, [("ITER", 10), ("NBI", 4)])
 
-    # First run: baseline missing -> treat all as new; baseline gets updated by default.
+    # First run: baseline missing -> treat all as new;
+    # baseline gets updated by default.
     p1 = subprocess.run(
         [
             sys.executable,
@@ -83,7 +84,8 @@ def test_review_pack_diffs_and_updates_baseline(tmp_path: Path) -> None:
     removed_en_text = (rp_dir / f"removed_{cur_en.name}").read_text("utf-8")
     assert "NBI\t4" in removed_en_text
 
-    # Third run with no changes should be empty diffs (baseline was updated on p2).
+    # Third run with no changes should be empty diffs
+    # (baseline was updated on p2).
     p3 = subprocess.run(
         [
             sys.executable,
@@ -105,7 +107,9 @@ def test_review_pack_diffs_and_updates_baseline(tmp_path: Path) -> None:
     assert summary3["counts"]["removed_en"] == 0
 
 
-def test_review_pack_can_exclude_known_allow_deny_terms(tmp_path: Path) -> None:
+def test_review_pack_can_exclude_known_allow_deny_terms(
+    tmp_path: Path,
+) -> None:
     repo_root = Path(__file__).resolve().parents[1]
 
     out_dir = tmp_path / "artifacts"

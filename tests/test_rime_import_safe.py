@@ -1,17 +1,24 @@
 from __future__ import annotations
 
 import json
+import shutil
 import subprocess
 import sys
 from pathlib import Path
 
 
-def _write_dummy_importer(path: Path, *, state_file: Path, fail_on_import: bool = False) -> None:
+def _write_dummy_importer(
+    path: Path,
+    *,
+    state_file: Path,
+    fail_on_import: bool = False,
+) -> None:
     """Create a dummy rime_import_wordlist.py compatible script.
 
     Behavior:
     - always writes the requested --output payload
-    - if --import is provided, mutates state_file (or exits non-zero if fail_on_import)
+        - if --import is provided, mutates state_file
+            (or exits non-zero if fail_on_import)
     """
 
     payload_literal = repr("PAYLOAD\n")
@@ -47,7 +54,9 @@ if args.do_import:
     path.chmod(0o755)
 
 
-def test_safe_import_dry_run_generates_payload_without_import(tmp_path: Path) -> None:
+def test_safe_import_dry_run_generates_payload_without_import(
+    tmp_path: Path,
+) -> None:
     repo_root = Path(__file__).resolve().parents[1]
 
     wordlist = tmp_path / "domain_terms.txt"
@@ -199,3 +208,46 @@ def test_safe_import_auto_rolls_back_on_import_failure(tmp_path: Path) -> None:
 
     # Should have rolled back to BEFORE.
     assert state_file.read_text("utf-8") == "BEFORE\n"
+
+
+def test_rollback_handles_target_type_drift(tmp_path: Path) -> None:
+    from pipeline.rime_import_safe import create_backup
+    from pipeline.rime_import_safe import rollback_from_manifest
+
+    backup_root = tmp_path / "backups"
+
+    # Case 1: backup is a directory, current target drifts to a file.
+    orig_dir = tmp_path / "target_dir"
+    (orig_dir / "nested.txt").parent.mkdir(parents=True, exist_ok=True)
+    (orig_dir / "nested.txt").write_text("DIR-BEFORE\n", encoding="utf-8")
+
+    manifest_dir = create_backup(
+        backup_root=backup_root,
+        backup_name="dir-backup",
+        paths=[orig_dir],
+    )
+
+    shutil.rmtree(orig_dir)
+    orig_dir.write_text("NOW-A-FILE\n", encoding="utf-8")
+
+    rollback_from_manifest(manifest_dir)
+    assert orig_dir.is_dir()
+    assert (orig_dir / "nested.txt").read_text("utf-8") == "DIR-BEFORE\n"
+
+    # Case 2: backup is a file, current target drifts to a directory.
+    orig_file = tmp_path / "target_file.txt"
+    orig_file.write_text("FILE-BEFORE\n", encoding="utf-8")
+
+    manifest_file = create_backup(
+        backup_root=backup_root,
+        backup_name="file-backup",
+        paths=[orig_file],
+    )
+
+    orig_file.unlink()
+    orig_file.mkdir(parents=True, exist_ok=True)
+    (orig_file / "junk.txt").write_text("JUNK\n", encoding="utf-8")
+
+    rollback_from_manifest(manifest_file)
+    assert orig_file.is_file()
+    assert orig_file.read_text("utf-8") == "FILE-BEFORE\n"

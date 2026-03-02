@@ -47,13 +47,19 @@ def sha1_text(text: str) -> str:
     return hashlib.sha1(text.encode("utf-8")).hexdigest()
 
 
-def iter_markdown_files(root: Path, *, exclude_globs: list[str] | None = None) -> Iterator[Path]:
+def iter_markdown_files(
+    root: Path,
+    *,
+    exclude_globs: list[str] | None = None,
+) -> Iterator[Path]:
     """Yield markdown files under root in a deterministic order.
 
-    pathlib.Path.rglob() order is filesystem-dependent and can be non-deterministic.
-    We use a sorted os.walk() so extraction outputs are reproducible across runs.
+    pathlib.Path.rglob() order is filesystem-dependent and can be
+    non-deterministic. We use a sorted os.walk() so extraction outputs are
+    reproducible across runs.
 
-    Matches markdown files with a .md extension case-insensitively (e.g. .md, .MD).
+    Matches markdown files with a .md extension case-insensitively
+    (e.g. .md, .MD).
     """
 
     root = root.expanduser()
@@ -134,7 +140,8 @@ def clean_markdown_lines(text: str) -> list[str]:
         if CAPTION_EN_RE.match(line) or CAPTION_ZH_RE.match(line):
             continue
 
-        # Drop table separator rows, but keep table content rows by flattening pipes.
+        # Drop table separator rows, but keep table content rows by
+        # flattening pipes.
         if TABLE_SEP_RE.match(line):
             continue
         if line.count("|") >= 2:
@@ -155,9 +162,13 @@ def clean_markdown_lines(text: str) -> list[str]:
         # Reduce common LaTeX styling commands that frequently leak into tokens
         # (e.g. \mathrm{B}, \mathbf{x}). Keep the inner content.
         # NOTE: We intentionally do NOT strip Greek macros like \beta, \omega;
-        # those are handled by extractor-side gates to preserve tests and traceability.
+        # those are handled by extractor-side gates to preserve tests and
+        # traceability.
         line = re.sub(
-            r"\\(?:mathrm|mathbf|boldsymbol|mathcal|mathit|mathsf|text)\s*\{([^{}]*)\}",
+            (
+                r"\\(?:mathrm|mathbf|boldsymbol|mathcal|mathit|mathsf|text)"
+                r"\s*\{([^{}]*)\}"
+            ),
             lambda m: m.group(1),
             line,
         )
@@ -183,7 +194,8 @@ def read_text_file(path: Path, max_bytes: int = 10_000_000) -> str:
         data = data[:max_bytes]
 
     # Prefer strict decoding so we do not silently drop bytes.
-    # For external corpora, we fall back to replacement to keep the pipeline running,
+    # For external corpora, we fall back to replacement to keep the
+    # pipeline running,
     # but we always emit a warning so the user can fix the source encoding.
     try:
         return data.decode("utf-8")

@@ -30,12 +30,15 @@ HYPHEN_TERM_RE = re.compile(r"\b[A-Za-z0-9]{1,12}(?:-[A-Za-z0-9]{1,12})+\b")
 MATERIAL_FORMULA_RE = re.compile(r"\b[A-Z][a-z]?(?:\d+)(?:[A-Z][a-z]?\d+)*\b")
 SLASH_MIX_RE = re.compile(r"\b[A-Za-z]{1,6}\/[A-Za-z]{1,6}\b")
 
-# Lowercase English word tokens (used to capture phrase components like neutral/beam/injection).
+# Lowercase English word tokens (used to capture phrase components like
+# neutral/beam/injection).
 # We keep this conservative to avoid swamping candidates with generic prose.
 EN_WORD_RE = re.compile(r"\b[a-z]{3,24}\b")
 
-# LaTeX / math noise tokens that are rarely meaningful as terminology candidates.
-# These can leak from PDF->MD conversion (sometimes losing the leading backslash).
+# LaTeX / math noise tokens that are rarely meaningful as terminology
+# candidates.
+# These can leak from PDF->MD conversion (sometimes losing the leading
+# backslash).
 LATEX_NOISE_EN_WORDS: set[str] = {
     "mathrm",
     "mathbf",
@@ -54,7 +57,8 @@ LATEX_NOISE_EN_WORDS: set[str] = {
 }
 
 # Minimal built-in stopwords for the EN_WORD_RE path only.
-# This is intentionally small; a full stopword list should live in terms/stopwords_en.txt
+# This is intentionally small; a full stopword list should live in
+# terms/stopwords_en.txt
 # and be applied via --en-stopwords for filtered outputs.
 COMMON_EN_STOPWORDS: set[str] = {
     "a",
@@ -139,7 +143,8 @@ def _extract_en_phrases_rake(line: str, *, stopwords: set[str]) -> set[str]:
     - Split on stopwords.
     - Keep 2-6 word phrases.
 
-    NOTE: This is for *candidate discovery only* and is intentionally conservative.
+    NOTE: This is for *candidate discovery only* and is intentionally
+    conservative.
     """
 
     # Drop acronyms so they don't get folded into phrases.
@@ -151,7 +156,7 @@ def _extract_en_phrases_rake(line: str, *, stopwords: set[str]) -> set[str]:
     for m in PHRASE_WORD_RE.finditer(s):
         # Ignore LaTeX macro names, robust to stray characters between the
         # backslash and the word.
-        if "\\" in s[max(0, m.start() - 2) : m.start()]:
+        if "\\" in s[max(0, m.start() - 2): m.start()]:
             continue
         w = m.group(0).lower()
         if w in LATEX_NOISE_EN_WORDS:
@@ -168,7 +173,8 @@ def _extract_en_phrases_rake(line: str, *, stopwords: set[str]) -> set[str]:
             continue
         buf.append(w)
         if len(buf) > 6:
-            # If it gets too long, keep the tail window to avoid unbounded phrases.
+            # If it gets too long, keep the tail window to avoid
+            # unbounded phrases.
             buf = buf[-6:]
 
     if 2 <= len(buf) <= 6:
@@ -383,7 +389,10 @@ def extract(
                 en_examples[tok].append(ex)
 
     scanned = 0
-    for md_path in iter_markdown_files(source_root, exclude_globs=exclude_globs or None):
+    for md_path in iter_markdown_files(
+        source_root,
+        exclude_globs=exclude_globs or None,
+    ):
         if max_files is not None and scanned >= max_files:
             break
         scanned += 1
@@ -530,10 +539,11 @@ def extract(
                 low = line.lower()
                 for m in EN_WORD_RE.finditer(low):
                     w = m.group(0)
-                    # LaTeX macro name like "\\omega". Be robust to stray/invisible
+                    # LaTeX macro name like "\\omega". Be robust to
+                    # stray/invisible
                     # characters between the backslash and the macro name by
                     # checking a small lookback window.
-                    if "\\" in low[max(0, m.start() - 2) : m.start()]:
+                    if "\\" in low[max(0, m.start() - 2): m.start()]:
                         continue
                     if w in LATEX_NOISE_EN_WORDS:
                         continue
@@ -622,8 +632,16 @@ def extract(
                 "en_counts": dict(file_en_counts),
                 "zh_examples": file_zh_examples,
                 "en_examples": file_en_examples,
-                "en_phrase_counts": dict(file_en_phrase_counts) if want_en_phrases else {},
-                "en_phrase_examples": file_en_phrase_examples if want_en_phrases else {},
+                "en_phrase_counts": (
+                    dict(file_en_phrase_counts)
+                    if want_en_phrases
+                    else {}
+                ),
+                "en_phrase_examples": (
+                    file_en_phrase_examples
+                    if want_en_phrases
+                    else {}
+                ),
             }
             result_path.write_text(
                 json.dumps(payload, ensure_ascii=False, indent=2),
@@ -665,7 +683,10 @@ def extract(
             f.write("term\tcount\texamples\tfiles\n")
             written = 0
             # Stable ordering: count desc, then term asc.
-            for term, cnt in sorted(counts.items(), key=lambda kv: (-kv[1], kv[0])):
+            for term, cnt in sorted(
+                counts.items(),
+                key=lambda kv: (-kv[1], kv[0]),
+            ):
                 if stopwords is not None and term in stopwords:
                     continue
                 if min_count is not None and cnt < min_count:
@@ -895,7 +916,8 @@ def main() -> None:
         default="off",
         choices=["off", "rake"],
         help=(
-            "Optional English phrase discovery mode (writes candidates_en_phrases.tsv). "
+            "Optional English phrase discovery mode "
+            "(writes candidates_en_phrases.tsv). "
             "Default: off"
         ),
     )
@@ -960,7 +982,9 @@ def main() -> None:
     elif isinstance(cfg_ex, str) and cfg_ex.strip():
         exclude_globs.append(cfg_ex.strip())
 
-    exclude_globs.extend([str(x) for x in (args.exclude_glob or []) if str(x).strip()])
+    exclude_globs.extend(
+        [str(x) for x in (args.exclude_glob or []) if str(x).strip()]
+    )
 
     cache_dir = Path(args.cache_dir).expanduser() if args.cache_dir else None
 

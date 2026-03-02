@@ -23,6 +23,19 @@
 
 ### Fixed
 
+## v2026.03.02
+
+### Changed
+
+- 纯风格层清理：批量修复 `pipeline/` 与 `tests/` 中的行宽/格式噪音（仅重排与折行，不改变运行行为）。
+- 文档更新：`README.md` 中 release 示例 tag 更新为 `v2026.03.02`。
+
+### Fixed
+
+- 解释器一致性：`pipeline.generate_dict_yaml`、`pipeline.rime_export`、`pipeline.rime_import_safe` 的子进程调用统一使用当前解释器（`sys.executable`），避免环境漂移。
+- Rime 回滚健壮性：`pipeline.rime_import_safe` 在目标路径类型漂移（文件/目录互换）场景下可稳定恢复备份。
+- `pipeline.review_pack` 返回类型收紧为 `TypedDict`，消除 `summary['counts'][...]` 的静态类型噪音。
+
 ## v2026.02.11.2
 
 ### Added

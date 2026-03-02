@@ -16,9 +16,18 @@ def test_extract_respects_exclude_globs(tmp_path: Path) -> None:
     (corpus_root / "a.md").write_text("ITER tokamak\n", encoding="utf-8")
 
     # Excluded files contain a unique token that should not appear.
-    (corpus_root / "b.qa_report.md").write_text("ZZZ should be excluded\n", encoding="utf-8")
-    (corpus_root / "c.autofix.md").write_text("YYY should be excluded\n", encoding="utf-8")
-    (corpus_root / "d_debug.md").write_text("XXX should be excluded\n", encoding="utf-8")
+    (corpus_root / "b.qa_report.md").write_text(
+        "ZZZ should be excluded\n",
+        encoding="utf-8",
+    )
+    (corpus_root / "c.autofix.md").write_text(
+        "YYY should be excluded\n",
+        encoding="utf-8",
+    )
+    (corpus_root / "d_debug.md").write_text(
+        "XXX should be excluded\n",
+        encoding="utf-8",
+    )
 
     out_dir = tmp_path / "artifacts"
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -55,17 +64,21 @@ def test_extract_respects_exclude_globs(tmp_path: Path) -> None:
     assert "XXX\t" not in en
 
 
-def test_extract_does_not_harvest_latex_macro_names_as_en_words(tmp_path: Path) -> None:
+def test_extract_does_not_harvest_latex_macro_names_as_en_words(
+    tmp_path: Path,
+) -> None:
     repo_root = Path(__file__).resolve().parents[1]
 
     corpus_root = tmp_path / "corpus"
     corpus_root.mkdir(parents=True, exist_ok=True)
 
-    # Include a technical token (ITER) so the extractor harvests lowercase words.
+    # Include a technical token (ITER) so the extractor harvests
+    # lowercase words.
     # Include LaTeX macros that should not leak into EN candidates.
     (corpus_root / "a.md").write_text(
-        # NOTE: PDF->MD conversion sometimes drops the leading backslash, leaving
-        # bare macro names in the text (e.g. 'textrm'). Those should be filtered
+        # NOTE: PDF->MD conversion sometimes drops the leading
+        # backslash, leaving bare macro names in the text
+        # (e.g. 'textrm'). Those should be filtered
         # as noise as well.
         "ITER plasma $\\omega$ $\\theta$ $\\phi_{\\mathrm{0}}$ textrm M/m\n",
         encoding="utf-8",
