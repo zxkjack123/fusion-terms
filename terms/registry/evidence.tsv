@@ -515,3 +515,11 @@ waste-heat-recovery	internal:bop:waste-heat-recovery			2026-03-16
 electrical-grid-connection	internal:bop:electrical-grid-connection			2026-03-16
 plant-layout	internal:bop:plant-layout			2026-03-16
 decommissioning	internal:bop:decommissioning			2026-03-16
+deuterium	internal:base:deuterium			2026-03-16
+tritium	internal:base:tritium			2026-03-16
+plasma	internal:base:plasma			2026-03-16
+superconducting-magnet	internal:base:superconducting-magnet			2026-03-16
+radioactive-waste	internal:base:radioactive-waste			2026-03-16
+fishbone-instability	internal:base:fishbone-instability			2026-03-16
+poloidal-field	internal:base:poloidal-field			2026-03-16
+toroidal-field	internal:base:toroidal-field			2026-03-16

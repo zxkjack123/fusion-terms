@@ -1,0 +1,62 @@
+# alias	preferred	status	lang	note
+Bremstrahlung	bremsstrahlung	forbidden	en	capitalised misspelling
+H Mode	H-mode	deprecated	en	use H-mode (hyphenated)
+H mode	H-mode	deprecated	en	use H-mode (hyphenated)
+Internation Thermonuclear Experimental Reactor	ITER	forbidden	en	misspelling: Internation → International
+International Thermonuclear Experimental Research	ITER	forbidden	en	ITER = ...Reactor, not Research
+L Mode	L-mode	deprecated	en	use L-mode (hyphenated)
+L mode	L-mode	deprecated	en	use L-mode (hyphenated)
+Langmuire probe	Langmuir probe	forbidden	en	misspelling of Langmuir probe
+Stellerator	stellarator	forbidden	en	capitalised misspelling
+T retention	tritium retention	deprecated	en	shorthand: use full term
+Tokomak	tokamak	forbidden	en	capitalised misspelling
+Trittium	tritium	forbidden	en	capitalised misspelling
+beta N	beta_N	deprecated	en	use β_N or beta_N
+betaN	beta_N	deprecated	en	use β_N or beta_N
+brehmsstrahlung	bremsstrahlung	forbidden	en	misspelling (h before m)
+bremstrahlung	bremsstrahlung	forbidden	en	missing s in bremsstrahlung
+deutrium	deuterium	forbidden	en	common misspelling of deuterium (missing e)
+disrupiton	disruption	forbidden	en	transposition misspelling
+disrution	disruption	forbidden	en	common misspelling (missing p)
+divertor plate	divertor	deprecated	en	prefer divertor target or divertor
+h mode	H-mode	deprecated	en	use H-mode (hyphenated)
+high confinement mode	H-mode	deprecated	en	prefer H-mode
+l mode	L-mode	deprecated	en	use L-mode (hyphenated)
+low confinement mode	L-mode	deprecated	en	prefer L-mode
+magneto-hydrodynamics	magnetohydrodynamics	deprecated	en	no hyphen in magnetohydrodynamics
+magnetohydro-dynamics	magnetohydrodynamics	deprecated	en	no hyphen in magnetohydrodynamics
+neutral-beam injection	neutral beam injection	deprecated	en	style: prefer space-separated phrase
+q 95	q95	deprecated	en	no space in q95
+q-95	q95	deprecated	en	no hyphen in q95
+scrap-off layer	scrape-off layer	forbidden	en	misspelling of scrape-off layer
+scrape off layer	scrape-off layer	deprecated	en	style: use hyphenated scrape-off layer
+scrapeoff layer	scrape-off layer	deprecated	en	style: needs hyphen scrape-off layer
+stellerador	stellarator	forbidden	en	rare misspelling
+stellerator	stellarator	forbidden	en	common misspelling of stellarator
+tau E	tau_E	deprecated	en	use τ_E or tau_E
+tauE	tau_E	deprecated	en	use τ_E or tau_E
+tokamac	tokamak	forbidden	en	rare misspelling
+tokomak	tokamak	forbidden	en	common misspelling of tokamak
+trittium	tritium	forbidden	en	double-t misspelling
+中性束注入	中性粒子束注入	deprecated	zh	标准为"中性粒子束注入"
+低杂波驱动	低杂波电流驱动	deprecated	zh	标准为"低杂波电流驱动"
+冷却事故	失冷事故	deprecated	zh	规范为"失冷事故"(LOCA)
+包皮层	包层	forbidden	zh	错误用词，应为"包层"
+失去冷却剂事故	失冷事故	deprecated	zh	冗长，规范为"失冷事故"
+失去流量事故	失流事故	deprecated	zh	冗长，规范为"失流事故"
+撕裂模式	撕裂模	deprecated	zh	非标准，应为"撕裂模"
+放射性废料	放射性废物	deprecated	zh	规范为"放射性废物"
+新经典撕裂模式	新经典撕裂模	deprecated	zh	非标准，应为"新经典撕裂模"
+核废料	放射性废物	deprecated	zh	应使用"放射性废物"或具体分类
+环型磁约束	托卡马克	deprecated	zh	不规范，应使用具体装置类型名
+甲种粒子	α粒子	deprecated	zh	标准为"α粒子"
+电子回旋加热法	电子回旋共振加热	deprecated	zh	标准为"电子回旋共振加热"，"法"字多余
+电浆	等离子体	deprecated	zh	台湾用语，大陆标准为"等离子体"
+磁流体动力学	磁流体力学	deprecated	zh	规范为"磁流体力学"(无"动"字)
+离子回旋加热法	离子回旋共振加热	deprecated	zh	标准为"离子回旋共振加热"，"法"字多余
+等离子	等离子体	deprecated	zh	应使用全称"等离子体"
+等离子体壁	第一壁	deprecated	zh	标准为"第一壁"
+超导磁石	超导磁体	forbidden	zh	错误用词，应为"超导磁体"
+超导磁铁	超导磁体	deprecated	zh	规范为"超导磁体"
+边界局部模	边缘局域模	deprecated	zh	应为"边缘局域模"(ELM)
+铍石	铍	forbidden	zh	错误用词，应为"铍"(Be)

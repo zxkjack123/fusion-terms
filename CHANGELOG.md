@@ -23,6 +23,36 @@
 
 ### Fixed
 
+## v2026.03.16.2
+
+### Fixed
+
+- **substitution 规则质量修订**：响应 de-ai-fier 下游反馈，全面复核并修正 v2026.03.16.1 中语义不等价的替换规则。
+  - 根因：deprecated 别名被映射到了不相关的 concept_id，导出管线解析 preferred form 时产生语义错误的替换建议。
+  - 新增 8 个基础概念（deuterium, tritium, plasma, superconducting-magnet, radioactive-waste, fishbone-instability, poloidal-field, toroidal-field）作为 substitution 规则的正确锚点。
+  - 修正 10 条语义不等价替换：
+    - deutrium → ~~fusion reactivity~~ → deuterium
+    - trittium / Trittium → ~~tritium retention~~ → tritium
+    - 电浆 / 等离子 → ~~等离子体约束~~ → 等离子体
+    - 超导磁铁 / 超导磁石 → ~~超导接头~~ → 超导磁体
+    - 放射性废料 / 核废料 → ~~废物分级~~ → 放射性废物
+    - 中性束注入 → ~~NBI~~ → 中性粒子束注入
+    - 铍石 → ~~Be~~ → 铍
+  - 移除 7 条过于宽泛或概念不等价的规则：
+    - 扰动→破裂（泛词，非等同 disruption）
+    - 中性束→NBI（zh→en 缩写，过宽）
+    - 鱼骨模→高能粒子（概念完全不等）
+    - superconducter/supraconductor→superconducting magnet（材料→装置）
+    - 极向场/环向场→线圈名（字段→部件）
+  - 修复 neutral-beam-injection 概念缺少 zh preferred 的问题（添加"中性粒子束注入"）。
+  - 修复 beryllium 概念缺少 zh preferred 的问题（添加"铍"）。
+  - 修复重复的 deprecated 条目（neutral-beam injection 出现两次）。
+  - 最终规则集：61 条 substitution（全部为严格等价替换或拼写/格式修正）。
+
+### Changed
+
+- Registry: 463 concepts (+8 base), 1489 aliases, 463 evidence rows。
+
 ## v2026.03.16.1
 
 ### Added

@@ -528,3 +528,13 @@ waste-heat-recovery	concept	余热回收	waste heat recovery		active	Recovering 
 electrical-grid-connection	concept	电网接入	electrical grid connection		active	Interface between fusion plant and external power grid
 plant-layout	concept	电站布局	plant layout		active	Physical arrangement and spatial design of plant buildings and systems
 decommissioning	concept	退役	decommissioning		active	Safe dismantling and cleanup of a fusion facility at end of life
+
+# ---- Base concepts (supplementary, for substitution rule anchoring)
+deuterium	concept	氘	deuterium	D	active	Hydrogen isotope with one neutron; primary fusion fuel component
+tritium	concept	氚	tritium	T	active	Hydrogen isotope with two neutrons; radioactive fusion fuel component
+plasma	concept	等离子体	plasma		active	Ionised gas state; the fourth state of matter
+superconducting-magnet	concept	超导磁体	superconducting magnet		active	Magnet wound from superconducting wire operating below critical temperature
+radioactive-waste	concept	放射性废物	radioactive waste		active	Waste material containing radioactive isotopes requiring controlled disposal
+fishbone-instability	concept	鱼骨模不稳定性	fishbone instability		active	Fast-ion driven internal kink instability with fishbone-shaped magnetic signature
+poloidal-field	concept	极向磁场	poloidal field		active	Magnetic field component in the poloidal (short-way-around) direction of a torus
+toroidal-field	concept	环向磁场	toroidal field		active	Magnetic field component in the toroidal (long-way-around) direction of a torus
