@@ -1887,3 +1887,86 @@ plant-layout	plant-layout	en	alias	IME token-only form
 
 退役	decommissioning	zh	preferred	preferred zh
 decommissioning	decommissioning	en	preferred	preferred en
+
+# ==============================================================================
+# Deprecated / Forbidden aliases — drive Vale substitution rules
+# Pattern: alias → (concept_id, lang, kind=deprecated|forbidden, comment)
+# The export pipeline maps each to the same concept_id's preferred form.
+# ==============================================================================
+
+# ---- Common English misspellings ----
+tokomak	tokamak	en	forbidden	common misspelling of tokamak
+Tokomak	tokamak	en	forbidden	capitalised misspelling
+tokamac	tokamak	en	forbidden	rare misspelling
+stellerator	stellarator	en	forbidden	common misspelling of stellarator
+stellerador	stellarator	en	forbidden	rare misspelling
+Stellerator	stellarator	en	forbidden	capitalised misspelling
+deutrium	fusion-reactivity	en	forbidden	common misspelling of deuterium (missing e)
+trittium	tritium-retention	en	forbidden	double-t misspelling
+Trittium	tritium-retention	en	forbidden	capitalised misspelling
+divertor plate	divertor	en	deprecated	prefer divertor target or divertor
+disrution	disruption	en	forbidden	common misspelling (missing p)
+disrupiton	disruption	en	forbidden	transposition misspelling
+bremstrahlung	bremsstrahlung	en	forbidden	missing s in bremsstrahlung
+brehmsstrahlung	bremsstrahlung	en	forbidden	misspelling (h before m)
+Bremstrahlung	bremsstrahlung	en	forbidden	capitalised misspelling
+Langmuire	langmuir-probe	en	forbidden	misspelling of Langmuir
+scrape off layer	scrape-off-layer	en	deprecated	style: use hyphenated scrape-off layer
+superconducter	high-temperature-superconductor	en	forbidden	misspelling (er → or); use superconductor
+supraconductor	high-temperature-superconductor	en	forbidden	non-standard form; use superconductor
+
+# ---- Deprecated English style forms (hyphenation / spacing) ----
+neutral-beam injection	neutral-beam-injection	en	deprecated	style: prefer space-separated phrase
+magnetohydro-dynamics	magnetohydrodynamics	en	deprecated	no hyphen in magnetohydrodynamics
+magneto-hydrodynamics	magnetohydrodynamics	en	deprecated	no hyphen in magnetohydrodynamics
+scrapeoff layer	scrape-off-layer	en	deprecated	style: needs hyphen scrape-off layer
+scrap-off layer	scrape-off-layer	en	forbidden	misspelling of scrape-off layer
+
+# ---- Deprecated informal / outdated English terms ----
+H mode	h-mode	en	deprecated	use H-mode (hyphenated)
+h mode	h-mode	en	deprecated	use H-mode (hyphenated)
+L mode	l-mode	en	deprecated	use L-mode (hyphenated)
+l mode	l-mode	en	deprecated	use L-mode (hyphenated)
+H Mode	h-mode	en	deprecated	use H-mode (hyphenated)
+L Mode	l-mode	en	deprecated	use L-mode (hyphenated)
+high confinement mode	h-mode	en	deprecated	prefer H-mode
+low confinement mode	l-mode	en	deprecated	prefer L-mode
+q 95	q95	en	deprecated	no space in q95
+q-95	q95	en	deprecated	no hyphen in q95
+beta N	beta-n	en	deprecated	use β_N or beta_N
+betaN	beta-n	en	deprecated	use β_N or beta_N
+tau E	tau-e	en	deprecated	use τ_E or tau_E
+tauE	tau-e	en	deprecated	use τ_E or tau_E
+
+# ---- Deprecated Chinese forms (旧称/非规范) ----
+等离子	plasma-confinement	zh	deprecated	应使用全称"等离子体"
+电浆	plasma-confinement	zh	deprecated	台湾用语，大陆标准为"等离子体"
+磁流体动力学	magnetohydrodynamics	zh	deprecated	规范为"磁流体力学"(无"动"字)
+超导磁铁	superconducting-joint	zh	deprecated	规范为"超导磁体"
+超导磁石	superconducting-joint	zh	forbidden	错误用词，应为"超导磁体"
+中性束注入	neutral-beam-injection	zh	deprecated	标准为"中性粒子束注入"或NBI
+中性束	neutral-beam-injection	zh	deprecated	缩略不规范，应写"中性粒子束注入"
+离子回旋加热法	ion-cyclotron-resonance-heating	zh	deprecated	标准为"离子回旋共振加热"，"法"字多余
+电子回旋加热法	electron-cyclotron-resonance-heating	zh	deprecated	标准为"电子回旋共振加热"，"法"字多余
+低杂波驱动	lower-hybrid-current-drive	zh	deprecated	标准为"低杂波电流驱动"
+环型磁约束	tokamak	zh	deprecated	不规范，应使用具体装置类型名
+扰动	disruption	zh	deprecated	规范为"破裂"(disruption语境)
+冷却事故	loss-of-coolant-accident	zh	deprecated	规范为"失冷事故"(LOCA)
+失去冷却剂事故	loss-of-coolant-accident	zh	deprecated	冗长，规范为"失冷事故"
+失去流量事故	loss-of-flow-accident	zh	deprecated	冗长，规范为"失流事故"
+放射性废料	waste-classification	zh	deprecated	规范为"放射性废物"
+核废料	waste-classification	zh	deprecated	应使用"放射性废物"或具体分类
+极向场	poloidal-field-coil	zh	deprecated	宜用"极向磁场"
+环向场	toroidal-field-coil	zh	deprecated	宜用"环向磁场"
+鱼骨模	energetic-particle	zh	deprecated	标准为"鱼骨模不稳定性"
+撕裂模式	tearing-mode	zh	deprecated	非标准，应为"撕裂模"
+新经典撕裂模式	neoclassical-tearing-mode	zh	deprecated	非标准，应为"新经典撕裂模"
+边界局部模	edge-localized-mode	zh	deprecated	应为"边缘局域模"(ELM)
+包皮层	blanket	zh	forbidden	错误用词，应为"包层"
+等离子体壁	first-wall	zh	deprecated	标准为"第一壁"
+甲种粒子	alpha-particle	zh	deprecated	标准为"α粒子"
+铍石	beryllium	zh	forbidden	错误用词，应为"铍"(Be)
+
+# ---- Forbidden wrong acronym expansions ----
+International Thermonuclear Experimental Research	iter	en	forbidden	ITER = ...Reactor, not Research
+Internation Thermonuclear Experimental Reactor	iter	en	forbidden	misspelling: Internation → International

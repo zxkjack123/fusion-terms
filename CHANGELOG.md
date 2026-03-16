@@ -23,6 +23,17 @@
 
 ### Fixed
 
+## v2026.03.16.1
+
+### Added
+
+- 术语纠错规则大幅扩充：新增 60+ deprecated/forbidden 别名，驱动 Vale substitution 规则（2 → 68 条）。
+  - 英文常见拼写错误：tokomak, stellerator, bremstrahlung, disrution, Langmuire, trittium 等
+  - 英文风格规范：H mode → H-mode, magneto-hydrodynamics → magnetohydrodynamics, scrapeoff → scrape-off 等
+  - 中文非规范用词：等离子→等离子体, 电浆→等离子体, 超导磁铁→超导磁体, 中性束→中性粒子束注入, 边界局域模→边缘局域模 等
+  - ITER 全称拼写错误检测（Research→Reactor, Internation→International）
+- de-ai-fier 已同步更新：`fusion_terms_substitute.yml` 包含 68 条 swap 规则。
+
 ## v2026.03.16
 
 ### Added
