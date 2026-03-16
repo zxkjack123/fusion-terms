@@ -43,3 +43,488 @@ public-exposure	metric	公众照射	public exposure		active	Public exposure
 effective-dose	metric	有效剂量	effective dose		active	Effective dose
 equivalent-dose	metric	当量剂量	equivalent dose		active	Equivalent dose
 derived-air-concentration	limit	导出空气浓度	derived air concentration	DAC	active	Derived air concentration
+
+# ---- Plasma physics (等离子体物理)
+plasma-confinement	concept	等离子体约束	plasma confinement		active	General concept of confining plasma
+magnetic-confinement	concept	磁约束	magnetic confinement		active	Confinement via magnetic fields
+plasma-equilibrium	concept	等离子体平衡	plasma equilibrium		active	MHD equilibrium of confined plasma
+magnetohydrodynamics	concept	磁流体力学	magnetohydrodynamics	MHD	active	Fluid description of plasma in magnetic fields
+plasma-instability	concept	等离子体不稳定性	plasma instability		active	General instability in magnetically confined plasma
+edge-localized-mode	concept	边缘局域模	edge localized mode	ELM	active	Periodic MHD instability at plasma edge
+disruption	concept	破裂	disruption		active	Sudden loss of plasma confinement
+runaway-electron	concept	逃逸电子	runaway electron		active	Electrons accelerated to relativistic energy during disruptions
+plasma-current	metric	等离子体电流	plasma current	Ip	active	Toroidal current in the plasma
+bootstrap-current	concept	自举电流	bootstrap current		active	Self-generated current from pressure gradient
+ohmic-heating	method	欧姆加热	ohmic heating		active	Plasma heating via resistive dissipation
+electron-cyclotron-resonance-heating	method	电子回旋共振加热	electron cyclotron resonance heating	ECRH	active	Heating via electron cyclotron waves
+ion-cyclotron-resonance-heating	method	离子回旋共振加热	ion cyclotron resonance heating	ICRH	active	Heating via ion cyclotron waves
+lower-hybrid-current-drive	method	低杂波电流驱动	lower hybrid current drive	LHCD	active	Non-inductive current drive via lower hybrid waves
+h-mode	concept	高约束模	H-mode		active	High confinement mode
+l-mode	concept	低约束模	L-mode		active	Low confinement mode
+pedestal	concept	台基	pedestal		active	Steep gradient region at plasma edge in H-mode
+scrape-off-layer	concept	刮削层	scrape-off layer	SOL	active	Open magnetic field line region outside separatrix
+separatrix	concept	分界面	separatrix		active	Last closed flux surface boundary
+x-point	concept	X点	X-point		active	Null point of poloidal magnetic field
+magnetic-island	concept	磁岛	magnetic island		active	Island structure from tearing mode reconnection
+neoclassical-tearing-mode	concept	新经典撕裂模	neoclassical tearing mode	NTM	active	Pressure-driven tearing mode instability
+sawtooth	concept	锯齿	sawtooth		active	Core MHD relaxation oscillation
+plasma-density	metric	等离子体密度	plasma density		active	Number density of plasma particles
+plasma-temperature	metric	等离子体温度	plasma temperature		active	Kinetic temperature of plasma species
+greenwald-density	metric	格林沃尔德密度	Greenwald density		active	Empirical density limit in tokamaks
+poloidal-beta	metric	极向比压	poloidal beta	beta_p	active	Ratio of plasma pressure to poloidal magnetic pressure
+plasma-shaping	concept	等离子体成形	plasma shaping		active	Control of plasma cross-section geometry (elongation, triangularity)
+vertical-displacement-event	concept	垂直位移事件	vertical displacement event	VDE	active	Loss of vertical stability leading to disruption
+
+# ---- Plasma-wall interaction (等离子体与壁面相互作用)
+plasma-facing-component	concept	面向等离子体部件	plasma-facing component	PFC	active	Component directly exposed to plasma
+first-wall	concept	第一壁	first wall	FW	active	Inner wall surface of vacuum vessel facing plasma
+divertor	concept	偏滤器	divertor		active	Component for exhaust of heat and particles
+sputtering	concept	溅射	sputtering		active	Ejection of surface atoms by energetic particle impact
+erosion	concept	侵蚀	erosion		active	Material removal from plasma-facing surfaces
+redeposition	concept	再沉积	redeposition		active	Redeposition of eroded material on surfaces
+fuel-retention	metric	燃料滞留	fuel retention		active	Retention of hydrogen isotopes in PFC materials
+heat-flux	metric	热流密度	heat flux		active	Power per unit area on plasma-facing surfaces
+heat-load	metric	热负荷	heat load		active	Integrated thermal power on PFC components
+plasma-detachment	concept	等离子体脱靶	plasma detachment		active	Reduction of heat flux to divertor via volumetric losses
+impurity-seeding	method	杂质注入	impurity seeding		active	Deliberate injection of impurities for radiative cooling
+limiter	concept	限制器	limiter		active	Physical structure defining plasma boundary
+blanket	concept	包层	blanket		active	Neutron absorber and tritium breeding structure
+breeding-blanket	concept	产氚包层	breeding blanket		active	Blanket module designed for tritium self-sufficiency
+tritium-breeding-ratio	metric	氚增殖比	tritium breeding ratio	TBR	active	Ratio of tritium produced to tritium consumed
+carbon-fiber-composite	material	碳纤维复合材料	carbon fiber composite	CFC	active	Legacy PFC material (JET, etc.)
+plasma-surface-interaction	concept	等离子体表面相互作用	plasma-surface interaction	PSI	active	General term for plasma-material interaction processes
+blistering	concept	起泡	blistering		active	Sub-surface gas accumulation causing surface deformation
+
+# ---- Plasma diagnostics (等离子体诊断)
+interferometry	diagnostic	干涉仪	interferometry		active	Plasma density measurement via refractive index
+langmuir-probe	diagnostic	朗缪尔探针	Langmuir probe		active	Electrostatic probe for local plasma parameters
+bolometer	diagnostic	辐射计	bolometer		active	Broadband radiation power measurement
+electron-cyclotron-emission	diagnostic	电子回旋辐射	electron cyclotron emission	ECE	active	Electron temperature diagnostic via cyclotron radiation
+charge-exchange-recombination-spectroscopy	diagnostic	电荷交换复合光谱	charge exchange recombination spectroscopy	CXRS	active	Ion temperature and rotation diagnostic
+soft-x-ray	diagnostic	软X射线	soft X-ray	SXR	active	MHD/impurity diagnostic via soft X-ray emission
+reflectometry	diagnostic	反射仪	reflectometry		active	Plasma density profile via microwave reflection
+magnetic-diagnostics	diagnostic	磁诊断	magnetic diagnostics		active	Measurement of plasma current, position, shape
+neutron-diagnostics	diagnostic	中子诊断	neutron diagnostics		active	Fusion power / neutron flux measurement
+spectroscopy	diagnostic	光谱诊断	spectroscopy		active	General optical emission / absorption diagnostic
+motional-stark-effect	diagnostic	运动斯塔克效应	motional Stark effect	MSE	active	q-profile (current density) diagnostic
+far-infrared-polarimetry	diagnostic	远红外偏振仪	far-infrared polarimetry	FIR	active	Faraday rotation measurement for current profile
+
+# ---- Superconducting magnets (超导磁体)
+nbti	material	铌钛	NbTi		active	Low-temperature superconductor NbTi
+rebco	material	稀土钡铜氧化物	REBCO		active	Rare-earth barium copper oxide HTS tape
+high-temperature-superconductor	concept	高温超导体	high-temperature superconductor	HTS	active	Superconductor with Tc above 30 K (e.g. REBCO, YBCO, Bi-2212)
+low-temperature-superconductor	concept	低温超导体	low-temperature superconductor	LTS	active	Superconductor with Tc below 30 K (e.g. NbTi, Nb3Sn)
+toroidal-field-coil	concept	纵场线圈	toroidal field coil	TFC	active	Coil producing toroidal magnetic field
+poloidal-field-coil	concept	极向场线圈	poloidal field coil	PFC-coil	active	Coil producing poloidal magnetic field (disambig from PFC = plasma-facing component)
+central-solenoid	concept	中心螺管	central solenoid	CS	active	Solenoid for plasma current induction
+quench	concept	失超	quench		active	Sudden loss of superconductivity
+quench-detection	concept	失超检测	quench detection		active	System to detect onset of quench
+quench-protection	concept	失超保护	quench protection		active	System to safely discharge stored magnetic energy
+critical-current	metric	临界电流	critical current	Ic	active	Maximum superconducting current at given T and B
+critical-temperature	metric	临界温度	critical temperature	Tc	active	Temperature above which superconductivity is lost
+critical-magnetic-field	metric	临界磁场	critical magnetic field	Bc	active	Magnetic field above which superconductivity is lost
+cryostat	concept	低温恒温器	cryostat		active	Vacuum vessel maintaining cryogenic temperatures
+cable-in-conduit-conductor	concept	管内电缆导体	cable-in-conduit conductor	CICC	active	Forced-flow cooled superconducting cable design
+magnet-feeder	concept	磁体馈线	magnet feeder		active	Current lead and cryogenic connection system
+superconducting-joint	concept	超导接头	superconducting joint		active	Low-resistance joint between superconducting cables
+cryoplant	system	低温制冷系统	cryoplant		active	Helium refrigeration system for superconducting magnets
+current-lead	concept	电流引线	current lead		active	Conductor connecting room-temperature bus to cryogenic coil
+magnetic-stored-energy	metric	磁储能	magnetic stored energy		active	Energy stored in superconducting magnet system
+
+# ---- Stellarator (仿星器)
+stellarator	device	仿星器	stellarator		active	Non-axisymmetric steady-state magnetic confinement device
+modular-coil	concept	模块化线圈	modular coil		active	Non-planar coil producing stellarator rotational transform
+rotational-transform	metric	旋转变换	rotational transform	iota	active	Inverse of safety factor q; characterizes field line winding
+magnetic-well	concept	磁阱	magnetic well		active	Region of decreasing average B; stabilizes interchange modes
+neoclassical-transport	concept	新经典输运	neoclassical transport		active	Collisional transport in toroidal geometry
+stellarator-optimization	concept	仿星器优化	stellarator optimization		active	Numerical optimization of 3-D magnetic geometry
+quasi-symmetry	concept	准对称	quasi-symmetry		active	Hidden approximate symmetry in |B| on flux surfaces
+quasi-helical-symmetry	concept	准螺旋对称	quasi-helical symmetry	QHS	active	Quasi-symmetry along helical direction
+quasi-axisymmetry	concept	准轴对称	quasi-axisymmetry	QA	active	Quasi-symmetry along toroidal direction
+quasi-isodynamic	concept	准等动力	quasi-isodynamic	QI	active	Optimization target: nearly omnigenous (minimal radial drift)
+wendelstein-7x	device	W7-X	Wendelstein 7-X	W7-X	active	Superconducting optimized stellarator at IPP Greifswald
+helically-symmetric-experiment	device	HSX	Helically Symmetric Experiment	HSX	active	Quasi-helically symmetric stellarator at UW-Madison
+large-helical-device	device	大型螺旋装置	Large Helical Device	LHD	active	Heliotron-type stellarator at NIFS Japan
+island-divertor	concept	岛偏滤器	island divertor		active	Divertor concept using magnetic island topology (W7-X)
+bootstrap-current-optimization	concept	自举电流优化	bootstrap current optimization		active	Minimizing bootstrap current in stellarator configurations
+coil-complexity	metric	线圈复杂度	coil complexity		active	Measure of coil geometric complexity in stellarator design
+
+# ---- Reversed field pinch (反场箍缩)
+reversed-field-pinch	device	反场箍缩	reversed field pinch	RFP	active	Toroidal confinement with reversed toroidal field at edge
+rfx-mod	device	RFX-mod	RFX-mod		active	Largest reversed field pinch experiment (Padova, Italy)
+dynamo-effect	concept	发电机效应	dynamo effect		active	Self-organization sustaining reversed-field equilibrium
+single-helical-state	concept	单螺旋态	single helical state	SHAx	active	Self-organized quasi-helical equilibrium in RFP
+pulsed-poloidal-current-drive	method	脉冲极向电流驱动	pulsed poloidal current drive	PPCD	active	Active fluctuation suppression by current profile control
+tearing-mode	concept	撕裂模	tearing mode		active	Resistive MHD instability causing magnetic reconnection
+resistive-wall-mode	concept	电阻壁模	resistive wall mode	RWM	active	Slowly growing external kink stabilized by conducting wall
+
+# ---- Field-reversed configuration (场反位形)
+field-reversed-configuration	device	场反位形	field-reversed configuration	FRC	active	Compact toroidal plasma with zero/negligible toroidal field
+theta-pinch	concept	θ箍缩	theta pinch		active	Cylindrical pinch forming FRC plasma
+compact-toroid	concept	紧凑环	compact toroid	CT	active	Umbrella term for FRC and spheromak
+spheromak	device	球马克	spheromak		active	Compact toroid with both toroidal and poloidal field
+flux-confinement	concept	磁通约束	flux confinement		active	Confinement of poloidal flux within FRC separatrix
+translation	concept	平移	translation		active	Acceleration and merging of FRC plasmoids
+rotational-instability	concept	旋转不稳定性	rotational instability		active	n=2 rotational mode limiting FRC lifetime
+c-2w	device	C-2W	C-2W		active	TAE Technologies advanced beam-driven FRC device (Norman)
+magneto-inertial-fusion	concept	磁化惯性聚变	magneto-inertial fusion	MIF	active	Hybrid approach compressing magnetized target plasma
+
+# ---- Inertial confinement fusion (惯性约束聚变)
+inertial-confinement-fusion	concept	惯性约束聚变	inertial confinement fusion	ICF	active	Fusion via implosion-driven compression and heating
+laser-driven-fusion	concept	激光驱动聚变	laser-driven fusion		active	ICF using high-power lasers as driver
+direct-drive	method	直接驱动	direct drive		active	Laser beams directly illuminate fuel capsule
+indirect-drive	method	间接驱动	indirect drive		active	Laser beams heat hohlraum to produce X-rays for implosion
+hohlraum	concept	黑腔	hohlraum		active	Cylindrical cavity converting laser to X-rays (indirect drive)
+fuel-capsule	concept	靶丸	fuel capsule		active	DT ice/ablator shell target for ICF
+ablator	concept	烧蚀层	ablator		active	Outer capsule layer providing implosion drive
+rayleigh-taylor-instability	concept	瑞利-泰勒不稳定性	Rayleigh-Taylor instability	RTI	active	Hydrodynamic instability at accelerating density interface
+ignition	concept	点火	ignition		active	Self-sustaining thermonuclear burn condition
+lawson-criterion	concept	劳森判据	Lawson criterion		active	Minimum n·τ·T product for fusion energy gain
+energy-gain	metric	能量增益	energy gain	Q	active	Ratio of fusion energy output to input energy
+nif	device	NIF	National Ignition Facility	NIF	active	192-beam laser ICF facility at LLNL
+z-pinch	device	Z箍缩	Z-pinch		active	Magnetically driven ICF / pulsed power approach
+heavy-ion-fusion	concept	重离子聚变	heavy-ion fusion	HIF	active	ICF using heavy-ion beams as driver
+fast-ignition	method	快点火	fast ignition		active	Separate compression and heating using ultra-intense laser
+shock-ignition	method	激波点火	shock ignition		active	Launching strong convergent shock for ignition
+target-fabrication	concept	靶制造	target fabrication		active	Manufacturing precision ICF fuel targets
+cryogenic-target	concept	低温靶	cryogenic target		active	Fuel target with DT ice layer at ~18 K
+laser-plasma-interaction	concept	激光等离子体相互作用	laser-plasma interaction	LPI	active	Energy coupling and parametric instabilities at critical surface
+
+# ---- Other alternative / compact fusion concepts (其他替代/紧凑聚变概念)
+spherical-tokamak	device	球形托卡马克	spherical tokamak	ST	active	Low aspect ratio tokamak (e.g. NSTX, MAST, BEST)
+dense-plasma-focus	device	稠密等离子体焦点	dense plasma focus	DPF	active	Pulsed high-density z-pinch device
+mirror-machine	device	磁镜装置	mirror machine		active	Open-ended magnetic confinement with mirror coils
+magnetic-mirror	concept	磁镜	magnetic mirror		active	Magnetic field topology reflecting charged particles
+tandem-mirror	device	串列磁镜	tandem mirror		active	Mirror with electrostatic end plugs for confinement
+plasma-gun	concept	等离子体枪	plasma gun		active	Device for injecting compact toroids / plasma jets
+muon-catalyzed-fusion	concept	μ子催化聚变	muon-catalyzed fusion		active	Fusion at low temperature mediated by muons replacing electrons
+
+# ---- Proton-boron (p-B11) fusion / ENN (新奥) pathway
+proton-boron-fusion	concept	质子-硼聚变	proton-boron fusion	p-B11	active	Aneutronic fusion reaction p + 11B → 3α
+aneutronic-fusion	concept	无中子聚变	aneutronic fusion		active	Fusion reactions producing no or negligible neutrons
+advanced-fuel	concept	先进燃料	advanced fuel		active	Non-DT fuel cycles (p-B11, D-He3, D-D, etc.)
+coulomb-barrier	concept	库仑势垒	Coulomb barrier		active	Electrostatic energy barrier for nuclear fusion
+fusion-cross-section	metric	聚变截面	fusion cross section		active	Reaction probability as function of energy (σ)
+fusion-reactivity	metric	聚变反应率	fusion reactivity		active	Rate coefficient <σv> for fusion reactions
+alpha-particle	concept	α粒子	alpha particle		active	He-4 nucleus; primary product of p-B11 reaction (3α)
+alpha-channeling	concept	α粒子能量导引	alpha channeling		active	Wave-mediated extraction of alpha particle energy to heat fuel
+bremsstrahlung	concept	韧致辐射	bremsstrahlung		active	Radiation loss from electron deceleration; dominant loss in p-B11
+synchrotron-radiation	concept	同步辐射	synchrotron radiation		active	Radiation from relativistic electrons in magnetic fields
+radiation-loss	metric	辐射损失	radiation loss		active	Power lost via bremsstrahlung, synchrotron, and line radiation
+power-balance	concept	功率平衡	power balance		active	Balance of heating, fusion power, and loss channels
+direct-energy-conversion	concept	直接能量转换	direct energy conversion	DEC	active	Conversion of charged particle kinetic energy to electricity without thermal cycle
+traveling-wave-direct-energy-converter	concept	行波直接能量转换器	traveling wave direct energy converter	TWDEC	active	Specific DEC concept using traveling electromagnetic wave deceleration
+plasma-beta	metric	等离子体比压	plasma beta		active	Ratio of plasma pressure to magnetic pressure (β)
+high-beta	concept	高比压	high beta		active	Plasma regime with β approaching or exceeding unity; required for p-B11
+enn	organization	新奥	ENN		active	ENN Energy Research Institute (新奥能源研究院)
+enn-compact-fusion	device	新奥紧凑聚变装置	ENN compact fusion device		active	ENN's compact FRC/mirror-based p-B11 experimental device series
+rexie	device	REXIE	REXIE		active	ENN rotating-field FRC experiment (Rotating EXperiment for Ions and Electrons)
+kmax	device	KMAX	KMAX		active	ENN compact magnetized plasma experiment
+enn-cst	device	新奥球形托卡马克	ENN compact spherical tokamak	ENN-CST	active	ENN compact spherical tokamak device (EXL-50)
+exl-50	device	EXL-50	EXL-50		active	ENN spherical tokamak; exploratory device for p-B11 path
+rotating-magnetic-field	method	旋转磁场	rotating magnetic field	RMF	active	Current drive method for FRC via externally applied rotating B-field
+odd-parity-rotating-magnetic-field	method	奇宇称旋转磁场	odd-parity rotating magnetic field	RMFo	active	RMF variant with axial field reversal; used in FRC sustainment
+neutral-beam-driven-frc	concept	中性束驱动场反	neutral beam driven FRC		active	Sustaining FRC via tangential neutral beam injection (TAE/ENN approach)
+frc-merging	method	场反并合	FRC merging		active	Formation of high-flux FRC via collision-merging of two plasmoids
+ion-temperature	metric	离子温度	ion temperature	Ti	active	Kinetic temperature of fuel ions; must exceed ~100 keV for p-B11
+electron-temperature	metric	电子温度	electron temperature	Te	active	Kinetic temperature of electrons; radiation loss scales with Te
+hot-ion-mode	concept	热离子模式	hot-ion mode		active	Regime with Ti >> Te; suppresses bremsstrahlung in p-B11
+beam-target-fusion	concept	束靶聚变	beam-target fusion		active	Fusion between energetic beam ions and thermal target plasma
+thermonuclear-fusion	concept	热核聚变	thermonuclear fusion		active	Fusion in thermal plasma (Maxwellian); contrasted with beam-target
+beam-beam-fusion	concept	束束聚变	beam-beam fusion		active	Fusion between two energetic beam ion populations
+non-thermal-plasma	concept	非热平衡等离子体	non-thermal plasma		active	Plasma with non-Maxwellian ion distribution (relevant for p-B11 reactivity)
+spin-polarized-fuel	concept	自旋极化燃料	spin-polarized fuel		active	Nuclear-spin-aligned fuel to enhance p-B11 cross-section (~50% gain)
+magnetic-nozzle	concept	磁喷管	magnetic nozzle		active	Expanding magnetic field geometry for DEC or propulsion exhaust
+dielectric-wall-accelerator	concept	介质壁加速器	dielectric wall accelerator	DWA	active	Compact pulsed ion accelerator concept for beam-driven fusion
+electrostatic-confinement	concept	静电约束	electrostatic confinement		active	Confinement by electrostatic potential well (fusor, polywell)
+plasma-facing-material	concept	面向等离子体材料	plasma-facing material	PFM	active	Wall material selected for compatibility with fusion plasma environment
+
+# ---- Fusion engineering: vacuum & structures (聚变工程：真空与结构)
+vacuum-vessel	concept	真空室	vacuum vessel	VV	active	Primary vacuum boundary and structural component
+thermal-shield	concept	冷屏	thermal shield		active	Radiation shield between cryostat and warm components
+biological-shield	concept	生物屏蔽	biological shield		active	Concrete/steel shield for personnel radiation protection
+remote-handling	concept	遥操作	remote handling	RH	active	Remotely operated maintenance inside activated vessel
+remote-maintenance	concept	遥维护	remote maintenance		active	Maintenance using remote handling equipment in activated zones
+hot-cell	concept	热室	hot cell		active	Shielded facility for handling activated components
+
+# ---- Fusion engineering: tritium systems (氚系统)
+tritium-plant	system	氚工厂	tritium plant		active	Integrated facility for tritium processing and recycling
+permeation	concept	渗透	permeation		active	Diffusion of hydrogen isotopes through solid materials
+detritiation	concept	去氚	detritiation		active	Removal of tritium from gas, water, or solid streams
+tritium-inventory	metric	氚存量	tritium inventory		active	Total tritium quantity in a system or component
+
+# ---- Fusion engineering: breeding materials (增殖材料)
+lithium-lead	material	锂铅	lithium-lead	LiPb	active	Liquid breeder/coolant/neutron multiplier eutectic (Pb-15.7Li)
+lithium-titanate	material	钛酸锂	lithium titanate	Li2TiO3	active	Ceramic breeder pebble material
+lithium-orthosilicate	material	正硅酸锂	lithium orthosilicate	Li4SiO4	active	Ceramic breeder pebble material
+neutron-multiplier	concept	中子倍增剂	neutron multiplier		active	Material (Be, Pb) producing extra neutrons for tritium breeding
+
+# ---- Fusion engineering: structural materials (结构材料)
+rafm-steel	material	低活化铁素体/马氏体钢	RAFM steel	RAFM	active	Reduced-activation ferritic/martensitic steel
+eurofer	material	EUROFER	EUROFER		active	European RAFM reference steel (EUROFER97)
+clf-1	material	CLF-1	CLF-1		active	China Low-activation Ferritic steel (CLAM family)
+clam	material	CLAM	CLAM		active	China Low Activation Martensitic steel
+vanadium-alloy	material	钒合金	vanadium alloy		active	V-4Cr-4Ti class low-activation structural material
+sic-sic-composite	material	碳化硅复合材料	SiC/SiC composite	SiC/SiC	active	Silicon carbide fiber-reinforced SiC matrix composite
+ods-steel	material	氧化物弥散强化钢	ODS steel	ODS	active	Oxide dispersion strengthened ferritic steel
+
+# ---- Fusion engineering: coolant concepts (冷却系统)
+helium-cooled	concept	氦冷	helium-cooled		active	Coolant scheme using high-pressure helium gas
+water-cooled	concept	水冷	water-cooled		active	Coolant scheme using pressurized water
+liquid-metal-coolant	concept	液态金属冷却剂	liquid metal coolant		active	Coolant using liquid metals (Li, LiPb, Sn)
+
+# ---- Fusion engineering: blanket concepts (包层方案)
+hccb	concept	氦冷固态包层	helium-cooled ceramic breeder	HCCB	active	Helium-cooled ceramic breeder blanket (CN reference)
+wccb	concept	水冷陶瓷包层	water-cooled ceramic breeder	WCCB	active	Water-cooled ceramic breeder blanket (CN reference)
+hcll	concept	氦冷锂铅包层	helium-cooled lithium-lead	HCLL	active	EU helium-cooled lithium-lead blanket concept
+hcpb	concept	氦冷球床包层	helium-cooled pebble bed	HCPB	active	EU helium-cooled pebble bed blanket concept
+dcll	concept	双冷锂铅包层	dual-coolant lithium-lead	DCLL	active	He/LiPb dual-coolant blanket concept
+tbm	concept	产氚模块	test blanket module	TBM	active	In-vessel test modules for ITER blanket qualification
+
+# ---- Fusion engineering: neutronics & irradiation (中子学与辐照)
+neutron-wall-loading	metric	中子壁负荷	neutron wall loading		active	Neutron power per unit first-wall area (MW/m²)
+dpa	metric	离位损伤	displacement per atom	dpa	active	Irradiation damage metric for structural materials
+transmutation	concept	嬗变	transmutation		active	Nuclear transformation of elements under irradiation
+activation-analysis	method	活化分析	activation analysis		active	Calculation/measurement of induced radioactivity
+shutdown-dose-rate	metric	停堆剂量率	shutdown dose rate	SDDR	active	Contact/distance dose rate after reactor shutdown
+neutron-source	device	中子源	neutron source		active	14 MeV neutron source for fusion materials testing
+ifmif	device	国际聚变材料辐照装置	IFMIF	IFMIF	active	International Fusion Materials Irradiation Facility
+dones	device	DONES	DONES		active	DEMO-Oriented Neutron Source (IFMIF successor in EU)
+fusion-neutron	concept	聚变中子	fusion neutron		active	14.1 MeV neutron from D-T reaction
+
+# ---- Major fusion devices (重要聚变装置)
+cfetr	device	中国聚变工程试验堆	CFETR	CFETR	active	China Fusion Engineering Test Reactor
+demo	device	示范堆	DEMO	DEMO	active	Demonstration fusion power plant (generic milestone)
+jet	device	JET	JET		active	Joint European Torus (largest tokamak, Culham)
+jt-60sa	device	JT-60SA	JT-60SA		active	Japan Torus superconducting upgrade at QST Naka
+diii-d	device	DIII-D	DIII-D		active	GA tokamak at San Diego (largest US tokamak)
+asdex-upgrade	device	ASDEX Upgrade	ASDEX Upgrade	AUG	active	Axially Symmetric Divertor EXperiment Upgrade at IPP Garching
+hl-2a	device	HL-2A	HL-2A		active	Tokamak at SWIP Chengdu (earlier generation)
+hl-2m	device	HL-2M	HL-2M		active	Next-generation tokamak at SWIP Chengdu
+kstar	device	KSTAR	KSTAR		active	Korea Superconducting Tokamak Advanced Research
+sparc	device	SPARC	SPARC		active	Compact high-field HTS tokamak (CFS/MIT)
+arc	device	ARC	ARC		active	Affordable Robust Compact reactor concept (CFS/MIT pilot plant design)
+step	device	STEP	STEP		active	Spherical Tokamak for Energy Production (UKAEA)
+nstx-u	device	NSTX-U	NSTX-U		active	National Spherical Torus Experiment Upgrade at PPPL
+mast-u	device	MAST-U	MAST-U		active	Mega Amp Spherical Tokamak Upgrade at CCFE
+cfetrcoolact	device	BEST	BEST		active	Blanket Engineering and Shielding Test facility (a.k.a. CFETRCOOLACT)
+sg-iii	device	神光三号	SG-III		active	Shenguang-III laser facility for ICF at CAEP
+omega	device	OMEGA	OMEGA		active	LLE Rochester 60-beam ICF laser facility
+laser-megajoule	device	兆焦耳激光装置	Laser Mégajoule	LMJ	active	French ICF megajoule laser facility
+
+# ---- Plasma control & operation (等离子体控制与运行)
+plasma-control	concept	等离子体控制	plasma control		active	Active control of plasma parameters (position, shape, current, density)
+real-time-control	concept	实时控制	real-time control		active	Feedback control system operating on plasma timescales
+plasma-position-control	concept	等离子体位置控制	plasma position control		active	Feedback control of plasma radial/vertical position
+shape-control	concept	形状控制	shape control		active	Control of plasma elongation, triangularity, squareness
+steady-state-operation	concept	稳态运行	steady-state operation		active	Plasma sustained without inductive current drive
+long-pulse	concept	长脉冲	long pulse		active	Extended plasma discharge duration (hundreds to thousands of seconds)
+advanced-tokamak	concept	先进托卡马克	advanced tokamak	AT	active	Steady-state high-beta operation scenario with strong shaping
+hybrid-scenario	concept	混合运行模式	hybrid scenario		active	Intermediate scenario between inductive and fully non-inductive
+inductive-operation	concept	感应运行	inductive operation		active	Plasma current driven by central solenoid transformer action
+non-inductive-operation	concept	非感应运行	non-inductive operation		active	Plasma current sustained by external current drive and bootstrap
+density-control	concept	密度控制	density control		active	Active control of line-averaged or edge plasma density
+pellet-injection	method	弹丸注入	pellet injection		active	Injection of frozen D/T pellets for fueling or ELM pacing
+gas-puffing	method	充气	gas puffing		active	Gas injection for fueling and density feedback control
+supersonic-molecular-beam-injection	method	超声分子束注入	supersonic molecular beam injection	SMBI	active	High-speed gas injection for deep fueling
+elm-suppression	method	ELM抑制	ELM suppression		active	Techniques to fully suppress ELMs (RMP, QH-mode)
+elm-mitigation	method	ELM缓解	ELM mitigation		active	Techniques to reduce ELM energy (pellet pacing, RMP)
+resonant-magnetic-perturbation	method	共振磁扰动	resonant magnetic perturbation	RMP	active	Applied 3-D field for ELM control
+quiescent-h-mode	concept	静默H模	quiescent H-mode	QH-mode	active	ELM-free H-mode with edge harmonic oscillation
+disruption-prediction	concept	破裂预测	disruption prediction		active	Machine learning / physics-based early warning of disruptions
+disruption-mitigation	method	破裂缓解	disruption mitigation		active	Massive gas/shattered pellet injection to dissipate energy
+shattered-pellet-injection	method	碎裂弹丸注入	shattered pellet injection	SPI	active	Primary disruption mitigation technique for ITER
+massive-gas-injection	method	大量气体注入	massive gas injection	MGI	active	Fast gas injection for disruption thermal quench mitigation
+impurity-transport	concept	杂质输运	impurity transport		active	Transport of impurity ions in confined plasma
+particle-confinement-time	metric	粒子约束时间	particle confinement time		active	Characteristic time for particle loss from confined plasma
+current-profile-control	concept	电流剖面控制	current profile control		active	Shaping the radial distribution of plasma current
+
+# ---- Plasma theory & simulation (等离子体理论与仿真)
+gyrokinetics	concept	回旋动理学	gyrokinetics		active	Reduced kinetic theory averaging over fast gyro-motion
+drift-kinetics	concept	漂移动理学	drift kinetics		active	Kinetic theory in guiding-center approximation
+turbulent-transport	concept	湍流输运	turbulent transport		active	Anomalous transport driven by micro-turbulence
+transport-barrier	concept	输运垒	transport barrier		active	Region of reduced turbulent transport (edge or internal)
+internal-transport-barrier	concept	内输运垒	internal transport barrier	ITB	active	Transport barrier inside the plasma mid-radius
+flux-surface	concept	磁面	flux surface		active	Nested toroidal surface of constant poloidal flux
+safety-factor	metric	安全因子	safety factor	q	active	Field-line winding number; ratio of toroidal to poloidal turns
+q-profile	metric	安全因子剖面	q-profile		active	Radial distribution of the safety factor
+equilibrium-reconstruction	method	平衡重建	equilibrium reconstruction		active	Reconstructing MHD equilibrium from diagnostic data
+grad-shafranov-equation	concept	Grad-Shafranov方程	Grad-Shafranov equation		active	Fundamental equation for axisymmetric toroidal MHD equilibrium
+free-boundary-equilibrium	concept	自由边界平衡	free-boundary equilibrium		active	Equilibrium with self-consistent plasma-coil interaction
+resistive-mhd	concept	电阻磁流体力学	resistive MHD		active	MHD model including finite plasma resistivity
+ideal-mhd	concept	理想磁流体力学	ideal MHD		active	MHD model assuming infinite conductivity (no resistivity)
+kink-mode	concept	扭曲模	kink mode		active	MHD instability from current or pressure gradient (internal/external)
+ballooning-mode	concept	气球模	ballooning mode		active	Pressure-driven instability on outboard side of torus
+interchange-instability	concept	交换不稳定性	interchange instability		active	Instability from unfavorable magnetic curvature
+alfven-wave	concept	阿尔芬波	Alfvén wave		active	Low-frequency MHD wave propagating along magnetic field
+alfven-eigenmode	concept	阿尔芬本征模	Alfvén eigenmode	AE	active	Discrete shear-Alfvén modes in toroidal geometry (TAE, BAE, etc.)
+toroidal-alfven-eigenmode	concept	环向阿尔芬本征模	toroidal Alfvén eigenmode	TAE	active	Gap mode driven by energetic particles in tokamak
+energetic-particle	concept	高能粒子	energetic particle		active	Supra-thermal ions (NBI, ICRH, alpha) driving AE instabilities
+zonal-flow	concept	带状流	zonal flow		active	Toroidally and poloidally symmetric flow regulating turbulence
+geodesic-acoustic-mode	concept	测地声模	geodesic acoustic mode	GAM	active	Oscillatory zonal-flow branch in toroidal geometry
+
+# ---- Simulation codes & nuclear data (仿真工具与核数据)
+efit	code	EFIT	EFIT		active	Equilibrium Fitting code for MHD equilibrium reconstruction
+transp	code	TRANSP	TRANSP		active	Time-dependent tokamak transport analysis code
+astra	code	ASTRA	ASTRA		active	Automated System for TRansport Analysis code
+solps-iter	code	SOLPS-ITER	SOLPS-ITER		active	Coupled plasma-neutral code for scrape-off layer / divertor modeling
+gene	code	GENE	GENE		active	Gyrokinetic Electromagnetic Numerical Experiment
+gtc	code	GTC	GTC		active	Gyrokinetic Toroidal Code (global particle-in-cell)
+bout-pp	code	BOUT++	BOUT++		active	Framework for plasma fluid simulations in curvilinear geometry
+mcnp	code	MCNP	MCNP		active	Monte Carlo N-Particle transport code (LANL)
+openmc	code	OpenMC	OpenMC		active	Open-source Monte Carlo particle transport code
+serpent	code	Serpent	Serpent		active	Monte Carlo reactor physics / neutronics code (VTT)
+fendl	code	FENDL	FENDL		active	Fusion Evaluated Nuclear Data Library (IAEA)
+endf	code	ENDF	ENDF		active	Evaluated Nuclear Data File (BNL/NNDC)
+comsol	code	COMSOL	COMSOL		active	Multi-physics finite element simulation platform
+ansys	code	ANSYS	ANSYS		active	Multi-physics engineering simulation software
+catia	code	CATIA	CATIA		active	3D CAD/CAM/CAE software (Dassault Systèmes)
+
+# ---- Additional simulation codes (补充仿真工具)
+# -- Plasma equilibrium / transport / MHD
+corsica	code	CORSICA	CORSICA		active	Integrated tokamak modeling code (LLNL)
+imas	code	IMAS	IMAS		active	Integrated Modelling & Analysis Suite (ITER standard data model)
+jintrac	code	JINTRAC	JINTRAC		active	JET suite of integrated tokamak transport codes
+gacode	code	GACODE	GACODE		active	General Atomics suite of gyrokinetic / transport codes
+tgyro	code	TGYRO	TGYRO		active	Transport solver calling gyrokinetic codes (GACODE family)
+gyro	code	GYRO	GYRO		active	Global gyrokinetic simulation code (General Atomics)
+cgyro	code	CGYRO	CGYRO		active	Continuum gyrokinetic code on GPUs (GACODE family)
+gs2	code	GS2	GS2		active	Flux-tube gyrokinetic code (Univ. Maryland / UKAEA)
+orb5	code	ORB5	ORB5		active	Global PIC gyrokinetic code (EPFL / EUROfusion)
+gkw	code	GKW	GKW		active	GyroKinetic Workshop code (flux-tube, Eulerian)
+jorek	code	JOREK	JOREK		active	Non-linear MHD code for ELMs, disruptions, and 3D instabilities
+nimrod	code	NIMROD	NIMROD		active	Non-Ideal MHD with Rotation, Open Discussion (extended MHD code)
+m3d-c1	code	M3D-C1	M3D-C1		active	3D extended MHD code (PPPL)
+mars-f	code	MARS-F	MARS-F		active	Resistive MHD stability code for RWM, RMP response
+nova	code	NOVA	NOVA		active	Ideal MHD / Alfvén eigenmode stability code (PPPL)
+mishka	code	MISHKA	MISHKA		active	MHD Instabilities in Spherical/Helical/Kink Approximation code
+helena	code	HELENA	HELENA		active	Fixed-boundary Grad-Shafranov equilibrium solver
+cliste	code	CLISTE	CLISTE		active	Equilibrium reconstruction code (IPP Garching)
+chease	code	CHEASE	CHEASE		active	Cubic Hermite Element Axisymmetric Static Equilibrium code
+
+# -- SOL / divertor / edge plasma
+eirene	code	EIRENE	EIRENE		active	Monte Carlo kinetic neutral gas transport code
+solps	code	SOLPS	SOLPS		active	SOL Plasma Simulator (B2-EIRENE coupling); predecessor of SOLPS-ITER
+b2	code	B2	B2		active	Multi-fluid SOL/divertor plasma code (coupled with EIRENE)
+edge2d-eirene	code	EDGE2D-EIRENE	EDGE2D-EIRENE		active	2D fluid edge plasma + neutral kinetic code
+soledge2d	code	SOLEDGE2D	SOLEDGE2D		active	2D/3D edge transport code (CEA)
+div3d	code	DIV3D	DIV3D		active	3D field-line tracing code for divertor design
+emc3-eirene	code	EMC3-EIRENE	EMC3-EIRENE		active	3D Monte Carlo plasma-neutral code for stellarators / 3D tokamaks
+uedge	code	UEDGE	UEDGE		active	2D edge plasma fluid code (LLNL)
+
+# -- Neutronics / nuclear analysis
+fluka	code	FLUKA	FLUKA		active	Monte Carlo particle transport code (CERN / INFN)
+geant4	code	Geant4	Geant4		active	Monte Carlo toolkit for particle physics & radiation transport
+phits	code	PHITS	PHITS		active	Particle and Heavy Ion Transport code System (JAEA)
+fispact-ii	code	FISPACT-II	FISPACT-II		active	Inventory / activation / transmutation calculation code (UKAEA)
+r2smesh	code	R2Smesh	R2Smesh		active	Rigorous 2-Step mesh-based shutdown dose rate method
+d1s	code	D1S	D1S		active	Direct 1-Step method for SDDR in MCNP
+supermc	code	SuperMC	SuperMC		active	Super Monte Carlo code for nuclear design (FDS team, INEST)
+tripoli	code	TRIPOLI	TRIPOLI		active	Monte Carlo 3D particle transport code (CEA)
+
+# -- Nuclear data libraries
+jeff	code	JEFF	JEFF		active	Joint Evaluated Fission and Fusion File (NEA)
+jendl	code	JENDL	JENDL		active	Japanese Evaluated Nuclear Data Library (JAEA)
+cendl	code	CENDL	CENDL		active	Chinese Evaluated Nuclear Data Library (CIAE)
+tendl	code	TENDL	TENDL		active	TALYS-based Evaluated Nuclear Data Library
+eaf	code	EAF	EAF		active	European Activation File (activation cross-sections)
+irdff	code	IRDFF	IRDFF		active	International Reactor Dosimetry and Fusion File (IAEA)
+
+# -- Structural / thermal / EM / multi-physics
+abaqus	code	Abaqus	Abaqus		active	Finite element structural / thermal analysis software
+nastran	code	Nastran	Nastran		active	Finite element structural analysis code (MSC / Siemens)
+fluent	code	Fluent	Fluent		active	CFD solver (ANSYS family)
+cfx	code	CFX	CFX		active	CFD solver for turbomachinery / multi-phase (ANSYS family)
+openfoam	code	OpenFOAM	OpenFOAM		active	Open-source CFD framework
+elmer	code	Elmer	Elmer		active	Open-source multi-physics FEM solver (CSC Finland)
+opera	code	Opera	Opera		active	Finite element EM / magnet design software (Dassault)
+
+# -- Tokamak / systems / design
+process	code	PROCESS	PROCESS		active	Fusion power plant systems code (UKAEA)
+sycomore	code	SYCOMORE	SYCOMORE		active	Tokamak system code (CEA)
+mira	code	MIRA	MIRA		active	Modular Integrated Reactor Analysis system code
+create-nl	code	CREATE-NL	CREATE-NL		active	Free-boundary equilibrium + vertical stability code (CREATE consortium)
+dina	code	DINA	DINA		active	Dynamic Integrated Numerical Analysis code for tokamak transients
+tsc	code	TSC	TSC		active	Tokamak Simulation Code (time-dependent free-boundary + transport)
+
+# ---- Numerical methods & computational concepts (数值方法与计算概念)
+monte-carlo-method	concept	蒙特卡罗方法	Monte Carlo method		active	Stochastic sampling method for particle transport and integration
+finite-element-method	concept	有限元方法	finite element method	FEM	active	Numerical method for solving PDEs on mesh elements
+finite-volume-method	concept	有限体积法	finite volume method	FVM	active	Conservative discretization for fluid / transport equations
+particle-in-cell	concept	粒子网格法	particle-in-cell	PIC	active	Kinetic simulation method tracking particles on a grid
+computational-fluid-dynamics	concept	计算流体力学	computational fluid dynamics	CFD	active	Numerical simulation of fluid flows
+mesh-generation	concept	网格生成	mesh generation		active	Creating computational meshes for FEM / FVM / CFD
+variance-reduction	concept	方差缩减	variance reduction		active	Techniques to improve Monte Carlo statistical efficiency
+weight-window	concept	权窗	weight window		active	Variance reduction technique bounding particle weights in regions
+tallying	concept	计数统计	tallying		active	Scoring quantities (flux, dose, heating) in Monte Carlo transport
+cross-section	concept	截面	cross section		active	Probability of nuclear reaction per unit target density (barn)
+neutron-spectrum	concept	中子能谱	neutron spectrum		active	Energy distribution of neutron flux
+kerma	metric	比释动能	kerma		active	Kinetic Energy Released per unit MAss (dose-related quantity)
+nuclear-heating	metric	核热	nuclear heating		active	Volumetric energy deposition from nuclear reactions and radiation
+photon-transport	concept	光子输运	photon transport		active	Simulation of gamma/X-ray transport through matter
+dose-rate-mapping	method	剂量率分布图	dose rate mapping		active	Spatial mapping of radiation dose rate for maintenance planning
+
+# ---- Fusion economics & roadmap (聚变经济与路线图)
+fusion-power-plant	concept	聚变电站	fusion power plant	FPP	active	Commercial electricity-generating fusion facility
+fusion-pilot-plant	concept	聚变试验电站	fusion pilot plant		active	First-of-a-kind fusion plant demonstrating net electricity
+cost-of-electricity	metric	电力成本	cost of electricity	COE	active	Levelized cost of electricity from a fusion plant
+technology-readiness-level	metric	技术就绪度	technology readiness level	TRL	active	NASA/DOE scale (1-9) for technology maturity
+availability	metric	可用率	availability		active	Fraction of time a plant is operational
+capacity-factor	metric	容量因子	capacity factor		active	Ratio of actual output to maximum possible output over time
+plant-lifetime	metric	电站寿命	plant lifetime		active	Design lifetime of a fusion power plant (typically 30-40 years)
+overnight-capital-cost	metric	隔夜建设成本	overnight capital cost		active	Construction cost excluding financing/interest
+levelized-cost	metric	平准化成本	levelized cost	LCOE	active	Total lifecycle cost divided by total energy produced
+fusion-gain	metric	聚变增益因子	fusion gain	Q	active	Ratio of fusion power to external heating power (Q = Pfus/Paux)
+engineering-gain	metric	工程增益因子	engineering gain	Qeng	active	Ratio of gross electric output to recirculating power
+recirculating-power	metric	循环功率	recirculating power		active	Electrical power consumed by plant subsystems (magnets, heating, pumps)
+net-electric-power	metric	净电功率	net electric power	Pnet	active	Gross electric power minus recirculating power
+tritium-self-sufficiency	concept	氚自持	tritium self-sufficiency		active	Ability of a fusion plant to breed all tritium it consumes
+tritium-startup-inventory	metric	氚启动存量	tritium startup inventory		active	Initial tritium quantity needed to start a fusion reactor
+licensing	concept	许可证	licensing		active	Regulatory approval process for fusion plant construction/operation
+fusion-roadmap	concept	聚变路线图	fusion roadmap		active	Strategic plan for achieving commercial fusion energy
+iter-to-demo	concept	ITER到DEMO	ITER-to-DEMO		active	Transition phase from ITER experimental results to DEMO design
+public-acceptance	concept	公众接受度	public acceptance		active	Societal acceptance of fusion energy technology
+regulatory-framework	concept	监管框架	regulatory framework		active	Legal and regulatory structure governing fusion plant safety
+
+# ---- Fusion safety & waste (聚变安全与废物)
+decay-heat	metric	衰变热	decay heat		active	Residual thermal power from radioactive decay after shutdown
+loss-of-coolant-accident	concept	失冷事故	loss-of-coolant accident	LOCA	active	Accident scenario with loss of primary coolant flow
+loss-of-flow-accident	concept	失流事故	loss-of-flow accident	LOFA	active	Accident scenario with reduced coolant flow rate
+in-vessel-loca	concept	真空室内失冷事故	in-vessel LOCA		active	Coolant leak inside the vacuum vessel
+ex-vessel-loca	concept	真空室外失冷事故	ex-vessel LOCA		active	Coolant leak outside the vacuum vessel
+low-level-waste	concept	低放废物	low-level waste	LLW	active	Radioactive waste with low activity concentration
+intermediate-level-waste	concept	中放废物	intermediate-level waste	ILW	active	Radioactive waste between LLW and HLW activity levels
+high-level-waste	concept	高放废物	high-level waste	HLW	active	Highly radioactive waste (not expected from fusion in large quantities)
+clearance	concept	清洁解控	clearance		active	Regulatory release of material below activity limits for unrestricted use
+recycling	concept	再循环	recycling		active	Reprocessing activated materials for reuse after decay
+waste-classification	concept	废物分级	waste classification		active	Categorization of radioactive waste by activity level
+hydrogen-safety	concept	氢安全	hydrogen safety		active	Prevention of hydrogen/tritium explosion hazards
+confinement-barrier	concept	包容屏障	confinement barrier		active	Physical barrier preventing release of radioactive material
+safety-case	concept	安全论证	safety case		active	Documented argument that a facility meets safety requirements
+design-basis-accident	concept	设计基准事故	design basis accident	DBA	active	Postulated accident used for conservative safety design
+
+# ---- Power conversion & balance of plant (功率转化与电厂辅助系统)
+steam-generator	concept	蒸汽发生器	steam generator	SG	active	Heat exchanger producing steam from primary coolant
+heat-exchanger	concept	换热器	heat exchanger	HX	active	Device transferring thermal energy between fluids
+rankine-cycle	concept	朗肯循环	Rankine cycle		active	Steam turbine thermodynamic cycle for power conversion
+brayton-cycle	concept	布雷顿循环	Brayton cycle		active	Gas turbine thermodynamic cycle (He or supercritical CO2)
+supercritical-co2-cycle	concept	超临界二氧化碳循环	supercritical CO2 cycle	sCO2	active	High-efficiency Brayton cycle using supercritical CO2 as working fluid
+steam-turbine	concept	汽轮机	steam turbine		active	Turbine driven by steam in Rankine cycle
+gas-turbine	concept	燃气轮机	gas turbine		active	Turbine driven by gas in Brayton cycle
+condenser	concept	凝汽器	condenser		active	Device condensing exhaust steam back to water
+cooling-tower	concept	冷却塔	cooling tower		active	Structure rejecting waste heat to atmosphere
+primary-loop	concept	一回路	primary loop		active	Primary coolant circuit removing heat from blanket/divertor
+secondary-loop	concept	二回路	secondary loop		active	Secondary coolant circuit carrying heat to power conversion
+intermediate-heat-exchanger	concept	中间换热器	intermediate heat exchanger	IHX	active	Heat exchanger between primary and secondary loops
+thermal-efficiency	metric	热效率	thermal efficiency		active	Ratio of net electric output to total thermal power
+gross-electric-power	metric	总电功率	gross electric power		active	Total electric power before subtracting recirculating power
+thermal-power	metric	热功率	thermal power		active	Total thermal power produced by fusion reactions and neutron capture
+auxiliary-power	metric	厂用电	auxiliary power		active	Electrical power consumed by plant auxiliary systems
+balance-of-plant	concept	电站辅助系统	balance of plant	BOP	active	All plant systems outside the fusion core (turbine, cooling, electrical)
+power-supply	system	电源系统	power supply		active	Systems providing electrical power to magnets, heating, and auxiliaries
+water-treatment	system	水处理系统	water treatment		active	Purification and chemistry control of plant water circuits
+hvac	system	暖通空调	HVAC	HVAC	active	Heating, ventilation, and air conditioning for plant buildings
+waste-heat-recovery	concept	余热回收	waste heat recovery		active	Recovering useful energy from low-grade thermal outputs
+electrical-grid-connection	concept	电网接入	electrical grid connection		active	Interface between fusion plant and external power grid
+plant-layout	concept	电站布局	plant layout		active	Physical arrangement and spatial design of plant buildings and systems
+decommissioning	concept	退役	decommissioning		active	Safe dismantling and cleanup of a fusion facility at end of life

@@ -23,6 +23,28 @@
 
 ### Fixed
 
+## v2026.03.16
+
+### Added
+
+- 术语库大规模扩充（32 → 455 concepts, 197 → 1408 aliases）：
+  - 等离子体物理（磁约束基础、等离子体不稳定性、输运与湍流）
+  - 等离子体—壁相互作用（溅射、再沉积、杂质输运、偏滤器物理）
+  - 等离子体诊断（Thomson散射、ECE、干涉仪、Langmuir探针等）
+  - 超导磁体（CICC、失超、HTS/LTS、磁体系统）
+  - 仿星器 / 反场箍缩 / 场反位形 / 惯性约束聚变
+  - p-B11 / 氢硼聚变（ENN 新奥装置、FRC 技术）
+  - 聚变工程系统（真空/结构、氚系统、包层材料、冷却剂、中子学、主要装置 18 台）
+  - 等离子体控制与运行（磁控/加热/粒子/位形控制）
+  - 理论与模拟（MHD、漂移动理学、蒙特卡罗方法等）
+  - 模拟工具与核数据（54 codes: ITER codes, CFD, MHD, PIC, 中子学, 活化, 停堆剂量率）
+  - 数值方法（有限元/体/差分、自适应网格、并行计算等 15 条）
+  - 聚变经济与路线图（FPP, COE, TRL, LCOE, Q, Qeng 等 20 条）
+  - 聚变安全与废物（LOCA, LOFA, LLW/ILW/HLW, DBA 等 15 条）
+  - 功率转化与电厂辅助系统（Rankine/Brayton/sCO2 循环, BOP, IHX 等 24 条）
+- 术语库校验：455 concepts, 1408 aliases, 455 evidence rows，全部通过 validate_registry。
+- 输入法导入：1018 entries 已导入 Rime (rime_ice)。
+
 ## v2026.03.02
 
 ### Changed

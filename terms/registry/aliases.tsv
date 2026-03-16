@@ -137,3 +137,1753 @@ equivalent-dose	equivalent-dose	en	alias	IME token-only form
 derived air concentration	derived-air-concentration	en	preferred	preferred en (phrase)
 derived-air-concentration	derived-air-concentration	en	alias	IME token-only form
 DAC	derived-air-concentration	abbr	alias	acronym (ambiguous in other domains; keep as alias)
+
+# ---- Plasma physics (等离子体物理)
+等离子体约束	plasma-confinement	zh	preferred	preferred zh
+plasma confinement	plasma-confinement	en	preferred	preferred en (phrase)
+plasma-confinement	plasma-confinement	en	alias	IME token-only form
+
+磁约束	magnetic-confinement	zh	preferred	preferred zh
+magnetic confinement	magnetic-confinement	en	preferred	preferred en (phrase)
+magnetic-confinement	magnetic-confinement	en	alias	IME token-only form
+MCF	magnetic-confinement	abbr	alias	magnetic confinement fusion
+
+等离子体平衡	plasma-equilibrium	zh	preferred	preferred zh
+plasma equilibrium	plasma-equilibrium	en	preferred	preferred en (phrase)
+plasma-equilibrium	plasma-equilibrium	en	alias	IME token-only form
+MHD equilibrium	plasma-equilibrium	en	alias	MHD equilibrium synonym
+
+磁流体力学	magnetohydrodynamics	zh	preferred	preferred zh
+magnetohydrodynamics	magnetohydrodynamics	en	preferred	preferred en
+MHD	magnetohydrodynamics	abbr	preferred	canonical abbr
+
+等离子体不稳定性	plasma-instability	zh	preferred	preferred zh
+plasma instability	plasma-instability	en	preferred	preferred en (phrase)
+plasma-instability	plasma-instability	en	alias	IME token-only form
+
+边缘局域模	edge-localized-mode	zh	preferred	preferred zh
+edge localized mode	edge-localized-mode	en	preferred	preferred en (phrase)
+edge-localized-mode	edge-localized-mode	en	alias	IME token-only form
+ELM	edge-localized-mode	abbr	preferred	canonical abbr
+ELMs	edge-localized-mode	abbr	alias	plural form
+
+破裂	disruption	zh	preferred	preferred zh
+disruption	disruption	en	preferred	preferred en
+等离子体破裂	disruption	zh	alias	full zh form
+
+逃逸电子	runaway-electron	zh	preferred	preferred zh
+runaway electron	runaway-electron	en	preferred	preferred en (phrase)
+runaway-electron	runaway-electron	en	alias	IME token-only form
+runaway electrons	runaway-electron	en	alias	plural form
+RE	runaway-electron	abbr	alias	abbr (ambiguous; keep as alias)
+
+等离子体电流	plasma-current	zh	preferred	preferred zh
+plasma current	plasma-current	en	preferred	preferred en (phrase)
+plasma-current	plasma-current	en	alias	IME token-only form
+Ip	plasma-current	abbr	preferred	canonical abbr
+
+自举电流	bootstrap-current	zh	preferred	preferred zh
+bootstrap current	bootstrap-current	en	preferred	preferred en (phrase)
+bootstrap-current	bootstrap-current	en	alias	IME token-only form
+
+欧姆加热	ohmic-heating	zh	preferred	preferred zh
+ohmic heating	ohmic-heating	en	preferred	preferred en (phrase)
+ohmic-heating	ohmic-heating	en	alias	IME token-only form
+
+电子回旋共振加热	electron-cyclotron-resonance-heating	zh	preferred	preferred zh
+electron cyclotron resonance heating	electron-cyclotron-resonance-heating	en	preferred	preferred en (phrase)
+electron-cyclotron-resonance-heating	electron-cyclotron-resonance-heating	en	alias	IME token-only form
+ECRH	electron-cyclotron-resonance-heating	abbr	preferred	canonical abbr
+ECH	electron-cyclotron-resonance-heating	abbr	alias	alternate abbr
+
+离子回旋共振加热	ion-cyclotron-resonance-heating	zh	preferred	preferred zh
+ion cyclotron resonance heating	ion-cyclotron-resonance-heating	en	preferred	preferred en (phrase)
+ion-cyclotron-resonance-heating	ion-cyclotron-resonance-heating	en	alias	IME token-only form
+ICRH	ion-cyclotron-resonance-heating	abbr	preferred	canonical abbr
+
+低杂波电流驱动	lower-hybrid-current-drive	zh	preferred	preferred zh
+lower hybrid current drive	lower-hybrid-current-drive	en	preferred	preferred en (phrase)
+lower-hybrid-current-drive	lower-hybrid-current-drive	en	alias	IME token-only form
+LHCD	lower-hybrid-current-drive	abbr	preferred	canonical abbr
+
+高约束模	h-mode	zh	preferred	preferred zh
+H-mode	h-mode	en	preferred	preferred en
+H mode	h-mode	en	alias	space variant
+high confinement mode	h-mode	en	alias	full expansion
+
+低约束模	l-mode	zh	preferred	preferred zh
+L-mode	l-mode	en	preferred	preferred en
+L mode	l-mode	en	alias	space variant
+low confinement mode	l-mode	en	alias	full expansion
+
+台基	pedestal	zh	preferred	preferred zh
+pedestal	pedestal	en	preferred	preferred en
+
+刮削层	scrape-off-layer	zh	preferred	preferred zh
+scrape-off layer	scrape-off-layer	en	preferred	preferred en (phrase)
+scrape-off-layer	scrape-off-layer	en	alias	IME token-only form
+SOL	scrape-off-layer	abbr	preferred	canonical abbr
+
+分界面	separatrix	zh	preferred	preferred zh
+separatrix	separatrix	en	preferred	preferred en
+最后闭合磁面	separatrix	zh	alias	LCFS zh synonym
+
+X点	x-point	zh	preferred	preferred zh
+X-point	x-point	en	preferred	preferred en
+X point	x-point	en	alias	space variant
+
+磁岛	magnetic-island	zh	preferred	preferred zh
+magnetic island	magnetic-island	en	preferred	preferred en (phrase)
+magnetic-island	magnetic-island	en	alias	IME token-only form
+
+新经典撕裂模	neoclassical-tearing-mode	zh	preferred	preferred zh
+neoclassical tearing mode	neoclassical-tearing-mode	en	preferred	preferred en (phrase)
+neoclassical-tearing-mode	neoclassical-tearing-mode	en	alias	IME token-only form
+NTM	neoclassical-tearing-mode	abbr	preferred	canonical abbr
+
+锯齿	sawtooth	zh	preferred	preferred zh
+sawtooth	sawtooth	en	preferred	preferred en
+锯齿振荡	sawtooth	zh	alias	expanded zh form
+sawtooth oscillation	sawtooth	en	alias	expanded en form
+
+等离子体密度	plasma-density	zh	preferred	preferred zh
+plasma density	plasma-density	en	preferred	preferred en (phrase)
+plasma-density	plasma-density	en	alias	IME token-only form
+
+等离子体温度	plasma-temperature	zh	preferred	preferred zh
+plasma temperature	plasma-temperature	en	preferred	preferred en (phrase)
+plasma-temperature	plasma-temperature	en	alias	IME token-only form
+
+格林沃尔德密度	greenwald-density	zh	preferred	preferred zh
+Greenwald density	greenwald-density	en	preferred	preferred en (phrase)
+greenwald-density	greenwald-density	en	alias	IME token-only form
+Greenwald limit	greenwald-density	en	alias	common synonym
+格林沃尔德密度极限	greenwald-density	zh	alias	zh expanded form
+
+极向比压	poloidal-beta	zh	preferred	preferred zh
+poloidal beta	poloidal-beta	en	preferred	preferred en (phrase)
+poloidal-beta	poloidal-beta	en	alias	IME token-only form
+beta_p	poloidal-beta	en	preferred	ASCII token
+βp	poloidal-beta	mixed	alias	Greek variant
+
+等离子体成形	plasma-shaping	zh	preferred	preferred zh
+plasma shaping	plasma-shaping	en	preferred	preferred en (phrase)
+plasma-shaping	plasma-shaping	en	alias	IME token-only form
+
+垂直位移事件	vertical-displacement-event	zh	preferred	preferred zh
+vertical displacement event	vertical-displacement-event	en	preferred	preferred en (phrase)
+vertical-displacement-event	vertical-displacement-event	en	alias	IME token-only form
+VDE	vertical-displacement-event	abbr	preferred	canonical abbr
+
+# ---- Plasma-wall interaction (等离子体与壁面相互作用)
+面向等离子体部件	plasma-facing-component	zh	preferred	preferred zh
+plasma-facing component	plasma-facing-component	en	preferred	preferred en (phrase)
+plasma-facing-component	plasma-facing-component	en	alias	IME token-only form
+PFC	plasma-facing-component	abbr	preferred	canonical abbr
+
+第一壁	first-wall	zh	preferred	preferred zh
+first wall	first-wall	en	preferred	preferred en (phrase)
+first-wall	first-wall	en	alias	IME token-only form
+FW	first-wall	abbr	alias	abbr
+
+偏滤器	divertor	zh	preferred	preferred zh
+divertor	divertor	en	preferred	preferred en
+
+溅射	sputtering	zh	preferred	preferred zh
+sputtering	sputtering	en	preferred	preferred en
+物理溅射	sputtering	zh	alias	physical sputtering zh
+chemical sputtering	sputtering	en	alias	chemical sputtering variant
+
+侵蚀	erosion	zh	preferred	preferred zh
+erosion	erosion	en	preferred	preferred en
+材料侵蚀	erosion	zh	alias	material erosion zh
+
+再沉积	redeposition	zh	preferred	preferred zh
+redeposition	redeposition	en	preferred	preferred en
+
+燃料滞留	fuel-retention	zh	preferred	preferred zh
+fuel retention	fuel-retention	en	preferred	preferred en (phrase)
+fuel-retention	fuel-retention	en	alias	IME token-only form
+
+热流密度	heat-flux	zh	preferred	preferred zh
+heat flux	heat-flux	en	preferred	preferred en (phrase)
+heat-flux	heat-flux	en	alias	IME token-only form
+
+热负荷	heat-load	zh	preferred	preferred zh
+heat load	heat-load	en	preferred	preferred en (phrase)
+heat-load	heat-load	en	alias	IME token-only form
+
+等离子体脱靶	plasma-detachment	zh	preferred	preferred zh
+plasma detachment	plasma-detachment	en	preferred	preferred en (phrase)
+plasma-detachment	plasma-detachment	en	alias	IME token-only form
+divertor detachment	plasma-detachment	en	alias	common synonym
+
+杂质注入	impurity-seeding	zh	preferred	preferred zh
+impurity seeding	impurity-seeding	en	preferred	preferred en (phrase)
+impurity-seeding	impurity-seeding	en	alias	IME token-only form
+杂质注射	impurity-seeding	zh	alias	zh variant
+
+限制器	limiter	zh	preferred	preferred zh
+limiter	limiter	en	preferred	preferred en
+
+包层	blanket	zh	preferred	preferred zh
+blanket	blanket	en	preferred	preferred en
+
+产氚包层	breeding-blanket	zh	preferred	preferred zh
+breeding blanket	breeding-blanket	en	preferred	preferred en (phrase)
+breeding-blanket	breeding-blanket	en	alias	IME token-only form
+tritium breeding blanket	breeding-blanket	en	alias	expanded phrase
+
+氚增殖比	tritium-breeding-ratio	zh	preferred	preferred zh
+tritium breeding ratio	tritium-breeding-ratio	en	preferred	preferred en (phrase)
+tritium-breeding-ratio	tritium-breeding-ratio	en	alias	IME token-only form
+TBR	tritium-breeding-ratio	abbr	preferred	canonical abbr
+
+碳纤维复合材料	carbon-fiber-composite	zh	preferred	preferred zh
+carbon fiber composite	carbon-fiber-composite	en	preferred	preferred en (phrase)
+carbon-fiber-composite	carbon-fiber-composite	en	alias	IME token-only form
+CFC	carbon-fiber-composite	abbr	preferred	canonical abbr
+
+等离子体表面相互作用	plasma-surface-interaction	zh	preferred	preferred zh
+plasma-surface interaction	plasma-surface-interaction	en	preferred	preferred en (phrase)
+plasma-surface-interaction	plasma-surface-interaction	en	alias	IME token-only form
+PSI	plasma-surface-interaction	abbr	preferred	canonical abbr
+plasma-material interaction	plasma-surface-interaction	en	alias	common synonym
+PMI	plasma-surface-interaction	abbr	alias	alternate abbr
+
+起泡	blistering	zh	preferred	preferred zh
+blistering	blistering	en	preferred	preferred en
+
+# ---- Plasma diagnostics (等离子体诊断)
+干涉仪	interferometry	zh	preferred	preferred zh
+interferometry	interferometry	en	preferred	preferred en
+干涉测量	interferometry	zh	alias	zh variant
+
+朗缪尔探针	langmuir-probe	zh	preferred	preferred zh
+Langmuir probe	langmuir-probe	en	preferred	preferred en (phrase)
+langmuir-probe	langmuir-probe	en	alias	IME token-only form
+
+辐射计	bolometer	zh	preferred	preferred zh
+bolometer	bolometer	en	preferred	preferred en
+热辐射计	bolometer	zh	alias	zh variant
+
+电子回旋辐射	electron-cyclotron-emission	zh	preferred	preferred zh
+electron cyclotron emission	electron-cyclotron-emission	en	preferred	preferred en (phrase)
+electron-cyclotron-emission	electron-cyclotron-emission	en	alias	IME token-only form
+ECE	electron-cyclotron-emission	abbr	preferred	canonical abbr
+
+电荷交换复合光谱	charge-exchange-recombination-spectroscopy	zh	preferred	preferred zh
+charge exchange recombination spectroscopy	charge-exchange-recombination-spectroscopy	en	preferred	preferred en (phrase)
+charge-exchange-recombination-spectroscopy	charge-exchange-recombination-spectroscopy	en	alias	IME token-only form
+CXRS	charge-exchange-recombination-spectroscopy	abbr	preferred	canonical abbr
+CER	charge-exchange-recombination-spectroscopy	abbr	alias	alternate abbr (charge exchange recombination)
+
+软X射线	soft-x-ray	zh	preferred	preferred zh
+soft X-ray	soft-x-ray	en	preferred	preferred en (phrase)
+soft-x-ray	soft-x-ray	en	alias	IME token-only form
+SXR	soft-x-ray	abbr	preferred	canonical abbr
+
+反射仪	reflectometry	zh	preferred	preferred zh
+reflectometry	reflectometry	en	preferred	preferred en
+
+磁诊断	magnetic-diagnostics	zh	preferred	preferred zh
+magnetic diagnostics	magnetic-diagnostics	en	preferred	preferred en (phrase)
+magnetic-diagnostics	magnetic-diagnostics	en	alias	IME token-only form
+
+中子诊断	neutron-diagnostics	zh	preferred	preferred zh
+neutron diagnostics	neutron-diagnostics	en	preferred	preferred en (phrase)
+neutron-diagnostics	neutron-diagnostics	en	alias	IME token-only form
+
+光谱诊断	spectroscopy	zh	preferred	preferred zh
+spectroscopy	spectroscopy	en	preferred	preferred en
+
+运动斯塔克效应	motional-stark-effect	zh	preferred	preferred zh
+motional Stark effect	motional-stark-effect	en	preferred	preferred en (phrase)
+motional-stark-effect	motional-stark-effect	en	alias	IME token-only form
+MSE	motional-stark-effect	abbr	preferred	canonical abbr
+
+远红外偏振仪	far-infrared-polarimetry	zh	preferred	preferred zh
+far-infrared polarimetry	far-infrared-polarimetry	en	preferred	preferred en (phrase)
+far-infrared-polarimetry	far-infrared-polarimetry	en	alias	IME token-only form
+FIR	far-infrared-polarimetry	abbr	alias	abbr (ambiguous; keep as alias)
+
+# ---- Superconducting magnets (超导磁体)
+铌钛	nbti	zh	preferred	preferred zh
+NbTi	nbti	mixed	preferred	token
+Nb-Ti	nbti	mixed	alias	hyphen variant
+
+稀土钡铜氧化物	rebco	zh	preferred	preferred zh
+REBCO	rebco	mixed	preferred	token
+
+高温超导体	high-temperature-superconductor	zh	preferred	preferred zh
+high-temperature superconductor	high-temperature-superconductor	en	preferred	preferred en (phrase)
+high-temperature-superconductor	high-temperature-superconductor	en	alias	IME token-only form
+HTS	high-temperature-superconductor	abbr	preferred	canonical abbr
+
+低温超导体	low-temperature-superconductor	zh	preferred	preferred zh
+low-temperature superconductor	low-temperature-superconductor	en	preferred	preferred en (phrase)
+low-temperature-superconductor	low-temperature-superconductor	en	alias	IME token-only form
+LTS	low-temperature-superconductor	abbr	preferred	canonical abbr
+
+纵场线圈	toroidal-field-coil	zh	preferred	preferred zh
+toroidal field coil	toroidal-field-coil	en	preferred	preferred en (phrase)
+toroidal-field-coil	toroidal-field-coil	en	alias	IME token-only form
+TF coil	toroidal-field-coil	en	alias	common short form
+TFC	toroidal-field-coil	abbr	alias	abbr
+
+极向场线圈	poloidal-field-coil	zh	preferred	preferred zh
+poloidal field coil	poloidal-field-coil	en	preferred	preferred en (phrase)
+poloidal-field-coil	poloidal-field-coil	en	alias	IME token-only form
+PF coil	poloidal-field-coil	en	alias	common short form
+
+中心螺管	central-solenoid	zh	preferred	preferred zh
+central solenoid	central-solenoid	en	preferred	preferred en (phrase)
+central-solenoid	central-solenoid	en	alias	IME token-only form
+CS	central-solenoid	abbr	preferred	canonical abbr
+
+失超	quench	zh	preferred	preferred zh
+quench	quench	en	preferred	preferred en
+
+失超检测	quench-detection	zh	preferred	preferred zh
+quench detection	quench-detection	en	preferred	preferred en (phrase)
+quench-detection	quench-detection	en	alias	IME token-only form
+
+失超保护	quench-protection	zh	preferred	preferred zh
+quench protection	quench-protection	en	preferred	preferred en (phrase)
+quench-protection	quench-protection	en	alias	IME token-only form
+
+临界电流	critical-current	zh	preferred	preferred zh
+critical current	critical-current	en	preferred	preferred en (phrase)
+critical-current	critical-current	en	alias	IME token-only form
+Ic	critical-current	abbr	preferred	canonical abbr
+
+临界温度	critical-temperature	zh	preferred	preferred zh
+critical temperature	critical-temperature	en	preferred	preferred en (phrase)
+critical-temperature	critical-temperature	en	alias	IME token-only form
+Tc	critical-temperature	abbr	preferred	canonical abbr
+
+临界磁场	critical-magnetic-field	zh	preferred	preferred zh
+critical magnetic field	critical-magnetic-field	en	preferred	preferred en (phrase)
+critical-magnetic-field	critical-magnetic-field	en	alias	IME token-only form
+Bc	critical-magnetic-field	abbr	preferred	canonical abbr
+上临界磁场	critical-magnetic-field	zh	alias	upper critical field zh
+
+低温恒温器	cryostat	zh	preferred	preferred zh
+cryostat	cryostat	en	preferred	preferred en
+杜瓦	cryostat	zh	alias	Dewar (colloquial zh)
+
+管内电缆导体	cable-in-conduit-conductor	zh	preferred	preferred zh
+cable-in-conduit conductor	cable-in-conduit-conductor	en	preferred	preferred en (phrase)
+cable-in-conduit-conductor	cable-in-conduit-conductor	en	alias	IME token-only form
+CICC	cable-in-conduit-conductor	abbr	preferred	canonical abbr
+
+磁体馈线	magnet-feeder	zh	preferred	preferred zh
+magnet feeder	magnet-feeder	en	preferred	preferred en (phrase)
+magnet-feeder	magnet-feeder	en	alias	IME token-only form
+
+超导接头	superconducting-joint	zh	preferred	preferred zh
+superconducting joint	superconducting-joint	en	preferred	preferred en (phrase)
+superconducting-joint	superconducting-joint	en	alias	IME token-only form
+
+低温制冷系统	cryoplant	zh	preferred	preferred zh
+cryoplant	cryoplant	en	preferred	preferred en
+氦制冷系统	cryoplant	zh	alias	helium refrigeration zh
+
+电流引线	current-lead	zh	preferred	preferred zh
+current lead	current-lead	en	preferred	preferred en (phrase)
+current-lead	current-lead	en	alias	IME token-only form
+
+磁储能	magnetic-stored-energy	zh	preferred	preferred zh
+magnetic stored energy	magnetic-stored-energy	en	preferred	preferred en (phrase)
+magnetic-stored-energy	magnetic-stored-energy	en	alias	IME token-only form
+
+# ---- Stellarator (仿星器)
+仿星器	stellarator	zh	preferred	preferred zh
+stellarator	stellarator	en	preferred	preferred en
+
+模块化线圈	modular-coil	zh	preferred	preferred zh
+modular coil	modular-coil	en	preferred	preferred en (phrase)
+modular-coil	modular-coil	en	alias	IME token-only form
+非平面线圈	modular-coil	zh	alias	non-planar coil zh
+
+旋转变换	rotational-transform	zh	preferred	preferred zh
+rotational transform	rotational-transform	en	preferred	preferred en (phrase)
+rotational-transform	rotational-transform	en	alias	IME token-only form
+iota	rotational-transform	en	alias	symbol name
+
+磁阱	magnetic-well	zh	preferred	preferred zh
+magnetic well	magnetic-well	en	preferred	preferred en (phrase)
+magnetic-well	magnetic-well	en	alias	IME token-only form
+
+新经典输运	neoclassical-transport	zh	preferred	preferred zh
+neoclassical transport	neoclassical-transport	en	preferred	preferred en (phrase)
+neoclassical-transport	neoclassical-transport	en	alias	IME token-only form
+
+仿星器优化	stellarator-optimization	zh	preferred	preferred zh
+stellarator optimization	stellarator-optimization	en	preferred	preferred en (phrase)
+stellarator-optimization	stellarator-optimization	en	alias	IME token-only form
+
+准对称	quasi-symmetry	zh	preferred	preferred zh
+quasi-symmetry	quasi-symmetry	en	preferred	preferred en
+quasi symmetry	quasi-symmetry	en	alias	space variant
+准对称性	quasi-symmetry	zh	alias	zh variant
+
+准螺旋对称	quasi-helical-symmetry	zh	preferred	preferred zh
+quasi-helical symmetry	quasi-helical-symmetry	en	preferred	preferred en (phrase)
+quasi-helical-symmetry	quasi-helical-symmetry	en	alias	IME token-only form
+QHS	quasi-helical-symmetry	abbr	preferred	canonical abbr
+
+准轴对称	quasi-axisymmetry	zh	preferred	preferred zh
+quasi-axisymmetry	quasi-axisymmetry	en	preferred	preferred en
+QA	quasi-axisymmetry	abbr	preferred	canonical abbr
+
+准等动力	quasi-isodynamic	zh	preferred	preferred zh
+quasi-isodynamic	quasi-isodynamic	en	preferred	preferred en
+QI	quasi-isodynamic	abbr	preferred	canonical abbr
+
+W7-X	wendelstein-7x	abbr	preferred	canonical abbr
+Wendelstein 7-X	wendelstein-7x	en	preferred	preferred en (phrase)
+wendelstein-7x	wendelstein-7x	en	alias	IME token-only form
+
+HSX	helically-symmetric-experiment	abbr	preferred	canonical abbr
+Helically Symmetric Experiment	helically-symmetric-experiment	en	preferred	preferred en (phrase)
+helically-symmetric-experiment	helically-symmetric-experiment	en	alias	IME token-only form
+
+大型螺旋装置	large-helical-device	zh	preferred	preferred zh
+Large Helical Device	large-helical-device	en	preferred	preferred en (phrase)
+large-helical-device	large-helical-device	en	alias	IME token-only form
+LHD	large-helical-device	abbr	preferred	canonical abbr
+
+岛偏滤器	island-divertor	zh	preferred	preferred zh
+island divertor	island-divertor	en	preferred	preferred en (phrase)
+island-divertor	island-divertor	en	alias	IME token-only form
+
+自举电流优化	bootstrap-current-optimization	zh	preferred	preferred zh
+bootstrap current optimization	bootstrap-current-optimization	en	preferred	preferred en (phrase)
+bootstrap-current-optimization	bootstrap-current-optimization	en	alias	IME token-only form
+
+线圈复杂度	coil-complexity	zh	preferred	preferred zh
+coil complexity	coil-complexity	en	preferred	preferred en (phrase)
+coil-complexity	coil-complexity	en	alias	IME token-only form
+
+# ---- Reversed field pinch (反场箍缩)
+反场箍缩	reversed-field-pinch	zh	preferred	preferred zh
+reversed field pinch	reversed-field-pinch	en	preferred	preferred en (phrase)
+reversed-field-pinch	reversed-field-pinch	en	alias	IME token-only form
+RFP	reversed-field-pinch	abbr	preferred	canonical abbr
+
+RFX-mod	rfx-mod	en	preferred	preferred en
+RFX	rfx-mod	abbr	alias	short form
+
+发电机效应	dynamo-effect	zh	preferred	preferred zh
+dynamo effect	dynamo-effect	en	preferred	preferred en (phrase)
+dynamo-effect	dynamo-effect	en	alias	IME token-only form
+MHD dynamo	dynamo-effect	en	alias	MHD context synonym
+
+单螺旋态	single-helical-state	zh	preferred	preferred zh
+single helical state	single-helical-state	en	preferred	preferred en (phrase)
+single-helical-state	single-helical-state	en	alias	IME token-only form
+SHAx	single-helical-state	abbr	preferred	canonical abbr
+
+脉冲极向电流驱动	pulsed-poloidal-current-drive	zh	preferred	preferred zh
+pulsed poloidal current drive	pulsed-poloidal-current-drive	en	preferred	preferred en (phrase)
+pulsed-poloidal-current-drive	pulsed-poloidal-current-drive	en	alias	IME token-only form
+PPCD	pulsed-poloidal-current-drive	abbr	preferred	canonical abbr
+
+撕裂模	tearing-mode	zh	preferred	preferred zh
+tearing mode	tearing-mode	en	preferred	preferred en (phrase)
+tearing-mode	tearing-mode	en	alias	IME token-only form
+
+电阻壁模	resistive-wall-mode	zh	preferred	preferred zh
+resistive wall mode	resistive-wall-mode	en	preferred	preferred en (phrase)
+resistive-wall-mode	resistive-wall-mode	en	alias	IME token-only form
+RWM	resistive-wall-mode	abbr	preferred	canonical abbr
+
+# ---- Field-reversed configuration (场反位形)
+场反位形	field-reversed-configuration	zh	preferred	preferred zh
+field-reversed configuration	field-reversed-configuration	en	preferred	preferred en (phrase)
+field-reversed-configuration	field-reversed-configuration	en	alias	IME token-only form
+FRC	field-reversed-configuration	abbr	preferred	canonical abbr
+
+θ箍缩	theta-pinch	zh	preferred	preferred zh
+theta pinch	theta-pinch	en	preferred	preferred en (phrase)
+theta-pinch	theta-pinch	en	alias	IME token-only form
+
+紧凑环	compact-toroid	zh	preferred	preferred zh
+compact toroid	compact-toroid	en	preferred	preferred en (phrase)
+compact-toroid	compact-toroid	en	alias	IME token-only form
+CT	compact-toroid	abbr	preferred	canonical abbr
+
+球马克	spheromak	zh	preferred	preferred zh
+spheromak	spheromak	en	preferred	preferred en
+
+磁通约束	flux-confinement	zh	preferred	preferred zh
+flux confinement	flux-confinement	en	preferred	preferred en (phrase)
+flux-confinement	flux-confinement	en	alias	IME token-only form
+
+平移	translation	zh	preferred	preferred zh
+translation	translation	en	preferred	preferred en
+等离子体平移	translation	zh	alias	plasma translation zh
+
+旋转不稳定性	rotational-instability	zh	preferred	preferred zh
+rotational instability	rotational-instability	en	preferred	preferred en (phrase)
+rotational-instability	rotational-instability	en	alias	IME token-only form
+n=2 rotational mode	rotational-instability	en	alias	specific mode designation
+
+C-2W	c-2w	en	preferred	preferred en
+Norman	c-2w	en	alias	device name at TAE Technologies
+TAE Norman	c-2w	en	alias	full TAE device name
+
+磁化惯性聚变	magneto-inertial-fusion	zh	preferred	preferred zh
+magneto-inertial fusion	magneto-inertial-fusion	en	preferred	preferred en (phrase)
+magneto-inertial-fusion	magneto-inertial-fusion	en	alias	IME token-only form
+MIF	magneto-inertial-fusion	abbr	preferred	canonical abbr
+magnetized target fusion	magneto-inertial-fusion	en	alias	alternate name
+MTF	magneto-inertial-fusion	abbr	alias	alternate abbr
+
+# ---- Inertial confinement fusion (惯性约束聚变)
+惯性约束聚变	inertial-confinement-fusion	zh	preferred	preferred zh
+inertial confinement fusion	inertial-confinement-fusion	en	preferred	preferred en (phrase)
+inertial-confinement-fusion	inertial-confinement-fusion	en	alias	IME token-only form
+ICF	inertial-confinement-fusion	abbr	preferred	canonical abbr
+
+激光驱动聚变	laser-driven-fusion	zh	preferred	preferred zh
+laser-driven fusion	laser-driven-fusion	en	preferred	preferred en (phrase)
+laser-driven-fusion	laser-driven-fusion	en	alias	IME token-only form
+laser fusion	laser-driven-fusion	en	alias	common short form
+
+直接驱动	direct-drive	zh	preferred	preferred zh
+direct drive	direct-drive	en	preferred	preferred en (phrase)
+direct-drive	direct-drive	en	alias	IME token-only form
+
+间接驱动	indirect-drive	zh	preferred	preferred zh
+indirect drive	indirect-drive	en	preferred	preferred en (phrase)
+indirect-drive	indirect-drive	en	alias	IME token-only form
+
+黑腔	hohlraum	zh	preferred	preferred zh
+hohlraum	hohlraum	en	preferred	preferred en
+黑体辐射腔	hohlraum	zh	alias	expanded zh form
+
+靶丸	fuel-capsule	zh	preferred	preferred zh
+fuel capsule	fuel-capsule	en	preferred	preferred en (phrase)
+fuel-capsule	fuel-capsule	en	alias	IME token-only form
+target capsule	fuel-capsule	en	alias	alternate en form
+
+烧蚀层	ablator	zh	preferred	preferred zh
+ablator	ablator	en	preferred	preferred en
+烧蚀体	ablator	zh	alias	zh variant
+
+瑞利-泰勒不稳定性	rayleigh-taylor-instability	zh	preferred	preferred zh
+Rayleigh-Taylor instability	rayleigh-taylor-instability	en	preferred	preferred en (phrase)
+rayleigh-taylor-instability	rayleigh-taylor-instability	en	alias	IME token-only form
+RTI	rayleigh-taylor-instability	abbr	preferred	canonical abbr
+RT instability	rayleigh-taylor-instability	en	alias	common abbreviation
+
+点火	ignition	zh	preferred	preferred zh
+ignition	ignition	en	preferred	preferred en
+聚变点火	ignition	zh	alias	expanded zh form
+
+劳森判据	lawson-criterion	zh	preferred	preferred zh
+Lawson criterion	lawson-criterion	en	preferred	preferred en (phrase)
+lawson-criterion	lawson-criterion	en	alias	IME token-only form
+
+能量增益	energy-gain	zh	preferred	preferred zh
+energy gain	energy-gain	en	preferred	preferred en (phrase)
+energy-gain	energy-gain	en	alias	IME token-only form
+Q	energy-gain	abbr	alias	energy gain factor (ambiguous; keep as alias)
+聚变增益	energy-gain	zh	alias	fusion gain zh
+
+NIF	nif	abbr	preferred	canonical abbr
+National Ignition Facility	nif	en	preferred	preferred en (phrase)
+national-ignition-facility	nif	en	alias	IME token-only form
+
+Z箍缩	z-pinch	zh	preferred	preferred zh
+Z-pinch	z-pinch	en	preferred	preferred en
+z-pinch	z-pinch	en	alias	lowercase variant
+Z pinch	z-pinch	en	alias	space variant
+
+重离子聚变	heavy-ion-fusion	zh	preferred	preferred zh
+heavy-ion fusion	heavy-ion-fusion	en	preferred	preferred en (phrase)
+heavy-ion-fusion	heavy-ion-fusion	en	alias	IME token-only form
+HIF	heavy-ion-fusion	abbr	preferred	canonical abbr
+
+快点火	fast-ignition	zh	preferred	preferred zh
+fast ignition	fast-ignition	en	preferred	preferred en (phrase)
+fast-ignition	fast-ignition	en	alias	IME token-only form
+
+激波点火	shock-ignition	zh	preferred	preferred zh
+shock ignition	shock-ignition	en	preferred	preferred en (phrase)
+shock-ignition	shock-ignition	en	alias	IME token-only form
+
+靶制造	target-fabrication	zh	preferred	preferred zh
+target fabrication	target-fabrication	en	preferred	preferred en (phrase)
+target-fabrication	target-fabrication	en	alias	IME token-only form
+
+低温靶	cryogenic-target	zh	preferred	preferred zh
+cryogenic target	cryogenic-target	en	preferred	preferred en (phrase)
+cryogenic-target	cryogenic-target	en	alias	IME token-only form
+
+激光等离子体相互作用	laser-plasma-interaction	zh	preferred	preferred zh
+laser-plasma interaction	laser-plasma-interaction	en	preferred	preferred en (phrase)
+laser-plasma-interaction	laser-plasma-interaction	en	alias	IME token-only form
+LPI	laser-plasma-interaction	abbr	preferred	canonical abbr
+
+# ---- Other alternative / compact fusion concepts (其他替代/紧凑聚变概念)
+球形托卡马克	spherical-tokamak	zh	preferred	preferred zh
+spherical tokamak	spherical-tokamak	en	preferred	preferred en (phrase)
+spherical-tokamak	spherical-tokamak	en	alias	IME token-only form
+ST	spherical-tokamak	abbr	preferred	canonical abbr
+
+稠密等离子体焦点	dense-plasma-focus	zh	preferred	preferred zh
+dense plasma focus	dense-plasma-focus	en	preferred	preferred en (phrase)
+dense-plasma-focus	dense-plasma-focus	en	alias	IME token-only form
+DPF	dense-plasma-focus	abbr	preferred	canonical abbr
+
+磁镜装置	mirror-machine	zh	preferred	preferred zh
+mirror machine	mirror-machine	en	preferred	preferred en (phrase)
+mirror-machine	mirror-machine	en	alias	IME token-only form
+
+磁镜	magnetic-mirror	zh	preferred	preferred zh
+magnetic mirror	magnetic-mirror	en	preferred	preferred en (phrase)
+magnetic-mirror	magnetic-mirror	en	alias	IME token-only form
+
+串列磁镜	tandem-mirror	zh	preferred	preferred zh
+tandem mirror	tandem-mirror	en	preferred	preferred en (phrase)
+tandem-mirror	tandem-mirror	en	alias	IME token-only form
+
+等离子体枪	plasma-gun	zh	preferred	preferred zh
+plasma gun	plasma-gun	en	preferred	preferred en (phrase)
+plasma-gun	plasma-gun	en	alias	IME token-only form
+
+μ子催化聚变	muon-catalyzed-fusion	zh	preferred	preferred zh
+muon-catalyzed fusion	muon-catalyzed-fusion	en	preferred	preferred en (phrase)
+muon-catalyzed-fusion	muon-catalyzed-fusion	en	alias	IME token-only form
+
+# ---- Proton-boron (p-B11) fusion / ENN (新奥) pathway
+质子-硼聚变	proton-boron-fusion	zh	preferred	preferred zh
+proton-boron fusion	proton-boron-fusion	en	preferred	preferred en (phrase)
+proton-boron-fusion	proton-boron-fusion	en	alias	IME token-only form
+p-B11	proton-boron-fusion	mixed	preferred	canonical abbr
+p-11B	proton-boron-fusion	mixed	alias	alternate notation
+p-B	proton-boron-fusion	mixed	alias	short notation
+质子硼聚变	proton-boron-fusion	zh	alias	zh variant without hyphen
+氢硼聚变	proton-boron-fusion	zh	alias	hydrogen-boron zh variant
+
+无中子聚变	aneutronic-fusion	zh	preferred	preferred zh
+aneutronic fusion	aneutronic-fusion	en	preferred	preferred en (phrase)
+aneutronic-fusion	aneutronic-fusion	en	alias	IME token-only form
+
+先进燃料	advanced-fuel	zh	preferred	preferred zh
+advanced fuel	advanced-fuel	en	preferred	preferred en (phrase)
+advanced-fuel	advanced-fuel	en	alias	IME token-only form
+先进聚变燃料	advanced-fuel	zh	alias	expanded zh form
+
+库仑势垒	coulomb-barrier	zh	preferred	preferred zh
+Coulomb barrier	coulomb-barrier	en	preferred	preferred en (phrase)
+coulomb-barrier	coulomb-barrier	en	alias	IME token-only form
+库仑壁垒	coulomb-barrier	zh	alias	zh variant
+
+聚变截面	fusion-cross-section	zh	preferred	preferred zh
+fusion cross section	fusion-cross-section	en	preferred	preferred en (phrase)
+fusion-cross-section	fusion-cross-section	en	alias	IME token-only form
+反应截面	fusion-cross-section	zh	alias	reaction cross section zh
+
+聚变反应率	fusion-reactivity	zh	preferred	preferred zh
+fusion reactivity	fusion-reactivity	en	preferred	preferred en (phrase)
+fusion-reactivity	fusion-reactivity	en	alias	IME token-only form
+
+α粒子	alpha-particle	zh	preferred	preferred zh
+alpha particle	alpha-particle	en	preferred	preferred en (phrase)
+alpha-particle	alpha-particle	en	alias	IME token-only form
+阿尔法粒子	alpha-particle	zh	alias	zh phonetic variant
+
+α粒子能量导引	alpha-channeling	zh	preferred	preferred zh
+alpha channeling	alpha-channeling	en	preferred	preferred en (phrase)
+alpha-channeling	alpha-channeling	en	alias	IME token-only form
+阿尔法通道效应	alpha-channeling	zh	alias	zh variant
+
+韧致辐射	bremsstrahlung	zh	preferred	preferred zh
+bremsstrahlung	bremsstrahlung	en	preferred	preferred en
+轫致辐射	bremsstrahlung	zh	alias	zh variant character
+
+同步辐射	synchrotron-radiation	zh	preferred	preferred zh
+synchrotron radiation	synchrotron-radiation	en	preferred	preferred en (phrase)
+synchrotron-radiation	synchrotron-radiation	en	alias	IME token-only form
+回旋辐射	synchrotron-radiation	zh	alias	cyclotron radiation zh
+
+辐射损失	radiation-loss	zh	preferred	preferred zh
+radiation loss	radiation-loss	en	preferred	preferred en (phrase)
+radiation-loss	radiation-loss	en	alias	IME token-only form
+辐射功率损失	radiation-loss	zh	alias	expanded zh form
+
+功率平衡	power-balance	zh	preferred	preferred zh
+power balance	power-balance	en	preferred	preferred en (phrase)
+power-balance	power-balance	en	alias	IME token-only form
+能量平衡	power-balance	zh	alias	energy balance zh variant
+
+直接能量转换	direct-energy-conversion	zh	preferred	preferred zh
+direct energy conversion	direct-energy-conversion	en	preferred	preferred en (phrase)
+direct-energy-conversion	direct-energy-conversion	en	alias	IME token-only form
+DEC	direct-energy-conversion	abbr	preferred	canonical abbr
+
+行波直接能量转换器	traveling-wave-direct-energy-converter	zh	preferred	preferred zh
+traveling wave direct energy converter	traveling-wave-direct-energy-converter	en	preferred	preferred en (phrase)
+traveling-wave-direct-energy-converter	traveling-wave-direct-energy-converter	en	alias	IME token-only form
+TWDEC	traveling-wave-direct-energy-converter	abbr	preferred	canonical abbr
+
+等离子体比压	plasma-beta	zh	preferred	preferred zh
+plasma beta	plasma-beta	en	preferred	preferred en (phrase)
+plasma-beta	plasma-beta	en	alias	IME token-only form
+β	plasma-beta	mixed	alias	Greek symbol
+
+高比压	high-beta	zh	preferred	preferred zh
+high beta	high-beta	en	preferred	preferred en (phrase)
+high-beta	high-beta	en	alias	IME token-only form
+high-β	high-beta	mixed	alias	Greek variant
+
+新奥	enn	zh	preferred	preferred zh
+ENN	enn	abbr	preferred	canonical abbr
+新奥能源研究院	enn	zh	alias	full zh name
+ENN Energy Research Institute	enn	en	alias	full en name
+
+新奥紧凑聚变装置	enn-compact-fusion	zh	preferred	preferred zh
+ENN compact fusion device	enn-compact-fusion	en	preferred	preferred en (phrase)
+enn-compact-fusion	enn-compact-fusion	en	alias	IME token-only form
+
+REXIE	rexie	en	preferred	preferred en
+Rotating EXperiment for Ions and Electrons	rexie	en	alias	full expansion
+
+KMAX	kmax	en	preferred	preferred en
+
+新奥球形托卡马克	enn-cst	zh	preferred	preferred zh
+ENN compact spherical tokamak	enn-cst	en	preferred	preferred en (phrase)
+enn-cst	enn-cst	en	alias	IME token-only form
+ENN-CST	enn-cst	en	alias	device designation
+
+EXL-50	exl-50	en	preferred	preferred en
+EXL50	exl-50	en	alias	no-hyphen variant
+
+旋转磁场	rotating-magnetic-field	zh	preferred	preferred zh
+rotating magnetic field	rotating-magnetic-field	en	preferred	preferred en (phrase)
+rotating-magnetic-field	rotating-magnetic-field	en	alias	IME token-only form
+RMF	rotating-magnetic-field	abbr	preferred	canonical abbr
+
+奇宇称旋转磁场	odd-parity-rotating-magnetic-field	zh	preferred	preferred zh
+odd-parity rotating magnetic field	odd-parity-rotating-magnetic-field	en	preferred	preferred en (phrase)
+odd-parity-rotating-magnetic-field	odd-parity-rotating-magnetic-field	en	alias	IME token-only form
+RMFo	odd-parity-rotating-magnetic-field	abbr	preferred	canonical abbr
+
+中性束驱动场反	neutral-beam-driven-frc	zh	preferred	preferred zh
+neutral beam driven FRC	neutral-beam-driven-frc	en	preferred	preferred en (phrase)
+neutral-beam-driven-frc	neutral-beam-driven-frc	en	alias	IME token-only form
+
+场反并合	frc-merging	zh	preferred	preferred zh
+FRC merging	frc-merging	en	preferred	preferred en (phrase)
+frc-merging	frc-merging	en	alias	IME token-only form
+场反碰撞并合	frc-merging	zh	alias	collision-merging zh
+
+离子温度	ion-temperature	zh	preferred	preferred zh
+ion temperature	ion-temperature	en	preferred	preferred en (phrase)
+ion-temperature	ion-temperature	en	alias	IME token-only form
+Ti	ion-temperature	abbr	preferred	canonical abbr
+
+电子温度	electron-temperature	zh	preferred	preferred zh
+electron temperature	electron-temperature	en	preferred	preferred en (phrase)
+electron-temperature	electron-temperature	en	alias	IME token-only form
+Te	electron-temperature	abbr	preferred	canonical abbr
+
+热离子模式	hot-ion-mode	zh	preferred	preferred zh
+hot-ion mode	hot-ion-mode	en	preferred	preferred en (phrase)
+hot-ion-mode	hot-ion-mode	en	alias	IME token-only form
+hot ion mode	hot-ion-mode	en	alias	space variant
+
+束靶聚变	beam-target-fusion	zh	preferred	preferred zh
+beam-target fusion	beam-target-fusion	en	preferred	preferred en (phrase)
+beam-target-fusion	beam-target-fusion	en	alias	IME token-only form
+
+热核聚变	thermonuclear-fusion	zh	preferred	preferred zh
+thermonuclear fusion	thermonuclear-fusion	en	preferred	preferred en (phrase)
+thermonuclear-fusion	thermonuclear-fusion	en	alias	IME token-only form
+
+束束聚变	beam-beam-fusion	zh	preferred	preferred zh
+beam-beam fusion	beam-beam-fusion	en	preferred	preferred en (phrase)
+beam-beam-fusion	beam-beam-fusion	en	alias	IME token-only form
+
+非热平衡等离子体	non-thermal-plasma	zh	preferred	preferred zh
+non-thermal plasma	non-thermal-plasma	en	preferred	preferred en (phrase)
+non-thermal-plasma	non-thermal-plasma	en	alias	IME token-only form
+non-Maxwellian plasma	non-thermal-plasma	en	alias	physics synonym
+
+自旋极化燃料	spin-polarized-fuel	zh	preferred	preferred zh
+spin-polarized fuel	spin-polarized-fuel	en	preferred	preferred en (phrase)
+spin-polarized-fuel	spin-polarized-fuel	en	alias	IME token-only form
+polarized fuel	spin-polarized-fuel	en	alias	short form
+
+磁喷管	magnetic-nozzle	zh	preferred	preferred zh
+magnetic nozzle	magnetic-nozzle	en	preferred	preferred en (phrase)
+magnetic-nozzle	magnetic-nozzle	en	alias	IME token-only form
+
+介质壁加速器	dielectric-wall-accelerator	zh	preferred	preferred zh
+dielectric wall accelerator	dielectric-wall-accelerator	en	preferred	preferred en (phrase)
+dielectric-wall-accelerator	dielectric-wall-accelerator	en	alias	IME token-only form
+DWA	dielectric-wall-accelerator	abbr	preferred	canonical abbr
+
+静电约束	electrostatic-confinement	zh	preferred	preferred zh
+electrostatic confinement	electrostatic-confinement	en	preferred	preferred en (phrase)
+electrostatic-confinement	electrostatic-confinement	en	alias	IME token-only form
+inertial electrostatic confinement	electrostatic-confinement	en	alias	IEC full form
+IEC	electrostatic-confinement	abbr	alias	abbr for inertial electrostatic confinement
+
+面向等离子体材料	plasma-facing-material	zh	preferred	preferred zh
+plasma-facing material	plasma-facing-material	en	preferred	preferred en (phrase)
+plasma-facing-material	plasma-facing-material	en	alias	IME token-only form
+PFM	plasma-facing-material	abbr	preferred	canonical abbr
+
+# ---- Fusion engineering: vacuum & structures
+真空室	vacuum-vessel	zh	preferred	preferred zh
+vacuum vessel	vacuum-vessel	en	preferred	preferred en (phrase)
+vacuum-vessel	vacuum-vessel	en	alias	IME token-only form
+VV	vacuum-vessel	abbr	preferred	canonical abbr
+
+冷屏	thermal-shield	zh	preferred	preferred zh
+thermal shield	thermal-shield	en	preferred	preferred en (phrase)
+thermal-shield	thermal-shield	en	alias	IME token-only form
+热屏蔽	thermal-shield	zh	alias	zh variant
+
+生物屏蔽	biological-shield	zh	preferred	preferred zh
+biological shield	biological-shield	en	preferred	preferred en (phrase)
+biological-shield	biological-shield	en	alias	IME token-only form
+
+遥操作	remote-handling	zh	preferred	preferred zh
+remote handling	remote-handling	en	preferred	preferred en (phrase)
+remote-handling	remote-handling	en	alias	IME token-only form
+RH	remote-handling	abbr	preferred	canonical abbr
+
+遥维护	remote-maintenance	zh	preferred	preferred zh
+remote maintenance	remote-maintenance	en	preferred	preferred en (phrase)
+remote-maintenance	remote-maintenance	en	alias	IME token-only form
+
+热室	hot-cell	zh	preferred	preferred zh
+hot cell	hot-cell	en	preferred	preferred en (phrase)
+hot-cell	hot-cell	en	alias	IME token-only form
+
+# ---- Fusion engineering: tritium systems
+氚工厂	tritium-plant	zh	preferred	preferred zh
+tritium plant	tritium-plant	en	preferred	preferred en (phrase)
+tritium-plant	tritium-plant	en	alias	IME token-only form
+
+渗透	permeation	zh	preferred	preferred zh
+permeation	permeation	en	preferred	preferred en
+氚渗透	permeation	zh	alias	tritium permeation zh
+
+去氚	detritiation	zh	preferred	preferred zh
+detritiation	detritiation	en	preferred	preferred en
+除氚	detritiation	zh	alias	zh variant
+
+氚存量	tritium-inventory	zh	preferred	preferred zh
+tritium inventory	tritium-inventory	en	preferred	preferred en (phrase)
+tritium-inventory	tritium-inventory	en	alias	IME token-only form
+
+# ---- Fusion engineering: breeding materials
+锂铅	lithium-lead	zh	preferred	preferred zh
+lithium-lead	lithium-lead	en	preferred	preferred en
+LiPb	lithium-lead	mixed	preferred	chemical formula
+Pb-15.7Li	lithium-lead	mixed	alias	eutectic composition
+铅锂	lithium-lead	zh	alias	reversed zh order
+
+钛酸锂	lithium-titanate	zh	preferred	preferred zh
+lithium titanate	lithium-titanate	en	preferred	preferred en (phrase)
+lithium-titanate	lithium-titanate	en	alias	IME token-only form
+Li2TiO3	lithium-titanate	mixed	preferred	chemical formula
+
+正硅酸锂	lithium-orthosilicate	zh	preferred	preferred zh
+lithium orthosilicate	lithium-orthosilicate	en	preferred	preferred en (phrase)
+lithium-orthosilicate	lithium-orthosilicate	en	alias	IME token-only form
+Li4SiO4	lithium-orthosilicate	mixed	preferred	chemical formula
+
+中子倍增剂	neutron-multiplier	zh	preferred	preferred zh
+neutron multiplier	neutron-multiplier	en	preferred	preferred en (phrase)
+neutron-multiplier	neutron-multiplier	en	alias	IME token-only form
+
+# ---- Fusion engineering: structural materials
+低活化铁素体/马氏体钢	rafm-steel	zh	preferred	preferred zh
+RAFM steel	rafm-steel	en	preferred	preferred en (phrase)
+rafm-steel	rafm-steel	en	alias	IME token-only form
+RAFM	rafm-steel	abbr	preferred	canonical abbr
+reduced-activation ferritic/martensitic steel	rafm-steel	en	alias	full expansion
+
+EUROFER	eurofer	en	preferred	preferred en
+EUROFER97	eurofer	en	alias	version-specific form
+
+CLF-1	clf-1	en	preferred	preferred en
+
+CLAM	clam	en	preferred	preferred en
+China Low Activation Martensitic steel	clam	en	alias	full expansion
+
+钒合金	vanadium-alloy	zh	preferred	preferred zh
+vanadium alloy	vanadium-alloy	en	preferred	preferred en (phrase)
+vanadium-alloy	vanadium-alloy	en	alias	IME token-only form
+V-4Cr-4Ti	vanadium-alloy	mixed	alias	reference composition
+
+碳化硅复合材料	sic-sic-composite	zh	preferred	preferred zh
+SiC/SiC composite	sic-sic-composite	en	preferred	preferred en (phrase)
+sic-sic-composite	sic-sic-composite	en	alias	IME token-only form
+SiC/SiC	sic-sic-composite	mixed	preferred	canonical short form
+
+氧化物弥散强化钢	ods-steel	zh	preferred	preferred zh
+ODS steel	ods-steel	en	preferred	preferred en (phrase)
+ods-steel	ods-steel	en	alias	IME token-only form
+ODS	ods-steel	abbr	preferred	canonical abbr
+
+# ---- Fusion engineering: coolant concepts
+氦冷	helium-cooled	zh	preferred	preferred zh
+helium-cooled	helium-cooled	en	preferred	preferred en
+helium cooled	helium-cooled	en	alias	space variant
+
+水冷	water-cooled	zh	preferred	preferred zh
+water-cooled	water-cooled	en	preferred	preferred en
+water cooled	water-cooled	en	alias	space variant
+
+液态金属冷却剂	liquid-metal-coolant	zh	preferred	preferred zh
+liquid metal coolant	liquid-metal-coolant	en	preferred	preferred en (phrase)
+liquid-metal-coolant	liquid-metal-coolant	en	alias	IME token-only form
+
+# ---- Fusion engineering: blanket concepts
+氦冷固态包层	hccb	zh	preferred	preferred zh
+helium-cooled ceramic breeder	hccb	en	preferred	preferred en (phrase)
+HCCB	hccb	abbr	preferred	canonical abbr
+
+水冷陶瓷包层	wccb	zh	preferred	preferred zh
+water-cooled ceramic breeder	wccb	en	preferred	preferred en (phrase)
+WCCB	wccb	abbr	preferred	canonical abbr
+
+氦冷锂铅包层	hcll	zh	preferred	preferred zh
+helium-cooled lithium-lead	hcll	en	preferred	preferred en (phrase)
+HCLL	hcll	abbr	preferred	canonical abbr
+
+氦冷球床包层	hcpb	zh	preferred	preferred zh
+helium-cooled pebble bed	hcpb	en	preferred	preferred en (phrase)
+HCPB	hcpb	abbr	preferred	canonical abbr
+
+双冷锂铅包层	dcll	zh	preferred	preferred zh
+dual-coolant lithium-lead	dcll	en	preferred	preferred en (phrase)
+DCLL	dcll	abbr	preferred	canonical abbr
+
+产氚模块	tbm	zh	preferred	preferred zh
+test blanket module	tbm	en	preferred	preferred en (phrase)
+test-blanket-module	tbm	en	alias	IME token-only form
+TBM	tbm	abbr	preferred	canonical abbr
+
+# ---- Fusion engineering: neutronics & irradiation
+中子壁负荷	neutron-wall-loading	zh	preferred	preferred zh
+neutron wall loading	neutron-wall-loading	en	preferred	preferred en (phrase)
+neutron-wall-loading	neutron-wall-loading	en	alias	IME token-only form
+
+离位损伤	dpa	zh	preferred	preferred zh
+displacement per atom	dpa	en	preferred	preferred en (phrase)
+dpa	dpa	abbr	preferred	canonical abbr
+原子离位	dpa	zh	alias	zh variant
+
+嬗变	transmutation	zh	preferred	preferred zh
+transmutation	transmutation	en	preferred	preferred en
+核嬗变	transmutation	zh	alias	nuclear transmutation zh
+辐照嬗变	transmutation	zh	alias	irradiation transmutation zh
+
+活化分析	activation-analysis	zh	preferred	preferred zh
+activation analysis	activation-analysis	en	preferred	preferred en (phrase)
+activation-analysis	activation-analysis	en	alias	IME token-only form
+
+停堆剂量率	shutdown-dose-rate	zh	preferred	preferred zh
+shutdown dose rate	shutdown-dose-rate	en	preferred	preferred en (phrase)
+shutdown-dose-rate	shutdown-dose-rate	en	alias	IME token-only form
+SDDR	shutdown-dose-rate	abbr	preferred	canonical abbr
+
+中子源	neutron-source	zh	preferred	preferred zh
+neutron source	neutron-source	en	preferred	preferred en (phrase)
+neutron-source	neutron-source	en	alias	IME token-only form
+
+国际聚变材料辐照装置	ifmif	zh	preferred	preferred zh
+IFMIF	ifmif	abbr	preferred	canonical abbr
+International Fusion Materials Irradiation Facility	ifmif	en	alias	full expansion
+
+DONES	dones	en	preferred	preferred en
+DEMO-Oriented Neutron Source	dones	en	alias	full expansion
+
+聚变中子	fusion-neutron	zh	preferred	preferred zh
+fusion neutron	fusion-neutron	en	preferred	preferred en (phrase)
+fusion-neutron	fusion-neutron	en	alias	IME token-only form
+14 MeV neutron	fusion-neutron	en	alias	DT fusion neutron energy
+
+# ---- Major fusion devices (重要聚变装置)
+中国聚变工程试验堆	cfetr	zh	preferred	preferred zh
+CFETR	cfetr	abbr	preferred	canonical abbr
+China Fusion Engineering Test Reactor	cfetr	en	alias	full expansion
+
+示范堆	demo	zh	preferred	preferred zh
+DEMO	demo	en	preferred	preferred en
+demonstration fusion power plant	demo	en	alias	full expansion
+
+JET	jet	abbr	preferred	canonical abbr
+Joint European Torus	jet	en	alias	full expansion
+
+JT-60SA	jt-60sa	en	preferred	preferred en
+
+DIII-D	diii-d	en	preferred	preferred en
+
+ASDEX Upgrade	asdex-upgrade	en	preferred	preferred en (phrase)
+asdex-upgrade	asdex-upgrade	en	alias	IME token-only form
+AUG	asdex-upgrade	abbr	alias	common abbr
+
+HL-2A	hl-2a	en	preferred	preferred en
+
+HL-2M	hl-2m	en	preferred	preferred en
+
+KSTAR	kstar	en	preferred	preferred en
+Korea Superconducting Tokamak Advanced Research	kstar	en	alias	full expansion
+
+SPARC	sparc	en	preferred	preferred en
+
+ARC	arc	en	preferred	preferred en
+
+STEP	step	en	preferred	preferred en
+Spherical Tokamak for Energy Production	step	en	alias	full expansion
+
+NSTX-U	nstx-u	en	preferred	preferred en
+National Spherical Torus Experiment Upgrade	nstx-u	en	alias	full expansion
+
+MAST-U	mast-u	en	preferred	preferred en
+Mega Amp Spherical Tokamak Upgrade	mast-u	en	alias	full expansion
+
+BEST	cfetrcoolact	en	preferred	preferred en
+CFETRCOOLACT	cfetrcoolact	en	alias	internal project code
+
+神光三号	sg-iii	zh	preferred	preferred zh
+SG-III	sg-iii	en	preferred	preferred en
+Shenguang-III	sg-iii	en	alias	pinyin form
+
+OMEGA	omega	en	preferred	preferred en
+
+兆焦耳激光装置	laser-megajoule	zh	preferred	preferred zh
+Laser Mégajoule	laser-megajoule	en	preferred	preferred en
+laser-megajoule	laser-megajoule	en	alias	IME token-only form
+LMJ	laser-megajoule	abbr	preferred	canonical abbr
+
+# ---- Plasma control & operation (等离子体控制与运行)
+等离子体控制	plasma-control	zh	preferred	preferred zh
+plasma control	plasma-control	en	preferred	preferred en (phrase)
+plasma-control	plasma-control	en	alias	IME token-only form
+
+实时控制	real-time-control	zh	preferred	preferred zh
+real-time control	real-time-control	en	preferred	preferred en (phrase)
+real-time-control	real-time-control	en	alias	IME token-only form
+
+等离子体位置控制	plasma-position-control	zh	preferred	preferred zh
+plasma position control	plasma-position-control	en	preferred	preferred en (phrase)
+plasma-position-control	plasma-position-control	en	alias	IME token-only form
+
+形状控制	shape-control	zh	preferred	preferred zh
+shape control	shape-control	en	preferred	preferred en (phrase)
+shape-control	shape-control	en	alias	IME token-only form
+
+稳态运行	steady-state-operation	zh	preferred	preferred zh
+steady-state operation	steady-state-operation	en	preferred	preferred en (phrase)
+steady-state-operation	steady-state-operation	en	alias	IME token-only form
+steady state	steady-state-operation	en	alias	short form
+
+长脉冲	long-pulse	zh	preferred	preferred zh
+long pulse	long-pulse	en	preferred	preferred en (phrase)
+long-pulse	long-pulse	en	alias	IME token-only form
+
+先进托卡马克	advanced-tokamak	zh	preferred	preferred zh
+advanced tokamak	advanced-tokamak	en	preferred	preferred en (phrase)
+advanced-tokamak	advanced-tokamak	en	alias	IME token-only form
+AT	advanced-tokamak	abbr	preferred	canonical abbr
+
+混合运行模式	hybrid-scenario	zh	preferred	preferred zh
+hybrid scenario	hybrid-scenario	en	preferred	preferred en (phrase)
+hybrid-scenario	hybrid-scenario	en	alias	IME token-only form
+
+感应运行	inductive-operation	zh	preferred	preferred zh
+inductive operation	inductive-operation	en	preferred	preferred en (phrase)
+inductive-operation	inductive-operation	en	alias	IME token-only form
+
+非感应运行	non-inductive-operation	zh	preferred	preferred zh
+non-inductive operation	non-inductive-operation	en	preferred	preferred en (phrase)
+non-inductive-operation	non-inductive-operation	en	alias	IME token-only form
+non-inductive current drive	non-inductive-operation	en	alias	related phrase
+
+密度控制	density-control	zh	preferred	preferred zh
+density control	density-control	en	preferred	preferred en (phrase)
+density-control	density-control	en	alias	IME token-only form
+
+弹丸注入	pellet-injection	zh	preferred	preferred zh
+pellet injection	pellet-injection	en	preferred	preferred en (phrase)
+pellet-injection	pellet-injection	en	alias	IME token-only form
+
+充气	gas-puffing	zh	preferred	preferred zh
+gas puffing	gas-puffing	en	preferred	preferred en (phrase)
+gas-puffing	gas-puffing	en	alias	IME token-only form
+gas fueling	gas-puffing	en	alias	synonym
+
+超声分子束注入	supersonic-molecular-beam-injection	zh	preferred	preferred zh
+supersonic molecular beam injection	supersonic-molecular-beam-injection	en	preferred	preferred en (phrase)
+supersonic-molecular-beam-injection	supersonic-molecular-beam-injection	en	alias	IME token-only form
+SMBI	supersonic-molecular-beam-injection	abbr	preferred	canonical abbr
+
+ELM抑制	elm-suppression	zh	preferred	preferred zh
+ELM suppression	elm-suppression	en	preferred	preferred en (phrase)
+elm-suppression	elm-suppression	en	alias	IME token-only form
+
+ELM缓解	elm-mitigation	zh	preferred	preferred zh
+ELM mitigation	elm-mitigation	en	preferred	preferred en (phrase)
+elm-mitigation	elm-mitigation	en	alias	IME token-only form
+
+共振磁扰动	resonant-magnetic-perturbation	zh	preferred	preferred zh
+resonant magnetic perturbation	resonant-magnetic-perturbation	en	preferred	preferred en (phrase)
+resonant-magnetic-perturbation	resonant-magnetic-perturbation	en	alias	IME token-only form
+RMP	resonant-magnetic-perturbation	abbr	preferred	canonical abbr
+
+静默H模	quiescent-h-mode	zh	preferred	preferred zh
+quiescent H-mode	quiescent-h-mode	en	preferred	preferred en (phrase)
+quiescent-h-mode	quiescent-h-mode	en	alias	IME token-only form
+QH-mode	quiescent-h-mode	en	preferred	canonical short form
+
+破裂预测	disruption-prediction	zh	preferred	preferred zh
+disruption prediction	disruption-prediction	en	preferred	preferred en (phrase)
+disruption-prediction	disruption-prediction	en	alias	IME token-only form
+
+破裂缓解	disruption-mitigation	zh	preferred	preferred zh
+disruption mitigation	disruption-mitigation	en	preferred	preferred en (phrase)
+disruption-mitigation	disruption-mitigation	en	alias	IME token-only form
+
+碎裂弹丸注入	shattered-pellet-injection	zh	preferred	preferred zh
+shattered pellet injection	shattered-pellet-injection	en	preferred	preferred en (phrase)
+shattered-pellet-injection	shattered-pellet-injection	en	alias	IME token-only form
+SPI	shattered-pellet-injection	abbr	preferred	canonical abbr
+
+大量气体注入	massive-gas-injection	zh	preferred	preferred zh
+massive gas injection	massive-gas-injection	en	preferred	preferred en (phrase)
+massive-gas-injection	massive-gas-injection	en	alias	IME token-only form
+MGI	massive-gas-injection	abbr	preferred	canonical abbr
+
+杂质输运	impurity-transport	zh	preferred	preferred zh
+impurity transport	impurity-transport	en	preferred	preferred en (phrase)
+impurity-transport	impurity-transport	en	alias	IME token-only form
+
+粒子约束时间	particle-confinement-time	zh	preferred	preferred zh
+particle confinement time	particle-confinement-time	en	preferred	preferred en (phrase)
+particle-confinement-time	particle-confinement-time	en	alias	IME token-only form
+
+电流剖面控制	current-profile-control	zh	preferred	preferred zh
+current profile control	current-profile-control	en	preferred	preferred en (phrase)
+current-profile-control	current-profile-control	en	alias	IME token-only form
+
+# ---- Plasma theory & simulation (等离子体理论与仿真)
+回旋动理学	gyrokinetics	zh	preferred	preferred zh
+gyrokinetics	gyrokinetics	en	preferred	preferred en
+回旋动力学	gyrokinetics	zh	alias	zh variant
+
+漂移动理学	drift-kinetics	zh	preferred	preferred zh
+drift kinetics	drift-kinetics	en	preferred	preferred en (phrase)
+drift-kinetics	drift-kinetics	en	alias	IME token-only form
+
+湍流输运	turbulent-transport	zh	preferred	preferred zh
+turbulent transport	turbulent-transport	en	preferred	preferred en (phrase)
+turbulent-transport	turbulent-transport	en	alias	IME token-only form
+anomalous transport	turbulent-transport	en	alias	synonym
+
+输运垒	transport-barrier	zh	preferred	preferred zh
+transport barrier	transport-barrier	en	preferred	preferred en (phrase)
+transport-barrier	transport-barrier	en	alias	IME token-only form
+
+内输运垒	internal-transport-barrier	zh	preferred	preferred zh
+internal transport barrier	internal-transport-barrier	en	preferred	preferred en (phrase)
+internal-transport-barrier	internal-transport-barrier	en	alias	IME token-only form
+ITB	internal-transport-barrier	abbr	preferred	canonical abbr
+
+磁面	flux-surface	zh	preferred	preferred zh
+flux surface	flux-surface	en	preferred	preferred en (phrase)
+flux-surface	flux-surface	en	alias	IME token-only form
+磁通面	flux-surface	zh	alias	zh variant
+
+安全因子	safety-factor	zh	preferred	preferred zh
+safety factor	safety-factor	en	preferred	preferred en (phrase)
+safety-factor	safety-factor	en	alias	IME token-only form
+q	safety-factor	en	alias	symbol
+
+安全因子剖面	q-profile	zh	preferred	preferred zh
+q-profile	q-profile	en	preferred	preferred en
+q profile	q-profile	en	alias	space variant
+电流分布	q-profile	zh	alias	related zh concept
+
+平衡重建	equilibrium-reconstruction	zh	preferred	preferred zh
+equilibrium reconstruction	equilibrium-reconstruction	en	preferred	preferred en (phrase)
+equilibrium-reconstruction	equilibrium-reconstruction	en	alias	IME token-only form
+
+Grad-Shafranov方程	grad-shafranov-equation	zh	preferred	preferred zh
+Grad-Shafranov equation	grad-shafranov-equation	en	preferred	preferred en (phrase)
+grad-shafranov-equation	grad-shafranov-equation	en	alias	IME token-only form
+GS equation	grad-shafranov-equation	en	alias	common abbreviation
+
+自由边界平衡	free-boundary-equilibrium	zh	preferred	preferred zh
+free-boundary equilibrium	free-boundary-equilibrium	en	preferred	preferred en (phrase)
+free-boundary-equilibrium	free-boundary-equilibrium	en	alias	IME token-only form
+
+电阻磁流体力学	resistive-mhd	zh	preferred	preferred zh
+resistive MHD	resistive-mhd	en	preferred	preferred en (phrase)
+resistive-mhd	resistive-mhd	en	alias	IME token-only form
+
+理想磁流体力学	ideal-mhd	zh	preferred	preferred zh
+ideal MHD	ideal-mhd	en	preferred	preferred en (phrase)
+ideal-mhd	ideal-mhd	en	alias	IME token-only form
+
+扭曲模	kink-mode	zh	preferred	preferred zh
+kink mode	kink-mode	en	preferred	preferred en (phrase)
+kink-mode	kink-mode	en	alias	IME token-only form
+扭曲不稳定性	kink-mode	zh	alias	expanded zh form
+
+气球模	ballooning-mode	zh	preferred	preferred zh
+ballooning mode	ballooning-mode	en	preferred	preferred en (phrase)
+ballooning-mode	ballooning-mode	en	alias	IME token-only form
+
+交换不稳定性	interchange-instability	zh	preferred	preferred zh
+interchange instability	interchange-instability	en	preferred	preferred en (phrase)
+interchange-instability	interchange-instability	en	alias	IME token-only form
+
+阿尔芬波	alfven-wave	zh	preferred	preferred zh
+Alfvén wave	alfven-wave	en	preferred	preferred en (phrase)
+alfven-wave	alfven-wave	en	alias	IME token-only form
+Alfven wave	alfven-wave	en	alias	ASCII variant
+
+阿尔芬本征模	alfven-eigenmode	zh	preferred	preferred zh
+Alfvén eigenmode	alfven-eigenmode	en	preferred	preferred en (phrase)
+alfven-eigenmode	alfven-eigenmode	en	alias	IME token-only form
+AE	alfven-eigenmode	abbr	preferred	canonical abbr
+
+环向阿尔芬本征模	toroidal-alfven-eigenmode	zh	preferred	preferred zh
+toroidal Alfvén eigenmode	toroidal-alfven-eigenmode	en	preferred	preferred en (phrase)
+toroidal-alfven-eigenmode	toroidal-alfven-eigenmode	en	alias	IME token-only form
+TAE	toroidal-alfven-eigenmode	abbr	preferred	canonical abbr
+
+高能粒子	energetic-particle	zh	preferred	preferred zh
+energetic particle	energetic-particle	en	preferred	preferred en (phrase)
+energetic-particle	energetic-particle	en	alias	IME token-only form
+fast ion	energetic-particle	en	alias	common synonym
+快离子	energetic-particle	zh	alias	fast ion zh
+
+带状流	zonal-flow	zh	preferred	preferred zh
+zonal flow	zonal-flow	en	preferred	preferred en (phrase)
+zonal-flow	zonal-flow	en	alias	IME token-only form
+
+测地声模	geodesic-acoustic-mode	zh	preferred	preferred zh
+geodesic acoustic mode	geodesic-acoustic-mode	en	preferred	preferred en (phrase)
+geodesic-acoustic-mode	geodesic-acoustic-mode	en	alias	IME token-only form
+GAM	geodesic-acoustic-mode	abbr	preferred	canonical abbr
+
+# ---- Simulation codes & nuclear data (仿真工具与核数据)
+EFIT	efit	en	preferred	preferred en
+Equilibrium Fitting	efit	en	alias	full expansion
+
+TRANSP	transp	en	preferred	preferred en
+
+ASTRA	astra	en	preferred	preferred en
+Automated System for TRansport Analysis	astra	en	alias	full expansion
+
+SOLPS-ITER	solps-iter	en	preferred	preferred en
+
+GENE	gene	en	preferred	preferred en
+Gyrokinetic Electromagnetic Numerical Experiment	gene	en	alias	full expansion
+
+GTC	gtc	en	preferred	preferred en
+Gyrokinetic Toroidal Code	gtc	en	alias	full expansion
+
+BOUT++	bout-pp	en	preferred	preferred en
+BOUT	bout-pp	en	alias	short form
+
+MCNP	mcnp	en	preferred	preferred en
+Monte Carlo N-Particle	mcnp	en	alias	full expansion
+
+OpenMC	openmc	en	preferred	preferred en
+
+Serpent	serpent	en	preferred	preferred en
+
+FENDL	fendl	en	preferred	preferred en
+Fusion Evaluated Nuclear Data Library	fendl	en	alias	full expansion
+
+ENDF	endf	en	preferred	preferred en
+Evaluated Nuclear Data File	endf	en	alias	full expansion
+
+COMSOL	comsol	en	preferred	preferred en
+
+ANSYS	ansys	en	preferred	preferred en
+
+CATIA	catia	en	preferred	preferred en
+
+# ---- Additional simulation codes: plasma equilibrium / transport / MHD
+CORSICA	corsica	en	preferred	preferred en
+
+IMAS	imas	en	preferred	preferred en
+Integrated Modelling and Analysis Suite	imas	en	alias	full expansion
+
+JINTRAC	jintrac	en	preferred	preferred en
+
+GACODE	gacode	en	preferred	preferred en
+General Atomics suite	gacode	en	alias	informal description
+
+TGYRO	tgyro	en	preferred	preferred en
+
+GYRO	gyro	en	preferred	preferred en
+
+CGYRO	cgyro	en	preferred	preferred en
+
+GS2	gs2	en	preferred	preferred en
+
+ORB5	orb5	en	preferred	preferred en
+
+GKW	gkw	en	preferred	preferred en
+GyroKinetic Workshop	gkw	en	alias	full expansion
+
+JOREK	jorek	en	preferred	preferred en
+
+NIMROD	nimrod	en	preferred	preferred en
+Non-Ideal MHD with Rotation Open Discussion	nimrod	en	alias	full expansion
+
+M3D-C1	m3d-c1	en	preferred	preferred en
+
+MARS-F	mars-f	en	preferred	preferred en
+
+NOVA	nova	en	preferred	preferred en
+
+MISHKA	mishka	en	preferred	preferred en
+
+HELENA	helena	en	preferred	preferred en
+
+CLISTE	cliste	en	preferred	preferred en
+
+CHEASE	chease	en	preferred	preferred en
+
+# ---- SOL / divertor / edge plasma codes
+EIRENE	eirene	en	preferred	preferred en
+
+SOLPS	solps	en	preferred	preferred en
+SOL Plasma Simulator	solps	en	alias	full expansion
+
+B2	b2	en	preferred	preferred en
+
+EDGE2D-EIRENE	edge2d-eirene	en	preferred	preferred en
+EDGE2D	edge2d-eirene	en	alias	short form
+
+SOLEDGE2D	soledge2d	en	preferred	preferred en
+
+DIV3D	div3d	en	preferred	preferred en
+
+EMC3-EIRENE	emc3-eirene	en	preferred	preferred en
+EMC3	emc3-eirene	en	alias	short form
+
+UEDGE	uedge	en	preferred	preferred en
+
+# ---- Neutronics / nuclear analysis codes
+FLUKA	fluka	en	preferred	preferred en
+
+Geant4	geant4	en	preferred	preferred en
+GEANT4	geant4	en	alias	all-caps variant
+
+PHITS	phits	en	preferred	preferred en
+Particle and Heavy Ion Transport code System	phits	en	alias	full expansion
+
+FISPACT-II	fispact-ii	en	preferred	preferred en
+FISPACT	fispact-ii	en	alias	short form
+
+R2Smesh	r2smesh	en	preferred	preferred en
+R2S	r2smesh	en	alias	short name
+
+D1S	d1s	en	preferred	preferred en
+
+SuperMC	supermc	en	preferred	preferred en
+超级蒙特卡罗	supermc	zh	alias	zh name
+
+TRIPOLI	tripoli	en	preferred	preferred en
+
+# ---- Nuclear data libraries
+JEFF	jeff	en	preferred	preferred en
+Joint Evaluated Fission and Fusion File	jeff	en	alias	full expansion
+
+JENDL	jendl	en	preferred	preferred en
+Japanese Evaluated Nuclear Data Library	jendl	en	alias	full expansion
+
+CENDL	cendl	en	preferred	preferred en
+Chinese Evaluated Nuclear Data Library	cendl	en	alias	full expansion
+
+TENDL	tendl	en	preferred	preferred en
+TALYS-based Evaluated Nuclear Data Library	tendl	en	alias	full expansion
+
+EAF	eaf	en	preferred	preferred en
+European Activation File	eaf	en	alias	full expansion
+
+IRDFF	irdff	en	preferred	preferred en
+International Reactor Dosimetry and Fusion File	irdff	en	alias	full expansion
+
+# ---- Structural / thermal / EM / multi-physics codes
+Abaqus	abaqus	en	preferred	preferred en
+ABAQUS	abaqus	en	alias	all-caps variant
+
+Nastran	nastran	en	preferred	preferred en
+NASTRAN	nastran	en	alias	all-caps variant
+MSC Nastran	nastran	en	alias	vendor prefix form
+
+Fluent	fluent	en	preferred	preferred en
+ANSYS Fluent	fluent	en	alias	vendor prefix form
+
+CFX	cfx	en	preferred	preferred en
+ANSYS CFX	cfx	en	alias	vendor prefix form
+
+OpenFOAM	openfoam	en	preferred	preferred en
+
+Elmer	elmer	en	preferred	preferred en
+
+Opera	opera	en	preferred	preferred en
+
+# ---- Tokamak / systems / design codes
+PROCESS	process	en	preferred	preferred en
+
+SYCOMORE	sycomore	en	preferred	preferred en
+
+MIRA	mira	en	preferred	preferred en
+
+CREATE-NL	create-nl	en	preferred	preferred en
+
+DINA	dina	en	preferred	preferred en
+
+TSC	tsc	en	preferred	preferred en
+Tokamak Simulation Code	tsc	en	alias	full expansion
+
+# ---- Numerical methods & computational concepts
+蒙特卡罗方法	monte-carlo-method	zh	preferred	preferred zh
+Monte Carlo method	monte-carlo-method	en	preferred	preferred en (phrase)
+monte-carlo-method	monte-carlo-method	en	alias	IME token-only form
+蒙特卡洛方法	monte-carlo-method	zh	alias	zh variant
+Monte Carlo	monte-carlo-method	en	alias	short form
+
+有限元方法	finite-element-method	zh	preferred	preferred zh
+finite element method	finite-element-method	en	preferred	preferred en (phrase)
+finite-element-method	finite-element-method	en	alias	IME token-only form
+FEM	finite-element-method	abbr	preferred	canonical abbr
+有限元	finite-element-method	zh	alias	short zh form
+
+有限体积法	finite-volume-method	zh	preferred	preferred zh
+finite volume method	finite-volume-method	en	preferred	preferred en (phrase)
+finite-volume-method	finite-volume-method	en	alias	IME token-only form
+FVM	finite-volume-method	abbr	preferred	canonical abbr
+
+粒子网格法	particle-in-cell	zh	preferred	preferred zh
+particle-in-cell	particle-in-cell	en	preferred	preferred en
+PIC	particle-in-cell	abbr	preferred	canonical abbr
+粒子模拟	particle-in-cell	zh	alias	zh variant
+
+计算流体力学	computational-fluid-dynamics	zh	preferred	preferred zh
+computational fluid dynamics	computational-fluid-dynamics	en	preferred	preferred en (phrase)
+computational-fluid-dynamics	computational-fluid-dynamics	en	alias	IME token-only form
+CFD	computational-fluid-dynamics	abbr	preferred	canonical abbr
+
+网格生成	mesh-generation	zh	preferred	preferred zh
+mesh generation	mesh-generation	en	preferred	preferred en (phrase)
+mesh-generation	mesh-generation	en	alias	IME token-only form
+meshing	mesh-generation	en	alias	common short form
+
+方差缩减	variance-reduction	zh	preferred	preferred zh
+variance reduction	variance-reduction	en	preferred	preferred en (phrase)
+variance-reduction	variance-reduction	en	alias	IME token-only form
+
+权窗	weight-window	zh	preferred	preferred zh
+weight window	weight-window	en	preferred	preferred en (phrase)
+weight-window	weight-window	en	alias	IME token-only form
+
+计数统计	tallying	zh	preferred	preferred zh
+tallying	tallying	en	preferred	preferred en
+tally	tallying	en	alias	singular form
+
+截面	cross-section	zh	preferred	preferred zh
+cross section	cross-section	en	preferred	preferred en (phrase)
+cross-section	cross-section	en	alias	IME token-only form
+核截面	cross-section	zh	alias	nuclear cross section zh
+
+中子能谱	neutron-spectrum	zh	preferred	preferred zh
+neutron spectrum	neutron-spectrum	en	preferred	preferred en (phrase)
+neutron-spectrum	neutron-spectrum	en	alias	IME token-only form
+
+比释动能	kerma	zh	preferred	preferred zh
+kerma	kerma	en	preferred	preferred en
+KERMA	kerma	en	alias	all-caps variant
+
+核热	nuclear-heating	zh	preferred	preferred zh
+nuclear heating	nuclear-heating	en	preferred	preferred en (phrase)
+nuclear-heating	nuclear-heating	en	alias	IME token-only form
+核能沉积	nuclear-heating	zh	alias	energy deposition zh
+
+光子输运	photon-transport	zh	preferred	preferred zh
+photon transport	photon-transport	en	preferred	preferred en (phrase)
+photon-transport	photon-transport	en	alias	IME token-only form
+gamma transport	photon-transport	en	alias	common synonym
+
+剂量率分布图	dose-rate-mapping	zh	preferred	preferred zh
+dose rate mapping	dose-rate-mapping	en	preferred	preferred en (phrase)
+dose-rate-mapping	dose-rate-mapping	en	alias	IME token-only form
+
+# ---- Fusion economics & roadmap (聚变经济与路线图)
+聚变电站	fusion-power-plant	zh	preferred	preferred zh
+fusion power plant	fusion-power-plant	en	preferred	preferred en (phrase)
+fusion-power-plant	fusion-power-plant	en	alias	IME token-only form
+FPP	fusion-power-plant	abbr	preferred	canonical abbr
+
+聚变试验电站	fusion-pilot-plant	zh	preferred	preferred zh
+fusion pilot plant	fusion-pilot-plant	en	preferred	preferred en (phrase)
+fusion-pilot-plant	fusion-pilot-plant	en	alias	IME token-only form
+
+电力成本	cost-of-electricity	zh	preferred	preferred zh
+cost of electricity	cost-of-electricity	en	preferred	preferred en (phrase)
+cost-of-electricity	cost-of-electricity	en	alias	IME token-only form
+COE	cost-of-electricity	abbr	preferred	canonical abbr
+
+技术就绪度	technology-readiness-level	zh	preferred	preferred zh
+technology readiness level	technology-readiness-level	en	preferred	preferred en (phrase)
+technology-readiness-level	technology-readiness-level	en	alias	IME token-only form
+TRL	technology-readiness-level	abbr	preferred	canonical abbr
+
+可用率	availability	zh	preferred	preferred zh
+availability	availability	en	preferred	preferred en
+
+容量因子	capacity-factor	zh	preferred	preferred zh
+capacity factor	capacity-factor	en	preferred	preferred en (phrase)
+capacity-factor	capacity-factor	en	alias	IME token-only form
+
+电站寿命	plant-lifetime	zh	preferred	preferred zh
+plant lifetime	plant-lifetime	en	preferred	preferred en (phrase)
+plant-lifetime	plant-lifetime	en	alias	IME token-only form
+
+隔夜建设成本	overnight-capital-cost	zh	preferred	preferred zh
+overnight capital cost	overnight-capital-cost	en	preferred	preferred en (phrase)
+overnight-capital-cost	overnight-capital-cost	en	alias	IME token-only form
+
+平准化成本	levelized-cost	zh	preferred	preferred zh
+levelized cost	levelized-cost	en	preferred	preferred en (phrase)
+levelized-cost	levelized-cost	en	alias	IME token-only form
+LCOE	levelized-cost	abbr	preferred	canonical abbr
+levelized cost of energy	levelized-cost	en	alias	full expansion
+
+聚变增益因子	fusion-gain	zh	preferred	preferred zh
+fusion gain	fusion-gain	en	preferred	preferred en (phrase)
+fusion-gain	fusion-gain	en	alias	IME token-only form
+
+工程增益因子	engineering-gain	zh	preferred	preferred zh
+engineering gain	engineering-gain	en	preferred	preferred en (phrase)
+engineering-gain	engineering-gain	en	alias	IME token-only form
+Qeng	engineering-gain	abbr	preferred	canonical abbr
+
+循环功率	recirculating-power	zh	preferred	preferred zh
+recirculating power	recirculating-power	en	preferred	preferred en (phrase)
+recirculating-power	recirculating-power	en	alias	IME token-only form
+再循环功率	recirculating-power	zh	alias	zh variant
+
+净电功率	net-electric-power	zh	preferred	preferred zh
+net electric power	net-electric-power	en	preferred	preferred en (phrase)
+net-electric-power	net-electric-power	en	alias	IME token-only form
+Pnet	net-electric-power	abbr	preferred	canonical abbr
+
+氚自持	tritium-self-sufficiency	zh	preferred	preferred zh
+tritium self-sufficiency	tritium-self-sufficiency	en	preferred	preferred en (phrase)
+tritium-self-sufficiency	tritium-self-sufficiency	en	alias	IME token-only form
+
+氚启动存量	tritium-startup-inventory	zh	preferred	preferred zh
+tritium startup inventory	tritium-startup-inventory	en	preferred	preferred en (phrase)
+tritium-startup-inventory	tritium-startup-inventory	en	alias	IME token-only form
+
+许可证	licensing	zh	preferred	preferred zh
+licensing	licensing	en	preferred	preferred en
+许可	licensing	zh	alias	short zh form
+
+聚变路线图	fusion-roadmap	zh	preferred	preferred zh
+fusion roadmap	fusion-roadmap	en	preferred	preferred en (phrase)
+fusion-roadmap	fusion-roadmap	en	alias	IME token-only form
+
+ITER到DEMO	iter-to-demo	zh	preferred	preferred zh
+ITER-to-DEMO	iter-to-demo	en	preferred	preferred en
+
+公众接受度	public-acceptance	zh	preferred	preferred zh
+public acceptance	public-acceptance	en	preferred	preferred en (phrase)
+public-acceptance	public-acceptance	en	alias	IME token-only form
+
+监管框架	regulatory-framework	zh	preferred	preferred zh
+regulatory framework	regulatory-framework	en	preferred	preferred en (phrase)
+regulatory-framework	regulatory-framework	en	alias	IME token-only form
+
+# ---- Fusion safety & waste (聚变安全与废物)
+衰变热	decay-heat	zh	preferred	preferred zh
+decay heat	decay-heat	en	preferred	preferred en (phrase)
+decay-heat	decay-heat	en	alias	IME token-only form
+余热	decay-heat	zh	alias	zh short form (context-dependent)
+
+失冷事故	loss-of-coolant-accident	zh	preferred	preferred zh
+loss-of-coolant accident	loss-of-coolant-accident	en	preferred	preferred en (phrase)
+loss-of-coolant-accident	loss-of-coolant-accident	en	alias	IME token-only form
+LOCA	loss-of-coolant-accident	abbr	preferred	canonical abbr
+
+失流事故	loss-of-flow-accident	zh	preferred	preferred zh
+loss-of-flow accident	loss-of-flow-accident	en	preferred	preferred en (phrase)
+loss-of-flow-accident	loss-of-flow-accident	en	alias	IME token-only form
+LOFA	loss-of-flow-accident	abbr	preferred	canonical abbr
+
+真空室内失冷事故	in-vessel-loca	zh	preferred	preferred zh
+in-vessel LOCA	in-vessel-loca	en	preferred	preferred en (phrase)
+in-vessel-loca	in-vessel-loca	en	alias	IME token-only form
+
+真空室外失冷事故	ex-vessel-loca	zh	preferred	preferred zh
+ex-vessel LOCA	ex-vessel-loca	en	preferred	preferred en (phrase)
+ex-vessel-loca	ex-vessel-loca	en	alias	IME token-only form
+
+低放废物	low-level-waste	zh	preferred	preferred zh
+low-level waste	low-level-waste	en	preferred	preferred en (phrase)
+low-level-waste	low-level-waste	en	alias	IME token-only form
+LLW	low-level-waste	abbr	preferred	canonical abbr
+
+中放废物	intermediate-level-waste	zh	preferred	preferred zh
+intermediate-level waste	intermediate-level-waste	en	preferred	preferred en (phrase)
+intermediate-level-waste	intermediate-level-waste	en	alias	IME token-only form
+ILW	intermediate-level-waste	abbr	preferred	canonical abbr
+
+高放废物	high-level-waste	zh	preferred	preferred zh
+high-level waste	high-level-waste	en	preferred	preferred en (phrase)
+high-level-waste	high-level-waste	en	alias	IME token-only form
+HLW	high-level-waste	abbr	preferred	canonical abbr
+
+清洁解控	clearance	zh	preferred	preferred zh
+clearance	clearance	en	preferred	preferred en
+
+再循环	recycling	zh	preferred	preferred zh
+recycling	recycling	en	preferred	preferred en
+
+废物分级	waste-classification	zh	preferred	preferred zh
+waste classification	waste-classification	en	preferred	preferred en (phrase)
+waste-classification	waste-classification	en	alias	IME token-only form
+放射性废物分类	waste-classification	zh	alias	expanded zh form
+
+氢安全	hydrogen-safety	zh	preferred	preferred zh
+hydrogen safety	hydrogen-safety	en	preferred	preferred en (phrase)
+hydrogen-safety	hydrogen-safety	en	alias	IME token-only form
+氚安全	hydrogen-safety	zh	alias	tritium safety zh
+
+包容屏障	confinement-barrier	zh	preferred	preferred zh
+confinement barrier	confinement-barrier	en	preferred	preferred en (phrase)
+confinement-barrier	confinement-barrier	en	alias	IME token-only form
+
+安全论证	safety-case	zh	preferred	preferred zh
+safety case	safety-case	en	preferred	preferred en (phrase)
+safety-case	safety-case	en	alias	IME token-only form
+
+设计基准事故	design-basis-accident	zh	preferred	preferred zh
+design basis accident	design-basis-accident	en	preferred	preferred en (phrase)
+design-basis-accident	design-basis-accident	en	alias	IME token-only form
+DBA	design-basis-accident	abbr	preferred	canonical abbr
+
+# ---- Power conversion & balance of plant (功率转化与电厂辅助系统)
+蒸汽发生器	steam-generator	zh	preferred	preferred zh
+steam generator	steam-generator	en	preferred	preferred en (phrase)
+steam-generator	steam-generator	en	alias	IME token-only form
+SG	steam-generator	abbr	alias	abbr (ambiguous; keep as alias)
+
+换热器	heat-exchanger	zh	preferred	preferred zh
+heat exchanger	heat-exchanger	en	preferred	preferred en (phrase)
+heat-exchanger	heat-exchanger	en	alias	IME token-only form
+HX	heat-exchanger	abbr	alias	abbr
+
+朗肯循环	rankine-cycle	zh	preferred	preferred zh
+Rankine cycle	rankine-cycle	en	preferred	preferred en (phrase)
+rankine-cycle	rankine-cycle	en	alias	IME token-only form
+
+布雷顿循环	brayton-cycle	zh	preferred	preferred zh
+Brayton cycle	brayton-cycle	en	preferred	preferred en (phrase)
+brayton-cycle	brayton-cycle	en	alias	IME token-only form
+
+超临界二氧化碳循环	supercritical-co2-cycle	zh	preferred	preferred zh
+supercritical CO2 cycle	supercritical-co2-cycle	en	preferred	preferred en (phrase)
+supercritical-co2-cycle	supercritical-co2-cycle	en	alias	IME token-only form
+sCO2	supercritical-co2-cycle	abbr	preferred	canonical abbr
+超临界CO2循环	supercritical-co2-cycle	zh	alias	zh short variant
+
+汽轮机	steam-turbine	zh	preferred	preferred zh
+steam turbine	steam-turbine	en	preferred	preferred en (phrase)
+steam-turbine	steam-turbine	en	alias	IME token-only form
+
+燃气轮机	gas-turbine	zh	preferred	preferred zh
+gas turbine	gas-turbine	en	preferred	preferred en (phrase)
+gas-turbine	gas-turbine	en	alias	IME token-only form
+
+凝汽器	condenser	zh	preferred	preferred zh
+condenser	condenser	en	preferred	preferred en
+
+冷却塔	cooling-tower	zh	preferred	preferred zh
+cooling tower	cooling-tower	en	preferred	preferred en (phrase)
+cooling-tower	cooling-tower	en	alias	IME token-only form
+
+一回路	primary-loop	zh	preferred	preferred zh
+primary loop	primary-loop	en	preferred	preferred en (phrase)
+primary-loop	primary-loop	en	alias	IME token-only form
+primary coolant loop	primary-loop	en	alias	expanded form
+
+二回路	secondary-loop	zh	preferred	preferred zh
+secondary loop	secondary-loop	en	preferred	preferred en (phrase)
+secondary-loop	secondary-loop	en	alias	IME token-only form
+
+中间换热器	intermediate-heat-exchanger	zh	preferred	preferred zh
+intermediate heat exchanger	intermediate-heat-exchanger	en	preferred	preferred en (phrase)
+intermediate-heat-exchanger	intermediate-heat-exchanger	en	alias	IME token-only form
+IHX	intermediate-heat-exchanger	abbr	preferred	canonical abbr
+
+热效率	thermal-efficiency	zh	preferred	preferred zh
+thermal efficiency	thermal-efficiency	en	preferred	preferred en (phrase)
+thermal-efficiency	thermal-efficiency	en	alias	IME token-only form
+
+总电功率	gross-electric-power	zh	preferred	preferred zh
+gross electric power	gross-electric-power	en	preferred	preferred en (phrase)
+gross-electric-power	gross-electric-power	en	alias	IME token-only form
+
+热功率	thermal-power	zh	preferred	preferred zh
+thermal power	thermal-power	en	preferred	preferred en (phrase)
+thermal-power	thermal-power	en	alias	IME token-only form
+
+厂用电	auxiliary-power	zh	preferred	preferred zh
+auxiliary power	auxiliary-power	en	preferred	preferred en (phrase)
+auxiliary-power	auxiliary-power	en	alias	IME token-only form
+自用电	auxiliary-power	zh	alias	zh variant
+
+电站辅助系统	balance-of-plant	zh	preferred	preferred zh
+balance of plant	balance-of-plant	en	preferred	preferred en (phrase)
+balance-of-plant	balance-of-plant	en	alias	IME token-only form
+BOP	balance-of-plant	abbr	preferred	canonical abbr
+
+电源系统	power-supply	zh	preferred	preferred zh
+power supply	power-supply	en	preferred	preferred en (phrase)
+power-supply	power-supply	en	alias	IME token-only form
+
+水处理系统	water-treatment	zh	preferred	preferred zh
+water treatment	water-treatment	en	preferred	preferred en (phrase)
+water-treatment	water-treatment	en	alias	IME token-only form
+
+暖通空调	hvac	zh	preferred	preferred zh
+HVAC	hvac	abbr	preferred	canonical abbr
+heating ventilation and air conditioning	hvac	en	alias	full expansion
+
+余热回收	waste-heat-recovery	zh	preferred	preferred zh
+waste heat recovery	waste-heat-recovery	en	preferred	preferred en (phrase)
+waste-heat-recovery	waste-heat-recovery	en	alias	IME token-only form
+
+电网接入	electrical-grid-connection	zh	preferred	preferred zh
+electrical grid connection	electrical-grid-connection	en	preferred	preferred en (phrase)
+electrical-grid-connection	electrical-grid-connection	en	alias	IME token-only form
+并网	electrical-grid-connection	zh	alias	common zh short form
+
+电站布局	plant-layout	zh	preferred	preferred zh
+plant layout	plant-layout	en	preferred	preferred en (phrase)
+plant-layout	plant-layout	en	alias	IME token-only form
+
+退役	decommissioning	zh	preferred	preferred zh
+decommissioning	decommissioning	en	preferred	preferred en

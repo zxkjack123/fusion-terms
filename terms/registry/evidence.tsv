@@ -37,3 +37,481 @@ public-exposure	internal:BEST:radiation-protection			2026-02-11
 effective-dose	internal:BEST:radiation-protection			2026-02-11
 equivalent-dose	internal:BEST:radiation-protection			2026-02-11
 derived-air-concentration	internal:BEST:radiation-protection			2026-02-11
+
+# ---- Plasma physics
+plasma-confinement	https://en.wikipedia.org/wiki/Plasma_confinement			2026-03-16
+magnetic-confinement	https://en.wikipedia.org/wiki/Magnetic_confinement_fusion			2026-03-16
+plasma-equilibrium	internal:plasma-physics:equilibrium			2026-03-16
+magnetohydrodynamics	https://en.wikipedia.org/wiki/Magnetohydrodynamics			2026-03-16
+plasma-instability	https://en.wikipedia.org/wiki/Plasma_stability			2026-03-16
+edge-localized-mode	https://en.wikipedia.org/wiki/Edge-localized_mode			2026-03-16
+disruption	https://en.wikipedia.org/wiki/Tokamak#Disruptions			2026-03-16
+runaway-electron	internal:plasma-physics:runaway-electrons			2026-03-16
+plasma-current	internal:plasma-physics:plasma-current			2026-03-16
+bootstrap-current	https://en.wikipedia.org/wiki/Bootstrap_current			2026-03-16
+ohmic-heating	internal:plasma-physics:ohmic-heating			2026-03-16
+electron-cyclotron-resonance-heating	https://en.wikipedia.org/wiki/Electron_cyclotron_resonance			2026-03-16
+ion-cyclotron-resonance-heating	internal:plasma-physics:ICRH			2026-03-16
+lower-hybrid-current-drive	internal:plasma-physics:LHCD			2026-03-16
+h-mode	https://en.wikipedia.org/wiki/High-confinement_mode			2026-03-16
+l-mode	internal:plasma-physics:confinement-modes			2026-03-16
+pedestal	internal:plasma-physics:pedestal			2026-03-16
+scrape-off-layer	https://en.wikipedia.org/wiki/Scrape-off_layer			2026-03-16
+separatrix	internal:plasma-physics:magnetic-topology			2026-03-16
+x-point	internal:plasma-physics:magnetic-topology			2026-03-16
+magnetic-island	https://en.wikipedia.org/wiki/Magnetic_island			2026-03-16
+neoclassical-tearing-mode	internal:plasma-physics:NTM			2026-03-16
+sawtooth	https://en.wikipedia.org/wiki/Sawtooth_wave#Plasma_physics			2026-03-16
+plasma-density	internal:plasma-physics:plasma-parameters			2026-03-16
+plasma-temperature	internal:plasma-physics:plasma-parameters			2026-03-16
+greenwald-density	internal:plasma-physics:density-limit			2026-03-16
+poloidal-beta	internal:plasma-physics:plasma-parameters			2026-03-16
+plasma-shaping	internal:plasma-physics:plasma-control			2026-03-16
+vertical-displacement-event	internal:plasma-physics:disruption-phenomena			2026-03-16
+
+# ---- Plasma-wall interaction
+plasma-facing-component	https://en.wikipedia.org/wiki/Plasma-facing_material			2026-03-16
+first-wall	https://en.wikipedia.org/wiki/First_wall			2026-03-16
+divertor	https://en.wikipedia.org/wiki/Divertor			2026-03-16
+sputtering	https://en.wikipedia.org/wiki/Sputtering			2026-03-16
+erosion	internal:plasma-wall:erosion-redeposition			2026-03-16
+redeposition	internal:plasma-wall:erosion-redeposition			2026-03-16
+fuel-retention	internal:plasma-wall:fuel-retention			2026-03-16
+heat-flux	internal:plasma-wall:thermal-loads			2026-03-16
+heat-load	internal:plasma-wall:thermal-loads			2026-03-16
+plasma-detachment	internal:plasma-wall:divertor-detachment			2026-03-16
+impurity-seeding	internal:plasma-wall:divertor-detachment			2026-03-16
+limiter	https://en.wikipedia.org/wiki/Limiter			2026-03-16
+blanket	https://en.wikipedia.org/wiki/Breeding_blanket			2026-03-16
+breeding-blanket	https://en.wikipedia.org/wiki/Breeding_blanket			2026-03-16
+tritium-breeding-ratio	internal:TRITIUM-CYCLE:TBR			2026-03-16
+carbon-fiber-composite	internal:plasma-wall:PFC-materials			2026-03-16
+plasma-surface-interaction	internal:plasma-wall:PSI			2026-03-16
+blistering	internal:plasma-wall:surface-damage			2026-03-16
+
+# ---- Plasma diagnostics
+interferometry	internal:diagnostics:density-measurement			2026-03-16
+langmuir-probe	https://en.wikipedia.org/wiki/Langmuir_probe			2026-03-16
+bolometer	internal:diagnostics:radiation-measurement			2026-03-16
+electron-cyclotron-emission	internal:diagnostics:ECE			2026-03-16
+charge-exchange-recombination-spectroscopy	internal:diagnostics:CXRS			2026-03-16
+soft-x-ray	internal:diagnostics:SXR			2026-03-16
+reflectometry	internal:diagnostics:density-measurement			2026-03-16
+magnetic-diagnostics	internal:diagnostics:magnetic			2026-03-16
+neutron-diagnostics	internal:diagnostics:neutron			2026-03-16
+spectroscopy	internal:diagnostics:spectroscopy			2026-03-16
+motional-stark-effect	internal:diagnostics:MSE			2026-03-16
+far-infrared-polarimetry	internal:diagnostics:FIR-polarimetry			2026-03-16
+
+# ---- Superconducting magnets
+nbti	https://en.wikipedia.org/wiki/Niobium%E2%80%93titanium			2026-03-16
+rebco	https://en.wikipedia.org/wiki/Rare-earth_barium_copper_oxide			2026-03-16
+high-temperature-superconductor	https://en.wikipedia.org/wiki/High-temperature_superconductivity			2026-03-16
+low-temperature-superconductor	internal:magnets:superconductor-types			2026-03-16
+toroidal-field-coil	internal:magnets:TF-coil			2026-03-16
+poloidal-field-coil	internal:magnets:PF-coil			2026-03-16
+central-solenoid	internal:magnets:central-solenoid			2026-03-16
+quench	https://en.wikipedia.org/wiki/Quench_(superconductivity)			2026-03-16
+quench-detection	internal:magnets:quench-protection			2026-03-16
+quench-protection	internal:magnets:quench-protection			2026-03-16
+critical-current	internal:magnets:superconductor-parameters			2026-03-16
+critical-temperature	internal:magnets:superconductor-parameters			2026-03-16
+critical-magnetic-field	internal:magnets:superconductor-parameters			2026-03-16
+cryostat	https://en.wikipedia.org/wiki/Cryostat			2026-03-16
+cable-in-conduit-conductor	internal:magnets:CICC			2026-03-16
+magnet-feeder	internal:magnets:feeder-system			2026-03-16
+superconducting-joint	internal:magnets:joints			2026-03-16
+cryoplant	internal:magnets:cryogenics			2026-03-16
+current-lead	internal:magnets:current-leads			2026-03-16
+magnetic-stored-energy	internal:magnets:stored-energy			2026-03-16
+
+# ---- Stellarator
+stellarator	https://en.wikipedia.org/wiki/Stellarator			2026-03-16
+modular-coil	internal:stellarator:coil-design			2026-03-16
+rotational-transform	internal:stellarator:magnetic-geometry			2026-03-16
+magnetic-well	internal:stellarator:stability			2026-03-16
+neoclassical-transport	internal:stellarator:transport			2026-03-16
+stellarator-optimization	internal:stellarator:optimization			2026-03-16
+quasi-symmetry	internal:stellarator:optimization			2026-03-16
+quasi-helical-symmetry	internal:stellarator:optimization			2026-03-16
+quasi-axisymmetry	internal:stellarator:optimization			2026-03-16
+quasi-isodynamic	internal:stellarator:optimization			2026-03-16
+wendelstein-7x	https://en.wikipedia.org/wiki/Wendelstein_7-X			2026-03-16
+helically-symmetric-experiment	https://en.wikipedia.org/wiki/Helically_Symmetric_Experiment			2026-03-16
+large-helical-device	https://en.wikipedia.org/wiki/Large_Helical_Device			2026-03-16
+island-divertor	internal:stellarator:divertor			2026-03-16
+bootstrap-current-optimization	internal:stellarator:optimization			2026-03-16
+coil-complexity	internal:stellarator:coil-design			2026-03-16
+
+# ---- Reversed field pinch
+reversed-field-pinch	https://en.wikipedia.org/wiki/Reversed-field_pinch			2026-03-16
+rfx-mod	https://en.wikipedia.org/wiki/Reversed-field_pinch#RFX-mod			2026-03-16
+dynamo-effect	internal:rfp:self-organization			2026-03-16
+single-helical-state	internal:rfp:self-organization			2026-03-16
+pulsed-poloidal-current-drive	internal:rfp:current-drive			2026-03-16
+tearing-mode	https://en.wikipedia.org/wiki/Tearing_mode			2026-03-16
+resistive-wall-mode	internal:mhd:stability			2026-03-16
+
+# ---- Field-reversed configuration
+field-reversed-configuration	https://en.wikipedia.org/wiki/Field-reversed_configuration			2026-03-16
+theta-pinch	https://en.wikipedia.org/wiki/Theta_pinch			2026-03-16
+compact-toroid	https://en.wikipedia.org/wiki/Compact_toroid			2026-03-16
+spheromak	https://en.wikipedia.org/wiki/Spheromak			2026-03-16
+flux-confinement	internal:frc:confinement			2026-03-16
+translation	internal:frc:plasmoid-dynamics			2026-03-16
+rotational-instability	internal:frc:stability			2026-03-16
+c-2w	internal:frc:TAE			2026-03-16
+magneto-inertial-fusion	https://en.wikipedia.org/wiki/Magnetized_target_fusion			2026-03-16
+
+# ---- Inertial confinement fusion
+inertial-confinement-fusion	https://en.wikipedia.org/wiki/Inertial_confinement_fusion			2026-03-16
+laser-driven-fusion	internal:icf:laser-fusion			2026-03-16
+direct-drive	internal:icf:direct-drive			2026-03-16
+indirect-drive	internal:icf:indirect-drive			2026-03-16
+hohlraum	https://en.wikipedia.org/wiki/Hohlraum			2026-03-16
+fuel-capsule	internal:icf:target-design			2026-03-16
+ablator	internal:icf:target-design			2026-03-16
+rayleigh-taylor-instability	https://en.wikipedia.org/wiki/Rayleigh%E2%80%93Taylor_instability			2026-03-16
+ignition	internal:icf:ignition			2026-03-16
+lawson-criterion	https://en.wikipedia.org/wiki/Lawson_criterion			2026-03-16
+energy-gain	internal:fusion:energy-gain			2026-03-16
+nif	https://en.wikipedia.org/wiki/National_Ignition_Facility			2026-03-16
+z-pinch	https://en.wikipedia.org/wiki/Z-pinch			2026-03-16
+heavy-ion-fusion	https://en.wikipedia.org/wiki/Heavy_ion_fusion			2026-03-16
+fast-ignition	internal:icf:fast-ignition			2026-03-16
+shock-ignition	internal:icf:shock-ignition			2026-03-16
+target-fabrication	internal:icf:target-fab			2026-03-16
+cryogenic-target	internal:icf:target-fab			2026-03-16
+laser-plasma-interaction	internal:icf:LPI			2026-03-16
+
+# ---- Other alternative / compact fusion concepts
+spherical-tokamak	https://en.wikipedia.org/wiki/Spherical_tokamak			2026-03-16
+dense-plasma-focus	https://en.wikipedia.org/wiki/Dense_plasma_focus			2026-03-16
+mirror-machine	https://en.wikipedia.org/wiki/Magnetic_mirror			2026-03-16
+magnetic-mirror	https://en.wikipedia.org/wiki/Magnetic_mirror			2026-03-16
+tandem-mirror	https://en.wikipedia.org/wiki/Tandem_mirror			2026-03-16
+plasma-gun	internal:compact-fusion:plasma-gun			2026-03-16
+muon-catalyzed-fusion	https://en.wikipedia.org/wiki/Muon-catalyzed_fusion			2026-03-16
+
+# ---- Proton-boron (p-B11) fusion / ENN pathway
+proton-boron-fusion	https://en.wikipedia.org/wiki/Aneutronic_fusion#Proton%E2%80%93boron-11			2026-03-16
+aneutronic-fusion	https://en.wikipedia.org/wiki/Aneutronic_fusion			2026-03-16
+advanced-fuel	internal:pB-fuel-cycle:advanced-fuels			2026-03-16
+coulomb-barrier	https://en.wikipedia.org/wiki/Coulomb_barrier			2026-03-16
+fusion-cross-section	internal:pB-fuel-cycle:cross-sections			2026-03-16
+fusion-reactivity	internal:pB-fuel-cycle:reactivity			2026-03-16
+alpha-particle	https://en.wikipedia.org/wiki/Alpha_particle			2026-03-16
+alpha-channeling	internal:pB-fuel-cycle:alpha-channeling			2026-03-16
+bremsstrahlung	https://en.wikipedia.org/wiki/Bremsstrahlung			2026-03-16
+synchrotron-radiation	https://en.wikipedia.org/wiki/Synchrotron_radiation			2026-03-16
+radiation-loss	internal:pB-fuel-cycle:power-balance			2026-03-16
+power-balance	internal:pB-fuel-cycle:power-balance			2026-03-16
+direct-energy-conversion	https://en.wikipedia.org/wiki/Direct_energy_conversion			2026-03-16
+traveling-wave-direct-energy-converter	internal:pB-fuel-cycle:TWDEC			2026-03-16
+plasma-beta	internal:plasma-physics:plasma-parameters			2026-03-16
+high-beta	internal:pB-fuel-cycle:high-beta-regime			2026-03-16
+enn	internal:pB-fuel-cycle:ENN			2026-03-16
+enn-compact-fusion	internal:pB-fuel-cycle:ENN-devices			2026-03-16
+rexie	internal:pB-fuel-cycle:ENN-devices			2026-03-16
+kmax	internal:pB-fuel-cycle:ENN-devices			2026-03-16
+enn-cst	internal:pB-fuel-cycle:ENN-devices			2026-03-16
+exl-50	internal:pB-fuel-cycle:ENN-devices			2026-03-16
+rotating-magnetic-field	internal:pB-fuel-cycle:FRC-current-drive			2026-03-16
+odd-parity-rotating-magnetic-field	internal:pB-fuel-cycle:FRC-current-drive			2026-03-16
+neutral-beam-driven-frc	internal:pB-fuel-cycle:FRC-sustainment			2026-03-16
+frc-merging	internal:pB-fuel-cycle:FRC-formation			2026-03-16
+ion-temperature	internal:plasma-physics:plasma-parameters			2026-03-16
+electron-temperature	internal:plasma-physics:plasma-parameters			2026-03-16
+hot-ion-mode	internal:pB-fuel-cycle:hot-ion-mode			2026-03-16
+beam-target-fusion	internal:pB-fuel-cycle:reaction-regimes			2026-03-16
+thermonuclear-fusion	https://en.wikipedia.org/wiki/Thermonuclear_fusion			2026-03-16
+beam-beam-fusion	internal:pB-fuel-cycle:reaction-regimes			2026-03-16
+non-thermal-plasma	internal:pB-fuel-cycle:reaction-regimes			2026-03-16
+spin-polarized-fuel	internal:pB-fuel-cycle:polarized-fuel			2026-03-16
+magnetic-nozzle	internal:pB-fuel-cycle:DEC			2026-03-16
+dielectric-wall-accelerator	internal:pB-fuel-cycle:DWA			2026-03-16
+electrostatic-confinement	https://en.wikipedia.org/wiki/Inertial_electrostatic_confinement			2026-03-16
+plasma-facing-material	internal:plasma-wall:PFM			2026-03-16
+
+# ---- Fusion engineering: vacuum & structures
+vacuum-vessel	internal:engineering:vacuum-vessel			2026-03-16
+thermal-shield	internal:engineering:thermal-shield			2026-03-16
+biological-shield	internal:engineering:bio-shield			2026-03-16
+remote-handling	https://en.wikipedia.org/wiki/Remote_handling			2026-03-16
+remote-maintenance	internal:engineering:remote-maintenance			2026-03-16
+hot-cell	internal:engineering:hot-cell			2026-03-16
+
+# ---- Fusion engineering: tritium systems
+tritium-plant	internal:TRITIUM-CYCLE:tritium-plant			2026-03-16
+permeation	internal:TRITIUM-CYCLE:permeation			2026-03-16
+detritiation	internal:TRITIUM-CYCLE:detritiation			2026-03-16
+tritium-inventory	internal:TRITIUM-CYCLE:inventory			2026-03-16
+
+# ---- Fusion engineering: breeding materials
+lithium-lead	internal:engineering:breeder-materials			2026-03-16
+lithium-titanate	internal:engineering:breeder-materials			2026-03-16
+lithium-orthosilicate	internal:engineering:breeder-materials			2026-03-16
+neutron-multiplier	internal:engineering:neutron-multiplier			2026-03-16
+
+# ---- Fusion engineering: structural materials
+rafm-steel	internal:engineering:structural-materials			2026-03-16
+eurofer	internal:engineering:structural-materials			2026-03-16
+clf-1	internal:engineering:structural-materials			2026-03-16
+clam	internal:engineering:structural-materials			2026-03-16
+vanadium-alloy	internal:engineering:structural-materials			2026-03-16
+sic-sic-composite	internal:engineering:structural-materials			2026-03-16
+ods-steel	internal:engineering:structural-materials			2026-03-16
+
+# ---- Fusion engineering: coolant concepts
+helium-cooled	internal:engineering:coolant			2026-03-16
+water-cooled	internal:engineering:coolant			2026-03-16
+liquid-metal-coolant	internal:engineering:coolant			2026-03-16
+
+# ---- Fusion engineering: blanket concepts
+hccb	internal:engineering:blanket-concepts			2026-03-16
+wccb	internal:engineering:blanket-concepts			2026-03-16
+hcll	internal:engineering:blanket-concepts			2026-03-16
+hcpb	internal:engineering:blanket-concepts			2026-03-16
+dcll	internal:engineering:blanket-concepts			2026-03-16
+tbm	internal:engineering:blanket-concepts			2026-03-16
+
+# ---- Fusion engineering: neutronics & irradiation
+neutron-wall-loading	internal:engineering:neutronics			2026-03-16
+dpa	internal:engineering:irradiation-damage			2026-03-16
+transmutation	https://en.wikipedia.org/wiki/Nuclear_transmutation			2026-03-16
+activation-analysis	internal:engineering:neutronics			2026-03-16
+shutdown-dose-rate	internal:engineering:SDDR			2026-03-16
+neutron-source	internal:engineering:neutron-source			2026-03-16
+ifmif	https://en.wikipedia.org/wiki/IFMIF			2026-03-16
+dones	internal:engineering:DONES			2026-03-16
+fusion-neutron	internal:engineering:DT-neutron			2026-03-16
+
+# ---- Major fusion devices
+cfetr	internal:CFETRCOOLACT:CFETR			2026-03-16
+demo	https://en.wikipedia.org/wiki/DEMOnstration_Power_Plant			2026-03-16
+jet	https://en.wikipedia.org/wiki/Joint_European_Torus			2026-03-16
+jt-60sa	https://en.wikipedia.org/wiki/JT-60			2026-03-16
+diii-d	https://en.wikipedia.org/wiki/DIII-D_(tokamak)			2026-03-16
+asdex-upgrade	https://en.wikipedia.org/wiki/ASDEX_Upgrade			2026-03-16
+hl-2a	internal:devices:HL-2A			2026-03-16
+hl-2m	internal:devices:HL-2M			2026-03-16
+kstar	https://en.wikipedia.org/wiki/KSTAR			2026-03-16
+sparc	https://en.wikipedia.org/wiki/SPARC_(tokamak)			2026-03-16
+arc	internal:devices:ARC			2026-03-16
+step	internal:devices:STEP			2026-03-16
+nstx-u	https://en.wikipedia.org/wiki/National_Spherical_Torus_Experiment			2026-03-16
+mast-u	https://en.wikipedia.org/wiki/Mega_Ampere_Spherical_Tokamak			2026-03-16
+cfetrcoolact	internal:CFETRCOOLACT:BEST			2026-03-16
+sg-iii	internal:devices:SG-III			2026-03-16
+omega	https://en.wikipedia.org/wiki/OMEGA_laser			2026-03-16
+laser-megajoule	https://en.wikipedia.org/wiki/Laser_M%C3%A9gajoule			2026-03-16
+
+# ---- Plasma control & operation
+plasma-control	internal:plasma-control:overview			2026-03-16
+real-time-control	internal:plasma-control:real-time			2026-03-16
+plasma-position-control	internal:plasma-control:position			2026-03-16
+shape-control	internal:plasma-control:shape			2026-03-16
+steady-state-operation	internal:plasma-control:steady-state			2026-03-16
+long-pulse	internal:plasma-control:long-pulse			2026-03-16
+advanced-tokamak	https://en.wikipedia.org/wiki/Advanced_tokamak			2026-03-16
+hybrid-scenario	internal:plasma-control:scenarios			2026-03-16
+inductive-operation	internal:plasma-control:scenarios			2026-03-16
+non-inductive-operation	internal:plasma-control:scenarios			2026-03-16
+density-control	internal:plasma-control:density			2026-03-16
+pellet-injection	https://en.wikipedia.org/wiki/Pellet_injection			2026-03-16
+gas-puffing	internal:plasma-control:fueling			2026-03-16
+supersonic-molecular-beam-injection	internal:plasma-control:fueling			2026-03-16
+elm-suppression	internal:plasma-control:ELM			2026-03-16
+elm-mitigation	internal:plasma-control:ELM			2026-03-16
+resonant-magnetic-perturbation	internal:plasma-control:RMP			2026-03-16
+quiescent-h-mode	internal:plasma-control:QH-mode			2026-03-16
+disruption-prediction	internal:plasma-control:disruption			2026-03-16
+disruption-mitigation	internal:plasma-control:disruption			2026-03-16
+shattered-pellet-injection	internal:plasma-control:disruption			2026-03-16
+massive-gas-injection	internal:plasma-control:disruption			2026-03-16
+impurity-transport	internal:plasma-physics:transport			2026-03-16
+particle-confinement-time	internal:plasma-physics:transport			2026-03-16
+current-profile-control	internal:plasma-control:current-profile			2026-03-16
+
+# ---- Plasma theory & simulation
+gyrokinetics	https://en.wikipedia.org/wiki/Gyrokinetics			2026-03-16
+drift-kinetics	internal:theory:drift-kinetics			2026-03-16
+turbulent-transport	internal:theory:turbulence			2026-03-16
+transport-barrier	internal:theory:transport-barrier			2026-03-16
+internal-transport-barrier	internal:theory:ITB			2026-03-16
+flux-surface	internal:theory:magnetic-geometry			2026-03-16
+safety-factor	internal:theory:safety-factor			2026-03-16
+q-profile	internal:theory:q-profile			2026-03-16
+equilibrium-reconstruction	internal:theory:equilibrium			2026-03-16
+grad-shafranov-equation	https://en.wikipedia.org/wiki/Grad%E2%80%93Shafranov_equation			2026-03-16
+free-boundary-equilibrium	internal:theory:equilibrium			2026-03-16
+resistive-mhd	internal:theory:MHD			2026-03-16
+ideal-mhd	internal:theory:MHD			2026-03-16
+kink-mode	internal:theory:MHD-instabilities			2026-03-16
+ballooning-mode	internal:theory:MHD-instabilities			2026-03-16
+interchange-instability	internal:theory:MHD-instabilities			2026-03-16
+alfven-wave	https://en.wikipedia.org/wiki/Alfv%C3%A9n_wave			2026-03-16
+alfven-eigenmode	internal:theory:Alfven-eigenmodes			2026-03-16
+toroidal-alfven-eigenmode	internal:theory:Alfven-eigenmodes			2026-03-16
+energetic-particle	internal:theory:fast-ions			2026-03-16
+zonal-flow	internal:theory:turbulence			2026-03-16
+geodesic-acoustic-mode	internal:theory:GAM			2026-03-16
+
+# ---- Simulation codes & nuclear data
+efit	internal:codes:EFIT			2026-03-16
+transp	internal:codes:TRANSP			2026-03-16
+astra	internal:codes:ASTRA			2026-03-16
+solps-iter	internal:codes:SOLPS-ITER			2026-03-16
+gene	internal:codes:GENE			2026-03-16
+gtc	internal:codes:GTC			2026-03-16
+bout-pp	internal:codes:BOUT++			2026-03-16
+mcnp	https://en.wikipedia.org/wiki/MCNP			2026-03-16
+openmc	https://openmc.org			2026-03-16
+serpent	internal:codes:Serpent			2026-03-16
+fendl	internal:nuclear-data:FENDL			2026-03-16
+endf	https://en.wikipedia.org/wiki/Evaluated_Nuclear_Data_File			2026-03-16
+comsol	internal:codes:COMSOL			2026-03-16
+ansys	internal:codes:ANSYS			2026-03-16
+catia	internal:codes:CATIA			2026-03-16
+
+# ---- Additional simulation codes: plasma equilibrium / transport / MHD
+corsica	internal:codes:CORSICA			2026-03-16
+imas	internal:codes:IMAS			2026-03-16
+jintrac	internal:codes:JINTRAC			2026-03-16
+gacode	internal:codes:GACODE			2026-03-16
+tgyro	internal:codes:TGYRO			2026-03-16
+gyro	internal:codes:GYRO			2026-03-16
+cgyro	internal:codes:CGYRO			2026-03-16
+gs2	internal:codes:GS2			2026-03-16
+orb5	internal:codes:ORB5			2026-03-16
+gkw	internal:codes:GKW			2026-03-16
+jorek	internal:codes:JOREK			2026-03-16
+nimrod	internal:codes:NIMROD			2026-03-16
+m3d-c1	internal:codes:M3D-C1			2026-03-16
+mars-f	internal:codes:MARS-F			2026-03-16
+nova	internal:codes:NOVA			2026-03-16
+mishka	internal:codes:MISHKA			2026-03-16
+helena	internal:codes:HELENA			2026-03-16
+cliste	internal:codes:CLISTE			2026-03-16
+chease	internal:codes:CHEASE			2026-03-16
+
+# ---- SOL / divertor / edge plasma codes
+eirene	internal:codes:EIRENE			2026-03-16
+solps	internal:codes:SOLPS			2026-03-16
+b2	internal:codes:B2			2026-03-16
+edge2d-eirene	internal:codes:EDGE2D-EIRENE			2026-03-16
+soledge2d	internal:codes:SOLEDGE2D			2026-03-16
+div3d	internal:codes:DIV3D			2026-03-16
+emc3-eirene	internal:codes:EMC3-EIRENE			2026-03-16
+uedge	internal:codes:UEDGE			2026-03-16
+
+# ---- Neutronics / nuclear analysis codes
+fluka	https://en.wikipedia.org/wiki/FLUKA			2026-03-16
+geant4	https://en.wikipedia.org/wiki/Geant4			2026-03-16
+phits	internal:codes:PHITS			2026-03-16
+fispact-ii	internal:codes:FISPACT-II			2026-03-16
+r2smesh	internal:codes:R2Smesh			2026-03-16
+d1s	internal:codes:D1S			2026-03-16
+supermc	internal:codes:SuperMC			2026-03-16
+tripoli	internal:codes:TRIPOLI			2026-03-16
+
+# ---- Nuclear data libraries
+jeff	internal:nuclear-data:JEFF			2026-03-16
+jendl	internal:nuclear-data:JENDL			2026-03-16
+cendl	internal:nuclear-data:CENDL			2026-03-16
+tendl	internal:nuclear-data:TENDL			2026-03-16
+eaf	internal:nuclear-data:EAF			2026-03-16
+irdff	internal:nuclear-data:IRDFF			2026-03-16
+
+# ---- Structural / thermal / EM / multi-physics codes
+abaqus	internal:codes:Abaqus			2026-03-16
+nastran	internal:codes:Nastran			2026-03-16
+fluent	internal:codes:Fluent			2026-03-16
+cfx	internal:codes:CFX			2026-03-16
+openfoam	https://en.wikipedia.org/wiki/OpenFOAM			2026-03-16
+elmer	internal:codes:Elmer			2026-03-16
+opera	internal:codes:Opera			2026-03-16
+
+# ---- Tokamak / systems / design codes
+process	internal:codes:PROCESS			2026-03-16
+sycomore	internal:codes:SYCOMORE			2026-03-16
+mira	internal:codes:MIRA			2026-03-16
+create-nl	internal:codes:CREATE-NL			2026-03-16
+dina	internal:codes:DINA			2026-03-16
+tsc	internal:codes:TSC			2026-03-16
+
+# ---- Numerical methods & computational concepts
+monte-carlo-method	https://en.wikipedia.org/wiki/Monte_Carlo_method			2026-03-16
+finite-element-method	https://en.wikipedia.org/wiki/Finite_element_method			2026-03-16
+finite-volume-method	https://en.wikipedia.org/wiki/Finite_volume_method			2026-03-16
+particle-in-cell	https://en.wikipedia.org/wiki/Particle-in-cell			2026-03-16
+computational-fluid-dynamics	https://en.wikipedia.org/wiki/Computational_fluid_dynamics			2026-03-16
+mesh-generation	internal:numerical:mesh-generation			2026-03-16
+variance-reduction	internal:numerical:variance-reduction			2026-03-16
+weight-window	internal:numerical:weight-window			2026-03-16
+tallying	internal:numerical:tallying			2026-03-16
+cross-section	internal:nuclear-data:cross-section			2026-03-16
+neutron-spectrum	internal:nuclear-data:neutron-spectrum			2026-03-16
+kerma	https://en.wikipedia.org/wiki/Kerma_(physics)			2026-03-16
+nuclear-heating	internal:engineering:nuclear-heating			2026-03-16
+photon-transport	internal:numerical:photon-transport			2026-03-16
+dose-rate-mapping	internal:engineering:dose-rate-mapping			2026-03-16
+fusion-power-plant	internal:economics:fusion-power-plant			2026-03-16
+fusion-pilot-plant	internal:economics:fusion-pilot-plant			2026-03-16
+cost-of-electricity	internal:economics:cost-of-electricity			2026-03-16
+technology-readiness-level	internal:economics:technology-readiness-level			2026-03-16
+availability	internal:economics:availability			2026-03-16
+capacity-factor	internal:economics:capacity-factor			2026-03-16
+plant-lifetime	internal:economics:plant-lifetime			2026-03-16
+overnight-capital-cost	internal:economics:overnight-capital-cost			2026-03-16
+levelized-cost	internal:economics:levelized-cost			2026-03-16
+fusion-gain	internal:economics:fusion-gain			2026-03-16
+engineering-gain	internal:economics:engineering-gain			2026-03-16
+recirculating-power	internal:economics:recirculating-power			2026-03-16
+net-electric-power	internal:economics:net-electric-power			2026-03-16
+tritium-self-sufficiency	internal:economics:tritium-self-sufficiency			2026-03-16
+tritium-startup-inventory	internal:economics:tritium-startup-inventory			2026-03-16
+licensing	internal:economics:licensing			2026-03-16
+fusion-roadmap	internal:economics:fusion-roadmap			2026-03-16
+iter-to-demo	internal:economics:iter-to-demo			2026-03-16
+public-acceptance	internal:economics:public-acceptance			2026-03-16
+regulatory-framework	internal:economics:regulatory-framework			2026-03-16
+decay-heat	internal:safety:decay-heat			2026-03-16
+loss-of-coolant-accident	internal:safety:loss-of-coolant-accident			2026-03-16
+loss-of-flow-accident	internal:safety:loss-of-flow-accident			2026-03-16
+in-vessel-loca	internal:safety:in-vessel-loca			2026-03-16
+ex-vessel-loca	internal:safety:ex-vessel-loca			2026-03-16
+low-level-waste	internal:safety:low-level-waste			2026-03-16
+intermediate-level-waste	internal:safety:intermediate-level-waste			2026-03-16
+high-level-waste	internal:safety:high-level-waste			2026-03-16
+clearance	internal:safety:clearance			2026-03-16
+recycling	internal:safety:recycling			2026-03-16
+waste-classification	internal:safety:waste-classification			2026-03-16
+hydrogen-safety	internal:safety:hydrogen-safety			2026-03-16
+confinement-barrier	internal:safety:confinement-barrier			2026-03-16
+safety-case	internal:safety:safety-case			2026-03-16
+design-basis-accident	internal:safety:design-basis-accident			2026-03-16
+steam-generator	internal:bop:steam-generator			2026-03-16
+heat-exchanger	internal:bop:heat-exchanger			2026-03-16
+rankine-cycle	internal:bop:rankine-cycle			2026-03-16
+brayton-cycle	internal:bop:brayton-cycle			2026-03-16
+supercritical-co2-cycle	internal:bop:supercritical-co2-cycle			2026-03-16
+steam-turbine	internal:bop:steam-turbine			2026-03-16
+gas-turbine	internal:bop:gas-turbine			2026-03-16
+condenser	internal:bop:condenser			2026-03-16
+cooling-tower	internal:bop:cooling-tower			2026-03-16
+primary-loop	internal:bop:primary-loop			2026-03-16
+secondary-loop	internal:bop:secondary-loop			2026-03-16
+intermediate-heat-exchanger	internal:bop:intermediate-heat-exchanger			2026-03-16
+thermal-efficiency	internal:bop:thermal-efficiency			2026-03-16
+gross-electric-power	internal:bop:gross-electric-power			2026-03-16
+thermal-power	internal:bop:thermal-power			2026-03-16
+auxiliary-power	internal:bop:auxiliary-power			2026-03-16
+balance-of-plant	internal:bop:balance-of-plant			2026-03-16
+power-supply	internal:bop:power-supply			2026-03-16
+water-treatment	internal:bop:water-treatment			2026-03-16
+hvac	internal:bop:hvac			2026-03-16
+waste-heat-recovery	internal:bop:waste-heat-recovery			2026-03-16
+electrical-grid-connection	internal:bop:electrical-grid-connection			2026-03-16
+plant-layout	internal:bop:plant-layout			2026-03-16
+decommissioning	internal:bop:decommissioning			2026-03-16
