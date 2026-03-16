@@ -18,7 +18,6 @@ bremstrahlung	bremsstrahlung	forbidden	en	missing s in bremsstrahlung
 deutrium	deuterium	forbidden	en	common misspelling of deuterium (missing e)
 disrupiton	disruption	forbidden	en	transposition misspelling
 disrution	disruption	forbidden	en	common misspelling (missing p)
-divertor plate	divertor	deprecated	en	prefer divertor target or divertor
 h mode	H-mode	deprecated	en	use H-mode (hyphenated)
 high confinement mode	H-mode	deprecated	en	prefer H-mode
 l mode	L-mode	deprecated	en	use L-mode (hyphenated)
@@ -48,7 +47,6 @@ trittium	tritium	forbidden	en	double-t misspelling
 放射性废料	放射性废物	deprecated	zh	规范为"放射性废物"
 新经典撕裂模式	新经典撕裂模	deprecated	zh	非标准，应为"新经典撕裂模"
 核废料	放射性废物	deprecated	zh	应使用"放射性废物"或具体分类
-环型磁约束	托卡马克	deprecated	zh	不规范，应使用具体装置类型名
 甲种粒子	α粒子	deprecated	zh	标准为"α粒子"
 电子回旋加热法	电子回旋共振加热	deprecated	zh	标准为"电子回旋共振加热"，"法"字多余
 电浆	等离子体	deprecated	zh	台湾用语，大陆标准为"等离子体"

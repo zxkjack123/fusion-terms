@@ -23,6 +23,18 @@
 
 ### Fixed
 
+## v2026.03.16.3
+
+### Fixed
+
+- 移除 2 条语义不等价的 substitution 规则（审计发现）：
+  - `环型磁约束` → `托卡马克`：环型磁约束是上位概念（涵盖 tokamak / stellarator / RFP），不能自动替换为单一装置类型。
+  - `divertor plate` → `divertor`：divertor plate（偏滤器靶板）是 divertor 系统的子部件，两者范围不等。
+
+### Changed
+
+- Substitution 规则：61 → 59 条。Registry: 463 concepts, 1487 aliases。
+
 ## v2026.03.16.2
 
 ### Fixed

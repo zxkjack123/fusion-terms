@@ -1939,7 +1939,7 @@ Stellerator	stellarator	en	forbidden	capitalised misspelling
 deutrium	deuterium	en	forbidden	common misspelling of deuterium (missing e)
 trittium	tritium	en	forbidden	double-t misspelling
 Trittium	tritium	en	forbidden	capitalised misspelling
-divertor plate	divertor	en	deprecated	prefer divertor target or divertor
+# REMOVED: divertor plate → divertor — divertor plate (靶板) is a sub-component, not equivalent to divertor (system)
 disrution	disruption	en	forbidden	common misspelling (missing p)
 disrupiton	disruption	en	forbidden	transposition misspelling
 bremstrahlung	bremsstrahlung	en	forbidden	missing s in bremsstrahlung
@@ -1983,7 +1983,7 @@ tauE	tau-e	en	deprecated	use τ_E or tau_E
 离子回旋加热法	ion-cyclotron-resonance-heating	zh	deprecated	标准为"离子回旋共振加热"，"法"字多余
 电子回旋加热法	electron-cyclotron-resonance-heating	zh	deprecated	标准为"电子回旋共振加热"，"法"字多余
 低杂波驱动	lower-hybrid-current-drive	zh	deprecated	标准为"低杂波电流驱动"
-环型磁约束	tokamak	zh	deprecated	不规范，应使用具体装置类型名
+# REMOVED: 环型磁约束→托卡马克 — 环型磁约束 covers tokamak, stellarator, RFP etc.; too broad for auto-replace
 # REMOVED: 扰动→破裂 — "扰动" is a generic word, not always "disruption"
 冷却事故	loss-of-coolant-accident	zh	deprecated	规范为"失冷事故"(LOCA)
 失去冷却剂事故	loss-of-coolant-accident	zh	deprecated	冗长，规范为"失冷事故"
