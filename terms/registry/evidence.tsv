@@ -612,3 +612,91 @@ tae-technologies	internal:expansion:batch-17	FRC fusion company	copilot	2026-03-
 helion-energy	internal:expansion:batch-17	FRC pulsed fusion company	copilot	2026-03-17
 general-atomics	internal:expansion:batch-17	DIII-D operator	copilot	2026-03-17
 ipp-garching	internal:expansion:batch-17	W7-X and AUG institute	copilot	2026-03-17
+magnetic-axis	internal:expansion:batch-18	Nested flux surface center	copilot	2026-03-17
+plasma-elongation	internal:expansion:batch-18	Plasma height-to-width ratio	copilot	2026-03-17
+plasma-triangularity	internal:expansion:batch-18	D-shape deformation parameter	copilot	2026-03-17
+aspect-ratio	internal:expansion:batch-18	Major-to-minor radius ratio	copilot	2026-03-17
+magnetic-shear	internal:expansion:batch-18	Safety factor radial gradient	copilot	2026-03-17
+reversed-shear	internal:expansion:batch-18	Non-monotonic q-profile	copilot	2026-03-17
+bootstrap-fraction	internal:expansion:batch-18	Bootstrap current ratio	copilot	2026-03-17
+pfirsch-schlueter-current	internal:expansion:batch-18	Neoclassical equilibrium current	copilot	2026-03-17
+negative-triangularity	internal:expansion:batch-18	Inward D-shape configuration	copilot	2026-03-17
+plasma-major-radius	internal:expansion:batch-18	Torus major radius R0	copilot	2026-03-17
+plasma-minor-radius	internal:expansion:batch-18	Plasma half-width a	copilot	2026-03-17
+l-h-transition	internal:expansion:batch-19	L-to-H mode transition	copilot	2026-03-17
+power-threshold	internal:expansion:batch-19	L-H transition power threshold	copilot	2026-03-17
+edge-transport-barrier	internal:expansion:batch-19	H-mode pedestal barrier	copilot	2026-03-17
+blob-transport	internal:expansion:batch-19	SOL filamentary transport	copilot	2026-03-17
+detachment-front	internal:expansion:batch-19	Detached region boundary	copilot	2026-03-17
+parallel-transport	internal:expansion:batch-19	Field-aligned transport	copilot	2026-03-17
+cross-field-transport	internal:expansion:batch-19	Perpendicular transport	copilot	2026-03-17
+sol-width	internal:expansion:batch-19	SOL power decay length	copilot	2026-03-17
+divertor-heat-flux	internal:expansion:batch-19	Target surface heat flux	copilot	2026-03-17
+recycling-coefficient	internal:expansion:batch-19	Wall particle recycling ratio	copilot	2026-03-17
+lower-hybrid-wave	internal:expansion:batch-20	LH wave for heating/CD	copilot	2026-03-17
+electron-bernstein-wave	internal:expansion:batch-20	Overdense plasma wave	copilot	2026-03-17
+ion-bernstein-wave	internal:expansion:batch-20	Ion-scale electrostatic wave	copilot	2026-03-17
+fast-wave	internal:expansion:batch-20	ICRF fast magnetosonic wave	copilot	2026-03-17
+slow-wave	internal:expansion:batch-20	LH range slow wave branch	copilot	2026-03-17
+alfven-continuum	internal:expansion:batch-20	Shear Alfven continuum	copilot	2026-03-17
+rsae	internal:expansion:batch-20	Reversed shear gap mode	copilot	2026-03-17
+bae	internal:expansion:batch-20	Beta-induced gap eigenmode	copilot	2026-03-17
+energetic-particle-mode	internal:expansion:batch-20	Fast-ion driven continuum mode	copilot	2026-03-17
+parametric-instability	internal:expansion:batch-20	Laser-plasma nonlinear coupling	copilot	2026-03-17
+dt-reaction	internal:expansion:batch-21	D-T fusion reaction	copilot	2026-03-17
+dd-reaction	internal:expansion:batch-21	D-D fusion reaction	copilot	2026-03-17
+d-he3-reaction	internal:expansion:batch-21	D-He3 advanced fuel reaction	copilot	2026-03-17
+fusion-triple-product	internal:expansion:batch-21	n*T*tau ignition metric	copilot	2026-03-17
+neutron-yield	internal:expansion:batch-21	Fusion neutron production rate	copilot	2026-03-17
+reaction-rate-coefficient	internal:expansion:batch-21	Maxwellian-averaged reactivity	copilot	2026-03-17
+q-value-reaction	internal:expansion:batch-21	Reaction energy release	copilot	2026-03-17
+coulomb-logarithm	internal:expansion:batch-21	Collision frequency log factor	copilot	2026-03-17
+slowing-down-time	internal:expansion:batch-21	Fast ion thermalization time	copilot	2026-03-17
+current-hole	internal:expansion:batch-22	Central zero current region	copilot	2026-03-17
+internal-kink-mode	internal:expansion:batch-22	m=1/n=1 internal instability	copilot	2026-03-17
+sawtooth-crash	internal:expansion:batch-22	Periodic central profile crash	copilot	2026-03-17
+ntv	internal:expansion:batch-22	Non-axisymmetric braking torque	copilot	2026-03-17
+intrinsic-rotation	internal:expansion:batch-22	Spontaneous plasma rotation	copilot	2026-03-17
+momentum-transport	internal:expansion:batch-22	Angular momentum transport	copilot	2026-03-17
+profile-stiffness	internal:expansion:batch-22	Critical gradient transport	copilot	2026-03-17
+critical-gradient	internal:expansion:batch-22	Instability threshold gradient	copilot	2026-03-17
+fully-non-inductive	internal:expansion:batch-22	100% non-inductive steady state	copilot	2026-03-17
+steady-state-high-beta	internal:expansion:batch-22	Advanced tokamak target	copilot	2026-03-17
+ac-loss	internal:expansion:batch-23	Superconductor AC heating	copilot	2026-03-17
+strain-sensitivity	internal:expansion:batch-23	Nb3Sn strain-Ic relation	copilot	2026-03-17
+joint-resistance	internal:expansion:batch-23	SC cable joint resistance	copilot	2026-03-17
+tf-ripple	internal:expansion:batch-23	Finite TF coil field variation	copilot	2026-03-17
+demountable-joint	internal:expansion:batch-23	Separable HTS joint	copilot	2026-03-17
+magnet-bore	internal:expansion:batch-23	TF coil inner opening	copilot	2026-03-17
+winding-pack	internal:expansion:batch-23	SC cable turn assembly	copilot	2026-03-17
+magnet-structure	internal:expansion:batch-23	Coil casing and support	copilot	2026-03-17
+insulation-material	internal:expansion:batch-23	Magnet electrical insulation	copilot	2026-03-17
+magnet-cooling	internal:expansion:batch-23	SC magnet cryogenic cooling	copilot	2026-03-17
+chemical-erosion	internal:expansion:batch-24	Carbon chemical sputtering	copilot	2026-03-17
+physical-sputtering	internal:expansion:batch-24	Ion bombardment erosion	copilot	2026-03-17
+dust	internal:expansion:batch-24	PFC-generated particulates	copilot	2026-03-17
+arcing	internal:expansion:batch-24	Plasma-wall arc discharge	copilot	2026-03-17
+melt-damage	internal:expansion:batch-24	PFC transient melting	copilot	2026-03-17
+mixed-material	internal:expansion:batch-24	Multi-material co-deposition	copilot	2026-03-17
+wall-conditioning	internal:expansion:batch-24	Wall surface preparation	copilot	2026-03-17
+glow-discharge-cleaning	internal:expansion:batch-24	GDC wall cleaning	copilot	2026-03-17
+boronization	internal:expansion:batch-24	Boron film wall treatment	copilot	2026-03-17
+tritium-removal	internal:expansion:batch-24	Retained tritium removal	copilot	2026-03-17
+fokker-planck-equation	internal:expansion:batch-25	Collisional kinetic equation	copilot	2026-03-17
+vlasov-equation	internal:expansion:batch-25	Collisionless kinetic equation	copilot	2026-03-17
+ray-tracing	internal:expansion:batch-25	Wave propagation computation	copilot	2026-03-17
+flux-tube-simulation	internal:expansion:batch-25	Local GK simulation domain	copilot	2026-03-17
+reduced-mhd	internal:expansion:batch-25	Simplified low-beta MHD	copilot	2026-03-17
+extended-mhd	internal:expansion:batch-25	Two-fluid extended MHD	copilot	2026-03-17
+two-fluid-model	internal:expansion:batch-25	Electron-ion fluid model	copilot	2026-03-17
+delta-f-method	internal:expansion:batch-25	PIC noise reduction	copilot	2026-03-17
+full-f-method	internal:expansion:batch-25	Full distribution PIC	copilot	2026-03-17
+continuum-kinetic	internal:expansion:batch-25	Vlasov grid discretization	copilot	2026-03-17
+defense-in-depth	internal:expansion:batch-26	Multi-layer safety philosophy	copilot	2026-03-17
+safety-classification	internal:expansion:batch-26	System safety categorization	copilot	2026-03-17
+iaea	internal:expansion:batch-26	UN nuclear agency	copilot	2026-03-17
+confinement-function	internal:expansion:batch-26	Radioactive containment barrier	copilot	2026-03-17
+maximum-credible-accident	internal:expansion:batch-26	Worst-case safety scenario	copilot	2026-03-17
+source-term	internal:expansion:batch-26	Accident release quantification	copilot	2026-03-17
+emergency-planning-zone	internal:expansion:batch-26	Emergency response area	copilot	2026-03-17
+occupational-dose-limit	internal:expansion:batch-26	Worker annual dose limit	copilot	2026-03-17

@@ -2234,3 +2234,232 @@ Max Planck Institute for Plasma Physics	ipp-garching	en	preferred
 IPP	ipp-garching	abbr	preferred	
 马克斯·普朗克等离子体物理研究所	ipp-garching	zh	preferred	
 IPP Garching	ipp-garching	en	alias	
+# ==== Batch 18: Magnetic Equilibrium & Plasma Geometry ====
+magnetic axis	magnetic-axis	en	preferred	
+磁轴	magnetic-axis	zh	preferred	
+last closed flux surface	separatrix	en	alias	LCFS redirect
+LCFS	separatrix	abbr	alias	LCFS redirect
+plasma boundary	separatrix	en	alias	LCFS redirect
+plasma elongation	plasma-elongation	en	preferred	
+等离子体拉长比	plasma-elongation	zh	preferred	
+elongation	plasma-elongation	en	alias	
+plasma triangularity	plasma-triangularity	en	preferred	
+等离子体三角形变	plasma-triangularity	zh	preferred	
+triangularity	plasma-triangularity	en	alias	
+aspect ratio	aspect-ratio	en	preferred	
+纵横比	aspect-ratio	zh	preferred	
+magnetic shear	magnetic-shear	en	preferred	
+磁剪切	magnetic-shear	zh	preferred	
+reversed shear	reversed-shear	en	preferred	
+反磁剪切	reversed-shear	zh	preferred	
+reverse shear	reversed-shear	en	alias	
+bootstrap fraction	bootstrap-fraction	en	preferred	
+自举电流份额	bootstrap-fraction	zh	preferred	
+Pfirsch-Schlüter current	pfirsch-schlueter-current	en	preferred	
+Pfirsch-Schlüter电流	pfirsch-schlueter-current	zh	preferred	
+PS current	pfirsch-schlueter-current	en	alias	
+negative triangularity	negative-triangularity	en	preferred	
+负三角形变	negative-triangularity	zh	preferred	
+NT	negative-triangularity	abbr	alias	
+plasma major radius	plasma-major-radius	en	preferred	
+等离子体大半径	plasma-major-radius	zh	preferred	
+major radius	plasma-major-radius	en	alias	
+plasma minor radius	plasma-minor-radius	en	preferred	
+等离子体小半径	plasma-minor-radius	zh	preferred	
+minor radius	plasma-minor-radius	en	alias	
+# ==== Batch 19: L-H Transition & Edge Transport ====
+L-H transition	l-h-transition	en	preferred	
+L-H转换	l-h-transition	zh	preferred	
+L-to-H transition	l-h-transition	en	alias	
+power threshold	power-threshold	en	preferred	
+功率阈值	power-threshold	zh	preferred	
+L-H power threshold	power-threshold	en	alias	
+edge transport barrier	edge-transport-barrier	en	preferred	
+边缘输运垒	edge-transport-barrier	zh	preferred	
+ETB	edge-transport-barrier	abbr	alias	
+blob transport	blob-transport	en	preferred	
+团块输运	blob-transport	zh	preferred	
+filamentary transport	blob-transport	en	alias	
+detachment front	detachment-front	en	preferred	
+脱靶前沿	detachment-front	zh	preferred	
+parallel transport	parallel-transport	en	preferred	
+平行输运	parallel-transport	zh	preferred	
+cross-field transport	cross-field-transport	en	preferred	
+垂直输运	cross-field-transport	zh	preferred	
+perpendicular transport	cross-field-transport	en	alias	
+SOL width	sol-width	en	preferred	
+SOL宽度	sol-width	zh	preferred	
+lambda_q	sol-width	en	alias	
+divertor heat flux	divertor-heat-flux	en	preferred	
+偏滤器热负荷	divertor-heat-flux	zh	preferred	
+recycling coefficient	recycling-coefficient	en	preferred	
+再循环系数	recycling-coefficient	zh	preferred	
+# ==== Batch 20: Plasma Waves ====
+lower hybrid wave	lower-hybrid-wave	en	preferred	
+低杂波	lower-hybrid-wave	zh	preferred	
+LH wave	lower-hybrid-wave	en	alias	
+electron Bernstein wave	electron-bernstein-wave	en	preferred	
+EBW	electron-bernstein-wave	abbr	preferred	
+电子伯恩斯坦波	electron-bernstein-wave	zh	preferred	
+ion Bernstein wave	ion-bernstein-wave	en	preferred	
+IBW	ion-bernstein-wave	abbr	preferred	
+离子伯恩斯坦波	ion-bernstein-wave	zh	preferred	
+fast wave	fast-wave	en	preferred	
+快波	fast-wave	zh	preferred	
+fast magnetosonic wave	fast-wave	en	alias	
+slow wave	slow-wave	en	preferred	
+慢波	slow-wave	zh	preferred	
+Alfvén continuum	alfven-continuum	en	preferred	
+Alfvén连续谱	alfven-continuum	zh	preferred	
+reversed shear Alfvén eigenmode	rsae	en	preferred	
+RSAE	rsae	abbr	preferred	
+反剪切Alfvén本征模	rsae	zh	preferred	
+Alfvén cascade	rsae	en	alias	
+beta-induced Alfvén eigenmode	bae	en	preferred	
+BAE	bae	abbr	preferred	
+β诱导Alfvén本征模	bae	zh	preferred	
+energetic particle mode	energetic-particle-mode	en	preferred	
+EPM	energetic-particle-mode	abbr	preferred	
+高能粒子模	energetic-particle-mode	zh	preferred	
+parametric instability	parametric-instability	en	preferred	
+参数不稳定性	parametric-instability	zh	preferred	
+# ==== Batch 21: Fusion Reactions & Nuclear Physics ====
+D-T reaction	dt-reaction	en	preferred	
+D-T反应	dt-reaction	zh	preferred	
+deuterium-tritium reaction	dt-reaction	en	alias	
+氘氚反应	dt-reaction	zh	alias	
+D-D reaction	dd-reaction	en	preferred	
+D-D反应	dd-reaction	zh	preferred	
+deuterium-deuterium reaction	dd-reaction	en	alias	
+氘氘反应	dd-reaction	zh	alias	
+D-³He reaction	d-he3-reaction	en	preferred	
+D-³He反应	d-he3-reaction	zh	preferred	
+fusion triple product	fusion-triple-product	en	preferred	
+聚变三乘积	fusion-triple-product	zh	preferred	
+14 MeV中子	fusion-neutron	zh	alias	14mev redirect
+neutron yield	neutron-yield	en	preferred	
+中子产额	neutron-yield	zh	preferred	
+reaction rate coefficient	reaction-rate-coefficient	en	preferred	
+反应速率系数	reaction-rate-coefficient	zh	preferred	
+sigma-v	reaction-rate-coefficient	en	alias	
+Q value	q-value-reaction	en	preferred	
+Q值	q-value-reaction	zh	preferred	
+Coulomb logarithm	coulomb-logarithm	en	preferred	
+库仑对数	coulomb-logarithm	zh	preferred	
+slowing-down time	slowing-down-time	en	preferred	
+滑脱时间	slowing-down-time	zh	preferred	
+thermalization time	slowing-down-time	en	alias	
+# ==== Batch 22: Advanced Tokamak & Operational Scenarios ====
+current hole	current-hole	en	preferred	
+电流空洞	current-hole	zh	preferred	
+internal kink mode	internal-kink-mode	en	preferred	
+内扭曲模	internal-kink-mode	zh	preferred	
+m=1 mode	internal-kink-mode	en	alias	
+sawtooth crash	sawtooth-crash	en	preferred	
+锯齿崩塌	sawtooth-crash	zh	preferred	
+neoclassical toroidal viscosity	ntv	en	preferred	
+NTV	ntv	abbr	preferred	
+新经典环向粘滞	ntv	zh	preferred	
+intrinsic rotation	intrinsic-rotation	en	preferred	
+本征旋转	intrinsic-rotation	zh	preferred	
+spontaneous rotation	intrinsic-rotation	en	alias	
+momentum transport	momentum-transport	en	preferred	
+动量输运	momentum-transport	zh	preferred	
+profile stiffness	profile-stiffness	en	preferred	
+剖面刚性	profile-stiffness	zh	preferred	
+critical gradient	critical-gradient	en	preferred	
+临界梯度	critical-gradient	zh	preferred	
+fully non-inductive operation	fully-non-inductive	en	preferred	
+完全非感应运行	fully-non-inductive	zh	preferred	
+steady-state high-beta operation	steady-state-high-beta	en	preferred	
+稳态高β运行	steady-state-high-beta	zh	preferred	
+# ==== Batch 23: Superconducting Magnet Engineering ====
+AC loss	ac-loss	en	preferred	
+交流损耗	ac-loss	zh	preferred	
+strain sensitivity	strain-sensitivity	en	preferred	
+应变敏感性	strain-sensitivity	zh	preferred	
+joint resistance	joint-resistance	en	preferred	
+接头电阻	joint-resistance	zh	preferred	
+toroidal field ripple	tf-ripple	en	preferred	
+环向场纹波	tf-ripple	zh	preferred	
+TF ripple	tf-ripple	en	alias	
+demountable joint	demountable-joint	en	preferred	
+可拆卸接头	demountable-joint	zh	preferred	
+magnet bore	magnet-bore	en	preferred	
+磁体孔径	magnet-bore	zh	preferred	
+winding pack	winding-pack	en	preferred	
+绕组包	winding-pack	zh	preferred	
+magnet structure	magnet-structure	en	preferred	
+磁体结构件	magnet-structure	zh	preferred	
+insulation material	insulation-material	en	preferred	
+绝缘材料	insulation-material	zh	preferred	
+magnet cooling	magnet-cooling	en	preferred	
+磁体冷却	magnet-cooling	zh	preferred	
+# ==== Batch 24: Plasma-Wall Interaction Details ====
+chemical erosion	chemical-erosion	en	preferred	
+化学腐蚀	chemical-erosion	zh	preferred	
+physical sputtering	physical-sputtering	en	preferred	
+dust	dust	en	preferred	
+粉尘	dust	zh	preferred	
+fusion dust	dust	en	alias	
+arcing	arcing	en	preferred	
+电弧	arcing	zh	preferred	
+unipolar arc	arcing	en	alias	
+melt damage	melt-damage	en	preferred	
+熔化损伤	melt-damage	zh	preferred	
+mixed material	mixed-material	en	preferred	
+混合材料	mixed-material	zh	preferred	
+co-deposited layer	mixed-material	en	alias	
+wall conditioning	wall-conditioning	en	preferred	
+壁面处理	wall-conditioning	zh	preferred	
+glow discharge cleaning	glow-discharge-cleaning	en	preferred	
+GDC	glow-discharge-cleaning	abbr	preferred	
+辉光放电清洗	glow-discharge-cleaning	zh	preferred	
+boronization	boronization	en	preferred	
+硼化	boronization	zh	preferred	
+tritium removal	tritium-removal	en	preferred	
+氚滞留清除	tritium-removal	zh	preferred	
+# ==== Batch 25: Computational Physics Methods ====
+Fokker-Planck equation	fokker-planck-equation	en	preferred	
+Fokker-Planck方程	fokker-planck-equation	zh	preferred	
+Vlasov equation	vlasov-equation	en	preferred	
+Vlasov方程	vlasov-equation	zh	preferred	
+ray tracing	ray-tracing	en	preferred	
+射线追踪	ray-tracing	zh	preferred	
+flux tube simulation	flux-tube-simulation	en	preferred	
+磁通管模拟	flux-tube-simulation	zh	preferred	
+local gyrokinetic simulation	flux-tube-simulation	en	alias	
+reduced MHD	reduced-mhd	en	preferred	
+约化MHD	reduced-mhd	zh	preferred	
+extended MHD	extended-mhd	en	preferred	
+扩展MHD	extended-mhd	zh	preferred	
+two-fluid model	two-fluid-model	en	preferred	
+双流体模型	two-fluid-model	zh	preferred	
+delta-f method	delta-f-method	en	preferred	
+δf方法	delta-f-method	zh	preferred	
+full-f method	full-f-method	en	preferred	
+全f方法	full-f-method	zh	preferred	
+continuum kinetic	continuum-kinetic	en	preferred	
+连续谱动理学	continuum-kinetic	zh	preferred	
+Eulerian kinetic	continuum-kinetic	en	alias	
+# ==== Batch 26: Safety, Regulation & Standards ====
+defense in depth	defense-in-depth	en	preferred	
+纵深防御	defense-in-depth	zh	preferred	
+safety classification	safety-classification	en	preferred	
+安全分级	safety-classification	zh	preferred	
+International Atomic Energy Agency	iaea	en	preferred	
+IAEA	iaea	abbr	preferred	
+国际原子能机构	iaea	zh	preferred	
+confinement function	confinement-function	en	preferred	
+包容功能	confinement-function	zh	preferred	
+containment function	confinement-function	en	alias	
+maximum credible accident	maximum-credible-accident	en	preferred	
+最大可信事故	maximum-credible-accident	zh	preferred	
+MCA	maximum-credible-accident	abbr	alias	
+source term	source-term	en	preferred	
+源项	source-term	zh	preferred	
+emergency planning zone	emergency-planning-zone	en	preferred	
+EPZ	emergency-planning-zone	abbr	preferred	
+应急计划区	emergency-planning-zone	zh	preferred	
+occupational dose limit	occupational-dose-limit	en	preferred	
+职业剂量限值	occupational-dose-limit	zh	preferred	

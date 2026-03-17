@@ -23,6 +23,23 @@
 
 ### Fixed
 
+## v2026.03.18
+
+### Added
+
+- **术语扩充（Batch 18–26）**：新增 88 个概念、220 条别名，覆盖 9 个主题领域：
+  - Batch 18: 磁平衡与等离子体几何（magnetic-axis, LCFS→separatrix, elongation, triangularity, aspect-ratio 等 12 项）
+  - Batch 19: L-H 转换与边缘输运（L-H transition, power threshold, blob transport, SOL width 等 10 项）
+  - Batch 20: 等离子体波（lower hybrid wave, EBW, IBW, Alfvén continuum, RSAE, BAE, EPM 等 10 项）
+  - Batch 21: 聚变反应与核物理（D-T, D-D, D-³He reaction, triple product, Coulomb logarithm 等 9 项）
+  - Batch 22: 先进托卡马克与运行场景（current hole, sawtooth crash, NTV, intrinsic rotation, critical gradient 等 10 项）
+  - Batch 23: 超导磁体工程（AC loss, strain sensitivity, demountable joint, winding pack 等 10 项）
+  - Batch 24: 等离子体-壁相互作用细节（chemical erosion, physical sputtering, dust, GDC, boronization 等 10 项）
+  - Batch 25: 计算物理方法（Fokker-Planck, Vlasov, ray tracing, δf/full-f, extended MHD 等 10 项）
+  - Batch 26: 安全、法规与标准（defense in depth, IAEA, source term, EPZ 等 8 项）
+- LCFS/14 MeV neutron 概念合并到既有 separatrix/fusion-neutron，新增交叉别名
+- 注册表总计：640 concepts, 1922 aliases, 640 evidence rows
+
 ## v2026.03.17
 
 ### Added

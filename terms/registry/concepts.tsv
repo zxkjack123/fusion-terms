@@ -636,3 +636,100 @@ tae-technologies	organization	TAE Technologies	TAE Technologies		active	Private 
 helion-energy	organization	Helion Energy	Helion Energy		active	Private company developing FRC-based pulsed fusion
 general-atomics	organization	通用原子能	General Atomics	GA	active	US company operating DIII-D tokamak and developing fusion technology
 ipp-garching	organization	马克斯·普朗克等离子体物理研究所	Max Planck Institute for Plasma Physics	IPP	active	German institute operating Wendelstein 7-X and ASDEX Upgrade
+# ==== Batch 18: Magnetic Equilibrium & Plasma Geometry ====
+magnetic-axis	concept	磁轴	magnetic axis		active	Central line of nested flux surfaces in a toroidal plasma
+plasma-elongation	metric	等离子体拉长比	plasma elongation		active	Ratio of plasma height to width (kappa), key shaping parameter
+plasma-triangularity	metric	等离子体三角形变	plasma triangularity		active	Measure of D-shape triangular deformation (delta) of plasma cross-section
+aspect-ratio	metric	纵横比	aspect ratio		active	Ratio of major radius to minor radius R/a
+magnetic-shear	metric	磁剪切	magnetic shear		active	Radial gradient of safety factor s = (r/q)(dq/dr)
+reversed-shear	concept	反磁剪切	reversed shear		active	Configuration with non-monotonic q-profile having a central minimum
+bootstrap-fraction	metric	自举电流份额	bootstrap fraction		active	Ratio of bootstrap current to total plasma current
+pfirsch-schlueter-current	concept	Pfirsch-Schlüter电流	Pfirsch-Schlüter current		active	Neoclassical current arising from pressure gradient in toroidal geometry
+negative-triangularity	concept	负三角形变	negative triangularity		active	Plasma shaping with inward-pointing D-shape, showing improved confinement
+plasma-major-radius	metric	等离子体大半径	plasma major radius		active	Distance from torus axis to magnetic axis (R0)
+plasma-minor-radius	metric	等离子体小半径	plasma minor radius		active	Half-width of the plasma cross-section (a)
+# ==== Batch 19: L-H Transition & Edge Transport ====
+l-h-transition	concept	L-H转换	L-H transition		active	Transition from low to high confinement mode
+power-threshold	metric	功率阈值	power threshold		active	Minimum heating power required to trigger L-H transition
+edge-transport-barrier	concept	边缘输运垒	edge transport barrier		active	Transport barrier at plasma edge associated with H-mode pedestal
+blob-transport	concept	团块输运	blob transport		active	Intermittent radial transport in SOL by filamentary structures
+detachment-front	concept	脱靶前沿	detachment front		active	Spatial boundary of the detached radiating region above divertor target
+parallel-transport	concept	平行输运	parallel transport		active	Transport along magnetic field lines
+cross-field-transport	concept	垂直输运	cross-field transport		active	Transport perpendicular to magnetic field lines across flux surfaces
+sol-width	metric	SOL宽度	SOL width		active	Power decay length in scrape-off layer (lambda_q)
+divertor-heat-flux	metric	偏滤器热负荷	divertor heat flux		active	Heat flux density on divertor target surface
+recycling-coefficient	metric	再循环系数	recycling coefficient		active	Ratio of returning particle flux to incident flux at the wall
+# ==== Batch 20: Plasma Waves ====
+lower-hybrid-wave	concept	低杂波	lower hybrid wave		active	Electrostatic-electromagnetic wave used for LHCD heating and current drive
+electron-bernstein-wave	concept	电子伯恩斯坦波	electron Bernstein wave	EBW	active	Electrostatic wave for heating overdense plasmas
+ion-bernstein-wave	concept	离子伯恩斯坦波	ion Bernstein wave	IBW	active	Ion-scale electrostatic wave mode for plasma heating
+fast-wave	concept	快波	fast wave		active	Fast magnetosonic wave used in ICRF heating
+slow-wave	concept	慢波	slow wave		active	Slow electrostatic wave branch in lower hybrid range
+alfven-continuum	concept	Alfvén连续谱	Alfvén continuum		active	Continuous spectrum of shear Alfvén waves in toroidal geometry
+rsae	concept	反剪切Alfvén本征模	reversed shear Alfvén eigenmode	RSAE	active	Gap mode in reversed shear region, also called Alfvén cascade
+bae	concept	β诱导Alfvén本征模	beta-induced Alfvén eigenmode	BAE	active	Alfvén eigenmode in the beta-induced gap of the continuum
+energetic-particle-mode	concept	高能粒子模	energetic particle mode	EPM	active	Non-perturbative fast-ion driven mode in the Alfvén continuum
+parametric-instability	concept	参数不稳定性	parametric instability		active	Nonlinear laser-plasma coupling instability important in ICF
+# ==== Batch 21: Fusion Reactions & Nuclear Physics ====
+dt-reaction	concept	D-T反应	D-T reaction		active	Deuterium-tritium fusion reaction producing 14.1 MeV neutron and 3.5 MeV alpha
+dd-reaction	concept	D-D反应	D-D reaction		active	Deuterium-deuterium fusion with two branches producing T+p or He3+n
+d-he3-reaction	concept	D-³He反应	D-³He reaction		active	Low-neutron advanced fuel fusion reaction producing proton and alpha
+fusion-triple-product	metric	聚变三乘积	fusion triple product		active	Product n·T·tau_E used as figure of merit for fusion ignition conditions
+neutron-yield	metric	中子产额	neutron yield		active	Total number or rate of fusion neutrons produced
+reaction-rate-coefficient	metric	反应速率系数	reaction rate coefficient		active	Maxwellian-averaged fusion reactivity <sigma*v>
+q-value-reaction	metric	Q值	Q value		active	Energy released per fusion reaction
+coulomb-logarithm	metric	库仑对数	Coulomb logarithm		active	Logarithmic factor in Coulomb collision frequency
+slowing-down-time	metric	滑脱时间	slowing-down time		active	Characteristic time for fast ion thermalization via collisions
+# ==== Batch 22: Advanced Tokamak & Operational Scenarios ====
+current-hole	concept	电流空洞	current hole		active	Region of nearly zero toroidal current density near plasma center
+internal-kink-mode	concept	内扭曲模	internal kink mode		active	m=1/n=1 MHD instability inside q=1 surface
+sawtooth-crash	concept	锯齿崩塌	sawtooth crash		active	Periodic crash phase of sawtooth oscillation flattening central profiles
+ntv	concept	新经典环向粘滞	neoclassical toroidal viscosity	NTV	active	Plasma braking torque from non-axisymmetric magnetic fields
+intrinsic-rotation	concept	本征旋转	intrinsic rotation		active	Spontaneous plasma rotation without external momentum input
+momentum-transport	concept	动量输运	momentum transport		active	Radial transport of toroidal angular momentum
+profile-stiffness	concept	剖面刚性	profile stiffness		active	Tendency of transport to maintain profiles near critical gradient
+critical-gradient	concept	临界梯度	critical gradient		active	Threshold gradient above which micro-instabilities drive strong transport
+fully-non-inductive	concept	完全非感应运行	fully non-inductive operation		active	Steady-state operation with 100% non-inductive current drive
+steady-state-high-beta	concept	稳态高β运行	steady-state high-beta operation		active	Advanced tokamak target scenario combining high beta with steady state
+# ==== Batch 23: Superconducting Magnet Engineering ====
+ac-loss	concept	交流损耗	AC loss		active	Heat generation in superconductor from time-varying magnetic fields
+strain-sensitivity	concept	应变敏感性	strain sensitivity		active	Dependence of critical current on mechanical strain in Nb3Sn conductors
+joint-resistance	metric	接头电阻	joint resistance		active	Electrical resistance at superconducting cable joints
+tf-ripple	concept	环向场纹波	toroidal field ripple		active	Periodic variation of toroidal field due to finite number of TF coils
+demountable-joint	system	可拆卸接头	demountable joint		active	Separable superconducting joint enabling modular magnet maintenance
+magnet-bore	metric	磁体孔径	magnet bore		active	Clear internal opening of toroidal field coil
+winding-pack	system	绕组包	winding pack		active	Assembly of superconducting cable turns forming the magnet coil
+magnet-structure	system	磁体结构件	magnet structure		active	Structural casing and support for superconducting coils
+insulation-material	material	绝缘材料	insulation material		active	Turn-to-turn and layer-to-layer electrical insulation in magnet windings
+magnet-cooling	system	磁体冷却	magnet cooling		active	Cryogenic cooling system maintaining superconducting operating temperature
+# ==== Batch 24: Plasma-Wall Interaction Details ====
+chemical-erosion	concept	化学腐蚀	chemical erosion		active	Erosion of carbon materials via chemical reaction with hydrogen isotopes
+physical-sputtering	concept	物理溅射	physical sputtering		active	Surface atom ejection by energetic ion bombardment
+dust	concept	粉尘	dust		active	Micron-scale particulates generated from PFC erosion and disruptions
+arcing	concept	电弧	arcing		active	Localized arc discharge between plasma and wall surface causing damage
+melt-damage	concept	熔化损伤	melt damage		active	PFC surface melting from transient high heat loads
+mixed-material	concept	混合材料	mixed material		active	Co-deposited layers of multiple PFC materials (e.g. Be-W)
+wall-conditioning	method	壁面处理	wall conditioning		active	Surface preparation techniques for impurity control before plasma operation
+glow-discharge-cleaning	method	辉光放电清洗	glow discharge cleaning	GDC	active	Low-pressure gas discharge technique for vessel wall cleaning
+boronization	method	硼化	boronization		active	Deposition of thin boron film on vessel walls for impurity control
+tritium-removal	method	氚滞留清除	tritium removal		active	Techniques for removing retained tritium from PFCs
+# ==== Batch 25: Computational Physics Methods ====
+fokker-planck-equation	concept	Fokker-Planck方程	Fokker-Planck equation		active	Kinetic equation describing collisional evolution of particle distribution function
+vlasov-equation	concept	Vlasov方程	Vlasov equation		active	Collisionless kinetic equation for plasma distribution function
+ray-tracing	method	射线追踪	ray tracing		active	Geometrical optics method for computing wave propagation and power deposition
+flux-tube-simulation	method	磁通管模拟	flux tube simulation		active	Local gyrokinetic simulation in a field-aligned flux tube domain
+reduced-mhd	concept	约化MHD	reduced MHD		active	Simplified MHD model valid for low-beta, large-aspect-ratio plasmas
+extended-mhd	concept	扩展MHD	extended MHD		active	MHD model including two-fluid, FLR, and kinetic closure effects
+two-fluid-model	concept	双流体模型	two-fluid model		active	Plasma model treating electrons and ions as separate coupled fluids
+delta-f-method	method	δf方法	delta-f method		active	PIC noise reduction technique evolving only the perturbed distribution
+full-f-method	method	全f方法	full-f method		active	PIC method evolving the complete distribution function
+continuum-kinetic	method	连续谱动理学	continuum kinetic		active	Direct discretization of Vlasov equation on phase-space grid
+# ==== Batch 26: Safety, Regulation & Standards ====
+defense-in-depth	concept	纵深防御	defense in depth		active	Multi-layered safety design philosophy for nuclear facilities
+safety-classification	concept	安全分级	safety classification		active	Categorization of systems by their safety importance
+iaea	organization	国际原子能机构	International Atomic Energy Agency	IAEA	active	UN agency for peaceful nuclear technology and safeguards
+confinement-function	concept	包容功能	confinement function		active	Safety function providing containment barriers for radioactive materials
+maximum-credible-accident	concept	最大可信事故	maximum credible accident		active	Most severe postulated accident scenario for safety analysis
+source-term	concept	源项	source term		active	Quantification of radioactive material released in accident scenarios
+emergency-planning-zone	concept	应急计划区	emergency planning zone	EPZ	active	Designated area for emergency response planning around nuclear facility
+occupational-dose-limit	limit	职业剂量限值	occupational dose limit		active	Annual dose limit for radiation workers
