@@ -1292,7 +1292,7 @@ drift-kinetics	drift-kinetics	en	alias	IME token-only form
 湍流输运	turbulent-transport	zh	preferred	preferred zh
 turbulent transport	turbulent-transport	en	preferred	preferred en (phrase)
 turbulent-transport	turbulent-transport	en	alias	IME token-only form
-anomalous transport	turbulent-transport	en	alias	synonym
+anomalous transport	anomalous-transport	en	alias	synonym, moved from turbulent-transport
 
 输运垒	transport-barrier	zh	preferred	preferred zh
 transport barrier	transport-barrier	en	preferred	preferred en (phrase)
@@ -2004,3 +2004,233 @@ tauE	tau-e	en	deprecated	use τ_E or tau_E
 # ---- Forbidden wrong acronym expansions ----
 International Thermonuclear Experimental Research	iter	en	forbidden	ITER = ...Reactor, not Research
 Internation Thermonuclear Experimental Reactor	iter	en	forbidden	misspelling: Internation → International
+# ==== Batch 9: Plasma Physics Fundamentals ====
+Debye sheath	debye-sheath	en	preferred	
+德拜鞘	debye-sheath	zh	preferred	
+plasma sheath	debye-sheath	en	alias	
+等离子体鞘层	debye-sheath	zh	alias	
+Debye length	debye-length	en	preferred	
+德拜长度	debye-length	zh	preferred	
+Debye screening length	debye-length	en	alias	
+Larmor radius	larmor-radius	en	preferred	
+拉莫尔半径	larmor-radius	zh	preferred	
+gyroradius	larmor-radius	en	alias	also called gyroradius
+回旋半径	larmor-radius	zh	alias	
+Coulomb collision	coulomb-collision	en	preferred	
+库仑碰撞	coulomb-collision	zh	preferred	
+Spitzer resistivity	spitzer-resistivity	en	preferred	
+斯皮策电阻率	spitzer-resistivity	zh	preferred	
+Spitzer conductivity	spitzer-resistivity	en	alias	
+Bohm diffusion	bohm-diffusion	en	preferred	
+玻姆扩散	bohm-diffusion	zh	preferred	
+banana orbit	banana-orbit	en	preferred	
+香蕉轨道	banana-orbit	zh	preferred	
+trapped particle orbit	banana-orbit	en	alias	
+Ware pinch	ware-pinch	en	preferred	
+瓦尔箍缩	ware-pinch	zh	preferred	
+Shafranov shift	shafranov-shift	en	preferred	
+沙弗拉诺夫位移	shafranov-shift	zh	preferred	
+plasma frequency	plasma-frequency	en	preferred	
+等离子体频率	plasma-frequency	zh	preferred	
+locked mode	locked-mode	en	preferred	
+锁模	locked-mode	zh	preferred	
+error field	error-field	en	preferred	
+误差场	error-field	zh	preferred	
+plasma rotation	plasma-rotation	en	preferred	
+等离子体旋转	plasma-rotation	zh	preferred	
+toroidal rotation	plasma-rotation	en	alias	
+环向旋转	plasma-rotation	zh	alias	
+anomalous transport	anomalous-transport	en	preferred	
+反常输运	anomalous-transport	zh	preferred	
+# ==== Batch 10: Micro-instabilities & Turbulent Transport ====
+ion temperature gradient mode	itg-mode	en	preferred	
+ITG	itg-mode	abbr	preferred	
+离子温度梯度模	itg-mode	zh	preferred	
+trapped electron mode	tem	en	preferred	
+TEM	tem	abbr	preferred	
+俘获电子模	tem	zh	preferred	
+electron temperature gradient mode	etg-mode	en	preferred	
+ETG	etg-mode	abbr	preferred	
+电子温度梯度模	etg-mode	zh	preferred	
+drift wave	drift-wave	en	preferred	
+漂移波	drift-wave	zh	preferred	
+peeling-ballooning mode	peeling-ballooning-mode	en	preferred	
+剥离-气球模	peeling-ballooning-mode	zh	preferred	
+剥离气球模	peeling-ballooning-mode	zh	alias	
+micro-tearing mode	micro-tearing-mode	en	preferred	
+微撕裂模	micro-tearing-mode	zh	preferred	
+kinetic ballooning mode	kbm	en	preferred	
+KBM	kbm	abbr	preferred	
+动理学气球模	kbm	zh	preferred	
+# ==== Batch 11: Heating & Current Drive Hardware ====
+gyrotron	gyrotron	en	preferred	
+回旋管	gyrotron	zh	preferred	
+klystron	klystron	en	preferred	
+速调管	klystron	zh	preferred	
+negative ion source	negative-ion-source	en	preferred	
+负离子源	negative-ion-source	zh	preferred	
+waveguide	waveguide	en	preferred	
+波导	waveguide	zh	preferred	
+ICRF antenna	icrf-antenna	en	preferred	
+离子回旋天线	icrf-antenna	zh	preferred	
+electron cyclotron current drive	eccd	en	preferred	
+ECCD	eccd	abbr	preferred	
+电子回旋电流驱动	eccd	zh	preferred	
+current drive efficiency	current-drive-efficiency	en	preferred	
+电流驱动效率	current-drive-efficiency	zh	preferred	
+power deposition profile	power-deposition-profile	en	preferred	
+功率沉积分布	power-deposition-profile	zh	preferred	
+helicon current drive	helicon-current-drive	en	preferred	
+螺旋波电流驱动	helicon-current-drive	zh	preferred	
+# ==== Batch 12: Divertor Configurations & Advanced Divertor ====
+divertor target	divertor-target	en	preferred	
+偏滤器靶板	divertor-target	zh	preferred	
+divertor target plate	divertor-target	en	alias	
+strike point	strike-point	en	preferred	
+打击点	strike-point	zh	preferred	
+double-null	double-null	en	preferred	
+双零位形	double-null	zh	preferred	
+DN	double-null	abbr	preferred	
+double null divertor	double-null	en	alias	
+single-null	single-null	en	preferred	
+单零位形	single-null	zh	preferred	
+SN	single-null	abbr	preferred	
+single null divertor	single-null	en	alias	
+snowflake divertor	snowflake-divertor	en	preferred	
+雪花偏滤器	snowflake-divertor	zh	preferred	
+Super-X divertor	super-x-divertor	en	preferred	
+Super-X偏滤器	super-x-divertor	zh	preferred	
+long-leg divertor	long-leg-divertor	en	preferred	
+长腿偏滤器	long-leg-divertor	zh	preferred	
+baffle	baffle	en	preferred	
+挡板	baffle	zh	preferred	
+private flux region	private-flux-region	en	preferred	
+私有磁通区	private-flux-region	zh	preferred	
+PFR	private-flux-region	abbr	preferred	
+MARFE	marfe	en	preferred	
+MARFE	marfe	abbr	preferred	
+flux expansion	flux-expansion	en	preferred	
+磁通膨胀	flux-expansion	zh	preferred	
+# ==== Batch 13: Materials & Radiation Damage ====
+irradiation embrittlement	irradiation-embrittlement	en	preferred	
+辐照脆化	irradiation-embrittlement	zh	preferred	
+void swelling	void-swelling	en	preferred	
+辐照肿胀	void-swelling	zh	preferred	
+radiation swelling	void-swelling	en	alias	
+helium embrittlement	helium-embrittlement	en	preferred	
+氦脆	helium-embrittlement	zh	preferred	
+creep	creep	en	preferred	
+蠕变	creep	zh	preferred	
+thermal creep	creep	en	alias	
+irradiation creep	creep	en	alias	
+fatigue life	fatigue-life	en	preferred	
+疲劳寿命	fatigue-life	zh	preferred	
+activation product	activation-product	en	preferred	
+活化产物	activation-product	zh	preferred	
+CuCrZr	cucrzr	en	preferred	
+CuCrZr	cucrzr	abbr	preferred	
+铜铬锆	cucrzr	zh	alias	
+tungsten monoblock	tungsten-monoblock	en	preferred	
+钨单块	tungsten-monoblock	zh	preferred	
+F82H	f82h	en	preferred	
+F82H	f82h	abbr	preferred	
+plasma-sprayed tungsten	plasma-sprayed-tungsten	en	preferred	
+等离子喷涂钨	plasma-sprayed-tungsten	zh	preferred	
+# ==== Batch 14: Tritium Cycle & Fuel Handling ====
+cryogenic distillation	cryogenic-distillation	en	preferred	
+低温蒸馏	cryogenic-distillation	zh	preferred	
+tritium accountancy	tritium-accountancy	en	preferred	
+氚衡算	tritium-accountancy	zh	preferred	
+tritium permeation barrier	tritium-permeation-barrier	en	preferred	
+TPB	tritium-permeation-barrier	abbr	preferred	
+氚渗透阻挡层	tritium-permeation-barrier	zh	preferred	
+burn fraction	burn-fraction	en	preferred	
+燃烧份额	burn-fraction	zh	preferred	
+palladium membrane reactor	palladium-membrane-reactor	en	preferred	
+钯膜反应器	palladium-membrane-reactor	zh	preferred	
+metal hydride bed	metal-hydride-bed	en	preferred	
+金属氢化物床	metal-hydride-bed	zh	preferred	
+thermal cycling absorption process	tcap	en	preferred	
+TCAP	tcap	abbr	preferred	
+热循环吸收工艺	tcap	zh	preferred	
+fuel pellet	fuel-pellet	en	preferred	
+燃料芯块	fuel-pellet	zh	preferred	
+fueling efficiency	fueling-efficiency	en	preferred	
+加料效率	fueling-efficiency	zh	preferred	
+# ==== Batch 15: Diagnostic Systems ====
+Rogowski coil	rogowski-coil	en	preferred	
+罗戈夫斯基线圈	rogowski-coil	zh	preferred	
+Mirnov coil	mirnov-coil	en	preferred	
+米尔诺夫线圈	mirnov-coil	zh	preferred	
+magnetic flux loop	magnetic-flux-loop	en	preferred	
+磁通环	magnetic-flux-loop	zh	preferred	
+diamagnetic loop	diamagnetic-loop	en	preferred	
+抗磁环	diamagnetic-loop	zh	preferred	
+beam emission spectroscopy	beam-emission-spectroscopy	en	preferred	
+BES	beam-emission-spectroscopy	abbr	preferred	
+束发射光谱	beam-emission-spectroscopy	zh	preferred	
+IR thermography	ir-thermography	en	preferred	
+红外热成像	ir-thermography	zh	preferred	
+infrared thermography	ir-thermography	en	alias	
+Doppler backscattering	doppler-backscattering	en	preferred	
+DBS	doppler-backscattering	abbr	preferred	
+多普勒背散射	doppler-backscattering	zh	preferred	
+neutron activation system	neutron-activation-system	en	preferred	
+NAS	neutron-activation-system	abbr	preferred	
+中子活化系统	neutron-activation-system	zh	preferred	
+phase contrast imaging	phase-contrast-imaging	en	preferred	
+PCI	phase-contrast-imaging	abbr	preferred	
+相衬成像	phase-contrast-imaging	zh	preferred	
+ECE imaging	ece-imaging	en	preferred	
+ECEI	ece-imaging	abbr	preferred	
+ECE成像	ece-imaging	zh	preferred	
+# ==== Batch 16: Reactor Engineering & Neutronics ====
+neutronics	neutronics	en	preferred	
+中子学	neutronics	zh	preferred	
+thermal hydraulics	thermal-hydraulics	en	preferred	
+热工水力	thermal-hydraulics	zh	preferred	
+thermohydraulics	thermal-hydraulics	en	alias	
+halo current	halo-current	en	preferred	
+晕电流	halo-current	zh	preferred	
+eddy current	eddy-current	en	preferred	
+涡流	eddy-current	zh	preferred	
+port plug	port-plug	en	preferred	
+窗口模块	port-plug	zh	preferred	
+equatorial port	equatorial-port	en	preferred	
+赤道窗口	equatorial-port	zh	preferred	
+cryopump	cryopump	en	preferred	
+低温泵	cryopump	zh	preferred	
+blanket module	blanket-module	en	preferred	
+包层模块	blanket-module	zh	preferred	
+divertor cassette	divertor-cassette	en	preferred	
+偏滤器卡匣	divertor-cassette	zh	preferred	
+electromagnetic force	electromagnetic-force	en	preferred	
+电磁力	electromagnetic-force	zh	preferred	
+# ==== Batch 17: Fusion Organizations & Projects ====
+EUROfusion	eurofusion	en	preferred	
+欧洲聚变能组织	eurofusion	zh	preferred	
+Fusion for Energy	f4e	en	preferred	
+F4E	f4e	abbr	preferred	
+聚变能源机构	f4e	zh	preferred	
+Southwestern Institute of Physics	swip	en	preferred	
+SWIP	swip	abbr	preferred	
+核工业西南物理研究院	swip	zh	preferred	
+西物院	swip	zh	alias	
+Institute of Plasma Physics CAS	asipp	en	preferred	
+ASIPP	asipp	abbr	preferred	
+等离子体物理研究所	asipp	zh	preferred	
+中科院等离子体所	asipp	zh	alias	
+Commonwealth Fusion Systems	cfs	en	preferred	
+CFS	cfs	abbr	preferred	
+联邦聚变系统	cfs	zh	preferred	
+TAE Technologies	tae-technologies	en	preferred	
+TAE Technologies	tae-technologies	zh	preferred	
+Helion Energy	helion-energy	en	preferred	
+Helion Energy	helion-energy	zh	preferred	
+General Atomics	general-atomics	en	preferred	
+GA	general-atomics	abbr	preferred	
+通用原子能	general-atomics	zh	preferred	
+Max Planck Institute for Plasma Physics	ipp-garching	en	preferred	
+IPP	ipp-garching	abbr	preferred	
+马克斯·普朗克等离子体物理研究所	ipp-garching	zh	preferred	
+IPP Garching	ipp-garching	en	alias	

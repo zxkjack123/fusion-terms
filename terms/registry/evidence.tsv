@@ -523,3 +523,92 @@ radioactive-waste	internal:base:radioactive-waste			2026-03-16
 fishbone-instability	internal:base:fishbone-instability			2026-03-16
 poloidal-field	internal:base:poloidal-field			2026-03-16
 toroidal-field	internal:base:toroidal-field			2026-03-16
+debye-sheath	internal:expansion:batch-9	Electrostatic sheath at plasma-surface interface	copilot	2026-03-17
+debye-length	internal:expansion:batch-9	Fundamental plasma screening scale	copilot	2026-03-17
+larmor-radius	internal:expansion:batch-9	Charged particle gyration radius	copilot	2026-03-17
+coulomb-collision	internal:expansion:batch-9	Binary charged particle scattering	copilot	2026-03-17
+spitzer-resistivity	internal:expansion:batch-9	Classical plasma resistivity	copilot	2026-03-17
+bohm-diffusion	internal:expansion:batch-9	Anomalous cross-field diffusion	copilot	2026-03-17
+banana-orbit	internal:expansion:batch-9	Trapped particle orbit in torus	copilot	2026-03-17
+ware-pinch	internal:expansion:batch-9	Neoclassical inward pinch	copilot	2026-03-17
+shafranov-shift	internal:expansion:batch-9	Plasma equilibrium outward shift	copilot	2026-03-17
+plasma-frequency	internal:expansion:batch-9	Electron oscillation frequency	copilot	2026-03-17
+locked-mode	internal:expansion:batch-9	Non-rotating tearing mode	copilot	2026-03-17
+error-field	internal:expansion:batch-9	Unintended field asymmetry	copilot	2026-03-17
+plasma-rotation	internal:expansion:batch-9	Plasma bulk rotation	copilot	2026-03-17
+anomalous-transport	internal:expansion:batch-9	Transport exceeding neoclassical	copilot	2026-03-17
+itg-mode	internal:expansion:batch-10	Ion temperature gradient instability	copilot	2026-03-17
+tem	internal:expansion:batch-10	Trapped electron mode	copilot	2026-03-17
+etg-mode	internal:expansion:batch-10	Electron temperature gradient mode	copilot	2026-03-17
+drift-wave	internal:expansion:batch-10	Gradient-driven drift wave	copilot	2026-03-17
+peeling-ballooning-mode	internal:expansion:batch-10	ELM trigger mechanism	copilot	2026-03-17
+micro-tearing-mode	internal:expansion:batch-10	Gyroscale tearing instability	copilot	2026-03-17
+kbm	internal:expansion:batch-10	Kinetic ballooning mode	copilot	2026-03-17
+gyrotron	internal:expansion:batch-11	High-power microwave tube for ECRH	copilot	2026-03-17
+klystron	internal:expansion:batch-11	RF power amplifier tube	copilot	2026-03-17
+negative-ion-source	internal:expansion:batch-11	NBI negative ion source	copilot	2026-03-17
+waveguide	internal:expansion:batch-11	Microwave/RF transmission line	copilot	2026-03-17
+icrf-antenna	internal:expansion:batch-11	Ion cyclotron RF antenna	copilot	2026-03-17
+eccd	internal:expansion:batch-11	EC current drive	copilot	2026-03-17
+current-drive-efficiency	internal:expansion:batch-11	Key steady-state metric	copilot	2026-03-17
+power-deposition-profile	internal:expansion:batch-11	Heating power spatial distribution	copilot	2026-03-17
+helicon-current-drive	internal:expansion:batch-11	Helicon wave current drive	copilot	2026-03-17
+divertor-target	internal:expansion:batch-12	Divertor plasma-facing target	copilot	2026-03-17
+strike-point	internal:expansion:batch-12	Separatrix-target intersection	copilot	2026-03-17
+double-null	internal:expansion:batch-12	Dual X-point configuration	copilot	2026-03-17
+single-null	internal:expansion:batch-12	Standard single X-point config	copilot	2026-03-17
+snowflake-divertor	internal:expansion:batch-12	Second-order null divertor	copilot	2026-03-17
+super-x-divertor	internal:expansion:batch-12	Extended-radius divertor	copilot	2026-03-17
+long-leg-divertor	internal:expansion:batch-12	Extended-leg divertor	copilot	2026-03-17
+baffle	internal:expansion:batch-12	Divertor neutral control structure	copilot	2026-03-17
+private-flux-region	internal:expansion:batch-12	Sub-X-point flux region	copilot	2026-03-17
+marfe	internal:expansion:batch-12	Poloidally localized radiation instability	copilot	2026-03-17
+flux-expansion	internal:expansion:batch-12	Magnetic flux tube spreading	copilot	2026-03-17
+irradiation-embrittlement	internal:expansion:batch-13	Material ductility loss under irradiation	copilot	2026-03-17
+void-swelling	internal:expansion:batch-13	Vacancy clustering volume increase	copilot	2026-03-17
+helium-embrittlement	internal:expansion:batch-13	He bubble grain boundary damage	copilot	2026-03-17
+creep	internal:expansion:batch-13	Time-dependent plastic deformation	copilot	2026-03-17
+fatigue-life	internal:expansion:batch-13	Cycles to failure	copilot	2026-03-17
+activation-product	internal:expansion:batch-13	Neutron-activated radioactive nuclides	copilot	2026-03-17
+cucrzr	internal:expansion:batch-13	Copper alloy heat sink material	copilot	2026-03-17
+tungsten-monoblock	internal:expansion:batch-13	Standard PFC armor-heatsink design	copilot	2026-03-17
+f82h	internal:expansion:batch-13	Japanese RAFM steel	copilot	2026-03-17
+plasma-sprayed-tungsten	internal:expansion:batch-13	W coating technique	copilot	2026-03-17
+cryogenic-distillation	internal:expansion:batch-14	H isotope separation by distillation	copilot	2026-03-17
+tritium-accountancy	internal:expansion:batch-14	Tritium inventory tracking	copilot	2026-03-17
+tritium-permeation-barrier	internal:expansion:batch-14	Anti-permeation coating	copilot	2026-03-17
+burn-fraction	internal:expansion:batch-14	Fuel consumption per plasma pass	copilot	2026-03-17
+palladium-membrane-reactor	internal:expansion:batch-14	Pd membrane H separation	copilot	2026-03-17
+metal-hydride-bed	internal:expansion:batch-14	Metal-hydrogen storage system	copilot	2026-03-17
+tcap	internal:expansion:batch-14	Thermal cycling isotope separation	copilot	2026-03-17
+fuel-pellet	internal:expansion:batch-14	Frozen isotope pellet for fueling	copilot	2026-03-17
+fueling-efficiency	internal:expansion:batch-14	Core fueling efficiency metric	copilot	2026-03-17
+rogowski-coil	internal:expansion:batch-15	Plasma current pickup coil	copilot	2026-03-17
+mirnov-coil	internal:expansion:batch-15	MHD fluctuation coil array	copilot	2026-03-17
+magnetic-flux-loop	internal:expansion:batch-15	Poloidal flux measurement loop	copilot	2026-03-17
+diamagnetic-loop	internal:expansion:batch-15	Stored energy diagnostic	copilot	2026-03-17
+beam-emission-spectroscopy	internal:expansion:batch-15	Density fluctuation diagnostic	copilot	2026-03-17
+ir-thermography	internal:expansion:batch-15	PFC surface temperature imaging	copilot	2026-03-17
+doppler-backscattering	internal:expansion:batch-15	Turbulence flow diagnostic	copilot	2026-03-17
+neutron-activation-system	internal:expansion:batch-15	Neutron yield calibration	copilot	2026-03-17
+phase-contrast-imaging	internal:expansion:batch-15	Line-integrated density fluctuations	copilot	2026-03-17
+ece-imaging	internal:expansion:batch-15	2D Te fluctuation diagnostic	copilot	2026-03-17
+neutronics	internal:expansion:batch-16	Neutron transport and activation	copilot	2026-03-17
+thermal-hydraulics	internal:expansion:batch-16	Cooling system heat transfer analysis	copilot	2026-03-17
+halo-current	internal:expansion:batch-16	Disruption SOL-vessel current	copilot	2026-03-17
+eddy-current	internal:expansion:batch-16	Transient induced currents	copilot	2026-03-17
+port-plug	internal:expansion:batch-16	Vessel port assembly module	copilot	2026-03-17
+equatorial-port	internal:expansion:batch-16	Midplane vessel port	copilot	2026-03-17
+cryopump	internal:expansion:batch-16	Cryogenic vacuum pump	copilot	2026-03-17
+blanket-module	internal:expansion:batch-16	Replaceable blanket unit	copilot	2026-03-17
+divertor-cassette	internal:expansion:batch-16	Replaceable divertor unit	copilot	2026-03-17
+electromagnetic-force	internal:expansion:batch-16	Disruption EM loads	copilot	2026-03-17
+eurofusion	internal:expansion:batch-17	European fusion consortium	copilot	2026-03-17
+f4e	internal:expansion:batch-17	EU ITER domestic agency	copilot	2026-03-17
+swip	internal:expansion:batch-17	Chinese fusion institute (HL-2M)	copilot	2026-03-17
+asipp	internal:expansion:batch-17	Chinese fusion institute (EAST)	copilot	2026-03-17
+cfs	internal:expansion:batch-17	SPARC/ARC developer	copilot	2026-03-17
+tae-technologies	internal:expansion:batch-17	FRC fusion company	copilot	2026-03-17
+helion-energy	internal:expansion:batch-17	FRC pulsed fusion company	copilot	2026-03-17
+general-atomics	internal:expansion:batch-17	DIII-D operator	copilot	2026-03-17
+ipp-garching	internal:expansion:batch-17	W7-X and AUG institute	copilot	2026-03-17

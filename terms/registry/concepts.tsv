@@ -538,3 +538,101 @@ radioactive-waste	concept	放射性废物	radioactive waste		active	Waste materi
 fishbone-instability	concept	鱼骨模不稳定性	fishbone instability		active	Fast-ion driven internal kink instability with fishbone-shaped magnetic signature
 poloidal-field	concept	极向磁场	poloidal field		active	Magnetic field component in the poloidal (short-way-around) direction of a torus
 toroidal-field	concept	环向磁场	toroidal field		active	Magnetic field component in the toroidal (long-way-around) direction of a torus
+# ==== Batch 9: Plasma Physics Fundamentals ====
+debye-sheath	concept	德拜鞘	Debye sheath		active	Electrostatic sheath forming at plasma-wall boundary
+debye-length	metric	德拜长度	Debye length		active	Characteristic screening length in a plasma
+larmor-radius	metric	拉莫尔半径	Larmor radius		active	Gyration radius of a charged particle in magnetic field
+coulomb-collision	concept	库仑碰撞	Coulomb collision		active	Binary scattering of charged particles via Coulomb interaction
+spitzer-resistivity	metric	斯皮策电阻率	Spitzer resistivity		active	Classical plasma resistivity from electron-ion collisions
+bohm-diffusion	concept	玻姆扩散	Bohm diffusion		active	Anomalous cross-field diffusion scaling as T/eB
+banana-orbit	concept	香蕉轨道	banana orbit		active	Trapped particle orbit in toroidal geometry resembling a banana shape
+ware-pinch	effect	瓦尔箍缩	Ware pinch		active	Neoclassical inward particle pinch driven by toroidal electric field
+shafranov-shift	metric	沙弗拉诺夫位移	Shafranov shift		active	Outward shift of magnetic axis due to plasma pressure and current
+plasma-frequency	metric	等离子体频率	plasma frequency		active	Characteristic oscillation frequency of electrons in a plasma
+locked-mode	concept	锁模	locked mode		active	Non-rotating tearing mode that can trigger disruptions
+error-field	concept	误差场	error field		active	Unintended magnetic field asymmetry from coil misalignment or manufacturing errors
+plasma-rotation	metric	等离子体旋转	plasma rotation		active	Bulk rotation of plasma in toroidal or poloidal direction
+anomalous-transport	concept	反常输运	anomalous transport		active	Plasma transport exceeding neoclassical predictions, driven by turbulence
+# ==== Batch 10: Micro-instabilities & Turbulent Transport ====
+itg-mode	concept	离子温度梯度模	ion temperature gradient mode	ITG	active	Micro-instability driven by ion temperature gradient, major ion heat transport driver
+tem	concept	俘获电子模	trapped electron mode	TEM	active	Micro-instability driven by trapped electrons in magnetic wells
+etg-mode	concept	电子温度梯度模	electron temperature gradient mode	ETG	active	Micro-instability at electron gyroradius scale driving electron heat transport
+drift-wave	concept	漂移波	drift wave		active	Low-frequency wave in magnetized plasma driven by density/temperature gradients
+peeling-ballooning-mode	concept	剥离-气球模	peeling-ballooning mode		active	MHD instability coupling peeling and ballooning modes, triggers ELMs
+micro-tearing-mode	concept	微撕裂模	micro-tearing mode		active	Gyroradius-scale tearing instability contributing to electron heat transport
+kbm	concept	动理学气球模	kinetic ballooning mode	KBM	active	Kinetic extension of ideal ballooning mode important at high beta
+# ==== Batch 11: Heating & Current Drive Hardware ====
+gyrotron	device	回旋管	gyrotron		active	High-power microwave source for ECRH/ECCD systems
+klystron	device	速调管	klystron		active	Vacuum tube RF power amplifier used in LHCD and ICRH systems
+negative-ion-source	device	负离子源	negative ion source		active	Ion source producing negative hydrogen/deuterium ions for high-energy NBI
+waveguide	system	波导	waveguide		active	Metallic structure for transmitting microwave/RF power to the plasma
+icrf-antenna	device	离子回旋天线	ICRF antenna		active	Antenna structure coupling RF power to plasma at ion cyclotron frequency
+eccd	method	电子回旋电流驱动	electron cyclotron current drive	ECCD	active	Localized non-inductive current drive via ECRH power
+current-drive-efficiency	metric	电流驱动效率	current drive efficiency		active	Ratio of driven current to injected power, key figure of merit for steady-state
+power-deposition-profile	concept	功率沉积分布	power deposition profile		active	Spatial distribution of externally deposited heating power in plasma
+helicon-current-drive	method	螺旋波电流驱动	helicon current drive		active	Non-inductive current drive using helicon waves in the lower hybrid range
+# ==== Batch 12: Divertor Configurations & Advanced Divertor ====
+divertor-target	system	偏滤器靶板	divertor target		active	Plasma-facing surface receiving particle and heat flux from scrape-off layer
+strike-point	concept	打击点	strike point		active	Location where the separatrix intersects the divertor target
+double-null	concept	双零位形	double-null		active	Divertor configuration with two X-points (upper and lower)
+single-null	concept	单零位形	single-null		active	Standard divertor configuration with one X-point
+snowflake-divertor	concept	雪花偏滤器	snowflake divertor		active	Advanced divertor with second-order null point splitting heat flux
+super-x-divertor	concept	Super-X偏滤器	Super-X divertor		active	Extended-leg divertor increasing target radius for heat flux reduction
+long-leg-divertor	concept	长腿偏滤器	long-leg divertor		active	Divertor with extended outer leg to increase radiation volume
+baffle	system	挡板	baffle		active	Structure in divertor region controlling neutral particle flow
+private-flux-region	concept	私有磁通区	private flux region		active	Magnetic flux region below the X-point between inner and outer divertor legs
+marfe	concept	MARFE	MARFE		active	Multifaceted asymmetric radiation from the edge, poloidally localized radiation instability
+flux-expansion	concept	磁通膨胀	flux expansion		active	Geometric spreading of magnetic flux tubes, used to reduce target heat flux
+# ==== Batch 13: Materials & Radiation Damage ====
+irradiation-embrittlement	concept	辐照脆化	irradiation embrittlement		active	Degradation of material ductility and toughness under neutron irradiation
+void-swelling	concept	辐照肿胀	void swelling		active	Volume increase in materials due to vacancy clustering under irradiation
+helium-embrittlement	concept	氦脆	helium embrittlement		active	Grain boundary weakening from helium bubble accumulation via transmutation
+creep	concept	蠕变	creep		active	Time-dependent plastic deformation under sustained stress at elevated temperature
+fatigue-life	metric	疲劳寿命	fatigue life		active	Number of load cycles to failure, critical for pulsed fusion operation
+activation-product	concept	活化产物	activation product		active	Radioactive nuclides produced by neutron activation of structural materials
+cucrzr	material	CuCrZr	CuCrZr		active	Precipitation-hardened copper alloy used as heat sink in plasma-facing components
+tungsten-monoblock	system	钨单块	tungsten monoblock		active	Standard PFC design with tungsten armor bonded to CuCrZr heat sink
+f82h	material	F82H	F82H		active	Japanese reduced-activation ferritic/martensitic steel for fusion blankets
+plasma-sprayed-tungsten	method	等离子喷涂钨	plasma-sprayed tungsten		active	Coating technique depositing tungsten on first wall substrates
+# ==== Batch 14: Tritium Cycle & Fuel Handling ====
+cryogenic-distillation	method	低温蒸馏	cryogenic distillation		active	Primary hydrogen isotope separation method using boiling point differences
+tritium-accountancy	concept	氚衡算	tritium accountancy		active	Quantitative tracking of tritium inventory for nuclear safeguards
+tritium-permeation-barrier	system	氚渗透阻挡层	tritium permeation barrier	TPB	active	Coating preventing tritium permeation through structural materials
+burn-fraction	metric	燃烧份额	burn fraction		active	Fraction of injected fuel consumed per plasma pass
+palladium-membrane-reactor	device	钯膜反应器	palladium membrane reactor		active	Device using palladium membrane for selective hydrogen isotope separation
+metal-hydride-bed	device	金属氢化物床	metal hydride bed		active	Storage and recovery system using reversible metal-hydrogen reactions
+tcap	method	热循环吸收工艺	thermal cycling absorption process	TCAP	active	Hydrogen isotope separation process using thermal cycling on metal hydrides
+fuel-pellet	concept	燃料芯块	fuel pellet		active	Frozen hydrogen isotope pellet for plasma fueling via pellet injection
+fueling-efficiency	metric	加料效率	fueling efficiency		active	Fraction of injected fuel reaching the plasma core
+# ==== Batch 15: Diagnostic Systems ====
+rogowski-coil	diagnostic	罗戈夫斯基线圈	Rogowski coil		active	Toroidal pickup coil measuring plasma current
+mirnov-coil	diagnostic	米尔诺夫线圈	Mirnov coil		active	Magnetic pickup coil array for MHD fluctuation diagnostics
+magnetic-flux-loop	diagnostic	磁通环	magnetic flux loop		active	Loop measuring poloidal magnetic flux for equilibrium reconstruction
+diamagnetic-loop	diagnostic	抗磁环	diamagnetic loop		active	Diagnostic measuring plasma stored energy via diamagnetic effect
+beam-emission-spectroscopy	diagnostic	束发射光谱	beam emission spectroscopy	BES	active	Diagnostic measuring density fluctuations via neutral beam fluorescence
+ir-thermography	diagnostic	红外热成像	IR thermography		active	Infrared imaging of plasma-facing component surface temperatures
+doppler-backscattering	diagnostic	多普勒背散射	Doppler backscattering	DBS	active	Microwave diagnostic measuring turbulence flow velocity and density fluctuations
+neutron-activation-system	diagnostic	中子活化系统	neutron activation system	NAS	active	Diagnostic calibrating fusion neutron yield via activation foils
+phase-contrast-imaging	diagnostic	相衬成像	phase contrast imaging	PCI	active	Laser diagnostic measuring line-integrated density fluctuations
+ece-imaging	diagnostic	ECE成像	ECE imaging	ECEI	active	2D electron temperature fluctuation diagnostic extending conventional ECE
+# ==== Batch 16: Reactor Engineering & Neutronics ====
+neutronics	concept	中子学	neutronics		active	Study of neutron transport, shielding, activation and breeding in fusion reactors
+thermal-hydraulics	concept	热工水力	thermal hydraulics		active	Analysis of heat transfer and fluid flow in fusion cooling systems
+halo-current	concept	晕电流	halo current		active	Current flowing through SOL and vessel structures during disruptions
+eddy-current	concept	涡流	eddy current		active	Induced current in conducting structures from transient magnetic field changes
+port-plug	system	窗口模块	port plug		active	Integrated assembly inserted into vacuum vessel port for diagnostics or heating
+equatorial-port	system	赤道窗口	equatorial port		active	Vacuum vessel port at the midplane for major system access
+cryopump	device	低温泵	cryopump		active	Vacuum pump using cryogenic surfaces to capture gas molecules
+blanket-module	system	包层模块	blanket module		active	Replaceable blanket unit for tritium breeding and neutron shielding
+divertor-cassette	system	偏滤器卡匣	divertor cassette		active	Replaceable divertor assembly designed for remote handling exchange
+electromagnetic-force	concept	电磁力	electromagnetic force		active	Forces on conducting structures during disruptions and fast transients
+# ==== Batch 17: Fusion Organizations & Projects ====
+eurofusion	organization	欧洲聚变能组织	EUROfusion		active	European consortium coordinating fusion research towards DEMO
+f4e	organization	聚变能源机构	Fusion for Energy	F4E	active	EU domestic agency responsible for European contributions to ITER
+swip	organization	核工业西南物理研究院	Southwestern Institute of Physics	SWIP	active	Chinese institute operating HL-2A and HL-2M tokamaks
+asipp	organization	等离子体物理研究所	Institute of Plasma Physics CAS	ASIPP	active	Chinese institute operating EAST tokamak
+cfs	organization	联邦聚变系统	Commonwealth Fusion Systems	CFS	active	Private company developing SPARC and ARC tokamaks with HTS magnets
+tae-technologies	organization	TAE Technologies	TAE Technologies		active	Private company developing field-reversed configuration fusion
+helion-energy	organization	Helion Energy	Helion Energy		active	Private company developing FRC-based pulsed fusion
+general-atomics	organization	通用原子能	General Atomics	GA	active	US company operating DIII-D tokamak and developing fusion technology
+ipp-garching	organization	马克斯·普朗克等离子体物理研究所	Max Planck Institute for Plasma Physics	IPP	active	German institute operating Wendelstein 7-X and ASDEX Upgrade
