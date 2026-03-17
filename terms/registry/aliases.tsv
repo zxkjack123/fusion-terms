@@ -2463,3 +2463,223 @@ EPZ	emergency-planning-zone	abbr	preferred
 应急计划区	emergency-planning-zone	zh	preferred	
 occupational dose limit	occupational-dose-limit	en	preferred	
 职业剂量限值	occupational-dose-limit	zh	preferred	
+# ==== Batch 27: RF Heating & Current Drive Physics ====
+minority heating	minority-heating	en	preferred	
+少数粒子加热	minority-heating	zh	preferred	
+minority ion heating	minority-heating	en	alias	
+harmonic heating	harmonic-heating	en	preferred	
+谐波加热	harmonic-heating	zh	preferred	
+second harmonic heating	harmonic-heating	en	alias	
+mode conversion	mode-conversion	en	preferred	
+模式转换	mode-conversion	zh	preferred	
+antenna coupling	antenna-coupling	en	preferred	
+天线耦合	antenna-coupling	zh	preferred	
+wave absorption	wave-absorption	en	preferred	
+波吸收	wave-absorption	zh	preferred	
+RF absorption	wave-absorption	en	alias	
+parallel refractive index	n-parallel	en	preferred	
+平行折射率	n-parallel	zh	preferred	
+N-parallel	n-parallel	en	alias	
+multipactor	multipactor	en	preferred	
+二次电子倍增放电	multipactor	zh	preferred	
+full-wave simulation	full-wave-simulation	en	preferred	
+全波模拟	full-wave-simulation	zh	preferred	
+antenna loading	antenna-loading	en	preferred	
+天线负载	antenna-loading	zh	preferred	
+Faraday screen	faraday-screen	en	preferred	
+法拉第屏	faraday-screen	zh	preferred	
+Faraday shield	faraday-screen	en	alias	
+# ==== Batch 28: Particle Orbit Physics ====
+passing particle	passing-particle	en	preferred	
+通行粒子	passing-particle	zh	preferred	
+circulating particle	passing-particle	en	alias	
+trapped particle	trapped-particle	en	preferred	
+俘获粒子	trapped-particle	zh	preferred	
+bounce frequency	bounce-frequency	en	preferred	
+弹跳频率	bounce-frequency	zh	preferred	
+toroidal precession drift	precession-drift	en	preferred	
+进动漂移	precession-drift	zh	preferred	
+precession drift	precession-drift	en	alias	
+E×B drift	exb-drift	en	preferred	
+E×B漂移	exb-drift	zh	preferred	
+ExB drift	exb-drift	en	alias	
+grad-B drift	grad-b-drift	en	preferred	
+∇B漂移	grad-b-drift	zh	preferred	
+curvature drift	curvature-drift	en	preferred	
+曲率漂移	curvature-drift	zh	preferred	
+diamagnetic drift	diamagnetic-drift	en	preferred	
+抗磁漂移	diamagnetic-drift	zh	preferred	
+orbit loss	orbit-loss	en	preferred	
+轨道损失	orbit-loss	zh	preferred	
+fast ion loss	orbit-loss	en	alias	
+prompt loss	prompt-loss	en	preferred	
+瞬时损失	prompt-loss	zh	preferred	
+first-orbit loss	prompt-loss	en	alias	
+# ==== Batch 29: Confinement Scaling & Performance Metrics ====
+confinement scaling law	confinement-scaling	en	preferred	
+约束标度律	confinement-scaling	zh	preferred	
+scaling law	confinement-scaling	en	alias	
+IPB98(y,2)	confinement-scaling	en	alias	
+H-factor	h-factor	en	preferred	
+H因子	h-factor	zh	preferred	
+confinement enhancement factor	h-factor	en	alias	
+Troyon limit	troyon-limit	en	preferred	
+Troyon极限	troyon-limit	zh	preferred	
+Greenwald fraction	greenwald-fraction	en	preferred	
+Greenwald份额	greenwald-fraction	zh	preferred	
+f_GW	greenwald-fraction	en	alias	
+power degradation	power-degradation	en	preferred	
+功率退化	power-degradation	zh	preferred	
+isotope effect	isotope-effect	en	preferred	
+同位素效应	isotope-effect	zh	preferred	
+size scaling	size-scaling	en	preferred	
+尺寸标度	size-scaling	zh	preferred	
+MHD stability limit	mhd-stability-limit	en	preferred	
+MHD稳定极限	mhd-stability-limit	zh	preferred	
+beta limit	mhd-stability-limit	en	alias	
+density limit	density-limit	en	preferred	
+密度极限	density-limit	zh	preferred	
+stored energy	stored-energy	en	preferred	
+等离子体储能	stored-energy	zh	preferred	
+plasma stored energy	stored-energy	en	alias	
+# ==== Batch 30: Plasma Control & Actuators ====
+vertical stability	vertical-stability	en	preferred	
+垂直稳定性	vertical-stability	zh	preferred	
+gap control	gap-control	en	preferred	
+间隙控制	gap-control	zh	preferred	
+kinetic control	kinetic-control	en	preferred	
+动理学控制	kinetic-control	zh	preferred	
+burn control	burn-control	en	preferred	
+燃烧控制	burn-control	zh	preferred	
+actuator	actuator	en	preferred	
+执行器	actuator	zh	preferred	
+plasma ramp-up	plasma-ramp-up	en	preferred	
+等离子体升流	plasma-ramp-up	zh	preferred	
+current ramp-up	plasma-ramp-up	en	alias	
+plasma ramp-down	plasma-ramp-down	en	preferred	
+等离子体降流	plasma-ramp-down	zh	preferred	
+current ramp-down	plasma-ramp-down	en	alias	
+feedback control	feedback-control	en	preferred	
+反馈控制	feedback-control	zh	preferred	
+model predictive control	model-predictive-control	en	preferred	
+MPC	model-predictive-control	abbr	preferred	
+模型预测控制	model-predictive-control	zh	preferred	
+plasma state estimation	plasma-state-estimation	en	preferred	
+等离子体状态估计	plasma-state-estimation	zh	preferred	
+# ==== Batch 31: Blanket Engineering Details ====
+beryllium multiplier	beryllium-multiplier	en	preferred	
+铍中子倍增层	beryllium-multiplier	zh	preferred	
+Be multiplier	beryllium-multiplier	en	alias	
+breeding zone	breeding-zone	en	preferred	
+增殖区	breeding-zone	zh	preferred	
+back plate	back-plate	en	preferred	
+背板	back-plate	zh	preferred	
+coolant manifold	coolant-manifold	en	preferred	
+冷却歧管	coolant-manifold	zh	preferred	
+purge gas	purge-gas	en	preferred	
+吹扫气	purge-gas	zh	preferred	
+helium purge gas	purge-gas	en	alias	
+thermal fatigue	thermal-fatigue	en	preferred	
+热疲劳	thermal-fatigue	zh	preferred	
+辐照蠕变	irradiation-creep	zh	preferred	
+irradiation-enhanced creep	irradiation-creep	en	preferred	
+functional material	functional-material	en	preferred	
+功能材料	functional-material	zh	preferred	
+coolant chemistry	coolant-chemistry	en	preferred	
+冷却剂化学	coolant-chemistry	zh	preferred	
+thermo-mechanical analysis	thermo-mechanical-analysis	en	preferred	
+热机械分析	thermo-mechanical-analysis	zh	preferred	
+# ==== Batch 32: Vacuum & Fueling Technology ====
+vacuum pumping	vacuum-pumping	en	preferred	
+真空抽气	vacuum-pumping	zh	preferred	
+base pressure	base-pressure	en	preferred	
+本底气压	base-pressure	zh	preferred	
+outgassing	outgassing	en	preferred	
+出气	outgassing	zh	preferred	
+bakeout	bakeout	en	preferred	
+真空烘烤	bakeout	zh	preferred	
+vacuum bakeout	bakeout	en	alias	
+gas injection valve	gas-injection-valve	en	preferred	
+进气阀	gas-injection-valve	zh	preferred	
+pellet guide tube	pellet-guide-tube	en	preferred	
+弹丸导管	pellet-guide-tube	zh	preferred	
+pellet ablation	pellet-ablation	en	preferred	
+弹丸烧蚀	pellet-ablation	zh	preferred	
+cryogenic pellet	cryogenic-pellet	en	preferred	
+低温弹丸	cryogenic-pellet	zh	preferred	
+frozen pellet	cryogenic-pellet	en	alias	
+compact toroid injection	compact-toroid-injection	en	preferred	
+CTI	compact-toroid-injection	abbr	preferred	
+紧凑环注入	compact-toroid-injection	zh	preferred	
+CT injection	compact-toroid-injection	en	alias	
+gas balance	gas-balance	en	preferred	
+气体平衡	gas-balance	zh	preferred	
+# ==== Batch 33: Nuclear Analysis Details ====
+nuclear data library	nuclear-data-library	en	preferred	
+核数据库	nuclear-data-library	zh	preferred	
+contact dose rate	contact-dose-rate	en	preferred	
+接触剂量率	contact-dose-rate	zh	preferred	
+clearance index	clearance-index	en	preferred	
+清洁解控指数	clearance-index	zh	preferred	
+gas production rate	gas-production-rate	en	preferred	
+气体产额	gas-production-rate	zh	preferred	
+helium production	helium-production	en	preferred	
+氦产生	helium-production	zh	preferred	
+He production	helium-production	en	alias	
+neutron flux	neutron-flux	en	preferred	
+中子通量	neutron-flux	zh	preferred	
+photon dose	photon-dose	en	preferred	
+光子剂量	photon-dose	zh	preferred	
+gamma dose	photon-dose	en	alias	
+deep penetration	deep-penetration	en	preferred	
+深穿透	deep-penetration	zh	preferred	
+neutron streaming	deep-penetration	en	alias	
+activation foil	activation-foil	en	preferred	
+活化箔	activation-foil	zh	preferred	
+nuclear response function	nuclear-response-function	en	preferred	
+核响应函数	nuclear-response-function	zh	preferred	
+# ==== Batch 34: Fusion Economics & Project Management ====
+first-of-a-kind	first-of-a-kind	en	preferred	
+FOAK	first-of-a-kind	abbr	preferred	
+首台堆	first-of-a-kind	zh	preferred	
+nth-of-a-kind	nth-of-a-kind	en	preferred	
+NOAK	nth-of-a-kind	abbr	preferred	
+第N台堆	nth-of-a-kind	zh	preferred	
+learning rate	learning-rate	en	preferred	
+学习率	learning-rate	zh	preferred	
+supply chain	supply-chain	en	preferred	
+供应链	supply-chain	zh	preferred	
+component qualification	component-qualification	en	preferred	
+部件鉴定	component-qualification	zh	preferred	
+prototype reactor	prototype-reactor	en	preferred	
+原型堆	prototype-reactor	zh	preferred	
+integrated commissioning	integrated-commissioning	en	preferred	
+综合调试	integrated-commissioning	zh	preferred	
+construction schedule	construction-schedule	en	preferred	
+建造进度	construction-schedule	zh	preferred	
+regulatory approval	regulatory-approval	en	preferred	
+审批许可	regulatory-approval	zh	preferred	
+decommissioning cost	decommissioning-cost	en	preferred	
+退役费用	decommissioning-cost	zh	preferred	
+# ==== Batch 35: Confinement Modes & Transport Phenomena ====
+I-mode	i-mode	en	preferred	
+I模	i-mode	zh	preferred	
+super H-mode	super-h-mode	en	preferred	
+超级H模	super-h-mode	zh	preferred	
+density peaking	density-peaking	en	preferred	
+密度峰化	density-peaking	zh	preferred	
+impurity accumulation	impurity-accumulation	en	preferred	
+杂质积聚	impurity-accumulation	zh	preferred	
+tungsten accumulation	tungsten-accumulation	en	preferred	
+钨积聚	tungsten-accumulation	zh	preferred	
+W accumulation	tungsten-accumulation	en	alias	
+rotation reversal	rotation-reversal	en	preferred	
+旋转反转	rotation-reversal	zh	preferred	
+density pump-out	density-pump-out	en	preferred	
+密度泵出	density-pump-out	zh	preferred	
+temperature pedestal	temperature-pedestal	en	preferred	
+温度基座	temperature-pedestal	zh	preferred	
+pressure pedestal	pressure-pedestal	en	preferred	
+压力基座	pressure-pedestal	zh	preferred	
+pedestal width	pedestal-width	en	preferred	
+基座宽度	pedestal-width	zh	preferred	

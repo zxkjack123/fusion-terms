@@ -700,3 +700,93 @@ maximum-credible-accident	internal:expansion:batch-26	Worst-case safety scenario
 source-term	internal:expansion:batch-26	Accident release quantification	copilot	2026-03-17
 emergency-planning-zone	internal:expansion:batch-26	Emergency response area	copilot	2026-03-17
 occupational-dose-limit	internal:expansion:batch-26	Worker annual dose limit	copilot	2026-03-17
+minority-heating	internal:expansion:batch-27	ICRF minority ion heating	copilot	2026-03-17
+harmonic-heating	internal:expansion:batch-27	Cyclotron harmonic heating	copilot	2026-03-17
+mode-conversion	internal:expansion:batch-27	Wave mode conversion	copilot	2026-03-17
+antenna-coupling	internal:expansion:batch-27	RF antenna plasma coupling	copilot	2026-03-17
+wave-absorption	internal:expansion:batch-27	Plasma RF absorption	copilot	2026-03-17
+n-parallel	internal:expansion:batch-27	Parallel refractive index	copilot	2026-03-17
+multipactor	internal:expansion:batch-27	RF secondary electron discharge	copilot	2026-03-17
+full-wave-simulation	internal:expansion:batch-27	Maxwell equation simulation	copilot	2026-03-17
+antenna-loading	internal:expansion:batch-27	Antenna impedance coupling	copilot	2026-03-17
+faraday-screen	internal:expansion:batch-27	ICRF antenna screen	copilot	2026-03-17
+passing-particle	internal:expansion:batch-28	Untrapped toroidal particle	copilot	2026-03-17
+trapped-particle	internal:expansion:batch-28	Banana orbit particle	copilot	2026-03-17
+bounce-frequency	internal:expansion:batch-28	Trapped particle oscillation	copilot	2026-03-17
+precession-drift	internal:expansion:batch-28	Toroidal precession	copilot	2026-03-17
+exb-drift	internal:expansion:batch-28	ExB particle drift	copilot	2026-03-17
+grad-b-drift	internal:expansion:batch-28	Gradient-B drift	copilot	2026-03-17
+curvature-drift	internal:expansion:batch-28	Field curvature drift	copilot	2026-03-17
+diamagnetic-drift	internal:expansion:batch-28	Pressure gradient drift	copilot	2026-03-17
+orbit-loss	internal:expansion:batch-28	Fast ion orbit loss	copilot	2026-03-17
+prompt-loss	internal:expansion:batch-28	First orbit loss	copilot	2026-03-17
+confinement-scaling	internal:expansion:batch-29	Empirical scaling law	copilot	2026-03-17
+h-factor	internal:expansion:batch-29	Confinement quality factor	copilot	2026-03-17
+troyon-limit	internal:expansion:batch-29	Beta-N stability limit	copilot	2026-03-17
+greenwald-fraction	internal:expansion:batch-29	Density / Greenwald density	copilot	2026-03-17
+power-degradation	internal:expansion:batch-29	Heating power degradation	copilot	2026-03-17
+isotope-effect	internal:expansion:batch-29	Isotope mass dependence	copilot	2026-03-17
+size-scaling	internal:expansion:batch-29	Device size scaling	copilot	2026-03-17
+mhd-stability-limit	internal:expansion:batch-29	MHD operation boundary	copilot	2026-03-17
+density-limit	internal:expansion:batch-29	Maximum density boundary	copilot	2026-03-17
+stored-energy	internal:expansion:batch-29	Plasma thermal energy	copilot	2026-03-17
+vertical-stability	internal:expansion:batch-30	Elongated plasma VDE control	copilot	2026-03-17
+gap-control	internal:expansion:batch-30	Plasma-wall gap feedback	copilot	2026-03-17
+kinetic-control	internal:expansion:batch-30	Profile active control	copilot	2026-03-17
+burn-control	internal:expansion:batch-30	Fusion burn regulation	copilot	2026-03-17
+actuator	internal:expansion:batch-30	Plasma control actuator	copilot	2026-03-17
+plasma-ramp-up	internal:expansion:batch-30	Current ramp-up phase	copilot	2026-03-17
+plasma-ramp-down	internal:expansion:batch-30	Current ramp-down phase	copilot	2026-03-17
+feedback-control	internal:expansion:batch-30	Close-loop measurement control	copilot	2026-03-17
+model-predictive-control	internal:expansion:batch-30	Model-based optimal control	copilot	2026-03-17
+plasma-state-estimation	internal:expansion:batch-30	Diagnostic state reconstruction	copilot	2026-03-17
+beryllium-multiplier	internal:expansion:batch-31	Blanket Be multiplier layer	copilot	2026-03-17
+breeding-zone	internal:expansion:batch-31	Tritium breeding region	copilot	2026-03-17
+back-plate	internal:expansion:batch-31	First wall structural support	copilot	2026-03-17
+coolant-manifold	internal:expansion:batch-31	Blanket coolant distribution	copilot	2026-03-17
+purge-gas	internal:expansion:batch-31	Tritium extraction helium	copilot	2026-03-17
+thermal-fatigue	internal:expansion:batch-31	Cyclic thermal loading fatigue	copilot	2026-03-17
+irradiation-creep	internal:expansion:batch-31	Neutron-enhanced creep	copilot	2026-03-17
+functional-material	internal:expansion:batch-31	Blanket functional materials	copilot	2026-03-17
+coolant-chemistry	internal:expansion:batch-31	Blanket coolant chemistry	copilot	2026-03-17
+thermo-mechanical-analysis	internal:expansion:batch-31	Thermal-stress coupled analysis	copilot	2026-03-17
+vacuum-pumping	internal:expansion:batch-32	VV pumping system	copilot	2026-03-17
+base-pressure	internal:expansion:batch-32	Background vacuum pressure	copilot	2026-03-17
+outgassing	internal:expansion:batch-32	Wall adsorbed gas release	copilot	2026-03-17
+bakeout	internal:expansion:batch-32	High-temperature degassing	copilot	2026-03-17
+gas-injection-valve	internal:expansion:batch-32	Fast gas valve	copilot	2026-03-17
+pellet-guide-tube	internal:expansion:batch-32	Pellet curved guide tube	copilot	2026-03-17
+pellet-ablation	internal:expansion:batch-32	Pellet surface ablation	copilot	2026-03-17
+cryogenic-pellet	internal:expansion:batch-32	Frozen fuel pellet	copilot	2026-03-17
+compact-toroid-injection	internal:expansion:batch-32	CT deep fueling	copilot	2026-03-17
+gas-balance	internal:expansion:batch-32	Device gas throughput balance	copilot	2026-03-17
+nuclear-data-library	internal:expansion:batch-33	Evaluated nuclear data	copilot	2026-03-17
+contact-dose-rate	internal:expansion:batch-33	Surface dose rate	copilot	2026-03-17
+clearance-index	internal:expansion:batch-33	Waste clearance criterion	copilot	2026-03-17
+gas-production-rate	internal:expansion:batch-33	Nuclear He/H gas rate	copilot	2026-03-17
+helium-production	internal:expansion:batch-33	Structural (n,alpha) He	copilot	2026-03-17
+neutron-flux	internal:expansion:batch-33	Neutron flow intensity	copilot	2026-03-17
+photon-dose	internal:expansion:batch-33	Secondary photon dose	copilot	2026-03-17
+deep-penetration	internal:expansion:batch-33	Shielding streaming	copilot	2026-03-17
+activation-foil	internal:expansion:batch-33	Neutron spectrum foil	copilot	2026-03-17
+nuclear-response-function	internal:expansion:batch-33	Nuclear heating response	copilot	2026-03-17
+first-of-a-kind	internal:expansion:batch-34	FOAK cost baseline	copilot	2026-03-17
+nth-of-a-kind	internal:expansion:batch-34	NOAK series cost	copilot	2026-03-17
+learning-rate	internal:expansion:batch-34	Production learning curve	copilot	2026-03-17
+supply-chain	internal:expansion:batch-34	Fusion supply chain	copilot	2026-03-17
+component-qualification	internal:expansion:batch-34	Nuclear component QA	copilot	2026-03-17
+prototype-reactor	internal:expansion:batch-34	Pre-DEMO prototype	copilot	2026-03-17
+integrated-commissioning	internal:expansion:batch-34	System-level commissioning	copilot	2026-03-17
+construction-schedule	internal:expansion:batch-34	Device build timeline	copilot	2026-03-17
+regulatory-approval	internal:expansion:batch-34	Government facility approval	copilot	2026-03-17
+decommissioning-cost	internal:expansion:batch-34	Decommission cleanup cost	copilot	2026-03-17
+i-mode	internal:expansion:batch-35	Intermediate confinement mode	copilot	2026-03-17
+super-h-mode	internal:expansion:batch-35	Wide pedestal H-mode	copilot	2026-03-17
+density-peaking	internal:expansion:batch-35	Central density peaking	copilot	2026-03-17
+impurity-accumulation	internal:expansion:batch-35	Core impurity buildup	copilot	2026-03-17
+tungsten-accumulation	internal:expansion:batch-35	Core tungsten enrichment	copilot	2026-03-17
+rotation-reversal	internal:expansion:batch-35	Spontaneous rotation reversal	copilot	2026-03-17
+density-pump-out	internal:expansion:batch-35	H-mode density transient	copilot	2026-03-17
+temperature-pedestal	internal:expansion:batch-35	Edge temperature pedestal	copilot	2026-03-17
+pressure-pedestal	internal:expansion:batch-35	Edge pressure pedestal	copilot	2026-03-17
+pedestal-width	internal:expansion:batch-35	Pedestal radial width	copilot	2026-03-17

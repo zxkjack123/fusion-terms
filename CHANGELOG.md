@@ -23,6 +23,22 @@
 
 ### Fixed
 
+## v2026.03.18.1
+
+### Added
+
+- **术语扩充（Batch 27–35）**：新增 90 个概念、211 条别名，覆盖 9 个主题领域：
+  - Batch 27: RF加热与电流驱动物理（minority heating, mode conversion, multipactor, Faraday screen 等 10 项）
+  - Batch 28: 粒子轨道物理（passing/trapped particle, E×B drift, grad-B drift, orbit loss 等 10 项）
+  - Batch 29: 约束标度与性能指标（confinement scaling, H-factor, Troyon limit, density limit 等 10 项）
+  - Batch 30: 等离子体控制与执行器（vertical stability, burn control, MPC, plasma ramp-up/down 等 10 项）
+  - Batch 31: 包层工程细节（Be multiplier, breeding zone, purge gas, irradiation creep 等 10 项）
+  - Batch 32: 真空与加料技术（vacuum pumping, bakeout, pellet ablation, CT injection 等 10 项）
+  - Batch 33: 核分析细节（nuclear data library, neutron flux, contact dose rate, deep penetration 等 10 项）
+  - Batch 34: 聚变经济与项目管理（FOAK/NOAK, learning rate, supply chain, regulatory approval 等 10 项）
+  - Batch 35: 约束模态与输运现象（I-mode, super H-mode, density peaking, W accumulation, pedestal width 等 10 项）
+- 注册表总计：730 concepts, 2133 aliases, 730 evidence rows
+
 ## v2026.03.18
 
 ### Added

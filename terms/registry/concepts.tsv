@@ -733,3 +733,102 @@ maximum-credible-accident	concept	最大可信事故	maximum credible accident		
 source-term	concept	源项	source term		active	Quantification of radioactive material released in accident scenarios
 emergency-planning-zone	concept	应急计划区	emergency planning zone	EPZ	active	Designated area for emergency response planning around nuclear facility
 occupational-dose-limit	limit	职业剂量限值	occupational dose limit		active	Annual dose limit for radiation workers
+# ==== Batch 27: RF Heating & Current Drive Physics ====
+minority-heating	concept	少数粒子加热	minority heating		active	ICRF minority ion resonance heating scheme
+harmonic-heating	concept	谐波加热	harmonic heating		active	Heating at higher harmonics of the cyclotron frequency
+mode-conversion	concept	模式转换	mode conversion		active	Wave mode conversion heating mechanism at ion-ion hybrid layer
+antenna-coupling	concept	天线耦合	antenna coupling		active	RF wave coupling from antenna to plasma
+wave-absorption	concept	波吸收	wave absorption		active	Plasma power absorption of RF waves
+n-parallel	metric	平行折射率	parallel refractive index		active	Parallel wave vector component N_parallel controlling wave-plasma interaction
+multipactor	concept	二次电子倍增放电	multipactor		active	Secondary electron multiplication discharge in RF components
+full-wave-simulation	method	全波模拟	full-wave simulation		active	Full Maxwell equation wave propagation simulation
+antenna-loading	metric	天线负载	antenna loading		active	Plasma coupling component of antenna impedance
+faraday-screen	system	法拉第屏	Faraday screen		active	Electrostatic screen in front of ICRF antenna
+# ==== Batch 28: Particle Orbit Physics ====
+passing-particle	concept	通行粒子	passing particle		active	Untrapped particle traversing the full torus
+trapped-particle	concept	俘获粒子	trapped particle		active	Banana-orbit particle reflected by magnetic mirror force
+bounce-frequency	metric	弹跳频率	bounce frequency		active	Oscillation frequency of trapped particle in banana orbit
+precession-drift	concept	进动漂移	toroidal precession drift		active	Toroidal precession of trapped particles
+exb-drift	concept	E×B漂移	E×B drift		active	Particle drift perpendicular to both E and B fields
+grad-b-drift	concept	∇B漂移	grad-B drift		active	Particle drift due to magnetic field gradient
+curvature-drift	concept	曲率漂移	curvature drift		active	Particle drift due to magnetic field line curvature
+diamagnetic-drift	concept	抗磁漂移	diamagnetic drift		active	Fluid drift driven by pressure gradient
+orbit-loss	concept	轨道损失	orbit loss		active	Fast ion loss due to large orbit width exceeding confinement
+prompt-loss	concept	瞬时损失	prompt loss		active	Fast ion loss on first orbit after birth
+# ==== Batch 29: Confinement Scaling & Performance Metrics ====
+confinement-scaling	concept	约束标度律	confinement scaling law		active	Empirical scaling law for energy confinement time
+h-factor	metric	H因子	H-factor		active	Confinement quality factor tau_E / tau_scaling
+troyon-limit	metric	Troyon极限	Troyon limit		active	MHD stability limit on normalized beta_N
+greenwald-fraction	metric	Greenwald份额	Greenwald fraction		active	Ratio of line-averaged density to Greenwald density
+power-degradation	concept	功率退化	power degradation		active	Confinement degradation with increasing heating power
+isotope-effect	concept	同位素效应	isotope effect		active	Confinement dependence on hydrogen isotope mass
+size-scaling	concept	尺寸标度	size scaling		active	Confinement scaling with device size
+mhd-stability-limit	metric	MHD稳定极限	MHD stability limit		active	MHD stability boundary of plasma operation
+density-limit	metric	密度极限	density limit		active	Maximum sustainable plasma density boundary
+stored-energy	metric	等离子体储能	stored energy		active	Total thermodynamic energy of confined plasma
+# ==== Batch 30: Plasma Control & Actuators ====
+vertical-stability	concept	垂直稳定性	vertical stability		active	Axisymmetric stability of elongated plasma
+gap-control	method	间隙控制	gap control		active	Feedback control of plasma-wall clearance
+kinetic-control	method	动理学控制	kinetic control		active	Active control of plasma kinetic profiles
+burn-control	method	燃烧控制	burn control		active	Active regulation of fusion burn conditions
+actuator	concept	执行器	actuator		active	Physical action device for plasma control
+plasma-ramp-up	concept	等离子体升流	plasma ramp-up		active	Initial plasma current ramp-up phase
+plasma-ramp-down	concept	等离子体降流	plasma ramp-down		active	Plasma current termination ramp-down phase
+feedback-control	method	反馈控制	feedback control		active	Closed-loop control based on real-time measurements
+model-predictive-control	method	模型预测控制	model predictive control	MPC	active	Model-based feedforward + feedback optimization control
+plasma-state-estimation	method	等离子体状态估计	plasma state estimation		active	Reconstruction of full plasma state from limited diagnostics
+# ==== Batch 31: Blanket Engineering Details ====
+beryllium-multiplier	system	铍中子倍增层	beryllium multiplier		active	Neutron multiplication layer in solid blanket using beryllium
+breeding-zone	system	增殖区	breeding zone		active	Blanket region containing tritium breeding material
+back-plate	system	背板	back plate		active	Structural support plate behind the first wall
+coolant-manifold	system	冷却歧管	coolant manifold		active	Blanket coolant distribution and collection manifold
+purge-gas	concept	吹扫气	purge gas		active	Helium gas for extracting tritium from ceramic breeders
+thermal-fatigue	concept	热疲劳	thermal fatigue		active	Material fatigue from cyclic thermal loading
+irradiation-creep	concept	辐照蠕变	irradiation creep		active	Neutron irradiation enhanced creep deformation
+functional-material	material	功能材料	functional material		active	Multiplier, breeder and coolant materials in blanket
+coolant-chemistry	concept	冷却剂化学	coolant chemistry		active	Chemical control of blanket coolant
+thermo-mechanical-analysis	method	热机械分析	thermo-mechanical analysis		active	Coupled thermal and mechanical stress analysis
+# ==== Batch 32: Vacuum & Fueling Technology ====
+vacuum-pumping	system	真空抽气	vacuum pumping		active	Pumping system maintaining vacuum vessel base pressure
+base-pressure	metric	本底气压	base pressure		active	Vacuum vessel background pressure before plasma operation
+outgassing	concept	出气	outgassing		active	Release of adsorbed gases from vacuum vessel walls
+bakeout	method	真空烘烤	bakeout		active	High-temperature degassing to reduce base pressure
+gas-injection-valve	system	进气阀	gas injection valve		active	Fast electromagnetic valve for gas injection
+pellet-guide-tube	system	弹丸导管	pellet guide tube		active	Curved tube guiding pellets from injector to plasma
+pellet-ablation	concept	弹丸烧蚀	pellet ablation		active	Fuel pellet surface ablation in hot plasma
+cryogenic-pellet	system	低温弹丸	cryogenic pellet		active	Frozen hydrogen isotope fuel pellet
+compact-toroid-injection	method	紧凑环注入	compact toroid injection	CTI	active	CT injection for deep fueling and current drive
+gas-balance	concept	气体平衡	gas balance		active	Balance of gas injection, recycling and pumping in device
+# ==== Batch 33: Nuclear Analysis Details ====
+nuclear-data-library	concept	核数据库	nuclear data library		active	Evaluated nuclear data file collection (parent concept of ENDF/JEFF etc.)
+contact-dose-rate	metric	接触剂量率	contact dose rate		active	Dose rate at the surface of activated components
+clearance-index	metric	清洁解控指数	clearance index		active	Unconditional clearance criterion for radioactive waste
+gas-production-rate	metric	气体产额	gas production rate		active	He/H gas production from nuclear reactions in materials
+helium-production	concept	氦产生	helium production		active	Helium generation via (n,alpha) reactions in structural materials
+neutron-flux	metric	中子通量	neutron flux		active	Neutron flow intensity per unit area
+photon-dose	metric	光子剂量	photon dose		active	Radiation dose from secondary photons
+deep-penetration	concept	深穿透	deep penetration		active	Neutron streaming in thick shielding
+activation-foil	system	活化箔	activation foil		active	Metal foil for neutron spectrum measurement
+nuclear-response-function	concept	核响应函数	nuclear response function		active	Response kernel for nuclear heating, He production etc.
+# ==== Batch 34: Fusion Economics & Project Management ====
+first-of-a-kind	concept	首台堆	first-of-a-kind	FOAK	active	First-built cost baseline for fusion power plant
+nth-of-a-kind	concept	第N台堆	nth-of-a-kind	NOAK	active	Series-production steady-state cost baseline
+learning-rate	metric	学习率	learning rate		active	Cost reduction fraction per doubling of production units
+supply-chain	concept	供应链	supply chain		active	Manufacturing and raw material supply chain for fusion components
+component-qualification	method	部件鉴定	component qualification		active	Qualification procedure for critical nuclear components
+prototype-reactor	concept	原型堆	prototype reactor		active	Engineering validation prototype before DEMO
+integrated-commissioning	method	综合调试	integrated commissioning		active	System-level joint commissioning of the device
+construction-schedule	concept	建造进度	construction schedule		active	Construction timeline for large fusion devices
+regulatory-approval	concept	审批许可	regulatory approval		active	Government approval for nuclear facility construction and operation
+decommissioning-cost	metric	退役费用	decommissioning cost		active	Device decommissioning and radioactive cleanup cost
+# ==== Batch 35: Confinement Modes & Transport Phenomena ====
+i-mode	concept	I模	I-mode		active	Intermediate confinement regime with L-mode density and H-mode temperature
+super-h-mode	concept	超级H模	super H-mode		active	High-performance H-mode with very wide/tall pedestal
+density-peaking	concept	密度峰化	density peaking		active	Density profile peaking toward plasma center
+impurity-accumulation	concept	杂质积聚	impurity accumulation		active	High-Z impurity accumulation in plasma core
+tungsten-accumulation	concept	钨积聚	tungsten accumulation		active	Hazardous tungsten impurity enrichment in core
+rotation-reversal	concept	旋转反转	rotation reversal		active	Spontaneous rotation direction reversal at density transition
+density-pump-out	concept	密度泵出	density pump-out		active	Transient density drop during H-mode transition
+temperature-pedestal	concept	温度基座	temperature pedestal		active	H-mode edge temperature pedestal structure
+pressure-pedestal	concept	压力基座	pressure pedestal		active	H-mode edge pressure pedestal structure
+pedestal-width	metric	基座宽度	pedestal width		active	Radial width of H-mode pedestal
