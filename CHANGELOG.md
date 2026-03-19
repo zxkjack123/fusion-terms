@@ -23,6 +23,14 @@
 
 ### Fixed
 
+## v2026.03.19
+
+### Fixed
+
+- **同步注册表别名到 allowlist**：Batch 9–35 新增的 559 条中文 + 571 条英文 token-only 别名已补充到 allowlist_{zh,en}.txt
+- domain_terms.txt 从 1241 → 2369 条
+- Rime 输入法导入从 1018 → 1575 条（仅 CJK 条目）
+
 ## v2026.03.18.1
 
 ### Added
