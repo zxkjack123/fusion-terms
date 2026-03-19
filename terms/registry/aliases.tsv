@@ -2890,3 +2890,70 @@ workflow automation	workflow-automation	en	preferred
 uncertainty quantification	uncertainty-quantification	en	preferred	
 UQ	uncertainty-quantification	abbr	preferred	
 不确定性量化	uncertainty-quantification	zh	preferred	
+# ==== Batch 45: Magnetic Helicity, Reconnection & Relaxation Physics ====
+magnetic helicity	magnetic-helicity	en	preferred	
+磁螺旋度	magnetic-helicity	zh	preferred	
+helicity injection	helicity-injection	en	preferred	
+HI	helicity-injection	abbr	preferred	
+螺旋度注入	helicity-injection	zh	preferred	
+coaxial helicity injection	coaxial-helicity-injection	en	preferred	
+CHI	coaxial-helicity-injection	abbr	preferred	
+同轴螺旋度注入	coaxial-helicity-injection	zh	preferred	
+Taylor relaxation	taylor-relaxation	en	preferred	
+Taylor弛豫	taylor-relaxation	zh	preferred	
+Taylor state	taylor-state	en	preferred	
+Taylor态	taylor-state	zh	preferred	
+magnetic reconnection	magnetic-reconnection	en	preferred	
+磁重联	magnetic-reconnection	zh	preferred	
+磁场重联	magnetic-reconnection	zh	alias	
+magnetic self-organization	magnetic-self-organization	en	preferred	
+磁自组织	magnetic-self-organization	zh	preferred	
+force-free equilibrium	force-free-equilibrium	en	preferred	
+无力平衡	force-free-equilibrium	zh	preferred	
+tilt instability	tilt-instability	en	preferred	
+倾斜不稳定性	tilt-instability	zh	preferred	
+tilt mode	tilt-instability	en	alias	
+flux amplification	flux-amplification	en	preferred	
+磁通放大	flux-amplification	zh	preferred	
+# ==== Batch 46: Spheromak/CT Devices & Formation Technologies ====
+SSPX	sspx	en	preferred	
+Sustained Spheromak Physics Experiment	sspx	en	alias	
+coaxial plasma gun	coaxial-plasma-gun	en	preferred	
+同轴等离子体枪	coaxial-plasma-gun	zh	preferred	
+Marshall gun	coaxial-plasma-gun	en	alias	
+spheromak merging	spheromak-merging	en	preferred	
+球马克并合	spheromak-merging	zh	preferred	
+counter-helicity merging	spheromak-merging	en	alias	
+flux conserver	flux-conserver	en	preferred	
+磁通守恒器	flux-conserver	zh	preferred	
+plasma sustainment	plasma-sustainment	en	preferred	
+等离子体维持	plasma-sustainment	zh	preferred	
+current sustainment	plasma-sustainment	en	alias	
+pinch parameter	pinch-parameter	en	preferred	
+箍缩参数	pinch-parameter	zh	preferred	
+EXL-50U	exl-50u	en	preferred	
+EXL50U	exl-50u	en	alias	
+# ==== Batch 47: Proton-Boron Fusion & Advanced Fuel Physics ====
+ignition temperature	ignition-temperature	en	preferred	
+点火温度	ignition-temperature	zh	preferred	
+three-alpha reaction	three-alpha-reaction	en	preferred	
+三α反应	three-alpha-reaction	zh	preferred	
+3-alpha reaction	three-alpha-reaction	en	alias	
+side reaction	side-reaction	en	preferred	
+副反应	side-reaction	zh	preferred	
+parasitic reaction	side-reaction	en	alias	
+radiation-dominated regime	radiation-dominated-regime	en	preferred	
+辐射主导区间	radiation-dominated-regime	zh	preferred	
+laser-boron fusion	laser-boron-fusion	en	preferred	
+激光硼聚变	laser-boron-fusion	zh	preferred	
+laser p-B11 fusion	laser-boron-fusion	en	alias	
+plasma focus	dense-plasma-focus	en	alias	
+PF	dense-plasma-focus	abbr	alias	
+等离子体聚焦装置	dense-plasma-focus	zh	alias	
+HB11 Energy	hb11-energy	en	preferred	
+LPP Fusion	lpp-fusion	en	preferred	
+Focus Fusion	lpp-fusion	en	alias	
+fusion product spectrum	fusion-product-spectrum	en	preferred	
+聚变产物能谱	fusion-product-spectrum	zh	preferred	
+power density	power-density	en	preferred	
+功率密度	power-density	zh	preferred	

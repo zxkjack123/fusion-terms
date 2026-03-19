@@ -931,3 +931,32 @@ synthetic-diagnostics	method	合成诊断	synthetic diagnostics		active	Virtual 
 integrated-modeling	method	集成建模	integrated modeling		active	Multi-physics coupled whole-device simulation
 workflow-automation	method	工作流自动化	workflow automation		active	Automated orchestration of simulation and analysis pipelines
 uncertainty-quantification	method	不确定性量化	uncertainty quantification	UQ	active	Systematic assessment of model prediction uncertainties
+# ==== Batch 45: Magnetic Helicity, Reconnection & Relaxation Physics ====
+magnetic-helicity	concept	磁螺旋度	magnetic helicity		active	Conserved quantity describing magnetic field topology and twist
+helicity-injection	method	螺旋度注入	helicity injection	HI	active	Injecting magnetic helicity to sustain plasma current
+coaxial-helicity-injection	method	同轴螺旋度注入	coaxial helicity injection	CHI	active	Coaxial gun helicity injection for spheromak/ST sustainment
+taylor-relaxation	concept	Taylor弛豫	Taylor relaxation		active	Plasma relaxation to minimum-energy state at constant helicity
+taylor-state	concept	Taylor态	Taylor state		active	Force-free minimum-energy equilibrium state (curl B = lambda B)
+magnetic-reconnection	concept	磁重联	magnetic reconnection		active	Topological rearrangement of magnetic field lines releasing energy
+magnetic-self-organization	concept	磁自组织	magnetic self-organization		active	Spontaneous plasma relaxation to ordered equilibrium state
+force-free-equilibrium	concept	无力平衡	force-free equilibrium		active	Plasma equilibrium satisfying J cross B equals zero
+tilt-instability	concept	倾斜不稳定性	tilt instability		active	Global CT/spheromak MHD instability of magnetic axis tilt
+flux-amplification	concept	磁通放大	flux amplification		active	Dynamo-driven poloidal flux amplification in spheromak
+# ==== Batch 46: Spheromak/CT Devices & Formation Technologies ====
+sspx	device	SSPX	SSPX		active	LLNL Sustained Spheromak Physics Experiment
+coaxial-plasma-gun	system	同轴等离子体枪	coaxial plasma gun		active	Coaxial magnetized gun for spheromak/CT formation
+spheromak-merging	concept	球马克并合	spheromak merging		active	Counter-helicity spheromak merging
+flux-conserver	system	磁通守恒器	flux conserver		active	Close-fitting conducting shell for CT flux conservation
+plasma-sustainment	concept	等离子体维持	plasma sustainment		active	Non-inductive current and confinement sustainment
+pinch-parameter	metric	箍缩参数	pinch parameter		active	Theta parameter characterizing RFP/spheromak state
+exl-50u	device	EXL-50U	EXL-50U		active	ENN upgraded spherical tokamak
+# ==== Batch 47: Proton-Boron Fusion & Advanced Fuel Physics ====
+ignition-temperature	metric	点火温度	ignition temperature		active	Minimum temperature required for self-sustaining fusion burn
+three-alpha-reaction	concept	三α反应	three-alpha reaction		active	p + 11B -> 3 alpha + 8.7 MeV reaction channel
+side-reaction	concept	副反应	side reaction		active	Parasitic neutron-producing reaction channel in advanced fuels
+radiation-dominated-regime	concept	辐射主导区间	radiation-dominated regime		active	High-temperature regime where radiation loss exceeds fusion power
+laser-boron-fusion	concept	激光硼聚变	laser-boron fusion		active	Laser-driven p-11B fusion scheme
+hb11-energy	organization	HB11 Energy	HB11 Energy		active	Australian laser p-B11 fusion company
+lpp-fusion	organization	LPP Fusion	LPP Fusion		active	US dense plasma focus p-B11 fusion company
+fusion-product-spectrum	concept	聚变产物能谱	fusion product spectrum		active	Energy distribution spectrum of fusion reaction products
+power-density	metric	功率密度	power density		active	Fusion power per unit volume

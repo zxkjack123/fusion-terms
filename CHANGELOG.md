@@ -23,6 +23,18 @@
 
 ### Fixed
 
+## v2026.03.19.2
+
+### Added
+
+- **术语扩充（Batch 45–47）**：新增 26 个概念、64 条别名（+3 条合并到已有概念），覆盖 3 个主题领域：
+  - Batch 45: 磁螺旋度、重联与弛豫物理（magnetic helicity, helicity injection, CHI, Taylor relaxation/state, magnetic reconnection, tilt instability 等 10 项）
+  - Batch 46: 球马克/CT装置与形成技术（SSPX, coaxial plasma gun, spheromak merging, flux conserver, plasma sustainment, EXL-50U 等 8 项新概念；4 项已存在跳过）
+  - Batch 47: 氢硼聚变与先进燃料物理（ignition temperature, three-alpha reaction, laser-boron fusion, HB11 Energy, LPP Fusion, power density 等 9 项新概念；plasma focus 合并到已有 dense-plasma-focus）
+- 注册表总计：846 concepts, 2405 aliases, 846 evidence rows
+- allowlist 同步：+24 中文、+5 英文 token-only 别名
+- domain_terms.txt 从 2502 → 2531 条
+
 ## v2026.03.19.1
 
 ### Added

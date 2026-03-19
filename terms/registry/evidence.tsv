@@ -880,3 +880,29 @@ synthetic-diagnostics	internal:expansion:batch-44	Virtual diagnostic signal	copi
 integrated-modeling	internal:expansion:batch-44	Multi-physics simulation	copilot	2026-03-19
 workflow-automation	internal:expansion:batch-44	Pipeline automation	copilot	2026-03-19
 uncertainty-quantification	internal:expansion:batch-44	Prediction UQ	copilot	2026-03-19
+magnetic-helicity	internal:expansion:batch-45	Magnetic topology conserved quantity	copilot	2026-03-19
+helicity-injection	internal:expansion:batch-45	Helicity injection sustainment	copilot	2026-03-19
+coaxial-helicity-injection	internal:expansion:batch-45	CHI for spheromak/ST	copilot	2026-03-19
+taylor-relaxation	internal:expansion:batch-45	Minimum energy relaxation	copilot	2026-03-19
+taylor-state	internal:expansion:batch-45	Force-free equilibrium state	copilot	2026-03-19
+magnetic-reconnection	internal:expansion:batch-45	Field line reconnection	copilot	2026-03-19
+magnetic-self-organization	internal:expansion:batch-45	Spontaneous self-organization	copilot	2026-03-19
+force-free-equilibrium	internal:expansion:batch-45	JxB=0 equilibrium	copilot	2026-03-19
+tilt-instability	internal:expansion:batch-45	CT global tilt mode	copilot	2026-03-19
+flux-amplification	internal:expansion:batch-45	Dynamo poloidal flux amplification	copilot	2026-03-19
+sspx	internal:expansion:batch-46	LLNL spheromak experiment	copilot	2026-03-19
+coaxial-plasma-gun	internal:expansion:batch-46	CT formation gun	copilot	2026-03-19
+spheromak-merging	internal:expansion:batch-46	Counter-helicity merging	copilot	2026-03-19
+flux-conserver	internal:expansion:batch-46	Conducting shell for CT	copilot	2026-03-19
+plasma-sustainment	internal:expansion:batch-46	Non-inductive sustainment	copilot	2026-03-19
+pinch-parameter	internal:expansion:batch-46	Theta parameter	copilot	2026-03-19
+exl-50u	internal:expansion:batch-46	ENN upgraded ST	copilot	2026-03-19
+ignition-temperature	internal:expansion:batch-47	Min self-sustaining temp	copilot	2026-03-19
+three-alpha-reaction	internal:expansion:batch-47	p-11B three alpha channel	copilot	2026-03-19
+side-reaction	internal:expansion:batch-47	Parasitic neutron reactions	copilot	2026-03-19
+radiation-dominated-regime	internal:expansion:batch-47	Radiation>fusion power zone	copilot	2026-03-19
+laser-boron-fusion	internal:expansion:batch-47	Laser driven p-B11	copilot	2026-03-19
+hb11-energy	internal:expansion:batch-47	Australian laser p-B11 co.	copilot	2026-03-19
+lpp-fusion	internal:expansion:batch-47	US DPF p-B11 company	copilot	2026-03-19
+fusion-product-spectrum	internal:expansion:batch-47	Reaction product energy dist	copilot	2026-03-19
+power-density	internal:expansion:batch-47	Fusion power per volume	copilot	2026-03-19

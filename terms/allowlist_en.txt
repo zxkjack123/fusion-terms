@@ -856,3 +856,8 @@ tokamac
 tokomak
 trittium
 vacancy
+CHI
+EXL-50U
+EXL50U
+HI
+SSPX
