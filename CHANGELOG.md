@@ -23,6 +23,24 @@
 
 ### Fixed
 
+## v2026.03.19.1
+
+### Added
+
+- **术语扩充（Batch 36–44）**：新增 90 个概念、198 条别名，覆盖 9 个主题领域：
+  - Batch 36: ICF物理与内爆（convergence ratio, areal density, RM instability, ablation front, hot-spot ignition 等 10 项）
+  - Batch 37: 等离子体辐射与光谱（line radiation, recombination radiation, Z_eff, Doppler/Stark broadening 等 10 项）
+  - Batch 38: 等离子体湍流与非线性物理（turbulence saturation, avalanche transport, predator-prey oscillation 等 10 项）
+  - Batch 39: 辐照损伤与材料科学（cascade damage, Frenkel pair, He bubble, W fuzz, radiation hardening 等 10 项）
+  - Batch 40: PFC工程与热管理（armor tile, heat sink, hypervapotron, braze joint, TBC 等 10 项）
+  - Batch 41: 先进偏滤器与液态金属（liquid metal divertor, vapor shielding, detachment control, Li wall 等 10 项）
+  - Batch 42: 碰撞输运与新经典物理（banana/plateau/PS regime, collisionality, bootstrap generation 等 10 项）
+  - Batch 43: 遥操作与维护工程（articulated boom, cask system, in-bore welding, remote inspection 等 10 项）
+  - Batch 44: AI与数字技术（digital twin, surrogate model, ML disruption prediction, Bayesian inference, UQ 等 10 项）
+- 注册表总计：820 concepts, 2331 aliases, 820 evidence rows
+- allowlist 同步：+103 中文、+33 英文 token-only 别名
+- domain_terms.txt 从 2369 → 2502 条
+
 ## v2026.03.19
 
 ### Fixed

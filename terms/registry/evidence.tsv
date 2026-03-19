@@ -790,3 +790,93 @@ density-pump-out	internal:expansion:batch-35	H-mode density transient	copilot	20
 temperature-pedestal	internal:expansion:batch-35	Edge temperature pedestal	copilot	2026-03-17
 pressure-pedestal	internal:expansion:batch-35	Edge pressure pedestal	copilot	2026-03-17
 pedestal-width	internal:expansion:batch-35	Pedestal radial width	copilot	2026-03-17
+convergence-ratio	internal:expansion:batch-36	Implosion radius ratio	copilot	2026-03-19
+areal-density	internal:expansion:batch-36	Compressed fuel rho-R	copilot	2026-03-19
+richtmyer-meshkov-instability	internal:expansion:batch-36	Shock-interface instability	copilot	2026-03-19
+ablation-front	internal:expansion:batch-36	Ablating shell interface	copilot	2026-03-19
+implosion-velocity	internal:expansion:batch-36	Shell inward velocity	copilot	2026-03-19
+hot-spot-ignition	internal:expansion:batch-36	Central hot spot ignition	copilot	2026-03-19
+capsule-implosion	internal:expansion:batch-36	ICF capsule compression	copilot	2026-03-19
+mix-instability	internal:expansion:batch-36	Shell-fuel material mixing	copilot	2026-03-19
+laser-energy-balance	internal:expansion:batch-36	Laser energy partition	copilot	2026-03-19
+gain-curve	internal:expansion:batch-36	ICF gain vs energy curve	copilot	2026-03-19
+line-radiation	internal:expansion:batch-37	Bound-bound transition radiation	copilot	2026-03-19
+recombination-radiation	internal:expansion:batch-37	Free-bound radiation	copilot	2026-03-19
+charge-exchange-loss	internal:expansion:batch-37	CX energy loss	copilot	2026-03-19
+radiation-barrier	internal:expansion:batch-37	Edge radiation shielding	copilot	2026-03-19
+radiation-collapse	internal:expansion:batch-37	Impurity radiation collapse	copilot	2026-03-19
+z-effective	internal:expansion:batch-37	Plasma effective charge	copilot	2026-03-19
+doppler-broadening	internal:expansion:batch-37	Thermal line broadening	copilot	2026-03-19
+stark-broadening	internal:expansion:batch-37	Electric field broadening	copilot	2026-03-19
+continuum-radiation	internal:expansion:batch-37	Brems+recomb continuum	copilot	2026-03-19
+impurity-spectroscopy	internal:expansion:batch-37	Spectroscopic impurity diag	copilot	2026-03-19
+turbulence-saturation	internal:expansion:batch-38	Nonlinear saturation	copilot	2026-03-19
+turbulence-spreading	internal:expansion:batch-38	Spatial turbulence diffusion	copilot	2026-03-19
+avalanche-transport	internal:expansion:batch-38	Cascade transient transport	copilot	2026-03-19
+staircase-transport	internal:expansion:batch-38	Self-organized barriers	copilot	2026-03-19
+predator-prey-oscillation	internal:expansion:batch-38	Turbulence-zonal flow cycle	copilot	2026-03-19
+nonlinear-coupling	internal:expansion:batch-38	Inter-mode coupling	copilot	2026-03-19
+turbulence-suppression	internal:expansion:batch-38	ExB shear suppression	copilot	2026-03-19
+critical-balance	internal:expansion:batch-38	Parallel-perp timescale balance	copilot	2026-03-19
+spectral-transfer	internal:expansion:batch-38	Wavenumber cascade	copilot	2026-03-19
+subcritical-turbulence	internal:expansion:batch-38	Below-threshold turbulence	copilot	2026-03-19
+cascade-damage	internal:expansion:batch-39	Displacement cascade	copilot	2026-03-19
+frenkel-pair	internal:expansion:batch-39	Interstitial-vacancy pair	copilot	2026-03-19
+interstitial-atom	internal:expansion:batch-39	Displaced interstitial	copilot	2026-03-19
+vacancy	internal:expansion:batch-39	Lattice vacancy defect	copilot	2026-03-19
+recrystallization	internal:expansion:batch-39	High-temp grain regrowth	copilot	2026-03-19
+helium-bubble	internal:expansion:batch-39	He accumulation bubble	copilot	2026-03-19
+tungsten-fuzz	internal:expansion:batch-39	He-irradiated W nano-fuzz	copilot	2026-03-19
+radiation-hardening	internal:expansion:batch-39	Neutron hardening	copilot	2026-03-19
+radiation-induced-segregation	internal:expansion:batch-39	Irradiation solute segregation	copilot	2026-03-19
+post-irradiation-examination	internal:expansion:batch-39	Hot cell PIE analysis	copilot	2026-03-19
+armor-tile	internal:expansion:batch-40	PFC protective tile	copilot	2026-03-19
+heat-sink	internal:expansion:batch-40	PFC heat dissipation	copilot	2026-03-19
+cooling-channel	internal:expansion:batch-40	PFC coolant channel	copilot	2026-03-19
+hypervapotron	internal:expansion:batch-40	Enhanced boiling structure	copilot	2026-03-19
+swirl-tube	internal:expansion:batch-40	Helical swirl cooling	copilot	2026-03-19
+high-heat-flux-testing	internal:expansion:batch-40	HHF component testing	copilot	2026-03-19
+plasma-spray-coating	internal:expansion:batch-40	PFM spray deposition	copilot	2026-03-19
+braze-joint	internal:expansion:batch-40	W-CuCrZr braze	copilot	2026-03-19
+thermal-barrier-coating	internal:expansion:batch-40	TBC thermal protection	copilot	2026-03-19
+actively-cooled-component	internal:expansion:batch-40	Cooled PFC	copilot	2026-03-19
+liquid-metal-divertor	internal:expansion:batch-41	Liquid metal exhaust surface	copilot	2026-03-19
+vapor-shielding	internal:expansion:batch-41	LM evaporation self-protection	copilot	2026-03-19
+detachment-control	internal:expansion:batch-41	Divertor detachment control	copilot	2026-03-19
+closed-divertor	internal:expansion:batch-41	Enclosed divertor structure	copilot	2026-03-19
+divertor-pumping	internal:expansion:batch-41	He ash pumping	copilot	2026-03-19
+neutral-pressure	internal:expansion:batch-41	Divertor neutral gas pressure	copilot	2026-03-19
+advanced-divertor-concept	internal:expansion:batch-41	Advanced divertor umbrella	copilot	2026-03-19
+divertor-baffle	internal:expansion:batch-41	Neutral baffle at entry	copilot	2026-03-19
+divertor-dome	internal:expansion:batch-41	ITER dome structure	copilot	2026-03-19
+lithium-wall	internal:expansion:batch-41	Li plasma-facing wall	copilot	2026-03-19
+banana-regime	internal:expansion:batch-42	Low-collisionality regime	copilot	2026-03-19
+plateau-regime	internal:expansion:batch-42	Intermediate collisionality	copilot	2026-03-19
+pfirsch-schlueter-regime	internal:expansion:batch-42	High-collisionality regime	copilot	2026-03-19
+collisionality	internal:expansion:batch-42	Normalized collision freq	copilot	2026-03-19
+thermal-force	internal:expansion:batch-42	Temperature gradient force	copilot	2026-03-19
+friction-force	internal:expansion:batch-42	Inter-species friction	copilot	2026-03-19
+bootstrap-generation	internal:expansion:batch-42	Trapped-passing asymmetry	copilot	2026-03-19
+poloidal-asymmetry	internal:expansion:batch-42	High-Z poloidal variation	copilot	2026-03-19
+neoclassical-impurity-transport	internal:expansion:batch-42	Collision-driven impurity transport	copilot	2026-03-19
+collisional-damping	internal:expansion:batch-42	Collision energy dissipation	copilot	2026-03-19
+articulated-boom	internal:expansion:batch-43	Multi-joint manipulator arm	copilot	2026-03-19
+cask-system	internal:expansion:batch-43	Shielded transfer device	copilot	2026-03-19
+pipe-cutting	internal:expansion:batch-43	Remote pipe cutting	copilot	2026-03-19
+in-bore-welding	internal:expansion:batch-43	Remote bore welding	copilot	2026-03-19
+remote-inspection	internal:expansion:batch-43	In-vessel remote inspection	copilot	2026-03-19
+dose-rate-survey	internal:expansion:batch-43	Radiation field measurement	copilot	2026-03-19
+maintenance-port	internal:expansion:batch-43	VV maintenance access	copilot	2026-03-19
+component-lifetime	internal:expansion:batch-43	Replaceable component life	copilot	2026-03-19
+scheduled-maintenance	internal:expansion:batch-43	Periodic overhaul	copilot	2026-03-19
+divertor-replacement	internal:expansion:batch-43	Remote cassette replacement	copilot	2026-03-19
+digital-twin	internal:expansion:batch-44	Real-time device mirror	copilot	2026-03-19
+surrogate-model	internal:expansion:batch-44	Fast approximate model	copilot	2026-03-19
+ml-disruption-prediction	internal:expansion:batch-44	ML disruption warning	copilot	2026-03-19
+neural-network-transport	internal:expansion:batch-44	NN transport surrogate	copilot	2026-03-19
+bayesian-inference	internal:expansion:batch-44	Bayesian parameter inversion	copilot	2026-03-19
+data-driven-control	internal:expansion:batch-44	Data-based control strategy	copilot	2026-03-19
+synthetic-diagnostics	internal:expansion:batch-44	Virtual diagnostic signal	copilot	2026-03-19
+integrated-modeling	internal:expansion:batch-44	Multi-physics simulation	copilot	2026-03-19
+workflow-automation	internal:expansion:batch-44	Pipeline automation	copilot	2026-03-19
+uncertainty-quantification	internal:expansion:batch-44	Prediction UQ	copilot	2026-03-19
