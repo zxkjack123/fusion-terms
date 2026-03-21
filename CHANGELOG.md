@@ -23,6 +23,27 @@
 
 ### Fixed
 
+## v2026.03.21.9
+
+### Added
+
+- **误译禁用别名 Batch 9（最终扫尾）**：新增 52 条 `forbidden`/`deprecated` 别名，覆盖 5 大类 50 概念：
+  - A. 机构名（eurofusion, f4e, swip, asipp, iaea, general-atomics 等 12 家）
+  - B. 中国/国际装置名（cfetr, ifmif, sg-iii, laser-megajoule, enn-compact-fusion 等）
+  - C. 英文装置名保留纠偏（east, jet, diii-d, sparc, arc, step, wendelstein-7x, nif 等 23 台）
+  - D. 材料名（tungsten, nb3sn, eurofer, clf-1, clam, f82h 等）
+  - E. 剩余概念（thermal-power, marfe）
+
+### Fixed
+
+- 清理 allowlist_zh.txt 中 1 条泄漏的禁用文本。
+- 移除 3 个与已有别名冲突的条目（EXL50, EXL50U, 铜铬锆）。
+
+## v2026.03.21.8
+
+
+### Fixed
+
 ## v2026.03.21.8
 
 ### Added
