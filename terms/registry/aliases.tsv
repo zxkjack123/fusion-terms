@@ -4085,3 +4085,109 @@ ML中断预测	ml-disruption-prediction	zh	forbidden	误译disruption(破裂≠�
 电网连接	electrical-grid-connection	zh	deprecated	非标准：应为 电网接入
 建设时间表	construction-schedule	zh	forbidden	误译schedule：正确为 建造进度
 施工时间表	construction-schedule	zh	forbidden	误译construction+schedule：正确为 建造进度
+# ==== Batch 8A: stellarator, mirror, advanced concepts ====
+恒星器优化	stellarator-optimization	zh	forbidden	误译stellarator：正确为 仿星器优化
+拟对称	quasi-symmetry	zh	deprecated	非标准：应为 准对称
+线圈复杂性	coil-complexity	zh	deprecated	非标准：应为 线圈复杂度
+单螺旋状态	single-helical-state	zh	deprecated	非标准(态≠状态)：应为 单螺旋态
+脉冲极性电流驱动	pulsed-poloidal-current-drive	zh	forbidden	误译poloidal(极向≠极性)：正确为 脉冲极向电流驱动
+θ夹紧	theta-pinch	zh	forbidden	误译pinch：正确为 θ箍缩
+θ捏缩	theta-pinch	zh	forbidden	误译pinch：正确为 θ箍缩
+翻译	translation	zh	forbidden	误译(语言义)：FRC语境正确为 平移
+旋转不稳定	rotational-instability	zh	deprecated	缺字'性'：应为 旋转不稳定性
+转动不稳定性	rotational-instability	zh	deprecated	非标准：应为 旋转不稳定性
+致密等离子焦点	dense-plasma-focus	zh	forbidden	缺字'体'：正确为 稠密等离子体焦点
+密集等离子体焦点	dense-plasma-focus	zh	forbidden	误译dense(稠密≠密集)：正确为 稠密等离子体焦点
+镜子机	mirror-machine	zh	forbidden	误译mirror+machine：正确为 磁镜装置
+镜像机器	mirror-machine	zh	forbidden	误译mirror+machine：正确为 磁镜装置
+等离子枪	plasma-gun	zh	forbidden	缺字'体'：正确为 等离子体枪
+旅行波直接能量转换器	traveling-wave-direct-energy-converter	zh	forbidden	误译traveling(行波≠旅行波)：正确为 行波直接能量转换器
+奇偶旋转磁场	odd-parity-rotating-magnetic-field	zh	forbidden	误译odd-parity(奇宇称≠奇偶)：正确为 奇宇称旋转磁场
+奇奇偶性旋转磁场	odd-parity-rotating-magnetic-field	zh	forbidden	误译parity：正确为 奇宇称旋转磁场
+中性光束驱动FRC	neutral-beam-driven-frc	zh	forbidden	误译beam(束≠光束)：正确为 中性束驱动场反
+同轴等离子枪	coaxial-plasma-gun	zh	forbidden	缺字'体'：正确为 同轴等离子体枪
+收缩参数	pinch-parameter	zh	forbidden	误译pinch(箍缩≠收缩)：正确为 箍缩参数
+夹缩参数	pinch-parameter	zh	forbidden	误译pinch：正确为 箍缩参数
+# ==== Batch 8B: blanket acronyms ====
+氦冷陶瓷包层	hccb	zh	forbidden	混淆HCCB/WCCB：正确为 氦冷固态包层
+水冷固态包层	wccb	zh	forbidden	混淆WCCB/HCCB：正确为 水冷陶瓷包层
+氦冷液态铅锂包层	hcll	zh	forbidden	冗译+顺序倒：正确为 氦冷锂铅包层
+氦冷鹅卵石床包层	hcpb	zh	forbidden	误译pebble bed(球床≠鹅卵石床)：正确为 氦冷球床包层
+融合中子	fusion-neutron	zh	forbidden	误译fusion：正确为 聚变中子
+# ==== Batch 8C: diagnostics & measurement ====
+柔软X射线	soft-x-ray	zh	forbidden	误译soft(物理义)：正确为 软X射线
+中子诊断学	neutron-diagnostics	zh	forbidden	误加'学'：正确为 中子诊断
+光谱学	spectroscopy	zh	deprecated	聚变诊断语境应为 光谱诊断
+ECE影像	ece-imaging	zh	forbidden	误译imaging：正确为 ECE成像
+ECE图像	ece-imaging	zh	forbidden	误译imaging(成像≠图像)：正确为 ECE成像
+等离子体喷涂钨	plasma-sprayed-tungsten	zh	forbidden	喷涂场景用'等离子'不用'体'：正确为 等离子喷涂钨
+电磁学力	electromagnetic-force	zh	forbidden	误加'学'：正确为 电磁力
+导波管	waveguide	zh	deprecated	非标准：应为 波导
+波导管	waveguide	zh	deprecated	非标准(冗赘)：应为 波导
+# ==== Batch 8D: superconductor & materials ====
+低温超级导体	low-temperature-superconductor	zh	forbidden	误译super-(超导≠超级导)：正确为 低温超导体
+碳纤维合成材料	carbon-fiber-composite	zh	forbidden	混淆composite/synthetic：正确为 碳纤维复合材料
+钒合金材料	vanadium-alloy	zh	deprecated	冗赘：应为 钒合金
+功能性材料	functional-material	zh	deprecated	冗赘：应为 功能材料
+混合物质	mixed-material	zh	forbidden	误译material(材料≠物质)：正确为 混合材料
+碳墨	graphite	zh	forbidden	误译graphite：正确为 石墨
+硅化处理	siliconization	zh	deprecated	冗赘：应为 硅化
+硅化作用	siliconization	zh	deprecated	非标准：应为 硅化
+# ==== Batch 8E: physics quantities, modes, instabilities ====
+离子体温度	ion-temperature	zh	forbidden	误加'体'：正确为 离子温度
+电子体温度	electron-temperature	zh	forbidden	误加'体'：正确为 电子温度
+辐射损耗	radiation-loss	zh	deprecated	非标准：应为 辐射损失
+辐射丢失	radiation-loss	zh	forbidden	误译loss：正确为 辐射损失
+普费尔施-施吕特电流	pfirsch-schlueter-current	zh	forbidden	误音译人名：正确保留 Pfirsch-Schlüter电流
+普费尔施-施吕特区	pfirsch-schlueter-regime	zh	forbidden	误音译人名：正确保留 Pfirsch-Schlüter区
+逆剪切阿尔芬本征模	rsae	zh	forbidden	误音译Alfvén+误译reverse(反剪切≠逆剪切)：正确为 反剪切Alfvén本征模
+β引起的阿尔芬本征模	bae	zh	forbidden	误音译Alfvén+冗译：正确为 β诱导Alfvén本征模
+氘-氚反应	dt-reaction	zh	deprecated	缩写场景应保留 D-T反应
+氘-氘反应	dd-reaction	zh	deprecated	缩写场景应保留 D-D反应
+氘-氦3反应	d-he3-reaction	zh	deprecated	缺上标：应保留 D-³He反应
+Q值反应	q-value-reaction	zh	forbidden	冗加'反应'：正确为 Q值
+Z有效	z-effective	zh	forbidden	误译：正确为 有效电荷数
+Z效应	z-effective	zh	forbidden	误译effective：正确为 有效电荷数
+超H模式	super-h-mode	zh	forbidden	误译super+mode：正确为 超级H模
+混合不稳定	mix-instability	zh	deprecated	缺字'性'：应为 混合不稳定性
+电荷交换丢失	charge-exchange-loss	zh	forbidden	误译loss：正确为 电荷交换损失
+连续体辐射	continuum-radiation	zh	forbidden	误译continuum(连续≠连续体)：正确为 连续辐射
+湍流传播	turbulence-spreading	zh	forbidden	误译spreading(扩展≠传播)：正确为 湍流扩展
+湍流蔓延	turbulence-spreading	zh	forbidden	误译spreading：正确为 湍流扩展
+中性压力	neutral-pressure	zh	forbidden	误译(气压≠压力)：正确为 中性气压
+竖直稳定性	vertical-stability	zh	forbidden	误译vertical(垂直≠竖直)：正确为 垂直稳定性
+电力密度	power-density	zh	forbidden	误译power(功率≠电力)：正确为 功率密度
+# ==== Batch 8F: operation, control, divertor ====
+实际时间控制	real-time-control	zh	forbidden	误译real-time：正确为 实时控制
+高级偏滤器概念	advanced-divertor-concept	zh	forbidden	误译advanced：正确为 先进偏滤器概念
+ITER到演示	iter-to-demo	zh	forbidden	误译DEMO(专有名称)：正确保留 ITER到DEMO
+气态平衡	gas-balance	zh	forbidden	误译gas(气体≠气态)：正确为 气体平衡
+摩擦力量	friction-force	zh	forbidden	冗赘force(力≠力量)：正确为 摩擦力
+光子量	photon-dose	zh	forbidden	缺字'剂'：正确为 光子剂量
+激光能量余额	laser-energy-balance	zh	forbidden	误用财务义balance：正确为 激光能量平衡
+增益弯曲	gain-curve	zh	forbidden	误译curve：正确为 增益曲线
+# ==== Batch 8G: numerical methods & AI ====
+有限容积法	finite-volume-method	zh	deprecated	非标准(体积≠容积)：应为 有限体积法
+计算流体动力学	computational-fluid-dynamics	zh	forbidden	误译dynamics(力学≠动力学)：正确为 计算流体力学
+网格产生	mesh-generation	zh	deprecated	非标准：应为 网格生成
+完全f方法	full-f-method	zh	forbidden	误译full(全≠完全)：正确为 全f方法
+贝叶斯推理	bayesian-inference	zh	forbidden	误译inference(推断≠推理)：正确为 贝叶斯推断
+不确定度量化	uncertainty-quantification	zh	forbidden	误译uncertainty(不确定性≠不确定度)：正确为 不确定性量化
+学习速率	learning-rate	zh	deprecated	堆经济语境非标准：应为 学习率
+供给链	supply-chain	zh	forbidden	误译supply(供应≠供给)：正确为 供应链
+管子切割	pipe-cutting	zh	forbidden	误译pipe(管道≠管子)：正确为 管道切割
+远程检查	remote-inspection	zh	deprecated	非标准：应为 远程检测
+# ==== Batch 8H: engineering & BOP ====
+热力效率	thermal-efficiency	zh	forbidden	误译thermal(热≠热力)：正确为 热效率
+电力供应	power-supply	zh	forbidden	误译power supply：正确为 电源系统
+供电	power-supply	zh	deprecated	过度简化：应为 电源系统
+水处理	water-treatment	zh	deprecated	缺字'系统'：应为 水处理系统
+加热通风空调	hvac	zh	forbidden	啰嗦译法：正确为 暖通空调
+冷却水塔	cooling-tower	zh	forbidden	误译：正确为 冷却塔
+定期维护	scheduled-maintenance	zh	forbidden	误译scheduled(计划≠定期)：正确为 计划维护
+预定维护	scheduled-maintenance	zh	forbidden	误译scheduled：正确为 计划维护
+工作流程自动化	workflow-automation	zh	deprecated	冗赘(流≠流程)：应为 工作流自动化
+转动磁场	rotating-magnetic-field	zh	deprecated	非标准：应为 旋转磁场
+ICRF天线	icrf-antenna	zh	deprecated	非标准缩写：应为 离子回旋天线
+离子回旋共振天线	icrf-antenna	zh	forbidden	冗赘(回旋已含共振义)：正确为 离子回旋天线
+大螺旋装置	large-helical-device	zh	forbidden	缺字'型'：正确为 大型螺旋装置

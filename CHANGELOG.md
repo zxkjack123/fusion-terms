@@ -23,6 +23,26 @@
 
 ### Fixed
 
+## v2026.03.21.8
+
+### Added
+
+- **误译禁用别名 Batch 8**：新增 98 条 `forbidden`/`deprecated` 别名，覆盖 8 大类 85 概念：
+  - A. 仿星器·磁镜·先进概念（stellarator-optimization, theta-pinch, mirror-machine, traveling-wave-direct-energy-converter 等）
+  - B. 包层缩写（HCCB, WCCB, HCLL, HCPB, fusion-neutron 等）
+  - C. 诊断·测量（soft-x-ray, spectroscopy, ece-imaging, waveguide 等）
+  - D. 超导·材料（low-temperature-superconductor, carbon-fiber-composite, graphite, siliconization 等）
+  - E. 物理量·模式·不稳定性（pfirsch-schlueter-current, rsae, bae, z-effective, continuum-radiation 等）
+  - F. 运行·控制（real-time-control, iter-to-demo, laser-energy-balance 等）
+  - G. 数值方法·AI（computational-fluid-dynamics, bayesian-inference, uncertainty-quantification 等）
+  - H. 工程·经济（steam-turbine 类已在 B7；本批 thermal-efficiency, hvac, icrf-antenna, large-helical-device 等）
+
+### Fixed
+
+- 清理 allowlist_zh.txt 中 1 条泄漏的禁用文本。
+- 移除与 `thermal-force` 冲突的 `热力→thermal-power` 重复别名。
+- 移除与已有别名冲突的 `铅锂→lithium-lead` 重复条目。
+
 ## v2026.03.21.7
 
 ### Added
