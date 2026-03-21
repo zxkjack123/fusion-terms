@@ -2957,3 +2957,57 @@ fusion product spectrum	fusion-product-spectrum	en	preferred
 聚变产物能谱	fusion-product-spectrum	zh	preferred	
 power density	power-density	en	preferred	
 功率密度	power-density	zh	preferred	
+# ==== Batch 48: Core Plasma-Wall Interaction Processes ====
+presheath	presheath	en	preferred	
+预鞘	presheath	zh	preferred	
+co-deposition	co-deposition	en	preferred	
+共沉积	co-deposition	zh	preferred	
+codeposition	co-deposition	en	alias	
+impurity source	impurity-source	en	preferred	
+杂质源	impurity-source	zh	preferred	
+impurity influx	impurity-influx	en	preferred	
+杂质流入	impurity-influx	zh	preferred	
+fuel recycling	fuel-recycling	en	preferred	
+燃料再循环	fuel-recycling	zh	preferred	
+particle recycling	fuel-recycling	en	alias	
+wall pumping	wall-pumping	en	preferred	
+壁抽气效应	wall-pumping	zh	preferred	
+壁抽气	wall-pumping	zh	alias	
+deposition	deposition	en	preferred	
+沉积	deposition	zh	preferred	
+graphite	graphite	en	preferred	
+石墨	graphite	zh	preferred	
+surface roughening	surface-roughening	en	preferred	
+表面粗糙化	surface-roughening	zh	preferred	
+cracking	cracking	en	preferred	
+裂纹	cracking	zh	preferred	
+thermal cracking	cracking	en	alias	
+# ==== Batch 49: Wall Damage, Transient Loads & Dust ====
+thermal shock	thermal-shock	en	preferred	
+热冲击	thermal-shock	zh	preferred	
+disruption erosion	disruption-erosion	en	preferred	
+破裂侵蚀	disruption-erosion	zh	preferred	
+ELM-induced erosion	elm-induced-erosion	en	preferred	
+ELM诱发侵蚀	elm-induced-erosion	zh	preferred	
+runaway electron damage	runaway-electron-damage	en	preferred	
+逃逸电子损伤	runaway-electron-damage	zh	preferred	
+RE damage	runaway-electron-damage	en	alias	
+prompt redeposition	prompt-redeposition	en	preferred	
+即时再沉积	prompt-redeposition	zh	preferred	
+lithium coating	lithium-coating	en	preferred	
+锂涂覆	lithium-coating	zh	preferred	
+Li coating	lithium-coating	en	alias	
+锂蒸镀	lithium-coating	zh	alias	
+siliconization	siliconization	en	preferred	
+硅化	siliconization	zh	preferred	
+dust generation	dust-generation	en	preferred	
+粉尘产生	dust-generation	zh	preferred	
+dust transport	dust-transport	en	preferred	
+粉尘输运	dust-transport	zh	preferred	
+dust inventory	dust-inventory	en	preferred	
+粉尘存量	dust-inventory	zh	preferred	
+dust limit	dust-inventory	en	alias	
+# ==== Supplementary aliases for plasma-surface-interaction ====
+PWI	plasma-surface-interaction	abbr	alias	
+plasma-wall interaction	plasma-surface-interaction	en	alias	
+等离子体壁相互作用	plasma-surface-interaction	zh	alias	

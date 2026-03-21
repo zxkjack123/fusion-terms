@@ -23,6 +23,18 @@
 
 ### Fixed
 
+## v2026.03.21
+
+### Added
+
+- **术语扩充（Batch 48–49）**：新增 20 个概念、51 条别名（含 3 条已有概念补充别名），覆盖等离子体-壁相互作用领域：
+  - Batch 48: PWI核心过程（presheath, co-deposition, impurity source/influx, fuel recycling, wall pumping, deposition, graphite, surface roughening, cracking 等 10 项）
+  - Batch 49: 壁面损伤、瞬态载荷与粉尘（thermal shock, disruption erosion, ELM-induced erosion, runaway electron damage, prompt redeposition, lithium coating, siliconization, dust generation/transport/inventory 等 10 项）
+  - 补充别名：PWI / plasma-wall interaction / 等离子体壁相互作用 → plasma-surface-interaction
+- 注册表总计：866 concepts, 2456 aliases, 866 evidence rows
+- allowlist 同步：+22 中文、+7 英文 token-only 别名
+- domain_terms.txt 从 2531 → 2560 条
+
 ## v2026.03.19.2
 
 ### Added

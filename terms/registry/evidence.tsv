@@ -906,3 +906,23 @@ hb11-energy	internal:expansion:batch-47	Australian laser p-B11 co.	copilot	2026-
 lpp-fusion	internal:expansion:batch-47	US DPF p-B11 company	copilot	2026-03-19
 fusion-product-spectrum	internal:expansion:batch-47	Reaction product energy dist	copilot	2026-03-19
 power-density	internal:expansion:batch-47	Fusion power per volume	copilot	2026-03-19
+presheath	internal:expansion:batch-48	Ion acceleration ahead of sheath	copilot	2026-03-21
+co-deposition	internal:expansion:batch-48	Eroded material + H co-deposition	copilot	2026-03-21
+impurity-source	internal:expansion:batch-48	Wall impurity production	copilot	2026-03-21
+impurity-influx	internal:expansion:batch-48	Impurity flux into plasma	copilot	2026-03-21
+fuel-recycling	internal:expansion:batch-48	H isotope wall recycling	copilot	2026-03-21
+wall-pumping	internal:expansion:batch-48	Wall H absorption effect	copilot	2026-03-21
+deposition	internal:expansion:batch-48	Material wall deposition	copilot	2026-03-21
+graphite	internal:expansion:batch-48	Legacy C PFC material	copilot	2026-03-21
+surface-roughening	internal:expansion:batch-48	Plasma exposure roughening	copilot	2026-03-21
+cracking	internal:expansion:batch-48	PFC surface cracking	copilot	2026-03-21
+thermal-shock	internal:expansion:batch-49	Single-pulse HHF damage	copilot	2026-03-21
+disruption-erosion	internal:expansion:batch-49	Disruption wall erosion	copilot	2026-03-21
+elm-induced-erosion	internal:expansion:batch-49	ELM transient erosion	copilot	2026-03-21
+runaway-electron-damage	internal:expansion:batch-49	RE impact PFC damage	copilot	2026-03-21
+prompt-redeposition	internal:expansion:batch-49	Near-field redeposition	copilot	2026-03-21
+lithium-coating	internal:expansion:batch-49	Li wall conditioning	copilot	2026-03-21
+siliconization	internal:expansion:batch-49	Silane GDC conditioning	copilot	2026-03-21
+dust-generation	internal:expansion:batch-49	Erosion dust production	copilot	2026-03-21
+dust-transport	internal:expansion:batch-49	In-vessel dust dynamics	copilot	2026-03-21
+dust-inventory	internal:expansion:batch-49	Mobilizable dust quantity	copilot	2026-03-21
