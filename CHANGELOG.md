@@ -23,6 +23,24 @@
 
 ### Fixed
 
+## v2026.03.21.7
+
+### Added
+
+- **误译禁用别名 Batch 7**：新增 137 条 `forbidden`/`deprecated` 别名，覆盖 8 大类 100 概念：
+  - A. 等离子体·参数·控制（plasma-current, heat-load, advanced-tokamak, gas-puffing 等）
+  - B. 惯性约束·先进聚变（fuel-capsule, target-fabrication, proton-boron-fusion, beam-target-fusion 等）
+  - C. 包层·系统·冷却（tokamak-exhaust-processing-system, fuel-pellet, swirl-tube 等）
+  - D. 安全·剂量·核数据（dose-limit, nuclear-data-library, photon-transport 等）
+  - E. 壁·粉尘·材料·侵蚀（dust, elm-induced-erosion, runaway-electron-damage, recycling 等）
+  - F. 碰撞区·新经典·输运（banana-regime, plateau-regime, bootstrap-generation, actuator 等）
+  - G. 数值方法·AI·建模（finite-element-method, taylor-relaxation, radiation-dominated-regime 等）
+  - H. 堆设计·经济（steam-turbine, gas-turbine, electrical-grid-connection 等）
+
+### Fixed
+
+- 移除与已有别名冲突的 `蒙特卡洛方法→monte-carlo-method` 重复条目。
+
 ## v2026.03.21.6
 
 ### Added
