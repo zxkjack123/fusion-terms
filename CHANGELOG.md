@@ -23,6 +23,25 @@
 
 ### Fixed
 
+## v2026.03.21.6
+
+### Added
+
+- **误译禁用别名 Batch 6**：新增 123 条 `forbidden`/`deprecated` 别名，覆盖 8 大类 ~100 概念：
+  - A. 等离子体物理·运行模式（hybrid-scenario, steady-state-operation, ignition 等）
+  - B. 波·加热·数理（ray-tracing, cross-section, coulomb-barrier, particle-in-cell 等）
+  - C. 磁场·几何·对称性（magnetic-helicity, flux-expansion, quasi-axisymmetry 等）
+  - D. 偏滤器·SOL·粒子（divertor-baffle, passing-particle, pedestal-width 等）
+  - E. 中子·辐射防护·安全（activation-analysis, high-level-waste, ALARA 等）
+  - F. 材料·包层·冷却（liquid-metal-coolant, TCAP, thermal-shock, FRC-merging 等）
+  - G. 诊断·建模·控制（surrogate-model, digital-twin, slowing-down-time 等）
+  - H. 堆设计·经济（prototype-reactor, synchrotron-radiation, spin-polarized-fuel 等）
+
+### Fixed
+
+- 清理 allowlist_zh.txt 中 2 条泄漏的禁用/废弃文本。
+- 移除与 `energy-gain` 冲突的 `聚变增益→fusion-gain` 重复别名。
+
 ## v2026.03.21.5
 
 ### Added
