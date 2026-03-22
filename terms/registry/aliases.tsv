@@ -4335,3 +4335,305 @@ oxide dispersion strengthened steel	ods-steel	en	alias	full name
 ODS钢	ods-steel	zh	alias	abbr+Chinese
 SiCf/SiC	sic-sic-composite	en	alias	fiber-reinforced form
 silicon carbide composite	sic-sic-composite	en	alias	generic name
+# ==== Batch 50b: alias enrichment — concept ====
+烧蚀界面	ablation-front	zh	alias	variant
+放射性活化产物	activation-product	zh	alias	full form
+activation products	activation-product	en	alias	plural
+先进偏滤器	advanced-divertor-concept	zh	alias	short form
+阿尔芬连续谱	alfven-continuum	zh	alias	transliterated
+Alfvén连续体	alfven-continuum	zh	alias	variant
+反常输运系数	anomalous-transport	zh	alias	coefficient context
+天线耦合效率	antenna-coupling	zh	alias	efficiency context
+雪崩式输运	avalanche-transport	zh	alias	variant
+香蕉轨道区	banana-regime	zh	alias	orbit form
+包层系统	blanket	zh	alias	system form
+表面起泡	blistering	zh	alias	surface context
+玻姆扩散系数	bohm-diffusion	zh	alias	coefficient form
+化学溅射	chemical-erosion	zh	alias	sputtering form
+解控	clearance	zh	alias	short form
+碰撞阻尼效应	collisional-damping	zh	alias	full form
+建造计划	construction-schedule	zh	alias	variant
+连续谱辐射	continuum-radiation	zh	alias	variant
+冷却剂化学控制	coolant-chemistry	zh	alias	control context
+库仑散射	coulomb-collision	zh	alias	scattering form
+临界平衡假说	critical-balance	zh	alias	hypothesis form
+临界梯度模型	critical-gradient	zh	alias	model context
+曲率漂移速度	curvature-drift	zh	alias	velocity form
+氘氦三反应	d-he3-reaction	zh	alias	Chinese form
+D-He3 reaction	d-he3-reaction	en	alias	ASCII form
+退役拆除	decommissioning	zh	alias	full form
+纵深防御原则	defense-in-depth	zh	alias	principle form
+DiD	defense-in-depth	abbr	alias	abbreviation
+密度峰化因子	density-peaking	zh	alias	factor form
+密度抽空	density-pump-out	zh	alias	variant
+沉积层	deposition	zh	alias	layer form
+脱靶锋面	detachment-front	zh	alias	variant
+抗磁漂移速度	diamagnetic-drift	zh	alias	velocity form
+数字孪生体	digital-twin	zh	alias	entity form
+破裂侵蚀量	disruption-erosion	zh	alias	quantity form
+多普勒加宽	doppler-broadening	zh	alias	variant
+漂移波不稳定性	drift-wave	zh	alias	instability form
+drift-wave instability	drift-wave	en	alias	instability form
+粉尘迁移	dust-transport	zh	alias	variant
+eddy currents	eddy-current	en	alias	plural
+电磁力载荷	electromagnetic-force	zh	alias	load form
+EM force	electromagnetic-force	en	alias	short form
+ELM侵蚀	elm-induced-erosion	zh	alias	short form
+error field correction	error-field	en	alias	correction form
+扩展磁流体力学	extended-mhd	zh	alias	full form
+磁通放大系数	flux-amplification	zh	alias	coefficient form
+磁通膨胀率	flux-expansion	zh	alias	rate form
+福克-普朗克方程	fokker-planck-equation	zh	alias	transliterated
+无力场平衡	force-free-equilibrium	zh	alias	variant
+弗伦克尔缺陷对	frenkel-pair	zh	alias	transliterated
+Frenkel defect pair	frenkel-pair	en	alias	expanded
+摩擦力矩	friction-force	zh	alias	torque form
+燃料芯丸	fuel-pellet	zh	alias	variant
+fuel pellets	fuel-pellet	en	alias	plural
+全非感应运行	fully-non-inductive	zh	alias	short form
+聚变产物谱	fusion-product-spectrum	zh	alias	short form
+增益特性曲线	gain-curve	zh	alias	full form
+气体平衡分析	gas-balance	zh	alias	analysis form
+梯度B漂移	grad-b-drift	zh	alias	variant
+gradient-B drift	grad-b-drift	en	alias	expanded
+晕电流分布	halo-current	zh	alias	distribution form
+halo currents	halo-current	en	alias	plural
+I模态	i-mode	zh	alias	variant
+杂质聚集	impurity-accumulation	zh	alias	variant
+杂质源强度	impurity-source	zh	alias	strength form
+间隙缺陷	interstitial-atom	zh	alias	defect form
+interstitial	interstitial-atom	en	alias	short form
+辐照蠕变速率	irradiation-creep	zh	alias	rate form
+辐照脆化温度	irradiation-embrittlement	zh	alias	temperature form
+radiation embrittlement	irradiation-embrittlement	en	alias	synonym
+同位素效应系数	isotope-effect	zh	alias	coefficient form
+激光能量守恒	laser-energy-balance	zh	alias	conservation form
+限制器结构	limiter	zh	alias	structural form
+线谱辐射	line-radiation	zh	alias	spectral form
+锁模不稳定性	locked-mode	zh	alias	instability form
+长腿型偏滤器	long-leg-divertor	zh	alias	variant
+磁轴位置	magnetic-axis	zh	alias	position context
+磁螺旋度守恒	magnetic-helicity	zh	alias	conservation form
+磁自组织现象	magnetic-self-organization	zh	alias	phenomenon form
+边缘辐射不稳定性	marfe	zh	alias	descriptive
+Multifaceted Asymmetric Radiation From the Edge	marfe	en	alias	full expansion
+熔化损坏	melt-damage	zh	alias	variant
+微撕裂模不稳定性	micro-tearing-mode	zh	alias	instability form
+MTM	micro-tearing-mode	abbr	alias	abbreviation
+混合不稳定性模	mix-instability	zh	alias	mode form
+模式转化	mode-conversion	zh	alias	variant
+动量输运系数	momentum-transport	zh	alias	coefficient form
+multipactor discharge	multipactor	en	alias	full form
+二次电子倍增	multipactor	zh	alias	short form
+新经典杂质输运系数	neoclassical-impurity-transport	zh	alias	coefficient
+中子学分析	neutronics	zh	alias	analysis form
+neutronics analysis	neutronics	en	alias	analysis form
+非线性耦合效应	nonlinear-coupling	zh	alias	effect form
+核数据库文件	nuclear-data-library	zh	alias	file form
+核响应函数谱	nuclear-response-function	zh	alias	spectrum form
+出气率	outgassing	zh	alias	rate form
+平行方向输运	parallel-transport	zh	alias	directional form
+parametric decay	parametric-instability	en	alias	decay form
+台基区	pedestal	zh	alias	region form
+H模台基	pedestal	zh	alias	H-mode form
+弹丸烧蚀速率	pellet-ablation	zh	alias	rate form
+物理溅射产额	physical-sputtering	zh	alias	yield form
+physical sputtering yield	physical-sputtering	en	alias	yield form
+等离子体物理	plasma	zh	alias	physics form
+坪区输运	plateau-regime	zh	alias	transport form
+极向非对称	poloidal-asymmetry	zh	alias	variant
+功率退化效应	power-degradation	zh	alias	effect form
+捕食-被食振荡	predator-prey-oscillation	zh	alias	variant
+预鞘层	presheath	zh	alias	variant
+压力台基	pressure-pedestal	zh	alias	variant
+剖面刚度	profile-stiffness	zh	alias	variant
+即时再沉积效应	prompt-redeposition	zh	alias	effect form
+失超事件	quench	zh	alias	event form
+quench event	quench	en	alias	event form
+辐射势垒	radiation-barrier	zh	alias	potential form
+辐射坍塌事件	radiation-collapse	zh	alias	event form
+辐射主导区	radiation-dominated-regime	zh	alias	short form
+辐照硬化效应	radiation-hardening	zh	alias	effect form
+复合辐射谱	recombination-radiation	zh	alias	spectrum form
+再结晶温度	recrystallization	zh	alias	temperature form
+再沉积层	redeposition	zh	alias	layer form
+约化磁流体力学	reduced-mhd	zh	alias	full form
+监管审批	regulatory-approval	zh	alias	variant
+旋转反向	rotation-reversal	zh	alias	variant
+安全等级划分	safety-classification	zh	alias	variant
+尺寸标度律	size-scaling	zh	alias	law form
+size scaling law	size-scaling	en	alias	law form
+慢波结构	slow-wave	zh	alias	structure form
+雪花型偏滤器	snowflake-divertor	zh	alias	variant
+放射性源项	source-term	zh	alias	radioactive form
+能谱传递	spectral-transfer	zh	alias	variant
+阶梯式输运	staircase-transport	zh	alias	variant
+斯塔克加宽	stark-broadening	zh	alias	variant
+稳态高比压运行	steady-state-high-beta	zh	alias	variant
+应变敏感度	strain-sensitivity	zh	alias	variant
+打击点位置	strike-point	zh	alias	position form
+亚临界湍流激发	subcritical-turbulence	zh	alias	excitation form
+Super H模	super-h-mode	zh	alias	variant
+Super-X偏滤器结构	super-x-divertor	zh	alias	structural form
+供应链管理	supply-chain	zh	alias	management form
+温度台基区	temperature-pedestal	zh	alias	region form
+热疲劳裂纹	thermal-fatigue	zh	alias	crack form
+热梯度力	thermal-force	zh	alias	gradient form
+热冲击损伤	thermal-shock	zh	alias	damage form
+托卡马克装置	tokamak	zh	alias	device form
+俘获粒子效应	trapped-particle	zh	alias	effect form
+trapped particles	trapped-particle	en	alias	plural
+氚账目管理	tritium-accountancy	zh	alias	management form
+湍流饱和水平	turbulence-saturation	zh	alias	level form
+湍流扩散	turbulence-spreading	zh	alias	variant
+湍流抑制机制	turbulence-suppression	zh	alias	mechanism form
+二流体模型	two-fluid-model	zh	alias	variant
+空位缺陷	vacancy	zh	alias	defect form
+vacancy defect	vacancy	en	alias	defect form
+蒸汽屏蔽效应	vapor-shielding	zh	alias	effect form
+垂直稳定控制	vertical-stability	zh	alias	control form
+# ==== Batch 50b: alias enrichment — diagnostic ====
+抗磁环诊断	diamagnetic-loop	zh	alias	diagnostic form
+杂质光谱诊断	impurity-spectroscopy	zh	alias	diagnostic form
+Mirnov线圈	mirnov-coil	zh	alias	mixed form
+Mirnov probe	mirnov-coil	en	alias	probe form
+反射计诊断	reflectometry	zh	alias	diagnostic form
+microwave reflectometry	reflectometry	en	alias	microwave form
+Rogowski线圈	rogowski-coil	zh	alias	mixed form
+光谱分析	spectroscopy	zh	alias	analysis form
+汤姆逊散射	thomson-scattering	zh	alias	preferred zh
+TS	thomson-scattering	abbr	alias	abbreviation
+Thomson scattering diagnostic	thomson-scattering	en	alias	diagnostic form
+# ==== Batch 50b: alias enrichment — effect ====
+Ware箍缩	ware-pinch	zh	alias	mixed form
+Ware pinch effect	ware-pinch	en	alias	effect form
+# ==== Batch 50b: alias enrichment — limit ====
+职业照射限值	occupational-dose-limit	zh	alias	variant
+# ==== Batch 50b: alias enrichment — material ====
+CLAM钢	clam	zh	alias	steel qualifier
+CLF-1钢	clf-1	zh	alias	steel qualifier
+铜铬锆合金	cucrzr	zh	alias	Chinese name
+copper chromium zirconium	cucrzr	en	alias	full name
+EUROFER钢	eurofer	zh	alias	steel qualifier
+F82H钢	f82h	zh	alias	steel qualifier
+石墨材料	graphite	zh	alias	material form
+carbon	graphite	en	alias	element synonym
+绝缘材料体系	insulation-material	zh	alias	system form
+铌三锡	nb3sn	zh	alias	Chinese name
+Nb₃Sn	nb3sn	en	alias	subscript form
+REBCO超导带材	rebco	zh	alias	conductor form
+rare-earth barium copper oxide	rebco	en	alias	full expansion
+钨	tungsten	zh	alias	Chinese name
+# ==== Batch 50b: alias enrichment — method ====
+聚变燃烧控制	burn-control	zh	alias	fusion context
+部件认证	component-qualification	zh	alias	variant
+低温蒸馏分离	cryogenic-distillation	zh	alias	separation form
+数据驱动控制方法	data-driven-control	zh	alias	method form
+delta-f simulation	delta-f-method	en	alias	simulation form
+脱靶控制技术	detachment-control	zh	alias	technique form
+偏滤器更换操作	divertor-replacement	zh	alias	operation form
+剂量率巡检	dose-rate-survey	zh	alias	variant
+反馈控制系统	feedback-control	zh	alias	system form
+全f模拟方法	full-f-method	zh	alias	simulation form
+full-f simulation	full-f-method	en	alias	simulation form
+全波模拟方法	full-wave-simulation	zh	alias	method form
+间隙控制系统	gap-control	zh	alias	system form
+螺旋波电流驱动技术	helicon-current-drive	zh	alias	technique form
+HCD	helicon-current-drive	abbr	alias	abbreviation
+孔内对接焊	in-bore-welding	zh	alias	variant
+综合调试验收	integrated-commissioning	zh	alias	acceptance form
+动理学控制方法	kinetic-control	zh	alias	method form
+机器学习破裂预警	ml-disruption-prediction	zh	alias	warning form
+神经网络输运替代模型	neural-network-transport	zh	alias	surrogate form
+管道切断	pipe-cutting	zh	alias	variant
+等离子喷涂涂层	plasma-spray-coating	zh	alias	coating form
+等离子喷涂钨涂层	plasma-sprayed-tungsten	zh	alias	coating form
+等离子体状态重建	plasma-state-estimation	zh	alias	reconstruction form
+射线追踪方法	ray-tracing	zh	alias	method form
+远程巡检	remote-inspection	zh	alias	variant
+合成诊断方法	synthetic-diagnostics	zh	alias	method form
+热力学-机械分析	thermo-mechanical-analysis	zh	alias	variant
+TMA	thermo-mechanical-analysis	abbr	alias	abbreviation
+壁处理	wall-conditioning	zh	alias	short form
+wall conditioning technique	wall-conditioning	en	alias	technique form
+工作流自动化系统	workflow-automation	zh	alias	system form
+# ==== Batch 50b: alias enrichment — metric ====
+天线负载阻抗	antenna-loading	zh	alias	impedance form
+纵横比参数	aspect-ratio	zh	alias	parameter form
+A	aspect-ratio	en	alias	symbol
+可用率指标	availability	zh	alias	metric form
+本底真空	base-pressure	zh	alias	vacuum form
+归一化比压	beta-n	zh	alias	Chinese name
+normalized beta	beta-n	en	alias	full name
+βN	beta-n	en	alias	Greek symbol
+自举份额	bootstrap-fraction	zh	alias	short form
+弹跳频率周期	bounce-frequency	zh	alias	period form
+燃烧份额比	burn-fraction	zh	alias	ratio form
+清洁解控指标	clearance-index	zh	alias	variant
+部件使用寿命	component-lifetime	zh	alias	usage form
+接触剂量率限值	contact-dose-rate	zh	alias	limit form
+CR	convergence-ratio	abbr	alias	abbreviation
+库仑对数值	coulomb-logarithm	zh	alias	value form
+ln Λ	coulomb-logarithm	en	alias	formula notation
+电流驱动效率系数	current-drive-efficiency	zh	alias	coefficient form
+Greenwald密度极限	density-limit	zh	alias	Greenwald form
+偏滤器热流	divertor-heat-flux	zh	alias	short form
+疲劳寿命周期	fatigue-life	zh	alias	cycle form
+加料效率指标	fueling-efficiency	zh	alias	metric form
+聚变点火温度	ignition-temperature	zh	alias	fusion form
+内爆速度参数	implosion-velocity	zh	alias	parameter form
+杂质流入率	impurity-influx	zh	alias	rate form
+接头电阻值	joint-resistance	zh	alias	value form
+比释动能系数	kerma	zh	alias	coefficient form
+磁体内径	magnet-bore	zh	alias	variant
+磁剪切参数	magnetic-shear	zh	alias	parameter form
+中性气体压力	neutral-pressure	zh	alias	full form
+中子注量率	neutron-flux	zh	alias	fluence rate form
+中子产额率	neutron-yield	zh	alias	rate form
+台基宽度参数	pedestal-width	zh	alias	parameter form
+箍缩参数值	pinch-parameter	zh	alias	value form
+等离子体振荡频率	plasma-frequency	zh	alias	oscillation form
+功率密度分布	power-density	zh	alias	distribution form
+反应Q值	q-value-reaction	zh	alias	variant
+95%磁通面安全因子	q95	zh	alias	descriptive
+再循环系数值	recycling-coefficient	zh	alias	value form
+沙弗拉诺夫位移量	shafranov-shift	zh	alias	amount form
+Shafranov位移	shafranov-shift	zh	alias	mixed form
+氚滞留量	tritium-retention	zh	alias	quantity form
+Troyon限制	troyon-limit	zh	alias	variant
+Troyon beta limit	troyon-limit	en	alias	beta form
+# ==== Batch 50b: alias enrichment — system ====
+活化箔片	activation-foil	zh	alias	variant
+主动冷却部件结构	actively-cooled-component	zh	alias	structural form
+装甲瓦片	armor-tile	zh	alias	variant
+armour tile	armor-tile	en	alias	British spelling
+铰接臂机构	articulated-boom	zh	alias	mechanism form
+背板结构	back-plate	zh	alias	structural form
+挡板结构	baffle	zh	alias	structural form
+包层组件	blanket-module	zh	alias	variant
+钎焊接头连接	braze-joint	zh	alias	connection form
+brazed joint	braze-joint	en	alias	past participle
+增殖区域	breeding-zone	zh	alias	variant
+封闭型偏滤器	closed-divertor	zh	alias	variant
+冷却歧管系统	coolant-manifold	zh	alias	system form
+冷却流道	cooling-channel	zh	alias	variant
+可拆卸连接	demountable-joint	zh	alias	connection form
+偏滤器挡板结构	divertor-baffle	zh	alias	structural form
+偏滤器盒体	divertor-cassette	zh	alias	variant
+偏滤器穹顶板	divertor-dome	zh	alias	plate form
+偏滤器抽气系统	divertor-pumping	zh	alias	system form
+赤道窗口端口	equatorial-port	zh	alias	port form
+磁通守恒壁	flux-conserver	zh	alias	wall form
+充气阀	gas-injection-valve	zh	alias	variant
+超蒸发冷却管	hypervapotron	zh	alias	cooling form
+液态金属偏滤器靶	liquid-metal-divertor	zh	alias	target form
+锂壁面板	lithium-wall	zh	alias	panel form
+磁体冷却系统	magnet-cooling	zh	alias	system form
+磁体支撑结构	magnet-structure	zh	alias	support form
+弹丸输运管	pellet-guide-tube	zh	alias	transport form
+端口模块	port-plug	zh	alias	variant
+旋流冷却管	swirl-tube	zh	alias	cooling form
+钨单块结构	tungsten-monoblock	zh	alias	structural form
+真空抽气系统	vacuum-pumping	zh	alias	system form
+微波波导	waveguide	zh	alias	microwave form
+绕组包体	winding-pack	zh	alias	body form

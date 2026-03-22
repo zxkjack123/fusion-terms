@@ -23,6 +23,22 @@
 
 ### Fixed
 
+## v2026.03.22.1
+
+### Added
+
+- **Batch 50b：别名充实**
+  - 为 249 个稀疏概念（此前仅有 preferred_zh + preferred_en 两条正确别名）批量补充同义/变体/缩写别名
+  - 覆盖全部 6 大 category：concept (151)、method (34)、metric (41)、system (34)、diagnostic (8)、material (11)、effect/limit (2)
+  - 新增 **294 条正确别名**（302 写入 - 8 冲突移除）
+  - 别名类型：中文简称/变体/全称、英文 plural/synonym/abbreviation (MTM/DiD/TS/HCD/TMA/CR 等)、公式符号 (βN/ln Λ/nTτ)
+  - 修复 8 组跨概念别名冲突（bootstrap-current, sputtering, bremsstrahlung, recycling-coefficient, VDE, detritiation, greenwald-density）
+  - 稀疏概念数 281 → 32（88.6% 消解率）
+
+### Changed
+
+- Registry: 886 概念, 3706 → 4000 别名 (+294)
+
 ## v2026.03.22
 
 ### Added
