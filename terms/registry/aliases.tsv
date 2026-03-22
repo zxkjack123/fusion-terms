@@ -10,7 +10,6 @@ neutral beam injection	neutral-beam-injection	en	preferred	concept-level phrase
 中性粒子束注入	neutral-beam-injection	zh	preferred	preferred zh
 neutral-beam injection	neutral-beam-injection	en	deprecated	style: prefer space-separated phrase
 Thomson scattering	thomson-scattering	en	preferred	concept-level phrase
-thomson scattering	thomson-scattering	en	alias	case variant
 氚滞留	tritium-retention	zh	preferred	preferred zh
 tritium retention	tritium-retention	en	preferred	concept-level phrase
 T retention	tritium-retention	en	deprecated	shorthand: use full term
@@ -83,7 +82,6 @@ FSAR	final-safety-analysis-report	abbr	alias	acronym
 合理可行尽可能低	alara	zh	alias	zh variant
 ALARA	alara	abbr	preferred	canonical acronym
 As Low As Reasonably Achievable	alara	en	alias	full expansion (title case)
-as low as reasonably achievable	alara	en	alias	full expansion (lowercase)
 as-low-as-reasonably-achievable	alara	en	alias	IME token-only form
 
 剂量约束	dose-constraint	zh	preferred	preferred zh
@@ -701,7 +699,6 @@ national-ignition-facility	nif	en	alias	IME token-only form
 
 Z箍缩	z-pinch	zh	preferred	preferred zh
 Z-pinch	z-pinch	en	preferred	preferred en
-z-pinch	z-pinch	en	alias	lowercase variant
 Z pinch	z-pinch	en	alias	space variant
 
 重离子聚变	heavy-ion-fusion	zh	preferred	preferred zh
@@ -860,7 +857,6 @@ KMAX	kmax	en	preferred	preferred en
 新奥球形托卡马克	enn-cst	zh	preferred	preferred zh
 ENN compact spherical tokamak	enn-cst	en	preferred	preferred en (phrase)
 enn-cst	enn-cst	en	alias	IME token-only form
-ENN-CST	enn-cst	en	alias	device designation
 
 EXL-50	exl-50	en	preferred	preferred en
 EXL50	exl-50	en	alias	no-hyphen variant
@@ -1488,7 +1484,6 @@ UEDGE	uedge	en	preferred	preferred en
 FLUKA	fluka	en	preferred	preferred en
 
 Geant4	geant4	en	preferred	preferred en
-GEANT4	geant4	en	alias	all-caps variant
 
 PHITS	phits	en	preferred	preferred en
 Particle and Heavy Ion Transport code System	phits	en	alias	full expansion
@@ -1527,10 +1522,8 @@ International Reactor Dosimetry and Fusion File	irdff	en	alias	full expansion
 
 # ---- Structural / thermal / EM / multi-physics codes
 Abaqus	abaqus	en	preferred	preferred en
-ABAQUS	abaqus	en	alias	all-caps variant
 
 Nastran	nastran	en	preferred	preferred en
-NASTRAN	nastran	en	alias	all-caps variant
 MSC Nastran	nastran	en	alias	vendor prefix form
 
 Fluent	fluent	en	preferred	preferred en
@@ -1615,7 +1608,6 @@ neutron-spectrum	neutron-spectrum	en	alias	IME token-only form
 
 比释动能	kerma	zh	preferred	preferred zh
 kerma	kerma	en	preferred	preferred en
-KERMA	kerma	en	alias	all-caps variant
 
 核热	nuclear-heating	zh	preferred	preferred zh
 nuclear heating	nuclear-heating	en	preferred	preferred en (phrase)
@@ -1931,20 +1923,16 @@ toroidal-field	toroidal-field	en	alias	IME token-only form
 
 # ---- Common English misspellings ----
 tokomak	tokamak	en	forbidden	common misspelling of tokamak
-Tokomak	tokamak	en	forbidden	capitalised misspelling
 tokamac	tokamak	en	forbidden	rare misspelling
 stellerator	stellarator	en	forbidden	common misspelling of stellarator
 stellerador	stellarator	en	forbidden	rare misspelling
-Stellerator	stellarator	en	forbidden	capitalised misspelling
 deutrium	deuterium	en	forbidden	common misspelling of deuterium (missing e)
 trittium	tritium	en	forbidden	double-t misspelling
-Trittium	tritium	en	forbidden	capitalised misspelling
 # REMOVED: divertor plate → divertor — divertor plate (靶板) is a sub-component, not equivalent to divertor (system)
 disrution	disruption	en	forbidden	common misspelling (missing p)
 disrupiton	disruption	en	forbidden	transposition misspelling
 bremstrahlung	bremsstrahlung	en	forbidden	missing s in bremsstrahlung
 brehmsstrahlung	bremsstrahlung	en	forbidden	misspelling (h before m)
-Bremstrahlung	bremsstrahlung	en	forbidden	capitalised misspelling
 Langmuire probe	langmuir-probe	en	forbidden	misspelling of Langmuir probe
 scrape off layer	scrape-off-layer	en	deprecated	style: use hyphenated scrape-off layer
 # REMOVED: superconducter/supraconductor — these are misspellings of "superconductor"
@@ -1958,14 +1946,6 @@ scrapeoff layer	scrape-off-layer	en	deprecated	style: needs hyphen scrape-off la
 scrap-off layer	scrape-off-layer	en	forbidden	misspelling of scrape-off layer
 
 # ---- Deprecated informal / outdated English terms ----
-H mode	h-mode	en	deprecated	use H-mode (hyphenated)
-h mode	h-mode	en	deprecated	use H-mode (hyphenated)
-L mode	l-mode	en	deprecated	use L-mode (hyphenated)
-l mode	l-mode	en	deprecated	use L-mode (hyphenated)
-H Mode	h-mode	en	deprecated	use H-mode (hyphenated)
-L Mode	l-mode	en	deprecated	use L-mode (hyphenated)
-high confinement mode	h-mode	en	deprecated	prefer H-mode
-low confinement mode	l-mode	en	deprecated	prefer L-mode
 q 95	q95	en	deprecated	no space in q95
 q-95	q95	en	deprecated	no hyphen in q95
 beta N	beta-n	en	deprecated	use β_N or beta_N
@@ -2040,7 +2020,6 @@ plasma rotation	plasma-rotation	en	preferred
 等离子体旋转	plasma-rotation	zh	preferred	
 toroidal rotation	plasma-rotation	en	alias	
 环向旋转	plasma-rotation	zh	alias	
-anomalous transport	anomalous-transport	en	preferred	
 反常输运	anomalous-transport	zh	preferred	
 # ==== Batch 10: Micro-instabilities & Turbulent Transport ====
 ion temperature gradient mode	itg-mode	en	preferred	
@@ -2108,7 +2087,6 @@ private flux region	private-flux-region	en	preferred
 私有磁通区	private-flux-region	zh	preferred	
 PFR	private-flux-region	abbr	preferred	
 MARFE	marfe	en	preferred	
-MARFE	marfe	abbr	preferred	
 flux expansion	flux-expansion	en	preferred	
 磁通膨胀	flux-expansion	zh	preferred	
 # ==== Batch 13: Materials & Radiation Damage ====
@@ -2128,12 +2106,10 @@ fatigue life	fatigue-life	en	preferred
 activation product	activation-product	en	preferred	
 活化产物	activation-product	zh	preferred	
 CuCrZr	cucrzr	en	preferred	
-CuCrZr	cucrzr	abbr	preferred	
 铜铬锆	cucrzr	zh	alias	
 tungsten monoblock	tungsten-monoblock	en	preferred	
 钨单块	tungsten-monoblock	zh	preferred	
 F82H	f82h	en	preferred	
-F82H	f82h	abbr	preferred	
 plasma-sprayed tungsten	plasma-sprayed-tungsten	en	preferred	
 等离子喷涂钨	plasma-sprayed-tungsten	zh	preferred	
 # ==== Batch 14: Tritium Cycle & Fuel Handling ====
@@ -2224,9 +2200,7 @@ Commonwealth Fusion Systems	cfs	en	preferred
 CFS	cfs	abbr	preferred	
 联邦聚变系统	cfs	zh	preferred	
 TAE Technologies	tae-technologies	en	preferred	
-TAE Technologies	tae-technologies	zh	preferred	
 Helion Energy	helion-energy	en	preferred	
-Helion Energy	helion-energy	zh	preferred	
 General Atomics	general-atomics	en	preferred	
 GA	general-atomics	abbr	preferred	
 通用原子能	general-atomics	zh	preferred	
@@ -4248,3 +4222,116 @@ F82H合金	f82h	zh	forbidden	材质标示错(钢≠合金)：正确为 F82H钢
 热电力	thermal-power	zh	forbidden	误译power(功率≠电力)：正确为 热功率
 热量功率	thermal-power	zh	forbidden	冗赘：正确为 热功率
 马尔夫	marfe	zh	forbidden	误音译缩写(应保留 MARFE)
+# ==== Batch 50: new concepts — plasma physics ====
+德拜屏蔽	debye-shielding	zh	preferred	
+Debye shielding	debye-shielding	en	preferred	
+Debye screening	debye-shielding	en	alias	synonym
+德拜屏蔽效应	debye-shielding	zh	alias	full form
+等离子体电阻率	plasma-resistivity	zh	preferred	
+plasma resistivity	plasma-resistivity	en	preferred	
+等离子体电阻	plasma-resistivity	zh	alias	short form
+磁通坐标	flux-coordinate	zh	preferred	
+flux coordinate	flux-coordinate	en	preferred	
+flux coordinates	flux-coordinate	en	alias	plural
+磁通量坐标	flux-coordinate	zh	alias	full form
+磁力线追踪	field-line-tracing	zh	preferred	
+field-line tracing	field-line-tracing	en	preferred	
+field line tracing	field-line-tracing	en	alias	no hyphen
+锯齿不稳定性	sawtooth	zh	preferred	
+sawtooth instability	sawtooth	en	preferred	
+电流驱动	current-drive	zh	preferred	
+current drive	current-drive	en	preferred	
+CD	current-drive	abbr	preferred	canonical abbr
+三重积	fusion-triple-product	zh	preferred	
+triple product	fusion-triple-product	en	preferred	
+nTτ	fusion-triple-product	en	alias	formula notation
+# ==== Batch 50: new concepts — heating/CD ====
+低杂波加热	lower-hybrid-heating	zh	preferred	
+lower hybrid heating	lower-hybrid-heating	en	preferred	
+LHH	lower-hybrid-heating	abbr	preferred	canonical abbr
+低混杂波加热	lower-hybrid-heating	zh	alias	variant
+中性束电流驱动	neutral-beam-current-drive	zh	preferred	
+neutral beam current drive	neutral-beam-current-drive	en	preferred	
+NBCD	neutral-beam-current-drive	abbr	preferred	canonical abbr
+# ==== Batch 50: new concepts — confinement ====
+能量约束时间	tau-e	zh	preferred	
+energy confinement time	tau-e	en	preferred	
+能量约束时间τE	tau-e	zh	alias	with symbol
+点火条件	ignition-condition	zh	preferred	
+ignition condition	ignition-condition	en	preferred	
+ignition criterion	ignition-condition	en	alias	synonym
+点火判据	ignition-condition	zh	alias	synonym
+# ==== Batch 50: new concepts — divertor/SOL ====
+脱靶	plasma-detachment	zh	preferred	
+detachment	plasma-detachment	en	preferred	
+偏滤器脱靶	plasma-detachment	zh	alias	divertor context
+高再循环	high-recycling	zh	preferred	
+high recycling	high-recycling	en	preferred	
+high-recycling regime	high-recycling	en	alias	regime form
+高再循环区	high-recycling	zh	alias	regime form
+鞘层	debye-sheath	zh	preferred	
+sheath	debye-sheath	en	preferred	
+# ==== Batch 50: new concepts — blanket/material ====
+陶瓷增殖剂	ceramic-breeder	zh	preferred	
+ceramic breeder	ceramic-breeder	en	preferred	
+陶瓷增殖材料	ceramic-breeder	zh	alias	variant
+水冷锂铅包层	wcll	zh	preferred	
+water-cooled lithium-lead	wcll	en	preferred	
+WCLL	wcll	abbr	preferred	canonical abbr
+water-cooled lithium-lead blanket	wcll	en	alias	full form
+# ==== Batch 50: new concepts — safety ====
+失真空事故	loss-of-vacuum-accident	zh	preferred	
+loss of vacuum accident	loss-of-vacuum-accident	en	preferred	
+LOVA	loss-of-vacuum-accident	abbr	preferred	canonical abbr
+# ==== Batch 50: new concepts — neutronics ====
+中子活化	neutron-activation	zh	preferred	
+neutron activation	neutron-activation	en	preferred	
+中子活化分析	neutron-activation	zh	alias	analysis context
+中子照相机	neutron-camera	zh	preferred	
+neutron camera	neutron-camera	en	preferred	
+中子相机	neutron-camera	zh	alias	short form
+# ==== Batch 50: new concepts — stellarator ====
+HELIAS	helias	abbr	preferred	canonical abbr
+helical-axis advanced stellarator	helias	en	alias	expansion
+准对称仿星器	quasi-symmetric-stellarator	zh	preferred	
+quasi-symmetric stellarator	quasi-symmetric-stellarator	en	preferred	
+QSS	quasi-symmetric-stellarator	abbr	preferred	canonical abbr
+准对称优化仿星器	quasi-symmetric-stellarator	zh	alias	variant
+# ==== Batch 50: new concepts — power plant ====
+冷却回路	coolant-loop	zh	preferred	
+coolant loop	coolant-loop	en	preferred	
+coolant circuit	coolant-loop	en	alias	synonym
+冷却循环回路	coolant-loop	zh	alias	full form
+能量转换系统	power-conversion-system	zh	preferred	
+power conversion system	power-conversion-system	en	preferred	
+PCS	power-conversion-system	abbr	preferred	canonical abbr
+维护周期	maintenance-period	zh	preferred	
+maintenance period	maintenance-period	en	preferred	
+maintenance interval	maintenance-period	en	alias	synonym
+维护间隔	maintenance-period	zh	alias	synonym
+# ==== Batch 50: new concepts — simulation ====
+回旋动理学模拟	gyrokinetic-simulation	zh	preferred	
+gyrokinetic simulation	gyrokinetic-simulation	en	preferred	
+GK simulation	gyrokinetic-simulation	en	alias	short form
+GK模拟	gyrokinetic-simulation	zh	alias	short form
+# ==== Batch 50: alias enrichment for existing concepts ====
+HCSB	hccb	abbr	alias	helium-cooled solid breeder synonym
+helium-cooled solid breeder	hccb	en	alias	alternate name
+冷却剂失流事故	loss-of-flow-accident	zh	alias	variant translation
+capsule	fuel-capsule	en	alias	generic short form
+激光聚变	laser-driven-fusion	zh	alias	short form
+bolometry	bolometer	en	alias	technique name
+辐射热测量	bolometer	zh	alias	technique name
+CXS	charge-exchange-recombination-spectroscopy	abbr	alias	short abbr
+charge-exchange spectroscopy	charge-exchange-recombination-spectroscopy	en	alias	short name
+implosion	capsule-implosion	en	alias	generic short form
+内爆	capsule-implosion	zh	alias	generic short form
+fuel compression	capsule-implosion	en	alias	compression context
+magnetic diagnostic	magnetic-diagnostics	en	alias	singular form
+shut-down dose rate	shutdown-dose-rate	en	alias	hyphenated form
+reduced activation ferritic-martensitic steel	rafm-steel	en	alias	full name
+RAFM钢	rafm-steel	zh	alias	abbr+Chinese
+oxide dispersion strengthened steel	ods-steel	en	alias	full name
+ODS钢	ods-steel	zh	alias	abbr+Chinese
+SiCf/SiC	sic-sic-composite	en	alias	fiber-reinforced form
+silicon carbide composite	sic-sic-composite	en	alias	generic name

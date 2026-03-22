@@ -926,3 +926,23 @@ siliconization	internal:expansion:batch-49	Silane GDC conditioning	copilot	2026-
 dust-generation	internal:expansion:batch-49	Erosion dust production	copilot	2026-03-21
 dust-transport	internal:expansion:batch-49	In-vessel dust dynamics	copilot	2026-03-21
 dust-inventory	internal:expansion:batch-49	Mobilizable dust quantity	copilot	2026-03-21
+debye-shielding	internal:expansion:batch-50	Debye shielding in plasma	copilot	2026-03-22
+plasma-resistivity	internal:expansion:batch-50	Classical Spitzer resistivity	copilot	2026-03-22
+flux-coordinate	internal:expansion:batch-50	Magnetic flux coordinate system	copilot	2026-03-22
+field-line-tracing	internal:expansion:batch-50	Magnetic field line tracing method	copilot	2026-03-22
+current-drive	internal:expansion:batch-50	Non-inductive plasma current drive	copilot	2026-03-22
+lower-hybrid-heating	internal:expansion:batch-50	Lower hybrid wave heating	copilot	2026-03-22
+neutral-beam-current-drive	internal:expansion:batch-50	NBI current drive	copilot	2026-03-22
+ignition-condition	internal:expansion:batch-50	Self-sustained fusion ignition	copilot	2026-03-22
+high-recycling	internal:expansion:batch-50	High recycling divertor regime	copilot	2026-03-22
+ceramic-breeder	internal:expansion:batch-50	Li4SiO4/Li2TiO3 ceramic breeder	copilot	2026-03-22
+wcll	internal:expansion:batch-50	EU WCLL blanket concept	copilot	2026-03-22
+loss-of-vacuum-accident	internal:expansion:batch-50	LOVA design basis accident	copilot	2026-03-22
+neutron-activation	internal:expansion:batch-50	Neutron-induced activation	copilot	2026-03-22
+neutron-camera	internal:expansion:batch-50	Spatially resolved neutron diagnostic	copilot	2026-03-22
+helias	internal:expansion:batch-50	HELIAS stellarator concept	copilot	2026-03-22
+quasi-symmetric-stellarator	internal:expansion:batch-50	Quasi-symmetry optimized stellarator	copilot	2026-03-22
+coolant-loop	internal:expansion:batch-50	Primary/secondary coolant loop	copilot	2026-03-22
+power-conversion-system	internal:expansion:batch-50	PCS heat-to-electricity	copilot	2026-03-22
+maintenance-period	internal:expansion:batch-50	Scheduled maintenance interval	copilot	2026-03-22
+gyrokinetic-simulation	internal:expansion:batch-50	GK turbulence simulation	copilot	2026-03-22

@@ -23,6 +23,22 @@
 
 ### Fixed
 
+## v2026.03.22
+
+### Added
+
+- **Batch 50：新增概念 + 别名充实**
+  - 新增 **20 个概念**（实际入库，去重后）：等离子体物理基础（debye-shielding、plasma-resistivity、flux-coordinate、field-line-tracing、current-drive）、加热/驱动（lower-hybrid-heating、neutral-beam-current-drive）、约束（ignition-condition）、偏滤器/SOL（high-recycling）、包层（ceramic-breeder、wcll）、安全（loss-of-vacuum-accident）、中子学（neutron-activation、neutron-camera）、仿星器（helias、quasi-symmetric-stellarator）、电厂（coolant-loop、power-conversion-system、maintenance-period）、模拟（gyrokinetic-simulation）
+  - 新增 **97 条正确别名**（含缩写 CD/NBCD/LHH/WCLL/LOVA/PCS/QSS/HCSB 等）
+  - **别名充实**：为 ~15 个已有概念补充 23 条同义/扩展别名（hccb→HCSB、eccd→full name、fuel-capsule→capsule、bolometer→bolometry 等）
+  - 清理 13 组历史重复别名行，修复 5 组跨概念别名冲突
+
+### Changed
+
+- Registry: 866 → 886 概念, 3620 → 3706 别名, 866 → 886 evidence 行
+- `domain_terms.txt`: 2496 terms
+- `rime_import`: 1676 entries
+
 ## v2026.03.21.9
 
 ### Added

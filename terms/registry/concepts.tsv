@@ -982,3 +982,23 @@ siliconization	method	硅化	siliconization		active	Silane glow discharge wall c
 dust-generation	concept	粉尘产生	dust generation		active	Dust production mechanism from plasma erosion and flaking
 dust-transport	concept	粉尘输运	dust transport		active	Dust dynamics, mobilization and transport inside vacuum vessel
 dust-inventory	metric	粉尘存量	dust inventory		active	Total mobilizable dust quantity inside vacuum vessel
+debye-shielding	concept	德拜屏蔽	Debye shielding		active	Debye shielding / screening of electric charges in plasma
+plasma-resistivity	concept	等离子体电阻率	plasma resistivity		active	Spitzer or anomalous resistivity of plasma
+flux-coordinate	concept	磁通坐标	flux coordinate		active	Coordinate system based on magnetic flux surfaces
+field-line-tracing	method	磁力线追踪	field-line tracing		active	Numerical tracing of magnetic field lines
+current-drive	concept	电流驱动	current drive	CD	active	Non-inductive methods for driving plasma current
+lower-hybrid-heating	method	低杂波加热	lower hybrid heating	LHH	active	Heating via lower hybrid waves
+neutral-beam-current-drive	method	中性束电流驱动	neutral beam current drive	NBCD	active	Current drive via neutral beam injection
+ignition-condition	concept	点火条件	ignition condition		active	Condition for self-sustained fusion burn
+high-recycling	concept	高再循环	high recycling		active	High recycling regime in SOL/divertor
+ceramic-breeder	material	陶瓷增殖剂	ceramic breeder		active	Ceramic lithium compound for tritium breeding (Li4SiO4, Li2TiO3)
+wcll	system	水冷锂铅包层	water-cooled lithium-lead	WCLL	active	EU water-cooled lithium-lead blanket concept
+loss-of-vacuum-accident	concept	失真空事故	loss of vacuum accident	LOVA	active	Design basis accident: loss of vacuum boundary integrity
+neutron-activation	concept	中子活化	neutron activation		active	Activation of materials by neutron irradiation
+neutron-camera	diagnostic	中子照相机	neutron camera		active	Spatially-resolved neutron emission diagnostic
+helias	device	HELIAS	HELIAS		active	Helical-axis advanced stellarator concept
+quasi-symmetric-stellarator	concept	准对称仿星器	quasi-symmetric stellarator	QSS	active	Stellarator with quasi-symmetry in |B|
+coolant-loop	system	冷却回路	coolant loop		active	Primary/secondary coolant circulation loop
+power-conversion-system	system	能量转换系统	power conversion system	PCS	active	Heat-to-electricity conversion system
+maintenance-period	metric	维护周期	maintenance period		active	Scheduled maintenance interval for fusion plant
+gyrokinetic-simulation	method	回旋动理学模拟	gyrokinetic simulation		active	First-principles simulation of plasma micro-turbulence
