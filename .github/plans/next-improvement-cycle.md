@@ -304,7 +304,7 @@
   - ✅ 全量测试通过
 - **潜在风险**：部分纯代号概念（如 code 类 best、cfr 等）不存在有意义的 AI 误译形式，可跳过并计入"不适用"名单。需在实施时记录跳过原因。
 
-#### Task 4.3: Phase 4 commit + tag
+#### ✅ Task 4.3: Phase 4 commit + tag
 
 - **目标**：提交 registry 充实和 forbidden 覆盖变更
 - **修改内容**：

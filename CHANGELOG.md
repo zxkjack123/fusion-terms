@@ -23,6 +23,8 @@
 
 - 候选词过滤优化：扩充 `terms/stopwords_en.txt`（Batch02）并补充 `terms/denylist.txt` 中的英文通用噪声词，降低 review pack 英文非术语候选。
 - 带停用词重跑抽词与 review pack：使用 `--zh-stopwords terms/stopwords_zh.txt` 与 `--en-stopwords terms/stopwords_en.txt` 后，review pack 结果为 `new_zh=0`、`new_en=0`（`--exclude-known-terms`）。
+- Registry 稀疏概念充实（Batch 55）：新增 40 条正确别名，稀疏概念数降至 `79`（目标 `<=80`），registry 别名数提升至 `4464`。
+- Forbidden 覆盖提升（Batch F11）：新增 24 条 `forbidden` 别名，覆盖率提升至 `879/925 = 95.03%`（达到 `>=95%` 目标）。
 
 
 ### Fixed
