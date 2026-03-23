@@ -5054,3 +5054,42 @@ plant availability	availability	en	alias	plant context
 巨人4	geant4	zh	forbidden	AI translates French géant as 巨人
 海伦娜	helena	zh	forbidden	AI translates code name as person name
 的黎波里	tripoli	zh	forbidden	AI translates code name as Tripoli city
+# ==== batch 54: alias enrichment for sparse concepts ====
+低温真空泵	cryopump	zh	alias	
+cryogenic pump	cryopump	en	alias	
+Experimental Advanced Superconducting Tokamak	east	en	alias	
+电子回旋管	gyrotron	zh	alias	
+HL-2A tokamak	hl-2a	en	alias	
+HL-2M tokamak	hl-2m	en	alias	
+国际热核聚变实验堆	iter	zh	alias	
+MH bed	metal-hydride-bed	en	alias	MH = metal hydride
+负离子束源	negative-ion-source	zh	alias	
+OMEGA laser	omega	en	alias	
+OMEGA laser facility	omega	en	alias	
+AC losses	ac-loss	en	alias	plural form
+交流功率损耗	ac-loss	zh	alias	
+bootstrap current generation	bootstrap-generation	en	alias	
+steam condenser	condenser	en	alias	
+plasma divertor	divertor	en	alias	
+dust production	dust-generation	en	alias	
+尘埃产生	dust-generation	zh	alias	
+He embrittlement	helium-embrittlement	en	alias	
+helium-induced embrittlement	helium-embrittlement	en	alias	
+ITER-DEMO transition	iter-to-demo	en	alias	
+聚变原型堆	prototype-reactor	zh	alias	
+粒子再循环	recycling	zh	alias	
+sawtooth collapse	sawtooth-crash	en	alias	
+collisionless Boltzmann equation	vlasov-equation	en	alias	
+boronisation	boronization	en	alias	British spelling
+siliconisation	siliconization	en	alias	British spelling
+functional materials	functional-material	en	alias	plural
+planned maintenance	scheduled-maintenance	en	alias	
+氚清除	tritium-removal	zh	alias	
+Tri Alpha Energy	tae-technologies	en	alias	former company name
+CLF-1 steel	clf-1	en	alias	
+F82H steel	f82h	en	alias	
+产气率	gas-production-rate	zh	alias	
+检修口	maintenance-port	zh	alias	
+flux loop	magnetic-flux-loop	en	alias	
+COMSOL Multiphysics	comsol	en	alias	full product name
+JET Integrated Transport Code	jintrac	en	alias	full name

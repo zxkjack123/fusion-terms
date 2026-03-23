@@ -23,6 +23,16 @@
 
 ### Fixed
 
+## v2026.03.23.5
+
+### Added
+
+- **Batch 54：稀疏概念别名充实**
+  - +38 correct aliases for 33 sparse concepts (≤2 existing correct aliases)
+  - Categories: 11 device, 16 concept, 5 method/concept, 1 organization, 2 material, 1 metric, 1 system, 1 diagnostic, 2 code
+  - Sparse concepts reduced: 138 → 111
+  - Registry: 925 concepts, 4434 aliases, 925 evidence
+
 ## v2026.03.23.4
 
 ### Added
