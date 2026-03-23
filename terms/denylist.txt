@@ -19,6 +19,16 @@ doi
 et
 al
 
+# Generic English prose noise (review-pack cleanup)
+course
+though
+either
+being
+them
+necessary
+appropriate
+sufficient
+
 # --- AUTO-INBOX (managed by pipeline.apply_decisions)
 1-1
 1-2

@@ -120,7 +120,7 @@
   - ✅ 与 registry preferred_zh 无交集
 - **潜在风险**：部分动词如"分析/影响/研究"在特定上下文可能是术语成分。应仅添加在核聚变领域明确无术语含义的虚词。如有疑问，宁可不加。
 
-#### Task 2.2: 扩充英文停用词和 denylist
+#### ✅ Task 2.2: 扩充英文停用词和 denylist
 
 - **目标**：扩充 `terms/stopwords_en.txt` 和 `terms/denylist.txt`，过滤英文候选中的常见非术语词
 - **修改内容**：
