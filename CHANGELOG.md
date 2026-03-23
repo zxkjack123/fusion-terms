@@ -21,6 +21,10 @@
 ### Changed
 
 
+- 候选词过滤优化：扩充 `terms/stopwords_en.txt`（Batch02）并补充 `terms/denylist.txt` 中的英文通用噪声词，降低 review pack 英文非术语候选。
+- 带停用词重跑抽词与 review pack：使用 `--zh-stopwords terms/stopwords_zh.txt` 与 `--en-stopwords terms/stopwords_en.txt` 后，review pack 结果为 `new_zh=0`、`new_en=0`（`--exclude-known-terms`）。
+
+
 ### Fixed
 
 ## v2026.03.23.7
