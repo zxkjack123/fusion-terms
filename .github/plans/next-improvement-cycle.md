@@ -347,7 +347,7 @@
   - ✅ `validate_registry` 通过
 - **潜在风险**：需人工查找正确的文献来源。如暂时无法找到权威论文 DOI，可用 Wikipedia 物理词条 URL 作为过渡（如 `https://en.wikipedia.org/wiki/Safety_factor_(plasma_physics)`）。
 
-#### Task 5.2: Rime/fcitx 词库同步
+#### ✅ Task 5.2: Rime/fcitx 词库同步
 
 - **目标**：将当前 domain_terms.txt 同步到本地 Rime 输入法
 - **修改内容**：
