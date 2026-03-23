@@ -79,7 +79,7 @@
   - ✅ manifest.json 中 `counts.total` ≥ 2496
 - **潜在风险**：如 allowlist/denylist 有变化（本 Phase 内不应有），term count 可能偏离预期。build_terms 输出与 v2026.03.23.5 的 2496 应一致。
 
-#### Task 1.3: Tag + Push
+#### ✅ Task 1.3: Tag + Push
 
 - **目标**：打上 v2026.03.23.8 tag 并推送到 origin，完成版本对齐
 - **修改内容**：
