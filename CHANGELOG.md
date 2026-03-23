@@ -23,6 +23,19 @@
 
 ### Fixed
 
+## v2026.03.23.6
+
+### Added
+
+- **Release pack v2026.03.23.5**
+  - 完整发布包：`dist/fusion-terms-artifacts-v2026.03.23.5.tar.gz` (388 KB, 17 files)
+  - 包含：domain_terms (2496 terms), registry TSVs, Vale rules, query expansions, tag rules, substitutions
+  - 合约验证通过：`verify_release_contract OK`
+- **Review pack 更新**
+  - 基线从 2026-02-05 推进到 2026-03-23
+  - 排除已知术语 3113 条后，new_en=1605 待审阅候选（new_zh=0, removed=0）
+  - `artifacts/review_pack/summary.json` 已更新
+
 ## v2026.03.23.5
 
 ### Added
