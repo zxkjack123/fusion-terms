@@ -285,7 +285,7 @@
   - ✅ 全量测试通过
 - **潜在风险**：新别名可能与现有别名在其他概念下冲突。必须用 pre-flight 脚本逐条检查 `aliases.tsv` 中是否已有同文本指向不同 `concept_id` 的记录。
 
-#### Task 4.2: Forbidden 覆盖率提升至 ≥95%
+#### ✅ Task 4.2: Forbidden 覆盖率提升至 ≥95%
 
 - **目标**：为 ≥28 个无 forbidden/deprecated 别名的概念补充错误形式别名，覆盖率达 ≥95%
 - **前置依赖**：Task 4.1 完成（两个 Task 均修改 `aliases.tsv`，必须顺序执行避免冲突）

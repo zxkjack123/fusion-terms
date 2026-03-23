@@ -5134,3 +5134,28 @@ STEP tokamak	step	en	alias	device form
 HB11	hb11-energy	en	alias	short name
 Helion	helion-energy	en	alias	short name
 LPPF	lpp-fusion	en	alias	acronym
+# ==== batch F11: forbidden coverage uplift ====
+瑞克西	rexie	zh	forbidden	AI transliteration of code-like device token
+凯马克斯	kmax	zh	forbidden	AI transliteration of device token
+艾克斯艾尔50	exl-50	zh	forbidden	AI transliteration of EXL acronym
+艾克斯艾尔50U	exl-50u	zh	forbidden	AI transliteration of EXL acronym
+伊菲特	efit	zh	forbidden	AI transliteration of code token
+特兰斯普	transp	zh	forbidden	AI transliteration of code token
+阿斯特拉	astra	zh	forbidden	AI transliteration of code token
+索尔普斯迭代	solps-iter	zh	forbidden	literal transliteration of SOLPS-ITER
+基因代码	gene	zh	forbidden	wrong lexical translation of code name
+通用技术中心	gtc	zh	forbidden	wrong expansion of acronym
+回合加加	bout-pp	zh	forbidden	literal translation of BOUT++ token
+蒙特卡罗中子程序	mcnp	zh	forbidden	over-literal expansion used by AI
+开放蒙特卡罗	openmc	zh	forbidden	literal translation of project name
+蛇形程序	serpent	zh	forbidden	literal translation of code name
+融合终端核数据库	fendl	zh	forbidden	wrong expansion of acronym
+终端核数据库	endf	zh	forbidden	wrong expansion of acronym
+康索尔	comsol	zh	forbidden	AI transliteration of software name
+安系统	ansys	zh	forbidden	literal transliteration split
+卡蒂亚	catia	zh	forbidden	AI transliteration of software name
+艾玛斯	imas	zh	forbidden	AI transliteration of acronym
+金特拉克	jintrac	zh	forbidden	AI transliteration of code token
+GA代码	gacode	zh	forbidden	literal expansion of suite token
+T陀螺	tgyro	zh	forbidden	letter-by-letter mistranslation
+C陀螺	cgyro	zh	forbidden	letter-by-letter mistranslation
