@@ -946,3 +946,31 @@ coolant-loop	internal:expansion:batch-50	Primary/secondary coolant loop	copilot	
 power-conversion-system	internal:expansion:batch-50	PCS heat-to-electricity	copilot	2026-03-22
 maintenance-period	internal:expansion:batch-50	Scheduled maintenance interval	copilot	2026-03-22
 gyrokinetic-simulation	internal:expansion:batch-50	GK turbulence simulation	copilot	2026-03-22
+# ==== Batch 51 P0 ====
+gyro-bohm-scaling	https://en.wikipedia.org/wiki/Bohm_diffusion			2026-03-23
+turbulent-diffusion	internal:fusion-transport:turbulent-diffusion			2026-03-23
+particle-pinch	internal:fusion-transport:particle-pinch			2026-03-23
+thermodiffusion	internal:fusion-transport:thermodiffusion			2026-03-23
+external-kink	internal:mhd-stability:external-kink			2026-03-23
+sausage-instability	https://en.wikipedia.org/wiki/Pinch_(plasma_physics)			2026-03-23
+pressure-driven-mode	internal:mhd-stability:pressure-driven			2026-03-23
+current-driven-mode	internal:mhd-stability:current-driven			2026-03-23
+ideal-mhd-stability	internal:mhd-stability:ideal-mhd			2026-03-23
+resistive-instability	internal:mhd-stability:resistive-instab			2026-03-23
+global-alfven-eigenmode	internal:mhd-alfven-eigenmode:gae			2026-03-23
+parallel-heat-flux	internal:sol-divertor:parallel-heat-flux			2026-03-23
+filament	internal:sol-divertor:filament			2026-03-23
+divertor-leg	internal:sol-divertor:divertor-leg			2026-03-23
+flux-tube	internal:sol-divertor:flux-tube			2026-03-23
+connection-length	internal:sol-divertor:connection-length			2026-03-23
+wetted-area	internal:sol-divertor:wetted-area			2026-03-23
+fuel-cycle	internal:fuel-cycle:overview			2026-03-23
+isotope-separation	internal:fuel-cycle:isotope-separation			2026-03-23
+hydrogen-isotope	https://en.wikipedia.org/wiki/Isotopes_of_hydrogen			2026-03-23
+protium	https://en.wikipedia.org/wiki/Hydrogen-1			2026-03-23
+tritium-storage	internal:fuel-cycle:tritium-storage			2026-03-23
+tritium-recovery	internal:fuel-cycle:tritium-recovery			2026-03-23
+tritium-processing	internal:fuel-cycle:tritium-processing			2026-03-23
+palladium-membrane	internal:fuel-cycle:palladium-membrane			2026-03-23
+getter-bed	internal:fuel-cycle:getter-bed			2026-03-23
+glovebox	internal:fuel-cycle:glovebox			2026-03-23

@@ -4637,3 +4637,136 @@ brazed joint	braze-joint	en	alias	past participle
 真空抽气系统	vacuum-pumping	zh	alias	system form
 微波波导	waveguide	zh	alias	microwave form
 绕组包体	winding-pack	zh	alias	body form
+# ==== Batch 51 P0: Transport / micro-instabilities ====
+gyro-Bohm scaling	gyro-bohm-scaling	en	preferred	
+旋回Bohm标度	gyro-bohm-scaling	zh	preferred	preferred zh
+gyroBohm scaling	gyro-bohm-scaling	en	alias	no-hyphen variant
+gyro-Bohm transport scaling	gyro-bohm-scaling	en	alias	expanded form
+旋回玻姆标度	gyro-bohm-scaling	zh	alias	full-Chinese transliteration
+turbulent diffusion	turbulent-diffusion	en	preferred	
+湍流扩散输运	turbulent-diffusion	zh	preferred	preferred zh (distinguishes from 湍流扩展)
+turbulent diffusivity	turbulent-diffusion	en	alias	coefficient form
+particle pinch	particle-pinch	en	preferred	
+粒子箍缩	particle-pinch	zh	preferred	preferred zh
+inward particle pinch	particle-pinch	en	alias	directional form
+particle pinch velocity	particle-pinch	en	alias	velocity quantity
+内向粒子输运	particle-pinch	zh	alias	directional zh
+thermodiffusion	thermodiffusion	en	preferred	
+热扩散	thermodiffusion	zh	preferred	preferred zh
+temperature screening	thermodiffusion	en	alias	tokamak-specific term
+thermal diffusion	thermodiffusion	en	alias	general physics form
+Soret effect	thermodiffusion	en	alias	named after Charles Soret
+温度屏蔽	thermodiffusion	zh	alias	temperature screening zh
+# ==== Batch 51 P0: MHD stability ====
+external kink mode	external-kink	en	preferred	
+外扭曲模	external-kink	zh	preferred	preferred zh
+external kink	external-kink	en	alias	short form
+external kink instability	external-kink	en	alias	instability form
+外扭曲不稳定性	external-kink	zh	alias	instability zh form
+sausage instability	sausage-instability	en	preferred	
+腊肠不稳定性	sausage-instability	zh	preferred	preferred zh
+sausage mode	sausage-instability	en	alias	mode form
+m=0 instability	sausage-instability	en	alias	mode number form
+m=0 mode	sausage-instability	en	alias	mode number shorthand
+腊肠模	sausage-instability	zh	alias	mode zh form
+香肠不稳定性	sausage-instability	zh	alias	alt zh transliteration
+pressure-driven mode	pressure-driven-mode	en	preferred	
+压力驱动模	pressure-driven-mode	zh	preferred	preferred zh
+pressure driven instability	pressure-driven-mode	en	alias	instability form
+压力驱动不稳定性	pressure-driven-mode	zh	alias	instability zh
+current-driven mode	current-driven-mode	en	preferred	
+电流驱动模	current-driven-mode	zh	preferred	preferred zh
+current driven instability	current-driven-mode	en	alias	instability form
+电流驱动不稳定性	current-driven-mode	zh	alias	instability zh
+ideal MHD stability	ideal-mhd-stability	en	preferred	
+理想MHD稳定性	ideal-mhd-stability	zh	preferred	preferred zh
+ideal MHD stability limit	ideal-mhd-stability	en	alias	limit form
+理想磁流体稳定性	ideal-mhd-stability	zh	alias	full Chinese form
+resistive instability	resistive-instability	en	preferred	
+电阻不稳定性	resistive-instability	zh	preferred	preferred zh
+resistive mode	resistive-instability	en	alias	mode form
+电阻模	resistive-instability	zh	alias	mode zh form
+global Alfvén eigenmode	global-alfven-eigenmode	en	preferred	
+全局Alfvén本征模	global-alfven-eigenmode	zh	preferred	preferred zh
+GAE	global-alfven-eigenmode	abbr	preferred	canonical abbr
+global Alfven eigenmode	global-alfven-eigenmode	en	alias	no-accent form
+全局阿尔芬本征模	global-alfven-eigenmode	zh	alias	full-Chinese transliteration
+# ==== Batch 51 P0: SOL / divertor physics ====
+parallel heat flux	parallel-heat-flux	en	preferred	
+平行热流	parallel-heat-flux	zh	preferred	preferred zh
+q_parallel	parallel-heat-flux	en	alias	symbol (ASCII)
+q∥	parallel-heat-flux	mixed	alias	symbol (Unicode parallel)
+平行热流密度	parallel-heat-flux	zh	alias	density explicit form
+filament	filament	en	preferred	SOL filament / blob structure
+等离子体丝状体	filament	zh	preferred	preferred zh
+SOL filament	filament	en	alias	SOL context
+plasma filament	filament	en	alias	plasma context
+丝状体	filament	zh	alias	short zh form
+divertor leg	divertor-leg	en	preferred	
+偏滤器腿	divertor-leg	zh	preferred	preferred zh
+inner divertor leg	divertor-leg	en	alias	inner leg
+outer divertor leg	divertor-leg	en	alias	outer leg
+偏滤器内腿	divertor-leg	zh	alias	inner leg zh
+偏滤器外腿	divertor-leg	zh	alias	outer leg zh
+flux tube	flux-tube	en	preferred	
+磁通管	flux-tube	zh	preferred	preferred zh
+flux-tube	flux-tube	en	alias	hyphenated form
+connection length	connection-length	en	preferred	
+连接长度	connection-length	zh	preferred	preferred zh
+L_c	connection-length	en	alias	symbol
+场线连接长度	connection-length	zh	alias	full zh form
+wetted area	wetted-area	en	preferred	
+湿润面积	wetted-area	zh	preferred	preferred zh
+wetted surface area	wetted-area	en	alias	expanded form
+# ==== Batch 51 P0: Fuel cycle ====
+fuel cycle	fuel-cycle	en	preferred	
+燃料循环	fuel-cycle	zh	preferred	preferred zh
+fusion fuel cycle	fuel-cycle	en	alias	fusion-specific
+DT fuel cycle	fuel-cycle	en	alias	DT context
+聚变燃料循环	fuel-cycle	zh	alias	fusion context zh
+isotope separation	isotope-separation	en	preferred	
+同位素分离	isotope-separation	zh	preferred	preferred zh
+hydrogen isotope separation	isotope-separation	en	alias	H-specific
+氢同位素分离	isotope-separation	zh	alias	H-specific zh
+hydrogen isotope	hydrogen-isotope	en	preferred	
+氢同位素	hydrogen-isotope	zh	preferred	preferred zh
+hydrogen isotopes	hydrogen-isotope	en	alias	plural form
+protium	protium	en	preferred	
+氕	protium	zh	preferred	preferred zh
+H	protium	abbr	preferred	element symbol
+light hydrogen	protium	en	alias	descriptive name
+tritium storage	tritium-storage	en	preferred	
+氚储存	tritium-storage	zh	preferred	preferred zh
+tritium storage system	tritium-storage	en	alias	system form
+氚贮存	tritium-storage	zh	alias	variant zh char
+tritium recovery	tritium-recovery	en	preferred	
+氚回收	tritium-recovery	zh	preferred	preferred zh
+tritium extraction	tritium-recovery	en	alias	extraction context
+氚提取	tritium-recovery	zh	alias	extraction zh
+tritium processing	tritium-processing	en	preferred	
+氚处理	tritium-processing	zh	preferred	preferred zh
+tritium cleanup	tritium-processing	en	alias	cleanup context
+氚纯化	tritium-processing	zh	alias	purification zh
+palladium membrane	palladium-membrane	en	preferred	
+钯膜	palladium-membrane	zh	preferred	preferred zh
+Pd membrane	palladium-membrane	en	alias	element-symbol form
+钯合金膜	palladium-membrane	zh	alias	alloy variant
+getter bed	getter-bed	en	preferred	
+吸气剂床	getter-bed	zh	preferred	preferred zh
+getter	getter-bed	en	alias	short form
+metal getter	getter-bed	en	alias	material context
+金属吸气剂	getter-bed	zh	alias	material context zh
+glovebox	glovebox	en	preferred	
+手套箱	glovebox	zh	preferred	preferred zh
+glove box	glovebox	en	alias	two-word variant
+tritium glovebox	glovebox	en	alias	tritium context
+# ==== Batch 51 P0: Enrichment aliases for existing concepts ====
+kink instability	kink-mode	en	alias	instability form
+internal kink	internal-kink-mode	en	alias	short form
+internal kink instability	internal-kink-mode	en	alias	instability form
+λ_q	sol-width	mixed	alias	Greek symbol
+power fall-off length	sol-width	en	alias	synonym
+功率衰减长度	sol-width	zh	alias	synonym zh
+热流衰减宽度	sol-width	zh	alias	heat flux width zh
+target plate	divertor-target	en	alias	short form
+靶板	divertor-target	zh	alias	short zh form

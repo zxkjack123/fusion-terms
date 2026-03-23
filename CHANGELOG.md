@@ -23,6 +23,20 @@
 
 ### Fixed
 
+## v2026.03.23
+
+### Added
+
+- **Batch 51 P0：新增概念 + 别名充实**
+  - 新增 27 概念覆盖 4 个子领域：
+    - 输运/微观不稳定性（4）：gyro-Bohm scaling, turbulent diffusion, particle pinch, thermodiffusion
+    - MHD 稳定性（7）：external kink, sausage instability, pressure-driven mode, current-driven mode, ideal MHD stability, resistive instability, global Alfvén eigenmode (GAE)
+    - SOL/偏滤器物理（6）：parallel heat flux, filament, divertor leg, flux tube, connection length, wetted area
+    - 燃料循环（10）：fuel cycle, isotope separation, hydrogen isotope, protium, tritium storage/recovery/processing, palladium membrane, getter bed, glovebox
+  - 新增 128 条别名（含 6 个已有概念的充实别名：kink-mode, internal-kink-mode, kbm, rsae, sol-width, divertor-target）
+  - 识别并合并 7 个与现有概念重复的候选（kink-instability→kink-mode, internal-kink→internal-kink-mode, kinetic-ballooning-mode→kbm, reversed-shear-alfven-eigenmode→rsae, lambda-q/power-fall-off-length→sol-width, target-plate→divertor-target）
+  - Registry：913 concepts, 4128 aliases, 913 evidence
+
 ## v2026.03.22.1
 
 ### Added

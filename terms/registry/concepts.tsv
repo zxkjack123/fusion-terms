@@ -1002,3 +1002,34 @@ coolant-loop	system	冷却回路	coolant loop		active	Primary/secondary coolant 
 power-conversion-system	system	能量转换系统	power conversion system	PCS	active	Heat-to-electricity conversion system
 maintenance-period	metric	维护周期	maintenance period		active	Scheduled maintenance interval for fusion plant
 gyrokinetic-simulation	method	回旋动理学模拟	gyrokinetic simulation		active	First-principles simulation of plasma micro-turbulence
+# ==== Batch 51 P0: Transport / micro-instabilities ====
+gyro-bohm-scaling	concept	旋回Bohm标度	gyro-Bohm scaling		active	Turbulent transport scaling stronger than Bohm (gyro-radius dependent)
+turbulent-diffusion	concept	湍流扩散输运	turbulent diffusion		active	Enhanced particle/heat diffusion due to plasma turbulence
+particle-pinch	concept	粒子箍缩	particle pinch		active	Inward convective particle transport in tokamak plasmas
+thermodiffusion	concept	热扩散	thermodiffusion		active	Temperature-gradient-driven particle flux (Soret effect in plasmas)
+# ==== Batch 51 P0: MHD stability ====
+external-kink	concept	外扭曲模	external kink mode		active	Current-driven kink instability outside the plasma boundary
+sausage-instability	concept	腊肠不稳定性	sausage instability		active	m=0 axisymmetric MHD instability in a Z-pinch
+pressure-driven-mode	concept	压力驱动模	pressure-driven mode		active	MHD mode driven by pressure gradient (e.g. ballooning)
+current-driven-mode	concept	电流驱动模	current-driven mode		active	MHD mode driven by current density gradient (e.g. kink, tearing)
+ideal-mhd-stability	concept	理想MHD稳定性	ideal MHD stability		active	MHD stability analysis ignoring resistive effects
+resistive-instability	concept	电阻不稳定性	resistive instability		active	MHD instability requiring finite plasma resistivity (tearing, resistive kink)
+global-alfven-eigenmode	concept	全局Alfvén本征模	global Alfvén eigenmode	GAE	active	Shear-Alfvén gap eigenmode with global structure
+# ==== Batch 51 P0: SOL / divertor physics ====
+parallel-heat-flux	metric	平行热流	parallel heat flux		active	Heat flux density along magnetic field lines toward divertor
+filament	concept	等离子体丝状体	filament		active	Coherent field-aligned density structure in SOL (also called blob)
+divertor-leg	concept	偏滤器腿	divertor leg		active	Magnetic flux path from X-point to divertor target (inner/outer)
+flux-tube	concept	磁通管	flux tube		active	Tube-shaped region bounded by magnetic field lines
+connection-length	metric	连接长度	connection length		active	Field-line length from outboard midplane to divertor target
+wetted-area	metric	湿润面积	wetted area		active	Divertor target area receiving significant heat flux
+# ==== Batch 51 P0: Fuel cycle ====
+fuel-cycle	concept	燃料循环	fuel cycle		active	Closed loop of fuel supply, burn, exhaust, and reprocessing in a fusion plant
+isotope-separation	concept	同位素分离	isotope separation		active	Process to separate hydrogen isotopes (H, D, T)
+hydrogen-isotope	concept	氢同位素	hydrogen isotope		active	Isotopes of hydrogen: protium H, deuterium D, tritium T
+protium	concept	氕	protium	H	active	Lightest hydrogen isotope (mass number 1)
+tritium-storage	system	氚储存	tritium storage		active	Systems for safe containment and inventory of tritium
+tritium-recovery	concept	氚回收	tritium recovery		active	Extraction of tritium from blanket breeder or plasma exhaust
+tritium-processing	concept	氚处理	tritium processing		active	Purification, isotope separation, and preparation of tritium for re-fueling
+palladium-membrane	material	钯膜	palladium membrane		active	Pd-based selective membrane for hydrogen isotope permeation/separation
+getter-bed	system	吸气剂床	getter bed		active	Metal getter (U, Zr-alloy) bed for reversible tritium storage
+glovebox	system	手套箱	glovebox		active	Sealed enclosure with inert atmosphere for tritium handling
