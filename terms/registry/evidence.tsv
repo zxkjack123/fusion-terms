@@ -5,10 +5,10 @@ east	https://en.wikipedia.org/wiki/Experimental_Advanced_Superconducting_Tokamak
 tokamak	https://en.wikipedia.org/wiki/Tokamak			2026-02-04
 neutral-beam-injection	https://en.wikipedia.org/wiki/Neutral_beam_injection			2026-02-04
 thomson-scattering	https://en.wikipedia.org/wiki/Thomson_scattering			2026-02-04
-tritium-retention	internal:TODO:add-paper-or-standard			2026-02-04
-q95	internal:TODO:add-definition-source			2026-02-04
-beta-n	internal:TODO:add-definition-source			2026-02-04
-tau-e	internal:TODO:add-definition-source			2026-02-04
+tritium-retention	https://en.wikipedia.org/wiki/Tritium			2026-02-04
+q95	https://en.wikipedia.org/wiki/Safety_factor_(plasma_physics)			2026-02-04
+beta-n	https://en.wikipedia.org/wiki/Beta_(plasma_physics)			2026-02-04
+tau-e	https://en.wikipedia.org/wiki/Energy_confinement_time			2026-02-04
 tungsten	https://en.wikipedia.org/wiki/Tungsten			2026-02-04
 beryllium	https://en.wikipedia.org/wiki/Beryllium			2026-02-04
 nb3sn	https://en.wikipedia.org/wiki/Niobium%E2%80%93tin			2026-02-04

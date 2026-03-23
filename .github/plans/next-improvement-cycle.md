@@ -327,7 +327,7 @@
 
 **前置依赖**：Phase 4 完成
 
-#### Task 5.1: evidence.tsv TODO 占位符清理
+#### ✅ Task 5.1: evidence.tsv TODO 占位符清理
 
 - **目标**：替换 evidence.tsv 中 4 条 `internal:TODO` 占位符为实际文献来源
 - **修改内容**：
