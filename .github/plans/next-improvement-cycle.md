@@ -62,7 +62,7 @@
   - ✅ `git log --oneline -1` 显示 changelog commit
 - **潜在风险**：措辞不准确不影响功能，可通过后续 `commit --amend` 修正
 
-#### Task 1.2: 重建 release pack
+#### ✅ Task 1.2: 重建 release pack
 
 - **目标**：基于当前 registry (925 concepts, 4434 aliases) 构建与最新代码匹配的 release pack 并验证合约
 - **修改内容**：
