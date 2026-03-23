@@ -23,6 +23,15 @@
 
 ### Fixed
 
+## v2026.03.23.1
+
+### Added
+
+- **Batch 51F：Forbidden aliases for 27 P0 concepts**
+  - 新增 89 条错误形式别名（72 forbidden + 17 deprecated），覆盖全部 27 个 P0 新概念
+  - 典型 AI 误译类型：gyro→回旋/陀螺, Bohm→波姆/玻尔姆, pinch→挤压/捏缩, filament→灯丝/细丝, divertor→分流器/偏转器, getter→吸附剂/吸收剂, recovery→恢复/复原 等
+  - Registry：913 concepts, 4217 aliases, 913 evidence
+
 ## v2026.03.23
 
 ### Added
