@@ -138,7 +138,7 @@
   - ✅ 与 registry preferred_en 无交集
 - **潜在风险**：像 "near" 可能出现在术语短语中 "near-field"，但 stopwords 只做完全匹配，不影响短语内组成词。单独的 "near" 出现在候选中确为噪声。
 
-#### Task 2.3: 重新提取候选词并更新 review pack
+#### ✅ Task 2.3: 重新提取候选词并更新 review pack
 
 - **目标**：传入新的停用词重新提取候选词，更新 review pack，验证噪声显著减少
 - **修改内容**：
