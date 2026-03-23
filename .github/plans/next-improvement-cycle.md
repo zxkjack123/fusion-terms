@@ -370,7 +370,7 @@
   - ✅ fcitx5 重新部署后输入法正常工作
 - **潜在风险**：Rime 词库格式不兼容可能导致部署失败。`rime_import_safe` 有备份机制，可通过还原 `artifacts/rime_backups/` 中的备份回滚。
 
-#### Task 5.3: 最终 release pack + tag
+#### ✅ Task 5.3: 最终 release pack + tag
 
 - **目标**：构建包含所有改进的最终 release pack 并推送
 - **修改内容**：

@@ -25,6 +25,8 @@
 - 带停用词重跑抽词与 review pack：使用 `--zh-stopwords terms/stopwords_zh.txt` 与 `--en-stopwords terms/stopwords_en.txt` 后，review pack 结果为 `new_zh=0`、`new_en=0`（`--exclude-known-terms`）。
 - Registry 稀疏概念充实（Batch 55）：新增 40 条正确别名，稀疏概念数降至 `79`（目标 `<=80`），registry 别名数提升至 `4464`。
 - Forbidden 覆盖提升（Batch F11）：新增 24 条 `forbidden` 别名，覆盖率提升至 `879/925 = 95.03%`（达到 `>=95%` 目标）。
+- 清理 `terms/registry/evidence.tsv` 中 4 条 `internal:TODO` 占位符，全部替换为可追溯 URL 来源。
+- 本地输入法同步：重建 `domain_terms.txt` 并导入 Rime（`1676` 条），生成可回滚备份 `artifacts/rime_backups/20260323-222157/`。
 
 
 ### Fixed
