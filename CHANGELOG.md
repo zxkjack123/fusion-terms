@@ -23,6 +23,15 @@
 
 ### Fixed
 
+## v2026.03.23.4
+
+### Added
+
+- **Batch F10：forbidden 覆盖补充**
+  - +49 forbidden/deprecated aliases for 30 concepts (10 concept, 4 device, 4 method, 1 material, 3 system, 2 metric, 1 diagnostic, 5 code)
+  - Forbidden coverage: 825 → 855 / 925 concepts (89% → 92%)
+  - Registry: 925 concepts, 4396 aliases, 925 evidence
+
 ## v2026.03.23.3
 
 ### Added
