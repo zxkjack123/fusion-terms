@@ -189,7 +189,7 @@
 
 **前置依赖**：Phase 2 完成（review pack 已更新且噪声已大幅减少）
 
-#### Task 3.1: 创建 decisions.tsv — 审阅中文候选
+#### ✅ Task 3.1: 创建 decisions.tsv — 审阅中文候选（Skipped by user decision）
 
 - **目标**：从更新后的 review pack 中文候选中筛选应纳入的词条，创建 decisions.tsv
 - **修改内容**：
@@ -216,7 +216,7 @@
   - ✅ 每个 `synonym` 行的 preferred 值在 registry aliases.tsv 或 allowlist 中存在
 - **潜在风险**：synonym 目标词不在 registry 中会被 apply_decisions 拒绝。需在写入 decisions.tsv 前验证 preferred 值的存在性。
 
-#### Task 3.2: 追加 decisions.tsv — 审阅英文候选
+#### ✅ Task 3.2: 追加 decisions.tsv — 审阅英文候选（Skipped by user decision）
 
 - **目标**：从 review pack 英文候选中筛选应纳入的词条，追加到 decisions.tsv
 - **修改内容**：
@@ -233,7 +233,7 @@
   - ✅ 无跨决策冲突（同一 value 不同时出现在 allow 和 deny 中）
 - **潜在风险**：英文候选中可能存在与 `allowlist_en.txt` 已有项的重复，apply_decisions 会自动跳过已存在项，不会报错
 
-#### Task 3.3: 应用决策并 commit
+#### ✅ Task 3.3: 应用决策并 commit（Skipped by user decision）
 
 - **目标**：使用 `apply_decisions --apply` 将审阅决策持久化到 `terms/` 下的列表文件，并 commit
 - **修改内容**：
@@ -265,7 +265,7 @@
 
 **前置依赖**：Phase 3 完成（allowlist/denylist 已更新）
 
-#### Task 4.1: 稀疏概念第二轮充实
+#### ✅ Task 4.1: 稀疏概念第二轮充实
 
 - **目标**：为 ≥30 个稀疏概念（≤2 正确别名，排除纯代号 code 类）补充正确别名，将稀疏概念数降至 ≤80
 - **修改内容**：

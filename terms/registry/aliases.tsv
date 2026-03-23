@@ -5093,3 +5093,44 @@ F82H steel	f82h	en	alias
 flux loop	magnetic-flux-loop	en	alias	
 COMSOL Multiphysics	comsol	en	alias	full product name
 JET Integrated Transport Code	jintrac	en	alias	full name
+# ==== batch 55: sparse concept enrichment ====
+致动器	actuator	zh	alias	variant
+电流空穴	current-hole	zh	alias	variant
+功率沉积剖面	power-deposition-profile	zh	alias	variant
+表面粗化	surface-roughening	zh	alias	variant
+泰勒弛豫	taylor-relaxation	zh	alias	transliteration variant
+泰勒态	taylor-state	zh	alias	transliteration variant
+贝叶斯推理	bayesian-inference	zh	alias	variant
+替代模型	surrogate-model	zh	alias	variant
+退役成本	decommissioning-cost	zh	alias	variant
+学习速率	learning-rate	zh	alias	variant
+散热器	heat-sink	zh	alias	variant
+ARC tokamak	arc	en	alias	device form
+ARC device	arc	en	alias	device form
+DIII D	diii-d	en	alias	space variant
+DONES facility	dones	en	alias	facility form
+EAST tokamak	east	en	alias	device form
+EXL 50	exl-50	en	alias	space variant
+EXL 50U	exl-50u	en	alias	space variant
+HELIAS stellarator	helias	en	alias	device form
+HL 2A	hl-2a	en	alias	space variant
+HL 2M	hl-2m	en	alias	space variant
+ICRF launcher	icrf-antenna	en	alias	launcher variant
+JET tokamak	jet	en	alias	device form
+JT 60SA	jt-60sa	en	alias	space variant
+速调器	klystron	zh	alias	zh variant
+KMAX device	kmax	en	alias	device form
+KSTAR tokamak	kstar	en	alias	device form
+MAST U	mast-u	en	alias	space variant
+NSTX U	nstx-u	en	alias	space variant
+Pd membrane reactor	palladium-membrane-reactor	en	alias	abbr variant
+REXIE device	rexie	en	alias	device form
+RFX mod	rfx-mod	en	alias	space variant
+SPARC tokamak	sparc	en	alias	device form
+紧凑环形体	spheromak	zh	alias	zh variant
+SSPX device	sspx	en	alias	device form
+stellarator device	stellarator	en	alias	device form
+STEP tokamak	step	en	alias	device form
+HB11	hb11-energy	en	alias	short name
+Helion	helion-energy	en	alias	short name
+LPPF	lpp-fusion	en	alias	acronym
