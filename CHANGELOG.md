@@ -23,6 +23,17 @@
 
 ### Fixed
 
+## v2026.03.23.3
+
+### Added
+
+- **Batch 53 P2：新增概念 + 别名充实 + Forbidden aliases**
+  - 新增 4 概念：occupational dose, mean free path, cyclotron frequency, magnetic pressure
+  - 新增 32 条正确别名（含 3 个已有概念充实：decay-heat +afterheat/residual heat, plasma-equilibrium +MHD equilibrium, availability +plant availability）
+  - 识别并合并 30 个与现有概念重复的 P2 候选（34 候选中仅 4 真正缺失）
+  - 新增 15 条错误形式别名（13 forbidden + 2 deprecated），覆盖全部 4 个新概念
+  - Registry：925 concepts, 4347 aliases, 925 evidence
+
 ## v2026.03.23.2
 
 ### Added

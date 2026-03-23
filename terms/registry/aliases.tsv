@@ -4953,3 +4953,54 @@ plasma material interaction	plasma-surface-interaction	en	alias	material form en
 脆性化	embrittlement	zh	forbidden	误译embrittlement(脆化≠脆性化)：正确为 脆化
 变脆	embrittlement	zh	forbidden	误译embrittlement(脆化≠变脆)：正确为 脆化
 脆裂	embrittlement	zh	forbidden	误译(脆化≠脆裂)：正确为 脆化
+# ==== Batch 53 P2: Safety / licensing ====
+occupational dose	occupational-dose	en	preferred	
+职业剂量	occupational-dose	zh	preferred	preferred zh
+occupational radiation dose	occupational-dose	en	alias	expanded form
+职业照射剂量	occupational-dose	zh	alias	照射 form
+个人剂量	occupational-dose	zh	alias	personal dose zh
+# ==== Batch 53 P2: General plasma physics ====
+mean free path	mean-free-path	en	preferred	
+平均自由程	mean-free-path	zh	preferred	preferred zh
+MFP	mean-free-path	abbr	alias	common abbreviation
+collision mean free path	mean-free-path	en	alias	collision context
+碰撞平均自由程	mean-free-path	zh	alias	collision zh
+cyclotron frequency	cyclotron-frequency	en	preferred	
+回旋频率	cyclotron-frequency	zh	preferred	preferred zh
+gyrofrequency	cyclotron-frequency	en	alias	one-word form
+Larmor frequency	cyclotron-frequency	en	alias	Larmor synonym
+ion cyclotron frequency	cyclotron-frequency	en	alias	ion species
+electron cyclotron frequency	cyclotron-frequency	en	alias	electron species
+离子回旋频率	cyclotron-frequency	zh	alias	ion species zh
+电子回旋频率	cyclotron-frequency	zh	alias	electron species zh
+拉莫尔频率	cyclotron-frequency	zh	alias	Larmor zh
+magnetic pressure	magnetic-pressure	en	preferred	
+磁压	magnetic-pressure	zh	preferred	preferred zh
+magnetic stress	magnetic-pressure	en	alias	stress form
+磁压力	magnetic-pressure	zh	alias	expanded zh
+磁场压力	magnetic-pressure	zh	alias	field-context zh
+# ==== Batch 53 P2: Enrichment aliases for existing concepts ====
+afterheat	decay-heat	en	alias	synonym (residual heat after shutdown)
+residual heat	decay-heat	en	alias	generic synonym
+残余发热	decay-heat	zh	alias	residual form
+MHD equilibrium reconstruction	plasma-equilibrium	en	alias	reconstruction context
+磁流体平衡	plasma-equilibrium	zh	alias	MHD zh form
+plant availability	availability	en	alias	plant context
+装置可用率	availability	zh	alias	device zh form
+电站可用率	availability	zh	alias	power-plant zh form
+# ==== Batch 53F: Forbidden — P2 concepts ====
+职业辐射	occupational-dose	zh	forbidden	误译dose(剂量≠辐射)：正确为 职业剂量
+工作剂量	occupational-dose	zh	forbidden	误译occupational(职业≠工作)：正确为 职业剂量
+职业暴露量	occupational-dose	zh	forbidden	误译dose(剂量≠暴露量)：正确为 职业剂量
+平均自由路径	mean-free-path	zh	forbidden	误译path(程≠路径)：正确为 平均自由程
+平均自由行程	mean-free-path	zh	deprecated	非标准：应为 平均自由程
+平均自由道路	mean-free-path	zh	forbidden	误译path(程≠道路)：正确为 平均自由程
+均自由程	mean-free-path	zh	forbidden	缺'平'字：正确为 平均自由程
+旋转频率	cyclotron-frequency	zh	forbidden	误译cyclotron(回旋≠旋转)：正确为 回旋频率
+回转频率	cyclotron-frequency	zh	forbidden	误译cyclotron(回旋≠回转)：正确为 回旋频率
+加速器频率	cyclotron-frequency	zh	forbidden	误译cyclotron(回旋≠加速器)：正确为 回旋频率
+拉莫频率	cyclotron-frequency	zh	forbidden	误音译Larmor(拉莫尔≠拉莫)：正确为 拉莫尔频率
+回旋频	cyclotron-frequency	zh	deprecated	缺'率'字：应为 回旋频率
+磁力压力	magnetic-pressure	zh	forbidden	误译magnetic(磁≠磁力)：正确为 磁压
+磁性压力	magnetic-pressure	zh	forbidden	误译magnetic(磁≠磁性)：正确为 磁压
+磁场压强	magnetic-pressure	zh	forbidden	误译pressure(压≠压强)：正确为 磁压

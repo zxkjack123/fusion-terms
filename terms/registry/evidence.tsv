@@ -983,3 +983,8 @@ faraday-rotation	internal:diagnostics:faraday-rotation			2026-03-23
 material-migration	internal:pmi:material-migration			2026-03-23
 radiation-damage	internal:pmi:radiation-damage			2026-03-23
 embrittlement	internal:pmi:embrittlement			2026-03-23
+# ==== Batch 53 P2 ====
+occupational-dose	internal:safety:occupational-dose			2026-03-23
+mean-free-path	https://en.wikipedia.org/wiki/Mean_free_path			2026-03-23
+cyclotron-frequency	https://en.wikipedia.org/wiki/Cyclotron_resonance			2026-03-23
+magnetic-pressure	https://en.wikipedia.org/wiki/Magnetic_pressure			2026-03-23

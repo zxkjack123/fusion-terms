@@ -1044,3 +1044,9 @@ faraday-rotation	concept	法拉第旋转	Faraday rotation		active	Rotation of po
 material-migration	concept	材料迁移	material migration		active	Net erosion-transport-redeposition of wall material inside the vessel
 radiation-damage	concept	辐照损伤	radiation damage		active	Lattice defects and property degradation from neutron/ion irradiation
 embrittlement	concept	脆化	embrittlement		active	Loss of ductility in structural materials (irradiation, helium, hydrogen)
+# ==== Batch 53 P2: Safety / licensing ====
+occupational-dose	metric	职业剂量	occupational dose		active	Radiation dose received by workers in a fusion facility
+# ==== Batch 53 P2: General plasma physics ====
+mean-free-path	metric	平均自由程	mean free path		active	Average distance a particle travels between collisions
+cyclotron-frequency	metric	回旋频率	cyclotron frequency		active	Angular frequency of charged particle gyration around magnetic field line
+magnetic-pressure	concept	磁压	magnetic pressure		active	Pressure exerted by magnetic field, B²/(2μ₀)
