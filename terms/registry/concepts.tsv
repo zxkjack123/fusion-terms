@@ -1033,3 +1033,14 @@ tritium-processing	concept	氚处理	tritium processing		active	Purification, is
 palladium-membrane	material	钯膜	palladium membrane		active	Pd-based selective membrane for hydrogen isotope permeation/separation
 getter-bed	system	吸气剂床	getter bed		active	Metal getter (U, Zr-alloy) bed for reversible tritium storage
 glovebox	system	手套箱	glovebox		active	Sealed enclosure with inert atmosphere for tritium handling
+# ==== Batch 52 P1: Heating / current drive ====
+helicon-wave	concept	螺旋波	helicon wave		active	Bounded whistler wave used for plasma heating and current drive
+wave-plasma-interaction	concept	波等离子体相互作用	wave-plasma interaction		active	Coupling and energy transfer between electromagnetic waves and plasma
+# ==== Batch 52 P1: Diagnostics ====
+hard-x-ray	diagnostic	硬X射线	hard X-ray	HXR	active	High-energy X-ray diagnostic for runaway electrons and fast ions
+magnetic-probe	diagnostic	磁探针	magnetic probe		active	Inductive sensor for local magnetic field fluctuation measurement
+faraday-rotation	concept	法拉第旋转	Faraday rotation		active	Rotation of polarization plane by magnetized plasma, used in polarimetry
+# ==== Batch 52 P1: Materials / PMI ====
+material-migration	concept	材料迁移	material migration		active	Net erosion-transport-redeposition of wall material inside the vessel
+radiation-damage	concept	辐照损伤	radiation damage		active	Lattice defects and property degradation from neutron/ion irradiation
+embrittlement	concept	脆化	embrittlement		active	Loss of ductility in structural materials (irradiation, helium, hydrogen)

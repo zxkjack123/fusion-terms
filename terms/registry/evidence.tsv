@@ -974,3 +974,12 @@ tritium-processing	internal:fuel-cycle:tritium-processing			2026-03-23
 palladium-membrane	internal:fuel-cycle:palladium-membrane			2026-03-23
 getter-bed	internal:fuel-cycle:getter-bed			2026-03-23
 glovebox	internal:fuel-cycle:glovebox			2026-03-23
+# ==== Batch 52 P1 ====
+helicon-wave	internal:heating:helicon-wave			2026-03-23
+wave-plasma-interaction	internal:heating:wave-plasma-interaction			2026-03-23
+hard-x-ray	internal:diagnostics:hard-x-ray			2026-03-23
+magnetic-probe	internal:diagnostics:magnetic-probe			2026-03-23
+faraday-rotation	internal:diagnostics:faraday-rotation			2026-03-23
+material-migration	internal:pmi:material-migration			2026-03-23
+radiation-damage	internal:pmi:radiation-damage			2026-03-23
+embrittlement	internal:pmi:embrittlement			2026-03-23

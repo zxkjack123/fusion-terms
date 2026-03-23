@@ -23,6 +23,20 @@
 
 ### Fixed
 
+## v2026.03.23.2
+
+### Added
+
+- **Batch 52 P1：新增概念 + 别名充实 + Forbidden aliases**
+  - 新增 8 概念覆盖 3 个子领域：
+    - 加热/电流驱动（2）：helicon wave, wave-plasma interaction
+    - 诊断（3）：hard X-ray, magnetic probe, Faraday rotation
+    - 材料/PMI（3）：material migration, radiation damage, embrittlement
+  - 新增 52 条正确别名（含 5 个已有概念充实：interferometry, reflectometry, far-infrared-polarimetry, plasma-control, plasma-surface-interaction）
+  - 识别并合并 33 个与现有概念重复的 P1 候选
+  - 新增 31 条错误形式别名（29 forbidden + 2 deprecated），覆盖全部 8 个新概念
+  - Registry：921 concepts, 4300 aliases, 921 evidence
+
 ## v2026.03.23.1
 
 ### Added

@@ -4863,3 +4863,93 @@ target plate	divertor-target	en	alias	short form
 捕集器床	getter-bed	zh	forbidden	误译getter(吸气剂≠捕集器)：正确为 吸气剂床
 手套盒	glovebox	zh	forbidden	误译box(箱≠盒)：正确为 手套箱
 手套柜	glovebox	zh	forbidden	误译glovebox(手套箱≠手套柜)：正确为 手套箱
+# ==== Batch 52 P1: Heating / current drive ====
+helicon wave	helicon-wave	en	preferred	
+螺旋波	helicon-wave	zh	preferred	preferred zh
+helicon	helicon-wave	en	alias	short form
+helicon-wave	helicon-wave	en	alias	hyphenated form
+螺旋波加热	helicon-wave	zh	alias	heating context
+helicon wave heating	helicon-wave	en	alias	heating context
+wave-plasma interaction	wave-plasma-interaction	en	preferred	
+波等离子体相互作用	wave-plasma-interaction	zh	preferred	preferred zh
+wave-plasma coupling	wave-plasma-interaction	en	alias	coupling form
+wave plasma interaction	wave-plasma-interaction	en	alias	no-hyphen form
+波与等离子体相互作用	wave-plasma-interaction	zh	alias	expanded zh
+# ==== Batch 52 P1: Diagnostics ====
+hard X-ray	hard-x-ray	en	preferred	
+硬X射线	hard-x-ray	zh	preferred	preferred zh
+HXR	hard-x-ray	abbr	preferred	canonical abbr
+hard x-ray diagnostic	hard-x-ray	en	alias	diagnostic form
+hard X-ray emission	hard-x-ray	en	alias	emission form
+硬X射线诊断	hard-x-ray	zh	alias	diagnostic zh
+magnetic probe	magnetic-probe	en	preferred	
+磁探针	magnetic-probe	zh	preferred	preferred zh
+magnetic pickup coil	magnetic-probe	en	alias	coil form
+B-dot probe	magnetic-probe	en	alias	Bdot variant
+磁感应探针	magnetic-probe	zh	alias	inductive form
+Faraday rotation	faraday-rotation	en	preferred	
+法拉第旋转	faraday-rotation	zh	preferred	preferred zh
+Faraday effect	faraday-rotation	en	alias	effect form
+法拉第效应	faraday-rotation	zh	alias	effect zh form
+# ==== Batch 52 P1: Materials / PMI ====
+material migration	material-migration	en	preferred	
+材料迁移	material-migration	zh	preferred	preferred zh
+wall material migration	material-migration	en	alias	wall context
+材料输运	material-migration	zh	alias	transport perspective
+壁材料迁移	material-migration	zh	alias	wall context zh
+radiation damage	radiation-damage	en	preferred	
+辐照损伤	radiation-damage	zh	preferred	preferred zh
+neutron damage	radiation-damage	en	alias	neutron-specific
+辐射损伤	radiation-damage	zh	alias	variant zh (辐射 vs 辐照)
+辐照缺陷	radiation-damage	zh	alias	defect perspective
+embrittlement	embrittlement	en	preferred	
+脆化	embrittlement	zh	preferred	preferred zh
+material embrittlement	embrittlement	en	alias	material context
+# ==== Batch 52 P1: Enrichment aliases for existing concepts ====
+interferometer	interferometry	en	alias	instrument form
+plasma interferometer	interferometry	en	alias	plasma context
+laser interferometer	interferometry	en	alias	laser form
+激光干涉仪	interferometry	zh	alias	laser zh
+reflectometer	reflectometry	en	alias	instrument form
+microwave reflectometer	reflectometry	en	alias	microwave form
+plasma reflectometry	reflectometry	en	alias	plasma context
+polarimetry	far-infrared-polarimetry	en	alias	generic polarimetry
+偏振测量	far-infrared-polarimetry	zh	alias	measurement form
+plasma control system	plasma-control	en	alias	system form
+等离子体控制系统	plasma-control	zh	alias	system zh form
+等离子体材料相互作用	plasma-surface-interaction	zh	alias	material form zh
+plasma material interaction	plasma-surface-interaction	en	alias	material form en
+# ==== Batch 52F: Forbidden — Heating / current drive ====
+氦康波	helicon-wave	zh	forbidden	误音译helicon：正确为 螺旋波
+赫利肯波	helicon-wave	zh	forbidden	误音译helicon：正确为 螺旋波
+螺线波	helicon-wave	zh	forbidden	误译helicon(螺旋≠螺线)：正确为 螺旋波
+螺旋形波	helicon-wave	zh	forbidden	误译：正确为 螺旋波
+波等离子体交互作用	wave-plasma-interaction	zh	forbidden	误译interaction(相互作用≠交互作用)：正确为 波等离子体相互作用
+波等离子交互	wave-plasma-interaction	zh	forbidden	双误(缺'体'+交互)：正确为 波等离子体相互作用
+波浪等离子体相互作用	wave-plasma-interaction	zh	forbidden	误译wave(波≠波浪)：正确为 波等离子体相互作用
+波等离子体互动	wave-plasma-interaction	zh	forbidden	误译interaction(相互作用≠互动)：正确为 波等离子体相互作用
+# ==== Batch 52F: Forbidden — Diagnostics ====
+硬X光	hard-x-ray	zh	forbidden	误译X-ray(X射线≠X光)：正确为 硬X射线
+硬X光线	hard-x-ray	zh	forbidden	误译X-ray：正确为 硬X射线
+硬X线	hard-x-ray	zh	deprecated	省略'射'字：应为 硬X射线
+强X射线	hard-x-ray	zh	forbidden	误译hard(硬≠强)：正确为 硬X射线
+磁力探针	magnetic-probe	zh	forbidden	误译magnetic(磁≠磁力)：正确为 磁探针
+磁性探针	magnetic-probe	zh	forbidden	误译magnetic(磁≠磁性)：正确为 磁探针
+磁场探头	magnetic-probe	zh	forbidden	误译probe(探针≠探头)：正确为 磁探针
+磁探头	magnetic-probe	zh	forbidden	误译probe(探针≠探头)：正确为 磁探针
+法拉弟旋转	faraday-rotation	zh	forbidden	误音译Faraday(法拉第≠法拉弟)：正确为 法拉第旋转
+法拉第转动	faraday-rotation	zh	forbidden	误译rotation(旋转≠转动)：正确为 法拉第旋转
+法拉第偏转	faraday-rotation	zh	forbidden	误译rotation(旋转≠偏转)：正确为 法拉第旋转
+法拉第回转	faraday-rotation	zh	forbidden	误译rotation(旋转≠回转)：正确为 法拉第旋转
+# ==== Batch 52F: Forbidden — Materials / PMI ====
+材料移动	material-migration	zh	forbidden	误译migration(迁移≠移动)：正确为 材料迁移
+材料转移	material-migration	zh	forbidden	误译migration(迁移≠转移)：正确为 材料迁移
+材料移行	material-migration	zh	forbidden	误译migration(迁移≠移行)：正确为 材料迁移
+物质迁移	material-migration	zh	forbidden	误译material(材料≠物质)：正确为 材料迁移
+辐射伤害	radiation-damage	zh	forbidden	误译damage(损伤≠伤害)：正确为 辐照损伤
+辐射损害	radiation-damage	zh	forbidden	误译damage(损伤≠损害)：正确为 辐照损伤
+放射损伤	radiation-damage	zh	forbidden	误译radiation(辐照≠放射)：正确为 辐照损伤
+射线损伤	radiation-damage	zh	deprecated	非标准：应为 辐照损伤
+脆性化	embrittlement	zh	forbidden	误译embrittlement(脆化≠脆性化)：正确为 脆化
+变脆	embrittlement	zh	forbidden	误译embrittlement(脆化≠变脆)：正确为 脆化
+脆裂	embrittlement	zh	forbidden	误译(脆化≠脆裂)：正确为 脆化
