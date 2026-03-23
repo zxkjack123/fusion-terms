@@ -5159,3 +5159,97 @@ LPPF	lpp-fusion	en	alias	acronym
 GA代码	gacode	zh	forbidden	literal expansion of suite token
 T陀螺	tgyro	zh	forbidden	letter-by-letter mistranslation
 C陀螺	cgyro	zh	forbidden	letter-by-letter mistranslation
+# ==== Batch 54: Dify KB mining ====
+hands-on recycling	hands-on-recycling	en	preferred	
+HOR	hands-on-recycling	abbr	alias	
+hand-on recycling material	hands-on-recycling	en	alias	SEAFP terminology
+可徒手回收材料	hands-on-recycling	zh	preferred	
+remote-handling recycling	remote-handling-recycling	en	preferred	
+remote handling recycling	remote-handling-recycling	en	alias	
+远程操控回收	remote-handling-recycling	zh	preferred	
+permanent disposal waste	permanent-disposal-waste	en	preferred	
+PDW	permanent-disposal-waste	abbr	alias	
+永久处置废物	permanent-disposal-waste	zh	preferred	
+waste form	waste-form	en	preferred	
+废物体	waste-form	zh	preferred	
+waste package	waste-package	en	preferred	
+废物包	waste-package	zh	preferred	
+废物货包	waste-package	zh	alias	older GB terminology
+near-surface disposal	near-surface-disposal	en	preferred	
+near surface disposal	near-surface-disposal	en	alias	
+近地表处置	near-surface-disposal	zh	preferred	
+geological disposal	geological-disposal	en	preferred	
+deep geological disposal	geological-disposal	en	alias	
+地质处置	geological-disposal	zh	preferred	
+深地质处置	geological-disposal	zh	alias	
+nuclide inventory	nuclide-inventory	en	preferred	
+核素产额	nuclide-inventory	zh	preferred	
+核素清单	nuclide-inventory	zh	alias	
+decay gamma source	decay-gamma-source	en	preferred	
+decay photon source	decay-gamma-source	en	alias	
+衰变光子源	decay-gamma-source	zh	preferred	
+衰变γ源	decay-gamma-source	zh	alias	
+rigorous two-step method	rigorous-two-step	en	preferred	
+R2S method	rigorous-two-step	en	alias	
+rigorous 2-step	rigorous-two-step	en	alias	
+严格两步法	rigorous-two-step	zh	preferred	
+Direct One-Step method	d1s	en	alias	
+direct 1-step method	d1s	en	alias	
+直接一步法	d1s	zh	preferred	
+RAMI	rami	en	preferred	
+RAMI分析	rami	zh	preferred	
+reliability availability maintainability inspectability	rami	en	alias	full expansion
+pebble bed	pebble-bed	en	preferred	
+球床	pebble-bed	zh	preferred	
+mixed pebble bed	mixed-pebble-bed	en	preferred	
+混合球床	mixed-pebble-bed	zh	preferred	
+tritium release	tritium-release	en	preferred	
+氚释放	tritium-release	zh	preferred	
+permeation barrier	tritium-permeation-barrier	en	alias	
+anti-permeation barrier	tritium-permeation-barrier	en	alias	
+防渗透阻挡层	tritium-permeation-barrier	zh	alias	
+阻氚涂层	tritium-permeation-barrier	zh	alias	
+防氚渗透涂层	tritium-permeation-barrier	zh	alias	
+hydrogen permeation	permeation	en	alias	general hydrogen case
+permeation reduction factor	permeation-reduction-factor	en	preferred	
+PRF	permeation-reduction-factor	abbr	preferred	
+渗透降低因子	permeation-reduction-factor	zh	preferred	
+渗透抑制因子	permeation-reduction-factor	zh	alias	
+alumina coating	alumina-coating	en	preferred	
+Al₂O₃ coating	alumina-coating	en	alias	
+氧化铝涂层	alumina-coating	zh	preferred	
+erbium oxide	erbium-oxide	en	preferred	
+Er₂O₃	erbium-oxide	abbr	alias	
+氧化铒	erbium-oxide	zh	preferred	
+EUROFER-97	eurofer	en	alias	hyphenated version
+Eurofer-97	eurofer	en	alias	mixed case variant
+EUROFER-97钢	eurofer	zh	alias	steel qualifier
+DBTT shift	dbtt-shift	en	preferred	
+ductile-to-brittle transition temperature shift	dbtt-shift	en	alias	
+ΔDBTT	dbtt-shift	en	alias	delta notation
+韧脆转变温度偏移	dbtt-shift	zh	preferred	
+boron powder injection	boron-powder-injection	en	preferred	
+BPI	boron-powder-injection	abbr	alias	
+B powder injection	boron-powder-injection	en	alias	
+硼粉注入	boron-powder-injection	zh	preferred	
+nitrogen seeding	nitrogen-seeding	en	preferred	
+nitrogen impurity seeding	nitrogen-seeding	en	alias	
+氮注入	nitrogen-seeding	zh	preferred	
+氮杂质注入	nitrogen-seeding	zh	alias	
+radio-frequency heating	radio-frequency-heating	en	preferred	
+RF heating	radio-frequency-heating	en	alias	
+射频加热	radio-frequency-heating	zh	preferred	
+Hartmann number	hartmann-number	en	preferred	
+Ha	hartmann-number	abbr	preferred	
+哈特曼数	hartmann-number	zh	preferred	
+MHD pressure drop	mhd-pressure-drop	en	preferred	
+magnetohydrodynamic pressure drop	mhd-pressure-drop	en	alias	
+MHD压降	mhd-pressure-drop	zh	preferred	
+磁流体动力学压降	mhd-pressure-drop	zh	alias	
+flow channel insert	flow-channel-insert	en	preferred	
+FCI	flow-channel-insert	abbr	preferred	
+流道插件	flow-channel-insert	zh	preferred	
+irradiation hardening	radiation-hardening	en	alias	synonym used in fusion materials literature
+Li₂TiO₃	lithium-titanate	en	alias	chemical formula with subscripts
+Li₄SiO₄	lithium-orthosilicate	en	alias	chemical formula with subscripts
+实验包层模块	tbm	zh	alias	full Chinese name

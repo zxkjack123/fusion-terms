@@ -1050,3 +1050,28 @@ occupational-dose	metric	职业剂量	occupational dose		active	Radiation dose r
 mean-free-path	metric	平均自由程	mean free path		active	Average distance a particle travels between collisions
 cyclotron-frequency	metric	回旋频率	cyclotron frequency		active	Angular frequency of charged particle gyration around magnetic field line
 magnetic-pressure	concept	磁压	magnetic pressure		active	Pressure exerted by magnetic field, B²/(2μ₀)
+# ==== Batch 54: Dify KB mining — radwaste, breeder, permeation, MHD, SDR ====
+hands-on-recycling	concept	可徒手回收材料	hands-on recycling	HOR	active	Material recyclable with hands-on contact (dose <10 μSv/h) per SEAFP
+remote-handling-recycling	concept	远程操控回收	remote-handling recycling		active	Recycling requiring remote handling equipment
+permanent-disposal-waste	concept	永久处置废物	permanent disposal waste	PDW	active	Activated material not recyclable, requiring geological disposal
+waste-form	concept	废物体	waste form		active	Solidified radioactive waste matrix suitable for disposal
+waste-package	concept	废物包	waste package		active	Waste form plus container, as accepted at disposal facility
+near-surface-disposal	concept	近地表处置	near-surface disposal		active	Disposal of LILW in engineered facilities at ≤30 m depth
+geological-disposal	concept	地质处置	geological disposal		active	Deep underground disposal of HLW in geological repository
+nuclide-inventory	concept	核素产额	nuclide inventory		active	Radioisotope composition and activity of activated materials
+decay-gamma-source	concept	衰变光子源	decay gamma source		active	Photon source from radioactive decay of activated materials
+rigorous-two-step	method	严格两步法	rigorous two-step method		active	Coupled MCNP+FISPACT method for shutdown dose rate calculation
+rami	concept	RAMI分析	RAMI		active	Reliability, Availability, Maintainability and Inspectability analysis
+pebble-bed	concept	球床	pebble bed		active	Packed bed of ceramic breeder or multiplier pebbles in solid breeder blanket
+mixed-pebble-bed	concept	混合球床	mixed pebble bed		active	Binary pebble bed mixing breeder and multiplier materials
+tritium-release	concept	氚释放	tritium release		active	Release of bred tritium from ceramic breeder pebbles
+permeation-reduction-factor	metric	渗透降低因子	permeation reduction factor	PRF	active	Ratio of uncoated to coated permeation flux, figure of merit for barriers
+alumina-coating	material	氧化铝涂层	alumina coating		active	Al₂O₃ coating used as tritium permeation barrier
+erbium-oxide	material	氧化铒	erbium oxide	Er₂O₃	active	Er₂O₃ coating, alternative tritium permeation barrier material
+dbtt-shift	metric	韧脆转变温度偏移	DBTT shift		active	Increase in ductile-to-brittle transition temperature due to irradiation
+boron-powder-injection	concept	硼粉注入	boron powder injection	BPI	active	In-situ wall conditioning by injecting boron powder into plasma
+nitrogen-seeding	concept	氮注入	nitrogen seeding		active	Deliberate injection of nitrogen to enhance divertor radiation and reduce heat load
+radio-frequency-heating	concept	射频加热	radio-frequency heating	RF heating	active	Plasma heating using electromagnetic waves (ICRH, ECRH, LHCD)
+hartmann-number	metric	哈特曼数	Hartmann number	Ha	active	Ratio of electromagnetic to viscous forces in liquid metal MHD flow
+mhd-pressure-drop	concept	MHD压降	MHD pressure drop		active	Pressure loss due to Lorentz force on liquid metal flow in magnetic field
+flow-channel-insert	concept	流道插件	flow channel insert	FCI	active	SiC/SiC insert decoupling liquid metal from conducting walls in DCLL blanket
