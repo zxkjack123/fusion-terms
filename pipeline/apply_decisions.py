@@ -328,7 +328,7 @@ def main() -> None:
         raise SystemExit(f"decisions apply failed: terms dir does not exist: {terms_dir}")
 
     # Ensure artifacts dir exists if user wants to keep decisions there.
-    ensure_dir(Path("artifacts"))
+    ensure_dir(Path(__file__).resolve().parent.parent / "artifacts")
 
     summary = apply_decisions(terms_dir=terms_dir, decisions_path=decisions_path, apply=bool(args.apply))
 

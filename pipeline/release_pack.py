@@ -26,6 +26,7 @@ def _run_module(module: str, args: list[str]) -> None:
         check=False,
         capture_output=True,
         text=True,
+        timeout=300,
     )
     if proc.returncode == 0:
         return

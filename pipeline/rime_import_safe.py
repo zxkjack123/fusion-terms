@@ -78,7 +78,13 @@ def _run_importer_v2(
             cmd.append("--no-restart-fcitx")
         cmd.append("--import")
 
-    return subprocess.run(cmd, check=False, capture_output=True, text=True)
+    return subprocess.run(
+        cmd,
+        check=False,
+        capture_output=True,
+        text=True,
+        timeout=120,
+    )
 
 
 def _copy_any(src: Path, dst: Path) -> None:

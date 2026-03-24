@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import warnings
 from pathlib import Path
 
 
@@ -138,12 +139,20 @@ def _iter_alias_rows(aliases_path: Path) -> list[dict[str, str]]:
             f"export_registry failed: aliases TSV is not valid UTF-8: {aliases_path} ({e})"
         )
 
-    for line in lines:
+    for lineno, line in enumerate(lines, start=1):
         if not line.strip() or line.lstrip().startswith("#"):
             continue
         parts = [c.strip() for c in line.split("\t")]
         # alias, concept_id, lang, kind, comment(optional)
         if len(parts) < 4:
+            warnings.warn(
+                (
+                    "export_registry: skipping short alias row at "
+                    f"{aliases_path}:{lineno}: {line!r}"
+                ),
+                RuntimeWarning,
+                stacklevel=2,
+            )
             continue
         rows.append(
             {
@@ -166,12 +175,20 @@ def _iter_concept_rows(concepts_path: Path) -> list[dict[str, str]]:
             f"export_registry failed: concepts TSV is not valid UTF-8: {concepts_path} ({e})"
         )
 
-    for line in lines:
+    for lineno, line in enumerate(lines, start=1):
         if not line.strip() or line.lstrip().startswith("#"):
             continue
         parts = [c.strip() for c in line.split("\t")]
         # concept_id, category, preferred_zh, preferred_en, preferred_abbr, status, notes
         if len(parts) < 2:
+            warnings.warn(
+                (
+                    "export_registry: skipping short concept row at "
+                    f"{concepts_path}:{lineno}: {line!r}"
+                ),
+                RuntimeWarning,
+                stacklevel=2,
+            )
             continue
         rows.append(
             {

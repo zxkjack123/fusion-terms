@@ -1,11 +1,9 @@
 from __future__ import annotations
 
-import hashlib
 import fnmatch
 import os
 import re
 import warnings
-from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterator
 
@@ -35,16 +33,6 @@ MATH_FENCE_BRACKET_OPEN_RE = re.compile(r"^\s*\\\[\s*$")
 MATH_FENCE_BRACKET_CLOSE_RE = re.compile(r"^\s*\\\]\s*$")
 INLINE_MATH_RE = re.compile(r"\$[^$]+\$")
 WORDLIKE_RE = re.compile(r"[A-Za-z0-9\u4e00-\u9fff]")
-
-
-@dataclass(frozen=True)
-class Example:
-    text: str
-    file: str
-
-
-def sha1_text(text: str) -> str:
-    return hashlib.sha1(text.encode("utf-8")).hexdigest()
 
 
 def iter_markdown_files(
@@ -191,6 +179,11 @@ def read_text_file(path: Path, max_bytes: int = 10_000_000) -> str:
     with path.open("rb") as f:
         data = f.read(max_bytes + 1)
     if len(data) > max_bytes:
+        warnings.warn(
+            f"file truncated at {max_bytes} bytes: {path}",
+            RuntimeWarning,
+            stacklevel=2,
+        )
         data = data[:max_bytes]
 
     # Prefer strict decoding so we do not silently drop bytes.

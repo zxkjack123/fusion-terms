@@ -142,6 +142,7 @@ def validate_registry(terms_dir: Path) -> None:
         alias_to_concept.setdefault(alias, concept_id)
 
     # ---- evidence.tsv ----
+    evidence_concept_ids: set[str] = set()
     for r in evidence_rows:
         if len(r.fields) < 2:
             _fail(r.path, r.lineno, "expected at least 2 columns: concept_id, source")
@@ -156,6 +157,17 @@ def validate_registry(terms_dir: Path) -> None:
             _fail(r.path, r.lineno, f"unknown concept_id {concept_id!r}")
         if not source:
             _fail(r.path, r.lineno, "source is empty")
+        evidence_concept_ids.add(concept_id)
+
+    missing_evidence = sorted(concept_ids - evidence_concept_ids)
+    if missing_evidence:
+        preview = ", ".join(repr(x) for x in missing_evidence[:10])
+        more = "" if len(missing_evidence) <= 10 else f" ... (+{len(missing_evidence) - 10} more)"
+        _fail(
+            evidence_path,
+            0,
+            f"concepts without evidence rows: {preview}{more}",
+        )
 
     # ---- bridge check: forbidden/deprecated shouldn't leak into IME allowlists ----
     allow_zh = load_simple_list(terms_dir / "allowlist_zh.txt")

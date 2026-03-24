@@ -33,7 +33,13 @@ def _run_importer(
         "--output",
         str(output_path),
     ]
-    return subprocess.run(cmd, check=False, capture_output=True, text=True)
+    return subprocess.run(
+        cmd,
+        check=False,
+        capture_output=True,
+        text=True,
+        timeout=120,
+    )
 
 
 def _render_header(*, name: str, version: str) -> str:

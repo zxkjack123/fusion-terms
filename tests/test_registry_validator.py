@@ -156,3 +156,31 @@ def test_validate_registry_rejects_forbidden_in_allowlist(tmp_path: Path) -> Non
     combined = (p.stdout or "") + "\n" + (p.stderr or "")
     assert "forbidden/deprecated" in combined
     assert "'Figure'" in combined
+
+
+def test_validate_registry_rejects_missing_evidence(tmp_path: Path) -> None:
+    repo_root = Path(__file__).resolve().parents[1]
+
+    terms_dir = tmp_path / "terms"
+    terms_dir.mkdir(parents=True, exist_ok=True)
+    (terms_dir / "allowlist_zh.txt").write_text("\n", encoding="utf-8")
+    (terms_dir / "allowlist_en.txt").write_text("\n", encoding="utf-8")
+
+    _write_registry_tables(
+        terms_dir,
+        concepts=(
+            "iter\tdevice\n"
+            "tokamak\tconcept\n"
+        ),
+        aliases=(
+            "ITER\titer\tabbr\tpreferred\n"
+            "tokamak\ttokamak\ten\tpreferred\n"
+        ),
+        evidence="iter\thttps://www.iter.org\n",
+    )
+
+    p = _run_validator(repo_root, terms_dir)
+    assert p.returncode != 0
+    combined = (p.stdout or "") + "\n" + (p.stderr or "")
+    assert "concepts without evidence rows" in combined
+    assert "'tokamak'" in combined

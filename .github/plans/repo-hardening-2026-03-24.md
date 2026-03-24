@@ -113,7 +113,7 @@
 
 ### Phase 2: Pipeline 小修（快速修复批）
 
-#### Task 2.1: 死代码清理 + 静默截断告警 (Q2 + Q3)
+#### ✅ Task 2.1: 死代码清理 + 静默截断告警 (Q2 + Q3)
 
 - **目标**：移除 `common.py` 中未使用的 `Example` 类和 `sha1_text()` 函数；为 `read_text_file()` 的截断行为添加 warning
 - **修改内容**：
@@ -135,7 +135,7 @@
   - ✅ 全量测试通过，无 ruff 违规
 - **潜在风险**：如有测试 fixture 引用 `Example`，需同步更新。经查无测试导入 `Example`（仅 `extract_candidates.py` 用了字符串 "Example" 作 CLI 帮助文本，不是类引用）。
 
-#### Task 2.2: expanduser 修复 + hardcoded 路径修复 (Q4 + Q5)
+#### ✅ Task 2.2: expanduser 修复 + hardcoded 路径修复 (Q4 + Q5)
 
 - **目标**：修复 `build_terms.py` 的 `terms_dir` 缺少 `expanduser()`，修复 `apply_decisions.py` 的 hardcoded `Path("artifacts")`
 - **修改内容**：
@@ -154,7 +154,7 @@
   - ✅ 全量测试通过
 - **潜在风险**：`Path(__file__).resolve().parent.parent` 在不同安装方式下可能不等于仓库根。鉴于这是一个本地开发仓库（非 pip install 的包），此假设合理。
 
-#### Task 2.3: subprocess timeout (Q9)
+#### ✅ Task 2.3: subprocess timeout (Q9)
 
 - **目标**：为所有 `subprocess.run()` 调用添加超时保护
 - **修改内容**：
@@ -172,7 +172,7 @@
   - ✅ 全量测试通过
 - **潜在风险**：若外部 Rime importer 实际运行时间超过 120s（如词库极大），timeout 会触发。120s 对于当前 ~1700 词的词库绰绰有余。
 
-#### Task 2.4: export_registry 静默跳过告警 (B3)
+#### ✅ Task 2.4: export_registry 静默跳过告警 (B3)
 
 - **目标**：在 `export_registry.py` 的行读取器跳过短行时发出 warning，而非完全静默
 - **修改内容**：
@@ -190,7 +190,7 @@
   - ✅ 全量测试通过
 - **潜在风险**：如果现有测试使用带短行的 fixture，可能会触发新 warning。测试中可用 `warnings.catch_warnings()` 抑制。
 
-#### Task 2.5: validate_registry evidence 完整性检查 (B4)
+#### ✅ Task 2.5: validate_registry evidence 完整性检查 (B4)
 
 - **目标**：在 `validate_registry.py` 中添加"每个 concept 必须有至少一条 evidence"的检查
 - **修改内容**：
@@ -211,7 +211,7 @@
   - ✅ 全量测试通过
 - **潜在风险**：如果未来添加 concept 时忘记添加 evidence，此检查会立即阻断。这正是期望行为。
 
-#### Task 2.6: Phase 2 commit
+#### ✅ Task 2.6: Phase 2 commit
 
 - **目标**：提交 Phase 2 全部小修
 - **修改内容**：

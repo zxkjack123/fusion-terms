@@ -58,6 +58,7 @@ def _git_head_commit(repo_root: Path) -> str:
         check=False,
         capture_output=True,
         text=True,
+        timeout=30,
     )
     if proc.returncode != 0:
         msg = proc.stderr.strip() or proc.stdout.strip() or "unknown error"

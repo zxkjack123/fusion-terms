@@ -102,7 +102,13 @@ def main() -> None:
             cmd.append("--no-restart-fcitx")
         cmd.append("--import")
 
-    proc = subprocess.run(cmd, check=False, capture_output=True, text=True)
+    proc = subprocess.run(
+        cmd,
+        check=False,
+        capture_output=True,
+        text=True,
+        timeout=120,
+    )
     if proc.stdout:
         print(proc.stdout)
     if proc.returncode != 0:

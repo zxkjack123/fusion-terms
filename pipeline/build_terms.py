@@ -169,7 +169,7 @@ def main() -> None:
         args.out_dir or cfg.get("artifacts", {}).get("out_dir", "artifacts")
     ).expanduser()
 
-    terms_dir = Path(args.terms_dir)
+    terms_dir = Path(args.terms_dir).expanduser()
     allow_zh = load_simple_list(terms_dir / "allowlist_zh.txt")
     allow_en = load_simple_list(terms_dir / "allowlist_en.txt")
     deny = load_simple_list(terms_dir / "denylist.txt")
