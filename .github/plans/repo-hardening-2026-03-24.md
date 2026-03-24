@@ -94,7 +94,7 @@
   - ✅ 全量测试通过
 - **潜在风险**：`Path.home()` 检查可能对非标准部署布局过严。折中：检查 `home` 或 `repo_root/artifacts`。
 
-#### Task 1.3: Phase 1 commit
+#### ✅ Task 1.3: Phase 1 commit
 
 - **目标**：提交安全修复
 - **修改内容**：
