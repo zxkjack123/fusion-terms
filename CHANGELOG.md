@@ -21,15 +21,36 @@
 ### Changed
 
 
+### Fixed
+
+
+## v2026.03.24
+
+### Added
+
+- `sync_to_fcitx.py` 测试覆盖补齐：新增 `tests/test_sync_to_fcitx.py`（复制成功、缺失输入失败、自动创建父目录 3 个场景）。
+- CI 新增 `Validate registry` 步骤（`python3 -m pipeline.validate_registry`），将 registry 完整性检查纳入默认门禁。
+- `config.toml` 新增 `[rime]` 配置区块（`dict_name`、`backup_paths`、`sync_dest`），并在导入/同步脚本中接入默认值。
+- `README.md` 新增 `## Terminology Registry` 章节，补充 registry 结构、统计与文档入口。
+
+### Changed
+
 - 候选词过滤优化：扩充 `terms/stopwords_en.txt`（Batch02）并补充 `terms/denylist.txt` 中的英文通用噪声词，降低 review pack 英文非术语候选。
 - 带停用词重跑抽词与 review pack：使用 `--zh-stopwords terms/stopwords_zh.txt` 与 `--en-stopwords terms/stopwords_en.txt` 后，review pack 结果为 `new_zh=0`、`new_en=0`（`--exclude-known-terms`）。
 - Registry 稀疏概念充实（Batch 55）：新增 40 条正确别名，稀疏概念数降至 `79`（目标 `<=80`），registry 别名数提升至 `4464`。
 - Forbidden 覆盖提升（Batch F11）：新增 24 条 `forbidden` 别名，覆盖率提升至 `879/925 = 95.03%`（达到 `>=95%` 目标）。
 - 清理 `terms/registry/evidence.tsv` 中 4 条 `internal:TODO` 占位符，全部替换为可追溯 URL 来源。
 - 本地输入法同步：重建 `domain_terms.txt` 并导入 Rime（`1676` 条），生成可回滚备份 `artifacts/rime_backups/20260323-222157/`。
-
+- Registry 质量持续提升：新增 Batch F12 + Batch 56 后，forbidden/deprecated 覆盖率提升至 `909/949 = 95.79%`，稀疏概念数降至 `55`。
+- Ruff 规则集升级为 `E/F/W/B`（保留 `E501` 例外），并配套修复新规则触发的问题；pre-commit 全量激活并纳入日常门禁。
 
 ### Fixed
+
+- 安全修复：`pipeline/review_pack.py` 的 `_resolve_under()` 现拒绝 `..` 相对路径逃逸，修复路径穿越风险。
+- 安全修复：`pipeline/rime_import_safe.py` rollback 过程新增 manifest 路径边界校验，拒绝越界恢复。
+- Pipeline 健壮性修复：移除死代码、补充截断 warning、修复 `expanduser` 与相对 `artifacts` 路径问题。
+- 子进程调用稳定性修复：5 处 `subprocess.run()` 增加 `timeout`，避免外部工具异常卡死。
+- Registry 一致性修复：`validate_registry` 增加 concept↔evidence 完整性检查；`export_registry` 对短行跳过改为告警而非静默。
 
 ## v2026.03.23.7
 

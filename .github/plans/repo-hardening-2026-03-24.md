@@ -450,7 +450,7 @@
 
 **前置依赖**：Phase 1–5 全部完成
 
-#### Task 6.1: CHANGELOG 折叠 + 补写
+#### ✅ Task 6.1: CHANGELOG 折叠 + 补写
 
 - **目标**：将 Unreleased 中的 6 条条目加上 Phase 1–5 的变更折叠到新版本号下
 - **修改内容**：
