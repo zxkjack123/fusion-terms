@@ -30,3 +30,6 @@ jobs:
 
             - name: Compile check
               run: python -m compileall -q pipeline tests
+
+            - name: Validate registry
+              run: python3 -m pipeline.validate_registry

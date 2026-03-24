@@ -9,12 +9,24 @@ from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
 
+try:
+    import tomllib  # py>=3.11
+except ModuleNotFoundError:  # pragma: no cover
+    import tomli as tomllib  # type: ignore
+
 
 @dataclass(frozen=True)
 class BackupItem:
     original: str
     backup: str
     kind: str  # file|dir
+
+
+def _load_config(config_path: Path) -> dict:
+    if not config_path.exists():
+        return {}
+    with config_path.open("rb") as f:
+        return tomllib.load(f)
 
 
 def _ensure_dir(p: Path) -> None:
@@ -230,11 +242,38 @@ def rollback_from_manifest(manifest_path: Path) -> None:
 
 
 def main() -> None:
+    pre = argparse.ArgumentParser(add_help=False)
+    pre.add_argument(
+        "--config",
+        default="config.toml",
+    )
+    pre_args, _ = pre.parse_known_args()
+    config_path = Path(pre_args.config).expanduser()
+    cfg = _load_config(config_path)
+    rime_cfg = cfg.get("rime", {}) if isinstance(cfg, dict) else {}
+
+    default_dict_name = "rime_ice"
+    if isinstance(rime_cfg, dict):
+        val = rime_cfg.get("dict_name")
+        if isinstance(val, str) and val.strip():
+            default_dict_name = val.strip()
+
+    default_backup_paths: list[str] = []
+    if isinstance(rime_cfg, dict):
+        v = rime_cfg.get("backup_paths")
+        if isinstance(v, list):
+            default_backup_paths = [str(x).strip() for x in v if str(x).strip()]
+
     parser = argparse.ArgumentParser(
         description=(
             "Safely generate a Rime import payload and (optionally) "
             "import into userdb with backups and rollback."
         )
+    )
+    parser.add_argument(
+        "--config",
+        default=str(config_path),
+        help="Path to config.toml (used for [rime] defaults)",
     )
     parser.add_argument(
         "--input",
@@ -253,7 +292,7 @@ def main() -> None:
     )
     parser.add_argument(
         "--dict-name",
-        default="rime_ice",
+        default=default_dict_name,
         help=(
             "Rime dict_name to import into "
             "(passed through to rime_import_wordlist.py). "
@@ -301,7 +340,7 @@ def main() -> None:
     parser.add_argument(
         "--backup-path",
         action="append",
-        default=[],
+        default=None,
         help=(
             "Path to back up before importing (repeatable). "
             "Can be file or dir."
@@ -378,7 +417,8 @@ def main() -> None:
     # Step 2) Backup paths before import.
     backup_root = Path(args.backup_root).expanduser()
     backup_name = args.backup_name or _now_backup_name()
-    backup_paths = [Path(p).expanduser() for p in args.backup_path]
+    raw_backup_paths = args.backup_path if args.backup_path else default_backup_paths
+    backup_paths = [Path(p).expanduser() for p in raw_backup_paths]
 
     if not backup_paths:
         raise SystemExit(

@@ -367,7 +367,7 @@
 
 ### Phase 5: CI 与配置改善
 
-#### Task 5.1: CI 增加 validate_registry 步骤 (O5)
+#### ✅ Task 5.1: CI 增加 validate_registry 步骤 (O5)
 
 - **目标**：在 GitHub Actions CI 中添加 registry 校验，防止损坏的 registry 数据进入 master
 - **修改内容**：
@@ -387,7 +387,7 @@
   - ✅ 位于 `Compile check` 之后
 - **潜在风险**：CI 环境中 `terms/registry/` 文件存在（已 tracked），无额外依赖。
 
-#### Task 5.2: 添加 `[rime]` config section (O6)
+#### ✅ Task 5.2: 添加 `[rime]` config section (O6)
 
 - **目标**：将 Rime 相关默认值集中到 `config.toml`，减少 CLI 记忆负担
 - **修改内容**：
@@ -412,7 +412,7 @@
   - ✅ 全量测试通过
 - **潜在风险**：config 文件加载需要 `tomllib`，已是现有依赖。需注意 config 文件不存在时的 fallback。
 
-#### Task 5.3: README 添加 Registry 章节 (O7)
+#### ✅ Task 5.3: README 添加 Registry 章节 (O7)
 
 - **目标**：在 README.md 中添加 registry 子系统的说明和统计
 - **修改内容**：
@@ -429,7 +429,7 @@
   - ✅ 包含 link 到 docs/dev/06 和 CHANGELOG
 - **潜在风险**：统计数字会随未来 batch 变化。可标注为"截至 vX 的统计"。
 
-#### Task 5.4: Phase 5 commit
+#### ✅ Task 5.4: Phase 5 commit
 
 - **目标**：提交 CI + 配置 + 文档改善
 - **修改内容**：

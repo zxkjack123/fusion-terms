@@ -17,6 +17,29 @@ This repo treats “terms” as a data product:
 - `artifacts/` — generated outputs (final wordlist, import files)
 - `sources/` — optional pointers (we do not copy your whole corpus here)
 
+## Terminology Registry
+
+In addition to IME wordlists, this repo maintains a structured terminology
+registry under `terms/registry/`:
+
+- `concepts.tsv` — canonical concept records (`concept_id`, category, preferred forms)
+- `aliases.tsv` — preferred/alias/deprecated/forbidden variants bound to a concept
+- `evidence.tsv` — traceable source rows per concept
+
+Current snapshot (as of this hardening cycle):
+
+- concepts: **949**
+- aliases: **4637**
+- evidence rows: **949**
+
+Registry schema/design reference:
+
+- `docs/dev/06-terminology-registry-upgrade.md`
+
+Version history:
+
+- `CHANGELOG.md`
+
 ## Quick start
 
 1) Extract candidate terms from your Markdown corpus:

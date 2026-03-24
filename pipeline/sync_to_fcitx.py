@@ -4,12 +4,42 @@ import argparse
 import shutil
 from pathlib import Path
 
+try:
+    import tomllib  # py>=3.11
+except ModuleNotFoundError:  # pragma: no cover
+    import tomli as tomllib  # type: ignore
+
+
+def _load_config(config_path: Path) -> dict:
+    if not config_path.exists():
+        return {}
+    with config_path.open("rb") as f:
+        return tomllib.load(f)
+
 
 def main() -> None:
+    pre = argparse.ArgumentParser(add_help=False)
+    pre.add_argument("--config", default="config.toml")
+    pre_args, _ = pre.parse_known_args()
+    config_path = Path(pre_args.config).expanduser()
+    cfg = _load_config(config_path)
+    rime_cfg = cfg.get("rime", {}) if isinstance(cfg, dict) else {}
+
+    default_dest = str(Path("~/.config/fcitx/rime/wordlists/domain_terms.txt"))
+    if isinstance(rime_cfg, dict):
+        v = rime_cfg.get("sync_dest")
+        if isinstance(v, str) and v.strip():
+            default_dest = v.strip()
+
     parser = argparse.ArgumentParser(
         description=(
             "Sync artifacts/domain_terms.txt to Fcitx/Rime wordlists directory"
         )
+    )
+    parser.add_argument(
+        "--config",
+        default=str(config_path),
+        help="Path to config.toml (used for [rime] defaults)",
     )
     parser.add_argument(
         "--input",
@@ -18,7 +48,7 @@ def main() -> None:
     )
     parser.add_argument(
         "--dest",
-        default=str(Path("~/.config/fcitx/rime/wordlists/domain_terms.txt")),
+        default=default_dest,
         help="Destination path (default: fcitx rime wordlists)",
     )
 

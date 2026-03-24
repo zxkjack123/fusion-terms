@@ -28,3 +28,11 @@ max_files_per_term = 20
 
 [artifacts]
 out_dir = "artifacts"
+
+[rime]
+dict_name = "rime_ice"
+backup_paths = [
+	"~/.local/share/fcitx5/rime",
+	"~/.config/fcitx5/rime",
+]
+sync_dest = "~/.config/fcitx/rime/wordlists/domain_terms.txt"
