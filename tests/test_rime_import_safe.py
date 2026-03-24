@@ -6,6 +6,8 @@ import subprocess
 import sys
 from pathlib import Path
 
+import pytest
+
 
 def _write_dummy_importer(
     path: Path,
@@ -251,3 +253,28 @@ def test_rollback_handles_target_type_drift(tmp_path: Path) -> None:
     rollback_from_manifest(manifest_file)
     assert orig_file.is_file()
     assert orig_file.read_text("utf-8") == "FILE-BEFORE\n"
+
+
+def test_rollback_rejects_paths_outside_home(tmp_path: Path) -> None:
+    from pipeline.rime_import_safe import rollback_from_manifest
+
+    snapshot_dir = tmp_path / "snap"
+    snapshot_dir.mkdir(parents=True, exist_ok=True)
+    backup_file = snapshot_dir / "etc_shadow.backup"
+    backup_file.write_text("x\n", encoding="utf-8")
+
+    manifest = {
+        "schema_version": 1,
+        "items": [
+            {
+                "original": "/etc/shadow",
+                "backup": str(backup_file),
+                "kind": "file",
+            }
+        ],
+    }
+    manifest_path = snapshot_dir / "manifest.json"
+    manifest_path.write_text(json.dumps(manifest), encoding="utf-8")
+
+    with pytest.raises(SystemExit, match="protected system path"):
+        rollback_from_manifest(manifest_path)

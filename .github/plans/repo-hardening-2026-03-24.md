@@ -74,7 +74,7 @@
   - ✅ 全量测试通过
 - **潜在风险**：绝对路径直通是设计上的选择（CLI 用户可能需要指定绝对路径），但绝对路径不受 base 约束。可接受，因为 CLI 参数由用户直接控制。
 
-#### Task 1.2: 修复 `rollback_from_manifest()` 路径信任 (B2)
+#### ✅ Task 1.2: 修复 `rollback_from_manifest()` 路径信任 (B2)
 
 - **目标**：在 `rime_import_safe.py` 的 rollback 流程中验证 manifest 中的路径不超出预期目录范围
 - **修改内容**：

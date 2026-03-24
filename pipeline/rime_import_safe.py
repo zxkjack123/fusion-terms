@@ -155,12 +155,45 @@ def rollback_from_manifest(manifest_path: Path) -> None:
     if not isinstance(items, list) or not items:
         raise SystemExit(f"rollback failed: invalid manifest: {manifest_path}")
 
+    snapshot_root = manifest_path.resolve().parent
+    protected_roots = (
+        Path("/etc"),
+        Path("/usr"),
+        Path("/bin"),
+        Path("/sbin"),
+        Path("/lib"),
+        Path("/lib64"),
+        Path("/proc"),
+        Path("/sys"),
+        Path("/dev"),
+        Path("/boot"),
+        Path("/root"),
+    )
+    home_root = Path.home().resolve()
+
     # Restore in deterministic order to reduce surprises.
     items_sorted = sorted(items, key=lambda d: str(d.get("original", "")))
 
     for it in items_sorted:
         orig = Path(it["original"]).expanduser()
         bak = Path(it["backup"]).expanduser()
+
+        orig_r = orig.resolve()
+        bak_r = bak.resolve()
+        if bak_r != snapshot_root and not bak_r.is_relative_to(snapshot_root):
+            raise SystemExit(
+                "rollback failed: backup path escapes manifest snapshot: "
+                f"{bak}"
+            )
+
+        in_home = orig_r == home_root or orig_r.is_relative_to(home_root)
+        if any(orig_r == p or orig_r.is_relative_to(p) for p in protected_roots):
+            if not in_home:
+                raise SystemExit(
+                    "rollback failed: refusing to restore protected system "
+                    f"path: {orig}"
+                )
+
         if not bak.exists():
             raise SystemExit(f"rollback failed: missing backup path: {bak}")
 
