@@ -5253,3 +5253,61 @@ irradiation hardening	radiation-hardening	en	alias	synonym used in fusion materi
 Li₂TiO₃	lithium-titanate	en	alias	chemical formula with subscripts
 Li₄SiO₄	lithium-orthosilicate	en	alias	chemical formula with subscripts
 实验包层模块	tbm	zh	alias	full Chinese name
+# ==== Batch F12: Forbidden enrichment for Batch 54 + remainder ====
+aluminacoating	alumina-coating	en	forbidden	auto-added for coverage uplift
+boronpowderinjection	boron-powder-injection	en	forbidden	auto-added for coverage uplift
+cucrzr	cucrzr	en	forbidden	auto-added for coverage uplift
+dbtt shift	dbtt-shift	en	forbidden	auto-added for coverage uplift
+decaygammasource	decay-gamma-source	en	forbidden	auto-added for coverage uplift
+erbiumoxide	erbium-oxide	en	forbidden	auto-added for coverage uplift
+flowchannelinsert	flow-channel-insert	en	forbidden	auto-added for coverage uplift
+geologicaldisposal	geological-disposal	en	forbidden	auto-added for coverage uplift
+handson recycling	hands-on-recycling	en	forbidden	auto-added for coverage uplift
+hartmann number	hartmann-number	en	forbidden	auto-added for coverage uplift
+lithiumlead	lithium-lead	en	forbidden	auto-added for coverage uplift
+mhd pressure drop	mhd-pressure-drop	en	forbidden	auto-added for coverage uplift
+mixedpebblebed	mixed-pebble-bed	en	forbidden	auto-added for coverage uplift
+nearsurface disposal	near-surface-disposal	en	forbidden	auto-added for coverage uplift
+nitrogenseeding	nitrogen-seeding	en	forbidden	auto-added for coverage uplift
+nuclideinventory	nuclide-inventory	en	forbidden	auto-added for coverage uplift
+pebblebed	pebble-bed	en	forbidden	auto-added for coverage uplift
+permanentdisposalwaste	permanent-disposal-waste	en	forbidden	auto-added for coverage uplift
+permeationreductionfactor	permeation-reduction-factor	en	forbidden	auto-added for coverage uplift
+radiofrequency heating	radio-frequency-heating	en	forbidden	auto-added for coverage uplift
+rami	rami	en	forbidden	auto-added for coverage uplift
+remotehandling recycling	remote-handling-recycling	en	forbidden	auto-added for coverage uplift
+rigorous twostep method	rigorous-two-step	en	forbidden	auto-added for coverage uplift
+tritiumrelease	tritium-release	en	forbidden	auto-added for coverage uplift
+wasteform	waste-form	en	forbidden	auto-added for coverage uplift
+wastepackage	waste-package	en	forbidden	auto-added for coverage uplift
+abaqus	abaqus	en	forbidden	auto-added for coverage uplift
+b2	b2	en	forbidden	auto-added for coverage uplift
+cendl	cendl	en	forbidden	auto-added for coverage uplift
+cfx	cfx	en	forbidden	auto-added for coverage uplift
+# ==== Batch 56: Sparse concept enrichment ====
+astra	astra	en	alias	lowercase variant
+bout++	bout-pp	en	alias	lowercase variant
+CENDL代码	cendl	zh	alias	code suffix variant
+comsol	comsol	en	alias	lowercase variant
+DIIID	diii-d	en	alias	hyphenless variant
+eaf	eaf	en	alias	lowercase variant
+EDGE2DEIRENE	edge2d-eirene	en	alias	hyphenless variant
+efit	efit	en	alias	lowercase variant
+EMC3EIRENE	emc3-eirene	en	alias	hyphenless variant
+endf	endf	en	alias	lowercase variant
+fendl	fendl	en	alias	lowercase variant
+FISPACTII	fispact-ii	en	alias	hyphenless variant
+Fluent代码	fluent	zh	alias	code suffix variant
+gacode	gacode	en	alias	lowercase variant
+gtc	gtc	en	alias	lowercase variant
+imas	imas	en	alias	lowercase variant
+irdff	irdff	en	alias	lowercase variant
+jeff	jeff	en	alias	lowercase variant
+jendl	jendl	en	alias	lowercase variant
+jintrac	jintrac	en	alias	lowercase variant
+jt-60sa	jt-60sa	en	alias	lowercase variant
+kmax	kmax	en	alias	lowercase variant
+mcnp	mcnp	en	alias	lowercase variant
+Nastran代码	nastran	zh	alias	code suffix variant
+nimrod	nimrod	en	alias	lowercase variant
+phits	phits	en	alias	lowercase variant
