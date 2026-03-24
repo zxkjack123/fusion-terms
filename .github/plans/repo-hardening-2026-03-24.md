@@ -469,7 +469,7 @@
   - ✅ 新版本条目包含安全修复、pipeline 修复、registry 质量、CI 等内容
 - **潜在风险**：如果 Phase 执行跨天，日期需要调整。
 
-#### Task 6.2: Tag + Push + Release Pack
+#### ✅ Task 6.2: Tag + Push + Release Pack
 
 - **目标**：打 tag、推送到 origin、构建 release pack
 - **修改内容**：
