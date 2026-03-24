@@ -959,7 +959,7 @@ def main() -> None:
             raise SystemExit(
                 f"stopwords file is not valid UTF-8: {p} ({e}). "
                 "Tip: re-save stopwords as UTF-8 without BOM."
-            )
+            ) from e
 
         for line in lines:
             s = line.strip()

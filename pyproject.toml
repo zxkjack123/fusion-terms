@@ -11,7 +11,6 @@ extend-exclude = [
 ]
 
 [tool.ruff.lint]
-# Minimal, high-signal lint gate:
-# - F401: unused imports
-# - F821: undefined names
-select = ["F401", "F821"]
+# Broader lint gate (keep line-length as non-blocking to avoid noisy churn).
+select = ["E", "F", "W", "B"]
+ignore = ["E501"]

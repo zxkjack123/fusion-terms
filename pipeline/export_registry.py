@@ -137,7 +137,7 @@ def _iter_alias_rows(aliases_path: Path) -> list[dict[str, str]]:
     except UnicodeDecodeError as e:
         raise SystemExit(
             f"export_registry failed: aliases TSV is not valid UTF-8: {aliases_path} ({e})"
-        )
+        ) from e
 
     for lineno, line in enumerate(lines, start=1):
         if not line.strip() or line.lstrip().startswith("#"):
@@ -173,7 +173,7 @@ def _iter_concept_rows(concepts_path: Path) -> list[dict[str, str]]:
     except UnicodeDecodeError as e:
         raise SystemExit(
             f"export_registry failed: concepts TSV is not valid UTF-8: {concepts_path} ({e})"
-        )
+        ) from e
 
     for lineno, line in enumerate(lines, start=1):
         if not line.strip() or line.lstrip().startswith("#"):

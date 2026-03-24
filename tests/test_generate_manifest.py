@@ -21,7 +21,7 @@ def test_generate_manifest_basic(tmp_path: Path) -> None:
     tokamak
     3D\u6253\u5370
 
-    tokamak  
+    tokamak\u0020\u0020
     \n
     \u8054\u9501\u7cfb\u7edf
     """

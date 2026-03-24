@@ -981,7 +981,6 @@ def main():
             if len(parts) >= 2:
                 existing.add((parts[0].lower(), parts[1]))
 
-    data_rows = [r for r in ENRICH if len(r) > 1]
     comment_rows = [r for r in ENRICH if len(r) == 1]
 
     # Filter out duplicates

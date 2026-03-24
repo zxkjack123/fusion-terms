@@ -197,8 +197,8 @@
   - 创建 `artifacts/review_pack/decisions.tsv`（UTF-8，tab 分隔），格式：
     ```
     # action	value	preferred	lang	comment
-    allow_zh	聚变堆		
-    deny	所示		
+    allow_zh	聚变堆
+    deny	所示
     synonym	氚增殖	tritium-breeding	zh
     ```
   - 允许的 action：`allow_zh`（纳入中文允许列表）、`deny`（加入黑名单）、`synonym`（建立同义映射）

@@ -230,7 +230,7 @@
 
 ### Phase 3: 测试与 Lint 补充
 
-#### Task 3.1: 新增 `sync_to_fcitx.py` 测试 (Q8)
+#### ✅ Task 3.1: 新增 `sync_to_fcitx.py` 测试 (Q8)
 
 - **目标**：为唯一无测试覆盖的 pipeline 模块补充测试
 - **修改内容**：
@@ -248,7 +248,7 @@
   - ✅ 全量测试通过
 - **潜在风险**：`sync_to_fcitx.py` 使用 `argparse` + `sys.exit`，monkeypatch `sys.argv` 需注意作用域。
 
-#### Task 3.2: 启用 ruff E/W/B 规则集 (Q6)
+#### ✅ Task 3.2: 启用 ruff E/W/B 规则集 (Q6)
 
 - **目标**：增量启用 ruff 规则集以捕获更多常见错误
 - **修改内容**：
@@ -266,7 +266,7 @@
   - ✅ 全量测试通过
 - **潜在风险**：新规则可能报出大量违规。如数量超过 20 处，应先用 `ruff check . --statistics` 评估，再决定是否分批启用。
 
-#### Task 3.3: 激活 pre-commit hooks (Q7)
+#### ✅ Task 3.3: 激活 pre-commit hooks (Q7)
 
 - **目标**：让已有的 `.pre-commit-config.yaml` 生效
 - **修改内容**：
@@ -282,7 +282,7 @@
   - ✅ `pre-commit run --all-files` 全部通过
 - **潜在风险**：`pre-commit run` 中的 `pytest` hook 会跑全量测试，耗时约 5s，可接受。
 
-#### Task 3.4: Phase 3 commit
+#### ✅ Task 3.4: Phase 3 commit
 
 - **目标**：提交测试和 lint 改进
 - **修改内容**：

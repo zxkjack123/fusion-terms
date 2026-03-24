@@ -31,8 +31,8 @@ def _parse_swap_mapping(yml_text: str) -> dict[str, str]:
     lines = yml_text.splitlines()
     try:
         idx = lines.index("swap:")
-    except ValueError:
-        raise AssertionError("missing swap: section")
+    except ValueError as e:
+        raise AssertionError("missing swap: section") from e
 
     mapping: dict[str, str] = {}
     for ln in lines[idx + 1 :]:

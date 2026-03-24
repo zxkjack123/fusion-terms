@@ -115,7 +115,7 @@ def _load_wordlist_terms(path: Path) -> set[str]:
         raise SystemExit(
             f"failed to read UTF-8 wordlist: {path} ({e}). "
             "Tip: regenerate artifacts with pipeline.build_terms."
-        )
+        ) from e
 
     for line in lines:
         s = line.strip()

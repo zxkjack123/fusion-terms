@@ -29,7 +29,7 @@ def _iter_tsv_rows(path: Path) -> list[Row]:
         raise SystemExit(
             f"registry validation failed: {path} is not valid UTF-8 ({e}). "
             "Tip: re-save this TSV as UTF-8 without BOM."
-        )
+        ) from e
 
     rows: list[Row] = []
     for lineno, line in enumerate(lines, start=1):

@@ -35,15 +35,15 @@ def _validate_generated_at_utc(s: str) -> str:
         # Validate parseability
         try:
             datetime.fromisoformat(s.replace("Z", "+00:00"))
-        except ValueError:
-            raise SystemExit(f"invalid generated_at (expected UTC ISO8601): {s!r}")
+        except ValueError as e:
+            raise SystemExit(f"invalid generated_at (expected UTC ISO8601): {s!r}") from e
         return s
 
     if s.endswith("+00:00"):
         try:
             datetime.fromisoformat(s)
-        except ValueError:
-            raise SystemExit(f"invalid generated_at (expected UTC ISO8601): {s!r}")
+        except ValueError as e:
+            raise SystemExit(f"invalid generated_at (expected UTC ISO8601): {s!r}") from e
         return s.replace("+00:00", "Z")
 
     raise SystemExit(
@@ -90,7 +90,7 @@ def _load_domain_terms(path: Path) -> list[str]:
     try:
         lines = path.read_text("utf-8").splitlines()
     except UnicodeDecodeError as e:
-        raise SystemExit(f"failed to read UTF-8 domain_terms: {path} ({e})")
+        raise SystemExit(f"failed to read UTF-8 domain_terms: {path} ({e})") from e
 
     out: list[str] = []
     for ln in lines:
@@ -110,9 +110,9 @@ def _counts_from_build_stats(stats_path: Path) -> dict[str, int] | None:
     try:
         data = json.loads(stats_path.read_text("utf-8"))
     except UnicodeDecodeError as e:
-        raise SystemExit(f"failed to read UTF-8 build stats JSON: {stats_path} ({e})")
+        raise SystemExit(f"failed to read UTF-8 build stats JSON: {stats_path} ({e})") from e
     except json.JSONDecodeError as e:
-        raise SystemExit(f"invalid JSON build stats: {stats_path} ({e})")
+        raise SystemExit(f"invalid JSON build stats: {stats_path} ({e})") from e
 
     counts = data.get("counts")
     if not isinstance(counts, dict):

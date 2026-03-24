@@ -79,7 +79,6 @@ def process_aliases():
     redirected = 0
     dropped = 0
     deduped = 0
-    removed_comment_blocks = set()
 
     for line in lines:
         if line.startswith("#") or not line.strip():

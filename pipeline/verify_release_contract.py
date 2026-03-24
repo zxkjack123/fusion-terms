@@ -41,19 +41,19 @@ def _normalize_generated_at_utc(s: str) -> str:
     if s.endswith("Z"):
         try:
             datetime.fromisoformat(s.replace("Z", "+00:00"))
-        except ValueError:
+        except ValueError as e:
             raise SystemExit(
                 f"contract verify failed: invalid generated_at (expected UTC ISO8601): {s!r}"
-            )
+            ) from e
         return s
 
     if s.endswith("+00:00"):
         try:
             datetime.fromisoformat(s)
-        except ValueError:
+        except ValueError as e:
             raise SystemExit(
                 f"contract verify failed: invalid generated_at (expected UTC ISO8601): {s!r}"
-            )
+            ) from e
         return s.replace("+00:00", "Z")
 
     raise SystemExit(
@@ -72,7 +72,7 @@ def _load_domain_terms_strict(path: Path) -> list[str]:
         raise SystemExit(
             f"contract verify failed: {path} is not valid UTF-8 ({e}). "
             "Tip: regenerate artifacts with pipeline.build_terms."
-        )
+        ) from e
 
     terms: list[str] = []
     for lineno, raw in enumerate(lines, start=1):
@@ -126,9 +126,9 @@ def verify_release_contract(
     try:
         data = json.loads(manifest_path.read_text("utf-8"))
     except UnicodeDecodeError as e:
-        raise SystemExit(f"contract verify failed: {manifest_path} is not valid UTF-8 ({e})")
+        raise SystemExit(f"contract verify failed: {manifest_path} is not valid UTF-8 ({e})") from e
     except json.JSONDecodeError as e:
-        raise SystemExit(f"contract verify failed: invalid JSON manifest: {manifest_path} ({e})")
+        raise SystemExit(f"contract verify failed: invalid JSON manifest: {manifest_path} ({e})") from e
 
     if not isinstance(data, dict):
         raise SystemExit(f"contract verify failed: manifest must be a JSON object: {manifest_path}")

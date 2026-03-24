@@ -90,7 +90,7 @@ def _load_wordlist(path: Path) -> list[str]:
         raise SystemExit(
             f"IME acceptance pack failed: input is not valid UTF-8: {path} ({e}). "
             "Tip: regenerate artifacts with pipeline.build_terms."
-        )
+        ) from e
 
     for ln in lines:
         s = ln.strip()

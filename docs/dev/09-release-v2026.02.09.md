@@ -1,6 +1,6 @@
 # Release draft: v2026.02.09 (local, not pushed yet)
 
-日期：2026-02-09  
+日期：2026-02-09
 状态：已发布（tag 已 push；GitHub Release 已创建并上传资产）
 
 本文件用于把一次发布需要的关键信息“钉死”，避免之后临时口径漂移。

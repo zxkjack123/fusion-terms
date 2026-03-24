@@ -202,6 +202,7 @@ def read_text_file(path: Path, max_bytes: int = 10_000_000) -> str:
                 f"path={path} replacements={rep} error={e}"
             ),
             RuntimeWarning,
+            stacklevel=2,
         )
         return text
 
@@ -220,7 +221,7 @@ def load_simple_list(path: Path) -> set[str]:
         raise SystemExit(
             f"failed to read UTF-8 text file: {path} ({e}). "
             "Tip: re-save this file as UTF-8 without BOM."
-        )
+        ) from e
 
     for line in lines:
         s = line.strip()
@@ -253,7 +254,7 @@ def load_synonyms_tsv(path: Path) -> dict[str, str]:
         raise SystemExit(
             f"failed to read UTF-8 synonyms TSV: {path} ({e}). "
             "Tip: re-save this file as UTF-8 without BOM."
-        )
+        ) from e
 
     for lineno, line in enumerate(lines, start=1):
         s = line.strip()
