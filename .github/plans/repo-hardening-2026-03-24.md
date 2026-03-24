@@ -491,7 +491,7 @@
   - ✅ `git status` 干净，origin/master 与本地同步
 - **潜在风险**：SSH push 可能超时，重试即可。
 
-#### Task 6.3: Rime 词库同步
+#### ✅ Task 6.3: Rime 词库同步
 
 - **目标**：将更新后的 domain_terms.txt 同步到本地 Rime 输入法
 - **修改内容**：
