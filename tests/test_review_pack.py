@@ -5,6 +5,10 @@ import subprocess
 import sys
 from pathlib import Path
 
+import pytest
+
+from pipeline.review_pack import _resolve_under
+
 
 def _write_tsv(path: Path, rows: list[tuple[str, int]]) -> None:
     lines = ["term\tcount\texamples\tfiles"]
@@ -168,3 +172,23 @@ def test_review_pack_can_exclude_known_allow_deny_terms(
     assert "ECRH\t2" in new_en_text
     assert "ITER\t" not in new_en_text
     assert "NBI\t" not in new_en_text
+
+
+def test_resolve_under_rejects_path_traversal(tmp_path: Path) -> None:
+    base = tmp_path / "artifacts"
+    base.mkdir(parents=True, exist_ok=True)
+
+    with pytest.raises(SystemExit, match="path escapes base directory"):
+        _resolve_under(base, "../../etc/passwd")
+
+
+def test_resolve_under_accepts_normal_relative(tmp_path: Path) -> None:
+    base = tmp_path / "artifacts"
+    base.mkdir(parents=True, exist_ok=True)
+
+    out = _resolve_under(base, "sub/file.tsv")
+    assert out == (base / "sub/file.tsv").resolve()
+
+    abs_path = (tmp_path / "absolute.tsv").resolve()
+    out_abs = _resolve_under(base, str(abs_path))
+    assert out_abs == abs_path

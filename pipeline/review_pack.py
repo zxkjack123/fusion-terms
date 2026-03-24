@@ -65,7 +65,16 @@ def _load_config(config_path: Path) -> dict:
 
 def _resolve_under(base: Path, p: str) -> Path:
     pp = Path(p)
-    return pp if pp.is_absolute() else (base / pp)
+    if pp.is_absolute():
+        return pp
+
+    base_r = base.resolve()
+    full = (base / pp).resolve()
+    if full != base_r and not full.is_relative_to(base_r):
+        raise SystemExit(
+            f"review pack failed: path escapes base directory: {p!r}"
+        )
+    return full
 
 
 def _parse_candidates_tsv(path: Path) -> tuple[str, dict[str, TsvRow]]:
