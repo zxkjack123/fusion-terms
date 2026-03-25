@@ -469,6 +469,212 @@ def _merge_cached_file_data(
             en_phrase_examples[phr].append(ex)
 
 
+def _write_tsv(
+    *,
+    path: Path,
+    counts: Counter[str],
+    examples: dict[str, list[str]],
+    files: dict[str, list[str]],
+    min_count: int | None = None,
+    topk: int | None = None,
+    stopwords: set[str] | None = None,
+) -> None:
+    with path.open("w", encoding="utf-8") as f:
+        f.write("term\tcount\texamples\tfiles\n")
+        written = 0
+        # Stable ordering: count desc, then term asc.
+        for term, cnt in sorted(
+            counts.items(),
+            key=lambda kv: (-kv[1], kv[0]),
+        ):
+            if stopwords is not None and term in stopwords:
+                continue
+            if min_count is not None and cnt < min_count:
+                continue
+            if topk is not None and written >= topk:
+                break
+            ex = " | ".join(examples.get(term, []))
+            fl = " | ".join(files.get(term, []))
+            f.write(f"{term}\t{cnt}\t{ex}\t{fl}\n")
+            written += 1
+
+
+def _write_extract_outputs(
+    *,
+    out_dir: Path,
+    source_root: Path,
+    scanned: int,
+    zh_counts: Counter[str],
+    en_counts: Counter[str],
+    en_phrase_counts: Counter[str],
+    zh_examples: dict[str, list[str]],
+    en_examples: dict[str, list[str]],
+    en_phrase_examples: dict[str, list[str]],
+    zh_files: dict[str, list[str]],
+    en_files: dict[str, list[str]],
+    en_phrase_files: dict[str, list[str]],
+    min_count_zh: int | None,
+    min_count_en: int | None,
+    topk_zh: int | None,
+    topk_en: int | None,
+    zh_stopwords: set[str] | None,
+    en_stopwords: set[str] | None,
+    want_en_phrases: bool,
+    incremental: bool,
+    cache_enabled: bool,
+    cache_dir: Path | None,
+    extractor_sig: str,
+    cache_hits: int,
+    cache_misses: int,
+    processed_files: int,
+    skipped_files: int,
+    cache_invalidated: bool,
+    zh_added_delta: Counter[str],
+    zh_removed_delta: Counter[str],
+    en_added_delta: Counter[str],
+    en_removed_delta: Counter[str],
+    processed_paths_sample: list[str],
+) -> dict[str, object]:
+    ensure_dir(out_dir)
+
+    zh_tsv = out_dir / "candidates_zh.tsv"
+    en_tsv = out_dir / "candidates_en.tsv"
+    en_phr_tsv = out_dir / "candidates_en_phrases.tsv"
+
+    zh_filtered_tsv = out_dir / "candidates_zh.filtered.tsv"
+    en_filtered_tsv = out_dir / "candidates_en.filtered.tsv"
+
+    _write_tsv(
+        path=zh_tsv,
+        counts=zh_counts,
+        examples=zh_examples,
+        files=zh_files,
+    )
+    _write_tsv(
+        path=en_tsv,
+        counts=en_counts,
+        examples=en_examples,
+        files=en_files,
+    )
+
+    want_filtered = any(
+        v is not None
+        for v in [
+            min_count_zh,
+            min_count_en,
+            topk_zh,
+            topk_en,
+            zh_stopwords,
+            en_stopwords,
+        ]
+    )
+    if want_filtered:
+        _write_tsv(
+            path=zh_filtered_tsv,
+            counts=zh_counts,
+            examples=zh_examples,
+            files=zh_files,
+            min_count=min_count_zh,
+            topk=topk_zh,
+            stopwords=zh_stopwords,
+        )
+        _write_tsv(
+            path=en_filtered_tsv,
+            counts=en_counts,
+            examples=en_examples,
+            files=en_files,
+            min_count=min_count_en,
+            topk=topk_en,
+            stopwords=en_stopwords,
+        )
+
+    outputs: dict[str, str | None] = {
+        "zh": str(zh_tsv),
+        "en": str(en_tsv),
+        "zh_filtered": str(zh_filtered_tsv) if want_filtered else None,
+        "en_filtered": str(en_filtered_tsv) if want_filtered else None,
+        "en_phrases": str(en_phr_tsv) if want_en_phrases else None,
+    }
+
+    stats: dict[str, object] = {
+        "source_root": str(source_root),
+        "files_scanned": scanned,
+        "zh_terms": len(zh_counts),
+        "en_terms": len(en_counts),
+        "en_phrase_terms": len(en_phrase_counts) if want_en_phrases else 0,
+        "cache": {
+            "enabled": cache_enabled,
+            "incremental": incremental,
+            "dir": str(cache_dir) if cache_dir is not None else None,
+            "extractor_sig": extractor_sig,
+            "hits": cache_hits,
+            "misses": cache_misses,
+            "processed_files": processed_files,
+            "skipped_files": skipped_files,
+            "invalidated": cache_invalidated,
+        },
+        "outputs": outputs,
+    }
+
+    if incremental:
+        def _top_delta(counter: Counter[str], n: int = 200):
+            return [
+                {"term": t, "delta": int(d)}
+                for t, d in counter.most_common(n)
+            ]
+
+        delta = {
+            "source_root": str(source_root),
+            "files": {
+                "scanned": scanned,
+                "processed": processed_files,
+                "skipped": skipped_files,
+                "processed_sample": processed_paths_sample,
+            },
+            "cache": {
+                "dir": str(cache_dir) if cache_dir is not None else None,
+                "extractor_sig": extractor_sig,
+                "hits": cache_hits,
+                "misses": cache_misses,
+                "invalidated": cache_invalidated,
+            },
+            "terms": {
+                "zh": {
+                    "added": _top_delta(zh_added_delta),
+                    "removed": _top_delta(zh_removed_delta),
+                    "added_total": int(sum(zh_added_delta.values())),
+                    "removed_total": int(sum(zh_removed_delta.values())),
+                },
+                "en": {
+                    "added": _top_delta(en_added_delta),
+                    "removed": _top_delta(en_removed_delta),
+                    "added_total": int(sum(en_added_delta.values())),
+                    "removed_total": int(sum(en_removed_delta.values())),
+                },
+            },
+        }
+        (out_dir / "extract_delta.json").write_text(
+            json.dumps(delta, ensure_ascii=False, indent=2),
+            "utf-8",
+        )
+        outputs["delta"] = str(out_dir / "extract_delta.json")
+
+    (out_dir / "extract_stats.json").write_text(
+        json.dumps(stats, ensure_ascii=False, indent=2),
+        "utf-8",
+    )
+
+    if want_en_phrases:
+        _write_tsv(
+            path=en_phr_tsv,
+            counts=en_phrase_counts,
+            examples=en_phrase_examples,
+            files=en_phrase_files,
+        )
+
+    return stats
+
+
 def load_config(config_path: Path) -> dict:
     if not config_path.exists():
         return {}
@@ -797,162 +1003,41 @@ def extract(
         cache_index["files"] = cache_files
         _save_cache_index(cache_dir, cache_index)
 
-    ensure_dir(out_dir)
-
-    zh_tsv = out_dir / "candidates_zh.tsv"
-    en_tsv = out_dir / "candidates_en.tsv"
-    en_phr_tsv = out_dir / "candidates_en_phrases.tsv"
-
-    zh_filtered_tsv = out_dir / "candidates_zh.filtered.tsv"
-    en_filtered_tsv = out_dir / "candidates_en.filtered.tsv"
-
-    def write_tsv(
-        path: Path,
-        counts: Counter[str],
-        examples: dict[str, list[str]],
-        files: dict[str, list[str]],
-        *,
-        min_count: int | None = None,
-        topk: int | None = None,
-        stopwords: set[str] | None = None,
-    ) -> None:
-        with path.open("w", encoding="utf-8") as f:
-            f.write("term\tcount\texamples\tfiles\n")
-            written = 0
-            # Stable ordering: count desc, then term asc.
-            for term, cnt in sorted(
-                counts.items(),
-                key=lambda kv: (-kv[1], kv[0]),
-            ):
-                if stopwords is not None and term in stopwords:
-                    continue
-                if min_count is not None and cnt < min_count:
-                    continue
-                if topk is not None and written >= topk:
-                    break
-                ex = " | ".join(examples.get(term, []))
-                fl = " | ".join(files.get(term, []))
-                f.write(f"{term}\t{cnt}\t{ex}\t{fl}\n")
-                written += 1
-
-    write_tsv(zh_tsv, zh_counts, zh_examples, zh_files)
-    write_tsv(en_tsv, en_counts, en_examples, en_files)
-
-    # Filtered outputs (only written when any filter flag is provided)
-    want_filtered = any(
-        v is not None
-        for v in [
-            min_count_zh,
-            min_count_en,
-            topk_zh,
-            topk_en,
-            zh_stopwords,
-            en_stopwords,
-        ]
+    _write_extract_outputs(
+        out_dir=out_dir,
+        source_root=source_root,
+        scanned=scanned,
+        zh_counts=zh_counts,
+        en_counts=en_counts,
+        en_phrase_counts=en_phrase_counts,
+        zh_examples=zh_examples,
+        en_examples=en_examples,
+        en_phrase_examples=en_phrase_examples,
+        zh_files=zh_files,
+        en_files=en_files,
+        en_phrase_files=en_phrase_files,
+        min_count_zh=min_count_zh,
+        min_count_en=min_count_en,
+        topk_zh=topk_zh,
+        topk_en=topk_en,
+        zh_stopwords=zh_stopwords,
+        en_stopwords=en_stopwords,
+        want_en_phrases=want_en_phrases,
+        incremental=incremental,
+        cache_enabled=cache_enabled,
+        cache_dir=cache_dir,
+        extractor_sig=extractor_sig,
+        cache_hits=cache_hits,
+        cache_misses=cache_misses,
+        processed_files=processed_files,
+        skipped_files=skipped_files,
+        cache_invalidated=cache_invalidated,
+        zh_added_delta=zh_added_delta,
+        zh_removed_delta=zh_removed_delta,
+        en_added_delta=en_added_delta,
+        en_removed_delta=en_removed_delta,
+        processed_paths_sample=processed_paths_sample,
     )
-    if want_filtered:
-        write_tsv(
-            zh_filtered_tsv,
-            zh_counts,
-            zh_examples,
-            zh_files,
-            min_count=min_count_zh,
-            topk=topk_zh,
-            stopwords=zh_stopwords,
-        )
-        write_tsv(
-            en_filtered_tsv,
-            en_counts,
-            en_examples,
-            en_files,
-            min_count=min_count_en,
-            topk=topk_en,
-            stopwords=en_stopwords,
-        )
-
-    outputs: dict[str, str | None] = {
-        "zh": str(zh_tsv),
-        "en": str(en_tsv),
-        "zh_filtered": str(zh_filtered_tsv) if want_filtered else None,
-        "en_filtered": str(en_filtered_tsv) if want_filtered else None,
-        "en_phrases": str(en_phr_tsv) if want_en_phrases else None,
-    }
-
-    stats: dict[str, object] = {
-        "source_root": str(source_root),
-        "files_scanned": scanned,
-        "zh_terms": len(zh_counts),
-        "en_terms": len(en_counts),
-        "en_phrase_terms": len(en_phrase_counts) if want_en_phrases else 0,
-        "cache": {
-            "enabled": cache_enabled,
-            "incremental": incremental,
-            "dir": str(cache_dir) if cache_dir is not None else None,
-            "extractor_sig": extractor_sig,
-            "hits": cache_hits,
-            "misses": cache_misses,
-            "processed_files": processed_files,
-            "skipped_files": skipped_files,
-            "invalidated": cache_invalidated,
-        },
-        "outputs": outputs,
-    }
-
-    # Stage 3.1: delta report (only meaningful for incremental runs)
-    if incremental:
-        def _top_delta(counter: Counter[str], n: int = 200):
-            return [
-                {"term": t, "delta": int(d)}
-                for t, d in counter.most_common(n)
-            ]
-
-        delta = {
-            "source_root": str(source_root),
-            "files": {
-                "scanned": scanned,
-                "processed": processed_files,
-                "skipped": skipped_files,
-                "processed_sample": processed_paths_sample,
-            },
-            "cache": {
-                "dir": str(cache_dir) if cache_dir is not None else None,
-                "extractor_sig": extractor_sig,
-                "hits": cache_hits,
-                "misses": cache_misses,
-                "invalidated": cache_invalidated,
-            },
-            "terms": {
-                "zh": {
-                    "added": _top_delta(zh_added_delta),
-                    "removed": _top_delta(zh_removed_delta),
-                    "added_total": int(sum(zh_added_delta.values())),
-                    "removed_total": int(sum(zh_removed_delta.values())),
-                },
-                "en": {
-                    "added": _top_delta(en_added_delta),
-                    "removed": _top_delta(en_removed_delta),
-                    "added_total": int(sum(en_added_delta.values())),
-                    "removed_total": int(sum(en_removed_delta.values())),
-                },
-            },
-        }
-        (out_dir / "extract_delta.json").write_text(
-            json.dumps(delta, ensure_ascii=False, indent=2),
-            "utf-8",
-        )
-        outputs["delta"] = str(out_dir / "extract_delta.json")
-    (out_dir / "extract_stats.json").write_text(
-        json.dumps(stats, ensure_ascii=False, indent=2),
-        "utf-8",
-    )
-
-    if want_en_phrases:
-        write_tsv(
-            en_phr_tsv,
-            en_phrase_counts,
-            en_phrase_examples,
-            en_phrase_files,
-        )
 
 
 def main() -> None:
