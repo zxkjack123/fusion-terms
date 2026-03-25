@@ -239,7 +239,7 @@
   - ✅ 全量测试通过
 - **潜在风险**：如果 config.toml 不存在（如 CI 环境），脚本需优雅 fallback。参考 `rime_import_safe.py` 现有的 config fallback 模式。
 
-#### Task 3.4: 新建 `tests/test_rime_export.py` (O4)
+#### ✅ Task 3.4: 新建 `tests/test_rime_export.py` (O4)
 
 - **目标**：为唯一缺少专用测试的 pipeline 模块补充单元测试
 - **修改内容**：
