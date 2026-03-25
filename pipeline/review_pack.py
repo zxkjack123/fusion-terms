@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 import shutil
+import warnings
 from dataclasses import dataclass
 from pathlib import Path
 from typing import TypedDict
@@ -113,6 +114,10 @@ def _parse_candidates_tsv(path: Path) -> tuple[str, dict[str, TsvRow]]:
         try:
             cnt = int(parts[1].strip())
         except Exception:
+            warnings.warn(
+                f"non-integer count in TSV row, defaulting to 0: {parts[1]!r}",
+                stacklevel=2,
+            )
             cnt = 0
         # Keep the last occurrence if duplicated
         # (should not happen, but deterministic).

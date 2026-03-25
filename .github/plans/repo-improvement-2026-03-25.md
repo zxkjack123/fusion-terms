@@ -127,7 +127,7 @@
   - ✅ `import warnings` 存在于文件顶部
 - **潜在风险**：现有测试如果开启 `warnings.simplefilter("error")`，可能因测试 fixture 不完整触发新 warning。但当前测试使用干净 fixture 且无损坏缓存，不会触发。
 
-#### Task 2.2: 为 review_pack.py TSV 解析添加 warning (Q3)
+#### ✅ Task 2.2: 为 review_pack.py TSV 解析添加 warning (Q3)
 
 - **目标**：在 `review_pack.py` L115 的 `except Exception` 中添加 warning，使损坏 TSV 行可观测
 - **修改内容**：
