@@ -196,7 +196,7 @@
   - ✅ 全量测试通过
 - **潜在风险**：无
 
-#### Task 3.2: 让 `rime_export.py` 读取 config.toml (Q4)
+#### ✅ Task 3.2: 让 `rime_export.py` 读取 config.toml (Q4)
 
 - **目标**：让 `rime_export.py` 像 `rime_import_safe.py` 和 `sync_to_fcitx.py` 一样从 `config.toml` 加载 `[rime]` 默认值
 - **修改内容**：

@@ -5,12 +5,49 @@ import subprocess
 import sys
 from pathlib import Path
 
+try:
+    import tomllib  # py>=3.11
+except ModuleNotFoundError:  # pragma: no cover
+    import tomli as tomllib  # type: ignore
+
+
+def _load_config(config_path: Path) -> dict:
+    if not config_path.exists():
+        return {}
+    with config_path.open("rb") as f:
+        return tomllib.load(f)
+
 
 def main() -> None:
+    pre = argparse.ArgumentParser(add_help=False)
+    pre.add_argument("--config", default="config.toml")
+    pre_args, _ = pre.parse_known_args()
+
+    config_path = Path(pre_args.config).expanduser()
+    cfg = _load_config(config_path)
+    rime_cfg = cfg.get("rime", {}) if isinstance(cfg, dict) else {}
+
+    default_dict_name = "rime_ice"
+    default_rime_script = str(Path("~/.local/bin/rime_import_wordlist.py"))
+
+    if isinstance(rime_cfg, dict):
+        dict_name_val = rime_cfg.get("dict_name")
+        if isinstance(dict_name_val, str) and dict_name_val.strip():
+            default_dict_name = dict_name_val.strip()
+
+        import_script_val = rime_cfg.get("import_script")
+        if isinstance(import_script_val, str) and import_script_val.strip():
+            default_rime_script = import_script_val.strip()
+
     parser = argparse.ArgumentParser(
         description=(
             "Generate a Rime import file from artifacts/domain_terms.txt"
         )
+    )
+    parser.add_argument(
+        "--config",
+        default=str(config_path),
+        help="Path to config.toml (used for [rime] defaults)",
     )
     parser.add_argument(
         "--input",
@@ -24,12 +61,12 @@ def main() -> None:
     )
     parser.add_argument(
         "--rime-script",
-        default=str(Path("~/.local/bin/rime_import_wordlist.py")),
+        default=default_rime_script,
         help="Existing rime_import_wordlist.py path",
     )
     parser.add_argument(
         "--dict-name",
-        default="rime_ice",
+        default=default_dict_name,
         help=(
             "Rime dict_name to import into (only used with --import). "
             "Default: rime_ice (for rime-ice)."
