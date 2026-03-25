@@ -66,7 +66,7 @@
   - ✅ 全量测试通过
 - **潜在风险**：如果未来有合法的 `internal:` 前缀用途，需要调整正则。当前仅 `internal:TODO` 历史上出现过，前缀匹配足够安全。
 
-#### Task 1.2: 检查每个 concept 至少有一条 preferred 别名 (B2)
+#### ✅ Task 1.2: 检查每个 concept 至少有一条 preferred 别名 (B2)
 
 - **目标**：在 `validate_registry.py` 的 alias 循环结束后、evidence 循环之前，检查每个 concept_id 至少有 1 条 `kind=preferred` 的别名
 - **修改内容**：

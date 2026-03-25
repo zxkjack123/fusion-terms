@@ -105,6 +105,7 @@ def validate_registry(terms_dir: Path) -> None:
 
     alias_to_concept: dict[str, str] = {}
     forbidden_or_deprecated: set[str] = set()
+    concepts_with_preferred: set[str] = set()
 
     for r in aliases_rows:
         if len(r.fields) < 4:
@@ -131,6 +132,8 @@ def validate_registry(terms_dir: Path) -> None:
 
         if kind in {"forbidden", "deprecated"}:
             forbidden_or_deprecated.add(alias)
+        if kind == "preferred":
+            concepts_with_preferred.add(concept_id)
 
         # Alias must map to exactly one concept (avoid drift).
         if alias in alias_to_concept and alias_to_concept[alias] != concept_id:
@@ -140,6 +143,16 @@ def validate_registry(terms_dir: Path) -> None:
                 f"alias {alias!r} maps to multiple concept_ids: {alias_to_concept[alias]!r} and {concept_id!r}",
             )
         alias_to_concept.setdefault(alias, concept_id)
+
+    missing_preferred = sorted(concept_ids - concepts_with_preferred)
+    if missing_preferred:
+        preview = ", ".join(repr(x) for x in missing_preferred[:10])
+        more = "" if len(missing_preferred) <= 10 else f" ... (+{len(missing_preferred) - 10} more)"
+        _fail(
+            aliases_path,
+            0,
+            f"concepts without preferred alias: {preview}{more}",
+        )
 
     # ---- evidence.tsv ----
     evidence_concept_ids: set[str] = set()
