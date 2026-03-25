@@ -469,6 +469,228 @@ def _merge_cached_file_data(
             en_phrase_examples[phr].append(ex)
 
 
+@dataclass
+class _FileExtractResult:
+    text: str
+    zh_counts: Counter[str]
+    en_counts: Counter[str]
+    en_phrase_counts: Counter[str]
+    zh_examples: dict[str, list[str]]
+    en_examples: dict[str, list[str]]
+    en_phrase_examples: dict[str, list[str]]
+
+
+def _load_old_cache_counts(
+    *,
+    incremental: bool,
+    cache_enabled: bool,
+    cache_dir: Path | None,
+    cached_entry: _CacheIndexEntry | None,
+    md_key: str,
+) -> tuple[dict[str, int], dict[str, int]]:
+    if not (
+        incremental
+        and cache_enabled
+        and cache_dir is not None
+        and cached_entry is not None
+    ):
+        return {}, {}
+
+    old_path = cache_dir / cached_entry.result_relpath
+    if not old_path.exists():
+        return {}, {}
+
+    try:
+        old_data = json.loads(old_path.read_text("utf-8"))
+        old_zh_counts = {
+            k: int(v)
+            for k, v in old_data.get("zh_counts", {}).items()
+        }
+        old_en_counts = {
+            k: int(v)
+            for k, v in old_data.get("en_counts", {}).items()
+        }
+        return old_zh_counts, old_en_counts
+    except Exception as e:
+        warnings.warn(
+            f"old cache data unreadable for {md_key}: {e}",
+            stacklevel=2,
+        )
+        return {}, {}
+
+
+def _process_single_file(
+    *,
+    md_path: Path,
+    zh_re: re.Pattern[str],
+    want_en_phrases: bool,
+    en_phrases: str,
+) -> _FileExtractResult:
+    file_zh_counts: Counter[str] = Counter()
+    file_en_counts: Counter[str] = Counter()
+    file_en_phrase_counts: Counter[str] = Counter()
+    file_zh_examples: dict[str, list[str]] = {}
+    file_en_examples: dict[str, list[str]] = {}
+    file_en_phrase_examples: dict[str, list[str]] = {}
+
+    text = read_text_file(md_path)
+    for line in clean_markdown_lines(text):
+        # Chinese spans
+        for term in zh_re.findall(line):
+            file_zh_counts[term] += 1
+            if term not in file_zh_examples:
+                # Keep at most 1 example per term per file (cache bounded).
+                file_zh_examples[term] = [line]
+
+        # English/mixed tokens
+        tokens = set()
+        tokens.update(ACRONYM_RE.findall(line))
+        tokens.update(HYPHEN_TERM_RE.findall(line))
+        tokens.update(MATERIAL_FORMULA_RE.findall(line))
+        tokens.update(SLASH_MIX_RE.findall(line))
+
+        # Phrase component words: only harvest plain lowercase words from
+        # lines that already contain some technical token.
+        if tokens:
+            low = line.lower()
+            for m in EN_WORD_RE.finditer(low):
+                w = m.group(0)
+                # LaTeX macro name like "\\omega". Be robust to
+                # stray/invisible
+                # characters between the backslash and the macro name by
+                # checking a small lookback window.
+                if "\\" in low[max(0, m.start() - 2): m.start()]:
+                    continue
+                if w in LATEX_NOISE_EN_WORDS:
+                    continue
+                if w in COMMON_EN_STOPWORDS:
+                    continue
+                tokens.add(w)
+
+        for tok in tokens:
+            file_en_counts[tok] += 1
+            if tok not in file_en_examples:
+                file_en_examples[tok] = [line]
+
+        if want_en_phrases and en_phrases == "rake":
+            phrase_stop = COMMON_EN_STOPWORDS
+            phrases = _extract_en_phrases_rake(line, stopwords=phrase_stop)
+            for phr in phrases:
+                file_en_phrase_counts[phr] += 1
+                if phr not in file_en_phrase_examples:
+                    file_en_phrase_examples[phr] = [line]
+
+    return _FileExtractResult(
+        text=text,
+        zh_counts=file_zh_counts,
+        en_counts=file_en_counts,
+        en_phrase_counts=file_en_phrase_counts,
+        zh_examples=file_zh_examples,
+        en_examples=file_en_examples,
+        en_phrase_examples=file_en_phrase_examples,
+    )
+
+
+def _update_incremental_deltas(
+    *,
+    new_zh_counts: dict[str, int],
+    new_en_counts: dict[str, int],
+    old_zh_counts: dict[str, int],
+    old_en_counts: dict[str, int],
+    zh_added_delta: Counter[str],
+    zh_removed_delta: Counter[str],
+    en_added_delta: Counter[str],
+    en_removed_delta: Counter[str],
+) -> None:
+    for term, new_cnt in new_zh_counts.items():
+        old_cnt = old_zh_counts.get(term, 0)
+        if new_cnt > old_cnt:
+            zh_added_delta[term] += new_cnt - old_cnt
+    for term, old_cnt in old_zh_counts.items():
+        new_cnt = new_zh_counts.get(term, 0)
+        if old_cnt > new_cnt:
+            zh_removed_delta[term] += old_cnt - new_cnt
+
+    for tok, new_cnt in new_en_counts.items():
+        old_cnt = old_en_counts.get(tok, 0)
+        if new_cnt > old_cnt:
+            en_added_delta[tok] += new_cnt - old_cnt
+    for tok, old_cnt in old_en_counts.items():
+        new_cnt = new_en_counts.get(tok, 0)
+        if old_cnt > new_cnt:
+            en_removed_delta[tok] += old_cnt - new_cnt
+
+
+def _merge_file_contrib(
+    *,
+    md_path: Path,
+    file_zh_counts: dict[str, int],
+    file_en_counts: dict[str, int],
+    file_zh_examples: dict[str, list[str]],
+    file_en_examples: dict[str, list[str]],
+    zh_counts: Counter[str],
+    en_counts: Counter[str],
+    zh_examples: DefaultDict[str, list[str]],
+    en_examples: DefaultDict[str, list[str]],
+    zh_files: DefaultDict[str, list[str]],
+    en_files: DefaultDict[str, list[str]],
+    max_examples: int,
+    max_files_per_term: int,
+) -> None:
+    zh_counts.update(file_zh_counts)
+    en_counts.update(file_en_counts)
+
+    md_str = str(md_path)
+    for term in file_zh_counts.keys():
+        if len(zh_files[term]) < max_files_per_term:
+            zh_files[term].append(md_str)
+    for tok in file_en_counts.keys():
+        if len(en_files[tok]) < max_files_per_term:
+            en_files[tok].append(md_str)
+
+    for term, ex_list in file_zh_examples.items():
+        if len(zh_examples[term]) >= max_examples:
+            continue
+        for ex in ex_list:
+            if len(zh_examples[term]) >= max_examples:
+                break
+            zh_examples[term].append(ex)
+    for tok, ex_list in file_en_examples.items():
+        if len(en_examples[tok]) >= max_examples:
+            continue
+        for ex in ex_list:
+            if len(en_examples[tok]) >= max_examples:
+                break
+            en_examples[tok].append(ex)
+
+
+def _merge_phrase_contrib(
+    *,
+    md_path: Path,
+    file_en_phrase_counts: dict[str, int],
+    file_en_phrase_examples: dict[str, list[str]],
+    en_phrase_counts: Counter[str],
+    en_phrase_examples: DefaultDict[str, list[str]],
+    en_phrase_files: DefaultDict[str, list[str]],
+    max_examples: int,
+    max_files_per_term: int,
+) -> None:
+    en_phrase_counts.update(file_en_phrase_counts)
+
+    md_str = str(md_path)
+    for phr in file_en_phrase_counts.keys():
+        if len(en_phrase_files[phr]) < max_files_per_term:
+            en_phrase_files[phr].append(md_str)
+
+    for phr, ex_list in file_en_phrase_examples.items():
+        if len(en_phrase_examples[phr]) >= max_examples:
+            continue
+        for ex in ex_list:
+            if len(en_phrase_examples[phr]) >= max_examples:
+                break
+            en_phrase_examples[phr].append(ex)
+
+
 def _write_tsv(
     *,
     path: Path,
@@ -675,6 +897,200 @@ def _write_extract_outputs(
     return stats
 
 
+def _prepare_cache_state(
+    *,
+    cache_enabled: bool,
+    cache_dir: Path | None,
+    extractor_sig: str,
+) -> tuple[dict, dict[str, dict], bool]:
+    cache_invalidated = False
+    cache_index: dict = {}
+    cache_files: dict[str, dict] = {}
+
+    if cache_enabled and cache_dir is not None:
+        cache_index = _load_cache_index(cache_dir)
+        if (
+            cache_index.get("version") != CACHE_SCHEMA_VERSION
+            or cache_index.get("extractor_sig") != extractor_sig
+        ):
+            cache_index = {
+                "version": CACHE_SCHEMA_VERSION,
+                "extractor_sig": extractor_sig,
+                "files": {},
+            }
+            cache_invalidated = True
+        cache_files = cache_index.setdefault("files", {})
+
+    return cache_index, cache_files, cache_invalidated
+
+
+def _scan_markdown_corpus(
+    *,
+    source_root: Path,
+    exclude_globs: list[str] | None,
+    max_files: int | None,
+    incremental: bool,
+    cache_enabled: bool,
+    cache_dir: Path | None,
+    cache_files: dict[str, dict],
+    zh_re: re.Pattern[str],
+    en_phrases: str,
+    want_en_phrases: bool,
+    max_examples: int,
+    max_files_per_term: int,
+    extractor_sig: str,
+    zh_counts: Counter[str],
+    en_counts: Counter[str],
+    en_phrase_counts: Counter[str],
+    zh_examples: DefaultDict[str, list[str]],
+    en_examples: DefaultDict[str, list[str]],
+    en_phrase_examples: DefaultDict[str, list[str]],
+    zh_files: DefaultDict[str, list[str]],
+    en_files: DefaultDict[str, list[str]],
+    en_phrase_files: DefaultDict[str, list[str]],
+    zh_added_delta: Counter[str],
+    zh_removed_delta: Counter[str],
+    en_added_delta: Counter[str],
+    en_removed_delta: Counter[str],
+) -> tuple[int, int, int, int, int, list[str]]:
+    cache_hits = 0
+    cache_misses = 0
+    processed_files = 0
+    skipped_files = 0
+    processed_paths_sample: list[str] = []
+    scanned = 0
+
+    for md_path in iter_markdown_files(
+        source_root,
+        exclude_globs=exclude_globs or None,
+    ):
+        if max_files is not None and scanned >= max_files:
+            break
+        scanned += 1
+
+        st = md_path.stat()
+        md_key = str(md_path)
+        cached_data, cached_entry, _ = _load_cached_results(
+            incremental=incremental,
+            cache_enabled=cache_enabled,
+            cache_dir=cache_dir,
+            cache_files=cache_files,
+            md_path=md_path,
+            md_key=md_key,
+            st_mtime_ns=int(st.st_mtime_ns),
+            st_size=int(st.st_size),
+        )
+
+        if incremental and cached_data is not None:
+            cache_hits += 1
+            skipped_files += 1
+            _merge_cached_file_data(
+                md_path=md_path,
+                cached_data=cached_data,
+                zh_counts=zh_counts,
+                en_counts=en_counts,
+                zh_examples=zh_examples,
+                en_examples=en_examples,
+                zh_files=zh_files,
+                en_files=en_files,
+                en_phrase_counts=en_phrase_counts,
+                en_phrase_examples=en_phrase_examples,
+                en_phrase_files=en_phrase_files,
+                max_examples=max_examples,
+                max_files_per_term=max_files_per_term,
+                want_en_phrases=want_en_phrases,
+            )
+            continue
+
+        if cache_enabled:
+            cache_misses += 1
+        processed_files += 1
+        if len(processed_paths_sample) < 50:
+            processed_paths_sample.append(md_key)
+
+        old_zh_counts, old_en_counts = _load_old_cache_counts(
+            incremental=incremental,
+            cache_enabled=cache_enabled,
+            cache_dir=cache_dir,
+            cached_entry=cached_entry,
+            md_key=md_key,
+        )
+
+        file_result = _process_single_file(
+            md_path=md_path,
+            zh_re=zh_re,
+            want_en_phrases=want_en_phrases,
+            en_phrases=en_phrases,
+        )
+
+        if incremental:
+            _update_incremental_deltas(
+                new_zh_counts=dict(file_result.zh_counts),
+                new_en_counts=dict(file_result.en_counts),
+                old_zh_counts=old_zh_counts,
+                old_en_counts=old_en_counts,
+                zh_added_delta=zh_added_delta,
+                zh_removed_delta=zh_removed_delta,
+                en_added_delta=en_added_delta,
+                en_removed_delta=en_removed_delta,
+            )
+
+        _merge_file_contrib(
+            md_path=md_path,
+            file_zh_counts=dict(file_result.zh_counts),
+            file_en_counts=dict(file_result.en_counts),
+            file_zh_examples=file_result.zh_examples,
+            file_en_examples=file_result.en_examples,
+            zh_counts=zh_counts,
+            en_counts=en_counts,
+            zh_examples=zh_examples,
+            en_examples=en_examples,
+            zh_files=zh_files,
+            en_files=en_files,
+            max_examples=max_examples,
+            max_files_per_term=max_files_per_term,
+        )
+
+        if want_en_phrases:
+            _merge_phrase_contrib(
+                md_path=md_path,
+                file_en_phrase_counts=dict(file_result.en_phrase_counts),
+                file_en_phrase_examples=file_result.en_phrase_examples,
+                en_phrase_counts=en_phrase_counts,
+                en_phrase_examples=en_phrase_examples,
+                en_phrase_files=en_phrase_files,
+                max_examples=max_examples,
+                max_files_per_term=max_files_per_term,
+            )
+
+        _save_file_cache(
+            cache_enabled=cache_enabled,
+            cache_dir=cache_dir,
+            cache_files=cache_files,
+            md_key=md_key,
+            st_mtime_ns=int(st.st_mtime_ns),
+            st_size=int(st.st_size),
+            extractor_sig=extractor_sig,
+            text=file_result.text,
+            file_zh_counts=file_result.zh_counts,
+            file_en_counts=file_result.en_counts,
+            file_zh_examples=file_result.zh_examples,
+            file_en_examples=file_result.en_examples,
+            file_en_phrase_counts=file_result.en_phrase_counts,
+            file_en_phrase_examples=file_result.en_phrase_examples,
+            want_en_phrases=want_en_phrases,
+        )
+
+    return (
+        scanned,
+        cache_hits,
+        cache_misses,
+        processed_files,
+        skipped_files,
+        processed_paths_sample,
+    )
+
+
 def load_config(config_path: Path) -> dict:
     if not config_path.exists():
         return {}
@@ -730,272 +1146,52 @@ def extract(
     if cache_enabled and cache_dir is None:
         cache_dir = out_dir / ".cache" / "extract_v1"
 
-    cache_hits = 0
-    cache_misses = 0
-    processed_files = 0
-    skipped_files = 0
-    cache_invalidated = False
-
-    cache_index: dict = {}
-    cache_files: dict[str, dict] = {}
-    if cache_enabled and cache_dir is not None:
-        cache_index = _load_cache_index(cache_dir)
-        if (
-            cache_index.get("version") != CACHE_SCHEMA_VERSION
-            or cache_index.get("extractor_sig") != extractor_sig
-        ):
-            cache_index = {
-                "version": CACHE_SCHEMA_VERSION,
-                "extractor_sig": extractor_sig,
-                "files": {},
-            }
-            cache_invalidated = True
-        cache_files = cache_index.setdefault("files", {})
+    cache_index, cache_files, cache_invalidated = _prepare_cache_state(
+        cache_enabled=cache_enabled,
+        cache_dir=cache_dir,
+        extractor_sig=extractor_sig,
+    )
 
     # Delta report: aggregate term changes across processed files.
     zh_added_delta: Counter[str] = Counter()
     zh_removed_delta: Counter[str] = Counter()
     en_added_delta: Counter[str] = Counter()
     en_removed_delta: Counter[str] = Counter()
-    processed_paths_sample: list[str] = []
-
-    def _merge_file_contrib(
-        md_path: Path,
-        file_zh_counts: dict[str, int],
-        file_en_counts: dict[str, int],
-        file_zh_examples: dict[str, list[str]],
-        file_en_examples: dict[str, list[str]],
-    ) -> None:
-        # counts
-        zh_counts.update(file_zh_counts)
-        en_counts.update(file_en_counts)
-
-        # files list per term
-        md_str = str(md_path)
-        for term in file_zh_counts.keys():
-            if len(zh_files[term]) < max_files_per_term:
-                zh_files[term].append(md_str)
-        for tok in file_en_counts.keys():
-            if len(en_files[tok]) < max_files_per_term:
-                en_files[tok].append(md_str)
-
-        # examples (bounded)
-        for term, ex_list in file_zh_examples.items():
-            if len(zh_examples[term]) >= max_examples:
-                continue
-            for ex in ex_list:
-                if len(zh_examples[term]) >= max_examples:
-                    break
-                zh_examples[term].append(ex)
-        for tok, ex_list in file_en_examples.items():
-            if len(en_examples[tok]) >= max_examples:
-                continue
-            for ex in ex_list:
-                if len(en_examples[tok]) >= max_examples:
-                    break
-                en_examples[tok].append(ex)
-
-    scanned = 0
-    for md_path in iter_markdown_files(
-        source_root,
-        exclude_globs=exclude_globs or None,
-    ):
-        if max_files is not None and scanned >= max_files:
-            break
-        scanned += 1
-
-        st = md_path.stat()
-        md_key = str(md_path)
-        cached_data, cached_entry, _ = _load_cached_results(
-            incremental=incremental,
-            cache_enabled=cache_enabled,
-            cache_dir=cache_dir,
-            cache_files=cache_files,
-            md_path=md_path,
-            md_key=md_key,
-            st_mtime_ns=int(st.st_mtime_ns),
-            st_size=int(st.st_size),
-        )
-
-        if incremental and cached_data is not None:
-            cache_hits += 1
-            skipped_files += 1
-            _merge_cached_file_data(
-                md_path=md_path,
-                cached_data=cached_data,
-                zh_counts=zh_counts,
-                en_counts=en_counts,
-                zh_examples=zh_examples,
-                en_examples=en_examples,
-                zh_files=zh_files,
-                en_files=en_files,
-                en_phrase_counts=en_phrase_counts,
-                en_phrase_examples=en_phrase_examples,
-                en_phrase_files=en_phrase_files,
-                max_examples=max_examples,
-                max_files_per_term=max_files_per_term,
-                want_en_phrases=want_en_phrases,
-            )
-            continue
-
-        # Cache miss or full processing.
-        if cache_enabled:
-            cache_misses += 1
-        processed_files += 1
-        if len(processed_paths_sample) < 50:
-            processed_paths_sample.append(md_key)
-
-        old_zh_counts: dict[str, int] = {}
-        old_en_counts: dict[str, int] = {}
-        if (
-            incremental
-            and cache_enabled
-            and cache_dir is not None
-            and cached_entry is not None
-        ):
-            old_path = cache_dir / cached_entry.result_relpath
-            if old_path.exists():
-                try:
-                    old_data = json.loads(old_path.read_text("utf-8"))
-                    old_zh_counts = {
-                        k: int(v)
-                        for k, v in old_data.get("zh_counts", {}).items()
-                    }
-                    old_en_counts = {
-                        k: int(v)
-                        for k, v in old_data.get("en_counts", {}).items()
-                    }
-                except Exception as e:
-                    warnings.warn(
-                        f"old cache data unreadable for {md_key}: {e}",
-                        stacklevel=2,
-                    )
-                    old_zh_counts = {}
-                    old_en_counts = {}
-
-        file_zh_counts: Counter[str] = Counter()
-        file_en_counts: Counter[str] = Counter()
-        file_en_phrase_counts: Counter[str] = Counter()
-        file_zh_examples: dict[str, list[str]] = {}
-        file_en_examples: dict[str, list[str]] = {}
-        file_en_phrase_examples: dict[str, list[str]] = {}
-
-        text = read_text_file(md_path)
-        for line in clean_markdown_lines(text):
-            # Chinese spans
-            for term in zh_re.findall(line):
-                file_zh_counts[term] += 1
-                if term not in file_zh_examples:
-                    # Keep at most 1 example per term per file (cache bounded).
-                    file_zh_examples[term] = [line]
-
-            # English/mixed tokens
-            tokens = set()
-            tokens.update(ACRONYM_RE.findall(line))
-            tokens.update(HYPHEN_TERM_RE.findall(line))
-            tokens.update(MATERIAL_FORMULA_RE.findall(line))
-            tokens.update(SLASH_MIX_RE.findall(line))
-
-            # Phrase component words: only harvest plain lowercase words from
-            # lines that already contain some technical token.
-            if tokens:
-                low = line.lower()
-                for m in EN_WORD_RE.finditer(low):
-                    w = m.group(0)
-                    # LaTeX macro name like "\\omega". Be robust to
-                    # stray/invisible
-                    # characters between the backslash and the macro name by
-                    # checking a small lookback window.
-                    if "\\" in low[max(0, m.start() - 2): m.start()]:
-                        continue
-                    if w in LATEX_NOISE_EN_WORDS:
-                        continue
-                    if w in COMMON_EN_STOPWORDS:
-                        continue
-                    tokens.add(w)
-
-            for tok in tokens:
-                file_en_counts[tok] += 1
-                if tok not in file_en_examples:
-                    file_en_examples[tok] = [line]
-
-            if want_en_phrases and en_phrases == "rake":
-                phrase_stop = COMMON_EN_STOPWORDS
-                phrases = _extract_en_phrases_rake(line, stopwords=phrase_stop)
-                for phr in phrases:
-                    file_en_phrase_counts[phr] += 1
-                    if phr not in file_en_phrase_examples:
-                        file_en_phrase_examples[phr] = [line]
-
-        # Update delta counters (only meaningful when incremental).
-        if incremental:
-            new_zh = dict(file_zh_counts)
-            new_en = dict(file_en_counts)
-
-            for term, new_cnt in new_zh.items():
-                old_cnt = old_zh_counts.get(term, 0)
-                if new_cnt > old_cnt:
-                    zh_added_delta[term] += new_cnt - old_cnt
-            for term, old_cnt in old_zh_counts.items():
-                new_cnt = new_zh.get(term, 0)
-                if old_cnt > new_cnt:
-                    zh_removed_delta[term] += old_cnt - new_cnt
-
-            for tok, new_cnt in new_en.items():
-                old_cnt = old_en_counts.get(tok, 0)
-                if new_cnt > old_cnt:
-                    en_added_delta[tok] += new_cnt - old_cnt
-            for tok, old_cnt in old_en_counts.items():
-                new_cnt = new_en.get(tok, 0)
-                if old_cnt > new_cnt:
-                    en_removed_delta[tok] += old_cnt - new_cnt
-
-            # Phrase deltas are intentionally not tracked in extract_delta.json
-            # (discovery-only output).
-
-        # Merge file contribution into globals.
-        _merge_file_contrib(
-            md_path,
-            file_zh_counts=dict(file_zh_counts),
-            file_en_counts=dict(file_en_counts),
-            file_zh_examples=file_zh_examples,
-            file_en_examples=file_en_examples,
-        )
-
-        if want_en_phrases:
-            en_phrase_counts.update(dict(file_en_phrase_counts))
-
-            md_str = str(md_path)
-            for phr in file_en_phrase_counts.keys():
-                if len(en_phrase_files[phr]) < max_files_per_term:
-                    en_phrase_files[phr].append(md_str)
-
-            for phr, ex_list in file_en_phrase_examples.items():
-                if len(en_phrase_examples[phr]) >= max_examples:
-                    continue
-                for ex in ex_list:
-                    if len(en_phrase_examples[phr]) >= max_examples:
-                        break
-                    en_phrase_examples[phr].append(ex)
-
-        # Persist per-file cache.
-        _save_file_cache(
-            cache_enabled=cache_enabled,
-            cache_dir=cache_dir,
-            cache_files=cache_files,
-            md_key=md_key,
-            st_mtime_ns=int(st.st_mtime_ns),
-            st_size=int(st.st_size),
-            extractor_sig=extractor_sig,
-            text=text,
-            file_zh_counts=file_zh_counts,
-            file_en_counts=file_en_counts,
-            file_zh_examples=file_zh_examples,
-            file_en_examples=file_en_examples,
-            file_en_phrase_counts=file_en_phrase_counts,
-            file_en_phrase_examples=file_en_phrase_examples,
-            want_en_phrases=want_en_phrases,
-        )
+    (
+        scanned,
+        cache_hits,
+        cache_misses,
+        processed_files,
+        skipped_files,
+        processed_paths_sample,
+    ) = _scan_markdown_corpus(
+        source_root=source_root,
+        exclude_globs=exclude_globs,
+        max_files=max_files,
+        incremental=incremental,
+        cache_enabled=cache_enabled,
+        cache_dir=cache_dir,
+        cache_files=cache_files,
+        zh_re=zh_re,
+        en_phrases=en_phrases,
+        want_en_phrases=want_en_phrases,
+        max_examples=max_examples,
+        max_files_per_term=max_files_per_term,
+        extractor_sig=extractor_sig,
+        zh_counts=zh_counts,
+        en_counts=en_counts,
+        en_phrase_counts=en_phrase_counts,
+        zh_examples=zh_examples,
+        en_examples=en_examples,
+        en_phrase_examples=en_phrase_examples,
+        zh_files=zh_files,
+        en_files=en_files,
+        en_phrase_files=en_phrase_files,
+        zh_added_delta=zh_added_delta,
+        zh_removed_delta=zh_removed_delta,
+        en_added_delta=en_added_delta,
+        en_removed_delta=en_removed_delta,
+    )
 
     if cache_enabled and cache_dir is not None:
         cache_index["version"] = CACHE_SCHEMA_VERSION
