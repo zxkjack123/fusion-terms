@@ -36,3 +36,4 @@ backup_paths = [
 	"~/.config/fcitx5/rime",
 ]
 sync_dest = "~/.config/fcitx/rime/wordlists/domain_terms.txt"
+import_script = "~/.local/bin/rime_import_wordlist.py"

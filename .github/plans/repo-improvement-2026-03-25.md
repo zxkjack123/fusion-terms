@@ -181,7 +181,7 @@
 
 ### Phase 3: Rime 配置统一
 
-#### Task 3.1: 在 `config.toml` 添加 `[rime].import_script` (Q5 前置)
+#### ✅ Task 3.1: 在 `config.toml` 添加 `[rime].import_script` (Q5 前置)
 
 - **目标**：在 `config.toml` 的 `[rime]` section 中添加 `import_script` 键，将硬编码的 `~/.local/bin/rime_import_wordlist.py` 路径集中管理
 - **修改内容**：
