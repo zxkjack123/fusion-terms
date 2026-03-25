@@ -28,7 +28,9 @@ def main() -> None:
     rime_cfg = cfg.get("rime", {}) if isinstance(cfg, dict) else {}
 
     default_dict_name = "rime_ice"
-    default_rime_script = str(Path("~/.local/bin/rime_import_wordlist.py"))
+    default_rime_script = str(
+        (Path("~").expanduser() / ".local/bin/rime_import_wordlist.py")
+    )
 
     if isinstance(rime_cfg, dict):
         dict_name_val = rime_cfg.get("dict_name")

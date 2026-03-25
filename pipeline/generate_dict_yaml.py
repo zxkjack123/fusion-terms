@@ -119,6 +119,21 @@ def generate_dict_yaml(
 
 
 def main() -> None:
+    pre = argparse.ArgumentParser(add_help=False)
+    pre.add_argument("--config", default="config.toml")
+    pre_args, _ = pre.parse_known_args()
+
+    config_path = Path(pre_args.config).expanduser()
+    cfg = _load_config(config_path)
+    rime_cfg = cfg.get("rime", {}) if isinstance(cfg, dict) else {}
+    default_rime_script = str(
+        (Path("~").expanduser() / ".local/bin/rime_import_wordlist.py")
+    )
+    if isinstance(rime_cfg, dict):
+        script_val = rime_cfg.get("import_script")
+        if isinstance(script_val, str) and script_val.strip():
+            default_rime_script = script_val.strip()
+
     parser = argparse.ArgumentParser(
         description=(
             "Generate a baked Rime dictionary (.dict.yaml) from "
@@ -127,7 +142,7 @@ def main() -> None:
     )
     parser.add_argument(
         "--config",
-        default="config.toml",
+        default=str(config_path),
         help="Path to config.toml",
     )
     parser.add_argument(
@@ -150,7 +165,7 @@ def main() -> None:
     )
     parser.add_argument(
         "--rime-script",
-        default=str(Path("~/.local/bin/rime_import_wordlist.py")),
+        default=default_rime_script,
         help="Existing rime_import_wordlist.py path",
     )
     parser.add_argument(
@@ -166,7 +181,7 @@ def main() -> None:
 
     args = parser.parse_args()
 
-    cfg = _load_config(Path(args.config))
+    cfg = _load_config(Path(args.config).expanduser())
     out_dir = Path(
         args.out_dir or cfg.get("artifacts", {}).get("out_dir", "artifacts")
     ).expanduser()

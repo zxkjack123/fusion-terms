@@ -253,10 +253,17 @@ def main() -> None:
     rime_cfg = cfg.get("rime", {}) if isinstance(cfg, dict) else {}
 
     default_dict_name = "rime_ice"
+    default_rime_script = str(
+        (Path("~").expanduser() / ".local/bin/rime_import_wordlist.py")
+    )
     if isinstance(rime_cfg, dict):
         val = rime_cfg.get("dict_name")
         if isinstance(val, str) and val.strip():
             default_dict_name = val.strip()
+
+        script_val = rime_cfg.get("import_script")
+        if isinstance(script_val, str) and script_val.strip():
+            default_rime_script = script_val.strip()
 
     default_backup_paths: list[str] = []
     if isinstance(rime_cfg, dict):
@@ -287,7 +294,7 @@ def main() -> None:
     )
     parser.add_argument(
         "--rime-script",
-        default=str(Path("~/.local/bin/rime_import_wordlist.py")),
+        default=default_rime_script,
         help="Existing rime_import_wordlist.py path",
     )
     parser.add_argument(

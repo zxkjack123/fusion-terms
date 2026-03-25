@@ -220,7 +220,7 @@
   - ✅ 全量测试通过
 - **潜在风险**：`rime_export.py` 当前使用 `sys.executable` 调用子进程，config 加载不影响此路径。
 
-#### Task 3.3: 统一 3 个脚本的 `import_script` 默认值来源 (Q5)
+#### ✅ Task 3.3: 统一 3 个脚本的 `import_script` 默认值来源 (Q5)
 
 - **目标**：让 `rime_import_safe.py` 和 `generate_dict_yaml.py` 也从 `[rime].import_script` 读取默认 rime script 路径，消除 3 处硬编码
 - **修改内容**：
