@@ -276,7 +276,7 @@
 
 ### Phase 4: CI/工具链升级
 
-#### Task 4.1: 扩展 CI Python 矩阵 + 添加 coverage/mypy/format (O1 + O2)
+#### ✅ Task 4.1: 扩展 CI Python 矩阵 + 添加 coverage/mypy/format (O1 + O2)
 
 - **目标**：CI 覆盖 Python 3.10/3.11/3.12，并添加 coverage、mypy 类型检查、ruff format 门禁
 - **修改内容**：
@@ -302,7 +302,7 @@
   - ✅ 本地 `ruff format --check .` 通过
 - **潜在风险**：mypy 可能在 pipeline 模块中发现类型不匹配。用 `--ignore-missing-imports` 和初轮宽松模式降低阻断风险。如果 mypy 报错过多（>20 条），则改为 `mypy pipeline/ || true`（仅报告，不阻断），在后续专项修复。
 
-#### Task 4.2: 同步 ruff 版本 (O3)
+#### ✅ Task 4.2: 同步 ruff 版本 (O3)
 
 - **目标**：确保 pre-commit 和 requirements-dev.txt 使用一致的 ruff 版本
 - **修改内容**：
@@ -320,7 +320,7 @@
   - ✅ `pre-commit run --all-files` 通过
 - **潜在风险**：如果用户环境中 pip 缓存了旧 ruff，需 `pip install --upgrade ruff`。
 
-#### Task 4.3: Phase 4 commit
+#### ✅ Task 4.3: Phase 4 commit
 
 - **目标**：提交 CI/工具链升级
 - **修改内容**：
