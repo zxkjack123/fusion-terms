@@ -26,7 +26,7 @@ registry under `terms/registry/`:
 - `aliases.tsv` — preferred/alias/deprecated/forbidden variants bound to a concept
 - `evidence.tsv` — traceable source rows per concept
 
-Current snapshot (as of this hardening cycle):
+Current snapshot (as of v2026.03.24.1):
 
 - concepts: **949**
 - aliases: **4637**

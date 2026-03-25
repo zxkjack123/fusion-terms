@@ -144,6 +144,9 @@ def _extract_en_phrases_rake(line: str, *, stopwords: set[str]) -> set[str]:
     - Split on stopwords.
     - Keep 2-6 word phrases.
 
+    The caller-provided stopwords are applied in addition to this module's
+    built-in conservative stopword/noise filters.
+
     NOTE: This is for *candidate discovery only* and is intentionally
     conservative.
     """

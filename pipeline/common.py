@@ -176,6 +176,7 @@ def clean_markdown_lines(text: str) -> list[str]:
 
 def read_text_file(path: Path, max_bytes: int = 10_000_000) -> str:
     # Guardrail for absurdly large files.
+    # 10 MB per-file limit; override via caller when needed.
     with path.open("rb") as f:
         data = f.read(max_bytes + 1)
     if len(data) > max_bytes:

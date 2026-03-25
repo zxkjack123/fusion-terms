@@ -115,7 +115,7 @@ def generate_dict_yaml(
             try:
                 payload_path.unlink()
             except Exception:
-                pass
+                pass  # best-effort temp cleanup
 
 
 def main() -> None:

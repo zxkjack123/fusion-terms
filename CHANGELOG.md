@@ -24,6 +24,30 @@
 ### Fixed
 
 
+## v2026.03.25
+
+### Added
+
+- 新增 `tests/test_extractor_signature.py`，覆盖 `_extractor_signature()` 的确定性与参数敏感性，防止缓存签名回归。
+- 新增 `tests/test_rime_export.py`，补齐 `pipeline/rime_export.py` 的配置默认值与 CLI 覆盖行为测试。
+- 新增 `tests/test_extract_regression.py` 与基线快照（`artifacts/_smoke_run/baseline_extract_{zh,en}_head.tsv`），用于 `extract()` 重构等价性回归。
+- 新增 `CONTRIBUTING.md`，提供环境搭建、测试、pre-commit、registry 入库与发布流程指引。
+
+### Changed
+
+- `pipeline/rime_export.py` 支持 `--config` 并读取 `[rime]` 配置，统一与其他 Rime 脚本的默认值来源。
+- `pipeline/rime_import_safe.py` 与 `pipeline/generate_dict_yaml.py` 的 `--rime-script` 默认值改为优先读取 `[rime].import_script`。
+- CI 升级为 Python 3.10/3.11/3.12 矩阵，并加入 coverage、mypy、format 检查步骤（当前按仓库基线采用渐进式门禁）。
+- `pipeline/extract_candidates.py` 完成大规模结构化重构：`extract()` 从 542 行降至 138 行，缓存、单文件处理、合并与输出写入逻辑拆分为可测试模块级函数。
+- README 术语快照改为显式版本锚定（`v2026.03.24.1`），历史计划文档补充“已实现/已完成”状态标记。
+
+### Fixed
+
+- `pipeline/validate_registry.py` 增加数据质量硬约束：拒绝 `internal:TODO` 占位来源，并要求每个概念至少包含一条 `preferred` 别名。
+- `pipeline/extract_candidates.py` 与 `pipeline/review_pack.py` 的异常回退路径补充 `warnings.warn`，避免静默吞错。
+- 开发工具链版本对齐：`requirements-dev.txt` 中 ruff 下限同步至与 pre-commit 一致的版本区间。
+
+
 ## v2026.03.24.1
 
 ### Changed
