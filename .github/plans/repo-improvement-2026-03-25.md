@@ -106,7 +106,7 @@
 
 ### Phase 2: 静默异常修复 + 缓存签名测试
 
-#### Task 2.1: 为缓存路径的 bare except 添加 warning (Q2)
+#### ✅ Task 2.1: 为缓存路径的 bare except 添加 warning (Q2)
 
 - **目标**：在 `extract_candidates.py` 的 4 处 bare `except Exception` 中添加 `warnings.warn()`，使缓存损坏可观测
 - **修改内容**：

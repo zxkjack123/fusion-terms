@@ -4,6 +4,7 @@ import argparse
 import hashlib
 import json
 import re
+import warnings
 from collections import Counter, defaultdict
 from dataclasses import dataclass
 from pathlib import Path
@@ -243,8 +244,12 @@ def _load_cache_index(cache_dir: Path) -> dict:
         return {}
     try:
         return json.loads(idx_path.read_text("utf-8"))
-    except Exception:
+    except Exception as e:
         # Corrupt cache; treat as missing.
+        warnings.warn(
+            f"cache index corrupted, rebuilding: {e}",
+            stacklevel=2,
+        )
         return {}
 
 
@@ -264,7 +269,11 @@ def _cache_entry_from_dict(d: dict) -> _CacheIndexEntry | None:
             sha256=str(d.get("sha256", "")),
             result_relpath=str(d["result_relpath"]),
         )
-    except Exception:
+    except Exception as e:
+        warnings.warn(
+            f"cache entry malformed: {e}",
+            stacklevel=2,
+        )
         return None
 
 
@@ -428,8 +437,12 @@ def extract(
 
             try:
                 data = json.loads(cached_result_path.read_text("utf-8"))
-            except Exception:
+            except Exception as e:
                 # Corrupt cache entry; fall back to re-processing.
+                warnings.warn(
+                    f"cache entry unreadable for {md_key}: {e}",
+                    stacklevel=2,
+                )
                 can_use_cache = False
             else:
                 cache_hits += 1
@@ -506,7 +519,11 @@ def extract(
                         k: int(v)
                         for k, v in old_data.get("en_counts", {}).items()
                     }
-                except Exception:
+                except Exception as e:
+                    warnings.warn(
+                        f"old cache data unreadable for {md_key}: {e}",
+                        stacklevel=2,
+                    )
                     old_zh_counts = {}
                     old_en_counts = {}
 
