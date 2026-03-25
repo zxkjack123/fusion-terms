@@ -162,7 +162,7 @@
   - ✅ 全量测试通过
 - **潜在风险**：`_extractor_signature` 以下划线开头为"私有"，但 Python 中可直接导入，测试此类函数是合理的。
 
-#### Task 2.4: Phase 2 commit
+#### ✅ Task 2.4: Phase 2 commit
 
 - **目标**：提交静默异常修复和签名测试
 - **修改内容**：
