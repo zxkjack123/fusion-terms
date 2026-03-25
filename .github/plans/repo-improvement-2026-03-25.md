@@ -143,7 +143,7 @@
   - ✅ 全量测试通过
 - **潜在风险**：如果 review pack fixture 有含非整数 count 的行，新 warning 会被触发但不影响结果。
 
-#### Task 2.3: 添加 `_extractor_signature()` 单元测试 (B3)
+#### ✅ Task 2.3: 添加 `_extractor_signature()` 单元测试 (B3)
 
 - **目标**：验证 `_extractor_signature()` 在参数变化时产生不同签名，防止缓存签名回归
 - **修改内容**：
