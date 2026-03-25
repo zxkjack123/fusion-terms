@@ -157,6 +157,12 @@ def validate_registry(terms_dir: Path) -> None:
             _fail(r.path, r.lineno, f"unknown concept_id {concept_id!r}")
         if not source:
             _fail(r.path, r.lineno, "source is empty")
+        if source.startswith("internal:TODO"):
+            _fail(
+                r.path,
+                r.lineno,
+                f"placeholder evidence source not allowed: {source!r}",
+            )
         evidence_concept_ids.add(concept_id)
 
     missing_evidence = sorted(concept_ids - evidence_concept_ids)

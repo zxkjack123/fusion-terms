@@ -184,3 +184,43 @@ def test_validate_registry_rejects_missing_evidence(tmp_path: Path) -> None:
     combined = (p.stdout or "") + "\n" + (p.stderr or "")
     assert "concepts without evidence rows" in combined
     assert "'tokamak'" in combined
+
+
+def test_validate_registry_rejects_internal_todo_evidence(tmp_path: Path) -> None:
+    repo_root = Path(__file__).resolve().parents[1]
+
+    terms_dir = tmp_path / "terms"
+    terms_dir.mkdir(parents=True, exist_ok=True)
+    (terms_dir / "allowlist_zh.txt").write_text("\n", encoding="utf-8")
+    (terms_dir / "allowlist_en.txt").write_text("\n", encoding="utf-8")
+
+    _write_registry_tables(
+        terms_dir,
+        concepts="iter\tdevice\n",
+        aliases="ITER\titer\tabbr\tpreferred\n",
+        evidence="iter\tinternal:TODO:iter-source\n",
+    )
+
+    p = _run_validator(repo_root, terms_dir)
+    assert p.returncode != 0
+    combined = (p.stdout or "") + "\n" + (p.stderr or "")
+    assert "placeholder evidence source not allowed" in combined
+
+
+def test_validate_registry_accepts_url_evidence(tmp_path: Path) -> None:
+    repo_root = Path(__file__).resolve().parents[1]
+
+    terms_dir = tmp_path / "terms"
+    terms_dir.mkdir(parents=True, exist_ok=True)
+    (terms_dir / "allowlist_zh.txt").write_text("\n", encoding="utf-8")
+    (terms_dir / "allowlist_en.txt").write_text("\n", encoding="utf-8")
+
+    _write_registry_tables(
+        terms_dir,
+        concepts="iter\tdevice\n",
+        aliases="ITER\titer\tabbr\tpreferred\n",
+        evidence="iter\thttps://www.iter.org\n",
+    )
+
+    p = _run_validator(repo_root, terms_dir)
+    assert p.returncode == 0, f"stdout:\n{p.stdout}\nstderr:\n{p.stderr}"
