@@ -277,6 +277,198 @@ def _cache_entry_from_dict(d: dict) -> _CacheIndexEntry | None:
         return None
 
 
+def _load_cached_results(
+    *,
+    incremental: bool,
+    cache_enabled: bool,
+    cache_dir: Path | None,
+    cache_files: dict[str, dict],
+    md_path: Path,
+    md_key: str,
+    st_mtime_ns: int,
+    st_size: int,
+) -> tuple[dict | None, _CacheIndexEntry | None, Path | None]:
+    cached_entry = (
+        _cache_entry_from_dict(cache_files.get(md_key, {}))
+        if cache_enabled
+        else None
+    )
+
+    can_use_cache = False
+    cached_result_path: Path | None = None
+    if (
+        cache_enabled
+        and cached_entry is not None
+        and cache_dir is not None
+    ):
+        if (
+            cached_entry.mtime_ns == st_mtime_ns
+            and cached_entry.size == st_size
+        ):
+            cached_result_path = cache_dir / cached_entry.result_relpath
+            if cached_result_path.exists():
+                can_use_cache = True
+
+    if not (incremental and can_use_cache and cached_result_path is not None):
+        return None, cached_entry, cached_result_path
+
+    try:
+        data = json.loads(cached_result_path.read_text("utf-8"))
+    except Exception as e:
+        warnings.warn(
+            f"cache entry unreadable for {md_key}: {e}",
+            stacklevel=2,
+        )
+        return None, cached_entry, cached_result_path
+
+    return data, cached_entry, cached_result_path
+
+
+def _save_file_cache(
+    *,
+    cache_enabled: bool,
+    cache_dir: Path | None,
+    cache_files: dict[str, dict],
+    md_key: str,
+    st_mtime_ns: int,
+    st_size: int,
+    extractor_sig: str,
+    text: str,
+    file_zh_counts: Counter[str],
+    file_en_counts: Counter[str],
+    file_zh_examples: dict[str, list[str]],
+    file_en_examples: dict[str, list[str]],
+    file_en_phrase_counts: Counter[str],
+    file_en_phrase_examples: dict[str, list[str]],
+    want_en_phrases: bool,
+) -> None:
+    if not (cache_enabled and cache_dir is not None):
+        return
+
+    relpath = f"files/{_sha1_str(md_key)}.json"
+    result_path = cache_dir / relpath
+    result_path.parent.mkdir(parents=True, exist_ok=True)
+
+    payload = {
+        "version": CACHE_SCHEMA_VERSION,
+        "extractor_sig": extractor_sig,
+        "path": md_key,
+        "mtime_ns": int(st_mtime_ns),
+        "size": int(st_size),
+        "sha256": _sha256_text(text),
+        "zh_counts": dict(file_zh_counts),
+        "en_counts": dict(file_en_counts),
+        "zh_examples": file_zh_examples,
+        "en_examples": file_en_examples,
+        "en_phrase_counts": (
+            dict(file_en_phrase_counts)
+            if want_en_phrases
+            else {}
+        ),
+        "en_phrase_examples": (
+            file_en_phrase_examples
+            if want_en_phrases
+            else {}
+        ),
+    }
+    result_path.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2),
+        "utf-8",
+    )
+    cache_files[md_key] = {
+        "mtime_ns": int(st_mtime_ns),
+        "size": int(st_size),
+        "sha256": payload["sha256"],
+        "result_relpath": relpath,
+    }
+
+
+def _merge_cached_file_data(
+    *,
+    md_path: Path,
+    cached_data: dict,
+    zh_counts: Counter[str],
+    en_counts: Counter[str],
+    zh_examples: DefaultDict[str, list[str]],
+    en_examples: DefaultDict[str, list[str]],
+    zh_files: DefaultDict[str, list[str]],
+    en_files: DefaultDict[str, list[str]],
+    en_phrase_counts: Counter[str],
+    en_phrase_examples: DefaultDict[str, list[str]],
+    en_phrase_files: DefaultDict[str, list[str]],
+    max_examples: int,
+    max_files_per_term: int,
+    want_en_phrases: bool,
+) -> None:
+    file_zh_counts = {
+        k: int(v)
+        for k, v in cached_data.get("zh_counts", {}).items()
+    }
+    file_en_counts = {
+        k: int(v)
+        for k, v in cached_data.get("en_counts", {}).items()
+    }
+    file_zh_examples = {
+        k: list(v)
+        for k, v in cached_data.get("zh_examples", {}).items()
+    }
+    file_en_examples = {
+        k: list(v)
+        for k, v in cached_data.get("en_examples", {}).items()
+    }
+
+    zh_counts.update(file_zh_counts)
+    en_counts.update(file_en_counts)
+
+    md_str = str(md_path)
+    for term in file_zh_counts.keys():
+        if len(zh_files[term]) < max_files_per_term:
+            zh_files[term].append(md_str)
+    for tok in file_en_counts.keys():
+        if len(en_files[tok]) < max_files_per_term:
+            en_files[tok].append(md_str)
+
+    for term, ex_list in file_zh_examples.items():
+        if len(zh_examples[term]) >= max_examples:
+            continue
+        for ex in ex_list:
+            if len(zh_examples[term]) >= max_examples:
+                break
+            zh_examples[term].append(ex)
+    for tok, ex_list in file_en_examples.items():
+        if len(en_examples[tok]) >= max_examples:
+            continue
+        for ex in ex_list:
+            if len(en_examples[tok]) >= max_examples:
+                break
+            en_examples[tok].append(ex)
+
+    if not want_en_phrases:
+        return
+
+    cached_phr_counts = {
+        k: int(v)
+        for k, v in cached_data.get("en_phrase_counts", {}).items()
+    }
+    en_phrase_counts.update(cached_phr_counts)
+
+    for phr in cached_phr_counts.keys():
+        if len(en_phrase_files[phr]) < max_files_per_term:
+            en_phrase_files[phr].append(md_str)
+
+    cached_phr_examples = {
+        k: list(v)
+        for k, v in cached_data.get("en_phrase_examples", {}).items()
+    }
+    for phr, ex_list in cached_phr_examples.items():
+        if len(en_phrase_examples[phr]) >= max_examples:
+            continue
+        for ex in ex_list:
+            if len(en_phrase_examples[phr]) >= max_examples:
+                break
+            en_phrase_examples[phr].append(ex)
+
+
 def load_config(config_path: Path) -> dict:
     if not config_path.exists():
         return {}
@@ -408,89 +600,37 @@ def extract(
 
         st = md_path.stat()
         md_key = str(md_path)
-        cached_entry = (
-            _cache_entry_from_dict(cache_files.get(md_key, {}))
-            if cache_enabled
-            else None
+        cached_data, cached_entry, _ = _load_cached_results(
+            incremental=incremental,
+            cache_enabled=cache_enabled,
+            cache_dir=cache_dir,
+            cache_files=cache_files,
+            md_path=md_path,
+            md_key=md_key,
+            st_mtime_ns=int(st.st_mtime_ns),
+            st_size=int(st.st_size),
         )
 
-        can_use_cache = False
-        cached_result_path: Path | None = None
-        if (
-            cache_enabled
-            and cached_entry is not None
-            and cache_dir is not None
-        ):
-            if (
-                cached_entry.mtime_ns == st.st_mtime_ns
-                and cached_entry.size == st.st_size
-            ):
-                cached_result_path = cache_dir / cached_entry.result_relpath
-                if cached_result_path.exists():
-                    can_use_cache = True
-
-        if incremental and can_use_cache:
-            # Static type narrowing: can_use_cache implies these.
-            assert cache_dir is not None
-            assert cached_entry is not None
-            assert cached_result_path is not None
-
-            try:
-                data = json.loads(cached_result_path.read_text("utf-8"))
-            except Exception as e:
-                # Corrupt cache entry; fall back to re-processing.
-                warnings.warn(
-                    f"cache entry unreadable for {md_key}: {e}",
-                    stacklevel=2,
-                )
-                can_use_cache = False
-            else:
-                cache_hits += 1
-                skipped_files += 1
-                _merge_file_contrib(
-                    md_path,
-                    file_zh_counts={
-                        k: int(v)
-                        for k, v in data.get("zh_counts", {}).items()
-                    },
-                    file_en_counts={
-                        k: int(v)
-                        for k, v in data.get("en_counts", {}).items()
-                    },
-                    file_zh_examples={
-                        k: list(v)
-                        for k, v in data.get("zh_examples", {}).items()
-                    },
-                    file_en_examples={
-                        k: list(v)
-                        for k, v in data.get("en_examples", {}).items()
-                    },
-                )
-
-                if want_en_phrases:
-                    cached_phr_counts = {
-                        k: int(v)
-                        for k, v in data.get("en_phrase_counts", {}).items()
-                    }
-                    en_phrase_counts.update(cached_phr_counts)
-
-                    md_str = str(md_path)
-                    for phr in cached_phr_counts.keys():
-                        if len(en_phrase_files[phr]) < max_files_per_term:
-                            en_phrase_files[phr].append(md_str)
-
-                    cached_phr_examples = {
-                        k: list(v)
-                        for k, v in data.get("en_phrase_examples", {}).items()
-                    }
-                    for phr, ex_list in cached_phr_examples.items():
-                        if len(en_phrase_examples[phr]) >= max_examples:
-                            continue
-                        for ex in ex_list:
-                            if len(en_phrase_examples[phr]) >= max_examples:
-                                break
-                            en_phrase_examples[phr].append(ex)
-                continue
+        if incremental and cached_data is not None:
+            cache_hits += 1
+            skipped_files += 1
+            _merge_cached_file_data(
+                md_path=md_path,
+                cached_data=cached_data,
+                zh_counts=zh_counts,
+                en_counts=en_counts,
+                zh_examples=zh_examples,
+                en_examples=en_examples,
+                zh_files=zh_files,
+                en_files=en_files,
+                en_phrase_counts=en_phrase_counts,
+                en_phrase_examples=en_phrase_examples,
+                en_phrase_files=en_phrase_files,
+                max_examples=max_examples,
+                max_files_per_term=max_files_per_term,
+                want_en_phrases=want_en_phrases,
+            )
+            continue
 
         # Cache miss or full processing.
         if cache_enabled:
@@ -633,43 +773,23 @@ def extract(
                     en_phrase_examples[phr].append(ex)
 
         # Persist per-file cache.
-        if cache_enabled and cache_dir is not None:
-            relpath = f"files/{_sha1_str(md_key)}.json"
-            result_path = cache_dir / relpath
-            result_path.parent.mkdir(parents=True, exist_ok=True)
-
-            payload = {
-                "version": CACHE_SCHEMA_VERSION,
-                "extractor_sig": extractor_sig,
-                "path": md_key,
-                "mtime_ns": int(st.st_mtime_ns),
-                "size": int(st.st_size),
-                "sha256": _sha256_text(text),
-                "zh_counts": dict(file_zh_counts),
-                "en_counts": dict(file_en_counts),
-                "zh_examples": file_zh_examples,
-                "en_examples": file_en_examples,
-                "en_phrase_counts": (
-                    dict(file_en_phrase_counts)
-                    if want_en_phrases
-                    else {}
-                ),
-                "en_phrase_examples": (
-                    file_en_phrase_examples
-                    if want_en_phrases
-                    else {}
-                ),
-            }
-            result_path.write_text(
-                json.dumps(payload, ensure_ascii=False, indent=2),
-                "utf-8",
-            )
-            cache_files[md_key] = {
-                "mtime_ns": int(st.st_mtime_ns),
-                "size": int(st.st_size),
-                "sha256": payload["sha256"],
-                "result_relpath": relpath,
-            }
+        _save_file_cache(
+            cache_enabled=cache_enabled,
+            cache_dir=cache_dir,
+            cache_files=cache_files,
+            md_key=md_key,
+            st_mtime_ns=int(st.st_mtime_ns),
+            st_size=int(st.st_size),
+            extractor_sig=extractor_sig,
+            text=text,
+            file_zh_counts=file_zh_counts,
+            file_en_counts=file_en_counts,
+            file_zh_examples=file_zh_examples,
+            file_en_examples=file_en_examples,
+            file_en_phrase_counts=file_en_phrase_counts,
+            file_en_phrase_examples=file_en_phrase_examples,
+            want_en_phrases=want_en_phrases,
+        )
 
     if cache_enabled and cache_dir is not None:
         cache_index["version"] = CACHE_SCHEMA_VERSION
