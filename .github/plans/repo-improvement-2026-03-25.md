@@ -257,7 +257,7 @@
   - ✅ 全量测试通过
 - **潜在风险**：`rime_export.py` 在无 `--rime-script` 路径指向有效脚本时会跳过 import 步骤，测试需仅验证输出文件生成（不触发实际 Rime 导入）。
 
-#### Task 3.5: Phase 3 commit
+#### ✅ Task 3.5: Phase 3 commit
 
 - **目标**：提交 Rime 配置统一
 - **修改内容**：
