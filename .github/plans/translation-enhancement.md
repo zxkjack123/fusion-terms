@@ -328,7 +328,7 @@
   - ✅ manifest (registry_exports.json) 包含 translation_dict 路径
 - **潜在风险**：如果 `from datetime import date` 与现有 import 冲突——检查确认当前无 datetime import，安全添加。
 
-#### Task 3.3: 新建测试文件 `tests/test_export_registry_translation_dict.py`
+#### ✅ Task 3.3: 新建测试文件 `tests/test_export_registry_translation_dict.py`
 
 - **目标**：覆盖 translation_dict 导出的核心逻辑和边缘情况
 - **修改内容**：
