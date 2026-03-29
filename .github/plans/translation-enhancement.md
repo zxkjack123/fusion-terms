@@ -125,7 +125,7 @@
   - ✅ source 格式为 `internal:translation:glue-vocabulary`（不含 `internal:TODO`）
 - **潜在风险**：evidence source `internal:translation:glue-vocabulary` 是新的内部 source 命名。验证器只拒绝 `internal:TODO` 前缀，其他 internal: 均合法。
 
-#### Task 1.4: 运行验证器确认 Phase 1 原子词数据完整性
+#### ✅ Task 1.4: 运行验证器确认 Phase 1 原子词数据完整性
 
 - **目标**：确认 Task 1.1–1.3 的数据全部通过 registry validation
 - **修改内容**：无文件修改（纯验证）
