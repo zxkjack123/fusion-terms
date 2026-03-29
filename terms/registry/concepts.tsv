@@ -1075,3 +1075,28 @@ radio-frequency-heating	concept	射频加热	radio-frequency heating	RF heating	
 hartmann-number	metric	哈特曼数	Hartmann number	Ha	active	Ratio of electromagnetic to viscous forces in liquid metal MHD flow
 mhd-pressure-drop	concept	MHD压降	MHD pressure drop		active	Pressure loss due to Lorentz force on liquid metal flow in magnetic field
 flow-channel-insert	concept	流道插件	flow channel insert	FCI	active	SiC/SiC insert decoupling liquid metal from conducting walls in DCLL blanket
+design	concept	设计	design		active	Generic academic glue word for translation
+fusion	concept	聚变	fusion		active	Generic academic glue word for translation
+system	concept	系统	system		active	Generic academic glue word for translation
+calculation	concept	计算	calculation		active	Generic academic glue word for translation
+analysis	concept	分析	analysis		active	Generic academic glue word for translation
+material	concept	材料	material		active	Generic academic glue word for translation
+performance	concept	性能	performance		active	Generic academic glue word for translation
+radiation	concept	辐射	radiation		active	Generic academic glue word for translation
+activation	concept	活化	activation		active	Generic academic glue word for translation
+neutron	concept	中子	neutron		active	Generic academic glue word for translation
+simulation	concept	模拟	simulation		active	Generic academic glue word for translation
+maintenance	concept	维护	maintenance		active	Generic academic glue word for translation
+evaluation	concept	评估	evaluation		active	Generic academic glue word for translation
+method	concept	方法	method		active	Generic academic glue word for translation
+mode	concept	模式	mode		active	Generic academic glue word for translation
+device	concept	装置	device		active	Generic academic glue word for translation
+transport	concept	输运	transport		active	Generic academic glue word for translation
+decay	concept	衰变	decay		active	Generic academic glue word for translation
+cooling	concept	冷却	cooling		active	Generic academic glue word for translation
+damage	concept	损伤	damage		active	Generic academic glue word for translation
+protection	concept	防护	protection		active	Generic academic glue word for translation
+sealing	concept	密封	sealing		active	Generic academic glue word for translation
+reactor	concept	堆	reactor		active	Generic academic glue word for translation
+steel	concept	钢	steel		active	Generic academic glue word for translation
+wall	concept	壁	wall		active	Generic academic glue word for translation
