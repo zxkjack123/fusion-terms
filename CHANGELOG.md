@@ -24,6 +24,16 @@
 ### Fixed
 
 
+## v2026.03.29
+
+### Added
+
+- 术语库翻译增强：新增 25 个原子粘合词概念（设计/聚变/系统/计算/分析/材料 等）和 13 个复合词概念（聚变堆/中子输运/冷却系统/安全分析 等），总计 38 个 concept、80 条 alias、38 条 evidence，registry 从 949→987 concepts、4637→4718 aliases。
+- 新增 `--translation-dict` CLI flag（`pipeline/export_registry.py`），导出 `artifacts/translation_dict.json`（zh2en 1551 对 / en2zh 1919 对），供下游翻译辅助工具消费。
+- 新增 `tests/test_export_registry_translation_dict.py`（7 个测试用例），覆盖基本导出、确定性、forbidden/deprecated 跳过、缺失 preferred 处理、abbr 别名映射及 CLI flag。
+- `terms/allowlist_zh.txt` 补充"启动氚投料量"。
+
+
 ## v2026.03.25.1
 
 ### Changed
