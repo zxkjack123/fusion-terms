@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 import warnings
+from datetime import date
 from pathlib import Path
 
 
@@ -498,8 +499,6 @@ def export_translation_dict(*, terms_dir: Path, out_dir: Path) -> dict[str, obje
     Output: artifacts/translation_dict.json
     """
 
-    from datetime import date
-
     registry_dir = terms_dir / "registry"
     concepts_path = registry_dir / "concepts.tsv"
     aliases_path = registry_dir / "aliases.tsv"
@@ -602,6 +601,11 @@ def main() -> None:
         action="store_true",
         help="Export Vale substitution YAML (artifacts/vale/terminology_substitute.yml)",
     )
+    parser.add_argument(
+        "--translation-dict",
+        action="store_true",
+        help="Export translation dictionary JSON (artifacts/translation_dict.json)",
+    )
 
     args = parser.parse_args()
 
@@ -617,6 +621,7 @@ def main() -> None:
     do_tag = bool(args.tag_rules)
     do_subs = bool(args.substitutions)
     do_vale_sub = bool(args.vale_substitute)
+    do_translation = bool(args.translation_dict)
 
     # Gate: registry must be consistent.
     validate_registry(terms_dir)
@@ -634,6 +639,8 @@ def main() -> None:
         manifest.update(export_substitutions_tsv(terms_dir=terms_dir, out_dir=out_dir))
     if do_vale_sub:
         manifest.update(export_vale_substitute_yaml(terms_dir=terms_dir, out_dir=out_dir))
+    if do_translation:
+        manifest.update(export_translation_dict(terms_dir=terms_dir, out_dir=out_dir))
 
     # Emit a small manifest to make downstream tooling simpler.
     manifest_path = out_dir / "registry_exports.json"

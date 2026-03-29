@@ -294,7 +294,7 @@
   - ✅ abbr lang alias 同时出现在 zh2en 和 en2zh 中
 - **潜在风险**：`generated_at` 字段包含日期使输出不完全确定性（每天不同）。下游通常不比较此字段。如需严格确定性，可改为接受外部参数或省略此字段。可通过在测试中 mock `datetime.date.today()` 解决。
 
-#### Task 3.2: 在 main() 添加 `--translation-dict` CLI flag
+#### ✅ Task 3.2: 在 main() 添加 `--translation-dict` CLI flag
 
 - **目标**：让命令行可触发翻译词典导出
 - **修改内容**：
