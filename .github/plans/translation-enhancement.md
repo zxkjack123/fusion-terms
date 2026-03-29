@@ -220,7 +220,7 @@
   - ✅ 所有新 alias 不与已有 alias 重复
 - **潜在风险**："蒙特卡洛" 和 "蒙特卡罗" 都作为 monte-carlo-method 的 alias 注册，两者为同一术语的不同音译变体。当前 "蒙特卡洛方法" 已是 alias、"蒙特卡罗方法" 是 preferred。短形式跟随现有 kind 层级，均标为 alias。
 
-#### Task 2.3: 在 evidence.tsv 追加 13 条证据
+#### ✅ Task 2.3: 在 evidence.tsv 追加 13 条证据
 
 - **目标**：为 13 个新复合 concept 补充 evidence 行
 - **修改内容**：

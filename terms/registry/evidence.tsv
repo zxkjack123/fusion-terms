@@ -1038,3 +1038,16 @@ sealing	internal:translation:glue-vocabulary	High-frequency academic glue word f
 reactor	internal:translation:glue-vocabulary	High-frequency academic glue word for zh→en search translation		2026-03-29
 steel	internal:translation:glue-vocabulary	High-frequency academic glue word for zh→en search translation		2026-03-29
 wall	internal:translation:glue-vocabulary	High-frequency academic glue word for zh→en search translation		2026-03-29
+fusion-reactor	internal:translation:compound-vocabulary	High-frequency compound term for zh→en search translation		2026-03-29
+fusion-device	internal:translation:compound-vocabulary	High-frequency compound term for zh→en search translation		2026-03-29
+nuclear-fusion	internal:translation:compound-vocabulary	High-frequency compound term for zh→en search translation		2026-03-29
+neutron-transport	internal:translation:compound-vocabulary	High-frequency compound term for zh→en search translation		2026-03-29
+neutron-shielding	internal:translation:compound-vocabulary	High-frequency compound term for zh→en search translation		2026-03-29
+liquid-metal	internal:translation:compound-vocabulary	High-frequency compound term for zh→en search translation		2026-03-29
+cooling-system	internal:translation:compound-vocabulary	High-frequency compound term for zh→en search translation		2026-03-29
+containment	internal:translation:compound-vocabulary	High-frequency compound term for zh→en search translation		2026-03-29
+safety-analysis	internal:translation:compound-vocabulary	High-frequency compound term for zh→en search translation		2026-03-29
+radiation-protection	internal:translation:compound-vocabulary	High-frequency compound term for zh→en search translation		2026-03-29
+conceptual-design	internal:translation:compound-vocabulary	High-frequency compound term for zh→en search translation		2026-03-29
+structural-design	internal:translation:compound-vocabulary	High-frequency compound term for zh→en search translation		2026-03-29
+computational-method	internal:translation:compound-vocabulary	High-frequency compound term for zh→en search translation		2026-03-29
