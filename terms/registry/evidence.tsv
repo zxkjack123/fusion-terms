@@ -1013,3 +1013,28 @@ radio-frequency-heating	dify:Classes:Wesson_1999			2026-03-24
 hartmann-number	dify:LM-PMI/mhdHeatTransfer:Shercliff_1962			2026-03-24
 mhd-pressure-drop	dify:LM-PMI/mhdHeatTransfer:DCLL_MHD			2026-03-24
 flow-channel-insert	dify:LM-PMI/mhdHeatTransfer:DCLL_MHD			2026-03-24
+design	internal:translation:glue-vocabulary	High-frequency academic glue word for zh→en search translation		2026-03-29
+fusion	internal:translation:glue-vocabulary	High-frequency academic glue word for zh→en search translation		2026-03-29
+system	internal:translation:glue-vocabulary	High-frequency academic glue word for zh→en search translation		2026-03-29
+calculation	internal:translation:glue-vocabulary	High-frequency academic glue word for zh→en search translation		2026-03-29
+analysis	internal:translation:glue-vocabulary	High-frequency academic glue word for zh→en search translation		2026-03-29
+material	internal:translation:glue-vocabulary	High-frequency academic glue word for zh→en search translation		2026-03-29
+performance	internal:translation:glue-vocabulary	High-frequency academic glue word for zh→en search translation		2026-03-29
+radiation	internal:translation:glue-vocabulary	High-frequency academic glue word for zh→en search translation		2026-03-29
+activation	internal:translation:glue-vocabulary	High-frequency academic glue word for zh→en search translation		2026-03-29
+neutron	internal:translation:glue-vocabulary	High-frequency academic glue word for zh→en search translation		2026-03-29
+simulation	internal:translation:glue-vocabulary	High-frequency academic glue word for zh→en search translation		2026-03-29
+maintenance	internal:translation:glue-vocabulary	High-frequency academic glue word for zh→en search translation		2026-03-29
+evaluation	internal:translation:glue-vocabulary	High-frequency academic glue word for zh→en search translation		2026-03-29
+method	internal:translation:glue-vocabulary	High-frequency academic glue word for zh→en search translation		2026-03-29
+mode	internal:translation:glue-vocabulary	High-frequency academic glue word for zh→en search translation		2026-03-29
+device	internal:translation:glue-vocabulary	High-frequency academic glue word for zh→en search translation		2026-03-29
+transport	internal:translation:glue-vocabulary	High-frequency academic glue word for zh→en search translation		2026-03-29
+decay	internal:translation:glue-vocabulary	High-frequency academic glue word for zh→en search translation		2026-03-29
+cooling	internal:translation:glue-vocabulary	High-frequency academic glue word for zh→en search translation		2026-03-29
+damage	internal:translation:glue-vocabulary	High-frequency academic glue word for zh→en search translation		2026-03-29
+protection	internal:translation:glue-vocabulary	High-frequency academic glue word for zh→en search translation		2026-03-29
+sealing	internal:translation:glue-vocabulary	High-frequency academic glue word for zh→en search translation		2026-03-29
+reactor	internal:translation:glue-vocabulary	High-frequency academic glue word for zh→en search translation		2026-03-29
+steel	internal:translation:glue-vocabulary	High-frequency academic glue word for zh→en search translation		2026-03-29
+wall	internal:translation:glue-vocabulary	High-frequency academic glue word for zh→en search translation		2026-03-29

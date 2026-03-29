@@ -109,7 +109,7 @@
   - ✅ kind 值均为 "preferred"
 - **潜在风险**：部分单字 en 词（如 "wall", "mode"）过于通用，可能与未来新增术语冲突。目前确认无冲突。如日后发现冲突，可将通用 alias 降级为 deprecated。
 
-#### Task 1.3: 在 evidence.tsv 追加 25 条证据
+#### ✅ Task 1.3: 在 evidence.tsv 追加 25 条证据
 
 - **目标**：为 25 个新 concept 补充 evidence 行以满足验证器要求
 - **修改内容**：
