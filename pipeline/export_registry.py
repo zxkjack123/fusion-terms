@@ -492,6 +492,72 @@ def export_vale_substitute_yaml(*, terms_dir: Path, out_dir: Path) -> dict[str, 
     }
 
 
+def export_translation_dict(*, terms_dir: Path, out_dir: Path) -> dict[str, object]:
+    """Export translation dictionary JSON for zh↔en lookup.
+
+    Output: artifacts/translation_dict.json
+    """
+
+    from datetime import date
+
+    registry_dir = terms_dir / "registry"
+    concepts_path = registry_dir / "concepts.tsv"
+    aliases_path = registry_dir / "aliases.tsv"
+
+    concepts_rows = _iter_concept_rows(concepts_path)
+    alias_rows = _iter_alias_rows(aliases_path)
+
+    preferred_en_by_concept: dict[str, str] = {}
+    preferred_zh_by_concept: dict[str, str] = {}
+    for row in concepts_rows:
+        concept_id = row.get("concept_id", "")
+        preferred_en_by_concept[concept_id] = row.get("preferred_en", "")
+        preferred_zh_by_concept[concept_id] = row.get("preferred_zh", "")
+
+    zh2en: dict[str, str] = {}
+    en2zh: dict[str, str] = {}
+
+    for row in alias_rows:
+        alias = row.get("alias", "")
+        concept_id = row.get("concept_id", "")
+        kind = row.get("kind", "")
+        lang = row.get("lang", "")
+
+        if kind not in {"preferred", "alias"}:
+            continue
+
+        preferred_en = preferred_en_by_concept.get(concept_id, "")
+        preferred_zh = preferred_zh_by_concept.get(concept_id, "")
+
+        if lang in {"zh", "abbr", "mixed"} and preferred_en and alias not in zh2en:
+            zh2en[alias] = preferred_en
+        if lang in {"en", "abbr", "mixed"} and preferred_zh and alias not in en2zh:
+            en2zh[alias] = preferred_zh
+
+    payload = {
+        "schema_version": 1,
+        "zh2en": zh2en,
+        "en2zh": en2zh,
+        "metadata": {
+            "generated_at": date.today().isoformat(),
+            "pairs_zh2en": len(zh2en),
+            "pairs_en2zh": len(en2zh),
+        },
+    }
+
+    out_path = out_dir / "translation_dict.json"
+    out_path.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+
+    return {
+        "translation_dict": str(out_path),
+        "pairs_zh2en": len(zh2en),
+        "pairs_en2zh": len(en2zh),
+    }
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(
         description="Export multi-consumer artifacts from terms/registry (currently: Vale accept/reject)."

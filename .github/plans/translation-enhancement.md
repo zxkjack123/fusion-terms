@@ -252,7 +252,7 @@
 
 ### Phase 3: 新增 translation_dict.json 导出
 
-#### Task 3.1: 在 export_registry.py 新增 `export_translation_dict` 函数
+#### ✅ Task 3.1: 在 export_registry.py 新增 `export_translation_dict` 函数
 
 - **目标**：实现 zh→en 和 en→zh 翻译词典 JSON 导出
 - **修改内容**：
