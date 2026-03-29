@@ -1100,3 +1100,16 @@ sealing	concept	密封	sealing		active	Generic academic glue word for translatio
 reactor	concept	堆	reactor		active	Generic academic glue word for translation
 steel	concept	钢	steel		active	Generic academic glue word for translation
 wall	concept	壁	wall		active	Generic academic glue word for translation
+fusion-reactor	concept	聚变堆	fusion reactor		active	General fusion reactor (not specific FPP/pilot plant)
+fusion-device	concept	聚变装置	fusion device		active	General fusion experimental device
+nuclear-fusion	concept	核聚变	nuclear fusion		active	Nuclear fusion (general)
+neutron-transport	concept	中子输运	neutron transport		active	Neutron transport (general)
+neutron-shielding	concept	中子屏蔽	neutron shielding		active	Neutron-specific shielding
+liquid-metal	concept	液态金属	liquid metal		active	Liquid metal (general, not only coolant)
+cooling-system	system	冷却系统	cooling system		active	General cooling system
+containment	concept	安全壳	containment		active	Reactor containment structure
+safety-analysis	method	安全分析	safety analysis		active	Nuclear safety analysis
+radiation-protection	concept	辐射防护	radiation protection		active	Radiation protection (distinct from shielding)
+conceptual-design	method	概念设计	conceptual design		active	Conceptual design phase
+structural-design	method	结构设计	structural design		active	Structural design
+computational-method	method	计算方法	computational method		active	Computational/numerical method

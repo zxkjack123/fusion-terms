@@ -142,7 +142,7 @@
 
 ### Phase 2: 补充复合词（15 个新 concept + 3 个已有 concept 补充 alias）
 
-#### Task 2.1: 在 concepts.tsv 追加 15 个复合词 concept
+#### ✅ Task 2.1: 在 concepts.tsv 追加 15 个复合词 concept
 
 - **目标**：为 15 个缺失的高频复合词创建 concept 条目
 - **修改内容**：
