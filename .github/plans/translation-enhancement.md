@@ -180,7 +180,7 @@
   - ✅ category 使用现有合法类别（concept/material/system/method）
 - **潜在风险**：`reduced-activation-steel` 与 `rafm-steel` 语义接近。前者是通俗简称（低活化钢），后者是材料学规范名称（RAFM 钢）。两者分设 concept 是合理的：低活化钢泛指一类材料（含 CLAM、Eurofer 等），RAFM 是特定材料类型。如果实施时认为冗余，可将 "低活化钢" 改为 rafm-steel 的 zh alias。
 
-#### Task 2.2: 在 aliases.tsv 追加复合词别名（14×2 + 4 = 32 条）
+#### ✅ Task 2.2: 在 aliases.tsv 追加复合词别名（14×2 + 4 = 32 条）
 
 - **目标**：为 14 个新复合 concept 注册 zh+en preferred aliases，并为 3 个已有 concept 补充 zh alias
 - **修改内容**：

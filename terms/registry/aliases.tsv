@@ -5362,3 +5362,33 @@ reactor	reactor	en	preferred	preferred en
 steel	steel	en	preferred	preferred en
 壁	wall	zh	preferred	preferred zh
 wall	wall	en	preferred	preferred en
+聚变堆	fusion-reactor	zh	preferred	preferred zh
+fusion reactor	fusion-reactor	en	preferred	preferred en
+聚变装置	fusion-device	zh	preferred	preferred zh
+fusion device	fusion-device	en	preferred	preferred en
+核聚变	nuclear-fusion	zh	preferred	preferred zh
+nuclear fusion	nuclear-fusion	en	preferred	preferred en
+中子输运	neutron-transport	zh	preferred	preferred zh
+neutron transport	neutron-transport	en	preferred	preferred en
+中子屏蔽	neutron-shielding	zh	preferred	preferred zh
+neutron shielding	neutron-shielding	en	preferred	preferred en
+液态金属	liquid-metal	zh	preferred	preferred zh
+liquid metal	liquid-metal	en	preferred	preferred en
+冷却系统	cooling-system	zh	preferred	preferred zh
+cooling system	cooling-system	en	preferred	preferred en
+安全壳	containment	zh	preferred	preferred zh
+containment	containment	en	preferred	preferred en
+安全分析	safety-analysis	zh	preferred	preferred zh
+safety analysis	safety-analysis	en	preferred	preferred en
+辐射防护	radiation-protection	zh	preferred	preferred zh
+radiation protection	radiation-protection	en	preferred	preferred en
+概念设计	conceptual-design	zh	preferred	preferred zh
+conceptual design	conceptual-design	en	preferred	preferred en
+结构设计	structural-design	zh	preferred	preferred zh
+structural design	structural-design	en	preferred	preferred en
+计算方法	computational-method	zh	preferred	preferred zh
+computational method	computational-method	en	preferred	preferred en
+辐射屏蔽	radiation-shielding	zh	alias	zh compound form
+蒙特卡洛	monte-carlo-method	zh	alias	zh short form
+蒙特卡罗	monte-carlo-method	zh	alias	zh short form variant
+低活化钢	rafm-steel	zh	alias	zh shortened form
