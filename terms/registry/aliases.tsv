@@ -1688,6 +1688,7 @@ tritium self-sufficiency	tritium-self-sufficiency	en	preferred	preferred en (phr
 tritium-self-sufficiency	tritium-self-sufficiency	en	alias	IME token-only form
 
 氚启动存量	tritium-startup-inventory	zh	preferred	preferred zh
+启动氚投料量	tritium-startup-inventory	zh	alias	文献用语：王俊(2020) CFETR 启动氚投料量与氚平衡分析
 tritium startup inventory	tritium-startup-inventory	en	preferred	preferred en (phrase)
 tritium-startup-inventory	tritium-startup-inventory	en	alias	IME token-only form
 
@@ -5311,3 +5312,53 @@ mcnp	mcnp	en	alias	lowercase variant
 Nastran代码	nastran	zh	alias	code suffix variant
 nimrod	nimrod	en	alias	lowercase variant
 phits	phits	en	alias	lowercase variant
+设计	design	zh	preferred	preferred zh
+design	design	en	preferred	preferred en
+聚变	fusion	zh	preferred	preferred zh
+fusion	fusion	en	preferred	preferred en
+系统	system	zh	preferred	preferred zh
+system	system	en	preferred	preferred en
+计算	calculation	zh	preferred	preferred zh
+calculation	calculation	en	preferred	preferred en
+分析	analysis	zh	preferred	preferred zh
+analysis	analysis	en	preferred	preferred en
+材料	material	zh	preferred	preferred zh
+material	material	en	preferred	preferred en
+性能	performance	zh	preferred	preferred zh
+performance	performance	en	preferred	preferred en
+辐射	radiation	zh	preferred	preferred zh
+radiation	radiation	en	preferred	preferred en
+活化	activation	zh	preferred	preferred zh
+activation	activation	en	preferred	preferred en
+中子	neutron	zh	preferred	preferred zh
+neutron	neutron	en	preferred	preferred en
+模拟	simulation	zh	preferred	preferred zh
+simulation	simulation	en	preferred	preferred en
+维护	maintenance	zh	preferred	preferred zh
+maintenance	maintenance	en	preferred	preferred en
+评估	evaluation	zh	preferred	preferred zh
+evaluation	evaluation	en	preferred	preferred en
+方法	method	zh	preferred	preferred zh
+method	method	en	preferred	preferred en
+模式	mode	zh	preferred	preferred zh
+mode	mode	en	preferred	preferred en
+装置	device	zh	preferred	preferred zh
+device	device	en	preferred	preferred en
+输运	transport	zh	preferred	preferred zh
+transport	transport	en	preferred	preferred en
+衰变	decay	zh	preferred	preferred zh
+decay	decay	en	preferred	preferred en
+冷却	cooling	zh	preferred	preferred zh
+cooling	cooling	en	preferred	preferred en
+损伤	damage	zh	preferred	preferred zh
+damage	damage	en	preferred	preferred en
+防护	protection	zh	preferred	preferred zh
+protection	protection	en	preferred	preferred en
+密封	sealing	zh	preferred	preferred zh
+sealing	sealing	en	preferred	preferred en
+堆	reactor	zh	preferred	preferred zh
+reactor	reactor	en	preferred	preferred en
+钢	steel	zh	preferred	preferred zh
+steel	steel	en	preferred	preferred en
+壁	wall	zh	preferred	preferred zh
+wall	wall	en	preferred	preferred en

@@ -86,7 +86,7 @@
   - ✅ status 列均为 `active`
 - **潜在风险**：concept_id "system-generic" 等带后缀名称偏离常规风格（现有 concept 多用领域含义命名）。替代方案：直接用 "system" 但这已确认不冲突。决策：由于 `system` 不与已有 concept_id 冲突，实施时可直接使用 `system` 作为 concept_id，无需 `-generic` 后缀。同理，`method`、`device` 也直接使用无后缀形式。
 
-#### Task 1.2: 在 aliases.tsv 追加 25×2 = 50 条别名
+#### ✅ Task 1.2: 在 aliases.tsv 追加 25×2 = 50 条别名
 
 - **目标**：为每个新原子 concept 注册 zh preferred + en preferred 两条别名
 - **修改内容**：
