@@ -29,6 +29,11 @@ max_files_per_term = 20
 [artifacts]
 out_dir = "artifacts"
 
+[export]
+# Minimum length for ASCII English keys kept in translation_dict.en2zh.
+# Shorter keys are moved to translation_dict.en2zh_short for contextual handling.
+min_en_key_len = 3
+
 [rime]
 dict_name = "rime_ice"
 backup_paths = [
