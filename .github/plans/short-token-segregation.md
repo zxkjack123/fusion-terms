@@ -149,7 +149,7 @@
 
 ### Phase 3: 产物重建与验证
 
-#### Task 3.1: 重新生成 translation_dict.json 并验证
+#### ✅ Task 3.1: 重新生成 translation_dict.json 并验证
 - **目标**：用更新后的代码生成新产物，验证短键已隔离
 - **修改内容**：
   - 运行导出命令生成新的 `artifacts/translation_dict.json`

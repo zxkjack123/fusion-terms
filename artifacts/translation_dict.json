@@ -2,10 +2,8 @@
   "en2zh": {
     "14 MeV neutron": "聚变中子",
     "3-alpha reaction": "三α反应",
-    "A": "纵横比",
     "AC loss": "交流损耗",
     "AC losses": "交流损耗",
-    "AE": "阿尔芬本征模",
     "ALARA": "合理可行尽量低",
     "ANSYS": "ANSYS",
     "ANSYS CFX": "CFX",
@@ -16,7 +14,6 @@
     "ASDEX Upgrade": "ASDEX Upgrade",
     "ASIPP": "等离子体物理研究所",
     "ASTRA": "ASTRA",
-    "AT": "先进托卡马克",
     "AUG": "ASDEX Upgrade",
     "Abaqus": "Abaqus",
     "Alfven wave": "阿尔芬波",
@@ -29,7 +26,6 @@
     "Automated System for TRansport Analysis": "ASTRA",
     "B powder injection": "硼粉注入",
     "B-dot probe": "磁探针",
-    "B2": "B2",
     "BAE": "β诱导Alfvén本征模",
     "BES": "束发射光谱",
     "BEST": "BEST",
@@ -38,13 +34,11 @@
     "BOUT++": "BOUT++",
     "BPI": "硼粉注入",
     "Bayesian inference": "贝叶斯推断",
-    "Bc": "临界磁场",
     "Be multiplier": "铍中子倍增层",
     "Bohm diffusion": "玻姆扩散",
     "Brayton cycle": "布雷顿循环",
     "C-2W": "C-2W",
     "CATIA": "CATIA",
-    "CD": "电流驱动",
     "CENDL": "CENDL",
     "CER": "电荷交换复合光谱",
     "CFC": "碳纤维复合材料",
@@ -66,10 +60,7 @@
     "COMSOL Multiphysics": "COMSOL",
     "CORSICA": "CORSICA",
     "CPS": "冷却剂净化系统",
-    "CR": "收敛比",
     "CREATE-NL": "CREATE-NL",
-    "CS": "中心螺管",
-    "CT": "紧凑环",
     "CT injection": "紧凑环注入",
     "CTI": "紧凑环注入",
     "CX loss": "电荷交换损失",
@@ -83,7 +74,6 @@
     "Coulomb collision": "库仑碰撞",
     "Coulomb logarithm": "库仑对数",
     "CuCrZr": "CuCrZr",
-    "D": "氘",
     "D-D reaction": "D-D反应",
     "D-He3 reaction": "D-³He反应",
     "D-T reaction": "D-T反应",
@@ -102,7 +92,6 @@
     "DIIID": "DIII-D",
     "DINA": "DINA",
     "DIV3D": "DIV3D",
-    "DN": "双零位形",
     "DONES": "DONES",
     "DONES facility": "DONES",
     "DPF": "稠密等离子体焦点",
@@ -184,7 +173,6 @@
     "FRC merging": "场反并合",
     "FSAR": "最终安全分析报告",
     "FVM": "有限体积法",
-    "FW": "第一壁",
     "Faraday effect": "法拉第旋转",
     "Faraday rotation": "法拉第旋转",
     "Faraday screen": "法拉第屏",
@@ -197,7 +185,6 @@
     "Frenkel pair": "Frenkel缺陷对",
     "Fusion Evaluated Nuclear Data Library": "FENDL",
     "Fusion for Energy": "聚变能源机构",
-    "GA": "通用原子能",
     "GACODE": "GACODE",
     "GAE": "全局Alfvén本征模",
     "GAM": "测地声模",
@@ -219,7 +206,6 @@
     "GyroKinetic Workshop": "GKW",
     "Gyrokinetic Electromagnetic Numerical Experiment": "GENE",
     "Gyrokinetic Toroidal Code": "GTC",
-    "H": "氕",
     "H mode": "高约束模",
     "H-factor": "H因子",
     "H-mode": "高约束模",
@@ -234,7 +220,6 @@
     "HELIAS": "HELIAS",
     "HELIAS stellarator": "HELIAS",
     "HHF": "高热流测试",
-    "HI": "螺旋度注入",
     "HIF": "重离子聚变",
     "HL 2A": "HL-2A",
     "HL 2M": "HL-2M",
@@ -247,9 +232,7 @@
     "HSX": "HSX",
     "HTS": "高温超导体",
     "HVAC": "暖通空调",
-    "HX": "换热器",
     "HXR": "硬X射线",
-    "Ha": "哈特曼数",
     "Hartmann number": "哈特曼数",
     "He bubble": "氦泡",
     "He embrittlement": "氦脆",
@@ -279,13 +262,11 @@
     "ITER-DEMO transition": "ITER到DEMO",
     "ITER-to-DEMO": "ITER到DEMO",
     "ITG": "离子温度梯度模",
-    "Ic": "临界电流",
     "Institute of Plasma Physics CAS": "等离子体物理研究所",
     "Integrated Modelling and Analysis Suite": "IMAS",
     "International Atomic Energy Agency": "国际原子能机构",
     "International Fusion Materials Irradiation Facility": "国际聚变材料辐照装置",
     "International Reactor Dosimetry and Fusion File": "IRDFF",
-    "Ip": "等离子体电流",
     "JEFF": "JEFF",
     "JENDL": "JENDL",
     "JET": "JET",
@@ -381,7 +362,6 @@
     "NOVA": "NOVA",
     "NSTX U": "NSTX-U",
     "NSTX-U": "NSTX-U",
-    "NT": "负三角形变",
     "NTM": "新经典撕裂模",
     "NTV": "新经典环向粘滞",
     "Nastran": "Nastran",
@@ -403,7 +383,6 @@
     "PCI": "相衬成像",
     "PCS": "能量转换系统",
     "PDW": "永久处置废物",
-    "PF": "稠密等离子体焦点",
     "PF coil": "极向场线圈",
     "PFC": "面向等离子体部件",
     "PFM": "面向等离子体材料",
@@ -428,12 +407,9 @@
     "Pfirsch-Schlüter regime": "Pfirsch-Schlüter区",
     "Pnet": "净电功率",
     "Preliminary Safety Analysis Report": "初步安全分析报告",
-    "Q": "能量增益",
     "Q value": "Q值",
-    "QA": "准轴对称",
     "QH-mode": "静默H模",
     "QHS": "准螺旋对称",
-    "QI": "准等动力",
     "QSS": "准对称仿星器",
     "Qeng": "工程增益因子",
     "R2S": "R2Smesh",
@@ -442,7 +418,6 @@
     "RAFM": "低活化铁素体/马氏体钢",
     "RAFM steel": "低活化铁素体/马氏体钢",
     "RAMI": "RAMI分析",
-    "RE": "逃逸电子",
     "RE damage": "逃逸电子损伤",
     "REBCO": "稀土钡铜氧化物",
     "REXIE": "REXIE",
@@ -453,7 +428,6 @@
     "RFX": "RFX-mod",
     "RFX mod": "RFX-mod",
     "RFX-mod": "RFX-mod",
-    "RH": "遥操作",
     "RIS": "辐照偏析",
     "RMF": "旋转磁场",
     "RMFo": "奇宇称旋转磁场",
@@ -470,11 +444,9 @@
     "Rotating EXperiment for Ions and Electrons": "REXIE",
     "SDDR": "停堆剂量率",
     "SDS": "燃料储存与供应系统",
-    "SG": "蒸汽发生器",
     "SG-III": "神光三号",
     "SHAx": "单螺旋态",
     "SMBI": "超声分子束注入",
-    "SN": "单零位形",
     "SOL": "刮削层",
     "SOL Plasma Simulator": "SOLPS",
     "SOL filament": "等离子体丝状体",
@@ -487,7 +459,6 @@
     "SPI": "碎裂弹丸注入",
     "SSPX": "SSPX",
     "SSPX device": "SSPX",
-    "ST": "球形托卡马克",
     "STEP": "STEP",
     "STEP tokamak": "STEP",
     "SWIP": "核工业西南物理研究院",
@@ -508,7 +479,6 @@
     "Super-X divertor": "Super-X偏滤器",
     "SuperMC": "SuperMC",
     "Sustained Spheromak Physics Experiment": "SSPX",
-    "T": "氚",
     "TAE": "环向阿尔芬本征模",
     "TAE Norman": "C-2W",
     "TAE Technologies": "TAE Technologies",
@@ -534,18 +504,13 @@
     "TWDEC": "行波直接能量转换器",
     "Taylor relaxation": "Taylor弛豫",
     "Taylor state": "Taylor态",
-    "Tc": "临界温度",
-    "Te": "电子温度",
-    "Ti": "离子温度",
     "Tokamak Simulation Code": "TSC",
     "Tri Alpha Energy": "TAE Technologies",
     "Troyon beta limit": "Troyon极限",
     "Troyon limit": "Troyon极限",
     "UEDGE": "UEDGE",
-    "UQ": "不确定性量化",
     "V-4Cr-4Ti": "钒合金",
     "VDE": "垂直位移事件",
-    "VV": "真空室",
     "Vlasov equation": "Vlasov方程",
     "W accumulation": "钨积聚",
     "W fuzz": "钨绒毛",
@@ -1552,7 +1517,6 @@
     "pulsed poloidal current drive": "脉冲极向电流驱动",
     "pulsed-poloidal-current-drive": "脉冲极向电流驱动",
     "purge gas": "吹扫气",
-    "q": "安全因子",
     "q profile": "安全因子剖面",
     "q-profile": "安全因子剖面",
     "q_parallel": "平行热流",
@@ -1920,12 +1884,159 @@
     "βp": "极向比压",
     "λ_q": "SOL宽度"
   },
+  "en2zh_short": {
+    "A": {
+      "concept_id": "aspect-ratio",
+      "zh": "纵横比"
+    },
+    "AE": {
+      "concept_id": "alfven-eigenmode",
+      "zh": "阿尔芬本征模"
+    },
+    "AT": {
+      "concept_id": "advanced-tokamak",
+      "zh": "先进托卡马克"
+    },
+    "B2": {
+      "concept_id": "b2",
+      "zh": "B2"
+    },
+    "Bc": {
+      "concept_id": "critical-magnetic-field",
+      "zh": "临界磁场"
+    },
+    "CD": {
+      "concept_id": "current-drive",
+      "zh": "电流驱动"
+    },
+    "CR": {
+      "concept_id": "convergence-ratio",
+      "zh": "收敛比"
+    },
+    "CS": {
+      "concept_id": "central-solenoid",
+      "zh": "中心螺管"
+    },
+    "CT": {
+      "concept_id": "compact-toroid",
+      "zh": "紧凑环"
+    },
+    "D": {
+      "concept_id": "deuterium",
+      "zh": "氘"
+    },
+    "DN": {
+      "concept_id": "double-null",
+      "zh": "双零位形"
+    },
+    "FW": {
+      "concept_id": "first-wall",
+      "zh": "第一壁"
+    },
+    "GA": {
+      "concept_id": "general-atomics",
+      "zh": "通用原子能"
+    },
+    "H": {
+      "concept_id": "protium",
+      "zh": "氕"
+    },
+    "HI": {
+      "concept_id": "helicity-injection",
+      "zh": "螺旋度注入"
+    },
+    "HX": {
+      "concept_id": "heat-exchanger",
+      "zh": "换热器"
+    },
+    "Ha": {
+      "concept_id": "hartmann-number",
+      "zh": "哈特曼数"
+    },
+    "Ic": {
+      "concept_id": "critical-current",
+      "zh": "临界电流"
+    },
+    "Ip": {
+      "concept_id": "plasma-current",
+      "zh": "等离子体电流"
+    },
+    "NT": {
+      "concept_id": "negative-triangularity",
+      "zh": "负三角形变"
+    },
+    "PF": {
+      "concept_id": "dense-plasma-focus",
+      "zh": "稠密等离子体焦点"
+    },
+    "Q": {
+      "concept_id": "energy-gain",
+      "zh": "能量增益"
+    },
+    "QA": {
+      "concept_id": "quasi-axisymmetry",
+      "zh": "准轴对称"
+    },
+    "QI": {
+      "concept_id": "quasi-isodynamic",
+      "zh": "准等动力"
+    },
+    "RE": {
+      "concept_id": "runaway-electron",
+      "zh": "逃逸电子"
+    },
+    "RH": {
+      "concept_id": "remote-handling",
+      "zh": "遥操作"
+    },
+    "SG": {
+      "concept_id": "steam-generator",
+      "zh": "蒸汽发生器"
+    },
+    "SN": {
+      "concept_id": "single-null",
+      "zh": "单零位形"
+    },
+    "ST": {
+      "concept_id": "spherical-tokamak",
+      "zh": "球形托卡马克"
+    },
+    "T": {
+      "concept_id": "tritium",
+      "zh": "氚"
+    },
+    "Tc": {
+      "concept_id": "critical-temperature",
+      "zh": "临界温度"
+    },
+    "Te": {
+      "concept_id": "electron-temperature",
+      "zh": "电子温度"
+    },
+    "Ti": {
+      "concept_id": "ion-temperature",
+      "zh": "离子温度"
+    },
+    "UQ": {
+      "concept_id": "uncertainty-quantification",
+      "zh": "不确定性量化"
+    },
+    "VV": {
+      "concept_id": "vacuum-vessel",
+      "zh": "真空室"
+    },
+    "q": {
+      "concept_id": "safety-factor",
+      "zh": "安全因子"
+    }
+  },
   "metadata": {
-    "generated_at": "2026-03-29",
-    "pairs_en2zh": 1919,
+    "generated_at": "2026-04-03",
+    "pairs_en2zh": 1883,
+    "pairs_en2zh_short": 36,
     "pairs_zh2en": 1551
   },
-  "schema_version": 1,
+  "schema_version": 2,
   "zh2en": {
     "14 MeV中子": "fusion neutron",
     "95%磁通面安全因子": "q95",
