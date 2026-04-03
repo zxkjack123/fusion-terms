@@ -58,7 +58,7 @@
   - ✅ TOML 语法合法（上述命令无异常）
 - **潜在风险**：其他管线代码可能用 `cfg["export"]` 做了意外判断——实际 grep 确认无此情况
 
-#### Task 1.2: 修改 `export_translation_dict()` 实现短键隔离
+#### ✅ Task 1.2: 修改 `export_translation_dict()` 实现短键隔离
 - **目标**：将短 ASCII en 键分流到 `en2zh_short`，附带 concept_id
 - **修改内容**：
   - 文件 `pipeline/export_registry.py`，函数 `export_translation_dict()`（约 L496-556）：

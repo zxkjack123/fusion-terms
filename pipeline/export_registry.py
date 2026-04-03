@@ -493,7 +493,9 @@ def export_vale_substitute_yaml(*, terms_dir: Path, out_dir: Path) -> dict[str, 
     }
 
 
-def export_translation_dict(*, terms_dir: Path, out_dir: Path) -> dict[str, object]:
+def export_translation_dict(
+    *, terms_dir: Path, out_dir: Path, min_en_key_len: int = 3
+) -> dict[str, object]:
     """Export translation dictionary JSON for zh↔en lookup.
 
     Output: artifacts/translation_dict.json
@@ -515,6 +517,7 @@ def export_translation_dict(*, terms_dir: Path, out_dir: Path) -> dict[str, obje
 
     zh2en: dict[str, str] = {}
     en2zh: dict[str, str] = {}
+    en2zh_concept: dict[str, str] = {}
 
     for row in alias_rows:
         alias = row.get("alias", "")
@@ -532,15 +535,26 @@ def export_translation_dict(*, terms_dir: Path, out_dir: Path) -> dict[str, obje
             zh2en[alias] = preferred_en
         if lang in {"en", "abbr", "mixed"} and preferred_zh and alias not in en2zh:
             en2zh[alias] = preferred_zh
+            en2zh_concept[alias] = concept_id
+
+    en2zh_short: dict[str, dict[str, str]] = {}
+    for key in list(en2zh.keys()):
+        if key.isascii() and len(key) < min_en_key_len:
+            en2zh_short[key] = {
+                "zh": en2zh.pop(key),
+                "concept_id": en2zh_concept[key],
+            }
 
     payload = {
-        "schema_version": 1,
+        "schema_version": 2,
         "zh2en": zh2en,
         "en2zh": en2zh,
+        "en2zh_short": en2zh_short,
         "metadata": {
             "generated_at": date.today().isoformat(),
             "pairs_zh2en": len(zh2en),
             "pairs_en2zh": len(en2zh),
+            "pairs_en2zh_short": len(en2zh_short),
         },
     }
 
@@ -554,6 +568,7 @@ def export_translation_dict(*, terms_dir: Path, out_dir: Path) -> dict[str, obje
         "translation_dict": str(out_path),
         "pairs_zh2en": len(zh2en),
         "pairs_en2zh": len(en2zh),
+        "pairs_en2zh_short": len(en2zh_short),
     }
 
 
