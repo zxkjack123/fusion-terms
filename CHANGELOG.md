@@ -24,6 +24,15 @@
 ### Fixed
 
 
+## v2026.04.03
+
+### Changed
+
+- `translation_dict.json` schema 升级至 v2：≤2 字符的 ASCII 英文短键（如 A、D、T、CS 等 36 条）从 `en2zh` 隔离至新增的 `en2zh_short` 节（附 `concept_id` 消歧），防止下游子串匹配产生误命中（"DAGMC" → "氘-纵横比-氚"）。
+- 新增 `config.toml [export] min_en_key_len = 3` 配置项，控制短键隔离阈值（设为 0 可恢复旧行为）。
+- 新增测试 `test_translation_dict_short_en_keys_segregated`，覆盖单字母、双字母、阈值边界（3 字母）及非 ASCII 短键四种场景。
+
+
 ## v2026.03.29
 
 ### Added

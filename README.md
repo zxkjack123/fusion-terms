@@ -26,7 +26,7 @@ registry under `terms/registry/`:
 - `aliases.tsv` — preferred/alias/deprecated/forbidden variants bound to a concept
 - `evidence.tsv` — traceable source rows per concept
 
-Current snapshot (as of v2026.03.29):
+Current snapshot (as of v2026.04.03):
 
 - concepts: **987**
 - aliases: **4718**
@@ -115,7 +115,7 @@ Strongly recommended (v1.1):
 In your integration/build pipeline, pin a tag and build a self-contained release root (or a tarball) with the manifest generated and verified.
 
 ```bash
-TAG=v2026.03.29
+TAG=v2026.04.03
 
 git clone https://github.com/zxkjack123/fusion-terms.git
 cd fusion-terms
@@ -143,7 +143,7 @@ After this, your downstream project can copy the required files into its own rep
 If you prefer not to run the fusion-terms build pipeline, download the release tarball built by fusion-terms and verify locally.
 
 ```bash
-TAG=v2026.03.29
+TAG=v2026.04.03
 ASSET="fusion-terms-artifacts-${TAG}.tar.gz"
 URL="https://github.com/zxkjack123/fusion-terms/releases/download/${TAG}/${ASSET}"
 
