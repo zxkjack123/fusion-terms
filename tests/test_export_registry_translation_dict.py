@@ -78,11 +78,13 @@ def test_translation_dict_basic(tmp_path: Path) -> None:
 
     data = _run_export_translation(repo_root, terms_dir, out_dir)
 
-    assert data["schema_version"] == 1
+    assert data["schema_version"] == 2
     assert data["zh2en"]["设计"] == "design"
     assert data["zh2en"]["氚增殖比"] == "tritium breeding ratio"
     assert data["en2zh"]["design"] == "设计"
     assert data["en2zh"]["tritium breeding ratio"] == "氚增殖比"
+    assert "en2zh_short" in data
+    assert data["en2zh_short"] == {}
     assert data["metadata"]["pairs_zh2en"] == len(data["zh2en"])
     assert data["metadata"]["pairs_en2zh"] == len(data["en2zh"])
 
@@ -350,8 +352,9 @@ def test_translation_dict_cli_flag(tmp_path: Path) -> None:
     assert out_path.exists()
 
     data = json.loads(out_path.read_text("utf-8"))
-    assert data["schema_version"] == 1
+    assert data["schema_version"] == 2
     assert "zh2en" in data and "en2zh" in data
+    assert "en2zh_short" in data
 
     manifest = json.loads((out_dir / "registry_exports.json").read_text("utf-8"))
     assert manifest["translation_dict"] == out_path.as_posix()

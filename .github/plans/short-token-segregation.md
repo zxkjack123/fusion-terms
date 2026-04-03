@@ -130,7 +130,7 @@
   - ✅ 覆盖单字母、双字母、阈值边界（3 字母）、非 ASCII 四种场景
 - **潜在风险**：测试中创建的 evidence.tsv 格式需与 validator 期望一致（2 列格式）——已有其他测试证实这行
 
-#### Task 2.2: 更新已有测试的 schema_version 断言
+#### ✅ Task 2.2: 更新已有测试的 schema_version 断言
 - **目标**：已有测试适配 schema_version=2
 - **修改内容**：
   - 文件 `tests/test_export_registry_translation_dict.py`：
