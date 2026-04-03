@@ -106,7 +106,7 @@
 
 ### Phase 2: 测试更新
 
-#### Task 2.1: 新增 `test_translation_dict_short_en_keys_segregated`
+#### ✅ Task 2.1: 新增 `test_translation_dict_short_en_keys_segregated`
 - **目标**：验证短键隔离逻辑的正确性
 - **修改内容**：
   - 文件 `tests/test_export_registry_translation_dict.py`：新增测试函数，创建包含以下场景的 mini registry：

@@ -242,6 +242,68 @@ def test_translation_dict_abbr_aliases(tmp_path: Path) -> None:
     assert data["en2zh"]["CFETR"] == "中国聚变工程试验堆"
 
 
+def test_translation_dict_short_en_keys_segregated(tmp_path: Path) -> None:
+    repo_root = Path(__file__).resolve().parents[1]
+
+    terms_dir = tmp_path / "terms"
+    terms_dir.mkdir(parents=True, exist_ok=True)
+    _write_min_terms_files(terms_dir)
+
+    _write_registry_tables(
+        terms_dir,
+        concepts=(
+            "# concept_id\tcategory\tpreferred_zh\tpreferred_en\tpreferred_abbr\tstatus\n"
+            "deuterium\tmaterial\t氘\tdeuterium\tD\tactive\n"
+            "central-solenoid\tcomponent\t中心螺管\tcentral solenoid\tCS\tactive\n"
+            "tritium-breeding-ratio\tmetric\t氚增殖比\ttritium breeding ratio\tTBR\tactive\n"
+            "beta\tmetric\t比压\tbeta\tβ\tactive\n"
+        ),
+        aliases=(
+            "# alias\tconcept_id\tlang\tkind\n"
+            "氘\tdeuterium\tzh\tpreferred\n"
+            "deuterium\tdeuterium\ten\tpreferred\n"
+            "D\tdeuterium\tabbr\tpreferred\n"
+            "中心螺管\tcentral-solenoid\tzh\tpreferred\n"
+            "central solenoid\tcentral-solenoid\ten\tpreferred\n"
+            "CS\tcentral-solenoid\tabbr\tpreferred\n"
+            "氚增殖比\ttritium-breeding-ratio\tzh\tpreferred\n"
+            "tritium breeding ratio\ttritium-breeding-ratio\ten\tpreferred\n"
+            "TBR\ttritium-breeding-ratio\tabbr\tpreferred\n"
+            "比压\tbeta\tzh\tpreferred\n"
+            "beta\tbeta\ten\tpreferred\n"
+            "β\tbeta\tabbr\tpreferred\n"
+        ),
+        evidence=(
+            "deuterium\thttps://example.invalid/deuterium\n"
+            "central-solenoid\thttps://example.invalid/cs\n"
+            "tritium-breeding-ratio\thttps://example.invalid/tbr\n"
+            "beta\thttps://example.invalid/beta\n"
+        ),
+    )
+
+    out_dir = tmp_path / "artifacts"
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    data = _run_export_translation(repo_root, terms_dir, out_dir)
+
+    assert data["schema_version"] == 2
+
+    assert "D" not in data["en2zh"]
+    assert "CS" not in data["en2zh"]
+    assert "D" in data["en2zh_short"]
+    assert "CS" in data["en2zh_short"]
+
+    assert "TBR" in data["en2zh"]
+    assert "TBR" not in data["en2zh_short"]
+
+    assert "β" in data["en2zh"]
+    assert "β" not in data["en2zh_short"]
+
+    assert data["en2zh_short"]["D"]["zh"] == "氘"
+    assert data["en2zh_short"]["D"]["concept_id"] == "deuterium"
+    assert data["metadata"]["pairs_en2zh_short"] == len(data["en2zh_short"])
+
+
 def test_translation_dict_cli_flag(tmp_path: Path) -> None:
     repo_root = Path(__file__).resolve().parents[1]
 
