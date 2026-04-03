@@ -655,7 +655,14 @@ def main() -> None:
     if do_vale_sub:
         manifest.update(export_vale_substitute_yaml(terms_dir=terms_dir, out_dir=out_dir))
     if do_translation:
-        manifest.update(export_translation_dict(terms_dir=terms_dir, out_dir=out_dir))
+        min_en_key_len = cfg.get("export", {}).get("min_en_key_len", 3)
+        manifest.update(
+            export_translation_dict(
+                terms_dir=terms_dir,
+                out_dir=out_dir,
+                min_en_key_len=min_en_key_len,
+            )
+        )
 
     # Emit a small manifest to make downstream tooling simpler.
     manifest_path = out_dir / "registry_exports.json"

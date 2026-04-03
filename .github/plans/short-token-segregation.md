@@ -86,7 +86,7 @@
   - ✅ `schema_version == 2`
 - **潜在风险**：`en2zh_concept` 字典可能遗漏某些 alias（如果 alias 被跳过但已进入 en2zh）——实际上跳过条件与进入 en2zh 的条件互斥，不会发生；但应在循环中同步维护两个 dict
 
-#### Task 1.3: `main()` 传递 config 中的 `min_en_key_len`
+#### ✅ Task 1.3: `main()` 传递 config 中的 `min_en_key_len`
 - **目标**：将 config.toml 中的阈值传入导出函数
 - **修改内容**：
   - 文件 `pipeline/export_registry.py`，函数 `main()`（约 L640-643）：
