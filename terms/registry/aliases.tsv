@@ -5550,3 +5550,82 @@ checkpoint/restart	checkpoint-restart	en	preferred	preferred en
 断点续算	checkpoint-restart	zh	preferred	preferred zh
 profiler	profiler	en	preferred	preferred en
 性能分析器	profiler	zh	preferred	preferred zh
+
+# ==== Batch 57: MC & Deterministic Transport Methods ====
+track-length estimator	track-length-estimator	en	preferred	preferred en
+径迹长度估计器	track-length-estimator	zh	preferred	preferred zh
+collision estimator	collision-estimator	en	preferred	preferred en
+碰撞估计器	collision-estimator	zh	preferred	preferred zh
+surface current tally	surface-current-tally	en	preferred	preferred en
+面电流计数	surface-current-tally	zh	preferred	preferred zh
+cell flux tally	cell-flux-tally	en	preferred	preferred en
+栅元通量计数	cell-flux-tally	zh	preferred	preferred zh
+mesh tally	mesh-tally	en	preferred	preferred en
+网格计数	mesh-tally	zh	preferred	preferred zh
+CADIS	cadis	abbr	preferred	canonical abbr
+Consistent Adjoint Driven Importance Sampling	cadis	en	alias	full name
+FW-CADIS	fw-cadis	abbr	preferred	canonical abbr
+Forward-Weighted CADIS	fw-cadis	en	alias	full name
+source biasing	source-biasing	en	preferred	preferred en
+源偏倚	source-biasing	zh	preferred	preferred zh
+geometry splitting	geometry-splitting	en	preferred	preferred en
+几何劈裂	geometry-splitting	zh	preferred	preferred zh
+cell importance	geometry-splitting	en	alias	synonym
+Russian roulette	russian-roulette	en	preferred	preferred en
+俄罗斯轮盘赌	russian-roulette	zh	preferred	preferred zh
+implicit capture	implicit-capture	en	preferred	preferred en
+隐式俘获	implicit-capture	zh	preferred	preferred zh
+survival biasing	implicit-capture	en	alias	synonym
+forced collision	forced-collision	en	preferred	preferred en
+强制碰撞	forced-collision	zh	preferred	preferred zh
+DXTRAN sphere	dxtran-sphere	en	preferred	preferred en
+DXTRAN球	dxtran-sphere	zh	preferred	preferred zh
+Shannon entropy	shannon-entropy	en	preferred	preferred en
+Shannon熵	shannon-entropy	zh	preferred	preferred zh
+k-effective	keff	en	preferred	preferred en
+有效增殖因数	keff	zh	preferred	preferred zh
+keff	keff	abbr	preferred	canonical abbr
+k_eff	keff	en	alias	underscore variant
+k-eff	keff	en	alias	hyphen variant
+adjoint transport	adjoint-transport	en	preferred	preferred en
+伴随输运	adjoint-transport	zh	preferred	preferred zh
+adjoint	adjoint-transport	en	alias	short form
+hybrid method	hybrid-method	en	preferred	preferred en
+混合方法	hybrid-method	zh	preferred	preferred zh
+discrete ordinates	discrete-ordinates	en	preferred	preferred en
+离散纵标法	discrete-ordinates	zh	preferred	preferred zh
+S_N method	discrete-ordinates	en	alias	S_N notation
+method of characteristics	method-of-characteristics	en	preferred	preferred en
+特征线法	method-of-characteristics	zh	preferred	preferred zh
+MOC	method-of-characteristics	abbr	preferred	canonical abbr
+diffusion equation	diffusion-equation	en	preferred	preferred en
+扩散方程	diffusion-equation	zh	preferred	preferred zh
+transport equation	transport-equation	en	preferred	preferred en
+输运方程	transport-equation	zh	preferred	preferred zh
+Boltzmann transport equation	transport-equation	en	alias	full name
+eigenvalue problem	eigenvalue-problem	en	preferred	preferred en
+本征值问题	eigenvalue-problem	zh	preferred	preferred zh
+fixed source	fixed-source	en	preferred	preferred en
+固定源	fixed-source	zh	preferred	preferred zh
+criticality calculation	criticality-calculation	en	preferred	preferred en
+临界计算	criticality-calculation	zh	preferred	preferred zh
+source convergence	source-convergence	en	preferred	preferred en
+源收敛	source-convergence	zh	preferred	preferred zh
+relative error	relative-error	en	preferred	preferred en
+相对误差	relative-error	zh	preferred	preferred zh
+tally reliability	tally-reliability	en	preferred	preferred en
+计数可靠性	tally-reliability	zh	preferred	preferred zh
+particle splitting	particle-splitting	en	preferred	preferred en
+粒子劈裂	particle-splitting	zh	preferred	preferred zh
+energy cutoff	energy-cutoff	en	preferred	preferred en
+能量截断	energy-cutoff	zh	preferred	preferred zh
+time cutoff	time-cutoff	en	preferred	preferred en
+时间截断	time-cutoff	zh	preferred	preferred zh
+coupled neutron-photon transport	coupled-neutron-photon	en	preferred	preferred en
+中子-光子耦合输运	coupled-neutron-photon	zh	preferred	preferred zh
+analog Monte Carlo	analog-monte-carlo	en	preferred	preferred en
+模拟蒙特卡罗	analog-monte-carlo	zh	preferred	preferred zh
+importance function	importance-function	en	preferred	preferred en
+重要性函数	importance-function	zh	preferred	preferred zh
+response function	response-function	en	preferred	preferred en
+响应函数	response-function	zh	preferred	preferred zh

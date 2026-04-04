@@ -1116,3 +1116,39 @@ environment-module	https://en.wikipedia.org/wiki/Environment_Modules_(software)	
 scratch-filesystem	internal:fusion-terms:domain-expansion	HPC temporary storage concept		2026-04-04
 checkpoint-restart	https://en.wikipedia.org/wiki/Application_checkpointing			2026-04-04
 profiler	https://en.wikipedia.org/wiki/Profiling_(computer_programming)			2026-04-04
+
+# ==== Batch 57: MC & Deterministic Transport Methods ====
+track-length-estimator	internal:fusion-terms:domain-expansion	MC tally estimator type		2026-04-04
+collision-estimator	internal:fusion-terms:domain-expansion	MC tally estimator type		2026-04-04
+surface-current-tally	internal:fusion-terms:domain-expansion	MC tally type		2026-04-04
+cell-flux-tally	internal:fusion-terms:domain-expansion	MC tally type		2026-04-04
+mesh-tally	internal:fusion-terms:domain-expansion	MC tally type		2026-04-04
+cadis	https://doi.org/10.13182/NSE06-A2610	Wagner & Haghighat 2007		2026-04-04
+fw-cadis	https://doi.org/10.13182/NSE09-33	Wagner et al. 2011		2026-04-04
+source-biasing	internal:fusion-terms:domain-expansion	MC variance reduction technique		2026-04-04
+geometry-splitting	internal:fusion-terms:domain-expansion	MC variance reduction technique		2026-04-04
+russian-roulette	https://en.wikipedia.org/wiki/Russian_roulette_(Monte_Carlo)			2026-04-04
+implicit-capture	internal:fusion-terms:domain-expansion	MC variance reduction technique		2026-04-04
+forced-collision	internal:fusion-terms:domain-expansion	MC variance reduction technique		2026-04-04
+dxtran-sphere	internal:fusion-terms:domain-expansion	MCNP-specific VR technique		2026-04-04
+shannon-entropy	https://en.wikipedia.org/wiki/Entropy_(information_theory)			2026-04-04
+keff	https://en.wikipedia.org/wiki/Nuclear_chain_reaction#Effective_neutron_multiplication_factor			2026-04-04
+adjoint-transport	internal:fusion-terms:domain-expansion	Radiation transport methodology		2026-04-04
+hybrid-method	internal:fusion-terms:domain-expansion	Combined MC+deterministic approach		2026-04-04
+discrete-ordinates	https://en.wikipedia.org/wiki/Discrete_ordinates_method			2026-04-04
+method-of-characteristics	https://en.wikipedia.org/wiki/Method_of_characteristics			2026-04-04
+diffusion-equation	https://en.wikipedia.org/wiki/Neutron_transport#Neutron_diffusion_equation			2026-04-04
+transport-equation	https://en.wikipedia.org/wiki/Boltzmann_equation			2026-04-04
+eigenvalue-problem	internal:fusion-terms:domain-expansion	Criticality problem formulation		2026-04-04
+fixed-source	internal:fusion-terms:domain-expansion	Shielding/activation source problem		2026-04-04
+criticality-calculation	internal:fusion-terms:domain-expansion	Nuclear safety computation		2026-04-04
+source-convergence	internal:fusion-terms:domain-expansion	MC fission source convergence		2026-04-04
+relative-error	internal:fusion-terms:domain-expansion	MC statistical metric		2026-04-04
+tally-reliability	internal:fusion-terms:domain-expansion	MC tally quality indicator		2026-04-04
+particle-splitting	internal:fusion-terms:domain-expansion	MC variance reduction technique		2026-04-04
+energy-cutoff	internal:fusion-terms:domain-expansion	MC tracking parameter		2026-04-04
+time-cutoff	internal:fusion-terms:domain-expansion	MC tracking parameter		2026-04-04
+coupled-neutron-photon	internal:fusion-terms:domain-expansion	Multi-particle transport method		2026-04-04
+analog-monte-carlo	internal:fusion-terms:domain-expansion	Unbiased MC simulation		2026-04-04
+importance-function	internal:fusion-terms:domain-expansion	VR adjoint concept		2026-04-04
+response-function	internal:fusion-terms:domain-expansion	Detector response kernel		2026-04-04

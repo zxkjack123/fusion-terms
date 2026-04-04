@@ -180,7 +180,7 @@
 
 ### Phase 3: 蒙特卡罗与确定论输运方法
 
-#### Task 3.1: 添加输运方法术语到三表
+#### ✅ Task 3.1: 添加输运方法术语到三表
 
 - **目标**：新增 ~35 个 concept。已有 `variance-reduction`、`weight-window`、`tallying` 需跳过或仅补 alias。
 
@@ -237,7 +237,7 @@
   - ✅ validate_registry 通过
 - **潜在风险**：`tallying` 已存在——不重建 concept，可能只需补 alias；`keff` 下标写法变体多（k_eff, keff, k-eff）
 
-#### Task 3.2: 同步 allowlist
+#### ✅ Task 3.2: 同步 allowlist
 
 - **目标**：输运方法术语追加到 allowlist
 - **修改内容**：allowlist_en.txt、allowlist_zh.txt 追加

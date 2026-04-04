@@ -874,3 +874,10 @@ speedup
 profiler
 interconnect
 thread
+
+# --- MC & Deterministic Transport (Batch 57) ---
+CADIS
+FW-CADIS
+keff
+MOC
+DXTRAN

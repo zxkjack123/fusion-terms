@@ -1178,3 +1178,39 @@ environment-module	code	环境模块	environment module		active	Dynamic modifica
 scratch-filesystem	concept	临时文件系统	scratch filesystem		active	HPC temporary high-speed storage
 checkpoint-restart	method	断点续算	checkpoint/restart		active	Saving/restoring computation state for fault tolerance
 profiler	code	性能分析器	profiler		active	Performance analysis tool (gprof, perf, VTune)
+
+# ==== Batch 57: MC & Deterministic Transport Methods ====
+track-length-estimator	method	径迹长度估计器	track-length estimator		active	MC tally type based on track length through cell
+collision-estimator	method	碰撞估计器	collision estimator		active	MC tally type based on collision events
+surface-current-tally	method	面电流计数	surface current tally		active	MC tally counting particles crossing a surface
+cell-flux-tally	method	栅元通量计数	cell flux tally		active	MC tally averaging flux over a cell volume
+mesh-tally	method	网格计数	mesh tally		active	MC tally on a superimposed mesh
+cadis	method	CADIS	CADIS	CADIS	active	Consistent Adjoint Driven Importance Sampling
+fw-cadis	method	FW-CADIS	FW-CADIS	FW-CADIS	active	Forward-Weighted CADIS for global variance reduction
+source-biasing	method	源偏倚	source biasing		active	Biasing source particle sampling for variance reduction
+geometry-splitting	method	几何劈裂	geometry splitting		active	Cell importance-based variance reduction
+russian-roulette	method	俄罗斯轮盘赌	Russian roulette		active	Probabilistic particle termination for variance reduction
+implicit-capture	method	隐式俘获	implicit capture		active	Survival biasing: reduce weight instead of killing particle
+forced-collision	method	强制碰撞	forced collision		active	Force particle interaction in specified cell
+dxtran-sphere	method	DXTRAN球	DXTRAN sphere		active	MCNP-specific deterministic transport to a sphere
+shannon-entropy	metric	Shannon熵	Shannon entropy		active	Fission source convergence diagnostic
+keff	metric	有效增殖因数	k-effective	keff	active	Effective neutron multiplication factor
+adjoint-transport	method	伴随输运	adjoint transport		active	Backward particle transport for importance estimation
+hybrid-method	method	混合方法	hybrid method		active	Combined MC and deterministic transport approach
+discrete-ordinates	method	离散纵标法	discrete ordinates		active	Deterministic method solving transport eqn on angular grid
+method-of-characteristics	method	特征线法	method of characteristics	MOC	active	Deterministic transport method tracing characteristic lines
+diffusion-equation	concept	扩散方程	diffusion equation		active	Simplified neutron transport equation
+transport-equation	concept	输运方程	transport equation		active	Boltzmann transport equation for particle transport
+eigenvalue-problem	concept	本征值问题	eigenvalue problem		active	keff criticality problem formulation
+fixed-source	concept	固定源	fixed source		active	External source problem (shielding/activation)
+criticality-calculation	method	临界计算	criticality calculation		active	Computing keff for fissile systems
+source-convergence	concept	源收敛	source convergence		active	Fission source distribution convergence
+relative-error	metric	相对误差	relative error		active	MC statistical uncertainty measure
+tally-reliability	metric	计数可靠性	tally reliability		active	MC tally statistical quality (10 tests)
+particle-splitting	method	粒子劈裂	particle splitting		active	Creating multiple lower-weight particles at importance boundary
+energy-cutoff	concept	能量截断	energy cutoff		active	Minimum energy for particle tracking
+time-cutoff	concept	时间截断	time cutoff		active	Maximum time for particle tracking
+coupled-neutron-photon	method	中子-光子耦合输运	coupled neutron-photon transport		active	Simultaneous neutron and photon transport
+analog-monte-carlo	method	模拟蒙特卡罗	analog Monte Carlo		active	MC without variance reduction techniques
+importance-function	concept	重要性函数	importance function		active	Adjoint flux used for variance reduction
+response-function	concept	响应函数	response function		active	Detector/tally response kernel
