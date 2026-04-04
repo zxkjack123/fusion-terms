@@ -6756,3 +6756,54 @@ environmental qualification	environmental-qualification	en	preferred	preferred e
 EQ	environmental-qualification	abbr	preferred	canonical abbr (IEEE 323)
 environmental-qualification	environmental-qualification	en	alias	hyphenated form
 环境适应性鉴定	environmental-qualification	zh	alias	expanded zh
+
+# ---- Batch 85 aliases ----
+bus bar	bus-bar	en	preferred	preferred en
+母线	bus-bar	zh	preferred	preferred zh
+bus-bar	bus-bar	en	alias	hyphenated form
+busbar	bus-bar	en	alias	closed form
+汇流排	bus-bar	zh	alias	synonym zh
+switchgear	switchgear	en	preferred	preferred en
+开关柜	switchgear	zh	preferred	preferred zh
+开关设备	switchgear	zh	alias	generic zh
+配电装置	switchgear	zh	alias	variant zh
+transformer	transformer	en	preferred	preferred en
+变压器	transformer	zh	preferred	preferred zh
+power transformer	transformer	en	alias	specific form
+电力变压器	transformer	zh	alias	specific zh
+emergency diesel generator	emergency-diesel-generator	en	preferred	preferred en
+应急柴油发电机	emergency-diesel-generator	zh	preferred	preferred zh
+EDG	emergency-diesel-generator	abbr	preferred	canonical abbr
+emergency-diesel-generator	emergency-diesel-generator	en	alias	hyphenated form
+柴油发电机组	emergency-diesel-generator	zh	alias	short zh
+uninterruptible power supply	uninterruptible-power-supply	en	preferred	preferred en
+不间断电源	uninterruptible-power-supply	zh	preferred	preferred zh
+UPS	uninterruptible-power-supply	abbr	preferred	canonical abbr
+uninterruptible-power-supply	uninterruptible-power-supply	en	alias	hyphenated form
+不间断供电系统	uninterruptible-power-supply	zh	alias	expanded zh
+modularization	modularization	en	preferred	preferred en
+模块化	modularization	zh	preferred	preferred zh
+modularisation	modularization	en	alias	British spelling
+模块化建造	modularization	zh	alias	construction context zh
+hot functional testing	hot-functional-testing	en	preferred	preferred en
+热功能试验	hot-functional-testing	zh	preferred	preferred zh
+HFT	hot-functional-testing	abbr	preferred	canonical abbr
+hot-functional-testing	hot-functional-testing	en	alias	hyphenated form
+hot functional test	hot-functional-testing	en	alias	singular form
+热态功能试验	hot-functional-testing	zh	alias	variant zh
+construction permit	construction-permit	en	preferred	preferred en
+建造许可证	construction-permit	zh	preferred	preferred zh
+construction-permit	construction-permit	en	alias	hyphenated form
+建造许可	construction-permit	zh	alias	short zh
+核设施建造许可证	construction-permit	zh	alias	nuclear-specific zh
+operating license	operating-license	en	preferred	preferred en
+运行许可证	operating-license	zh	preferred	preferred zh
+operating-license	operating-license	en	alias	hyphenated form
+operating licence	operating-license	en	alias	British spelling
+运行许可	operating-license	zh	alias	short zh
+核设施运行许可证	operating-license	zh	alias	nuclear-specific zh
+configuration management	configuration-management	en	preferred	preferred en
+配置管理	configuration-management	zh	preferred	preferred zh
+CM	configuration-management	abbr	preferred	canonical abbr (NQA)
+configuration-management	configuration-management	en	alias	hyphenated form
+技术状态管理	configuration-management	zh	alias	alternative zh

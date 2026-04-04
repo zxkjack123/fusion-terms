@@ -1498,3 +1498,13 @@ environmental-monitoring	internal:registry-gap-review:batch8	Systematic monitori
 effluent-monitoring	internal:registry-gap-review:batch8	Monitoring of gaseous/liquid radioactive discharges to environment	copilot	2026-04-04
 atmospheric-dispersion	internal:registry-gap-review:batch8	Transport and diffusion of radioactive material in atmosphere	copilot	2026-04-04
 environmental-qualification	internal:registry-gap-review:batch8	Qualification of equipment to function under accident environmental conditions (IEEE 323)	copilot	2026-04-04
+bus-bar	internal:registry-gap-review:batch8	Electrical conductor for current collection and distribution in power systems	copilot	2026-04-04
+switchgear	internal:registry-gap-review:batch8	Combined switching apparatus for control, protection and isolation of electrical equipment	copilot	2026-04-04
+transformer	internal:registry-gap-review:batch8	Power transformer for voltage conversion in electrical distribution (not CS transformer action)	copilot	2026-04-04
+emergency-diesel-generator	internal:registry-gap-review:batch8	Safety-class emergency AC power source for nuclear facilities	copilot	2026-04-04
+uninterruptible-power-supply	internal:registry-gap-review:batch8	Power supply system ensuring uninterrupted power to critical loads	copilot	2026-04-04
+modularization	internal:registry-gap-review:batch8	Construction method of pre-fabricating modules for large facility assembly (ITER/DEMO strategy)	copilot	2026-04-04
+hot-functional-testing	internal:registry-gap-review:batch8	Pre-fuel-loading hot system functional verification test	copilot	2026-04-04
+construction-permit	internal:registry-gap-review:batch8	Regulatory permit for nuclear facility construction phase	copilot	2026-04-04
+operating-license	internal:registry-gap-review:batch8	Regulatory license for nuclear facility operation phase	copilot	2026-04-04
+configuration-management	internal:registry-gap-review:batch8	Systematic control of design basis and technical configuration (NQA/IAEA GS-G-3.5)	copilot	2026-04-04

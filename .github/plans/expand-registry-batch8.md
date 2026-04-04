@@ -196,7 +196,7 @@
 
 ### Phase 2: Batch 85 — 电气系统 + 建设调试 (10 terms)
 
-#### Task 2.1: Batch 85 三表追加（10 概念 + ~48 alias + 10 evidence）
+#### ✅ Task 2.1: Batch 85 三表追加（10 概念 + ~48 alias + 10 evidence）
 
 - **目标**：在三张注册表表末尾追加 Batch 85 全部数据
 - **修改内容**：

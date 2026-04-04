@@ -1594,3 +1594,15 @@ environmental-monitoring	method	环境监测	environmental monitoring		active	�
 effluent-monitoring	method	流出物监测	effluent monitoring		active	核设施排放至环境的气态/液态放射性流出物监测
 atmospheric-dispersion	concept	大气弥散	atmospheric dispersion		active	放射性物质在大气中的输运与扩散过程
 environmental-qualification	method	环境鉴定	environmental qualification	EQ	active	设备在事故环境条件下维持功能的鉴定 (IEEE 323)
+
+# ==== Batch 85: electrical systems + construction & commissioning ====
+bus-bar	device	母线	bus bar		active	电力系统中汇集和分配电流的导体
+switchgear	device	开关柜	switchgear		active	用于控制、保护和隔离电气设备的开关装置组合
+transformer	device	变压器	transformer		active	电力变压器（非中心螺管"变压器效应"）
+emergency-diesel-generator	device	应急柴油发电机	emergency diesel generator	EDG	active	安全级应急交流电源
+uninterruptible-power-supply	device	不间断电源	uninterruptible power supply	UPS	active	保障关键负荷不间断供电的电源系统
+modularization	method	模块化	modularization		active	将大型设施分解为可预制模块进行建造和安装的方法
+hot-functional-testing	method	热功能试验	hot functional testing	HFT	active	核设施装料前的热态系统功能验证试验
+construction-permit	doc	建造许可证	construction permit		active	核设施建造阶段的监管许可文件
+operating-license	doc	运行许可证	operating license		active	核设施运行阶段的监管许可文件
+configuration-management	method	配置管理	configuration management	CM	active	核设施设计基准和技术状态的系统管控方法 (NQA)
