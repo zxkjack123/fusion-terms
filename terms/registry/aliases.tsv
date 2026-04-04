@@ -123,6 +123,58 @@ primary heat transfer	primary-heat-transfer	en	preferred
 一回路传热	primary-heat-transfer	zh	preferred
 primary heat transport	primary-heat-transfer	en	alias	Variant form
 
+# ==== Batch 67: high-priority dehyphenated EN aliases ====
+high temperature superconductor	high-temperature-superconductor	en	alias	无连字符查询形式
+low temperature superconductor	low-temperature-superconductor	en	alias	无连字符查询形式
+cable in conduit conductor	cable-in-conduit-conductor	en	alias	无连字符查询形式
+as low as reasonably achievable	alara	en	alias	无连字符查询形式
+preliminary safety analysis report	preliminary-safety-analysis-report	en	alias	无连字符查询形式
+final safety analysis report	final-safety-analysis-report	en	alias	无连字符查询形式
+I mode	i-mode	en	alias	无连字符查询形式
+ex vessel	ex-vessel	en	alias	无连字符查询形式
+in vessel	in-vessel	en	alias	无连字符查询形式
+double null	double-null	en	alias	无连字符查询形式
+single null	single-null	en	alias	无连字符查询形式
+grad B drift	grad-b-drift	en	alias	无连字符查询形式
+lithium lead	lithium-lead	en	alias	无连字符查询形式
+super H mode	super-h-mode	en	alias	无连字符查询形式
+co deposition	co-deposition	en	alias	无连字符查询形式
+nth of a kind	nth-of-a-kind	en	alias	无连字符查询形式
+L H transition	l-h-transition	en	alias	无连字符查询形式
+plasma ramp up	plasma-ramp-up	en	alias	无连字符查询形式
+two phase flow	two-phase-flow	en	alias	无连字符查询形式
+first of a kind	first-of-a-kind	en	alias	无连字符查询形式
+low level waste	low-level-waste	en	alias	无连字符查询形式
+two fluid model	two-fluid-model	en	alias	无连字符查询形式
+Super X divertor	super-x-divertor	en	alias	无连字符查询形式
+beam beam fusion	beam-beam-fusion	en	alias	无连字符查询形式
+density pump out	density-pump-out	en	alias	无连字符查询形式
+heavy ion fusion	heavy-ion-fusion	en	alias	无连字符查询形式
+high level waste	high-level-waste	en	alias	无连字符查询形式
+particle in cell	particle-in-cell	en	alias	无连字符查询形式
+plasma ramp down	plasma-ramp-down	en	alias	无连字符查询形式
+quasi isodynamic	quasi-isodynamic	en	alias	无连字符查询形式
+quiescent H mode	quiescent-h-mode	en	alias	无连字符查询形式
+gyro Bohm scaling	gyro-bohm-scaling	en	alias	无连字符查询形式
+hot spot ignition	hot-spot-ignition	en	alias	无连字符查询形式
+long leg divertor	long-leg-divertor	en	alias	无连字符查询形式
+low cycle fatigue	low-cycle-fatigue	en	alias	无连字符查询形式
+quasi axisymmetry	quasi-axisymmetry	en	alias	无连字符查询形式
+real time control	real-time-control	en	alias	无连字符查询形式
+single phase flow	single-phase-flow	en	alias	无连字符查询形式
+beam target fusion	beam-target-fusion	en	alias	无连字符查询形式
+hands on recycling	hands-on-recycling	en	alias	无连字符查询形式
+heat affected zone	heat-affected-zone	en	alias	无连字符查询形式
+high cycle fatigue	high-cycle-fatigue	en	alias	无连字符查询形式
+laser boron fusion	laser-boron-fusion	en	alias	无连字符查询形式
+micro tearing mode	micro-tearing-mode	en	alias	无连字符查询形式
+non thermal plasma	non-thermal-plasma	en	alias	无连字符查询形式
+current driven mode	current-driven-mode	en	alias	无连字符查询形式
+laser driven fusion	laser-driven-fusion	en	alias	无连字符查询形式
+proton boron fusion	proton-boron-fusion	en	alias	无连字符查询形式
+spin polarized fuel	spin-polarized-fuel	en	alias	无连字符查询形式
+charge exchange loss	charge-exchange-loss	en	alias	无连字符查询形式
+
 最终安全分析报告	final-safety-analysis-report	zh	preferred	preferred zh
 Final Safety Analysis Report	final-safety-analysis-report	en	preferred	preferred en (phrase)
 final-safety-analysis-report	final-safety-analysis-report	en	alias	IME token-only form
