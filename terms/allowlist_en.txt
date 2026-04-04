@@ -1159,3 +1159,21 @@ committed-dose
 committed-effective-dose
 personal-dosimeter
 occupational-radiation-exposure
+
+# --- Batch 82 Phase 2 allowlist sync ---
+tokamak-assembly
+sector-sub-assembly
+SSA
+in-vessel-component
+IVC
+ex-vessel-component
+master-slave-manipulator
+MSM
+transfer-cask
+transfer-flask
+interlock-system
+programmable-logic-controller
+PLC
+human-machine-interface
+HMI
+plant-control-system

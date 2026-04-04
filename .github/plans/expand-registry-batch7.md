@@ -287,7 +287,7 @@
   - ✅ Batch 82 的 10 个 concept_id 均可在 concepts.tsv 中通过 awk 精确匹配找到
 - **潜在风险**：PCS 缩写若与已有 aliases 冲突（如 poloidal current strap 等） → precheck 发现后可改用 `plant-control` 无缩写
 
-#### Task 2.2: Batch 82 allowlist 同步
+#### ✅ Task 2.2: Batch 82 allowlist 同步
 
 - **目标**：将 Batch 82 所有新增 EN token / ZH 术语同步到 allowlist
 - **修改内容**：
