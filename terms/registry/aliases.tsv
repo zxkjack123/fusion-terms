@@ -6153,3 +6153,35 @@ scatter plot	scatter-plot	en	preferred	preferred en
 散点图	scatter-plot	zh	preferred	preferred zh
 histogram	histogram	en	preferred	preferred en
 直方图	histogram	zh	preferred	preferred zh
+
+# ==== Batch 68: breeder material siblings ====
+FLiBe	flibe	en	preferred	preferred en
+氟化锂铍	flibe	zh	preferred	preferred zh
+Li2BeF4	flibe	mixed	preferred	chemical formula
+Li₂BeF₄	flibe	mixed	alias	chemical formula (Unicode)
+flibe	flibe	en	alias	lowercase common form
+
+lithium aluminate	lithium-aluminate	en	preferred	preferred en (phrase)
+铝酸锂	lithium-aluminate	zh	preferred	preferred zh
+LiAlO2	lithium-aluminate	mixed	preferred	chemical formula
+lithium-aluminate	lithium-aluminate	en	alias	hyphenated form
+
+lithium metasilicate	lithium-metasilicate	en	preferred	preferred en (phrase)
+偏硅酸锂	lithium-metasilicate	zh	preferred	preferred zh
+Li2SiO3	lithium-metasilicate	mixed	preferred	chemical formula
+lithium-metasilicate	lithium-metasilicate	en	alias	hyphenated form
+
+lithium oxide	lithium-oxide	en	preferred	preferred en (phrase)
+氧化锂	lithium-oxide	zh	preferred	preferred zh
+Li2O	lithium-oxide	mixed	preferred	chemical formula
+lithium-oxide	lithium-oxide	en	alias	hyphenated form
+
+lithium-rich zirconate	lithium-rich-zirconate	en	preferred	preferred en
+富锂锆酸盐	lithium-rich-zirconate	zh	preferred	preferred zh
+Li8ZrO6	lithium-rich-zirconate	mixed	preferred	chemical formula
+lithium-rich-zirconate	lithium-rich-zirconate	en	alias	fully hyphenated form
+
+breeder material	breeder-material	en	preferred	preferred en
+增殖材料	breeder-material	zh	preferred	preferred zh
+breeding material	breeder-material	en	alias	common variant
+breeder-material	breeder-material	en	alias	hyphenated form

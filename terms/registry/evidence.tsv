@@ -1362,3 +1362,9 @@ beryllium-pebble	internal:translation-dict-gap:phase3	P1 coverage term for beryl
 lithium-metatitanate	internal:translation-dict-gap:phase3	P1 coverage term for lithium metatitanate	copilot	2026-04-04
 lithium-metazirconate	internal:translation-dict-gap:phase3	P1 coverage term for lithium metazirconate	copilot	2026-04-04
 primary-heat-transfer	internal:translation-dict-gap:phase3	P1 coverage term for primary-loop heat transfer	copilot	2026-04-04
+flibe	internal:registry-gap-review:batch3	Breeder/coolant molten-salt material Li₂BeF₄	copilot	2026-04-04
+lithium-aluminate	internal:registry-gap-review:batch3	Breeder ceramic sibling LiAlO₂	copilot	2026-04-04
+lithium-metasilicate	internal:registry-gap-review:batch3	Breeder ceramic sibling Li₂SiO₃	copilot	2026-04-04
+lithium-oxide	internal:registry-gap-review:batch3	Classic breeder material Li₂O	copilot	2026-04-04
+lithium-rich-zirconate	internal:registry-gap-review:batch3	Breeder material Li₈ZrO₆	copilot	2026-04-04
+breeder-material	internal:registry-gap-review:batch3	Superordinate concept for breeding materials	copilot	2026-04-04

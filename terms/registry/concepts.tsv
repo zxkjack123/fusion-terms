@@ -1428,3 +1428,11 @@ beryllium-pebble	material	铍球	beryllium pebble		active	Beryllium multiplier p
 lithium-metatitanate	material	偏钛酸锂	lithium metatitanate		active	Ceramic breeder material concept (metatitanate)
 lithium-metazirconate	material	偏锆酸锂	lithium metazirconate		active	Ceramic breeder material concept (metazirconate)
 primary-heat-transfer	concept	一回路传热	primary heat transfer		active	Primary-loop thermal transfer concept
+
+# ==== Batch 68: breeder material siblings ====
+flibe	material	氟化锂铍	FLiBe	FLiBe	active	熔盐增殖/冷却材料 Li₂BeF₄
+lithium-aluminate	material	铝酸锂	lithium aluminate		active	增殖陶瓷材料 LiAlO₂
+lithium-metasilicate	material	偏硅酸锂	lithium metasilicate		active	增殖陶瓷材料 Li₂SiO₃
+lithium-oxide	material	氧化锂	lithium oxide		active	经典增殖材料 Li₂O
+lithium-rich-zirconate	material	富锂锆酸盐	lithium-rich zirconate		active	增殖材料 Li₈ZrO₆
+breeder-material	concept	增殖材料	breeder material		active	产氚增殖材料上位概念
