@@ -1493,3 +1493,10 @@ codac	system	控制、数据获取与通信	control, data access and communicati
 hot-isostatic-pressing	method	热等静压	hot isostatic pressing	HIP	active	钨/RAFM 钢部件制造核心工艺
 electron-beam-welding	method	电子束焊接	electron beam welding		active	真空容器等厚壁部件主要焊接方法
 diffusion-bonding	method	扩散连接	diffusion bonding		active	包层/第一壁异种材料连接工艺
+
+# ==== Batch 76: manufacturing inspection + cooling auxiliary ====
+in-service-inspection	method	在役检查	in-service inspection	ISI	active	核设施法规要求的运行期检查
+additive-manufacturing	method	增材制造	additive manufacturing	AM	active	聚变部件新兴制造路线
+tokamak-cooling-water-system	system	托卡马克冷却水系统	tokamak cooling water system	TCWS	active	ITER PBS 26 系统级名称
+atmosphere-detritiation-system	system	厂房去氚系统	atmosphere detritiation system	ADS	active	三重氚包容关键安全系统；聚变语境，非 accelerator-driven system
+water-radiolysis	concept	水辐解	water radiolysis		active	冷却剂氢浓度与安全分析关键过程

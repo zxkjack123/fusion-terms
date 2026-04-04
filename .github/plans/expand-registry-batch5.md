@@ -285,7 +285,7 @@
 
 ### Phase 3: 制造后半 + 冷却辅助系统（P1-b — Batch 76, 5 terms）
 
-#### Task 3.1: 添加 5 个 P1-b 概念到三表
+#### ✅ Task 3.1: 添加 5 个 P1-b 概念到三表
 
 - **目标**：补全制造/检查（ISI/AM）和冷却辅助系统（TCWS/ADS/water-radiolysis）
 - **修改内容**：

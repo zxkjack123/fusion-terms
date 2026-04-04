@@ -6393,3 +6393,28 @@ e-beam welding	electron-beam-welding	en	alias	common short form (EBW token reser
 diffusion bonding	diffusion-bonding	en	preferred	preferred en
 扩散连接	diffusion-bonding	zh	preferred	preferred zh
 diffusion-bonding	diffusion-bonding	en	alias	hyphenated form
+
+# ==== Batch 76: manufacturing inspection + cooling auxiliary ====
+in-service inspection	in-service-inspection	en	preferred	preferred en
+在役检查	in-service-inspection	zh	preferred	preferred zh
+ISI	in-service-inspection	abbr	preferred	canonical abbr
+in-service-inspection	in-service-inspection	en	alias	hyphenated form
+
+additive manufacturing	additive-manufacturing	en	preferred	preferred en
+增材制造	additive-manufacturing	zh	preferred	preferred zh
+AM	additive-manufacturing	abbr	preferred	canonical abbr
+additive-manufacturing	additive-manufacturing	en	alias	hyphenated form
+
+tokamak cooling water system	tokamak-cooling-water-system	en	preferred	preferred en
+托卡马克冷却水系统	tokamak-cooling-water-system	zh	preferred	preferred zh
+TCWS	tokamak-cooling-water-system	abbr	preferred	canonical abbr
+tokamak-cooling-water-system	tokamak-cooling-water-system	en	alias	hyphenated form
+
+atmosphere detritiation system	atmosphere-detritiation-system	en	preferred	preferred en
+厂房去氚系统	atmosphere-detritiation-system	zh	preferred	preferred zh
+ADS	atmosphere-detritiation-system	abbr	preferred	canonical abbr
+atmosphere-detritiation-system	atmosphere-detritiation-system	en	alias	hyphenated form
+
+water radiolysis	water-radiolysis	en	preferred	preferred en
+水辐解	water-radiolysis	zh	preferred	preferred zh
+water-radiolysis	water-radiolysis	en	alias	hyphenated form
