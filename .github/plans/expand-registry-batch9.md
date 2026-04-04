@@ -538,7 +538,7 @@ penning-gauge	internal:registry-gap-review:batch9	Cold cathode discharge vacuum 
   - ✅ 每个 concept 至少有 en preferred + zh preferred + 1 个 alias
 - **潜在风险**：`MIG` 在焊接领域是 "Metal Inert Gas" 缩写，但本注册表不覆盖焊接工艺术语（`electron-beam-welding` 已有，但无 MIG welding）。若未来加入焊接术语需重新评估。`beam-dump` 在加速器物理中有更广泛含义，此处 notes 和 evidence 均标注 NBI 语境。
 
-#### Task 3.2: Batch 89 allowlist 同步
+#### ✅ Task 3.2: Batch 89 allowlist 同步
 
 - **目标**：将 Batch 89 新增术语的所有 EN/ZH 表面形式同步到 allowlist
 - **修改内容**：
@@ -550,29 +550,29 @@ penning-gauge	internal:registry-gap-review:batch9	Cold cathode discharge vacuum 
 ```
 neutralizer
 neutraliser
-gas neutralizer
+gas-neutralizer
 accelerator-grid
-acceleration grid
+acceleration-grid
 beam-dump
-beam stop
+beam-stop
 residual-ion-dump
 RID
 magnetron-injection-gun
 MIG
 diamond-window
-CVD diamond window
+CVD-diamond-window
 ecrh-launcher
-ECH launcher
-electron cyclotron launcher
+ECH-launcher
+electron-cyclotron-launcher
 non-evaporable-getter
 NEG
-NEG pump
+NEG-pump
 ion-gauge
-ionization gauge
-hot cathode gauge
+ionization-gauge
+hot-cathode-gauge
 penning-gauge
-cold cathode gauge
-Penning vacuum gauge
+cold-cathode-gauge
+Penning-vacuum-gauge
 ```
 
 **ZH tokens**（每行一个）：
@@ -595,19 +595,19 @@ ECRH天线
 非蒸散型吸气剂
 非蒸发型吸气剂
 电离真空计
-电离规
+离子规
 潘宁真空计
 潘宁规
 ```
 
 - **修改边界**：不得修改 allowlist 已有内容。仅追加。
 - **测试要求**：
-  - `sort terms/allowlist_en.txt | uniq -d` → 无重复
-  - `sort terms/allowlist_zh.txt | uniq -d` → 无重复
+  - `sort terms/allowlist_en.txt | uniq -d` / `sort terms/allowlist_zh.txt | uniq -d` 用于观察历史重复（仓库中存在既有重复）
+  - 对 Batch 89 新增 token 执行逐项计数检查，预期每个新增 token 在各自 allowlist 中出现次数 = 1
 - **验收标准**：
   - ✅ allowlist_en.txt 新增 25 个 EN tokens
   - ✅ allowlist_zh.txt 新增 20 个 ZH tokens
-  - ✅ 无重复行
+  - ✅ Batch 89 新增 tokens 无重复（允许历史重复行保留）
 - **潜在风险**：`MIG` 和 `NEG` 是 3 字符 tokens，`min_en_key_len=3`（config.toml 设置），刚好符合阈值，不会被过滤到 short-token 区。
 
 ### Phase 4: 全量验证、导出与测试
