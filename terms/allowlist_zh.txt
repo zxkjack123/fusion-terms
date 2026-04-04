@@ -2120,6 +2120,18 @@ EVEDA锂试验回路
 底板
 排放槽
 
+# --- Batch 79 Phase 2 allowlist sync ---
+等离子体击穿
+击穿
+环电压
+平顶段
+燃烧阶段
+等离子体终止
+部件冷却水系统
+冷冻水系统
+端口室
+上端口
+
 # --- Batch 78 Phase 1 allowlist sync ---
 无功补偿
 电机-发电机组

@@ -268,7 +268,7 @@
   - ✅ Batch 79 的 10 个 concept_id 均可在 concepts.tsv 中 grep 到
 - **潜在风险**：`击穿` 作为 zh alias 可能与其他概念的短别名冲突 → precheck `grep -P '^击穿\t' aliases.tsv`
 
-#### Task 2.2: Batch 79 allowlist 同步
+#### ✅ Task 2.2: Batch 79 allowlist 同步
 
 - **目标**：将 Batch 79 所有新增 EN token / ZH 术语同步到 allowlist
 - **修改内容**：

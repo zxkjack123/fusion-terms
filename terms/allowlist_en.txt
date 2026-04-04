@@ -1110,3 +1110,18 @@ safety-important-component
 SIC
 postulated-initiating-event
 confinement-system
+
+# --- Batch 79 Phase 2 allowlist sync ---
+plasma-breakdown
+loop-voltage
+Flat-Top
+flat-top
+burn-phase
+plasma-termination
+component-cooling-water-system
+CCWS
+chilled-water-system
+CHWS
+port-cell
+upper-port
+diagnostic-port
