@@ -1397,3 +1397,7 @@ vacuum-leak-rate	internal:registry-gap-review:batch4	Core vacuum acceptance/oper
 turbomolecular-pump	internal:registry-gap-review:batch4	Vacuum hardware sibling to cryopump	copilot	2026-04-04
 residual-gas-analyzer	internal:registry-gap-review:batch4	Standard vacuum/plasma impurity diagnostic	copilot	2026-04-04
 leak-detection	internal:registry-gap-review:batch4	Vacuum system engineering method	copilot	2026-04-04
+
+factory-acceptance-test	internal:registry-gap-review:batch4	QA/commissioning standard term	copilot	2026-04-04
+site-acceptance-test	internal:registry-gap-review:batch4	Deployment lifecycle FAT counterpart	copilot	2026-04-04
+weldability	internal:registry-gap-review:batch4	Material/mechanical engineering attribute	copilot	2026-04-04

@@ -1472,3 +1472,8 @@ vacuum-leak-rate	metric	真空漏率	vacuum leak rate		active	真空系统验收
 turbomolecular-pump	device	涡轮分子泵	turbomolecular pump	TMP	active	真空硬件，与 cryopump 成对
 residual-gas-analyzer	diagnostic	残余气体分析仪	residual gas analyzer	RGA	active	真空/杂质标准诊断
 leak-detection	method	检漏	leak detection		active	真空系统配套工程方法
+
+# ==== Batch 73: QA acceptance + material attribute ====
+factory-acceptance-test	method	出厂验收测试	factory acceptance test	FAT	active	QA/调试验收标准术语
+site-acceptance-test	method	现场验收测试	site acceptance test	SAT	active	FAT 的部署阶段配对术语
+weldability	metric	可焊性	weldability		active	材料/力学工程属性

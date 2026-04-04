@@ -6319,3 +6319,17 @@ residual-gas-analyzer	residual-gas-analyzer	en	alias	hyphenated form
 leak detection	leak-detection	en	preferred	preferred en
 检漏	leak-detection	zh	preferred	preferred zh
 leak-detection	leak-detection	en	alias	hyphenated form
+
+# ==== Batch 73: QA acceptance + material attribute ====
+factory acceptance test	factory-acceptance-test	en	preferred	preferred en
+出厂验收测试	factory-acceptance-test	zh	preferred	preferred zh
+FAT	factory-acceptance-test	abbr	preferred	canonical abbr
+factory-acceptance-test	factory-acceptance-test	en	alias	hyphenated form
+
+site acceptance test	site-acceptance-test	en	preferred	preferred en
+现场验收测试	site-acceptance-test	zh	preferred	preferred zh
+SAT	site-acceptance-test	abbr	preferred	canonical abbr
+site-acceptance-test	site-acceptance-test	en	alias	hyphenated form
+
+weldability	weldability	en	preferred	preferred en
+可焊性	weldability	zh	preferred	preferred zh
