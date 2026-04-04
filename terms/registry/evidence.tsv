@@ -1401,3 +1401,9 @@ leak-detection	internal:registry-gap-review:batch4	Vacuum system engineering met
 factory-acceptance-test	internal:registry-gap-review:batch4	QA/commissioning standard term	copilot	2026-04-04
 site-acceptance-test	internal:registry-gap-review:batch4	Deployment lifecycle FAT counterpart	copilot	2026-04-04
 weldability	internal:registry-gap-review:batch4	Material/mechanical engineering attribute	copilot	2026-04-04
+
+thermal-quench	internal:registry-gap-review:batch5	Disruption phase: rapid thermal energy loss	copilot	2026-04-04
+current-quench	internal:registry-gap-review:batch5	Disruption phase: plasma current decay	copilot	2026-04-04
+inner-fuel-cycle	internal:registry-gap-review:batch5	Plasma exhaust to direct internal recycle loop	copilot	2026-04-04
+outer-fuel-cycle	internal:registry-gap-review:batch5	Blanket tritium extraction to storage and injection	copilot	2026-04-04
+burnup-fraction	internal:registry-gap-review:batch5	Core plasma burn efficiency metric	copilot	2026-04-04

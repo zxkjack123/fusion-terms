@@ -6333,3 +6333,28 @@ site-acceptance-test	site-acceptance-test	en	alias	hyphenated form
 
 weldability	weldability	en	preferred	preferred en
 可焊性	weldability	zh	preferred	preferred zh
+
+# ==== Batch 74: disruption phases + fuel cycle loops ====
+thermal quench	thermal-quench	en	preferred	preferred en
+热猝灭	thermal-quench	zh	preferred	preferred zh
+TQ	thermal-quench	abbr	preferred	canonical abbr
+thermal-quench	thermal-quench	en	alias	hyphenated form
+
+current quench	current-quench	en	preferred	preferred en
+电流猝灭	current-quench	zh	preferred	preferred zh
+CQ	current-quench	abbr	preferred	canonical abbr
+current-quench	current-quench	en	alias	hyphenated form
+
+inner fuel cycle	inner-fuel-cycle	en	preferred	preferred en
+内燃料循环	inner-fuel-cycle	zh	preferred	preferred zh
+IFC	inner-fuel-cycle	abbr	preferred	canonical abbr
+inner-fuel-cycle	inner-fuel-cycle	en	alias	hyphenated form
+
+outer fuel cycle	outer-fuel-cycle	en	preferred	preferred en
+外燃料循环	outer-fuel-cycle	zh	preferred	preferred zh
+OFC	outer-fuel-cycle	abbr	preferred	canonical abbr
+outer-fuel-cycle	outer-fuel-cycle	en	alias	hyphenated form
+
+burnup fraction	burnup-fraction	en	preferred	preferred en
+燃耗份额	burnup-fraction	zh	preferred	preferred zh
+burnup-fraction	burnup-fraction	en	alias	hyphenated form

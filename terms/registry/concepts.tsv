@@ -1477,3 +1477,10 @@ leak-detection	method	检漏	leak detection		active	真空系统配套工程方�
 factory-acceptance-test	method	出厂验收测试	factory acceptance test	FAT	active	QA/调试验收标准术语
 site-acceptance-test	method	现场验收测试	site acceptance test	SAT	active	FAT 的部署阶段配对术语
 weldability	metric	可焊性	weldability		active	材料/力学工程属性
+
+# ==== Batch 74: disruption phases + fuel cycle loops ====
+thermal-quench	concept	热猝灭	thermal quench	TQ	active	破裂阶段：热能快速丧失
+current-quench	concept	电流猝灭	current quench	CQ	active	破裂阶段：等离子体电流衰减
+inner-fuel-cycle	concept	内燃料循环	inner fuel cycle	IFC	active	等离子体排气→直接内循环
+outer-fuel-cycle	concept	外燃料循环	outer fuel cycle	OFC	active	包层氚提取→纯化→储存→注入
+burnup-fraction	metric	燃耗份额	burnup fraction		active	等离子体燃烧效率核心指标
