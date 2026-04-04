@@ -1214,3 +1214,31 @@ coupled-neutron-photon	method	中子-光子耦合输运	coupled neutron-photon t
 analog-monte-carlo	method	模拟蒙特卡罗	analog Monte Carlo		active	MC without variance reduction techniques
 importance-function	concept	重要性函数	importance function		active	Adjoint flux used for variance reduction
 response-function	concept	响应函数	response function		active	Detector/tally response kernel
+
+# ==== Batch 58: Nuclear Data Processing & Burnup ====
+continuous-energy	concept	连续能量	continuous energy	CE	active	Continuous-energy Monte Carlo (vs multigroup)
+multigroup	concept	多群	multigroup	MG	active	Multigroup discretization of energy variable
+ace-format	concept	ACE格式	ACE format	ACE	active	A Compact ENDF data format for MC codes
+endf-format	concept	ENDF格式	ENDF format	ENDF	active	Evaluated Nuclear Data File format
+njoy	code	NJOY	NJOY	NJOY	active	Nuclear data processing code system
+cross-section-processing	method	截面处理	cross section processing		active	Processing evaluated data into transport-ready format
+thermal-scattering	concept	热散射	thermal scattering		active	Neutron scattering from bound atoms at thermal energies
+s-alpha-beta	concept	S(α,β)	S(alpha,beta)		active	Thermal scattering law data
+depletion	method	燃耗	depletion		active	Time evolution of nuclide inventory under irradiation
+decay-chain	concept	衰变链	decay chain		active	Sequence of radioactive decays
+bateman-equation	concept	Bateman方程	Bateman equation		active	ODEs governing nuclide transmutation/decay
+fission-yield	metric	裂变产额	fission yield		active	Probability of producing a specific fission product
+resonance-self-shielding	concept	共振自屏效应	resonance self-shielding		active	Flux depression in resonance energy range
+unresolved-resonance-region	concept	非分辨共振区	unresolved resonance region	URR	active	Energy range where resonances overlap statistically
+resolved-resonance-region	concept	分辨共振区	resolved resonance region	RRR	active	Energy range where individual resonances are resolved
+probability-table	method	概率表	probability table		active	URR treatment method using probability distributions
+reaction-rate	metric	反应率	reaction rate		active	Number of nuclear reactions per unit time
+microscopic-cross-section	metric	微观截面	microscopic cross section		active	Cross section per target nucleus (barns)
+macroscopic-cross-section	metric	宏观截面	macroscopic cross section		active	Cross section per unit volume (1/cm)
+lethargy	concept	对数能降	lethargy		active	Logarithmic energy variable u=ln(E0/E)
+spectrum-weighting	method	谱加权	spectrum weighting		active	Weighting cross sections by energy spectrum
+group-collapse	method	群并	group collapse		active	Reducing number of energy groups
+kerma-factor	metric	KERMA因子	KERMA factor		active	Kinetic energy released per unit mass factor
+atom-density	metric	原子密度	atom density		active	Number density of atoms (atoms/barn-cm)
+isotopic-composition	concept	同位素组成	isotopic composition		active	Relative abundance of isotopes in a material
+burnup	metric	燃耗深度	burnup		active	Integrated energy production per unit mass (GWd/tHM)

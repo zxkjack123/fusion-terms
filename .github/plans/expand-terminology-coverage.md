@@ -248,7 +248,7 @@
 
 ### Phase 4: 核数据处理与燃耗
 
-#### Task 4.1: 添加核数据术语到三表
+#### ✅ Task 4.1: 添加核数据术语到三表
 
 - **目标**：新增 ~35 个 concept。已有 `cross-section`、`doppler-broadening`、`decay-heat`、`decay` 需跳过或仅补 alias。
 
@@ -305,7 +305,7 @@
   - ✅ validate_registry 通过
 - **潜在风险**：`cross-section-processing` vs 已有 `cross-section`——前者是方法 (method)，后者是物理量 (metric)，需通过 concept_id 区分
 
-#### Task 4.2: 同步 allowlist
+#### ✅ Task 4.2: 同步 allowlist
 
 - **目标**：核数据术语追加到 allowlist
 - **修改内容**：allowlist_en.txt、allowlist_zh.txt 追加

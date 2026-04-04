@@ -5629,3 +5629,67 @@ importance function	importance-function	en	preferred	preferred en
 重要性函数	importance-function	zh	preferred	preferred zh
 response function	response-function	en	preferred	preferred en
 响应函数	response-function	zh	preferred	preferred zh
+
+# ==== Batch 58: Nuclear Data Processing & Burnup ====
+continuous energy	continuous-energy	en	preferred	preferred en
+连续能量	continuous-energy	zh	preferred	preferred zh
+CE	continuous-energy	abbr	preferred	canonical abbr
+multigroup	multigroup	en	preferred	preferred en
+多群	multigroup	zh	preferred	preferred zh
+MG	multigroup	abbr	preferred	canonical abbr
+multi-group	multigroup	en	alias	hyphenated variant
+ACE format	ace-format	en	preferred	preferred en
+ACE格式	ace-format	zh	preferred	preferred zh
+ACE	ace-format	abbr	preferred	canonical abbr
+ENDF format	endf-format	en	preferred	preferred en
+ENDF格式	endf-format	zh	preferred	preferred zh
+NJOY	njoy	abbr	preferred	canonical abbr
+cross section processing	cross-section-processing	en	preferred	preferred en
+截面处理	cross-section-processing	zh	preferred	preferred zh
+thermal scattering	thermal-scattering	en	preferred	preferred en
+热散射	thermal-scattering	zh	preferred	preferred zh
+thermal scattering law	thermal-scattering	en	alias	expanded form
+S(alpha,beta)	s-alpha-beta	en	preferred	preferred en
+S(α,β)	s-alpha-beta	mixed	preferred	Greek variant
+depletion	depletion	en	preferred	preferred en
+燃耗	depletion	zh	preferred	preferred zh
+燃耗计算	depletion	zh	alias	expanded form
+decay chain	decay-chain	en	preferred	preferred en
+衰变链	decay-chain	zh	preferred	preferred zh
+Bateman equation	bateman-equation	en	preferred	preferred en
+Bateman方程	bateman-equation	zh	preferred	preferred zh
+fission yield	fission-yield	en	preferred	preferred en
+裂变产额	fission-yield	zh	preferred	preferred zh
+resonance self-shielding	resonance-self-shielding	en	preferred	preferred en
+共振自屏效应	resonance-self-shielding	zh	preferred	preferred zh
+共振自屏	resonance-self-shielding	zh	alias	short form
+unresolved resonance region	unresolved-resonance-region	en	preferred	preferred en
+非分辨共振区	unresolved-resonance-region	zh	preferred	preferred zh
+URR	unresolved-resonance-region	abbr	preferred	canonical abbr
+resolved resonance region	resolved-resonance-region	en	preferred	preferred en
+分辨共振区	resolved-resonance-region	zh	preferred	preferred zh
+RRR	resolved-resonance-region	abbr	preferred	canonical abbr
+probability table	probability-table	en	preferred	preferred en
+概率表	probability-table	zh	preferred	preferred zh
+reaction rate	reaction-rate	en	preferred	preferred en
+反应率	reaction-rate	zh	preferred	preferred zh
+microscopic cross section	microscopic-cross-section	en	preferred	preferred en
+微观截面	microscopic-cross-section	zh	preferred	preferred zh
+macroscopic cross section	macroscopic-cross-section	en	preferred	preferred en
+宏观截面	macroscopic-cross-section	zh	preferred	preferred zh
+lethargy	lethargy	en	preferred	preferred en
+对数能降	lethargy	zh	preferred	preferred zh
+spectrum weighting	spectrum-weighting	en	preferred	preferred en
+谱加权	spectrum-weighting	zh	preferred	preferred zh
+group collapse	group-collapse	en	preferred	preferred en
+群并	group-collapse	zh	preferred	preferred zh
+energy group collapse	group-collapse	en	alias	expanded form
+KERMA factor	kerma-factor	en	preferred	preferred en
+KERMA因子	kerma-factor	zh	preferred	preferred zh
+atom density	atom-density	en	preferred	preferred en
+原子密度	atom-density	zh	preferred	preferred zh
+number density	atom-density	en	alias	synonym
+isotopic composition	isotopic-composition	en	preferred	preferred en
+同位素组成	isotopic-composition	zh	preferred	preferred zh
+burnup	burnup	en	preferred	preferred en
+燃耗深度	burnup	zh	preferred	preferred zh

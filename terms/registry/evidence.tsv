@@ -1152,3 +1152,31 @@ coupled-neutron-photon	internal:fusion-terms:domain-expansion	Multi-particle tra
 analog-monte-carlo	internal:fusion-terms:domain-expansion	Unbiased MC simulation		2026-04-04
 importance-function	internal:fusion-terms:domain-expansion	VR adjoint concept		2026-04-04
 response-function	internal:fusion-terms:domain-expansion	Detector response kernel		2026-04-04
+
+# ==== Batch 58: Nuclear Data Processing & Burnup ====
+continuous-energy	internal:fusion-terms:domain-expansion	MC energy treatment concept		2026-04-04
+multigroup	internal:fusion-terms:domain-expansion	Deterministic energy discretization		2026-04-04
+ace-format	https://docs.openmc.org/en/stable/methods/cross_sections.html			2026-04-04
+endf-format	https://en.wikipedia.org/wiki/Evaluated_Nuclear_Data_File			2026-04-04
+njoy	https://www.njoy21.io/			2026-04-04
+cross-section-processing	internal:fusion-terms:domain-expansion	Nuclear data workflow step		2026-04-04
+thermal-scattering	internal:fusion-terms:domain-expansion	Low-energy neutron physics		2026-04-04
+s-alpha-beta	internal:fusion-terms:domain-expansion	Thermal scattering law representation		2026-04-04
+depletion	https://en.wikipedia.org/wiki/Burnup			2026-04-04
+decay-chain	https://en.wikipedia.org/wiki/Decay_chain			2026-04-04
+bateman-equation	https://en.wikipedia.org/wiki/Bateman_equation			2026-04-04
+fission-yield	https://en.wikipedia.org/wiki/Nuclear_fission_product			2026-04-04
+resonance-self-shielding	internal:fusion-terms:domain-expansion	Nuclear data processing concept		2026-04-04
+unresolved-resonance-region	internal:fusion-terms:domain-expansion	Nuclear data energy range		2026-04-04
+resolved-resonance-region	internal:fusion-terms:domain-expansion	Nuclear data energy range		2026-04-04
+probability-table	internal:fusion-terms:domain-expansion	URR MC treatment method		2026-04-04
+reaction-rate	internal:fusion-terms:domain-expansion	Nuclear physics metric		2026-04-04
+microscopic-cross-section	internal:fusion-terms:domain-expansion	Nuclear physics quantity		2026-04-04
+macroscopic-cross-section	internal:fusion-terms:domain-expansion	Nuclear physics quantity		2026-04-04
+lethargy	internal:fusion-terms:domain-expansion	Nuclear physics energy variable		2026-04-04
+spectrum-weighting	internal:fusion-terms:domain-expansion	Nuclear data processing method		2026-04-04
+group-collapse	internal:fusion-terms:domain-expansion	Nuclear data processing method		2026-04-04
+kerma-factor	internal:fusion-terms:domain-expansion	Nuclear heating coefficient		2026-04-04
+atom-density	internal:fusion-terms:domain-expansion	Material specification quantity		2026-04-04
+isotopic-composition	internal:fusion-terms:domain-expansion	Material specification		2026-04-04
+burnup	https://en.wikipedia.org/wiki/Burnup			2026-04-04

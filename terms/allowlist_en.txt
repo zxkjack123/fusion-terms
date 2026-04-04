@@ -881,3 +881,15 @@ FW-CADIS
 keff
 MOC
 DXTRAN
+
+# --- Nuclear Data Processing (Batch 58) ---
+NJOY
+ACE
+CE
+MG
+URR
+RRR
+MOC
+lethargy
+burnup
+multigroup
