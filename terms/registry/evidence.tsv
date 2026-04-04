@@ -1286,3 +1286,35 @@ rayleigh-number	https://en.wikipedia.org/wiki/Rayleigh_number			2026-04-04
 friction-factor	internal:fusion-terms:domain-expansion	Pipe flow parameter		2026-04-04
 flow-distribution	internal:fusion-terms:domain-expansion	Coolant allocation concept		2026-04-04
 pressure-vessel	https://en.wikipedia.org/wiki/Pressure_vessel			2026-04-04
+
+# ==== Batch 63: Software Engineering ====
+api	https://en.wikipedia.org/wiki/API			2026-04-04
+sdk	https://en.wikipedia.org/wiki/Software_development_kit			2026-04-04
+refactoring	https://en.wikipedia.org/wiki/Code_refactoring			2026-04-04
+software-dependency	internal:fusion-terms:domain-expansion	Software engineering concept		2026-04-04
+unit-test	https://en.wikipedia.org/wiki/Unit_testing			2026-04-04
+integration-test	internal:fusion-terms:domain-expansion	Testing methodology		2026-04-04
+parser	internal:fusion-terms:domain-expansion	Software component type		2026-04-04
+serialization	https://en.wikipedia.org/wiki/Serialization			2026-04-04
+wrapper	internal:fusion-terms:domain-expansion	Software pattern		2026-04-04
+binding	internal:fusion-terms:domain-expansion	Language interop concept		2026-04-04
+callback	internal:fusion-terms:domain-expansion	Programming concept		2026-04-04
+asynchronous	internal:fusion-terms:domain-expansion	Concurrency concept		2026-04-04
+version-control	https://en.wikipedia.org/wiki/Version_control			2026-04-04
+git	https://en.wikipedia.org/wiki/Git			2026-04-04
+code-review	internal:fusion-terms:domain-expansion	Dev workflow practice		2026-04-04
+debugging	internal:fusion-terms:domain-expansion	Software development activity		2026-04-04
+logging	internal:fusion-terms:domain-expansion	Software observability		2026-04-04
+exception-handling	internal:fusion-terms:domain-expansion	Error management pattern		2026-04-04
+design-pattern	https://en.wikipedia.org/wiki/Software_design_pattern			2026-04-04
+object-oriented-programming	https://en.wikipedia.org/wiki/Object-oriented_programming			2026-04-04
+scripting	internal:fusion-terms:domain-expansion	Programming method		2026-04-04
+build-system	internal:fusion-terms:domain-expansion	Build automation		2026-04-04
+cmake	https://cmake.org/			2026-04-04
+makefile	internal:fusion-terms:domain-expansion	Make build file		2026-04-04
+linker	internal:fusion-terms:domain-expansion	Compilation toolchain		2026-04-04
+compiler	https://en.wikipedia.org/wiki/Compiler			2026-04-04
+interpreter	https://en.wikipedia.org/wiki/Interpreter_(computing)			2026-04-04
+shared-library	internal:fusion-terms:domain-expansion	Dynamic linking concept		2026-04-04
+package-manager	internal:fusion-terms:domain-expansion	Software distribution tool		2026-04-04
+documentation	internal:fusion-terms:domain-expansion	Software documentation		2026-04-04

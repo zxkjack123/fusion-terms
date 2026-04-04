@@ -1348,3 +1348,35 @@ rayleigh-number	metric	瑞利数	Rayleigh number	Ra	active	Natural convection on
 friction-factor	metric	摩擦系数	friction factor		active	Pipe friction coefficient
 flow-distribution	concept	流量分配	flow distribution		active	Coolant flow allocation
 pressure-vessel	system	压力容器	pressure vessel		active	Pressure-retaining vessel
+
+# ==== Batch 63: Software Engineering ====
+api	concept	API	API	API	active	Application Programming Interface
+sdk	concept	SDK	SDK	SDK	active	Software Development Kit
+refactoring	method	重构	refactoring		active	Code restructuring without changing behavior
+software-dependency	concept	软件依赖	dependency		active	Software package dependency (not physical)
+unit-test	method	单元测试	unit test		active	Test of individual code units
+integration-test	method	集成测试	integration test		active	Test of combined components
+parser	concept	解析器	parser		active	Input parsing component
+serialization	method	序列化	serialization		active	Object-to-byte-stream conversion
+wrapper	concept	封装器	wrapper		active	Thin interface layer around library/API
+binding	concept	绑定	binding		active	Language binding/interface
+callback	concept	回调	callback		active	Deferred function invocation
+asynchronous	concept	异步	asynchronous		active	Non-blocking execution model
+version-control	method	版本控制	version control		active	Source code version management
+git	code	Git	Git		active	Distributed version control system
+code-review	method	代码审查	code review		active	Peer review of source code
+debugging	method	调试	debugging		active	Finding and fixing defects
+logging	method	日志记录	logging		active	Runtime event recording
+exception-handling	method	异常处理	exception handling		active	Runtime error management
+design-pattern	concept	设计模式	design pattern		active	Reusable software design solution
+object-oriented-programming	method	面向对象编程	object-oriented programming	OOP	active	OOP paradigm
+scripting	method	脚本编程	scripting		active	Interpreted script-based programming
+build-system	concept	构建系统	build system		active	CMake/Make/Meson etc
+cmake	code	CMake	CMake		active	Cross-platform build system generator
+makefile	concept	Makefile	Makefile		active	Make build specification file
+linker	concept	链接器	linker		active	Object file linking tool
+compiler	concept	编译器	compiler		active	Source-to-binary translator
+interpreter	concept	解释器	interpreter		active	Runtime source code executor
+shared-library	concept	共享库	shared library		active	Dynamically linked library (.so/.dll)
+package-manager	code	包管理器	package manager		active	pip/conda/apt etc
+documentation	concept	文档	documentation		active	Software/project documentation

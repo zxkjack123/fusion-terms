@@ -5933,3 +5933,68 @@ flow distribution	flow-distribution	en	preferred	preferred en
 流量分配	flow-distribution	zh	preferred	preferred zh
 pressure vessel	pressure-vessel	en	preferred	preferred en
 压力容器	pressure-vessel	zh	preferred	preferred zh
+
+# ==== Batch 63: Software Engineering ====
+API	api	abbr	preferred	canonical abbr
+Application Programming Interface	api	en	alias	full name
+应用编程接口	api	zh	alias	Chinese expansion
+SDK	sdk	abbr	preferred	canonical abbr
+Software Development Kit	sdk	en	alias	full name
+refactoring	refactoring	en	preferred	preferred en
+重构	refactoring	zh	preferred	preferred zh
+dependency	software-dependency	en	preferred	preferred en
+软件依赖	software-dependency	zh	preferred	preferred zh
+unit test	unit-test	en	preferred	preferred en
+单元测试	unit-test	zh	preferred	preferred zh
+integration test	integration-test	en	preferred	preferred en
+集成测试	integration-test	zh	preferred	preferred zh
+parser	parser	en	preferred	preferred en
+解析器	parser	zh	preferred	preferred zh
+serialization	serialization	en	preferred	preferred en
+序列化	serialization	zh	preferred	preferred zh
+deserialization	serialization	en	alias	inverse form
+wrapper	wrapper	en	preferred	preferred en
+封装器	wrapper	zh	preferred	preferred zh
+binding	binding	en	preferred	preferred en
+绑定	binding	zh	preferred	preferred zh
+language binding	binding	en	alias	expanded form
+callback	callback	en	preferred	preferred en
+回调	callback	zh	preferred	preferred zh
+asynchronous	asynchronous	en	preferred	preferred en
+异步	asynchronous	zh	preferred	preferred zh
+async	asynchronous	en	alias	short form
+version control	version-control	en	preferred	preferred en
+版本控制	version-control	zh	preferred	preferred zh
+Git	git	en	preferred	preferred en
+code review	code-review	en	preferred	preferred en
+代码审查	code-review	zh	preferred	preferred zh
+debugging	debugging	en	preferred	preferred en
+调试	debugging	zh	preferred	preferred zh
+logging	logging	en	preferred	preferred en
+日志记录	logging	zh	preferred	preferred zh
+exception handling	exception-handling	en	preferred	preferred en
+异常处理	exception-handling	zh	preferred	preferred zh
+design pattern	design-pattern	en	preferred	preferred en
+设计模式	design-pattern	zh	preferred	preferred zh
+object-oriented programming	object-oriented-programming	en	preferred	preferred en
+面向对象编程	object-oriented-programming	zh	preferred	preferred zh
+OOP	object-oriented-programming	abbr	preferred	canonical abbr
+scripting	scripting	en	preferred	preferred en
+脚本编程	scripting	zh	preferred	preferred zh
+build system	build-system	en	preferred	preferred en
+构建系统	build-system	zh	preferred	preferred zh
+CMake	cmake	en	preferred	preferred en
+Makefile	makefile	en	preferred	preferred en
+linker	linker	en	preferred	preferred en
+链接器	linker	zh	preferred	preferred zh
+compiler	compiler	en	preferred	preferred en
+编译器	compiler	zh	preferred	preferred zh
+interpreter	interpreter	en	preferred	preferred en
+解释器	interpreter	zh	preferred	preferred zh
+shared library	shared-library	en	preferred	preferred en
+共享库	shared-library	zh	preferred	preferred zh
+dynamic library	shared-library	en	alias	synonym
+package manager	package-manager	en	preferred	preferred en
+包管理器	package-manager	zh	preferred	preferred zh
+documentation	documentation	en	preferred	preferred en
+文档	documentation	zh	preferred	preferred zh

@@ -563,7 +563,7 @@
 
 ### Phase 9: 编程与软件工程
 
-#### Task 9.1: 添加软件工程术语到三表
+#### ✅ Task 9.1: 添加软件工程术语到三表
 
 - **目标**：新增 ~30 个 concept
 
@@ -614,7 +614,7 @@
   - ✅ validate_registry 通过
 - **潜在风险**：`git` 需确认不与已有 concept 冲突
 
-#### Task 9.2: 同步 allowlist
+#### ✅ Task 9.2: 同步 allowlist
 
 - **目标**：软件工程术语追加到 allowlist
 - **修改内容**：allowlist_en.txt、allowlist_zh.txt 追加

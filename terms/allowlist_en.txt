@@ -948,3 +948,22 @@ Re
 Pr
 Gr
 Ra
+
+# --- Software Engineering (Batch 63) ---
+API
+SDK
+OOP
+CMake
+Git
+Makefile
+refactoring
+parser
+serialization
+wrapper
+callback
+async
+debugging
+logging
+linker
+compiler
+interpreter
