@@ -268,7 +268,7 @@
   - ✅ validate_registry 通过无错误
 - **潜在风险**：codac 的 preferred_en 含逗号 — TSV 格式不受影响（tab-separated），但需确认 validate_registry 不会将其视为异常字符
 
-#### Task 2.2: Batch 75 allowlist 同步
+#### ✅ Task 2.2: Batch 75 allowlist 同步
 
 - **目标**：将 Batch 75 新增术语的缺失 token 追加到 allowlist
 - **修改内容**：

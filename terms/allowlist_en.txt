@@ -1067,3 +1067,13 @@ TQ
 CQ
 IFC
 OFC
+
+# --- Batch 75 Phase 2 allowlist sync ---
+CIS
+MPS
+DCS
+CODAC
+HIP
+interlock
+isostatic
+diffusion
