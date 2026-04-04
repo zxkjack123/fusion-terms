@@ -6908,3 +6908,54 @@ tokamak pit	tokamak-pit	en	preferred	preferred en
 tokamak-pit	tokamak-pit	en	alias	hyphenated form
 bioshield pit	tokamak-pit	en	alias	alternative name
 堆坑	tokamak-pit	zh	alias	short zh
+# ---- Batch 88 aliases ----
+bellows	bellows	en	preferred	preferred en
+波纹管	bellows	zh	preferred	preferred zh
+metal bellows	bellows	en	alias	material-specific
+金属波纹管	bellows	zh	alias	material-specific zh
+补偿器	bellows	zh	alias	function-name zh
+flange	flange	en	preferred	preferred en
+法兰	flange	zh	preferred	preferred zh
+pipe flange	flange	en	alias	piping-context
+法兰盘	flange	zh	alias	variant zh
+gasket	gasket	en	preferred	preferred en
+密封垫片	gasket	zh	preferred	preferred zh
+sealing gasket	gasket	en	alias	expanded form
+垫片	gasket	zh	alias	short zh
+密封件	gasket	zh	alias	generic zh
+pressurizer	pressurizer	en	preferred	preferred en
+稳压器	pressurizer	zh	preferred	preferred zh
+pressuriser	pressurizer	en	alias	British spelling
+加压器	pressurizer	zh	alias	variant zh
+isolation valve	isolation-valve	en	preferred	preferred en
+隔离阀	isolation-valve	zh	preferred	preferred zh
+isolation-valve	isolation-valve	en	alias	hyphenated form
+shut-off valve	isolation-valve	en	alias	synonym
+截止阀	isolation-valve	zh	alias	variant zh
+relief valve	relief-valve	en	preferred	preferred en
+安全阀	relief-valve	zh	preferred	preferred zh
+relief-valve	relief-valve	en	alias	hyphenated form
+safety relief valve	relief-valve	en	alias	expanded form
+pressure relief valve	relief-valve	en	alias	full form
+泄压阀	relief-valve	zh	alias	variant zh
+check valve	check-valve	en	preferred	preferred en
+止回阀	check-valve	zh	preferred	preferred zh
+check-valve	check-valve	en	alias	hyphenated form
+non-return valve	check-valve	en	alias	British synonym
+逆止阀	check-valve	zh	alias	variant zh
+expansion joint	expansion-joint	en	preferred	preferred en
+膨胀节	expansion-joint	zh	preferred	preferred zh
+expansion-joint	expansion-joint	en	alias	hyphenated form
+伸缩节	expansion-joint	zh	alias	variant zh
+伸缩接头	expansion-joint	zh	alias	connector-form zh
+rupture disc	rupture-disc	en	preferred	preferred en
+爆破片	rupture-disc	zh	preferred	preferred zh
+rupture-disc	rupture-disc	en	alias	hyphenated form
+rupture disk	rupture-disc	en	alias	US spelling
+bursting disc	rupture-disc	en	alias	synonym
+爆破膜	rupture-disc	zh	alias	variant zh
+pipe whip restraint	pipe-whip-restraint	en	preferred	preferred en
+管道甩击约束装置	pipe-whip-restraint	zh	preferred	preferred zh
+pipe-whip-restraint	pipe-whip-restraint	en	alias	hyphenated form
+pipe whip protection	pipe-whip-restraint	en	alias	protection variant
+管鞭约束	pipe-whip-restraint	zh	alias	short zh

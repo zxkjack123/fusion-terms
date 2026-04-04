@@ -1528,3 +1528,13 @@ activated-carbon-filter	internal:registry-gap-review:batch9	Activated carbon ads
 ventilation-zone	internal:registry-gap-review:batch9	Nuclear facility area zoning by contamination risk for ventilation airflow direction control (C1/C2/C3)	copilot	2026-04-04
 tritium-building	internal:registry-gap-review:batch9	Dedicated building housing tritium processing, storage, and recovery equipment	copilot	2026-04-04
 tokamak-pit	internal:registry-gap-review:batch9	Below-grade excavation structure for tokamak installation within the bioshield	copilot	2026-04-04
+bellows	internal:registry-gap-review:batch9	Flexible metallic element for thermal expansion compensation and vibration absorption in piping	copilot	2026-04-04
+flange	internal:registry-gap-review:batch9	Disc-shaped connector for pipe and vessel joints	copilot	2026-04-04
+gasket	internal:registry-gap-review:batch9	Sealing element between flanges or joints to prevent fluid leakage	copilot	2026-04-04
+pressurizer	internal:registry-gap-review:batch9	Pressure control vessel maintaining coolant loop system pressure (WCLL/DCLL blanket circuits)	copilot	2026-04-04
+isolation-valve	internal:registry-gap-review:batch9	Shut-off valve for isolating pipe sections or equipment	copilot	2026-04-04
+relief-valve	internal:registry-gap-review:batch9	Pressure safety device that opens automatically to protect equipment from overpressure (ASME BPVC)	copilot	2026-04-04
+check-valve	internal:registry-gap-review:batch9	One-way flow valve preventing backflow in piping systems	copilot	2026-04-04
+expansion-joint	internal:registry-gap-review:batch9	Flexible compensating element absorbing thermal expansion displacement in piping	copilot	2026-04-04
+rupture-disc	internal:registry-gap-review:batch9	Non-reclosing pressure relief device that bursts at set pressure differential	copilot	2026-04-04
+pipe-whip-restraint	internal:registry-gap-review:batch9	Structural restraint limiting high-energy pipe whip motion after postulated break (nuclear-grade piping)	copilot	2026-04-04

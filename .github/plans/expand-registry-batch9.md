@@ -243,7 +243,7 @@ bioshield-pit
 
 ### Phase 2: Batch 88 — 通用机械部件 / 管道 / 阀门
 
-#### Task 2.1: Batch 88 三表追加
+#### ✅ Task 2.1: Batch 88 三表追加
 
 - **目标**：向 concepts / aliases / evidence 三表追加 10 个通用机械部件概念
 - **修改内容**：

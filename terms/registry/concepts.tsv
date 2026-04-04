@@ -1628,3 +1628,14 @@ activated-carbon-filter	concept	活性炭过滤器	activated carbon filter		acti
 ventilation-zone	concept	通风分区	ventilation zone		active	按放射性污染风险等级对核设施区域进行通风气流方向管控的分区 (C1/C2/C3)
 tritium-building	concept	氚厂房	tritium building		active	内设氚处理、贮存及回收设备的独立专用建筑
 tokamak-pit	concept	托卡马克堆坑	tokamak pit		active	托卡马克装置地下基坑结构 (bioshield 内)
+# ==== Batch 88: generic mechanical components / piping / valves ====
+bellows	concept	波纹管	bellows		active	用于管道系统热膨胀补偿和振动吸收的柔性金属元件
+flange	concept	法兰	flange		active	用于管道/容器连接的盘状连接件
+gasket	concept	密封垫片	gasket		active	法兰或接头间防止流体泄漏的密封元件
+pressurizer	concept	稳压器	pressurizer		active	维持冷却回路系统压力的压力控制容器 (WCLL/DCLL blanket 回路)
+isolation-valve	concept	隔离阀	isolation valve		active	切断或接通管路中介质流的截断阀
+relief-valve	concept	安全阀	relief valve		active	超压时自动开启泄放流体以保护设备的压力安全装置
+check-valve	concept	止回阀	check valve		active	仅允许单向流动、防止介质回流的阀门
+expansion-joint	concept	膨胀节	expansion joint		active	吸收管道热膨胀位移的柔性补偿元件
+rupture-disc	concept	爆破片	rupture disc		active	超压时主动破裂泄放压力的非重闭式安全装置
+pipe-whip-restraint	concept	管道甩击约束装置	pipe whip restraint		active	限制高能管道断裂后甩击运动的结构约束件 (核级管道安全要求)
