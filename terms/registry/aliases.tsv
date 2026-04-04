@@ -6623,3 +6623,48 @@ occupational radiation exposure	occupational-radiation-exposure	en	preferred	pre
 职业辐射照射	occupational-radiation-exposure	zh	preferred	preferred zh
 occupational-radiation-exposure	occupational-radiation-exposure	en	alias	hyphenated form
 职业受照	occupational-radiation-exposure	zh	alias	short zh
+
+# ---- Batch 82 aliases ----
+tokamak assembly	tokamak-assembly	en	preferred	preferred en
+托卡马克装配	tokamak-assembly	zh	preferred	preferred zh
+tokamak-assembly	tokamak-assembly	en	alias	hyphenated form
+sector sub-assembly	sector-sub-assembly	en	preferred	preferred en
+扇区子装配	sector-sub-assembly	zh	preferred	preferred zh
+SSA	sector-sub-assembly	abbr	preferred	canonical abbr
+sector-sub-assembly	sector-sub-assembly	en	alias	hyphenated form
+扇区子组件	sector-sub-assembly	zh	alias	variant zh
+in-vessel component	in-vessel-component	en	preferred	preferred en
+真空室内部件	in-vessel-component	zh	preferred	preferred zh
+IVC	in-vessel-component	abbr	preferred	canonical abbr
+in-vessel-component	in-vessel-component	en	alias	hyphenated form
+堆内构件	in-vessel-component	zh	alias	variant zh (fission-style)
+ex-vessel component	ex-vessel-component	en	preferred	preferred en
+真空室外部件	ex-vessel-component	zh	preferred	preferred zh
+ex-vessel-component	ex-vessel-component	en	alias	hyphenated form
+master-slave manipulator	master-slave-manipulator	en	preferred	preferred en
+主从机械手	master-slave-manipulator	zh	preferred	preferred zh
+MSM	master-slave-manipulator	abbr	preferred	canonical abbr
+master-slave-manipulator	master-slave-manipulator	en	alias	hyphenated form
+component transfer cask	transfer-cask	en	preferred	preferred en
+转运屏蔽容器	transfer-cask	zh	preferred	preferred zh
+transfer-cask	transfer-cask	en	alias	hyphenated form
+transfer flask	transfer-cask	en	alias	UK/EU variant
+activated component transfer cask	transfer-cask	en	alias	expanded form
+interlock system	interlock-system	en	preferred	preferred en
+联锁系统	interlock-system	zh	preferred	preferred zh
+interlock-system	interlock-system	en	alias	hyphenated form
+interlock	interlock-system	en	alias	short form
+联锁	interlock-system	zh	alias	short zh
+programmable logic controller	programmable-logic-controller	en	preferred	preferred en
+可编程逻辑控制器	programmable-logic-controller	zh	preferred	preferred zh
+PLC	programmable-logic-controller	abbr	preferred	canonical abbr
+programmable-logic-controller	programmable-logic-controller	en	alias	hyphenated form
+human-machine interface	human-machine-interface	en	preferred	preferred en
+人机界面	human-machine-interface	zh	preferred	preferred zh
+HMI	human-machine-interface	abbr	preferred	canonical abbr
+human-machine-interface	human-machine-interface	en	alias	hyphenated form
+人机接口	human-machine-interface	zh	alias	variant zh
+plant control system	plant-control-system	en	preferred	preferred en
+全厂控制系统	plant-control-system	zh	preferred	preferred zh
+plant-control-system	plant-control-system	en	alias	hyphenated form
+plant-wide control system	plant-control-system	en	alias	expanded form

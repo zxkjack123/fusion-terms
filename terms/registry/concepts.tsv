@@ -1558,3 +1558,15 @@ safety-margin	concept	核安全裕度	Nuclear Safety Margin		active	设计值与
 committed-dose	metric	待积剂量	Committed Dose		active	摄入放射性核素后的时间积分剂量
 personal-dosimeter	device	个人剂量计	Personal Dosimeter		active	辐射工作人员随身佩戴的剂量监测仪器
 occupational-radiation-exposure	concept	职业辐射照射	Occupational Radiation Exposure		active	工作过程中受到的辐射照射
+
+# ==== Batch 82: remote handling & assembly + instrumentation & control ====
+tokamak-assembly	concept	托卡马克装配	Tokamak Assembly		active	ITER 主机装配工程统称
+sector-sub-assembly	concept	扇区子装配	Sector Sub-Assembly	SSA	active	真空室扇区与热屏蔽/面向等离子体部件的预组装
+in-vessel-component	concept	真空室内部件	In-Vessel Component	IVC	active	真空室内所有可更换/不可更换部件统称
+ex-vessel-component	concept	真空室外部件	Ex-Vessel Component		active	真空室外但生物屏蔽内的部件统称
+master-slave-manipulator	device	主从机械手	Master-Slave Manipulator	MSM	active	热室/远程维护用力反馈操作器
+transfer-cask	device	转运屏蔽容器	Component Transfer Cask		active	活化部件在厂房间转运的屏蔽容器
+interlock-system	system	联锁系统	Interlock System		active	防止误操作的硬件/软件保护逻辑
+programmable-logic-controller	device	可编程逻辑控制器	Programmable Logic Controller	PLC	active	工业控制基础硬件单元
+human-machine-interface	device	人机界面	Human-Machine Interface	HMI	active	操作员与控制系统交互终端
+plant-control-system	system	全厂控制系统	Plant Control System		active	ITER CODAC 架构下的全厂级控制系统

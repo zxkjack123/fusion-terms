@@ -1468,3 +1468,13 @@ safety-margin	internal:registry-gap-review:batch7	Margin between design value an
 committed-dose	internal:registry-gap-review:batch7	Time-integrated dose from intake of radioactive material (ICRP)	copilot	2026-04-04
 personal-dosimeter	internal:registry-gap-review:batch7	Wearable radiation dose monitoring device for workers	copilot	2026-04-04
 occupational-radiation-exposure	internal:registry-gap-review:batch7	Radiation exposure received during work activities (ICRP/IAEA)	copilot	2026-04-04
+tokamak-assembly	internal:registry-gap-review:batch7	ITER tokamak machine assembly engineering	copilot	2026-04-04
+sector-sub-assembly	internal:registry-gap-review:batch7	Pre-assembly of VV sector with thermal shield and PFCs	copilot	2026-04-04
+in-vessel-component	internal:registry-gap-review:batch7	Collective term for all components inside the vacuum vessel	copilot	2026-04-04
+ex-vessel-component	internal:registry-gap-review:batch7	Components outside VV but inside bioshield	copilot	2026-04-04
+master-slave-manipulator	internal:registry-gap-review:batch7	Force-feedback manipulator for hot cell and remote maintenance	copilot	2026-04-04
+transfer-cask	internal:registry-gap-review:batch7	Shielded container for inter-building transfer of activated components	copilot	2026-04-04
+interlock-system	internal:registry-gap-review:batch7	Hardware/software protection logic preventing operator error	copilot	2026-04-04
+programmable-logic-controller	internal:registry-gap-review:batch7	Basic industrial control hardware unit	copilot	2026-04-04
+human-machine-interface	internal:registry-gap-review:batch7	Operator interaction terminal for control systems	copilot	2026-04-04
+plant-control-system	internal:registry-gap-review:batch7	Plant-wide control system under ITER CODAC architecture	copilot	2026-04-04

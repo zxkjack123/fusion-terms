@@ -192,7 +192,7 @@
 
 ### Phase 2: Batch 82 — 远程操维装配 + 仪控系统 (10 terms)
 
-#### Task 2.1: Batch 82 三表追加（10 概念 + ~42 alias + 10 evidence）
+#### ✅ Task 2.1: Batch 82 三表追加（10 概念 + ~42 alias + 10 evidence）
 
 - **目标**：在三张注册表表末尾追加 Batch 82 全部数据
 - **修改内容**：
