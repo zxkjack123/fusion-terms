@@ -1388,3 +1388,12 @@ tritium-breeding-margin	internal:registry-gap-review:batch4	TBR design margin me
 helium-ash-removal	internal:registry-gap-review:batch4	Plasma ops / fuel cycle link process	copilot	2026-04-04
 pellet-injector	internal:registry-gap-review:batch4	Device counterpart to pellet-injection method	copilot	2026-04-04
 leak-before-break	internal:registry-gap-review:batch4	Structural safety doctrine LBB	copilot	2026-04-04
+
+safety-integrity-level	internal:registry-gap-review:batch4	IEC 61508 safety classification metric	copilot	2026-04-04
+deuterium-processing	internal:registry-gap-review:batch4	Fuel cycle deuterium-side processing	copilot	2026-04-04
+tritium-accounting-area	internal:registry-gap-review:batch4	Facility-level tritium accountancy noun	copilot	2026-04-04
+detritiation-factor	internal:registry-gap-review:batch4	Quantitative detritiation process metric	copilot	2026-04-04
+vacuum-leak-rate	internal:registry-gap-review:batch4	Core vacuum acceptance/operation metric	copilot	2026-04-04
+turbomolecular-pump	internal:registry-gap-review:batch4	Vacuum hardware sibling to cryopump	copilot	2026-04-04
+residual-gas-analyzer	internal:registry-gap-review:batch4	Standard vacuum/plasma impurity diagnostic	copilot	2026-04-04
+leak-detection	internal:registry-gap-review:batch4	Vacuum system engineering method	copilot	2026-04-04

@@ -201,7 +201,7 @@
 
 ### Phase 2: 真空系统 + 氚工艺度量 + 安全分级（P2 — Batch 72）
 
-#### Task 2.1: 添加 8 个 P2 概念到三表
+#### ✅ Task 2.1: 添加 8 个 P2 概念到三表
 
 - **目标**：补全真空硬件/度量家族（turbomolecular-pump / vacuum-leak-rate / RGA / leak-detection）、安全分级（SIL）、燃料循环氘侧（deuterium-processing）和氚衡算/去氚度量
 - **修改内容**：

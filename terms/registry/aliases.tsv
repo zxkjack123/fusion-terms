@@ -6281,3 +6281,41 @@ leak-before-break	leak-before-break	en	preferred	preferred en (hyphenated conven
 LBB	leak-before-break	abbr	preferred	canonical abbr
 leak before break	leak-before-break	en	alias	unhyphenated form
 先漏后断	leak-before-break	zh	alias	short zh form
+
+# ==== Batch 72: vacuum + tritium metrics + safety class ====
+safety integrity level	safety-integrity-level	en	preferred	preferred en
+安全完整性等级	safety-integrity-level	zh	preferred	preferred zh
+SIL	safety-integrity-level	abbr	preferred	canonical abbr
+safety-integrity-level	safety-integrity-level	en	alias	hyphenated form
+
+deuterium processing	deuterium-processing	en	preferred	preferred en
+氘处理	deuterium-processing	zh	preferred	preferred zh
+deuterium-processing	deuterium-processing	en	alias	hyphenated form
+
+tritium accounting area	tritium-accounting-area	en	preferred	preferred en
+氚衡算区域	tritium-accounting-area	zh	preferred	preferred zh
+TAA	tritium-accounting-area	abbr	preferred	canonical abbr
+tritium-accounting-area	tritium-accounting-area	en	alias	hyphenated form
+
+detritiation factor	detritiation-factor	en	preferred	preferred en
+去氚因子	detritiation-factor	zh	preferred	preferred zh
+DF	detritiation-factor	abbr	preferred	canonical abbr
+detritiation-factor	detritiation-factor	en	alias	hyphenated form
+
+vacuum leak rate	vacuum-leak-rate	en	preferred	preferred en
+真空漏率	vacuum-leak-rate	zh	preferred	preferred zh
+vacuum-leak-rate	vacuum-leak-rate	en	alias	hyphenated form
+
+turbomolecular pump	turbomolecular-pump	en	preferred	preferred en
+涡轮分子泵	turbomolecular-pump	zh	preferred	preferred zh
+TMP	turbomolecular-pump	abbr	preferred	canonical abbr
+turbomolecular-pump	turbomolecular-pump	en	alias	hyphenated form
+
+residual gas analyzer	residual-gas-analyzer	en	preferred	preferred en
+残余气体分析仪	residual-gas-analyzer	zh	preferred	preferred zh
+RGA	residual-gas-analyzer	abbr	preferred	canonical abbr
+residual-gas-analyzer	residual-gas-analyzer	en	alias	hyphenated form
+
+leak detection	leak-detection	en	preferred	preferred en
+检漏	leak-detection	zh	preferred	preferred zh
+leak-detection	leak-detection	en	alias	hyphenated form

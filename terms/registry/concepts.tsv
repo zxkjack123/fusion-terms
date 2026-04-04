@@ -1462,3 +1462,13 @@ tritium-breeding-margin	metric	氚增殖裕度	tritium breeding margin		active	T
 helium-ash-removal	method	氦灰排出	helium ash removal		active	等离子体运行/燃料循环衔接
 pellet-injector	device	弹丸注入器	pellet injector		active	pellet-injection 方法的配套设备
 leak-before-break	principle	先泄漏后断裂	leak-before-break	LBB	active	结构安全准则
+
+# ==== Batch 72: vacuum + tritium metrics + safety class ====
+safety-integrity-level	metric	安全完整性等级	safety integrity level	SIL	active	仪控安全分级标准 IEC 61508
+deuterium-processing	concept	氘处理	deuterium processing		active	燃料循环氘侧处理
+tritium-accounting-area	system	氚衡算区域	tritium accounting area	TAA	active	tritium-accountancy 设施级补充
+detritiation-factor	metric	去氚因子	detritiation factor	DF	active	detritiation 过程定量度量
+vacuum-leak-rate	metric	真空漏率	vacuum leak rate		active	真空系统验收/运行核心度量
+turbomolecular-pump	device	涡轮分子泵	turbomolecular pump	TMP	active	真空硬件，与 cryopump 成对
+residual-gas-analyzer	diagnostic	残余气体分析仪	residual gas analyzer	RGA	active	真空/杂质标准诊断
+leak-detection	method	检漏	leak detection		active	真空系统配套工程方法
