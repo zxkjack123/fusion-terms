@@ -1508,3 +1508,13 @@ hot-functional-testing	internal:registry-gap-review:batch8	Pre-fuel-loading hot 
 construction-permit	internal:registry-gap-review:batch8	Regulatory permit for nuclear facility construction phase	copilot	2026-04-04
 operating-license	internal:registry-gap-review:batch8	Regulatory license for nuclear facility operation phase	copilot	2026-04-04
 configuration-management	internal:registry-gap-review:batch8	Systematic control of design basis and technical configuration (NQA/IAEA GS-G-3.5)	copilot	2026-04-04
+ionization-chamber	internal:registry-gap-review:batch8	Gas ionization-based radiation dose rate detector	copilot	2026-04-04
+fission-chamber	internal:registry-gap-review:batch8	Fission reaction-based neutron flux detector	copilot	2026-04-04
+scintillation-detector	internal:registry-gap-review:batch8	Radiation detector using scintillator luminescence	copilot	2026-04-04
+area-radiation-monitor	internal:registry-gap-review:batch8	Fixed area gamma dose rate continuous monitoring instrument	copilot	2026-04-04
+thermoluminescent-dosimeter	internal:registry-gap-review:batch8	Passive dose measurement using thermoluminescent material (ICRP/IEC 62387)	copilot	2026-04-04
+creep-fatigue-interaction	internal:registry-gap-review:batch8	Coupled creep and fatigue damage assessment for high-temperature structures (RCC-MRx/ASME III-NH)	copilot	2026-04-04
+j-integral	internal:registry-gap-review:batch8	Path-independent integral parameter for crack-tip energy release rate in EPFM	copilot	2026-04-04
+ratcheting	internal:registry-gap-review:batch8	Progressive unidirectional plastic strain accumulation under cyclic loading	copilot	2026-04-04
+flow-accelerated-corrosion	internal:registry-gap-review:batch8	Accelerated dissolution of protective oxide film by high-temperature high-velocity water flow	copilot	2026-04-04
+erosion-corrosion	internal:registry-gap-review:batch8	Combined mechanical erosion and electrochemical corrosion material degradation mechanism	copilot	2026-04-04

@@ -6807,3 +6807,52 @@ configuration management	configuration-management	en	preferred	preferred en
 CM	configuration-management	abbr	preferred	canonical abbr (NQA)
 configuration-management	configuration-management	en	alias	hyphenated form
 技术状态管理	configuration-management	zh	alias	alternative zh
+# ---- Batch 86 aliases ----
+ionization chamber	ionization-chamber	en	preferred	preferred en
+电离室	ionization-chamber	zh	preferred	preferred zh
+ionization-chamber	ionization-chamber	en	alias	hyphenated form
+ionisation chamber	ionization-chamber	en	alias	British spelling
+电离探测器	ionization-chamber	zh	alias	generic zh
+fission chamber	fission-chamber	en	preferred	preferred en
+裂变室	fission-chamber	zh	preferred	preferred zh
+fission-chamber	fission-chamber	en	alias	hyphenated form
+裂变电离室	fission-chamber	zh	alias	expanded zh
+scintillation detector	scintillation-detector	en	preferred	preferred en
+闪烁体探测器	scintillation-detector	zh	preferred	preferred zh
+scintillation-detector	scintillation-detector	en	alias	hyphenated form
+scintillator	scintillation-detector	en	alias	short form (detection element)
+闪烁探测器	scintillation-detector	zh	alias	short zh
+area radiation monitor	area-radiation-monitor	en	preferred	preferred en
+区域辐射监测仪	area-radiation-monitor	zh	preferred	preferred zh
+ARM	area-radiation-monitor	abbr	preferred	canonical abbr
+area-radiation-monitor	area-radiation-monitor	en	alias	hyphenated form
+区域γ监测仪	area-radiation-monitor	zh	alias	specific zh
+thermoluminescent dosimeter	thermoluminescent-dosimeter	en	preferred	preferred en
+热释光剂量计	thermoluminescent-dosimeter	zh	preferred	preferred zh
+TLD	thermoluminescent-dosimeter	abbr	preferred	canonical abbr
+thermoluminescent-dosimeter	thermoluminescent-dosimeter	en	alias	hyphenated form
+热释光剂量片	thermoluminescent-dosimeter	zh	alias	chip form zh
+creep-fatigue interaction	creep-fatigue-interaction	en	preferred	preferred en
+蠕变-疲劳交互	creep-fatigue-interaction	zh	preferred	preferred zh
+creep-fatigue-interaction	creep-fatigue-interaction	en	alias	hyphenated form
+creep-fatigue	creep-fatigue-interaction	en	alias	short form
+蠕变疲劳交互作用	creep-fatigue-interaction	zh	alias	expanded zh
+J-integral	j-integral	en	preferred	preferred en
+J积分	j-integral	zh	preferred	preferred zh
+j-integral	j-integral	en	alias	lowercase hyphenated form
+J integral	j-integral	en	alias	no-hyphen form
+J 积分	j-integral	zh	alias	spaced zh
+ratcheting	ratcheting	en	preferred	preferred en
+棘轮效应	ratcheting	zh	preferred	preferred zh
+ratchetting	ratcheting	en	alias	British spelling
+ratchet	ratcheting	en	alias	short form
+棘轮变形	ratcheting	zh	alias	deformation-focused zh
+flow-accelerated corrosion	flow-accelerated-corrosion	en	preferred	preferred en
+流动加速腐蚀	flow-accelerated-corrosion	zh	preferred	preferred zh
+FAC	flow-accelerated-corrosion	abbr	preferred	canonical abbr
+flow-accelerated-corrosion	flow-accelerated-corrosion	en	alias	hyphenated form
+流动辅助腐蚀	flow-accelerated-corrosion	zh	alias	variant zh
+erosion-corrosion	erosion-corrosion	en	preferred	preferred en
+冲蚀-腐蚀	erosion-corrosion	zh	preferred	preferred zh
+erosion corrosion	erosion-corrosion	en	alias	no-hyphen form
+冲刷腐蚀	erosion-corrosion	zh	alias	variant zh

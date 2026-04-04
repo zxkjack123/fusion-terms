@@ -320,7 +320,7 @@
 
 ### Phase 3: Batch 86 — 辐射探测仪表 + 结构老化评估 + 腐蚀 (10 terms)
 
-#### Task 3.1: Batch 86 三表追加（10 概念 + ~47 alias + 10 evidence）
+#### ✅ Task 3.1: Batch 86 三表追加（10 概念 + ~47 alias + 10 evidence）
 
 - **目标**：在三张注册表表末尾追加 Batch 86 全部数据
 - **修改内容**：

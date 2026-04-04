@@ -1606,3 +1606,14 @@ hot-functional-testing	method	热功能试验	hot functional testing	HFT	active	
 construction-permit	doc	建造许可证	construction permit		active	核设施建造阶段的监管许可文件
 operating-license	doc	运行许可证	operating license		active	核设施运行阶段的监管许可文件
 configuration-management	method	配置管理	configuration management	CM	active	核设施设计基准和技术状态的系统管控方法 (NQA)
+# ==== Batch 86: radiation detection instruments + structural aging & corrosion ====
+ionization-chamber	device	电离室	ionization chamber		active	利用气体电离原理测量辐射剂量率的探测器
+fission-chamber	device	裂变室	fission chamber		active	利用裂变反应测量中子通量的探测器
+scintillation-detector	device	闪烁体探测器	scintillation detector		active	利用闪烁体发光测量辐射的探测器
+area-radiation-monitor	device	区域辐射监测仪	area radiation monitor	ARM	active	固定安装的区域γ辐射剂量率连续监测仪
+thermoluminescent-dosimeter	device	热释光剂量计	thermoluminescent dosimeter	TLD	active	利用热释光材料累积测量辐射剂量的被动式剂量计
+creep-fatigue-interaction	concept	蠕变-疲劳交互	creep-fatigue interaction		active	高温结构件蠕变损伤与疲劳损伤的耦合评估 (RCC-MRx)
+j-integral	metric	J积分	J-integral		active	弹塑性断裂力学中裂纹尖端能量释放率的路径积分参量
+ratcheting	concept	棘轮效应	ratcheting		active	循环载荷下材料单向塑性变形逐周累积的现象
+flow-accelerated-corrosion	concept	流动加速腐蚀	flow-accelerated corrosion	FAC	active	高温高速水流导致保护氧化膜加速溶解的腐蚀机制
+erosion-corrosion	concept	冲蚀-腐蚀	erosion-corrosion		active	流体冲刷与电化学腐蚀共同作用的材料损伤机制
