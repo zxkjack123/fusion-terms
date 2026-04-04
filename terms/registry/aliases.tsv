@@ -72,6 +72,35 @@ Preliminary Safety Analysis Report	preliminary-safety-analysis-report	en	preferr
 preliminary-safety-analysis-report	preliminary-safety-analysis-report	en	alias	IME token-only form
 PSAR	preliminary-safety-analysis-report	abbr	alias	acronym
 
+# ==== Batch 65 P0: translation dict gap fixes ====
+lithium ceramic	lithium-ceramic	en	preferred
+锂陶瓷	lithium-ceramic	zh	preferred
+ceramic pebble bed	ceramic-pebble-bed	en	preferred
+陶瓷球床	ceramic-pebble-bed	zh	preferred
+lithium ceramic pebble bed	lithium-ceramic-pebble-bed	en	preferred
+锂陶瓷球床	lithium-ceramic-pebble-bed	zh	preferred
+in-vessel	in-vessel	en	preferred
+堆内	in-vessel	zh	preferred
+ex-vessel	ex-vessel	en	preferred
+堆外	ex-vessel	zh	preferred
+reduced activation	reduced-activation	en	preferred
+低活化	reduced-activation	zh	preferred
+beryllium pebble bed	beryllium-pebble-bed	en	preferred
+铍球床	beryllium-pebble-bed	zh	preferred
+beryllium neutron multiplier	beryllium-neutron-multiplier	en	preferred
+铍中子倍增剂	beryllium-neutron-multiplier	zh	preferred
+tungsten armor	tungsten-armor	en	preferred
+钨铠甲	tungsten-armor	zh	preferred
+tungsten armour	tungsten-armor	en	alias	British spelling
+helium coolant	helium-coolant	en	preferred
+氦冷却剂	helium-coolant	zh	preferred
+He coolant	helium-coolant	en	alias	short form
+pressurized water	pressurized-water	en	preferred
+加压水	pressurized-water	zh	preferred
+safety analysis report	safety-analysis-report	en	preferred
+安全分析报告	safety-analysis-report	zh	preferred
+SAR	safety-analysis-report	abbr	preferred
+
 最终安全分析报告	final-safety-analysis-report	zh	preferred	preferred zh
 Final Safety Analysis Report	final-safety-analysis-report	en	preferred	preferred en (phrase)
 final-safety-analysis-report	final-safety-analysis-report	en	alias	IME token-only form

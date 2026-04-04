@@ -1345,3 +1345,15 @@ visit	https://visit-dav.github.io/visit-website/			2026-04-04
 data-pipeline	internal:fusion-terms:domain-expansion	Data engineering concept		2026-04-04
 scatter-plot	internal:fusion-terms:domain-expansion	Visualization type		2026-04-04
 histogram	https://en.wikipedia.org/wiki/Histogram			2026-04-04
+lithium-ceramic	internal:translation-dict-gap:phase1	P0 gap fix for lithium ceramic phrase matching	copilot	2026-04-04
+ceramic-pebble-bed	internal:translation-dict-gap:phase1	P0 gap fix for ceramic pebble bed concept	copilot	2026-04-04
+lithium-ceramic-pebble-bed	internal:translation-dict-gap:phase1	P0 root-cause fix for longest-match translation failure	copilot	2026-04-04
+in-vessel	internal:translation-dict-gap:phase1	P0 coverage for generalized in-vessel term	copilot	2026-04-04
+ex-vessel	internal:translation-dict-gap:phase1	P0 coverage for generalized ex-vessel term	copilot	2026-04-04
+reduced-activation	internal:translation-dict-gap:phase1	P0 coverage for reduced activation generic concept	copilot	2026-04-04
+beryllium-pebble-bed	internal:translation-dict-gap:phase1	P0 coverage for beryllium pebble bed term	copilot	2026-04-04
+beryllium-neutron-multiplier	internal:translation-dict-gap:phase1	P0 coverage for beryllium neutron multiplier term	copilot	2026-04-04
+tungsten-armor	internal:translation-dict-gap:phase1	P0 coverage for tungsten armor term	copilot	2026-04-04
+helium-coolant	internal:translation-dict-gap:phase1	P0 coverage for helium coolant term	copilot	2026-04-04
+pressurized-water	internal:translation-dict-gap:phase1	P0 coverage for pressurized water term	copilot	2026-04-04
+safety-analysis-report	internal:translation-dict-gap:phase1	P0 coverage for general safety analysis report concept	copilot	2026-04-04

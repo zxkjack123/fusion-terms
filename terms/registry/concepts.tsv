@@ -1407,3 +1407,17 @@ visit	code	VisIt	VisIt		active	LLNL visualization tool
 data-pipeline	concept	数据管线	data pipeline		active	Automated data processing workflow
 scatter-plot	concept	散点图	scatter plot		active	Point-based data visualization
 histogram	concept	直方图	histogram		active	Frequency distribution chart
+
+# ==== Batch 65 P0: translation dict gap fixes ====
+lithium-ceramic	material	锂陶瓷	lithium ceramic		active	Blanket breeder material base concept
+ceramic-pebble-bed	material	陶瓷球床	ceramic pebble bed		active	Pebble-bed structure concept
+lithium-ceramic-pebble-bed	material	锂陶瓷球床	lithium ceramic pebble bed		active	Root-cause phrase for greedy translation matching gap
+in-vessel	concept	堆内	in-vessel		active	General in-vessel context beyond LOCA-specific concepts
+ex-vessel	concept	堆外	ex-vessel		active	General ex-vessel context beyond LOCA-specific concepts
+reduced-activation	concept	低活化	reduced activation		active	General reduced-activation concept across materials
+beryllium-pebble-bed	material	铍球床	beryllium pebble bed		active	Neutron multiplier pebble-bed concept
+beryllium-neutron-multiplier	material	铍中子倍增剂	beryllium neutron multiplier		active	Beryllium-based neutron multiplier material concept
+tungsten-armor	material	钨铠甲	tungsten armor		active	Plasma-facing tungsten protective armor layer
+helium-coolant	concept	氦冷却剂	helium coolant		active	Helium as blanket/coolant working fluid
+pressurized-water	concept	加压水	pressurized water		active	Coolant type concept
+safety-analysis-report	doc	安全分析报告	safety analysis report	SAR	active	General safety analysis report concept
