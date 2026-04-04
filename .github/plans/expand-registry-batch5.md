@@ -148,7 +148,7 @@
   - ✅ validate_registry 通过无错误
 - **潜在风险**：tab 字符被编辑器替换为空格导致 TSV 解析失败 — 追加时使用实际 tab 字符
 
-#### Task 1.2: Batch 74 allowlist 同步
+#### ✅ Task 1.2: Batch 74 allowlist 同步
 
 - **目标**：将 Batch 74 新增术语的缺失 token 追加到 allowlist_en.txt 和 allowlist_zh.txt
 - **修改内容**：

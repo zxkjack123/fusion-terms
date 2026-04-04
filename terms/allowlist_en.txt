@@ -1061,3 +1061,9 @@ DF
 FAT
 SAT
 weldability
+
+# --- Batch 74 Phase 1 allowlist sync ---
+TQ
+CQ
+IFC
+OFC
