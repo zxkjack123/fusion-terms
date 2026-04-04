@@ -1458,3 +1458,13 @@ bypass-diode	internal:registry-gap-review:batch6	Overvoltage protection for supe
 rcc-mr	internal:registry-gap-review:batch6	ITER/DEMO baseline structural design code (AFCEN)	copilot	2026-04-04
 nuclear-quality-assurance	internal:registry-gap-review:batch6	Institutional foundation for nuclear facility construction/operation licensing	copilot	2026-04-04
 irradiation-test	internal:registry-gap-review:batch6	Core means of fusion material qualification (IFMIF/DONES)	copilot	2026-04-04
+event-tree	internal:registry-gap-review:batch7	Core tool of probabilistic safety assessment (IAEA SSG-3)	copilot	2026-04-04
+fault-tree	internal:registry-gap-review:batch7	System reliability analysis tool for PSA (IAEA SSG-3)	copilot	2026-04-04
+severe-accident	internal:registry-gap-review:batch7	Beyond-design-basis low-probability high-consequence accident	copilot	2026-04-04
+common-cause-failure	internal:registry-gap-review:batch7	Multiple redundant system failures from single root cause	copilot	2026-04-04
+cliff-edge-effect	internal:registry-gap-review:batch7	Post-Fukushima safety assessment term for abrupt consequence escalation	copilot	2026-04-04
+off-normal-event	internal:registry-gap-review:batch7	ITER event classification for deviations from normal operation	copilot	2026-04-04
+safety-margin	internal:registry-gap-review:batch7	Margin between design value and safety limit	copilot	2026-04-04
+committed-dose	internal:registry-gap-review:batch7	Time-integrated dose from intake of radioactive material (ICRP)	copilot	2026-04-04
+personal-dosimeter	internal:registry-gap-review:batch7	Wearable radiation dose monitoring device for workers	copilot	2026-04-04
+occupational-radiation-exposure	internal:registry-gap-review:batch7	Radiation exposure received during work activities (ICRP/IAEA)	copilot	2026-04-04

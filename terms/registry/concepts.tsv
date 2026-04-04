@@ -1546,3 +1546,15 @@ bypass-diode	device	旁路二极管	Bypass Diode		active	超导磁体过压保�
 rcc-mr	doc	核设备设计建造规范	Design and Construction Rules for Mechanical Components of Nuclear Installations	RCC-MR	active	ITER/DEMO 基线结构设计规范 (AFCEN)
 nuclear-quality-assurance	method	核质量保证	Nuclear Quality Assurance	NQA	active	核设施建造/运行许可制度性基础
 irradiation-test	method	辐照试验	Irradiation Test		active	聚变材料验证核心手段 (IFMIF/DONES)
+
+# ==== Batch 81: safety analysis methods + radiation protection operations ====
+event-tree	method	事件树	Event Tree	ET	active	概率安全评价核心工具 (IAEA)
+fault-tree	method	故障树	Fault Tree	FT	active	系统可靠性分析核心工具 (IAEA)
+severe-accident	concept	严重事故	Severe Accident	SA	active	超出设计基准的低概率高后果事故
+common-cause-failure	concept	共因失效	Common Cause Failure	CCF	active	同一原因导致多重冗余失效 (PSA 关键输入)
+cliff-edge-effect	concept	断崖效应	Cliff Edge Effect		active	参数小幅变化导致后果骤变 (后福岛评审术语)
+off-normal-event	concept	非正常事件	Off-Normal Event		active	偏离正常运行的事件统称 (ITER 分类)
+safety-margin	concept	核安全裕度	Nuclear Safety Margin		active	设计值与安全限值之间的余量
+committed-dose	metric	待积剂量	Committed Dose		active	摄入放射性核素后的时间积分剂量
+personal-dosimeter	device	个人剂量计	Personal Dosimeter		active	辐射工作人员随身佩戴的剂量监测仪器
+occupational-radiation-exposure	concept	职业辐射照射	Occupational Radiation Exposure		active	工作过程中受到的辐射照射

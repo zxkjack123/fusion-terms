@@ -6578,3 +6578,48 @@ irradiation test	irradiation-test	en	preferred	preferred en
 辐照试验	irradiation-test	zh	preferred	preferred zh
 irradiation-test	irradiation-test	en	alias	hyphenated form
 辐照实验	irradiation-test	zh	alias	variant zh
+
+# ---- Batch 81 aliases ----
+event tree	event-tree	en	preferred	preferred en
+事件树	event-tree	zh	preferred	preferred zh
+ET	event-tree	abbr	preferred	canonical abbr
+event-tree	event-tree	en	alias	hyphenated form
+event tree analysis	event-tree	en	alias	extended form (ETA)
+事件树分析	event-tree	zh	alias	extended zh
+fault tree	fault-tree	en	preferred	preferred en
+故障树	fault-tree	zh	preferred	preferred zh
+FT	fault-tree	abbr	preferred	canonical abbr
+fault-tree	fault-tree	en	alias	hyphenated form
+fault tree analysis	fault-tree	en	alias	extended form (FTA)
+故障树分析	fault-tree	zh	alias	extended zh
+severe accident	severe-accident	en	preferred	preferred en
+严重事故	severe-accident	zh	preferred	preferred zh
+SA	severe-accident	abbr	preferred	canonical abbr
+severe-accident	severe-accident	en	alias	hyphenated form
+common cause failure	common-cause-failure	en	preferred	preferred en
+共因失效	common-cause-failure	zh	preferred	preferred zh
+CCF	common-cause-failure	abbr	preferred	canonical abbr
+common-cause-failure	common-cause-failure	en	alias	hyphenated form
+共模故障	common-cause-failure	zh	alias	variant zh
+cliff edge effect	cliff-edge-effect	en	preferred	preferred en
+断崖效应	cliff-edge-effect	zh	preferred	preferred zh
+cliff-edge-effect	cliff-edge-effect	en	alias	hyphenated form
+off-normal event	off-normal-event	en	preferred	preferred en
+非正常事件	off-normal-event	zh	preferred	preferred zh
+off-normal-event	off-normal-event	en	alias	hyphenated form
+异常事件	off-normal-event	zh	alias	variant zh
+nuclear safety margin	safety-margin	en	preferred	preferred en
+核安全裕度	safety-margin	zh	preferred	preferred zh
+safety-margin	safety-margin	en	alias	hyphenated form
+committed dose	committed-dose	en	preferred	preferred en
+待积剂量	committed-dose	zh	preferred	preferred zh
+committed-dose	committed-dose	en	alias	hyphenated form
+committed equivalent dose	committed-dose	en	alias	specific subtype (CEqD)
+待积当量剂量	committed-dose	zh	alias	CEqD zh
+personal dosimeter	personal-dosimeter	en	preferred	preferred en
+个人剂量计	personal-dosimeter	zh	preferred	preferred zh
+personal-dosimeter	personal-dosimeter	en	alias	hyphenated form
+occupational radiation exposure	occupational-radiation-exposure	en	preferred	preferred en
+职业辐射照射	occupational-radiation-exposure	zh	preferred	preferred zh
+occupational-radiation-exposure	occupational-radiation-exposure	en	alias	hyphenated form
+职业受照	occupational-radiation-exposure	zh	alias	short zh
