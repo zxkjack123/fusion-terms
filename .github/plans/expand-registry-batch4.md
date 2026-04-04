@@ -314,7 +314,7 @@
   - ✅ validate_registry 通过无 ERROR
 - **潜在风险**：DF 为两字母缩写，可能触发 `min_en_key_len=3` 过滤——但 DF 会被移入 `en2zh_short` 而非丢失，下游使用正常
 
-#### Task 2.2: 同步 Phase 2 新增术语到 allowlists
+#### ✅ Task 2.2: 同步 Phase 2 新增术语到 allowlists
 
 - **目标**：确保 Phase 2 新增的 EN/ZH 术语出现在 allowlist 中
 - **修改内容**：

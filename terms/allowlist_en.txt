@@ -1048,3 +1048,11 @@ operability
 LBB
 injector
 pellet
+
+# --- Batch 72 Phase 2 allowlist sync ---
+SIL
+TAA
+TMP
+turbomolecular
+RGA
+DF
