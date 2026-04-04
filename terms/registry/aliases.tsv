@@ -6540,3 +6540,41 @@ upper-port	upper-port	en	alias	hyphenated form
 diagnostic port	diagnostic-port	en	preferred	preferred en
 诊断端口	diagnostic-port	zh	preferred	preferred zh
 diagnostic-port	diagnostic-port	en	alias	hyphenated form
+
+# ---- Batch 80 aliases ----
+hydrogen water chemistry	hydrogen-water-chemistry	en	preferred	preferred en
+加氢水化学	hydrogen-water-chemistry	zh	preferred	preferred zh
+HWC	hydrogen-water-chemistry	abbr	preferred	canonical abbr
+hydrogen-water-chemistry	hydrogen-water-chemistry	en	alias	hyphenated form
+corrosion product	corrosion-product	en	preferred	preferred en
+腐蚀产物	corrosion-product	zh	preferred	preferred zh
+corrosion-product	corrosion-product	en	alias	hyphenated form
+activated corrosion product	activated-corrosion-product	en	preferred	preferred en
+活化腐蚀产物	activated-corrosion-product	zh	preferred	preferred zh
+ACP	activated-corrosion-product	abbr	preferred	canonical abbr
+activated-corrosion-product	activated-corrosion-product	en	alias	hyphenated form
+cryoline	cryoline	en	preferred	preferred en
+低温传输线	cryoline	zh	preferred	preferred zh
+低温输送管线	cryoline	zh	alias	variant zh
+cold box	cold-box	en	preferred	preferred en
+冷箱	cold-box	zh	preferred	preferred zh
+cold-box	cold-box	en	alias	hyphenated form
+dump resistor	dump-resistor	en	preferred	preferred en
+卸能电阻	dump-resistor	zh	preferred	preferred zh
+dump-resistor	dump-resistor	en	alias	hyphenated form
+放能电阻	dump-resistor	zh	alias	variant zh
+bypass diode	bypass-diode	en	preferred	preferred en
+旁路二极管	bypass-diode	zh	preferred	preferred zh
+bypass-diode	bypass-diode	en	alias	hyphenated form
+Design and Construction Rules for Mechanical Components of Nuclear Installations	rcc-mr	en	preferred	preferred en (full title)
+核设备设计建造规范	rcc-mr	zh	preferred	preferred zh
+RCC-MR	rcc-mr	abbr	preferred	canonical abbr
+rcc-mr	rcc-mr	en	alias	IME token-only form
+nuclear quality assurance	nuclear-quality-assurance	en	preferred	preferred en
+核质量保证	nuclear-quality-assurance	zh	preferred	preferred zh
+NQA	nuclear-quality-assurance	abbr	preferred	canonical abbr
+nuclear-quality-assurance	nuclear-quality-assurance	en	alias	hyphenated form
+irradiation test	irradiation-test	en	preferred	preferred en
+辐照试验	irradiation-test	zh	preferred	preferred zh
+irradiation-test	irradiation-test	en	alias	hyphenated form
+辐照实验	irradiation-test	zh	alias	variant zh

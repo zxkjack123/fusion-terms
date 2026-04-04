@@ -1534,3 +1534,15 @@ chilled-water-system	system	冷冻水系统	Chilled Water System	CHWS	active	ITE
 port-cell	concept	端口室	Port Cell		active	ITER 端口设备布置空间
 upper-port	concept	上端口	Upper Port		active	托卡马克端口分类
 diagnostic-port	concept	诊断端口	Diagnostic Port		active	诊断系统集成端口
+
+# ==== Batch 80: water chemistry, cryogenics, magnet protection, standards & QA ====
+hydrogen-water-chemistry	method	加氢水化学	Hydrogen Water Chemistry	HWC	active	ITER TCWS 基线水化学控制方案
+corrosion-product	concept	腐蚀产物	Corrosion Product		active	冷却回路辐射剂量驱动因素
+activated-corrosion-product	concept	活化腐蚀产物	Activated Corrosion Product	ACP	active	职业照射控制关键
+cryoline	system	低温传输线	Cryoline		active	冷源至磁体馈线低温流体传输
+cold-box	device	冷箱	Cold Box		active	低温制冷系统核心单元
+dump-resistor	device	卸能电阻	Dump Resistor		active	磁体失超能量快速卸放
+bypass-diode	device	旁路二极管	Bypass Diode		active	超导磁体过压保护
+rcc-mr	doc	核设备设计建造规范	Design and Construction Rules for Mechanical Components of Nuclear Installations	RCC-MR	active	ITER/DEMO 基线结构设计规范 (AFCEN)
+nuclear-quality-assurance	method	核质量保证	Nuclear Quality Assurance	NQA	active	核设施建造/运行许可制度性基础
+irradiation-test	method	辐照试验	Irradiation Test		active	聚变材料验证核心手段 (IFMIF/DONES)

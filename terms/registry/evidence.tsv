@@ -1448,3 +1448,13 @@ chilled-water-system	internal:registry-gap-review:batch6	ITER PBS 28 chilled wat
 port-cell	internal:registry-gap-review:batch6	Equipment layout space at tokamak ports	copilot	2026-04-04
 upper-port	internal:registry-gap-review:batch6	Tokamak port classification	copilot	2026-04-04
 diagnostic-port	internal:registry-gap-review:batch6	Port for diagnostic system integration	copilot	2026-04-04
+hydrogen-water-chemistry	internal:registry-gap-review:batch6	ITER TCWS baseline water chemistry control scheme	copilot	2026-04-04
+corrosion-product	internal:registry-gap-review:batch6	Primary driver of coolant loop radiation dose and maintenance strategy	copilot	2026-04-04
+activated-corrosion-product	internal:registry-gap-review:batch6	Key factor in occupational exposure control and decontamination	copilot	2026-04-04
+cryoline	internal:registry-gap-review:batch6	Cryogenic fluid transfer system from cold source to magnet feeders	copilot	2026-04-04
+cold-box	internal:registry-gap-review:batch6	Core unit of cryogenic refrigeration system	copilot	2026-04-04
+dump-resistor	internal:registry-gap-review:batch6	Rapid energy discharge after magnet quench (ITER TF ~41 GJ)	copilot	2026-04-04
+bypass-diode	internal:registry-gap-review:batch6	Overvoltage protection for superconducting magnet segments	copilot	2026-04-04
+rcc-mr	internal:registry-gap-review:batch6	ITER/DEMO baseline structural design code (AFCEN)	copilot	2026-04-04
+nuclear-quality-assurance	internal:registry-gap-review:batch6	Institutional foundation for nuclear facility construction/operation licensing	copilot	2026-04-04
+irradiation-test	internal:registry-gap-review:batch6	Core means of fusion material qualification (IFMIF/DONES)	copilot	2026-04-04
