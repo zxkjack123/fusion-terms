@@ -399,7 +399,7 @@
   - ✅ Batch 83 的 10 个 concept_id 均可在 concepts.tsv 中通过 awk 精确匹配找到
 - **潜在风险**：PSI 若已存在为其他概念的 alias → precheck 发现后可移除 PSI 缩写（pre-service-inspection 全称仍可识别）
 
-#### Task 3.2: Batch 83 allowlist 同步
+#### ✅ Task 3.2: Batch 83 allowlist 同步
 
 - **目标**：将 Batch 83 所有新增 EN token / ZH 术语同步到 allowlist
 - **修改内容**：

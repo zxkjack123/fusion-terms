@@ -1177,3 +1177,18 @@ PLC
 human-machine-interface
 HMI
 plant-control-system
+
+# --- Batch 83 Phase 3 allowlist sync ---
+fatigue-analysis
+fracture-mechanics
+aging-management
+ageing-management
+seismic-qualification
+pre-service-inspection
+structural-integrity
+power-exhaust
+peak-heat-flux
+radiative-divertor
+plasma-material-interaction
+plasma-material-coupling
+plasma-wall-coupling
