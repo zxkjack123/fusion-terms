@@ -1032,3 +1032,6 @@ SMS
 ELTL
 LIPAc
 EVEDA
+
+# --- Batch 70 Phase 3 allowlist sync ---
+carrier

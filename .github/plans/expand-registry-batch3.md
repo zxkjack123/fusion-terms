@@ -371,7 +371,7 @@
   - ✅ validate_registry 通过无 ERROR
 - **潜在风险**：`水冷剂` 为简称，如校验拒绝可安全移除该行（其余 9 行不受影响）
 
-#### Task 3.2: 同步 Phase 3 新增术语到 allowlists
+#### ✅ Task 3.2: 同步 Phase 3 新增术语到 allowlists
 
 - **目标**：确保 Phase 3 新增的 EN/ZH 术语出现在 allowlist 中
 - **修改内容**：
