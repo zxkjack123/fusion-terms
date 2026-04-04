@@ -1380,3 +1380,11 @@ liquid-lithium-purification	internal:registry-gap-review:batch3	ELTL/IFMIF key p
 water-coolant	internal:registry-gap-review:batch3	Blanket/divertor coolant (counterpart to helium-coolant)	copilot	2026-04-04
 coolant-purification	internal:registry-gap-review:batch3	Cooling system auxiliary process	copilot	2026-04-04
 tritium-carrier	internal:registry-gap-review:batch3	PbLi tritium transport role in blanket	copilot	2026-04-04
+probabilistic-safety-assessment	internal:registry-gap-review:batch4	Core licensing/safety methodology (PSA/DSA)	copilot	2026-04-04
+hazard-and-operability-study	internal:registry-gap-review:batch4	Standard process hazard analysis framework	copilot	2026-04-04
+failure-mode-and-effects-analysis	internal:registry-gap-review:batch4	RAMI/reliability engineering method	copilot	2026-04-04
+station-blackout	internal:registry-gap-review:batch4	Accident family sibling to LOCA/LOFA/LOVA	copilot	2026-04-04
+tritium-breeding-margin	internal:registry-gap-review:batch4	TBR design margin metric	copilot	2026-04-04
+helium-ash-removal	internal:registry-gap-review:batch4	Plasma ops / fuel cycle link process	copilot	2026-04-04
+pellet-injector	internal:registry-gap-review:batch4	Device counterpart to pellet-injection method	copilot	2026-04-04
+leak-before-break	internal:registry-gap-review:batch4	Structural safety doctrine LBB	copilot	2026-04-04

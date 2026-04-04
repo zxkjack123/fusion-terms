@@ -1452,3 +1452,13 @@ liquid-lithium-purification	concept	液态锂纯化	liquid lithium purification	
 water-coolant	concept	水冷却剂	water coolant		active	包层/偏滤器冷却工质（与 helium-coolant 对应）
 coolant-purification	concept	冷却剂纯化	coolant purification		active	冷却系统配套工艺
 tritium-carrier	concept	氚载体	tritium carrier		active	PbLi 等在包层中承担的氚输运角色
+
+# ==== Batch 71: safety methods + fuel cycle core ====
+probabilistic-safety-assessment	method	概率安全评估	probabilistic safety assessment	PSA	active	安全许可核心方法论
+hazard-and-operability-study	method	危险与可操作性分析	hazard and operability study	HAZOP	active	工艺安全标准分析方法
+failure-mode-and-effects-analysis	method	失效模式与影响分析	failure mode and effects analysis	FMEA	active	RAMI/可靠性工程核心方法
+station-blackout	concept	全厂断电事故	station blackout	SBO	active	LOCA/LOFA/LOVA 事故家族同族
+tritium-breeding-margin	metric	氚增殖裕度	tritium breeding margin		active	TBR 设计裕度度量
+helium-ash-removal	method	氦灰排出	helium ash removal		active	等离子体运行/燃料循环衔接
+pellet-injector	device	弹丸注入器	pellet injector		active	pellet-injection 方法的配套设备
+leak-before-break	principle	先泄漏后断裂	leak-before-break	LBB	active	结构安全准则

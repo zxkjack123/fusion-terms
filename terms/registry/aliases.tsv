@@ -6239,3 +6239,45 @@ coolant-purification	coolant-purification	en	alias	hyphenated form
 tritium carrier	tritium-carrier	en	preferred	preferred en
 氚载体	tritium-carrier	zh	preferred	preferred zh
 tritium-carrier	tritium-carrier	en	alias	hyphenated form
+
+# ==== Batch 71: safety methods + fuel cycle core ====
+probabilistic safety assessment	probabilistic-safety-assessment	en	preferred	preferred en
+概率安全评估	probabilistic-safety-assessment	zh	preferred	preferred zh
+PSA	probabilistic-safety-assessment	abbr	preferred	canonical abbr
+probabilistic-safety-assessment	probabilistic-safety-assessment	en	alias	hyphenated form
+概率安全分析	probabilistic-safety-assessment	zh	alias	common zh variant
+
+hazard and operability study	hazard-and-operability-study	en	preferred	preferred en
+危险与可操作性分析	hazard-and-operability-study	zh	preferred	preferred zh
+HAZOP	hazard-and-operability-study	abbr	preferred	canonical abbr
+hazard-and-operability-study	hazard-and-operability-study	en	alias	hyphenated form
+HazOp	hazard-and-operability-study	abbr	alias	mixed-case variant
+
+failure mode and effects analysis	failure-mode-and-effects-analysis	en	preferred	preferred en
+失效模式与影响分析	failure-mode-and-effects-analysis	zh	preferred	preferred zh
+FMEA	failure-mode-and-effects-analysis	abbr	preferred	canonical abbr
+failure-mode-and-effects-analysis	failure-mode-and-effects-analysis	en	alias	hyphenated form
+
+station blackout	station-blackout	en	preferred	preferred en
+全厂断电事故	station-blackout	zh	preferred	preferred zh
+SBO	station-blackout	abbr	preferred	canonical abbr
+station-blackout	station-blackout	en	alias	hyphenated form
+
+tritium breeding margin	tritium-breeding-margin	en	preferred	preferred en
+氚增殖裕度	tritium-breeding-margin	zh	preferred	preferred zh
+tritium-breeding-margin	tritium-breeding-margin	en	alias	hyphenated form
+
+helium ash removal	helium-ash-removal	en	preferred	preferred en
+氦灰排出	helium-ash-removal	zh	preferred	preferred zh
+helium-ash-removal	helium-ash-removal	en	alias	hyphenated form
+氦灰排除	helium-ash-removal	zh	alias	common zh variant
+
+pellet injector	pellet-injector	en	preferred	preferred en
+弹丸注入器	pellet-injector	zh	preferred	preferred zh
+pellet-injector	pellet-injector	en	alias	hyphenated form
+
+leak-before-break	leak-before-break	en	preferred	preferred en (hyphenated convention)
+先泄漏后断裂	leak-before-break	zh	preferred	preferred zh
+LBB	leak-before-break	abbr	preferred	canonical abbr
+leak before break	leak-before-break	en	alias	unhyphenated form
+先漏后断	leak-before-break	zh	alias	short zh form
