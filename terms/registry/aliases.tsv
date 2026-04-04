@@ -6959,3 +6959,58 @@ pipe whip restraint	pipe-whip-restraint	en	preferred	preferred en
 pipe-whip-restraint	pipe-whip-restraint	en	alias	hyphenated form
 pipe whip protection	pipe-whip-restraint	en	alias	protection variant
 管鞭约束	pipe-whip-restraint	zh	alias	short zh
+# ---- Batch 89 aliases ----
+neutralizer	neutralizer	en	preferred	preferred en
+中和器	neutralizer	zh	preferred	preferred zh
+neutraliser	neutralizer	en	alias	British spelling
+gas neutralizer	neutralizer	en	alias	gas-target type
+中和室	neutralizer	zh	alias	chamber-form zh
+accelerator grid	accelerator-grid	en	preferred	preferred en
+加速栅极	accelerator-grid	zh	preferred	preferred zh
+accelerator-grid	accelerator-grid	en	alias	hyphenated form
+acceleration grid	accelerator-grid	en	alias	variant
+加速栅	accelerator-grid	zh	alias	short zh
+beam dump	beam-dump	en	preferred	preferred en
+束流收集器	beam-dump	zh	preferred	preferred zh
+beam-dump	beam-dump	en	alias	hyphenated form
+beam stop	beam-dump	en	alias	synonym
+束流阻尼器	beam-dump	zh	alias	variant zh
+residual ion dump	residual-ion-dump	en	preferred	preferred en
+残余离子收集器	residual-ion-dump	zh	preferred	preferred zh
+RID	residual-ion-dump	abbr	preferred	canonical abbr
+residual-ion-dump	residual-ion-dump	en	alias	hyphenated form
+残余离子阻尼器	residual-ion-dump	zh	alias	variant zh
+magnetron injection gun	magnetron-injection-gun	en	preferred	preferred en
+磁控注入枪	magnetron-injection-gun	zh	preferred	preferred zh
+MIG	magnetron-injection-gun	abbr	preferred	canonical abbr (gyrotron context)
+magnetron-injection-gun	magnetron-injection-gun	en	alias	hyphenated form
+磁注入枪	magnetron-injection-gun	zh	alias	short zh
+diamond window	diamond-window	en	preferred	preferred en
+金刚石窗口	diamond-window	zh	preferred	preferred zh
+diamond-window	diamond-window	en	alias	hyphenated form
+CVD diamond window	diamond-window	en	alias	material-process specific
+金刚石窗	diamond-window	zh	alias	short zh
+ECRH launcher	ecrh-launcher	en	preferred	preferred en
+ECRH发射天线	ecrh-launcher	zh	preferred	preferred zh
+ecrh-launcher	ecrh-launcher	en	alias	hyphenated form
+ECH launcher	ecrh-launcher	en	alias	short form
+electron cyclotron launcher	ecrh-launcher	en	alias	expanded form
+ECRH天线	ecrh-launcher	zh	alias	short zh
+non-evaporable getter	non-evaporable-getter	en	preferred	preferred en
+非蒸散型吸气剂	non-evaporable-getter	zh	preferred	preferred zh
+NEG	non-evaporable-getter	abbr	preferred	canonical abbr
+non-evaporable-getter	non-evaporable-getter	en	alias	hyphenated form
+NEG pump	non-evaporable-getter	en	alias	pump usage
+非蒸发型吸气剂	non-evaporable-getter	zh	alias	variant zh
+ion gauge	ion-gauge	en	preferred	preferred en
+电离真空计	ion-gauge	zh	preferred	preferred zh
+ion-gauge	ion-gauge	en	alias	hyphenated form
+ionization gauge	ion-gauge	en	alias	expanded form
+hot cathode gauge	ion-gauge	en	alias	type-specific
+电离规	ion-gauge	zh	alias	short zh
+Penning gauge	penning-gauge	en	preferred	preferred en
+潘宁真空计	penning-gauge	zh	preferred	preferred zh
+penning-gauge	penning-gauge	en	alias	hyphenated form
+cold cathode gauge	penning-gauge	en	alias	type-specific
+Penning vacuum gauge	penning-gauge	en	alias	expanded form
+潘宁规	penning-gauge	zh	alias	short zh

@@ -1639,3 +1639,14 @@ check-valve	concept	止回阀	check valve		active	仅允许单向流动、防止
 expansion-joint	concept	膨胀节	expansion joint		active	吸收管道热膨胀位移的柔性补偿元件
 rupture-disc	concept	爆破片	rupture disc		active	超压时主动破裂泄放压力的非重闭式安全装置
 pipe-whip-restraint	concept	管道甩击约束装置	pipe whip restraint		active	限制高能管道断裂后甩击运动的结构约束件 (核级管道安全要求)
+# ==== Batch 89: NBI / gyrotron sub-components / vacuum gauging ====
+neutralizer	device	中和器	neutralizer		active	NBI 束线中将高能离子束中和为中性粒子束的气体/等离子体靶
+accelerator-grid	concept	加速栅极	accelerator grid		active	NBI 离子源中对负离子进行多级静电加速的栅极组件
+beam-dump	device	束流收集器	beam dump		active	吸收未被中和的残余离子束能量的水冷收集器 (NBI)
+residual-ion-dump	device	残余离子收集器	residual ion dump	RID	active	NBI 中和器下游磁偏转后收集残余离子的高热负荷部件
+magnetron-injection-gun	device	磁控注入枪	magnetron injection gun	MIG	active	回旋管中产生环形电子束的磁控电子枪 (gyrotron context)
+diamond-window	concept	金刚石窗口	diamond window		active	CVD 金刚石材料的 ECRH 微波传输真空窗口 (低损耗/高功率)
+ecrh-launcher	device	ECRH发射天线	ECRH launcher		active	将微波束注入等离子体的可调方向发射天线/镜组 (ITER upper launcher / equatorial launcher)
+non-evaporable-getter	concept	非蒸散型吸气剂	non-evaporable getter	NEG	active	通过加热活化反复使用的固体吸气材料 (Ti-Zr-V 合金)
+ion-gauge	device	电离真空计	ion gauge		active	利用气体电离原理测量中高真空度的真空计
+penning-gauge	device	潘宁真空计	Penning gauge		active	利用冷阴极放电原理测量真空度的离子真空计 (无灯丝)

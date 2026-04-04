@@ -1538,3 +1538,13 @@ check-valve	internal:registry-gap-review:batch9	One-way flow valve preventing ba
 expansion-joint	internal:registry-gap-review:batch9	Flexible compensating element absorbing thermal expansion displacement in piping	copilot	2026-04-04
 rupture-disc	internal:registry-gap-review:batch9	Non-reclosing pressure relief device that bursts at set pressure differential	copilot	2026-04-04
 pipe-whip-restraint	internal:registry-gap-review:batch9	Structural restraint limiting high-energy pipe whip motion after postulated break (nuclear-grade piping)	copilot	2026-04-04
+neutralizer	internal:registry-gap-review:batch9	Gas/plasma target neutralizing high-energy ion beam in NBI beamline	copilot	2026-04-04
+accelerator-grid	internal:registry-gap-review:batch9	Multi-stage electrostatic accelerator grid assembly in NBI negative ion source	copilot	2026-04-04
+beam-dump	internal:registry-gap-review:batch9	Water-cooled collector absorbing residual un-neutralized ion beam energy in NBI	copilot	2026-04-04
+residual-ion-dump	internal:registry-gap-review:batch9	High heat flux component collecting magnetically deflected residual ions downstream of NBI neutralizer	copilot	2026-04-04
+magnetron-injection-gun	internal:registry-gap-review:batch9	Magnetron-type electron gun producing annular electron beam in gyrotron (MIG)	copilot	2026-04-04
+diamond-window	internal:registry-gap-review:batch9	CVD diamond vacuum window for low-loss high-power ECRH microwave transmission	copilot	2026-04-04
+ecrh-launcher	internal:registry-gap-review:batch9	Steerable antenna/mirror assembly injecting microwave beam into plasma (ITER upper/equatorial launcher)	copilot	2026-04-04
+non-evaporable-getter	internal:registry-gap-review:batch9	Solid getter material (Ti-Zr-V alloy) reactivatable by heating for repeated use in vacuum systems	copilot	2026-04-04
+ion-gauge	internal:registry-gap-review:batch9	Vacuum gauge measuring medium-to-high vacuum by gas ionization principle	copilot	2026-04-04
+penning-gauge	internal:registry-gap-review:batch9	Cold cathode discharge vacuum gauge without filament (Penning principle)	copilot	2026-04-04

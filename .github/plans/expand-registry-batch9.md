@@ -424,7 +424,7 @@ pipe-whip-protection
 
 ### Phase 3: Batch 89 — NBI / 回旋管子部件 / 真空计量
 
-#### Task 3.1: Batch 89 三表追加
+#### ✅ Task 3.1: Batch 89 三表追加
 
 - **目标**：向 concepts / aliases / evidence 三表追加 10 个加热硬件子部件和真空计量概念
 - **修改内容**：
