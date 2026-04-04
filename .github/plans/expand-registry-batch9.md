@@ -612,7 +612,7 @@ ECRH天线
 
 ### Phase 4: 全量验证、导出与测试
 
-#### Task 4.1: 全量验证导出测试
+#### ✅ Task 4.1: 全量验证导出测试
 
 - **目标**：对三批全部 30 条新增概念执行完整的验证、导出、构建和回归测试
 - **修改内容**：
@@ -621,7 +621,7 @@ ECRH天线
   - `artifacts/domain_terms.txt` — 由 `build_terms` 重新生成（此为自动产物，非手工编辑）
 - **修改边界**：不得修改 `terms/` 目录下任何文件。不得修改 pipeline 源代码。artifacts 目录文件仅通过 pipeline 命令重新生成。
 - **测试要求**：
-  - 运行 `python3 -m pipeline.validate_registry` → registry OK: 1460 concepts, ~7020 aliases, 1460 evidence rows, no ERROR
+  - 运行 `python3 -m pipeline.validate_registry` → registry OK: 1460 concepts, 6215 aliases, 1460 evidence rows, no ERROR
   - 运行 `python3 -m pipeline.export_registry --translation-dict` → no ERROR；检查 `artifacts/translation_dict.json` en2zh 条数 ≥ 2774
   - 翻译抽检 5 条：
     - "fire detection system" → 火灾探测系统
@@ -633,7 +633,7 @@ ECRH天线
   - 运行 `pytest -q` → all pass
   - 运行 `get_errors` → 无新增 ERROR（pre-existing lint 警告预期存在）
 - **验收标准**：
-  - ✅ validate_registry: concepts = 1460, evidence = 1460, no ERROR
+  - ✅ validate_registry: concepts = 1460, aliases = 6215, evidence = 1460, no ERROR
   - ✅ translation_dict.json en2zh ≥ 2774
   - ✅ 5/5 翻译抽检 PASS
   - ✅ domain_terms.txt ≥ 3326 行
