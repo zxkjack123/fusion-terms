@@ -1522,3 +1522,15 @@ safety-function	concept	安全功能	Safety Function	SF	active	核安全分级�
 safety-important-component	concept	安全重要物项	Safety Important Component	SIC	active	注意与 SiC/SiC (sic-sic-composite) 区分
 postulated-initiating-event	concept	假设始发事件	Postulated Initiating Event		active	确定论安全分析起点 (IAEA)
 confinement-system	system	包容系统	Confinement System		active	氚包容屏障系统级总称
+
+# ==== Batch 79: plasma operation phases + ITER PBS systems ====
+plasma-breakdown	concept	等离子体击穿	Plasma Breakdown		active	放电启动阶段
+loop-voltage	metric	环电压	Loop Voltage		active	放电启动关键参数
+flat-top	concept	平顶段	Flat-Top		active	等离子体电流稳态运行阶段
+burn-phase	concept	燃烧阶段	Burn Phase		active	D-T 燃烧运行阶段
+plasma-termination	concept	等离子体终止	Plasma Termination		active	放电结束阶段
+component-cooling-water-system	system	部件冷却水系统	Component Cooling Water System	CCWS	active	ITER PBS 27
+chilled-water-system	system	冷冻水系统	Chilled Water System	CHWS	active	ITER PBS 28
+port-cell	concept	端口室	Port Cell		active	ITER 端口设备布置空间
+upper-port	concept	上端口	Upper Port		active	托卡马克端口分类
+diagnostic-port	concept	诊断端口	Diagnostic Port		active	诊断系统集成端口

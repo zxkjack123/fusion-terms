@@ -6504,3 +6504,39 @@ postulated-initiating-event	postulated-initiating-event	en	alias	hyphenated form
 confinement system	confinement-system	en	preferred	preferred en
 包容系统	confinement-system	zh	preferred	preferred zh
 confinement-system	confinement-system	en	alias	hyphenated form
+
+# ---- Batch 79 aliases ----
+plasma breakdown	plasma-breakdown	en	preferred	preferred en
+等离子体击穿	plasma-breakdown	zh	preferred	preferred zh
+plasma-breakdown	plasma-breakdown	en	alias	hyphenated form
+击穿	plasma-breakdown	zh	alias	short form
+loop voltage	loop-voltage	en	preferred	preferred en
+环电压	loop-voltage	zh	preferred	preferred zh
+loop-voltage	loop-voltage	en	alias	hyphenated form
+Flat-Top	flat-top	en	preferred	preferred en (hyphenated standard)
+平顶段	flat-top	zh	preferred	preferred zh
+flat top	flat-top	en	alias	unhyphenated variant
+flat-top	flat-top	en	alias	IME token-only form
+burn phase	burn-phase	en	preferred	preferred en
+燃烧阶段	burn-phase	zh	preferred	preferred zh
+burn-phase	burn-phase	en	alias	hyphenated form
+plasma termination	plasma-termination	en	preferred	preferred en
+等离子体终止	plasma-termination	zh	preferred	preferred zh
+plasma-termination	plasma-termination	en	alias	hyphenated form
+component cooling water system	component-cooling-water-system	en	preferred	preferred en
+部件冷却水系统	component-cooling-water-system	zh	preferred	preferred zh
+CCWS	component-cooling-water-system	abbr	preferred	canonical abbr
+component-cooling-water-system	component-cooling-water-system	en	alias	hyphenated form
+chilled water system	chilled-water-system	en	preferred	preferred en
+冷冻水系统	chilled-water-system	zh	preferred	preferred zh
+CHWS	chilled-water-system	abbr	preferred	canonical abbr
+chilled-water-system	chilled-water-system	en	alias	hyphenated form
+port cell	port-cell	en	preferred	preferred en
+端口室	port-cell	zh	preferred	preferred zh
+port-cell	port-cell	en	alias	hyphenated form
+upper port	upper-port	en	preferred	preferred en
+上端口	upper-port	zh	preferred	preferred zh
+upper-port	upper-port	en	alias	hyphenated form
+diagnostic port	diagnostic-port	en	preferred	preferred en
+诊断端口	diagnostic-port	zh	preferred	preferred zh
+diagnostic-port	diagnostic-port	en	alias	hyphenated form

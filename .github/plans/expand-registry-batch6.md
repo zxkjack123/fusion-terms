@@ -183,7 +183,7 @@
 
 ### Phase 2: Batch 79 — 等离子体运行阶段 + ITER PBS 系统 (P1-a, 10 terms)
 
-#### Task 2.1: Batch 79 三表追加（10 概念 + ~31 alias + 10 evidence）
+#### ✅ Task 2.1: Batch 79 三表追加（10 概念 + ~31 alias + 10 evidence）
 
 - **目标**：在三张注册表表末尾追加 Batch 79 全部数据
 - **修改内容**：

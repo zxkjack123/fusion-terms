@@ -1438,3 +1438,13 @@ safety-function	internal:registry-gap-review:batch6	IAEA nuclear safety classifi
 safety-important-component	internal:registry-gap-review:batch6	Nuclear safety grading determines QA level and inspection requirements	copilot	2026-04-04
 postulated-initiating-event	internal:registry-gap-review:batch6	Starting point of deterministic safety analysis (IAEA)	copilot	2026-04-04
 confinement-system	internal:registry-gap-review:batch6	System-level designation for tritium confinement barriers	copilot	2026-04-04
+plasma-breakdown	internal:registry-gap-review:batch6	Plasma discharge initiation phase	copilot	2026-04-04
+loop-voltage	internal:registry-gap-review:batch6	Key parameter for plasma breakdown and current drive	copilot	2026-04-04
+flat-top	internal:registry-gap-review:batch6	Steady-state phase of plasma current waveform	copilot	2026-04-04
+burn-phase	internal:registry-gap-review:batch6	D-T burning operation phase	copilot	2026-04-04
+plasma-termination	internal:registry-gap-review:batch6	Discharge termination phase	copilot	2026-04-04
+component-cooling-water-system	internal:registry-gap-review:batch6	ITER PBS 27 heat rejection system	copilot	2026-04-04
+chilled-water-system	internal:registry-gap-review:batch6	ITER PBS 28 chilled water system	copilot	2026-04-04
+port-cell	internal:registry-gap-review:batch6	Equipment layout space at tokamak ports	copilot	2026-04-04
+upper-port	internal:registry-gap-review:batch6	Tokamak port classification	copilot	2026-04-04
+diagnostic-port	internal:registry-gap-review:batch6	Port for diagnostic system integration	copilot	2026-04-04
