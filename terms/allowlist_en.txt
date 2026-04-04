@@ -1018,3 +1018,10 @@ primary
 heat
 transfer
 transport
+
+# --- Batch 68 Phase 1 allowlist sync ---
+aluminate
+metasilicate
+FLiBe
+flibe
+breeder

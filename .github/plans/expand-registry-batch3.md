@@ -157,7 +157,7 @@
   - ✅ validate_registry 通过无 ERROR
 - **潜在风险**：Li2O 为极短化学式，grep 时需使用 tab 边界 `\t` 避免误匹配
 
-#### Task 1.2: 同步 Phase 1 新增术语到 allowlists
+#### ✅ Task 1.2: 同步 Phase 1 新增术语到 allowlists
 
 - **目标**：确保 Phase 1 新增的 EN/ZH 术语出现在 allowlist 中以支持 build_terms
 - **修改内容**：
