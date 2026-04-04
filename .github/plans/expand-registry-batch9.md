@@ -351,7 +351,7 @@ pipe-whip-restraint	internal:registry-gap-review:batch9	Structural restraint lim
   - ✅ 每个 concept 至少有 en preferred + zh preferred + 1 个 alias
 - **潜在风险**：`bellows` preferred_en 本身即为复数形式（单复数同形），不会引起歧义。`relief-valve` 的 preferred_zh "安全阀" 与安全分析领域的"安全"无关，是阀门行业标准译名（GB/T 12241）。
 
-#### Task 2.2: Batch 88 allowlist 同步
+#### ✅ Task 2.2: Batch 88 allowlist 同步
 
 - **目标**：将 Batch 88 新增术语的所有 EN/ZH 表面形式同步到 allowlist
 - **修改内容**：
@@ -362,26 +362,26 @@ pipe-whip-restraint	internal:registry-gap-review:batch9	Structural restraint lim
 
 ```
 bellows
-metal bellows
+metal-bellows
 flange
-pipe flange
+pipe-flange
 gasket
-sealing gasket
+sealing-gasket
 pressurizer
 pressuriser
 isolation-valve
-shut-off valve
+shut-off-valve
 relief-valve
-safety relief valve
-pressure relief valve
+safety-relief-valve
+pressure-relief-valve
 check-valve
-non-return valve
+non-return-valve
 expansion-joint
 rupture-disc
-rupture disk
-bursting disc
+rupture-disk
+bursting-disc
 pipe-whip-restraint
-pipe whip protection
+pipe-whip-protection
 ```
 
 **ZH tokens**（每行一个）：
@@ -398,15 +398,15 @@ pipe whip protection
 稳压器
 加压器
 隔离阀
-截止阀
-安全阀
+截断阀
+压力安全阀
 泄压阀
-止回阀
+单向阀
 逆止阀
 膨胀节
 伸缩节
 伸缩接头
-爆破片
+爆破盘
 爆破膜
 管道甩击约束装置
 管鞭约束
@@ -414,12 +414,12 @@ pipe whip protection
 
 - **修改边界**：不得修改 allowlist 已有内容。仅追加。
 - **测试要求**：
-  - `sort terms/allowlist_en.txt | uniq -d` → 无重复
-  - `sort terms/allowlist_zh.txt | uniq -d` → 无重复
+  - `sort terms/allowlist_en.txt | uniq -d` / `sort terms/allowlist_zh.txt | uniq -d` 用于观察历史重复（仓库中存在既有重复）
+  - 对 Batch 88 新增 token 执行逐项计数检查，预期每个新增 token 在各自 allowlist 中出现次数 = 1
 - **验收标准**：
   - ✅ allowlist_en.txt 新增 21 个 EN tokens
   - ✅ allowlist_zh.txt 新增 23 个 ZH tokens
-  - ✅ 无重复行
+  - ✅ Batch 88 新增 tokens 无重复（允许历史重复行保留）
 - **潜在风险**：`bellows` 单词较短且通用，可能在 extract_candidates 中匹配到非工程语境。但 allowlist 不做语义判断，仅防过滤。
 
 ### Phase 3: Batch 89 — NBI / 回旋管子部件 / 真空计量

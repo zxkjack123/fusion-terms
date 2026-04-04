@@ -1271,3 +1271,26 @@ ventilation-zone
 tritium-building
 tokamak-pit
 bioshield-pit
+
+# --- Batch 88 Phase 2 allowlist sync ---
+bellows
+metal-bellows
+flange
+pipe-flange
+gasket
+sealing-gasket
+pressurizer
+pressuriser
+isolation-valve
+shut-off-valve
+relief-valve
+safety-relief-valve
+pressure-relief-valve
+check-valve
+non-return-valve
+expansion-joint
+rupture-disc
+rupture-disk
+bursting-disc
+pipe-whip-restraint
+pipe-whip-protection
