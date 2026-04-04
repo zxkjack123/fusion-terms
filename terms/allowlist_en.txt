@@ -1192,3 +1192,22 @@ radiative-divertor
 plasma-material-interaction
 plasma-material-coupling
 plasma-wall-coupling
+
+# --- Batch 84 Phase 1 allowlist sync ---
+vitrification
+glass-vitrification
+cementation
+cement-solidification
+interim-storage
+intermediate-storage
+waste-minimization
+waste-reduction
+secondary-waste
+decontamination-factor
+environmental-monitoring
+effluent-monitoring
+discharge-monitoring
+atmospheric-dispersion
+atmospheric-diffusion
+environmental-qualification
+EQ

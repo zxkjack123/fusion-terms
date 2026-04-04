@@ -174,7 +174,7 @@
   - ✅ `grep -P '^DF\t.*decontamination-factor' terms/registry/aliases.tsv` 返回 0 行（确认未误添加 DF 缩写）
 - **潜在风险**：`decontamination-factor` 与已有 `decontamination` 概念形成上下位关系，需确认 validator 允许 concept_id 前缀包含关系（已有先例：`neutron` 与 `neutron-transport` 等）
 
-#### Task 1.2: Batch 84 allowlist 同步
+#### ✅ Task 1.2: Batch 84 allowlist 同步
 
 - **目标**：将 Batch 84 所有新增 EN token / ZH 术语同步到 allowlist（如尚未存在）
 - **修改内容**：
