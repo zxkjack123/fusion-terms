@@ -1407,3 +1407,10 @@ current-quench	internal:registry-gap-review:batch5	Disruption phase: plasma curr
 inner-fuel-cycle	internal:registry-gap-review:batch5	Plasma exhaust to direct internal recycle loop	copilot	2026-04-04
 outer-fuel-cycle	internal:registry-gap-review:batch5	Blanket tritium extraction to storage and injection	copilot	2026-04-04
 burnup-fraction	internal:registry-gap-review:batch5	Core plasma burn efficiency metric	copilot	2026-04-04
+central-interlock-system	internal:registry-gap-review:batch5	ITER safety-related central interlock system	copilot	2026-04-04
+machine-protection-system	internal:registry-gap-review:batch5	Fast response machine protection for fusion devices	copilot	2026-04-04
+distributed-control-system	internal:registry-gap-review:batch5	Standard control architecture for fusion devices	copilot	2026-04-04
+codac	internal:registry-gap-review:batch5	ITER Control, Data Access and Communication framework	copilot	2026-04-04
+hot-isostatic-pressing	internal:registry-gap-review:batch5	Key manufacturing process for W and RAFM steel components	copilot	2026-04-04
+electron-beam-welding	internal:registry-gap-review:batch5	Primary welding method for vacuum vessel thick-wall sections	copilot	2026-04-04
+diffusion-bonding	internal:registry-gap-review:batch5	Dissimilar material joining for blanket/first wall	copilot	2026-04-04

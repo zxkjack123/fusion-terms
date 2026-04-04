@@ -6358,3 +6358,38 @@ outer-fuel-cycle	outer-fuel-cycle	en	alias	hyphenated form
 burnup fraction	burnup-fraction	en	preferred	preferred en
 燃耗份额	burnup-fraction	zh	preferred	preferred zh
 burnup-fraction	burnup-fraction	en	alias	hyphenated form
+
+# ==== Batch 75: I&C systems + manufacturing processes ====
+central interlock system	central-interlock-system	en	preferred	preferred en
+中央联锁系统	central-interlock-system	zh	preferred	preferred zh
+CIS	central-interlock-system	abbr	preferred	canonical abbr
+central-interlock-system	central-interlock-system	en	alias	hyphenated form
+
+machine protection system	machine-protection-system	en	preferred	preferred en
+装置保护系统	machine-protection-system	zh	preferred	preferred zh
+MPS	machine-protection-system	abbr	preferred	canonical abbr
+machine-protection-system	machine-protection-system	en	alias	hyphenated form
+
+distributed control system	distributed-control-system	en	preferred	preferred en
+分布式控制系统	distributed-control-system	zh	preferred	preferred zh
+DCS	distributed-control-system	abbr	preferred	canonical abbr
+distributed-control-system	distributed-control-system	en	alias	hyphenated form
+
+control, data access and communication	codac	en	preferred	preferred en
+控制、数据获取与通信	codac	zh	preferred	preferred zh
+CODAC	codac	abbr	preferred	canonical abbr
+control data access and communication	codac	en	alias	without comma
+
+hot isostatic pressing	hot-isostatic-pressing	en	preferred	preferred en
+热等静压	hot-isostatic-pressing	zh	preferred	preferred zh
+HIP	hot-isostatic-pressing	abbr	preferred	canonical abbr
+hot-isostatic-pressing	hot-isostatic-pressing	en	alias	hyphenated form
+
+electron beam welding	electron-beam-welding	en	preferred	preferred en
+电子束焊接	electron-beam-welding	zh	preferred	preferred zh
+electron-beam-welding	electron-beam-welding	en	alias	hyphenated form
+e-beam welding	electron-beam-welding	en	alias	common short form (EBW token reserved)
+
+diffusion bonding	diffusion-bonding	en	preferred	preferred en
+扩散连接	diffusion-bonding	zh	preferred	preferred zh
+diffusion-bonding	diffusion-bonding	en	alias	hyphenated form

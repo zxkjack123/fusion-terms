@@ -165,7 +165,7 @@
 
 ### Phase 2: I&C + 制造工艺前半（P1-a — Batch 75, 7 terms）
 
-#### Task 2.1: 添加 7 个 P1-a 概念到三表
+#### ✅ Task 2.1: 添加 7 个 P1-a 概念到三表
 
 - **目标**：补全仪表与控制基础设施（CIS/MPS/DCS/CODAC）和制造工艺（HIP/EBW/diffusion-bonding）
 - **修改内容**：

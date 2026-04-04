@@ -1484,3 +1484,12 @@ current-quench	concept	电流猝灭	current quench	CQ	active	破裂阶段：等�
 inner-fuel-cycle	concept	内燃料循环	inner fuel cycle	IFC	active	等离子体排气→直接内循环
 outer-fuel-cycle	concept	外燃料循环	outer fuel cycle	OFC	active	包层氚提取→纯化→储存→注入
 burnup-fraction	metric	燃耗份额	burnup fraction		active	等离子体燃烧效率核心指标
+
+# ==== Batch 75: I&C systems + manufacturing processes ====
+central-interlock-system	system	中央联锁系统	central interlock system	CIS	active	ITER 安全联锁核心系统
+machine-protection-system	system	装置保护系统	machine protection system	MPS	active	装置快速响应保护系统
+distributed-control-system	system	分布式控制系统	distributed control system	DCS	active	聚变装置标配控制架构
+codac	system	控制、数据获取与通信	control, data access and communication	CODAC	active	ITER 控制架构统称
+hot-isostatic-pressing	method	热等静压	hot isostatic pressing	HIP	active	钨/RAFM 钢部件制造核心工艺
+electron-beam-welding	method	电子束焊接	electron beam welding		active	真空容器等厚壁部件主要焊接方法
+diffusion-bonding	method	扩散连接	diffusion bonding		active	包层/第一壁异种材料连接工艺
