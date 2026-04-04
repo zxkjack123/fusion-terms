@@ -1488,3 +1488,13 @@ power-exhaust	internal:registry-gap-review:batch7	Safe removal of plasma thermal
 peak-heat-flux	internal:registry-gap-review:batch7	Maximum heat flux on plasma-facing component surfaces	copilot	2026-04-04
 radiative-divertor	internal:registry-gap-review:batch7	Operating regime using impurity radiation to reduce target plate heat load	copilot	2026-04-04
 plasma-material-interaction	internal:registry-gap-review:batch7	Physical/chemical interaction between plasma and plasma-facing material surfaces	copilot	2026-04-04
+vitrification	internal:registry-gap-review:batch8	High-level waste immobilization in borosilicate glass matrix	copilot	2026-04-04
+cementation	internal:registry-gap-review:batch8	Low/intermediate-level waste immobilization in cement matrix	copilot	2026-04-04
+interim-storage	internal:registry-gap-review:batch8	Controlled temporary storage of radioactive waste before final disposal	copilot	2026-04-04
+waste-minimization	internal:registry-gap-review:batch8	Strategy to reduce radioactive waste volume at source and during processing	copilot	2026-04-04
+secondary-waste	internal:registry-gap-review:batch8	New waste generated during waste treatment or decontamination processes	copilot	2026-04-04
+decontamination-factor	internal:registry-gap-review:batch8	Ratio of contamination level before and after decontamination (IAEA)	copilot	2026-04-04
+environmental-monitoring	internal:registry-gap-review:batch8	Systematic monitoring of radioactivity levels around nuclear facilities	copilot	2026-04-04
+effluent-monitoring	internal:registry-gap-review:batch8	Monitoring of gaseous/liquid radioactive discharges to environment	copilot	2026-04-04
+atmospheric-dispersion	internal:registry-gap-review:batch8	Transport and diffusion of radioactive material in atmosphere	copilot	2026-04-04
+environmental-qualification	internal:registry-gap-review:batch8	Qualification of equipment to function under accident environmental conditions (IEEE 323)	copilot	2026-04-04

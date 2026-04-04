@@ -1582,3 +1582,15 @@ power-exhaust	concept	功率排出	Power Exhaust		active	将等离子体热功�
 peak-heat-flux	metric	峰值热流密度	Peak Heat Flux		active	面向等离子体部件表面承受的最大热流
 radiative-divertor	concept	辐射偏滤器	Radiative Divertor		active	通过杂质辐射降低偏滤器靶板热载荷的运行模式
 plasma-material-interaction	concept	等离子体-材料互作	Plasma-Material Coupling		active	等离子体与面向等离子体材料表面的物理/化学相互作用（PSI/PMI 缩写已占用）
+
+# ==== Batch 84: waste management chain + environmental monitoring ====
+vitrification	method	玻璃固化	vitrification		active	高放废物玻璃固化处理工艺
+cementation	method	水泥固化	cementation		active	中低放废物水泥固化处理工艺
+interim-storage	concept	中间贮存	interim storage		active	放射性废物最终处置前的受控暂存
+waste-minimization	method	废物最小化	waste minimization		active	从源头和过程中减少放射性废物产生量的策略
+secondary-waste	concept	二次废物	secondary waste		active	废物处理/去污过程中产生的新废物
+decontamination-factor	metric	去污因子	decontamination factor		active	去污前后放射性活度（或污染水平）之比
+environmental-monitoring	method	环境监测	environmental monitoring		active	核设施周围环境放射性水平的系统监测
+effluent-monitoring	method	流出物监测	effluent monitoring		active	核设施排放至环境的气态/液态放射性流出物监测
+atmospheric-dispersion	concept	大气弥散	atmospheric dispersion		active	放射性物质在大气中的输运与扩散过程
+environmental-qualification	method	环境鉴定	environmental qualification	EQ	active	设备在事故环境条件下维持功能的鉴定 (IEEE 323)

@@ -6709,3 +6709,50 @@ plasma-material-coupling	plasma-material-interaction	en	alias	hyphenated form
 plasma-material interaction process	plasma-material-interaction	en	alias	expanded form
 plasma-wall coupling	plasma-material-interaction	en	alias	PWI-like variant
 等离子体-壁耦合	plasma-material-interaction	zh	alias	PWI-like zh
+
+# ---- Batch 84 aliases ----
+vitrification	vitrification	en	preferred	preferred en
+玻璃固化	vitrification	zh	preferred	preferred zh
+glass vitrification	vitrification	en	alias	extended form
+玻璃固化体	vitrification	zh	alias	product form
+cementation	cementation	en	preferred	preferred en
+水泥固化	cementation	zh	preferred	preferred zh
+cement solidification	cementation	en	alias	synonym
+水泥固化处理	cementation	zh	alias	expanded zh
+interim storage	interim-storage	en	preferred	preferred en
+中间贮存	interim-storage	zh	preferred	preferred zh
+interim-storage	interim-storage	en	alias	hyphenated form
+intermediate storage	interim-storage	en	alias	synonym
+暂存	interim-storage	zh	alias	short zh
+waste minimization	waste-minimization	en	preferred	preferred en
+废物最小化	waste-minimization	zh	preferred	preferred zh
+waste-minimization	waste-minimization	en	alias	hyphenated form
+waste reduction	waste-minimization	en	alias	synonym
+废物减量	waste-minimization	zh	alias	synonym zh
+secondary waste	secondary-waste	en	preferred	preferred en
+二次废物	secondary-waste	zh	preferred	preferred zh
+secondary-waste	secondary-waste	en	alias	hyphenated form
+二次放射性废物	secondary-waste	zh	alias	expanded zh
+decontamination factor	decontamination-factor	en	preferred	preferred en
+去污因子	decontamination-factor	zh	preferred	preferred zh
+decontamination-factor	decontamination-factor	en	alias	hyphenated form
+去污系数	decontamination-factor	zh	alias	variant zh
+environmental monitoring	environmental-monitoring	en	preferred	preferred en
+环境监测	environmental-monitoring	zh	preferred	preferred zh
+environmental-monitoring	environmental-monitoring	en	alias	hyphenated form
+环境辐射监测	environmental-monitoring	zh	alias	nuclear-specific zh
+effluent monitoring	effluent-monitoring	en	preferred	preferred en
+流出物监测	effluent-monitoring	zh	preferred	preferred zh
+effluent-monitoring	effluent-monitoring	en	alias	hyphenated form
+discharge monitoring	effluent-monitoring	en	alias	synonym
+排放监测	effluent-monitoring	zh	alias	synonym zh
+atmospheric dispersion	atmospheric-dispersion	en	preferred	preferred en
+大气弥散	atmospheric-dispersion	zh	preferred	preferred zh
+atmospheric-dispersion	atmospheric-dispersion	en	alias	hyphenated form
+atmospheric diffusion	atmospheric-dispersion	en	alias	synonym
+大气扩散	atmospheric-dispersion	zh	alias	synonym zh
+environmental qualification	environmental-qualification	en	preferred	preferred en
+环境鉴定	environmental-qualification	zh	preferred	preferred zh
+EQ	environmental-qualification	abbr	preferred	canonical abbr (IEEE 323)
+environmental-qualification	environmental-qualification	en	alias	hyphenated form
+环境适应性鉴定	environmental-qualification	zh	alias	expanded zh
