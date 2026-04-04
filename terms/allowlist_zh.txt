@@ -1070,6 +1070,13 @@ T2
 环向场线圈
 接触剂量
 
+# --- Batch 66 P1 allowlist sync ---
+水冷球床包层
+铍球
+偏钛酸锂
+偏锆酸锂
+一回路传热
+
 # --- synced from registry (Batch 9-35) ---
 Alfvén连续谱
 D-D反应

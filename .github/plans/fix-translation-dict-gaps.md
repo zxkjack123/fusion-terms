@@ -250,7 +250,7 @@
   - ✅ validate_registry 通过
 - **潜在风险**：`Li2TiO3` / `Li2ZrO3` 中的下标写法不一致——统一用纯 ASCII（Li2TiO3）而非 Unicode 下标
 
-#### Task 3.2: 同步 allowlist 并提交
+#### ✅ Task 3.2: 同步 allowlist 并提交
 
 - **目标**：将 Phase 3 新增术语同步到 allowlist
 - **修改内容**：allowlist_en.txt、allowlist_zh.txt 追加

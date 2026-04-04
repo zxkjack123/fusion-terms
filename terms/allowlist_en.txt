@@ -1007,3 +1007,14 @@ safety
 analysis
 report
 SAR
+
+# --- Batch 66 P1 allowlist sync ---
+WCPB
+cooled
+metatitanate
+metazirconate
+Li2ZrO3
+primary
+heat
+transfer
+transport
