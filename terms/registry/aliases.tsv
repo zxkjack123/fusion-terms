@@ -6454,3 +6454,53 @@ basemat	basemat	en	preferred	preferred en
 drain tank	drain-tank	en	preferred	preferred en
 排放槽	drain-tank	zh	preferred	preferred zh
 drain-tank	drain-tank	en	alias	hyphenated form
+
+# ==== Batch 78: electrical power systems + safety analysis ====
+pulsed power supply	pulsed-power-supply	en	preferred	preferred en
+脉冲电源	pulsed-power-supply	zh	preferred	preferred zh
+PPS	pulsed-power-supply	abbr	preferred	canonical abbr
+pulsed-power-supply	pulsed-power-supply	en	alias	hyphenated form
+
+reactive power compensation	reactive-power-compensation	en	preferred	preferred en
+无功补偿	reactive-power-compensation	zh	preferred	preferred zh
+reactive-power-compensation	reactive-power-compensation	en	alias	hyphenated form
+
+Motor-Generator	motor-generator	en	preferred	preferred en (hyphen is standard)
+电机-发电机组	motor-generator	zh	preferred	preferred zh
+motor-generator	motor-generator	en	alias	IME token-only form
+motor generator	motor-generator	en	alias	unhyphenated form
+M-G	motor-generator	abbr	alias	disambiguated abbr (MG reserved by multigroup)
+
+flywheel energy storage	flywheel-energy-storage	en	preferred	preferred en
+飞轮储能	flywheel-energy-storage	zh	preferred	preferred zh
+FES	flywheel-energy-storage	abbr	preferred	canonical abbr
+flywheel-energy-storage	flywheel-energy-storage	en	alias	hyphenated form
+
+AC/DC converter	ac-dc-converter	en	preferred	preferred en
+交直流变换器	ac-dc-converter	zh	preferred	preferred zh
+ac-dc-converter	ac-dc-converter	en	alias	hyphenated form
+交直流转换器	ac-dc-converter	zh	alias	variant zh
+
+beyond design basis event	beyond-design-basis-event	en	preferred	preferred en
+超设计基准事件	beyond-design-basis-event	zh	preferred	preferred zh
+BDBE	beyond-design-basis-event	abbr	preferred	canonical abbr
+beyond-design-basis-event	beyond-design-basis-event	en	alias	hyphenated form
+beyond design basis accident	beyond-design-basis-event	en	alias	BDBA variant
+
+safety function	safety-function	en	preferred	preferred en
+安全功能	safety-function	zh	preferred	preferred zh
+SF	safety-function	abbr	preferred	canonical abbr
+safety-function	safety-function	en	alias	hyphenated form
+
+safety important component	safety-important-component	en	preferred	preferred en
+安全重要物项	safety-important-component	zh	preferred	preferred zh
+SIC	safety-important-component	abbr	preferred	canonical abbr
+safety-important-component	safety-important-component	en	alias	hyphenated form
+
+postulated initiating event	postulated-initiating-event	en	preferred	preferred en
+假设始发事件	postulated-initiating-event	zh	preferred	preferred zh
+postulated-initiating-event	postulated-initiating-event	en	alias	hyphenated form
+
+confinement system	confinement-system	en	preferred	preferred en
+包容系统	confinement-system	zh	preferred	preferred zh
+confinement-system	confinement-system	en	alias	hyphenated form

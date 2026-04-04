@@ -1510,3 +1510,15 @@ tokamak-building	concept	托卡马克厂房	tokamak building		active	聚变设�
 seismic-isolation	method	隔震	seismic isolation		active	ITER/CFETR 标志性工程设计特征
 basemat	concept	底板	basemat		active	设施基础结构
 drain-tank	system	排放槽	drain tank		active	LOCA 后冷却剂收集安全功能设备
+
+# ==== Batch 78: electrical power systems + safety analysis ====
+pulsed-power-supply	system	脉冲电源	Pulsed Power Supply	PPS	active	ITER PBS 41 脉冲功率子系统
+reactive-power-compensation	method	无功补偿	Reactive Power Compensation		active	大型脉冲装置电网冲击管理
+motor-generator	device	电机-发电机组	Motor-Generator		active	脉冲功率储能/传输设备
+flywheel-energy-storage	system	飞轮储能	Flywheel Energy Storage	FES	active	脉冲功率储能方案
+ac-dc-converter	device	交直流变换器	AC/DC Converter		active	磁体/加热电源链基础功率环节
+beyond-design-basis-event	concept	超设计基准事件	Beyond Design Basis Event	BDBE	active	ITER RPrS/SDR 基本术语框架
+safety-function	concept	安全功能	Safety Function	SF	active	核安全分级基础概念 (IAEA)
+safety-important-component	concept	安全重要物项	Safety Important Component	SIC	active	注意与 SiC/SiC (sic-sic-composite) 区分
+postulated-initiating-event	concept	假设始发事件	Postulated Initiating Event		active	确定论安全分析起点 (IAEA)
+confinement-system	system	包容系统	Confinement System		active	氚包容屏障系统级总称
