@@ -987,3 +987,23 @@ colormap
 interpolation
 rendering
 histogram
+
+# --- Batch 65 P0 allowlist sync ---
+lithium
+ceramic
+pebble
+bed
+in-vessel
+ex-vessel
+reduced
+multiplier
+armor
+armour
+helium
+coolant
+pressurized
+water
+safety
+analysis
+report
+SAR

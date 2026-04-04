@@ -124,7 +124,7 @@
   - ✅ validate_registry 通过
 - **潜在风险**：`SAR` alias 可能与其他缩写冲突——需预检 `grep "^SAR\t" terms/registry/aliases.tsv`
 
-#### Task 1.2: 同步 allowlist 并提交
+#### ✅ Task 1.2: 同步 allowlist 并提交
 
 - **目标**：将 Phase 1 新增术语同步到 allowlist，提交 git
 - **修改内容**：

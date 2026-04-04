@@ -1051,6 +1051,18 @@ T2
 高杂波共振背散射
 高速采集
 
+# --- Batch 65 P0 allowlist sync ---
+陶瓷球床
+锂陶瓷球床
+堆内
+堆外
+低活化
+铍球床
+铍中子倍增剂
+钨铠甲
+氦冷却剂
+加压水
+
 # --- synced from registry (Batch 9-35) ---
 Alfvén连续谱
 D-D反应
