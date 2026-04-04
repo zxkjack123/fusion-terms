@@ -493,7 +493,7 @@
   - ✅ validate_registry 通过无错误
 - **潜在风险**：controlled-area 中的 `controlled` 作为 EN token 词汇通用性高 — 追加到 allowlist 时确认不会引入噪音（IME 专用词汇表场景下可接受）
 
-#### Task 4.2: Batch 77 allowlist 同步
+#### ✅ Task 4.2: Batch 77 allowlist 同步
 
 - **目标**：将 Batch 77 新增术语的缺失 token 追加到 allowlist
 - **修改内容**：

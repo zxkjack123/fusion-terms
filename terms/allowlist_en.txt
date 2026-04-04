@@ -1085,3 +1085,9 @@ TCWS
 ADS
 radiolysis
 additive
+
+# --- Batch 77 Phase 4 allowlist sync ---
+zoning
+decontamination
+basemat
+seismic
