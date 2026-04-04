@@ -5998,3 +5998,55 @@ package manager	package-manager	en	preferred	preferred en
 包管理器	package-manager	zh	preferred	preferred zh
 documentation	documentation	en	preferred	preferred en
 文档	documentation	zh	preferred	preferred zh
+
+# ==== Batch 64: Data Formats & Visualization ====
+HDF5	hdf5	abbr	preferred	canonical abbr
+Hierarchical Data Format 5	hdf5	en	alias	full name
+VTK	vtk	abbr	preferred	canonical abbr
+Visualization Toolkit	vtk	en	alias	full name
+ParaView	paraview	en	preferred	preferred en
+computational mesh	computational-mesh	en	preferred	preferred en
+计算网格	computational-mesh	zh	preferred	preferred zh
+mesh	computational-mesh	en	alias	short form
+网格	computational-mesh	zh	alias	short form
+structured mesh	structured-mesh	en	preferred	preferred en
+结构网格	structured-mesh	zh	preferred	preferred zh
+unstructured mesh	unstructured-mesh	en	preferred	preferred en
+非结构网格	unstructured-mesh	zh	preferred	preferred zh
+contour plot	contour-plot	en	preferred	preferred en
+等值线图	contour-plot	zh	preferred	preferred zh
+colormap	colormap	en	preferred	preferred en
+色标	colormap	zh	preferred	preferred zh
+color map	colormap	en	alias	spaced variant
+interpolation	interpolation	en	preferred	preferred en
+插值	interpolation	zh	preferred	preferred zh
+post-processing	post-processing	en	preferred	preferred en
+后处理	post-processing	zh	preferred	preferred zh
+rendering	rendering	en	preferred	preferred en
+渲染	rendering	zh	preferred	preferred zh
+CSV format	csv-format	en	preferred	preferred en
+CSV格式	csv-format	zh	preferred	preferred zh
+CSV	csv-format	abbr	preferred	canonical abbr
+JSON format	json-format	en	preferred	preferred en
+JSON格式	json-format	zh	preferred	preferred zh
+JSON	json-format	abbr	preferred	canonical abbr
+XML format	xml-format	en	preferred	preferred en
+XML格式	xml-format	zh	preferred	preferred zh
+XML	xml-format	abbr	preferred	canonical abbr
+YAML format	yaml-format	en	preferred	preferred en
+YAML格式	yaml-format	zh	preferred	preferred zh
+YAML	yaml-format	abbr	preferred	canonical abbr
+NetCDF	netcdf	en	preferred	preferred en
+Network Common Data Form	netcdf	en	alias	full name
+NumPy	numpy	en	preferred	preferred en
+SciPy	scipy	en	preferred	preferred en
+Matplotlib	matplotlib	en	preferred	preferred en
+Pandas	pandas	en	preferred	preferred en
+Gnuplot	gnuplot	en	preferred	preferred en
+VisIt	visit	en	preferred	preferred en
+data pipeline	data-pipeline	en	preferred	preferred en
+数据管线	data-pipeline	zh	preferred	preferred zh
+scatter plot	scatter-plot	en	preferred	preferred en
+散点图	scatter-plot	zh	preferred	preferred zh
+histogram	histogram	en	preferred	preferred en
+直方图	histogram	zh	preferred	preferred zh

@@ -624,7 +624,7 @@
 
 ### Phase 10: 数据格式与可视化
 
-#### Task 10.1: 添加数据/可视化术语到三表
+#### ✅ Task 10.1: 添加数据/可视化术语到三表
 
 - **目标**：新增 ~25 个 concept
 
@@ -670,7 +670,7 @@
   - ✅ validate_registry 通过
 - **潜在风险**：`mesh` alias 应归属 `computational-mesh`（通用），Phase 5 的 `tetrahedral-mesh` 不注册 bare `mesh` alias
 
-#### Task 10.2: 同步 allowlist
+#### ✅ Task 10.2: 同步 allowlist
 
 - **目标**：数据/可视化术语追加到 allowlist
 - **修改内容**：allowlist_en.txt、allowlist_zh.txt 追加

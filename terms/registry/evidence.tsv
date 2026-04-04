@@ -1318,3 +1318,30 @@ interpreter	https://en.wikipedia.org/wiki/Interpreter_(computing)			2026-04-04
 shared-library	internal:fusion-terms:domain-expansion	Dynamic linking concept		2026-04-04
 package-manager	internal:fusion-terms:domain-expansion	Software distribution tool		2026-04-04
 documentation	internal:fusion-terms:domain-expansion	Software documentation		2026-04-04
+
+# ==== Batch 64: Data Formats & Visualization ====
+hdf5	https://www.hdfgroup.org/solutions/hdf5/			2026-04-04
+vtk	https://vtk.org/			2026-04-04
+paraview	https://www.paraview.org/			2026-04-04
+computational-mesh	internal:fusion-terms:domain-expansion	General mesh concept		2026-04-04
+structured-mesh	internal:fusion-terms:domain-expansion	Mesh topology type		2026-04-04
+unstructured-mesh	internal:fusion-terms:domain-expansion	Mesh topology type		2026-04-04
+contour-plot	internal:fusion-terms:domain-expansion	Visualization type		2026-04-04
+colormap	internal:fusion-terms:domain-expansion	Visualization concept		2026-04-04
+interpolation	https://en.wikipedia.org/wiki/Interpolation			2026-04-04
+post-processing	internal:fusion-terms:domain-expansion	Simulation workflow step		2026-04-04
+rendering	internal:fusion-terms:domain-expansion	Visualization method		2026-04-04
+csv-format	https://en.wikipedia.org/wiki/Comma-separated_values			2026-04-04
+json-format	https://en.wikipedia.org/wiki/JSON			2026-04-04
+xml-format	https://en.wikipedia.org/wiki/XML			2026-04-04
+yaml-format	https://en.wikipedia.org/wiki/YAML			2026-04-04
+netcdf	https://www.unidata.ucar.edu/software/netcdf/			2026-04-04
+numpy	https://numpy.org/			2026-04-04
+scipy	https://scipy.org/			2026-04-04
+matplotlib	https://matplotlib.org/			2026-04-04
+pandas	https://pandas.pydata.org/			2026-04-04
+gnuplot	http://www.gnuplot.info/			2026-04-04
+visit	https://visit-dav.github.io/visit-website/			2026-04-04
+data-pipeline	internal:fusion-terms:domain-expansion	Data engineering concept		2026-04-04
+scatter-plot	internal:fusion-terms:domain-expansion	Visualization type		2026-04-04
+histogram	https://en.wikipedia.org/wiki/Histogram			2026-04-04

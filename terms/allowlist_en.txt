@@ -967,3 +967,23 @@ logging
 linker
 compiler
 interpreter
+
+# --- Data/Visualization (Batch 64) ---
+HDF5
+VTK
+ParaView
+CSV
+JSON
+XML
+YAML
+NetCDF
+NumPy
+SciPy
+Matplotlib
+Pandas
+Gnuplot
+VisIt
+colormap
+interpolation
+rendering
+histogram

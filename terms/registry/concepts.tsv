@@ -1380,3 +1380,30 @@ interpreter	concept	解释器	interpreter		active	Runtime source code executor
 shared-library	concept	共享库	shared library		active	Dynamically linked library (.so/.dll)
 package-manager	code	包管理器	package manager		active	pip/conda/apt etc
 documentation	concept	文档	documentation		active	Software/project documentation
+
+# ==== Batch 64: Data Formats & Visualization ====
+hdf5	code	HDF5	HDF5	HDF5	active	Hierarchical Data Format 5
+vtk	code	VTK	VTK	VTK	active	Visualization Toolkit
+paraview	code	ParaView	ParaView		active	Open-source visualization application
+computational-mesh	concept	计算网格	computational mesh		active	General mesh for simulation
+structured-mesh	concept	结构网格	structured mesh		active	Regular topology mesh
+unstructured-mesh	concept	非结构网格	unstructured mesh		active	Irregular topology mesh
+contour-plot	concept	等值线图	contour plot		active	Isoline/isosurface visualization
+colormap	concept	色标	colormap		active	Color mapping for visualization
+interpolation	method	插值	interpolation		active	Value estimation between data points
+post-processing	method	后处理	post-processing		active	Analysis after simulation
+rendering	method	渲染	rendering		active	Visual display generation
+csv-format	concept	CSV格式	CSV format	CSV	active	Comma-Separated Values
+json-format	concept	JSON格式	JSON format	JSON	active	JavaScript Object Notation
+xml-format	concept	XML格式	XML format	XML	active	Extensible Markup Language
+yaml-format	concept	YAML格式	YAML format	YAML	active	YAML Ain't Markup Language
+netcdf	code	NetCDF	NetCDF		active	Network Common Data Form
+numpy	code	NumPy	NumPy		active	Python numerical array library
+scipy	code	SciPy	SciPy		active	Python scientific computing library
+matplotlib	code	Matplotlib	Matplotlib		active	Python plotting library
+pandas	code	Pandas	Pandas		active	Python data manipulation library
+gnuplot	code	Gnuplot	Gnuplot		active	Command-line plotting tool
+visit	code	VisIt	VisIt		active	LLNL visualization tool
+data-pipeline	concept	数据管线	data pipeline		active	Automated data processing workflow
+scatter-plot	concept	散点图	scatter plot		active	Point-based data visualization
+histogram	concept	直方图	histogram		active	Frequency distribution chart
