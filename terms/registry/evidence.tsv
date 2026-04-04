@@ -1377,3 +1377,6 @@ lipac	internal:registry-gap-review:batch3	IFMIF prototype accelerator	copilot	20
 eveda	internal:registry-gap-review:batch3	IFMIF project phase	copilot	2026-04-04
 lithium-loop	internal:registry-gap-review:batch3	Liquid lithium transport/purification system	copilot	2026-04-04
 liquid-lithium-purification	internal:registry-gap-review:batch3	ELTL/IFMIF key process	copilot	2026-04-04
+water-coolant	internal:registry-gap-review:batch3	Blanket/divertor coolant (counterpart to helium-coolant)	copilot	2026-04-04
+coolant-purification	internal:registry-gap-review:batch3	Cooling system auxiliary process	copilot	2026-04-04
+tritium-carrier	internal:registry-gap-review:batch3	PbLi tritium transport role in blanket	copilot	2026-04-04

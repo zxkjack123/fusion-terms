@@ -6225,3 +6225,17 @@ lithium-loop	lithium-loop	en	alias	hyphenated form
 liquid lithium purification	liquid-lithium-purification	en	preferred	preferred en
 液态锂纯化	liquid-lithium-purification	zh	preferred	preferred zh
 liquid-lithium-purification	liquid-lithium-purification	en	alias	hyphenated form
+
+# ==== Batch 70: coolant + tritium supplement ====
+water coolant	water-coolant	en	preferred	preferred en
+水冷却剂	water-coolant	zh	preferred	preferred zh
+water-coolant	water-coolant	en	alias	hyphenated form
+水冷剂	water-coolant	zh	alias	short form
+
+coolant purification	coolant-purification	en	preferred	preferred en
+冷却剂纯化	coolant-purification	zh	preferred	preferred zh
+coolant-purification	coolant-purification	en	alias	hyphenated form
+
+tritium carrier	tritium-carrier	en	preferred	preferred en
+氚载体	tritium-carrier	zh	preferred	preferred zh
+tritium-carrier	tritium-carrier	en	alias	hyphenated form

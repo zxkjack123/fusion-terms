@@ -1447,3 +1447,8 @@ lipac	device	线性IFMIF原型加速器	Linear IFMIF Prototype Accelerator	LIPAc
 eveda	concept	工程验证与工程设计活动	Engineering Validation and Engineering Design Activities	EVEDA	active	IFMIF 项目阶段
 lithium-loop	system	锂回路	lithium loop		active	液态锂输运/净化系统
 liquid-lithium-purification	concept	液态锂纯化	liquid lithium purification		active	IFMIF/ELTL 关键工艺
+
+# ==== Batch 70: coolant + tritium supplement ====
+water-coolant	concept	水冷却剂	water coolant		active	包层/偏滤器冷却工质（与 helium-coolant 对应）
+coolant-purification	concept	冷却剂纯化	coolant purification		active	冷却系统配套工艺
+tritium-carrier	concept	氚载体	tritium carrier		active	PbLi 等在包层中承担的氚输运角色
