@@ -6418,3 +6418,39 @@ atmosphere-detritiation-system	atmosphere-detritiation-system	en	alias	hyphenate
 water radiolysis	water-radiolysis	en	preferred	preferred en
 水辐解	water-radiolysis	zh	preferred	preferred zh
 water-radiolysis	water-radiolysis	en	alias	hyphenated form
+
+# ==== Batch 77: radiation protection + civil seismic ====
+radiation zoning	radiation-zoning	en	preferred	preferred en
+辐射分区	radiation-zoning	zh	preferred	preferred zh
+radiation-zoning	radiation-zoning	en	alias	hyphenated form
+
+controlled area	controlled-area	en	preferred	preferred en
+控制区	controlled-area	zh	preferred	preferred zh
+controlled-area	controlled-area	en	alias	hyphenated form
+放射性控制区	controlled-area	zh	alias	formal zh variant
+
+decontamination	decontamination	en	preferred	preferred en
+去污	decontamination	zh	preferred	preferred zh
+去除污染	decontamination	zh	alias	expanded zh form
+
+clearance level	clearance-level	en	preferred	preferred en
+清洁解控水平	clearance-level	zh	preferred	preferred zh
+clearance-level	clearance-level	en	alias	hyphenated form
+解控水平	clearance-level	zh	alias	short zh form
+
+tokamak building	tokamak-building	en	preferred	preferred en
+托卡马克厂房	tokamak-building	zh	preferred	preferred zh
+tokamak-building	tokamak-building	en	alias	hyphenated form
+托卡马克主厂房	tokamak-building	zh	alias	formal zh with 主
+
+seismic isolation	seismic-isolation	en	preferred	preferred en
+隔震	seismic-isolation	zh	preferred	preferred zh
+seismic-isolation	seismic-isolation	en	alias	hyphenated form
+基础隔震	seismic-isolation	zh	alias	full zh form
+
+basemat	basemat	en	preferred	preferred en
+底板	basemat	zh	preferred	preferred zh
+
+drain tank	drain-tank	en	preferred	preferred en
+排放槽	drain-tank	zh	preferred	preferred zh
+drain-tank	drain-tank	en	alias	hyphenated form

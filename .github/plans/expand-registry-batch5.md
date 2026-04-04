@@ -383,7 +383,7 @@
 
 ### Phase 4: 辐射防护 + 土建抗震（P2 — Batch 77, 8 terms）
 
-#### Task 4.1: 添加 8 个 P2 概念到三表
+#### ✅ Task 4.1: 添加 8 个 P2 概念到三表
 
 - **目标**：补全辐射防护与去污（radiation-zoning / controlled-area / decontamination / clearance-level）和土建/抗震（tokamak-building / seismic-isolation / basemat / drain-tank）
 - **修改内容**：

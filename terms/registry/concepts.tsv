@@ -1500,3 +1500,13 @@ additive-manufacturing	method	增材制造	additive manufacturing	AM	active	聚�
 tokamak-cooling-water-system	system	托卡马克冷却水系统	tokamak cooling water system	TCWS	active	ITER PBS 26 系统级名称
 atmosphere-detritiation-system	system	厂房去氚系统	atmosphere detritiation system	ADS	active	三重氚包容关键安全系统；聚变语境，非 accelerator-driven system
 water-radiolysis	concept	水辐解	water radiolysis		active	冷却剂氢浓度与安全分析关键过程
+
+# ==== Batch 77: radiation protection + civil seismic ====
+radiation-zoning	method	辐射分区	radiation zoning		active	设施屏蔽设计与通道布局基础
+controlled-area	concept	控制区	controlled area		active	辐射防护空间分区概念
+decontamination	method	去污	decontamination		active	退役和维护核心操作
+clearance-level	limit	清洁解控水平	clearance level		active	废物分类与材料回收判据
+tokamak-building	concept	托卡马克厂房	tokamak building		active	聚变设施主体建筑
+seismic-isolation	method	隔震	seismic isolation		active	ITER/CFETR 标志性工程设计特征
+basemat	concept	底板	basemat		active	设施基础结构
+drain-tank	system	排放槽	drain tank		active	LOCA 后冷却剂收集安全功能设备
