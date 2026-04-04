@@ -421,7 +421,7 @@
   - ✅ `grep -P '^J-integral\t' terms/registry/aliases.tsv | awk -F'\t' '{print $2}'` 输出 `j-integral`（大写 preferred 映射到小写 concept_id）
 - **潜在风险**：`ratchet` 作为 alias 可能在通用英文中也指棘轮机构本体而非"棘轮效应"→ 但在结构评估语境中无歧义；`scintillator` alias 可能误覆盖作为材料名的使用 → 聚变文档中闪烁体通常指整个探测装置，可接受
 
-#### Task 3.2: Batch 86 allowlist 同步
+#### ✅ Task 3.2: Batch 86 allowlist 同步
 
 - **目标**：将 Batch 86 所有新增 EN token / ZH 术语同步到 allowlist
 - **修改内容**：

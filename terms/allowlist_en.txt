@@ -1231,3 +1231,24 @@ operating-license
 operating-licence
 configuration-management
 CM
+
+# --- Batch 86 Phase 3 allowlist sync ---
+ionization-chamber
+ionisation-chamber
+fission-chamber
+scintillation-detector
+scintillator
+area-radiation-monitor
+ARM
+thermoluminescent-dosimeter
+TLD
+creep-fatigue-interaction
+creep-fatigue
+j-integral
+J-integral
+ratcheting
+ratchetting
+ratchet
+flow-accelerated-corrosion
+FAC
+erosion-corrosion
