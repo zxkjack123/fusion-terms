@@ -139,7 +139,7 @@
 
 > **依赖**：Phase 1 完成后执行（避免 alias 冲突检查遗漏新增 concept）
 
-#### Task 2.1: 添加/修改 alias 行 + 修复 nb3sn 缺失 preferred_zh
+#### ✅ Task 2.1: 添加/修改 alias 行 + 修复 nb3sn 缺失 preferred_zh
 
 - **目标**：修复已有 concept 上的 alias 缺失和 deprecated 状态问题；修复 `nb3sn` concepts.tsv 中 preferred_zh 为空导致 en2zh 缺失
 - **修改内容**：

@@ -100,6 +100,14 @@ pressurized water	pressurized-water	en	preferred
 safety analysis report	safety-analysis-report	en	preferred
 安全分析报告	safety-analysis-report	zh	preferred
 SAR	safety-analysis-report	abbr	preferred
+plasma disruption	disruption	en	alias	Common search form
+plasma facing component	plasma-facing-component	en	alias	No-hyphen query form
+loss of coolant	loss-of-coolant-accident	en	alias	Short form
+loss of coolant accident	loss-of-coolant-accident	en	alias	Fully dehyphenated form
+失冷	loss-of-coolant-accident	zh	alias	口语短形式
+中心螺线管	central-solenoid	zh	alias	用户常用变体（preferred 保持 中心螺管）
+中子壁负载	neutron-wall-loading	zh	alias	用户常用变体（preferred 保持 中子壁负荷）
+contact dose	contact-dose-rate	en	alias	Short form without rate
 
 最终安全分析报告	final-safety-analysis-report	zh	preferred	preferred zh
 Final Safety Analysis Report	final-safety-analysis-report	en	preferred	preferred en (phrase)
@@ -3345,7 +3353,7 @@ REBCO磁带	rebco	zh	forbidden	误译tape：正确为 REBCO带材
 焚烧控制	burn-control	zh	forbidden	误译burn：聚变应为 燃烧控制
 容量系数	capacity-factor	zh	forbidden	误译factor：正确为 容量因子
 接触辐射率	contact-dose-rate	zh	forbidden	误译dose rate：正确为 接触剂量率
-接触剂量	contact-dose-rate	zh	deprecated	缺字'率'：应为 接触剂量率
+接触剂量	contact-dose-rate	zh	alias	用户高频查询短形式（升级自deprecated）
 冷冻蒸馏	cryogenic-distillation	zh	forbidden	误译cryogenic：正确为 低温蒸馏
 低温颗粒	cryogenic-pellet	zh	forbidden	误译pellet：正确为 低温弹丸
 冷冻弹丸	cryogenic-pellet	zh	forbidden	误译cryogenic：正确为 低温弹丸
@@ -3464,7 +3472,7 @@ L到H转变	l-h-transition	zh	deprecated	非标准：应为 L-H转换
 磁体供电线	magnet-feeder	zh	forbidden	误译feeder：正确为 磁体馈线
 超导关节	superconducting-joint	zh	forbidden	误译joint：正确为 超导接头
 超导接合	superconducting-joint	zh	forbidden	误译joint：正确为 超导接头
-环向场线圈	toroidal-field-coil	zh	deprecated	非标准：聚变惯用 纵场线圈
+环向场线圈	toroidal-field-coil	zh	alias	用户高频查询形式（升级自deprecated）
 工厂布局	plant-layout	zh	forbidden	误译plant：聚变应为 电站布局
 工厂寿命	plant-lifetime	zh	forbidden	误译plant：聚变应为 电站寿命
 蒸汽发电机	steam-generator	zh	forbidden	误译generator：正确为 蒸汽发生器
@@ -3630,7 +3638,7 @@ ExB漂移	exb-drift	zh	deprecated	格式非标准：应为 E×B漂移
 氚盘存	tritium-inventory	zh	forbidden	误译inventory：正确为 氚存量
 繁殖层	breeding-blanket	zh	forbidden	误译breeding：正确为 产氚包层
 培育包层	breeding-blanket	zh	forbidden	误译breeding：正确为 产氚包层
-增殖包层	breeding-blanket	zh	deprecated	非标准：应为 产氚包层
+增殖包层	breeding-blanket	zh	alias	用户高频查询形式（升级自deprecated）
 # ==== Batch 4G: fusion schemes & advanced concepts ====
 惯性限制聚变	inertial-confinement-fusion	zh	forbidden	误译confinement：正确为 惯性约束聚变
 惯性封闭聚变	inertial-confinement-fusion	zh	forbidden	误译confinement：正确为 惯性约束聚变

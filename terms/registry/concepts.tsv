@@ -13,7 +13,7 @@ beta-n	metric		beta_N		active	Normalized beta (ASCII preferred here; can alias t
 tau-e	metric		tau_E		active	Energy confinement time (ASCII preferred here; can alias to τ_E)
 tungsten	material		w	W	active	Material / element (token preferred is W)
 beryllium	material		Be	Be	active	Material / element
-nb3sn	material		Nb3Sn		active	Superconductor (Nb3Sn)
+nb3sn	material	铌三锡	Nb3Sn		active	Superconductor (Nb3Sn)
 
 # ---- Tritium fuel cycle systems (abbrev expansions)
 tokamak-exhaust-processing-system	system	托卡马克排气处理系统	tokamak exhaust processing system		active	Acronym expansion: TEP
