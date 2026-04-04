@@ -1570,3 +1570,15 @@ interlock-system	system	联锁系统	Interlock System		active	防止误操作的
 programmable-logic-controller	device	可编程逻辑控制器	Programmable Logic Controller	PLC	active	工业控制基础硬件单元
 human-machine-interface	device	人机界面	Human-Machine Interface	HMI	active	操作员与控制系统交互终端
 plant-control-system	system	全厂控制系统	Plant Control System		active	ITER CODAC 架构下的全厂级控制系统
+
+# ==== Batch 83: structural integrity assessment + power exhaust & PMI ====
+fatigue-analysis	method	疲劳分析	Fatigue Analysis		active	结构部件疲劳寿命评估
+fracture-mechanics	method	断裂力学	Fracture Mechanics		active	含裂纹结构安全性分析方法
+aging-management	method	老化管理	Aging Management		active	长寿命核设施结构/设备老化监控与维护策略
+seismic-qualification	method	抗震鉴定	Seismic Qualification		active	设备/结构在地震载荷下功能完好性验证
+pre-service-inspection	method	役前检查	Pre-Service Inspection		active	运行前建立结构基线的无损检测 (ASME XI)
+structural-integrity	concept	结构完整性	Structural Integrity		active	结构在所有工况下保持安全功能的能力
+power-exhaust	concept	功率排出	Power Exhaust		active	将等离子体热功率安全导出至偏滤器/壁的过程
+peak-heat-flux	metric	峰值热流密度	Peak Heat Flux		active	面向等离子体部件表面承受的最大热流
+radiative-divertor	concept	辐射偏滤器	Radiative Divertor		active	通过杂质辐射降低偏滤器靶板热载荷的运行模式
+plasma-material-interaction	concept	等离子体-材料互作	Plasma-Material Coupling		active	等离子体与面向等离子体材料表面的物理/化学相互作用（PSI/PMI 缩写已占用）

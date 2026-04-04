@@ -1478,3 +1478,13 @@ interlock-system	internal:registry-gap-review:batch7	Hardware/software protectio
 programmable-logic-controller	internal:registry-gap-review:batch7	Basic industrial control hardware unit	copilot	2026-04-04
 human-machine-interface	internal:registry-gap-review:batch7	Operator interaction terminal for control systems	copilot	2026-04-04
 plant-control-system	internal:registry-gap-review:batch7	Plant-wide control system under ITER CODAC architecture	copilot	2026-04-04
+fatigue-analysis	internal:registry-gap-review:batch7	Fatigue life assessment of structural components (RCC-MR/SDC-IC)	copilot	2026-04-04
+fracture-mechanics	internal:registry-gap-review:batch7	Safety analysis of cracked structures under nuclear loading	copilot	2026-04-04
+aging-management	internal:registry-gap-review:batch7	Long-life nuclear facility structural/equipment aging strategy (IAEA NS-G-2.12)	copilot	2026-04-04
+seismic-qualification	internal:registry-gap-review:batch7	Equipment/structure functional integrity verification under seismic loads	copilot	2026-04-04
+pre-service-inspection	internal:registry-gap-review:batch7	Baseline NDE before operation per ASME Section XI	copilot	2026-04-04
+structural-integrity	internal:registry-gap-review:batch7	Ability of structures to maintain safety function under all conditions	copilot	2026-04-04
+power-exhaust	internal:registry-gap-review:batch7	Safe removal of plasma thermal power to divertor/wall	copilot	2026-04-04
+peak-heat-flux	internal:registry-gap-review:batch7	Maximum heat flux on plasma-facing component surfaces	copilot	2026-04-04
+radiative-divertor	internal:registry-gap-review:batch7	Operating regime using impurity radiation to reduce target plate heat load	copilot	2026-04-04
+plasma-material-interaction	internal:registry-gap-review:batch7	Physical/chemical interaction between plasma and plasma-facing material surfaces	copilot	2026-04-04

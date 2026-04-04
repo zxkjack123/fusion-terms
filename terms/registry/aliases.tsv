@@ -6668,3 +6668,44 @@ plant control system	plant-control-system	en	preferred	preferred en
 全厂控制系统	plant-control-system	zh	preferred	preferred zh
 plant-control-system	plant-control-system	en	alias	hyphenated form
 plant-wide control system	plant-control-system	en	alias	expanded form
+
+# ---- Batch 83 aliases ----
+fatigue analysis	fatigue-analysis	en	preferred	preferred en
+疲劳分析	fatigue-analysis	zh	preferred	preferred zh
+fatigue-analysis	fatigue-analysis	en	alias	hyphenated form
+fracture mechanics	fracture-mechanics	en	preferred	preferred en
+断裂力学	fracture-mechanics	zh	preferred	preferred zh
+fracture-mechanics	fracture-mechanics	en	alias	hyphenated form
+破裂力学	fracture-mechanics	zh	alias	variant zh
+aging management	aging-management	en	preferred	preferred en
+老化管理	aging-management	zh	preferred	preferred zh
+aging-management	aging-management	en	alias	hyphenated form
+ageing management	aging-management	en	alias	British spelling
+seismic qualification	seismic-qualification	en	preferred	preferred en
+抗震鉴定	seismic-qualification	zh	preferred	preferred zh
+seismic-qualification	seismic-qualification	en	alias	hyphenated form
+pre-service inspection	pre-service-inspection	en	preferred	preferred en
+役前检查	pre-service-inspection	zh	preferred	preferred zh
+pre-service-inspection	pre-service-inspection	en	alias	hyphenated form
+service baseline inspection	pre-service-inspection	en	alias	expanded form
+structural integrity	structural-integrity	en	preferred	preferred en
+结构完整性	structural-integrity	zh	preferred	preferred zh
+structural-integrity	structural-integrity	en	alias	hyphenated form
+power exhaust	power-exhaust	en	preferred	preferred en
+功率排出	power-exhaust	zh	preferred	preferred zh
+power-exhaust	power-exhaust	en	alias	hyphenated form
+功率排除	power-exhaust	zh	alias	variant zh
+peak heat flux	peak-heat-flux	en	preferred	preferred en
+峰值热流密度	peak-heat-flux	zh	preferred	preferred zh
+peak-heat-flux	peak-heat-flux	en	alias	hyphenated form
+峰值热流	peak-heat-flux	zh	alias	short zh
+radiative divertor	radiative-divertor	en	preferred	preferred en
+辐射偏滤器	radiative-divertor	zh	preferred	preferred zh
+radiative-divertor	radiative-divertor	en	alias	hyphenated form
+辐射型偏滤器	radiative-divertor	zh	alias	variant zh
+plasma-material coupling	plasma-material-interaction	en	preferred	preferred en
+等离子体-材料互作	plasma-material-interaction	zh	preferred	preferred zh
+plasma-material-coupling	plasma-material-interaction	en	alias	hyphenated form
+plasma-material interaction process	plasma-material-interaction	en	alias	expanded form
+plasma-wall coupling	plasma-material-interaction	en	alias	PWI-like variant
+等离子体-壁耦合	plasma-material-interaction	zh	alias	PWI-like zh
