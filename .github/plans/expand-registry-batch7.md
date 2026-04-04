@@ -171,7 +171,7 @@
   - ✅ 10 个新 concept_id 均可在 concepts.tsv 中通过 `awk -F'\t'` 精确匹配找到
 - **潜在风险**：SA 缩写若已被其他概念占用（如 Sensitivity Analysis），precheck 会发现；若冲突则改用 full form 或 `sev-acc` 缩写
 
-#### Task 1.2: Batch 81 allowlist 同步
+#### ✅ Task 1.2: Batch 81 allowlist 同步
 
 - **目标**：将 Batch 81 所有新增 EN token / ZH 术语同步到 allowlist（如尚未存在）
 - **修改内容**：

@@ -1140,3 +1140,22 @@ RCC-MR
 nuclear-quality-assurance
 NQA
 irradiation-test
+
+# --- Batch 81 Phase 1 allowlist sync ---
+event-tree
+ET
+event-tree-analysis
+fault-tree
+FT
+fault-tree-analysis
+severe-accident
+SA
+common-cause-failure
+CCF
+cliff-edge-effect
+off-normal-event
+safety-margin
+committed-dose
+committed-effective-dose
+personal-dosimeter
+occupational-radiation-exposure
