@@ -5755,3 +5755,51 @@ geometry simplification	cad-simplification	en	alias	synonym
 conformal mesh	conformal-mesh	en	preferred	preferred en
 适体网格	conformal-mesh	zh	preferred	preferred zh
 body-fitted mesh	conformal-mesh	en	alias	synonym
+
+# ==== Batch 60: Radiation Protection & Dosimetry ====
+ambient dose equivalent	ambient-dose-equivalent	en	preferred	preferred en
+周围剂量当量	ambient-dose-equivalent	zh	preferred	preferred zh
+H*(10)	ambient-dose-equivalent	en	alias	notation
+dose conversion coefficient	dose-conversion-coefficient	en	preferred	preferred en
+剂量转换系数	dose-conversion-coefficient	zh	preferred	preferred zh
+DCC	dose-conversion-coefficient	abbr	preferred	canonical abbr
+ICRP	icrp	abbr	preferred	canonical abbr
+International Commission on Radiological Protection	icrp	en	alias	full name
+quality factor	quality-factor	en	preferred	preferred en
+品质因子	quality-factor	zh	preferred	preferred zh
+organ dose	organ-dose	en	preferred	preferred en
+器官剂量	organ-dose	zh	preferred	preferred zh
+committed effective dose	committed-effective-dose	en	preferred	preferred en
+待积有效剂量	committed-effective-dose	zh	preferred	preferred zh
+annual limit of intake	annual-limit-of-intake	en	preferred	preferred en
+年摄入量限值	annual-limit-of-intake	zh	preferred	preferred zh
+ALI	annual-limit-of-intake	abbr	preferred	canonical abbr
+absorbed dose	absorbed-dose	en	preferred	preferred en
+吸收剂量	absorbed-dose	zh	preferred	preferred zh
+fluence	fluence	en	preferred	preferred en
+注量	fluence	zh	preferred	preferred zh
+particle fluence	fluence	en	alias	expanded form
+linear energy transfer	linear-energy-transfer	en	preferred	preferred en
+线性能量传递	linear-energy-transfer	zh	preferred	preferred zh
+LET	linear-energy-transfer	abbr	preferred	canonical abbr
+biological shielding	biological-shielding	en	preferred	preferred en
+生物屏蔽体	biological-shielding	zh	preferred	preferred zh
+radiation weighting factor	radiation-weighting-factor	en	preferred	preferred en
+辐射权重因子	radiation-weighting-factor	zh	preferred	preferred zh
+tissue weighting factor	tissue-weighting-factor	en	preferred	preferred en
+组织权重因子	tissue-weighting-factor	zh	preferred	preferred zh
+personal dose equivalent	personal-dose-equivalent	en	preferred	preferred en
+个人剂量当量	personal-dose-equivalent	zh	preferred	preferred zh
+Hp(10)	personal-dose-equivalent	en	alias	notation
+collective dose	collective-dose	en	preferred	preferred en
+集体剂量	collective-dose	zh	preferred	preferred zh
+specific activity	specific-activity	en	preferred	preferred en
+比活度	specific-activity	zh	preferred	preferred zh
+half-life	half-life	en	preferred	preferred en
+半衰期	half-life	zh	preferred	preferred zh
+shielding analysis	shielding-analysis	en	preferred	preferred en
+屏蔽分析	shielding-analysis	zh	preferred	preferred zh
+streaming	streaming	en	preferred	preferred en
+辐射流窜	streaming	zh	preferred	preferred zh
+buildup factor	buildup-factor	en	preferred	preferred en
+累积因子	buildup-factor	zh	preferred	preferred zh

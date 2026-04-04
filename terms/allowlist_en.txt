@@ -912,3 +912,11 @@ merging
 graveyard
 watertight
 skyshine
+
+# --- Radiation Protection (Batch 60) ---
+ICRP
+DCC
+ALI
+LET
+fluence
+buildup

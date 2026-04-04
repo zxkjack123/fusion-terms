@@ -372,7 +372,7 @@
 
 ### Phase 6: 辐射防护与剂量学
 
-#### Task 6.1: 添加辐射防护术语到三表
+#### ✅ Task 6.1: 添加辐射防护术语到三表
 
 - **目标**：新增 ~30 个 concept。已有 `contact-dose-rate`、`clearance-index` 需跳过。
 
@@ -424,7 +424,7 @@
   - ✅ validate_registry 通过
 - **潜在风险**：`quality-factor` 与 Phase 1 `figure-of-merit` 同为"品质X"但含义完全不同——notes 中严格区分；`H*(10)` 含特殊字符
 
-#### Task 6.2: 同步 allowlist
+#### ✅ Task 6.2: 同步 allowlist
 
 - **目标**：辐射防护术语追加到 allowlist
 - **修改内容**：allowlist_en.txt、allowlist_zh.txt 追加

@@ -1269,3 +1269,25 @@ dagmc	code	DAGMC	DAGMC		active	Direct Accelerated Geometry Monte Carlo
 paramak	code	Paramak	Paramak		active	Parametric fusion geometry generator
 cad-simplification	method	CAD简化	CAD simplification		active	Removing detail for MC/FEM
 conformal-mesh	concept	适体网格	conformal mesh		active	Body-fitted unstructured mesh
+
+# ==== Batch 60: Radiation Protection & Dosimetry ====
+ambient-dose-equivalent	metric	周围剂量当量	ambient dose equivalent		active	H*(10) operational dose quantity
+dose-conversion-coefficient	metric	剂量转换系数	dose conversion coefficient	DCC	active	Fluence-to-dose conversion factor
+icrp	organization	ICRP	ICRP	ICRP	active	International Commission on Radiological Protection
+quality-factor	metric	品质因子	quality factor		active	Radiation quality factor Q (not circuit Q)
+organ-dose	metric	器官剂量	organ dose		active	Absorbed dose to specific organ
+committed-effective-dose	metric	待积有效剂量	committed effective dose		active	Integrated effective dose from internal exposure
+annual-limit-of-intake	limit	年摄入量限值	annual limit of intake	ALI	active	Max annual intake of radionuclide
+absorbed-dose	metric	吸收剂量	absorbed dose		active	Energy deposited per unit mass (Gy)
+fluence	metric	注量	fluence		active	Particle flux time-integral (particles/cm²)
+linear-energy-transfer	metric	线性能量传递	linear energy transfer	LET	active	Energy deposited per unit path length
+biological-shielding	concept	生物屏蔽体	biological shielding		active	Shielding to protect personnel
+radiation-weighting-factor	metric	辐射权重因子	radiation weighting factor		active	w_R factor for equivalent dose
+tissue-weighting-factor	metric	组织权重因子	tissue weighting factor		active	w_T factor for effective dose
+personal-dose-equivalent	metric	个人剂量当量	personal dose equivalent		active	Hp(d) operational dose quantity
+collective-dose	metric	集体剂量	collective dose		active	Population dose (person-Sv)
+specific-activity	metric	比活度	specific activity		active	Activity per unit mass (Bq/kg)
+half-life	metric	半衰期	half-life		active	Radioactive decay half-life
+shielding-analysis	method	屏蔽分析	shielding analysis		active	Radiation shielding calculation
+streaming	concept	辐射流窜	streaming		active	Radiation streaming through ducts/gaps
+buildup-factor	metric	累积因子	buildup factor		active	Ratio of total to uncollided dose

@@ -1207,3 +1207,25 @@ dagmc	https://svalinn.github.io/DAGMC/			2026-04-04
 paramak	https://github.com/fusion-energy/paramak			2026-04-04
 cad-simplification	internal:fusion-terms:domain-expansion	Defeaturing for MC/FEM		2026-04-04
 conformal-mesh	internal:fusion-terms:domain-expansion	Body-fitted unstructured mesh		2026-04-04
+
+# ==== Batch 60: Radiation Protection & Dosimetry ====
+ambient-dose-equivalent	https://www.icrp.org/publication.asp?id=icrp%20publication%20116			2026-04-04
+dose-conversion-coefficient	internal:fusion-terms:domain-expansion	Dose conversion methodology		2026-04-04
+icrp	https://www.icrp.org/			2026-04-04
+quality-factor	internal:fusion-terms:domain-expansion	Radiation quality factor		2026-04-04
+organ-dose	internal:fusion-terms:domain-expansion	Organ-specific dosimetry		2026-04-04
+committed-effective-dose	internal:fusion-terms:domain-expansion	Internal exposure dose		2026-04-04
+annual-limit-of-intake	internal:fusion-terms:domain-expansion	Radiation protection limit		2026-04-04
+absorbed-dose	https://en.wikipedia.org/wiki/Absorbed_dose			2026-04-04
+fluence	https://en.wikipedia.org/wiki/Fluence			2026-04-04
+linear-energy-transfer	https://en.wikipedia.org/wiki/Linear_energy_transfer			2026-04-04
+biological-shielding	internal:fusion-terms:domain-expansion	Personnel shielding concept		2026-04-04
+radiation-weighting-factor	internal:fusion-terms:domain-expansion	ICRP weighting factor w_R		2026-04-04
+tissue-weighting-factor	internal:fusion-terms:domain-expansion	ICRP weighting factor w_T		2026-04-04
+personal-dose-equivalent	internal:fusion-terms:domain-expansion	Operational dose quantity Hp(d)		2026-04-04
+collective-dose	internal:fusion-terms:domain-expansion	Population-level dose metric		2026-04-04
+specific-activity	https://en.wikipedia.org/wiki/Specific_activity			2026-04-04
+half-life	https://en.wikipedia.org/wiki/Half-life			2026-04-04
+shielding-analysis	internal:fusion-terms:domain-expansion	Radiation shielding methodology		2026-04-04
+streaming	internal:fusion-terms:domain-expansion	Duct/gap radiation streaming		2026-04-04
+buildup-factor	internal:fusion-terms:domain-expansion	Shielding buildup factor		2026-04-04
