@@ -1025,3 +1025,10 @@ metasilicate
 FLiBe
 flibe
 breeder
+
+# --- Batch 69 Phase 2 allowlist sync ---
+MMS
+SMS
+ELTL
+LIPAc
+EVEDA

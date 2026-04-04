@@ -295,7 +295,7 @@
   - ✅ validate_registry 通过无 ERROR
 - **潜在风险**：ELTL preferred_zh 含混合文字 "EVEDA锂试验回路"——确认 `lang=zh` 对含 ASCII 的中文术语名无校验限制（沿用 IFMIF 先例 "国际聚变材料辐照装置" 中无 ASCII 混入，但 `线性IFMIF原型加速器` 同样混合 ASCII，属于已有模式）
 
-#### Task 2.2: 同步 Phase 2 新增术语到 allowlists
+#### ✅ Task 2.2: 同步 Phase 2 新增术语到 allowlists
 
 - **目标**：确保 Phase 2 新增的 EN/ZH 术语出现在 allowlist 中
 - **修改内容**：
