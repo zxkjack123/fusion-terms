@@ -1113,3 +1113,31 @@ radiation-protection	concept	辐射防护	radiation protection		active	Radiation
 conceptual-design	method	概念设计	conceptual design		active	Conceptual design phase
 structural-design	method	结构设计	structural design		active	Structural design
 computational-method	method	计算方法	computational method		active	Computational/numerical method
+
+# ==== Batch 55: General Scientific & Engineering Methodology ====
+benchmark	method	基准测试	benchmark		active	General V&V methodology; code-to-experiment comparison
+validation	method	验证	validation		active	V&V: proving model agrees with experiment
+verification	method	校核	verification		active	V&V: proving code correctly implements math model
+sensitivity-analysis	method	灵敏度分析	sensitivity analysis		active	Quantifying output variation from input perturbation
+parametric-study	method	参数化研究	parametric study		active	Systematic parameter sweep (distinct from parametric-instability)
+best-estimate	method	最佳估算	best estimate		active	Realistic calculation without conservative margins
+conservative-estimate	method	保守估算	conservative estimate		active	Calculation with deliberate safety margins
+design-margin	metric	设计裕度	design margin		active	Gap between design value and limiting threshold
+code-to-code-comparison	method	程序间比较	code-to-code comparison		active	Comparing results from different codes on the same problem
+figure-of-merit	metric	品质因数	figure of merit	FOM	active	Single scalar performance indicator
+error-propagation	method	误差传播	error propagation		active	Propagation of uncertainties through a model
+convergence-criterion	concept	收敛准则	convergence criterion		active	Threshold for iterative solution convergence
+mesh-independence	method	网格无关性	mesh independence		active	Also called grid convergence study
+dimensional-analysis	method	量纲分析	dimensional analysis		active	Buckingham Pi theorem and dimensionless groups
+empirical-correlation	method	经验关联式	empirical correlation		active	Data-fitted engineering formula
+analytical-solution	concept	解析解	analytical solution		active	Closed-form mathematical solution
+numerical-solution	concept	数值解	numerical solution		active	Discrete approximation to governing equations
+boundary-condition	concept	边界条件	boundary condition	BC	active	Constraint on solution at domain boundary
+initial-condition	concept	初始条件	initial condition	IC	active	Solution state at t=0
+transient-analysis	method	瞬态分析	transient analysis		active	Time-dependent simulation
+coupled-analysis	method	耦合分析	coupled analysis		active	Multi-physics coupled simulation
+multiphysics	concept	多物理场	multiphysics		active	Simultaneous solution of multiple physics domains
+response-surface	method	响应面	response surface	RSM	active	Response surface methodology for optimization
+latin-hypercube-sampling	method	拉丁超立方抽样	Latin hypercube sampling	LHS	active	Stratified sampling method for UQ
+monte-carlo-sampling	method	蒙特卡罗抽样	Monte Carlo sampling		active	Random sampling for statistical estimation
+goodness-of-fit	metric	拟合优度	goodness of fit		active	Statistical measure of model-data agreement

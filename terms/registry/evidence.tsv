@@ -1051,3 +1051,31 @@ radiation-protection	internal:translation:compound-vocabulary	High-frequency com
 conceptual-design	internal:translation:compound-vocabulary	High-frequency compound term for zh→en search translation		2026-03-29
 structural-design	internal:translation:compound-vocabulary	High-frequency compound term for zh→en search translation		2026-03-29
 computational-method	internal:translation:compound-vocabulary	High-frequency compound term for zh→en search translation		2026-03-29
+
+# ==== Batch 55: General Scientific & Engineering Methodology ====
+benchmark	https://en.wikipedia.org/wiki/Benchmark_(computing)			2026-04-04
+validation	https://en.wikipedia.org/wiki/Verification_and_validation			2026-04-04
+verification	https://en.wikipedia.org/wiki/Verification_and_validation			2026-04-04
+sensitivity-analysis	https://en.wikipedia.org/wiki/Sensitivity_analysis			2026-04-04
+parametric-study	internal:fusion-terms:domain-expansion	General engineering methodology		2026-04-04
+best-estimate	internal:fusion-terms:domain-expansion	Nuclear safety analysis methodology		2026-04-04
+conservative-estimate	internal:fusion-terms:domain-expansion	Nuclear safety analysis methodology		2026-04-04
+design-margin	internal:fusion-terms:domain-expansion	General engineering design concept		2026-04-04
+code-to-code-comparison	internal:fusion-terms:domain-expansion	V&V methodology for computational codes		2026-04-04
+figure-of-merit	https://en.wikipedia.org/wiki/Figure_of_merit			2026-04-04
+error-propagation	https://en.wikipedia.org/wiki/Propagation_of_uncertainty			2026-04-04
+convergence-criterion	internal:fusion-terms:domain-expansion	Numerical analysis concept		2026-04-04
+mesh-independence	internal:fusion-terms:domain-expansion	Numerical analysis V&V practice		2026-04-04
+dimensional-analysis	https://en.wikipedia.org/wiki/Dimensional_analysis			2026-04-04
+empirical-correlation	internal:fusion-terms:domain-expansion	Engineering data-fitting methodology		2026-04-04
+analytical-solution	internal:fusion-terms:domain-expansion	Mathematical analysis concept		2026-04-04
+numerical-solution	internal:fusion-terms:domain-expansion	Computational science concept		2026-04-04
+boundary-condition	https://en.wikipedia.org/wiki/Boundary_value_problem			2026-04-04
+initial-condition	https://en.wikipedia.org/wiki/Initial_value_problem			2026-04-04
+transient-analysis	internal:fusion-terms:domain-expansion	Time-dependent simulation methodology		2026-04-04
+coupled-analysis	internal:fusion-terms:domain-expansion	Multi-physics simulation strategy		2026-04-04
+multiphysics	https://en.wikipedia.org/wiki/Multiphysics			2026-04-04
+response-surface	https://en.wikipedia.org/wiki/Response_surface_methodology			2026-04-04
+latin-hypercube-sampling	https://en.wikipedia.org/wiki/Latin_hypercube_sampling			2026-04-04
+monte-carlo-sampling	https://en.wikipedia.org/wiki/Monte_Carlo_method			2026-04-04
+goodness-of-fit	https://en.wikipedia.org/wiki/Goodness_of_fit			2026-04-04

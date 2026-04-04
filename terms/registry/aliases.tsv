@@ -5392,3 +5392,82 @@ computational method	computational-method	en	preferred	preferred en
 蒙特卡洛	monte-carlo-method	zh	alias	zh short form
 蒙特卡罗	monte-carlo-method	zh	alias	zh short form variant
 低活化钢	rafm-steel	zh	alias	zh shortened form
+
+# ==== Batch 55: General Scientific & Engineering Methodology ====
+benchmark	benchmark	en	preferred	preferred en
+基准测试	benchmark	zh	preferred	preferred zh
+benchmarking	benchmark	en	alias	gerund form
+validation	validation	en	preferred	preferred en
+验证	validation	zh	preferred	preferred zh
+verification	verification	en	preferred	preferred en
+校核	verification	zh	preferred	preferred zh
+校验	verification	zh	alias	common variant
+sensitivity analysis	sensitivity-analysis	en	preferred	preferred en
+灵敏度分析	sensitivity-analysis	zh	preferred	preferred zh
+敏感性分析	sensitivity-analysis	zh	alias	common variant
+parametric study	parametric-study	en	preferred	preferred en
+参数化研究	parametric-study	zh	preferred	preferred zh
+parametric scan	parametric-study	en	alias	common synonym
+参数扫描	parametric-study	zh	alias	common variant
+best estimate	best-estimate	en	preferred	preferred en
+最佳估算	best-estimate	zh	preferred	preferred zh
+best-estimate calculation	best-estimate	en	alias	expanded form
+conservative estimate	conservative-estimate	en	preferred	preferred en
+保守估算	conservative-estimate	zh	preferred	preferred zh
+conservative calculation	conservative-estimate	en	alias	variant
+design margin	design-margin	en	preferred	preferred en
+设计裕度	design-margin	zh	preferred	preferred zh
+safety margin	design-margin	en	alias	common synonym
+安全裕度	design-margin	zh	alias	variant
+code-to-code comparison	code-to-code-comparison	en	preferred	preferred en
+程序间比较	code-to-code-comparison	zh	preferred	preferred zh
+code comparison	code-to-code-comparison	en	alias	short form
+figure of merit	figure-of-merit	en	preferred	preferred en
+品质因数	figure-of-merit	zh	preferred	preferred zh
+FOM	figure-of-merit	abbr	preferred	canonical abbr
+error propagation	error-propagation	en	preferred	preferred en
+误差传播	error-propagation	zh	preferred	preferred zh
+convergence criterion	convergence-criterion	en	preferred	preferred en
+收敛准则	convergence-criterion	zh	preferred	preferred zh
+convergence criteria	convergence-criterion	en	alias	plural form
+收敛判据	convergence-criterion	zh	alias	variant
+mesh independence	mesh-independence	en	preferred	preferred en
+网格无关性	mesh-independence	zh	preferred	preferred zh
+grid convergence	mesh-independence	en	alias	synonym
+网格收敛	mesh-independence	zh	alias	variant
+dimensional analysis	dimensional-analysis	en	preferred	preferred en
+量纲分析	dimensional-analysis	zh	preferred	preferred zh
+empirical correlation	empirical-correlation	en	preferred	preferred en
+经验关联式	empirical-correlation	zh	preferred	preferred zh
+经验公式	empirical-correlation	zh	alias	common variant
+analytical solution	analytical-solution	en	preferred	preferred en
+解析解	analytical-solution	zh	preferred	preferred zh
+closed-form solution	analytical-solution	en	alias	synonym
+numerical solution	numerical-solution	en	preferred	preferred en
+数值解	numerical-solution	zh	preferred	preferred zh
+boundary condition	boundary-condition	en	preferred	preferred en
+边界条件	boundary-condition	zh	preferred	preferred zh
+BC	boundary-condition	abbr	preferred	canonical abbr
+initial condition	initial-condition	en	preferred	preferred en
+初始条件	initial-condition	zh	preferred	preferred zh
+IC	initial-condition	abbr	preferred	canonical abbr
+transient analysis	transient-analysis	en	preferred	preferred en
+瞬态分析	transient-analysis	zh	preferred	preferred zh
+coupled analysis	coupled-analysis	en	preferred	preferred en
+耦合分析	coupled-analysis	zh	preferred	preferred zh
+coupled simulation	coupled-analysis	en	alias	synonym
+multiphysics	multiphysics	en	preferred	preferred en
+多物理场	multiphysics	zh	preferred	preferred zh
+multi-physics	multiphysics	en	alias	hyphenated variant
+多物理耦合	multiphysics	zh	alias	expanded form
+response surface	response-surface	en	preferred	preferred en
+响应面	response-surface	zh	preferred	preferred zh
+RSM	response-surface	abbr	preferred	response surface methodology
+response surface methodology	response-surface	en	alias	full form
+Latin hypercube sampling	latin-hypercube-sampling	en	preferred	preferred en
+拉丁超立方抽样	latin-hypercube-sampling	zh	preferred	preferred zh
+LHS	latin-hypercube-sampling	abbr	preferred	canonical abbr
+Monte Carlo sampling	monte-carlo-sampling	en	preferred	preferred en
+蒙特卡罗抽样	monte-carlo-sampling	zh	preferred	preferred zh
+goodness of fit	goodness-of-fit	en	preferred	preferred en
+拟合优度	goodness-of-fit	zh	preferred	preferred zh

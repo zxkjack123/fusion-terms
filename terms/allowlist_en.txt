@@ -849,3 +849,13 @@ cracking
 deposition
 presheath
 siliconization
+
+# --- General Scientific Methodology (Batch 55) ---
+benchmark
+benchmarking
+validation
+verification
+FOM
+multiphysics
+RSM
+LHS
