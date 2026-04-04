@@ -1091,3 +1091,22 @@ zoning
 decontamination
 basemat
 seismic
+
+# --- Batch 78 Phase 1 allowlist sync ---
+pulsed-power-supply
+PPS
+reactive-power-compensation
+Motor-Generator
+motor-generator
+flywheel-energy-storage
+FES
+ac-dc-converter
+beyond-design-basis-event
+BDBE
+beyond-design-basis-accident
+safety-function
+SF
+safety-important-component
+SIC
+postulated-initiating-event
+confinement-system

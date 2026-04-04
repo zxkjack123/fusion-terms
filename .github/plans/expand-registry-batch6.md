@@ -162,7 +162,7 @@
   - ✅ `grep -c 'pulsed-power-supply\|reactive-power-compensation\|motor-generator\|flywheel-energy-storage\|ac-dc-converter\|beyond-design-basis-event\|safety-function\|safety-important-component\|postulated-initiating-event\|confinement-system' terms/registry/concepts.tsv` = 10
 - **潜在风险**：SIC alias 若大小写处理异常可能与 SiC/SiC 冲突 → 验证器会立即报错，可在该步骤修正
 
-#### Task 1.2: Batch 78 allowlist 同步
+#### ✅ Task 1.2: Batch 78 allowlist 同步
 
 - **目标**：将 Batch 78 所有新增 EN token / ZH 术语同步到 allowlist（如尚未存在）
 - **修改内容**：
