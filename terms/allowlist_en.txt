@@ -1252,3 +1252,22 @@ ratchet
 flow-accelerated-corrosion
 FAC
 erosion-corrosion
+
+# --- Batch 87 Phase 1 allowlist sync ---
+fire-detection-system
+fire-suppression-system
+fire-damper
+confinement-ventilation
+confinement-ventilation-system
+CVS
+emergency-exhaust-system
+emergency-ventilation
+hepa-filter
+HEPA
+high-efficiency-particulate-air-filter
+activated-carbon-filter
+charcoal-filter
+ventilation-zone
+tritium-building
+tokamak-pit
+bioshield-pit

@@ -177,7 +177,7 @@ tokamak-pit	internal:registry-gap-review:batch9	Below-grade excavation structure
   - ✅ 每个 concept 至少有 en preferred + zh preferred + 1 个 alias
 - **潜在风险**：`confinement-ventilation` concept_id 与已有 `confinement-function` 共享 "confinement" 前缀，但 concept_id 不同，不会冲突。`ventilation-zone` 与 `radiation-zoning`（已有）有语义关联但不重复。
 
-#### Task 1.2: Batch 87 allowlist 同步
+#### ✅ Task 1.2: Batch 87 allowlist 同步
 
 - **目标**：将 Batch 87 新增术语的所有 EN 表面形式和 ZH 表面形式同步到 allowlist
 - **修改内容**：
@@ -191,19 +191,19 @@ fire-detection-system
 fire-suppression-system
 fire-damper
 confinement-ventilation
-confinement ventilation
+confinement-ventilation-system
 CVS
 emergency-exhaust-system
-emergency ventilation
+emergency-ventilation
 hepa-filter
 HEPA
-high-efficiency particulate air filter
+high-efficiency-particulate-air-filter
 activated-carbon-filter
-charcoal filter
+charcoal-filter
 ventilation-zone
 tritium-building
 tokamak-pit
-bioshield pit
+bioshield-pit
 ```
 
 **ZH tokens**（每行一个）：
