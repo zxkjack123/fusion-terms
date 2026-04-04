@@ -1229,3 +1229,35 @@ half-life	https://en.wikipedia.org/wiki/Half-life			2026-04-04
 shielding-analysis	internal:fusion-terms:domain-expansion	Radiation shielding methodology		2026-04-04
 streaming	internal:fusion-terms:domain-expansion	Duct/gap radiation streaming		2026-04-04
 buildup-factor	internal:fusion-terms:domain-expansion	Shielding buildup factor		2026-04-04
+
+# ==== Batch 61: Materials Science & Mechanics ====
+tensile-test	internal:fusion-terms:domain-expansion	Standard mechanical test		2026-04-04
+fracture-toughness	https://en.wikipedia.org/wiki/Fracture_toughness			2026-04-04
+yield-strength	https://en.wikipedia.org/wiki/Yield_(engineering)			2026-04-04
+ultimate-tensile-strength	https://en.wikipedia.org/wiki/Ultimate_tensile_strength			2026-04-04
+thermal-conductivity	https://en.wikipedia.org/wiki/Thermal_conductivity			2026-04-04
+youngs-modulus	https://en.wikipedia.org/wiki/Young%27s_modulus			2026-04-04
+charpy-impact	https://en.wikipedia.org/wiki/Charpy_impact_test			2026-04-04
+low-cycle-fatigue	internal:fusion-terms:domain-expansion	High-strain fatigue regime		2026-04-04
+high-cycle-fatigue	internal:fusion-terms:domain-expansion	Low-strain fatigue regime		2026-04-04
+stress-intensity-factor	https://en.wikipedia.org/wiki/Stress_intensity_factor			2026-04-04
+crack-growth-rate	internal:fusion-terms:domain-expansion	Fracture mechanics metric		2026-04-04
+stress-corrosion-cracking	https://en.wikipedia.org/wiki/Stress_corrosion_cracking			2026-04-04
+small-punch-test	internal:fusion-terms:domain-expansion	Miniaturized specimen technique		2026-04-04
+microstructure	internal:fusion-terms:domain-expansion	Material characterization scale		2026-04-04
+grain-boundary	https://en.wikipedia.org/wiki/Grain_boundary			2026-04-04
+dislocation	https://en.wikipedia.org/wiki/Dislocation			2026-04-04
+hardness	internal:fusion-terms:domain-expansion	Mechanical property metric		2026-04-04
+elastic-modulus	internal:fusion-terms:domain-expansion	Elastic stiffness property		2026-04-04
+poissons-ratio	https://en.wikipedia.org/wiki/Poisson%27s_ratio			2026-04-04
+coefficient-of-thermal-expansion	internal:fusion-terms:domain-expansion	Thermomechanical property		2026-04-04
+residual-stress	internal:fusion-terms:domain-expansion	Manufacturing/welding concern		2026-04-04
+welding	internal:fusion-terms:domain-expansion	Joining process		2026-04-04
+heat-affected-zone	https://en.wikipedia.org/wiki/Heat-affected_zone			2026-04-04
+non-destructive-testing	https://en.wikipedia.org/wiki/Nondestructive_testing			2026-04-04
+scanning-electron-microscopy	https://en.wikipedia.org/wiki/Scanning_electron_microscope			2026-04-04
+transmission-electron-microscopy	https://en.wikipedia.org/wiki/Transmission_electron_microscopy			2026-04-04
+x-ray-diffraction	https://en.wikipedia.org/wiki/X-ray_crystallography			2026-04-04
+energy-dispersive-spectroscopy	https://en.wikipedia.org/wiki/Energy-dispersive_X-ray_spectroscopy			2026-04-04
+nanoindentation	https://en.wikipedia.org/wiki/Nanoindentation			2026-04-04
+fractography	https://en.wikipedia.org/wiki/Fractography			2026-04-04

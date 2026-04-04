@@ -1291,3 +1291,35 @@ half-life	metric	半衰期	half-life		active	Radioactive decay half-life
 shielding-analysis	method	屏蔽分析	shielding analysis		active	Radiation shielding calculation
 streaming	concept	辐射流窜	streaming		active	Radiation streaming through ducts/gaps
 buildup-factor	metric	累积因子	buildup factor		active	Ratio of total to uncollided dose
+
+# ==== Batch 61: Materials Science & Mechanics ====
+tensile-test	method	拉伸试验	tensile test		active	Uniaxial tensile test
+fracture-toughness	metric	断裂韧性	fracture toughness		active	Resistance to crack propagation (MPa·m^0.5)
+yield-strength	metric	屈服强度	yield strength		active	Stress at onset of plastic deformation
+ultimate-tensile-strength	metric	极限抗拉强度	ultimate tensile strength	UTS	active	Maximum engineering stress
+thermal-conductivity	metric	热导率	thermal conductivity		active	Heat conduction rate W/(m·K)
+youngs-modulus	metric	杨氏模量	Young's modulus		active	Elastic stiffness constant
+charpy-impact	method	夏比冲击	Charpy impact test		active	Impact toughness test
+low-cycle-fatigue	concept	低周疲劳	low-cycle fatigue	LCF	active	Fatigue under high strain amplitude
+high-cycle-fatigue	concept	高周疲劳	high-cycle fatigue	HCF	active	Fatigue under low strain/high cycle
+stress-intensity-factor	metric	应力强度因子	stress intensity factor		active	Crack-tip stress field parameter
+crack-growth-rate	metric	裂纹扩展速率	crack growth rate		active	da/dN crack propagation rate
+stress-corrosion-cracking	concept	应力腐蚀开裂	stress-corrosion cracking	SCC	active	Environment-assisted cracking
+small-punch-test	method	小冲杆试验	small punch test	SPT	active	Miniature specimen test
+microstructure	concept	微观结构	microstructure		active	Material structure at micro scale
+grain-boundary	concept	晶界	grain boundary		active	Interface between crystalline grains
+dislocation	concept	位错	dislocation		active	Crystal lattice line defect
+hardness	metric	硬度	hardness		active	Resistance to indentation
+elastic-modulus	metric	弹性模量	elastic modulus		active	General elastic stiffness
+poissons-ratio	metric	泊松比	Poisson's ratio		active	Ratio of lateral to axial strain
+coefficient-of-thermal-expansion	metric	热膨胀系数	coefficient of thermal expansion	CTE	active	Thermal expansion rate
+residual-stress	metric	残余应力	residual stress		active	Stress remaining after processing
+welding	method	焊接	welding		active	Joining process by fusion
+heat-affected-zone	concept	热影响区	heat-affected zone	HAZ	active	Zone around weld affected by heat
+non-destructive-testing	method	无损检测	non-destructive testing	NDT	active	Inspection without damage
+scanning-electron-microscopy	method	扫描电子显微镜	scanning electron microscopy	SEM	active	Surface imaging technique
+transmission-electron-microscopy	method	透射电子显微镜	transmission electron microscopy		active	Through-sample imaging technique
+x-ray-diffraction	method	X射线衍射	X-ray diffraction	XRD	active	Crystal structure analysis
+energy-dispersive-spectroscopy	method	能谱分析	energy-dispersive spectroscopy	EDS	active	Elemental composition analysis
+nanoindentation	method	纳米压痕	nanoindentation		active	Nano-scale hardness measurement
+fractography	method	断口分析	fractography		active	Fracture surface analysis

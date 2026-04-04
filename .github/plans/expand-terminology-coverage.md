@@ -434,7 +434,7 @@
 
 ### Phase 7: 材料力学与表征
 
-#### Task 7.1: 添加材料力学术语到三表
+#### ✅ Task 7.1: 添加材料力学术语到三表
 
 - **目标**：新增 ~35 个 concept。已有 `creep`、`fatigue-life`、`dbtt-shift`、`radiation-hardening` 需跳过或仅补 alias。
 
@@ -491,7 +491,7 @@
   - ✅ validate_registry 通过
 - **潜在风险**：`dbtt` vs 已有 `dbtt-shift`——前者是温度值，后者是辐照引起的变化量；`void-swelling` 检查是否已有 `swelling` concept；`thermal-fatigue` 检查是否已存在
 
-#### Task 7.2: 同步 allowlist
+#### ✅ Task 7.2: 同步 allowlist
 
 - **目标**：材料力学术语追加到 allowlist
 - **修改内容**：allowlist_en.txt、allowlist_zh.txt 追加

@@ -920,3 +920,23 @@ ALI
 LET
 fluence
 buildup
+
+# --- Materials/Mechanics (Batch 61) ---
+UTS
+SCC
+SPT
+HAZ
+NDT
+SEM
+XRD
+EDS
+EDX
+CTE
+LCF
+HCF
+nanoindentation
+fractography
+microstructure
+dislocation
+hardness
+welding

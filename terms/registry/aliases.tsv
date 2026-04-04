@@ -5803,3 +5803,78 @@ streaming	streaming	en	preferred	preferred en
 辐射流窜	streaming	zh	preferred	preferred zh
 buildup factor	buildup-factor	en	preferred	preferred en
 累积因子	buildup-factor	zh	preferred	preferred zh
+
+# ==== Batch 61: Materials Science & Mechanics ====
+tensile test	tensile-test	en	preferred	preferred en
+拉伸试验	tensile-test	zh	preferred	preferred zh
+fracture toughness	fracture-toughness	en	preferred	preferred en
+断裂韧性	fracture-toughness	zh	preferred	preferred zh
+yield strength	yield-strength	en	preferred	preferred en
+屈服强度	yield-strength	zh	preferred	preferred zh
+ultimate tensile strength	ultimate-tensile-strength	en	preferred	preferred en
+极限抗拉强度	ultimate-tensile-strength	zh	preferred	preferred zh
+UTS	ultimate-tensile-strength	abbr	preferred	canonical abbr
+thermal conductivity	thermal-conductivity	en	preferred	preferred en
+热导率	thermal-conductivity	zh	preferred	preferred zh
+Young's modulus	youngs-modulus	en	preferred	preferred en
+杨氏模量	youngs-modulus	zh	preferred	preferred zh
+Charpy impact test	charpy-impact	en	preferred	preferred en
+夏比冲击	charpy-impact	zh	preferred	preferred zh
+Charpy test	charpy-impact	en	alias	short form
+low-cycle fatigue	low-cycle-fatigue	en	preferred	preferred en
+低周疲劳	low-cycle-fatigue	zh	preferred	preferred zh
+LCF	low-cycle-fatigue	abbr	preferred	canonical abbr
+high-cycle fatigue	high-cycle-fatigue	en	preferred	preferred en
+高周疲劳	high-cycle-fatigue	zh	preferred	preferred zh
+HCF	high-cycle-fatigue	abbr	preferred	canonical abbr
+stress intensity factor	stress-intensity-factor	en	preferred	preferred en
+应力强度因子	stress-intensity-factor	zh	preferred	preferred zh
+crack growth rate	crack-growth-rate	en	preferred	preferred en
+裂纹扩展速率	crack-growth-rate	zh	preferred	preferred zh
+stress-corrosion cracking	stress-corrosion-cracking	en	preferred	preferred en
+应力腐蚀开裂	stress-corrosion-cracking	zh	preferred	preferred zh
+SCC	stress-corrosion-cracking	abbr	preferred	canonical abbr
+small punch test	small-punch-test	en	preferred	preferred en
+小冲杆试验	small-punch-test	zh	preferred	preferred zh
+SPT	small-punch-test	abbr	preferred	canonical abbr
+microstructure	microstructure	en	preferred	preferred en
+微观结构	microstructure	zh	preferred	preferred zh
+grain boundary	grain-boundary	en	preferred	preferred en
+晶界	grain-boundary	zh	preferred	preferred zh
+dislocation	dislocation	en	preferred	preferred en
+位错	dislocation	zh	preferred	preferred zh
+hardness	hardness	en	preferred	preferred en
+硬度	hardness	zh	preferred	preferred zh
+elastic modulus	elastic-modulus	en	preferred	preferred en
+弹性模量	elastic-modulus	zh	preferred	preferred zh
+Poisson's ratio	poissons-ratio	en	preferred	preferred en
+泊松比	poissons-ratio	zh	preferred	preferred zh
+coefficient of thermal expansion	coefficient-of-thermal-expansion	en	preferred	preferred en
+热膨胀系数	coefficient-of-thermal-expansion	zh	preferred	preferred zh
+CTE	coefficient-of-thermal-expansion	abbr	preferred	canonical abbr
+residual stress	residual-stress	en	preferred	preferred en
+残余应力	residual-stress	zh	preferred	preferred zh
+welding	welding	en	preferred	preferred en
+焊接	welding	zh	preferred	preferred zh
+heat-affected zone	heat-affected-zone	en	preferred	preferred en
+热影响区	heat-affected-zone	zh	preferred	preferred zh
+HAZ	heat-affected-zone	abbr	preferred	canonical abbr
+non-destructive testing	non-destructive-testing	en	preferred	preferred en
+无损检测	non-destructive-testing	zh	preferred	preferred zh
+NDT	non-destructive-testing	abbr	preferred	canonical abbr
+scanning electron microscopy	scanning-electron-microscopy	en	preferred	preferred en
+扫描电子显微镜	scanning-electron-microscopy	zh	preferred	preferred zh
+SEM	scanning-electron-microscopy	abbr	preferred	canonical abbr
+transmission electron microscopy	transmission-electron-microscopy	en	preferred	preferred en
+透射电子显微镜	transmission-electron-microscopy	zh	preferred	preferred zh
+X-ray diffraction	x-ray-diffraction	en	preferred	preferred en
+X射线衍射	x-ray-diffraction	zh	preferred	preferred zh
+XRD	x-ray-diffraction	abbr	preferred	canonical abbr
+energy-dispersive spectroscopy	energy-dispersive-spectroscopy	en	preferred	preferred en
+能谱分析	energy-dispersive-spectroscopy	zh	preferred	preferred zh
+EDS	energy-dispersive-spectroscopy	abbr	preferred	canonical abbr
+EDX	energy-dispersive-spectroscopy	abbr	alias	alternate abbr
+nanoindentation	nanoindentation	en	preferred	preferred en
+纳米压痕	nanoindentation	zh	preferred	preferred zh
+fractography	fractography	en	preferred	preferred en
+断口分析	fractography	zh	preferred	preferred zh
