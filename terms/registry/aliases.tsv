@@ -6856,3 +6856,55 @@ erosion-corrosion	erosion-corrosion	en	preferred	preferred en
 冲蚀-腐蚀	erosion-corrosion	zh	preferred	preferred zh
 erosion corrosion	erosion-corrosion	en	alias	no-hyphen form
 冲刷腐蚀	erosion-corrosion	zh	alias	variant zh
+# ---- Batch 87 aliases ----
+fire detection system	fire-detection-system	en	preferred	preferred en
+火灾探测系统	fire-detection-system	zh	preferred	preferred zh
+fire-detection-system	fire-detection-system	en	alias	hyphenated form
+fire alarm system	fire-detection-system	en	alias	synonym
+火灾报警系统	fire-detection-system	zh	alias	alarm-focused zh
+fire suppression system	fire-suppression-system	en	preferred	preferred en
+灭火系统	fire-suppression-system	zh	preferred	preferred zh
+fire-suppression-system	fire-suppression-system	en	alias	hyphenated form
+fire extinguishing system	fire-suppression-system	en	alias	synonym
+消防灭火系统	fire-suppression-system	zh	alias	expanded zh
+fire damper	fire-damper	en	preferred	preferred en
+防火阀	fire-damper	zh	preferred	preferred zh
+fire-damper	fire-damper	en	alias	hyphenated form
+防火风阀	fire-damper	zh	alias	variant zh
+confinement ventilation system	confinement-ventilation	en	preferred	preferred en
+限制区通风系统	confinement-ventilation	zh	preferred	preferred zh
+CVS	confinement-ventilation	abbr	preferred	canonical abbr
+confinement-ventilation	confinement-ventilation	en	alias	hyphenated form
+confinement ventilation	confinement-ventilation	en	alias	short form
+安全壳通风	confinement-ventilation	zh	alias	containment-focus zh
+emergency exhaust system	emergency-exhaust-system	en	preferred	preferred en
+事故排风系统	emergency-exhaust-system	zh	preferred	preferred zh
+emergency-exhaust-system	emergency-exhaust-system	en	alias	hyphenated form
+emergency ventilation	emergency-exhaust-system	en	alias	short form
+应急排风系统	emergency-exhaust-system	zh	alias	variant zh
+HEPA filter	hepa-filter	en	preferred	preferred en
+高效空气过滤器	hepa-filter	zh	preferred	preferred zh
+HEPA	hepa-filter	abbr	preferred	canonical abbr
+hepa-filter	hepa-filter	en	alias	hyphenated form
+high-efficiency particulate air filter	hepa-filter	en	alias	expanded form
+高效过滤器	hepa-filter	zh	alias	short zh
+activated carbon filter	activated-carbon-filter	en	preferred	preferred en
+活性炭过滤器	activated-carbon-filter	zh	preferred	preferred zh
+activated-carbon-filter	activated-carbon-filter	en	alias	hyphenated form
+charcoal filter	activated-carbon-filter	en	alias	synonym
+activated charcoal filter	activated-carbon-filter	en	alias	charcoal variant
+活性碳过滤器	activated-carbon-filter	zh	alias	char-variant zh
+ventilation zone	ventilation-zone	en	preferred	preferred en
+通风分区	ventilation-zone	zh	preferred	preferred zh
+ventilation-zone	ventilation-zone	en	alias	hyphenated form
+通风区域	ventilation-zone	zh	alias	variant zh
+tritium building	tritium-building	en	preferred	preferred en
+氚厂房	tritium-building	zh	preferred	preferred zh
+tritium-building	tritium-building	en	alias	hyphenated form
+tritium plant building	tritium-building	en	alias	expanded form
+氚处理厂房	tritium-building	zh	alias	processing-focus zh
+tokamak pit	tokamak-pit	en	preferred	preferred en
+托卡马克堆坑	tokamak-pit	zh	preferred	preferred zh
+tokamak-pit	tokamak-pit	en	alias	hyphenated form
+bioshield pit	tokamak-pit	en	alias	alternative name
+堆坑	tokamak-pit	zh	alias	short zh

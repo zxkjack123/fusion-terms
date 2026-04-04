@@ -1518,3 +1518,13 @@ j-integral	internal:registry-gap-review:batch8	Path-independent integral paramet
 ratcheting	internal:registry-gap-review:batch8	Progressive unidirectional plastic strain accumulation under cyclic loading	copilot	2026-04-04
 flow-accelerated-corrosion	internal:registry-gap-review:batch8	Accelerated dissolution of protective oxide film by high-temperature high-velocity water flow	copilot	2026-04-04
 erosion-corrosion	internal:registry-gap-review:batch8	Combined mechanical erosion and electrochemical corrosion material degradation mechanism	copilot	2026-04-04
+fire-detection-system	internal:registry-gap-review:batch9	Automatic fire detection and alarm system for nuclear facilities (IAEA NS-G-1.7)	copilot	2026-04-04
+fire-suppression-system	internal:registry-gap-review:batch9	Fire suppression installation for nuclear facility rooms (gas/water spray/foam)	copilot	2026-04-04
+fire-damper	internal:registry-gap-review:batch9	Fire barrier device installed in ventilation ducts to prevent flame and smoke spread	copilot	2026-04-04
+confinement-ventilation	internal:registry-gap-review:batch9	Ventilation system maintaining negative pressure in radioactive areas with filtered exhaust (ITER CVS)	copilot	2026-04-04
+emergency-exhaust-system	internal:registry-gap-review:batch9	Emergency ventilation for rapid extraction of radioactive gases from confinement areas	copilot	2026-04-04
+hepa-filter	internal:registry-gap-review:batch9	High-efficiency particulate air filter with >=99.97% efficiency for >=0.3um particles (DOE-STD-3020)	copilot	2026-04-04
+activated-carbon-filter	internal:registry-gap-review:batch9	Activated carbon adsorption filter for gaseous radioactive iodine removal	copilot	2026-04-04
+ventilation-zone	internal:registry-gap-review:batch9	Nuclear facility area zoning by contamination risk for ventilation airflow direction control (C1/C2/C3)	copilot	2026-04-04
+tritium-building	internal:registry-gap-review:batch9	Dedicated building housing tritium processing, storage, and recovery equipment	copilot	2026-04-04
+tokamak-pit	internal:registry-gap-review:batch9	Below-grade excavation structure for tokamak installation within the bioshield	copilot	2026-04-04
