@@ -108,6 +108,20 @@ loss of coolant accident	loss-of-coolant-accident	en	alias	Fully dehyphenated fo
 中心螺线管	central-solenoid	zh	alias	用户常用变体（preferred 保持 中心螺管）
 中子壁负载	neutron-wall-loading	zh	alias	用户常用变体（preferred 保持 中子壁负荷）
 contact dose	contact-dose-rate	en	alias	Short form without rate
+water-cooled pebble bed	wcpb	en	preferred
+水冷球床包层	wcpb	zh	preferred
+WCPB	wcpb	abbr	preferred
+water cooled pebble bed	wcpb	en	alias	No-hyphen form
+beryllium pebble	beryllium-pebble	en	preferred
+铍球	beryllium-pebble	zh	preferred
+lithium metatitanate	lithium-metatitanate	en	preferred
+偏钛酸锂	lithium-metatitanate	zh	preferred
+lithium metazirconate	lithium-metazirconate	en	preferred
+偏锆酸锂	lithium-metazirconate	zh	preferred
+Li2ZrO3	lithium-metazirconate	en	alias	Chemical formula
+primary heat transfer	primary-heat-transfer	en	preferred
+一回路传热	primary-heat-transfer	zh	preferred
+primary heat transport	primary-heat-transfer	en	alias	Variant form
 
 最终安全分析报告	final-safety-analysis-report	zh	preferred	preferred zh
 Final Safety Analysis Report	final-safety-analysis-report	en	preferred	preferred en (phrase)

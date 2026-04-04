@@ -1357,3 +1357,8 @@ tungsten-armor	internal:translation-dict-gap:phase1	P0 coverage for tungsten arm
 helium-coolant	internal:translation-dict-gap:phase1	P0 coverage for helium coolant term	copilot	2026-04-04
 pressurized-water	internal:translation-dict-gap:phase1	P0 coverage for pressurized water term	copilot	2026-04-04
 safety-analysis-report	internal:translation-dict-gap:phase1	P0 coverage for general safety analysis report concept	copilot	2026-04-04
+wcpb	internal:translation-dict-gap:phase3	P1 coverage term for water-cooled pebble-bed blanket	copilot	2026-04-04
+beryllium-pebble	internal:translation-dict-gap:phase3	P1 coverage term for beryllium pebble material	copilot	2026-04-04
+lithium-metatitanate	internal:translation-dict-gap:phase3	P1 coverage term for lithium metatitanate	copilot	2026-04-04
+lithium-metazirconate	internal:translation-dict-gap:phase3	P1 coverage term for lithium metazirconate	copilot	2026-04-04
+primary-heat-transfer	internal:translation-dict-gap:phase3	P1 coverage term for primary-loop heat transfer	copilot	2026-04-04

@@ -1421,3 +1421,10 @@ tungsten-armor	material	钨铠甲	tungsten armor		active	Plasma-facing tungsten 
 helium-coolant	concept	氦冷却剂	helium coolant		active	Helium as blanket/coolant working fluid
 pressurized-water	concept	加压水	pressurized water		active	Coolant type concept
 safety-analysis-report	doc	安全分析报告	safety analysis report	SAR	active	General safety analysis report concept
+
+# ==== Batch 66 P1: coverage expansion concepts ====
+wcpb	concept	水冷球床包层	water-cooled pebble bed	WCPB	active	Water-cooled pebble-bed blanket concept
+beryllium-pebble	material	铍球	beryllium pebble		active	Beryllium multiplier pebble material
+lithium-metatitanate	material	偏钛酸锂	lithium metatitanate		active	Ceramic breeder material concept (metatitanate)
+lithium-metazirconate	material	偏锆酸锂	lithium metazirconate		active	Ceramic breeder material concept (metazirconate)
+primary-heat-transfer	concept	一回路传热	primary heat transfer		active	Primary-loop thermal transfer concept
