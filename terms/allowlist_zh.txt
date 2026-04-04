@@ -2086,3 +2086,8 @@ EVEDA锂试验回路
 去氚因子
 真空漏率
 检漏
+
+# --- Batch 73 Phase 3 allowlist sync ---
+出厂验收测试
+现场验收测试
+可焊性

@@ -1056,3 +1056,8 @@ TMP
 turbomolecular
 RGA
 DF
+
+# --- Batch 73 Phase 3 allowlist sync ---
+FAT
+SAT
+weldability
