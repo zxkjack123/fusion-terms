@@ -1035,3 +1035,16 @@ EVEDA
 
 # --- Batch 70 Phase 3 allowlist sync ---
 carrier
+
+# --- Batch 71 Phase 1 allowlist sync ---
+PSA
+HAZOP
+FMEA
+SBO
+blackout
+probabilistic
+hazard
+operability
+LBB
+injector
+pellet
