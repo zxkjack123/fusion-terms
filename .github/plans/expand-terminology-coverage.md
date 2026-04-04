@@ -680,7 +680,7 @@
 
 ### Phase 11: 完整验证与导出
 
-#### Task 11.1: 全量验证
+#### ✅ Task 11.1: 全量验证
 
 - **目标**：确保所有新增数据通过完整验证
 - **修改内容**：无文件修改——纯运行验证
@@ -693,7 +693,7 @@
   - ✅ 无 "registry validation failed" 输出
 - **潜在风险**：前面各 Phase 可能遗漏某些 concept 的 evidence 或 preferred alias——此处作为最终拦截
 
-#### Task 11.2: 导出 registry 产物
+#### ✅ Task 11.2: 导出 registry 产物
 
 - **目标**：重新生成所有 registry 导出产物
 - **修改内容**：
@@ -709,7 +709,7 @@
   - ✅ `query_expansions.json` 中 `concepts` 含新增 concept_id
 - **潜在风险**：产物文件较大，diff 可能很长——属正常情况
 
-#### Task 11.3: 重建 IME 词表
+#### ✅ Task 11.3: 重建 IME 词表
 
 - **目标**：重建 domain_terms.txt
 - **修改内容**：
@@ -724,7 +724,7 @@
   - ✅ `domain_terms.txt` 词条数比之前增长
 - **潜在风险**：build_terms 只从 allowlist/denylist 构建——如果 allowlist 没有同步更新则新术语不会出现在 IME 词表
 
-#### Task 11.4: 运行测试套件
+#### ✅ Task 11.4: 运行测试套件
 
 - **目标**：确保新增数据不破坏已有测试
 - **修改内容**：无
