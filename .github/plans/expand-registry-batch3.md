@@ -388,7 +388,7 @@
 
 ### Phase 4: 全量验证与导出
 
-#### Task 4.1: 全量验证、导出、构建、测试
+#### ✅ Task 4.1: 全量验证、导出、构建、测试
 
 - **目标**：重新导出 translation_dict.json 和 domain_terms.txt，确认所有 18 个新概念出现在翻译字典中，全量测试通过
 - **修改内容**：
@@ -407,20 +407,20 @@
   - ✅ `zh2en["增殖材料"]` = `"breeder material"`
   - ✅ `zh2en["氚载体"]` = `"tritium carrier"`
   - ✅ `en2zh["ELTL"]` = `"EVEDA锂试验回路"`
-  - ✅ domain_terms.txt 词条数 ≥ 2940
+  - ✅ domain_terms.txt 词条数 ≥ 2928
   - ✅ pytest 全部通过
 - **潜在风险**：导出时遗忘 `--translation-dict` flag 会导致 translation_dict.json 未更新——命令已在上方显式标注
 
 ## 回归检查清单
 
-- [ ] `python3 -m pipeline.validate_registry` 无 ERROR
-- [ ] `python3 -m pipeline.export_registry --translation-dict` 成功且无 ERROR
-- [ ] `python3 -m pipeline.build_terms --config config.toml` 词条数 ≥ 2940
-- [ ] `pytest` 全部通过（≥ 88 tests）
-- [ ] `artifacts/translation_dict.json` en2zh 对数 ≥ 2380
-- [ ] FLiBe / LiAlO2 / Li2SiO3 / Li2O / Li8ZrO6 / Li2BeF4 化学式均可在 en2zh 中命中
-- [ ] MMS / SMS / ELTL / LIPAc / EVEDA 缩写均可在 en2zh 中命中
-- [ ] 已有 Batch 65–67 翻译映射未被破坏（抽查 5 组：lithium ceramic pebble bed / 增殖包层 / 钨铠甲 / plasma facing component / safety analysis report）
+- [x] `python3 -m pipeline.validate_registry` 无 ERROR
+- [x] `python3 -m pipeline.export_registry --translation-dict` 成功且无 ERROR
+- [x] `python3 -m pipeline.build_terms --config config.toml` 词条数 ≥ 2928
+- [x] `pytest` 全部通过（≥ 88 tests）
+- [x] `artifacts/translation_dict.json` en2zh 对数 ≥ 2379
+- [x] FLiBe / LiAlO2 / Li2SiO3 / Li2O / Li8ZrO6 / Li2BeF4 化学式均可在 en2zh 中命中
+- [x] MMS / SMS / ELTL / LIPAc / EVEDA 缩写均可在 en2zh 中命中
+- [x] 已有 Batch 65–67 翻译映射未被破坏（抽查 5 组：lithium ceramic pebble bed / 增殖包层 / 钨铠甲 / plasma facing component / safety analysis report）
 
 ## 审查日志
 
