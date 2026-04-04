@@ -1125,3 +1125,18 @@ CHWS
 port-cell
 upper-port
 diagnostic-port
+
+# --- Batch 80 Phase 3 allowlist sync ---
+hydrogen-water-chemistry
+HWC
+corrosion-product
+activated-corrosion-product
+ACP
+cryoline
+cold-box
+dump-resistor
+bypass-diode
+RCC-MR
+nuclear-quality-assurance
+NQA
+irradiation-test

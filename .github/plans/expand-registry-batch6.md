@@ -375,7 +375,7 @@
   - ✅ Batch 80 的 10 个 concept_id 均可在 concepts.tsv 中 grep 到
 - **潜在风险**：RCC-MR 长标题在 preferred_en 中是否导致行宽异常 → TSV 无行宽限制，不影响
 
-#### Task 3.2: Batch 80 allowlist 同步
+#### ✅ Task 3.2: Batch 80 allowlist 同步
 
 - **目标**：将 Batch 80 所有新增 EN token / ZH 术语同步到 allowlist
 - **修改内容**：
