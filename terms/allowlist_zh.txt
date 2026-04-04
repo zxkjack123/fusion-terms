@@ -1063,6 +1063,13 @@ T2
 氦冷却剂
 加压水
 
+# --- Batch 65 P0 allowlist sync (Phase 2 alias uplift) ---
+失冷
+中子壁负载
+增殖包层
+环向场线圈
+接触剂量
+
 # --- synced from registry (Batch 9-35) ---
 Alfvén连续谱
 D-D反应

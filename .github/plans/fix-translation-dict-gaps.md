@@ -190,7 +190,7 @@
   - "接触剂量" 升级后，用户使用"接触剂量"查询会命中 `contact-dose-rate` → 翻译为"contact dose rate"——准确但可能比"contact dose"更正式
   - `nb3sn` preferred_zh 修改为"铌三锡"——需确认此行 tab 字段对齐不被破坏
 
-#### Task 2.2: 同步 allowlist 并提交
+#### ✅ Task 2.2: 同步 allowlist 并提交
 
 - **目标**：将 Phase 2 新增/修改的 alias 同步到 allowlist
 - **修改内容**：
