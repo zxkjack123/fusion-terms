@@ -1261,3 +1261,28 @@ x-ray-diffraction	https://en.wikipedia.org/wiki/X-ray_crystallography			2026-04-
 energy-dispersive-spectroscopy	https://en.wikipedia.org/wiki/Energy-dispersive_X-ray_spectroscopy			2026-04-04
 nanoindentation	https://en.wikipedia.org/wiki/Nanoindentation			2026-04-04
 fractography	https://en.wikipedia.org/wiki/Fractography			2026-04-04
+
+# ==== Batch 62: Thermal-Hydraulics ====
+heat-transfer-coefficient	internal:fusion-terms:domain-expansion	TH basic parameter		2026-04-04
+nusselt-number	https://en.wikipedia.org/wiki/Nusselt_number			2026-04-04
+reynolds-number	https://en.wikipedia.org/wiki/Reynolds_number			2026-04-04
+prandtl-number	https://en.wikipedia.org/wiki/Prandtl_number			2026-04-04
+pressure-drop	internal:fusion-terms:domain-expansion	General pressure loss		2026-04-04
+critical-heat-flux	https://en.wikipedia.org/wiki/Critical_heat_flux			2026-04-04
+subcooled-boiling	internal:fusion-terms:domain-expansion	TH boiling regime		2026-04-04
+natural-convection	https://en.wikipedia.org/wiki/Natural_convection			2026-04-04
+forced-convection	https://en.wikipedia.org/wiki/Forced_convection			2026-04-04
+two-phase-flow	https://en.wikipedia.org/wiki/Two-phase_flow			2026-04-04
+single-phase-flow	internal:fusion-terms:domain-expansion	TH flow concept		2026-04-04
+turbulent-flow	https://en.wikipedia.org/wiki/Turbulence			2026-04-04
+laminar-flow	https://en.wikipedia.org/wiki/Laminar_flow			2026-04-04
+mass-flow-rate	internal:fusion-terms:domain-expansion	TH metric		2026-04-04
+volumetric-flow-rate	internal:fusion-terms:domain-expansion	TH metric		2026-04-04
+working-fluid	internal:fusion-terms:domain-expansion	Thermodynamic concept		2026-04-04
+thermal-hydraulic-analysis	internal:fusion-terms:domain-expansion	TH analysis methodology		2026-04-04
+thermal-stress	internal:fusion-terms:domain-expansion	Thermomechanical stress		2026-04-04
+grashof-number	https://en.wikipedia.org/wiki/Grashof_number			2026-04-04
+rayleigh-number	https://en.wikipedia.org/wiki/Rayleigh_number			2026-04-04
+friction-factor	internal:fusion-terms:domain-expansion	Pipe flow parameter		2026-04-04
+flow-distribution	internal:fusion-terms:domain-expansion	Coolant allocation concept		2026-04-04
+pressure-vessel	https://en.wikipedia.org/wiki/Pressure_vessel			2026-04-04

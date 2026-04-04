@@ -5878,3 +5878,58 @@ nanoindentation	nanoindentation	en	preferred	preferred en
 纳米压痕	nanoindentation	zh	preferred	preferred zh
 fractography	fractography	en	preferred	preferred en
 断口分析	fractography	zh	preferred	preferred zh
+
+# ==== Batch 62: Thermal-Hydraulics ====
+heat transfer coefficient	heat-transfer-coefficient	en	preferred	preferred en
+换热系数	heat-transfer-coefficient	zh	preferred	preferred zh
+Nusselt number	nusselt-number	en	preferred	preferred en
+努塞尔数	nusselt-number	zh	preferred	preferred zh
+Nu	nusselt-number	abbr	preferred	canonical abbr
+Reynolds number	reynolds-number	en	preferred	preferred en
+雷诺数	reynolds-number	zh	preferred	preferred zh
+Re	reynolds-number	abbr	preferred	canonical abbr
+Prandtl number	prandtl-number	en	preferred	preferred en
+普朗特数	prandtl-number	zh	preferred	preferred zh
+Pr	prandtl-number	abbr	preferred	canonical abbr
+pressure drop	pressure-drop	en	preferred	preferred en
+压降	pressure-drop	zh	preferred	preferred zh
+critical heat flux	critical-heat-flux	en	preferred	preferred en
+临界热流密度	critical-heat-flux	zh	preferred	preferred zh
+CHF	critical-heat-flux	abbr	preferred	canonical abbr
+subcooled boiling	subcooled-boiling	en	preferred	preferred en
+过冷沸腾	subcooled-boiling	zh	preferred	preferred zh
+natural convection	natural-convection	en	preferred	preferred en
+自然对流	natural-convection	zh	preferred	preferred zh
+forced convection	forced-convection	en	preferred	preferred en
+强制对流	forced-convection	zh	preferred	preferred zh
+two-phase flow	two-phase-flow	en	preferred	preferred en
+两相流	two-phase-flow	zh	preferred	preferred zh
+single-phase flow	single-phase-flow	en	preferred	preferred en
+单相流	single-phase-flow	zh	preferred	preferred zh
+turbulent flow	turbulent-flow	en	preferred	preferred en
+湍流	turbulent-flow	zh	preferred	preferred zh
+laminar flow	laminar-flow	en	preferred	preferred en
+层流	laminar-flow	zh	preferred	preferred zh
+mass flow rate	mass-flow-rate	en	preferred	preferred en
+质量流量	mass-flow-rate	zh	preferred	preferred zh
+volumetric flow rate	volumetric-flow-rate	en	preferred	preferred en
+体积流量	volumetric-flow-rate	zh	preferred	preferred zh
+working fluid	working-fluid	en	preferred	preferred en
+工质	working-fluid	zh	preferred	preferred zh
+thermal-hydraulic analysis	thermal-hydraulic-analysis	en	preferred	preferred en
+热工水力分析	thermal-hydraulic-analysis	zh	preferred	preferred zh
+TH analysis	thermal-hydraulic-analysis	en	alias	short form
+thermal stress	thermal-stress	en	preferred	preferred en
+热应力	thermal-stress	zh	preferred	preferred zh
+Grashof number	grashof-number	en	preferred	preferred en
+格拉晓夫数	grashof-number	zh	preferred	preferred zh
+Gr	grashof-number	abbr	preferred	canonical abbr
+Rayleigh number	rayleigh-number	en	preferred	preferred en
+瑞利数	rayleigh-number	zh	preferred	preferred zh
+Ra	rayleigh-number	abbr	preferred	canonical abbr
+friction factor	friction-factor	en	preferred	preferred en
+摩擦系数	friction-factor	zh	preferred	preferred zh
+flow distribution	flow-distribution	en	preferred	preferred en
+流量分配	flow-distribution	zh	preferred	preferred zh
+pressure vessel	pressure-vessel	en	preferred	preferred en
+压力容器	pressure-vessel	zh	preferred	preferred zh

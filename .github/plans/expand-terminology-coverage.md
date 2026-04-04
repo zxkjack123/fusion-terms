@@ -501,7 +501,7 @@
 
 ### Phase 8: 热工水力
 
-#### Task 8.1: 添加热工水力术语到三表
+#### ✅ Task 8.1: 添加热工水力术语到三表
 
 - **目标**：新增 ~30 个 concept。已有 `heat-flux`、`mhd-pressure-drop` 需跳过。
 
@@ -553,7 +553,7 @@
   - ✅ validate_registry 通过
 - **潜在风险**：`Re` 作为 alias 太短——会归入 `en2zh_short`，不影响正确性；`pressure-drop` 与 `mhd-pressure-drop` 是通用/特殊关系需区分
 
-#### Task 8.2: 同步 allowlist
+#### ✅ Task 8.2: 同步 allowlist
 
 - **目标**：热工水力术语追加到 allowlist
 - **修改内容**：allowlist_en.txt、allowlist_zh.txt 追加

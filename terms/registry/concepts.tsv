@@ -1323,3 +1323,28 @@ x-ray-diffraction	method	X射线衍射	X-ray diffraction	XRD	active	Crystal stru
 energy-dispersive-spectroscopy	method	能谱分析	energy-dispersive spectroscopy	EDS	active	Elemental composition analysis
 nanoindentation	method	纳米压痕	nanoindentation		active	Nano-scale hardness measurement
 fractography	method	断口分析	fractography		active	Fracture surface analysis
+
+# ==== Batch 62: Thermal-Hydraulics ====
+heat-transfer-coefficient	metric	换热系数	heat transfer coefficient		active	Convective heat transfer rate
+nusselt-number	metric	努塞尔数	Nusselt number	Nu	active	Dimensionless heat transfer ratio
+reynolds-number	metric	雷诺数	Reynolds number	Re	active	Dimensionless flow regime number
+prandtl-number	metric	普朗特数	Prandtl number	Pr	active	Momentum/thermal diffusivity ratio
+pressure-drop	metric	压降	pressure drop		active	General pressure loss (distinct from MHD pressure drop)
+critical-heat-flux	metric	临界热流密度	critical heat flux	CHF	active	Maximum heat flux before burnout
+subcooled-boiling	concept	过冷沸腾	subcooled boiling		active	Boiling below saturation temperature
+natural-convection	concept	自然对流	natural convection		active	Buoyancy-driven flow
+forced-convection	concept	强制对流	forced convection		active	Pump/fan-driven flow
+two-phase-flow	concept	两相流	two-phase flow		active	Gas-liquid flow
+single-phase-flow	concept	单相流	single-phase flow		active	Single-phase fluid flow
+turbulent-flow	concept	湍流	turbulent flow		active	High-Re chaotic flow
+laminar-flow	concept	层流	laminar flow		active	Low-Re ordered flow
+mass-flow-rate	metric	质量流量	mass flow rate		active	kg/s fluid mass flow
+volumetric-flow-rate	metric	体积流量	volumetric flow rate		active	m³/s fluid volume flow
+working-fluid	concept	工质	working fluid		active	Fluid in thermodynamic cycle
+thermal-hydraulic-analysis	method	热工水力分析	thermal-hydraulic analysis		active	TH analysis methodology
+thermal-stress	metric	热应力	thermal stress		active	Stress from temperature gradient
+grashof-number	metric	格拉晓夫数	Grashof number	Gr	active	Natural convection parameter
+rayleigh-number	metric	瑞利数	Rayleigh number	Ra	active	Natural convection onset criterion
+friction-factor	metric	摩擦系数	friction factor		active	Pipe friction coefficient
+flow-distribution	concept	流量分配	flow distribution		active	Coolant flow allocation
+pressure-vessel	system	压力容器	pressure vessel		active	Pressure-retaining vessel

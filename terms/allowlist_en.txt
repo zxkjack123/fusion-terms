@@ -940,3 +940,11 @@ microstructure
 dislocation
 hardness
 welding
+
+# --- Thermal-Hydraulics (Batch 62) ---
+CHF
+Nu
+Re
+Pr
+Gr
+Ra
