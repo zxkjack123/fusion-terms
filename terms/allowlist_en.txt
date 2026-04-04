@@ -893,3 +893,22 @@ MOC
 lethargy
 burnup
 multigroup
+
+# --- CAD/Geometry (Batch 59) ---
+CSG
+BREP
+DAGMC
+MOAB
+MCAM
+IGES
+STL
+OCC
+Paramak
+Cubit
+Trelis
+voxel
+imprinting
+merging
+graveyard
+watertight
+skyshine

@@ -5693,3 +5693,65 @@ isotopic composition	isotopic-composition	en	preferred	preferred en
 同位素组成	isotopic-composition	zh	preferred	preferred zh
 burnup	burnup	en	preferred	preferred en
 燃耗深度	burnup	zh	preferred	preferred zh
+
+# ==== Batch 59: CAD & Geometry Modeling ====
+constructive solid geometry	csg	en	preferred	preferred en
+构造实体几何	csg	zh	preferred	preferred zh
+CSG	csg	abbr	preferred	canonical abbr
+boundary representation	b-rep	en	preferred	preferred en
+边界表示	b-rep	zh	preferred	preferred zh
+B-rep	b-rep	abbr	preferred	canonical abbr
+BREP	b-rep	abbr	alias	no-hyphen form
+faceted geometry	faceted-geometry	en	preferred	preferred en
+面片化几何	faceted-geometry	zh	preferred	preferred zh
+Cubit	cubit	en	preferred	preferred en
+Coreform Cubit	cubit	en	alias	current product name
+Trelis	trelis	en	preferred	preferred en
+MCAM	mcam	abbr	preferred	canonical abbr
+MC Auto-Modeling	mcam	en	alias	expanded name
+tetrahedral mesh	tetrahedral-mesh	en	preferred	preferred en
+四面体网格	tetrahedral-mesh	zh	preferred	preferred zh
+tet mesh	tetrahedral-mesh	en	alias	short form
+hexahedral mesh	hexahedral-mesh	en	preferred	preferred en
+六面体网格	hexahedral-mesh	zh	preferred	preferred zh
+hex mesh	hexahedral-mesh	en	alias	short form
+voxel model	voxel-model	en	preferred	preferred en
+体素模型	voxel-model	zh	preferred	preferred zh
+voxel geometry	voxel-model	en	alias	variant
+CAD-to-MC conversion	cad-to-mc-conversion	en	preferred	preferred en
+CAD到MC转换	cad-to-mc-conversion	zh	preferred	preferred zh
+STEP format	step-format	en	preferred	preferred en
+STEP格式	step-format	zh	preferred	preferred zh
+ISO 10303	step-format	en	alias	ISO standard number
+IGES format	iges-format	en	preferred	preferred en
+IGES格式	iges-format	zh	preferred	preferred zh
+IGES	iges-format	abbr	preferred	canonical abbr
+STL format	stl-format	en	preferred	preferred en
+STL格式	stl-format	zh	preferred	preferred zh
+STL	stl-format	abbr	preferred	canonical abbr
+imprinting	imprinting	en	preferred	preferred en
+几何压印	imprinting	zh	preferred	preferred zh
+merging	merging	en	preferred	preferred en
+几何合并	merging	zh	preferred	preferred zh
+graveyard	graveyard	en	preferred	preferred en
+墓碑区	graveyard	zh	preferred	preferred zh
+void region	void-region	en	preferred	preferred en
+空区域	void-region	zh	preferred	preferred zh
+watertight geometry	watertight-geometry	en	preferred	preferred en
+水密几何	watertight-geometry	zh	preferred	preferred zh
+surface mesh	surface-mesh	en	preferred	preferred en
+表面网格	surface-mesh	zh	preferred	preferred zh
+OpenCASCADE	opencascade	en	preferred	preferred en
+OCC	opencascade	abbr	preferred	canonical abbr
+Open CASCADE Technology	opencascade	en	alias	full name
+MOAB	moab	en	preferred	preferred en
+Mesh-Oriented datABase	moab	en	alias	full name
+DAGMC	dagmc	en	preferred	preferred en
+Direct Accelerated Geometry Monte Carlo	dagmc	en	alias	full name
+Paramak	paramak	en	preferred	preferred en
+CAD simplification	cad-simplification	en	preferred	preferred en
+CAD简化	cad-simplification	zh	preferred	preferred zh
+geometry simplification	cad-simplification	en	alias	synonym
+conformal mesh	conformal-mesh	en	preferred	preferred en
+适体网格	conformal-mesh	zh	preferred	preferred zh
+body-fitted mesh	conformal-mesh	en	alias	synonym

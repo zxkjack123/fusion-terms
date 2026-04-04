@@ -1242,3 +1242,30 @@ kerma-factor	metric	KERMA因子	KERMA factor		active	Kinetic energy released per
 atom-density	metric	原子密度	atom density		active	Number density of atoms (atoms/barn-cm)
 isotopic-composition	concept	同位素组成	isotopic composition		active	Relative abundance of isotopes in a material
 burnup	metric	燃耗深度	burnup		active	Integrated energy production per unit mass (GWd/tHM)
+
+# ==== Batch 59: CAD & Geometry Modeling ====
+csg	method	构造实体几何	constructive solid geometry	CSG	active	Boolean-based solid modeling
+b-rep	method	边界表示	boundary representation	B-rep	active	Surface-based solid representation
+faceted-geometry	concept	面片化几何	faceted geometry		active	Triangulated surface geometry (DAGMC etc)
+cubit	code	Cubit	Cubit		active	Sandia/Coreform mesh generation tool
+trelis	code	Trelis	Trelis		active	Former commercial Cubit; now Coreform Cubit
+mcam	code	MCAM	MCAM		active	MC Auto-Modeling system
+tetrahedral-mesh	concept	四面体网格	tetrahedral mesh		active	Tet mesh for FEM/MC
+hexahedral-mesh	concept	六面体网格	hexahedral mesh		active	Hex mesh for FEM
+voxel-model	concept	体素模型	voxel model		active	Structured voxelized geometry
+cad-to-mc-conversion	method	CAD到MC转换	CAD-to-MC conversion		active	Converting CAD to MC transport geometry
+step-format	concept	STEP格式	STEP format		active	ISO 10303 CAD exchange format
+iges-format	concept	IGES格式	IGES format		active	Initial Graphics Exchange Specification
+stl-format	concept	STL格式	STL format		active	Stereolithography triangle mesh format
+imprinting	method	几何压印	imprinting		active	CAD repair: surface imprint at shared faces
+merging	method	几何合并	merging		active	CAD repair: merge coincident surfaces
+graveyard	concept	墓碑区	graveyard		active	MC geometry outer boundary region
+void-region	concept	空区域	void region		active	Non-material space in MC geometry
+watertight-geometry	concept	水密几何	watertight geometry		active	Gap-free geometry required by DAGMC
+surface-mesh	concept	表面网格	surface mesh		active	Triangulated surface representation
+opencascade	code	OpenCASCADE	OpenCASCADE	OCC	active	Open-source CAD kernel
+moab	code	MOAB	MOAB		active	Mesh-Oriented datABase
+dagmc	code	DAGMC	DAGMC		active	Direct Accelerated Geometry Monte Carlo
+paramak	code	Paramak	Paramak		active	Parametric fusion geometry generator
+cad-simplification	method	CAD简化	CAD simplification		active	Removing detail for MC/FEM
+conformal-mesh	concept	适体网格	conformal mesh		active	Body-fitted unstructured mesh

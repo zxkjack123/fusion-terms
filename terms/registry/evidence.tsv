@@ -1180,3 +1180,30 @@ kerma-factor	internal:fusion-terms:domain-expansion	Nuclear heating coefficient	
 atom-density	internal:fusion-terms:domain-expansion	Material specification quantity		2026-04-04
 isotopic-composition	internal:fusion-terms:domain-expansion	Material specification		2026-04-04
 burnup	https://en.wikipedia.org/wiki/Burnup			2026-04-04
+
+# ==== Batch 59: CAD & Geometry Modeling ====
+csg	https://en.wikipedia.org/wiki/Constructive_solid_geometry			2026-04-04
+b-rep	https://en.wikipedia.org/wiki/Boundary_representation			2026-04-04
+faceted-geometry	internal:fusion-terms:domain-expansion	Triangulated geometry for DAGMC etc		2026-04-04
+cubit	https://cubit.sandia.gov/			2026-04-04
+trelis	internal:fusion-terms:domain-expansion	Former commercial version of Cubit		2026-04-04
+mcam	internal:fusion-terms:domain-expansion	MC Auto-Modeling system (FDS)		2026-04-04
+tetrahedral-mesh	internal:fusion-terms:domain-expansion	Standard FEM mesh type		2026-04-04
+hexahedral-mesh	internal:fusion-terms:domain-expansion	Structured FEM mesh type		2026-04-04
+voxel-model	internal:fusion-terms:domain-expansion	Voxelized geometry representation		2026-04-04
+cad-to-mc-conversion	internal:fusion-terms:domain-expansion	CAD-to-MC workflow step		2026-04-04
+step-format	https://en.wikipedia.org/wiki/ISO_10303			2026-04-04
+iges-format	https://en.wikipedia.org/wiki/IGES			2026-04-04
+stl-format	https://en.wikipedia.org/wiki/STL_(file_format)			2026-04-04
+imprinting	internal:fusion-terms:domain-expansion	CAD repair operation in Cubit		2026-04-04
+merging	internal:fusion-terms:domain-expansion	CAD repair operation in Cubit		2026-04-04
+graveyard	internal:fusion-terms:domain-expansion	MC outer boundary region		2026-04-04
+void-region	internal:fusion-terms:domain-expansion	Non-material space in MC geometry		2026-04-04
+watertight-geometry	internal:fusion-terms:domain-expansion	Gap-free geometry for DAGMC		2026-04-04
+surface-mesh	internal:fusion-terms:domain-expansion	Triangulated surface representation		2026-04-04
+opencascade	https://dev.opencascade.org/			2026-04-04
+moab	https://sigma.mcs.anl.gov/moab-library/			2026-04-04
+dagmc	https://svalinn.github.io/DAGMC/			2026-04-04
+paramak	https://github.com/fusion-energy/paramak			2026-04-04
+cad-simplification	internal:fusion-terms:domain-expansion	Defeaturing for MC/FEM		2026-04-04
+conformal-mesh	internal:fusion-terms:domain-expansion	Body-fitted unstructured mesh		2026-04-04

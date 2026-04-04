@@ -316,7 +316,7 @@
 
 ### Phase 5: CAD/几何建模工具链
 
-#### Task 5.1: 添加 CAD 术语到三表
+#### ✅ Task 5.1: 添加 CAD 术语到三表
 
 - **目标**：新增 ~25 个 concept。已有 `mesh-generation`、`r2smesh` 需跳过。
 
@@ -362,7 +362,7 @@
   - ✅ validate_registry 通过
 - **潜在风险**：`Trelis` 已停产改名为 `Coreform Cubit`——notes 中注明；`dagmc` 可能需检查是否已存在
 
-#### Task 5.2: 同步 allowlist
+#### ✅ Task 5.2: 同步 allowlist
 
 - **目标**：CAD 术语追加到 allowlist
 - **修改内容**：allowlist_en.txt、allowlist_zh.txt 追加
