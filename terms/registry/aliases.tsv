@@ -6185,3 +6185,43 @@ breeder material	breeder-material	en	preferred	preferred en
 增殖材料	breeder-material	zh	preferred	preferred zh
 breeding material	breeder-material	en	alias	common variant
 breeder-material	breeder-material	en	alias	hyphenated form
+
+# ==== Batch 69: blanket segments + IFMIF ecosystem ====
+multi-module segment	multi-module-segment	en	preferred	preferred en
+多模块段	multi-module-segment	zh	preferred	preferred zh
+MMS	multi-module-segment	abbr	preferred	canonical abbr
+multi module segment	multi-module-segment	en	alias	dehyphenated form
+
+single-module segment	single-module-segment	en	preferred	preferred en
+单模块段	single-module-segment	zh	preferred	preferred zh
+SMS	single-module-segment	abbr	preferred	canonical abbr
+single module segment	single-module-segment	en	alias	dehyphenated form
+
+lithium target	lithium-target	en	preferred	preferred en
+锂靶	lithium-target	zh	preferred	preferred zh
+lithium-target	lithium-target	en	alias	hyphenated form
+
+free-surface lithium target	free-surface-lithium-target	en	preferred	preferred en
+自由表面锂靶	free-surface-lithium-target	zh	preferred	preferred zh
+free surface lithium target	free-surface-lithium-target	en	alias	dehyphenated form
+free-surface-lithium-target	free-surface-lithium-target	en	alias	fully hyphenated form
+
+EVEDA Lithium Test Loop	eltl	en	preferred	preferred en (full name)
+EVEDA锂试验回路	eltl	zh	preferred	preferred zh
+ELTL	eltl	abbr	preferred	canonical abbr
+
+Linear IFMIF Prototype Accelerator	lipac	en	preferred	preferred en (full name)
+线性IFMIF原型加速器	lipac	zh	preferred	preferred zh
+LIPAc	lipac	abbr	preferred	canonical abbr
+
+Engineering Validation and Engineering Design Activities	eveda	en	preferred	preferred en (full name)
+工程验证与工程设计活动	eveda	zh	preferred	preferred zh
+EVEDA	eveda	abbr	preferred	canonical abbr
+
+lithium loop	lithium-loop	en	preferred	preferred en
+锂回路	lithium-loop	zh	preferred	preferred zh
+lithium-loop	lithium-loop	en	alias	hyphenated form
+
+liquid lithium purification	liquid-lithium-purification	en	preferred	preferred en
+液态锂纯化	liquid-lithium-purification	zh	preferred	preferred zh
+liquid-lithium-purification	liquid-lithium-purification	en	alias	hyphenated form

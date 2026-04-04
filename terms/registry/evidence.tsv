@@ -1368,3 +1368,12 @@ lithium-metasilicate	internal:registry-gap-review:batch3	Breeder ceramic sibling
 lithium-oxide	internal:registry-gap-review:batch3	Classic breeder material Li₂O	copilot	2026-04-04
 lithium-rich-zirconate	internal:registry-gap-review:batch3	Breeder material Li₈ZrO₆	copilot	2026-04-04
 breeder-material	internal:registry-gap-review:batch3	Superordinate concept for breeding materials	copilot	2026-04-04
+multi-module-segment	internal:registry-gap-review:batch3	DCLL/HCPB blanket module architecture term	copilot	2026-04-04
+single-module-segment	internal:registry-gap-review:batch3	Blanket module architecture term (paired with MMS)	copilot	2026-04-04
+lithium-target	internal:registry-gap-review:batch3	IFMIF core component	copilot	2026-04-04
+free-surface-lithium-target	internal:registry-gap-review:batch3	IFMIF/ELTL target design	copilot	2026-04-04
+eltl	internal:registry-gap-review:batch3	IFMIF liquid lithium loop validation facility	copilot	2026-04-04
+lipac	internal:registry-gap-review:batch3	IFMIF prototype accelerator	copilot	2026-04-04
+eveda	internal:registry-gap-review:batch3	IFMIF project phase	copilot	2026-04-04
+lithium-loop	internal:registry-gap-review:batch3	Liquid lithium transport/purification system	copilot	2026-04-04
+liquid-lithium-purification	internal:registry-gap-review:batch3	ELTL/IFMIF key process	copilot	2026-04-04

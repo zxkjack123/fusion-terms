@@ -1436,3 +1436,14 @@ lithium-metasilicate	material	偏硅酸锂	lithium metasilicate		active	增殖�
 lithium-oxide	material	氧化锂	lithium oxide		active	经典增殖材料 Li₂O
 lithium-rich-zirconate	material	富锂锆酸盐	lithium-rich zirconate		active	增殖材料 Li₈ZrO₆
 breeder-material	concept	增殖材料	breeder material		active	产氚增殖材料上位概念
+
+# ==== Batch 69: blanket segments + IFMIF ecosystem ====
+multi-module-segment	system	多模块段	multi-module segment	MMS	active	DCLL/HCPB 包层模块架构
+single-module-segment	system	单模块段	single-module segment	SMS	active	包层模块架构（与 MMS 成对）
+lithium-target	system	锂靶	lithium target		active	IFMIF 核心组件
+free-surface-lithium-target	system	自由表面锂靶	free-surface lithium target		active	IFMIF/ELTL 靶设计
+eltl	device	EVEDA锂试验回路	EVEDA Lithium Test Loop	ELTL	active	IFMIF 液态锂回路验证装置
+lipac	device	线性IFMIF原型加速器	Linear IFMIF Prototype Accelerator	LIPAc	active	IFMIF 加速器原型
+eveda	concept	工程验证与工程设计活动	Engineering Validation and Engineering Design Activities	EVEDA	active	IFMIF 项目阶段
+lithium-loop	system	锂回路	lithium loop		active	液态锂输运/净化系统
+liquid-lithium-purification	concept	液态锂纯化	liquid lithium purification		active	IFMIF/ELTL 关键工艺

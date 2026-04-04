@@ -174,7 +174,7 @@
 
 ### Phase 2: 包层架构 + IFMIF 生态（Themes B+C — Batch 69）
 
-#### Task 2.1: 添加 9 个概念到三表（MMS/SMS + IFMIF 子设施/工艺）
+#### ✅ Task 2.1: 添加 9 个概念到三表（MMS/SMS + IFMIF 子设施/工艺）
 
 - **目标**：补全包层模块段架构术语对（MMS/SMS）和 IFMIF 设施族的关键子概念
 - **修改内容**：
