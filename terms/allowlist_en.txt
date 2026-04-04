@@ -1077,3 +1077,11 @@ HIP
 interlock
 isostatic
 diffusion
+
+# --- Batch 76 Phase 3 allowlist sync ---
+ISI
+AM
+TCWS
+ADS
+radiolysis
+additive

@@ -366,7 +366,7 @@
   - ✅ validate_registry 通过无错误
 - **潜在风险**：`radiolysis` token 是新词，需确认 allowlist 同步（Task 3.2）
 
-#### Task 3.2: Batch 76 allowlist 同步
+#### ✅ Task 3.2: Batch 76 allowlist 同步
 
 - **目标**：将 Batch 76 新增术语的缺失 token 追加到 allowlist
 - **修改内容**：
