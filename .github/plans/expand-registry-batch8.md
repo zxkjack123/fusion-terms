@@ -298,7 +298,7 @@
   - ✅ `grep -P '^transformer\t' terms/registry/aliases.tsv` 映射到 `transformer` 概念而非其他
 - **潜在风险**：`transformer` 可能在 alias 搜索中与 `inductive-operation` 描述中的 "transformer action" 产生误解（但描述字段不参与 alias 匹配，无实际风险）
 
-#### Task 2.2: Batch 85 allowlist 同步
+#### ✅ Task 2.2: Batch 85 allowlist 同步
 
 - **目标**：将 Batch 85 所有新增 EN token / ZH 术语同步到 allowlist
 - **修改内容**：

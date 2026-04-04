@@ -1211,3 +1211,23 @@ atmospheric-dispersion
 atmospheric-diffusion
 environmental-qualification
 EQ
+
+# --- Batch 85 Phase 2 allowlist sync ---
+bus-bar
+busbar
+switchgear
+transformer
+power-transformer
+emergency-diesel-generator
+EDG
+uninterruptible-power-supply
+UPS
+modularization
+modularisation
+hot-functional-testing
+HFT
+construction-permit
+operating-license
+operating-licence
+configuration-management
+CM
