@@ -5471,3 +5471,82 @@ Monte Carlo sampling	monte-carlo-sampling	en	preferred	preferred en
 蒙特卡罗抽样	monte-carlo-sampling	zh	preferred	preferred zh
 goodness of fit	goodness-of-fit	en	preferred	preferred en
 拟合优度	goodness-of-fit	zh	preferred	preferred zh
+
+# ==== Batch 56: HPC / Parallel Computing / Workflow ====
+MPI	mpi	abbr	preferred	canonical abbr
+消息传递接口	mpi	zh	preferred	preferred zh
+Message Passing Interface	mpi	en	alias	full name
+OpenMP	openmp	en	preferred	preferred en
+GPU offloading	gpu-offloading	en	preferred	preferred en
+GPU卸载	gpu-offloading	zh	preferred	preferred zh
+GPU加速	gpu-offloading	zh	alias	common variant
+SLURM	slurm	abbr	preferred	canonical abbr
+PBS	pbs	abbr	preferred	canonical abbr
+Portable Batch System	pbs	en	alias	full name
+batch job	batch-job	en	preferred	preferred en
+批作业	batch-job	zh	preferred	preferred zh
+批处理作业	batch-job	zh	alias	expanded form
+compute node	compute-node	en	preferred	preferred en
+计算节点	compute-node	zh	preferred	preferred zh
+CPU core	cpu-core	en	preferred	preferred en
+CPU核心	cpu-core	zh	preferred	preferred zh
+处理器核心	cpu-core	zh	alias	variant
+walltime	walltime	en	preferred	preferred en
+墙钟时间	walltime	zh	preferred	preferred zh
+wall time	walltime	en	alias	space variant
+scalability	scalability	en	preferred	preferred en
+可扩展性	scalability	zh	preferred	preferred zh
+load balancing	load-balancing	en	preferred	preferred en
+负载均衡	load-balancing	zh	preferred	preferred zh
+负载平衡	load-balancing	zh	alias	variant
+Apptainer	apptainer	en	preferred	preferred en
+Singularity	singularity	en	preferred	preferred en
+container	container	en	preferred	preferred en
+容器	container	zh	preferred	preferred zh
+容器化	container	zh	alias	containerization
+CI/CD	ci-cd	abbr	preferred	canonical abbr
+持续集成/持续部署	ci-cd	zh	preferred	preferred zh
+continuous integration	ci-cd	en	alias	CI part
+持续集成	ci-cd	zh	alias	CI part
+regression test	regression-test	en	preferred	preferred en
+回归测试	regression-test	zh	preferred	preferred zh
+domain decomposition	domain-decomposition	en	preferred	preferred en
+区域分解	domain-decomposition	zh	preferred	preferred zh
+thread	thread	en	preferred	preferred en
+线程	thread	zh	preferred	preferred zh
+process	os-process	en	preferred	preferred en (OS context)
+进程	os-process	zh	preferred	preferred zh
+parallel efficiency	parallel-efficiency	en	preferred	preferred en
+并行效率	parallel-efficiency	zh	preferred	preferred zh
+speedup	speedup	en	preferred	preferred en
+加速比	speedup	zh	preferred	preferred zh
+Amdahl's law	amdahls-law	en	preferred	preferred en
+Amdahl定律	amdahls-law	zh	preferred	preferred zh
+阿姆达尔定律	amdahls-law	zh	alias	full transliteration
+strong scaling	strong-scaling	en	preferred	preferred en
+强扩展	strong-scaling	zh	preferred	preferred zh
+weak scaling	weak-scaling	en	preferred	preferred en
+弱扩展	weak-scaling	zh	preferred	preferred zh
+memory bandwidth	memory-bandwidth	en	preferred	preferred en
+内存带宽	memory-bandwidth	zh	preferred	preferred zh
+cache miss	cache-miss	en	preferred	preferred en
+缓存未命中	cache-miss	zh	preferred	preferred zh
+interconnect	interconnect	en	preferred	preferred en
+互联网络	interconnect	zh	preferred	preferred zh
+InfiniBand	infiniband	en	preferred	preferred en
+job scheduler	job-scheduler	en	preferred	preferred en
+作业调度器	job-scheduler	zh	preferred	preferred zh
+queue	queue	en	preferred	preferred en
+队列	queue	zh	preferred	preferred zh
+partition	queue	en	alias	SLURM terminology
+分区	queue	zh	alias	SLURM terminology
+SSH tunnel	ssh-tunnel	en	preferred	preferred en
+SSH隧道	ssh-tunnel	zh	preferred	preferred zh
+environment module	environment-module	en	preferred	preferred en
+环境模块	environment-module	zh	preferred	preferred zh
+scratch filesystem	scratch-filesystem	en	preferred	preferred en
+临时文件系统	scratch-filesystem	zh	preferred	preferred zh
+checkpoint/restart	checkpoint-restart	en	preferred	preferred en
+断点续算	checkpoint-restart	zh	preferred	preferred zh
+profiler	profiler	en	preferred	preferred en
+性能分析器	profiler	zh	preferred	preferred zh

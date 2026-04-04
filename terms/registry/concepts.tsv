@@ -1141,3 +1141,40 @@ response-surface	method	响应面	response surface	RSM	active	Response surface m
 latin-hypercube-sampling	method	拉丁超立方抽样	Latin hypercube sampling	LHS	active	Stratified sampling method for UQ
 monte-carlo-sampling	method	蒙特卡罗抽样	Monte Carlo sampling		active	Random sampling for statistical estimation
 goodness-of-fit	metric	拟合优度	goodness of fit		active	Statistical measure of model-data agreement
+
+# ==== Batch 56: HPC / Parallel Computing / Workflow ====
+mpi	code	消息传递接口	MPI	MPI	active	Message Passing Interface for distributed parallel computing
+openmp	code	OpenMP	OpenMP	OpenMP	active	Shared-memory parallel programming API
+gpu-offloading	method	GPU卸载	GPU offloading		active	Offloading computation to GPU accelerators
+slurm	code	SLURM	SLURM	SLURM	active	Simple Linux Utility for Resource Management
+pbs	code	PBS	PBS	PBS	active	Portable Batch System job scheduler
+batch-job	concept	批作业	batch job		active	Non-interactive queued computational job
+compute-node	concept	计算节点	compute node		active	HPC cluster worker node (distinct from mesh node)
+cpu-core	concept	CPU核心	CPU core		active	Processor core (distinct from plasma core)
+walltime	metric	墙钟时间	walltime		active	Elapsed real-time for a job
+scalability	metric	可扩展性	scalability		active	Performance improvement with added resources
+load-balancing	method	负载均衡	load balancing		active	Distributing work evenly across processors
+apptainer	code	Apptainer	Apptainer		active	HPC container runtime (formerly Singularity)
+singularity	code	Singularity	Singularity		active	Former name of Apptainer container runtime
+container	concept	容器	container		active	OS-level virtualization for reproducible computing
+ci-cd	method	持续集成/持续部署	CI/CD	CI/CD	active	Continuous Integration / Continuous Deployment
+regression-test	method	回归测试	regression test		active	Testing to ensure changes don't break existing functionality
+domain-decomposition	method	区域分解	domain decomposition		active	Partitioning computational domain for parallel execution
+thread	concept	线程	thread		active	Lightweight execution unit within a process
+os-process	concept	进程	process		active	OS-level process (distinct from PROCESS code)
+parallel-efficiency	metric	并行效率	parallel efficiency		active	Ratio of speedup to processor count
+speedup	metric	加速比	speedup		active	Performance gain from parallelization
+amdahls-law	concept	Amdahl定律	Amdahl's law		active	Upper bound on parallel speedup
+strong-scaling	concept	强扩展	strong scaling		active	Fixed problem size, increasing processors
+weak-scaling	concept	弱扩展	weak scaling		active	Problem size proportional to processor count
+memory-bandwidth	metric	内存带宽	memory bandwidth		active	Data transfer rate between memory and CPU
+cache-miss	concept	缓存未命中	cache miss		active	Failed cache lookup requiring main memory access
+interconnect	concept	互联网络	interconnect		active	Network connecting HPC nodes
+infiniband	concept	InfiniBand	InfiniBand		active	High-bandwidth low-latency interconnect
+job-scheduler	code	作业调度器	job scheduler		active	Software managing HPC job queue
+queue	concept	队列	queue		active	Job scheduling queue/partition
+ssh-tunnel	method	SSH隧道	SSH tunnel		active	Encrypted forwarding of network connections
+environment-module	code	环境模块	environment module		active	Dynamic modification of shell environment (module load)
+scratch-filesystem	concept	临时文件系统	scratch filesystem		active	HPC temporary high-speed storage
+checkpoint-restart	method	断点续算	checkpoint/restart		active	Saving/restoring computation state for fault tolerance
+profiler	code	性能分析器	profiler		active	Performance analysis tool (gprof, perf, VTune)

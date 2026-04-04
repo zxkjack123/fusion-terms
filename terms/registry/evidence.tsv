@@ -1079,3 +1079,40 @@ response-surface	https://en.wikipedia.org/wiki/Response_surface_methodology			20
 latin-hypercube-sampling	https://en.wikipedia.org/wiki/Latin_hypercube_sampling			2026-04-04
 monte-carlo-sampling	https://en.wikipedia.org/wiki/Monte_Carlo_method			2026-04-04
 goodness-of-fit	https://en.wikipedia.org/wiki/Goodness_of_fit			2026-04-04
+
+# ==== Batch 56: HPC / Parallel Computing / Workflow ====
+mpi	https://en.wikipedia.org/wiki/Message_Passing_Interface			2026-04-04
+openmp	https://en.wikipedia.org/wiki/OpenMP			2026-04-04
+gpu-offloading	https://en.wikipedia.org/wiki/General-purpose_computing_on_graphics_processing_units			2026-04-04
+slurm	https://en.wikipedia.org/wiki/Slurm_Workload_Manager			2026-04-04
+pbs	https://en.wikipedia.org/wiki/Portable_Batch_System			2026-04-04
+batch-job	internal:fusion-terms:domain-expansion	HPC workflow concept		2026-04-04
+compute-node	internal:fusion-terms:domain-expansion	HPC architecture concept		2026-04-04
+cpu-core	internal:fusion-terms:domain-expansion	Processor architecture concept		2026-04-04
+walltime	internal:fusion-terms:domain-expansion	HPC scheduling metric		2026-04-04
+scalability	https://en.wikipedia.org/wiki/Scalability			2026-04-04
+load-balancing	https://en.wikipedia.org/wiki/Load_balancing_(computing)			2026-04-04
+apptainer	https://en.wikipedia.org/wiki/Singularity_(software)			2026-04-04
+singularity	https://en.wikipedia.org/wiki/Singularity_(software)			2026-04-04
+container	https://en.wikipedia.org/wiki/OS-level_virtualization			2026-04-04
+ci-cd	https://en.wikipedia.org/wiki/CI/CD			2026-04-04
+regression-test	https://en.wikipedia.org/wiki/Regression_testing			2026-04-04
+domain-decomposition	https://en.wikipedia.org/wiki/Domain_decomposition_methods			2026-04-04
+thread	https://en.wikipedia.org/wiki/Thread_(computing)			2026-04-04
+os-process	https://en.wikipedia.org/wiki/Process_(computing)			2026-04-04
+parallel-efficiency	internal:fusion-terms:domain-expansion	Parallel computing metric		2026-04-04
+speedup	https://en.wikipedia.org/wiki/Speedup			2026-04-04
+amdahls-law	https://en.wikipedia.org/wiki/Amdahl%27s_law			2026-04-04
+strong-scaling	internal:fusion-terms:domain-expansion	HPC scaling concept		2026-04-04
+weak-scaling	internal:fusion-terms:domain-expansion	HPC scaling concept		2026-04-04
+memory-bandwidth	internal:fusion-terms:domain-expansion	Computer architecture metric		2026-04-04
+cache-miss	internal:fusion-terms:domain-expansion	Computer architecture concept		2026-04-04
+interconnect	internal:fusion-terms:domain-expansion	HPC networking concept		2026-04-04
+infiniband	https://en.wikipedia.org/wiki/InfiniBand			2026-04-04
+job-scheduler	internal:fusion-terms:domain-expansion	HPC resource management		2026-04-04
+queue	internal:fusion-terms:domain-expansion	HPC job scheduling concept		2026-04-04
+ssh-tunnel	https://en.wikipedia.org/wiki/Tunneling_protocol#SSH			2026-04-04
+environment-module	https://en.wikipedia.org/wiki/Environment_Modules_(software)			2026-04-04
+scratch-filesystem	internal:fusion-terms:domain-expansion	HPC temporary storage concept		2026-04-04
+checkpoint-restart	https://en.wikipedia.org/wiki/Application_checkpointing			2026-04-04
+profiler	https://en.wikipedia.org/wiki/Profiling_(computer_programming)			2026-04-04

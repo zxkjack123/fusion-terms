@@ -114,7 +114,7 @@
 
 ### Phase 2: HPC / 并行计算 / 工作流
 
-#### Task 2.1: 添加 HPC 术语到三表
+#### ✅ Task 2.1: 添加 HPC 术语到三表
 
 - **目标**：新增 ~35 个 concept
 
@@ -170,7 +170,7 @@
   - ✅ validate_registry 通过
 - **潜在风险**：`node` 使用 `compute-node` 消歧；`core` 使用 `cpu-core`；`GPU` 使用 `gpu-offloading`；`queue`/`partition` 在 SLURM 中同义需在 alias 中反映
 
-#### Task 2.2: 同步 allowlist
+#### ✅ Task 2.2: 同步 allowlist
 
 - **目标**：HPC 术语的单 token 形式追加到 allowlist
 - **修改内容**：追加 MPI, OpenMP, SLURM, PBS, Apptainer, Singularity, InfiniBand 等到 allowlist_en；追加 批作业、负载均衡、可扩展性 等到 allowlist_zh

@@ -859,3 +859,18 @@ FOM
 multiphysics
 RSM
 LHS
+
+# --- HPC / Parallel Computing (Batch 56) ---
+MPI
+OpenMP
+SLURM
+PBS
+Apptainer
+Singularity
+InfiniBand
+walltime
+scalability
+speedup
+profiler
+interconnect
+thread
