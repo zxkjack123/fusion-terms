@@ -84,7 +84,10 @@ def test_translation_dict_basic(tmp_path: Path) -> None:
     assert data["en2zh"]["design"] == "设计"
     assert data["en2zh"]["tritium breeding ratio"] == "氚增殖比"
     assert "en2zh_short" in data
-    assert data["en2zh_short"] == {}
+    assert "TBR" not in data["en2zh"]
+    assert "TBR" in data["en2zh_short"]
+    assert data["en2zh_short"]["TBR"]["zh"] == "氚增殖比"
+    assert data["en2zh_short"]["TBR"]["concept_id"] == "tritium-breeding-ratio"
     assert data["metadata"]["pairs_zh2en"] == len(data["zh2en"])
     assert data["metadata"]["pairs_en2zh"] == len(data["en2zh"])
 
@@ -241,7 +244,9 @@ def test_translation_dict_abbr_aliases(tmp_path: Path) -> None:
     data = _run_export_translation(repo_root, terms_dir, out_dir)
 
     assert data["zh2en"]["CFETR"] == "CFETR"
-    assert data["en2zh"]["CFETR"] == "中国聚变工程试验堆"
+    assert "CFETR" not in data["en2zh"]
+    assert data["en2zh_short"]["CFETR"]["zh"] == "中国聚变工程试验堆"
+    assert data["en2zh_short"]["CFETR"]["concept_id"] == "cfetr"
 
 
 def test_translation_dict_short_en_keys_segregated(tmp_path: Path) -> None:
@@ -295,8 +300,9 @@ def test_translation_dict_short_en_keys_segregated(tmp_path: Path) -> None:
     assert "D" in data["en2zh_short"]
     assert "CS" in data["en2zh_short"]
 
-    assert "TBR" in data["en2zh"]
-    assert "TBR" not in data["en2zh_short"]
+    assert "TBR" not in data["en2zh"]
+    assert "TBR" in data["en2zh_short"]
+    assert data["en2zh_short"]["TBR"]["concept_id"] == "tritium-breeding-ratio"
 
     assert "β" in data["en2zh"]
     assert "β" not in data["en2zh_short"]

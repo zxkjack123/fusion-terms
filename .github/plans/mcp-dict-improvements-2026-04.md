@@ -177,7 +177,7 @@
   - ✅ 原有 len < 3 的短 key（如 `D`、`CS`、`RH`）行为不变
 - **潜在风险**：所有 `lang=abbr` 别名（包括 CFETR/ITER/EAST 等较长缩写）均会从 en2zh 移至 en2zh_short。MCP server 消费者需同时查询 en2zh 和 en2zh_short 两个映射。若 MCP 仅查 en2zh，则这些缩写的翻译会丢失。需确认 MCP server 已具备此能力（用户反馈表明 MCP 已使用 en2zh_short）。
 
-#### Task 2.3: 更新受影响的测试断言
+#### ✅ Task 2.3: 更新受影响的测试断言
 
 - **目标**：使现有测试与新的 en2zh_short 行为一致
 - **修改内容**：
