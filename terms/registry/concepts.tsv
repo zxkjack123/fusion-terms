@@ -673,6 +673,8 @@ parametric-instability	concept	参数不稳定性	parametric instability		active
 # ==== Batch 21: Fusion Reactions & Nuclear Physics ====
 dt-reaction	concept	D-T反应	D-T reaction		active	Deuterium-tritium fusion reaction producing 14.1 MeV neutron and 3.5 MeV alpha
 deuterium-tritium	concept	氘氚	deuterium-tritium	D-T	active	Mixture of deuterium and tritium used as primary fusion fuel
+deuterium-tritium-plasma	concept	氘氚等离子体	deuterium-tritium plasma		active	Plasma composed of deuterium and tritium ions
+dt-fuel-cycle	concept	氘氚燃料循环	D-T fuel cycle		active	Closed fuel cycle specific to deuterium-tritium fusion
 dd-reaction	concept	D-D反应	D-D reaction		active	Deuterium-deuterium fusion with two branches producing T+p or He3+n
 d-he3-reaction	concept	D-³He反应	D-³He reaction		active	Low-neutron advanced fuel fusion reaction producing proton and alpha
 fusion-triple-product	metric	聚变三乘积	fusion triple product		active	Product n·T·tau_E used as figure of merit for fusion ignition conditions

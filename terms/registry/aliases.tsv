@@ -2411,7 +2411,14 @@ deuterium-tritium	deuterium-tritium	en	preferred	preferred en
 D-T	deuterium-tritium	abbr	preferred	canonical abbr
 DT	deuterium-tritium	abbr	alias	no-hyphen form
 氘氚燃料	deuterium-tritium	zh	alias	compound: DT fuel
-氘氚等离子体	deuterium-tritium	zh	alias	compound: DT plasma
+氘氚等离子体	deuterium-tritium-plasma	zh	preferred	preferred zh
+deuterium-tritium plasma	deuterium-tritium-plasma	en	preferred	preferred en
+D-T plasma	deuterium-tritium-plasma	en	alias	abbr form
+D-T等离子体	deuterium-tritium-plasma	zh	alias	mixed form
+氘氚燃料循环	dt-fuel-cycle	zh	preferred	preferred zh
+D-T fuel cycle	dt-fuel-cycle	en	preferred	preferred en
+deuterium-tritium fuel cycle	dt-fuel-cycle	en	alias	full expansion
+氘氚燃料循环系统	dt-fuel-cycle	zh	alias	with trailing 系统
 D-D reaction	dd-reaction	en	preferred
 D-D反应	dd-reaction	zh	preferred
 deuterium-deuterium reaction	dd-reaction	en	alias

@@ -96,7 +96,7 @@
   - ✅ 验证通过无报错
 - **潜在风险**：`DT` 在其他领域可能有歧义（如 digital twin），但在本注册表聚变语境下明确。en2zh_short 中 `DT`（2 字符）会自动通过现有 `len < 3` 条件进入 en2zh_short。
 
-#### Task 1.2: 新增 D-T 复合概念（plasma, fuel cycle）
+#### ✅ Task 1.2: 新增 D-T 复合概念（plasma, fuel cycle）
 
 - **目标**：建立 `deuterium-tritium-plasma` 和 `dt-fuel-cycle` 概念，覆盖 en2zh 方向的 "D-T plasma → 氘氚等离子体" 和 "D-T fuel cycle → 氘氚燃料循环" 映射
 - **修改内容**：
