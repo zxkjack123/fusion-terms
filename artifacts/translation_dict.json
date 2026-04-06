@@ -5,24 +5,15 @@
     "AC loss": "交流损耗",
     "AC losses": "交流损耗",
     "AC/DC converter": "交直流变换器",
-    "ACE": "ACE格式",
     "ACE format": "ACE格式",
-    "ACP": "活化腐蚀产物",
-    "ADS": "厂房去氚系统",
-    "ALARA": "合理可行尽量低",
-    "ALI": "年摄入量限值",
     "ANSYS": "ANSYS",
     "ANSYS CFX": "CFX",
     "ANSYS Fluent": "Fluent",
-    "API": "API",
     "ARC": "ARC",
     "ARC device": "ARC",
     "ARC tokamak": "ARC",
-    "ARM": "区域辐射监测仪",
     "ASDEX Upgrade": "ASDEX Upgrade",
-    "ASIPP": "等离子体物理研究所",
     "ASTRA": "ASTRA",
-    "AUG": "ASDEX Upgrade",
     "Abaqus": "Abaqus",
     "Alfven wave": "阿尔芬波",
     "Alfvén cascade": "反剪切Alfvén本征模",
@@ -37,16 +28,9 @@
     "Automated System for TRansport Analysis": "ASTRA",
     "B powder injection": "硼粉注入",
     "B-dot probe": "磁探针",
-    "B-rep": "边界表示",
-    "BAE": "β诱导Alfvén本征模",
-    "BDBE": "超设计基准事件",
-    "BES": "束发射光谱",
     "BEST": "BEST",
-    "BOP": "电站辅助系统",
     "BOUT": "BOUT++",
     "BOUT++": "BOUT++",
-    "BPI": "硼粉注入",
-    "BREP": "边界表示",
     "Bateman equation": "Bateman方程",
     "Bayesian inference": "贝叶斯推断",
     "Be multiplier": "铍中子倍增层",
@@ -56,48 +40,28 @@
     "C-2W": "C-2W",
     "CAD simplification": "CAD简化",
     "CAD-to-MC conversion": "CAD到MC转换",
-    "CADIS": "CADIS",
     "CATIA": "CATIA",
-    "CCF": "共因失效",
-    "CCWS": "部件冷却水系统",
     "CENDL": "CENDL",
-    "CER": "电荷交换复合光谱",
-    "CFC": "碳纤维复合材料",
-    "CFD": "计算流体力学",
-    "CFETR": "中国聚变工程试验堆",
+    "CFETR design": "CFETR设计",
+    "CFETR overall design": "CFETR设计",
     "CFETRCOOLACT": "BEST",
-    "CFS": "联邦聚变系统",
     "CFX": "CFX",
     "CGYRO": "CGYRO",
     "CHEASE": "CHEASE",
-    "CHF": "临界热流密度",
-    "CHI": "同轴螺旋度注入",
-    "CHWS": "冷冻水系统",
-    "CI/CD": "持续集成/持续部署",
-    "CICC": "管内电缆导体",
-    "CIS": "中央联锁系统",
     "CLAM": "CLAM",
     "CLF-1": "CLF-1",
     "CLF-1 steel": "CLF-1",
     "CLISTE": "CLISTE",
     "CMake": "CMake",
-    "CODAC": "控制、数据获取与通信",
-    "COE": "电力成本",
     "COMSOL": "COMSOL",
     "COMSOL Multiphysics": "COMSOL",
     "CORSICA": "CORSICA",
-    "CPS": "冷却剂净化系统",
     "CPU core": "CPU核心",
     "CREATE-NL": "CREATE-NL",
-    "CSG": "构造实体几何",
-    "CSV": "CSV格式",
     "CSV format": "CSV格式",
     "CT injection": "紧凑环注入",
-    "CTE": "热膨胀系数",
-    "CTI": "紧凑环注入",
+    "CVD diamond window": "金刚石窗口",
     "CX loss": "电荷交换损失",
-    "CXRS": "电荷交换复合光谱",
-    "CXS": "电荷交换复合光谱",
     "Charpy impact test": "夏比冲击",
     "Charpy test": "夏比冲击",
     "China Fusion Engineering Test Reactor": "中国聚变工程试验堆",
@@ -113,18 +77,13 @@
     "Cubit": "Cubit",
     "D-D reaction": "D-D反应",
     "D-He3 reaction": "D-³He反应",
+    "D-T fuel cycle": "氘氚燃料循环",
+    "D-T plasma": "氘氚等离子体",
     "D-T reaction": "D-T反应",
     "D-³He reaction": "D-³He反应",
     "D1S": "D1S",
-    "DAC": "导出空气浓度",
     "DAGMC": "DAGMC",
-    "DBA": "设计基准事故",
-    "DBS": "多普勒背散射",
     "DBTT shift": "韧脆转变温度偏移",
-    "DCC": "剂量转换系数",
-    "DCLL": "双冷锂铅包层",
-    "DCS": "分布式控制系统",
-    "DEC": "直接能量转换",
     "DEMO": "示范堆",
     "DEMO-Oriented Neutron Source": "DONES",
     "DIII D": "DIII-D",
@@ -134,9 +93,7 @@
     "DIV3D": "DIV3D",
     "DONES": "DONES",
     "DONES facility": "DONES",
-    "DPF": "稠密等离子体焦点",
     "DT fuel cycle": "燃料循环",
-    "DWA": "介质壁加速器",
     "DXTRAN sphere": "DXTRAN球",
     "Debye length": "德拜长度",
     "Debye screening": "德拜屏蔽",
@@ -144,52 +101,35 @@
     "Debye sheath": "德拜鞘",
     "Debye shielding": "德拜屏蔽",
     "Design and Construction Rules for Mechanical Components of Nuclear Installations": "核设备设计建造规范",
-    "DiD": "纵深防御",
     "Direct Accelerated Geometry Monte Carlo": "DAGMC",
     "Direct One-Step method": "D1S",
     "Doppler backscattering": "多普勒背散射",
     "Doppler broadening": "多普勒展宽",
     "EAF": "EAF",
-    "EBW": "电子伯恩斯坦波",
-    "ECCD": "电子回旋电流驱动",
-    "ECE": "电子回旋辐射",
     "ECE imaging": "ECE成像",
-    "ECEI": "ECE成像",
-    "ECH": "电子回旋共振加热",
-    "ECRH": "电子回旋共振加热",
-    "EDG": "应急柴油发电机",
+    "ECH launcher": "ECRH发射天线",
+    "ECRH launcher": "ECRH发射天线",
     "EDGE2D": "EDGE2D-EIRENE",
     "EDGE2D-EIRENE": "EDGE2D-EIRENE",
     "EDGE2DEIRENE": "EDGE2D-EIRENE",
-    "EDS": "能谱分析",
-    "EDX": "能谱分析",
     "EFIT": "EFIT",
     "EIRENE": "EIRENE",
-    "ELM": "边缘局域模",
     "ELM mitigation": "ELM缓解",
     "ELM suppression": "ELM抑制",
     "ELM-induced erosion": "ELM诱发侵蚀",
-    "ELMs": "边缘局域模",
-    "ELTL": "EVEDA锂试验回路",
     "EM force": "电磁力",
     "EMC3": "EMC3-EIRENE",
     "EMC3-EIRENE": "EMC3-EIRENE",
     "EMC3EIRENE": "EMC3-EIRENE",
     "ENDF": "ENDF",
     "ENDF format": "ENDF格式",
-    "ENN": "新奥",
     "ENN Energy Research Institute": "新奥",
     "ENN compact fusion device": "新奥紧凑聚变装置",
     "ENN compact spherical tokamak": "新奥球形托卡马克",
-    "EPM": "高能粒子模",
-    "EPZ": "应急计划区",
-    "ETB": "边缘输运垒",
-    "ETG": "电子温度梯度模",
     "EUROFER": "EUROFER",
     "EUROFER-97": "EUROFER",
     "EUROFER97": "EUROFER",
     "EUROfusion": "欧洲聚变能组织",
-    "EVEDA": "工程验证与工程设计活动",
     "EVEDA Lithium Test Loop": "EVEDA锂试验回路",
     "EXL 50": "EXL-50",
     "EXL 50U": "EXL-50U",
@@ -207,30 +147,15 @@
     "Evaluated Nuclear Data File": "ENDF",
     "ExB drift": "E×B漂移",
     "E×B drift": "E×B漂移",
-    "F4E": "聚变能源机构",
     "F82H": "F82H",
     "F82H steel": "F82H",
-    "FAC": "流动加速腐蚀",
-    "FAT": "出厂验收测试",
-    "FCI": "流道插件",
-    "FEM": "有限元方法",
     "FENDL": "FENDL",
-    "FES": "飞轮储能",
-    "FIR": "远红外偏振仪",
     "FISPACT": "FISPACT-II",
     "FISPACT-II": "FISPACT-II",
     "FISPACTII": "FISPACT-II",
     "FLUKA": "FLUKA",
     "FLiBe": "氟化锂铍",
-    "FMEA": "失效模式与影响分析",
-    "FOAK": "首台堆",
-    "FOM": "品质因数",
-    "FPP": "聚变电站",
-    "FRC": "场反位形",
     "FRC merging": "场反并合",
-    "FSAR": "最终安全分析报告",
-    "FVM": "有限体积法",
-    "FW-CADIS": "FW-CADIS",
     "Faraday effect": "法拉第旋转",
     "Faraday rotation": "法拉第旋转",
     "Faraday screen": "法拉第屏",
@@ -246,9 +171,6 @@
     "Fusion Evaluated Nuclear Data Library": "FENDL",
     "Fusion for Energy": "聚变能源机构",
     "GACODE": "GACODE",
-    "GAE": "全局Alfvén本征模",
-    "GAM": "测地声模",
-    "GDC": "辉光放电清洗",
     "GENE": "GENE",
     "GK simulation": "回旋动理学模拟",
     "GKW": "GKW",
@@ -274,40 +196,18 @@
     "H*(10)": "周围剂量当量",
     "H-factor": "H因子",
     "H-mode": "高约束模",
-    "HAZ": "热影响区",
-    "HAZOP": "危险与可操作性分析",
     "HB11": "HB11 Energy",
     "HB11 Energy": "HB11 Energy",
-    "HCCB": "氦冷固态包层",
-    "HCD": "螺旋波电流驱动",
-    "HCF": "高周疲劳",
-    "HCLL": "氦冷锂铅包层",
-    "HCPB": "氦冷球床包层",
-    "HCSB": "氦冷固态包层",
-    "HDF5": "HDF5",
     "HELENA": "HELENA",
-    "HELIAS": "HELIAS",
     "HELIAS stellarator": "HELIAS",
-    "HFT": "热功能试验",
-    "HHF": "高热流测试",
-    "HIF": "重离子聚变",
-    "HIP": "热等静压",
+    "HEPA filter": "高效空气过滤器",
     "HL 2A": "HL-2A",
     "HL 2M": "HL-2M",
     "HL-2A": "HL-2A",
     "HL-2A tokamak": "HL-2A",
     "HL-2M": "HL-2M",
     "HL-2M tokamak": "HL-2M",
-    "HLW": "高放废物",
-    "HMI": "人机界面",
-    "HOR": "可徒手回收材料",
-    "HSX": "HSX",
-    "HTS": "高温超导体",
-    "HVAC": "暖通空调",
-    "HWC": "加氢水化学",
-    "HXR": "硬X射线",
     "Hartmann number": "哈特曼数",
-    "HazOp": "危险与可操作性分析",
     "He bubble": "氦泡",
     "He coolant": "氦冷却剂",
     "He embrittlement": "氦脆",
@@ -319,34 +219,17 @@
     "Hp(10)": "个人剂量当量",
     "I mode": "I模",
     "I-mode": "I模",
-    "IAEA": "国际原子能机构",
-    "IBW": "离子伯恩斯坦波",
-    "ICF": "惯性约束聚变",
     "ICRF antenna": "离子回旋天线",
     "ICRF launcher": "离子回旋天线",
-    "ICRH": "离子回旋共振加热",
-    "ICRP": "ICRP",
-    "IEC": "静电约束",
-    "IFC": "内燃料循环",
-    "IFMIF": "国际聚变材料辐照装置",
-    "IGES": "IGES格式",
     "IGES format": "IGES格式",
-    "IHX": "中间换热器",
-    "ILW": "中放废物",
     "IMAS": "IMAS",
     "IPB98(y,2)": "约束标度律",
-    "IPP": "马克斯·普朗克等离子体物理研究所",
     "IPP Garching": "马克斯·普朗克等离子体物理研究所",
     "IR thermography": "红外热成像",
     "IRDFF": "IRDFF",
-    "ISI": "在役检查",
     "ISO 10303": "STEP格式",
-    "ISS": "同位素分离系统",
-    "ITB": "内输运垒",
     "ITER-DEMO transition": "ITER到DEMO",
     "ITER-to-DEMO": "ITER到DEMO",
-    "ITG": "离子温度梯度模",
-    "IVC": "真空室内部件",
     "InfiniBand": "InfiniBand",
     "Institute of Plasma Physics CAS": "等离子体物理研究所",
     "Integrated Modelling and Analysis Suite": "IMAS",
@@ -358,19 +241,16 @@
     "J-integral": "J积分",
     "JEFF": "JEFF",
     "JENDL": "JENDL",
-    "JET": "JET",
     "JET Integrated Transport Code": "JINTRAC",
     "JET tokamak": "JET",
     "JINTRAC": "JINTRAC",
     "JOREK": "JOREK",
-    "JSON": "JSON格式",
     "JSON format": "JSON格式",
     "JT 60SA": "JT-60SA",
     "JT-60SA": "JT-60SA",
     "Japanese Evaluated Nuclear Data Library": "JENDL",
     "Joint European Torus": "JET",
     "Joint Evaluated Fission and Fusion File": "JEFF",
-    "KBM": "动理学气球模",
     "KERMA factor": "KERMA因子",
     "KMAX": "KMAX",
     "KMAX device": "KMAX",
@@ -383,26 +263,9 @@
     "L-H transition": "L-H转换",
     "L-mode": "低约束模",
     "L-to-H transition": "L-H转换",
-    "LBB": "先泄漏后断裂",
-    "LCF": "低周疲劳",
-    "LCFS": "分界面",
-    "LCOE": "平准化成本",
-    "LET": "线性能量传递",
     "LH wave": "低杂波",
-    "LHCD": "低杂波电流驱动",
-    "LHD": "大型螺旋装置",
-    "LHH": "低杂波加热",
-    "LHS": "拉丁超立方抽样",
-    "LIPAc": "线性IFMIF原型加速器",
-    "LLW": "低放废物",
-    "LMJ": "兆焦耳激光装置",
-    "LOCA": "失冷事故",
-    "LOFA": "失流事故",
-    "LOVA": "失真空事故",
-    "LPI": "激光等离子体相互作用",
     "LPP Fusion": "LPP Fusion",
     "LPPF": "LPP Fusion",
-    "LTS": "低温超导体",
     "L_c": "连接长度",
     "Langmuir probe": "朗缪尔探针",
     "Large Helical Device": "大型螺旋装置",
@@ -425,41 +288,24 @@
     "Li₂BeF₄": "氟化锂铍",
     "Li₂TiO₃": "钛酸锂",
     "Li₄SiO₄": "正硅酸锂",
-    "M-G": "电机-发电机组",
     "M3D-C1": "M3D-C1",
     "MARFE": "MARFE",
     "MARS-F": "MARS-F",
     "MAST U": "MAST-U",
     "MAST-U": "MAST-U",
     "MC Auto-Modeling": "MCAM",
-    "MCA": "最大可信事故",
-    "MCAM": "MCAM",
-    "MCF": "磁约束",
     "MCNP": "MCNP",
-    "MFP": "平均自由程",
-    "MGI": "大量气体注入",
     "MH bed": "金属氢化物床",
-    "MHD": "磁流体力学",
     "MHD dynamo": "发电机效应",
     "MHD equilibrium": "等离子体平衡",
     "MHD equilibrium reconstruction": "等离子体平衡",
     "MHD pressure drop": "MHD压降",
     "MHD stability limit": "MHD稳定极限",
-    "MIF": "磁化惯性聚变",
     "MIRA": "MIRA",
     "MISHKA": "MISHKA",
     "ML disruption prediction": "机器学习破裂预测",
-    "MMS": "多模块段",
     "MOAB": "MOAB",
-    "MOC": "特征线法",
-    "MPC": "模型预测控制",
-    "MPI": "消息传递接口",
-    "MPS": "装置保护系统",
     "MSC Nastran": "Nastran",
-    "MSE": "运动斯塔克效应",
-    "MSM": "主从机械手",
-    "MTF": "磁化惯性聚变",
-    "MTM": "微撕裂模",
     "Makefile": "Makefile",
     "Marshall gun": "同轴等离子体枪",
     "Matplotlib": "Matplotlib",
@@ -476,19 +322,11 @@
     "Motor-Generator": "电机-发电机组",
     "Multifaceted Asymmetric Radiation From the Edge": "MARFE",
     "N-parallel": "平行折射率",
-    "NAS": "中子活化系统",
-    "NBCD": "中性束电流驱动",
-    "NDT": "无损检测",
-    "NIF": "NIF",
+    "NEG pump": "非蒸散型吸气剂",
     "NIMROD": "NIMROD",
-    "NJOY": "NJOY",
-    "NOAK": "第N台堆",
     "NOVA": "NOVA",
-    "NQA": "核质量保证",
     "NSTX U": "NSTX-U",
     "NSTX-U": "NSTX-U",
-    "NTM": "新经典撕裂模",
-    "NTV": "新经典环向粘滞",
     "Nastran": "Nastran",
     "National Ignition Facility": "NIF",
     "National Spherical Torus Experiment Upgrade": "NSTX-U",
@@ -503,14 +341,10 @@
     "Norman": "C-2W",
     "NumPy": "NumPy",
     "Nusselt number": "努塞尔数",
-    "OCC": "OpenCASCADE",
-    "ODS": "氧化物弥散强化钢",
     "ODS steel": "氧化物弥散强化钢",
-    "OFC": "外燃料循环",
     "OMEGA": "OMEGA",
     "OMEGA laser": "OMEGA",
     "OMEGA laser facility": "OMEGA",
-    "OOP": "面向对象编程",
     "ORB5": "ORB5",
     "Open CASCADE Technology": "OpenCASCADE",
     "OpenCASCADE": "OpenCASCADE",
@@ -518,29 +352,11 @@
     "OpenMC": "OpenMC",
     "OpenMP": "OpenMP",
     "Opera": "Opera",
-    "PBS": "PBS",
-    "PCI": "相衬成像",
-    "PCS": "能量转换系统",
-    "PDW": "永久处置废物",
     "PF coil": "极向场线圈",
-    "PFC": "面向等离子体部件",
-    "PFM": "面向等离子体材料",
-    "PFR": "私有磁通区",
     "PHITS": "PHITS",
-    "PIC": "粒子网格法",
-    "PIE": "辐照后检验",
-    "PLC": "可编程逻辑控制器",
-    "PMI": "等离子体表面相互作用",
-    "PPCD": "脉冲极向电流驱动",
-    "PPS": "脉冲电源",
-    "PRF": "渗透降低因子",
     "PROCESS": "PROCESS",
     "PS current": "Pfirsch-Schlüter电流",
     "PS regime": "Pfirsch-Schlüter区",
-    "PSA": "概率安全评估",
-    "PSAR": "初步安全分析报告",
-    "PSI": "等离子体表面相互作用",
-    "PWI": "等离子体表面相互作用",
     "Pandas": "Pandas",
     "ParaView": "ParaView",
     "Paramak": "Paramak",
@@ -548,47 +364,30 @@
     "Pb-15.7Li": "锂铅",
     "Pd membrane": "钯膜",
     "Pd membrane reactor": "钯膜反应器",
+    "Penning gauge": "潘宁真空计",
+    "Penning vacuum gauge": "潘宁真空计",
     "Pfirsch-Schlüter current": "Pfirsch-Schlüter电流",
     "Pfirsch-Schlüter regime": "Pfirsch-Schlüter区",
-    "Pnet": "净电功率",
     "Poisson's ratio": "泊松比",
     "Portable Batch System": "PBS",
     "Prandtl number": "普朗特数",
     "Preliminary Safety Analysis Report": "初步安全分析报告",
     "Q value": "Q值",
     "QH-mode": "静默H模",
-    "QHS": "准螺旋对称",
-    "QSS": "准对称仿星器",
-    "Qeng": "工程增益因子",
     "R2S": "R2Smesh",
     "R2S method": "严格两步法",
     "R2Smesh": "R2Smesh",
-    "RAFM": "低活化铁素体/马氏体钢",
     "RAFM steel": "低活化铁素体/马氏体钢",
     "RAMI": "RAMI分析",
-    "RCC-MR": "核设备设计建造规范",
     "RE damage": "逃逸电子损伤",
     "REBCO": "稀土钡铜氧化物",
     "REXIE": "REXIE",
     "REXIE device": "REXIE",
     "RF absorption": "波吸收",
     "RF heating": "射频加热",
-    "RFP": "反场箍缩",
-    "RFX": "RFX-mod",
     "RFX mod": "RFX-mod",
     "RFX-mod": "RFX-mod",
-    "RGA": "残余气体分析仪",
-    "RIS": "辐照偏析",
-    "RMF": "旋转磁场",
-    "RMFo": "奇宇称旋转磁场",
-    "RMI": "Richtmyer-Meshkov不稳定性",
-    "RMP": "共振磁扰动",
-    "RRR": "分辨共振区",
-    "RSAE": "反剪切Alfvén本征模",
-    "RSM": "响应面",
     "RT instability": "瑞利-泰勒不稳定性",
-    "RTI": "瑞利-泰勒不稳定性",
-    "RWM": "电阻壁模",
     "Rankine cycle": "朗肯循环",
     "Rayleigh number": "瑞利数",
     "Rayleigh-Taylor instability": "瑞利-泰勒不稳定性",
@@ -599,22 +398,7 @@
     "Russian roulette": "俄罗斯轮盘赌",
     "S(alpha,beta)": "S(α,β)",
     "S(α,β)": "S(α,β)",
-    "SAR": "安全分析报告",
-    "SAT": "现场验收测试",
-    "SBO": "全厂断电事故",
-    "SCC": "应力腐蚀开裂",
-    "SDDR": "停堆剂量率",
-    "SDK": "SDK",
-    "SDS": "燃料储存与供应系统",
-    "SEM": "扫描电子显微镜",
     "SG-III": "神光三号",
-    "SHAx": "单螺旋态",
-    "SIC": "安全重要物项",
-    "SIL": "安全完整性等级",
-    "SLURM": "SLURM",
-    "SMBI": "超声分子束注入",
-    "SMS": "单模块段",
-    "SOL": "刮削层",
     "SOL Plasma Simulator": "SOLPS",
     "SOL filament": "等离子体丝状体",
     "SOL width": "SOL宽度",
@@ -623,19 +407,13 @@
     "SOLPS-ITER": "SOLPS-ITER",
     "SPARC": "SPARC",
     "SPARC tokamak": "SPARC",
-    "SPI": "碎裂弹丸注入",
-    "SPT": "小冲杆试验",
-    "SSA": "扇区子装配",
     "SSH tunnel": "SSH隧道",
     "SSPX": "SSPX",
     "SSPX device": "SSPX",
     "STEP": "STEP",
     "STEP format": "STEP格式",
     "STEP tokamak": "STEP",
-    "STL": "STL格式",
     "STL format": "STL格式",
-    "SWIP": "核工业西南物理研究院",
-    "SXR": "软X射线",
     "SYCOMORE": "SYCOMORE",
     "S_N method": "离散纵标法",
     "SciPy": "SciPy",
@@ -658,34 +436,17 @@
     "Super-X divertor": "Super-X偏滤器",
     "SuperMC": "SuperMC",
     "Sustained Spheromak Physics Experiment": "SSPX",
-    "TAA": "氚衡算区域",
-    "TAE": "环向阿尔芬本征模",
     "TAE Norman": "C-2W",
     "TAE Technologies": "TAE Technologies",
     "TALYS-based Evaluated Nuclear Data Library": "TENDL",
-    "TBC": "热障涂层",
-    "TBM": "产氚模块",
-    "TBR": "氚增殖比",
-    "TCAP": "热循环吸收工艺",
-    "TCWS": "托卡马克冷却水系统",
-    "TEM": "俘获电子模",
     "TENDL": "TENDL",
-    "TEP": "托卡马克排气处理系统",
-    "TES": "增殖剂氚提取系统",
     "TF coil": "纵场线圈",
     "TF ripple": "环向场纹波",
-    "TFC": "纵场线圈",
     "TGYRO": "TGYRO",
     "TH analysis": "热工水力分析",
-    "TLD": "热释光剂量计",
-    "TMA": "热机械分析",
-    "TMP": "涡轮分子泵",
-    "TPB": "氚渗透阻挡层",
     "TRANSP": "TRANSP",
     "TRIPOLI": "TRIPOLI",
-    "TRL": "技术就绪度",
     "TSC": "TSC",
-    "TWDEC": "行波直接能量转换器",
     "Taylor relaxation": "Taylor弛豫",
     "Taylor state": "Taylor态",
     "Tokamak Simulation Code": "TSC",
@@ -694,32 +455,19 @@
     "Troyon beta limit": "Troyon极限",
     "Troyon limit": "Troyon极限",
     "UEDGE": "UEDGE",
-    "UPS": "不间断电源",
-    "URR": "非分辨共振区",
-    "UTS": "极限抗拉强度",
     "V-4Cr-4Ti": "钒合金",
-    "VDE": "垂直位移事件",
-    "VTK": "VTK",
     "VisIt": "VisIt",
     "Visualization Toolkit": "VTK",
     "Vlasov equation": "Vlasov方程",
     "W accumulation": "钨积聚",
     "W fuzz": "钨绒毛",
-    "W7-X": "W7-X",
-    "WCCB": "水冷陶瓷包层",
-    "WCLL": "水冷锂铅包层",
-    "WCPB": "水冷球床包层",
-    "WDS": "水除氚系统",
     "Ware pinch": "瓦尔箍缩",
     "Ware pinch effect": "瓦尔箍缩",
     "Wendelstein 7-X": "W7-X",
     "X point": "X点",
     "X-point": "X点",
     "X-ray diffraction": "X射线衍射",
-    "XML": "XML格式",
     "XML format": "XML格式",
-    "XRD": "X射线衍射",
-    "YAML": "YAML格式",
     "YAML format": "YAML格式",
     "Young's modulus": "杨氏模量",
     "Z pinch": "Z箍缩",
@@ -730,8 +478,14 @@
     "ablator": "烧蚀层",
     "absorbed dose": "吸收剂量",
     "ac-dc-converter": "交直流变换器",
+    "acceleration grid": "加速栅极",
+    "accelerator grid": "加速栅极",
+    "accelerator-grid": "加速栅极",
+    "activated carbon filter": "活性炭过滤器",
+    "activated charcoal filter": "活性炭过滤器",
     "activated component transfer cask": "转运屏蔽容器",
     "activated corrosion product": "活化腐蚀产物",
+    "activated-carbon-filter": "活性炭过滤器",
     "activated-corrosion-product": "活化腐蚀产物",
     "activation": "活化",
     "activation analysis": "活化分析",
@@ -809,12 +563,16 @@
     "basemat": "底板",
     "batch job": "批作业",
     "beam beam fusion": "束束聚变",
+    "beam dump": "束流收集器",
     "beam emission spectroscopy": "束发射光谱",
+    "beam stop": "束流收集器",
     "beam target fusion": "束靶聚变",
     "beam-beam fusion": "束束聚变",
     "beam-beam-fusion": "束束聚变",
+    "beam-dump": "束流收集器",
     "beam-target fusion": "束靶聚变",
     "beam-target-fusion": "束靶聚变",
+    "bellows": "波纹管",
     "benchmark": "基准测试",
     "benchmarking": "基准测试",
     "beryllium multiplier": "铍中子倍增层",
@@ -833,6 +591,7 @@
     "biological shield": "生物屏蔽",
     "biological shielding": "生物屏蔽体",
     "biological-shield": "生物屏蔽",
+    "bioshield pit": "托卡马克堆坑",
     "blanket": "包层",
     "blanket module": "包层模块",
     "blistering": "起泡",
@@ -875,6 +634,7 @@
     "burnup": "燃耗深度",
     "burnup fraction": "燃耗份额",
     "burnup-fraction": "燃耗份额",
+    "bursting disc": "爆破片",
     "bus bar": "母线",
     "bus-bar": "母线",
     "busbar": "母线",
@@ -906,11 +666,14 @@
     "central-solenoid": "中心螺管",
     "ceramic breeder": "陶瓷增殖剂",
     "ceramic pebble bed": "陶瓷球床",
+    "charcoal filter": "活性炭过滤器",
     "charge exchange loss": "电荷交换损失",
     "charge exchange recombination spectroscopy": "电荷交换复合光谱",
     "charge-exchange loss": "电荷交换损失",
     "charge-exchange spectroscopy": "电荷交换复合光谱",
     "charge-exchange-recombination-spectroscopy": "电荷交换复合光谱",
+    "check valve": "止回阀",
+    "check-valve": "止回阀",
     "checkpoint/restart": "断点续算",
     "chemical erosion": "化学腐蚀",
     "chemical sputtering": "溅射",
@@ -938,6 +701,7 @@
     "coil complexity": "线圈复杂度",
     "coil-complexity": "线圈复杂度",
     "cold box": "冷箱",
+    "cold cathode gauge": "潘宁真空计",
     "cold-box": "冷箱",
     "collective dose": "集体剂量",
     "collision estimator": "碰撞估计器",
@@ -977,8 +741,11 @@
     "confinement function": "包容功能",
     "confinement scaling law": "约束标度律",
     "confinement system": "包容系统",
+    "confinement ventilation": "限制区通风系统",
+    "confinement ventilation system": "限制区通风系统",
     "confinement-barrier": "包容屏障",
     "confinement-system": "包容系统",
+    "confinement-ventilation": "限制区通风系统",
     "conformal mesh": "适体网格",
     "connection length": "连接长度",
     "conservative calculation": "保守估算",
@@ -1124,12 +891,17 @@
     "deuterium processing": "氘处理",
     "deuterium-deuterium reaction": "D-D反应",
     "deuterium-processing": "氘处理",
+    "deuterium-tritium": "氘氚",
+    "deuterium-tritium fuel cycle": "氘氚燃料循环",
+    "deuterium-tritium plasma": "氘氚等离子体",
     "deuterium-tritium reaction": "D-T反应",
     "device": "装置",
     "diagnostic port": "诊断端口",
     "diagnostic-port": "诊断端口",
     "diamagnetic drift": "抗磁漂移",
     "diamagnetic loop": "抗磁环",
+    "diamond window": "金刚石窗口",
+    "diamond-window": "金刚石窗口",
     "dielectric wall accelerator": "介质壁加速器",
     "dielectric-wall-accelerator": "介质壁加速器",
     "diffusion bonding": "扩散连接",
@@ -1179,7 +951,6 @@
     "double null": "双零位形",
     "double null divertor": "双零位形",
     "double-null": "双零位形",
-    "dpa": "离位损伤",
     "drain tank": "排放槽",
     "drain-tank": "排放槽",
     "drift kinetics": "漂移动理学",
@@ -1201,6 +972,7 @@
     "dynamo-effect": "发电机效应",
     "e-beam welding": "电子束焊接",
     "eaf": "EAF",
+    "ecrh-launcher": "ECRH发射天线",
     "eddy current": "涡流",
     "eddy currents": "涡流",
     "edge localized mode": "边缘局域模",
@@ -1222,6 +994,7 @@
     "electron cyclotron current drive": "电子回旋电流驱动",
     "electron cyclotron emission": "电子回旋辐射",
     "electron cyclotron frequency": "回旋频率",
+    "electron cyclotron launcher": "ECRH发射天线",
     "electron cyclotron resonance heating": "电子回旋共振加热",
     "electron temperature": "电子温度",
     "electron temperature gradient mode": "电子温度梯度模",
@@ -1236,8 +1009,11 @@
     "elongation": "等离子体拉长比",
     "embrittlement": "脆化",
     "emergency diesel generator": "应急柴油发电机",
+    "emergency exhaust system": "事故排风系统",
     "emergency planning zone": "应急计划区",
+    "emergency ventilation": "事故排风系统",
     "emergency-diesel-generator": "应急柴油发电机",
+    "emergency-exhaust-system": "事故排风系统",
     "empirical correlation": "经验关联式",
     "endf": "ENDF",
     "energetic particle": "高能粒子",
@@ -1280,6 +1056,8 @@
     "ex-vessel-component": "真空室外部件",
     "ex-vessel-loca": "真空室外失冷事故",
     "exception handling": "异常处理",
+    "expansion joint": "膨胀节",
+    "expansion-joint": "膨胀节",
     "extended MHD": "扩展MHD",
     "external kink": "外扭曲模",
     "external kink instability": "外扭曲模",
@@ -1319,6 +1097,14 @@
     "finite volume method": "有限体积法",
     "finite-element-method": "有限元方法",
     "finite-volume-method": "有限体积法",
+    "fire alarm system": "火灾探测系统",
+    "fire damper": "防火阀",
+    "fire detection system": "火灾探测系统",
+    "fire extinguishing system": "灭火系统",
+    "fire suppression system": "灭火系统",
+    "fire-damper": "防火阀",
+    "fire-detection-system": "火灾探测系统",
+    "fire-suppression-system": "灭火系统",
     "first of a kind": "首台堆",
     "first wall": "第一壁",
     "first-of-a-kind": "首台堆",
@@ -1330,6 +1116,7 @@
     "fission yield": "裂变产额",
     "fission-chamber": "裂变室",
     "fixed source": "固定源",
+    "flange": "法兰",
     "flat top": "平顶段",
     "flat-top": "平顶段",
     "flibe": "氟化锂铍",
@@ -1416,11 +1203,13 @@
     "gas balance": "气体平衡",
     "gas fueling": "充气",
     "gas injection valve": "进气阀",
+    "gas neutralizer": "中和器",
     "gas production rate": "气体产额",
     "gas puffing": "充气",
     "gas turbine": "燃气轮机",
     "gas-puffing": "充气",
     "gas-turbine": "燃气轮机",
+    "gasket": "密封垫片",
     "geodesic acoustic mode": "测地声模",
     "geodesic-acoustic-mode": "测地声模",
     "geological disposal": "地质处置",
@@ -1506,6 +1295,7 @@
     "helium-cooled pebble bed": "氦冷球床包层",
     "helium-cooled solid breeder": "氦冷固态包层",
     "helium-induced embrittlement": "氦脆",
+    "hepa-filter": "高效空气过滤器",
     "hex mesh": "六面体网格",
     "hexahedral mesh": "六面体网格",
     "high beta": "高比压",
@@ -1517,6 +1307,7 @@
     "high temperature superconductor": "高温超导体",
     "high-beta": "高比压",
     "high-cycle fatigue": "高周疲劳",
+    "high-efficiency particulate air filter": "高效空气过滤器",
     "high-level waste": "高放废物",
     "high-level-waste": "高放废物",
     "high-recycling regime": "高再循环",
@@ -1525,6 +1316,7 @@
     "high-β": "高比压",
     "histogram": "直方图",
     "hohlraum": "黑腔",
+    "hot cathode gauge": "电离真空计",
     "hot cell": "热室",
     "hot functional test": "热功能试验",
     "hot functional testing": "热功能试验",
@@ -1628,12 +1420,15 @@
     "ion Bernstein wave": "离子伯恩斯坦波",
     "ion cyclotron frequency": "回旋频率",
     "ion cyclotron resonance heating": "离子回旋共振加热",
+    "ion gauge": "电离真空计",
     "ion temperature": "离子温度",
     "ion temperature gradient mode": "离子温度梯度模",
     "ion-cyclotron-resonance-heating": "离子回旋共振加热",
+    "ion-gauge": "电离真空计",
     "ion-temperature": "离子温度",
     "ionisation chamber": "电离室",
     "ionization chamber": "电离室",
+    "ionization gauge": "电离真空计",
     "ionization-chamber": "电离室",
     "iota": "旋转变换",
     "irdff": "IRDFF",
@@ -1645,6 +1440,8 @@
     "irradiation-test": "辐照试验",
     "island divertor": "岛偏滤器",
     "island-divertor": "岛偏滤器",
+    "isolation valve": "隔离阀",
+    "isolation-valve": "隔离阀",
     "isotope effect": "同位素效应",
     "isotope separation": "同位素分离",
     "isotope separation system": "同位素分离系统",
@@ -1660,7 +1457,6 @@
     "k-eff": "有效增殖因数",
     "k-effective": "有效增殖因数",
     "k_eff": "有效增殖因数",
-    "keff": "有效增殖因数",
     "kerma": "比释动能",
     "kinetic ballooning mode": "动理学气球模",
     "kinetic control": "动理学控制",
@@ -1806,6 +1602,8 @@
     "magneto-inertial-fusion": "磁化惯性聚变",
     "magnetohydrodynamic pressure drop": "MHD压降",
     "magnetohydrodynamics": "磁流体力学",
+    "magnetron injection gun": "磁控注入枪",
+    "magnetron-injection-gun": "磁控注入枪",
     "maintenance": "维护",
     "maintenance interval": "维护周期",
     "maintenance period": "维护周期",
@@ -1831,6 +1629,7 @@
     "mesh tally": "网格计数",
     "mesh-generation": "网格生成",
     "meshing": "网格生成",
+    "metal bellows": "波纹管",
     "metal getter": "吸气剂床",
     "metal hydride bed": "金属氢化物床",
     "method": "方法",
@@ -1846,6 +1645,7 @@
     "minority ion heating": "少数粒子加热",
     "mirror machine": "磁镜装置",
     "mirror-machine": "磁镜装置",
+    "mitigation": "缓解",
     "mix instability": "混合不稳定性",
     "mixed material": "混合材料",
     "mixed pebble bed": "混合球床",
@@ -1894,6 +1694,8 @@
     "neutral beam driven FRC": "中性束驱动场反",
     "neutral pressure": "中性气压",
     "neutral-beam-driven-frc": "中性束驱动场反",
+    "neutraliser": "中和器",
+    "neutralizer": "中和器",
     "neutron": "中子",
     "neutron activation": "中子活化",
     "neutron activation system": "中子活化系统",
@@ -1922,9 +1724,12 @@
     "non thermal plasma": "非热平衡等离子体",
     "non-Maxwellian plasma": "非热平衡等离子体",
     "non-destructive testing": "无损检测",
+    "non-evaporable getter": "非蒸散型吸气剂",
+    "non-evaporable-getter": "非蒸散型吸气剂",
     "non-inductive current drive": "非感应运行",
     "non-inductive operation": "非感应运行",
     "non-inductive-operation": "非感应运行",
+    "non-return valve": "止回阀",
     "non-thermal plasma": "非热平衡等离子体",
     "non-thermal-plasma": "非热平衡等离子体",
     "nonlinear coupling": "非线性耦合",
@@ -2008,6 +1813,7 @@
     "pellet injector": "弹丸注入器",
     "pellet-injection": "弹丸注入",
     "pellet-injector": "弹丸注入器",
+    "penning-gauge": "潘宁真空计",
     "performance": "性能",
     "permanent disposal waste": "永久处置废物",
     "permeation": "渗透",
@@ -2026,6 +1832,10 @@
     "physical sputtering yield": "物理溅射",
     "pinch parameter": "箍缩参数",
     "pipe cutting": "管道切割",
+    "pipe flange": "法兰",
+    "pipe whip protection": "管道甩击约束装置",
+    "pipe whip restraint": "管道甩击约束装置",
+    "pipe-whip-restraint": "管道甩击约束装置",
     "planned maintenance": "计划维护",
     "plant availability": "可用率",
     "plant control system": "全厂控制系统",
@@ -2143,9 +1953,12 @@
     "pressure driven instability": "压力驱动模",
     "pressure drop": "压降",
     "pressure pedestal": "压力基座",
+    "pressure relief valve": "安全阀",
     "pressure vessel": "压力容器",
     "pressure-driven mode": "压力驱动模",
+    "pressuriser": "稳压器",
     "pressurized water": "加压水",
+    "pressurizer": "稳压器",
     "primary coolant loop": "一回路",
     "primary heat transfer": "一回路传热",
     "primary heat transport": "一回路传热",
@@ -2262,6 +2075,8 @@
     "regulatory-framework": "监管框架",
     "relative error": "相对误差",
     "reliability availability maintainability inspectability": "RAMI分析",
+    "relief valve": "安全阀",
+    "relief-valve": "安全阀",
     "remote handling": "遥操作",
     "remote handling recycling": "远程操控回收",
     "remote inspection": "远程检测",
@@ -2272,8 +2087,10 @@
     "rendering": "渲染",
     "residual gas analyzer": "残余气体分析仪",
     "residual heat": "衰变热",
+    "residual ion dump": "残余离子收集器",
     "residual stress": "残余应力",
     "residual-gas-analyzer": "残余气体分析仪",
+    "residual-ion-dump": "残余离子收集器",
     "resistive MHD": "电阻磁流体力学",
     "resistive instability": "电阻不稳定性",
     "resistive mode": "电阻不稳定性",
@@ -2306,7 +2123,9 @@
     "runaway electron damage": "逃逸电子损伤",
     "runaway electrons": "逃逸电子",
     "runaway-electron": "逃逸电子",
-    "sCO2": "超临界二氧化碳循环",
+    "rupture disc": "爆破片",
+    "rupture disk": "爆破片",
+    "rupture-disc": "爆破片",
     "safety analysis": "安全分析",
     "safety analysis report": "安全分析报告",
     "safety case": "安全论证",
@@ -2316,6 +2135,7 @@
     "safety important component": "安全重要物项",
     "safety integrity level": "安全完整性等级",
     "safety margin": "设计裕度",
+    "safety relief valve": "安全阀",
     "safety-case": "安全论证",
     "safety-factor": "安全因子",
     "safety-function": "安全功能",
@@ -2342,6 +2162,7 @@
     "scratch filesystem": "临时文件系统",
     "scripting": "脚本编程",
     "sealing": "密封",
+    "sealing gasket": "密封垫片",
     "second harmonic heating": "谐波加热",
     "secondary loop": "二回路",
     "secondary waste": "二次废物",
@@ -2374,6 +2195,7 @@
     "shock ignition": "激波点火",
     "shock-ignition": "激波点火",
     "shut-down dose rate": "停堆剂量率",
+    "shut-off valve": "隔离阀",
     "shutdown dose rate": "停堆剂量率",
     "shutdown-dose-rate": "停堆剂量率",
     "sic-sic-composite": "碳化硅复合材料",
@@ -2490,8 +2312,8 @@
     "temperature pedestal": "温度基座",
     "temperature screening": "热扩散",
     "tensile test": "拉伸试验",
-    "test blanket module": "产氚模块",
-    "test-blanket-module": "产氚模块",
+    "test blanket module": "实验包层模块",
+    "test-blanket-module": "实验包层模块",
     "tet mesh": "四面体网格",
     "tetrahedral mesh": "四面体网格",
     "thermal barrier coating": "热障涂层",
@@ -2537,11 +2359,13 @@
     "tokamak building": "托卡马克厂房",
     "tokamak cooling water system": "托卡马克冷却水系统",
     "tokamak exhaust processing system": "托卡马克排气处理系统",
+    "tokamak pit": "托卡马克堆坑",
     "tokamak-assembly": "托卡马克装配",
     "tokamak-building": "托卡马克厂房",
     "tokamak-cooling-water-system": "托卡马克冷却水系统",
     "tokamak-exhaust-processing": "托卡马克排气处理系统",
     "tokamak-exhaust-processing-system": "托卡马克排气处理系统",
+    "tokamak-pit": "托卡马克堆坑",
     "toroidal Alfvén eigenmode": "环向阿尔芬本征模",
     "toroidal field": "环向磁场",
     "toroidal field coil": "纵场线圈",
@@ -2578,6 +2402,7 @@
     "tritium breeding blanket": "产氚包层",
     "tritium breeding margin": "氚增殖裕度",
     "tritium breeding ratio": "氚增殖比",
+    "tritium building": "氚厂房",
     "tritium carrier": "氚载体",
     "tritium cleanup": "氚处理",
     "tritium extraction": "氚回收",
@@ -2586,6 +2411,7 @@
     "tritium inventory": "氚存量",
     "tritium permeation barrier": "氚渗透阻挡层",
     "tritium plant": "氚工厂",
+    "tritium plant building": "氚厂房",
     "tritium processing": "氚处理",
     "tritium recovery": "氚回收",
     "tritium release": "氚释放",
@@ -2598,6 +2424,7 @@
     "tritium-accounting-area": "氚衡算区域",
     "tritium-breeding-margin": "氚增殖裕度",
     "tritium-breeding-ratio": "氚增殖比",
+    "tritium-building": "氚厂房",
     "tritium-carrier": "氚载体",
     "tritium-extraction-system": "增殖剂氚提取系统",
     "tritium-inventory": "氚存量",
@@ -2647,6 +2474,8 @@
     "vapor shielding": "蒸汽屏蔽",
     "variance reduction": "方差缩减",
     "variance-reduction": "方差缩减",
+    "ventilation zone": "通风分区",
+    "ventilation-zone": "通风分区",
     "verification": "校核",
     "version control": "版本控制",
     "vertical displacement event": "垂直位移事件",
@@ -2720,29 +2549,105 @@
       "concept_id": "aspect-ratio",
       "zh": "纵横比"
     },
+    "ACE": {
+      "concept_id": "ace-format",
+      "zh": "ACE格式"
+    },
+    "ACP": {
+      "concept_id": "activated-corrosion-product",
+      "zh": "活化腐蚀产物"
+    },
+    "ADS": {
+      "concept_id": "atmosphere-detritiation-system",
+      "zh": "厂房去氚系统"
+    },
     "AE": {
       "concept_id": "alfven-eigenmode",
       "zh": "阿尔芬本征模"
+    },
+    "ALARA": {
+      "concept_id": "alara",
+      "zh": "合理可行尽量低"
+    },
+    "ALI": {
+      "concept_id": "annual-limit-of-intake",
+      "zh": "年摄入量限值"
     },
     "AM": {
       "concept_id": "additive-manufacturing",
       "zh": "增材制造"
     },
+    "API": {
+      "concept_id": "api",
+      "zh": "API"
+    },
+    "ARM": {
+      "concept_id": "area-radiation-monitor",
+      "zh": "区域辐射监测仪"
+    },
+    "ASIPP": {
+      "concept_id": "asipp",
+      "zh": "等离子体物理研究所"
+    },
     "AT": {
       "concept_id": "advanced-tokamak",
       "zh": "先进托卡马克"
+    },
+    "AUG": {
+      "concept_id": "asdex-upgrade",
+      "zh": "ASDEX Upgrade"
+    },
+    "B-rep": {
+      "concept_id": "b-rep",
+      "zh": "边界表示"
     },
     "B2": {
       "concept_id": "b2",
       "zh": "B2"
     },
+    "BAE": {
+      "concept_id": "bae",
+      "zh": "β诱导Alfvén本征模"
+    },
     "BC": {
       "concept_id": "boundary-condition",
       "zh": "边界条件"
     },
+    "BDBE": {
+      "concept_id": "beyond-design-basis-event",
+      "zh": "超设计基准事件"
+    },
+    "BES": {
+      "concept_id": "beam-emission-spectroscopy",
+      "zh": "束发射光谱"
+    },
+    "BOP": {
+      "concept_id": "balance-of-plant",
+      "zh": "电站辅助系统"
+    },
+    "BPI": {
+      "concept_id": "boron-powder-injection",
+      "zh": "硼粉注入"
+    },
+    "BREP": {
+      "concept_id": "b-rep",
+      "zh": "边界表示"
+    },
     "Bc": {
       "concept_id": "critical-magnetic-field",
       "zh": "临界磁场"
+    },
+    "CADIS": {
+      "concept_id": "cadis",
+      "zh": "CADIS"
+    },
+    "CCF": {
+      "concept_id": "common-cause-failure",
+      "zh": "共因失效"
+    },
+    "CCWS": {
+      "concept_id": "component-cooling-water-system",
+      "zh": "部件冷却水系统"
     },
     "CD": {
       "concept_id": "current-drive",
@@ -2752,9 +2657,65 @@
       "concept_id": "continuous-energy",
       "zh": "连续能量"
     },
+    "CER": {
+      "concept_id": "charge-exchange-recombination-spectroscopy",
+      "zh": "电荷交换复合光谱"
+    },
+    "CFC": {
+      "concept_id": "carbon-fiber-composite",
+      "zh": "碳纤维复合材料"
+    },
+    "CFD": {
+      "concept_id": "computational-fluid-dynamics",
+      "zh": "计算流体力学"
+    },
+    "CFETR": {
+      "concept_id": "cfetr",
+      "zh": "中国聚变工程试验堆"
+    },
+    "CFS": {
+      "concept_id": "cfs",
+      "zh": "联邦聚变系统"
+    },
+    "CHF": {
+      "concept_id": "critical-heat-flux",
+      "zh": "临界热流密度"
+    },
+    "CHI": {
+      "concept_id": "coaxial-helicity-injection",
+      "zh": "同轴螺旋度注入"
+    },
+    "CHWS": {
+      "concept_id": "chilled-water-system",
+      "zh": "冷冻水系统"
+    },
+    "CI/CD": {
+      "concept_id": "ci-cd",
+      "zh": "持续集成/持续部署"
+    },
+    "CICC": {
+      "concept_id": "cable-in-conduit-conductor",
+      "zh": "管内电缆导体"
+    },
+    "CIS": {
+      "concept_id": "central-interlock-system",
+      "zh": "中央联锁系统"
+    },
     "CM": {
       "concept_id": "configuration-management",
       "zh": "配置管理"
+    },
+    "CODAC": {
+      "concept_id": "codac",
+      "zh": "控制、数据获取与通信"
+    },
+    "COE": {
+      "concept_id": "cost-of-electricity",
+      "zh": "电力成本"
+    },
+    "CPS": {
+      "concept_id": "coolant-purification-system",
+      "zh": "冷却剂净化系统"
     },
     "CQ": {
       "concept_id": "current-quench",
@@ -2768,13 +2729,73 @@
       "concept_id": "central-solenoid",
       "zh": "中心螺管"
     },
+    "CSG": {
+      "concept_id": "csg",
+      "zh": "构造实体几何"
+    },
+    "CSV": {
+      "concept_id": "csv-format",
+      "zh": "CSV格式"
+    },
     "CT": {
       "concept_id": "compact-toroid",
       "zh": "紧凑环"
     },
+    "CTE": {
+      "concept_id": "coefficient-of-thermal-expansion",
+      "zh": "热膨胀系数"
+    },
+    "CTI": {
+      "concept_id": "compact-toroid-injection",
+      "zh": "紧凑环注入"
+    },
+    "CVS": {
+      "concept_id": "confinement-ventilation",
+      "zh": "限制区通风系统"
+    },
+    "CXRS": {
+      "concept_id": "charge-exchange-recombination-spectroscopy",
+      "zh": "电荷交换复合光谱"
+    },
+    "CXS": {
+      "concept_id": "charge-exchange-recombination-spectroscopy",
+      "zh": "电荷交换复合光谱"
+    },
     "D": {
       "concept_id": "deuterium",
       "zh": "氘"
+    },
+    "D-T": {
+      "concept_id": "deuterium-tritium",
+      "zh": "氘氚"
+    },
+    "DAC": {
+      "concept_id": "derived-air-concentration",
+      "zh": "导出空气浓度"
+    },
+    "DBA": {
+      "concept_id": "design-basis-accident",
+      "zh": "设计基准事故"
+    },
+    "DBS": {
+      "concept_id": "doppler-backscattering",
+      "zh": "多普勒背散射"
+    },
+    "DCC": {
+      "concept_id": "dose-conversion-coefficient",
+      "zh": "剂量转换系数"
+    },
+    "DCLL": {
+      "concept_id": "dcll",
+      "zh": "双冷锂铅包层"
+    },
+    "DCS": {
+      "concept_id": "distributed-control-system",
+      "zh": "分布式控制系统"
+    },
+    "DEC": {
+      "concept_id": "direct-energy-conversion",
+      "zh": "直接能量转换"
     },
     "DF": {
       "concept_id": "detritiation-factor",
@@ -2784,6 +2805,82 @@
       "concept_id": "double-null",
       "zh": "双零位形"
     },
+    "DPF": {
+      "concept_id": "dense-plasma-focus",
+      "zh": "稠密等离子体焦点"
+    },
+    "DT": {
+      "concept_id": "deuterium-tritium",
+      "zh": "氘氚"
+    },
+    "DWA": {
+      "concept_id": "dielectric-wall-accelerator",
+      "zh": "介质壁加速器"
+    },
+    "DiD": {
+      "concept_id": "defense-in-depth",
+      "zh": "纵深防御"
+    },
+    "EBW": {
+      "concept_id": "electron-bernstein-wave",
+      "zh": "电子伯恩斯坦波"
+    },
+    "ECCD": {
+      "concept_id": "eccd",
+      "zh": "电子回旋电流驱动"
+    },
+    "ECE": {
+      "concept_id": "electron-cyclotron-emission",
+      "zh": "电子回旋辐射"
+    },
+    "ECEI": {
+      "concept_id": "ece-imaging",
+      "zh": "ECE成像"
+    },
+    "ECH": {
+      "concept_id": "electron-cyclotron-resonance-heating",
+      "zh": "电子回旋共振加热"
+    },
+    "ECRH": {
+      "concept_id": "electron-cyclotron-resonance-heating",
+      "zh": "电子回旋共振加热"
+    },
+    "EDG": {
+      "concept_id": "emergency-diesel-generator",
+      "zh": "应急柴油发电机"
+    },
+    "EDS": {
+      "concept_id": "energy-dispersive-spectroscopy",
+      "zh": "能谱分析"
+    },
+    "EDX": {
+      "concept_id": "energy-dispersive-spectroscopy",
+      "zh": "能谱分析"
+    },
+    "ELM": {
+      "concept_id": "edge-localized-mode",
+      "zh": "边缘局域模"
+    },
+    "ELMs": {
+      "concept_id": "edge-localized-mode",
+      "zh": "边缘局域模"
+    },
+    "ELTL": {
+      "concept_id": "eltl",
+      "zh": "EVEDA锂试验回路"
+    },
+    "ENN": {
+      "concept_id": "enn",
+      "zh": "新奥"
+    },
+    "EPM": {
+      "concept_id": "energetic-particle-mode",
+      "zh": "高能粒子模"
+    },
+    "EPZ": {
+      "concept_id": "emergency-planning-zone",
+      "zh": "应急计划区"
+    },
     "EQ": {
       "concept_id": "environmental-qualification",
       "zh": "环境鉴定"
@@ -2792,17 +2889,101 @@
       "concept_id": "event-tree",
       "zh": "事件树"
     },
+    "ETB": {
+      "concept_id": "edge-transport-barrier",
+      "zh": "边缘输运垒"
+    },
+    "ETG": {
+      "concept_id": "etg-mode",
+      "zh": "电子温度梯度模"
+    },
+    "EVEDA": {
+      "concept_id": "eveda",
+      "zh": "工程验证与工程设计活动"
+    },
+    "F4E": {
+      "concept_id": "f4e",
+      "zh": "聚变能源机构"
+    },
+    "FAC": {
+      "concept_id": "flow-accelerated-corrosion",
+      "zh": "流动加速腐蚀"
+    },
+    "FAT": {
+      "concept_id": "factory-acceptance-test",
+      "zh": "出厂验收测试"
+    },
+    "FCI": {
+      "concept_id": "flow-channel-insert",
+      "zh": "流道插件"
+    },
+    "FEM": {
+      "concept_id": "finite-element-method",
+      "zh": "有限元方法"
+    },
+    "FES": {
+      "concept_id": "flywheel-energy-storage",
+      "zh": "飞轮储能"
+    },
+    "FIR": {
+      "concept_id": "far-infrared-polarimetry",
+      "zh": "远红外偏振仪"
+    },
+    "FMEA": {
+      "concept_id": "failure-mode-and-effects-analysis",
+      "zh": "失效模式与影响分析"
+    },
+    "FOAK": {
+      "concept_id": "first-of-a-kind",
+      "zh": "首台堆"
+    },
+    "FOM": {
+      "concept_id": "figure-of-merit",
+      "zh": "品质因数"
+    },
+    "FPP": {
+      "concept_id": "fusion-power-plant",
+      "zh": "聚变电站"
+    },
+    "FRC": {
+      "concept_id": "field-reversed-configuration",
+      "zh": "场反位形"
+    },
+    "FSAR": {
+      "concept_id": "final-safety-analysis-report",
+      "zh": "最终安全分析报告"
+    },
     "FT": {
       "concept_id": "fault-tree",
       "zh": "故障树"
+    },
+    "FVM": {
+      "concept_id": "finite-volume-method",
+      "zh": "有限体积法"
     },
     "FW": {
       "concept_id": "first-wall",
       "zh": "第一壁"
     },
+    "FW-CADIS": {
+      "concept_id": "fw-cadis",
+      "zh": "FW-CADIS"
+    },
     "GA": {
       "concept_id": "general-atomics",
       "zh": "通用原子能"
+    },
+    "GAE": {
+      "concept_id": "global-alfven-eigenmode",
+      "zh": "全局Alfvén本征模"
+    },
+    "GAM": {
+      "concept_id": "geodesic-acoustic-mode",
+      "zh": "测地声模"
+    },
+    "GDC": {
+      "concept_id": "glow-discharge-cleaning",
+      "zh": "辉光放电清洗"
     },
     "Gr": {
       "concept_id": "grashof-number",
@@ -2812,21 +2993,185 @@
       "concept_id": "protium",
       "zh": "氕"
     },
+    "HAZ": {
+      "concept_id": "heat-affected-zone",
+      "zh": "热影响区"
+    },
+    "HAZOP": {
+      "concept_id": "hazard-and-operability-study",
+      "zh": "危险与可操作性分析"
+    },
+    "HCCB": {
+      "concept_id": "hccb",
+      "zh": "氦冷固态包层"
+    },
+    "HCD": {
+      "concept_id": "helicon-current-drive",
+      "zh": "螺旋波电流驱动"
+    },
+    "HCF": {
+      "concept_id": "high-cycle-fatigue",
+      "zh": "高周疲劳"
+    },
+    "HCLL": {
+      "concept_id": "hcll",
+      "zh": "氦冷锂铅包层"
+    },
+    "HCPB": {
+      "concept_id": "hcpb",
+      "zh": "氦冷球床包层"
+    },
+    "HCSB": {
+      "concept_id": "hccb",
+      "zh": "氦冷固态包层"
+    },
+    "HDF5": {
+      "concept_id": "hdf5",
+      "zh": "HDF5"
+    },
+    "HELIAS": {
+      "concept_id": "helias",
+      "zh": "HELIAS"
+    },
+    "HEPA": {
+      "concept_id": "hepa-filter",
+      "zh": "高效空气过滤器"
+    },
+    "HFT": {
+      "concept_id": "hot-functional-testing",
+      "zh": "热功能试验"
+    },
+    "HHF": {
+      "concept_id": "high-heat-flux-testing",
+      "zh": "高热流测试"
+    },
     "HI": {
       "concept_id": "helicity-injection",
       "zh": "螺旋度注入"
+    },
+    "HIF": {
+      "concept_id": "heavy-ion-fusion",
+      "zh": "重离子聚变"
+    },
+    "HIP": {
+      "concept_id": "hot-isostatic-pressing",
+      "zh": "热等静压"
+    },
+    "HLW": {
+      "concept_id": "high-level-waste",
+      "zh": "高放废物"
+    },
+    "HMI": {
+      "concept_id": "human-machine-interface",
+      "zh": "人机界面"
+    },
+    "HOR": {
+      "concept_id": "hands-on-recycling",
+      "zh": "可徒手回收材料"
+    },
+    "HSX": {
+      "concept_id": "helically-symmetric-experiment",
+      "zh": "HSX"
+    },
+    "HTS": {
+      "concept_id": "high-temperature-superconductor",
+      "zh": "高温超导体"
+    },
+    "HVAC": {
+      "concept_id": "hvac",
+      "zh": "暖通空调"
+    },
+    "HWC": {
+      "concept_id": "hydrogen-water-chemistry",
+      "zh": "加氢水化学"
     },
     "HX": {
       "concept_id": "heat-exchanger",
       "zh": "换热器"
     },
+    "HXR": {
+      "concept_id": "hard-x-ray",
+      "zh": "硬X射线"
+    },
     "Ha": {
       "concept_id": "hartmann-number",
       "zh": "哈特曼数"
     },
+    "HazOp": {
+      "concept_id": "hazard-and-operability-study",
+      "zh": "危险与可操作性分析"
+    },
+    "IAEA": {
+      "concept_id": "iaea",
+      "zh": "国际原子能机构"
+    },
+    "IBW": {
+      "concept_id": "ion-bernstein-wave",
+      "zh": "离子伯恩斯坦波"
+    },
     "IC": {
       "concept_id": "initial-condition",
       "zh": "初始条件"
+    },
+    "ICF": {
+      "concept_id": "inertial-confinement-fusion",
+      "zh": "惯性约束聚变"
+    },
+    "ICRH": {
+      "concept_id": "ion-cyclotron-resonance-heating",
+      "zh": "离子回旋共振加热"
+    },
+    "ICRP": {
+      "concept_id": "icrp",
+      "zh": "ICRP"
+    },
+    "IEC": {
+      "concept_id": "electrostatic-confinement",
+      "zh": "静电约束"
+    },
+    "IFC": {
+      "concept_id": "inner-fuel-cycle",
+      "zh": "内燃料循环"
+    },
+    "IFMIF": {
+      "concept_id": "ifmif",
+      "zh": "国际聚变材料辐照装置"
+    },
+    "IGES": {
+      "concept_id": "iges-format",
+      "zh": "IGES格式"
+    },
+    "IHX": {
+      "concept_id": "intermediate-heat-exchanger",
+      "zh": "中间换热器"
+    },
+    "ILW": {
+      "concept_id": "intermediate-level-waste",
+      "zh": "中放废物"
+    },
+    "IPP": {
+      "concept_id": "ipp-garching",
+      "zh": "马克斯·普朗克等离子体物理研究所"
+    },
+    "ISI": {
+      "concept_id": "in-service-inspection",
+      "zh": "在役检查"
+    },
+    "ISS": {
+      "concept_id": "isotope-separation-system",
+      "zh": "同位素分离系统"
+    },
+    "ITB": {
+      "concept_id": "internal-transport-barrier",
+      "zh": "内输运垒"
+    },
+    "ITG": {
+      "concept_id": "itg-mode",
+      "zh": "离子温度梯度模"
+    },
+    "IVC": {
+      "concept_id": "in-vessel-component",
+      "zh": "真空室内部件"
     },
     "Ic": {
       "concept_id": "critical-current",
@@ -2836,21 +3181,305 @@
       "concept_id": "plasma-current",
       "zh": "等离子体电流"
     },
+    "JET": {
+      "concept_id": "jet",
+      "zh": "JET"
+    },
+    "JSON": {
+      "concept_id": "json-format",
+      "zh": "JSON格式"
+    },
+    "KBM": {
+      "concept_id": "kbm",
+      "zh": "动理学气球模"
+    },
+    "LBB": {
+      "concept_id": "leak-before-break",
+      "zh": "先泄漏后断裂"
+    },
+    "LCF": {
+      "concept_id": "low-cycle-fatigue",
+      "zh": "低周疲劳"
+    },
+    "LCFS": {
+      "concept_id": "separatrix",
+      "zh": "分界面"
+    },
+    "LCOE": {
+      "concept_id": "levelized-cost",
+      "zh": "平准化成本"
+    },
+    "LET": {
+      "concept_id": "linear-energy-transfer",
+      "zh": "线性能量传递"
+    },
+    "LHCD": {
+      "concept_id": "lower-hybrid-current-drive",
+      "zh": "低杂波电流驱动"
+    },
+    "LHD": {
+      "concept_id": "large-helical-device",
+      "zh": "大型螺旋装置"
+    },
+    "LHH": {
+      "concept_id": "lower-hybrid-heating",
+      "zh": "低杂波加热"
+    },
+    "LHS": {
+      "concept_id": "latin-hypercube-sampling",
+      "zh": "拉丁超立方抽样"
+    },
+    "LIPAc": {
+      "concept_id": "lipac",
+      "zh": "线性IFMIF原型加速器"
+    },
+    "LLW": {
+      "concept_id": "low-level-waste",
+      "zh": "低放废物"
+    },
+    "LMJ": {
+      "concept_id": "laser-megajoule",
+      "zh": "兆焦耳激光装置"
+    },
+    "LOCA": {
+      "concept_id": "loss-of-coolant-accident",
+      "zh": "失冷事故"
+    },
+    "LOFA": {
+      "concept_id": "loss-of-flow-accident",
+      "zh": "失流事故"
+    },
+    "LOVA": {
+      "concept_id": "loss-of-vacuum-accident",
+      "zh": "失真空事故"
+    },
+    "LPI": {
+      "concept_id": "laser-plasma-interaction",
+      "zh": "激光等离子体相互作用"
+    },
+    "LTS": {
+      "concept_id": "low-temperature-superconductor",
+      "zh": "低温超导体"
+    },
+    "M-G": {
+      "concept_id": "motor-generator",
+      "zh": "电机-发电机组"
+    },
+    "MCA": {
+      "concept_id": "maximum-credible-accident",
+      "zh": "最大可信事故"
+    },
+    "MCAM": {
+      "concept_id": "mcam",
+      "zh": "MCAM"
+    },
+    "MCF": {
+      "concept_id": "magnetic-confinement",
+      "zh": "磁约束"
+    },
+    "MFP": {
+      "concept_id": "mean-free-path",
+      "zh": "平均自由程"
+    },
     "MG": {
       "concept_id": "multigroup",
       "zh": "多群"
+    },
+    "MGI": {
+      "concept_id": "massive-gas-injection",
+      "zh": "大量气体注入"
+    },
+    "MHD": {
+      "concept_id": "magnetohydrodynamics",
+      "zh": "磁流体力学"
+    },
+    "MIF": {
+      "concept_id": "magneto-inertial-fusion",
+      "zh": "磁化惯性聚变"
+    },
+    "MIG": {
+      "concept_id": "magnetron-injection-gun",
+      "zh": "磁控注入枪"
+    },
+    "MMS": {
+      "concept_id": "multi-module-segment",
+      "zh": "多模块段"
+    },
+    "MOC": {
+      "concept_id": "method-of-characteristics",
+      "zh": "特征线法"
+    },
+    "MPC": {
+      "concept_id": "model-predictive-control",
+      "zh": "模型预测控制"
+    },
+    "MPI": {
+      "concept_id": "mpi",
+      "zh": "消息传递接口"
+    },
+    "MPS": {
+      "concept_id": "machine-protection-system",
+      "zh": "装置保护系统"
+    },
+    "MSE": {
+      "concept_id": "motional-stark-effect",
+      "zh": "运动斯塔克效应"
+    },
+    "MSM": {
+      "concept_id": "master-slave-manipulator",
+      "zh": "主从机械手"
+    },
+    "MTF": {
+      "concept_id": "magneto-inertial-fusion",
+      "zh": "磁化惯性聚变"
+    },
+    "MTM": {
+      "concept_id": "micro-tearing-mode",
+      "zh": "微撕裂模"
+    },
+    "NAS": {
+      "concept_id": "neutron-activation-system",
+      "zh": "中子活化系统"
+    },
+    "NBCD": {
+      "concept_id": "neutral-beam-current-drive",
+      "zh": "中性束电流驱动"
+    },
+    "NDT": {
+      "concept_id": "non-destructive-testing",
+      "zh": "无损检测"
+    },
+    "NEG": {
+      "concept_id": "non-evaporable-getter",
+      "zh": "非蒸散型吸气剂"
+    },
+    "NIF": {
+      "concept_id": "nif",
+      "zh": "NIF"
+    },
+    "NJOY": {
+      "concept_id": "njoy",
+      "zh": "NJOY"
+    },
+    "NOAK": {
+      "concept_id": "nth-of-a-kind",
+      "zh": "第N台堆"
+    },
+    "NQA": {
+      "concept_id": "nuclear-quality-assurance",
+      "zh": "核质量保证"
     },
     "NT": {
       "concept_id": "negative-triangularity",
       "zh": "负三角形变"
     },
+    "NTM": {
+      "concept_id": "neoclassical-tearing-mode",
+      "zh": "新经典撕裂模"
+    },
+    "NTV": {
+      "concept_id": "ntv",
+      "zh": "新经典环向粘滞"
+    },
     "Nu": {
       "concept_id": "nusselt-number",
       "zh": "努塞尔数"
     },
+    "OCC": {
+      "concept_id": "opencascade",
+      "zh": "OpenCASCADE"
+    },
+    "ODS": {
+      "concept_id": "ods-steel",
+      "zh": "氧化物弥散强化钢"
+    },
+    "OFC": {
+      "concept_id": "outer-fuel-cycle",
+      "zh": "外燃料循环"
+    },
+    "OOP": {
+      "concept_id": "object-oriented-programming",
+      "zh": "面向对象编程"
+    },
+    "PBS": {
+      "concept_id": "pbs",
+      "zh": "PBS"
+    },
+    "PCI": {
+      "concept_id": "phase-contrast-imaging",
+      "zh": "相衬成像"
+    },
+    "PCS": {
+      "concept_id": "power-conversion-system",
+      "zh": "能量转换系统"
+    },
+    "PDW": {
+      "concept_id": "permanent-disposal-waste",
+      "zh": "永久处置废物"
+    },
     "PF": {
       "concept_id": "dense-plasma-focus",
       "zh": "稠密等离子体焦点"
+    },
+    "PFC": {
+      "concept_id": "plasma-facing-component",
+      "zh": "面向等离子体部件"
+    },
+    "PFM": {
+      "concept_id": "plasma-facing-material",
+      "zh": "面向等离子体材料"
+    },
+    "PFR": {
+      "concept_id": "private-flux-region",
+      "zh": "私有磁通区"
+    },
+    "PIC": {
+      "concept_id": "particle-in-cell",
+      "zh": "粒子网格法"
+    },
+    "PIE": {
+      "concept_id": "post-irradiation-examination",
+      "zh": "辐照后检验"
+    },
+    "PLC": {
+      "concept_id": "programmable-logic-controller",
+      "zh": "可编程逻辑控制器"
+    },
+    "PMI": {
+      "concept_id": "plasma-surface-interaction",
+      "zh": "等离子体表面相互作用"
+    },
+    "PPCD": {
+      "concept_id": "pulsed-poloidal-current-drive",
+      "zh": "脉冲极向电流驱动"
+    },
+    "PPS": {
+      "concept_id": "pulsed-power-supply",
+      "zh": "脉冲电源"
+    },
+    "PRF": {
+      "concept_id": "permeation-reduction-factor",
+      "zh": "渗透降低因子"
+    },
+    "PSA": {
+      "concept_id": "probabilistic-safety-assessment",
+      "zh": "概率安全评估"
+    },
+    "PSAR": {
+      "concept_id": "preliminary-safety-analysis-report",
+      "zh": "初步安全分析报告"
+    },
+    "PSI": {
+      "concept_id": "plasma-surface-interaction",
+      "zh": "等离子体表面相互作用"
+    },
+    "PWI": {
+      "concept_id": "plasma-surface-interaction",
+      "zh": "等离子体表面相互作用"
+    },
+    "Pnet": {
+      "concept_id": "net-electric-power",
+      "zh": "净电功率"
     },
     "Pr": {
       "concept_id": "prandtl-number",
@@ -2864,17 +3493,93 @@
       "concept_id": "quasi-axisymmetry",
       "zh": "准轴对称"
     },
+    "QHS": {
+      "concept_id": "quasi-helical-symmetry",
+      "zh": "准螺旋对称"
+    },
     "QI": {
       "concept_id": "quasi-isodynamic",
       "zh": "准等动力"
+    },
+    "QSS": {
+      "concept_id": "quasi-symmetric-stellarator",
+      "zh": "准对称仿星器"
+    },
+    "Qeng": {
+      "concept_id": "engineering-gain",
+      "zh": "工程增益因子"
+    },
+    "RAFM": {
+      "concept_id": "rafm-steel",
+      "zh": "低活化铁素体/马氏体钢"
+    },
+    "RCC-MR": {
+      "concept_id": "rcc-mr",
+      "zh": "核设备设计建造规范"
     },
     "RE": {
       "concept_id": "runaway-electron",
       "zh": "逃逸电子"
     },
+    "RFP": {
+      "concept_id": "reversed-field-pinch",
+      "zh": "反场箍缩"
+    },
+    "RFX": {
+      "concept_id": "rfx-mod",
+      "zh": "RFX-mod"
+    },
+    "RGA": {
+      "concept_id": "residual-gas-analyzer",
+      "zh": "残余气体分析仪"
+    },
     "RH": {
       "concept_id": "remote-handling",
       "zh": "遥操作"
+    },
+    "RID": {
+      "concept_id": "residual-ion-dump",
+      "zh": "残余离子收集器"
+    },
+    "RIS": {
+      "concept_id": "radiation-induced-segregation",
+      "zh": "辐照偏析"
+    },
+    "RMF": {
+      "concept_id": "rotating-magnetic-field",
+      "zh": "旋转磁场"
+    },
+    "RMFo": {
+      "concept_id": "odd-parity-rotating-magnetic-field",
+      "zh": "奇宇称旋转磁场"
+    },
+    "RMI": {
+      "concept_id": "richtmyer-meshkov-instability",
+      "zh": "Richtmyer-Meshkov不稳定性"
+    },
+    "RMP": {
+      "concept_id": "resonant-magnetic-perturbation",
+      "zh": "共振磁扰动"
+    },
+    "RRR": {
+      "concept_id": "resolved-resonance-region",
+      "zh": "分辨共振区"
+    },
+    "RSAE": {
+      "concept_id": "rsae",
+      "zh": "反剪切Alfvén本征模"
+    },
+    "RSM": {
+      "concept_id": "response-surface",
+      "zh": "响应面"
+    },
+    "RTI": {
+      "concept_id": "rayleigh-taylor-instability",
+      "zh": "瑞利-泰勒不稳定性"
+    },
+    "RWM": {
+      "concept_id": "resistive-wall-mode",
+      "zh": "电阻壁模"
     },
     "Ra": {
       "concept_id": "rayleigh-number",
@@ -2888,6 +3593,38 @@
       "concept_id": "severe-accident",
       "zh": "严重事故"
     },
+    "SAR": {
+      "concept_id": "safety-analysis-report",
+      "zh": "安全分析报告"
+    },
+    "SAT": {
+      "concept_id": "site-acceptance-test",
+      "zh": "现场验收测试"
+    },
+    "SBO": {
+      "concept_id": "station-blackout",
+      "zh": "全厂断电事故"
+    },
+    "SCC": {
+      "concept_id": "stress-corrosion-cracking",
+      "zh": "应力腐蚀开裂"
+    },
+    "SDDR": {
+      "concept_id": "shutdown-dose-rate",
+      "zh": "停堆剂量率"
+    },
+    "SDK": {
+      "concept_id": "sdk",
+      "zh": "SDK"
+    },
+    "SDS": {
+      "concept_id": "storage-and-delivery-system",
+      "zh": "燃料储存与供应系统"
+    },
+    "SEM": {
+      "concept_id": "scanning-electron-microscopy",
+      "zh": "扫描电子显微镜"
+    },
     "SF": {
       "concept_id": "safety-function",
       "zh": "安全功能"
@@ -2896,21 +3633,141 @@
       "concept_id": "steam-generator",
       "zh": "蒸汽发生器"
     },
+    "SHAx": {
+      "concept_id": "single-helical-state",
+      "zh": "单螺旋态"
+    },
+    "SIC": {
+      "concept_id": "safety-important-component",
+      "zh": "安全重要物项"
+    },
+    "SIL": {
+      "concept_id": "safety-integrity-level",
+      "zh": "安全完整性等级"
+    },
+    "SLURM": {
+      "concept_id": "slurm",
+      "zh": "SLURM"
+    },
+    "SMBI": {
+      "concept_id": "supersonic-molecular-beam-injection",
+      "zh": "超声分子束注入"
+    },
+    "SMS": {
+      "concept_id": "single-module-segment",
+      "zh": "单模块段"
+    },
     "SN": {
       "concept_id": "single-null",
       "zh": "单零位形"
+    },
+    "SOL": {
+      "concept_id": "scrape-off-layer",
+      "zh": "刮削层"
+    },
+    "SPI": {
+      "concept_id": "shattered-pellet-injection",
+      "zh": "碎裂弹丸注入"
+    },
+    "SPT": {
+      "concept_id": "small-punch-test",
+      "zh": "小冲杆试验"
+    },
+    "SSA": {
+      "concept_id": "sector-sub-assembly",
+      "zh": "扇区子装配"
     },
     "ST": {
       "concept_id": "spherical-tokamak",
       "zh": "球形托卡马克"
     },
+    "STL": {
+      "concept_id": "stl-format",
+      "zh": "STL格式"
+    },
+    "SWIP": {
+      "concept_id": "swip",
+      "zh": "核工业西南物理研究院"
+    },
+    "SXR": {
+      "concept_id": "soft-x-ray",
+      "zh": "软X射线"
+    },
     "T": {
       "concept_id": "tritium",
       "zh": "氚"
     },
+    "TAA": {
+      "concept_id": "tritium-accounting-area",
+      "zh": "氚衡算区域"
+    },
+    "TAE": {
+      "concept_id": "toroidal-alfven-eigenmode",
+      "zh": "环向阿尔芬本征模"
+    },
+    "TBC": {
+      "concept_id": "thermal-barrier-coating",
+      "zh": "热障涂层"
+    },
+    "TBM": {
+      "concept_id": "tbm",
+      "zh": "实验包层模块"
+    },
+    "TBR": {
+      "concept_id": "tritium-breeding-ratio",
+      "zh": "氚增殖比"
+    },
+    "TCAP": {
+      "concept_id": "tcap",
+      "zh": "热循环吸收工艺"
+    },
+    "TCWS": {
+      "concept_id": "tokamak-cooling-water-system",
+      "zh": "托卡马克冷却水系统"
+    },
+    "TEM": {
+      "concept_id": "tem",
+      "zh": "俘获电子模"
+    },
+    "TEP": {
+      "concept_id": "tokamak-exhaust-processing-system",
+      "zh": "托卡马克排气处理系统"
+    },
+    "TES": {
+      "concept_id": "breeder-tritium-extraction-system",
+      "zh": "增殖剂氚提取系统"
+    },
+    "TFC": {
+      "concept_id": "toroidal-field-coil",
+      "zh": "纵场线圈"
+    },
+    "TLD": {
+      "concept_id": "thermoluminescent-dosimeter",
+      "zh": "热释光剂量计"
+    },
+    "TMA": {
+      "concept_id": "thermo-mechanical-analysis",
+      "zh": "热机械分析"
+    },
+    "TMP": {
+      "concept_id": "turbomolecular-pump",
+      "zh": "涡轮分子泵"
+    },
+    "TPB": {
+      "concept_id": "tritium-permeation-barrier",
+      "zh": "氚渗透阻挡层"
+    },
     "TQ": {
       "concept_id": "thermal-quench",
       "zh": "热猝灭"
+    },
+    "TRL": {
+      "concept_id": "technology-readiness-level",
+      "zh": "技术就绪度"
+    },
+    "TWDEC": {
+      "concept_id": "traveling-wave-direct-energy-converter",
+      "zh": "行波直接能量转换器"
     },
     "Tc": {
       "concept_id": "critical-temperature",
@@ -2924,24 +3781,88 @@
       "concept_id": "ion-temperature",
       "zh": "离子温度"
     },
+    "UPS": {
+      "concept_id": "uninterruptible-power-supply",
+      "zh": "不间断电源"
+    },
     "UQ": {
       "concept_id": "uncertainty-quantification",
       "zh": "不确定性量化"
+    },
+    "URR": {
+      "concept_id": "unresolved-resonance-region",
+      "zh": "非分辨共振区"
+    },
+    "UTS": {
+      "concept_id": "ultimate-tensile-strength",
+      "zh": "极限抗拉强度"
+    },
+    "VDE": {
+      "concept_id": "vertical-displacement-event",
+      "zh": "垂直位移事件"
+    },
+    "VTK": {
+      "concept_id": "vtk",
+      "zh": "VTK"
     },
     "VV": {
       "concept_id": "vacuum-vessel",
       "zh": "真空室"
     },
+    "W7-X": {
+      "concept_id": "wendelstein-7x",
+      "zh": "W7-X"
+    },
+    "WCCB": {
+      "concept_id": "wccb",
+      "zh": "水冷陶瓷包层"
+    },
+    "WCLL": {
+      "concept_id": "wcll",
+      "zh": "水冷锂铅包层"
+    },
+    "WCPB": {
+      "concept_id": "wcpb",
+      "zh": "水冷球床包层"
+    },
+    "WDS": {
+      "concept_id": "water-detritiation-system",
+      "zh": "水除氚系统"
+    },
+    "XML": {
+      "concept_id": "xml-format",
+      "zh": "XML格式"
+    },
+    "XRD": {
+      "concept_id": "x-ray-diffraction",
+      "zh": "X射线衍射"
+    },
+    "YAML": {
+      "concept_id": "yaml-format",
+      "zh": "YAML格式"
+    },
+    "dpa": {
+      "concept_id": "dpa",
+      "zh": "离位损伤"
+    },
+    "keff": {
+      "concept_id": "keff",
+      "zh": "有效增殖因数"
+    },
     "q": {
       "concept_id": "safety-factor",
       "zh": "安全因子"
+    },
+    "sCO2": {
+      "concept_id": "supercritical-co2-cycle",
+      "zh": "超临界二氧化碳循环"
     }
   },
   "metadata": {
-    "generated_at": "2026-04-04",
-    "pairs_en2zh": 2714,
-    "pairs_en2zh_short": 55,
-    "pairs_zh2en": 2175
+    "generated_at": "2026-04-06",
+    "pairs_en2zh": 2543,
+    "pairs_en2zh_short": 328,
+    "pairs_zh2en": 2256
   },
   "schema_version": 2,
   "zh2en": {
@@ -2986,6 +3907,10 @@
     "CFC": "carbon fiber composite",
     "CFD": "computational fluid dynamics",
     "CFETR": "CFETR",
+    "CFETR总体设计": "CFETR design",
+    "CFETR总体设计参数": "CFETR design",
+    "CFETR设计": "CFETR design",
+    "CFETR设计参数": "CFETR design",
     "CFS": "Commonwealth Fusion Systems",
     "CHF": "critical heat flux",
     "CHI": "coaxial helicity injection",
@@ -3009,11 +3934,14 @@
     "CT": "compact toroid",
     "CTE": "coefficient of thermal expansion",
     "CTI": "compact toroid injection",
+    "CVS": "confinement ventilation system",
     "CXRS": "charge exchange recombination spectroscopy",
     "CXS": "charge exchange recombination spectroscopy",
     "D": "deuterium",
     "D-D反应": "D-D reaction",
+    "D-T": "deuterium-tritium",
     "D-T反应": "D-T reaction",
+    "D-T等离子体": "deuterium-tritium plasma",
     "D-³He反应": "D-³He reaction",
     "DAC": "derived air concentration",
     "DBA": "design basis accident",
@@ -3025,6 +3953,7 @@
     "DF": "detritiation factor",
     "DN": "double-null",
     "DPF": "dense plasma focus",
+    "DT": "deuterium-tritium",
     "DWA": "dielectric wall accelerator",
     "DXTRAN球": "DXTRAN sphere",
     "DiD": "defense in depth",
@@ -3036,6 +3965,8 @@
     "ECE成像": "ECE imaging",
     "ECH": "electron cyclotron resonance heating",
     "ECRH": "electron cyclotron resonance heating",
+    "ECRH发射天线": "ECRH launcher",
+    "ECRH天线": "ECRH launcher",
     "EDG": "emergency diesel generator",
     "EDS": "energy-dispersive spectroscopy",
     "EDX": "energy-dispersive spectroscopy",
@@ -3103,6 +4034,7 @@
     "HCSB": "helium-cooled ceramic breeder",
     "HDF5": "HDF5",
     "HELIAS": "HELIAS",
+    "HEPA": "HEPA filter",
     "HFT": "hot functional testing",
     "HHF": "high heat flux testing",
     "HI": "helicity injection",
@@ -3191,6 +4123,7 @@
     "MHD压降": "MHD pressure drop",
     "MHD稳定极限": "MHD stability limit",
     "MIF": "magneto-inertial fusion",
+    "MIG": "magnetron injection gun",
     "MMS": "multi-module segment",
     "MOC": "method of characteristics",
     "MPC": "model predictive control",
@@ -3205,6 +4138,7 @@
     "NBCD": "neutral beam current drive",
     "NBI": "neutral beam injection",
     "NDT": "non-destructive testing",
+    "NEG": "non-evaporable getter",
     "NIF": "National Ignition Facility",
     "NJOY": "NJOY",
     "NOAK": "nth-of-a-kind",
@@ -3265,6 +4199,7 @@
     "RFX": "RFX-mod",
     "RGA": "residual gas analyzer",
     "RH": "remote handling",
+    "RID": "residual ion dump",
     "RIS": "radiation-induced segregation",
     "RMF": "rotating magnetic field",
     "RMFo": "odd-parity rotating magnetic field",
@@ -3403,6 +4338,8 @@
     "个人剂量": "occupational dose",
     "个人剂量当量": "personal dose equivalent",
     "个人剂量计": "Personal Dosimeter",
+    "中和器": "neutralizer",
+    "中和室": "neutralizer",
     "中国聚变工程试验堆": "CFETR",
     "中央联锁系统": "central interlock system",
     "中子": "neutron",
@@ -3455,6 +4392,7 @@
     "主动冷却部件结构": "actively cooled component",
     "事件树": "Event Tree",
     "事件树分析": "Event Tree",
+    "事故排风系统": "emergency exhaust system",
     "二回路": "secondary loop",
     "二次废物": "secondary waste",
     "二次放射性废物": "secondary waste",
@@ -3480,6 +4418,8 @@
     "仿星器": "stellarator",
     "仿星器优化": "stellarator optimization",
     "伴随输运": "adjoint transport",
+    "伸缩接头": "expansion joint",
+    "伸缩节": "expansion joint",
     "位错": "dislocation",
     "低周疲劳": "low-cycle fatigue",
     "低放废物": "low-level waste",
@@ -3655,10 +4595,13 @@
     "功率退化效应": "power degradation",
     "功率阈值": "power threshold",
     "功能材料": "functional material",
+    "加压器": "pressurizer",
     "加压水": "pressurized water",
     "加料效率": "fueling efficiency",
     "加料效率指标": "fueling efficiency",
     "加氢水化学": "Hydrogen Water Chemistry",
+    "加速栅": "accelerator grid",
+    "加速栅极": "accelerator grid",
     "加速比": "speedup",
     "动理学控制": "kinetic control",
     "动理学控制方法": "kinetic control",
@@ -3790,12 +4733,14 @@
     "垂直稳定性": "vertical stability",
     "垂直稳定控制": "vertical stability",
     "垂直输运": "cross-field transport",
+    "垫片": "gasket",
     "基准测试": "benchmark",
     "基座宽度": "pedestal width",
     "基础隔震": "seismic isolation",
     "堆": "reactor",
     "堆内": "in-vessel",
     "堆内构件": "In-Vessel Component",
+    "堆坑": "tokamak pit",
     "堆外": "ex-vessel",
     "墓碑区": "graveyard",
     "墙钟时间": "walltime",
@@ -3859,11 +4804,13 @@
     "安全因子": "safety factor",
     "安全因子剖面": "q-profile",
     "安全壳": "containment",
+    "安全壳通风": "confinement ventilation system",
     "安全完整性等级": "safety integrity level",
     "安全等级划分": "safety classification",
     "安全裕度": "design margin",
     "安全论证": "safety case",
     "安全重要物项": "Safety Important Component",
+    "安全阀": "relief valve",
     "完全非感应运行": "fully non-inductive operation",
     "宏观截面": "macroscopic cross section",
     "实时控制": "real-time control",
@@ -3873,6 +4820,8 @@
     "容器化": "container",
     "容量因子": "capacity factor",
     "密封": "sealing",
+    "密封件": "gasket",
+    "密封垫片": "gasket",
     "密度峰化": "density peaking",
     "密度峰化因子": "density peaking",
     "密度抽空": "density pump-out",
@@ -3934,6 +4883,7 @@
     "应力腐蚀开裂": "stress-corrosion cracking",
     "应变敏感度": "strain sensitivity",
     "应变敏感性": "strain sensitivity",
+    "应急排风系统": "emergency exhaust system",
     "应急柴油发电机": "emergency diesel generator",
     "应急计划区": "emergency planning zone",
     "应用编程接口": "API",
@@ -3995,6 +4945,7 @@
     "感应运行": "inductive operation",
     "慢波": "slow wave",
     "慢波结构": "slow wave",
+    "截止阀": "isolation valve",
     "截面": "cross section",
     "截面处理": "cross section processing",
     "扇区子组件": "Sector Sub-Assembly",
@@ -4006,6 +4957,7 @@
     "托卡马克主厂房": "tokamak building",
     "托卡马克冷却水系统": "tokamak cooling water system",
     "托卡马克厂房": "tokamak building",
+    "托卡马克堆坑": "tokamak pit",
     "托卡马克排气处理系统": "tokamak exhaust processing system",
     "托卡马克排灰系统": "tokamak exhaust processing system",
     "托卡马克装置": "tokamak",
@@ -4158,6 +5110,8 @@
     "杜瓦": "cryostat",
     "束发射光谱": "beam emission spectroscopy",
     "束束聚变": "beam-beam fusion",
+    "束流收集器": "beam dump",
+    "束流阻尼器": "beam dump",
     "束靶聚变": "beam-target fusion",
     "杨氏模量": "Young's modulus",
     "极向不对称性": "poloidal asymmetry",
@@ -4212,10 +5166,13 @@
     "模拟蒙特卡罗": "analog Monte Carlo",
     "欧姆加热": "ohmic heating",
     "欧洲聚变能组织": "EUROfusion",
+    "止回阀": "check valve",
     "正硅酸锂": "lithium orthosilicate",
     "残余发热": "decay heat",
     "残余应力": "residual stress",
     "残余气体分析仪": "residual gas analyzer",
+    "残余离子收集器": "residual ion dump",
+    "残余离子阻尼器": "residual ion dump",
     "母线": "bus bar",
     "比活度": "specific activity",
     "比释动能": "kerma",
@@ -4228,15 +5185,22 @@
     "氘": "deuterium",
     "氘处理": "deuterium processing",
     "氘氘反应": "D-D reaction",
+    "氘氚": "deuterium-tritium",
     "氘氚反应": "D-T reaction",
+    "氘氚燃料": "deuterium-tritium",
+    "氘氚燃料循环": "D-T fuel cycle",
+    "氘氚燃料循环系统": "D-T fuel cycle",
+    "氘氚等离子体": "deuterium-tritium plasma",
     "氘氦三反应": "D-³He reaction",
     "氚": "tritium",
     "氚储存": "tritium storage",
+    "氚厂房": "tritium building",
     "氚启动存量": "tritium startup inventory",
     "氚回收": "tritium recovery",
     "氚增殖比": "tritium breeding ratio",
     "氚增殖裕度": "tritium breeding margin",
     "氚处理": "tritium processing",
+    "氚处理厂房": "tritium building",
     "氚存量": "tritium inventory",
     "氚安全": "hydrogen safety",
     "氚工厂": "tritium plant",
@@ -4298,7 +5262,10 @@
     "沉积层": "deposition",
     "沙弗拉诺夫位移": "Shafranov shift",
     "沙弗拉诺夫位移量": "Shafranov shift",
+    "泄压阀": "relief valve",
     "泊松比": "Poisson's ratio",
+    "法兰": "flange",
+    "法兰盘": "flange",
     "法拉第屏": "Faraday screen",
     "法拉第效应": "Faraday rotation",
     "法拉第旋转": "Faraday rotation",
@@ -4306,6 +5273,7 @@
     "波吸收": "wave absorption",
     "波导": "waveguide",
     "波等离子体相互作用": "wave-plasma interaction",
+    "波纹管": "bellows",
     "注量": "fluence",
     "泰勒弛豫": "Taylor relaxation",
     "泰勒态": "Taylor state",
@@ -4315,6 +5283,8 @@
     "活化箔": "activation foil",
     "活化箔片": "activation foil",
     "活化腐蚀产物": "Activated Corrosion Product",
+    "活性炭过滤器": "activated carbon filter",
+    "活性碳过滤器": "activated carbon filter",
     "流出物监测": "effluent monitoring",
     "流动加速腐蚀": "flow-accelerated corrosion",
     "流动辅助腐蚀": "flow-accelerated corrosion",
@@ -4323,6 +5293,7 @@
     "流量分配": "flow distribution",
     "测地声模": "geodesic acoustic mode",
     "消息传递接口": "MPI",
+    "消防灭火系统": "fire suppression system",
     "涡流": "eddy current",
     "涡轮分子泵": "turbomolecular pump",
     "液态金属": "liquid metal",
@@ -4367,6 +5338,8 @@
     "漂移动理学": "drift kinetics",
     "漂移波": "drift wave",
     "漂移波不稳定性": "drift wave",
+    "潘宁真空计": "Penning gauge",
+    "潘宁规": "Penning gauge",
     "激光干涉仪": "interferometry",
     "激光硼聚变": "laser-boron fusion",
     "激光等离子体相互作用": "laser-plasma interaction",
@@ -4375,6 +5348,9 @@
     "激光能量平衡": "laser energy balance",
     "激光驱动聚变": "laser-driven fusion",
     "激波点火": "shock ignition",
+    "火灾报警系统": "fire detection system",
+    "火灾探测系统": "fire detection system",
+    "灭火系统": "fire suppression system",
     "灵敏度分析": "sensitivity analysis",
     "点火": "ignition",
     "点火判据": "ignition condition",
@@ -4437,6 +5413,8 @@
     "燃耗份额": "burnup fraction",
     "燃耗深度": "burnup",
     "燃耗计算": "depletion",
+    "爆破片": "rupture disc",
+    "爆破膜": "rupture disc",
     "版本控制": "version control",
     "物理溅射": "sputtering",
     "物理溅射产额": "physical sputtering",
@@ -4498,6 +5476,8 @@
     "电磁力载荷": "electromagnetic force",
     "电离室": "ionization chamber",
     "电离探测器": "ionization chamber",
+    "电离真空计": "ion gauge",
+    "电离规": "ion gauge",
     "电站可用率": "availability",
     "电站寿命": "plant lifetime",
     "电站布局": "plant layout",
@@ -4573,6 +5553,8 @@
     "磁岛": "magnetic island",
     "磁感应探针": "magnetic probe",
     "磁探针": "magnetic probe",
+    "磁控注入枪": "magnetron injection gun",
+    "磁注入枪": "magnetron injection gun",
     "磁流体力学": "magnetohydrodynamics",
     "磁流体动力学压降": "MHD pressure drop",
     "磁流体平衡": "plasma equilibrium",
@@ -4619,6 +5601,7 @@
     "稀土钡铜氧化物": "REBCO",
     "程序间比较": "code-to-code comparison",
     "稠密等离子体焦点": "dense plasma focus",
+    "稳压器": "pressurizer",
     "稳态运行": "steady-state operation",
     "稳态高β运行": "steady-state high-beta operation",
     "稳态高比压运行": "steady-state high-beta operation",
@@ -4683,6 +5666,8 @@
     "管内电缆导体": "cable-in-conduit conductor",
     "管道切割": "pipe cutting",
     "管道切断": "pipe cutting",
+    "管道甩击约束装置": "pipe whip restraint",
+    "管鞭约束": "pipe whip restraint",
     "米尔诺夫线圈": "Mirnov coil",
     "粉尘": "dust",
     "粉尘产生": "dust generation",
@@ -4735,6 +5720,7 @@
     "综合调试": "integrated commissioning",
     "综合调试验收": "integrated commissioning",
     "缓存未命中": "cache miss",
+    "缓解": "mitigation",
     "编译器": "compiler",
     "网格": "computational mesh",
     "网格收敛": "mesh independence",
@@ -4798,6 +5784,7 @@
     "腊肠不稳定性": "sausage instability",
     "腊肠模": "sausage instability",
     "腐蚀产物": "Corrosion Product",
+    "膨胀节": "expansion joint",
     "自举份额": "bootstrap fraction",
     "自举电流": "bootstrap current",
     "自举电流产生": "bootstrap generation",
@@ -4827,6 +5814,7 @@
     "蠕变-疲劳交互": "creep-fatigue interaction",
     "蠕变疲劳交互作用": "creep-fatigue interaction",
     "行波直接能量转换器": "traveling wave direct energy converter",
+    "补偿器": "bellows",
     "表面粗化": "surface roughening",
     "表面粗糙化": "surface roughening",
     "表面网格": "surface mesh",
@@ -4970,9 +5958,12 @@
     "适体网格": "conformal mesh",
     "逃逸电子": "runaway electron",
     "逃逸电子损伤": "runaway electron damage",
+    "逆止阀": "check valve",
     "透射电子显微镜": "transmission electron microscopy",
     "通用原子能": "General Atomics",
     "通行粒子": "passing particle",
+    "通风分区": "ventilation zone",
+    "通风区域": "ventilation zone",
     "速调器": "klystron",
     "速调管": "klystron",
     "遥操作": "remote handling",
@@ -4988,8 +5979,11 @@
     "重离子聚变": "heavy-ion fusion",
     "重要性函数": "importance function",
     "量纲分析": "dimensional analysis",
+    "金刚石窗": "diamond window",
+    "金刚石窗口": "diamond window",
     "金属吸气剂": "getter bed",
     "金属氢化物床": "metal hydride bed",
+    "金属波纹管": "bellows",
     "钎焊接头": "braze joint",
     "钎焊接头连接": "braze joint",
     "钒合金": "vanadium alloy",
@@ -5047,6 +6041,8 @@
     "防护": "protection",
     "防氚渗透涂层": "tritium permeation barrier",
     "防渗透阻挡层": "tritium permeation barrier",
+    "防火阀": "fire damper",
+    "防火风阀": "fire damper",
     "阶梯式输运": "staircase transport",
     "阶梯输运": "staircase transport",
     "阻氚涂层": "tritium permeation barrier",
@@ -5056,6 +6052,7 @@
     "阿尔芬本征模": "Alfvén eigenmode",
     "阿尔芬波": "Alfvén wave",
     "阿尔芬连续谱": "Alfvén continuum",
+    "限制区通风系统": "confinement ventilation system",
     "限制器": "limiter",
     "限制器结构": "limiter",
     "除氚": "detritiation",
@@ -5064,6 +6061,7 @@
     "陶瓷球床": "ceramic pebble bed",
     "隐式俘获": "implicit capture",
     "隔夜建设成本": "overnight capital cost",
+    "隔离阀": "isolation valve",
     "隔震": "seismic isolation",
     "集体剂量": "collective dose",
     "集成建模": "integrated modeling",
@@ -5083,6 +6081,8 @@
     "非线性耦合": "nonlinear coupling",
     "非线性耦合效应": "nonlinear coupling",
     "非结构网格": "unstructured mesh",
+    "非蒸发型吸气剂": "non-evaporable getter",
+    "非蒸散型吸气剂": "non-evaporable getter",
     "面向对象编程": "object-oriented programming",
     "面向等离子体材料": "plasma-facing material",
     "面向等离子体部件": "plasma-facing component",
@@ -5110,6 +6110,8 @@
     "高再循环区": "high recycling",
     "高周疲劳": "high-cycle fatigue",
     "高放废物": "high-level waste",
+    "高效空气过滤器": "HEPA filter",
+    "高效过滤器": "HEPA filter",
     "高比压": "high beta",
     "高温超导体": "high-temperature superconductor",
     "高热流测试": "high heat flux testing",

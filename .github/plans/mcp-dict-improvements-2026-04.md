@@ -262,7 +262,7 @@
 
 ### Phase 4: 验证与构建
 
-#### Task 4.1: 重新生成 artifact 文件
+#### ✅ Task 4.1: 重新生成 artifact 文件
 
 - **目标**：从更新后的注册表重新生成 `translation_dict.json` 和 `query_expansions.json`
 - **修改内容**：
