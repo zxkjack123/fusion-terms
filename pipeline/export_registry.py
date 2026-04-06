@@ -518,6 +518,7 @@ def export_translation_dict(
     zh2en: dict[str, str] = {}
     en2zh: dict[str, str] = {}
     en2zh_concept: dict[str, str] = {}
+    en2zh_abbr_keys: set[str] = set()
 
     for row in alias_rows:
         alias = row.get("alias", "")
@@ -531,6 +532,9 @@ def export_translation_dict(
         preferred_en = preferred_en_by_concept.get(concept_id, "")
         preferred_zh = preferred_zh_by_concept.get(concept_id, "")
 
+        if lang == "abbr" and preferred_zh:
+            en2zh_abbr_keys.add(alias)
+
         if lang in {"zh", "abbr", "mixed"} and preferred_en and alias not in zh2en:
             zh2en[alias] = preferred_en
         if lang in {"en", "abbr", "mixed"} and preferred_zh and alias not in en2zh:
@@ -539,7 +543,9 @@ def export_translation_dict(
 
     en2zh_short: dict[str, dict[str, str]] = {}
     for key in list(en2zh.keys()):
-        if key.isascii() and len(key) < min_en_key_len:
+        if key.isascii() and (
+            len(key) < min_en_key_len or key in en2zh_abbr_keys
+        ):
             en2zh_short[key] = {
                 "zh": en2zh.pop(key),
                 "concept_id": en2zh_concept[key],

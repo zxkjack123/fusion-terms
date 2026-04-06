@@ -152,7 +152,7 @@
   - ✅ 生成后 zh2en 中 `"产氚模块"` 仍映射到 `"test blanket module"`（alias 保留翻译能力）
 - **潜在风险**：已发布报告/仪表盘中引用"产氚模块"的地方不会自动更新。影响范围限于本字典消费者的后续查询。
 
-#### Task 2.2: 修改 en2zh_short 导出逻辑以包含所有 abbr-lang 别名
+#### ✅ Task 2.2: 修改 en2zh_short 导出逻辑以包含所有 abbr-lang 别名
 
 - **目标**：使 `export_translation_dict()` 将所有 `lang=abbr` 的别名（无论长度）路由到 en2zh_short，使 ELM/TBM/HTS/CICC 等缩写能被 MCP server 识别
 - **修改内容**：
