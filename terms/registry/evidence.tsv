@@ -644,6 +644,7 @@ bae	internal:expansion:batch-20	Beta-induced gap eigenmode	copilot	2026-03-17
 energetic-particle-mode	internal:expansion:batch-20	Fast-ion driven continuum mode	copilot	2026-03-17
 parametric-instability	internal:expansion:batch-20	Laser-plasma nonlinear coupling	copilot	2026-03-17
 dt-reaction	internal:expansion:batch-21	D-T fusion reaction	copilot	2026-03-17
+deuterium-tritium	https://www.iter.org/mach/fuel			2026-04-06
 dd-reaction	internal:expansion:batch-21	D-D fusion reaction	copilot	2026-03-17
 d-he3-reaction	internal:expansion:batch-21	D-He3 advanced fuel reaction	copilot	2026-03-17
 fusion-triple-product	internal:expansion:batch-21	n*T*tau ignition metric	copilot	2026-03-17

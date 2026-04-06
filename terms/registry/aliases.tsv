@@ -2406,6 +2406,12 @@ D-T reaction	dt-reaction	en	preferred
 D-T反应	dt-reaction	zh	preferred
 deuterium-tritium reaction	dt-reaction	en	alias
 氘氚反应	dt-reaction	zh	alias
+氘氚	deuterium-tritium	zh	preferred	preferred zh
+deuterium-tritium	deuterium-tritium	en	preferred	preferred en
+D-T	deuterium-tritium	abbr	preferred	canonical abbr
+DT	deuterium-tritium	abbr	alias	no-hyphen form
+氘氚燃料	deuterium-tritium	zh	alias	compound: DT fuel
+氘氚等离子体	deuterium-tritium	zh	alias	compound: DT plasma
 D-D reaction	dd-reaction	en	preferred
 D-D反应	dd-reaction	zh	preferred
 deuterium-deuterium reaction	dd-reaction	en	alias
