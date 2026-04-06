@@ -69,3 +69,14 @@ artifacts/rime_backups/
 
 # Optional local-only pointers
 sources/local_paths.txt
+
+# Review records: keep long-term markdown reports tracked
+!.github/reviews/
+!.github/reviews/*.md
+
+# Review records: ignore temporary files
+.github/reviews/tmp/
+.github/reviews/*.tmp
+.github/reviews/*.bak
+.github/reviews/**/*.tmp
+.github/reviews/**/*.bak
