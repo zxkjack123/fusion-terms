@@ -202,7 +202,7 @@
 
 ### Phase 3: P2 — CFETR 复合词 + 缓解/mitigation
 
-#### Task 3.1: 新增 CFETR 复合概念
+#### ✅ Task 3.1: 新增 CFETR 复合概念
 
 - **目标**：新增 `cfetr-design` 概念，覆盖 "CFETR设计→CFETR design" 和 "CFETR总体设计→CFETR overall design" 映射
 - **修改内容**：

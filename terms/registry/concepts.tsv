@@ -294,6 +294,7 @@ fusion-neutron	concept	聚变中子	fusion neutron		active	14.1 MeV neutron from
 
 # ---- Major fusion devices (重要聚变装置)
 cfetr	device	中国聚变工程试验堆	CFETR	CFETR	active	China Fusion Engineering Test Reactor
+cfetr-design	concept	CFETR设计	CFETR design		active	Design activities and parameter studies for CFETR
 demo	device	示范堆	DEMO	DEMO	active	Demonstration fusion power plant (generic milestone)
 jet	device	JET	JET		active	Joint European Torus (largest tokamak, Culham)
 jt-60sa	device	JT-60SA	JT-60SA		active	Japan Torus superconducting upgrade at QST Naka

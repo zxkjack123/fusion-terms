@@ -288,6 +288,7 @@ fusion-neutron	internal:engineering:DT-neutron			2026-03-16
 
 # ---- Major fusion devices
 cfetr	internal:CFETRCOOLACT:CFETR			2026-03-16
+cfetr-design	https://doi.org/10.1088/1741-4326/ab0c68
 demo	https://en.wikipedia.org/wiki/DEMOnstration_Power_Plant			2026-03-16
 jet	https://en.wikipedia.org/wiki/Joint_European_Torus			2026-03-16
 jt-60sa	https://en.wikipedia.org/wiki/JT-60			2026-03-16

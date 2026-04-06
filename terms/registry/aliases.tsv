@@ -1219,6 +1219,12 @@ fusion-neutron	fusion-neutron	en	alias	IME token-only form
 中国聚变工程试验堆	cfetr	zh	preferred	preferred zh
 CFETR	cfetr	abbr	preferred	canonical abbr
 China Fusion Engineering Test Reactor	cfetr	en	alias	full expansion
+CFETR设计	cfetr-design	zh	preferred	preferred zh
+CFETR design	cfetr-design	en	preferred	preferred en
+CFETR总体设计	cfetr-design	zh	alias	overall design variant
+CFETR overall design	cfetr-design	en	alias	overall design variant en
+CFETR设计参数	cfetr-design	zh	alias	design parameters variant
+CFETR总体设计参数	cfetr-design	zh	alias	overall design parameters
 
 示范堆	demo	zh	preferred	preferred zh
 DEMO	demo	en	preferred	preferred en
