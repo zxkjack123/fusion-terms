@@ -279,7 +279,7 @@ wccb	concept	水冷陶瓷包层	water-cooled ceramic breeder	WCCB	active	Water-c
 hcll	concept	氦冷锂铅包层	helium-cooled lithium-lead	HCLL	active	EU helium-cooled lithium-lead blanket concept
 hcpb	concept	氦冷球床包层	helium-cooled pebble bed	HCPB	active	EU helium-cooled pebble bed blanket concept
 dcll	concept	双冷锂铅包层	dual-coolant lithium-lead	DCLL	active	He/LiPb dual-coolant blanket concept
-tbm	concept	产氚模块	test blanket module	TBM	active	In-vessel test modules for ITER blanket qualification
+tbm	concept	实验包层模块	test blanket module	TBM	active	In-vessel test modules for ITER blanket qualification
 
 # ---- Fusion engineering: neutronics & irradiation (中子学与辐照)
 neutron-wall-loading	metric	中子壁负荷	neutron wall loading		active	Neutron power per unit first-wall area (MW/m²)

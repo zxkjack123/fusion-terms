@@ -1170,7 +1170,7 @@ HCPB	hcpb	abbr	preferred	canonical abbr
 dual-coolant lithium-lead	dcll	en	preferred	preferred en (phrase)
 DCLL	dcll	abbr	preferred	canonical abbr
 
-产氚模块	tbm	zh	preferred	preferred zh
+产氚模块	tbm	zh	alias	legacy zh term retained as alias
 test blanket module	tbm	en	preferred	preferred en (phrase)
 test-blanket-module	tbm	en	alias	IME token-only form
 TBM	tbm	abbr	preferred	canonical abbr
@@ -5369,7 +5369,7 @@ FCI	flow-channel-insert	abbr	preferred
 irradiation hardening	radiation-hardening	en	alias	synonym used in fusion materials literature
 Li₂TiO₃	lithium-titanate	en	alias	chemical formula with subscripts
 Li₄SiO₄	lithium-orthosilicate	en	alias	chemical formula with subscripts
-实验包层模块	tbm	zh	alias	full Chinese name
+实验包层模块	tbm	zh	preferred	preferred zh
 # ==== Batch F12: Forbidden enrichment for Batch 54 + remainder ====
 aluminacoating	alumina-coating	en	forbidden	auto-added for coverage uplift
 boronpowderinjection	boron-powder-injection	en	forbidden	auto-added for coverage uplift
