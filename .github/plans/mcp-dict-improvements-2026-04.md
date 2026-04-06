@@ -293,7 +293,7 @@
   - ✅ TBM 在 en2zh_short 中 zh 值为"实验包层模块"
 - **潜在风险**：`--query-expansions` CLI flag 需确认在当前 export_registry.py 中可用。已在调研中确认函数和 CLI 均存在。
 
-#### Task 4.2: 运行全量测试
+#### ✅ Task 4.2: 运行全量测试
 
 - **目标**：确认所有修改未引入回归
 - **修改内容**：无文件修改，仅运行测试
