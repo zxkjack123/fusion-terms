@@ -24,6 +24,25 @@
 ### Fixed
 
 
+## v2026.04.07
+
+### Added
+
+- 术语库大规模扩充：经 9 轮批量扩展计划（expand-terminology-coverage, fix-translation-dict-gaps, expand-registry-batch3–batch9, mcp-dict-improvements-2026-04），registry 从 987→**1465** concepts、4718→**6236** aliases、987→**1465** evidence rows。
+  - 新增覆盖领域：通用科学方法学、HPC/并行计算、MC 与确定论输运、核数据处理与燃耗、CAD 与几何建模、辐射防护与剂量学、材料科学与力学、热工水力、软件工程、数据格式与可视化。
+  - 新增 deuterium-tritium（氘氚）核心概念及 D-T 复合概念（D-T 聚变、D-T 中子源、D-T 反应等）。
+  - 新增 CFETR 设计概念（CFETR设计 / CFETR总体设计）。
+  - 新增独立 mitigation（缓解）概念。
+  - 修复翻译字典缺失条目、无连字符英文别名、Nb₃Sn 缺 preferred_zh 等问题。
+- `allowlist_zh.txt` / `allowlist_en.txt` 同步新增 1056 条术语。
+- `.github/reviews/` 纳入版本跟踪：保留结构化评审报告作为决策审计 trail，忽略临时文件（`tmp/`、`*.tmp`、`*.bak`）。
+
+### Changed
+
+- TBM preferred_zh 由"测试包层模块"更正为"实验包层模块"。
+- `en2zh_short` 缩写路由策略扩展：所有 `kind=abbreviation` 别名均路由至 `en2zh_short`，不再仅限 ≤2 字符键。
+- `translation_dict.json` 重新生成：zh2en / en2zh / en2zh_short 全量更新至 1465-concept 基线。
+
 ## v2026.04.03
 
 ### Changed
