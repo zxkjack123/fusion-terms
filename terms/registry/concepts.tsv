@@ -334,6 +334,7 @@ resonant-magnetic-perturbation	method	共振磁扰动	resonant magnetic perturba
 quiescent-h-mode	concept	静默H模	quiescent H-mode	QH-mode	active	ELM-free H-mode with edge harmonic oscillation
 disruption-prediction	concept	破裂预测	disruption prediction		active	Machine learning / physics-based early warning of disruptions
 disruption-mitigation	method	破裂缓解	disruption mitigation		active	Massive gas/shattered pellet injection to dissipate energy
+mitigation	concept	缓解	mitigation		active	Risk/event mitigation in fusion context (always mitigation, not relief/alleviation)
 shattered-pellet-injection	method	碎裂弹丸注入	shattered pellet injection	SPI	active	Primary disruption mitigation technique for ITER
 massive-gas-injection	method	大量气体注入	massive gas injection	MGI	active	Fast gas injection for disruption thermal quench mitigation
 impurity-transport	concept	杂质输运	impurity transport		active	Transport of impurity ions in confined plasma

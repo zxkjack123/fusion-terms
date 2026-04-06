@@ -1363,6 +1363,9 @@ disruption-prediction	disruption-prediction	en	alias	IME token-only form
 disruption mitigation	disruption-mitigation	en	preferred	preferred en (phrase)
 disruption-mitigation	disruption-mitigation	en	alias	IME token-only form
 
+缓解	mitigation	zh	preferred	preferred zh
+mitigation	mitigation	en	preferred	preferred en
+
 碎裂弹丸注入	shattered-pellet-injection	zh	preferred	preferred zh
 shattered pellet injection	shattered-pellet-injection	en	preferred	preferred en (phrase)
 shattered-pellet-injection	shattered-pellet-injection	en	alias	IME token-only form

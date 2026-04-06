@@ -328,6 +328,7 @@ resonant-magnetic-perturbation	internal:plasma-control:RMP			2026-03-16
 quiescent-h-mode	internal:plasma-control:QH-mode			2026-03-16
 disruption-prediction	internal:plasma-control:disruption			2026-03-16
 disruption-mitigation	internal:plasma-control:disruption			2026-03-16
+mitigation	internal:domain-convention-zh-mitigation
 shattered-pellet-injection	internal:plasma-control:disruption			2026-03-16
 massive-gas-injection	internal:plasma-control:disruption			2026-03-16
 impurity-transport	internal:plasma-physics:transport			2026-03-16

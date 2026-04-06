@@ -233,7 +233,7 @@
   - ✅ 验证通过无报错
 - **潜在风险**：`"CFETR总体设计"` 映射到 preferred_en `"CFETR design"` 而非 `"CFETR overall design"`，可能丢失"总体"语义。可通过将 preferred_en 设为 `"CFETR overall design"` 并让 `"CFETR design"` 做 en alias 来解决，但这会使 zh2en["CFETR设计"] = "CFETR overall design"，不太精确。当前方案选择以 `"CFETR design"` 为首选，`"CFETR overall design"` 作为同义覆盖。
 
-#### Task 3.2: 新增"缓解/mitigation"独立概念
+#### ✅ Task 3.2: 新增"缓解/mitigation"独立概念
 
 - **目标**：建立 `mitigation` 概念，使 MCP 字典直接命中"缓解→mitigation"
 - **修改内容**：
