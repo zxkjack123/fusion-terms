@@ -131,6 +131,22 @@ def build_release_pack(
     terms_dir = terms_dir.expanduser()
     config = config.expanduser()
 
+    # Safety: refuse to rmtree dangerous top-level paths.
+    _resolved = stage_dir.resolve()
+    _dangerous = {Path.home().resolve(), Path("/").resolve()}
+    if _resolved in _dangerous or any(_resolved == p for p in _dangerous):
+        raise SystemExit(
+            f"release_pack: stage_dir resolves to a dangerous path, refusing: "
+            f"{stage_dir} -> {_resolved}"
+        )
+    # Must have at least 2 path components (e.g. dist/stage, /tmp/xyz) to avoid
+    # accidentally deleting a root-level directory.
+    if len(_resolved.parts) <= 2:
+        raise SystemExit(
+            f"release_pack: stage_dir too shallow, refusing rmtree: "
+            f"{stage_dir} -> {_resolved}"
+        )
+
     if stage_dir.exists():
         if not force:
             raise SystemExit(f"release_pack failed: stage dir exists (use --force): {stage_dir}")
