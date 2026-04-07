@@ -35,6 +35,29 @@ INLINE_MATH_RE = re.compile(r"\$[^$]+\$")
 WORDLIKE_RE = re.compile(r"[A-Za-z0-9\u4e00-\u9fff]")
 
 
+def _trim_incomplete_utf8_tail(data: bytes) -> bytes:
+    """Trim ≤3 tail bytes when truncation cuts through a UTF-8 code point."""
+
+    if not data:
+        return data
+
+    for trim in range(0, 4):
+        candidate = data if trim == 0 else data[:-trim]
+        if not candidate:
+            return b""
+        try:
+            candidate.decode("utf-8")
+            return candidate
+        except UnicodeDecodeError as e:
+            # Only retry when decode failure is at/near the very end,
+            # consistent with truncated tail bytes.
+            if e.start < len(candidate) - 4:
+                return data
+            continue
+
+    return data
+
+
 def iter_markdown_files(
     root: Path,
     *,
@@ -186,6 +209,7 @@ def read_text_file(path: Path, max_bytes: int = 10_000_000) -> str:
             stacklevel=2,
         )
         data = data[:max_bytes]
+        data = _trim_incomplete_utf8_tail(data)
 
     # Prefer strict decoding so we do not silently drop bytes.
     # For external corpora, we fall back to replacement to keep the

@@ -17,11 +17,16 @@ from pipeline.common import ensure_dir, load_simple_list, load_synonyms_tsv
 WHITESPACE_RE = re.compile(r"\s")
 
 
-def validate_no_control_or_invisible_terms(terms: set[str], *, context: str) -> None:
+def validate_no_control_or_invisible_terms(
+    terms: set[str],
+    *,
+    context: str,
+) -> None:
     """Fail fast if any term contains control/invisible Unicode characters.
 
-    This protects against accidental copy/paste artifacts (e.g. ZERO WIDTH SPACE)
-    that are nearly impossible to spot in reviews but can break downstream tools.
+    This protects against accidental copy/paste artifacts
+    (e.g. ZERO WIDTH SPACE) that are nearly impossible to spot in reviews
+    but can break downstream tools.
     """
 
     offenders: list[tuple[str, list[str]]] = []
@@ -45,12 +50,15 @@ def validate_no_control_or_invisible_terms(terms: set[str], *, context: str) -> 
         more = "" if len(bad) <= 3 else f", ... +{len(bad) - 3} more"
         preview_lines.append(f"- {term!r}: {shown}{more}")
     preview = "\n".join(preview_lines)
-    more_terms = "" if len(offenders) <= 20 else f"\n... and {len(offenders) - 20} more"
+    more_terms = (
+        "" if len(offenders) <= 20 else f"\n... and {len(offenders) - 20} more"
+    )
 
     raise SystemExit(
         "wordlist terms must not contain control/invisible Unicode characters "
         f"({context}).\n"
-        "Tip: watch for zero-width spaces when copy/pasting from PDFs/Markdown.\n"
+        "Tip: watch for zero-width spaces when copy/pasting "
+        "from PDFs/Markdown.\n"
         f"offending terms:\n{preview}{more_terms}"
     )
 
@@ -195,7 +203,10 @@ def main() -> None:
         if preferred != t and preferred not in deny:
             synonyms_mapped += 1
 
-    validate_no_whitespace_terms(final_terms, context="after deny/synonyms normalization")
+    validate_no_whitespace_terms(
+        final_terms,
+        context="after deny/synonyms normalization",
+    )
     validate_no_control_or_invisible_terms(
         final_terms, context="after deny/synonyms normalization"
     )
@@ -219,6 +230,7 @@ def main() -> None:
         if args.stats_json
         else (out_dir / f"{output_stem}_build_stats.json")
     )
+    stats_path.parent.mkdir(parents=True, exist_ok=True)
 
     added = sorted(final_terms - prev_terms)
     removed = sorted(prev_terms - final_terms)

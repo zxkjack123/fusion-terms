@@ -1,6 +1,9 @@
 from __future__ import annotations
 
+import warnings
+
 from pipeline.common import clean_markdown_lines
+from pipeline.common import read_text_file
 
 
 def test_clean_markdown_lines_drops_noise_and_truncates_references() -> None:
@@ -16,7 +19,8 @@ Figure 1: tokamak schematic of ITER.
 | --- | --- |
 | ITER | NBI |
 
-A markdown link to [tokamak](https://example.com/tokamak) should keep visible text.
+A markdown link to [tokamak](https://example.com/tokamak)
+should keep visible text.
 
 Inline math like $q_{95}$ and $\\beta_N$ should keep inner content.
 
@@ -63,3 +67,35 @@ $$
     # Truncate at references
     assert "References" not in joined
     assert "EAST" not in joined
+
+
+def test_read_text_file_truncate_multibyte_boundary_no_decode_warning(
+    tmp_path,
+) -> None:
+    path = tmp_path / "truncated.md"
+    raw = "alpha中beta".encode("utf-8")
+    # Cut in the middle of a 3-byte UTF-8 char ('中').
+    max_bytes = len("alpha".encode("utf-8")) + 2
+    path.write_bytes(raw)
+
+    with warnings.catch_warnings(record=True) as caught:
+        warnings.simplefilter("always", RuntimeWarning)
+        text = read_text_file(path, max_bytes=max_bytes)
+
+    messages = [str(w.message) for w in caught]
+    assert text == "alpha"
+    assert any("file truncated" in msg for msg in messages)
+    assert not any("UTF-8 decode error" in msg for msg in messages)
+
+
+def test_read_text_file_invalid_utf8_still_warns(tmp_path) -> None:
+    path = tmp_path / "invalid.md"
+    path.write_bytes(b"abc\xffdef")
+
+    with warnings.catch_warnings(record=True) as caught:
+        warnings.simplefilter("always", RuntimeWarning)
+        text = read_text_file(path, max_bytes=100)
+
+    messages = [str(w.message) for w in caught]
+    assert "\ufffd" in text
+    assert any("UTF-8 decode error" in msg for msg in messages)
