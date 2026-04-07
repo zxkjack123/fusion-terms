@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import hashlib
 import json
 import os
 from collections import Counter
@@ -239,3 +240,114 @@ def test_extract_skips_unreadable_file_during_processing(
 
     assert (tmp_path / "candidates_zh.tsv").exists()
     assert (tmp_path / "candidates_en.tsv").exists()
+
+
+def test_load_cached_results_invalidates_on_sha_mismatch(
+    tmp_path: Path,
+) -> None:
+    md_path = tmp_path / "sample.md"
+    md_path.write_text("abc", encoding="utf-8")
+
+    cache_dir = tmp_path / ".cache"
+    result_path = cache_dir / "files" / "sample.json"
+    result_path.parent.mkdir(parents=True, exist_ok=True)
+    result_path.write_text('{"cached": true}', encoding="utf-8")
+
+    st = md_path.stat()
+    (
+        cached_data,
+        _cached_entry,
+        _cached_result_path,
+    ) = extract_mod._load_cached_results(
+        incremental=True,
+        cache_enabled=True,
+        cache_dir=cache_dir,
+        cache_files={
+            str(md_path): {
+                "mtime_ns": int(st.st_mtime_ns),
+                "size": int(st.st_size),
+                "sha256": hashlib.sha256(b"def").hexdigest(),
+                "result_relpath": "files/sample.json",
+            }
+        },
+        md_path=md_path,
+        md_key=str(md_path),
+        st_mtime_ns=int(st.st_mtime_ns),
+        st_size=int(st.st_size),
+    )
+
+    assert cached_data is None
+
+
+def test_load_cached_results_uses_cache_when_sha_matches(
+    tmp_path: Path,
+) -> None:
+    md_path = tmp_path / "sample.md"
+    md_path.write_text("abc", encoding="utf-8")
+
+    cache_dir = tmp_path / ".cache"
+    result_path = cache_dir / "files" / "sample.json"
+    result_path.parent.mkdir(parents=True, exist_ok=True)
+    result_path.write_text('{"cached": true}', encoding="utf-8")
+
+    st = md_path.stat()
+    (
+        cached_data,
+        _cached_entry,
+        _cached_result_path,
+    ) = extract_mod._load_cached_results(
+        incremental=True,
+        cache_enabled=True,
+        cache_dir=cache_dir,
+        cache_files={
+            str(md_path): {
+                "mtime_ns": int(st.st_mtime_ns),
+                "size": int(st.st_size),
+                "sha256": extract_mod._compute_file_sha256(md_path),
+                "result_relpath": "files/sample.json",
+            }
+        },
+        md_path=md_path,
+        md_key=str(md_path),
+        st_mtime_ns=int(st.st_mtime_ns),
+        st_size=int(st.st_size),
+    )
+
+    assert cached_data == {"cached": True}
+
+
+def test_load_cached_results_keeps_backward_compat_without_sha(
+    tmp_path: Path,
+) -> None:
+    md_path = tmp_path / "sample.md"
+    md_path.write_text("abc", encoding="utf-8")
+
+    cache_dir = tmp_path / ".cache"
+    result_path = cache_dir / "files" / "sample.json"
+    result_path.parent.mkdir(parents=True, exist_ok=True)
+    result_path.write_text('{"cached": true}', encoding="utf-8")
+
+    st = md_path.stat()
+    (
+        cached_data,
+        _cached_entry,
+        _cached_result_path,
+    ) = extract_mod._load_cached_results(
+        incremental=True,
+        cache_enabled=True,
+        cache_dir=cache_dir,
+        cache_files={
+            str(md_path): {
+                "mtime_ns": int(st.st_mtime_ns),
+                "size": int(st.st_size),
+                "sha256": "",
+                "result_relpath": "files/sample.json",
+            }
+        },
+        md_path=md_path,
+        md_key=str(md_path),
+        st_mtime_ns=int(st.st_mtime_ns),
+        st_size=int(st.st_size),
+    )
+
+    assert cached_data == {"cached": True}

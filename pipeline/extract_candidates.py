@@ -199,6 +199,14 @@ def _sha1_str(s: str) -> str:
     return hashlib.sha1(s.encode("utf-8", errors="ignore")).hexdigest()
 
 
+def _compute_file_sha256(md_path: Path) -> str:
+    hasher = hashlib.sha256()
+    with md_path.open("rb") as f:
+        for chunk in iter(lambda: f.read(1024 * 1024), b""):
+            hasher.update(chunk)
+    return hasher.hexdigest()
+
+
 def _extractor_signature(
     *,
     min_zh_len: int,
@@ -321,9 +329,24 @@ def _load_cached_results(
             cached_entry.mtime_ns == st_mtime_ns
             and cached_entry.size == st_size
         ):
-            cached_result_path = cache_dir / cached_entry.result_relpath
-            if cached_result_path.exists():
-                can_use_cache = True
+            sha_matches = True
+            if cached_entry.sha256:
+                try:
+                    sha_matches = (
+                        cached_entry.sha256
+                        == _compute_file_sha256(md_path)
+                    )
+                except (FileNotFoundError, OSError) as exc:
+                    warnings.warn(
+                        f"cache sha256 check failed for {md_key}: {exc}",
+                        stacklevel=2,
+                    )
+                    sha_matches = False
+
+            if sha_matches:
+                cached_result_path = cache_dir / cached_entry.result_relpath
+                if cached_result_path.exists():
+                    can_use_cache = True
 
     if not (incremental and can_use_cache and cached_result_path is not None):
         return None, cached_entry, cached_result_path
