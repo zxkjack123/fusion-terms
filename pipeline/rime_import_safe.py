@@ -204,8 +204,16 @@ def rollback_from_manifest(manifest_path: Path) -> None:
     items_sorted = sorted(items, key=lambda d: str(d.get("original", "")))
 
     for it in items_sorted:
-        orig = Path(it["original"]).expanduser()
-        bak = Path(it["backup"]).expanduser()
+        orig_raw = it.get("original")
+        bak_raw = it.get("backup")
+        if not orig_raw or not bak_raw:
+            print(
+                f"warning: skipping manifest item with missing key: {it}",
+                file=sys.stderr,
+            )
+            continue
+        orig = Path(orig_raw).expanduser()
+        bak = Path(bak_raw).expanduser()
 
         orig_r = orig.resolve()
         bak_r = bak.resolve()
