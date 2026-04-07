@@ -175,3 +175,67 @@ def test_write_tsv_escapes_tab_and_newline_fields(tmp_path: Path) -> None:
     assert len(rows) == 2
     cols = rows[1].split("\t")
     assert len(cols) == 4, f"expected 4 TSV columns, got {len(cols)}: {cols}"
+
+
+def test_extract_skips_missing_file_during_scan(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    existing = Path("tests/fixtures/corpus/sample.md")
+    missing = Path("tests/fixtures/corpus/missing.md")
+
+    def fake_iter_markdown_files(
+        _root: Path,
+        *,
+        exclude_globs: list[str] | None = None,
+    ):
+        del exclude_globs
+        yield existing
+        yield missing
+
+    monkeypatch.setattr(
+        extract_mod,
+        "iter_markdown_files",
+        fake_iter_markdown_files,
+    )
+
+    with pytest.warns(UserWarning, match=r"skipping .*missing\.md"):
+        _run_extract(tmp_path)
+
+    assert (tmp_path / "candidates_zh.tsv").exists()
+    assert (tmp_path / "candidates_en.tsv").exists()
+
+
+def test_extract_skips_unreadable_file_during_processing(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    real_process = extract_mod._process_single_file
+
+    def fake_process_single_file(
+        *,
+        md_path: Path,
+        zh_re,
+        want_en_phrases: bool,
+        en_phrases: str,
+    ):
+        if md_path.name == "sample2.md":
+            raise OSError("permission denied")
+        return real_process(
+            md_path=md_path,
+            zh_re=zh_re,
+            want_en_phrases=want_en_phrases,
+            en_phrases=en_phrases,
+        )
+
+    monkeypatch.setattr(
+        extract_mod,
+        "_process_single_file",
+        fake_process_single_file,
+    )
+
+    with pytest.warns(UserWarning, match=r"skipping .*sample2\.md"):
+        _run_extract(tmp_path)
+
+    assert (tmp_path / "candidates_zh.tsv").exists()
+    assert (tmp_path / "candidates_en.tsv").exists()

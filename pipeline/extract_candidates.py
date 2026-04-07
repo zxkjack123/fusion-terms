@@ -986,7 +986,11 @@ def _scan_markdown_corpus(
             break
         scanned += 1
 
-        st = md_path.stat()
+        try:
+            st = md_path.stat()
+        except (FileNotFoundError, OSError) as exc:
+            warnings.warn(f"skipping {md_path}: {exc}", stacklevel=2)
+            continue
         md_key = str(md_path)
         cached_data, cached_entry, _ = _load_cached_results(
             incremental=incremental,
@@ -1034,12 +1038,16 @@ def _scan_markdown_corpus(
             md_key=md_key,
         )
 
-        file_result = _process_single_file(
-            md_path=md_path,
-            zh_re=zh_re,
-            want_en_phrases=want_en_phrases,
-            en_phrases=en_phrases,
-        )
+        try:
+            file_result = _process_single_file(
+                md_path=md_path,
+                zh_re=zh_re,
+                want_en_phrases=want_en_phrases,
+                en_phrases=en_phrases,
+            )
+        except (FileNotFoundError, OSError) as exc:
+            warnings.warn(f"skipping {md_path}: {exc}", stacklevel=2)
+            continue
 
         if incremental:
             _update_incremental_deltas(
