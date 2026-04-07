@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import unicodedata
 from pathlib import Path
@@ -221,7 +222,9 @@ def main() -> None:
     zh_set = set(zh)
     en = sorted([t for t in final_terms if t not in zh_set])
 
-    out_path.write_text("\n".join(zh + en) + "\n", encoding="utf-8")
+    _tmp = out_path.with_suffix(".tmp")
+    _tmp.write_text("\n".join(zh + en) + "\n", encoding="utf-8")
+    os.replace(_tmp, out_path)
     print(f"wrote {out_path} ({len(final_terms)} terms)")
 
     # Build stats report (deterministic JSON).
@@ -253,10 +256,12 @@ def main() -> None:
         "removed": removed,
     }
 
-    stats_path.write_text(
+    _tmp = stats_path.with_suffix(".tmp")
+    _tmp.write_text(
         json.dumps(stats, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
         encoding="utf-8",
     )
+    os.replace(_tmp, stats_path)
     print(f"wrote {stats_path}")
 
 
