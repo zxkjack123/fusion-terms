@@ -1,8 +1,11 @@
 from __future__ import annotations
 
 import argparse
+import os
 import re
+import tempfile
 import unicodedata
+import warnings
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -116,6 +119,36 @@ def _read_file_lines(path: Path) -> list[str]:
         ) from e
 
 
+def _atomic_write_text(path: Path, content: str) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    fd, tmp_name = tempfile.mkstemp(
+        prefix=f".{path.name}.",
+        suffix=".tmp",
+        dir=str(path.parent),
+    )
+    tmp_path = Path(tmp_name)
+    try:
+        with os.fdopen(fd, "w", encoding="utf-8") as f:
+            f.write(content)
+        os.replace(tmp_path, path)
+    finally:
+        try:
+            tmp_path.unlink()
+        except FileNotFoundError:
+            pass
+
+
+def _warn_if_manual_content_after_marker(*, lines: list[str], idx: int, path: Path) -> None:
+    tail = lines[idx + 1:]
+    has_manual_content = any(ln.strip() and not ln.strip().startswith("#") for ln in tail)
+    if has_manual_content:
+        warnings.warn(
+            f"content after AUTO_MARKER will be overwritten: {path}",
+            UserWarning,
+            stacklevel=2,
+        )
+
+
 def _rewrite_auto_inbox_list(path: Path, new_terms: set[str]) -> None:
     """Ensure an AUTO-INBOX block exists and is rewritten deterministically."""
 
@@ -125,15 +158,16 @@ def _rewrite_auto_inbox_list(path: Path, new_terms: set[str]) -> None:
         # Fresh file.
         content = [AUTO_MARKER]
         content.extend(sorted(new_terms))
-        path.write_text("\n".join(content) + "\n", encoding="utf-8")
+        _atomic_write_text(path, "\n".join(content) + "\n")
         return
 
     if AUTO_MARKER in lines:
         idx = lines.index(AUTO_MARKER)
+        _warn_if_manual_content_after_marker(lines=lines, idx=idx, path=path)
         head = lines[: idx + 1]
         # Drop any previous auto-inbox payload (until EOF).
         body = sorted(new_terms)
-        path.write_text("\n".join(head + body) + "\n", encoding="utf-8")
+        _atomic_write_text(path, "\n".join(head + body) + "\n")
         return
 
     # Append a new auto block at the end.
@@ -143,7 +177,7 @@ def _rewrite_auto_inbox_list(path: Path, new_terms: set[str]) -> None:
         out.append("")
     out.append(AUTO_MARKER)
     out.extend(sorted(new_terms))
-    path.write_text("\n".join(out) + "\n", encoding="utf-8")
+    _atomic_write_text(path, "\n".join(out) + "\n")
 
 
 def _rewrite_auto_inbox_synonyms(path: Path, new_pairs: dict[str, tuple[str, str]]) -> None:
@@ -161,13 +195,14 @@ def _rewrite_auto_inbox_synonyms(path: Path, new_pairs: dict[str, tuple[str, str
     if not lines:
         content = [AUTO_MARKER]
         content.extend(rows)
-        path.write_text("\n".join(content) + "\n", encoding="utf-8")
+        _atomic_write_text(path, "\n".join(content) + "\n")
         return
 
     if AUTO_MARKER in lines:
         idx = lines.index(AUTO_MARKER)
+        _warn_if_manual_content_after_marker(lines=lines, idx=idx, path=path)
         head = lines[: idx + 1]
-        path.write_text("\n".join(head + rows) + "\n", encoding="utf-8")
+        _atomic_write_text(path, "\n".join(head + rows) + "\n")
         return
 
     out = list(lines)
@@ -175,7 +210,7 @@ def _rewrite_auto_inbox_synonyms(path: Path, new_pairs: dict[str, tuple[str, str
         out.append("")
     out.append(AUTO_MARKER)
     out.extend(rows)
-    path.write_text("\n".join(out) + "\n", encoding="utf-8")
+    _atomic_write_text(path, "\n".join(out) + "\n")
 
 
 def apply_decisions(*, terms_dir: Path, decisions_path: Path, apply: bool) -> dict[str, object]:

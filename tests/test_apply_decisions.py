@@ -4,6 +4,10 @@ import subprocess
 import sys
 from pathlib import Path
 
+import pytest
+
+import pipeline.apply_decisions as apply_mod
+
 
 def _read(path: Path) -> str:
     return path.read_text("utf-8", errors="ignore")
@@ -144,3 +148,42 @@ def test_apply_decisions_rejects_synonyms_conflict(tmp_path: Path) -> None:
     assert p.returncode != 0
     combined = (p.stdout or "") + "\n" + (p.stderr or "")
     assert "conflicting synonyms mapping" in combined
+
+
+def test_rewrite_auto_inbox_warns_when_non_comment_content_will_be_overwritten(
+    tmp_path: Path,
+) -> None:
+    path = tmp_path / "allowlist_en.txt"
+    path.write_text(
+        "# header\n"
+        f"{apply_mod.AUTO_MARKER}\n"
+        "manual_legacy_term\n"
+        "# comment\n",
+        encoding="utf-8",
+    )
+
+    with pytest.warns(UserWarning, match="AUTO_MARKER"):
+        apply_mod._rewrite_auto_inbox_list(path, {"NBI"})
+
+    out = path.read_text("utf-8")
+    assert "manual_legacy_term" not in out
+    assert "NBI" in out
+
+
+def test_atomic_write_failure_does_not_corrupt_original_file(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    path = tmp_path / "allowlist_en.txt"
+    original = "# header\nITER\n"
+    path.write_text(original, encoding="utf-8")
+
+    def _boom(_src: Path, _dst: Path) -> None:
+        raise OSError("simulated replace failure")
+
+    monkeypatch.setattr(apply_mod.os, "replace", _boom)
+
+    with pytest.raises(OSError, match="replace failure"):
+        apply_mod._rewrite_auto_inbox_list(path, {"NBI"})
+
+    assert path.read_text("utf-8") == original
