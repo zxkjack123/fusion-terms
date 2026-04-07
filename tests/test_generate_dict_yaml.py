@@ -77,7 +77,7 @@ def test_generate_baked_dict_yaml_is_deterministic_and_contains_payload(tmp_path
     # No timestamps; should be byte-for-byte deterministic.
     assert first == second
 
-    assert "name: fusion_terms" in first
+    assert 'name: "fusion_terms"' in first
     assert "columns:" in first
     assert "..." in first
 

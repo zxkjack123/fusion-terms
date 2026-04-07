@@ -50,7 +50,7 @@ def _render_header(*, name: str, version: str) -> str:
             "# Rime dictionary",
             "# encoding: utf-8",
             "---",
-            f"name: {name}",
+            f'name: "{name}"',
             f"version: {version!r}",
             "sort: by_weight",
             "use_preset_vocabulary: false",
