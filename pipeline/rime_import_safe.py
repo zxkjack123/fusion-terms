@@ -119,6 +119,7 @@ def create_backup(
 
     snapshot_dir = backup_root / backup_name
     snapshot_dir.mkdir(parents=True, exist_ok=False)
+    snapshot_root = snapshot_dir.resolve()
 
     items: list[BackupItem] = []
 
@@ -127,12 +128,22 @@ def create_backup(
             continue
         rel = str(p).lstrip("/")
         backup_path = snapshot_dir / rel
+        backup_path_resolved = backup_path.resolve()
+        if (
+            backup_path_resolved != snapshot_root
+            and not backup_path_resolved.is_relative_to(snapshot_root)
+        ):
+            raise SystemExit(
+                "safe import refused: backup path escapes snapshot "
+                f"directory: {p}"
+            )
+
         kind = "dir" if p.is_dir() else "file"
-        _copy_any(p, backup_path)
+        _copy_any(p, backup_path_resolved)
         items.append(
             BackupItem(
                 original=str(p),
-                backup=str(backup_path),
+                backup=str(backup_path_resolved),
                 kind=kind,
             )
         )

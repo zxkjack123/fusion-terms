@@ -290,3 +290,22 @@ def test_now_backup_name_has_microseconds_and_is_unique() -> None:
     assert re.fullmatch(r"\d{8}-\d{6}-\d{6}", n1), n1
     assert re.fullmatch(r"\d{8}-\d{6}-\d{6}", n2), n2
     assert n1 != n2
+
+
+def test_create_backup_rejects_path_that_escapes_snapshot_dir(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    from pipeline.rime_import_safe import create_backup
+
+    outside = tmp_path.parent / "outside.txt"
+    outside.write_text("x\n", encoding="utf-8")
+    monkeypatch.chdir(tmp_path)
+    sneaky = Path("..") / "outside.txt"
+
+    with pytest.raises(SystemExit, match="escapes snapshot directory"):
+        create_backup(
+            backup_root=tmp_path / "backups",
+            backup_name="escape-test",
+            paths=[sneaky],
+        )
