@@ -292,7 +292,9 @@ def _load_cached_results(
     st_size: int,
 ) -> tuple[dict | None, _CacheIndexEntry | None, Path | None]:
     cached_entry = (
-        _cache_entry_from_dict(cache_files.get(md_key, {}))
+        _cache_entry_from_dict(cache_files[md_key])
+        if md_key in cache_files
+        else None
         if cache_enabled
         else None
     )
