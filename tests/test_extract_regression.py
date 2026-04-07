@@ -1,14 +1,22 @@
 from __future__ import annotations
 
 import json
+import os
 from pathlib import Path
 
+import pytest
+
+from pipeline import extract_candidates as extract_mod
 from pipeline.extract_candidates import extract
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-BASELINE_ZH = REPO_ROOT / "artifacts" / "_smoke_run" / "baseline_extract_zh_head.tsv"
-BASELINE_EN = REPO_ROOT / "artifacts" / "_smoke_run" / "baseline_extract_en_head.tsv"
+BASELINE_ZH = (
+    REPO_ROOT / "artifacts" / "_smoke_run" / "baseline_extract_zh_head.tsv"
+)
+BASELINE_EN = (
+    REPO_ROOT / "artifacts" / "_smoke_run" / "baseline_extract_en_head.tsv"
+)
 
 
 def _run_extract(out_dir: Path) -> None:
@@ -39,8 +47,22 @@ def test_extract_output_matches_baseline(tmp_path: Path) -> None:
 
     _run_extract(tmp_path)
 
-    zh_head = "\n".join((tmp_path / "candidates_zh.tsv").read_text("utf-8").splitlines()[:21]) + "\n"
-    en_head = "\n".join((tmp_path / "candidates_en.tsv").read_text("utf-8").splitlines()[:21]) + "\n"
+    zh_head = (
+        "\n".join(
+            (tmp_path / "candidates_zh.tsv")
+            .read_text("utf-8")
+            .splitlines()[:21]
+        )
+        + "\n"
+    )
+    en_head = (
+        "\n".join(
+            (tmp_path / "candidates_en.tsv")
+            .read_text("utf-8")
+            .splitlines()[:21]
+        )
+        + "\n"
+    )
 
     assert zh_head == BASELINE_ZH.read_text("utf-8")
     assert en_head == BASELINE_EN.read_text("utf-8")
@@ -74,3 +96,62 @@ def test_extract_stats_keys(tmp_path: Path) -> None:
         "invalidated",
     }
     assert expected_cache.issubset(set(stats["cache"].keys()))
+
+
+def test_save_cache_index_uses_atomic_replace(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    cache_dir = tmp_path / ".cache"
+    cache_dir.mkdir(parents=True, exist_ok=True)
+    index_path = cache_dir / "index.json"
+    index_path.write_text(json.dumps({"version": 0}), "utf-8")
+
+    called: list[tuple[Path, Path]] = []
+    real_replace = os.replace
+
+    def wrapped_replace(
+        src: str | os.PathLike[str],
+        dst: str | os.PathLike[str],
+    ) -> None:
+        called.append((Path(src), Path(dst)))
+        real_replace(src, dst)
+
+    monkeypatch.setattr(extract_mod.os, "replace", wrapped_replace)
+
+    extract_mod._save_cache_index(cache_dir, {"version": 1, "files": {}})
+
+    assert called, "expected os.replace to be used during cache index save"
+    assert called[0][1] == index_path
+    saved = json.loads(index_path.read_text("utf-8"))
+    assert saved["version"] == 1
+
+
+def test_save_cache_index_replace_failure_preserves_original(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    cache_dir = tmp_path / ".cache"
+    cache_dir.mkdir(parents=True, exist_ok=True)
+    index_path = cache_dir / "index.json"
+    original = {"version": 0, "files": {"a.md": {"mtime_ns": 1}}}
+    index_path.write_text(
+        json.dumps(original, ensure_ascii=False, indent=2),
+        "utf-8",
+    )
+
+    def fail_replace(
+        src: str | os.PathLike[str],
+        dst: str | os.PathLike[str],
+    ) -> None:
+        raise OSError("simulated replace failure")
+
+    monkeypatch.setattr(extract_mod.os, "replace", fail_replace)
+
+    with pytest.raises(OSError, match="simulated replace failure"):
+        extract_mod._save_cache_index(cache_dir, {"version": 1, "files": {}})
+
+    assert json.loads(index_path.read_text("utf-8")) == original
+    assert not list(cache_dir.glob("index.json.tmp.*")), (
+        "tmp files should be cleaned on failure"
+    )

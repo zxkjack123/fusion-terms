@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import re
 import warnings
 from collections import Counter, defaultdict
@@ -258,10 +259,20 @@ def _load_cache_index(cache_dir: Path) -> dict:
 
 def _save_cache_index(cache_dir: Path, index: dict) -> None:
     cache_dir.mkdir(parents=True, exist_ok=True)
-    (cache_dir / "index.json").write_text(
-        json.dumps(index, ensure_ascii=False, indent=2),
-        "utf-8",
-    )
+    index_path = cache_dir / "index.json"
+    tmp_path = cache_dir / f"index.json.tmp.{os.getpid()}.{id(index)}"
+    try:
+        tmp_path.write_text(
+            json.dumps(index, ensure_ascii=False, indent=2),
+            "utf-8",
+        )
+        os.replace(tmp_path, index_path)
+    finally:
+        if tmp_path.exists():
+            try:
+                tmp_path.unlink()
+            except OSError:
+                pass
 
 
 def _cache_entry_from_dict(d: dict) -> _CacheIndexEntry | None:
