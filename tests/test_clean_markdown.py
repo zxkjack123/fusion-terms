@@ -99,3 +99,23 @@ def test_read_text_file_invalid_utf8_still_warns(tmp_path) -> None:
     messages = [str(w.message) for w in caught]
     assert "\ufffd" in text
     assert any("UTF-8 decode error" in msg for msg in messages)
+
+
+def test_clean_markdown_lines_bracket_math_fence_state() -> None:
+    md = r"""
+Intro text
+\]
+Still visible after stray close
+\[
+E = mc^2
+\]
+Tail text
+"""
+
+    lines = clean_markdown_lines(md)
+    joined = "\n".join(lines)
+
+    assert "Intro text" in joined
+    assert "Still visible after stray close" in joined
+    assert "Tail text" in joined
+    assert "E = mc^2" not in joined

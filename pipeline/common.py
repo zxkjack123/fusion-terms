@@ -137,12 +137,14 @@ def clean_markdown_lines(text: str) -> list[str]:
             continue
 
         # Drop display-math blocks.
-        if (
-            MATH_FENCE_DOLLAR_RE.match(line)
-            or MATH_FENCE_BRACKET_OPEN_RE.match(line)
-            or MATH_FENCE_BRACKET_CLOSE_RE.match(line)
-        ):
+        if MATH_FENCE_DOLLAR_RE.match(line):
             in_math = not in_math
+            continue
+        if MATH_FENCE_BRACKET_OPEN_RE.match(line):
+            in_math = True
+            continue
+        if MATH_FENCE_BRACKET_CLOSE_RE.match(line):
+            in_math = False
             continue
         if in_math:
             continue

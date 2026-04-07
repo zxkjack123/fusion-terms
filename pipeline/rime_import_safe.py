@@ -34,7 +34,7 @@ def _ensure_dir(p: Path) -> None:
 
 
 def _now_backup_name() -> str:
-    return datetime.now().strftime("%Y%m%d-%H%M%S")
+    return datetime.now().strftime("%Y%m%d-%H%M%S-%f")
 
 
 def _run_importer(
@@ -118,7 +118,7 @@ def create_backup(
     """Create a backup snapshot and return manifest path."""
 
     snapshot_dir = backup_root / backup_name
-    _ensure_dir(snapshot_dir)
+    snapshot_dir.mkdir(parents=True, exist_ok=False)
 
     items: list[BackupItem] = []
 
@@ -205,7 +205,10 @@ def rollback_from_manifest(manifest_path: Path) -> None:
             )
 
         in_home = orig_r == home_root or orig_r.is_relative_to(home_root)
-        if any(orig_r == p or orig_r.is_relative_to(p) for p in protected_roots):
+        if any(
+            orig_r == p or orig_r.is_relative_to(p)
+            for p in protected_roots
+        ):
             if not in_home:
                 raise SystemExit(
                     "rollback failed: refusing to restore protected system "
@@ -269,7 +272,11 @@ def main() -> None:
     if isinstance(rime_cfg, dict):
         v = rime_cfg.get("backup_paths")
         if isinstance(v, list):
-            default_backup_paths = [str(x).strip() for x in v if str(x).strip()]
+            default_backup_paths = [
+                str(x).strip()
+                for x in v
+                if str(x).strip()
+            ]
 
     parser = argparse.ArgumentParser(
         description=(
@@ -424,7 +431,11 @@ def main() -> None:
     # Step 2) Backup paths before import.
     backup_root = Path(args.backup_root).expanduser()
     backup_name = args.backup_name or _now_backup_name()
-    raw_backup_paths = args.backup_path if args.backup_path else default_backup_paths
+    raw_backup_paths = (
+        args.backup_path
+        if args.backup_path
+        else default_backup_paths
+    )
     backup_paths = [Path(p).expanduser() for p in raw_backup_paths]
 
     if not backup_paths:

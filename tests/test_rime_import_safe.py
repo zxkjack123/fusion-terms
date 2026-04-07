@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import re
 import shutil
 import subprocess
 import sys
@@ -278,3 +279,14 @@ def test_rollback_rejects_paths_outside_home(tmp_path: Path) -> None:
 
     with pytest.raises(SystemExit, match="protected system path"):
         rollback_from_manifest(manifest_path)
+
+
+def test_now_backup_name_has_microseconds_and_is_unique() -> None:
+    from pipeline.rime_import_safe import _now_backup_name
+
+    n1 = _now_backup_name()
+    n2 = _now_backup_name()
+
+    assert re.fullmatch(r"\d{8}-\d{6}-\d{6}", n1), n1
+    assert re.fullmatch(r"\d{8}-\d{6}-\d{6}", n2), n2
+    assert n1 != n2
