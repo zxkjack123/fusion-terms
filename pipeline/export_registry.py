@@ -16,6 +16,11 @@ from pipeline.common import ensure_dir
 from pipeline.validate_registry import validate_registry
 
 
+def _sanitize_tsv_field(value: str) -> str:
+    """Replace tab and newline characters with spaces to keep TSV well-formed."""
+    return value.replace("\t", " ").replace("\n", " ").replace("\r", " ")
+
+
 _KIND_SEVERITY: dict[str, int] = {
     # Higher wins when the same alias appears multiple times.
     "forbidden": 3,
@@ -443,9 +448,12 @@ def export_substitutions_tsv(*, terms_dir: Path, out_dir: Path) -> dict[str, obj
 
     subs = _collect_substitutions(rows)
     for r in subs:
-        lines.append(
-            f"{r['alias']}\t{r['preferred']}\t{r['status']}\t{r['lang']}\t{r['note']}"
-        )
+        alias = _sanitize_tsv_field(r['alias'])
+        preferred = _sanitize_tsv_field(r['preferred'])
+        status = _sanitize_tsv_field(r['status'])
+        lang = _sanitize_tsv_field(r['lang'])
+        note = _sanitize_tsv_field(r['note'])
+        lines.append(f"{alias}\t{preferred}\t{status}\t{lang}\t{note}")
 
     out_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
