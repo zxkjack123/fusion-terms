@@ -483,9 +483,15 @@ def main() -> None:
 
     if imp.returncode != 0:
         if imp.stderr:
-            print(imp.stderr)
+            print(imp.stderr, file=sys.stderr)
         # Auto-rollback on failure.
-        rollback_from_manifest(manifest_path)
+        try:
+            rollback_from_manifest(manifest_path)
+        except Exception as rb_err:
+            print(
+                f"rollback also failed: {rb_err}",
+                file=sys.stderr,
+            )
         raise SystemExit(imp.returncode)
 
     print("import OK")
