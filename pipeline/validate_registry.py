@@ -191,7 +191,14 @@ def validate_registry(terms_dir: Path) -> None:
     # ---- bridge check: forbidden/deprecated shouldn't leak into IME allowlists ----
     allow_zh = load_simple_list(terms_dir / "allowlist_zh.txt")
     allow_en = load_simple_list(terms_dir / "allowlist_en.txt")
-    leaked = sorted((forbidden_or_deprecated & (allow_zh | allow_en)))
+    forbidden_lower = {t.lower() for t in forbidden_or_deprecated}
+    allow_lower_to_orig: dict[str, str] = {}
+    for t in allow_zh | allow_en:
+        low = t.lower()
+        if low not in allow_lower_to_orig:
+            allow_lower_to_orig[low] = t
+    leaked_lower = sorted(forbidden_lower & set(allow_lower_to_orig))
+    leaked = [allow_lower_to_orig[lk] for lk in leaked_lower]
     if leaked:
         preview = "\n".join(f"- {t!r}" for t in leaked[:20])
         more = "" if len(leaked) <= 20 else f"\n... and {len(leaked) - 20} more"
