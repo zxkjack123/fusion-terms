@@ -472,20 +472,28 @@ def main() -> None:
     print(f"backup created: {manifest_path}")
 
     # Step 3) Import.
-    imp = _run_importer_v2(
-        script=script_path,
-        input_path=input_path,
-        output_path=output_path,
-        do_import=True,
-        dict_name=args.dict_name,
-        include_non_cjk=bool(args.include_non_cjk),
-        rime_user_dir=(
-            Path(args.rime_user_dir).expanduser()
-            if args.rime_user_dir
-            else None
-        ),
-        no_restart_fcitx=bool(args.no_restart_fcitx),
-    )
+    try:
+        imp = _run_importer_v2(
+            script=script_path,
+            input_path=input_path,
+            output_path=output_path,
+            do_import=True,
+            dict_name=args.dict_name,
+            include_non_cjk=bool(args.include_non_cjk),
+            rime_user_dir=(
+                Path(args.rime_user_dir).expanduser()
+                if args.rime_user_dir
+                else None
+            ),
+            no_restart_fcitx=bool(args.no_restart_fcitx),
+        )
+    except subprocess.TimeoutExpired as te:
+        print(f"import timed out after {te.timeout}s", file=sys.stderr)
+        try:
+            rollback_from_manifest(manifest_path)
+        except Exception as rb_err:
+            print(f"rollback also failed: {rb_err}", file=sys.stderr)
+        raise SystemExit(1) from te
     if imp.stdout:
         print(imp.stdout)
 

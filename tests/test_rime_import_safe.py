@@ -6,7 +6,6 @@ import shutil
 import subprocess
 import sys
 from pathlib import Path
-
 import pytest
 
 
@@ -309,3 +308,87 @@ def test_create_backup_rejects_path_that_escapes_snapshot_dir(
             backup_name="escape-test",
             paths=[sneaky],
         )
+
+
+def test_safe_import_rolls_back_on_timeout(tmp_path: Path) -> None:
+    """TimeoutExpired during import triggers rollback and non-zero exit."""
+    repo_root = Path(__file__).resolve().parents[1]
+
+    wordlist = tmp_path / "domain_terms.txt"
+    wordlist.write_text("ITER\n", encoding="utf-8")
+
+    state_file = tmp_path / "rime" / "userdb_state.txt"
+    state_file.parent.mkdir(parents=True, exist_ok=True)
+    state_file.write_text("BEFORE\n", encoding="utf-8")
+
+    # Create a dummy importer that sleeps forever (will be killed by timeout).
+    importer = tmp_path / "dummy_importer_timeout.py"
+    importer.write_text(
+        "#!/usr/bin/env python3\n"
+        "import argparse, time, sys\n"
+        "from pathlib import Path\n"
+        "parser = argparse.ArgumentParser()\n"
+        "parser.add_argument('--input', required=True)\n"
+        "parser.add_argument('--output', required=True)\n"
+        "parser.add_argument('--import', dest='do_import', action='store_true')\n"
+        "parser.add_argument('--dict-name', default='rime_ice')\n"
+        "parser.add_argument('--rime-user-dir', default=None)\n"
+        "parser.add_argument('--include-non-cjk', action='store_true')\n"
+        "parser.add_argument('--no-restart-fcitx', action='store_true')\n"
+        "args = parser.parse_args()\n"
+        "Path(args.output).parent.mkdir(parents=True, exist_ok=True)\n"
+        "Path(args.output).write_text('PAYLOAD\\n', encoding='utf-8')\n"
+        "if args.do_import:\n"
+        "    time.sleep(999)\n",
+        encoding="utf-8",
+    )
+    importer.chmod(0o755)
+
+    out_payload = tmp_path / ".rime_import.txt"
+    backup_root = tmp_path / "backups"
+
+    # Run with a wrapper that patches subprocess.run timeout to 1s.
+    wrapper = tmp_path / "run_with_short_timeout.py"
+    wrapper.write_text(
+        "import sys, os, subprocess\n"
+        f"sys.path.insert(0, {str(repo_root)!r})\n"
+        "from unittest.mock import patch\n"
+        "_orig_run = subprocess.run\n"
+        "def _patched_run(*a, **kw):\n"
+        "    if 'timeout' in kw:\n"
+        "        kw['timeout'] = 1\n"
+        "    return _orig_run(*a, **kw)\n"
+        "with patch('subprocess.run', side_effect=_patched_run):\n"
+        "    from pipeline.rime_import_safe import main\n"
+        "    main()\n",
+        encoding="utf-8",
+    )
+
+    p = subprocess.run(
+        [
+            sys.executable,
+            str(wrapper),
+            "--input",
+            str(wordlist),
+            "--output",
+            str(out_payload),
+            "--rime-script",
+            str(importer),
+            "--import",
+            "--backup-path",
+            str(state_file),
+            "--backup-root",
+            str(backup_root),
+            "--backup-name",
+            "timeout-backup",
+        ],
+        cwd=str(repo_root),
+        text=True,
+        capture_output=True,
+        timeout=30,
+    )
+
+    assert p.returncode != 0
+    assert "timed out" in p.stderr
+    # State should be rolled back to BEFORE.
+    assert state_file.read_text("utf-8") == "BEFORE\n"
