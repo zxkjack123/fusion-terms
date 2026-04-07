@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 import subprocess
 import sys
 import tempfile
@@ -107,7 +108,20 @@ def generate_dict_yaml(
         # We keep it as-is and wrap it into a .dict.yaml.
 
         header = _render_header(name=dict_name, version=dict_version)
-        output_yaml.write_text(header + payload, encoding="utf-8")
+        content = header + payload
+        fd, tmp_path = tempfile.mkstemp(
+            dir=str(output_yaml.parent), suffix=".tmp"
+        )
+        try:
+            with os.fdopen(fd, "w", encoding="utf-8") as f:
+                f.write(content)
+            os.replace(tmp_path, str(output_yaml))
+        except BaseException:
+            try:
+                os.unlink(tmp_path)
+            except OSError:
+                pass
+            raise
         print(f"wrote baked dict: {output_yaml}")
     finally:
         # Best-effort cleanup; payload can be regenerated any time.
