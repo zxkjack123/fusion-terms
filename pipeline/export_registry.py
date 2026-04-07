@@ -205,7 +205,7 @@ def _iter_concept_rows(concepts_path: Path) -> list[dict[str, str]]:
     return rows
 
 
-def export_vale_terms(*, terms_dir: Path, out_dir: Path) -> dict[str, str]:
+def export_vale_terms(*, terms_dir: Path, out_dir: Path) -> dict[str, object]:
     """Export Vale accept/reject lists from registry aliases.
 
     Accept contains preferred + alias.

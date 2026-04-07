@@ -368,12 +368,20 @@ def main() -> None:
     summary = apply_decisions(terms_dir=terms_dir, decisions_path=decisions_path, apply=bool(args.apply))
 
     # Minimal human-friendly output.
+    add_allow_en = summary.get("add_allow_en")
+    add_allow_zh = summary.get("add_allow_zh")
+    add_deny = summary.get("add_deny")
+    add_synonyms = summary.get("add_synonyms")
+
     print("decisions parsed:", summary["decisions"])
     print("dry-run" if not summary["applied"] else "applied")
-    print("add_allow_en:", len(summary["add_allow_en"]))
-    print("add_allow_zh:", len(summary["add_allow_zh"]))
-    print("add_deny:", len(summary["add_deny"]))
-    print("add_synonyms:", len(summary["add_synonyms"]))
+    print("add_allow_en:", len(add_allow_en) if isinstance(add_allow_en, list) else 0)
+    print("add_allow_zh:", len(add_allow_zh) if isinstance(add_allow_zh, list) else 0)
+    print("add_deny:", len(add_deny) if isinstance(add_deny, list) else 0)
+    print(
+        "add_synonyms:",
+        len(add_synonyms) if isinstance(add_synonyms, dict) else 0,
+    )
 
 
 if __name__ == "__main__":

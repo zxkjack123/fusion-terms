@@ -121,10 +121,14 @@ def _counts_from_build_stats(stats_path: Path) -> dict[str, int] | None:
     total = counts.get("total")
     zh = counts.get("zh")
     en = counts.get("en")
-    if not all(isinstance(x, int) for x in [total, zh, en]):
+    if not isinstance(total, int):
+        return None
+    if not isinstance(zh, int):
+        return None
+    if not isinstance(en, int):
         return None
 
-    out: dict[str, int] = {"total": int(total), "zh": int(zh), "en": int(en)}
+    out: dict[str, int] = {"total": total, "zh": zh, "en": en}
 
     abbr = counts.get("abbr")
     if isinstance(abbr, int):

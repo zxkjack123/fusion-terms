@@ -227,10 +227,10 @@ def build_acceptance_pack(
     out_hints_tsv.parent.mkdir(parents=True, exist_ok=True)
     lines: list[str] = ["term\thints"]
     for t in suggested:
-        hints = typing_hints.get(t)
-        if not hints:
+        term_hints = typing_hints.get(t)
+        if not term_hints:
             continue
-        lines.append(f"{t}\t{'|'.join(hints)}")
+        lines.append(f"{t}\t{'|'.join(term_hints)}")
     out_hints_tsv.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
     out_report_md.parent.mkdir(parents=True, exist_ok=True)
@@ -262,9 +262,11 @@ def build_acceptance_pack(
     must_have_set = set(must_have)
     for t in suggested:
         mark = "must-have" if t in must_have_set else "extra"
-        hints = typing_hints.get(t)
-        if hints:
-            report_lines.append(f"- [ ] {t} ({mark}; hints: {' | '.join(hints)})")
+        term_hints = typing_hints.get(t)
+        if term_hints:
+            report_lines.append(
+                f"- [ ] {t} ({mark}; hints: {' | '.join(term_hints)})"
+            )
         else:
             report_lines.append(f"- [ ] {t} ({mark})")
 
@@ -381,10 +383,17 @@ def main() -> None:
         pick_n=int(args.pick_n),
     )
 
+    counts_obj = pack.get("counts") if isinstance(pack, dict) else None
+    missing_must_have = "unknown"
+    typing_terms = "unknown"
+    if isinstance(counts_obj, dict):
+        missing_must_have = str(counts_obj.get("missing_must_have", "unknown"))
+        typing_terms = str(counts_obj.get("suggested_typing_terms", "unknown"))
+
     print(
         "ime acceptance pack written: "
-        f"missing_must_have={pack['counts']['missing_must_have']} "
-        f"typing_terms={pack['counts']['suggested_typing_terms']}"
+        f"missing_must_have={missing_must_have} "
+        f"typing_terms={typing_terms}"
     )
 
 
