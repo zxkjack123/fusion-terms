@@ -150,7 +150,7 @@ def validate_registry(terms_dir: Path) -> None:
         more = "" if len(missing_preferred) <= 10 else f" ... (+{len(missing_preferred) - 10} more)"
         _fail(
             aliases_path,
-            0,
+            1,
             f"concepts without preferred alias: {preview}{more}",
         )
 
@@ -184,7 +184,7 @@ def validate_registry(terms_dir: Path) -> None:
         more = "" if len(missing_evidence) <= 10 else f" ... (+{len(missing_evidence) - 10} more)"
         _fail(
             evidence_path,
-            0,
+            1,
             f"concepts without evidence rows: {preview}{more}",
         )
 

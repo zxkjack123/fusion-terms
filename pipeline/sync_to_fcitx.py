@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 import shutil
 from pathlib import Path
 
@@ -61,7 +62,15 @@ def main() -> None:
         raise SystemExit(f"input not found: {src}")
 
     dst.parent.mkdir(parents=True, exist_ok=True)
-    shutil.copyfile(src, dst)
+    dst_tmp = dst.with_name(f".{dst.name}.tmp")
+    try:
+        shutil.copyfile(src, dst_tmp)
+        os.replace(dst_tmp, dst)
+    finally:
+        try:
+            dst_tmp.unlink()
+        except FileNotFoundError:
+            pass
     print(f"synced {src} -> {dst}")
 
 

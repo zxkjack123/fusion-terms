@@ -184,6 +184,8 @@ def test_validate_registry_rejects_missing_evidence(tmp_path: Path) -> None:
     combined = (p.stdout or "") + "\n" + (p.stderr or "")
     assert "concepts without evidence rows" in combined
     assert "'tokamak'" in combined
+    assert ":0:" not in combined
+    assert ":1:" in combined
 
 
 def test_validate_registry_rejects_internal_todo_evidence(tmp_path: Path) -> None:
@@ -255,3 +257,5 @@ def test_validate_registry_rejects_concept_without_preferred_alias(tmp_path: Pat
     combined = (p.stdout or "") + "\n" + (p.stderr or "")
     assert "concepts without preferred alias" in combined
     assert "'tokamak'" in combined
+    assert ":0:" not in combined
+    assert ":1:" in combined
