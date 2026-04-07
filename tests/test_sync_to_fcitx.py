@@ -128,6 +128,10 @@ def test_sync_uses_atomic_temp_replace(
 
     assert dst.exists()
     assert dst.read_text("utf-8") == "NBI\n"
-    assert copy_targets == [dst.with_name(f".{dst.name}.tmp")]
-    assert replace_calls == [(dst.with_name(f".{dst.name}.tmp"), dst)]
-    assert not dst.with_name(f".{dst.name}.tmp").exists()
+    assert len(copy_targets) == 1
+    tmp_target = copy_targets[0]
+    assert tmp_target.parent == dst.parent
+    assert tmp_target.name.startswith(f".{dst.name}.")
+    assert tmp_target.name.endswith(".tmp")
+    assert replace_calls == [(tmp_target, dst)]
+    assert not tmp_target.exists()

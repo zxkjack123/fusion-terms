@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import os
 import shutil
+import tempfile
 from pathlib import Path
 
 try:
@@ -62,15 +63,23 @@ def main() -> None:
         raise SystemExit(f"input not found: {src}")
 
     dst.parent.mkdir(parents=True, exist_ok=True)
-    dst_tmp = dst.with_name(f".{dst.name}.tmp")
+    dst_tmp: Path | None = None
     try:
+        with tempfile.NamedTemporaryFile(
+            dir=dst.parent,
+            prefix=f".{dst.name}.",
+            suffix=".tmp",
+            delete=False,
+        ) as tmpf:
+            dst_tmp = Path(tmpf.name)
         shutil.copyfile(src, dst_tmp)
         os.replace(dst_tmp, dst)
     finally:
-        try:
-            dst_tmp.unlink()
-        except FileNotFoundError:
-            pass
+        if dst_tmp is not None:
+            try:
+                dst_tmp.unlink()
+            except FileNotFoundError:
+                pass
     print(f"synced {src} -> {dst}")
 
 
