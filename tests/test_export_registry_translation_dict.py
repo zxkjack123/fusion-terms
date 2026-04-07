@@ -364,3 +364,59 @@ def test_translation_dict_cli_flag(tmp_path: Path) -> None:
 
     manifest = json.loads((out_dir / "registry_exports.json").read_text("utf-8"))
     assert manifest["translation_dict"] == out_path.as_posix()
+
+
+def test_translation_dict_min_en_key_len_string_config(tmp_path: Path) -> None:
+    repo_root = Path(__file__).resolve().parents[1]
+
+    terms_dir = tmp_path / "terms"
+    terms_dir.mkdir(parents=True, exist_ok=True)
+    _write_min_terms_files(terms_dir)
+
+    _write_registry_tables(
+        terms_dir,
+        concepts=(
+            "# concept_id\tcategory\tpreferred_zh\tpreferred_en\tpreferred_abbr\tstatus\n"
+            "design\tconcept\t设计\tdesign\t\tactive\n"
+        ),
+        aliases=(
+            "# alias\tconcept_id\tlang\tkind\n"
+            "设计\tdesign\tzh\tpreferred\n"
+            "design\tdesign\ten\tpreferred\n"
+            "de\tdesign\ten\talias\n"
+        ),
+        evidence="design\thttps://example.invalid/design\n",
+    )
+
+    out_dir = tmp_path / "artifacts"
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    config_path = tmp_path / "config.toml"
+    config_path.write_text(
+        "[export]\nmin_en_key_len = \"3\"\n",
+        encoding="utf-8",
+    )
+
+    p = subprocess.run(
+        [
+            sys.executable,
+            "-m",
+            "pipeline.export_registry",
+            "--config",
+            str(config_path),
+            "--terms-dir",
+            str(terms_dir),
+            "--out-dir",
+            str(out_dir),
+            "--translation-dict",
+            "--no-vale",
+        ],
+        cwd=str(repo_root),
+        text=True,
+        capture_output=True,
+    )
+    assert p.returncode == 0, f"stdout:\n{p.stdout}\nstderr:\n{p.stderr}"
+
+    data = json.loads((out_dir / "translation_dict.json").read_text("utf-8"))
+    assert "de" not in data["en2zh"]
+    assert data["en2zh_short"]["de"]["zh"] == "设计"
