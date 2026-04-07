@@ -733,6 +733,8 @@ def _write_tsv(
                 break
             ex = " | ".join(examples.get(term, []))
             fl = " | ".join(files.get(term, []))
+            ex = ex.replace("\t", " ").replace("\n", " ").replace("\r", " ")
+            fl = fl.replace("\t", " ").replace("\n", " ").replace("\r", " ")
             f.write(f"{term}\t{cnt}\t{ex}\t{fl}\n")
             written += 1
 

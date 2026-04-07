@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import os
+from collections import Counter
 from pathlib import Path
 
 import pytest
@@ -155,3 +156,22 @@ def test_save_cache_index_replace_failure_preserves_original(
     assert not list(cache_dir.glob("index.json.tmp.*")), (
         "tmp files should be cleaned on failure"
     )
+
+
+def test_write_tsv_escapes_tab_and_newline_fields(tmp_path: Path) -> None:
+    out = tmp_path / "candidates.tsv"
+    counts = Counter({"termA": 1})
+    examples = {"termA": ["line with\ttab", "line with\nnewline"]}
+    files = {"termA": ["/tmp/a\tb.md", "/tmp/c\nd.md"]}
+
+    extract_mod._write_tsv(
+        path=out,
+        counts=counts,
+        examples=examples,
+        files=files,
+    )
+
+    rows = out.read_text("utf-8").splitlines()
+    assert len(rows) == 2
+    cols = rows[1].split("\t")
+    assert len(cols) == 4, f"expected 4 TSV columns, got {len(cols)}: {cols}"

@@ -218,7 +218,8 @@ def main() -> None:
 
     # Stable ordering: zh first (roughly), then en; within each: lexicographic
     zh = sorted([t for t in final_terms if _is_zh_term(t)])
-    en = sorted([t for t in final_terms if t not in set(zh)])
+    zh_set = set(zh)
+    en = sorted([t for t in final_terms if t not in zh_set])
 
     out_path.write_text("\n".join(zh + en) + "\n", encoding="utf-8")
     print(f"wrote {out_path} ({len(final_terms)} terms)")
