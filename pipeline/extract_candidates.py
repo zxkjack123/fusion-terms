@@ -410,10 +410,19 @@ def _save_file_cache(
             else {}
         ),
     }
-    result_path.write_text(
-        json.dumps(payload, ensure_ascii=False, indent=2),
-        "utf-8",
-    )
+    _tmp = result_path.with_suffix(f".tmp.{os.getpid()}")
+    try:
+        _tmp.write_text(
+            json.dumps(payload, ensure_ascii=False, indent=2),
+            "utf-8",
+        )
+        os.replace(_tmp, result_path)
+    finally:
+        if _tmp.exists():
+            try:
+                _tmp.unlink()
+            except OSError:
+                pass
     cache_files[md_key] = {
         "mtime_ns": int(st_mtime_ns),
         "size": int(st_size),
