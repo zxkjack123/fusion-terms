@@ -3,7 +3,7 @@
 
 import pathlib
 
-ROOT = pathlib.Path(__file__).resolve().parent
+ROOT = pathlib.Path(__file__).resolve().parent.parent.parent
 CONCEPTS_TSV = ROOT / "terms" / "registry" / "concepts.tsv"
 ALIASES_TSV  = ROOT / "terms" / "registry" / "aliases.tsv"
 EVIDENCE_TSV = ROOT / "terms" / "registry" / "evidence.tsv"
