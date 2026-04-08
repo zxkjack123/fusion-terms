@@ -14,6 +14,7 @@ except ModuleNotFoundError:  # pragma: no cover
 
 from pipeline.common import ensure_dir, load_simple_list, load_synonyms_tsv
 
+_REPO_ROOT = Path(__file__).resolve().parent.parent
 
 WHITESPACE_RE = re.compile(r"\s")
 
@@ -144,7 +145,7 @@ def main() -> None:
     )
     parser.add_argument(
         "--terms-dir",
-        default="terms",
+        default=str(_REPO_ROOT / "terms"),
         help="Directory containing allow/deny/synonyms",
     )
     parser.add_argument(

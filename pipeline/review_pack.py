@@ -16,6 +16,8 @@ except ModuleNotFoundError:  # pragma: no cover
 from pipeline.common import ensure_dir
 from pipeline.common import load_simple_list
 
+_REPO_ROOT = Path(__file__).resolve().parent.parent
+
 
 @dataclass(frozen=True)
 class TsvRow:
@@ -333,7 +335,7 @@ def main() -> None:
     )
     parser.add_argument(
         "--terms-dir",
-        default="terms",
+        default=str(_REPO_ROOT / "terms"),
         help=(
             "Directory containing allow/deny/synonyms "
             "(used by --exclude-known-terms)"
