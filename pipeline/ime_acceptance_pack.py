@@ -96,6 +96,8 @@ def _load_wordlist(path: Path) -> list[str]:
         s = ln.strip()
         if not s:
             continue
+        if s.startswith("#"):
+            continue
         terms.append(s)
     # De-dup but preserve order.
     seen: set[str] = set()

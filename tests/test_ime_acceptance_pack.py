@@ -85,3 +85,18 @@ def test_ime_acceptance_pack_detects_missing_and_writes_outputs(tmp_path: Path) 
     assert "generated_date: 2026-02-04" in report
     assert "- [ ] β_N" in report
     assert "hints:" in report and "beta" in report.lower()
+
+
+def test_load_wordlist_skips_comment_lines(tmp_path: Path) -> None:
+    """_load_wordlist should skip lines starting with #."""
+    from pipeline.ime_acceptance_pack import _load_wordlist
+
+    wl = tmp_path / "terms.txt"
+    wl.write_text(
+        "# This is a comment\nITER\n\n# Another comment\nEAST\n",
+        encoding="utf-8",
+    )
+    result = _load_wordlist(wl)
+    assert result == ["ITER", "EAST"]
+    assert "# This is a comment" not in result
+    assert "# Another comment" not in result
