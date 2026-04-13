@@ -100,7 +100,7 @@
 
 ### Phase 3: 等离子体运行 — flat-top / safety-factor / tau-e 反模式
 
-#### Task 3.1: flat-top / safety-factor / tau-e forbidden 别名
+#### ✅ Task 3.1: flat-top / safety-factor / tau-e forbidden 别名
 - **目标**：为 3 个等离子体运行/约束概念补充 forbidden 中文别名
 - **修改内容**：
   - 文件 `terms/registry/aliases.tsv`：追加

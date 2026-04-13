@@ -7132,3 +7132,9 @@ Greenwald限制	greenwald-density	zh	deprecated	混淆density与limit：应为 �
 电流骤降	current-quench	zh	forbidden	误译quench(猝灭≠骤降)：正确为 电流猝灭
 电流淬火	current-quench	zh	forbidden	金属热处理义：正确为 电流猝灭
 电流急停	current-quench	zh	forbidden	误译quench(猝灭≠急停)：正确为 电流猝灭
+# ==== Batch 75: AI mistranslation anti-pattern expansion — plasma operation ====
+稳态段	flat-top	zh	forbidden	误译flat-top(平顶段≠稳态段)：正确为 平顶段
+平台期	flat-top	zh	forbidden	误译flat-top(医学/经济义)：正确为 平顶段
+安全参数	safety-factor	zh	forbidden	误译factor(因子≠参数)：正确为 安全因子
+限制时间	tau-e	zh	forbidden	误译confinement(约束≠限制)：正确为 能量约束时间
+封闭时间	tau-e	zh	forbidden	误译confinement(约束≠封闭)：正确为 能量约束时间
