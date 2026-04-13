@@ -7123,3 +7123,12 @@ Greenwald限制	greenwald-density	zh	deprecated	混淆density与limit：应为 �
 鱼骨形不稳定性	fishbone-instability	zh	deprecated	啰嗦变体：应为 鱼骨模不稳定性
 剥落-气球模	peeling-ballooning-mode	zh	forbidden	误译peeling(剥离≠剥落)：正确为 剥离-气球模
 去皮-气球模	peeling-ballooning-mode	zh	forbidden	误译peeling(剥离≠去皮)：正确为 剥离-气球模
+# ==== Batch 75: AI mistranslation anti-pattern expansion — disruption phases ====
+热淬灭	thermal-quench	zh	forbidden	误用金属义淬：正确为 热猝灭
+热骤冷	thermal-quench	zh	forbidden	误译quench：正确为 热猝灭
+热淬火	thermal-quench	zh	forbidden	金属热处理义：正确为 热猝灭
+热量猝灭	thermal-quench	zh	forbidden	AI冗余加词：正确为 热猝灭
+电流淬灭	current-quench	zh	forbidden	误用金属义淬：正确为 电流猝灭
+电流骤降	current-quench	zh	forbidden	误译quench(猝灭≠骤降)：正确为 电流猝灭
+电流淬火	current-quench	zh	forbidden	金属热处理义：正确为 电流猝灭
+电流急停	current-quench	zh	forbidden	误译quench(猝灭≠急停)：正确为 电流猝灭

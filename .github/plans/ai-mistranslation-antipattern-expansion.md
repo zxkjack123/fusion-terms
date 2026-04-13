@@ -73,7 +73,7 @@
 
 ### Phase 2: 破裂阶段 — thermal-quench / current-quench 反模式
 
-#### Task 2.1: thermal-quench / current-quench forbidden 别名
+#### ✅ Task 2.1: thermal-quench / current-quench forbidden 别名
 - **目标**：为 2 个破裂阶段概念补充 6 条 forbidden 中文别名
 - **修改内容**：
   - 文件 `terms/registry/aliases.tsv`：追加
