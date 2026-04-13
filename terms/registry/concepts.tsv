@@ -1682,3 +1682,7 @@ hydrogen-trapping	concept	氢捕获	hydrogen trapping		active	Retention of hydro
 displacement-energy	metric	位移阈能	displacement energy	Ed	active	Minimum kinetic energy transfer to displace a lattice atom (threshold displacement energy)
 melt-layer	concept	熔化层	melt layer		active	Transient liquid layer on PFC surface from disruption/ELM heat loads
 impurity-screening	concept	杂质屏蔽	impurity screening		active	Reduction of impurity influx to core plasma by SOL/divertor shielding
+# ---- PWI anti-pattern expansion phase 4 (new concepts) ----
+castellation	concept	切槽结构	castellation		active	Castellated slots machined into PFC tiles to relieve thermal stress
+leading-edge	concept	前缘	leading edge		active	Exposed edge of PFC tile facing upstream plasma flow; critical for thermal loading
+surface-morphology	concept	表面形貌	surface morphology		active	Microscopic surface topography of PFCs after plasma exposure

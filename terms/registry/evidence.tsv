@@ -1575,3 +1575,6 @@ hydrogen-trapping	internal:registry-gap-review:pwi-antipattern-p3	H isotope rete
 displacement-energy	internal:registry-gap-review:pwi-antipattern-p3	Threshold energy to displace a lattice atom	copilot	2026-04-13
 melt-layer	internal:registry-gap-review:pwi-antipattern-p3	Transient liquid layer on PFC from disruptions	copilot	2026-04-13
 impurity-screening	internal:registry-gap-review:pwi-antipattern-p3	SOL/divertor shielding of core from impurity influx	copilot	2026-04-13
+castellation	internal:registry-gap-review:pwi-antipattern-p4	Stress-relief slots on PFC tiles	copilot	2025-07-14
+leading-edge	internal:registry-gap-review:pwi-antipattern-p4	Upstream-facing edge of PFC tile	copilot	2025-07-14
+surface-morphology	internal:registry-gap-review:pwi-antipattern-p4	Post-exposure PFC surface topography	copilot	2025-07-14

@@ -7440,3 +7440,187 @@ ELM碰撞侵蚀	elm-induced-erosion	zh	forbidden	误译ELM-induced(诱发≠碰�
 血浆屏蔽	impurity-screening	zh	forbidden	AI误译plasma→血浆：正确为 杂质屏蔽
 血浆注入	impurity-seeding	zh	forbidden	AI误译plasma→血浆：正确为 杂质注入
 血浆再循环	fuel-recycling	zh	forbidden	AI误译plasma→血浆：正确为 燃料再循环
+# ==== Batch 78: PWI anti-pattern expansion phase 4 ====
+# ---- New concept: castellation (切槽结构) ----
+castellation	castellation	en	preferred	preferred en
+切槽结构	castellation	zh	preferred	preferred zh
+castellated	castellation	en	alias	adjective form
+castellated structure	castellation	en	alias	full phrase
+铠装切槽	castellation	zh	alias	PFC context
+切槽	castellation	zh	alias	short form
+城垛结构	castellation	zh	forbidden	误译castellation(工程切槽≠城垛)：正确为 切槽结构
+城堡化	castellation	zh	forbidden	误译castellation(切槽≠城堡)：正确为 切槽结构
+城垛	castellation	zh	forbidden	误译castellation(切槽≠城垛)：正确为 切槽结构
+# ---- New concept: leading-edge (前缘) ----
+leading edge	leading-edge	en	preferred	preferred en
+前缘	leading-edge	zh	preferred	preferred zh
+leading-edge	leading-edge	en	alias	hyphenated form
+偏滤器前缘	leading-edge	zh	alias	divertor context
+导向前缘	leading-edge	zh	alias	variant
+前沿	leading-edge	zh	forbidden	误译leading edge(前缘≠前沿)：正确为 前缘
+领先边缘	leading-edge	zh	forbidden	AI误译leading(前缘≠领先)：正确为 前缘
+前导边缘	leading-edge	zh	forbidden	AI误译leading edge：正确为 前缘
+# ---- New concept: surface-morphology (表面形貌) ----
+surface morphology	surface-morphology	en	preferred	preferred en
+表面形貌	surface-morphology	zh	preferred	preferred zh
+surface-morphology	surface-morphology	en	alias	hyphenated form
+表面特征	surface-morphology	zh	alias	generic variant
+表面形态学	surface-morphology	zh	forbidden	误译morphology(形貌≠形态学)：正确为 表面形貌
+表面形态	surface-morphology	zh	deprecated	非标准(形貌≠形态)：应为 表面形貌
+表面外貌	surface-morphology	zh	forbidden	误译morphology：正确为 表面形貌
+# ---- Anti-patterns for existing 0-coverage concepts ----
+# -- tungsten-armor (钨铠甲)
+钨盔甲	tungsten-armor	zh	forbidden	AI误译armor(铠甲≠盔甲)：正确为 钨铠甲
+钨装甲	tungsten-armor	zh	forbidden	AI误译armor(铠甲≠装甲,军事义)：正确为 钨铠甲
+钨护甲	tungsten-armor	zh	forbidden	AI误译armor(铠甲≠护甲)：正确为 钨铠甲
+# -- thermal-conductivity (热导率)
+热传导性	thermal-conductivity	zh	forbidden	误译conductivity(热导率≠传导性)：正确为 热导率
+导热性	thermal-conductivity	zh	deprecated	非标准(定性描述≠定量参数)：应为 热导率
+热传导系数	thermal-conductivity	zh	deprecated	非标准(热传导系数≠热导率)：应为 热导率
+# -- thermal-stress (热应力)
+热压力	thermal-stress	zh	forbidden	误译stress(应力≠压力)：正确为 热应力
+温度应力	thermal-stress	zh	deprecated	非标准(温度应力≠热应力)：应为 热应力
+热张力	thermal-stress	zh	forbidden	误译stress(应力≠张力)：正确为 热应力
+# -- critical-heat-flux (临界热流密度)
+关键热通量	critical-heat-flux	zh	forbidden	AI误译critical+flux(临界≠关键,热流密度≠热通量)：正确为 临界热流密度
+临界热通量	critical-heat-flux	zh	forbidden	误译flux(热流密度≠热通量)：正确为 临界热流密度
+关键热流	critical-heat-flux	zh	forbidden	AI误译critical(临界≠关键)：正确为 临界热流密度
+# -- peak-heat-flux (峰值热流密度)
+高峰热通量	peak-heat-flux	zh	forbidden	AI误译peak+flux：正确为 峰值热流密度
+峰值热通量	peak-heat-flux	zh	forbidden	误译flux(热流密度≠热通量)：正确为 峰值热流密度
+尖峰热流	peak-heat-flux	zh	forbidden	误译peak(峰值≠尖峰)：正确为 峰值热流密度
+# -- radiative-divertor (辐射偏滤器)
+辐射分流器	radiative-divertor	zh	forbidden	AI误译divertor(偏滤器≠分流器)：正确为 辐射偏滤器
+辐射分离器	radiative-divertor	zh	forbidden	AI误译divertor(偏滤器≠分离器)：正确为 辐射偏滤器
+放射偏滤器	radiative-divertor	zh	forbidden	误译radiative(辐射≠放射)：正确为 辐射偏滤器
+放射分流器	radiative-divertor	zh	forbidden	AI误译radiative+divertor：正确为 辐射偏滤器
+# -- erosion-corrosion (冲蚀-腐蚀)
+侵蚀腐蚀	erosion-corrosion	zh	forbidden	误译erosion(冲蚀≠侵蚀)：正确为 冲蚀-腐蚀
+磨蚀腐蚀	erosion-corrosion	zh	deprecated	非标准：应为 冲蚀-腐蚀
+冲蚀腐蚀	erosion-corrosion	zh	deprecated	缺连字符：应为 冲蚀-腐蚀
+# -- stress-corrosion-cracking (应力腐蚀开裂)
+应力腐蚀破裂	stress-corrosion-cracking	zh	deprecated	非标准(开裂≠破裂)：应为 应力腐蚀开裂
+应力腐蚀裂纹	stress-corrosion-cracking	zh	deprecated	名词形式不当：应为 应力腐蚀开裂
+应力腐蚀断裂	stress-corrosion-cracking	zh	forbidden	误译cracking(开裂≠断裂)：正确为 应力腐蚀开裂
+# -- diffusion-bonding (扩散连接)
+扩散焊接	diffusion-bonding	zh	forbidden	误译bonding(连接≠焊接)：正确为 扩散连接
+扩散键合	diffusion-bonding	zh	forbidden	AI误译bonding(化学义键合≠工程义连接)：正确为 扩散连接
+扩散粘合	diffusion-bonding	zh	forbidden	误译bonding(连接≠粘合)：正确为 扩散连接
+# -- high-cycle-fatigue (高周疲劳)
+高循环疲劳	high-cycle-fatigue	zh	forbidden	AI误译cycle(周≠循环)：正确为 高周疲劳
+高周期疲劳	high-cycle-fatigue	zh	forbidden	AI误译cycle(周≠周期)：正确为 高周疲劳
+# -- low-cycle-fatigue (低周疲劳)
+低循环疲劳	low-cycle-fatigue	zh	forbidden	AI误译cycle(周≠循环)：正确为 低周疲劳
+低周期疲劳	low-cycle-fatigue	zh	forbidden	AI误译cycle(周≠周期)：正确为 低周疲劳
+# -- nanoindentation (纳米压痕)
+纳米压入	nanoindentation	zh	deprecated	非标准(压痕≠压入)：应为 纳米压痕
+纳米缩进	nanoindentation	zh	forbidden	AI误译indent(压痕≠代码缩进)：正确为 纳米压痕
+纳米凹痕	nanoindentation	zh	forbidden	误译indentation：正确为 纳米压痕
+# -- coefficient-of-thermal-expansion (热膨胀系数)
+热扩展系数	coefficient-of-thermal-expansion	zh	forbidden	AI误译expansion(膨胀≠扩展)：正确为 热膨胀系数
+热膨胀率	coefficient-of-thermal-expansion	zh	deprecated	非标准(系数≠率)：应为 热膨胀系数
+热胀系数	coefficient-of-thermal-expansion	zh	deprecated	非标准缩略(膨胀≠胀)：应为 热膨胀系数
+# -- helium-ash-removal (氦灰排出)
+氦灰去除	helium-ash-removal	zh	forbidden	误译removal(排出≠去除)：正确为 氦灰排出
+氦灰移除	helium-ash-removal	zh	forbidden	误译removal(排出≠移除)：正确为 氦灰排出
+氦灰清除	helium-ash-removal	zh	forbidden	误译removal(排出≠清除)：正确为 氦灰排出
+氦灰烬	helium-ash-removal	zh	forbidden	误译ash(氦灰≠灰烬)：正确为 氦灰排出
+氦灰烬排出	helium-ash-removal	zh	forbidden	误译ash(氦灰≠灰烬)：正确为 氦灰排出
+# -- energy-dispersive-spectroscopy (能谱分析)
+能量色散谱	energy-dispersive-spectroscopy	zh	deprecated	非标准(能谱≠能量色散谱)：应为 能谱分析
+能量弥散谱	energy-dispersive-spectroscopy	zh	forbidden	误译dispersive(色散≠弥散)：正确为 能谱分析
+能量分散光谱	energy-dispersive-spectroscopy	zh	forbidden	AI误译dispersive+spectroscopy：正确为 能谱分析
+# -- x-ray-diffraction (X射线衍射)
+X光衍射	x-ray-diffraction	zh	deprecated	非标准(X射线≠X光)：应为 X射线衍射
+X线衍射	x-ray-diffraction	zh	deprecated	非标准(X射线≠X线)：应为 X射线衍射
+X射线绕射	x-ray-diffraction	zh	forbidden	误译diffraction(衍射≠绕射)：正确为 X射线衍射
+# -- committed-dose (待积剂量)
+承诺剂量	committed-dose	zh	forbidden	AI误译committed(待积≠承诺)：正确为 待积剂量
+已提交剂量	committed-dose	zh	forbidden	AI误译committed(待积≠已提交)：正确为 待积剂量
+承担剂量	committed-dose	zh	forbidden	AI误译committed(待积≠承担)：正确为 待积剂量
+# -- ambient-dose-equivalent (周围剂量当量)
+环境剂量当量	ambient-dose-equivalent	zh	forbidden	误译ambient(周围≠环境)：正确为 周围剂量当量
+周边剂量当量	ambient-dose-equivalent	zh	deprecated	非标准(周围≠周边)：应为 周围剂量当量
+# -- collective-dose (集体剂量)
+总体剂量	collective-dose	zh	forbidden	误译collective(集体≠总体)：正确为 集体剂量
+集合剂量	collective-dose	zh	forbidden	误译collective(集体≠集合)：正确为 集体剂量
+# -- absorbed-dose (吸收剂量)
+吸收辐射量	absorbed-dose	zh	forbidden	非规范(吸收剂量≠吸收辐射量)：正确为 吸收剂量
+吸收量	absorbed-dose	zh	forbidden	过于笼统(缺"剂量")：正确为 吸收剂量
+# -- beryllium-neutron-multiplier (铍中子倍增剂)
+铍中子乘法器	beryllium-neutron-multiplier	zh	forbidden	AI误译multiplier(倍增剂≠乘法器)：正确为 铍中子倍增剂
+铍中子增殖器	beryllium-neutron-multiplier	zh	forbidden	误译multiplier(倍增剂≠增殖器,增殖指breeding)：正确为 铍中子倍增剂
+铍中子放大器	beryllium-neutron-multiplier	zh	forbidden	AI误译multiplier(倍增剂≠放大器)：正确为 铍中子倍增剂
+# -- tritium-breeding-margin (氚增殖裕度)
+氚繁殖裕度	tritium-breeding-margin	zh	forbidden	误译breeding(增殖≠繁殖)：正确为 氚增殖裕度
+氚增殖余量	tritium-breeding-margin	zh	deprecated	非标准(裕度≠余量)：应为 氚增殖裕度
+氚育种裕度	tritium-breeding-margin	zh	forbidden	误译breeding(增殖≠育种)：正确为 氚增殖裕度
+氚增殖边际	tritium-breeding-margin	zh	forbidden	AI误译margin(裕度≠边际)：正确为 氚增殖裕度
+# -- tritium-accounting-area (氚衡算区域)
+氚会计区域	tritium-accounting-area	zh	forbidden	AI误译accounting(衡算≠会计)：正确为 氚衡算区域
+氚核算区域	tritium-accounting-area	zh	deprecated	非标准(衡算≠核算)：应为 氚衡算区域
+氚账户区域	tritium-accounting-area	zh	forbidden	AI误译accounting(衡算≠账户)：正确为 氚衡算区域
+# -- tritium-carrier (氚载体)
+氚携带者	tritium-carrier	zh	forbidden	AI误译carrier(载体≠携带者)：正确为 氚载体
+氚承运体	tritium-carrier	zh	forbidden	AI误译carrier(载体≠承运体)：正确为 氚载体
+氚运载体	tritium-carrier	zh	forbidden	AI误译carrier(载体≠运载体)：正确为 氚载体
+# -- diagnostic-port (诊断端口)
+诊断口	diagnostic-port	zh	deprecated	非标准缩略(端口≠口)：应为 诊断端口
+诊断窗口	diagnostic-port	zh	forbidden	误译port(端口≠窗口)：正确为 诊断端口
+诊断港口	diagnostic-port	zh	forbidden	AI误译port(端口≠港口)：正确为 诊断端口
+# -- thermal-hydraulic-analysis (热工水力分析)
+热液压分析	thermal-hydraulic-analysis	zh	forbidden	AI误译hydraulic(水力≠液压)：正确为 热工水力分析
+热水力学分析	thermal-hydraulic-analysis	zh	deprecated	非标准(热工水力≠热水力学)：应为 热工水力分析
+热水力分析	thermal-hydraulic-analysis	zh	deprecated	非标准(缺"工"字)：应为 热工水力分析
+# -- fatigue-analysis (疲劳分析)
+疲劳性分析	fatigue-analysis	zh	forbidden	误译(疲劳分析≠疲劳性分析)：正确为 疲劳分析
+疲劳度分析	fatigue-analysis	zh	forbidden	误译(疲劳分析≠疲劳度分析)：正确为 疲劳分析
+# -- wall (壁)
+墙	wall	zh	forbidden	AI误译wall(工程壁≠建筑墙)：正确为 壁
+墙壁	wall	zh	forbidden	AI误译wall(工程壁≠建筑墙壁)：正确为 壁
+# ---- More anti-patterns for low-coverage existing concepts ----
+# -- debye-sheath (德拜鞘): had 1
+德拜套	debye-sheath	zh	forbidden	误译sheath(鞘≠套)：正确为 德拜鞘
+德拜壳	debye-sheath	zh	forbidden	误译sheath(鞘≠壳)：正确为 德拜鞘
+德拜屏蔽层	debye-sheath	zh	forbidden	误译sheath(鞘≠屏蔽层)：正确为 德拜鞘
+# -- liquid-metal-divertor (液态金属偏滤器): had 1
+液态金属分流器	liquid-metal-divertor	zh	forbidden	误译divertor(偏滤器≠分流器)：正确为 液态金属偏滤器
+液金属偏滤器	liquid-metal-divertor	zh	deprecated	非标准缩略(液态金属≠液金属)：应为 液态金属偏滤器
+# -- closed-divertor (封闭偏滤器): had 1
+关闭偏滤器	closed-divertor	zh	forbidden	AI误译closed(封闭≠关闭)：正确为 封闭偏滤器
+闭式分流器	closed-divertor	zh	forbidden	AI误译closed+divertor：正确为 封闭偏滤器
+# -- advanced-divertor-concept (先进偏滤器概念): had 1
+先进分流器概念	advanced-divertor-concept	zh	forbidden	误译divertor(偏滤器≠分流器)：正确为 先进偏滤器概念
+高级分流器概念	advanced-divertor-concept	zh	forbidden	AI误译advanced+divertor：正确为 先进偏滤器概念
+# -- divertor-pumping (偏滤器抽气): had 1
+偏滤器泵送	divertor-pumping	zh	forbidden	误译pumping(抽气≠泵送)：正确为 偏滤器抽气
+偏滤器泵浦	divertor-pumping	zh	forbidden	误译pumping(光学义泵浦≠抽气)：正确为 偏滤器抽气
+分流器抽气	divertor-pumping	zh	forbidden	误译divertor(偏滤器≠分流器)：正确为 偏滤器抽气
+# -- divertor-dome (偏滤器穹顶): had 1
+偏滤器圆屋顶	divertor-dome	zh	forbidden	AI误译dome(穹顶≠圆屋顶)：正确为 偏滤器穹顶
+分流器穹顶	divertor-dome	zh	forbidden	误译divertor(偏滤器≠分流器)：正确为 偏滤器穹顶
+# -- divertor-replacement (偏滤器更换): had 1 (deprecated)
+偏滤器替代	divertor-replacement	zh	deprecated	非标准(更换≠替代)：应为 偏滤器更换
+分流器更换	divertor-replacement	zh	forbidden	误译divertor(偏滤器≠分流器)：正确为 偏滤器更换
+# -- ir-thermography (红外热像): had 1
+红外热摄影	ir-thermography	zh	forbidden	误译thermography(热像≠热摄影)：正确为 红外热像
+红外热成像术	ir-thermography	zh	deprecated	啰嗦(热像≠热成像术)：应为 红外热像
+红外温度摄影	ir-thermography	zh	forbidden	误译thermography：正确为 红外热像
+# -- interferometry (干涉法): had 1
+干涉测量术	interferometry	zh	deprecated	啰嗦(干涉法≠干涉测量术)：应为 干涉法
+干涉仪法	interferometry	zh	deprecated	非标准(干涉法≠干涉仪法)：应为 干涉法
+干涉学	interferometry	zh	forbidden	误译-metry(法≠学)：正确为 干涉法
+# -- soft-x-ray (软X射线): had 1
+软X光	soft-x-ray	zh	deprecated	非标准(X射线≠X光)：应为 软X射线
+软X线	soft-x-ray	zh	deprecated	非标准(X射线≠X线)：应为 软X射线
+# -- impurity-spectroscopy (杂质光谱学): had 1
+杂质分光	impurity-spectroscopy	zh	forbidden	误译spectroscopy(光谱学≠分光)：正确为 杂质光谱学
+杂质光谱术	impurity-spectroscopy	zh	deprecated	非标准(光谱学≠光谱术)：应为 杂质光谱学
+# -- plasma-facing-material (面向等离子体材料): add blood-plasma variant
+血浆朝向材料	plasma-facing-material	zh	forbidden	AI误译plasma+facing(等离子体≠血浆)：正确为 面向等离子体材料
+# -- tungsten-monoblock (钨单块): add more
+钨独石块	tungsten-monoblock	zh	forbidden	AI误译monoblock(单块≠独石块)：正确为 钨单块
+钨单体块	tungsten-monoblock	zh	forbidden	AI误译monoblock(单块≠单体块)：正确为 钨单块
+# -- tungsten-fuzz (钨绒毛): add more
+钨起毛	tungsten-fuzz	zh	forbidden	误译fuzz(绒毛≠起毛)：正确为 钨绒毛
+氦绒毛	tungsten-fuzz	zh	alias	helium-induced context
