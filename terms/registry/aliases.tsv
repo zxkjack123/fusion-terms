@@ -7115,3 +7115,11 @@ Greenwald限制	greenwald-density	zh	deprecated	混淆density与limit：应为 �
 定标律	confinement-scaling	zh	deprecated	非标准：应为 标度律/约束标度律
 标度率	confinement-scaling	zh	forbidden	误译law(律≠率)：正确为 标度律
 约束时间	tau-e	zh	deprecated	歧义(缺'能量')：应为 能量约束时间
+# ==== Batch 75: AI mistranslation anti-pattern expansion — MHD instabilities ====
+弯折模	kink-mode	zh	forbidden	误译kink(扭曲≠弯折)：正确为 扭曲模
+纽结模	kink-mode	zh	forbidden	误译kink(扭曲≠纽结)：正确为 扭曲模
+鼓包模	ballooning-mode	zh	forbidden	误译ballooning：正确为 气球模
+置换不稳定性	interchange-instability	zh	forbidden	误译interchange(化学义)：正确为 交换不稳定性
+鱼骨形不稳定性	fishbone-instability	zh	deprecated	啰嗦变体：应为 鱼骨模不稳定性
+剥落-气球模	peeling-ballooning-mode	zh	forbidden	误译peeling(剥离≠剥落)：正确为 剥离-气球模
+去皮-气球模	peeling-ballooning-mode	zh	forbidden	误译peeling(剥离≠去皮)：正确为 剥离-气球模
