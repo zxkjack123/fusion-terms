@@ -7075,3 +7075,14 @@ attached-regime	attached-regime	en	alias	IME token-only form
 打击板	divertor-target	zh	forbidden	非标准：聚变应为 靶板/偏滤器靶板
 衰减长度	sol-width	zh	deprecated	笼统化：应为 SOL宽度/热流衰减宽度
 离靶	plasma-detachment	zh	deprecated	非标准：应为 脱靶
+# ==== Fuelling & particle control: forbidden/deprecated variant coverage ====
+注气	gas-puffing	zh	deprecated	非标准变体：应为 充气
+吹气	gas-puffing	zh	forbidden	误译gas puffing：正确为 充气
+冲气	gas-puffing	zh	forbidden	误译gas puffing：正确为 充气
+弹丸注射	pellet-injection	zh	forbidden	误译injection(注入非注射)：正确为 弹丸注入
+冰丸注射	pellet-injection	zh	forbidden	误译：正确为 弹丸注入
+冰丸注入	pellet-injection	zh	deprecated	非标准(冰丸→弹丸)：应为 弹丸注入
+尾气处理	tokamak-exhaust-processing-system	zh	alias	聚变氚循环短缩形式
+废气处理	tokamak-exhaust-processing-system	zh	forbidden	误译exhaust(环保义)：聚变应为 排气/尾气处理
+exhaust processing	tokamak-exhaust-processing-system	en	alias	generic short form
+燃耗率	burn-fraction	zh	forbidden	混淆burn fraction与burnup：正确为 燃烧份额

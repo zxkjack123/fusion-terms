@@ -211,7 +211,7 @@
 
 ### Phase 3: 充气/加料与粒子控制
 
-#### Task 3.1: 补充 gas-puffing、pellet-injection、exhaust-processing、burn-fraction 的错误变体 aliases
+#### ✅ Task 3.1: 补充 gas-puffing、pellet-injection、exhaust-processing、burn-fraction 的错误变体 aliases
 
 - **目标**：为 4 个已有概念添加 forbidden/deprecated aliases 覆盖常见误译
 - **修改内容**：
