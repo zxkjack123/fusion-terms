@@ -7138,3 +7138,14 @@ Greenwald限制	greenwald-density	zh	deprecated	混淆density与limit：应为 �
 安全参数	safety-factor	zh	forbidden	误译factor(因子≠参数)：正确为 安全因子
 限制时间	tau-e	zh	forbidden	误译confinement(约束≠限制)：正确为 能量约束时间
 封闭时间	tau-e	zh	forbidden	误译confinement(约束≠封闭)：正确为 能量约束时间
+# ==== Batch 75: AI mistranslation anti-pattern expansion — neutronics & irradiation ====
+降低活化	reduced-activation	zh	forbidden	非标准直译：正确为 低活化
+减活化	reduced-activation	zh	forbidden	非标准译法：正确为 低活化
+降活	reduced-activation	zh	forbidden	非标准缩略：正确为 低活化
+衰变余热	decay-heat	zh	deprecated	非标准混合：应为 衰变热 或 余热
+每原子位移	dpa	zh	forbidden	直译acronym：正确为 离位损伤(dpa)
+核转变	transmutation	zh	forbidden	非标准：正确为 嬗变
+核变换	transmutation	zh	forbidden	误译transmutation：正确为 嬗变
+空隙肿胀	void-swelling	zh	forbidden	误译void(空洞≠空隙)：正确为 辐照肿胀
+辐照脆性	irradiation-embrittlement	zh	forbidden	误译embrittlement(脆化≠脆性)：正确为 辐照脆化
+气泡化	blistering	zh	forbidden	误译blistering：正确为 起泡

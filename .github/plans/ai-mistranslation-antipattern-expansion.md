@@ -126,7 +126,7 @@
 
 ### Phase 4: 中子学与辐照材料 — 反模式补充
 
-#### Task 4.1: reduced-activation / decay-heat / dpa / transmutation / void-swelling / irradiation-embrittlement / blistering forbidden 别名
+#### ✅ Task 4.1: reduced-activation / decay-heat / dpa / transmutation / void-swelling / irradiation-embrittlement / blistering forbidden 别名
 - **目标**：为 7 个中子-材料-辐照概念补充 forbidden/deprecated 中文别名
 - **修改内容**：
   - 文件 `terms/registry/aliases.tsv`：追加
