@@ -156,7 +156,7 @@
 
 ### Phase 2: 偏滤器物理
 
-#### Task 2.1: 新增 parallel-cooling、cross-field-cooling、attached-regime + 偏滤器 alias 补充
+#### ✅ Task 2.1: 新增 parallel-cooling、cross-field-cooling、attached-regime + 偏滤器 alias 补充
 
 - **目标**：添加 3 个偏滤器物理新概念，补充已有 divertor-target / sol-width / plasma-detachment 的 deprecated/forbidden aliases
 - **修改内容**：

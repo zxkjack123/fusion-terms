@@ -1557,3 +1557,6 @@ chemical-sputtering	internal:registry-gap-review:pwi-expansion	Chemical sputteri
 sputtering-yield	internal:registry-gap-review:pwi-expansion	Dimensionless yield of ejected atoms per incident ion	copilot	2026-04-13
 desorption	internal:registry-gap-review:pwi-expansion	Release of adsorbed atoms/molecules from a surface	copilot	2026-04-13
 implantation-range	internal:registry-gap-review:pwi-expansion	Mean penetration depth of implanted ions	copilot	2026-04-13
+parallel-cooling	internal:registry-gap-review:divertor-expansion	Heat removal along field lines in SOL/divertor	copilot	2026-04-13
+cross-field-cooling	internal:registry-gap-review:divertor-expansion	Heat removal across field lines in SOL/divertor	copilot	2026-04-13
+attached-regime	internal:registry-gap-review:divertor-expansion	Divertor regime with direct plasma contact (vs detachment)	copilot	2026-04-13

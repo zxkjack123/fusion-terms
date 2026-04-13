@@ -1660,3 +1660,7 @@ chemical-sputtering	concept	化学溅射	chemical sputtering		active	Chemical ej
 sputtering-yield	metric	溅射产额	sputtering yield		active	Number of surface atoms ejected per incident ion (dimensionless)
 desorption	concept	脱附	desorption		active	Release of adsorbed species from a surface
 implantation-range	metric	注入射程	implantation range		active	Mean penetration depth of implanted ions into a material
+# ---- Divertor physics (偏滤器物理)
+parallel-cooling	concept	平行冷却	parallel cooling		active	Cooling via heat transport along magnetic field lines in SOL/divertor
+cross-field-cooling	concept	横向冷却	cross-field cooling		active	Cooling via heat transport perpendicular to magnetic field lines
+attached-regime	concept	贴靠模式	attached regime		active	Divertor operating regime with direct plasma-surface contact on target plate

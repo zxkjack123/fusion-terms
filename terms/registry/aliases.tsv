@@ -7057,3 +7057,21 @@ implantation-range	implantation-range	en	alias	IME token-only form
 注入深度	implantation-range	zh	forbidden	误译range(射程≠深度)：正确为 注入射程
 共堆积	co-deposition	zh	alias	co-deposition 变体
 扣留	fuel-retention	zh	forbidden	误译retention：正确为 滞留
+# ==== Divertor physics expansion: parallel/cross-field cooling, attached regime, alias patches ====
+parallel cooling	parallel-cooling	en	preferred	preferred en (phrase)
+parallel-cooling	parallel-cooling	en	alias	IME token-only form
+平行冷却	parallel-cooling	zh	preferred	preferred zh
+并行冷却	parallel-cooling	zh	forbidden	误译parallel(非并行)：正确为 平行冷却
+并联冷却	parallel-cooling	zh	forbidden	误译parallel(非并联)：正确为 平行冷却
+cross-field cooling	cross-field-cooling	en	preferred	preferred en (phrase)
+cross-field-cooling	cross-field-cooling	en	alias	IME token-only form
+perpendicular cooling	cross-field-cooling	en	alias	synonym
+横向冷却	cross-field-cooling	zh	preferred	preferred zh
+垂直冷却	cross-field-cooling	zh	forbidden	误译perpendicular(非垂直)：正确为 横向冷却
+attached regime	attached-regime	en	preferred	preferred en (phrase)
+attached-regime	attached-regime	en	alias	IME token-only form
+贴靠模式	attached-regime	zh	preferred	preferred zh
+接触模式	attached-regime	zh	forbidden	误译attached：正确为 贴靠模式
+打击板	divertor-target	zh	forbidden	非标准：聚变应为 靶板/偏滤器靶板
+衰减长度	sol-width	zh	deprecated	笼统化：应为 SOL宽度/热流衰减宽度
+离靶	plasma-detachment	zh	deprecated	非标准：应为 脱靶
