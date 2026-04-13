@@ -1675,3 +1675,10 @@ self-sputtering	concept	自溅射	self-sputtering		active	Sputtering of a surfac
 thermal-desorption	concept	热脱附	thermal desorption	TDS	active	Thermally activated release of implanted/trapped species from material
 ion-implantation	concept	离子注入	ion implantation		active	Energetic ion embedding into near-surface layers of PFC material
 surface-recombination	concept	表面复合	surface recombination		active	Recombination of atomic hydrogen at material surface prior to desorption
+# ---- PWI anti-pattern expansion phase 3: more new concepts
+preferential-sputtering	concept	择优溅射	preferential sputtering		active	Preferential ejection of lighter element from multi-component target
+particle-reflection-coefficient	metric	粒子反射系数	particle reflection coefficient		active	Fraction of incident particles backscattered from surface
+hydrogen-trapping	concept	氢捕获	hydrogen trapping		active	Retention of hydrogen isotopes at lattice defects (vacancies, dislocations, grain boundaries)
+displacement-energy	metric	位移阈能	displacement energy	Ed	active	Minimum kinetic energy transfer to displace a lattice atom (threshold displacement energy)
+melt-layer	concept	熔化层	melt layer		active	Transient liquid layer on PFC surface from disruption/ELM heat loads
+impurity-screening	concept	杂质屏蔽	impurity screening		active	Reduction of impurity influx to core plasma by SOL/divertor shielding

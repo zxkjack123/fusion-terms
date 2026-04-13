@@ -1569,3 +1569,9 @@ self-sputtering	internal:registry-gap-review:pwi-antipattern-p2	Surface sputteri
 thermal-desorption	internal:registry-gap-review:pwi-antipattern-p2	Thermally activated desorption of implanted hydrogen isotopes	copilot	2026-04-13
 ion-implantation	internal:registry-gap-review:pwi-antipattern-p2	Energetic ion embedding into PFC near-surface	copilot	2026-04-13
 surface-recombination	internal:registry-gap-review:pwi-antipattern-p2	Atomic hydrogen recombination at surface before desorption	copilot	2026-04-13
+preferential-sputtering	internal:registry-gap-review:pwi-antipattern-p3	Lighter element ejected first from alloy/mixed surface	copilot	2026-04-13
+particle-reflection-coefficient	internal:registry-gap-review:pwi-antipattern-p3	Backscattering fraction of incident ions/neutrals	copilot	2026-04-13
+hydrogen-trapping	internal:registry-gap-review:pwi-antipattern-p3	H isotope retention at lattice defect sites	copilot	2026-04-13
+displacement-energy	internal:registry-gap-review:pwi-antipattern-p3	Threshold energy to displace a lattice atom	copilot	2026-04-13
+melt-layer	internal:registry-gap-review:pwi-antipattern-p3	Transient liquid layer on PFC from disruptions	copilot	2026-04-13
+impurity-screening	internal:registry-gap-review:pwi-antipattern-p3	SOL/divertor shielding of core from impurity influx	copilot	2026-04-13

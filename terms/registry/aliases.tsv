@@ -7324,3 +7324,119 @@ surface-recombination	surface-recombination	en	alias	hyphenated form
 # -- existing concept anti-patterns: plasma-detachment
 等离子体解除	plasma-detachment	zh	forbidden	误译detachment(脱靶≠解除)：正确为 等离子体脱靶
 血浆脱离	plasma-detachment	zh	forbidden	AI误译plasma(等离子体≠血浆)：正确为 等离子体脱靶
+# ==== Batch 77: PWI anti-pattern expansion phase 3 ====
+# -- new concept: preferential-sputtering
+preferential sputtering	preferential-sputtering	en	preferred
+择优溅射	preferential-sputtering	zh	preferred
+preferential-sputtering	preferential-sputtering	en	alias	hyphenated form
+优先溅射	preferential-sputtering	zh	deprecated	非推荐：应为 择优溅射
+选择性溅射	preferential-sputtering	zh	forbidden	误译preferential(择优≠选择性)：正确为 择优溅射
+偏好溅射	preferential-sputtering	zh	forbidden	AI误译preferential(择优≠偏好)：正确为 择优溅射
+# -- new concept: particle-reflection-coefficient
+particle reflection coefficient	particle-reflection-coefficient	en	preferred
+粒子反射系数	particle-reflection-coefficient	zh	preferred
+particle-reflection-coefficient	particle-reflection-coefficient	en	alias	hyphenated form
+reflection coefficient	particle-reflection-coefficient	en	alias	short form
+反射系数	particle-reflection-coefficient	zh	alias	short form
+粒子反弹系数	particle-reflection-coefficient	zh	forbidden	误译reflection(反射≠反弹)：正确为 粒子反射系数
+粒子反射率	particle-reflection-coefficient	zh	forbidden	误译coefficient(系数≠率)：正确为 粒子反射系数
+# -- new concept: hydrogen-trapping
+hydrogen trapping	hydrogen-trapping	en	preferred
+氢捕获	hydrogen-trapping	zh	preferred
+hydrogen-trapping	hydrogen-trapping	en	alias	hyphenated form
+hydrogen retention	hydrogen-trapping	en	alias	broader sense
+氢俘获	hydrogen-trapping	zh	alias	可接受变体
+氢困住	hydrogen-trapping	zh	forbidden	AI误译trapping(捕获≠困住)：正确为 氢捕获
+氢陷阱	hydrogen-trapping	zh	deprecated	指物理实体(trap site)而非过程(trapping)
+氢截留	hydrogen-trapping	zh	forbidden	误译trapping(捕获≠截留)：正确为 氢捕获
+# -- new concept: displacement-energy
+displacement energy	displacement-energy	en	preferred
+位移阈能	displacement-energy	zh	preferred
+displacement-energy	displacement-energy	en	alias	hyphenated form
+threshold displacement energy	displacement-energy	en	alias	TDE full form
+Ed	displacement-energy	abbr	preferred
+位移能	displacement-energy	zh	alias	短形式
+移位能	displacement-energy	zh	forbidden	误译displacement(位移≠移位)：正确为 位移阈能
+置换能	displacement-energy	zh	forbidden	误译displacement(位移≠置换)：正确为 位移阈能
+# -- new concept: melt-layer
+melt layer	melt-layer	en	preferred
+熔化层	melt-layer	zh	preferred
+melt-layer	melt-layer	en	alias	hyphenated form
+熔池	melt-layer	zh	deprecated	非标准(pool≠layer)：应为 熔化层
+融化层	melt-layer	zh	forbidden	误字融→熔：正确为 熔化层
+溶化层	melt-layer	zh	forbidden	误字溶→熔(化学溶解≠物理熔化)：正确为 熔化层
+熔坑	melt-layer	zh	forbidden	误译(pit≠layer)：正确为 熔化层
+# -- existing concept additions: fuel-recycling
+fuel-recycling	fuel-recycling	en	alias	hyphenated form
+燃料回炉	fuel-recycling	zh	forbidden	非学术口语化：正确为 燃料再循环
+# -- new concept: impurity-screening
+impurity screening	impurity-screening	en	preferred
+杂质屏蔽	impurity-screening	zh	preferred
+impurity-screening	impurity-screening	en	alias	hyphenated form
+杂质筛选	impurity-screening	zh	forbidden	误译screening(屏蔽≠筛选)：正确为 杂质屏蔽
+杂质审查	impurity-screening	zh	forbidden	AI误译screening(屏蔽≠审查)：正确为 杂质屏蔽
+杂质滤除	impurity-screening	zh	forbidden	误译screening(屏蔽≠滤除)：正确为 杂质屏蔽
+# -- existing concept anti-patterns: fracture-toughness
+断裂韧度	fracture-toughness	zh	deprecated	非推荐：应为 断裂韧性
+断裂强度	fracture-toughness	zh	forbidden	误译toughness(韧性≠强度)：正确为 断裂韧性
+破裂韧性	fracture-toughness	zh	forbidden	误译fracture(断裂≠破裂)：正确为 断裂韧性
+碎裂韧性	fracture-toughness	zh	forbidden	误译fracture(断裂≠碎裂)：正确为 断裂韧性
+# -- existing concept anti-patterns: crack-growth-rate
+裂纹生长率	crack-growth-rate	zh	forbidden	误译growth(扩展≠生长)：正确为 裂纹扩展速率
+裂纹增长率	crack-growth-rate	zh	forbidden	误译growth(扩展≠增长)：正确为 裂纹扩展速率
+裂纹传播速率	crack-growth-rate	zh	deprecated	非推荐变体：应为 裂纹扩展速率
+裂纹成长速率	crack-growth-rate	zh	forbidden	误译growth(扩展≠成长)：正确为 裂纹扩展速率
+# -- existing concept anti-patterns: grain-boundary
+晶粒边界	grain-boundary	zh	deprecated	啰嗦：应为 晶界
+晶粒界	grain-boundary	zh	deprecated	非标准缩略：应为 晶界
+晶间边界	grain-boundary	zh	forbidden	误译grain boundary(晶界≠晶间边界)：正确为 晶界
+# -- existing concept anti-patterns: dislocation
+错位	dislocation	zh	forbidden	误译(医学义)：正确为 位错
+脱位	dislocation	zh	forbidden	误译(医学义)：正确为 位错
+位移错	dislocation	zh	forbidden	过度分解：正确为 位错
+# -- existing concept anti-patterns: creep-fatigue-interaction
+蠕变疲劳相互作用	creep-fatigue-interaction	zh	deprecated	啰嗦：应为 蠕变-疲劳交互
+蠕变疲劳	creep-fatigue-interaction	zh	alias	短形式
+# -- existing concept anti-patterns: vacancy
+空位率	vacancy	zh	forbidden	空位≠空位率(vacancy concentration)：正确为 空位
+空白	vacancy	zh	forbidden	AI误译vacancy(空位≠空白)：正确为 空位(晶格缺陷)
+# -- existing concept anti-patterns: interstitial-atom
+间隔原子	interstitial-atom	zh	forbidden	误译interstitial(间隙≠间隔)：正确为 间隙原子
+间位原子	interstitial-atom	zh	deprecated	非标准：应为 间隙原子
+# -- existing concept anti-patterns: radiation-induced-segregation
+辐射偏析	radiation-induced-segregation	zh	forbidden	辐照≠辐射(此语境)：正确为 辐照偏析
+辐射诱导偏析	radiation-induced-segregation	zh	forbidden	误译radiation+induced：正确为 辐照偏析
+# -- existing concept anti-patterns: radiation-hardening
+辐照加硬	radiation-hardening	zh	forbidden	非标准：正确为 辐照硬化
+辐射硬度	radiation-hardening	zh	forbidden	hardening≠hardness+辐照≠辐射：正确为 辐照硬化
+# -- existing concept anti-patterns: helium-production
+氦气产生	helium-production	zh	forbidden	'气'多余(材料语境)：正确为 氦产生
+氦生成率	helium-production	zh	forbidden	混淆产生(过程)与产率(rate)：正确为 氦产生
+# -- existing concept anti-patterns: frenkel-pair
+弗伦克缺陷	frenkel-pair	zh	forbidden	误音译+缺'对'：正确为 Frenkel缺陷对
+# -- existing concept anti-patterns: vapor-shielding
+蒸发屏蔽	vapor-shielding	zh	deprecated	非标准(evaporation≠vapor)：应为 蒸汽屏蔽
+蒸气屏蔽	vapor-shielding	zh	deprecated	'蒸气'非标准写法：应为 蒸汽屏蔽
+蒸发防护	vapor-shielding	zh	forbidden	误译shielding+vapor：正确为 蒸汽屏蔽
+# -- existing concept anti-patterns: disruption-erosion
+破坏性侵蚀	disruption-erosion	zh	forbidden	误译disruption(破裂≠破坏性)：正确为 破裂侵蚀
+中断侵蚀量	disruption-erosion	zh	forbidden	误译disruption(破裂≠中断)：正确为 破裂侵蚀
+# -- existing concept anti-patterns: impurity-source
+杂质源头	impurity-source	zh	forbidden	口语化：正确为 杂质源
+杂质起源	impurity-source	zh	forbidden	误译source(源≠起源)：正确为 杂质源
+# -- existing concept anti-patterns: elm-induced-erosion
+ELM崩溃侵蚀	elm-induced-erosion	zh	forbidden	误译ELM-induced(诱发≠崩溃)：正确为 ELM诱发侵蚀
+ELM碰撞侵蚀	elm-induced-erosion	zh	forbidden	误译ELM-induced(诱发≠碰撞)：正确为 ELM诱发侵蚀
+# -- existing concept anti-patterns: thermal-fatigue
+热循环疲劳	thermal-fatigue	zh	deprecated	非标准(thermal cycling fatigue≠thermal fatigue)：应为 热疲劳
+热疲劳破坏	thermal-fatigue	zh	deprecated	含结果义：应为 热疲劳
+# -- existing concept anti-patterns: chemical-erosion
+化学腐蚀损伤	chemical-erosion	zh	deprecated	啰嗦：应为 化学腐蚀
+化学蚀刻	chemical-erosion	zh	forbidden	etching≠erosion：正确为 化学腐蚀
+# -- more plasma→血浆 AI mistranslation anti-patterns
+血浆表面相互作用	plasma-surface-interaction	zh	forbidden	AI误译plasma(等离子体≠血浆)：正确为 等离子体表面相互作用
+血浆边界	scrape-off-layer	zh	forbidden	AI误译plasma+boundary：正确为 刮削层
+血浆排气	power-exhaust	zh	forbidden	AI误译plasma exhaust(等离子体≠血浆)：正确为 功率排出
+血浆屏蔽	impurity-screening	zh	forbidden	AI误译plasma→血浆：正确为 杂质屏蔽
+血浆注入	impurity-seeding	zh	forbidden	AI误译plasma→血浆：正确为 杂质注入
+血浆再循环	fuel-recycling	zh	forbidden	AI误译plasma→血浆：正确为 燃料再循环
