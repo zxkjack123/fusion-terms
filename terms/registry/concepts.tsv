@@ -714,7 +714,7 @@ dust	concept	粉尘	dust		active	Micron-scale particulates generated from PFC er
 arcing	concept	电弧	arcing		active	Localized arc discharge between plasma and wall surface causing damage
 melt-damage	concept	熔化损伤	melt damage		active	PFC surface melting from transient high heat loads
 mixed-material	concept	混合材料	mixed material		active	Co-deposited layers of multiple PFC materials (e.g. Be-W)
-wall-conditioning	method	壁面处理	wall conditioning		active	Surface preparation techniques for impurity control before plasma operation
+wall-conditioning	method	壁调理	wall conditioning		active	Surface preparation techniques for impurity control before plasma operation
 glow-discharge-cleaning	method	辉光放电清洗	glow discharge cleaning	GDC	active	Low-pressure gas discharge technique for vessel wall cleaning
 boronization	method	硼化	boronization		active	Deposition of thin boron film on vessel walls for impurity control
 tritium-removal	method	氚滞留清除	tritium removal		active	Techniques for removing retained tritium from PFCs
@@ -797,7 +797,7 @@ thermo-mechanical-analysis	method	热机械分析	thermo-mechanical analysis		ac
 vacuum-pumping	system	真空抽气	vacuum pumping		active	Pumping system maintaining vacuum vessel base pressure
 base-pressure	metric	本底气压	base pressure		active	Vacuum vessel background pressure before plasma operation
 outgassing	concept	出气	outgassing		active	Release of adsorbed gases from vacuum vessel walls
-bakeout	method	真空烘烤	bakeout		active	High-temperature degassing to reduce base pressure
+bakeout	method	烘烤除气	bakeout		active	High-temperature degassing to reduce base pressure
 gas-injection-valve	system	进气阀	gas injection valve		active	Fast electromagnetic valve for gas injection
 pellet-guide-tube	system	弹丸导管	pellet guide tube		active	Curved tube guiding pellets from injector to plasma
 pellet-ablation	concept	弹丸烧蚀	pellet ablation		active	Fuel pellet surface ablation in hot plasma
@@ -982,7 +982,7 @@ disruption-erosion	concept	破裂侵蚀	disruption erosion		active	Severe wall e
 elm-induced-erosion	concept	ELM诱发侵蚀	ELM-induced erosion		active	Wall erosion caused by ELM transient heat loads
 runaway-electron-damage	concept	逃逸电子损伤	runaway electron damage		active	Deep localized PFC damage from runaway electron impact
 prompt-redeposition	concept	即时再沉积	prompt redeposition		active	Sputtered particle near-field redeposition under magnetic confinement
-lithium-coating	method	锂涂覆	lithium coating		active	Lithium evaporation/injection wall conditioning technique
+lithium-coating	method	锂化	lithium coating		active	Lithium evaporation/injection wall conditioning technique
 siliconization	method	硅化	siliconization		active	Silane glow discharge wall conditioning technique
 dust-generation	concept	粉尘产生	dust generation		active	Dust production mechanism from plasma erosion and flaking
 dust-transport	concept	粉尘输运	dust transport		active	Dust dynamics, mobilization and transport inside vacuum vessel

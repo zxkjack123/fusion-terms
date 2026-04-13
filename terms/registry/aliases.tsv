@@ -2511,7 +2511,7 @@ mixed material	mixed-material	en	preferred
 混合材料	mixed-material	zh	preferred
 co-deposited layer	mixed-material	en	alias
 wall conditioning	wall-conditioning	en	preferred
-壁面处理	wall-conditioning	zh	preferred
+壁面处理	wall-conditioning	zh	deprecated	非推荐：应为 壁调理
 glow discharge cleaning	glow-discharge-cleaning	en	preferred
 GDC	glow-discharge-cleaning	abbr	preferred
 辉光放电清洗	glow-discharge-cleaning	zh	preferred
@@ -2697,7 +2697,7 @@ base pressure	base-pressure	en	preferred
 outgassing	outgassing	en	preferred
 出气	outgassing	zh	preferred
 bakeout	bakeout	en	preferred
-真空烘烤	bakeout	zh	preferred
+真空烘烤	bakeout	zh	alias	保留的替代表述
 vacuum bakeout	bakeout	en	alias
 gas injection valve	gas-injection-valve	en	preferred
 进气阀	gas-injection-valve	zh	preferred
@@ -3095,7 +3095,7 @@ RE damage	runaway-electron-damage	en	alias
 prompt redeposition	prompt-redeposition	en	preferred
 即时再沉积	prompt-redeposition	zh	preferred
 lithium coating	lithium-coating	en	preferred
-锂涂覆	lithium-coating	zh	preferred
+锂涂覆	lithium-coating	zh	alias	原始preferred变体
 Li coating	lithium-coating	en	alias
 锂蒸镀	lithium-coating	zh	alias
 siliconization	siliconization	en	preferred
@@ -3241,7 +3241,7 @@ H系数	h-factor	zh	forbidden	误译factor：聚变应为 H因子
 杂质传输	impurity-transport	zh	deprecated	非标准：应为 杂质输运
 异常传输	anomalous-transport	zh	forbidden	误译：聚变应为 反常输运
 异常输运	anomalous-transport	zh	deprecated	非标准：应为 反常输运
-壁调节	wall-conditioning	zh	deprecated	非标准：应为 壁面处理
+壁调节	wall-conditioning	zh	deprecated	非标准：应为 壁调理
 飞溅	sputtering	zh	forbidden	误译sputtering：正确为 溅射
 喷射	sputtering	zh	forbidden	误译sputtering：正确为 溅射
 喷溅	sputtering	zh	forbidden	误译sputtering：正确为 溅射
@@ -3437,7 +3437,7 @@ REBCO磁带	rebco	zh	forbidden	误译tape：正确为 REBCO带材
 # ==== Batch 2E: tritium, fuel cycle, safety ====
 硼处理	boronization	zh	deprecated	笼统化：应为 硼化
 硼化处理	boronization	zh	deprecated	啰嗦：应为 硼化
-烘烤	bakeout	zh	deprecated	缺修饰：应为 真空烘烤
+烘烤	bakeout	zh	deprecated	缺修饰：应为 烘烤除气
 焚烧控制	burn-control	zh	forbidden	误译burn：聚变应为 燃烧控制
 容量系数	capacity-factor	zh	forbidden	误译factor：正确为 容量因子
 接触辐射率	contact-dose-rate	zh	forbidden	误译dose rate：正确为 接触剂量率
@@ -4010,7 +4010,7 @@ N平行	n-parallel	zh	forbidden	误译：正确为 平行折射率
 氢气安全	hydrogen-safety	zh	deprecated	非标准：应为 氢安全
 # ==== Batch 6F: materials, blanket, cooling ====
 液体金属冷却剂	liquid-metal-coolant	zh	forbidden	误译liquid：正确为 液态金属冷却剂
-锂涂层	lithium-coating	zh	deprecated	非标准(coating→涂覆≠涂层)：应为 锂涂覆
+锂涂层	lithium-coating	zh	deprecated	非标准(coating→涂覆≠涂层)：应为 锂化
 锂墙	lithium-wall	zh	forbidden	误译wall：正确为 锂壁
 热循环吸收过程	tcap	zh	forbidden	误译process：正确为 热循环吸收工艺
 氚厂	tritium-plant	zh	deprecated	缩略非标准：应为 氚工厂
@@ -4680,7 +4680,7 @@ HCD	helicon-current-drive	abbr	alias	abbreviation
 合成诊断方法	synthetic-diagnostics	zh	alias	method form
 热力学-机械分析	thermo-mechanical-analysis	zh	alias	variant
 TMA	thermo-mechanical-analysis	abbr	alias	abbreviation
-壁处理	wall-conditioning	zh	alias	short form
+壁处理	wall-conditioning	zh	deprecated	笼统化：应为 壁调理
 wall conditioning technique	wall-conditioning	en	alias	technique form
 工作流自动化系统	workflow-automation	zh	alias	system form
 # ==== Batch 50b: alias enrichment — metric ====
@@ -7086,3 +7086,13 @@ attached-regime	attached-regime	en	alias	IME token-only form
 废气处理	tokamak-exhaust-processing-system	zh	forbidden	误译exhaust(环保义)：聚变应为 排气/尾气处理
 exhaust processing	tokamak-exhaust-processing-system	en	alias	generic short form
 燃耗率	burn-fraction	zh	forbidden	混淆burn fraction与burnup：正确为 燃烧份额
+# ==== Wall conditioning: preferred_zh corrections + variant coverage ====
+壁调理	wall-conditioning	zh	preferred	preferred zh
+壁清洁	wall-conditioning	zh	forbidden	不规范：正确为 壁调理
+烘烤除气	bakeout	zh	preferred	preferred zh
+低温烘烤	bakeout	zh	deprecated	非标准：应为 烘烤除气
+bake-out	bakeout	en	alias	hyphenated variant
+锂化	lithium-coating	zh	preferred	preferred zh
+辉光清洗	glow-discharge-cleaning	zh	deprecated	缩略：应为 辉光放电清洗
+辉光放电清理	glow-discharge-cleaning	zh	deprecated	非标准：应为 辉光放电清洗
+硼涂覆	boronization	zh	deprecated	非标准：应为 硼化

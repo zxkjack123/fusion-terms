@@ -246,7 +246,7 @@
 
 ### Phase 4: 壁调理/壁处理
 
-#### Task 4.1: 修正 wall-conditioning、bakeout、lithium-coating preferred_zh
+#### ✅ Task 4.1: 修正 wall-conditioning、bakeout、lithium-coating preferred_zh
 
 - **目标**：将 3 个 concept 的 preferred_zh 更新为领域标准译法
 - **修改内容**：
