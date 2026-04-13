@@ -1664,3 +1664,4 @@ implantation-range	metric	注入射程	implantation range		active	Mean penetrati
 parallel-cooling	concept	平行冷却	parallel cooling		active	Cooling via heat transport along magnetic field lines in SOL/divertor
 cross-field-cooling	concept	横向冷却	cross-field cooling		active	Cooling via heat transport perpendicular to magnetic field lines
 attached-regime	concept	贴靠模式	attached regime		active	Divertor operating regime with direct plasma-surface contact on target plate
+coating-degradation	concept	涂层退化	coating degradation		active	Gradual deterioration of wall conditioning coatings under plasma exposure

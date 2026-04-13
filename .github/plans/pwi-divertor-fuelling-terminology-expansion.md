@@ -294,7 +294,7 @@
   - `terminology_substitutions.tsv` 导出会将旧替换目标（如"壁泵送→壁面处理"）变为"壁泵送→壁调理"——属于预期行为
   - "壁调节"行（第 3244 行）的 comment 需同步更新，否则 comment 与实际 preferred_zh 不一致
 
-#### Task 4.2: 新增 coating-degradation 概念
+#### ✅ Task 4.2: 新增 coating-degradation 概念
 
 - **目标**：添加"涂层退化 (coating degradation)"概念及 aliases
 - **修改内容**：

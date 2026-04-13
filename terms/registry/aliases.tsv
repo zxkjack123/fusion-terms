@@ -7096,3 +7096,8 @@ bake-out	bakeout	en	alias	hyphenated variant
 辉光清洗	glow-discharge-cleaning	zh	deprecated	缩略：应为 辉光放电清洗
 辉光放电清理	glow-discharge-cleaning	zh	deprecated	非标准：应为 辉光放电清洗
 硼涂覆	boronization	zh	deprecated	非标准：应为 硼化
+# ==== Wall conditioning: coating-degradation ====
+coating degradation	coating-degradation	en	preferred	preferred en (phrase)
+coating-degradation	coating-degradation	en	alias	IME token-only form
+涂层退化	coating-degradation	zh	preferred	preferred zh
+涂层侵蚀	coating-degradation	zh	deprecated	非标准：应为 涂层退化
