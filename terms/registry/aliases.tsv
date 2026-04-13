@@ -7164,3 +7164,25 @@ Greenwald限制	greenwald-density	zh	deprecated	混淆density与limit：应为 �
 等离子体壁面交互	plasma-surface-interaction	zh	forbidden	误译interaction(相互作用≠交互)：正确为 等离子体表面相互作用
 等离子壁互动	plasma-surface-interaction	zh	forbidden	误译interaction+缺'体'字：正确为 等离子体表面相互作用
 血浆壁相互作用	plasma-surface-interaction	zh	forbidden	AI误译plasma(等离子体≠血浆)：正确为 等离子体表面相互作用
+# ==== Batch 75: AI mistranslation anti-pattern expansion — new concepts & decay-heat ====
+# -- re-erosion
+re-erosion	re-erosion	en	preferred
+再侵蚀	re-erosion	zh	preferred
+re erosion	re-erosion	en	alias	space variant
+重新侵蚀	re-erosion	zh	forbidden	误译re-(再≠重新)：正确为 再侵蚀
+反复侵蚀	re-erosion	zh	forbidden	误译re-(再≠反复)：正确为 再侵蚀
+# -- ductile-brittle-transition-temperature
+ductile-to-brittle transition temperature	ductile-brittle-transition-temperature	en	preferred
+韧脆转变温度	ductile-brittle-transition-temperature	zh	preferred
+DBTT	ductile-brittle-transition-temperature	abbr	preferred
+ductile-brittle transition temperature	ductile-brittle-transition-temperature	en	alias
+延脆转变	ductile-brittle-transition-temperature	zh	forbidden	误译ductile(韧≠延)：正确为 韧脆转变温度
+塑脆转变	ductile-brittle-transition-temperature	zh	forbidden	误译ductile(韧≠塑)：正确为 韧脆转变温度
+韧性-脆性转变温度	ductile-brittle-transition-temperature	zh	deprecated	啰嗦：应为 韧脆转变温度
+# -- neutron streaming aliases (under existing radiation-streaming)
+中子流穿	radiation-streaming	zh	alias	neutron-specific streaming variant
+中子漏流	radiation-streaming	zh	forbidden	误译streaming(流穿≠漏流)：正确为 中子流穿/流道串流
+# -- decay-heat forbidden (afterheat merged here)
+残余热	decay-heat	zh	forbidden	非标准：正确为 余热/衰变热
+事后热	decay-heat	zh	forbidden	误译after(余≠事后)：正确为 余热/衰变热
+后续热	decay-heat	zh	forbidden	误译after：正确为 余热/衰变热

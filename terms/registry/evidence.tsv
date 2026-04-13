@@ -1561,3 +1561,5 @@ parallel-cooling	internal:registry-gap-review:divertor-expansion	Heat removal al
 cross-field-cooling	internal:registry-gap-review:divertor-expansion	Heat removal across field lines in SOL/divertor	copilot	2026-04-13
 attached-regime	internal:registry-gap-review:divertor-expansion	Divertor regime with direct plasma contact (vs detachment)	copilot	2026-04-13
 coating-degradation	internal:registry-gap-review:wall-conditioning-expansion	Gradual deterioration of boronization/lithization coatings under plasma exposure	copilot	2026-04-13
+re-erosion	internal:registry-gap-review:pwi-antipattern	Erosion of previously redeposited layers	copilot	2026-04-13
+ductile-brittle-transition-temperature	internal:registry-gap-review:materials-antipattern	Temperature marking onset of brittle fracture behavior	copilot	2026-04-13

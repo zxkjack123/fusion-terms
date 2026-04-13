@@ -206,7 +206,7 @@
 
 ### Phase 7: 新增概念 — re-erosion / afterheat / neutron-streaming / ductile-brittle-transition-temperature
 
-#### Task 7.1: 新增 4 个缺失概念（concepts + aliases + evidence）
+#### ✅ Task 7.1: 新增 4 个缺失概念（concepts + aliases + evidence）
 - **目标**：新增 4 个目前 registry 中不存在的概念，并配套 preferred/alias/forbidden 别名和 evidence
 - **修改内容**：
   - 文件 `terms/registry/concepts.tsv`：在末尾追加 section header + 4 行
