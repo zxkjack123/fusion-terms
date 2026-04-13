@@ -1668,3 +1668,10 @@ coating-degradation	concept	涂层退化	coating degradation		active	Gradual det
 # ---- AI anti-pattern expansion: new concepts (PWI + materials)
 re-erosion	concept	再侵蚀	re-erosion		active	Erosion of redeposited material
 ductile-brittle-transition-temperature	metric	韧脆转变温度	ductile-to-brittle transition temperature	DBTT	active	Temperature below which material fracture becomes brittle
+# ---- PWI anti-pattern expansion phase 2: new concepts
+net-erosion	metric	净侵蚀	net erosion		active	Erosion minus redeposition; net material loss from PFC surface
+gross-erosion	metric	总侵蚀	gross erosion		active	Total erosion before accounting for redeposition
+self-sputtering	concept	自溅射	self-sputtering		active	Sputtering of a surface by its own redeposited species
+thermal-desorption	concept	热脱附	thermal desorption	TDS	active	Thermally activated release of implanted/trapped species from material
+ion-implantation	concept	离子注入	ion implantation		active	Energetic ion embedding into near-surface layers of PFC material
+surface-recombination	concept	表面复合	surface recombination		active	Recombination of atomic hydrogen at material surface prior to desorption

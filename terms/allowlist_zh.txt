@@ -1,59 +1,7 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3D打印
-ACE
-ACE格式
-ALARA
-Alfvén连续谱
-Amdahl定律
 # --- AUTO-INBOX (managed by pipeline.apply_decisions)
-# --- Batch 65 P0 allowlist sync ---
 # --- Batch 65 P0 allowlist sync (Phase 2 alias uplift) ---
+# --- Batch 65 P0 allowlist sync ---
 # --- Batch 66 P1 allowlist sync ---
 # --- Batch 68 Phase 1 allowlist sync ---
 # --- Batch 69 Phase 2 allowlist sync ---
@@ -77,27 +25,49 @@ Amdahl定律
 # --- Batch 87 Phase 1 allowlist sync ---
 # --- Batch 88 Phase 2 allowlist sync ---
 # --- Batch 89 Phase 3 allowlist sync ---
-Bateman方程
-Boozer坐标
-∇B漂移
 # --- CAD/几何建模 (Batch 59) ---
-CAD到MC转换
-CAD简化
 # --- Common diagnostics (Chinese forms)
 # --- Components / systems
 # --- Core concepts
+# --- HPC/并行计算 (Batch 56) ---
+# --- MCNP / FISPACT / activation analysis (token-only)
+# --- Radiation protection / shielding / limits (token-only)
+# --- Regimes / phenomena (keep short, commonly used)
+# --- Safety analysis reports (acronyms)
+# --- Stellarator / 3D magnetic geometry / neoclassical
+# --- Tritium fuel cycle systems (acronyms + full names)
+# --- p-11B / HB11 (hydrogen-boron fusion)
+# --- synced from registry (Batch 9-35) ---
+# --- 数据格式/可视化 (Batch 64) ---
+# --- 材料力学 (Batch 61) ---
+# --- 核数据处理/燃耗 (Batch 58) ---
+# --- 热工水力 (Batch 62) ---
+# --- 蒙特卡罗/确定论输运 (Batch 57) ---
+# --- 软件工程 (Batch 63) ---
+# --- 辐射防护/剂量学 (Batch 60) ---
+# --- 通用科学/工程方法论 (Batch 55) ---
+# One term per line (Chinese). No whitespace.
+3D打印
+ACE
+ACE格式
+ALARA
+Alfvén连续谱
+Amdahl定律
+Bateman方程
+Boozer坐标
+CAD到MC转换
+CAD简化
 CPS
 CPU核心
 CSV格式
-D1S
-D-³He反应
 D-D反应
+D-T反应
+D-³He反应
+D1S
 DPA
 DTO
-D-T反应
 DXTRAN球
 EAF
-E×B漂移
 ECE成像
 ECRH发射天线
 ECRH天线
@@ -108,21 +78,21 @@ ENDF
 ENDF-B
 ENDF格式
 EVEDA锂试验回路
+E×B漂移
 FENDL
 FISPACT
 FISPACT-2007
 FISPACT-II
+FSAR
 Fokker-Planck方程
 Frenkel缺陷对
-FSAR
 GPU加速
 GPU卸载
 Grad-Shafranov方程
 Greenwald份额
-Hamada坐标
 HB11
-# --- HPC/并行计算 (Batch 56) ---
 HTO
+Hamada坐标
 H因子
 H模
 IGES格式
@@ -139,53 +109,45 @@ L-H转换
 L模
 MCNP
 MCNP6
-# --- MCNP / FISPACT / activation analysis (token-only)
 MCNPX
 MHD稳定极限
 NJOY
-# One term per line (Chinese). No whitespace.
-p-11B
-p11B
-# --- p-11B / HB11 (hydrogen-boron fusion)
+PSAR
 Pfirsch-Schlüter区
 Pfirsch-Schlüter电流
-PSAR
 Q值
-# --- Radiation protection / shielding / limits (token-only)
-# --- Regimes / phenomena (keep short, commonly used)
 Richtmyer-Meshkov不稳定性
-# --- Safety analysis reports (acronyms)
 SDS
-Shannon熵
 SOL宽度
 SSH隧道
-# --- Stellarator / 3D magnetic geometry / neoclassical
 STEP格式
 STL格式
+Shannon熵
 Super-X偏滤器
-# --- synced from registry (Batch 9-35) ---
 T2
-Taylor弛豫
-Taylor态
 TENDL
 TEP
 TES
-# --- Tritium fuel cycle systems (acronyms + full names)
+Taylor弛豫
+Taylor态
 Troyon极限
 Vlasov方程
 WDS
 XML格式
-xsdir
 X射线衍射
 X点
 YAML格式
 Z箍缩
+p-11B
+p11B
+xsdir
 α粒子
 α粒子能量导引
 β诱导Alfvén本征模
 δf方法
 θ箍缩
 μ子催化聚变
+∇B漂移
 一回路
 一回路传热
 三α反应
@@ -201,7 +163,6 @@ Z箍缩
 两相流
 严重事故
 个人剂量当量
-个人剂量当量
 个人剂量监测
 个人剂量计
 中低放废物
@@ -210,13 +171,13 @@ Z箍缩
 中国聚变工程试验堆
 中央联锁系统
 中子
+中子-光子耦合输运
 中子串流
 中子产额
 中子伽马耦合
 中子倍增
 中子倍增剂
 中子倍增材料
-中子-光子耦合输运
 中子剂量
 中子剂量仪
 中子剂量率
@@ -321,7 +282,6 @@ Z箍缩
 位置控制
 位错
 位错环
-低周疲劳
 低周疲劳
 低放废物
 低杂波
@@ -443,6 +403,7 @@ Z箍缩
 冷箱
 冷阱
 冷阱取样
+净侵蚀
 净电功率
 准对称
 准对称性
@@ -488,13 +449,12 @@ Z箍缩
 剂量约束
 剂量评估
 剂量转换系数
-剂量转换系数
 剂量限值
 前级泵
 前馈控制
 剖面刚性
-剥离气球模
 剥离-气球模
+剥离气球模
 副反应
 功率
 功率增益因子
@@ -568,7 +528,6 @@ Z箍缩
 压力试验
 压力边界
 压降
-压降
 原型堆
 原子
 原子密度
@@ -595,7 +554,6 @@ Z箍缩
 反射仪
 反常输运
 反应截面
-反应率
 反应率
 反应速率系数
 反磁剪切
@@ -637,9 +595,7 @@ Z箍缩
 含硼混凝土
 启动氚投料量
 吸收剂量
-吸收剂量
 吹扫气
-周围剂量当量
 周围剂量当量
 品质因子
 品质因数
@@ -750,7 +706,6 @@ Z箍缩
 安全系统
 安全联锁
 安全裕度
-安全裕度
 安全论证
 安全评价
 安全评估
@@ -794,7 +749,6 @@ Z箍缩
 尺寸标度
 局部排风
 层流
-屈服强度
 屈服强度
 屏蔽
 屏蔽优化
@@ -916,6 +870,7 @@ Z箍缩
 快离子
 性能分析器
 性能试验
+总侵蚀
 总活度
 总电功率
 惯性约束聚变
@@ -1042,7 +997,6 @@ Z箍缩
 数值解
 数字孪生
 数据归档
-# --- 数据格式/可视化 (Batch 64) ---
 数据管线
 数据记录
 数据采集
@@ -1055,7 +1009,6 @@ Z箍缩
 断崖效应
 断点续算
 断裂力学
-断裂韧性
 断裂韧性
 斯塔克展宽
 斯皮策电阻率
@@ -1128,7 +1081,6 @@ Z箍缩
 杂质输运
 权窗
 材料侵蚀
-# --- 材料力学 (Batch 61) ---
 材料活化
 杜瓦
 束发射光谱
@@ -1164,7 +1116,6 @@ Z箍缩
 核截面
 核数据
 核数据处理
-# --- 核数据处理/燃耗 (Batch 58) ---
 核数据库
 核数据评估
 核热
@@ -1205,7 +1156,6 @@ Z箍缩
 残余离子收集器
 残余离子阻尼器
 母线
-比活度
 比活度
 比释动能
 气体产额
@@ -1395,7 +1345,6 @@ Z箍缩
 流动辅助腐蚀
 流道串流
 流量分配
-流量分配
 流量计
 测地声模
 测量链
@@ -1486,7 +1435,6 @@ Z箍缩
 热屏
 热屏蔽
 热工水力
-# --- 热工水力 (Batch 62) ---
 热工水力分析
 热应力
 热影响区
@@ -1505,6 +1453,7 @@ Z箍缩
 热离子模式
 热等静压
 热等静压成形
+热脱附
 热膨胀系数
 热负荷
 热辐射计
@@ -1561,10 +1510,9 @@ Z箍缩
 球马克
 球马克并合
 理想磁流体力学
-瑞利数
 瑞利-泰勒不稳定性
+瑞利数
 瓦尔箍缩
-生物屏蔽
 生物屏蔽
 电力变压器
 电力成本
@@ -1726,6 +1674,7 @@ Z箍缩
 离子回旋共振加热
 离子回旋加热
 离子回旋天线
+离子注入
 离子温度
 离子温度梯度模
 离子规
@@ -1756,6 +1705,8 @@ Z箍缩
 等值线图
 等电位连接
 等离子体
+等离子体-壁耦合
+等离子体-材料互作
 等离子体三角形变
 等离子体不稳定性
 等离子体位置控制
@@ -1765,7 +1716,6 @@ Z箍缩
 等离子体参数
 等离子体启动
 等离子体壁相互作用
-等离子体-壁耦合
 等离子体大半径
 等离子体密度
 等离子体小半径
@@ -1776,7 +1726,6 @@ Z箍缩
 等离子体控制
 等离子体控制系统
 等离子体旋转
-等离子体-材料互作
 等离子体枪
 等离子体比压
 等离子体温度
@@ -1915,7 +1864,6 @@ Z箍缩
 脉冲极向电流驱动
 脉冲电源
 脚本编程
-脱气
 脱靶前沿
 脱靶控制
 腐蚀产物
@@ -1926,6 +1874,7 @@ Z箍缩
 自举电流优化
 自屏蔽效应
 自旋极化燃料
+自溅射
 自然对流
 自用电
 自由表面锂靶
@@ -1935,7 +1884,6 @@ Z箍缩
 蒙特卡罗中子学
 蒙特卡罗抽样
 蒙特卡罗方法
-# --- 蒙特卡罗/确定论输运 (Batch 57) ---
 蒸汽发生器
 蒸汽屏蔽
 螺旋仿星器
@@ -1951,6 +1899,7 @@ Z箍缩
 补偿器
 表面去污
 表面处理
+表面复合
 表面改性
 表面污染
 表面污染测量
@@ -2021,8 +1970,8 @@ Z箍缩
 负离子源
 负载均衡
 负载平衡
-质子硼聚变
 质子-硼聚变
+质子硼聚变
 质谱仪
 质量保证
 质量控制
@@ -2051,7 +2000,6 @@ Z箍缩
 转运屏蔽容器
 软X射线
 软件依赖
-# --- 软件工程 (Batch 63) ---
 辉光放电清洗
 辐射
 辐射串流
@@ -2079,7 +2027,6 @@ Z箍缩
 辐射防护
 辐射防护仪器
 辐射防护分区
-# --- 辐射防护/剂量学 (Batch 60) ---
 辐射防护管理
 辐射防护设计
 辐射防护评价
@@ -2155,7 +2102,6 @@ Z箍缩
 逆止阀
 透射电子显微镜
 通用原子能
-# --- 通用科学/工程方法论 (Batch 55) ---
 通行粒子
 通量谱
 通风分区
@@ -2258,7 +2204,6 @@ Z箍缩
 隔离阀
 隔震
 集体剂量
-集体剂量
 集成建模
 集成测试
 雪崩聚变
@@ -2306,7 +2251,6 @@ Z箍缩
 验收试验
 验证
 高功率微波
-高周疲劳
 高周疲劳
 高放废物
 高效空气过滤器

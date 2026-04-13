@@ -7186,3 +7186,141 @@ ductile-brittle transition temperature	ductile-brittle-transition-temperature	en
 残余热	decay-heat	zh	forbidden	非标准：正确为 余热/衰变热
 事后热	decay-heat	zh	forbidden	误译after(余≠事后)：正确为 余热/衰变热
 后续热	decay-heat	zh	forbidden	误译after：正确为 余热/衰变热
+# ==== Batch 76: PWI anti-pattern expansion phase 2 ====
+# -- new concept: net-erosion
+net erosion	net-erosion	en	preferred
+净侵蚀	net-erosion	zh	preferred
+net-erosion	net-erosion	en	alias	hyphenated form
+纯侵蚀	net-erosion	zh	forbidden	误译net(净≠纯)：正确为 净侵蚀
+净蚀	net-erosion	zh	deprecated	过度缩略：应为 净侵蚀
+# -- new concept: gross-erosion
+gross erosion	gross-erosion	en	preferred
+总侵蚀	gross-erosion	zh	preferred
+gross-erosion	gross-erosion	en	alias	hyphenated form
+粗侵蚀	gross-erosion	zh	forbidden	误译gross(总≠粗)：正确为 总侵蚀
+大量侵蚀	gross-erosion	zh	forbidden	误译gross(总≠大量)：正确为 总侵蚀
+毛侵蚀	gross-erosion	zh	forbidden	误译gross(总≠毛)：正确为 总侵蚀
+# -- new concept: self-sputtering
+self-sputtering	self-sputtering	en	preferred
+自溅射	self-sputtering	zh	preferred
+self sputtering	self-sputtering	en	alias	space variant
+自我溅射	self-sputtering	zh	forbidden	误译self(自≠自我)：正确为 自溅射
+自身溅射	self-sputtering	zh	deprecated	非标准：应为 自溅射
+# -- new concept: thermal-desorption
+thermal desorption	thermal-desorption	en	preferred
+热脱附	thermal-desorption	zh	preferred
+TDS	thermal-desorption	abbr	preferred
+thermal-desorption	thermal-desorption	en	alias	hyphenated form
+thermal desorption spectroscopy	thermal-desorption	en	alias	TDS full form
+热解吸	thermal-desorption	zh	forbidden	误译desorption(脱附≠解吸)：正确为 热脱附
+热释放	thermal-desorption	zh	forbidden	误译desorption(脱附≠释放)：正确为 热脱附
+热脱吸	thermal-desorption	zh	forbidden	误译desorption(脱附≠脱吸)：正确为 热脱附
+热解附	thermal-desorption	zh	deprecated	非标准：应为 热脱附
+# -- new concept: ion-implantation
+ion implantation	ion-implantation	en	preferred
+离子注入	ion-implantation	zh	preferred
+ion-implantation	ion-implantation	en	alias	hyphenated form
+离子植入	ion-implantation	zh	forbidden	误译implantation(注入≠植入)：正确为 离子注入
+离子嵌入	ion-implantation	zh	forbidden	误译implantation(注入≠嵌入)：正确为 离子注入
+离子打入	ion-implantation	zh	forbidden	非标准口语化：正确为 离子注入
+# -- new concept: surface-recombination
+surface recombination	surface-recombination	en	preferred
+表面复合	surface-recombination	zh	preferred
+surface-recombination	surface-recombination	en	alias	hyphenated form
+表面重组合	surface-recombination	zh	forbidden	误译recombination(复合≠重组合)：正确为 表面复合
+表面再结合	surface-recombination	zh	forbidden	误译recombination(复合≠再结合)：正确为 表面复合
+表面重组	surface-recombination	zh	forbidden	误译recombination(复合≠重组)：正确为 表面复合
+# -- existing concept anti-patterns: co-deposition
+共沉淀	co-deposition	zh	forbidden	误译(沉淀≠沉积,化学义)：正确为 共沉积
+协同沉积	co-deposition	zh	forbidden	误译co-(共≠协同)：正确为 共沉积
+同时沉积	co-deposition	zh	forbidden	误译co-(共≠同时)：正确为 共沉积
+# -- existing concept anti-patterns: prompt-redeposition
+瞬时再沉积	prompt-redeposition	zh	deprecated	非标准变体：应为 即时再沉积
+提示再沉积	prompt-redeposition	zh	forbidden	AI误译prompt(即时≠提示)：正确为 即时再沉积
+# -- existing concept anti-patterns: outgassing
+脱气	outgassing	zh	deprecated	非标准：应为 出气
+释气	outgassing	zh	alias	可接受变体
+# -- existing concept anti-patterns: desorption
+解吸附	desorption	zh	forbidden	误译(脱附≠解吸附)：正确为 脱附
+脱吸	desorption	zh	forbidden	误译(脱附≠脱吸)：正确为 脱附
+# -- existing concept anti-patterns: recrystallization
+重新结晶化	recrystallization	zh	forbidden	误译re-(再≠重新)+啰嗦：正确为 再结晶
+再晶化	recrystallization	zh	deprecated	非标准缩略：应为 再结晶
+# -- existing concept anti-patterns: sputtering-yield
+溅射系数	sputtering-yield	zh	deprecated	非标准：应为 溅射产额
+溅射收率	sputtering-yield	zh	forbidden	误译yield(产额≠收率)：正确为 溅射产额
+# -- existing concept anti-patterns: implantation-range
+植入射程	implantation-range	zh	forbidden	误译implantation(注入≠植入)：正确为 注入射程
+注入范围	implantation-range	zh	forbidden	误译range(射程≠范围)：正确为 注入射程
+# -- existing concept anti-patterns: tungsten-fuzz
+钨纳米结构	tungsten-fuzz	zh	deprecated	过于笼统：应为 钨绒毛
+钨丝状结构	tungsten-fuzz	zh	deprecated	非标准：应为 钨绒毛
+钨纳米绒毛	tungsten-fuzz	zh	alias	可接受细化变体
+# -- existing concept anti-patterns: helium-bubble
+氦气泡沫	helium-bubble	zh	forbidden	误译bubble(泡≠泡沫)：正确为 氦泡
+氦鼓泡	helium-bubble	zh	forbidden	与blistering混淆：正确为 氦泡
+# -- existing concept anti-patterns: surface-roughening
+表面变粗	surface-roughening	zh	forbidden	非标准口语化：正确为 表面粗糙化
+表面毛糙	surface-roughening	zh	deprecated	口语化：应为 表面粗糙化
+# -- existing concept anti-patterns: blistering
+表面鼓包	blistering	zh	deprecated	非标准：应为 起泡
+起泡现象	blistering	zh	deprecated	啰嗦：应为 起泡
+# -- existing concept anti-patterns: erosion
+磨蚀	erosion	zh	deprecated	非标准(abrasion义)：应为 侵蚀
+蚀刻	erosion	zh	forbidden	etching≠erosion：正确为 侵蚀
+# -- existing concept anti-patterns: chemical-sputtering
+化学飞溅	chemical-sputtering	zh	forbidden	误译sputtering(溅射≠飞溅)：正确为 化学溅射
+化学喷溅	chemical-sputtering	zh	forbidden	误译sputtering(溅射≠喷溅)：正确为 化学溅射
+化学喷射	chemical-sputtering	zh	forbidden	误译sputtering(溅射≠喷射)：正确为 化学溅射
+# -- existing concept anti-patterns: cascade-damage
+级联破坏	cascade-damage	zh	forbidden	误译damage(损伤≠破坏)：正确为 级联损伤
+串级损伤	cascade-damage	zh	forbidden	误译cascade(级联≠串级)：正确为 级联损伤
+# -- existing concept anti-patterns: power-exhaust
+功率耗散	power-exhaust	zh	forbidden	误译exhaust(排出≠耗散)：正确为 功率排出
+功率消耗	power-exhaust	zh	forbidden	误译exhaust(排出≠消耗)：正确为 功率排出
+排热	power-exhaust	zh	deprecated	过度缩略：应为 功率排出
+功率废气	power-exhaust	zh	forbidden	AI误译exhaust(排出≠废气)：正确为 功率排出
+# -- existing concept anti-patterns: nitrogen-seeding
+氮播种	nitrogen-seeding	zh	forbidden	误译seeding(注入≠播种)：正确为 氮注入
+氮种子	nitrogen-seeding	zh	forbidden	误译seeding(注入≠种子)：正确为 氮注入
+氮气注射	nitrogen-seeding	zh	forbidden	误译seeding(注入≠注射)+气多余：正确为 氮注入
+# -- existing concept anti-patterns: langmuir-probe
+兰缪尔探针	langmuir-probe	zh	deprecated	人名音译偏差：应为 朗缪尔探针
+郎缪尔探针	langmuir-probe	zh	deprecated	人名音译偏差：应为 朗缪尔探针
+# -- existing concept anti-patterns: attached-regime
+附着模式	attached-regime	zh	deprecated	非标准：应为 贴靠模式
+吸附模式	attached-regime	zh	forbidden	误译(adsorption≠attached)：正确为 贴靠模式
+粘附模式	attached-regime	zh	forbidden	误译attached(贴靠≠粘附)：正确为 贴靠模式
+# -- existing concept anti-patterns: recycling-coefficient
+循环系数	recycling-coefficient	zh	deprecated	缺再字：应为 再循环系数
+回收率	recycling-coefficient	zh	forbidden	误译recycling(再循环≠回收)：正确为 再循环系数
+# -- existing concept anti-patterns: melt-damage
+熔融损伤	melt-damage	zh	deprecated	非推荐：应为 熔化损伤
+融毁	melt-damage	zh	forbidden	非标准：正确为 熔化损伤
+熔损	melt-damage	zh	alias	可接受简称
+# -- existing concept anti-patterns: mixed-material
+混合材质	mixed-material	zh	deprecated	非标准(材质≠材料)：应为 混合材料
+# -- existing concept anti-patterns: wall-conditioning
+墙处理	wall-conditioning	zh	forbidden	AI误译wall(壁≠墙)：正确为 壁调理
+壁面调节	wall-conditioning	zh	deprecated	非标准：应为 壁调理
+# -- existing concept anti-patterns: plasma-facing-component
+血浆面部件	plasma-facing-component	zh	forbidden	AI误译plasma(等离子体≠血浆)：正确为 面向等离子体部件
+等离子面对部件	plasma-facing-component	zh	forbidden	误译facing语序错误+缺体字：正确为 面向等离子体部件
+# -- existing concept anti-patterns: plasma-facing-material
+血浆面材料	plasma-facing-material	zh	forbidden	AI误译plasma(等离子体≠血浆)：正确为 面向等离子体材料
+# -- existing concept anti-patterns: first-wall
+首墙	first-wall	zh	forbidden	AI误译first+wall(第一壁≠首墙)：正确为 第一壁
+第一墙	first-wall	zh	forbidden	AI误译wall(壁≠墙)：正确为 第一壁
+# -- existing concept anti-patterns: divertor-target
+偏滤器目标板	divertor-target	zh	forbidden	误译target(靶板≠目标板)：正确为 偏滤器靶板
+# -- existing concept anti-patterns: strike-point
+打击位置	strike-point	zh	deprecated	非标准：应为 打击点
+冲击点	strike-point	zh	deprecated	非标准：应为 打击点
+# -- existing concept anti-patterns: heat-flux
+热流量	heat-flux	zh	deprecated	非标准：应为 热流密度
+# -- existing concept anti-patterns: scrape-off-layer
+刮离层	scrape-off-layer	zh	forbidden	误译scrape-off(刮削≠刮离)：正确为 刮削层
+刮层	scrape-off-layer	zh	forbidden	过度缩略：正确为 刮削层
+# -- existing concept anti-patterns: plasma-detachment
+等离子体解除	plasma-detachment	zh	forbidden	误译detachment(脱靶≠解除)：正确为 等离子体脱靶
+血浆脱离	plasma-detachment	zh	forbidden	AI误译plasma(等离子体≠血浆)：正确为 等离子体脱靶

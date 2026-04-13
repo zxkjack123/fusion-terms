@@ -1563,3 +1563,9 @@ attached-regime	internal:registry-gap-review:divertor-expansion	Divertor regime 
 coating-degradation	internal:registry-gap-review:wall-conditioning-expansion	Gradual deterioration of boronization/lithization coatings under plasma exposure	copilot	2026-04-13
 re-erosion	internal:registry-gap-review:pwi-antipattern	Erosion of previously redeposited layers	copilot	2026-04-13
 ductile-brittle-transition-temperature	internal:registry-gap-review:materials-antipattern	Temperature marking onset of brittle fracture behavior	copilot	2026-04-13
+net-erosion	internal:registry-gap-review:pwi-antipattern-p2	Net material loss after redeposition compensation	copilot	2026-04-13
+gross-erosion	internal:registry-gap-review:pwi-antipattern-p2	Total erosion before redeposition compensation	copilot	2026-04-13
+self-sputtering	internal:registry-gap-review:pwi-antipattern-p2	Surface sputtering by its own redeposited species	copilot	2026-04-13
+thermal-desorption	internal:registry-gap-review:pwi-antipattern-p2	Thermally activated desorption of implanted hydrogen isotopes	copilot	2026-04-13
+ion-implantation	internal:registry-gap-review:pwi-antipattern-p2	Energetic ion embedding into PFC near-surface	copilot	2026-04-13
+surface-recombination	internal:registry-gap-review:pwi-antipattern-p2	Atomic hydrogen recombination at surface before desorption	copilot	2026-04-13
