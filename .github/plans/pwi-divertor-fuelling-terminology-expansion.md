@@ -352,7 +352,7 @@
 
 ### Phase 6: 标度律与约束模式
 
-#### Task 6.1: 补充标度律/约束相关 deprecated/forbidden aliases
+#### ✅ Task 6.1: 补充标度律/约束相关 deprecated/forbidden aliases
 
 - **目标**：为 greenwald-density、h-factor、confinement-scaling、tau-e 添加常见变体 aliases
 - **修改内容**：

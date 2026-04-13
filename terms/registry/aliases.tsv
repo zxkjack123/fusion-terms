@@ -7106,3 +7106,12 @@ ECRH加热	electron-cyclotron-resonance-heating	zh	forbidden	冗余(ECRH已含he
 中性束注入加热	neutral-beam-injection	zh	deprecated	冗余(注入已隐含加热)：应为 中性粒子束注入
 波加热	radio-frequency-heating	zh	deprecated	笼统化：应为 射频加热
 靴带电流	bootstrap-current	zh	forbidden	误译bootstrap(靴带→自举)：正确为 自举电流
+# ==== Scaling & confinement: variant alias coverage ====
+Greenwald极限	greenwald-density	zh	deprecated	混淆density与limit：应为 格林沃尔德密度
+Greenwald限制	greenwald-density	zh	deprecated	混淆density与limit：应为 格林沃尔德密度
+约束增强因子	h-factor	zh	alias	confinement enhancement factor 对应 zh
+约束改善因子	h-factor	zh	deprecated	非标准(改善→增强)：应为 H因子/约束增强因子
+增强因子	h-factor	zh	deprecated	缺修饰(约束)：应为 H因子/约束增强因子
+定标律	confinement-scaling	zh	deprecated	非标准：应为 标度律/约束标度律
+标度率	confinement-scaling	zh	forbidden	误译law(律≠率)：正确为 标度律
+约束时间	tau-e	zh	deprecated	歧义(缺'能量')：应为 能量约束时间
