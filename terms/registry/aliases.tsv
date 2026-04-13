@@ -7149,3 +7149,10 @@ Greenwald限制	greenwald-density	zh	deprecated	混淆density与limit：应为 �
 空隙肿胀	void-swelling	zh	forbidden	误译void(空洞≠空隙)：正确为 辐照肿胀
 辐照脆性	irradiation-embrittlement	zh	forbidden	误译embrittlement(脆化≠脆性)：正确为 辐照脆化
 气泡化	blistering	zh	forbidden	误译blistering：正确为 起泡
+# ==== Batch 75: AI mistranslation anti-pattern expansion — tritium process ====
+穿透	permeation	zh	forbidden	误译permeation(渗透≠穿透)：正确为 渗透
+氚清单	tritium-inventory	zh	forbidden	inventory(清单义)误用：正确为 氚存量
+水脱氚系统	water-detritiation-system	zh	deprecated	非标准变体：应为 水除氚系统
+水去氚化系统	water-detritiation-system	zh	forbidden	非标准：正确为 水除氚系统
+氚阻挡涂层	tritium-permeation-barrier	zh	deprecated	不精确(涂层⊂阻挡层)：应为 氚渗透阻挡层
+氚阻隔层	tritium-permeation-barrier	zh	forbidden	非标准：正确为 氚渗透阻挡层

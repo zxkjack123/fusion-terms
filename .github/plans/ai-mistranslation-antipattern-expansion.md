@@ -155,7 +155,7 @@
 
 ### Phase 5: 氚工艺/燃料循环 — 反模式补充
 
-#### Task 5.1: permeation / tritium-inventory / water-detritiation-system / tritium-permeation-barrier 反模式
+#### ✅ Task 5.1: permeation / tritium-inventory / water-detritiation-system / tritium-permeation-barrier 反模式
 - **目标**：为 4 个氚工艺概念补充 forbidden/deprecated 中文别名
 - **修改内容**：
   - 文件 `terms/registry/aliases.tsv`：追加
