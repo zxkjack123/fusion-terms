@@ -3071,8 +3071,8 @@ fuel recycling	fuel-recycling	en	preferred
 燃料再循环	fuel-recycling	zh	preferred
 particle recycling	fuel-recycling	en	alias
 wall pumping	wall-pumping	en	preferred
-壁抽气效应	wall-pumping	zh	preferred
-壁抽气	wall-pumping	zh	alias
+壁抽气	wall-pumping	zh	preferred	preferred zh
+壁抽气效应	wall-pumping	zh	alias	含效应的变体
 deposition	deposition	en	preferred
 沉积	deposition	zh	preferred
 graphite	graphite	en	preferred
@@ -3979,7 +3979,7 @@ N平行	n-parallel	zh	forbidden	误译：正确为 平行折射率
 轨道丢失	orbit-loss	zh	forbidden	误译loss：正确为 轨道损失
 快速损失	prompt-loss	zh	forbidden	误译prompt：正确为 瞬时损失
 能量粒子	energetic-particle	zh	forbidden	误译energetic：正确为 高能粒子
-壁泵送	wall-pumping	zh	forbidden	误译pumping：正确为 壁抽气效应
+壁泵送	wall-pumping	zh	forbidden	误译pumping：正确为 壁抽气
 放气	outgassing	zh	deprecated	非标准：应为 出气
 基础气压	base-pressure	zh	forbidden	误译base：正确为 本底气压
 基底压力	base-pressure	zh	forbidden	误译base+pressure：正确为 本底气压
@@ -7036,3 +7036,6 @@ penning-gauge	penning-gauge	en	alias	hyphenated form
 cold cathode gauge	penning-gauge	en	alias	type-specific
 Penning vacuum gauge	penning-gauge	en	alias	expanded form
 潘宁规	penning-gauge	zh	alias	short zh
+# ==== PWI expansion: wall-pumping forbidden variants ====
+壁面泵浦	wall-pumping	zh	forbidden	误译pumping(光学义泵浦)：正确为 壁抽气
+壁泵浦	wall-pumping	zh	forbidden	误译pumping(光学义泵浦)：正确为 壁抽气

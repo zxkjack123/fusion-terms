@@ -971,7 +971,7 @@ co-deposition	concept	共沉积	co-deposition		active	Simultaneous deposition of
 impurity-source	concept	杂质源	impurity source		active	Impurity production yield and spatial distribution at the wall
 impurity-influx	metric	杂质流入	impurity influx		active	Impurity flux entering plasma from wall surfaces
 fuel-recycling	concept	燃料再循环	fuel recycling		active	Hydrogen isotope adsorption-release cycle at the wall
-wall-pumping	concept	壁抽气效应	wall pumping		active	Wall hydrogen absorption causing plasma density decrease
+wall-pumping	concept	壁抽气	wall pumping		active	Wall hydrogen absorption causing plasma density decrease
 deposition	concept	沉积	deposition		active	Material deposition process on wall surfaces
 graphite	material	石墨	graphite		active	Legacy carbon-based PFC material
 surface-roughening	concept	表面粗糙化	surface roughening		active	Wall surface morphology roughening from plasma exposure
