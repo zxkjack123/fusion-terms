@@ -180,7 +180,7 @@
 
 ### Phase 6: 工程系统 — 屏蔽/剂量率反模式 + PSI 反模式
 
-#### Task 6.1: neutron-shielding / biological-shielding / contact-dose-rate / plasma-surface-interaction 反模式
+#### ✅ Task 6.1: neutron-shielding / biological-shielding / contact-dose-rate / plasma-surface-interaction 反模式
 - **目标**：为 4 个工程/PWI 概念补充 forbidden/deprecated 中文别名
 - **修改内容**：
   - 文件 `terms/registry/aliases.tsv`：追加

@@ -7156,3 +7156,11 @@ Greenwald限制	greenwald-density	zh	deprecated	混淆density与limit：应为 �
 水去氚化系统	water-detritiation-system	zh	forbidden	非标准：正确为 水除氚系统
 氚阻挡涂层	tritium-permeation-barrier	zh	deprecated	不精确(涂层⊂阻挡层)：应为 氚渗透阻挡层
 氚阻隔层	tritium-permeation-barrier	zh	forbidden	非标准：正确为 氚渗透阻挡层
+# ==== Batch 75: AI mistranslation anti-pattern expansion — engineering & PSI ====
+中子防护	neutron-shielding	zh	forbidden	误译shielding(屏蔽≠防护)：正确为 中子屏蔽
+中子遮挡	neutron-shielding	zh	forbidden	误译shielding(屏蔽≠遮挡)：正确为 中子屏蔽
+生物防护	biological-shielding	zh	forbidden	误译shielding(屏蔽≠防护)：正确为 生物屏蔽体
+表面剂量率	contact-dose-rate	zh	deprecated	非标准：应为 接触剂量率
+等离子体壁面交互	plasma-surface-interaction	zh	forbidden	误译interaction(相互作用≠交互)：正确为 等离子体表面相互作用
+等离子壁互动	plasma-surface-interaction	zh	forbidden	误译interaction+缺'体'字：正确为 等离子体表面相互作用
+血浆壁相互作用	plasma-surface-interaction	zh	forbidden	AI误译plasma(等离子体≠血浆)：正确为 等离子体表面相互作用
