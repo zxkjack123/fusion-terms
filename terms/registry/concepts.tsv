@@ -1657,3 +1657,6 @@ ion-gauge	device	电离真空计	ion gauge		active	利用气体电离原理测�
 penning-gauge	device	潘宁真空计	Penning gauge		active	利用冷阴极放电原理测量真空度的离子真空计 (无灯丝)
 # ---- PWI: chemical sputtering (化学溅射)
 chemical-sputtering	concept	化学溅射	chemical sputtering		active	Chemical ejection of surface atoms via reactive hydrogen species
+sputtering-yield	metric	溅射产额	sputtering yield		active	Number of surface atoms ejected per incident ion (dimensionless)
+desorption	concept	脱附	desorption		active	Release of adsorbed species from a surface
+implantation-range	metric	注入射程	implantation range		active	Mean penetration depth of implanted ions into a material

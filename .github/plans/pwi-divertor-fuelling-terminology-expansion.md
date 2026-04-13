@@ -103,7 +103,7 @@
   - ✅ evidence.tsv 包含 `chemical-sputtering` 行
 - **潜在风险**：将"chemical sputtering"从 sputtering concept 移走后，sputtering concept 丢失一个 alias——但 sputtering 本身仍有"sputtering" preferred alias，不受影响
 
-#### Task 1.3: 新增 sputtering-yield、desorption、implantation-range 概念
+#### ✅ Task 1.3: 新增 sputtering-yield、desorption、implantation-range 概念
 
 - **目标**：添加 3 个 PWI 新概念及其 preferred/forbidden aliases
 - **修改内容**：

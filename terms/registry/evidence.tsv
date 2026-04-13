@@ -1554,3 +1554,6 @@ non-evaporable-getter	internal:registry-gap-review:batch9	Solid getter material 
 ion-gauge	internal:registry-gap-review:batch9	Vacuum gauge measuring medium-to-high vacuum by gas ionization principle	copilot	2026-04-04
 penning-gauge	internal:registry-gap-review:batch9	Cold cathode discharge vacuum gauge without filament (Penning principle)	copilot	2026-04-04
 chemical-sputtering	internal:registry-gap-review:pwi-expansion	Chemical sputtering of surface atoms by reactive hydrogen species	copilot	2026-04-13
+sputtering-yield	internal:registry-gap-review:pwi-expansion	Dimensionless yield of ejected atoms per incident ion	copilot	2026-04-13
+desorption	internal:registry-gap-review:pwi-expansion	Release of adsorbed atoms/molecules from a surface	copilot	2026-04-13
+implantation-range	internal:registry-gap-review:pwi-expansion	Mean penetration depth of implanted ions	copilot	2026-04-13

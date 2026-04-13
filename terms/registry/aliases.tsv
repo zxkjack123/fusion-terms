@@ -7042,3 +7042,18 @@ Penning vacuum gauge	penning-gauge	en	alias	expanded form
 # ==== PWI expansion: chemical-sputtering ====
 chemical-sputtering	chemical-sputtering	en	alias	IME token-only form
 化学刻蚀	chemical-erosion	zh	alias	chemical erosion 的刻蚀译法
+# ==== PWI expansion: sputtering-yield, desorption, implantation-range ====
+sputtering yield	sputtering-yield	en	preferred	preferred en (phrase)
+sputtering-yield	sputtering-yield	en	alias	IME token-only form
+溅射产额	sputtering-yield	zh	preferred	preferred zh
+溅射率	sputtering-yield	zh	forbidden	率暗示时间量纲：正确为 溅射产额
+物理溅射率	physical-sputtering	zh	forbidden	率暗示时间量纲：正确为 物理溅射(产额)
+desorption	desorption	en	preferred	preferred en
+脱附	desorption	zh	preferred	preferred zh
+解吸	desorption	zh	deprecated	非标准：应为 脱附
+implantation range	implantation-range	en	preferred	preferred en (phrase)
+implantation-range	implantation-range	en	alias	IME token-only form
+注入射程	implantation-range	zh	preferred	preferred zh
+注入深度	implantation-range	zh	forbidden	误译range(射程≠深度)：正确为 注入射程
+共堆积	co-deposition	zh	alias	co-deposition 变体
+扣留	fuel-retention	zh	forbidden	误译retention：正确为 滞留
