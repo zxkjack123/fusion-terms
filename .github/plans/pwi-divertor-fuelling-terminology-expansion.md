@@ -326,7 +326,7 @@
 
 ### Phase 5: 加热与电流驱动
 
-#### Task 5.1: 补充加热/电流驱动领域 forbidden/deprecated aliases
+#### ✅ Task 5.1: 补充加热/电流驱动领域 forbidden/deprecated aliases
 
 - **目标**：为 ECRH、NBI、RF heating、bootstrap current 添加常见错误变体 aliases
 - **修改内容**：

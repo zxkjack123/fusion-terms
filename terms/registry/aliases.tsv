@@ -7101,3 +7101,8 @@ coating degradation	coating-degradation	en	preferred	preferred en (phrase)
 coating-degradation	coating-degradation	en	alias	IME token-only form
 涂层退化	coating-degradation	zh	preferred	preferred zh
 涂层侵蚀	coating-degradation	zh	deprecated	非标准：应为 涂层退化
+# ==== Heating & current drive: forbidden/deprecated variant coverage ====
+ECRH加热	electron-cyclotron-resonance-heating	zh	forbidden	冗余(ECRH已含heating)：正确为 电子回旋共振加热 或 ECRH
+中性束注入加热	neutral-beam-injection	zh	deprecated	冗余(注入已隐含加热)：应为 中性粒子束注入
+波加热	radio-frequency-heating	zh	deprecated	笼统化：应为 射频加热
+靴带电流	bootstrap-current	zh	forbidden	误译bootstrap(靴带→自举)：正确为 自举电流
