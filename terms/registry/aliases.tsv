@@ -395,7 +395,7 @@ divertor	divertor	en	preferred	preferred en
 溅射	sputtering	zh	preferred	preferred zh
 sputtering	sputtering	en	preferred	preferred en
 物理溅射	sputtering	zh	alias	physical sputtering zh
-chemical sputtering	sputtering	en	alias	chemical sputtering variant
+chemical sputtering	chemical-sputtering	en	preferred	preferred en (phrase)
 
 侵蚀	erosion	zh	preferred	preferred zh
 erosion	erosion	en	preferred	preferred en
@@ -4475,7 +4475,7 @@ Alfvén连续体	alfven-continuum	zh	alias	variant
 包层系统	blanket	zh	alias	system form
 表面起泡	blistering	zh	alias	surface context
 玻姆扩散系数	bohm-diffusion	zh	alias	coefficient form
-化学溅射	chemical-erosion	zh	alias	sputtering form
+化学溅射	chemical-sputtering	zh	preferred	preferred zh
 解控	clearance	zh	alias	short form
 碰撞阻尼效应	collisional-damping	zh	alias	full form
 建造计划	construction-schedule	zh	alias	variant
@@ -7039,3 +7039,6 @@ Penning vacuum gauge	penning-gauge	en	alias	expanded form
 # ==== PWI expansion: wall-pumping forbidden variants ====
 壁面泵浦	wall-pumping	zh	forbidden	误译pumping(光学义泵浦)：正确为 壁抽气
 壁泵浦	wall-pumping	zh	forbidden	误译pumping(光学义泵浦)：正确为 壁抽气
+# ==== PWI expansion: chemical-sputtering ====
+chemical-sputtering	chemical-sputtering	en	alias	IME token-only form
+化学刻蚀	chemical-erosion	zh	alias	chemical erosion 的刻蚀译法

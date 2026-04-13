@@ -68,7 +68,7 @@
   - ✅ "壁泵送"行 comment 已更新为引用"壁抽气"
 - **潜在风险**：下游 `terminology_substitutions.tsv` 导出会将"壁泵送→壁抽气效应"变为"壁泵送→壁抽气"——属于正确行为
 
-#### Task 1.2: 新增 chemical-sputtering 概念 + 调整已有 alias 归属
+#### ✅ Task 1.2: 新增 chemical-sputtering 概念 + 调整已有 alias 归属
 
 - **目标**：创建 `chemical-sputtering` concept，将现有的"chemical sputtering"和"化学溅射" alias 从 sputtering / chemical-erosion 移至新 concept
 - **执行顺序注意**：先在 concepts.tsv 追加 concept 行，再修改 aliases.tsv 中的 alias 行（确保 alias 指向的 concept_id 已存在）
