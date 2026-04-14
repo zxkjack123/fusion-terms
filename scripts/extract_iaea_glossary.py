@@ -121,27 +121,40 @@ def parse_glossary(raw_text: str) -> list[dict[str, str]]:
     entries: list[dict[str, str]] = []
     current_term: str | None = None
     current_def_lines: list[str] = []
+    prev_blank = True  # treat start as blank
 
     for line in lines:
         # Skip page header/footer boilerplate
         if "superseded" in line.lower():
+            prev_blank = True
             continue
         if re.match(r"^\s*\d+\s*$", line.strip()):
+            prev_blank = True
             continue
 
-        if _is_term_line(line):
+        stripped = line.strip()
+        if not stripped:
+            prev_blank = True
+            continue
+
+        # Single-letter section headers (A, B, C, ...) act as separators
+        if re.match(r"^[A-Z]$", stripped):
+            prev_blank = True
+            continue
+
+        if prev_blank and _is_term_line(line):
             # Save previous entry
             if current_term:
                 defn = _clean_definition(current_def_lines)
                 entries.append({"term": current_term, "definition": defn})
 
-            current_term = line.strip()
+            current_term = stripped
             current_def_lines = []
         elif current_term is not None:
             # Accumulate definition lines
-            stripped = line.strip()
-            if stripped:
-                current_def_lines.append(stripped)
+            current_def_lines.append(stripped)
+
+        prev_blank = False
 
     # Save last entry
     if current_term:

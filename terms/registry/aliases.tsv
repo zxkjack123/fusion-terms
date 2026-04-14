@@ -7853,3 +7853,796 @@ Upper Ports	upper-ports	en	preferred	imported from ITER-glossary
 Vacuum Pumps	vacuum-pumps	en	preferred	imported from ITER-glossary
 Wall load	wall-load	en	preferred	imported from ITER-glossary
 WEST	west	en	preferred	imported from ITER-glossary
+
+# ---- Imported from IAEA-safety-glossary (2026-04-14) ----
+A1	a1	en	preferred	imported from IAEA-safety-glossary
+A2	a2	en	preferred	imported from IAEA-safety-glossary
+abnormal operation	abnormal-operation	en	preferred	imported from IAEA-safety-glossary
+absorbed fraction	absorbed-fraction	en	preferred	imported from IAEA-safety-glossary
+absorption	absorption	en	preferred	imported from IAEA-safety-glossary
+absorption type, lung	absorption-type-lung	en	preferred	imported from IAEA-safety-glossary
+accelerogram	accelerogram	en	preferred	imported from IAEA-safety-glossary
+acceptable limit	acceptable-limit	en	preferred	imported from IAEA-safety-glossary
+acceptance criteria	acceptance-criteria	en	preferred	imported from IAEA-safety-glossary
+accident	accident	en	preferred	imported from IAEA-safety-glossary
+accident conditions	accident-conditions	en	preferred	imported from IAEA-safety-glossary
+accident management	accident-management	en	preferred	imported from IAEA-safety-glossary
+accident precursor	accident-precursor	en	preferred	imported from IAEA-safety-glossary
+accuracy	accuracy	en	preferred	imported from IAEA-safety-glossary
+active component	active-component	en	preferred	imported from IAEA-safety-glossary
+activity	activity	en	preferred	imported from IAEA-safety-glossary
+activity concentration	activity-concentration	en	preferred	imported from IAEA-safety-glossary
+activity median aerodynamic diameter (AMAD)	activity-median-aerodynamic-diameter	en	preferred	imported from IAEA-safety-glossary
+activity median thermodynamic diameter (AMTD)	activity-median-thermodynamic-diameter	en	preferred	imported from IAEA-safety-glossary
+actuated equipment	actuated-equipment	en	preferred	imported from IAEA-safety-glossary
+actuation device	actuation-device	en	preferred	imported from IAEA-safety-glossary
+acute exposure	acute-exposure	en	preferred	imported from IAEA-safety-glossary
+acute intake	acute-intake	en	preferred	imported from IAEA-safety-glossary
+additive risk projection model	additive-risk-projection-model	en	preferred	imported from IAEA-safety-glossary
+adsorption	adsorption	en	preferred	imported from IAEA-safety-glossary
+advection	advection	en	preferred	imported from IAEA-safety-glossary
+aerodynamic diameter	aerodynamic-diameter	en	preferred	imported from IAEA-safety-glossary
+aerodynamic dispersion	aerodynamic-dispersion	en	preferred	imported from IAEA-safety-glossary
+ageing	ageing	en	preferred	imported from IAEA-safety-glossary
+ageing degradation	ageing-degradation	en	preferred	imported from IAEA-safety-glossary
+agricultural countermeasure	agricultural-countermeasure	en	preferred	imported from IAEA-safety-glossary
+air kerma	air-kerma	en	preferred	imported from IAEA-safety-glossary
+aircraft	aircraft	en	preferred	imported from IAEA-safety-glossary
+aleatory uncertainty	aleatory-uncertainty	en	preferred	imported from IAEA-safety-glossary
+alert	alert	en	preferred	imported from IAEA-safety-glossary
+annual dose	annual-dose	en	preferred	imported from IAEA-safety-glossary
+annual limit on exposure (ALE)	annual-limit-on-exposure	en	preferred	imported from IAEA-safety-glossary
+annual limit on intake (ALI)	annual-limit-on-intake	en	preferred	imported from IAEA-safety-glossary
+annual risk	annual-risk	en	preferred	imported from IAEA-safety-glossary
+anticipated operational occurrence	anticipated-operational-occurrence	en	preferred	imported from IAEA-safety-glossary
+anticipated transient without scram (ATWS)	anticipated-transient-without-scram	en	preferred	imported from IAEA-safety-glossary
+applicant	applicant	en	preferred	imported from IAEA-safety-glossary
+approval	approval	en	preferred	imported from IAEA-safety-glossary
+area	area	en	preferred	imported from IAEA-safety-glossary
+area monitoring	area-monitoring	en	preferred	imported from IAEA-safety-glossary
+area survey	area-survey	en	preferred	imported from IAEA-safety-glossary
+arrangements (for emergency response)	arrangements	en	preferred	imported from IAEA-safety-glossary
+assessment	assessment	en	preferred	imported from IAEA-safety-glossary
+assisted operation	assisted-operation	en	preferred	imported from IAEA-safety-glossary
+attenuation	attenuation	en	preferred	imported from IAEA-safety-glossary
+attributable risk	attributable-risk	en	preferred	imported from IAEA-safety-glossary
+audit	audit	en	preferred	imported from IAEA-safety-glossary
+authorization	authorization	en	preferred	imported from IAEA-safety-glossary
+authorized activity	authorized-activity	en	preferred	imported from IAEA-safety-glossary
+authorized discharge	authorized-discharge	en	preferred	imported from IAEA-safety-glossary
+authorized facility	authorized-facility	en	preferred	imported from IAEA-safety-glossary
+authorized limit	authorized-limit	en	preferred	imported from IAEA-safety-glossary
+authorized party	authorized-party	en	preferred	imported from IAEA-safety-glossary
+authorized termination of responsibility	authorized-termination-of-responsibility	en	preferred	imported from IAEA-safety-glossary
+authorized transfer	authorized-transfer	en	preferred	imported from IAEA-safety-glossary
+authorized use	authorized-use	en	preferred	imported from IAEA-safety-glossary
+averted dose	averted-dose	en	preferred	imported from IAEA-safety-glossary
+backfill	backfill	en	preferred	imported from IAEA-safety-glossary
+background	background	en	preferred	imported from IAEA-safety-glossary
+barrier	barrier	en	preferred	imported from IAEA-safety-glossary
+Bayesian statistics	bayesian-statistics	en	preferred	imported from IAEA-safety-glossary
+becquerel (Bq)	becquerel	en	preferred	imported from IAEA-safety-glossary
+bias	bias	en	preferred	imported from IAEA-safety-glossary
+bioassay	bioassay	en	preferred	imported from IAEA-safety-glossary
+biological half-life	biological-half-life	en	preferred	imported from IAEA-safety-glossary
+biophysical model	biophysical-model	en	preferred	imported from IAEA-safety-glossary
+biosphere	biosphere	en	preferred	imported from IAEA-safety-glossary
+buffer	buffer	en	preferred	imported from IAEA-safety-glossary
+burnable absorber	burnable-absorber	en	preferred	imported from IAEA-safety-glossary
+bypass	bypass	en	preferred	imported from IAEA-safety-glossary
+calibration	calibration	en	preferred	imported from IAEA-safety-glossary
+calibration of a dosimeter	calibration-of-a-dosimeter	en	preferred	imported from IAEA-safety-glossary
+canister, waste	canister-waste	en	preferred	imported from IAEA-safety-glossary
+capable fault	capable-fault	en	preferred	imported from IAEA-safety-glossary
+capable volcanic field	capable-volcanic-field	en	preferred	imported from IAEA-safety-glossary
+capable volcano	capable-volcano	en	preferred	imported from IAEA-safety-glossary
+carers and comforters	carers-and-comforters	en	preferred	imported from IAEA-safety-glossary
+cargo aircraft	cargo-aircraft	en	preferred	imported from IAEA-safety-glossary
+carrier	carrier	en	preferred	imported from IAEA-safety-glossary
+cause	cause	en	preferred	imported from IAEA-safety-glossary
+certificate	certificate	en	preferred	imported from IAEA-safety-glossary
+certification	certification	en	preferred	imported from IAEA-safety-glossary
+channel	channel	en	preferred	imported from IAEA-safety-glossary
+characterization	characterization	en	preferred	imported from IAEA-safety-glossary
+characterization of waste	characterization-of-waste	en	preferred	imported from IAEA-safety-glossary
+chemisorption	chemisorption	en	preferred	imported from IAEA-safety-glossary
+child	child	en	preferred	imported from IAEA-safety-glossary
+chronic intake	chronic-intake	en	preferred	imported from IAEA-safety-glossary
+cladding	cladding	en	preferred	imported from IAEA-safety-glossary
+cleanup	cleanup	en	preferred	imported from IAEA-safety-glossary
+clearance rate	clearance-rate	en	preferred	imported from IAEA-safety-glossary
+closed nuclear fuel cycle	closed-nuclear-fuel-cycle	en	preferred	imported from IAEA-safety-glossary
+closure	closure	en	preferred	imported from IAEA-safety-glossary
+cloud shine	cloud-shine	en	preferred	imported from IAEA-safety-glossary
+coincidence (as a feature of design)	coincidence	en	preferred	imported from IAEA-safety-glossary
+common mode failure	common-mode-failure	en	preferred	imported from IAEA-safety-glossary
+competent authority	competent-authority	en	preferred	imported from IAEA-safety-glossary
+compliance assurance	compliance-assurance	en	preferred	imported from IAEA-safety-glossary
+component	component	en	preferred	imported from IAEA-safety-glossary
+computational model	computational-model	en	preferred	imported from IAEA-safety-glossary
+computer system validation	computer-system-validation	en	preferred	imported from IAEA-safety-glossary
+computer system verification	computer-system-verification	en	preferred	imported from IAEA-safety-glossary
+concept of operations	concept-of-operations	en	preferred	imported from IAEA-safety-glossary
+conceptual model	conceptual-model	en	preferred	imported from IAEA-safety-glossary
+condition based maintenance	condition-based-maintenance	en	preferred	imported from IAEA-safety-glossary
+condition indicator	condition-indicator	en	preferred	imported from IAEA-safety-glossary
+condition monitoring	condition-monitoring	en	preferred	imported from IAEA-safety-glossary
+conditional probability value (CPV)	conditional-probability-value	en	preferred	imported from IAEA-safety-glossary
+conditional risk	conditional-risk	en	preferred	imported from IAEA-safety-glossary
+conditioning	conditioning	en	preferred	imported from IAEA-safety-glossary
+consequence assessment	consequence-assessment	en	preferred	imported from IAEA-safety-glossary
+consignee	consignee	en	preferred	imported from IAEA-safety-glossary
+consignment	consignment	en	preferred	imported from IAEA-safety-glossary
+consignor	consignor	en	preferred	imported from IAEA-safety-glossary
+constraint	constraint	en	preferred	imported from IAEA-safety-glossary
+construction	construction	en	preferred	imported from IAEA-safety-glossary
+consumer product	consumer-product	en	preferred	imported from IAEA-safety-glossary
+container, waste	container-waste	en	preferred	imported from IAEA-safety-glossary
+containment system	containment-system	en	preferred	imported from IAEA-safety-glossary
+contamination	contamination	en	preferred	imported from IAEA-safety-glossary
+contamination zone	contamination-zone	en	preferred	imported from IAEA-safety-glossary
+control	control	en	preferred	imported from IAEA-safety-glossary
+controlled state	controlled-state	en	preferred	imported from IAEA-safety-glossary
+conveyance	conveyance	en	preferred	imported from IAEA-safety-glossary
+core components	core-components	en	preferred	imported from IAEA-safety-glossary
+corrective maintenance	corrective-maintenance	en	preferred	imported from IAEA-safety-glossary
+cost–benefit analysis	cost-benefit-analysis	en	preferred	imported from IAEA-safety-glossary
+countermeasure	countermeasure	en	preferred	imported from IAEA-safety-glossary
+critical (adjective)	critical	en	preferred	imported from IAEA-safety-glossary
+critical assembly	critical-assembly	en	preferred	imported from IAEA-safety-glossary
+critical level	critical-level	en	preferred	imported from IAEA-safety-glossary
+criticality	criticality	en	preferred	imported from IAEA-safety-glossary
+criticality accident	criticality-accident	en	preferred	imported from IAEA-safety-glossary
+criticality safety index (CSI)	criticality-safety-index	en	preferred	imported from IAEA-safety-glossary
+crust, Earth’s	crust-earth-s	en	preferred	imported from IAEA-safety-glossary
+dangerous source	dangerous-source	en	preferred	imported from IAEA-safety-glossary
+decay constant, λ	decay-constant	en	preferred	imported from IAEA-safety-glossary
+decision limit	decision-limit	en	preferred	imported from IAEA-safety-glossary
+decommissioning plan	decommissioning-plan	en	preferred	imported from IAEA-safety-glossary
+decorporation	decorporation	en	preferred	imported from IAEA-safety-glossary
+deep sea disposal	deep-sea-disposal	en	preferred	imported from IAEA-safety-glossary
+defence in depth	defence-in-depth	en	preferred	imported from IAEA-safety-glossary
+deferred dismantling	deferred-dismantling	en	preferred	imported from IAEA-safety-glossary
+defined deck area	defined-deck-area	en	preferred	imported from IAEA-safety-glossary
+dependability	dependability	en	preferred	imported from IAEA-safety-glossary
+depleted uranium	depleted-uranium	en	preferred	imported from IAEA-safety-glossary
+derived limit	derived-limit	en	preferred	imported from IAEA-safety-glossary
+design basis	design-basis	en	preferred	imported from IAEA-safety-glossary
+design basis external events	design-basis-external-events	en	preferred	imported from IAEA-safety-glossary
+design basis probability value (DBPV)	design-basis-probability-value	en	preferred	imported from IAEA-safety-glossary
+design extension conditions	design-extension-conditions	en	preferred	imported from IAEA-safety-glossary
+design life	design-life	en	preferred	imported from IAEA-safety-glossary
+detection limit	detection-limit	en	preferred	imported from IAEA-safety-glossary
+determination level	determination-level	en	preferred	imported from IAEA-safety-glossary
+deterministic analysis	deterministic-analysis	en	preferred	imported from IAEA-safety-glossary
+deterministic effect	deterministic-effect	en	preferred	imported from IAEA-safety-glossary
+detriment	detriment	en	preferred	imported from IAEA-safety-glossary
+deviation	deviation	en	preferred	imported from IAEA-safety-glossary
+diagnostic exposure	diagnostic-exposure	en	preferred	imported from IAEA-safety-glossary
+diagnostic reference level	diagnostic-reference-level	en	preferred	imported from IAEA-safety-glossary
+diffusion	diffusion	en	preferred	imported from IAEA-safety-glossary
+direct cause	direct-cause	en	preferred	imported from IAEA-safety-glossary
+direct disposal	direct-disposal	en	preferred	imported from IAEA-safety-glossary
+directional dose equivalent	directional-dose-equivalent	en	preferred	imported from IAEA-safety-glossary
+discharge	discharge	en	preferred	imported from IAEA-safety-glossary
+dismantling	dismantling	en	preferred	imported from IAEA-safety-glossary
+dispersal	dispersal	en	preferred	imported from IAEA-safety-glossary
+dispersion	dispersion	en	preferred	imported from IAEA-safety-glossary
+disposal	disposal	en	preferred	imported from IAEA-safety-glossary
+disposal facility	disposal-facility	en	preferred	imported from IAEA-safety-glossary
+disposal system	disposal-system	en	preferred	imported from IAEA-safety-glossary
+disposition	disposition	en	preferred	imported from IAEA-safety-glossary
+disused sealed source	disused-sealed-source	en	preferred	imported from IAEA-safety-glossary
+disused source	disused-source	en	preferred	imported from IAEA-safety-glossary
+diversity	diversity	en	preferred	imported from IAEA-safety-glossary
+dose	dose	en	preferred	imported from IAEA-safety-glossary
+dose and dose rate effectiveness factor (DDREF)	dose-and-dose-rate-effectiveness-factor	en	preferred	imported from IAEA-safety-glossary
+dose assessment	dose-assessment	en	preferred	imported from IAEA-safety-glossary
+dose coefficient	dose-coefficient	en	preferred	imported from IAEA-safety-glossary
+dose concepts	dose-concepts	en	preferred	imported from IAEA-safety-glossary
+dose conversion convention	dose-conversion-convention	en	preferred	imported from IAEA-safety-glossary
+dose equivalent	dose-equivalent	en	preferred	imported from IAEA-safety-glossary
+dose equivalent quantities (operational)	dose-equivalent-quantities	en	preferred	imported from IAEA-safety-glossary
+dose per unit intake	dose-per-unit-intake	en	preferred	imported from IAEA-safety-glossary
+dose quantities	dose-quantities	en	preferred	imported from IAEA-safety-glossary
+dose rate	dose-rate	en	preferred	imported from IAEA-safety-glossary
+double contingency principle	double-contingency-principle	en	preferred	imported from IAEA-safety-glossary
+drawdown	drawdown	en	preferred	imported from IAEA-safety-glossary
+driven equipment	driven-equipment	en	preferred	imported from IAEA-safety-glossary
+dry storage	dry-storage	en	preferred	imported from IAEA-safety-glossary
+early effect	early-effect	en	preferred	imported from IAEA-safety-glossary
+early protective actions	early-protective-actions	en	preferred	imported from IAEA-safety-glossary
+early release of radioactive material	early-release-of-radioactive-material	en	preferred	imported from IAEA-safety-glossary
+early response phase	early-response-phase	en	preferred	imported from IAEA-safety-glossary
+Earth’s crust	earth-s-crust	en	preferred	imported from IAEA-safety-glossary
+Earth’s mantle	earth-s-mantle	en	preferred	imported from IAEA-safety-glossary
+effective half-life	effective-half-life	en	preferred	imported from IAEA-safety-glossary
+effusive eruption	effusive-eruption	en	preferred	imported from IAEA-safety-glossary
+elimination, practical	elimination-practical	en	preferred	imported from IAEA-safety-glossary
+emergency	emergency	en	preferred	imported from IAEA-safety-glossary
+emergency action level (EAL)	emergency-action-level	en	preferred	imported from IAEA-safety-glossary
+emergency arrangements	emergency-arrangements	en	preferred	imported from IAEA-safety-glossary
+emergency class	emergency-class	en	preferred	imported from IAEA-safety-glossary
+emergency classification	emergency-classification	en	preferred	imported from IAEA-safety-glossary
+emergency exposure	emergency-exposure	en	preferred	imported from IAEA-safety-glossary
+emergency exposure situation	emergency-exposure-situation	en	preferred	imported from IAEA-safety-glossary
+emergency phase	emergency-phase	en	preferred	imported from IAEA-safety-glossary
+emergency plan	emergency-plan	en	preferred	imported from IAEA-safety-glossary
+emergency planning distance	emergency-planning-distance	en	preferred	imported from IAEA-safety-glossary
+emergency preparedness	emergency-preparedness	en	preferred	imported from IAEA-safety-glossary
+emergency preparedness category	emergency-preparedness-category	en	preferred	imported from IAEA-safety-glossary
+emergency procedures	emergency-procedures	en	preferred	imported from IAEA-safety-glossary
+emergency response	emergency-response	en	preferred	imported from IAEA-safety-glossary
+emergency response action	emergency-response-action	en	preferred	imported from IAEA-safety-glossary
+emergency response commander	emergency-response-commander	en	preferred	imported from IAEA-safety-glossary
+emergency response facility or location	emergency-response-facility-or-location	en	preferred	imported from IAEA-safety-glossary
+emergency response phase	emergency-response-phase	en	preferred	imported from IAEA-safety-glossary
+emergency services	emergency-services	en	preferred	imported from IAEA-safety-glossary
+emergency worker	emergency-worker	en	preferred	imported from IAEA-safety-glossary
+employer	employer	en	preferred	imported from IAEA-safety-glossary
+end point	end-point	en	preferred	imported from IAEA-safety-glossary
+end state	end-state	en	preferred	imported from IAEA-safety-glossary
+energy fluence	energy-fluence	en	preferred	imported from IAEA-safety-glossary
+enforcement	enforcement	en	preferred	imported from IAEA-safety-glossary
+enriched uranium	enriched-uranium	en	preferred	imported from IAEA-safety-glossary
+entombment	entombment	en	preferred	imported from IAEA-safety-glossary
+entrance surface dose	entrance-surface-dose	en	preferred	imported from IAEA-safety-glossary
+environment	environment	en	preferred	imported from IAEA-safety-glossary
+epicentre	epicentre	en	preferred	imported from IAEA-safety-glossary
+epistemic uncertainty	epistemic-uncertainty	en	preferred	imported from IAEA-safety-glossary
+equilibrium, radioactive	equilibrium-radioactive	en	preferred	imported from IAEA-safety-glossary
+equilibrium equivalent concentration (EEC)	equilibrium-equivalent-concentration	en	preferred	imported from IAEA-safety-glossary
+equilibrium factor	equilibrium-factor	en	preferred	imported from IAEA-safety-glossary
+equipment qualification	equipment-qualification	en	preferred	imported from IAEA-safety-glossary
+eruption, volcanic	eruption-volcanic	en	preferred	imported from IAEA-safety-glossary
+eruption cloud	eruption-cloud	en	preferred	imported from IAEA-safety-glossary
+essential services	essential-services	en	preferred	imported from IAEA-safety-glossary
+evacuation	evacuation	en	preferred	imported from IAEA-safety-glossary
+event	event	en	preferred	imported from IAEA-safety-glossary
+excepted package	excepted-package	en	preferred	imported from IAEA-safety-glossary
+exception	exception	en	preferred	imported from IAEA-safety-glossary
+excess risk	excess-risk	en	preferred	imported from IAEA-safety-glossary
+excluded exposure	excluded-exposure	en	preferred	imported from IAEA-safety-glossary
+exclusion	exclusion	en	preferred	imported from IAEA-safety-glossary
+exclusive use	exclusive-use	en	preferred	imported from IAEA-safety-glossary
+exempt waste	exempt-waste	en	preferred	imported from IAEA-safety-glossary
+exemption	exemption	en	preferred	imported from IAEA-safety-glossary
+exemption level	exemption-level	en	preferred	imported from IAEA-safety-glossary
+existing exposure situation	existing-exposure-situation	en	preferred	imported from IAEA-safety-glossary
+explosive eruption	explosive-eruption	en	preferred	imported from IAEA-safety-glossary
+exposure	exposure	en	preferred	imported from IAEA-safety-glossary
+exposure assessment	exposure-assessment	en	preferred	imported from IAEA-safety-glossary
+exposure categories	exposure-categories	en	preferred	imported from IAEA-safety-glossary
+exposure due to radon	exposure-due-to-radon	en	preferred	imported from IAEA-safety-glossary
+exposure pathway	exposure-pathway	en	preferred	imported from IAEA-safety-glossary
+exposure situations	exposure-situations	en	preferred	imported from IAEA-safety-glossary
+extended planning distance (EPD)	extended-planning-distance	en	preferred	imported from IAEA-safety-glossary
+external event	external-event	en	preferred	imported from IAEA-safety-glossary
+external exposure	external-exposure	en	preferred	imported from IAEA-safety-glossary
+external zone	external-zone	en	preferred	imported from IAEA-safety-glossary
+facilities and activities	facilities-and-activities	en	preferred	imported from IAEA-safety-glossary
+facility	facility	en	preferred	imported from IAEA-safety-glossary
+facility states (considered in design)	facility-states	en	preferred	imported from IAEA-safety-glossary
+facility emergency	facility-emergency	en	preferred	imported from IAEA-safety-glossary
+failure (technical)	failure	en	preferred	imported from IAEA-safety-glossary
+failure mode	failure-mode	en	preferred	imported from IAEA-safety-glossary
+far field	far-field	en	preferred	imported from IAEA-safety-glossary
+fault, geological	fault-geological	en	preferred	imported from IAEA-safety-glossary
+feed	feed	en	preferred	imported from IAEA-safety-glossary
+first responders	first-responders	en	preferred	imported from IAEA-safety-glossary
+fissile material	fissile-material	en	preferred	imported from IAEA-safety-glossary
+fissile nuclide	fissile-nuclide	en	preferred	imported from IAEA-safety-glossary
+fission fragment	fission-fragment	en	preferred	imported from IAEA-safety-glossary
+fission product	fission-product	en	preferred	imported from IAEA-safety-glossary
+fissionable material	fissionable-material	en	preferred	imported from IAEA-safety-glossary
+fissionable nuclide	fissionable-nuclide	en	preferred	imported from IAEA-safety-glossary
+fixed contamination	fixed-contamination	en	preferred	imported from IAEA-safety-glossary
+food	food	en	preferred	imported from IAEA-safety-glossary
+free field ground motion	free-field-ground-motion	en	preferred	imported from IAEA-safety-glossary
+freight container	freight-container	en	preferred	imported from IAEA-safety-glossary
+frequency of exceedance	frequency-of-exceedance	en	preferred	imported from IAEA-safety-glossary
+fresh fuel	fresh-fuel	en	preferred	imported from IAEA-safety-glossary
+fuel	fuel	en	preferred	imported from IAEA-safety-glossary
+fuel assembly	fuel-assembly	en	preferred	imported from IAEA-safety-glossary
+fuel element	fuel-element	en	preferred	imported from IAEA-safety-glossary
+fuel rod	fuel-rod	en	preferred	imported from IAEA-safety-glossary
+functional diversity	functional-diversity	en	preferred	imported from IAEA-safety-glossary
+functional indicator	functional-indicator	en	preferred	imported from IAEA-safety-glossary
+functional isolation	functional-isolation	en	preferred	imported from IAEA-safety-glossary
+fundamental safety function	fundamental-safety-function	en	preferred	imported from IAEA-safety-glossary
+gap release	gap-release	en	preferred	imported from IAEA-safety-glossary
+general emergency	general-emergency	en	preferred	imported from IAEA-safety-glossary
+generic criteria	generic-criteria	en	preferred	imported from IAEA-safety-glossary
+genetic effect	genetic-effect	en	preferred	imported from IAEA-safety-glossary
+geological disposal facility	geological-disposal-facility	en	preferred	imported from IAEA-safety-glossary
+geological fault	geological-fault	en	preferred	imported from IAEA-safety-glossary
+geological record	geological-record	en	preferred	imported from IAEA-safety-glossary
+geosphere	geosphere	en	preferred	imported from IAEA-safety-glossary
+graded approach	graded-approach	en	preferred	imported from IAEA-safety-glossary
+gray (Gy)	gray	en	preferred	imported from IAEA-safety-glossary
+ground shine	ground-shine	en	preferred	imported from IAEA-safety-glossary
+guidance level	guidance-level	en	preferred	imported from IAEA-safety-glossary
+guidance level for medical exposure	guidance-level-for-medical-exposure	en	preferred	imported from IAEA-safety-glossary
+gut transfer factor	gut-transfer-factor	en	preferred	imported from IAEA-safety-glossary
+habit survey	habit-survey	en	preferred	imported from IAEA-safety-glossary
+half-life, T½	half-life-t	en	preferred	imported from IAEA-safety-glossary
+hazard	hazard	en	preferred	imported from IAEA-safety-glossary
+hazard assessment	hazard-assessment	en	preferred	imported from IAEA-safety-glossary
+health authority	health-authority	en	preferred	imported from IAEA-safety-glossary
+health effects (of radiation)	health-effects	en	preferred	imported from IAEA-safety-glossary
+health professional	health-professional	en	preferred	imported from IAEA-safety-glossary
+health screening programme	health-screening-programme	en	preferred	imported from IAEA-safety-glossary
+health surveillance	health-surveillance	en	preferred	imported from IAEA-safety-glossary
+helper in an emergency	helper-in-an-emergency	en	preferred	imported from IAEA-safety-glossary
+hereditary effect	hereditary-effect	en	preferred	imported from IAEA-safety-glossary
+high energy radiation therapy equipment	high-energy-radiation-therapy-equipment	en	preferred	imported from IAEA-safety-glossary
+high enriched uranium (HEU)	high-enriched-uranium	en	preferred	imported from IAEA-safety-glossary
+high linear energy transfer (LET) radiation	high-linear-energy-transfer-radiation	en	preferred	imported from IAEA-safety-glossary
+Holocene	holocene	en	preferred	imported from IAEA-safety-glossary
+Holocene volcano	holocene-volcano	en	preferred	imported from IAEA-safety-glossary
+human factors engineering	human-factors-engineering	en	preferred	imported from IAEA-safety-glossary
+human intrusion	human-intrusion	en	preferred	imported from IAEA-safety-glossary
+hydrodynamic dispersion	hydrodynamic-dispersion	en	preferred	imported from IAEA-safety-glossary
+hypocentre	hypocentre	en	preferred	imported from IAEA-safety-glossary
+IAEA publication	iaea-publication	en	preferred	imported from IAEA-safety-glossary
+ICRU sphere	icru-sphere	en	preferred	imported from IAEA-safety-glossary
+igneous rock	igneous-rock	en	preferred	imported from IAEA-safety-glossary
+immediate dismantling	immediate-dismantling	en	preferred	imported from IAEA-safety-glossary
+immobilization	immobilization	en	preferred	imported from IAEA-safety-glossary
+incident	incident	en	preferred	imported from IAEA-safety-glossary
+independent assessment	independent-assessment	en	preferred	imported from IAEA-safety-glossary
+independent equipment	independent-equipment	en	preferred	imported from IAEA-safety-glossary
+indicator	indicator	en	preferred	imported from IAEA-safety-glossary
+individual dose	individual-dose	en	preferred	imported from IAEA-safety-glossary
+individual monitoring	individual-monitoring	en	preferred	imported from IAEA-safety-glossary
+industrial package	industrial-package	en	preferred	imported from IAEA-safety-glossary
+INES	ines	en	preferred	imported from IAEA-safety-glossary
+infant	infant	en	preferred	imported from IAEA-safety-glossary
+ingestion and commodities planning distance (ICPD)	ingestion-and-commodities-planning-distance	en	preferred	imported from IAEA-safety-glossary
+initiating event	initiating-event	en	preferred	imported from IAEA-safety-glossary
+initiator	initiator	en	preferred	imported from IAEA-safety-glossary
+inner cordoned off area	inner-cordoned-off-area	en	preferred	imported from IAEA-safety-glossary
+inspection	inspection	en	preferred	imported from IAEA-safety-glossary
+inspection imaging device	inspection-imaging-device	en	preferred	imported from IAEA-safety-glossary
+institutional control	institutional-control	en	preferred	imported from IAEA-safety-glossary
+intake	intake	en	preferred	imported from IAEA-safety-glossary
+integrated management system	integrated-management-system	en	preferred	imported from IAEA-safety-glossary
+interacting event	interacting-event	en	preferred	imported from IAEA-safety-glossary
+interested party	interested-party	en	preferred	imported from IAEA-safety-glossary
+intermediate bulk container (IBC)	intermediate-bulk-container	en	preferred	imported from IAEA-safety-glossary
+internal exposure	internal-exposure	en	preferred	imported from IAEA-safety-glossary
+International Nuclear and Radiological Event Scale (INES)	international-nuclear-and-radiological-event-scale	en	preferred	imported from IAEA-safety-glossary
+interplate tectonic processes	interplate-tectonic-processes	en	preferred	imported from IAEA-safety-glossary
+intervention	intervention	en	preferred	imported from IAEA-safety-glossary
+intraplate	intraplate	en	preferred	imported from IAEA-safety-glossary
+intrusion (human)	intrusion	en	preferred	imported from IAEA-safety-glossary
+intrusion barrier	intrusion-barrier	en	preferred	imported from IAEA-safety-glossary
+investigation level	investigation-level	en	preferred	imported from IAEA-safety-glossary
+iodine thyroid blocking	iodine-thyroid-blocking	en	preferred	imported from IAEA-safety-glossary
+ionizing radiation	ionizing-radiation	en	preferred	imported from IAEA-safety-glossary
+irradiation installation	irradiation-installation	en	preferred	imported from IAEA-safety-glossary
+isolation (of radioactive waste in a disposal facility)	isolation	en	preferred	imported from IAEA-safety-glossary
+item important to safety	item-important-to-safety	en	preferred	imported from IAEA-safety-glossary
+justification	justification	en	preferred	imported from IAEA-safety-glossary
+kerma, K	kerma-k	en	preferred	imported from IAEA-safety-glossary
+knowledge management	knowledge-management	en	preferred	imported from IAEA-safety-glossary
+large freight container	large-freight-container	en	preferred	imported from IAEA-safety-glossary
+large release of radioactive material	large-release-of-radioactive-material	en	preferred	imported from IAEA-safety-glossary
+late effect	late-effect	en	preferred	imported from IAEA-safety-glossary
+latent weakness	latent-weakness	en	preferred	imported from IAEA-safety-glossary
+lava	lava	en	preferred	imported from IAEA-safety-glossary
+level	level	en	preferred	imported from IAEA-safety-glossary
+licence	licence	en	preferred	imported from IAEA-safety-glossary
+licensee	licensee	en	preferred	imported from IAEA-safety-glossary
+licensing basis	licensing-basis	en	preferred	imported from IAEA-safety-glossary
+licensing process	licensing-process	en	preferred	imported from IAEA-safety-glossary
+life, lifetime	life-lifetime	en	preferred	imported from IAEA-safety-glossary
+life cycle management	life-cycle-management	en	preferred	imported from IAEA-safety-glossary
+life management	life-management	en	preferred	imported from IAEA-safety-glossary
+lifetime	lifetime	en	preferred	imported from IAEA-safety-glossary
+lifetime dose	lifetime-dose	en	preferred	imported from IAEA-safety-glossary
+lifetime management	lifetime-management	en	preferred	imported from IAEA-safety-glossary
+lifetime risk	lifetime-risk	en	preferred	imported from IAEA-safety-glossary
+limit	limit	en	preferred	imported from IAEA-safety-glossary
+linear–no threshold (LNT) hypothesis	linear-no-threshold-hypothesis	en	preferred	imported from IAEA-safety-glossary
+logic	logic	en	preferred	imported from IAEA-safety-glossary
+long lived waste	long-lived-waste	en	preferred	imported from IAEA-safety-glossary
+low dispersible radioactive material	low-dispersible-radioactive-material	en	preferred	imported from IAEA-safety-glossary
+low enriched uranium (LEU)	low-enriched-uranium	en	preferred	imported from IAEA-safety-glossary
+low linear energy transfer (LET) radiation	low-linear-energy-transfer-radiation	en	preferred	imported from IAEA-safety-glossary
+low specific activity (LSA) material	low-specific-activity-material	en	preferred	imported from IAEA-safety-glossary
+low toxicity alpha emitters	low-toxicity-alpha-emitters	en	preferred	imported from IAEA-safety-glossary
+lower limit of detection	lower-limit-of-detection	en	preferred	imported from IAEA-safety-glossary
+lung absorption type	lung-absorption-type	en	preferred	imported from IAEA-safety-glossary
+magma	magma	en	preferred	imported from IAEA-safety-glossary
+magma chamber	magma-chamber	en	preferred	imported from IAEA-safety-glossary
+main safety function	main-safety-function	en	preferred	imported from IAEA-safety-glossary
+magnitude (of an earthquake)	magnitude	en	preferred	imported from IAEA-safety-glossary
+maintenance bypass	maintenance-bypass	en	preferred	imported from IAEA-safety-glossary
+management (of sealed radioactive sources)	management	en	preferred	imported from IAEA-safety-glossary
+management self-assessment	management-self-assessment	en	preferred	imported from IAEA-safety-glossary
+management system	management-system	en	preferred	imported from IAEA-safety-glossary
+management system review	management-system-review	en	preferred	imported from IAEA-safety-glossary
+mantle, Earth’s	mantle-earth-s	en	preferred	imported from IAEA-safety-glossary
+material ageing	material-ageing	en	preferred	imported from IAEA-safety-glossary
+mathematical model	mathematical-model	en	preferred	imported from IAEA-safety-glossary
+maximum normal operating pressure	maximum-normal-operating-pressure	en	preferred	imported from IAEA-safety-glossary
+maximum potential magnitude	maximum-potential-magnitude	en	preferred	imported from IAEA-safety-glossary
+mechanistic model	mechanistic-model	en	preferred	imported from IAEA-safety-glossary
+medical exposure	medical-exposure	en	preferred	imported from IAEA-safety-glossary
+medical physicist	medical-physicist	en	preferred	imported from IAEA-safety-glossary
+medical radiation facility	medical-radiation-facility	en	preferred	imported from IAEA-safety-glossary
+medical radiation technologist	medical-radiation-technologist	en	preferred	imported from IAEA-safety-glossary
+medical radiological equipment	medical-radiological-equipment	en	preferred	imported from IAEA-safety-glossary
+member of the public	member-of-the-public	en	preferred	imported from IAEA-safety-glossary
+migration	migration	en	preferred	imported from IAEA-safety-glossary
+minimization (of waste)	minimization	en	preferred	imported from IAEA-safety-glossary
+minimum detectable activity (MDA)	minimum-detectable-activity	en	preferred	imported from IAEA-safety-glossary
+minimum significant activity (MSA)	minimum-significant-activity	en	preferred	imported from IAEA-safety-glossary
+mitigatory action	mitigatory-action	en	preferred	imported from IAEA-safety-glossary
+mixed waste	mixed-waste	en	preferred	imported from IAEA-safety-glossary
+model	model	en	preferred	imported from IAEA-safety-glossary
+model calibration	model-calibration	en	preferred	imported from IAEA-safety-glossary
+model validation	model-validation	en	preferred	imported from IAEA-safety-glossary
+model verification	model-verification	en	preferred	imported from IAEA-safety-glossary
+monitoring	monitoring	en	preferred	imported from IAEA-safety-glossary
+multilateral approval	multilateral-approval	en	preferred	imported from IAEA-safety-glossary
+multiple barriers	multiple-barriers	en	preferred	imported from IAEA-safety-glossary
+multiple safety functions	multiple-safety-functions	en	preferred	imported from IAEA-safety-glossary
+multiplexing	multiplexing	en	preferred	imported from IAEA-safety-glossary
+multiplicative risk projection model	multiplicative-risk-projection-model	en	preferred	imported from IAEA-safety-glossary
+natural analogue	natural-analogue	en	preferred	imported from IAEA-safety-glossary
+natural background	natural-background	en	preferred	imported from IAEA-safety-glossary
+natural source	natural-source	en	preferred	imported from IAEA-safety-glossary
+natural uranium	natural-uranium	en	preferred	imported from IAEA-safety-glossary
+naturally occurring radioactive material (NORM)	naturally-occurring-radioactive-material	en	preferred	imported from IAEA-safety-glossary
+naturally occurring radionuclides	naturally-occurring-radionuclides	en	preferred	imported from IAEA-safety-glossary
+near field	near-field	en	preferred	imported from IAEA-safety-glossary
+near miss	near-miss	en	preferred	imported from IAEA-safety-glossary
+near surface disposal facility	near-surface-disposal-facility	en	preferred	imported from IAEA-safety-glossary
+non-fixed contamination	non-fixed-contamination	en	preferred	imported from IAEA-safety-glossary
+non-physical ageing	non-physical-ageing	en	preferred	imported from IAEA-safety-glossary
+non-radiological consequences	non-radiological-consequences	en	preferred	imported from IAEA-safety-glossary
+NORM	norm	en	preferred	imported from IAEA-safety-glossary
+NORM residue	norm-residue	en	preferred	imported from IAEA-safety-glossary
+NORM waste	norm-waste	en	preferred	imported from IAEA-safety-glossary
+normal operation	normal-operation	en	preferred	imported from IAEA-safety-glossary
+notification	notification	en	preferred	imported from IAEA-safety-glossary
+notification point	notification-point	en	preferred	imported from IAEA-safety-glossary
+notifying State	notifying-state	en	preferred	imported from IAEA-safety-glossary
+nuclear	nuclear	en	preferred	imported from IAEA-safety-glossary
+nuclear accident	nuclear-accident	en	preferred	imported from IAEA-safety-glossary
+nuclear emergency	nuclear-emergency	en	preferred	imported from IAEA-safety-glossary
+nuclear facility	nuclear-facility	en	preferred	imported from IAEA-safety-glossary
+nuclear fuel	nuclear-fuel	en	preferred	imported from IAEA-safety-glossary
+nuclear fuel cycle	nuclear-fuel-cycle	en	preferred	imported from IAEA-safety-glossary
+nuclear fuel cycle facility	nuclear-fuel-cycle-facility	en	preferred	imported from IAEA-safety-glossary
+nuclear installation	nuclear-installation	en	preferred	imported from IAEA-safety-glossary
+nuclear material	nuclear-material	en	preferred	imported from IAEA-safety-glossary
+nuclear or radiological emergency	nuclear-or-radiological-emergency	en	preferred	imported from IAEA-safety-glossary
+nuclear security	nuclear-security	en	preferred	imported from IAEA-safety-glossary
+nuclear security event	nuclear-security-event	en	preferred	imported from IAEA-safety-glossary
+observed cause	observed-cause	en	preferred	imported from IAEA-safety-glossary
+occupancy factor	occupancy-factor	en	preferred	imported from IAEA-safety-glossary
+off-site (area)	off-site	en	preferred	imported from IAEA-safety-glossary
+on-site (area)	on-site	en	preferred	imported from IAEA-safety-glossary
+open nuclear fuel cycle	open-nuclear-fuel-cycle	en	preferred	imported from IAEA-safety-glossary
+operating conditions	operating-conditions	en	preferred	imported from IAEA-safety-glossary
+operating lifetime, operating life	operating-lifetime-operating-life	en	preferred	imported from IAEA-safety-glossary
+operating organization	operating-organization	en	preferred	imported from IAEA-safety-glossary
+operating period	operating-period	en	preferred	imported from IAEA-safety-glossary
+operating personnel	operating-personnel	en	preferred	imported from IAEA-safety-glossary
+operation	operation	en	preferred	imported from IAEA-safety-glossary
+operational bypass	operational-bypass	en	preferred	imported from IAEA-safety-glossary
+operational criteria	operational-criteria	en	preferred	imported from IAEA-safety-glossary
+operational intervention level (OIL)	operational-intervention-level	en	preferred	imported from IAEA-safety-glossary
+operational limits and conditions	operational-limits-and-conditions	en	preferred	imported from IAEA-safety-glossary
+operational period	operational-period	en	preferred	imported from IAEA-safety-glossary
+operational quantities	operational-quantities	en	preferred	imported from IAEA-safety-glossary
+operational states	operational-states	en	preferred	imported from IAEA-safety-glossary
+operations area	operations-area	en	preferred	imported from IAEA-safety-glossary
+operations boundary	operations-boundary	en	preferred	imported from IAEA-safety-glossary
+operator	operator	en	preferred	imported from IAEA-safety-glossary
+optimization (of protection and safety)	optimization	en	preferred	imported from IAEA-safety-glossary
+orphan source	orphan-source	en	preferred	imported from IAEA-safety-glossary
+other nuclear or radiological emergency	other-nuclear-or-radiological-emergency	en	preferred	imported from IAEA-safety-glossary
+other response actions	other-response-actions	en	preferred	imported from IAEA-safety-glossary
+overpack	overpack	en	preferred	imported from IAEA-safety-glossary
+package	package	en	preferred	imported from IAEA-safety-glossary
+package, waste	package-waste	en	preferred	imported from IAEA-safety-glossary
+packaging	packaging	en	preferred	imported from IAEA-safety-glossary
+palaeoseismicity	palaeoseismicity	en	preferred	imported from IAEA-safety-glossary
+passenger aircraft	passenger-aircraft	en	preferred	imported from IAEA-safety-glossary
+passive component	passive-component	en	preferred	imported from IAEA-safety-glossary
+pathway	pathway	en	preferred	imported from IAEA-safety-glossary
+patient	patient	en	preferred	imported from IAEA-safety-glossary
+peak ground acceleration	peak-ground-acceleration	en	preferred	imported from IAEA-safety-glossary
+peer review	peer-review	en	preferred	imported from IAEA-safety-glossary
+performance assessment	performance-assessment	en	preferred	imported from IAEA-safety-glossary
+performance indicator	performance-indicator	en	preferred	imported from IAEA-safety-glossary
+performance standard	performance-standard	en	preferred	imported from IAEA-safety-glossary
+periodic maintenance	periodic-maintenance	en	preferred	imported from IAEA-safety-glossary
+periodic safety review	periodic-safety-review	en	preferred	imported from IAEA-safety-glossary
+permanent relocation	permanent-relocation	en	preferred	imported from IAEA-safety-glossary
+permanent shutdown	permanent-shutdown	en	preferred	imported from IAEA-safety-glossary
+person or organization	person-or-organization	en	preferred	imported from IAEA-safety-glossary
+personal dose equivalent, Hp(d)	personal-dose-equivalent-hp	en	preferred	imported from IAEA-safety-glossary
+phreatic eruption	phreatic-eruption	en	preferred	imported from IAEA-safety-glossary
+phreatomagmatic eruption	phreatomagmatic-eruption	en	preferred	imported from IAEA-safety-glossary
+physical ageing	physical-ageing	en	preferred	imported from IAEA-safety-glossary
+physical diversity	physical-diversity	en	preferred	imported from IAEA-safety-glossary
+physical half-life	physical-half-life	en	preferred	imported from IAEA-safety-glossary
+physical model	physical-model	en	preferred	imported from IAEA-safety-glossary
+physical protection	physical-protection	en	preferred	imported from IAEA-safety-glossary
+physical separation	physical-separation	en	preferred	imported from IAEA-safety-glossary
+physisorption	physisorption	en	preferred	imported from IAEA-safety-glossary
+planned exposure situation	planned-exposure-situation	en	preferred	imported from IAEA-safety-glossary
+planning target volume	planning-target-volume	en	preferred	imported from IAEA-safety-glossary
+plant equipment (for a nuclear power plant)	plant-equipment	en	preferred	imported from IAEA-safety-glossary
+plant states (considered in design)	plant-states	en	preferred	imported from IAEA-safety-glossary
+plinian eruption	plinian-eruption	en	preferred	imported from IAEA-safety-glossary
+Pliocene	pliocene	en	preferred	imported from IAEA-safety-glossary
+poison	poison	en	preferred	imported from IAEA-safety-glossary
+potential alpha energy	potential-alpha-energy	en	preferred	imported from IAEA-safety-glossary
+potential exposure	potential-exposure	en	preferred	imported from IAEA-safety-glossary
+practical elimination	practical-elimination	en	preferred	imported from IAEA-safety-glossary
+practice	practice	en	preferred	imported from IAEA-safety-glossary
+precautionary action zone (PAZ)	precautionary-action-zone	en	preferred	imported from IAEA-safety-glossary
+precautionary urgent protective action	precautionary-urgent-protective-action	en	preferred	imported from IAEA-safety-glossary
+predictive maintenance	predictive-maintenance	en	preferred	imported from IAEA-safety-glossary
+predisposal management (of waste)	predisposal-management	en	preferred	imported from IAEA-safety-glossary
+preparedness stage	preparedness-stage	en	preferred	imported from IAEA-safety-glossary
+pretreatment (of waste)	pretreatment	en	preferred	imported from IAEA-safety-glossary
+preventive maintenance	preventive-maintenance	en	preferred	imported from IAEA-safety-glossary
+primary limit	primary-limit	en	preferred	imported from IAEA-safety-glossary
+prime mover	prime-mover	en	preferred	imported from IAEA-safety-glossary
+probabilistic analysis	probabilistic-analysis	en	preferred	imported from IAEA-safety-glossary
+procedure	procedure	en	preferred	imported from IAEA-safety-glossary
+processing (of waste)	processing	en	preferred	imported from IAEA-safety-glossary
+projected dose	projected-dose	en	preferred	imported from IAEA-safety-glossary
+protection and safety	protection-and-safety	en	preferred	imported from IAEA-safety-glossary
+protection of the environment	protection-of-the-environment	en	preferred	imported from IAEA-safety-glossary
+protection quantities	protection-quantities	en	preferred	imported from IAEA-safety-glossary
+protection system	protection-system	en	preferred	imported from IAEA-safety-glossary
+protective action	protective-action	en	preferred	imported from IAEA-safety-glossary
+protective task	protective-task	en	preferred	imported from IAEA-safety-glossary
+publication, IAEA	publication-iaea	en	preferred	imported from IAEA-safety-glossary
+qualification	qualification	en	preferred	imported from IAEA-safety-glossary
+qualified equipment	qualified-equipment	en	preferred	imported from IAEA-safety-glossary
+qualified expert	qualified-expert	en	preferred	imported from IAEA-safety-glossary
+qualified life	qualified-life	en	preferred	imported from IAEA-safety-glossary
+quality assurance	quality-assurance	en	preferred	imported from IAEA-safety-glossary
+quality control (QC)	quality-control	en	preferred	imported from IAEA-safety-glossary
+quality factor, Q	quality-factor-q	en	preferred	imported from IAEA-safety-glossary
+radiation detriment	radiation-detriment	en	preferred	imported from IAEA-safety-glossary
+radiation emergency	radiation-emergency	en	preferred	imported from IAEA-safety-glossary
+radiation generator	radiation-generator	en	preferred	imported from IAEA-safety-glossary
+radiation protection officer	radiation-protection-officer	en	preferred	imported from IAEA-safety-glossary
+radiation protection programme	radiation-protection-programme	en	preferred	imported from IAEA-safety-glossary
+radiation risks	radiation-risks	en	preferred	imported from IAEA-safety-glossary
+radiation safety	radiation-safety	en	preferred	imported from IAEA-safety-glossary
+radiation source	radiation-source	en	preferred	imported from IAEA-safety-glossary
+radiation weighting factor, wR	radiation-weighting-factor-wr	en	preferred	imported from IAEA-safety-glossary
+radioactive	radioactive	en	preferred	imported from IAEA-safety-glossary
+radioactive contents	radioactive-contents	en	preferred	imported from IAEA-safety-glossary
+radioactive discharges	radioactive-discharges	en	preferred	imported from IAEA-safety-glossary
+radioactive equilibrium	radioactive-equilibrium	en	preferred	imported from IAEA-safety-glossary
+radioactive half-life	radioactive-half-life	en	preferred	imported from IAEA-safety-glossary
+radioactive material	radioactive-material	en	preferred	imported from IAEA-safety-glossary
+radioactive source	radioactive-source	en	preferred	imported from IAEA-safety-glossary
+radioactive sources, safety of	radioactive-sources-safety-of	en	preferred	imported from IAEA-safety-glossary
+radioactive substance	radioactive-substance	en	preferred	imported from IAEA-safety-glossary
+radioactive waste management	radioactive-waste-management	en	preferred	imported from IAEA-safety-glossary
+Collection      Chemical                  Volume       Change of               Packaging	collection-chemical-volume-change-of-packaging	en	preferred	imported from IAEA-safety-glossary
+radioactive waste management facility	radioactive-waste-management-facility	en	preferred	imported from IAEA-safety-glossary
+radioactivity	radioactivity	en	preferred	imported from IAEA-safety-glossary
+radiological assessor	radiological-assessor	en	preferred	imported from IAEA-safety-glossary
+radiological emergency	radiological-emergency	en	preferred	imported from IAEA-safety-glossary
+radiological medical practitioner	radiological-medical-practitioner	en	preferred	imported from IAEA-safety-glossary
+radiological procedure	radiological-procedure	en	preferred	imported from IAEA-safety-glossary
+radiological protection	radiological-protection	en	preferred	imported from IAEA-safety-glossary
+radionuclides of artificial origin	radionuclides-of-artificial-origin	en	preferred	imported from IAEA-safety-glossary
+radionuclides of natural origin	radionuclides-of-natural-origin	en	preferred	imported from IAEA-safety-glossary
+radiopharmacist	radiopharmacist	en	preferred	imported from IAEA-safety-glossary
+radon	radon	en	preferred	imported from IAEA-safety-glossary
+radon progeny	radon-progeny	en	preferred	imported from IAEA-safety-glossary
+reactivity, ρ	reactivity	en	preferred	imported from IAEA-safety-glossary
+recording level	recording-level	en	preferred	imported from IAEA-safety-glossary
+redundancy	redundancy	en	preferred	imported from IAEA-safety-glossary
+reference air kerma rate	reference-air-kerma-rate	en	preferred	imported from IAEA-safety-glossary
+reference individual	reference-individual	en	preferred	imported from IAEA-safety-glossary
+reference level	reference-level	en	preferred	imported from IAEA-safety-glossary
+reference scenario	reference-scenario	en	preferred	imported from IAEA-safety-glossary
+referring medical practitioner	referring-medical-practitioner	en	preferred	imported from IAEA-safety-glossary
+registrant	registrant	en	preferred	imported from IAEA-safety-glossary
+registration	registration	en	preferred	imported from IAEA-safety-glossary
+regulatory body	regulatory-body	en	preferred	imported from IAEA-safety-glossary
+regulatory control	regulatory-control	en	preferred	imported from IAEA-safety-glossary
+regulatory inspection	regulatory-inspection	en	preferred	imported from IAEA-safety-glossary
+relative biological effectiveness (RBE)	relative-biological-effectiveness	en	preferred	imported from IAEA-safety-glossary
+Health effect           Critical tissue or organ                   Exposurea            RBET,R	health-effect-critical-tissue-or-organ-exposurea-rbet-r	en	preferred	imported from IAEA-safety-glossary
+Haematopoietic                                        External and internal n              3	haematopoietic-external-and-internal-n-3	en	preferred	imported from IAEA-safety-glossary
+Gastrointestinal                                      External and internal n              3	gastrointestinal-external-and-internal-n-3	en	preferred	imported from IAEA-safety-glossary
+relative biological effectiveness (RBE) weighted absorbed dose, ADT	relative-biological-effectiveness-weighted-absorbed-dose-adt	en	preferred	imported from IAEA-safety-glossary
+relative risk	relative-risk	en	preferred	imported from IAEA-safety-glossary
+release	release	en	preferred	imported from IAEA-safety-glossary
+reliability	reliability	en	preferred	imported from IAEA-safety-glossary
+reliability centred maintenance (RCM)	reliability-centred-maintenance	en	preferred	imported from IAEA-safety-glossary
+relocation	relocation	en	preferred	imported from IAEA-safety-glossary
+remedial action	remedial-action	en	preferred	imported from IAEA-safety-glossary
+remediation	remediation	en	preferred	imported from IAEA-safety-glossary
+remediation plan	remediation-plan	en	preferred	imported from IAEA-safety-glossary
+remedy	remedy	en	preferred	imported from IAEA-safety-glossary
+removable contamination	removable-contamination	en	preferred	imported from IAEA-safety-glossary
+repair	repair	en	preferred	imported from IAEA-safety-glossary
+repository	repository	en	preferred	imported from IAEA-safety-glossary
+representative person	representative-person	en	preferred	imported from IAEA-safety-glossary
+reprocessing	reprocessing	en	preferred	imported from IAEA-safety-glossary
+requirement (safety)	requirement	en	preferred	imported from IAEA-safety-glossary
+research reactor	research-reactor	en	preferred	imported from IAEA-safety-glossary
+residual dose	residual-dose	en	preferred	imported from IAEA-safety-glossary
+response organization	response-organization	en	preferred	imported from IAEA-safety-glossary
+response spectrum	response-spectrum	en	preferred	imported from IAEA-safety-glossary
+response time (of a component)	response-time	en	preferred	imported from IAEA-safety-glossary
+restricted linear collision stopping power	restricted-linear-collision-stopping-power	en	preferred	imported from IAEA-safety-glossary
+restricted use	restricted-use	en	preferred	imported from IAEA-safety-glossary
+reuse	reuse	en	preferred	imported from IAEA-safety-glossary
+risk	risk	en	preferred	imported from IAEA-safety-glossary
+risk assessment	risk-assessment	en	preferred	imported from IAEA-safety-glossary
+risk coefficient, γ	risk-coefficient	en	preferred	imported from IAEA-safety-glossary
+risk constraint	risk-constraint	en	preferred	imported from IAEA-safety-glossary
+risk monitor	risk-monitor	en	preferred	imported from IAEA-safety-glossary
+risk projection model	risk-projection-model	en	preferred	imported from IAEA-safety-glossary
+rock, igneous	rock-igneous	en	preferred	imported from IAEA-safety-glossary
+root cause	root-cause	en	preferred	imported from IAEA-safety-glossary
+root uptake	root-uptake	en	preferred	imported from IAEA-safety-glossary
+routine monitoring	routine-monitoring	en	preferred	imported from IAEA-safety-glossary
+runup	runup	en	preferred	imported from IAEA-safety-glossary
+safe state	safe-state	en	preferred	imported from IAEA-safety-glossary
+safeguards agreement	safeguards-agreement	en	preferred	imported from IAEA-safety-glossary
+safety	safety	en	preferred	imported from IAEA-safety-glossary
+safety action	safety-action	en	preferred	imported from IAEA-safety-glossary
+safety actuation system	safety-actuation-system	en	preferred	imported from IAEA-safety-glossary
+safety assessment	safety-assessment	en	preferred	imported from IAEA-safety-glossary
+safety categorization	safety-categorization	en	preferred	imported from IAEA-safety-glossary
+safety category	safety-category	en	preferred	imported from IAEA-safety-glossary
+safety class	safety-class	en	preferred	imported from IAEA-safety-glossary
+safety committee	safety-committee	en	preferred	imported from IAEA-safety-glossary
+safety culture	safety-culture	en	preferred	imported from IAEA-safety-glossary
+safety feature (for design extension conditions)	safety-feature	en	preferred	imported from IAEA-safety-glossary
+safety group	safety-group	en	preferred	imported from IAEA-safety-glossary
+safety indicator	safety-indicator	en	preferred	imported from IAEA-safety-glossary
+safety issues	safety-issues	en	preferred	imported from IAEA-safety-glossary
+safety layers	safety-layers	en	preferred	imported from IAEA-safety-glossary
+safety limits	safety-limits	en	preferred	imported from IAEA-safety-glossary
+safety measure	safety-measure	en	preferred	imported from IAEA-safety-glossary
+safety of radioactive sources	safety-of-radioactive-sources	en	preferred	imported from IAEA-safety-glossary
+safety related item	safety-related-item	en	preferred	imported from IAEA-safety-glossary
+safety related system	safety-related-system	en	preferred	imported from IAEA-safety-glossary
+safety standards	safety-standards	en	preferred	imported from IAEA-safety-glossary
+safety system	safety-system	en	preferred	imported from IAEA-safety-glossary
+safety system settings	safety-system-settings	en	preferred	imported from IAEA-safety-glossary
+safety system support features	safety-system-support-features	en	preferred	imported from IAEA-safety-glossary
+safety task	safety-task	en	preferred	imported from IAEA-safety-glossary
+scenario	scenario	en	preferred	imported from IAEA-safety-glossary
+scram	scram	en	preferred	imported from IAEA-safety-glossary
+screening	screening	en	preferred	imported from IAEA-safety-glossary
+screening distance value (SDV)	screening-distance-value	en	preferred	imported from IAEA-safety-glossary
+screening probability level (SPL)	screening-probability-level	en	preferred	imported from IAEA-safety-glossary
+seabed disposal	seabed-disposal	en	preferred	imported from IAEA-safety-glossary
+sealed source	sealed-source	en	preferred	imported from IAEA-safety-glossary
+security	security	en	preferred	imported from IAEA-safety-glossary
+segregation	segregation	en	preferred	imported from IAEA-safety-glossary
+seismogenic structure	seismogenic-structure	en	preferred	imported from IAEA-safety-glossary
+seismotectonic model	seismotectonic-model	en	preferred	imported from IAEA-safety-glossary
+self-assessment	self-assessment	en	preferred	imported from IAEA-safety-glossary
+senior management	senior-management	en	preferred	imported from IAEA-safety-glossary
+service conditions	service-conditions	en	preferred	imported from IAEA-safety-glossary
+service life	service-life	en	preferred	imported from IAEA-safety-glossary
+severe accident management	severe-accident-management	en	preferred	imported from IAEA-safety-glossary
+severe deterministic effect	severe-deterministic-effect	en	preferred	imported from IAEA-safety-glossary
+sheltering	sheltering	en	preferred	imported from IAEA-safety-glossary
+shipment	shipment	en	preferred	imported from IAEA-safety-glossary
+short lived waste	short-lived-waste	en	preferred	imported from IAEA-safety-glossary
+shutdown	shutdown	en	preferred	imported from IAEA-safety-glossary
+shutdown reactivity	shutdown-reactivity	en	preferred	imported from IAEA-safety-glossary
+sievert (Sv)	sievert	en	preferred	imported from IAEA-safety-glossary
+significant transboundary release	significant-transboundary-release	en	preferred	imported from IAEA-safety-glossary
+single failure	single-failure	en	preferred	imported from IAEA-safety-glossary
+single failure criterion	single-failure-criterion	en	preferred	imported from IAEA-safety-glossary
+site area	site-area	en	preferred	imported from IAEA-safety-glossary
+site area emergency	site-area-emergency	en	preferred	imported from IAEA-safety-glossary
+site boundary	site-boundary	en	preferred	imported from IAEA-safety-glossary
+site characterization	site-characterization	en	preferred	imported from IAEA-safety-glossary
+site confirmation (in the siting process for a disposal facility)	site-confirmation	en	preferred	imported from IAEA-safety-glossary
+site evaluation	site-evaluation	en	preferred	imported from IAEA-safety-glossary
+site personnel	site-personnel	en	preferred	imported from IAEA-safety-glossary
+site (seismic) response	site-response	en	preferred	imported from IAEA-safety-glossary
+site selection	site-selection	en	preferred	imported from IAEA-safety-glossary
+site survey	site-survey	en	preferred	imported from IAEA-safety-glossary
+site verification	site-verification	en	preferred	imported from IAEA-safety-glossary
+siting	siting	en	preferred	imported from IAEA-safety-glossary
+SL-1, SL-2	sl-1-sl-2	en	preferred	imported from IAEA-safety-glossary
+small freight container	small-freight-container	en	preferred	imported from IAEA-safety-glossary
+somatic effect	somatic-effect	en	preferred	imported from IAEA-safety-glossary
+sorption	sorption	en	preferred	imported from IAEA-safety-glossary
+source	source	en	preferred	imported from IAEA-safety-glossary
+source material	source-material	en	preferred	imported from IAEA-safety-glossary
+source monitoring	source-monitoring	en	preferred	imported from IAEA-safety-glossary
+source region	source-region	en	preferred	imported from IAEA-safety-glossary
+special arrangement	special-arrangement	en	preferred	imported from IAEA-safety-glossary
+special facility	special-facility	en	preferred	imported from IAEA-safety-glossary
+special fissionable material	special-fissionable-material	en	preferred	imported from IAEA-safety-glossary
+special form radioactive material	special-form-radioactive-material	en	preferred	imported from IAEA-safety-glossary
+special monitoring	special-monitoring	en	preferred	imported from IAEA-safety-glossary
+special population group	special-population-group	en	preferred	imported from IAEA-safety-glossary
+spent fuel	spent-fuel	en	preferred	imported from IAEA-safety-glossary
+spent fuel management	spent-fuel-management	en	preferred	imported from IAEA-safety-glossary
+spent fuel management facility	spent-fuel-management-facility	en	preferred	imported from IAEA-safety-glossary
+spent source	spent-source	en	preferred	imported from IAEA-safety-glossary
+standards dosimetry laboratory	standards-dosimetry-laboratory	en	preferred	imported from IAEA-safety-glossary
+State of destination	state-of-destination	en	preferred	imported from IAEA-safety-glossary
+State of origin	state-of-origin	en	preferred	imported from IAEA-safety-glossary
+State of transit	state-of-transit	en	preferred	imported from IAEA-safety-glossary
+stochastic analysis	stochastic-analysis	en	preferred	imported from IAEA-safety-glossary
+stochastic effect	stochastic-effect	en	preferred	imported from IAEA-safety-glossary
+storage	storage	en	preferred	imported from IAEA-safety-glossary
+strombolian eruption	strombolian-eruption	en	preferred	imported from IAEA-safety-glossary
+strongly penetrating radiation	strongly-penetrating-radiation	en	preferred	imported from IAEA-safety-glossary
+structure	structure	en	preferred	imported from IAEA-safety-glossary
+structures, systems and components (SSCs)	structures-systems-and-components	en	preferred	imported from IAEA-safety-glossary
+sub-seabed disposal	sub-seabed-disposal	en	preferred	imported from IAEA-safety-glossary
+substantiation	substantiation	en	preferred	imported from IAEA-safety-glossary
+supervised area	supervised-area	en	preferred	imported from IAEA-safety-glossary
+supplier (of a source)	supplier	en	preferred	imported from IAEA-safety-glossary
+surface contaminated object (SCO)	surface-contaminated-object	en	preferred	imported from IAEA-safety-glossary
+surface faulting	surface-faulting	en	preferred	imported from IAEA-safety-glossary
+surveillance	surveillance	en	preferred	imported from IAEA-safety-glossary
+surveillance testing	surveillance-testing	en	preferred	imported from IAEA-safety-glossary
+survey	survey	en	preferred	imported from IAEA-safety-glossary
+system code	system-code	en	preferred	imported from IAEA-safety-glossary
+system code validation	system-code-validation	en	preferred	imported from IAEA-safety-glossary
+system code verification	system-code-verification	en	preferred	imported from IAEA-safety-glossary
+system validation	system-validation	en	preferred	imported from IAEA-safety-glossary
+tailings	tailings	en	preferred	imported from IAEA-safety-glossary
+tank	tank	en	preferred	imported from IAEA-safety-glossary
+target tissue or organ	target-tissue-or-organ	en	preferred	imported from IAEA-safety-glossary
+task related monitoring	task-related-monitoring	en	preferred	imported from IAEA-safety-glossary
+technological obsolescence	technological-obsolescence	en	preferred	imported from IAEA-safety-glossary
+temporary relocation	temporary-relocation	en	preferred	imported from IAEA-safety-glossary
+therapeutic exposure	therapeutic-exposure	en	preferred	imported from IAEA-safety-glossary
+thermodynamic diameter	thermodynamic-diameter	en	preferred	imported from IAEA-safety-glossary
+thorium series	thorium-series	en	preferred	imported from IAEA-safety-glossary
+through or into	through-or-into	en	preferred	imported from IAEA-safety-glossary
+time based maintenance	time-based-maintenance	en	preferred	imported from IAEA-safety-glossary
+tissue equivalent material	tissue-equivalent-material	en	preferred	imported from IAEA-safety-glossary
+tissue substitute	tissue-substitute	en	preferred	imported from IAEA-safety-glossary
+tissue weighting factor, wT	tissue-weighting-factor-wt	en	preferred	imported from IAEA-safety-glossary
+transboundary exposure	transboundary-exposure	en	preferred	imported from IAEA-safety-glossary
+transboundary movement	transboundary-movement	en	preferred	imported from IAEA-safety-glossary
+transient population group	transient-population-group	en	preferred	imported from IAEA-safety-glossary
+transnational emergency	transnational-emergency	en	preferred	imported from IAEA-safety-glossary
+transport index (TI)	transport-index	en	preferred	imported from IAEA-safety-glossary
+transportation	transportation	en	preferred	imported from IAEA-safety-glossary
+treatment	treatment	en	preferred	imported from IAEA-safety-glossary
+Type A/B(U)/B(M)/C package	type-a-b-b-c-package	en	preferred	imported from IAEA-safety-glossary
+ultimate heat sink	ultimate-heat-sink	en	preferred	imported from IAEA-safety-glossary
+ultimate heat transport system	ultimate-heat-transport-system	en	preferred	imported from IAEA-safety-glossary
+unattached fraction	unattached-fraction	en	preferred	imported from IAEA-safety-glossary
+uncertainty	uncertainty	en	preferred	imported from IAEA-safety-glossary
+uncertainty analysis	uncertainty-analysis	en	preferred	imported from IAEA-safety-glossary
+uniform hazard response spectrum	uniform-hazard-response-spectrum	en	preferred	imported from IAEA-safety-glossary
+unilateral approval	unilateral-approval	en	preferred	imported from IAEA-safety-glossary
+unirradiated thorium	unirradiated-thorium	en	preferred	imported from IAEA-safety-glossary
+unirradiated uranium	unirradiated-uranium	en	preferred	imported from IAEA-safety-glossary
+unrestricted linear energy transfer, L∞	unrestricted-linear-energy-transfer-l	en	preferred	imported from IAEA-safety-glossary
+unrestricted use	unrestricted-use	en	preferred	imported from IAEA-safety-glossary
+unsealed source	unsealed-source	en	preferred	imported from IAEA-safety-glossary
+uptake	uptake	en	preferred	imported from IAEA-safety-glossary
+uranium	uranium	en	preferred	imported from IAEA-safety-glossary
+uranium enriched in the isotope uranium-235 or uranium-233	uranium-enriched-in-the-isotope-uranium-235-or-uranium-233	en	preferred	imported from IAEA-safety-glossary
+uranium series	uranium-series	en	preferred	imported from IAEA-safety-glossary
+urgent protective action	urgent-protective-action	en	preferred	imported from IAEA-safety-glossary
+urgent protective action planning zone (UPZ)	urgent-protective-action-planning-zone	en	preferred	imported from IAEA-safety-glossary
+urgent response phase	urgent-response-phase	en	preferred	imported from IAEA-safety-glossary
+use	use	en	preferred	imported from IAEA-safety-glossary

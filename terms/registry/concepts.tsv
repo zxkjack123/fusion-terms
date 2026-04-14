@@ -1770,3 +1770,796 @@ upper-ports	concept		Upper Ports		active		ITER-glossary
 vacuum-pumps	concept		Vacuum Pumps		active		ITER-glossary
 wall-load	concept		Wall load		active		ITER-glossary
 west	concept		WEST		active		ITER-glossary
+
+# ---- Imported from IAEA-safety-glossary (2026-04-14) ----
+a1	concept		A1		active		IAEA-safety-glossary
+a2	concept		A2		active		IAEA-safety-glossary
+abnormal-operation	concept		abnormal operation		active		IAEA-safety-glossary
+absorbed-fraction	concept		absorbed fraction		active		IAEA-safety-glossary
+absorption	concept		absorption		active		IAEA-safety-glossary
+absorption-type-lung	concept		absorption type, lung		active		IAEA-safety-glossary
+accelerogram	concept		accelerogram		active		IAEA-safety-glossary
+acceptable-limit	concept		acceptable limit		active		IAEA-safety-glossary
+acceptance-criteria	concept		acceptance criteria		active		IAEA-safety-glossary
+accident	concept		accident		active		IAEA-safety-glossary
+accident-conditions	concept		accident conditions		active		IAEA-safety-glossary
+accident-management	concept		accident management		active		IAEA-safety-glossary
+accident-precursor	concept		accident precursor		active		IAEA-safety-glossary
+accuracy	concept		accuracy		active		IAEA-safety-glossary
+active-component	concept		active component		active		IAEA-safety-glossary
+activity	concept		activity		active		IAEA-safety-glossary
+activity-concentration	concept		activity concentration		active		IAEA-safety-glossary
+activity-median-aerodynamic-diameter	concept		activity median aerodynamic diameter (AMAD)		active		IAEA-safety-glossary
+activity-median-thermodynamic-diameter	concept		activity median thermodynamic diameter (AMTD)		active		IAEA-safety-glossary
+actuated-equipment	concept		actuated equipment		active		IAEA-safety-glossary
+actuation-device	concept		actuation device		active		IAEA-safety-glossary
+acute-exposure	concept		acute exposure		active		IAEA-safety-glossary
+acute-intake	concept		acute intake		active		IAEA-safety-glossary
+additive-risk-projection-model	concept		additive risk projection model		active		IAEA-safety-glossary
+adsorption	concept		adsorption		active		IAEA-safety-glossary
+advection	concept		advection		active		IAEA-safety-glossary
+aerodynamic-diameter	concept		aerodynamic diameter		active		IAEA-safety-glossary
+aerodynamic-dispersion	concept		aerodynamic dispersion		active		IAEA-safety-glossary
+ageing	concept		ageing		active		IAEA-safety-glossary
+ageing-degradation	concept		ageing degradation		active		IAEA-safety-glossary
+agricultural-countermeasure	concept		agricultural countermeasure		active		IAEA-safety-glossary
+air-kerma	concept		air kerma		active		IAEA-safety-glossary
+aircraft	concept		aircraft		active		IAEA-safety-glossary
+aleatory-uncertainty	concept		aleatory uncertainty		active		IAEA-safety-glossary
+alert	concept		alert		active		IAEA-safety-glossary
+annual-dose	concept		annual dose		active		IAEA-safety-glossary
+annual-limit-on-exposure	concept		annual limit on exposure (ALE)		active		IAEA-safety-glossary
+annual-limit-on-intake	concept		annual limit on intake (ALI)		active		IAEA-safety-glossary
+annual-risk	concept		annual risk		active		IAEA-safety-glossary
+anticipated-operational-occurrence	concept		anticipated operational occurrence		active		IAEA-safety-glossary
+anticipated-transient-without-scram	concept		anticipated transient without scram (ATWS)		active		IAEA-safety-glossary
+applicant	concept		applicant		active		IAEA-safety-glossary
+approval	concept		approval		active		IAEA-safety-glossary
+area	concept		area		active		IAEA-safety-glossary
+area-monitoring	concept		area monitoring		active		IAEA-safety-glossary
+area-survey	concept		area survey		active		IAEA-safety-glossary
+arrangements	concept		arrangements (for emergency response)		active		IAEA-safety-glossary
+assessment	concept		assessment		active		IAEA-safety-glossary
+assisted-operation	concept		assisted operation		active		IAEA-safety-glossary
+attenuation	concept		attenuation		active		IAEA-safety-glossary
+attributable-risk	concept		attributable risk		active		IAEA-safety-glossary
+audit	concept		audit		active		IAEA-safety-glossary
+authorization	concept		authorization		active		IAEA-safety-glossary
+authorized-activity	concept		authorized activity		active		IAEA-safety-glossary
+authorized-discharge	concept		authorized discharge		active		IAEA-safety-glossary
+authorized-facility	concept		authorized facility		active		IAEA-safety-glossary
+authorized-limit	concept		authorized limit		active		IAEA-safety-glossary
+authorized-party	concept		authorized party		active		IAEA-safety-glossary
+authorized-termination-of-responsibility	concept		authorized termination of responsibility		active		IAEA-safety-glossary
+authorized-transfer	concept		authorized transfer		active		IAEA-safety-glossary
+authorized-use	concept		authorized use		active		IAEA-safety-glossary
+averted-dose	concept		averted dose		active		IAEA-safety-glossary
+backfill	concept		backfill		active		IAEA-safety-glossary
+background	concept		background		active		IAEA-safety-glossary
+barrier	concept		barrier		active		IAEA-safety-glossary
+bayesian-statistics	concept		Bayesian statistics		active		IAEA-safety-glossary
+becquerel	concept		becquerel (Bq)		active		IAEA-safety-glossary
+bias	concept		bias		active		IAEA-safety-glossary
+bioassay	concept		bioassay		active		IAEA-safety-glossary
+biological-half-life	concept		biological half-life		active		IAEA-safety-glossary
+biophysical-model	concept		biophysical model		active		IAEA-safety-glossary
+biosphere	concept		biosphere		active		IAEA-safety-glossary
+buffer	concept		buffer		active		IAEA-safety-glossary
+burnable-absorber	concept		burnable absorber		active		IAEA-safety-glossary
+bypass	concept		bypass		active		IAEA-safety-glossary
+calibration	concept		calibration		active		IAEA-safety-glossary
+calibration-of-a-dosimeter	concept		calibration of a dosimeter		active		IAEA-safety-glossary
+canister-waste	concept		canister, waste		active		IAEA-safety-glossary
+capable-fault	concept		capable fault		active		IAEA-safety-glossary
+capable-volcanic-field	concept		capable volcanic field		active		IAEA-safety-glossary
+capable-volcano	concept		capable volcano		active		IAEA-safety-glossary
+carers-and-comforters	concept		carers and comforters		active		IAEA-safety-glossary
+cargo-aircraft	concept		cargo aircraft		active		IAEA-safety-glossary
+carrier	concept		carrier		active		IAEA-safety-glossary
+cause	concept		cause		active		IAEA-safety-glossary
+certificate	concept		certificate		active		IAEA-safety-glossary
+certification	concept		certification		active		IAEA-safety-glossary
+channel	concept		channel		active		IAEA-safety-glossary
+characterization	concept		characterization		active		IAEA-safety-glossary
+characterization-of-waste	concept		characterization of waste		active		IAEA-safety-glossary
+chemisorption	concept		chemisorption		active		IAEA-safety-glossary
+child	concept		child		active		IAEA-safety-glossary
+chronic-intake	concept		chronic intake		active		IAEA-safety-glossary
+cladding	concept		cladding		active		IAEA-safety-glossary
+cleanup	concept		cleanup		active		IAEA-safety-glossary
+clearance-rate	concept		clearance rate		active		IAEA-safety-glossary
+closed-nuclear-fuel-cycle	concept		closed nuclear fuel cycle		active		IAEA-safety-glossary
+closure	concept		closure		active		IAEA-safety-glossary
+cloud-shine	concept		cloud shine		active		IAEA-safety-glossary
+coincidence	concept		coincidence (as a feature of design)		active		IAEA-safety-glossary
+common-mode-failure	concept		common mode failure		active		IAEA-safety-glossary
+competent-authority	concept		competent authority		active		IAEA-safety-glossary
+compliance-assurance	concept		compliance assurance		active		IAEA-safety-glossary
+component	concept		component		active		IAEA-safety-glossary
+computational-model	concept		computational model		active		IAEA-safety-glossary
+computer-system-validation	concept		computer system validation		active		IAEA-safety-glossary
+computer-system-verification	concept		computer system verification		active		IAEA-safety-glossary
+concept-of-operations	concept		concept of operations		active		IAEA-safety-glossary
+conceptual-model	concept		conceptual model		active		IAEA-safety-glossary
+condition-based-maintenance	concept		condition based maintenance		active		IAEA-safety-glossary
+condition-indicator	concept		condition indicator		active		IAEA-safety-glossary
+condition-monitoring	concept		condition monitoring		active		IAEA-safety-glossary
+conditional-probability-value	concept		conditional probability value (CPV)		active		IAEA-safety-glossary
+conditional-risk	concept		conditional risk		active		IAEA-safety-glossary
+conditioning	concept		conditioning		active		IAEA-safety-glossary
+consequence-assessment	concept		consequence assessment		active		IAEA-safety-glossary
+consignee	concept		consignee		active		IAEA-safety-glossary
+consignment	concept		consignment		active		IAEA-safety-glossary
+consignor	concept		consignor		active		IAEA-safety-glossary
+constraint	concept		constraint		active		IAEA-safety-glossary
+construction	concept		construction		active		IAEA-safety-glossary
+consumer-product	concept		consumer product		active		IAEA-safety-glossary
+container-waste	concept		container, waste		active		IAEA-safety-glossary
+containment-system	concept		containment system		active		IAEA-safety-glossary
+contamination	concept		contamination		active		IAEA-safety-glossary
+contamination-zone	concept		contamination zone		active		IAEA-safety-glossary
+control	concept		control		active		IAEA-safety-glossary
+controlled-state	concept		controlled state		active		IAEA-safety-glossary
+conveyance	concept		conveyance		active		IAEA-safety-glossary
+core-components	concept		core components		active		IAEA-safety-glossary
+corrective-maintenance	concept		corrective maintenance		active		IAEA-safety-glossary
+cost-benefit-analysis	concept		cost–benefit analysis		active		IAEA-safety-glossary
+countermeasure	concept		countermeasure		active		IAEA-safety-glossary
+critical	concept		critical (adjective)		active		IAEA-safety-glossary
+critical-assembly	concept		critical assembly		active		IAEA-safety-glossary
+critical-level	concept		critical level		active		IAEA-safety-glossary
+criticality	concept		criticality		active		IAEA-safety-glossary
+criticality-accident	concept		criticality accident		active		IAEA-safety-glossary
+criticality-safety-index	concept		criticality safety index (CSI)		active		IAEA-safety-glossary
+crust-earth-s	concept		crust, Earth’s		active		IAEA-safety-glossary
+dangerous-source	concept		dangerous source		active		IAEA-safety-glossary
+decay-constant	concept		decay constant, λ		active		IAEA-safety-glossary
+decision-limit	concept		decision limit		active		IAEA-safety-glossary
+decommissioning-plan	concept		decommissioning plan		active		IAEA-safety-glossary
+decorporation	concept		decorporation		active		IAEA-safety-glossary
+deep-sea-disposal	concept		deep sea disposal		active		IAEA-safety-glossary
+defence-in-depth	concept		defence in depth		active		IAEA-safety-glossary
+deferred-dismantling	concept		deferred dismantling		active		IAEA-safety-glossary
+defined-deck-area	concept		defined deck area		active		IAEA-safety-glossary
+dependability	concept		dependability		active		IAEA-safety-glossary
+depleted-uranium	concept		depleted uranium		active		IAEA-safety-glossary
+derived-limit	concept		derived limit		active		IAEA-safety-glossary
+design-basis	concept		design basis		active		IAEA-safety-glossary
+design-basis-external-events	concept		design basis external events		active		IAEA-safety-glossary
+design-basis-probability-value	concept		design basis probability value (DBPV)		active		IAEA-safety-glossary
+design-extension-conditions	concept		design extension conditions		active		IAEA-safety-glossary
+design-life	concept		design life		active		IAEA-safety-glossary
+detection-limit	concept		detection limit		active		IAEA-safety-glossary
+determination-level	concept		determination level		active		IAEA-safety-glossary
+deterministic-analysis	concept		deterministic analysis		active		IAEA-safety-glossary
+deterministic-effect	concept		deterministic effect		active		IAEA-safety-glossary
+detriment	concept		detriment		active		IAEA-safety-glossary
+deviation	concept		deviation		active		IAEA-safety-glossary
+diagnostic-exposure	concept		diagnostic exposure		active		IAEA-safety-glossary
+diagnostic-reference-level	concept		diagnostic reference level		active		IAEA-safety-glossary
+diffusion	concept		diffusion		active		IAEA-safety-glossary
+direct-cause	concept		direct cause		active		IAEA-safety-glossary
+direct-disposal	concept		direct disposal		active		IAEA-safety-glossary
+directional-dose-equivalent	concept		directional dose equivalent		active		IAEA-safety-glossary
+discharge	concept		discharge		active		IAEA-safety-glossary
+dismantling	concept		dismantling		active		IAEA-safety-glossary
+dispersal	concept		dispersal		active		IAEA-safety-glossary
+dispersion	concept		dispersion		active		IAEA-safety-glossary
+disposal	concept		disposal		active		IAEA-safety-glossary
+disposal-facility	concept		disposal facility		active		IAEA-safety-glossary
+disposal-system	concept		disposal system		active		IAEA-safety-glossary
+disposition	concept		disposition		active		IAEA-safety-glossary
+disused-sealed-source	concept		disused sealed source		active		IAEA-safety-glossary
+disused-source	concept		disused source		active		IAEA-safety-glossary
+diversity	concept		diversity		active		IAEA-safety-glossary
+dose	concept		dose		active		IAEA-safety-glossary
+dose-and-dose-rate-effectiveness-factor	concept		dose and dose rate effectiveness factor (DDREF)		active		IAEA-safety-glossary
+dose-assessment	concept		dose assessment		active		IAEA-safety-glossary
+dose-coefficient	concept		dose coefficient		active		IAEA-safety-glossary
+dose-concepts	concept		dose concepts		active		IAEA-safety-glossary
+dose-conversion-convention	concept		dose conversion convention		active		IAEA-safety-glossary
+dose-equivalent	concept		dose equivalent		active		IAEA-safety-glossary
+dose-equivalent-quantities	concept		dose equivalent quantities (operational)		active		IAEA-safety-glossary
+dose-per-unit-intake	concept		dose per unit intake		active		IAEA-safety-glossary
+dose-quantities	concept		dose quantities		active		IAEA-safety-glossary
+dose-rate	concept		dose rate		active		IAEA-safety-glossary
+double-contingency-principle	concept		double contingency principle		active		IAEA-safety-glossary
+drawdown	concept		drawdown		active		IAEA-safety-glossary
+driven-equipment	concept		driven equipment		active		IAEA-safety-glossary
+dry-storage	concept		dry storage		active		IAEA-safety-glossary
+early-effect	concept		early effect		active		IAEA-safety-glossary
+early-protective-actions	concept		early protective actions		active		IAEA-safety-glossary
+early-release-of-radioactive-material	concept		early release of radioactive material		active		IAEA-safety-glossary
+early-response-phase	concept		early response phase		active		IAEA-safety-glossary
+earth-s-crust	concept		Earth’s crust		active		IAEA-safety-glossary
+earth-s-mantle	concept		Earth’s mantle		active		IAEA-safety-glossary
+effective-half-life	concept		effective half-life		active		IAEA-safety-glossary
+effusive-eruption	concept		effusive eruption		active		IAEA-safety-glossary
+elimination-practical	concept		elimination, practical		active		IAEA-safety-glossary
+emergency	concept		emergency		active		IAEA-safety-glossary
+emergency-action-level	concept		emergency action level (EAL)		active		IAEA-safety-glossary
+emergency-arrangements	concept		emergency arrangements		active		IAEA-safety-glossary
+emergency-class	concept		emergency class		active		IAEA-safety-glossary
+emergency-classification	concept		emergency classification		active		IAEA-safety-glossary
+emergency-exposure	concept		emergency exposure		active		IAEA-safety-glossary
+emergency-exposure-situation	concept		emergency exposure situation		active		IAEA-safety-glossary
+emergency-phase	concept		emergency phase		active		IAEA-safety-glossary
+emergency-plan	concept		emergency plan		active		IAEA-safety-glossary
+emergency-planning-distance	concept		emergency planning distance		active		IAEA-safety-glossary
+emergency-preparedness	concept		emergency preparedness		active		IAEA-safety-glossary
+emergency-preparedness-category	concept		emergency preparedness category		active		IAEA-safety-glossary
+emergency-procedures	concept		emergency procedures		active		IAEA-safety-glossary
+emergency-response	concept		emergency response		active		IAEA-safety-glossary
+emergency-response-action	concept		emergency response action		active		IAEA-safety-glossary
+emergency-response-commander	concept		emergency response commander		active		IAEA-safety-glossary
+emergency-response-facility-or-location	concept		emergency response facility or location		active		IAEA-safety-glossary
+emergency-response-phase	concept		emergency response phase		active		IAEA-safety-glossary
+emergency-services	concept		emergency services		active		IAEA-safety-glossary
+emergency-worker	concept		emergency worker		active		IAEA-safety-glossary
+employer	concept		employer		active		IAEA-safety-glossary
+end-point	concept		end point		active		IAEA-safety-glossary
+end-state	concept		end state		active		IAEA-safety-glossary
+energy-fluence	concept		energy fluence		active		IAEA-safety-glossary
+enforcement	concept		enforcement		active		IAEA-safety-glossary
+enriched-uranium	concept		enriched uranium		active		IAEA-safety-glossary
+entombment	concept		entombment		active		IAEA-safety-glossary
+entrance-surface-dose	concept		entrance surface dose		active		IAEA-safety-glossary
+environment	concept		environment		active		IAEA-safety-glossary
+epicentre	concept		epicentre		active		IAEA-safety-glossary
+epistemic-uncertainty	concept		epistemic uncertainty		active		IAEA-safety-glossary
+equilibrium-radioactive	concept		equilibrium, radioactive		active		IAEA-safety-glossary
+equilibrium-equivalent-concentration	concept		equilibrium equivalent concentration (EEC)		active		IAEA-safety-glossary
+equilibrium-factor	concept		equilibrium factor		active		IAEA-safety-glossary
+equipment-qualification	concept		equipment qualification		active		IAEA-safety-glossary
+eruption-volcanic	concept		eruption, volcanic		active		IAEA-safety-glossary
+eruption-cloud	concept		eruption cloud		active		IAEA-safety-glossary
+essential-services	concept		essential services		active		IAEA-safety-glossary
+evacuation	concept		evacuation		active		IAEA-safety-glossary
+event	concept		event		active		IAEA-safety-glossary
+excepted-package	concept		excepted package		active		IAEA-safety-glossary
+exception	concept		exception		active		IAEA-safety-glossary
+excess-risk	concept		excess risk		active		IAEA-safety-glossary
+excluded-exposure	concept		excluded exposure		active		IAEA-safety-glossary
+exclusion	concept		exclusion		active		IAEA-safety-glossary
+exclusive-use	concept		exclusive use		active		IAEA-safety-glossary
+exempt-waste	concept		exempt waste		active		IAEA-safety-glossary
+exemption	concept		exemption		active		IAEA-safety-glossary
+exemption-level	concept		exemption level		active		IAEA-safety-glossary
+existing-exposure-situation	concept		existing exposure situation		active		IAEA-safety-glossary
+explosive-eruption	concept		explosive eruption		active		IAEA-safety-glossary
+exposure	concept		exposure		active		IAEA-safety-glossary
+exposure-assessment	concept		exposure assessment		active		IAEA-safety-glossary
+exposure-categories	concept		exposure categories		active		IAEA-safety-glossary
+exposure-due-to-radon	concept		exposure due to radon		active		IAEA-safety-glossary
+exposure-pathway	concept		exposure pathway		active		IAEA-safety-glossary
+exposure-situations	concept		exposure situations		active		IAEA-safety-glossary
+extended-planning-distance	concept		extended planning distance (EPD)		active		IAEA-safety-glossary
+external-event	concept		external event		active		IAEA-safety-glossary
+external-exposure	concept		external exposure		active		IAEA-safety-glossary
+external-zone	concept		external zone		active		IAEA-safety-glossary
+facilities-and-activities	concept		facilities and activities		active		IAEA-safety-glossary
+facility	concept		facility		active		IAEA-safety-glossary
+facility-states	concept		facility states (considered in design)		active		IAEA-safety-glossary
+facility-emergency	concept		facility emergency		active		IAEA-safety-glossary
+failure	concept		failure (technical)		active		IAEA-safety-glossary
+failure-mode	concept		failure mode		active		IAEA-safety-glossary
+far-field	concept		far field		active		IAEA-safety-glossary
+fault-geological	concept		fault, geological		active		IAEA-safety-glossary
+feed	concept		feed		active		IAEA-safety-glossary
+first-responders	concept		first responders		active		IAEA-safety-glossary
+fissile-material	concept		fissile material		active		IAEA-safety-glossary
+fissile-nuclide	concept		fissile nuclide		active		IAEA-safety-glossary
+fission-fragment	concept		fission fragment		active		IAEA-safety-glossary
+fission-product	concept		fission product		active		IAEA-safety-glossary
+fissionable-material	concept		fissionable material		active		IAEA-safety-glossary
+fissionable-nuclide	concept		fissionable nuclide		active		IAEA-safety-glossary
+fixed-contamination	concept		fixed contamination		active		IAEA-safety-glossary
+food	concept		food		active		IAEA-safety-glossary
+free-field-ground-motion	concept		free field ground motion		active		IAEA-safety-glossary
+freight-container	concept		freight container		active		IAEA-safety-glossary
+frequency-of-exceedance	concept		frequency of exceedance		active		IAEA-safety-glossary
+fresh-fuel	concept		fresh fuel		active		IAEA-safety-glossary
+fuel	concept		fuel		active		IAEA-safety-glossary
+fuel-assembly	concept		fuel assembly		active		IAEA-safety-glossary
+fuel-element	concept		fuel element		active		IAEA-safety-glossary
+fuel-rod	concept		fuel rod		active		IAEA-safety-glossary
+functional-diversity	concept		functional diversity		active		IAEA-safety-glossary
+functional-indicator	concept		functional indicator		active		IAEA-safety-glossary
+functional-isolation	concept		functional isolation		active		IAEA-safety-glossary
+fundamental-safety-function	concept		fundamental safety function		active		IAEA-safety-glossary
+gap-release	concept		gap release		active		IAEA-safety-glossary
+general-emergency	concept		general emergency		active		IAEA-safety-glossary
+generic-criteria	concept		generic criteria		active		IAEA-safety-glossary
+genetic-effect	concept		genetic effect		active		IAEA-safety-glossary
+geological-disposal-facility	concept		geological disposal facility		active		IAEA-safety-glossary
+geological-fault	concept		geological fault		active		IAEA-safety-glossary
+geological-record	concept		geological record		active		IAEA-safety-glossary
+geosphere	concept		geosphere		active		IAEA-safety-glossary
+graded-approach	concept		graded approach		active		IAEA-safety-glossary
+gray	concept		gray (Gy)		active		IAEA-safety-glossary
+ground-shine	concept		ground shine		active		IAEA-safety-glossary
+guidance-level	concept		guidance level		active		IAEA-safety-glossary
+guidance-level-for-medical-exposure	concept		guidance level for medical exposure		active		IAEA-safety-glossary
+gut-transfer-factor	concept		gut transfer factor		active		IAEA-safety-glossary
+habit-survey	concept		habit survey		active		IAEA-safety-glossary
+half-life-t	concept		half-life, T½		active		IAEA-safety-glossary
+hazard	concept		hazard		active		IAEA-safety-glossary
+hazard-assessment	concept		hazard assessment		active		IAEA-safety-glossary
+health-authority	concept		health authority		active		IAEA-safety-glossary
+health-effects	concept		health effects (of radiation)		active		IAEA-safety-glossary
+health-professional	concept		health professional		active		IAEA-safety-glossary
+health-screening-programme	concept		health screening programme		active		IAEA-safety-glossary
+health-surveillance	concept		health surveillance		active		IAEA-safety-glossary
+helper-in-an-emergency	concept		helper in an emergency		active		IAEA-safety-glossary
+hereditary-effect	concept		hereditary effect		active		IAEA-safety-glossary
+high-energy-radiation-therapy-equipment	concept		high energy radiation therapy equipment		active		IAEA-safety-glossary
+high-enriched-uranium	concept		high enriched uranium (HEU)		active		IAEA-safety-glossary
+high-linear-energy-transfer-radiation	concept		high linear energy transfer (LET) radiation		active		IAEA-safety-glossary
+holocene	concept		Holocene		active		IAEA-safety-glossary
+holocene-volcano	concept		Holocene volcano		active		IAEA-safety-glossary
+human-factors-engineering	concept		human factors engineering		active		IAEA-safety-glossary
+human-intrusion	concept		human intrusion		active		IAEA-safety-glossary
+hydrodynamic-dispersion	concept		hydrodynamic dispersion		active		IAEA-safety-glossary
+hypocentre	concept		hypocentre		active		IAEA-safety-glossary
+iaea-publication	concept		IAEA publication		active		IAEA-safety-glossary
+icru-sphere	concept		ICRU sphere		active		IAEA-safety-glossary
+igneous-rock	concept		igneous rock		active		IAEA-safety-glossary
+immediate-dismantling	concept		immediate dismantling		active		IAEA-safety-glossary
+immobilization	concept		immobilization		active		IAEA-safety-glossary
+incident	concept		incident		active		IAEA-safety-glossary
+independent-assessment	concept		independent assessment		active		IAEA-safety-glossary
+independent-equipment	concept		independent equipment		active		IAEA-safety-glossary
+indicator	concept		indicator		active		IAEA-safety-glossary
+individual-dose	concept		individual dose		active		IAEA-safety-glossary
+individual-monitoring	concept		individual monitoring		active		IAEA-safety-glossary
+industrial-package	concept		industrial package		active		IAEA-safety-glossary
+ines	concept		INES		active		IAEA-safety-glossary
+infant	concept		infant		active		IAEA-safety-glossary
+ingestion-and-commodities-planning-distance	concept		ingestion and commodities planning distance (ICPD)		active		IAEA-safety-glossary
+initiating-event	concept		initiating event		active		IAEA-safety-glossary
+initiator	concept		initiator		active		IAEA-safety-glossary
+inner-cordoned-off-area	concept		inner cordoned off area		active		IAEA-safety-glossary
+inspection	concept		inspection		active		IAEA-safety-glossary
+inspection-imaging-device	concept		inspection imaging device		active		IAEA-safety-glossary
+institutional-control	concept		institutional control		active		IAEA-safety-glossary
+intake	concept		intake		active		IAEA-safety-glossary
+integrated-management-system	concept		integrated management system		active		IAEA-safety-glossary
+interacting-event	concept		interacting event		active		IAEA-safety-glossary
+interested-party	concept		interested party		active		IAEA-safety-glossary
+intermediate-bulk-container	concept		intermediate bulk container (IBC)		active		IAEA-safety-glossary
+internal-exposure	concept		internal exposure		active		IAEA-safety-glossary
+international-nuclear-and-radiological-event-scale	concept		International Nuclear and Radiological Event Scale (INES)		active		IAEA-safety-glossary
+interplate-tectonic-processes	concept		interplate tectonic processes		active		IAEA-safety-glossary
+intervention	concept		intervention		active		IAEA-safety-glossary
+intraplate	concept		intraplate		active		IAEA-safety-glossary
+intrusion	concept		intrusion (human)		active		IAEA-safety-glossary
+intrusion-barrier	concept		intrusion barrier		active		IAEA-safety-glossary
+investigation-level	concept		investigation level		active		IAEA-safety-glossary
+iodine-thyroid-blocking	concept		iodine thyroid blocking		active		IAEA-safety-glossary
+ionizing-radiation	concept		ionizing radiation		active		IAEA-safety-glossary
+irradiation-installation	concept		irradiation installation		active		IAEA-safety-glossary
+isolation	concept		isolation (of radioactive waste in a disposal facility)		active		IAEA-safety-glossary
+item-important-to-safety	concept		item important to safety		active		IAEA-safety-glossary
+justification	concept		justification		active		IAEA-safety-glossary
+kerma-k	concept		kerma, K		active		IAEA-safety-glossary
+knowledge-management	concept		knowledge management		active		IAEA-safety-glossary
+large-freight-container	concept		large freight container		active		IAEA-safety-glossary
+large-release-of-radioactive-material	concept		large release of radioactive material		active		IAEA-safety-glossary
+late-effect	concept		late effect		active		IAEA-safety-glossary
+latent-weakness	concept		latent weakness		active		IAEA-safety-glossary
+lava	concept		lava		active		IAEA-safety-glossary
+level	concept		level		active		IAEA-safety-glossary
+licence	concept		licence		active		IAEA-safety-glossary
+licensee	concept		licensee		active		IAEA-safety-glossary
+licensing-basis	concept		licensing basis		active		IAEA-safety-glossary
+licensing-process	concept		licensing process		active		IAEA-safety-glossary
+life-lifetime	concept		life, lifetime		active		IAEA-safety-glossary
+life-cycle-management	concept		life cycle management		active		IAEA-safety-glossary
+life-management	concept		life management		active		IAEA-safety-glossary
+lifetime	concept		lifetime		active		IAEA-safety-glossary
+lifetime-dose	concept		lifetime dose		active		IAEA-safety-glossary
+lifetime-management	concept		lifetime management		active		IAEA-safety-glossary
+lifetime-risk	concept		lifetime risk		active		IAEA-safety-glossary
+limit	concept		limit		active		IAEA-safety-glossary
+linear-no-threshold-hypothesis	concept		linear–no threshold (LNT) hypothesis		active		IAEA-safety-glossary
+logic	concept		logic		active		IAEA-safety-glossary
+long-lived-waste	concept		long lived waste		active		IAEA-safety-glossary
+low-dispersible-radioactive-material	concept		low dispersible radioactive material		active		IAEA-safety-glossary
+low-enriched-uranium	concept		low enriched uranium (LEU)		active		IAEA-safety-glossary
+low-linear-energy-transfer-radiation	concept		low linear energy transfer (LET) radiation		active		IAEA-safety-glossary
+low-specific-activity-material	concept		low specific activity (LSA) material		active		IAEA-safety-glossary
+low-toxicity-alpha-emitters	concept		low toxicity alpha emitters		active		IAEA-safety-glossary
+lower-limit-of-detection	concept		lower limit of detection		active		IAEA-safety-glossary
+lung-absorption-type	concept		lung absorption type		active		IAEA-safety-glossary
+magma	concept		magma		active		IAEA-safety-glossary
+magma-chamber	concept		magma chamber		active		IAEA-safety-glossary
+main-safety-function	concept		main safety function		active		IAEA-safety-glossary
+magnitude	concept		magnitude (of an earthquake)		active		IAEA-safety-glossary
+maintenance-bypass	concept		maintenance bypass		active		IAEA-safety-glossary
+management	concept		management (of sealed radioactive sources)		active		IAEA-safety-glossary
+management-self-assessment	concept		management self-assessment		active		IAEA-safety-glossary
+management-system	concept		management system		active		IAEA-safety-glossary
+management-system-review	concept		management system review		active		IAEA-safety-glossary
+mantle-earth-s	concept		mantle, Earth’s		active		IAEA-safety-glossary
+material-ageing	concept		material ageing		active		IAEA-safety-glossary
+mathematical-model	concept		mathematical model		active		IAEA-safety-glossary
+maximum-normal-operating-pressure	concept		maximum normal operating pressure		active		IAEA-safety-glossary
+maximum-potential-magnitude	concept		maximum potential magnitude		active		IAEA-safety-glossary
+mechanistic-model	concept		mechanistic model		active		IAEA-safety-glossary
+medical-exposure	concept		medical exposure		active		IAEA-safety-glossary
+medical-physicist	concept		medical physicist		active		IAEA-safety-glossary
+medical-radiation-facility	concept		medical radiation facility		active		IAEA-safety-glossary
+medical-radiation-technologist	concept		medical radiation technologist		active		IAEA-safety-glossary
+medical-radiological-equipment	concept		medical radiological equipment		active		IAEA-safety-glossary
+member-of-the-public	concept		member of the public		active		IAEA-safety-glossary
+migration	concept		migration		active		IAEA-safety-glossary
+minimization	concept		minimization (of waste)		active		IAEA-safety-glossary
+minimum-detectable-activity	concept		minimum detectable activity (MDA)		active		IAEA-safety-glossary
+minimum-significant-activity	concept		minimum significant activity (MSA)		active		IAEA-safety-glossary
+mitigatory-action	concept		mitigatory action		active		IAEA-safety-glossary
+mixed-waste	concept		mixed waste		active		IAEA-safety-glossary
+model	concept		model		active		IAEA-safety-glossary
+model-calibration	concept		model calibration		active		IAEA-safety-glossary
+model-validation	concept		model validation		active		IAEA-safety-glossary
+model-verification	concept		model verification		active		IAEA-safety-glossary
+monitoring	concept		monitoring		active		IAEA-safety-glossary
+multilateral-approval	concept		multilateral approval		active		IAEA-safety-glossary
+multiple-barriers	concept		multiple barriers		active		IAEA-safety-glossary
+multiple-safety-functions	concept		multiple safety functions		active		IAEA-safety-glossary
+multiplexing	concept		multiplexing		active		IAEA-safety-glossary
+multiplicative-risk-projection-model	concept		multiplicative risk projection model		active		IAEA-safety-glossary
+natural-analogue	concept		natural analogue		active		IAEA-safety-glossary
+natural-background	concept		natural background		active		IAEA-safety-glossary
+natural-source	concept		natural source		active		IAEA-safety-glossary
+natural-uranium	concept		natural uranium		active		IAEA-safety-glossary
+naturally-occurring-radioactive-material	concept		naturally occurring radioactive material (NORM)		active		IAEA-safety-glossary
+naturally-occurring-radionuclides	concept		naturally occurring radionuclides		active		IAEA-safety-glossary
+near-field	concept		near field		active		IAEA-safety-glossary
+near-miss	concept		near miss		active		IAEA-safety-glossary
+near-surface-disposal-facility	concept		near surface disposal facility		active		IAEA-safety-glossary
+non-fixed-contamination	concept		non-fixed contamination		active		IAEA-safety-glossary
+non-physical-ageing	concept		non-physical ageing		active		IAEA-safety-glossary
+non-radiological-consequences	concept		non-radiological consequences		active		IAEA-safety-glossary
+norm	concept		NORM		active		IAEA-safety-glossary
+norm-residue	concept		NORM residue		active		IAEA-safety-glossary
+norm-waste	concept		NORM waste		active		IAEA-safety-glossary
+normal-operation	concept		normal operation		active		IAEA-safety-glossary
+notification	concept		notification		active		IAEA-safety-glossary
+notification-point	concept		notification point		active		IAEA-safety-glossary
+notifying-state	concept		notifying State		active		IAEA-safety-glossary
+nuclear	concept		nuclear		active		IAEA-safety-glossary
+nuclear-accident	concept		nuclear accident		active		IAEA-safety-glossary
+nuclear-emergency	concept		nuclear emergency		active		IAEA-safety-glossary
+nuclear-facility	concept		nuclear facility		active		IAEA-safety-glossary
+nuclear-fuel	concept		nuclear fuel		active		IAEA-safety-glossary
+nuclear-fuel-cycle	concept		nuclear fuel cycle		active		IAEA-safety-glossary
+nuclear-fuel-cycle-facility	concept		nuclear fuel cycle facility		active		IAEA-safety-glossary
+nuclear-installation	concept		nuclear installation		active		IAEA-safety-glossary
+nuclear-material	concept		nuclear material		active		IAEA-safety-glossary
+nuclear-or-radiological-emergency	concept		nuclear or radiological emergency		active		IAEA-safety-glossary
+nuclear-security	concept		nuclear security		active		IAEA-safety-glossary
+nuclear-security-event	concept		nuclear security event		active		IAEA-safety-glossary
+observed-cause	concept		observed cause		active		IAEA-safety-glossary
+occupancy-factor	concept		occupancy factor		active		IAEA-safety-glossary
+off-site	concept		off-site (area)		active		IAEA-safety-glossary
+on-site	concept		on-site (area)		active		IAEA-safety-glossary
+open-nuclear-fuel-cycle	concept		open nuclear fuel cycle		active		IAEA-safety-glossary
+operating-conditions	concept		operating conditions		active		IAEA-safety-glossary
+operating-lifetime-operating-life	concept		operating lifetime, operating life		active		IAEA-safety-glossary
+operating-organization	concept		operating organization		active		IAEA-safety-glossary
+operating-period	concept		operating period		active		IAEA-safety-glossary
+operating-personnel	concept		operating personnel		active		IAEA-safety-glossary
+operation	concept		operation		active		IAEA-safety-glossary
+operational-bypass	concept		operational bypass		active		IAEA-safety-glossary
+operational-criteria	concept		operational criteria		active		IAEA-safety-glossary
+operational-intervention-level	concept		operational intervention level (OIL)		active		IAEA-safety-glossary
+operational-limits-and-conditions	concept		operational limits and conditions		active		IAEA-safety-glossary
+operational-period	concept		operational period		active		IAEA-safety-glossary
+operational-quantities	concept		operational quantities		active		IAEA-safety-glossary
+operational-states	concept		operational states		active		IAEA-safety-glossary
+operations-area	concept		operations area		active		IAEA-safety-glossary
+operations-boundary	concept		operations boundary		active		IAEA-safety-glossary
+operator	concept		operator		active		IAEA-safety-glossary
+optimization	concept		optimization (of protection and safety)		active		IAEA-safety-glossary
+orphan-source	concept		orphan source		active		IAEA-safety-glossary
+other-nuclear-or-radiological-emergency	concept		other nuclear or radiological emergency		active		IAEA-safety-glossary
+other-response-actions	concept		other response actions		active		IAEA-safety-glossary
+overpack	concept		overpack		active		IAEA-safety-glossary
+package	concept		package		active		IAEA-safety-glossary
+package-waste	concept		package, waste		active		IAEA-safety-glossary
+packaging	concept		packaging		active		IAEA-safety-glossary
+palaeoseismicity	concept		palaeoseismicity		active		IAEA-safety-glossary
+passenger-aircraft	concept		passenger aircraft		active		IAEA-safety-glossary
+passive-component	concept		passive component		active		IAEA-safety-glossary
+pathway	concept		pathway		active		IAEA-safety-glossary
+patient	concept		patient		active		IAEA-safety-glossary
+peak-ground-acceleration	concept		peak ground acceleration		active		IAEA-safety-glossary
+peer-review	concept		peer review		active		IAEA-safety-glossary
+performance-assessment	concept		performance assessment		active		IAEA-safety-glossary
+performance-indicator	concept		performance indicator		active		IAEA-safety-glossary
+performance-standard	concept		performance standard		active		IAEA-safety-glossary
+periodic-maintenance	concept		periodic maintenance		active		IAEA-safety-glossary
+periodic-safety-review	concept		periodic safety review		active		IAEA-safety-glossary
+permanent-relocation	concept		permanent relocation		active		IAEA-safety-glossary
+permanent-shutdown	concept		permanent shutdown		active		IAEA-safety-glossary
+person-or-organization	concept		person or organization		active		IAEA-safety-glossary
+personal-dose-equivalent-hp	concept		personal dose equivalent, Hp(d)		active		IAEA-safety-glossary
+phreatic-eruption	concept		phreatic eruption		active		IAEA-safety-glossary
+phreatomagmatic-eruption	concept		phreatomagmatic eruption		active		IAEA-safety-glossary
+physical-ageing	concept		physical ageing		active		IAEA-safety-glossary
+physical-diversity	concept		physical diversity		active		IAEA-safety-glossary
+physical-half-life	concept		physical half-life		active		IAEA-safety-glossary
+physical-model	concept		physical model		active		IAEA-safety-glossary
+physical-protection	concept		physical protection		active		IAEA-safety-glossary
+physical-separation	concept		physical separation		active		IAEA-safety-glossary
+physisorption	concept		physisorption		active		IAEA-safety-glossary
+planned-exposure-situation	concept		planned exposure situation		active		IAEA-safety-glossary
+planning-target-volume	concept		planning target volume		active		IAEA-safety-glossary
+plant-equipment	concept		plant equipment (for a nuclear power plant)		active		IAEA-safety-glossary
+plant-states	concept		plant states (considered in design)		active		IAEA-safety-glossary
+plinian-eruption	concept		plinian eruption		active		IAEA-safety-glossary
+pliocene	concept		Pliocene		active		IAEA-safety-glossary
+poison	concept		poison		active		IAEA-safety-glossary
+potential-alpha-energy	concept		potential alpha energy		active		IAEA-safety-glossary
+potential-exposure	concept		potential exposure		active		IAEA-safety-glossary
+practical-elimination	concept		practical elimination		active		IAEA-safety-glossary
+practice	concept		practice		active		IAEA-safety-glossary
+precautionary-action-zone	concept		precautionary action zone (PAZ)		active		IAEA-safety-glossary
+precautionary-urgent-protective-action	concept		precautionary urgent protective action		active		IAEA-safety-glossary
+predictive-maintenance	concept		predictive maintenance		active		IAEA-safety-glossary
+predisposal-management	concept		predisposal management (of waste)		active		IAEA-safety-glossary
+preparedness-stage	concept		preparedness stage		active		IAEA-safety-glossary
+pretreatment	concept		pretreatment (of waste)		active		IAEA-safety-glossary
+preventive-maintenance	concept		preventive maintenance		active		IAEA-safety-glossary
+primary-limit	concept		primary limit		active		IAEA-safety-glossary
+prime-mover	concept		prime mover		active		IAEA-safety-glossary
+probabilistic-analysis	concept		probabilistic analysis		active		IAEA-safety-glossary
+procedure	concept		procedure		active		IAEA-safety-glossary
+processing	concept		processing (of waste)		active		IAEA-safety-glossary
+projected-dose	concept		projected dose		active		IAEA-safety-glossary
+protection-and-safety	concept		protection and safety		active		IAEA-safety-glossary
+protection-of-the-environment	concept		protection of the environment		active		IAEA-safety-glossary
+protection-quantities	concept		protection quantities		active		IAEA-safety-glossary
+protection-system	concept		protection system		active		IAEA-safety-glossary
+protective-action	concept		protective action		active		IAEA-safety-glossary
+protective-task	concept		protective task		active		IAEA-safety-glossary
+publication-iaea	concept		publication, IAEA		active		IAEA-safety-glossary
+qualification	concept		qualification		active		IAEA-safety-glossary
+qualified-equipment	concept		qualified equipment		active		IAEA-safety-glossary
+qualified-expert	concept		qualified expert		active		IAEA-safety-glossary
+qualified-life	concept		qualified life		active		IAEA-safety-glossary
+quality-assurance	concept		quality assurance		active		IAEA-safety-glossary
+quality-control	concept		quality control (QC)		active		IAEA-safety-glossary
+quality-factor-q	concept		quality factor, Q		active		IAEA-safety-glossary
+radiation-detriment	concept		radiation detriment		active		IAEA-safety-glossary
+radiation-emergency	concept		radiation emergency		active		IAEA-safety-glossary
+radiation-generator	concept		radiation generator		active		IAEA-safety-glossary
+radiation-protection-officer	concept		radiation protection officer		active		IAEA-safety-glossary
+radiation-protection-programme	concept		radiation protection programme		active		IAEA-safety-glossary
+radiation-risks	concept		radiation risks		active		IAEA-safety-glossary
+radiation-safety	concept		radiation safety		active		IAEA-safety-glossary
+radiation-source	concept		radiation source		active		IAEA-safety-glossary
+radiation-weighting-factor-wr	concept		radiation weighting factor, wR		active		IAEA-safety-glossary
+radioactive	concept		radioactive		active		IAEA-safety-glossary
+radioactive-contents	concept		radioactive contents		active		IAEA-safety-glossary
+radioactive-discharges	concept		radioactive discharges		active		IAEA-safety-glossary
+radioactive-equilibrium	concept		radioactive equilibrium		active		IAEA-safety-glossary
+radioactive-half-life	concept		radioactive half-life		active		IAEA-safety-glossary
+radioactive-material	concept		radioactive material		active		IAEA-safety-glossary
+radioactive-source	concept		radioactive source		active		IAEA-safety-glossary
+radioactive-sources-safety-of	concept		radioactive sources, safety of		active		IAEA-safety-glossary
+radioactive-substance	concept		radioactive substance		active		IAEA-safety-glossary
+radioactive-waste-management	concept		radioactive waste management		active		IAEA-safety-glossary
+collection-chemical-volume-change-of-packaging	concept		Collection      Chemical                  Volume       Change of               Packaging		active		IAEA-safety-glossary
+radioactive-waste-management-facility	concept		radioactive waste management facility		active		IAEA-safety-glossary
+radioactivity	concept		radioactivity		active		IAEA-safety-glossary
+radiological-assessor	concept		radiological assessor		active		IAEA-safety-glossary
+radiological-emergency	concept		radiological emergency		active		IAEA-safety-glossary
+radiological-medical-practitioner	concept		radiological medical practitioner		active		IAEA-safety-glossary
+radiological-procedure	concept		radiological procedure		active		IAEA-safety-glossary
+radiological-protection	concept		radiological protection		active		IAEA-safety-glossary
+radionuclides-of-artificial-origin	concept		radionuclides of artificial origin		active		IAEA-safety-glossary
+radionuclides-of-natural-origin	concept		radionuclides of natural origin		active		IAEA-safety-glossary
+radiopharmacist	concept		radiopharmacist		active		IAEA-safety-glossary
+radon	concept		radon		active		IAEA-safety-glossary
+radon-progeny	concept		radon progeny		active		IAEA-safety-glossary
+reactivity	concept		reactivity, ρ		active		IAEA-safety-glossary
+recording-level	concept		recording level		active		IAEA-safety-glossary
+redundancy	concept		redundancy		active		IAEA-safety-glossary
+reference-air-kerma-rate	concept		reference air kerma rate		active		IAEA-safety-glossary
+reference-individual	concept		reference individual		active		IAEA-safety-glossary
+reference-level	concept		reference level		active		IAEA-safety-glossary
+reference-scenario	concept		reference scenario		active		IAEA-safety-glossary
+referring-medical-practitioner	concept		referring medical practitioner		active		IAEA-safety-glossary
+registrant	concept		registrant		active		IAEA-safety-glossary
+registration	concept		registration		active		IAEA-safety-glossary
+regulatory-body	concept		regulatory body		active		IAEA-safety-glossary
+regulatory-control	concept		regulatory control		active		IAEA-safety-glossary
+regulatory-inspection	concept		regulatory inspection		active		IAEA-safety-glossary
+relative-biological-effectiveness	concept		relative biological effectiveness (RBE)		active		IAEA-safety-glossary
+health-effect-critical-tissue-or-organ-exposurea-rbet-r	concept		Health effect           Critical tissue or organ                   Exposurea            RBET,R		active		IAEA-safety-glossary
+haematopoietic-external-and-internal-n-3	concept		Haematopoietic                                        External and internal n              3		active		IAEA-safety-glossary
+gastrointestinal-external-and-internal-n-3	concept		Gastrointestinal                                      External and internal n              3		active		IAEA-safety-glossary
+relative-biological-effectiveness-weighted-absorbed-dose-adt	concept		relative biological effectiveness (RBE) weighted absorbed dose, ADT		active		IAEA-safety-glossary
+relative-risk	concept		relative risk		active		IAEA-safety-glossary
+release	concept		release		active		IAEA-safety-glossary
+reliability	concept		reliability		active		IAEA-safety-glossary
+reliability-centred-maintenance	concept		reliability centred maintenance (RCM)		active		IAEA-safety-glossary
+relocation	concept		relocation		active		IAEA-safety-glossary
+remedial-action	concept		remedial action		active		IAEA-safety-glossary
+remediation	concept		remediation		active		IAEA-safety-glossary
+remediation-plan	concept		remediation plan		active		IAEA-safety-glossary
+remedy	concept		remedy		active		IAEA-safety-glossary
+removable-contamination	concept		removable contamination		active		IAEA-safety-glossary
+repair	concept		repair		active		IAEA-safety-glossary
+repository	concept		repository		active		IAEA-safety-glossary
+representative-person	concept		representative person		active		IAEA-safety-glossary
+reprocessing	concept		reprocessing		active		IAEA-safety-glossary
+requirement	concept		requirement (safety)		active		IAEA-safety-glossary
+research-reactor	concept		research reactor		active		IAEA-safety-glossary
+residual-dose	concept		residual dose		active		IAEA-safety-glossary
+response-organization	concept		response organization		active		IAEA-safety-glossary
+response-spectrum	concept		response spectrum		active		IAEA-safety-glossary
+response-time	concept		response time (of a component)		active		IAEA-safety-glossary
+restricted-linear-collision-stopping-power	concept		restricted linear collision stopping power		active		IAEA-safety-glossary
+restricted-use	concept		restricted use		active		IAEA-safety-glossary
+reuse	concept		reuse		active		IAEA-safety-glossary
+risk	concept		risk		active		IAEA-safety-glossary
+risk-assessment	concept		risk assessment		active		IAEA-safety-glossary
+risk-coefficient	concept		risk coefficient, γ		active		IAEA-safety-glossary
+risk-constraint	concept		risk constraint		active		IAEA-safety-glossary
+risk-monitor	concept		risk monitor		active		IAEA-safety-glossary
+risk-projection-model	concept		risk projection model		active		IAEA-safety-glossary
+rock-igneous	concept		rock, igneous		active		IAEA-safety-glossary
+root-cause	concept		root cause		active		IAEA-safety-glossary
+root-uptake	concept		root uptake		active		IAEA-safety-glossary
+routine-monitoring	concept		routine monitoring		active		IAEA-safety-glossary
+runup	concept		runup		active		IAEA-safety-glossary
+safe-state	concept		safe state		active		IAEA-safety-glossary
+safeguards-agreement	concept		safeguards agreement		active		IAEA-safety-glossary
+safety	concept		safety		active		IAEA-safety-glossary
+safety-action	concept		safety action		active		IAEA-safety-glossary
+safety-actuation-system	concept		safety actuation system		active		IAEA-safety-glossary
+safety-assessment	concept		safety assessment		active		IAEA-safety-glossary
+safety-categorization	concept		safety categorization		active		IAEA-safety-glossary
+safety-category	concept		safety category		active		IAEA-safety-glossary
+safety-class	concept		safety class		active		IAEA-safety-glossary
+safety-committee	concept		safety committee		active		IAEA-safety-glossary
+safety-culture	concept		safety culture		active		IAEA-safety-glossary
+safety-feature	concept		safety feature (for design extension conditions)		active		IAEA-safety-glossary
+safety-group	concept		safety group		active		IAEA-safety-glossary
+safety-indicator	concept		safety indicator		active		IAEA-safety-glossary
+safety-issues	concept		safety issues		active		IAEA-safety-glossary
+safety-layers	concept		safety layers		active		IAEA-safety-glossary
+safety-limits	concept		safety limits		active		IAEA-safety-glossary
+safety-measure	concept		safety measure		active		IAEA-safety-glossary
+safety-of-radioactive-sources	concept		safety of radioactive sources		active		IAEA-safety-glossary
+safety-related-item	concept		safety related item		active		IAEA-safety-glossary
+safety-related-system	concept		safety related system		active		IAEA-safety-glossary
+safety-standards	concept		safety standards		active		IAEA-safety-glossary
+safety-system	concept		safety system		active		IAEA-safety-glossary
+safety-system-settings	concept		safety system settings		active		IAEA-safety-glossary
+safety-system-support-features	concept		safety system support features		active		IAEA-safety-glossary
+safety-task	concept		safety task		active		IAEA-safety-glossary
+scenario	concept		scenario		active		IAEA-safety-glossary
+scram	concept		scram		active		IAEA-safety-glossary
+screening	concept		screening		active		IAEA-safety-glossary
+screening-distance-value	concept		screening distance value (SDV)		active		IAEA-safety-glossary
+screening-probability-level	concept		screening probability level (SPL)		active		IAEA-safety-glossary
+seabed-disposal	concept		seabed disposal		active		IAEA-safety-glossary
+sealed-source	concept		sealed source		active		IAEA-safety-glossary
+security	concept		security		active		IAEA-safety-glossary
+segregation	concept		segregation		active		IAEA-safety-glossary
+seismogenic-structure	concept		seismogenic structure		active		IAEA-safety-glossary
+seismotectonic-model	concept		seismotectonic model		active		IAEA-safety-glossary
+self-assessment	concept		self-assessment		active		IAEA-safety-glossary
+senior-management	concept		senior management		active		IAEA-safety-glossary
+service-conditions	concept		service conditions		active		IAEA-safety-glossary
+service-life	concept		service life		active		IAEA-safety-glossary
+severe-accident-management	concept		severe accident management		active		IAEA-safety-glossary
+severe-deterministic-effect	concept		severe deterministic effect		active		IAEA-safety-glossary
+sheltering	concept		sheltering		active		IAEA-safety-glossary
+shipment	concept		shipment		active		IAEA-safety-glossary
+short-lived-waste	concept		short lived waste		active		IAEA-safety-glossary
+shutdown	concept		shutdown		active		IAEA-safety-glossary
+shutdown-reactivity	concept		shutdown reactivity		active		IAEA-safety-glossary
+sievert	concept		sievert (Sv)		active		IAEA-safety-glossary
+significant-transboundary-release	concept		significant transboundary release		active		IAEA-safety-glossary
+single-failure	concept		single failure		active		IAEA-safety-glossary
+single-failure-criterion	concept		single failure criterion		active		IAEA-safety-glossary
+site-area	concept		site area		active		IAEA-safety-glossary
+site-area-emergency	concept		site area emergency		active		IAEA-safety-glossary
+site-boundary	concept		site boundary		active		IAEA-safety-glossary
+site-characterization	concept		site characterization		active		IAEA-safety-glossary
+site-confirmation	concept		site confirmation (in the siting process for a disposal facility)		active		IAEA-safety-glossary
+site-evaluation	concept		site evaluation		active		IAEA-safety-glossary
+site-personnel	concept		site personnel		active		IAEA-safety-glossary
+site-response	concept		site (seismic) response		active		IAEA-safety-glossary
+site-selection	concept		site selection		active		IAEA-safety-glossary
+site-survey	concept		site survey		active		IAEA-safety-glossary
+site-verification	concept		site verification		active		IAEA-safety-glossary
+siting	concept		siting		active		IAEA-safety-glossary
+sl-1-sl-2	concept		SL-1, SL-2		active		IAEA-safety-glossary
+small-freight-container	concept		small freight container		active		IAEA-safety-glossary
+somatic-effect	concept		somatic effect		active		IAEA-safety-glossary
+sorption	concept		sorption		active		IAEA-safety-glossary
+source	concept		source		active		IAEA-safety-glossary
+source-material	concept		source material		active		IAEA-safety-glossary
+source-monitoring	concept		source monitoring		active		IAEA-safety-glossary
+source-region	concept		source region		active		IAEA-safety-glossary
+special-arrangement	concept		special arrangement		active		IAEA-safety-glossary
+special-facility	concept		special facility		active		IAEA-safety-glossary
+special-fissionable-material	concept		special fissionable material		active		IAEA-safety-glossary
+special-form-radioactive-material	concept		special form radioactive material		active		IAEA-safety-glossary
+special-monitoring	concept		special monitoring		active		IAEA-safety-glossary
+special-population-group	concept		special population group		active		IAEA-safety-glossary
+spent-fuel	concept		spent fuel		active		IAEA-safety-glossary
+spent-fuel-management	concept		spent fuel management		active		IAEA-safety-glossary
+spent-fuel-management-facility	concept		spent fuel management facility		active		IAEA-safety-glossary
+spent-source	concept		spent source		active		IAEA-safety-glossary
+standards-dosimetry-laboratory	concept		standards dosimetry laboratory		active		IAEA-safety-glossary
+state-of-destination	concept		State of destination		active		IAEA-safety-glossary
+state-of-origin	concept		State of origin		active		IAEA-safety-glossary
+state-of-transit	concept		State of transit		active		IAEA-safety-glossary
+stochastic-analysis	concept		stochastic analysis		active		IAEA-safety-glossary
+stochastic-effect	concept		stochastic effect		active		IAEA-safety-glossary
+storage	concept		storage		active		IAEA-safety-glossary
+strombolian-eruption	concept		strombolian eruption		active		IAEA-safety-glossary
+strongly-penetrating-radiation	concept		strongly penetrating radiation		active		IAEA-safety-glossary
+structure	concept		structure		active		IAEA-safety-glossary
+structures-systems-and-components	concept		structures, systems and components (SSCs)		active		IAEA-safety-glossary
+sub-seabed-disposal	concept		sub-seabed disposal		active		IAEA-safety-glossary
+substantiation	concept		substantiation		active		IAEA-safety-glossary
+supervised-area	concept		supervised area		active		IAEA-safety-glossary
+supplier	concept		supplier (of a source)		active		IAEA-safety-glossary
+surface-contaminated-object	concept		surface contaminated object (SCO)		active		IAEA-safety-glossary
+surface-faulting	concept		surface faulting		active		IAEA-safety-glossary
+surveillance	concept		surveillance		active		IAEA-safety-glossary
+surveillance-testing	concept		surveillance testing		active		IAEA-safety-glossary
+survey	concept		survey		active		IAEA-safety-glossary
+system-code	concept		system code		active		IAEA-safety-glossary
+system-code-validation	concept		system code validation		active		IAEA-safety-glossary
+system-code-verification	concept		system code verification		active		IAEA-safety-glossary
+system-validation	concept		system validation		active		IAEA-safety-glossary
+tailings	concept		tailings		active		IAEA-safety-glossary
+tank	concept		tank		active		IAEA-safety-glossary
+target-tissue-or-organ	concept		target tissue or organ		active		IAEA-safety-glossary
+task-related-monitoring	concept		task related monitoring		active		IAEA-safety-glossary
+technological-obsolescence	concept		technological obsolescence		active		IAEA-safety-glossary
+temporary-relocation	concept		temporary relocation		active		IAEA-safety-glossary
+therapeutic-exposure	concept		therapeutic exposure		active		IAEA-safety-glossary
+thermodynamic-diameter	concept		thermodynamic diameter		active		IAEA-safety-glossary
+thorium-series	concept		thorium series		active		IAEA-safety-glossary
+through-or-into	concept		through or into		active		IAEA-safety-glossary
+time-based-maintenance	concept		time based maintenance		active		IAEA-safety-glossary
+tissue-equivalent-material	concept		tissue equivalent material		active		IAEA-safety-glossary
+tissue-substitute	concept		tissue substitute		active		IAEA-safety-glossary
+tissue-weighting-factor-wt	concept		tissue weighting factor, wT		active		IAEA-safety-glossary
+transboundary-exposure	concept		transboundary exposure		active		IAEA-safety-glossary
+transboundary-movement	concept		transboundary movement		active		IAEA-safety-glossary
+transient-population-group	concept		transient population group		active		IAEA-safety-glossary
+transnational-emergency	concept		transnational emergency		active		IAEA-safety-glossary
+transport-index	concept		transport index (TI)		active		IAEA-safety-glossary
+transportation	concept		transportation		active		IAEA-safety-glossary
+treatment	concept		treatment		active		IAEA-safety-glossary
+type-a-b-b-c-package	concept		Type A/B(U)/B(M)/C package		active		IAEA-safety-glossary
+ultimate-heat-sink	concept		ultimate heat sink		active		IAEA-safety-glossary
+ultimate-heat-transport-system	concept		ultimate heat transport system		active		IAEA-safety-glossary
+unattached-fraction	concept		unattached fraction		active		IAEA-safety-glossary
+uncertainty	concept		uncertainty		active		IAEA-safety-glossary
+uncertainty-analysis	concept		uncertainty analysis		active		IAEA-safety-glossary
+uniform-hazard-response-spectrum	concept		uniform hazard response spectrum		active		IAEA-safety-glossary
+unilateral-approval	concept		unilateral approval		active		IAEA-safety-glossary
+unirradiated-thorium	concept		unirradiated thorium		active		IAEA-safety-glossary
+unirradiated-uranium	concept		unirradiated uranium		active		IAEA-safety-glossary
+unrestricted-linear-energy-transfer-l	concept		unrestricted linear energy transfer, L∞		active		IAEA-safety-glossary
+unrestricted-use	concept		unrestricted use		active		IAEA-safety-glossary
+unsealed-source	concept		unsealed source		active		IAEA-safety-glossary
+uptake	concept		uptake		active		IAEA-safety-glossary
+uranium	concept		uranium		active		IAEA-safety-glossary
+uranium-enriched-in-the-isotope-uranium-235-or-uranium-233	concept		uranium enriched in the isotope uranium-235 or uranium-233		active		IAEA-safety-glossary
+uranium-series	concept		uranium series		active		IAEA-safety-glossary
+urgent-protective-action	concept		urgent protective action		active		IAEA-safety-glossary
+urgent-protective-action-planning-zone	concept		urgent protective action planning zone (UPZ)		active		IAEA-safety-glossary
+urgent-response-phase	concept		urgent response phase		active		IAEA-safety-glossary
+use	concept		use		active		IAEA-safety-glossary
