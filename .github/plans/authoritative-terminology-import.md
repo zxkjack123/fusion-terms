@@ -110,7 +110,7 @@
 
 ### Phase 2: ITER Fusion Glossary 抓取
 
-#### Task 2.1: 编写 ITER Glossary 抓取脚本
+#### ✅ Task 2.1: 编写 ITER Glossary 抓取脚本
 
 - **目标**：从 `iter.org/fusion-glossary` 抓取 142 条术语 + 定义，输出 staging TSV
 - **修改内容**：
