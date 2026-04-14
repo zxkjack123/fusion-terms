@@ -392,3 +392,121 @@ def test_safe_import_rolls_back_on_timeout(tmp_path: Path) -> None:
     assert "timed out" in p.stderr
     # State should be rolled back to BEFORE.
     assert state_file.read_text("utf-8") == "BEFORE\n"
+
+
+# ---- Phase 1 partial-failure tests (repo-hardening-2026-04-14) ----
+
+
+def test_create_backup_cleans_up_on_copy_failure(tmp_path: Path) -> None:
+    """If _copy_any fails mid-backup, the snapshot dir must not exist."""
+    from pipeline.rime_import_safe import create_backup
+
+    src1 = tmp_path / "src1"
+    src1.mkdir()
+    (src1 / "a.txt").write_text("aaa")
+
+    src2 = tmp_path / "src2"
+    src2.mkdir()
+    (src2 / "b.txt").write_text("bbb")
+
+    backup_root = tmp_path / "backups"
+    backup_root.mkdir()
+
+    call_count = 0
+    _real_copy_any = __import__(
+        "pipeline.rime_import_safe", fromlist=["_copy_any"]
+    )._copy_any
+
+    def _failing_copy(src: Path, dst: Path) -> None:
+        nonlocal call_count
+        call_count += 1
+        if call_count >= 2:
+            raise OSError("simulated disk failure")
+        _real_copy_any(src, dst)
+
+    import pipeline.rime_import_safe as mod
+
+    original = mod._copy_any
+    mod._copy_any = _failing_copy
+    try:
+        with pytest.raises(OSError, match="simulated disk failure"):
+            create_backup(
+                backup_root=backup_root,
+                backup_name="snap1",
+                paths=[src1, src2],
+            )
+    finally:
+        mod._copy_any = original
+
+    # The final snapshot dir must not exist.
+    assert not (backup_root / "snap1").exists()
+    # No _tmp leftover either.
+    leftover = [x for x in backup_root.iterdir() if x.name.startswith("_tmp")]
+    assert leftover == []
+
+
+def test_rollback_preserves_original_on_restore_failure(
+    tmp_path: Path,
+) -> None:
+    """If restore fails for one item, originals are not corrupted."""
+    from pipeline.rime_import_safe import create_backup, rollback_from_manifest
+
+    # Create two source dirs to back up.
+    src1 = tmp_path / "data1"
+    src1.mkdir()
+    (src1 / "f.txt").write_text("original-1")
+
+    src2 = tmp_path / "data2"
+    src2.mkdir()
+    (src2 / "g.txt").write_text("original-2")
+
+    backup_root = tmp_path / "backups"
+    backup_root.mkdir()
+
+    manifest = create_backup(
+        backup_root=backup_root,
+        backup_name="snap",
+        paths=[src1, src2],
+    )
+
+    # Modify originals after backup.
+    (src1 / "f.txt").write_text("modified-1")
+    (src2 / "g.txt").write_text("modified-2")
+
+    # Make src2's parent read-only so the restore staging fails.
+    src2.chmod(0o000)
+    try:
+        with pytest.raises(SystemExit, match="rollback failed"):
+            rollback_from_manifest(manifest)
+    finally:
+        src2.chmod(0o755)
+
+    # src1 may or may not have been restored (it's processed first in
+    # sorted order), but the key property is that no data is lost.
+    # src2 must still exist (permissions were the issue, not deletion).
+    assert src2.exists()
+
+
+def test_rollback_handles_file_restore_atomically(tmp_path: Path) -> None:
+    """A file-type restore replaces content atomically."""
+    from pipeline.rime_import_safe import create_backup, rollback_from_manifest
+
+    target = tmp_path / "myfile.txt"
+    target.write_text("before-backup")
+
+    backup_root = tmp_path / "backups"
+    backup_root.mkdir()
+
+    manifest = create_backup(
+        backup_root=backup_root,
+        backup_name="snap",
+        paths=[target],
+    )
+
+    # Modify the file.
+    target.write_text("after-modify")
+    assert target.read_text() == "after-modify"
+
+    # Rollback should restore original content.
+    rollback_from_manifest(manifest)
+    assert target.read_text() == "before-backup"

@@ -2,9 +2,11 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import shutil
 import subprocess
 import sys
+import tempfile
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
@@ -115,62 +117,95 @@ def create_backup(
     backup_name: str,
     paths: list[Path],
 ) -> Path:
-    """Create a backup snapshot and return manifest path."""
+    """Create a backup snapshot and return manifest path.
+
+    The snapshot is built in a temporary directory under *backup_root*
+    and atomically renamed into place so that a partial failure never
+    leaves a half-built snapshot behind.
+    """
 
     snapshot_dir = backup_root / backup_name
-    snapshot_dir.mkdir(parents=True, exist_ok=False)
-    snapshot_root = snapshot_dir.resolve()
+    # Build in a sibling temp dir; same filesystem guarantees atomic rename.
+    tmp_dir = backup_root / f"_tmp_{backup_name}_{os.getpid()}"
+    try:
+        tmp_dir.mkdir(parents=True, exist_ok=False)
+        tmp_root = tmp_dir.resolve()
 
-    items: list[BackupItem] = []
+        items: list[BackupItem] = []
 
-    for p in paths:
-        if not p.exists():
-            continue
-        rel = str(p).lstrip("/")
-        backup_path = snapshot_dir / rel
-        backup_path_resolved = backup_path.resolve()
-        if (
-            backup_path_resolved != snapshot_root
-            and not backup_path_resolved.is_relative_to(snapshot_root)
-        ):
+        for p in paths:
+            if not p.exists():
+                continue
+            rel = str(p).lstrip("/")
+            backup_path = tmp_dir / rel
+            backup_path_resolved = backup_path.resolve()
+            if (
+                backup_path_resolved != tmp_root
+                and not backup_path_resolved.is_relative_to(tmp_root)
+            ):
+                raise SystemExit(
+                    "safe import refused: backup path escapes snapshot "
+                    f"directory: {p}"
+                )
+
+            kind = "dir" if p.is_dir() else "file"
+            _copy_any(p, backup_path_resolved)
+            items.append(
+                BackupItem(
+                    original=str(p),
+                    backup=str(
+                        # Record the *final* path (under snapshot_dir),
+                        # not the temporary staging path.
+                        snapshot_dir / rel
+                    ).rstrip("/"),
+                    kind=kind,
+                )
+            )
+
+        if not items:
             raise SystemExit(
-                "safe import refused: backup path escapes snapshot "
-                f"directory: {p}"
+                "safe import failed: no existing backup paths found; "
+                "refusing to import"
             )
 
-        kind = "dir" if p.is_dir() else "file"
-        _copy_any(p, backup_path_resolved)
-        items.append(
-            BackupItem(
-                original=str(p),
-                backup=str(backup_path_resolved),
-                kind=kind,
-            )
+        manifest = {
+            "schema_version": 1,
+            "backup_root": str(backup_root),
+            "backup_name": backup_name,
+            "snapshot_dir": str(snapshot_dir),
+            "items": [item.__dict__ for item in items],
+        }
+
+        # Write manifest atomically via temp-file + os.replace().
+        manifest_path_tmp = tmp_dir / "manifest.json"
+        fd, tmp_manifest = tempfile.mkstemp(
+            dir=str(tmp_dir), suffix=".manifest.tmp"
         )
+        try:
+            with os.fdopen(fd, "w", encoding="utf-8") as f:
+                f.write(
+                    json.dumps(
+                        manifest, ensure_ascii=False, indent=2, sort_keys=True
+                    )
+                    + "\n"
+                )
+            os.replace(tmp_manifest, str(manifest_path_tmp))
+        except BaseException:
+            try:
+                os.unlink(tmp_manifest)
+            except OSError:
+                pass
+            raise
 
-    if not items:
-        raise SystemExit(
-            "safe import failed: no existing backup paths found; "
-            "refusing to import"
-        )
+        # Atomically move the completed snapshot into place.
+        os.rename(str(tmp_dir), str(snapshot_dir))
+    except BaseException:
+        # Clean up the staging directory on any failure.
+        if tmp_dir.exists():
+            shutil.rmtree(tmp_dir, ignore_errors=True)
+        raise
 
-    manifest = {
-        "schema_version": 1,
-        "backup_root": str(backup_root),
-        "backup_name": backup_name,
-        "snapshot_dir": str(snapshot_dir),
-        "items": [item.__dict__ for item in items],
-    }
-
-    manifest_path = snapshot_dir / "manifest.json"
-    manifest_path.write_text(
-        (
-            json.dumps(manifest, ensure_ascii=False, indent=2, sort_keys=True)
-            + "\n"
-        ),
-        encoding="utf-8",
-    )
-    return manifest_path
+    return snapshot_dir / "manifest.json"
 
 
 def rollback_from_manifest(manifest_path: Path) -> None:
@@ -240,22 +275,70 @@ def rollback_from_manifest(manifest_path: Path) -> None:
         # Ensure parent exists.
         orig.parent.mkdir(parents=True, exist_ok=True)
 
-        def _remove_existing(p: Path) -> None:
-            if not p.exists():
-                return
-            if p.is_dir() and not p.is_symlink():
-                shutil.rmtree(p)
-            else:
-                p.unlink()
+        # Restore to a sibling temp path first, then atomically swap
+        # into place.  This avoids the old pattern of "delete orig,
+        # then copy backup" which left orig gone on a mid-copy failure.
+        restore_tmp = orig.parent / (orig.name + "._restore_tmp")
 
-        if bak.is_dir():
+        try:
+            # Stage the backup into the temp location.
+            if restore_tmp.exists():
+                if restore_tmp.is_dir() and not restore_tmp.is_symlink():
+                    shutil.rmtree(restore_tmp)
+                else:
+                    restore_tmp.unlink()
+
+            if bak.is_dir():
+                shutil.copytree(bak, restore_tmp)
+            else:
+                shutil.copy2(bak, restore_tmp)
+        except OSError as exc:
+            # Staging failed — clean up temp and abort this item,
+            # but the original path is untouched.
+            if restore_tmp.exists():
+                shutil.rmtree(restore_tmp, ignore_errors=True)
+            raise SystemExit(
+                f"rollback failed: could not stage restore for "
+                f"{orig}: {exc}"
+            ) from exc
+
+        try:
+            # Atomically swap the staged restore into the target.
+            # For files: os.replace() is atomic on POSIX.
+            # For directories: os.rename() is atomic on the same
+            # filesystem (backup_root and orig are typically both
+            # under $HOME).
             if orig.exists():
-                _remove_existing(orig)
-            shutil.copytree(bak, orig)
-        else:
-            if orig.exists():
-                _remove_existing(orig)
-            shutil.copy2(bak, orig)
+                # Move the current original aside so rename can proceed.
+                aside = orig.parent / (orig.name + "._rollback_aside")
+                if aside.exists():
+                    if aside.is_dir() and not aside.is_symlink():
+                        shutil.rmtree(aside)
+                    else:
+                        aside.unlink()
+                os.rename(str(orig), str(aside))
+                try:
+                    os.rename(str(restore_tmp), str(orig))
+                except OSError:
+                    # Rename failed — move original back.
+                    os.rename(str(aside), str(orig))
+                    raise
+                # Success — remove the aside.
+                if aside.exists():
+                    if aside.is_dir() and not aside.is_symlink():
+                        shutil.rmtree(aside)
+                    else:
+                        aside.unlink()
+            else:
+                os.rename(str(restore_tmp), str(orig))
+        except OSError as exc:
+            # Swap failed — clean up temp; original is protected.
+            if restore_tmp.exists():
+                shutil.rmtree(restore_tmp, ignore_errors=True)
+            raise SystemExit(
+                f"rollback failed: could not swap restore into "
+                f"{orig}: {exc}"
+            ) from exc
 
     print(
         f"rollback OK: restored {len(items_sorted)} paths from "
