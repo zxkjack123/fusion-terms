@@ -7624,3 +7624,143 @@ X射线绕射	x-ray-diffraction	zh	forbidden	误译diffraction(衍射≠绕射)�
 # -- tungsten-fuzz (钨绒毛): add more
 钨起毛	tungsten-fuzz	zh	forbidden	误译fuzz(绒毛≠起毛)：正确为 钨绒毛
 氦绒毛	tungsten-fuzz	zh	alias	helium-induced context
+# ==== Batch 79: PWI anti-pattern expansion phase 5 ====
+# ---- New concept: hydrogen-embrittlement (氢脆) ----
+hydrogen embrittlement	hydrogen-embrittlement	en	preferred	preferred en
+氢脆	hydrogen-embrittlement	zh	preferred	preferred zh
+hydrogen-embrittlement	hydrogen-embrittlement	en	alias	hyphenated form
+氢致脆化	hydrogen-embrittlement	zh	alias	expanded zh
+氢脆化	hydrogen-embrittlement	zh	forbidden	误译(氢脆≠氢脆化,多余化字)：正确为 氢脆
+氢脆性	hydrogen-embrittlement	zh	forbidden	误译(氢脆≠氢脆性,脆性≠脆化现象)：正确为 氢脆
+氢致脆性	hydrogen-embrittlement	zh	forbidden	误译(氢脆≠氢致脆性)：正确为 氢脆
+# ---- Anti-patterns for existing 0-coverage concepts (Batch 79) ----
+# -- fluence (注量): add neutron fluence aliases + anti-patterns
+neutron fluence	fluence	en	alias	neutron-specific
+中子注量	fluence	zh	alias	neutron-specific zh
+neutron-fluence	fluence	en	alias	hyphenated neutron form
+中子累积通量	fluence	zh	forbidden	误译fluence(注量≠累积通量)：正确为 注量/中子注量
+注量率	fluence	zh	forbidden	注量率=fluence rate(不同物理量)：注量=时间积分
+# -- fission-yield (裂变产额)
+裂变产量	fission-yield	zh	forbidden	误译yield(产额≠产量)：正确为 裂变产额
+核裂变产率	fission-yield	zh	forbidden	误译yield(产额≠产率)：正确为 裂变产额
+# -- yield-strength (屈服强度)
+屈服力	yield-strength	zh	forbidden	误译strength(强度≠力)：正确为 屈服强度
+产量强度	yield-strength	zh	forbidden	AI误译yield(屈服≠产量)：正确为 屈服强度
+产出强度	yield-strength	zh	forbidden	AI误译yield(屈服≠产出)：正确为 屈服强度
+# -- ultimate-tensile-strength (极限抗拉强度)
+终极拉伸强度	ultimate-tensile-strength	zh	forbidden	AI误译ultimate(极限≠终极)：正确为 极限抗拉强度
+最终拉力强度	ultimate-tensile-strength	zh	forbidden	AI误译ultimate+tensile：正确为 极限抗拉强度
+极端拉伸强度	ultimate-tensile-strength	zh	forbidden	AI误译ultimate(极限≠极端)：正确为 极限抗拉强度
+# -- elastic-modulus (弹性模量)
+弹性模数	elastic-modulus	zh	forbidden	误译modulus(模量≠模数)：正确为 弹性模量
+弹力模量	elastic-modulus	zh	forbidden	误译elastic(弹性≠弹力)：正确为 弹性模量
+# -- youngs-modulus (杨氏模量)
+杨模量	youngs-modulus	zh	forbidden	缺"氏"字：正确为 杨氏模量
+扬氏模量	youngs-modulus	zh	forbidden	错别字(杨≠扬)：正确为 杨氏模量
+# -- fracture-mechanics (断裂力学)
+骨折力学	fracture-mechanics	zh	forbidden	AI误译fracture(断裂≠骨折,医学义)：正确为 断裂力学
+碎裂力学	fracture-mechanics	zh	forbidden	误译fracture(断裂≠碎裂)：正确为 断裂力学
+# -- residual-stress (残余应力)
+残余压力	residual-stress	zh	forbidden	误译stress(应力≠压力)：正确为 残余应力
+剩余应力	residual-stress	zh	deprecated	非标准(残余≠剩余)：应为 残余应力
+残留应力	residual-stress	zh	deprecated	非标准(残余≠残留)：应为 残余应力
+# -- stress-intensity-factor (应力强度因子)
+应力强度系数	stress-intensity-factor	zh	deprecated	非标准(因子≠系数)：应为 应力强度因子
+应力集中因子	stress-intensity-factor	zh	forbidden	与应力集中系数(SCF)混淆：正确为 应力强度因子
+# -- tensile-test (拉伸试验)
+拉力试验	tensile-test	zh	forbidden	误译tensile(拉伸≠拉力)：正确为 拉伸试验
+拉伸测试	tensile-test	zh	deprecated	非标准(试验≠测试)：应为 拉伸试验
+张力测试	tensile-test	zh	forbidden	误译tensile(拉伸≠张力)：正确为 拉伸试验
+# -- charpy-impact (夏比冲击)
+夏比冲击试验	charpy-impact	zh	alias	expanded form
+查比冲击	charpy-impact	zh	forbidden	译名错(Charpy=夏比≠查比)：正确为 夏比冲击
+夏比撞击	charpy-impact	zh	forbidden	误译impact(冲击≠撞击)：正确为 夏比冲击
+# -- weldability (可焊性)
+焊接性	weldability	zh	deprecated	非标准(可焊性≠焊接性)：应为 可焊性
+可焊接性	weldability	zh	deprecated	啰嗦(可焊性≠可焊接性)：应为 可焊性
+焊接能力	weldability	zh	forbidden	误译-ability(可焊性≠焊接能力)：正确为 可焊性
+# -- electron-beam-welding (电子束焊接)
+电子束焊	electron-beam-welding	zh	alias	short form
+电子射线焊接	electron-beam-welding	zh	forbidden	误译beam(束≠射线)：正确为 电子束焊接
+# -- expansion-joint (膨胀节)
+膨胀关节	expansion-joint	zh	forbidden	AI误译joint(节≠关节,医学义)：正确为 膨胀节
+扩张节	expansion-joint	zh	forbidden	误译expansion(膨胀≠扩张)：正确为 膨胀节
+伸缩关节	expansion-joint	zh	forbidden	AI误译joint(节≠关节)：正确为 膨胀节/伸缩节
+# -- flow-accelerated-corrosion (流动加速腐蚀)
+流加速腐蚀	flow-accelerated-corrosion	zh	deprecated	缺"动"字：应为 流动加速腐蚀
+流量加速腐蚀	flow-accelerated-corrosion	zh	forbidden	误译flow(流动≠流量)：正确为 流动加速腐蚀
+# -- breeder-material (增殖材料)
+繁殖材料	breeder-material	zh	forbidden	误译breeding(增殖≠繁殖)：正确为 增殖材料
+育种材料	breeder-material	zh	forbidden	误译breeding(增殖≠育种)：正确为 增殖材料
+增殖者材料	breeder-material	zh	forbidden	AI误译breeder(增殖材料≠增殖者材料)：正确为 增殖材料
+# -- turbomolecular-pump (涡轮分子泵)
+涡轮泵	turbomolecular-pump	zh	deprecated	缺"分子"：应为 涡轮分子泵
+透平分子泵	turbomolecular-pump	zh	deprecated	非标准(涡轮≠透平)：应为 涡轮分子泵
+# -- plasma-breakdown (等离子体击穿)
+等离子体崩溃	plasma-breakdown	zh	forbidden	AI误译breakdown(击穿≠崩溃)：正确为 等离子体击穿
+血浆击穿	plasma-breakdown	zh	forbidden	AI误译plasma(等离子体≠血浆)：正确为 等离子体击穿
+等离子体故障	plasma-breakdown	zh	forbidden	AI误译breakdown(击穿≠故障)：正确为 等离子体击穿
+# -- plasma-termination (等离子体终止)
+等离子体终端	plasma-termination	zh	forbidden	AI误译termination(终止≠终端)：正确为 等离子体终止
+血浆终止	plasma-termination	zh	forbidden	AI误译plasma(等离子体≠血浆)：正确为 等离子体终止
+等离子体结束	plasma-termination	zh	forbidden	误译termination(终止≠结束)：正确为 等离子体终止
+# -- plasma-material-interaction (等离子体-材料互作)
+血浆材料互作	plasma-material-interaction	zh	forbidden	AI误译plasma(等离子体≠血浆)：正确为 等离子体-材料互作
+血浆材料耦合	plasma-material-interaction	zh	forbidden	AI误译plasma(等离子体≠血浆)：正确为 等离子体-材料互作
+等离子材料耦合	plasma-material-interaction	zh	deprecated	缺"体"字：应为 等离子体-材料互作
+# -- radiation-protection (辐射防护)
+辐射保护	radiation-protection	zh	forbidden	误译protection(防护≠保护)：正确为 辐射防护
+放射防护	radiation-protection	zh	deprecated	非标准(辐射≠放射)：应为 辐射防护
+# -- dose-conversion-coefficient (剂量转换系数)
+剂量转换因子	dose-conversion-coefficient	zh	deprecated	非标准(系数≠因子)：应为 剂量转换系数
+剂量换算系数	dose-conversion-coefficient	zh	deprecated	非标准(转换≠换算)：应为 剂量转换系数
+# -- equivalent-dose (当量剂量)
+等价剂量	equivalent-dose	zh	forbidden	AI误译equivalent(当量≠等价)：正确为 当量剂量
+# -- occupational-radiation-exposure (职业辐射照射)
+职业辐射暴露	occupational-radiation-exposure	zh	forbidden	误译exposure(照射≠暴露)：正确为 职业辐射照射
+职业放射暴露	occupational-radiation-exposure	zh	forbidden	误译radiation+exposure：正确为 职业辐射照射
+# -- personal-dose-equivalent (个人剂量当量)
+个人等效剂量	personal-dose-equivalent	zh	forbidden	误译equivalent(当量≠等效)：正确为 个人剂量当量
+个人辐射当量	personal-dose-equivalent	zh	forbidden	非规范(个人剂量当量≠个人辐射当量)：正确为 个人剂量当量
+# -- radiation-weighting-factor (辐射权重因子)
+辐射加权因子	radiation-weighting-factor	zh	forbidden	误译weighting(权重≠加权)：正确为 辐射权重因子
+辐射权重系数	radiation-weighting-factor	zh	deprecated	非标准(因子≠系数)：应为 辐射权重因子
+# -- radiation-zoning (辐射分区)
+辐射区划	radiation-zoning	zh	deprecated	非标准(分区≠区划)：应为 辐射分区
+# -- shielding-analysis (屏蔽分析)
+屏蔽评估	shielding-analysis	zh	deprecated	非标准(分析≠评估)：应为 屏蔽分析
+防屏分析	shielding-analysis	zh	forbidden	错误缩略(屏蔽分析≠防屏分析)：正确为 屏蔽分析
+# -- tritium-building (氚厂房)
+氚建筑	tritium-building	zh	forbidden	AI误译building(厂房≠建筑)：正确为 氚厂房
+氚大楼	tritium-building	zh	forbidden	AI误译building(厂房≠大楼)：正确为 氚厂房
+# -- tritium-plant (氚工厂)
+氚植物	tritium-plant	zh	forbidden	AI误译plant(工厂≠植物)：正确为 氚工厂
+氚种植	tritium-plant	zh	forbidden	AI误译plant(工厂≠种植)：正确为 氚工厂
+# -- tritium-release (氚释放)
+氚排放	tritium-release	zh	deprecated	非标准(释放≠排放)：应为 氚释放
+氚发布	tritium-release	zh	forbidden	AI误译release(释放≠发布)：正确为 氚释放
+# -- coolant-purification (冷却剂纯化)
+冷却剂纯化系统	coolant-purification	zh	forbidden	混淆概念(纯化≠净化系统)：正确为 冷却剂纯化
+冷却液纯化	coolant-purification	zh	forbidden	误译coolant(冷却剂≠冷却液)：正确为 冷却剂纯化
+# -- helium-coolant (氦冷却剂)
+氦冷剂	helium-coolant	zh	deprecated	非标准缩略(冷却剂≠冷剂)：应为 氦冷却剂
+氦制冷剂	helium-coolant	zh	forbidden	误译coolant(冷却剂≠制冷剂)：正确为 氦冷却剂
+# -- water-coolant (水冷却剂)
+水冷却液	water-coolant	zh	forbidden	误译coolant(冷却剂≠冷却液)：正确为 水冷却剂
+水制冷剂	water-coolant	zh	forbidden	误译coolant(冷却剂≠制冷剂)：正确为 水冷却剂
+# -- creep-fatigue-interaction (蠕变-疲劳交互)
+蠕变疲劳互动	creep-fatigue-interaction	zh	forbidden	AI误译interaction(交互≠互动)：正确为 蠕变-疲劳交互
+# -- cryopump (低温泵): add more
+冷冻真空泵	cryopump	zh	forbidden	误译cryo(低温≠冷冻)：正确为 低温泵
+# -- thermal-barrier-coating (热障涂层): add more
+热屏障涂料	thermal-barrier-coating	zh	forbidden	误译barrier+coating(热障涂层≠热屏障涂料)：正确为 热障涂层
+热阻涂层	thermal-barrier-coating	zh	forbidden	误译barrier(障≠阻)：正确为 热障涂层
+# -- committed-effective-dose (待积有效剂量)
+承诺有效剂量	committed-effective-dose	zh	forbidden	AI误译committed(待积≠承诺)：正确为 待积有效剂量
+待积有效辐射量	committed-effective-dose	zh	forbidden	误译dose(剂量≠辐射量)：正确为 待积有效剂量
+# -- ductile-brittle-transition-temperature (韧脆转变温度): add more
+脆韧转变温度	ductile-brittle-transition-temperature	zh	deprecated	语序非标准(韧脆≠脆韧)：应为 韧脆转变温度
+韧脆转换温度	ductile-brittle-transition-temperature	zh	deprecated	非标准(转变≠转换)：应为 韧脆转变温度
+# -- activation (活化): bare concept
+激活能	activation	zh	forbidden	AI误译activation(活化≠激活)：正确为 活化
+激活作用	activation	zh	forbidden	AI误译activation(活化≠激活作用,生物义)：正确为 活化

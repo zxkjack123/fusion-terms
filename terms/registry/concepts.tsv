@@ -1686,3 +1686,5 @@ impurity-screening	concept	杂质屏蔽	impurity screening		active	Reduction of 
 castellation	concept	切槽结构	castellation		active	Castellated slots machined into PFC tiles to relieve thermal stress
 leading-edge	concept	前缘	leading edge		active	Exposed edge of PFC tile facing upstream plasma flow; critical for thermal loading
 surface-morphology	concept	表面形貌	surface morphology		active	Microscopic surface topography of PFCs after plasma exposure
+# ---- PWI anti-pattern expansion phase 5 (new concepts) ----
+hydrogen-embrittlement	concept	氢脆	hydrogen embrittlement		active	Loss of ductility in metals due to dissolved or trapped hydrogen atoms

@@ -1578,3 +1578,4 @@ impurity-screening	internal:registry-gap-review:pwi-antipattern-p3	SOL/divertor 
 castellation	internal:registry-gap-review:pwi-antipattern-p4	Stress-relief slots on PFC tiles	copilot	2025-07-14
 leading-edge	internal:registry-gap-review:pwi-antipattern-p4	Upstream-facing edge of PFC tile	copilot	2025-07-14
 surface-morphology	internal:registry-gap-review:pwi-antipattern-p4	Post-exposure PFC surface topography	copilot	2025-07-14
+hydrogen-embrittlement	internal:registry-gap-review:pwi-antipattern-p5	Hydrogen-induced ductility loss in metals	copilot	2026-04-14
