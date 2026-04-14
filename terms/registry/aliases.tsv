@@ -5382,7 +5382,7 @@ Li₄SiO₄	lithium-orthosilicate	en	alias	chemical formula with subscripts
 # ==== Batch F12: Forbidden enrichment for Batch 54 + remainder ====
 aluminacoating	alumina-coating	en	forbidden	auto-added for coverage uplift
 boronpowderinjection	boron-powder-injection	en	forbidden	auto-added for coverage uplift
-cucrzr	cucrzr	en	forbidden	auto-added for coverage uplift
+cucrzr	cucrzr	en	alias	lowercase variant
 dbtt shift	dbtt-shift	en	forbidden	auto-added for coverage uplift
 decaygammasource	decay-gamma-source	en	forbidden	auto-added for coverage uplift
 erbiumoxide	erbium-oxide	en	forbidden	auto-added for coverage uplift
@@ -5400,16 +5400,16 @@ pebblebed	pebble-bed	en	forbidden	auto-added for coverage uplift
 permanentdisposalwaste	permanent-disposal-waste	en	forbidden	auto-added for coverage uplift
 permeationreductionfactor	permeation-reduction-factor	en	forbidden	auto-added for coverage uplift
 radiofrequency heating	radio-frequency-heating	en	forbidden	auto-added for coverage uplift
-rami	rami	en	forbidden	auto-added for coverage uplift
+rami	rami	en	alias	lowercase variant
 remotehandling recycling	remote-handling-recycling	en	forbidden	auto-added for coverage uplift
 rigorous twostep method	rigorous-two-step	en	forbidden	auto-added for coverage uplift
 tritiumrelease	tritium-release	en	forbidden	auto-added for coverage uplift
 wasteform	waste-form	en	forbidden	auto-added for coverage uplift
 wastepackage	waste-package	en	forbidden	auto-added for coverage uplift
-abaqus	abaqus	en	forbidden	auto-added for coverage uplift
-b2	b2	en	forbidden	auto-added for coverage uplift
-cendl	cendl	en	forbidden	auto-added for coverage uplift
-cfx	cfx	en	forbidden	auto-added for coverage uplift
+abaqus	abaqus	en	alias	lowercase variant
+b2	b2	en	alias	lowercase variant
+cendl	cendl	en	alias	lowercase variant
+cfx	cfx	en	alias	lowercase variant
 # ==== Batch 56: Sparse concept enrichment ====
 astra	astra	en	alias	lowercase variant
 bout++	bout-pp	en	alias	lowercase variant
