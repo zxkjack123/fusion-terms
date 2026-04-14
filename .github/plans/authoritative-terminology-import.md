@@ -93,7 +93,7 @@
   - ✅ `export_registry` 运行无 warning 增加
 - **潜在风险**：如果有测试 fixture 硬编码了 concepts.tsv 列数，需同步更新
 
-#### Task 1.3: validate_registry 增加 `source` 值域校验（可选）
+#### ✅ Task 1.3: validate_registry 增加 `source` 值域校验（可选）
 
 - **目标**：在 validate 阶段校验 `source` 列的合法值
 - **修改内容**：

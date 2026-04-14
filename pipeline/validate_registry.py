@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import re
 import unicodedata
+import warnings
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -10,6 +11,10 @@ from pipeline.common import load_simple_list
 
 
 CONCEPT_ID_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
+
+# Allowed provenance values for the concepts.tsv ``source`` column.
+# Use a prefix-based allowlist so that ``GB/T-4960.x`` variants all pass.
+_ALLOWED_SOURCE_PREFIXES = ("corpus", "GB/T-", "ITER-", "IAEA-", "")
 
 
 @dataclass(frozen=True)
@@ -98,6 +103,16 @@ def validate_registry(terms_dir: Path) -> None:
         if concept_id in concept_ids:
             _fail(r.path, r.lineno, f"duplicate concept_id {concept_id!r}")
         concept_ids.add(concept_id)
+
+        # Validate source column (8th field, index 7) if present.
+        source = r.fields[7].strip() if len(r.fields) >= 8 else ""
+        if source and not any(source.startswith(pfx) for pfx in _ALLOWED_SOURCE_PREFIXES if pfx):
+            warnings.warn(
+                f"validate_registry: unknown source {source!r} at "
+                f"{r.path}:{r.lineno} (allowed prefixes: {_ALLOWED_SOURCE_PREFIXES})",
+                RuntimeWarning,
+                stacklevel=2,
+            )
 
     # ---- aliases.tsv ----
     allowed_kinds = {"preferred", "alias", "deprecated", "forbidden"}
