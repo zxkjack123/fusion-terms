@@ -7774,3 +7774,82 @@ hot cathode ionization gauge	hot-cathode-ion-gauge	en	preferred	preferred en
 diamagnetic flux signal	diamagnetic-flux-signal	en	preferred	preferred en
 反磁通信号	diamagnetic-flux-signal	zh	preferred	preferred zh
 反磁信号	diamagnetic-flux-signal	zh	forbidden	简称不够规范：缺少"通"
+
+# ---- Imported from ITER-glossary (2026-04-14) ----
+Additional Heating	additional-heating	en	preferred	imported from ITER-glossary
+ADITYA-U	aditya-u	en	preferred	imported from ITER-glossary
+Alcator C-Mod	alcator-c-mod	en	preferred	imported from ITER-glossary
+Alfvén waves	alfv-n-waves	en	preferred	imported from ITER-glossary
+Alpha heating	alpha-heating	en	preferred	imported from ITER-glossary
+Antenna	antenna	en	preferred	imported from ITER-glossary
+Beamlines	beamlines	en	preferred	imported from ITER-glossary
+Bioshield	bioshield	en	preferred	imported from ITER-glossary
+Breakeven	breakeven	en	preferred	imported from ITER-glossary
+Breeding Technologies	breeding-technologies	en	preferred	imported from ITER-glossary
+Broader Approach	broader-approach	en	preferred	imported from ITER-glossary
+Burn	burn	en	preferred	imported from ITER-glossary
+Burning Plasma	burning-plasma	en	preferred	imported from ITER-glossary
+CEA	cea	en	preferred	imported from ITER-glossary
+Commissioning	commissioning	en	preferred	imported from ITER-glossary
+Confinement	confinement	en	preferred	imported from ITER-glossary
+Confinement Time	confinement-time	en	preferred	imported from ITER-glossary
+Cooldown	cooldown	en	preferred	imported from ITER-glossary
+Cooling Water System	cooling-water-system	en	preferred	imported from ITER-glossary
+Correction Coils	correction-coils	en	preferred	imported from ITER-glossary
+Cryogenic	cryogenic	en	preferred	imported from ITER-glossary
+Deuterium-Tritium Reactions	deuterium-tritium-reactions	en	preferred	imported from ITER-glossary
+Diagnostics	diagnostics	en	preferred	imported from ITER-glossary
+Divertor Channel	divertor-channel	en	preferred	imported from ITER-glossary
+Domestic Agencies	domestic-agencies	en	preferred	imported from ITER-glossary
+Double pancake	double-pancake	en	preferred	imported from ITER-glossary
+Electron Beam	electron-beam	en	preferred	imported from ITER-glossary
+Energy Breakeven	energy-breakeven	en	preferred	imported from ITER-glossary
+EPFL	epfl	en	preferred	imported from ITER-glossary
+Fuel Cycle System	fuel-cycle-system	en	preferred	imported from ITER-glossary
+Fusion Performance	fusion-performance	en	preferred	imported from ITER-glossary
+Helium ash	helium-ash	en	preferred	imported from ITER-glossary
+IFMIF-DONES	ifmif-dones	en	preferred	imported from ITER-glossary
+IFMIF/EVEDA	ifmif-eveda	en	preferred	imported from ITER-glossary
+Impurities	impurities	en	preferred	imported from ITER-glossary
+In-vessel components	in-vessel-components	en	preferred	imported from ITER-glossary
+Ion	ion	en	preferred	imported from ITER-glossary
+Ionization	ionization	en	preferred	imported from ITER-glossary
+Isotope	isotope	en	preferred	imported from ITER-glossary
+ITPEA	itpea	en	preferred	imported from ITER-glossary
+IUA	iua	en	preferred	imported from ITER-glossary
+Lawson's Criteria	lawson-s-criteria	en	preferred	imported from ITER-glossary
+Lithium	lithium	en	preferred	imported from ITER-glossary
+Lower Ports	lower-ports	en	preferred	imported from ITER-glossary
+Major Plasma Radius	major-plasma-radius	en	preferred	imported from ITER-glossary
+MAST Upgrade	mast-upgrade	en	preferred	imported from ITER-glossary
+NBTF	nbtf	en	preferred	imported from ITER-glossary
+NbTi Conductor	nbti-conductor	en	preferred	imported from ITER-glossary
+Net Energy	net-energy	en	preferred	imported from ITER-glossary
+Plasma Shutdown	plasma-shutdown	en	preferred	imported from ITER-glossary
+Plasma-Facing Components	plasma-facing-components	en	preferred	imported from ITER-glossary
+Poloidal Direction	poloidal-direction	en	preferred	imported from ITER-glossary
+Poloidal Field Coils	poloidal-field-coils	en	preferred	imported from ITER-glossary
+Procurement Arrangement	procurement-arrangement	en	preferred	imported from ITER-glossary
+Ramp-Up Time	ramp-up-time	en	preferred	imported from ITER-glossary
+Resistive Heating	resistive-heating	en	preferred	imported from ITER-glossary
+Shield Block Module	shield-block-module	en	preferred	imported from ITER-glossary
+Shutdown Time	shutdown-time	en	preferred	imported from ITER-glossary
+SST-1	sst-1	en	preferred	imported from ITER-glossary
+Steady State Tokamak	steady-state-tokamak	en	preferred	imported from ITER-glossary
+Superconducting Magnets	superconducting-magnets	en	preferred	imported from ITER-glossary
+Superconductivity	superconductivity	en	preferred	imported from ITER-glossary
+Superconductor	superconductor	en	preferred	imported from ITER-glossary
+Supercritical Helium	supercritical-helium	en	preferred	imported from ITER-glossary
+T-15MD	t-15md	en	preferred	imported from ITER-glossary
+TCV	tcv	en	preferred	imported from ITER-glossary
+TFTR	tftr	en	preferred	imported from ITER-glossary
+Tore Supra	tore-supra	en	preferred	imported from ITER-glossary
+Toroidal Current	toroidal-current	en	preferred	imported from ITER-glossary
+Toroidal Direction	toroidal-direction	en	preferred	imported from ITER-glossary
+Toroidal Field Coils	toroidal-field-coils	en	preferred	imported from ITER-glossary
+Torus	torus	en	preferred	imported from ITER-glossary
+Tritium Recycling	tritium-recycling	en	preferred	imported from ITER-glossary
+Upper Ports	upper-ports	en	preferred	imported from ITER-glossary
+Vacuum Pumps	vacuum-pumps	en	preferred	imported from ITER-glossary
+Wall load	wall-load	en	preferred	imported from ITER-glossary
+WEST	west	en	preferred	imported from ITER-glossary

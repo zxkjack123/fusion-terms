@@ -203,6 +203,23 @@ def validate_registry(terms_dir: Path) -> None:
             f"concepts without evidence rows: {preview}{more}",
         )
 
+    # ---- definitions.tsv (optional) ----
+    definitions_path = registry_dir / "definitions.tsv"
+    definitions_rows = _iter_tsv_rows(definitions_path)
+    allowed_def_langs = {"zh", "en"}
+    definitions_count = 0
+    for r in definitions_rows:
+        if len(r.fields) < 3:
+            _fail(r.path, r.lineno, "expected at least 3 columns: concept_id, lang, definition")
+        cid, lang, defn = r.fields[0], r.fields[1], r.fields[2]
+        if cid not in concept_ids:
+            _fail(r.path, r.lineno, f"unknown concept_id {cid!r}")
+        if lang not in allowed_def_langs:
+            _fail(r.path, r.lineno, f"invalid lang {lang!r} (allowed: {sorted(allowed_def_langs)})")
+        if not defn:
+            _fail(r.path, r.lineno, "definition is empty")
+        definitions_count += 1
+
     # ---- bridge check: forbidden/deprecated shouldn't leak into IME allowlists ----
     allow_zh = load_simple_list(terms_dir / "allowlist_zh.txt")
     allow_en = load_simple_list(terms_dir / "allowlist_en.txt")
@@ -222,10 +239,13 @@ def validate_registry(terms_dir: Path) -> None:
             f"offending terms:\n{preview}{more}"
         )
 
-    print(
-        "registry OK: "
+    summary = (
+        f"registry OK: "
         f"{len(concept_ids)} concepts, {len(alias_to_concept)} aliases, {len(evidence_rows)} evidence rows"
     )
+    if definitions_count:
+        summary += f", {definitions_count} definitions"
+    print(summary)
 
 
 def main() -> None:

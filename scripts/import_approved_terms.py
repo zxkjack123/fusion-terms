@@ -1,29 +1,33 @@
 #!/usr/bin/env python3
-"""Import approved terminology entries from a reviewed diff TSV into the registry.
+"""Import terminology entries from a diff TSV into the registry.
 
-Reads a diff TSV where the ``status`` column has been changed from
-``new``/``exists``/``conflict`` to ``approved``/``rejected``/``defer``.
-Appends approved entries to concepts.tsv, aliases.tsv, and evidence.tsv.
+Reads a diff TSV and imports entries into concepts.tsv, aliases.tsv,
+evidence.tsv, and definitions.tsv.
 
-The diff TSV must include at minimum:
-    term, status, [definition], [zh]
+Two modes:
+  - Default: only import rows where ``status`` == ``approved``
+  - ``--import-all``: import all rows (``new`` → new concept, ``exists`` → definition only,
+    ``conflict`` → skipped unless handled by ``--conflict-map``)
 
-For approved entries, the script generates:
-    - A concept_id from the term name
-    - A concepts.tsv row with the given source
-    - An aliases.tsv row (preferred, en)
-    - An evidence.tsv row
+The diff TSV must include at minimum:  term, status, [definition], [zh]
 
 Usage:
-    python3 scripts/import_approved_terms.py \
+    # Import all ITER glossary terms
+    python3 scripts/import_approved_terms.py --import-all \
         --diff artifacts/terminology_sources/iter_glossary_diff.tsv \
         --source ITER-glossary \
         --evidence-url "https://www.iter.org/fusion-glossary"
 
-    python3 scripts/import_approved_terms.py --dry-run \
+    # Import only approved rows
+    python3 scripts/import_approved_terms.py \
         --diff artifacts/terminology_sources/iaea_glossary_diff.tsv \
         --source IAEA-safety-glossary \
         --evidence-url "IAEA-Safety-Glossary-2018"
+
+    # Handle conflict entries with explicit concept_id mapping
+    python3 scripts/import_approved_terms.py --import-all \
+        --diff diff.tsv --source SRC --evidence-url URL \
+        --conflict-map "Q=q-fusion-gain"
 """
 from __future__ import annotations
 
@@ -110,6 +114,14 @@ def main() -> None:
         help="Default category for new concepts (default: concept)",
     )
     parser.add_argument(
+        "--import-all", action="store_true",
+        help="Import all rows: 'new' as new concepts, 'exists' for definitions only",
+    )
+    parser.add_argument(
+        "--conflict-map", type=str, action="append", default=[],
+        help="Map conflict term to concept_id: 'TERM=concept-id' (repeatable)",
+    )
+    parser.add_argument(
         "--dry-run", action="store_true",
         help="Print what would be done without writing",
     )
@@ -119,20 +131,34 @@ def main() -> None:
         print(f"ERROR: diff file not found: {args.diff}", file=sys.stderr)
         sys.exit(1)
 
+    # Parse conflict map
+    conflict_map: dict[str, str] = {}
+    for spec in args.conflict_map:
+        if "=" not in spec:
+            print(f"ERROR: --conflict-map must be TERM=concept-id, got: {spec}", file=sys.stderr)
+            sys.exit(1)
+        term_key, cid = spec.split("=", 1)
+        conflict_map[term_key.strip()] = cid.strip()
+
     concepts_path = REGISTRY_DIR / "concepts.tsv"
     aliases_path = REGISTRY_DIR / "aliases.tsv"
     evidence_path = REGISTRY_DIR / "evidence.tsv"
+    definitions_path = REGISTRY_DIR / "definitions.tsv"
 
     existing_ids = _load_existing_concept_ids(concepts_path)
     existing_aliases = _load_existing_aliases(aliases_path)
 
     diff_rows = _load_diff(args.diff)
-    approved = [r for r in diff_rows if r.get("status") == "approved"]
 
-    if not approved:
-        print("No approved entries found in diff file.")
+    if args.import_all:
+        candidates = diff_rows
+    else:
+        candidates = [r for r in diff_rows if r.get("status") == "approved"]
+
+    if not candidates:
+        print("No importable entries found in diff file.")
         print(f"  Total rows: {len(diff_rows)}")
-        statuses = {}
+        statuses: dict[str, int] = {}
         for r in diff_rows:
             s = r.get("status", "unknown")
             statuses[s] = statuses.get(s, 0) + 1
@@ -140,43 +166,93 @@ def main() -> None:
             print(f"  {s}: {c}")
         return
 
-    print(f"Processing {len(approved)} approved entries ...")
+    print(f"Processing {len(candidates)} entries ...")
 
     new_concepts: list[str] = []
     new_aliases: list[str] = []
     new_evidence: list[str] = []
+    new_definitions: list[str] = []
     skipped: list[str] = []
+    stats = {"new_concept": 0, "def_only": 0, "conflict_resolved": 0, "skipped": 0}
     today = date.today().isoformat()
 
-    for row in approved:
+    for row in candidates:
         term = row.get("term", "").strip()
         if not term:
             continue
 
+        status = row.get("status", "")
+        definition = row.get("definition", "").strip()
+        matched_ids = row.get("matched_concept_id", "").strip()
+
+        # --- Handle conflict entries ---
+        if status == "conflict":
+            if term in conflict_map:
+                concept_id = conflict_map[term]
+                if concept_id in existing_ids and definition:
+                    new_definitions.append(
+                        f"{concept_id}\ten\t{definition}\t{args.source}"
+                    )
+                    stats["conflict_resolved"] += 1
+                    stats["def_only"] += 1
+                elif concept_id not in existing_ids:
+                    skipped.append(f"  SKIP (conflict-map concept_id not found): {term} → {concept_id}")
+                    stats["skipped"] += 1
+                continue
+            else:
+                skipped.append(f"  SKIP (conflict, no --conflict-map): {term} (matched: {matched_ids})")
+                stats["skipped"] += 1
+                continue
+
+        # --- Handle "exists" entries: definition only ---
+        if status == "exists" and args.import_all:
+            if matched_ids and definition:
+                # matched_concept_id may contain multiple IDs separated by |
+                primary_id = matched_ids.split("|")[0].strip()
+                if primary_id in existing_ids:
+                    new_definitions.append(
+                        f"{primary_id}\ten\t{definition}\t{args.source}"
+                    )
+                    stats["def_only"] += 1
+            else:
+                skipped.append(f"  SKIP (exists, no definition or match): {term}")
+                stats["skipped"] += 1
+            continue
+
+        # --- Handle "new" or "approved" entries: full import ---
         concept_id = _slugify(term)
         if not concept_id:
             skipped.append(f"  SKIP (empty slug): {term}")
+            stats["skipped"] += 1
             continue
 
         if concept_id in existing_ids:
-            skipped.append(f"  SKIP (concept_id exists): {concept_id} ← {term}")
+            # Concept already exists but wasn't caught as "exists" — add definition only
+            if definition:
+                new_definitions.append(
+                    f"{concept_id}\ten\t{definition}\t{args.source}"
+                )
+                stats["def_only"] += 1
+            else:
+                skipped.append(f"  SKIP (concept_id exists): {concept_id} ← {term}")
+                stats["skipped"] += 1
             continue
 
         # Check for alias collision
         term_lower = term.lower()
         if term_lower in existing_aliases:
             skipped.append(f"  SKIP (alias exists): {term}")
+            stats["skipped"] += 1
             continue
 
         zh = row.get("zh", "")
-        en = term  # The term from the source IS the English name
-        definition = row.get("definition", "")
+        en = term
         abbr = ""
 
         # concepts.tsv: concept_id, category, preferred_zh, preferred_en, preferred_abbr, status, notes, source
         concept_line = "\t".join([
             concept_id, args.category, zh, en, abbr,
-            "active", definition[:100] if definition else "", args.source,
+            "active", "", args.source,
         ])
 
         # aliases.tsv: alias, concept_id, lang, kind, comment
@@ -188,6 +264,10 @@ def main() -> None:
         # evidence.tsv: concept_id, source, quote, added_by, added_at
         evidence_line = f"{concept_id}\t{args.evidence_url}\t\timport_approved_terms\t{today}"
 
+        # definitions.tsv: concept_id, lang, definition, source
+        if definition:
+            new_definitions.append(f"{concept_id}\ten\t{definition}\t{args.source}")
+
         new_concepts.append(concept_line)
         new_aliases.append(alias_line)
         new_aliases.extend(alias_lines_extra)
@@ -196,12 +276,15 @@ def main() -> None:
         existing_aliases.add(term_lower)
         if zh:
             existing_aliases.add(zh.lower())
+        stats["new_concept"] += 1
 
     print("\nResults:")
-    print(f"  New concepts: {len(new_concepts)}")
-    print(f"  New aliases:  {len(new_aliases)}")
-    print(f"  New evidence: {len(new_evidence)}")
-    print(f"  Skipped:      {len(skipped)}")
+    print(f"  New concepts:    {stats['new_concept']}")
+    print(f"  Definitions:     {len(new_definitions)} (def-only: {stats['def_only']})")
+    print(f"  New aliases:     {len(new_aliases)}")
+    print(f"  New evidence:    {len(new_evidence)}")
+    print(f"  Conflict resolved: {stats['conflict_resolved']}")
+    print(f"  Skipped:         {stats['skipped']}")
 
     if skipped:
         for s in skipped[:20]:
@@ -218,21 +301,30 @@ def main() -> None:
         return
 
     # Append to files
-    with open(concepts_path, "a", encoding="utf-8") as f:
-        f.write("\n# ---- Imported from " + args.source + f" ({today}) ----\n")
-        for line in new_concepts:
-            f.write(line + "\n")
+    if new_concepts:
+        with open(concepts_path, "a", encoding="utf-8") as f:
+            f.write("\n# ---- Imported from " + args.source + f" ({today}) ----\n")
+            for line in new_concepts:
+                f.write(line + "\n")
 
-    with open(aliases_path, "a", encoding="utf-8") as f:
-        f.write("\n# ---- Imported from " + args.source + f" ({today}) ----\n")
-        for line in new_aliases:
-            f.write(line + "\n")
+    if new_aliases:
+        with open(aliases_path, "a", encoding="utf-8") as f:
+            f.write("\n# ---- Imported from " + args.source + f" ({today}) ----\n")
+            for line in new_aliases:
+                f.write(line + "\n")
 
-    with open(evidence_path, "a", encoding="utf-8") as f:
-        for line in new_evidence:
-            f.write(line + "\n")
+    if new_evidence:
+        with open(evidence_path, "a", encoding="utf-8") as f:
+            for line in new_evidence:
+                f.write(line + "\n")
 
-    print(f"\nAppended to {concepts_path}, {aliases_path}, {evidence_path}")
+    if new_definitions:
+        with open(definitions_path, "a", encoding="utf-8") as f:
+            f.write("# ---- Imported from " + args.source + f" ({today}) ----\n")
+            for line in new_definitions:
+                f.write(line + "\n")
+
+    print(f"\nAppended to registry files in {REGISTRY_DIR}")
 
 
 if __name__ == "__main__":

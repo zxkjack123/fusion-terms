@@ -1691,3 +1691,82 @@ surface-morphology	concept	表面形貌	surface morphology		active	Microscopic s
 hydrogen-embrittlement	concept	氢脆	hydrogen embrittlement		active	Loss of ductility in metals due to dissolved or trapped hydrogen atoms	corpus
 hot-cathode-ion-gauge	device	热阴极电离规	hot cathode ionization gauge		active	热阴极型电离真空计；裸线规为非标准俗称	corpus
 diamagnetic-flux-signal	diagnostic	反磁通信号	diamagnetic flux signal		active	抗磁环诊断输出的等离子体储能信号	corpus
+
+# ---- Imported from ITER-glossary (2026-04-14) ----
+additional-heating	concept		Additional Heating		active		ITER-glossary
+aditya-u	concept		ADITYA-U		active		ITER-glossary
+alcator-c-mod	concept		Alcator C-Mod		active		ITER-glossary
+alfv-n-waves	concept		Alfvén waves		active		ITER-glossary
+alpha-heating	concept		Alpha heating		active		ITER-glossary
+antenna	concept		Antenna		active		ITER-glossary
+beamlines	concept		Beamlines		active		ITER-glossary
+bioshield	concept		Bioshield		active		ITER-glossary
+breakeven	concept		Breakeven		active		ITER-glossary
+breeding-technologies	concept		Breeding Technologies		active		ITER-glossary
+broader-approach	concept		Broader Approach		active		ITER-glossary
+burn	concept		Burn		active		ITER-glossary
+burning-plasma	concept		Burning Plasma		active		ITER-glossary
+cea	concept		CEA		active		ITER-glossary
+commissioning	concept		Commissioning		active		ITER-glossary
+confinement	concept		Confinement		active		ITER-glossary
+confinement-time	concept		Confinement Time		active		ITER-glossary
+cooldown	concept		Cooldown		active		ITER-glossary
+cooling-water-system	concept		Cooling Water System		active		ITER-glossary
+correction-coils	concept		Correction Coils		active		ITER-glossary
+cryogenic	concept		Cryogenic		active		ITER-glossary
+deuterium-tritium-reactions	concept		Deuterium-Tritium Reactions		active		ITER-glossary
+diagnostics	concept		Diagnostics		active		ITER-glossary
+divertor-channel	concept		Divertor Channel		active		ITER-glossary
+domestic-agencies	concept		Domestic Agencies		active		ITER-glossary
+double-pancake	concept		Double pancake		active		ITER-glossary
+electron-beam	concept		Electron Beam		active		ITER-glossary
+energy-breakeven	concept		Energy Breakeven		active		ITER-glossary
+epfl	concept		EPFL		active		ITER-glossary
+fuel-cycle-system	concept		Fuel Cycle System		active		ITER-glossary
+fusion-performance	concept		Fusion Performance		active		ITER-glossary
+helium-ash	concept		Helium ash		active		ITER-glossary
+ifmif-dones	concept		IFMIF-DONES		active		ITER-glossary
+ifmif-eveda	concept		IFMIF/EVEDA		active		ITER-glossary
+impurities	concept		Impurities		active		ITER-glossary
+in-vessel-components	concept		In-vessel components		active		ITER-glossary
+ion	concept		Ion		active		ITER-glossary
+ionization	concept		Ionization		active		ITER-glossary
+isotope	concept		Isotope		active		ITER-glossary
+itpea	concept		ITPEA		active		ITER-glossary
+iua	concept		IUA		active		ITER-glossary
+lawson-s-criteria	concept		Lawson's Criteria		active		ITER-glossary
+lithium	concept		Lithium		active		ITER-glossary
+lower-ports	concept		Lower Ports		active		ITER-glossary
+major-plasma-radius	concept		Major Plasma Radius		active		ITER-glossary
+mast-upgrade	concept		MAST Upgrade		active		ITER-glossary
+nbtf	concept		NBTF		active		ITER-glossary
+nbti-conductor	concept		NbTi Conductor		active		ITER-glossary
+net-energy	concept		Net Energy		active		ITER-glossary
+plasma-shutdown	concept		Plasma Shutdown		active		ITER-glossary
+plasma-facing-components	concept		Plasma-Facing Components		active		ITER-glossary
+poloidal-direction	concept		Poloidal Direction		active		ITER-glossary
+poloidal-field-coils	concept		Poloidal Field Coils		active		ITER-glossary
+procurement-arrangement	concept		Procurement Arrangement		active		ITER-glossary
+ramp-up-time	concept		Ramp-Up Time		active		ITER-glossary
+resistive-heating	concept		Resistive Heating		active		ITER-glossary
+shield-block-module	concept		Shield Block Module		active		ITER-glossary
+shutdown-time	concept		Shutdown Time		active		ITER-glossary
+sst-1	concept		SST-1		active		ITER-glossary
+steady-state-tokamak	concept		Steady State Tokamak		active		ITER-glossary
+superconducting-magnets	concept		Superconducting Magnets		active		ITER-glossary
+superconductivity	concept		Superconductivity		active		ITER-glossary
+superconductor	concept		Superconductor		active		ITER-glossary
+supercritical-helium	concept		Supercritical Helium		active		ITER-glossary
+t-15md	concept		T-15MD		active		ITER-glossary
+tcv	concept		TCV		active		ITER-glossary
+tftr	concept		TFTR		active		ITER-glossary
+tore-supra	concept		Tore Supra		active		ITER-glossary
+toroidal-current	concept		Toroidal Current		active		ITER-glossary
+toroidal-direction	concept		Toroidal Direction		active		ITER-glossary
+toroidal-field-coils	concept		Toroidal Field Coils		active		ITER-glossary
+torus	concept		Torus		active		ITER-glossary
+tritium-recycling	concept		Tritium Recycling		active		ITER-glossary
+upper-ports	concept		Upper Ports		active		ITER-glossary
+vacuum-pumps	concept		Vacuum Pumps		active		ITER-glossary
+wall-load	concept		Wall load		active		ITER-glossary
+west	concept		WEST		active		ITER-glossary
