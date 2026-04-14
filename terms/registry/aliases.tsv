@@ -8646,3 +8646,695 @@ urgent protective action	urgent-protective-action	en	preferred	imported from IAE
 urgent protective action planning zone (UPZ)	urgent-protective-action-planning-zone	en	preferred	imported from IAEA-safety-glossary
 urgent response phase	urgent-response-phase	en	preferred	imported from IAEA-safety-glossary
 use	use	en	preferred	imported from IAEA-safety-glossary
+
+# ---- Imported from GBT-4960.9 (2026-04-14) ----
+magnetic confinement fusion	magnetic-confinement-fusion	en	preferred	imported from GBT-4960.9
+磁约束核聚变	magnetic-confinement-fusion	zh	preferred	imported from GBT-4960.9
+acoustic heating	acoustic-heating	en	preferred	imported from GBT-4960.9
+声加热	acoustic-heating	zh	preferred	imported from GBT-4960.9
+adiabatic compression	adiabatic-compression	en	preferred	imported from GBT-4960.9
+绝热压缩	adiabatic-compression	zh	preferred	imported from GBT-4960.9
+adiabatic compression heating	adiabatic-compression-heating	en	preferred	imported from GBT-4960.9
+绝热压缩加热	adiabatic-compression-heating	zh	preferred	imported from GBT-4960.9
+adiabatic invariant	adiabatic-invariant	en	preferred	imported from GBT-4960.9
+绝热不变量	adiabatic-invariant	zh	preferred	imported from GBT-4960.9
+Advanced Research Innovation and Evaluation Study	advanced-research-innovation-and-evaluation-study	en	preferred	imported from GBT-4960.9
+先进堆创新和评价研究	advanced-research-innovation-and-evaluation-study	zh	preferred	imported from GBT-4960.9
+Alfven gap modes	alfven-gap-modes	en	preferred	imported from GBT-4960.9
+阿尔芬间隙模	alfven-gap-modes	zh	preferred	imported from GBT-4960.9
+Alfven time	alfven-time	en	preferred	imported from GBT-4960.9
+阿尔芬时间	alfven-time	zh	preferred	imported from GBT-4960.9
+Alfven velocity	alfven-velocity	en	preferred	imported from GBT-4960.9
+阿尔芬速度	alfven-velocity	zh	preferred	imported from GBT-4960.9
+Alfven wave instability	alfven-wave-instability	en	preferred	imported from GBT-4960.9
+阿尔芬波不稳定性	alfven-wave-instability	zh	preferred	imported from GBT-4960.9
+alpha channel effect	alpha-channel-effect	en	preferred	imported from GBT-4960.9
+α 通道效应	alpha-channel-effect	zh	preferred	imported from GBT-4960.9
+ambipolar diffusion	ambipolar-diffusion	en	preferred	imported from GBT-4960.9
+双极扩散	ambipolar-diffusion	zh	preferred	imported from GBT-4960.9
+anomalous diffusion	anomalous-diffusion	en	preferred	imported from GBT-4960.9
+反常扩散	anomalous-diffusion	zh	preferred	imported from GBT-4960.9
+anomalous electron thermal conduction	anomalous-electron-thermal-conduction	en	preferred	imported from GBT-4960.9
+反常电子热传导	anomalous-electron-thermal-conduction	zh	preferred	imported from GBT-4960.9
+auxiliary heating; additional heating	auxiliary-heating-additional-heating	en	preferred	imported from GBT-4960.9
+辅助加热	auxiliary-heating-additional-heating	zh	preferred	imported from GBT-4960.9
+ballooning instability	ballooning-instability	en	preferred	imported from GBT-4960.9
+气球不稳定性	ballooning-instability	zh	preferred	imported from GBT-4960.9
+Bernstein mode	bernstein-mode	en	preferred	imported from GBT-4960.9
+伯恩斯坦模	bernstein-mode	zh	preferred	imported from GBT-4960.9
+beta value	beta-value	en	preferred	imported from GBT-4960.9
+比压值	beta-value	zh	preferred	imported from GBT-4960.9
+Bohm transport	bohm-transport	en	preferred	imported from GBT-4960.9
+玻姆输运	bohm-transport	zh	preferred	imported from GBT-4960.9
+burn fraction of thermonuclear fuel	burn-fraction-of-thermonuclear-fuel	en	preferred	imported from GBT-4960.9
+热核燃料燃耗	burn-fraction-of-thermonuclear-fuel	zh	preferred	imported from GBT-4960.9
+central electron density	central-electron-density	en	preferred	imported from GBT-4960.9
+中心电子密度	central-electron-density	zh	preferred	imported from GBT-4960.9
+closed(magnetic)configuration	closed-configuration	en	preferred	imported from GBT-4960.9
+闭合(磁)位形	closed-configuration	zh	preferred	imported from GBT-4960.9
+cold plasma	cold-plasma	en	preferred	imported from GBT-4960.9
+冷等离子体	cold-plasma	zh	preferred	imported from GBT-4960.9
+collective instabilities	collective-instabilities	en	preferred	imported from GBT-4960.9
+集体不稳定性	collective-instabilities	zh	preferred	imported from GBT-4960.9
+collective phenomena	collective-phenomena	en	preferred	imported from GBT-4960.9
+集体现象	collective-phenomena	zh	preferred	imported from GBT-4960.9
+collisional plasma	collisional-plasma	en	preferred	imported from GBT-4960.9
+碰撞等离子体	collisional-plasma	zh	preferred	imported from GBT-4960.9
+collisionless plasma	collisionless-plasma	en	preferred	imported from GBT-4960.9
+无碰撞等离子体	collisionless-plasma	zh	preferred	imported from GBT-4960.9
+collisionless shock wave	collisionless-shock-wave	en	preferred	imported from GBT-4960.9
+无碰撞激波	collisionless-shock-wave	zh	preferred	imported from GBT-4960.9
+collisionless tearing instability	collisionless-tearing-instability	en	preferred	imported from GBT-4960.9
+无碰撞撕裂不稳定性	collisionless-tearing-instability	zh	preferred	imported from GBT-4960.9
+controlledthermonuclearfusion	controlledthermonuclearfusion	en	preferred	imported from GBT-4960.9
+受控热核聚变	controlledthermonuclearfusion	zh	preferred	imported from GBT-4960.9
+core confinement	core-confinement	en	preferred	imported from GBT-4960.9
+芯部约束	core-confinement	zh	preferred	imported from GBT-4960.9
+cusped geometry	cusped-geometry	en	preferred	imported from GBT-4960.9
+会切几何位形	cusped-geometry	zh	preferred	imported from GBT-4960.9
+cyclotron instability	cyclotron-instability	en	preferred	imported from GBT-4960.9
+回旋不稳定性	cyclotron-instability	zh	preferred	imported from GBT-4960.9
+cyclotron resonance	cyclotron-resonance	en	preferred	imported from GBT-4960.9
+回旋共振	cyclotron-resonance	zh	preferred	imported from GBT-4960.9
+cyclotron resonance heating	cyclotron-resonance-heating	en	preferred	imported from GBT-4960.9
+回旋共振加热	cyclotron-resonance-heating	zh	preferred	imported from GBT-4960.9
+cylindrical approximation	cylindrical-approximation	en	preferred	imported from GBT-4960.9
+圆柱形近似	cylindrical-approximation	zh	preferred	imported from GBT-4960.9
+D-alpha light	d-alpha-light	en	preferred	imported from GBT-4960.9
+氘阿尔法光	d-alpha-light	zh	preferred	imported from GBT-4960.9
+D-shaped plasma	d-shaped-plasma	en	preferred	imported from GBT-4960.9
+"D"形等离子体	d-shaped-plasma	zh	preferred	imported from GBT-4960.9
+degenerate configuration	degenerate-configuration	en	preferred	imported from GBT-4960.9
+简并位形	degenerate-configuration	zh	preferred	imported from GBT-4960.9
+reaction	reaction	en	preferred	imported from GBT-4960.9
+mathbfD^-3mathbfHmathbfe 反应deuterium-helium-3 reaction; mathbfD^-3mathbfHmathbfe	reaction	zh	preferred	imported from GBT-4960.9
+diamagnetic effect	diamagnetic-effect	en	preferred	imported from GBT-4960.9
+逆磁效应	diamagnetic-effect	zh	preferred	imported from GBT-4960.9
+diamagnetic plasma	diamagnetic-plasma	en	preferred	imported from GBT-4960.9
+逆磁等离子体	diamagnetic-plasma	zh	preferred	imported from GBT-4960.9
+dispersion relation	dispersion-relation	en	preferred	imported from GBT-4960.9
+色散关系	dispersion-relation	zh	preferred	imported from GBT-4960.9
+displacement of plasma	displacement-of-plasma	en	preferred	imported from GBT-4960.9
+等离子体位移	displacement-of-plasma	zh	preferred	imported from GBT-4960.9
+disruptive instability	disruptive-instability	en	preferred	imported from GBT-4960.9
+破裂不稳定性	disruptive-instability	zh	preferred	imported from GBT-4960.9
+dissociative recombination	dissociative-recombination	en	preferred	imported from GBT-4960.9
+# 离解复合	dissociative-recombination	zh	preferred	imported from GBT-4960.9
+divertor physics	divertor-physics	en	preferred	imported from GBT-4960.9
+# 偏滤器物理	divertor-physics	zh	preferred	imported from GBT-4960.9
+double null equilibrium	double-null-equilibrium	en	preferred	imported from GBT-4960.9
+双零平衡	double-null-equilibrium	zh	preferred	imported from GBT-4960.9
+drift cyclotron resonance instability	drift-cyclotron-resonance-instability	en	preferred	imported from GBT-4960.9
+漂移回旋共振不稳定性	drift-cyclotron-resonance-instability	zh	preferred	imported from GBT-4960.9
+drift dissipative instability	drift-dissipative-instability	en	preferred	imported from GBT-4960.9
+漂移耗散不稳定性	drift-dissipative-instability	zh	preferred	imported from GBT-4960.9
+drift instability	drift-instability	en	preferred	imported from GBT-4960.9
+漂移不稳定性	drift-instability	zh	preferred	imported from GBT-4960.9
+drift kinetic theory	drift-kinetic-theory	en	preferred	imported from GBT-4960.9
+漂移动理学理论	drift-kinetic-theory	zh	preferred	imported from GBT-4960.9
+drift orbits	drift-orbits	en	preferred	imported from GBT-4960.9
+漂移轨道	drift-orbits	zh	preferred	imported from GBT-4960.9
+drift surface	drift-surface	en	preferred	imported from GBT-4960.9
+漂移面	drift-surface	zh	preferred	imported from GBT-4960.9
+driven current	driven-current	en	preferred	imported from GBT-4960.9
+驱动电流	driven-current	zh	preferred	imported from GBT-4960.9
+dustyplasma	dustyplasma	en	preferred	imported from GBT-4960.9
+尘埃等离子体	dustyplasma	zh	preferred	imported from GBT-4960.9
+edge fluctuations	edge-fluctuations	en	preferred	imported from GBT-4960.9
+边缘涨落	edge-fluctuations	zh	preferred	imported from GBT-4960.9
+edge physics	edge-physics	en	preferred	imported from GBT-4960.9
+边缘物理	edge-physics	zh	preferred	imported from GBT-4960.9
+edgeplasma	edgeplasma	en	preferred	imported from GBT-4960.9
+边缘等离子体	edgeplasma	zh	preferred	imported from GBT-4960.9
+eikonal equation	eikonal-equation	en	preferred	imported from GBT-4960.9
+短时距方程	eikonal-equation	zh	preferred	imported from GBT-4960.9
+E-layer	e-layer	en	preferred	imported from GBT-4960.9
+E-层	e-layer	zh	preferred	imported from GBT-4960.9
+electromagnetic load	electromagnetic-load	en	preferred	imported from GBT-4960.9
+电磁载荷	electromagnetic-load	zh	preferred	imported from GBT-4960.9
+electron cyclotron wave	electron-cyclotron-wave	en	preferred	imported from GBT-4960.9
+电子回旋波	electron-cyclotron-wave	zh	preferred	imported from GBT-4960.9
+electron plasma frequency	electron-plasma-frequency	en	preferred	imported from GBT-4960.9
+电子等离子体频率	electron-plasma-frequency	zh	preferred	imported from GBT-4960.9
+electrostatic wave	electrostatic-wave	en	preferred	imported from GBT-4960.9
+静电波	electrostatic-wave	zh	preferred	imported from GBT-4960.9
+ELMy H-mode	elmy-h-mode	en	preferred	imported from GBT-4960.9
+边缘局域H模	elmy-h-mode	zh	preferred	imported from GBT-4960.9
+empirical scaling formulas	empirical-scaling-formulas	en	preferred	imported from GBT-4960.9
+经验定标公式	empirical-scaling-formulas	zh	preferred	imported from GBT-4960.9
+energy break-even	energy-break-even	en	preferred	imported from GBT-4960.9
+能量得失相当	energy-break-even	zh	preferred	imported from GBT-4960.9
+energy confinement time scaling law	energy-confinement-time-scaling-law	en	preferred	imported from GBT-4960.9
+能量约束时间定标律	energy-confinement-time-scaling-law	zh	preferred	imported from GBT-4960.9
+energy loss time	energy-loss-time	en	preferred	imported from GBT-4960.9
+能量损失时间	energy-loss-time	zh	preferred	imported from GBT-4960.9
+enhanced particle modes	enhanced-particle-modes	en	preferred	imported from GBT-4960.9
+增强粒子模型	enhanced-particle-modes	zh	preferred	imported from GBT-4960.9
+entropy trapping	entropy-trapping	en	preferred	imported from GBT-4960.9
+熵俘获	entropy-trapping	zh	preferred	imported from GBT-4960.9
+equilibration times	equilibration-times	en	preferred	imported from GBT-4960.9
+平衡时间	equilibration-times	zh	preferred	imported from GBT-4960.9
+fast Alfven wave	fast-alfven-wave	en	preferred	imported from GBT-4960.9
+快阿尔芬波	fast-alfven-wave	zh	preferred	imported from GBT-4960.9
+finite heat conductivity instability	finite-heat-conductivity-instability	en	preferred	imported from GBT-4960.9
+有限热导率不稳定性	finite-heat-conductivity-instability	zh	preferred	imported from GBT-4960.9
+fire-hose instability	fire-hose-instability	en	preferred	imported from GBT-4960.9
+水龙带不稳定性	fire-hose-instability	zh	preferred	imported from GBT-4960.9
+flip instability	flip-instability	en	preferred	imported from GBT-4960.9
+倒转不稳定性	flip-instability	zh	preferred	imported from GBT-4960.9
+frozen magnetic field	frozen-magnetic-field	en	preferred	imported from GBT-4960.9
+磁场冻结	frozen-magnetic-field	zh	preferred	imported from GBT-4960.9
+fullwave theory	fullwave-theory	en	preferred	imported from GBT-4960.9
+全波理论	fullwave-theory	zh	preferred	imported from GBT-4960.9
+gas discharge plasma	gas-discharge-plasma	en	preferred	imported from GBT-4960.9
+气体放电等离子体	gas-discharge-plasma	zh	preferred	imported from GBT-4960.9
+gravitational instability	gravitational-instability	en	preferred	imported from GBT-4960.9
+重力不稳定性	gravitational-instability	zh	preferred	imported from GBT-4960.9
+guiding center	guiding-center	en	preferred	imported from GBT-4960.9
+导向中心	guiding-center	zh	preferred	imported from GBT-4960.9
+gyro-kinetic theory	gyro-kinetic-theory	en	preferred	imported from GBT-4960.9
+回旋动理学理论	gyro-kinetic-theory	zh	preferred	imported from GBT-4960.9
+gyrorelaxation effect	gyrorelaxation-effect	en	preferred	imported from GBT-4960.9
+回旋弛豫效应	gyrorelaxation-effect	zh	preferred	imported from GBT-4960.9
+gyrorelaxation heating	gyrorelaxation-heating	en	preferred	imported from GBT-4960.9
+回旋弛豫加热	gyrorelaxation-heating	zh	preferred	imported from GBT-4960.9
+H-L transition	h-l-transition	en	preferred	imported from GBT-4960.9
+H-L转换	h-l-transition	zh	preferred	imported from GBT-4960.9
+hybrid resonance	hybrid-resonance	en	preferred	imported from GBT-4960.9
+混杂共振	hybrid-resonance	zh	preferred	imported from GBT-4960.9
+hydromagnetic wave	hydromagnetic-wave	en	preferred	imported from GBT-4960.9
+磁流体波	hydromagnetic-wave	zh	preferred	imported from GBT-4960.9
+ideal internal kink mode	ideal-internal-kink-mode	en	preferred	imported from GBT-4960.9
+理想内扭曲模	ideal-internal-kink-mode	zh	preferred	imported from GBT-4960.9
+impurity radiation	impurity-radiation	en	preferred	imported from GBT-4960.9
+杂质辐射	impurity-radiation	zh	preferred	imported from GBT-4960.9
+inboardplasmashape	inboardplasmashape	en	preferred	imported from GBT-4960.9
+等离子体环内侧形状	inboardplasmashape	zh	preferred	imported from GBT-4960.9
+indentation	indentation	en	preferred	imported from GBT-4960.9
+豆形凹度	indentation	zh	preferred	imported from GBT-4960.9
+internal inductance	internal-inductance	en	preferred	imported from GBT-4960.9
+内感	internal-inductance	zh	preferred	imported from GBT-4960.9
+internal mode	internal-mode	en	preferred	imported from GBT-4960.9
+内模	internal-mode	zh	preferred	imported from GBT-4960.9
+internal reconnection event	internal-reconnection-event	en	preferred	imported from GBT-4960.9
+内部重联事件	internal-reconnection-event	zh	preferred	imported from GBT-4960.9
+ion acoustic wave	ion-acoustic-wave	en	preferred	imported from GBT-4960.9
+离子声波	ion-acoustic-wave	zh	preferred	imported from GBT-4960.9
+ion cyclotron current drive	ion-cyclotron-current-drive	en	preferred	imported from GBT-4960.9
+离子回旋电流驱动	ion-cyclotron-current-drive	zh	preferred	imported from GBT-4960.9
+ion cyclotron emission	ion-cyclotron-emission	en	preferred	imported from GBT-4960.9
+离子回旋发射	ion-cyclotron-emission	zh	preferred	imported from GBT-4960.9
+ion plasma frequency	ion-plasma-frequency	en	preferred	imported from GBT-4960.9
+离子等离子体频率	ion-plasma-frequency	zh	preferred	imported from GBT-4960.9
+ion wave instability	ion-wave-instability	en	preferred	imported from GBT-4960.9
+离子波不稳定性	ion-wave-instability	zh	preferred	imported from GBT-4960.9
+isotropic plasma	isotropic-plasma	en	preferred	imported from GBT-4960.9
+各向同性等离子体	isotropic-plasma	zh	preferred	imported from GBT-4960.9
+Kelvin-Helmholtz instability	kelvin-helmholtz-instability	en	preferred	imported from GBT-4960.9
+开尔文-亥姆霍兹不稳定性	kelvin-helmholtz-instability	zh	preferred	imported from GBT-4960.9
+kinetic instability	kinetic-instability	en	preferred	imported from GBT-4960.9
+动理学不稳定性	kinetic-instability	zh	preferred	imported from GBT-4960.9
+kinetic pressure	kinetic-pressure	en	preferred	imported from GBT-4960.9
+动理学压强	kinetic-pressure	zh	preferred	imported from GBT-4960.9
+kinetic theory	kinetic-theory	en	preferred	imported from GBT-4960.9
+动理学理论	kinetic-theory	zh	preferred	imported from GBT-4960.9
+Kruskal limit	kruskal-limit	en	preferred	imported from GBT-4960.9
+克鲁斯卡尔极限	kruskal-limit	zh	preferred	imported from GBT-4960.9
+Landau damping	landau-damping	en	preferred	imported from GBT-4960.9
+朗道阻尼	landau-damping	zh	preferred	imported from GBT-4960.9
+Langmuir frequency	langmuir-frequency	en	preferred	imported from GBT-4960.9
+朗缪尔频率	langmuir-frequency	zh	preferred	imported from GBT-4960.9
+line tying	line-tying	en	preferred	imported from GBT-4960.9
+力线束缚	line-tying	zh	preferred	imported from GBT-4960.9
+lose cone	lose-cone	en	preferred	imported from GBT-4960.9
+损失锥	lose-cone	zh	preferred	imported from GBT-4960.9
+lose cone instability	lose-cone-instability	en	preferred	imported from GBT-4960.9
+损失锥不稳定性	lose-cone-instability	zh	preferred	imported from GBT-4960.9
+low-beta plasma	low-beta-plasma	en	preferred	imported from GBT-4960.9
+低比压等离子体	low-beta-plasma	zh	preferred	imported from GBT-4960.9
+low field side	low-field-side	en	preferred	imported from GBT-4960.9
+低能磁场区	low-field-side	zh	preferred	imported from GBT-4960.9
+low temperature plasma	low-temperature-plasma	en	preferred	imported from GBT-4960.9
+低温等离子体	low-temperature-plasma	zh	preferred	imported from GBT-4960.9
+macroinstability; macroscopic instability	macroinstability-macroscopic-instability	en	preferred	imported from GBT-4960.9
+宏观不稳定性	macroinstability-macroscopic-instability	zh	preferred	imported from GBT-4960.9
+magnetic Mach number	magnetic-mach-number	en	preferred	imported from GBT-4960.9
+磁马赫数	magnetic-mach-number	zh	preferred	imported from GBT-4960.9
+magnetic mirror configuration	magnetic-mirror-configuration	en	preferred	imported from GBT-4960.9
+磁镜位形	magnetic-mirror-configuration	zh	preferred	imported from GBT-4960.9
+magnetic moment	magnetic-moment	en	preferred	imported from GBT-4960.9
+磁矩	magnetic-moment	zh	preferred	imported from GBT-4960.9
+magnetic viscosity	magnetic-viscosity	en	preferred	imported from GBT-4960.9
+磁黏滞性	magnetic-viscosity	zh	preferred	imported from GBT-4960.9
+magneto-acoustic cyclotron instability	magneto-acoustic-cyclotron-instability	en	preferred	imported from GBT-4960.9
+磁-声回旋不稳定性	magneto-acoustic-cyclotron-instability	zh	preferred	imported from GBT-4960.9
+magnetohydrodynamic shock wave	magnetohydrodynamic-shock-wave	en	preferred	imported from GBT-4960.9
+磁流体动力学激波	magnetohydrodynamic-shock-wave	zh	preferred	imported from GBT-4960.9
+magnetohydrodynamic turbulence	magnetohydrodynamic-turbulence	en	preferred	imported from GBT-4960.9
+磁流体动力学湍流	magnetohydrodynamic-turbulence	zh	preferred	imported from GBT-4960.9
+magnetosonic waves	magnetosonic-waves	en	preferred	imported from GBT-4960.9
+磁声波	magnetosonic-waves	zh	preferred	imported from GBT-4960.9
+magnetohydrodynamic instability	magnetohydrodynamic-instability	en	preferred	imported from GBT-4960.9
+磁流体动力学不稳定性	magnetohydrodynamic-instability	zh	preferred	imported from GBT-4960.9
+microinstabilities; microscopic instability	microinstabilities-microscopic-instability	en	preferred	imported from GBT-4960.9
+微观不稳定性	microinstabilities-microscopic-instability	zh	preferred	imported from GBT-4960.9
+mathbfB 位形 minimum average B configuration	mathbfb-minimum-average-b-configuration	en	preferred	imported from GBT-4960.9
+平均极小	mathbfb-minimum-average-b-configuration	zh	preferred	imported from GBT-4960.9
+minimum B configuration	minimum-b-configuration	en	preferred	imported from GBT-4960.9
+极小B位形	minimum-b-configuration	zh	preferred	imported from GBT-4960.9
+mirrorinstability	mirrorinstability	en	preferred	imported from GBT-4960.9
+磁镜不稳定性	mirrorinstability	zh	preferred	imported from GBT-4960.9
+mirror ratio	mirror-ratio	en	preferred	imported from GBT-4960.9
+磁镜比	mirror-ratio	zh	preferred	imported from GBT-4960.9
+mode number	mode-number	en	preferred	imported from GBT-4960.9
+模数	mode-number	zh	preferred	imported from GBT-4960.9
+monster sawteeth	monster-sawteeth	en	preferred	imported from GBT-4960.9
+巨形锯齿	monster-sawteeth	zh	preferred	imported from GBT-4960.9
+multifaced asymmetric radiation from the edge	multifaced-asymmetric-radiation-from-the-edge	en	preferred	imported from GBT-4960.9
+边缘的多面非对称辐射	multifaced-asymmetric-radiation-from-the-edge	zh	preferred	imported from GBT-4960.9
+multipole geometry configuration	multipole-geometry-configuration	en	preferred	imported from GBT-4960.9
+多极几何位形	multipole-geometry-configuration	zh	preferred	imported from GBT-4960.9
+negativemassinstability	negativemassinstability	en	preferred	imported from GBT-4960.9
+负质量不稳定性	negativemassinstability	zh	preferred	imported from GBT-4960.9
+neo-classical theory	neo-classical-theory	en	preferred	imported from GBT-4960.9
+新经典理论	neo-classical-theory	zh	preferred	imported from GBT-4960.9
+neutral drag instability	neutral-drag-instability	en	preferred	imported from GBT-4960.9
+中性拖曳不稳定性	neutral-drag-instability	zh	preferred	imported from GBT-4960.9
+neutralized plasma	neutralized-plasma	en	preferred	imported from GBT-4960.9
+中性化等离子体	neutralized-plasma	zh	preferred	imported from GBT-4960.9
+non-circular cross section	non-circular-cross-section	en	preferred	imported from GBT-4960.9
+非圆截面	non-circular-cross-section	zh	preferred	imported from GBT-4960.9
+null point	null-point	en	preferred	imported from GBT-4960.9
+零点	null-point	zh	preferred	imported from GBT-4960.9
+open magnetic configuration	open-magnetic-configuration	en	preferred	imported from GBT-4960.9
+开端磁位形	open-magnetic-configuration	zh	preferred	imported from GBT-4960.9
+operating point	operating-point	en	preferred	imported from GBT-4960.9
+运行点	operating-point	zh	preferred	imported from GBT-4960.9
+operating space	operating-space	en	preferred	imported from GBT-4960.9
+运行空间	operating-space	zh	preferred	imported from GBT-4960.9
+optimized shear	optimized-shear	en	preferred	imported from GBT-4960.9
+优化剪切	optimized-shear	zh	preferred	imported from GBT-4960.9
+pedestal physics	pedestal-physics	en	preferred	imported from GBT-4960.9
+台基物理	pedestal-physics	zh	preferred	imported from GBT-4960.9
+peeling mode	peeling-mode	en	preferred	imported from GBT-4960.9
+剥离模	peeling-mode	zh	preferred	imported from GBT-4960.9
+Pfirsch-Schulueter regime	pfirsch-schulueter-regime	en	preferred	imported from GBT-4960.9
+普费尔施-施吕特尔状态	pfirsch-schulueter-regime	zh	preferred	imported from GBT-4960.9
+pinch effect	pinch-effect	en	preferred	imported from GBT-4960.9
+箍缩效应	pinch-effect	zh	preferred	imported from GBT-4960.9
+plasma chemistry	plasma-chemistry	en	preferred	imported from GBT-4960.9
+等离子体化学	plasma-chemistry	zh	preferred	imported from GBT-4960.9
+plasma diffusion and mobility	plasma-diffusion-and-mobility	en	preferred	imported from GBT-4960.9
+等离子体扩散与迁移	plasma-diffusion-and-mobility	zh	preferred	imported from GBT-4960.9
+plasma geometry	plasma-geometry	en	preferred	imported from GBT-4960.9
+等离子体几何位形	plasma-geometry	zh	preferred	imported from GBT-4960.9
+plasma neutrality and debye shield	plasma-neutrality-and-debye-shield	en	preferred	imported from GBT-4960.9
+等离子体中性与德拜屏蔽	plasma-neutrality-and-debye-shield	zh	preferred	imported from GBT-4960.9
+plasma oscillation	plasma-oscillation	en	preferred	imported from GBT-4960.9
+等离子体振荡	plasma-oscillation	zh	preferred	imported from GBT-4960.9
+plasma parameters	plasma-parameters	en	preferred	imported from GBT-4960.9
+等离子体参数	plasma-parameters	zh	preferred	imported from GBT-4960.9
+plasma pressure	plasma-pressure	en	preferred	imported from GBT-4960.9
+等离子体压强	plasma-pressure	zh	preferred	imported from GBT-4960.9
+plasma profiles	plasma-profiles	en	preferred	imported from GBT-4960.9
+等离子体分布	plasma-profiles	zh	preferred	imported from GBT-4960.9
+plasma purity	plasma-purity	en	preferred	imported from GBT-4960.9
+# 等离子体纯度	plasma-purity	zh	preferred	imported from GBT-4960.9
+plasma radiation	plasma-radiation	en	preferred	imported from GBT-4960.9
+# 等离子体辐射	plasma-radiation	zh	preferred	imported from GBT-4960.9
+plasma shock wave	plasma-shock-wave	en	preferred	imported from GBT-4960.9
+# 等离子体激波	plasma-shock-wave	zh	preferred	imported from GBT-4960.9
+plasma volume	plasma-volume	en	preferred	imported from GBT-4960.9
+# 等离子体体积	plasma-volume	zh	preferred	imported from GBT-4960.9
+plasma wave	plasma-wave	en	preferred	imported from GBT-4960.9
+# 等离子体波	plasma-wave	zh	preferred	imported from GBT-4960.9
+plasmoid	plasmoid	en	preferred	imported from GBT-4960.9
+# 等离子体团	plasmoid	zh	preferred	imported from GBT-4960.9
+plateau regions	plateau-regions	en	preferred	imported from GBT-4960.9
+# 坪区	plateau-regions	zh	preferred	imported from GBT-4960.9
+poloidal beta, beta poloidal	poloidal-beta-beta-poloidal	en	preferred	imported from GBT-4960.9
+# 极向比压值	poloidal-beta-beta-poloidal	zh	preferred	imported from GBT-4960.9
+profile	profile	en	preferred	imported from GBT-4960.9
+分布	profile	zh	preferred	imported from GBT-4960.9
+Project Sherwood	project-sherwood	en	preferred	imported from GBT-4960.9
+雪伍德计划	project-sherwood	zh	preferred	imported from GBT-4960.9
+pseudosonic waves	pseudosonic-waves	en	preferred	imported from GBT-4960.9
+腹声波	pseudosonic-waves	zh	preferred	imported from GBT-4960.9
+q limit	q-limit	en	preferred	imported from GBT-4960.9
+安全因子极限	q-limit	zh	preferred	imported from GBT-4960.9
+radiated power	radiated-power	en	preferred	imported from GBT-4960.9
+辐射功率	radiated-power	zh	preferred	imported from GBT-4960.9
+radio frequency wave	radio-frequency-wave	en	preferred	imported from GBT-4960.9
+射频波	radio-frequency-wave	zh	preferred	imported from GBT-4960.9
+ramp-down time	ramp-down-time	en	preferred	imported from GBT-4960.9
+斜降时间	ramp-down-time	zh	preferred	imported from GBT-4960.9
+recombination coefficient	recombination-coefficient	en	preferred	imported from GBT-4960.9
+复合系数	recombination-coefficient	zh	preferred	imported from GBT-4960.9
+resistive ballooning modes	resistive-ballooning-modes	en	preferred	imported from GBT-4960.9
+电阻气球模	resistive-ballooning-modes	zh	preferred	imported from GBT-4960.9
+ripple	ripple	en	preferred	imported from GBT-4960.9
+波纹	ripple	zh	preferred	imported from GBT-4960.9
+screw instability	screw-instability	en	preferred	imported from GBT-4960.9
+螺旋不稳定性	screw-instability	zh	preferred	imported from GBT-4960.9
+second stability	second-stability	en	preferred	imported from GBT-4960.9
+第二稳定性	second-stability	zh	preferred	imported from GBT-4960.9
+second stability regime	second-stability-regime	en	preferred	imported from GBT-4960.9
+第二稳定性区	second-stability-regime	zh	preferred	imported from GBT-4960.9
+separatrix points	separatrix-points	en	preferred	imported from GBT-4960.9
+分界线点	separatrix-points	zh	preferred	imported from GBT-4960.9
+screw pinch	screw-pinch	en	preferred	imported from GBT-4960.9
+螺旋箍缩	screw-pinch	zh	preferred	imported from GBT-4960.9
+single fluid model	single-fluid-model	en	preferred	imported from GBT-4960.9
+单流体模型	single-fluid-model	zh	preferred	imported from GBT-4960.9
+single-null equilibrium	single-null-equilibrium	en	preferred	imported from GBT-4960.9
+单零平衡	single-null-equilibrium	zh	preferred	imported from GBT-4960.9
+stochastic heating	stochastic-heating	en	preferred	imported from GBT-4960.9
+随机加热	stochastic-heating	zh	preferred	imported from GBT-4960.9
+super Alfvenic velocity	super-alfvenic-velocity	en	preferred	imported from GBT-4960.9
+超阿尔芬速度	super-alfvenic-velocity	zh	preferred	imported from GBT-4960.9
+superthermal radiation	superthermal-radiation	en	preferred	imported from GBT-4960.9
+超热辐射	superthermal-radiation	zh	preferred	imported from GBT-4960.9
+tearing mode instability	tearing-mode-instability	en	preferred	imported from GBT-4960.9
+撕裂模不稳定性	tearing-mode-instability	zh	preferred	imported from GBT-4960.9
+tearing magnetic islands	tearing-magnetic-islands	en	preferred	imported from GBT-4960.9
+撕裂磁岛	tearing-magnetic-islands	zh	preferred	imported from GBT-4960.9
+thermal particles	thermal-particles	en	preferred	imported from GBT-4960.9
+热粒子	thermal-particles	zh	preferred	imported from GBT-4960.9
+transport matrix coefficient	transport-matrix-coefficient	en	preferred	imported from GBT-4960.9
+输运矩阵系数	transport-matrix-coefficient	zh	preferred	imported from GBT-4960.9
+transport scaling	transport-scaling	en	preferred	imported from GBT-4960.9
+输运定标	transport-scaling	zh	preferred	imported from GBT-4960.9
+trapped-particle instability	trapped-particle-instability	en	preferred	imported from GBT-4960.9
+俘获粒子不稳定性	trapped-particle-instability	zh	preferred	imported from GBT-4960.9
+triple-alpha process	triple-alpha-process	en	preferred	imported from GBT-4960.9
+三阿尔法过程	triple-alpha-process	zh	preferred	imported from GBT-4960.9
+turbulent heating	turbulent-heating	en	preferred	imported from GBT-4960.9
+湍流加热	turbulent-heating	zh	preferred	imported from GBT-4960.9
+two-fluid model and multi-fluid model	two-fluid-model-and-multi-fluid-model	en	preferred	imported from GBT-4960.9
+双流体模型和多流体模型	two-fluid-model-and-multi-fluid-model	zh	preferred	imported from GBT-4960.9
+two-stream instability	two-stream-instability	en	preferred	imported from GBT-4960.9
+双流不稳定性	two-stream-instability	zh	preferred	imported from GBT-4960.9
+universal Alfven-wave instability	universal-alfven-wave-instability	en	preferred	imported from GBT-4960.9
+普适阿尔芬波不稳定性	universal-alfven-wave-instability	zh	preferred	imported from GBT-4960.9
+velocity space instability	velocity-space-instability	en	preferred	imported from GBT-4960.9
+速度空间不稳定性	velocity-space-instability	zh	preferred	imported from GBT-4960.9
+whistler wave	whistler-wave	en	preferred	imported from GBT-4960.9
+哨声波	whistler-wave	zh	preferred	imported from GBT-4960.9
+whistler wave instability	whistler-wave-instability	en	preferred	imported from GBT-4960.9
+哨声波不稳定性	whistler-wave-instability	zh	preferred	imported from GBT-4960.9
+air core transformer	air-core-transformer	en	preferred	imported from GBT-4960.9
+空芯变压器	air-core-transformer	zh	preferred	imported from GBT-4960.9
+auxiliary heating power	auxiliary-heating-power	en	preferred	imported from GBT-4960.9
+辅助加热功率	auxiliary-heating-power	zh	preferred	imported from GBT-4960.9
+baffle element	baffle-element	en	preferred	imported from GBT-4960.9
+阻隔部件	baffle-element	zh	preferred	imported from GBT-4960.9
+balanceburning	balanceburning	en	preferred	imported from GBT-4960.9
+平衡燃烧	balanceburning	zh	preferred	imported from GBT-4960.9
+Bittercoil	bittercoil	en	preferred	imported from GBT-4960.9
+# 比特线圈	bittercoil	zh	preferred	imported from GBT-4960.9
+bumper limiters	bumper-limiters	en	preferred	imported from GBT-4960.9
+# 缓冲限制器	bumper-limiters	zh	preferred	imported from GBT-4960.9
+bumpy torus	bumpy-torus	en	preferred	imported from GBT-4960.9
+# 波纹环	bumpy-torus	zh	preferred	imported from GBT-4960.9
+bundledivertor	bundledivertor	en	preferred	imported from GBT-4960.9
+# 束偏滤器	bundledivertor	zh	preferred	imported from GBT-4960.9
+carbon fibre composites	carbon-fibre-composites	en	preferred	imported from GBT-4960.9
+# 碳纤维复合材料	carbon-fibre-composites	zh	preferred	imported from GBT-4960.9
+central solenoid model coil	central-solenoid-model-coil	en	preferred	imported from GBT-4960.9
+# 中心螺线管模型线圈	central-solenoid-model-coil	zh	preferred	imported from GBT-4960.9
+compact device	compact-device	en	preferred	imported from GBT-4960.9
+# 紧凑装置	compact-device	zh	preferred	imported from GBT-4960.9
+critical density	critical-density	en	preferred	imported from GBT-4960.9
+# 临界密度	critical-density	zh	preferred	imported from GBT-4960.9
+critical surface	critical-surface	en	preferred	imported from GBT-4960.9
+临界面	critical-surface	zh	preferred	imported from GBT-4960.9
+current limit	current-limit	en	preferred	imported from GBT-4960.9
+电流极限	current-limit	zh	preferred	imported from GBT-4960.9
+denseplasma focus device	denseplasma-focus-device	en	preferred	imported from GBT-4960.9
+稠密等离子体焦点装置	denseplasma-focus-device	zh	preferred	imported from GBT-4960.9
+divertor arrangement	divertor-arrangement	en	preferred	imported from GBT-4960.9
+偏滤器结构	divertor-arrangement	zh	preferred	imported from GBT-4960.9
+divertor configuration	divertor-configuration	en	preferred	imported from GBT-4960.9
+偏滤器位形	divertor-configuration	zh	preferred	imported from GBT-4960.9
+doublet device	doublet-device	en	preferred	imported from GBT-4960.9
+双流器装置	doublet-device	zh	preferred	imported from GBT-4960.9
+Elomobumpy torus	elomobumpy-torus	en	preferred	imported from GBT-4960.9
+Elomo 波纹环	elomobumpy-torus	zh	preferred	imported from GBT-4960.9
+Elomobumpy torus-S	elomobumpy-torus-s	en	preferred	imported from GBT-4960.9
+Elomo 波纹环-S	elomobumpy-torus-s	zh	preferred	imported from GBT-4960.9
+middleplane	middleplane	en	preferred	imported from GBT-4960.9
+中平面	middleplane	zh	preferred	imported from GBT-4960.9
+equatorial port extension	equatorial-port-extension	en	preferred	imported from GBT-4960.9
+赤道端口延伸	equatorial-port-extension	zh	preferred	imported from GBT-4960.9
+ergodic magnetic divertor	ergodic-magnetic-divertor	en	preferred	imported from GBT-4960.9
+各态历经磁偏滤器	ergodic-magnetic-divertor	zh	preferred	imported from GBT-4960.9
+fast wave antennas	fast-wave-antennas	en	preferred	imported from GBT-4960.9
+快波天线	fast-wave-antennas	zh	preferred	imported from GBT-4960.9
+fast wave current drive	fast-wave-current-drive	en	preferred	imported from GBT-4960.9
+快波电流驱动	fast-wave-current-drive	zh	preferred	imported from GBT-4960.9
+ferromagnetic inserts	ferromagnetic-inserts	en	preferred	imported from GBT-4960.9
+铁磁插件	ferromagnetic-inserts	zh	preferred	imported from GBT-4960.9
+field shaping coil	field-shaping-coil	en	preferred	imported from GBT-4960.9
+成形场线圈	field-shaping-coil	zh	preferred	imported from GBT-4960.9
+flat-top current	flat-top-current	en	preferred	imported from GBT-4960.9
+平顶电流	flat-top-current	zh	preferred	imported from GBT-4960.9
+flat-top pulse length	flat-top-pulse-length	en	preferred	imported from GBT-4960.9
+平顶脉冲长度	flat-top-pulse-length	zh	preferred	imported from GBT-4960.9
+fuelling	fuelling	en	preferred	imported from GBT-4960.9
+加料	fuelling	zh	preferred	imported from GBT-4960.9
+fuel of fusion	fuel-of-fusion	en	preferred	imported from GBT-4960.9
+聚变燃料	fuel-of-fusion	zh	preferred	imported from GBT-4960.9
+glow discharge plasma	glow-discharge-plasma	en	preferred	imported from GBT-4960.9
+辉光放电等离子体	glow-discharge-plasma	zh	preferred	imported from GBT-4960.9
+hard core pinch device	hard-core-pinch-device	en	preferred	imported from GBT-4960.9
+硬芯箍缩装置	hard-core-pinch-device	zh	preferred	imported from GBT-4960.9
+helicity injection current drive	helicity-injection-current-drive	en	preferred	imported from GBT-4960.9
+螺旋注入电流驱动	helicity-injection-current-drive	zh	preferred	imported from GBT-4960.9
+heliotron	heliotron	en	preferred	imported from GBT-4960.9
+# 螺旋器	heliotron	zh	preferred	imported from GBT-4960.9
+high field ECRH launch	high-field-ecrh-launch	en	preferred	imported from GBT-4960.9
+强场电子回旋共振加热发射	high-field-ecrh-launch	zh	preferred	imported from GBT-4960.9
+high frequency confinement	high-frequency-confinement	en	preferred	imported from GBT-4960.9
+# 高频约束	high-frequency-confinement	zh	preferred	imported from GBT-4960.9
+high frequency plug	high-frequency-plug	en	preferred	imported from GBT-4960.9
+# 高频堵漏	high-frequency-plug	zh	preferred	imported from GBT-4960.9
+highheatflux	highheatflux	en	preferred	imported from GBT-4960.9
+# 高热通量	highheatflux	zh	preferred	imported from GBT-4960.9
+high heat flux components	high-heat-flux-components	en	preferred	imported from GBT-4960.9
+高热通量部件	high-heat-flux-components	zh	preferred	imported from GBT-4960.9
+IC antenna	ic-antenna	en	preferred	imported from GBT-4960.9
+# 离子回旋天线	ic-antenna	zh	preferred	imported from GBT-4960.9
+induction coil	induction-coil	en	preferred	imported from GBT-4960.9
+# 感应线圈	induction-coil	zh	preferred	imported from GBT-4960.9
+inductively driven plasmas	inductively-driven-plasmas	en	preferred	imported from GBT-4960.9
+# 感应驱动等离子体	inductively-driven-plasmas	zh	preferred	imported from GBT-4960.9
+iron core transformer	iron-core-transformer	en	preferred	imported from GBT-4960.9
+铁芯变压器	iron-core-transformer	zh	preferred	imported from GBT-4960.9
+Joffe's bar	joffe-s-bar	en	preferred	imported from GBT-4960.9
+约飞棒	joffe-s-bar	zh	preferred	imported from GBT-4960.9
+L-H threshold power	l-h-threshold-power	en	preferred	imported from GBT-4960.9
+L-H 转换阈值功率	l-h-threshold-power	zh	preferred	imported from GBT-4960.9
+limiter system	limiter-system	en	preferred	imported from GBT-4960.9
+限制器系统	limiter-system	zh	preferred	imported from GBT-4960.9
+linear pinch	linear-pinch	en	preferred	imported from GBT-4960.9
+直线箍缩	linear-pinch	zh	preferred	imported from GBT-4960.9
+lining	lining	en	preferred	imported from GBT-4960.9
+衬套	lining	zh	preferred	imported from GBT-4960.9
+lip seal	lip-seal	en	preferred	imported from GBT-4960.9
+边缘密封	lip-seal	zh	preferred	imported from GBT-4960.9
+low aspect ratio	low-aspect-ratio	en	preferred	imported from GBT-4960.9
+低环径比	low-aspect-ratio	zh	preferred	imported from GBT-4960.9
+magnetic field component	magnetic-field-component	en	preferred	imported from GBT-4960.9
+磁场组成	magnetic-field-component	zh	preferred	imported from GBT-4960.9
+magnetic pumping	magnetic-pumping	en	preferred	imported from GBT-4960.9
+磁泵抽运	magnetic-pumping	zh	preferred	imported from GBT-4960.9
+magnetic quench detection	magnetic-quench-detection	en	preferred	imported from GBT-4960.9
+磁体失超探测	magnetic-quench-detection	zh	preferred	imported from GBT-4960.9
+main transmission line	main-transmission-line	en	preferred	imported from GBT-4960.9
+主传输电缆	main-transmission-line	zh	preferred	imported from GBT-4960.9
+molecular ion injection concept	molecular-ion-injection-concept	en	preferred	imported from GBT-4960.9
+分子离子注入概念	molecular-ion-injection-concept	zh	preferred	imported from GBT-4960.9
+mathbfNb_3mathbfSn superconductor	mathbfnb-3mathbfsn-superconductor	en	preferred	imported from GBT-4960.9
+铌三锡超导体	mathbfnb-3mathbfsn-superconductor	zh	preferred	imported from GBT-4960.9
+mathbfNb_3mathbfAl superconductor	mathbfnb-3mathbfal-superconductor	en	preferred	imported from GBT-4960.9
+铌三铝超导体	mathbfnb-3mathbfal-superconductor	zh	preferred	imported from GBT-4960.9
+NbTi alloy superconductor	nbti-alloy-superconductor	en	preferred	imported from GBT-4960.9
+铌钛合金超导体	nbti-alloy-superconductor	zh	preferred	imported from GBT-4960.9
+negative ion neutral injector	negative-ion-neutral-injector	en	preferred	imported from GBT-4960.9
+负离子-中性束注入器	negative-ion-neutral-injector	zh	preferred	imported from GBT-4960.9
+neutral beam	neutral-beam	en	preferred	imported from GBT-4960.9
+中性束	neutral-beam	zh	preferred	imported from GBT-4960.9
+Ohmic heating system	ohmic-heating-system	en	preferred	imported from GBT-4960.9
+欧姆加热系统	ohmic-heating-system	zh	preferred	imported from GBT-4960.9
+operating margins	operating-margins	en	preferred	imported from GBT-4960.9
+运行裕量	operating-margins	zh	preferred	imported from GBT-4960.9
+operating parameter	operating-parameter	en	preferred	imported from GBT-4960.9
+运行参数	operating-parameter	zh	preferred	imported from GBT-4960.9
+overturning moment	overturning-moment	en	preferred	imported from GBT-4960.9
+倾覆力矩	overturning-moment	zh	preferred	imported from GBT-4960.9
+pancake winding	pancake-winding	en	preferred	imported from GBT-4960.9
+饼形绕组	pancake-winding	zh	preferred	imported from GBT-4960.9
+particle exhaust	particle-exhaust	en	preferred	imported from GBT-4960.9
+粒子抽运	particle-exhaust	zh	preferred	imported from GBT-4960.9
+pinch device	pinch-device	en	preferred	imported from GBT-4960.9
+箍缩装置	pinch-device	zh	preferred	imported from GBT-4960.9
+plasma heating	plasma-heating	en	preferred	imported from GBT-4960.9
+等离子体加热	plasma-heating	zh	preferred	imported from GBT-4960.9
+poloidal divertor	poloidal-divertor	en	preferred	imported from GBT-4960.9
+极向偏滤器	poloidal-divertor	zh	preferred	imported from GBT-4960.9
+port axis direction	port-axis-direction	en	preferred	imported from GBT-4960.9
+端口轴向	port-axis-direction	zh	preferred	imported from GBT-4960.9
+positive ion neutral injector	positive-ion-neutral-injector	en	preferred	imported from GBT-4960.9
+正离子-中性束注入器	positive-ion-neutral-injector	zh	preferred	imported from GBT-4960.9
+profile control	profile-control	en	preferred	imported from GBT-4960.9
+分布控制	profile-control	zh	preferred	imported from GBT-4960.9
+pumpeddivertor	pumpeddivertor	en	preferred	imported from GBT-4960.9
+抽气偏滤器	pumpeddivertor	zh	preferred	imported from GBT-4960.9
+radio frequency and microwave plasma arc	radio-frequency-and-microwave-plasma-arc	en	preferred	imported from GBT-4960.9
+射频和微波等离子体弧	radio-frequency-and-microwave-plasma-arc	zh	preferred	imported from GBT-4960.9
+residual resistance ratio	residual-resistance-ratio	en	preferred	imported from GBT-4960.9
+剩余电阻率比	residual-resistance-ratio	zh	preferred	imported from GBT-4960.9
+resonant ions/electrons	resonant-ions-electrons	en	preferred	imported from GBT-4960.9
+共振离子/电子	resonant-ions-electrons	zh	preferred	imported from GBT-4960.9
+sawtooth stabilization	sawtooth-stabilization	en	preferred	imported from GBT-4960.9
+锯齿稳定	sawtooth-stabilization	zh	preferred	imported from GBT-4960.9
+septum	septum	en	preferred	imported from GBT-4960.9
+隔板	septum	zh	preferred	imported from GBT-4960.9
+shockwave tube	shockwave-tube	en	preferred	imported from GBT-4960.9
+激波管	shockwave-tube	zh	preferred	imported from GBT-4960.9
+shock wave heating	shock-wave-heating	en	preferred	imported from GBT-4960.9
+激波加热	shock-wave-heating	zh	preferred	imported from GBT-4960.9
+single/double null	single-double-null	en	preferred	imported from GBT-4960.9
+单/双零	single-double-null	zh	preferred	imported from GBT-4960.9
+start-up assist	start-up-assist	en	preferred	imported from GBT-4960.9
+启动辅助	start-up-assist	zh	preferred	imported from GBT-4960.9
+superconducting coil	superconducting-coil	en	preferred	imported from GBT-4960.9
+超导线圈	superconducting-coil	zh	preferred	imported from GBT-4960.9
+superconductor Tokamak	superconductor-tokamak	en	preferred	imported from GBT-4960.9
+超导托卡马克	superconductor-tokamak	zh	preferred	imported from GBT-4960.9
+Tokamak operating boundaries	tokamak-operating-boundaries	en	preferred	imported from GBT-4960.9
+托卡·马克运行边界	tokamak-operating-boundaries	zh	preferred	imported from GBT-4960.9
+toroidal magnetic (line) cusp	toroidal-magnetic-cusp	en	preferred	imported from GBT-4960.9
+环形磁场会切	toroidal-magnetic-cusp	zh	preferred	imported from GBT-4960.9
+toroidal configuration	toroidal-configuration	en	preferred	imported from GBT-4960.9
+环形位形	toroidal-configuration	zh	preferred	imported from GBT-4960.9
+toroidal pinch	toroidal-pinch	en	preferred	imported from GBT-4960.9
+环向箍缩	toroidal-pinch	zh	preferred	imported from GBT-4960.9
+vapour phase catalytic exchange	vapour-phase-catalytic-exchange	en	preferred	imported from GBT-4960.9
+气相催化交换	vapour-phase-catalytic-exchange	zh	preferred	imported from GBT-4960.9
+vertical stability control	vertical-stability-control	en	preferred	imported from GBT-4960.9
+垂直稳定性控制	vertical-stability-control	zh	preferred	imported from GBT-4960.9
+wall etch	wall-etch	en	preferred	imported from GBT-4960.9
+壁腐蚀	wall-etch	zh	preferred	imported from GBT-4960.9
+Yin-Yang coil	yin-yang-coil	en	preferred	imported from GBT-4960.9
+阴阳线圈	yin-yang-coil	zh	preferred	imported from GBT-4960.9
+Brewster angle	brewster-angle	en	preferred	imported from GBT-4960.9
+布儒斯特角	brewster-angle	zh	preferred	imported from GBT-4960.9
+charge-coupled device	charge-coupled-device	en	preferred	imported from GBT-4960.9
+电荷耦合器件	charge-coupled-device	zh	preferred	imported from GBT-4960.9
+dye laser	dye-laser	en	preferred	imported from GBT-4960.9
+染料激光器	dye-laser	zh	preferred	imported from GBT-4960.9
+electrostatic analyzer	electrostatic-analyzer	en	preferred	imported from GBT-4960.9
+静电分析器	electrostatic-analyzer	zh	preferred	imported from GBT-4960.9
+Fabry-Perot interferometer	fabry-perot-interferometer	en	preferred	imported from GBT-4960.9
+法布里-珀罗干涉仪	fabry-perot-interferometer	zh	preferred	imported from GBT-4960.9
+first mirrors	first-mirrors	en	preferred	imported from GBT-4960.9
+第一镜	first-mirrors	zh	preferred	imported from GBT-4960.9
+H-alpha studies	h-alpha-studies	en	preferred	imported from GBT-4960.9
+H-α研究	h-alpha-studies	zh	preferred	imported from GBT-4960.9
+heavy-ion beam probe	heavy-ion-beam-probe	en	preferred	imported from GBT-4960.9
+重离子束探针	heavy-ion-beam-probe	zh	preferred	imported from GBT-4960.9
+Hugill diagram	hugill-diagram	en	preferred	imported from GBT-4960.9
+海吉尔图	hugill-diagram	zh	preferred	imported from GBT-4960.9
+lost alpha detectors	lost-alpha-detectors	en	preferred	imported from GBT-4960.9
+逃逸 α 粒子探测器	lost-alpha-detectors	zh	preferred	imported from GBT-4960.9
+Mach-Zehnder interferometer	mach-zehnder-interferometer	en	preferred	imported from GBT-4960.9
+马赫-曾恩德尔干涉仪	mach-zehnder-interferometer	zh	preferred	imported from GBT-4960.9
+magnetic bottle	magnetic-bottle	en	preferred	imported from GBT-4960.9
+磁瓶	magnetic-bottle	zh	preferred	imported from GBT-4960.9
+microwave interferometer	microwave-interferometer	en	preferred	imported from GBT-4960.9
+微波干涉仪	microwave-interferometer	zh	preferred	imported from GBT-4960.9
+neutral particle analyser	neutral-particle-analyser	en	preferred	imported from GBT-4960.9
+中性粒子分析器	neutral-particle-analyser	zh	preferred	imported from GBT-4960.9
+plasma diagnostics technique	plasma-diagnostics-technique	en	preferred	imported from GBT-4960.9
+等离子体诊断技术	plasma-diagnostics-technique	zh	preferred	imported from GBT-4960.9
+soft X-rays camera	soft-x-rays-camera	en	preferred	imported from GBT-4960.9
+软X射线成像仪	soft-x-rays-camera	zh	preferred	imported from GBT-4960.9
+survey spectrometer	survey-spectrometer	en	preferred	imported from GBT-4960.9
+广谱测量光谱仪	survey-spectrometer	zh	preferred	imported from GBT-4960.9
+abnormal operating conditions	abnormal-operating-conditions	en	preferred	imported from GBT-4960.9
+异常运行工况	abnormal-operating-conditions	zh	preferred	imported from GBT-4960.9
+"active"environment	active-environment	en	preferred	imported from GBT-4960.9
+"有源"环境	active-environment	zh	preferred	imported from GBT-4960.9
+alpha-power	alpha-power	en	preferred	imported from GBT-4960.9
+α 功率	alpha-power	zh	preferred	imported from GBT-4960.9
+alternativefuels	alternativefuels	en	preferred	imported from GBT-4960.9
+替代燃料	alternativefuels	zh	preferred	imported from GBT-4960.9
+beyond-design-basis accidents	beyond-design-basis-accidents	en	preferred	imported from GBT-4960.9
+超设计基准事故	beyond-design-basis-accidents	zh	preferred	imported from GBT-4960.9
+blanket materials	blanket-materials	en	preferred	imported from GBT-4960.9
+# 包层材料	blanket-materials	zh	preferred	imported from GBT-4960.9
+blanket shield	blanket-shield	en	preferred	imported from GBT-4960.9
+# 包层屏蔽	blanket-shield	zh	preferred	imported from GBT-4960.9
+borated concrete	borated-concrete	en	preferred	imported from GBT-4960.9
+# 含硼混凝土	borated-concrete	zh	preferred	imported from GBT-4960.9
+breeder	breeder	en	preferred	imported from GBT-4960.9
+# 增殖部件	breeder	zh	preferred	imported from GBT-4960.9
+burning control	burning-control	en	preferred	imported from GBT-4960.9
+# 燃烧控制	burning-control	zh	preferred	imported from GBT-4960.9
+ceramic breeders	ceramic-breeders	en	preferred	imported from GBT-4960.9
+# 陶瓷：增殖层	ceramic-breeders	zh	preferred	imported from GBT-4960.9
+compliant material	compliant-material	en	preferred	imported from GBT-4960.9
+兼容性材料	compliant-material	zh	preferred	imported from GBT-4960.9
+conceptual design activity	conceptual-design-activity	en	preferred	imported from GBT-4960.9
+概念设计活动	conceptual-design-activity	zh	preferred	imported from GBT-4960.9
+"Cordey" Pass	cordey-pass	en	preferred	imported from GBT-4960.9
+"科第"通路	cordey-pass	zh	preferred	imported from GBT-4960.9
+down-time	down-time	en	preferred	imported from GBT-4960.9
+停堆时间	down-time	zh	preferred	imported from GBT-4960.9
+D-T operation	d-t-operation	en	preferred	imported from GBT-4960.9
+氘-氚运行	d-t-operation	zh	preferred	imported from GBT-4960.9
+duty factor	duty-factor	en	preferred	imported from GBT-4960.9
+占空因数	duty-factor	zh	preferred	imported from GBT-4960.9
+dwell time	dwell-time	en	preferred	imported from GBT-4960.9
+停留时间	dwell-time	zh	preferred	imported from GBT-4960.9
+engineering design activity	engineering-design-activity	en	preferred	imported from GBT-4960.9
+工程设计活动	engineering-design-activity	zh	preferred	imported from GBT-4960.9
+fuels	fuels	en	preferred	imported from GBT-4960.9
+燃米.	fuels	zh	preferred	imported from GBT-4960.9
+fusion-fission hybrid reactor	fusion-fission-hybrid-reactor	en	preferred	imported from GBT-4960.9
+聚变-裂变混合堆	fusion-fission-hybrid-reactor	zh	preferred	imported from GBT-4960.9
+fusion power	fusion-power	en	preferred	imported from GBT-4960.9
+聚变功率	fusion-power	zh	preferred	imported from GBT-4960.9
+fusion product	fusion-product	en	preferred	imported from GBT-4960.9
+聚变产物	fusion-product	zh	preferred	imported from GBT-4960.9
+ITERunitsofaccount	iterunitsofaccount	en	preferred	imported from GBT-4960.9
+ITER记账单位	iterunitsofaccount	zh	preferred	imported from GBT-4960.9
+International Tokamak Reactor	international-tokamak-reactor	en	preferred	imported from GBT-4960.9
+国际托卡马克反应堆	international-tokamak-reactor	zh	preferred	imported from GBT-4960.9
+mockup	mockup	en	preferred	imported from GBT-4960.9
+样块	mockup	zh	preferred	imported from GBT-4960.9
+modelcoil	modelcoil	en	preferred	imported from GBT-4960.9
+模型线圈	modelcoil	zh	preferred	imported from GBT-4960.9
+port plugs	port-plugs	en	preferred	imported from GBT-4960.9
+端口插件	port-plugs	zh	preferred	imported from GBT-4960.9
+remote handling class	remote-handling-class	en	preferred	imported from GBT-4960.9
+远程操作等级	remote-handling-class	zh	preferred	imported from GBT-4960.9
+safety system support feature	safety-system-support-feature	en	preferred	imported from GBT-4960.9
+安全系统支撑设施	safety-system-support-feature	zh	preferred	imported from GBT-4960.9
+scheduled down time	scheduled-down-time	en	preferred	imported from GBT-4960.9
+计划内停堆时间	scheduled-down-time	zh	preferred	imported from GBT-4960.9
+shut-down time	shut-down-time	en	preferred	imported from GBT-4960.9
+关断时间	shut-down-time	zh	preferred	imported from GBT-4960.9
+steady-state fusion reactor	steady-state-fusion-reactor	en	preferred	imported from GBT-4960.9
+稳态聚变堆	steady-state-fusion-reactor	zh	preferred	imported from GBT-4960.9
+support systems	support-systems	en	preferred	imported from GBT-4960.9
+支持系统	support-systems	zh	preferred	imported from GBT-4960.9
+ITER test blanket module	iter-test-blanket-module	en	preferred	imported from GBT-4960.9
+ITER 试验包层模块	iter-test-blanket-module	zh	preferred	imported from GBT-4960.9
+thermonuclear reactor	thermonuclear-reactor	en	preferred	imported from GBT-4960.9
+热核反应堆	thermonuclear-reactor	zh	preferred	imported from GBT-4960.9
+thermonuclearreactorblanket	thermonuclearreactorblanket	en	preferred	imported from GBT-4960.9
+热核反应堆包层	thermonuclearreactorblanket	zh	preferred	imported from GBT-4960.9
+wall loading	wall-loading	en	preferred	imported from GBT-4960.9
+壁载荷	wall-loading	zh	preferred	imported from GBT-4960.9
