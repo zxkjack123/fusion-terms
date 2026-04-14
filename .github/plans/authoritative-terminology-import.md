@@ -163,7 +163,7 @@
   - ✅ `pdftotext` 能提取出文本
 - **潜在风险**：下载速度慢（IAEA 服务器在维也纳）— 可用代理或手动下载
 
-#### Task 3.2: IAEA PDF → 术语 TSV 提取脚本
+#### ✅ Task 3.2: IAEA PDF → 术语 TSV 提取脚本
 
 - **目标**：从 IAEA Safety Glossary PDF 提取术语条目
 - **修改内容**：
