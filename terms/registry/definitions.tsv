@@ -1,8 +1,4 @@
 # concept_id	lang	definition	source
-# - lang: en|zh
-# - definition: full-text explanation of the term
-# - source: provenance (e.g. ITER-glossary, IAEA-safety-glossary, GB/T-4960.9)
-# ---- Imported from ITER-glossary (2026-04-14) ----
 additional-heating	en	The application of neutral particle beams and/or high-frequency microwave radiation to the plasma from external sources, in order to provide the input heating power necessary to reach the temperatures required for fusion. Additional heating bridges the gap between resistive (or ohmic) heating due to plasma toroidal current (which gets weaker with increased temperature) and alpha-particle heating due to the slowing down of the helium reaction product in the plasma (which gets stronger with higher temperature).	ITER-glossary
 aditya-u	en	ADITYA (synonym of Sun in Hindi) is the first indigenously designed and fabricated tokamak in India. Located at the Institute for Plasma Research in Gujarat and operated since 1989, this medium-size tokamak conducts experiments with high plasma current at high temperature. It was upgraded in 2016 to ADITYA-U to realize shaped-plasma operations in an open diverter configurations. See this website.	ITER-glossary
 alcator-c-mod	en	A tokamak experiment run by the Massachusetts Institute of Technology (MIT) in Boston, USA up to the end of funding in 2016. One ot the three major US tokamaks (along with DIII-D and NSTX). See MIT's Plasma Science and Fusion Center.	ITER-glossary
@@ -145,7 +141,6 @@ vacuum-vessel	en	The vacuum vessel establishes the confinement barrier in a toka
 wall-conditioning	en	The process of cleaning the first wall of a vacuum vessel to remove contaminants.	ITER-glossary
 wall-load	en	Stresses on the plasma-facing surfaces of the tokamak from plasma particles, neutrons and electromagnetic radiation, which should be minimized to prevent damage.	ITER-glossary
 west	en	The upgrade of the Tore Supra tokamak in France to a test bed for ITER, with supplementary magnetic coils and a new ITER-like tungsten divertor. See the West website here.	ITER-glossary
-# ---- Imported from IAEA-safety-glossary (2026-04-14) ----
 a1	en	The activity value of special form radioactive material that is listed in Table 2 or derived in Section IV [both of the Transport Regulations] and is used to determine the activity limits for the requirements of [the Transport] Regulations. (See SSR-6 (Rev. 1) [2], sections II and IV and table 2.) A1 is the maximum activity of special form radioactive material that can be transported in a Type A package. Fractions and multiples of A1 are also used as criteria for other package types, etc. The corresponding value for any other form of radioactive material is A2.	IAEA-safety-glossary
 a2	en	The activity value of radioactive material, other than special form radioactive material, that is listed in Table 2 or derived in Section IV [both of the Transport Regulations] and is used to determine the activity limits for the requirements of [the Transport] Regulations. (See SSR-6 (Rev. 1) [2], sections II and IV and table 2.) A2 is the maximum activity of any radioactive material other than special form radioactive material that can be transported in a Type A package. Fractions and multiples of A2 are also used as criteria for other package types, etc. The corresponding value for special form radioactive material is A1.	IAEA-safety-glossary
 abnormal-operation	en	See plant states (considered in design): anticipated operational occurrence.	IAEA-safety-glossary
@@ -1012,7 +1007,7 @@ urgent-protective-action	en	See protective action (1).	IAEA-safety-glossary
 urgent-protective-action-planning-zone	en	See emergency planning zone.	IAEA-safety-glossary
 urgent-response-phase	en	See emergency response phase.	IAEA-safety-glossary
 use	en	authorized use. Use of radioactive material or radioactive objects from an authorized facility or activity in accordance with an authorization. Intended primarily for contrast with clearance, in that clearance implies no further regulatory control over the use, whereas the authorization for authorized use may prescribe or prohibit specific uses. A form of restricted use. restricted use. The use of an area or of materials subject to restrictions imposed for reasons of radiation protection and safety. Restrictions would typically be expressed in the form of prohibition of particular activities (e.g. house building, growing or harvesting particular foods) or prescription of particular procedures (e.g. materials may only be recycled or reused within a facility). unrestricted use. The use of an area or of material without any radiologically based restrictions. ! There may be other restrictions on the use of the area or material, such as planning restrictions on the use of an area of land or restrictions related to the chemical properties of a material. ! In some situations, these restrictions could, in addition to their primary intended effect, have an incidental effect on radiation exposure, but the use is classified as unrestricted use unless the primary reason for the restrictions is radiological. Unrestricted use is contrasted with restricted use.	IAEA-safety-glossary
-# ---- Imported from GBT-4960.9 (2026-04-14) ----
+# ---- Imported from GB/T-4960.9 (2026-04-14) ----
 magnetic-confinement-fusion	en	利用强磁场将高温度和高密度等离子体约束足够长的时间而产生的核聚变反应，可以通过托卡马克(2.1.284)、仿星器(2.1.273)、反场箍缩(2.2.117)、Z箍缩(2.1.306)以及 θ 箍缩(2.1.283)等途径实现。	GB/T-4960.9
 acoustic-heating	en	由磁泵抽运加热等离子体的方式。 注：磁泵抽运的频率远低于离子碰撞频率，同离子通过发生磁泵抽运的区域的渡越频率同一数量级。在这种情况下，振荡场产生能被等离子体吸收的声波。	GB/T-4960.9
 adiabatic-compression	en	通过磁场压缩等离子体，保持其磁矩不变的过程。	GB/T-4960.9
@@ -1052,7 +1047,7 @@ collisionless-shock-wave	en	等离子体中波阵面内的耗散机制不是库�
 collisionless-tearing-instability	en	在无碰撞等离子体中，由密度和温度的不均匀性驱动的撕裂模不稳定性。通常，电子的惯性、霍尔电流、压强梯度或者朗道阻尼是造成等离子体与磁力线分离的原因。	GB/T-4960.9
 h-factor	en	等离子体高约束模式与低约束模式的约束时间之比。	GB/T-4960.9
 confinement-time	en	表征能量(或粒子)从等离子体中损失的特征时间。 注：处于热平衡态的等离子体中，能量约束时间被定义为总储能与总加热功率之比。	GB/T-4960.9
-controlledthermonuclearfusion	en	在一个有限的空间内将很轻的原子核加热到极高温度，使其在受控条件下进行聚变反应的过程。	GB/T-4960.9
+controlled-thermonuclear-fusion	en	在一个有限的空间内将很轻的原子核加热到极高温度，使其在受控条件下进行聚变反应的过程。	GB/T-4960.9
 core-confinement	en	靠近等离子体中心的高温、高密度区域的能量和粒子约束。	GB/T-4960.9
 current-drive	en	由外部注入动量(例如，用射频波或中性束注入)驱动等离子体电流的过程。可帮助实现托卡马克 (2.1.284) 稳态运行，并应用于优化等离子体位形以控制不稳定性和改善等离子体约束。	GB/T-4960.9
 cusped-geometry	en	磁力线处处凸向位形中心的磁场位形。这种位形有利于稳定磁流体不稳定性。	GB/T-4960.9
@@ -1068,7 +1063,7 @@ debye-length	en	德拜球半径 Debye sphere radius 一个电子受到一个给�
 degenerate-configuration	en	由简并磁力线形成的闭合磁位形，即磁力线在绕位形有限次数之后本身正好闭合的位形。	GB/T-4960.9
 density-limit	en	稳定运行的磁约束装置中等离子体所能达到的最高密度。	GB/T-4960.9
 dd-reaction	en	D-D反应 氘核间的聚变反应。 反应式为： \mathrm {D} + \mathrm {D} \rightarrow \mathrm {n} + ^ {3} \mathrm {H e} \mathrm {D} + \mathrm {D} \rightarrow \mathrm {p} + \mathrm {T} 等概率地生成氦核/中子、氚/质子的同时释放能量。	GB/T-4960.9
-reaction	en	氘与氦之间发生的受控聚变反应，反应式为： \mathrm {D} + ^ {3} \mathrm {H e} \rightarrow \mathrm {p} + ^ {4} \mathrm {H e} + 1 8. 4 \mathrm {M e V} 注：因燃料没有放射性，且不直接产生中子，这种反应比氘-氚反应更具有安全和环保的优点。但聚变条件更高。	GB/T-4960.9
+d-he3-reaction	en	氘与氦之间发生的受控聚变反应，反应式为： \mathrm {D} + ^ {3} \mathrm {H e} \rightarrow \mathrm {p} + ^ {4} \mathrm {H e} + 1 8. 4 \mathrm {M e V} 注：因燃料没有放射性，且不直接产生中子，这种反应比氘-氚反应更具有安全和环保的优点。但聚变条件更高。	GB/T-4960.9
 deuterium-tritium-plasma	en	由氘和氚混合物形成的等离子体。	GB/T-4960.9
 dt-reaction	en	目前最有希望实现聚变能应用的反应： \mathrm {D} + \mathrm {T} \rightarrow \mathrm {n} + ^ {4} \mathrm {H e} + 1 7. 6 \mathrm {M e V} 又称D-T反应(D-Treaction)或氘-氚燃烧(D-Tburn)。	GB/T-4960.9
 diamagnetic-effect	en	逆磁电流产生的磁场与原来的磁场方向相反，使通过等离子体的磁场强度减弱的效应。	GB/T-4960.9
@@ -1088,11 +1083,11 @@ drift-orbits	en	在横向电场和非均匀磁场中带电粒子的运动轨道�
 drift-surface	en	根据绝热不变性定律，粒子导向中心被限制在某个面上运动。	GB/T-4960.9
 drift-wave	en	在不均匀等离子体中，由于温度、密度或者磁场强度等梯度的出现，在垂直于磁场和梯度方向形成漂移流从而形成的波动。	GB/T-4960.9
 driven-current	en	用外加手段(例如：电磁感应、中性束以及射频波)产生的等离子体电流。	GB/T-4960.9
-dustyplasma	en	由大量电子、离子及带电和不带电尘埃粒子组成的宏观电中性体。	GB/T-4960.9
+dusty-plasma	en	由大量电子、离子及带电和不带电尘埃粒子组成的宏观电中性体。	GB/T-4960.9
 edge-fluctuations	en	在等离子体边界区域发生的密度或者电场的波动。	GB/T-4960.9
 edge-localized-mode	en	在高约束(H模)状态下由边缘很窄的区域形成的高压强梯度引起的张弛性不稳定性。它会瞬间导致粒子和能量从边缘损失掉。	GB/T-4960.9
 edge-physics	en	等离子体边界区域的物理问题。	GB/T-4960.9
-edgeplasma	en	靠近最后一个封闭磁面内侧的等离子体。	GB/T-4960.9
+edge-plasma	en	靠近最后一个封闭磁面内侧的等离子体。	GB/T-4960.9
 eikonal-equation	en	电磁波或声波在非均匀介质中传播的方程，只有当介质性质的变化在波长距离范围内很小时，它才有效。	GB/T-4960.9
 e-layer	en	在天体器装置上用来形成、加热及约束所包围的等离子体的相对论电子层。它是由相对论电子束产生的。向磁镜装置注入一束通量充分高的电子流, 则由电子流产生的磁场可超过初始磁场, 从而形成与初始磁场反向的相对论电子圆柱层。	GB/T-4960.9
 electromagnetic-load	en	因载流等离子体运动在周围导体结构中感生的电流所产生的机械载荷。	GB/T-4960.9
@@ -1140,7 +1135,7 @@ ideal-internal-kink-mode	en	在托卡马克(2.1.284)中心区域的理想磁流�
 impurities	en	聚变燃料(及其反应产物)和电子之外的其他粒子。	GB/T-4960.9
 impurity-radiation	en	由杂质引起的能量辐射。	GB/T-4960.9
 impurity-screening	en	避免杂质进入等离子体采取的措施。例如：硅化、硼化以及锂化处理第一壁。	GB/T-4960.9
-inboardplasmashape	en	等离子体大圆周内侧(靠近装置中心)的形状。它受最近的极向场线圈(通常也有中心螺线管)影响很大。	GB/T-4960.9
+inboard-plasma-shape	en	等离子体大圆周内侧(靠近装置中心)的形状。它受最近的极向场线圈(通常也有中心螺线管)影响很大。	GB/T-4960.9
 indentation	en	托卡马克(2.1.284)等离子体位形中具有"豆形"横截面内凹的度量。	GB/T-4960.9
 interchange-instability	en	槽型不稳定性 flute instability 等离子体同磁场交换位置的磁流体动力学宏观不稳定性。	GB/T-4960.9
 internal-inductance	en	l_i 托卡马克(2.1.284)等离子体环单位长度上的自感，通常用符号 l_i 来表示。	GB/T-4960.9
@@ -1173,8 +1168,8 @@ larmor-radius	en	回旋半径 cyclotron radius 对于在磁场中作横向运动
 lawson-criterion	en	由劳逊导出的实现氘氚受控核聚变的判据。即等离子体温度大于1亿度(10 keV)，等离子体密度和等离子体能量约束时间的乘积大于 2 times 10^20 ~m^-3 ~s 。	GB/T-4960.9
 line-tying	en	磁力线束缚 tying down of the line of force 当等离子体中的磁力线指向导体壁时出现的一种效应。因为磁力线不能迅速穿过导体，于是，就能对等离子体的交换不稳定性起稳定作用。	GB/T-4960.9
 locked-mode	en	旋转的磁流体模的频率被锁定的状态。	GB/T-4960.9
-lose-cone	en	磁镜位形中，平行速度和垂直速度比大于一定值时，带电粒子可以穿越磁镜损失，这个比值的阈值在速度空间坐标中呈现一个锥形。	GB/T-4960.9
-lose-cone-instability	en	在开端系统中，由于损失锥内等离子体产生电荷不平衡，而出现的静电微观不稳定性。	GB/T-4960.9
+loss-cone	en	磁镜位形中，平行速度和垂直速度比大于一定值时，带电粒子可以穿越磁镜损失，这个比值的阈值在速度空间坐标中呈现一个锥形。	GB/T-4960.9
+loss-cone-instability	en	在开端系统中，由于损失锥内等离子体产生电荷不平衡，而出现的静电微观不稳定性。	GB/T-4960.9
 low-beta-plasma	en	比压值 (β) 一般为 0 sim 0.01 的等离子体。	GB/T-4960.9
 lower-hybrid-wave	en	LH波 其频率处于离子与电子回旋频率之间的射频波。它具有平行于磁场的电场分量，因此，它可以加速沿磁力线移动的电子。	GB/T-4960.9
 low-field-side	en	环形磁约束装置中，外侧场强比内侧场强低的区域，亦称为低场区。	GB/T-4960.9
@@ -1195,16 +1190,16 @@ magnetohydrodynamic-turbulence	en	在经典的磁流体力学描述中，速度�
 magnetosonic-waves	en	传播取决于介质温度的磁流体动力学波。这些波类似于声波，其不同之处在于粒子的运动方向和波的传播方向并不总是平行的。	GB/T-4960.9
 magnetohydrodynamic-instability	en	等离子体中由磁场能量及带电粒子动能驱动的不稳定性。等离子体密度梯度也会影响这种不稳定性的位置。	GB/T-4960.9
 microinstabilities-microscopic-instability	en	等离子体不稳定性的一种类型，涉及速度空间中的变化，不能用磁流体动力学描述，其特征长度类似于粒子拉莫尔半径。	GB/T-4960.9
-mathbfb-minimum-average-b-configuration	en	在环形系统中，沿着一条磁力线在平均的意义上实现最小B的磁场位形。	GB/T-4960.9
+minimum-average-b-configuration	en	在环形系统中，沿着一条磁力线在平均的意义上实现最小B的磁场位形。	GB/T-4960.9
 minimum-b-configuration	en	等离子体约束技术中的一种位形。在这种位形中等离子体处在最小磁势的区域中。在离开该区的所有方向上，磁场强度都是随着离开所约束的等离子体的距离的增大而增强。这种位形有利于稳定性。	GB/T-4960.9
 plasma-minor-radius	en	等离子体截面在赤道面上水平尺寸的一半。在等离子体分布范围内，离等离子体中心的径向距离。参见等离子体几何位形(2.1.220)。	GB/T-4960.9
-mirrorinstability	en	在磁镜位形中，当等离子体粒子在垂直于磁场方向的能量分量大于纵向能量分量时，可能出现的电磁微观不稳定性。此时，粒子将集聚在磁镜之间的中心平面上。结果，由于中心平面中的等离子体压强的作用使磁力线膨胀，使磁镜比增大。这又进一步增强了粒子在中心平面的集聚。当等离子体能量足够大时，磁场膨胀的速度加快，并且变得不稳定。	GB/T-4960.9
+mirror-instability	en	在磁镜位形中，当等离子体粒子在垂直于磁场方向的能量分量大于纵向能量分量时，可能出现的电磁微观不稳定性。此时，粒子将集聚在磁镜之间的中心平面上。结果，由于中心平面中的等离子体压强的作用使磁力线膨胀，使磁镜比增大。这又进一步增强了粒子在中心平面的集聚。当等离子体能量足够大时，磁场膨胀的速度加快，并且变得不稳定。	GB/T-4960.9
 mirror-ratio	en	在磁镜位形中，在轴上磁场最强的磁场强度 B_m 与轴上最弱的磁场强度 B_0 之比，见式(2) R = B _ {\mathrm {m}} / B _ {0} \quad \dots \tag {2} 这个比值表示了磁镜的约束性能。	GB/T-4960.9
 mode-number	en	不稳定性模式在一定空间尺度内的周期数。	GB/T-4960.9
 monster-sawteeth	en	发生在托卡马克(2.1.284)等离子体中心，具有锯齿状振幅变化的大尺度内部磁流体动力学扰动。	GB/T-4960.9
 multifaced-asymmetric-radiation-from-the-edge	en	边缘的多面形状非对称辐射(MARFE)通常形成在等离子体环的内侧边缘。当等离子体边缘密度高时，有时会形成一个冷的、强辐射等离子体的环向对称带。起因是沿边缘磁力线流动的功率和辐射的局部功率损失之间的不平衡。MARFE在时标 10mssim 100ms 内迅速增长，但它能持续数秒。在某些情况下，MARFE导致破裂。而在另一些情况下，其主要后果是减小边缘密度。	GB/T-4960.9
 multipole-geometry-configuration	en	由固定在支架上或漂浮于环中的几个载平行电流的导体环组成的环形位形。这些环形电流产生多极磁场 (n = 2 为四极场， n = 4 为八极场)，多极磁场叠加在初始约束磁场上，可以产生平均极小磁场位形。例如，约飞棒形成的位形。	GB/T-4960.9
-negativemassinstability	en	由磁场不均匀性引起的静电微观不稳定性。如果粒子的角向运动中馈入能量，其轨道直径和旋转周期都增大。因此，正角向方向的力，使粒子产生相位滞后和角向聚束。粒子的行为，好像它们具有负的质量一样，在外力的相反方向上产生位移。	GB/T-4960.9
+negative-mass-instability	en	由磁场不均匀性引起的静电微观不稳定性。如果粒子的角向运动中馈入能量，其轨道直径和旋转周期都增大。因此，正角向方向的力，使粒子产生相位滞后和角向聚束。粒子的行为，好像它们具有负的质量一样，在外力的相反方向上产生位移。	GB/T-4960.9
 neoclassical-tearing-mode	en	由撕裂模产生的磁岛扰动使自举电流发生改变，这进一步放大磁岛并使约束变坏，甚至导致破裂。	GB/T-4960.9
 neo-classical-theory	en	加入环形效应修正的经典碰撞等离子体输运理论。	GB/T-4960.9
 neoclassical-transport	en	在环形磁约束系统中，考虑了等离子体环效应的经典输运理论。由于环效应的存在，等离子体依照带电粒子碰撞频率分为碰撞频率高的流体区、碰撞频率低的俘获粒子区(香蕉区)和两者之间的过渡区，即平台区。新经典理论确定输运系数时，考虑到磁场的环形位形并包括库仑碰撞效应，输运系数一般是对磁面平均后的等效输运系数。	GB/T-4960.9
@@ -1247,7 +1242,7 @@ plasma-temperature	en	离子或电子随机动能的度量，通常以K(热力�
 plasma-volume	en	磁约束装置中被约束的等离子体容积。	GB/T-4960.9
 plasma-wave	en	包括组成等离子体的粒子和电磁场的振荡在内的等离子体扰动的传播。	GB/T-4960.9
 plasmoid	en	电子、离子和中性粒子的单个聚团，其存在时间比粒子间碰撞时间长很多倍。	GB/T-4960.9
-plateau-regions	en	等离子体碰撞的一个区间，其有效库仑碰撞频率等于或大于极向渡越频率，但是平均自由程长度小于连接长度。在这种状态下，输运系数与碰撞频率无关。	GB/T-4960.9
+plateau-regime	en	等离子体碰撞的一个区间，其有效库仑碰撞频率等于或大于极向渡越频率，但是平均自由程长度小于连接长度。在这种状态下，输运系数与碰撞频率无关。	GB/T-4960.9
 poloidal-beta-beta-poloidal	en	等离子体极向比压值 (β_p) 是等离子体压强与极向磁压强之比。通常作为电流对等离子体约束能力的量度。	GB/T-4960.9
 poloidal-direction	en	在等离子体横截面上环绕磁轴的方向。	GB/T-4960.9
 poloidal-field	en	由环向电流产生的沿极向方向的磁场。主要用于等离子体的平衡和约束。	GB/T-4960.9
@@ -1321,14 +1316,14 @@ z-pinch	en	沿轴向(Z向)流动的等离子体电流将等离子体约束在圆
 air-core-transformer	en	不采用铁芯，原边采用线圈和副边为等离子体的变压器。	GB/T-4960.9
 auxiliary-heating-power	en	辅助加热的功率。 注：通常提及的被等离子体吸收的功率和与辅助加热系统注入的加热功率会有不同。	GB/T-4960.9
 baffle-element	en	为限制偏滤器空间和主真空室空间之间的粒子相互传导而设的阻挡部件。	GB/T-4960.9
-balanceburning	en	聚变 α 粒子和外部电源的等离子体加热与传导、对流和辐射等引起的等离子体损失之间的稳态平衡。	GB/T-4960.9
+balance-burning	en	聚变 α 粒子和外部电源的等离子体加热与传导、对流和辐射等引起的等离子体损失之间的稳态平衡。	GB/T-4960.9
 beamlines	en	特指一段位于中性束源与等离子体圆环面间的输运管道结构(包含中性化区、离子偏离及大体积抽空等设备部件)。束线是中性束注入器的重要组成部分。	GB/T-4960.9
-bittercoil	en	以发明人比特命名的，能建立强磁场的一种特殊结构的线圈。由匝间相间以绝缘材料的铜板经一开缝串联而构成一线圈绕组。线圈材料为常规铜合金，线圈有水冷及液氮冷却等形式。通常也称为比特板线圈。	GB/T-4960.9
+bitter-coil	en	以发明人比特命名的，能建立强磁场的一种特殊结构的线圈。由匝间相间以绝缘材料的铜板经一开缝串联而构成一线圈绕组。线圈材料为常规铜合金，线圈有水冷及液氮冷却等形式。通常也称为比特板线圈。	GB/T-4960.9
 boronization	en	把含硼的化合物升华、沉积到真空室内表面以帮助降低杂质辐射的技术。参见辉光放电清洗(2.2.47)。	GB/T-4960.9
 bumper-limiters	en	在托卡马克中，为了避免真空室内表面直接暴露于等离子体的部分受到等离子体带电粒子的轰击，而在无第一壁材料的部分空间设置的缓冲孔栏(如石墨块)。	GB/T-4960.9
 bumpy-torus	en	美国国家航空和航天局刘易斯的波纹环有12个超导线圈环向排列在大型真空容器中。目的是要在闭合磁场几何形态中将强电场加于等离子体，使得稳态等离子体加热和约束最佳化。	GB/T-4960.9
-bundledivertor	en	环向、纵向或束偏滤器，它引出一束抽出环向通量从而在环向场内形成分界面。	GB/T-4960.9
-carbon-fibre-composites	en	由择优取向的碳纤维及沉积的碳组成的合成材料，以提高耐热及机械强度。	GB/T-4960.9
+bundle-divertor	en	环向、纵向或束偏滤器，它引出一束抽出环向通量从而在环向场内形成分界面。	GB/T-4960.9
+carbon-fiber-composite	en	由择优取向的碳纤维及沉积的碳组成的合成材料，以提高耐热及机械强度。	GB/T-4960.9
 central-solenoid	en	位于离托卡马克装置中轴线最近的极向线圈。用于产生并维持等离子体电流的部件、加热并控制等离子体形状。	GB/T-4960.9
 central-solenoid-model-coil	en	建在前日本原子能研究所(JAERI)的模型线圈。它是用于测试ITER(2.4.47)中心螺线管的制造和其他超导体的插入式线圈[为ITER(2.4.47)中心螺线管和环向场线圈导体提供替代品]。	GB/T-4960.9
 compact-device	en	环径比接近于1的轴对称环形装置，也称为紧凑环。	GB/T-4960.9
@@ -1340,15 +1335,15 @@ cryopump	en	基于低温吸附获得高真空的原理，使用液氦或制冷�
 cryostat	en	杜瓦 一个装容超导磁体且室温下可抽真空的真空室，它提供真空绝热层以保持磁体在低温环境中。	GB/T-4960.9
 current-limit	en	托卡马克等离子体中可以允许通过的最大电流值。这个值的大小主要由磁场强度和等离子体的尺寸、形状所确定。	GB/T-4960.9
 current-profile-control	en	为了产生最佳的等离子体位形和改善等离子体约束而采用辅助加热和无感电流驱动的方式对等离子体电流分布进行控制的技术。	GB/T-4960.9
-denseplasma-focus-device	en	由两个同轴圆柱形电极和一个电容器组成的等离子体放电装置。	GB/T-4960.9
+dense-plasma-focus-device	en	由两个同轴圆柱形电极和一个电容器组成的等离子体放电装置。	GB/T-4960.9
 density-control	en	为了得到最佳等离子体位形，通过外部加料控制等离子体密度的方法和技术。	GB/T-4960.9
 divertor	en	磁约束聚变装置中，为分散热功率、排除燃料及He灰、消除或减少杂质、隔离边界产生和分开系统特意加入的杂质等而设置的装置。参见抽气偏滤器(2.2.110)、辐射偏滤器(2.2.112)。	GB/T-4960.9
 divertor-channel	en	偏滤器靶板与等离子体刮削层开放磁力线构成的区域。	GB/T-4960.9
 divertor-arrangement	en	偏滤器箱体上面部件和抽气通道的面向等离子体的构件配置和部件结构。	GB/T-4960.9
 divertor-configuration	en	在有偏滤器的等离子体放电中，形成有X点的平衡磁通位形。	GB/T-4960.9
 doublet-device	en	美国早期的具有肾形截面的非圆截面托卡马克装置。	GB/T-4960.9
-elomobumpy-torus	en	早期磁约束聚变概念，在这种概念中用微波加热产生的高比压电子环使波纹环稳定。	GB/T-4960.9
-elomobumpy-torus-s	en	早期美国国立橡树岭实验室的有24个扇形段的环形磁捕集器。 注：这种捕集器是用微波加热来产生和维持准稳态高温等离子体的。	GB/T-4960.9
+elmo-bumpy-torus	en	早期磁约束聚变概念，在这种概念中用微波加热产生的高比压电子环使波纹环稳定。	GB/T-4960.9
+elmo-bumpy-torus-s	en	早期美国国立橡树岭实验室的有24个扇形段的环形磁捕集器。 注：这种捕集器是用微波加热来产生和维持准稳态高温等离子体的。	GB/T-4960.9
 middleplane	en	赤道平面 equatorial plane 由环向场线圈一半高度确定的水平面。	GB/T-4960.9
 equatorial-port-extension	en	ITER(2.4.47)主真空室的每个赤道端口由位于真空室壁上的一个孔和一个焊接到该孔凸沿和一个直段上的窗孔短管组成的结构。它焊接到窗口短管上。	GB/T-4960.9
 ergodic-magnetic-divertor	en	用等离子体边界的螺旋线圈系统来扰动等离子体边缘以利于去除杂质的偏滤器。	GB/T-4960.9
@@ -1373,7 +1368,7 @@ helicity-injection	en	把螺旋磁波传入到等离子体的方法。用以产�
 helicity-injection-current-drive	en	利用螺旋注入非感应电流驱动技术。	GB/T-4960.9
 heliotron	en	该仿星器位形中螺旋线圈用于约束等离子体，同时有一对PF线圈提供垂直场。TF线圈有时也用于控制磁面特性。	GB/T-4960.9
 high-field-ecrh-launch	en	电子回旋共振微波从等离子体大环的内侧(强环场侧)发射，可用于加热较高密度等离子体。	GB/T-4960.9
-highheatflux	en	由等离子体传导或辐射出的功率负载大于 0.5MW / m^2 。	GB/T-4960.9
+high-heat-flux	en	由等离子体传导或辐射出的功率负载大于 0.5MW / m^2 。	GB/T-4960.9
 high-heat-flux-components	en	在偏滤器中面向等离子体的部件，特别是靶板。	GB/T-4960.9
 induction-coil	en	能够给副边等离子体提供感应电势的原边线圈，在托卡马克装置中指欧姆加热线圈。	GB/T-4960.9
 inductively-driven-plasmas	en	在托卡马克等离子体放电中，根据变压器原理，用欧姆加热线圈(包括螺线管线圈)驱动等离子体电流的方法。	GB/T-4960.9
@@ -1397,8 +1392,8 @@ magnetic-pumping	en	加上一个强度随时间变化的磁场，使等离子体
 magnetic-quench-detection	en	对超导磁体是否进入失超状态进行探测的方法。	GB/T-4960.9
 main-transmission-line	en	在离子回旋加热中传输射频大功率的同轴电缆。	GB/T-4960.9
 molecular-ion-injection-concept	en	把高能分子离子注入合适的磁容器并在那里被几种过程(例如：与中性原子的碰撞、洛伦兹离解等)之一离解，然后使俘获的高能离子的密度增加到具有热核意义的值，同时将它们的定向速度转换成热等离子体的随机运动。	GB/T-4960.9
-mathbfnb-3mathbfsn-superconductor	en	由铌三锡金属间化合物制成的高性能超导体，适合在 4.5K 氦冷却条件下及12T以下使用。	GB/T-4960.9
-mathbfnb-3mathbfal-superconductor	en	由铌三铝金属间化合物制成的高性能超导体，适合在 4.5K 氦冷却条件下及15T以下使用。	GB/T-4960.9
+nb-sn-superconductor	en	由铌三锡金属间化合物制成的高性能超导体，适合在 4.5K 氦冷却条件下及12T以下使用。	GB/T-4960.9
+nb-al-superconductor	en	由铌三铝金属间化合物制成的高性能超导体，适合在 4.5K 氦冷却条件下及15T以下使用。	GB/T-4960.9
 nbti-alloy-superconductor	en	用铌钛合金制成的柔性超导体，适合在 4.5K 氮冷却条件下及8T以下使用。	GB/T-4960.9
 negative-ion-neutral-injector	en	由负离子源提供的中性束注入器。	GB/T-4960.9
 negative-ion-source	en	产生负离子的离子源。	GB/T-4960.9
@@ -1416,7 +1411,7 @@ particle-exhaust	en	利用偏滤器或限制器从等离子体中抽出粒子的
 pellet-injection	en	把一串冷冻的燃料小丸高速射入到等离子体中的加料方法。	GB/T-4960.9
 pinch-device	en	基于箍缩效应的磁约束装置。	GB/T-4960.9
 plasma-heating	en	增加等离子体的平均能量(即温度)，获得高温等离子体的过程。通常有欧姆加热、中性束粒子加热和(或)射频波加热等。	GB/T-4960.9
-plasma-facing-component	en	与等离子体直接作用的真空室内部件。	GB/T-4960.9
+plasma-facing-components	en	与等离子体直接作用的真空室内部件。	GB/T-4960.9
 plasma-gun	en	用来产生高速等离子体团的设备。	GB/T-4960.9
 plasma-shutdown	en	在等离子体燃烧末期，等离子体能量衰减为零的过程。	GB/T-4960.9
 poloidal-divertor	en	能引出极向磁力线并在极向场中形成分界面的一种偏滤器。	GB/T-4960.9
@@ -1424,7 +1419,7 @@ poloidal-field-coils	en	在托卡马克中用于产生极向场的线圈。	GB/T
 port-axis-direction	en	端口延伸部的径向对称轴。	GB/T-4960.9
 positive-ion-neutral-injector	en	由正离子源提供的中性束注入器。	GB/T-4960.9
 profile-control	en	通过控制压强、密度和电流的径向变化控制不稳定性和改善等离子体约束。	GB/T-4960.9
-pumpeddivertor	en	磁力线进入环绕靶板的抽气室的偏滤器。	GB/T-4960.9
+pumped-divertor	en	磁力线进入环绕靶板的抽气室的偏滤器。	GB/T-4960.9
 quench	en	超导磁体由超导态到常规态的不可控和不可逆的转变。	GB/T-4960.9
 radiative-divertor	en	能使大部分功率在到达靶板之前被辐射掉的一种偏滤器。	GB/T-4960.9
 radio-frequency-and-microwave-plasma-arc	en	由射频和微波产生的等离子体电弧，是加热等离子的手段。	GB/T-4960.9
@@ -1502,7 +1497,7 @@ abnormal-operation	en	电站或部件偏离了正常运行的程序或运行状�
 abnormal-operating-conditions	en	电站或其部件偏离正常运行的工况。	GB/T-4960.9
 active-environment	en	由于遭受风化侵蚀使沉积的放射性污染物比掩埋的污染物会更迅速扩散的地面环境部分。相比而言，掩埋的污染物不会经受这种侵蚀("无源"环境)。	GB/T-4960.9
 alpha-power	en	聚变堆反应能中由反应产物 α 粒子携带的功率。	GB/T-4960.9
-alternativefuels	en	除氘和氚以外的聚变燃料。	GB/T-4960.9
+alternative-fuels	en	除氘和氚以外的聚变燃料。	GB/T-4960.9
 availability	en	系统或电厂中能执行其运行时间所占的百分比。也称为运行可用率(operation availability)。	GB/T-4960.9
 beyond-design-basis-accidents	en	已超出了设计基准许可的事故。	GB/T-4960.9
 bioshield	en	一堵包围托卡马克主低温恒温器(杜瓦)的混凝土厚壁，用以吸收大量由等离子体放出的残留辐射以保护外围区域。	GB/T-4960.9
@@ -1514,7 +1509,7 @@ borated-concrete	en	掺入硼的混凝土。硼能很好地吸收中子。这种
 breeder	en	聚变电站中用于增殖氚的部件，有时也指增殖氚的反应堆。最常用的反应为： \mathrm {L i} + \mathrm {n} \rightarrow \mathrm {T} + \alpha + 4. 8 \mathrm {M e V} 这里与快堆(裂变电站)中的增殖过程不同。	GB/T-4960.9
 breeding-blanket	en	通过锂俘获聚变中子来增殖氚的包层结构。	GB/T-4960.9
 breeding-technologies	en	通过锂俘获中子来增殖氚的技术。	GB/T-4960.9
-burning-control	en	为维持燃烧等离子体温度、密度、成分等所进行的控制。	GB/T-4960.9
+burn-control	en	为维持燃烧等离子体温度、密度、成分等所进行的控制。	GB/T-4960.9
 burning-plasma	en	当聚变产生的 α 粒子的加热功率大于外部输入的加热功率时的等离子体。	GB/T-4960.9
 ceramic-breeders	en	在增殖包层中含有锂增殖材料的陶瓷材料层。	GB/T-4960.9
 common-cause-failure	en	由于一些单个事件或原因而导致的一些设备或部件的功能失效。	GB/T-4960.9
@@ -1544,10 +1539,10 @@ fusion-reactor	en	利用可控聚变反应产生聚变能的装置。	GB/T-4960.
 helium-ash	en	在氘-氚等离子体中，聚变反应产生的高能 α 粒子(氦核)被等离子体慢化后成为氦灰。	GB/T-4960.9
 ignition-condition	en	自持聚变反应条件：对氘-氚等离子体， α 粒子加热等于等离子体热损失。	GB/T-4960.9
 iter	en	由中国、美国、欧盟、日本、俄罗斯、韩国及印度七方共同建造的核聚变实验堆。	GB/T-4960.9
-iterunitsofaccount	en	一个ITER记账单位，等价于1998年的1000美元。	GB/T-4960.9
+iter-units-of-account	en	一个ITER记账单位，等价于1998年的1000美元。	GB/T-4960.9
 international-tokamak-reactor	en	在国际原子能机构(International Atomic Energy Agency,IAEA)组织下的，由美国、日本和欧洲共 同体设计的大型托卡马克装置，后被ITER取代。	GB/T-4960.9
 mockup	en	可以将真实应用于装置上部件的某些或全部特性复制出来的样件。例如，ITER部件试验样件。	GB/T-4960.9
-modelcoil	en	用于反映ITER磁体线圈关键特性的测试线圈。	GB/T-4960.9
+model-coil	en	用于反映ITER磁体线圈关键特性的测试线圈。	GB/T-4960.9
 port-plugs	en	ITER真空室的上部、中部及下部包含了大量的端口，在运行中端口中均安装有用于等离子体诊断、加热、抽真空的部件，以及限制器和与示范堆(DEMO)相关的试验包层模块。每一个设备均安装于一个特定的窗口插座上，为它们提供与邻近室、包层、屏蔽层的坚固接口，同时还将外部供应与端口插件服务连接。	GB/T-4960.9
 remote-handling	en	通过机电设备控制在聚变堆中远距离操作的活动。	GB/T-4960.9
 remote-handling-class	en	等级I为例行的远距离计划维修，等级Ⅱ为在电厂的生命周期内进行的远程维修或更换，等级Ⅲ为不必在电厂的生命周期内进行的远距离维修或更换，等级IV为不要求任何远距离维修或更换。	GB/T-4960.9
@@ -1564,7 +1559,7 @@ steady-state-operation	en	聚变堆主要参数在远大于 α 粒子慢化时�
 support-systems	en	为聚变堆主系统提供服务的辅助系统。	GB/T-4960.9
 iter-test-blanket-module	en	在ITER装置实验窗口进行中子学和氘增殖、热工水力、电磁、整体性能测试的试验模块。	GB/T-4960.9
 thermonuclear-reactor	en	能维持和控制自持聚变反应的装置，又称聚变堆(fusion reactor)。	GB/T-4960.9
-thermonuclearreactorblanket	en	在未来的聚变反应堆中，围绕着等离子体的一组包套。它可以采取锂从中流过或由冷却剂(如氦)和锂陶瓷材料组成的结构形式。这个包层有3个用途：由锂产生氚；排除热量；吸收来自等离子体的辐射，从而保护外面的超导线圈。	GB/T-4960.9
+thermonuclear-reactor-blanket	en	在未来的聚变反应堆中，围绕着等离子体的一组包套。它可以采取锂从中流过或由冷却剂(如氦)和锂陶瓷材料组成的结构形式。这个包层有3个用途：由锂产生氚；排除热量；吸收来自等离子体的辐射，从而保护外面的超导线圈。	GB/T-4960.9
 tritium-breeding-ratio	en	聚变堆增殖包层中单位时间氚产量相对氚消耗量的比值。	GB/T-4960.9
 tritium-processing	en	从载氚流体、装置排出气体和泄漏含氚气体中提取氚，并安全收储或成为等离子体燃料的过程。参见氚工厂(2.4.71)。	GB/T-4960.9
 tritium-plant	en	从聚变堆的燃料系统及其他含氚材料中收集、储藏、循环利用、提取及净化氚的设施。	GB/T-4960.9

@@ -2,7 +2,6 @@
 # - concept_id: stable id, lowercase with hyphens, e.g. neutral-beam-injection
 # - preferred_en MAY be a phrase (registry-level concept name). IME export must split into tokens.
 # - status: active|deprecated|draft
-# - source: corpus|GB/T-4960.9|ITER-glossary|IAEA-safety-glossary (provenance of the term)
 iter	device		ITER	ITER	active	International Thermonuclear Experimental Reactor	corpus
 east	device		EAST	EAST	active	Experimental Advanced Superconducting Tokamak	corpus
 tokamak	concept	托卡马克	tokamak		active	Core device concept	corpus
@@ -2565,348 +2564,347 @@ urgent-response-phase	concept		urgent response phase		active		IAEA-safety-glossa
 use	concept		use		active		IAEA-safety-glossary
 
 # ---- Imported from GBT-4960.9 (2026-04-14) ----
-magnetic-confinement-fusion	concept	磁约束核聚变	magnetic confinement fusion		active		GB/T-4960.9
-acoustic-heating	concept	声加热	acoustic heating		active		GB/T-4960.9
-adiabatic-compression	concept	绝热压缩	adiabatic compression		active		GB/T-4960.9
-adiabatic-compression-heating	concept	绝热压缩加热	adiabatic compression heating		active		GB/T-4960.9
-adiabatic-invariant	concept	绝热不变量	adiabatic invariant		active		GB/T-4960.9
-advanced-research-innovation-and-evaluation-study	concept	先进堆创新和评价研究	Advanced Research Innovation and Evaluation Study		active		GB/T-4960.9
-alfven-gap-modes	concept	阿尔芬间隙模	Alfven gap modes		active		GB/T-4960.9
-alfven-time	concept	阿尔芬时间	Alfven time		active		GB/T-4960.9
-alfven-velocity	concept	阿尔芬速度	Alfven velocity		active		GB/T-4960.9
-alfven-wave-instability	concept	阿尔芬波不稳定性	Alfven wave instability		active		GB/T-4960.9
-alpha-channel-effect	concept	α 通道效应	alpha channel effect		active		GB/T-4960.9
-ambipolar-diffusion	concept	双极扩散	ambipolar diffusion		active		GB/T-4960.9
-anomalous-diffusion	concept	反常扩散	anomalous diffusion		active		GB/T-4960.9
-anomalous-electron-thermal-conduction	concept	反常电子热传导	anomalous electron thermal conduction		active		GB/T-4960.9
-auxiliary-heating-additional-heating	concept	辅助加热	auxiliary heating; additional heating		active		GB/T-4960.9
-ballooning-instability	concept	气球不稳定性	ballooning instability		active		GB/T-4960.9
-bernstein-mode	concept	伯恩斯坦模	Bernstein mode		active		GB/T-4960.9
-beta-value	concept	比压值	beta value		active		GB/T-4960.9
-bohm-transport	concept	玻姆输运	Bohm transport		active		GB/T-4960.9
-burn-fraction-of-thermonuclear-fuel	concept	热核燃料燃耗	burn fraction of thermonuclear fuel		active		GB/T-4960.9
-central-electron-density	concept	中心电子密度	central electron density		active		GB/T-4960.9
-closed-configuration	concept	闭合(磁)位形	closed(magnetic)configuration		active		GB/T-4960.9
-cold-plasma	concept	冷等离子体	cold plasma		active		GB/T-4960.9
-collective-instabilities	concept	集体不稳定性	collective instabilities		active		GB/T-4960.9
-collective-phenomena	concept	集体现象	collective phenomena		active		GB/T-4960.9
-collisional-plasma	concept	碰撞等离子体	collisional plasma		active		GB/T-4960.9
-collisionless-plasma	concept	无碰撞等离子体	collisionless plasma		active		GB/T-4960.9
-collisionless-shock-wave	concept	无碰撞激波	collisionless shock wave		active		GB/T-4960.9
-collisionless-tearing-instability	concept	无碰撞撕裂不稳定性	collisionless tearing instability		active		GB/T-4960.9
-controlledthermonuclearfusion	concept	受控热核聚变	controlledthermonuclearfusion		active		GB/T-4960.9
-core-confinement	concept	芯部约束	core confinement		active		GB/T-4960.9
-cusped-geometry	concept	会切几何位形	cusped geometry		active		GB/T-4960.9
-cyclotron-instability	concept	回旋不稳定性	cyclotron instability		active		GB/T-4960.9
-cyclotron-resonance	concept	回旋共振	cyclotron resonance		active		GB/T-4960.9
-cyclotron-resonance-heating	concept	回旋共振加热	cyclotron resonance heating		active		GB/T-4960.9
-cylindrical-approximation	concept	圆柱形近似	cylindrical approximation		active		GB/T-4960.9
-d-alpha-light	concept	氘阿尔法光	D-alpha light		active		GB/T-4960.9
-d-shaped-plasma	concept	"D"形等离子体	D-shaped plasma		active		GB/T-4960.9
-degenerate-configuration	concept	简并位形	degenerate configuration		active		GB/T-4960.9
-reaction	concept	mathbfD^-3mathbfHmathbfe 反应deuterium-helium-3 reaction; mathbfD^-3mathbfHmathbfe	reaction		active		GB/T-4960.9
-diamagnetic-effect	concept	逆磁效应	diamagnetic effect		active		GB/T-4960.9
-diamagnetic-plasma	concept	逆磁等离子体	diamagnetic plasma		active		GB/T-4960.9
-dispersion-relation	concept	色散关系	dispersion relation		active		GB/T-4960.9
-displacement-of-plasma	concept	等离子体位移	displacement of plasma		active		GB/T-4960.9
-disruptive-instability	concept	破裂不稳定性	disruptive instability		active		GB/T-4960.9
-dissociative-recombination	concept	# 离解复合	dissociative recombination		active		GB/T-4960.9
-divertor-physics	concept	# 偏滤器物理	divertor physics		active		GB/T-4960.9
-double-null-equilibrium	concept	双零平衡	double null equilibrium		active		GB/T-4960.9
-drift-cyclotron-resonance-instability	concept	漂移回旋共振不稳定性	drift cyclotron resonance instability		active		GB/T-4960.9
-drift-dissipative-instability	concept	漂移耗散不稳定性	drift dissipative instability		active		GB/T-4960.9
-drift-instability	concept	漂移不稳定性	drift instability		active		GB/T-4960.9
-drift-kinetic-theory	concept	漂移动理学理论	drift kinetic theory		active		GB/T-4960.9
-drift-orbits	concept	漂移轨道	drift orbits		active		GB/T-4960.9
-drift-surface	concept	漂移面	drift surface		active		GB/T-4960.9
-driven-current	concept	驱动电流	driven current		active		GB/T-4960.9
-dustyplasma	concept	尘埃等离子体	dustyplasma		active		GB/T-4960.9
-edge-fluctuations	concept	边缘涨落	edge fluctuations		active		GB/T-4960.9
-edge-physics	concept	边缘物理	edge physics		active		GB/T-4960.9
-edgeplasma	concept	边缘等离子体	edgeplasma		active		GB/T-4960.9
-eikonal-equation	concept	短时距方程	eikonal equation		active		GB/T-4960.9
-e-layer	concept	E-层	E-layer		active		GB/T-4960.9
-electromagnetic-load	concept	电磁载荷	electromagnetic load		active		GB/T-4960.9
-electron-cyclotron-wave	concept	电子回旋波	electron cyclotron wave		active		GB/T-4960.9
-electron-plasma-frequency	concept	电子等离子体频率	electron plasma frequency		active		GB/T-4960.9
-electrostatic-wave	concept	静电波	electrostatic wave		active		GB/T-4960.9
-elmy-h-mode	concept	边缘局域H模	ELMy H-mode		active		GB/T-4960.9
-empirical-scaling-formulas	concept	经验定标公式	empirical scaling formulas		active		GB/T-4960.9
-energy-break-even	concept	能量得失相当	energy break-even		active		GB/T-4960.9
-energy-confinement-time-scaling-law	concept	能量约束时间定标律	energy confinement time scaling law		active		GB/T-4960.9
-energy-loss-time	concept	能量损失时间	energy loss time		active		GB/T-4960.9
-enhanced-particle-modes	concept	增强粒子模型	enhanced particle modes		active		GB/T-4960.9
-entropy-trapping	concept	熵俘获	entropy trapping		active		GB/T-4960.9
-equilibration-times	concept	平衡时间	equilibration times		active		GB/T-4960.9
-fast-alfven-wave	concept	快阿尔芬波	fast Alfven wave		active		GB/T-4960.9
-finite-heat-conductivity-instability	concept	有限热导率不稳定性	finite heat conductivity instability		active		GB/T-4960.9
-fire-hose-instability	concept	水龙带不稳定性	fire-hose instability		active		GB/T-4960.9
-flip-instability	concept	倒转不稳定性	flip instability		active		GB/T-4960.9
-frozen-magnetic-field	concept	磁场冻结	frozen magnetic field		active		GB/T-4960.9
-fullwave-theory	concept	全波理论	fullwave theory		active		GB/T-4960.9
-gas-discharge-plasma	concept	气体放电等离子体	gas discharge plasma		active		GB/T-4960.9
-gravitational-instability	concept	重力不稳定性	gravitational instability		active		GB/T-4960.9
-guiding-center	concept	导向中心	guiding center		active		GB/T-4960.9
-gyro-kinetic-theory	concept	回旋动理学理论	gyro-kinetic theory		active		GB/T-4960.9
-gyrorelaxation-effect	concept	回旋弛豫效应	gyrorelaxation effect		active		GB/T-4960.9
-gyrorelaxation-heating	concept	回旋弛豫加热	gyrorelaxation heating		active		GB/T-4960.9
-h-l-transition	concept	H-L转换	H-L transition		active		GB/T-4960.9
-hybrid-resonance	concept	混杂共振	hybrid resonance		active		GB/T-4960.9
-hydromagnetic-wave	concept	磁流体波	hydromagnetic wave		active		GB/T-4960.9
-ideal-internal-kink-mode	concept	理想内扭曲模	ideal internal kink mode		active		GB/T-4960.9
-impurity-radiation	concept	杂质辐射	impurity radiation		active		GB/T-4960.9
-inboardplasmashape	concept	等离子体环内侧形状	inboardplasmashape		active		GB/T-4960.9
-indentation	concept	豆形凹度	indentation		active		GB/T-4960.9
-internal-inductance	concept	内感	internal inductance		active		GB/T-4960.9
-internal-mode	concept	内模	internal mode		active		GB/T-4960.9
-internal-reconnection-event	concept	内部重联事件	internal reconnection event		active		GB/T-4960.9
-ion-acoustic-wave	concept	离子声波	ion acoustic wave		active		GB/T-4960.9
-ion-cyclotron-current-drive	concept	离子回旋电流驱动	ion cyclotron current drive		active		GB/T-4960.9
-ion-cyclotron-emission	concept	离子回旋发射	ion cyclotron emission		active		GB/T-4960.9
-ion-plasma-frequency	concept	离子等离子体频率	ion plasma frequency		active		GB/T-4960.9
-ion-wave-instability	concept	离子波不稳定性	ion wave instability		active		GB/T-4960.9
-isotropic-plasma	concept	各向同性等离子体	isotropic plasma		active		GB/T-4960.9
-kelvin-helmholtz-instability	concept	开尔文-亥姆霍兹不稳定性	Kelvin-Helmholtz instability		active		GB/T-4960.9
-kinetic-instability	concept	动理学不稳定性	kinetic instability		active		GB/T-4960.9
-kinetic-pressure	concept	动理学压强	kinetic pressure		active		GB/T-4960.9
-kinetic-theory	concept	动理学理论	kinetic theory		active		GB/T-4960.9
-kruskal-limit	concept	克鲁斯卡尔极限	Kruskal limit		active		GB/T-4960.9
-landau-damping	concept	朗道阻尼	Landau damping		active		GB/T-4960.9
-langmuir-frequency	concept	朗缪尔频率	Langmuir frequency		active		GB/T-4960.9
-line-tying	concept	力线束缚	line tying		active		GB/T-4960.9
-lose-cone	concept	损失锥	lose cone		active		GB/T-4960.9
-lose-cone-instability	concept	损失锥不稳定性	lose cone instability		active		GB/T-4960.9
-low-beta-plasma	concept	低比压等离子体	low-beta plasma		active		GB/T-4960.9
-low-field-side	concept	低能磁场区	low field side		active		GB/T-4960.9
-low-temperature-plasma	concept	低温等离子体	low temperature plasma		active		GB/T-4960.9
-macroinstability-macroscopic-instability	concept	宏观不稳定性	macroinstability; macroscopic instability		active		GB/T-4960.9
-magnetic-mach-number	concept	磁马赫数	magnetic Mach number		active		GB/T-4960.9
-magnetic-mirror-configuration	concept	磁镜位形	magnetic mirror configuration		active		GB/T-4960.9
-magnetic-moment	concept	磁矩	magnetic moment		active		GB/T-4960.9
-magnetic-viscosity	concept	磁黏滞性	magnetic viscosity		active		GB/T-4960.9
-magneto-acoustic-cyclotron-instability	concept	磁-声回旋不稳定性	magneto-acoustic cyclotron instability		active		GB/T-4960.9
-magnetohydrodynamic-shock-wave	concept	磁流体动力学激波	magnetohydrodynamic shock wave		active		GB/T-4960.9
-magnetohydrodynamic-turbulence	concept	磁流体动力学湍流	magnetohydrodynamic turbulence		active		GB/T-4960.9
-magnetosonic-waves	concept	磁声波	magnetosonic waves		active		GB/T-4960.9
-magnetohydrodynamic-instability	concept	磁流体动力学不稳定性	magnetohydrodynamic instability		active		GB/T-4960.9
-microinstabilities-microscopic-instability	concept	微观不稳定性	microinstabilities; microscopic instability		active		GB/T-4960.9
-mathbfb-minimum-average-b-configuration	concept	平均极小	mathbfB 位形 minimum average B configuration		active		GB/T-4960.9
-minimum-b-configuration	concept	极小B位形	minimum B configuration		active		GB/T-4960.9
-mirrorinstability	concept	磁镜不稳定性	mirrorinstability		active		GB/T-4960.9
-mirror-ratio	concept	磁镜比	mirror ratio		active		GB/T-4960.9
-mode-number	concept	模数	mode number		active		GB/T-4960.9
-monster-sawteeth	concept	巨形锯齿	monster sawteeth		active		GB/T-4960.9
-multifaced-asymmetric-radiation-from-the-edge	concept	边缘的多面非对称辐射	multifaced asymmetric radiation from the edge		active		GB/T-4960.9
-multipole-geometry-configuration	concept	多极几何位形	multipole geometry configuration		active		GB/T-4960.9
-negativemassinstability	concept	负质量不稳定性	negativemassinstability		active		GB/T-4960.9
-neo-classical-theory	concept	新经典理论	neo-classical theory		active		GB/T-4960.9
-neutral-drag-instability	concept	中性拖曳不稳定性	neutral drag instability		active		GB/T-4960.9
-neutralized-plasma	concept	中性化等离子体	neutralized plasma		active		GB/T-4960.9
-non-circular-cross-section	concept	非圆截面	non-circular cross section		active		GB/T-4960.9
-null-point	concept	零点	null point		active		GB/T-4960.9
-open-magnetic-configuration	concept	开端磁位形	open magnetic configuration		active		GB/T-4960.9
-operating-point	concept	运行点	operating point		active		GB/T-4960.9
-operating-space	concept	运行空间	operating space		active		GB/T-4960.9
-optimized-shear	concept	优化剪切	optimized shear		active		GB/T-4960.9
-pedestal-physics	concept	台基物理	pedestal physics		active		GB/T-4960.9
-peeling-mode	concept	剥离模	peeling mode		active		GB/T-4960.9
-pfirsch-schulueter-regime	concept	普费尔施-施吕特尔状态	Pfirsch-Schulueter regime		active		GB/T-4960.9
-pinch-effect	concept	箍缩效应	pinch effect		active		GB/T-4960.9
-plasma-chemistry	concept	等离子体化学	plasma chemistry		active		GB/T-4960.9
-plasma-diffusion-and-mobility	concept	等离子体扩散与迁移	plasma diffusion and mobility		active		GB/T-4960.9
-plasma-geometry	concept	等离子体几何位形	plasma geometry		active		GB/T-4960.9
-plasma-neutrality-and-debye-shield	concept	等离子体中性与德拜屏蔽	plasma neutrality and debye shield		active		GB/T-4960.9
-plasma-oscillation	concept	等离子体振荡	plasma oscillation		active		GB/T-4960.9
-plasma-parameters	concept	等离子体参数	plasma parameters		active		GB/T-4960.9
-plasma-pressure	concept	等离子体压强	plasma pressure		active		GB/T-4960.9
-plasma-profiles	concept	等离子体分布	plasma profiles		active		GB/T-4960.9
-plasma-purity	concept	# 等离子体纯度	plasma purity		active		GB/T-4960.9
-plasma-radiation	concept	# 等离子体辐射	plasma radiation		active		GB/T-4960.9
-plasma-shock-wave	concept	# 等离子体激波	plasma shock wave		active		GB/T-4960.9
-plasma-volume	concept	# 等离子体体积	plasma volume		active		GB/T-4960.9
-plasma-wave	concept	# 等离子体波	plasma wave		active		GB/T-4960.9
-plasmoid	concept	# 等离子体团	plasmoid		active		GB/T-4960.9
-plateau-regions	concept	# 坪区	plateau regions		active		GB/T-4960.9
-poloidal-beta-beta-poloidal	concept	# 极向比压值	poloidal beta, beta poloidal		active		GB/T-4960.9
-profile	concept	分布	profile		active		GB/T-4960.9
-project-sherwood	concept	雪伍德计划	Project Sherwood		active		GB/T-4960.9
-pseudosonic-waves	concept	腹声波	pseudosonic waves		active		GB/T-4960.9
-q-limit	concept	安全因子极限	q limit		active		GB/T-4960.9
-radiated-power	concept	辐射功率	radiated power		active		GB/T-4960.9
-radio-frequency-wave	concept	射频波	radio frequency wave		active		GB/T-4960.9
-ramp-down-time	concept	斜降时间	ramp-down time		active		GB/T-4960.9
-recombination-coefficient	concept	复合系数	recombination coefficient		active		GB/T-4960.9
-resistive-ballooning-modes	concept	电阻气球模	resistive ballooning modes		active		GB/T-4960.9
-ripple	concept	波纹	ripple		active		GB/T-4960.9
-screw-instability	concept	螺旋不稳定性	screw instability		active		GB/T-4960.9
-second-stability	concept	第二稳定性	second stability		active		GB/T-4960.9
-second-stability-regime	concept	第二稳定性区	second stability regime		active		GB/T-4960.9
-separatrix-points	concept	分界线点	separatrix points		active		GB/T-4960.9
-screw-pinch	concept	螺旋箍缩	screw pinch		active		GB/T-4960.9
-single-fluid-model	concept	单流体模型	single fluid model		active		GB/T-4960.9
-single-null-equilibrium	concept	单零平衡	single-null equilibrium		active		GB/T-4960.9
-stochastic-heating	concept	随机加热	stochastic heating		active		GB/T-4960.9
-super-alfvenic-velocity	concept	超阿尔芬速度	super Alfvenic velocity		active		GB/T-4960.9
-superthermal-radiation	concept	超热辐射	superthermal radiation		active		GB/T-4960.9
-tearing-mode-instability	concept	撕裂模不稳定性	tearing mode instability		active		GB/T-4960.9
-tearing-magnetic-islands	concept	撕裂磁岛	tearing magnetic islands		active		GB/T-4960.9
-thermal-particles	concept	热粒子	thermal particles		active		GB/T-4960.9
-transport-matrix-coefficient	concept	输运矩阵系数	transport matrix coefficient		active		GB/T-4960.9
-transport-scaling	concept	输运定标	transport scaling		active		GB/T-4960.9
-trapped-particle-instability	concept	俘获粒子不稳定性	trapped-particle instability		active		GB/T-4960.9
-triple-alpha-process	concept	三阿尔法过程	triple-alpha process		active		GB/T-4960.9
-turbulent-heating	concept	湍流加热	turbulent heating		active		GB/T-4960.9
-two-fluid-model-and-multi-fluid-model	concept	双流体模型和多流体模型	two-fluid model and multi-fluid model		active		GB/T-4960.9
-two-stream-instability	concept	双流不稳定性	two-stream instability		active		GB/T-4960.9
-universal-alfven-wave-instability	concept	普适阿尔芬波不稳定性	universal Alfven-wave instability		active		GB/T-4960.9
-velocity-space-instability	concept	速度空间不稳定性	velocity space instability		active		GB/T-4960.9
-whistler-wave	concept	哨声波	whistler wave		active		GB/T-4960.9
-whistler-wave-instability	concept	哨声波不稳定性	whistler wave instability		active		GB/T-4960.9
-air-core-transformer	concept	空芯变压器	air core transformer		active		GB/T-4960.9
-auxiliary-heating-power	concept	辅助加热功率	auxiliary heating power		active		GB/T-4960.9
-baffle-element	concept	阻隔部件	baffle element		active		GB/T-4960.9
-balanceburning	concept	平衡燃烧	balanceburning		active		GB/T-4960.9
-bittercoil	concept	# 比特线圈	Bittercoil		active		GB/T-4960.9
-bumper-limiters	concept	# 缓冲限制器	bumper limiters		active		GB/T-4960.9
-bumpy-torus	concept	# 波纹环	bumpy torus		active		GB/T-4960.9
-bundledivertor	concept	# 束偏滤器	bundledivertor		active		GB/T-4960.9
-carbon-fibre-composites	concept	# 碳纤维复合材料	carbon fibre composites		active		GB/T-4960.9
-central-solenoid-model-coil	concept	# 中心螺线管模型线圈	central solenoid model coil		active		GB/T-4960.9
-compact-device	concept	# 紧凑装置	compact device		active		GB/T-4960.9
-critical-density	concept	# 临界密度	critical density		active		GB/T-4960.9
-critical-surface	concept	临界面	critical surface		active		GB/T-4960.9
-current-limit	concept	电流极限	current limit		active		GB/T-4960.9
-denseplasma-focus-device	concept	稠密等离子体焦点装置	denseplasma focus device		active		GB/T-4960.9
-divertor-arrangement	concept	偏滤器结构	divertor arrangement		active		GB/T-4960.9
-divertor-configuration	concept	偏滤器位形	divertor configuration		active		GB/T-4960.9
-doublet-device	concept	双流器装置	doublet device		active		GB/T-4960.9
-elomobumpy-torus	concept	Elomo 波纹环	Elomobumpy torus		active		GB/T-4960.9
-elomobumpy-torus-s	concept	Elomo 波纹环-S	Elomobumpy torus-S		active		GB/T-4960.9
-middleplane	concept	中平面	middleplane		active		GB/T-4960.9
-equatorial-port-extension	concept	赤道端口延伸	equatorial port extension		active		GB/T-4960.9
-ergodic-magnetic-divertor	concept	各态历经磁偏滤器	ergodic magnetic divertor		active		GB/T-4960.9
-fast-wave-antennas	concept	快波天线	fast wave antennas		active		GB/T-4960.9
-fast-wave-current-drive	concept	快波电流驱动	fast wave current drive		active		GB/T-4960.9
-ferromagnetic-inserts	concept	铁磁插件	ferromagnetic inserts		active		GB/T-4960.9
-field-shaping-coil	concept	成形场线圈	field shaping coil		active		GB/T-4960.9
-flat-top-current	concept	平顶电流	flat-top current		active		GB/T-4960.9
-flat-top-pulse-length	concept	平顶脉冲长度	flat-top pulse length		active		GB/T-4960.9
-fuelling	concept	加料	fuelling		active		GB/T-4960.9
-fuel-of-fusion	concept	聚变燃料	fuel of fusion		active		GB/T-4960.9
-glow-discharge-plasma	concept	辉光放电等离子体	glow discharge plasma		active		GB/T-4960.9
-hard-core-pinch-device	concept	硬芯箍缩装置	hard core pinch device		active		GB/T-4960.9
-helicity-injection-current-drive	concept	螺旋注入电流驱动	helicity injection current drive		active		GB/T-4960.9
-heliotron	concept	# 螺旋器	heliotron		active		GB/T-4960.9
-high-field-ecrh-launch	concept	强场电子回旋共振加热发射	high field ECRH launch		active		GB/T-4960.9
-high-frequency-confinement	concept	# 高频约束	high frequency confinement		active		GB/T-4960.9
-high-frequency-plug	concept	# 高频堵漏	high frequency plug		active		GB/T-4960.9
-highheatflux	concept	# 高热通量	highheatflux		active		GB/T-4960.9
-high-heat-flux-components	concept	高热通量部件	high heat flux components		active		GB/T-4960.9
-ic-antenna	concept	# 离子回旋天线	IC antenna		active		GB/T-4960.9
-induction-coil	concept	# 感应线圈	induction coil		active		GB/T-4960.9
-inductively-driven-plasmas	concept	# 感应驱动等离子体	inductively driven plasmas		active		GB/T-4960.9
-iron-core-transformer	concept	铁芯变压器	iron core transformer		active		GB/T-4960.9
-joffe-s-bar	concept	约飞棒	Joffe's bar		active		GB/T-4960.9
-l-h-threshold-power	concept	L-H 转换阈值功率	L-H threshold power		active		GB/T-4960.9
-limiter-system	concept	限制器系统	limiter system		active		GB/T-4960.9
-linear-pinch	concept	直线箍缩	linear pinch		active		GB/T-4960.9
-lining	concept	衬套	lining		active		GB/T-4960.9
-lip-seal	concept	边缘密封	lip seal		active		GB/T-4960.9
-low-aspect-ratio	concept	低环径比	low aspect ratio		active		GB/T-4960.9
-magnetic-field-component	concept	磁场组成	magnetic field component		active		GB/T-4960.9
-magnetic-pumping	concept	磁泵抽运	magnetic pumping		active		GB/T-4960.9
-magnetic-quench-detection	concept	磁体失超探测	magnetic quench detection		active		GB/T-4960.9
-main-transmission-line	concept	主传输电缆	main transmission line		active		GB/T-4960.9
-molecular-ion-injection-concept	concept	分子离子注入概念	molecular ion injection concept		active		GB/T-4960.9
-mathbfnb-3mathbfsn-superconductor	concept	铌三锡超导体	mathbfNb_3mathbfSn superconductor		active		GB/T-4960.9
-mathbfnb-3mathbfal-superconductor	concept	铌三铝超导体	mathbfNb_3mathbfAl superconductor		active		GB/T-4960.9
-nbti-alloy-superconductor	concept	铌钛合金超导体	NbTi alloy superconductor		active		GB/T-4960.9
-negative-ion-neutral-injector	concept	负离子-中性束注入器	negative ion neutral injector		active		GB/T-4960.9
-neutral-beam	concept	中性束	neutral beam		active		GB/T-4960.9
-ohmic-heating-system	concept	欧姆加热系统	Ohmic heating system		active		GB/T-4960.9
-operating-margins	concept	运行裕量	operating margins		active		GB/T-4960.9
-operating-parameter	concept	运行参数	operating parameter		active		GB/T-4960.9
-overturning-moment	concept	倾覆力矩	overturning moment		active		GB/T-4960.9
-pancake-winding	concept	饼形绕组	pancake winding		active		GB/T-4960.9
-particle-exhaust	concept	粒子抽运	particle exhaust		active		GB/T-4960.9
-pinch-device	concept	箍缩装置	pinch device		active		GB/T-4960.9
-plasma-heating	concept	等离子体加热	plasma heating		active		GB/T-4960.9
-poloidal-divertor	concept	极向偏滤器	poloidal divertor		active		GB/T-4960.9
-port-axis-direction	concept	端口轴向	port axis direction		active		GB/T-4960.9
-positive-ion-neutral-injector	concept	正离子-中性束注入器	positive ion neutral injector		active		GB/T-4960.9
-profile-control	concept	分布控制	profile control		active		GB/T-4960.9
-pumpeddivertor	concept	抽气偏滤器	pumpeddivertor		active		GB/T-4960.9
-radio-frequency-and-microwave-plasma-arc	concept	射频和微波等离子体弧	radio frequency and microwave plasma arc		active		GB/T-4960.9
-residual-resistance-ratio	concept	剩余电阻率比	residual resistance ratio		active		GB/T-4960.9
-resonant-ions-electrons	concept	共振离子/电子	resonant ions/electrons		active		GB/T-4960.9
-sawtooth-stabilization	concept	锯齿稳定	sawtooth stabilization		active		GB/T-4960.9
-septum	concept	隔板	septum		active		GB/T-4960.9
-shockwave-tube	concept	激波管	shockwave tube		active		GB/T-4960.9
-shock-wave-heating	concept	激波加热	shock wave heating		active		GB/T-4960.9
-single-double-null	concept	单/双零	single/double null		active		GB/T-4960.9
-start-up-assist	concept	启动辅助	start-up assist		active		GB/T-4960.9
-superconducting-coil	concept	超导线圈	superconducting coil		active		GB/T-4960.9
-superconductor-tokamak	concept	超导托卡马克	superconductor Tokamak		active		GB/T-4960.9
-tokamak-operating-boundaries	concept	托卡·马克运行边界	Tokamak operating boundaries		active		GB/T-4960.9
-toroidal-magnetic-cusp	concept	环形磁场会切	toroidal magnetic (line) cusp		active		GB/T-4960.9
-toroidal-configuration	concept	环形位形	toroidal configuration		active		GB/T-4960.9
-toroidal-pinch	concept	环向箍缩	toroidal pinch		active		GB/T-4960.9
-vapour-phase-catalytic-exchange	concept	气相催化交换	vapour phase catalytic exchange		active		GB/T-4960.9
-vertical-stability-control	concept	垂直稳定性控制	vertical stability control		active		GB/T-4960.9
-wall-etch	concept	壁腐蚀	wall etch		active		GB/T-4960.9
-yin-yang-coil	concept	阴阳线圈	Yin-Yang coil		active		GB/T-4960.9
-brewster-angle	concept	布儒斯特角	Brewster angle		active		GB/T-4960.9
-charge-coupled-device	concept	电荷耦合器件	charge-coupled device		active		GB/T-4960.9
-dye-laser	concept	染料激光器	dye laser		active		GB/T-4960.9
-electrostatic-analyzer	concept	静电分析器	electrostatic analyzer		active		GB/T-4960.9
-fabry-perot-interferometer	concept	法布里-珀罗干涉仪	Fabry-Perot interferometer		active		GB/T-4960.9
-first-mirrors	concept	第一镜	first mirrors		active		GB/T-4960.9
-h-alpha-studies	concept	H-α研究	H-alpha studies		active		GB/T-4960.9
-heavy-ion-beam-probe	concept	重离子束探针	heavy-ion beam probe		active		GB/T-4960.9
-hugill-diagram	concept	海吉尔图	Hugill diagram		active		GB/T-4960.9
-lost-alpha-detectors	concept	逃逸 α 粒子探测器	lost alpha detectors		active		GB/T-4960.9
-mach-zehnder-interferometer	concept	马赫-曾恩德尔干涉仪	Mach-Zehnder interferometer		active		GB/T-4960.9
-magnetic-bottle	concept	磁瓶	magnetic bottle		active		GB/T-4960.9
-microwave-interferometer	concept	微波干涉仪	microwave interferometer		active		GB/T-4960.9
-neutral-particle-analyser	concept	中性粒子分析器	neutral particle analyser		active		GB/T-4960.9
-plasma-diagnostics-technique	concept	等离子体诊断技术	plasma diagnostics technique		active		GB/T-4960.9
-soft-x-rays-camera	concept	软X射线成像仪	soft X-rays camera		active		GB/T-4960.9
-survey-spectrometer	concept	广谱测量光谱仪	survey spectrometer		active		GB/T-4960.9
-abnormal-operating-conditions	concept	异常运行工况	abnormal operating conditions		active		GB/T-4960.9
-active-environment	concept	"有源"环境	"active"environment		active		GB/T-4960.9
-alpha-power	concept	α 功率	alpha-power		active		GB/T-4960.9
-alternativefuels	concept	替代燃料	alternativefuels		active		GB/T-4960.9
-beyond-design-basis-accidents	concept	超设计基准事故	beyond-design-basis accidents		active		GB/T-4960.9
-blanket-materials	concept	# 包层材料	blanket materials		active		GB/T-4960.9
-blanket-shield	concept	# 包层屏蔽	blanket shield		active		GB/T-4960.9
-borated-concrete	concept	# 含硼混凝土	borated concrete		active		GB/T-4960.9
-breeder	concept	# 增殖部件	breeder		active		GB/T-4960.9
-burning-control	concept	# 燃烧控制	burning control		active		GB/T-4960.9
-ceramic-breeders	concept	# 陶瓷：增殖层	ceramic breeders		active		GB/T-4960.9
-compliant-material	concept	兼容性材料	compliant material		active		GB/T-4960.9
-conceptual-design-activity	concept	概念设计活动	conceptual design activity		active		GB/T-4960.9
-cordey-pass	concept	"科第"通路	"Cordey" Pass		active		GB/T-4960.9
-down-time	concept	停堆时间	down-time		active		GB/T-4960.9
-d-t-operation	concept	氘-氚运行	D-T operation		active		GB/T-4960.9
-duty-factor	concept	占空因数	duty factor		active		GB/T-4960.9
-dwell-time	concept	停留时间	dwell time		active		GB/T-4960.9
-engineering-design-activity	concept	工程设计活动	engineering design activity		active		GB/T-4960.9
-fuels	concept	燃米.	fuels		active		GB/T-4960.9
-fusion-fission-hybrid-reactor	concept	聚变-裂变混合堆	fusion-fission hybrid reactor		active		GB/T-4960.9
-fusion-power	concept	聚变功率	fusion power		active		GB/T-4960.9
-fusion-product	concept	聚变产物	fusion product		active		GB/T-4960.9
-iterunitsofaccount	concept	ITER记账单位	ITERunitsofaccount		active		GB/T-4960.9
-international-tokamak-reactor	concept	国际托卡马克反应堆	International Tokamak Reactor		active		GB/T-4960.9
-mockup	concept	样块	mockup		active		GB/T-4960.9
-modelcoil	concept	模型线圈	modelcoil		active		GB/T-4960.9
-port-plugs	concept	端口插件	port plugs		active		GB/T-4960.9
-remote-handling-class	concept	远程操作等级	remote handling class		active		GB/T-4960.9
-safety-system-support-feature	concept	安全系统支撑设施	safety system support feature		active		GB/T-4960.9
-scheduled-down-time	concept	计划内停堆时间	scheduled down time		active		GB/T-4960.9
-shut-down-time	concept	关断时间	shut-down time		active		GB/T-4960.9
-steady-state-fusion-reactor	concept	稳态聚变堆	steady-state fusion reactor		active		GB/T-4960.9
-support-systems	concept	支持系统	support systems		active		GB/T-4960.9
-iter-test-blanket-module	concept	ITER 试验包层模块	ITER test blanket module		active		GB/T-4960.9
-thermonuclear-reactor	concept	热核反应堆	thermonuclear reactor		active		GB/T-4960.9
-thermonuclearreactorblanket	concept	热核反应堆包层	thermonuclearreactorblanket		active		GB/T-4960.9
-wall-loading	concept	壁载荷	wall loading		active		GB/T-4960.9
+
+
+
+# ---- Imported from GB/T-4960.9 (2026-04-14) ----
+magnetic-confinement-fusion	nuclear-fusion	磁约束核聚变	magnetic confinement fusion	MCF	active		GB/T-4960.9
+acoustic-heating	nuclear-fusion	声加热	acoustic heating		active		GB/T-4960.9
+adiabatic-compression	nuclear-fusion	绝热压缩	adiabatic compression		active		GB/T-4960.9
+adiabatic-compression-heating	nuclear-fusion	绝热压缩加热	adiabatic compression heating		active		GB/T-4960.9
+adiabatic-invariant	nuclear-fusion	绝热不变量	adiabatic invariant		active		GB/T-4960.9
+advanced-research-innovation-and-evaluation-study	nuclear-fusion	先进堆创新和评价研究	Advanced Research Innovation and Evaluation Study	ARIES	active		GB/T-4960.9
+alfven-gap-modes	nuclear-fusion	阿尔芬间隙模	Alfven gap modes		active		GB/T-4960.9
+alfven-time	nuclear-fusion	阿尔芬时间	Alfven time		active		GB/T-4960.9
+alfven-velocity	nuclear-fusion	阿尔芬速度	Alfven velocity		active		GB/T-4960.9
+alfven-wave-instability	nuclear-fusion	阿尔芬波不稳定性	Alfven wave instability		active		GB/T-4960.9
+alpha-channel-effect	nuclear-fusion	α 通道效应	alpha channel effect		active		GB/T-4960.9
+ambipolar-diffusion	nuclear-fusion	双极扩散	ambipolar diffusion		active		GB/T-4960.9
+anomalous-diffusion	nuclear-fusion	反常扩散	anomalous diffusion		active		GB/T-4960.9
+anomalous-electron-thermal-conduction	nuclear-fusion	反常电子热传导	anomalous electron thermal conduction		active		GB/T-4960.9
+auxiliary-heating-additional-heating	nuclear-fusion	辅助加热	auxiliary heating; additional heating		active		GB/T-4960.9
+ballooning-instability	nuclear-fusion	气球不稳定性	ballooning instability		active		GB/T-4960.9
+bernstein-mode	nuclear-fusion	伯恩斯坦模	Bernstein mode		active		GB/T-4960.9
+beta-value	nuclear-fusion	比压值	beta value		active		GB/T-4960.9
+bohm-transport	nuclear-fusion	玻姆输运	Bohm transport		active		GB/T-4960.9
+burn-fraction-of-thermonuclear-fuel	nuclear-fusion	热核燃料燃耗	burn fraction of thermonuclear fuel		active		GB/T-4960.9
+central-electron-density	nuclear-fusion	中心电子密度	central electron density		active		GB/T-4960.9
+closed-configuration	nuclear-fusion	闭合(磁)位形	closed(magnetic)configuration		active		GB/T-4960.9
+cold-plasma	nuclear-fusion	冷等离子体	cold plasma		active		GB/T-4960.9
+collective-instabilities	nuclear-fusion	集体不稳定性	collective instabilities		active		GB/T-4960.9
+collective-phenomena	nuclear-fusion	集体现象	collective phenomena		active		GB/T-4960.9
+collisional-plasma	nuclear-fusion	碰撞等离子体	collisional plasma		active		GB/T-4960.9
+collisionless-plasma	nuclear-fusion	无碰撞等离子体	collisionless plasma		active		GB/T-4960.9
+collisionless-shock-wave	nuclear-fusion	无碰撞激波	collisionless shock wave		active		GB/T-4960.9
+collisionless-tearing-instability	nuclear-fusion	无碰撞撕裂不稳定性	collisionless tearing instability		active		GB/T-4960.9
+controlled-thermonuclear-fusion	nuclear-fusion	受控热核聚变	controlled thermonuclear fusion		active		GB/T-4960.9
+core-confinement	nuclear-fusion	芯部约束	core confinement		active		GB/T-4960.9
+cusped-geometry	nuclear-fusion	会切几何位形	cusped geometry		active		GB/T-4960.9
+cyclotron-instability	nuclear-fusion	回旋不稳定性	cyclotron instability		active		GB/T-4960.9
+cyclotron-resonance	nuclear-fusion	回旋共振	cyclotron resonance		active		GB/T-4960.9
+cyclotron-resonance-heating	nuclear-fusion	回旋共振加热	cyclotron resonance heating		active		GB/T-4960.9
+cylindrical-approximation	nuclear-fusion	圆柱形近似	cylindrical approximation		active		GB/T-4960.9
+d-alpha-light	nuclear-fusion	氘阿尔法光	D-alpha light		active		GB/T-4960.9
+d-shaped-plasma	nuclear-fusion	"D"形等离子体	D-shaped plasma		active		GB/T-4960.9
+degenerate-configuration	nuclear-fusion	简并位形	degenerate configuration		active		GB/T-4960.9
+diamagnetic-effect	nuclear-fusion	逆磁效应	diamagnetic effect		active		GB/T-4960.9
+diamagnetic-plasma	nuclear-fusion	逆磁等离子体	diamagnetic plasma		active		GB/T-4960.9
+dispersion-relation	nuclear-fusion	色散关系	dispersion relation		active		GB/T-4960.9
+displacement-of-plasma	nuclear-fusion	等离子体位移	displacement of plasma		active		GB/T-4960.9
+disruptive-instability	nuclear-fusion	破裂不稳定性	disruptive instability		active		GB/T-4960.9
+dissociative-recombination	nuclear-fusion	离解复合	dissociative recombination		active		GB/T-4960.9
+divertor-physics	nuclear-fusion	偏滤器物理	divertor physics		active		GB/T-4960.9
+double-null-equilibrium	nuclear-fusion	双零平衡	double null equilibrium		active		GB/T-4960.9
+drift-cyclotron-resonance-instability	nuclear-fusion	漂移回旋共振不稳定性	drift cyclotron resonance instability		active		GB/T-4960.9
+drift-dissipative-instability	nuclear-fusion	漂移耗散不稳定性	drift dissipative instability		active		GB/T-4960.9
+drift-instability	nuclear-fusion	漂移不稳定性	drift instability		active		GB/T-4960.9
+drift-kinetic-theory	nuclear-fusion	漂移动理学理论	drift kinetic theory		active		GB/T-4960.9
+drift-orbits	nuclear-fusion	漂移轨道	drift orbits		active		GB/T-4960.9
+drift-surface	nuclear-fusion	漂移面	drift surface		active		GB/T-4960.9
+driven-current	nuclear-fusion	驱动电流	driven current		active		GB/T-4960.9
+dusty-plasma	nuclear-fusion	尘埃等离子体	dusty plasma		active		GB/T-4960.9
+edge-fluctuations	nuclear-fusion	边缘涨落	edge fluctuations		active		GB/T-4960.9
+edge-physics	nuclear-fusion	边缘物理	edge physics		active		GB/T-4960.9
+edge-plasma	nuclear-fusion	边缘等离子体	edge plasma		active		GB/T-4960.9
+eikonal-equation	nuclear-fusion	短时距方程	eikonal equation		active		GB/T-4960.9
+e-layer	nuclear-fusion	E-层	E-layer		active		GB/T-4960.9
+electromagnetic-load	nuclear-fusion	电磁载荷	electromagnetic load		active		GB/T-4960.9
+electron-cyclotron-wave	nuclear-fusion	电子回旋波	electron cyclotron wave	ECW	active		GB/T-4960.9
+electron-plasma-frequency	nuclear-fusion	电子等离子体频率	electron plasma frequency		active		GB/T-4960.9
+electrostatic-wave	nuclear-fusion	静电波	electrostatic wave		active		GB/T-4960.9
+elmy-h-mode	nuclear-fusion	边缘局域H模	ELMy H-mode		active		GB/T-4960.9
+empirical-scaling-formulas	nuclear-fusion	经验定标公式	empirical scaling formulas		active		GB/T-4960.9
+energy-break-even	nuclear-fusion	能量得失相当	energy break-even		active		GB/T-4960.9
+energy-confinement-time-scaling-law	nuclear-fusion	能量约束时间定标律	energy confinement time scaling law		active		GB/T-4960.9
+energy-loss-time	nuclear-fusion	能量损失时间	energy loss time		active		GB/T-4960.9
+enhanced-particle-modes	nuclear-fusion	增强粒子模型	enhanced particle modes	EPMs	active		GB/T-4960.9
+entropy-trapping	nuclear-fusion	熵俘获	entropy trapping		active		GB/T-4960.9
+equilibration-times	nuclear-fusion	平衡时间	equilibration times		active		GB/T-4960.9
+fast-alfven-wave	nuclear-fusion	快阿尔芬波	fast Alfven wave		active		GB/T-4960.9
+finite-heat-conductivity-instability	nuclear-fusion	有限热导率不稳定性	finite heat conductivity instability		active		GB/T-4960.9
+fire-hose-instability	nuclear-fusion	水龙带不稳定性	fire-hose instability		active		GB/T-4960.9
+flip-instability	nuclear-fusion	倒转不稳定性	flip instability		active		GB/T-4960.9
+frozen-magnetic-field	nuclear-fusion	磁场冻结	frozen magnetic field		active		GB/T-4960.9
+fullwave-theory	nuclear-fusion	全波理论	fullwave theory		active		GB/T-4960.9
+gas-discharge-plasma	nuclear-fusion	气体放电等离子体	gas discharge plasma		active		GB/T-4960.9
+gravitational-instability	nuclear-fusion	重力不稳定性	gravitational instability		active		GB/T-4960.9
+guiding-center	nuclear-fusion	导向中心	guiding center		active		GB/T-4960.9
+gyro-kinetic-theory	nuclear-fusion	回旋动理学理论	gyro-kinetic theory		active		GB/T-4960.9
+gyrorelaxation-effect	nuclear-fusion	回旋弛豫效应	gyrorelaxation effect		active		GB/T-4960.9
+gyrorelaxation-heating	nuclear-fusion	回旋弛豫加热	gyrorelaxation heating		active		GB/T-4960.9
+h-l-transition	nuclear-fusion	H-L转换	H-L transition		active		GB/T-4960.9
+hybrid-resonance	nuclear-fusion	混杂共振	hybrid resonance		active		GB/T-4960.9
+hydromagnetic-wave	nuclear-fusion	磁流体波	hydromagnetic wave		active		GB/T-4960.9
+ideal-internal-kink-mode	nuclear-fusion	理想内扭曲模	ideal internal kink mode		active		GB/T-4960.9
+impurity-radiation	nuclear-fusion	杂质辐射	impurity radiation		active		GB/T-4960.9
+inboard-plasma-shape	nuclear-fusion	等离子体环内侧形状	inboard plasma shape		active		GB/T-4960.9
+indentation	nuclear-fusion	豆形凹度	indentation		active		GB/T-4960.9
+internal-inductance	nuclear-fusion	内感	internal inductance		active		GB/T-4960.9
+internal-mode	nuclear-fusion	内模	internal mode		active		GB/T-4960.9
+internal-reconnection-event	nuclear-fusion	内部重联事件	internal reconnection event	IRE	active		GB/T-4960.9
+ion-acoustic-wave	nuclear-fusion	离子声波	ion acoustic wave		active		GB/T-4960.9
+ion-cyclotron-current-drive	nuclear-fusion	离子回旋电流驱动	ion cyclotron current drive	ICCD	active		GB/T-4960.9
+ion-cyclotron-emission	nuclear-fusion	离子回旋发射	ion cyclotron emission	ICE	active		GB/T-4960.9
+ion-plasma-frequency	nuclear-fusion	离子等离子体频率	ion plasma frequency		active		GB/T-4960.9
+ion-wave-instability	nuclear-fusion	离子波不稳定性	ion wave instability		active		GB/T-4960.9
+isotropic-plasma	nuclear-fusion	各向同性等离子体	isotropic plasma		active		GB/T-4960.9
+kelvin-helmholtz-instability	nuclear-fusion	开尔文-亥姆霍兹不稳定性	Kelvin-Helmholtz instability		active		GB/T-4960.9
+kinetic-instability	nuclear-fusion	动理学不稳定性	kinetic instability		active		GB/T-4960.9
+kinetic-pressure	nuclear-fusion	动理学压强	kinetic pressure		active		GB/T-4960.9
+kinetic-theory	nuclear-fusion	动理学理论	kinetic theory		active		GB/T-4960.9
+kruskal-limit	nuclear-fusion	克鲁斯卡尔极限	Kruskal limit		active		GB/T-4960.9
+landau-damping	nuclear-fusion	朗道阻尼	Landau damping		active		GB/T-4960.9
+langmuir-frequency	nuclear-fusion	朗缪尔频率	Langmuir frequency		active		GB/T-4960.9
+line-tying	nuclear-fusion	力线束缚	line tying		active		GB/T-4960.9
+loss-cone	nuclear-fusion	损失锥	loss cone		active		GB/T-4960.9
+loss-cone-instability	nuclear-fusion	损失锥不稳定性	loss cone instability		active		GB/T-4960.9
+low-beta-plasma	nuclear-fusion	低比压等离子体	low-beta plasma		active		GB/T-4960.9
+low-field-side	nuclear-fusion	低能磁场区	low field side		active		GB/T-4960.9
+low-temperature-plasma	nuclear-fusion	低温等离子体	low temperature plasma		active		GB/T-4960.9
+macroinstability-macroscopic-instability	nuclear-fusion	宏观不稳定性	macroinstability; macroscopic instability		active		GB/T-4960.9
+magnetic-mach-number	nuclear-fusion	磁马赫数	magnetic Mach number		active		GB/T-4960.9
+magnetic-mirror-configuration	nuclear-fusion	磁镜位形	magnetic mirror configuration		active		GB/T-4960.9
+magnetic-moment	nuclear-fusion	磁矩	magnetic moment		active		GB/T-4960.9
+magnetic-viscosity	nuclear-fusion	磁黏滞性	magnetic viscosity		active		GB/T-4960.9
+magneto-acoustic-cyclotron-instability	nuclear-fusion	磁-声回旋不稳定性	magneto-acoustic cyclotron instability		active		GB/T-4960.9
+magnetohydrodynamic-shock-wave	nuclear-fusion	磁流体动力学激波	magnetohydrodynamic shock wave		active		GB/T-4960.9
+magnetohydrodynamic-turbulence	nuclear-fusion	磁流体动力学湍流	magnetohydrodynamic turbulence		active		GB/T-4960.9
+magnetosonic-waves	nuclear-fusion	磁声波	magnetosonic waves		active		GB/T-4960.9
+magnetohydrodynamic-instability	nuclear-fusion	磁流体动力学不稳定性	magnetohydrodynamic instability	MHD	active		GB/T-4960.9
+microinstabilities-microscopic-instability	nuclear-fusion	微观不稳定性	microinstabilities; microscopic instability		active		GB/T-4960.9
+minimum-average-b-configuration	nuclear-fusion	平均极小B位形	minimum average B configuration		active		GB/T-4960.9
+minimum-b-configuration	nuclear-fusion	极小B位形	minimum B configuration		active		GB/T-4960.9
+mirror-instability	nuclear-fusion	磁镜不稳定性	mirror instability		active		GB/T-4960.9
+mirror-ratio	nuclear-fusion	磁镜比	mirror ratio		active		GB/T-4960.9
+mode-number	nuclear-fusion	模数	mode number		active		GB/T-4960.9
+monster-sawteeth	nuclear-fusion	巨形锯齿	monster sawteeth		active		GB/T-4960.9
+multifaced-asymmetric-radiation-from-the-edge	nuclear-fusion	边缘的多面非对称辐射	multifaced asymmetric radiation from the edge	MARFE	active		GB/T-4960.9
+multipole-geometry-configuration	nuclear-fusion	多极几何位形	multipole geometry configuration		active		GB/T-4960.9
+negative-mass-instability	nuclear-fusion	负质量不稳定性	negative mass instability		active		GB/T-4960.9
+neo-classical-theory	nuclear-fusion	新经典理论	neo-classical theory		active		GB/T-4960.9
+neutral-drag-instability	nuclear-fusion	中性拖曳不稳定性	neutral drag instability		active		GB/T-4960.9
+neutralized-plasma	nuclear-fusion	中性化等离子体	neutralized plasma		active		GB/T-4960.9
+non-circular-cross-section	nuclear-fusion	非圆截面	non-circular cross section		active		GB/T-4960.9
+null-point	nuclear-fusion	零点	null point		active		GB/T-4960.9
+open-magnetic-configuration	nuclear-fusion	开端磁位形	open magnetic configuration		active		GB/T-4960.9
+operating-point	nuclear-fusion	运行点	operating point		active		GB/T-4960.9
+operating-space	nuclear-fusion	运行空间	operating space		active		GB/T-4960.9
+optimized-shear	nuclear-fusion	优化剪切	optimized shear		active		GB/T-4960.9
+pedestal-physics	nuclear-fusion	台基物理	pedestal physics		active		GB/T-4960.9
+peeling-mode	nuclear-fusion	剥离模	peeling mode		active		GB/T-4960.9
+pfirsch-schulueter-regime	nuclear-fusion	普费尔施-施吕特尔状态	Pfirsch-Schulueter regime		active		GB/T-4960.9
+pinch-effect	nuclear-fusion	箍缩效应	pinch effect		active		GB/T-4960.9
+plasma-chemistry	nuclear-fusion	等离子体化学	plasma chemistry		active		GB/T-4960.9
+plasma-diffusion-and-mobility	nuclear-fusion	等离子体扩散与迁移	plasma diffusion and mobility		active		GB/T-4960.9
+plasma-geometry	nuclear-fusion	等离子体几何位形	plasma geometry		active		GB/T-4960.9
+plasma-neutrality-and-debye-shield	nuclear-fusion	等离子体中性与德拜屏蔽	plasma neutrality and debye shield		active		GB/T-4960.9
+plasma-oscillation	nuclear-fusion	等离子体振荡	plasma oscillation		active		GB/T-4960.9
+plasma-parameters	nuclear-fusion	等离子体参数	plasma parameters		active		GB/T-4960.9
+plasma-pressure	nuclear-fusion	等离子体压强	plasma pressure		active		GB/T-4960.9
+plasma-profiles	nuclear-fusion	等离子体分布	plasma profiles		active		GB/T-4960.9
+plasma-purity	nuclear-fusion	等离子体纯度	plasma purity		active		GB/T-4960.9
+plasma-radiation	nuclear-fusion	等离子体辐射	plasma radiation		active		GB/T-4960.9
+plasma-shock-wave	nuclear-fusion	等离子体激波	plasma shock wave		active		GB/T-4960.9
+plasma-volume	nuclear-fusion	等离子体体积	plasma volume		active		GB/T-4960.9
+plasma-wave	nuclear-fusion	等离子体波	plasma wave		active		GB/T-4960.9
+plasmoid	nuclear-fusion	等离子体团	plasmoid		active		GB/T-4960.9
+poloidal-beta-beta-poloidal	nuclear-fusion	极向比压值	poloidal beta, beta poloidal		active		GB/T-4960.9
+profile	nuclear-fusion	分布	profile		active		GB/T-4960.9
+project-sherwood	nuclear-fusion	雪伍德计划	Project Sherwood		active		GB/T-4960.9
+pseudosonic-waves	nuclear-fusion	腹声波	pseudosonic waves		active		GB/T-4960.9
+q-limit	nuclear-fusion	安全因子极限	q limit		active		GB/T-4960.9
+radiated-power	nuclear-fusion	辐射功率	radiated power		active		GB/T-4960.9
+radio-frequency-wave	nuclear-fusion	射频波	radio frequency wave		active		GB/T-4960.9
+ramp-down-time	nuclear-fusion	斜降时间	ramp-down time		active		GB/T-4960.9
+recombination-coefficient	nuclear-fusion	复合系数	recombination coefficient		active		GB/T-4960.9
+resistive-ballooning-modes	nuclear-fusion	电阻气球模	resistive ballooning modes		active		GB/T-4960.9
+ripple	nuclear-fusion	波纹	ripple		active		GB/T-4960.9
+screw-instability	nuclear-fusion	螺旋不稳定性	screw instability		active		GB/T-4960.9
+second-stability	nuclear-fusion	第二稳定性	second stability		active		GB/T-4960.9
+second-stability-regime	nuclear-fusion	第二稳定性区	second stability regime		active		GB/T-4960.9
+separatrix-points	nuclear-fusion	分界线点	separatrix points		active		GB/T-4960.9
+screw-pinch	nuclear-fusion	螺旋箍缩	screw pinch		active		GB/T-4960.9
+single-fluid-model	nuclear-fusion	单流体模型	single fluid model		active		GB/T-4960.9
+single-null-equilibrium	nuclear-fusion	单零平衡	single-null equilibrium		active		GB/T-4960.9
+stochastic-heating	nuclear-fusion	随机加热	stochastic heating		active		GB/T-4960.9
+super-alfvenic-velocity	nuclear-fusion	超阿尔芬速度	super Alfvenic velocity		active		GB/T-4960.9
+superthermal-radiation	nuclear-fusion	超热辐射	superthermal radiation		active		GB/T-4960.9
+tearing-mode-instability	nuclear-fusion	撕裂模不稳定性	tearing mode instability		active		GB/T-4960.9
+tearing-magnetic-islands	nuclear-fusion	撕裂磁岛	tearing magnetic islands		active		GB/T-4960.9
+thermal-particles	nuclear-fusion	热粒子	thermal particles		active		GB/T-4960.9
+transport-matrix-coefficient	nuclear-fusion	输运矩阵系数	transport matrix coefficient		active		GB/T-4960.9
+transport-scaling	nuclear-fusion	输运定标	transport scaling		active		GB/T-4960.9
+trapped-particle-instability	nuclear-fusion	俘获粒子不稳定性	trapped-particle instability		active		GB/T-4960.9
+triple-alpha-process	nuclear-fusion	三阿尔法过程	triple-alpha process		active		GB/T-4960.9
+turbulent-heating	nuclear-fusion	湍流加热	turbulent heating		active		GB/T-4960.9
+two-fluid-model-and-multi-fluid-model	nuclear-fusion	双流体模型和多流体模型	two-fluid model and multi-fluid model		active		GB/T-4960.9
+two-stream-instability	nuclear-fusion	双流不稳定性	two-stream instability		active		GB/T-4960.9
+universal-alfven-wave-instability	nuclear-fusion	普适阿尔芬波不稳定性	universal Alfven-wave instability		active		GB/T-4960.9
+velocity-space-instability	nuclear-fusion	速度空间不稳定性	velocity space instability		active		GB/T-4960.9
+whistler-wave	nuclear-fusion	哨声波	whistler wave		active		GB/T-4960.9
+whistler-wave-instability	nuclear-fusion	哨声波不稳定性	whistler wave instability		active		GB/T-4960.9
+air-core-transformer	nuclear-fusion	空芯变压器	air core transformer		active		GB/T-4960.9
+auxiliary-heating-power	nuclear-fusion	辅助加热功率	auxiliary heating power		active		GB/T-4960.9
+baffle-element	nuclear-fusion	阻隔部件	baffle element		active		GB/T-4960.9
+balance-burning	nuclear-fusion	平衡燃烧	balance burning		active		GB/T-4960.9
+bitter-coil	nuclear-fusion	比特线圈	Bitter coil		active		GB/T-4960.9
+bumper-limiters	nuclear-fusion	缓冲限制器	bumper limiters		active		GB/T-4960.9
+bumpy-torus	nuclear-fusion	波纹环	bumpy torus		active		GB/T-4960.9
+bundle-divertor	nuclear-fusion	束偏滤器	bundle divertor		active		GB/T-4960.9
+central-solenoid-model-coil	nuclear-fusion	中心螺线管模型线圈	central solenoid model coil	CSMC	active		GB/T-4960.9
+compact-device	nuclear-fusion	紧凑装置	compact device		active		GB/T-4960.9
+critical-density	nuclear-fusion	临界密度	critical density		active		GB/T-4960.9
+critical-surface	nuclear-fusion	临界面	critical surface		active		GB/T-4960.9
+current-limit	nuclear-fusion	电流极限	current limit		active		GB/T-4960.9
+dense-plasma-focus-device	nuclear-fusion	稠密等离子体焦点装置	dense plasma focus device		active		GB/T-4960.9
+divertor-arrangement	nuclear-fusion	偏滤器结构	divertor arrangement		active		GB/T-4960.9
+divertor-configuration	nuclear-fusion	偏滤器位形	divertor configuration		active		GB/T-4960.9
+doublet-device	nuclear-fusion	双流器装置	doublet device		active		GB/T-4960.9
+elmo-bumpy-torus	nuclear-fusion	Elmo波纹环	Elmo bumpy torus	EBT	active		GB/T-4960.9
+elmo-bumpy-torus-s	nuclear-fusion	Elmo波纹环-S	Elmo bumpy torus-S	EBT-S	active		GB/T-4960.9
+middleplane	nuclear-fusion	中平面	middleplane		active		GB/T-4960.9
+equatorial-port-extension	nuclear-fusion	赤道端口延伸	equatorial port extension		active		GB/T-4960.9
+ergodic-magnetic-divertor	nuclear-fusion	各态历经磁偏滤器	ergodic magnetic divertor		active		GB/T-4960.9
+fast-wave-antennas	nuclear-fusion	快波天线	fast wave antennas		active		GB/T-4960.9
+fast-wave-current-drive	nuclear-fusion	快波电流驱动	fast wave current drive	FWCD	active		GB/T-4960.9
+ferromagnetic-inserts	nuclear-fusion	铁磁插件	ferromagnetic inserts		active		GB/T-4960.9
+field-shaping-coil	nuclear-fusion	成形场线圈	field shaping coil		active		GB/T-4960.9
+flat-top-current	nuclear-fusion	平顶电流	flat-top current		active		GB/T-4960.9
+flat-top-pulse-length	nuclear-fusion	平顶脉冲长度	flat-top pulse length		active		GB/T-4960.9
+fuelling	nuclear-fusion	加料	fuelling		active		GB/T-4960.9
+fuel-of-fusion	nuclear-fusion	聚变燃料	fuel of fusion		active		GB/T-4960.9
+glow-discharge-plasma	nuclear-fusion	辉光放电等离子体	glow discharge plasma		active		GB/T-4960.9
+hard-core-pinch-device	nuclear-fusion	硬芯箍缩装置	hard core pinch device		active		GB/T-4960.9
+helicity-injection-current-drive	nuclear-fusion	螺旋注入电流驱动	helicity injection current drive		active		GB/T-4960.9
+heliotron	nuclear-fusion	螺旋器	heliotron		active		GB/T-4960.9
+high-field-ecrh-launch	nuclear-fusion	强场电子回旋共振加热发射	high field ECRH launch		active		GB/T-4960.9
+high-frequency-confinement	nuclear-fusion	高频约束	high frequency confinement		active		GB/T-4960.9
+high-frequency-plug	nuclear-fusion	高频堵漏	high frequency plug		active		GB/T-4960.9
+high-heat-flux	nuclear-fusion	高热通量	high heat flux		active		GB/T-4960.9
+high-heat-flux-components	nuclear-fusion	高热通量部件	high heat flux components	HHFCs	active		GB/T-4960.9
+induction-coil	nuclear-fusion	感应线圈	induction coil		active		GB/T-4960.9
+inductively-driven-plasmas	nuclear-fusion	感应驱动等离子体	inductively driven plasmas		active		GB/T-4960.9
+iron-core-transformer	nuclear-fusion	铁芯变压器	iron core transformer		active		GB/T-4960.9
+joffe-s-bar	nuclear-fusion	约飞棒	Joffe's bar		active		GB/T-4960.9
+l-h-threshold-power	nuclear-fusion	L-H 转换阈值功率	L-H threshold power		active		GB/T-4960.9
+limiter-system	nuclear-fusion	限制器系统	limiter system		active		GB/T-4960.9
+linear-pinch	nuclear-fusion	直线箍缩	linear pinch		active		GB/T-4960.9
+lining	nuclear-fusion	衬套	lining		active		GB/T-4960.9
+lip-seal	nuclear-fusion	边缘密封	lip seal		active		GB/T-4960.9
+low-aspect-ratio	nuclear-fusion	低环径比	low aspect ratio		active		GB/T-4960.9
+magnetic-field-component	nuclear-fusion	磁场组成	magnetic field component		active		GB/T-4960.9
+magnetic-pumping	nuclear-fusion	磁泵抽运	magnetic pumping		active		GB/T-4960.9
+magnetic-quench-detection	nuclear-fusion	磁体失超探测	magnetic quench detection		active		GB/T-4960.9
+main-transmission-line	nuclear-fusion	主传输电缆	main transmission line	MTL	active		GB/T-4960.9
+molecular-ion-injection-concept	nuclear-fusion	分子离子注入概念	molecular ion injection concept		active		GB/T-4960.9
+nb-sn-superconductor	nuclear-fusion	铌三锡超导体	Nb₃Sn superconductor		active		GB/T-4960.9
+nb-al-superconductor	nuclear-fusion	铌三铝超导体	Nb₃Al superconductor		active		GB/T-4960.9
+nbti-alloy-superconductor	nuclear-fusion	铌钛合金超导体	NbTi alloy superconductor		active		GB/T-4960.9
+negative-ion-neutral-injector	nuclear-fusion	负离子-中性束注入器	negative ion neutral injector		active		GB/T-4960.9
+neutral-beam	nuclear-fusion	中性束	neutral beam		active		GB/T-4960.9
+ohmic-heating-system	nuclear-fusion	欧姆加热系统	Ohmic heating system		active		GB/T-4960.9
+operating-margins	nuclear-fusion	运行裕量	operating margins		active		GB/T-4960.9
+operating-parameter	nuclear-fusion	运行参数	operating parameter		active		GB/T-4960.9
+overturning-moment	nuclear-fusion	倾覆力矩	overturning moment		active		GB/T-4960.9
+pancake-winding	nuclear-fusion	饼形绕组	pancake winding		active		GB/T-4960.9
+particle-exhaust	nuclear-fusion	粒子抽运	particle exhaust		active		GB/T-4960.9
+pinch-device	nuclear-fusion	箍缩装置	pinch device		active		GB/T-4960.9
+plasma-heating	nuclear-fusion	等离子体加热	plasma heating		active		GB/T-4960.9
+poloidal-divertor	nuclear-fusion	极向偏滤器	poloidal divertor		active		GB/T-4960.9
+port-axis-direction	nuclear-fusion	端口轴向	port axis direction		active		GB/T-4960.9
+positive-ion-neutral-injector	nuclear-fusion	正离子-中性束注入器	positive ion neutral injector		active		GB/T-4960.9
+profile-control	nuclear-fusion	分布控制	profile control		active		GB/T-4960.9
+pumped-divertor	nuclear-fusion	抽气偏滤器	pumped divertor		active		GB/T-4960.9
+radio-frequency-and-microwave-plasma-arc	nuclear-fusion	射频和微波等离子体弧	radio frequency and microwave plasma arc		active		GB/T-4960.9
+residual-resistance-ratio	nuclear-fusion	剩余电阻率比	residual resistance ratio	RRR	active		GB/T-4960.9
+resonant-ions-electrons	nuclear-fusion	共振离子/电子	resonant ions/electrons		active		GB/T-4960.9
+sawtooth-stabilization	nuclear-fusion	锯齿稳定	sawtooth stabilization		active		GB/T-4960.9
+septum	nuclear-fusion	隔板	septum		active		GB/T-4960.9
+shockwave-tube	nuclear-fusion	激波管	shockwave tube		active		GB/T-4960.9
+shock-wave-heating	nuclear-fusion	激波加热	shock wave heating		active		GB/T-4960.9
+single-double-null	nuclear-fusion	单/双零	single/double null		active		GB/T-4960.9
+start-up-assist	nuclear-fusion	启动辅助	start-up assist		active		GB/T-4960.9
+superconducting-coil	nuclear-fusion	超导线圈	superconducting coil		active		GB/T-4960.9
+superconductor-tokamak	nuclear-fusion	超导托卡马克	superconductor Tokamak		active		GB/T-4960.9
+tokamak-operating-boundaries	nuclear-fusion	托卡·马克运行边界	Tokamak operating boundaries		active		GB/T-4960.9
+toroidal-magnetic-cusp	nuclear-fusion	环形磁场会切	toroidal magnetic (line) cusp	TORMAC	active		GB/T-4960.9
+toroidal-configuration	nuclear-fusion	环形位形	toroidal configuration		active		GB/T-4960.9
+toroidal-pinch	nuclear-fusion	环向箍缩	toroidal pinch		active		GB/T-4960.9
+vapour-phase-catalytic-exchange	nuclear-fusion	气相催化交换	vapour phase catalytic exchange		active		GB/T-4960.9
+vertical-stability-control	nuclear-fusion	垂直稳定性控制	vertical stability control		active		GB/T-4960.9
+wall-etch	nuclear-fusion	壁腐蚀	wall etch		active		GB/T-4960.9
+yin-yang-coil	nuclear-fusion	阴阳线圈	Yin-Yang coil		active		GB/T-4960.9
+brewster-angle	nuclear-fusion	布儒斯特角	Brewster angle		active		GB/T-4960.9
+charge-coupled-device	nuclear-fusion	电荷耦合器件	charge-coupled device	CCD	active		GB/T-4960.9
+dye-laser	nuclear-fusion	染料激光器	dye laser		active		GB/T-4960.9
+electrostatic-analyzer	nuclear-fusion	静电分析器	electrostatic analyzer		active		GB/T-4960.9
+fabry-perot-interferometer	nuclear-fusion	法布里-珀罗干涉仪	Fabry-Perot interferometer		active		GB/T-4960.9
+first-mirrors	nuclear-fusion	第一镜	first mirrors		active		GB/T-4960.9
+h-alpha-studies	nuclear-fusion	H-α研究	H-alpha studies		active		GB/T-4960.9
+heavy-ion-beam-probe	nuclear-fusion	重离子束探针	heavy-ion beam probe		active		GB/T-4960.9
+hugill-diagram	nuclear-fusion	海吉尔图	Hugill diagram		active		GB/T-4960.9
+lost-alpha-detectors	nuclear-fusion	逃逸 α 粒子探测器	lost alpha detectors		active		GB/T-4960.9
+mach-zehnder-interferometer	nuclear-fusion	马赫-曾恩德尔干涉仪	Mach-Zehnder interferometer		active		GB/T-4960.9
+magnetic-bottle	nuclear-fusion	磁瓶	magnetic bottle		active		GB/T-4960.9
+microwave-interferometer	nuclear-fusion	微波干涉仪	microwave interferometer		active		GB/T-4960.9
+neutral-particle-analyser	nuclear-fusion	中性粒子分析器	neutral particle analyser	NPA	active		GB/T-4960.9
+plasma-diagnostics-technique	nuclear-fusion	等离子体诊断技术	plasma diagnostics technique		active		GB/T-4960.9
+soft-x-rays-camera	nuclear-fusion	软X射线成像仪	soft X-rays camera		active		GB/T-4960.9
+survey-spectrometer	nuclear-fusion	广谱测量光谱仪	survey spectrometer		active		GB/T-4960.9
+abnormal-operating-conditions	nuclear-fusion	异常运行工况	abnormal operating conditions		active		GB/T-4960.9
+active-environment	nuclear-fusion	"有源"环境	"active"environment		active		GB/T-4960.9
+alpha-power	nuclear-fusion	α 功率	alpha-power		active		GB/T-4960.9
+alternative-fuels	nuclear-fusion	替代燃料	alternative fuels		active		GB/T-4960.9
+beyond-design-basis-accidents	nuclear-fusion	超设计基准事故	beyond-design-basis accidents		active		GB/T-4960.9
+blanket-materials	nuclear-fusion	包层材料	blanket materials		active		GB/T-4960.9
+blanket-shield	nuclear-fusion	包层屏蔽	blanket shield		active		GB/T-4960.9
+borated-concrete	nuclear-fusion	含硼混凝土	borated concrete		active		GB/T-4960.9
+breeder	nuclear-fusion	增殖部件	breeder		active		GB/T-4960.9
+ceramic-breeders	nuclear-fusion	陶瓷：增殖层	ceramic breeders		active		GB/T-4960.9
+compliant-material	nuclear-fusion	兼容性材料	compliant material		active		GB/T-4960.9
+conceptual-design-activity	nuclear-fusion	概念设计活动	conceptual design activity	CDA	active		GB/T-4960.9
+cordey-pass	nuclear-fusion	"科第"通路	"Cordey" Pass		active		GB/T-4960.9
+down-time	nuclear-fusion	停堆时间	down-time		active		GB/T-4960.9
+d-t-operation	nuclear-fusion	氘-氚运行	D-T operation		active		GB/T-4960.9
+duty-factor	nuclear-fusion	占空因数	duty factor		active		GB/T-4960.9
+dwell-time	nuclear-fusion	停留时间	dwell time		active		GB/T-4960.9
+engineering-design-activity	nuclear-fusion	工程设计活动	engineering design activity	EDA	active		GB/T-4960.9
+fuels	nuclear-fusion	燃料	fuels		active		GB/T-4960.9
+fusion-fission-hybrid-reactor	nuclear-fusion	聚变-裂变混合堆	fusion-fission hybrid reactor	FFH或FFHR	active		GB/T-4960.9
+fusion-power	nuclear-fusion	聚变功率	fusion power		active		GB/T-4960.9
+fusion-product	nuclear-fusion	聚变产物	fusion product		active		GB/T-4960.9
+iter-units-of-account	nuclear-fusion	ITER记账单位	ITER units of account	IUA	active		GB/T-4960.9
+international-tokamak-reactor	nuclear-fusion	国际托卡马克反应堆	International Tokamak Reactor	INTOR	active		GB/T-4960.9
+mockup	nuclear-fusion	样块	mockup		active		GB/T-4960.9
+model-coil	nuclear-fusion	模型线圈	model coil		active		GB/T-4960.9
+port-plugs	nuclear-fusion	端口插件	port plugs		active		GB/T-4960.9
+remote-handling-class	nuclear-fusion	远程操作等级	remote handling class		active		GB/T-4960.9
+safety-system-support-feature	nuclear-fusion	安全系统支撑设施	safety system support feature		active		GB/T-4960.9
+scheduled-down-time	nuclear-fusion	计划内停堆时间	scheduled down time		active		GB/T-4960.9
+shut-down-time	nuclear-fusion	关断时间	shut-down time		active		GB/T-4960.9
+steady-state-fusion-reactor	nuclear-fusion	稳态聚变堆	steady-state fusion reactor		active		GB/T-4960.9
+support-systems	nuclear-fusion	支持系统	support systems		active		GB/T-4960.9
+iter-test-blanket-module	nuclear-fusion	ITER 试验包层模块	ITER test blanket module	TBM	active		GB/T-4960.9
+thermonuclear-reactor	nuclear-fusion	热核反应堆	thermonuclear reactor		active		GB/T-4960.9
+thermonuclear-reactor-blanket	nuclear-fusion	热核反应堆包层	thermonuclear reactor blanket		active		GB/T-4960.9
+wall-loading	nuclear-fusion	壁载荷	wall loading		active		GB/T-4960.9

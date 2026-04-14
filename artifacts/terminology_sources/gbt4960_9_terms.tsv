@@ -38,7 +38,7 @@
 2.1.37	无碰撞撕裂不稳定性	collisionless tearing instability		在无碰撞等离子体中，由密度和温度的不均匀性驱动的撕裂模不稳定性。通常，电子的惯性、霍尔电流、压强梯度或者朗道阻尼是造成等离子体与磁力线分离的原因。	draft
 2.1.38	约束增强因子	confinement enhancement factor		等离子体高约束模式与低约束模式的约束时间之比。	draft
 2.1.39	约束时间	confinement time		表征能量(或粒子)从等离子体中损失的特征时间。 注：处于热平衡态的等离子体中，能量约束时间被定义为总储能与总加热功率之比。	draft
-2.1.40	受控热核聚变	controlledthermonuclearfusion		在一个有限的空间内将很轻的原子核加热到极高温度，使其在受控条件下进行聚变反应的过程。	draft
+2.1.40	受控热核聚变	controlled thermonuclear fusion		在一个有限的空间内将很轻的原子核加热到极高温度，使其在受控条件下进行聚变反应的过程。	draft
 2.1.41	芯部约束	core confinement		靠近等离子体中心的高温、高密度区域的能量和粒子约束。	draft
 2.1.42	电流驱动(非感应)	current drive (non-inductive)		由外部注入动量(例如，用射频波或中性束注入)驱动等离子体电流的过程。可帮助实现托卡马克 (2.1.284) 稳态运行，并应用于优化等离子体位形以控制不稳定性和改善等离子体约束。	draft
 2.1.43	会切几何位形	cusped geometry		磁力线处处凸向位形中心的磁场位形。这种位形有利于稳定磁流体不稳定性。	draft
@@ -54,7 +54,7 @@
 2.1.53	简并位形	degenerate configuration		由简并磁力线形成的闭合磁位形，即磁力线在绕位形有限次数之后本身正好闭合的位形。	draft
 2.1.54	密度极限	density limit		稳定运行的磁约束装置中等离子体所能达到的最高密度。	draft
 2.1.55	氘-氘反应	deuterium-deuterium reactions		D-D反应 氘核间的聚变反应。 反应式为： \mathrm {D} + \mathrm {D} \rightarrow \mathrm {n} + ^ {3} \mathrm {H e} \mathrm {D} + \mathrm {D} \rightarrow \mathrm {p} + \mathrm {T} 等概率地生成氦核/中子、氚/质子的同时释放能量。	draft
-2.1.56	mathbfD^-3mathbfHmathbfe 反应deuterium-helium-3 reaction; mathbfD^-3mathbfHmathbfe	reaction		氘与氦之间发生的受控聚变反应，反应式为： \mathrm {D} + ^ {3} \mathrm {H e} \rightarrow \mathrm {p} + ^ {4} \mathrm {H e} + 1 8. 4 \mathrm {M e V} 注：因燃料没有放射性，且不直接产生中子，这种反应比氘-氚反应更具有安全和环保的优点。但聚变条件更高。	draft
+2.1.56	氘-氦3反应	deuterium-helium-3 reaction	D-³He	氘与氦之间发生的受控聚变反应，反应式为： \mathrm {D} + ^ {3} \mathrm {H e} \rightarrow \mathrm {p} + ^ {4} \mathrm {H e} + 1 8. 4 \mathrm {M e V} 注：因燃料没有放射性，且不直接产生中子，这种反应比氘-氚反应更具有安全和环保的优点。但聚变条件更高。	draft
 2.1.57	氘-氘等离子体	deuterium-tritium plasma		由氘和氚混合物形成的等离子体。	draft
 2.1.58	氘-氚反应	deuterium-tritium reaction		目前最有希望实现聚变能应用的反应： \mathrm {D} + \mathrm {T} \rightarrow \mathrm {n} + ^ {4} \mathrm {H e} + 1 7. 6 \mathrm {M e V} 又称D-T反应(D-Treaction)或氘-氚燃烧(D-Tburn)。	draft
 2.1.59	逆磁效应	diamagnetic effect		逆磁电流产生的磁场与原来的磁场方向相反，使通过等离子体的磁场强度减弱的效应。	draft
@@ -63,8 +63,8 @@
 2.1.62	等离子体位移	displacement of plasma		等离子体偏离宏观平衡位置的移动。	draft
 2.1.63	破裂	disruption		等离子体的温度陡然下降并使等离子体放电在短时间出现瞬间淬灭的现象，它导致放电中断并严重损坏核聚变装置。也称为等离子体破裂(plasma disruption)。	draft
 2.1.64	破裂不稳定性	disruptive instability		托卡马克(2.1.284)装置等离子体中最常见的宏观不稳定性。主要特征是：磁通量突变，电流通道迅速(几十微秒内)膨胀，等离子体环显著地向环内侧移动，等离子体环电压波形图上出现负尖脉冲，同时等离子体电流波形图上出现正尖脉冲，能量和粒子输运增强(温度、密度、杂质浓度分布发生突变，软X射线信号也发生相应变化)。破裂不稳定性依其特征可分为内破裂和外破裂。内破裂主要表现为由 等离子体中心区软X射线发射强度波形图上的锯齿振荡，可用 m = 1 的撕裂模不稳定性来解释。外破裂又依其电压波形图上负尖脉冲幅值大小分为大破裂和小破裂。破裂不稳定性的发生不仅限制其等离子体参数的进一步提高，约束性能变坏，甚至引起等离子体电流突然中断。	draft
-2.1.65	# 离解复合	dissociative recombination		电子同正的分子离子相结合，随之是分子离解的过程。所形成的原子带走过剩能量。如： \mathrm {H} _ {2} ^ {+} + \mathrm {e} \rightarrow \mathrm {H} _ {2} ^ {*} \rightarrow \mathrm {H} + \mathrm {H}	draft
-2.1.66	# 偏滤器物理	divertor physics		与偏滤器有关的物理问题。	draft
+2.1.65	离解复合	dissociative recombination		电子同正的分子离子相结合，随之是分子离解的过程。所形成的原子带走过剩能量。如： \mathrm {H} _ {2} ^ {+} + \mathrm {e} \rightarrow \mathrm {H} _ {2} ^ {*} \rightarrow \mathrm {H} + \mathrm {H}	draft
+2.1.66	偏滤器物理	divertor physics		与偏滤器有关的物理问题。	draft
 2.1.67	双零平衡	double null equilibrium		有两个极向磁场零点存在的等离子体平衡位形。	draft
 2.1.68	漂移回旋共振不稳定性	drift cyclotron resonance instability		在绝热不变性遭到破坏的某个频率范围内(包括粒子回旋频率)的静电漂移不稳定性。当横向漂移波和离子回旋运动发生共振时，这种不稳定性具有最高的增长速率。	draft
 2.1.69	漂移耗散不稳定性	drift dissipative instability		一组类似于无碰撞漂移不稳定性的静电不稳定性，但其增长率同碰撞有关，而不是同共振粒子有关。	draft
@@ -74,11 +74,11 @@
 2.1.73	漂移面	drift surface		根据绝热不变性定律，粒子导向中心被限制在某个面上运动。	draft
 2.1.74	漂移波	drift wave		在不均匀等离子体中，由于温度、密度或者磁场强度等梯度的出现，在垂直于磁场和梯度方向形成漂移流从而形成的波动。	draft
 2.1.75	驱动电流	driven current		用外加手段(例如：电磁感应、中性束以及射频波)产生的等离子体电流。	draft
-2.1.76	尘埃等离子体	dustyplasma		由大量电子、离子及带电和不带电尘埃粒子组成的宏观电中性体。	draft
+2.1.76	尘埃等离子体	dusty plasma		由大量电子、离子及带电和不带电尘埃粒子组成的宏观电中性体。	draft
 2.1.77	边缘涨落	edge fluctuations		在等离子体边界区域发生的密度或者电场的波动。	draft
 2.1.78	边缘局域模	edge localized mode	ELM	在高约束(H模)状态下由边缘很窄的区域形成的高压强梯度引起的张弛性不稳定性。它会瞬间导致粒子和能量从边缘损失掉。	draft
 2.1.79	边缘物理	edge physics		等离子体边界区域的物理问题。	draft
-2.1.80	边缘等离子体	edgeplasma		靠近最后一个封闭磁面内侧的等离子体。	draft
+2.1.80	边缘等离子体	edge plasma		靠近最后一个封闭磁面内侧的等离子体。	draft
 2.1.81	短时距方程	eikonal equation		电磁波或声波在非均匀介质中传播的方程，只有当介质性质的变化在波长距离范围内很小时，它才有效。	draft
 2.1.82	E-层	E-layer		在天体器装置上用来形成、加热及约束所包围的等离子体的相对论电子层。它是由相对论电子束产生的。向磁镜装置注入一束通量充分高的电子流, 则由电子流产生的磁场可超过初始磁场, 从而形成与初始磁场反向的相对论电子圆柱层。	draft
 2.1.83	电磁载荷	electromagnetic load		因载流等离子体运动在周围导体结构中感生的电流所产生的机械载荷。	draft
@@ -117,7 +117,7 @@
 2.1.116	回旋动理学理论	gyro-kinetic theory		通过离子围绕磁力线的快速回旋运动与导心慢运动解耦来描述等离子体中低频行为的动理学理论。	draft
 2.1.117	回旋弛豫效应	gyrorelaxation effect		利用磁泵增加等离子体中粒子能量的效应。其实现条件是：磁泵调制周期接近于碰撞周期而远大于粒子回旋周期。	draft
 2.1.118	回旋弛豫加热	gyrorelaxation heating		利用回旋弛豫效应加热等离子体的方法。	draft
-2.1.119	H因子	Hfactor		等离子体在高约束模式(H模)下的约束时间与按低约束模式(L模)定标定律估计的约束时间之比。	draft
+2.1.119	H因子	H factor		等离子体在高约束模式(H模)下的约束时间与按低约束模式(L模)定标定律估计的约束时间之比。	draft
 2.1.120	H-L转换	H-L transition		高约束模向低约束模的转换。	draft
 2.1.121	H模	H-mode		在磁约束核聚变装置等离子体中，随着辅助加热功率的上升，保持或改善的良好约束模式。	draft
 2.1.122	混杂共振	hybrid resonance		磁化等离子体中的一种共振，包括以等离子体频率为特征的平行聚束和以回旋频率为特征的粒子垂直运动的两个方面。	draft
@@ -126,7 +126,7 @@
 2.1.125	杂质	impurities		聚变燃料(及其反应产物)和电子之外的其他粒子。	draft
 2.1.126	杂质辐射	impurity radiation		由杂质引起的能量辐射。	draft
 2.1.127	杂质屏蔽	impurity screening		避免杂质进入等离子体采取的措施。例如：硅化、硼化以及锂化处理第一壁。	draft
-2.1.128	等离子体环内侧形状	inboardplasmashape		等离子体大圆周内侧(靠近装置中心)的形状。它受最近的极向场线圈(通常也有中心螺线管)影响很大。	draft
+2.1.128	等离子体环内侧形状	inboard plasma shape		等离子体大圆周内侧(靠近装置中心)的形状。它受最近的极向场线圈(通常也有中心螺线管)影响很大。	draft
 2.1.129	豆形凹度	indentation		托卡马克(2.1.284)等离子体位形中具有"豆形"横截面内凹的度量。	draft
 2.1.130	交换不稳定性	interchange instability		槽型不稳定性 flute instability 等离子体同磁场交换位置的磁流体动力学宏观不稳定性。	draft
 2.1.131	内感	internal inductance		l_i 托卡马克(2.1.284)等离子体环单位长度上的自感，通常用符号 l_i 来表示。	draft
@@ -159,8 +159,8 @@
 2.1.158	劳逊判据	Lawson criterion		由劳逊导出的实现氘氚受控核聚变的判据。即等离子体温度大于1亿度(10 keV)，等离子体密度和等离子体能量约束时间的乘积大于 2 times 10^20 ~m^-3 ~s 。	draft
 2.1.159	力线束缚	line tying		磁力线束缚 tying down of the line of force 当等离子体中的磁力线指向导体壁时出现的一种效应。因为磁力线不能迅速穿过导体，于是，就能对等离子体的交换不稳定性起稳定作用。	draft
 2.1.160	锁模	locked modes		旋转的磁流体模的频率被锁定的状态。	draft
-2.1.161	损失锥	lose cone		磁镜位形中，平行速度和垂直速度比大于一定值时，带电粒子可以穿越磁镜损失，这个比值的阈值在速度空间坐标中呈现一个锥形。	draft
-2.1.162	损失锥不稳定性	lose cone instability		在开端系统中，由于损失锥内等离子体产生电荷不平衡，而出现的静电微观不稳定性。	draft
+2.1.161	损失锥	loss cone		磁镜位形中，平行速度和垂直速度比大于一定值时，带电粒子可以穿越磁镜损失，这个比值的阈值在速度空间坐标中呈现一个锥形。	draft
+2.1.162	损失锥不稳定性	loss cone instability		在开端系统中，由于损失锥内等离子体产生电荷不平衡，而出现的静电微观不稳定性。	draft
 2.1.163	低比压等离子体	low-beta plasma		比压值 (β) 一般为 0 sim 0.01 的等离子体。	draft
 2.1.164	低混杂波	lower hybrid wave		LH波 其频率处于离子与电子回旋频率之间的射频波。它具有平行于磁场的电场分量，因此，它可以加速沿磁力线移动的电子。	draft
 2.1.165	低能磁场区	low field side		环形磁约束装置中，外侧场强比内侧场强低的区域，亦称为低场区。	draft
@@ -179,19 +179,19 @@
 2.1.178	磁流体动力学激波	magnetohydrodynamic shock wave		在等离子体中传播的激波。它的波前深度超过平均自由程。因此，波前的主要耗散机制是等离子体的电阻及粒子之间的碰撞。	draft
 2.1.179	磁流体动力学湍流	magnetohydrodynamic turbulence		在经典的磁流体力学描述中，速度和压力都发生不规则变化的运动磁流体。	draft
 2.1.180	磁声波	magnetosonic waves		传播取决于介质温度的磁流体动力学波。这些波类似于声波，其不同之处在于粒子的运动方向和波的传播方向并不总是平行的。	draft
-2.1.181	等离子体大半径	major plasma radius			draft
+2.1.181	等离子体大半径	majorplasma radius			draft
 2.1.182	磁流体动力学不稳定性	magnetohydrodynamic instability	MHD	等离子体中由磁场能量及带电粒子动能驱动的不稳定性。等离子体密度梯度也会影响这种不稳定性的位置。	draft
 2.1.183	微观不稳定性	microinstabilities; microscopic instability		等离子体不稳定性的一种类型，涉及速度空间中的变化，不能用磁流体动力学描述，其特征长度类似于粒子拉莫尔半径。	draft
-2.1.184	平均极小	mathbfB 位形 minimum average B configuration		在环形系统中，沿着一条磁力线在平均的意义上实现最小B的磁场位形。	draft
+2.1.184	平均极小B位形	minimum average B configuration		在环形系统中，沿着一条磁力线在平均的意义上实现最小B的磁场位形。	draft
 2.1.185	极小B位形	minimum B configuration		等离子体约束技术中的一种位形。在这种位形中等离子体处在最小磁势的区域中。在离开该区的所有方向上，磁场强度都是随着离开所约束的等离子体的距离的增大而增强。这种位形有利于稳定性。	draft
 2.1.186	等离子体小半径	minor radius		等离子体截面在赤道面上水平尺寸的一半。在等离子体分布范围内，离等离子体中心的径向距离。参见等离子体几何位形(2.1.220)。	draft
-2.1.187	磁镜不稳定性	mirrorinstability		在磁镜位形中，当等离子体粒子在垂直于磁场方向的能量分量大于纵向能量分量时，可能出现的电磁微观不稳定性。此时，粒子将集聚在磁镜之间的中心平面上。结果，由于中心平面中的等离子体压强的作用使磁力线膨胀，使磁镜比增大。这又进一步增强了粒子在中心平面的集聚。当等离子体能量足够大时，磁场膨胀的速度加快，并且变得不稳定。	draft
+2.1.187	磁镜不稳定性	mirror instability		在磁镜位形中，当等离子体粒子在垂直于磁场方向的能量分量大于纵向能量分量时，可能出现的电磁微观不稳定性。此时，粒子将集聚在磁镜之间的中心平面上。结果，由于中心平面中的等离子体压强的作用使磁力线膨胀，使磁镜比增大。这又进一步增强了粒子在中心平面的集聚。当等离子体能量足够大时，磁场膨胀的速度加快，并且变得不稳定。	draft
 2.1.188	磁镜比	mirror ratio		在磁镜位形中，在轴上磁场最强的磁场强度 B_m 与轴上最弱的磁场强度 B_0 之比，见式(2) R = B _ {\mathrm {m}} / B _ {0} \quad \dots \tag {2} 这个比值表示了磁镜的约束性能。	draft
 2.1.189	模数	mode number		不稳定性模式在一定空间尺度内的周期数。	draft
 2.1.190	巨形锯齿	monster sawteeth		发生在托卡马克(2.1.284)等离子体中心，具有锯齿状振幅变化的大尺度内部磁流体动力学扰动。	draft
 2.1.191	边缘的多面非对称辐射	multifaced asymmetric radiation from the edge	MARFE	边缘的多面形状非对称辐射(MARFE)通常形成在等离子体环的内侧边缘。当等离子体边缘密度高时，有时会形成一个冷的、强辐射等离子体的环向对称带。起因是沿边缘磁力线流动的功率和辐射的局部功率损失之间的不平衡。MARFE在时标 10mssim 100ms 内迅速增长，但它能持续数秒。在某些情况下，MARFE导致破裂。而在另一些情况下，其主要后果是减小边缘密度。	draft
 2.1.192	多极几何位形	multipole geometry configuration		由固定在支架上或漂浮于环中的几个载平行电流的导体环组成的环形位形。这些环形电流产生多极磁场 (n = 2 为四极场， n = 4 为八极场)，多极磁场叠加在初始约束磁场上，可以产生平均极小磁场位形。例如，约飞棒形成的位形。	draft
-2.1.193	负质量不稳定性	negativemassinstability		由磁场不均匀性引起的静电微观不稳定性。如果粒子的角向运动中馈入能量，其轨道直径和旋转周期都增大。因此，正角向方向的力，使粒子产生相位滞后和角向聚束。粒子的行为，好像它们具有负的质量一样，在外力的相反方向上产生位移。	draft
+2.1.193	负质量不稳定性	negative mass instability		由磁场不均匀性引起的静电微观不稳定性。如果粒子的角向运动中馈入能量，其轨道直径和旋转周期都增大。因此，正角向方向的力，使粒子产生相位滞后和角向聚束。粒子的行为，好像它们具有负的质量一样，在外力的相反方向上产生位移。	draft
 2.1.194	新经典撕裂模	neo-classical tearing mode	NTM	由撕裂模产生的磁岛扰动使自举电流发生改变，这进一步放大磁岛并使约束变坏，甚至导致破裂。	draft
 2.1.195	新经典理论	neo-classical theory		加入环形效应修正的经典碰撞等离子体输运理论。	draft
 2.1.196	新经典输运	neo-classical transport		在环形磁约束系统中，考虑了等离子体环效应的经典输运理论。由于环效应的存在，等离子体依照带电粒子碰撞频率分为碰撞频率高的流体区、碰撞频率低的俘获粒子区(香蕉区)和两者之间的过渡区，即平台区。新经典理论确定输运系数时，考虑到磁场的环形位形并包括库仑碰撞效应，输运系数一般是对磁面平均后的等效输运系数。	draft
@@ -225,18 +225,18 @@
 2.1.224	等离子体参数	plasma parameters		表征等离子体特性并能在实验上确定的物理量。例如：密度、温度、电流、约束时间以及比压值等。	draft
 2.1.225	等离子体压强	plasma pressure		等离子体密度和温度的乘积。在磁约束装置中，利用磁力平衡的这种向外压力。	draft
 2.1.226	等离子体分布	plasma profiles		等离子体截面上的参数分布剖面(常为电子或离子的密度和温度径向分布)。	draft
-2.1.227	# 等离子体纯度	plasma purity		表示等离子体被燃料(氘和氚)以外的物质污染的程度。可能污染等离子体的杂质主要来自器壁，亦可来源于燃料中的杂质或聚变反应产物(例如，氦)。	draft
-2.1.228	# 等离子体辐射	plasma radiation		从等离子体中发射的电磁辐射，主要包括线辐射、符合辐射和韧致辐射。	draft
-2.1.229	# 等离子体旋转	plasma rotation		沿环向和极向方向等离子体的旋转。	draft
-2.1.230	# 等离子体鞘	plasma sheath		电中性的等离子体和与它接触的固体表面之间形成的过渡区。尽管等离子体本身差不多是等电位区，但等离子体鞘内具有强电位梯度，并不保持电中性。也称为鞘(sheath)。	draft
-2.1.231	# 等离子体激波	plasma shock wave		在等离子体中，由压缩波形成的速度、压强、密度、温度或磁通量的间断面，以大于阿尔芬速度(相对于还未被它穿透的等离子体)的传播。根据激波能量耗散过程的性质，可分为磁流体动力学激波和无碰撞激波。	draft
-2.1.232	# 等离子体温度	plasma temperature		离子或电子随机动能的度量，通常以K(热力学温度)或电子伏(动理学温度)为单位。	draft
-2.1.233	# 等离子体体积	plasma volume		磁约束装置中被约束的等离子体容积。	draft
-2.1.234	# 等离子体波	plasma wave		包括组成等离子体的粒子和电磁场的振荡在内的等离子体扰动的传播。	draft
-2.1.235	# 等离子体团	plasmoid		电子、离子和中性粒子的单个聚团，其存在时间比粒子间碰撞时间长很多倍。	draft
-2.1.236	# 坪区	plateau regions		等离子体碰撞的一个区间，其有效库仑碰撞频率等于或大于极向渡越频率，但是平均自由程长度小于连接长度。在这种状态下，输运系数与碰撞频率无关。	draft
-2.1.237	# 极向比压值	poloidal beta, beta poloidal		等离子体极向比压值 (β_p) 是等离子体压强与极向磁压强之比。通常作为电流对等离子体约束能力的量度。	draft
-2.1.238	# 极向	poloidal direction		在等离子体横截面上环绕磁轴的方向。	draft
+2.1.227	等离子体纯度	plasma purity		表示等离子体被燃料(氘和氚)以外的物质污染的程度。可能污染等离子体的杂质主要来自器壁，亦可来源于燃料中的杂质或聚变反应产物(例如，氦)。	draft
+2.1.228	等离子体辐射	plasma radiation		从等离子体中发射的电磁辐射，主要包括线辐射、符合辐射和韧致辐射。	draft
+2.1.229	等离子体旋转	plasma rotation		沿环向和极向方向等离子体的旋转。	draft
+2.1.230	等离子体鞘	plasma sheath		电中性的等离子体和与它接触的固体表面之间形成的过渡区。尽管等离子体本身差不多是等电位区，但等离子体鞘内具有强电位梯度，并不保持电中性。也称为鞘(sheath)。	draft
+2.1.231	等离子体激波	plasma shock wave		在等离子体中，由压缩波形成的速度、压强、密度、温度或磁通量的间断面，以大于阿尔芬速度(相对于还未被它穿透的等离子体)的传播。根据激波能量耗散过程的性质，可分为磁流体动力学激波和无碰撞激波。	draft
+2.1.232	等离子体温度	plasma temperature		离子或电子随机动能的度量，通常以K(热力学温度)或电子伏(动理学温度)为单位。	draft
+2.1.233	等离子体体积	plasma volume		磁约束装置中被约束的等离子体容积。	draft
+2.1.234	等离子体波	plasma wave		包括组成等离子体的粒子和电磁场的振荡在内的等离子体扰动的传播。	draft
+2.1.235	等离子体团	plasmoid		电子、离子和中性粒子的单个聚团，其存在时间比粒子间碰撞时间长很多倍。	draft
+2.1.236	坪区	plateau regions		等离子体碰撞的一个区间，其有效库仑碰撞频率等于或大于极向渡越频率，但是平均自由程长度小于连接长度。在这种状态下，输运系数与碰撞频率无关。	draft
+2.1.237	极向比压值	poloidal beta, beta poloidal		等离子体极向比压值 (β_p) 是等离子体压强与极向磁压强之比。通常作为电流对等离子体约束能力的量度。	draft
+2.1.238	极向	poloidal direction		在等离子体横截面上环绕磁轴的方向。	draft
 2.1.239	极向场	poloidal field	PF	由环向电流产生的沿极向方向的磁场。主要用于等离子体的平衡和约束。	draft
 2.1.240	功率阈值	power threshold		通常指发生低约束模到高约束模(L-H)转换所需要的最低加热功率值。	draft
 2.1.241	分布	profile		等离子体参数在横截面上随磁通量面的变化。	draft
@@ -256,7 +256,7 @@
 2.1.255	共振磁扰动	resonant magnetic perturbation	RMP	与不稳定性时空结构(或频率和相位)相匹配的外加磁扰动。	draft
 2.1.256	波纹	ripple		因托卡马克(2.1.284)中环向场线圈的有限个数引起环向磁场值的周期性变化。	draft
 2.1.257	旋转变换	rotational transform		在大多数环形位形约束磁场中，从横截面内某一点出发的磁力线，绕大环一周后不回到出发点，而相交此横截面于另一点，绕大环一周后的交点与初始点相对于磁轴转动的角度称为旋转变换。	draft
-2.1.258	逃逸电子	runawayelectrons		等离子体中从外加电场获得动量的速率大于因碰撞损失动量的速率而脱离热平衡的电子。由于碰撞截面随速度增大而降低，这些电子会被持续加速。	draft
+2.1.258	逃逸电子	runaway electrons		等离子体中从外加电场获得动量的速率大于因碰撞损失动量的速率而脱离热平衡的电子。由于碰撞截面随速度增大而降低，这些电子会被持续加速。	draft
 2.1.259	安全因子	safety factor		q 旋转变换的倒数，是环形装置中磁力线螺旋旋转程度的一种量度。稳定的等离子体平衡要求安全因子的值大于1。	draft
 2.1.260	腊肠不稳定性	sausage instability		在有强轴向电流的等离子体柱中，可能发生的磁流体动力学不稳定性。由于某种扰动使磁化等离子体柱某些地方收缩，截面变细。由于电流产生的极向磁场与等离子体半径成反比，使该处磁场增强，而增强的磁场将进一步压缩等离子体，使该处的柱半径继续缩小，等离子体柱变成腊肠形状，最后将等离子体柱切断。	draft
 2.1.261	锯齿	sawtooth; sawteeth		等离子体中心温度和密度的周期性张弛振荡，在软X射线的测量信号上表现为锯齿状。	draft
@@ -308,34 +308,34 @@
 2.2.1	空芯变压器	air core transformer		不采用铁芯，原边采用线圈和副边为等离子体的变压器。	draft
 2.2.2	辅助加热功率	auxiliary heating power		辅助加热的功率。 注：通常提及的被等离子体吸收的功率和与辅助加热系统注入的加热功率会有不同。	draft
 2.2.3	阻隔部件	baffle element		为限制偏滤器空间和主真空室空间之间的粒子相互传导而设的阻挡部件。	draft
-2.2.4	平衡燃烧	balanceburning		聚变 α 粒子和外部电源的等离子体加热与传导、对流和辐射等引起的等离子体损失之间的稳态平衡。	draft
+2.2.4	平衡燃烧	balance burning		聚变 α 粒子和外部电源的等离子体加热与传导、对流和辐射等引起的等离子体损失之间的稳态平衡。	draft
 2.2.5	束线	beamlines		特指一段位于中性束源与等离子体圆环面间的输运管道结构(包含中性化区、离子偏离及大体积抽空等设备部件)。束线是中性束注入器的重要组成部分。	draft
-2.2.6	# 比特线圈	Bittercoil		以发明人比特命名的，能建立强磁场的一种特殊结构的线圈。由匝间相间以绝缘材料的铜板经一开缝串联而构成一线圈绕组。线圈材料为常规铜合金，线圈有水冷及液氮冷却等形式。通常也称为比特板线圈。	draft
-2.2.7	# 硼化	boronisation		把含硼的化合物升华、沉积到真空室内表面以帮助降低杂质辐射的技术。参见辉光放电清洗(2.2.47)。	draft
-2.2.8	# 缓冲限制器	bumper limiters		在托卡马克中，为了避免真空室内表面直接暴露于等离子体的部分受到等离子体带电粒子的轰击，而在无第一壁材料的部分空间设置的缓冲孔栏(如石墨块)。	draft
-2.2.9	# 波纹环	bumpy torus		美国国家航空和航天局刘易斯的波纹环有12个超导线圈环向排列在大型真空容器中。目的是要在闭合磁场几何形态中将强电场加于等离子体，使得稳态等离子体加热和约束最佳化。	draft
-2.2.10	# 束偏滤器	bundledivertor		环向、纵向或束偏滤器，它引出一束抽出环向通量从而在环向场内形成分界面。	draft
-2.2.11	# 碳纤维复合材料	carbon fibre composites	CFC	由择优取向的碳纤维及沉积的碳组成的合成材料，以提高耐热及机械强度。	draft
-2.2.12	# 中心螺线管	central solenoid	CS	位于离托卡马克装置中轴线最近的极向线圈。用于产生并维持等离子体电流的部件、加热并控制等离子体形状。	draft
-2.2.13	# 中心螺线管模型线圈	central solenoid model coil	CSMC	建在前日本原子能研究所(JAERI)的模型线圈。它是用于测试ITER(2.4.47)中心螺线管的制造和其他超导体的插入式线圈[为ITER(2.4.47)中心螺线管和环向场线圈导体提供替代品]。	draft
-2.2.14	# 紧凑装置	compact device		环径比接近于1的轴对称环形装置，也称为紧凑环。	draft
-2.2.15	# 紧凑环注入	compact toroid injection		紧凑环等离子体注入技术。	draft
-2.2.16	# 校正场线圈	correction coils	CC	为补偿由制造、安装磁体线圈而引起的约束磁场误差而设置的线圈。	draft
-2.2.17	# 临界密度	critical density		影响电磁波传播特性的一个等离子体密度特征值，超过这一密度值时，波不能通过等离子体传播。	draft
+2.2.6	比特线圈	Bitter coil		以发明人比特命名的，能建立强磁场的一种特殊结构的线圈。由匝间相间以绝缘材料的铜板经一开缝串联而构成一线圈绕组。线圈材料为常规铜合金，线圈有水冷及液氮冷却等形式。通常也称为比特板线圈。	draft
+2.2.7	硼化	boronisation		把含硼的化合物升华、沉积到真空室内表面以帮助降低杂质辐射的技术。参见辉光放电清洗(2.2.47)。	draft
+2.2.8	缓冲限制器	bumper limiters		在托卡马克中，为了避免真空室内表面直接暴露于等离子体的部分受到等离子体带电粒子的轰击，而在无第一壁材料的部分空间设置的缓冲孔栏(如石墨块)。	draft
+2.2.9	波纹环	bumpy torus		美国国家航空和航天局刘易斯的波纹环有12个超导线圈环向排列在大型真空容器中。目的是要在闭合磁场几何形态中将强电场加于等离子体，使得稳态等离子体加热和约束最佳化。	draft
+2.2.10	束偏滤器	bundle divertor		环向、纵向或束偏滤器，它引出一束抽出环向通量从而在环向场内形成分界面。	draft
+2.2.11	碳纤维复合材料	carbon fibre composites	CFC	由择优取向的碳纤维及沉积的碳组成的合成材料，以提高耐热及机械强度。	draft
+2.2.12	中心螺线管	central solenoid	CS	位于离托卡马克装置中轴线最近的极向线圈。用于产生并维持等离子体电流的部件、加热并控制等离子体形状。	draft
+2.2.13	中心螺线管模型线圈	central solenoid model coil	CSMC	建在前日本原子能研究所(JAERI)的模型线圈。它是用于测试ITER(2.4.47)中心螺线管的制造和其他超导体的插入式线圈[为ITER(2.4.47)中心螺线管和环向场线圈导体提供替代品]。	draft
+2.2.14	紧凑装置	compact device		环径比接近于1的轴对称环形装置，也称为紧凑环。	draft
+2.2.15	紧凑环注入	compact toroid injection		紧凑环等离子体注入技术。	draft
+2.2.16	校正场线圈	correction coils	CC	为补偿由制造、安装磁体线圈而引起的约束磁场误差而设置的线圈。	draft
+2.2.17	临界密度	critical density		影响电磁波传播特性的一个等离子体密度特征值，超过这一密度值时，波不能通过等离子体传播。	draft
 2.2.18	临界面	critical surface		等离子体中与临界密度相对应处的那个等离子体面。	draft
 2.2.19	低温泵	cryopump		基于低温吸附获得高真空的原理，使用液氦或制冷机冷却的真空泵系统。	draft
 2.2.20	低温恒温器	cryostat		杜瓦 一个装容超导磁体且室温下可抽真空的真空室，它提供真空绝热层以保持磁体在低温环境中。	draft
 2.2.21	电流极限	current limit		托卡马克等离子体中可以允许通过的最大电流值。这个值的大小主要由磁场强度和等离子体的尺寸、形状所确定。	draft
 2.2.22	电流分布控制	current profile control		为了产生最佳的等离子体位形和改善等离子体约束而采用辅助加热和无感电流驱动的方式对等离子体电流分布进行控制的技术。	draft
-2.2.23	稠密等离子体焦点装置	denseplasma focus device		由两个同轴圆柱形电极和一个电容器组成的等离子体放电装置。	draft
+2.2.23	稠密等离子体焦点装置	dense plasma focus device		由两个同轴圆柱形电极和一个电容器组成的等离子体放电装置。	draft
 2.2.24	密度控制	density control		为了得到最佳等离子体位形，通过外部加料控制等离子体密度的方法和技术。	draft
 2.2.25	偏滤器	divertor		磁约束聚变装置中，为分散热功率、排除燃料及He灰、消除或减少杂质、隔离边界产生和分开系统特意加入的杂质等而设置的装置。参见抽气偏滤器(2.2.110)、辐射偏滤器(2.2.112)。	draft
 2.2.26	偏滤器通道	divertor channel		偏滤器靶板与等离子体刮削层开放磁力线构成的区域。	draft
 2.2.27	偏滤器结构	divertor arrangement		偏滤器箱体上面部件和抽气通道的面向等离子体的构件配置和部件结构。	draft
 2.2.28	偏滤器位形	divertor configuration		在有偏滤器的等离子体放电中，形成有X点的平衡磁通位形。	draft
 2.2.29	双流器装置	doublet device		美国早期的具有肾形截面的非圆截面托卡马克装置。	draft
-2.2.30	Elomo 波纹环	Elomobumpy torus	EBT	早期磁约束聚变概念，在这种概念中用微波加热产生的高比压电子环使波纹环稳定。	draft
-2.2.31	Elomo 波纹环-S	Elomobumpy torus-S	EBT-S	早期美国国立橡树岭实验室的有24个扇形段的环形磁捕集器。 注：这种捕集器是用微波加热来产生和维持准稳态高温等离子体的。	draft
+2.2.30	Elmo波纹环	Elmo bumpy torus	EBT	早期磁约束聚变概念，在这种概念中用微波加热产生的高比压电子环使波纹环稳定。	draft
+2.2.31	Elmo波纹环-S	Elmo bumpy torus-S	EBT-S	早期美国国立橡树岭实验室的有24个扇形段的环形磁捕集器。 注：这种捕集器是用微波加热来产生和维持准稳态高温等离子体的。	draft
 2.2.32	中平面	middleplane		赤道平面 equatorial plane 由环向场线圈一半高度确定的水平面。	draft
 2.2.33	赤道端口延伸	equatorial port extension		ITER(2.4.47)主真空室的每个赤道端口由位于真空室壁上的一个孔和一个焊接到该孔凸沿和一个直段上的窗孔短管组成的结构。它焊接到窗口短管上。	draft
 2.2.34	各态历经磁偏滤器	ergodic magnetic divertor		用等离子体边界的螺旋线圈系统来扰动等离子体边缘以利于去除杂质的偏滤器。	draft
@@ -358,16 +358,16 @@
 2.2.51	先进的螺旋仿星器	helias		先进的螺旋仿星器其英文全称为helical advanced stellarator,具有变形的非平面环向场线圈的仿星器位形,不用连续的螺旋线圈或者类托卡马克的极向场。Helias是电站最有希望的仿星器概念,它具有模块式工程设计和最佳等离子体,以及磁流体动力学和磁场特性。Wendelstein VI-X装置是基于5个场周期的先进的螺旋仿星器位形。	draft
 2.2.52	螺旋注入	helicity injection		把螺旋磁波传入到等离子体的方法。用以产生驱动电流，对维持环形和球形装置有潜在的价值。环向等离子体的螺旋量是与环向和极向磁场的链合有关的，并且在放电过程中近似地守恒。如果可以注入外加的螺旋量，那么等离子体电流可以维持，甚至提高。	draft
 2.2.53	螺旋注入电流驱动	helicity injection current drive		利用螺旋注入非感应电流驱动技术。	draft
-2.2.54	# 螺旋器	heliotron		该仿星器位形中螺旋线圈用于约束等离子体，同时有一对PF线圈提供垂直场。TF线圈有时也用于控制磁面特性。	draft
+2.2.54	螺旋器	heliotron		该仿星器位形中螺旋线圈用于约束等离子体，同时有一对PF线圈提供垂直场。TF线圈有时也用于控制磁面特性。	draft
 2.2.55	强场电子回旋共振加热发射	high field ECRH launch		电子回旋共振微波从等离子体大环的内侧(强环场侧)发射，可用于加热较高密度等离子体。	draft
-2.2.56	# 高频约束	high frequency confinement			draft
-2.2.57	# 高频堵漏	high frequency plug			draft
-2.2.58	# 高热通量	highheatflux		由等离子体传导或辐射出的功率负载大于 0.5MW / m^2 。	draft
+2.2.56	高频约束	high frequency confinement			draft
+2.2.57	高频堵漏	high frequency plug			draft
+2.2.58	高热通量	high heat flux		由等离子体传导或辐射出的功率负载大于 0.5MW / m^2 。	draft
 2.2.59	高热通量部件	high heat flux components	HHFCs	在偏滤器中面向等离子体的部件，特别是靶板。	draft
-2.2.60	# 离子回旋天线	IC antenna			draft
-2.2.61	# 感应线圈	induction coil		能够给副边等离子体提供感应电势的原边线圈，在托卡马克装置中指欧姆加热线圈。	draft
-2.2.62	# 感应驱动等离子体	inductively driven plasmas		在托卡马克等离子体放电中，根据变压器原理，用欧姆加热线圈(包括螺线管线圈)驱动等离子体电流的方法。	draft
-2.2.63	# 真空室内部件	in-vessel component		直接安装于托卡马克真空室内的部件，如包层、偏滤器、部分加料系统、内部抽气系统、诊断传感 器等。	draft
+2.2.60	离子回旋天线	IC antenna			draft
+2.2.61	感应线圈	induction coil		能够给副边等离子体提供感应电势的原边线圈，在托卡马克装置中指欧姆加热线圈。	draft
+2.2.62	感应驱动等离子体	inductively driven plasmas		在托卡马克等离子体放电中，根据变压器原理，用欧姆加热线圈(包括螺线管线圈)驱动等离子体电流的方法。	draft
+2.2.63	真空室内部件	in-vessel component		直接安装于托卡马克真空室内的部件，如包层、偏滤器、部分加料系统、内部抽气系统、诊断传感 器等。	draft
 2.2.64	铁芯变压器	iron core transformer		磁路部件用硅钢片制作的变压器。在托卡马克中铁芯使欧姆线圈与等离子体成为紧耦合的原边绕组和副边绕组，漏磁通明显减少，因而大大减少了欧姆线圈的安匝数及其供电电源的功率。	draft
 2.2.65	约飞棒	Joffe's bar		在早期的聚变实验装置上，为了克服磁流体不稳定性，苏联科学家约飞提出的用固体载流导体置于装置外侧，形成会切形磁场的载流棒。	draft
 2.2.66	L-H 转换阈值功率	L-H threshold power		在等离子体加热过程中，为了克服传导损耗，需要采用一定功率的外部加热来建立H模内部输运屏障，将等离子体芯部置于一个更好的能量约束模式中，为产生这种约束模式转换所要求的外部加热的功率称为L-H转换阀值功率。	draft
@@ -387,8 +387,8 @@
 2.2.80	磁体失超探测	magnetic quench detection		对超导磁体是否进入失超状态进行探测的方法。	draft
 2.2.81	主传输电缆	main transmission line	MTL	在离子回旋加热中传输射频大功率的同轴电缆。	draft
 2.2.82	分子离子注入概念	molecular ion injection concept		把高能分子离子注入合适的磁容器并在那里被几种过程(例如：与中性原子的碰撞、洛伦兹离解等)之一离解，然后使俘获的高能离子的密度增加到具有热核意义的值，同时将它们的定向速度转换成热等离子体的随机运动。	draft
-2.2.83	铌三锡超导体	mathbfNb_3mathbfSn superconductor		由铌三锡金属间化合物制成的高性能超导体，适合在 4.5K 氦冷却条件下及12T以下使用。	draft
-2.2.84	铌三铝超导体	mathbfNb_3mathbfAl superconductor		由铌三铝金属间化合物制成的高性能超导体，适合在 4.5K 氦冷却条件下及15T以下使用。	draft
+2.2.83	铌三锡超导体	Nb₃Sn superconductor		由铌三锡金属间化合物制成的高性能超导体，适合在 4.5K 氦冷却条件下及12T以下使用。	draft
+2.2.84	铌三铝超导体	Nb₃Al superconductor		由铌三铝金属间化合物制成的高性能超导体，适合在 4.5K 氦冷却条件下及15T以下使用。	draft
 2.2.85	铌钛合金超导体	NbTi alloy superconductor		用铌钛合金制成的柔性超导体，适合在 4.5K 氮冷却条件下及8T以下使用。	draft
 2.2.86	负离子-中性束注入器	negative ion neutral injector		由负离子源提供的中性束注入器。	draft
 2.2.87	负离子源	negative ion source		产生负离子的离子源。	draft
@@ -414,9 +414,9 @@
 2.2.107	端口轴向	port axis direction		端口延伸部的径向对称轴。	draft
 2.2.108	正离子-中性束注入器	positive ion neutral injector		由正离子源提供的中性束注入器。	draft
 2.2.109	分布控制	profile control		通过控制压强、密度和电流的径向变化控制不稳定性和改善等离子体约束。	draft
-2.2.110	抽气偏滤器	pumpeddivertor		磁力线进入环绕靶板的抽气室的偏滤器。	draft
+2.2.110	抽气偏滤器	pumped divertor		磁力线进入环绕靶板的抽气室的偏滤器。	draft
 2.2.111	超导失超	quench		超导磁体由超导态到常规态的不可控和不可逆的转变。	draft
-2.2.112	辐射偏滤器	radiativedivertor		能使大部分功率在到达靶板之前被辐射掉的一种偏滤器。	draft
+2.2.112	辐射偏滤器	radiative divertor		能使大部分功率在到达靶板之前被辐射掉的一种偏滤器。	draft
 2.2.113	射频和微波等离子体弧	radio frequency and microwave plasma arc		由射频和微波产生的等离子体电弧，是加热等离子的手段。	draft
 2.2.114	射频加热	radio frequency heating		RF加热 在等离子体中利用射频波(电磁波)在传播过程中将能量传递给等离子体，从而使等离子体得到加热的手段。参见射频波(2.1.246)。	draft
 2.2.115	剩余电阻率比	residual resistance ratio	RRR	超导体基体材料室温电阻与低温剩余电阻率之比。取略高于临界温度处的电阻值为剩余电阻率。	draft
@@ -492,22 +492,22 @@
 2.4.3	异常运行工况	abnormal operating conditions		电站或其部件偏离正常运行的工况。	draft
 2.4.4	"有源"环境	"active"environment		由于遭受风化侵蚀使沉积的放射性污染物比掩埋的污染物会更迅速扩散的地面环境部分。相比而言，掩埋的污染物不会经受这种侵蚀("无源"环境)。	draft
 2.4.5	α 功率	alpha-power		聚变堆反应能中由反应产物 α 粒子携带的功率。	draft
-2.4.6	替代燃料	alternativefuels		除氘和氚以外的聚变燃料。	draft
+2.4.6	替代燃料	alternative fuels		除氘和氚以外的聚变燃料。	draft
 2.4.7	可用率	availability		系统或电厂中能执行其运行时间所占的百分比。也称为运行可用率(operation availability)。	draft
 2.4.8	超设计基准事故	beyond-design-basis accidents		已超出了设计基准许可的事故。	draft
-2.4.9	# 生物屏蔽层	bioshield		一堵包围托卡马克主低温恒温器(杜瓦)的混凝土厚壁，用以吸收大量由等离子体放出的残留辐射以保护外围区域。	draft
-2.4.10	# 包层	blanket		在聚变堆堆芯周围将聚变能转变成热能和生产氚的结构。	draft
-2.4.11	# 包层材料	blanket materials		包层内所使用的材料，包括：氚增值材料、中子倍增材料、冷却剂和结构材料等。	draft
-2.4.12	# 包层模块	blanket module		在聚变堆装置中，为了通过赤道入口便于包层的安装、维修和更换，包层被设计成若干个规范化的独立单元。	draft
-2.4.13	# 包层屏蔽	blanket shield		在聚变堆装置中，面向等离子体的第一壁部件；它能移走热量并保护包层、真空室和磁体免受辐照损伤。	draft
-2.4.14	# 含硼混凝土	borated concrete		掺入硼的混凝土。硼能很好地吸收中子。这种混凝土可以用于ITER(2.4.47)的生物屏蔽层上。	draft
-2.4.15	# 增殖部件	breeder		聚变电站中用于增殖氚的部件，有时也指增殖氚的反应堆。最常用的反应为： \mathrm {L i} + \mathrm {n} \rightarrow \mathrm {T} + \alpha + 4. 8 \mathrm {M e V} 这里与快堆(裂变电站)中的增殖过程不同。	draft
-2.4.16	# 增殖包层	breeding blanket		通过锂俘获聚变中子来增殖氚的包层结构。	draft
-2.4.17	# 增殖技术	breeding technologies		通过锂俘获中子来增殖氚的技术。	draft
-2.4.18	# 燃烧控制	burning control		为维持燃烧等离子体温度、密度、成分等所进行的控制。	draft
-2.4.19	# 燃烧等离子体	burning plasma		当聚变产生的 α 粒子的加热功率大于外部输入的加热功率时的等离子体。	draft
-2.4.20	# 陶瓷：增殖层	ceramic breeders		在增殖包层中含有锂增殖材料的陶瓷材料层。	draft
-2.4.21	# 共因故障	common-cause failure	CCF	由于一些单个事件或原因而导致的一些设备或部件的功能失效。	draft
+2.4.9	生物屏蔽层	bioshield		一堵包围托卡马克主低温恒温器(杜瓦)的混凝土厚壁，用以吸收大量由等离子体放出的残留辐射以保护外围区域。	draft
+2.4.10	包层	blanket		在聚变堆堆芯周围将聚变能转变成热能和生产氚的结构。	draft
+2.4.11	包层材料	blanket materials		包层内所使用的材料，包括：氚增值材料、中子倍增材料、冷却剂和结构材料等。	draft
+2.4.12	包层模块	blanket module		在聚变堆装置中，为了通过赤道入口便于包层的安装、维修和更换，包层被设计成若干个规范化的独立单元。	draft
+2.4.13	包层屏蔽	blanket shield		在聚变堆装置中，面向等离子体的第一壁部件；它能移走热量并保护包层、真空室和磁体免受辐照损伤。	draft
+2.4.14	含硼混凝土	borated concrete		掺入硼的混凝土。硼能很好地吸收中子。这种混凝土可以用于ITER(2.4.47)的生物屏蔽层上。	draft
+2.4.15	增殖部件	breeder		聚变电站中用于增殖氚的部件，有时也指增殖氚的反应堆。最常用的反应为： \mathrm {L i} + \mathrm {n} \rightarrow \mathrm {T} + \alpha + 4. 8 \mathrm {M e V} 这里与快堆(裂变电站)中的增殖过程不同。	draft
+2.4.16	增殖包层	breeding blanket		通过锂俘获聚变中子来增殖氚的包层结构。	draft
+2.4.17	增殖技术	breeding technologies		通过锂俘获中子来增殖氚的技术。	draft
+2.4.18	燃烧控制	burning control		为维持燃烧等离子体温度、密度、成分等所进行的控制。	draft
+2.4.19	燃烧等离子体	burning plasma		当聚变产生的 α 粒子的加热功率大于外部输入的加热功率时的等离子体。	draft
+2.4.20	陶瓷：增殖层	ceramic breeders		在增殖包层中含有锂增殖材料的陶瓷材料层。	draft
+2.4.21	共因故障	common-cause failure	CCF	由于一些单个事件或原因而导致的一些设备或部件的功能失效。	draft
 2.4.22	兼容性材料	compliant material		相互接触但并不发生化学反应的材料。	draft
 2.4.23	概念设计活动	conceptual design activity	CDA	为达到确定的研究目标所进行的一系列基本框架设计研究活动。在ITER(2.4.47)上特指1988年～1990年所进行的活动。	draft
 2.4.24	封闭系统	confinement system		限制放射性物质和有害物质的最大泄漏率不超过规定限值的系统。	draft
@@ -523,21 +523,21 @@
 2.4.34	工程设计活动	engineering design activity	EDA	在完成概念设计之后，进行满足工程建造要求达到预期功能的详细设计活动。在ITER(2.4.47)中特指1992年～2001年期间的活动。	draft
 2.4.35	氟锂铍混合体	Flibe		由氟、锂和铍组成的熔盐，可用于聚变堆包层的增殖材料。	draft
 2.4.36	燃料循环系统	fuel cycle system		从等离子体排气流中提取氘、氚并将其重新注入等离子体的系统。同时，处理废物中的含氘物质。	draft
-2.4.37	燃米.	fuels		聚变堆的燃料，主要包括氘、氚。	draft
+2.4.37	燃料	fuels		聚变堆的燃料，主要包括氘、氚。	draft
 2.4.38	功能隔离	functional isolation		避免一个回路或系统的操作模式或失效对其他部分的影响的措施。	draft
 2.4.39	聚变-裂变混合堆	fusion-fission hybrid reactor	FFH或FFHR	由聚变和裂变反应生产能量的反应堆。一般由含有裂变材料的次临界包层包围聚变中子源。如果在包层中也包含可转换材料，那么，反应堆将产生额外的裂变材料。也称为混合堆(hybrid reactor)。	draft
 2.4.40	聚变功率	fusion power		由聚变反应产生的功率，主要由中子及 α 粒子携带。	draft
 2.4.41	聚变电厂	fusion power plant		由核聚变反应提供能量的电厂。国际聚变研究的规划是先建造ITER(2.4.47)，再建造示范聚变电厂。	draft
 2.4.42	聚变产物	fusion product		氘-氘等离子体聚变反应时产生的 α 粒子和中子等。	draft
-2.4.43	聚变反应率	fusionreactivity		实现聚变反应的离子数与总离子数之比。	draft
+2.4.43	聚变反应率	fusion reactivity		实现聚变反应的离子数与总离子数之比。	draft
 2.4.44	聚变堆	fusion reactor		利用可控聚变反应产生聚变能的装置。	draft
 2.4.45	氦灰	helium ash		在氘-氚等离子体中，聚变反应产生的高能 α 粒子(氦核)被等离子体慢化后成为氦灰。	draft
 2.4.46	点火条件	ignition condition		自持聚变反应条件：对氘-氚等离子体， α 粒子加热等于等离子体热损失。	draft
 2.4.47	国际核聚变实验堆	International Thermonuclear Experimental Reactor	ITER	由中国、美国、欧盟、日本、俄罗斯、韩国及印度七方共同建造的核聚变实验堆。	draft
-2.4.48	ITER记账单位	ITERunitsofaccount	IUA	一个ITER记账单位，等价于1998年的1000美元。	draft
+2.4.48	ITER记账单位	ITER units of account	IUA	一个ITER记账单位，等价于1998年的1000美元。	draft
 2.4.49	国际托卡马克反应堆	International Tokamak Reactor	INTOR	在国际原子能机构(International Atomic Energy Agency,IAEA)组织下的，由美国、日本和欧洲共 同体设计的大型托卡马克装置，后被ITER取代。	draft
 2.4.50	样块	mockup		可以将真实应用于装置上部件的某些或全部特性复制出来的样件。例如，ITER部件试验样件。	draft
-2.4.51	模型线圈	modelcoil		用于反映ITER磁体线圈关键特性的测试线圈。	draft
+2.4.51	模型线圈	model coil		用于反映ITER磁体线圈关键特性的测试线圈。	draft
 2.4.52	端口插件	port plugs		ITER真空室的上部、中部及下部包含了大量的端口，在运行中端口中均安装有用于等离子体诊断、加热、抽真空的部件，以及限制器和与示范堆(DEMO)相关的试验包层模块。每一个设备均安装于一个特定的窗口插座上，为它们提供与邻近室、包层、屏蔽层的坚固接口，同时还将外部供应与端口插件服务连接。	draft
 2.4.53	远程操作	remote handling		通过机电设备控制在聚变堆中远距离操作的活动。	draft
 2.4.54	远程操作等级	remote handling class		等级I为例行的远距离计划维修，等级Ⅱ为在电厂的生命周期内进行的远程维修或更换，等级Ⅲ为不必在电厂的生命周期内进行的远距离维修或更换，等级IV为不要求任何远距离维修或更换。	draft
@@ -554,7 +554,7 @@
 2.4.65	支持系统	support systems		为聚变堆主系统提供服务的辅助系统。	draft
 2.4.66	ITER 试验包层模块	ITER test blanket module	TBM	在ITER装置实验窗口进行中子学和氘增殖、热工水力、电磁、整体性能测试的试验模块。	draft
 2.4.67	热核反应堆	thermonuclear reactor		能维持和控制自持聚变反应的装置，又称聚变堆(fusion reactor)。	draft
-2.4.68	热核反应堆包层	thermonuclearreactorblanket		在未来的聚变反应堆中，围绕着等离子体的一组包套。它可以采取锂从中流过或由冷却剂(如氦)和锂陶瓷材料组成的结构形式。这个包层有3个用途：由锂产生氚；排除热量；吸收来自等离子体的辐射，从而保护外面的超导线圈。	draft
+2.4.68	热核反应堆包层	thermonuclear reactor blanket		在未来的聚变反应堆中，围绕着等离子体的一组包套。它可以采取锂从中流过或由冷却剂(如氦)和锂陶瓷材料组成的结构形式。这个包层有3个用途：由锂产生氚；排除热量；吸收来自等离子体的辐射，从而保护外面的超导线圈。	draft
 2.4.69	氚增殖比	tritium breeding ratio	TBR	聚变堆增殖包层中单位时间氚产量相对氚消耗量的比值。	draft
 2.4.70	氚处理	tritium handling		从载氚流体、装置排出气体和泄漏含氚气体中提取氚，并安全收储或成为等离子体燃料的过程。参见氚工厂(2.4.71)。	draft
 2.4.71	氚工厂	tritium plant		从聚变堆的燃料系统及其他含氚材料中收集、储藏、循环利用、提取及净化氚的设施。	draft

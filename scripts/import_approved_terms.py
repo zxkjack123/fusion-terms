@@ -220,7 +220,11 @@ def main() -> None:
             continue
 
         # --- Handle "new" or "approved" entries: full import ---
-        concept_id = _slugify(term)
+        zh = row.get("zh", "")
+        en = row.get("en", "").strip() or term
+        abbr = row.get("abbr", "").strip()
+
+        concept_id = _slugify(en)
         if not concept_id:
             skipped.append(f"  SKIP (empty slug): {term}")
             stats["skipped"] += 1
@@ -239,15 +243,11 @@ def main() -> None:
             continue
 
         # Check for alias collision
-        term_lower = term.lower()
-        if term_lower in existing_aliases:
-            skipped.append(f"  SKIP (alias exists): {term}")
+        en_lower = en.lower()
+        if en_lower in existing_aliases:
+            skipped.append(f"  SKIP (alias exists): {en}")
             stats["skipped"] += 1
             continue
-
-        zh = row.get("zh", "")
-        en = term
-        abbr = ""
 
         # concepts.tsv: concept_id, category, preferred_zh, preferred_en, preferred_abbr, status, notes, source
         concept_line = "\t".join([
@@ -273,7 +273,7 @@ def main() -> None:
         new_aliases.extend(alias_lines_extra)
         new_evidence.append(evidence_line)
         existing_ids.add(concept_id)
-        existing_aliases.add(term_lower)
+        existing_aliases.add(en_lower)
         if zh:
             existing_aliases.add(zh.lower())
         stats["new_concept"] += 1

@@ -42,12 +42,51 @@ RE_TERM_LINE = re.compile(
 )
 
 
+# ---- Manual OCR corrections ----
+# These fix errors that cannot be handled by generic heuristics.
+# Format: { (term_id): {field: corrected_value, ...} }
+_OCR_CORRECTIONS: dict[str, dict[str, str]] = {
+    "2.1.40":  {"en": "controlled thermonuclear fusion"},
+    "2.1.56":  {"zh": "氘-氦3反应", "en": "deuterium-helium-3 reaction", "abbr": "D-³He"},
+    "2.1.76":  {"en": "dusty plasma"},
+    "2.1.80":  {"en": "edge plasma"},
+    "2.1.119": {"en": "H factor"},
+    "2.1.128": {"en": "inboard plasma shape"},
+    "2.1.161": {"en": "loss cone"},
+    "2.1.162": {"en": "loss cone instability"},
+    "2.1.184": {"zh": "平均极小B位形", "en": "minimum average B configuration"},
+    "2.1.187": {"en": "mirror instability"},
+    "2.1.193": {"en": "negative mass instability"},
+    "2.1.258": {"en": "runaway electrons"},
+    "2.2.4":   {"en": "balance burning"},
+    "2.2.6":   {"en": "Bitter coil"},
+    "2.2.10":  {"en": "bundle divertor"},
+    "2.2.23":  {"en": "dense plasma focus device"},
+    "2.2.30":  {"zh": "Elmo波纹环", "en": "Elmo bumpy torus"},
+    "2.2.31":  {"zh": "Elmo波纹环-S", "en": "Elmo bumpy torus-S"},
+    "2.2.58":  {"en": "high heat flux"},
+    "2.2.83":  {"en": "Nb₃Sn superconductor"},
+    "2.2.84":  {"en": "Nb₃Al superconductor"},
+    "2.2.110": {"en": "pumped divertor"},
+    "2.2.112": {"en": "radiative divertor"},
+    "2.4.6":   {"en": "alternative fuels"},
+    "2.4.37":  {"zh": "燃料", "en": "fuels"},
+    "2.4.43":  {"en": "fusion reactivity"},
+    "2.4.47":  {"en": "International Thermonuclear Experimental Reactor", "abbr": "ITER"},
+    "2.4.48":  {"en": "ITER units of account"},
+    "2.4.51":  {"en": "model coil"},
+    "2.4.68":  {"en": "thermonuclear reactor blanket"},
+}
+
+
 def _clean_latex(text: str) -> str:
     """Remove Markdown / LaTeX artefacts from OCR-converted text."""
     # Common LaTeX wrappers
     text = re.sub(r"\$[^$]*\$", lambda m: _latex_to_text(m.group(0)), text)
     # Bold markers
     text = text.replace("**", "")
+    # Strip leading markdown heading markers from term lines
+    text = re.sub(r"^#\s+", "", text)
     # Normalize full-width parentheses to ASCII
     text = text.replace("（", "(").replace("）", ")")
     # Normalize curly/smart quotes to ASCII
@@ -62,6 +101,7 @@ def _clean_latex(text: str) -> str:
 def _latex_to_text(latex: str) -> str:
     """Best-effort convert simple LaTeX to plain text."""
     s = latex.strip("$").strip()
+    s = re.sub(r"\\mathbf\{([^}]*)\}", r"\1", s)
     s = re.sub(r"\\mathrm\{([^}]*)\}", r"\1", s)
     s = re.sub(r"\\pmb\{([^}]*)\}", r"\1", s)
     s = re.sub(r"\\alpha", "α", s)
@@ -107,7 +147,7 @@ def _split_zh_en(line: str) -> tuple[str, str, str]:
     # Fix OCR joined words: insert space before internal uppercase letters
     # e.g. "InternationalThermonuclearExperimentalReactor" →
     #      "International Thermonuclear Experimental Reactor"
-    if en_raw and " " not in en_raw and len(en_raw) > 20:
+    if en_raw and " " not in en_raw and len(en_raw) > 12:
         en_raw = re.sub(r"(?<=[a-z])(?=[A-Z])", " ", en_raw)
 
     return zh, en_raw.strip(), abbr
@@ -198,14 +238,19 @@ def parse_markdown(md_text: str) -> list[dict[str, str]]:
         definition = re.sub(r"\s+", " ", definition).strip()
 
         if zh or en:
-            entries.append({
+            entry = {
                 "term_id": term_id,
                 "zh": zh,
                 "en": en,
                 "abbr": abbr,
                 "definition": definition,
                 "status": "draft",
-            })
+            }
+            # Apply manual OCR corrections
+            if term_id in _OCR_CORRECTIONS:
+                for field, val in _OCR_CORRECTIONS[term_id].items():
+                    entry[field] = val
+            entries.append(entry)
 
         i = j
 

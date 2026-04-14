@@ -1,5 +1,4 @@
 # concept_id	source	quote	added_by	added_at
-# source can be DOI/URL/standard-id/internal-doc-path
 iter	https://www.iter.org			2026-02-04
 east	https://en.wikipedia.org/wiki/Experimental_Advanced_Superconducting_Tokamak			2026-02-04
 tokamak	https://en.wikipedia.org/wiki/Tokamak			2026-02-04
@@ -38,7 +37,6 @@ effective-dose	internal:BEST:radiation-protection			2026-02-11
 equivalent-dose	internal:BEST:radiation-protection			2026-02-11
 derived-air-concentration	internal:BEST:radiation-protection			2026-02-11
 
-# ---- Plasma physics
 plasma-confinement	https://en.wikipedia.org/wiki/Plasma_confinement			2026-03-16
 magnetic-confinement	https://en.wikipedia.org/wiki/Magnetic_confinement_fusion			2026-03-16
 plasma-equilibrium	internal:plasma-physics:equilibrium			2026-03-16
@@ -69,7 +67,6 @@ poloidal-beta	internal:plasma-physics:plasma-parameters			2026-03-16
 plasma-shaping	internal:plasma-physics:plasma-control			2026-03-16
 vertical-displacement-event	internal:plasma-physics:disruption-phenomena			2026-03-16
 
-# ---- Plasma-wall interaction
 plasma-facing-component	https://en.wikipedia.org/wiki/Plasma-facing_material			2026-03-16
 first-wall	https://en.wikipedia.org/wiki/First_wall			2026-03-16
 divertor	https://en.wikipedia.org/wiki/Divertor			2026-03-16
@@ -89,7 +86,6 @@ carbon-fiber-composite	internal:plasma-wall:PFC-materials			2026-03-16
 plasma-surface-interaction	internal:plasma-wall:PSI			2026-03-16
 blistering	internal:plasma-wall:surface-damage			2026-03-16
 
-# ---- Plasma diagnostics
 interferometry	internal:diagnostics:density-measurement			2026-03-16
 langmuir-probe	https://en.wikipedia.org/wiki/Langmuir_probe			2026-03-16
 bolometer	internal:diagnostics:radiation-measurement			2026-03-16
@@ -103,7 +99,6 @@ spectroscopy	internal:diagnostics:spectroscopy			2026-03-16
 motional-stark-effect	internal:diagnostics:MSE			2026-03-16
 far-infrared-polarimetry	internal:diagnostics:FIR-polarimetry			2026-03-16
 
-# ---- Superconducting magnets
 nbti	https://en.wikipedia.org/wiki/Niobium%E2%80%93titanium			2026-03-16
 rebco	https://en.wikipedia.org/wiki/Rare-earth_barium_copper_oxide			2026-03-16
 high-temperature-superconductor	https://en.wikipedia.org/wiki/High-temperature_superconductivity			2026-03-16
@@ -125,7 +120,6 @@ cryoplant	internal:magnets:cryogenics			2026-03-16
 current-lead	internal:magnets:current-leads			2026-03-16
 magnetic-stored-energy	internal:magnets:stored-energy			2026-03-16
 
-# ---- Stellarator
 stellarator	https://en.wikipedia.org/wiki/Stellarator			2026-03-16
 modular-coil	internal:stellarator:coil-design			2026-03-16
 rotational-transform	internal:stellarator:magnetic-geometry			2026-03-16
@@ -143,7 +137,6 @@ island-divertor	internal:stellarator:divertor			2026-03-16
 bootstrap-current-optimization	internal:stellarator:optimization			2026-03-16
 coil-complexity	internal:stellarator:coil-design			2026-03-16
 
-# ---- Reversed field pinch
 reversed-field-pinch	https://en.wikipedia.org/wiki/Reversed-field_pinch			2026-03-16
 rfx-mod	https://en.wikipedia.org/wiki/Reversed-field_pinch#RFX-mod			2026-03-16
 dynamo-effect	internal:rfp:self-organization			2026-03-16
@@ -152,7 +145,6 @@ pulsed-poloidal-current-drive	internal:rfp:current-drive			2026-03-16
 tearing-mode	https://en.wikipedia.org/wiki/Tearing_mode			2026-03-16
 resistive-wall-mode	internal:mhd:stability			2026-03-16
 
-# ---- Field-reversed configuration
 field-reversed-configuration	https://en.wikipedia.org/wiki/Field-reversed_configuration			2026-03-16
 theta-pinch	https://en.wikipedia.org/wiki/Theta_pinch			2026-03-16
 compact-toroid	https://en.wikipedia.org/wiki/Compact_toroid			2026-03-16
@@ -163,7 +155,6 @@ rotational-instability	internal:frc:stability			2026-03-16
 c-2w	internal:frc:TAE			2026-03-16
 magneto-inertial-fusion	https://en.wikipedia.org/wiki/Magnetized_target_fusion			2026-03-16
 
-# ---- Inertial confinement fusion
 inertial-confinement-fusion	https://en.wikipedia.org/wiki/Inertial_confinement_fusion			2026-03-16
 laser-driven-fusion	internal:icf:laser-fusion			2026-03-16
 direct-drive	internal:icf:direct-drive			2026-03-16
@@ -184,7 +175,6 @@ target-fabrication	internal:icf:target-fab			2026-03-16
 cryogenic-target	internal:icf:target-fab			2026-03-16
 laser-plasma-interaction	internal:icf:LPI			2026-03-16
 
-# ---- Other alternative / compact fusion concepts
 spherical-tokamak	https://en.wikipedia.org/wiki/Spherical_tokamak			2026-03-16
 dense-plasma-focus	https://en.wikipedia.org/wiki/Dense_plasma_focus			2026-03-16
 mirror-machine	https://en.wikipedia.org/wiki/Magnetic_mirror			2026-03-16
@@ -193,7 +183,6 @@ tandem-mirror	https://en.wikipedia.org/wiki/Tandem_mirror			2026-03-16
 plasma-gun	internal:compact-fusion:plasma-gun			2026-03-16
 muon-catalyzed-fusion	https://en.wikipedia.org/wiki/Muon-catalyzed_fusion			2026-03-16
 
-# ---- Proton-boron (p-B11) fusion / ENN pathway
 proton-boron-fusion	https://en.wikipedia.org/wiki/Aneutronic_fusion#Proton%E2%80%93boron-11			2026-03-16
 aneutronic-fusion	https://en.wikipedia.org/wiki/Aneutronic_fusion			2026-03-16
 advanced-fuel	internal:pB-fuel-cycle:advanced-fuels			2026-03-16
@@ -233,7 +222,6 @@ dielectric-wall-accelerator	internal:pB-fuel-cycle:DWA			2026-03-16
 electrostatic-confinement	https://en.wikipedia.org/wiki/Inertial_electrostatic_confinement			2026-03-16
 plasma-facing-material	internal:plasma-wall:PFM			2026-03-16
 
-# ---- Fusion engineering: vacuum & structures
 vacuum-vessel	internal:engineering:vacuum-vessel			2026-03-16
 thermal-shield	internal:engineering:thermal-shield			2026-03-16
 biological-shield	internal:engineering:bio-shield			2026-03-16
@@ -241,19 +229,16 @@ remote-handling	https://en.wikipedia.org/wiki/Remote_handling			2026-03-16
 remote-maintenance	internal:engineering:remote-maintenance			2026-03-16
 hot-cell	internal:engineering:hot-cell			2026-03-16
 
-# ---- Fusion engineering: tritium systems
 tritium-plant	internal:TRITIUM-CYCLE:tritium-plant			2026-03-16
 permeation	internal:TRITIUM-CYCLE:permeation			2026-03-16
 detritiation	internal:TRITIUM-CYCLE:detritiation			2026-03-16
 tritium-inventory	internal:TRITIUM-CYCLE:inventory			2026-03-16
 
-# ---- Fusion engineering: breeding materials
 lithium-lead	internal:engineering:breeder-materials			2026-03-16
 lithium-titanate	internal:engineering:breeder-materials			2026-03-16
 lithium-orthosilicate	internal:engineering:breeder-materials			2026-03-16
 neutron-multiplier	internal:engineering:neutron-multiplier			2026-03-16
 
-# ---- Fusion engineering: structural materials
 rafm-steel	internal:engineering:structural-materials			2026-03-16
 eurofer	internal:engineering:structural-materials			2026-03-16
 clf-1	internal:engineering:structural-materials			2026-03-16
@@ -262,12 +247,10 @@ vanadium-alloy	internal:engineering:structural-materials			2026-03-16
 sic-sic-composite	internal:engineering:structural-materials			2026-03-16
 ods-steel	internal:engineering:structural-materials			2026-03-16
 
-# ---- Fusion engineering: coolant concepts
 helium-cooled	internal:engineering:coolant			2026-03-16
 water-cooled	internal:engineering:coolant			2026-03-16
 liquid-metal-coolant	internal:engineering:coolant			2026-03-16
 
-# ---- Fusion engineering: blanket concepts
 hccb	internal:engineering:blanket-concepts			2026-03-16
 wccb	internal:engineering:blanket-concepts			2026-03-16
 hcll	internal:engineering:blanket-concepts			2026-03-16
@@ -275,7 +258,6 @@ hcpb	internal:engineering:blanket-concepts			2026-03-16
 dcll	internal:engineering:blanket-concepts			2026-03-16
 tbm	internal:engineering:blanket-concepts			2026-03-16
 
-# ---- Fusion engineering: neutronics & irradiation
 neutron-wall-loading	internal:engineering:neutronics			2026-03-16
 dpa	internal:engineering:irradiation-damage			2026-03-16
 transmutation	https://en.wikipedia.org/wiki/Nuclear_transmutation			2026-03-16
@@ -286,7 +268,6 @@ ifmif	https://en.wikipedia.org/wiki/IFMIF			2026-03-16
 dones	internal:engineering:DONES			2026-03-16
 fusion-neutron	internal:engineering:DT-neutron			2026-03-16
 
-# ---- Major fusion devices
 cfetr	internal:CFETRCOOLACT:CFETR			2026-03-16
 cfetr-design	https://doi.org/10.1088/1741-4326/ab0c68
 demo	https://en.wikipedia.org/wiki/DEMOnstration_Power_Plant			2026-03-16
@@ -307,7 +288,6 @@ sg-iii	internal:devices:SG-III			2026-03-16
 omega	https://en.wikipedia.org/wiki/OMEGA_laser			2026-03-16
 laser-megajoule	https://en.wikipedia.org/wiki/Laser_M%C3%A9gajoule			2026-03-16
 
-# ---- Plasma control & operation
 plasma-control	internal:plasma-control:overview			2026-03-16
 real-time-control	internal:plasma-control:real-time			2026-03-16
 plasma-position-control	internal:plasma-control:position			2026-03-16
@@ -335,7 +315,6 @@ impurity-transport	internal:plasma-physics:transport			2026-03-16
 particle-confinement-time	internal:plasma-physics:transport			2026-03-16
 current-profile-control	internal:plasma-control:current-profile			2026-03-16
 
-# ---- Plasma theory & simulation
 gyrokinetics	https://en.wikipedia.org/wiki/Gyrokinetics			2026-03-16
 drift-kinetics	internal:theory:drift-kinetics			2026-03-16
 turbulent-transport	internal:theory:turbulence			2026-03-16
@@ -359,7 +338,6 @@ energetic-particle	internal:theory:fast-ions			2026-03-16
 zonal-flow	internal:theory:turbulence			2026-03-16
 geodesic-acoustic-mode	internal:theory:GAM			2026-03-16
 
-# ---- Simulation codes & nuclear data
 efit	internal:codes:EFIT			2026-03-16
 transp	internal:codes:TRANSP			2026-03-16
 astra	internal:codes:ASTRA			2026-03-16
@@ -376,7 +354,6 @@ comsol	internal:codes:COMSOL			2026-03-16
 ansys	internal:codes:ANSYS			2026-03-16
 catia	internal:codes:CATIA			2026-03-16
 
-# ---- Additional simulation codes: plasma equilibrium / transport / MHD
 corsica	internal:codes:CORSICA			2026-03-16
 imas	internal:codes:IMAS			2026-03-16
 jintrac	internal:codes:JINTRAC			2026-03-16
@@ -397,7 +374,6 @@ helena	internal:codes:HELENA			2026-03-16
 cliste	internal:codes:CLISTE			2026-03-16
 chease	internal:codes:CHEASE			2026-03-16
 
-# ---- SOL / divertor / edge plasma codes
 eirene	internal:codes:EIRENE			2026-03-16
 solps	internal:codes:SOLPS			2026-03-16
 b2	internal:codes:B2			2026-03-16
@@ -407,7 +383,6 @@ div3d	internal:codes:DIV3D			2026-03-16
 emc3-eirene	internal:codes:EMC3-EIRENE			2026-03-16
 uedge	internal:codes:UEDGE			2026-03-16
 
-# ---- Neutronics / nuclear analysis codes
 fluka	https://en.wikipedia.org/wiki/FLUKA			2026-03-16
 geant4	https://en.wikipedia.org/wiki/Geant4			2026-03-16
 phits	internal:codes:PHITS			2026-03-16
@@ -417,7 +392,6 @@ d1s	internal:codes:D1S			2026-03-16
 supermc	internal:codes:SuperMC			2026-03-16
 tripoli	internal:codes:TRIPOLI			2026-03-16
 
-# ---- Nuclear data libraries
 jeff	internal:nuclear-data:JEFF			2026-03-16
 jendl	internal:nuclear-data:JENDL			2026-03-16
 cendl	internal:nuclear-data:CENDL			2026-03-16
@@ -425,7 +399,6 @@ tendl	internal:nuclear-data:TENDL			2026-03-16
 eaf	internal:nuclear-data:EAF			2026-03-16
 irdff	internal:nuclear-data:IRDFF			2026-03-16
 
-# ---- Structural / thermal / EM / multi-physics codes
 abaqus	internal:codes:Abaqus			2026-03-16
 nastran	internal:codes:Nastran			2026-03-16
 fluent	internal:codes:Fluent			2026-03-16
@@ -434,7 +407,6 @@ openfoam	https://en.wikipedia.org/wiki/OpenFOAM			2026-03-16
 elmer	internal:codes:Elmer			2026-03-16
 opera	internal:codes:Opera			2026-03-16
 
-# ---- Tokamak / systems / design codes
 process	internal:codes:PROCESS			2026-03-16
 sycomore	internal:codes:SYCOMORE			2026-03-16
 mira	internal:codes:MIRA			2026-03-16
@@ -442,7 +414,6 @@ create-nl	internal:codes:CREATE-NL			2026-03-16
 dina	internal:codes:DINA			2026-03-16
 tsc	internal:codes:TSC			2026-03-16
 
-# ---- Numerical methods & computational concepts
 monte-carlo-method	https://en.wikipedia.org/wiki/Monte_Carlo_method			2026-03-16
 finite-element-method	https://en.wikipedia.org/wiki/Finite_element_method			2026-03-16
 finite-volume-method	https://en.wikipedia.org/wiki/Finite_volume_method			2026-03-16
@@ -951,7 +922,6 @@ coolant-loop	internal:expansion:batch-50	Primary/secondary coolant loop	copilot	
 power-conversion-system	internal:expansion:batch-50	PCS heat-to-electricity	copilot	2026-03-22
 maintenance-period	internal:expansion:batch-50	Scheduled maintenance interval	copilot	2026-03-22
 gyrokinetic-simulation	internal:expansion:batch-50	GK turbulence simulation	copilot	2026-03-22
-# ==== Batch 51 P0 ====
 gyro-bohm-scaling	https://en.wikipedia.org/wiki/Bohm_diffusion			2026-03-23
 turbulent-diffusion	internal:fusion-transport:turbulent-diffusion			2026-03-23
 particle-pinch	internal:fusion-transport:particle-pinch			2026-03-23
@@ -979,7 +949,6 @@ tritium-processing	internal:fuel-cycle:tritium-processing			2026-03-23
 palladium-membrane	internal:fuel-cycle:palladium-membrane			2026-03-23
 getter-bed	internal:fuel-cycle:getter-bed			2026-03-23
 glovebox	internal:fuel-cycle:glovebox			2026-03-23
-# ==== Batch 52 P1 ====
 helicon-wave	internal:heating:helicon-wave			2026-03-23
 wave-plasma-interaction	internal:heating:wave-plasma-interaction			2026-03-23
 hard-x-ray	internal:diagnostics:hard-x-ray			2026-03-23
@@ -988,12 +957,10 @@ faraday-rotation	internal:diagnostics:faraday-rotation			2026-03-23
 material-migration	internal:pmi:material-migration			2026-03-23
 radiation-damage	internal:pmi:radiation-damage			2026-03-23
 embrittlement	internal:pmi:embrittlement			2026-03-23
-# ==== Batch 53 P2 ====
 occupational-dose	internal:safety:occupational-dose			2026-03-23
 mean-free-path	https://en.wikipedia.org/wiki/Mean_free_path			2026-03-23
 cyclotron-frequency	https://en.wikipedia.org/wiki/Cyclotron_resonance			2026-03-23
 magnetic-pressure	https://en.wikipedia.org/wiki/Magnetic_pressure			2026-03-23
-# ==== Batch 54: Dify KB mining ====
 hands-on-recycling	dify:Neutronics/RadWaste:El-Guebaly_2008			2026-03-24
 remote-handling-recycling	dify:Neutronics/RadWaste:Zucchetti_2001			2026-03-24
 permanent-disposal-waste	dify:Neutronics/ActivationInventory:Zucchetti_2001			2026-03-24
@@ -1057,7 +1024,6 @@ conceptual-design	internal:translation:compound-vocabulary	High-frequency compou
 structural-design	internal:translation:compound-vocabulary	High-frequency compound term for zh→en search translation		2026-03-29
 computational-method	internal:translation:compound-vocabulary	High-frequency compound term for zh→en search translation		2026-03-29
 
-# ==== Batch 55: General Scientific & Engineering Methodology ====
 benchmark	https://en.wikipedia.org/wiki/Benchmark_(computing)			2026-04-04
 validation	https://en.wikipedia.org/wiki/Verification_and_validation			2026-04-04
 verification	https://en.wikipedia.org/wiki/Verification_and_validation			2026-04-04
@@ -1085,7 +1051,6 @@ latin-hypercube-sampling	https://en.wikipedia.org/wiki/Latin_hypercube_sampling	
 monte-carlo-sampling	https://en.wikipedia.org/wiki/Monte_Carlo_method			2026-04-04
 goodness-of-fit	https://en.wikipedia.org/wiki/Goodness_of_fit			2026-04-04
 
-# ==== Batch 56: HPC / Parallel Computing / Workflow ====
 mpi	https://en.wikipedia.org/wiki/Message_Passing_Interface			2026-04-04
 openmp	https://en.wikipedia.org/wiki/OpenMP			2026-04-04
 gpu-offloading	https://en.wikipedia.org/wiki/General-purpose_computing_on_graphics_processing_units			2026-04-04
@@ -1122,7 +1087,6 @@ scratch-filesystem	internal:fusion-terms:domain-expansion	HPC temporary storage 
 checkpoint-restart	https://en.wikipedia.org/wiki/Application_checkpointing			2026-04-04
 profiler	https://en.wikipedia.org/wiki/Profiling_(computer_programming)			2026-04-04
 
-# ==== Batch 57: MC & Deterministic Transport Methods ====
 track-length-estimator	internal:fusion-terms:domain-expansion	MC tally estimator type		2026-04-04
 collision-estimator	internal:fusion-terms:domain-expansion	MC tally estimator type		2026-04-04
 surface-current-tally	internal:fusion-terms:domain-expansion	MC tally type		2026-04-04
@@ -1158,7 +1122,6 @@ analog-monte-carlo	internal:fusion-terms:domain-expansion	Unbiased MC simulation
 importance-function	internal:fusion-terms:domain-expansion	VR adjoint concept		2026-04-04
 response-function	internal:fusion-terms:domain-expansion	Detector response kernel		2026-04-04
 
-# ==== Batch 58: Nuclear Data Processing & Burnup ====
 continuous-energy	internal:fusion-terms:domain-expansion	MC energy treatment concept		2026-04-04
 multigroup	internal:fusion-terms:domain-expansion	Deterministic energy discretization		2026-04-04
 ace-format	https://docs.openmc.org/en/stable/methods/cross_sections.html			2026-04-04
@@ -1186,7 +1149,6 @@ atom-density	internal:fusion-terms:domain-expansion	Material specification quant
 isotopic-composition	internal:fusion-terms:domain-expansion	Material specification		2026-04-04
 burnup	https://en.wikipedia.org/wiki/Burnup			2026-04-04
 
-# ==== Batch 59: CAD & Geometry Modeling ====
 csg	https://en.wikipedia.org/wiki/Constructive_solid_geometry			2026-04-04
 b-rep	https://en.wikipedia.org/wiki/Boundary_representation			2026-04-04
 faceted-geometry	internal:fusion-terms:domain-expansion	Triangulated geometry for DAGMC etc		2026-04-04
@@ -1213,7 +1175,6 @@ paramak	https://github.com/fusion-energy/paramak			2026-04-04
 cad-simplification	internal:fusion-terms:domain-expansion	Defeaturing for MC/FEM		2026-04-04
 conformal-mesh	internal:fusion-terms:domain-expansion	Body-fitted unstructured mesh		2026-04-04
 
-# ==== Batch 60: Radiation Protection & Dosimetry ====
 ambient-dose-equivalent	https://www.icrp.org/publication.asp?id=icrp%20publication%20116			2026-04-04
 dose-conversion-coefficient	internal:fusion-terms:domain-expansion	Dose conversion methodology		2026-04-04
 icrp	https://www.icrp.org/			2026-04-04
@@ -1235,7 +1196,6 @@ shielding-analysis	internal:fusion-terms:domain-expansion	Radiation shielding me
 streaming	internal:fusion-terms:domain-expansion	Duct/gap radiation streaming		2026-04-04
 buildup-factor	internal:fusion-terms:domain-expansion	Shielding buildup factor		2026-04-04
 
-# ==== Batch 61: Materials Science & Mechanics ====
 tensile-test	internal:fusion-terms:domain-expansion	Standard mechanical test		2026-04-04
 fracture-toughness	https://en.wikipedia.org/wiki/Fracture_toughness			2026-04-04
 yield-strength	https://en.wikipedia.org/wiki/Yield_(engineering)			2026-04-04
@@ -1267,7 +1227,6 @@ energy-dispersive-spectroscopy	https://en.wikipedia.org/wiki/Energy-dispersive_X
 nanoindentation	https://en.wikipedia.org/wiki/Nanoindentation			2026-04-04
 fractography	https://en.wikipedia.org/wiki/Fractography			2026-04-04
 
-# ==== Batch 62: Thermal-Hydraulics ====
 heat-transfer-coefficient	internal:fusion-terms:domain-expansion	TH basic parameter		2026-04-04
 nusselt-number	https://en.wikipedia.org/wiki/Nusselt_number			2026-04-04
 reynolds-number	https://en.wikipedia.org/wiki/Reynolds_number			2026-04-04
@@ -1292,7 +1251,6 @@ friction-factor	internal:fusion-terms:domain-expansion	Pipe flow parameter		2026
 flow-distribution	internal:fusion-terms:domain-expansion	Coolant allocation concept		2026-04-04
 pressure-vessel	https://en.wikipedia.org/wiki/Pressure_vessel			2026-04-04
 
-# ==== Batch 63: Software Engineering ====
 api	https://en.wikipedia.org/wiki/API			2026-04-04
 sdk	https://en.wikipedia.org/wiki/Software_development_kit			2026-04-04
 refactoring	https://en.wikipedia.org/wiki/Code_refactoring			2026-04-04
@@ -1324,7 +1282,6 @@ shared-library	internal:fusion-terms:domain-expansion	Dynamic linking concept		2
 package-manager	internal:fusion-terms:domain-expansion	Software distribution tool		2026-04-04
 documentation	internal:fusion-terms:domain-expansion	Software documentation		2026-04-04
 
-# ==== Batch 64: Data Formats & Visualization ====
 hdf5	https://www.hdfgroup.org/solutions/hdf5/			2026-04-04
 vtk	https://vtk.org/			2026-04-04
 paraview	https://www.paraview.org/			2026-04-04
@@ -2449,348 +2406,375 @@ urgent-protective-action	IAEA-Safety-Glossary-2018		import_approved_terms	2026-0
 urgent-protective-action-planning-zone	IAEA-Safety-Glossary-2018		import_approved_terms	2026-04-14
 urgent-response-phase	IAEA-Safety-Glossary-2018		import_approved_terms	2026-04-14
 use	IAEA-Safety-Glossary-2018		import_approved_terms	2026-04-14
-magnetic-confinement-fusion	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-acoustic-heating	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-adiabatic-compression	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-adiabatic-compression-heating	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-adiabatic-invariant	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-advanced-research-innovation-and-evaluation-study	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-alfven-gap-modes	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-alfven-time	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-alfven-velocity	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-alfven-wave-instability	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-alpha-channel-effect	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-ambipolar-diffusion	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-anomalous-diffusion	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-anomalous-electron-thermal-conduction	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-auxiliary-heating-additional-heating	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-ballooning-instability	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-bernstein-mode	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-beta-value	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-bohm-transport	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-burn-fraction-of-thermonuclear-fuel	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-central-electron-density	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-closed-configuration	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-cold-plasma	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-collective-instabilities	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-collective-phenomena	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-collisional-plasma	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-collisionless-plasma	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-collisionless-shock-wave	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-collisionless-tearing-instability	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-controlledthermonuclearfusion	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-core-confinement	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-cusped-geometry	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-cyclotron-instability	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-cyclotron-resonance	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-cyclotron-resonance-heating	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-cylindrical-approximation	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-d-alpha-light	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-d-shaped-plasma	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-degenerate-configuration	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-reaction	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-diamagnetic-effect	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-diamagnetic-plasma	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-dispersion-relation	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-displacement-of-plasma	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-disruptive-instability	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-dissociative-recombination	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-divertor-physics	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-double-null-equilibrium	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-drift-cyclotron-resonance-instability	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-drift-dissipative-instability	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-drift-instability	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-drift-kinetic-theory	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-drift-orbits	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-drift-surface	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-driven-current	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-dustyplasma	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-edge-fluctuations	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-edge-physics	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-edgeplasma	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-eikonal-equation	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-e-layer	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-electromagnetic-load	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-electron-cyclotron-wave	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-electron-plasma-frequency	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-electrostatic-wave	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-elmy-h-mode	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-empirical-scaling-formulas	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-energy-break-even	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-energy-confinement-time-scaling-law	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-energy-loss-time	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-enhanced-particle-modes	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-entropy-trapping	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-equilibration-times	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-fast-alfven-wave	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-finite-heat-conductivity-instability	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-fire-hose-instability	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-flip-instability	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-frozen-magnetic-field	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-fullwave-theory	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-gas-discharge-plasma	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-gravitational-instability	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-guiding-center	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-gyro-kinetic-theory	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-gyrorelaxation-effect	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-gyrorelaxation-heating	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-h-l-transition	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-hybrid-resonance	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-hydromagnetic-wave	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-ideal-internal-kink-mode	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-impurity-radiation	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-inboardplasmashape	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-indentation	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-internal-inductance	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-internal-mode	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-internal-reconnection-event	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-ion-acoustic-wave	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-ion-cyclotron-current-drive	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-ion-cyclotron-emission	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-ion-plasma-frequency	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-ion-wave-instability	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-isotropic-plasma	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-kelvin-helmholtz-instability	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-kinetic-instability	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-kinetic-pressure	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-kinetic-theory	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-kruskal-limit	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-landau-damping	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-langmuir-frequency	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-line-tying	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-lose-cone	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-lose-cone-instability	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-low-beta-plasma	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-low-field-side	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-low-temperature-plasma	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-macroinstability-macroscopic-instability	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-magnetic-mach-number	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-magnetic-mirror-configuration	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-magnetic-moment	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-magnetic-viscosity	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-magneto-acoustic-cyclotron-instability	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-magnetohydrodynamic-shock-wave	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-magnetohydrodynamic-turbulence	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-magnetosonic-waves	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-magnetohydrodynamic-instability	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-microinstabilities-microscopic-instability	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-mathbfb-minimum-average-b-configuration	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-minimum-b-configuration	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-mirrorinstability	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-mirror-ratio	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-mode-number	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-monster-sawteeth	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-multifaced-asymmetric-radiation-from-the-edge	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-multipole-geometry-configuration	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-negativemassinstability	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-neo-classical-theory	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-neutral-drag-instability	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-neutralized-plasma	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-non-circular-cross-section	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-null-point	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-open-magnetic-configuration	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-operating-point	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-operating-space	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-optimized-shear	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-pedestal-physics	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-peeling-mode	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-pfirsch-schulueter-regime	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-pinch-effect	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-plasma-chemistry	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-plasma-diffusion-and-mobility	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-plasma-geometry	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-plasma-neutrality-and-debye-shield	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-plasma-oscillation	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-plasma-parameters	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-plasma-pressure	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-plasma-profiles	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-plasma-purity	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-plasma-radiation	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-plasma-shock-wave	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-plasma-volume	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-plasma-wave	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-plasmoid	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-plateau-regions	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-poloidal-beta-beta-poloidal	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-profile	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-project-sherwood	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-pseudosonic-waves	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-q-limit	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-radiated-power	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-radio-frequency-wave	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-ramp-down-time	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-recombination-coefficient	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-resistive-ballooning-modes	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-ripple	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-screw-instability	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-second-stability	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-second-stability-regime	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-separatrix-points	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-screw-pinch	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-single-fluid-model	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-single-null-equilibrium	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-stochastic-heating	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-super-alfvenic-velocity	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-superthermal-radiation	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-tearing-mode-instability	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-tearing-magnetic-islands	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-thermal-particles	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-transport-matrix-coefficient	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-transport-scaling	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-trapped-particle-instability	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-triple-alpha-process	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-turbulent-heating	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-two-fluid-model-and-multi-fluid-model	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-two-stream-instability	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-universal-alfven-wave-instability	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-velocity-space-instability	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-whistler-wave	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-whistler-wave-instability	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-air-core-transformer	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-auxiliary-heating-power	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-baffle-element	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-balanceburning	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-bittercoil	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-bumper-limiters	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-bumpy-torus	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-bundledivertor	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-carbon-fibre-composites	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-central-solenoid-model-coil	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-compact-device	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-critical-density	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-critical-surface	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-current-limit	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-denseplasma-focus-device	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-divertor-arrangement	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-divertor-configuration	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-doublet-device	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-elomobumpy-torus	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-elomobumpy-torus-s	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-middleplane	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-equatorial-port-extension	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-ergodic-magnetic-divertor	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-fast-wave-antennas	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-fast-wave-current-drive	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-ferromagnetic-inserts	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-field-shaping-coil	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-flat-top-current	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-flat-top-pulse-length	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-fuelling	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-fuel-of-fusion	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-glow-discharge-plasma	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-hard-core-pinch-device	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-helicity-injection-current-drive	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-heliotron	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-high-field-ecrh-launch	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-high-frequency-confinement	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-high-frequency-plug	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-highheatflux	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-high-heat-flux-components	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-ic-antenna	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-induction-coil	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-inductively-driven-plasmas	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-iron-core-transformer	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-joffe-s-bar	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-l-h-threshold-power	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-limiter-system	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-linear-pinch	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-lining	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-lip-seal	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-low-aspect-ratio	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-magnetic-field-component	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-magnetic-pumping	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-magnetic-quench-detection	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-main-transmission-line	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-molecular-ion-injection-concept	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-mathbfnb-3mathbfsn-superconductor	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-mathbfnb-3mathbfal-superconductor	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-nbti-alloy-superconductor	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-negative-ion-neutral-injector	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-neutral-beam	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-ohmic-heating-system	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-operating-margins	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-operating-parameter	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-overturning-moment	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-pancake-winding	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-particle-exhaust	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-pinch-device	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-plasma-heating	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-poloidal-divertor	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-port-axis-direction	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-positive-ion-neutral-injector	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-profile-control	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-pumpeddivertor	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-radio-frequency-and-microwave-plasma-arc	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-residual-resistance-ratio	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-resonant-ions-electrons	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-sawtooth-stabilization	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-septum	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-shockwave-tube	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-shock-wave-heating	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-single-double-null	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-start-up-assist	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-superconducting-coil	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-superconductor-tokamak	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-tokamak-operating-boundaries	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-toroidal-magnetic-cusp	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-toroidal-configuration	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-toroidal-pinch	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-vapour-phase-catalytic-exchange	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-vertical-stability-control	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-wall-etch	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-yin-yang-coil	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-brewster-angle	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-charge-coupled-device	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-dye-laser	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-electrostatic-analyzer	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-fabry-perot-interferometer	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-first-mirrors	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-h-alpha-studies	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-heavy-ion-beam-probe	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-hugill-diagram	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-lost-alpha-detectors	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-mach-zehnder-interferometer	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-magnetic-bottle	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-microwave-interferometer	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-neutral-particle-analyser	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-plasma-diagnostics-technique	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-soft-x-rays-camera	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-survey-spectrometer	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-abnormal-operating-conditions	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-active-environment	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-alpha-power	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-alternativefuels	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-beyond-design-basis-accidents	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-blanket-materials	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-blanket-shield	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-borated-concrete	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-breeder	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-burning-control	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-ceramic-breeders	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-compliant-material	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-conceptual-design-activity	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-cordey-pass	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-down-time	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-d-t-operation	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-duty-factor	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-dwell-time	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-engineering-design-activity	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-fuels	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-fusion-fission-hybrid-reactor	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-fusion-power	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-fusion-product	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-iterunitsofaccount	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-international-tokamak-reactor	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-mockup	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-modelcoil	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-port-plugs	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-remote-handling-class	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-safety-system-support-feature	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-scheduled-down-time	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-shut-down-time	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-steady-state-fusion-reactor	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-support-systems	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-iter-test-blanket-module	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-thermonuclear-reactor	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-thermonuclearreactorblanket	GB/T 4960.9-2013		import_approved_terms	2026-04-14
-wall-loading	GB/T 4960.9-2013		import_approved_terms	2026-04-14
+magnetic-confinement-fusion	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+acoustic-heating	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+adiabatic-compression	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+adiabatic-compression-heating	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+adiabatic-invariant	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+advanced-research-innovation-and-evaluation-study	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+alfven-gap-modes	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+alfven-time	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+alfven-velocity	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+alfven-wave-instability	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+alpha-channel-effect	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+ambipolar-diffusion	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+anomalous-diffusion	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+anomalous-electron-thermal-conduction	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+auxiliary-heating-additional-heating	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+ballooning-instability	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+banana-orbit	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+bernstein-mode	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+beta-value	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+bohm-transport	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+burn-fraction-of-thermonuclear-fuel	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+central-electron-density	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+closed-configuration	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+cold-plasma	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+collective-instabilities	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+collective-phenomena	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+collisional-plasma	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+collisionless-plasma	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+collisionless-shock-wave	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+collisionless-tearing-instability	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+controlled-thermonuclear-fusion	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+core-confinement	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+cusped-geometry	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+cyclotron-instability	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+synchrotron-radiation	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+cyclotron-resonance	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+cyclotron-resonance-heating	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+cylindrical-approximation	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+d-alpha-light	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+d-shaped-plasma	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+degenerate-configuration	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+dd-reaction	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+d-he3-reaction	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+diamagnetic-effect	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+diamagnetic-plasma	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+dispersion-relation	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+displacement-of-plasma	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+disruptive-instability	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+dissociative-recombination	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+divertor-physics	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+double-null-equilibrium	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+drift-cyclotron-resonance-instability	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+drift-dissipative-instability	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+drift-instability	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+drift-kinetic-theory	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+drift-orbits	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+drift-surface	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+driven-current	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+dusty-plasma	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+edge-fluctuations	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+edge-physics	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+edge-plasma	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+eikonal-equation	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+e-layer	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+electromagnetic-load	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+electron-cyclotron-resonance-heating	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+electron-cyclotron-wave	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+electron-plasma-frequency	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+electrostatic-wave	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+elmy-h-mode	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+empirical-scaling-formulas	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+energy-break-even	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+energy-confinement-time-scaling-law	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+energy-loss-time	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+enhanced-particle-modes	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+entropy-trapping	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+equilibration-times	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+fast-alfven-wave	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+finite-heat-conductivity-instability	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+fire-hose-instability	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+fishbone-instability	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+flip-instability	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+frozen-magnetic-field	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+fullwave-theory	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+gas-discharge-plasma	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+gravitational-instability	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+guiding-center	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+gyro-kinetic-theory	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+gyrorelaxation-effect	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+gyrorelaxation-heating	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+h-l-transition	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+hybrid-resonance	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+hydromagnetic-wave	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+ideal-internal-kink-mode	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+impurity-radiation	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+inboard-plasma-shape	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+indentation	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+internal-inductance	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+internal-mode	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+internal-reconnection-event	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+ion-acoustic-wave	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+ion-cyclotron-current-drive	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+ion-cyclotron-emission	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+ion-cyclotron-resonance-heating	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+ion-plasma-frequency	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+ion-wave-instability	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+isotropic-plasma	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+kelvin-helmholtz-instability	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+kinetic-instability	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+kinetic-pressure	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+kinetic-theory	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+kruskal-limit	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+landau-damping	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+langmuir-frequency	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+line-tying	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+locked-mode	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+loss-cone	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+loss-cone-instability	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+low-beta-plasma	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+low-field-side	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+low-temperature-plasma	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+macroinstability-macroscopic-instability	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+magnetic-island	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+magnetic-mach-number	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+magnetic-mirror-configuration	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+magnetic-moment	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+magnetic-viscosity	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+magneto-acoustic-cyclotron-instability	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+magnetohydrodynamic-shock-wave	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+magnetohydrodynamic-turbulence	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+magnetosonic-waves	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+plasma-major-radius	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+magnetohydrodynamic-instability	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+microinstabilities-microscopic-instability	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+minimum-average-b-configuration	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+minimum-b-configuration	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+mirror-instability	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+mirror-ratio	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+mode-number	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+monster-sawteeth	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+multifaced-asymmetric-radiation-from-the-edge	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+multipole-geometry-configuration	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+negative-mass-instability	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+neoclassical-tearing-mode	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+neo-classical-theory	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+neoclassical-transport	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+neutral-drag-instability	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+neutralized-plasma	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+non-circular-cross-section	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+null-point	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+open-magnetic-configuration	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+operating-point	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+operating-space	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+optimized-shear	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+passing-particle	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+pedestal-physics	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+peeling-mode	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+pfirsch-schulueter-regime	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+pinch-effect	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+plasma-chemistry	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+plasma-diffusion-and-mobility	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+plasma-geometry	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+plasma-neutrality-and-debye-shield	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+plasma-oscillation	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+plasma-parameters	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+plasma-pressure	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+plasma-profiles	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+plasma-purity	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+plasma-radiation	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+plasma-shock-wave	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+plasma-volume	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+plasma-wave	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+plasmoid	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+plateau-regime	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+poloidal-beta-beta-poloidal	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+profile	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+project-sherwood	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+pseudosonic-waves	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+q-limit	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+radiated-power	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+radio-frequency-wave	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+ramp-down-time	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+recombination-coefficient	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+resistive-ballooning-modes	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+ripple	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+sawtooth	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+screw-instability	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+second-stability	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+second-stability-regime	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+separatrix-points	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+confinement-scaling	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+screw-pinch	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+single-fluid-model	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+single-null-equilibrium	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+stochastic-heating	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+super-alfvenic-velocity	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+superthermal-radiation	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+toroidal-alfven-eigenmode	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+tearing-mode-instability	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+tearing-magnetic-islands	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+thermal-particles	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+thermonuclear-fusion	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+transport-matrix-coefficient	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+transport-scaling	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+trapped-particle-instability	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+triple-alpha-process	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+turbulent-heating	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+two-fluid-model-and-multi-fluid-model	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+two-stream-instability	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+universal-alfven-wave-instability	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+velocity-space-instability	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+loop-voltage	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+whistler-wave	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+whistler-wave-instability	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+air-core-transformer	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+auxiliary-heating-power	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+baffle-element	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+balance-burning	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+bitter-coil	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+bumper-limiters	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+bumpy-torus	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+bundle-divertor	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+carbon-fiber-composite	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+central-solenoid-model-coil	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+compact-device	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+critical-density	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+critical-surface	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+current-limit	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+dense-plasma-focus-device	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+divertor-arrangement	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+divertor-configuration	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+doublet-device	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+elmo-bumpy-torus	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+elmo-bumpy-torus-s	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+middleplane	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+equatorial-port-extension	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+ergodic-magnetic-divertor	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+error-field	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+fast-wave-antennas	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+fast-wave-current-drive	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+ferromagnetic-inserts	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+field-shaping-coil	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+flat-top-current	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+flat-top-pulse-length	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+fuelling	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+fuel-of-fusion	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+glow-discharge-plasma	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+hard-core-pinch-device	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+helicity-injection-current-drive	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+heliotron	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+high-field-ecrh-launch	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+high-frequency-confinement	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+high-frequency-plug	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+high-heat-flux	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+high-heat-flux-components	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+icrf-antenna	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+induction-coil	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+inductively-driven-plasmas	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+iron-core-transformer	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+joffe-s-bar	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+l-h-threshold-power	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+limiter-system	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+linear-pinch	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+lining	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+lip-seal	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+low-aspect-ratio	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+magnetic-field-component	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+mirror-machine	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+magnetic-pumping	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+magnetic-quench-detection	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+main-transmission-line	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+molecular-ion-injection-concept	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+nb-sn-superconductor	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+nb-al-superconductor	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+nbti-alloy-superconductor	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+negative-ion-neutral-injector	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+neutral-beam	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+neutral-beam-injection	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+ohmic-heating-system	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+operating-margins	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+operating-parameter	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+overturning-moment	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+pancake-winding	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+particle-exhaust	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+pinch-device	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+plasma-heating	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+poloidal-divertor	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+port-axis-direction	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+positive-ion-neutral-injector	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+profile-control	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+pumped-divertor	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+radio-frequency-and-microwave-plasma-arc	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+residual-resistance-ratio	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+resonant-ions-electrons	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+reversed-field-pinch	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+sawtooth-stabilization	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+septum	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+shockwave-tube	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+shock-wave-heating	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+single-double-null	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+start-up-assist	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+superconducting-coil	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+superconductor-tokamak	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+tokamak-operating-boundaries	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+toroidal-magnetic-cusp	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+toroidal-configuration	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+toroidal-pinch	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+vapour-phase-catalytic-exchange	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+vertical-stability-control	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+wall-etch	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+radio-frequency-heating	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+yin-yang-coil	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+brewster-angle	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+charge-coupled-device	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+dye-laser	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+electrostatic-analyzer	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+fabry-perot-interferometer	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+first-mirrors	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+h-alpha-studies	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+heavy-ion-beam-probe	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+hugill-diagram	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+lost-alpha-detectors	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+mach-zehnder-interferometer	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+magnetic-bottle	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+magnetic-probe	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+microwave-interferometer	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+neutral-particle-analyser	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+plasma-diagnostics-technique	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+rogowski-coil	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+soft-x-rays-camera	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+survey-spectrometer	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+off-normal-event	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+abnormal-operating-conditions	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+active-environment	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+alpha-power	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+alternative-fuels	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+beyond-design-basis-accidents	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+blanket-materials	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+blanket-shield	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+borated-concrete	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+breeder	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+burn-control	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+ceramic-breeders	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+compliant-material	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+conceptual-design-activity	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+cordey-pass	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+demo	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+down-time	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+d-t-operation	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+duty-factor	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+dwell-time	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+engineering-design-activity	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+fuels	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+fusion-fission-hybrid-reactor	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+fusion-power	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+fusion-product	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+iter-units-of-account	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+international-tokamak-reactor	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+mockup	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+model-coil	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+port-plugs	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+remote-handling-class	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+safety-system-support-feature	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+scheduled-down-time	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+shut-down-time	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+steady-state-fusion-reactor	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+support-systems	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+iter-test-blanket-module	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+thermonuclear-reactor	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+thermonuclear-reactor-blanket	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+tritium-processing	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
+wall-loading	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14

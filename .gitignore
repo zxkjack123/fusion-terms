@@ -80,3 +80,4 @@ sources/local_paths.txt
 .github/reviews/*.bak
 .github/reviews/**/*.tmp
 .github/reviews/**/*.bak
+artifacts/terminology_sources/IAEA_Safety_Glossary_2018.pdf
