@@ -136,7 +136,7 @@
 
 ### Phase 2: 🟡 CI + 验证器 + 防御性检查
 
-#### Task 2.1: CI 门禁加固
+#### ✅ Task 2.1: CI 门禁加固
 
 - **目标**：将 CI 门禁提升到与当前代码质量匹配的水平
 - **修改内容**：
@@ -155,7 +155,7 @@
   - ✅ 本地三项检查全部通过
 - **潜在风险**：`ruff format` 若有文件未格式化会阻塞 CI → 本地先 `ruff format --check .` 验证
 
-#### Task 2.2: `definitions.tsv` 验证补全
+#### ✅ Task 2.2: `definitions.tsv` 验证补全
 
 - **目标**：补齐 definitions 验证：4 列 schema、`(concept_id, lang)` 唯一性、`source` 非空
 - **修改内容**：
@@ -174,7 +174,7 @@
   - ✅ 当前 registry 通过验证
 - **潜在风险**：若个别定义行因导入时遗漏 source 列而只有 3 列 → 已验证全 1550 行均为 4 列
 
-#### Task 2.3: 新增 definitions 验证测试
+#### ✅ Task 2.3: 新增 definitions 验证测试
 
 - **目标**：为 Task 2.2 新增的验证逻辑添加回归测试
 - **修改内容**：
@@ -191,7 +191,7 @@
   - ✅ 现有 validator 测试不受影响
 - **潜在风险**：测试需使用 `tmp_path` 构造临时 registry — 参照现有 `test_registry_validator.py` 中的 `_run_validate` 辅助函数模式
 
-#### Task 2.4: 导出函数防御性冲突检查
+#### ✅ Task 2.4: 导出函数防御性冲突检查
 
 - **目标**：在 `_collect_substitutions()` 和 `export_query_expansions()` 中添加跨 concept 冲突检查
 - **修改内容**：

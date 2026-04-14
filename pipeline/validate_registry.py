@@ -75,9 +75,7 @@ def validate_registry(terms_dir: Path) -> None:
             f"registry validation failed: missing or empty {concepts_path}"
         )
     if not aliases_rows:
-        raise SystemExit(
-            f"registry validation failed: missing or empty {aliases_path}"
-        )
+        raise SystemExit(f"registry validation failed: missing or empty {aliases_path}")
     if not evidence_rows:
         raise SystemExit(
             f"registry validation failed: missing or empty {evidence_path}"
@@ -92,7 +90,11 @@ def validate_registry(terms_dir: Path) -> None:
 
         bad = _control_or_invisible_desc(concept_id)
         if bad:
-            _fail(r.path, r.lineno, f"concept_id contains control/invisible chars: {', '.join(bad)}")
+            _fail(
+                r.path,
+                r.lineno,
+                f"concept_id contains control/invisible chars: {', '.join(bad)}",
+            )
 
         if not CONCEPT_ID_RE.match(concept_id):
             _fail(
@@ -106,7 +108,9 @@ def validate_registry(terms_dir: Path) -> None:
 
         # Validate source column (8th field, index 7) if present.
         source = r.fields[7].strip() if len(r.fields) >= 8 else ""
-        if source and not any(source.startswith(pfx) for pfx in _ALLOWED_SOURCE_PREFIXES if pfx):
+        if source and not any(
+            source.startswith(pfx) for pfx in _ALLOWED_SOURCE_PREFIXES if pfx
+        ):
             warnings.warn(
                 f"validate_registry: unknown source {source!r} at "
                 f"{r.path}:{r.lineno} (allowed prefixes: {_ALLOWED_SOURCE_PREFIXES})",
@@ -129,21 +133,43 @@ def validate_registry(terms_dir: Path) -> None:
                 r.lineno,
                 "expected at least 4 columns: alias, concept_id, lang, kind",
             )
-        alias, concept_id, lang, kind = r.fields[0], r.fields[1], r.fields[2], r.fields[3]
+        alias, concept_id, lang, kind = (
+            r.fields[0],
+            r.fields[1],
+            r.fields[2],
+            r.fields[3],
+        )
 
-        for label, value in [("alias", alias), ("concept_id", concept_id), ("lang", lang), ("kind", kind)]:
+        for label, value in [
+            ("alias", alias),
+            ("concept_id", concept_id),
+            ("lang", lang),
+            ("kind", kind),
+        ]:
             bad = _control_or_invisible_desc(value)
             if bad:
-                _fail(r.path, r.lineno, f"{label} contains control/invisible chars: {', '.join(bad)}")
+                _fail(
+                    r.path,
+                    r.lineno,
+                    f"{label} contains control/invisible chars: {', '.join(bad)}",
+                )
 
         if not alias:
             _fail(r.path, r.lineno, "alias is empty")
         if concept_id not in concept_ids:
             _fail(r.path, r.lineno, f"unknown concept_id {concept_id!r}")
         if lang not in allowed_langs:
-            _fail(r.path, r.lineno, f"invalid lang {lang!r} (allowed: {sorted(allowed_langs)})")
+            _fail(
+                r.path,
+                r.lineno,
+                f"invalid lang {lang!r} (allowed: {sorted(allowed_langs)})",
+            )
         if kind not in allowed_kinds:
-            _fail(r.path, r.lineno, f"invalid kind {kind!r} (allowed: {sorted(allowed_kinds)})")
+            _fail(
+                r.path,
+                r.lineno,
+                f"invalid kind {kind!r} (allowed: {sorted(allowed_kinds)})",
+            )
 
         if kind in {"forbidden", "deprecated"}:
             forbidden_or_deprecated.add(alias)
@@ -162,7 +188,11 @@ def validate_registry(terms_dir: Path) -> None:
     missing_preferred = sorted(concept_ids - concepts_with_preferred)
     if missing_preferred:
         preview = ", ".join(repr(x) for x in missing_preferred[:10])
-        more = "" if len(missing_preferred) <= 10 else f" ... (+{len(missing_preferred) - 10} more)"
+        more = (
+            ""
+            if len(missing_preferred) <= 10
+            else f" ... (+{len(missing_preferred) - 10} more)"
+        )
         _fail(
             aliases_path,
             1,
@@ -179,7 +209,11 @@ def validate_registry(terms_dir: Path) -> None:
         for label, value in [("concept_id", concept_id), ("source", source)]:
             bad = _control_or_invisible_desc(value)
             if bad:
-                _fail(r.path, r.lineno, f"{label} contains control/invisible chars: {', '.join(bad)}")
+                _fail(
+                    r.path,
+                    r.lineno,
+                    f"{label} contains control/invisible chars: {', '.join(bad)}",
+                )
 
         if concept_id not in concept_ids:
             _fail(r.path, r.lineno, f"unknown concept_id {concept_id!r}")
@@ -196,7 +230,11 @@ def validate_registry(terms_dir: Path) -> None:
     missing_evidence = sorted(concept_ids - evidence_concept_ids)
     if missing_evidence:
         preview = ", ".join(repr(x) for x in missing_evidence[:10])
-        more = "" if len(missing_evidence) <= 10 else f" ... (+{len(missing_evidence) - 10} more)"
+        more = (
+            ""
+            if len(missing_evidence) <= 10
+            else f" ... (+{len(missing_evidence) - 10} more)"
+        )
         _fail(
             evidence_path,
             1,
@@ -208,16 +246,35 @@ def validate_registry(terms_dir: Path) -> None:
     definitions_rows = _iter_tsv_rows(definitions_path)
     allowed_def_langs = {"zh", "en"}
     definitions_count = 0
+    seen_defs: set[tuple[str, str]] = set()
     for r in definitions_rows:
-        if len(r.fields) < 3:
-            _fail(r.path, r.lineno, "expected at least 3 columns: concept_id, lang, definition")
+        if len(r.fields) != 4:
+            _fail(
+                r.path,
+                r.lineno,
+                f"expected 4 columns: concept_id, lang, definition, source (got {len(r.fields)})",
+            )
         cid, lang, defn = r.fields[0], r.fields[1], r.fields[2]
+        source = r.fields[3] if len(r.fields) > 3 else ""
         if cid not in concept_ids:
             _fail(r.path, r.lineno, f"unknown concept_id {cid!r}")
         if lang not in allowed_def_langs:
-            _fail(r.path, r.lineno, f"invalid lang {lang!r} (allowed: {sorted(allowed_def_langs)})")
+            _fail(
+                r.path,
+                r.lineno,
+                f"invalid lang {lang!r} (allowed: {sorted(allowed_def_langs)})",
+            )
         if not defn:
             _fail(r.path, r.lineno, "definition is empty")
+        if not source.strip():
+            _fail(r.path, r.lineno, "source is empty")
+        if (cid, lang) in seen_defs:
+            _fail(
+                r.path,
+                r.lineno,
+                f"duplicate definition for ({cid!r}, {lang!r})",
+            )
+        seen_defs.add((cid, lang))
         definitions_count += 1
 
     # ---- bridge check: forbidden/deprecated shouldn't leak into IME allowlists ----

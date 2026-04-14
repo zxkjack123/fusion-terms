@@ -86,6 +86,12 @@ def _collect_substitutions(rows: list[dict[str, str]]) -> list[dict[str, str]]:
             by_alias[alias] = r
             continue
 
+        if existing.get("concept_id", "") != r.get("concept_id", ""):
+            raise SystemExit(
+                f"export_registry failed: alias {alias!r} is deprecated/forbidden in "
+                f"multiple concepts: {existing['concept_id']!r} and {r['concept_id']!r}"
+            )
+
         sev_new = _KIND_SEVERITY.get(kind, 0)
         sev_old = _KIND_SEVERITY.get(existing.get("kind", "deprecated"), 0)
         if sev_new > sev_old:
@@ -101,7 +107,9 @@ def _collect_substitutions(rows: list[dict[str, str]]) -> list[dict[str, str]]:
         concept_id = r.get("concept_id", "")
         lang = r.get("lang", "")
         status = r.get("kind", "")
-        note = (r.get("comment", "") or "").replace("\t", " ").replace("\n", " ").strip()
+        note = (
+            (r.get("comment", "") or "").replace("\t", " ").replace("\n", " ").strip()
+        )
 
         pref_row = choose_preferred(concept_id=concept_id, lang=lang)
         preferred = pref_row.get("alias", "")
@@ -285,6 +293,11 @@ def export_query_expansions(*, terms_dir: Path, out_dir: Path) -> dict[str, obje
         concept_id = r["concept_id"]
         kind = r["kind"]
 
+        if alias in alias_index and alias_index[alias] != concept_id:
+            raise SystemExit(
+                f"export_registry failed: alias {alias!r} maps to multiple concepts: "
+                f"{alias_index[alias]!r} and {concept_id!r}"
+            )
         alias_index[alias] = concept_id
 
         buckets = concept_terms.setdefault(
@@ -449,11 +462,11 @@ def export_substitutions_tsv(*, terms_dir: Path, out_dir: Path) -> dict[str, obj
 
     subs = _collect_substitutions(rows)
     for r in subs:
-        alias = _sanitize_tsv_field(r['alias'])
-        preferred = _sanitize_tsv_field(r['preferred'])
-        status = _sanitize_tsv_field(r['status'])
-        lang = _sanitize_tsv_field(r['lang'])
-        note = _sanitize_tsv_field(r['note'])
+        alias = _sanitize_tsv_field(r["alias"])
+        preferred = _sanitize_tsv_field(r["preferred"])
+        status = _sanitize_tsv_field(r["status"])
+        lang = _sanitize_tsv_field(r["lang"])
+        note = _sanitize_tsv_field(r["note"])
         lines.append(f"{alias}\t{preferred}\t{status}\t{lang}\t{note}")
 
     out_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
@@ -552,9 +565,7 @@ def export_translation_dict(
 
     en2zh_short: dict[str, dict[str, str]] = {}
     for key in list(en2zh.keys()):
-        if key.isascii() and (
-            len(key) < min_en_key_len or key in en2zh_abbr_keys
-        ):
+        if key.isascii() and (len(key) < min_en_key_len or key in en2zh_abbr_keys):
             en2zh_short[key] = {
                 "zh": en2zh.pop(key),
                 "concept_id": en2zh_concept[key],
@@ -668,7 +679,9 @@ def main() -> None:
     if do_subs:
         manifest.update(export_substitutions_tsv(terms_dir=terms_dir, out_dir=out_dir))
     if do_vale_sub:
-        manifest.update(export_vale_substitute_yaml(terms_dir=terms_dir, out_dir=out_dir))
+        manifest.update(
+            export_vale_substitute_yaml(terms_dir=terms_dir, out_dir=out_dir)
+        )
     if do_translation:
         raw_val = cfg.get("export", {}).get("min_en_key_len", 3)
         try:
