@@ -183,7 +183,7 @@
   - ✅ 术语与定义正确对应（抽查）
 - **潜在风险**：PDF 排版复杂（双栏、交叉引用、*see* 标注）— 需要多轮正则迭代
 
-#### Task 3.3: IAEA Glossary → registry 候选 diff 报告
+#### ✅ Task 3.3: IAEA Glossary → registry 候选 diff 报告
 
 - **目标**：与 Task 2.2 同类，比对 IAEA 术语与现有 registry
 - **修改内容**：
