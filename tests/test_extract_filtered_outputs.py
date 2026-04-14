@@ -34,8 +34,14 @@ def test_extract_writes_filtered_outputs_and_respects_min_count(tmp_path: Path) 
     )
     assert p.returncode == 0, f"stdout:\n{p.stdout}\nstderr:\n{p.stderr}"
 
-    raw_en = (out_dir / "candidates_en.tsv").read_text("utf-8", errors="ignore").splitlines()
-    filt_en = (out_dir / "candidates_en.filtered.tsv").read_text("utf-8", errors="ignore").splitlines()
+    raw_en = (
+        (out_dir / "candidates_en.tsv").read_text("utf-8", errors="ignore").splitlines()
+    )
+    filt_en = (
+        (out_dir / "candidates_en.filtered.tsv")
+        .read_text("utf-8", errors="ignore")
+        .splitlines()
+    )
 
     assert raw_en[0].startswith("term\tcount\t")
     assert filt_en[0].startswith("term\tcount\t")
@@ -77,7 +83,9 @@ def test_extract_filtered_outputs_respects_stopwords(tmp_path: Path) -> None:
     )
     assert p.returncode == 0, f"stdout:\n{p.stdout}\nstderr:\n{p.stderr}"
 
-    filt_en = (out_dir / "candidates_en.filtered.tsv").read_text("utf-8", errors="ignore")
+    filt_en = (out_dir / "candidates_en.filtered.tsv").read_text(
+        "utf-8", errors="ignore"
+    )
     assert "ITER\t" not in filt_en
 
 
@@ -88,10 +96,7 @@ def test_extract_filtered_outputs_respects_zh_stopwords(tmp_path: Path) -> None:
     corpus_root.mkdir(parents=True, exist_ok=True)
     (corpus_root / "a.md").write_text(
         # Put stopwords on their own so the regex extracts them exactly.
-        "其中。\n"
-        "例如：等离子体电流。\n"
-        "所示。\n"
-        "托卡马克装置。\n",
+        "其中。\n例如：等离子体电流。\n所示。\n托卡马克装置。\n",
         encoding="utf-8",
     )
     (corpus_root / "b.md").write_text(

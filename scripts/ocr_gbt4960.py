@@ -14,6 +14,7 @@ Usage:
     python3 scripts/ocr_gbt4960.py --ocr-only    # OCR only (save raw text)
     python3 scripts/ocr_gbt4960.py --parse-only   # Parse existing OCR text
 """
+
 from __future__ import annotations
 
 import argparse
@@ -33,7 +34,9 @@ def _check_deps() -> None:
     """Check that required tools are installed."""
     missing = []
     if not shutil.which("tesseract"):
-        missing.append("tesseract-ocr (sudo apt install tesseract-ocr tesseract-ocr-chi-sim)")
+        missing.append(
+            "tesseract-ocr (sudo apt install tesseract-ocr tesseract-ocr-chi-sim)"
+        )
     if not shutil.which("pdftoppm"):
         missing.append("poppler-utils (sudo apt install poppler-utils)")
 
@@ -46,7 +49,9 @@ def _check_deps() -> None:
     # Check chi_sim language pack
     result = subprocess.run(
         ["tesseract", "--list-langs"],
-        capture_output=True, text=True, timeout=10,
+        capture_output=True,
+        text=True,
+        timeout=10,
     )
     if "chi_sim" not in result.stdout:
         print(
@@ -72,7 +77,8 @@ def ocr_pdf(pdf_path: Path, output_path: Path) -> str:
         print("  Converting PDF to images ...")
         subprocess.run(
             ["pdftoppm", "-png", "-r", "300", str(pdf_path), str(tmp / "page")],
-            check=True, timeout=600,
+            check=True,
+            timeout=600,
         )
         pages = sorted(tmp.glob("page-*.png"))
         print(f"  {len(pages)} page images generated")
@@ -82,7 +88,9 @@ def ocr_pdf(pdf_path: Path, output_path: Path) -> str:
                 print(f"  OCR page {i}/{len(pages)} ...")
             result = subprocess.run(
                 ["tesseract", str(page_img), "stdout", "-l", "chi_sim+eng"],
-                capture_output=True, text=True, timeout=120,
+                capture_output=True,
+                text=True,
+                timeout=120,
             )
             all_text.append(f"--- PAGE {i} ---\n{result.stdout}")
 
@@ -138,7 +146,12 @@ def parse_terms(ocr_text: str) -> list[dict[str, str]]:
             # Collect definition from subsequent indented lines
             j = i + 1
             def_lines = []
-            while j < len(lines) and lines[j].strip() and not num_pattern.match(lines[j].strip()) and not inline_pattern.match(lines[j].strip()):
+            while (
+                j < len(lines)
+                and lines[j].strip()
+                and not num_pattern.match(lines[j].strip())
+                and not inline_pattern.match(lines[j].strip())
+            ):
                 def_lines.append(lines[j].strip())
                 j += 1
             entry["definition"] = " ".join(def_lines)
@@ -172,19 +185,26 @@ def parse_terms(ocr_text: str) -> list[dict[str, str]]:
                     j += 1
             # Collect definition
             def_lines = []
-            while j < len(lines) and lines[j].strip() and not num_pattern.match(lines[j].strip()) and not inline_pattern.match(lines[j].strip()):
+            while (
+                j < len(lines)
+                and lines[j].strip()
+                and not num_pattern.match(lines[j].strip())
+                and not inline_pattern.match(lines[j].strip())
+            ):
                 def_lines.append(lines[j].strip())
                 j += 1
             definition = " ".join(def_lines)
 
             if zh or en:
-                entries.append({
-                    "term_id": term_id,
-                    "zh": zh,
-                    "en": en,
-                    "definition": definition,
-                    "status": "draft",
-                })
+                entries.append(
+                    {
+                        "term_id": term_id,
+                        "zh": zh,
+                        "en": en,
+                        "definition": definition,
+                        "status": "draft",
+                    }
+                )
             i = j
             continue
 
@@ -211,8 +231,12 @@ def write_terms(entries: list[dict[str, str]], output_path: Path) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--ocr-only", action="store_true", help="Only run OCR, skip parsing")
-    parser.add_argument("--parse-only", action="store_true", help="Only parse existing OCR text")
+    parser.add_argument(
+        "--ocr-only", action="store_true", help="Only run OCR, skip parsing"
+    )
+    parser.add_argument(
+        "--parse-only", action="store_true", help="Only parse existing OCR text"
+    )
     args = parser.parse_args()
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)

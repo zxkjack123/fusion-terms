@@ -258,7 +258,9 @@ def build_acceptance_pack(
     report_lines.append("")
     report_lines.append("## Manual IME trigger checklist (fill in)")
     report_lines.append("")
-    report_lines.append("> Tips: test each term in a real input field after import/deploy; if a term is hard to type, consider adding an alias mapping in your schema/dict.")
+    report_lines.append(
+        "> Tips: test each term in a real input field after import/deploy; if a term is hard to type, consider adding an alias mapping in your schema/dict."
+    )
     report_lines.append("")
 
     must_have_set = set(must_have)
@@ -266,9 +268,7 @@ def build_acceptance_pack(
         mark = "must-have" if t in must_have_set else "extra"
         term_hints = typing_hints.get(t)
         if term_hints:
-            report_lines.append(
-                f"- [ ] {t} ({mark}; hints: {' | '.join(term_hints)})"
-            )
+            report_lines.append(f"- [ ] {t} ({mark}; hints: {' | '.join(term_hints)})")
         else:
             report_lines.append(f"- [ ] {t} ({mark})")
 
@@ -368,7 +368,9 @@ def main() -> None:
         else (out_dir / "ime_acceptance_report.md")
     )
 
-    report_date = str(args.report_date) if args.report_date else date.today().isoformat()
+    report_date = (
+        str(args.report_date) if args.report_date else date.today().isoformat()
+    )
 
     must_have = [str(x) for x in (args.must_have or [])]
     if not must_have:

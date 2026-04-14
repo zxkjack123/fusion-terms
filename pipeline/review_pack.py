@@ -74,9 +74,7 @@ def _resolve_under(base: Path, p: str) -> Path:
     base_r = base.resolve()
     full = (base / pp).resolve()
     if full != base_r and not full.is_relative_to(base_r):
-        raise SystemExit(
-            f"review pack failed: path escapes base directory: {p!r}"
-        )
+        raise SystemExit(f"review pack failed: path escapes base directory: {p!r}")
     return full
 
 
@@ -130,12 +128,7 @@ def _parse_candidates_tsv(path: Path) -> tuple[str, dict[str, TsvRow]]:
 
 def _write_rows(path: Path, header: str, rows: list[TsvRow]) -> None:
     path.write_text(
-        (
-            header
-            + "\n"
-            + "\n".join(r.raw_line for r in rows)
-            + ("\n" if rows else "")
-        ),
+        (header + "\n" + "\n".join(r.raw_line for r in rows) + ("\n" if rows else "")),
         encoding="utf-8",
     )
 
@@ -297,16 +290,14 @@ def main() -> None:
         "--candidates-zh",
         default="candidates_zh.filtered.tsv",
         help=(
-            "Candidates TSV filename/path for zh "
-            "(default: candidates_zh.filtered.tsv)"
+            "Candidates TSV filename/path for zh (default: candidates_zh.filtered.tsv)"
         ),
     )
     parser.add_argument(
         "--candidates-en",
         default="candidates_en.filtered.tsv",
         help=(
-            "Candidates TSV filename/path for en "
-            "(default: candidates_en.filtered.tsv)"
+            "Candidates TSV filename/path for en (default: candidates_en.filtered.tsv)"
         ),
     )
     parser.add_argument(
@@ -337,8 +328,7 @@ def main() -> None:
         "--terms-dir",
         default=str(_REPO_ROOT / "terms"),
         help=(
-            "Directory containing allow/deny/synonyms "
-            "(used by --exclude-known-terms)"
+            "Directory containing allow/deny/synonyms (used by --exclude-known-terms)"
         ),
     )
 

@@ -24,9 +24,7 @@ CAPTION_EN_RE = re.compile(
     re.IGNORECASE,
 )
 CAPTION_ZH_RE = re.compile(r"^\s*[图表]\s*\d+(?:\.\d+)*\s*[:.：]")
-TABLE_SEP_RE = re.compile(
-    r"^\s*\|?\s*:?-{2,}:?\s*(?:\|\s*:?-{2,}:?\s*)+\|?\s*$"
-)
+TABLE_SEP_RE = re.compile(r"^\s*\|?\s*:?-{2,}:?\s*(?:\|\s*:?-{2,}:?\s*)+\|?\s*$")
 
 MATH_FENCE_DOLLAR_RE = re.compile(r"^\s*\$\$\s*$")
 MATH_FENCE_BRACKET_OPEN_RE = re.compile(r"^\s*\\\[\s*$")

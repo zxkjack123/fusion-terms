@@ -27,7 +27,9 @@ def _sha256_file(path: Path) -> str:
 def _safe_relpath_under_root(root: Path, rel: str) -> Path:
     rel_path = Path(rel)
     if rel_path.is_absolute():
-        raise SystemExit(f"contract verify failed: sha256 path must be relative, got: {rel!r}")
+        raise SystemExit(
+            f"contract verify failed: sha256 path must be relative, got: {rel!r}"
+        )
 
     root_r = root.resolve()
     full = (root / rel_path).resolve()
@@ -78,9 +80,13 @@ def _load_domain_terms_strict(path: Path) -> list[str]:
     for lineno, raw in enumerate(lines, start=1):
         # Strict: no blank lines, no comments.
         if raw.strip() == "":
-            raise SystemExit(f"contract verify failed: {path}:{lineno}: empty line is not allowed")
+            raise SystemExit(
+                f"contract verify failed: {path}:{lineno}: empty line is not allowed"
+            )
         if raw.lstrip().startswith("#"):
-            raise SystemExit(f"contract verify failed: {path}:{lineno}: comments are not allowed")
+            raise SystemExit(
+                f"contract verify failed: {path}:{lineno}: comments are not allowed"
+            )
 
         # Preserve original spacing for better error messages.
         if raw != raw.strip():
@@ -126,12 +132,18 @@ def verify_release_contract(
     try:
         data = json.loads(manifest_path.read_text("utf-8"))
     except UnicodeDecodeError as e:
-        raise SystemExit(f"contract verify failed: {manifest_path} is not valid UTF-8 ({e})") from e
+        raise SystemExit(
+            f"contract verify failed: {manifest_path} is not valid UTF-8 ({e})"
+        ) from e
     except json.JSONDecodeError as e:
-        raise SystemExit(f"contract verify failed: invalid JSON manifest: {manifest_path} ({e})") from e
+        raise SystemExit(
+            f"contract verify failed: invalid JSON manifest: {manifest_path} ({e})"
+        ) from e
 
     if not isinstance(data, dict):
-        raise SystemExit(f"contract verify failed: manifest must be a JSON object: {manifest_path}")
+        raise SystemExit(
+            f"contract verify failed: manifest must be a JSON object: {manifest_path}"
+        )
 
     required_top = ["version", "commit", "generated_at", "counts", "sha256"]
     missing = [k for k in required_top if k not in data]
@@ -147,11 +159,15 @@ def verify_release_contract(
 
     version = data["version"]
     if not isinstance(version, str) or not version.strip():
-        raise SystemExit("contract verify failed: manifest.version must be a non-empty string")
+        raise SystemExit(
+            "contract verify failed: manifest.version must be a non-empty string"
+        )
 
     commit = data["commit"]
     if not isinstance(commit, str) or not _SHA1_RE.match(commit):
-        raise SystemExit("contract verify failed: manifest.commit must be a 40-hex SHA string")
+        raise SystemExit(
+            "contract verify failed: manifest.commit must be a 40-hex SHA string"
+        )
 
     generated_at_norm = _normalize_generated_at_utc(str(data["generated_at"]))
     # If manifest used +00:00, we still accept it; encourage normalization.
@@ -164,7 +180,9 @@ def verify_release_contract(
 
     for k in ["total", "zh", "en"]:
         if k not in counts or not isinstance(counts[k], int):
-            raise SystemExit(f"contract verify failed: manifest.counts.{k} must be an int")
+            raise SystemExit(
+                f"contract verify failed: manifest.counts.{k} must be an int"
+            )
 
     # Recompute counts from domain_terms.txt using the same zh heuristic as build pipeline.
     zh = [t for t in terms if any("\u4e00" <= ch <= "\u9fff" for ch in t)]
@@ -190,15 +208,21 @@ def verify_release_contract(
     # Verify all listed hashes.
     for rel, expected in sha256.items():
         if not isinstance(rel, str) or not rel:
-            raise SystemExit("contract verify failed: manifest.sha256 keys must be non-empty strings")
-        if not isinstance(expected, str) or not re.match(r"^[0-9a-f]{64}$", expected, re.IGNORECASE):
+            raise SystemExit(
+                "contract verify failed: manifest.sha256 keys must be non-empty strings"
+            )
+        if not isinstance(expected, str) or not re.match(
+            r"^[0-9a-f]{64}$", expected, re.IGNORECASE
+        ):
             raise SystemExit(
                 f"contract verify failed: manifest.sha256[{rel!r}] must be a 64-hex sha256"
             )
 
         full = _safe_relpath_under_root(root, rel)
         if not full.exists():
-            raise SystemExit(f"contract verify failed: sha256 file missing under root: {rel}")
+            raise SystemExit(
+                f"contract verify failed: sha256 file missing under root: {rel}"
+            )
 
         got = _sha256_file(full)
         if got.lower() != expected.lower():

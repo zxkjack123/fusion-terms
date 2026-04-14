@@ -79,9 +79,7 @@ def test_incremental_extract_plus_review_pack_makes_second_review_near_zero(
         ],
         cwd=repo_root,
     )
-    summary1 = json.loads(
-        (out_dir / "review_pack" / "summary.json").read_text("utf-8")
-    )
+    summary1 = json.loads((out_dir / "review_pack" / "summary.json").read_text("utf-8"))
     assert summary1["counts"]["new_en"] > 0
     assert summary1["counts"]["new_zh"] > 0
 
@@ -120,9 +118,7 @@ def test_incremental_extract_plus_review_pack_makes_second_review_near_zero(
         ],
         cwd=repo_root,
     )
-    summary2 = json.loads(
-        (out_dir / "review_pack" / "summary.json").read_text("utf-8")
-    )
+    summary2 = json.loads((out_dir / "review_pack" / "summary.json").read_text("utf-8"))
     assert summary2["counts"]["new_zh"] == 0
     assert summary2["counts"]["removed_zh"] == 0
     assert summary2["counts"]["new_en"] == 0

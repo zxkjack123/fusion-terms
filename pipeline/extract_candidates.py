@@ -161,7 +161,7 @@ def _extract_en_phrases_rake(line: str, *, stopwords: set[str]) -> set[str]:
     for m in PHRASE_WORD_RE.finditer(s):
         # Ignore LaTeX macro names, robust to stray characters between the
         # backslash and the word.
-        if "\\" in s[max(0, m.start() - 2): m.start()]:
+        if "\\" in s[max(0, m.start() - 2) : m.start()]:
             continue
         w = m.group(0).lower()
         if w in LATEX_NOISE_EN_WORDS:
@@ -320,22 +320,12 @@ def _load_cached_results(
 
     can_use_cache = False
     cached_result_path: Path | None = None
-    if (
-        cache_enabled
-        and cached_entry is not None
-        and cache_dir is not None
-    ):
-        if (
-            cached_entry.mtime_ns == st_mtime_ns
-            and cached_entry.size == st_size
-        ):
+    if cache_enabled and cached_entry is not None and cache_dir is not None:
+        if cached_entry.mtime_ns == st_mtime_ns and cached_entry.size == st_size:
             sha_matches = True
             if cached_entry.sha256:
                 try:
-                    sha_matches = (
-                        cached_entry.sha256
-                        == _compute_file_sha256(md_path)
-                    )
+                    sha_matches = cached_entry.sha256 == _compute_file_sha256(md_path)
                 except (FileNotFoundError, OSError) as exc:
                     warnings.warn(
                         f"cache sha256 check failed for {md_key}: {exc}",
@@ -399,16 +389,8 @@ def _save_file_cache(
         "en_counts": dict(file_en_counts),
         "zh_examples": file_zh_examples,
         "en_examples": file_en_examples,
-        "en_phrase_counts": (
-            dict(file_en_phrase_counts)
-            if want_en_phrases
-            else {}
-        ),
-        "en_phrase_examples": (
-            file_en_phrase_examples
-            if want_en_phrases
-            else {}
-        ),
+        "en_phrase_counts": (dict(file_en_phrase_counts) if want_en_phrases else {}),
+        "en_phrase_examples": (file_en_phrase_examples if want_en_phrases else {}),
     }
     _tmp = result_path.with_suffix(f".tmp.{os.getpid()}")
     try:
@@ -448,21 +430,13 @@ def _merge_cached_file_data(
     max_files_per_term: int,
     want_en_phrases: bool,
 ) -> None:
-    file_zh_counts = {
-        k: int(v)
-        for k, v in cached_data.get("zh_counts", {}).items()
-    }
-    file_en_counts = {
-        k: int(v)
-        for k, v in cached_data.get("en_counts", {}).items()
-    }
+    file_zh_counts = {k: int(v) for k, v in cached_data.get("zh_counts", {}).items()}
+    file_en_counts = {k: int(v) for k, v in cached_data.get("en_counts", {}).items()}
     file_zh_examples = {
-        k: list(v)
-        for k, v in cached_data.get("zh_examples", {}).items()
+        k: list(v) for k, v in cached_data.get("zh_examples", {}).items()
     }
     file_en_examples = {
-        k: list(v)
-        for k, v in cached_data.get("en_examples", {}).items()
+        k: list(v) for k, v in cached_data.get("en_examples", {}).items()
     }
 
     zh_counts.update(file_zh_counts)
@@ -495,8 +469,7 @@ def _merge_cached_file_data(
         return
 
     cached_phr_counts = {
-        k: int(v)
-        for k, v in cached_data.get("en_phrase_counts", {}).items()
+        k: int(v) for k, v in cached_data.get("en_phrase_counts", {}).items()
     }
     en_phrase_counts.update(cached_phr_counts)
 
@@ -505,8 +478,7 @@ def _merge_cached_file_data(
             en_phrase_files[phr].append(md_str)
 
     cached_phr_examples = {
-        k: list(v)
-        for k, v in cached_data.get("en_phrase_examples", {}).items()
+        k: list(v) for k, v in cached_data.get("en_phrase_examples", {}).items()
     }
     for phr, ex_list in cached_phr_examples.items():
         if len(en_phrase_examples[phr]) >= max_examples:
@@ -550,14 +522,8 @@ def _load_old_cache_counts(
 
     try:
         old_data = json.loads(old_path.read_text("utf-8"))
-        old_zh_counts = {
-            k: int(v)
-            for k, v in old_data.get("zh_counts", {}).items()
-        }
-        old_en_counts = {
-            k: int(v)
-            for k, v in old_data.get("en_counts", {}).items()
-        }
+        old_zh_counts = {k: int(v) for k, v in old_data.get("zh_counts", {}).items()}
+        old_en_counts = {k: int(v) for k, v in old_data.get("en_counts", {}).items()}
         return old_zh_counts, old_en_counts
     except Exception as e:
         warnings.warn(
@@ -607,7 +573,7 @@ def _process_single_file(
                 # stray/invisible
                 # characters between the backslash and the macro name by
                 # checking a small lookback window.
-                if "\\" in low[max(0, m.start() - 2): m.start()]:
+                if "\\" in low[max(0, m.start() - 2) : m.start()]:
                     continue
                 if w in LATEX_NOISE_EN_WORDS:
                     continue
@@ -889,11 +855,9 @@ def _write_extract_outputs(
     }
 
     if incremental:
+
         def _top_delta(counter: Counter[str], n: int = 200):
-            return [
-                {"term": t, "delta": int(d)}
-                for t, d in counter.most_common(n)
-            ]
+            return [{"term": t, "delta": int(d)} for t, d in counter.most_common(n)]
 
         delta = {
             "source_root": str(source_root),
@@ -1175,9 +1139,7 @@ def extract(
     cache_dir: Path | None,
     exclude_globs: list[str] | None = None,
 ) -> None:
-    zh_re = re.compile(
-        ZH_RE_TEMPLATE.format(min_len=min_zh_len, max_len=max_zh_len)
-    )
+    zh_re = re.compile(ZH_RE_TEMPLATE.format(min_len=min_zh_len, max_len=max_zh_len))
 
     zh_counts: Counter[str] = Counter()
     en_counts: Counter[str] = Counter()
@@ -1338,16 +1300,12 @@ def main() -> None:
     parser.add_argument(
         "--incremental",
         action="store_true",
-        help=(
-            "Incremental: skip unchanged files; writes extract_delta.json"
-        ),
+        help=("Incremental: skip unchanged files; writes extract_delta.json"),
     )
     parser.add_argument(
         "--cache-dir",
         default=None,
-        help=(
-            "Cache dir (default: <out_dir>/.cache/extract_v1 when incremental)"
-        ),
+        help=("Cache dir (default: <out_dir>/.cache/extract_v1 when incremental)"),
     )
 
     # Stage 2.2: filtered candidates for review efficiency
@@ -1408,18 +1366,13 @@ def main() -> None:
         args.out_dir or cfg.get("artifacts", {}).get("out_dir", "artifacts")
     ).expanduser()
 
-    min_zh_len = int(
-        args.min_zh_len or cfg.get("extract", {}).get("min_zh_len", 2)
-    )
-    max_zh_len = int(
-        args.max_zh_len or cfg.get("extract", {}).get("max_zh_len", 8)
-    )
+    min_zh_len = int(args.min_zh_len or cfg.get("extract", {}).get("min_zh_len", 2))
+    max_zh_len = int(args.max_zh_len or cfg.get("extract", {}).get("max_zh_len", 8))
     max_examples = int(
         args.max_examples or cfg.get("extract", {}).get("max_examples", 3)
     )
     max_files_per_term = int(
-        args.max_files_per_term
-        or cfg.get("extract", {}).get("max_files_per_term", 20)
+        args.max_files_per_term or cfg.get("extract", {}).get("max_files_per_term", 20)
     )
 
     def load_stopwords(path_str: str | None) -> set[str] | None:
@@ -1458,9 +1411,7 @@ def main() -> None:
     elif isinstance(cfg_ex, str) and cfg_ex.strip():
         exclude_globs.append(cfg_ex.strip())
 
-    exclude_globs.extend(
-        [str(x) for x in (args.exclude_glob or []) if str(x).strip()]
-    )
+    exclude_globs.extend([str(x) for x in (args.exclude_glob or []) if str(x).strip()])
 
     cache_dir = Path(args.cache_dir).expanduser() if args.cache_dir else None
 

@@ -78,8 +78,8 @@ def test_rime_export_respects_config_dict_name(tmp_path: Path) -> None:
         "\n".join(
             [
                 "[rime]",
-                "dict_name = \"test_dict\"",
-                f"import_script = \"{importer}\"",
+                'dict_name = "test_dict"',
+                f'import_script = "{importer}"',
             ]
         )
         + "\n",
@@ -126,8 +126,8 @@ def test_rime_export_cli_overrides_config(tmp_path: Path) -> None:
         "\n".join(
             [
                 "[rime]",
-                "dict_name = \"test_dict\"",
-                f"import_script = \"{importer}\"",
+                'dict_name = "test_dict"',
+                f'import_script = "{importer}"',
             ]
         )
         + "\n",

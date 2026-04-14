@@ -45,7 +45,17 @@ def test_build_from_repo_terms_is_non_empty_and_token_only(tmp_path: Path) -> No
     assert all((" " not in t and "\t" not in t) for t in terms)
 
     # Spot-check a few high-value seeds.
-    for expected in ["ITER", "EAST", "NBI", "H-mode", "Nb3Sn", "q95", "β_N", "τ_E", "托卡马克"]:
+    for expected in [
+        "ITER",
+        "EAST",
+        "NBI",
+        "H-mode",
+        "Nb3Sn",
+        "q95",
+        "β_N",
+        "τ_E",
+        "托卡马克",
+    ]:
         assert expected in terms
 
     # denylist must take effect if someone accidentally adds noise.

@@ -15,6 +15,7 @@ Output: TSV with columns  term_id  zh  en  abbr  definition  status
 Usage:
     python3 scripts/extract_gbt4960_md.py [--md PATH]
 """
+
 from __future__ import annotations
 
 import argparse
@@ -35,9 +36,9 @@ RE_NUM = re.compile(r"^(?:#\s+)?(\d+)\.\s*(\d+)\.\s*(\d+)$")
 # English portion: starts with lowercase/uppercase ASCII letter
 # Optional abbreviation after semicolon.
 RE_TERM_LINE = re.compile(
-    r"^(.+?)\s+"                       # Chinese part (greedy-lazy up to space before English)
-    r"([A-Za-z][\w\s\-/(),.'·]+)"      # English part
-    r"(?:;\s*([A-Z][A-Za-z0-9\-/]+))?" # optional abbreviation after ;
+    r"^(.+?)\s+"  # Chinese part (greedy-lazy up to space before English)
+    r"([A-Za-z][\w\s\-/(),.'·]+)"  # English part
+    r"(?:;\s*([A-Z][A-Za-z0-9\-/]+))?"  # optional abbreviation after ;
     r"\s*$"
 )
 
@@ -46,13 +47,17 @@ RE_TERM_LINE = re.compile(
 # These fix errors that cannot be handled by generic heuristics.
 # Format: { (term_id): {field: corrected_value, ...} }
 _OCR_CORRECTIONS: dict[str, dict[str, str]] = {
-    "2.1.30":  {"en": "closed (magnetic) configuration"},
-    "2.1.40":  {"en": "controlled thermonuclear fusion"},
-    "2.4.4":   {"en": "\"active\" environment"},
-    "2.4.39":  {"abbr": "FFH; FFHR"},
-    "2.1.56":  {"zh": "氘-氦3反应", "en": "deuterium-helium-3 reaction", "abbr": "D-³He"},
-    "2.1.76":  {"en": "dusty plasma"},
-    "2.1.80":  {"en": "edge plasma"},
+    "2.1.30": {"en": "closed (magnetic) configuration"},
+    "2.1.40": {"en": "controlled thermonuclear fusion"},
+    "2.4.4": {"en": '"active" environment'},
+    "2.4.39": {"abbr": "FFH; FFHR"},
+    "2.1.56": {
+        "zh": "氘-氦3反应",
+        "en": "deuterium-helium-3 reaction",
+        "abbr": "D-³He",
+    },
+    "2.1.76": {"en": "dusty plasma"},
+    "2.1.80": {"en": "edge plasma"},
     "2.1.119": {"en": "H factor"},
     "2.1.128": {"en": "inboard plasma shape"},
     "2.1.161": {"en": "loss cone"},
@@ -61,24 +66,27 @@ _OCR_CORRECTIONS: dict[str, dict[str, str]] = {
     "2.1.187": {"en": "mirror instability"},
     "2.1.193": {"en": "negative mass instability"},
     "2.1.258": {"en": "runaway electrons"},
-    "2.2.4":   {"en": "balance burning"},
-    "2.2.6":   {"en": "Bitter coil"},
-    "2.2.10":  {"en": "bundle divertor"},
-    "2.2.23":  {"en": "dense plasma focus device"},
-    "2.2.30":  {"zh": "Elmo波纹环", "en": "Elmo bumpy torus"},
-    "2.2.31":  {"zh": "Elmo波纹环-S", "en": "Elmo bumpy torus-S"},
-    "2.2.58":  {"en": "high heat flux"},
-    "2.2.83":  {"en": "Nb₃Sn superconductor"},
-    "2.2.84":  {"en": "Nb₃Al superconductor"},
+    "2.2.4": {"en": "balance burning"},
+    "2.2.6": {"en": "Bitter coil"},
+    "2.2.10": {"en": "bundle divertor"},
+    "2.2.23": {"en": "dense plasma focus device"},
+    "2.2.30": {"zh": "Elmo波纹环", "en": "Elmo bumpy torus"},
+    "2.2.31": {"zh": "Elmo波纹环-S", "en": "Elmo bumpy torus-S"},
+    "2.2.58": {"en": "high heat flux"},
+    "2.2.83": {"en": "Nb₃Sn superconductor"},
+    "2.2.84": {"en": "Nb₃Al superconductor"},
     "2.2.110": {"en": "pumped divertor"},
     "2.2.112": {"en": "radiative divertor"},
-    "2.4.6":   {"en": "alternative fuels"},
-    "2.4.37":  {"zh": "燃料", "en": "fuels"},
-    "2.4.43":  {"en": "fusion reactivity"},
-    "2.4.47":  {"en": "International Thermonuclear Experimental Reactor", "abbr": "ITER"},
-    "2.4.48":  {"en": "ITER units of account"},
-    "2.4.51":  {"en": "model coil"},
-    "2.4.68":  {"en": "thermonuclear reactor blanket"},
+    "2.4.6": {"en": "alternative fuels"},
+    "2.4.37": {"zh": "燃料", "en": "fuels"},
+    "2.4.43": {"en": "fusion reactivity"},
+    "2.4.47": {
+        "en": "International Thermonuclear Experimental Reactor",
+        "abbr": "ITER",
+    },
+    "2.4.48": {"en": "ITER units of account"},
+    "2.4.51": {"en": "model coil"},
+    "2.4.68": {"en": "thermonuclear reactor blanket"},
 }
 
 
@@ -279,7 +287,9 @@ def write_tsv(entries: list[dict[str, str]], out_path: Path) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--md", type=Path, default=MD_PATH, help="Path to the converted Markdown file")
+    parser.add_argument(
+        "--md", type=Path, default=MD_PATH, help="Path to the converted Markdown file"
+    )
     parser.add_argument("--out", type=Path, default=OUT_PATH, help="Output TSV path")
     args = parser.parse_args()
 

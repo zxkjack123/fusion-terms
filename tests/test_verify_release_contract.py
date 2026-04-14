@@ -9,7 +9,9 @@ from pipeline.generate_manifest import generate_manifest
 from pipeline.verify_release_contract import verify_release_contract
 
 
-def _write_manifest(root: Path, *, sha_files: list[str], counts_from: str | None = None) -> None:
+def _write_manifest(
+    root: Path, *, sha_files: list[str], counts_from: str | None = None
+) -> None:
     m = generate_manifest(
         root=root,
         version="v2026.02.09",
@@ -45,7 +47,9 @@ def test_verify_release_contract_rejects_whitespace_term(tmp_path: Path) -> None
 
 def test_verify_release_contract_rejects_invisible_control(tmp_path: Path) -> None:
     root = tmp_path
-    (root / "domain_terms.txt").write_text("tokamak\nzero\u200bwidth\n", encoding="utf-8")
+    (root / "domain_terms.txt").write_text(
+        "tokamak\nzero\u200bwidth\n", encoding="utf-8"
+    )
     _write_manifest(root, sha_files=["domain_terms.txt"])
 
     with pytest.raises(SystemExit):
@@ -84,10 +88,15 @@ def test_verify_release_contract_rejects_counts_mismatch(tmp_path: Path) -> None
 
     # force counts from build stats to be wrong
     (root / "domain_terms_build_stats.json").write_text(
-        json.dumps({"counts": {"total": 123, "zh": 1, "en": 1}}, ensure_ascii=False) + "\n",
+        json.dumps({"counts": {"total": 123, "zh": 1, "en": 1}}, ensure_ascii=False)
+        + "\n",
         encoding="utf-8",
     )
-    _write_manifest(root, sha_files=["domain_terms.txt"], counts_from="domain_terms_build_stats.json")
+    _write_manifest(
+        root,
+        sha_files=["domain_terms.txt"],
+        counts_from="domain_terms_build_stats.json",
+    )
 
     with pytest.raises(SystemExit):
         verify_release_contract(root=root)

@@ -24,7 +24,12 @@ def _sha256_file(path: Path) -> str:
 
 def _now_utc_iso8601() -> str:
     # Use seconds precision for stable, human-friendly manifests.
-    return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+    return (
+        datetime.now(timezone.utc)
+        .replace(microsecond=0)
+        .isoformat()
+        .replace("+00:00", "Z")
+    )
 
 
 def _validate_generated_at_utc(s: str) -> str:
@@ -36,19 +41,22 @@ def _validate_generated_at_utc(s: str) -> str:
         try:
             datetime.fromisoformat(s.replace("Z", "+00:00"))
         except ValueError as e:
-            raise SystemExit(f"invalid generated_at (expected UTC ISO8601): {s!r}") from e
+            raise SystemExit(
+                f"invalid generated_at (expected UTC ISO8601): {s!r}"
+            ) from e
         return s
 
     if s.endswith("+00:00"):
         try:
             datetime.fromisoformat(s)
         except ValueError as e:
-            raise SystemExit(f"invalid generated_at (expected UTC ISO8601): {s!r}") from e
+            raise SystemExit(
+                f"invalid generated_at (expected UTC ISO8601): {s!r}"
+            ) from e
         return s.replace("+00:00", "Z")
 
     raise SystemExit(
-        "generated_at must be UTC ISO8601 (end with 'Z' or '+00:00'), "
-        f"got: {s!r}"
+        f"generated_at must be UTC ISO8601 (end with 'Z' or '+00:00'), got: {s!r}"
     )
 
 
@@ -110,7 +118,9 @@ def _counts_from_build_stats(stats_path: Path) -> dict[str, int] | None:
     try:
         data = json.loads(stats_path.read_text("utf-8"))
     except UnicodeDecodeError as e:
-        raise SystemExit(f"failed to read UTF-8 build stats JSON: {stats_path} ({e})") from e
+        raise SystemExit(
+            f"failed to read UTF-8 build stats JSON: {stats_path} ({e})"
+        ) from e
     except json.JSONDecodeError as e:
         raise SystemExit(f"invalid JSON build stats: {stats_path} ({e})") from e
 
@@ -169,7 +179,9 @@ def _counts_from_registry_exports(exports_path: Path) -> dict[str, int] | None:
 def _safe_relpath_under_root(root: Path, rel: str) -> Path:
     rel_path = Path(rel)
     if rel_path.is_absolute():
-        raise SystemExit(f"manifest files must be relative to release root, got absolute: {rel!r}")
+        raise SystemExit(
+            f"manifest files must be relative to release root, got absolute: {rel!r}"
+        )
 
     root_r = root.resolve()
     full = (root / rel_path).resolve()
@@ -266,7 +278,9 @@ def generate_manifest(
         counts = {"total": len(terms), "zh": len(zh), "en": len(en)}
 
     # Optional: carry substitution-related counts into the main manifest for easier downstream QA.
-    reg_counts = _counts_from_registry_exports(root / "artifacts" / "registry_exports.json")
+    reg_counts = _counts_from_registry_exports(
+        root / "artifacts" / "registry_exports.json"
+    )
     if reg_counts:
         # Do not overwrite the core keys; only add extra counters.
         for k, v in reg_counts.items():
@@ -291,10 +305,14 @@ def generate_manifest(
 
 
 def main() -> None:
-    p = argparse.ArgumentParser(description="Generate fusion-terms release manifest JSON")
+    p = argparse.ArgumentParser(
+        description="Generate fusion-terms release manifest JSON"
+    )
     p.add_argument("--root", required=True, help="Release root directory (staging dir)")
     p.add_argument("--version", required=True, help="Release tag (e.g. v2026.02.08)")
-    p.add_argument("--commit", default=None, help="Commit SHA (40-hex). If omitted, read from git.")
+    p.add_argument(
+        "--commit", default=None, help="Commit SHA (40-hex). If omitted, read from git."
+    )
     p.add_argument(
         "--repo-root",
         default=None,
@@ -342,7 +360,8 @@ def main() -> None:
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(
-        json.dumps(manifest.as_dict(), ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+        json.dumps(manifest.as_dict(), ensure_ascii=False, indent=2, sort_keys=True)
+        + "\n",
         encoding="utf-8",
     )
     print(f"wrote {out_path}")

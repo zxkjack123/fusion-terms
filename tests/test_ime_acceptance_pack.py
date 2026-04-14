@@ -63,7 +63,9 @@ def test_ime_acceptance_pack_detects_missing_and_writes_outputs(tmp_path: Path) 
 
     # The typing terms file should mirror suggested list.
     suggested = pack["suggested_typing_terms"]
-    lines = [ln.strip() for ln in terms_path.read_text("utf-8").splitlines() if ln.strip()]
+    lines = [
+        ln.strip() for ln in terms_path.read_text("utf-8").splitlines() if ln.strip()
+    ]
     assert lines == suggested
 
     # Symbol-heavy terms should carry typing hints (best-effort romanization).
@@ -75,7 +77,11 @@ def test_ime_acceptance_pack_detects_missing_and_writes_outputs(tmp_path: Path) 
     assert any("tau" in h.lower() for h in typing_hints["τ_E"])
 
     # TSV hints file should include at least those hint rows.
-    tsv_lines = [ln.rstrip("\n") for ln in hints_path.read_text("utf-8").splitlines() if ln.strip()]
+    tsv_lines = [
+        ln.rstrip("\n")
+        for ln in hints_path.read_text("utf-8").splitlines()
+        if ln.strip()
+    ]
     assert tsv_lines[0].split("\t")[:2] == ["term", "hints"]
     assert any(ln.startswith("β_N\t") and "beta" in ln.lower() for ln in tsv_lines[1:])
     assert any(ln.startswith("τ_E\t") and "tau" in ln.lower() for ln in tsv_lines[1:])

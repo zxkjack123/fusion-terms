@@ -1,4 +1,5 @@
 """Test scripts/import_approved_terms.py with mock entries."""
+
 from __future__ import annotations
 
 import subprocess
@@ -70,23 +71,34 @@ def mock_diff(tmp_path: Path):
 def _run_import(args: list[str], cwd: Path) -> subprocess.CompletedProcess:
     return subprocess.run(
         ["python3", str(SCRIPT)] + args,
-        capture_output=True, text=True, cwd=str(cwd),
+        capture_output=True,
+        text=True,
+        cwd=str(cwd),
     )
 
 
 def _data_lines(path: Path) -> list[str]:
-    return [ln for ln in path.read_text("utf-8").splitlines()
-            if ln.strip() and not ln.lstrip().startswith("#")]
+    return [
+        ln
+        for ln in path.read_text("utf-8").splitlines()
+        if ln.strip() and not ln.lstrip().startswith("#")
+    ]
 
 
 def test_import_dry_run(mock_registry: Path, mock_diff: Path):
     """Dry run should report counts but not modify files."""
-    result = _run_import([
-        "--diff", str(mock_diff),
-        "--source", "TEST-source",
-        "--evidence-url", "https://test.example.com",
-        "--dry-run",
-    ], cwd=mock_registry)
+    result = _run_import(
+        [
+            "--diff",
+            str(mock_diff),
+            "--source",
+            "TEST-source",
+            "--evidence-url",
+            "https://test.example.com",
+            "--dry-run",
+        ],
+        cwd=mock_registry,
+    )
     assert result.returncode == 0, result.stderr
     assert "New concepts:" in result.stdout
     assert "3" in result.stdout
@@ -103,11 +115,17 @@ def test_import_appends_approved(mock_registry: Path, mock_diff: Path):
     tokamak is approved but already exists → definition only.
     stellarator is rejected → skipped.
     """
-    result = _run_import([
-        "--diff", str(mock_diff),
-        "--source", "TEST-source",
-        "--evidence-url", "https://test.example.com",
-    ], cwd=mock_registry)
+    result = _run_import(
+        [
+            "--diff",
+            str(mock_diff),
+            "--source",
+            "TEST-source",
+            "--evidence-url",
+            "https://test.example.com",
+        ],
+        cwd=mock_registry,
+    )
     assert result.returncode == 0, result.stderr
 
     reg = mock_registry / "terms" / "registry"
@@ -150,12 +168,18 @@ def test_import_skips_existing_alias(mock_registry: Path, tmp_path: Path):
         encoding="utf-8",
     )
 
-    result = _run_import([
-        "--diff", str(diff_path),
-        "--source", "TEST",
-        "--evidence-url", "test",
-        "--dry-run",
-    ], cwd=mock_registry)
+    result = _run_import(
+        [
+            "--diff",
+            str(diff_path),
+            "--source",
+            "TEST",
+            "--evidence-url",
+            "test",
+            "--dry-run",
+        ],
+        cwd=mock_registry,
+    )
     assert result.returncode == 0, result.stderr
     assert "New concepts:" in result.stdout
     # TOKAMAK has no definition and concept_id exists → skipped
@@ -172,12 +196,18 @@ def test_import_all_with_exists(mock_registry: Path, tmp_path: Path):
         encoding="utf-8",
     )
 
-    result = _run_import([
-        "--diff", str(diff_path),
-        "--source", "TEST",
-        "--evidence-url", "test",
-        "--import-all",
-    ], cwd=mock_registry)
+    result = _run_import(
+        [
+            "--diff",
+            str(diff_path),
+            "--source",
+            "TEST",
+            "--evidence-url",
+            "test",
+            "--import-all",
+        ],
+        cwd=mock_registry,
+    )
     assert result.returncode == 0, result.stderr
 
     reg = mock_registry / "terms" / "registry"
@@ -215,13 +245,20 @@ def test_import_conflict_with_map(mock_registry: Path, tmp_path: Path):
     with open(evidence_path, "a", encoding="utf-8") as f:
         f.write("energy-gain\thttps://example.com\t\t\t2026-01-01\n")
 
-    result = _run_import([
-        "--diff", str(diff_path),
-        "--source", "TEST",
-        "--evidence-url", "test",
-        "--import-all",
-        "--conflict-map", "Q=energy-gain",
-    ], cwd=mock_registry)
+    result = _run_import(
+        [
+            "--diff",
+            str(diff_path),
+            "--source",
+            "TEST",
+            "--evidence-url",
+            "test",
+            "--import-all",
+            "--conflict-map",
+            "Q=energy-gain",
+        ],
+        cwd=mock_registry,
+    )
     assert result.returncode == 0, result.stderr
 
     reg = mock_registry / "terms" / "registry"

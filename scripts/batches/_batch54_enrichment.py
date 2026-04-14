@@ -12,7 +12,6 @@ ALIASES_TSV = pathlib.Path("terms/registry/aliases.tsv")
 # (text, concept_id, lang, kind, comment)
 DATA = [
     ("# ==== batch 54: alias enrichment for sparse concepts ====",),
-
     # ── device (11 aliases, 9 concepts) ────────────────────────────
     ("低温真空泵", "cryopump", "zh", "alias", ""),
     ("cryogenic pump", "cryopump", "en", "alias", ""),
@@ -25,7 +24,6 @@ DATA = [
     ("负离子束源", "negative-ion-source", "zh", "alias", ""),
     ("OMEGA laser", "omega", "en", "alias", ""),
     ("OMEGA laser facility", "omega", "en", "alias", ""),
-
     # ── concept (16 aliases, 14 concepts) ──────────────────────────
     ("AC losses", "ac-loss", "en", "alias", "plural form"),
     ("交流功率损耗", "ac-loss", "zh", "alias", ""),
@@ -43,28 +41,21 @@ DATA = [
     ("collisionless Boltzmann equation", "vlasov-equation", "en", "alias", ""),
     ("boronisation", "boronization", "en", "alias", "British spelling"),
     ("siliconisation", "siliconization", "en", "alias", "British spelling"),
-
     # ── method / concept replacement aliases (5 aliases, 5 concepts) ──
     ("functional materials", "functional-material", "en", "alias", "plural"),
     ("planned maintenance", "scheduled-maintenance", "en", "alias", ""),
     ("氚清除", "tritium-removal", "zh", "alias", ""),
-
     # ── organization (1 alias, 1 concept) ──────────────────────────
     ("Tri Alpha Energy", "tae-technologies", "en", "alias", "former company name"),
-
     # ── material (2 aliases, 2 concepts) ───────────────────────────
     ("CLF-1 steel", "clf-1", "en", "alias", ""),
     ("F82H steel", "f82h", "en", "alias", ""),
-
     # ── metric (1 alias, 1 concept) ────────────────────────────────
     ("产气率", "gas-production-rate", "zh", "alias", ""),
-
     # ── system (1 alias, 1 concept) ────────────────────────────────
     ("检修口", "maintenance-port", "zh", "alias", ""),
-
     # ── diagnostic (1 alias, 1 concept) ────────────────────────────
     ("flux loop", "magnetic-flux-loop", "en", "alias", ""),
-
     # ── code (2 aliases, 2 concepts) ───────────────────────────────
     ("COMSOL Multiphysics", "comsol", "en", "alias", "full product name"),
     ("JET Integrated Transport Code", "jintrac", "en", "alias", "full name"),
@@ -76,7 +67,7 @@ def write_tsv_rows(path: pathlib.Path, rows: list[tuple]) -> int:
     n = 0
     with open(path, "a", encoding="utf-8") as f:
         for row in rows:
-            if len(row) == 1:          # comment-only row
+            if len(row) == 1:  # comment-only row
                 f.write(row[0] + "\n")
             else:
                 f.write("\t".join(row) + "\n")

@@ -4,6 +4,7 @@
 Scrapes https://www.iter.org/fusion-glossary for term names and definitions,
 writing to artifacts/terminology_sources/iter_glossary_raw.tsv.
 """
+
 from __future__ import annotations
 
 import html
@@ -18,7 +19,9 @@ OUT_DIR = Path("artifacts/terminology_sources")
 
 
 def _fetch_html(url: str) -> str:
-    req = Request(url, headers={"User-Agent": "fusion-terms/1.0 (terminology research)"})
+    req = Request(
+        url, headers={"User-Agent": "fusion-terms/1.0 (terminology research)"}
+    )
     with urlopen(req, timeout=30) as resp:
         return resp.read().decode("utf-8", errors="replace")
 
@@ -43,7 +46,7 @@ def parse_glossary(raw_html: str) -> list[dict[str, str]]:
     #   - content-rte node n-glossary with the definition
     # We extract them pairwise.
     title_pattern = re.compile(
-        r'accordion-faq__title[^>]*>(.*?)</(?:span|h\d|div)',
+        r"accordion-faq__title[^>]*>(.*?)</(?:span|h\d|div)",
         re.DOTALL,
     )
     # Definition: article with class content-rte node n-glossary
@@ -60,7 +63,7 @@ def parse_glossary(raw_html: str) -> list[dict[str, str]]:
     if len(defs_raw) != len(titles_raw):
         # Fallback: extract from accordion-faq__well blocks
         well_pattern = re.compile(
-            r'accordion-faq__well[^>]*>(.*?)</div>\s*</div>\s*</div>',
+            r"accordion-faq__well[^>]*>(.*?)</div>\s*</div>\s*</div>",
             re.DOTALL,
         )
         defs_raw = well_pattern.findall(raw_html)
@@ -113,7 +116,9 @@ def main() -> None:
     # Check for HTML residue
     html_residue = sum(1 for it in items if "<" in it["term"] or ">" in it["term"])
     if html_residue:
-        print(f"  WARNING: {html_residue} terms contain HTML tag residue", file=sys.stderr)
+        print(
+            f"  WARNING: {html_residue} terms contain HTML tag residue", file=sys.stderr
+        )
 
 
 if __name__ == "__main__":

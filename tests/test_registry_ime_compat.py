@@ -5,7 +5,9 @@ import sys
 from pathlib import Path
 
 
-def _write_registry_tables(terms_dir: Path, *, concepts: str, aliases: str, evidence: str) -> None:
+def _write_registry_tables(
+    terms_dir: Path, *, concepts: str, aliases: str, evidence: str
+) -> None:
     reg = terms_dir / "registry"
     reg.mkdir(parents=True, exist_ok=True)
     (reg / "concepts.tsv").write_text(concepts, encoding="utf-8")
@@ -13,7 +15,9 @@ def _write_registry_tables(terms_dir: Path, *, concepts: str, aliases: str, evid
     (reg / "evidence.tsv").write_text(evidence, encoding="utf-8")
 
 
-def test_ime_wordlist_and_registry_exports_can_coexist_in_same_out_dir(tmp_path: Path) -> None:
+def test_ime_wordlist_and_registry_exports_can_coexist_in_same_out_dir(
+    tmp_path: Path,
+) -> None:
     """Stage 8.4 regression: registry exports must not break IME build workflow.
 
     Acceptance intent:

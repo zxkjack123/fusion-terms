@@ -9,6 +9,7 @@ Usage:
 
 Requires: pdftotext (from poppler-utils).
 """
+
 from __future__ import annotations
 
 import re
@@ -39,8 +40,10 @@ def _extract_text(pdf_path: Path) -> str:
         [
             "pdftotext",
             "-layout",
-            "-f", str(FIRST_PAGE),
-            "-l", str(LAST_PAGE),
+            "-f",
+            str(FIRST_PAGE),
+            "-l",
+            str(LAST_PAGE),
             str(pdf_path),
             "-",
         ],
@@ -77,7 +80,11 @@ def _is_term_line(line: str) -> bool:
         return False
 
     # Skip lines starting with special markers
-    if stripped.startswith("!") or stripped.startswith("(") or stripped.startswith("See "):
+    if (
+        stripped.startswith("!")
+        or stripped.startswith("(")
+        or stripped.startswith("See ")
+    ):
         return False
 
     # Term lines: indented ≤ 12 chars from left, start with a letter
@@ -93,7 +100,19 @@ def _is_term_line(line: str) -> bool:
     # Actual terms start with uppercase or are well-known lowercase terms
     # But many legitimate terms start lowercase... be lenient
     # Heuristic: term lines typically don't start with common sentence starters
-    sentence_starters = {"the ", "a ", "an ", "in ", "by ", "for ", "of ", "to ", "as ", "it ", "is "}
+    sentence_starters = {
+        "the ",
+        "a ",
+        "an ",
+        "in ",
+        "by ",
+        "for ",
+        "of ",
+        "to ",
+        "as ",
+        "it ",
+        "is ",
+    }
     lower_stripped = stripped.lower()
     if any(lower_stripped.startswith(s) for s in sentence_starters):
         return False

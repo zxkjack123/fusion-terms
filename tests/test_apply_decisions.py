@@ -21,9 +21,13 @@ def test_apply_decisions_dry_run_and_apply_is_idempotent(tmp_path: Path) -> None
 
     # Seed minimal repo truth files.
     (terms_dir / "allowlist_en.txt").write_text("# header\nITER\n", encoding="utf-8")
-    (terms_dir / "allowlist_zh.txt").write_text("# header\n托卡马克\n", encoding="utf-8")
+    (terms_dir / "allowlist_zh.txt").write_text(
+        "# header\n托卡马克\n", encoding="utf-8"
+    )
     (terms_dir / "denylist.txt").write_text("# header\nFigure\n", encoding="utf-8")
-    (terms_dir / "synonyms.tsv").write_text("# header\nHmode\tH-mode\ten\n", encoding="utf-8")
+    (terms_dir / "synonyms.tsv").write_text(
+        "# header\nHmode\tH-mode\ten\n", encoding="utf-8"
+    )
 
     decisions = tmp_path / "decisions.tsv"
     decisions.write_text(
@@ -155,10 +159,7 @@ def test_rewrite_auto_inbox_warns_when_non_comment_content_will_be_overwritten(
 ) -> None:
     path = tmp_path / "allowlist_en.txt"
     path.write_text(
-        "# header\n"
-        f"{apply_mod.AUTO_MARKER}\n"
-        "manual_legacy_term\n"
-        "# comment\n",
+        f"# header\n{apply_mod.AUTO_MARKER}\nmanual_legacy_term\n# comment\n",
         encoding="utf-8",
     )
 

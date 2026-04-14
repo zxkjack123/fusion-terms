@@ -138,9 +138,13 @@ def _atomic_write_text(path: Path, content: str) -> None:
             pass
 
 
-def _warn_if_manual_content_after_marker(*, lines: list[str], idx: int, path: Path) -> None:
-    tail = lines[idx + 1:]
-    has_manual_content = any(ln.strip() and not ln.strip().startswith("#") for ln in tail)
+def _warn_if_manual_content_after_marker(
+    *, lines: list[str], idx: int, path: Path
+) -> None:
+    tail = lines[idx + 1 :]
+    has_manual_content = any(
+        ln.strip() and not ln.strip().startswith("#") for ln in tail
+    )
     if has_manual_content:
         warnings.warn(
             f"content after AUTO_MARKER will be overwritten: {path}",
@@ -180,7 +184,9 @@ def _rewrite_auto_inbox_list(path: Path, new_terms: set[str]) -> None:
     _atomic_write_text(path, "\n".join(out) + "\n")
 
 
-def _rewrite_auto_inbox_synonyms(path: Path, new_pairs: dict[str, tuple[str, str]]) -> None:
+def _rewrite_auto_inbox_synonyms(
+    path: Path, new_pairs: dict[str, tuple[str, str]]
+) -> None:
     """Rewrite synonyms AUTO-INBOX block with alias->preferred(+lang) rows."""
 
     lines = _read_file_lines(path)
@@ -213,7 +219,9 @@ def _rewrite_auto_inbox_synonyms(path: Path, new_pairs: dict[str, tuple[str, str
     _atomic_write_text(path, "\n".join(out) + "\n")
 
 
-def apply_decisions(*, terms_dir: Path, decisions_path: Path, apply: bool) -> dict[str, object]:
+def apply_decisions(
+    *, terms_dir: Path, decisions_path: Path, apply: bool
+) -> dict[str, object]:
     decisions = _parse_decisions(decisions_path)
 
     allow_en_path = terms_dir / "allowlist_en.txt"
@@ -266,7 +274,9 @@ def apply_decisions(*, terms_dir: Path, decisions_path: Path, apply: bool) -> di
         "add_allow_en": sorted(add_allow_en),
         "add_allow_zh": sorted(add_allow_zh),
         "add_deny": sorted(add_deny),
-        "add_synonyms": {k: {"preferred": v[0], "lang": v[1]} for k, v in sorted(add_syn.items())},
+        "add_synonyms": {
+            k: {"preferred": v[0], "lang": v[1]} for k, v in sorted(add_syn.items())
+        },
         "applied": bool(apply),
     }
 
@@ -360,12 +370,16 @@ def main() -> None:
     decisions_path = Path(args.decisions)
 
     if not terms_dir.exists():
-        raise SystemExit(f"decisions apply failed: terms dir does not exist: {terms_dir}")
+        raise SystemExit(
+            f"decisions apply failed: terms dir does not exist: {terms_dir}"
+        )
 
     # Ensure artifacts dir exists if user wants to keep decisions there.
     ensure_dir(Path(__file__).resolve().parent.parent / "artifacts")
 
-    summary = apply_decisions(terms_dir=terms_dir, decisions_path=decisions_path, apply=bool(args.apply))
+    summary = apply_decisions(
+        terms_dir=terms_dir, decisions_path=decisions_path, apply=bool(args.apply)
+    )
 
     # Minimal human-friendly output.
     add_allow_en = summary.get("add_allow_en")

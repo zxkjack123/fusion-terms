@@ -5,26 +5,26 @@ import pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent.parent
 CONCEPTS_TSV = ROOT / "terms" / "registry" / "concepts.tsv"
-ALIASES_TSV  = ROOT / "terms" / "registry" / "aliases.tsv"
+ALIASES_TSV = ROOT / "terms" / "registry" / "aliases.tsv"
 EVIDENCE_TSV = ROOT / "terms" / "registry" / "evidence.tsv"
 
 # ── 1. Concepts to REMOVE (duplicates of existing) ──
 # new_concept_id → existing_concept_id they duplicate
 REMOVE_CONCEPTS = {
-    "sawtooth-instability":   "sawtooth",
-    "detachment":             "plasma-detachment",
-    "sheath":                 "debye-sheath",
-    "triple-product":         "fusion-triple-product",
-    "energy-confinement-time":"tau-e",
+    "sawtooth-instability": "sawtooth",
+    "detachment": "plasma-detachment",
+    "sheath": "debye-sheath",
+    "triple-product": "fusion-triple-product",
+    "energy-confinement-time": "tau-e",
 }
 
 # ── 2. Aliases to DROP from kept concepts (cross-concept conflicts) ──
 DROP_ALIASES = {
     # (text, concept_id) pairs to remove
     ("Spitzer resistivity", "plasma-resistivity"),
-    ("斯皮策电阻率",         "plasma-resistivity"),
+    ("斯皮策电阻率", "plasma-resistivity"),
     ("non-inductive current drive", "current-drive"),
-    ("非感应电流驱动",       "current-drive"),
+    ("非感应电流驱动", "current-drive"),
 }
 
 # ── 3. Additional aliases to ADD to existing concepts (from removed redirects) ──
@@ -32,24 +32,24 @@ DROP_ALIASES = {
 # existing target concept, but ONLY if they don't already exist there.
 REDIRECT_ADD = [
     # sawtooth-instability → sawtooth
-    ("锯齿不稳定性",     "sawtooth",              "zh",  "alias", "instability form"),
-    ("sawtooth instability","sawtooth",            "en",  "alias", "instability form"),
+    ("锯齿不稳定性", "sawtooth", "zh", "alias", "instability form"),
+    ("sawtooth instability", "sawtooth", "en", "alias", "instability form"),
     # detachment → plasma-detachment
-    ("脱靶",             "plasma-detachment",      "zh",  "alias", "short form"),
-    ("detachment",       "plasma-detachment",      "en",  "alias", "short form"),
-    ("偏滤器脱靶",       "plasma-detachment",      "zh",  "alias", "divertor context"),
-    ("高再循环",         "high-recycling",         "zh",  "preferred", ""),  # this stays, no conflict
+    ("脱靶", "plasma-detachment", "zh", "alias", "short form"),
+    ("detachment", "plasma-detachment", "en", "alias", "short form"),
+    ("偏滤器脱靶", "plasma-detachment", "zh", "alias", "divertor context"),
+    ("高再循环", "high-recycling", "zh", "preferred", ""),  # this stays, no conflict
     # sheath → debye-sheath
-    ("鞘层",             "debye-sheath",           "zh",  "alias", "short form"),
-    ("sheath",           "debye-sheath",           "en",  "alias", "short form"),
+    ("鞘层", "debye-sheath", "zh", "alias", "short form"),
+    ("sheath", "debye-sheath", "en", "alias", "short form"),
     # triple-product → fusion-triple-product
-    ("三重积",           "fusion-triple-product",  "zh",  "alias", "short form"),
-    ("triple product",   "fusion-triple-product",  "en",  "alias", "short form"),
-    ("nTτ",              "fusion-triple-product",  "en",  "alias", "formula notation"),
+    ("三重积", "fusion-triple-product", "zh", "alias", "short form"),
+    ("triple product", "fusion-triple-product", "en", "alias", "short form"),
+    ("nTτ", "fusion-triple-product", "en", "alias", "formula notation"),
     # energy-confinement-time → tau-e
-    ("能量约束时间",     "tau-e",                  "zh",  "alias", "full name"),
-    ("energy confinement time","tau-e",            "en",  "alias", "full name"),
-    ("能量约束时间τE",   "tau-e",                  "zh",  "alias", "with symbol"),
+    ("能量约束时间", "tau-e", "zh", "alias", "full name"),
+    ("energy confinement time", "tau-e", "en", "alias", "full name"),
+    ("能量约束时间τE", "tau-e", "zh", "alias", "with symbol"),
 ]
 
 
@@ -123,7 +123,9 @@ def process_aliases():
             added += 1
 
     ALIASES_TSV.write_text("".join(out), "utf-8")
-    print(f"aliases.tsv: redirected {redirected}, dropped {dropped}, deduped {deduped}, added {added} redirect aliases")
+    print(
+        f"aliases.tsv: redirected {redirected}, dropped {dropped}, deduped {deduped}, added {added} redirect aliases"
+    )
 
 
 def process_evidence():
@@ -152,9 +154,11 @@ def main():
 
     # Verify counts
     import subprocess
+
     r = subprocess.run(
         ["grep", "-c", "^[^#]", str(CONCEPTS_TSV), str(ALIASES_TSV), str(EVIDENCE_TSV)],
-        capture_output=True, text=True
+        capture_output=True,
+        text=True,
     )
     print(f"\n{r.stdout.strip()}")
 

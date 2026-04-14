@@ -29,7 +29,9 @@ def test_atomic_write_no_truncated_file_on_failure() -> None:
         header = "---\nname: test\n---\n"
         payload = "hello\tni3hao3\t100\n"
 
-        with mock.patch.object(generate_dict_yaml.os, "replace", side_effect=failing_replace):
+        with mock.patch.object(
+            generate_dict_yaml.os, "replace", side_effect=failing_replace
+        ):
             with pytest.raises(OSError, match="simulated disk error"):
                 # Directly test the write path by simulating what the function does
                 content = header + payload
@@ -57,7 +59,9 @@ def test_source_uses_os_replace() -> None:
     import inspect
 
     src = inspect.getsource(generate_dict_yaml)
-    assert "os.replace(" in src, "generate_dict_yaml should use os.replace for atomic write"
+    assert "os.replace(" in src, (
+        "generate_dict_yaml should use os.replace for atomic write"
+    )
     assert "mkstemp" in src or "NamedTemporaryFile" in src, (
         "generate_dict_yaml should use tempfile for atomic write"
     )

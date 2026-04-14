@@ -13,12 +13,8 @@ from pipeline.extract_candidates import extract
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-BASELINE_ZH = (
-    REPO_ROOT / "artifacts" / "_smoke_run" / "baseline_extract_zh_head.tsv"
-)
-BASELINE_EN = (
-    REPO_ROOT / "artifacts" / "_smoke_run" / "baseline_extract_en_head.tsv"
-)
+BASELINE_ZH = REPO_ROOT / "artifacts" / "_smoke_run" / "baseline_extract_zh_head.tsv"
+BASELINE_EN = REPO_ROOT / "artifacts" / "_smoke_run" / "baseline_extract_en_head.tsv"
 
 
 def _run_extract(out_dir: Path) -> None:
@@ -50,19 +46,11 @@ def test_extract_output_matches_baseline(tmp_path: Path) -> None:
     _run_extract(tmp_path)
 
     zh_head = (
-        "\n".join(
-            (tmp_path / "candidates_zh.tsv")
-            .read_text("utf-8")
-            .splitlines()[:21]
-        )
+        "\n".join((tmp_path / "candidates_zh.tsv").read_text("utf-8").splitlines()[:21])
         + "\n"
     )
     en_head = (
-        "\n".join(
-            (tmp_path / "candidates_en.tsv")
-            .read_text("utf-8")
-            .splitlines()[:21]
-        )
+        "\n".join((tmp_path / "candidates_en.tsv").read_text("utf-8").splitlines()[:21])
         + "\n"
     )
 

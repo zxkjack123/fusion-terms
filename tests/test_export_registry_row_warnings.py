@@ -10,9 +10,7 @@ from pipeline.export_registry import _iter_concept_rows
 def test_iter_alias_rows_warns_on_short_row(tmp_path: Path) -> None:
     p = tmp_path / "aliases.tsv"
     p.write_text(
-        "# alias\tconcept_id\tlang\tkind\n"
-        "ok\titer\ten\talias\n"
-        "too_short\titer\n",
+        "# alias\tconcept_id\tlang\tkind\nok\titer\ten\talias\ntoo_short\titer\n",
         encoding="utf-8",
     )
 
@@ -28,9 +26,7 @@ def test_iter_alias_rows_warns_on_short_row(tmp_path: Path) -> None:
 def test_iter_concept_rows_warns_on_short_row(tmp_path: Path) -> None:
     p = tmp_path / "concepts.tsv"
     p.write_text(
-        "# concept_id\tcategory\n"
-        "iter\tdevice\n"
-        "only_id\n",
+        "# concept_id\tcategory\niter\tdevice\nonly_id\n",
         encoding="utf-8",
     )
 

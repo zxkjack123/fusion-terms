@@ -18,9 +18,7 @@ def test_build_fails_on_conflicting_synonyms(tmp_path: Path) -> None:
 
     # Same alias with different preferred -> should error.
     (terms_dir / "synonyms.tsv").write_text(
-        "# alias\tpreferred\tlang(optional)\n"
-        "Hmode\tH-mode\ten\n"
-        "Hmode\tHmode\ten\n",
+        "# alias\tpreferred\tlang(optional)\nHmode\tH-mode\ten\nHmode\tHmode\ten\n",
         encoding="utf-8",
     )
 

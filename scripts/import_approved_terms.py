@@ -29,6 +29,7 @@ Usage:
         --diff diff.tsv --source SRC --evidence-url URL \
         --conflict-map "Q=q-fusion-gain"
 """
+
 from __future__ import annotations
 
 import argparse
@@ -42,8 +43,8 @@ REGISTRY_DIR = Path("terms/registry")
 
 def _detect_lang(text: str) -> str:
     """Detect whether text is primarily Chinese or English."""
-    zh_chars = len(re.findall(r'[\u4e00-\u9fff]', text))
-    return 'zh' if zh_chars > len(text) * 0.15 else 'en'
+    zh_chars = len(re.findall(r"[\u4e00-\u9fff]", text))
+    return "zh" if zh_chars > len(text) * 0.15 else "en"
 
 
 def _slugify(term: str) -> str:
@@ -104,31 +105,44 @@ def _load_diff(diff_path: Path) -> list[dict[str, str]]:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
-        "--diff", type=Path, required=True,
+        "--diff",
+        type=Path,
+        required=True,
         help="Path to the reviewed diff TSV",
     )
     parser.add_argument(
-        "--source", type=str, required=True,
+        "--source",
+        type=str,
+        required=True,
         help="Source tag for concepts.tsv (e.g. ITER-glossary)",
     )
     parser.add_argument(
-        "--evidence-url", type=str, required=True,
+        "--evidence-url",
+        type=str,
+        required=True,
         help="Evidence source URL or identifier",
     )
     parser.add_argument(
-        "--category", type=str, default="concept",
+        "--category",
+        type=str,
+        default="concept",
         help="Default category for new concepts (default: concept)",
     )
     parser.add_argument(
-        "--import-all", action="store_true",
+        "--import-all",
+        action="store_true",
         help="Import all rows: 'new' as new concepts, 'exists' for definitions only",
     )
     parser.add_argument(
-        "--conflict-map", type=str, action="append", default=[],
+        "--conflict-map",
+        type=str,
+        action="append",
+        default=[],
         help="Map conflict term to concept_id: 'TERM=concept-id' (repeatable)",
     )
     parser.add_argument(
-        "--dry-run", action="store_true",
+        "--dry-run",
+        action="store_true",
         help="Print what would be done without writing",
     )
     args = parser.parse_args()
@@ -141,7 +155,10 @@ def main() -> None:
     conflict_map: dict[str, str] = {}
     for spec in args.conflict_map:
         if "=" not in spec:
-            print(f"ERROR: --conflict-map must be TERM=concept-id, got: {spec}", file=sys.stderr)
+            print(
+                f"ERROR: --conflict-map must be TERM=concept-id, got: {spec}",
+                file=sys.stderr,
+            )
             sys.exit(1)
         term_key, cid = spec.split("=", 1)
         conflict_map[term_key.strip()] = cid.strip()
@@ -203,11 +220,15 @@ def main() -> None:
                     stats["conflict_resolved"] += 1
                     stats["def_only"] += 1
                 elif concept_id not in existing_ids:
-                    skipped.append(f"  SKIP (conflict-map concept_id not found): {term} → {concept_id}")
+                    skipped.append(
+                        f"  SKIP (conflict-map concept_id not found): {term} → {concept_id}"
+                    )
                     stats["skipped"] += 1
                 continue
             else:
-                skipped.append(f"  SKIP (conflict, no --conflict-map): {term} (matched: {matched_ids})")
+                skipped.append(
+                    f"  SKIP (conflict, no --conflict-map): {term} (matched: {matched_ids})"
+                )
                 stats["skipped"] += 1
                 continue
 
@@ -259,24 +280,38 @@ def main() -> None:
             continue
 
         # concepts.tsv: concept_id, category, preferred_zh, preferred_en, preferred_abbr, status, notes, source
-        concept_line = "\t".join([
-            concept_id, args.category, zh, en, abbr,
-            "active", "", args.source,
-        ])
+        concept_line = "\t".join(
+            [
+                concept_id,
+                args.category,
+                zh,
+                en,
+                abbr,
+                "active",
+                "",
+                args.source,
+            ]
+        )
 
         # aliases.tsv: alias, concept_id, lang, kind, comment
         alias_line = f"{en}\t{concept_id}\ten\tpreferred\timported from {args.source}"
         alias_lines_extra = []
         if zh:
-            alias_lines_extra.append(f"{zh}\t{concept_id}\tzh\tpreferred\timported from {args.source}")
+            alias_lines_extra.append(
+                f"{zh}\t{concept_id}\tzh\tpreferred\timported from {args.source}"
+            )
 
         # evidence.tsv: concept_id, source, quote, added_by, added_at
-        evidence_line = f"{concept_id}\t{args.evidence_url}\t\timport_approved_terms\t{today}"
+        evidence_line = (
+            f"{concept_id}\t{args.evidence_url}\t\timport_approved_terms\t{today}"
+        )
 
         # definitions.tsv: concept_id, lang, definition, source
         if definition:
             def_lang = _detect_lang(definition)
-            new_definitions.append(f"{concept_id}\t{def_lang}\t{definition}\t{args.source}")
+            new_definitions.append(
+                f"{concept_id}\t{def_lang}\t{definition}\t{args.source}"
+            )
 
         new_concepts.append(concept_line)
         new_aliases.append(alias_line)

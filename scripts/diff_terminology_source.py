@@ -13,6 +13,7 @@ Usage:
 The input TSV must have a header line (comment ``#`` prefix allowed).
 The first column is treated as the term name.
 """
+
 from __future__ import annotations
 
 import argparse
@@ -157,7 +158,10 @@ def main() -> None:
     extra_cols = []
     for r in results:
         for k in r:
-            if k not in ("term", "status", "matched_concept_id") and k not in extra_cols:
+            if (
+                k not in ("term", "status", "matched_concept_id")
+                and k not in extra_cols
+            ):
                 extra_cols.append(k)
 
     with open(args.output, "w", encoding="utf-8") as f:

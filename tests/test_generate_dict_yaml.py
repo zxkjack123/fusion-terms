@@ -30,7 +30,9 @@ Path(args.output).write_text({payload!r}, encoding='utf-8')
     path.chmod(0o755)
 
 
-def test_generate_baked_dict_yaml_is_deterministic_and_contains_payload(tmp_path: Path) -> None:
+def test_generate_baked_dict_yaml_is_deterministic_and_contains_payload(
+    tmp_path: Path,
+) -> None:
     repo_root = Path(__file__).resolve().parents[1]
 
     wordlist = tmp_path / "domain_terms.txt"

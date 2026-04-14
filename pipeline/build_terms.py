@@ -52,9 +52,7 @@ def validate_no_control_or_invisible_terms(
         more = "" if len(bad) <= 3 else f", ... +{len(bad) - 3} more"
         preview_lines.append(f"- {term!r}: {shown}{more}")
     preview = "\n".join(preview_lines)
-    more_terms = (
-        "" if len(offenders) <= 20 else f"\n... and {len(offenders) - 20} more"
-    )
+    more_terms = "" if len(offenders) <= 20 else f"\n... and {len(offenders) - 20} more"
 
     raise SystemExit(
         "wordlist terms must not contain control/invisible Unicode characters "

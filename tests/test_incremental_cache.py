@@ -102,7 +102,9 @@ def test_incremental_cache_skips_unchanged_and_preserves_counts(tmp_path: Path) 
     assert zh_counts_2 == zh_counts_1
 
 
-def test_incremental_cache_reprocesses_changed_file_and_writes_delta(tmp_path: Path) -> None:
+def test_incremental_cache_reprocesses_changed_file_and_writes_delta(
+    tmp_path: Path,
+) -> None:
     repo_root = Path(__file__).resolve().parents[1]
     fixture_corpus = repo_root / "tests" / "fixtures" / "corpus"
 

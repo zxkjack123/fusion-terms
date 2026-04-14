@@ -86,7 +86,9 @@ def test_release_pack_refuses_existing_stage_without_force(tmp_path: Path) -> No
         )
 
 
-def _write_registry_tables(terms_dir: Path, *, concepts: str, aliases: str, evidence: str) -> None:
+def _write_registry_tables(
+    terms_dir: Path, *, concepts: str, aliases: str, evidence: str
+) -> None:
     reg = terms_dir / "registry"
     reg.mkdir(parents=True, exist_ok=True)
     (reg / "concepts.tsv").write_text(concepts, encoding="utf-8")
@@ -100,9 +102,7 @@ def test_release_pack_includes_substitutions_and_vale_yaml(tmp_path: Path) -> No
 
     _write_registry_tables(
         terms_dir,
-        concepts=(
-            "iter\tdevice\n"
-        ),
+        concepts=("iter\tdevice\n"),
         aliases=(
             "ITER\titer\tabbr\tpreferred\n"
             "Old ITER Name\titer\ten\tdeprecated\n"

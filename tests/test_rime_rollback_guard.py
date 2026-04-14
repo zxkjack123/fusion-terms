@@ -11,7 +11,9 @@ from unittest import mock
 import pytest
 
 
-def test_rollback_failure_still_exits_nonzero(capsys: pytest.CaptureFixture[str]) -> None:
+def test_rollback_failure_still_exits_nonzero(
+    capsys: pytest.CaptureFixture[str],
+) -> None:
     """When importer fails AND rollback fails, exit code is importer's and stderr has both."""
     from pipeline import rime_import_safe
 
@@ -26,7 +28,9 @@ def test_rollback_failure_still_exits_nonzero(capsys: pytest.CaptureFixture[str]
         script_file = td_p / "rime_script.py"
         script_file.write_text("", encoding="utf-8")
 
-        gen_ok = subprocess.CompletedProcess(args=["fake"], returncode=0, stdout="", stderr="")
+        gen_ok = subprocess.CompletedProcess(
+            args=["fake"], returncode=0, stdout="", stderr=""
+        )
         imp_fail = subprocess.CompletedProcess(
             args=["fake"], returncode=42, stdout="", stderr="importer exploded"
         )
@@ -52,10 +56,14 @@ def test_rollback_failure_still_exits_nonzero(capsys: pytest.CaptureFixture[str]
                 [
                     "rime_import_safe",
                     "--import",
-                    "--input", str(input_file),
-                    "--output", str(td_p / "output.txt"),
-                    "--rime-script", str(script_file),
-                    "--backup-path", td,
+                    "--input",
+                    str(input_file),
+                    "--output",
+                    str(td_p / "output.txt"),
+                    "--rime-script",
+                    str(script_file),
+                    "--backup-path",
+                    td,
                 ],
             ),
         ):
@@ -69,7 +77,9 @@ def test_rollback_failure_still_exits_nonzero(capsys: pytest.CaptureFixture[str]
         assert "disk full during rollback" in captured.err
 
 
-def test_rollback_success_still_exits_nonzero(capsys: pytest.CaptureFixture[str]) -> None:
+def test_rollback_success_still_exits_nonzero(
+    capsys: pytest.CaptureFixture[str],
+) -> None:
     """When importer fails but rollback succeeds, exit code is still importer's."""
     from pipeline import rime_import_safe
 
@@ -83,7 +93,9 @@ def test_rollback_success_still_exits_nonzero(capsys: pytest.CaptureFixture[str]
         script_file = td_p / "rime_script.py"
         script_file.write_text("", encoding="utf-8")
 
-        gen_ok = subprocess.CompletedProcess(args=["fake"], returncode=0, stdout="", stderr="")
+        gen_ok = subprocess.CompletedProcess(
+            args=["fake"], returncode=0, stdout="", stderr=""
+        )
         imp_fail = subprocess.CompletedProcess(
             args=["fake"], returncode=7, stdout="", stderr="import failed"
         )
@@ -109,10 +121,14 @@ def test_rollback_success_still_exits_nonzero(capsys: pytest.CaptureFixture[str]
                 [
                     "rime_import_safe",
                     "--import",
-                    "--input", str(input_file),
-                    "--output", str(td_p / "output.txt"),
-                    "--rime-script", str(script_file),
-                    "--backup-path", td,
+                    "--input",
+                    str(input_file),
+                    "--output",
+                    str(td_p / "output.txt"),
+                    "--rime-script",
+                    str(script_file),
+                    "--backup-path",
+                    td,
                 ],
             ),
         ):

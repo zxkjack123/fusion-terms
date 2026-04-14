@@ -479,7 +479,13 @@ def test_rollback_preserves_original_on_restore_failure(
         with pytest.raises(SystemExit, match="rollback failed"):
             rollback_from_manifest(manifest)
     finally:
-        src2.chmod(0o755)
+        # Restore permissions on src2 and any aside/tmp leftovers so
+        # pytest can clean up tmp_path.
+        for p in tmp_path.rglob("*"):
+            try:
+                p.chmod(0o755)
+            except OSError:
+                pass
 
     # src1 may or may not have been restored (it's processed first in
     # sorted order), but the key property is that no data is lost.

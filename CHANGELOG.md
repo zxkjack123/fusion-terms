@@ -24,6 +24,34 @@
 ### Fixed
 
 
+## v2026.04.14.1
+
+### Added
+
+- **权威术语源导入**（authoritative-terminology-import 计划, 6 任务）：
+  - `concepts.tsv` 新增 `source` 列，支持溯源至标准/词汇表来源。
+  - 抓取 ITER Fusion Glossary（142 条术语 + 定义），导入 registry。
+  - 抓取 IAEA Safety Glossary（876 条术语 + 定义），导入 registry。
+  - OCR 提取 GB/T 4960.9-2013 核科学技术术语（561 条），导入 registry。
+  - 批量导入脚本 `scripts/import_approved_terms.py` 支持 TSV→registry 自动写入。
+- **仓库质量加固**（repo-hardening-2026-04-14 计划, 13 任务, 4 阶段）：
+  - Phase 1: `rime_import_safe.py` 备份/回滚操作改为原子写入（build-in-temp + `os.rename`），新增 3 个 partial-failure 测试。
+  - Phase 2: CI 门禁收紧（覆盖率阈值 30→45%, 移除 `|| true`）；`definitions.tsv` 校验增强（4 列 schema、source 非空、`(cid,lang)` 唯一性）；`export_registry` 新增跨概念冲突检测。
+  - Phase 3: `export_registry.py` 覆盖率从 16%→76%，新增 14 个单元测试（单元函数 + 直接调用）。
+  - Phase 4: `release_pack` / `rime_import_safe` 增加 `TimeoutExpired` 处理；`generate_dict_yaml` / `rime_export` 替换静默异常为 `warnings.warn` + 上下文错误信息；新增 `[tool.mypy]` 配置。
+- Batch 90: 5 条替代规则（伸长比/拉伸比/轫致辐射/裸线规/反磁信号）。
+- Registry 规模：**2697** concepts、**8373** aliases、**2729** evidence rows、**1549** definitions。
+
+### Changed
+
+- 全仓 `ruff format` 统一代码风格（71 文件）。
+- 整体测试覆盖率 47%→**54%**，149 测试全部通过。
+
+### Fixed
+
+- GB/T 4960.9 OCR 残留错误修正（2 轮迭代）。
+- Registry 审计与数据清理（comprehensive registry audit）。
+
 ## v2026.04.14
 
 ### Added

@@ -97,9 +97,7 @@ def test_extract_candidates_tsv_is_byte_identical_across_runs(
         text=True,
         capture_output=True,
     )
-    assert p1.returncode == 0, (
-        f"run1 stdout:\n{p1.stdout}\nstderr:\n{p1.stderr}"
-    )
+    assert p1.returncode == 0, f"run1 stdout:\n{p1.stdout}\nstderr:\n{p1.stderr}"
 
     en1 = (out_dir / "candidates_en.tsv").read_bytes()
     zh1 = (out_dir / "candidates_zh.tsv").read_bytes()
@@ -110,9 +108,7 @@ def test_extract_candidates_tsv_is_byte_identical_across_runs(
         text=True,
         capture_output=True,
     )
-    assert p2.returncode == 0, (
-        f"run2 stdout:\n{p2.stdout}\nstderr:\n{p2.stderr}"
-    )
+    assert p2.returncode == 0, f"run2 stdout:\n{p2.stdout}\nstderr:\n{p2.stderr}"
 
     en2 = (out_dir / "candidates_en.tsv").read_bytes()
     zh2 = (out_dir / "candidates_zh.tsv").read_bytes()
@@ -153,9 +149,7 @@ def test_end_to_end_chain_is_deterministic_on_fixture_corpus(
             text=True,
             capture_output=True,
         )
-        assert p.returncode == 0, (
-            f"extract stdout:\n{p.stdout}\nstderr:\n{p.stderr}"
-        )
+        assert p.returncode == 0, f"extract stdout:\n{p.stdout}\nstderr:\n{p.stderr}"
 
         # 2) build terms (use a small, hermetic terms dir)
         terms_dir = run_root / "terms"
@@ -184,9 +178,7 @@ def test_end_to_end_chain_is_deterministic_on_fixture_corpus(
             text=True,
             capture_output=True,
         )
-        assert p.returncode == 0, (
-            f"build stdout:\n{p.stdout}\nstderr:\n{p.stderr}"
-        )
+        assert p.returncode == 0, f"build stdout:\n{p.stdout}\nstderr:\n{p.stderr}"
 
         # 3) rime export (use stub importer)
         stub_script = run_root / "rime_import_wordlist.py"

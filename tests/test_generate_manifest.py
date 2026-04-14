@@ -50,8 +50,12 @@ def test_generate_manifest_basic(tmp_path: Path) -> None:
     assert d["counts"]["en"] == 1
 
     sha = d["sha256"]
-    assert sha["domain_terms.txt"] == _sha256_bytes((root / "domain_terms.txt").read_bytes())
-    assert sha["registry_exports.json"] == _sha256_bytes((root / "registry_exports.json").read_bytes())
+    assert sha["domain_terms.txt"] == _sha256_bytes(
+        (root / "domain_terms.txt").read_bytes()
+    )
+    assert sha["registry_exports.json"] == _sha256_bytes(
+        (root / "registry_exports.json").read_bytes()
+    )
 
 
 def test_generate_manifest_normalizes_generated_at_plus00(tmp_path: Path) -> None:
