@@ -200,7 +200,12 @@
 
 ### Phase 4: GB/T 4960.9 OCR 提取
 
-#### Task 4.1: OCR 预处理与文本提取
+#### ⏸ Task 4.1: OCR 预处理与文本提取
+
+> **BLOCKED**: `tesseract-ocr` + `tesseract-ocr-chi-sim` not installed. Run:
+> `sudo apt install tesseract-ocr tesseract-ocr-chi-sim`
+> Then: `python3 scripts/ocr_gbt4960.py`
+> Script created and ready.
 
 - **目标**：对 Zotero 中 GB/T 4960.9-2013 扫描 PDF 做 OCR，提取中英文术语
 - **修改内容**：
@@ -219,7 +224,9 @@
   - ✅ 关键术语（如"托卡马克""等离子体""偏滤器"）可在文本中找到
 - **潜在风险**：扫描质量差（Kodak Document Imaging）可能导致 OCR 错误率高 — 后续人工校对
 
-#### Task 4.2: GB/T 4960.9 术语对提取
+#### ⏸ Task 4.2: GB/T 4960.9 术语对提取
+
+> **BLOCKED**: depends on Task 4.1 OCR output
 
 - **目标**：从 OCR 文本中识别结构化的"编号 + 中文术语 + 英文术语 + 定义"条目
 - **修改内容**：
@@ -237,7 +244,9 @@
   - ✅ 所有行标记 `status=draft`
 - **潜在风险**：OCR 对中英文混排识别常出错（如"divertor"误识别为"divert0r"）— 全部标 draft，人工校对
 
-#### Task 4.3: GB/T 4960.9 → registry 候选 diff 报告
+#### ⏸ Task 4.3: GB/T 4960.9 → registry 候选 diff 报告
+
+> **BLOCKED**: depends on Task 4.2 output
 
 - **目标**：国标术语与现有 registry 比对
 - **修改内容**：复用 `scripts/diff_terminology_source.py`
