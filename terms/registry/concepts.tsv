@@ -1688,3 +1688,5 @@ leading-edge	concept	前缘	leading edge		active	Exposed edge of PFC tile facing
 surface-morphology	concept	表面形貌	surface morphology		active	Microscopic surface topography of PFCs after plasma exposure
 # ---- PWI anti-pattern expansion phase 5 (new concepts) ----
 hydrogen-embrittlement	concept	氢脆	hydrogen embrittlement		active	Loss of ductility in metals due to dissolved or trapped hydrogen atoms
+hot-cathode-ion-gauge	device	热阴极电离规	hot cathode ionization gauge		active	热阴极型电离真空计；裸线规为非标准俗称
+diamagnetic-flux-signal	diagnostic	反磁通信号	diamagnetic flux signal		active	抗磁环诊断输出的等离子体储能信号

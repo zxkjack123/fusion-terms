@@ -906,7 +906,7 @@ alpha-channeling	alpha-channeling	en	alias	IME token-only form
 
 韧致辐射	bremsstrahlung	zh	preferred	preferred zh
 bremsstrahlung	bremsstrahlung	en	preferred	preferred en
-轫致辐射	bremsstrahlung	zh	alias	zh variant character
+轫致辐射	bremsstrahlung	zh	forbidden	误用字：轫→韧，正确为 韧致辐射
 
 同步辐射	synchrotron-radiation	zh	preferred	preferred zh
 synchrotron radiation	synchrotron-radiation	en	preferred	preferred en (phrase)
@@ -7764,3 +7764,13 @@ neutron-fluence	fluence	en	alias	hyphenated neutron form
 # -- activation (活化): bare concept
 激活能	activation	zh	forbidden	AI误译activation(活化≠激活)：正确为 活化
 激活作用	activation	zh	forbidden	AI误译activation(活化≠激活作用,生物义)：正确为 活化
+
+# ==== Batch 90: substitute supplement ====
+伸长比	plasma-elongation	zh	forbidden	误译：聚变语境应为 等离子体拉长比
+拉伸比	plasma-elongation	zh	forbidden	误译：聚变语境应为 等离子体拉长比
+hot cathode ionization gauge	hot-cathode-ion-gauge	en	preferred	preferred en
+热阴极电离规	hot-cathode-ion-gauge	zh	preferred	preferred zh
+裸线规	hot-cathode-ion-gauge	zh	forbidden	非标准俗称
+diamagnetic flux signal	diamagnetic-flux-signal	en	preferred	preferred en
+反磁通信号	diamagnetic-flux-signal	zh	preferred	preferred zh
+反磁信号	diamagnetic-flux-signal	zh	forbidden	简称不够规范：缺少"通"

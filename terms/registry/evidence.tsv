@@ -1579,3 +1579,5 @@ castellation	internal:registry-gap-review:pwi-antipattern-p4	Stress-relief slots
 leading-edge	internal:registry-gap-review:pwi-antipattern-p4	Upstream-facing edge of PFC tile	copilot	2025-07-14
 surface-morphology	internal:registry-gap-review:pwi-antipattern-p4	Post-exposure PFC surface topography	copilot	2025-07-14
 hydrogen-embrittlement	internal:registry-gap-review:pwi-antipattern-p5	Hydrogen-induced ductility loss in metals	copilot	2026-04-14
+hot-cathode-ion-gauge	internal:registry-gap-review:substitute-supplement	Hot-cathode ionization gauge for vacuum measurement	copilot	2026-04-14
+diamagnetic-flux-signal	internal:registry-gap-review:substitute-supplement	Plasma stored energy signal from diamagnetic loop	copilot	2026-04-14
