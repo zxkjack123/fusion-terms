@@ -149,7 +149,7 @@
 
 ### Phase 3: IAEA Safety Glossary 提取
 
-#### Task 3.1: 下载 IAEA Safety Glossary PDF
+#### ✅ Task 3.1: 下载 IAEA Safety Glossary PDF
 
 - **目标**：下载 IAEA Safety Glossary 2018 Edition PDF 到本地
 - **修改内容**：
