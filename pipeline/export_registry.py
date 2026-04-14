@@ -185,7 +185,7 @@ def _iter_concept_rows(concepts_path: Path) -> list[dict[str, str]]:
         if not line.strip() or line.lstrip().startswith("#"):
             continue
         parts = [c.strip() for c in line.split("\t")]
-        # concept_id, category, preferred_zh, preferred_en, preferred_abbr, status, notes
+        # concept_id, category, preferred_zh, preferred_en, preferred_abbr, status, notes, source
         if len(parts) < 2:
             warnings.warn(
                 (
@@ -205,6 +205,7 @@ def _iter_concept_rows(concepts_path: Path) -> list[dict[str, str]]:
                 "preferred_abbr": parts[4] if len(parts) >= 5 else "",
                 "status": parts[5] if len(parts) >= 6 else "",
                 "notes": parts[6] if len(parts) >= 7 else "",
+                "source": parts[7] if len(parts) >= 8 else "",
             }
         )
     return rows

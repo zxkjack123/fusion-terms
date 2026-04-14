@@ -77,7 +77,7 @@
   - ✅ 全量 `pytest` 通过
 - **潜在风险**：某些行末尾有尾随 tab 会导致列数不一致 — 用脚本统一处理
 
-#### Task 1.2: `_iter_concept_rows()` 更新 dict 映射
+#### ✅ Task 1.2: `_iter_concept_rows()` 更新 dict 映射
 
 - **目标**：让 export_registry 正确解析并暴露新 `source` 列
 - **修改内容**：
