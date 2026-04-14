@@ -432,13 +432,8 @@ def test_export_translation_dict_basic_structure(tmp_path: Path) -> None:
 
     _write_registry_tables(
         terms_dir,
-        concepts=(
-            "tok\tdevice\t托卡马克\ttokamak\t\tactive\n"
-        ),
-        aliases=(
-            "tokamak\ttok\ten\tpreferred\n"
-            "托卡马克\ttok\tzh\tpreferred\n"
-        ),
+        concepts=("tok\tdevice\t托卡马克\ttokamak\t\tactive\n"),
+        aliases=("tokamak\ttok\ten\tpreferred\n托卡马克\ttok\tzh\tpreferred\n"),
         evidence="tok\thttps://example.invalid\n",
     )
 

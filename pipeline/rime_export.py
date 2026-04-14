@@ -42,9 +42,7 @@ def main() -> None:
             default_rime_script = import_script_val.strip()
 
     parser = argparse.ArgumentParser(
-        description=(
-            "Generate a Rime import file from artifacts/domain_terms.txt"
-        )
+        description=("Generate a Rime import file from artifacts/domain_terms.txt")
     )
     parser.add_argument(
         "--config",
@@ -78,8 +76,7 @@ def main() -> None:
         "--include-non-cjk",
         action="store_true",
         help=(
-            "Also include non-CJK terms "
-            "(passed through to rime_import_wordlist.py)."
+            "Also include non-CJK terms (passed through to rime_import_wordlist.py)."
         ),
     )
     parser.add_argument(
@@ -94,8 +91,7 @@ def main() -> None:
         "--no-restart-fcitx",
         action="store_true",
         help=(
-            "Do not auto-restart fcitx when the Rime userdb is locked "
-            "(passed through)."
+            "Do not auto-restart fcitx when the Rime userdb is locked (passed through)."
         ),
     )
     parser.add_argument(
@@ -153,7 +149,7 @@ def main() -> None:
     if proc.returncode != 0:
         if proc.stderr:
             print(proc.stderr)
-        raise SystemExit(proc.returncode)
+        raise SystemExit(f"rime_export: importer failed (exit {proc.returncode})")
 
 
 if __name__ == "__main__":

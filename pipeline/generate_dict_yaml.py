@@ -101,7 +101,10 @@ def generate_dict_yaml(
         if proc.returncode != 0:
             if proc.stderr:
                 print(proc.stderr)
-            raise SystemExit(proc.returncode)
+            raise SystemExit(
+                f"generate_dict_yaml: importer {rime_script} failed "
+                f"(exit {proc.returncode}) for input {input_wordlist} → output {output_yaml}"
+            )
 
         payload = payload_path.read_text("utf-8")
         # The importer should generate a 3-column TSV (text, code, weight).
@@ -109,9 +112,7 @@ def generate_dict_yaml(
 
         header = _render_header(name=dict_name, version=dict_version)
         content = header + payload
-        fd, tmp_path = tempfile.mkstemp(
-            dir=str(output_yaml.parent), suffix=".tmp"
-        )
+        fd, tmp_path = tempfile.mkstemp(dir=str(output_yaml.parent), suffix=".tmp")
         try:
             with os.fdopen(fd, "w", encoding="utf-8") as f:
                 f.write(content)
@@ -129,7 +130,13 @@ def generate_dict_yaml(
             try:
                 payload_path.unlink()
             except Exception:
-                pass  # best-effort temp cleanup
+                import warnings
+
+                warnings.warn(
+                    f"failed to clean up temp file: {payload_path}",
+                    RuntimeWarning,
+                    stacklevel=2,
+                )
 
 
 def main() -> None:
@@ -167,10 +174,7 @@ def main() -> None:
     parser.add_argument(
         "--output",
         default=None,
-        help=(
-            "Output dict YAML path "
-            "(default: <out-dir>/fusion_terms.dict.yaml)"
-        ),
+        help=("Output dict YAML path (default: <out-dir>/fusion_terms.dict.yaml)"),
     )
     parser.add_argument(
         "--out-dir",

@@ -268,8 +268,7 @@ _MINIMAL_ALIASES = (
     "托卡马克\ttokamak\tzh\tpreferred\n"
 )
 _MINIMAL_EVIDENCE = (
-    "iter\thttps://www.iter.org\n"
-    "tokamak\thttps://en.wikipedia.org/wiki/Tokamak\n"
+    "iter\thttps://www.iter.org\ntokamak\thttps://en.wikipedia.org/wiki/Tokamak\n"
 )
 
 

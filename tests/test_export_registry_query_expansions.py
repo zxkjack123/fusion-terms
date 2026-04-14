@@ -120,10 +120,7 @@ def test_export_query_expansions_basic(tmp_path: Path) -> None:
             "stellarator\tstl\ten\tpreferred\n"
             "仿星器\tstl\tzh\tpreferred\n"
         ),
-        evidence=(
-            "tok\thttps://example.invalid\n"
-            "stl\thttps://example.invalid\n"
-        ),
+        evidence=("tok\thttps://example.invalid\nstl\thttps://example.invalid\n"),
     )
 
     out_dir = tmp_path / "artifacts"
@@ -172,20 +169,14 @@ def test_export_query_expansions_rejects_cross_concept_alias(
 
     _write_registry_tables(
         terms_dir,
-        concepts=(
-            "c1\tdevice\t甲\tAlpha\t\tactive\n"
-            "c2\tdevice\t乙\tBeta\t\tactive\n"
-        ),
+        concepts=("c1\tdevice\t甲\tAlpha\t\tactive\nc2\tdevice\t乙\tBeta\t\tactive\n"),
         aliases=(
             "Alpha\tc1\ten\tpreferred\n"
             "Beta\tc2\ten\tpreferred\n"
             "CLASH\tc1\ten\talias\n"
             "CLASH\tc2\ten\talias\n"
         ),
-        evidence=(
-            "c1\thttps://example.invalid\n"
-            "c2\thttps://example.invalid\n"
-        ),
+        evidence=("c1\thttps://example.invalid\nc2\thttps://example.invalid\n"),
     )
 
     out_dir = tmp_path / "artifacts"

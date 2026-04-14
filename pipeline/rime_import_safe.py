@@ -144,8 +144,7 @@ def create_backup(
                 and not backup_path_resolved.is_relative_to(tmp_root)
             ):
                 raise SystemExit(
-                    "safe import refused: backup path escapes snapshot "
-                    f"directory: {p}"
+                    f"safe import refused: backup path escapes snapshot directory: {p}"
                 )
 
             kind = "dir" if p.is_dir() else "file"
@@ -164,8 +163,7 @@ def create_backup(
 
         if not items:
             raise SystemExit(
-                "safe import failed: no existing backup paths found; "
-                "refusing to import"
+                "safe import failed: no existing backup paths found; refusing to import"
             )
 
         manifest = {
@@ -178,15 +176,11 @@ def create_backup(
 
         # Write manifest atomically via temp-file + os.replace().
         manifest_path_tmp = tmp_dir / "manifest.json"
-        fd, tmp_manifest = tempfile.mkstemp(
-            dir=str(tmp_dir), suffix=".manifest.tmp"
-        )
+        fd, tmp_manifest = tempfile.mkstemp(dir=str(tmp_dir), suffix=".manifest.tmp")
         try:
             with os.fdopen(fd, "w", encoding="utf-8") as f:
                 f.write(
-                    json.dumps(
-                        manifest, ensure_ascii=False, indent=2, sort_keys=True
-                    )
+                    json.dumps(manifest, ensure_ascii=False, indent=2, sort_keys=True)
                     + "\n"
                 )
             os.replace(tmp_manifest, str(manifest_path_tmp))
@@ -210,9 +204,7 @@ def create_backup(
 
 def rollback_from_manifest(manifest_path: Path) -> None:
     if not manifest_path.exists():
-        raise SystemExit(
-            f"rollback failed: manifest not found: {manifest_path}"
-        )
+        raise SystemExit(f"rollback failed: manifest not found: {manifest_path}")
 
     data = json.loads(manifest_path.read_text("utf-8"))
     items = data.get("items", [])
@@ -254,15 +246,11 @@ def rollback_from_manifest(manifest_path: Path) -> None:
         bak_r = bak.resolve()
         if bak_r != snapshot_root and not bak_r.is_relative_to(snapshot_root):
             raise SystemExit(
-                "rollback failed: backup path escapes manifest snapshot: "
-                f"{bak}"
+                f"rollback failed: backup path escapes manifest snapshot: {bak}"
             )
 
         in_home = orig_r == home_root or orig_r.is_relative_to(home_root)
-        if any(
-            orig_r == p or orig_r.is_relative_to(p)
-            for p in protected_roots
-        ):
+        if any(orig_r == p or orig_r.is_relative_to(p) for p in protected_roots):
             if not in_home:
                 raise SystemExit(
                     "rollback failed: refusing to restore protected system "
@@ -298,8 +286,7 @@ def rollback_from_manifest(manifest_path: Path) -> None:
             if restore_tmp.exists():
                 shutil.rmtree(restore_tmp, ignore_errors=True)
             raise SystemExit(
-                f"rollback failed: could not stage restore for "
-                f"{orig}: {exc}"
+                f"rollback failed: could not stage restore for {orig}: {exc}"
             ) from exc
 
         try:
@@ -336,14 +323,10 @@ def rollback_from_manifest(manifest_path: Path) -> None:
             if restore_tmp.exists():
                 shutil.rmtree(restore_tmp, ignore_errors=True)
             raise SystemExit(
-                f"rollback failed: could not swap restore into "
-                f"{orig}: {exc}"
+                f"rollback failed: could not swap restore into {orig}: {exc}"
             ) from exc
 
-    print(
-        f"rollback OK: restored {len(items_sorted)} paths from "
-        f"{manifest_path}"
-    )
+    print(f"rollback OK: restored {len(items_sorted)} paths from {manifest_path}")
 
 
 def main() -> None:
@@ -374,11 +357,7 @@ def main() -> None:
     if isinstance(rime_cfg, dict):
         v = rime_cfg.get("backup_paths")
         if isinstance(v, list):
-            default_backup_paths = [
-                str(x).strip()
-                for x in v
-                if str(x).strip()
-            ]
+            default_backup_paths = [str(x).strip() for x in v if str(x).strip()]
 
     parser = argparse.ArgumentParser(
         description=(
@@ -418,10 +397,7 @@ def main() -> None:
     parser.add_argument(
         "--include-non-cjk",
         action="store_true",
-        help=(
-            "Also include non-CJK terms when generating payload "
-            "(passed through)."
-        ),
+        help=("Also include non-CJK terms when generating payload (passed through)."),
     )
     parser.add_argument(
         "--rime-user-dir",
@@ -435,8 +411,7 @@ def main() -> None:
         "--no-restart-fcitx",
         action="store_true",
         help=(
-            "Do not auto-restart fcitx when the Rime userdb is locked "
-            "(passed through)."
+            "Do not auto-restart fcitx when the Rime userdb is locked (passed through)."
         ),
     )
     parser.add_argument(
@@ -448,19 +423,13 @@ def main() -> None:
     parser.add_argument(
         "--dry-run",
         action="store_true",
-        help=(
-            "Only generate import payload; do not import "
-            "(overrides --import)"
-        ),
+        help=("Only generate import payload; do not import (overrides --import)"),
     )
     parser.add_argument(
         "--backup-path",
         action="append",
         default=None,
-        help=(
-            "Path to back up before importing (repeatable). "
-            "Can be file or dir."
-        ),
+        help=("Path to back up before importing (repeatable). Can be file or dir."),
     )
     parser.add_argument(
         "--backup-root",
@@ -471,8 +440,7 @@ def main() -> None:
         "--backup-name",
         default=None,
         help=(
-            "Backup snapshot name (default: timestamp). "
-            "Useful for deterministic tests."
+            "Backup snapshot name (default: timestamp). Useful for deterministic tests."
         ),
     )
     parser.add_argument(
@@ -499,20 +467,23 @@ def main() -> None:
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
     # Step 1) Always generate payload (safe, reproducible).
-    gen = _run_importer_v2(
-        script=script_path,
-        input_path=input_path,
-        output_path=output_path,
-        do_import=False,
-        dict_name=args.dict_name,
-        include_non_cjk=bool(args.include_non_cjk),
-        rime_user_dir=(
-            Path(args.rime_user_dir).expanduser()
-            if args.rime_user_dir
-            else None
-        ),
-        no_restart_fcitx=bool(args.no_restart_fcitx),
-    )
+    try:
+        gen = _run_importer_v2(
+            script=script_path,
+            input_path=input_path,
+            output_path=output_path,
+            do_import=False,
+            dict_name=args.dict_name,
+            include_non_cjk=bool(args.include_non_cjk),
+            rime_user_dir=(
+                Path(args.rime_user_dir).expanduser() if args.rime_user_dir else None
+            ),
+            no_restart_fcitx=bool(args.no_restart_fcitx),
+        )
+    except subprocess.TimeoutExpired as te:
+        raise SystemExit(
+            f"safe import failed: payload generation timed out after {te.timeout}s"
+        ) from te
     if gen.stdout:
         print(gen.stdout)
     if gen.returncode != 0:
@@ -533,11 +504,7 @@ def main() -> None:
     # Step 2) Backup paths before import.
     backup_root = Path(args.backup_root).expanduser()
     backup_name = args.backup_name or _now_backup_name()
-    raw_backup_paths = (
-        args.backup_path
-        if args.backup_path
-        else default_backup_paths
-    )
+    raw_backup_paths = args.backup_path if args.backup_path else default_backup_paths
     backup_paths = [Path(p).expanduser() for p in raw_backup_paths]
 
     if not backup_paths:
@@ -564,9 +531,7 @@ def main() -> None:
             dict_name=args.dict_name,
             include_non_cjk=bool(args.include_non_cjk),
             rime_user_dir=(
-                Path(args.rime_user_dir).expanduser()
-                if args.rime_user_dir
-                else None
+                Path(args.rime_user_dir).expanduser() if args.rime_user_dir else None
             ),
             no_restart_fcitx=bool(args.no_restart_fcitx),
         )
@@ -597,8 +562,7 @@ def main() -> None:
     print("verification tips:")
     print("- restart Fcitx if needed")
     print(
-        "- try a few fixed acceptance terms "
-        "(ITER/EAST/NBI/H-mode/q95/β_N/τ_E/托卡马克)"
+        "- try a few fixed acceptance terms (ITER/EAST/NBI/H-mode/q95/β_N/τ_E/托卡马克)"
     )
     print(
         "rollback command: python -m pipeline.rime_import_safe "

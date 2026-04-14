@@ -21,20 +21,27 @@ class PackResult:
 
 
 def _run_module(module: str, args: list[str]) -> None:
-    proc = subprocess.run(
-        [sys.executable, "-m", module, *args],
-        check=False,
-        capture_output=True,
-        text=True,
-        timeout=300,
-    )
+    try:
+        proc = subprocess.run(
+            [sys.executable, "-m", module, *args],
+            check=False,
+            capture_output=True,
+            text=True,
+            timeout=300,
+        )
+    except subprocess.TimeoutExpired as te:
+        raise SystemExit(
+            f"release_pack failed: module {module} timed out after {te.timeout}s"
+        ) from te
     if proc.returncode == 0:
         return
 
     stdout = proc.stdout.strip()
     stderr = proc.stderr.strip()
     msg = "\n".join([s for s in [stderr, stdout] if s])
-    raise SystemExit(f"release_pack failed: module {module} exited {proc.returncode}\n{msg}")
+    raise SystemExit(
+        f"release_pack failed: module {module} exited {proc.returncode}\n{msg}"
+    )
 
 
 def _iter_files_recursive(root: Path) -> list[Path]:
@@ -149,7 +156,9 @@ def build_release_pack(
 
     if stage_dir.exists():
         if not force:
-            raise SystemExit(f"release_pack failed: stage dir exists (use --force): {stage_dir}")
+            raise SystemExit(
+                f"release_pack failed: stage dir exists (use --force): {stage_dir}"
+            )
         shutil.rmtree(stage_dir)
 
     stage_dir.mkdir(parents=True, exist_ok=True)
@@ -195,7 +204,14 @@ def build_release_pack(
     # 3) Optional: export registry-derived consumer artifacts into staging.
     if include_registry_exports:
         out_artifacts = stage_dir / "artifacts"
-        args = ["--config", str(config), "--terms-dir", str(terms_dir), "--out-dir", str(out_artifacts)]
+        args = [
+            "--config",
+            str(config),
+            "--terms-dir",
+            str(terms_dir),
+            "--out-dir",
+            str(out_artifacts),
+        ]
         if include_query_expansions:
             args.append("--query-expansions")
         if include_tag_rules:
@@ -222,7 +238,8 @@ def build_release_pack(
     )
     manifest_path = stage_dir / "fusion_terms_manifest.json"
     manifest_path.write_text(
-        json.dumps(manifest.as_dict(), ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+        json.dumps(manifest.as_dict(), ensure_ascii=False, indent=2, sort_keys=True)
+        + "\n",
         encoding="utf-8",
     )
 
@@ -240,7 +257,9 @@ def build_release_pack(
             rel = full.relative_to(stage_dir).as_posix()
             tf.add(full, arcname=rel, filter=_tar_filter_stable)
 
-    return PackResult(stage_dir=stage_dir, manifest_path=manifest_path, tar_path=tar_path)
+    return PackResult(
+        stage_dir=stage_dir, manifest_path=manifest_path, tar_path=tar_path
+    )
 
 
 def main() -> None:
@@ -249,7 +268,9 @@ def main() -> None:
     )
     p.add_argument("--tag", required=True, help="Release tag (e.g. v2026.02.09)")
     p.add_argument("--config", default="config.toml", help="Path to config.toml")
-    p.add_argument("--terms-dir", default="terms", help="Directory containing allow/deny/synonyms")
+    p.add_argument(
+        "--terms-dir", default="terms", help="Directory containing allow/deny/synonyms"
+    )
     p.add_argument(
         "--stage-dir",
         default=None,
@@ -313,7 +334,9 @@ def main() -> None:
 
     args = p.parse_args()
 
-    stage_dir = Path(args.stage_dir) if args.stage_dir else (Path("dist") / "stage" / args.tag)
+    stage_dir = (
+        Path(args.stage_dir) if args.stage_dir else (Path("dist") / "stage" / args.tag)
+    )
     out_path = (
         Path(args.out)
         if args.out

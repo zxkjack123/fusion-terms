@@ -1,3 +1,5 @@
+> ✅ **状态：已归档**
+
 # 短 token 隔离：translation_dict.json en2zh 短键污染修复
 
 ## 背景与目标

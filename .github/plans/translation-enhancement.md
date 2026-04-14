@@ -1,3 +1,5 @@
+> ✅ **状态：已归档**
+
 # 术语库翻译增强 — Translation Enhancement
 
 ## 背景与目标

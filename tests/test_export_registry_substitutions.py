@@ -195,9 +195,27 @@ def test_collect_substitutions_basic() -> None:
     from pipeline.export_registry import _collect_substitutions
 
     rows = [
-        {"alias": "Atok", "concept_id": "tok", "lang": "en", "kind": "preferred", "comment": ""},
-        {"alias": "旧名", "concept_id": "tok", "lang": "zh", "kind": "deprecated", "comment": "old name"},
-        {"alias": "Atok", "concept_id": "tok", "lang": "en", "kind": "preferred", "comment": ""},
+        {
+            "alias": "Atok",
+            "concept_id": "tok",
+            "lang": "en",
+            "kind": "preferred",
+            "comment": "",
+        },
+        {
+            "alias": "旧名",
+            "concept_id": "tok",
+            "lang": "zh",
+            "kind": "deprecated",
+            "comment": "old name",
+        },
+        {
+            "alias": "Atok",
+            "concept_id": "tok",
+            "lang": "en",
+            "kind": "preferred",
+            "comment": "",
+        },
     ]
     subs = _collect_substitutions(rows)
     assert len(subs) == 1
@@ -211,9 +229,27 @@ def test_collect_substitutions_forbidden_beats_deprecated() -> None:
     from pipeline.export_registry import _collect_substitutions
 
     rows = [
-        {"alias": "OK", "concept_id": "c1", "lang": "en", "kind": "preferred", "comment": ""},
-        {"alias": "BAD", "concept_id": "c1", "lang": "en", "kind": "deprecated", "comment": ""},
-        {"alias": "BAD", "concept_id": "c1", "lang": "en", "kind": "forbidden", "comment": "typo"},
+        {
+            "alias": "OK",
+            "concept_id": "c1",
+            "lang": "en",
+            "kind": "preferred",
+            "comment": "",
+        },
+        {
+            "alias": "BAD",
+            "concept_id": "c1",
+            "lang": "en",
+            "kind": "deprecated",
+            "comment": "",
+        },
+        {
+            "alias": "BAD",
+            "concept_id": "c1",
+            "lang": "en",
+            "kind": "forbidden",
+            "comment": "typo",
+        },
     ]
     subs = _collect_substitutions(rows)
     assert len(subs) == 1
@@ -226,10 +262,34 @@ def test_collect_substitutions_rejects_cross_concept_conflict() -> None:
     from pipeline.export_registry import _collect_substitutions
 
     rows = [
-        {"alias": "P1", "concept_id": "c1", "lang": "en", "kind": "preferred", "comment": ""},
-        {"alias": "P2", "concept_id": "c2", "lang": "en", "kind": "preferred", "comment": ""},
-        {"alias": "CLASH", "concept_id": "c1", "lang": "en", "kind": "forbidden", "comment": ""},
-        {"alias": "CLASH", "concept_id": "c2", "lang": "en", "kind": "deprecated", "comment": ""},
+        {
+            "alias": "P1",
+            "concept_id": "c1",
+            "lang": "en",
+            "kind": "preferred",
+            "comment": "",
+        },
+        {
+            "alias": "P2",
+            "concept_id": "c2",
+            "lang": "en",
+            "kind": "preferred",
+            "comment": "",
+        },
+        {
+            "alias": "CLASH",
+            "concept_id": "c1",
+            "lang": "en",
+            "kind": "forbidden",
+            "comment": "",
+        },
+        {
+            "alias": "CLASH",
+            "concept_id": "c2",
+            "lang": "en",
+            "kind": "deprecated",
+            "comment": "",
+        },
     ]
     with pytest.raises(SystemExit, match="multiple concepts"):
         _collect_substitutions(rows)

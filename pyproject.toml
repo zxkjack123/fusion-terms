@@ -14,3 +14,8 @@ extend-exclude = [
 # Broader lint gate (keep line-length as non-blocking to avoid noisy churn).
 select = ["E", "F", "W", "B"]
 ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.11"
+ignore_missing_imports = true
+warn_unused_configs = true
