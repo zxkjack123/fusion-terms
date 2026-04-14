@@ -2868,7 +2868,7 @@ plasma-diagnostics-technique	nuclear-fusion	等离子体诊断技术	plasma diag
 soft-x-rays-camera	nuclear-fusion	软X射线成像仪	soft X-rays camera		active		GB/T-4960.9
 survey-spectrometer	nuclear-fusion	广谱测量光谱仪	survey spectrometer		active		GB/T-4960.9
 abnormal-operating-conditions	nuclear-fusion	异常运行工况	abnormal operating conditions		active		GB/T-4960.9
-active-environment	nuclear-fusion	"有源"环境	"active"environment		active		GB/T-4960.9
+active-environment	nuclear-fusion	"有源"环境	"active" environment		active		GB/T-4960.9
 alpha-power	nuclear-fusion	α 功率	alpha-power		active		GB/T-4960.9
 alternative-fuels	nuclear-fusion	替代燃料	alternative fuels		active		GB/T-4960.9
 beyond-design-basis-accidents	nuclear-fusion	超设计基准事故	beyond-design-basis accidents		active		GB/T-4960.9
@@ -2886,7 +2886,7 @@ duty-factor	nuclear-fusion	占空因数	duty factor		active		GB/T-4960.9
 dwell-time	nuclear-fusion	停留时间	dwell time		active		GB/T-4960.9
 engineering-design-activity	nuclear-fusion	工程设计活动	engineering design activity	EDA	active		GB/T-4960.9
 fuels	nuclear-fusion	燃料	fuels		active		GB/T-4960.9
-fusion-fission-hybrid-reactor	nuclear-fusion	聚变-裂变混合堆	fusion-fission hybrid reactor	FFH或FFHR	active		GB/T-4960.9
+fusion-fission-hybrid-reactor	nuclear-fusion	聚变-裂变混合堆	fusion-fission hybrid reactor	FFH; FFHR	active		GB/T-4960.9
 fusion-power	nuclear-fusion	聚变功率	fusion power		active		GB/T-4960.9
 fusion-product	nuclear-fusion	聚变产物	fusion product		active		GB/T-4960.9
 iter-units-of-account	nuclear-fusion	ITER记账单位	ITER units of account	IUA	active		GB/T-4960.9

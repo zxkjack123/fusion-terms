@@ -28,7 +28,7 @@
 2.1.27	自举电流	bootstrap current		在存在压强梯度情况下，由新经典效应引起的环向电流，它与环形磁场系统中捕获粒子效应相关。亦称靴带电流。	draft
 2.1.28	热核燃料燃耗	burn fraction of thermonuclear fuel		热核反应过程中，反应燃烧掉的热核燃料质量与投料质量的比值，它取决于燃烧速率和约束的好坏。	draft
 2.1.29	中心电子密度	central electron density		磁约束聚变装置中磁轴处的等离子体电子密度。	draft
-2.1.30	闭合(磁)位形	closed(magnetic)configuration		空间磁力线闭合的一种磁场结构，以便使等离子体只有通过横越磁力线扩散才能从该系统逃逸。	draft
+2.1.30	闭合(磁)位形	closed (magnetic) configuration		空间磁力线闭合的一种磁场结构，以便使等离子体只有通过横越磁力线扩散才能从该系统逃逸。	draft
 2.1.31	冷等离子体	cold plasma		温度效应可被忽略的等离子体模型，即比起外加约束磁场的磁压力、动(力)压力可以忽略的情形(即 β 值远小于1)。	draft
 2.1.32	集体不稳定性	collective instabilities		当高能粒子的压强比较高(可与等离子体热压强相比较)时，由高能粒子激发的不稳定性。	draft
 2.1.33	集体现象	collective phenomena		由于库仑作用的长程性质，等离子体内粒子群体行为所产生的现象。	draft
@@ -490,7 +490,7 @@
 2.4.1	异常事件	abnormal event		电站或部件运行状态的非预期变化，但不会引起计划外的停堆。	draft
 2.4.2	异常运行	abnormal operation		电站或部件偏离了正常运行的程序或运行状态。这种偏离包括在启动、电流驱动和停堆过程中偏离正常的运行程序，或者在聚变功率偏离其标称值下的运行。	draft
 2.4.3	异常运行工况	abnormal operating conditions		电站或其部件偏离正常运行的工况。	draft
-2.4.4	"有源"环境	"active"environment		由于遭受风化侵蚀使沉积的放射性污染物比掩埋的污染物会更迅速扩散的地面环境部分。相比而言，掩埋的污染物不会经受这种侵蚀("无源"环境)。	draft
+2.4.4	"有源"环境	"active" environment		由于遭受风化侵蚀使沉积的放射性污染物比掩埋的污染物会更迅速扩散的地面环境部分。相比而言，掩埋的污染物不会经受这种侵蚀("无源"环境)。	draft
 2.4.5	α 功率	alpha-power		聚变堆反应能中由反应产物 α 粒子携带的功率。	draft
 2.4.6	替代燃料	alternative fuels		除氘和氚以外的聚变燃料。	draft
 2.4.7	可用率	availability		系统或电厂中能执行其运行时间所占的百分比。也称为运行可用率(operation availability)。	draft
@@ -525,7 +525,7 @@
 2.4.36	燃料循环系统	fuel cycle system		从等离子体排气流中提取氘、氚并将其重新注入等离子体的系统。同时，处理废物中的含氘物质。	draft
 2.4.37	燃料	fuels		聚变堆的燃料，主要包括氘、氚。	draft
 2.4.38	功能隔离	functional isolation		避免一个回路或系统的操作模式或失效对其他部分的影响的措施。	draft
-2.4.39	聚变-裂变混合堆	fusion-fission hybrid reactor	FFH或FFHR	由聚变和裂变反应生产能量的反应堆。一般由含有裂变材料的次临界包层包围聚变中子源。如果在包层中也包含可转换材料，那么，反应堆将产生额外的裂变材料。也称为混合堆(hybrid reactor)。	draft
+2.4.39	聚变-裂变混合堆	fusion-fission hybrid reactor	FFH; FFHR	由聚变和裂变反应生产能量的反应堆。一般由含有裂变材料的次临界包层包围聚变中子源。如果在包层中也包含可转换材料，那么，反应堆将产生额外的裂变材料。也称为混合堆(hybrid reactor)。	draft
 2.4.40	聚变功率	fusion power		由聚变反应产生的功率，主要由中子及 α 粒子携带。	draft
 2.4.41	聚变电厂	fusion power plant		由核聚变反应提供能量的电厂。国际聚变研究的规划是先建造ITER(2.4.47)，再建造示范聚变电厂。	draft
 2.4.42	聚变产物	fusion product		氘-氘等离子体聚变反应时产生的 α 粒子和中子等。	draft

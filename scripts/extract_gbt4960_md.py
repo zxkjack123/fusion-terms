@@ -48,6 +48,8 @@ RE_TERM_LINE = re.compile(
 _OCR_CORRECTIONS: dict[str, dict[str, str]] = {
     "2.1.30":  {"en": "closed (magnetic) configuration"},
     "2.1.40":  {"en": "controlled thermonuclear fusion"},
+    "2.4.4":   {"en": "\"active\" environment"},
+    "2.4.39":  {"abbr": "FFH; FFHR"},
     "2.1.56":  {"zh": "氘-氦3反应", "en": "deuterium-helium-3 reaction", "abbr": "D-³He"},
     "2.1.76":  {"en": "dusty plasma"},
     "2.1.80":  {"en": "edge plasma"},
