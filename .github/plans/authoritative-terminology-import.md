@@ -315,7 +315,7 @@
 
 ### Phase 6: 全量回归验证
 
-#### Task 6.1: 全量 pipeline 验证
+#### ✅ Task 6.1: 全量 pipeline 验证
 
 - **目标**：确认 schema 扩展 + 术语导入后全部 pipeline 正常
 - **修改内容**：无代码修改，纯验证
