@@ -212,7 +212,7 @@
 
 ### Phase 3: 🟡 `export_registry.py` 测试覆盖提升
 
-#### Task 3.1: `_collect_substitutions` + substitution TSV 导出 unit test
+#### ✅ Task 3.1: `_collect_substitutions` + substitution TSV 导出 unit test
 
 - **目标**：为 `_collect_substitutions()`、`export_substitutions_tsv()` 添加直接 unit test
 - **修改内容**：
@@ -230,7 +230,7 @@
   - ✅ 覆盖 `export_substitutions_tsv` 的文件写入路径
 - **潜在风险**：`_collect_substitutions` 是模块私有函数，需 `from pipeline.export_registry import _collect_substitutions` — Python 允许但需确认 ruff 不会 lint 报错（_前缀私有导入）
 
-#### Task 3.2: query_expansions + vale_substitute + translation_dict 导出 unit test
+#### ✅ Task 3.2: query_expansions + vale_substitute + translation_dict 导出 unit test
 
 - **目标**：为其余低覆盖率导出函数添加 unit test
 - **修改内容**：
@@ -249,7 +249,7 @@
   - ✅ `export_registry.py` 覆盖率 ≥ 50%（从 16% 提升）
 - **潜在风险**：构造临时 registry 需包含 concepts.tsv + aliases.tsv 且通过最低验证；参照 `test_export_registry_translation_dict.py` 现有的 `_make_registry` 辅助模式
 
-#### Task 3.3: 覆盖率验证
+#### ✅ Task 3.3: 覆盖率验证
 
 - **目标**：确认 Phase 3 新增测试后整体覆盖率达标
 - **修改内容**：无文件手动修改；运行命令

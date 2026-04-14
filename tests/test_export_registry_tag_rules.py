@@ -16,7 +16,9 @@ def _write_registry_tables(
     (reg / "evidence.tsv").write_text(evidence, encoding="utf-8")
 
 
-def test_export_tag_rules_jsonl_is_deterministic_and_coalesces_kinds(tmp_path: Path) -> None:
+def test_export_tag_rules_jsonl_is_deterministic_and_coalesces_kinds(
+    tmp_path: Path,
+) -> None:
     repo_root = Path(__file__).resolve().parents[1]
 
     terms_dir = tmp_path / "terms"
@@ -91,3 +93,39 @@ def test_export_tag_rules_jsonl_is_deterministic_and_coalesces_kinds(tmp_path: P
     manifest = json.loads((out_dir / "registry_exports.json").read_text("utf-8"))
     assert (out_dir / "tag_rules.jsonl").as_posix() == manifest["tag_rules"]
     assert manifest["tag_rule_count"] == len(parsed)
+
+
+def test_export_tag_rules_direct_call(tmp_path: Path) -> None:
+    """Direct in-process call to export_tag_rules for coverage."""
+    from pipeline.export_registry import export_tag_rules
+
+    terms_dir = tmp_path / "terms"
+    terms_dir.mkdir(parents=True, exist_ok=True)
+    reg = terms_dir / "registry"
+    reg.mkdir()
+    (reg / "concepts.tsv").write_text(
+        "# concept_id\tcategory\tpreferred_zh\tpreferred_en\tpreferred_abbr\tstatus\n"
+        "iter\tdevice\t\tITER\tITER\tactive\n",
+        encoding="utf-8",
+    )
+    (reg / "aliases.tsv").write_text(
+        "# alias\tconcept_id\tlang\tkind\n"
+        "ITER\titer\tabbr\tpreferred\n"
+        "Bad\titer\ten\tforbidden\n",
+        encoding="utf-8",
+    )
+    out_dir = tmp_path / "artifacts"
+    out_dir.mkdir()
+
+    result = export_tag_rules(terms_dir=terms_dir, out_dir=out_dir)
+    assert result["tag_rule_count"] >= 2
+
+    from pathlib import Path as P
+
+    rules_path = P(result["tag_rules"])
+    assert rules_path.exists()
+    lines = [ln for ln in rules_path.read_text("utf-8").splitlines() if ln.strip()]
+    parsed = [json.loads(ln) for ln in lines]
+    aliases = {r["alias"] for r in parsed}
+    assert "ITER" in aliases
+    assert "Bad" in aliases

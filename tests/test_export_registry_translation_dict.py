@@ -393,7 +393,7 @@ def test_translation_dict_min_en_key_len_string_config(tmp_path: Path) -> None:
 
     config_path = tmp_path / "config.toml"
     config_path.write_text(
-        "[export]\nmin_en_key_len = \"3\"\n",
+        '[export]\nmin_en_key_len = "3"\n',
         encoding="utf-8",
     )
 
@@ -420,3 +420,67 @@ def test_translation_dict_min_en_key_len_string_config(tmp_path: Path) -> None:
     data = json.loads((out_dir / "translation_dict.json").read_text("utf-8"))
     assert "de" not in data["en2zh"]
     assert data["en2zh_short"]["de"]["zh"] == "设计"
+
+
+def test_export_translation_dict_basic_structure(tmp_path: Path) -> None:
+    """Verify translation_dict JSON contains required top-level keys."""
+    repo_root = Path(__file__).resolve().parents[1]
+
+    terms_dir = tmp_path / "terms"
+    terms_dir.mkdir(parents=True, exist_ok=True)
+    _write_min_terms_files(terms_dir)
+
+    _write_registry_tables(
+        terms_dir,
+        concepts=(
+            "tok\tdevice\t托卡马克\ttokamak\t\tactive\n"
+        ),
+        aliases=(
+            "tokamak\ttok\ten\tpreferred\n"
+            "托卡马克\ttok\tzh\tpreferred\n"
+        ),
+        evidence="tok\thttps://example.invalid\n",
+    )
+
+    out_dir = tmp_path / "artifacts"
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    data = _run_export_translation(repo_root, terms_dir, out_dir)
+    assert "en2zh" in data
+    assert "zh2en" in data
+    assert "en2zh_short" in data
+    assert isinstance(data["en2zh"], dict)
+    assert isinstance(data["zh2en"], dict)
+
+
+def test_export_translation_dict_direct_call(tmp_path: Path) -> None:
+    """Direct in-process call to export_translation_dict for coverage."""
+    from pipeline.export_registry import export_translation_dict
+
+    terms_dir = tmp_path / "terms"
+    terms_dir.mkdir(parents=True, exist_ok=True)
+    reg = terms_dir / "registry"
+    reg.mkdir()
+    (reg / "concepts.tsv").write_text(
+        "# concept_id\tcategory\tpreferred_zh\tpreferred_en\tpreferred_abbr\tstatus\n"
+        "tok\tdevice\t托卡马克\ttokamak\t\tactive\n",
+        encoding="utf-8",
+    )
+    (reg / "aliases.tsv").write_text(
+        "# alias\tconcept_id\tlang\tkind\n"
+        "tokamak\ttok\ten\tpreferred\n"
+        "托卡马克\ttok\tzh\tpreferred\n",
+        encoding="utf-8",
+    )
+    out_dir = tmp_path / "artifacts"
+    out_dir.mkdir()
+
+    result = export_translation_dict(terms_dir=terms_dir, out_dir=out_dir)
+    assert result["pairs_en2zh"] >= 0
+    data = json.loads(Path(result["translation_dict"]).read_text("utf-8"))
+    assert "en2zh" in data
+    assert "zh2en" in data
+    assert "en2zh_short" in data
+    # tokamak → 托卡马克 mapping
+    assert data["en2zh"]["tokamak"] == "托卡马克"
+    assert data["zh2en"]["托卡马克"] == "tokamak"

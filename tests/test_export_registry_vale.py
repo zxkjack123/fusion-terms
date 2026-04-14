@@ -6,7 +6,9 @@ import sys
 from pathlib import Path
 
 
-def _write_registry_tables(terms_dir: Path, *, concepts: str, aliases: str, evidence: str) -> None:
+def _write_registry_tables(
+    terms_dir: Path, *, concepts: str, aliases: str, evidence: str
+) -> None:
     reg = terms_dir / "registry"
     reg.mkdir(parents=True, exist_ok=True)
     (reg / "concepts.tsv").write_text(concepts, encoding="utf-8")
@@ -57,8 +59,16 @@ def test_export_registry_writes_vale_accept_reject(tmp_path: Path) -> None:
     )
     assert p.returncode == 0, f"stdout:\n{p.stdout}\nstderr:\n{p.stderr}"
 
-    accept = (out_dir / "vale" / "accept.txt").read_text("utf-8", errors="ignore").splitlines()
-    reject = (out_dir / "vale" / "reject.txt").read_text("utf-8", errors="ignore").splitlines()
+    accept = (
+        (out_dir / "vale" / "accept.txt")
+        .read_text("utf-8", errors="ignore")
+        .splitlines()
+    )
+    reject = (
+        (out_dir / "vale" / "reject.txt")
+        .read_text("utf-8", errors="ignore")
+        .splitlines()
+    )
 
     # Accept includes preferred + alias, sorted.
     assert accept == sorted(accept)
@@ -79,3 +89,34 @@ def test_export_registry_writes_vale_accept_reject(tmp_path: Path) -> None:
     assert (out_dir / "vale" / "reject.txt").as_posix() == manifest["vale_reject"]
     assert manifest["accept_count"] == len(accept)
     assert manifest["reject_count"] == len(reject)
+
+
+def test_export_vale_terms_direct_call(tmp_path: Path) -> None:
+    """Direct in-process call to export_vale_terms for coverage."""
+    from pipeline.export_registry import export_vale_terms
+
+    terms_dir = tmp_path / "terms"
+    terms_dir.mkdir(parents=True, exist_ok=True)
+    reg = terms_dir / "registry"
+    reg.mkdir()
+    (reg / "aliases.tsv").write_text(
+        "# alias\tconcept_id\tlang\tkind\n"
+        "ITER\titer\tabbr\tpreferred\n"
+        "Bad\titer\ten\tforbidden\n",
+        encoding="utf-8",
+    )
+    out_dir = tmp_path / "artifacts"
+    out_dir.mkdir()
+
+    result = export_vale_terms(terms_dir=terms_dir, out_dir=out_dir)
+    assert result["accept_count"] >= 1
+    assert result["reject_count"] >= 1
+
+    from pathlib import Path as P
+
+    accept_path = P(result["vale_accept"])
+    reject_path = P(result["vale_reject"])
+    assert accept_path.exists()
+    assert reject_path.exists()
+    assert "ITER" in accept_path.read_text("utf-8")
+    assert "Bad" in reject_path.read_text("utf-8")
