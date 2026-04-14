@@ -129,7 +129,7 @@
   - ✅ 脚本无网络错误时 exit code = 0
 - **潜在风险**：ITER 网站可能有 rate limit 或 Cloudflare 保护 — 实测无
 
-#### Task 2.2: ITER Glossary → registry 候选 diff 报告
+#### ✅ Task 2.2: ITER Glossary → registry 候选 diff 报告
 
 - **目标**：将 ITER 术语与现有 registry 做比对，生成增量报告
 - **修改内容**：
