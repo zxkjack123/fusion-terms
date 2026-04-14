@@ -2349,7 +2349,6 @@ radioactive-source	concept		radioactive source		active		IAEA-safety-glossary
 radioactive-sources-safety-of	concept		radioactive sources, safety of		active		IAEA-safety-glossary
 radioactive-substance	concept		radioactive substance		active		IAEA-safety-glossary
 radioactive-waste-management	concept		radioactive waste management		active		IAEA-safety-glossary
-collection-chemical-volume-change-of-packaging	concept		Collection      Chemical                  Volume       Change of               Packaging		active		IAEA-safety-glossary
 radioactive-waste-management-facility	concept		radioactive waste management facility		active		IAEA-safety-glossary
 radioactivity	concept		radioactivity		active		IAEA-safety-glossary
 radiological-assessor	concept		radiological assessor		active		IAEA-safety-glossary
@@ -2376,9 +2375,6 @@ regulatory-body	concept		regulatory body		active		IAEA-safety-glossary
 regulatory-control	concept		regulatory control		active		IAEA-safety-glossary
 regulatory-inspection	concept		regulatory inspection		active		IAEA-safety-glossary
 relative-biological-effectiveness	concept		relative biological effectiveness (RBE)		active		IAEA-safety-glossary
-health-effect-critical-tissue-or-organ-exposurea-rbet-r	concept		Health effect           Critical tissue or organ                   Exposurea            RBET,R		active		IAEA-safety-glossary
-haematopoietic-external-and-internal-n-3	concept		Haematopoietic                                        External and internal n              3		active		IAEA-safety-glossary
-gastrointestinal-external-and-internal-n-3	concept		Gastrointestinal                                      External and internal n              3		active		IAEA-safety-glossary
 relative-biological-effectiveness-weighted-absorbed-dose-adt	concept		relative biological effectiveness (RBE) weighted absorbed dose, ADT		active		IAEA-safety-glossary
 relative-risk	concept		relative risk		active		IAEA-safety-glossary
 release	concept		release		active		IAEA-safety-glossary
@@ -2589,7 +2585,7 @@ beta-value	nuclear-fusion	比压值	beta value		active		GB/T-4960.9
 bohm-transport	nuclear-fusion	玻姆输运	Bohm transport		active		GB/T-4960.9
 burn-fraction-of-thermonuclear-fuel	nuclear-fusion	热核燃料燃耗	burn fraction of thermonuclear fuel		active		GB/T-4960.9
 central-electron-density	nuclear-fusion	中心电子密度	central electron density		active		GB/T-4960.9
-closed-configuration	nuclear-fusion	闭合(磁)位形	closed(magnetic)configuration		active		GB/T-4960.9
+closed-configuration	nuclear-fusion	闭合(磁)位形	closed (magnetic) configuration		active		GB/T-4960.9
 cold-plasma	nuclear-fusion	冷等离子体	cold plasma		active		GB/T-4960.9
 collective-instabilities	nuclear-fusion	集体不稳定性	collective instabilities		active		GB/T-4960.9
 collective-phenomena	nuclear-fusion	集体现象	collective phenomena		active		GB/T-4960.9

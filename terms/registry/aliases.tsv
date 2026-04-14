@@ -8433,7 +8433,6 @@ radioactive source	radioactive-source	en	preferred	imported from IAEA-safety-glo
 radioactive sources, safety of	radioactive-sources-safety-of	en	preferred	imported from IAEA-safety-glossary
 radioactive substance	radioactive-substance	en	preferred	imported from IAEA-safety-glossary
 radioactive waste management	radioactive-waste-management	en	preferred	imported from IAEA-safety-glossary
-Collection      Chemical                  Volume       Change of               Packaging	collection-chemical-volume-change-of-packaging	en	preferred	imported from IAEA-safety-glossary
 radioactive waste management facility	radioactive-waste-management-facility	en	preferred	imported from IAEA-safety-glossary
 radioactivity	radioactivity	en	preferred	imported from IAEA-safety-glossary
 radiological assessor	radiological-assessor	en	preferred	imported from IAEA-safety-glossary
@@ -8460,9 +8459,6 @@ regulatory body	regulatory-body	en	preferred	imported from IAEA-safety-glossary
 regulatory control	regulatory-control	en	preferred	imported from IAEA-safety-glossary
 regulatory inspection	regulatory-inspection	en	preferred	imported from IAEA-safety-glossary
 relative biological effectiveness (RBE)	relative-biological-effectiveness	en	preferred	imported from IAEA-safety-glossary
-Health effect           Critical tissue or organ                   Exposurea            RBET,R	health-effect-critical-tissue-or-organ-exposurea-rbet-r	en	preferred	imported from IAEA-safety-glossary
-Haematopoietic                                        External and internal n              3	haematopoietic-external-and-internal-n-3	en	preferred	imported from IAEA-safety-glossary
-Gastrointestinal                                      External and internal n              3	gastrointestinal-external-and-internal-n-3	en	preferred	imported from IAEA-safety-glossary
 relative biological effectiveness (RBE) weighted absorbed dose, ADT	relative-biological-effectiveness-weighted-absorbed-dose-adt	en	preferred	imported from IAEA-safety-glossary
 relative risk	relative-risk	en	preferred	imported from IAEA-safety-glossary
 release	release	en	preferred	imported from IAEA-safety-glossary
@@ -8695,7 +8691,7 @@ burn fraction of thermonuclear fuel	burn-fraction-of-thermonuclear-fuel	en	prefe
 热核燃料燃耗	burn-fraction-of-thermonuclear-fuel	zh	preferred	imported from GB/T-4960.9
 central electron density	central-electron-density	en	preferred	imported from GB/T-4960.9
 中心电子密度	central-electron-density	zh	preferred	imported from GB/T-4960.9
-closed(magnetic)configuration	closed-configuration	en	preferred	imported from GB/T-4960.9
+closed (magnetic) configuration	closed-configuration	en	preferred	imported from GB/T-4960.9
 闭合(磁)位形	closed-configuration	zh	preferred	imported from GB/T-4960.9
 cold plasma	cold-plasma	en	preferred	imported from GB/T-4960.9
 冷等离子体	cold-plasma	zh	preferred	imported from GB/T-4960.9

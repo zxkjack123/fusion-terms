@@ -195,7 +195,6 @@ area	en	controlled area. A defined area in which specific protection measures an
 area-monitoring	en	See monitoring (1).	IAEA-safety-glossary
 area-survey	en	See survey.	IAEA-safety-glossary
 arrangements	en	See emergency arrangements.	IAEA-safety-glossary
-arrangements	en	The integrated set of infrastructural elements necessary to provide the capability for performing a specified function or task required to carry out a specified operation. The infrastructural elements may include authorities and responsibilities, organization, coordination, personnel, plans, procedures, facilities, equipment or training.	IAEA-safety-glossary
 assessment	en	1. The process, and the result, of analysing systematically and evaluating the hazards associated with sources and practices, and associated protection and safety measures. Assessment is often aimed at quantifying performance measures for comparison with criteria. In IAEA publications, assessment should be distinguished from analysis. Assessment is aimed at providing information that forms the basis of a decision on whether or not something is satisfactory. Various kinds of analysis may be used as tools in doing this. Hence an assessment may include a number of analyses. consequence assessment. Assessment of the radiological consequences (e.g. doses, activity concentrations) of normal operation and possible accidents associated with an authorized facility or part thereof. ! Care should be taken in discussing ‘consequences’ in this context to distinguish between radiological consequences of events causing exposure, such as doses, and health consequences, such as cancers, that could result from doses. ‘Consequences’ of the former type generally imply a probability of experiencing ‘consequences’ of the latter type. This differs from risk assessment in that probabilities are not included in the assessment. See also end point. dose assessment. Assessment of the dose(s) to an individual or group of people. For example, assessment of the dose received or committed by an individual on the basis of results from workplace monitoring or bioassay. The term exposure assessment is also sometimes used. hazard assessment. Assessment of hazards associated with facilities, activities or sources within or beyond the borders of a State in order to identify: (a) Those events and the associated areas for which protective actions and other response actions may be required within the State; (b) Actions that would be effective in mitigating the consequences of such events. performance assessment. Assessment of the performance of a system or subsystem and its implications for protection and safety at an authorized facility. This differs from safety assessment in that it can be applied to parts of an authorized facility (and its surroundings) and does not necessarily require the assessment of radiological impacts. radiological environmental impact assessment. Assessment of the expected radiological impacts of facilities and activities on the environment for the purposes of protection of the public and protection of the environment against radiation risks. risk assessment. Assessment of the radiation risks and other risks associated with normal operation and possible accidents involving facilities and activities. This will normally include consequence assessment, together with some assessment of the probability of those consequences arising. safety assessment 1. Assessment of all aspects of a practice that are relevant to protection and safety; for an authorized facility, this includes siting, design and operation of the facility. This will normally include risk assessment. See also probabilistic safety assessment (PSA). 2. Analysis to predict the performance of an overall system and its impact, where the performance measure is the radiological impact or some other global measure of the impact on safety. 3. The systematic process that is carried out throughout the design process (and throughout the lifetime of the facility or the activity) to ensure that all the relevant safety requirements are met by the proposed (or actual) design. Safety assessment includes, but is not limited to, the formal safety analysis; that is, it includes the evaluation of the potential hazards associated with the operation of a facility or the conduct of an activity. Stages in the lifetime of a facility or activity at which a safety assessment is carried out and updated and the results are used by the designers, the operating organization and the regulatory body include: (a) Site evaluation for the facility or activity; (b) Development of the design; (c) Construction of the facility or implementation of the activity; (d) Commissioning of the facility or of the activity; (e) Commencement of operation of the facility or conduct of the activity; (f) Normal operation of the facility or normal conduct of the activity; (g) Modification of the design or operation; (h) Periodic safety reviews; (i) Life extension of the facility beyond its original design life; (j) Changes in ownership or management of the facility; (k) Decommissioning of a facility; (l) Closure of a disposal facility for radioactive waste and the post-closure phase; (m) Remediation of a site and release from regulatory control. See GSR Part 4 (Rev. 1) [11]. 2. Activities carried out to determine whether requirements are met and processes are adequate and effective, and to encourage managers to implement improvements, including safety improvements. This usage originated in quality assurance and related fields. ! The IAEA revised the requirements and guidance in the subject area of quality assurance for safety standards on management systems for the safety of facilities and activities involving the use of ionizing radiation. The terms quality management and management system have been adopted in the revised standards in place of the terms quality assurance and quality assurance programme. Assessment activities may include reviewing, checking, inspecting, testing, surveillance, auditing, peer evaluation and technical review. These activities can be divided into two broad categories: independent assessment and self-assessment. independent assessment. Assessments such as audits or surveillance carried out to determine the extent to which the requirements for the management system are fulfilled, to evaluate the effectiveness of the management system and to identify opportunities for improvement. They can be conducted by or on behalf of the organization itself for internal purposes, by interested parties such as customers and regulators (or by other persons on their behalf), or by external independent organizations. This definition applies in management systems and related fields. Persons conducting independent assessments do not participate directly in the work being assessed. Independent assessment activities include internal and external audit, surveillance, peer evaluation and technical review, which are focused on safety aspects and areas where problems have been found. An audit is used in the sense of a documented activity performed to determine by investigation, examination and evaluation of objective evidence the adequacy of, and adherence to, established procedures, instructions, specifications, codes, standards, administrative or operational programmes and other applicable documents, and the effectiveness of their implementation. self-assessment. A routine and continuing process conducted by senior management and also by management at other levels to evaluate the effectiveness of performance in all areas of their responsibility. This definition applies in management systems and related fields. Self-assessment activities include review, surveillance and discrete checks, which are focused on preventing, or identifying and correcting, management problems that hinder the achievement of the organization’s objectives, in particular safety objectives. Self-assessment provides an overall view of the performance of the organization and the degree of maturity of the management system. It also helps to identify areas for improvement in the organization, to determine priorities and to set a baseline for further improvement. See also management system review: senior management.	IAEA-safety-glossary
 assisted-operation	en	An operation undertaken by a State or group of States to which assistance is provided by or through the IAEA in the form of materials, services, equipment, facilities or information pursuant to an agreement between the IAEA and that State or group of States. The word ‘operation’ is used here in its usual sense.	IAEA-safety-glossary
 atmospheric-dispersion	en	See dispersion.	IAEA-safety-glossary
@@ -256,10 +255,8 @@ closure	en	1. Administrative and technical actions directed at a disposal facili
 cloud-shine	en	Gamma radiation from radionuclides in an airborne plume. See also ground shine. sky shine. Radiation emitted upwards and deflected by the air back down to the ground. The presence of sky shine could result in an increase in neutron flux rates further away from the facility. Sky shine can be an important consideration in health physics for high energy experimental accelerator facilities as well as installations with medical linear accelerators for radiation therapy, in relation to the evaluation of shielding designs and to environmental monitoring.	IAEA-safety-glossary
 coincidence	en	A feature of protection system design such that two or more overlapping or simultaneous output signals from several channels are necessary in order to produce a protective action signal by the logic.	IAEA-safety-glossary
 collective-dose	en	See dose concepts.	IAEA-safety-glossary
-commissioning	en	The process by means of which systems and components of facilities and activities, having been constructed, are made operational and verified to be in accordance with the design and to have met the required performance criteria. Commissioning may include both non-nuclear and/or non-radioactive and nuclear and/or radioactive testing. The terms siting, design, construction, commissioning, operation and decommissioning are normally used to delineate the six major stages of the lifetime of an authorized facility and of the associated licensing process. In the special case of disposal facilities for radioactive waste, decommissioning is replaced in this sequence by closure.	IAEA-safety-glossary
 committed-dose	en	1. See dose concepts. 2. See dose (2).	IAEA-safety-glossary
 committed-effective-dose	en	See dose quantities.	IAEA-safety-glossary
-committed-dose	en	See dose quantities.	IAEA-safety-glossary
 common-cause-failure	en	See failure.	IAEA-safety-glossary
 common-mode-failure	en	See failure.	IAEA-safety-glossary
 competent-authority	en	Any body or authority designated or otherwise recognized as such for any purpose in connection with [the Transport] Regulations. (See SSR-6 (Rev. 1) [2].) ! This term is used only with reference to the Transport Regulations [2] for consistency with terminology used in the wider field of regulation of the transport of dangerous goods. Otherwise, the more general term regulatory body should be used, with which competent authority is essentially synonymous.	IAEA-safety-glossary
@@ -277,7 +274,6 @@ conditional-probability-value	en	The upper bound for the conditional probability
 conditional-risk	en	See risk (3).	IAEA-safety-glossary
 conditioning	en	See radioactive waste management (1).	IAEA-safety-glossary
 configuration-management	en	The process of identifying and documenting the characteristics of a facility’s structures, systems and components (including computer systems and software), and of ensuring that changes to these characteristics are properly developed, assessed, approved, issued, implemented, verified, recorded and incorporated into the facility documentation. ‘Configuration’ is used in the sense of the physical, functional and operational characteristics of the structures, systems and components and parts of a facility.	IAEA-safety-glossary
-confinement	en	Prevention or control of releases of radioactive material to the environment in operation or in accidents. Confinement is closely related in meaning to containment, but confinement is typically used to refer to the safety function of preventing the ‘escape’ of radioactive material, whereas containment refers to the means for achieving that function. ! The Transport Regulations [2] adopt a different distinction between confinement and containment, namely that confinement relates to preventing criticality and containment to preventing releases of radioactive material (see confinement system and containment system). The main issue here is the differences in usage between the safety of nuclear installations and safety in the transport of radioactive material. Both terms, containment and confinement, are used in both areas (in the Transport Regulations [2], in the form of confinement system and containment system), and the usages of containment are (it seems) conceptually consistent, but the usages of confinement are not. Confinement in nuclear safety is the safety function that is performed by the containment.	IAEA-safety-glossary
 confinement-system	en	The assembly of fissile material and packaging components specified by the designer and agreed to by the competent authority as intended to preserve criticality safety. (See SSR 6 (Rev. 1) [2].) ! This usage is specific to the Transport Regulations [2]. See confinement for more general usage. A confinement system as defined in the Transport Regulations [2] has the primary function of controlling criticality (as compared with the containment system, the function of which is to prevent leakage of radioactive material). Discussions with experts in the field confirmed that a distinct term is needed to describe this distinct concept, and that confinement is the term that has become established, but failed to reveal any compelling reasons for the choice of that particular word.	IAEA-safety-glossary
 consequence-assessment	en	See assessment (1).	IAEA-safety-glossary
 consignee	en	Any person, organization or government that is entitled to take delivery of a consignment. (See SSR-6 (Rev. 1) [2].)	IAEA-safety-glossary
@@ -309,7 +305,6 @@ crust-earth-s	en	See Earth’s crust. [curie (Ci)] Unit of activity, equal to 3.
 dangerous-source	en	See source (2). [de minimis] ! The appropriate terminology of exemption, clearance, etc., should be used in IAEA publications. A general term used historically to describe concepts that would now be referred to by terms such as exemption or clearance. The term is also sometimes used to describe a related (and controversial) philosophy that assessments of collective dose should exclude that portion delivered at very low individual dose rates. The term de minimis is still used in some specific contexts, such as the London Convention 1972 [16]. Derived from the Latin maxim ‘de minimis non curat lex’ (the law does not concern itself with trivia).	IAEA-safety-glossary
 decay-constant	en	For a radionuclide in a particular energy state, the quotient of dP by dt, where dP is the likelihood of a single nucleus undergoing a spontaneous nuclear transition from that energy state in the time interval dt. dP 1 dN A λ== − = dt N dt N where N is the number of nuclei of concern existing at time t and A is the activity. The decay constant is a constant of proportionality describing the likelihood that a single nucleus will undergo a spontaneous nuclear transition from a higher energy state to a lower energy state within a differential time period. It also corresponds to: ∆N / N 1 dN A λ= − lim = − = ∆t → 0 ∆t N dt N Unit: reciprocal second (s–1). The activity is the decay constant multiplied by the number of nuclei of the radionuclide present. The decay constant is related to the radioactive half-life, T½, of the radionuclide by the expression: ln 2 λ= T1	IAEA-safety-glossary
 decision-limit	en	See minimum significant activity (MSA).	IAEA-safety-glossary
-decommissioning	en	1. Administrative and technical actions taken to allow the removal of some or all of the regulatory controls from a facility. ! This does not apply for that part of a disposal facility in which radioactive waste is emplaced, or for certain facilities used for the disposal of naturally occurring radioactive material (NORM) or of residues from the mining and processing of radioactive ores. For all of these the term closure is used instead of decommissioning. ! Decommissioning typically includes dismantling of the facility (or part thereof) to reduce the associated radiation risks, but in the IAEA’s usage this need not be the case. A facility could, for example, be decommissioned without dismantling and the existing structures subsequently put to another use (after decontamination). The use of the term decommissioning implies that no further use of the facility (or part thereof) for its existing purpose is foreseen. Actions for decommissioning are taken at the end of the operating lifetime of a facility to retire it from service with due regard for the health and safety of workers and members of the public and protection of the environment. Subject to national legal and regulatory requirements, a facility (or its remaining parts) may also be considered decommissioned if it is incorporated into a new or existing facility, even if the site on which it is located is still under regulatory control or institutional control. The actions will need to be such as to ensure the long term protection of the public and protection of the environment, and typically include reducing the levels of residual radionuclides in the materials and on the site of the facility so that the materials can be safely recycled, reused or disposed of as exempt waste or as radioactive waste and the site can be released for unrestricted use or otherwise reused. Decommissioning can entail activities that are similar to remediation (also an authorized process), such as removal of contaminated soil from an area within the authorized boundary of a facility, but in this case, such removals are normally referred to as cleanup activities and are typically performed under the authorization for decommissioning. The terms siting, design, construction, commissioning, operation and decommissioning are normally used to delineate the six major stages of the lifetime of an authorized facility and of the associated licensing process. In the special case of disposal facilities for radioactive waste, decommissioning is replaced in this sequence by closure. decommissioning plan. A document containing detailed information on the proposed decommissioning of a facility. The approved decommissioning plan describes the actions (including decontamination and/or the removal of structures, systems and components) to be taken in carrying out procedures, processes and work activities for the purposes of decommissioning. The decommissioning plan is considered to have been fulfilled when the approved end state of the facility has been reached. dismantling. The taking apart, disassembling and tearing down of the structures, systems and components of a facility for the purposes of decommissioning. The two main types of dismantling are immediate dismantling and deferred dismantling. Deferred dismantling is deferred after permanent shutdown. For a nuclear installation, the nuclear fuel is first removed. Part or all of a facility containing radioactive material is either processed or put in such a condition that it can be put into storage. The facility is maintained until it can subsequently be decontaminated and/or dismantled. Deferred dismantling can involve the early dismantling of some parts of the facility and the early processing of some radioactive material and its removal from the facility, as preparatory steps for storage of the remaining parts of the facility. Immediate dismantling begins shortly after permanent shutdown. Equipment and the structures, systems and components of a facility containing radioactive material are removed and/or are decontaminated to a level that permits the removal of regulatory control from the facility and its release, either for unrestricted use or with restrictions on its future use. entombment. The encasing of part or all of a facility in a structure of long lived material for the purposes of decommissioning. Entombment is not considered an acceptable strategy for decommissioning a facility following planned permanent shutdown. Entombment may be considered acceptable only under exceptional circumstances (e.g. following a severe accident). In this case, the entombment structure is maintained and surveillance is continued until the radioactive inventory decays to a level permitting termination of the licence and unrestricted release of the structure. 2. [All steps leading to the release of a nuclear facility, other than a disposal facility, from regulatory control. These steps include the processes of decontamination and dismantling.] (See Ref. [5].)	IAEA-safety-glossary
 decommissioning-plan	en	See decommissioning (1).	IAEA-safety-glossary
 decontamination	en	The complete or partial removal of contamination by a deliberate physical, chemical or biological process. This definition is intended to include a wide range of processes for removing contamination from people, equipment and buildings, but to exclude the removal of radionuclides from within the human body or the removal of radionuclides by natural weathering or migration processes, which are not considered to be decontamination. See also remediation.	IAEA-safety-glossary
 decontamination-factor	en	The ratio of the activity per unit area (or per unit mass or volume) before a particular decontamination technique is applied to the activity per unit area (or per unit mass or volume) after application of the technique. This ratio may be specified for a particular radionuclide or for gross activity. The background activity may be deducted from the activity per unit area both before and after a particular decontamination technique is applied.	IAEA-safety-glossary
@@ -690,7 +685,6 @@ package	en	The complete product of the packing operation, consisting of the pack
 package-waste	en	See waste package.	IAEA-safety-glossary
 packaging	en	1. One or more receptacles and any other components or materials necessary for the receptacles to perform containment and other safety functions. (See SSR-6 (Rev. 1) [2].) 2. See radioactive waste management (1).	IAEA-safety-glossary
 palaeoseismicity	en	The evidence of a prehistoric or historical earthquake manifested as displacement on a fault or secondary effects such as ground deformation (i.e. liquefaction, tsunami, landslides).	IAEA-safety-glossary
-fluence	en	See fluence.	IAEA-safety-glossary
 passenger-aircraft	en	See aircraft.	IAEA-safety-glossary
 passive-component	en	A component whose functioning does not depend on an external input such as actuation, mechanical movement or supply of power. A passive component has no moving part, and, for example, only experiences a change in pressure, in temperature or in fluid flow in performing its functions. In addition, certain components that function with very high reliability based on irreversible action or change may be assigned to this category. Examples of passive components are heat exchangers, pipes, vessels, electrical cables and structures. It is emphasized that this definition is necessarily general in nature, as is the corresponding definition of active component. Certain components, such as rupture discs, check valves, safety valves, injectors and some solid state electronic devices, have characteristics which require special consideration before designation as an active component or a passive component. Any component that is not a passive component is an active component. See also component, core components and structures, systems and components.	IAEA-safety-glossary
 pathway	en	See exposure pathway.	IAEA-safety-glossary
@@ -780,7 +774,6 @@ radioactive-sources-safety-of	en	See safety of radioactive sources.	IAEA-safety-
 radioactive-substance	en	See radioactive material (1).	IAEA-safety-glossary
 radioactive-waste	en	1. For legal and regulatory purposes, material for which no further use is foreseen that contains, or is contaminated with, radionuclides at activity concentrations greater than clearance levels as established by the regulatory body. In effect, radioactive material in gaseous, liquid or solid form for which no further use is foreseen. ! It should be recognized that this definition is purely for regulatory purposes, and that material with activity concentrations equal to or less than clearance levels is radioactive from a physical viewpoint, although the associated radiological hazards are considered negligible. See also radioactive, radioactive material and radioactive substance. Waste should be used in the singular unless reference is expressly being made to the presence of various types of waste. 2. [Radioactive material in gaseous, liquid or solid form for which no further use is foreseen by the Contracting Party or by a natural or legal person whose decision is accepted by the Contracting Party, and which is controlled as radioactive waste by a regulatory body under the legislative and regulatory framework of the Contracting Party.] (See Ref. [5].)	IAEA-safety-glossary
 radioactive-waste-management	en	1. All administrative and operational activities involved in the handling, pretreatment, treatment, conditioning, transport, storage and disposal of radioactive waste. Radioactive waste management Predisposal Disposal management Processing Storage Transport Pretreatment Treatment Conditioning Segregation Decontamination Activity Immobilization Overpack removal	IAEA-safety-glossary
-collection-chemical-volume-change-of-packaging	en	adjustment reduction composition conditioning. Those operations that produce a waste package suitable for handling, transport, storage and/or disposal. Conditioning may include the conversion of the waste to a solid waste form, enclosure of the waste in containers and, if necessary, provision of an overpack. immobilization. Conversion of waste into a waste form by solidification, embedding or encapsulation. Immobilization reduces the potential for migration or dispersion of radionuclides during handling, transport, storage and/or disposal. overpack. A secondary (or additional) outer container for one or more waste packages, used for handling, transport, storage and/or disposal. packaging. Preparation of radioactive waste for safe handling, transport, storage and/or disposal by means of enclosing it in a suitable container. predisposal management. Any waste management steps carried out prior to disposal, such as pretreatment, treatment, conditioning, storage and transport activities. Predisposal is not a form of disposal: predisposal is used as a contraction of ‘pre-disposal management of radioactive waste’. pretreatment. Any or all of the operations prior to waste treatment, such as collection, segregation, chemical adjustment and decontamination. processing. Any operation that changes the characteristics of waste, including pretreatment, treatment and conditioning. segregation. An activity where types of waste or material (radioactive or exempt) are separated or are kept separate on the basis of radiological, chemical and/or physical properties, to facilitate waste handling and/or processing. treatment. Operations intended to benefit safety and/or economy by changing the characteristics of the waste. Three basic treatment objectives are: (a) Volume reduction; (b) Removal of radionuclides from the waste; (c) Change of composition. Treatment may result in an appropriate waste form. If treatment does not result in an appropriate waste form, the waste may be immobilized. volume reduction. A treatment method that decreases the physical volume of a waste. Typical volume reduction methods are mechanical compaction, incineration and evaporation. Should not be confused with waste minimization. See also minimization of waste. 2. [All activities, including decommissioning activities, that relate to the handling, pretreatment, treatment, conditioning, storage or disposal of radioactive waste, excluding off-site transportation. It may also involve discharges.] (See Ref. [5].)	IAEA-safety-glossary
 radioactive-waste-management-facility	en	1. Facility specifically designed to handle, treat, condition, store or permanently dispose of radioactive waste. 2. [Any facility or installation the primary purpose of which is radioactive waste management, including a nuclear facility in the process of being decommissioned only if it is designated by the Contracting Party as a radioactive waste management facility.] (See Ref. [5].)	IAEA-safety-glossary
 radioactivity	en	The phenomenon whereby atoms undergo spontaneous random disintegration, usually accompanied by the emission of radiation. ! In IAEA publications, radioactivity should be used only to refer to the phenomenon. ! To refer to the physical quantity or to an amount of a radioactive substance, use activity.	IAEA-safety-glossary
 radiological-assessor	en	A person or team who in the event of a nuclear or radiological emergency assists the operator or off-site response organizations by performing radiological surveys, performing dose assessments, controlling contamination, ensuring the radiation protection of emergency workers and formulating recommendations on protective actions and other response actions. The radiological assessor could be the radiation protection officer.	IAEA-safety-glossary
@@ -808,9 +801,6 @@ regulatory-body	en	1. An authority or a system of authorities designated by the 
 regulatory-control	en	See control (1).	IAEA-safety-glossary
 regulatory-inspection	en	See inspection.	IAEA-safety-glossary
 relative-biological-effectiveness	en	A measure of the relative effectiveness of different radiation types at inducing a specified health effect, expressed as the inverse ratio of the absorbed doses of two different radiation types that would produce the same degree of a defined biological end point. Values of relative biological effectiveness in causing the development of deterministic effects are selected to be representative of the severe deterministic effects that are significant to emergency preparedness and response. The tissue or organ specific and radiation type specific values of RBET,R for the development of selected severe deterministic effects are as shown in the following table.	IAEA-safety-glossary
-health-effect-critical-tissue-or-organ-exposurea-rbet-r	en	External and internal γ 1	IAEA-safety-glossary
-haematopoietic-external-and-internal-n-3	en	Red marrow syndrome Internal β 1 Internal α 2 External and internal γ 1 External and internal n 3 Pneumonitis Lungb Internal β 1 Internal α 7 External and internal γ 1	IAEA-safety-glossary
-gastrointestinal-external-and-internal-n-3	en	Colon syndrome Internal β 1 Internal α 0c External β, γ 1 Necrosis Tissued External n 3 External β, γ 1 Moist desquamation Skine External n 3 Intake of iodine isotopesf 0.2 Hypothyroidism Thyroid Other thyroid seekers 1 a External β, γ exposure includes exposure due to bremsstrahlung produced within the material of the source. b Tissue of the alveolar–interstitial region of the respiratory tract. c For alpha emitters uniformly distributed in the contents of the colon, it is assumed that irradiation of the walls of the intestine is negligible. d Tissue at a depth of 5 mm below the skin surface over an area of more than 100 cm2. e Tissue at a depth of 0.4 mm below the skin surface over an area of more than 100 cm2. f Uniform irradiation of the tissue of the thyroid gland is considered to be five times more likely to produce deterministic effects than internal exposure due to low energy beta emitting isotopes of iodine such as 131I, 129I, 125I, 124I and 123I. Thyroid seeking radionuclides have a heterogeneous distribution in thyroid tissue. The isotope 131I emits low energy beta particles, which leads to a reduced effectiveness of irradiation of critical thyroid tissue owing to the dissipation of the energy of the particles within other tissues.	IAEA-safety-glossary
 relative-biological-effectiveness-weighted-absorbed-dose-adt	en	See dose quantities: absorbed dose	IAEA-safety-glossary
 relative-risk	en	See risk (3).	IAEA-safety-glossary
 release	en	The action or process of setting free or being set free, or of allowing or being allowed to move or flow freely. ! Release is used in both a physical ‘scientific’ sense (see discharge (1)) and a ‘regulatory’ sense (see clearance), as well as in the usual sense of, for example, a release of energy.	IAEA-safety-glossary
@@ -1008,560 +998,554 @@ urgent-protective-action-planning-zone	en	See emergency planning zone.	IAEA-safe
 urgent-response-phase	en	See emergency response phase.	IAEA-safety-glossary
 use	en	authorized use. Use of radioactive material or radioactive objects from an authorized facility or activity in accordance with an authorization. Intended primarily for contrast with clearance, in that clearance implies no further regulatory control over the use, whereas the authorization for authorized use may prescribe or prohibit specific uses. A form of restricted use. restricted use. The use of an area or of materials subject to restrictions imposed for reasons of radiation protection and safety. Restrictions would typically be expressed in the form of prohibition of particular activities (e.g. house building, growing or harvesting particular foods) or prescription of particular procedures (e.g. materials may only be recycled or reused within a facility). unrestricted use. The use of an area or of material without any radiologically based restrictions. ! There may be other restrictions on the use of the area or material, such as planning restrictions on the use of an area of land or restrictions related to the chemical properties of a material. ! In some situations, these restrictions could, in addition to their primary intended effect, have an incidental effect on radiation exposure, but the use is classified as unrestricted use unless the primary reason for the restrictions is radiological. Unrestricted use is contrasted with restricted use.	IAEA-safety-glossary
 # ---- Imported from GB/T-4960.9 (2026-04-14) ----
-magnetic-confinement-fusion	en	利用强磁场将高温度和高密度等离子体约束足够长的时间而产生的核聚变反应，可以通过托卡马克(2.1.284)、仿星器(2.1.273)、反场箍缩(2.2.117)、Z箍缩(2.1.306)以及 θ 箍缩(2.1.283)等途径实现。	GB/T-4960.9
-acoustic-heating	en	由磁泵抽运加热等离子体的方式。 注：磁泵抽运的频率远低于离子碰撞频率，同离子通过发生磁泵抽运的区域的渡越频率同一数量级。在这种情况下，振荡场产生能被等离子体吸收的声波。	GB/T-4960.9
-adiabatic-compression	en	通过磁场压缩等离子体，保持其磁矩不变的过程。	GB/T-4960.9
-adiabatic-compression-heating	en	通过绝热压缩加热等离子体。	GB/T-4960.9
-adiabatic-invariant	en	当磁场随空间或时间变化时，带电粒子在磁场中运动的某些保持不变的参量或由它们组合起来的一些保持不变的量。这些参量包括磁矩、纵向不变量、通过粒子漂移轨道的磁通量等，它们是准静态过程中的不变量。	GB/T-4960.9
-advanced-research-innovation-and-evaluation-study	en	美国从20世纪90年代开始的一项磁约束聚变反应堆设计研究计划。至今已设计研究过多种聚变反应堆：ARIES-I基于当时托卡马克(2.1.284)物理数据的适当外推而设计的装置，ARIES-II和ARIES-IV为堆芯成分不同的两个运行第二稳定性区的装置，ARIES-III则是使用 D^-3He 聚变反应代替D-T反应的一种反应堆型。	GB/T-4960.9
-advanced-tokamak	en	同时具备稳态运行、高等离子体约束性能、高比压 (β) 值、高自举电流，并能有效移除能量及废料的 托卡马克(2.1.284)装置。	GB/T-4960.9
-alfven-gap-modes	en	托卡马克(2.1.284)等离子体的环向特性使阿尔芬波的原先的连续谱产生间隙，它们是以不连续的无阻尼的间隙模式存在。 注：这些模可以与高能粒子(例如，来自聚变反应的 α 粒子)产生共振而激发不稳定性，造成高能粒子的反常损失。	GB/T-4960.9
-alfven-time	en	阿尔芬波沿环向方向传播一弧度所需的时间，它是磁流体不稳定性效应的一个时间标度。	GB/T-4960.9
-alfven-velocity	en	在磁场方向阿尔芬波在等离子体中的传播速度，它与磁场强度成正比，与离子密度平方根成反比。	GB/T-4960.9
-alfven-wave	en	基本表现等离子体磁流体动力学性质的波动现象，表现为等离子体中的一种磁场振荡。参见快阿尔芬波(2.1.101)。	GB/T-4960.9
-alfven-wave-instability	en	当等离子体粒子在沿磁场方向上运动的能量大于垂直于磁场平面中的能量时，所产生的电磁微观不稳定性。 注：这是由作用在沿弯曲的磁力线流动的等离子体上的离心力引起的。这种不稳定性导致整个磁场形状来回振荡。	GB/T-4960.9
-alpha-channel-effect	en	通过等离子体波将聚变 α 粒子能量直接传递给离子。	GB/T-4960.9
-ambipolar-diffusion	en	当等离子体中出现密度梯度时，电子的扩散比离子快得多，结果引起电荷分离，使等离子体内出现电场的现象。 注：这种电场引起电子迁移减慢而使离子迁移加快，达到准稳态时，电子和离子的通量密度相等(假定离子电荷数为1)。	GB/T-4960.9
-anomalous-diffusion	en	等离子体中由非经典输运引起的等离子体粒子横越磁场的快速扩散，它使等离子体约束性能变坏。参见反常输运(2.1.17)。	GB/T-4960.9
-anomalous-electron-thermal-conduction	en	与等离子体中经典输运理论相比，在实验中测量到更大电子热传导损失的现象。参见反常输运(2.1.17)。	GB/T-4960.9
-anomalous-transport	en	与等离子体中经典输运理论相比，在实验中测量到更大输运损失的现象。	GB/T-4960.9
-aspect-ratio	en	环形等离子体的大半径与小半径之比。参见等离子体几何位形(2.1.220)。	GB/T-4960.9
-auxiliary-heating-additional-heating	en	除等离子体自身效应加热之外的附加加热，主要包括中性束注入和射频波加热等。	GB/T-4960.9
-ballooning-instability	en	环形等离子体中，由压强梯度在环外侧驱动的局部磁流体动力学不稳定性。	GB/T-4960.9
-banana-orbit	en	环形等离子体中，磁场中的俘获粒子导向中心的一种常见运行轨迹，因其形似香蕉而得名。	GB/T-4960.9
-bernstein-mode	en	在高温等离子体中垂直于磁场传播的准静电性质的波动模式。	GB/T-4960.9
-beta-value	en	β 值 等离子体压强与磁压强之比，是磁约束的品质因数之一。	GB/T-4960.9
-mhd-stability-limit	en	β 极限 磁约束等离子体可达到的最大比压值。	GB/T-4960.9
-bohm-diffusion	en	等离子体粒子横越磁场的反常扩散现象。扩散系数通常比经典扩散系数大几个数量级，而且扩散系数与磁场强度成反比。	GB/T-4960.9
-bohm-transport	en	回旋玻姆输运 gyro-Bohm transport 与长波长等离子体扰动有关的反常扩散，这类输运的约束时间随磁场线性地增大。	GB/T-4960.9
-bootstrap-current	en	在存在压强梯度情况下，由新经典效应引起的环向电流，它与环形磁场系统中捕获粒子效应相关。亦称靴带电流。	GB/T-4960.9
-burn-fraction-of-thermonuclear-fuel	en	热核反应过程中，反应燃烧掉的热核燃料质量与投料质量的比值，它取决于燃烧速率和约束的好坏。	GB/T-4960.9
-central-electron-density	en	磁约束聚变装置中磁轴处的等离子体电子密度。	GB/T-4960.9
-closed-configuration	en	空间磁力线闭合的一种磁场结构，以便使等离子体只有通过横越磁力线扩散才能从该系统逃逸。	GB/T-4960.9
-cold-plasma	en	温度效应可被忽略的等离子体模型，即比起外加约束磁场的磁压力、动(力)压力可以忽略的情形(即 β 值远小于1)。	GB/T-4960.9
-collective-instabilities	en	当高能粒子的压强比较高(可与等离子体热压强相比较)时，由高能粒子激发的不稳定性。	GB/T-4960.9
-collective-phenomena	en	由于库仑作用的长程性质，等离子体内粒子群体行为所产生的现象。	GB/T-4960.9
-collisional-plasma	en	粒子的运动受二体短程碰撞支配的等离子体。	GB/T-4960.9
-collisionless-plasma	en	可以忽略二体库仑碰撞效应的理想等离子体。	GB/T-4960.9
-collisionless-shock-wave	en	等离子体中波阵面内的耗散机制不是库仑碰撞效应时的激波。该激波中波阵面的厚度小于平均自由程。	GB/T-4960.9
-collisionless-tearing-instability	en	在无碰撞等离子体中，由密度和温度的不均匀性驱动的撕裂模不稳定性。通常，电子的惯性、霍尔电流、压强梯度或者朗道阻尼是造成等离子体与磁力线分离的原因。	GB/T-4960.9
-h-factor	en	等离子体高约束模式与低约束模式的约束时间之比。	GB/T-4960.9
-confinement-time	en	表征能量(或粒子)从等离子体中损失的特征时间。 注：处于热平衡态的等离子体中，能量约束时间被定义为总储能与总加热功率之比。	GB/T-4960.9
-controlled-thermonuclear-fusion	en	在一个有限的空间内将很轻的原子核加热到极高温度，使其在受控条件下进行聚变反应的过程。	GB/T-4960.9
-core-confinement	en	靠近等离子体中心的高温、高密度区域的能量和粒子约束。	GB/T-4960.9
-current-drive	en	由外部注入动量(例如，用射频波或中性束注入)驱动等离子体电流的过程。可帮助实现托卡马克 (2.1.284) 稳态运行，并应用于优化等离子体位形以控制不稳定性和改善等离子体约束。	GB/T-4960.9
-cusped-geometry	en	磁力线处处凸向位形中心的磁场位形。这种位形有利于稳定磁流体不稳定性。	GB/T-4960.9
-cyclotron-frequency	en	在磁场中，带电粒子在洛伦兹力作用下围绕磁力线做回旋运动的固有频率，其大小与带电粒子的质量及磁场的强度有关。	GB/T-4960.9
-cyclotron-instability	en	在均匀的各向异性等离子体中，由于粒子的回旋运动同与等离子体振荡相联系的静电波之间的耦合激发的静电微观不稳定性。	GB/T-4960.9
-synchrotron-radiation	en	磁场中的带电粒子因其回旋运动而发出的辐射。	GB/T-4960.9
-cyclotron-resonance	en	电磁波的频率接近带电粒子的回旋频率(及其谐波)时出现的波与等离子体能量交换的现象。	GB/T-4960.9
-cyclotron-resonance-heating	en	利用射频波，通过回旋共振机制加热等离子体的方法。包括离子回旋共振加热与电子回旋共振加热。	GB/T-4960.9
-cylindrical-approximation	en	大环径比条件下对托卡马克环形几何位形的一种近似。	GB/T-4960.9
-d-alpha-light	en	氘阿尔法辐射 D-alpha radiation 氘原子的电子由 n = 3 退激至 n = 2 所发出的可见光辐射。	GB/T-4960.9
-d-shaped-plasma	en	具有形似英文大写字母"D"形横截面的等离子体。	GB/T-4960.9
-debye-length	en	德拜球半径 Debye sphere radius 一个电子受到一个给定的正离子电场影响的距离，它是等离子体中的一个特征长度，是电子电荷密度能够明显地区别于离子电荷密度的距离的量度。	GB/T-4960.9
-degenerate-configuration	en	由简并磁力线形成的闭合磁位形，即磁力线在绕位形有限次数之后本身正好闭合的位形。	GB/T-4960.9
-density-limit	en	稳定运行的磁约束装置中等离子体所能达到的最高密度。	GB/T-4960.9
-dd-reaction	en	D-D反应 氘核间的聚变反应。 反应式为： \mathrm {D} + \mathrm {D} \rightarrow \mathrm {n} + ^ {3} \mathrm {H e} \mathrm {D} + \mathrm {D} \rightarrow \mathrm {p} + \mathrm {T} 等概率地生成氦核/中子、氚/质子的同时释放能量。	GB/T-4960.9
-d-he3-reaction	en	氘与氦之间发生的受控聚变反应，反应式为： \mathrm {D} + ^ {3} \mathrm {H e} \rightarrow \mathrm {p} + ^ {4} \mathrm {H e} + 1 8. 4 \mathrm {M e V} 注：因燃料没有放射性，且不直接产生中子，这种反应比氘-氚反应更具有安全和环保的优点。但聚变条件更高。	GB/T-4960.9
-deuterium-tritium-plasma	en	由氘和氚混合物形成的等离子体。	GB/T-4960.9
-dt-reaction	en	目前最有希望实现聚变能应用的反应： \mathrm {D} + \mathrm {T} \rightarrow \mathrm {n} + ^ {4} \mathrm {H e} + 1 7. 6 \mathrm {M e V} 又称D-T反应(D-Treaction)或氘-氚燃烧(D-Tburn)。	GB/T-4960.9
-diamagnetic-effect	en	逆磁电流产生的磁场与原来的磁场方向相反，使通过等离子体的磁场强度减弱的效应。	GB/T-4960.9
-diamagnetic-plasma	en	当磁通量穿过等离子体时，由于产生的感应电流形成一个反方向的磁通量，而使等离子体的磁通量减少。	GB/T-4960.9
-dispersion-relation	en	等离子体波动或不稳定性的频率和波矢量之间的关系。	GB/T-4960.9
-displacement-of-plasma	en	等离子体偏离宏观平衡位置的移动。	GB/T-4960.9
-disruption	en	等离子体的温度陡然下降并使等离子体放电在短时间出现瞬间淬灭的现象，它导致放电中断并严重损坏核聚变装置。也称为等离子体破裂(plasma disruption)。	GB/T-4960.9
-disruptive-instability	en	托卡马克(2.1.284)装置等离子体中最常见的宏观不稳定性。主要特征是：磁通量突变，电流通道迅速(几十微秒内)膨胀，等离子体环显著地向环内侧移动，等离子体环电压波形图上出现负尖脉冲，同时等离子体电流波形图上出现正尖脉冲，能量和粒子输运增强(温度、密度、杂质浓度分布发生突变，软X射线信号也发生相应变化)。破裂不稳定性依其特征可分为内破裂和外破裂。内破裂主要表现为由 等离子体中心区软X射线发射强度波形图上的锯齿振荡，可用 m = 1 的撕裂模不稳定性来解释。外破裂又依其电压波形图上负尖脉冲幅值大小分为大破裂和小破裂。破裂不稳定性的发生不仅限制其等离子体参数的进一步提高，约束性能变坏，甚至引起等离子体电流突然中断。	GB/T-4960.9
-dissociative-recombination	en	电子同正的分子离子相结合，随之是分子离解的过程。所形成的原子带走过剩能量。如： \mathrm {H} _ {2} ^ {+} + \mathrm {e} \rightarrow \mathrm {H} _ {2} ^ {*} \rightarrow \mathrm {H} + \mathrm {H}	GB/T-4960.9
-divertor-physics	en	与偏滤器有关的物理问题。	GB/T-4960.9
-double-null-equilibrium	en	有两个极向磁场零点存在的等离子体平衡位形。	GB/T-4960.9
-drift-cyclotron-resonance-instability	en	在绝热不变性遭到破坏的某个频率范围内(包括粒子回旋频率)的静电漂移不稳定性。当横向漂移波和离子回旋运动发生共振时，这种不稳定性具有最高的增长速率。	GB/T-4960.9
-drift-dissipative-instability	en	一组类似于无碰撞漂移不稳定性的静电不稳定性，但其增长率同碰撞有关，而不是同共振粒子有关。	GB/T-4960.9
-drift-instability	en	由垂直于磁场方向的空间密度梯度或温度梯度引起的等离子体逆磁漂移所形成的一类微观不稳定性。又称为普适不稳定性。	GB/T-4960.9
-drift-kinetic-theory	en	描述粒子导向中心分布函数的动理学理论。	GB/T-4960.9
-drift-orbits	en	在横向电场和非均匀磁场中带电粒子的运动轨道。	GB/T-4960.9
-drift-surface	en	根据绝热不变性定律，粒子导向中心被限制在某个面上运动。	GB/T-4960.9
-drift-wave	en	在不均匀等离子体中，由于温度、密度或者磁场强度等梯度的出现，在垂直于磁场和梯度方向形成漂移流从而形成的波动。	GB/T-4960.9
-driven-current	en	用外加手段(例如：电磁感应、中性束以及射频波)产生的等离子体电流。	GB/T-4960.9
-dusty-plasma	en	由大量电子、离子及带电和不带电尘埃粒子组成的宏观电中性体。	GB/T-4960.9
-edge-fluctuations	en	在等离子体边界区域发生的密度或者电场的波动。	GB/T-4960.9
-edge-localized-mode	en	在高约束(H模)状态下由边缘很窄的区域形成的高压强梯度引起的张弛性不稳定性。它会瞬间导致粒子和能量从边缘损失掉。	GB/T-4960.9
-edge-physics	en	等离子体边界区域的物理问题。	GB/T-4960.9
-edge-plasma	en	靠近最后一个封闭磁面内侧的等离子体。	GB/T-4960.9
-eikonal-equation	en	电磁波或声波在非均匀介质中传播的方程，只有当介质性质的变化在波长距离范围内很小时，它才有效。	GB/T-4960.9
-e-layer	en	在天体器装置上用来形成、加热及约束所包围的等离子体的相对论电子层。它是由相对论电子束产生的。向磁镜装置注入一束通量充分高的电子流, 则由电子流产生的磁场可超过初始磁场, 从而形成与初始磁场反向的相对论电子圆柱层。	GB/T-4960.9
-electromagnetic-load	en	因载流等离子体运动在周围导体结构中感生的电流所产生的机械载荷。	GB/T-4960.9
-cyclotron-frequency	en	电子在磁场中作回旋运动的角频率。	GB/T-4960.9
-electron-cyclotron-resonance-heating	en	其频率与电子回旋频率相匹配的射频波辅助加热手段。	GB/T-4960.9
-electron-cyclotron-wave	en	平行于外加磁场传播的圆偏振射频波，其频率低于电子回旋共振频率。	GB/T-4960.9
-electron-plasma-frequency	en	等离子体中电子的自由静电振荡频率。	GB/T-4960.9
-electron-temperature	en	电子的动理学温度。	GB/T-4960.9
-electrostatic-confinement	en	用电场约束等离子体。	GB/T-4960.9
-electrostatic-wave	en	在等离子体中由电中性扰动引起的纵波。	GB/T-4960.9
-elmy-h-mode	en	伴随有边缘局域模的高约束模式(H模)。	GB/T-4960.9
-plasma-elongation	en	等离子体极向截面高度与宽度之比。	GB/T-4960.9
-empirical-scaling-formulas	en	根据实验数据分析而拟合出来的描述等离子体参数随实验参数变化的公式。	GB/T-4960.9
-energy-break-even	en	核聚变释放出来的能量与用于加热等离子体能量相等的条件。也称为得失平衡(Break-even)。	GB/T-4960.9
-tau-e	en	表征能量从等离子体中损失的特征时间，其数值等于等离子体的总能量与能量总损失功率之比。	GB/T-4960.9
-energy-confinement-time-scaling-law	en	根据实验数据分析而拟合出来的等离子体能量约束时间随实验参数的变化规律。	GB/T-4960.9
-energy-loss-time	en	等离子体(由于辐射或者其他机理)损失的能量相当于它的平均动能所需的时间。参见能量约束时间(2.1.95)。	GB/T-4960.9
-enhanced-particle-modes	en	能够加速特定种类粒子的磁流体活动。	GB/T-4960.9
-entropy-trapping	en	通过使粒子的有序运动随机化的过程，把一个有序的粒子束俘获在某一磁场位形中，其结果使系统的熵增加。	GB/T-4960.9
-equilibration-times	en	电子和离子热交换达到平衡所需的时间。	GB/T-4960.9
-fast-alfven-wave	en	存在于等离子体中的波。其频率范围较宽，其速度可与阿尔芬速度相比。	GB/T-4960.9
-finite-heat-conductivity-instability	en	在沿磁场方向存在有限热导的情况下，由横向压力梯度驱动的静电不稳定性。	GB/T-4960.9
-fire-hose-instability	en	当粒子在磁场方向的能量大于垂直于磁场方向的能量时，在等离子体中产生的电磁流体力学不稳定性。 注：这种不稳定性是由于当等离子体沿着弯曲的磁力线运动时，有离心力作用于等离子体上所致，引起磁场分布整体地前后振荡，当存在涉及整体等离子体大的各向异性时出现阿尔芬波不稳定性，当存在小的各向异性时发生慢阿尔芬波不稳定性。	GB/T-4960.9
-fishbone-instability	en	高能粒子驱动的磁流体动力学不稳定性(MHD)，实验观测到像鱼骨形状的周期暴发信号。	GB/T-4960.9
-flip-instability	en	出现在具有反向俘获场的角向箍缩装置中的电磁宏观不稳定性。这时，相应等离子体电流的磁矩与约束线圈产生的磁矩方向相反。因此，如果等离子体通过装置的中心平面，则将释放磁能。	GB/T-4960.9
-fokker-planck-equation	en	考虑多重小角散射的动理学方程。	GB/T-4960.9
-frozen-magnetic-field	en	在磁场中具有无限大电导率的流体的运动伴随有磁场的形变，就好像磁力线被冻结在流体中并带它一起移动。	GB/T-4960.9
-fullwave-theory	en	考虑波的各种行为(包括传播、吸收等)的一种理论。	GB/T-4960.9
-fusion	en	核聚变 nuclear fusion 轻元素的原子核聚合在一起形成较重元素的原子核并释放出能量的核反应。最易实现的核聚变是在氢的两个同位素(氘和氚)之间的反应。氘-氚核聚变反应所释放的大部分能量是由高速中子所带走的。其余的能量则归于反应中产生的 α 粒子(氦核<sup>4</sup>He)。	GB/T-4960.9
-fusion-triple-product	en	等离子体密度、温度和能量约束时间的乘积。也称为三乘积(riple product)。	GB/T-4960.9
-gas-discharge-plasma	en	在气体中施加电场，导致自然存在或引入的空间带电粒子被加速，当电场足够强时会导致"雪崩"，形成放电的等离子体状态。	GB/T-4960.9
-grad-shafranov-equation	en	描述托卡马克(2.1.284)中等离子体宏观磁流体平衡的偏微分方程。因美国学者Grad和前苏联学者Shafranov同时导出而得名。	GB/T-4960.9
-gravitational-instability	en	G模不稳定性 Gmodeinstability 等离子体在重力(或者某种等效惯性力)的作用下而出现横越磁力线滑移时，出现的电磁宏观不稳定性。	GB/T-4960.9
-greenwald-density	en	由美国学者格林沃尔德总结的托卡马克(2.1.284)中等离子体能达到的最高密度。它是托卡马克中密度极限的一种量度。	GB/T-4960.9
-guiding-center	en	导心 带电粒子在电磁场中运动时拉莫尔回旋轨道的中心。	GB/T-4960.9
-gyro-kinetic-theory	en	通过离子围绕磁力线的快速回旋运动与导心慢运动解耦来描述等离子体中低频行为的动理学理论。	GB/T-4960.9
-gyrorelaxation-effect	en	利用磁泵增加等离子体中粒子能量的效应。其实现条件是：磁泵调制周期接近于碰撞周期而远大于粒子回旋周期。	GB/T-4960.9
-gyrorelaxation-heating	en	利用回旋弛豫效应加热等离子体的方法。	GB/T-4960.9
-h-factor	en	等离子体在高约束模式(H模)下的约束时间与按低约束模式(L模)定标定律估计的约束时间之比。	GB/T-4960.9
-h-l-transition	en	高约束模向低约束模的转换。	GB/T-4960.9
-h-mode	en	在磁约束核聚变装置等离子体中，随着辅助加热功率的上升，保持或改善的良好约束模式。	GB/T-4960.9
-hybrid-resonance	en	磁化等离子体中的一种共振，包括以等离子体频率为特征的平行聚束和以回旋频率为特征的粒子垂直运动的两个方面。	GB/T-4960.9
-hydromagnetic-wave	en	磁场中在导电流体(液体或等离子体)中传播的物质波。	GB/T-4960.9
-ideal-internal-kink-mode	en	在托卡马克(2.1.284)中心区域的理想磁流体不稳定性。	GB/T-4960.9
-impurities	en	聚变燃料(及其反应产物)和电子之外的其他粒子。	GB/T-4960.9
-impurity-radiation	en	由杂质引起的能量辐射。	GB/T-4960.9
-impurity-screening	en	避免杂质进入等离子体采取的措施。例如：硅化、硼化以及锂化处理第一壁。	GB/T-4960.9
-inboard-plasma-shape	en	等离子体大圆周内侧(靠近装置中心)的形状。它受最近的极向场线圈(通常也有中心螺线管)影响很大。	GB/T-4960.9
-indentation	en	托卡马克(2.1.284)等离子体位形中具有"豆形"横截面内凹的度量。	GB/T-4960.9
-interchange-instability	en	槽型不稳定性 flute instability 等离子体同磁场交换位置的磁流体动力学宏观不稳定性。	GB/T-4960.9
-internal-inductance	en	l_i 托卡马克(2.1.284)等离子体环单位长度上的自感，通常用符号 l_i 来表示。	GB/T-4960.9
-internal-kink-mode	en	发生在等离子体中心区的磁流体动力学不稳定性。	GB/T-4960.9
-internal-mode	en	发生在托卡马克(2.1.284)等离子体中心，其扰动不影响等离子体边界的磁流体动力学不稳定性。	GB/T-4960.9
-internal-reconnection-event	en	使磁力线撕裂并且重联成为不同拓扑形态的不稳定性事件。它使系统达到更低的能态，通常在球形托卡马克(2.1.284)上可以观察到。	GB/T-4960.9
-internal-transport-barrier	en	等离子体内部自发形成的阻碍粒子和能量输运的屏障。	GB/T-4960.9
-ion-acoustic-wave	en	在等离子体中，由离子惯性和电子压力结合而形成的纵向压缩波。	GB/T-4960.9
-ion-bernstein-wave	en	在离子回旋频率谐波下垂直于磁场传播的等离子体波。	GB/T-4960.9
-ion-cyclotron-current-drive	en	用离子回旋共振波产生的非感应电流驱动。	GB/T-4960.9
-eccd	en	用电子回旋共振波产生的非感应电流驱动。	GB/T-4960.9
-ion-cyclotron-emission	en	因为离子回旋运动而产生的电磁波辐射。	GB/T-4960.9
-ion-cyclotron-resonance-heating	en	其频率与离子回旋频率相匹配的射频波辅助加热手段。	GB/T-4960.9
-ion-plasma-frequency	en	f_pi 在等离子体中离子的静电振荡频率。	GB/T-4960.9
-ion-temperature	en	离子的动理学温度。单位为 eV 。	GB/T-4960.9
-ion-wave-instability	en	离子声不稳定性 ion acoustic instability 离子等离子体振荡(离子和电子之间沿磁力线相对运动)引起的静电微观不稳定性。	GB/T-4960.9
-isotropic-plasma	en	在各个方向上，具有相同性质(例如：密度、温度等)的等离子体。	GB/T-4960.9
-kelvin-helmholtz-instability	en	在具有不同速度流体间的界面上出现的静电宏观不稳定性。	GB/T-4960.9
-kinetic-instability	en	因为速度空间的不均匀性而引起的不稳定性。	GB/T-4960.9
-kinetic-pressure	en	由于组成等离子体的粒子的热运动而产生的动量密度。	GB/T-4960.9
-kinetic-theory	en	运用统计物理学原理研究等离子体的一种理论方法。	GB/T-4960.9
-kink-mode	en	导致等离子体整体扭拧的宏观不稳定性。	GB/T-4960.9
-kink-mode	en	导致等离子体柱变形为扭结状的磁流体动力学不稳定性。	GB/T-4960.9
-kruskal-limit	en	克鲁斯卡尔-沙弗拉诺夫极限 Kruskal-Shafranov limit 产生扭曲不稳定的环电流的极限值。	GB/T-4960.9
-l-h-transition	en	从低约束模向高约束模的转换。	GB/T-4960.9
-l-mode	en	在磁约束装置等离子体中，随着辅助加热功率的提高而约束变差的模式。	GB/T-4960.9
-landau-damping	en	波在热等离子体中传播时，与速度接近于波的相速度 V_Phi 的等离子体粒子相互作用而引起的阻尼现象。	GB/T-4960.9
-langmuir-frequency	en	在电场作用下，电子作集体运动而引起的等离子体振荡频率。	GB/T-4960.9
-larmor-radius	en	回旋半径 cyclotron radius 对于在磁场中作横向运动的带电粒子，将其轨迹投影在与磁场垂直的平面上的曲率半径。	GB/T-4960.9
-lawson-criterion	en	由劳逊导出的实现氘氚受控核聚变的判据。即等离子体温度大于1亿度(10 keV)，等离子体密度和等离子体能量约束时间的乘积大于 2 times 10^20 ~m^-3 ~s 。	GB/T-4960.9
-line-tying	en	磁力线束缚 tying down of the line of force 当等离子体中的磁力线指向导体壁时出现的一种效应。因为磁力线不能迅速穿过导体，于是，就能对等离子体的交换不稳定性起稳定作用。	GB/T-4960.9
-locked-mode	en	旋转的磁流体模的频率被锁定的状态。	GB/T-4960.9
-loss-cone	en	磁镜位形中，平行速度和垂直速度比大于一定值时，带电粒子可以穿越磁镜损失，这个比值的阈值在速度空间坐标中呈现一个锥形。	GB/T-4960.9
-loss-cone-instability	en	在开端系统中，由于损失锥内等离子体产生电荷不平衡，而出现的静电微观不稳定性。	GB/T-4960.9
-low-beta-plasma	en	比压值 (β) 一般为 0 sim 0.01 的等离子体。	GB/T-4960.9
-lower-hybrid-wave	en	LH波 其频率处于离子与电子回旋频率之间的射频波。它具有平行于磁场的电场分量，因此，它可以加速沿磁力线移动的电子。	GB/T-4960.9
-low-field-side	en	环形磁约束装置中，外侧场强比内侧场强低的区域，亦称为低场区。	GB/T-4960.9
-low-temperature-plasma	en	电子温度范围在 10^4K sim 10^6K , 比受控核聚变等离子体温度低得多的等离子体。从热力学平衡看, 包括热平衡等离子体 (电弧等离子体、化学燃烧等离子体等) 和非热平衡等离子体 (冷等离子体、辉光放电等)。	GB/T-4960.9
-macroinstability-macroscopic-instability	en	等离子体不稳定性的一种类型，只涉及在位形空间中的运动，把等离子体视为整体而采用单流体模型的磁流体动力学描述，或采用多流体模型和标量压强能相当近似地描述的等离子体不稳定性。	GB/T-4960.9
-magnetic-confinement	en	利用适当位形的磁场把等离子体约束在有限区域之内。	GB/T-4960.9
-magnetic-island	en	在非理想等粒子体中，当两个平行但方向相反的磁场靠得很近时，垂直磁力线方向的任何扰动都有可能使磁力线相对等离子体滑动而产生重叠，甚至在两个反向平行场间形成闭合磁力线。由这些闭合磁力线所包围的磁场空间。	GB/T-4960.9
-magnetic-mach-number	en	磁流体中速度与流体中阿尔芬波速度之比的无量纲数。	GB/T-4960.9
-magnetic-mirror-configuration	en	由连接两个相同的磁场线圈形成的磁场位形，它具有能使磁力线会聚的较强场强的区域。一个向磁力线会聚区运动的粒子，如果平行于磁场的能量 (E_parallel) 与垂直于磁场的能量 (E_perp) 之比满足下列关系，见式(1)，将被反射回来。 E _ {\parallel} / E _ {\perp} \leqslant B _ {\mathrm {m}} / B _ {0} - 1 \quad \dots \tag {1} 式(1)中， B_m 为镜点(极大值)的磁场强度； B_0 是镜心(极小值)的磁场强度。	GB/T-4960.9
-magnetic-moment	en	与磁铁、电流回路或粒子相联系的一种矢量，它与磁场的磁感应强度的乘积等于磁场施加在这个系统上的转矩。	GB/T-4960.9
-magnetic-shear	en	等离子体流速(流剪切)或者磁场强度(磁剪切)随小半径的变化率。在托卡马克中，通常分为正剪切、负(反)剪切及弱剪切。	GB/T-4960.9
-magnetic-viscosity	en	磁场阻止导电流体垂直于场运动的效应，类似于普通黏滞性。	GB/T-4960.9
-magnetic-well	en	某些磁位形中具有磁场强度最小的空间区域。	GB/T-4960.9
-magneto-acoustic-cyclotron-instability	en	起因于快阿尔芬波(或磁声波)和离子伯恩斯坦波之间能量的交换的不稳定性，其自由能由非热高能离子(例如，聚变产物)提供。 注：这种不稳定性发生在波与平衡磁场垂直传播时。	GB/T-4960.9
-magnetohydrodynamics	en	研究导电流体(液体和等离子体)与磁场相互作用的运动的科学。又称为流体磁学(hydromagnetic)。	GB/T-4960.9
-magnetohydrodynamic-shock-wave	en	在等离子体中传播的激波。它的波前深度超过平均自由程。因此，波前的主要耗散机制是等离子体的电阻及粒子之间的碰撞。	GB/T-4960.9
-magnetohydrodynamic-turbulence	en	在经典的磁流体力学描述中，速度和压力都发生不规则变化的运动磁流体。	GB/T-4960.9
-magnetosonic-waves	en	传播取决于介质温度的磁流体动力学波。这些波类似于声波，其不同之处在于粒子的运动方向和波的传播方向并不总是平行的。	GB/T-4960.9
-magnetohydrodynamic-instability	en	等离子体中由磁场能量及带电粒子动能驱动的不稳定性。等离子体密度梯度也会影响这种不稳定性的位置。	GB/T-4960.9
-microinstabilities-microscopic-instability	en	等离子体不稳定性的一种类型，涉及速度空间中的变化，不能用磁流体动力学描述，其特征长度类似于粒子拉莫尔半径。	GB/T-4960.9
-minimum-average-b-configuration	en	在环形系统中，沿着一条磁力线在平均的意义上实现最小B的磁场位形。	GB/T-4960.9
-minimum-b-configuration	en	等离子体约束技术中的一种位形。在这种位形中等离子体处在最小磁势的区域中。在离开该区的所有方向上，磁场强度都是随着离开所约束的等离子体的距离的增大而增强。这种位形有利于稳定性。	GB/T-4960.9
-plasma-minor-radius	en	等离子体截面在赤道面上水平尺寸的一半。在等离子体分布范围内，离等离子体中心的径向距离。参见等离子体几何位形(2.1.220)。	GB/T-4960.9
-mirror-instability	en	在磁镜位形中，当等离子体粒子在垂直于磁场方向的能量分量大于纵向能量分量时，可能出现的电磁微观不稳定性。此时，粒子将集聚在磁镜之间的中心平面上。结果，由于中心平面中的等离子体压强的作用使磁力线膨胀，使磁镜比增大。这又进一步增强了粒子在中心平面的集聚。当等离子体能量足够大时，磁场膨胀的速度加快，并且变得不稳定。	GB/T-4960.9
-mirror-ratio	en	在磁镜位形中，在轴上磁场最强的磁场强度 B_m 与轴上最弱的磁场强度 B_0 之比，见式(2) R = B _ {\mathrm {m}} / B _ {0} \quad \dots \tag {2} 这个比值表示了磁镜的约束性能。	GB/T-4960.9
-mode-number	en	不稳定性模式在一定空间尺度内的周期数。	GB/T-4960.9
-monster-sawteeth	en	发生在托卡马克(2.1.284)等离子体中心，具有锯齿状振幅变化的大尺度内部磁流体动力学扰动。	GB/T-4960.9
-multifaced-asymmetric-radiation-from-the-edge	en	边缘的多面形状非对称辐射(MARFE)通常形成在等离子体环的内侧边缘。当等离子体边缘密度高时，有时会形成一个冷的、强辐射等离子体的环向对称带。起因是沿边缘磁力线流动的功率和辐射的局部功率损失之间的不平衡。MARFE在时标 10mssim 100ms 内迅速增长，但它能持续数秒。在某些情况下，MARFE导致破裂。而在另一些情况下，其主要后果是减小边缘密度。	GB/T-4960.9
-multipole-geometry-configuration	en	由固定在支架上或漂浮于环中的几个载平行电流的导体环组成的环形位形。这些环形电流产生多极磁场 (n = 2 为四极场， n = 4 为八极场)，多极磁场叠加在初始约束磁场上，可以产生平均极小磁场位形。例如，约飞棒形成的位形。	GB/T-4960.9
-negative-mass-instability	en	由磁场不均匀性引起的静电微观不稳定性。如果粒子的角向运动中馈入能量，其轨道直径和旋转周期都增大。因此，正角向方向的力，使粒子产生相位滞后和角向聚束。粒子的行为，好像它们具有负的质量一样，在外力的相反方向上产生位移。	GB/T-4960.9
-neoclassical-tearing-mode	en	由撕裂模产生的磁岛扰动使自举电流发生改变，这进一步放大磁岛并使约束变坏，甚至导致破裂。	GB/T-4960.9
-neo-classical-theory	en	加入环形效应修正的经典碰撞等离子体输运理论。	GB/T-4960.9
-neoclassical-transport	en	在环形磁约束系统中，考虑了等离子体环效应的经典输运理论。由于环效应的存在，等离子体依照带电粒子碰撞频率分为碰撞频率高的流体区、碰撞频率低的俘获粒子区(香蕉区)和两者之间的过渡区，即平台区。新经典理论确定输运系数时，考虑到磁场的环形位形并包括库仑碰撞效应，输运系数一般是对磁面平均后的等效输运系数。	GB/T-4960.9
-neutral-drag-instability	en	由下述原因产生的静电宏观不稳定性：运动着的等离子体，与周围的中性气体之间的摩擦，使作用在离子和电子上的拖曳力有所不同。这种差异又导致电荷分离。它产生的横向电场，使等离子体横越磁场偏转。	GB/T-4960.9
-neutralized-plasma	en	没有净电荷的等离子体。	GB/T-4960.9
-non-circular-cross-section	en	垂直高度比水平宽度大的等离子体截面。	GB/T-4960.9
-null-point	en	偏滤器位形中磁场为零的 X 点。	GB/T-4960.9
-open-magnetic-configuration	en	磁力线在等离子体区外闭合的磁位形。这种位形包括有磁镜位形、会切位形和混合位形。	GB/T-4960.9
-operating-point	en	运行空间中的特定点。	GB/T-4960.9
-operating-space	en	由 n 个参数确定的空间中的一系列可稳定运行区域。	GB/T-4960.9
-optimized-shear	en	通过调节电流分布可以改善托卡马克(2.1.284)约束性能的剪切位形。	GB/T-4960.9
-parametric-instability	en	在等离子体中，振幅超过某一阈值的调制波通过模耦合相互作用而使另外的波出现的非线性不稳定性。	GB/T-4960.9
-particle-confinement-time	en	表征参与热核反应的粒子在特定区域约束性能的特性参量，在数量级上它等于当源项不存在时粒子数损失到它的(1/e)倍时所需要的时间。	GB/T-4960.9
-passing-particle	en	环形磁约束装置中，未进入"香蕉轨道"而被捕获的粒子。	GB/T-4960.9
-pedestal-physics	en	出现在H模中磁分界面之内的输运屏障，其边界等离子体的陡峭压强剖面呈现类似建筑物支柱的台基形状。	GB/T-4960.9
-peeling-mode	en	当等离子体边缘处的电流密度为非零时存在的边缘MHD不稳定性。与ELM也有关系。	GB/T-4960.9
-pfirsch-schulueter-regime	en	托卡马克(2.1.284)等离子体中的一种输运状态，其特征是平均自由程比连接长度短。在此状态中扩散系数为经典值的 q^2 倍(此处安全因子 q 大于或等于1)。	GB/T-4960.9
-pinch-effect	en	当等离子体中沿轴向通过电流时，产生极向磁场，该磁场向内的径向电动力使等离子体在径向受到压缩的效应。	GB/T-4960.9
-plasma	en	正负电荷相等的由电子和被电离原子的核及中性粒子组成的混合体系。	GB/T-4960.9
-plasma-chemistry	en	研究由等离子体诱发的，或在等离子体环境下发生的化学过程的学科。 注：等离子体中存在各种化学活性很强的粒子，从而引发在一般条件下不易发生的化学反应，利用这些化学过程可以对物质进行处理和合成新材料。	GB/T-4960.9
-plasma-confinement	en	高温等离子体因受其内部压强的作用要向四周散开，同时能量会损失，若等离子体再与器壁相碰，它的温度就会急剧下降，因此必须用某种方法将这团高温等离子体维持住，使其有足够的时间进行热核聚变反应。	GB/T-4960.9
-plasma-current	en	等离子体中的带电粒子的集体定向运动。在托卡马克(2.1.284)中值环向流过等离子体的电流。	GB/T-4960.9
-plasma-diffusion-and-mobility	en	由等离子体密度梯度和电场的作用造成的输运。 注：无磁场时等离子体中有起因于密度、速度、温度和静电势梯度的粒子、动量、能量和电荷的4种输运，它们分别导致粒子的扩散、黏滞性、热传导和迁移。在有磁场时，等离子体中存在着机制更为复杂的扩散、黏滞性、热传导和迁移过程。	GB/T-4960.9
-plasma-elongation	en	等离子体横截面的高宽之比。	GB/T-4960.9
-plasma-equilibrium	en	具有一定分布和几何位形的达到电磁力和热压力平衡的一种等离子体状态。	GB/T-4960.9
-plasma-frequency	en	在相对固定的离子对电子空间电荷的吸引所产生的恢复力的作用下，电子集体运动所引起的等离子体振荡的自然频率。 注：此频率正比于电子密度的平方根。	GB/T-4960.9
-plasma-geometry	en	等离子体截面的位置和形状。参见等离子体大半径(2.1.181)、等离子体小半径(2.1.186)、环径比(2.1.18)、拉长比(2.1.92)和三角形变(2.1.290)。	GB/T-4960.9
-plasma-instability	en	在等离子体内出现某种扰动时，如果扰动的强度随时间而增长，则等离子体具有不稳定性。等离子体不稳定性分为流体不稳定性和动力学不稳定性，也可分为宏观不稳定性和微观不稳定性。	GB/T-4960.9
-plasma-neutrality-and-debye-shield	en	没有外部扰动时，等离子体中空间电荷分别相互抵消，是宏观电中性的，称等离子体电中性。偏离电中性会产生很强的电场，使电荷偏离极快得到纠正，故电场作用于一定距离内，此距离外电场被屏蔽。	GB/T-4960.9
-plasma-oscillation	en	等离子体中由于各种原因产生电荷分离后，其电子与离子围绕其重心振荡的现象。由于离子比电子重得多，通常是电子作振荡运动而离子近乎静止。这种振荡是等离子体最基本的固有特征，其振荡频率亦称朗缪尔频率。振荡时粒子动能与静电位能不断交换直至碰撞或其他阻尼使能量耗散。振荡频率只与粒子密度有关，而与粒子温度无关。	GB/T-4960.9
-plasma-parameters	en	表征等离子体特性并能在实验上确定的物理量。例如：密度、温度、电流、约束时间以及比压值等。	GB/T-4960.9
-plasma-pressure	en	等离子体密度和温度的乘积。在磁约束装置中，利用磁力平衡的这种向外压力。	GB/T-4960.9
-plasma-profiles	en	等离子体截面上的参数分布剖面(常为电子或离子的密度和温度径向分布)。	GB/T-4960.9
-plasma-purity	en	表示等离子体被燃料(氘和氚)以外的物质污染的程度。可能污染等离子体的杂质主要来自器壁，亦可来源于燃料中的杂质或聚变反应产物(例如，氦)。	GB/T-4960.9
-plasma-radiation	en	从等离子体中发射的电磁辐射，主要包括线辐射、符合辐射和韧致辐射。	GB/T-4960.9
-plasma-rotation	en	沿环向和极向方向等离子体的旋转。	GB/T-4960.9
-debye-sheath	en	电中性的等离子体和与它接触的固体表面之间形成的过渡区。尽管等离子体本身差不多是等电位区，但等离子体鞘内具有强电位梯度，并不保持电中性。也称为鞘(sheath)。	GB/T-4960.9
-plasma-shock-wave	en	在等离子体中，由压缩波形成的速度、压强、密度、温度或磁通量的间断面，以大于阿尔芬速度(相对于还未被它穿透的等离子体)的传播。根据激波能量耗散过程的性质，可分为磁流体动力学激波和无碰撞激波。	GB/T-4960.9
-plasma-temperature	en	离子或电子随机动能的度量，通常以K(热力学温度)或电子伏(动理学温度)为单位。	GB/T-4960.9
-plasma-volume	en	磁约束装置中被约束的等离子体容积。	GB/T-4960.9
-plasma-wave	en	包括组成等离子体的粒子和电磁场的振荡在内的等离子体扰动的传播。	GB/T-4960.9
-plasmoid	en	电子、离子和中性粒子的单个聚团，其存在时间比粒子间碰撞时间长很多倍。	GB/T-4960.9
-plateau-regime	en	等离子体碰撞的一个区间，其有效库仑碰撞频率等于或大于极向渡越频率，但是平均自由程长度小于连接长度。在这种状态下，输运系数与碰撞频率无关。	GB/T-4960.9
-poloidal-beta-beta-poloidal	en	等离子体极向比压值 (β_p) 是等离子体压强与极向磁压强之比。通常作为电流对等离子体约束能力的量度。	GB/T-4960.9
-poloidal-direction	en	在等离子体横截面上环绕磁轴的方向。	GB/T-4960.9
-poloidal-field	en	由环向电流产生的沿极向方向的磁场。主要用于等离子体的平衡和约束。	GB/T-4960.9
-power-threshold	en	通常指发生低约束模到高约束模(L-H)转换所需要的最低加热功率值。	GB/T-4960.9
-profile	en	等离子体参数在横截面上随磁通量面的变化。	GB/T-4960.9
-project-sherwood	en	20世纪50年代和60年代期间美国受控聚变规划。	GB/T-4960.9
-pseudosonic-waves	en	离子和电子位移速度几乎相等时的低频离子波其相速度与频率无关，即没有色散。这些波类似于普通介质中的声波，但不同的是，非中性化形成的空间电荷电场会使离子和电子的集体运动之间产生耦合。	GB/T-4960.9
-q-limit	en	q 极限 保证托卡马克(2.1.284)稳定运行所需要的边界安全因子的最低值。在托卡马克中，这个值通常大于2。	GB/T-4960.9
-radiated-power	en	等离子体中通过多种机制辐射出的功率，包括线辐射、韧致辐射和同步加速器辐射等。	GB/T-4960.9
-radio-frequency-wave	en	RF波 频率范围主要在 20MHzsim 200GHz 之间的电磁波。射频波常用于提供等离子体辅助加热和电流驱动。参见射频加热(2.2.118)。	GB/T-4960.9
-ramp-down-time	en	停止等离子体并熄火所需的时间，包括等离子电流的减小和随后的等离子体温度降低。	GB/T-4960.9
-ramp-up-time	en	启动等离子体并加热到点火温度所需的时间。包括等离子体温度的升高和随后的等离子电流增大。	GB/T-4960.9
-recombination-coefficient	en	单位体积中正离子与电子或负离子的复合率除以正离子密度和电子(或负离子)密度之积。	GB/T-4960.9
-recombination-radiation	en	离子与电子复合时产生的辐射。	GB/T-4960.9
-recycling	en	等离子体中逃逸出来的粒子会进入面向等离子体的材料，并再次放出，返回等离子体的过程。	GB/T-4960.9
-resistive-ballooning-modes	en	存在电阻效应时表现为不稳定的一类气球模，它在没有电阻时可能是稳定的。	GB/T-4960.9
-resistive-instability	en	由于等离子体的有限电导率而引起的不稳定性。	GB/T-4960.9
-resistive-wall-mode	en	存在于非理想导体壁条件下的外扭曲磁流体不稳定性，它随着磁场穿透壁的时间增长，通常需要使用外部控制线圈来控制。	GB/T-4960.9
-resonant-magnetic-perturbation	en	与不稳定性时空结构(或频率和相位)相匹配的外加磁扰动。	GB/T-4960.9
-ripple	en	因托卡马克(2.1.284)中环向场线圈的有限个数引起环向磁场值的周期性变化。	GB/T-4960.9
-rotational-transform	en	在大多数环形位形约束磁场中，从横截面内某一点出发的磁力线，绕大环一周后不回到出发点，而相交此横截面于另一点，绕大环一周后的交点与初始点相对于磁轴转动的角度称为旋转变换。	GB/T-4960.9
-runaway-electron	en	等离子体中从外加电场获得动量的速率大于因碰撞损失动量的速率而脱离热平衡的电子。由于碰撞截面随速度增大而降低，这些电子会被持续加速。	GB/T-4960.9
-safety-factor	en	q 旋转变换的倒数，是环形装置中磁力线螺旋旋转程度的一种量度。稳定的等离子体平衡要求安全因子的值大于1。	GB/T-4960.9
-sausage-instability	en	在有强轴向电流的等离子体柱中，可能发生的磁流体动力学不稳定性。由于某种扰动使磁化等离子体柱某些地方收缩，截面变细。由于电流产生的极向磁场与等离子体半径成反比，使该处磁场增强，而增强的磁场将进一步压缩等离子体，使该处的柱半径继续缩小，等离子体柱变成腊肠形状，最后将等离子体柱切断。	GB/T-4960.9
-sawtooth	en	等离子体中心温度和密度的周期性张弛振荡，在软X射线的测量信号上表现为锯齿状。	GB/T-4960.9
-sawtooth-crash	en	锯齿活动中托卡马克(2.1.284)芯部局部破裂，中心温度快速崩塌的现象。	GB/T-4960.9
-scrape-off-layer	en	等离子体边界的一个区域，这个区域在等离子体最后一个封闭磁面之外。	GB/T-4960.9
-screw-instability	en	正柱螺旋不稳定性 positive-column screw instability 在有强纵向(轴向)磁场的等离子体柱中，当存在轴向电场时，对密度的螺旋形扰动而出现的静电宏观不稳定性。 注：轴向电场使得这种螺旋形的电子云和离子云沿磁力线向相反方向运动，导致电荷分离。由于螺旋对称性，使空间电荷产生的电场是角向的，这个角向电场引起径向电漂移，使得密度扰动增长，便出现不稳定性。	GB/T-4960.9
-second-stability	en	气球模在等离子体压强梯度超出第一稳定区域时重新达到稳定的性质。	GB/T-4960.9
-second-stability-regime	en	在高等离子体压强下气球模仍然处于稳定的区域，其等离子体压强高于第一稳定区压强极限。	GB/T-4960.9
-separatrix	en	使与壁相交的磁力线(开放力线)和不与壁相交的封闭磁力线(封闭线)分开的边界。	GB/T-4960.9
-separatrix-points	en	分界线上极向磁场为零的点。	GB/T-4960.9
-confinement-scaling	en	表示各种等离子体参数(例如：约束、功率阈值等)随托卡马克(2.1.284)运行条件变化的经验或半经验的表达式，它是通过大量实验数据总结出来的。	GB/T-4960.9
-screw-pinch	en	螺旋箍缩是一种 θ 箍缩，其中轴向电流产生极向磁场，加上纵向场，形成一种螺旋场位形。	GB/T-4960.9
-single-fluid-model	en	将等离子体作为一种磁化的导电流体，而不区分电子和离子的不同行为的模型。	GB/T-4960.9
-single-null-equilibrium	en	参见双零平衡(2.1.67)。	GB/T-4960.9
-stellarator	en	用外部螺旋线圈产生极向磁场的环形磁约束装置[不同于托卡马克(2.1.284)利用等离子体电流产生极向场]。有多种不同的仿星器位形，参见螺旋器(2.2.54)以及先进的螺旋仿星器(2.2.51)。	GB/T-4960.9
-stochastic-heating	en	在非均匀约束磁场中，由于在每个点上与磁场垂直的电场的作用而引起的无碰撞等离子体加热，像本底噪声随时间无规律变化那样。这类加热是由于电场达到粒子的回旋频率或其谐波的频率时发生回 旋共振所致。	GB/T-4960.9
-super-alfvenic-velocity	en	速度大于阿尔芬速度，是与磁流体动力学行为有关的典型速度。在托卡马克(2.1.284)中高能粒子具有超阿尔芬速度。	GB/T-4960.9
-superthermal-radiation	en	不是由热粒子，而是由高能粒子在回旋频率范围内产生的电磁辐射。	GB/T-4960.9
-toroidal-alfven-eigenmode	en	由于环形效应引起的阿尔芬间隙模。	GB/T-4960.9
-tearing-mode-instability	en	由于等离子体中电流存在耗散效应，而使磁力线不再冻结而物质可横越磁场而发生的电磁宏观不稳定性。	GB/T-4960.9
-tearing-magnetic-islands	en	由撕裂模引起的，改变原约束磁场的拓扑形态而形成的"岛状"结构。	GB/T-4960.9
-tearing-mode	en	在托卡马克(2.1.284)中理论上预言的一类电阻磁流体动力学不稳定性。已在实验上被肯定。参见撕裂模不稳定性(2.1.278)。	GB/T-4960.9
-thermal-particles	en	处于热平衡状态的例子(区别于远高于热平衡的高能粒子)。	GB/T-4960.9
-thermonuclear-fusion	en	利用高温实现聚变的反应。	GB/T-4960.9
-theta-pinch	en	利用极向电流和轴向磁场约束圆柱形几何位形中的等离子体的一种磁约束概念。	GB/T-4960.9
-tokamak	en	环流器 意为环形真空磁室，托卡马克一词来自俄语的单词缩写。 注：其磁场是由环形面上的螺旋形力线构成的，由外部场线圈和等离子体自身电流产生。迄今是在等离子体的磁约束研究中最成功的装置类型。	GB/T-4960.9
-transport-barrier	en	在某种运行模式下(例如，H模)，可能存在一个低输运区域，它对应于陡的压强梯度。这样的区域被称为输运垒。	GB/T-4960.9
-transport-matrix-coefficient	en	描述等离子体各种输运过程的系数。	GB/T-4960.9
-transport-scaling	en	用经验的或理论的方法将输运系数表示成若干等离子体参数的函数。	GB/T-4960.9
-trapped-particle	en	环形磁约束装置中，由于能量和磁矩守恒，不能沿环向通行，被限制在一定的区域内往返运动的粒子。	GB/T-4960.9
-trapped-particle-instability	en	在环形位形中，由俘获粒子效应引起的不稳定性。	GB/T-4960.9
-plasma-triangularity	en	等离子体截面的三角变形程度的一种量度。参见等离子体几何位形(2.1.220)。	GB/T-4960.9
-triple-alpha-process	en	将3个氦核(阿尔法粒子)结合成一个碳核的聚变反应。	GB/T-4960.9
-troyon-limit	en	参见 β 极限(2.1.24)。	GB/T-4960.9
-turbulent-heating	en	通过湍流效应使将粒子的定向有序运动能量转换成无规运动的热能，而使等离子体加热的方法。其能量转换过程是由于激发各种微观不稳定性所致，湍流加热过程很快，但也可能引起粒子和能量的反常损失。	GB/T-4960.9
-turbulent-transport	en	由等离子体湍流导致的输运。	GB/T-4960.9
-two-fluid-model-and-multi-fluid-model	en	将等离子体表示成相互作用的电子和离子以及杂质离子等组成的流体的一组方程。参见单流体模型(2.1.271)。在考虑到杂质效应时就变成多流体模型。	GB/T-4960.9
-two-stream-instability	en	两种粒子流的速度分布峰值相差较大时能发展起来的不稳定性。例如，通过冷等离子体的高能电子流能够激发依靠消耗电子动能而快速增长的离子波。	GB/T-4960.9
-universal-alfven-wave-instability	en	由于阿尔芬波和漂移波之间的共振而产生的电磁普适漂移不稳定性。	GB/T-4960.9
-velocity-space-instability	en	因粒子速度分布偏离热平衡状态而引起的一类不稳定性。	GB/T-4960.9
-vertical-displacement-event	en	整体等离子体在偏离其平衡位置向上(或向下)运动期间发生的不稳定性事件。高拉长比的等离子 体更有发生这种事件的倾向。	GB/T-4960.9
-vlasov-equation	en	描述碰撞平均自由程远大于系统特征长度时的高温等离子体的动理学方程。	GB/T-4960.9
-loop-voltage	en	由欧姆变压器驱动的，用以建立托卡马克环电流的电压。	GB/T-4960.9
-whistler-wave	en	在等离子体中沿着平行于磁场方向传播的、频率低于电子回旋共振频率的右旋圆偏振波。	GB/T-4960.9
-whistler-wave-instability	en	由于电子与哨声波交换能量而引起的电磁微观不稳定性。它类似于阿尔芬波不稳定性，但是，它在接近于离子回旋频率的频区(此时，绝热不变性消失)出现。在固态等离子体中，相应的不稳定性称为螺旋波不稳定性(helicon wave instability)。	GB/T-4960.9
-x-point	en	参见单/双零(2.2.122)。	GB/T-4960.9
-z-effective	en	Zeff 等离子体的等效电荷数。 Z_eff 是等离子体杂质含量的一种量度。对于纯D-T等离子体， Z_eff = 1.0 。	GB/T-4960.9
-z-pinch	en	沿轴向(Z向)流动的等离子体电流将等离子体约束在圆柱形几何位形中的磁约束概念。 2.2 工程	GB/T-4960.9
-air-core-transformer	en	不采用铁芯，原边采用线圈和副边为等离子体的变压器。	GB/T-4960.9
-auxiliary-heating-power	en	辅助加热的功率。 注：通常提及的被等离子体吸收的功率和与辅助加热系统注入的加热功率会有不同。	GB/T-4960.9
-baffle-element	en	为限制偏滤器空间和主真空室空间之间的粒子相互传导而设的阻挡部件。	GB/T-4960.9
-balance-burning	en	聚变 α 粒子和外部电源的等离子体加热与传导、对流和辐射等引起的等离子体损失之间的稳态平衡。	GB/T-4960.9
-beamlines	en	特指一段位于中性束源与等离子体圆环面间的输运管道结构(包含中性化区、离子偏离及大体积抽空等设备部件)。束线是中性束注入器的重要组成部分。	GB/T-4960.9
-bitter-coil	en	以发明人比特命名的，能建立强磁场的一种特殊结构的线圈。由匝间相间以绝缘材料的铜板经一开缝串联而构成一线圈绕组。线圈材料为常规铜合金，线圈有水冷及液氮冷却等形式。通常也称为比特板线圈。	GB/T-4960.9
-boronization	en	把含硼的化合物升华、沉积到真空室内表面以帮助降低杂质辐射的技术。参见辉光放电清洗(2.2.47)。	GB/T-4960.9
-bumper-limiters	en	在托卡马克中，为了避免真空室内表面直接暴露于等离子体的部分受到等离子体带电粒子的轰击，而在无第一壁材料的部分空间设置的缓冲孔栏(如石墨块)。	GB/T-4960.9
-bumpy-torus	en	美国国家航空和航天局刘易斯的波纹环有12个超导线圈环向排列在大型真空容器中。目的是要在闭合磁场几何形态中将强电场加于等离子体，使得稳态等离子体加热和约束最佳化。	GB/T-4960.9
-bundle-divertor	en	环向、纵向或束偏滤器，它引出一束抽出环向通量从而在环向场内形成分界面。	GB/T-4960.9
-carbon-fiber-composite	en	由择优取向的碳纤维及沉积的碳组成的合成材料，以提高耐热及机械强度。	GB/T-4960.9
-central-solenoid	en	位于离托卡马克装置中轴线最近的极向线圈。用于产生并维持等离子体电流的部件、加热并控制等离子体形状。	GB/T-4960.9
-central-solenoid-model-coil	en	建在前日本原子能研究所(JAERI)的模型线圈。它是用于测试ITER(2.4.47)中心螺线管的制造和其他超导体的插入式线圈[为ITER(2.4.47)中心螺线管和环向场线圈导体提供替代品]。	GB/T-4960.9
-compact-device	en	环径比接近于1的轴对称环形装置，也称为紧凑环。	GB/T-4960.9
-compact-toroid-injection	en	紧凑环等离子体注入技术。	GB/T-4960.9
-correction-coils	en	为补偿由制造、安装磁体线圈而引起的约束磁场误差而设置的线圈。	GB/T-4960.9
-critical-density	en	影响电磁波传播特性的一个等离子体密度特征值，超过这一密度值时，波不能通过等离子体传播。	GB/T-4960.9
-critical-surface	en	等离子体中与临界密度相对应处的那个等离子体面。	GB/T-4960.9
-cryopump	en	基于低温吸附获得高真空的原理，使用液氦或制冷机冷却的真空泵系统。	GB/T-4960.9
-cryostat	en	杜瓦 一个装容超导磁体且室温下可抽真空的真空室，它提供真空绝热层以保持磁体在低温环境中。	GB/T-4960.9
-current-limit	en	托卡马克等离子体中可以允许通过的最大电流值。这个值的大小主要由磁场强度和等离子体的尺寸、形状所确定。	GB/T-4960.9
-current-profile-control	en	为了产生最佳的等离子体位形和改善等离子体约束而采用辅助加热和无感电流驱动的方式对等离子体电流分布进行控制的技术。	GB/T-4960.9
-dense-plasma-focus-device	en	由两个同轴圆柱形电极和一个电容器组成的等离子体放电装置。	GB/T-4960.9
-density-control	en	为了得到最佳等离子体位形，通过外部加料控制等离子体密度的方法和技术。	GB/T-4960.9
-divertor	en	磁约束聚变装置中，为分散热功率、排除燃料及He灰、消除或减少杂质、隔离边界产生和分开系统特意加入的杂质等而设置的装置。参见抽气偏滤器(2.2.110)、辐射偏滤器(2.2.112)。	GB/T-4960.9
-divertor-channel	en	偏滤器靶板与等离子体刮削层开放磁力线构成的区域。	GB/T-4960.9
-divertor-arrangement	en	偏滤器箱体上面部件和抽气通道的面向等离子体的构件配置和部件结构。	GB/T-4960.9
-divertor-configuration	en	在有偏滤器的等离子体放电中，形成有X点的平衡磁通位形。	GB/T-4960.9
-doublet-device	en	美国早期的具有肾形截面的非圆截面托卡马克装置。	GB/T-4960.9
-elmo-bumpy-torus	en	早期磁约束聚变概念，在这种概念中用微波加热产生的高比压电子环使波纹环稳定。	GB/T-4960.9
-elmo-bumpy-torus-s	en	早期美国国立橡树岭实验室的有24个扇形段的环形磁捕集器。 注：这种捕集器是用微波加热来产生和维持准稳态高温等离子体的。	GB/T-4960.9
-middleplane	en	赤道平面 equatorial plane 由环向场线圈一半高度确定的水平面。	GB/T-4960.9
-equatorial-port-extension	en	ITER(2.4.47)主真空室的每个赤道端口由位于真空室壁上的一个孔和一个焊接到该孔凸沿和一个直段上的窗孔短管组成的结构。它焊接到窗口短管上。	GB/T-4960.9
-ergodic-magnetic-divertor	en	用等离子体边界的螺旋线圈系统来扰动等离子体边缘以利于去除杂质的偏滤器。	GB/T-4960.9
-error-field	en	托卡马克装置环向场和极向场线圈的磁场分布理论上都是轴对称的，但由于磁体线圈形状制造和安装位置的偏差、电流引线、金属部件中的涡流以及铁磁物质等都会导致非轴对称磁场。其中由环向场和极向场线圈安装位置偏差引起的非轴对称磁场是误差场最主要来源。	GB/T-4960.9
-fast-wave-antennas	en	用于快波电流驱动(FWCD)技术的射频天线。	GB/T-4960.9
-fast-wave-current-drive	en	由快波产生的电流驱动，与低杂波电流驱动相比，能较为容易地渗透到等离子体中。离子回旋系统可产生快波。	GB/T-4960.9
-ferromagnetic-inserts	en	布置在真空室内TF线圈阴影处用于减弱环向场纹波的铁磁性部件。	GB/T-4960.9
-field-shaping-coil	en	托卡马克中的一组极向场线圈，该线圈提供限制等离子体的水平和垂直运动的磁场拓扑结构，主要用来形成非圆形等离子体截面或偏滤场分界面。	GB/T-4960.9
-first-wall	en	在等离子体约束实验装置或聚变电站中，直接面向等离子体的真空室内部件保护层。	GB/T-4960.9
-flat-top-current	en	托卡马克放电波形处于平顶段的等离子体电流。	GB/T-4960.9
-flat-top-pulse-length	en	等离子体电流波形平顶段的持续时间。	GB/T-4960.9
-fuelling	en	为聚变等离子体提供所需热核燃料。参见喷气(2.2.46)、弹丸注入(2.2.99)、超声分子束注入(2.2.131)。	GB/T-4960.9
-fuel-of-fusion	en	热核燃料 thermonuclear fuel 可发生聚变反应，同时又能释放出大量聚变能的材料。热核燃料主要有氘、氚和氦-3。	GB/T-4960.9
-fuel-pellet	en	小型柱状冷冻氘或氚燃料，将其射入等离子体中燃烧以保持等离子体芯部的足够燃料密度。	GB/T-4960.9
-gas-puffing	en	通过阀门向等离子体室中喷入燃料，它主要是向等离子体边缘区域加料。	GB/T-4960.9
-glow-discharge-cleaning	en	用气体辉光放电的方式清洗聚变装置真空室杂质的一种有效方法。	GB/T-4960.9
-glow-discharge-plasma	en	在 10^-2Pa sim 10^-1Pa 气压下，两电极间施加电压形成的放电等离子体。 注：通常由正柱区和阴极、阳极区构成。在正柱区是准中性的，即电子密度与离子密度基本相等而无净电荷，通常电子密度为 10^15m^-3sim 10^16m^-3 ，电子温度为 1eVsim 2eV ，而且电场很低，约 1V / cm 。正柱区通常占放电管长度的绝大部分。正常辉光放电的电流密度在 50mAcdot cm^-2 以下，端电压几乎与电流无关。	GB/T-4960.9
-halo-current	en	在垂直位移事件期间，等离子体与真空室壁接触，被刮削后流到约束等离子体区域外侧沿磁力线流动的电流。 注：电流路径与材料表面相交，引起材料的强加热和变形，晕电流的效应不是轴对称的，可引起大的损伤，并对装置也有潜在的威胁。	GB/T-4960.9
-hard-core-pinch-device	en	早期的聚变研究装置，其中间插有一根固态回流导体。放电发生在导体四周的环形区中。	GB/T-4960.9
-helias	en	先进的螺旋仿星器其英文全称为helical advanced stellarator,具有变形的非平面环向场线圈的仿星器位形,不用连续的螺旋线圈或者类托卡马克的极向场。Helias是电站最有希望的仿星器概念,它具有模块式工程设计和最佳等离子体,以及磁流体动力学和磁场特性。Wendelstein VI-X装置是基于5个场周期的先进的螺旋仿星器位形。	GB/T-4960.9
-helicity-injection	en	把螺旋磁波传入到等离子体的方法。用以产生驱动电流，对维持环形和球形装置有潜在的价值。环向等离子体的螺旋量是与环向和极向磁场的链合有关的，并且在放电过程中近似地守恒。如果可以注入外加的螺旋量，那么等离子体电流可以维持，甚至提高。	GB/T-4960.9
-helicity-injection-current-drive	en	利用螺旋注入非感应电流驱动技术。	GB/T-4960.9
-heliotron	en	该仿星器位形中螺旋线圈用于约束等离子体，同时有一对PF线圈提供垂直场。TF线圈有时也用于控制磁面特性。	GB/T-4960.9
-high-field-ecrh-launch	en	电子回旋共振微波从等离子体大环的内侧(强环场侧)发射，可用于加热较高密度等离子体。	GB/T-4960.9
-high-heat-flux	en	由等离子体传导或辐射出的功率负载大于 0.5MW / m^2 。	GB/T-4960.9
-high-heat-flux-components	en	在偏滤器中面向等离子体的部件，特别是靶板。	GB/T-4960.9
-induction-coil	en	能够给副边等离子体提供感应电势的原边线圈，在托卡马克装置中指欧姆加热线圈。	GB/T-4960.9
-inductively-driven-plasmas	en	在托卡马克等离子体放电中，根据变压器原理，用欧姆加热线圈(包括螺线管线圈)驱动等离子体电流的方法。	GB/T-4960.9
-in-vessel-component	en	直接安装于托卡马克真空室内的部件，如包层、偏滤器、部分加料系统、内部抽气系统、诊断传感 器等。	GB/T-4960.9
-iron-core-transformer	en	磁路部件用硅钢片制作的变压器。在托卡马克中铁芯使欧姆线圈与等离子体成为紧耦合的原边绕组和副边绕组，漏磁通明显减少，因而大大减少了欧姆线圈的安匝数及其供电电源的功率。	GB/T-4960.9
-joffe-s-bar	en	在早期的聚变实验装置上，为了克服磁流体不稳定性，苏联科学家约飞提出的用固体载流导体置于装置外侧，形成会切形磁场的载流棒。	GB/T-4960.9
-l-h-threshold-power	en	在等离子体加热过程中，为了克服传导损耗，需要采用一定功率的外部加热来建立H模内部输运屏障，将等离子体芯部置于一个更好的能量约束模式中，为产生这种约束模式转换所要求的外部加热的功率称为L-H转换阀值功率。	GB/T-4960.9
-limiter	en	孔栏 安装在托卡马克真空室内用于限制等离子体边界的部件。多数装置采用极向布置，同时也有环向布置。	GB/T-4960.9
-limiter-system	en	限制器及其操控机构的组合体。	GB/T-4960.9
-linear-pinch	en	在开端位形中等离子体的箍缩，特点是等离子体电流为轴向，而电流产生的磁场方向为角向，箍缩为径向。又称 Z -箍缩。	GB/T-4960.9
-lining	en	置于聚变装置的真空室内的金属护套(壳)。	GB/T-4960.9
-lip-seal	en	在聚变装置中，采用的一种特殊的密封工艺。它是沿金属件边缘或部件周长方向延伸的多次可拆的密封连接。	GB/T-4960.9
-low-aspect-ratio	en	小环径比 small aspect ratio 大半径与小半径的比值小于2。	GB/T-4960.9
-lower-hybrid-current-drive	en	用低混杂波产生的非感应电流驱动。	GB/T-4960.9
-lower-hybrid-heating	en	使用频率为离子回旋与电子回旋混杂频率的波对等离子体进行加热的方法。	GB/T-4960.9
-magnetic-axis	en	在等离子体的平衡位形中，磁面半径为零的点沿大环方向形成一条圆形轨迹。	GB/T-4960.9
-magnetic-field-component	en	托卡马克的磁场主要是由两部分组成的。其中，第一部分是环向磁场，它是由沿着大环方向均匀布置的一组环向场线圈所产生的，并且是关于装置中心轴对称的。第二个部分是极向磁场，它是由等离子体电流及极向场线圈电流共同产生的。	GB/T-4960.9
-magnetic-mirror	en	带电粒子在磁场较强处如同镜面反射一样被反射到磁场较弱处的现象。	GB/T-4960.9
-mirror-machine	en	用磁镜位形来约束等离子体的热核聚变实验装置。	GB/T-4960.9
-magnetic-pumping	en	加上一个强度随时间变化的磁场，使等离子体借助快速振荡的外部磁场连续完成"压缩一弛豫一膨胀"，等离子体获得能量而被加热的过程。在这个过程中，磁场好像一个抽水泵，通过周期性地改变强度将能量源源不断地"抽运"到等离子体中。	GB/T-4960.9
-magnetic-quench-detection	en	对超导磁体是否进入失超状态进行探测的方法。	GB/T-4960.9
-main-transmission-line	en	在离子回旋加热中传输射频大功率的同轴电缆。	GB/T-4960.9
-molecular-ion-injection-concept	en	把高能分子离子注入合适的磁容器并在那里被几种过程(例如：与中性原子的碰撞、洛伦兹离解等)之一离解，然后使俘获的高能离子的密度增加到具有热核意义的值，同时将它们的定向速度转换成热等离子体的随机运动。	GB/T-4960.9
-nb-sn-superconductor	en	由铌三锡金属间化合物制成的高性能超导体，适合在 4.5K 氦冷却条件下及12T以下使用。	GB/T-4960.9
-nb-al-superconductor	en	由铌三铝金属间化合物制成的高性能超导体，适合在 4.5K 氦冷却条件下及15T以下使用。	GB/T-4960.9
-nbti-alloy-superconductor	en	用铌钛合金制成的柔性超导体，适合在 4.5K 氮冷却条件下及8T以下使用。	GB/T-4960.9
-negative-ion-neutral-injector	en	由负离子源提供的中性束注入器。	GB/T-4960.9
-negative-ion-source	en	产生负离子的离子源。	GB/T-4960.9
-neutral-beam	en	中性粒子束 neutral particle beam;NPB 由离子源引出的快离子束经过中性化后形成的高能中性粒子束。	GB/T-4960.9
-neutral-beam-current-drive	en	使用高能中性束注入而产生的非感应电流驱动。	GB/T-4960.9
-neutral-beam-injection	en	将能量足够高的中性粒子束注入装置的约束区域，这些注入的高能中性粒子由于被电离和电荷交换而被俘获，然后再与本底离子和电子碰撞把能量交给这些电子和离子，使这些粒子获得能量，加热等离子体。	GB/T-4960.9
-neutron-wall-loading	en	进入包围等离子体的第一物理边界的聚变中子所携带的能量通量。	GB/T-4960.9
-ohmic-heating	en	焦耳加热 Joule heating 电流流过电阻不等于零的等离子体，由于焦耳效应而加热等离子体的方法。等离子体电阻率随着等离子体电子温度升高而很快降低，欧姆加热效率也变得很小，因此只用欧姆加热不能将等离子体加热到很高的温度。	GB/T-4960.9
-ohmic-heating-system	en	OH系统 托卡马克中使用感应线圈进行电阻加热的系统，包括欧姆加热线圈、电源等。	GB/T-4960.9
-operating-margins	en	极限值与标称值之差。	GB/T-4960.9
-operating-parameter	en	表征托卡马克装置或某部件运行状态性质的量。例如：温度 (T) 、聚变功率 (P) 、电流 (I) 和磁场 (B) 等。	GB/T-4960.9
-overturning-moment	en	在等离子体放电过程中，托卡马克环向场线圈的顶部和底部受到垂直磁场的作用而在大环方向倾倒的力矩。	GB/T-4960.9
-pancake-winding	en	绕制磁体线圈的方法。导体沿圆周方向而不是磁体轴线方向绕制，形成如饼状单元模块；饼状模块堆叠在一起，而后再串联或采用多饼连续绕制工艺。	GB/T-4960.9
-particle-exhaust	en	利用偏滤器或限制器从等离子体中抽出粒子的各种方法。	GB/T-4960.9
-pellet-injection	en	把一串冷冻的燃料小丸高速射入到等离子体中的加料方法。	GB/T-4960.9
-pinch-device	en	基于箍缩效应的磁约束装置。	GB/T-4960.9
-plasma-heating	en	增加等离子体的平均能量(即温度)，获得高温等离子体的过程。通常有欧姆加热、中性束粒子加热和(或)射频波加热等。	GB/T-4960.9
-plasma-facing-components	en	与等离子体直接作用的真空室内部件。	GB/T-4960.9
-plasma-gun	en	用来产生高速等离子体团的设备。	GB/T-4960.9
-plasma-shutdown	en	在等离子体燃烧末期，等离子体能量衰减为零的过程。	GB/T-4960.9
-poloidal-divertor	en	能引出极向磁力线并在极向场中形成分界面的一种偏滤器。	GB/T-4960.9
-poloidal-field-coils	en	在托卡马克中用于产生极向场的线圈。	GB/T-4960.9
-port-axis-direction	en	端口延伸部的径向对称轴。	GB/T-4960.9
-positive-ion-neutral-injector	en	由正离子源提供的中性束注入器。	GB/T-4960.9
-profile-control	en	通过控制压强、密度和电流的径向变化控制不稳定性和改善等离子体约束。	GB/T-4960.9
-pumped-divertor	en	磁力线进入环绕靶板的抽气室的偏滤器。	GB/T-4960.9
-quench	en	超导磁体由超导态到常规态的不可控和不可逆的转变。	GB/T-4960.9
-radiative-divertor	en	能使大部分功率在到达靶板之前被辐射掉的一种偏滤器。	GB/T-4960.9
-radio-frequency-and-microwave-plasma-arc	en	由射频和微波产生的等离子体电弧，是加热等离子的手段。	GB/T-4960.9
-radio-frequency-heating	en	RF加热 在等离子体中利用射频波(电磁波)在传播过程中将能量传递给等离子体，从而使等离子体得到加热的手段。参见射频波(2.1.246)。	GB/T-4960.9
-residual-resistance-ratio	en	超导体基体材料室温电阻与低温剩余电阻率之比。取略高于临界温度处的电阻值为剩余电阻率。	GB/T-4960.9
-resonant-ions-electrons	en	当等离子体中粒子运动的特征频率之一(例如，回旋频率)与某些外加扰动频率(例如，射频波)匹配时发生共振的离子/电子。	GB/T-4960.9
-reversed-field-pinch	en	极向场和环向场的大小接近的环向磁约束。当等离子体电流超过临界值时接近等离子体边缘的环向场变成反向，使稳定性得到维持。	GB/T-4960.9
-sawtooth-stabilization	en	抑制各种锯齿波动使等离子体稳定的方法。	GB/T-4960.9
-septum	en	横放于波导内并通过高导电接头连接于内壁上的金属板，该板体通常根据电感、电容或阻抗参数要求设计出一个或多个窗口。	GB/T-4960.9
-shockwave-tube	en	充电到高压的电容器组在管的一端对气体放电来电离和加热气体，从而产生激波的充气管。	GB/T-4960.9
-shock-wave-heating	en	利用激波的形成和传播实现等离子体加热。加热机理基本上不可逆，给予等离子体的能量总是大于由相同幅值的绝热压缩得到的值。	GB/T-4960.9
-single-double-null	en	分界面自身交叉的极向磁场零点。通常处于等离子体上部和/或下部(但是，有时处于大环平面处)。大多数偏滤器位形都有一个单零点或者双零点，称为X点。	GB/T-4960.9
-spherical-tokamak	en	接近球形的低环径比托卡马克，也称为球形环。	GB/T-4960.9
-spheromak	en	采用准静态感应形成技术致使尖峰功率要求和等离子体电极接触最小来产生等离子体的一种装置。球马克堆的优点是：比压值高，线圈和包层在拓扑学上不与等离子体环接。	GB/T-4960.9
-start-up-assist	en	协助等离子体的形成以减少启动时对磁通消耗的需求。	GB/T-4960.9
-superconductivity	en	在一定条件下，材料被认为具有直流电阻为零和完全抗磁性的性质。 注：一定条件是指适当的温度、磁场强度和电流密度。	GB/T-4960.9
-superconductor	en	在一定条件下呈超导电性的材料。	GB/T-4960.9
-superconducting-coil	en	使用超导材料绕制的磁体线圈。	GB/T-4960.9
-superconducting-magnets	en	由超导线圈组成的磁体。	GB/T-4960.9
-superconductor-tokamak	en	由超导磁体构成的托卡马克装置。	GB/T-4960.9
-supersonic-molecular-beam-injection	en	高压气体通过拉瓦尔喷嘴进入真空室形成超声分子束进行加料的方法。SMBI具有比脉冲喷气更高的分子速度和更小的散度。SMBI还是研究等离子体输运的有力手段。	GB/T-4960.9
-tandem-mirror	en	为了减少简单磁镜上粒子损失的实验装置，它是在简单磁镜两端各再接上一个或多个端部磁镜形成的，端部磁镜区的等离子体密度比中心磁镜区的等离子体密度可以高到一个数量级。此时，在端部形成得很深的双极位阱将阻止中心磁镜区离子沿磁场方向的损失而且使离子寿命增加。	GB/T-4960.9
-tf-ripple	en	在托卡马克中使用有限个离散的环向场线圈而造成环向磁场大小在大环方向有一定的波动。这种磁场内的"纹波"会捕获粒子并使功率损失。	GB/T-4960.9
-divertor-target	en	磁偏滤器的等离子体排气通道终止的地方。	GB/T-4960.9
-tokamak-operating-boundaries	en	运行极限 operating limits 一组等离子体参数(例如:密度、电流和压强)边界,超出边界就不可能运行托卡马克。优化控制等 离子体截面形状和电流分布可以提高运行参数范围。	GB/T-4960.9
-toroidal-magnetic-cusp	en	环形磁场会切是在高比压下运行的混合约束系统。具有高比压等离子体的闭合环向磁通量的区域与周围的场由一窄鞘层分开。周围的场包含外部产生的环形线会切位形排列的极向分量，迁移到外鞘的等离子体在被偏滤器系统除去前暂时被磁镜约束。	GB/T-4960.9
-toroidal-configuration	en	约束磁场的磁力线成环形的闭合位形。环形位形包括托卡马克位形、仿星器位形、环形 Z 箍缩、环形 θ 箍缩和环形螺旋箍缩。	GB/T-4960.9
-toroidal-direction	en	在一个圆环面中，与环轴圆周平行的方向。	GB/T-4960.9
-toroidal-field	en	在托卡马克中，由绕在等离子体真空室外的垂直于赤道面的磁场线圈产生的主要的磁场。	GB/T-4960.9
-toroidal-field-coils	en	TF线圈 在环向方向均匀布置在真空室外用于产生环向磁场的线圈。	GB/T-4960.9
-toroidal-pinch	en	闭合位形中的等离子体的箍缩。它是环形磁约束系统，其中环向等离子体电流既加热等离子体，又提供极向箍缩磁场。	GB/T-4960.9
-torus	en	圆环形形状的磁体部件。	GB/T-4960.9
-arcing	en	在金属表面和与金属表面接触的等离子体之间的电弧，这种电弧仅需要一个电极，并且由电子的热能维持。	GB/T-4960.9
-vapour-phase-catalytic-exchange	en	水蒸气与装填在垂直柱体中的催化剂接触以便优先将氢的同位素分离成轻的和重的同位素流体的物理化学过程。	GB/T-4960.9
-vertical-stability-control	en	垂直位置控制 vertical position control 截面拉长的等离子体在垂直方向上是不稳定的，如果等离子体开始运动，用等离子体位置传感器信号反馈控制产生水平磁场的极向场线圈电流或者是通过靠近等离子体的无源导体感应的涡流产生的水平磁场就可以抑制等离子体的运动。	GB/T-4960.9
-wall-etch	en	真空室第一壁遭到等离子体中高能粒子轰击而受到的损伤。	GB/T-4960.9
-radio-frequency-heating	en	以各种等离子体波的形式加热等离子体的方法。波加热涉及的问题是：波的产生或者激发、波的传播和模式转换及波的能量吸收和热化。	GB/T-4960.9
-yin-yang-coil	en	由两个独立的跑道型线圈弯成C型后交错地合在一起构成的，能够产生类似于网球缝线型线圈产生的极小B位形的线圈。其优点是：所产生磁场的磁镜要比网球缝线型线圈产生的更大，而且可变，消耗功率很小，装置有较大灵活性。	GB/T-4960.9
-beam-emission-spectroscopy	en	使用低能中性束注入等离子体产生的发射光谱对等离子体进行诊断的技术。	GB/T-4960.9
-bolometer	en	利用广谱辐射探测器来测量全波长区域总电磁辐射能量的仪器，也称为辐射量热计。	GB/T-4960.9
-brewster-angle	en	电介质的极化角，它等于平行于入射平面的偏振波完全透射(不反射)时的入射角。因此，以这个角入射的非偏振波被分解为部分偏振的透射分量和完全偏振的反射分量。	GB/T-4960.9
-charge-coupled-device	en	利用电荷耦合探测光的传感器件。	GB/T-4960.9
-charge-exchange-recombination-spectroscopy	en	等离子体中的中性原子(例如，来自中性束)向完全电离的杂质离子贡献电子，产生类氢离子。当电子能级跃迁时发射光子，通过光谱学方法可以确定杂质粒子的温度、旋转以及密度。	GB/T-4960.9
-diamagnetic-loop	en	在极向方向环绕等离子体柱放置的一个感应线圈，通过测量磁场强度的变化，以推算出等离子体柱中逆磁强度，并可推算出等离子体总内能信息。	GB/T-4960.9
-dye-laser	en	波长可调的激光器，在这种激光器中的工作介质是一种大分子染料，比如七叶灵，激光的作用发生在电子的第一激发态和基态之间，每个状态都包括宽阔的振动和转动连续区。	GB/T-4960.9
-electron-cyclotron-emission	en	测量电子绕磁力线的回旋运动产生的电磁辐射。诊断中用于测量电子的温度。	GB/T-4960.9
-electrostatic-analyzer	en	通过静电偏压过滤不同能量的带电粒子，并分别收集和计数的仪器。	GB/T-4960.9
-fabry-perot-interferometer	en	由两块平行玻璃片组成，间距在几厘米范围内可调的干涉仪；玻璃片的两个内表面镀银形成半透膜，入射光波在其间多次反射，形成干涉后，再透射出来，最后接收干涉光信号。	GB/T-4960.9
-faraday-rotation	en	光通过磁化等离子体后，其偏振面的旋转。	GB/T-4960.9
-faraday-screen	en	静电屏蔽层，它由金属网或一系列平行金属丝组成并接地，通常与接地导体的一端相连，用于离子回旋共振加热(ICRH)天线与等离子体之间的静电屏蔽。	GB/T-4960.9
-first-mirrors	en	面向等离子体并直接受其辐照的反射镜(通常用于等离子体诊断或电子回旋加热系统)。	GB/T-4960.9
-magnetic-flux-loop	en	在等离子体周围沿着环向方向布置的大型单匝线圈，用于测量该线圈所围绕的磁通量。	GB/T-4960.9
-h-alpha-studies	en	通过观察氢原子发射光谱的巴尔曼线系的第一条谱线(波长 656.3nm )，用于研究等离子体边界的诊断技术。	GB/T-4960.9
-heavy-ion-beam-probe	en	将高能重离子(例如，铊)束横越磁场注入等离子体中，借助仪器测量出射的粒子以获得等离子体的电位分布、密度分布、磁场分布、电流分布等参数的等离子体诊断设备。	GB/T-4960.9
-hugill-diagram	en	在等离子体不同运行参数下统计出的 1 / q 相对于 nR / B 的曲线图(式中， q 为等离子体边缘处的安全因子， n 为平均电子密度， R 为等离子体大半径， B 为等离子体中心的环向场)，可以清楚地看到密度与 q 的运行极限值，进而划定安全运行区。	GB/T-4960.9
-interferometry	en	泛指光学干涉仪的设计和应用。应用方面包括波长的精确测定，极短距离及极薄厚度的测量，谱线超精细结构的研究，折射率的精确测定等。	GB/T-4960.9
-langmuir-probe	en	静电探针 electric probe 在低温等离子体中用于测量电子温度、电子与离子密度、空间与壁电位和随机电子电流的器件。它基本上由一个、两个或者更多的收集电极组成，电极上加有各种不同的电位，同时测量相应的收集电流。	GB/T-4960.9
-interferometry	en	利用等离子体密度对光的折射率的影响，用激光通过等离子体产生光程变化后与参考光束干涉，最后从干涉条纹对应的相位变化测得等离子体密度的测量仪器。	GB/T-4960.9
-lost-alpha-detectors	en	测量逃逸出等离子体的聚变产物 α 粒子的探测器。	GB/T-4960.9
-mach-zehnder-interferometer	en	利用两个半透镜和两个全反射镜，将平行激光束分为两路，一路通过被测的等离子体，另一路作为参考光束，然后将两路光合成。由于等离子体状态不同，附加了两路光束间的光程差，把两路光条纹相比较，得出条纹移动数，从而计算出各点平均电子密度的仪器。	GB/T-4960.9
-magnetic-bottle	en	在受控热核聚变实验中用来约束等离子体的磁场，它是磁力线位形呈现瓶颈形聚束的磁俘获器。	GB/T-4960.9
-magnetic-diagnostics	en	以各种形状的线圈排列在等离子体周围以测量局域磁场强度或磁通。参见罗戈夫斯基线圈(2.3.31)。	GB/T-4960.9
-magnetic-probe	en	由一定匝数(通常为几十匝)截面较小(直径为零点几到几毫米)的线圈绕成的小螺旋管构成的测量线圈所在点磁场强度和磁扰动等的线圈。	GB/T-4960.9
-microwave-interferometer	en	通过等离子体的微波束产生相位变化，测量干涉条纹推算出相位差，最后获得波束传播路上的平均电子密度的仪器。	GB/T-4960.9
-reflectometry	en	托卡马克中通过微波的反射信号测量来获得等离子体密度及其涨落信息的诊断系统。	GB/T-4960.9
-motional-stark-effect	en	横越磁场的带电粒子感应一个电场。这就引起粒子发射的光谱线的斯塔克分裂，这种光谱线可以展现托卡马克内的局域磁场。这是导出托卡马克电流分布的一项主要诊断。	GB/T-4960.9
-neutral-particle-analyser	en	包括一组微通道板探测器的仪器，用以测量从等离子体离开的中性粒子的能谱，可以观察到热离子谱和快离子谱。	GB/T-4960.9
-plasma-diagnostics-technique	en	测量等离子体各种参量的方法。等离子体诊断分为被动和主动两类。被动方式是测量等离子体发射的电磁波或粒子。通过对等离子体产生辐射的测量，可了解电子温度、离子温度、杂质、逃逸电子等信息。通过对等离子体发射粒子的测量，可了解中子、中性粒子、离子温度等信息。还可测量等离子体的电压、电流等电磁信号。主动测量是由外界送入电磁波、粒子束等来进行的测量。例如，激光散射法测定等离子体的电子温度、离子温度和密度分布；中性粒子束衰减可测密度；由重离子束可测密度分布、磁场分布、电势分布等。	GB/T-4960.9
-rogowski-coil	en	用于测量等离子体电流、磁体线圈电流和可能存在的晕电流的传感器。其主要部分是一种细长的多匝环形螺线管，围绕被测电流形成封闭的环。通过线圈端部测得的感应电压与流过封闭环的电流的变化率成正比。	GB/T-4960.9
-soft-x-rays-camera	en	将热等离子体辐射产生的软X射线映像，以获得有关等离子体密度与温度分布的仪器。	GB/T-4960.9
-survey-spectrometer	en	可以提供很宽频率范围光谱数据的仪器	GB/T-4960.9
-thomson-scattering	en	激光散射(诊断) laser scattering (diagnostic) 利用激光散射和等离子体电子引起的多普勒位移测量温度和密度的诊断方法。	GB/T-4960.9
-off-normal-event	en	电站或部件运行状态的非预期变化，但不会引起计划外的停堆。	GB/T-4960.9
-abnormal-operation	en	电站或部件偏离了正常运行的程序或运行状态。这种偏离包括在启动、电流驱动和停堆过程中偏离正常的运行程序，或者在聚变功率偏离其标称值下的运行。	GB/T-4960.9
-abnormal-operating-conditions	en	电站或其部件偏离正常运行的工况。	GB/T-4960.9
-active-environment	en	由于遭受风化侵蚀使沉积的放射性污染物比掩埋的污染物会更迅速扩散的地面环境部分。相比而言，掩埋的污染物不会经受这种侵蚀("无源"环境)。	GB/T-4960.9
-alpha-power	en	聚变堆反应能中由反应产物 α 粒子携带的功率。	GB/T-4960.9
-alternative-fuels	en	除氘和氚以外的聚变燃料。	GB/T-4960.9
-availability	en	系统或电厂中能执行其运行时间所占的百分比。也称为运行可用率(operation availability)。	GB/T-4960.9
-beyond-design-basis-accidents	en	已超出了设计基准许可的事故。	GB/T-4960.9
-bioshield	en	一堵包围托卡马克主低温恒温器(杜瓦)的混凝土厚壁，用以吸收大量由等离子体放出的残留辐射以保护外围区域。	GB/T-4960.9
-blanket	en	在聚变堆堆芯周围将聚变能转变成热能和生产氚的结构。	GB/T-4960.9
-blanket-materials	en	包层内所使用的材料，包括：氚增值材料、中子倍增材料、冷却剂和结构材料等。	GB/T-4960.9
-blanket-module	en	在聚变堆装置中，为了通过赤道入口便于包层的安装、维修和更换，包层被设计成若干个规范化的独立单元。	GB/T-4960.9
-blanket-shield	en	在聚变堆装置中，面向等离子体的第一壁部件；它能移走热量并保护包层、真空室和磁体免受辐照损伤。	GB/T-4960.9
-borated-concrete	en	掺入硼的混凝土。硼能很好地吸收中子。这种混凝土可以用于ITER(2.4.47)的生物屏蔽层上。	GB/T-4960.9
-breeder	en	聚变电站中用于增殖氚的部件，有时也指增殖氚的反应堆。最常用的反应为： \mathrm {L i} + \mathrm {n} \rightarrow \mathrm {T} + \alpha + 4. 8 \mathrm {M e V} 这里与快堆(裂变电站)中的增殖过程不同。	GB/T-4960.9
-breeding-blanket	en	通过锂俘获聚变中子来增殖氚的包层结构。	GB/T-4960.9
-breeding-technologies	en	通过锂俘获中子来增殖氚的技术。	GB/T-4960.9
-burn-control	en	为维持燃烧等离子体温度、密度、成分等所进行的控制。	GB/T-4960.9
-burning-plasma	en	当聚变产生的 α 粒子的加热功率大于外部输入的加热功率时的等离子体。	GB/T-4960.9
-ceramic-breeders	en	在增殖包层中含有锂增殖材料的陶瓷材料层。	GB/T-4960.9
-common-cause-failure	en	由于一些单个事件或原因而导致的一些设备或部件的功能失效。	GB/T-4960.9
-compliant-material	en	相互接触但并不发生化学反应的材料。	GB/T-4960.9
-conceptual-design-activity	en	为达到确定的研究目标所进行的一系列基本框架设计研究活动。在ITER(2.4.47)上特指1988年～1990年所进行的活动。	GB/T-4960.9
-confinement-system	en	限制放射性物质和有害物质的最大泄漏率不超过规定限值的系统。	GB/T-4960.9
-cordey-pass	en	运行密度与温度中的一个点，它使加热等离子体至受控点火值所需的辅助功率最小。	GB/T-4960.9
-critical-heat-flux	en	偏离泡核沸腾且泡沫结成绝热层时的热通量值。	GB/T-4960.9
-cryoplant	en	用于生产液氨和液氮等冷却剂的工厂。	GB/T-4960.9
-demo	en	商用聚变堆前用于演示商用堆功能的聚变堆。	GB/T-4960.9
-design-basis-accident	en	按照确定的设计准则在设计中可采取针对性措施的事故工况。	GB/T-4960.9
-down-time	en	装置计划维护或因其他原因而停止运行的时间。	GB/T-4960.9
-d-t-operation	en	氘氚混合比例大致相等的聚变等离子体运行。	GB/T-4960.9
-duty-factor	en	在断续运行装置中，其运行时间与总时间之比。	GB/T-4960.9
-dwell-time	en	运行脉冲中不燃烧的时间。	GB/T-4960.9
-engineering-design-activity	en	在完成概念设计之后，进行满足工程建造要求达到预期功能的详细设计活动。在ITER(2.4.47)中特指1992年～2001年期间的活动。	GB/T-4960.9
-flibe	en	由氟、锂和铍组成的熔盐，可用于聚变堆包层的增殖材料。	GB/T-4960.9
-fuel-cycle-system	en	从等离子体排气流中提取氘、氚并将其重新注入等离子体的系统。同时，处理废物中的含氘物质。	GB/T-4960.9
-fuels	en	聚变堆的燃料，主要包括氘、氚。	GB/T-4960.9
-functional-isolation	en	避免一个回路或系统的操作模式或失效对其他部分的影响的措施。	GB/T-4960.9
-fusion-fission-hybrid-reactor	en	由聚变和裂变反应生产能量的反应堆。一般由含有裂变材料的次临界包层包围聚变中子源。如果在包层中也包含可转换材料，那么，反应堆将产生额外的裂变材料。也称为混合堆(hybrid reactor)。	GB/T-4960.9
-fusion-power	en	由聚变反应产生的功率，主要由中子及 α 粒子携带。	GB/T-4960.9
-fusion-power-plant	en	由核聚变反应提供能量的电厂。国际聚变研究的规划是先建造ITER(2.4.47)，再建造示范聚变电厂。	GB/T-4960.9
-fusion-product	en	氘-氘等离子体聚变反应时产生的 α 粒子和中子等。	GB/T-4960.9
-fusion-reactivity	en	实现聚变反应的离子数与总离子数之比。	GB/T-4960.9
-fusion-reactor	en	利用可控聚变反应产生聚变能的装置。	GB/T-4960.9
-helium-ash	en	在氘-氚等离子体中，聚变反应产生的高能 α 粒子(氦核)被等离子体慢化后成为氦灰。	GB/T-4960.9
-ignition-condition	en	自持聚变反应条件：对氘-氚等离子体， α 粒子加热等于等离子体热损失。	GB/T-4960.9
-iter	en	由中国、美国、欧盟、日本、俄罗斯、韩国及印度七方共同建造的核聚变实验堆。	GB/T-4960.9
-iter-units-of-account	en	一个ITER记账单位，等价于1998年的1000美元。	GB/T-4960.9
-international-tokamak-reactor	en	在国际原子能机构(International Atomic Energy Agency,IAEA)组织下的，由美国、日本和欧洲共 同体设计的大型托卡马克装置，后被ITER取代。	GB/T-4960.9
-mockup	en	可以将真实应用于装置上部件的某些或全部特性复制出来的样件。例如，ITER部件试验样件。	GB/T-4960.9
-model-coil	en	用于反映ITER磁体线圈关键特性的测试线圈。	GB/T-4960.9
-port-plugs	en	ITER真空室的上部、中部及下部包含了大量的端口，在运行中端口中均安装有用于等离子体诊断、加热、抽真空的部件，以及限制器和与示范堆(DEMO)相关的试验包层模块。每一个设备均安装于一个特定的窗口插座上，为它们提供与邻近室、包层、屏蔽层的坚固接口，同时还将外部供应与端口插件服务连接。	GB/T-4960.9
-remote-handling	en	通过机电设备控制在聚变堆中远距离操作的活动。	GB/T-4960.9
-remote-handling-class	en	等级I为例行的远距离计划维修，等级Ⅱ为在电厂的生命周期内进行的远程维修或更换，等级Ⅲ为不必在电厂的生命周期内进行的远距离维修或更换，等级IV为不要求任何远距离维修或更换。	GB/T-4960.9
-remote-maintenance	en	使用远距离控制的机器和工具对聚变堆中的放射性单元和部件进行维护与改造。	GB/T-4960.9
-decay-heat	en	聚变堆停堆后由活化产物产生的衰变热。	GB/T-4960.9
-safety-system-settings	en	在预期运行事件和事故情况下，启动自动保护装置的某些阀值触发点以确保安全极限不被超出。	GB/T-4960.9
-safety-system	en	为保障聚变堆关断安全或限制预期运行事件和事故后果而与安全密切相关的系统。	GB/T-4960.9
-safety-system-support-feature	en	提供保护系统及启动安全系统所需的冷却、润滑、能量供应服务的一系列设备。	GB/T-4960.9
-scheduled-down-time	en	按计划的聚变堆停堆时间。	GB/T-4960.9
-shut-down-time	en	在等离子体燃烧结束到等离子体状态结束之间的时间跨度，是运行时间的一部分。	GB/T-4960.9
-single-failure	en	一个导致部件不能以最好的性能执行其安全功能的随机失效事件引起的故障。	GB/T-4960.9
-steady-state-fusion-reactor	en	诸如温度、反应率及中子通量等条件不随时间变化的聚变反应堆。	GB/T-4960.9
-steady-state-operation	en	聚变堆主要参数在远大于 α 粒子慢化时间或磁扰动穿透等离子体的时间或机械结构热平衡的时间内保持不变的运行。	GB/T-4960.9
-support-systems	en	为聚变堆主系统提供服务的辅助系统。	GB/T-4960.9
-iter-test-blanket-module	en	在ITER装置实验窗口进行中子学和氘增殖、热工水力、电磁、整体性能测试的试验模块。	GB/T-4960.9
-thermonuclear-reactor	en	能维持和控制自持聚变反应的装置，又称聚变堆(fusion reactor)。	GB/T-4960.9
-thermonuclear-reactor-blanket	en	在未来的聚变反应堆中，围绕着等离子体的一组包套。它可以采取锂从中流过或由冷却剂(如氦)和锂陶瓷材料组成的结构形式。这个包层有3个用途：由锂产生氚；排除热量；吸收来自等离子体的辐射，从而保护外面的超导线圈。	GB/T-4960.9
-tritium-breeding-ratio	en	聚变堆增殖包层中单位时间氚产量相对氚消耗量的比值。	GB/T-4960.9
-tritium-processing	en	从载氚流体、装置排出气体和泄漏含氚气体中提取氚，并安全收储或成为等离子体燃料的过程。参见氚工厂(2.4.71)。	GB/T-4960.9
-tritium-plant	en	从聚变堆的燃料系统及其他含氚材料中收集、储藏、循环利用、提取及净化氚的设施。	GB/T-4960.9
-vacuum-vessel	en	在聚变装置中为获得等离子体而提供的高真空容器。	GB/T-4960.9
-wall-loading	en	第一壁或偏滤器靶板上单位面积的热通量，即聚变堆热输出功率除以面向等离子体的面积。	GB/T-4960.9
+magnetic-confinement-fusion	zh	利用强磁场将高温度和高密度等离子体约束足够长的时间而产生的核聚变反应，可以通过托卡马克(2.1.284)、仿星器(2.1.273)、反场箍缩(2.2.117)、Z箍缩(2.1.306)以及 θ 箍缩(2.1.283)等途径实现。	GB/T-4960.9
+acoustic-heating	zh	由磁泵抽运加热等离子体的方式。 注：磁泵抽运的频率远低于离子碰撞频率，同离子通过发生磁泵抽运的区域的渡越频率同一数量级。在这种情况下，振荡场产生能被等离子体吸收的声波。	GB/T-4960.9
+adiabatic-compression	zh	通过磁场压缩等离子体，保持其磁矩不变的过程。	GB/T-4960.9
+adiabatic-compression-heating	zh	通过绝热压缩加热等离子体。	GB/T-4960.9
+adiabatic-invariant	zh	当磁场随空间或时间变化时，带电粒子在磁场中运动的某些保持不变的参量或由它们组合起来的一些保持不变的量。这些参量包括磁矩、纵向不变量、通过粒子漂移轨道的磁通量等，它们是准静态过程中的不变量。	GB/T-4960.9
+advanced-research-innovation-and-evaluation-study	zh	美国从20世纪90年代开始的一项磁约束聚变反应堆设计研究计划。至今已设计研究过多种聚变反应堆：ARIES-I基于当时托卡马克(2.1.284)物理数据的适当外推而设计的装置，ARIES-II和ARIES-IV为堆芯成分不同的两个运行第二稳定性区的装置，ARIES-III则是使用 D^-3He 聚变反应代替D-T反应的一种反应堆型。	GB/T-4960.9
+advanced-tokamak	zh	同时具备稳态运行、高等离子体约束性能、高比压 (β) 值、高自举电流，并能有效移除能量及废料的 托卡马克(2.1.284)装置。	GB/T-4960.9
+alfven-gap-modes	zh	托卡马克(2.1.284)等离子体的环向特性使阿尔芬波的原先的连续谱产生间隙，它们是以不连续的无阻尼的间隙模式存在。 注：这些模可以与高能粒子(例如，来自聚变反应的 α 粒子)产生共振而激发不稳定性，造成高能粒子的反常损失。	GB/T-4960.9
+alfven-time	zh	阿尔芬波沿环向方向传播一弧度所需的时间，它是磁流体不稳定性效应的一个时间标度。	GB/T-4960.9
+alfven-velocity	zh	在磁场方向阿尔芬波在等离子体中的传播速度，它与磁场强度成正比，与离子密度平方根成反比。	GB/T-4960.9
+alfven-wave	zh	基本表现等离子体磁流体动力学性质的波动现象，表现为等离子体中的一种磁场振荡。参见快阿尔芬波(2.1.101)。	GB/T-4960.9
+alfven-wave-instability	zh	当等离子体粒子在沿磁场方向上运动的能量大于垂直于磁场平面中的能量时，所产生的电磁微观不稳定性。 注：这是由作用在沿弯曲的磁力线流动的等离子体上的离心力引起的。这种不稳定性导致整个磁场形状来回振荡。	GB/T-4960.9
+alpha-channel-effect	zh	通过等离子体波将聚变 α 粒子能量直接传递给离子。	GB/T-4960.9
+ambipolar-diffusion	zh	当等离子体中出现密度梯度时，电子的扩散比离子快得多，结果引起电荷分离，使等离子体内出现电场的现象。 注：这种电场引起电子迁移减慢而使离子迁移加快，达到准稳态时，电子和离子的通量密度相等(假定离子电荷数为1)。	GB/T-4960.9
+anomalous-diffusion	zh	等离子体中由非经典输运引起的等离子体粒子横越磁场的快速扩散，它使等离子体约束性能变坏。参见反常输运(2.1.17)。	GB/T-4960.9
+anomalous-electron-thermal-conduction	zh	与等离子体中经典输运理论相比，在实验中测量到更大电子热传导损失的现象。参见反常输运(2.1.17)。	GB/T-4960.9
+anomalous-transport	zh	与等离子体中经典输运理论相比，在实验中测量到更大输运损失的现象。	GB/T-4960.9
+aspect-ratio	zh	环形等离子体的大半径与小半径之比。参见等离子体几何位形(2.1.220)。	GB/T-4960.9
+auxiliary-heating-additional-heating	zh	除等离子体自身效应加热之外的附加加热，主要包括中性束注入和射频波加热等。	GB/T-4960.9
+ballooning-instability	zh	环形等离子体中，由压强梯度在环外侧驱动的局部磁流体动力学不稳定性。	GB/T-4960.9
+banana-orbit	zh	环形等离子体中，磁场中的俘获粒子导向中心的一种常见运行轨迹，因其形似香蕉而得名。	GB/T-4960.9
+bernstein-mode	zh	在高温等离子体中垂直于磁场传播的准静电性质的波动模式。	GB/T-4960.9
+beta-value	zh	β 值 等离子体压强与磁压强之比，是磁约束的品质因数之一。	GB/T-4960.9
+mhd-stability-limit	zh	β 极限 磁约束等离子体可达到的最大比压值。	GB/T-4960.9
+bohm-diffusion	zh	等离子体粒子横越磁场的反常扩散现象。扩散系数通常比经典扩散系数大几个数量级，而且扩散系数与磁场强度成反比。	GB/T-4960.9
+bohm-transport	zh	回旋玻姆输运 gyro-Bohm transport 与长波长等离子体扰动有关的反常扩散，这类输运的约束时间随磁场线性地增大。	GB/T-4960.9
+bootstrap-current	zh	在存在压强梯度情况下，由新经典效应引起的环向电流，它与环形磁场系统中捕获粒子效应相关。亦称靴带电流。	GB/T-4960.9
+burn-fraction-of-thermonuclear-fuel	zh	热核反应过程中，反应燃烧掉的热核燃料质量与投料质量的比值，它取决于燃烧速率和约束的好坏。	GB/T-4960.9
+central-electron-density	zh	磁约束聚变装置中磁轴处的等离子体电子密度。	GB/T-4960.9
+closed-configuration	zh	空间磁力线闭合的一种磁场结构，以便使等离子体只有通过横越磁力线扩散才能从该系统逃逸。	GB/T-4960.9
+cold-plasma	zh	温度效应可被忽略的等离子体模型，即比起外加约束磁场的磁压力、动(力)压力可以忽略的情形(即 β 值远小于1)。	GB/T-4960.9
+collective-instabilities	zh	当高能粒子的压强比较高(可与等离子体热压强相比较)时，由高能粒子激发的不稳定性。	GB/T-4960.9
+collective-phenomena	zh	由于库仑作用的长程性质，等离子体内粒子群体行为所产生的现象。	GB/T-4960.9
+collisional-plasma	zh	粒子的运动受二体短程碰撞支配的等离子体。	GB/T-4960.9
+collisionless-plasma	zh	可以忽略二体库仑碰撞效应的理想等离子体。	GB/T-4960.9
+collisionless-shock-wave	zh	等离子体中波阵面内的耗散机制不是库仑碰撞效应时的激波。该激波中波阵面的厚度小于平均自由程。	GB/T-4960.9
+collisionless-tearing-instability	zh	在无碰撞等离子体中，由密度和温度的不均匀性驱动的撕裂模不稳定性。通常，电子的惯性、霍尔电流、压强梯度或者朗道阻尼是造成等离子体与磁力线分离的原因。	GB/T-4960.9
+h-factor	zh	等离子体高约束模式与低约束模式的约束时间之比。	GB/T-4960.9
+confinement-time	zh	表征能量(或粒子)从等离子体中损失的特征时间。 注：处于热平衡态的等离子体中，能量约束时间被定义为总储能与总加热功率之比。	GB/T-4960.9
+controlled-thermonuclear-fusion	zh	在一个有限的空间内将很轻的原子核加热到极高温度，使其在受控条件下进行聚变反应的过程。	GB/T-4960.9
+core-confinement	zh	靠近等离子体中心的高温、高密度区域的能量和粒子约束。	GB/T-4960.9
+current-drive	zh	由外部注入动量(例如，用射频波或中性束注入)驱动等离子体电流的过程。可帮助实现托卡马克 (2.1.284) 稳态运行，并应用于优化等离子体位形以控制不稳定性和改善等离子体约束。	GB/T-4960.9
+cusped-geometry	zh	磁力线处处凸向位形中心的磁场位形。这种位形有利于稳定磁流体不稳定性。	GB/T-4960.9
+cyclotron-frequency	zh	在磁场中，带电粒子在洛伦兹力作用下围绕磁力线做回旋运动的固有频率，其大小与带电粒子的质量及磁场的强度有关。	GB/T-4960.9
+cyclotron-instability	zh	在均匀的各向异性等离子体中，由于粒子的回旋运动同与等离子体振荡相联系的静电波之间的耦合激发的静电微观不稳定性。	GB/T-4960.9
+synchrotron-radiation	zh	磁场中的带电粒子因其回旋运动而发出的辐射。	GB/T-4960.9
+cyclotron-resonance	zh	电磁波的频率接近带电粒子的回旋频率(及其谐波)时出现的波与等离子体能量交换的现象。	GB/T-4960.9
+cyclotron-resonance-heating	zh	利用射频波，通过回旋共振机制加热等离子体的方法。包括离子回旋共振加热与电子回旋共振加热。	GB/T-4960.9
+cylindrical-approximation	zh	大环径比条件下对托卡马克环形几何位形的一种近似。	GB/T-4960.9
+d-alpha-light	zh	氘阿尔法辐射 D-alpha radiation 氘原子的电子由 n = 3 退激至 n = 2 所发出的可见光辐射。	GB/T-4960.9
+d-shaped-plasma	zh	具有形似英文大写字母"D"形横截面的等离子体。	GB/T-4960.9
+debye-length	zh	德拜球半径 Debye sphere radius 一个电子受到一个给定的正离子电场影响的距离，它是等离子体中的一个特征长度，是电子电荷密度能够明显地区别于离子电荷密度的距离的量度。	GB/T-4960.9
+degenerate-configuration	zh	由简并磁力线形成的闭合磁位形，即磁力线在绕位形有限次数之后本身正好闭合的位形。	GB/T-4960.9
+density-limit	zh	稳定运行的磁约束装置中等离子体所能达到的最高密度。	GB/T-4960.9
+dd-reaction	zh	D-D反应 氘核间的聚变反应。 反应式为： D + D → n + ³ H e D + D → p + T 等概率地生成氦核/中子、氚/质子的同时释放能量。	GB/T-4960.9
+d-he3-reaction	zh	氘与氦之间发生的受控聚变反应，反应式为： D + ³ H e → p + ⁴ H e + 1 8. 4 M e V 注：因燃料没有放射性，且不直接产生中子，这种反应比氘-氚反应更具有安全和环保的优点。但聚变条件更高。	GB/T-4960.9
+deuterium-tritium-plasma	zh	由氘和氚混合物形成的等离子体。	GB/T-4960.9
+dt-reaction	zh	目前最有希望实现聚变能应用的反应： D + T → n + ⁴ H e + 1 7. 6 M e V 又称D-T反应(D-Treaction)或氘-氚燃烧(D-Tburn)。	GB/T-4960.9
+diamagnetic-effect	zh	逆磁电流产生的磁场与原来的磁场方向相反，使通过等离子体的磁场强度减弱的效应。	GB/T-4960.9
+diamagnetic-plasma	zh	当磁通量穿过等离子体时，由于产生的感应电流形成一个反方向的磁通量，而使等离子体的磁通量减少。	GB/T-4960.9
+dispersion-relation	zh	等离子体波动或不稳定性的频率和波矢量之间的关系。	GB/T-4960.9
+displacement-of-plasma	zh	等离子体偏离宏观平衡位置的移动。	GB/T-4960.9
+disruption	zh	等离子体的温度陡然下降并使等离子体放电在短时间出现瞬间淬灭的现象，它导致放电中断并严重损坏核聚变装置。也称为等离子体破裂(plasma disruption)。	GB/T-4960.9
+disruptive-instability	zh	托卡马克(2.1.284)装置等离子体中最常见的宏观不稳定性。主要特征是：磁通量突变，电流通道迅速(几十微秒内)膨胀，等离子体环显著地向环内侧移动，等离子体环电压波形图上出现负尖脉冲，同时等离子体电流波形图上出现正尖脉冲，能量和粒子输运增强(温度、密度、杂质浓度分布发生突变，软X射线信号也发生相应变化)。破裂不稳定性依其特征可分为内破裂和外破裂。内破裂主要表现为由 等离子体中心区软X射线发射强度波形图上的锯齿振荡，可用 m = 1 的撕裂模不稳定性来解释。外破裂又依其电压波形图上负尖脉冲幅值大小分为大破裂和小破裂。破裂不稳定性的发生不仅限制其等离子体参数的进一步提高，约束性能变坏，甚至引起等离子体电流突然中断。	GB/T-4960.9
+dissociative-recombination	zh	电子同正的分子离子相结合，随之是分子离解的过程。所形成的原子带走过剩能量。如： H ₂ ⁺ + e → H ₂ * → H + H	GB/T-4960.9
+divertor-physics	zh	与偏滤器有关的物理问题。	GB/T-4960.9
+double-null-equilibrium	zh	有两个极向磁场零点存在的等离子体平衡位形。	GB/T-4960.9
+drift-cyclotron-resonance-instability	zh	在绝热不变性遭到破坏的某个频率范围内(包括粒子回旋频率)的静电漂移不稳定性。当横向漂移波和离子回旋运动发生共振时，这种不稳定性具有最高的增长速率。	GB/T-4960.9
+drift-dissipative-instability	zh	一组类似于无碰撞漂移不稳定性的静电不稳定性，但其增长率同碰撞有关，而不是同共振粒子有关。	GB/T-4960.9
+drift-instability	zh	由垂直于磁场方向的空间密度梯度或温度梯度引起的等离子体逆磁漂移所形成的一类微观不稳定性。又称为普适不稳定性。	GB/T-4960.9
+drift-kinetic-theory	zh	描述粒子导向中心分布函数的动理学理论。	GB/T-4960.9
+drift-orbits	zh	在横向电场和非均匀磁场中带电粒子的运动轨道。	GB/T-4960.9
+drift-surface	zh	根据绝热不变性定律，粒子导向中心被限制在某个面上运动。	GB/T-4960.9
+drift-wave	zh	在不均匀等离子体中，由于温度、密度或者磁场强度等梯度的出现，在垂直于磁场和梯度方向形成漂移流从而形成的波动。	GB/T-4960.9
+driven-current	zh	用外加手段(例如：电磁感应、中性束以及射频波)产生的等离子体电流。	GB/T-4960.9
+dusty-plasma	zh	由大量电子、离子及带电和不带电尘埃粒子组成的宏观电中性体。	GB/T-4960.9
+edge-fluctuations	zh	在等离子体边界区域发生的密度或者电场的波动。	GB/T-4960.9
+edge-localized-mode	zh	在高约束(H模)状态下由边缘很窄的区域形成的高压强梯度引起的张弛性不稳定性。它会瞬间导致粒子和能量从边缘损失掉。	GB/T-4960.9
+edge-physics	zh	等离子体边界区域的物理问题。	GB/T-4960.9
+edge-plasma	zh	靠近最后一个封闭磁面内侧的等离子体。	GB/T-4960.9
+eikonal-equation	zh	电磁波或声波在非均匀介质中传播的方程，只有当介质性质的变化在波长距离范围内很小时，它才有效。	GB/T-4960.9
+e-layer	zh	在天体器装置上用来形成、加热及约束所包围的等离子体的相对论电子层。它是由相对论电子束产生的。向磁镜装置注入一束通量充分高的电子流, 则由电子流产生的磁场可超过初始磁场, 从而形成与初始磁场反向的相对论电子圆柱层。	GB/T-4960.9
+electromagnetic-load	zh	因载流等离子体运动在周围导体结构中感生的电流所产生的机械载荷。	GB/T-4960.9
+electron-cyclotron-resonance-heating	zh	其频率与电子回旋频率相匹配的射频波辅助加热手段。	GB/T-4960.9
+electron-cyclotron-wave	zh	平行于外加磁场传播的圆偏振射频波，其频率低于电子回旋共振频率。	GB/T-4960.9
+electron-plasma-frequency	zh	等离子体中电子的自由静电振荡频率。	GB/T-4960.9
+electron-temperature	zh	电子的动理学温度。	GB/T-4960.9
+electrostatic-confinement	zh	用电场约束等离子体。	GB/T-4960.9
+electrostatic-wave	zh	在等离子体中由电中性扰动引起的纵波。	GB/T-4960.9
+elmy-h-mode	zh	伴随有边缘局域模的高约束模式(H模)。	GB/T-4960.9
+plasma-elongation	zh	等离子体极向截面高度与宽度之比。	GB/T-4960.9
+empirical-scaling-formulas	zh	根据实验数据分析而拟合出来的描述等离子体参数随实验参数变化的公式。	GB/T-4960.9
+energy-break-even	zh	核聚变释放出来的能量与用于加热等离子体能量相等的条件。也称为得失平衡(Break-even)。	GB/T-4960.9
+tau-e	zh	表征能量从等离子体中损失的特征时间，其数值等于等离子体的总能量与能量总损失功率之比。	GB/T-4960.9
+energy-confinement-time-scaling-law	zh	根据实验数据分析而拟合出来的等离子体能量约束时间随实验参数的变化规律。	GB/T-4960.9
+energy-loss-time	zh	等离子体(由于辐射或者其他机理)损失的能量相当于它的平均动能所需的时间。参见能量约束时间(2.1.95)。	GB/T-4960.9
+enhanced-particle-modes	zh	能够加速特定种类粒子的磁流体活动。	GB/T-4960.9
+entropy-trapping	zh	通过使粒子的有序运动随机化的过程，把一个有序的粒子束俘获在某一磁场位形中，其结果使系统的熵增加。	GB/T-4960.9
+equilibration-times	zh	电子和离子热交换达到平衡所需的时间。	GB/T-4960.9
+fast-alfven-wave	zh	存在于等离子体中的波。其频率范围较宽，其速度可与阿尔芬速度相比。	GB/T-4960.9
+finite-heat-conductivity-instability	zh	在沿磁场方向存在有限热导的情况下，由横向压力梯度驱动的静电不稳定性。	GB/T-4960.9
+fire-hose-instability	zh	当粒子在磁场方向的能量大于垂直于磁场方向的能量时，在等离子体中产生的电磁流体力学不稳定性。 注：这种不稳定性是由于当等离子体沿着弯曲的磁力线运动时，有离心力作用于等离子体上所致，引起磁场分布整体地前后振荡，当存在涉及整体等离子体大的各向异性时出现阿尔芬波不稳定性，当存在小的各向异性时发生慢阿尔芬波不稳定性。	GB/T-4960.9
+fishbone-instability	zh	高能粒子驱动的磁流体动力学不稳定性(MHD)，实验观测到像鱼骨形状的周期暴发信号。	GB/T-4960.9
+flip-instability	zh	出现在具有反向俘获场的角向箍缩装置中的电磁宏观不稳定性。这时，相应等离子体电流的磁矩与约束线圈产生的磁矩方向相反。因此，如果等离子体通过装置的中心平面，则将释放磁能。	GB/T-4960.9
+fokker-planck-equation	zh	考虑多重小角散射的动理学方程。	GB/T-4960.9
+frozen-magnetic-field	zh	在磁场中具有无限大电导率的流体的运动伴随有磁场的形变，就好像磁力线被冻结在流体中并带它一起移动。	GB/T-4960.9
+fullwave-theory	zh	考虑波的各种行为(包括传播、吸收等)的一种理论。	GB/T-4960.9
+fusion	zh	核聚变 nuclear fusion 轻元素的原子核聚合在一起形成较重元素的原子核并释放出能量的核反应。最易实现的核聚变是在氢的两个同位素(氘和氚)之间的反应。氘-氚核聚变反应所释放的大部分能量是由高速中子所带走的。其余的能量则归于反应中产生的 α 粒子(氦核<sup>4</sup>He)。	GB/T-4960.9
+fusion-triple-product	zh	等离子体密度、温度和能量约束时间的乘积。也称为三乘积(riple product)。	GB/T-4960.9
+gas-discharge-plasma	zh	在气体中施加电场，导致自然存在或引入的空间带电粒子被加速，当电场足够强时会导致"雪崩"，形成放电的等离子体状态。	GB/T-4960.9
+grad-shafranov-equation	zh	描述托卡马克(2.1.284)中等离子体宏观磁流体平衡的偏微分方程。因美国学者Grad和前苏联学者Shafranov同时导出而得名。	GB/T-4960.9
+gravitational-instability	zh	G模不稳定性 Gmodeinstability 等离子体在重力(或者某种等效惯性力)的作用下而出现横越磁力线滑移时，出现的电磁宏观不稳定性。	GB/T-4960.9
+greenwald-density	zh	由美国学者格林沃尔德总结的托卡马克(2.1.284)中等离子体能达到的最高密度。它是托卡马克中密度极限的一种量度。	GB/T-4960.9
+guiding-center	zh	导心 带电粒子在电磁场中运动时拉莫尔回旋轨道的中心。	GB/T-4960.9
+gyro-kinetic-theory	zh	通过离子围绕磁力线的快速回旋运动与导心慢运动解耦来描述等离子体中低频行为的动理学理论。	GB/T-4960.9
+gyrorelaxation-effect	zh	利用磁泵增加等离子体中粒子能量的效应。其实现条件是：磁泵调制周期接近于碰撞周期而远大于粒子回旋周期。	GB/T-4960.9
+gyrorelaxation-heating	zh	利用回旋弛豫效应加热等离子体的方法。	GB/T-4960.9
+h-l-transition	zh	高约束模向低约束模的转换。	GB/T-4960.9
+h-mode	zh	在磁约束核聚变装置等离子体中，随着辅助加热功率的上升，保持或改善的良好约束模式。	GB/T-4960.9
+hybrid-resonance	zh	磁化等离子体中的一种共振，包括以等离子体频率为特征的平行聚束和以回旋频率为特征的粒子垂直运动的两个方面。	GB/T-4960.9
+hydromagnetic-wave	zh	磁场中在导电流体(液体或等离子体)中传播的物质波。	GB/T-4960.9
+ideal-internal-kink-mode	zh	在托卡马克(2.1.284)中心区域的理想磁流体不稳定性。	GB/T-4960.9
+impurities	zh	聚变燃料(及其反应产物)和电子之外的其他粒子。	GB/T-4960.9
+impurity-radiation	zh	由杂质引起的能量辐射。	GB/T-4960.9
+impurity-screening	zh	避免杂质进入等离子体采取的措施。例如：硅化、硼化以及锂化处理第一壁。	GB/T-4960.9
+inboard-plasma-shape	zh	等离子体大圆周内侧(靠近装置中心)的形状。它受最近的极向场线圈(通常也有中心螺线管)影响很大。	GB/T-4960.9
+indentation	zh	托卡马克(2.1.284)等离子体位形中具有"豆形"横截面内凹的度量。	GB/T-4960.9
+interchange-instability	zh	槽型不稳定性 flute instability 等离子体同磁场交换位置的磁流体动力学宏观不稳定性。	GB/T-4960.9
+internal-inductance	zh	l_i 托卡马克(2.1.284)等离子体环单位长度上的自感，通常用符号 l_i 来表示。	GB/T-4960.9
+internal-kink-mode	zh	发生在等离子体中心区的磁流体动力学不稳定性。	GB/T-4960.9
+internal-mode	zh	发生在托卡马克(2.1.284)等离子体中心，其扰动不影响等离子体边界的磁流体动力学不稳定性。	GB/T-4960.9
+internal-reconnection-event	zh	使磁力线撕裂并且重联成为不同拓扑形态的不稳定性事件。它使系统达到更低的能态，通常在球形托卡马克(2.1.284)上可以观察到。	GB/T-4960.9
+internal-transport-barrier	zh	等离子体内部自发形成的阻碍粒子和能量输运的屏障。	GB/T-4960.9
+ion-acoustic-wave	zh	在等离子体中，由离子惯性和电子压力结合而形成的纵向压缩波。	GB/T-4960.9
+ion-bernstein-wave	zh	在离子回旋频率谐波下垂直于磁场传播的等离子体波。	GB/T-4960.9
+ion-cyclotron-current-drive	zh	用离子回旋共振波产生的非感应电流驱动。	GB/T-4960.9
+eccd	zh	用电子回旋共振波产生的非感应电流驱动。	GB/T-4960.9
+ion-cyclotron-emission	zh	因为离子回旋运动而产生的电磁波辐射。	GB/T-4960.9
+ion-cyclotron-resonance-heating	zh	其频率与离子回旋频率相匹配的射频波辅助加热手段。	GB/T-4960.9
+ion-plasma-frequency	zh	f_pi 在等离子体中离子的静电振荡频率。	GB/T-4960.9
+ion-temperature	zh	离子的动理学温度。单位为 eV 。	GB/T-4960.9
+ion-wave-instability	zh	离子声不稳定性 ion acoustic instability 离子等离子体振荡(离子和电子之间沿磁力线相对运动)引起的静电微观不稳定性。	GB/T-4960.9
+isotropic-plasma	zh	在各个方向上，具有相同性质(例如：密度、温度等)的等离子体。	GB/T-4960.9
+kelvin-helmholtz-instability	zh	在具有不同速度流体间的界面上出现的静电宏观不稳定性。	GB/T-4960.9
+kinetic-instability	zh	因为速度空间的不均匀性而引起的不稳定性。	GB/T-4960.9
+kinetic-pressure	zh	由于组成等离子体的粒子的热运动而产生的动量密度。	GB/T-4960.9
+kinetic-theory	zh	运用统计物理学原理研究等离子体的一种理论方法。	GB/T-4960.9
+kink-mode	zh	导致等离子体整体扭拧的宏观不稳定性。	GB/T-4960.9
+kruskal-limit	zh	克鲁斯卡尔-沙弗拉诺夫极限 Kruskal-Shafranov limit 产生扭曲不稳定的环电流的极限值。	GB/T-4960.9
+l-h-transition	zh	从低约束模向高约束模的转换。	GB/T-4960.9
+l-mode	zh	在磁约束装置等离子体中，随着辅助加热功率的提高而约束变差的模式。	GB/T-4960.9
+landau-damping	zh	波在热等离子体中传播时，与速度接近于波的相速度 V_Phi 的等离子体粒子相互作用而引起的阻尼现象。	GB/T-4960.9
+langmuir-frequency	zh	在电场作用下，电子作集体运动而引起的等离子体振荡频率。	GB/T-4960.9
+larmor-radius	zh	回旋半径 cyclotron radius 对于在磁场中作横向运动的带电粒子，将其轨迹投影在与磁场垂直的平面上的曲率半径。	GB/T-4960.9
+lawson-criterion	zh	由劳逊导出的实现氘氚受控核聚变的判据。即等离子体温度大于1亿度(10 keV)，等离子体密度和等离子体能量约束时间的乘积大于 2 times 10^20 ~m^-3 ~s 。	GB/T-4960.9
+line-tying	zh	磁力线束缚 tying down of the line of force 当等离子体中的磁力线指向导体壁时出现的一种效应。因为磁力线不能迅速穿过导体，于是，就能对等离子体的交换不稳定性起稳定作用。	GB/T-4960.9
+locked-mode	zh	旋转的磁流体模的频率被锁定的状态。	GB/T-4960.9
+loss-cone	zh	磁镜位形中，平行速度和垂直速度比大于一定值时，带电粒子可以穿越磁镜损失，这个比值的阈值在速度空间坐标中呈现一个锥形。	GB/T-4960.9
+loss-cone-instability	zh	在开端系统中，由于损失锥内等离子体产生电荷不平衡，而出现的静电微观不稳定性。	GB/T-4960.9
+low-beta-plasma	zh	比压值 (β) 一般为 0 sim 0.01 的等离子体。	GB/T-4960.9
+lower-hybrid-wave	zh	LH波 其频率处于离子与电子回旋频率之间的射频波。它具有平行于磁场的电场分量，因此，它可以加速沿磁力线移动的电子。	GB/T-4960.9
+low-field-side	zh	环形磁约束装置中，外侧场强比内侧场强低的区域，亦称为低场区。	GB/T-4960.9
+low-temperature-plasma	zh	电子温度范围在 10^4K sim 10^6K , 比受控核聚变等离子体温度低得多的等离子体。从热力学平衡看, 包括热平衡等离子体 (电弧等离子体、化学燃烧等离子体等) 和非热平衡等离子体 (冷等离子体、辉光放电等)。	GB/T-4960.9
+macroinstability-macroscopic-instability	zh	等离子体不稳定性的一种类型，只涉及在位形空间中的运动，把等离子体视为整体而采用单流体模型的磁流体动力学描述，或采用多流体模型和标量压强能相当近似地描述的等离子体不稳定性。	GB/T-4960.9
+magnetic-confinement	zh	利用适当位形的磁场把等离子体约束在有限区域之内。	GB/T-4960.9
+magnetic-island	zh	在非理想等粒子体中，当两个平行但方向相反的磁场靠得很近时，垂直磁力线方向的任何扰动都有可能使磁力线相对等离子体滑动而产生重叠，甚至在两个反向平行场间形成闭合磁力线。由这些闭合磁力线所包围的磁场空间。	GB/T-4960.9
+magnetic-mach-number	zh	磁流体中速度与流体中阿尔芬波速度之比的无量纲数。	GB/T-4960.9
+magnetic-mirror-configuration	zh	由连接两个相同的磁场线圈形成的磁场位形，它具有能使磁力线会聚的较强场强的区域。一个向磁力线会聚区运动的粒子，如果平行于磁场的能量 (E_parallel) 与垂直于磁场的能量 (E_perp) 之比满足下列关系，见式(1)，将被反射回来。 E / E ⊥ ≤ B m / B ₀ - 1 … {1} 式(1)中， B_m 为镜点(极大值)的磁场强度； B_0 是镜心(极小值)的磁场强度。	GB/T-4960.9
+magnetic-moment	zh	与磁铁、电流回路或粒子相联系的一种矢量，它与磁场的磁感应强度的乘积等于磁场施加在这个系统上的转矩。	GB/T-4960.9
+magnetic-shear	zh	等离子体流速(流剪切)或者磁场强度(磁剪切)随小半径的变化率。在托卡马克中，通常分为正剪切、负(反)剪切及弱剪切。	GB/T-4960.9
+magnetic-viscosity	zh	磁场阻止导电流体垂直于场运动的效应，类似于普通黏滞性。	GB/T-4960.9
+magnetic-well	zh	某些磁位形中具有磁场强度最小的空间区域。	GB/T-4960.9
+magneto-acoustic-cyclotron-instability	zh	起因于快阿尔芬波(或磁声波)和离子伯恩斯坦波之间能量的交换的不稳定性，其自由能由非热高能离子(例如，聚变产物)提供。 注：这种不稳定性发生在波与平衡磁场垂直传播时。	GB/T-4960.9
+magnetohydrodynamics	zh	研究导电流体(液体和等离子体)与磁场相互作用的运动的科学。又称为流体磁学(hydromagnetic)。	GB/T-4960.9
+magnetohydrodynamic-shock-wave	zh	在等离子体中传播的激波。它的波前深度超过平均自由程。因此，波前的主要耗散机制是等离子体的电阻及粒子之间的碰撞。	GB/T-4960.9
+magnetohydrodynamic-turbulence	zh	在经典的磁流体力学描述中，速度和压力都发生不规则变化的运动磁流体。	GB/T-4960.9
+magnetosonic-waves	zh	传播取决于介质温度的磁流体动力学波。这些波类似于声波，其不同之处在于粒子的运动方向和波的传播方向并不总是平行的。	GB/T-4960.9
+magnetohydrodynamic-instability	zh	等离子体中由磁场能量及带电粒子动能驱动的不稳定性。等离子体密度梯度也会影响这种不稳定性的位置。	GB/T-4960.9
+microinstabilities-microscopic-instability	zh	等离子体不稳定性的一种类型，涉及速度空间中的变化，不能用磁流体动力学描述，其特征长度类似于粒子拉莫尔半径。	GB/T-4960.9
+minimum-average-b-configuration	zh	在环形系统中，沿着一条磁力线在平均的意义上实现最小B的磁场位形。	GB/T-4960.9
+minimum-b-configuration	zh	等离子体约束技术中的一种位形。在这种位形中等离子体处在最小磁势的区域中。在离开该区的所有方向上，磁场强度都是随着离开所约束的等离子体的距离的增大而增强。这种位形有利于稳定性。	GB/T-4960.9
+plasma-minor-radius	zh	等离子体截面在赤道面上水平尺寸的一半。在等离子体分布范围内，离等离子体中心的径向距离。参见等离子体几何位形(2.1.220)。	GB/T-4960.9
+mirror-instability	zh	在磁镜位形中，当等离子体粒子在垂直于磁场方向的能量分量大于纵向能量分量时，可能出现的电磁微观不稳定性。此时，粒子将集聚在磁镜之间的中心平面上。结果，由于中心平面中的等离子体压强的作用使磁力线膨胀，使磁镜比增大。这又进一步增强了粒子在中心平面的集聚。当等离子体能量足够大时，磁场膨胀的速度加快，并且变得不稳定。	GB/T-4960.9
+mirror-ratio	zh	在磁镜位形中，在轴上磁场最强的磁场强度 B_m 与轴上最弱的磁场强度 B_0 之比，见式(2) R = B m / B ₀ … {2} 这个比值表示了磁镜的约束性能。	GB/T-4960.9
+mode-number	zh	不稳定性模式在一定空间尺度内的周期数。	GB/T-4960.9
+monster-sawteeth	zh	发生在托卡马克(2.1.284)等离子体中心，具有锯齿状振幅变化的大尺度内部磁流体动力学扰动。	GB/T-4960.9
+multifaced-asymmetric-radiation-from-the-edge	zh	边缘的多面形状非对称辐射(MARFE)通常形成在等离子体环的内侧边缘。当等离子体边缘密度高时，有时会形成一个冷的、强辐射等离子体的环向对称带。起因是沿边缘磁力线流动的功率和辐射的局部功率损失之间的不平衡。MARFE在时标 10mssim 100ms 内迅速增长，但它能持续数秒。在某些情况下，MARFE导致破裂。而在另一些情况下，其主要后果是减小边缘密度。	GB/T-4960.9
+multipole-geometry-configuration	zh	由固定在支架上或漂浮于环中的几个载平行电流的导体环组成的环形位形。这些环形电流产生多极磁场 (n = 2 为四极场， n = 4 为八极场)，多极磁场叠加在初始约束磁场上，可以产生平均极小磁场位形。例如，约飞棒形成的位形。	GB/T-4960.9
+negative-mass-instability	zh	由磁场不均匀性引起的静电微观不稳定性。如果粒子的角向运动中馈入能量，其轨道直径和旋转周期都增大。因此，正角向方向的力，使粒子产生相位滞后和角向聚束。粒子的行为，好像它们具有负的质量一样，在外力的相反方向上产生位移。	GB/T-4960.9
+neoclassical-tearing-mode	zh	由撕裂模产生的磁岛扰动使自举电流发生改变，这进一步放大磁岛并使约束变坏，甚至导致破裂。	GB/T-4960.9
+neo-classical-theory	zh	加入环形效应修正的经典碰撞等离子体输运理论。	GB/T-4960.9
+neoclassical-transport	zh	在环形磁约束系统中，考虑了等离子体环效应的经典输运理论。由于环效应的存在，等离子体依照带电粒子碰撞频率分为碰撞频率高的流体区、碰撞频率低的俘获粒子区(香蕉区)和两者之间的过渡区，即平台区。新经典理论确定输运系数时，考虑到磁场的环形位形并包括库仑碰撞效应，输运系数一般是对磁面平均后的等效输运系数。	GB/T-4960.9
+neutral-drag-instability	zh	由下述原因产生的静电宏观不稳定性：运动着的等离子体，与周围的中性气体之间的摩擦，使作用在离子和电子上的拖曳力有所不同。这种差异又导致电荷分离。它产生的横向电场，使等离子体横越磁场偏转。	GB/T-4960.9
+neutralized-plasma	zh	没有净电荷的等离子体。	GB/T-4960.9
+non-circular-cross-section	zh	垂直高度比水平宽度大的等离子体截面。	GB/T-4960.9
+null-point	zh	偏滤器位形中磁场为零的 X 点。	GB/T-4960.9
+open-magnetic-configuration	zh	磁力线在等离子体区外闭合的磁位形。这种位形包括有磁镜位形、会切位形和混合位形。	GB/T-4960.9
+operating-point	zh	运行空间中的特定点。	GB/T-4960.9
+operating-space	zh	由 n 个参数确定的空间中的一系列可稳定运行区域。	GB/T-4960.9
+optimized-shear	zh	通过调节电流分布可以改善托卡马克(2.1.284)约束性能的剪切位形。	GB/T-4960.9
+parametric-instability	zh	在等离子体中，振幅超过某一阈值的调制波通过模耦合相互作用而使另外的波出现的非线性不稳定性。	GB/T-4960.9
+particle-confinement-time	zh	表征参与热核反应的粒子在特定区域约束性能的特性参量，在数量级上它等于当源项不存在时粒子数损失到它的(1/e)倍时所需要的时间。	GB/T-4960.9
+passing-particle	zh	环形磁约束装置中，未进入"香蕉轨道"而被捕获的粒子。	GB/T-4960.9
+pedestal-physics	zh	出现在H模中磁分界面之内的输运屏障，其边界等离子体的陡峭压强剖面呈现类似建筑物支柱的台基形状。	GB/T-4960.9
+peeling-mode	zh	当等离子体边缘处的电流密度为非零时存在的边缘MHD不稳定性。与ELM也有关系。	GB/T-4960.9
+pfirsch-schulueter-regime	zh	托卡马克(2.1.284)等离子体中的一种输运状态，其特征是平均自由程比连接长度短。在此状态中扩散系数为经典值的 q^2 倍(此处安全因子 q 大于或等于1)。	GB/T-4960.9
+pinch-effect	zh	当等离子体中沿轴向通过电流时，产生极向磁场，该磁场向内的径向电动力使等离子体在径向受到压缩的效应。	GB/T-4960.9
+plasma	zh	正负电荷相等的由电子和被电离原子的核及中性粒子组成的混合体系。	GB/T-4960.9
+plasma-chemistry	zh	研究由等离子体诱发的，或在等离子体环境下发生的化学过程的学科。 注：等离子体中存在各种化学活性很强的粒子，从而引发在一般条件下不易发生的化学反应，利用这些化学过程可以对物质进行处理和合成新材料。	GB/T-4960.9
+plasma-confinement	zh	高温等离子体因受其内部压强的作用要向四周散开，同时能量会损失，若等离子体再与器壁相碰，它的温度就会急剧下降，因此必须用某种方法将这团高温等离子体维持住，使其有足够的时间进行热核聚变反应。	GB/T-4960.9
+plasma-current	zh	等离子体中的带电粒子的集体定向运动。在托卡马克(2.1.284)中值环向流过等离子体的电流。	GB/T-4960.9
+plasma-diffusion-and-mobility	zh	由等离子体密度梯度和电场的作用造成的输运。 注：无磁场时等离子体中有起因于密度、速度、温度和静电势梯度的粒子、动量、能量和电荷的4种输运，它们分别导致粒子的扩散、黏滞性、热传导和迁移。在有磁场时，等离子体中存在着机制更为复杂的扩散、黏滞性、热传导和迁移过程。	GB/T-4960.9
+plasma-equilibrium	zh	具有一定分布和几何位形的达到电磁力和热压力平衡的一种等离子体状态。	GB/T-4960.9
+plasma-frequency	zh	在相对固定的离子对电子空间电荷的吸引所产生的恢复力的作用下，电子集体运动所引起的等离子体振荡的自然频率。 注：此频率正比于电子密度的平方根。	GB/T-4960.9
+plasma-geometry	zh	等离子体截面的位置和形状。参见等离子体大半径(2.1.181)、等离子体小半径(2.1.186)、环径比(2.1.18)、拉长比(2.1.92)和三角形变(2.1.290)。	GB/T-4960.9
+plasma-instability	zh	在等离子体内出现某种扰动时，如果扰动的强度随时间而增长，则等离子体具有不稳定性。等离子体不稳定性分为流体不稳定性和动力学不稳定性，也可分为宏观不稳定性和微观不稳定性。	GB/T-4960.9
+plasma-neutrality-and-debye-shield	zh	没有外部扰动时，等离子体中空间电荷分别相互抵消，是宏观电中性的，称等离子体电中性。偏离电中性会产生很强的电场，使电荷偏离极快得到纠正，故电场作用于一定距离内，此距离外电场被屏蔽。	GB/T-4960.9
+plasma-oscillation	zh	等离子体中由于各种原因产生电荷分离后，其电子与离子围绕其重心振荡的现象。由于离子比电子重得多，通常是电子作振荡运动而离子近乎静止。这种振荡是等离子体最基本的固有特征，其振荡频率亦称朗缪尔频率。振荡时粒子动能与静电位能不断交换直至碰撞或其他阻尼使能量耗散。振荡频率只与粒子密度有关，而与粒子温度无关。	GB/T-4960.9
+plasma-parameters	zh	表征等离子体特性并能在实验上确定的物理量。例如：密度、温度、电流、约束时间以及比压值等。	GB/T-4960.9
+plasma-pressure	zh	等离子体密度和温度的乘积。在磁约束装置中，利用磁力平衡的这种向外压力。	GB/T-4960.9
+plasma-profiles	zh	等离子体截面上的参数分布剖面(常为电子或离子的密度和温度径向分布)。	GB/T-4960.9
+plasma-purity	zh	表示等离子体被燃料(氘和氚)以外的物质污染的程度。可能污染等离子体的杂质主要来自器壁，亦可来源于燃料中的杂质或聚变反应产物(例如，氦)。	GB/T-4960.9
+plasma-radiation	zh	从等离子体中发射的电磁辐射，主要包括线辐射、符合辐射和韧致辐射。	GB/T-4960.9
+plasma-rotation	zh	沿环向和极向方向等离子体的旋转。	GB/T-4960.9
+debye-sheath	zh	电中性的等离子体和与它接触的固体表面之间形成的过渡区。尽管等离子体本身差不多是等电位区，但等离子体鞘内具有强电位梯度，并不保持电中性。也称为鞘(sheath)。	GB/T-4960.9
+plasma-shock-wave	zh	在等离子体中，由压缩波形成的速度、压强、密度、温度或磁通量的间断面，以大于阿尔芬速度(相对于还未被它穿透的等离子体)的传播。根据激波能量耗散过程的性质，可分为磁流体动力学激波和无碰撞激波。	GB/T-4960.9
+plasma-temperature	zh	离子或电子随机动能的度量，通常以K(热力学温度)或电子伏(动理学温度)为单位。	GB/T-4960.9
+plasma-volume	zh	磁约束装置中被约束的等离子体容积。	GB/T-4960.9
+plasma-wave	zh	包括组成等离子体的粒子和电磁场的振荡在内的等离子体扰动的传播。	GB/T-4960.9
+plasmoid	zh	电子、离子和中性粒子的单个聚团，其存在时间比粒子间碰撞时间长很多倍。	GB/T-4960.9
+plateau-regime	zh	等离子体碰撞的一个区间，其有效库仑碰撞频率等于或大于极向渡越频率，但是平均自由程长度小于连接长度。在这种状态下，输运系数与碰撞频率无关。	GB/T-4960.9
+poloidal-beta-beta-poloidal	zh	等离子体极向比压值 (β_p) 是等离子体压强与极向磁压强之比。通常作为电流对等离子体约束能力的量度。	GB/T-4960.9
+poloidal-direction	zh	在等离子体横截面上环绕磁轴的方向。	GB/T-4960.9
+poloidal-field	zh	由环向电流产生的沿极向方向的磁场。主要用于等离子体的平衡和约束。	GB/T-4960.9
+power-threshold	zh	通常指发生低约束模到高约束模(L-H)转换所需要的最低加热功率值。	GB/T-4960.9
+profile	zh	等离子体参数在横截面上随磁通量面的变化。	GB/T-4960.9
+project-sherwood	zh	20世纪50年代和60年代期间美国受控聚变规划。	GB/T-4960.9
+pseudosonic-waves	zh	离子和电子位移速度几乎相等时的低频离子波其相速度与频率无关，即没有色散。这些波类似于普通介质中的声波，但不同的是，非中性化形成的空间电荷电场会使离子和电子的集体运动之间产生耦合。	GB/T-4960.9
+q-limit	zh	q 极限 保证托卡马克(2.1.284)稳定运行所需要的边界安全因子的最低值。在托卡马克中，这个值通常大于2。	GB/T-4960.9
+radiated-power	zh	等离子体中通过多种机制辐射出的功率，包括线辐射、韧致辐射和同步加速器辐射等。	GB/T-4960.9
+radio-frequency-wave	zh	RF波 频率范围主要在 20MHzsim 200GHz 之间的电磁波。射频波常用于提供等离子体辅助加热和电流驱动。参见射频加热(2.2.118)。	GB/T-4960.9
+ramp-down-time	zh	停止等离子体并熄火所需的时间，包括等离子电流的减小和随后的等离子体温度降低。	GB/T-4960.9
+ramp-up-time	zh	启动等离子体并加热到点火温度所需的时间。包括等离子体温度的升高和随后的等离子电流增大。	GB/T-4960.9
+recombination-coefficient	zh	单位体积中正离子与电子或负离子的复合率除以正离子密度和电子(或负离子)密度之积。	GB/T-4960.9
+recombination-radiation	zh	离子与电子复合时产生的辐射。	GB/T-4960.9
+recycling	zh	等离子体中逃逸出来的粒子会进入面向等离子体的材料，并再次放出，返回等离子体的过程。	GB/T-4960.9
+resistive-ballooning-modes	zh	存在电阻效应时表现为不稳定的一类气球模，它在没有电阻时可能是稳定的。	GB/T-4960.9
+resistive-instability	zh	由于等离子体的有限电导率而引起的不稳定性。	GB/T-4960.9
+resistive-wall-mode	zh	存在于非理想导体壁条件下的外扭曲磁流体不稳定性，它随着磁场穿透壁的时间增长，通常需要使用外部控制线圈来控制。	GB/T-4960.9
+resonant-magnetic-perturbation	zh	与不稳定性时空结构(或频率和相位)相匹配的外加磁扰动。	GB/T-4960.9
+ripple	zh	因托卡马克(2.1.284)中环向场线圈的有限个数引起环向磁场值的周期性变化。	GB/T-4960.9
+rotational-transform	zh	在大多数环形位形约束磁场中，从横截面内某一点出发的磁力线，绕大环一周后不回到出发点，而相交此横截面于另一点，绕大环一周后的交点与初始点相对于磁轴转动的角度称为旋转变换。	GB/T-4960.9
+runaway-electron	zh	等离子体中从外加电场获得动量的速率大于因碰撞损失动量的速率而脱离热平衡的电子。由于碰撞截面随速度增大而降低，这些电子会被持续加速。	GB/T-4960.9
+safety-factor	zh	q 旋转变换的倒数，是环形装置中磁力线螺旋旋转程度的一种量度。稳定的等离子体平衡要求安全因子的值大于1。	GB/T-4960.9
+sausage-instability	zh	在有强轴向电流的等离子体柱中，可能发生的磁流体动力学不稳定性。由于某种扰动使磁化等离子体柱某些地方收缩，截面变细。由于电流产生的极向磁场与等离子体半径成反比，使该处磁场增强，而增强的磁场将进一步压缩等离子体，使该处的柱半径继续缩小，等离子体柱变成腊肠形状，最后将等离子体柱切断。	GB/T-4960.9
+sawtooth	zh	等离子体中心温度和密度的周期性张弛振荡，在软X射线的测量信号上表现为锯齿状。	GB/T-4960.9
+sawtooth-crash	zh	锯齿活动中托卡马克(2.1.284)芯部局部破裂，中心温度快速崩塌的现象。	GB/T-4960.9
+scrape-off-layer	zh	等离子体边界的一个区域，这个区域在等离子体最后一个封闭磁面之外。	GB/T-4960.9
+screw-instability	zh	正柱螺旋不稳定性 positive-column screw instability 在有强纵向(轴向)磁场的等离子体柱中，当存在轴向电场时，对密度的螺旋形扰动而出现的静电宏观不稳定性。 注：轴向电场使得这种螺旋形的电子云和离子云沿磁力线向相反方向运动，导致电荷分离。由于螺旋对称性，使空间电荷产生的电场是角向的，这个角向电场引起径向电漂移，使得密度扰动增长，便出现不稳定性。	GB/T-4960.9
+second-stability	zh	气球模在等离子体压强梯度超出第一稳定区域时重新达到稳定的性质。	GB/T-4960.9
+second-stability-regime	zh	在高等离子体压强下气球模仍然处于稳定的区域，其等离子体压强高于第一稳定区压强极限。	GB/T-4960.9
+separatrix	zh	使与壁相交的磁力线(开放力线)和不与壁相交的封闭磁力线(封闭线)分开的边界。	GB/T-4960.9
+separatrix-points	zh	分界线上极向磁场为零的点。	GB/T-4960.9
+confinement-scaling	zh	表示各种等离子体参数(例如：约束、功率阈值等)随托卡马克(2.1.284)运行条件变化的经验或半经验的表达式，它是通过大量实验数据总结出来的。	GB/T-4960.9
+screw-pinch	zh	螺旋箍缩是一种 θ 箍缩，其中轴向电流产生极向磁场，加上纵向场，形成一种螺旋场位形。	GB/T-4960.9
+single-fluid-model	zh	将等离子体作为一种磁化的导电流体，而不区分电子和离子的不同行为的模型。	GB/T-4960.9
+single-null-equilibrium	zh	参见双零平衡(2.1.67)。	GB/T-4960.9
+stellarator	zh	用外部螺旋线圈产生极向磁场的环形磁约束装置[不同于托卡马克(2.1.284)利用等离子体电流产生极向场]。有多种不同的仿星器位形，参见螺旋器(2.2.54)以及先进的螺旋仿星器(2.2.51)。	GB/T-4960.9
+stochastic-heating	zh	在非均匀约束磁场中，由于在每个点上与磁场垂直的电场的作用而引起的无碰撞等离子体加热，像本底噪声随时间无规律变化那样。这类加热是由于电场达到粒子的回旋频率或其谐波的频率时发生回 旋共振所致。	GB/T-4960.9
+super-alfvenic-velocity	zh	速度大于阿尔芬速度，是与磁流体动力学行为有关的典型速度。在托卡马克(2.1.284)中高能粒子具有超阿尔芬速度。	GB/T-4960.9
+superthermal-radiation	zh	不是由热粒子，而是由高能粒子在回旋频率范围内产生的电磁辐射。	GB/T-4960.9
+toroidal-alfven-eigenmode	zh	由于环形效应引起的阿尔芬间隙模。	GB/T-4960.9
+tearing-mode-instability	zh	由于等离子体中电流存在耗散效应，而使磁力线不再冻结而物质可横越磁场而发生的电磁宏观不稳定性。	GB/T-4960.9
+tearing-magnetic-islands	zh	由撕裂模引起的，改变原约束磁场的拓扑形态而形成的"岛状"结构。	GB/T-4960.9
+tearing-mode	zh	在托卡马克(2.1.284)中理论上预言的一类电阻磁流体动力学不稳定性。已在实验上被肯定。参见撕裂模不稳定性(2.1.278)。	GB/T-4960.9
+thermal-particles	zh	处于热平衡状态的例子(区别于远高于热平衡的高能粒子)。	GB/T-4960.9
+thermonuclear-fusion	zh	利用高温实现聚变的反应。	GB/T-4960.9
+theta-pinch	zh	利用极向电流和轴向磁场约束圆柱形几何位形中的等离子体的一种磁约束概念。	GB/T-4960.9
+tokamak	zh	环流器 意为环形真空磁室，托卡马克一词来自俄语的单词缩写。 注：其磁场是由环形面上的螺旋形力线构成的，由外部场线圈和等离子体自身电流产生。迄今是在等离子体的磁约束研究中最成功的装置类型。	GB/T-4960.9
+transport-barrier	zh	在某种运行模式下(例如，H模)，可能存在一个低输运区域，它对应于陡的压强梯度。这样的区域被称为输运垒。	GB/T-4960.9
+transport-matrix-coefficient	zh	描述等离子体各种输运过程的系数。	GB/T-4960.9
+transport-scaling	zh	用经验的或理论的方法将输运系数表示成若干等离子体参数的函数。	GB/T-4960.9
+trapped-particle	zh	环形磁约束装置中，由于能量和磁矩守恒，不能沿环向通行，被限制在一定的区域内往返运动的粒子。	GB/T-4960.9
+trapped-particle-instability	zh	在环形位形中，由俘获粒子效应引起的不稳定性。	GB/T-4960.9
+plasma-triangularity	zh	等离子体截面的三角变形程度的一种量度。参见等离子体几何位形(2.1.220)。	GB/T-4960.9
+triple-alpha-process	zh	将3个氦核(阿尔法粒子)结合成一个碳核的聚变反应。	GB/T-4960.9
+troyon-limit	zh	参见 β 极限(2.1.24)。	GB/T-4960.9
+turbulent-heating	zh	通过湍流效应使将粒子的定向有序运动能量转换成无规运动的热能，而使等离子体加热的方法。其能量转换过程是由于激发各种微观不稳定性所致，湍流加热过程很快，但也可能引起粒子和能量的反常损失。	GB/T-4960.9
+turbulent-transport	zh	由等离子体湍流导致的输运。	GB/T-4960.9
+two-fluid-model-and-multi-fluid-model	zh	将等离子体表示成相互作用的电子和离子以及杂质离子等组成的流体的一组方程。参见单流体模型(2.1.271)。在考虑到杂质效应时就变成多流体模型。	GB/T-4960.9
+two-stream-instability	zh	两种粒子流的速度分布峰值相差较大时能发展起来的不稳定性。例如，通过冷等离子体的高能电子流能够激发依靠消耗电子动能而快速增长的离子波。	GB/T-4960.9
+universal-alfven-wave-instability	zh	由于阿尔芬波和漂移波之间的共振而产生的电磁普适漂移不稳定性。	GB/T-4960.9
+velocity-space-instability	zh	因粒子速度分布偏离热平衡状态而引起的一类不稳定性。	GB/T-4960.9
+vertical-displacement-event	zh	整体等离子体在偏离其平衡位置向上(或向下)运动期间发生的不稳定性事件。高拉长比的等离子 体更有发生这种事件的倾向。	GB/T-4960.9
+vlasov-equation	zh	描述碰撞平均自由程远大于系统特征长度时的高温等离子体的动理学方程。	GB/T-4960.9
+loop-voltage	zh	由欧姆变压器驱动的，用以建立托卡马克环电流的电压。	GB/T-4960.9
+whistler-wave	zh	在等离子体中沿着平行于磁场方向传播的、频率低于电子回旋共振频率的右旋圆偏振波。	GB/T-4960.9
+whistler-wave-instability	zh	由于电子与哨声波交换能量而引起的电磁微观不稳定性。它类似于阿尔芬波不稳定性，但是，它在接近于离子回旋频率的频区(此时，绝热不变性消失)出现。在固态等离子体中，相应的不稳定性称为螺旋波不稳定性(helicon wave instability)。	GB/T-4960.9
+x-point	zh	参见单/双零(2.2.122)。	GB/T-4960.9
+z-effective	zh	Zeff 等离子体的等效电荷数。 Z_eff 是等离子体杂质含量的一种量度。对于纯D-T等离子体， Z_eff = 1.0 。	GB/T-4960.9
+z-pinch	zh	沿轴向(Z向)流动的等离子体电流将等离子体约束在圆柱形几何位形中的磁约束概念。 2.2 工程	GB/T-4960.9
+air-core-transformer	zh	不采用铁芯，原边采用线圈和副边为等离子体的变压器。	GB/T-4960.9
+auxiliary-heating-power	zh	辅助加热的功率。 注：通常提及的被等离子体吸收的功率和与辅助加热系统注入的加热功率会有不同。	GB/T-4960.9
+baffle-element	zh	为限制偏滤器空间和主真空室空间之间的粒子相互传导而设的阻挡部件。	GB/T-4960.9
+balance-burning	zh	聚变 α 粒子和外部电源的等离子体加热与传导、对流和辐射等引起的等离子体损失之间的稳态平衡。	GB/T-4960.9
+beamlines	zh	特指一段位于中性束源与等离子体圆环面间的输运管道结构(包含中性化区、离子偏离及大体积抽空等设备部件)。束线是中性束注入器的重要组成部分。	GB/T-4960.9
+bitter-coil	zh	以发明人比特命名的，能建立强磁场的一种特殊结构的线圈。由匝间相间以绝缘材料的铜板经一开缝串联而构成一线圈绕组。线圈材料为常规铜合金，线圈有水冷及液氮冷却等形式。通常也称为比特板线圈。	GB/T-4960.9
+boronization	zh	把含硼的化合物升华、沉积到真空室内表面以帮助降低杂质辐射的技术。参见辉光放电清洗(2.2.47)。	GB/T-4960.9
+bumper-limiters	zh	在托卡马克中，为了避免真空室内表面直接暴露于等离子体的部分受到等离子体带电粒子的轰击，而在无第一壁材料的部分空间设置的缓冲孔栏(如石墨块)。	GB/T-4960.9
+bumpy-torus	zh	美国国家航空和航天局刘易斯的波纹环有12个超导线圈环向排列在大型真空容器中。目的是要在闭合磁场几何形态中将强电场加于等离子体，使得稳态等离子体加热和约束最佳化。	GB/T-4960.9
+bundle-divertor	zh	环向、纵向或束偏滤器，它引出一束抽出环向通量从而在环向场内形成分界面。	GB/T-4960.9
+carbon-fiber-composite	zh	由择优取向的碳纤维及沉积的碳组成的合成材料，以提高耐热及机械强度。	GB/T-4960.9
+central-solenoid	zh	位于离托卡马克装置中轴线最近的极向线圈。用于产生并维持等离子体电流的部件、加热并控制等离子体形状。	GB/T-4960.9
+central-solenoid-model-coil	zh	建在前日本原子能研究所(JAERI)的模型线圈。它是用于测试ITER(2.4.47)中心螺线管的制造和其他超导体的插入式线圈[为ITER(2.4.47)中心螺线管和环向场线圈导体提供替代品]。	GB/T-4960.9
+compact-device	zh	环径比接近于1的轴对称环形装置，也称为紧凑环。	GB/T-4960.9
+compact-toroid-injection	zh	紧凑环等离子体注入技术。	GB/T-4960.9
+correction-coils	zh	为补偿由制造、安装磁体线圈而引起的约束磁场误差而设置的线圈。	GB/T-4960.9
+critical-density	zh	影响电磁波传播特性的一个等离子体密度特征值，超过这一密度值时，波不能通过等离子体传播。	GB/T-4960.9
+critical-surface	zh	等离子体中与临界密度相对应处的那个等离子体面。	GB/T-4960.9
+cryopump	zh	基于低温吸附获得高真空的原理，使用液氦或制冷机冷却的真空泵系统。	GB/T-4960.9
+cryostat	zh	杜瓦 一个装容超导磁体且室温下可抽真空的真空室，它提供真空绝热层以保持磁体在低温环境中。	GB/T-4960.9
+current-limit	zh	托卡马克等离子体中可以允许通过的最大电流值。这个值的大小主要由磁场强度和等离子体的尺寸、形状所确定。	GB/T-4960.9
+current-profile-control	zh	为了产生最佳的等离子体位形和改善等离子体约束而采用辅助加热和无感电流驱动的方式对等离子体电流分布进行控制的技术。	GB/T-4960.9
+dense-plasma-focus-device	zh	由两个同轴圆柱形电极和一个电容器组成的等离子体放电装置。	GB/T-4960.9
+density-control	zh	为了得到最佳等离子体位形，通过外部加料控制等离子体密度的方法和技术。	GB/T-4960.9
+divertor	zh	磁约束聚变装置中，为分散热功率、排除燃料及He灰、消除或减少杂质、隔离边界产生和分开系统特意加入的杂质等而设置的装置。参见抽气偏滤器(2.2.110)、辐射偏滤器(2.2.112)。	GB/T-4960.9
+divertor-channel	zh	偏滤器靶板与等离子体刮削层开放磁力线构成的区域。	GB/T-4960.9
+divertor-arrangement	zh	偏滤器箱体上面部件和抽气通道的面向等离子体的构件配置和部件结构。	GB/T-4960.9
+divertor-configuration	zh	在有偏滤器的等离子体放电中，形成有X点的平衡磁通位形。	GB/T-4960.9
+doublet-device	zh	美国早期的具有肾形截面的非圆截面托卡马克装置。	GB/T-4960.9
+elmo-bumpy-torus	zh	早期磁约束聚变概念，在这种概念中用微波加热产生的高比压电子环使波纹环稳定。	GB/T-4960.9
+elmo-bumpy-torus-s	zh	早期美国国立橡树岭实验室的有24个扇形段的环形磁捕集器。 注：这种捕集器是用微波加热来产生和维持准稳态高温等离子体的。	GB/T-4960.9
+middleplane	zh	赤道平面 equatorial plane 由环向场线圈一半高度确定的水平面。	GB/T-4960.9
+equatorial-port-extension	zh	ITER(2.4.47)主真空室的每个赤道端口由位于真空室壁上的一个孔和一个焊接到该孔凸沿和一个直段上的窗孔短管组成的结构。它焊接到窗口短管上。	GB/T-4960.9
+ergodic-magnetic-divertor	zh	用等离子体边界的螺旋线圈系统来扰动等离子体边缘以利于去除杂质的偏滤器。	GB/T-4960.9
+error-field	zh	托卡马克装置环向场和极向场线圈的磁场分布理论上都是轴对称的，但由于磁体线圈形状制造和安装位置的偏差、电流引线、金属部件中的涡流以及铁磁物质等都会导致非轴对称磁场。其中由环向场和极向场线圈安装位置偏差引起的非轴对称磁场是误差场最主要来源。	GB/T-4960.9
+fast-wave-antennas	zh	用于快波电流驱动(FWCD)技术的射频天线。	GB/T-4960.9
+fast-wave-current-drive	zh	由快波产生的电流驱动，与低杂波电流驱动相比，能较为容易地渗透到等离子体中。离子回旋系统可产生快波。	GB/T-4960.9
+ferromagnetic-inserts	zh	布置在真空室内TF线圈阴影处用于减弱环向场纹波的铁磁性部件。	GB/T-4960.9
+field-shaping-coil	zh	托卡马克中的一组极向场线圈，该线圈提供限制等离子体的水平和垂直运动的磁场拓扑结构，主要用来形成非圆形等离子体截面或偏滤场分界面。	GB/T-4960.9
+first-wall	zh	在等离子体约束实验装置或聚变电站中，直接面向等离子体的真空室内部件保护层。	GB/T-4960.9
+flat-top-current	zh	托卡马克放电波形处于平顶段的等离子体电流。	GB/T-4960.9
+flat-top-pulse-length	zh	等离子体电流波形平顶段的持续时间。	GB/T-4960.9
+fuelling	zh	为聚变等离子体提供所需热核燃料。参见喷气(2.2.46)、弹丸注入(2.2.99)、超声分子束注入(2.2.131)。	GB/T-4960.9
+fuel-of-fusion	zh	热核燃料 thermonuclear fuel 可发生聚变反应，同时又能释放出大量聚变能的材料。热核燃料主要有氘、氚和氦-3。	GB/T-4960.9
+fuel-pellet	zh	小型柱状冷冻氘或氚燃料，将其射入等离子体中燃烧以保持等离子体芯部的足够燃料密度。	GB/T-4960.9
+gas-puffing	zh	通过阀门向等离子体室中喷入燃料，它主要是向等离子体边缘区域加料。	GB/T-4960.9
+glow-discharge-cleaning	zh	用气体辉光放电的方式清洗聚变装置真空室杂质的一种有效方法。	GB/T-4960.9
+glow-discharge-plasma	zh	在 10^-2Pa sim 10^-1Pa 气压下，两电极间施加电压形成的放电等离子体。 注：通常由正柱区和阴极、阳极区构成。在正柱区是准中性的，即电子密度与离子密度基本相等而无净电荷，通常电子密度为 10^15m^-3sim 10^16m^-3 ，电子温度为 1eVsim 2eV ，而且电场很低，约 1V / cm 。正柱区通常占放电管长度的绝大部分。正常辉光放电的电流密度在 50mAcdot cm^-2 以下，端电压几乎与电流无关。	GB/T-4960.9
+halo-current	zh	在垂直位移事件期间，等离子体与真空室壁接触，被刮削后流到约束等离子体区域外侧沿磁力线流动的电流。 注：电流路径与材料表面相交，引起材料的强加热和变形，晕电流的效应不是轴对称的，可引起大的损伤，并对装置也有潜在的威胁。	GB/T-4960.9
+hard-core-pinch-device	zh	早期的聚变研究装置，其中间插有一根固态回流导体。放电发生在导体四周的环形区中。	GB/T-4960.9
+helias	zh	先进的螺旋仿星器其英文全称为helical advanced stellarator,具有变形的非平面环向场线圈的仿星器位形,不用连续的螺旋线圈或者类托卡马克的极向场。Helias是电站最有希望的仿星器概念,它具有模块式工程设计和最佳等离子体,以及磁流体动力学和磁场特性。Wendelstein VI-X装置是基于5个场周期的先进的螺旋仿星器位形。	GB/T-4960.9
+helicity-injection	zh	把螺旋磁波传入到等离子体的方法。用以产生驱动电流，对维持环形和球形装置有潜在的价值。环向等离子体的螺旋量是与环向和极向磁场的链合有关的，并且在放电过程中近似地守恒。如果可以注入外加的螺旋量，那么等离子体电流可以维持，甚至提高。	GB/T-4960.9
+helicity-injection-current-drive	zh	利用螺旋注入非感应电流驱动技术。	GB/T-4960.9
+heliotron	zh	该仿星器位形中螺旋线圈用于约束等离子体，同时有一对PF线圈提供垂直场。TF线圈有时也用于控制磁面特性。	GB/T-4960.9
+high-field-ecrh-launch	zh	电子回旋共振微波从等离子体大环的内侧(强环场侧)发射，可用于加热较高密度等离子体。	GB/T-4960.9
+high-heat-flux	zh	由等离子体传导或辐射出的功率负载大于 0.5MW / m^2 。	GB/T-4960.9
+high-heat-flux-components	zh	在偏滤器中面向等离子体的部件，特别是靶板。	GB/T-4960.9
+induction-coil	zh	能够给副边等离子体提供感应电势的原边线圈，在托卡马克装置中指欧姆加热线圈。	GB/T-4960.9
+inductively-driven-plasmas	zh	在托卡马克等离子体放电中，根据变压器原理，用欧姆加热线圈(包括螺线管线圈)驱动等离子体电流的方法。	GB/T-4960.9
+in-vessel-component	zh	直接安装于托卡马克真空室内的部件，如包层、偏滤器、部分加料系统、内部抽气系统、诊断传感 器等。	GB/T-4960.9
+iron-core-transformer	zh	磁路部件用硅钢片制作的变压器。在托卡马克中铁芯使欧姆线圈与等离子体成为紧耦合的原边绕组和副边绕组，漏磁通明显减少，因而大大减少了欧姆线圈的安匝数及其供电电源的功率。	GB/T-4960.9
+joffe-s-bar	zh	在早期的聚变实验装置上，为了克服磁流体不稳定性，苏联科学家约飞提出的用固体载流导体置于装置外侧，形成会切形磁场的载流棒。	GB/T-4960.9
+l-h-threshold-power	zh	在等离子体加热过程中，为了克服传导损耗，需要采用一定功率的外部加热来建立H模内部输运屏障，将等离子体芯部置于一个更好的能量约束模式中，为产生这种约束模式转换所要求的外部加热的功率称为L-H转换阀值功率。	GB/T-4960.9
+limiter	zh	孔栏 安装在托卡马克真空室内用于限制等离子体边界的部件。多数装置采用极向布置，同时也有环向布置。	GB/T-4960.9
+limiter-system	zh	限制器及其操控机构的组合体。	GB/T-4960.9
+linear-pinch	zh	在开端位形中等离子体的箍缩，特点是等离子体电流为轴向，而电流产生的磁场方向为角向，箍缩为径向。又称 Z -箍缩。	GB/T-4960.9
+lining	zh	置于聚变装置的真空室内的金属护套(壳)。	GB/T-4960.9
+lip-seal	zh	在聚变装置中，采用的一种特殊的密封工艺。它是沿金属件边缘或部件周长方向延伸的多次可拆的密封连接。	GB/T-4960.9
+low-aspect-ratio	zh	小环径比 small aspect ratio 大半径与小半径的比值小于2。	GB/T-4960.9
+lower-hybrid-current-drive	zh	用低混杂波产生的非感应电流驱动。	GB/T-4960.9
+lower-hybrid-heating	zh	使用频率为离子回旋与电子回旋混杂频率的波对等离子体进行加热的方法。	GB/T-4960.9
+magnetic-axis	zh	在等离子体的平衡位形中，磁面半径为零的点沿大环方向形成一条圆形轨迹。	GB/T-4960.9
+magnetic-field-component	zh	托卡马克的磁场主要是由两部分组成的。其中，第一部分是环向磁场，它是由沿着大环方向均匀布置的一组环向场线圈所产生的，并且是关于装置中心轴对称的。第二个部分是极向磁场，它是由等离子体电流及极向场线圈电流共同产生的。	GB/T-4960.9
+magnetic-mirror	zh	带电粒子在磁场较强处如同镜面反射一样被反射到磁场较弱处的现象。	GB/T-4960.9
+mirror-machine	zh	用磁镜位形来约束等离子体的热核聚变实验装置。	GB/T-4960.9
+magnetic-pumping	zh	加上一个强度随时间变化的磁场，使等离子体借助快速振荡的外部磁场连续完成"压缩一弛豫一膨胀"，等离子体获得能量而被加热的过程。在这个过程中，磁场好像一个抽水泵，通过周期性地改变强度将能量源源不断地"抽运"到等离子体中。	GB/T-4960.9
+magnetic-quench-detection	zh	对超导磁体是否进入失超状态进行探测的方法。	GB/T-4960.9
+main-transmission-line	zh	在离子回旋加热中传输射频大功率的同轴电缆。	GB/T-4960.9
+molecular-ion-injection-concept	zh	把高能分子离子注入合适的磁容器并在那里被几种过程(例如：与中性原子的碰撞、洛伦兹离解等)之一离解，然后使俘获的高能离子的密度增加到具有热核意义的值，同时将它们的定向速度转换成热等离子体的随机运动。	GB/T-4960.9
+nb-sn-superconductor	zh	由铌三锡金属间化合物制成的高性能超导体，适合在 4.5K 氦冷却条件下及12T以下使用。	GB/T-4960.9
+nb-al-superconductor	zh	由铌三铝金属间化合物制成的高性能超导体，适合在 4.5K 氦冷却条件下及15T以下使用。	GB/T-4960.9
+nbti-alloy-superconductor	zh	用铌钛合金制成的柔性超导体，适合在 4.5K 氮冷却条件下及8T以下使用。	GB/T-4960.9
+negative-ion-neutral-injector	zh	由负离子源提供的中性束注入器。	GB/T-4960.9
+negative-ion-source	zh	产生负离子的离子源。	GB/T-4960.9
+neutral-beam	zh	中性粒子束 neutral particle beam;NPB 由离子源引出的快离子束经过中性化后形成的高能中性粒子束。	GB/T-4960.9
+neutral-beam-current-drive	zh	使用高能中性束注入而产生的非感应电流驱动。	GB/T-4960.9
+neutral-beam-injection	zh	将能量足够高的中性粒子束注入装置的约束区域，这些注入的高能中性粒子由于被电离和电荷交换而被俘获，然后再与本底离子和电子碰撞把能量交给这些电子和离子，使这些粒子获得能量，加热等离子体。	GB/T-4960.9
+neutron-wall-loading	zh	进入包围等离子体的第一物理边界的聚变中子所携带的能量通量。	GB/T-4960.9
+ohmic-heating	zh	焦耳加热 Joule heating 电流流过电阻不等于零的等离子体，由于焦耳效应而加热等离子体的方法。等离子体电阻率随着等离子体电子温度升高而很快降低，欧姆加热效率也变得很小，因此只用欧姆加热不能将等离子体加热到很高的温度。	GB/T-4960.9
+ohmic-heating-system	zh	OH系统 托卡马克中使用感应线圈进行电阻加热的系统，包括欧姆加热线圈、电源等。	GB/T-4960.9
+operating-margins	zh	极限值与标称值之差。	GB/T-4960.9
+operating-parameter	zh	表征托卡马克装置或某部件运行状态性质的量。例如：温度 (T) 、聚变功率 (P) 、电流 (I) 和磁场 (B) 等。	GB/T-4960.9
+overturning-moment	zh	在等离子体放电过程中，托卡马克环向场线圈的顶部和底部受到垂直磁场的作用而在大环方向倾倒的力矩。	GB/T-4960.9
+pancake-winding	zh	绕制磁体线圈的方法。导体沿圆周方向而不是磁体轴线方向绕制，形成如饼状单元模块；饼状模块堆叠在一起，而后再串联或采用多饼连续绕制工艺。	GB/T-4960.9
+particle-exhaust	zh	利用偏滤器或限制器从等离子体中抽出粒子的各种方法。	GB/T-4960.9
+pellet-injection	zh	把一串冷冻的燃料小丸高速射入到等离子体中的加料方法。	GB/T-4960.9
+pinch-device	zh	基于箍缩效应的磁约束装置。	GB/T-4960.9
+plasma-heating	zh	增加等离子体的平均能量(即温度)，获得高温等离子体的过程。通常有欧姆加热、中性束粒子加热和(或)射频波加热等。	GB/T-4960.9
+plasma-facing-components	zh	与等离子体直接作用的真空室内部件。	GB/T-4960.9
+plasma-gun	zh	用来产生高速等离子体团的设备。	GB/T-4960.9
+plasma-shutdown	zh	在等离子体燃烧末期，等离子体能量衰减为零的过程。	GB/T-4960.9
+poloidal-divertor	zh	能引出极向磁力线并在极向场中形成分界面的一种偏滤器。	GB/T-4960.9
+poloidal-field-coils	zh	在托卡马克中用于产生极向场的线圈。	GB/T-4960.9
+port-axis-direction	zh	端口延伸部的径向对称轴。	GB/T-4960.9
+positive-ion-neutral-injector	zh	由正离子源提供的中性束注入器。	GB/T-4960.9
+profile-control	zh	通过控制压强、密度和电流的径向变化控制不稳定性和改善等离子体约束。	GB/T-4960.9
+pumped-divertor	zh	磁力线进入环绕靶板的抽气室的偏滤器。	GB/T-4960.9
+quench	zh	超导磁体由超导态到常规态的不可控和不可逆的转变。	GB/T-4960.9
+radiative-divertor	zh	能使大部分功率在到达靶板之前被辐射掉的一种偏滤器。	GB/T-4960.9
+radio-frequency-and-microwave-plasma-arc	zh	由射频和微波产生的等离子体电弧，是加热等离子的手段。	GB/T-4960.9
+radio-frequency-heating	zh	RF加热 在等离子体中利用射频波(电磁波)在传播过程中将能量传递给等离子体，从而使等离子体得到加热的手段。参见射频波(2.1.246)。	GB/T-4960.9
+residual-resistance-ratio	zh	超导体基体材料室温电阻与低温剩余电阻率之比。取略高于临界温度处的电阻值为剩余电阻率。	GB/T-4960.9
+resonant-ions-electrons	zh	当等离子体中粒子运动的特征频率之一(例如，回旋频率)与某些外加扰动频率(例如，射频波)匹配时发生共振的离子/电子。	GB/T-4960.9
+reversed-field-pinch	zh	极向场和环向场的大小接近的环向磁约束。当等离子体电流超过临界值时接近等离子体边缘的环向场变成反向，使稳定性得到维持。	GB/T-4960.9
+sawtooth-stabilization	zh	抑制各种锯齿波动使等离子体稳定的方法。	GB/T-4960.9
+septum	zh	横放于波导内并通过高导电接头连接于内壁上的金属板，该板体通常根据电感、电容或阻抗参数要求设计出一个或多个窗口。	GB/T-4960.9
+shockwave-tube	zh	充电到高压的电容器组在管的一端对气体放电来电离和加热气体，从而产生激波的充气管。	GB/T-4960.9
+shock-wave-heating	zh	利用激波的形成和传播实现等离子体加热。加热机理基本上不可逆，给予等离子体的能量总是大于由相同幅值的绝热压缩得到的值。	GB/T-4960.9
+single-double-null	zh	分界面自身交叉的极向磁场零点。通常处于等离子体上部和/或下部(但是，有时处于大环平面处)。大多数偏滤器位形都有一个单零点或者双零点，称为X点。	GB/T-4960.9
+spherical-tokamak	zh	接近球形的低环径比托卡马克，也称为球形环。	GB/T-4960.9
+spheromak	zh	采用准静态感应形成技术致使尖峰功率要求和等离子体电极接触最小来产生等离子体的一种装置。球马克堆的优点是：比压值高，线圈和包层在拓扑学上不与等离子体环接。	GB/T-4960.9
+start-up-assist	zh	协助等离子体的形成以减少启动时对磁通消耗的需求。	GB/T-4960.9
+superconductivity	zh	在一定条件下，材料被认为具有直流电阻为零和完全抗磁性的性质。 注：一定条件是指适当的温度、磁场强度和电流密度。	GB/T-4960.9
+superconductor	zh	在一定条件下呈超导电性的材料。	GB/T-4960.9
+superconducting-coil	zh	使用超导材料绕制的磁体线圈。	GB/T-4960.9
+superconducting-magnets	zh	由超导线圈组成的磁体。	GB/T-4960.9
+superconductor-tokamak	zh	由超导磁体构成的托卡马克装置。	GB/T-4960.9
+supersonic-molecular-beam-injection	zh	高压气体通过拉瓦尔喷嘴进入真空室形成超声分子束进行加料的方法。SMBI具有比脉冲喷气更高的分子速度和更小的散度。SMBI还是研究等离子体输运的有力手段。	GB/T-4960.9
+tandem-mirror	zh	为了减少简单磁镜上粒子损失的实验装置，它是在简单磁镜两端各再接上一个或多个端部磁镜形成的，端部磁镜区的等离子体密度比中心磁镜区的等离子体密度可以高到一个数量级。此时，在端部形成得很深的双极位阱将阻止中心磁镜区离子沿磁场方向的损失而且使离子寿命增加。	GB/T-4960.9
+tf-ripple	zh	在托卡马克中使用有限个离散的环向场线圈而造成环向磁场大小在大环方向有一定的波动。这种磁场内的"纹波"会捕获粒子并使功率损失。	GB/T-4960.9
+divertor-target	zh	磁偏滤器的等离子体排气通道终止的地方。	GB/T-4960.9
+tokamak-operating-boundaries	zh	运行极限 operating limits 一组等离子体参数(例如:密度、电流和压强)边界,超出边界就不可能运行托卡马克。优化控制等 离子体截面形状和电流分布可以提高运行参数范围。	GB/T-4960.9
+toroidal-magnetic-cusp	zh	环形磁场会切是在高比压下运行的混合约束系统。具有高比压等离子体的闭合环向磁通量的区域与周围的场由一窄鞘层分开。周围的场包含外部产生的环形线会切位形排列的极向分量，迁移到外鞘的等离子体在被偏滤器系统除去前暂时被磁镜约束。	GB/T-4960.9
+toroidal-configuration	zh	约束磁场的磁力线成环形的闭合位形。环形位形包括托卡马克位形、仿星器位形、环形 Z 箍缩、环形 θ 箍缩和环形螺旋箍缩。	GB/T-4960.9
+toroidal-direction	zh	在一个圆环面中，与环轴圆周平行的方向。	GB/T-4960.9
+toroidal-field	zh	在托卡马克中，由绕在等离子体真空室外的垂直于赤道面的磁场线圈产生的主要的磁场。	GB/T-4960.9
+toroidal-field-coils	zh	TF线圈 在环向方向均匀布置在真空室外用于产生环向磁场的线圈。	GB/T-4960.9
+toroidal-pinch	zh	闭合位形中的等离子体的箍缩。它是环形磁约束系统，其中环向等离子体电流既加热等离子体，又提供极向箍缩磁场。	GB/T-4960.9
+torus	zh	圆环形形状的磁体部件。	GB/T-4960.9
+arcing	zh	在金属表面和与金属表面接触的等离子体之间的电弧，这种电弧仅需要一个电极，并且由电子的热能维持。	GB/T-4960.9
+vapour-phase-catalytic-exchange	zh	水蒸气与装填在垂直柱体中的催化剂接触以便优先将氢的同位素分离成轻的和重的同位素流体的物理化学过程。	GB/T-4960.9
+vertical-stability-control	zh	垂直位置控制 vertical position control 截面拉长的等离子体在垂直方向上是不稳定的，如果等离子体开始运动，用等离子体位置传感器信号反馈控制产生水平磁场的极向场线圈电流或者是通过靠近等离子体的无源导体感应的涡流产生的水平磁场就可以抑制等离子体的运动。	GB/T-4960.9
+wall-etch	zh	真空室第一壁遭到等离子体中高能粒子轰击而受到的损伤。	GB/T-4960.9
+yin-yang-coil	zh	由两个独立的跑道型线圈弯成C型后交错地合在一起构成的，能够产生类似于网球缝线型线圈产生的极小B位形的线圈。其优点是：所产生磁场的磁镜要比网球缝线型线圈产生的更大，而且可变，消耗功率很小，装置有较大灵活性。	GB/T-4960.9
+beam-emission-spectroscopy	zh	使用低能中性束注入等离子体产生的发射光谱对等离子体进行诊断的技术。	GB/T-4960.9
+bolometer	zh	利用广谱辐射探测器来测量全波长区域总电磁辐射能量的仪器，也称为辐射量热计。	GB/T-4960.9
+brewster-angle	zh	电介质的极化角，它等于平行于入射平面的偏振波完全透射(不反射)时的入射角。因此，以这个角入射的非偏振波被分解为部分偏振的透射分量和完全偏振的反射分量。	GB/T-4960.9
+charge-coupled-device	zh	利用电荷耦合探测光的传感器件。	GB/T-4960.9
+charge-exchange-recombination-spectroscopy	zh	等离子体中的中性原子(例如，来自中性束)向完全电离的杂质离子贡献电子，产生类氢离子。当电子能级跃迁时发射光子，通过光谱学方法可以确定杂质粒子的温度、旋转以及密度。	GB/T-4960.9
+diamagnetic-loop	zh	在极向方向环绕等离子体柱放置的一个感应线圈，通过测量磁场强度的变化，以推算出等离子体柱中逆磁强度，并可推算出等离子体总内能信息。	GB/T-4960.9
+dye-laser	zh	波长可调的激光器，在这种激光器中的工作介质是一种大分子染料，比如七叶灵，激光的作用发生在电子的第一激发态和基态之间，每个状态都包括宽阔的振动和转动连续区。	GB/T-4960.9
+electron-cyclotron-emission	zh	测量电子绕磁力线的回旋运动产生的电磁辐射。诊断中用于测量电子的温度。	GB/T-4960.9
+electrostatic-analyzer	zh	通过静电偏压过滤不同能量的带电粒子，并分别收集和计数的仪器。	GB/T-4960.9
+fabry-perot-interferometer	zh	由两块平行玻璃片组成，间距在几厘米范围内可调的干涉仪；玻璃片的两个内表面镀银形成半透膜，入射光波在其间多次反射，形成干涉后，再透射出来，最后接收干涉光信号。	GB/T-4960.9
+faraday-rotation	zh	光通过磁化等离子体后，其偏振面的旋转。	GB/T-4960.9
+faraday-screen	zh	静电屏蔽层，它由金属网或一系列平行金属丝组成并接地，通常与接地导体的一端相连，用于离子回旋共振加热(ICRH)天线与等离子体之间的静电屏蔽。	GB/T-4960.9
+first-mirrors	zh	面向等离子体并直接受其辐照的反射镜(通常用于等离子体诊断或电子回旋加热系统)。	GB/T-4960.9
+magnetic-flux-loop	zh	在等离子体周围沿着环向方向布置的大型单匝线圈，用于测量该线圈所围绕的磁通量。	GB/T-4960.9
+h-alpha-studies	zh	通过观察氢原子发射光谱的巴尔曼线系的第一条谱线(波长 656.3nm )，用于研究等离子体边界的诊断技术。	GB/T-4960.9
+heavy-ion-beam-probe	zh	将高能重离子(例如，铊)束横越磁场注入等离子体中，借助仪器测量出射的粒子以获得等离子体的电位分布、密度分布、磁场分布、电流分布等参数的等离子体诊断设备。	GB/T-4960.9
+hugill-diagram	zh	在等离子体不同运行参数下统计出的 1 / q 相对于 nR / B 的曲线图(式中， q 为等离子体边缘处的安全因子， n 为平均电子密度， R 为等离子体大半径， B 为等离子体中心的环向场)，可以清楚地看到密度与 q 的运行极限值，进而划定安全运行区。	GB/T-4960.9
+interferometry	zh	泛指光学干涉仪的设计和应用。应用方面包括波长的精确测定，极短距离及极薄厚度的测量，谱线超精细结构的研究，折射率的精确测定等。	GB/T-4960.9
+langmuir-probe	zh	静电探针 electric probe 在低温等离子体中用于测量电子温度、电子与离子密度、空间与壁电位和随机电子电流的器件。它基本上由一个、两个或者更多的收集电极组成，电极上加有各种不同的电位，同时测量相应的收集电流。	GB/T-4960.9
+lost-alpha-detectors	zh	测量逃逸出等离子体的聚变产物 α 粒子的探测器。	GB/T-4960.9
+mach-zehnder-interferometer	zh	利用两个半透镜和两个全反射镜，将平行激光束分为两路，一路通过被测的等离子体，另一路作为参考光束，然后将两路光合成。由于等离子体状态不同，附加了两路光束间的光程差，把两路光条纹相比较，得出条纹移动数，从而计算出各点平均电子密度的仪器。	GB/T-4960.9
+magnetic-bottle	zh	在受控热核聚变实验中用来约束等离子体的磁场，它是磁力线位形呈现瓶颈形聚束的磁俘获器。	GB/T-4960.9
+magnetic-diagnostics	zh	以各种形状的线圈排列在等离子体周围以测量局域磁场强度或磁通。参见罗戈夫斯基线圈(2.3.31)。	GB/T-4960.9
+magnetic-probe	zh	由一定匝数(通常为几十匝)截面较小(直径为零点几到几毫米)的线圈绕成的小螺旋管构成的测量线圈所在点磁场强度和磁扰动等的线圈。	GB/T-4960.9
+microwave-interferometer	zh	通过等离子体的微波束产生相位变化，测量干涉条纹推算出相位差，最后获得波束传播路上的平均电子密度的仪器。	GB/T-4960.9
+reflectometry	zh	托卡马克中通过微波的反射信号测量来获得等离子体密度及其涨落信息的诊断系统。	GB/T-4960.9
+motional-stark-effect	zh	横越磁场的带电粒子感应一个电场。这就引起粒子发射的光谱线的斯塔克分裂，这种光谱线可以展现托卡马克内的局域磁场。这是导出托卡马克电流分布的一项主要诊断。	GB/T-4960.9
+neutral-particle-analyser	zh	包括一组微通道板探测器的仪器，用以测量从等离子体离开的中性粒子的能谱，可以观察到热离子谱和快离子谱。	GB/T-4960.9
+plasma-diagnostics-technique	zh	测量等离子体各种参量的方法。等离子体诊断分为被动和主动两类。被动方式是测量等离子体发射的电磁波或粒子。通过对等离子体产生辐射的测量，可了解电子温度、离子温度、杂质、逃逸电子等信息。通过对等离子体发射粒子的测量，可了解中子、中性粒子、离子温度等信息。还可测量等离子体的电压、电流等电磁信号。主动测量是由外界送入电磁波、粒子束等来进行的测量。例如，激光散射法测定等离子体的电子温度、离子温度和密度分布；中性粒子束衰减可测密度；由重离子束可测密度分布、磁场分布、电势分布等。	GB/T-4960.9
+rogowski-coil	zh	用于测量等离子体电流、磁体线圈电流和可能存在的晕电流的传感器。其主要部分是一种细长的多匝环形螺线管，围绕被测电流形成封闭的环。通过线圈端部测得的感应电压与流过封闭环的电流的变化率成正比。	GB/T-4960.9
+soft-x-rays-camera	zh	将热等离子体辐射产生的软X射线映像，以获得有关等离子体密度与温度分布的仪器。	GB/T-4960.9
+survey-spectrometer	zh	可以提供很宽频率范围光谱数据的仪器	GB/T-4960.9
+thomson-scattering	zh	激光散射(诊断) laser scattering (diagnostic) 利用激光散射和等离子体电子引起的多普勒位移测量温度和密度的诊断方法。	GB/T-4960.9
+off-normal-event	zh	电站或部件运行状态的非预期变化，但不会引起计划外的停堆。	GB/T-4960.9
+abnormal-operation	zh	电站或部件偏离了正常运行的程序或运行状态。这种偏离包括在启动、电流驱动和停堆过程中偏离正常的运行程序，或者在聚变功率偏离其标称值下的运行。	GB/T-4960.9
+abnormal-operating-conditions	zh	电站或其部件偏离正常运行的工况。	GB/T-4960.9
+active-environment	zh	由于遭受风化侵蚀使沉积的放射性污染物比掩埋的污染物会更迅速扩散的地面环境部分。相比而言，掩埋的污染物不会经受这种侵蚀("无源"环境)。	GB/T-4960.9
+alpha-power	zh	聚变堆反应能中由反应产物 α 粒子携带的功率。	GB/T-4960.9
+alternative-fuels	zh	除氘和氚以外的聚变燃料。	GB/T-4960.9
+availability	zh	系统或电厂中能执行其运行时间所占的百分比。也称为运行可用率(operation availability)。	GB/T-4960.9
+beyond-design-basis-accidents	zh	已超出了设计基准许可的事故。	GB/T-4960.9
+bioshield	zh	一堵包围托卡马克主低温恒温器(杜瓦)的混凝土厚壁，用以吸收大量由等离子体放出的残留辐射以保护外围区域。	GB/T-4960.9
+blanket	zh	在聚变堆堆芯周围将聚变能转变成热能和生产氚的结构。	GB/T-4960.9
+blanket-materials	zh	包层内所使用的材料，包括：氚增值材料、中子倍增材料、冷却剂和结构材料等。	GB/T-4960.9
+blanket-module	zh	在聚变堆装置中，为了通过赤道入口便于包层的安装、维修和更换，包层被设计成若干个规范化的独立单元。	GB/T-4960.9
+blanket-shield	zh	在聚变堆装置中，面向等离子体的第一壁部件；它能移走热量并保护包层、真空室和磁体免受辐照损伤。	GB/T-4960.9
+borated-concrete	zh	掺入硼的混凝土。硼能很好地吸收中子。这种混凝土可以用于ITER(2.4.47)的生物屏蔽层上。	GB/T-4960.9
+breeder	zh	聚变电站中用于增殖氚的部件，有时也指增殖氚的反应堆。最常用的反应为： L i + n → T + + 4. 8 M e V 这里与快堆(裂变电站)中的增殖过程不同。	GB/T-4960.9
+breeding-blanket	zh	通过锂俘获聚变中子来增殖氚的包层结构。	GB/T-4960.9
+breeding-technologies	zh	通过锂俘获中子来增殖氚的技术。	GB/T-4960.9
+burn-control	zh	为维持燃烧等离子体温度、密度、成分等所进行的控制。	GB/T-4960.9
+burning-plasma	zh	当聚变产生的 α 粒子的加热功率大于外部输入的加热功率时的等离子体。	GB/T-4960.9
+ceramic-breeders	zh	在增殖包层中含有锂增殖材料的陶瓷材料层。	GB/T-4960.9
+common-cause-failure	zh	由于一些单个事件或原因而导致的一些设备或部件的功能失效。	GB/T-4960.9
+compliant-material	zh	相互接触但并不发生化学反应的材料。	GB/T-4960.9
+conceptual-design-activity	zh	为达到确定的研究目标所进行的一系列基本框架设计研究活动。在ITER(2.4.47)上特指1988年～1990年所进行的活动。	GB/T-4960.9
+confinement-system	zh	限制放射性物质和有害物质的最大泄漏率不超过规定限值的系统。	GB/T-4960.9
+cordey-pass	zh	运行密度与温度中的一个点，它使加热等离子体至受控点火值所需的辅助功率最小。	GB/T-4960.9
+critical-heat-flux	zh	偏离泡核沸腾且泡沫结成绝热层时的热通量值。	GB/T-4960.9
+cryoplant	zh	用于生产液氨和液氮等冷却剂的工厂。	GB/T-4960.9
+demo	zh	商用聚变堆前用于演示商用堆功能的聚变堆。	GB/T-4960.9
+design-basis-accident	zh	按照确定的设计准则在设计中可采取针对性措施的事故工况。	GB/T-4960.9
+down-time	zh	装置计划维护或因其他原因而停止运行的时间。	GB/T-4960.9
+d-t-operation	zh	氘氚混合比例大致相等的聚变等离子体运行。	GB/T-4960.9
+duty-factor	zh	在断续运行装置中，其运行时间与总时间之比。	GB/T-4960.9
+dwell-time	zh	运行脉冲中不燃烧的时间。	GB/T-4960.9
+engineering-design-activity	zh	在完成概念设计之后，进行满足工程建造要求达到预期功能的详细设计活动。在ITER(2.4.47)中特指1992年～2001年期间的活动。	GB/T-4960.9
+flibe	zh	由氟、锂和铍组成的熔盐，可用于聚变堆包层的增殖材料。	GB/T-4960.9
+fuel-cycle-system	zh	从等离子体排气流中提取氘、氚并将其重新注入等离子体的系统。同时，处理废物中的含氘物质。	GB/T-4960.9
+fuels	zh	聚变堆的燃料，主要包括氘、氚。	GB/T-4960.9
+functional-isolation	zh	避免一个回路或系统的操作模式或失效对其他部分的影响的措施。	GB/T-4960.9
+fusion-fission-hybrid-reactor	zh	由聚变和裂变反应生产能量的反应堆。一般由含有裂变材料的次临界包层包围聚变中子源。如果在包层中也包含可转换材料，那么，反应堆将产生额外的裂变材料。也称为混合堆(hybrid reactor)。	GB/T-4960.9
+fusion-power	zh	由聚变反应产生的功率，主要由中子及 α 粒子携带。	GB/T-4960.9
+fusion-power-plant	zh	由核聚变反应提供能量的电厂。国际聚变研究的规划是先建造ITER(2.4.47)，再建造示范聚变电厂。	GB/T-4960.9
+fusion-product	zh	氘-氘等离子体聚变反应时产生的 α 粒子和中子等。	GB/T-4960.9
+fusion-reactivity	zh	实现聚变反应的离子数与总离子数之比。	GB/T-4960.9
+fusion-reactor	zh	利用可控聚变反应产生聚变能的装置。	GB/T-4960.9
+helium-ash	zh	在氘-氚等离子体中，聚变反应产生的高能 α 粒子(氦核)被等离子体慢化后成为氦灰。	GB/T-4960.9
+ignition-condition	zh	自持聚变反应条件：对氘-氚等离子体， α 粒子加热等于等离子体热损失。	GB/T-4960.9
+iter	zh	由中国、美国、欧盟、日本、俄罗斯、韩国及印度七方共同建造的核聚变实验堆。	GB/T-4960.9
+iter-units-of-account	zh	一个ITER记账单位，等价于1998年的1000美元。	GB/T-4960.9
+international-tokamak-reactor	zh	在国际原子能机构(International Atomic Energy Agency,IAEA)组织下的，由美国、日本和欧洲共 同体设计的大型托卡马克装置，后被ITER取代。	GB/T-4960.9
+mockup	zh	可以将真实应用于装置上部件的某些或全部特性复制出来的样件。例如，ITER部件试验样件。	GB/T-4960.9
+model-coil	zh	用于反映ITER磁体线圈关键特性的测试线圈。	GB/T-4960.9
+port-plugs	zh	ITER真空室的上部、中部及下部包含了大量的端口，在运行中端口中均安装有用于等离子体诊断、加热、抽真空的部件，以及限制器和与示范堆(DEMO)相关的试验包层模块。每一个设备均安装于一个特定的窗口插座上，为它们提供与邻近室、包层、屏蔽层的坚固接口，同时还将外部供应与端口插件服务连接。	GB/T-4960.9
+remote-handling	zh	通过机电设备控制在聚变堆中远距离操作的活动。	GB/T-4960.9
+remote-handling-class	zh	等级I为例行的远距离计划维修，等级Ⅱ为在电厂的生命周期内进行的远程维修或更换，等级Ⅲ为不必在电厂的生命周期内进行的远距离维修或更换，等级IV为不要求任何远距离维修或更换。	GB/T-4960.9
+remote-maintenance	zh	使用远距离控制的机器和工具对聚变堆中的放射性单元和部件进行维护与改造。	GB/T-4960.9
+decay-heat	zh	聚变堆停堆后由活化产物产生的衰变热。	GB/T-4960.9
+safety-system-settings	zh	在预期运行事件和事故情况下，启动自动保护装置的某些阀值触发点以确保安全极限不被超出。	GB/T-4960.9
+safety-system	zh	为保障聚变堆关断安全或限制预期运行事件和事故后果而与安全密切相关的系统。	GB/T-4960.9
+safety-system-support-feature	zh	提供保护系统及启动安全系统所需的冷却、润滑、能量供应服务的一系列设备。	GB/T-4960.9
+scheduled-down-time	zh	按计划的聚变堆停堆时间。	GB/T-4960.9
+shut-down-time	zh	在等离子体燃烧结束到等离子体状态结束之间的时间跨度，是运行时间的一部分。	GB/T-4960.9
+single-failure	zh	一个导致部件不能以最好的性能执行其安全功能的随机失效事件引起的故障。	GB/T-4960.9
+steady-state-fusion-reactor	zh	诸如温度、反应率及中子通量等条件不随时间变化的聚变反应堆。	GB/T-4960.9
+steady-state-operation	zh	聚变堆主要参数在远大于 α 粒子慢化时间或磁扰动穿透等离子体的时间或机械结构热平衡的时间内保持不变的运行。	GB/T-4960.9
+support-systems	zh	为聚变堆主系统提供服务的辅助系统。	GB/T-4960.9
+iter-test-blanket-module	zh	在ITER装置实验窗口进行中子学和氘增殖、热工水力、电磁、整体性能测试的试验模块。	GB/T-4960.9
+thermonuclear-reactor	zh	能维持和控制自持聚变反应的装置，又称聚变堆(fusion reactor)。	GB/T-4960.9
+thermonuclear-reactor-blanket	zh	在未来的聚变反应堆中，围绕着等离子体的一组包套。它可以采取锂从中流过或由冷却剂(如氦)和锂陶瓷材料组成的结构形式。这个包层有3个用途：由锂产生氚；排除热量；吸收来自等离子体的辐射，从而保护外面的超导线圈。	GB/T-4960.9
+tritium-breeding-ratio	zh	聚变堆增殖包层中单位时间氚产量相对氚消耗量的比值。	GB/T-4960.9
+tritium-processing	zh	从载氚流体、装置排出气体和泄漏含氚气体中提取氚，并安全收储或成为等离子体燃料的过程。参见氚工厂(2.4.71)。	GB/T-4960.9
+tritium-plant	zh	从聚变堆的燃料系统及其他含氚材料中收集、储藏、循环利用、提取及净化氚的设施。	GB/T-4960.9
+vacuum-vessel	zh	在聚变装置中为获得等离子体而提供的高真空容器。	GB/T-4960.9
+wall-loading	zh	第一壁或偏滤器靶板上单位面积的热通量，即聚变堆热输出功率除以面向等离子体的面积。	GB/T-4960.9

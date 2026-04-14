@@ -46,6 +46,7 @@ RE_TERM_LINE = re.compile(
 # These fix errors that cannot be handled by generic heuristics.
 # Format: { (term_id): {field: corrected_value, ...} }
 _OCR_CORRECTIONS: dict[str, dict[str, str]] = {
+    "2.1.30":  {"en": "closed (magnetic) configuration"},
     "2.1.40":  {"en": "controlled thermonuclear fusion"},
     "2.1.56":  {"zh": "氘-氦3反应", "en": "deuterium-helium-3 reaction", "abbr": "D-³He"},
     "2.1.76":  {"en": "dusty plasma"},

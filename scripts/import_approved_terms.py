@@ -40,6 +40,12 @@ from pathlib import Path
 REGISTRY_DIR = Path("terms/registry")
 
 
+def _detect_lang(text: str) -> str:
+    """Detect whether text is primarily Chinese or English."""
+    zh_chars = len(re.findall(r'[\u4e00-\u9fff]', text))
+    return 'zh' if zh_chars > len(text) * 0.15 else 'en'
+
+
 def _slugify(term: str) -> str:
     """Convert a term name to a concept_id slug."""
     s = term.lower().strip()
@@ -190,8 +196,9 @@ def main() -> None:
             if term in conflict_map:
                 concept_id = conflict_map[term]
                 if concept_id in existing_ids and definition:
+                    def_lang = _detect_lang(definition)
                     new_definitions.append(
-                        f"{concept_id}\ten\t{definition}\t{args.source}"
+                        f"{concept_id}\t{def_lang}\t{definition}\t{args.source}"
                     )
                     stats["conflict_resolved"] += 1
                     stats["def_only"] += 1
@@ -210,8 +217,9 @@ def main() -> None:
                 # matched_concept_id may contain multiple IDs separated by |
                 primary_id = matched_ids.split("|")[0].strip()
                 if primary_id in existing_ids:
+                    def_lang = _detect_lang(definition)
                     new_definitions.append(
-                        f"{primary_id}\ten\t{definition}\t{args.source}"
+                        f"{primary_id}\t{def_lang}\t{definition}\t{args.source}"
                     )
                     stats["def_only"] += 1
             else:
@@ -233,8 +241,9 @@ def main() -> None:
         if concept_id in existing_ids:
             # Concept already exists but wasn't caught as "exists" — add definition only
             if definition:
+                def_lang = _detect_lang(definition)
                 new_definitions.append(
-                    f"{concept_id}\ten\t{definition}\t{args.source}"
+                    f"{concept_id}\t{def_lang}\t{definition}\t{args.source}"
                 )
                 stats["def_only"] += 1
             else:
@@ -266,7 +275,8 @@ def main() -> None:
 
         # definitions.tsv: concept_id, lang, definition, source
         if definition:
-            new_definitions.append(f"{concept_id}\ten\t{definition}\t{args.source}")
+            def_lang = _detect_lang(definition)
+            new_definitions.append(f"{concept_id}\t{def_lang}\t{definition}\t{args.source}")
 
         new_concepts.append(concept_line)
         new_aliases.append(alias_line)
