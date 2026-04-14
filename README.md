@@ -26,11 +26,11 @@ registry under `terms/registry/`:
 - `aliases.tsv` — preferred/alias/deprecated/forbidden variants bound to a concept
 - `evidence.tsv` — traceable source rows per concept
 
-Current snapshot (as of v2026.04.07):
+Current snapshot (as of v2026.04.14):
 
-- concepts: **1465**
-- aliases: **6236**
-- evidence rows: **1465**
+- concepts: **1491**
+- aliases: **6800**
+- evidence rows: **1491**
 
 Registry schema/design reference:
 

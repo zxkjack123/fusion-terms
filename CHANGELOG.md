@@ -24,7 +24,32 @@
 ### Fixed
 
 
-## v2026.04.07
+## v2026.04.14
+
+### Added
+
+- **PWI 反模式大规模扩充**（Phase 2–5, 4 轮迭代）：registry 从 1465→**1491** concepts、6236→**6800** aliases、1465→**1491** evidence rows。
+  - Phase 2 (+6 概念, ~95 反模式)：net-erosion, gross-erosion, self-sputtering, thermal-desorption, ion-implantation, surface-recombination；系统性补充 plasma→血浆、wall→墙、exhaust→废气、seeding→播种、prompt→提示、sputtering→飞溅 等 AI 误译陷阱。
+  - Phase 3 (+6 概念, ~84 反模式)：preferential-sputtering, particle-reflection-coefficient, hydrogen-trapping, displacement-energy, melt-layer, impurity-screening；扩展 血浆 误译集合与材料/辐照损伤反模式。
+  - Phase 4 (+3 概念, ~136 反模式)：castellation (切槽结构), leading-edge (前缘), surface-morphology (表面形貌)；覆盖 committed→承诺、armor→盔甲、hydraulic→液压、cycle→循环、indent→缩进、expansion→扩展、multiplier→乘法器、accounting→会计、dome→圆顶、removal→去除 等 AI 误译。
+  - Phase 5 (+1 概念, ~97 反模式)：hydrogen-embrittlement (氢脆)；覆盖 yield→产量、ultimate→终极、fracture→骨折(医学义)、joint→关节(医学义)、plant→植物、building→建筑、release→发布、breakdown→崩溃、coolant→冷却液、breeding→繁殖、Young's→扬氏(错别字) 等 AI 误译。
+- **AI 误译反模式专项扩展**（ai-mistranslation-antipattern-expansion 计划, 8 任务）：新增 ~60 条 forbidden/deprecated 别名，覆盖 MHD 不稳定性、破裂阶段、等离子体运行、中子学/辐照、氚处理、工程/PSI 等 6 大领域。
+- **PWI-偏滤器-加料术语扩展**（pwi-divertor-fuelling-terminology-expansion 计划, 10 任务）：新增 wall-pumping preferred_zh 修正、chemical-sputtering 等 PWI 核心概念、偏滤器物理概念、加料 forbidden 别名、壁处理/烘烤/锂化/涂层退化概念、加热/电流驱动与标度/约束别名。
+- `allowlist_zh.txt` 同步更新（+新 preferred_zh, -已标记 deprecated/forbidden 的条目）。
+
+### Changed
+
+- 无。
+
+### Fixed
+
+- **workspace-bugfix 系列**（4 轮, ~30 commits）：
+  - 原子写入保护（build_terms, extract_candidates, export_registry, sync_to_fcitx, dict.yaml）。
+  - Rime 备份路径穿越防护、rollback 超时保护、rollback 失败保护。
+  - 缓存 SHA-256 校验、配置值类型强转、文件扫描异常守卫。
+  - TSV 导出字段转义、YAML name 引号保护、forbidden 大小写泄漏检查。
+  - Manifest schema 验证、stats 路径创建、UTF-8 截断修复、mypy 类型修复。
+  - ime_acceptance_pack 注释行跳过、terms_dir 默认值路径解析修复。
 
 ### Added
 
