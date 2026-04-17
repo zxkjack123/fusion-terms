@@ -1538,6 +1538,15 @@ surface-morphology	internal:registry-gap-review:pwi-antipattern-p4	Post-exposure
 hydrogen-embrittlement	internal:registry-gap-review:pwi-antipattern-p5	Hydrogen-induced ductility loss in metals	copilot	2026-04-14
 hot-cathode-ion-gauge	internal:registry-gap-review:substitute-supplement	Hot-cathode ionization gauge for vacuum measurement	copilot	2026-04-14
 diamagnetic-flux-signal	internal:registry-gap-review:substitute-supplement	Plasma stored energy signal from diamagnetic loop	copilot	2026-04-14
+coolant	internal:dict-improvements:cool-sco2-tritium-breeding	Generic coolant working fluid concept	copilot	2026-04-16
+first-wall-cooling	internal:dict-improvements:cool-sco2-tritium-breeding	Cooling concept for first wall PFC structures	copilot	2026-04-16
+supercritical-co2	internal:dict-improvements:cool-sco2-tritium-breeding	Supercritical CO2 working fluid concept	copilot	2026-04-16
+recuperator	internal:dict-improvements:cool-sco2-tritium-breeding	Heat recovery exchanger in Brayton/sCO2 cycles	copilot	2026-04-16
+recompression-brayton-cycle	internal:dict-improvements:cool-sco2-tritium-breeding	Recompression variant of sCO2 Brayton cycle	copilot	2026-04-16
+tritium-breeding	internal:dict-improvements:cool-sco2-tritium-breeding	Tritium generation process in lithium-containing blanket	copilot	2026-04-16
+lithium-6-enrichment	internal:dict-improvements:cool-sco2-tritium-breeding	Li-6 enrichment to improve breeding performance	copilot	2026-04-16
+packing-fraction	internal:dict-improvements:cool-sco2-tritium-breeding	Pebble bed packing fraction metric	copilot	2026-04-16
+tritium-production-rate	internal:dict-improvements:cool-sco2-tritium-breeding	Production rate metric for bred tritium	copilot	2026-04-16
 additional-heating	https://www.iter.org/fusion-glossary		import_approved_terms	2026-04-14
 aditya-u	https://www.iter.org/fusion-glossary		import_approved_terms	2026-04-14
 alcator-c-mod	https://www.iter.org/fusion-glossary		import_approved_terms	2026-04-14

@@ -24,7 +24,23 @@
 ### Fixed
 
 
-## v2026.04.14.1
+## v2026.04.17
+
+### Added
+
+- **COOL / sCO2 / Tritium Breeding 术语补充**（10 新概念 + 别名 + 证据行）：
+  - Coolant 系统：`coolant`（冷却剂）、`first-wall-cooling`（第一壁冷却）。
+  - sCO2 动力转换：`supercritical-co2`（超临界二氧化碳）、`recuperator`（回热器）、`recompression-brayton-cycle`（再压缩布雷顿循环）。
+  - 氚增殖：`tritium-breeding`（氚增殖）、`lithium-6-enrichment`（锂-6富集）、`packing-fraction`（填充率）、`tritium-production-rate`（产氚速率/TPR）。
+  - 对已有 `supercritical-co2-cycle` 补充 `SCO2 cycle` 别名。
+- VS Code task **"fusion-terms: rebuild all downstream"**：一键按序重建所有下游产物（export_registry → build_terms → sync_to_fcitx → rime_import_safe）。
+- Registry 规模：**2706** concepts、**8408** aliases、**2738** evidence rows、**1549** definitions。
+
+### Changed
+
+- 全部下游产物已同步重建：`translation_dict.json`（zh2en 2665 / en2zh 3000 / en2zh_short 335）、`query_expansions.json`（2706 concepts）、`tag_rules.jsonl`、`terminology_substitutions.tsv`、Vale accept/reject/substitute、`domain_terms.txt`（3404 terms）、Rime import payload（2188 entries）、fcitx wordlist。
+
+### Fixed
 
 ### Added
 

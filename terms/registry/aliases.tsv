@@ -9360,3 +9360,60 @@ thermonuclear reactor blanket	thermonuclear-reactor-blanket	en	preferred	importe
 tritium handling	tritium-processing	en	preferred	imported from GB/T-4960.9
 wall loading	wall-loading	en	preferred	imported from GB/T-4960.9
 壁载荷	wall-loading	zh	preferred	imported from GB/T-4960.9
+
+# ==== COOL / sCO2 / Tritium Breeding补充 (2026-04-16) ====
+
+# ---- coolant
+冷却剂	coolant	zh	preferred	preferred zh
+coolant	coolant	en	preferred	preferred en
+
+# ---- first-wall-cooling
+第一壁冷却	first-wall-cooling	zh	preferred	preferred zh
+first wall cooling	first-wall-cooling	en	preferred	preferred en (phrase)
+first-wall-cooling	first-wall-cooling	en	alias	IME token-only form
+FW cooling	first-wall-cooling	en	alias	abbreviated form
+
+# ---- supercritical-co2
+超临界二氧化碳	supercritical-co2	zh	preferred	preferred zh
+supercritical CO2	supercritical-co2	en	preferred	preferred en
+scCO2	supercritical-co2	abbr	preferred	canonical abbr
+SCCO2	supercritical-co2	abbr	alias	uppercase variant
+超临界CO2	supercritical-co2	zh	alias	zh short variant
+
+# ---- recuperator
+回热器	recuperator	zh	preferred	preferred zh
+recuperator	recuperator	en	preferred	preferred en
+
+# ---- recompression-brayton-cycle
+再压缩布雷顿循环	recompression-brayton-cycle	zh	preferred	preferred zh
+recompression Brayton cycle	recompression-brayton-cycle	en	preferred	preferred en (phrase)
+recompression-brayton-cycle	recompression-brayton-cycle	en	alias	IME token-only form
+再压缩循环	recompression-brayton-cycle	zh	alias	short zh form
+
+# ---- tritium-breeding
+氚增殖	tritium-breeding	zh	preferred	preferred zh
+tritium breeding	tritium-breeding	en	preferred	preferred en (phrase)
+tritium-breeding	tritium-breeding	en	alias	IME token-only form
+产氚	tritium-breeding	zh	alias	short zh form
+
+# ---- lithium-6-enrichment
+锂-6富集	lithium-6-enrichment	zh	preferred	preferred zh
+lithium-6 enrichment	lithium-6-enrichment	en	preferred	preferred en (phrase)
+lithium-6-enrichment	lithium-6-enrichment	en	alias	IME token-only form
+Li-6 enrichment	lithium-6-enrichment	en	alias	symbol form
+Li-6富集	lithium-6-enrichment	zh	alias	mixed symbol form
+
+# ---- packing-fraction
+填充率	packing-fraction	zh	preferred	preferred zh
+packing fraction	packing-fraction	en	preferred	preferred en (phrase)
+packing-fraction	packing-fraction	en	alias	IME token-only form
+堆积率	packing-fraction	zh	alias	variant zh
+
+# ---- tritium-production-rate
+产氚速率	tritium-production-rate	zh	preferred	preferred zh
+tritium production rate	tritium-production-rate	en	preferred	preferred en (phrase)
+tritium-production-rate	tritium-production-rate	en	alias	IME token-only form
+TPR	tritium-production-rate	abbr	preferred	canonical abbr
+
+# ---- SCO2 uppercase alias for existing supercritical-co2-cycle
+SCO2 cycle	supercritical-co2-cycle	en	alias	uppercase variant

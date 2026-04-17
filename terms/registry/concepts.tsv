@@ -2904,3 +2904,20 @@ iter-test-blanket-module	nuclear-fusion	ITER 试验包层模块	ITER test blanke
 thermonuclear-reactor	nuclear-fusion	热核反应堆	thermonuclear reactor		active		GB/T-4960.9
 thermonuclear-reactor-blanket	nuclear-fusion	热核反应堆包层	thermonuclear reactor blanket		active		GB/T-4960.9
 wall-loading	nuclear-fusion	壁载荷	wall loading		active		GB/T-4960.9
+
+# ==== COOL / sCO2 / Tritium Breeding补充 (2026-04-16) ====
+
+# ---- Coolant system concepts
+coolant	concept	冷却剂	coolant		active	Generic coolant working fluid concept	corpus
+first-wall-cooling	system	第一壁冷却	first wall cooling		active	Cooling scheme for plasma-facing first wall	corpus
+
+# ---- sCO2 power conversion
+supercritical-co2	concept	超临界二氧化碳	supercritical CO2	scCO2	active	CO2 above critical point (31°C, 7.4 MPa) used as working fluid	corpus
+recuperator	concept	回热器	recuperator		active	Heat exchanger recovering exhaust heat in Brayton cycle	corpus
+recompression-brayton-cycle	concept	再压缩布雷顿循环	recompression Brayton cycle		active	sCO2 Brayton variant with recompression for higher efficiency	corpus
+
+# ---- Tritium breeding
+tritium-breeding	concept	氚增殖	tritium breeding		active	Process of producing tritium via Li-6(n,t) and Li-7(n,n't) reactions in blanket	corpus
+lithium-6-enrichment	concept	锂-6富集	lithium-6 enrichment		active	Enriching Li-6 fraction in lithium to enhance TBR	corpus
+packing-fraction	metric	填充率	packing fraction		active	Volume fraction of pebbles in pebble-bed blanket	corpus
+tritium-production-rate	metric	产氚速率	tritium production rate	TPR	active	Rate of tritium produced per unit time in breeding blanket	corpus

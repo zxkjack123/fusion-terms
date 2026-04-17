@@ -65,6 +65,28 @@
                 "~/.config/fcitx5/rime"
             ],
             "problemMatcher": []
+        },
+        {
+            "label": "fusion-terms: rebuild all downstream",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "fusion-terms: rebuild all downstream (run)"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "fusion-terms: rebuild all downstream (run)",
+            "type": "shell",
+            "command": "bash",
+            "args": [
+                "-c",
+                "set -e && python3 -m pipeline.export_registry --query-expansions --tag-rules --substitutions --vale-substitute --translation-dict && python3 -m pipeline.build_terms --config ${workspaceFolder}/config.toml && python3 -m pipeline.sync_to_fcitx && python3 -m pipeline.rime_import_safe"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            },
+            "problemMatcher": []
         }
     ]
 }
