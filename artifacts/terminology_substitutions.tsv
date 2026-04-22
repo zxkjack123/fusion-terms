@@ -2,6 +2,7 @@
 ASDEX升级	ASDEX Upgrade	forbidden	zh	误译Upgrade(装置名应保留 ASDEX Upgrade)
 Alfvén连续介质	Alfvén连续谱	forbidden	zh	误译continuum：正确为 Alfvén连续谱
 C2W	C-2W	forbidden	en	缺连字符(正确为 C-2W)
+CHF热流	临界热流密度	deprecated	zh	internal:dict-improvements
 CLAM合金	CLAM	forbidden	zh	材质标示错(钢≠合金)：正确为 CLAM钢
 CLF-1合金	CLF-1	forbidden	zh	材质标示错(钢≠合金)：正确为 CLF-1钢
 C陀螺	CGYRO	forbidden	zh	letter-by-letter mistranslation
@@ -18,6 +19,7 @@ ELM引起的腐蚀	ELM诱发侵蚀	forbidden	zh	侵蚀≠腐蚀：正确为 ELM�
 ELM消除	ELM抑制	forbidden	zh	概念错误：suppression≠消除
 ELM碰撞侵蚀	ELM诱发侵蚀	forbidden	zh	误译ELM-induced(诱发≠碰撞)：正确为 ELM诱发侵蚀
 ELM诱导侵蚀	ELM诱发侵蚀	deprecated	zh	非标准：应为 ELM诱发侵蚀
+ELM频次	ELM频率	deprecated	zh	dict-improvements
 ENN球形托卡马克	新奥球形托卡马克	deprecated	zh	非标准：应为 新奥球形托卡马克
 ENN紧凑融合装置	新奥紧凑聚变装置	forbidden	zh	误译：正确为 新奥紧凑聚变装置
 ENN能源	新奥	forbidden	zh	冗赘：正确为 新奥
@@ -26,11 +28,14 @@ E×B偏移	E×B漂移	forbidden	zh	误译drift：正确为 E×B漂移
 F82H合金	F82H	forbidden	zh	材质标示错(钢≠合金)：正确为 F82H钢
 FRC合并	场反并合	forbidden	zh	误译merging：正确为 场反并合
 GA代码	GACODE	forbidden	zh	literal expansion of suite token
+Greenwald分数	Greenwald份额	deprecated	zh	internal:dict-improvements
 Greenwald极限	格林沃尔德密度	deprecated	zh	混淆density与limit：应为 格林沃尔德密度
 Greenwald限制	格林沃尔德密度	deprecated	zh	混淆density与limit：应为 格林沃尔德密度
 HB11能源	HB11 Energy	forbidden	zh	误译(应保留英文)：正确为 HB11 Energy
+H因子值	H因子	deprecated	zh	internal:dict-improvements
 H因素	H因子	forbidden	zh	误译factor：聚变应为 H因子
 H模式	高约束模	deprecated	zh	非标准：应为 高约束模 或 H-mode
+H模式功率门限	H模功率阈值	deprecated	zh	dict-improvements
 H系数	H因子	forbidden	zh	误译factor：聚变应为 H因子
 ICRF天线	离子回旋天线	deprecated	zh	非标准缩写：应为 离子回旋天线
 IPP加兴研究所	马克斯·普朗克等离子体物理研究所	forbidden	zh	误译(应给全称)：正确为 马克斯·普朗克等离子体物理研究所
@@ -40,7 +45,10 @@ Internation Thermonuclear Experimental Reactor	ITER	forbidden	en	misspelling: In
 International Thermonuclear Experimental Research	ITER	forbidden	en	ITER = ...Reactor, not Research
 I模式	I模	deprecated	zh	非标准：应为 I模
 JT60SA	JT-60SA	forbidden	en	缺连字符(正确为 JT-60SA)
+J积分值	J积分	deprecated	zh	internal:dict-improvements
 K-Star	KSTAR	forbidden	en	误写(正确为 KSTAR)
+KERMA系数	KERMA因子	deprecated	zh	internal:dict-improvements
+K因子	应力强度因子	forbidden	zh	internal:dict-improvements
 LH过渡	L-H转换	forbidden	zh	误译+格式错：正确为 L-H转换
 LPP融合	LPP Fusion	forbidden	zh	误译fusion(应保留英文)：正确为 LPP Fusion
 Langmuire probe	Langmuir probe	forbidden	en	misspelling of Langmuir probe
@@ -48,10 +56,13 @@ L到H转变	L-H转换	deprecated	zh	非标准：应为 L-H转换
 L模式	低约束模	deprecated	zh	非标准：应为 低约束模 或 L-mode
 MAST升级	MAST-U	forbidden	zh	误译(装置名应保留 MAST-U)
 MHD稳定性限制	MHD稳定极限	forbidden	zh	误译limit：正确为 MHD稳定极限
+MHD稳定极限值	MHD稳定极限	deprecated	zh	internal:dict-improvements
 ML中断预测	机器学习破裂预测	forbidden	zh	误译disruption(破裂≠中断)：正确为 机器学习破裂预测
 NSTX-U升级	NSTX-U	forbidden	zh	冗赘(U已含upgrade义)
 N平行	平行折射率	forbidden	zh	误译：正确为 平行折射率
+N平行值	平行折射率	deprecated	zh	internal:dict-improvements
 Q值反应	Q值	forbidden	zh	冗加'反应'：正确为 Q值
+Q反应值	Q值	deprecated	zh	internal:dict-improvements
 REBCO磁带	稀土钡铜氧化物	forbidden	zh	误译tape：正确为 REBCO带材
 REBCO胶带	稀土钡铜氧化物	forbidden	zh	误译tape：正确为 REBCO带材
 RFX改进型	RFX-mod	forbidden	zh	误译mod(装置名应保留 RFX-mod)
@@ -60,6 +71,7 @@ T retention	tritium retention	deprecated	en	shorthand: use full term
 TAE技术	TAE Technologies	forbidden	zh	误译Technologies(应保留英文)：正确为 TAE Technologies
 TAE科技	TAE Technologies	forbidden	zh	误译Technologies：正确为 TAE Technologies
 TF波纹	环向场纹波	deprecated	zh	非标准：应为 环向场纹波
+TRL级别	技术就绪度	deprecated	zh	internal:dict-improvements
 T陀螺	TGYRO	forbidden	zh	letter-by-letter mistranslation
 X光衍射	X射线衍射	deprecated	zh	非标准(X射线≠X光)：应为 X射线衍射
 X射线绕射	X射线衍射	forbidden	zh	误译diffraction(衍射≠绕射)：正确为 X射线衍射
@@ -85,6 +97,7 @@ flowchannelinsert	flow channel insert	forbidden	en	auto-added for coverage uplif
 geologicaldisposal	geological disposal	forbidden	en	auto-added for coverage uplift
 handson recycling	hands-on recycling	forbidden	en	auto-added for coverage uplift
 hartmann number	Hartmann number	forbidden	en	auto-added for coverage uplift
+k有效	有效增殖因数	deprecated	zh	internal:dict-improvements
 lithiumlead	lithium-lead	forbidden	en	auto-added for coverage uplift
 magneto-hydrodynamics	magnetohydrodynamics	deprecated	en	no hyphen in magnetohydrodynamics
 magnetohydro-dynamics	magnetohydrodynamics	deprecated	en	no hyphen in magnetohydrodynamics
@@ -100,6 +113,7 @@ permeationreductionfactor	permeation reduction factor	forbidden	en	auto-added fo
 q 95	q95	deprecated	en	no space in q95
 q-95	q95	deprecated	en	no hyphen in q95
 q值分布	安全因子剖面	deprecated	zh	非标准：应为 安全因子剖面
+q平行热流	平行热流	deprecated	zh	internal:dict-improvements
 q描述文件	安全因子剖面	forbidden	zh	误译profile(计算机义)：正确为 安全因子剖面
 radiofrequency heating	radio-frequency heating	forbidden	en	auto-added for coverage uplift
 remotehandling recycling	remote-handling recycling	forbidden	en	auto-added for coverage uplift
@@ -124,6 +138,7 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 θ捏缩	θ箍缩	forbidden	zh	误译pinch：正确为 θ箍缩
 一体化模型	集成建模	forbidden	zh	误译：正确为 集成建模
 一次回路	一回路	deprecated	zh	非标准：应为 一回路
+一次性建设成本	隔夜建设成本	deprecated	zh	internal:dict-improvements
 一般原子能	通用原子能	forbidden	zh	误译general：正确为 通用原子能
 三角变形	等离子体三角形变	deprecated	zh	非标准：应为 三角形变
 三角度	等离子体三角形变	forbidden	zh	误译：正确为 三角形变
@@ -134,10 +149,13 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 不确定度量化	不确定性量化	forbidden	zh	误译uncertainty(不确定性≠不确定度)：正确为 不确定性量化
 东方超环	EAST	forbidden	zh	非官方简译(装置名应保留 EAST)
 两流体模型	双流体模型	deprecated	zh	非标准：应为 双流体模型
+个人当量剂量	个人剂量当量	deprecated	zh	internal:dict-improvements
 个人等效剂量	个人剂量当量	forbidden	zh	误译equivalent(当量≠等效)：正确为 个人剂量当量
 个人辐射当量	个人剂量当量	forbidden	zh	非规范(个人剂量当量≠个人辐射当量)：正确为 个人剂量当量
 中国聚变工程实验反应堆	中国聚变工程试验堆	forbidden	zh	误译(试验堆≠实验反应堆)：正确为 中国聚变工程试验堆
 中央螺线管	中心螺管	deprecated	zh	非标准：应为 中心螺管
+中子产生率	中子产额	forbidden	zh	internal:dict-improvements
+中子产生量	中子产额	deprecated	zh	internal:dict-improvements
 中子产量	中子产额	deprecated	zh	非标准：应为 中子产额
 中子倍增器	中子倍增剂	forbidden	zh	误译multiplier：正确为 中子倍增剂
 中子光谱	中子能谱	forbidden	zh	误译spectrum：正确为 中子能谱
@@ -149,6 +167,7 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 中子摄影机	中子照相机	forbidden	zh	摄影机=film camera
 中子收率	中子产额	forbidden	zh	误译yield：正确为 中子产额
 中子来源	中子源	forbidden	zh	误译source：正确为 中子源
+中子流	中子通量	forbidden	zh	internal:dict-improvements
 中子流量	中子通量	forbidden	zh	误译flux：正确为 中子通量
 中子漏流	流道串流	forbidden	zh	误译streaming(流穿≠漏流)：正确为 中子流穿/流道串流
 中子激发	中子活化	forbidden	zh	激发=excitation, different process
@@ -159,12 +178,14 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 中子磁通	中子通量	forbidden	zh	误译flux(电磁义)：正确为 中子通量
 中子累积通量	注量	forbidden	zh	误译fluence(注量≠累积通量)：正确为 注量/中子注量
 中子诊断学	中子诊断	forbidden	zh	误加'学'：正确为 中子诊断
+中子通量值	中子通量	deprecated	zh	internal:dict-improvements
 中子遮挡	中子屏蔽	forbidden	zh	误译shielding(屏蔽≠遮挡)：正确为 中子屏蔽
 中子防护	中子屏蔽	forbidden	zh	误译shielding(屏蔽≠防护)：正确为 中子屏蔽
 中子频谱	中子能谱	forbidden	zh	误译spectrum：正确为 中子能谱
 中性光束注入	中性粒子束注入	forbidden	zh	误译beam：正确为 中性粒子束注入
 中性光束电流驱动	中性束电流驱动	forbidden	zh	光束=light beam, wrong
 中性光束驱动FRC	中性束驱动场反	forbidden	zh	误译beam(束≠光束)：正确为 中性束驱动场反
+中性压	中性气压	deprecated	zh	internal:dict-improvements
 中性压力	中性气压	forbidden	zh	误译(气压≠压力)：正确为 中性气压
 中性束注入	中性粒子束注入	deprecated	zh	标准为"中性粒子束注入"
 中性束注入加热	中性粒子束注入	deprecated	zh	冗余(注入已隐含加热)：应为 中性粒子束注入
@@ -175,12 +196,16 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 中断侵蚀	破裂侵蚀	forbidden	zh	误译disruption：正确为 破裂侵蚀
 中断侵蚀量	破裂侵蚀	forbidden	zh	误译disruption(破裂≠中断)：正确为 破裂侵蚀
 中断减缓	破裂缓解	forbidden	zh	双重误译：正确为 破裂缓解
+中断避免	破裂避免	forbidden	zh	AI误译disruption(破裂≠中断)：IT语境下disruption译为中断
 中断预测	破裂预测	forbidden	zh	误译disruption：正确为 破裂预测
 中水平废物	中放废物	forbidden	zh	误译level：正确为 中放废物
 中间热交换器	中间换热器	deprecated	zh	非标准：应为 中间换热器
 串级损伤	级联损伤	forbidden	zh	误译cascade(级联≠串级)：正确为 级联损伤
 串联磁镜	串列磁镜	forbidden	zh	误译tandem：正确为 串列磁镜
 临界热通量	临界热流密度	forbidden	zh	误译flux(热流密度≠热通量)：正确为 临界热流密度
+临界电流值	临界电流	deprecated	zh	internal:dict-improvements
+临界磁感应强度	临界磁场	deprecated	zh	internal:dict-improvements
+临界磁通密度	临界磁场	deprecated	zh	internal:dict-improvements
 丸料导管	弹丸导管	forbidden	zh	误译pellet：正确为 弹丸导管
 丸料注入	弹丸注入	forbidden	zh	误译：正确为 弹丸注入
 丸注入	弹丸注入	forbidden	zh	误译：正确为 弹丸注入
@@ -194,10 +219,13 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 交替不稳定性	交换不稳定性	forbidden	zh	误译interchange：正确为 交换不稳定性
 交流损失	交流损耗	forbidden	zh	误译loss：正确为 交流损耗
 产出强度	屈服强度	forbidden	zh	AI误译yield(屈服≠产出)：正确为 屈服强度
+产能因子	容量因子	deprecated	zh	internal:dict-improvements
 产量强度	屈服强度	forbidden	zh	AI误译yield(屈服≠产量)：正确为 屈服强度
 人工诊断	合成诊断	forbidden	zh	误译synthetic：正确为 合成诊断
 介子催化聚变	μ子催化聚变	forbidden	zh	误译muon：μ子≠介子
 伊菲特	EFIT	forbidden	zh	AI transliteration of code token
+伏特秒	伏秒	deprecated	zh	dict-improvements
+优值	品质因数	deprecated	zh	internal:dict-improvements
 优先溅射	择优溅射	deprecated	zh	非推荐：应为 择优溅射
 传输屏障	输运垒	forbidden	zh	误译transport+barrier：正确为 输运垒
 伸缩关节	膨胀节	forbidden	zh	AI误译joint(节≠关节)：正确为 膨胀节/伸缩节
@@ -221,6 +249,7 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 低温目标	低温靶	forbidden	zh	误译target：正确为 低温靶
 低温超级导体	低温超导体	forbidden	zh	误译super-(超导≠超级导)：正确为 低温超导体
 低温颗粒	低温弹丸	forbidden	zh	误译pellet：正确为 低温弹丸
+体积流量值	体积流量	deprecated	zh	internal:dict-improvements
 供料效率	加料效率	deprecated	zh	非标准：应为 加料效率
 供电	电源系统	deprecated	zh	过度简化：应为 电源系统
 供给链	供应链	forbidden	zh	误译supply(供应≠供给)：正确为 供应链
@@ -228,6 +257,8 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 侵蚀腐蚀	冲蚀-腐蚀	forbidden	zh	误译erosion(冲蚀≠侵蚀)：正确为 冲蚀-腐蚀
 保修周期	维护周期	forbidden	zh	保修=warranty period
 保养周期	维护周期	forbidden	zh	保养=vehicle/appliance maintenance
+信息熵值	Shannon熵	deprecated	zh	internal:dict-improvements
+倍增时间值	氚倍增时间	deprecated	zh	internal:dict-improvements
 倾覆不稳定性	倾斜不稳定性	forbidden	zh	误译tilt：正确为 倾斜不稳定性
 偏好溅射	择优溅射	forbidden	zh	AI误译preferential(择优≠偏好)：正确为 择优溅射
 偏滤器圆屋顶	偏滤器穹顶	forbidden	zh	AI误译dome(穹顶≠圆屋顶)：正确为 偏滤器穹顶
@@ -245,9 +276,14 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 偏滤器障板	偏滤器挡板	forbidden	zh	误译baffle：正确为 偏滤器挡板
 偏转器	偏滤器	forbidden	zh	误译divert：正确为 偏滤器
 偏转器腿	偏滤器腿	forbidden	zh	误译divertor(偏滤器≠偏转器)：正确为 偏滤器腿
+停堆剂量率值	停堆剂量率	deprecated	zh	internal:dict-improvements
 停机剂量率	停堆剂量率	forbidden	zh	误译shutdown：聚变应为 停堆剂量率
+储存能	等离子体储能	forbidden	zh	internal:dict-improvements
+储能值	等离子体储能	deprecated	zh	internal:dict-improvements
+元件寿命	部件寿命	deprecated	zh	internal:dict-improvements
 先进分流器概念	先进偏滤器概念	forbidden	zh	误译divertor(偏滤器≠分流器)：正确为 先进偏滤器概念
 光子传输	光子输运	forbidden	zh	误译transport(输运≠传输)：正确为 光子输运
+光子吸收剂量	光子剂量	deprecated	zh	internal:dict-improvements
 光子运输	光子输运	forbidden	zh	误译transport：正确为 光子输运
 光子量	光子剂量	forbidden	zh	缺字'剂'：正确为 光子剂量
 光晕电流	晕电流	forbidden	zh	误译halo：正确为 晕电流
@@ -264,6 +300,7 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 全球Alfvén本征模	全局Alfvén本征模	forbidden	zh	误译global(全局≠全球)：正确为 全局Alfvén本征模
 公众接受	公众接受度	deprecated	zh	缺字'度'：应为 公众接受度
 公众暴露	公众照射	forbidden	zh	误译exposure：正确为 公众照射
+公众照射剂量	公众剂量	deprecated	zh	internal:dict-improvements
 公共接受	公众接受度	forbidden	zh	误译public：正确为 公众接受度
 兰缪尔探针	朗缪尔探针	deprecated	zh	人名音译偏差：应为 朗缪尔探针
 兰金循环	朗肯循环	forbidden	zh	音译错：正确为 朗肯循环
@@ -281,12 +318,18 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 关键磁场	临界磁场	forbidden	zh	误译critical：正确为 临界磁场
 关闭偏滤器	封闭偏滤器	forbidden	zh	AI误译closed(封闭≠关闭)：正确为 封闭偏滤器
 内在旋转	本征旋转	forbidden	zh	误译intrinsic：正确为 本征旋转
+内存带宽值	内存带宽	deprecated	zh	internal:dict-improvements
 内扭曲模式	内扭曲模	deprecated	zh	非标准：应为 内扭曲模
+内残余应力	残余应力	deprecated	zh	internal:dict-improvements
+内爆速	内爆速度	deprecated	zh	internal:dict-improvements
+内爆速率	内爆速度	forbidden	zh	internal:dict-improvements
 内玛	比释动能	forbidden	zh	误音译kerma：正确为 比释动能
 内部传输屏障	内输运垒	forbidden	zh	误译transport+barrier：正确为 内输运垒
 内部扭折模	内扭曲模	forbidden	zh	误译kink：正确为 内扭曲模
 内部扭曲模	内扭曲模	forbidden	zh	误译internal：正确为 内扭曲模
 内部输运屏障	内输运垒	forbidden	zh	误译barrier：正确为 内输运垒
+再循环上限	再循环限值	deprecated	zh	internal:dict-improvements
+再循环阈值	再循环限值	forbidden	zh	internal:dict-improvements
 再晶化	再结晶	deprecated	zh	非标准缩略：应为 再结晶
 再结合辐射	复合辐射	forbidden	zh	误译recombination：正确为 复合辐射
 冰丸注入	弹丸注入	deprecated	zh	非标准(冰丸→弹丸)：应为 弹丸注入
@@ -316,7 +359,9 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 冷却管道	冷却通道	deprecated	zh	非标准：应为 冷却通道
 净化气	吹扫气	forbidden	zh	误译purge：正确为 吹扫气
 净电力	净电功率	forbidden	zh	误译power(功率≠电力)：正确为 净电功率
+净腐蚀	净侵蚀	forbidden	zh	internal:dict-improvements
 净蚀	净侵蚀	deprecated	zh	过度缩略：应为 净侵蚀
+净输出电功率	净电功率	deprecated	zh	internal:dict-improvements
 准对称恒星器	准对称仿星器	forbidden	zh	恒星器=literal translation, wrong
 准等动态	准等动力	forbidden	zh	误译：正确为 准等动力
 减活化	低活化	forbidden	zh	非标准译法：正确为 低活化
@@ -333,14 +378,18 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 分离前沿	脱靶前沿	forbidden	zh	误译detachment：正确为 脱靶前沿
 分离控制	脱靶控制	forbidden	zh	误译detachment：正确为 脱靶控制
 分离线	分界面	forbidden	zh	误译separatrix：正确为 分界面
+分离面密度	分界面密度	forbidden	zh	dict-improvements
 初级回路	一回路	forbidden	zh	误译primary：正确为 一回路
+初装氚量	氚启动存量	deprecated	zh	internal:dict-improvements
 刮削层宽	SOL宽度	deprecated	zh	缺规范性：应为 SOL宽度
 刮层	刮削层	forbidden	zh	过度缩略：正确为 刮削层
 刮离层	刮削层	forbidden	zh	误译：正确为 刮削层
 刮除层	刮削层	forbidden	zh	误译：正确为 刮削层
 制冷回路	冷却回路	forbidden	zh	制冷=refrigeration
 制动辐射	韧致辐射	deprecated	zh	非标准变体：应为 韧致辐射
+制造准备度	制造就绪度	deprecated	zh	internal:dict-improvements
 剂量上限	剂量限值	forbidden	zh	误译limit(限值≠上限)：正确为 剂量限值
+剂量吸收	吸收剂量	forbidden	zh	internal:dict-improvements
 剂量换算系数	剂量转换系数	deprecated	zh	非标准(转换≠换算)：应为 剂量转换系数
 剂量极限	剂量限值	forbidden	zh	误译limit：正确为 剂量限值
 剂量率映射	剂量率分布图	forbidden	zh	误译mapping(IT义)：正确为 剂量率分布图
@@ -359,6 +408,7 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 剥落-气球模	剥离-气球模	forbidden	zh	误译peeling(剥离≠剥落)：正确为 剥离-气球模
 剩余应力	残余应力	deprecated	zh	非标准(残余≠剩余)：应为 残余应力
 力自由平衡	无力平衡	forbidden	zh	误译force-free：正确为 无力平衡
+功率密度值	功率密度	deprecated	zh	internal:dict-improvements
 功率废气	功率排出	forbidden	zh	AI误译exhaust(排出≠废气)：正确为 功率排出
 功率沉积剖面	功率沉积分布	deprecated	zh	非标准：应为 功率沉积分布
 功率消耗	功率排出	forbidden	zh	误译exhaust(排出≠消耗)：正确为 功率排出
@@ -368,6 +418,7 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 功率降解	功率退化	forbidden	zh	误译degradation：正确为 功率退化
 功能性材料	功能材料	deprecated	zh	冗赘：应为 功能材料
 加油效率	加料效率	forbidden	zh	误译fueling：聚变应为 加料效率
+加热功率值	加热功率	deprecated	zh	internal:dict-improvements
 加热通风空调	暖通空调	forbidden	zh	啰嗦译法：正确为 暖通空调
 加速器频率	回旋频率	forbidden	zh	误译cyclotron(回旋≠加速器)：正确为 回旋频率
 动力学控制	动理学控制	forbidden	zh	误译kinetic(动理学≠动力学)：正确为 动理学控制
@@ -379,6 +430,7 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 动能释放率	比释动能	forbidden	zh	误译kerma：正确为 比释动能
 动量传输	动量输运	forbidden	zh	误译transport：正确为 动量输运
 动量转移	动量输运	forbidden	zh	误译transport：正确为 动量输运
+努谢尔特数	努塞尔数	deprecated	zh	internal:dict-improvements
 劳森准则	劳森判据	deprecated	zh	非标准：应为 劳森判据
 劳森条件	劳森判据	deprecated	zh	非标准：应为 劳森判据
 劳森标准	劳森判据	deprecated	zh	非标准：应为 劳森判据
@@ -391,19 +443,28 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 化学蚀刻	化学腐蚀	forbidden	zh	etching≠erosion：正确为 化学腐蚀
 化学飞溅	化学溅射	forbidden	zh	误译sputtering(溅射≠飞溅)：正确为 化学溅射
 区域流	带状流	forbidden	zh	误译zonal：正确为 带状流
+半周期	半衰期	forbidden	zh	internal:dict-improvements
+半寿命	半衰期	deprecated	zh	internal:dict-improvements
+半衰变期	半衰期	deprecated	zh	internal:dict-improvements
 协同沉积	共沉积	forbidden	zh	误译co-(共≠协同)：正确为 共沉积
+单器官剂量	器官剂量	forbidden	zh	internal:dict-improvements
 单空位形	单零位形	forbidden	zh	误译：正确为 单零位形
 单螺旋状态	单螺旋态	deprecated	zh	非标准(态≠状态)：应为 单螺旋态
 单零点	单零位形	forbidden	zh	误译null：正确为 单零位形
 博姆扩散	玻姆扩散	deprecated	zh	音译变体：应为 玻姆扩散
 卡蒂亚	CATIA	forbidden	zh	AI transliteration of software name
+即时建造成本	隔夜成本	forbidden	zh	internal:dict-improvements
+厂界剂量率	厂址边界剂量	forbidden	zh	internal:dict-improvements
 压力台座	压力基座	forbidden	zh	误译pedestal：正确为 压力基座
 压力底座	压力基座	forbidden	zh	误译pedestal：正确为 压力基座
 压力驱动模式	压力驱动模	deprecated	zh	非标准：应为 压力驱动模
+压差损失	压降	deprecated	zh	internal:dict-improvements
 压强驱动模	压力驱动模	forbidden	zh	误译pressure(压力≠压强)：正确为 压力驱动模
 原型反应堆	原型堆	deprecated	zh	非标准：应为 原型堆
 原子位移	离位损伤	deprecated	zh	非标准：应为 离位损伤 (dpa)
+原子数密度	原子密度	deprecated	zh	internal:dict-improvements
 原硅酸锂	正硅酸锂	forbidden	zh	误译ortho-：正确为 正硅酸锂
+去氚系数	去氚因子	deprecated	zh	internal:dict-improvements
 去皮-气球模	剥离-气球模	forbidden	zh	误译peeling(剥离≠去皮)：正确为 剥离-气球模
 参量不稳定性	参数不稳定性	deprecated	zh	非标准变体：应为 参数不稳定性
 及时再堆积	即时再沉积	forbidden	zh	误译prompt+redeposition：正确为 即时再沉积
@@ -417,15 +478,20 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 反复侵蚀	再侵蚀	forbidden	zh	误译re-(再≠反复)：正确为 再侵蚀
 反射测量仪	反射仪	forbidden	zh	误译：正确为 反射仪
 反射测量法	反射仪	forbidden	zh	误译：正确为 反射仪
+反射率	粒子反射系数	forbidden	zh	internal:dict-improvements
 反射计	反射仪	deprecated	zh	非标准：聚变应为 反射仪
 反应率系数	反应速率系数	deprecated	zh	缺字'速'：应为 反应速率系数
+反应速率值	反应率	deprecated	zh	internal:dict-improvements
+反应速率系数值	反应速率系数	deprecated	zh	internal:dict-improvements
 反弹频率	弹跳频率	forbidden	zh	误译bounce：正确为 弹跳频率
 反磁信号	反磁通信号	forbidden	zh	简称不够规范：缺少"通"
 反磁漂移	抗磁漂移	forbidden	zh	误译dia-：正确为 抗磁漂移
 反磁环	抗磁环	forbidden	zh	误译dia-：正确为 抗磁环
 发光放电清洁	辉光放电清洗	forbidden	zh	误译glow：正确为 辉光放电清洗
+发电成本	电力成本	deprecated	zh	internal:dict-improvements
 发电机效果	发电机效应	forbidden	zh	误译effect：正确为 发电机效应
 变脆	脆化	forbidden	zh	误译embrittlement(脆化≠变脆)：正确为 脆化
+可扩展度	可扩展性	deprecated	zh	internal:dict-improvements
 可拆接头	可拆卸接头	deprecated	zh	缺字：应为 可拆卸接头
 可焊接性	可焊性	deprecated	zh	啰嗦(可焊性≠可焊接性)：应为 可焊性
 可用性	可用率	forbidden	zh	误译availability(堆工程应为比率)：正确为 可用率
@@ -446,14 +512,20 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 启动比例	自举电流份额	forbidden	zh	误译bootstrap：正确为 自举电流份额
 启动电流	自举电流	forbidden	zh	误译bootstrap：正确为 自举电流
 吸收剂床	吸气剂床	forbidden	zh	误译getter(吸气剂≠吸收剂)：正确为 吸气剂床
+吸收剂量值	吸收剂量	deprecated	zh	internal:dict-improvements
 吸收辐射量	吸收剂量	forbidden	zh	非规范(吸收剂量≠吸收辐射量)：正确为 吸收剂量
 吸收量	吸收剂量	forbidden	zh	过于笼统(缺"剂量")：正确为 吸收剂量
 吸附剂床	吸气剂床	forbidden	zh	误译getter(吸气剂≠吸附剂)：正确为 吸气剂床
 吸附模式	贴靠模式	forbidden	zh	误译(adsorption≠attached)：正确为 贴靠模式
 吹气	充气	forbidden	zh	误译gas puffing：正确为 充气
+周围当量剂量	周围剂量当量	deprecated	zh	internal:dict-improvements
 周边剂量当量	周围剂量当量	deprecated	zh	非标准(周围≠周边)：应为 周围剂量当量
+品质因素	品质因子	deprecated	zh	internal:dict-improvements
+哈特曼准则数	哈特曼数	deprecated	zh	internal:dict-improvements
 喷射	溅射	forbidden	zh	误译sputtering：正确为 溅射
 喷溅	溅射	forbidden	zh	误译sputtering：正确为 溅射
+器官剂量值	器官剂量	deprecated	zh	internal:dict-improvements
+器官剂量当量	当量剂量	forbidden	zh	internal:dict-improvements
 囊壳内爆	靶丸内爆	deprecated	zh	非标准：应为 靶丸内爆
 回合加加	BOUT++	forbidden	zh	literal translation of BOUT++ token
 回收	再循环	forbidden	zh	误用废品义：等离子体壁义应为 再循环
@@ -462,7 +534,9 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 回旋Bohm标度	旋回Bohm标度	forbidden	zh	误译gyro(旋回≠回旋)：正确为 旋回Bohm标度
 回旋玻姆缩放	旋回Bohm标度	forbidden	zh	误译gyro+scaling(标度≠缩放)：正确为 旋回Bohm标度
 回旋频	回旋频率	deprecated	zh	缺'率'字：应为 回旋频率
+回旋频率值	回旋频率	deprecated	zh	internal:dict-improvements
 回流功率	循环功率	forbidden	zh	误译recirculating：正确为 循环功率
+回路电压	环电压	forbidden	zh	internal:dict-improvements
 回转频率	回旋频率	forbidden	zh	误译cyclotron(回旋≠回转)：正确为 回旋频率
 回馈控制	反馈控制	deprecated	zh	非标准：应为 反馈控制
 固有旋转	本征旋转	deprecated	zh	非标准：应为 本征旋转
@@ -472,6 +546,7 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 场反转构型	场反位形	deprecated	zh	非标准：应为 场反位形
 场反转配置	场反位形	forbidden	zh	误译configuration：正确为 场反位形
 场线追踪	磁力线追踪	forbidden	zh	场线 non-standard; use 磁力线
+均化成本	平准化成本	forbidden	zh	internal:dict-improvements
 均自由程	平均自由程	forbidden	zh	缺'平'字：正确为 平均自由程
 垂直冷却	横向冷却	forbidden	zh	误译perpendicular(非垂直)：正确为 横向冷却
 城垛	切槽结构	forbidden	zh	误译castellation(切槽≠城垛)：正确为 切槽结构
@@ -481,16 +556,23 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 培育区	增殖区	forbidden	zh	误译breeding：正确为 增殖区
 基因代码	GENE	forbidden	zh	wrong lexical translation of code name
 基底压力	本底气压	forbidden	zh	误译base+pressure：正确为 本底气压
+基座宽度值	基座宽度	deprecated	zh	internal:dict-improvements
+基座高度	台基高度	forbidden	zh	AI误译pedestal(台基≠基座)：正确为 台基高度
+基建成本	建造成本	deprecated	zh	internal:dict-improvements
 基础气压	本底气压	forbidden	zh	误译base：正确为 本底气压
+堆积分数	填充率	deprecated	zh	internal:dict-improvements
 塑脆转变	韧脆转变温度	forbidden	zh	误译ductile(韧≠塑)：正确为 韧脆转变温度
 墙	壁	forbidden	zh	AI误译wall(工程壁≠建筑墙)：正确为 壁
 墙壁	壁	forbidden	zh	AI误译wall(工程壁≠建筑墙壁)：正确为 壁
 墙处理	壁调理	forbidden	zh	AI误译wall(壁≠墙)：正确为 壁调理
 增强因子	H因子	deprecated	zh	缺修饰(约束)：应为 H因子/约束增强因子
+增殖余量	氚增殖裕度	deprecated	zh	internal:dict-improvements
 增殖毯	产氚包层	forbidden	zh	误译breeding+blanket：正确为 产氚包层
 增殖者材料	增殖材料	forbidden	zh	AI误译breeder(增殖材料≠增殖者材料)：正确为 增殖材料
+增益因子	能量增益	forbidden	zh	internal:dict-improvements
 增益弯曲	增益曲线	forbidden	zh	误译curve：正确为 增益曲线
 增量f法	δf方法	deprecated	zh	非标准：应为 δf方法
+壁中子负荷	中子壁负荷	deprecated	zh	internal:dict-improvements
 壁处理	壁调理	deprecated	zh	笼统化：应为 壁调理
 壁泵浦	壁抽气	forbidden	zh	误译pumping(光学义泵浦)：正确为 壁抽气
 壁泵送	壁抽气	forbidden	zh	误译pumping：正确为 壁抽气
@@ -511,6 +593,8 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 多普勒增宽	多普勒展宽	forbidden	zh	误译broadening：正确为 多普勒展宽
 多路放电	二次电子倍增放电	forbidden	zh	误译multipactor：正确为 二次电子倍增放电
 多重放电	二次电子倍增放电	forbidden	zh	误译multipactor：正确为 二次电子倍增放电
+大ELM	I型ELM	deprecated	zh	非标准(大ELM≠I型ELM)：应为 I型ELM
+大半径	等离子体大半径	deprecated	zh	internal:dict-improvements
 大地声波模式	测地声模	forbidden	zh	误译geodesic：正确为 测地声模
 大小缩放	尺寸标度	forbidden	zh	误译size+scaling：正确为 尺寸标度
 大螺旋装置	大型螺旋装置	forbidden	zh	缺字'型'：正确为 大型螺旋装置
@@ -518,11 +602,13 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 大量侵蚀	总侵蚀	forbidden	zh	误译gross(总≠大量)：正确为 总侵蚀
 天空闪烁	天空反照	forbidden	zh	误译skyshine：正确为 天空反照
 天线加载	天线负载	forbidden	zh	误译loading：正确为 天线负载
+天线负荷	天线负载	deprecated	zh	internal:dict-improvements
 天线连接	天线耦合	forbidden	zh	误译coupling：正确为 天线耦合
 天线配对	天线耦合	forbidden	zh	误译coupling：正确为 天线耦合
 天际辐射	天空反照	forbidden	zh	误译skyshine：正确为 天空反照
 失去冷却剂事故	失冷事故	deprecated	zh	冗长，规范为"失冷事故"
 失去流量事故	失流事故	deprecated	zh	冗长，规范为"失流事故"
+失控平台	逃逸电子平台	forbidden	zh	dict-improvements
 失控电子	逃逸电子	forbidden	zh	误译runaway：正确为 逃逸电子
 失控电子损伤	逃逸电子损伤	forbidden	zh	误译runaway：正确为 逃逸电子损伤
 夹缩参数	箍缩参数	forbidden	zh	误译pinch：正确为 箍缩参数
@@ -530,15 +616,20 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 奇奇偶性旋转磁场	奇宇称旋转磁场	forbidden	zh	误译parity：正确为 奇宇称旋转磁场
 存储和交付系统	燃料储存与供应系统	forbidden	zh	误译delivery(供应≠交付)：正确为 燃料储存与供应系统
 存储能量	等离子体储能	forbidden	zh	误译：正确为 等离子体储能
+学习因子	学习率	deprecated	zh	internal:dict-improvements
 学习速率	学习率	deprecated	zh	堆经济语境非标准：应为 学习率
 安全分类	安全分级	forbidden	zh	误译classification：此语境应为 安全分级
 安全参数	安全因子	forbidden	zh	误译factor(因子≠参数)：正确为 安全因子
+安全因子分布	安全因子剖面	deprecated	zh	internal:dict-improvements
+安全因子剪切	磁剪切	forbidden	zh	internal:dict-improvements
+安全完整等级	安全完整性等级	deprecated	zh	internal:dict-improvements
 安全案例	安全论证	forbidden	zh	误译case：正确为 安全论证
 安全系数	安全因子	deprecated	zh	非标准：聚变(q)应为 安全因子
 安系统	ANSYS	forbidden	zh	literal transliteration split
 安静H模	静默H模	forbidden	zh	误译quiescent：正确为 静默H模
 完全f方法	全f方法	forbidden	zh	误译full(全≠完全)：正确为 全f方法
 完全非电感运行	完全非感应运行	forbidden	zh	误译inductive：正确为 完全非感应运行
+宏观截面值	宏观截面	deprecated	zh	internal:dict-improvements
 定期维护	计划维护	forbidden	zh	误译scheduled(计划≠定期)：正确为 计划维护
 定标律	约束标度律	deprecated	zh	非标准：应为 标度律/约束标度律
 实际时间控制	实时控制	forbidden	zh	误译real-time：正确为 实时控制
@@ -551,6 +642,7 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 密度峰值化	密度峰化	forbidden	zh	误译peaking：正确为 密度峰化
 密度抽出	密度泵出	deprecated	zh	非标准：应为 密度泵出
 密度调控	密度控制	forbidden	zh	误译control：正确为 密度控制
+密度限	密度极限	deprecated	zh	internal:dict-improvements
 密度限制	密度极限	forbidden	zh	误译limit：聚变应为 密度极限
 密集等离子体焦点	稠密等离子体焦点	forbidden	zh	误译dense(稠密≠密集)：正确为 稠密等离子体焦点
 导波管	波导	deprecated	zh	非标准：应为 波导
@@ -565,8 +657,10 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 少数派加热	少数粒子加热	forbidden	zh	误译minority：正确为 少数粒子加热
 少量加热	少数粒子加热	forbidden	zh	误译minority：正确为 少数粒子加热
 尖峰热流	峰值热流密度	forbidden	zh	误译peak(峰值≠尖峰)：正确为 峰值热流密度
+尘埃库存	粉尘存量	deprecated	zh	internal:dict-improvements
 尺寸缩放	尺寸标度	forbidden	zh	误译scaling(标度≠缩放)：正确为 尺寸标度
 屈服力	屈服强度	forbidden	zh	误译strength(强度≠力)：正确为 屈服强度
+屈服强度值	屈服强度	deprecated	zh	internal:dict-improvements
 屏蔽渗透	屏蔽穿透	forbidden	zh	误译penetration：正确为 屏蔽穿透
 屏蔽评估	屏蔽分析	deprecated	zh	非标准(分析≠评估)：应为 屏蔽分析
 屏蔽迷宫	迷宫通道	deprecated	zh	非标准：应为 迷宫通道
@@ -574,13 +668,16 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 岁差漂移	进动漂移	forbidden	zh	误译precession：正确为 进动漂移
 岛分流器	岛偏滤器	forbidden	zh	误译divertor：正确为 岛偏滤器
 峰值热通量	峰值热流密度	forbidden	zh	误译flux(热流密度≠热通量)：正确为 峰值热流密度
+峰热流	峰值热流密度	deprecated	zh	internal:dict-improvements
 工作剂量	职业剂量	forbidden	zh	误译occupational(职业≠工作)：正确为 职业剂量
 工作流程自动化	工作流自动化	deprecated	zh	冗赘(流≠流程)：应为 工作流自动化
+工作照射	职业照射	deprecated	zh	internal:dict-improvements
 工厂余额	电站辅助系统	forbidden	zh	误译balance：正确为 电站辅助系统
 工厂寿命	电站寿命	forbidden	zh	误译plant：聚变应为 电站寿命
 工厂布局	电站布局	forbidden	zh	误译plant：聚变应为 电站布局
 工厂平衡	电站辅助系统	forbidden	zh	误译balance：正确为 电站辅助系统
 工程收益	工程增益因子	forbidden	zh	误译gain：正确为 工程增益因子
+工程聚变增益	工程Q值	deprecated	zh	internal:dict-improvements
 巨人4	Geant4	forbidden	zh	AI translates French géant as 巨人
 已提交剂量	待积剂量	forbidden	zh	AI误译committed(待积≠已提交)：正确为 待积剂量
 布拉顿循环	布雷顿循环	forbidden	zh	音译错：正确为 布雷顿循环
@@ -590,11 +687,13 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 干涉仪法	干涉仪	deprecated	zh	非标准(干涉法≠干涉仪法)：应为 干涉法
 干涉学	干涉仪	forbidden	zh	误译-metry(法≠学)：正确为 干涉法
 干涉测量术	干涉仪	deprecated	zh	啰嗦(干涉法≠干涉测量术)：应为 干涉法
+平准化费用	平准化成本	deprecated	zh	internal:dict-improvements
 平台区	坪区	forbidden	zh	误译plateau：正确为 坪区
 平台期	平顶段	forbidden	zh	误译flat-top(医学/经济义)：正确为 平顶段
 平均自由行程	平均自由程	deprecated	zh	非标准：应为 平均自由程
 平均自由路径	平均自由程	forbidden	zh	误译path(程≠路径)：正确为 平均自由程
 平均自由道路	平均自由程	forbidden	zh	误译path(程≠道路)：正确为 平均自由程
+平均路径	平均自由程	forbidden	zh	internal:dict-improvements
 平行传输	平行输运	forbidden	zh	误译transport：正确为 平行输运
 平行热通量	平行热流	deprecated	zh	非标准：应为 平行热流
 平行热量流	平行热流	forbidden	zh	误译heat flux：正确为 平行热流
@@ -602,17 +701,22 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 平静H模式	静默H模	forbidden	zh	误译quiescent+mode：正确为 静默H模
 并联冷却	平行冷却	forbidden	zh	误译parallel(非并联)：正确为 平行冷却
 并行冷却	平行冷却	forbidden	zh	误译parallel(非并行)：正确为 平行冷却
+并行加速比	并行效率	forbidden	zh	internal:dict-improvements
+并行加速比值	加速比	deprecated	zh	internal:dict-improvements
 并行热流	平行热流	forbidden	zh	误译parallel(平行≠并行)：正确为 平行热流
 并行输运	平行输运	forbidden	zh	误译parallel(计算机义)：正确为 平行输运
 库仑冲突	库仑碰撞	forbidden	zh	误译collision：正确为 库仑碰撞
 库仑障碍	库仑势垒	forbidden	zh	误译barrier：正确为 库仑势垒
 库伦对数	库仑对数	deprecated	zh	音译变体：应为 库仑对数
 库伦碰撞	库仑碰撞	deprecated	zh	音译变体：应为 库仑碰撞
+应力强度因子值	应力强度因子	deprecated	zh	internal:dict-improvements
 应力强度系数	应力强度因子	deprecated	zh	非标准(因子≠系数)：应为 应力强度因子
 应力敏感性	应变敏感性	forbidden	zh	混淆strain/stress：正确为 应变敏感性
+应力消除	应力松弛	deprecated	zh	非标准(消除≠松弛)：应为 应力松弛
 应力腐蚀断裂	应力腐蚀开裂	forbidden	zh	误译cracking(开裂≠断裂)：正确为 应力腐蚀开裂
 应力腐蚀破裂	应力腐蚀开裂	deprecated	zh	非标准(开裂≠破裂)：应为 应力腐蚀开裂
 应力腐蚀裂纹	应力腐蚀开裂	deprecated	zh	名词形式不当：应为 应力腐蚀开裂
+应力释放	应力松弛	forbidden	zh	误译relaxation(松弛≠释放)：stress release是不同概念
 应力集中因子	应力强度因子	forbidden	zh	与应力集中系数(SCF)混淆：正确为 应力强度因子
 底座	台基	forbidden	zh	误译pedestal：聚变语境正确为 台基
 底座宽度	基座宽度	forbidden	zh	误译pedestal：正确为 基座宽度
@@ -624,6 +728,7 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 延伸率	等离子体拉长比	forbidden	zh	误译：材料学术语，聚变应为 拉长比
 延脆转变	韧脆转变温度	forbidden	zh	误译ductile(韧≠延)：正确为 韧脆转变温度
 建设时间表	建造进度	forbidden	zh	误译schedule：正确为 建造进度
+建造因子	累积因子	forbidden	zh	internal:dict-improvements
 开放蒙特卡罗	OpenMC	forbidden	zh	literal translation of project name
 开裂	裂纹	deprecated	zh	非标准：聚变应为 裂纹
 异常传输	反常输运	forbidden	zh	误译：聚变应为 反常输运
@@ -641,17 +746,26 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 弧	ARC	forbidden	zh	误混同名词(装置名应保留 ARC)
 弧光放电	电弧	deprecated	zh	非标准：应为 电弧
 弯折模	扭曲模	forbidden	zh	误译kink(扭曲≠弯折)：正确为 扭曲模
+弯曲	屈曲	forbidden	zh	AI误译buckling(屈曲≠弯曲)：bending才是弯曲
 弯曲漂移	曲率漂移	forbidden	zh	误译curvature：正确为 曲率漂移
 弹丸注射	弹丸注入	forbidden	zh	误译injection(注入非注射)：正确为 弹丸注入
 弹丸熔蚀	弹丸烧蚀	deprecated	zh	非标准：应为 弹丸烧蚀
 弹力模量	弹性模量	forbidden	zh	误译elastic(弹性≠弹力)：正确为 弹性模量
 弹性模数	弹性模量	forbidden	zh	误译modulus(模量≠模数)：正确为 弹性模量
+弹模	弹性模量	deprecated	zh	internal:dict-improvements
 强X射线	硬X射线	forbidden	zh	误译hard(硬≠强)：正确为 硬X射线
 归纳运行	感应运行	forbidden	zh	误译inductive：正确为 感应运行
+待积剂量值	待积剂量	deprecated	zh	internal:dict-improvements
+待积有效剂量值	待积有效剂量	deprecated	zh	internal:dict-improvements
 待积有效辐射量	待积有效剂量	forbidden	zh	误译dose(剂量≠辐射量)：正确为 待积有效剂量
+循环功率份额	再循环功率份额	deprecated	zh	internal:dict-improvements
+循环功率值	循环功率	deprecated	zh	internal:dict-improvements
+循环用功率	循环功率	forbidden	zh	internal:dict-improvements
 循环系数	再循环系数	deprecated	zh	缺再字：应为 再循环系数
 微撕裂模式	微撕裂模	deprecated	zh	非标准：应为 微撕裂模
 微断裂模	微撕裂模	forbidden	zh	误译tearing：正确为 微撕裂模
+微观截面值	微观截面	deprecated	zh	internal:dict-improvements
+德拜半径	德拜长度	forbidden	zh	internal:dict-improvements
 德拜壳	德拜鞘	forbidden	zh	误译sheath(鞘≠壳)：正确为 德拜鞘
 德拜套	德拜鞘	forbidden	zh	误译sheath(鞘≠套)：正确为 德拜鞘
 德拜屏蔽层	德拜鞘	forbidden	zh	误译sheath(鞘≠屏蔽层)：正确为 德拜鞘
@@ -664,6 +778,8 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 快速波	快波	deprecated	zh	非标准：应为 快波
 快速点火	快点火	deprecated	zh	非标准：应为 快点火
 总体剂量	集体剂量	forbidden	zh	误译collective(集体≠总体)：正确为 集体剂量
+总发电功率	总电功率	deprecated	zh	internal:dict-improvements
+总腐蚀	总侵蚀	forbidden	zh	internal:dict-improvements
 恒星器	仿星器	forbidden	zh	误译stellar：正确为 仿星器
 恒星器优化	仿星器优化	forbidden	zh	误译stellarator：正确为 仿星器优化
 惯性封闭聚变	惯性约束聚变	forbidden	zh	误译confinement：正确为 惯性约束聚变
@@ -693,6 +809,8 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 技术准备水平	技术就绪度	forbidden	zh	误译：正确为 技术就绪度
 技术就绪水平	技术就绪度	forbidden	zh	误译level：正确为 技术就绪度
 技术成熟度	技术就绪度	deprecated	zh	非标准变体：应为 技术就绪度
+技术成熟等级	技术就绪度	forbidden	zh	internal:dict-improvements
+抗拉极限	极限抗拉强度	deprecated	zh	internal:dict-improvements
 抗磁偏移	抗磁漂移	forbidden	zh	误译drift：正确为 抗磁漂移
 折流板	挡板	deprecated	zh	化工义：聚变应为 挡板
 护甲瓦片	装甲瓦	forbidden	zh	误译armor+tile：正确为 装甲瓦
@@ -704,6 +822,8 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 拉莫尔回旋半径	拉莫尔半径	deprecated	zh	啰嗦：应为 拉莫尔半径
 拉莫频率	回旋频率	forbidden	zh	误音译Larmor(拉莫尔≠拉莫)：正确为 拉莫尔频率
 拔靴电流	自举电流	forbidden	zh	误译bootstrap：正确为 自举电流
+拟合度	拟合优度	deprecated	zh	internal:dict-improvements
+拟合质量	拟合优度	deprecated	zh	internal:dict-improvements
 拟对称	准对称	deprecated	zh	非标准：应为 准对称
 拟对称仿星器	准对称仿星器	forbidden	zh	拟对称 non-standard; use 准对称
 拟螺旋对称	准螺旋对称	deprecated	zh	非标准：应为 准螺旋对称
@@ -711,15 +831,19 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 捕获电子模	俘获电子模	deprecated	zh	用字非标准：应为 俘获电子模
 捕获电子模式	俘获电子模	deprecated	zh	非标准：应为 俘获电子模
 捕集器床	吸气剂床	forbidden	zh	误译getter(吸气剂≠捕集器)：正确为 吸气剂床
+换热率	换热系数	forbidden	zh	internal:dict-improvements
 排放处理系统	托卡马克排气处理系统	forbidden	zh	误译exhaust(排气≠排放)：正确为 托卡马克排气处理系统
 排热	功率排出	deprecated	zh	过度缩略：应为 功率排出
 掠食者-猎物振荡	捕食-被捕食振荡	forbidden	zh	误译：正确为 捕食-被捕食振荡
+接头阻抗	接头电阻	forbidden	zh	internal:dict-improvements
 接触模式	贴靠模式	forbidden	zh	误译attached：正确为 贴靠模式
 接触辐射率	接触剂量率	forbidden	zh	误译dose rate：正确为 接触剂量率
 提示再沉积	即时再沉积	forbidden	zh	AI误译prompt(即时≠提示)：正确为 即时再沉积
 摩擦力量	摩擦力	forbidden	zh	冗赘force(力≠力量)：正确为 摩擦力
+摩阻系数	摩擦系数	deprecated	zh	internal:dict-improvements
 撕裂模式	撕裂模	deprecated	zh	非标准，应为"撕裂模"
 撞击点	打击点	deprecated	zh	非标准变体：应为 打击点
+操作寿命	运行寿命	forbidden	zh	AI误译operational(运行≠操作)：正确为 运行寿命
 擦除层	刮削层	forbidden	zh	误译：正确为 刮削层
 收敛率	收敛比	forbidden	zh	混淆ratio与rate：正确为 收敛比
 收缩参数	箍缩参数	forbidden	zh	误译pinch(箍缩≠收缩)：正确为 箍缩参数
@@ -729,6 +853,7 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 放射损伤	辐照损伤	forbidden	zh	误译radiation(辐照≠放射)：正确为 辐照损伤
 放射防护	辐射防护	deprecated	zh	非标准(辐射≠放射)：应为 辐射防护
 放气	出气	deprecated	zh	非标准：应为 出气
+故障间隔	平均故障间隔时间	deprecated	zh	internal:dict-improvements
 散热器	热沉	forbidden	zh	误译heat sink：IT义，聚变应为 热沉
 散热片	热沉	forbidden	zh	误译heat sink：IT义，聚变应为 热沉
 数字双胞胎	数字孪生	forbidden	zh	误译twin：正确为 数字孪生
@@ -738,6 +863,7 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 斑点传输	团块输运	forbidden	zh	误译blob+transport：正确为 团块输运
 断裂强度	断裂韧性	forbidden	zh	误译toughness(韧性≠强度)：正确为 断裂韧性
 断裂韧度	断裂韧性	deprecated	zh	非推荐：应为 断裂韧性
+断裂韧性值	断裂韧性	deprecated	zh	internal:dict-improvements
 斯塔克增宽	斯塔克展宽	forbidden	zh	误译broadening：正确为 斯塔克展宽
 斯帕克	SPARC	forbidden	zh	误音译(装置名应保留 SPARC)
 斯皮泽电阻率	斯皮策电阻率	deprecated	zh	音译变体：应为 斯皮策电阻率
@@ -766,10 +892,13 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 旋转逆转	旋转反转	deprecated	zh	非标准：应为 旋转反转
 旋转频率	回旋频率	forbidden	zh	误译cyclotron(回旋≠旋转)：正确为 回旋频率
 旋进漂移	进动漂移	deprecated	zh	非标准：应为 进动漂移
+无ELM区域	无ELM运行模式	forbidden	zh	dict-improvements
 无中子融合	无中子聚变	forbidden	zh	误用日语'融合'：正确为 无中子聚变
 无外力平衡	无力平衡	forbidden	zh	误译force-free：正确为 无力平衡
 星器	仿星器	forbidden	zh	误译：正确为 仿星器
 星辰器	仿星器	forbidden	zh	误译stellarator：正确为 仿星器
+显微硬度	硬度	forbidden	zh	internal:dict-improvements
+普朗特准则数	普朗特数	deprecated	zh	internal:dict-improvements
 普费尔施-施吕特区	Pfirsch-Schlüter区	forbidden	zh	误音译人名：正确保留 Pfirsch-Schlüter区
 普费尔施-施吕特电流	Pfirsch-Schlüter电流	forbidden	zh	误音译人名：正确保留 Pfirsch-Schlüter电流
 普通氢	氕	forbidden	zh	误译protium：正确为 氕
@@ -783,11 +912,15 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 最后安全分析报告	最终安全分析报告	forbidden	zh	误译final：正确为 最终安全分析报告
 最大可能事故	最大可信事故	forbidden	zh	误译credible：正确为 最大可信事故
 最终拉力强度	极限抗拉强度	forbidden	zh	AI误译ultimate+tensile：正确为 极限抗拉强度
+有效剂量值	有效剂量	deprecated	zh	internal:dict-improvements
+有效增殖比	有效增殖因数	forbidden	zh	internal:dict-improvements
 有效的剂量	有效剂量	forbidden	zh	语法错：正确为 有效剂量
 有限元素方法	有限元方法	forbidden	zh	误译element(元≠元素)：正确为 有限元方法
 有限容积法	有限体积法	deprecated	zh	非标准(体积≠容积)：应为 有限体积法
 朗金循环	朗肯循环	forbidden	zh	音译错：正确为 朗肯循环
+本底压力	本底气压	deprecated	zh	internal:dict-improvements
 机器学习中断预测	机器学习破裂预测	forbidden	zh	误译disruption：正确为 机器学习破裂预测
+机组寿命	电站寿命	deprecated	zh	internal:dict-improvements
 杂质传输	杂质输运	deprecated	zh	非标准：应为 杂质输运
 杂质光谱学	杂质光谱	deprecated	zh	非标准：应为 杂质光谱
 杂质光谱术	杂质光谱	deprecated	zh	非标准(光谱学≠光谱术)：应为 杂质光谱学
@@ -797,6 +930,7 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 杂质播撒	杂质注入	forbidden	zh	误译seeding：正确为 杂质注入
 杂质播种	杂质注入	forbidden	zh	误译seeding：正确为 杂质注入
 杂质来源	杂质源	forbidden	zh	误译source(源≠来源)：正确为 杂质源
+杂质流量	杂质流入	deprecated	zh	internal:dict-improvements
 杂质涌入	杂质流入	forbidden	zh	误译influx：正确为 杂质流入
 杂质源头	杂质源	forbidden	zh	口语化：正确为 杂质源
 杂质滤除	杂质屏蔽	forbidden	zh	误译screening(屏蔽≠滤除)：正确为 杂质屏蔽
@@ -811,6 +945,7 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 束目标聚变	束靶聚变	forbidden	zh	误译target：正确为 束靶聚变
 束辐射光谱	束发射光谱	forbidden	zh	误译emission：正确为 束发射光谱
 杨模量	杨氏模量	forbidden	zh	缺"氏"字：正确为 杨氏模量
+杨氏模量值	杨氏模量	deprecated	zh	internal:dict-improvements
 极化磁场	极向磁场	forbidden	zh	误译poloidal：正确为 极向磁场
 极向贝塔	极向比压	forbidden	zh	误音译beta：正确为 极向比压
 极端拉伸强度	极限抗拉强度	forbidden	zh	AI误译ultimate(极限≠极端)：正确为 极限抗拉强度
@@ -821,14 +956,17 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 标度率	约束标度律	forbidden	zh	误译law(律≠率)：正确为 标度律
 核加热	核热	deprecated	zh	啰嗦：应为 核热
 核反应函数	核响应函数	forbidden	zh	误译response≠reaction：正确为 核响应函数
+核发热	核热	deprecated	zh	internal:dict-improvements
 核变换	嬗变	forbidden	zh	误译transmutation：正确为 嬗变
 核废料	放射性废物	deprecated	zh	应使用"放射性废物"或具体分类
 核数据图书馆	核数据库	forbidden	zh	误译library：正确为 核数据库
 核裂变产率	裂变产额	forbidden	zh	误译yield(产额≠产率)：正确为 裂变产额
 核转变	嬗变	forbidden	zh	非标准：正确为 嬗变
 格拉德-沙弗拉诺夫方程	Grad-Shafranov方程	forbidden	zh	误音译人名：正确保留 Grad-Shafranov方程
+格拉晓夫准则数	格拉晓夫数	deprecated	zh	internal:dict-improvements
 格林沃尔德分数	Greenwald份额	forbidden	zh	误音译人名：正确保留 Greenwald份额
 格林沃尔德限值	格林沃尔德密度	deprecated	zh	混淆density与limit：应为 格林沃尔德密度
+格林沃德极限	格林沃尔德密度	deprecated	zh	internal:dict-improvements
 桶系统	转运容器	forbidden	zh	误译cask：正确为 转运容器
 梯度B偏移	∇B漂移	forbidden	zh	误译drift：正确为 梯度B漂移
 植入射程	注入射程	forbidden	zh	误译implantation(注入≠植入)：正确为 注入射程
@@ -843,11 +981,13 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 欧洲融合组织	欧洲聚变能组织	forbidden	zh	误译fusion：正确为 欧洲聚变能组织
 欧洲铁素体钢	EUROFER	forbidden	zh	误展开缩写：正确为 EUROFER钢
 欧米伽	OMEGA	forbidden	zh	wrong transliteration of facility name
+正方度	方形度	deprecated	zh	非标准(正方度≠方形度)：应为 方形度
 步骤	STEP	forbidden	zh	误混同名词(装置名应保留 STEP)
 残余压力	残余应力	forbidden	zh	误译stress(应力≠压力)：正确为 残余应力
 残余热	衰变热	forbidden	zh	非标准：正确为 余热/衰变热
 残留应力	残余应力	deprecated	zh	非标准(残余≠残留)：应为 残余应力
 每原子位移	离位损伤	forbidden	zh	直译acronym：正确为 离位损伤(dpa)
+比释放动能	比释动能	forbidden	zh	internal:dict-improvements
 毛侵蚀	总侵蚀	forbidden	zh	误译gross(总≠毛)：正确为 总侵蚀
 毛电功率	总电功率	forbidden	zh	误译gross：正确为 总电功率
 毯子	包层	forbidden	zh	误译blanket：正确为 包层
@@ -874,6 +1014,8 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 氚会计区域	氚衡算区域	forbidden	zh	AI误译accounting(衡算≠会计)：正确为 氚衡算区域
 氚保存	氚储存	forbidden	zh	误译storage(储存≠保存)：正确为 氚储存
 氚保留	氚滞留	forbidden	zh	误译retention：正确为 氚滞留
+氚保留量	氚滞留	deprecated	zh	internal:dict-improvements
+氚停留时间值	氚处理时间	forbidden	zh	internal:dict-improvements
 氚加工	氚处理	forbidden	zh	误译processing(处理≠加工)：正确为 氚处理
 氚厂	氚工厂	deprecated	zh	缩略非标准：应为 氚工厂
 氚去除	氚滞留清除	forbidden	zh	误译：缺'滞留'，正确为 氚滞留清除
@@ -882,12 +1024,14 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 氚培育比	氚增殖比	forbidden	zh	误译breeding：正确为 氚增殖比
 氚增殖余量	氚增殖裕度	deprecated	zh	非标准(裕度≠余量)：应为 氚增殖裕度
 氚增殖边际	氚增殖裕度	forbidden	zh	AI误译margin(裕度≠边际)：正确为 氚增殖裕度
+氚处理周期	氚处理时间	deprecated	zh	internal:dict-improvements
 氚复原	氚回收	forbidden	zh	误译recovery(回收≠复原)：正确为 氚回收
 氚大楼	氚厂房	forbidden	zh	AI误译building(厂房≠大楼)：正确为 氚厂房
 氚存储	氚储存	deprecated	zh	非标准：应为 氚储存
 氚工艺	氚处理	forbidden	zh	误译processing(处理≠工艺)：正确为 氚处理
 氚库存	氚存量	forbidden	zh	误译inventory：聚变应为 氚存量
 氚建筑	氚厂房	forbidden	zh	AI误译building(厂房≠建筑)：正确为 氚厂房
+氚总量	氚存量	deprecated	zh	internal:dict-improvements
 氚恢复	氚回收	forbidden	zh	误译recovery(回收≠恢复)：正确为 氚回收
 氚承运体	氚载体	forbidden	zh	AI误译carrier(载体≠承运体)：正确为 氚载体
 氚排放	氚释放	deprecated	zh	非标准(释放≠排放)：应为 氚释放
@@ -900,6 +1044,7 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 氚清单	氚存量	forbidden	zh	inventory(清单义)误用：正确为 氚存量
 氚渗透屏障	氚渗透阻挡层	deprecated	zh	非标准：应为 氚渗透阻挡层
 氚渗透阻碍层	氚渗透阻挡层	forbidden	zh	用字错：正确为 氚渗透阻挡层
+氚生产率值	产氚速率	deprecated	zh	internal:dict-improvements
 氚盘存	氚存量	forbidden	zh	误译inventory：正确为 氚存量
 氚种植	氚工厂	forbidden	zh	AI误译plant(工厂≠种植)：正确为 氚工厂
 氚繁殖比	氚增殖比	forbidden	zh	误译breeding：正确为 氚增殖比
@@ -964,6 +1109,8 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 沉淀	沉积	forbidden	zh	误混化学义：正确为 沉积
 沙弗拉诺夫偏移	沙弗拉诺夫位移	forbidden	zh	误译shift：正确为 沙弗拉诺夫位移
 沾湿面积	湿润面积	forbidden	zh	误译wetted(湿润≠沾湿)：正确为 湿润面积
+泊松常数	泊松比	forbidden	zh	internal:dict-improvements
+泊松系数	泊松比	deprecated	zh	internal:dict-improvements
 法拉弟旋转	法拉第旋转	forbidden	zh	误音译Faraday(法拉第≠法拉弟)：正确为 法拉第旋转
 法拉第偏转	法拉第旋转	forbidden	zh	误译rotation(旋转≠偏转)：正确为 法拉第旋转
 法拉第回转	法拉第旋转	forbidden	zh	误译rotation(旋转≠回转)：正确为 法拉第旋转
@@ -981,12 +1128,16 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 注入深度	注入射程	forbidden	zh	误译range(射程≠深度)：正确为 注入射程
 注入范围	注入射程	forbidden	zh	误译range(射程≠范围)：正确为 注入射程
 注气	充气	deprecated	zh	非标准变体：应为 充气
+注量值	注量	deprecated	zh	internal:dict-improvements
 注量率	注量	forbidden	zh	注量率=fluence rate(不同物理量)：注量=时间积分
 泰勒弛豫	Taylor弛豫	forbidden	zh	误音译Taylor：正确保留 Taylor弛豫
 泰勒态	Taylor态	forbidden	zh	误音译Taylor：正确保留 Taylor态
 泰勒放松	Taylor弛豫	forbidden	zh	误音译+误译relaxation：正确保留 Taylor弛豫
 泰勒状态	Taylor态	forbidden	zh	误音译Taylor：正确保留 Taylor态
+洁净因子	去污因子	forbidden	zh	internal:dict-improvements
+洛仑兹力	洛伦兹力	deprecated	zh	非标准(仑≠伦)：应为 洛伦兹力
 流加速腐蚀	流动加速腐蚀	deprecated	zh	缺"动"字：应为 流动加速腐蚀
+流量	质量流量	forbidden	zh	internal:dict-improvements
 流量丧失事故	失流事故	deprecated	zh	啰嗦：应为 失流事故
 流量加速腐蚀	流动加速腐蚀	forbidden	zh	误译flow(流动≠流量)：正确为 流动加速腐蚀
 流驱动模	电流驱动模	forbidden	zh	误缩写：正确为 电流驱动模
@@ -1003,6 +1154,7 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 涡电流	涡流	deprecated	zh	非标准：应为 涡流
 涡轮泵	涡轮分子泵	deprecated	zh	缺"分子"：应为 涡轮分子泵
 润湿面积	湿润面积	deprecated	zh	语序：应为 湿润面积
+润湿面积值	湿润面积	deprecated	zh	internal:dict-improvements
 液体金属偏滤器	液态金属偏滤器	forbidden	zh	误译liquid：正确为 液态金属偏滤器
 液体金属冷却剂	液态金属冷却剂	forbidden	zh	误译liquid：正确为 液态金属冷却剂
 液态金属分流器	液态金属偏滤器	forbidden	zh	误译divertor(偏滤器≠分流器)：正确为 液态金属偏滤器
@@ -1023,6 +1175,7 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 清点	计数统计	forbidden	zh	误译tallying：正确为 计数统计
 清除指数	清洁解控指数	forbidden	zh	误译clearance：正确为 清洁解控指数
 渗入	渗透	deprecated	zh	非标准：应为 渗透
+渗透降低系数	渗透降低因子	deprecated	zh	internal:dict-improvements
 温度应力	热应力	deprecated	zh	非标准(温度应力≠热应力)：应为 热应力
 温度底座	温度基座	forbidden	zh	误译pedestal：正确为 温度基座
 温度扩散	热扩散	forbidden	zh	误译thermo(热≠温度)：正确为 热扩散
@@ -1034,6 +1187,7 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 湍流扩散系数	湍流扩散输运	deprecated	zh	非标准：应为 湍流扩散输运
 湍流蔓延	湍流扩展	forbidden	zh	误译spreading：正确为 湍流扩展
 湍流运输	湍流输运	forbidden	zh	误译transport：正确为 湍流输运
+溅射产率	溅射产额	deprecated	zh	internal:dict-improvements
 溅射收率	溅射产额	forbidden	zh	误译yield(产额≠收率)：正确为 溅射产额
 溅射率	溅射产额	forbidden	zh	率暗示时间量纲：正确为 溅射产额
 溅射系数	溅射产额	deprecated	zh	非标准：应为 溅射产额
@@ -1043,6 +1197,7 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 漂流波	漂移波	forbidden	zh	误译drift：正确为 漂移波
 漂移动力学	漂移动理学	forbidden	zh	误译kinetics：正确为 漂移动理学
 漂移运动学	漂移动理学	forbidden	zh	误译kinetics：正确为 漂移动理学
+漏率值	真空漏率	deprecated	zh	internal:dict-improvements
 演示堆	示范堆	forbidden	zh	误译demo：正确为 示范堆
 漩涡电流	涡流	forbidden	zh	误译eddy：正确为 涡流
 漩涡管	旋流管	forbidden	zh	误译swirl：正确为 旋流管
@@ -1062,9 +1217,12 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 灰尘	粉尘	forbidden	zh	误用生活义：正确为 粉尘
 灰尘产生	粉尘产生	forbidden	zh	误译dust：正确为 粉尘产生
 灰尘传输	粉尘输运	forbidden	zh	误译dust+transport：正确为 粉尘输运
+灰尘存量	粉尘存量	deprecated	zh	internal:dict-improvements
 灰尘库存	粉尘存量	forbidden	zh	误译dust+inventory：正确为 粉尘存量
 灰尘运输	粉尘输运	forbidden	zh	误译dust+transport：正确为 粉尘输运
+点火点温度	点火温度	deprecated	zh	internal:dict-improvements
 点燃	点火	forbidden	zh	误译ignition(聚变义)：正确为 点火
+点燃温度	点火温度	forbidden	zh	internal:dict-improvements
 烘烤	烘烤除气	deprecated	zh	缺修饰：应为 烘烤除气
 热交换器	换热器	deprecated	zh	非标准：工程应为 换热器
 热休克	热冲击	forbidden	zh	误用医学义：正确为 热冲击
@@ -1074,22 +1232,30 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 热力学机械分析	热机械分析	forbidden	zh	误译thermo(热≠热力学)：正确为 热机械分析
 热力学水力学	热工水力	forbidden	zh	误译：正确为 热工水力
 热力效率	热效率	forbidden	zh	误译thermal(热≠热力)：正确为 热效率
+热功率值	热功率	deprecated	zh	internal:dict-improvements
+热化时间值	滑脱时间	deprecated	zh	internal:dict-improvements
 热单元	热室	forbidden	zh	误译cell：正确为 热室
 热压力	热应力	forbidden	zh	误译stress(应力≠压力)：正确为 热应力
+热导率值	热导率	deprecated	zh	internal:dict-improvements
 热屏障涂层	热障涂层	forbidden	zh	误译barrier：正确为 热障涂层
 热屏障涂料	热障涂层	forbidden	zh	误译barrier+coating(热障涂层≠热屏障涂料)：正确为 热障涂层
+热应力值	热应力	deprecated	zh	internal:dict-improvements
 热张力	热应力	forbidden	zh	误译stress(应力≠张力)：正确为 热应力
 热弥散	热扩散	forbidden	zh	误译diffusion(扩散≠弥散)：正确为 热扩散
 热循环吸收过程	热循环吸收工艺	forbidden	zh	误译process：正确为 热循环吸收工艺
 热循环疲劳	热疲劳	deprecated	zh	非标准(thermal cycling fatigue≠thermal fatigue)：应为 热疲劳
 热扩展系数	热膨胀系数	forbidden	zh	AI误译expansion(膨胀≠扩展)：正确为 热膨胀系数
 热扩散效应	热扩散	deprecated	zh	非标准：应为 热扩散
+热效率值	热效率	deprecated	zh	internal:dict-improvements
 热核反应	热核聚变	deprecated	zh	非标准：应为 热核聚变
 热核融合	热核聚变	forbidden	zh	误用日语'融合'：正确为 热核聚变
 热水力分析	热工水力分析	deprecated	zh	非标准(缺"工"字)：应为 热工水力分析
 热水力学	热工水力	deprecated	zh	非标准：应为 热工水力
 热水力学分析	热工水力分析	deprecated	zh	非标准(热工水力≠热水力学)：应为 热工水力分析
+热流	热流密度	deprecated	zh	internal:dict-improvements
+热流衰减长度	SOL宽度	deprecated	zh	internal:dict-improvements
 热流量	热流密度	deprecated	zh	非标准：应为 热流密度
+热流限	热流密度限值	deprecated	zh	internal:dict-improvements
 热液压分析	热工水力分析	forbidden	zh	AI误译hydraulic(水力≠液压)：正确为 热工水力分析
 热液压学	热工水力	forbidden	zh	误译hydraulics：正确为 热工水力
 热淬火	热猝灭	forbidden	zh	金属热处理义：正确为 热猝灭
@@ -1097,6 +1263,7 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 热点点火	中心热斑点火	forbidden	zh	误译hot spot：ICF应为 中心热斑点火
 热狗不稳定性	腊肠不稳定性	forbidden	zh	误译sausage：正确为 腊肠不稳定性
 热电力	热功率	forbidden	zh	误译power(功率≠电力)：正确为 热功率
+热电转换效率	电站效率	forbidden	zh	internal:dict-improvements
 热疲劳损伤	热疲劳	deprecated	zh	啰嗦：应为 热疲劳
 热疲劳破坏	热疲劳	deprecated	zh	含结果义：应为 热疲劳
 热离子模	热离子模式	deprecated	zh	缺字'式'：应为 热离子模式
@@ -1108,7 +1275,9 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 热解吸	热脱附	forbidden	zh	误译desorption(脱附≠解吸)：正确为 热脱附
 热解附	热脱附	deprecated	zh	非标准：应为 热脱附
 热负载	热负荷	forbidden	zh	误译load：正确为 热负荷
+热载	热负荷	deprecated	zh	internal:dict-improvements
 热通量	热流密度	deprecated	zh	非标准变体：聚变应为 热流密度
+热通量限	热流密度限值	deprecated	zh	internal:dict-improvements
 热释放	热脱附	forbidden	zh	误译desorption(脱附≠释放)：正确为 热脱附
 热量功率	热功率	forbidden	zh	冗赘：正确为 热功率
 热量猝灭	热猝灭	forbidden	zh	AI冗余加词：正确为 热猝灭
@@ -1118,6 +1287,7 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 热震	热冲击	deprecated	zh	非标准：应为 热冲击
 热骤冷	热猝灭	forbidden	zh	误译quench：正确为 热猝灭
 焊接性	可焊性	deprecated	zh	非标准(可焊性≠焊接性)：应为 可焊性
+焊接性能	可焊性	deprecated	zh	internal:dict-improvements
 焊接接头	钎焊接头	deprecated	zh	笼统化：应为 钎焊接头
 焊接能力	可焊性	forbidden	zh	误译-ability(可焊性≠焊接能力)：正确为 可焊性
 焚烧控制	燃烧控制	forbidden	zh	误译burn：聚变应为 燃烧控制
@@ -1134,21 +1304,26 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 燃料回路	燃料循环	forbidden	zh	误译cycle(循环≠回路)：正确为 燃料循环
 燃料弹丸	燃料芯块	forbidden	zh	误混聚变弹丸义：正确为 燃料芯块
 燃料循环利用	燃料再循环	forbidden	zh	误译recycling：正确为 燃料再循环
+燃料留存	燃料滞留	deprecated	zh	internal:dict-improvements
 燃料胶囊	靶丸	forbidden	zh	误译capsule：正确为 靶丸
 燃料舱	靶丸	forbidden	zh	误译capsule：正确为 靶丸
 燃料颗粒	燃料芯块	forbidden	zh	误译pellet(芯块≠颗粒)：正确为 燃料芯块
 燃油循环	燃料循环	forbidden	zh	误译fuel(燃料≠燃油)：正确为 燃料循环
 燃点	点火温度	forbidden	zh	误译(化学义)：聚变应为 点火温度
 燃烧分数	燃烧份额	deprecated	zh	非标准：应为 燃烧份额
+燃烧度	燃耗深度	forbidden	zh	internal:dict-improvements
+燃耗分数	燃耗份额	deprecated	zh	internal:dict-improvements
 燃耗率	燃烧份额	forbidden	zh	混淆burn fraction与burnup：正确为 燃烧份额
 爆聚速度	内爆速度	deprecated	zh	非标准：应为 内爆速度
 物理喷溅	physical sputtering	forbidden	zh	误译sputtering：正确为 物理溅射
 物理溅射率	physical sputtering	forbidden	zh	率暗示时间量纲：正确为 物理溅射(产额)
 物理飞溅	physical sputtering	forbidden	zh	误译sputtering：正确为 物理溅射
+物理驱动神经网络	物理信息神经网络	deprecated	zh	非标准(driven≠informed)：应为 物理信息神经网络
 物质迁移	材料迁移	forbidden	zh	误译material(材料≠物质)：正确为 材料迁移
 特兰斯普	TRANSP	forbidden	zh	AI transliteration of code token
 特洛扬极限	Troyon极限	forbidden	zh	音译错：正确为 特罗雍极限
 特罗伊极限	Troyon极限	forbidden	zh	音译错：正确为 特罗雍极限
+环向β	极向比压	forbidden	zh	internal:dict-improvements
 环境剂量当量	周围剂量当量	forbidden	zh	误译ambient(周围≠环境)：正确为 周围剂量当量
 环带流	带状流	deprecated	zh	非标准：应为 带状流
 环形场波纹	环向场纹波	forbidden	zh	双误(环形≠环向、波纹≠纹波)：正确为 环向场纹波
@@ -1167,8 +1342,10 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 理想磁流体力学稳定性	理想MHD稳定性	deprecated	zh	冗余：应为 理想MHD稳定性
 理想磁流体稳定度	理想MHD稳定性	forbidden	zh	误译stability(稳定性≠稳定度)：正确为 理想MHD稳定性
 瑞克西	REXIE	forbidden	zh	AI transliteration of code-like device token
+瑞利准则数	瑞利数	deprecated	zh	internal:dict-improvements
 瑞利泰勒不稳定性	瑞利-泰勒不稳定性	deprecated	zh	缺连字符：应为 瑞利-泰勒不稳定性
 瓦尔收缩	瓦尔箍缩	forbidden	zh	误译pinch：正确为 瓦尔箍缩
+生命终结	寿命终点	forbidden	zh	AI误译life(寿命≠生命)：正确为 寿命终点
 生物屏障	生物屏蔽	forbidden	zh	误译shield：正确为 生物屏蔽
 生物防护	生物屏蔽体	forbidden	zh	误译shielding(屏蔽≠防护)：正确为 生物屏蔽体
 生物防护罩	生物屏蔽	forbidden	zh	误译shield：正确为 生物屏蔽
@@ -1178,11 +1355,13 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 电力密度	功率密度	forbidden	zh	误译power(功率≠电力)：正确为 功率密度
 电力平衡	功率平衡	forbidden	zh	误译power：聚变应为 功率平衡
 电力转换系统	能量转换系统	forbidden	zh	电力 wrong domain term
+电压秒	伏秒	forbidden	zh	dict-improvements
 电子伯恩斯坦波动	电子伯恩斯坦波	forbidden	zh	误加'动'：正确为 电子伯恩斯坦波
 电子体温度	电子温度	forbidden	zh	误加'体'：正确为 电子温度
 电子回旋加热法	电子回旋共振加热	deprecated	zh	标准为"电子回旋共振加热"，"法"字多余
 电子回旋发射	电子回旋辐射	forbidden	zh	误译emission：正确为 电子回旋辐射
 电子射线焊接	电子束焊接	forbidden	zh	误译beam(束≠射线)：正确为 电子束焊接
+电子温度值	电子温度	deprecated	zh	internal:dict-improvements
 电子温度梯度模式	电子温度梯度模	deprecated	zh	非标准：应为 电子温度梯度模
 电子热梯度模	电子温度梯度模	forbidden	zh	误译temperature：正确为 电子温度梯度模
 电子环回共振加热	电子回旋共振加热	forbidden	zh	误译cyclotron：正确为 电子回旋共振加热
@@ -1211,14 +1390,17 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 电荷交换重组光谱	电荷交换复合光谱	forbidden	zh	误译recombination：正确为 电荷交换复合光谱
 电荷转移复合光谱	电荷交换复合光谱	forbidden	zh	误译exchange：正确为 电荷交换复合光谱
 电费	电力成本	forbidden	zh	误译(过度简化)：正确为 电力成本
+电费成本	电力成本	forbidden	zh	internal:dict-improvements
 电阻不稳定	电阻不稳定性	deprecated	zh	缺'性'字：应为 电阻不稳定性
 电阻加热	欧姆加热	deprecated	zh	非标准：聚变应为 欧姆加热
 电阻墙模	电阻壁模	forbidden	zh	误译wall：正确为 电阻壁模
 电阻壁模式	电阻壁模	deprecated	zh	非标准：应为 电阻壁模
 电阻性MHD	电阻磁流体力学	deprecated	zh	非标准：应为 电阻磁流体力学
 电阻性不稳定性	电阻不稳定性	deprecated	zh	非标准：应为 电阻不稳定性
+电阻热	焦耳热	deprecated	zh	非标准(电阻热≠焦耳热)：应为 焦耳热
 疲劳周期	疲劳寿命	forbidden	zh	误译life：正确为 疲劳寿命
 疲劳度分析	疲劳分析	forbidden	zh	误译(疲劳分析≠疲劳度分析)：正确为 疲劳分析
+疲劳循环寿命	疲劳寿命	deprecated	zh	internal:dict-improvements
 疲劳性分析	疲劳分析	forbidden	zh	误译(疲劳分析≠疲劳性分析)：正确为 疲劳分析
 疲劳生命	疲劳寿命	forbidden	zh	误译life：正确为 疲劳寿命
 的黎波里	TRIPOLI	forbidden	zh	AI translates code name as Tripoli city
@@ -1229,6 +1411,8 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 直接能量变换	直接能量转换	deprecated	zh	非标准：应为 直接能量转换
 直接驱动器	直接驱动	forbidden	zh	误译drive：正确为 直接驱动
 相位对比成像	相衬成像	forbidden	zh	误译contrast：正确为 相衬成像
+相对偏差	相对误差	forbidden	zh	internal:dict-improvements
+相对误差值	相对误差	deprecated	zh	internal:dict-improvements
 真空丧失事故	失真空事故	forbidden	zh	non-standard phrasing
 真空容器	真空室	deprecated	zh	非标准变体：应为 真空室
 真空泵送	真空抽气	forbidden	zh	误译pumping：正确为 真空抽气
@@ -1239,6 +1423,7 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 破坏侵蚀	破裂侵蚀	forbidden	zh	误译disruption：正确为 破裂侵蚀
 破坏性侵蚀	破裂侵蚀	forbidden	zh	误译disruption(破裂≠破坏性)：正确为 破裂侵蚀
 破坏预测	破裂预测	forbidden	zh	误译disruption：正确为 破裂预测
+破碎载荷	压碎载荷	deprecated	zh	非标准(破碎≠压碎)：应为 压碎载荷
 破裂缓冲	破裂缓解	forbidden	zh	误译mitigation：正确为 破裂缓解
 破裂韧性	断裂韧性	forbidden	zh	误译fracture(断裂≠破裂)：正确为 断裂韧性
 硅化作用	硅化	deprecated	zh	非标准：应为 硅化
@@ -1246,6 +1431,7 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 硬X光	硬X射线	forbidden	zh	误译X-ray(X射线≠X光)：正确为 硬X射线
 硬X光线	硬X射线	forbidden	zh	误译X-ray：正确为 硬X射线
 硬X线	硬X射线	deprecated	zh	省略'射'字：应为 硬X射线
+硬度值	硬度	deprecated	zh	internal:dict-improvements
 硼化处理	硼化	deprecated	zh	啰嗦：应为 硼化
 硼处理	硼化	deprecated	zh	笼统化：应为 硼化
 硼涂覆	硼化	deprecated	zh	非标准：应为 硼化
@@ -1256,10 +1442,12 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 碰撞度	碰撞率	forbidden	zh	误译-ality：正确为 碰撞率
 碰撞性	碰撞率	forbidden	zh	误译-ality：正确为 碰撞率
 碰撞衰减	碰撞阻尼	forbidden	zh	误译damping：正确为 碰撞阻尼
+碰撞频率	碰撞率	forbidden	zh	internal:dict-improvements
 碳墨	石墨	forbidden	zh	误译graphite：正确为 石墨
 碳纤维合成材料	碳纤维复合材料	forbidden	zh	混淆composite/synthetic：正确为 碳纤维复合材料
 磁井	磁阱	forbidden	zh	误译well：正确为 磁阱
 磁体供电线	磁体馈线	forbidden	zh	误译feeder：正确为 磁体馈线
+磁体口径	磁体孔径	deprecated	zh	internal:dict-improvements
 磁体膛径	磁体孔径	deprecated	zh	非标准：应为 磁体孔径
 磁再连接	磁重联	forbidden	zh	误译：正确为 磁重联
 磁切变	磁剪切	deprecated	zh	非标准变体：应为 磁剪切
@@ -1287,8 +1475,10 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 磁流体动力学	磁流体力学	deprecated	zh	规范为"磁流体力学"(无"动"字)
 磁流管	磁通管	forbidden	zh	误译flux tube(磁通管≠磁流管)：正确为 磁通管
 磁螺旋	磁螺旋度	forbidden	zh	缺字'度'：正确为 磁螺旋度
+磁轴外移	沙弗拉诺夫位移	deprecated	zh	internal:dict-improvements
 磁通保守器	磁通守恒器	forbidden	zh	误译conserver：正确为 磁通守恒器
 磁通扩张	磁通膨胀	forbidden	zh	误译expansion：正确为 磁通膨胀
+磁通摆动	磁通摆幅	deprecated	zh	dict-improvements
 磁通量环	磁通环	forbidden	zh	误译flux(磁通≠磁通量)：正确为 磁通环
 磁通量面	磁面	forbidden	zh	误译：正确为 磁面
 磁重新连接	磁重联	forbidden	zh	误译：正确为 磁重联
@@ -1303,6 +1493,7 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 神光3号	神光三号	deprecated	zh	非标准(三号≠3号)：应为 神光三号
 神经网络传输模型	神经网络输运模型	forbidden	zh	误译transport(输运≠传输)：正确为 神经网络输运模型
 福克尔-普朗克方程	Fokker-Planck方程	forbidden	zh	误音译人名：正确保留 Fokker-Planck方程
+离位损伤率	dpa率	deprecated	zh	internal:dict-improvements
 离子伯恩斯坦波动	离子伯恩斯坦波	forbidden	zh	误加'动'：正确为 离子伯恩斯坦波
 离子体温度	离子温度	forbidden	zh	误加'体'：正确为 离子温度
 离子回旋共振天线	离子回旋天线	forbidden	zh	冗赘(回旋已含共振义)：正确为 离子回旋天线
@@ -1310,13 +1501,17 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 离子嵌入	离子注入	forbidden	zh	误译implantation(注入≠嵌入)：正确为 离子注入
 离子打入	离子注入	forbidden	zh	非标准口语化：正确为 离子注入
 离子植入	离子注入	forbidden	zh	误译implantation(注入≠植入)：正确为 离子注入
+离子注入深度	注入射程	deprecated	zh	internal:dict-improvements
+离子温度值	离子温度	deprecated	zh	internal:dict-improvements
 离子温度梯度模式	离子温度梯度模	deprecated	zh	非标准：应为 离子温度梯度模
 离子环回共振加热	离子回旋共振加热	forbidden	zh	误译cyclotron：正确为 离子回旋共振加热
 离靶	等离子体脱靶	deprecated	zh	非标准：应为 脱靶
 私密通量域	私有磁通区	forbidden	zh	误译：正确为 私有磁通区
 私通量区	私有磁通区	forbidden	zh	误译flux：正确为 私有磁通区
+科学增益值	科学Q值	deprecated	zh	internal:dict-improvements
 科西嘉	CORSICA	forbidden	zh	AI translates code name as Corsica island
 积极冷却部件	主动冷却部件	forbidden	zh	误译actively：正确为 主动冷却部件
+积累因子	累积因子	deprecated	zh	internal:dict-improvements
 移位能	位移阈能	forbidden	zh	误译displacement(位移≠移位)：正确为 位移阈能
 稳定状态操作	稳态运行	forbidden	zh	误译：正确为 稳态运行
 稳定状态高β	稳态高β运行	forbidden	zh	误译：正确为 稳态高β运行
@@ -1339,8 +1534,10 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 第N种	第N台堆	forbidden	zh	误译：正确为 第N台堆
 第一同类	首台堆	forbidden	zh	误译：正确为 首台堆
 第一墙	第一壁	forbidden	zh	AI误译wall(壁≠墙)：正确为 第一壁
+第一壁服役寿命	第一壁寿命	deprecated	zh	internal:dict-improvements
 等价剂量	当量剂量	forbidden	zh	AI误译equivalent(当量≠等价)：正确为 当量剂量
 等效剂量	当量剂量	forbidden	zh	误译equivalent：正确为 当量剂量
+等效纹波	有效纹波	deprecated	zh	非标准：应为 有效纹波
 等离子	等离子体	deprecated	zh	应使用全称"等离子体"
 等离子不稳定	等离子体不稳定性	deprecated	zh	缺字'体'：应为 等离子体不稳定性
 等离子位置控制	等离子体位置控制	forbidden	zh	缺字'体'：正确为 等离子体位置控制
@@ -1354,6 +1551,7 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 等离子体均衡	等离子体平衡	forbidden	zh	误译equilibrium：正确为 等离子体平衡
 等离子体壁	第一壁	deprecated	zh	标准为"第一壁"
 等离子体壁面交互	等离子体表面相互作用	forbidden	zh	误译interaction(相互作用≠交互)：正确为 等离子体表面相互作用
+等离子体密度值	等离子体密度	deprecated	zh	internal:dict-improvements
 等离子体封闭	等离子体约束	forbidden	zh	误译confinement：正确为 等离子体约束
 等离子体崩溃	等离子体击穿	forbidden	zh	AI误译breakdown(击穿≠崩溃)：正确为 等离子体击穿
 等离子体故障	等离子体击穿	forbidden	zh	AI误译breakdown(击穿≠故障)：正确为 等离子体击穿
@@ -1361,6 +1559,7 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 等离子体斜升	等离子体升流	forbidden	zh	误译ramp-up：正确为 等离子体升流
 等离子体斜降	等离子体降流	forbidden	zh	误译ramp-down：正确为 等离子体降流
 等离子体次半径	等离子体小半径	forbidden	zh	误译minor：正确为 等离子体小半径
+等离子体比压值	等离子体比压	deprecated	zh	internal:dict-improvements
 等离子体细丝	等离子体丝状体	forbidden	zh	误译filament(丝状体≠细丝)：正确为 等离子体丝状体
 等离子体终端	等离子体终止	forbidden	zh	AI误译termination(终止≠终端)：正确为 等离子体终止
 等离子体结束	等离子体终止	forbidden	zh	误译termination(终止≠结束)：正确为 等离子体终止
@@ -1392,6 +1591,7 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 等离子面对部件	面向等离子体部件	forbidden	zh	误译facing语序错误+缺体字：正确为 面向等离子体部件
 等离子频率	等离子体频率	forbidden	zh	缺字'体'：正确为 等离子体频率
 简化MHD	约化MHD	forbidden	zh	误译reduced：正确为 约化MHD
+箍缩参数无量纲数	箍缩参数	deprecated	zh	internal:dict-improvements
 管子切割	管道切割	forbidden	zh	误译pipe(管道≠管子)：正确为 管道切割
 管道内导线	管内电缆导体	forbidden	zh	误译conductor：正确为 管内电缆导体
 管道内电缆	管内电缆导体	forbidden	zh	误译：正确为 管内电缆导体
@@ -1419,6 +1619,7 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 紧凑环面体	紧凑环	forbidden	zh	误译toroid：正确为 紧凑环
 紧凑环面注入	紧凑环注入	forbidden	zh	误译toroid(环≠环面)：正确为 紧凑环注入
 紧急规划区	应急计划区	forbidden	zh	误译emergency+planning：正确为 应急计划区
+累积有效剂量	待积有效剂量	forbidden	zh	internal:dict-improvements
 繁殖包层	产氚包层	forbidden	zh	误译breeding：正确为 产氚包层
 繁殖区	增殖区	forbidden	zh	误译breeding：正确为 增殖区
 繁殖器氚提取系统	增殖剂氚提取系统	forbidden	zh	误译breeder：正确为 增殖剂氚提取系统
@@ -1444,14 +1645,21 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 纳米缩进	纳米压痕	forbidden	zh	AI误译indent(压痕≠代码缩进)：正确为 纳米压痕
 纽结模	扭曲模	forbidden	zh	误译kink(扭曲≠纽结)：正确为 扭曲模
 线圈复杂性	线圈复杂度	deprecated	zh	非标准：应为 线圈复杂度
+线圈磁能	磁储能	forbidden	zh	internal:dict-improvements
+线性能量传递率	线性能量传递	deprecated	zh	internal:dict-improvements
 线性辐射	线辐射	forbidden	zh	误译line(线≠线性)：正确为 线辐射
+线膨胀系数	热膨胀系数	deprecated	zh	internal:dict-improvements
+组件寿命	部件寿命	deprecated	zh	internal:dict-improvements
 组件生命周期	部件寿命	forbidden	zh	误译lifetime：正确为 部件寿命
 组件鉴定	部件鉴定	deprecated	zh	非标准：应为 部件鉴定
+组织权重因子值	组织权重因子	deprecated	zh	internal:dict-improvements
 终极拉伸强度	极限抗拉强度	forbidden	zh	AI误译ultimate(极限≠终极)：正确为 极限抗拉强度
 终端核数据库	ENDF	forbidden	zh	wrong expansion of acronym
+经典电阻率值	斯皮策电阻率	deprecated	zh	internal:dict-improvements
 经过粒子	通行粒子	forbidden	zh	误译passing：正确为 通行粒子
 绕线包	绕组包	deprecated	zh	非标准：应为 绕组包
 维尔收缩	瓦尔箍缩	forbidden	zh	双误(音译+pinch)：正确为 瓦尔箍缩
+维护期	维护周期	deprecated	zh	internal:dict-improvements
 维护端口	维护窗口	forbidden	zh	误译port：聚变应为 维护窗口
 综合诊断	合成诊断	forbidden	zh	误译synthetic：正确为 合成诊断
 缓慢波	慢波	forbidden	zh	误译slow：正确为 慢波
@@ -1460,8 +1668,10 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 罗科夫斯基线圈	罗戈夫斯基线圈	forbidden	zh	音译错：正确为 罗戈夫斯基线圈
 置换不稳定性	交换不稳定性	forbidden	zh	误译interchange(化学义)：正确为 交换不稳定性
 置换能	位移阈能	forbidden	zh	误译displacement(位移≠置换)：正确为 位移阈能
+翘曲	屈曲	forbidden	zh	误译buckling(屈曲≠翘曲)：warping才是翘曲
 翻译	平移	forbidden	zh	误译(语言义)：FRC语境正确为 平移
 翻转不稳定性	倾斜不稳定性	forbidden	zh	误译tilt：正确为 倾斜不稳定性
+职业剂量值	职业剂量	deprecated	zh	internal:dict-improvements
 职业剂量极限	职业剂量限值	forbidden	zh	误译limit：正确为 职业剂量限值
 职业放射暴露	职业辐射照射	forbidden	zh	误译radiation+exposure：正确为 职业辐射照射
 职业暴露	职业照射	forbidden	zh	误译exposure：正确为 职业照射
@@ -1477,12 +1687,15 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 聚变产品光谱	聚变产物能谱	forbidden	zh	误译product+spectrum：正确为 聚变产物能谱
 聚变产物光谱	聚变产物能谱	forbidden	zh	误译spectrum(能谱≠光谱)：正确为 聚变产物能谱
 聚变倍增	聚变增益因子	forbidden	zh	倍增=doubling, wrong term
+聚变功率密度值	聚变功率密度	deprecated	zh	internal:dict-improvements
+聚变反应几率	聚变反应率	forbidden	zh	internal:dict-improvements
 聚变反应性	聚变反应率	forbidden	zh	误译reactivity：正确为 聚变反应率
 聚变反应活性	聚变反应率	forbidden	zh	误译reactivity：正确为 聚变反应率
 聚变发电厂	聚变电站	forbidden	zh	误译：正确为 聚变电站
 聚变发电站	聚变电站	deprecated	zh	非标准：应为 聚变电站
 聚变收益	聚变增益因子	forbidden	zh	收益=financial return
 聚变横截面	聚变截面	forbidden	zh	误译(几何义)：核物理应为 聚变截面
+聚变能增益	聚变增益因子	deprecated	zh	internal:dict-improvements
 聚变试点电站	聚变试验电站	forbidden	zh	误译pilot：正确为 聚变试验电站
 聚变试验工厂	聚变试验电站	forbidden	zh	误译plant：正确为 聚变试验电站
 聚变路标	聚变路线图	forbidden	zh	误译roadmap：正确为 聚变路线图
@@ -1491,6 +1704,7 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 育种氚提取系统	增殖剂氚提取系统	forbidden	zh	误译breeder(增殖剂≠育种)：正确为 增殖剂氚提取系统
 胶囊内爆	靶丸内爆	forbidden	zh	误译capsule：ICF应为 靶丸内爆
 能量分散光谱	能谱分析	forbidden	zh	AI误译dispersive+spectroscopy：正确为 能谱分析
+能量增益值	能量增益	deprecated	zh	internal:dict-improvements
 能量增长	能量增益	forbidden	zh	误译gain：正确为 能量增益
 能量封闭时间	能量约束时间	forbidden	zh	误译confinement：正确为 能量约束时间
 能量弥散谱	能谱分析	forbidden	zh	误译dispersive(色散≠弥散)：正确为 能谱分析
@@ -1511,6 +1725,7 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 膛内焊接	孔内焊接	deprecated	zh	非标准：应为 孔内焊接
 膨胀关节	膨胀节	forbidden	zh	AI误译joint(节≠关节,医学义)：正确为 膨胀节
 膨胀模	气球模	forbidden	zh	误译ballooning：正确为 气球模
+自举比例	自举电流份额	deprecated	zh	internal:dict-improvements
 自引导电流	自举电流	forbidden	zh	误译bootstrap：正确为 自举电流
 自我溅射	自溅射	forbidden	zh	误译self(自≠自我)：正确为 自溅射
 自持电流	自举电流	forbidden	zh	误译bootstrap：应为 自举电流
@@ -1522,6 +1737,8 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 艾克斯艾尔50	EXL-50	forbidden	zh	AI transliteration of EXL acronym
 艾克斯艾尔50U	EXL-50U	forbidden	zh	AI transliteration of EXL acronym
 艾玛斯	IMAS	forbidden	zh	AI transliteration of acronym
+节点电阻	接头电阻	forbidden	zh	internal:dict-improvements
+草ELM	草状ELM	deprecated	zh	dict-improvements
 蒙地卡罗方法	蒙特卡罗方法	forbidden	zh	Taiwan transliteration, non-standard
 蒙地卡罗法	蒙特卡罗方法	forbidden	zh	Taiwan transliteration, non-standard
 蒙特卡罗中子程序	MCNP	forbidden	zh	over-literal expansion used by AI
@@ -1583,10 +1800,15 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 被捕粒子	俘获粒子	forbidden	zh	误译trapped：正确为 捕获粒子
 裂化	裂纹	forbidden	zh	误译：石化义，聚变应为 裂纹
 裂变产量	裂变产额	forbidden	zh	误译yield(产额≠产量)：正确为 裂变产额
+裂变得率	裂变产额	deprecated	zh	internal:dict-improvements
+裂变收率	裂变产额	deprecated	zh	internal:dict-improvements
 裂纹传播速率	裂纹扩展速率	deprecated	zh	非推荐变体：应为 裂纹扩展速率
 裂纹增长率	裂纹扩展速率	forbidden	zh	误译growth(扩展≠增长)：正确为 裂纹扩展速率
 裂纹成长速率	裂纹扩展速率	forbidden	zh	误译growth(扩展≠成长)：正确为 裂纹扩展速率
+裂纹扩展率	裂纹扩展速率	deprecated	zh	internal:dict-improvements
 裂纹生长率	裂纹扩展速率	forbidden	zh	误译growth(扩展≠生长)：正确为 裂纹扩展速率
+裂纹生长速率	裂纹扩展速率	deprecated	zh	internal:dict-improvements
+装填密度	填充率	forbidden	zh	internal:dict-improvements
 装甲瓷砖	装甲瓦	forbidden	zh	误译tile：正确为 装甲瓦
 装甲砖	装甲瓦	forbidden	zh	误译tile：正确为 装甲瓦
 裸线规	热阴极电离规	forbidden	zh	非标准俗称
@@ -1595,10 +1817,13 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 覆盖模块	包层模块	forbidden	zh	误译blanket：正确为 包层模块
 解吸	脱附	deprecated	zh	非标准：应为 脱附
 解吸附	脱附	forbidden	zh	误译(脱附≠解吸附)：正确为 脱附
+解控指数	清洁解控指数	deprecated	zh	internal:dict-improvements
 解除委任	退役	forbidden	zh	误译commission：正确为 退役
 计算流体动力学	计算流体力学	forbidden	zh	误译dynamics(力学≠动力学)：正确为 计算流体力学
+记数可信度	计数可靠性	deprecated	zh	internal:dict-improvements
 记账	计数统计	forbidden	zh	误译tallying：正确为 计数统计
 设备平衡	电站辅助系统	forbidden	zh	误译balance：正确为 电站辅助系统
+设计余量	设计裕度	deprecated	zh	internal:dict-improvements
 设计基础事故	设计基准事故	forbidden	zh	误译basis：正确为 设计基准事故
 诊断口	诊断端口	deprecated	zh	非标准缩略(端口≠口)：应为 诊断端口
 诊断港口	诊断端口	forbidden	zh	AI误译port(端口≠港口)：正确为 诊断端口
@@ -1613,6 +1838,8 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 质子	氕	forbidden	zh	误译protium(氕≠质子)：正确为 氕
 质子-硼融合	质子-硼聚变	forbidden	zh	误译fusion：正确为 质子-硼聚变
 质子硼融合	质子-硼聚变	forbidden	zh	误译fusion：正确为 质子-硼聚变
+质量因子	品质因子	forbidden	zh	internal:dict-improvements
+资金成本	资本成本	forbidden	zh	internal:dict-improvements
 赤道口	赤道窗口	deprecated	zh	非标准：应为 赤道窗口
 赤道端口	赤道窗口	forbidden	zh	误译port：聚变应为 赤道窗口
 赫利亚斯	HELIAS	forbidden	zh	wrong transliteration of acronym
@@ -1639,13 +1866,16 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 转动不稳定性	旋转不稳定性	deprecated	zh	非标准：应为 旋转不稳定性
 转动磁场	旋转磁场	deprecated	zh	非标准：应为 旋转磁场
 转化	嬗变	forbidden	zh	误译transmutation：核物理应为 嬗变
+转变温度	临界温度	deprecated	zh	internal:dict-improvements
 转向器	偏滤器	forbidden	zh	误译divert：正确为 偏滤器
+转移学习	迁移学习	forbidden	zh	AI误译transfer(迁移≠转移)：正确为 迁移学习
 软X光	软X射线	deprecated	zh	非标准(X射线≠X光)：应为 软X射线
 软X线	软X射线	deprecated	zh	非标准(X射线≠X线)：应为 软X射线
 轻氢	氕	deprecated	zh	非标准：应为 氕
 辅助功率	厂用电	forbidden	zh	误译：正确为 厂用电
 辅助回路	二回路	forbidden	zh	误译secondary：正确为 二回路
 辅助电力	厂用电	forbidden	zh	误译：正确为 厂用电
+辅助电源	厂用电	deprecated	zh	internal:dict-improvements
 辉光放电清洁	辉光放电清洗	deprecated	zh	非标准：应为 辉光放电清洗
 辉光放电清理	辉光放电清洗	deprecated	zh	非标准：应为 辉光放电清洗
 辉光清洗	辉光放电清洗	deprecated	zh	缩略：应为 辉光放电清洗
@@ -1671,6 +1901,7 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 辐射热计	辐射计	forbidden	zh	混淆义：正确为 辐射计
 辐射硬化	辐照硬化	forbidden	zh	误译：此语境为辐照硬化
 辐射硬度	辐照硬化	forbidden	zh	hardening≠hardness+辐照≠辐射：正确为 辐照硬化
+辐射能量损失	辐射损失	deprecated	zh	internal:dict-improvements
 辐射脆化	辐照脆化	forbidden	zh	误译irradiation：正确为 辐照脆化
 辐射蠕变	辐照蠕变	forbidden	zh	误译irradiation：正确为 辐照蠕变
 辐射诱导偏析	辐照偏析	forbidden	zh	误译radiation+induced：正确为 辐照偏析
@@ -1681,7 +1912,9 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 辐照加硬	辐照硬化	forbidden	zh	非标准：正确为 辐照硬化
 辐照后检查	辐照后检验	deprecated	zh	非标准：应为 辐照后检验
 辐照脆性	辐照脆化	forbidden	zh	误译embrittlement(脆化≠脆性)：正确为 辐照脆化
+输入加热功率	加热功率	deprecated	zh	internal:dict-improvements
 输运屏障	输运垒	forbidden	zh	误译barrier：正确为 输运垒
+边界q95	q95	deprecated	zh	internal:dict-improvements
 边界局部模	边缘局域模	deprecated	zh	应为"边缘局域模"(ELM)
 边缘传输屏障	边缘输运垒	forbidden	zh	误译transport+barrier：正确为 边缘输运垒
 边缘定域模	边缘局域模	deprecated	zh	非标准：应为 边缘局域模
@@ -1692,6 +1925,7 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 运动Stark效应	运动斯塔克效应	deprecated	zh	非标准：应为 运动斯塔克效应
 运动学气球模	动理学气球模	forbidden	zh	误译kinetic：正确为 动理学气球模
 运动斯塔克效果	运动斯塔克效应	forbidden	zh	误译effect：正确为 运动斯塔克效应
+运行墙时间	墙钟时间	deprecated	zh	internal:dict-improvements
 远程处理	遥操作	forbidden	zh	误译handling：正确为 遥操作
 远程检查	远程检测	deprecated	zh	非标准：应为 远程检测
 远程维修	遥维护	forbidden	zh	误译maintenance：正确为 遥维护
@@ -1699,6 +1933,7 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 远红外偏振测量	远红外偏振仪	deprecated	zh	非标准：应为 远红外偏振仪
 远红外极化仪	远红外偏振仪	forbidden	zh	误译polarimetry：正确为 远红外偏振仪
 连接电阻	接头电阻	deprecated	zh	非标准：应为 接头电阻
+连接距离	连接长度	forbidden	zh	internal:dict-improvements
 连线长度	连接长度	forbidden	zh	误译connection(连接≠连线)：正确为 连接长度
 连续体辐射	连续辐射	forbidden	zh	误译continuum(连续≠连续体)：正确为 连续辐射
 连续动力学	连续谱动理学	forbidden	zh	误译kinetic：正确为 连续谱动理学
@@ -1707,6 +1942,7 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 连锁损伤	级联损伤	forbidden	zh	误译cascade：正确为 级联损伤
 迪娜	DINA	forbidden	zh	AI translates code name as person name
 退役成本	退役费用	deprecated	zh	非标准：应为 退役费用
+逃逸抑制	逃逸电子缓解	deprecated	zh	非标准(suppression≠mitigation)：应为 逃逸电子缓解
 逆剪切阿尔芬本征模	反剪切Alfvén本征模	forbidden	zh	误音译Alfvén+误译reverse(反剪切≠逆剪切)：正确为 反剪切Alfvén本征模
 逆磁漂移	抗磁漂移	forbidden	zh	误译dia-：正确为 抗磁漂移
 逆磁环	抗磁环	forbidden	zh	误译dia-：正确为 抗磁环
@@ -1717,10 +1953,12 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 通用技术中心	GTC	forbidden	zh	wrong expansion of acronym
 通量坐标	磁通坐标	forbidden	zh	generic 通量 ambiguous; use 磁通坐标
 通量扩张	磁通膨胀	forbidden	zh	误译flux+expansion：正确为 磁通膨胀
+通量摆幅	磁通摆幅	forbidden	zh	dict-improvements
 通量放大	磁通放大	forbidden	zh	误译flux：正确为 磁通放大
 通量管	磁通管	forbidden	zh	误译flux(磁通≠通量)：正确为 磁通管
 通量管模拟	磁通管模拟	forbidden	zh	误译flux(磁通≠通量)：正确为 磁通管模拟
 通量表面	磁面	forbidden	zh	误译flux surface：聚变应为 磁面
+通量限值	注量限值	forbidden	zh	AI误译fluence(注量≠通量)：fluence是积分量，flux才是通量
 通量限制	磁通约束	forbidden	zh	误译flux+confinement：正确为 磁通约束
 速度调制管	速调管	deprecated	zh	啰嗦：应为 速调管
 造型控制	形状控制	forbidden	zh	误译shape：正确为 形状控制
@@ -1729,6 +1967,7 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 部件资格认证	部件鉴定	forbidden	zh	误译qualification：正确为 部件鉴定
 酒桶系统	转运容器	forbidden	zh	误译cask：正确为 转运容器
 里希特迈尔-梅什科夫不稳定性	Richtmyer-Meshkov不稳定性	deprecated	zh	音译变体：应为 里奇特迈耶-梅什科夫不稳定性
+重复频率值	重复频率	deprecated	zh	internal:dict-improvements
 重新侵蚀	再侵蚀	forbidden	zh	误译re-(再≠重新)：正确为 再侵蚀
 重新沉积	再沉积	deprecated	zh	啰嗦：应为 再沉积
 重新结晶化	再结晶	forbidden	zh	误译re-(再≠重新)+啰嗦：正确为 再结晶
@@ -1765,6 +2004,7 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 铍中子放大器	铍中子倍增剂	forbidden	zh	AI误译multiplier(倍增剂≠放大器)：正确为 铍中子倍增剂
 铍乘法器	铍中子倍增层	forbidden	zh	误译multiplier：正确为 铍中子倍增层
 铍倍增器	铍中子倍增层	deprecated	zh	非标准：应为 铍中子倍增层
+铍合金	铍化物	forbidden	zh	误译beryllide(铍化物≠铍合金)：alloy才是合金
 铍增殖器	铍中子倍增层	forbidden	zh	误译multiplier：正确为 铍中子倍增层
 铍石	铍	forbidden	zh	错误用词，应为"铍"(Be)
 铰链臂	铰接臂	forbidden	zh	误译articulated：正确为 铰接臂
@@ -1773,6 +2013,7 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 锁模式	锁模	deprecated	zh	非标准：应为 锁模
 锂墙	锂壁	forbidden	zh	误译wall：正确为 锂壁
 锂涂层	锂化	deprecated	zh	非标准(coating→涂覆≠涂层)：应为 锂化
+锂烧蚀	锂消耗	forbidden	zh	误译burnup(燃耗/消耗≠烧蚀)：ablation才是烧蚀
 错位	位错	forbidden	zh	误译(医学义)：正确为 位错
 错误场	误差场	forbidden	zh	误译error：正确为 误差场
 锯齿坠毁	锯齿崩塌	forbidden	zh	误译crash：正确为 锯齿崩塌
@@ -1792,8 +2033,10 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 间隔原子	间隙原子	forbidden	zh	误译interstitial(间隙≠间隔)：正确为 间隙原子
 间隙	清洁解控	forbidden	zh	误译：机械义，核安全应为 清洁解控
 间隙指标	清洁解控指数	forbidden	zh	误译clearance(机械义)：正确为 清洁解控指数
+阈能	位移阈能	forbidden	zh	internal:dict-improvements
 防屏分析	屏蔽分析	forbidden	zh	错误缩略(屏蔽分析≠防屏分析)：正确为 屏蔽分析
 阴离子源	负离子源	forbidden	zh	误译negative：聚变应为 负离子源
+阻力系数	摩擦系数	forbidden	zh	internal:dict-improvements
 阻性不稳定性	电阻不稳定性	forbidden	zh	误译resistive(电阻≠阻性)：正确为 电阻不稳定性
 阻性壁模式	电阻壁模	deprecated	zh	非标准：应为 电阻壁模
 阻性磁流体	电阻磁流体力学	forbidden	zh	误译resistive：正确为 电阻磁流体力学
@@ -1827,13 +2070,16 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 陶瓷育种剂	陶瓷增殖剂	forbidden	zh	育种=plant breeding
 陷俘电子模	俘获电子模	forbidden	zh	误译trapped：正确为 俘获电子模
 陷阱粒子	俘获粒子	forbidden	zh	误译trapped：正确为 捕获粒子
+隔夜成本值	隔夜成本	deprecated	zh	internal:dict-improvements
 隔热材料	绝缘材料	forbidden	zh	误译insulation：正确为 绝缘材料
+集体剂量值	集体剂量	deprecated	zh	internal:dict-improvements
 集合剂量	集体剂量	forbidden	zh	误译collective(集体≠集合)：正确为 集体剂量
 集成模型	集成建模	forbidden	zh	误译modeling(动词义)：正确为 集成建模
 集成调试	综合调试	deprecated	zh	非标准：应为 综合调试
 雪崩传输	雪崩输运	forbidden	zh	误译transport：正确为 雪崩输运
 雪花分流器	雪花偏滤器	forbidden	zh	误译divertor：正确为 雪花偏滤器
 雷利-泰勒不稳定性	瑞利-泰勒不稳定性	forbidden	zh	音译错：正确为 瑞利-泰勒不稳定性
+雷诺准则数	雷诺数	deprecated	zh	internal:dict-improvements
 静电封闭	静电约束	forbidden	zh	误译confinement：正确为 静电约束
 静电限制	静电约束	forbidden	zh	误译confinement：正确为 静电约束
 非中子聚变	无中子聚变	forbidden	zh	误译aneutronic：正确为 无中子聚变
@@ -1845,10 +2091,14 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 面积密度	面密度	forbidden	zh	误译areal：正确为 面密度
 面等离子部件	面向等离子体部件	forbidden	zh	误译：正确为 面向等离子体部件
 靴带电流	自举电流	forbidden	zh	误译bootstrap(靴带→自举)：正确为 自举电流
+靶丸增益	靶增益	deprecated	zh	internal:dict-improvements
 韦尔收缩	瓦尔箍缩	forbidden	zh	误译pinch：正确为 韦尔箍缩
 韦尔箍缩	瓦尔箍缩	forbidden	zh	音译错：正确为 瓦尔箍缩
+韧-脆转变温度	韧脆转变温度	deprecated	zh	internal:dict-improvements
 韧性-脆性转变温度	韧脆转变温度	deprecated	zh	啰嗦：应为 韧脆转变温度
+韧脆转变温度位移	韧脆转变温度偏移	deprecated	zh	internal:dict-improvements
 韧脆转换温度	韧脆转变温度	deprecated	zh	非标准(转变≠转换)：应为 韧脆转变温度
+韧脆过渡温度	韧脆转变温度	deprecated	zh	internal:dict-improvements
 韩国之星	KSTAR	forbidden	zh	误译(装置名应保留 KSTAR)
 预备安全分析报告	初步安全分析报告	forbidden	zh	误译preliminary：正确为 初步安全分析报告
 预定维护	计划维护	forbidden	zh	误译scheduled：正确为 计划维护
@@ -1871,6 +2121,7 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 香蕉环道	香蕉轨道	forbidden	zh	误译orbit：正确为 香蕉轨道
 马尔夫	MARFE	forbidden	zh	误音译缩写(应保留 MARFE)
 驱动器	执行器	forbidden	zh	误译actuator(驱动器≠执行器)：正确为 执行器
+驱动效率	电流驱动效率	deprecated	zh	internal:dict-improvements
 骤冷	失超	forbidden	zh	误译quench：超导语境正确为 失超
 骨折力学	断裂力学	forbidden	zh	AI误译fracture(断裂≠骨折,医学义)：正确为 断裂力学
 高原区	坪区	forbidden	zh	误译plateau(地理义)：正确为 坪区

@@ -9417,3 +9417,2114 @@ TPR	tritium-production-rate	abbr	preferred	canonical abbr
 
 # ---- SCO2 uppercase alias for existing supercritical-co2-cycle
 SCO2 cycle	supercritical-co2-cycle	en	alias	uppercase variant
+
+# ==== Fusion Pathway Coverage Expansion (2026-04-17) ====
+
+# ---- P0: Stellarator ----
+Boozer坐标	boozer-coordinates	zh	preferred	preferred zh
+Boozer coordinates	boozer-coordinates	en	preferred	preferred en (phrase)
+boozer-coordinates	boozer-coordinates	en	alias	IME token-only form
+Boozer坐标系	boozer-coordinates	zh	alias	variant
+有效纹波	effective-ripple	zh	preferred	preferred zh
+effective ripple	effective-ripple	en	preferred	preferred en (phrase)
+effective-ripple	effective-ripple	en	alias	IME token-only form
+eps_eff	effective-ripple	abbr	preferred	canonical abbr
+ε_eff	effective-ripple	abbr	alias	Greek symbol form
+等效纹波	effective-ripple	zh	deprecated	非标准：应为 有效纹波
+准极向对称	quasi-poloidal-symmetry	zh	preferred	preferred zh
+quasi-poloidal symmetry	quasi-poloidal-symmetry	en	preferred	preferred en (phrase)
+quasi-poloidal-symmetry	quasi-poloidal-symmetry	en	alias	IME token-only form
+QP	quasi-poloidal-symmetry	abbr	preferred	canonical abbr
+全向性	omnigeneity	zh	preferred	preferred zh
+omnigeneity	omnigeneity	en	preferred	preferred en
+全向漂移优化	omnigeneity	zh	alias	descriptive variant
+omnigenity	omnigeneity	en	alias	alternative spelling
+omnigenous	omnigeneity	en	alias	adjective form
+弹跳平均漂移	bounce-averaged-drift	zh	preferred	preferred zh
+bounce-averaged drift	bounce-averaged-drift	en	preferred	preferred en (phrase)
+bounce-averaged-drift	bounce-averaged-drift	en	alias	IME token-only form
+弹跳平均径向漂移	bounce-averaged-drift	zh	alias	radial drift variant
+VMEC	vmec	en	preferred	canonical name
+VMEC	vmec	abbr	preferred	Variational Moments Equilibrium Code
+DESC	desc	en	preferred	canonical name
+DESC	desc	abbr	preferred	stellarator equilibrium code
+SIMSOPT	simsopt	en	preferred	canonical name
+SIMSOPT	simsopt	abbr	preferred	Simons Optimization code
+simsopt	simsopt	en	alias	lowercase
+扭旋器	torsatron	zh	preferred	preferred zh
+torsatron	torsatron	en	preferred	preferred en
+扭旋线管器	torsatron	zh	alias	older variant
+螺旋器变体	heliac	zh	preferred	preferred zh
+heliac	heliac	en	preferred	preferred en
+NCSX	ncsx	en	preferred	canonical name
+NCSX	ncsx	abbr	preferred	National Compact Stellarator Experiment
+W7-AS	w7-as	en	preferred	canonical name
+W7-AS	w7-as	abbr	preferred	Wendelstein 7-AS
+Wendelstein 7-AS	w7-as	en	alias	full name
+绕组面	winding-surface	zh	preferred	preferred zh
+winding surface	winding-surface	en	preferred	preferred en (phrase)
+winding-surface	winding-surface	en	alias	IME token-only form
+线圈绕组面	winding-surface	zh	alias	with coil prefix
+Type One Energy	type-one-energy	en	preferred	preferred en
+Proxima Fusion	proxima-fusion	en	preferred	preferred en
+Renaissance Fusion	renaissance-fusion	en	preferred	preferred en
+
+# ---- P1: FRC ----
+场反稳定性	frc-stability	zh	preferred	preferred zh
+FRC stability	frc-stability	en	preferred	preferred en (phrase)
+frc-stability	frc-stability	en	alias	IME token-only form
+场反位形稳定性	frc-stability	zh	alias	full variant
+场反寿命定标	frc-lifetime-scaling	zh	preferred	preferred zh
+FRC lifetime scaling	frc-lifetime-scaling	en	preferred	preferred en (phrase)
+frc-lifetime-scaling	frc-lifetime-scaling	en	alias	IME token-only form
+FRC寿命定标律	frc-lifetime-scaling	zh	alias	with 律
+开放磁力线	open-field-line	zh	preferred	preferred zh
+open field line	open-field-line	en	preferred	preferred en (phrase)
+open-field-line	open-field-line	en	alias	IME token-only form
+开磁力线	open-field-line	zh	alias	short form
+磁通闭合	flux-closure	zh	preferred	preferred zh
+flux closure	flux-closure	en	preferred	preferred en (phrase)
+flux-closure	flux-closure	en	alias	IME token-only form
+C-2U	c-2u	en	preferred	canonical name
+C-2U	c-2u	abbr	preferred	TAE Technologies device
+Helion Trenta	helion-trenta	en	preferred	preferred en
+脉冲非点火	pulsed-non-ignition	zh	preferred	preferred zh
+pulsed non-ignition	pulsed-non-ignition	en	preferred	preferred en (phrase)
+pulsed-non-ignition	pulsed-non-ignition	en	alias	IME token-only form
+
+# ---- P1: Mirror ----
+端塞	end-plug	zh	preferred	preferred zh
+end plug	end-plug	en	preferred	preferred en (phrase)
+end-plug	end-plug	en	alias	IME token-only form
+端部塞子	end-plug	zh	alias	verbose form
+端损失	end-loss	zh	preferred	preferred zh
+end loss	end-loss	en	preferred	preferred en (phrase)
+end-loss	end-loss	en	alias	IME token-only form
+端部损失	end-loss	zh	alias	verbose form
+Ioffe棒	ioffe-bars	zh	preferred	preferred zh
+Ioffe bars	ioffe-bars	en	preferred	preferred en (phrase)
+ioffe-bars	ioffe-bars	en	alias	IME token-only form
+Ioffe杆	ioffe-bars	zh	alias	variant
+棒球线圈	baseball-coil	zh	preferred	preferred zh
+baseball coil	baseball-coil	en	preferred	preferred en (phrase)
+baseball-coil	baseball-coil	en	alias	IME token-only form
+气体动力学阱	gas-dynamic-trap	zh	preferred	preferred zh
+gas dynamic trap	gas-dynamic-trap	en	preferred	preferred en (phrase)
+gas-dynamic-trap	gas-dynamic-trap	en	alias	IME token-only form
+GDT	gas-dynamic-trap	abbr	preferred	canonical abbr
+气动阱	gas-dynamic-trap	zh	alias	short form
+GAMMA 10	gamma-10	en	preferred	canonical name
+GAMMA-10	gamma-10	en	alias	hyphenated variant
+GAMMA10	gamma-10	en	alias	no-space variant
+WHAM	wham	en	preferred	canonical name
+WHAM	wham	abbr	preferred	Wisconsin HTS Axisymmetric Mirror
+Wisconsin HTS Axisymmetric Mirror	wham	en	alias	full expansion
+轴对称磁镜	axisymmetric-mirror	zh	preferred	preferred zh
+axisymmetric mirror	axisymmetric-mirror	en	preferred	preferred en (phrase)
+axisymmetric-mirror	axisymmetric-mirror	en	alias	IME token-only form
+多重磁镜	multiple-mirror	zh	preferred	preferred zh
+multiple mirror	multiple-mirror	en	preferred	preferred en (phrase)
+multiple-mirror	multiple-mirror	en	alias	IME token-only form
+多级磁镜	multiple-mirror	zh	alias	variant
+直接能量转换器	direct-energy-converter	zh	preferred	preferred zh
+direct energy converter	direct-energy-converter	en	preferred	preferred en (phrase)
+direct-energy-converter	direct-energy-converter	en	alias	IME token-only form
+Reata Engineering	reata-engineering	en	preferred	preferred en
+
+# ---- P2: MTF/MIF ----
+磁化靶聚变	magnetized-target-fusion	zh	preferred	preferred zh
+magnetized-target fusion	magnetized-target-fusion	en	preferred	preferred en (phrase)
+magnetized-target-fusion	magnetized-target-fusion	en	alias	IME token-only form
+衬套内爆	liner-implosion	zh	preferred	preferred zh
+liner implosion	liner-implosion	en	preferred	preferred en (phrase)
+liner-implosion	liner-implosion	en	alias	IME token-only form
+金属衬套内爆	liner-implosion	zh	alias	metallic variant
+等离子体衬套	plasma-liner	zh	preferred	preferred zh
+plasma liner	plasma-liner	en	preferred	preferred en (phrase)
+plasma-liner	plasma-liner	en	alias	IME token-only form
+声学驱动器	acoustic-driver	zh	preferred	preferred zh
+acoustic driver	acoustic-driver	en	preferred	preferred en (phrase)
+acoustic-driver	acoustic-driver	en	alias	IME token-only form
+General Fusion	general-fusion	en	preferred	preferred en
+HyperJet Fusion	hyperjet-fusion	en	preferred	preferred en
+Zap Energy	zap-energy	en	preferred	preferred en
+剪切流Z箍缩	sheared-flow-z-pinch	zh	preferred	preferred zh
+sheared-flow Z-pinch	sheared-flow-z-pinch	en	preferred	preferred en (phrase)
+sheared-flow-z-pinch	sheared-flow-z-pinch	en	alias	IME token-only form
+剪切流稳定Z箍缩	sheared-flow-z-pinch	zh	alias	full form
+
+# ---- P2: ICF → IFE ----
+惯性聚变能	inertial-fusion-energy	zh	preferred	preferred zh
+inertial fusion energy	inertial-fusion-energy	en	preferred	preferred en (phrase)
+inertial-fusion-energy	inertial-fusion-energy	en	alias	IME token-only form
+IFE	inertial-fusion-energy	abbr	preferred	canonical abbr
+靶增益	target-gain	zh	preferred	preferred zh
+target gain	target-gain	en	preferred	preferred en (phrase)
+target-gain	target-gain	en	alias	IME token-only form
+重复频率	repetition-rate	zh	preferred	preferred zh
+repetition rate	repetition-rate	en	preferred	preferred en (phrase)
+repetition-rate	repetition-rate	en	alias	IME token-only form
+rep rate	repetition-rate	en	alias	informal abbreviation
+靶投送	target-injection	zh	preferred	preferred zh
+target injection	target-injection	en	preferred	preferred en (phrase)
+target-injection	target-injection	en	alias	IME token-only form
+靶投送系统	target-injection	zh	alias	with system suffix
+交叉光束能量传递	cbet	zh	preferred	preferred zh
+cross-beam energy transfer	cbet	en	preferred	preferred en (phrase)
+CBET	cbet	abbr	preferred	canonical abbr
+受激布里渊散射	stimulated-brillouin-scattering	zh	preferred	preferred zh
+stimulated Brillouin scattering	stimulated-brillouin-scattering	en	preferred	preferred en (phrase)
+stimulated-brillouin-scattering	stimulated-brillouin-scattering	en	alias	IME token-only form
+SBS	stimulated-brillouin-scattering	abbr	preferred	canonical abbr
+受激拉曼散射	stimulated-raman-scattering	zh	preferred	preferred zh
+stimulated Raman scattering	stimulated-raman-scattering	en	preferred	preferred en (phrase)
+stimulated-raman-scattering	stimulated-raman-scattering	en	alias	IME token-only form
+SRS	stimulated-raman-scattering	abbr	preferred	canonical abbr
+磁化衬套惯性聚变	maglif	zh	preferred	preferred zh
+magnetized liner inertial fusion	maglif	en	preferred	preferred en (phrase)
+MagLIF	maglif	abbr	preferred	canonical abbr
+Z装置	z-machine	zh	preferred	preferred zh
+Z machine	z-machine	en	preferred	preferred en (phrase)
+z-machine	z-machine	en	alias	IME token-only form
+Z-machine	z-machine	en	alias	hyphenated variant
+桑迪亚Z装置	z-machine	zh	alias	with Sandia prefix
+First Light Fusion	first-light-fusion	en	preferred	preferred en
+Focused Energy	focused-energy	en	preferred	preferred en
+Xcimer Energy	xcimer-energy	en	preferred	preferred en
+
+# ---- P3: Spherical Tokamak ----
+中心柱	center-column	zh	preferred	preferred zh
+center column	center-column	en	preferred	preferred en (phrase)
+center-column	center-column	en	alias	IME token-only form
+centre column	center-column	en	alias	British spelling
+center post	center-column	en	alias	alternative term
+中心导体柱	center-column	zh	alias	conductor column variant
+无CS启动	cs-free-startup	zh	preferred	preferred zh
+CS-free start-up	cs-free-startup	en	preferred	preferred en (phrase)
+cs-free-startup	cs-free-startup	en	alias	IME token-only form
+CS-free startup	cs-free-startup	en	alias	no-hyphen variant
+无中心螺管启动	cs-free-startup	zh	alias	full descriptive form
+并合压缩	merging-compression	zh	preferred	preferred zh
+merging-compression	merging-compression	en	preferred	preferred en
+merging compression	merging-compression	en	alias	phrase form
+并合压缩启动	merging-compression	zh	alias	with startup
+高延伸比	high-elongation	zh	preferred	preferred zh
+high elongation	high-elongation	en	preferred	preferred en (phrase)
+high-elongation	high-elongation	en	alias	IME token-only form
+高伸长比	high-elongation	zh	alias	variant
+Tokamak Energy	tokamak-energy	en	preferred	preferred en
+START	start-device	en	preferred	canonical name
+START	start-device	abbr	preferred	Small Tight Aspect Ratio Tokamak
+Small Tight Aspect Ratio Tokamak	start-device	en	alias	full expansion
+
+# ---- Batch A: Private Fusion Companies (2026-04-17) ----
+能量奇点	energy-singularity	zh	preferred	preferred zh
+Energy Singularity	energy-singularity	en	preferred	preferred en
+能量奇点公司	energy-singularity	zh	alias	with suffix
+HH70	energy-singularity	en	alias	first-gen device name
+HH170	energy-singularity	en	alias	next-gen device name
+京都聚变工程	kyoto-fusioneering	zh	preferred	preferred zh
+Kyoto Fusioneering	kyoto-fusioneering	en	preferred	preferred en
+京都フュージョニアリング	kyoto-fusioneering	unknown	alias	Japanese name
+Marvel Fusion	marvel-fusion	en	preferred	preferred en
+SHINE Technologies	shine-technologies	en	preferred	preferred en
+SHINE	shine-technologies	abbr	preferred	canonical abbr
+NT-Tao	nt-tao	en	preferred	preferred en
+EX-Fusion	ex-fusion	en	preferred	preferred en
+エクスフュージョン	ex-fusion	unknown	alias	Japanese name
+Blue Laser Fusion	blue-laser-fusion	en	preferred	preferred en
+BLF	blue-laser-fusion	abbr	alias	informal abbr
+Novatron	novatron	en	preferred	preferred en
+Thea Energy	thea-energy	en	preferred	preferred en
+OpenStar Technologies	openstar-technologies	en	preferred	preferred en
+OpenStar	openstar-technologies	en	alias	short form
+Gauss Fusion	gauss-fusion	en	preferred	preferred en
+Helicity Space	helicity-space	en	preferred	preferred en
+Kronos Fusion Energy	kronos-fusion-energy	en	preferred	preferred en
+Kronos Fusion	kronos-fusion-energy	en	alias	short form
+Princeton Stellarators	princeton-stellarators	en	preferred	preferred en
+
+# ---- Batch B: Fusion Commercialization Terms (2026-04-17) ----
+聚变工业协会	fusion-industry-association	zh	preferred	preferred zh
+Fusion Industry Association	fusion-industry-association	en	preferred	preferred en (phrase)
+fusion-industry-association	fusion-industry-association	en	alias	IME token-only form
+FIA	fusion-industry-association	abbr	preferred	canonical abbr
+首次等离子体	first-plasma	zh	preferred	preferred zh
+first plasma	first-plasma	en	preferred	preferred en (phrase)
+first-plasma	first-plasma	en	alias	IME token-only form
+首个等离子体	first-plasma	zh	alias	variant
+净发电	net-electricity	zh	preferred	preferred zh
+net electricity	net-electricity	en	preferred	preferred en (phrase)
+net-electricity	net-electricity	en	alias	IME token-only form
+聚变验证堆	fusion-demonstrator	zh	preferred	preferred zh
+fusion demonstrator	fusion-demonstrator	en	preferred	preferred en (phrase)
+fusion-demonstrator	fusion-demonstrator	en	alias	IME token-only form
+验证堆	fusion-demonstrator	zh	alias	short form
+模块化聚变堆	modular-fusion-reactor	zh	preferred	preferred zh
+modular fusion reactor	modular-fusion-reactor	en	preferred	preferred en (phrase)
+modular-fusion-reactor	modular-fusion-reactor	en	alias	IME token-only form
+模块化聚变反应堆	modular-fusion-reactor	zh	alias	verbose form
+同位素生产	isotope-production	zh	preferred	preferred zh
+isotope production	isotope-production	en	preferred	preferred en (phrase)
+isotope-production	isotope-production	en	alias	IME token-only form
+医用同位素生产	isotope-production	zh	alias	medical variant
+聚变中子应用	fusion-neutron-application	zh	preferred	preferred zh
+fusion neutron application	fusion-neutron-application	en	preferred	preferred en (phrase)
+fusion-neutron-application	fusion-neutron-application	en	alias	IME token-only form
+非电力聚变应用	fusion-neutron-application	zh	alias	alternative description
+私营聚变投资	private-fusion-investment	zh	preferred	preferred zh
+private fusion investment	private-fusion-investment	en	preferred	preferred en (phrase)
+private-fusion-investment	private-fusion-investment	en	alias	IME token-only form
+聚变私募投资	private-fusion-investment	zh	alias	PE variant
+
+# ---- Batch C: Commercialization Physics & Engineering (2026-04-17) ----
+
+# recirculating-power-fraction
+再循环功率份额	recirculating-power-fraction	zh	preferred	preferred zh
+recirculating power fraction	recirculating-power-fraction	en	preferred	preferred en
+recirculating-power-fraction	recirculating-power-fraction	en	alias	IME token-only form
+再循环功率比	recirculating-power-fraction	zh	alias	alt zh
+recirculating fraction	recirculating-power-fraction	en	alias	short form
+
+# plant-efficiency
+电站效率	plant-efficiency	zh	preferred	preferred zh
+plant efficiency	plant-efficiency	en	preferred	preferred en
+plant-efficiency	plant-efficiency	en	alias	IME token-only form
+电厂效率	plant-efficiency	zh	alias	alt zh
+
+# scientific-q
+科学Q值	scientific-q	zh	preferred	preferred zh
+scientific Q	scientific-q	en	preferred	preferred en
+Q_sci	scientific-q	abbr	preferred	common abbreviation
+科学增益因子	scientific-q	zh	alias	alt zh
+
+# engineering-q
+工程Q值	engineering-q	zh	preferred	preferred zh
+engineering Q	engineering-q	en	preferred	preferred en
+Q_eng	engineering-q	abbr	preferred	common abbreviation
+
+# compact-fusion
+紧凑聚变	compact-fusion	zh	preferred	preferred zh
+compact fusion	compact-fusion	en	preferred	preferred en
+compact-fusion	compact-fusion	en	alias	IME token-only form
+紧凑型聚变	compact-fusion	zh	alias	alt zh
+
+# high-field-approach
+高场路线	high-field-approach	zh	preferred	preferred zh
+high-field approach	high-field-approach	en	preferred	preferred en
+high-field-approach	high-field-approach	en	alias	IME token-only form
+高磁场路线	high-field-approach	zh	alias	alt zh
+high field approach	high-field-approach	en	alias	no-hyphen variant
+
+# alternative-confinement
+替代约束方案	alternative-confinement	zh	preferred	preferred zh
+alternative confinement	alternative-confinement	en	preferred	preferred en
+alternative-confinement	alternative-confinement	en	alias	IME token-only form
+替代约束	alternative-confinement	zh	alias	short zh
+alternative confinement concept	alternative-confinement	en	alias	extended form
+
+# techno-economic-analysis
+技术经济分析	techno-economic-analysis	zh	preferred	preferred zh
+techno-economic analysis	techno-economic-analysis	en	preferred	preferred en
+TEA	techno-economic-analysis	abbr	preferred	common abbreviation
+techno-economic-analysis	techno-economic-analysis	en	alias	IME token-only form
+技术经济评估	techno-economic-analysis	zh	alias	alt zh
+techno-economic assessment	techno-economic-analysis	en	alias	assessment variant
+
+# milestone-based-development
+里程碑驱动开发	milestone-based-development	zh	preferred	preferred zh
+milestone-based development	milestone-based-development	en	preferred	preferred en
+milestone-based-development	milestone-based-development	en	alias	IME token-only form
+里程碑式开发	milestone-based-development	zh	alias	alt zh
+
+# public-private-partnership
+公私合作	public-private-partnership	zh	preferred	preferred zh
+public-private partnership	public-private-partnership	en	preferred	preferred en
+PPP	public-private-partnership	abbr	preferred	common abbreviation
+public-private-partnership	public-private-partnership	en	alias	IME token-only form
+公私合营	public-private-partnership	zh	alias	alt zh
+
+# arpa-e
+ARPA-E	arpa-e	en	preferred	preferred en / official name
+arpa-e	arpa-e	en	alias	IME token-only form
+Advanced Research Projects Agency-Energy	arpa-e	en	alias	full name
+美国高级研究计划局-能源	arpa-e	zh	alias	zh full name
+
+# fusion-energy-sciences
+聚变能源科学	fusion-energy-sciences	zh	preferred	preferred zh
+Fusion Energy Sciences	fusion-energy-sciences	en	preferred	preferred en / US DOE office name
+fusion-energy-sciences	fusion-energy-sciences	en	alias	IME token-only form
+聚变能科学	fusion-energy-sciences	zh	alias	short zh
+
+# ---- Batch D: Power Balance & Grid Economics (2026-04-17) ----
+
+# baseload
+基荷	baseload	zh	preferred	preferred zh
+baseload	baseload	en	preferred	preferred en
+基荷电力	baseload	zh	alias	expanded zh
+baseload power	baseload	en	alias	expanded en
+
+# load-following
+负荷跟踪	load-following	zh	preferred	preferred zh
+load-following	load-following	en	preferred	preferred en
+负荷追踪	load-following	zh	alias	alt zh
+load following	load-following	en	alias	no-hyphen variant
+
+# dispatchable
+可调度电源	dispatchable	zh	preferred	preferred zh
+dispatchable	dispatchable	en	preferred	preferred en
+可调度	dispatchable	zh	alias	short zh
+dispatchable power	dispatchable	en	alias	expanded en
+
+# grid-integration
+电网集成	grid-integration	zh	preferred	preferred zh
+grid integration	grid-integration	en	preferred	preferred en
+grid-integration	grid-integration	en	alias	IME token-only form
+grid connection	grid-integration	en	alias	UK variant
+
+# capital-cost
+资本成本	capital-cost	zh	preferred	preferred zh
+capital cost	capital-cost	en	preferred	preferred en
+CAPEX	capital-cost	abbr	preferred	common abbreviation
+capital-cost	capital-cost	en	alias	IME token-only form
+资本支出	capital-cost	zh	alias	CAPEX zh
+
+# overnight-cost
+隔夜成本	overnight-cost	zh	preferred	preferred zh
+overnight cost	overnight-cost	en	preferred	preferred en
+overnight-cost	overnight-cost	en	alias	IME token-only form
+隔夜造价	overnight-cost	zh	alias	alt zh
+
+# construction-cost
+建造成本	construction-cost	zh	preferred	preferred zh
+construction cost	construction-cost	en	preferred	preferred en
+construction-cost	construction-cost	en	alias	IME token-only form
+建设成本	construction-cost	zh	alias	alt zh
+
+# availability-factor
+可用因子	availability-factor	zh	preferred	preferred zh
+availability factor	availability-factor	en	preferred	preferred en
+availability-factor	availability-factor	en	alias	IME token-only form
+
+# magnet-power
+磁体功耗	magnet-power	zh	preferred	preferred zh
+magnet power	magnet-power	en	preferred	preferred en
+magnet-power	magnet-power	en	alias	IME token-only form
+磁体耗电	magnet-power	zh	alias	alt zh
+
+# cryogenic-power
+低温系统功耗	cryogenic-power	zh	preferred	preferred zh
+cryogenic power	cryogenic-power	en	preferred	preferred en
+cryogenic-power	cryogenic-power	en	alias	IME token-only form
+低温功耗	cryogenic-power	zh	alias	short zh
+cryoplant power	cryogenic-power	en	alias	cryoplant variant
+
+# pumping-power
+泵送功耗	pumping-power	zh	preferred	preferred zh
+pumping power	pumping-power	en	preferred	preferred en
+pumping-power	pumping-power	en	alias	IME token-only form
+泵功率	pumping-power	zh	alias	short zh
+
+# current-drive-power
+电流驱动功耗	current-drive-power	zh	preferred	preferred zh
+current-drive power	current-drive-power	en	preferred	preferred en
+current-drive-power	current-drive-power	en	alias	IME token-only form
+电流驱动功率	current-drive-power	zh	alias	alt zh
+current drive power	current-drive-power	en	alias	no-hyphen variant
+
+# ---- Batch E: Licensing & Regulatory (2026-04-17) ----
+
+# licensing-pathway
+许可路径	licensing-pathway	zh	preferred	preferred zh
+licensing pathway	licensing-pathway	en	preferred	preferred en
+licensing-pathway	licensing-pathway	en	alias	IME token-only form
+许可审批路径	licensing-pathway	zh	alias	expanded zh
+regulatory pathway	licensing-pathway	en	alias	synonym
+
+# fusion-regulation
+聚变监管	fusion-regulation	zh	preferred	preferred zh
+fusion regulation	fusion-regulation	en	preferred	preferred en
+fusion-regulation	fusion-regulation	en	alias	IME token-only form
+聚变法规	fusion-regulation	zh	alias	alt zh
+fusion regulatory framework	fusion-regulation	en	alias	expanded en
+
+# public-dose
+公众剂量	public-dose	zh	preferred	preferred zh
+public dose	public-dose	en	preferred	preferred en
+public-dose	public-dose	en	alias	IME token-only form
+公众辐射剂量	public-dose	zh	alias	expanded zh
+public exposure dose	public-dose	en	alias	expanded en
+
+# site-boundary-dose
+厂址边界剂量	site-boundary-dose	zh	preferred	preferred zh
+site boundary dose	site-boundary-dose	en	preferred	preferred en
+site-boundary-dose	site-boundary-dose	en	alias	IME token-only form
+厂界剂量	site-boundary-dose	zh	alias	short zh
+fence-line dose	site-boundary-dose	en	alias	US variant
+
+# activated-waste
+活化废物	activated-waste	zh	preferred	preferred zh
+activated waste	activated-waste	en	preferred	preferred en
+activated-waste	activated-waste	en	alias	IME token-only form
+中子活化废物	activated-waste	zh	alias	expanded zh
+neutron-activated waste	activated-waste	en	alias	expanded en
+
+# recycling-limit
+再循环限值	recycling-limit	zh	preferred	preferred zh
+recycling limit	recycling-limit	en	preferred	preferred en
+recycling-limit	recycling-limit	en	alias	IME token-only form
+可再循环限值	recycling-limit	zh	alias	alt zh
+recycling threshold	recycling-limit	en	alias	synonym
+
+# deterministic-safety-analysis
+确定论安全分析	deterministic-safety-analysis	zh	preferred	preferred zh
+deterministic safety analysis	deterministic-safety-analysis	en	preferred	preferred en
+DSA	deterministic-safety-analysis	abbr	preferred	common abbreviation
+deterministic-safety-analysis	deterministic-safety-analysis	en	alias	IME token-only form
+确定性安全分析	deterministic-safety-analysis	zh	alias	alt zh
+
+# ---- Batch F: Magnets & Industrialization (2026-04-17) ----
+
+# hts-magnet
+高温超导磁体	hts-magnet	zh	preferred	preferred zh
+HTS magnet	hts-magnet	en	preferred	preferred en
+hts-magnet	hts-magnet	en	alias	IME token-only form
+HTS磁体	hts-magnet	zh	alias	short zh
+high-temperature superconducting magnet	hts-magnet	en	alias	expanded en
+
+# demountable-coil
+可拆卸线圈	demountable-coil	zh	preferred	preferred zh
+demountable coil	demountable-coil	en	preferred	preferred en
+demountable-coil	demountable-coil	en	alias	IME token-only form
+可拦截线圈	demountable-coil	zh	alias	alt zh
+
+# jointed-magnet
+接头磁体	jointed-magnet	zh	preferred	preferred zh
+jointed magnet	jointed-magnet	en	preferred	preferred en
+jointed-magnet	jointed-magnet	en	alias	IME token-only form
+分段磁体	jointed-magnet	zh	alias	alt zh
+
+# no-insulation-coil
+无绝缘线圈	no-insulation-coil	zh	preferred	preferred zh
+no-insulation coil	no-insulation-coil	en	preferred	preferred en
+NI coil	no-insulation-coil	en	alias	abbreviated form
+no-insulation-coil	no-insulation-coil	en	alias	IME token-only form
+无绝缘HTS线圈	no-insulation-coil	zh	alias	HTS-qualified zh
+
+# high-field-magnet
+高场磁体	high-field-magnet	zh	preferred	preferred zh
+high-field magnet	high-field-magnet	en	preferred	preferred en
+high-field-magnet	high-field-magnet	en	alias	IME token-only form
+高磁场磁体	high-field-magnet	zh	alias	alt zh
+
+# equilibrium-field-coil
+平衡场线圈	equilibrium-field-coil	zh	preferred	preferred zh
+equilibrium field coil	equilibrium-field-coil	en	preferred	preferred en
+EF coil	equilibrium-field-coil	en	alias	abbreviated form
+equilibrium-field-coil	equilibrium-field-coil	en	alias	IME token-only form
+EF线圈	equilibrium-field-coil	zh	alias	short zh
+
+# commercial-fusion
+商业聚变	commercial-fusion	zh	preferred	preferred zh
+commercial fusion	commercial-fusion	en	preferred	preferred en
+commercial-fusion	commercial-fusion	en	alias	IME token-only form
+商用聚变	commercial-fusion	zh	alias	alt zh
+commercial fusion energy	commercial-fusion	en	alias	expanded en
+
+# manufacturing-readiness-level
+制造就绪度	manufacturing-readiness-level	zh	preferred	preferred zh
+manufacturing readiness level	manufacturing-readiness-level	en	preferred	preferred en
+MRL	manufacturing-readiness-level	abbr	preferred	common abbreviation
+manufacturing-readiness-level	manufacturing-readiness-level	en	alias	IME token-only form
+制造成熟度	manufacturing-readiness-level	zh	alias	alt zh
+
+# a-fns
+A-FNS	a-fns	en	preferred	preferred en / facility name
+a-fns	a-fns	en	alias	IME token-only form
+Advanced Fusion Neutron Source	a-fns	en	alias	full name
+先进聚变中子源	a-fns	zh	alias	zh translation
+
+# ---- Batch G: Plasma Control (2026-04-17) ----
+
+# elm-control
+ELM控制	elm-control	zh	preferred	preferred zh
+ELM control	elm-control	en	preferred	preferred en
+elm-control	elm-control	en	alias	IME token-only form
+
+# rmp-coil
+RMP线圈	rmp-coil	zh	preferred	preferred zh
+RMP coil	rmp-coil	en	preferred	preferred en
+rmp-coil	rmp-coil	en	alias	IME token-only form
+共振磁扰动线圈	rmp-coil	zh	alias	full zh
+resonant magnetic perturbation coil	rmp-coil	en	alias	full en
+
+# plasma-shape-control
+等离子体形状控制	plasma-shape-control	zh	preferred	preferred zh
+plasma shape control	plasma-shape-control	en	preferred	preferred en
+plasma-shape-control	plasma-shape-control	en	alias	IME token-only form
+等离子体截面控制	plasma-shape-control	zh	alias	cross-section form
+
+# scenario-development
+运行场景开发	scenario-development	zh	preferred	preferred zh
+scenario development	scenario-development	en	preferred	preferred en
+scenario-development	scenario-development	en	alias	IME token-only form
+场景开发	scenario-development	zh	alias	short zh
+operational scenario development	scenario-development	en	alias	expanded en
+
+# ---- Batch H: Tritium Fuel Cycle Metrics (2026-04-17) ----
+
+# tritium-doubling-time
+氚倍增时间	tritium-doubling-time	zh	preferred	preferred zh
+tritium doubling time	tritium-doubling-time	en	preferred	preferred en
+TDT	tritium-doubling-time	abbr	preferred	common abbreviation
+tritium-doubling-time	tritium-doubling-time	en	alias	IME token-only form
+氚自给倍增时间	tritium-doubling-time	zh	alias	expanded zh
+
+# tritium-processing-time
+氚处理时间	tritium-processing-time	zh	preferred	preferred zh
+tritium processing time	tritium-processing-time	en	preferred	preferred en
+tritium-processing-time	tritium-processing-time	en	alias	IME token-only form
+氚滞留时间	tritium-processing-time	zh	alias	residence time zh
+tritium residence time	tritium-processing-time	en	alias	residence time en
+
+# tritium-inventory-control
+氚存量控制	tritium-inventory-control	zh	preferred	preferred zh
+tritium inventory control	tritium-inventory-control	en	preferred	preferred en
+tritium-inventory-control	tritium-inventory-control	en	alias	IME token-only form
+氚库存管理	tritium-inventory-control	zh	alias	alt zh
+
+# tritium-confinement
+氚包容	tritium-confinement	zh	preferred	preferred zh
+tritium confinement	tritium-confinement	en	preferred	preferred en
+tritium-confinement	tritium-confinement	en	alias	IME token-only form
+氚封堵	tritium-confinement	zh	alias	alt zh
+tritium containment	tritium-confinement	en	alias	synonym
+
+# direct-internal-recycling
+直接内循环	direct-internal-recycling	zh	preferred	preferred zh
+direct internal recycling	direct-internal-recycling	en	preferred	preferred en
+direct-internal-recycling	direct-internal-recycling	en	alias	IME token-only form
+内循环	direct-internal-recycling	zh	alias	short zh
+
+# neutron-economy
+中子经济性	neutron-economy	zh	preferred	preferred zh
+neutron economy	neutron-economy	en	preferred	preferred en
+neutron-economy	neutron-economy	en	alias	IME token-only form
+中子利用率	neutron-economy	zh	alias	alt zh
+
+# dust-safety
+粉尘安全	dust-safety	zh	preferred	preferred zh
+dust safety	dust-safety	en	preferred	preferred en
+dust-safety	dust-safety	en	alias	IME token-only form
+粉尘安全性	dust-safety	zh	alias	alt zh
+dust mobilization safety	dust-safety	en	alias	expanded en
+
+# ---- Batch I: Irradiation Testing & Damage (2026-04-17) ----
+
+# neutron-irradiation-facility
+中子辐照设施	neutron-irradiation-facility	zh	preferred	preferred zh
+neutron irradiation facility	neutron-irradiation-facility	en	preferred	preferred en
+neutron-irradiation-facility	neutron-irradiation-facility	en	alias	IME token-only form
+中子照射设施	neutron-irradiation-facility	zh	alias	alt zh
+
+# volumetric-neutron-source
+体中子源	volumetric-neutron-source	zh	preferred	preferred zh
+volumetric neutron source	volumetric-neutron-source	en	preferred	preferred en
+VNS	volumetric-neutron-source	abbr	preferred	common abbreviation
+volumetric-neutron-source	volumetric-neutron-source	en	alias	IME token-only form
+
+# accelerator-based-neutron-source
+加速器中子源	accelerator-based-neutron-source	zh	preferred	preferred zh
+accelerator-based neutron source	accelerator-based-neutron-source	en	preferred	preferred en
+accelerator-based-neutron-source	accelerator-based-neutron-source	en	alias	IME token-only form
+加速器驱动中子源	accelerator-based-neutron-source	zh	alias	alt zh
+accelerator-driven neutron source	accelerator-based-neutron-source	en	alias	driven variant
+
+# irradiation-campaign
+辐照试验活动	irradiation-campaign	zh	preferred	preferred zh
+irradiation campaign	irradiation-campaign	en	preferred	preferred en
+irradiation-campaign	irradiation-campaign	en	alias	IME token-only form
+辐照计划	irradiation-campaign	zh	alias	alt zh
+
+# irradiation-capsule
+辐照容器	irradiation-capsule	zh	preferred	preferred zh
+irradiation capsule	irradiation-capsule	en	preferred	preferred en
+irradiation-capsule	irradiation-capsule	en	alias	IME token-only form
+辐照包壳	irradiation-capsule	zh	alias	alt zh
+
+# dpa-rate
+dpa率	dpa-rate	zh	preferred	preferred zh
+dpa rate	dpa-rate	en	preferred	preferred en
+dpa-rate	dpa-rate	en	alias	IME token-only form
+位移损伤率	dpa-rate	zh	alias	expanded zh
+displacement damage rate	dpa-rate	en	alias	expanded en
+
+# ---- Batch J: Plasma Performance Metrics (2026-04-17) ----
+
+# fusion-power-density
+聚变功率密度	fusion-power-density	zh	preferred	preferred zh
+fusion power density	fusion-power-density	en	preferred	preferred en
+fusion-power-density	fusion-power-density	en	alias	IME token-only form
+聚变体积功率密度	fusion-power-density	zh	alias	volumetric zh
+
+# heating-power
+加热功率	heating-power	zh	preferred	preferred zh
+heating power	heating-power	en	preferred	preferred en
+heating-power	heating-power	en	alias	IME token-only form
+总加热功率	heating-power	zh	alias	total heating zh
+total heating power	heating-power	en	alias	total variant
+
+# ---- Batch K: PWI & Materials (2026-04-17) ----
+
+# hydrogen-retention
+氢滞留	hydrogen-retention	zh	preferred	preferred zh
+hydrogen retention in materials	hydrogen-retention	en	preferred	preferred en
+hydrogen-retention	hydrogen-retention	en	alias	IME token-only form
+氢同位素滞留	hydrogen-retention	zh	alias	isotope-qualified zh
+
+# erosion-redeposition
+侵蚀再沉积	erosion-redeposition	zh	preferred	preferred zh
+erosion-redeposition	erosion-redeposition	en	preferred	preferred en
+侵蚀与再沉积	erosion-redeposition	zh	alias	conjunction zh
+erosion and redeposition	erosion-redeposition	en	alias	conjunction en
+
+# hydrogen-isotope-exchange
+氢同位素交换	hydrogen-isotope-exchange	zh	preferred	preferred zh
+hydrogen isotope exchange	hydrogen-isotope-exchange	en	preferred	preferred en
+hydrogen-isotope-exchange	hydrogen-isotope-exchange	en	alias	IME token-only form
+氢同位素置换	hydrogen-isotope-exchange	zh	alias	alt zh
+isotope exchange	hydrogen-isotope-exchange	en	alias	short en
+
+# first-wall-lifetime
+第一壁寿命	first-wall-lifetime	zh	preferred	preferred zh
+first-wall lifetime	first-wall-lifetime	en	preferred	preferred en
+first-wall-lifetime	first-wall-lifetime	en	alias	IME token-only form
+FW lifetime	first-wall-lifetime	en	alias	abbreviated en
+first wall lifetime	first-wall-lifetime	en	alias	no-hyphen variant
+
+# ---- Batch L: Systems Engineering & Plant Design (2026-04-17) ----
+
+# systems-engineering
+系统工程	systems-engineering	zh	preferred	preferred zh
+systems engineering	systems-engineering	en	preferred	preferred en
+systems-engineering	systems-engineering	en	alias	IME token-only form
+SE	systems-engineering	en	alias	common abbr
+
+# reliability-engineering
+可靠性工程	reliability-engineering	zh	preferred	preferred zh
+reliability engineering	reliability-engineering	en	preferred	preferred en
+reliability-engineering	reliability-engineering	en	alias	IME token-only form
+
+# rams-analysis
+RAMS分析	rams-analysis	zh	preferred	preferred zh
+RAMS analysis	rams-analysis	en	preferred	preferred en
+rams-analysis	rams-analysis	en	alias	IME token-only form
+RAMS	rams-analysis	en	alias	canonical abbr
+可靠性可用性可维护性安全性分析	rams-analysis	zh	alias	full expansion zh
+
+# nuclear-island
+核岛	nuclear-island	zh	preferred	preferred zh
+nuclear island	nuclear-island	en	preferred	preferred en
+nuclear-island	nuclear-island	en	alias	IME token-only form
+NI	nuclear-island	en	alias	common abbr
+
+# conventional-island
+常规岛	conventional-island	zh	preferred	preferred zh
+conventional island	conventional-island	en	preferred	preferred en
+conventional-island	conventional-island	en	alias	IME token-only form
+CI	conventional-island	en	alias	common abbr
+
+# turbine-island
+汽轮机岛	turbine-island	zh	preferred	preferred zh
+turbine island	turbine-island	en	preferred	preferred en
+turbine-island	turbine-island	en	alias	IME token-only form
+汽机岛	turbine-island	zh	alias	short zh
+
+# environmental-impact-assessment
+环境影响评价	environmental-impact-assessment	zh	preferred	preferred zh
+environmental impact assessment	environmental-impact-assessment	en	preferred	preferred en
+environmental-impact-assessment	environmental-impact-assessment	en	alias	IME token-only form
+EIA	environmental-impact-assessment	en	alias	canonical abbr
+环境影响评估	environmental-impact-assessment	zh	alias	alt zh wording
+环评	environmental-impact-assessment	zh	alias	short zh
+
+# digital-engineering
+数字工程	digital-engineering	zh	preferred	preferred zh
+digital engineering	digital-engineering	en	preferred	preferred en
+digital-engineering	digital-engineering	en	alias	IME token-only form
+DE	digital-engineering	en	alias	common abbr
+数字化工程	digital-engineering	zh	alias	alt zh
+
+# mean-time-between-failures
+平均故障间隔时间	mean-time-between-failures	zh	preferred	preferred zh
+mean time between failures	mean-time-between-failures	en	preferred	preferred en
+mean-time-between-failures	mean-time-between-failures	en	alias	IME token-only form
+MTBF	mean-time-between-failures	en	alias	canonical abbr
+平均无故障时间	mean-time-between-failures	zh	alias	alt zh
+
+# ---- Batch M: Major Reactor Programs (2026-04-17) ----
+
+# eu-demo
+EU-DEMO	eu-demo	en	preferred	preferred en
+eu-demo	eu-demo	en	alias	IME token-only form
+欧洲DEMO	eu-demo	zh	alias	mixed zh-en
+European DEMO	eu-demo	en	alias	full name en
+
+# k-demo
+K-DEMO	k-demo	en	preferred	preferred en
+k-demo	k-demo	en	alias	IME token-only form
+韩国DEMO	k-demo	zh	alias	mixed zh-en
+Korean DEMO	k-demo	en	alias	full name en
+
+
+
+# iter-organization
+ITER国际组织	iter-organization	zh	preferred	preferred zh
+ITER Organization	iter-organization	en	preferred	preferred en
+iter-organization	iter-organization	en	alias	IME token-only form
+IO	iter-organization	en	alias	canonical abbr
+ITER IO	iter-organization	en	alias	common usage
+ITER组织	iter-organization	zh	alias	short zh
+
+# us-burning-plasma
+美国燃烧等离子体计划	us-burning-plasma	zh	preferred	preferred zh
+US burning plasma program	us-burning-plasma	en	preferred	preferred en
+us-burning-plasma	us-burning-plasma	en	alias	IME token-only form
+burning plasma program	us-burning-plasma	en	alias	short en
+
+# ---- Batch N: Divertor Physics Supplement (2026-04-17) ----
+
+# plasma-exhaust
+等离子体排出	plasma-exhaust	zh	preferred	preferred zh
+plasma exhaust	plasma-exhaust	en	preferred	preferred en
+plasma-exhaust	plasma-exhaust	en	alias	IME token-only form
+等离子体排气	plasma-exhaust	zh	alias	alt zh
+exhaust handling	plasma-exhaust	en	alias	engineering variant
+
+# heat-flux-limit
+热流密度限值	heat-flux-limit	zh	preferred	preferred zh
+heat flux limit	heat-flux-limit	en	preferred	preferred en
+heat-flux-limit	heat-flux-limit	en	alias	IME token-only form
+热负荷限值	heat-flux-limit	zh	alias	alt zh
+heat load limit	heat-flux-limit	en	alias	alt en
+
+
+# partial-detachment
+部分脱靶	partial-detachment	zh	preferred	preferred zh
+partial detachment	partial-detachment	en	preferred	preferred en
+partial-detachment	partial-detachment	en	alias	IME token-only form
+半脱靶	partial-detachment	zh	alias	informal zh
+
+# ---- Batch O: Computational Methods (2026-04-17) ----
+
+# reduced-order-model
+降阶模型	reduced-order-model	zh	preferred	preferred zh
+reduced-order model	reduced-order-model	en	preferred	preferred en
+reduced-order-model	reduced-order-model	en	alias	IME token-only form
+ROM	reduced-order-model	en	alias	canonical abbr
+reduced order model	reduced-order-model	en	alias	no-hyphen variant
+简化模型	reduced-order-model	zh	alias	alt zh
+
+# multi-physics-coupling
+多物理场耦合	multi-physics-coupling	zh	preferred	preferred zh
+multi-physics coupling	multi-physics-coupling	en	preferred	preferred en
+multi-physics-coupling	multi-physics-coupling	en	alias	IME token-only form
+multiphysics coupling	multi-physics-coupling	en	alias	no-hyphen variant
+多场耦合	multi-physics-coupling	zh	alias	short zh
+
+# multi-scale-modeling
+多尺度模拟	multi-scale-modeling	zh	preferred	preferred zh
+multi-scale modeling	multi-scale-modeling	en	preferred	preferred en
+multi-scale-modeling	multi-scale-modeling	en	alias	IME token-only form
+multiscale modeling	multi-scale-modeling	en	alias	no-hyphen variant
+多尺度建模	multi-scale-modeling	zh	alias	alt zh
+
+# design-optimization
+设计优化	design-optimization	zh	preferred	preferred zh
+design optimization	design-optimization	en	preferred	preferred en
+design-optimization	design-optimization	en	alias	IME token-only form
+优化设计	design-optimization	zh	alias	reversed zh
+
+# ---- Batch P: Fusion Commercialization & Economics (2026-04-17) ----
+
+
+
+# commercialization-pathway
+商业化路径	commercialization-pathway	zh	preferred	preferred zh
+commercialization pathway	commercialization-pathway	en	preferred	preferred en
+commercialization-pathway	commercialization-pathway	en	alias	IME token-only form
+商业化路线	commercialization-pathway	zh	alias	alt zh
+path to commercialization	commercialization-pathway	en	alias	alt en
+
+# social-license
+社会许可	social-license	zh	preferred	preferred zh
+social license	social-license	en	preferred	preferred en
+social-license	social-license	en	alias	IME token-only form
+social license to operate	social-license	en	alias	full phrase
+社会接受度	social-license	zh	alias	alt zh
+SLO	social-license	en	alias	common abbr
+
+# fusion-industry
+聚变产业	fusion-industry	zh	preferred	preferred zh
+fusion industry	fusion-industry	en	preferred	preferred en
+fusion-industry	fusion-industry	en	alias	IME token-only form
+聚变能产业	fusion-industry	zh	alias	expanded zh
+
+# workforce-development
+人才队伍建设	workforce-development	zh	preferred	preferred zh
+workforce development	workforce-development	en	preferred	preferred en
+workforce-development	workforce-development	en	alias	IME token-only form
+人力资源开发	workforce-development	zh	alias	formal zh
+人才培养	workforce-development	zh	alias	short zh
+
+# venture-capital
+风险投资	venture-capital	zh	preferred	preferred zh
+venture capital	venture-capital	en	preferred	preferred en
+venture-capital	venture-capital	en	alias	IME token-only form
+VC	venture-capital	en	alias	canonical abbr
+创业投资	venture-capital	zh	alias	alt zh
+
+# private-investment
+私人投资	private-investment	zh	preferred	preferred zh
+private investment	private-investment	en	preferred	preferred en
+private-investment	private-investment	en	alias	IME token-only form
+民间投资	private-investment	zh	alias	alt zh
+private funding	private-investment	en	alias	alt en
+private capital	private-investment	en	alias	alt en 2
+
+# ---- Batch Q: Disruption Events (2026-04-17) ----
+
+# disruption-mitigation-system
+破裂缓解系统	disruption-mitigation-system	zh	preferred	preferred zh
+disruption mitigation system	disruption-mitigation-system	en	preferred	preferred en
+disruption-mitigation-system	disruption-mitigation-system	en	alias	IME token-only form
+DMS	disruption-mitigation-system	en	alias	canonical abbr
+破裂缓解装置	disruption-mitigation-system	zh	alias	alt zh
+
+# disruption-force
+破裂电磁力	disruption-force	zh	preferred	preferred zh
+disruption force	disruption-force	en	preferred	preferred en
+disruption-force	disruption-force	en	alias	IME token-only form
+disruption electromagnetic force	disruption-force	en	alias	full en
+破裂载荷	disruption-force	zh	alias	load variant zh
+disruption load	disruption-force	en	alias	load variant en
+
+# disruption-runaway
+破裂逃逸电子	disruption-runaway	zh	preferred	preferred zh
+disruption runaway electrons	disruption-runaway	en	preferred	preferred en
+disruption-runaway	disruption-runaway	en	alias	IME token-only form
+runaway electron beam	disruption-runaway	en	alias	beam variant
+RE beam	disruption-runaway	en	alias	short en
+
+# ---- Batch R: Remote Maintenance & Robotics (2026-04-17) ----
+
+# in-vessel-inspection
+真空室内检测	in-vessel-inspection	zh	preferred	preferred zh
+in-vessel inspection	in-vessel-inspection	en	preferred	preferred en
+in-vessel-inspection	in-vessel-inspection	en	alias	IME token-only form
+堆内检测	in-vessel-inspection	zh	alias	short zh
+IVI	in-vessel-inspection	en	alias	common abbr
+
+# manipulator
+操纵器	manipulator	zh	preferred	preferred zh
+manipulator	manipulator	en	preferred	preferred en
+机械臂	manipulator	zh	alias	common zh
+robotic arm	manipulator	en	alias	common en
+remote manipulator	manipulator	en	alias	qualified en
+
+# end-effector
+末端执行器	end-effector	zh	preferred	preferred zh
+end effector	end-effector	en	preferred	preferred en
+end-effector	end-effector	en	alias	IME token-only form
+工具头	end-effector	zh	alias	informal zh
+
+# blanket-replacement
+包层更换	blanket-replacement	zh	preferred	preferred zh
+blanket replacement	blanket-replacement	en	preferred	preferred en
+blanket-replacement	blanket-replacement	en	alias	IME token-only form
+包层模块更换	blanket-replacement	zh	alias	full zh
+blanket module replacement	blanket-replacement	en	alias	full en
+
+# cassette-replacement
+暗盒更换	cassette-replacement	zh	preferred	preferred zh
+cassette replacement	cassette-replacement	en	preferred	preferred en
+cassette-replacement	cassette-replacement	en	alias	IME token-only form
+偏滤器暗盒更换	cassette-replacement	zh	alias	qualified zh
+divertor cassette replacement	cassette-replacement	en	alias	qualified en
+
+
+# --- Batch S: Energy Policy & Sustainability (2026-04-17) ---
+energy security	energy-security	en	preferred	preferred en
+能源安全	energy-security	zh	preferred	preferred zh
+energy-security	energy-security	en	alias	IME token-only form
+decarbonization	decarbonization	en	preferred	preferred en
+脱碳	decarbonization	zh	preferred	preferred zh
+decarbonisation	decarbonization	en	alias	BrE spelling
+低碳化	decarbonization	zh	alias	variant zh
+grid stability	grid-stability	en	preferred	preferred en
+电网稳定性	grid-stability	zh	preferred	preferred zh
+grid-stability	grid-stability	en	alias	IME token-only form
+电网稳定	grid-stability	zh	alias	short zh
+proliferation resistance	proliferation-resistance	en	preferred	preferred en
+防扩散特性	proliferation-resistance	zh	preferred	preferred zh
+proliferation-resistance	proliferation-resistance	en	alias	IME token-only form
+防核扩散	proliferation-resistance	zh	alias	short zh
+nuclear non-proliferation	proliferation-resistance	en	alias	policy synonym
+fusion safety advantage	fusion-safety-advantage	en	preferred	preferred en
+聚变安全优势	fusion-safety-advantage	zh	preferred	preferred zh
+fusion-safety-advantage	fusion-safety-advantage	en	alias	IME token-only form
+聚变固有安全性	fusion-safety-advantage	zh	alias	variant zh
+clean energy	clean-energy	en	preferred	preferred en
+清洁能源	clean-energy	zh	preferred	preferred zh
+clean-energy	clean-energy	en	alias	IME token-only form
+net zero	net-zero	en	preferred	preferred en
+净零排放	net-zero	zh	preferred	preferred zh
+net-zero	net-zero	en	alias	hyphenated form
+净零	net-zero	zh	alias	short zh
+carbon neutrality	net-zero	en	alias	popular synonym
+碳中和	net-zero	zh	alias	popular zh synonym
+
+# --- Batch T: Coolant Systems & Blanket Supplement (2026-04-17) ---
+dual coolant	dual-coolant	en	preferred	preferred en
+双冷却剂	dual-coolant	zh	preferred	preferred zh
+dual-coolant	dual-coolant	en	alias	IME token-only form
+双冷却	dual-coolant	zh	alias	short zh
+self-cooled	self-cooled	en	preferred	preferred en
+自冷却	self-cooled	zh	preferred	preferred zh
+self cooled	self-cooled	en	alias	no-hyphen form
+自冷	self-cooled	zh	alias	short zh
+SCLL	scll	en	preferred	abbreviation
+自冷锂铅包层	scll	zh	preferred	preferred zh
+self-cooled lithium-lead	scll	en	preferred	preferred en (phrase)
+自冷锂铅	scll	zh	alias	short zh
+self-cooled lithium-lead blanket	scll	en	alias	full form
+coolant compatibility	coolant-compatibility	en	preferred	preferred en
+冷却剂相容性	coolant-compatibility	zh	preferred	preferred zh
+coolant-compatibility	coolant-compatibility	en	alias	IME token-only form
+冷却剂兼容性	coolant-compatibility	zh	alias	variant zh
+
+# --- Batch U: Environmental & Lifecycle (2026-04-17) ---
+life-cycle assessment	life-cycle-assessment	en	preferred	preferred en
+生命周期评价	life-cycle-assessment	zh	preferred	preferred zh
+life-cycle-assessment	life-cycle-assessment	en	alias	IME token-only form
+LCA	life-cycle-assessment	en	alias	abbreviation
+life cycle assessment	life-cycle-assessment	en	alias	no-hyphen form
+生命周期评估	life-cycle-assessment	zh	alias	variant zh
+carbon footprint	carbon-footprint	en	preferred	preferred en
+碳足迹	carbon-footprint	zh	preferred	preferred zh
+carbon-footprint	carbon-footprint	en	alias	IME token-only form
+recycling rate	recycling-rate	en	preferred	preferred en
+再循环率	recycling-rate	zh	preferred	preferred zh
+recycling-rate	recycling-rate	en	alias	IME token-only form
+decay storage	decay-storage	en	preferred	preferred en
+衰变贮存	decay-storage	zh	preferred	preferred zh
+decay-storage	decay-storage	en	alias	IME token-only form
+衰变储存	decay-storage	zh	alias	variant zh
+interim decay storage	decay-storage	en	alias	qualified en
+water use	water-use	en	preferred	preferred en
+用水量	water-use	zh	preferred	preferred zh
+water-use	water-use	en	alias	IME token-only form
+water consumption	water-use	en	alias	synonym
+耗水量	water-use	zh	alias	variant zh
+
+# --- Batch V: Supplemental Physics & Diagnostics (2026-04-17) ---
+wall-plug efficiency	wall-plug-efficiency	en	preferred	preferred en
+墙插效率	wall-plug-efficiency	zh	preferred	preferred zh
+wall-plug-efficiency	wall-plug-efficiency	en	alias	IME token-only form
+wall plug efficiency	wall-plug-efficiency	en	alias	no-hyphen form
+WPE	wall-plug-efficiency	en	alias	abbreviation
+电网到等离子体效率	wall-plug-efficiency	zh	alias	descriptive zh
+heating and current drive	heating-and-current-drive	en	preferred	preferred en
+加热与电流驱动	heating-and-current-drive	zh	preferred	preferred zh
+heating-and-current-drive	heating-and-current-drive	en	alias	IME token-only form
+H&CD	heating-and-current-drive	en	alias	abbreviation
+加热和电流驱动	heating-and-current-drive	zh	alias	variant zh
+辅助加热系统	heating-and-current-drive	zh	alias	generic zh
+calorimetry	calorimetry	en	preferred	preferred en
+量热法	calorimetry	zh	preferred	preferred zh
+calorimeter	calorimetry	en	alias	instrument form
+量热测量	calorimetry	zh	alias	variant zh
+baseload-power	baseload	en	alias	hyphenated form
+base load power	baseload	en	alias	spaced form
+基底负荷	baseload	zh	alias	variant zh
+secondary coolant loop	secondary-loop	en	alias	expanded form
+主冷却回路	primary-loop	zh	alias	qualified zh
+EC current drive	eccd	en	alias	short form
+bolometry	bolometer	en	alias	technique name
+辐射功率测量	bolometer	zh	alias	descriptive zh
+
+# --- Batch W: Fusion Materials Extended (2026-04-18) ---
+structural material	structural-material	en	preferred	preferred en
+结构材料	structural-material	zh	preferred	preferred zh
+structural-material	structural-material	en	alias	IME token-only form
+结构用材料	structural-material	zh	alias	variant zh
+armor material	armor-material	en	preferred	preferred en
+护甲材料	armor-material	zh	preferred	preferred zh
+armor-material	armor-material	en	alias	IME token-only form
+armour material	armor-material	en	alias	BrE spelling
+装甲材料	armor-material	zh	alias	variant zh
+nanostructured ferritic alloy	nano-structured-ferritic-alloy	en	preferred	preferred en
+纳米结构铁素体合金	nano-structured-ferritic-alloy	zh	preferred	preferred zh
+NFA	nano-structured-ferritic-alloy	en	preferred	abbreviation
+nano-structured-ferritic-alloy	nano-structured-ferritic-alloy	en	alias	IME token-only form
+纳米铁素体合金	nano-structured-ferritic-alloy	zh	alias	short zh
+tungsten fiber composite	tungsten-fiber-composite	en	preferred	preferred en
+钨纤维复合材料	tungsten-fiber-composite	zh	preferred	preferred zh
+tungsten-fiber-composite	tungsten-fiber-composite	en	alias	IME token-only form
+Wf/W	tungsten-fiber-composite	en	alias	symbol form
+钨纤维增强钨	tungsten-fiber-composite	zh	alias	descriptive zh
+tungsten laminate	tungsten-laminate	en	preferred	preferred en
+钨叠层材料	tungsten-laminate	zh	preferred	preferred zh
+tungsten-laminate	tungsten-laminate	en	alias	IME token-only form
+钨层合板	tungsten-laminate	zh	alias	variant zh
+
+# --- Batch X: Neutronics Irradiation Supplement (2026-04-18) ---
+nuclear heating rate	nuclear-heating-rate	en	preferred	preferred en
+核热沉积率	nuclear-heating-rate	zh	preferred	preferred zh
+nuclear-heating-rate	nuclear-heating-rate	en	alias	IME token-only form
+核产热	nuclear-heating-rate	zh	alias	short zh
+transmutation rate	transmutation-rate	en	preferred	preferred en
+嬗变率	transmutation-rate	zh	preferred	preferred zh
+transmutation-rate	transmutation-rate	en	alias	IME token-only form
+嬗变速率	transmutation-rate	zh	alias	variant zh
+primary knock-on atom	primary-knock-on-atom	en	preferred	preferred en
+初级碰撞原子	primary-knock-on-atom	zh	preferred	preferred zh
+PKA	primary-knock-on-atom	en	preferred	abbreviation
+primary-knock-on-atom	primary-knock-on-atom	en	alias	IME token-only form
+初级反冲原子	primary-knock-on-atom	zh	alias	variant zh
+gas production	gas-production	en	preferred	preferred en
+气体产生	gas-production	zh	preferred	preferred zh
+gas-production	gas-production	en	alias	IME token-only form
+transmutation gas	gas-production	en	alias	qualified en
+嬗变产气	gas-production	zh	alias	qualified zh
+appm	appm	en	preferred	preferred en
+原子百万分率	appm	zh	preferred	preferred zh
+atomic parts per million	appm	en	alias	full form
+
+# --- Batch Y: Confinement & Transport (2026-04-18) ---
+energy confinement	energy-confinement	en	preferred	preferred en
+能量约束	energy-confinement	zh	preferred	preferred zh
+energy-confinement	energy-confinement	en	alias	IME token-only form
+particle confinement	particle-confinement	en	preferred	preferred en
+粒子约束	particle-confinement	zh	preferred	preferred zh
+particle-confinement	particle-confinement	en	alias	IME token-only form
+impurity confinement	impurity-confinement	en	preferred	preferred en
+杂质约束	impurity-confinement	zh	preferred	preferred zh
+impurity-confinement	impurity-confinement	en	alias	IME token-only form
+杂质滞留	impurity-confinement	zh	alias	variant zh
+momentum confinement	momentum-confinement	en	preferred	preferred en
+动量约束	momentum-confinement	zh	preferred	preferred zh
+momentum-confinement	momentum-confinement	en	alias	IME token-only form
+
+# --- Batch Z: Fuel Cycle Extended (2026-04-18) ---
+fuel processing	fuel-processing	en	preferred	preferred en
+燃料处理	fuel-processing	zh	preferred	preferred zh
+fuel-processing	fuel-processing	en	alias	IME token-only form
+fuel cleanup	fuel-processing	en	alias	synonym
+燃料净化	fuel-processing	zh	alias	related zh
+deuterium extraction	deuterium-extraction	en	preferred	preferred en
+氘提取	deuterium-extraction	zh	preferred	preferred zh
+deuterium-extraction	deuterium-extraction	en	alias	IME token-only form
+重水分离	deuterium-extraction	zh	alias	related zh
+tritium diffusion	permeation	en	alias	related process
+氚扩散	permeation	zh	alias	related zh
+
+# --- Batch AA: Vacuum & Pumping (2026-04-18) ---
+pumping speed	pumping-speed	en	preferred	preferred en
+抽气速率	pumping-speed	zh	preferred	preferred zh
+pumping-speed	pumping-speed	en	alias	IME token-only form
+抽速	pumping-speed	zh	alias	short zh
+抽气速度	pumping-speed	zh	alias	variant zh
+vacuum leak	vacuum-leak	en	preferred	preferred en
+真空泄漏	vacuum-leak	zh	preferred	preferred zh
+vacuum-leak	vacuum-leak	en	alias	IME token-only form
+真空漏	vacuum-leak	zh	alias	short zh
+leak rate	leak-rate	en	preferred	preferred en
+漏率	leak-rate	zh	preferred	preferred zh
+leak-rate	leak-rate	en	alias	IME token-only form
+泄漏率	leak-rate	zh	alias	variant zh
+torus exhaust	torus-exhaust	en	preferred	preferred en
+环室排气	torus-exhaust	zh	preferred	preferred zh
+torus-exhaust	torus-exhaust	en	alias	IME token-only form
+torus exhaust gas	torus-exhaust	en	alias	expanded en
+排出气体	torus-exhaust	zh	alias	generic zh
+
+# --- Batch AB: Magnet Engineering Supplement (2026-04-18) ---
+coil case	coil-case	en	preferred	preferred en
+线圈盒	coil-case	zh	preferred	preferred zh
+coil-case	coil-case	en	alias	IME token-only form
+coil casing	coil-case	en	alias	variant en
+线圈壳体	coil-case	zh	alias	variant zh
+quench propagation	quench-propagation	en	preferred	preferred en
+失超传播	quench-propagation	zh	preferred	preferred zh
+quench-propagation	quench-propagation	en	alias	IME token-only form
+失超扩展	quench-propagation	zh	alias	variant zh
+training quench	training-quench	en	preferred	preferred en
+训练失超	training-quench	zh	preferred	preferred zh
+training-quench	training-quench	en	alias	IME token-only form
+magnet training	training-quench	en	alias	short form
+high-field side	high-field-side	en	preferred	preferred en
+高场侧	high-field-side	zh	preferred	preferred zh
+HFS	high-field-side	en	preferred	abbreviation
+high-field-side	high-field-side	en	alias	IME token-only form
+内侧	high-field-side	zh	alias	colloquial zh
+
+# --- Batch AC: Blanket Structure Detail (2026-04-18) ---
+neutron multiplier zone	neutron-multiplier-zone	en	preferred	preferred en
+中子倍增区	neutron-multiplier-zone	zh	preferred	preferred zh
+neutron-multiplier-zone	neutron-multiplier-zone	en	alias	IME token-only form
+倍增区	neutron-multiplier-zone	zh	alias	short zh
+multiplier zone	neutron-multiplier-zone	en	alias	short form
+first-wall panel	first-wall-panel	en	preferred	preferred en
+第一壁面板	first-wall-panel	zh	preferred	preferred zh
+first-wall-panel	first-wall-panel	en	alias	IME token-only form
+first wall panel	first-wall-panel	en	alias	no-hyphen form
+FW panel	first-wall-panel	en	alias	abbreviated form
+back supporting structure	back-supporting-structure	en	preferred	preferred en
+背板支撑结构	back-supporting-structure	zh	preferred	preferred zh
+back-supporting-structure	back-supporting-structure	en	alias	IME token-only form
+BSS	back-supporting-structure	en	alias	abbreviation
+stiffening grid	stiffening-grid	en	preferred	preferred en
+加强筋格栅	stiffening-grid	zh	preferred	preferred zh
+stiffening-grid	stiffening-grid	en	alias	IME token-only form
+stiffening plate	stiffening-grid	en	alias	variant en
+加强筋	stiffening-grid	zh	alias	short zh
+加劲肋	stiffening-grid	zh	alias	structural eng zh
+
+# --- Batch AD: Nuclear Data & Libraries (2026-04-18) ---
+evaluated nuclear data	evaluated-nuclear-data	en	preferred	preferred en
+评价核数据	evaluated-nuclear-data	zh	preferred	preferred zh
+evaluated-nuclear-data	evaluated-nuclear-data	en	alias	IME token-only form
+核数据评价	evaluated-nuclear-data	zh	alias	inverted zh
+cross-section library	cross-section-library	en	preferred	preferred en
+截面库	cross-section-library	zh	preferred	preferred zh
+cross-section-library	cross-section-library	en	alias	IME token-only form
+cross section library	cross-section-library	en	alias	no-hyphen form
+截面数据库	cross-section-library	zh	alias	variant zh
+reaction rate library	reaction-rate-library	en	preferred	preferred en
+反应率库	reaction-rate-library	zh	preferred	preferred zh
+reaction-rate-library	reaction-rate-library	en	alias	IME token-only form
+collapse library	reaction-rate-library	en	alias	FISPACT usage
+反应率数据库	reaction-rate-library	zh	alias	variant zh
+decay data library	decay-data-library	en	preferred	preferred en
+衰变数据库	decay-data-library	zh	preferred	preferred zh
+decay-data-library	decay-data-library	en	alias	IME token-only form
+decay library	decay-data-library	en	alias	short form
+衰变数据	decay-data-library	zh	alias	short zh
+
+# --- Batch AE: Instrumentation & Measurement (2026-04-18) ---
+thermocouple	thermocouple	en	preferred	preferred en
+热电偶	thermocouple	zh	preferred	preferred zh
+TC	thermocouple	abbr	alias	common abbreviation
+热电偶传感器	thermocouple	zh	alias	full zh
+strain gauge	strain-gauge	en	preferred	preferred en
+应变片	strain-gauge	zh	preferred	preferred zh
+strain-gauge	strain-gauge	en	alias	IME token-only form
+应变计	strain-gauge	zh	alias	variant zh
+电阻应变片	strain-gauge	zh	alias	full zh
+neutron flux monitor	neutron-flux-monitor	en	preferred	preferred en
+中子通量监测器	neutron-flux-monitor	zh	preferred	preferred zh
+neutron-flux-monitor	neutron-flux-monitor	en	alias	IME token-only form
+neutron flux detector	neutron-flux-monitor	en	alias	detector variant
+中子通量探测器	neutron-flux-monitor	zh	alias	detector variant zh
+flowmeter	flowmeter	en	preferred	preferred en
+流量计	flowmeter	zh	preferred	preferred zh
+flow meter	flowmeter	en	alias	two-word form
+electromagnetic flowmeter	flowmeter	en	alias	EM variant for liquid metals
+电磁流量计	flowmeter	zh	alias	EM variant zh
+
+# --- Batch AF: Joining & Fabrication Technology (2026-04-18) ---
+tungsten inert gas welding	tungsten-inert-gas-welding	en	preferred	preferred en
+TIG焊	tungsten-inert-gas-welding	zh	preferred	preferred zh
+TIG welding	tungsten-inert-gas-welding	en	alias	short form
+TIG	tungsten-inert-gas-welding	abbr	alias	abbreviation
+GTAW	tungsten-inert-gas-welding	abbr	alias	gas tungsten arc welding abbr
+gas tungsten arc welding	tungsten-inert-gas-welding	en	alias	ASME designation
+钨极惰性气体保护焊	tungsten-inert-gas-welding	zh	alias	full zh
+laser welding	laser-welding	en	preferred	preferred en
+激光焊	laser-welding	zh	preferred	preferred zh
+laser-welding	laser-welding	en	alias	IME token-only form
+laser beam welding	laser-welding	en	alias	full form
+LBW	laser-welding	abbr	alias	abbreviation
+激光焊接	laser-welding	zh	alias	variant zh
+dissimilar metal weld	dissimilar-metal-weld	en	preferred	preferred en
+异种金属焊接	dissimilar-metal-weld	zh	preferred	preferred zh
+dissimilar-metal-weld	dissimilar-metal-weld	en	alias	IME token-only form
+DMW	dissimilar-metal-weld	abbr	alias	abbreviation
+异种金属接头	dissimilar-metal-weld	zh	alias	joint variant zh
+weld inspection	weld-inspection	en	preferred	preferred en
+焊缝检测	weld-inspection	zh	preferred	preferred zh
+weld-inspection	weld-inspection	en	alias	IME token-only form
+weld examination	weld-inspection	en	alias	NDE variant
+焊缝检验	weld-inspection	zh	alias	variant zh
+焊接检测	weld-inspection	zh	alias	generic zh
+
+# --- Batch AG: Thermal-Hydraulics Supplement (2026-04-18) ---
+nucleate boiling	nucleate-boiling	en	preferred	preferred en
+泡核沸腾	nucleate-boiling	zh	preferred	preferred zh
+nucleate-boiling	nucleate-boiling	en	alias	IME token-only form
+核态沸腾	nucleate-boiling	zh	alias	variant zh
+film boiling	film-boiling	en	preferred	preferred en
+膜态沸腾	film-boiling	zh	preferred	preferred zh
+film-boiling	film-boiling	en	alias	IME token-only form
+膜沸腾	film-boiling	zh	alias	short zh
+departure from nucleate boiling	departure-from-nucleate-boiling	en	preferred	preferred en
+偏离泡核沸腾	departure-from-nucleate-boiling	zh	preferred	preferred zh
+DNB	departure-from-nucleate-boiling	abbr	preferred	standard abbreviation
+departure-from-nucleate-boiling	departure-from-nucleate-boiling	en	alias	IME token-only form
+偏离核态沸腾	departure-from-nucleate-boiling	zh	alias	variant zh
+thermal stratification	thermal-stratification	en	preferred	preferred en
+热分层	thermal-stratification	zh	preferred	preferred zh
+thermal-stratification	thermal-stratification	en	alias	IME token-only form
+温度分层	thermal-stratification	zh	alias	variant zh
+
+# --- Batch AH: Fusion Economics Supplement (2026-04-18) ---
+learning curve	learning-curve	en	preferred	preferred en
+学习曲线	learning-curve	zh	preferred	preferred zh
+learning-curve	learning-curve	en	alias	IME token-only form
+experience curve	learning-curve	en	alias	economics synonym
+经验曲线	learning-curve	zh	alias	variant zh
+unscheduled outage	unscheduled-outage	en	preferred	preferred en
+非计划停机	unscheduled-outage	zh	preferred	preferred zh
+unscheduled-outage	unscheduled-outage	en	alias	IME token-only form
+forced outage	unscheduled-outage	en	alias	utility synonym
+非计划停堆	unscheduled-outage	zh	alias	reactor context zh
+fuel cycle cost	fuel-cycle-cost	en	preferred	preferred en
+燃料循环成本	fuel-cycle-cost	zh	preferred	preferred zh
+fuel-cycle-cost	fuel-cycle-cost	en	alias	IME token-only form
+fuel cost	fuel-cycle-cost	en	alias	short form
+燃料费用	fuel-cycle-cost	zh	alias	variant zh
+capacity credit	capacity-credit	en	preferred	preferred en
+容量信用	capacity-credit	zh	preferred	preferred zh
+capacity-credit	capacity-credit	en	alias	IME token-only form
+capacity value	capacity-credit	en	alias	utility synonym
+容量价值	capacity-credit	zh	alias	variant zh
+
+# --- Batch AI: Heating & Beam Systems (2026-04-18) ---
+ion source	ion-source	en	preferred	preferred en
+离子源	ion-source	zh	preferred	preferred zh
+ion-source	ion-source	en	alias	IME token-only form
+positive ion source	ion-source	en	alias	PIS variant
+正离子源	ion-source	zh	alias	positive variant zh
+RF window	rf-window	en	preferred	preferred en
+射频窗口	rf-window	zh	preferred	preferred zh
+rf-window	rf-window	en	alias	IME token-only form
+microwave window	rf-window	en	alias	ECRH context
+beam duct	beam-duct	en	preferred	preferred en
+束管	beam-duct	zh	preferred	preferred zh
+beam-duct	beam-duct	en	alias	IME token-only form
+beam line duct	beam-duct	en	alias	full form
+束通道	beam-duct	zh	alias	variant zh
+dummy load	dummy-load	en	preferred	preferred en
+假负载	dummy-load	zh	preferred	preferred zh
+dummy-load	dummy-load	en	alias	IME token-only form
+equivalent load	dummy-load	en	alias	alternative
+等效负载	dummy-load	zh	alias	variant zh
+
+# --- Batch AJ: Superconductor & Magnet Protection (2026-04-18) ---
+critical current density	critical-current-density	en	preferred	preferred en
+临界电流密度	critical-current-density	zh	preferred	preferred zh
+critical-current-density	critical-current-density	en	alias	IME token-only form
+Jc	critical-current-density	en	alias	symbol
+HTS tape	hts-tape	en	preferred	preferred en
+高温超导带材	hts-tape	zh	preferred	preferred zh
+hts-tape	hts-tape	en	alias	IME token-only form
+REBCO tape	hts-tape	en	alias	specific material
+高温超导带	hts-tape	zh	alias	short zh
+coated conductor tape	hts-tape	en	alias	generic form
+quench heater	quench-heater	en	preferred	preferred en
+失超加热器	quench-heater	zh	preferred	preferred zh
+quench-heater	quench-heater	en	alias	IME token-only form
+QH	quench-heater	abbr	alias	abbreviation
+失超加热片	quench-heater	zh	alias	strip variant zh
+magnet protection system	magnet-protection-system	en	preferred	preferred en
+磁体保护系统	magnet-protection-system	zh	preferred	preferred zh
+magnet-protection-system	magnet-protection-system	en	alias	IME token-only form
+线圈保护系统	magnet-protection-system	zh	alias	coil context zh
+
+# --- Batch AK: Cryogenics Supplement (2026-04-18) ---
+helium refrigerator	helium-refrigerator	en	preferred	preferred en
+氦制冷机	helium-refrigerator	zh	preferred	preferred zh
+helium-refrigerator	helium-refrigerator	en	alias	IME token-only form
+He refrigerator	helium-refrigerator	en	alias	symbol form
+氦冷冻机	helium-refrigerator	zh	alias	variant zh
+cryostat feedthrough	cryostat-feedthrough	en	preferred	preferred en
+低温恒温器穿件	cryostat-feedthrough	zh	preferred	preferred zh
+cryostat-feedthrough	cryostat-feedthrough	en	alias	IME token-only form
+cryostat penetration	cryostat-feedthrough	en	alias	penetration variant
+低温穿件	cryostat-feedthrough	zh	alias	short zh
+cryodistribution	cryodistribution	en	preferred	preferred en
+低温分配系统	cryodistribution	zh	preferred	preferred zh
+cryo-distribution	cryodistribution	en	alias	hyphenated form
+cryogenic distribution	cryodistribution	en	alias	full form
+低温分配	cryodistribution	zh	alias	short zh
+liquid helium	liquid-helium	en	preferred	preferred en
+液氦	liquid-helium	zh	preferred	preferred zh
+liquid-helium	liquid-helium	en	alias	IME token-only form
+LHe	liquid-helium	abbr	alias	abbreviation
+
+# --- Batch AL: PMI Supplement (2026-04-18) ---
+mixed-material layer	mixed-material-layer	en	preferred	preferred en
+混合材料层	mixed-material-layer	zh	preferred	preferred zh
+mixed-material-layer	mixed-material-layer	en	alias	IME token-only form
+mixed material layer	mixed-material-layer	en	alias	no-hyphen form
+deuterium retention	deuterium-retention	en	preferred	preferred en
+氘滞留	deuterium-retention	zh	preferred	preferred zh
+deuterium-retention	deuterium-retention	en	alias	IME token-only form
+D retention	deuterium-retention	en	alias	symbol form
+氘吸附	deuterium-retention	zh	alias	absorption context zh
+erosion rate	erosion-rate	en	preferred	preferred en
+侵蚀速率	erosion-rate	zh	preferred	preferred zh
+erosion-rate	erosion-rate	en	alias	IME token-only form
+sputtering rate	erosion-rate	en	alias	physical sputtering context
+溅射速率	erosion-rate	zh	alias	sputtering context zh
+erosion lifetime	erosion-lifetime	en	preferred	preferred en
+侵蚀寿命	erosion-lifetime	zh	preferred	preferred zh
+erosion-lifetime	erosion-lifetime	en	alias	IME token-only form
+PFC erosion lifetime	erosion-lifetime	en	alias	PFC context
+壁侵蚀寿命	erosion-lifetime	zh	alias	wall context zh
+
+# --- Batch AM: Radiation Shielding Detail (2026-04-18) ---
+shielding plug	shielding-plug	en	preferred	preferred en
+屏蔽塞	shielding-plug	zh	preferred	preferred zh
+shielding-plug	shielding-plug	en	alias	IME token-only form
+shield plug	shielding-plug	en	alias	short form
+端口屏蔽塞	shielding-plug	zh	alias	port context zh
+radiation survey	radiation-survey	en	preferred	preferred en
+辐射巡测	radiation-survey	zh	preferred	preferred zh
+radiation-survey	radiation-survey	en	alias	IME token-only form
+辐射测量	radiation-survey	zh	alias	variant zh
+area monitor	area-monitor	en	preferred	preferred en
+区域监测仪	area-monitor	zh	preferred	preferred zh
+area-monitor	area-monitor	en	alias	IME token-only form
+gamma streaming	gamma-streaming	en	preferred	preferred en
+伽马射线流窜	gamma-streaming	zh	preferred	preferred zh
+gamma-streaming	gamma-streaming	en	alias	IME token-only form
+gamma ray streaming	gamma-streaming	en	alias	full form
+伽马流窜	gamma-streaming	zh	alias	short zh
+
+# --- Batch AN: Water Chemistry & Activation (2026-04-18) ---
+crud	crud	en	preferred	preferred en
+腐蚀产物沉积层	crud	zh	preferred	preferred zh
+CRUD	crud	en	alias	uppercase form
+Chalk River Unidentified Deposit	crud	en	alias	full expansion
+管道腐蚀沉积物	crud	zh	alias	variant zh
+water activation	water-activation	en	preferred	preferred en
+水活化	water-activation	zh	preferred	preferred zh
+water-activation	water-activation	en	alias	IME token-only form
+冷却水活化	water-activation	zh	alias	coolant context zh
+dissolved hydrogen	dissolved-hydrogen	en	preferred	preferred en
+溶解氢	dissolved-hydrogen	zh	preferred	preferred zh
+dissolved-hydrogen	dissolved-hydrogen	en	alias	IME token-only form
+DH	dissolved-hydrogen	abbr	alias	abbreviation
+溶氢量	dissolved-hydrogen	zh	alias	quantity context zh
+nitrogen-16	nitrogen-16	en	preferred	preferred en
+氮-16	nitrogen-16	zh	preferred	preferred zh
+N-16	nitrogen-16	en	alias	symbol form
+16N	nitrogen-16	en	alias	isotope notation
+
+# --- Batch AO: Tritium Monitoring & I&C (2026-04-18) ---
+tritium monitor	tritium-monitor	en	preferred	preferred en
+氚监测仪	tritium-monitor	zh	preferred	preferred zh
+tritium-monitor	tritium-monitor	en	alias	IME token-only form
+氚探测器	tritium-monitor	zh	alias	detector variant zh
+tritium detector	tritium-monitor	en	alias	detector variant
+tritium release rate	tritium-release-rate	en	preferred	preferred en
+氚释放速率	tritium-release-rate	zh	preferred	preferred zh
+tritium-release-rate	tritium-release-rate	en	alias	IME token-only form
+TRR	tritium-release-rate	abbr	alias	abbreviation
+permeation rate	permeation-rate	en	preferred	preferred en
+渗透速率	permeation-rate	zh	preferred	preferred zh
+permeation-rate	permeation-rate	en	alias	IME token-only form
+permeation flux	permeation-rate	en	alias	flux variant
+渗透通量	permeation-rate	zh	alias	flux variant zh
+data acquisition	data-acquisition	en	preferred	preferred en
+数据采集	data-acquisition	zh	preferred	preferred zh
+data-acquisition	data-acquisition	en	alias	IME token-only form
+DAQ	data-acquisition	abbr	alias	abbreviation
+数据采集系统	data-acquisition	zh	alias	system context zh
+
+# --- Batch AP: Tokamak Assembly & Structure (2026-04-18) ---
+sector assembly	sector-assembly	en	preferred	preferred en
+扇区组装	sector-assembly	zh	preferred	preferred zh
+sector-assembly	sector-assembly	en	alias	IME token-only form
+扇区预组装	sector-assembly	zh	alias	pre-assembly variant zh
+gravity support	gravity-support	en	preferred	preferred en
+重力支撑	gravity-support	zh	preferred	preferred zh
+gravity-support	gravity-support	en	alias	IME token-only form
+gravity support structure	gravity-support	en	alias	full form
+重力支撑结构	gravity-support	zh	alias	structural form zh
+in-wall shielding	in-wall-shielding	en	preferred	preferred en
+壁内屏蔽	in-wall-shielding	zh	preferred	preferred zh
+in-wall-shielding	in-wall-shielding	en	alias	IME token-only form
+in wall shielding	in-wall-shielding	en	alias	no-hyphen form
+vessel thermal shield	vessel-thermal-shield	en	preferred	preferred en
+真空室热屏蔽	vessel-thermal-shield	zh	preferred	preferred zh
+vessel-thermal-shield	vessel-thermal-shield	en	alias	IME token-only form
+VV thermal shield	vessel-thermal-shield	en	alias	VV abbreviation form
+VVTS	vessel-thermal-shield	abbr	alias	abbreviation
+poloidal field power supply	poloidal-field-power-supply	en	preferred	preferred en
+极向场电源	poloidal-field-power-supply	zh	preferred	preferred zh
+PF power supply	poloidal-field-power-supply	en	alias	abbreviated form
+PF电源	poloidal-field-power-supply	zh	alias	abbreviated zh
+PF coil power supply	poloidal-field-power-supply	en	alias	explicit form
+thyristor converter	thyristor-converter	en	preferred	preferred en
+可控硅变流器	thyristor-converter	zh	preferred	preferred zh
+thyristor rectifier	thyristor-converter	en	alias	related device
+晶闸管变流器	thyristor-converter	zh	alias	variant zh
+switching network	switching-network	en	preferred	preferred en
+切换网络	switching-network	zh	preferred	preferred zh
+switching network unit	switching-network	en	alias	full form
+SNU	switching-network	en	alias	acronym
+快速切换网络	switching-network	zh	alias	descriptive zh
+energy dump	energy-dump	en	preferred	preferred en
+卸能回路	energy-dump	zh	preferred	preferred zh
+energy dump circuit	energy-dump	en	alias	explicit form
+能量释放回路	energy-dump	zh	alias	variant zh
+magnet energy dump	energy-dump	en	alias	contextual form
+weight window generator	weight-window-generator	en	preferred	preferred en
+权窗生成器	weight-window-generator	zh	preferred	preferred zh
+WWG	weight-window-generator	en	alias	acronym
+自动权窗生成	weight-window-generator	zh	alias	descriptive zh
+global variance reduction	global-variance-reduction	en	preferred	preferred en
+全局减方差	global-variance-reduction	zh	preferred	preferred zh
+GVR	global-variance-reduction	en	alias	acronym
+全局方差缩减	global-variance-reduction	zh	alias	variant zh
+mesh-based weight window	mesh-based-weight-window	en	preferred	preferred en
+网格权窗	mesh-based-weight-window	zh	preferred	preferred zh
+mesh weight window	mesh-based-weight-window	en	alias	short form
+基于网格的权窗	mesh-based-weight-window	zh	alias	explicit zh
+energy biasing	energy-biasing	en	preferred	preferred en
+能量偏倚	energy-biasing	zh	preferred	preferred zh
+energy bias	energy-biasing	en	alias	short form
+能量偏置	energy-biasing	zh	alias	variant zh
+ultrasonic testing	ultrasonic-testing	en	preferred	preferred en
+超声检测	ultrasonic-testing	zh	preferred	preferred zh
+UT	ultrasonic-testing	en	alias	acronym
+超声波检测	ultrasonic-testing	zh	alias	variant zh
+超声波探伤	ultrasonic-testing	zh	alias	inspection context
+radiographic testing	radiographic-testing	en	preferred	preferred en
+射线检测	radiographic-testing	zh	preferred	preferred zh
+RT	radiographic-testing	en	alias	acronym
+radiographic examination	radiographic-testing	en	alias	formal synonym
+射线探伤	radiographic-testing	zh	alias	inspection context
+eddy current testing	eddy-current-testing	en	preferred	preferred en
+涡流检测	eddy-current-testing	zh	preferred	preferred zh
+ECT	eddy-current-testing	en	alias	acronym
+eddy current examination	eddy-current-testing	en	alias	formal synonym
+涡流探伤	eddy-current-testing	zh	alias	inspection context
+dye penetrant testing	dye-penetrant	en	preferred	preferred en
+渗透检测	dye-penetrant	zh	preferred	preferred zh
+PT	dye-penetrant	en	alias	acronym
+liquid penetrant testing	dye-penetrant	en	alias	ISO term
+着色渗透检测	dye-penetrant	zh	alias	explicit zh
+variance of the variance	variance-of-variance	en	preferred	preferred en
+方差的方差	variance-of-variance	zh	preferred	preferred zh
+VOV	variance-of-variance	en	alias	acronym
+variance of variance	variance-of-variance	en	alias	short form
+adjoint flux	adjoint-flux	en	preferred	preferred en
+伴随通量	adjoint-flux	zh	preferred	preferred zh
+伴随中子通量	adjoint-flux	zh	alias	explicit zh
+response matrix	response-matrix	en	preferred	preferred en
+响应矩阵	response-matrix	zh	preferred	preferred zh
+response matrix method	response-matrix	en	alias	method form
+响应矩阵法	response-matrix	zh	alias	method zh
+tallying efficiency	tallying-efficiency	en	preferred	preferred en
+计数效率	tallying-efficiency	zh	preferred	preferred zh
+tally efficiency	tallying-efficiency	en	alias	short form
+记数效率	tallying-efficiency	zh	alias	variant zh
+visible spectroscopy	visible-spectroscopy	en	preferred	preferred en
+可见光谱诊断	visible-spectroscopy	zh	preferred	preferred zh
+VIS spectroscopy	visible-spectroscopy	en	alias	abbreviated
+可见光光谱学	visible-spectroscopy	zh	alias	variant zh
+gamma spectrometer	gamma-spectrometer	en	preferred	preferred en
+γ谱仪	gamma-spectrometer	zh	preferred	preferred zh
+gamma-ray spectrometer	gamma-spectrometer	en	alias	explicit form
+伽马谱仪	gamma-spectrometer	zh	alias	variant zh
+X-ray crystal spectrometer	x-ray-crystal-spectrometer	en	preferred	preferred en
+X射线晶体谱仪	x-ray-crystal-spectrometer	zh	preferred	preferred zh
+crystal spectrometer	x-ray-crystal-spectrometer	en	alias	short form
+晶体谱仪	x-ray-crystal-spectrometer	zh	alias	short zh
+XICS	x-ray-crystal-spectrometer	en	alias	acronym X-ray imaging crystal spectrometer
+divertor spectroscopy	divertor-spectroscopy	en	preferred	preferred en
+偏滤器光谱诊断	divertor-spectroscopy	zh	preferred	preferred zh
+偏滤器光谱	divertor-spectroscopy	zh	alias	short zh
+fueling rate	fueling-rate	en	preferred	preferred en
+加料率	fueling-rate	zh	preferred	preferred zh
+fuel throughput	fueling-rate	en	alias	related metric
+加料速率	fueling-rate	zh	alias	variant zh
+pellet penetration	pellet-penetration	en	preferred	preferred en
+弹丸穿透深度	pellet-penetration	zh	preferred	preferred zh
+pellet penetration depth	pellet-penetration	en	alias	explicit form
+弹丸穿透	pellet-penetration	zh	alias	short zh
+deep fueling	deep-fueling	en	preferred	preferred en
+深部加料	deep-fueling	zh	preferred	preferred zh
+core fueling	deep-fueling	en	alias	synonym
+芯部加料	deep-fueling	zh	alias	synonym zh
+deuterium pellet	deuterium-pellet	en	preferred	preferred en
+氘弹丸	deuterium-pellet	zh	preferred	preferred zh
+D pellet	deuterium-pellet	en	alias	abbreviated
+氘冰弹丸	deuterium-pellet	zh	alias	cryogenic context
+hot pressing	hot-pressing	en	preferred	preferred en
+热压	hot-pressing	zh	preferred	preferred zh
+cold spray	cold-spray	en	preferred	preferred en
+冷喷涂	cold-spray	zh	preferred	preferred zh
+cold gas dynamic spray	cold-spray	en	alias	full technical name
+冷气动力喷涂	cold-spray	zh	alias	full zh
+powder metallurgy	powder-metallurgy	en	preferred	preferred en
+粉末冶金	powder-metallurgy	zh	preferred	preferred zh
+PM	powder-metallurgy	en	alias	acronym
+粉末冶金法	powder-metallurgy	zh	alias	method zh
+functional gradient material	functional-gradient-material	en	preferred	preferred en
+功能梯度材料	functional-gradient-material	zh	preferred	preferred zh
+FGM	functional-gradient-material	en	alias	acronym
+functionally graded material	functional-gradient-material	en	alias	variant en
+梯度功能材料	functional-gradient-material	zh	alias	variant zh
+roughing pump	roughing-pump	en	preferred	preferred en
+粗抽泵	roughing-pump	zh	preferred	preferred zh
+backing pump	roughing-pump	en	alias	synonym
+前级泵	roughing-pump	zh	alias	synonym zh
+helium leak test	helium-leak-test	en	preferred	preferred en
+氦检漏	helium-leak-test	zh	preferred	preferred zh
+helium leak testing	helium-leak-test	en	alias	gerund form
+氦质谱检漏	helium-leak-test	zh	alias	explicit zh
+He leak test	helium-leak-test	en	alias	abbreviated
+mass spectrometer	mass-spectrometer	en	preferred	preferred en
+质谱仪	mass-spectrometer	zh	preferred	preferred zh
+质谱计	mass-spectrometer	zh	alias	variant zh
+mass spectrometry	mass-spectrometer	en	alias	technique form
+质谱分析	mass-spectrometer	zh	alias	analysis zh
+Roots pump	roots-pump	en	preferred	preferred en
+罗茨泵	roots-pump	zh	preferred	preferred zh
+Roots blower	roots-pump	en	alias	alternate name
+罗茨真空泵	roots-pump	zh	alias	explicit zh
+in-vessel transporter	in-vessel-transporter	en	preferred	preferred en
+真空室内转运装置	in-vessel-transporter	zh	preferred	preferred zh
+IVT	in-vessel-transporter	en	alias	acronym
+室内转运车	in-vessel-transporter	zh	alias	short zh
+remote cutting	remote-cutting	en	preferred	preferred en
+远程切割	remote-cutting	zh	preferred	preferred zh
+remote pipe cutting	remote-cutting	en	alias	pipe context
+远程管道切割	remote-cutting	zh	alias	pipe zh
+remote welding	remote-welding	en	preferred	preferred en
+远程焊接	remote-welding	zh	preferred	preferred zh
+remote pipe welding	remote-welding	en	alias	pipe context
+远程管道焊接	remote-welding	zh	alias	pipe zh
+viewing system	viewing-system	en	preferred	preferred en
+观察系统	viewing-system	zh	preferred	preferred zh
+remote viewing system	viewing-system	en	alias	explicit form
+远程观察系统	viewing-system	zh	alias	explicit zh
+liquid metal embrittlement	liquid-metal-embrittlement	en	preferred	preferred en
+液态金属脆化	liquid-metal-embrittlement	zh	preferred	preferred zh
+LME	liquid-metal-embrittlement	en	alias	acronym
+液态金属致脆	liquid-metal-embrittlement	zh	alias	variant zh
+pitting corrosion	pitting-corrosion	en	preferred	preferred en
+点蚀	pitting-corrosion	zh	preferred	preferred zh
+pitting	pitting-corrosion	en	alias	short form
+孔蚀	pitting-corrosion	zh	alias	variant zh
+corrosion allowance	corrosion-allowance	en	preferred	preferred en
+腐蚀裕量	corrosion-allowance	zh	preferred	preferred zh
+腐蚀余量	corrosion-allowance	zh	alias	variant zh
+dissolution rate	dissolution-rate	en	preferred	preferred en
+溶解速率	dissolution-rate	zh	preferred	preferred zh
+溶蚀速率	dissolution-rate	zh	alias	corrosion context
+mass loss rate	dissolution-rate	en	alias	related metric
+power coupling	power-coupling	en	preferred	preferred en
+功率耦合	power-coupling	zh	preferred	preferred zh
+RF power coupling	power-coupling	en	alias	explicit form
+射频功率耦合	power-coupling	zh	alias	explicit zh
+parasitic absorption	parasitic-absorption	en	preferred	preferred en
+寄生吸收	parasitic-absorption	zh	preferred	preferred zh
+parasitic power loss	parasitic-absorption	en	alias	related
+寄生功率损耗	parasitic-absorption	zh	alias	related zh
+RF sheath	rf-sheath	en	preferred	preferred en
+射频鞘层	rf-sheath	zh	preferred	preferred zh
+RF-enhanced sheath	rf-sheath	en	alias	explicit form
+射频增强鞘层	rf-sheath	zh	alias	explicit zh
+antenna phasing	antenna-phasing	en	preferred	preferred en
+天线相位调节	antenna-phasing	zh	preferred	preferred zh
+strap phasing	antenna-phasing	en	alias	ICRH context
+天线相位	antenna-phasing	zh	alias	short zh
+X-point radiator	x-point-radiator	en	preferred	preferred en
+X点辐射体	x-point-radiator	zh	preferred	preferred zh
+XPR	x-point-radiator	en	alias	acronym
+X点辐射	x-point-radiator	zh	alias	short zh
+strike point sweeping	strike-point-sweeping	en	preferred	preferred en
+打击点扫描	strike-point-sweeping	zh	preferred	preferred zh
+strike point oscillation	strike-point-sweeping	en	alias	synonym
+打击点摆动	strike-point-sweeping	zh	alias	oscillation zh
+reattachment	reattachment	en	preferred	preferred en
+再附着	reattachment	zh	preferred	preferred zh
+plasma reattachment	reattachment	en	alias	explicit form
+等离子体再附着	reattachment	zh	alias	explicit zh
+divertor erosion	divertor-erosion	en	preferred	preferred en
+偏滤器侵蚀	divertor-erosion	zh	preferred	preferred zh
+divertor target erosion	divertor-erosion	en	alias	explicit form
+偏滤器靶板侵蚀	divertor-erosion	zh	alias	explicit zh
+buckling	buckling	en	preferred	preferred en
+屈曲	buckling	zh	preferred	preferred zh
+失稳	buckling	zh	alias	general term
+elastic buckling	buckling	en	alias	specific mode
+stress relaxation	stress-relaxation	en	preferred	preferred en
+应力松弛	stress-relaxation	zh	preferred	preferred zh
+应力弛豫	stress-relaxation	zh	alias	variant zh
+fatigue crack growth	fatigue-crack-growth	en	preferred	preferred en
+疲劳裂纹扩展	fatigue-crack-growth	zh	preferred	preferred zh
+FCG	fatigue-crack-growth	en	alias	acronym
+疲劳裂纹增长	fatigue-crack-growth	zh	alias	variant zh
+seismic analysis	seismic-analysis	en	preferred	preferred en
+抗震分析	seismic-analysis	zh	preferred	preferred zh
+earthquake analysis	seismic-analysis	en	alias	synonym
+地震分析	seismic-analysis	zh	alias	variant zh
+plasma start-up	plasma-start-up	en	preferred	preferred en
+等离子体起动	plasma-start-up	zh	preferred	preferred zh
+plasma startup	plasma-start-up	en	alias	no-hyphen variant
+等离子体启动	plasma-start-up	zh	alias	variant zh
+disruption avoidance	disruption-avoidance	en	preferred	preferred en
+破裂避免	disruption-avoidance	zh	preferred	preferred zh
+破裂规避	disruption-avoidance	zh	alias	variant zh
+runaway mitigation	runaway-mitigation	en	preferred	preferred en
+逃逸电子缓解	runaway-mitigation	zh	preferred	preferred zh
+runaway electron mitigation	runaway-mitigation	en	alias	explicit form
+逃逸缓解	runaway-mitigation	zh	alias	short zh
+plasma current ramp	plasma-current-ramp	en	preferred	preferred en
+等离子体电流爬升	plasma-current-ramp	zh	preferred	preferred zh
+电流爬升	plasma-current-ramp	zh	alias	short zh
+physics-informed neural network	physics-informed-neural-network	en	preferred	preferred en
+物理信息神经网络	physics-informed-neural-network	zh	preferred	preferred zh
+PINN	physics-informed-neural-network	en	alias	acronym
+bayesian optimization	bayesian-optimization	en	preferred	preferred en
+贝叶斯优化	bayesian-optimization	zh	preferred	preferred zh
+Bayesian optimisation	bayesian-optimization	en	alias	BrE spelling
+transfer learning	transfer-learning	en	preferred	preferred en
+迁移学习	transfer-learning	zh	preferred	preferred zh
+gaussian process	gaussian-process	en	preferred	preferred en
+高斯过程	gaussian-process	zh	preferred	preferred zh
+GP model	gaussian-process	en	alias	abbreviated form
+Gaussian process regression	gaussian-process	en	alias	regression context
+高斯过程回归	gaussian-process	zh	alias	regression context zh
+beryllide	beryllide	en	preferred	preferred en
+铍化物	beryllide	zh	preferred	preferred zh
+beryllium intermetallic	beryllide	en	alias	descriptive
+Be12Ti	beryllide	en	alias	titanium beryllide formula
+pebble packing fraction	pebble-packing-fraction	en	preferred	preferred en
+球床填充率	pebble-packing-fraction	zh	preferred	preferred zh
+球床堆积密度	pebble-packing-fraction	zh	alias	packing density zh
+crush load	crush-load	en	preferred	preferred en
+压碎载荷	crush-load	zh	preferred	preferred zh
+crush strength	crush-load	en	alias	strength context
+压碎强度	crush-load	zh	alias	strength context zh
+lithium burnup	lithium-burnup	en	preferred	preferred en
+锂消耗	lithium-burnup	zh	preferred	preferred zh
+Li-6 burnup	lithium-burnup	en	alias	isotope specific
+lithium depletion	lithium-burnup	en	alias	synonym
+锂燃耗	lithium-burnup	zh	alias	burnup context zh
+弯曲	buckling	zh	forbidden	AI误译buckling(屈曲≠弯曲)：bending才是弯曲
+翘曲	buckling	zh	forbidden	误译buckling(屈曲≠翘曲)：warping才是翘曲
+应力释放	stress-relaxation	zh	forbidden	误译relaxation(松弛≠释放)：stress release是不同概念
+应力消除	stress-relaxation	zh	deprecated	非标准(消除≠松弛)：应为 应力松弛
+中断避免	disruption-avoidance	zh	forbidden	AI误译disruption(破裂≠中断)：IT语境下disruption译为中断
+逃逸抑制	runaway-mitigation	zh	deprecated	非标准(suppression≠mitigation)：应为 逃逸电子缓解
+物理驱动神经网络	physics-informed-neural-network	zh	deprecated	非标准(driven≠informed)：应为 物理信息神经网络
+转移学习	transfer-learning	zh	forbidden	AI误译transfer(迁移≠转移)：正确为 迁移学习
+铍合金	beryllide	zh	forbidden	误译beryllide(铍化物≠铍合金)：alloy才是合金
+破碎载荷	crush-load	zh	deprecated	非标准(破碎≠压碎)：应为 压碎载荷
+锂烧蚀	lithium-burnup	zh	forbidden	误译burnup(燃耗/消耗≠烧蚀)：ablation才是烧蚀
+joule heating	joule-heating	en	preferred	preferred en
+焦耳热	joule-heating	zh	preferred	preferred zh
+Joule heat	joule-heating	en	alias	short form
+焦耳加热	joule-heating	zh	alias	variant zh
+电阻热	joule-heating	zh	deprecated	非标准(电阻热≠焦耳热)：应为 焦耳热
+lorentz force	lorentz-force	en	preferred	preferred en
+洛伦兹力	lorentz-force	zh	preferred	preferred zh
+Lorentz body force	lorentz-force	en	alias	body force context
+J×B force	lorentz-force	en	alias	current-field form
+洛仑兹力	lorentz-force	zh	deprecated	非标准(仑≠伦)：应为 洛伦兹力
+flux swing	flux-swing	en	preferred	preferred en
+磁通摆幅	flux-swing	zh	preferred	preferred zh
+flux capability	flux-swing	en	alias	capability context
+伏秒能力	flux-swing	zh	alias	volt-second context zh
+磁通量摆幅	flux-swing	zh	alias	expanded zh
+volt-second	volt-second	en	preferred	preferred en
+伏秒	volt-second	zh	preferred	preferred zh
+volt second	volt-second	en	alias	no-hyphen
+V·s	volt-second	en	alias	unit symbol
+Vs	volt-second	en	alias	compact unit
+伏秒数	volt-second	zh	alias	quantity form zh
+type-I ELM	type-i-elm	en	preferred	preferred en
+I型ELM	type-i-elm	zh	preferred	preferred zh
+type I ELM	type-i-elm	en	alias	no-hyphen variant
+type 1 ELM	type-i-elm	en	alias	Arabic numeral variant
+一型ELM	type-i-elm	zh	alias	Chinese numeral zh
+giant ELM	type-i-elm	en	alias	informal synonym
+大ELM	type-i-elm	zh	deprecated	非标准(大ELM≠I型ELM)：应为 I型ELM
+grassy ELM	grassy-elm	en	preferred	preferred en
+草状ELM	grassy-elm	zh	preferred	preferred zh
+small ELM	grassy-elm	en	alias	generic synonym
+小ELM	grassy-elm	zh	alias	generic zh
+ELM-free regime	elm-free-regime	en	preferred	preferred en
+无ELM运行模式	elm-free-regime	zh	preferred	preferred zh
+ELM-free operation	elm-free-regime	en	alias	operation context
+ELM suppression regime	elm-free-regime	en	alias	RMP context
+ELM抑制模式	elm-free-regime	zh	alias	suppression zh
+ELM frequency	elm-frequency	en	preferred	preferred en
+ELM频率	elm-frequency	zh	preferred	preferred zh
+ELM repetition rate	elm-frequency	en	alias	rate form
+ELM重复频率	elm-frequency	zh	alias	repetition zh
+pedestal height	pedestal-height	en	preferred	preferred en
+台基高度	pedestal-height	zh	preferred	preferred zh
+pedestal top pressure	pedestal-height	en	alias	pressure context
+台基顶部压力	pedestal-height	zh	alias	pressure context zh
+台基温度	pedestal-height	zh	alias	temperature context
+基座高度	pedestal-height	zh	forbidden	AI误译pedestal(台基≠基座)：正确为 台基高度
+H-mode power threshold	h-mode-power-threshold	en	preferred	preferred en
+H模功率阈值	h-mode-power-threshold	zh	preferred	preferred zh
+L-H transition power	h-mode-power-threshold	en	alias	transition context
+L-H转换功率	h-mode-power-threshold	zh	alias	transition zh
+H模阈值功率	h-mode-power-threshold	zh	alias	reordered zh
+squareness	squareness	en	preferred	preferred en
+方形度	squareness	zh	preferred	preferred zh
+plasma squareness	squareness	en	alias	plasma context
+等离子体方形度	squareness	zh	alias	plasma context zh
+正方度	squareness	zh	deprecated	非标准(正方度≠方形度)：应为 方形度
+separatrix density	separatrix-density	en	preferred	preferred en
+分界面密度	separatrix-density	zh	preferred	preferred zh
+separatrix electron density	separatrix-density	en	alias	explicit form
+分界面电子密度	separatrix-density	zh	alias	explicit zh
+磁分界面密度	separatrix-density	zh	alias	magnetic context zh
+fluence limit	fluence-limit	en	preferred	preferred en
+注量限值	fluence-limit	zh	preferred	preferred zh
+fluence limitation	fluence-limit	en	alias	variant
+中子注量限值	fluence-limit	zh	alias	neutron context zh
+通量限值	fluence-limit	zh	forbidden	AI误译fluence(注量≠通量)：fluence是积分量，flux才是通量
+end of life	end-of-life	en	preferred	preferred en
+寿命终点	end-of-life	zh	preferred	preferred zh
+EOL	end-of-life	en	alias	acronym
+使用寿命终点	end-of-life	zh	alias	explicit zh
+寿命末期	end-of-life	zh	alias	variant zh
+生命终结	end-of-life	zh	forbidden	AI误译life(寿命≠生命)：正确为 寿命终点
+runaway plateau	runaway-plateau	en	preferred	preferred en
+逃逸电子平台	runaway-plateau	zh	preferred	preferred zh
+runaway electron plateau	runaway-plateau	en	alias	explicit form
+RE plateau	runaway-plateau	en	alias	abbreviated
+逃逸平台期	runaway-plateau	zh	alias	period form zh
+operational lifetime	operational-lifetime	en	preferred	preferred en
+运行寿命	operational-lifetime	zh	preferred	preferred zh
+service lifetime	operational-lifetime	en	alias	service context
+服役寿命	operational-lifetime	zh	alias	service zh
+使用寿命	operational-lifetime	zh	alias	general zh
+操作寿命	operational-lifetime	zh	forbidden	AI误译operational(运行≠操作)：正确为 运行寿命
+磁通摆动	flux-swing	zh	deprecated	dict-improvements
+通量摆幅	flux-swing	zh	forbidden	dict-improvements
+伏特秒	volt-second	zh	deprecated	dict-improvements
+电压秒	volt-second	zh	forbidden	dict-improvements
+草ELM	grassy-elm	zh	deprecated	dict-improvements
+无ELM区域	elm-free-regime	zh	forbidden	dict-improvements
+ELM频次	elm-frequency	zh	deprecated	dict-improvements
+H模式功率门限	h-mode-power-threshold	zh	deprecated	dict-improvements
+分离面密度	separatrix-density	zh	forbidden	dict-improvements
+失控平台	runaway-plateau	zh	forbidden	dict-improvements
+归一化贝塔	beta-n	zh	preferred	internal:dict-improvements
+天线负荷	antenna-loading	zh	deprecated	internal:dict-improvements
+原子数密度	atom-density	zh	deprecated	internal:dict-improvements
+辅助电源	auxiliary-power	zh	deprecated	internal:dict-improvements
+本底压力	base-pressure	zh	deprecated	internal:dict-improvements
+自举比例	bootstrap-fraction	zh	deprecated	internal:dict-improvements
+积累因子	buildup-factor	zh	deprecated	internal:dict-improvements
+建造因子	buildup-factor	zh	forbidden	internal:dict-improvements
+燃烧度	burnup	zh	forbidden	internal:dict-improvements
+燃耗分数	burnup-fraction	zh	deprecated	internal:dict-improvements
+产能因子	capacity-factor	zh	deprecated	internal:dict-improvements
+资金成本	capital-cost	zh	forbidden	internal:dict-improvements
+解控指数	clearance-index	zh	deprecated	internal:dict-improvements
+线膨胀系数	coefficient-of-thermal-expansion	zh	deprecated	internal:dict-improvements
+碰撞频率	collisionality	zh	forbidden	internal:dict-improvements
+组件寿命	component-lifetime	zh	deprecated	internal:dict-improvements
+元件寿命	component-lifetime	zh	deprecated	internal:dict-improvements
+连接距离	connection-length	zh	forbidden	internal:dict-improvements
+基建成本	construction-cost	zh	deprecated	internal:dict-improvements
+发电成本	cost-of-electricity	zh	deprecated	internal:dict-improvements
+电费成本	cost-of-electricity	zh	forbidden	internal:dict-improvements
+裂纹生长速率	crack-growth-rate	zh	deprecated	internal:dict-improvements
+裂纹扩展率	crack-growth-rate	zh	deprecated	internal:dict-improvements
+临界电流值	critical-current	zh	deprecated	internal:dict-improvements
+临界磁感应强度	critical-magnetic-field	zh	deprecated	internal:dict-improvements
+临界磁通密度	critical-magnetic-field	zh	deprecated	internal:dict-improvements
+转变温度	critical-temperature	zh	deprecated	internal:dict-improvements
+驱动效率	current-drive-efficiency	zh	deprecated	internal:dict-improvements
+韧脆转变温度位移	dbtt-shift	zh	deprecated	internal:dict-improvements
+设计余量	design-margin	zh	deprecated	internal:dict-improvements
+去氚系数	detritiation-factor	zh	deprecated	internal:dict-improvements
+阈能	displacement-energy	zh	forbidden	internal:dict-improvements
+DPA	dpa	zh	alias	internal:dict-improvements
+DPA速率	dpa-rate	zh	alias	internal:dict-improvements
+离位损伤率	dpa-rate	zh	deprecated	internal:dict-improvements
+韧-脆转变温度	ductile-brittle-transition-temperature	zh	deprecated	internal:dict-improvements
+韧脆过渡温度	ductile-brittle-transition-temperature	zh	deprecated	internal:dict-improvements
+尘埃库存	dust-inventory	zh	deprecated	internal:dict-improvements
+灰尘存量	dust-inventory	zh	deprecated	internal:dict-improvements
+弹模	elastic-modulus	zh	deprecated	internal:dict-improvements
+工程增益	engineering-gain	zh	alias	internal:dict-improvements
+工程Q	engineering-q	zh	alias	internal:dict-improvements
+工程聚变增益	engineering-q	zh	deprecated	internal:dict-improvements
+疲劳循环寿命	fatigue-life	zh	deprecated	internal:dict-improvements
+优值	figure-of-merit	zh	deprecated	internal:dict-improvements
+第一壁服役寿命	first-wall-lifetime	zh	deprecated	internal:dict-improvements
+裂变收率	fission-yield	zh	deprecated	internal:dict-improvements
+裂变得率	fission-yield	zh	deprecated	internal:dict-improvements
+断裂韧性值	fracture-toughness	zh	deprecated	internal:dict-improvements
+阻力系数	friction-factor	zh	forbidden	internal:dict-improvements
+摩阻系数	friction-factor	zh	deprecated	internal:dict-improvements
+燃料留存	fuel-retention	zh	deprecated	internal:dict-improvements
+聚变反应截面	fusion-cross-section	zh	alias	internal:dict-improvements
+聚变能增益	fusion-gain	zh	deprecated	internal:dict-improvements
+聚变功率密度值	fusion-power-density	zh	deprecated	internal:dict-improvements
+拟合度	goodness-of-fit	zh	deprecated	internal:dict-improvements
+拟合质量	goodness-of-fit	zh	deprecated	internal:dict-improvements
+格拉斯霍夫数	grashof-number	zh	alias	internal:dict-improvements
+格拉晓夫准则数	grashof-number	zh	deprecated	internal:dict-improvements
+格林沃德份额	greenwald-fraction	zh	alias	internal:dict-improvements
+格林沃德密度比	greenwald-fraction	zh	alias	internal:dict-improvements
+总发电功率	gross-electric-power	zh	deprecated	internal:dict-improvements
+总腐蚀	gross-erosion	zh	forbidden	internal:dict-improvements
+半寿命	half-life	zh	deprecated	internal:dict-improvements
+半衰变期	half-life	zh	deprecated	internal:dict-improvements
+半周期	half-life	zh	forbidden	internal:dict-improvements
+硬度值	hardness	zh	deprecated	internal:dict-improvements
+显微硬度	hardness	zh	forbidden	internal:dict-improvements
+哈特曼准则数	hartmann-number	zh	deprecated	internal:dict-improvements
+Ha数	hartmann-number	zh	alias	internal:dict-improvements
+热流	heat-flux	zh	deprecated	internal:dict-improvements
+热流限	heat-flux-limit	zh	deprecated	internal:dict-improvements
+热通量限	heat-flux-limit	zh	deprecated	internal:dict-improvements
+热载荷	heat-load	zh	alias	internal:dict-improvements
+热载	heat-load	zh	deprecated	internal:dict-improvements
+传热系数	heat-transfer-coefficient	zh	alias	internal:dict-improvements
+换热率	heat-transfer-coefficient	zh	forbidden	internal:dict-improvements
+对流换热系数	heat-transfer-coefficient	zh	alias	internal:dict-improvements
+加热功率值	heating-power	zh	deprecated	internal:dict-improvements
+输入加热功率	heating-power	zh	deprecated	internal:dict-improvements
+点火点温度	ignition-temperature	zh	deprecated	internal:dict-improvements
+点燃温度	ignition-temperature	zh	forbidden	internal:dict-improvements
+离子注入深度	implantation-range	zh	deprecated	internal:dict-improvements
+内爆速率	implosion-velocity	zh	forbidden	internal:dict-improvements
+内爆速	implosion-velocity	zh	deprecated	internal:dict-improvements
+杂质流量	impurity-influx	zh	deprecated	internal:dict-improvements
+杂质通量	impurity-influx	zh	alias	internal:dict-improvements
+J-积分	j-integral	zh	alias	internal:dict-improvements
+接头阻抗	joint-resistance	zh	forbidden	internal:dict-improvements
+节点电阻	joint-resistance	zh	forbidden	internal:dict-improvements
+有效增殖系数	keff	zh	alias	internal:dict-improvements
+有效增殖比	keff	zh	forbidden	internal:dict-improvements
+keff值	keff	zh	alias	internal:dict-improvements
+k有效	keff	zh	deprecated	internal:dict-improvements
+比释放动能	kerma	zh	forbidden	internal:dict-improvements
+克尔玛	kerma	zh	alias	internal:dict-improvements
+学习因子	learning-rate	zh	deprecated	internal:dict-improvements
+平准化费用	levelized-cost	zh	deprecated	internal:dict-improvements
+均化成本	levelized-cost	zh	forbidden	internal:dict-improvements
+宏观截面值	macroscopic-cross-section	zh	deprecated	internal:dict-improvements
+宏观反应截面	macroscopic-cross-section	zh	alias	internal:dict-improvements
+磁体口径	magnet-bore	zh	deprecated	internal:dict-improvements
+磁场储能	magnetic-stored-energy	zh	alias	internal:dict-improvements
+维修周期	maintenance-period	zh	alias	internal:dict-improvements
+维护期	maintenance-period	zh	deprecated	internal:dict-improvements
+制造准备度	manufacturing-readiness-level	zh	deprecated	internal:dict-improvements
+质量流率	mass-flow-rate	zh	alias	internal:dict-improvements
+流量	mass-flow-rate	zh	forbidden	internal:dict-improvements
+平均路径	mean-free-path	zh	forbidden	internal:dict-improvements
+自由程	mean-free-path	zh	alias	internal:dict-improvements
+故障间隔	mean-time-between-failures	zh	deprecated	internal:dict-improvements
+存储带宽	memory-bandwidth	zh	alias	internal:dict-improvements
+内存带宽值	memory-bandwidth	zh	deprecated	internal:dict-improvements
+微观反应截面	microscopic-cross-section	zh	alias	internal:dict-improvements
+微观截面值	microscopic-cross-section	zh	deprecated	internal:dict-improvements
+平行折射率N	n-parallel	zh	alias	internal:dict-improvements
+净发电功率	net-electric-power	zh	alias	internal:dict-improvements
+净输出电功率	net-electric-power	zh	deprecated	internal:dict-improvements
+净腐蚀	net-erosion	zh	forbidden	internal:dict-improvements
+净侵蚀率	net-erosion	zh	alias	internal:dict-improvements
+中性粒子气压	neutral-pressure	zh	alias	internal:dict-improvements
+Greenwald分数	greenwald-fraction	zh	deprecated	internal:dict-improvements
+J积分值	j-integral	zh	deprecated	internal:dict-improvements
+中性压	neutral-pressure	zh	deprecated	internal:dict-improvements
+线圈磁能	magnetic-stored-energy	zh	forbidden	internal:dict-improvements
+N平行值	n-parallel	zh	deprecated	internal:dict-improvements
+吸收剂量值	absorbed-dose	zh	deprecated	internal:dict-improvements
+剂量吸收	absorbed-dose	zh	forbidden	internal:dict-improvements
+周围当量剂量	ambient-dose-equivalent	zh	deprecated	internal:dict-improvements
+群体剂量	collective-dose	zh	alias	internal:dict-improvements
+待积剂量值	committed-dose	zh	deprecated	internal:dict-improvements
+待积有效剂量值	committed-effective-dose	zh	deprecated	internal:dict-improvements
+累积有效剂量	committed-effective-dose	zh	forbidden	internal:dict-improvements
+偏离泡核沸腾热流	critical-heat-flux	zh	alias	internal:dict-improvements
+回旋角频率	cyclotron-frequency	zh	alias	internal:dict-improvements
+德拜半径	debye-length	zh	forbidden	internal:dict-improvements
+德拜屏蔽长度	debye-length	zh	alias	internal:dict-improvements
+洁净因子	decontamination-factor	zh	forbidden	internal:dict-improvements
+密度限	density-limit	zh	deprecated	internal:dict-improvements
+有效剂量值	effective-dose	zh	deprecated	internal:dict-improvements
+电子温度值	electron-temperature	zh	deprecated	internal:dict-improvements
+能量增益值	energy-gain	zh	deprecated	internal:dict-improvements
+增益因子	energy-gain	zh	forbidden	internal:dict-improvements
+器官剂量当量	equivalent-dose	zh	forbidden	internal:dict-improvements
+注量值	fluence	zh	deprecated	internal:dict-improvements
+积分通量	fluence	zh	alias	internal:dict-improvements
+聚变反应几率	fusion-reactivity	zh	forbidden	internal:dict-improvements
+格林沃德密度	greenwald-density	zh	alias	internal:dict-improvements
+H因子值	h-factor	zh	deprecated	internal:dict-improvements
+离子温度值	ion-temperature	zh	deprecated	internal:dict-improvements
+kerma因子	kerma-factor	zh	alias	internal:dict-improvements
+克尔玛因子	kerma-factor	zh	alias	internal:dict-improvements
+线能量转移	linear-energy-transfer	zh	alias	internal:dict-improvements
+环向电压	loop-voltage	zh	alias	internal:dict-improvements
+回路电压	loop-voltage	zh	forbidden	internal:dict-improvements
+磁场剪切	magnetic-shear	zh	alias	internal:dict-improvements
+安全因子剪切	magnetic-shear	zh	forbidden	internal:dict-improvements
+MHD稳定极限值	mhd-stability-limit	zh	deprecated	internal:dict-improvements
+磁流体稳定极限	mhd-stability-limit	zh	alias	internal:dict-improvements
+中子流	neutron-flux	zh	forbidden	internal:dict-improvements
+中子通量值	neutron-flux	zh	deprecated	internal:dict-improvements
+壁中子负荷	neutron-wall-loading	zh	deprecated	internal:dict-improvements
+中子产生量	neutron-yield	zh	deprecated	internal:dict-improvements
+中子产生率	neutron-yield	zh	forbidden	internal:dict-improvements
+努谢尔特数	nusselt-number	zh	deprecated	internal:dict-improvements
+Nu数	nusselt-number	zh	alias	internal:dict-improvements
+职业剂量值	occupational-dose	zh	deprecated	internal:dict-improvements
+工作照射	occupational-exposure	zh	deprecated	internal:dict-improvements
+器官剂量值	organ-dose	zh	deprecated	internal:dict-improvements
+单器官剂量	organ-dose	zh	forbidden	internal:dict-improvements
+隔夜资本成本	overnight-capital-cost	zh	alias	internal:dict-improvements
+一次性建设成本	overnight-capital-cost	zh	deprecated	internal:dict-improvements
+隔夜成本值	overnight-cost	zh	deprecated	internal:dict-improvements
+即时建造成本	overnight-cost	zh	forbidden	internal:dict-improvements
+集体剂量值	collective-dose	zh	deprecated	internal:dict-improvements
+CHF热流	critical-heat-flux	zh	deprecated	internal:dict-improvements
+回旋频率值	cyclotron-frequency	zh	deprecated	internal:dict-improvements
+格林沃德极限	greenwald-density	zh	deprecated	internal:dict-improvements
+KERMA系数	kerma-factor	zh	deprecated	internal:dict-improvements
+线性能量传递率	linear-energy-transfer	zh	deprecated	internal:dict-improvements
+核发热	nuclear-heating	zh	deprecated	internal:dict-improvements
+装填率	packing-fraction	zh	alias	internal:dict-improvements
+堆积分数	packing-fraction	zh	deprecated	internal:dict-improvements
+装填密度	packing-fraction	zh	forbidden	internal:dict-improvements
+并行加速比	parallel-efficiency	zh	forbidden	internal:dict-improvements
+平行方向热流	parallel-heat-flux	zh	alias	internal:dict-improvements
+沿磁力线热流	parallel-heat-flux	zh	alias	internal:dict-improvements
+反射率	particle-reflection-coefficient	zh	forbidden	internal:dict-improvements
+峰热流	peak-heat-flux	zh	deprecated	internal:dict-improvements
+基座宽度值	pedestal-width	zh	deprecated	internal:dict-improvements
+台基宽度	pedestal-width	zh	alias	internal:dict-improvements
+个人当量剂量	personal-dose-equivalent	zh	deprecated	internal:dict-improvements
+光子吸收剂量	photon-dose	zh	deprecated	internal:dict-improvements
+γ剂量	photon-dose	zh	alias	internal:dict-improvements
+pinch参量	pinch-parameter	zh	alias	internal:dict-improvements
+热电转换效率	plant-efficiency	zh	forbidden	internal:dict-improvements
+电厂寿命	plant-lifetime	zh	alias	internal:dict-improvements
+机组寿命	plant-lifetime	zh	deprecated	internal:dict-improvements
+等离子体β	plasma-beta	zh	alias	internal:dict-improvements
+plasma β	plasma-beta	zh	alias	internal:dict-improvements
+等离子体密度值	plasma-density	zh	deprecated	internal:dict-improvements
+大半径	plasma-major-radius	zh	deprecated	internal:dict-improvements
+泊松常数	poissons-ratio	zh	forbidden	internal:dict-improvements
+泊松系数	poissons-ratio	zh	deprecated	internal:dict-improvements
+极向β	poloidal-beta	zh	alias	internal:dict-improvements
+环向β	poloidal-beta	zh	forbidden	internal:dict-improvements
+功率密度值	power-density	zh	deprecated	internal:dict-improvements
+Pr数	prandtl-number	zh	alias	internal:dict-improvements
+普朗特准则数	prandtl-number	zh	deprecated	internal:dict-improvements
+压力降	pressure-drop	zh	alias	internal:dict-improvements
+压力损失	pressure-drop	zh	alias	internal:dict-improvements
+公众照射剂量	public-dose	zh	deprecated	internal:dict-improvements
+公众有效剂量	public-dose	zh	alias	internal:dict-improvements
+q剖面	q-profile	zh	alias	internal:dict-improvements
+安全因子分布	q-profile	zh	deprecated	internal:dict-improvements
+Q反应值	q-value-reaction	zh	deprecated	internal:dict-improvements
+安全因子q95	q95	zh	alias	internal:dict-improvements
+边界q95	q95	zh	deprecated	internal:dict-improvements
+品质因素	quality-factor	zh	deprecated	internal:dict-improvements
+质量因子	quality-factor	zh	forbidden	internal:dict-improvements
+wR	radiation-weighting-factor	zh	alias	internal:dict-improvements
+辐射权重	radiation-weighting-factor	zh	alias	internal:dict-improvements
+Ra数	rayleigh-number	zh	alias	internal:dict-improvements
+瑞利准则数	rayleigh-number	zh	deprecated	internal:dict-improvements
+反应速率	reaction-rate	zh	alias	internal:dict-improvements
+反应速率值	reaction-rate	zh	deprecated	internal:dict-improvements
+反应速率系数值	reaction-rate-coefficient	zh	deprecated	internal:dict-improvements
+循环功率值	recirculating-power	zh	deprecated	internal:dict-improvements
+循环用功率	recirculating-power	zh	forbidden	internal:dict-improvements
+循环功率分数	recirculating-power-fraction	zh	alias	internal:dict-improvements
+再循环上限	recycling-limit	zh	deprecated	internal:dict-improvements
+再循环阈值	recycling-limit	zh	forbidden	internal:dict-improvements
+相对误差值	relative-error	zh	deprecated	internal:dict-improvements
+相对偏差	relative-error	zh	forbidden	internal:dict-improvements
+q平行热流	parallel-heat-flux	zh	deprecated	internal:dict-improvements
+渗透降低系数	permeation-reduction-factor	zh	deprecated	internal:dict-improvements
+箍缩参数无量纲数	pinch-parameter	zh	deprecated	internal:dict-improvements
+等离子体比压值	plasma-beta	zh	deprecated	internal:dict-improvements
+压差损失	pressure-drop	zh	deprecated	internal:dict-improvements
+辐射能量损失	radiation-loss	zh	deprecated	internal:dict-improvements
+循环功率份额	recirculating-power-fraction	zh	deprecated	internal:dict-improvements
+脉冲重复率	repetition-rate	zh	alias	internal:dict-improvements
+重复频率值	repetition-rate	zh	deprecated	internal:dict-improvements
+内残余应力	residual-stress	zh	deprecated	internal:dict-improvements
+Re数	reynolds-number	zh	alias	internal:dict-improvements
+雷诺准则数	reynolds-number	zh	deprecated	internal:dict-improvements
+SIL等级	safety-integrity-level	zh	alias	internal:dict-improvements
+安全完整等级	safety-integrity-level	zh	deprecated	internal:dict-improvements
+可扩展度	scalability	zh	deprecated	internal:dict-improvements
+扩展能力	scalability	zh	alias	internal:dict-improvements
+科学增益值	scientific-q	zh	deprecated	internal:dict-improvements
+磁轴外移	shafranov-shift	zh	deprecated	internal:dict-improvements
+信息熵值	shannon-entropy	zh	deprecated	internal:dict-improvements
+停堆剂量率值	shutdown-dose-rate	zh	deprecated	internal:dict-improvements
+SDR值	shutdown-dose-rate	zh	alias	internal:dict-improvements
+厂界剂量率	site-boundary-dose	zh	forbidden	internal:dict-improvements
+快离子慢化时间	slowing-down-time	zh	alias	internal:dict-improvements
+热化时间值	slowing-down-time	zh	deprecated	internal:dict-improvements
+SOL宽度值	sol-width	zh	alias	internal:dict-improvements
+热流衰减长度	sol-width	zh	deprecated	internal:dict-improvements
+并行加速比值	speedup	zh	deprecated	internal:dict-improvements
+Spitzer电阻率	spitzer-resistivity	zh	alias	internal:dict-improvements
+经典电阻率值	spitzer-resistivity	zh	deprecated	internal:dict-improvements
+溅射产率	sputtering-yield	zh	deprecated	internal:dict-improvements
+储存能量	stored-energy	zh	alias	internal:dict-improvements
+应力强度因子值	stress-intensity-factor	zh	deprecated	internal:dict-improvements
+K因子	stress-intensity-factor	zh	forbidden	internal:dict-improvements
+记数可信度	tally-reliability	zh	deprecated	internal:dict-improvements
+靶丸增益	target-gain	zh	deprecated	internal:dict-improvements
+TRL等级	technology-readiness-level	zh	alias	internal:dict-improvements
+热导率值	thermal-conductivity	zh	deprecated	internal:dict-improvements
+导热率	thermal-conductivity	zh	alias	internal:dict-improvements
+热效率值	thermal-efficiency	zh	deprecated	internal:dict-improvements
+热功率值	thermal-power	zh	deprecated	internal:dict-improvements
+热应力值	thermal-stress	zh	deprecated	internal:dict-improvements
+温差应力	thermal-stress	zh	alias	internal:dict-improvements
+组织权重因子值	tissue-weighting-factor	zh	deprecated	internal:dict-improvements
+wT因子	tissue-weighting-factor	zh	alias	internal:dict-improvements
+氚增殖裕量	tritium-breeding-margin	zh	alias	internal:dict-improvements
+增殖余量	tritium-breeding-margin	zh	deprecated	internal:dict-improvements
+倍增时间值	tritium-doubling-time	zh	deprecated	internal:dict-improvements
+氚装量	tritium-inventory	zh	alias	internal:dict-improvements
+氚总量	tritium-inventory	zh	deprecated	internal:dict-improvements
+氚产生速率	tritium-production-rate	zh	alias	internal:dict-improvements
+氚生产率值	tritium-production-rate	zh	deprecated	internal:dict-improvements
+氚保留量	tritium-retention	zh	deprecated	internal:dict-improvements
+启动氚装量	tritium-startup-inventory	zh	alias	internal:dict-improvements
+初装氚量	tritium-startup-inventory	zh	deprecated	internal:dict-improvements
+抗拉极限	ultimate-tensile-strength	zh	deprecated	internal:dict-improvements
+漏率值	vacuum-leak-rate	zh	deprecated	internal:dict-improvements
+体积流量值	volumetric-flow-rate	zh	deprecated	internal:dict-improvements
+容积流量	volumetric-flow-rate	zh	alias	internal:dict-improvements
+运行墙时间	walltime	zh	deprecated	internal:dict-improvements
+焊接性能	weldability	zh	deprecated	internal:dict-improvements
+润湿面积值	wetted-area	zh	deprecated	internal:dict-improvements
+屈服极限	yield-strength	zh	alias	internal:dict-improvements
+屈服强度值	yield-strength	zh	deprecated	internal:dict-improvements
+杨氏模量值	youngs-modulus	zh	deprecated	internal:dict-improvements
+储能值	stored-energy	zh	deprecated	internal:dict-improvements
+储存能	stored-energy	zh	forbidden	internal:dict-improvements
+TRL级别	technology-readiness-level	zh	deprecated	internal:dict-improvements
+技术成熟等级	technology-readiness-level	zh	forbidden	internal:dict-improvements
+氚处理周期	tritium-processing-time	zh	deprecated	internal:dict-improvements
+氚停留时间值	tritium-processing-time	zh	forbidden	internal:dict-improvements

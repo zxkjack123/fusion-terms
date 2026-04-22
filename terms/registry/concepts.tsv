@@ -2921,3 +2921,475 @@ tritium-breeding	concept	氚增殖	tritium breeding		active	Process of producing
 lithium-6-enrichment	concept	锂-6富集	lithium-6 enrichment		active	Enriching Li-6 fraction in lithium to enhance TBR	corpus
 packing-fraction	metric	填充率	packing fraction		active	Volume fraction of pebbles in pebble-bed blanket	corpus
 tritium-production-rate	metric	产氚速率	tritium production rate	TPR	active	Rate of tritium produced per unit time in breeding blanket	corpus
+
+# ==== Fusion Pathway Coverage Expansion (2026-04-17) ====
+
+# ---- P0: Stellarator (仿星器) ----
+boozer-coordinates	concept	Boozer坐标	Boozer coordinates		active	Magnetic coordinates where |B| depends only on two angles; standard for stellarator optimization	corpus
+effective-ripple	metric	有效纹波	effective ripple	eps_eff	active	1/nu neoclassical transport metric epsilon_eff measuring departure from omnigeneity	corpus
+quasi-poloidal-symmetry	concept	准极向对称	quasi-poloidal symmetry	QP	active	Quasi-symmetry along poloidal direction	corpus
+omnigeneity	concept	全向性	omnigeneity		active	Property that all trapped particles have zero net radial drift	corpus
+bounce-averaged-drift	concept	弹跳平均漂移	bounce-averaged drift		active	Guiding-center drift averaged over trapped particle bounce orbit	corpus
+vmec	code	VMEC	VMEC		active	Variational Moments Equilibrium Code for 3-D MHD equilibrium	corpus
+desc	code	DESC	DESC		active	Stellarator equilibrium and optimization code using spectral methods	corpus
+simsopt	code	SIMSOPT	SIMSOPT		active	Framework for stellarator optimization coupling VMEC/SPEC/DESC	corpus
+torsatron	device	扭旋器	torsatron		active	Stellarator variant with continuous helical winding	corpus
+heliac	device	螺旋器变体	heliac		active	Stellarator variant with a helical magnetic axis	corpus
+ncsx	device	NCSX	NCSX		active	National Compact Stellarator Experiment (Princeton, cancelled)	corpus
+w7-as	device	W7-AS	Wendelstein 7-AS	W7-AS	active	Predecessor of W7-X at IPP Garching	corpus
+winding-surface	concept	绕组面	winding surface		active	Toroidal surface on which stellarator coils are constrained during optimization	corpus
+type-one-energy	company	Type One Energy	Type One Energy		active	US stellarator company developing optimized QI/QA designs	corpus
+proxima-fusion	company	Proxima Fusion	Proxima Fusion		active	German stellarator spinoff from Max Planck IPP	corpus
+renaissance-fusion	company	Renaissance Fusion	Renaissance Fusion		active	French stellarator company developing HTS magnet approach	corpus
+
+# ---- P1: Field-Reversed Configuration (场反位形) ----
+frc-stability	concept	场反稳定性	FRC stability		active	Stability properties of field-reversed configurations including tilt and rotational modes	corpus
+frc-lifetime-scaling	concept	场反寿命定标	FRC lifetime scaling		active	Empirical and theoretical scaling laws for FRC confinement lifetime	corpus
+open-field-line	concept	开放磁力线	open field line		active	Magnetic field line that does not close within the confinement region	corpus
+flux-closure	concept	磁通闭合	flux closure		active	Process of forming closed poloidal flux surfaces in FRC/CT formation	corpus
+c-2u	device	C-2U	C-2U		active	TAE Technologies predecessor to C-2W	corpus
+helion-trenta	device	Helion Trenta	Helion Trenta		active	Helion Energy 7th-generation FRC prototype targeting net electricity	corpus
+pulsed-non-ignition	concept	脉冲非点火	pulsed non-ignition		active	Helion approach: pulsed FRC compression without sustained ignition	corpus
+
+# ---- P1: Mirror (磁镜) ----
+end-plug	concept	端塞	end plug		active	Electrostatic or magnetic plug at mirror ends to reduce particle loss	corpus
+end-loss	concept	端损失	end loss		active	Particle and energy loss through mirror ends	corpus
+ioffe-bars	device	Ioffe棒	Ioffe bars		active	Current-carrying bars creating minimum-B stabilization in mirrors	corpus
+baseball-coil	device	棒球线圈	baseball coil		active	Baseball-seam-shaped coil producing minimum-B mirror configuration	corpus
+gas-dynamic-trap	device	气体动力学阱	gas dynamic trap	GDT	active	Long mirror with high mirror ratio operating in gas-dynamic confinement regime	corpus
+gamma-10	device	GAMMA 10	GAMMA 10		active	Tandem mirror device at University of Tsukuba	corpus
+wham	device	WHAM	Wisconsin HTS Axisymmetric Mirror	WHAM	active	Modern high-field axisymmetric mirror experiment at UW-Madison	corpus
+axisymmetric-mirror	concept	轴对称磁镜	axisymmetric mirror		active	Mirror with azimuthal symmetry; revived by modern HTS magnets	corpus
+multiple-mirror	concept	多重磁镜	multiple mirror		active	Confinement scheme using series of linked mirror cells	corpus
+direct-energy-converter	device	直接能量转换器	direct energy converter		active	Device converting charged particle kinetic energy directly to electricity	corpus
+reata-engineering	company	Reata Engineering	Reata Engineering		active	US company developing commercial mirror fusion reactors	corpus
+
+# ---- P2: Magnetized Target / MIF (磁化靶聚变) ----
+magnetized-target-fusion	concept	磁化靶聚变	magnetized target fusion		active	Approach compressing pre-magnetized plasma target to fusion conditions	corpus
+liner-implosion	concept	衬套内爆	liner implosion		active	Compression of magnetized plasma by imploding metal liner	corpus
+plasma-liner	concept	等离子体衬套	plasma liner		active	Converging plasma jets forming a compressing liner	corpus
+acoustic-driver	concept	声学驱动器	acoustic driver		active	Pneumatic piston driver for plasma compression (General Fusion concept)	corpus
+general-fusion	company	General Fusion	General Fusion		active	Canadian company developing magnetized target fusion with liquid metal	corpus
+hyperjet-fusion	company	HyperJet Fusion	HyperJet Fusion		active	US company developing plasma-liner-driven magneto-inertial fusion	corpus
+zap-energy	company	Zap Energy	Zap Energy		active	US company developing sheared-flow-stabilized Z-pinch	corpus
+sheared-flow-z-pinch	concept	剪切流Z箍缩	sheared-flow Z-pinch		active	Z-pinch stabilized by axial plasma flow shear	corpus
+
+# ---- P2: ICF → IFE Engineering (惯性聚变能) ----
+inertial-fusion-energy	concept	惯性聚变能	inertial fusion energy	IFE	active	Power-plant application of inertial confinement fusion	corpus
+target-gain	metric	靶增益	target gain		active	Ratio of fusion energy output to driver energy on target	corpus
+repetition-rate	metric	重复频率	repetition rate		active	Frequency of target shots in IFE power plant (typically 5-20 Hz)	corpus
+target-injection	system	靶投送	target injection		active	System for injecting and tracking cryogenic fuel targets at rep-rate	corpus
+cbet	concept	交叉光束能量传递	cross-beam energy transfer	CBET	active	Laser energy redistribution between crossing beams in hohlraum	corpus
+stimulated-brillouin-scattering	concept	受激布里渊散射	stimulated Brillouin scattering	SBS	active	Laser-plasma instability: backward scattering from ion acoustic waves	corpus
+stimulated-raman-scattering	concept	受激拉曼散射	stimulated Raman scattering	SRS	active	Laser-plasma instability: scattering from electron plasma waves	corpus
+maglif	concept	磁化衬套惯性聚变	magnetized liner inertial fusion	MagLIF	active	Sandia Z-machine approach combining magnetic field + liner implosion + laser preheat	corpus
+z-machine	device	Z装置	Z machine		active	Sandia pulsed-power facility for ICF and HED physics	corpus
+first-light-fusion	company	First Light Fusion	First Light Fusion		active	UK company developing projectile-driven ICF	corpus
+focused-energy	company	Focused Energy	Focused Energy		active	German-US company developing laser direct-drive IFE	corpus
+xcimer-energy	company	Xcimer Energy	Xcimer Energy		active	US company developing excimer-laser-driven IFE	corpus
+
+# ---- P3: Spherical Tokamak (球形托卡马克) ----
+center-column	system	中心柱	center column		active	Central structural and conductor column of spherical tokamak	corpus
+cs-free-startup	concept	无CS启动	CS-free start-up		active	Plasma current initiation without central solenoid	corpus
+merging-compression	concept	并合压缩	merging-compression		active	ST start-up method merging two spheromak/CT plasmas	corpus
+high-elongation	concept	高延伸比	high elongation		active	Vertically elongated plasma cross-section characteristic of ST	corpus
+tokamak-energy	company	Tokamak Energy	Tokamak Energy		active	UK company developing compact spherical tokamak with HTS magnets	corpus
+start-device	device	START	START		active	Small Tight Aspect Ratio Tokamak — pioneering ST at Culham	corpus
+
+# ---- Batch A: Private Fusion Companies (2026-04-17) ----
+energy-singularity	company	能量奇点	Energy Singularity		active	Shanghai-based company developing compact HTS tokamak (HH70/HH170)	corpus
+kyoto-fusioneering	company	京都聚变工程	Kyoto Fusioneering		active	Japanese company developing blanket/heat-exchange/tritium technologies	corpus
+marvel-fusion	company	Marvel Fusion	Marvel Fusion		active	German company developing laser-driven non-thermal ICF	corpus
+shine-technologies	company	SHINE Technologies	SHINE Technologies		active	US company using fusion neutrons for medical isotope production and industrial applications	corpus
+nt-tao	company	NT-Tao	NT-Tao		active	Israeli company developing compact high-field tokamak	corpus
+ex-fusion	company	EX-Fusion	EX-Fusion		active	Japanese company developing laser-driven IFE (Osaka Univ. spinoff)	corpus
+blue-laser-fusion	company	Blue Laser Fusion	Blue Laser Fusion		active	US company developing diode-pumped laser-driven IFE	corpus
+novatron	company	Novatron	Novatron		active	Swedish company developing magnetic mirror fusion reactor	corpus
+thea-energy	company	Thea Energy	Thea Energy		active	US company developing planar-coil stellarator (formerly Princeton Stellarators)	corpus
+openstar-technologies	company	OpenStar Technologies	OpenStar Technologies		active	UK company developing stellarator fusion reactor	corpus
+gauss-fusion	company	Gauss Fusion	Gauss Fusion		active	German company developing HTS magnets and stellarator technology	corpus
+helicity-space	company	Helicity Space	Helicity Space		active	US company developing compact toroid fusion for space propulsion	corpus
+kronos-fusion-energy	company	Kronos Fusion Energy	Kronos Fusion Energy		active	US company developing advanced-fuel compact fusion	corpus
+princeton-stellarators	company	Princeton Stellarators	Princeton Stellarators		active	Former name of Thea Energy; PPPL-spinoff stellarator company	corpus
+
+# ---- Batch B: Fusion Commercialization Terms (2026-04-17) ----
+fusion-industry-association	organization	聚变工业协会	Fusion Industry Association	FIA	active	Global trade association tracking private fusion investment and milestones	corpus
+first-plasma	concept	首次等离子体	first plasma		active	Milestone: first sustained plasma in a new fusion device	corpus
+net-electricity	concept	净发电	net electricity		active	Milestone: electricity output exceeding all plant consumption	corpus
+fusion-demonstrator	concept	聚变验证堆	fusion demonstrator		active	Pre-commercial device validating integrated plant operation	corpus
+modular-fusion-reactor	concept	模块化聚变堆	modular fusion reactor		active	Factory-built fusion reactor modules for scalable deployment	corpus
+isotope-production	concept	同位素生产	isotope production		active	Near-term fusion application producing medical/industrial isotopes	corpus
+fusion-neutron-application	concept	聚变中子应用	fusion neutron application		active	Non-electricity applications of 14 MeV fusion neutrons	corpus
+private-fusion-investment	concept	私营聚变投资	private fusion investment		active	Venture/PE capital invested in commercial fusion companies	corpus
+
+# ---- Batch C: Commercialization Physics & Engineering (2026-04-17) ----
+
+# ---- Power balance & plant performance (功率平衡与电站性能)
+recirculating-power-fraction	metric	再循环功率份额	recirculating power fraction		active	Fraction of gross electricity consumed by plant subsystems	corpus
+plant-efficiency	metric	电站效率	plant efficiency		active	Overall wall-plug efficiency of a fusion power plant	corpus
+scientific-q	metric	科学Q值	scientific Q	Q_sci	active	Ratio of fusion power to external heating power (plasma physics figure of merit)	corpus
+engineering-q	metric	工程Q值	engineering Q	Q_eng	active	Ratio of gross electric output to total recirculating power (plant-level figure of merit)	corpus
+
+# ---- Approach classification (路线分类)
+compact-fusion	concept	紧凑聚变	compact fusion		active	Umbrella term for small high-field or alternative-confinement fusion approaches	corpus
+high-field-approach	concept	高场路线	high-field approach		active	Fusion strategy using HTS magnets for high magnetic field in compact geometry	corpus
+alternative-confinement	concept	替代约束方案	alternative confinement		active	Non-tokamak magnetic or inertial confinement concepts	corpus
+
+# ---- Techno-economic & policy (技术经济与政策)
+techno-economic-analysis	concept	技术经济分析	techno-economic analysis	TEA	active	Integrated assessment of technical feasibility and economic viability	corpus
+milestone-based-development	concept	里程碑驱动开发	milestone-based development		active	Development model linking funding tranches to technical milestones	corpus
+public-private-partnership	concept	公私合作	public-private partnership	PPP	active	Joint government-industry framework for fusion development	corpus
+arpa-e	organization	ARPA-E	ARPA-E		active	US Advanced Research Projects Agency–Energy; funds innovative fusion	corpus
+fusion-energy-sciences	organization	聚变能源科学	Fusion Energy Sciences		active	US DOE Office of Science program funding fusion research	corpus
+
+# ---- Batch D: Power Balance & Grid Economics (2026-04-17) ----
+
+# ---- Grid integration & dispatch (电网接入与调度)
+baseload	concept	基荷	baseload		active	Minimum constant power demand on an electrical grid	corpus
+load-following	concept	负荷跟踪	load-following		active	Ability to adjust power output to match demand fluctuations	corpus
+dispatchable	concept	可调度电源	dispatchable		active	Power source whose output can be controlled on demand	corpus
+grid-integration	concept	电网集成	grid integration		active	Technical and regulatory process of connecting a power plant to the grid	corpus
+
+# ---- Cost metrics (成本指标)
+capital-cost	metric	资本成本	capital cost	CAPEX	active	Total upfront investment for plant construction	corpus
+overnight-cost	metric	隔夜成本	overnight cost		active	Capital cost excluding financing and escalation	corpus
+construction-cost	metric	建造成本	construction cost		active	Direct cost of physical plant construction	corpus
+availability-factor	metric	可用因子	availability factor		active	Fraction of time a plant is capable of producing power	corpus
+
+# ---- Power balance subsystems (功率平衡子系统)
+magnet-power	concept	磁体功耗	magnet power		active	Electrical power consumed by the magnet system (resistive or cryo)	corpus
+cryogenic-power	concept	低温系统功耗	cryogenic power		active	Electrical power consumed by cryoplant for superconducting magnets	corpus
+pumping-power	concept	泵送功耗	pumping power		active	Electrical power consumed by coolant circulation pumps	corpus
+current-drive-power	concept	电流驱动功耗	current-drive power		active	Electrical power consumed by non-inductive current drive systems	corpus
+
+# ---- Batch E: Licensing & Regulatory (2026-04-17) ----
+licensing-pathway	concept	许可路径	licensing pathway		active	Regulatory route for obtaining construction/operation permits	corpus
+fusion-regulation	concept	聚变监管	fusion regulation		active	Regulatory framework specific to fusion energy facilities	corpus
+public-dose	metric	公众剂量	public dose		active	Radiation dose received by members of the public from facility operations	corpus
+site-boundary-dose	metric	厂址边界剂量	site boundary dose		active	Radiation dose at the facility site boundary under normal/accident conditions	corpus
+activated-waste	concept	活化废物	activated waste		active	Radioactive waste produced by neutron activation of structural materials	corpus
+recycling-limit	metric	再循环限值	recycling limit		active	Activity threshold below which activated material may be recycled	corpus
+deterministic-safety-analysis	concept	确定论安全分析	deterministic safety analysis	DSA	active	Safety analysis using bounding assumptions for postulated events	corpus
+
+# ---- Batch F: Magnets & Industrialization (2026-04-17) ----
+
+# ---- Magnet technology (磁体技术)
+hts-magnet	concept	高温超导磁体	HTS magnet		active	Superconducting magnet using high-temperature superconductor (REBCO/YBCO)	corpus
+demountable-coil	concept	可拆卸线圈	demountable coil		active	Magnet coil with joints allowing sector removal for maintenance	corpus
+jointed-magnet	concept	接头磁体	jointed magnet		active	Magnet with demountable electrical joints between segments	corpus
+no-insulation-coil	concept	无绝缘线圈	no-insulation coil	NI coil	active	HTS coil wound without turn-to-turn insulation for self-protection	corpus
+high-field-magnet	concept	高场磁体	high-field magnet		active	Magnet producing fields above ~10 T, typically HTS-based	corpus
+equilibrium-field-coil	concept	平衡场线圈	equilibrium field coil	EF coil	active	Poloidal field coil for plasma position and shape control	corpus
+
+# ---- Industrialization (工业化)
+commercial-fusion	concept	商业聚变	commercial fusion		active	Fusion energy as a commercially viable electricity source	corpus
+manufacturing-readiness-level	metric	制造就绪度	manufacturing readiness level	MRL	active	Scale measuring manufacturing maturity (MRL 1–10)	corpus
+a-fns	facility	A-FNS	A-FNS		active	Advanced Fusion Neutron Source; Japanese 14-MeV neutron irradiation facility	corpus
+
+# ---- Batch G: Plasma Control (2026-04-17) ----
+elm-control	concept	ELM控制	ELM control		active	Methods to suppress or mitigate edge-localized modes	corpus
+rmp-coil	concept	RMP线圈	RMP coil		active	Resonant magnetic perturbation coil for ELM suppression	corpus
+plasma-shape-control	concept	等离子体形状控制	plasma shape control		active	Active control of plasma cross-section geometry (elongation, triangularity)	corpus
+scenario-development	concept	运行场景开发	scenario development		active	Design and optimization of tokamak operational scenarios	corpus
+
+# ---- Batch H: Tritium Fuel Cycle Metrics (2026-04-17) ----
+tritium-doubling-time	metric	氚倍增时间	tritium doubling time	TDT	active	Time to breed enough surplus tritium to start another reactor	corpus
+tritium-processing-time	metric	氚处理时间	tritium processing time		active	Residence time of tritium in the fuel processing loop	corpus
+tritium-inventory-control	concept	氚存量控制	tritium inventory control		active	Management of tritium quantities across all plant subsystems	corpus
+tritium-confinement	concept	氚包容	tritium confinement		active	Multi-barrier strategy to prevent tritium release to environment	corpus
+direct-internal-recycling	concept	直接内循环	direct internal recycling		active	Recovery and reinjection of unburned fuel directly from exhaust	corpus
+neutron-economy	concept	中子经济性	neutron economy		active	Efficiency of neutron utilization for tritium breeding and energy multiplication	corpus
+dust-safety	concept	粉尘安全	dust safety		active	Safety concerns from radioactive/toxic dust mobilization in loss events	corpus
+
+# ---- Batch I: Irradiation Testing & Damage (2026-04-17) ----
+neutron-irradiation-facility	facility	中子辐照设施	neutron irradiation facility		active	Facility providing intense neutron flux for materials testing	corpus
+volumetric-neutron-source	concept	体中子源	volumetric neutron source	VNS	active	Fusion-spectrum neutron source for component testing at reactor-relevant fluence	corpus
+accelerator-based-neutron-source	facility	加速器中子源	accelerator-based neutron source		active	Neutron source using deuteron beam on lithium/beryllium target (e.g. IFMIF)	corpus
+irradiation-campaign	concept	辐照试验活动	irradiation campaign		active	Planned series of material irradiation experiments at a neutron source	corpus
+irradiation-capsule	concept	辐照容器	irradiation capsule		active	Encapsulated specimen holder for placement in a neutron irradiation facility	corpus
+dpa-rate	metric	dpa率	dpa rate		active	Rate of displacement damage accumulation (dpa per unit time)	corpus
+
+# ---- Batch J: Plasma Performance Metrics (2026-04-17) ----
+fusion-power-density	metric	聚变功率密度	fusion power density		active	Fusion power produced per unit plasma volume (MW/m³)	corpus
+heating-power	metric	加热功率	heating power		active	Total power delivered to the plasma (auxiliary + alpha + ohmic)	corpus
+
+# ---- Batch K: PWI & Materials (2026-04-17) ----
+hydrogen-retention	concept	氢滞留	hydrogen retention		active	Total inventory of hydrogen isotopes retained in plasma-facing materials	corpus
+erosion-redeposition	concept	侵蚀再沉积	erosion-redeposition		active	Cyclic process of PFM erosion and redeposition of eroded material elsewhere	corpus
+hydrogen-isotope-exchange	concept	氢同位素交换	hydrogen isotope exchange		active	Exchange reactions between hydrogen isotopes (H/D/T) in materials or gas phase	corpus
+first-wall-lifetime	metric	第一壁寿命	first-wall lifetime		active	Expected operational lifetime of the first wall before replacement	corpus
+
+# ---- Batch L: Systems Engineering & Plant Design (2026-04-17) ----
+systems-engineering	concept	系统工程	systems engineering		active	Interdisciplinary approach to design, integrate, and manage complex fusion plant systems over their life cycles	corpus
+reliability-engineering	concept	可靠性工程	reliability engineering		active	Engineering discipline ensuring fusion plant components meet required failure-rate and lifetime targets	corpus
+rams-analysis	method	RAMS分析	RAMS analysis		active	Reliability, Availability, Maintainability, and Safety analysis framework for fusion plant design	corpus
+nuclear-island	concept	核岛	nuclear island		active	The portion of a fusion power plant containing the tokamak/reactor, blankets, and primary heat transfer systems	corpus
+conventional-island	concept	常规岛	conventional island		active	The portion of a fusion power plant housing the turbine-generator, cooling systems, and balance-of-plant equipment	corpus
+turbine-island	concept	汽轮机岛	turbine island		active	Sub-section of the conventional island containing steam turbines, generators, and condensers	corpus
+environmental-impact-assessment	concept	环境影响评价	environmental impact assessment	EIA	active	Systematic evaluation of the environmental effects of a proposed fusion facility	corpus
+digital-engineering	concept	数字工程	digital engineering		active	Model-based engineering approach using integrated digital models for fusion plant design and lifecycle management	corpus
+mean-time-between-failures	metric	平均故障间隔时间	mean time between failures	MTBF	active	Average elapsed time between inherent failures of a component during operation	corpus
+
+# ---- Batch M: Major Reactor Programs (2026-04-17) ----
+eu-demo	device	EU-DEMO	EU-DEMO		active	European Demonstration Fusion Power Plant design led by EUROfusion	corpus
+k-demo	device	K-DEMO	K-DEMO		active	Korean Demonstration Fusion Power Plant concept by KFE	corpus
+iter-organization	organization	ITER国际组织	ITER Organization	IO	active	International organization responsible for building and operating ITER	corpus
+us-burning-plasma	concept	美国燃烧等离子体计划	US burning plasma program		active	US community-driven program for achieving and studying self-heated burning plasmas	corpus
+
+# ---- Batch N: Divertor Physics Supplement (2026-04-17) ----
+plasma-exhaust	concept	等离子体排出	plasma exhaust		active	Transport and removal of particles and power from the plasma edge to the divertor/wall	corpus
+heat-flux-limit	metric	热流密度限值	heat flux limit		active	Maximum tolerable surface heat load on plasma-facing components (typically 10-20 MW/m² for tungsten)	corpus
+partial-detachment	concept	部分脱靶	partial detachment		active	Regime where plasma is detached from the outer divertor target but remains attached at the inner target	corpus
+
+# ---- Batch O: Computational Methods (2026-04-17) ----
+reduced-order-model	method	降阶模型	reduced-order model	ROM	active	Computationally efficient surrogate derived from high-fidelity simulations by reducing degrees of freedom	corpus
+multi-physics-coupling	method	多物理场耦合	multi-physics coupling		active	Coupled simulation of interacting physical phenomena (neutronics, thermal-hydraulics, structural mechanics, etc.)	corpus
+multi-scale-modeling	method	多尺度模拟	multi-scale modeling		active	Simulation approach bridging atomic, mesoscopic, and continuum length/time scales	corpus
+design-optimization	method	设计优化	design optimization		active	Systematic search for optimal design parameters under constraints using mathematical optimization	corpus
+
+# ---- Batch P: Fusion Commercialization & Economics (2026-04-17) ----
+commercialization-pathway	concept	商业化路径	commercialization pathway		active	Strategic roadmap from R&D through pilot plant to commercial fusion power deployment	corpus
+social-license	concept	社会许可	social license		active	Informal acceptance by local communities and the public for siting and operating a fusion facility	corpus
+fusion-industry	concept	聚变产业	fusion industry		active	The emerging commercial sector comprising fusion developers, supply chain, and service providers	corpus
+workforce-development	concept	人才队伍建设	workforce development		active	Training, education, and recruitment programs to build the skilled labor force for fusion deployment	corpus
+venture-capital	concept	风险投资	venture capital	VC	active	Private equity financing for early-stage fusion companies with high growth potential	corpus
+private-investment	concept	私人投资	private investment		active	Non-governmental funding directed at fusion energy development and commercialization	corpus
+
+# ---- Batch Q: Disruption Events (2026-04-17) ----
+disruption-mitigation-system	concept	破裂缓解系统	disruption mitigation system	DMS	active	Engineered system to mitigate disruption consequences via massive material injection or other techniques	corpus
+disruption-force	concept	破裂电磁力	disruption force		active	Transient electromagnetic loads on in-vessel components caused by rapid current decay during disruptions	corpus
+disruption-runaway	concept	破裂逃逸电子	disruption runaway electrons		active	Relativistic electrons generated during the current quench phase of a disruption that can damage PFCs	corpus
+
+# ---- Batch R: Remote Maintenance & Robotics (2026-04-17) ----
+in-vessel-inspection	concept	真空室内检测	in-vessel inspection		active	Remote inspection of plasma-facing and structural components inside the vacuum vessel during maintenance windows	corpus
+manipulator	concept	操纵器	manipulator		active	Remotely operated robotic arm used for in-vessel maintenance, inspection, and component handling	corpus
+end-effector	concept	末端执行器	end effector		active	Tool or device attached to the end of a manipulator for performing specific maintenance tasks (cutting, welding, gripping)	corpus
+blanket-replacement	concept	包层更换	blanket replacement		active	Scheduled remote-handling operation to remove and replace breeding blanket modules	corpus
+cassette-replacement	concept	暗盒更换	cassette replacement		active	Remote-handling operation to extract and replace divertor cassettes through dedicated maintenance ports	corpus
+
+# --- Batch S: Energy Policy & Sustainability (2026-04-17) ---
+energy-security	能源安全	energy security			active	Assurance of reliable, affordable energy supply; fusion offers fuel abundance and geopolitical independence	corpus
+decarbonization	脱碳	decarbonization			active	Reduction or elimination of carbon dioxide emissions from energy systems	corpus
+grid-stability	电网稳定性	grid stability			active	Ability of an electrical grid to maintain steady voltage and frequency under varying load and generation conditions	corpus
+proliferation-resistance	防扩散特性	proliferation resistance			active	Inherent or engineered features that make a nuclear technology difficult to misuse for weapons purposes	corpus
+fusion-safety-advantage	聚变安全优势	fusion safety advantage			active	Inherent safety characteristics of fusion: no chain reaction, limited in-vessel fuel inventory, no long-lived high-level waste	corpus
+clean-energy	清洁能源	clean energy			active	Energy produced with minimal or zero greenhouse gas emissions and pollutants during operation	corpus
+net-zero	净零排放	net zero			active	State where greenhouse gas emissions are balanced by removals, achieving zero net atmospheric impact	corpus
+
+# --- Batch T: Coolant Systems & Blanket Supplement (2026-04-17) ---
+dual-coolant	双冷却剂	dual coolant			active	Blanket design concept using two separate coolants: one for structure cooling and another for breeder/multiplier cooling	corpus
+self-cooled	自冷却	self-cooled			active	Blanket concept where the liquid breeder also serves as the primary coolant	corpus
+scll	自冷锂铅包层	self-cooled lithium-lead			active	Blanket concept using lithium-lead as both breeder and primary coolant with SiC flow-channel inserts	corpus
+coolant-compatibility	冷却剂相容性	coolant compatibility			active	Chemical and physical compatibility of a coolant with structural materials, breeder, and neutron multiplier under irradiation	corpus
+
+# --- Batch U: Environmental & Lifecycle (2026-04-17) ---
+life-cycle-assessment	生命周期评价	life-cycle assessment			active	Systematic evaluation of environmental impacts of a product or system throughout its entire life: raw materials, construction, operation, decommissioning, and disposal	corpus
+carbon-footprint	碳足迹	carbon footprint			active	Total greenhouse gas emissions caused directly and indirectly by an activity or product, expressed as CO₂-equivalent	corpus
+recycling-rate	再循环率	recycling rate			active	Fraction of activated or contaminated material that can be recycled or cleared for unconditional reuse after decay storage	corpus
+decay-storage	衰变贮存	decay storage			active	Interim storage period allowing short-lived radionuclides to decay to clearance levels before recycling or disposal	corpus
+water-use	用水量	water use			active	Volume of water consumed or withdrawn for plant cooling, tritium processing, and auxiliary systems	corpus
+
+# --- Batch V: Supplemental Physics & Diagnostics (2026-04-17) ---
+wall-plug-efficiency	墙插效率	wall-plug efficiency			active	Ratio of useful heating power delivered to the plasma to the total electrical power drawn from the grid by the heating system	corpus
+heating-and-current-drive	加热与电流驱动	heating and current drive			active	General term for auxiliary systems that heat the plasma and sustain toroidal current: NBI, ECRH/ECCD, ICRH, LHCD	corpus
+calorimetry	量热法	calorimetry			active	Measurement of heat flux or total deposited energy on plasma-facing components, divertor targets, or beam dumps using temperature rise data	corpus
+
+# --- Batch W: Fusion Materials Extended (2026-04-18) ---
+structural-material	结构材料	structural material			active	Material providing mechanical load-bearing capability: RAFM steels, vanadium alloys, SiC/SiC composites in fusion reactor blankets and structures	corpus
+armor-material	护甲材料	armor material			active	Material directly facing the plasma to withstand high heat flux and particle bombardment, typically tungsten or carbon-based	corpus
+nano-structured-ferritic-alloy	纳米结构铁素体合金	nanostructured ferritic alloy			active	Advanced ODS ferritic alloy with nano-scale oxide precipitates for superior high-temperature creep resistance and irradiation tolerance	corpus
+tungsten-fiber-composite	钨纤维复合材料	tungsten fiber composite			active	Composite material using tungsten fibers in a tungsten matrix to improve fracture toughness over monolithic tungsten	corpus
+tungsten-laminate	钨叠层材料	tungsten laminate			active	Layered tungsten composite with ductile interlayers to mitigate brittle failure under thermal cycling	corpus
+
+# --- Batch X: Neutronics Irradiation Supplement (2026-04-18) ---
+nuclear-heating-rate	核热沉积率	nuclear heating rate			active	Rate of energy deposition per unit mass in materials due to nuclear reactions (neutron and gamma interactions), typically in W/cm³ or W/g	corpus
+transmutation-rate	嬗变率	transmutation rate			active	Rate at which atoms are converted to different elements or isotopes by nuclear reactions under irradiation	corpus
+primary-knock-on-atom	初级碰撞原子	primary knock-on atom			active	First lattice atom displaced from its site by an incoming energetic particle (neutron, ion), initiating a displacement cascade	corpus
+gas-production	气体产生	gas production			active	Generation of helium and hydrogen gas in structural materials by transmutation reactions under neutron irradiation, measured in appm	corpus
+appm	原子百万分率	appm			active	Atomic parts per million: unit for measuring transmutation product concentration (He, H) or impurity levels in irradiated materials	corpus
+
+# --- Batch Y: Confinement & Transport (2026-04-18) ---
+energy-confinement	能量约束	energy confinement			active	Retention of thermal energy within the plasma: the rate at which energy is lost determines required heating power for sustained fusion	corpus
+particle-confinement	粒子约束	particle confinement			active	Retention of fuel ions and electrons within the plasma volume; poor particle confinement reduces fusion reactivity and increases fueling requirements	corpus
+impurity-confinement	杂质约束	impurity confinement			active	Retention time of impurity ions in the plasma; excessive impurity confinement leads to radiative power loss and fuel dilution	corpus
+momentum-confinement	动量约束	momentum confinement			active	Retention of toroidal and poloidal momentum in the plasma; momentum confinement affects intrinsic rotation and turbulence stabilization	corpus
+
+# --- Batch Z: Fuel Cycle Extended (2026-04-18) ---
+fuel-processing	燃料处理	fuel processing			active	Operations to purify, separate isotopes, and reconstitute D-T fuel from exhaust gas and breeding blanket extracts for reinjection	corpus
+deuterium-extraction	氘提取	deuterium extraction			active	Separation and recovery of deuterium from natural water or process streams for use as fusion fuel	corpus
+
+# --- Batch AA: Vacuum & Pumping (2026-04-18) ---
+pumping-speed	抽气速率	pumping speed			active	Volume of gas removed per unit time by a vacuum pump, measured in L/s or m³/h; determines evacuation capacity and base pressure	corpus
+vacuum-leak	真空泄漏	vacuum leak			active	Unintended pathway allowing atmospheric gas or coolant to enter the vacuum vessel, degrading plasma performance or triggering safety interlocks	corpus
+leak-rate	漏率	leak rate			active	Quantitative measure of gas flow through a leak, typically in Pa·m³/s; critical acceptance criterion for vacuum boundary integrity	corpus
+torus-exhaust	环室排气	torus exhaust			active	Gas mixture pumped from the torus vacuum vessel, containing unburnt D-T fuel, helium ash, and impurities for processing and recycling	corpus
+
+# --- Batch AB: Magnet Engineering Supplement (2026-04-18) ---
+coil-case	线圈盒	coil case			active	Structural enclosure surrounding a superconducting winding pack, providing mechanical support against electromagnetic forces	corpus
+quench-propagation	失超传播	quench propagation			active	Spatial and temporal spreading of the normal-conducting zone in a superconducting magnet after a local quench initiation	corpus
+training-quench	训练失超	training quench			active	Premature quench occurring at currents below design level during initial magnet energization, caused by conductor settling and epoxy cracking	corpus
+high-field-side	高场侧	high-field side			active	Inboard region of a tokamak where the toroidal magnetic field is strongest, closest to the central solenoid	corpus
+
+# --- Batch AC: Blanket Structure Detail (2026-04-18) ---
+neutron-multiplier-zone	中子倍增区	neutron multiplier zone			active	Region within a breeding blanket containing neutron multiplier material (Be, Pb) to increase the neutron population for tritium breeding	corpus
+first-wall-panel	第一壁面板	first-wall panel			active	Modular panel forming the plasma-facing surface of the first wall, designed for efficient heat removal and ease of replacement	corpus
+back-supporting-structure	背板支撑结构	back supporting structure			active	Structural framework at the rear of a blanket module providing mechanical support and interfacing with the vacuum vessel	corpus
+stiffening-grid	加强筋格栅	stiffening grid			active	Internal grid of ribs or plates within a blanket module providing structural rigidity against electromagnetic and pressure loads	corpus
+
+# --- Batch AD: Nuclear Data & Libraries (2026-04-18) ---
+evaluated-nuclear-data	评价核数据	evaluated nuclear data			active	Nuclear reaction data that have been assessed, selected, and processed from experimental measurements and theoretical models into recommended values for transport and activation calculations	corpus
+cross-section-library	截面库	cross-section library			active	Compiled database of energy-dependent nuclear reaction cross sections in a standard format (ACE, GENDF) for use in transport codes	corpus
+reaction-rate-library	反应率库	reaction rate library			active	Pre-computed library of group-averaged reaction rates used in activation and transmutation calculations (e.g., FISPACT-II collapse libraries)	corpus
+decay-data-library	衰变数据库	decay data library			active	Database of radioactive decay properties: half-lives, branching ratios, decay energies, and daughter products for inventory calculations	corpus
+
+# --- Batch AE: Instrumentation & Measurement (2026-04-18) ---
+thermocouple	热电偶	thermocouple			active	Temperature sensor based on the Seebeck effect, widely used for in-vessel and blanket temperature monitoring in fusion devices	corpus
+strain-gauge	应变片	strain gauge			active	Sensor that measures mechanical strain by detecting changes in electrical resistance; used for structural health monitoring of blanket modules and vacuum vessel	corpus
+neutron-flux-monitor	中子通量监测器	neutron flux monitor			active	Detector system for real-time monitoring of neutron flux levels in and around a fusion device, used for power calibration and safety interlocks	corpus
+flowmeter	流量计	flowmeter			active	Instrument for measuring volumetric or mass flow rate of coolants; specialized electromagnetic variants are required for liquid metal circuits due to MHD effects	corpus
+
+# --- Batch AF: Joining & Fabrication Technology (2026-04-18) ---
+tungsten-inert-gas-welding	TIG焊	tungsten inert gas welding			active	Arc welding process using a non-consumable tungsten electrode with inert gas shielding; primary method for stainless steel and RAFM pipe butt welds in fusion systems	corpus
+laser-welding	激光焊	laser welding			active	High-energy-density welding process using a focused laser beam; enables narrow heat-affected zones and precise joint geometries for fusion component fabrication	corpus
+dissimilar-metal-weld	异种金属焊接	dissimilar metal weld			active	Weld joint between two different base metals (e.g., RAFM steel to austenitic steel or tungsten to copper); requires careful filler selection and PWHT to manage CTE mismatch	corpus
+weld-inspection	焊缝检测	weld inspection			active	Non-destructive examination of weld joints using methods such as radiographic testing, ultrasonic testing, and dye penetrant inspection to verify structural integrity	corpus
+
+# --- Batch AG: Thermal-Hydraulics Supplement (2026-04-18) ---
+nucleate-boiling	泡核沸腾	nucleate boiling			active	Heat transfer regime where vapor bubbles form at discrete nucleation sites on a heated surface; dominant boiling mode in water-cooled blanket and divertor designs before CHF	corpus
+film-boiling	膜态沸腾	film boiling			active	Post-CHF heat transfer regime where a continuous vapor film separates the heated surface from the liquid coolant, drastically reducing heat transfer and risking burnout	corpus
+departure-from-nucleate-boiling	偏离泡核沸腾	departure from nucleate boiling			active	Critical thermal limit (DNB) at which the boiling mechanism transitions from nucleate to film boiling, leading to a sharp drop in heat transfer coefficient; a key design limit for water-cooled PFCs	corpus
+thermal-stratification	热分层	thermal stratification			active	Formation of stable temperature layers in a fluid volume due to buoyancy effects; important in liquid metal pools, drain tanks, and large-diameter piping where it can cause thermal fatigue	corpus
+
+# --- Batch AH: Fusion Economics Supplement (2026-04-18) ---
+learning-curve	学习曲线	learning curve			active	Empirical cost reduction model predicting that each doubling of cumulative production reduces unit cost by a fixed percentage; applied to fusion reactor FOAK-to-NOAK cost projections	corpus
+unscheduled-outage	非计划停机	unscheduled outage			active	Unplanned shutdown of a fusion power plant due to equipment failure, safety trip, or anomalous plasma event; a key driver of plant availability and cost of electricity	corpus
+fuel-cycle-cost	燃料循环成本	fuel cycle cost			active	Total cost of the fusion fuel cycle including deuterium procurement, lithium enrichment, tritium breeding and processing, and waste management of activated components	corpus
+capacity-credit	容量信用	capacity credit			active	Fraction of rated power that a fusion plant can reliably contribute to the grid at peak demand; determines the plant value in electricity markets relative to dispatchable sources	corpus
+
+# --- Batch AI: Heating & Beam Systems (2026-04-18) ---
+ion-source	离子源	ion source			active	Device that produces a beam of ions (positive or negative) for neutral beam injection systems; negative ion sources are required for high-energy (>500 keV) NBI in ITER and reactor-scale devices	corpus
+rf-window	射频窗口	RF window			active	Vacuum-tight dielectric window that transmits microwave or radio-frequency power from the atmospheric waveguide into the vacuum vessel; a critical component for ECRH and ICRH systems	corpus
+beam-duct	束管	beam duct			active	Evacuated duct that guides the neutral beam from the ion source and neutralizer to the tokamak port; incorporates beam scrapers, calorimeters, and shielding	corpus
+dummy-load	假负载	dummy load			active	High-power absorber used during testing and conditioning of RF heating systems to safely dissipate transmitted power without coupling to plasma	corpus
+
+# --- Batch AJ: Superconductor & Magnet Protection (2026-04-18) ---
+critical-current-density	临界电流密度	critical current density			active	Maximum current density (Jc) a superconductor can carry at a given temperature and magnetic field before transitioning to the normal state; the primary figure of merit for conductor selection	corpus
+hts-tape	高温超导带材	HTS tape			active	Thin-film coated conductor (typically REBCO on Hastelloy substrate) manufactured in tape geometry; enables high-field magnets (>20 T) for compact fusion devices	corpus
+quench-heater	失超加热器	quench heater			active	Resistive heating strip bonded to the outer surface of a superconducting winding; fires during a quench to uniformly distribute the stored magnetic energy and prevent local hot spots	corpus
+magnet-protection-system	磁体保护系统	magnet protection system			active	Integrated system comprising quench detection, dump resistors, bypass diodes, and quench heaters that protects superconducting coils from damage during a quench event	corpus
+
+# --- Batch AK: Cryogenics Supplement (2026-04-18) ---
+helium-refrigerator	氦制冷机	helium refrigerator			active	Large-scale cryogenic plant that produces liquid helium (4.5 K) and supercritical helium for cooling superconducting magnets; the single largest auxiliary power consumer in a fusion facility	corpus
+cryostat-feedthrough	低温恒温器穿件	cryostat feedthrough			active	Sealed penetration through the cryostat wall that carries electrical conductors, hydraulic lines, or diagnostic cables while maintaining thermal insulation and vacuum integrity	corpus
+cryodistribution	低温分配系统	cryodistribution			active	Network of insulated transfer lines, valve boxes, and phase separators that distributes cryogenic helium from the refrigerator to the individual magnet cooling circuits	corpus
+liquid-helium	液氦	liquid helium			active	Helium in its liquid phase below 4.2 K at atmospheric pressure; the primary coolant for low-temperature superconducting magnets (Nb3Sn, NbTi) in fusion devices	corpus
+
+# --- Batch AL: PMI Supplement (2026-04-18) ---
+mixed-material-layer	混合材料层	mixed-material layer			active	Thin surface layer of mixed composition (e.g., Be-W, W-C) formed by co-deposition and implantation of plasma-facing material species; affects tritium retention and erosion behavior	corpus
+deuterium-retention	氘滞留	deuterium retention			active	Accumulation of deuterium in plasma-facing materials via implantation, diffusion, and trapping; measured by thermal desorption spectroscopy and nuclear reaction analysis	corpus
+erosion-rate	侵蚀速率	erosion rate			active	Rate of material removal from a plasma-facing surface due to physical sputtering, chemical erosion, or melt-layer loss; typically expressed in nm/s or atoms per incident ion	corpus
+erosion-lifetime	侵蚀寿命	erosion lifetime			active	Projected operational time until a plasma-facing component reaches its minimum allowable thickness due to cumulative erosion; a key factor in divertor and first-wall replacement scheduling	corpus
+
+# --- Batch AM: Radiation Shielding Detail (2026-04-18) ---
+shielding-plug	屏蔽塞	shielding plug			active	Removable or permanent shielding block inserted into port penetrations or pipe chases to reduce radiation streaming through openings in the biological shield	corpus
+radiation-survey	辐射巡测	radiation survey			active	Systematic measurement of dose rates and contamination levels in and around a nuclear facility using portable instruments; performed for personnel safety and regulatory compliance	corpus
+area-monitor	区域监测仪	area monitor			active	Fixed or semi-permanent radiation detector that continuously measures dose rate in a designated area and triggers alarms when preset thresholds are exceeded	corpus
+gamma-streaming	伽马射线流窜	gamma streaming			active	Transport of gamma radiation through gaps, ducts, and penetrations in shielding structures; requires dedicated streaming calculations with variance reduction techniques	corpus
+
+# --- Batch AN: Water Chemistry & Activation (2026-04-18) ---
+crud	腐蚀产物沉积层	crud			active	Chalk River Unidentified Deposit; layer of activated corrosion products (Fe, Ni, Co, Mn oxides) that deposits on fuel/component surfaces in water-cooled nuclear systems, contributing to dose rates during maintenance	corpus
+water-activation	水活化	water activation			active	Nuclear reactions in cooling water, primarily 16O(n,p)16N producing short-lived nitrogen-16 (T1/2=7.1 s) that emits 6.13 MeV gamma rays; a dominant contributor to primary circuit dose rates	corpus
+dissolved-hydrogen	溶解氢	dissolved hydrogen			active	Hydrogen gas dissolved in primary coolant water to suppress radiolytic oxygen production and mitigate stress corrosion cracking; concentration typically maintained at 25-50 cc/kg(STP)	corpus
+nitrogen-16	氮-16	nitrogen-16			active	Short-lived radioisotope (T1/2=7.13 s) produced by 16O(n,p)16N in water coolant; its 6.13 MeV gamma emission is the primary radiation source in water-cooled primary loops during operation	corpus
+
+# --- Batch AO: Tritium Monitoring & I&C (2026-04-18) ---
+tritium-monitor	氚监测仪	tritium monitor			active	Instrument for real-time measurement of tritium concentration in air, water, or process gas streams; types include ionization chambers, proportional counters, and scintillation-based systems	corpus
+tritium-release-rate	氚释放速率	tritium release rate			active	Rate at which tritium is released from breeder materials, neutron-irradiated components, or permeation surfaces; a key parameter for breeder blanket design and tritium inventory control	corpus
+permeation-rate	渗透速率	permeation rate			active	Flux of hydrogen isotopes permeating through a metal wall driven by a concentration or pressure gradient; depends on material permeability, temperature, and surface conditions	corpus
+data-acquisition	数据采集	data acquisition			active	System for collecting, digitizing, and recording signals from diagnostics, instrumentation, and control sensors during fusion device operation; interfaces with the central I&C architecture	corpus
+
+# --- Batch AP: Tokamak Assembly & Structure (2026-04-18) ---
+sector-assembly	扇区组装	sector assembly			active	On-site assembly process in which pre-fabricated vacuum vessel sectors, thermal shields, and toroidal field coils are integrated into a single sector module before installation in the tokamak pit	corpus
+gravity-support	重力支撑	gravity support			active	Structural system that transfers the dead weight of the tokamak (magnets, vacuum vessel, in-vessel components) to the basemat through pedestals or columns while accommodating thermal expansion	corpus
+in-wall-shielding	壁内屏蔽	in-wall shielding			active	Neutron and gamma shielding layers (typically borated steel or water) integrated within the double-wall structure of the vacuum vessel to protect ex-vessel components and allow hands-on maintenance	corpus
+vessel-thermal-shield	真空室热屏蔽	vessel thermal shield			active	Actively cooled (typically 80 K helium gas) thermal radiation shield positioned between the vacuum vessel (at ~200 C) and the cryostat (at ~4 K) to minimize heat load on the cryogenic system	corpus
+poloidal-field-power-supply	electrical-power-systems	en	Poloidal Field Power Supply		Power supply system for PF coils
+thyristor-converter	electrical-power-systems	en	Thyristor Converter		Thyristor-based AC-DC converter for magnet power supplies
+switching-network	electrical-power-systems	en	Switching Network		Fast switching network unit for plasma breakdown
+energy-dump	electrical-power-systems	en	Energy Dump		Circuit for safely dissipating stored magnet energy during quench
+weight-window-generator	computational-methods	en	Weight Window Generator		Automated tool for generating space-energy weight windows
+global-variance-reduction	computational-methods	en	Global Variance Reduction		Variance reduction method targeting uniform uncertainty across entire problem domain
+mesh-based-weight-window	computational-methods	en	Mesh-Based Weight Window		Weight window defined on structured or unstructured spatial mesh
+energy-biasing	computational-methods	en	Energy Biasing		Variance reduction technique biasing particle energy sampling toward important energy ranges
+ultrasonic-testing	nde-testing	en	Ultrasonic Testing		Non-destructive examination using ultrasonic waves to detect internal flaws
+radiographic-testing	nde-testing	en	Radiographic Testing		Non-destructive examination using X-ray or gamma-ray imaging
+eddy-current-testing	nde-testing	en	Eddy Current Testing		Non-destructive examination detecting surface and near-surface defects via electromagnetic induction
+dye-penetrant	nde-testing	en	Dye Penetrant Testing		Non-destructive examination detecting surface-breaking defects via capillary action of dye
+variance-of-variance	computational-methods	en	Variance of the Variance		Second-order convergence diagnostic for Monte Carlo tally reliability
+adjoint-flux	computational-methods	en	Adjoint Flux		Importance function obtained by solving the adjoint transport equation
+response-matrix	computational-methods	en	Response Matrix		Matrix relating boundary or interface fluxes for coupled region calculations
+tallying-efficiency	computational-methods	en	Tallying Efficiency		Metric quantifying the computational cost to achieve a given tally precision
+visible-spectroscopy	plasma-diagnostics	en	Visible Spectroscopy		Optical emission spectroscopy in the visible wavelength range for impurity and edge plasma diagnostics
+gamma-spectrometer	plasma-diagnostics	en	Gamma Spectrometer		Detector system for measuring gamma-ray energy spectra from fusion plasmas and activated components
+x-ray-crystal-spectrometer	plasma-diagnostics	en	X-Ray Crystal Spectrometer		Bragg crystal spectrometer for high-resolution X-ray line emission measurements
+divertor-spectroscopy	plasma-diagnostics	en	Divertor Spectroscopy		Optical spectroscopic diagnostics dedicated to divertor plasma characterization
+fueling-rate	plasma-fueling	en	Fueling Rate		Rate of fuel particle delivery into the plasma
+pellet-penetration	plasma-fueling	en	Pellet Penetration		Depth to which a fuel pellet penetrates into the plasma before complete ablation
+deep-fueling	plasma-fueling	en	Deep Fueling		Fueling strategy targeting particle deposition in the plasma core region
+deuterium-pellet	plasma-fueling	en	Deuterium Pellet		Cryogenic solid deuterium pellet used for plasma fueling
+hot-pressing	component-fabrication	en	Hot Pressing		Fabrication technique applying heat and pressure simultaneously to consolidate powder or layered materials
+cold-spray	component-fabrication	en	Cold Spray		Solid-state coating process depositing powder particles at supersonic velocity without melting
+powder-metallurgy	component-fabrication	en	Powder Metallurgy		Materials processing route using metal or ceramic powder consolidation via pressing and sintering
+functional-gradient-material	component-fabrication	en	Functional Gradient Material		Material with spatially varying composition or microstructure for graded property transition
+roughing-pump	vacuum-technology	en	Roughing Pump		Pump used for initial evacuation from atmospheric pressure to medium vacuum
+helium-leak-test	vacuum-technology	en	Helium Leak Test		Standard leak detection method using helium as tracer gas with mass spectrometric detection
+mass-spectrometer	vacuum-technology	en	Mass Spectrometer		Instrument for identifying gas species by mass-to-charge ratio separation
+roots-pump	vacuum-technology	en	Roots Pump		Positive displacement vacuum pump using counter-rotating lobed rotors
+in-vessel-transporter	remote-handling	en	In-Vessel Transporter		Remote handling vehicle operating inside the vacuum vessel for blanket and divertor replacement
+remote-cutting	remote-handling	en	Remote Cutting		Cutting of pipes and components performed by remote handling tools in activated environments
+remote-welding	remote-handling	en	Remote Welding		Welding of pipes and components performed by remote handling tools in activated environments
+viewing-system	remote-handling	en	Viewing System		Camera and lighting system providing visual feedback for remote handling operations
+liquid-metal-embrittlement	corrosion-compatibility	en	Liquid Metal Embrittlement		Degradation of structural material ductility due to contact with liquid metals
+pitting-corrosion	corrosion-compatibility	en	Pitting Corrosion		Localized corrosion forming small cavities in metal surfaces
+corrosion-allowance	corrosion-compatibility	en	Corrosion Allowance		Additional wall thickness added to structural design to account for material loss by corrosion
+dissolution-rate	corrosion-compatibility	en	Dissolution Rate		Rate of structural material mass loss into a flowing liquid metal or coolant
+power-coupling	plasma-heating	en	Power Coupling		Efficiency of RF power transfer from antenna or waveguide to the plasma
+parasitic-absorption	plasma-heating	en	Parasitic Absorption		Unintended RF power absorption by plasma edge, antenna structure, or Faraday screen
+rf-sheath	plasma-heating	en	RF Sheath		Rectified sheath potential formed near antenna structures due to RF fields
+antenna-phasing	plasma-heating	en	Antenna Phasing		Relative phase setting between antenna straps to control launched wave spectrum
+x-point-radiator	divertor-physics	en	X-Point Radiator		Radiation enhancement regime near the X-point for divertor heat flux mitigation
+strike-point-sweeping	divertor-physics	en	Strike Point Sweeping		Controlled oscillation of the divertor strike point to distribute heat load over a wider area
+reattachment	divertor-physics	en	Reattachment		Transition from detached to attached divertor plasma regime
+divertor-erosion	divertor-physics	en	Divertor Erosion		Material removal from divertor target surfaces due to plasma particle and heat flux bombardment
+buckling	structural-mechanics	en	Buckling		Structural instability mode where a member deflects laterally under compressive load
+stress-relaxation	structural-mechanics	en	Stress Relaxation		Time-dependent decrease of stress in a constrained component at elevated temperature
+fatigue-crack-growth	structural-mechanics	en	Fatigue Crack Growth		Progressive extension of a crack under cyclic loading described by da/dN curves
+seismic-analysis	structural-mechanics	en	Seismic Analysis		Structural assessment of components and buildings under earthquake loading
+plasma-start-up	plasma-control	en	Plasma Start-Up		Initial phase of plasma discharge including gas breakdown and current ramp-up
+disruption-avoidance	plasma-control	en	Disruption Avoidance		Real-time control strategy to steer plasma away from disruptive boundaries
+runaway-mitigation	plasma-control	en	Runaway Mitigation		Techniques to suppress or safely terminate runaway electron beams after disruptions
+plasma-current-ramp	plasma-control	en	Plasma Current Ramp		Controlled increase or decrease of plasma current during start-up or shutdown phases
+physics-informed-neural-network	computational-methods	en	Physics-Informed Neural Network		Neural network architecture constrained by physics equations for improved generalization
+bayesian-optimization	computational-methods	en	Bayesian Optimization		Surrogate-model-based sequential optimization strategy for expensive objective functions
+transfer-learning	computational-methods	en	Transfer Learning		Machine learning technique that reuses pre-trained models for new but related tasks
+gaussian-process	computational-methods	en	Gaussian Process		Non-parametric probabilistic model providing uncertainty-quantified predictions
+beryllide	breeding-material	en	Beryllide		Intermetallic beryllium compound such as Be12Ti or Be12V used as neutron multiplier
+pebble-packing-fraction	breeding-material	en	Pebble Packing Fraction		Volumetric fraction occupied by ceramic or beryllium pebbles in a packed bed
+crush-load	breeding-material	en	Crush Load		Mechanical load at which a ceramic pebble undergoes brittle fracture
+lithium-burnup	breeding-material	en	Lithium Burnup		Depletion of lithium-6 in breeding material due to neutron transmutation reactions
+joule-heating	nuclear-fusion	en	Joule Heating		Resistive power dissipation in conductors or plasma due to electric current flow
+lorentz-force	nuclear-fusion	en	Lorentz Force		Electromagnetic body force on a current-carrying conductor in a magnetic field
+flux-swing	nuclear-fusion	en	Flux Swing		Total change in magnetic flux available from the central solenoid for plasma current induction
+volt-second	nuclear-fusion	en	Volt-Second		Unit of magnetic flux; the total volt-second capability determines maximum achievable plasma current flat-top duration
+type-i-elm	nuclear-fusion	en	Type-I ELM		Large periodic edge-localized mode occurring in standard H-mode with high pedestal pressure
+grassy-elm	nuclear-fusion	en	Grassy ELM		Small high-frequency ELM regime with reduced energy loss per event compared to type-I ELMs
+elm-free-regime	nuclear-fusion	en	ELM-Free Regime		H-mode operating regime in which edge-localized modes are suppressed by resonant magnetic perturbation or other means
+elm-frequency	metric	en	ELM Frequency		Repetition rate of edge-localized mode bursts typically measured in hertz
+pedestal-height	metric	en	Pedestal Height		Pressure or temperature value at the top of the H-mode pedestal defining the pedestal performance
+h-mode-power-threshold	metric	en	H-Mode Power Threshold		Minimum heating power required to trigger the transition from L-mode to H-mode confinement
+squareness	metric	en	Squareness		Plasma shape parameter describing the rectangularity of the plasma cross-section beyond triangularity
+separatrix-density	metric	en	Separatrix Density		Electron density at the last closed flux surface which strongly influences divertor conditions and detachment
+fluence-limit	metric	en	Fluence Limit		Maximum allowable neutron fluence for a structural component based on material property degradation criteria
+end-of-life	metric	en	End of Life		Design condition at which a component reaches its maximum allowable damage or degradation and must be replaced
+runaway-plateau	nuclear-fusion	en	Runaway Plateau		Quasi-steady phase following a disruption current quench in which a runaway electron beam carries the remaining plasma current
+operational-lifetime	metric	en	Operational Lifetime		Total cumulative operating time or number of cycles a fusion component is qualified to endure before replacement
