@@ -9,6 +9,9 @@ dist/
 .venv/
 venv/
 
+# Agent workspace memory (not project content)
+memories/
+
 # Tool caches
 .mypy_cache/
 .pytest_cache/
