@@ -125,6 +125,7 @@ def build_release_pack(
     include_tag_rules: bool = False,
     include_substitutions: bool = False,
     include_vale_substitute: bool = False,
+    include_translation_dict: bool = False,
     force: bool = False,
 ) -> PackResult:
     """Build a v1 release artifact tarball from a clean staging directory.
@@ -220,6 +221,8 @@ def build_release_pack(
             args.append("--substitutions")
         if include_vale_substitute:
             args.append("--vale-substitute")
+        if include_translation_dict:
+            args.append("--translation-dict")
         _run_module("pipeline.export_registry", args)
 
         # Collect all files we just created under artifacts/.
@@ -327,6 +330,11 @@ def main() -> None:
         help="When exporting registry, also include artifacts/vale/terminology_substitute.yml",
     )
     p.add_argument(
+        "--translation-dict",
+        action="store_true",
+        help="When exporting registry, also include artifacts/translation_dict.json",
+    )
+    p.add_argument(
         "--force",
         action="store_true",
         help="Delete existing stage dir before building.",
@@ -358,6 +366,7 @@ def main() -> None:
         include_tag_rules=bool(args.tag_rules),
         include_substitutions=bool(args.substitutions),
         include_vale_substitute=bool(args.vale_substitute),
+        include_translation_dict=bool(args.translation_dict),
         force=bool(args.force),
     )
 
