@@ -3809,7 +3809,8 @@
     "β": "等离子体比压",
     "βp": "极向比压",
     "ε_eff": "有效纹波",
-    "λ_q": "SOL宽度"
+    "λ_q": "SOL宽度",
+    "ICRH": "离子回旋共振加热"
   },
   "en2zh_short": {
     "A": {
@@ -8567,6 +8568,9 @@
     "鱼骨模": "fishbone instability",
     "鱼骨模不稳定性": "fishbone instability",
     "黑体辐射腔": "hohlraum",
-    "黑腔": "hohlraum"
+    "黑腔": "hohlraum",
+    "中国聚变工程实验堆": "CFETR Chinese Fusion Engineering Test Reactor",
+    "快粒子诊断": "fast particle diagnostics energetic particle diagnostics",
+    "快粒子": "fast particle energetic particle"
   }
 }
