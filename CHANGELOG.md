@@ -24,6 +24,18 @@
 ### Fixed
 
 
+## v2026.08.12
+
+### Added
+
+- **氚安全/包容术语 batch 90**：新增 26 组中英术语，覆盖级包容体系（三级/二级/一级）、氚安全核心概念（静态/动态/负压包容、事故释放、源项评估、剂量评估、缓解、防氚涂层、渗透降低因子 PRF）、去氚工艺（手套箱去氚、氚废气/废水处理、职业照射）
+- synonyms: 废弃术语映射（三层围包→三级包容、二层围包→二级包容、一层围包→一级包容、3-Loop-Confinement→3-Level-Confinement、containment→confinement 标准化）
+- denylist: 禁用旧术语（三层围包、二层围包、一层围包、3-Loop-Confinement）
+
+### Changed
+
+### Fixed
+
 ## v2026.04.17
 
 ### Added

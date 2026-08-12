@@ -1,0 +1,2 @@
+{"trace_id":"6841c543-62da-49a6-89f0-075740adcc42","span_id":"6841c543-62da-49a6-89f0-075740adcc42","parent_span_id":null,"agent_name":"task-executor","task_description":"Execute plan: tritium-confinement-terms-batch90","status":"STARTED","timestamp":"2026-08-12T02:35:06Z"}
+{"trace_id":"6841c543-62da-49a6-89f0-075740adcc42","span_id":"6841c543-62da-49a6-89f0-075740adcc42","parent_span_id":null,"agent_name":"task-executor","task_description":"Execute plan: tritium-confinement-terms-batch90","status":"COMPLETED","duration_ms":0,"timestamp":"2026-08-12T02:37:56Z"}
