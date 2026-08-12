@@ -43,3 +43,11 @@ pfc	PFC	en
 plasmas	plasma	en
 temperatures	temperature	en
 tokamaks	tokamak	en
+三层围包	三级包容	zh
+二层围包	二级包容	zh
+一层围包	一级包容	zh
+3-Loop-Confinement	3-Level Confinement	en
+static containment	static-confinement	en
+dynamic containment	dynamic-confinement	en
+containment boundary	confinement-boundary	en
+containment integrity	confinement-integrity	en
