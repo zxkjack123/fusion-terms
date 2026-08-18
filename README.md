@@ -311,12 +311,12 @@ Registry 变更必须先运行 `python3 -m pipeline.validate_registry` 通过校
 
 ## License
 
-本项目基于 [MIT License](LICENSE) 开源（Copyright (c) 2026 zxkjack123）。
+本项目基于 [MIT License](LICENSE) 开源（Copyright (c) 2026 Xiaokang Zhang）。
 你可以自由使用、修改、分发本项目，包括用于商业用途，前提是保留
 原始版权声明与许可文本。
 
 > This project is open-sourced under the [MIT License](LICENSE)
-> (Copyright (c) 2026 zxkjack123). You are free to use, modify, and
+> (Copyright (c) 2026 Xiaokang Zhang). You are free to use, modify, and
 > distribute this software, including for commercial purposes, provided
 > the original copyright notice and license text are retained.
 
