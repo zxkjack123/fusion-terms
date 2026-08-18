@@ -147,7 +147,7 @@
   - 运行：
     ```bash
     python3 -m pipeline.extract_candidates \
-      --source-root /home/gw/ComputeData/pdf2md/ZoteroIngest/staging \
+      --source-root <your-pdf2md-corpus>/staging \
       --min-count-zh 3 --min-count-en 5 \
       --topk-zh 2000 --topk-en 2000 \
       --zh-stopwords terms/stopwords_zh.txt \

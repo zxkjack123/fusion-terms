@@ -1,6 +1,0 @@
-term	count	examples	files
-托卡马克	3	托卡马克 托卡马克 托卡马克。	tests/fixtures/corpus/sample2.md
-上有很多资料	1	托卡马克装置（tokamak device）在 ITER 上有很多资料。	tests/fixtures/corpus/sample.md
-托卡马克装置	1	托卡马克装置（tokamak device）在 ITER 上有很多资料。	tests/fixtures/corpus/sample.md
-本文件用于测试抽	1	本文件用于测试抽词流水线。	tests/fixtures/corpus/sample.md
-词流水线	1	本文件用于测试抽词流水线。	tests/fixtures/corpus/sample.md

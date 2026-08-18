@@ -84,3 +84,6 @@ sources/local_paths.txt
 .github/reviews/**/*.tmp
 .github/reviews/**/*.bak
 artifacts/terminology_sources/IAEA_Safety_Glossary_2018.pdf
+
+# Agent workflow traces (machine-local state)
+traces/
