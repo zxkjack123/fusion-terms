@@ -1,165 +1,135 @@
 # fusion-terms
 
-版本化、可复现的 **聚变 / 核 / 等离子体工程**术语数据产品与生成工具链。
+[中文文档](README.zh-CN.md)
 
-它既可以可靠导入 **Rime（雾凇拼音 / rime-ice）** 输入法词库，也为下游场景提供
-结构化产物：**聚变自动翻译、双语资料检索、报告术语检查与替换、知识图谱构建、
-OCR 提取内容质量检查与纠错**。
+A versioned, reproducible **terminology data product and toolchain** for
+**fusion / nuclear / plasma engineering**. It imports reliably into the
+**Rime (雾凇拼音 / rime-ice)** input method and powers downstream workflows:
+automatic fusion translation, bilingual corpus search, report terminology
+check & replacement, knowledge-graph building, and OCR extraction quality
+control.
 
-> A versioned, reproducible terminology data product and toolchain for
-> **fusion / nuclear / plasma engineering**. It imports reliably into
-> **Rime (雾凇拼音 / rime-ice)** and serves downstream workflows: automatic
-> fusion translation, bilingual corpus search, report terminology check &
-> replacement, knowledge-graph building, and OCR extraction quality control.
+## Data-Product Philosophy
 
-## 数据产品理念
+This repository manages terminology as a **data product**: every stage of the
+pipeline is versioned, reproducible, and auditable.
 
-本仓库把"术语"当作**数据产品**管理，全链路版本化、可复现、可审计：
+1. **sources (external corpus)** → Markdown corpus (e.g. pdf2md output)
+2. **candidates** → candidate terms with frequency and context (for discovery only — never imported directly)
+3. **review (human adjudication)** → allowlist / denylist / synonyms; humans are the final authority
+4. **artifacts (generated outputs)** → wordlists, bilingual dictionaries, substitution rules, registry exports, etc.
 
-1. **sources（外部语料）** → Markdown 语料（如 pdf2md 输出）
-2. **candidates（候选词）** → 带频次与上下文的候选术语（发现用，不直接入库）
-3. **review（人工审定）** → allowlist / denylist / synonyms，人是最终裁决者
-4. **artifacts（生成产物）** → 词表、双语字典、替换规则、Registry 导出等
+Every term can be traced back to its source and its review decision.
 
-> Terminology is treated as a **data product**: external sources → extracted
-> candidates → human review (allow/deny/synonyms) → versioned artifacts.
-> Every term can be traced back to its source and review decision.
+## Six Application Scenarios
 
-## 应用场景
+### 1. Automatic Fusion Translation
 
-### 1. 聚变自动翻译
+- `artifacts/translation_dict.json` — a bidirectional zh↔en translation
+  dictionary with `zh2en` / `en2zh` directions; short keys are segregated into
+  `en2zh_short` to avoid ambiguity (see `[export].min_en_key_len` in
+  `config.toml`).
+- `artifacts/terminology_substitutions.tsv` — strong-semantic substitution
+  pairs (`alias / preferred / status / lang / note`); `status=forbidden` rows
+  are used for **correction**, forcing common mistranslations back to their
+  canonical forms (e.g. `ASDEX升级 → ASDEX Upgrade`).
 
-- `artifacts/translation_dict.json` — 中英双向翻译字典，含 `zh2en` / `en2zh`
-  两个方向，短键单独归入 `en2zh_short` 以避免歧义（见 `config.toml` 的
-  `[export].min_en_key_len`）。
-- `artifacts/terminology_substitutions.tsv` — 强语义替换对（
-  `alias / preferred / status / lang / note`），其中 `status=forbidden`
-  条目用于**纠错**：把常见误译强制替换回规范写法
-  （例如 `ASDEX升级 → ASDEX Upgrade`）。
+### 2. Bilingual Corpus Search
 
-> `translation_dict.json` provides bidirectional zh↔en dictionaries
-> (`zh2en` / `en2zh`, with short keys segregated into `en2zh_short`).
-> `terminology_substitutions.tsv` carries strong-semantic substitution pairs;
-> `forbidden` rows fix known mistranslations (e.g. `ASDEX升级 → ASDEX Upgrade`).
+- `artifacts/query_expansions.json` — a query-expansion table composed of
+  `concepts` (concept index) and `alias_index` (alias index). It supports
+  **bidirectional zh↔en expansion**: querying in Chinese automatically pulls
+  in English aliases, and vice versa.
+- Retrieved content can be auto-translated into a bilingual corpus, so a
+  single search covers both Chinese and English sources.
 
-### 2. 双语资料检索
+### 3. IME Wordlist (Rime / rime-ice)
 
-- `artifacts/query_expansions.json` — 查询扩展表，由 `concepts`（概念索引）与
-  `alias_index`（别名索引）构成，支持**中文 ↔ 英文双向扩展**：用中文查询时自动
-  带出英文别名，反之亦然。
-- 检索到的内容可自动翻译成双语语料，从而同时命中中文与英文资料。
+- `artifacts/domain_terms.txt` — the final wordlist, one term per line
+  (mixed zh/en, no whitespace inside a term), ready to drop into a Rime
+  wordlist directory.
+- A **safe import** flow (automatic backup + rollback) feeds it into your
+  Rime user dictionary — see "Rime / rime-ice Integration" below.
 
-> `query_expansions.json` (concepts + alias_index) enables **bidirectional
-> zh↔en query expansion**, and retrieved content can be auto-translated into
-> bilingual corpus, covering both Chinese and English sources in one search.
+### 4. Report Terminology Check & Replacement
 
-### 3. 输入法词库（Rime / 雾凇拼音）
+- `artifacts/vale/terminology_substitute.yml` — a Vale-ready terminology rule
+  file (`extends: substitution` swap mapping) that plugs into a Vale gate for
+  reports and manuscripts, flagging non-canonical terms with replacement
+  suggestions.
+- The machine-readable source of truth for the swap pairs is
+  `terminology_substitutions.tsv`; both are exported from the same Registry
+  and stay in sync.
 
-- `artifacts/domain_terms.txt` — 最终词表，一行一词（中英混合，词内无空格），
-  可直接进入 Rime 词库目录。
-- 配合仓库内**安全导入**流程（自动备份、支持回滚）导入 Rime 用户词库；详见
-  下文「Rime / 雾凇拼音集成」。
+### 5. Knowledge-Graph Building
 
-> `domain_terms.txt` is the final wordlist (one term per line, zh/en mixed,
-> no whitespace inside a term). A safe import flow (backup + rollback) feeds it
-> into your Rime userdb — see the Rime integration section below.
+The four tables under `terms/registry/` are themselves a **graph data model**:
 
-### 4. 报告术语检查与替换
-
-- `artifacts/vale/terminology_substitute.yml` — 开箱即用的 Vale 术语检查规则
-  （`extends: substitution` 的 swap 映射），可挂入报告/论文写作的 Vale 门禁，
-  自动提示不规范术语并给出替换建议。
-- 替换对的机器可读来源是 `terminology_substitutions.tsv`，两者由同一 Registry
-  导出，保持同源一致。
-
-> `vale/terminology_substitute.yml` is a Vale-ready substitution rule file
-> (swap mapping) for linting reports and manuscripts; its machine-readable
-> source of truth is `terminology_substitutions.tsv`. Both are exported from
-> the same registry.
-
-### 5. 知识图谱构建
-
-`terms/registry/` 下的四张表本身就是**图数据模型**：
-
-| 表 | 图角色 | 字段（表头） |
+| Table | Graph role | Fields (header) |
 |---|---|---|
-| `concepts.tsv` | 概念节点 | `concept_id, category, preferred_zh, preferred_en, preferred_abbr, status, notes, source` |
-| `aliases.tsv` | 别名→概念边 | `alias, concept_id, lang, kind, comment`（`kind`: preferred / alias / deprecated / forbidden） |
-| `evidence.tsv` | 概念→证据边 | `concept_id, source, quote, added_by, added_at` |
-| `definitions.tsv` | 定义属性 | `concept_id, lang, definition, source` |
+| `concepts.tsv` | concept nodes | `concept_id, category, preferred_zh, preferred_en, preferred_abbr, status, notes, source` |
+| `aliases.tsv` | alias→concept edges | `alias, concept_id, lang, kind, comment` (`kind`: preferred / alias / deprecated / forbidden) |
+| `evidence.tsv` | concept→evidence edges | `concept_id, source, quote, added_by, added_at` |
+| `definitions.tsv` | definition attributes | `concept_id, lang, definition, source` |
 
-- `artifacts/registry_exports.json` — 一站式导出：概念与别名计数、
-  `query_expansions`、`tag_rules`、`terminology_substitutions`、
-  Vale 接受/拒绝词表等，可直接喂给下游知识图谱或检索系统。
-- `artifacts/tag_rules.jsonl` — 概念标签规则（含 `category`、`kind`、`match`），
-  可直接用于实体标注/打标流水线。
+- `artifacts/registry_exports.json` — a one-stop export: concept and alias
+  counts, `query_expansions`, `tag_rules`, `terminology_substitutions`, Vale
+  accept/reject wordlists, and more. Feed it directly into a downstream
+  knowledge-graph or retrieval system.
+- `artifacts/tag_rules.jsonl` — concept tagging rules (with `category`,
+  `kind`, `match`), ready for entity-annotation / tagging pipelines.
 
-> The four registry tables form a graph data model: concepts as nodes,
-> aliases and evidence as edges, definitions as node attributes.
-> `registry_exports.json` bundles the graph plus tag rules and substitution
-> pairs for downstream KG or retrieval systems; `tag_rules.jsonl` drives
-> entity tagging.
+### 6. OCR Extraction Quality Check & Correction
 
-### 6. OCR 提取质量检查与纠错
+- Authoritative-glossary extraction under `scripts/`:
+  - `extract_gbt4960_md.py` — extracts GB/T 4960.9-2013 *Nuclear Science and Technology Terminology* from Markdown
+  - `extract_iaea_glossary.py` — IAEA Safety Glossary 2018 (PDF layout parsing)
+  - `fetch_iter_glossary.py` — fetches the ITER Fusion Glossary
+  - `ocr_gbt4960.py` — OCR for scanned PDFs (tesseract, chi_sim+eng) + term-pair parsing
+- `scripts/diff_terminology_source.py` — **difference review** of
+  authoritative glossaries against the Registry: surfaces added, missing, and
+  inconsistent entries for human revision.
+- `terms/denylist.txt` — human-reviewed **forbidden / correction entries**
+  (noise, OCR misreads, deprecated terms), excluded when building the
+  wordlist.
 
-- `scripts/` 权威术语表提取：
-  - `extract_gbt4960_md.py` — GB/T 4960.9-2013《核科学技术术语》Markdown 提取
-  - `extract_iaea_glossary.py` — IAEA Safety Glossary 2018（PDF 版式解析）
-  - `fetch_iter_glossary.py` — ITER Fusion Glossary 抓取
-  - `ocr_gbt4960.py` — 扫描版 PDF 的 OCR（tesseract，chi_sim+eng）+ 术语对解析
-- `scripts/diff_terminology_source.py` — 权威术语表 vs Registry **差异审校**：
-  找出新增、缺失与不一致条目，供人工修订。
-- `terms/denylist.txt` — 人工审定的**禁用/纠错词条**（噪声、OCR 误识、废弃术语），
-  在构建词表时被排除。
+## Registry Size
 
-> `scripts/` extracts authoritative glossaries (GB/T 4960.9-2013, IAEA Safety
-> Glossary 2018, ITER Fusion Glossary), including an OCR path for scanned PDFs;
-> `diff_terminology_source.py` diffs them against the registry for review, and
-> `terms/denylist.txt` excludes noise, OCR errors, and deprecated terms.
+Current size (counted from data rows in `terms/registry/`, excluding comment
+and blank lines; as of
+[v2026.08.12](https://github.com/zxkjack123/fusion-terms/tree/v2026.08.12)):
 
-## Registry 规模
-
-当前规模（直接统计自 `terms/registry/` 数据行，不含注释/空行；截至
-[v2026.08.12](https://github.com/zxkjack123/fusion-terms/releases/tag/v2026.08.12)）：
-
-| 表 | 数据行数 |
+| Table | Data rows |
 |---|---|
 | `concepts.tsv` | 3064 |
 | `aliases.tsv` | 10232 |
 | `evidence.tsv` | 3156 |
 | `definitions.tsv` | 6128 |
 
-历史快照 [v2026.04.14.1](https://github.com/zxkjack123/fusion-terms/releases/tag/v2026.04.14.1)
-（见 `CHANGELOG.md`）：concepts **2697** / aliases **8373** / evidence rows
-**2729** / definitions **1549**。
+Historical snapshot
+[v2026.04.14.1](https://github.com/zxkjack123/fusion-terms/tree/v2026.04.14.1)
+(see `CHANGELOG.md`): concepts **2697** / aliases **8373** / evidence rows
+**2729** / definitions **1549**.
 
-> Current registry size (counted from data rows in `terms/registry/`,
-> excluding comments and blank lines, as of v2026.08.12) vs. the
-> v2026.04.14.1 snapshot recorded in CHANGELOG: 2697 / 8373 / 2729 / 1549.
+Design doc: `docs/dev/06-terminology-registry-upgrade.md`; version history:
+`CHANGELOG.md` (CalVer versioning scheme `vYYYY.MM.DD`).
 
-设计文档：`docs/dev/06-terminology-registry-upgrade.md`；版本历史：`CHANGELOG.md`
-（CalVer 版本策略 `vYYYY.MM.DD`）。
-
-## 目录结构
+## Directory Structure
 
 ```
 fusion-terms/
-├── pipeline/     # 生成工具链（提取、构建、导出、发布、校验）
-├── terms/        # 人工审定的输入：allowlist/denylist/synonyms + registry
-│   └── registry/ # 术语登记册四表（concepts/aliases/evidence/definitions）
-├── artifacts/    # 生成产物（词表、字典、替换规则、Registry 导出）
-├── sources/      # 外部语料指针（不复制整个语料库）
-├── scripts/      # IAEA / ITER / GB/T 4960 术语表提取 + OCR 质量检查
-├── docs/dev/     # 架构与设计文档
-├── tests/        # 测试与 fixtures 语料
-└── config.toml   # 全局配置
+├── pipeline/     # generation toolchain (extract, build, export, release, validate)
+├── terms/        # human-reviewed inputs: allowlist/denylist/synonyms + registry
+│   └── registry/ # the four registry tables (concepts/aliases/evidence/definitions)
+├── artifacts/    # generated outputs (wordlists, dictionaries, substitution rules, registry exports)
+├── sources/      # pointers to the external corpus (does not copy the whole corpus)
+├── scripts/      # IAEA / ITER / GB/T 4960 glossary extraction + OCR quality checks
+├── docs/dev/     # architecture & design docs
+├── tests/        # tests and fixture corpus
+└── config.toml   # global configuration
 ```
 
-> `pipeline/` scripts · `terms/` human-reviewed inputs + registry ·
-> `artifacts/` generated outputs · `sources/` external corpus pointers ·
-> `scripts/` glossary extraction & OCR QC · `docs/dev/` design notes.
-
-## 安装
+## Installation
 
 ```bash
 git clone https://github.com/zxkjack123/fusion-terms.git
@@ -167,88 +137,96 @@ cd fusion-terms
 pip install -r requirements.txt
 ```
 
-> Python 3.11+ 直接可用（`requirements.txt` 仅含低版本兼容包 `tomli`）。
+Python 3.11+ works out of the box (`requirements.txt` only pins the
+low-version compatibility package `tomli`).
 
-## 快速开始
+## Quick Start
 
-### 1) 从 Markdown 语料提取候选术语
+### 1) Extract candidate terms from Markdown corpus
 
-提取器读取 `config.toml` 中 `[sources].root` 指向的语料目录（默认为仓库内
-fixtures，可修改或通过 CLI 覆盖），输出：
+The extractor reads the corpus directory pointed to by `[sources].root` in
+`config.toml` (defaults to the in-repo fixtures; change the config or
+override via CLI). Outputs:
 
-- `artifacts/candidates_zh.tsv` — 中文候选（Han 字符跨度 2–8，含频次与上下文）
-- `artifacts/candidates_en.tsv` — 英文/混合候选
+- `artifacts/candidates_zh.tsv` — Chinese candidates (Han spans of 2–8 characters, with frequency and context)
+- `artifacts/candidates_en.tsv` — English / mixed candidates
 
-编码规范：
+Encoding rules:
 
-- `terms/` 与 `terms/registry/` 下的文件必须为**严格 UTF-8**，流水线快速失败。
-- 外部语料可能含坏字节，提取器会告警并以 `U+FFFD` 替换，便于定位上游问题。
+- Files under `terms/` and `terms/registry/` must be **strict UTF-8**; the pipeline fails fast otherwise.
+- External corpus may contain bad bytes; the extractor warns and replaces them with `U+FFFD` so upstream problems are easy to locate.
 
-> 注意：`candidates_*.tsv` 只是**发现产物**，不会自动进入最终词表。
+Note: `candidates_*.tsv` are **discovery artifacts** and are never
+automatically added to the final wordlist.
 
-### 2) 人工审定候选
+### 2) Human review of candidates
 
-- 接受的术语 → `terms/allowlist_zh.txt` / `terms/allowlist_en.txt`
-- 拒绝的噪声术语 → `terms/denylist.txt`
-- （可选）别名归一 → `terms/synonyms.tsv`
+- Accepted terms → `terms/allowlist_zh.txt` / `terms/allowlist_en.txt`
+- Rejected noise → `terms/denylist.txt`
+- (Optional) alias normalization → `terms/synonyms.tsv`
 
-只有 `terms/` 下人工审定的清单参与最终构建——**人是最终裁决者**。
+Only the human-reviewed lists under `terms/` take part in the final build —
+**humans are the final authority**.
 
-### 3) 构建最终词表
+### 3) Build the final wordlist
 
-- 输出 `artifacts/domain_terms.txt`
+- Outputs `artifacts/domain_terms.txt`.
 
-可选：同步到本地 Fcitx/Rime 词表路径（默认
-`~/.config/fcitx/rime/wordlists/domain_terms.txt`，见 `config.toml`）。
+Optional: sync to the local Fcitx/Rime wordlist path (default
+`~/.config/fcitx/rime/wordlists/domain_terms.txt`, see `config.toml`).
 
-### 4) （可选）生成 Rime 导入文件并导入
+### 4) (Optional) Generate the Rime import file and import
 
-- 生成 `artifacts/.rime_import_rime_ice.txt`；
-- 导入用户词库优先使用**安全流程**（自动备份、支持回滚），见下节。
+- Generates `artifacts/.rime_import_rime_ice.txt`;
+- importing into the user dictionary should prefer the **safe flow**
+  (automatic backup + rollback), described in the next section.
 
-## Rime / 雾凇拼音集成
+## Rime / rime-ice Integration
 
-安全导入/导出支持常用的透传选项：
+The safe import/export supports common pass-through options:
 
-- 选择目标词典名（默认 `rime_ice`）
-- 覆盖 Rime 用户目录（如 `~/.config/fcitx/rime`）
-- 可选包含非 CJK 词条
-- 用户词库被锁定时可选禁用 fcitx 自动重启
+- choose the target dictionary name (default `rime_ice`)
+- override the Rime user directory (e.g. `~/.config/fcitx/rime`)
+- optionally include non-CJK entries
+- optionally disable the fcitx auto-restart when the user dictionary is locked
 
-> 导入负载文件（`artifacts/.rime_import_*.txt`）、备份清单
-> （`artifacts/rime_backups/`）与 `*.userdb/` 目录是**本机状态**，不应提交。
-> 本仓库是**唯一事实源**，不要以 `*.userdb` 为规范词库。
+The import payload files (`artifacts/.rime_import_*.txt`), the backup manifest
+(`artifacts/rime_backups/`) and the `*.userdb/` directories are **local
+machine state** and must not be committed. This repository is the **single
+source of truth** — do not treat `*.userdb` as a canonical wordlist.
 
-## 下游消费与发布契约
+## Downstream Consumption & Release Contract
 
-本仓库同时以**版本化、可验证的术语数据产品**形式被下游工具链消费
-（例如术语检查/去 AI 化工具 de-ai-fier 的发布契约）。
+This repository is also consumed as a **versioned, verifiable terminology
+data product** by downstream toolchains (e.g. the release contract of the
+terminology-check / de-AI-fication tool de-ai-fier).
 
-- 契约（文件含义）：`docs/dev/07-de-ai-fier-interface-contract.md`
-- 执行计划（如何产出）：`docs/dev/08-de-ai-fier-interface-execution-plan.md`
+- Contract (what the files mean): `docs/dev/07-de-ai-fier-interface-contract.md`
+- Execution plan (how they are produced): `docs/dev/08-de-ai-fier-interface-execution-plan.md`
 
-设计原则：集成/构建阶段可以运行 Python、拉取 tag 或 release 资产；
-**运行期质量门禁必须离线**，只读本地文件。
+Design principle: integration/build stages may run Python and pull tags or
+release assets; **runtime quality gates must work offline**, reading local
+files only.
 
-### 推荐消费的产物
+### Recommended artifacts
 
-基础（v1）：
+Basic (v1):
 
-- `domain_terms.txt` — 纯词条词表（一行一词，词内无空白）
-- `fusion_terms_manifest.json` — sha256 + 计数 + 版本/提交元数据
+- `domain_terms.txt` — the plain wordlist (one term per line, no whitespace inside a term)
+- `fusion_terms_manifest.json` — sha256 + counts + version/commit metadata
 
-强烈推荐（v1.1）：
+Strongly recommended (v1.1):
 
-- `artifacts/terminology_substitutions.tsv` — 由 Registry `kind` 导出的强语义替换对
-- `artifacts/vale/terminology_substitute.yml` — Vale 即用的替换规则层
+- `artifacts/terminology_substitutions.tsv` — strong-semantic substitution pairs derived from the Registry `kind` field
+- `artifacts/vale/terminology_substitute.yml` — the Vale-ready substitution rule layer
 
-### 方式 A：固定 tag 本地构建（确定性）
+### Method A: pin a tag and build locally (deterministic)
 
-在集成/构建流水线中固定 tag，构建自包含的发布根目录（或 tarball），
-生成并校验 manifest。
+Pin the tag in your integration/build pipeline, build a self-contained
+release root (or tarball), and generate & verify the manifest.
 
 ```bash
-TAG=v2026.04.14.1
+TAG=v2026.08.12
 
 git clone https://github.com/zxkjack123/fusion-terms.git
 cd fusion-terms
@@ -258,25 +236,27 @@ python3 -m venv .venv
 . .venv/bin/activate
 pip install -r requirements.txt
 
-# 构建发布根目录 + tar.gz（含 v1.1 替换规则导出）
+# Build the release root + tar.gz (including v1.1 substitution-rule exports)
 python3 -m pipeline.release_pack \
 	--tag "$TAG" \
 	--include-registry-exports \
 	--substitutions \
 	--vale-substitute
 
-# （可选）对 release_pack 打印的 staged 目录再次校验
+# (Optional) re-verify the staged directory that release_pack prints
 python3 -m pipeline.verify_release_contract --root "dist/stage/$TAG"
 ```
 
-此后下游项目把所需文件复制进自己的仓库/运行镜像，运行期校验保持离线。
+After this, downstream projects copy the files they need into their own
+repository / runtime image; runtime verification stays offline.
 
-### 方式 B：下载 release 资产并验证
+### Method B: download a release asset and verify
 
-不想运行构建流水线时，直接下载本仓库发布的 release tarball 并本地验证。
+If you do not want to run the build pipeline, download the release tarball
+published by this repository and verify it locally.
 
 ```bash
-TAG=v2026.04.14.1
+TAG=v2026.03.29
 ASSET="fusion-terms-artifacts-${TAG}.tar.gz"
 URL="https://github.com/zxkjack123/fusion-terms/releases/download/${TAG}/${ASSET}"
 
@@ -286,43 +266,41 @@ cd third_party/fusion-terms/${TAG}
 curl -L -o "$ASSET" "$URL"
 tar -xzf "$ASSET"
 
-# 校验契约（需要 verifier 代码；可 vendor 或从固定 tag 运行）
+# Verify the contract (requires the verifier code; vendor it or run from a pinned tag)
 python3 -m pipeline.verify_release_contract --root .
 ```
 
-## 开发与贡献
+Note: release tarballs are currently published through `v2026.03.29`; later
+versions (up to `v2026.08.12`) exist as git tags only. For the latest data,
+prefer Method A.
 
-欢迎贡献术语与代码。开发环境、Registry 贡献顺序、提交约定与 PR 检查清单见
-[CONTRIBUTING.md](CONTRIBUTING.md)。
+## Development & Contribution
 
-核心流程一览：
+Contributions of terms and code are welcome. See
+[CONTRIBUTING.md](CONTRIBUTING.md) for the dev setup, the registry
+contribution workflow, commit conventions, and the pull-request checklist.
 
-- 提取候选（`pipeline.extract_candidates`）
-- 审定 allow/deny/synonyms（`terms/`）
-- 构建词表（`pipeline.build_terms`）
-- 可选生成/导入 Rime 产物（`pipeline.rime_import_safe`）
-- 发布打包与校验（`pipeline.release_pack` + `pipeline.verify_release_contract`）
+Core flow at a glance:
 
-Registry 变更必须先运行 `python3 -m pipeline.validate_registry` 通过校验。
+- extract candidates (`pipeline.extract_candidates`)
+- review allow/deny/synonyms (`terms/`)
+- build the wordlist (`pipeline.build_terms`)
+- optionally generate / import Rime artifacts (`pipeline.rime_import_safe`)
+- release packaging & verification (`pipeline.release_pack` + `pipeline.verify_release_contract`)
 
-> See CONTRIBUTING.md for dev setup, the registry contribution workflow,
-> commit conventions, and the pull-request checklist. All registry changes
-> must pass `pipeline.validate_registry`.
+All registry changes must pass `python3 -m pipeline.validate_registry` first.
 
 ## License
 
-本项目基于 [MIT License](LICENSE) 开源（Copyright (c) 2026 Xiaokang Zhang）。
-你可以自由使用、修改、分发本项目，包括用于商业用途，前提是保留
-原始版权声明与许可文本。
+This project is open-sourced under the [MIT License](LICENSE)
+(Copyright (c) 2026 Xiaokang Zhang). You are free to use, modify, and
+distribute this project, including for commercial purposes, provided the
+original copyright notice and license text are retained.
 
-> This project is open-sourced under the [MIT License](LICENSE)
-> (Copyright (c) 2026 Xiaokang Zhang). You are free to use, modify, and
-> distribute this software, including for commercial purposes, provided
-> the original copyright notice and license text are retained.
+## Notes
 
-## 附注
-
-- 提取策略**先高精度、后扩召回**，扩展设计见 `docs/dev/`。
-- 若你的 pdf2md 流水线生成派生 Markdown（`*.qa_report.md` / `*.autofix.md` 等），
-  可通过 `config.toml`（`[sources].exclude_globs`）或 CLI
-  `--exclude-glob` 排除。
+- The extraction strategy is **precision first, then recall expansion**;
+  extension designs live in `docs/dev/`.
+- If your pdf2md pipeline generates derived Markdown (`*.qa_report.md` /
+  `*.autofix.md`, etc.), exclude them via `config.toml`
+  (`[sources].exclude_globs`) or the CLI `--exclude-glob`.
