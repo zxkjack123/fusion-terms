@@ -1,8 +1,11 @@
 from __future__ import annotations
 
 import argparse
+import os
+import re
 import subprocess
 import sys
+import tempfile
 from pathlib import Path
 
 try:
@@ -16,6 +19,64 @@ def _load_config(config_path: Path) -> dict:
         return {}
     with config_path.open("rb") as f:
         return tomllib.load(f)
+
+
+def is_mixed_ascii_cjk(term: str) -> bool:
+    """True when *term* contains both ASCII letters and CJK ideographs.
+
+    Mixed terms (e.g. ``ITER到DEMO``, ``扩展MHD``, ``D-T反应``) are excluded
+    from the IME payload: the importer's pinyin conversion drops the ASCII
+    part, producing lossy short codes (``ITER到DEMO`` -> ``dao``) that
+    outrank common characters in the candidate list.
+    """
+
+    return bool(re.search(r"[A-Za-z]", term)) and bool(
+        re.search(r"[\u4e00-\u9fff]", term)
+    )
+
+
+def filter_mixed_terms(terms: list[str]) -> tuple[list[str], int]:
+    """Return ``(kept_terms, dropped_count)`` with original order preserved."""
+
+    kept = [t for t in terms if not is_mixed_ascii_cjk(t)]
+    return kept, len(terms) - len(kept)
+
+
+def read_wordlist_lines(path: Path) -> list[str]:
+    """Read a one-term-per-line wordlist; skip blanks and ``#`` comments."""
+
+    terms: list[str] = []
+    for raw in path.read_text(encoding="utf-8", errors="replace").splitlines():
+        s = raw.strip()
+        if not s or s.startswith("#"):
+            continue
+        terms.append(s)
+    return terms
+
+
+def prepare_importer_input(
+    input_path: Path, staging_dir: Path
+) -> tuple[Path, int, int]:
+    """Filter mixed terms; return ``(importer_input_path, kept_count, dropped_count)``.
+
+    When nothing is dropped, returns the original *input_path*. Otherwise a
+    filtered temporary file is created under *staging_dir* (same filesystem
+    as the payload); the caller owns its cleanup.
+    """
+
+    all_terms = read_wordlist_lines(input_path)
+    kept, dropped = filter_mixed_terms(all_terms)
+    if not dropped:
+        return input_path, len(kept), 0
+
+    fd, tmp_name = tempfile.mkstemp(
+        prefix=".filtered_domain_terms.",
+        suffix=".txt",
+        dir=str(staging_dir),
+    )
+    with os.fdopen(fd, "w", encoding="utf-8") as f:
+        f.write("\n".join(kept) + ("\n" if kept else ""))
+    return Path(tmp_name), len(kept), dropped
 
 
 def main() -> None:
@@ -114,11 +175,29 @@ def main() -> None:
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
+    # Exclude mixed ASCII+CJK terms BEFORE handing the wordlist to the
+    # importer (see is_mixed_ascii_cjk for rationale). This keeps the repo
+    # safe regardless of the external importer script's behavior.
+    importer_input, kept, dropped = prepare_importer_input(
+        input_path, output_path.parent
+    )
+    if dropped:
+        print(f"rime_export: excluded {dropped} mixed ASCII+CJK term(s)")
+    if kept == 0:
+        output_path.write_text("", encoding="utf-8")
+        print(
+            "rime_export: no terms remain after mixed-term filtering; "
+            "wrote empty payload"
+        )
+        if importer_input != input_path:
+            importer_input.unlink(missing_ok=True)
+        return
+
     cmd = [
         sys.executable,
         str(script_path),
         "--input",
-        str(input_path),
+        str(importer_input),
         "--output",
         str(output_path),
     ]
@@ -137,13 +216,20 @@ def main() -> None:
             cmd.append("--no-restart-fcitx")
         cmd.append("--import")
 
-    proc = subprocess.run(
-        cmd,
-        check=False,
-        capture_output=True,
-        text=True,
-        timeout=120,
-    )
+    try:
+        proc = subprocess.run(
+            cmd,
+            check=False,
+            capture_output=True,
+            text=True,
+            timeout=120,
+        )
+    finally:
+        if importer_input != input_path:
+            try:
+                importer_input.unlink()
+            except FileNotFoundError:
+                pass
     if proc.stdout:
         print(proc.stdout)
     if proc.returncode != 0:
