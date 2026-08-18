@@ -11,6 +11,8 @@ from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
 
+from pipeline.rime_export import prepare_importer_input
+
 try:
     import tomllib  # py>=3.11
 except ModuleNotFoundError:  # pragma: no cover
@@ -466,11 +468,28 @@ def main() -> None:
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
+    # Exclude mixed ASCII+CJK terms before payload generation (shared
+    # logic with rime_export; see pipeline.rime_export.is_mixed_ascii_cjk).
+    importer_input, kept, dropped = prepare_importer_input(
+        input_path, output_path.parent
+    )
+    if dropped:
+        print(f"rime_import_safe: excluded {dropped} mixed ASCII+CJK term(s)")
+    if kept == 0:
+        output_path.write_text("", encoding="utf-8")
+        print(
+            "rime_import_safe: no terms remain after mixed-term filtering; "
+            "wrote empty payload"
+        )
+        if importer_input != input_path:
+            importer_input.unlink(missing_ok=True)
+        return
+
     # Step 1) Always generate payload (safe, reproducible).
     try:
         gen = _run_importer_v2(
             script=script_path,
-            input_path=input_path,
+            input_path=importer_input,
             output_path=output_path,
             do_import=False,
             dict_name=args.dict_name,
@@ -489,10 +508,20 @@ def main() -> None:
     if gen.returncode != 0:
         if gen.stderr:
             print(gen.stderr)
+        if importer_input != input_path:
+            try:
+                importer_input.unlink()
+            except FileNotFoundError:
+                pass
         raise SystemExit(gen.returncode)
 
     # Explicit dry-run: stop here.
     if args.dry_run or not args.do_import:
+        if importer_input != input_path:
+            try:
+                importer_input.unlink()
+            except FileNotFoundError:
+                pass
         print(f"generated import payload: {output_path}")
         print(
             "dry-run: no import performed"
@@ -525,7 +554,7 @@ def main() -> None:
     try:
         imp = _run_importer_v2(
             script=script_path,
-            input_path=input_path,
+            input_path=importer_input,
             output_path=output_path,
             do_import=True,
             dict_name=args.dict_name,
@@ -556,8 +585,18 @@ def main() -> None:
                 f"rollback also failed: {rb_err}",
                 file=sys.stderr,
             )
+        if importer_input != input_path:
+            try:
+                importer_input.unlink()
+            except FileNotFoundError:
+                pass
         raise SystemExit(imp.returncode)
 
+    if importer_input != input_path:
+        try:
+            importer_input.unlink()
+        except FileNotFoundError:
+            pass
     print("import OK")
     print("verification tips:")
     print("- restart Fcitx if needed")
