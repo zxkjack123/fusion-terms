@@ -1,0 +1,21 @@
+term	count	examples	files
+D-T	2	We also mention H-mode confinement and D-T operation. | More materials: Nb3Sn and D-T and W/Be.	tests/fixtures/corpus/sample.md | tests/fixtures/corpus/sample2.md
+ITER	2	托卡马克装置（tokamak device）在 ITER 上有很多资料。 | ITER ITER ITER.	tests/fixtures/corpus/sample.md | tests/fixtures/corpus/sample2.md
+NBI	2	Heating methods: NBI, ICRH, ECRH. | Heating again: NBI.	tests/fixtures/corpus/sample.md | tests/fixtures/corpus/sample2.md
+W/Be	2	Materials include Nb3Sn and a W/Be mix. | More materials: Nb3Sn and D-T and W/Be.	tests/fixtures/corpus/sample.md | tests/fixtures/corpus/sample2.md
+heating	2	Heating methods: NBI, ICRH, ECRH. | Heating again: NBI.	tests/fixtures/corpus/sample.md | tests/fixtures/corpus/sample2.md
+iter	2	托卡马克装置（tokamak device）在 ITER 上有很多资料。 | ITER ITER ITER.	tests/fixtures/corpus/sample.md | tests/fixtures/corpus/sample2.md
+materials	2	Materials include Nb3Sn and a W/Be mix. | More materials: Nb3Sn and D-T and W/Be.	tests/fixtures/corpus/sample.md | tests/fixtures/corpus/sample2.md
+nbi	2	Heating methods: NBI, ICRH, ECRH. | Heating again: NBI.	tests/fixtures/corpus/sample.md | tests/fixtures/corpus/sample2.md
+ECRH	1	Heating methods: NBI, ICRH, ECRH.	tests/fixtures/corpus/sample.md
+H-mode	1	We also mention H-mode confinement and D-T operation.	tests/fixtures/corpus/sample.md
+ICRH	1	Heating methods: NBI, ICRH, ECRH.	tests/fixtures/corpus/sample.md
+again	1	Heating again: NBI.	tests/fixtures/corpus/sample2.md
+also	1	We also mention H-mode confinement and D-T operation.	tests/fixtures/corpus/sample.md
+confinement	1	We also mention H-mode confinement and D-T operation.	tests/fixtures/corpus/sample.md
+device	1	托卡马克装置（tokamak device）在 ITER 上有很多资料。	tests/fixtures/corpus/sample.md
+ecrh	1	Heating methods: NBI, ICRH, ECRH.	tests/fixtures/corpus/sample.md
+icrh	1	Heating methods: NBI, ICRH, ECRH.	tests/fixtures/corpus/sample.md
+include	1	Materials include Nb3Sn and a W/Be mix.	tests/fixtures/corpus/sample.md
+mention	1	We also mention H-mode confinement and D-T operation.	tests/fixtures/corpus/sample.md
+methods	1	Heating methods: NBI, ICRH, ECRH.	tests/fixtures/corpus/sample.md
