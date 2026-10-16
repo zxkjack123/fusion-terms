@@ -11528,3 +11528,28 @@ TRL级别	technology-readiness-level	zh	deprecated	internal:dict-improvements
 技术成熟等级	technology-readiness-level	zh	forbidden	internal:dict-improvements
 氚处理周期	tritium-processing-time	zh	deprecated	internal:dict-improvements
 氚停留时间值	tritium-processing-time	zh	forbidden	internal:dict-improvements
+CATE	cate	abbr	preferred	canonical abbr
+活化腐蚀产物源项分析程序	cate	zh	preferred	preferred zh
+CATE程序	cate	zh	alias	shorthand
+CATE-3.0	cate	en	alias	versioned form
+PACTOLE	pactole	abbr	preferred	canonical abbr
+PACTOLE程序	pactole	zh	alias	shorthand
+PACTITER	pactiter	abbr	preferred	canonical abbr
+PACTITER程序	pactiter	zh	alias	shorthand
+TRACT	tract	abbr	preferred	canonical abbr
+TRACT程序	tract	zh	alias	shorthand
+OSCAR	oscar	abbr	preferred	canonical abbr
+OSCAR程序	oscar	zh	alias	shorthand
+活化腐蚀产物源项	acp-source-term	zh	preferred	preferred zh
+ACP source term	acp-source-term	en	preferred	preferred en token
+沉积系数	acp-deposition-coefficient	zh	preferred	preferred zh
+deposition coefficient	acp-deposition-coefficient	en	preferred	preferred en token
+ACP deposition coefficient	acp-deposition-coefficient	en	alias	scoped full form
+侵蚀系数	acp-erosion-coefficient	zh	preferred	preferred zh
+erosion coefficient	acp-erosion-coefficient	en	preferred	preferred en token
+ACP erosion coefficient	acp-erosion-coefficient	en	alias	scoped full form
+溶解沉淀系数	dissolution-precipitation-coefficient	zh	preferred	preferred zh
+dissolution-precipitation coefficient	dissolution-precipitation-coefficient	en	preferred	preferred en token
+过滤器计算模型	acp-filter-model	zh	preferred	preferred zh
+ACP filter model	acp-filter-model	en	preferred	preferred en token
+EAF-2007	eaf	en	alias	versioned form of EAF

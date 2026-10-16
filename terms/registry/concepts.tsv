@@ -3393,3 +3393,13 @@ fluence-limit	metric	en	Fluence Limit		Maximum allowable neutron fluence for a s
 end-of-life	metric	en	End of Life		Design condition at which a component reaches its maximum allowable damage or degradation and must be replaced
 runaway-plateau	nuclear-fusion	en	Runaway Plateau		Quasi-steady phase following a disruption current quench in which a runaway electron beam carries the remaining plasma current
 operational-lifetime	metric	en	Operational Lifetime		Total cumulative operating time or number of cycles a fusion component is qualified to endure before replacement
+cate	code	活化腐蚀产物源项分析程序	CATE	CATE	active	Water-cooled-loop activated corrosion product source term analysis code (NCEPU; CATE-V2.0/V3.0 line)	corpus
+pactole	code	PACTOLE程序	PACTOLE		active	CEA code for activated corrosion product source term in PWR primary circuits	corpus
+pactiter	code	PACTITER程序	PACTITER		active	CEA code for activated corrosion product source term in fusion water-cooled loops	corpus
+tract	code	TRACT程序	TRACT		active	UKAEA code for activated corrosion product source term in fusion water-cooled loops	corpus
+oscar	code	OSCAR程序	OSCAR	OSCAR	active	CEA/Framatome/EDF code for activated corrosion products; Oscar-fusion variant for fusion cooling loops	corpus
+acp-source-term	metric	活化腐蚀产物源项	ACP source term		active	Spatial and temporal distribution of activated corrosion product activity in coolant loops	corpus
+acp-deposition-coefficient	metric	沉积系数	deposition coefficient		active	Rate coefficient for deposition of particulate corrosion products onto coolant loop surfaces	corpus
+acp-erosion-coefficient	metric	侵蚀系数	erosion coefficient		active	Rate coefficient for erosion of deposited corrosion products back into the coolant stream	corpus
+dissolution-precipitation-coefficient	metric	溶解沉淀系数	dissolution-precipitation coefficient		active	Rate coefficient for dissolution of the oxide layer and precipitation of dissolved species in coolant loops	corpus
+acp-filter-model	concept	过滤器计算模型	ACP filter model		active	Model of coolant purification filter removal of activated corrosion products in source term codes	corpus

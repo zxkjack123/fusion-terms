@@ -3203,3 +3203,13 @@ fusion-power-density	internal:dict-improvements:metric-wave1		manual	2026-04-20
 gas-production-rate	internal:dict-improvements:metric-wave1		manual	2026-04-20
 goodness-of-fit	internal:dict-improvements:metric-wave1		manual	2026-04-20
 grashof-number	internal:dict-improvements:metric-wave1		manual	2026-04-20
+cate	internal:cate-3.0-deliverables/FUTURE-030503-DD-009	华北电力大学项目组采用自主开发的核反应堆活化腐蚀产物源项分析程序CATE-3.0，基于典型聚变堆水冷回路设计参数和运行参数，开展聚变堆活化腐蚀产物源项计算分析。	manual	2026-10-16
+pactole	internal:thesis-郭庆洋-2020-水冷堆活化腐蚀产物多物相多区域迁移模型的研究	关于活化腐蚀产物源项计算，在公开发表的文献上可查阅到的算例主要有法国原子能委员会CEA开发的PACTOLE程序和PACTITER程序的算例，英国原子能管理局开发的TRACT程序的算例。	manual	2026-10-16
+pactiter	internal:thesis-郭庆洋-2020-水冷堆活化腐蚀产物多物相多区域迁移模型的研究	PACTOLE程序针对压水堆开发，PACTITER程序和TRACT程序针对聚变堆开发。	manual	2026-10-16
+tract	internal:thesis-郭庆洋-2020-水冷堆活化腐蚀产物多物相多区域迁移模型的研究	选取聚变堆ITER包层水冷回路、偏滤器水冷回路与PACTITER程序和TRACT程序进行对比验证。	manual	2026-10-16
+oscar	internal:dify-kb/Activation-Corrosion-Products-OSCAR/Baseline_ACP_assumptions_and_calculation_XNXW3N_v1_0	OSCAR- Oscar-fusion is the code developed by CEA, Framatome and EDF for fusion calculating ACP.	manual	2026-10-16
+acp-source-term	internal:cate-3.0-deliverables/FUTURE-030503-DD-007	一回路活化腐蚀产物源项计算程序是工程计算程序，它用来计算核电厂在不同工况下不同物质形态的活化腐蚀产物在不同区域内活度分布。	manual	2026-10-16
+acp-deposition-coefficient	internal:cate-3.0-deliverables/FUTURE-030503-DD-007	D(k)：区域k颗粒物的沉积系数，s-1，计算式见3.2-8。	manual	2026-10-16
+acp-erosion-coefficient	internal:cate-3.0-deliverables/FUTURE-030503-DD-007	E(k)：区域k颗粒物的侵蚀系数，s-1，计算式见3.2-9。	manual	2026-10-16
+dissolution-precipitation-coefficient	internal:cate-3.0-deliverables/FUTURE-030503-DD-007	氧化层主要考虑与冷却剂中离子的溶解沉淀作用，沉积层主要考虑与冷却剂中颗粒物的侵蚀沉积作用。	manual	2026-10-16
+acp-filter-model	internal:cate-3.0-deliverables/FUTURE-030503-DD-007	2.3 过滤器计算模型	manual	2026-10-16
