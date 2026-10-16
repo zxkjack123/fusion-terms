@@ -10,6 +10,10 @@
     "AC losses": "交流损耗",
     "AC/DC converter": "交直流变换器",
     "ACE format": "ACE格式",
+    "ACP deposition coefficient": "沉积系数",
+    "ACP erosion coefficient": "侵蚀系数",
+    "ACP filter model": "过滤器计算模型",
+    "ACP source term": "活化腐蚀产物源项",
     "ANSYS": "ANSYS",
     "ANSYS CFX": "CFX",
     "ANSYS Fluent": "Fluent",
@@ -61,6 +65,7 @@
     "C-2W": "C-2W",
     "CAD simplification": "CAD简化",
     "CAD-to-MC conversion": "CAD到MC转换",
+    "CATE-3.0": "活化腐蚀产物源项分析程序",
     "CATIA": "CATIA",
     "CENDL": "CENDL",
     "CFETR design": "CFETR设计",
@@ -138,6 +143,7 @@
     "Doppler broadening": "多普勒展宽",
     "E-layer": "E-层",
     "EAF": "EAF",
+    "EAF-2007": "EAF",
     "EC current drive": "电子回旋电流驱动",
     "ECE imaging": "ECE成像",
     "ECH launcher": "ECRH发射天线",
@@ -1256,6 +1262,7 @@
     "dependency": "软件依赖",
     "depletion": "燃耗",
     "deposition": "沉积",
+    "deposition coefficient": "沉积系数",
     "derived air concentration": "导出空气浓度",
     "derived-air-concentration": "导出空气浓度",
     "deserialization": "序列化",
@@ -1350,6 +1357,7 @@
     "dissimilar-metal-weld": "dissimilar metal weld",
     "dissociative recombination": "离解复合",
     "dissolution rate": "en",
+    "dissolution-precipitation coefficient": "溶解沉淀系数",
     "dissolved hydrogen": "dissolved hydrogen",
     "dissolved-hydrogen": "dissolved hydrogen",
     "distributed control system": "分布式控制系统",
@@ -1550,6 +1558,7 @@
     "ergodic magnetic divertor": "各态历经磁偏滤器",
     "erosion": "侵蚀",
     "erosion and redeposition": "侵蚀再沉积",
+    "erosion coefficient": "侵蚀系数",
     "erosion corrosion": "冲蚀-腐蚀",
     "erosion lifetime": "erosion lifetime",
     "erosion rate": "erosion rate",
@@ -3809,8 +3818,7 @@
     "β": "等离子体比压",
     "βp": "极向比压",
     "ε_eff": "有效纹波",
-    "λ_q": "SOL宽度",
-    "ICRH": "离子回旋共振加热"
+    "λ_q": "SOL宽度"
   },
   "en2zh_short": {
     "A": {
@@ -3920,6 +3928,10 @@
     "CAPEX": {
       "concept_id": "capital-cost",
       "zh": "资本成本"
+    },
+    "CATE": {
+      "concept_id": "cate",
+      "zh": "活化腐蚀产物源项分析程序"
     },
     "CBET": {
       "concept_id": "cbet",
@@ -4773,6 +4785,18 @@
       "concept_id": "object-oriented-programming",
       "zh": "面向对象编程"
     },
+    "OSCAR": {
+      "concept_id": "oscar",
+      "zh": "OSCAR程序"
+    },
+    "PACTITER": {
+      "concept_id": "pactiter",
+      "zh": "PACTITER程序"
+    },
+    "PACTOLE": {
+      "concept_id": "pactole",
+      "zh": "PACTOLE程序"
+    },
     "PBS": {
       "concept_id": "pbs",
       "zh": "PBS"
@@ -5217,6 +5241,10 @@
       "concept_id": "thermal-quench",
       "zh": "热猝灭"
     },
+    "TRACT": {
+      "concept_id": "tract",
+      "zh": "TRACT程序"
+    },
     "TRL": {
       "concept_id": "technology-readiness-level",
       "zh": "技术就绪度"
@@ -5363,10 +5391,10 @@
     }
   },
   "metadata": {
-    "generated_at": "2026-04-22",
-    "pairs_en2zh": 3810,
-    "pairs_en2zh_short": 387,
-    "pairs_zh2en": 3199
+    "generated_at": "2026-10-16",
+    "pairs_en2zh": 3819,
+    "pairs_en2zh_short": 392,
+    "pairs_zh2en": 3215
   },
   "schema_version": 2,
   "zh2en": {
@@ -5410,6 +5438,8 @@
     "CAD到MC转换": "CAD-to-MC conversion",
     "CAD简化": "CAD simplification",
     "CAPEX": "capital cost",
+    "CATE": "CATE",
+    "CATE程序": "CATE",
     "CBET": "cross-beam energy transfer",
     "CCF": "Common Cause Failure",
     "CCWS": "Component Cooling Water System",
@@ -5709,6 +5739,12 @@
     "ODS钢": "ODS steel",
     "OFC": "outer fuel cycle",
     "OOP": "object-oriented programming",
+    "OSCAR": "OSCAR",
+    "OSCAR程序": "OSCAR",
+    "PACTITER": "PACTITER",
+    "PACTITER程序": "PACTITER",
+    "PACTOLE": "PACTOLE",
+    "PACTOLE程序": "PACTOLE",
     "PBS": "PBS",
     "PCI": "phase contrast imaging",
     "PCS": "power conversion system",
@@ -5844,6 +5880,8 @@
     "TPB": "tritium permeation barrier",
     "TPR": "tritium production rate",
     "TQ": "thermal quench",
+    "TRACT": "TRACT",
+    "TRACT程序": "TRACT",
     "TRL": "technology readiness level",
     "TRL等级": "technology readiness level",
     "TS": "Thomson scattering",
@@ -6106,6 +6144,7 @@
     "侵蚀": "erosion",
     "侵蚀与再沉积": "erosion-redeposition",
     "侵蚀再沉积": "erosion-redeposition",
+    "侵蚀系数": "erosion coefficient",
     "俄罗斯轮盘赌": "Russian roulette",
     "俘获电子模": "trapped electron mode",
     "俘获粒子": "trapped particle",
@@ -7302,6 +7341,7 @@
     "汽轮机岛": "turbine island",
     "沉积": "deposition",
     "沉积层": "deposition",
+    "沉积系数": "deposition coefficient",
     "沙弗拉诺夫位移": "Shafranov shift",
     "沙弗拉诺夫位移量": "Shafranov shift",
     "沿磁力线热流": "parallel heat flux",
@@ -7335,6 +7375,8 @@
     "活化箔": "activation foil",
     "活化箔片": "activation foil",
     "活化腐蚀产物": "Activated Corrosion Product",
+    "活化腐蚀产物源项": "ACP source term",
+    "活化腐蚀产物源项分析程序": "CATE",
     "活性炭过滤器": "activated carbon filter",
     "活性碳过滤器": "activated carbon filter",
     "流出物监测": "effluent monitoring",
@@ -7399,6 +7441,7 @@
     "源收敛": "source convergence",
     "源项": "source term",
     "溶蚀速率": "Dissolution Rate",
+    "溶解沉淀系数": "dissolution-precipitation coefficient",
     "溶解速率": "Dissolution Rate",
     "滑脱时间": "slowing-down time",
     "漂移不稳定性": "drift instability",
@@ -8292,6 +8335,7 @@
     "边缘输运垒": "edge transport barrier",
     "迁移学习": "Transfer Learning",
     "过冷沸腾": "subcooled boiling",
+    "过滤器计算模型": "ACP filter model",
     "运动斯塔克效应": "motional Stark effect",
     "运行参数": "operating parameter",
     "运行场景开发": "scenario development",
@@ -8568,9 +8612,6 @@
     "鱼骨模": "fishbone instability",
     "鱼骨模不稳定性": "fishbone instability",
     "黑体辐射腔": "hohlraum",
-    "黑腔": "hohlraum",
-    "中国聚变工程实验堆": "CFETR Chinese Fusion Engineering Test Reactor",
-    "快粒子诊断": "fast particle diagnostics energetic particle diagnostics",
-    "快粒子": "fast particle energetic particle"
+    "黑腔": "hohlraum"
   }
 }
