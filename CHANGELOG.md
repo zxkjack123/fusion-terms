@@ -24,6 +24,26 @@
 ### Fixed
 
 
+## v2026.10.25
+
+### Added
+
+- **辐射防护/屏蔽度量术语**：`half-value-layer`（半值层，HVL）、`tenth-value-layer`（十分之一值层，TVL）—— 补齐 `expand-terminology-coverage` 计划最后 2 个未落地概念。含 12 条别名（缩写、连字符/非连字符变体、同义短语）+ 双语定义 + 可溯源证据（Wikipedia Half-value layer 条目，HTTP 200 实测）；同步进入 `translation_dict.json` 与 IME 词表输入。
+- **CATE / ACP 源项与输运系数术语**（`#T-4486`）：新增 10 个概念（`cate`、`pactole`、`pactiter`、`tract`、`oscar`、`acp-source-term`、`acp-deposition-coefficient`、`acp-erosion-coefficient`、`dissolution-precipitation-coefficient`、`acp-filter-model`）+ 25 条别名 + 10 条证据行。
+- 计划文档：新增 `fix-rime-mixed-term-encoding` 执行计划（#2825）；README 拆分为英文（默认）与中文（`README.zh-CN.md`）双版本。
+
+### Changed
+
+- **开源发布**：新增 MIT `LICENSE`（Copyright (c) 2026 Xiaokang Zhang）；清理机器本地状态（`traces/`、smoke baselines）并脱敏内部路径；确认 IME 验收并归档已完成计划（#2825）。
+- **下游产物全量重建**：`translation_dict.json`（en2zh 3825 / zh2en 3221）、`domain_terms.txt`（**3462** terms，含 batch 87–90 氚安全/包容术语）、fcitx/Rime 词表同步到本机。
+- Registry 规模：**3076** concepts、**10249** aliases、**3168** evidence rows、**6132** definitions。
+
+### Fixed
+
+- **CI 连续红灯（run #39–#42，自 2026-08-12 起）**：`requirements-dev.txt` 声明 `ruff>=0.15.0` 无上界，而 ruff ≥0.16 起会重排 Markdown 内的 fenced code block；CI 装到 0.17.2 后 `Ruff format check` 在 3 个 Python 版本上全部失败（本地 0.15.0 仍绿）。已固定 `ruff==0.17.2`（与 pre-commit `ruff-pre-commit` rev 同步）并重排受影响的 3 份计划文档。
+- Rime 导出混排词过滤（`pipeline/rime_export.py`）+ `rime_import_safe` 复用该过滤（#2825）。
+- 恢复被开源清理误删的 extract 回归基线（`artifacts/_smoke_run/*.tsv`）。
+
 ## v2026.08.12
 
 ### Added
