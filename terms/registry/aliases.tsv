@@ -11553,3 +11553,16 @@ dissolution-precipitation coefficient	dissolution-precipitation-coefficient	en	p
 过滤器计算模型	acp-filter-model	zh	preferred	preferred zh
 ACP filter model	acp-filter-model	en	preferred	preferred en token
 EAF-2007	eaf	en	alias	versioned form of EAF
+# ==== Shielding metrics: HVL / TVL (radiation protection) ====
+half-value layer	half-value-layer	en	preferred	preferred en (phrase)
+半值层	half-value-layer	zh	preferred	preferred zh
+half-value-layer	half-value-layer	en	alias	IME token-only form
+HVL	half-value-layer	abbr	alias	acronym
+half-value thickness	half-value-layer	en	alias	synonymous phrase
+半值厚度	half-value-layer	zh	alias	synonymous phrase
+tenth-value layer	tenth-value-layer	en	preferred	preferred en (phrase)
+十分之一值层	tenth-value-layer	zh	preferred	preferred zh
+tenth-value-layer	tenth-value-layer	en	alias	IME token-only form
+TVL	tenth-value-layer	abbr	alias	acronym
+tenth-value thickness	tenth-value-layer	en	alias	synonymous phrase
+十分之一值厚度	tenth-value-layer	zh	alias	synonymous phrase

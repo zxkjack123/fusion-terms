@@ -6128,3 +6128,7 @@ x-point-radiator	en	Fusion/nuclear engineering term referring to 'X-Point Radiat
 x-point-radiator	zh	聚变/核工程术语，指“en”这一技术概念。	internal:dict-improvements
 x-ray-crystal-spectrometer	en	Fusion/nuclear engineering term referring to 'X-Ray Crystal Spectrometer' in technical context.	internal:dict-improvements
 x-ray-crystal-spectrometer	zh	聚变/核工程术语，指“en”这一技术概念。	internal:dict-improvements
+half-value-layer	en	Thickness of a specified material that attenuates a beam of radiation to one half of its incident intensity (equivalently, to one half of the incident air kerma rate). It scales as HVL = ln 2 / mu, the reciprocal of the linear attenuation coefficient, and is used to size shielding thickness.	internal:dict-improvements
+half-value-layer	zh	将入射辐射强度衰减到一半（等价地，空气比释动能率减半）所需的指定材料厚度，HVL = ln 2 / μ，与线衰减系数互为倒数尺度，用于确定屏蔽层厚度。	internal:dict-improvements
+tenth-value-layer	en	Thickness of a specified material that attenuates a beam of radiation to one tenth of its incident intensity (90% attenuation). TVL = ln 10 / mu, i.e. about 3.32 times the half-value layer.	internal:dict-improvements
+tenth-value-layer	zh	将入射辐射强度衰减到十分之一（衰减 90%）所需的指定材料厚度，TVL = ln 10 / μ ≈ 3.32 × HVL。	internal:dict-improvements

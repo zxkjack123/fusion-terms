@@ -3403,3 +3403,6 @@ acp-deposition-coefficient	metric	沉积系数	deposition coefficient		active	Ra
 acp-erosion-coefficient	metric	侵蚀系数	erosion coefficient		active	Rate coefficient for erosion of deposited corrosion products back into the coolant stream	corpus
 dissolution-precipitation-coefficient	metric	溶解沉淀系数	dissolution-precipitation coefficient		active	Rate coefficient for dissolution of the oxide layer and precipitation of dissolved species in coolant loops	corpus
 acp-filter-model	concept	过滤器计算模型	ACP filter model		active	Model of coolant purification filter removal of activated corrosion products in source term codes	corpus
+# ==== Shielding metrics: HVL / TVL (radiation protection) ====
+half-value-layer	metric	半值层	half-value layer	HVL	active	Thickness of a material that reduces the intensity of the incident radiation to one half; fundamental quantity for shielding thickness sizing	corpus
+tenth-value-layer	metric	十分之一值层	tenth value layer	TVL	active	Thickness of a material that reduces the intensity of the incident radiation to one tenth (90% attenuation); TVL = ln 10 / mu = 3.32 x HVL	corpus

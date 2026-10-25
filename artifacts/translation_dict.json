@@ -1880,6 +1880,9 @@
     "gyrorelaxation heating": "回旋弛豫加热",
     "gyrotron": "回旋管",
     "half-life": "半衰期",
+    "half-value layer": "半值层",
+    "half-value thickness": "半值层",
+    "half-value-layer": "半值层",
     "halo current": "晕电流",
     "halo currents": "晕电流",
     "hand-on recycling material": "可徒手回收材料",
@@ -3476,6 +3479,9 @@
     "temperature pedestal": "温度基座",
     "temperature screening": "热扩散",
     "tensile test": "拉伸试验",
+    "tenth-value layer": "十分之一值层",
+    "tenth-value thickness": "十分之一值层",
+    "tenth-value-layer": "十分之一值层",
     "test blanket module": "实验包层模块",
     "test-blanket-module": "实验包层模块",
     "tet mesh": "四面体网格",
@@ -4429,6 +4435,10 @@
       "concept_id": "hvac",
       "zh": "暖通空调"
     },
+    "HVL": {
+      "concept_id": "half-value-layer",
+      "zh": "半值层"
+    },
     "HWC": {
       "concept_id": "hydrogen-water-chemistry",
       "zh": "加氢水化学"
@@ -5253,6 +5263,10 @@
       "concept_id": "tritium-release-rate",
       "zh": "tritium release rate"
     },
+    "TVL": {
+      "concept_id": "tenth-value-layer",
+      "zh": "十分之一值层"
+    },
     "TWDEC": {
       "concept_id": "traveling-wave-direct-energy-converter",
       "zh": "行波直接能量转换器"
@@ -5391,10 +5405,10 @@
     }
   },
   "metadata": {
-    "generated_at": "2026-10-16",
-    "pairs_en2zh": 3819,
-    "pairs_en2zh_short": 392,
-    "pairs_zh2en": 3215
+    "generated_at": "2026-10-25",
+    "pairs_en2zh": 3825,
+    "pairs_en2zh_short": 394,
+    "pairs_zh2en": 3221
   },
   "schema_version": 2,
   "zh2en": {
@@ -5609,6 +5623,7 @@
     "HTS": "high-temperature superconductor",
     "HTS磁体": "HTS magnet",
     "HVAC": "HVAC",
+    "HVL": "half-value layer",
     "HWC": "Hydrogen Water Chemistry",
     "HX": "heat exchanger",
     "HXR": "hard X-ray",
@@ -5885,6 +5900,7 @@
     "TRL": "technology readiness level",
     "TRL等级": "technology readiness level",
     "TS": "Thomson scattering",
+    "TVL": "tenth value layer",
     "TWDEC": "traveling wave direct energy converter",
     "Taylor弛豫": "Taylor relaxation",
     "Taylor态": "Taylor state",
@@ -6411,6 +6427,10 @@
     "区域分解": "domain decomposition",
     "区域辐射监测仪": "area radiation monitor",
     "医用同位素生产": "isotope production",
+    "十分之一值厚度": "tenth value layer",
+    "十分之一值层": "tenth value layer",
+    "半值厚度": "half-value layer",
+    "半值层": "half-value layer",
     "半脱靶": "partial detachment",
     "半衰期": "half-life",
     "单/双零": "single/double null",

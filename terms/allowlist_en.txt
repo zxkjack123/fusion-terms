@@ -1351,3 +1351,6 @@ tritiated-water-treatment
 tritium-emission-monitoring
 occupational-tritium-exposure
 acceptable-tritium-dose
+# --- radiation protection / shielding metrics (HVL / TVL) ---
+half-value-layer
+tenth-value-layer

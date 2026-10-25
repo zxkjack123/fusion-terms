@@ -3213,3 +3213,5 @@ acp-deposition-coefficient	internal:cate-3.0-deliverables/FUTURE-030503-DD-007	D
 acp-erosion-coefficient	internal:cate-3.0-deliverables/FUTURE-030503-DD-007	E(k)：区域k颗粒物的侵蚀系数，s-1，计算式见3.2-9。	manual	2026-10-16
 dissolution-precipitation-coefficient	internal:cate-3.0-deliverables/FUTURE-030503-DD-007	氧化层主要考虑与冷却剂中离子的溶解沉淀作用，沉积层主要考虑与冷却剂中颗粒物的侵蚀沉积作用。	manual	2026-10-16
 acp-filter-model	internal:cate-3.0-deliverables/FUTURE-030503-DD-007	2.3 过滤器计算模型	manual	2026-10-16
+half-value-layer	https://en.wikipedia.org/wiki/Half-value_layer	The half-value layer (HVL), or half-value thickness, is the thickness of the material at which the intensity of radiation entering it is reduced by one half.	manual	2026-10-25
+tenth-value-layer	https://en.wikipedia.org/wiki/Half-value_layer	A similar concept is the tenth-value layer or TVL. The TVL is the average amount of material needed to absorb 90% of all radiation, i.e., to reduce it to a tenth of the original intensity.	manual	2026-10-25
