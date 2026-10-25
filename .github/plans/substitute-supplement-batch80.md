@@ -1,3 +1,5 @@
+> ✅ **状态：已归档** — Task 1.1–3.2 全部完成（task 勾选 6/6）；5 条替换规则已入 registry aliases 并出现在 `artifacts/terminology_substitutions.tsv`（Batch 90, ed8825a）。
+
 # 补充 5 条替换规则（Batch 90）
 
 ## 背景与目标

@@ -1,3 +1,5 @@
+> ✅ **状态：已完成** — 清单 220 条 concept 全部落地（Task 勾选 24/24）。最后 2 条 `half-value-layer` / `tenth-value-layer` 于 v2026.10.25 补齐；同清单中的 `dbtt` / `scaling-law` / `steady-state` 落地为既有概念 `ductile-brittle-transition-temperature`（+`dbtt-shift`）/ `confinement-scaling` / `steady-state-operation`，未另立 id。
+
 # 扩充多领域术语覆盖
 
 ## 背景与目标

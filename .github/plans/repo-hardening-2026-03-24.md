@@ -1,3 +1,5 @@
+> ✅ **状态：已归档** — 由 `repo-hardening-2026-04-14.md` 周期取代并完成（task 勾选 23/23）；🔴 项（review_pack 路径穿越、rime_import_safe rollback 信任）已修复，经 `.github/reviews/full-repo-2026-03-25.md` 复核确认。注：本文件引用的 `../reviews/full-repo-2026-03-24.md` 在仓库中不存在。
+
 # fusion-terms 仓库加固计划
 
 ## 背景与目标

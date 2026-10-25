@@ -1,3 +1,5 @@
+> ✅ **状态：已归档** — Task 1.1–6.1 完成。其中 Task 4.x 的 tesseract OCR 路线改由 pdf2md 完成（原 BLOCKED 标注失效）；Task 5.2–5.4 未在文档内勾选，但产物已落地：IAEA-safety-glossary 787 concepts / ITER-glossary 77 / GB/T-4960.9 340（`scripts/import_approved_terms.py` + source 列）。
+
 # 权威术语源导入与 Registry Schema 扩展
 
 ## 背景与目标
