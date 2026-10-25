@@ -440,6 +440,7 @@
   - 运行翻译抽查（≥5 个新术语的 EN→ZH 映射验证）：
     ```python
     import json, pathlib
+
     d = json.loads(pathlib.Path("artifacts/translation_dict.json").read_text())
     checks = {
         "event tree": "事件树",

@@ -3,4 +3,8 @@ pre-commit>=3.0
 pytest>=7.0
 pytest-cov>=4.0
 mypy>=1.8
-ruff>=0.15.0
+# Pinned: CI runs `ruff format --check .` over Markdown code blocks too, and
+# ruff >= 0.16 changed code-block formatting, which silently reddened CI from
+# run #39 onward (local 0.15.0 stayed green). Keep this in lockstep with
+# .pre-commit-config.yaml `ruff-pre-commit` rev; upgrade both together.
+ruff==0.17.2

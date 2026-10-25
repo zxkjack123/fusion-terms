@@ -265,21 +265,20 @@
        ```
     3. `main()` 中 L115 `output_path.parent.mkdir(parents=True, exist_ok=True)` 与 L117 `cmd = [` 之间，插入：
        ```python
-           # Exclude mixed ASCII+CJK terms BEFORE handing the wordlist to the
-           # importer (see is_mixed_ascii_cjk for rationale). This keeps the repo
-           # safe regardless of the external importer script's behavior.
-           importer_input, kept, dropped = prepare_importer_input(
-               input_path, output_path.parent
+       # Exclude mixed ASCII+CJK terms BEFORE handing the wordlist to the
+       # importer (see is_mixed_ascii_cjk for rationale). This keeps the repo
+       # safe regardless of the external importer script's behavior.
+       importer_input, kept, dropped = prepare_importer_input(input_path, output_path.parent)
+       if dropped:
+           print(f"rime_export: excluded {dropped} mixed ASCII+CJK term(s)")
+       if kept == 0:
+           output_path.write_text("", encoding="utf-8")
+           print(
+               "rime_export: no terms remain after mixed-term filtering; wrote empty payload"
            )
-           if dropped:
-               print(f"rime_export: excluded {dropped} mixed ASCII+CJK term(s)")
-           if kept == 0:
-               output_path.write_text("", encoding="utf-8")
-               print("rime_export: no terms remain after mixed-term filtering; "
-                     "wrote empty payload")
-               if importer_input != input_path:
-                   importer_input.unlink(missing_ok=True)
-               return
+           if importer_input != input_path:
+               importer_input.unlink(missing_ok=True)
+           return
        ```
     4. 将 `cmd` 中 `"--input", str(input_path),`（L121）改为 `"--input", str(importer_input),`。
     5. 将 `proc = subprocess.run(...)` 块（L140-146）改为 try/finally 包裹以确保 temp 清理：
@@ -320,20 +319,20 @@
     1. 在 `from pathlib import Path`（L12）之后新增 `from pipeline.rime_export import prepare_importer_input`。
     2. `main()` 中，L467 `output_path.parent.mkdir(parents=True, exist_ok=True)` 与 L469 `# Step 1) Always generate payload` 之间插入：
        ```python
-           # Exclude mixed ASCII+CJK terms before payload generation (shared
-           # logic with rime_export; see pipeline.rime_export.is_mixed_ascii_cjk).
-           importer_input, kept, dropped = prepare_importer_input(
-               input_path, output_path.parent
+       # Exclude mixed ASCII+CJK terms before payload generation (shared
+       # logic with rime_export; see pipeline.rime_export.is_mixed_ascii_cjk).
+       importer_input, kept, dropped = prepare_importer_input(input_path, output_path.parent)
+       if dropped:
+           print(f"rime_import_safe: excluded {dropped} mixed ASCII+CJK term(s)")
+       if kept == 0:
+           output_path.write_text("", encoding="utf-8")
+           print(
+               "rime_import_safe: no terms remain after mixed-term filtering; "
+               "wrote empty payload"
            )
-           if dropped:
-               print(f"rime_import_safe: excluded {dropped} mixed ASCII+CJK term(s)")
-           if kept == 0:
-               output_path.write_text("", encoding="utf-8")
-               print("rime_import_safe: no terms remain after mixed-term filtering; "
-                     "wrote empty payload")
-               if importer_input != input_path:
-                   importer_input.unlink(missing_ok=True)
-               return
+           if importer_input != input_path:
+               importer_input.unlink(missing_ok=True)
+           return
        ```
        ⚠️ 插入点必须在 L455-456 的 `--rollback` 早退分支**之后**。
     3. 将两处 `_run_importer_v2(... input_path=input_path ...)` 调用的实参改为 `input_path=importer_input`（L471-482 payload 生成处、L526-537 import 处）。
