@@ -4234,7 +4234,7 @@ facility-states	zh	聚变/核工程术语，对应英文“facility states (cons
 failure	zh	聚变/核工程术语，对应英文“failure (technical)”。	internal:dict-improvements
 failure-mode	zh	聚变/核工程术语，对应英文“failure mode”。	internal:dict-improvements
 far-field	zh	聚变/核工程术语，对应英文“far field”。	internal:dict-improvements
-faraday-rotation	en	Fusion/nuclear engineering term referring to 'Faraday rotation' in technical context.	internal:dict-improvements
+faraday-rotation	en	The rotation of the plane of polarization of light after it has passed through a magnetized plasma.	GB/T-4960.9
 fast-wave	en	Fusion/nuclear engineering term referring to 'fast wave' in technical context.	internal:dict-improvements
 fast-wave	zh	聚变/核工程术语，指“快波”这一技术概念。	internal:dict-improvements
 fault-geological	zh	聚变/核工程术语，对应英文“fault, geological”。	internal:dict-improvements
@@ -4336,7 +4336,7 @@ fusion-pilot-plant	zh	聚变/核工程术语，指“聚变试验电站”这一
 fusion-power-plant	en	A power plant whose energy is supplied by nuclear fusion reactions. The plan for international fusion research is first to build ITER and then to build a demonstration fusion power plant.	GB/T-4960.9
 fusion-product-spectrum	en	Fusion/nuclear engineering term referring to 'fusion product spectrum' in technical context.	internal:dict-improvements
 fusion-product-spectrum	zh	聚变/核工程术语，指“聚变产物能谱”这一技术概念。	internal:dict-improvements
-fusion-reactor	en	Fusion/nuclear engineering term referring to 'fusion reactor' in technical context.	internal:dict-improvements
+fusion-reactor	en	A device that uses controlled fusion reactions to produce fusion energy.	GB/T-4960.9
 fusion-regulation	en	Fusion/nuclear engineering term referring to 'fusion regulation' in technical context.	internal:dict-improvements
 fusion-regulation	zh	聚变/核工程术语，指“聚变监管”这一技术概念。	internal:dict-improvements
 fusion-roadmap	en	Fusion/nuclear engineering term referring to 'fusion roadmap' in technical context.	internal:dict-improvements
@@ -4495,14 +4495,14 @@ importance-function	en	Fusion/nuclear engineering term referring to 'importance 
 importance-function	zh	聚变/核工程术语，指“重要性函数”这一技术概念。	internal:dict-improvements
 impurity-accumulation	en	Fusion/nuclear engineering term referring to 'impurity accumulation' in technical context.	internal:dict-improvements
 impurity-accumulation	zh	聚变/核工程术语，指“杂质积聚”这一技术概念。	internal:dict-improvements
-impurity-screening	en	Fusion/nuclear engineering term referring to 'impurity screening' in technical context.	internal:dict-improvements
+impurity-screening	en	Measures taken to keep impurities from entering the plasma, for example the siliconization, boronization and lithiumization of the first wall.	GB/T-4960.9
 impurity-source	en	Fusion/nuclear engineering term referring to 'impurity source' in technical context.	internal:dict-improvements
 impurity-source	zh	聚变/核工程术语，指“杂质源”这一技术概念。	internal:dict-improvements
 impurity-transport	en	Fusion/nuclear engineering term referring to 'impurity transport' in technical context.	internal:dict-improvements
 impurity-transport	zh	聚变/核工程术语，指“杂质输运”这一技术概念。	internal:dict-improvements
 in-vessel	en	Fusion/nuclear engineering term referring to 'in-vessel' in technical context.	internal:dict-improvements
 in-vessel	zh	聚变/核工程术语，指“堆内”这一技术概念。	internal:dict-improvements
-in-vessel-component	en	Fusion/nuclear engineering term referring to 'In-Vessel Component' in technical context.	internal:dict-improvements
+in-vessel-component	en	A component mounted directly inside the vacuum vessel of a tokamak, such as the blanket, the divertor, part of the fuelling system, the internal pumping system, and diagnostic sensors.	GB/T-4960.9
 in-vessel-components	zh	聚变/核工程术语，对应英文“In-vessel components”。	internal:dict-improvements
 in-vessel-inspection	en	Fusion/nuclear engineering term referring to 'in-vessel inspection' in technical context.	internal:dict-improvements
 in-vessel-inspection	zh	聚变/核工程术语，指“真空室内检测”这一技术概念。	internal:dict-improvements
@@ -4920,7 +4920,7 @@ observed-cause	zh	聚变/核工程术语，对应英文“observed cause”。	i
 occupancy-factor	zh	聚变/核工程术语，对应英文“occupancy factor”。	internal:dict-improvements
 occupational-radiation-exposure	en	Fusion/nuclear engineering term referring to 'Occupational Radiation Exposure' in technical context.	internal:dict-improvements
 occupational-radiation-exposure	zh	聚变/核工程术语，指“职业辐射照射”这一技术概念。	internal:dict-improvements
-off-normal-event	en	Fusion/nuclear engineering term referring to 'Off-Normal Event' in technical context.	internal:dict-improvements
+off-normal-event	en	An unexpected change in the operating state of a power plant or of a component that does not cause an unplanned shutdown.	GB/T-4960.9
 off-site	zh	聚变/核工程术语，对应英文“off-site (area)”。	internal:dict-improvements
 omnigeneity	en	Fusion/nuclear engineering term referring to 'omnigeneity' in technical context.	internal:dict-improvements
 omnigeneity	zh	聚变/核工程术语，指“全向性”这一技术概念。	internal:dict-improvements
@@ -5212,8 +5212,8 @@ radiation-shielding	en	Fusion/nuclear engineering term referring to 'radiation s
 radiation-shielding	zh	聚变/核工程术语，指“屏蔽”这一技术概念。	internal:dict-improvements
 radiation-source	zh	聚变/核工程术语，对应英文“radiation source”。	internal:dict-improvements
 radiation-weighting-factor-wr	zh	聚变/核工程术语，对应英文“radiation weighting factor, wR”。	internal:dict-improvements
-radiative-divertor	en	Fusion/nuclear engineering term referring to 'Radiative Divertor' in technical context.	internal:dict-improvements
-radio-frequency-heating	en	Fusion/nuclear engineering term referring to 'radio-frequency heating' in technical context.	internal:dict-improvements
+radiative-divertor	en	A divertor configured so that most of the power is radiated away before it reaches the target plates.	GB/T-4960.9
+radio-frequency-heating	en	A means of heating a plasma in which radio-frequency waves (electromagnetic waves) transfer their energy to the plasma as they propagate through it. See also radio-frequency wave.	GB/T-4960.9
 radioactive	zh	聚变/核工程术语，对应英文“radioactive”。	internal:dict-improvements
 radioactive-contents	zh	聚变/核工程术语，对应英文“radioactive contents”。	internal:dict-improvements
 radioactive-discharges	zh	聚变/核工程术语，对应英文“radioactive discharges”。	internal:dict-improvements
