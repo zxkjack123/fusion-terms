@@ -1457,3 +1457,16 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
   - zh 侧（B01-ZH）：`def_boilerplate_mark`（复原模板）／`def_len_zh`（截断到 `台基。`）／`def_source_unknown`（写 `internal:dict-improvements`）→ 三者均 **exit 1**
 - **不变量 / 全量门禁**：`data_rows` 恒 **6132**；列分布恒 `{4}`；`git diff --numstat` = `20/20`（-EN）+ `20/20`（-ZH）；改动 (id,lang) 对恰为批次 id（-EN 全为 `en`、-ZH 全为 `zh`），en 行在 -ZH 阶段改动数 **0**；`validate_registry` / `pytest -q` / `ruff format --check .` / `ruff check .` / `mypy pipeline/` → 全部 **exit 0**
 - **下一步**：`w1_b_b02` 起串行推进；**D2-4 抽检在第 5 个批次完成时执行**（W1-A 4 批 + B01 ⇒ 该批即 **B04 完成时**触发）
+
+#### 会话收口 — 优雅中断（**预算依据为实测，非"感知"**）— 2026-10-26 21:37
+
+- **`[CTX: est≈140k, budget=262144, reason=硬信号（本会话 compaction 事件 6 次，且 harness 持续裁剪工具结果与推理）]`**
+  - **实测来源**（`~/.local/share/opencode/opencode.db`，会话 `ses_e919b3f45ffetSh0Jd3OXSQoTl`）：`session_message` 中 `type='compaction'` 行 **6 条**（seq 1292 / 1882 / 2558 / 3534 / 3967 / 4421）；**最后一次 compaction 之后**的消息正文合计 **316,234 B**（53 条）⇒ 按混合中英文 UTF-8 ≈ 3 B/token 折算 ≈ **105k tokens**，加系统提示与工具 schema ⇒ **est ≈ 140k**
+  - **阈值口径**（`instructions/context-budget.instructions.md`，window-relative）：`usable = limit.context − compaction.buffer`；`soft = 60% × usable ≈ 118k`、`hard = 85% × usable ≈ 167k` ⇒ 现处于 **soft 之上、hard 之下**，且 harness 已在裁剪 ⇒ 触发「Token 预算与优雅中断」
+- **本轮（收口前）已全部落盘的成果**（均在 clean 边界，工作区无未提交改动）
+  - **裁决 4**（off-plan，用户裁决 A）：`--self-test` 回归修复 → commit `471ab41`（`18/24 exit 1` → **`24/24 exit 0`**；规则一条未改；`m5` 变体证夹具承重）
+  - **T1.B01-EN / T1.B01-ZH**（W1-B 首批，20 id）：commits `b578047` + `f58f0ff`；`--lang both` **exit 0**；`internal:*` 4468 → **4428**；`corpus` 49 → **89**
+  - **W1-A 组**（4 批 / 67 id）已收口：`e2e2809`/`05b7223`、`89a2fb2`/`c87e1ba`、`2a01af3`/`d924a94`、`ec556e9`/`534ed89`
+- **本轮收口态门禁**：`--self-test` / `w1_a --lang both` / `w1_a_b04 --lang both` / `w1_b_b01 --lang both` / `validate_registry` / `pytest -q` / `ruff format --check .` / `ruff check .` / `mypy pipeline/` / `registry_row_audit --audit --expect-clean` → **全部 exit 0**；`data_rows` 恒 **6132**
+- **下一步（恢复后立即执行）**：`w1_b_b02` 起按同一循环串行推进至 `b34`（每批 `-EN` → 独立核验 → 仓外 RED → commit；`-ZH` → 门禁 + 批内恢复性修复 → 日志 + commit）；**D2-4 抽检在 B04 完成时触发**（W1-A 4 批 + B01 已占 5 批中的 1 批）
+- **未做**：**未 push**（无授权；`origin/master` 仍停 `3cb3837`，本地领先 **36** 个 commit）；W1 收尾清扫 / `registry_row_audit.py` 新指标（裁决 3=A）/ W1-C / W2 / W3 均未开始
