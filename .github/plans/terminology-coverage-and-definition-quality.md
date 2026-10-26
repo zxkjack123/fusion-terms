@@ -1436,3 +1436,24 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 - **文件改动面**：`git diff --numstat` = `99/14`，仅 `scripts/registry_batch_verify.py`（972 → **1057** 行；sha256 `6fa9f254…` → `35d234b3…`）+ 新增证据文件 `.github/plans/t4973-batches/self-test-reanchor.md`
 - **全量门禁**：`--self-test` / `pipeline.validate_registry` / `pytest -q` / `ruff format --check .` / `ruff check .` / `mypy pipeline/` / `registry_row_audit --audit --expect-clean` → **全部 exit 0**
 - **不动**：`red-green.md`（T0.11 冻结交付，其记录的实测值不改）；§1155 中 T0.2 的 972 行 / sha256 保留为交付时点事实并加后记
+
+#### T1.B01-EN / T1.B01-ZH — ✅ DONE（2026-10-26 21:35）commits `b578047`（-EN）+ 本节（-ZH）
+
+- 批次：`.github/plans/t4973-batches/w1_b_b01.ids`（**20** id）；**W1-B 组首批**（34 批 / 679 id）
+- **W1-B 与 W1-A 的分型差异**（执行前实测确认）：W1-B 的 **`en` 与 `zh` 双侧皆为占位/模板**（en = `Fusion/nuclear engineering term referring to 'X'…`；zh = `聚变/核工程术语，指“X”这一技术概念。`），双侧 source 均 `internal:dict-improvements` ⇒ **无 GB/T 真实释义可依据**，依 **裁决 D2-8=A** 以 concept 的 `notes`（仓内语料）+ 同 id 已提交的 en 行为依据 ⇒ source 一律 **`corpus`**
+- **`-EN`**（commit `b578047`）：20 条 `en` 行改写
+  - 门禁：`--ids-file …/w1_b_b01.ids --expect 20 --lang en` → **exit 0** `verdict=PASS`
+  - en 最短 **112** / 最长 230；套话 0/20；全 ASCII；source **20/20** `corpus`
+  - 迁移：`internal:*` 4468 → **4448**；`corpus` 49 → **69**；audit `en_boilerplate` 679 → **659**
+  - **裁决 4 项（均接受）**：① `quench-detection` **不补**检测原理（属 notes 之外的机理细节）；② `sputtering`/`erosion`/`plasma-facing-component`/`magnet-feeder`/`superconducting-joint`/两条场线圈共 6–7 条 notes 偏薄的行，按教科书级**类别/功能**表述（未引入新实体、数值、项目名）；③ HTS/LTS 的 `30 K` 与材料族（`REBCO/YBCO/Bi-2212`、`NbTi/Nb3Sn`）**逐字见于 notes** ⇒ `corpus` 正确；④ 子代理上报的 `--self-test` 回归**不在本批修复**（属计划外文件 + 门禁脚本）⇒ 已单独走裁决流程（见上文「裁决 4」条，commit `471ab41`）
+- **`-ZH`**（本节）：20 条 `zh` 行由模板改写为真实释义（与同 id 已提交 en **语义等价**，依据 = notes + en；source **20/20** `corpus`）
+  - 门禁：`--lang zh` → **exit 0**（改写前为 `verdict=FAIL`，20 条 `def_boilerplate_mark` + `def_source_unknown`，属**设计内**的红）；`--lang both` → **exit 0**
+  - zh 最短 **29** / 最长 58（均值 43.2）；模板 0/20；`指“en”` 0/20；source **20/20** `corpus`
+  - 迁移：`internal:*` 4448 → **4428**；`corpus` 69 → **89**；audit `en_boilerplate` **659 → 659**（en 行零改动）
+  - **本批自校一处**：两条 HTS/LTS 初稿写 `30K`（紧贴），复核仓内最近邻（`nb3sn` `T_c=18 K`、`nbti` `9.2 K`、`rebco` `92 K`）与 en 侧（`30 K`）均为**带空格**写法 ⇒ 规范为 `30 K`（纯格式，不改语义、不改 source）
+  - 委派申报「无阻塞裁决项」；唯一的**非阻断**提请知悉：`toroidal-field-coil` 的 `preferred_zh` = 「纵场线圈」（大陆文献亦作「环向场线圈」）——属**命名/别名域**，归 W3，本批不动 `concepts.tsv`
+- **能失败证明**（仓外副本 + `--repo-root`，**零触碰仓内文件**；未变异对照均 exit 0）
+  - en 侧（B01-EN）：`def_boilerplate_regex`（复原套话）／`def_len_en`（截断到 10 字符）／`def_source_unknown`（写 `internal:dict-improvements`）→ 三者均 **exit 1**
+  - zh 侧（B01-ZH）：`def_boilerplate_mark`（复原模板）／`def_len_zh`（截断到 `台基。`）／`def_source_unknown`（写 `internal:dict-improvements`）→ 三者均 **exit 1**
+- **不变量 / 全量门禁**：`data_rows` 恒 **6132**；列分布恒 `{4}`；`git diff --numstat` = `20/20`（-EN）+ `20/20`（-ZH）；改动 (id,lang) 对恰为批次 id（-EN 全为 `en`、-ZH 全为 `zh`），en 行在 -ZH 阶段改动数 **0**；`validate_registry` / `pytest -q` / `ruff format --check .` / `ruff check .` / `mypy pipeline/` → 全部 **exit 0**
+- **下一步**：`w1_b_b02` 起串行推进；**D2-4 抽检在第 5 个批次完成时执行**（W1-A 4 批 + B01 ⇒ 该批即 **B04 完成时**触发）

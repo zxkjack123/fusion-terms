@@ -3719,7 +3719,7 @@ burn-phase	zh	在目标等离子体参数下实现持续聚变燃烧的放电阶
 burnable-absorber	zh	运行中逐渐消耗的中子吸收材料，用于补偿燃料反应性损失。	internal:dict-improvements
 bypass	zh	为控制、隔离或维护而绕开部件的流路。	internal:dict-improvements
 cable-in-conduit-conductor	en	A superconducting conductor design consisting of a cable enclosed in a conduit through which the coolant is forced to flow, so that the conductor is cooled along its length.	corpus
-cable-in-conduit-conductor	zh	聚变/核工程术语，指“管内电缆导体”这一技术概念。	internal:dict-improvements
+cable-in-conduit-conductor	zh	一种超导导体结构，电缆置于导管之内，冷却剂在导管中强制流动，从而沿导体全长实施冷却。	corpus
 cache-miss	en	Fusion/nuclear engineering term referring to 'cache miss' in technical context.	internal:dict-improvements
 cache-miss	zh	聚变/核工程术语，指“缓存未命中”这一技术概念。	internal:dict-improvements
 calculation	en	Fusion/nuclear engineering term referring to 'calculation' in technical context.	internal:dict-improvements
@@ -4173,7 +4173,7 @@ equilibrium-field-coil	zh	聚变/核工程术语，指“平衡场线圈”这�
 equilibrium-radioactive	zh	聚变/核工程术语，对应英文“equilibrium, radioactive”。	internal:dict-improvements
 equipment-qualification	zh	聚变/核工程术语，对应英文“equipment qualification”。	internal:dict-improvements
 erosion	en	The removal of material from a plasma-facing surface as a result of the interaction of that surface with the plasma, so that the surface is progressively lost.	corpus
-erosion	zh	聚变/核工程术语，指“侵蚀”这一技术概念。	internal:dict-improvements
+erosion	zh	面向等离子体表面因与等离子体相互作用而发生材料去除、表面逐渐损耗的过程。	corpus
 erosion-corrosion	en	Fusion/nuclear engineering term referring to 'erosion-corrosion' in technical context.	internal:dict-improvements
 erosion-corrosion	zh	聚变/核工程术语，指“冲蚀-腐蚀”这一技术概念。	internal:dict-improvements
 erosion-redeposition	en	Fusion/nuclear engineering term referring to 'erosion-redeposition' in technical context.	internal:dict-improvements
@@ -4442,7 +4442,7 @@ high-linear-energy-transfer-radiation	zh	聚变/核工程术语，对应英文�
 high-recycling	en	Fusion/nuclear engineering term referring to 'high recycling' in technical context.	internal:dict-improvements
 high-recycling	zh	聚变/核工程术语，指“高再循环”这一技术概念。	internal:dict-improvements
 high-temperature-superconductor	en	A superconductor with a critical temperature Tc above 30 K, the class of materials that includes REBCO, YBCO and Bi-2212.	corpus
-high-temperature-superconductor	zh	聚变/核工程术语，指“高温超导体”这一技术概念。	internal:dict-improvements
+high-temperature-superconductor	zh	临界温度Tc高于30 K的一类超导体，包括REBCO、YBCO和Bi-2212等材料。	corpus
 histogram	en	Fusion/nuclear engineering term referring to 'histogram' in technical context.	internal:dict-improvements
 histogram	zh	聚变/核工程术语，指“直方图”这一技术概念。	internal:dict-improvements
 hohlraum	en	Fusion/nuclear engineering term referring to 'hohlraum' in technical context.	internal:dict-improvements
@@ -4692,7 +4692,7 @@ low-level-waste	zh	聚变/核工程术语，指“低放废物”这一技术概
 low-linear-energy-transfer-radiation	zh	聚变/核工程术语，对应英文“low linear energy transfer (LET) radiation”。	internal:dict-improvements
 low-specific-activity-material	zh	聚变/核工程术语，对应英文“low specific activity (LSA) material”。	internal:dict-improvements
 low-temperature-superconductor	en	A superconductor with a critical temperature Tc below 30 K, the class of materials that includes NbTi and Nb3Sn.	corpus
-low-temperature-superconductor	zh	聚变/核工程术语，指“低温超导体”这一技术概念。	internal:dict-improvements
+low-temperature-superconductor	zh	临界温度Tc低于30 K的一类超导体，包括NbTi和Nb3Sn等材料。	corpus
 low-toxicity-alpha-emitters	zh	聚变/核工程术语，对应英文“low toxicity alpha emitters”。	internal:dict-improvements
 lower-hybrid-wave	en	A radio-frequency wave whose frequency lies between the ion and electron cyclotron frequencies. It has an electric field component parallel to the magnetic field and can therefore accelerate electrons moving along the magnetic field lines.	GB/T-4960.9
 lower-limit-of-detection	zh	聚变/核工程术语，对应英文“lower limit of detection”。	internal:dict-improvements
@@ -4703,7 +4703,7 @@ maglif	zh	聚变/核工程术语，指“磁化衬套惯性聚变”这一技术
 magma	zh	聚变/核工程术语，对应英文“magma”。	internal:dict-improvements
 magma-chamber	zh	聚变/核工程术语，对应英文“magma chamber”。	internal:dict-improvements
 magnet-feeder	en	The system that connects the superconducting magnet circuits with their power supply and their cryogenic supply, comprising the current leads and the cryogenic connections.	corpus
-magnet-feeder	zh	聚变/核工程术语，指“磁体馈线”这一技术概念。	internal:dict-improvements
+magnet-feeder	zh	把超导磁体回路与其供电电源和低温供给连接起来的系统，由电流引线和低温连接件组成。	corpus
 magnet-power	en	Fusion/nuclear engineering term referring to 'magnet power' in technical context.	internal:dict-improvements
 magnet-power	zh	聚变/核工程术语，指“磁体功耗”这一技术概念。	internal:dict-improvements
 magnetic-axis	en	In the equilibrium configuration of a plasma, the point at which the radius of the magnetic surface is zero forms a circular locus along the toroidal direction.	GB/T-4960.9
@@ -4983,7 +4983,7 @@ peak-ground-acceleration	zh	聚变/核工程术语，对应英文“peak ground 
 pebble-bed	en	Fusion/nuclear engineering term referring to 'pebble bed' in technical context.	internal:dict-improvements
 pebble-bed	zh	聚变/核工程术语，指“球床”这一技术概念。	internal:dict-improvements
 pedestal	en	The steep-gradient region at the outer edge of the plasma in H-mode operation, in which the plasma profiles change rapidly over a narrow radial extent between the confined core and the plasma boundary.	corpus
-pedestal	zh	聚变/核工程术语，指“台基”这一技术概念。	internal:dict-improvements
+pedestal	zh	H模运行下等离子体外边缘的陡梯度区域，位于约束芯部与等离子体边界之间，其剖面在狭窄径向范围内迅速变化。	corpus
 peeling-ballooning-mode	en	Fusion/nuclear engineering term referring to 'peeling-ballooning mode' in technical context.	internal:dict-improvements
 peeling-ballooning-mode	zh	聚变/核工程术语，指“剥离-气球模”这一技术概念。	internal:dict-improvements
 peer-review	zh	聚变/核工程术语，对应英文“peer review”。	internal:dict-improvements
@@ -5035,12 +5035,12 @@ plasma-confinement	en	The maintenance of a hot plasma within a bounded region so
 plasma-control	en	Fusion/nuclear engineering term referring to 'plasma control' in technical context.	internal:dict-improvements
 plasma-control	zh	聚变/核工程术语，指“等离子体控制”这一技术概念。	internal:dict-improvements
 plasma-detachment	en	The regime of divertor operation in which volumetric losses in the plasma reduce the heat flux reaching the divertor target below the value that would arrive in attached operation.	corpus
-plasma-detachment	zh	聚变/核工程术语，指“等离子体脱靶”这一技术概念。	internal:dict-improvements
+plasma-detachment	zh	偏滤器运行的一种区制，其中等离子体内的体积损失使到达偏滤器靶板的热流低于附着运行时到达的热流。	corpus
 plasma-equilibrium	en	A plasma state in which, for a plasma of a given spatial distribution and geometric configuration, the electromagnetic forces and the thermal pressure forces are in balance.	GB/T-4960.9
 plasma-exhaust	en	Fusion/nuclear engineering term referring to 'plasma exhaust' in technical context.	internal:dict-improvements
 plasma-exhaust	zh	聚变/核工程术语，指“等离子体排出”这一技术概念。	internal:dict-improvements
 plasma-facing-component	en	A component of the device that is directly exposed to the plasma, so that its surface forms part of the plasma-facing surface and its design is governed by the interaction of the plasma with that surface.	corpus
-plasma-facing-component	zh	聚变/核工程术语，指“面向等离子体部件”这一技术概念。	internal:dict-improvements
+plasma-facing-component	zh	直接暴露于等离子体的装置部件，其表面构成面向等离子体表面的一部分，设计取决于等离子体与该表面的相互作用。	corpus
 plasma-facing-material	en	Fusion/nuclear engineering term referring to 'plasma-facing material' in technical context.	internal:dict-improvements
 plasma-facing-material	zh	聚变/核工程术语，指“面向等离子体材料”这一技术概念。	internal:dict-improvements
 plasma-gun	en	A device used to produce a high-velocity plasma blob (plasma cluster).	GB/T-4960.9
@@ -5060,9 +5060,9 @@ plasma-resistivity	zh	聚变/核工程术语，指“等离子体电阻率”这
 plasma-shape-control	en	Fusion/nuclear engineering term referring to 'plasma shape control' in technical context.	internal:dict-improvements
 plasma-shape-control	zh	聚变/核工程术语，指“等离子体形状控制”这一技术概念。	internal:dict-improvements
 plasma-shaping	en	The control of the cross-sectional geometry of the plasma column, characterized in particular by its elongation and triangularity, so as to obtain a prescribed plasma shape.	corpus
-plasma-shaping	zh	聚变/核工程术语，指“等离子体成形”这一技术概念。	internal:dict-improvements
+plasma-shaping	zh	对等离子体柱横截面几何形状的控制，主要以拉长比和三角形变来表征，以得到所要求的等离子体形状。	corpus
 plasma-surface-interaction	en	The collective term for the processes by which the plasma and the material surfaces facing it affect one another, covering both the modification of those surfaces by the plasma and the modification of the plasma by those surfaces.	corpus
-plasma-surface-interaction	zh	聚变/核工程术语，指“等离子体表面相互作用”这一技术概念。	internal:dict-improvements
+plasma-surface-interaction	zh	等离子体与其面对的材料表面相互影响的各类过程的统称，既包括等离子体对这些表面的改变，也包括这些表面对等离子体的改变。	corpus
 plasma-sustainment	en	Fusion/nuclear engineering term referring to 'plasma sustainment' in technical context.	internal:dict-improvements
 plasma-sustainment	zh	聚变/核工程术语，指“等离子体维持”这一技术概念。	internal:dict-improvements
 plasma-termination	en	Fusion/nuclear engineering term referring to 'Plasma Termination' in technical context.	internal:dict-improvements
@@ -5074,7 +5074,7 @@ poison	zh	聚变/核工程术语，对应英文“poison”。	internal:dict-imp
 poloidal-asymmetry	en	Fusion/nuclear engineering term referring to 'poloidal asymmetry' in technical context.	internal:dict-improvements
 poloidal-asymmetry	zh	聚变/核工程术语，指“极向不对称性”这一技术概念。	internal:dict-improvements
 poloidal-field-coil	en	A coil of the magnet system that produces the poloidal magnetic field of the device, that is, the field in the poloidal direction; the term is not to be confused with PFC, which stands for plasma-facing component.	corpus
-poloidal-field-coil	zh	聚变/核工程术语，指“极向场线圈”这一技术概念。	internal:dict-improvements
+poloidal-field-coil	zh	磁体系统中产生装置极向场的线圈，所产生磁场沿极向方向；该术语不应与缩写PFC相混淆，PFC表示面向等离子体部件。	corpus
 port-cell	en	Fusion/nuclear engineering term referring to 'Port Cell' in technical context.	internal:dict-improvements
 port-cell	zh	聚变/核工程术语，指“端口室”这一技术概念。	internal:dict-improvements
 postulated-initiating-event	zh	聚变/核工程术语，指“假设始发事件”这一技术概念。	internal:dict-improvements
@@ -5180,9 +5180,9 @@ quasi-symmetric-stellarator	zh	聚变/核工程术语，指“准对称仿星器
 quasi-symmetry	en	Fusion/nuclear engineering term referring to 'quasi-symmetry' in technical context.	internal:dict-improvements
 quasi-symmetry	zh	聚变/核工程术语，指“准对称”这一技术概念。	internal:dict-improvements
 quench-detection	en	The means by which the onset of a quench in a superconducting magnet is detected in time for the protection system to act, together with the instrumentation provided for that purpose.	corpus
-quench-detection	zh	聚变/核工程术语，指“失超检测”这一技术概念。	internal:dict-improvements
+quench-detection	zh	用于及时发现超导磁体失超起始、以使保护系统得以动作的手段，以及为此目的配置的仪表。	corpus
 quench-protection	en	The provisions by which a superconducting magnet is protected against the consequences of a quench, in particular the safe discharge of the magnetic energy stored in the magnet.	corpus
-quench-protection	zh	聚变/核工程术语，指“失超保护”这一技术概念。	internal:dict-improvements
+quench-protection	zh	使超导磁体免受失超后果影响的各项措施，特别是把磁体中储存的磁能安全泄放。	corpus
 queue	en	Fusion/nuclear engineering term referring to 'queue' in technical context.	internal:dict-improvements
 queue	zh	聚变/核工程术语，指“队列”这一技术概念。	internal:dict-improvements
 quiescent-h-mode	en	Fusion/nuclear engineering term referring to 'quiescent H-mode' in technical context.	internal:dict-improvements
@@ -5209,7 +5209,7 @@ radiation-protection-programme	zh	聚变/核工程术语，对应英文“radiat
 radiation-risks	zh	聚变/核工程术语，对应英文“radiation risks”。	internal:dict-improvements
 radiation-safety	zh	聚变/核工程术语，对应英文“radiation safety”。	internal:dict-improvements
 radiation-shielding	en	The class of structures and material arrangements placed between a radiation source and the region to be protected, whose function is to attenuate the radiation field before it reaches that region.	corpus
-radiation-shielding	zh	聚变/核工程术语，指“屏蔽”这一技术概念。	internal:dict-improvements
+radiation-shielding	zh	设置在辐射源与需要保护的区域之间、用于在辐射到达该区域之前将其减弱的各类结构与材料布置。	corpus
 radiation-source	zh	聚变/核工程术语，对应英文“radiation source”。	internal:dict-improvements
 radiation-weighting-factor-wr	zh	聚变/核工程术语，对应英文“radiation weighting factor, wR”。	internal:dict-improvements
 radiative-divertor	en	A divertor configured so that most of the power is radiated away before it reaches the target plates.	GB/T-4960.9
@@ -5261,7 +5261,7 @@ recrystallization	zh	聚变/核工程术语，指“再结晶”这一技术概�
 recuperator	en	Fusion/nuclear engineering term referring to 'recuperator' in technical context.	internal:dict-improvements
 recuperator	zh	聚变/核工程术语，指“回热器”这一技术概念。	internal:dict-improvements
 redeposition	en	The deposition again of material that has previously been eroded from a surface, so that eroded material is returned to the surfaces instead of being permanently removed.	corpus
-redeposition	zh	聚变/核工程术语，指“再沉积”这一技术概念。	internal:dict-improvements
+redeposition	zh	先前已从表面被侵蚀的材料重新沉积下来的过程，使被侵蚀的材料返回表面而不是被永久去除。	corpus
 reduced-activation	en	Fusion/nuclear engineering term referring to 'reduced activation' in technical context.	internal:dict-improvements
 reduced-activation	zh	聚变/核工程术语，指“低活化”这一技术概念。	internal:dict-improvements
 reduced-mhd	en	Fusion/nuclear engineering term referring to 'reduced MHD' in technical context.	internal:dict-improvements
@@ -5430,9 +5430,9 @@ sheared-flow-z-pinch	zh	聚变/核工程术语，指“剪切流Z箍缩”这一
 sheltering	zh	聚变/核工程术语，对应英文“sheltering”。	internal:dict-improvements
 shield-block-module	zh	聚变/核工程术语，对应英文“Shield Block Module”。	internal:dict-improvements
 shielding-labyrinth	en	A shielding penetration whose internal geometry is stepped or offset in a labyrinth pattern, so that no straight path through the duct exists and the radiation streaming along it is attenuated by repeated scattering.	corpus
-shielding-labyrinth	zh	聚变/核工程术语，指“迷宫通道”这一技术概念。	internal:dict-improvements
+shielding-labyrinth	zh	内部几何呈阶梯或错位迷宫形式的一种屏蔽穿透，因不存在直穿路径，沿通道穿射的辐射经多次散射而被减弱。	corpus
 shielding-penetration	en	An opening or duct through a radiation shield that provides a path along which radiation can stream through the shield, so that the shielding effectiveness is locally reduced at that location.	corpus
-shielding-penetration	zh	聚变/核工程术语，指“屏蔽穿透”这一技术概念。	internal:dict-improvements
+shielding-penetration	zh	辐射屏蔽体上供辐射穿越的开口或管道，辐射可沿其穿射而过，使该处的屏蔽效果局部降低。	corpus
 shipment	zh	聚变/核工程术语，对应英文“shipment”。	internal:dict-improvements
 short-lived-waste	zh	聚变/核工程术语，对应英文“short lived waste”。	internal:dict-improvements
 shutdown	zh	聚变/核工程术语，对应英文“shutdown”。	internal:dict-improvements
@@ -5501,7 +5501,7 @@ spheromak-merging	zh	聚变/核工程术语，指“球马克并合”这一技�
 spin-polarized-fuel	en	Fusion/nuclear engineering term referring to 'spin-polarized fuel' in technical context.	internal:dict-improvements
 spin-polarized-fuel	zh	聚变/核工程术语，指“自旋极化燃料”这一技术概念。	internal:dict-improvements
 sputtering	en	The ejection of atoms from a surface as a result of the impact of energetic particles; a process by which the surface material of a plasma-facing surface is removed by particle bombardment.	corpus
-sputtering	zh	聚变/核工程术语，指“溅射”这一技术概念。	internal:dict-improvements
+sputtering	zh	高能粒子撞击使表面原子被射出的过程，也是面向等离子体表面材料因粒子轰击而被去除的一种机制。	corpus
 sst-1	zh	聚变/核工程术语，对应英文“SST-1”。	internal:dict-improvements
 staircase-transport	en	Fusion/nuclear engineering term referring to 'staircase transport' in technical context.	internal:dict-improvements
 staircase-transport	zh	聚变/核工程术语，指“阶梯输运”这一技术概念。	internal:dict-improvements
@@ -5564,7 +5564,7 @@ super-h-mode	zh	聚变/核工程术语，指“超级H模”这一技术概念�
 super-x-divertor	en	Fusion/nuclear engineering term referring to 'Super-X divertor' in technical context.	internal:dict-improvements
 super-x-divertor	zh	聚变/核工程术语，指“Super-X偏滤器”这一技术概念。	internal:dict-improvements
 superconducting-joint	en	A joint between two superconducting conductors that is made with as low a resistance as possible, so that the connection does not significantly degrade the performance of the conductor it joins.	corpus
-superconducting-joint	zh	聚变/核工程术语，指“超导接头”这一技术概念。	internal:dict-improvements
+superconducting-joint	zh	两根超导导体之间的连接，其电阻尽可能低，使该连接不致明显降低所连接导体的性能。	corpus
 superconducting-magnet	en	Fusion/nuclear engineering term referring to 'superconducting magnet' in technical context.	internal:dict-improvements
 superconducting-magnet	zh	聚变/核工程术语，指“超导磁体”这一技术概念。	internal:dict-improvements
 supercritical-co2	en	Fusion/nuclear engineering term referring to 'supercritical CO2' in technical context.	internal:dict-improvements
@@ -5671,7 +5671,7 @@ tore-supra	zh	聚变/核工程术语，对应英文“Tore Supra”。	internal:
 toroidal-alfven-eigenmode	en	An Alfven gap mode caused by toroidal effects.	GB/T-4960.9
 toroidal-current	zh	聚变/核工程术语，对应英文“Toroidal Current”。	internal:dict-improvements
 toroidal-field-coil	en	A coil of the magnet system that produces the toroidal magnetic field of the device, that is, the field directed along the toroidal direction of the torus.	corpus
-toroidal-field-coil	zh	聚变/核工程术语，指“纵场线圈”这一技术概念。	internal:dict-improvements
+toroidal-field-coil	zh	磁体系统中产生装置纵场的线圈，其磁场方向沿环形装置的环向。	corpus
 transboundary-exposure	zh	聚变/核工程术语，对应英文“transboundary exposure”。	internal:dict-improvements
 transboundary-movement	zh	聚变/核工程术语，对应英文“transboundary movement”。	internal:dict-improvements
 transient-population-group	zh	聚变/核工程术语，对应英文“transient population group”。	internal:dict-improvements
