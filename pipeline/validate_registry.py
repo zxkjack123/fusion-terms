@@ -16,6 +16,35 @@ CONCEPT_ID_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 # Use a prefix-based allowlist so that ``GB/T-4960.x`` variants all pass.
 _ALLOWED_SOURCE_PREFIXES = ("corpus", "GB/T-", "ITER-", "IAEA-", "")
 
+# Allowed values for the concepts.tsv ``category`` column (T4973 T0.9).
+# Keep in sync with the categories actually used in terms/registry/concepts.tsv.
+_ALLOWED_CATEGORIES = frozenset(
+    {
+        "concept",
+        "nuclear-fusion",
+        "metric",
+        "method",
+        "code",
+        "device",
+        "system",
+        "material",
+        "diagnostic",
+        "company",
+        "organization",
+        "doc",
+        "limit",
+        "effect",
+        "facility",
+        "principle",
+    }
+)
+
+# Exact column counts for the registry tables. Rows deviating from these counts
+# are the "silently passing" malformed shapes fixed in T0.4/T0.5/T0.8; they must
+# fail hard instead of being silently accepted (T4973 T0.9).
+_CONCEPT_COLUMN_COUNT = 8
+_EVIDENCE_COLUMN_COUNT = 5
+
 
 @dataclass(frozen=True)
 class Row:
@@ -295,6 +324,31 @@ def validate_registry(terms_dir: Path) -> None:
             "registry validation failed: forbidden/deprecated aliases must not appear in IME allowlists\n"
             f"offending terms:\n{preview}{more}"
         )
+
+    # ---- strict row-shape gate (T4973 T0.9) ----
+    # Runs after the semantic checks above on purpose: historical failure
+    # precedence is preserved (e.g. the forbidden/deprecated allowlist leak check
+    # still fires first for a registry that is both leaky and malformed), while
+    # no row can pass on its shape: any deviation from the canonical column
+    # counts -- the malformed rows that used to slip through silently -- fails.
+    for r in concepts_rows:
+        if len(r.fields) != _CONCEPT_COLUMN_COUNT:
+            _fail(
+                r.path,
+                r.lineno,
+                "expected 8 columns: concept_id, category, preferred_zh, preferred_en, "
+                "preferred_abbr, status, notes, source",
+            )
+        if r.fields[1] not in _ALLOWED_CATEGORIES:
+            _fail(r.path, r.lineno, f"invalid category {r.fields[1]!r}")
+
+    for r in evidence_rows:
+        if len(r.fields) != _EVIDENCE_COLUMN_COUNT:
+            _fail(
+                r.path,
+                r.lineno,
+                "expected 5 columns: concept_id, source, quote, added_by, added_at",
+            )
 
     summary = (
         f"registry OK: "

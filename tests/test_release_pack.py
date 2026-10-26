@@ -102,13 +102,13 @@ def test_release_pack_includes_substitutions_and_vale_yaml(tmp_path: Path) -> No
 
     _write_registry_tables(
         terms_dir,
-        concepts=("iter\tdevice\n"),
+        concepts=("iter\tdevice\t\t\t\t\t\t\n"),
         aliases=(
             "ITER\titer\tabbr\tpreferred\n"
             "Old ITER Name\titer\ten\tdeprecated\n"
             "TypoITER\titer\ten\tforbidden\n"
         ),
-        evidence="iter\thttps://www.iter.org\n",
+        evidence="iter\thttps://www.iter.org\t\t\t\n",
     )
 
     config = tmp_path / "config.toml"

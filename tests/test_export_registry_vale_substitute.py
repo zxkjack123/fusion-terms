@@ -63,13 +63,13 @@ def test_export_vale_substitute_yaml_is_deterministic_and_matches_tsv(
 
     _write_registry_tables(
         terms_dir,
-        concepts=("iter\tdevice\n"),
+        concepts=("iter\tdevice\t\t\t\t\t\t\n"),
         aliases=(
             "ITER\titer\tabbr\tpreferred\n"
             "Old ITER Name\titer\ten\tdeprecated\n"
             "TypoITER\titer\ten\tforbidden\n"
         ),
-        evidence="iter\thttps://www.iter.org\n",
+        evidence="iter\thttps://www.iter.org\t\t\t\n",
     )
 
     out_dir = tmp_path / "artifacts"
@@ -133,14 +133,14 @@ def test_export_vale_substitute_basic(tmp_path: Path) -> None:
         terms_dir,
         concepts=(
             "# concept_id\tcategory\tpreferred_zh\tpreferred_en\tpreferred_abbr\tstatus\n"
-            "tok\tdevice\t托卡马克\ttokamak\t\tactive\n"
+            "tok\tdevice\t托卡马克\ttokamak\t\tactive\t\t\n"
         ),
         aliases=(
             "# alias\tconcept_id\tlang\tkind\tcomment\n"
             "tokamak\ttok\ten\tpreferred\t\n"
             "旧称\ttok\tzh\tforbidden\ttypo\n"
         ),
-        evidence="tok\thttps://example.invalid\n",
+        evidence="tok\thttps://example.invalid\t\t\t\n",
     )
 
     out_dir = tmp_path / "artifacts"

@@ -56,8 +56,8 @@ def test_translation_dict_basic(tmp_path: Path) -> None:
         terms_dir,
         concepts=(
             "# concept_id\tcategory\tpreferred_zh\tpreferred_en\tpreferred_abbr\tstatus\n"
-            "design\tconcept\t设计\tdesign\t\tactive\n"
-            "tritium-breeding-ratio\tmetric\t氚增殖比\ttritium breeding ratio\tTBR\tactive\n"
+            "design\tconcept\t设计\tdesign\t\tactive\t\t\n"
+            "tritium-breeding-ratio\tmetric\t氚增殖比\ttritium breeding ratio\tTBR\tactive\t\t\n"
         ),
         aliases=(
             "# alias\tconcept_id\tlang\tkind\n"
@@ -68,8 +68,8 @@ def test_translation_dict_basic(tmp_path: Path) -> None:
             "TBR\ttritium-breeding-ratio\tabbr\tpreferred\n"
         ),
         evidence=(
-            "design\thttps://example.invalid/design\n"
-            "tritium-breeding-ratio\thttps://example.invalid/tbr\n"
+            "design\thttps://example.invalid/design\t\t\t\n"
+            "tritium-breeding-ratio\thttps://example.invalid/tbr\t\t\t\n"
         ),
     )
 
@@ -103,7 +103,7 @@ def test_translation_dict_deterministic(tmp_path: Path) -> None:
         terms_dir,
         concepts=(
             "# concept_id\tcategory\tpreferred_zh\tpreferred_en\tpreferred_abbr\tstatus\n"
-            "design\tconcept\t设计\tdesign\t\tactive\n"
+            "design\tconcept\t设计\tdesign\t\tactive\t\t\n"
         ),
         aliases=(
             "# alias\tconcept_id\tlang\tkind\n"
@@ -111,7 +111,7 @@ def test_translation_dict_deterministic(tmp_path: Path) -> None:
             "design\tdesign\ten\tpreferred\n"
             "方案\tdesign\tzh\talias\n"
         ),
-        evidence="design\thttps://example.invalid/design\n",
+        evidence="design\thttps://example.invalid/design\t\t\t\n",
     )
 
     out_dir = tmp_path / "artifacts"
@@ -137,7 +137,7 @@ def test_translation_dict_skips_forbidden_deprecated(tmp_path: Path) -> None:
         terms_dir,
         concepts=(
             "# concept_id\tcategory\tpreferred_zh\tpreferred_en\tpreferred_abbr\tstatus\n"
-            "safety-analysis\tmethod\t安全分析\tsafety analysis\t\tactive\n"
+            "safety-analysis\tmethod\t安全分析\tsafety analysis\t\tactive\t\t\n"
         ),
         aliases=(
             "# alias\tconcept_id\tlang\tkind\n"
@@ -146,7 +146,7 @@ def test_translation_dict_skips_forbidden_deprecated(tmp_path: Path) -> None:
             "旧安全分析\tsafety-analysis\tzh\tdeprecated\n"
             "wrong safety analysis\tsafety-analysis\ten\tforbidden\n"
         ),
-        evidence="safety-analysis\thttps://example.invalid/safety\n",
+        evidence="safety-analysis\thttps://example.invalid/safety\t\t\t\n",
     )
 
     out_dir = tmp_path / "artifacts"
@@ -169,14 +169,14 @@ def test_translation_dict_missing_preferred_en(tmp_path: Path) -> None:
         terms_dir,
         concepts=(
             "# concept_id\tcategory\tpreferred_zh\tpreferred_en\tpreferred_abbr\tstatus\n"
-            "only-zh\tconcept\t仅中文\t\t\tactive\n"
+            "only-zh\tconcept\t仅中文\t\t\tactive\t\t\n"
         ),
         aliases=(
             "# alias\tconcept_id\tlang\tkind\n"
             "仅中文\tonly-zh\tzh\tpreferred\n"
             "仅中\tonly-zh\tzh\talias\n"
         ),
-        evidence="only-zh\thttps://example.invalid/only-zh\n",
+        evidence="only-zh\thttps://example.invalid/only-zh\t\t\t\n",
     )
 
     out_dir = tmp_path / "artifacts"
@@ -198,14 +198,14 @@ def test_translation_dict_missing_preferred_zh(tmp_path: Path) -> None:
         terms_dir,
         concepts=(
             "# concept_id\tcategory\tpreferred_zh\tpreferred_en\tpreferred_abbr\tstatus\n"
-            "only-en\tconcept\t\tonly en\t\tactive\n"
+            "only-en\tconcept\t\tonly en\t\tactive\t\t\n"
         ),
         aliases=(
             "# alias\tconcept_id\tlang\tkind\n"
             "only en\tonly-en\ten\tpreferred\n"
             "only\tonly-en\ten\talias\n"
         ),
-        evidence="only-en\thttps://example.invalid/only-en\n",
+        evidence="only-en\thttps://example.invalid/only-en\t\t\t\n",
     )
 
     out_dir = tmp_path / "artifacts"
@@ -227,7 +227,7 @@ def test_translation_dict_abbr_aliases(tmp_path: Path) -> None:
         terms_dir,
         concepts=(
             "# concept_id\tcategory\tpreferred_zh\tpreferred_en\tpreferred_abbr\tstatus\n"
-            "cfetr\tdevice\t中国聚变工程试验堆\tCFETR\tCFETR\tactive\n"
+            "cfetr\tdevice\t中国聚变工程试验堆\tCFETR\tCFETR\tactive\t\t\n"
         ),
         aliases=(
             "# alias\tconcept_id\tlang\tkind\n"
@@ -235,7 +235,7 @@ def test_translation_dict_abbr_aliases(tmp_path: Path) -> None:
             "CFETR\tcfetr\tabbr\tpreferred\n"
             "CFETR reactor\tcfetr\ten\talias\n"
         ),
-        evidence="cfetr\thttps://example.invalid/cfetr\n",
+        evidence="cfetr\thttps://example.invalid/cfetr\t\t\t\n",
     )
 
     out_dir = tmp_path / "artifacts"
@@ -260,10 +260,10 @@ def test_translation_dict_short_en_keys_segregated(tmp_path: Path) -> None:
         terms_dir,
         concepts=(
             "# concept_id\tcategory\tpreferred_zh\tpreferred_en\tpreferred_abbr\tstatus\n"
-            "deuterium\tmaterial\t氘\tdeuterium\tD\tactive\n"
-            "central-solenoid\tcomponent\t中心螺管\tcentral solenoid\tCS\tactive\n"
-            "tritium-breeding-ratio\tmetric\t氚增殖比\ttritium breeding ratio\tTBR\tactive\n"
-            "beta\tmetric\t比压\tbeta\tβ\tactive\n"
+            "deuterium\tmaterial\t氘\tdeuterium\tD\tactive\t\t\n"
+            "central-solenoid\tconcept\t中心螺管\tcentral solenoid\tCS\tactive\t\t\n"
+            "tritium-breeding-ratio\tmetric\t氚增殖比\ttritium breeding ratio\tTBR\tactive\t\t\n"
+            "beta\tmetric\t比压\tbeta\tβ\tactive\t\t\n"
         ),
         aliases=(
             "# alias\tconcept_id\tlang\tkind\n"
@@ -281,10 +281,10 @@ def test_translation_dict_short_en_keys_segregated(tmp_path: Path) -> None:
             "β\tbeta\tabbr\tpreferred\n"
         ),
         evidence=(
-            "deuterium\thttps://example.invalid/deuterium\n"
-            "central-solenoid\thttps://example.invalid/cs\n"
-            "tritium-breeding-ratio\thttps://example.invalid/tbr\n"
-            "beta\thttps://example.invalid/beta\n"
+            "deuterium\thttps://example.invalid/deuterium\t\t\t\n"
+            "central-solenoid\thttps://example.invalid/cs\t\t\t\n"
+            "tritium-breeding-ratio\thttps://example.invalid/tbr\t\t\t\n"
+            "beta\thttps://example.invalid/beta\t\t\t\n"
         ),
     )
 
@@ -323,14 +323,14 @@ def test_translation_dict_cli_flag(tmp_path: Path) -> None:
         terms_dir,
         concepts=(
             "# concept_id\tcategory\tpreferred_zh\tpreferred_en\tpreferred_abbr\tstatus\n"
-            "design\tconcept\t设计\tdesign\t\tactive\n"
+            "design\tconcept\t设计\tdesign\t\tactive\t\t\n"
         ),
         aliases=(
             "# alias\tconcept_id\tlang\tkind\n"
             "设计\tdesign\tzh\tpreferred\n"
             "design\tdesign\ten\tpreferred\n"
         ),
-        evidence="design\thttps://example.invalid/design\n",
+        evidence="design\thttps://example.invalid/design\t\t\t\n",
     )
 
     out_dir = tmp_path / "artifacts"
@@ -377,7 +377,7 @@ def test_translation_dict_min_en_key_len_string_config(tmp_path: Path) -> None:
         terms_dir,
         concepts=(
             "# concept_id\tcategory\tpreferred_zh\tpreferred_en\tpreferred_abbr\tstatus\n"
-            "design\tconcept\t设计\tdesign\t\tactive\n"
+            "design\tconcept\t设计\tdesign\t\tactive\t\t\n"
         ),
         aliases=(
             "# alias\tconcept_id\tlang\tkind\n"
@@ -385,7 +385,7 @@ def test_translation_dict_min_en_key_len_string_config(tmp_path: Path) -> None:
             "design\tdesign\ten\tpreferred\n"
             "de\tdesign\ten\talias\n"
         ),
-        evidence="design\thttps://example.invalid/design\n",
+        evidence="design\thttps://example.invalid/design\t\t\t\n",
     )
 
     out_dir = tmp_path / "artifacts"
@@ -432,9 +432,9 @@ def test_export_translation_dict_basic_structure(tmp_path: Path) -> None:
 
     _write_registry_tables(
         terms_dir,
-        concepts=("tok\tdevice\t托卡马克\ttokamak\t\tactive\n"),
+        concepts=("tok\tdevice\t托卡马克\ttokamak\t\tactive\t\t\n"),
         aliases=("tokamak\ttok\ten\tpreferred\n托卡马克\ttok\tzh\tpreferred\n"),
-        evidence="tok\thttps://example.invalid\n",
+        evidence="tok\thttps://example.invalid\t\t\t\n",
     )
 
     out_dir = tmp_path / "artifacts"

@@ -33,7 +33,7 @@ def test_export_query_expansions_is_deterministic_and_partitioned(
         terms_dir,
         concepts=(
             "# concept_id\tcategory\tpreferred_zh\tpreferred_en\tpreferred_abbr\tstatus\n"
-            "iter\tdevice\t\tITER\tITER\tactive\n"
+            "iter\tdevice\t\tITER\tITER\tactive\t\t\n"
         ),
         aliases=(
             "# alias\tconcept_id\tlang\tkind\n"
@@ -42,7 +42,7 @@ def test_export_query_expansions_is_deterministic_and_partitioned(
             "Old ITER Name\titer\ten\tdeprecated\n"
             "TypoITER\titer\ten\tforbidden\n"
         ),
-        evidence="iter\thttps://www.iter.org\n",
+        evidence="iter\thttps://www.iter.org\t\t\t\n",
     )
 
     out_dir = tmp_path / "artifacts"
@@ -111,8 +111,8 @@ def test_export_query_expansions_basic(tmp_path: Path) -> None:
     _write_registry_tables(
         terms_dir,
         concepts=(
-            "tok\tdevice\t托卡马克\ttokamak\t\tactive\n"
-            "stl\tdevice\t仿星器\tstellarator\t\tactive\n"
+            "tok\tdevice\t托卡马克\ttokamak\t\tactive\t\t\n"
+            "stl\tdevice\t仿星器\tstellarator\t\tactive\t\t\n"
         ),
         aliases=(
             "tokamak\ttok\ten\tpreferred\n"
@@ -120,7 +120,9 @@ def test_export_query_expansions_basic(tmp_path: Path) -> None:
             "stellarator\tstl\ten\tpreferred\n"
             "仿星器\tstl\tzh\tpreferred\n"
         ),
-        evidence=("tok\thttps://example.invalid\nstl\thttps://example.invalid\n"),
+        evidence=(
+            "tok\thttps://example.invalid\t\t\t\nstl\thttps://example.invalid\t\t\t\n"
+        ),
     )
 
     out_dir = tmp_path / "artifacts"
@@ -169,14 +171,18 @@ def test_export_query_expansions_rejects_cross_concept_alias(
 
     _write_registry_tables(
         terms_dir,
-        concepts=("c1\tdevice\t甲\tAlpha\t\tactive\nc2\tdevice\t乙\tBeta\t\tactive\n"),
+        concepts=(
+            "c1\tdevice\t甲\tAlpha\t\tactive\t\t\nc2\tdevice\t乙\tBeta\t\tactive\t\t\n"
+        ),
         aliases=(
             "Alpha\tc1\ten\tpreferred\n"
             "Beta\tc2\ten\tpreferred\n"
             "CLASH\tc1\ten\talias\n"
             "CLASH\tc2\ten\talias\n"
         ),
-        evidence=("c1\thttps://example.invalid\nc2\thttps://example.invalid\n"),
+        evidence=(
+            "c1\thttps://example.invalid\t\t\t\nc2\thttps://example.invalid\t\t\t\n"
+        ),
     )
 
     out_dir = tmp_path / "artifacts"

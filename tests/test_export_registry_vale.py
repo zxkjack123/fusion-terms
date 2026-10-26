@@ -30,14 +30,14 @@ def test_export_registry_writes_vale_accept_reject(tmp_path: Path) -> None:
 
     _write_registry_tables(
         terms_dir,
-        concepts="iter\tdevice\n",
+        concepts="iter\tdevice\t\t\t\t\t\t\n",
         aliases=(
             "ITER\titer\tabbr\tpreferred\n"
             "International Thermonuclear Experimental Reactor\titer\ten\talias\n"
             "Foo\titer\ten\tforbidden\n"
             "foo\titer\ten\tdeprecated\n"
         ),
-        evidence="iter\thttps://www.iter.org\n",
+        evidence="iter\thttps://www.iter.org\t\t\t\n",
     )
 
     out_dir = tmp_path / "artifacts"

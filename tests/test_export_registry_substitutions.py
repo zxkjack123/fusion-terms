@@ -38,8 +38,8 @@ def test_export_substitutions_tsv_is_deterministic_and_lang_prefers(
         terms_dir,
         concepts=(
             "# concept_id\tcategory\tpreferred_zh\tpreferred_en\tpreferred_abbr\tstatus\n"
-            "iter\tdevice\t\tITER\tITER\tactive\n"
-            "qse\tdevice\tQSE\tQSE\t\tactive\n"
+            "iter\tdevice\t\tITER\tITER\tactive\t\t\n"
+            "qse\tdevice\tQSE\tQSE\t\tactive\t\t\n"
         ),
         aliases=(
             "# alias\tconcept_id\tlang\tkind\tcomment\n"
@@ -50,7 +50,7 @@ def test_export_substitutions_tsv_is_deterministic_and_lang_prefers(
             "QSE\tqse\ten\tpreferred\t\n"
             "量子能量系统\tqse\tzh\tdeprecated\told zh name\n"
         ),
-        evidence="iter\thttps://www.iter.org\nqse\thttps://example.invalid\n",
+        evidence="iter\thttps://www.iter.org\t\t\t\nqse\thttps://example.invalid\t\t\t\n",
     )
 
     out_dir = tmp_path / "artifacts"
@@ -124,9 +124,9 @@ def test_export_substitutions_fails_if_no_preferred(tmp_path: Path) -> None:
 
     _write_registry_tables(
         terms_dir,
-        concepts="x\tdevice\n",
+        concepts="x\tdevice\t\t\t\t\t\t\n",
         aliases="Old Name\tx\ten\tdeprecated\n",
-        evidence="x\thttps://example.invalid\n",
+        evidence="x\thttps://example.invalid\t\t\t\n",
     )
 
     out_dir = tmp_path / "artifacts"
@@ -160,9 +160,9 @@ def test_export_substitutions_fails_on_alias_equal_preferred(tmp_path: Path) -> 
 
     _write_registry_tables(
         terms_dir,
-        concepts="x\tdevice\n",
+        concepts="x\tdevice\t\t\t\t\t\t\n",
         aliases=("SAME\tx\ten\tpreferred\nSAME\tx\ten\tdeprecated\n"),
-        evidence="x\thttps://example.invalid\n",
+        evidence="x\thttps://example.invalid\t\t\t\n",
     )
 
     out_dir = tmp_path / "artifacts"
@@ -307,7 +307,7 @@ def test_export_substitutions_tsv_writes_correct_format(tmp_path: Path) -> None:
         terms_dir,
         concepts=(
             "# concept_id\tcategory\tpreferred_zh\tpreferred_en\tpreferred_abbr\tstatus\n"
-            "tok\tdevice\t托卡马克\ttokamak\t\tactive\n"
+            "tok\tdevice\t托卡马克\ttokamak\t\tactive\t\t\n"
         ),
         aliases=(
             "# alias\tconcept_id\tlang\tkind\tcomment\n"
@@ -315,7 +315,7 @@ def test_export_substitutions_tsv_writes_correct_format(tmp_path: Path) -> None:
             "托卡马克\ttok\tzh\tpreferred\t\n"
             "old-tok\ttok\ten\tdeprecated\told name\n"
         ),
-        evidence="tok\thttps://example.invalid\n",
+        evidence="tok\thttps://example.invalid\t\t\t\n",
     )
 
     out_dir = tmp_path / "artifacts"

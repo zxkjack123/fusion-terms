@@ -34,7 +34,7 @@ def test_export_tag_rules_jsonl_is_deterministic_and_coalesces_kinds(
         terms_dir,
         concepts=(
             "# concept_id\tcategory\tpreferred_zh\tpreferred_en\tpreferred_abbr\tstatus\n"
-            "iter\tdevice\t\tITER\tITER\tactive\n"
+            "iter\tdevice\t\tITER\tITER\tactive\t\t\n"
         ),
         aliases=(
             "# alias\tconcept_id\tlang\tkind\n"
@@ -43,7 +43,7 @@ def test_export_tag_rules_jsonl_is_deterministic_and_coalesces_kinds(
             "Foo\titer\ten\talias\n"
             "Foo\titer\ten\tforbidden\n"
         ),
-        evidence="iter\thttps://www.iter.org\n",
+        evidence="iter\thttps://www.iter.org\t\t\t\n",
     )
 
     out_dir = tmp_path / "artifacts"

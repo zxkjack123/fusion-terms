@@ -42,14 +42,14 @@ def test_ime_wordlist_and_registry_exports_can_coexist_in_same_out_dir(
         terms_dir,
         concepts=(
             "# concept_id\tcategory\tpreferred_zh\tpreferred_en\tpreferred_abbr\tstatus\n"
-            "iter\tdevice\t\tITER\tITER\tactive\n"
+            "iter\tdevice\t\tITER\tITER\tactive\t\t\n"
         ),
         aliases=(
             "# alias\tconcept_id\tlang\tkind\n"
             "ITER\titer\tabbr\tpreferred\n"
             "International Thermonuclear Experimental Reactor\titer\ten\talias\n"
         ),
-        evidence="iter\thttps://www.iter.org\n",
+        evidence="iter\thttps://www.iter.org\t\t\t\n",
     )
 
     out_dir = tmp_path / "artifacts"
