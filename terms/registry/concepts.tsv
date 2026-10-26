@@ -3353,46 +3353,46 @@ liquid-metal-embrittlement	concept	液态金属脆化	Liquid Metal Embrittlement
 pitting-corrosion	concept	点蚀	Pitting Corrosion		active	Localized corrosion forming small cavities in metal surfaces [domain: corrosion-compatibility]	corpus
 corrosion-allowance	metric	腐蚀裕量	Corrosion Allowance		active	Additional wall thickness added to structural design to account for material loss by corrosion [domain: corrosion-compatibility]	corpus
 dissolution-rate	metric	溶解速率	Dissolution Rate		active	Rate of structural material mass loss into a flowing liquid metal or coolant [domain: corrosion-compatibility]	corpus
-power-coupling	concept		Power Coupling		active	Efficiency of RF power transfer from antenna or waveguide to the plasma [domain: plasma-heating]	corpus
-parasitic-absorption	concept		Parasitic Absorption		active	Unintended RF power absorption by plasma edge, antenna structure, or Faraday screen [domain: plasma-heating]	corpus
-rf-sheath	concept		RF Sheath		active	Rectified sheath potential formed near antenna structures due to RF fields [domain: plasma-heating]	corpus
-antenna-phasing	method		Antenna Phasing		active	Relative phase setting between antenna straps to control launched wave spectrum [domain: plasma-heating]	corpus
-x-point-radiator	concept		X-Point Radiator		active	Radiation enhancement regime near the X-point for divertor heat flux mitigation [domain: divertor-physics]	corpus
-strike-point-sweeping	method		Strike Point Sweeping		active	Controlled oscillation of the divertor strike point to distribute heat load over a wider area [domain: divertor-physics]	corpus
-reattachment	concept		Reattachment		active	Transition from detached to attached divertor plasma regime [domain: divertor-physics]	corpus
-divertor-erosion	concept		Divertor Erosion		active	Material removal from divertor target surfaces due to plasma particle and heat flux bombardment [domain: divertor-physics]	corpus
-buckling	concept		Buckling		active	Structural instability mode where a member deflects laterally under compressive load [domain: structural-mechanics]	corpus
-stress-relaxation	concept		Stress Relaxation		active	Time-dependent decrease of stress in a constrained component at elevated temperature [domain: structural-mechanics]	corpus
-fatigue-crack-growth	concept		Fatigue Crack Growth		active	Progressive extension of a crack under cyclic loading described by da/dN curves [domain: structural-mechanics]	corpus
-seismic-analysis	method		Seismic Analysis		active	Structural assessment of components and buildings under earthquake loading [domain: structural-mechanics]	corpus
-plasma-start-up	concept		Plasma Start-Up		active	Initial phase of plasma discharge including gas breakdown and current ramp-up [domain: plasma-control]	corpus
-disruption-avoidance	method		Disruption Avoidance		active	Real-time control strategy to steer plasma away from disruptive boundaries [domain: plasma-control]	corpus
-runaway-mitigation	method		Runaway Mitigation		active	Techniques to suppress or safely terminate runaway electron beams after disruptions [domain: plasma-control]	corpus
-plasma-current-ramp	concept		Plasma Current Ramp		active	Controlled increase or decrease of plasma current during start-up or shutdown phases [domain: plasma-control]	corpus
-physics-informed-neural-network	method		Physics-Informed Neural Network		active	Neural network architecture constrained by physics equations for improved generalization [domain: computational-methods]	corpus
-bayesian-optimization	method		Bayesian Optimization		active	Surrogate-model-based sequential optimization strategy for expensive objective functions [domain: computational-methods]	corpus
-transfer-learning	method		Transfer Learning		active	Machine learning technique that reuses pre-trained models for new but related tasks [domain: computational-methods]	corpus
-gaussian-process	method		Gaussian Process		active	Non-parametric probabilistic model providing uncertainty-quantified predictions [domain: computational-methods]	corpus
-beryllide	material		Beryllide		active	Intermetallic beryllium compound such as Be12Ti or Be12V used as neutron multiplier [domain: breeding-material]	corpus
-pebble-packing-fraction	metric		Pebble Packing Fraction		active	Volumetric fraction occupied by ceramic or beryllium pebbles in a packed bed [domain: breeding-material]	corpus
-crush-load	metric		Crush Load		active	Mechanical load at which a ceramic pebble undergoes brittle fracture [domain: breeding-material]	corpus
-lithium-burnup	metric		Lithium Burnup		active	Depletion of lithium-6 in breeding material due to neutron transmutation reactions [domain: breeding-material]	corpus
-joule-heating	nuclear-fusion		Joule Heating		active	Resistive power dissipation in conductors or plasma due to electric current flow [domain: nuclear-fusion]	corpus
-lorentz-force	nuclear-fusion		Lorentz Force		active	Electromagnetic body force on a current-carrying conductor in a magnetic field [domain: nuclear-fusion]	corpus
-flux-swing	nuclear-fusion		Flux Swing		active	Total change in magnetic flux available from the central solenoid for plasma current induction [domain: nuclear-fusion]	corpus
-volt-second	nuclear-fusion		Volt-Second		active	Unit of magnetic flux; the total volt-second capability determines maximum achievable plasma current flat-top duration [domain: nuclear-fusion]	corpus
-type-i-elm	nuclear-fusion		Type-I ELM		active	Large periodic edge-localized mode occurring in standard H-mode with high pedestal pressure [domain: nuclear-fusion]	corpus
-grassy-elm	nuclear-fusion		Grassy ELM		active	Small high-frequency ELM regime with reduced energy loss per event compared to type-I ELMs [domain: nuclear-fusion]	corpus
-elm-free-regime	nuclear-fusion		ELM-Free Regime		active	H-mode operating regime in which edge-localized modes are suppressed by resonant magnetic perturbation or other means [domain: nuclear-fusion]	corpus
-elm-frequency	metric		ELM Frequency		active	Repetition rate of edge-localized mode bursts typically measured in hertz [domain: metric]	corpus
-pedestal-height	metric		Pedestal Height		active	Pressure or temperature value at the top of the H-mode pedestal defining the pedestal performance [domain: metric]	corpus
-h-mode-power-threshold	metric		H-Mode Power Threshold		active	Minimum heating power required to trigger the transition from L-mode to H-mode confinement [domain: metric]	corpus
-squareness	metric		Squareness		active	Plasma shape parameter describing the rectangularity of the plasma cross-section beyond triangularity [domain: metric]	corpus
-separatrix-density	metric		Separatrix Density		active	Electron density at the last closed flux surface which strongly influences divertor conditions and detachment [domain: metric]	corpus
-fluence-limit	metric		Fluence Limit		active	Maximum allowable neutron fluence for a structural component based on material property degradation criteria [domain: metric]	corpus
-end-of-life	metric		End of Life		active	Design condition at which a component reaches its maximum allowable damage or degradation and must be replaced [domain: metric]	corpus
-runaway-plateau	nuclear-fusion		Runaway Plateau		active	Quasi-steady phase following a disruption current quench in which a runaway electron beam carries the remaining plasma current [domain: nuclear-fusion]	corpus
-operational-lifetime	metric		Operational Lifetime		active	Total cumulative operating time or number of cycles a fusion component is qualified to endure before replacement [domain: metric]	corpus
+power-coupling	concept	功率耦合	Power Coupling		active	Efficiency of RF power transfer from antenna or waveguide to the plasma [domain: plasma-heating]	corpus
+parasitic-absorption	concept	寄生吸收	Parasitic Absorption		active	Unintended RF power absorption by plasma edge, antenna structure, or Faraday screen [domain: plasma-heating]	corpus
+rf-sheath	concept	射频鞘层	RF Sheath		active	Rectified sheath potential formed near antenna structures due to RF fields [domain: plasma-heating]	corpus
+antenna-phasing	method	天线相位调节	Antenna Phasing		active	Relative phase setting between antenna straps to control launched wave spectrum [domain: plasma-heating]	corpus
+x-point-radiator	concept	X点辐射体	X-Point Radiator		active	Radiation enhancement regime near the X-point for divertor heat flux mitigation [domain: divertor-physics]	corpus
+strike-point-sweeping	method	打击点扫描	Strike Point Sweeping		active	Controlled oscillation of the divertor strike point to distribute heat load over a wider area [domain: divertor-physics]	corpus
+reattachment	concept	再附着	Reattachment		active	Transition from detached to attached divertor plasma regime [domain: divertor-physics]	corpus
+divertor-erosion	concept	偏滤器侵蚀	Divertor Erosion		active	Material removal from divertor target surfaces due to plasma particle and heat flux bombardment [domain: divertor-physics]	corpus
+buckling	concept	屈曲	Buckling		active	Structural instability mode where a member deflects laterally under compressive load [domain: structural-mechanics]	corpus
+stress-relaxation	concept	应力松弛	Stress Relaxation		active	Time-dependent decrease of stress in a constrained component at elevated temperature [domain: structural-mechanics]	corpus
+fatigue-crack-growth	concept	疲劳裂纹扩展	Fatigue Crack Growth		active	Progressive extension of a crack under cyclic loading described by da/dN curves [domain: structural-mechanics]	corpus
+seismic-analysis	method	抗震分析	Seismic Analysis		active	Structural assessment of components and buildings under earthquake loading [domain: structural-mechanics]	corpus
+plasma-start-up	concept	等离子体起动	Plasma Start-Up		active	Initial phase of plasma discharge including gas breakdown and current ramp-up [domain: plasma-control]	corpus
+disruption-avoidance	method	破裂避免	Disruption Avoidance		active	Real-time control strategy to steer plasma away from disruptive boundaries [domain: plasma-control]	corpus
+runaway-mitigation	method	逃逸电子缓解	Runaway Mitigation		active	Techniques to suppress or safely terminate runaway electron beams after disruptions [domain: plasma-control]	corpus
+plasma-current-ramp	concept	等离子体电流爬升	Plasma Current Ramp		active	Controlled increase or decrease of plasma current during start-up or shutdown phases [domain: plasma-control]	corpus
+physics-informed-neural-network	method	物理信息神经网络	Physics-Informed Neural Network		active	Neural network architecture constrained by physics equations for improved generalization [domain: computational-methods]	corpus
+bayesian-optimization	method	贝叶斯优化	Bayesian Optimization		active	Surrogate-model-based sequential optimization strategy for expensive objective functions [domain: computational-methods]	corpus
+transfer-learning	method	迁移学习	Transfer Learning		active	Machine learning technique that reuses pre-trained models for new but related tasks [domain: computational-methods]	corpus
+gaussian-process	method	高斯过程	Gaussian Process		active	Non-parametric probabilistic model providing uncertainty-quantified predictions [domain: computational-methods]	corpus
+beryllide	material	铍化物	Beryllide		active	Intermetallic beryllium compound such as Be12Ti or Be12V used as neutron multiplier [domain: breeding-material]	corpus
+pebble-packing-fraction	metric	球床填充率	Pebble Packing Fraction		active	Volumetric fraction occupied by ceramic or beryllium pebbles in a packed bed [domain: breeding-material]	corpus
+crush-load	metric	压碎载荷	Crush Load		active	Mechanical load at which a ceramic pebble undergoes brittle fracture [domain: breeding-material]	corpus
+lithium-burnup	metric	锂消耗	Lithium Burnup		active	Depletion of lithium-6 in breeding material due to neutron transmutation reactions [domain: breeding-material]	corpus
+joule-heating	nuclear-fusion	焦耳热	Joule Heating		active	Resistive power dissipation in conductors or plasma due to electric current flow [domain: nuclear-fusion]	corpus
+lorentz-force	nuclear-fusion	洛伦兹力	Lorentz Force		active	Electromagnetic body force on a current-carrying conductor in a magnetic field [domain: nuclear-fusion]	corpus
+flux-swing	nuclear-fusion	磁通摆幅	Flux Swing		active	Total change in magnetic flux available from the central solenoid for plasma current induction [domain: nuclear-fusion]	corpus
+volt-second	nuclear-fusion	伏秒	Volt-Second		active	Unit of magnetic flux; the total volt-second capability determines maximum achievable plasma current flat-top duration [domain: nuclear-fusion]	corpus
+type-i-elm	nuclear-fusion	I型ELM	Type-I ELM		active	Large periodic edge-localized mode occurring in standard H-mode with high pedestal pressure [domain: nuclear-fusion]	corpus
+grassy-elm	nuclear-fusion	草状ELM	Grassy ELM		active	Small high-frequency ELM regime with reduced energy loss per event compared to type-I ELMs [domain: nuclear-fusion]	corpus
+elm-free-regime	nuclear-fusion	无ELM运行模式	ELM-Free Regime		active	H-mode operating regime in which edge-localized modes are suppressed by resonant magnetic perturbation or other means [domain: nuclear-fusion]	corpus
+elm-frequency	metric	ELM频率	ELM Frequency		active	Repetition rate of edge-localized mode bursts typically measured in hertz [domain: metric]	corpus
+pedestal-height	metric	台基高度	Pedestal Height		active	Pressure or temperature value at the top of the H-mode pedestal defining the pedestal performance [domain: metric]	corpus
+h-mode-power-threshold	metric	H模功率阈值	H-Mode Power Threshold		active	Minimum heating power required to trigger the transition from L-mode to H-mode confinement [domain: metric]	corpus
+squareness	metric	方形度	Squareness		active	Plasma shape parameter describing the rectangularity of the plasma cross-section beyond triangularity [domain: metric]	corpus
+separatrix-density	metric	分界面密度	Separatrix Density		active	Electron density at the last closed flux surface which strongly influences divertor conditions and detachment [domain: metric]	corpus
+fluence-limit	metric	注量限值	Fluence Limit		active	Maximum allowable neutron fluence for a structural component based on material property degradation criteria [domain: metric]	corpus
+end-of-life	metric	寿命终点	End of Life		active	Design condition at which a component reaches its maximum allowable damage or degradation and must be replaced [domain: metric]	corpus
+runaway-plateau	nuclear-fusion	逃逸电子平台	Runaway Plateau		active	Quasi-steady phase following a disruption current quench in which a runaway electron beam carries the remaining plasma current [domain: nuclear-fusion]	corpus
+operational-lifetime	metric	运行寿命	Operational Lifetime		active	Total cumulative operating time or number of cycles a fusion component is qualified to endure before replacement [domain: metric]	corpus
 cate	code	活化腐蚀产物源项分析程序	CATE	CATE	active	Water-cooled-loop activated corrosion product source term analysis code (NCEPU; CATE-V2.0/V3.0 line)	corpus
 pactole	code	PACTOLE程序	PACTOLE		active	CEA code for activated corrosion product source term in PWR primary circuits	corpus
 pactiter	code	PACTITER程序	PACTITER		active	CEA code for activated corrosion product source term in fusion water-cooled loops	corpus
