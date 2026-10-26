@@ -1334,3 +1334,45 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 - **不在任何工作集的 7 个 id**：`advanced-tokamak`、`collective-dose`、`cryostat`、`environment-module`、`mhd-stability-limit`、`plasma-frequency`、`tokamak`
 - **清扫范围**（W1 收尾执行，裁决 3 = A）：类 1+2+3（= 39 zh + 18 en = **57 行**）减去 W1 集内的 5 行 ⇒ **≈52 行**；**类 4 单独裁决**；类 5/6 **不动**
 - **测量口径纠错记录**：初测报「类 3 = 18 行」后又出现「0 行」，经三方方法（`splitlines`／`csv.reader`／`git show HEAD`）交叉复核确认 **18 行**；「0」系脚本默认参数 `rs=zh` 导致的**统计 bug**（该类命中全在 **en** 行），非数据变化。另：类 1 初测 3~4 行、现测 5 行，差异来自粘连形式（`MHzsim`/`mAcdot`）与 1 个新命中，检测器须固化后再定稿
+
+#### T1.A3-EN / T1.A3-ZH — ✅ DONE（2026-10-26 21:15）commits `2a01af3`（-EN）+ 本节（-ZH）
+
+- 批次：`.github/plans/t4973-batches/w1_a_b03.ids`（**20** id）；W1-A 组
+- **`-EN`**：20 条 `en` 行由套话改写为真实释义（依据 = 各 concept 自身的 GB/T zh 释义）
+  - 门禁：`registry_batch_verify.py --mode definitions --ids-file …/w1_a_b03.ids --expect 20 --lang en` → **exit 0** `verdict=PASS`
+  - en 最短 **61** / 最长 513 字符；套话 0/20；全 ASCII；source：**20/20** `GB/T-4960.9`
+  - 迁移：`internal:*` 4495 → **4475**；`GB/T-4960.9` 590 → **610**；audit `en_boilerplate` 706 → **686**
+  - **未知情面**：本批 3 个 id（`dt-reaction`/`dd-reaction`/`d-he3-reaction`）的 zh 行含公式 mojibake；en 侧**未复制**畸形写法，直接写正确 ASCII 物理量（`D + T -> n + He-4 + 17.6 MeV` 等）；zh 侧修复见 `-ZH`
+- **`-ZH`**：zh 门禁原本已 PASS（无机械 RED），但**人工审读发现类 7（公式/数字 mojibake）**——3 行修复（纯「去除转换器插入的空格」恢复性修复，不改语义、不改 source）：
+
+  | id | before → after | 类 |
+  |----|---------------|-----|
+  | `dt-reaction` | `D + T → n + ⁴ H e + 1 7. 6 M e V` → `D + T → n + ⁴He + 17.6 MeV` | 7a+7c |
+  | `dt-reaction` | `(D-Treaction)或氘-氚燃烧(D-Tburn)` → `(D-T reaction)或氘-氚燃烧(D-T burn)` | 7e（空格被删） |
+  | `dd-reaction` | `。 反应式为` → `。反应式为`；`D + D → n + ³ H e` → `D + D → n + ³He` | 2c+7a |
+  | `d-he3-reaction` | `D + ³ H e → p + ⁴ H e + 1 8. 4 M e V` → `D + ³He → p + ⁴He + 18.4 MeV` | 7a+7c+7b |
+
+- **不变量 / 全量门禁**：`data_rows` 恒 **6132**；列分布恒 `{4}`；`git diff --numstat` = `20/20`（-EN）+ `3/3`（-ZH）；`--lang zh` / `--lang both` **exit 0**；`validate_registry` / `pytest -q` / `ruff format --check .` / `ruff check .` / `mypy pipeline/` → 全部 **exit 0**
+- **zh 上标书写约定（本批确立）**：zh 释义中同位素写**上标式** `³He`/`⁴He`（与 `fusion-cross-section` 的 `D-³He`、`concepts.tsv` 中 `d-he3-reaction` 的 `preferred_zh = D-³He反应` 一致），**不**写 `He-3`/`He-4`（后者是 en 侧约定）
+
+#### 清扫清单（滚动更新 — 类 7 新增）
+
+| # | 类 | 判据（模式） | 实测规模 | 处置 |
+|---|----|-------------|---------|------|
+| 1 | LaTeX 命令残留 | `(times\|sim\|cdot)`（zh 行、含粘连） | **5 行** zh | ✔ 恢复性清扫 |
+| 2 | 字符讹误 / 多余空格 | `CJK<sp>CJK` ／ `[。，、；：]\s+CJK` ／ `CJK[a-z]{3,}CJK` | **36 行** zh | ✔ 恢复性清扫 |
+| 3 | 字段首尾空白 | 任一分量 `x != x.strip()` | **18 行**（全为 en 行，IAEA 源） | ✔ 恢复性清扫 |
+| 4 | GB/T 词头前缀 | `^[CJK]{2,8} [CJK]` 或 `^[CJK]{2,8} [A-Za-z]` | **31 行** zh | ⚠ **编辑性**，须单独裁决 |
+| 5 | GB/T 条款号 `(2.1.284)` | `\(\d+\.\d+(\.\d+)?\)` | **49 行** zh | ✘ **保留** |
+| 6 | en 行 < 40 字符 | — | **338 行**（IAEA `See X.` 存根，W1 内 0） | ✘ **排除**（勿改） |
+| 7 | **公式/数字 mojibake**（转换器在 token 内部插/删空格） | 精确模式三条（见下） | **7 行**：W1 3（本批已修）+ 集外 4 | ✔ 恢复性清扫 |
+
+- **类 7 精确模式**（经人工逐条判定；naive 模式（`[A-Za-z]\s+[A-Za-z]` 或 `[CL]\s[CL]`）误报率极高，**不得直接用**）：
+  1. `(?<![A-Za-z])[A-Za-z]\s+[a-z](?![A-Za-z])` — 字母+空格+单小写字母（`L i`、`H e`、`B m`）
+  2. `[A-Za-z]\s+[\u2070-\u209f]` — 字母+空格+上/下标（`H ₂`、`B ₀`）
+  3. `\d\s+\d\s*\.\s*\d` — 空格拆开的十进制（`1 7. 6`）
+  4. `(?<![A-Za-z])[A-Z]-[A-Z][a-z]{3,}(?![A-Za-z])` — 空格被删（`D-Treaction`）
+- **类 7 已知假阳性**（须在检测器中排除）：`Σ_T w_T·H_T`（合法数学记号，命中 `T w`）；英文散文（`half-life-t`、`risk`）；`1 V·s` / `4 K` / `5 b`（数字-单位间的合法空格，命中模式 1 的宽版）；`N-Particle`（`MCNP` 全称，合法）
+- **类 7 全清单（7 行）**：`dd-reaction`、`d-he3-reaction`、`dt-reaction`（**W1，本批已修**）；`breeder`、`mirror-ratio`（集外）；`dissociative-recombination`、`magnetic-mirror-configuration`（W2）
+- ⚠ **内容丢失变体**：`breeder` 的 `⁴ H e` 被转换器**整段删除**（残留 `L i + n → T + + 4. 8 M e V`，正反应为 `Li + n → T + ⁴He + 4.8 MeV`）——该类需**重建内容**而非仅去空格，W1 收尾清扫时须单独裁决
+- **检测器落地要求（W1 收尾，裁决 3=A）**：`scripts/registry_row_audit.py` 新增该类指标时须带 `--self-test` + **真实语料锚定**（含上列假阳性负例），并覆盖粘连形式；**不得**仅凭上述粗模式直接写入门禁

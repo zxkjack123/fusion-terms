@@ -1052,10 +1052,10 @@ d-shaped-plasma	zh	具有形似英文大写字母"D"形横截面的等离子体�
 debye-length	zh	德拜球半径 Debye sphere radius 一个电子受到一个给定的正离子电场影响的距离，它是等离子体中的一个特征长度，是电子电荷密度能够明显地区别于离子电荷密度的距离的量度。	GB/T-4960.9
 degenerate-configuration	zh	由简并磁力线形成的闭合磁位形，即磁力线在绕位形有限次数之后本身正好闭合的位形。	GB/T-4960.9
 density-limit	zh	稳定运行的磁约束装置中等离子体所能达到的最高密度。	GB/T-4960.9
-dd-reaction	zh	D-D反应 氘核间的聚变反应。 反应式为： D + D → n + ³ H e D + D → p + T 等概率地生成氦核/中子、氚/质子的同时释放能量。	GB/T-4960.9
-d-he3-reaction	zh	氘与氦之间发生的受控聚变反应，反应式为： D + ³ H e → p + ⁴ H e + 1 8. 4 M e V 注：因燃料没有放射性，且不直接产生中子，这种反应比氘-氚反应更具有安全和环保的优点。但聚变条件更高。	GB/T-4960.9
+dd-reaction	zh	D-D反应 氘核间的聚变反应。反应式为： D + D → n + ³He D + D → p + T 等概率地生成氦核/中子、氚/质子的同时释放能量。	GB/T-4960.9
+d-he3-reaction	zh	氘与氦之间发生的受控聚变反应，反应式为： D + ³He → p + ⁴He + 18.4 MeV 注：因燃料没有放射性，且不直接产生中子，这种反应比氘-氚反应更具有安全和环保的优点。但聚变条件更高。	GB/T-4960.9
 deuterium-tritium-plasma	zh	由氘和氚混合物形成的等离子体。	GB/T-4960.9
-dt-reaction	zh	目前最有希望实现聚变能应用的反应： D + T → n + ⁴ H e + 1 7. 6 M e V 又称D-T反应(D-Treaction)或氘-氚燃烧(D-Tburn)。	GB/T-4960.9
+dt-reaction	zh	目前最有希望实现聚变能应用的反应： D + T → n + ⁴He + 17.6 MeV 又称D-T反应(D-T reaction)或氘-氚燃烧(D-T burn)。	GB/T-4960.9
 diamagnetic-effect	zh	逆磁电流产生的磁场与原来的磁场方向相反，使通过等离子体的磁场强度减弱的效应。	GB/T-4960.9
 diamagnetic-plasma	zh	当磁通量穿过等离子体时，由于产生的感应电流形成一个反方向的磁通量，而使等离子体的磁通量减少。	GB/T-4960.9
 dispersion-relation	zh	等离子体波动或不稳定性的频率和波矢量之间的关系。	GB/T-4960.9
