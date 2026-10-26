@@ -77,10 +77,26 @@ definitions (``terms/registry/definitions.tsv``, 4-column schema)
                            reproduction rule); equals the headline value on the
                            pre-repair corpus.
 
+Gate profiles
+-------------
+``--expect-clean``
+    Gates the **W0 (Phase 0) structural set** only, which is exactly the metric
+    list of the plan's "Phase 0 完成定义" (``malformed=0, shifted=0, sixcol=0,
+    evidence_cols_non5=0, zh_en_corruption=0`` + the ``bad_category`` /
+    ``glued_source_rows`` structural gates).  The two definition-*quality*
+    metrics (``en_boilerplate``, ``concepts_without_defs``) are Phase 1 (W1)
+    deliverables and therefore cannot block Phase 0 completion; they are
+    reported in ``deferred_w1_metrics``.
+
+``--expect-clean-all``
+    Gates *every* metric (W0 structural + W1 quality).  This is the stricter
+    gate to run at Phase 1 completion; it is a superset of ``--expect-clean``,
+    so no metric is ever un-gated by the profile split.
+
 Exit codes
 ----------
-``0``  audit succeeded (and, with ``--expect-clean``, every gated metric is 0).
-``1``  ``--expect-clean`` found at least one non-zero gated metric.
+``0``  audit succeeded (and, with a gate flag, every gated metric is 0).
+``1``  the requested gate flag found at least one non-zero gated metric.
 ``2``  input error (missing/unreadable file).
 """
 
@@ -93,6 +109,7 @@ import locale
 import re
 import sys
 from pathlib import Path
+from typing import Any
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_CONCEPTS = REPO_ROOT / "terms" / "registry" / "concepts.tsv"
@@ -134,16 +151,30 @@ ZH_EN_CORRUPTION_MARKER = "指“en”"
 # `source` column polluted with a glued domain id (§F2).
 GLUED_SOURCE_RE = re.compile(r"^internal:dict-improvements:.+$")
 
-# Gated metrics for --expect-clean: every one of these must be 0 once repaired.
-CLEAN_METRICS = (
+# Phase 0 (W0) gate: pure structural integrity of the three registry tables.
+# This is exactly the metric list of the plan's "Phase 0 完成定义"
+# (`malformed=0, shifted=0, sixcol=0, evidence_cols_non5=0, zh_en_corruption=0`)
+# plus the two further structural gates (`bad_category`, `glued_source_rows`).
+W0_CLEAN_METRICS = (
     "concepts.malformed_cols",
     "concepts.bad_category",
     "evidence.non5_cols",
     "evidence.glued_source_rows",
-    "definitions.en_boilerplate",
     "definitions.zh_en_corruption",
+)
+
+# Definition-*quality* metrics that are Phase 1 (W1) deliverables: rewriting the
+# 746-row `en` boilerplate and authoring definitions for the 10 concepts that
+# have none.  Always reported by `--audit`, but gated only by
+# `--expect-clean-all`, because Phase 0 must be able to complete while these are
+# still non-zero (they are the W1 work set).
+W1_DEFERRED_METRICS = (
+    "definitions.en_boilerplate",
     "definitions.concepts_without_defs",
 )
+
+# Every gated metric (W0 structural + W1 deferred) — the `--expect-clean-all` set.
+CLEAN_METRICS = W0_CLEAN_METRICS + W1_DEFERRED_METRICS
 
 
 def iter_data_rows(path: Path):
@@ -359,13 +390,27 @@ def run_audit(concepts_path: Path, evidence_path: Path, definitions_path: Path) 
     evidence = audit_evidence(evidence_path)
     definitions = audit_definitions(definitions_path, active_ids, universe_ids)
 
-    metrics = {"concepts": concepts, "evidence": evidence, "definitions": definitions}
+    metrics: dict[str, Any] = {
+        "concepts": concepts,
+        "evidence": evidence,
+        "definitions": definitions,
+    }
     flat = _flatten(metrics)
     metrics["clean_metrics"] = flat
     metrics["non_zero_metrics"] = {
         key: value for key, value in flat.items() if value != 0
     }
     metrics["is_clean"] = not metrics["non_zero_metrics"]
+    # Gate profiles: W0 (structural, gates `--expect-clean`) and W1-deferred
+    # (definition quality, gates `--expect-clean-all` together with W0).
+    metrics["w0_clean_metrics"] = {key: flat.get(key, 0) for key in W0_CLEAN_METRICS}
+    metrics["w0_non_zero_metrics"] = {
+        key: value for key, value in metrics["w0_clean_metrics"].items() if value != 0
+    }
+    metrics["w0_is_clean"] = not metrics["w0_non_zero_metrics"]
+    metrics["deferred_w1_metrics"] = {
+        key: flat.get(key, 0) for key in W1_DEFERRED_METRICS
+    }
     return metrics
 
 
@@ -385,8 +430,18 @@ def _build_parser() -> argparse.ArgumentParser:
         "--expect-clean",
         action="store_true",
         help=(
-            "exit 0 only when every gated metric is 0; otherwise exit 1 and echo "
-            "the non-zero metrics on stderr"
+            "exit 0 only when every W0 (structural) gate metric is 0; otherwise "
+            "exit 1 and echo the non-zero metrics on stderr. Definition-quality "
+            "metrics (en_boilerplate, concepts_without_defs) are Phase 1 work and "
+            "are reported as deferred_w1_metrics instead of gated here."
+        ),
+    )
+    parser.add_argument(
+        "--expect-clean-all",
+        action="store_true",
+        help=(
+            "stricter gate: exit 0 only when every metric is 0, i.e. the W0 "
+            "structural set plus the W1 definition-quality metrics"
         ),
     )
     parser.add_argument(
@@ -441,10 +496,30 @@ def main(argv: list[str] | None = None) -> int:
         args.json.parent.mkdir(parents=True, exist_ok=True)
         args.json.write_text(payload + "\n", encoding="utf-8")
 
-    if args.expect_clean and not metrics["is_clean"]:
-        non_zero = metrics["non_zero_metrics"]
+    if args.expect_clean and not metrics["w0_is_clean"]:
+        non_zero = metrics["w0_non_zero_metrics"]
         print(
             f"registry_row_audit: --expect-clean FAILED — "
+            f"{len(non_zero)} non-zero W0 structural metric(s):",
+            file=sys.stderr,
+        )
+        for key in W0_CLEAN_METRICS:
+            if key in non_zero:
+                print(f"  {key} = {non_zero[key]}", file=sys.stderr)
+        deferred = {k: v for k, v in metrics["deferred_w1_metrics"].items() if v != 0}
+        if deferred:
+            print(
+                "  (deferred to W1, not gated here: "
+                + ", ".join(f"{k} = {v}" for k, v in deferred.items())
+                + ")",
+                file=sys.stderr,
+            )
+        return 1
+
+    if args.expect_clean_all and not metrics["is_clean"]:
+        non_zero = metrics["non_zero_metrics"]
+        print(
+            f"registry_row_audit: --expect-clean-all FAILED — "
             f"{len(non_zero)} non-zero metric(s):",
             file=sys.stderr,
         )
