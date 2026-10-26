@@ -269,7 +269,7 @@ dones	internal:engineering:DONES			2026-03-16
 fusion-neutron	internal:engineering:DT-neutron			2026-03-16
 
 cfetr	internal:CFETRCOOLACT:CFETR			2026-03-16
-cfetr-design	https://doi.org/10.1088/1741-4326/ab0c68
+cfetr-design	https://doi.org/10.1088/1741-4326/ab0c68			2026-10-26
 demo	https://en.wikipedia.org/wiki/DEMOnstration_Power_Plant			2026-03-16
 jet	https://en.wikipedia.org/wiki/Joint_European_Torus			2026-03-16
 jt-60sa	https://en.wikipedia.org/wiki/JT-60			2026-03-16
@@ -308,7 +308,7 @@ resonant-magnetic-perturbation	internal:plasma-control:RMP			2026-03-16
 quiescent-h-mode	internal:plasma-control:QH-mode			2026-03-16
 disruption-prediction	internal:plasma-control:disruption			2026-03-16
 disruption-mitigation	internal:plasma-control:disruption			2026-03-16
-mitigation	internal:domain-convention-zh-mitigation
+mitigation	internal:domain-convention-zh-mitigation			2026-10-26
 shattered-pellet-injection	internal:plasma-control:disruption			2026-03-16
 massive-gas-injection	internal:plasma-control:disruption			2026-03-16
 impurity-transport	internal:plasma-physics:transport			2026-03-16
@@ -1537,15 +1537,15 @@ surface-morphology	internal:registry-gap-review:pwi-antipattern-p4	Post-exposure
 hydrogen-embrittlement	internal:registry-gap-review:pwi-antipattern-p5	Hydrogen-induced ductility loss in metals	copilot	2026-04-14
 hot-cathode-ion-gauge	internal:registry-gap-review:substitute-supplement	Hot-cathode ionization gauge for vacuum measurement	copilot	2026-04-14
 diamagnetic-flux-signal	internal:registry-gap-review:substitute-supplement	Plasma stored energy signal from diamagnetic loop	copilot	2026-04-14
-coolant	internal:dict-improvements:cool-sco2-tritium-breeding	Generic coolant working fluid concept	copilot	2026-04-16
-first-wall-cooling	internal:dict-improvements:cool-sco2-tritium-breeding	Cooling concept for first wall PFC structures	copilot	2026-04-16
-supercritical-co2	internal:dict-improvements:cool-sco2-tritium-breeding	Supercritical CO2 working fluid concept	copilot	2026-04-16
-recuperator	internal:dict-improvements:cool-sco2-tritium-breeding	Heat recovery exchanger in Brayton/sCO2 cycles	copilot	2026-04-16
-recompression-brayton-cycle	internal:dict-improvements:cool-sco2-tritium-breeding	Recompression variant of sCO2 Brayton cycle	copilot	2026-04-16
-tritium-breeding	internal:dict-improvements:cool-sco2-tritium-breeding	Tritium generation process in lithium-containing blanket	copilot	2026-04-16
-lithium-6-enrichment	internal:dict-improvements:cool-sco2-tritium-breeding	Li-6 enrichment to improve breeding performance	copilot	2026-04-16
-packing-fraction	internal:dict-improvements:cool-sco2-tritium-breeding	Pebble bed packing fraction metric	copilot	2026-04-16
-tritium-production-rate	internal:dict-improvements:cool-sco2-tritium-breeding	Production rate metric for bred tritium	copilot	2026-04-16
+coolant	internal:dict-improvements	Generic coolant working fluid concept | domain: cool-sco2-tritium-breeding	copilot	2026-04-16
+first-wall-cooling	internal:dict-improvements	Cooling concept for first wall PFC structures | domain: cool-sco2-tritium-breeding	copilot	2026-04-16
+supercritical-co2	internal:dict-improvements	Supercritical CO2 working fluid concept | domain: cool-sco2-tritium-breeding	copilot	2026-04-16
+recuperator	internal:dict-improvements	Heat recovery exchanger in Brayton/sCO2 cycles | domain: cool-sco2-tritium-breeding	copilot	2026-04-16
+recompression-brayton-cycle	internal:dict-improvements	Recompression variant of sCO2 Brayton cycle | domain: cool-sco2-tritium-breeding	copilot	2026-04-16
+tritium-breeding	internal:dict-improvements	Tritium generation process in lithium-containing blanket | domain: cool-sco2-tritium-breeding	copilot	2026-04-16
+lithium-6-enrichment	internal:dict-improvements	Li-6 enrichment to improve breeding performance | domain: cool-sco2-tritium-breeding	copilot	2026-04-16
+packing-fraction	internal:dict-improvements	Pebble bed packing fraction metric | domain: cool-sco2-tritium-breeding	copilot	2026-04-16
+tritium-production-rate	internal:dict-improvements	Production rate metric for bred tritium | domain: cool-sco2-tritium-breeding	copilot	2026-04-16
 additional-heating	https://www.iter.org/fusion-glossary		import_approved_terms	2026-04-14
 aditya-u	https://www.iter.org/fusion-glossary		import_approved_terms	2026-04-14
 alcator-c-mod	https://www.iter.org/fusion-glossary		import_approved_terms	2026-04-14
@@ -2784,425 +2784,425 @@ tritium-processing	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1
 wall-loading	https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=FF51ABCCA1C1EED80A07C8B73E80C1F8		import_approved_terms	2026-04-14
 
 # ==== Fusion Pathway Coverage Expansion (2026-04-17) ====
-boozer-coordinates	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-effective-ripple	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-quasi-poloidal-symmetry	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-omnigeneity	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-bounce-averaged-drift	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-vmec	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-desc	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-simsopt	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-torsatron	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-heliac	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-ncsx	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-w7-as	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-winding-surface	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-type-one-energy	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-proxima-fusion	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-renaissance-fusion	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-frc-stability	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-frc-lifetime-scaling	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-open-field-line	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-flux-closure	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-c-2u	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-helion-trenta	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-pulsed-non-ignition	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-end-plug	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-end-loss	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-ioffe-bars	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-baseball-coil	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-gas-dynamic-trap	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-gamma-10	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-wham	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-axisymmetric-mirror	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-multiple-mirror	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-direct-energy-converter	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-reata-engineering	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-magnetized-target-fusion	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-liner-implosion	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-plasma-liner	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-acoustic-driver	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-general-fusion	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-hyperjet-fusion	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-zap-energy	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-sheared-flow-z-pinch	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-inertial-fusion-energy	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-target-gain	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-repetition-rate	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-target-injection	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-cbet	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-stimulated-brillouin-scattering	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-stimulated-raman-scattering	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-maglif	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-z-machine	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-first-light-fusion	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-focused-energy	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-xcimer-energy	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-center-column	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-cs-free-startup	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-merging-compression	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-high-elongation	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-tokamak-energy	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-start-device	internal:dict-improvements:fusion-pathway-expansion		manual	2026-04-17
-energy-singularity	internal:dict-improvements:private-fusion-companies		manual	2026-04-17
-kyoto-fusioneering	internal:dict-improvements:private-fusion-companies		manual	2026-04-17
-marvel-fusion	internal:dict-improvements:private-fusion-companies		manual	2026-04-17
-shine-technologies	internal:dict-improvements:private-fusion-companies		manual	2026-04-17
-nt-tao	internal:dict-improvements:private-fusion-companies		manual	2026-04-17
-ex-fusion	internal:dict-improvements:private-fusion-companies		manual	2026-04-17
-blue-laser-fusion	internal:dict-improvements:private-fusion-companies		manual	2026-04-17
-novatron	internal:dict-improvements:private-fusion-companies		manual	2026-04-17
-thea-energy	internal:dict-improvements:private-fusion-companies		manual	2026-04-17
-openstar-technologies	internal:dict-improvements:private-fusion-companies		manual	2026-04-17
-gauss-fusion	internal:dict-improvements:private-fusion-companies		manual	2026-04-17
-helicity-space	internal:dict-improvements:private-fusion-companies		manual	2026-04-17
-kronos-fusion-energy	internal:dict-improvements:private-fusion-companies		manual	2026-04-17
-princeton-stellarators	internal:dict-improvements:private-fusion-companies		manual	2026-04-17
-fusion-industry-association	internal:dict-improvements:fusion-commercialization		manual	2026-04-17
-first-plasma	internal:dict-improvements:fusion-commercialization		manual	2026-04-17
-net-electricity	internal:dict-improvements:fusion-commercialization		manual	2026-04-17
-fusion-demonstrator	internal:dict-improvements:fusion-commercialization		manual	2026-04-17
-modular-fusion-reactor	internal:dict-improvements:fusion-commercialization		manual	2026-04-17
-isotope-production	internal:dict-improvements:fusion-commercialization		manual	2026-04-17
-fusion-neutron-application	internal:dict-improvements:fusion-commercialization		manual	2026-04-17
-private-fusion-investment	internal:dict-improvements:fusion-commercialization		manual	2026-04-17
-recirculating-power-fraction	internal:dict-improvements:fusion-commercialization-physics		manual	2026-04-17
-plant-efficiency	internal:dict-improvements:fusion-commercialization-physics		manual	2026-04-17
-scientific-q	internal:dict-improvements:fusion-commercialization-physics		manual	2026-04-17
-engineering-q	internal:dict-improvements:fusion-commercialization-physics		manual	2026-04-17
-compact-fusion	internal:dict-improvements:fusion-commercialization-physics		manual	2026-04-17
-high-field-approach	internal:dict-improvements:fusion-commercialization-physics		manual	2026-04-17
-alternative-confinement	internal:dict-improvements:fusion-commercialization-physics		manual	2026-04-17
-techno-economic-analysis	internal:dict-improvements:fusion-commercialization-physics		manual	2026-04-17
-milestone-based-development	internal:dict-improvements:fusion-commercialization-physics		manual	2026-04-17
-public-private-partnership	internal:dict-improvements:fusion-commercialization-physics		manual	2026-04-17
-arpa-e	internal:dict-improvements:fusion-commercialization-physics		manual	2026-04-17
-fusion-energy-sciences	internal:dict-improvements:fusion-commercialization-physics		manual	2026-04-17
-baseload	internal:dict-improvements:power-balance-grid		manual	2026-04-17
-load-following	internal:dict-improvements:power-balance-grid		manual	2026-04-17
-dispatchable	internal:dict-improvements:power-balance-grid		manual	2026-04-17
-grid-integration	internal:dict-improvements:power-balance-grid		manual	2026-04-17
-capital-cost	internal:dict-improvements:power-balance-grid		manual	2026-04-17
-overnight-cost	internal:dict-improvements:power-balance-grid		manual	2026-04-17
-construction-cost	internal:dict-improvements:power-balance-grid		manual	2026-04-17
-availability-factor	internal:dict-improvements:power-balance-grid		manual	2026-04-17
-magnet-power	internal:dict-improvements:power-balance-grid		manual	2026-04-17
-cryogenic-power	internal:dict-improvements:power-balance-grid		manual	2026-04-17
-pumping-power	internal:dict-improvements:power-balance-grid		manual	2026-04-17
-current-drive-power	internal:dict-improvements:power-balance-grid		manual	2026-04-17
-licensing-pathway	internal:dict-improvements:licensing-regulatory		manual	2026-04-17
-fusion-regulation	internal:dict-improvements:licensing-regulatory		manual	2026-04-17
-public-dose	internal:dict-improvements:licensing-regulatory		manual	2026-04-17
-site-boundary-dose	internal:dict-improvements:licensing-regulatory		manual	2026-04-17
-activated-waste	internal:dict-improvements:licensing-regulatory		manual	2026-04-17
-recycling-limit	internal:dict-improvements:licensing-regulatory		manual	2026-04-17
-deterministic-safety-analysis	internal:dict-improvements:licensing-regulatory		manual	2026-04-17
-hts-magnet	internal:dict-improvements:magnets-industrialization		manual	2026-04-17
-demountable-coil	internal:dict-improvements:magnets-industrialization		manual	2026-04-17
-jointed-magnet	internal:dict-improvements:magnets-industrialization		manual	2026-04-17
-no-insulation-coil	internal:dict-improvements:magnets-industrialization		manual	2026-04-17
-high-field-magnet	internal:dict-improvements:magnets-industrialization		manual	2026-04-17
-equilibrium-field-coil	internal:dict-improvements:magnets-industrialization		manual	2026-04-17
-commercial-fusion	internal:dict-improvements:magnets-industrialization		manual	2026-04-17
-manufacturing-readiness-level	internal:dict-improvements:magnets-industrialization		manual	2026-04-17
-a-fns	internal:dict-improvements:magnets-industrialization		manual	2026-04-17
-elm-control	internal:dict-improvements:plasma-control		manual	2026-04-17
-rmp-coil	internal:dict-improvements:plasma-control		manual	2026-04-17
-plasma-shape-control	internal:dict-improvements:plasma-control		manual	2026-04-17
-scenario-development	internal:dict-improvements:plasma-control		manual	2026-04-17
-tritium-doubling-time	internal:dict-improvements:tritium-fuel-cycle-metrics		manual	2026-04-17
-tritium-processing-time	internal:dict-improvements:tritium-fuel-cycle-metrics		manual	2026-04-17
-tritium-inventory-control	internal:dict-improvements:tritium-fuel-cycle-metrics		manual	2026-04-17
-tritium-confinement	internal:dict-improvements:tritium-fuel-cycle-metrics		manual	2026-04-17
-direct-internal-recycling	internal:dict-improvements:tritium-fuel-cycle-metrics		manual	2026-04-17
-neutron-economy	internal:dict-improvements:tritium-fuel-cycle-metrics		manual	2026-04-17
-dust-safety	internal:dict-improvements:tritium-fuel-cycle-metrics		manual	2026-04-17
-neutron-irradiation-facility	internal:dict-improvements:irradiation-testing		manual	2026-04-17
-volumetric-neutron-source	internal:dict-improvements:irradiation-testing		manual	2026-04-17
-accelerator-based-neutron-source	internal:dict-improvements:irradiation-testing		manual	2026-04-17
-irradiation-campaign	internal:dict-improvements:irradiation-testing		manual	2026-04-17
-irradiation-capsule	internal:dict-improvements:irradiation-testing		manual	2026-04-17
-dpa-rate	internal:dict-improvements:irradiation-testing		manual	2026-04-17
-fusion-power-density	internal:dict-improvements:plasma-performance-metrics		manual	2026-04-17
-heating-power	internal:dict-improvements:plasma-performance-metrics		manual	2026-04-17
-hydrogen-retention	internal:dict-improvements:pwi-materials		manual	2026-04-17
-erosion-redeposition	internal:dict-improvements:pwi-materials		manual	2026-04-17
-hydrogen-isotope-exchange	internal:dict-improvements:pwi-materials		manual	2026-04-17
-first-wall-lifetime	internal:dict-improvements:pwi-materials		manual	2026-04-17
-systems-engineering	internal:dict-improvements:systems-engineering-plant	manual	2026-04-17
-reliability-engineering	internal:dict-improvements:systems-engineering-plant	manual	2026-04-17
-rams-analysis	internal:dict-improvements:systems-engineering-plant	manual	2026-04-17
-nuclear-island	internal:dict-improvements:systems-engineering-plant	manual	2026-04-17
-conventional-island	internal:dict-improvements:systems-engineering-plant	manual	2026-04-17
-turbine-island	internal:dict-improvements:systems-engineering-plant	manual	2026-04-17
-environmental-impact-assessment	internal:dict-improvements:systems-engineering-plant	manual	2026-04-17
-digital-engineering	internal:dict-improvements:systems-engineering-plant	manual	2026-04-17
-mean-time-between-failures	internal:dict-improvements:systems-engineering-plant	manual	2026-04-17
-eu-demo	internal:dict-improvements:major-reactor-programs	manual	2026-04-17
-k-demo	internal:dict-improvements:major-reactor-programs	manual	2026-04-17
-iter-organization	internal:dict-improvements:major-reactor-programs	manual	2026-04-17
-us-burning-plasma	internal:dict-improvements:major-reactor-programs	manual	2026-04-17
-plasma-exhaust	internal:dict-improvements:divertor-physics-supplement	manual	2026-04-17
-heat-flux-limit	internal:dict-improvements:divertor-physics-supplement	manual	2026-04-17
-partial-detachment	internal:dict-improvements:divertor-physics-supplement	manual	2026-04-17
-reduced-order-model	internal:dict-improvements:computational-methods	manual	2026-04-17
-multi-physics-coupling	internal:dict-improvements:computational-methods	manual	2026-04-17
-multi-scale-modeling	internal:dict-improvements:computational-methods	manual	2026-04-17
-design-optimization	internal:dict-improvements:computational-methods	manual	2026-04-17
+boozer-coordinates	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+effective-ripple	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+quasi-poloidal-symmetry	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+omnigeneity	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+bounce-averaged-drift	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+vmec	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+desc	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+simsopt	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+torsatron	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+heliac	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+ncsx	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+w7-as	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+winding-surface	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+type-one-energy	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+proxima-fusion	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+renaissance-fusion	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+frc-stability	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+frc-lifetime-scaling	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+open-field-line	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+flux-closure	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+c-2u	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+helion-trenta	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+pulsed-non-ignition	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+end-plug	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+end-loss	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+ioffe-bars	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+baseball-coil	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+gas-dynamic-trap	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+gamma-10	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+wham	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+axisymmetric-mirror	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+multiple-mirror	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+direct-energy-converter	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+reata-engineering	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+magnetized-target-fusion	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+liner-implosion	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+plasma-liner	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+acoustic-driver	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+general-fusion	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+hyperjet-fusion	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+zap-energy	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+sheared-flow-z-pinch	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+inertial-fusion-energy	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+target-gain	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+repetition-rate	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+target-injection	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+cbet	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+stimulated-brillouin-scattering	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+stimulated-raman-scattering	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+maglif	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+z-machine	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+first-light-fusion	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+focused-energy	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+xcimer-energy	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+center-column	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+cs-free-startup	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+merging-compression	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+high-elongation	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+tokamak-energy	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+start-device	internal:dict-improvements	domain: fusion-pathway-expansion	manual	2026-04-17
+energy-singularity	internal:dict-improvements	domain: private-fusion-companies	manual	2026-04-17
+kyoto-fusioneering	internal:dict-improvements	domain: private-fusion-companies	manual	2026-04-17
+marvel-fusion	internal:dict-improvements	domain: private-fusion-companies	manual	2026-04-17
+shine-technologies	internal:dict-improvements	domain: private-fusion-companies	manual	2026-04-17
+nt-tao	internal:dict-improvements	domain: private-fusion-companies	manual	2026-04-17
+ex-fusion	internal:dict-improvements	domain: private-fusion-companies	manual	2026-04-17
+blue-laser-fusion	internal:dict-improvements	domain: private-fusion-companies	manual	2026-04-17
+novatron	internal:dict-improvements	domain: private-fusion-companies	manual	2026-04-17
+thea-energy	internal:dict-improvements	domain: private-fusion-companies	manual	2026-04-17
+openstar-technologies	internal:dict-improvements	domain: private-fusion-companies	manual	2026-04-17
+gauss-fusion	internal:dict-improvements	domain: private-fusion-companies	manual	2026-04-17
+helicity-space	internal:dict-improvements	domain: private-fusion-companies	manual	2026-04-17
+kronos-fusion-energy	internal:dict-improvements	domain: private-fusion-companies	manual	2026-04-17
+princeton-stellarators	internal:dict-improvements	domain: private-fusion-companies	manual	2026-04-17
+fusion-industry-association	internal:dict-improvements	domain: fusion-commercialization	manual	2026-04-17
+first-plasma	internal:dict-improvements	domain: fusion-commercialization	manual	2026-04-17
+net-electricity	internal:dict-improvements	domain: fusion-commercialization	manual	2026-04-17
+fusion-demonstrator	internal:dict-improvements	domain: fusion-commercialization	manual	2026-04-17
+modular-fusion-reactor	internal:dict-improvements	domain: fusion-commercialization	manual	2026-04-17
+isotope-production	internal:dict-improvements	domain: fusion-commercialization	manual	2026-04-17
+fusion-neutron-application	internal:dict-improvements	domain: fusion-commercialization	manual	2026-04-17
+private-fusion-investment	internal:dict-improvements	domain: fusion-commercialization	manual	2026-04-17
+recirculating-power-fraction	internal:dict-improvements	domain: fusion-commercialization-physics	manual	2026-04-17
+plant-efficiency	internal:dict-improvements	domain: fusion-commercialization-physics	manual	2026-04-17
+scientific-q	internal:dict-improvements	domain: fusion-commercialization-physics	manual	2026-04-17
+engineering-q	internal:dict-improvements	domain: fusion-commercialization-physics	manual	2026-04-17
+compact-fusion	internal:dict-improvements	domain: fusion-commercialization-physics	manual	2026-04-17
+high-field-approach	internal:dict-improvements	domain: fusion-commercialization-physics	manual	2026-04-17
+alternative-confinement	internal:dict-improvements	domain: fusion-commercialization-physics	manual	2026-04-17
+techno-economic-analysis	internal:dict-improvements	domain: fusion-commercialization-physics	manual	2026-04-17
+milestone-based-development	internal:dict-improvements	domain: fusion-commercialization-physics	manual	2026-04-17
+public-private-partnership	internal:dict-improvements	domain: fusion-commercialization-physics	manual	2026-04-17
+arpa-e	internal:dict-improvements	domain: fusion-commercialization-physics	manual	2026-04-17
+fusion-energy-sciences	internal:dict-improvements	domain: fusion-commercialization-physics	manual	2026-04-17
+baseload	internal:dict-improvements	domain: power-balance-grid	manual	2026-04-17
+load-following	internal:dict-improvements	domain: power-balance-grid	manual	2026-04-17
+dispatchable	internal:dict-improvements	domain: power-balance-grid	manual	2026-04-17
+grid-integration	internal:dict-improvements	domain: power-balance-grid	manual	2026-04-17
+capital-cost	internal:dict-improvements	domain: power-balance-grid	manual	2026-04-17
+overnight-cost	internal:dict-improvements	domain: power-balance-grid	manual	2026-04-17
+construction-cost	internal:dict-improvements	domain: power-balance-grid	manual	2026-04-17
+availability-factor	internal:dict-improvements	domain: power-balance-grid	manual	2026-04-17
+magnet-power	internal:dict-improvements	domain: power-balance-grid	manual	2026-04-17
+cryogenic-power	internal:dict-improvements	domain: power-balance-grid	manual	2026-04-17
+pumping-power	internal:dict-improvements	domain: power-balance-grid	manual	2026-04-17
+current-drive-power	internal:dict-improvements	domain: power-balance-grid	manual	2026-04-17
+licensing-pathway	internal:dict-improvements	domain: licensing-regulatory	manual	2026-04-17
+fusion-regulation	internal:dict-improvements	domain: licensing-regulatory	manual	2026-04-17
+public-dose	internal:dict-improvements	domain: licensing-regulatory	manual	2026-04-17
+site-boundary-dose	internal:dict-improvements	domain: licensing-regulatory	manual	2026-04-17
+activated-waste	internal:dict-improvements	domain: licensing-regulatory	manual	2026-04-17
+recycling-limit	internal:dict-improvements	domain: licensing-regulatory	manual	2026-04-17
+deterministic-safety-analysis	internal:dict-improvements	domain: licensing-regulatory	manual	2026-04-17
+hts-magnet	internal:dict-improvements	domain: magnets-industrialization	manual	2026-04-17
+demountable-coil	internal:dict-improvements	domain: magnets-industrialization	manual	2026-04-17
+jointed-magnet	internal:dict-improvements	domain: magnets-industrialization	manual	2026-04-17
+no-insulation-coil	internal:dict-improvements	domain: magnets-industrialization	manual	2026-04-17
+high-field-magnet	internal:dict-improvements	domain: magnets-industrialization	manual	2026-04-17
+equilibrium-field-coil	internal:dict-improvements	domain: magnets-industrialization	manual	2026-04-17
+commercial-fusion	internal:dict-improvements	domain: magnets-industrialization	manual	2026-04-17
+manufacturing-readiness-level	internal:dict-improvements	domain: magnets-industrialization	manual	2026-04-17
+a-fns	internal:dict-improvements	domain: magnets-industrialization	manual	2026-04-17
+elm-control	internal:dict-improvements	domain: plasma-control	manual	2026-04-17
+rmp-coil	internal:dict-improvements	domain: plasma-control	manual	2026-04-17
+plasma-shape-control	internal:dict-improvements	domain: plasma-control	manual	2026-04-17
+scenario-development	internal:dict-improvements	domain: plasma-control	manual	2026-04-17
+tritium-doubling-time	internal:dict-improvements	domain: tritium-fuel-cycle-metrics	manual	2026-04-17
+tritium-processing-time	internal:dict-improvements	domain: tritium-fuel-cycle-metrics	manual	2026-04-17
+tritium-inventory-control	internal:dict-improvements	domain: tritium-fuel-cycle-metrics	manual	2026-04-17
+tritium-confinement	internal:dict-improvements	domain: tritium-fuel-cycle-metrics	manual	2026-04-17
+direct-internal-recycling	internal:dict-improvements	domain: tritium-fuel-cycle-metrics	manual	2026-04-17
+neutron-economy	internal:dict-improvements	domain: tritium-fuel-cycle-metrics	manual	2026-04-17
+dust-safety	internal:dict-improvements	domain: tritium-fuel-cycle-metrics	manual	2026-04-17
+neutron-irradiation-facility	internal:dict-improvements	domain: irradiation-testing	manual	2026-04-17
+volumetric-neutron-source	internal:dict-improvements	domain: irradiation-testing	manual	2026-04-17
+accelerator-based-neutron-source	internal:dict-improvements	domain: irradiation-testing	manual	2026-04-17
+irradiation-campaign	internal:dict-improvements	domain: irradiation-testing	manual	2026-04-17
+irradiation-capsule	internal:dict-improvements	domain: irradiation-testing	manual	2026-04-17
+dpa-rate	internal:dict-improvements	domain: irradiation-testing	manual	2026-04-17
+fusion-power-density	internal:dict-improvements	domain: plasma-performance-metrics	manual	2026-04-17
+heating-power	internal:dict-improvements	domain: plasma-performance-metrics	manual	2026-04-17
+hydrogen-retention	internal:dict-improvements	domain: pwi-materials	manual	2026-04-17
+erosion-redeposition	internal:dict-improvements	domain: pwi-materials	manual	2026-04-17
+hydrogen-isotope-exchange	internal:dict-improvements	domain: pwi-materials	manual	2026-04-17
+first-wall-lifetime	internal:dict-improvements	domain: pwi-materials	manual	2026-04-17
+systems-engineering	internal:dict-improvements	domain: systems-engineering-plant	manual	2026-04-17
+reliability-engineering	internal:dict-improvements	domain: systems-engineering-plant	manual	2026-04-17
+rams-analysis	internal:dict-improvements	domain: systems-engineering-plant	manual	2026-04-17
+nuclear-island	internal:dict-improvements	domain: systems-engineering-plant	manual	2026-04-17
+conventional-island	internal:dict-improvements	domain: systems-engineering-plant	manual	2026-04-17
+turbine-island	internal:dict-improvements	domain: systems-engineering-plant	manual	2026-04-17
+environmental-impact-assessment	internal:dict-improvements	domain: systems-engineering-plant	manual	2026-04-17
+digital-engineering	internal:dict-improvements	domain: systems-engineering-plant	manual	2026-04-17
+mean-time-between-failures	internal:dict-improvements	domain: systems-engineering-plant	manual	2026-04-17
+eu-demo	internal:dict-improvements	domain: major-reactor-programs	manual	2026-04-17
+k-demo	internal:dict-improvements	domain: major-reactor-programs	manual	2026-04-17
+iter-organization	internal:dict-improvements	domain: major-reactor-programs	manual	2026-04-17
+us-burning-plasma	internal:dict-improvements	domain: major-reactor-programs	manual	2026-04-17
+plasma-exhaust	internal:dict-improvements	domain: divertor-physics-supplement	manual	2026-04-17
+heat-flux-limit	internal:dict-improvements	domain: divertor-physics-supplement	manual	2026-04-17
+partial-detachment	internal:dict-improvements	domain: divertor-physics-supplement	manual	2026-04-17
+reduced-order-model	internal:dict-improvements	domain: computational-methods	manual	2026-04-17
+multi-physics-coupling	internal:dict-improvements	domain: computational-methods	manual	2026-04-17
+multi-scale-modeling	internal:dict-improvements	domain: computational-methods	manual	2026-04-17
+design-optimization	internal:dict-improvements	domain: computational-methods	manual	2026-04-17
 digital-twin	internal:expansion:batch-44	Digital twin concept	copilot	2026-03-19
-commercialization-pathway	internal:dict-improvements:commercialization-economics	manual	2026-04-17
-social-license	internal:dict-improvements:commercialization-economics	manual	2026-04-17
-fusion-industry	internal:dict-improvements:commercialization-economics	manual	2026-04-17
-workforce-development	internal:dict-improvements:commercialization-economics	manual	2026-04-17
-venture-capital	internal:dict-improvements:commercialization-economics	manual	2026-04-17
-private-investment	internal:dict-improvements:commercialization-economics	manual	2026-04-17
-disruption-mitigation-system	internal:dict-improvements:disruption-events	manual	2026-04-17
-disruption-force	internal:dict-improvements:disruption-events	manual	2026-04-17
-disruption-runaway	internal:dict-improvements:disruption-events	manual	2026-04-17
-in-vessel-inspection	internal:dict-improvements:remote-maintenance	manual	2026-04-17
-manipulator	internal:dict-improvements:remote-maintenance	manual	2026-04-17
-end-effector	internal:dict-improvements:remote-maintenance	manual	2026-04-17
-blanket-replacement	internal:dict-improvements:remote-maintenance	manual	2026-04-17
-cassette-replacement	internal:dict-improvements:remote-maintenance	manual	2026-04-17
-energy-security	internal:dict-improvements:energy-policy-sustainability	manual	2026-04-17
-decarbonization	internal:dict-improvements:energy-policy-sustainability	manual	2026-04-17
-grid-stability	internal:dict-improvements:energy-policy-sustainability	manual	2026-04-17
-proliferation-resistance	internal:dict-improvements:energy-policy-sustainability	manual	2026-04-17
-fusion-safety-advantage	internal:dict-improvements:energy-policy-sustainability	manual	2026-04-17
-clean-energy	internal:dict-improvements:energy-policy-sustainability	manual	2026-04-17
-net-zero	internal:dict-improvements:energy-policy-sustainability	manual	2026-04-17
-dual-coolant	internal:dict-improvements:coolant-systems	manual	2026-04-17
-self-cooled	internal:dict-improvements:coolant-systems	manual	2026-04-17
-scll	internal:dict-improvements:coolant-systems	manual	2026-04-17
-coolant-compatibility	internal:dict-improvements:coolant-systems	manual	2026-04-17
-life-cycle-assessment	internal:dict-improvements:environmental-lifecycle	manual	2026-04-17
-carbon-footprint	internal:dict-improvements:environmental-lifecycle	manual	2026-04-17
-recycling-rate	internal:dict-improvements:environmental-lifecycle	manual	2026-04-17
-decay-storage	internal:dict-improvements:environmental-lifecycle	manual	2026-04-17
-water-use	internal:dict-improvements:environmental-lifecycle	manual	2026-04-17
-wall-plug-efficiency	internal:dict-improvements:supplemental-physics-diagnostics	manual	2026-04-17
-heating-and-current-drive	internal:dict-improvements:supplemental-physics-diagnostics	manual	2026-04-17
-calorimetry	internal:dict-improvements:supplemental-physics-diagnostics	manual	2026-04-17
-structural-material	internal:dict-improvements:fusion-materials-extended	manual	2026-04-18
-armor-material	internal:dict-improvements:fusion-materials-extended	manual	2026-04-18
-nano-structured-ferritic-alloy	internal:dict-improvements:fusion-materials-extended	manual	2026-04-18
-tungsten-fiber-composite	internal:dict-improvements:fusion-materials-extended	manual	2026-04-18
-tungsten-laminate	internal:dict-improvements:fusion-materials-extended	manual	2026-04-18
-nuclear-heating-rate	internal:dict-improvements:neutronics-irradiation-supplement	manual	2026-04-18
-transmutation-rate	internal:dict-improvements:neutronics-irradiation-supplement	manual	2026-04-18
-primary-knock-on-atom	internal:dict-improvements:neutronics-irradiation-supplement	manual	2026-04-18
-gas-production	internal:dict-improvements:neutronics-irradiation-supplement	manual	2026-04-18
-appm	internal:dict-improvements:neutronics-irradiation-supplement	manual	2026-04-18
-energy-confinement	internal:dict-improvements:confinement-transport	manual	2026-04-18
-particle-confinement	internal:dict-improvements:confinement-transport	manual	2026-04-18
-impurity-confinement	internal:dict-improvements:confinement-transport	manual	2026-04-18
-momentum-confinement	internal:dict-improvements:confinement-transport	manual	2026-04-18
-fuel-processing	internal:dict-improvements:fuel-cycle-extended	manual	2026-04-18
-deuterium-extraction	internal:dict-improvements:fuel-cycle-extended	manual	2026-04-18
-pumping-speed	internal:dict-improvements:vacuum-pumping	manual	2026-04-18
-vacuum-leak	internal:dict-improvements:vacuum-pumping	manual	2026-04-18
-leak-rate	internal:dict-improvements:vacuum-pumping	manual	2026-04-18
-torus-exhaust	internal:dict-improvements:vacuum-pumping	manual	2026-04-18
-coil-case	internal:dict-improvements:magnet-engineering-supplement	manual	2026-04-18
-quench-propagation	internal:dict-improvements:magnet-engineering-supplement	manual	2026-04-18
-training-quench	internal:dict-improvements:magnet-engineering-supplement	manual	2026-04-18
-high-field-side	internal:dict-improvements:magnet-engineering-supplement	manual	2026-04-18
-neutron-multiplier-zone	internal:dict-improvements:blanket-structure-detail	manual	2026-04-18
-first-wall-panel	internal:dict-improvements:blanket-structure-detail	manual	2026-04-18
-back-supporting-structure	internal:dict-improvements:blanket-structure-detail	manual	2026-04-18
-stiffening-grid	internal:dict-improvements:blanket-structure-detail	manual	2026-04-18
-evaluated-nuclear-data	internal:dict-improvements:nuclear-data-libraries	manual	2026-04-18
-cross-section-library	internal:dict-improvements:nuclear-data-libraries	manual	2026-04-18
-reaction-rate-library	internal:dict-improvements:nuclear-data-libraries	manual	2026-04-18
-decay-data-library	internal:dict-improvements:nuclear-data-libraries	manual	2026-04-18
-thermocouple	internal:dict-improvements:instrumentation-measurement	manual	2026-04-18
-strain-gauge	internal:dict-improvements:instrumentation-measurement	manual	2026-04-18
-neutron-flux-monitor	internal:dict-improvements:instrumentation-measurement	manual	2026-04-18
-flowmeter	internal:dict-improvements:instrumentation-measurement	manual	2026-04-18
-tungsten-inert-gas-welding	internal:dict-improvements:joining-fabrication	manual	2026-04-18
-laser-welding	internal:dict-improvements:joining-fabrication	manual	2026-04-18
-dissimilar-metal-weld	internal:dict-improvements:joining-fabrication	manual	2026-04-18
-weld-inspection	internal:dict-improvements:joining-fabrication	manual	2026-04-18
-nucleate-boiling	internal:dict-improvements:thermal-hydraulics-supplement	manual	2026-04-18
-film-boiling	internal:dict-improvements:thermal-hydraulics-supplement	manual	2026-04-18
-departure-from-nucleate-boiling	internal:dict-improvements:thermal-hydraulics-supplement	manual	2026-04-18
-thermal-stratification	internal:dict-improvements:thermal-hydraulics-supplement	manual	2026-04-18
-learning-curve	internal:dict-improvements:fusion-economics-supplement	manual	2026-04-18
-unscheduled-outage	internal:dict-improvements:fusion-economics-supplement	manual	2026-04-18
-fuel-cycle-cost	internal:dict-improvements:fusion-economics-supplement	manual	2026-04-18
-capacity-credit	internal:dict-improvements:fusion-economics-supplement	manual	2026-04-18
-ion-source	internal:dict-improvements:heating-beam-systems	manual	2026-04-18
-rf-window	internal:dict-improvements:heating-beam-systems	manual	2026-04-18
-beam-duct	internal:dict-improvements:heating-beam-systems	manual	2026-04-18
-dummy-load	internal:dict-improvements:heating-beam-systems	manual	2026-04-18
-critical-current-density	internal:dict-improvements:superconductor-magnet-protection	manual	2026-04-18
-hts-tape	internal:dict-improvements:superconductor-magnet-protection	manual	2026-04-18
-quench-heater	internal:dict-improvements:superconductor-magnet-protection	manual	2026-04-18
-magnet-protection-system	internal:dict-improvements:superconductor-magnet-protection	manual	2026-04-18
-helium-refrigerator	internal:dict-improvements:cryogenics-supplement	manual	2026-04-18
-cryostat-feedthrough	internal:dict-improvements:cryogenics-supplement	manual	2026-04-18
-cryodistribution	internal:dict-improvements:cryogenics-supplement	manual	2026-04-18
-liquid-helium	internal:dict-improvements:cryogenics-supplement	manual	2026-04-18
-mixed-material-layer	internal:dict-improvements:pmi-supplement	manual	2026-04-18
-deuterium-retention	internal:dict-improvements:pmi-supplement	manual	2026-04-18
-erosion-rate	internal:dict-improvements:pmi-supplement	manual	2026-04-18
-erosion-lifetime	internal:dict-improvements:pmi-supplement	manual	2026-04-18
-shielding-plug	internal:dict-improvements:radiation-shielding-detail	manual	2026-04-18
-radiation-survey	internal:dict-improvements:radiation-shielding-detail	manual	2026-04-18
-area-monitor	internal:dict-improvements:radiation-shielding-detail	manual	2026-04-18
-gamma-streaming	internal:dict-improvements:radiation-shielding-detail	manual	2026-04-18
-crud	internal:dict-improvements:water-chemistry-activation	manual	2026-04-18
-water-activation	internal:dict-improvements:water-chemistry-activation	manual	2026-04-18
-dissolved-hydrogen	internal:dict-improvements:water-chemistry-activation	manual	2026-04-18
-nitrogen-16	internal:dict-improvements:water-chemistry-activation	manual	2026-04-18
-tritium-monitor	internal:dict-improvements:tritium-monitoring-ic	manual	2026-04-18
-tritium-release-rate	internal:dict-improvements:tritium-monitoring-ic	manual	2026-04-18
-permeation-rate	internal:dict-improvements:tritium-monitoring-ic	manual	2026-04-18
-data-acquisition	internal:dict-improvements:tritium-monitoring-ic	manual	2026-04-18
-sector-assembly	internal:dict-improvements:tokamak-assembly-structure	manual	2026-04-18
-gravity-support	internal:dict-improvements:tokamak-assembly-structure	manual	2026-04-18
-in-wall-shielding	internal:dict-improvements:tokamak-assembly-structure	manual	2026-04-18
-vessel-thermal-shield	internal:dict-improvements:tokamak-assembly-structure	manual	2026-04-18
-poloidal-field-power-supply	internal:dict-improvements:electrical-power-systems	manual	2026-04-18
-thyristor-converter	internal:dict-improvements:electrical-power-systems	manual	2026-04-18
-switching-network	internal:dict-improvements:electrical-power-systems	manual	2026-04-18
-energy-dump	internal:dict-improvements:electrical-power-systems	manual	2026-04-18
-weight-window-generator	internal:dict-improvements:neutronics-vr-methods	manual	2026-04-18
-global-variance-reduction	internal:dict-improvements:neutronics-vr-methods	manual	2026-04-18
-mesh-based-weight-window	internal:dict-improvements:neutronics-vr-methods	manual	2026-04-18
-energy-biasing	internal:dict-improvements:neutronics-vr-methods	manual	2026-04-18
-ultrasonic-testing	internal:dict-improvements:nde-testing	manual	2026-04-18
-radiographic-testing	internal:dict-improvements:nde-testing	manual	2026-04-18
-eddy-current-testing	internal:dict-improvements:nde-testing	manual	2026-04-18
-dye-penetrant	internal:dict-improvements:nde-testing	manual	2026-04-18
-variance-of-variance	internal:dict-improvements:computational-methods	manual	2026-04-18
-adjoint-flux	internal:dict-improvements:computational-methods	manual	2026-04-18
-response-matrix	internal:dict-improvements:computational-methods	manual	2026-04-18
-tallying-efficiency	internal:dict-improvements:computational-methods	manual	2026-04-18
-visible-spectroscopy	internal:dict-improvements:plasma-diagnostics-supplement	manual	2026-04-18
-gamma-spectrometer	internal:dict-improvements:plasma-diagnostics-supplement	manual	2026-04-18
-x-ray-crystal-spectrometer	internal:dict-improvements:plasma-diagnostics-supplement	manual	2026-04-18
-divertor-spectroscopy	internal:dict-improvements:plasma-diagnostics-supplement	manual	2026-04-18
-fueling-rate	internal:dict-improvements:fueling-particle-control	manual	2026-04-18
-pellet-penetration	internal:dict-improvements:fueling-particle-control	manual	2026-04-18
-deep-fueling	internal:dict-improvements:fueling-particle-control	manual	2026-04-18
-deuterium-pellet	internal:dict-improvements:fueling-particle-control	manual	2026-04-18
-hot-pressing	internal:dict-improvements:component-fabrication	manual	2026-04-18
-cold-spray	internal:dict-improvements:component-fabrication	manual	2026-04-18
-powder-metallurgy	internal:dict-improvements:component-fabrication	manual	2026-04-18
-functional-gradient-material	internal:dict-improvements:component-fabrication	manual	2026-04-18
-roughing-pump	internal:dict-improvements:vacuum-technology-supplement	manual	2026-04-18
-helium-leak-test	internal:dict-improvements:vacuum-technology-supplement	manual	2026-04-18
-mass-spectrometer	internal:dict-improvements:vacuum-technology-supplement	manual	2026-04-18
-roots-pump	internal:dict-improvements:vacuum-technology-supplement	manual	2026-04-18
-in-vessel-transporter	internal:dict-improvements:remote-handling-detail	manual	2026-04-18
-remote-cutting	internal:dict-improvements:remote-handling-detail	manual	2026-04-18
-remote-welding	internal:dict-improvements:remote-handling-detail	manual	2026-04-18
-viewing-system	internal:dict-improvements:remote-handling-detail	manual	2026-04-18
-liquid-metal-embrittlement	internal:dict-improvements:corrosion-compatibility	manual	2026-04-18
-pitting-corrosion	internal:dict-improvements:corrosion-compatibility	manual	2026-04-18
-corrosion-allowance	internal:dict-improvements:corrosion-compatibility	manual	2026-04-18
-dissolution-rate	internal:dict-improvements:corrosion-compatibility	manual	2026-04-18
-power-coupling	internal:dict-improvements:plasma-heating-supplement	manual	2026-04-18
-parasitic-absorption	internal:dict-improvements:plasma-heating-supplement	manual	2026-04-18
-rf-sheath	internal:dict-improvements:plasma-heating-supplement	manual	2026-04-18
-antenna-phasing	internal:dict-improvements:plasma-heating-supplement	manual	2026-04-18
-x-point-radiator	internal:dict-improvements:divertor-supplement	manual	2026-04-18
-strike-point-sweeping	internal:dict-improvements:divertor-supplement	manual	2026-04-18
-reattachment	internal:dict-improvements:divertor-supplement	manual	2026-04-18
-divertor-erosion	internal:dict-improvements:divertor-supplement	manual	2026-04-18
-buckling	internal:dict-improvements:structural-mechanics	manual	2026-04-18
-stress-relaxation	internal:dict-improvements:structural-mechanics	manual	2026-04-18
-fatigue-crack-growth	internal:dict-improvements:structural-mechanics	manual	2026-04-18
-seismic-analysis	internal:dict-improvements:structural-mechanics	manual	2026-04-18
-plasma-start-up	internal:dict-improvements:plasma-control-supplement	manual	2026-04-18
-disruption-avoidance	internal:dict-improvements:plasma-control-supplement	manual	2026-04-18
-runaway-mitigation	internal:dict-improvements:plasma-control-supplement	manual	2026-04-18
-plasma-current-ramp	internal:dict-improvements:plasma-control-supplement	manual	2026-04-18
-physics-informed-neural-network	internal:dict-improvements:ml-data-driven	manual	2026-04-18
-bayesian-optimization	internal:dict-improvements:ml-data-driven	manual	2026-04-18
-transfer-learning	internal:dict-improvements:ml-data-driven	manual	2026-04-18
-gaussian-process	internal:dict-improvements:ml-data-driven	manual	2026-04-18
-beryllide	internal:dict-improvements:breeding-materials-supplement	manual	2026-04-18
-pebble-packing-fraction	internal:dict-improvements:breeding-materials-supplement	manual	2026-04-18
-crush-load	internal:dict-improvements:breeding-materials-supplement	manual	2026-04-18
-lithium-burnup	internal:dict-improvements:breeding-materials-supplement	manual	2026-04-18
-joule-heating	internal:dict-improvements:em-loads-forces	manual	2026-04-18
-lorentz-force	internal:dict-improvements:em-loads-forces	manual	2026-04-18
-flux-swing	internal:dict-improvements:em-loads-forces	manual	2026-04-18
-volt-second	internal:dict-improvements:em-loads-forces	manual	2026-04-18
-type-i-elm	internal:dict-improvements:elm-physics	manual	2026-04-18
-grassy-elm	internal:dict-improvements:elm-physics	manual	2026-04-18
-elm-free-regime	internal:dict-improvements:elm-physics	manual	2026-04-18
-elm-frequency	internal:dict-improvements:elm-physics	manual	2026-04-18
-pedestal-height	internal:dict-improvements:pedestal-shape	manual	2026-04-18
-h-mode-power-threshold	internal:dict-improvements:pedestal-shape	manual	2026-04-18
-squareness	internal:dict-improvements:pedestal-shape	manual	2026-04-18
-separatrix-density	internal:dict-improvements:pedestal-shape	manual	2026-04-18
-fluence-limit	internal:dict-improvements:lifetime-irradiation	manual	2026-04-18
-end-of-life	internal:dict-improvements:lifetime-irradiation	manual	2026-04-18
-runaway-plateau	internal:dict-improvements:lifetime-irradiation	manual	2026-04-18
-operational-lifetime	internal:dict-improvements:lifetime-irradiation	manual	2026-04-18
-antenna-loading	internal:dict-improvements:metric-wave1		manual	2026-04-20
-areal-density	internal:dict-improvements:metric-wave1		manual	2026-04-20
-atom-density	internal:dict-improvements:metric-wave1		manual	2026-04-20
-auxiliary-power	internal:dict-improvements:metric-wave1		manual	2026-04-20
-availability-factor	internal:dict-improvements:metric-wave1		manual	2026-04-20
-base-pressure	internal:dict-improvements:metric-wave1		manual	2026-04-20
-beta-n	internal:dict-improvements:metric-wave1		manual	2026-04-20
-bootstrap-fraction	internal:dict-improvements:metric-wave1		manual	2026-04-20
-bounce-frequency	internal:dict-improvements:metric-wave1		manual	2026-04-20
-buildup-factor	internal:dict-improvements:metric-wave1		manual	2026-04-20
-burn-fraction	internal:dict-improvements:metric-wave1		manual	2026-04-20
-burnup	internal:dict-improvements:metric-wave1		manual	2026-04-20
-burnup-fraction	internal:dict-improvements:metric-wave1		manual	2026-04-20
-capacity-factor	internal:dict-improvements:metric-wave1		manual	2026-04-20
-capital-cost	internal:dict-improvements:metric-wave1		manual	2026-04-20
-clearance-index	internal:dict-improvements:metric-wave1		manual	2026-04-20
-coefficient-of-thermal-expansion	internal:dict-improvements:metric-wave1		manual	2026-04-20
-coil-complexity	internal:dict-improvements:metric-wave1		manual	2026-04-20
-collisionality	internal:dict-improvements:metric-wave1		manual	2026-04-20
-component-lifetime	internal:dict-improvements:metric-wave1		manual	2026-04-20
-connection-length	internal:dict-improvements:metric-wave1		manual	2026-04-20
-construction-cost	internal:dict-improvements:metric-wave1		manual	2026-04-20
-contact-dose-rate	internal:dict-improvements:metric-wave1		manual	2026-04-20
-convergence-ratio	internal:dict-improvements:metric-wave1		manual	2026-04-20
-cost-of-electricity	internal:dict-improvements:metric-wave1		manual	2026-04-20
-coulomb-logarithm	internal:dict-improvements:metric-wave1		manual	2026-04-20
-crack-growth-rate	internal:dict-improvements:metric-wave1		manual	2026-04-20
-critical-current	internal:dict-improvements:metric-wave1		manual	2026-04-20
-critical-magnetic-field	internal:dict-improvements:metric-wave1		manual	2026-04-20
-critical-temperature	internal:dict-improvements:metric-wave1		manual	2026-04-20
-current-drive-efficiency	internal:dict-improvements:metric-wave1		manual	2026-04-20
-dbtt-shift	internal:dict-improvements:metric-wave1		manual	2026-04-20
-decommissioning-cost	internal:dict-improvements:metric-wave1		manual	2026-04-20
-design-margin	internal:dict-improvements:metric-wave1		manual	2026-04-20
-detritiation-factor	internal:dict-improvements:metric-wave1		manual	2026-04-20
-displacement-energy	internal:dict-improvements:metric-wave1		manual	2026-04-20
-divertor-heat-flux	internal:dict-improvements:metric-wave1		manual	2026-04-20
-dose-conversion-coefficient	internal:dict-improvements:metric-wave1		manual	2026-04-20
-dpa	internal:dict-improvements:metric-wave1		manual	2026-04-20
-dpa-rate	internal:dict-improvements:metric-wave1		manual	2026-04-20
-ductile-brittle-transition-temperature	internal:dict-improvements:metric-wave1		manual	2026-04-20
-dust-inventory	internal:dict-improvements:metric-wave1		manual	2026-04-20
-effective-ripple	internal:dict-improvements:metric-wave1		manual	2026-04-20
-elastic-modulus	internal:dict-improvements:metric-wave1		manual	2026-04-20
-engineering-gain	internal:dict-improvements:metric-wave1		manual	2026-04-20
-engineering-q	internal:dict-improvements:metric-wave1		manual	2026-04-20
-fatigue-life	internal:dict-improvements:metric-wave1		manual	2026-04-20
-figure-of-merit	internal:dict-improvements:metric-wave1		manual	2026-04-20
-first-wall-lifetime	internal:dict-improvements:metric-wave1		manual	2026-04-20
-fission-yield	internal:dict-improvements:metric-wave1		manual	2026-04-20
-fracture-toughness	internal:dict-improvements:metric-wave1		manual	2026-04-20
-friction-factor	internal:dict-improvements:metric-wave1		manual	2026-04-20
-fuel-retention	internal:dict-improvements:metric-wave1		manual	2026-04-20
-fueling-efficiency	internal:dict-improvements:metric-wave1		manual	2026-04-20
-fusion-cross-section	internal:dict-improvements:metric-wave1		manual	2026-04-20
-fusion-gain	internal:dict-improvements:metric-wave1		manual	2026-04-20
-fusion-power-density	internal:dict-improvements:metric-wave1		manual	2026-04-20
-gas-production-rate	internal:dict-improvements:metric-wave1		manual	2026-04-20
-goodness-of-fit	internal:dict-improvements:metric-wave1		manual	2026-04-20
-grashof-number	internal:dict-improvements:metric-wave1		manual	2026-04-20
+commercialization-pathway	internal:dict-improvements	domain: commercialization-economics	manual	2026-04-17
+social-license	internal:dict-improvements	domain: commercialization-economics	manual	2026-04-17
+fusion-industry	internal:dict-improvements	domain: commercialization-economics	manual	2026-04-17
+workforce-development	internal:dict-improvements	domain: commercialization-economics	manual	2026-04-17
+venture-capital	internal:dict-improvements	domain: commercialization-economics	manual	2026-04-17
+private-investment	internal:dict-improvements	domain: commercialization-economics	manual	2026-04-17
+disruption-mitigation-system	internal:dict-improvements	domain: disruption-events	manual	2026-04-17
+disruption-force	internal:dict-improvements	domain: disruption-events	manual	2026-04-17
+disruption-runaway	internal:dict-improvements	domain: disruption-events	manual	2026-04-17
+in-vessel-inspection	internal:dict-improvements	domain: remote-maintenance	manual	2026-04-17
+manipulator	internal:dict-improvements	domain: remote-maintenance	manual	2026-04-17
+end-effector	internal:dict-improvements	domain: remote-maintenance	manual	2026-04-17
+blanket-replacement	internal:dict-improvements	domain: remote-maintenance	manual	2026-04-17
+cassette-replacement	internal:dict-improvements	domain: remote-maintenance	manual	2026-04-17
+energy-security	internal:dict-improvements	domain: energy-policy-sustainability	manual	2026-04-17
+decarbonization	internal:dict-improvements	domain: energy-policy-sustainability	manual	2026-04-17
+grid-stability	internal:dict-improvements	domain: energy-policy-sustainability	manual	2026-04-17
+proliferation-resistance	internal:dict-improvements	domain: energy-policy-sustainability	manual	2026-04-17
+fusion-safety-advantage	internal:dict-improvements	domain: energy-policy-sustainability	manual	2026-04-17
+clean-energy	internal:dict-improvements	domain: energy-policy-sustainability	manual	2026-04-17
+net-zero	internal:dict-improvements	domain: energy-policy-sustainability	manual	2026-04-17
+dual-coolant	internal:dict-improvements	domain: coolant-systems	manual	2026-04-17
+self-cooled	internal:dict-improvements	domain: coolant-systems	manual	2026-04-17
+scll	internal:dict-improvements	domain: coolant-systems	manual	2026-04-17
+coolant-compatibility	internal:dict-improvements	domain: coolant-systems	manual	2026-04-17
+life-cycle-assessment	internal:dict-improvements	domain: environmental-lifecycle	manual	2026-04-17
+carbon-footprint	internal:dict-improvements	domain: environmental-lifecycle	manual	2026-04-17
+recycling-rate	internal:dict-improvements	domain: environmental-lifecycle	manual	2026-04-17
+decay-storage	internal:dict-improvements	domain: environmental-lifecycle	manual	2026-04-17
+water-use	internal:dict-improvements	domain: environmental-lifecycle	manual	2026-04-17
+wall-plug-efficiency	internal:dict-improvements	domain: supplemental-physics-diagnostics	manual	2026-04-17
+heating-and-current-drive	internal:dict-improvements	domain: supplemental-physics-diagnostics	manual	2026-04-17
+calorimetry	internal:dict-improvements	domain: supplemental-physics-diagnostics	manual	2026-04-17
+structural-material	internal:dict-improvements	domain: fusion-materials-extended	manual	2026-04-18
+armor-material	internal:dict-improvements	domain: fusion-materials-extended	manual	2026-04-18
+nano-structured-ferritic-alloy	internal:dict-improvements	domain: fusion-materials-extended	manual	2026-04-18
+tungsten-fiber-composite	internal:dict-improvements	domain: fusion-materials-extended	manual	2026-04-18
+tungsten-laminate	internal:dict-improvements	domain: fusion-materials-extended	manual	2026-04-18
+nuclear-heating-rate	internal:dict-improvements	domain: neutronics-irradiation-supplement	manual	2026-04-18
+transmutation-rate	internal:dict-improvements	domain: neutronics-irradiation-supplement	manual	2026-04-18
+primary-knock-on-atom	internal:dict-improvements	domain: neutronics-irradiation-supplement	manual	2026-04-18
+gas-production	internal:dict-improvements	domain: neutronics-irradiation-supplement	manual	2026-04-18
+appm	internal:dict-improvements	domain: neutronics-irradiation-supplement	manual	2026-04-18
+energy-confinement	internal:dict-improvements	domain: confinement-transport	manual	2026-04-18
+particle-confinement	internal:dict-improvements	domain: confinement-transport	manual	2026-04-18
+impurity-confinement	internal:dict-improvements	domain: confinement-transport	manual	2026-04-18
+momentum-confinement	internal:dict-improvements	domain: confinement-transport	manual	2026-04-18
+fuel-processing	internal:dict-improvements	domain: fuel-cycle-extended	manual	2026-04-18
+deuterium-extraction	internal:dict-improvements	domain: fuel-cycle-extended	manual	2026-04-18
+pumping-speed	internal:dict-improvements	domain: vacuum-pumping	manual	2026-04-18
+vacuum-leak	internal:dict-improvements	domain: vacuum-pumping	manual	2026-04-18
+leak-rate	internal:dict-improvements	domain: vacuum-pumping	manual	2026-04-18
+torus-exhaust	internal:dict-improvements	domain: vacuum-pumping	manual	2026-04-18
+coil-case	internal:dict-improvements	domain: magnet-engineering-supplement	manual	2026-04-18
+quench-propagation	internal:dict-improvements	domain: magnet-engineering-supplement	manual	2026-04-18
+training-quench	internal:dict-improvements	domain: magnet-engineering-supplement	manual	2026-04-18
+high-field-side	internal:dict-improvements	domain: magnet-engineering-supplement	manual	2026-04-18
+neutron-multiplier-zone	internal:dict-improvements	domain: blanket-structure-detail	manual	2026-04-18
+first-wall-panel	internal:dict-improvements	domain: blanket-structure-detail	manual	2026-04-18
+back-supporting-structure	internal:dict-improvements	domain: blanket-structure-detail	manual	2026-04-18
+stiffening-grid	internal:dict-improvements	domain: blanket-structure-detail	manual	2026-04-18
+evaluated-nuclear-data	internal:dict-improvements	domain: nuclear-data-libraries	manual	2026-04-18
+cross-section-library	internal:dict-improvements	domain: nuclear-data-libraries	manual	2026-04-18
+reaction-rate-library	internal:dict-improvements	domain: nuclear-data-libraries	manual	2026-04-18
+decay-data-library	internal:dict-improvements	domain: nuclear-data-libraries	manual	2026-04-18
+thermocouple	internal:dict-improvements	domain: instrumentation-measurement	manual	2026-04-18
+strain-gauge	internal:dict-improvements	domain: instrumentation-measurement	manual	2026-04-18
+neutron-flux-monitor	internal:dict-improvements	domain: instrumentation-measurement	manual	2026-04-18
+flowmeter	internal:dict-improvements	domain: instrumentation-measurement	manual	2026-04-18
+tungsten-inert-gas-welding	internal:dict-improvements	domain: joining-fabrication	manual	2026-04-18
+laser-welding	internal:dict-improvements	domain: joining-fabrication	manual	2026-04-18
+dissimilar-metal-weld	internal:dict-improvements	domain: joining-fabrication	manual	2026-04-18
+weld-inspection	internal:dict-improvements	domain: joining-fabrication	manual	2026-04-18
+nucleate-boiling	internal:dict-improvements	domain: thermal-hydraulics-supplement	manual	2026-04-18
+film-boiling	internal:dict-improvements	domain: thermal-hydraulics-supplement	manual	2026-04-18
+departure-from-nucleate-boiling	internal:dict-improvements	domain: thermal-hydraulics-supplement	manual	2026-04-18
+thermal-stratification	internal:dict-improvements	domain: thermal-hydraulics-supplement	manual	2026-04-18
+learning-curve	internal:dict-improvements	domain: fusion-economics-supplement	manual	2026-04-18
+unscheduled-outage	internal:dict-improvements	domain: fusion-economics-supplement	manual	2026-04-18
+fuel-cycle-cost	internal:dict-improvements	domain: fusion-economics-supplement	manual	2026-04-18
+capacity-credit	internal:dict-improvements	domain: fusion-economics-supplement	manual	2026-04-18
+ion-source	internal:dict-improvements	domain: heating-beam-systems	manual	2026-04-18
+rf-window	internal:dict-improvements	domain: heating-beam-systems	manual	2026-04-18
+beam-duct	internal:dict-improvements	domain: heating-beam-systems	manual	2026-04-18
+dummy-load	internal:dict-improvements	domain: heating-beam-systems	manual	2026-04-18
+critical-current-density	internal:dict-improvements	domain: superconductor-magnet-protection	manual	2026-04-18
+hts-tape	internal:dict-improvements	domain: superconductor-magnet-protection	manual	2026-04-18
+quench-heater	internal:dict-improvements	domain: superconductor-magnet-protection	manual	2026-04-18
+magnet-protection-system	internal:dict-improvements	domain: superconductor-magnet-protection	manual	2026-04-18
+helium-refrigerator	internal:dict-improvements	domain: cryogenics-supplement	manual	2026-04-18
+cryostat-feedthrough	internal:dict-improvements	domain: cryogenics-supplement	manual	2026-04-18
+cryodistribution	internal:dict-improvements	domain: cryogenics-supplement	manual	2026-04-18
+liquid-helium	internal:dict-improvements	domain: cryogenics-supplement	manual	2026-04-18
+mixed-material-layer	internal:dict-improvements	domain: pmi-supplement	manual	2026-04-18
+deuterium-retention	internal:dict-improvements	domain: pmi-supplement	manual	2026-04-18
+erosion-rate	internal:dict-improvements	domain: pmi-supplement	manual	2026-04-18
+erosion-lifetime	internal:dict-improvements	domain: pmi-supplement	manual	2026-04-18
+shielding-plug	internal:dict-improvements	domain: radiation-shielding-detail	manual	2026-04-18
+radiation-survey	internal:dict-improvements	domain: radiation-shielding-detail	manual	2026-04-18
+area-monitor	internal:dict-improvements	domain: radiation-shielding-detail	manual	2026-04-18
+gamma-streaming	internal:dict-improvements	domain: radiation-shielding-detail	manual	2026-04-18
+crud	internal:dict-improvements	domain: water-chemistry-activation	manual	2026-04-18
+water-activation	internal:dict-improvements	domain: water-chemistry-activation	manual	2026-04-18
+dissolved-hydrogen	internal:dict-improvements	domain: water-chemistry-activation	manual	2026-04-18
+nitrogen-16	internal:dict-improvements	domain: water-chemistry-activation	manual	2026-04-18
+tritium-monitor	internal:dict-improvements	domain: tritium-monitoring-ic	manual	2026-04-18
+tritium-release-rate	internal:dict-improvements	domain: tritium-monitoring-ic	manual	2026-04-18
+permeation-rate	internal:dict-improvements	domain: tritium-monitoring-ic	manual	2026-04-18
+data-acquisition	internal:dict-improvements	domain: tritium-monitoring-ic	manual	2026-04-18
+sector-assembly	internal:dict-improvements	domain: tokamak-assembly-structure	manual	2026-04-18
+gravity-support	internal:dict-improvements	domain: tokamak-assembly-structure	manual	2026-04-18
+in-wall-shielding	internal:dict-improvements	domain: tokamak-assembly-structure	manual	2026-04-18
+vessel-thermal-shield	internal:dict-improvements	domain: tokamak-assembly-structure	manual	2026-04-18
+poloidal-field-power-supply	internal:dict-improvements	domain: electrical-power-systems	manual	2026-04-18
+thyristor-converter	internal:dict-improvements	domain: electrical-power-systems	manual	2026-04-18
+switching-network	internal:dict-improvements	domain: electrical-power-systems	manual	2026-04-18
+energy-dump	internal:dict-improvements	domain: electrical-power-systems	manual	2026-04-18
+weight-window-generator	internal:dict-improvements	domain: neutronics-vr-methods	manual	2026-04-18
+global-variance-reduction	internal:dict-improvements	domain: neutronics-vr-methods	manual	2026-04-18
+mesh-based-weight-window	internal:dict-improvements	domain: neutronics-vr-methods	manual	2026-04-18
+energy-biasing	internal:dict-improvements	domain: neutronics-vr-methods	manual	2026-04-18
+ultrasonic-testing	internal:dict-improvements	domain: nde-testing	manual	2026-04-18
+radiographic-testing	internal:dict-improvements	domain: nde-testing	manual	2026-04-18
+eddy-current-testing	internal:dict-improvements	domain: nde-testing	manual	2026-04-18
+dye-penetrant	internal:dict-improvements	domain: nde-testing	manual	2026-04-18
+variance-of-variance	internal:dict-improvements	domain: computational-methods	manual	2026-04-18
+adjoint-flux	internal:dict-improvements	domain: computational-methods	manual	2026-04-18
+response-matrix	internal:dict-improvements	domain: computational-methods	manual	2026-04-18
+tallying-efficiency	internal:dict-improvements	domain: computational-methods	manual	2026-04-18
+visible-spectroscopy	internal:dict-improvements	domain: plasma-diagnostics-supplement	manual	2026-04-18
+gamma-spectrometer	internal:dict-improvements	domain: plasma-diagnostics-supplement	manual	2026-04-18
+x-ray-crystal-spectrometer	internal:dict-improvements	domain: plasma-diagnostics-supplement	manual	2026-04-18
+divertor-spectroscopy	internal:dict-improvements	domain: plasma-diagnostics-supplement	manual	2026-04-18
+fueling-rate	internal:dict-improvements	domain: fueling-particle-control	manual	2026-04-18
+pellet-penetration	internal:dict-improvements	domain: fueling-particle-control	manual	2026-04-18
+deep-fueling	internal:dict-improvements	domain: fueling-particle-control	manual	2026-04-18
+deuterium-pellet	internal:dict-improvements	domain: fueling-particle-control	manual	2026-04-18
+hot-pressing	internal:dict-improvements	domain: component-fabrication	manual	2026-04-18
+cold-spray	internal:dict-improvements	domain: component-fabrication	manual	2026-04-18
+powder-metallurgy	internal:dict-improvements	domain: component-fabrication	manual	2026-04-18
+functional-gradient-material	internal:dict-improvements	domain: component-fabrication	manual	2026-04-18
+roughing-pump	internal:dict-improvements	domain: vacuum-technology-supplement	manual	2026-04-18
+helium-leak-test	internal:dict-improvements	domain: vacuum-technology-supplement	manual	2026-04-18
+mass-spectrometer	internal:dict-improvements	domain: vacuum-technology-supplement	manual	2026-04-18
+roots-pump	internal:dict-improvements	domain: vacuum-technology-supplement	manual	2026-04-18
+in-vessel-transporter	internal:dict-improvements	domain: remote-handling-detail	manual	2026-04-18
+remote-cutting	internal:dict-improvements	domain: remote-handling-detail	manual	2026-04-18
+remote-welding	internal:dict-improvements	domain: remote-handling-detail	manual	2026-04-18
+viewing-system	internal:dict-improvements	domain: remote-handling-detail	manual	2026-04-18
+liquid-metal-embrittlement	internal:dict-improvements	domain: corrosion-compatibility	manual	2026-04-18
+pitting-corrosion	internal:dict-improvements	domain: corrosion-compatibility	manual	2026-04-18
+corrosion-allowance	internal:dict-improvements	domain: corrosion-compatibility	manual	2026-04-18
+dissolution-rate	internal:dict-improvements	domain: corrosion-compatibility	manual	2026-04-18
+power-coupling	internal:dict-improvements	domain: plasma-heating-supplement	manual	2026-04-18
+parasitic-absorption	internal:dict-improvements	domain: plasma-heating-supplement	manual	2026-04-18
+rf-sheath	internal:dict-improvements	domain: plasma-heating-supplement	manual	2026-04-18
+antenna-phasing	internal:dict-improvements	domain: plasma-heating-supplement	manual	2026-04-18
+x-point-radiator	internal:dict-improvements	domain: divertor-supplement	manual	2026-04-18
+strike-point-sweeping	internal:dict-improvements	domain: divertor-supplement	manual	2026-04-18
+reattachment	internal:dict-improvements	domain: divertor-supplement	manual	2026-04-18
+divertor-erosion	internal:dict-improvements	domain: divertor-supplement	manual	2026-04-18
+buckling	internal:dict-improvements	domain: structural-mechanics	manual	2026-04-18
+stress-relaxation	internal:dict-improvements	domain: structural-mechanics	manual	2026-04-18
+fatigue-crack-growth	internal:dict-improvements	domain: structural-mechanics	manual	2026-04-18
+seismic-analysis	internal:dict-improvements	domain: structural-mechanics	manual	2026-04-18
+plasma-start-up	internal:dict-improvements	domain: plasma-control-supplement	manual	2026-04-18
+disruption-avoidance	internal:dict-improvements	domain: plasma-control-supplement	manual	2026-04-18
+runaway-mitigation	internal:dict-improvements	domain: plasma-control-supplement	manual	2026-04-18
+plasma-current-ramp	internal:dict-improvements	domain: plasma-control-supplement	manual	2026-04-18
+physics-informed-neural-network	internal:dict-improvements	domain: ml-data-driven	manual	2026-04-18
+bayesian-optimization	internal:dict-improvements	domain: ml-data-driven	manual	2026-04-18
+transfer-learning	internal:dict-improvements	domain: ml-data-driven	manual	2026-04-18
+gaussian-process	internal:dict-improvements	domain: ml-data-driven	manual	2026-04-18
+beryllide	internal:dict-improvements	domain: breeding-materials-supplement	manual	2026-04-18
+pebble-packing-fraction	internal:dict-improvements	domain: breeding-materials-supplement	manual	2026-04-18
+crush-load	internal:dict-improvements	domain: breeding-materials-supplement	manual	2026-04-18
+lithium-burnup	internal:dict-improvements	domain: breeding-materials-supplement	manual	2026-04-18
+joule-heating	internal:dict-improvements	domain: em-loads-forces	manual	2026-04-18
+lorentz-force	internal:dict-improvements	domain: em-loads-forces	manual	2026-04-18
+flux-swing	internal:dict-improvements	domain: em-loads-forces	manual	2026-04-18
+volt-second	internal:dict-improvements	domain: em-loads-forces	manual	2026-04-18
+type-i-elm	internal:dict-improvements	domain: elm-physics	manual	2026-04-18
+grassy-elm	internal:dict-improvements	domain: elm-physics	manual	2026-04-18
+elm-free-regime	internal:dict-improvements	domain: elm-physics	manual	2026-04-18
+elm-frequency	internal:dict-improvements	domain: elm-physics	manual	2026-04-18
+pedestal-height	internal:dict-improvements	domain: pedestal-shape	manual	2026-04-18
+h-mode-power-threshold	internal:dict-improvements	domain: pedestal-shape	manual	2026-04-18
+squareness	internal:dict-improvements	domain: pedestal-shape	manual	2026-04-18
+separatrix-density	internal:dict-improvements	domain: pedestal-shape	manual	2026-04-18
+fluence-limit	internal:dict-improvements	domain: lifetime-irradiation	manual	2026-04-18
+end-of-life	internal:dict-improvements	domain: lifetime-irradiation	manual	2026-04-18
+runaway-plateau	internal:dict-improvements	domain: lifetime-irradiation	manual	2026-04-18
+operational-lifetime	internal:dict-improvements	domain: lifetime-irradiation	manual	2026-04-18
+antenna-loading	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+areal-density	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+atom-density	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+auxiliary-power	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+availability-factor	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+base-pressure	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+beta-n	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+bootstrap-fraction	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+bounce-frequency	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+buildup-factor	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+burn-fraction	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+burnup	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+burnup-fraction	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+capacity-factor	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+capital-cost	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+clearance-index	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+coefficient-of-thermal-expansion	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+coil-complexity	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+collisionality	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+component-lifetime	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+connection-length	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+construction-cost	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+contact-dose-rate	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+convergence-ratio	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+cost-of-electricity	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+coulomb-logarithm	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+crack-growth-rate	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+critical-current	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+critical-magnetic-field	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+critical-temperature	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+current-drive-efficiency	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+dbtt-shift	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+decommissioning-cost	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+design-margin	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+detritiation-factor	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+displacement-energy	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+divertor-heat-flux	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+dose-conversion-coefficient	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+dpa	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+dpa-rate	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+ductile-brittle-transition-temperature	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+dust-inventory	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+effective-ripple	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+elastic-modulus	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+engineering-gain	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+engineering-q	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+fatigue-life	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+figure-of-merit	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+first-wall-lifetime	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+fission-yield	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+fracture-toughness	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+friction-factor	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+fuel-retention	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+fueling-efficiency	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+fusion-cross-section	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+fusion-gain	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+fusion-power-density	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+gas-production-rate	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+goodness-of-fit	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
+grashof-number	internal:dict-improvements	domain: metric-wave1	manual	2026-04-20
 cate	internal:cate-3.0-deliverables/FUTURE-030503-DD-009	华北电力大学项目组采用自主开发的核反应堆活化腐蚀产物源项分析程序CATE-3.0，基于典型聚变堆水冷回路设计参数和运行参数，开展聚变堆活化腐蚀产物源项计算分析。	manual	2026-10-16
 pactole	internal:thesis-郭庆洋-2020-水冷堆活化腐蚀产物多物相多区域迁移模型的研究	关于活化腐蚀产物源项计算，在公开发表的文献上可查阅到的算例主要有法国原子能委员会CEA开发的PACTOLE程序和PACTITER程序的算例，英国原子能管理局开发的TRACT程序的算例。	manual	2026-10-16
 pactiter	internal:thesis-郭庆洋-2020-水冷堆活化腐蚀产物多物相多区域迁移模型的研究	PACTOLE程序针对压水堆开发，PACTITER程序和TRACT程序针对聚变堆开发。	manual	2026-10-16
