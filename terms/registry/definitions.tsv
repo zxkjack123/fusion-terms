@@ -5835,9 +5835,9 @@ yaml-format	zh	聚变/核工程术语，指“YAML格式”这一技术概念。
 zonal-flow	en	Fusion/nuclear engineering term referring to 'zonal flow' in technical context.	internal:dict-improvements
 zonal-flow	zh	聚变/核工程术语，指“带状流”这一技术概念。	internal:dict-improvements
 adjoint-flux	en	Fusion/nuclear engineering term referring to 'Adjoint Flux' in technical context.	internal:dict-improvements
-adjoint-flux	zh	聚变/核工程术语，指“en”这一技术概念。	internal:dict-improvements
+adjoint-flux	zh	通过求解伴随输运方程得到的重要性函数，用于输运计算的重要性抽样与灵敏度分析。	corpus
 antenna-phasing	en	Fusion/nuclear engineering term referring to 'Antenna Phasing' in technical context.	internal:dict-improvements
-antenna-phasing	zh	聚变/核工程术语，指“en”这一技术概念。	internal:dict-improvements
+antenna-phasing	zh	射频天线各条带之间的相对相位设定，用于控制发射波的平行折射率谱。	corpus
 appm	en	Fusion/nuclear engineering term corresponding to 'appm'.	internal:dict-improvements
 appm	zh	聚变/核工程术语，指“appm”这一技术概念。	internal:dict-improvements
 area-monitor	en	Fusion/nuclear engineering term corresponding to 'area monitor'.	internal:dict-improvements
@@ -5859,11 +5859,11 @@ clean-energy	zh	聚变/核工程术语，指“clean energy”这一技术概念
 coil-case	en	Fusion/nuclear engineering term corresponding to 'coil case'.	internal:dict-improvements
 coil-case	zh	聚变/核工程术语，指“coil case”这一技术概念。	internal:dict-improvements
 cold-spray	en	Fusion/nuclear engineering term referring to 'Cold Spray' in technical context.	internal:dict-improvements
-cold-spray	zh	聚变/核工程术语，指“en”这一技术概念。	internal:dict-improvements
+cold-spray	zh	在不使粉末熔化的固态下以超音速喷射颗粒并沉积成涂层的工艺。	corpus
 coolant-compatibility	en	Fusion/nuclear engineering term corresponding to 'coolant compatibility'.	internal:dict-improvements
 coolant-compatibility	zh	聚变/核工程术语，指“coolant compatibility”这一技术概念。	internal:dict-improvements
 corrosion-allowance	en	Fusion/nuclear engineering term referring to 'Corrosion Allowance' in technical context.	internal:dict-improvements
-corrosion-allowance	zh	聚变/核工程术语，指“en”这一技术概念。	internal:dict-improvements
+corrosion-allowance	zh	为补偿运行期腐蚀造成的材料损失，在结构设计中额外增加的壁厚。	corpus
 critical-current-density	en	Fusion/nuclear engineering term corresponding to 'critical current density'.	internal:dict-improvements
 critical-current-density	zh	聚变/核工程术语，指“critical current density”这一技术概念。	internal:dict-improvements
 cross-section-library	en	Fusion/nuclear engineering term corresponding to 'cross-section library'.	internal:dict-improvements
@@ -5883,39 +5883,39 @@ decay-data-library	zh	聚变/核工程术语，指“decay data library”这一
 decay-storage	en	Fusion/nuclear engineering term corresponding to 'decay storage'.	internal:dict-improvements
 decay-storage	zh	聚变/核工程术语，指“decay storage”这一技术概念。	internal:dict-improvements
 deep-fueling	en	Fusion/nuclear engineering term referring to 'Deep Fueling' in technical context.	internal:dict-improvements
-deep-fueling	zh	聚变/核工程术语，指“en”这一技术概念。	internal:dict-improvements
+deep-fueling	zh	使燃料粒子沉积于等离子体芯部区域的加料策略。	corpus
 departure-from-nucleate-boiling	en	Fusion/nuclear engineering term corresponding to 'departure from nucleate boiling'.	internal:dict-improvements
 departure-from-nucleate-boiling	zh	聚变/核工程术语，指“departure from nucleate boiling”这一技术概念。	internal:dict-improvements
 deuterium-extraction	en	Fusion/nuclear engineering term corresponding to 'deuterium extraction'.	internal:dict-improvements
 deuterium-extraction	zh	聚变/核工程术语，指“deuterium extraction”这一技术概念。	internal:dict-improvements
 deuterium-pellet	en	Fusion/nuclear engineering term referring to 'Deuterium Pellet' in technical context.	internal:dict-improvements
-deuterium-pellet	zh	聚变/核工程术语，指“en”这一技术概念。	internal:dict-improvements
+deuterium-pellet	zh	用于等离子体加料的低温固态氘弹丸。	corpus
 deuterium-retention	en	Fusion/nuclear engineering term corresponding to 'deuterium retention'.	internal:dict-improvements
 deuterium-retention	zh	聚变/核工程术语，指“deuterium retention”这一技术概念。	internal:dict-improvements
 dissimilar-metal-weld	en	Fusion/nuclear engineering term corresponding to 'dissimilar metal weld'.	internal:dict-improvements
 dissimilar-metal-weld	zh	聚变/核工程术语，指“dissimilar metal weld”这一技术概念。	internal:dict-improvements
 dissolution-rate	en	Fusion/nuclear engineering term referring to 'Dissolution Rate' in technical context.	internal:dict-improvements
-dissolution-rate	zh	聚变/核工程术语，指“en”这一技术概念。	internal:dict-improvements
+dissolution-rate	zh	结构材料在流动液态金属或冷却剂中的质量损失速率。	corpus
 dissolved-hydrogen	en	Fusion/nuclear engineering term corresponding to 'dissolved hydrogen'.	internal:dict-improvements
 dissolved-hydrogen	zh	聚变/核工程术语，指“dissolved hydrogen”这一技术概念。	internal:dict-improvements
 divertor-erosion	en	Fusion/nuclear engineering term referring to 'Divertor Erosion' in technical context.	internal:dict-improvements
-divertor-erosion	zh	聚变/核工程术语，指“en”这一技术概念。	internal:dict-improvements
+divertor-erosion	zh	偏滤器靶板表面在等离子体粒子与热流轰击下发生材料去除的过程。	corpus
 divertor-spectroscopy	en	Fusion/nuclear engineering term referring to 'Divertor Spectroscopy' in technical context.	internal:dict-improvements
-divertor-spectroscopy	zh	聚变/核工程术语，指“en”这一技术概念。	internal:dict-improvements
+divertor-spectroscopy	zh	专门用于偏滤器等离子体特性测量的光谱诊断方法。	corpus
 dual-coolant	en	Fusion/nuclear engineering term corresponding to 'dual coolant'.	internal:dict-improvements
 dual-coolant	zh	聚变/核工程术语，指“dual coolant”这一技术概念。	internal:dict-improvements
 dummy-load	en	Fusion/nuclear engineering term corresponding to 'dummy load'.	internal:dict-improvements
 dummy-load	zh	聚变/核工程术语，指“dummy load”这一技术概念。	internal:dict-improvements
 dye-penetrant	en	Fusion/nuclear engineering term referring to 'Dye Penetrant Testing' in technical context.	internal:dict-improvements
-dye-penetrant	zh	聚变/核工程术语，指“en”这一技术概念。	internal:dict-improvements
+dye-penetrant	zh	利用着色渗透液毛细作用检出表面开口缺陷的无损检测方法。	corpus
 eddy-current-testing	en	Fusion/nuclear engineering term referring to 'Eddy Current Testing' in technical context.	internal:dict-improvements
-eddy-current-testing	zh	聚变/核工程术语，指“en”这一技术概念。	internal:dict-improvements
+eddy-current-testing	zh	利用电磁感应在导电构件中产生涡流、检出表面及近表面缺陷的无损检测方法。	corpus
 energy-biasing	en	Fusion/nuclear engineering term referring to 'Energy Biasing' in technical context.	internal:dict-improvements
-energy-biasing	zh	聚变/核工程术语，指“en”这一技术概念。	internal:dict-improvements
+energy-biasing	zh	使粒子能量抽样偏向重要能量区间的减方差技术。	corpus
 energy-confinement	en	Fusion/nuclear engineering term corresponding to 'energy confinement'.	internal:dict-improvements
 energy-confinement	zh	聚变/核工程术语，指“energy confinement”这一技术概念。	internal:dict-improvements
 energy-dump	en	Fusion/nuclear engineering term referring to 'Energy Dump' in technical context.	internal:dict-improvements
-energy-dump	zh	聚变/核工程术语，指“en”这一技术概念。	internal:dict-improvements
+energy-dump	zh	用于在失超等工况下安全耗散磁体储能的卸能电路。	corpus
 energy-security	en	Fusion/nuclear engineering term corresponding to 'energy security'.	internal:dict-improvements
 energy-security	zh	聚变/核工程术语，指“energy security”这一技术概念。	internal:dict-improvements
 erosion-lifetime	en	Fusion/nuclear engineering term corresponding to 'erosion lifetime'.	internal:dict-improvements
@@ -5935,19 +5935,19 @@ fuel-cycle-cost	zh	聚变/核工程术语，指“fuel cycle cost”这一技术
 fuel-processing	en	Fusion/nuclear engineering term corresponding to 'fuel processing'.	internal:dict-improvements
 fuel-processing	zh	聚变/核工程术语，指“fuel processing”这一技术概念。	internal:dict-improvements
 fueling-rate	en	Fusion/nuclear engineering term referring to 'Fueling Rate' in technical context.	internal:dict-improvements
-fueling-rate	zh	聚变/核工程术语，指“en”这一技术概念。	internal:dict-improvements
+fueling-rate	zh	向等离子体投送燃料粒子的速率。	corpus
 functional-gradient-material	en	Fusion/nuclear engineering term referring to 'Functional Gradient Material' in technical context.	internal:dict-improvements
-functional-gradient-material	zh	聚变/核工程术语，指“en”这一技术概念。	internal:dict-improvements
+functional-gradient-material	zh	组成或微观结构沿空间连续变化、以实现性能梯度过渡的材料。	corpus
 fusion-safety-advantage	en	Fusion/nuclear engineering term corresponding to 'fusion safety advantage'.	internal:dict-improvements
 fusion-safety-advantage	zh	聚变/核工程术语，指“fusion safety advantage”这一技术概念。	internal:dict-improvements
 gamma-spectrometer	en	Fusion/nuclear engineering term referring to 'Gamma Spectrometer' in technical context.	internal:dict-improvements
-gamma-spectrometer	zh	聚变/核工程术语，指“en”这一技术概念。	internal:dict-improvements
+gamma-spectrometer	zh	测量聚变等离子体及活化部件伽马射线能谱的探测器系统。	corpus
 gamma-streaming	en	Fusion/nuclear engineering term corresponding to 'gamma streaming'.	internal:dict-improvements
 gamma-streaming	zh	聚变/核工程术语，指“gamma streaming”这一技术概念。	internal:dict-improvements
 gas-production	en	Fusion/nuclear engineering term corresponding to 'gas production'.	internal:dict-improvements
 gas-production	zh	聚变/核工程术语，指“gas production”这一技术概念。	internal:dict-improvements
 global-variance-reduction	en	Fusion/nuclear engineering term referring to 'Global Variance Reduction' in technical context.	internal:dict-improvements
-global-variance-reduction	zh	聚变/核工程术语，指“en”这一技术概念。	internal:dict-improvements
+global-variance-reduction	zh	以使整个计算域内统计不确定度均匀为目标的高级减方差方法。	corpus
 gravity-support	en	Fusion/nuclear engineering term corresponding to 'gravity support'.	internal:dict-improvements
 gravity-support	zh	聚变/核工程术语，指“gravity support”这一技术概念。	internal:dict-improvements
 grid-stability	en	Fusion/nuclear engineering term corresponding to 'grid stability'.	internal:dict-improvements
@@ -5955,19 +5955,19 @@ grid-stability	zh	聚变/核工程术语，指“grid stability”这一技术�
 heating-and-current-drive	en	Fusion/nuclear engineering term corresponding to 'heating and current drive'.	internal:dict-improvements
 heating-and-current-drive	zh	聚变/核工程术语，指“heating and current drive”这一技术概念。	internal:dict-improvements
 helium-leak-test	en	Fusion/nuclear engineering term referring to 'Helium Leak Test' in technical context.	internal:dict-improvements
-helium-leak-test	zh	聚变/核工程术语，指“en”这一技术概念。	internal:dict-improvements
+helium-leak-test	zh	以氦为示踪气体、经质谱检测实现泄漏定位与定量的标准检漏方法。	corpus
 helium-refrigerator	en	Fusion/nuclear engineering term corresponding to 'helium refrigerator'.	internal:dict-improvements
 helium-refrigerator	zh	聚变/核工程术语，指“helium refrigerator”这一技术概念。	internal:dict-improvements
 high-field-side	en	Fusion/nuclear engineering term corresponding to 'high-field side'.	internal:dict-improvements
 high-field-side	zh	聚变/核工程术语，指“high-field side”这一技术概念。	internal:dict-improvements
 hot-pressing	en	Fusion/nuclear engineering term referring to 'Hot Pressing' in technical context.	internal:dict-improvements
-hot-pressing	zh	聚变/核工程术语，指“en”这一技术概念。	internal:dict-improvements
+hot-pressing	zh	同时施加温度与压力使粉末或层状材料致密化的制备工艺。	corpus
 hts-tape	en	Fusion/nuclear engineering term corresponding to 'HTS tape'.	internal:dict-improvements
 hts-tape	zh	聚变/核工程术语，指“HTS tape”这一技术概念。	internal:dict-improvements
 impurity-confinement	en	Fusion/nuclear engineering term corresponding to 'impurity confinement'.	internal:dict-improvements
 impurity-confinement	zh	聚变/核工程术语，指“impurity confinement”这一技术概念。	internal:dict-improvements
 in-vessel-transporter	en	Fusion/nuclear engineering term referring to 'In-Vessel Transporter' in technical context.	internal:dict-improvements
-in-vessel-transporter	zh	聚变/核工程术语，指“en”这一技术概念。	internal:dict-improvements
+in-vessel-transporter	zh	在真空容器内运行的遥控操作运输装置，用于包层与偏滤器等部件更换。	corpus
 in-wall-shielding	en	Fusion/nuclear engineering term corresponding to 'in-wall shielding'.	internal:dict-improvements
 in-wall-shielding	zh	聚变/核工程术语，指“in-wall shielding”这一技术概念。	internal:dict-improvements
 ion-source	en	Fusion/nuclear engineering term corresponding to 'ion source'.	internal:dict-improvements
@@ -5983,13 +5983,13 @@ life-cycle-assessment	zh	聚变/核工程术语，指“life-cycle assessment”
 liquid-helium	en	Fusion/nuclear engineering term corresponding to 'liquid helium'.	internal:dict-improvements
 liquid-helium	zh	聚变/核工程术语，指“liquid helium”这一技术概念。	internal:dict-improvements
 liquid-metal-embrittlement	en	Fusion/nuclear engineering term referring to 'Liquid Metal Embrittlement' in technical context.	internal:dict-improvements
-liquid-metal-embrittlement	zh	聚变/核工程术语，指“en”这一技术概念。	internal:dict-improvements
+liquid-metal-embrittlement	zh	结构材料因接触液态金属而塑性下降的退化现象。	corpus
 magnet-protection-system	en	Fusion/nuclear engineering term corresponding to 'magnet protection system'.	internal:dict-improvements
 magnet-protection-system	zh	聚变/核工程术语，指“magnet protection system”这一技术概念。	internal:dict-improvements
 mass-spectrometer	en	Fusion/nuclear engineering term referring to 'Mass Spectrometer' in technical context.	internal:dict-improvements
-mass-spectrometer	zh	聚变/核工程术语，指“en”这一技术概念。	internal:dict-improvements
+mass-spectrometer	zh	按质荷比分离并识别气体组分的仪器。	corpus
 mesh-based-weight-window	en	Fusion/nuclear engineering term referring to 'Mesh-Based Weight Window' in technical context.	internal:dict-improvements
-mesh-based-weight-window	zh	聚变/核工程术语，指“en”这一技术概念。	internal:dict-improvements
+mesh-based-weight-window	zh	在结构化或非结构化空间网格上定义的权窗。	corpus
 mixed-material-layer	en	Fusion/nuclear engineering term corresponding to 'mixed-material layer'.	internal:dict-improvements
 mixed-material-layer	zh	聚变/核工程术语，指“mixed-material layer”这一技术概念。	internal:dict-improvements
 momentum-confinement	en	Fusion/nuclear engineering term corresponding to 'momentum confinement'.	internal:dict-improvements
@@ -6009,7 +6009,7 @@ nuclear-heating-rate	zh	聚变/核工程术语，指“nuclear heating rate”�
 nucleate-boiling	en	Fusion/nuclear engineering term corresponding to 'nucleate boiling'.	internal:dict-improvements
 nucleate-boiling	zh	聚变/核工程术语，指“nucleate boiling”这一技术概念。	internal:dict-improvements
 parasitic-absorption	en	Fusion/nuclear engineering term referring to 'Parasitic Absorption' in technical context.	internal:dict-improvements
-parasitic-absorption	zh	聚变/核工程术语，指“en”这一技术概念。	internal:dict-improvements
+parasitic-absorption	zh	等离子体边界、天线结构或法拉第屏蔽上非预期的射频功率吸收。	corpus
 particle-confinement	en	Fusion/nuclear engineering term corresponding to 'particle confinement'.	internal:dict-improvements
 particle-confinement	zh	聚变/核工程术语，指“particle confinement”这一技术概念。	internal:dict-improvements
 pellet-penetration	en	Fusion/nuclear engineering term referring to 'Pellet Penetration' in technical context.	internal:dict-improvements

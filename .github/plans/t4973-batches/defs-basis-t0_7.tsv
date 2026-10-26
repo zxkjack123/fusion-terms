@@ -1,0 +1,25 @@
+concept_id	lang	source	依据
+adjoint-flux	zh	corpus	依据 concepts.tsv 的 notes 字段（仓内概念描述）改写为中文释义；notes 原文见该行第 7 列
+antenna-phasing	zh	corpus	依据 concepts.tsv 的 notes 字段（仓内概念描述）改写为中文释义；notes 原文见该行第 7 列
+cold-spray	zh	corpus	依据 concepts.tsv 的 notes 字段（仓内概念描述）改写为中文释义；notes 原文见该行第 7 列
+corrosion-allowance	zh	corpus	依据 concepts.tsv 的 notes 字段（仓内概念描述）改写为中文释义；notes 原文见该行第 7 列
+deep-fueling	zh	corpus	依据 concepts.tsv 的 notes 字段（仓内概念描述）改写为中文释义；notes 原文见该行第 7 列
+deuterium-pellet	zh	corpus	依据 concepts.tsv 的 notes 字段（仓内概念描述）改写为中文释义；notes 原文见该行第 7 列
+dissolution-rate	zh	corpus	依据 concepts.tsv 的 notes 字段（仓内概念描述）改写为中文释义；notes 原文见该行第 7 列
+divertor-erosion	zh	corpus	依据 concepts.tsv 的 notes 字段（仓内概念描述）改写为中文释义；notes 原文见该行第 7 列
+divertor-spectroscopy	zh	corpus	依据 concepts.tsv 的 notes 字段（仓内概念描述）改写为中文释义；notes 原文见该行第 7 列
+dye-penetrant	zh	corpus	依据 concepts.tsv 的 notes 字段（仓内概念描述）改写为中文释义；notes 原文见该行第 7 列
+eddy-current-testing	zh	corpus	依据 concepts.tsv 的 notes 字段（仓内概念描述）改写为中文释义；notes 原文见该行第 7 列
+energy-biasing	zh	corpus	依据 concepts.tsv 的 notes 字段（仓内概念描述）改写为中文释义；notes 原文见该行第 7 列
+energy-dump	zh	corpus	依据 concepts.tsv 的 notes 字段（仓内概念描述）改写为中文释义；notes 原文见该行第 7 列
+fueling-rate	zh	corpus	依据 concepts.tsv 的 notes 字段（仓内概念描述）改写为中文释义；notes 原文见该行第 7 列
+functional-gradient-material	zh	corpus	依据 concepts.tsv 的 notes 字段（仓内概念描述）改写为中文释义；notes 原文见该行第 7 列
+gamma-spectrometer	zh	corpus	依据 concepts.tsv 的 notes 字段（仓内概念描述）改写为中文释义；notes 原文见该行第 7 列
+global-variance-reduction	zh	corpus	依据 concepts.tsv 的 notes 字段（仓内概念描述）改写为中文释义；notes 原文见该行第 7 列
+helium-leak-test	zh	corpus	依据 concepts.tsv 的 notes 字段（仓内概念描述）改写为中文释义；notes 原文见该行第 7 列
+hot-pressing	zh	corpus	依据 concepts.tsv 的 notes 字段（仓内概念描述）改写为中文释义；notes 原文见该行第 7 列
+in-vessel-transporter	zh	corpus	依据 concepts.tsv 的 notes 字段（仓内概念描述）改写为中文释义；notes 原文见该行第 7 列
+liquid-metal-embrittlement	zh	corpus	依据 concepts.tsv 的 notes 字段（仓内概念描述）改写为中文释义；notes 原文见该行第 7 列
+mass-spectrometer	zh	corpus	依据 concepts.tsv 的 notes 字段（仓内概念描述）改写为中文释义；notes 原文见该行第 7 列
+mesh-based-weight-window	zh	corpus	依据 concepts.tsv 的 notes 字段（仓内概念描述）改写为中文释义；notes 原文见该行第 7 列
+parasitic-absorption	zh	corpus	依据 concepts.tsv 的 notes 字段（仓内概念描述）改写为中文释义；notes 原文见该行第 7 列
