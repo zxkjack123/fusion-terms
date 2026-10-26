@@ -293,3 +293,10 @@ sha256sum scripts/registry_evidence_bundle.py tests/test_registry_evidence_bundl
 - **§1 基线为修复前口径**：执行后 `ruff check .` / `ruff format --check .` 已转绿（全量 175 passed，目标文件 13 passed）。
 - **最终哈希**：`scripts/registry_evidence_bundle.py` = `a2380a4620724a8fabbbae7f6a0b610c80dd96d0574f9ab49683050a639f6c6e`；`tests/test_registry_evidence_bundle.py` = `35673d15b689ab1b3334918c9ea5bf55cf542e9b99553173a2c48f402e90c06b`。
 - **未做**：未 push；未提交 `terms/registry/definitions.tsv`（保留其独立修复）；未删改任何历史 bundle 或 `backups/*.bak`。
+
+### 10.1 提交后保留性复核（更正）
+
+- 提交后初次用 `ls -1d artifacts/registry-evidence/2*/` 核对，只列出 8 个目录，曾误判有 3 个历史 bundle 缺失。
+- 复核方式：`ls -1 artifacts/registry-evidence`、Python `Path.glob('2*')` 与定点 `stat` 三种路径一致显示 **13 个 bundle 目录 + backups + README**；冻结清单中的 11 个全部在位，另 2 个为验收阶段新生成。
+- 用冻结 tarball 做只补缺、不覆盖的回填演练：`RESTORED_FILES=0`（无文件需要恢复），且 `git status` 仍只显示 `terms/registry/definitions.tsv` 一项，未产生任何写入。
+- 结论：**历史证据完整保留，未发生删除**；此前 8 条的输出是列举方式造成的观测误差，不是数据丢失。带尾斜杠的 glob 列举不可作为保留性判据，改用 `ls -1 <dir>` 计数。
