@@ -285,6 +285,7 @@ files_sha256:
 - **质量检查方式**：`--self-test` 子命令（内置 3 条真实畸形样例 + 3 条合规样例，断言各模式判定正确）。
 - **验收标准**：
   - ✅ [自检通过] `[T-A]` `.venv/bin/python scripts/registry_batch_verify.py --self-test` → exit 0
+    > **注记（2026-10-26，裁决 4=A，off-plan 修复）**：本条在 T0.2 落地时成立（24/24）。W0 修好该自检的 3 处**真实语料锚点行**后（`concepts.tsv:3316` 六列行、`:3171` 左移行、`definitions.tsv:5838` `指“en”` 行），断言因**规则不再触发**而变红 → 实测 **18/24 exit 1**（规则本身有效，已由 W1 逐批仓外变异法复证）。已按裁决 A 以临时副本地重建缺陷的方式重锚（规则一条未改），**现状重新为 24/24 exit 0**。证据见 `.github/plans/t4973-batches/self-test-reanchor.md`。
   - ✅ [能失败] `[T-A]` 用未修复的 6 列 concept id 造 ids 文件跑 `--mode names`（该 id 的 `preferred_zh` 为空）→ **exit 1**
   - ✅ [格式门禁] `[T-A]` `.venv/bin/ruff format --check scripts/registry_batch_verify.py` → exit 0
 - **能失败证明（实现回退法）**：把套话正则替换为 `^$`（永不匹配）后 `--self-test` 必须失败 → 证明该规则真的在起作用。
@@ -1153,6 +1154,7 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 ### T0.2 — ✅ DONE（2026-10-26 16:20）
 - 委派 `simulation-builder`；交付 `scripts/registry_batch_verify.py`（972 行，sha256 `6fa9f254a7e880c5660d761cf5bc5bee37c80c9cf4ea3e272fbc7644fe08c7b3`）
 - `--self-test` → exit 0（24/24 断言）；`poloidal-field-power-supply`（真实 6 列行）→ **FAIL exit 1**（输出 `concepts.tsv:3316: concept_cols … expected 8 columns, found 6`）；`half-value-layer` → PASS exit 0
+- **⚠ 后记（2026-10-26，裁决 4=A）**：上述 24/24 依赖 3 处**真实语料锚点行**仍为畸形。W0 把它们修好后（`:3316` 六列、`:3171` 左移、`definitions.tsv:5838` `指“en”`），`--self-test` 退化为 **18/24 exit 1**——**坏的是自检夹具，不是规则**（规则有效性由 W1 逐批仓外变异法复证）。已按裁决 A 独立 commit 重锚（临时副本地重建缺陷，规则一条未改），现回到 **24/24 exit 0**；证据见 `.github/plans/t4973-batches/self-test-reanchor.md`。本条其余实测值（972 行 / sha256 `6fa9f254…`）为 T0.2 交付时点的事实，**保持原样不追改**（修复后的脚本为 1057 行 / sha256 `35d234b3…`）
 - 能失败证明（实现回退）：套话正则改 `^$` → self-test 22/24 失败；改回后 sha256 与交付一致
 - 超出字面规格的 3 条守卫（加强，非放宽）：`concept_cols`（必须恰 8 列）、`def_lang_placeholder`（zh 含 `指“en”`）、`def_source_unknown`（source 白名单为闭合集合，**不含任何 `internal:*`**）
 - **口径澄清（本执行者独立复核）**：占位符为**拉丁串**的 zh 定义数量很大（`infiniband`/`makefile`/`marfe`/`s-alpha-beta`/`sdk` …），属 D2-3 已裁决**延后**的「低信息但未损坏」类，**不是** 48 行损坏类；W1 的 zh 损坏口径维持 **48 行**（`指“en”` 字面语言标签）
@@ -1408,3 +1410,29 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 - **组内裁决累计**：`x-point` 无据从句删除；`plasma-gun` / `turbulent-transport` 简短但忠实（维持）；GB/T 条款号统一不写入 en；`limiter` 词头（类 4）与 `RF加热` 词头（类 4b）编辑性不动；`toroidal-alfven-eigenmode` 措辞按指定依据
 - **组内 zh 恢复性修复累计 7 行**：`lawson-criterion`、`magnetic-island`、`vertical-displacement-event`（A1）；`electrostatic-confinement`（门禁 RED，A2）、`halo-current`（A2）；`dt-reaction`、`dd-reaction`、`d-he3-reaction`（A3，类 7）；`in-vessel-component`（A4）
 - **下一步**：进入 W1-B 组（34 批次 / 694 id），并在第 5 个批次完成时执行 **D2-4 抽检**
+
+#### 裁决 4 — `registry_batch_verify.py --self-test` 重锚（**off-plan**，用户裁决 A）— ✅ DONE（2026-10-26 21:30）
+
+- **触发**：T1.B01-EN 期间由子代理上报、父代理独立复核：`--self-test` = **18/24 exit 1**；T0.2 落地时（§285-290 / §1155）记录为 **24/24 exit 0** ⇒ **回归**
+- **根因（已定位并复核）**：6 条失败断言**全部**是「**锚点行被 W0 修好 ⇒ 规则不再触发**」，涉及 4 条规则：`concept_cols`（`concepts.tsv:3316`，W0 修成 8 列）、`names_zh_no_cjk`（`:3171`，zh 恢复 `能源安全`）、`def_boilerplate_mark` + `def_lang_placeholder`（`definitions.tsv:5838`，W0 T0.7a/b 修好 48 行 `指“en”`）
+  - 同时刻语料实测：非 8 列 `concepts.tsv` 数据行 = **0**；含 `指“en”` 的 `definitions.tsv` 行 = **0** ⇒ 锚点目标已不存在
+  - **规则本身未坏**：W1 每批均以「仓外副本 + `--repo-root`」变异法复证各规则会 exit 1（B01-EN：`def_boilerplate_regex` / `def_len_en` / `def_source_unknown` → 三者 exit 1，未变异对照 exit 0）
+- **裁决**：用户选 **A. 立即修复（独立 commit，不并入 W1 收尾加固）**
+- **做法（不削弱任何门禁）**：在**临时副本**中「就地重建」那 3 处历史缺陷（行数不变）⇒ **24 条断言与全部 `file:line` 锚点逐字保持不变**，规则**一条不改、不加、不减**。新增 `SELF_TEST_RESTORED_CASES = frozenset({0,1,3})` + `_build_restored_defect_corpus(real_root, dest)`；仅这 3 个用例改跑副本，其余 5 个仍跑真实语料；副本目录 `tempfile.mkdtemp` + `finally` 清理；**只写 `dest`，仓库文件零触碰**
+  - 副本重建内容：`poloidal-field-power-supply` → `fields[:6]`；`energy-security` → `fields[COL_ZH] = fields[COL_EN]`；`adjoint-flux` zh 行 → `聚变/核工程术语，指“en”这一技术概念。`
+  - 行切分用 `read_text().split("\n")` / `"\n".join(…)`（**不用** `splitlines()`，后者会在 `\x0b`/`\x0c`/`\u2028` 处切分而移动行号）
+- **RED → GREEN**：修复前 `18/24 exit 1` → 修复后 **`24/24 exit 0`**
+- **能失败证明（5 变体，脚本副本 + `--repo-root <真实仓库>`，仓内文件零触碰）**：
+
+  | 变体 | 变异 | 实测 |
+  |------|------|------|
+  | `m1_boilerplate_regex` | `BOILERPLATE_EN_RE` 前置 `(?!)`（永不匹配） | `22/24`，**exit 1** |
+  | `m2_concept_cols` | `concept_cols` 守卫放宽（6 列被放过，两处） | `22/24`，**exit 1** |
+  | `m3_lang_placeholder` | `LANG_PLACEHOLDER_RE` → `(?!)` | `23/24`，**exit 1** |
+  | `m4_control` | 不修改（对照） | `24/24`，**exit 0** |
+  | `m5_no_restore` | `SELF_TEST_RESTORED_CASES = frozenset()`（禁用重建副本） | `18/24`，**exit 1**，6 条失败与修复前**逐条一致** |
+
+  - `m5` 是**本次修复自身的承重证明**：变绿源于夹具重锚，**不是**规则被削弱的副作用；亦构成反例锚定（将来若禁用重建或让重建空转，`--self-test` 必须回到 18/24）
+- **文件改动面**：`git diff --numstat` = `99/14`，仅 `scripts/registry_batch_verify.py`（972 → **1057** 行；sha256 `6fa9f254…` → `35d234b3…`）+ 新增证据文件 `.github/plans/t4973-batches/self-test-reanchor.md`
+- **全量门禁**：`--self-test` / `pipeline.validate_registry` / `pytest -q` / `ruff format --check .` / `ruff check .` / `mypy pipeline/` / `registry_row_audit --audit --expect-clean` → **全部 exit 0**
+- **不动**：`red-green.md`（T0.11 冻结交付，其记录的实测值不改）；§1155 中 T0.2 的 972 行 / sha256 保留为交付时点事实并加后记

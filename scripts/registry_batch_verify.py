@@ -38,7 +38,10 @@ Exit codes: ``0`` = every assertion holds, ``1`` = violations (all printed with
 ``file:line``), ``2`` = usage or I/O error.
 
 Read-only and deterministic apart from ``--check-urls``.  ``--self-test`` runs
-built-in assertions anchored on *real* corpus rows (see ``SELF_TEST_CASES``).
+built-in assertions anchored on *real* corpus rows (see ``SELF_TEST_CASES``);
+the handful of samples whose anchor row was later repaired by the data cleanup
+are re-created in a throw-away copy of the corpus (see
+``SELF_TEST_RESTORED_CASES``) so their assertions keep matching real rows.
 """
 
 from __future__ import annotations
@@ -628,6 +631,76 @@ SELF_TEST_CASES: tuple[tuple[str, str, tuple[str, ...], bool, tuple[str, ...]], 
     ("compliant: definitions", "definitions", ("aspect-ratio",), True, ()),
 )
 
+#: Indices into ``SELF_TEST_CASES`` whose malformed sample was a *real* corpus row
+#: that a later data repair removed.  T0.7a/T0.7b deleted the ``指“en”`` rows and
+#: T0.9/T0.10 fixed the 6-column block plus the left-shifted row, so those three
+#: anchor rows no longer exist on HEAD and their assertions went red **without any
+#: rule changing**.  Re-creating the defects in a throw-away copy of the real
+#: corpus keeps every assertion and its ``file:line`` anchor literally identical,
+#: and makes the fixture immune to the next round of data repairs.
+SELF_TEST_RESTORED_CASES: frozenset[int] = frozenset(
+    {
+        0,  # malformed: 6-column row (poloidal-field-power-supply)
+        1,  # malformed: left-shifted row (energy-security)
+        3,  # malformed: boilerplate + 指“en” + non-whitelisted source (adjoint-flux)
+    }
+)
+
+
+def _build_restored_defect_corpus(real_root: Path, dest: Path) -> Corpus:
+    """Copy the real corpus to ``dest`` and re-create three historical defects.
+
+    The re-created defects are exactly the ones the self-test's malformed samples
+    were originally anchored on:
+
+    * ``poloidal-field-power-supply`` — the concepts row lost its
+      ``category``/``status``/``source`` tail (6 columns instead of 8);
+    * ``energy-security`` — the row was left-shifted, so the zh slot holds the
+      English name instead of ``能源安全``;
+    * ``adjoint-flux`` — the zh definition was the low-information template that
+      leaked the language label (``聚变/核工程术语，指“en”这一技术概念。``).
+
+    Only the copies under ``dest`` are mutated; ``real_root`` is never written.
+    Row counts are preserved, so every ``file:line`` anchor in
+    ``SELF_TEST_CASES`` still resolves to the same line.
+    """
+    source_registry = real_root / "terms" / "registry"
+    registry = dest / "terms" / "registry"
+    registry.mkdir(parents=True, exist_ok=True)
+
+    # ``split("\n")`` / ``"\n".join`` rather than ``splitlines``: the latter also
+    # splits on \x0b / \x0c / \u2028 / \u2029, which would shift line numbers.
+    concepts = (
+        (source_registry / "concepts.tsv").read_text(encoding="utf-8").split("\n")
+    )
+    for index, line in enumerate(concepts):
+        fields = line.split("\t")
+        if len(fields) <= COL_EN:
+            continue
+        if fields[0] == "poloidal-field-power-supply":
+            concepts[index] = "\t".join(fields[:6])  # defect: 6 columns
+        elif fields[0] == "energy-security":
+            fields[COL_ZH] = fields[COL_EN]  # defect: zh slot holds the English name
+            concepts[index] = "\t".join(fields)
+    (registry / "concepts.tsv").write_text("\n".join(concepts), encoding="utf-8")
+
+    definitions = (
+        (source_registry / "definitions.tsv").read_text(encoding="utf-8").split("\n")
+    )
+    for index, line in enumerate(definitions):
+        fields = line.split("\t")
+        if len(fields) <= DEF_COL_TEXT or fields[0] != "adjoint-flux":
+            continue
+        if fields[DEF_COL_LANG] == "zh":
+            # defect: low-information template that leaked the language label
+            fields[DEF_COL_TEXT] = f"{BOILERPLATE_ZH_MARK}，指“en”这一技术概念。"
+            definitions[index] = "\t".join(fields)
+    (registry / "definitions.tsv").write_text("\n".join(definitions), encoding="utf-8")
+
+    for name in ("allowlist_zh.txt", "allowlist_en.txt"):
+        shutil.copyfile(real_root / "terms" / name, dest / "terms" / name)
+    return Corpus(dest)
+
 
 def _expected_tokens(corpus: Corpus, mode: str, ids: Sequence[str]) -> list[Violation]:
     if mode == "names":
@@ -705,21 +778,33 @@ def run_self_test(corpus: Corpus) -> int:
     )
 
     print("self-test: mode verdicts on real corpus rows")
-    for label, mode, ids, expect_ok, expected in SELF_TEST_CASES:
-        violations = _expected_tokens(corpus, mode, ids)
-        ok = not violations
-        expect(
-            ok == expect_ok,
-            f"[{mode}] {label} -> {'PASS' if expect_ok else 'FAIL'}",
-            f"got {'PASS' if ok else 'FAIL'} with {[v.render() for v in violations]}",
-        )
-        fired = {f"{v.rule}@{_suffix(v.location, 'terms/')}" for v in violations}
-        for token in expected:
+    restored_root = Path(tempfile.mkdtemp(prefix="t0_2_selftest_restored_"))
+    try:
+        # Three samples sit on rows that later data repairs removed (see
+        # SELF_TEST_RESTORED_CASES); they run against a copy of the real corpus in
+        # which those defects are re-created.  The rules — and every assertion,
+        # including its file:line anchor — are unchanged.
+        restored = _build_restored_defect_corpus(corpus.root, restored_root)
+        for index, (label, mode, ids, expect_ok, expected) in enumerate(
+            SELF_TEST_CASES
+        ):
+            sample = restored if index in SELF_TEST_RESTORED_CASES else corpus
+            violations = _expected_tokens(sample, mode, ids)
+            ok = not violations
             expect(
-                token in fired,
-                f"[{mode}] {label} -> rule {token}",
-                f"fired={sorted(fired)}",
+                ok == expect_ok,
+                f"[{mode}] {label} -> {'PASS' if expect_ok else 'FAIL'}",
+                f"got {'PASS' if ok else 'FAIL'} with {[v.render() for v in violations]}",
             )
+            fired = {f"{v.rule}@{_suffix(v.location, 'terms/')}" for v in violations}
+            for token in expected:
+                expect(
+                    token in fired,
+                    f"[{mode}] {label} -> rule {token}",
+                    f"fired={sorted(fired)}",
+                )
+    finally:
+        shutil.rmtree(restored_root, ignore_errors=True)
 
     print("self-test: --check-urls branch (synthetic fixture, no network)")
     tmp_root = Path(tempfile.mkdtemp(prefix="t0_2_selftest_"))
