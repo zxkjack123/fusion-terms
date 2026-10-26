@@ -94,8 +94,16 @@ git status --porcelain .github/plans/t4973-batches/   # 应无输出（幂等）
    `线辐射`；en：`DT,Hmode,Lmode,MMS,SMS,diffusion,pbli,q_95`），其中 4 条被 denylist 过滤。
    这正是 `coverage_pct`（47.11%）与 `allowlist_only_coverage_pct`（46.26%）两个口径差异的来源。
 3. **169 个 concept 的 `preferred_zh == preferred_en` 且均不含 CJK**（`rfx-mod`、`c-2w`、`rexie`、
-   `kmax`、`exl-50` …，多为装置代号）。**裁决 D2-6=A**：`--mode names` 的 CJK 硬判据**保持字面不变**，
-   由 **W3 为这 169 个 id 补中文首选名**（不豁免、不改判据）。⇒ 这 169 个 id 属 W3 的必做项。
+   `kmax`、`exl-50` …）。**裁决 D2-6=A**：`--mode names` 的 CJK 硬判据**保持字面不变**，
+   由 **W3 为这 169 个 id 补中文首选名**（不豁免、不改判据）。
+   **实测归属（2026-10-26 复核）**：这批 id **不在** `w3.ids`（交集 **0**），其中 **9** 个在 `w2.ids`、
+   **4** 个在 W1 集、**156** 个不在任何现存工作集。
+   按 category：`code` **97** / `device` 30 / `company` 23 / `organization` 6 / `facility` 1 /
+   `material` 5 / `concept` 5 / `method` 2。其中 **30 个为专名**（company/organization/facility）。
+   ⇒ 关闭 D2-6=A **需要新增工作集 `w3b.ids`（169 个 id，按 20/批 = 9 个批文件）**，
+   由计划 **T3.0** 生成并验收（现存 5 个集合均无法承接）。生成前不得开始 W3 的 D2-6 部分。
+   **注意**：30 个专名即使被补上中文首选名，**仍不得进入 IME 词表**（用户裁决②：专名不入 IME 词表）
+   —— 这是两条互不冲突的口径（前者管 `--mode names` 的 CJK 判据，后者管 `allowlist_*.txt` 的构建）。
 4. **`definitions.tsv` 的来源白名单在批验收器内是闭合集合**（接受 `corpus` / `GB/T-` / `ITER-` /
    `IAEA-` 前缀，**不含任何 `internal:*`**）；现有 **4535 行**以 `internal:dict-improvements` 为 source。
    **裁决 D2-8=A**：进入 W1 批次的行可用 **`corpus`**（该 concept 的 registry `notes` / 既有 zh 释义
