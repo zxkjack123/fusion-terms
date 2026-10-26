@@ -193,6 +193,8 @@ files_sha256:
 | D2-3 | 剩余 1517 行"低信息但未损坏"的 zh 模板释义（762 行 `指“X”` + 755 行 `对应英文“X”`）是否在后续批次重写 | 用户裁决的本批 W1 范围为 757 concept（746 en + 10 缺失 + 48 zh 损坏）；1517 行**不在**本批范围 | **A. 本批不动，登记为后续批次（推荐）**<br>B. 本批顺带重写（W1 规模 ×2 ≈ 1514 行） | 无（本批 W1 任务不受阻） |
 | D2-4 | W1 的**抽检比例与验收人** | 用户口径"须设计可核验产出 + 抽检比例" | **A. 每批 100% 过机械门禁 + 每 5 批抽检 10%（≥8 行）由独立 agent 复核语义**（推荐）<br>B. 全量人工复核（成本 ≈ 766 行）<br>C. 仅机械门禁 | W1 批次验收（T1.x） |
 | D2-5 | W3 中文名的**来源等级**要求 | 854 个 concept：107 行可从仓内 `GB/T-4960.9` zh 释义推导；747 行无仓内出处 | **A. 允许 `preferred_en` + 权威仓外来源（Wikipedia/IAEA/ITER URL）作为命名依据，URL 须 200（推荐）**<br>B. 仅允许仓内出处（则 747 行无法完成，需缩范围） | W3 批次（T3.x） |
+| D2-6 | `--mode names` 的 **CJK 硬要求** 对 169 个 `preferred_zh == preferred_en` 且无 CJK 的 id（装置代号 `rfx-mod`/`c-2w`/`rexie`/`kmax`/`exl-50` …）如何处置（T0.2 执行时发现） | 169 个 id 实测各 1 个、含 CJK **0** 个；`--allow-latin-names` 名单**救不了**（按字面实现：CJK 为无条件要求） | **A. 维持字面 + 由 W3 为这 169 个补中文首选名（推荐，保真计划）**<br>B. 令 `--allow-latin-names` 名单同时豁免 CJK（装置代号保留拉丁名；一处改动，可逆） | W3 批次（T3.x）+ W3 验收 |
+| D2-7 | W1 批次**是否连 zh 行一起重写**（T0.0/T0.2 执行时发现的口径冲突） | W1 集合由 **en 套话**构成（746 条）；这些 concept 的 zh 行多为 `指“X”` 模板（属 D2-3 延后的 1517 行）。而 `--mode definitions` 要求该 id 的 en/zh **同时**合规 → 冲突 | **A. W1 连 zh 一起重写**（本批 +≈700 行、预估 +≈18 h，一次到位）<br>**B. W1 批次改用 `--lang en` 验收**，zh 模板留给后续批次（本批不扩范围） | W1 全部批次（T1.x） |
 
 > 上述 D2-1~D2-5 由父代理（或用户）裁决后回写本节；未裁决前按"推荐项"执行**但**在 commit message 与本节标注 `[默认取推荐项，待追认]`。
 >
@@ -1037,4 +1039,43 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 > 由 Dev Orchestrator / Task Executor 在执行过程中追加；每条含 `[YYYY-MM-DD HH:MM] Task X.Y — [STATUS]` + 命令原文 + 实测输出（≥3 行）。
 > 结构化失败项请用 ```json fenced block 落 `error_id/error_type/summary/root_cause_guess/confidence/retry_suggestion/blocked_downstream/task_id/attempted_fixes`，供 `mode=improve` 解析。
 
-（尚无记录）
+### T0.0 — ✅ DONE（2026-10-26 15:50）
+- 委派 `simulation-builder`；交付 `scripts/registry_coverage_report.py`（700 行，sha256 `527ea6b808195f8c6bd3c30b352dcc544392509dfaf0a587a6cfb062ce8f41ae`）
+- 命令：`.venv/bin/python scripts/registry_coverage_report.py` → exit 0
+  实测：`total 3076 | covered 1449 | uncovered 1627 | coverage_pct 47.11 | W2 584 (multiword 527 / single 57) | W3a 854 | proper_excluded 35 | allowlist_only_coverage_pct 45.71 | covered_plus_uncovered_check PASS`
+- **计划 §D1 更正（权威数字以本条为准）**：原 `46.3%` 系误算——假设「179 行畸形必然全未覆盖」，实测其中 **25 行**经中文 alias 已存在于 `domain_terms.txt`（如 `structural-material` ← `结构材料`），故 `uncovered = 1473(规范) + 154(畸形) = 1627`。另 `proper_excluded` 为 **35**（非任务书所述 36）。
+- 能失败证明：`--terms-file /dev/null` → `coverage_pct 0.0`（证明非硬编码）
+- ruff format/check exit 0；commit `40ae0ea`
+
+### T0.1 — ✅ DONE（2026-10-26 16:00）
+- 委派 `simulation-builder`；交付 `scripts/registry_row_audit.py`（460 行，sha256 `94386631b22da695c3e5357d7bab7d69b8db00678e6adf0dd9a96154d0a48a25`）
+- `.venv/bin/python scripts/registry_row_audit.py --audit` → exit 0
+  实测：`data_rows 3076 | cols_dist {8: 2996, 6: 80} | malformed_cols 80 | bad_category 99 | en_boilerplate 746 | zh_en_corruption 48 | glued_source_rows 427 | non5_cols 215 | concepts_without_defs 10`
+  **修复前锚点**：`concept_ids_sha256 = c1c4e359d22283dace5c872512c905c2d6c377844bfd943d9f9b1c288f9e259b`（T0.4/T0.5 修复后必须不变）
+- `--expect-clean` → **exit 1**（未修复前必须失败，RED 证据已录）
+- 能失败证明（变异法）：副本中 1 行 8 列改 6 列 → `malformed_cols 80 → 81`
+- commit `b88e97c`
+
+### T0.2 — ✅ DONE（2026-10-26 16:20）
+- 委派 `simulation-builder`；交付 `scripts/registry_batch_verify.py`（972 行，sha256 `6fa9f254a7e880c5660d761cf5bc5bee37c80c9cf4ea3e272fbc7644fe08c7b3`）
+- `--self-test` → exit 0（24/24 断言）；`poloidal-field-power-supply`（真实 6 列行）→ **FAIL exit 1**（输出 `concepts.tsv:3316: concept_cols … expected 8 columns, found 6`）；`half-value-layer` → PASS exit 0
+- 能失败证明（实现回退）：套话正则改 `^$` → self-test 22/24 失败；改回后 sha256 与交付一致
+- 超出字面规格的 3 条守卫（加强，非放宽）：`concept_cols`（必须恰 8 列）、`def_lang_placeholder`（zh 含 `指“en”`）、`def_source_unknown`（source 白名单为闭合集合，**不含任何 `internal:*`**）
+- **口径澄清（本执行者独立复核）**：占位符为**拉丁串**的 zh 定义数量很大（`infiniband`/`makefile`/`marfe`/`s-alpha-beta`/`sdk` …），属 D2-3 已裁决**延后**的「低信息但未损坏」类，**不是** 48 行损坏类；W1 的 zh 损坏口径维持 **48 行**（`指“en”` 字面语言标签）
+- commit `3f4e022`
+
+### T0.3 — ✅ DONE（2026-10-26 16:30）
+- 交付 `.github/plans/t4973-batches/`（117 文件 = 112 批文件 + 5 集合文件 + README）
+- 生成命令：`.venv/bin/python scripts/registry_coverage_report.py --emit-lists .github/plans/t4973-batches --batch-size 20`
+- `wc -l {w1_a,w1_b,w1_c,w2,w3}.ids` → `67 679 10 584 854`；`sort w2.ids w3.ids | uniq -d | wc -l` → `0`；`cat w1_b_b*.ids | wc -l` → `679`
+- 批数实测：`w1_a 4 / w1_b 34 / w1_c 1 / w2 30 / w3 43` = **112 批**（`--batch-size` 为单一全局参数，故统一取 20；README 为批数唯一权威）
+- 能失败证明（变异法）：副本删 `w1_b_b34.ids` 一行 → `679 → 678`
+- commit `2bd593b`
+
+### ⏸ 待裁决（阻塞 W1/W3 批次口径，未裁决前不进入 Phase 1/3）
+1. **169 个 `preferred_zh == preferred_en` 且无 CJK 的 id**（`rfx-mod`/`c-2w`/`rexie`/`kmax`/`exl-50` …，多为装置代号）：`--mode names` 的 CJK 是硬要求 → 这些 id 永远无法通过；`--allow-latin-names` 按字面实现救不了。选项 A：维持字面 + 由 W3 为其补中文名；选项 B：令该名单同时豁免 CJK。
+2. **W1 批次是否连 zh 行一起重写**：W1 的 `--mode definitions` 验收要求该 id 的 en/zh 行**同时**合规，而 W1 集合由 **en 套话**构成；这些 concept 的 zh 行多为 `指“X”` 模板（属 D2-3 延后的 1517 行）→ 若不重写 zh，**W1 批次无法通过验收**（口径冲突）。选项 A：W1 连 zh 一起重写（本批 +≈700 行、预估 +≈18 h）；选项 B：W1 批次改用 `--lang en` 验收，zh 模板留给后续批次。
+
+### 已识别的环境/流程事实（跨会话须知）
+- `scripts/batch_verify` 的 `def_source_unknown` 使 `internal:dict-improvements`（现有 **4583 行**）在 W1 批次内不可接受 → W1 改写时必须换为真实出处（与 D2-5 一致）
+- PM 服务当前延迟劣化（p50 ≈ 9.6 s，偶发 15 s 超时）→ PM 写操作须先读回、避免批量
