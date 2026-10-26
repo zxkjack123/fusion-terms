@@ -2,9 +2,9 @@
 plan_schema_version: "1.0"
 linked_spec: null
 scope_mode: "HOLD"
-generated_at: "2026-10-26T05:10:00Z"
-git_commit: "3cb3837"
-mode: "refine"
+generated_at: "2026-10-26T12:05:00Z"
+git_commit: "66197f2"
+mode: "improve"
 pm_tasks: ["T-4973"]
 files_sha256:
   terms/registry/concepts.tsv: "auto (执行时实测)"
@@ -16,7 +16,7 @@ files_sha256:
   artifacts/translation_dict.json: "auto (执行时实测)"
 ---
 
-> 🔵 **状态：Phase 0（W0）✅ DONE（2026-10-26，收尾 commit `b175bab`）；D2-8 已裁决（2026-10-26，选项 A）⇒ Phase 1（W1）可开工。** — 本文件由 Plan Architect `mode=refine` 基于 PM 任务 **#T-4973** 的既有批次细化而来。
+> 🔵 **状态：Phase 0（W0）✅ DONE（2026-10-26，收尾 commit `b175bab`）；D2-1 ~ D2-8 全部已裁决（选项 A，见文末《待裁决落地记录》）⇒ Phase 1（W1）可开工。** — 本文件由 Plan Architect `mode=refine` 基于 PM 任务 **#T-4973** 的既有批次细化而来，并于 **`mode=improve`（2026-10-26，基线 `66197f2`）** 依据 W0 实测现实改口径：D2-7=A（W1 双侧重写 ⇒ 每批拆为 en/zh 两个 ≤30 min 子任务）、D2-8=A（来源白名单收窄）、D2-6=A（169 个拉丁名 id 补中文首选名）、批清单以 `.github/plans/t4973-batches/README.md` 为唯一权威（**119 批 / 2348 ids**）。
 > W0 执行记录见文末 `## Execution Log` §「W0 数据完整性修复 + 门禁加严 — T0.4 ~ T0.13」；门禁 RED→GREEN 可复跑证据见 `.github/plans/t4973-batches/red-green.md`。
 > ~~所有基线数字为 **2026-10-26 在 HEAD `3cb3837`** 实测~~ → **W0 后的权威数字以文末「W0 收口数字」为准**（覆盖率 47.11%、W2 738、W3a 854 等）。
 
@@ -26,8 +26,8 @@ files_sha256:
 
 - **问题/需求描述**：
   1. **数据完整性缺陷（最高优先）**：`terms/registry/concepts.tsv` 有 **179/3076** 行畸形（99 行缺 `category` 列导致列左移、80 行仅 6 列），静默穿过 `pipeline/validate_registry.py` 门禁，污染下游已发布产物。
-  2. **definitions 质量缺陷**：746 行 en 通用套话 + 48 行 zh 模板残留（把语言标签 `en` 当术语名渲染）+ 10 个 concept 无任何 definitions。
-  3. **registry → allowlist 覆盖率仅 46.3%**：1652/3076 行未进入 IME 词表（含 179 行畸形行必然缺失）。
+  2. **definitions 质量缺陷**：746 行 en 通用套话 + 48 行 zh 模板残留（把语言标签 `en` 当术语名渲染；**已于 W0 清零**）+ 10 个 concept 无任何 definitions。
+  3. **registry → allowlist 覆盖率仅 47.11%**：1627/3076 行未进入 IME 词表（W0 前为 46.3%/1652 行；64 行畸形行走 alias 已覆盖，故 W0 修复后未覆盖数下降 25 行）。
 - **根因分析（已取证，verdict=SURVIVED）**：
   - 唯一引入者 = commit **`f90e903`**（"registry: complete bilingual definition retrofit for all 3064 concepts"）。该 commit 对 `concepts.tsv` 是**纯追加**（`+472/-0`，其中 358 行数据行）。实测：父提交 `f2308c0` 畸形 **0**、`f90e903` 畸形 **179**、HEAD 畸形 **179**。
   - 机制 = 追加源列序与 8 字段表头不一致，且门禁只校验 `len(fields) >= 2`，无 schema/取值校验 → 静默通过。
@@ -35,12 +35,13 @@ files_sha256:
   - 48 条 zh 释义损坏**全部落在 80 行 6 字段块内**（48/48），机制 = 生成器把该行的 `preferred_zh` 槽位值（= `en`）渲染进模板 `聚变/核工程术语，指“X”这一技术概念。`。既有 2706 行与 f90e903 同步新增的 179 行规范队列**污染率 0**，故非生成器普遍缺陷，而是**该 80 行块的输入畸形**所致。
 - **目标**：
   1. **W0**：179 行畸形全部归零；48 条损坏 zh 释义归零；`evidence.tsv` 列数/来源规范化；`validate_registry` 门禁加严到**可机械判定且能失败**（RED 证据来自真实畸形语料）；重跑导出链使已污染产物指标归零。
-  2. **W1**：757 个 concept 的 definitions 重写（用户裁决：**全部重写**，不接受保留套话）。
-  3. **W2**：584 行 registry→allowlist 机械补齐（排除 36 专名），重跑 `export_registry` → `build_terms` → `sync_to_fcitx`。
-  4. **W3**：854 个 concept 的中文首选名起草（用户裁决：并入本批次），要求可核验产出 + 抽检比例 + 分批 ≤30 min。
+  2. **W1**：**756** 个 concept 的 definitions 重写（用户裁决：**全部重写**，不接受保留套话）；**D2-7=A：en/zh 双侧同时重写**（每批 en 侧 + zh 侧各一个 ≤30 min 子任务）。
+  3. **W2**：**738** 行 registry→allowlist 机械补齐（排除 **35** 专名），重跑 `export_registry` → `build_terms` → `sync_to_fcitx`。
+  4. **W3**：854 个 concept 的中文首选名起草（用户裁决：并入本批次），**另含 D2-6=A 要求的 169 个拉丁装置代号补中文首选名**，要求可核验产出 + 抽检比例 + 分批 ≤30 min。
 - **非目标（不做什么）**：
-  - **不**把专名（company 25 / organization 7 / facility 3，共 35~36 行）写入 IME 词表 —— 用户已裁决专名不入 IME 词表。
-  - **不**改写 1517 行"低信息但未损坏"的 zh 模板释义（`聚指“X”` 除 48 条外的 762 行 + `对应英文“X”` 755 行）—— 用户裁决的 W1 范围为 757 concept；本批不动，仅登记为后续候选（见 §待裁决 D2-3）。
+  - **不**把专名（company 25 / organization 7 / facility 3，共 35 行）写入 IME 词表 —— 用户已裁决专名不入 IME 词表。
+  - **不**改写 W1 工作集**之外**的 zh 模板释义 —— D2-7=A 已把落在 `w1_a∪w1_b∪w1_c` 内的 **631** 行 `指“X”` 模板纳入 W1；**剩余 886 行**（131 `指“X”` + 755 `对应英文“X”`）本批不动，仅登记为后续候选（见 §待裁决 D2-3）。
+  - **不**在 W2/W3 批次中扩大 16 类之外的结构改动，也**不**为通过验收而启用 `--allow-latin-names`（D2-6=A：判据保持字面）。
   - **不**重构 `pipeline/` 的导出架构 —— 只做 schema 解析加固所需的最小改动（列数/取值门禁），不改导出语义。
   - **不**新增 pipeline 之外的第三方工具；不使用 verl 等无关工具（PCI 约束）。
   - **不**本批次处理 `aliases.tsv`（未发现结构性缺陷；仅做只读校验）。
@@ -52,7 +53,12 @@ files_sha256:
   - `tests/test_registry_validator.py`（12 个用例，`tmp_path` 内联 TSV 模式）、`tests/fixtures/`（`corpus/`、`terms/`）：复用为门禁 RED/GREEN 的落地位置。
   - `artifacts/terminology_sources/{iter_glossary_raw.tsv, iaea_safety_glossary_raw.tsv, gbt4960_9_terms.tsv}`（142/876/561 条）：复用为 W1/W3 的**仓内可核验出处**。
 
-## 数据基线（全部为 2026-10-26 HEAD `3cb3837` 实测，附复现命令）
+## 数据基线（W0 修复前快照 @ HEAD `3cb3837`；D/E 已按 W0 后权威值更新）
+
+> **时效口径（improve 轮新增，务必先读）**：
+> - §A/§B/§C/§F/§G 为 **W0 修复前**（`3cb3837`）的实测基线，保留作历史对照与 RED 证据；W0 后现状另见文末 §「W0 收口数字」。
+> - §D/§E 中影响后续 Phase 规模的行（D1–D4、E2–E4）**已按 W0 后权威值更新**；若与文末 §「W0 收口数字」冲突，**一律以「W0 收口数字」为准**。
+> - 一切数字在执行时重测（见 §动态基线约定）；本轮 improve 未改动 §Execution Log 任何历史条目，历史条目逐字可追溯。
 
 ### A. concepts.tsv 结构性缺陷
 
@@ -95,8 +101,8 @@ files_sha256:
 
 | # | 断言 | 实测值（口径见上） | 参照口径差异 |
 |---|------|-------------------|-------------|
-| D1 | 未覆盖 = 未覆盖规范行 + 179 畸形行 | **1473 + 179 = 1652 / 3076 → 覆盖率 46.3%** | 旧口径（仅 `preferred_*` 命中 allowlist）为 1493+179=1672 → 45.6%；任务书给的 1670/45.7% 属该口径，**已作废** |
-| D2 | **W2**（可机械补齐）：未覆盖规范行 ∩ `preferred_zh` 非空 ∩ 非专名 | **584**（其中 `preferred_en` 含空格 **527**、单词形 **57**） | 任务书 595 系旧口径 |
+| D1 | 未覆盖（**W0 修复后权威值**） | **1627 / 3076 → 覆盖率 47.11%**（W0 前为 1652/46.3%，系"179 畸形行必然全未覆盖"的误算：实测其中 25 行经中文 alias 已覆盖）⇒ `uncovered = 1473(规范) + 154(畸形)` | `allowlist_only_coverage_pct` = **46.26**（W0 后权威值；任务书 1670/45.7% 属该口径，**已作废**） |
+| D2 | **W2**（可机械补齐）：未覆盖 ∩ `preferred_zh` 非空 ∩ 非专名（**W0 后权威值**） | **738**（其中 `preferred_en` 含空格 **668**、单词形 **70**） | W0 前为 584（527/57）；**738 为权威值**（畸形行修复后变为可计数） |
 | D3 | 专名排除 | **35**（company 25 / organization 7 / facility 3） | 任务书 36 |
 | D4 | **W3a**（需起草中文首选名）：未覆盖规范行 ∩ `preferred_zh` 为空 | **854**（其中 107 行已有**真实 zh 释义**可推导；747 行仅 `对应英文“X”` 模板） | 任务书 860 系旧口径 |
 | D5 | W3 组合口径修正 | **本计划 W3 = 854**（**不含** 99 左移行与 80 六列行，理由见 §基线修正 R-1/R-2） | 任务书 1039 = 860+99+80 |
@@ -107,8 +113,8 @@ files_sha256:
 |---|------|--------|----------|
 | E1 | 数据行 / 列数 | **6132** 行，全部 4 列 | `awk -F'\t' '!/^#/ && NF>0 {print NF}' terms/registry/definitions.tsv \| sort \| uniq -c` |
 | E2 | en 通用套话 | **746** 行（746 个 concept） | `grep -c "Fusion/nuclear engineering term referring to" terms/registry/definitions.tsv` |
-| E3 | zh 模板残留 `指“en”` | **48** 行（⊂ E2 的 concept 集，全部落在 80 行 6 列块内） | `grep -cP '\tzh\t.*指“en”' terms/registry/definitions.tsv` |
-| E4 | zh 模板族总量（低信息但未损坏，本批**不动**） | **1565** = 810 `指“X”` + 755 `对应英文“X”` | `grep -c "聚变/核工程术语" terms/registry/definitions.tsv` |
+| E3 | zh 模板残留 `指“en”`（**W0 后权威值**） | **0**（W0 前 48 行，⊂ E2 的 concept 集，全部落在 80 行 6 列块内；已由 `T0.7a`/`T0.7b` 重写清零，commit `a0cdab5`/`c2c4b7e`） | `grep -cP '\tzh\t.*指“en”' terms/registry/definitions.tsv` → `0` |
+| E4 | zh 模板族总量（`聚变/核工程术语` 标记；**W0 后权威值**） | **1517** = 762 `指“X”` + 755 `对应英文“X”`（W0 前为 1565 = 810 + 755；差值 48 = E3 已修复的 `指“en”` 行）。**其中 631 行落在 W1 工作集内**（实测：`w1_a∪w1_b∪w1_c` 的 746 条 zh 行中 631 行匹配该标记）⇒ 由 D2-7=A 并入 W1 重写；**剩余 886 行**（131 `指“X”` + 755 `对应英文“X”`）仍属 D2-3 延后范围 | `grep -c "聚变/核工程术语" terms/registry/definitions.tsv` |
 | E5 | 完全无 definitions 的 concept | **10**：`cate`,`pactole`,`pactiter`,`tract`,`oscar`,`acp-source-term`,`acp-deposition-coefficient`,`acp-erosion-coefficient`,`dissolution-precipitation-coefficient`,`acp-filter-model` | `comm -23 <(awk -F'\t' '!/^#/&&NF>0{print $1}' terms/registry/concepts.tsv \| sort -u) <(awk -F'\t' '!/^#/&&NF>0{print $1}' terms/registry/definitions.tsv \| sort -u)` |
 | E6 | W1 的仓内出处可分性 | 746 en 套话中 **67** 行有真实 zh 释义（源 `GB/T-4960.9`）→ 可仓内推导；**679** 行仅有 zh 模板 → 须外部出处。**87** 行已带 http 证据 URL，**659** 行仅有 `internal:` 引用 | W0 T0.1 审计脚本 `--audit` |
 | E7 | 来源字段现状 | `definitions.tsv` source 分布：`internal:dict-improvements` 4583 / `IAEA-safety-glossary` 856 / `GB/T-4960.9` 551 / `ITER-glossary` 142 | `cut -f4 terms/registry/definitions.tsv \| sort \| uniq -c \| sort -rn \| head` |
@@ -149,11 +155,11 @@ files_sha256:
 |---|-----------|---------|-----------|
 | R-1 | 99 左移行"其'中文名'实为英文串，须重新命名" | 99 行的**第 1 列就是正确中文**（如 `energy-security␉能源安全␉energy security`）；被当成"中文名"的英文串是**下游按位取列**（`parts[2]`）的投影，不是文件内容 | 99 行**无需重新命名**，只需列对齐（T0.2 补 `category` 并删多余空列）。W3 因此不含这 99 行 |
 | R-2 | W3 = 1039（含 +80 六列行） | 80 六列行的 `preferred_zh` 槽位被 `en` 占据，且其 48 行的 zh 释义损坏**依赖这些中文名**才能修 | 80 行的中文名与 schema 修复**同批放在 W0**（破环依赖），W3 = 854（108 偏移已在 §D5 说明） |
-| R-3 | 覆盖率 45.7%（1670 行未覆盖） | 口径 `preferred_*` 命中 allowlist：1493+179 = 1672 → 45.6%；口径含 `concept_id`/alias：1473+179 = 1652 → 46.3% | **本计划以"是否进入 build 出的 `domain_terms.txt`"为唯一口径**（最贴近"IME 是否覆盖"），值 46.3%；W2/W3 规模按该口径重算（584/854），与任务书差 ≤2% |
+| R-3 | 覆盖率 45.7%（1670 行未覆盖） | W0 后权威口径（含 `concept_id`/alias 命中 `domain_terms.txt`）：**1627 未覆盖 → 47.11%**；`allowlist_only` 口径 46.26% | **本计划以"是否进入 build 出的 `domain_terms.txt`"为唯一口径**（最贴近"IME 是否覆盖"），**值 47.11%**；W2/W3 规模按该口径重算（**738 / 854**），与任务书差 ≤2% |
 | R-4 | `definitions.tsv` 747 行 en 套话 | 严格模板匹配（`^Fusion/nuclear engineering term referring to '.*' in technical context\.$`）为 **746** 行；宽松前缀 `grep -c "in technical context"` 亦为 746 | 取 **746**；旧"747"多计的 1 行不存在（无变体模板，`grep -v` 反查为 0 行） |
 | R-5 | "已发布产物消费者可见" | `translation_dict.json` 入库（公开可见）；`query_expansions.json`/`tag_rules.jsonl` 被 gitignore；v2026.10.25 发布包**不含** registry 导出物（见 B6） | 污染**公开可见面**仅为 `translation_dict.json`；重跑导出链仍必要（本地/未来发布包） |
 | R-6 | `code` 类 9 个概念待裁决（含 `opencascade`） | `opencascade` **已覆盖**（其 alias `OCC` 在 `allowlist_en.txt`），真正未覆盖的是 **8** 个：`vmec,desc,simsopt,cate,pactole,pactiter,tract,oscar`；且 `code` 类共 107 个 concept 中 **99 个已覆盖**；`MCNP` 在 `allowlist_en.txt` 与 `allowlist_zh.txt` **都**存在（`mcnp` 小写不存在） | 待裁决清单收敛为 8 个 id，且**先例强度**已量化（99/107 已入表）→ §待裁决 D2-1 |
-| R-7 | W2 595 行 | 584 行；其中 527 行 `preferred_en` 含空格（须连字符 token 化），57 行为单词形，**其中 21 行为通用英文词**（`design/system/material/performance/...`），且 `system`、`mode` 已在 `denylist.txt` 中 | 新增 §待裁决 D2-2（通用词是否入 EN 词表） |
+| R-7 | W2 595 行 | **738** 行（W0 后权威值；W0 前为 584）；其中 **668** 行 `preferred_en` 含空格（须连字符 token 化），**70** 行为单词形（其中 D2-2 列出的 21 个通用英文词为 W0 前口径，W0 后单词形总数以实测 70 为权威、通用词清单以 §D2-2 列举为准），且 `system`、`mode` 已在 `denylist.txt` 中 | 见 §待裁决 D2-2（通用词是否入 EN 词表） |
 
 ## 风险与对策表
 
@@ -162,13 +168,13 @@ files_sha256:
 | RK1 | W0 修 179 行时误改规范行 | 中 | 高（数据回归） | 只做**定点行替换**（行号 + concept_id 双锚），改后跑 `scripts/registry_row_audit` 断言 `规范行=2897+179=3076` 且 concept_id 集合与改动前 `diff` 为空 | audit 报 concept_id 集合变化 |
 | RK2 | 门禁加严导致 CI 变红（本仓 CI 曾连续 4 次红灯，刚于 run #43 恢复） | 中 | 高 | 顺序纪律：**先修数据（T0.2–T0.5）再改门禁（T0.6–T0.7）**；每次 commit 前本地跑全量 G1–G5 | `ruff format --check`/CI 红 |
 | RK3 | `ruff format --check .` 会格式化 **Markdown 内 python 代码块**（0.17.2 行为）→ 新计划/脚本被记为未格式化 | 高 | 中 | 新脚本按 `ruff format` 输出写；本计划文件提交前跑 `ruff format .github/plans/terminology-coverage-and-definition-quality.md`（先例 commit `8f51d52`） | `ruff format --check .` 报本文件 |
-| RK4 | W1/W3 定义/名称的来源不可核验（"看起来对"） | 高 | 高 | 每批强制过 `scripts/registry_batch_verify.py`（模板正则黑名单 + 最小长度 + 来源白名单 + `--check-urls` 200 断言）；无网络环境改用仓内出处（`GB/T-4960.9`/`ITER-glossary`/`IAEA-safety-glossary`） | 批验收 exit ≠ 0 |
+| RK4 | W1/W3 定义/名称的来源不可核验（"看起来对"） | 高 | 高 | 每批强制过 `scripts/registry_batch_verify.py`（模板正则黑名单 + 最小长度 + 来源白名单）；**来源口径按 D2-8=A 收窄**：接受仓内依据 `corpus`（该 concept 的 registry `notes` / 既有 zh 释义）与 `GB/T-4960.9`/`ITER-glossary`/`IAEA-safety-glossary`；**仅当释义显式引用外部权威时**才要求可 200 的 URL（此时才跑 `--check-urls`，无网环境用 `--no-net` 并标 `[NO-NET]`） | 批验收 exit ≠ 0 |
 | RK5 | W2 向 `allowlist_en.txt` 注入空白项 → `build_terms` `SystemExit` | 中 | 高 | W2 仅写**连字符 token**（含空格者用 `concept_id`）；批验收含 `grep -v '^#' terms/allowlist_en.txt \| grep -c ' '` = 0 | `build_terms` 抛 whitespace |
 | RK6 | W2/W3 批量追加引入重复行 | 中 | 中 | 追加前 `sort | uniq -d` 断言；批验收含唯一性检查 | 重复行非空 |
 | RK7 | 修复后导出物数量大幅变化触发 snapshot 测试红 | 中 | 中 | 先跑 `pytest -q tests/test_export_registry*`；如为 hardcode 基线则按数据事实更新并记录 | pytest 相关用例失败 |
 | RK8 | 47 处"隐式依赖"：179 行被 alias/evidence 引用 | 低 | 中 | 只改 `concepts.tsv` 列结构，不动 `concept_id`，故 alias/evidence 外键不变（`validate_registry` 会校验 `concepts without evidence`） | validate_registry 报缺失 evidence |
 | RK9 | W3 起草 854 个中文名产生"机翻腔"或与既有别名冲突 | 中 | 中 | 与 `aliases.tsv` 既有 zh 别名做冲突检查（先例：`grep -P '^击穿\t'`）；抽检 ≥10% 且抽检不通过则整批返工 | 抽检 FAIL 行数 > 0 |
-| RK10 | 长时间批处理会话上下文耗尽（38+ 批次） | 高 | 中 | 每批次独立 session（批清单落地为文件，会话无状态依赖）；每 5 批一次 `git status` + 全量门禁 | 批次验收命令报错 |
+| RK10 | 长时间批处理会话上下文耗尽（**119 批**，以 `.github/plans/t4973-batches/README.md` 为权威） | 高 | 中 | 每批次独立 session（批清单落地为文件，会话无状态依赖）；每 5 批一次 `git status` + 全量门禁 | 批次验收命令报错 |
 
 ### Error & Rescue Map（关键失败路径映射）
 
@@ -178,7 +184,7 @@ files_sha256:
 | 修复 80 六列行 | category 取值越界 | 门禁红 | Y | 16 类白名单 + 兄弟 concept 对照（同 domain 已有规范行） | `validate_registry` 报错 |
 | 修 48 zh 释义 | 中文名与 `preferred_zh` 不一致 | 语义漂移 | Y | 断言 zh 释义中出现的术语名 == 该 concept 的 `preferred_zh` | 批验收 exit 1 |
 | evidence 列数规范化 | 插入空列破坏 `quote` 语义 | 语义漂移 | Y | 只做「列数 4→5 / 2→5」的**空 `quote` 补齐**，不改 `source`/`added_by`/`added_at` 值 | diff 仅新增空字段 |
-| 门禁加严 | 现有 11 处测试 fixture 仍用 ≤4 列 evidence | 测试红 | Y | T0.7 同步更新 `_MINIMAL_EVIDENCE` 等 fixture（声明文件内改动） | pytest 红 → 按 T0.7 修复 |
+| 门禁加严 | 现有 11 处测试 fixture 仍用 ≤4 列 evidence | 测试红 | Y | T0.7 同步更新 `_MINIMAL_EVIDENCE` 等 fixture（声明文件内改动）—— **实际由 `T0.9`+`T0.10` 同一 commit `08a2e98` 落地**；实际范围含 8 个测试文件的机械补 tab + 1 行陈旧 fixture 修正（`component`→`concept`），**以 §Execution Log（commit `08a2e98`）记的偏差为准**（用户已追认，见《W0 收尾裁决与追认》追认 1） | pytest 红 → 按 T0.7 修复 |
 | 导出链重跑 | `--translation-dict` 等 flag 遗漏 | 产物不更新 | Y | 固定命令串（见 T0.9）；断言三项污点指标归零 | 断言失败 |
 | W1 定义 | 出现 `internal:TODO` 占位 | 门禁红 | Y | `validate_registry` 已存在 `internal:TODO` 检查（`test_registry_validator.py:190`） | 报错阻断 |
 | W2 allowlist | 与 `denylist.txt` 冲突（`system`/`mode`） | 静默无效 | Y | 先 `grep -x` 查 deny；冲突项记入 D2-2 决策清单而非强写 | 无 |
@@ -208,7 +214,7 @@ files_sha256:
 |------|------------------|
 | 初期（T0.0–T0.5） | 先固化口径与审计脚本，再做数据修复。**先修数据后改门禁**（RK2）；T0.2/T0.3a 改列结构后立即跑全量门禁，确认无规范行回归 |
 | 中期（T0.6–T0.9） | 门禁加严是"能失败"的证明点：先录 RED（真实 179 行语料 fixture 必须 FAIL），再录 GREEN（修复后 live registry PASS）。导出链重跑后三项污点指标须归零，否则回溯 parse 位置 |
-| 后期（Phase 1–3） | W1/W3 是**人力密集型**（38 + 28 批），阻塞点 = 来源可达性（网络/URL 200）与批验收；W2 依赖 W0 的 `concepts.tsv` 修复结果（W2 清单口径须在 W0 后重算）。W3 依赖 W0（不得基于畸形行起草名字） |
+| 后期（Phase 1–3） | W1/W3 是**人力密集型**（W1 39 批 ×2 侧重写、W3 43 批 + D2-6 的 9 批；批数以 `.github/plans/t4973-batches/README.md` 为唯一权威），阻塞点 = 来源可达性（仅当释义显式引用外部权威时才需 URL 200）与批验收；W2 依赖 W0 的 `concepts.tsv` 修复结果（W2 清单口径须在 W0 后重算 —— 已由 commit `66197f2` 重生成）。W3 依赖 W0（不得基于畸形行起草名字） |
 | 收尾（Phase 4） | 发布包验证（`release_pack` + `verify_release_contract`）在最后；`sync_to_fcitx` 有本机副作用，放最后且先备份 |
 
 ## 执行计划
@@ -217,6 +223,7 @@ files_sha256:
 
 > **Phase 0 首步（强制）**：`git rev-parse HEAD` + `git status --porcelain` 实测；若 HEAD ≠ `3cb3837` 或工作区非空，先按 §动态基线约定重测 T0.1 审计基线并更新锚点（**行号锚点 3171/3316 仅在 HEAD `3cb3837` 成立**）。
 > **Phase 0 完成定义（一条命令）**：`.venv/bin/python scripts/registry_row_audit.py --audit --expect-clean` → exit 0（`malformed=0, shifted=0, sixcol=0, evidence_cols_non5=0, zh_en_corruption=0`）。
+> **门禁剖面（以 T0.11 落地记录为准，见 commit `a4ac8d8`）**：`--expect-clean` = **W0 结构集**（即本完成定义的 5 项 + `bad_category`/`glued_source_rows`）；`--expect-clean-all` = **全集**（W0 结构集 ∪ W1 质量指标 `en_boilerplate`/`concepts_without_defs`），**在 Phase 1 完成时使用**。原文"`--expect-clean` = 全部指标为 0"的字面表述**已作废**。
 
 #### Task T0.0: 覆盖率口径固化脚本（消除 45.6%/45.7%/46.3% 三套口径争议）
 
@@ -230,13 +237,14 @@ files_sha256:
 - **修改边界**：不得修改 `terms/` 与 `artifacts/` 下任何数据文件；不得修改 `pipeline/`；脚本只读。
 - **质量检查方式**：
   - 脚本输出必须能复现 §D1–D4 的实测值（1473/1652/46.3%/584/527/57/854/35）。
+    > **✅ 已完成（commit `40ae0ea`，见 §Execution Log T0.0）**：本条的期望值是**规划期（W0 前）**口径；W0 后现行值为 `covered 1449 / uncovered 1627 / coverage_pct 47.11 / W2 738 (668+70) / W3a 854 / proper_excluded 35`。两者差异已由 §D1/D2 与「W0 收口数字」记录，**以「W0 收口数字」为准**。
   - `ruff format --check scripts/registry_coverage_report.py` 与 `ruff check scripts/registry_coverage_report.py` 通过。
 - **验收标准**：
   - ✅ [脚本存在且可执行] `[T-A]` `.venv/bin/python scripts/registry_coverage_report.py` → exit 0，stdout 含 `coverage_pct: 46.3`（±0.1）且 `W2: 584`、`W3a: 854`（在 HEAD `3cb3837` 未修数据时）
   - ✅ [口径单调性] `[T-B]` `assert covered + uncovered == total == 3076`
   - ✅ [格式门禁] `[T-A]` `.venv/bin/ruff format --check scripts/registry_coverage_report.py` → exit 0
 - **能失败证明（反例锚定法）**：临时把 `--terms-file` 指向 `/dev/null`（覆盖率应变为 0），命令非 0 结束或 `coverage_pct: 0.0`；若能仍报 46.3 则脚本写死数字 → 判 FAIL。
-- **潜在风险**：`domain_terms.txt` 陈旧（未随 allowlist 重建）→ 本任务只读，若与 allowlist 不一致由 W2 T2.11 重建后重算。
+- **潜在风险**：`domain_terms.txt` 陈旧（未随 allowlist 重建）→ 本任务只读，若与 allowlist 不一致由 W2 尾任务 **T2.38** 重建后重算。
 - **预留歧义标注**：
   - [ ] 无歧义：所有字段可直接执行，无需额外推断
 
@@ -248,7 +256,7 @@ files_sha256:
 - **执行者**：Simulation Builder
 - **预估墙钟**：25 min
 - **修改内容**：
-  - 新增文件 `/home/gw/opt/fusion-terms/scripts/registry_row_audit.py`：对 `concepts.tsv` 输出 `data_rows / cols_dist / malformed_cols / bad_category / shifted_rows(行号区间) / sixcol_rows(行号区间) / concept_ids_sha256`；对 `evidence.tsv` 输出 `cols_dist / non5_cols / glued_source_rows`；对 `definitions.tsv` 输出 `en_boilerplate / zh_en_corruption / concepts_without_defs`；参数 `--audit`（打印 JSON）、`--expect-clean`（全部指标为 0 时 exit 0，否则 exit 1）、`--json PATH`。
+  - 新增文件 `/home/gw/opt/fusion-terms/scripts/registry_row_audit.py`：对 `concepts.tsv` 输出 `data_rows / cols_dist / malformed_cols / bad_category / shifted_rows(行号区间) / sixcol_rows(行号区间) / concept_ids_sha256`；对 `evidence.tsv` 输出 `cols_dist / non5_cols / glued_source_rows`；对 `definitions.tsv` 输出 `en_boilerplate / zh_en_corruption / concepts_without_defs`；参数 `--audit`（打印 JSON）、`--expect-clean`（**W0 结构集**指标全为 0 时 exit 0，否则 exit 1）、`--expect-clean-all`（**全集**指标为 0 时 exit 0；Phase 1 完成时使用）、`--json PATH`。
 - **修改边界**：只读脚本；不得写 `terms/`、`artifacts/`。
 - **质量检查方式**：`concept_ids_sha256` 用于证明「修复只改列结构、未增删 concept」。
 - **验收标准**：
@@ -293,18 +301,20 @@ files_sha256:
 - **预估墙钟**：20 min
 - **修改内容**：
   - 新增目录与文件 `/home/gw/opt/fusion-terms/.github/plans/t4973-batches/`：
-    - `w1_a.ids`（67 行，仓内可推导）、`w1_b.ids`（679 行，须外部出处）、`w1_c.ids`（10 行，缺失 definitions）
-    - `w1_a_b01.ids`…`w1_a_b03.ids`（23/22/22）、`w1_b_b01.ids`…`w1_b_b34.ids`（每批 20）
-    - `w2.ids`（584）、`w2_b01.ids`…`w2_b10.ids`（每批 58~59）
-    - `w3.ids`（854）、`w3_b01.ids`…`w3_b28.ids`（107 行按 36/36/35 分 3 批 + 747 行按每批 27 分 27 批 + 1 批余量→ 共 31 批，见 Phase 3 表）
+    - `w1_a.ids`（67 行，仓内可推导）、`w1_b.ids`（679 行，来源按 D2-8=A 可为仓内 `corpus`）、`w1_c.ids`（10 行，缺失 definitions）
+    - `w1_a_b01.ids`…`w1_a_b04.ids`（20/20/20/7）、`w1_b_b01.ids`…`w1_b_b34.ids`（每批 20，尾批 19）
+    - `w2.ids`（738）、`w2_b01.ids`…`w2_b37.ids`（每批 20，尾批 18）
+    - `w3.ids`（854）、`w3_b01.ids`…`w3_b43.ids`（每批 20，尾批 14；**内/外部依据不再按批文件分组**，混排）
     - `README.md`（清单口径、生成命令、批次总数）
   - 生成命令：`.venv/bin/python scripts/registry_coverage_report.py --emit-lists .github/plans/t4973-batches --batch-size 20`
+- **🔄 W0 后重生成（2026-10-26，commit `66197f2`；本条为本任务的唯一现行口径）**：W0 修复畸形行后该目录**已重生成**，规模变为 `w1_a 67→4 批` / `w1_b 679→34 批` / `w1_c 10→1 批` / **`w2 738→37 批`** / `w3 854→43 批` = **119 批 / 2348 ids**（`.ids` 文件 128 个 + 6 个非 `.ids` 文件）。**批数与每批大小一律以 `.github/plans/t4973-batches/README.md` 为唯一权威**；下方验收标准中的旧数字（`584` 等）为规划期实测值，**已被 README 取代**。生成器只增不删：重生成后若批数下降须人工清理残留 `*_b*.ids`（本次批数上升，无残留）。
 - **修改边界**：只新增 `.github/plans/t4973-batches/` 下文件；不得改动任何 `terms/`、`pipeline/`、`artifacts/` 文件。
 - **质量检查方式**：清单总行数与 §D 实测对齐；每批文件行数 == 批大小。
-- **验收标准**：
-  - ✅ [集合规模] `[T-A]` `wc -l .github/plans/t4973-batches/{w1_a,w1_b,w1_c,w2,w3}.ids` → 分别为 `67 679 10 584 854`（exit 0）
+- **验收标准**（旧数字保留作历史对照；现行批数以 README 为准）：
+  - ✅ [集合规模] `[T-A]` `wc -l .github/plans/t4973-batches/{w1_a,w1_b,w1_c,w2,w3}.ids` → 规划期为 `67 679 10 584 854`；**W0 后现行值为 `67 679 10 738 854`**
   - ✅ [无重复无交集] `[T-A]` `sort .github/plans/t4973-batches/w2.ids .github/plans/t4973-batches/w3.ids | uniq -d | wc -l` → `0`
   - ✅ [批次无遗漏] `[T-A]` `cat .github/plans/t4973-batches/w1_b_b*.ids | wc -l` → `679`
+  - ✅ [批数与 README 一致] `[T-A]` `for s in w1_a w1_b w1_c w2 w3; do echo "$s $(find .github/plans/t4973-batches -maxdepth 1 -name "${s}_b*.ids" | wc -l)"; done` → `4 / 34 / 1 / 37 / 43`（合计 **119**）
 - **能失败证明（反例锚定）**：故意删掉 `w1_b_b34.ids` 中一行 → 上一条断言必须变 678 而 FAIL。
 - **潜在风险**：`--batch-size` 与 Phase 表不一致 → 本任务的 `README.md` 记录实际批数与每批大小，Phase 1–3 的表格以它为准。
 - **预留歧义标注**：
@@ -409,7 +419,8 @@ files_sha256:
 
 #### Task T0.7a: 修复 48 条 `指“en”` 损坏 zh 释义（前 24 条）
 
-- **目标**：把 48 条把语言标签当术语名的 zh 释义重写为真实释义（**W0 范围**，属根因修复；W1 只负责 en 行）。
+- **目标**：把 48 条把语言标签当术语名的 zh 释义重写为真实释义（**W0 范围**，属根因修复）。
+  > **口径更新（D2-7=A，2026-10-26）**：本条原文"W1 只负责 en 行"的前提**已作废** —— W1 依 D2-7=A **en/zh 双侧同时重写**。相位分工仍清晰：**W0 修的是"损坏"**（48 条字面 `指“en”`，语言标签被当术语名，已清零）；**W1 面对的是"低信息模板"**（`指“X”` / `对应英文“X”`），其中落在 `w1_a∪w1_b∪w1_c` 内的 **631 行** `指“X”` 由 D2-7=A 纳入本批（其余 **886 行**仍属 D2-3 延后）。两者不重叠、不重复研究。
 - **依赖**：T0.6a/T0.6b（需要中文名）
 - **frontier**：是
 - **执行者**：Academic Writer
@@ -463,7 +474,7 @@ files_sha256:
 - **验收标准**：
   - ✅ [列数归零] `[T-A]` `.venv/bin/python scripts/registry_row_audit.py --audit` → `non5_cols=0`（exit 0）
   - ✅ [后缀归零] `[T-A]` `grep -c "internal:dict-improvements:" terms/registry/evidence.tsv` → `0`（计数值为 0）
-  - ✅ [行数不变] `[T-A]` `wc -l terms/registry/evidence.tsv` → `3168`
+  - ✅ [行数不变] `[T-A]` `.venv/bin/python scripts/registry_row_audit.py --audit` → **`evidence.data_rows == 3168`**（口径：audit 数据行数；`evidence.tsv` **文件** `wc -l` 恒为 **3217**，含 47 空行 + 2 注释行，修复前后均如此 —— 不得用文件 `wc -l` 断言 3168）
   - ✅ [门禁不退化] `[T-A]` `.venv/bin/python -m pipeline.validate_registry` → exit 0
 - **能失败证明（变异法）**：把一行改回 4 列 → `non5_cols` 必须变 1。
 - **潜在风险**：`quote` 字段被下游消费者误读为引用原文 → 本仓库 `quote` 现状多为空，语义为备注位；在 CHANGELOG 说明（T0.13）。
@@ -484,6 +495,7 @@ files_sha256:
     - evidence 校验：`len(r.fields) != 5` → `_fail(..., "expected 5 columns: concept_id, source, quote, added_by, added_at")`；
     - 保留既有 `internal:TODO` 与 URL 校验不变。
 - **修改边界**：不得改 `pipeline/export_registry.py` 的解析语义；不得改 aliases/definitions 既有规则；不得放宽任何现有检查。
+  > **⚠️ 实际范围以 §Execution Log（commit `08a2e98`）记的偏差为准（用户已追认，见《W0 收尾裁决与追认》追认 1）**：本条原声明"只改 `pipeline/validate_registry.py`"；实际落地时**同一 commit 另含** 8 个测试文件的合成 fixture 机械补 tab 改动（无逻辑/断言改动）与 1 行陈旧 fixture 的 `category` 修正（`component` → `concept`，真实语料 `central-solenoid` 实为 `concept`）。理由是本任务验收要求全仓 `pytest` exit 0 且 RK2 禁止红 CI。**本条不构成对 `pipeline/validate_registry.py` 声明以外的写入授权**；后续相位仍按原边界执行。
 - **质量检查方式**：`mypy pipeline/ --ignore-missing-imports` 0 错；本地全量门禁 G1–G5 全绿。
 - **验收标准**：
   - ✅ [GREEN：真实数据通过] `[T-A]` `.venv/bin/python -m pipeline.validate_registry` → exit 0，输出 `registry OK: 3076 concepts, …`
@@ -508,6 +520,7 @@ files_sha256:
     - `/home/gw/opt/fusion-terms/tests/fixtures/registry/pre_fix_concepts_sixcol.tsv` ← `git show f90e903:terms/registry/concepts.tsv | sed -n '3316,3318p'`
   - 修改 `tests/test_registry_validator.py`：更新 `_MINIMAL_EVIDENCE` 为 5 列；新增 `test_validate_registry_rejects_shifted_category_row`、`test_validate_registry_rejects_six_column_row`、`test_validate_registry_rejects_four_column_evidence`；每个用例从上述 fixture **按行读取真实文本**（用 `Path(...).read_text().splitlines()`，不得手写复制），并断言 stderr 含特定消息。
 - **修改边界**：只改 `tests/test_registry_validator.py` 与新增 `tests/fixtures/registry/` 下 2 个 fixture；不得改其它测试文件。
+  > **⚠️ 实际范围以 §Execution Log（commit `08a2e98`）记的偏差为准（用户已追认，见《W0 收尾裁决与追认》追认 1）**：实际另机械补 tab 修改 **8 个**测试文件的合成 fixture（无逻辑/断言改动），并把 1 行陈旧 fixture 的 `category` 由 `component` 改为 `concept`（真实语料 `central-solenoid` 实为 `concept`；`component` 不在 16 类白名单内，仅作为 `preferred_en` 出现）。**本条声明为计划期边界；实际已发生的扩展以 Execution Log 为准，不追溯放宽。**
 - **质量检查方式**：`pytest -q tests/test_registry_validator.py -v` 全绿；新增用例能对 fixture 内容变化**响亮失败**（fixture 被删/被改则用例 error）。
 - **验收标准**：
   - ✅ [全绿] `[T-A]` `.venv/bin/python -m pytest -q tests/test_registry_validator.py` → exit 0
@@ -573,7 +586,8 @@ files_sha256:
 - **执行者**：Dev Orchestrator
 - **预估墙钟**：20 min
 - **修改内容**：
-  - 文件 `CHANGELOG.md`：新增 W0 条目（数据修复 179 行、48 条 zh 释义、evidence 规范化 642 行、门禁加严、三项污点归零）。
+  - 文件 `CHANGELOG.md`：新增 W0 条目（数据修复 179 行、48 条 zh 释义、evidence 规范化 **429 行**、门禁加严、三项污点归零）。
+    > **口径**：`evidence.tsv` 规范化行数原文写「642 行」为**误计**，实测 **429 行**（`git diff --numstat 1e2cf30^ 1e2cf30` = `429 429`），以 §Execution Log「W0 收口数字」为准。
   - 文件 `.github/plans/terminology-coverage-and-definition-quality.md`：在 `## Execution Log` 追加 W0 记录（每条含命令与实测输出）。
   - commit（message 带 `#T-4973`），**一次 commit 只含本节声明的文件**。
 - **修改边界**：不得夹带未声明文件；`git diff --stat` 必须只含 `CHANGELOG.md`、计划文件、`terms/registry/*.tsv`、`pipeline/validate_registry.py`、`tests/test_registry_validator.py`、`tests/fixtures/registry/*`、`scripts/registry_*.py`、`artifacts/translation_dict.json`。
@@ -589,101 +603,101 @@ files_sha256:
 
 ### Phase 1: W1 — definitions 质量重写（用户裁决：全部重写）
 
-**范围清算（与任务书口径的对账）**
+**范围清算（与任务书口径的对账；W0 后权威值）**
 
-| 组 | 内容 | 行数 | 依据 |
-|----|------|------|------|
-| W1-A | 746 行 en 套话中，**已有真实 zh 释义**（源 `GB/T-4960.9`）的 67 个 concept → en 释义由仓内 zh 释义改写 | 67 行 | `§E6` 实测 |
-| W1-B | 746 行 en 套话中，**仅有 zh 模板**的 679 个 concept → 须外部出处 | 679 行 | `§E6` 实测 |
-| W1-C | 10 个**完全无 definitions** 的 concept → 新增 en+zh | 20 行 | `§E5` 实测 |
-| 小计 | 757 concept / **766 行** | 766 行 | W1-A+B+C |
-| （移出）| 48 条损坏 zh 释义 | — | **已在 Phase 0 T0.7a/T0.7b 完成**（根因修复，避免与 en 重写重复研究） |
-| （非目标）| 1517 行低信息 zh 模板 | — | 见 §待裁决 D2-3 |
+| 组 | 内容 | 概念数 | 双侧行数 | 依据 |
+|----|------|-------|---------|------|
+| W1-A | 746 行 en 套话中**已有真实 zh 释义**（源 `GB/T-4960.9`）的 67 个 concept → en 释义由仓内 zh 释义改写；zh 侧同步合规化 | 67 | 134（en 67 + zh 67） | §E6 + README |
+| W1-B | 746 行 en 套话中**仅有 zh 模板**的 679 个 concept → 释义依据按 **D2-8=A** 可为仓内 `corpus` | 679 | 1358（en 679 + zh 679） | §E6 + README |
+| W1-C | 10 个**完全无 definitions** 的 concept → 新增 en+zh 各 10 行 | 10 | 20（新增） | §E5 |
+| 小计 | **756 concept / ≈1512 行**（en 746 + zh 746 + W1-C 新增 20） | **756** | **1512** | W1-A+B+C |
+| 其中 zh 侧必改 | 本批 zh 行中匹配 `聚变/核工程术语` 模板者（**D2-7=A 纳入本批**） | — | **631** | improve 轮实测 |
+| （非目标） | 剩余 zh 模板（131 `指“X”` + 755 `对应英文“X”`） | — | 886 | 见 §待裁决 D2-3 |
 
-> 任务书"795 行（747 en + 48 zh）"→ 本计划为 **766 行（746 en + 20 新增）+ 48 zh 在 W0**，总行数一致（814 行），仅**相位归属**不同；差值 1 行 = §R-4（746 vs 747）。
+> **口径演进的账**（旧 → 新，供对账）：
+> - 任务书"795 行（747 en + 48 zh）" → 首次 refine 记为 **766 行**（746 en + 20 新增），48 zh 归 W0；差值 1 行 = §R-4（746 vs 747）。
+> - **本 improve 轮按 D2-7=A 更正为 ≈1512 行**：W1 每批 en/zh 双侧同时重写（en 746 + zh 746 + W1-C 新增 20）。**批数不变**（仍 README 的 4/34/1 = 39 批），但**每批墙钟**由"仅 en"上升到"双侧"，故按粒度门把每批拆为 `-EN` / `-ZH` 两个 ≤30 min 子任务（见下表）。
+> - `w1_b` 的 679 行来源要求**已收窄**（D2-8=A）：以该 concept 的 registry `notes` / 既有 zh 释义为依据时记为 `corpus`，**不再强制**逐条外部出处。
 
-**批次任务统一规格（下表每行即一个独立 Task）**
+**批次任务统一规格（D2-7=A：每批拆为 `-EN` / `-ZH` 两个 ≤30 min 子任务）**
 
-- **目标**：为该批 concept 的 `definitions.tsv` 行写出**真实、带可核验出处**的释义。
-- **依赖**：T0.9（门禁加严）、T0.10；同 wave 内批次相互独立。
-- **frontier**：同 wave 内为"是"（不同批次的 concept 集合不相交；但 `definitions.tsv` 为**同一文件**→ 实际执行须串行或分批 commit，禁止并发写同一文件）。
+- **目标**：为该批 concept 的 `definitions.tsv` 行写出**真实、带可核验出处**的释义；**en 侧与 zh 侧均须合规**（D2-7=A）。
+- **依赖**：Phase 0 全部完成（T0.13 已 DONE）；同批内 `-ZH` 子任务依赖同批 `-EN` 子任务完成（zh 释义需与 en 释义语义一致）；跨批无依赖（但见下 frontier 说明）。
+- **frontier**：**否**（`definitions.tsv` 为**同一文件** → 实际执行必须串行；同 wave 内即使 id 集合不相交也不得并发写同一文件）。
 - **执行者**：Academic Writer（技术释义）；Simulation Builder 负责落表与批验收。
-- **修改内容**：文件 `terms/registry/definitions.tsv`（**定点替换**该批 concept 的 `en` 行；W1-C 额外新增 `zh` 行）；必要时文件 `terms/registry/evidence.tsv` 追加出处 URL。
+- **修改内容**：
+  - `-EN` 子任务：文件 `terms/registry/definitions.tsv` —— **定点替换**该批全部 id 的 `en` 行。
+  - `-ZH` 子任务：同文件 —— **定点重写**该批全部 id 的 `zh` 行（含 `指“X”` 模板行）；W1-C 的 10 个 id 另**新增** en/zh 各 1 行。
+  - 仅在释义**显式引用外部权威**时，追加 `terms/registry/evidence.tsv` 出处行。
 - **修改边界**：
-  - 不得修改非本批 concept 的任何行；不得改 `zh` 行（W1-C 除外）；不得改 `preferred_zh`/`preferred_en`。
-  - **禁止** `internal:dict-improvements`、`internal:TODO` 作为新释义出处（前者正是套话批次的标记）。
+  - 不得修改非本批 concept 的任何行；不得改 `preferred_zh`/`preferred_en`/`category`。
+  - **禁止** `internal:dict-improvements`、`internal:TODO` 作为新释义出处。
   - 不得改动 `terms/registry/concepts.tsv`。
-- **质量检查方式**：批验收脚本 + 抽检（D2-4）。
-- **验收标准（每批同构，替换 `<mode>/<ids>/<N>`）**：
-  - ✅ [批验收] `[T-A]` `.venv/bin/python scripts/registry_batch_verify.py --mode definitions --ids-file .github/plans/t4973-batches/<ids> --expect <N> --check-urls` → **exit 0**
-  - ✅ [模板黑名单] `[T-B]` `assert 本批 en 行无一匹配 ^Fusion/nuclear engineering term referring to '.*' in technical context\.$`
-  - ✅ [全局门禁] `[T-A]` `.venv/bin/python -m pipeline.validate_registry` → **exit 0**
-  - ✅ [测试] `[T-A]` `.venv/bin/python -m pytest -q` → **exit 0**
-- **能失败证明（反例锚定）**：任取一批，把 1 行新释义改回套话 → 批验收必须 exit 1。
-- **潜在风险**：`--check-urls` 依赖网络；无网环境改用仓内出处（`GB/T-4960.9`/`ITER-glossary`/`IAEA-safety-glossary`）并在批记录中标注 `[NO-NET]`。
+  - **来源口径（D2-8=A，收窄）**：`source` ∈ {`corpus`, `GB/T-4960.9`, `ITER-glossary`, `IAEA-safety-glossary`, `http(s)://…`}；以该 concept 的 registry `notes` / 既有 zh 释义为依据时标 **`corpus`** 即可，**不要求** URL；**仅当释义显式引用外部权威时**才要求可 200 的 URL 或 `GB/T`/`ITER`/`IAEA`。
+- **质量检查方式**：批验收脚本（机械）+ 抽检（D2-4）。
+- **验收标准（每批同构；`-EN` 子任务跑前 3 条，`-ZH` 子任务跑 4~6 条）**：
+  - ✅ [EN 侧合规] `[T-A]` `.venv/bin/python scripts/registry_batch_verify.py --mode definitions --ids-file .github/plans/t4973-batches/<batch>.ids --expect <N> --lang en` → **exit 0**（**不默认加** `--check-urls`；仅当本批存在 http 来源时追加，无网环境加 `--no-net` 并在批记录标 `[NO-NET]`）
+  - ✅ [套话黑名单] `[T-B]` `assert 本批 en 行无一匹配 ^Fusion/nuclear engineering term referring to '.*' in technical context\.$`
+  - ✅ [门禁不退化] `[T-A]` `.venv/bin/python -m pipeline.validate_registry` → **exit 0**
+  - ✅ [ZH 侧合规] `[T-A]` `.venv/bin/python scripts/registry_batch_verify.py --mode definitions --ids-file .github/plans/t4973-batches/<batch>.ids --expect <N> --lang zh` → **exit 0**
+  - ✅ [zh 模板黑名单] `[T-B]` `assert 本批 zh 行无一含 聚变/核工程术语 标记`
+  - ✅ [**批收口：双侧同时合规**] `[T-A]` `.venv/bin/python scripts/registry_batch_verify.py --mode definitions --ids-file .github/plans/t4973-batches/<batch>.ids --expect <N>`（默认 `--lang both`）→ **exit 0**；`.venv/bin/python -m pytest -q` → **exit 0**
+- **能失败证明（反例锚定）**：任取一批，把 1 行新释义改回套话（en）或改回 `指“X”` 模板（zh）→ 对应侧批验收必须 exit 1，且**批收口（`--lang both`）必须 exit 1**。
 
-| Task | 组 | ids 文件 | 数量 | 预估墙钟 | 修改文件 |
-|------|----|---------|------|---------|---------|
-| T1.1 | W1-A 仓内可推导 | `w1_a_b01.ids` | 23 | 25 min | `terms/registry/definitions.tsv` |
-| T1.2 | W1-A | `w1_a_b02.ids` | 22 | 25 min | `terms/registry/definitions.tsv` |
-| T1.3 | W1-A | `w1_a_b03.ids` | 22 | 25 min | `terms/registry/definitions.tsv` |
-| T1.4 | W1-B 外部出处 | `w1_b_b01.ids` | 20 | 30 min | `terms/registry/definitions.tsv`（+`evidence.tsv`） |
-| T1.5 | W1-B | `w1_b_b02.ids` | 20 | 30 min | 同上 |
-| T1.6 | W1-B | `w1_b_b03.ids` | 20 | 30 min | 同上 |
-| T1.7 | W1-B | `w1_b_b04.ids` | 20 | 30 min | 同上 |
-| T1.8 | W1-B | `w1_b_b05.ids` | 20 | 30 min | 同上 |
-| T1.9 | W1-B | `w1_b_b06.ids` | 20 | 30 min | 同上 |
-| T1.10 | W1-B | `w1_b_b07.ids` | 20 | 30 min | 同上 |
-| T1.11 | W1-B | `w1_b_b08.ids` | 20 | 30 min | 同上 |
-| T1.12 | W1-B | `w1_b_b09.ids` | 20 | 30 min | 同上 |
-| T1.13 | W1-B | `w1_b_b10.ids` | 20 | 30 min | 同上 |
-| T1.14 | W1-B | `w1_b_b11.ids` | 20 | 30 min | 同上 |
-| T1.15 | W1-B | `w1_b_b12.ids` | 20 | 30 min | 同上 |
-| T1.16 | W1-B | `w1_b_b13.ids` | 20 | 30 min | 同上 |
-| T1.17 | W1-B | `w1_b_b14.ids` | 20 | 30 min | 同上 |
-| T1.18 | W1-B | `w1_b_b15.ids` | 20 | 30 min | 同上 |
-| T1.19 | W1-B | `w1_b_b16.ids` | 20 | 30 min | 同上 |
-| T1.20 | W1-B | `w1_b_b17.ids` | 20 | 30 min | 同上 |
-| T1.21 | W1-B | `w1_b_b18.ids` | 20 | 30 min | 同上 |
-| T1.22 | W1-B | `w1_b_b19.ids` | 20 | 30 min | 同上 |
-| T1.23 | W1-B | `w1_b_b20.ids` | 20 | 30 min | 同上 |
-| T1.24 | W1-B | `w1_b_b21.ids` | 20 | 30 min | 同上 |
-| T1.25 | W1-B | `w1_b_b22.ids` | 20 | 30 min | 同上 |
-| T1.26 | W1-B | `w1_b_b23.ids` | 20 | 30 min | 同上 |
-| T1.27 | W1-B | `w1_b_b24.ids` | 20 | 30 min | 同上 |
-| T1.28 | W1-B | `w1_b_b25.ids` | 20 | 30 min | 同上 |
-| T1.29 | W1-B | `w1_b_b26.ids` | 20 | 30 min | 同上 |
-| T1.30 | W1-B | `w1_b_b27.ids` | 20 | 30 min | 同上 |
-| T1.31 | W1-B | `w1_b_b28.ids` | 20 | 30 min | 同上 |
-| T1.32 | W1-B | `w1_b_b29.ids` | 20 | 30 min | 同上 |
-| T1.33 | W1-B | `w1_b_b30.ids` | 20 | 30 min | 同上 |
-| T1.34 | W1-B | `w1_b_b31.ids` | 20 | 30 min | 同上 |
-| T1.35 | W1-B | `w1_b_b32.ids` | 20 | 30 min | 同上 |
-| T1.36 | W1-B | `w1_b_b33.ids` | 20 | 30 min | 同上 |
-| T1.37 | W1-B（尾批） | `w1_b_b34.ids` | 19 | 30 min | 同上 |
-| T1.38 | W1-C 无 definitions | `w1_c.ids` | 10（+20 行） | 30 min | `terms/registry/definitions.tsv`（新增 en+zh 各 10 行）+ `evidence.tsv` |
+| Task | 组 | ids 文件 | ids 数 | 预估墙钟 | 修改文件 |
+|------|----|---------|-------|---------|---------|
+| T1.A1-EN … T1.A4-EN（4 个） | W1-A 仓内可推导 | `w1_a_b01.ids`…`w1_a_b04.ids` | 20 / 20 / 20 / 7 | 各 25 min | `terms/registry/definitions.tsv` |
+| T1.A1-ZH … T1.A4-ZH（4 个） | W1-A | 同上（与 `-EN` 同批同文件） | 同上 | 各 20 min | 同上 |
+| T1.B01-EN … T1.B34-EN（34 个） | W1-B | `w1_b_b01.ids`…`w1_b_b34.ids` | 20×33 / 19（尾批） | 各 25 min | `definitions.tsv`（+`evidence.tsv` 仅当显式引用外部权威） |
+| T1.B01-ZH … T1.B34-ZH（34 个） | W1-B | 同上 | 同上 | 各 20 min | 同上 |
+| T1.C1-EN | W1-C 无 definitions | `w1_c.ids` | 10 | 20 min | `definitions.tsv`（新增 en 10 行）+ `evidence.tsv` |
+| T1.C1-ZH | W1-C | `w1_c.ids` | 10 | 20 min | `definitions.tsv`（新增 zh 10 行） |
+| **小计** | — | — | — | **78 个 Task / 1755 min（≈29.3 h）** | — |
 
-**Phase 1 完成定义（一条命令）**：
+> **展开规则（消除下游猜测，逐字可执行）**：
+> - 序号↔文件一一对应：`T1.A<i>-{EN,ZH}` ↔ `.github/plans/t4973-batches/w1_a_b0<i>.ids`（i=1..4）；`T1.B<nn>-{EN,ZH}` ↔ `w1_b_b<nn>.ids`（nn=01..34，两位零填充）；`T1.C1-{EN,ZH}` ↔ `w1_c.ids`。
+> - `<N>` = 该 ids 文件行数（`wc -l` 实测：`w1_a` = 20/20/20/7；`w1_b` = 20×33 与尾批 19；`w1_c` = 10）。**批数与每批大小以 `.github/plans/t4973-batches/README.md` 为唯一权威**（合计 119 批 / 2348 ids）。
+> - `-EN` 子任务只改该批 id 的 `en` 行；`-ZH` 只改该批 id 的 `zh` 行；**批收口（`--lang both` 双侧同时合规）并入 `-ZH` 子任务的最后两条验收**。
+> - 拆分理由（粒度门）：D2-7=A 后每批实际改动 ≈ id 数 × 2 行（W1 合计 ≈1512 行），单任务墙钟 >30 min ⇒ 按 §Step 0a-2 拆为两个 ≤30 min 子任务，**验收标准不变**（批收口仍要求双侧同时合规）。尾批（7/19/10 id）估值偏保守，不另拆分。
+> - **串行纪律**：`definitions.tsv` 单文件 ⇒ 同批 `-EN`→`-ZH` 串行，跨批亦串行（frontier 均为否）。
 
-- ✅ `[T-A]` `.venv/bin/python scripts/registry_row_audit.py --audit` → `en_boilerplate=0 && concepts_without_defs=0`（exit 0）
+**Phase 1 完成定义（一条命令；`--expect-clean-all` = 全集闸门）**：
+
+- ✅ `[T-A]` `.venv/bin/python scripts/registry_row_audit.py --audit --expect-clean-all` → exit 0（`en_boilerplate=0 && concepts_without_defs=0`，且 W0 结构集仍为 0）
+- ✅ `[T-A]` **本批 zh 模板清零**（D2-7=A 的交付闸门；当前实测 631 行模板）：
+  ```bash
+  python3 -c "import csv;ids={l.strip() for f in ['w1_a','w1_b','w1_c'] for l in open(f'.github/plans/t4973-batches/{f}.ids') if l.strip()};rows=[r for r in csv.reader(open('terms/registry/definitions.tsv',encoding='utf-8'),delimiter='\t') if r and len(r)>2 and r[0] in ids];print(sum(1 for r in rows if r[1]=='zh' and '聚变/核工程术语' in r[2]))"
+  # 期望：0（W1 收尾时必须为 0；非 0 ⇒ 本 Phase 未完成）
+  ```
 - ✅ `[T-A]` `.venv/bin/python -m pipeline.validate_registry` → exit 0，且输出 `… 6132 + 20 = 6152 definitions`
 - ✅ `[T-A]` `.venv/bin/python -m pytest -q` → exit 0
 
-**逐 Task 验收命令展开规则（消除下游猜测；以上表每一行为一个 Task）**：把统一规格中的 `<ids>` 换为该行的 `ids 文件` 名、`<N>` 换为该行的 `数量`。**worked example（T1.4）**：
+**逐 Task 验收命令展开规则（消除下游猜测；上表每一行条目按展开规则生成具体 Task）**：把统一规格中的 `<batch>` 换为该子任务的 `ids 文件` 名、`<N>` 换为该文件的 `wc -l`。**worked example（T1.B01-EN / T1.B01-ZH）**：
 
 ```bash
+# T1.B01-EN：改 en 行，EN 侧闸门
 .venv/bin/python scripts/registry_batch_verify.py --mode definitions \
-  --ids-file .github/plans/t4973-batches/w1_b_b01.ids --expect 20 --check-urls
-# 期望 exit 0；若在无网环境：追加 --no-net 并把本批出处改为仓内出处（GB/T-4960.9 / ITER-glossary / IAEA-safety-glossary）
+  --ids-file .github/plans/t4973-batches/w1_b_b01.ids --expect 20 --lang en
+# T1.B01-ZH：改 zh 行，ZH 侧闸门
+.venv/bin/python scripts/registry_batch_verify.py --mode definitions \
+  --ids-file .github/plans/t4973-batches/w1_b_b01.ids --expect 20 --lang zh
+# 批收口（并入 T1.B01-ZH 验收）：双侧同时合规
+.venv/bin/python scripts/registry_batch_verify.py --mode definitions \
+  --ids-file .github/plans/t4973-batches/w1_b_b01.ids --expect 20   # 默认 --lang both
+# 三条均期望 exit 0。出处按 D2-8=A：仓内依据标 corpus 即可；仅当显式引用外部权威时加 --check-urls
+# （无网环境：--check-urls --no-net，并在批记录标 [NO-NET]）
 ```
 
-**批次提交纪律**：每批单独 commit，message 形如 `feat(registry): rewrite definitions batch W1-B-01 (#T-4973)`；`git diff --stat` 只含 `terms/registry/definitions.tsv`（必要时 +`evidence.tsv`）。
+**批次提交纪律**：每个子任务单独 commit（`-EN`、`-ZH` 各一次），message 形如 `feat(registry): rewrite definitions W1-B-01 en (#T-4973)` / `… zh (#T-4973)`；`git diff --stat` 只含 `terms/registry/definitions.tsv`（显式引用外部权威时才 +`evidence.tsv`）。
 
-**Phase 1 说明（抽检，落实 D2-4 推荐项）**：每 5 批（T1.5、T1.10、T1.15、T1.20、T1.25、T1.30、T1.35、T1.38 后）执行一次抽检：`scripts/registry_batch_verify.py --mode definitions --ids-file <最近 5 批 union> --sample 8 --semantic-digest`，产出 8 行摘要交独立 agent 复核语义正确性；复核 FAIL > 0 → 该 5 批返工（不得只改被抽中的行）。
+**Phase 1 说明（抽检，落实 D2-4）**：每完成 5 个**批**（即 10 个子任务；批序 B05/B10/B15/B20/B25/B30/C1 完成后各一次）执行一次抽检：
+`.venv/bin/python scripts/registry_batch_verify.py --mode definitions --ids-file <最近 5 批的 ids 文件并集> --expect <并集行数> --lang both` → exit 0，另取 **≥8 行**产出摘要交独立 agent 复核语义（zh 侧须与 en 侧同义、且与该 concept 的 `preferred_zh` 一致）；复核 FAIL > 0 → 该 5 批返工（不得只改被抽中的行）。
 
-### Phase 2: W2 — allowlist 机械补齐（584 行，排除 35 专名）
+### Phase 2: W2 — allowlist 机械补齐（738 行，排除 35 专名）
 
-> 依据 §D2：`preferred_zh` 非空且非专名的未覆盖规范行 584 条；其中 **527 条 `preferred_en` 含空格**（→ 入 `allowlist_en.txt` 时必须用**连字符 token**，禁止空白，见 RK5），**57 条单词形**（其中 21 条为通用英文词，见 §待裁决 D2-2；其中 `system`/`mode` 已在 `denylist.txt`，写入无效）。
+> 依据 §D2（**W0 后权威值**）：`preferred_zh` 非空且非专名的未覆盖行 **738** 条；其中 **668** 条 `preferred_en` 含空格（→ 入 `allowlist_en.txt` 时必须用**连字符 token**，禁止空白，见 RK5），**70** 条单词形（其中通用英文词清单见 §待裁决 D2-2；`system`/`mode` 已在 `denylist.txt`，写入无效）。W0 前为 584（527/57），**738 为权威值**。
+> **批清单唯一权威** = `.github/plans/t4973-batches/README.md`（W0 后已重生成，commit `66197f2`）：`w2.ids` = **738** → **37 批**（20×36 + 18）。计划期旧值（584 行 / 10 批 / 每批 58~59）**已作废**。
+> **⚠️ denylist 交互（README「执行批次时必须注意」第 1~2 条，实测）**：`W2_zh_in_denylist = 10`（`halo-current`/`line-radiation`/`system`/`calculation`/`material`/`simulation`/`mode`/`device`/`magnetic-moment`/`mode-number`）—— 这些 id 的中文名写入 `allowlist_zh.txt` 是**无效操作**（`build_terms` 先按 denylist 过滤）；`W2_denylist_en_conflicts = 2`（`system`/`mode`）。**须在批记录中单独标注，不得当成"漏写"**。
 
 **批次任务统一规格**
 
@@ -699,38 +713,46 @@ files_sha256:
   - ✅ [无重复] `[T-A]` `sort terms/allowlist_zh.txt | uniq -d | wc -l` → `0`
   - ✅ [IME 构建不炸] `[T-A]` `.venv/bin/python -m pipeline.build_terms --config config.toml` → **exit 0**
 - **能失败证明（变异法）**：临时向 `allowlist_en.txt` 追加一行 `corrosion product`（含空白）→ `build_terms` 必须 `SystemExit` 非 0。
-- **潜在风险**：批量 59 行/批 偏紧 → 允许拆为 30+29 并更新 README 批号。
+- **潜在风险**：批量 20 行/批（README 权威）；T2.0 须先把 denylist 冲突项（10 zh + 2 en）与 D2-1/D2-2 决策项标出，避免把它们计入"应写未写"。
 
-| Task | ids 文件 | 数量 | 预估墙钟 | 修改文件 |
-|------|---------|------|---------|---------|
-| T2.0（预检+重算） | — | — | 20 min | `.github/plans/t4973-batches/w2*.ids`（重算）、`w2-denylist-conflicts.tsv` |
-| T2.1 | `w2_b01.ids`（含 8 个 code id，待 D2-1） | 59 | 30 min | `terms/allowlist_zh.txt`、`terms/allowlist_en.txt` |
-| T2.2 | `w2_b02.ids`（含 21 个通用词中的一部分，待 D2-2） | 59 | 30 min | 同上 |
-| T2.3 | `w2_b03.ids` | 58 | 30 min | 同上 |
-| T2.4 | `w2_b04.ids` | 58 | 30 min | 同上 |
-| T2.5 | `w2_b05.ids` | 58 | 30 min | 同上 |
-| T2.6 | `w2_b06.ids` | 58 | 30 min | 同上 |
-| T2.7 | `w2_b07.ids` | 58 | 30 min | 同上 |
-| T2.8 | `w2_b08.ids` | 58 | 30 min | 同上 |
-| T2.9 | `w2_b09.ids` | 58 | 30 min | 同上 |
-| T2.10 | `w2_b10.ids`（尾批） | 59 | 30 min | 同上 |
-| T2.11 | 全量复算 | — | 25 min | `artifacts/domain_terms.txt`（重建）、`.github/plans/t4973-batches/coverage-after-w2.md` |
+| Task | ids 文件 | ids 数 | 预估墙钟 | 修改文件 |
+|------|---------|-------|---------|---------|
+| T2.0（预检+重算） | — | — | 20 min | `.github/plans/t4973-batches/w2-denylist-conflicts.tsv`（**只读复算，不改 ids 文件**：清单已由 commit `66197f2` 生成） |
+| T2.1 … T2.36（36 个） | `w2_b01.ids` … `w2_b36.ids` | 各 20 | 各 25 min | `terms/allowlist_zh.txt`、`terms/allowlist_en.txt` |
+| T2.37（尾批） | `w2_b37.ids` | 18 | 25 min | 同上 |
+| T2.38 | 全量复算 | — | 25 min | `artifacts/domain_terms.txt`（重建）、`.github/plans/t4973-batches/coverage-after-w2.md` |
+| **小计** | — | **738** | **39 个 Task / 985 min（≈16.4 h）** | — |
 
-**T2.0 验收**：✅ `[T-A]` `.venv/bin/python scripts/registry_coverage_report.py --json /tmp/cov-w2.json` → exit 0 且 `W2=584`（W0 修复后应更新为 **584 − 已由修复覆盖的行数**，以实测为准；差值必须能逐行解释）；✅ `[T-B]` 断言 `w2.ids` 与 `denylist.txt` 交集 == `{"system","mode"}`。
+> **展开规则**：`T2.<nn>` ↔ `.github/plans/t4973-batches/w2_b<nn>.ids`（nn=01..37，两位零填充）；`<N>` = `wc -l` 实测（b01..b36 = 20，b37 = 18）。**批数以 README 为唯一权威**。
+> **D2-1（8 个 code id，已裁决 A=入表）与 D2-2（36 个领域专指 + 8 code，通用词不入）** 的具体 id **分散在各批中**（非集中在前两批），批号须实测：
+> ```bash
+> for i in vmec desc simsopt cate pactole pactiter tract oscar; do \
+>   echo -n "$i: "; grep -l -x "$i" .github/plans/t4973-batches/w2_b*.ids; done   # 定位 D2-1 的 8 个 code id 所在批
+> ```
+> D2-1/D2-2 **不是**整批开关：命中批内**其余 id 照常写入**，仅对决策项按裁决处置（D2-1 = 写代号形式；D2-2 = 通用词不写 EN 侧），并在批记录标注。
+> **⚠️ 与 D2-6 的顺序耦合（Phase 3 的 W3b 集）**：W2 的 9 个 id 其 `preferred_zh` 目前是**拉丁串**（`vmec`/`desc`/`simsopt`/`c-2u`/`eu-demo`/`gamma-10`/`helion-trenta`/`k-demo`/`start-device`），而 D2-6=A 要求 W3b 为它们补中文首选名 ⇒ **对含这 9 个 id 的 W2 批次，须先完成 W3b 对它们的命名，再写 allowlist**（否则会写入随后作废的 zh 词条；若已先写，则须在 W3b 后重跑 T2.38 复算并清理）。定位命令：
+> ```bash
+> for i in vmec desc simsopt c-2u eu-demo gamma-10 helion-trenta k-demo start-device; do \
+>   echo -n "$i: "; grep -l -x "$i" .github/plans/t4973-batches/w2_b*.ids; done
+> ```
 
-**T2.11 验收**：
+**T2.0 验收**：
+- ✅ `[T-A]` `.venv/bin/python scripts/registry_coverage_report.py --json /tmp/cov-w2.json` → exit 0 且 **`W2=738`**（W0 后权威值；W2_multiword 668 / W2_single 70 / total 3076 / coverage_pct 47.11）；差值须能逐行解释。
+- ✅ `[T-B]` 断言 `w2.ids` 与 `denylist.txt` 的 EN 侧交集 == `{"system","mode"}`（实测 `W2_denylist_en_conflicts = 2`），且 zh 侧冲突清单 == README 所列 **10** 个 id。
 
-- ✅ [覆盖率提升] `[T-A]` `.venv/bin/python scripts/registry_coverage_report.py` → `coverage_pct ≥ 46.3 + 18.9（= 584/3076）`，即 **≥ 65.2%**（若 D2-1/D2-2 采用保守项则按实际 N 折算并在记录中写明）
-- ✅ [IME 词表增长] `[T-A]` `.venv/bin/python -m pipeline.build_terms --config config.toml && wc -l artifacts/domain_terms.txt` → 行数 ≈ `3462 + 584`（允许 zh/EN 冲突去重造成的少量偏差，偏差须逐条解释）
+**T2.38 验收（全量复算）**：
+
+- ✅ [覆盖率提升] `[T-A]` `.venv/bin/python scripts/registry_coverage_report.py` → `coverage_pct ≥ **70.0**`（新基线 47.11 + 738/3076 = 71.10 为理论上限；取 70.0 留 ~1.1 pp 给 denylist 过滤（10 个 zh 冲突 id 无法入表）与去重损耗。**该下限相对新基线为收紧换算，不构成门槛放宽**；旧值 65.0 系基于 46.3 基线，已作废。若 D2-1/D2-2 取保守项则按实际 N 折算并在记录中写明）
+- ✅ [IME 词表增长] `[T-A]` `.venv/bin/python -m pipeline.build_terms --config config.toml && wc -l artifacts/domain_terms.txt` → 行数 ≈ `3462 + 738`（允许 zh/EN 冲突去重与 denylist 过滤造成的少量偏差，偏差须逐条解释）
 - ✅ [发布契约不破] `[T-A]` `.venv/bin/python -m pytest -q` → exit 0
 
-**Phase 2 完成定义**：`.venv/bin/python scripts/registry_coverage_report.py --json /tmp/cov.json && python3 -c "import json;d=json.load(open('/tmp/cov.json'));assert d['coverage_pct'] >= 65.0"` → exit 0。
+**Phase 2 完成定义**：`.venv/bin/python scripts/registry_coverage_report.py --json /tmp/cov.json && python3 -c "import json;d=json.load(open('/tmp/cov.json'));assert d['coverage_pct'] >= 70.0"` → exit 0。
 
-**逐 Task 验收命令展开规则**：把统一规格中的 `<ids>` 换为该行 `ids 文件` 名、`<N>` 换为该行 `数量`。**worked example（T2.3）**：
+**逐 Task 验收命令展开规则**：把统一规格中的 `<ids>` 换为该行 `ids 文件` 名、`<N>` 换为该行 `ids 数`。**worked example（T2.3）**：
 
 ```bash
 .venv/bin/python scripts/registry_batch_verify.py --mode allowlist \
-  --ids-file .github/plans/t4973-batches/w2_b03.ids --expect 58
+  --ids-file .github/plans/t4973-batches/w2_b03.ids --expect 20
 grep -v '^#' terms/allowlist_en.txt | grep -c ' '        # 期望 0
 sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 .venv/bin/python -m pipeline.build_terms --config config.toml   # 期望 exit 0
@@ -738,10 +760,17 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 
 **批次提交纪律**：每批单独 commit，message 形如 `feat(registry): allowlist fill W2-batch-03 (#T-4973)`；`git diff --stat` 只含 `terms/allowlist_zh.txt` + `terms/allowlist_en.txt`。
 
-### Phase 3: W3 — 中文首选名起草（854 个 concept）
+### Phase 3: W3 — 中文首选名起草（W3a 854 个 + D2-6 集 169 个 = 1023 个 concept）
 
-> 依据 §D4/D5：**本计划 W3 = 854**（未覆盖规范行 ∩ `preferred_zh` 空 ∩ 非专名）。其中 **107** 行可从仓内 `GB/T-4960.9` zh 释义推导；**747** 行无仓内出处（仅 `对应英文“X”` 模板）。
+> 依据 §D4/D5：**W3a = 854**（未覆盖 ∩ `preferred_zh` 空 ∩ 非专名）。其中 **107** 行可从仓内 `GB/T-4960.9` zh 释义推导；**747** 行无仓内出处（仅 `对应英文“X”` 模板）⇒ 依 **D2-5=A** 允许 `preferred_en` + 权威仓外 URL（须 200）。
 > 任务书口径 1039（含 99 左移行 + 80 六列行）已按 §R-1/R-2 修正：99 行中文名**本就存在**（无需起草）；80 行中文名在 Phase 0 T0.6a/b 完成。
+> **D2-6=A（本轮 improve 新增范围，用户已裁决）**：`--mode names` 的 **CJK 硬判据保持字面不变**，由 W3 为 **169 个** `preferred_zh == preferred_en` 且无 CJK 的 id 补中文首选名；**不得走 `--allow-latin-names` 豁免**（该名单**不**得在 Phase 3 的任何批验收中出现）。
+> **⚠️ 实测构成（improve 轮核实，务必先读）**：这 169 个 id **全部不在** `w3.ids` 内（与 README「执行批次时必须注意」第 3 条的表述不符，以本条实测为准）。其分布：**132 个已覆盖**（未进入任何工作集）/ **9 个在 `w2.ids`**（`vmec`/`desc`/`simsopt`/`c-2u`/`eu-demo`/`gamma-10`/`helion-trenta`/`k-demo`/`start-device`）/ **28 个为专名**（`company`/`organization`/`facility`，属 `proper_excluded`，本批仅补中文首选名，**H2 仍禁止其入 IME 词表**）。因此该 169 集须**新增独立工作集 `w3b.ids`**（由 **T3.0** 生成）——既有 `w3.ids` 不含它们，直接对 `w3.ids` 跑 W3 无法覆盖 D2-6=A。
+> 复现命令（当前应输出 169；D2-6=A 完成后应为 0）：
+> ```bash
+> python3 -c "import csv,re;rows=[r for r in csv.reader(open('terms/registry/concepts.tsv',encoding='utf-8'),delimiter='\t') if r and not r[0].startswith('#')];print(sum(1 for r in rows if len(r)==8 and r[2]==r[3] and r[2] and not re.search(r'[\u3400-\u9fff]',r[2])))"
+> ```
+> **批清单唯一权威** = `.github/plans/t4973-batches/README.md`：`w3.ids` = **854** → **43 批**（20×42 + 14）；计划期旧值（`w3_a_b*`/`w3_b_b*` 命名、36/27 行每批、31 批）**已作废** —— 实际文件名统一为 `w3_b01.ids`…`w3_b43.ids`，**内/外部依据不再按批分组**（同一批内混排，执行时按该 id 是否有仓内 `GB/T` 出处选择依据）。
 
 **批次任务统一规格**
 
@@ -753,33 +782,48 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 - **质量检查方式**：批验收 `--mode names`；每批结束后与 `aliases.tsv` 做冲突扫描。
 - **验收标准（每批同构）**：
   - ✅ [批验收] `[T-A]` `.venv/bin/python scripts/registry_batch_verify.py --mode names --ids-file .github/plans/t4973-batches/<ids> --expect <N>` → **exit 0**
-  - ✅ [依据可核验] `[T-A]` 同上加 `--check-urls`（`--no-net` 时须为仓内出处）→ **exit 0**
+  - ✅ [依据可核验] `[T-A]` 同上加 `--check-urls`（`--no-net` 时须为仓内出处）→ **exit 0**；**禁止**追加 `--allow-latin-names`（D2-6=A：CJK 判据字面有效）
   - ✅ [无冲突未登记] `[T-A]` `wc -l .github/plans/t4973-batches/w3-name-conflicts.tsv` 与批记录中的冲突数一致（不允许"零冲突但输出非空"）
   - ✅ [门禁不退化] `[T-A]` `.venv/bin/python -m pipeline.validate_registry` → **exit 0**
 - **能失败证明（反例锚定）**：把某行 `preferred_zh` 改为英文串（如 `en`/`OpenCASCADE`）→ `--mode names` 必须 exit 1。
 - **潜在风险**：854 个命名的质量风险最高（RK9）→ 强制抽检。
 
-| Task | 组 | ids 文件 | 数量 | 预估墙钟 | 修改文件 |
-|------|----|---------|------|---------|---------|
-| T3.1 | 仓内可推导（GB/T） | `w3_a_b01.ids` | 36 | 30 min | `terms/registry/concepts.tsv` |
-| T3.2 | 仓内可推导 | `w3_a_b02.ids` | 36 | 30 min | 同上 |
-| T3.3 | 仓内可推导（尾批） | `w3_a_b03.ids` | 35 | 30 min | 同上 |
-| T3.4 | 外部依据 | `w3_b_b01.ids` | 27 | 30 min | `terms/registry/concepts.tsv`（+`evidence.tsv`） |
-| T3.5 … T3.30 | 外部依据 | `w3_b_b02.ids` … `w3_b_b27.ids` | 各 27 | 各 30 min | 同上 |
-| T3.31 | 外部依据（尾批） | `w3_b_b28.ids` | 18 | 25 min | 同上 |
+| Task | 组 | ids 文件 | ids 数 | 预估墙钟 | 修改文件 |
+|------|----|---------|-------|---------|---------|
+| T3.0 | **D2-6 集清单生成** | 生成 `w3b.ids` + `w3b_b01.ids`…`w3b_b09.ids` | 169 | 20 min | `.github/plans/t4973-batches/w3b*.ids`、`README.md`（新增 W3b 节） |
+| T3.1 … T3.43（43 个） | W3a（仓内 GB/T 或仓外权威，混排） | `w3_b01.ids` … `w3_b43.ids` | 20×42 / 14（尾批） | 各 30 min | `terms/registry/concepts.tsv`（+`evidence.tsv`） |
+| T3.44 … T3.52（9 个） | **D2-6 集**（拉丁装置代号补中文名） | `w3b_b01.ids` … `w3b_b09.ids` | 20×8 / 9（尾批） | 各 30 min | 同上 |
+| **小计** | — | — | **1023** | **53 个 Task / 1580 min（≈26.3 h）** | — |
 
-> **批次展开规则（消除下游猜测）**：上表"T3.5 … T3.30"为 26 个同构任务，逐批 ids 文件按 `w3_b_b02.ids`→`w3_b_b27.ids` 顺序一一对应；每批数量 27（`27×27 + 18 = 747` ✓）。批次号与数量以 `.github/plans/t4973-batches/README.md`（T0.3 产出）为**唯一权威**。
+> **展开规则**：`T3.<nn>` ↔ `.github/plans/t4973-batches/w3_b<nn>.ids`（nn=01..43，两位零填充）；`T3.(43+<k>)` ↔ `w3b_b<k>.ids`（k=01..09）；`<N>` = `wc -l` 实测（w3：b01..b42 = 20、b43 = 14；w3b：b01..b08 = 20、b09 = 9）。**批数以 README 为唯一权威**。
+> **T3.0 生成规则（确定性、可复跑）**：
+> ```bash
+> mkdir -p /tmp/opencode/t4973-w3b
+> python3 -c "import csv,re;rows=[r for r in csv.reader(open('terms/registry/concepts.tsv',encoding='utf-8'),delimiter='\t') if r and not r[0].startswith('#')];ids=[r[0] for r in rows if len(r)==8 and r[2]==r[3] and r[2] and not re.search(r'[\u3400-\u9fff]',r[2])];open('/tmp/opencode/t4973-w3b/w3b.ids','w').write('\n'.join(ids)+'\n');print(len(ids))"   # 期望 169
+> split -l 20 -d -a 2 --additional-suffix=.ids /tmp/opencode/t4973-w3b/w3b.ids /tmp/opencode/t4973-w3b/w3b_b
+> # 序号从 00 起 ⇒ 重命名为 w3b_b01.ids…w3b_b09.ids 后复制进 .github/plans/t4973-batches/，并同步更新 README（新增 W3b 节）
+> ```
+> **T3.0 验收**：✅ `[T-A]` `wc -l .github/plans/t4973-batches/w3b.ids` → `169`；✅ `[T-A]` 批数 `9`、大小 `20×8 + 9`；✅ `[T-A]` `comm -12 <(sort .github/plans/t4973-batches/w2.ids) <(sort .github/plans/t4973-batches/w3b.ids) | wc -l` → `9`（**实测交集**，与上条构成说明一致）；✅ `[T-A]` `comm -12 <(sort .github/plans/t4973-batches/w3.ids) <(sort .github/plans/t4973-batches/w3b.ids) | wc -l` → `0`。
+> **能失败证明（变异法）**：副本中删 `w3b_b01.ids` 一行 → `wc -l` 合计由 169 变 **168** 而 FAIL。
 
-**Phase 3 完成定义（一条命令）**：`.venv/bin/python scripts/registry_row_audit.py --audit --expect-clean` → `w3a_empty_zh=0`（exit 0）。
+**Phase 3 完成定义（一条命令）**：
 
-**Phase 3 抽检（≥10%，落实 D2-5）**：每 5 批抽检 ≥10%（≥14 行）由独立 agent 复核命名准确性（对照该 concept 的 `preferred_en` + 依据 URL 摘要）；抽检 FAIL → 该 5 批返工；`w3-name-conflicts.tsv` 中的冲突项**全部**须人工裁决后才能收尾。
+- ✅ `[T-A]` `.venv/bin/python scripts/registry_row_audit.py --audit --expect-clean-all` → exit 0（含 `w3a_empty_zh=0`；Phase 1/2 已完成，故全集闸门可满足）
+- ✅ `[T-A]` **D2-6=A 闸门**（169 → 0，命令见本节开头）：
+  ```bash
+  python3 -c "import csv,re;rows=[r for r in csv.reader(open('terms/registry/concepts.tsv',encoding='utf-8'),delimiter='\t') if r and not r[0].startswith('#')];print(sum(1 for r in rows if len(r)==8 and r[2]==r[3] and r[2] and not re.search(r'[\u3400-\u9fff]',r[2])))"
+  # 期望：0（非 0 ⇒ D2-6=A 未完成）
+  ```
 
-**逐 Task 验收命令展开规则**：把统一规格中的 `<ids>` 换为该行 `ids 文件` 名、`<N>` 换为该行 `数量`。**worked example（T3.4）**：
+**Phase 3 抽检（≥10%，落实 D2-5）**：每 5 批抽检 ≥10%（≥14 行）由独立 agent 复核命名准确性（对照该 concept 的 `preferred_en` + 依据 URL 摘要）；抽检 FAIL → 该 5 批返工；`w3-name-conflicts.tsv` 中的冲突项**全部**须人工裁决后才能收尾。**D2-6 集（T3.44…T3.52）额外要求**：抽检须确认中文名**确为可读中文术语名**（如装置代号 `rfx-mod` → 中文首选名），不得以拉丁串、拼音或无意义音译充数。
+
+**逐 Task 验收命令展开规则**：把统一规格中的 `<ids>` 换为该子任务 `ids 文件` 名、`<N>` 换为该文件 `wc -l`。**worked example（T3.4）**：
 
 ```bash
 .venv/bin/python scripts/registry_batch_verify.py --mode names \
-  --ids-file .github/plans/t4973-batches/w3_b_b01.ids --expect 27 --check-urls
-# 期望 exit 0；另需确认本批新增冲突已全部登记：wc -l .github/plans/t4973-batches/w3-name-conflicts.tsv
+  --ids-file .github/plans/t4973-batches/w3_b04.ids --expect 20 --check-urls
+# 期望 exit 0；**禁止**追加 --allow-latin-names（D2-6=A）
+# 另需确认本批新增冲突已全部登记：wc -l .github/plans/t4973-batches/w3-name-conflicts.tsv
 ```
 
 **批次提交纪律**：每批单独 commit，message 形如 `feat(registry): zh preferred names W3-外部-batch-01 (#T-4973)`；`git diff --stat` 只含 `terms/registry/concepts.tsv`（必要时 +`evidence.tsv`）。
@@ -797,13 +841,13 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 - **修改边界**：不修改任何 `terms/`、`pipeline/`、`artifacts/` 文件（除导出链重跑产物）。
 - **质量检查方式**：逐条跑下表。
 - **验收标准**：
-  - ✅ `[T-A]` `.venv/bin/python scripts/registry_row_audit.py --audit --expect-clean` → exit 0
+  - ✅ `[T-A]` `.venv/bin/python scripts/registry_row_audit.py --audit --expect-clean-all` → exit 0
   - ✅ `[T-A]` `.venv/bin/python -m pytest -q` → exit 0
   - ✅ `[T-A]` `.venv/bin/mypy pipeline/ --ignore-missing-imports` → exit 0
   - ✅ `[T-A]` `.venv/bin/ruff format --check .` → exit 0（含本计划文件；否则先 `ruff format` 本文件）
   - ✅ `[T-A]` `.venv/bin/ruff check .` → exit 0
   - ✅ `[T-A]` `.venv/bin/python3 -m pipeline.validate_registry` → exit 0（输出 `6152 definitions`）
-  - ✅ `[T-A]` `.venv/bin/python scripts/registry_coverage_report.py` → `coverage_pct ≥ 78.0`（584/3076 + 854/3076 = 46.3 + 18.9 + 27.8 ≈ 93.0% 理论上限；实际以 D2-1/D2-2/D2-5 裁决与去重为准，**下限取 78%** 作为"W2+W3 至少完成一半"的保守闸门）
+  - ✅ `[T-A]` `.venv/bin/python scripts/registry_coverage_report.py` → `coverage_pct ≥ 78.0`（**下限保持 78.0 不因基线更新而下调**；新理论值 = 47.11（W0 后基线）+ 738/3076 + 854/3076 ≈ **98.9%**，故 78.0 = 严格高于"W2+W3 潜力的一半（73.0）"的保守闸门。实际以 D2-1/D2-2/D2-5 裁决与去重为准）
 - **能失败证明**：任一门禁命令非 0 → T4.1 不得标记完成。
 - **潜在风险**：`coverage_pct` 与预期偏差大 → 逐项核对 W2/W3 是否被专名排除规则误吞。
 - **预留歧义标注**：
@@ -884,9 +928,9 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 | W0-9 | T0.11 | T0.11 | W0-8 | RED/GREEN 录制 |
 | W0-10 | — | T0.12 | T0.7b、T0.8、W0-8 | 导出链需数据全静 |
 | W0-11 | — | T0.13 | T0.11、T0.12 | W0 收尾 |
-| W1 | T1.x 批内串行 | T1.1 | W0-11 | `definitions.tsv` 单文件 → **串行**；跨 wave 无并行（同文件） |
-| W2 | T2.x 串行 | T2.1 | W0-11、T2.0 | allowlist 两文件 → 串行；T2.11 依赖全部批 |
-| W3 | T3.x 串行 | T3.1 | W0-11 | `concepts.tsv` 单文件 → 串行 |
+| W1 | T1.A*/T1.B*/T1.C* 全部串行 | `T1.A1-EN` | W0-11 | `definitions.tsv` 单文件 → **串行**（同批 `-EN` → `-ZH`，跨批亦串行）；无并行机会 |
+| W2 | T2.1…T2.37 串行 | T2.1 | W0-11、T2.0 | allowlist 两文件 → 串行；T2.38 依赖全部批（**若 W3b 先于含 9 个拉丁 id 的 W2 批执行，则 T2.38 须在 W3b 后复跑一次**，见 Phase 2 顺序耦合说明） |
+| W3 | T3.1…T3.52 串行 | T3.0 | W0-11、T3.0 | `concepts.tsv` 单文件 → 串行；W3a 43 批与 D2-6 集 9 批无相互依赖，但同文件 ⇒ 仍串行 |
 | W4 | T4.2、T4.3 | T4.1 | 全部 | T4.2/T4.3 在 T4.1 后**可真并行**（不同目标） |
 
 > **并行上限**：本次计划全程受"单文件写入"约束，实质并发度 ≈1（除 W0-1 的三脚本、W0-7 的两个不同文件、W4 的两项）。**不得为追求并发而拆分同一文件的批量写入**。
@@ -895,7 +939,7 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 
 - 本计划所有 `HEAD`/行号/计数均为 **2026-10-26 @ `3cb3837`** 的**生成时快照**；执行时**必须重测**：`git rev-parse HEAD`、`git status --porcelain`、`.venv/bin/python scripts/registry_row_audit.py --audit`。
 - 行号锚点（99 行 = 3171–3315、80 行 = 3316–3395）**仅在 `3cb3837` 成立**；实现时以 `concept_id` 为锚，行号仅作提示。
-- 前端数字（584/854/746/48/427/215 等）在 Phase 0 修复后会**变化**：每相位开始时用 `scripts/registry_coverage_report.py` 与 `registry_row_audit.py --audit` 重算，差值必须能逐行解释后再动手。
+- 前端数字（W2 738 / W3a 854 / en_boilerplate 746 / zh 模板 1517 / 631 / 169 等）为 **W0 后权威值**；每相位开始时用 `scripts/registry_coverage_report.py` 与 `registry_row_audit.py --audit` 重算，差值必须能逐行解释后再动手。
 
 ## Post-Execution Verification
 
@@ -903,10 +947,10 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 
 | ID | Description | Command | Expected |
 |----|-------------|---------|----------|
-| V1 | 结构完整性（W0 核心闸门） | `.venv/bin/python scripts/registry_row_audit.py --audit --expect-clean` | exit 0；`malformed_cols=0, bad_category=0, sixcol_rows=0, non5_cols=0, en_boilerplate=0, zh_en_corruption=0, concepts_without_defs=0` |
+| V1 | 结构完整性 + W1 质量（Phase 1 起用全集闸门） | `.venv/bin/python scripts/registry_row_audit.py --audit --expect-clean-all` | exit 0；`malformed_cols=0, bad_category=0, sixcol_rows=0, non5_cols=0, en_boilerplate=0, zh_en_corruption=0, concepts_without_defs=0` |
 | V2 | registry 门禁 | `.venv/bin/python -m pipeline.validate_registry` | exit 0；`registry OK: 3076 concepts, …, 6152 definitions` |
 | V3 | 单元测试（CI 同口径） | `.venv/bin/python -m pytest -q` | exit 0（≥159 + 新增用例） |
-| V4 | 覆盖率终值 | `.venv/bin/python scripts/registry_coverage_report.py` | exit 0；`coverage_pct ≥ 78.0` |
+| V4 | 覆盖率终值 | `.venv/bin/python scripts/registry_coverage_report.py` | exit 0；`coverage_pct ≥ 78.0`（下限不因基线更新而下调，见 T4.1） |
 | V5 | 类型检查 | `.venv/bin/mypy pipeline/ --ignore-missing-imports` | exit 0 |
 | V6 | 格式门禁（含 Markdown 内 python 块） | `.venv/bin/ruff format --check . && .venv/bin/ruff check .` | exit 0 |
 | V7 | 编译检查（CI 同口径） | `.venv/bin/python -m compileall -q pipeline tests` | exit 0 |
@@ -935,8 +979,8 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 |-------|-------------|------|
 | W0 | `.venv/bin/python scripts/registry_row_audit.py --audit --expect-clean` | exit 0（全部畸形指标 0） |
 | W1 | `.venv/bin/python scripts/registry_row_audit.py --audit` → 检查 `en_boilerplate=0 && concepts_without_defs=0` | exit 0 |
-| W2 | `.venv/bin/python scripts/registry_coverage_report.py --json /tmp/c.json && python3 -c "import json;d=json.load(open('/tmp/c.json'));assert d['coverage_pct'] >= 65.0"` | exit 0 |
-| W3 | `.venv/bin/python scripts/registry_row_audit.py --audit --expect-clean` | exit 0（`w3a_empty_zh=0`） |
+| W2 | `.venv/bin/python scripts/registry_coverage_report.py --json /tmp/c.json && python3 -c "import json;d=json.load(open('/tmp/c.json'));assert d['coverage_pct'] >= 70.0"` | exit 0 |
+| W3 | `.venv/bin/python scripts/registry_row_audit.py --audit --expect-clean-all` | exit 0（含 `w3a_empty_zh=0`；另须 D2-6 闸门 = 0，见 Phase 3） |
 | 全量 | V1–V9 全绿 | 全部 exit 0 |
 
 ## 回归检查清单
@@ -949,7 +993,9 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 - [ ] 公开 CI 绿（本仓 CI 曾连续 4 次红灯，run #43 刚恢复）
 - [ ] `concepts.tsv` 数据行仍为 **3076**、`concept_ids` 集合未变（sha256 比对）
 - [ ] `definitions.tsv` 行数 = **6152**（6132 + 20）
-- [ ] `evidence.tsv` 列数全部为 5、行数仍 **3168**
+- [ ] **D2-6 闸门**：`preferred_zh == preferred_en` 且无 CJK 的 id 数 = **0**（当前 169；命令见 §Phase 3）
+- [ ] W1 工作集（`w1_a∪w1_b∪w1_c`）内 zh 行匹配 `聚变/核工程术语` 模板者 = **0**（当前 631；命令见 §Phase 1 完成定义）
+- [ ] `evidence.tsv` 列数全部为 5、**audit** `data_rows` 仍 **3168**（文件 `wc -l` = 3217，含 47 空行 + 2 注释）
 - [ ] `translation_dict.json`：值为 `'en'` 的条目 **0**；全小写同一性映射 **0**
 - [ ] `query_expansions.json`：非 ASCII `category` **0**
 - [ ] `tag_rules.jsonl`：16 类之外的 `category` **0**
@@ -967,6 +1013,21 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 | R2.8 | LLM 可执行性（下游是否需要额外推断）+ 粒度门（≤30 min / ≤3 文件） | 5 | 5 | 0 |
 | R3 | 风险与边缘（含跨轮一致性、回滚、并行安全） | 4 | 4 | 0 |
 | **终止** | **T1 — 收敛终止（issue 清零）** | | | **0** |
+| **IMPR-1（mode=improve）** | W0 实测漂移对齐：口径/数字（47.11% / W2 738 / W3a 854 / 631 模板 / 429 行）、README 批数权威（119 批 / 2348 ids）、D2-6=A 范围（新增 w3b 集）、D2-7=A 双侧拆分（78 子任务）、D2-8=A 白名单收窄、粒度门复算 | **11** | **11** | **0** |
+
+### IMPR-1 Issues（mode=improve，2026-10-26，基线 `66197f2`）
+
+- **IMPR-1-1**：§D1–D4/§E3–E4/§R-3/§R-7 仍是 W0 前数字（46.3% / 584 / 527+57 / proper 36 / 1565 模板）→ 已全部改为 W0 后权威值（47.11% / 738 / 668+70 / 35 / 1517 且标注 631 在 W1 内）✅
+- **IMPR-1-2**：Phase 1–4 批数与 README 不符（W1 38 批、W2 10 批、W3 31 批及 `w3_a_*` 文件名）→ 已按 README 重写为 39 / 39 / 53 个 Task，并声明 README 为唯一权威 ✅
+- **IMPR-1-3**：D2-6=A 在计划中无可执行落点（169 个 id 不在任何工作集）→ 已实测核实（132 覆盖 / 9 在 w2 / 28 专名 / 0 在 w3）并在 Phase 3 新增 T3.0 + T3.44…T3.52 与 169→0 闸门；**同时标注与 README 第 3 条的表述冲突（以实测为准）** ✅
+- **IMPR-1-4**：D2-7=A 的"批数不变但每批墙钟上升"未落到任务拆分 → 已把 39 批拆为 78 个 en/zh 子任务（各 ≤30 min），批收口保留 `--lang both` 双侧合规，**未放宽任何验收** ✅
+- **IMPR-1-5**：§Phase 1 仍要求"每批强制来源白名单 + `--check-urls`"（与 D2-8=A 冲突）→ 已收窄为"仅当显式引用外部权威时才需 URL/`--check-urls`"，`corpus` 明确接受；RK4 同步收窄 ✅
+- **IMPR-1-6**：T0.7 的 rationale 以"W1 只负责 en 行"为前提（已作废）→ 已改为 D2-7=A 口径，并区分"W0 修损坏（48 条 `指“en”`，已清零）"与"W1 重写模板（631 行 `指“X”`）" ✅
+- **IMPR-1-7**：T0.9/T0.10 修改边界低估（实际另动 8 个测试文件 fixture + 1 行 category 修正）→ **未改写任务声明**，仅在受影响处标注"以 §Execution Log（commit `08a2e98`）记的偏差为准（用户追认 1）"，并在 Error & Rescue Map 同步标注 ✅
+- **IMPR-1-8**：`--expect-clean` 口径与剖面拆分不一致 → 已统一为"`--expect-clean` = W0 结构集（= Phase 0 完成定义）/ `--expect-clean-all` = 全集（Phase 1 完成起使用）"，T0.1 描述、Phase 1/3 完成定义、V1、验收清单同步 ✅
+- **IMPR-1-9**：T0.8 的 `wc -l == 3168` 口径错误（文件恒为 3217）→ 已改为 audit `data_rows == 3168` 并说明 3217 的构成，回归清单同步 ✅
+- **IMPR-1-10**：T0.3 清单已在 W0 后重生成（commit `66197f2`）但计划未标注 → 已加"🔄 W0 后重生成"块 + 批数验收（4/34/1/37/43 = 119）✅
+- **IMPR-1-11**：frontmatter 陈旧（`mode=refine`、`git_commit=3cb3837`）→ 已更新为 `mode=improve` / `git_commit=66197f2` / 当前时间戳 ✅
 
 ### R1 Issues（结构完整性）
 
@@ -1015,13 +1076,13 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 | 维度 | 结果 |
 |------|------|
 | 背景与目标 | 完整：问题描述、根因（含 commit/机制/取证）、目标、非目标（5 项含理由）、复用分析（6 项） |
-| 数据基线 | 8 组（A–H）共 40 条断言，每条附复现命令；2026-10-26 @ `3cb3837` 实测 |
-| 与任务书差异 | 7 条（R-1 ~ R-7），每条给复现与处置 |
+| 数据基线 | 8 组（A–H）共 40 条断言，每条附复现命令；历史基线 @ `3cb3837`，**影响后续规模的行（D1–D4、E2–E4）已按 W0 后权威值更新**，冲突以「W0 收口数字」为准 |
+| 与任务书差异 | 7 条（R-1 ~ R-7），每条给复现与处置（R-3/R-7 数字已按 W0 后权威值更新） |
 | 风险与对策 | 10 条风险 + Error & Rescue Map 10 条路径，0 CRITICAL GAP |
-| 待裁决 | 5 项（D2-1 ~ D2-5），各含现状数据/选项/阻塞下游 |
-| 执行计划 | 4 Phase + 1 收尾相位；**101 个 Task**（W0: 16（含 T0.6a/b、T0.7a/b 拆分）、W1: 38、W2: 12、W3: 31、W4: 4）—— 每个 Task 均有 ≤30 min 预估 + 修改文件清单 + 可执行验收命令/期望 exit code |
-| 验收清单 | 5 条 Phase 级"一条命令"判定 + 14 项回归检查 |
-| 已知局限 | ① W1(766 行)/W3(854 名) 为人力密集型（合计 ≈ 1620 行内容产出）；101 个 Task × 均值 ≈28 min → wall-clock 估计 **≈ 45 h**；② 覆盖率终值取决于 D2 裁决；③ 抽检语义判定（M1/M2）无法完全机械化 |
+| 待裁决 | **8 项（D2-1 ~ D2-8），全部已裁决＝选项 A**（含 D2-6/D2-7/D2-8 的实施口径） |
+| 执行计划 | 4 Phase + 1 收尾相位；**190 个 Task** —— W0: 16（✅ 全部 DONE）／W1: **78**（39 批 × en/zh 两侧）／W2: **39**（T2.0 + 37 批 + T2.38）／W3: **53**（T3.0 + W3a 43 批 + D2-6 集 9 批）／W4: 4 —— 每个 Task 均有 ≤30 min 预估 + 修改文件清单 + 可执行验收命令/期望 exit code |
+| 验收清单 | 5 条 Phase 级"一条命令"判定 + 18 项回归检查 |
+| 已知局限 | ① 内容密集工作量：W1 ≈1512 行（双侧，631 行为 zh 模板重写）+ W3a 854 名 + D2-6 集 169 名 ≈ **2535 行内容产出**；② 覆盖率终值取决于 D2-1/D2-2/D2-5 裁决与去重；③ 抽检语义判定（M1/M2）无法完全机械化；④ **墙钟估算（计划级）**：全量 ≈ **80.5 h**（W0 已完成 ≈7.3 h ⇒ 剩余 ≈ **73.2 h**），较 refine 版（101 Task / ≈45 h）上升 —— 主因是 (a) 批数按 README 权威值修正（W2 10→37 批、W3 31→43 批）、(b) D2-7=A 使 W1 双侧拆分（38→78 个子任务）、(c) D2-6=A 新增 169 名 / 9 批 |
 
 ## 待裁决落地记录（由父代理/用户回写）
 
@@ -1032,12 +1093,40 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 | D2-3 | **A. 后续批次** —— 剩余 1517 行「低信息但未损坏」zh 模板释义（762 行 `指“X”` + 755 行 `对应英文“X”`）**不在本批范围**，登记为独立后续批次 | 2026-10-26 | 同上 |
 | D2-4 | **A. 每批 100% 机械门禁 + 每 5 批抽检 10%（≥8 行）由独立 agent 复核语义**；抽检 FAIL → 该 5 批返工 | 2026-10-26 | 同上 |
 | D2-5 | **A. 允许仓外权威来源** —— W3 命名依据可用 `preferred_en` + Wikipedia/IAEA/ITER 等权威 URL（须实测 HTTP 200）；仓内 `GB/T-4960.9` 释义为优先来源 | 2026-10-26 | 同上 |
-| D2-6 | **A. 维持字面 CJK 判据** —— `--mode names` 的「必须含 CJK」不变；169 个拉丁名装置代号由 **W3 补中文首选名**（不豁免、不改判据） | 2026-10-26 | 同上（question 工具，选项 A） |
-| D2-7 | **A. W1 连 zh 行一起重写** —— W1 每批同时改写该 id 的 en 行与 zh 行（含 `指“X”` 模板行），使语言侧一致；**本批规模由 ≈815 行增至 ≈1500 行**（预估 +≈18 h / +≈35 批），门禁不变 | 2026-10-26 | 同上 |
+| D2-6 | **A. 维持字面 CJK 判据** —— `--mode names` 的「必须含 CJK」不变；169 个拉丁名装置代号由 **W3 补中文首选名**（不豁免、不改判据）。**实施口径（improve 轮实测）**：这 169 个 id **不在** `w3.ids` 内（132 已覆盖 / 9 在 `w2.ids` / 28 为专名）⇒ 须新增独立工作集 `w3b.ids`（**T3.0** 生成）与 9 个批任务（**T3.44…T3.52**），详见 §Phase 3 | 2026-10-26 | 同上（question 工具，选项 A） |
+| D2-7 | **A. W1 连 zh 行一起重写** —— W1 每批同时改写该 id 的 en 行与 zh 行（含 `指“X”` 模板行），使语言侧一致；**本批规模由 ≈766 行增至 ≈1512 行**（实测：en 746 + zh 746 + W1-C 新增 20）。**批数不变**（4/34/1 = 39 批），但每批须拆为 en/zh 两个 ≤30 min 子任务（**共 78 个子任务**，见 §Phase 1）；门禁不变（批收口仍要求 `--lang both` 双侧同时合规） | 2026-10-26 | 同上 |
 | D2-8 | **A. 允许仓内依据 `corpus`** —— W1 释义可以该 concept 的 registry `notes` / 既有 zh 释义为依据（标 `corpus`）；仅当释义**显式引用外部权威**时才要求 URL / `GB/T` / `ITER` / `IAEA` | 2026-10-26 | **用户显式裁决（本会话 question 工具，选项 A）** |
 
 > **裁决状态：D2-1 ~ D2-8 全部已裁决（2026-10-26，用户在本会话以结构化选项选定 A）**。以下前置的用户口径同样构成本计划的执行前提：
-> ① W1 口径 = **重写全部**（含 746 条 en 通用套话，非删除）；② **专名不入 IME 词表**（company 25 / organization 8 / facility 3 共 36 个排除）；③ **W3 并入本批次**（不独立排期）；④ 先落本计划文件、再由 Dev Orchestrator 逐任务闭环执行。
+> ① W1 口径 = **重写全部**（含 746 条 en 通用套话，非删除；**D2-7=A：en/zh 双侧**）；② **专名不入 IME 词表**（company 25 / organization 7 / facility 3 共 **35** 个排除；W0 后权威值，任务书与早期文本写 36 已作废）；③ **W3 并入本批次**（不独立排期）；④ 先落本计划文件、再由 Dev Orchestrator 逐任务闭环执行。
+
+## improve 轮变更记录（`mode=improve`，2026-10-26，基线 `66197f2`）
+
+> 本节只记录**计划文本**的口径/数字/拆分变更。**§Execution Log 的任何历史条目（T0.0–T0.13、W0 收口数字、追认表）未被改写**，逐字可追溯；凡本文件别处表述与 Execution Log 冲突，**以 Execution Log 为准**。
+
+| # | 变更项 | before → after |
+|---|--------|----------------|
+| I1 | 覆盖率 / 未覆盖 | 46.3% (1652) → **47.11% (1627)**；`allowlist_only` → **46.26** |
+| I2 | W2 规模 | 584（527+57）→ **738（668+70）**；批数 10 → **37** |
+| I3 | §E3/§E4 zh 模板 | 48 行 `指“en”` / 1565 行模板 → **0 行 / 1517 行**，并标注其中 **631** 行落在 W1 工作集内 |
+| I4 | 批清单权威 | 计划期估值（30/31 批等）→ **README = 119 批 / 2348 ids**（`w1_a 67→4`、`w1_b 679→34`、`w1_c 10→1`、`w2 738→37`、`w3 854→43`；生成 commit `66197f2`） |
+| I5 | W1 任务粒度（D2-7=A） | 38 批任务 → **78 个 en/zh 子任务**（各 ≤30 min），批收口仍 `--lang both` 双侧合规 |
+| I6 | W1 规模与墙钟 | 766 行 / 38×30 min → **≈1512 行 / 1755 min（≈29.3 h）** |
+| I7 | D2-6=A 落点 | 无（169 个 id 不在任何工作集）→ **T3.0 生成 `w3b.ids` + T3.44…T3.52 共 9 批**，闸门 169 → 0 |
+| I8 | W3 任务粒度 | 31 批（`w3_a_*`/`w3_b_*` 混命名）→ **53 个 Task**（T3.0 + `w3_b01…b43` + `w3b_b01…b09`） |
+| I9 | 来源白名单（D2-8=A） | 每批强制来源白名单 + `--check-urls` → **仅当显式引用外部权威时才要求 URL/`--check-urls`**；仓内依据标 `corpus` 即合规 |
+| I10 | 门禁剖面 | `--expect-clean` = 全部指标为 0 → **`--expect-clean` = W0 结构集 / `--expect-clean-all` = 全集**（Phase 1 完成起用） |
+| I11 | T0.8 evidence 行数口径 | 文件 `wc -l == 3168` → **audit `data_rows == 3168`**（文件 `wc -l` = 3217） |
+| I12 | T0.13 evidence 规范化行数 | 642 → **429**（以 Execution Log / `git diff --numstat` 为准） |
+| I13 | T0.9/T0.10 边界 | "只改 1 个测试文件" → **标注"以 Execution Log（commit `08a2e98`）记的偏差为准"**（另动 8 个测试文件 fixture + 1 行 `component`→`concept`，用户追认 1）；**未改写原声明** |
+| I14 | Task 总数 / 墙钟 | 101 Task / ≈45 h → **190 Task / ≈80.5 h**（W0 已完成 16 Task ≈7.3 h ⇒ 剩余 174 Task ≈73.2 h） |
+| I15 | frontmatter | `mode: refine` / `git_commit: 3cb3837` → **`mode: improve` / `git_commit: 66197f2`** |
+
+**未解决项（交父代理裁决，未在本文件内自行决定）**：
+
+1. **D2-6=A 的 169 集不在现存任何工作集内**（实测：132 已覆盖 / 9 在 `w2.ids` / 28 为专名 / **0 在 `w3.ids`**）。关闭该项必须**新增** `w3b.ids` 及其 9 个批文件 —— 本 improve 会话仅被授权修改本计划文件，**未生成任何清单文件**（T3.0 已写入计划，待有写权限的执行者落地）。
+2. `.github/plans/t4973-batches/README.md` §「执行批次时必须注意」第 3 条称"这 169 个 id 属 W3 的必做项"，与本轮实测**冲突**（0 个在 `w3.ids`）；建议由 T3.0 一并修正 README（本会话无权改该文件）。
+3. **W2 的 9 个拉丁名 id 与 W3b 的顺序耦合**：计划内已给出确定性处置（先完成 W3b 对这 9 个 id 的命名再写其 allowlist；若已先写则 W3b 后复跑 T2.38 清理），但"W3b 是否整体提前到 Phase 2 之前"属排期决策，**待父代理确认**。
 
 ## Execution Log
 
