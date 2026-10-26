@@ -1257,6 +1257,7 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 | 追认 1 | T0.9/T0.10 **修改边界扩展** | **A. 追认保留** | 保留 8 个测试文件的机械补 tab 改动 + 1 行陈旧 fixture 修正（`component` → `concept`）；commit `08a2e98` 与计划 Execution Log 中的偏差记录作为正式口径 |
 | 追认 2 | `--expect-clean` **门禁剖面拆分** | **A. 追认保留** | `--expect-clean` = W0 结构集（= 本计划 Phase 0 完成定义）；`--expect-clean-all` = 全集（Phase 1 完成时使用）；commit `a4ac8d8`。计划原文「`--expect-clean` = 全部指标为 0」的字面表述以本条为准 |
 | 授权 | **push** | **A. 不 push** | W0 的 20 个 commit 保持本地；远端不反映 W0 成果。后续如需 push 须再次显式授权（三要素齐备） |
+| 裁决 3 | **zh 定义 ingestion 残留的处置** | **A. 授权一次性清扫 + 新增检测指标** | W1 收尾时执行一次**独立清扫提交**（覆盖**非 W1 集**的全部残留行），并为 `scripts/registry_row_audit.py` **新增**残留检测指标（新增 = 加严，不削弱既有门禁；纳入 `--expect-clean-all`）。W1 期间保持「批次内恢复性修复」策略（仅修本批 zh 行的 a)/b) 类残留；c) 类词头属编辑性，不在批次内改） |
 
 ---
 
