@@ -17,11 +17,22 @@
 
 ### Added
 
+- **Registry 数据质量工具链**（`#T-4973`）：`scripts/registry_coverage_report.py`（覆盖率口径固化；输出 W1/W2/W3 工作集与总覆盖率）、`scripts/registry_row_audit.py`（结构审计：畸形列 / 错位行 / 6 列行 / evidence 列数 / zh 占位污染 / 套话计数，双门禁剖面 `--expect-clean` 与 `--expect-clean-all`）、`scripts/registry_batch_verify.py`（批次机械门禁，`--self-test` 24/24）。
+- **工作集与依据文件**（`#T-4973`）：`.github/plans/t4973-batches/` —— 112 个批文件 + 5 个集合清单 + README，附映射表 `category-map-shift99.tsv`、`category-map-sixcol80.tsv` 与依据文件 `names-basis-t0_6.tsv`、`defs-basis-t0_7.tsv`。
+- **门禁 RED→GREEN 可复跑记录**（`#T-4973`）：`.github/plans/t4973-batches/red-green.md`（含受控对比：旧 validator 对三类畸形语料静默通过 exit 0，加严后 exit 1）。
+- **严格结构门禁**（`#T-4973`）：`pipeline/validate_registry.py` 新增 16 类 `category` 白名单，以及 concepts 恰 8 列 / evidence 恰 5 列的列数断言；配套 3 个真实语料锚定用例（`tests/test_registry_validator.py` 共 15 用例）与 2 个 history fixture。
 
 ### Changed
 
+- **导出链全量重建**（`#T-4973`）：`translation_dict.json` 中值为 `'en'` 的占位条目 **166 → 0**；`query_expansions.json` 非 ASCII `category` **99 → 0**；`tag_rules.jsonl` 非 16 类 `category` **720 → 0**；`domain_terms.txt` 恒为 **3462** 条。
+- **`--expect-clean` 门禁剖面**（`#T-4973`）：收敛为 W0 结构门禁（与计划 Phase 0 完成定义一致），新增 `--expect-clean-all` 覆盖含定义质量指标的全集；`--audit` 报告的指标集不变，未削弱任何检查。
 
 ### Fixed
+
+- **179 行畸形 concept 行**（`#T-4973`）：99 行 `category` 左移（`bad_category 99 → 0`）与 80 行 6 列（丢失 `category`/`status`/`source`；`malformed_cols 80 → 0`）全部修复为 8 列规范行；`concept_ids_sha256` 修复前后逐字一致（`c1c4e359…`），证明未增删任何 concept。
+- **80 行丢失的 `preferred_zh`**（`#T-4973`）：按 `aliases.tsv` 中既有的 `lang=zh kind=preferred` 别名逐字回填（80/80 一致）。
+- **48 条 zh 释义语言标签占位**（`#T-4973`）：字面 `指“en”` 占位内容全部改写（计数 48 → 0），来源标记为仓内依据（`corpus`）。
+- **`evidence.tsv` 列结构污染**（`#T-4973`）：**429 行**归一为 5 列（213 行 4 列 + 2 行 2 列 + 214 行 `source` 列粘连）；66 个 domain 标签保留入 `quote` 列；粘连来源计数 427 → 0。
 
 
 ## v2026.10.25
