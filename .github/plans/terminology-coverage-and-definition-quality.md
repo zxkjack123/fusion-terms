@@ -1257,3 +1257,44 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 | 追认 1 | T0.9/T0.10 **修改边界扩展** | **A. 追认保留** | 保留 8 个测试文件的机械补 tab 改动 + 1 行陈旧 fixture 修正（`component` → `concept`）；commit `08a2e98` 与计划 Execution Log 中的偏差记录作为正式口径 |
 | 追认 2 | `--expect-clean` **门禁剖面拆分** | **A. 追认保留** | `--expect-clean` = W0 结构集（= 本计划 Phase 0 完成定义）；`--expect-clean-all` = 全集（Phase 1 完成时使用）；commit `a4ac8d8`。计划原文「`--expect-clean` = 全部指标为 0」的字面表述以本条为准 |
 | 授权 | **push** | **A. 不 push** | W0 的 20 个 commit 保持本地；远端不反映 W0 成果。后续如需 push 须再次显式授权（三要素齐备） |
+
+---
+
+### W1 definitions 质量重写 — T1.A* / T1.B* / T1.C*
+
+> 每个批次 = 一个 `-EN` 子任务 + 一个 `-ZH` 子任务（D2-7=A：en/zh 双侧）；下方每条按**批次**记录（含两个子任务的证据）。
+> 提交策略：数据改动与该批次的日志条目同 commit（避免为日志翻倍提交数）。门禁 RED→GREEN 复跑法见 `.github/plans/t4973-batches/red-green.md` 同类做法。
+
+#### T1.A1-EN / T1.A1-ZH — ✅ DONE（2026-10-26 20:19）commits `e2e2809`（-EN）+ 本节（-ZH）
+
+- 批次：`.github/plans/t4973-batches/w1_a_b01.ids`（**20** id）；属 **W1-A 组**（en 为套话 + zh 已有真实 GB/T 释义）
+- **`-EN`**：20 条 `en` 行改写为真实英文技术释义（依据 = 该 concept 的仓内 GB/T zh 释义）
+  - 命令：`.venv/bin/python scripts/registry_batch_verify.py --mode definitions --ids-file .github/plans/t4973-batches/w1_a_b01.ids --expect 20 --lang en` → **exit 0** `verdict=PASS`
+  - 套话黑名单 **0/20**；en 最短长度 **70** 字符（≥40）；全部 ASCII
+  - source：**19×** `GB/T-4960.9` + **1×** `corpus`（`x-point`——其 GB/T zh 行正文为纯交叉引用 `参见单/双零(2.2.122)。`，无定义性内容，依据改取该 concept 的 `concepts.tsv` notes，属 D2-8=A 允许的仓内依据）
+  - 迁移实测（同一文件前后）：`internal:*` **4535 → 4515**；`GB/T-4960.9` **551 → 570**；`corpus` **48 → 49**；audit `en_boilerplate` **746 → 726**
+  - **提交前裁决（父代理）**：`x-point` 草案含 divertor/separatrix 从句，经查 `notes`（`Null point of poloidal magnetic field`）与该 zh 行**均无此内容** ⇒ **删除**该从句（保留有据的核心 + 释义展开，110 字符）；`plasma-gun` 草案 70 字符**维持**（与 GB/T zh「用来产生高速等离子体团的设备。」逐字对应、零编造，不加无据内容凑长度）
+- **`-ZH`**：zh 侧机械门禁**本已通过**（`--lang zh` 与 `--lang both` 均 exit 0，即 W1-A 的 zh 行本就是真实 GB/T 内容）⇒ 本子任务为**稀疏修复**而非重写
+  - 修复 3 条 zh 行的**转换残留**（恢复性修复，非语义变更，`source` 不变）：
+    | id | before → after |
+    |----|---------------|
+    | `lawson-criterion` | `…乘积大于 2 times 10^20 ~m^-3 ~s 。` → `…乘积大于 2×10^20 m^-3·s。` |
+    | `magnetic-island` | `在非理想等粒子体中` → `在非理想等离子体中`（同句后半已写「等离子体」⇒ 自证讹字） |
+    | `vertical-displacement-event` | `高拉长比的等离子 体更有` → `高拉长比的等离子体更有` |
+- **能失败证明**（仓外副本 + `--repo-root`，**零触碰仓内文件**；未变异对照均 exit 0）
+  - en 侧：`def_boilerplate_regex`（复原套话）／`def_len_en`（10 < 40）／`def_source_unknown`（`internal:dict-improvements`）→ 三者均 **exit 1**
+  - zh 侧：`def_len_zh`（3 < 12）／`def_lang_placeholder`（含 `指“en”`）／`def_count_zh`（删除该 id 的 zh 行 → `expected exactly 1 zh row, found 0`）→ 三者均 **exit 1**
+- 不变量：`data_rows` 恒 **6132**；列分布恒 `{4}`；改动面 `git diff --numstat` = `20/20`（-EN）+ `3/3`（-ZH）；改动 (id,lang) 对恰为批次 id，en 侧 0 条 zh 行被误改
+- 全量门禁：`pipeline.validate_registry` / `pytest -q` / `ruff format --check .` / `ruff check .` / `mypy pipeline/` / `registry_row_audit --audit --expect-clean` → **全部 exit 0**
+
+#### 已知观察 #1（**非阻断**，plan_ref = 本节）— zh 定义的「转换残留」类缺陷不在任何门禁覆盖内
+
+- **现象**：`definitions.tsv` 的 zh 行存在 ingestion 残留，**W0 结构门禁与 W1 批门禁均不检测**：
+  a) LaTeX 命令残留 `sim` / `times` / `cdot`：实测 4 行（`low-beta-plasma`、`low-temperature-plasma`、`glow-discharge-plasma`、`radio-frequency-wave`）
+  b) 字符讹误 / 多余空格：如 `等粒子体`、`等离子 体`、`传感 器`、`³ H e`（`dd-reaction`）
+  c) GB/T **词头前缀 + 空格**（约 15 行）：如 `孔栏 安装…`、`β 值 等离子体压强…`、`环流器 意为…`、`限制器` 对应 GB/T 词头 `孔栏` 未出现在 `aliases.tsv` —— 属**编辑性**变更，且牵涉命名/别名口径
+- **实测规模**（2026-10-26，模式族扫描并已人工剔除假阳性如 `~100-200 GHz`、`TCL Modules`）：真缺陷族 **≤25 行**
+  - 其中落在 **W1 集仅 7 行**（随 W1 批次自然修复，本批已修 3 行）
+  - 其余 **~18 行**落在 W2（15）／W3（1）／**不在任何工作集（~15，多为已覆盖概念）**——这些行**不在任何阶段的 `modifications` 清单内**，不加处置将在计划结束后**残留**
+- **本批处置**：仅在本批 20 行内做 a)/b) 类恢复性修复（3 行）；c) 类（`limiter` 词头）判为编辑性 → **不越界修改**
+- **建议（待裁决，不阻断执行）**：① 登记「definitions zh 残留清扫」任务，或把 a)/b) 类并入 W2/W3 批次的同一 commit（需扩展相应任务的 `modifications` 边界）；② 为 `registry_row_audit.py` **新增**残留检测指标（新增 = 加严；不削弱任何既有门禁），使该类缺陷可量化、可回归
