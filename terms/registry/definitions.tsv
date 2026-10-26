@@ -1085,7 +1085,7 @@ electron-cyclotron-resonance-heating	zh	其频率与电子回旋频率相匹配�
 electron-cyclotron-wave	zh	平行于外加磁场传播的圆偏振射频波，其频率低于电子回旋共振频率。	GB/T-4960.9
 electron-plasma-frequency	zh	等离子体中电子的自由静电振荡频率。	GB/T-4960.9
 electron-temperature	zh	电子的动理学温度。	GB/T-4960.9
-electrostatic-confinement	zh	用电场约束等离子体。	GB/T-4960.9
+electrostatic-confinement	zh	利用静电场对等离子体进行约束。	GB/T-4960.9
 electrostatic-wave	zh	在等离子体中由电中性扰动引起的纵波。	GB/T-4960.9
 elmy-h-mode	zh	伴随有边缘局域模的高约束模式(H模)。	GB/T-4960.9
 plasma-elongation	zh	等离子体极向截面高度与宽度之比。	GB/T-4960.9
@@ -1347,7 +1347,7 @@ fuel-pellet	zh	小型柱状冷冻氘或氚燃料，将其射入等离子体中�
 gas-puffing	zh	通过阀门向等离子体室中喷入燃料，它主要是向等离子体边缘区域加料。	GB/T-4960.9
 glow-discharge-cleaning	zh	用气体辉光放电的方式清洗聚变装置真空室杂质的一种有效方法。	GB/T-4960.9
 glow-discharge-plasma	zh	在 10^-2Pa sim 10^-1Pa 气压下，两电极间施加电压形成的放电等离子体。 注：通常由正柱区和阴极、阳极区构成。在正柱区是准中性的，即电子密度与离子密度基本相等而无净电荷，通常电子密度为 10^15m^-3sim 10^16m^-3 ，电子温度为 1eVsim 2eV ，而且电场很低，约 1V / cm 。正柱区通常占放电管长度的绝大部分。正常辉光放电的电流密度在 50mAcdot cm^-2 以下，端电压几乎与电流无关。	GB/T-4960.9
-halo-current	zh	在垂直位移事件期间，等离子体与真空室壁接触，被刮削后流到约束等离子体区域外侧沿磁力线流动的电流。 注：电流路径与材料表面相交，引起材料的强加热和变形，晕电流的效应不是轴对称的，可引起大的损伤，并对装置也有潜在的威胁。	GB/T-4960.9
+halo-current	zh	在垂直位移事件期间，等离子体与真空室壁接触，被刮削后流到约束等离子体区域外侧沿磁力线流动的电流。注：电流路径与材料表面相交，引起材料的强加热和变形，晕电流的效应不是轴对称的，可引起大的损伤，并对装置也有潜在的威胁。	GB/T-4960.9
 hard-core-pinch-device	zh	早期的聚变研究装置，其中间插有一根固态回流导体。放电发生在导体四周的环形区中。	GB/T-4960.9
 helias	zh	先进的螺旋仿星器其英文全称为helical advanced stellarator,具有变形的非平面环向场线圈的仿星器位形,不用连续的螺旋线圈或者类托卡马克的极向场。Helias是电站最有希望的仿星器概念,它具有模块式工程设计和最佳等离子体,以及磁流体动力学和磁场特性。Wendelstein VI-X装置是基于5个场周期的先进的螺旋仿星器位形。	GB/T-4960.9
 helicity-injection	zh	把螺旋磁波传入到等离子体的方法。用以产生驱动电流，对维持环形和球形装置有潜在的价值。环向等离子体的螺旋量是与环向和极向磁场的链合有关的，并且在放电过程中近似地守恒。如果可以注入外加的螺旋量，那么等离子体电流可以维持，甚至提高。	GB/T-4960.9

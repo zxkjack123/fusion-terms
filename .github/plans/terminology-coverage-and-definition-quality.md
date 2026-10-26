@@ -1299,3 +1299,38 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
   - 其余 **~18 行**落在 W2（15）／W3（1）／**不在任何工作集（~15，多为已覆盖概念）**——这些行**不在任何阶段的 `modifications` 清单内**，不加处置将在计划结束后**残留**
 - **本批处置**：仅在本批 20 行内做 a)/b) 类恢复性修复（3 行）；c) 类（`limiter` 词头）判为编辑性 → **不越界修改**
 - **建议（待裁决，不阻断执行）**：① 登记「definitions zh 残留清扫」任务，或把 a)/b) 类并入 W2/W3 批次的同一 commit（需扩展相应任务的 `modifications` 边界）；② 为 `registry_row_audit.py` **新增**残留检测指标（新增 = 加严；不削弱任何既有门禁），使该类缺陷可量化、可回归
+
+#### T1.A2-EN / T1.A2-ZH — ✅ DONE（2026-10-26 21:20）commits `89a2fb2`（-EN）+ 本节（-ZH）
+
+- 批次：`.github/plans/t4973-batches/w1_a_b02.ids`（**20** id）；W1-A 组
+- **`-EN`**：20 条 `en` 行由套话改写为真实释义（依据 = 各 concept 自身的 GB/T zh 释义）
+  - 门禁：`registry_batch_verify.py --mode definitions --ids-file …/w1_a_b02.ids --expect 20 --lang en` → **exit 0** `verdict=PASS`
+  - en 最短 **46** / 最长 551 字符；套话 0/20；全 ASCII；source：**20/20** `GB/T-4960.9`（0 `corpus`、0 `internal:*`）
+  - 迁移：`internal:*` 4515 → **4495**；`GB/T-4960.9` 570 → **590**；audit `en_boilerplate` 726 → **706**
+  - **提交前裁决**：`turbulent-transport`（GB/T zh 仅 13 字 ⇒ en 49 字符）**维持**，与 T1.A1 `plasma-gun` 同口径（忠实依据 > 凑长度）；GB/T 条款号 `(2.1.284)`/`(2.4.47)` **去除**（非技术事实，与 T1.A1 `tearing-mode` 先例一致）；`toroidal-alfven-eigenmode` 释义**维持**按指定依据措辞（与 `preferred_en` 对齐属命名/别名域）
+- **`-ZH`**：本批 zh 侧**被门禁抓到真实 RED**（非人工构造）——`def_len_zh: electrostatic-confinement [zh]: 10 chars < required 12`，`--lang zh` **exit 1**
+  - 修复 2 条 zh 行后 `--lang zh` **exit 0**、`--lang both` **exit 0**：
+    | id | before → after | 依据 |
+    |----|---------------|------|
+    | `electrostatic-confinement` | `用电场约束等离子体。`（10） → `利用静电场对等离子体进行约束。`（15） | GB/T zh 行（`用电场约束等离子体`）+ 术语名「静电约束」；**未**引入 notes 中的 `fusor/polywell`（否则 source 须改 `corpus` 且与已提交的 en 侧不对称）。source 不变 `GB/T-4960.9` |
+    | `halo-current` | `…流动的电流。 注：…` → `…流动的电流。注：…` | 标点后多余空格（恢复性） |
+- **不变量 / 全量门禁**：`data_rows` 恒 **6132**；列分布恒 `{4}`；`git diff --numstat` = `20/20`（-EN）+ `2/2`（-ZH）；zh 行改动数 0（-EN 阶段整文件核验）；`validate_registry` / `pytest -q` / `ruff format --check .` / `ruff check .` / `mypy pipeline/` → 全部 **exit 0**
+
+#### 清扫清单（滚动更新；W1 收尾执行，裁决 3 = A）
+
+> 检测口径：对 `definitions.tsv` 逐行匹配下列模式（本表数字为 2026-10-26 21:20 实测，模式在 W1 收尾时须经 `--self-test` + 真实语料锚定后固化）。
+> **注意**：类 1 的 `times/sim/cdot` 在 **en 行**存在合法英文用法（如 `… 10 times …`）⇒ 检测器**限定 zh 行**并需覆盖粘连形式（`20MHzsim`、`50mAcdot`），否则会误报。
+
+| # | 类 | 判据（模式） | 实测规模 | 处置 |
+|---|----|-------------|---------|------|
+| 1 | LaTeX 命令残留 | `(times\|sim\|cdot)`（zh 行、含粘连） | **5 行** zh | ✔ 恢复性清扫 |
+| 2 | 字符讹误 / 多余空格 | `CJK<sp>CJK` ／ `[。，、；：]\s+CJK` ／ `CJK[a-z]{3,}CJK` | **36 行** zh | ✔ 恢复性清扫 |
+| 3 | 字段首尾空白 | 任一分量 `x != x.strip()` | **18 行**（**全为 en 行**，IAEA 源，形如 ` The ability of…`） | ✔ 恢复性清扫 |
+| 4 | GB/T 词头前缀 | `^[CJK]{2,8} [CJK]` 或 `^[CJK]{2,8} [A-Za-z]` | **31 行** zh | ⚠ **编辑性**，须单独裁决（牵涉命名/别名口径） |
+| 5 | GB/T 条款号 `(2.1.284)` | `\(\d+\.\d+(\.\d+)?\)` | **49 行** zh | ✘ **保留**（zh 侧为真实 GB/T 溯源信息） |
+| 6 | en 行 < 40 字符 | — | **338 行**（IAEA `See X.` 词汇交叉引用存根，**W1 内 0**） | ✘ **排除**（合法词汇条目，非残留；**勿改**） |
+
+- **恢复性并集（类 1 ∪ 2，zh）= 39 行**：W1 内 **5** ／ W2 **24** ／ W3 **3** ／ **不在任何工作集 7**（`advanced-takamak` 等见下）
+- **不在任何工作集的 7 个 id**：`advanced-tokamak`、`collective-dose`、`cryostat`、`environment-module`、`mhd-stability-limit`、`plasma-frequency`、`tokamak`
+- **清扫范围**（W1 收尾执行，裁决 3 = A）：类 1+2+3（= 39 zh + 18 en = **57 行**）减去 W1 集内的 5 行 ⇒ **≈52 行**；**类 4 单独裁决**；类 5/6 **不动**
+- **测量口径纠错记录**：初测报「类 3 = 18 行」后又出现「0 行」，经三方方法（`splitlines`／`csv.reader`／`git show HEAD`）交叉复核确认 **18 行**；「0」系脚本默认参数 `rs=zh` 导致的**统计 bug**（该类命中全在 **en** 行），非数据变化。另：类 1 初测 3~4 行、现测 5 行，差异来自粘连形式（`MHzsim`/`mAcdot`）与 1 个新命中，检测器须固化后再定稿
