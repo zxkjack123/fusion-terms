@@ -87,3 +87,7 @@ artifacts/terminology_sources/IAEA_Safety_Glossary_2018.pdf
 
 # Agent workflow traces (machine-local state)
 traces/
+
+# Registry evidence bundles are machine-local; preserve historical runs.
+artifacts/registry-evidence/*
+!artifacts/registry-evidence/README.md

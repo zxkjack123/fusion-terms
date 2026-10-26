@@ -1470,3 +1470,32 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 - **本轮收口态门禁**：`--self-test` / `w1_a --lang both` / `w1_a_b04 --lang both` / `w1_b_b01 --lang both` / `validate_registry` / `pytest -q` / `ruff format --check .` / `ruff check .` / `mypy pipeline/` / `registry_row_audit --audit --expect-clean` → **全部 exit 0**；`data_rows` 恒 **6132**
 - **下一步（恢复后立即执行）**：`w1_b_b02` 起按同一循环串行推进至 `b34`（每批 `-EN` → 独立核验 → 仓外 RED → commit；`-ZH` → 门禁 + 批内恢复性修复 → 日志 + commit）；**D2-4 抽检在 B04 完成时触发**（W1-A 4 批 + B01 已占 5 批中的 1 批）
 - **未做**：**未 push**（无授权；`origin/master` 仍停 `3cb3837`，本地领先 **36** 个 commit）；W1 收尾清扫 / `registry_row_audit.py` 新指标（裁决 3=A）/ W1-C / W2 / W3 均未开始
+
+## Read-only registry evidence handoff gate
+
+Run the current Phase 0 gate with:
+
+```bash
+python3 scripts/registry_evidence_bundle.py --compare
+```
+
+The default profile is `w0`, matching the current plan's
+`registry_row_audit --expect-clean` gate. It reports W1 definition-quality
+metrics as deferred warnings without promoting them to a Phase 0 failure. Use
+`--profile all` only when Phase 1 is complete; both phases always use the same
+explicit profile.
+
+The entry point freezes data and the minimal validator/audit import closure in
+one regular-file snapshot, then runs the existing CLI gates in separate
+baseline and batch evidence directories from that snapshot. Source hashes are
+checked before and after copying. Complete stdout/stderr files are retained
+with SHA-256 hashes; the 64 MiB per-stream limit is hard, so reaching it makes
+the evidence incomplete and unsuccessful.
+
+`--reuse` re-parses every saved phase/check evidence file and recomputes
+return-code, incomplete, gate, warning, and non-zero metric status. It checks
+the schema/profile, snapshot hashes, phase/check set, path safety, evidence
+hashes, comparison result, and successful status. It never trusts a mutable
+top-level `batch_status` field. The summary reports one external project entry
+and four internal CLI checks; this is an outer-entry reduction only, not a
+claim about validator/audit calls, model turns, or RPC calls.
