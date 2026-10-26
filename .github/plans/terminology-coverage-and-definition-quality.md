@@ -1376,3 +1376,35 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 - **类 7 全清单（7 行）**：`dd-reaction`、`d-he3-reaction`、`dt-reaction`（**W1，本批已修**）；`breeder`、`mirror-ratio`（集外）；`dissociative-recombination`、`magnetic-mirror-configuration`（W2）
 - ⚠ **内容丢失变体**：`breeder` 的 `⁴ H e` 被转换器**整段删除**（残留 `L i + n → T + + 4. 8 M e V`，正反应为 `Li + n → T + ⁴He + 4.8 MeV`）——该类需**重建内容**而非仅去空格，W1 收尾清扫时须单独裁决
 - **检测器落地要求（W1 收尾，裁决 3=A）**：`scripts/registry_row_audit.py` 新增该类指标时须带 `--self-test` + **真实语料锚定**（含上列假阳性负例），并覆盖粘连形式；**不得**仅凭上述粗模式直接写入门禁
+
+#### T1.A4-EN / T1.A4-ZH — ✅ DONE（2026-10-26 21:20）commits `ec556e9`（-EN）+ 本节（-ZH）
+
+- 批次：`.github/plans/t4973-batches/w1_a_b04.ids`（**7** id）；W1-A 组**收尾批**
+- **`-EN`**：7 条 `en` 行由套话改写为真实释义（依据 = 各自 GB/T zh 释义；7/7 zh 行均含定义性内容 ⇒ 0 条走 `corpus`）
+  - 门禁：`--ids-file …/w1_a_b04.ids --expect 7 --lang en` → **exit 0** `verdict=PASS`
+  - en 最短 **72** / 最长 184；套话 0/7；全 ASCII；source **7/7** `GB/T-4960.9`
+  - 迁移：`internal:*` 4475 → **4468**；`GB/T-4960.9` 610 → **617**；audit `en_boilerplate` 686 → **679**
+  - **裁决 2 项（均接受）**：① `in-vessel-component` zh 行折行残迹 `诊断传感 器` 按 `diagnostic sensors` 读（语义无歧义，zh 侧本批修复）；② `radio-frequency-heating` 的 GB/T 条款号 `(2.1.246)` 不写入 en，交叉引用按允许口径保留为 `See also radio-frequency wave.`
+- **`-ZH`**：zh 门禁原已 PASS；修复 1 行恢复性缺陷：
+
+  | id | before → after | 类 |
+  |----|---------------|-----|
+  | `in-vessel-component` | `诊断传感 器等` → `诊断传感器等` | 2b（CJK 内插空格） |
+
+  - `radio-frequency-heating` 的词头 `RF加热 ` 判为**类 4b（拉丁缩写 + 中文词头）编辑性**，**不动**
+- **不变量 / 全量门禁**：`data_rows` 恒 **6132**；列分布恒 `{4}`；`git diff --numstat` = `7/7`（-EN）+ `1/1`（-ZH）；`--lang zh` / `--lang both` **exit 0**；`validate_registry` / `pytest -q` / `ruff format --check .` / `ruff check .` / `mypy pipeline/` → 全部 **exit 0**
+
+#### W1-A 组收口 ✅（4/4 批次，67 id）
+
+| 批次 | ids | -EN commit | -ZH commit |
+|------|-----|-----------|-----------|
+| T1.A1 | `w1_a_b01`（20） | `e2e2809` | `05b7223` |
+| T1.A2 | `w1_a_b02`（20） | `89a2fb2` | `c87e1ba` |
+| T1.A3 | `w1_a_b03`（20） | `2a01af3` | `d924a94` |
+| T1.A4 | `w1_a_b04`（7）  | `ec556e9` | 本节 |
+
+- **组级验收**：`registry_batch_verify --mode definitions --ids-file …/w1_a.ids --expect 67 --lang both` → **exit 0**（67 id 双侧全绿）
+- **组级迁移（W1-A 累计）**：`internal:*` 4535 → **4468**（−67）；`GB/T-4960.9` 551 → **617**（+66）；`corpus` 48 → **49**（+1，`x-point`）；audit `en_boilerplate` 746 → **679**（−67）
+- **组内裁决累计**：`x-point` 无据从句删除；`plasma-gun` / `turbulent-transport` 简短但忠实（维持）；GB/T 条款号统一不写入 en；`limiter` 词头（类 4）与 `RF加热` 词头（类 4b）编辑性不动；`toroidal-alfven-eigenmode` 措辞按指定依据
+- **组内 zh 恢复性修复累计 7 行**：`lawson-criterion`、`magnetic-island`、`vertical-displacement-event`（A1）；`electrostatic-confinement`（门禁 RED，A2）、`halo-current`（A2）；`dt-reaction`、`dd-reaction`、`d-he3-reaction`（A3，类 7）；`in-vessel-component`（A4）
+- **下一步**：进入 W1-B 组（34 批次 / 694 id），并在第 5 个批次完成时执行 **D2-4 抽检**
