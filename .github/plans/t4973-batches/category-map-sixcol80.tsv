@@ -1,0 +1,81 @@
+concept_id	domain	category	依据
+poloidal-field-power-supply	electrical-power-systems	system	plan:同域系统（供电系统本体，含变流器/开关网络/耗能支路）
+thyristor-converter	electrical-power-systems	device	plan:同域设备（变流装置/开关单元/耗能回路均为电力电子装置）
+switching-network	electrical-power-systems	device	plan:同域设备（变流装置/开关单元/耗能回路均为电力电子装置）
+energy-dump	electrical-power-systems	device	plan:同域设备（变流装置/开关单元/耗能回路均为电力电子装置）
+weight-window-generator	computational-methods	code	plan:自动化工具
+global-variance-reduction	computational-methods	method	rule:方差缩减技术/方法
+mesh-based-weight-window	computational-methods	method	rule:方差缩减技术/方法
+energy-biasing	computational-methods	method	rule:方差缩减技术/方法
+ultrasonic-testing	nde-testing	method	rule:无损检测方法（同 weld-inspection=method）
+radiographic-testing	nde-testing	method	rule:无损检测方法（同 weld-inspection=method）
+eddy-current-testing	nde-testing	method	rule:无损检测方法（同 weld-inspection=method）
+dye-penetrant	nde-testing	method	rule:无损检测方法（同 weld-inspection=method）
+variance-of-variance	computational-methods	metric	sibling:tallying-efficiency=metric（收敛/成本量）
+adjoint-flux	computational-methods	concept	sibling:flux-surface/flux-tube/flux-coordinate=concept（输运理论中的数学构造，非可测量）
+response-matrix	computational-methods	concept	sibling:flux-surface=concept（数学构造：关联界面通量的矩阵）
+tallying-efficiency	computational-methods	metric	rule:量（取得给定 tally 精度所需计算成本）
+visible-spectroscopy	plasma-diagnostics	diagnostic	sibling:spectroscopy/thomson-scattering=diagnostic
+gamma-spectrometer	plasma-diagnostics	diagnostic	sibling:neutron-camera/bolometer=diagnostic（诊断仪器）
+x-ray-crystal-spectrometer	plasma-diagnostics	diagnostic	sibling:neutron-camera/bolometer=diagnostic（诊断仪器）
+divertor-spectroscopy	plasma-diagnostics	diagnostic	sibling:spectroscopy/thomson-scattering=diagnostic
+fueling-rate	plasma-fueling	metric	rule:率（燃料粒子投送速率）
+pellet-penetration	plasma-fueling	metric	rule:深度量（烧蚀前穿透深度）
+deep-fueling	plasma-fueling	method	sibling:pellet-injection=method（加料策略）
+deuterium-pellet	plasma-fueling	concept	sibling:fuel-pellet=concept
+hot-pressing	component-fabrication	method	rule:制造工艺方法
+cold-spray	component-fabrication	method	rule:制造工艺方法
+powder-metallurgy	component-fabrication	method	rule:制造工艺方法
+functional-gradient-material	component-fabrication	material	sibling:structural-material/armor-material=material（材料类别）
+roughing-pump	vacuum-technology	device	sibling:cryopump=device（真空泵硬件）
+helium-leak-test	vacuum-technology	method	sibling:weld-inspection/remote-inspection=method（检漏方法）
+mass-spectrometer	vacuum-technology	diagnostic	sibling:residual-gas-analyzer=diagnostic（气体成分分析仪器）
+roots-pump	vacuum-technology	device	sibling:cryopump=device（真空泵硬件）
+in-vessel-transporter	remote-handling	device	sibling:master-slave-manipulator=device（遥操作载体）
+remote-cutting	remote-handling	method	sibling:remote-inspection=method（遥操作工艺过程）
+remote-welding	remote-handling	method	sibling:remote-inspection=method（遥操作工艺过程）
+viewing-system	remote-handling	system	rule:系统（相机+照明组成的观察系统）
+liquid-metal-embrittlement	corrosion-compatibility	concept	sibling:embrittlement/irradiation-embrittlement=concept（退化现象按仓内多数归 concept）
+pitting-corrosion	corrosion-compatibility	concept	sibling:erosion/corrosion-product=concept
+corrosion-allowance	corrosion-compatibility	metric	rule:量（设计裕量：计入腐蚀的附加壁厚）
+dissolution-rate	corrosion-compatibility	metric	rule:率（材料质量损失速率）
+power-coupling	plasma-heating	concept	sibling:antenna-coupling=concept
+parasitic-absorption	plasma-heating	concept	sibling:recombination-radiation/radiation-collapse=concept（效应类实际仅 3 成员，属辐射输运专用）
+rf-sheath	plasma-heating	concept	sibling:debye-sheath/presheath=concept
+antenna-phasing	plasma-heating	method	sibling:disruption-avoidance=method（控制/整定技术）
+x-point-radiator	divertor-physics	concept	sibling:radiation-dominated-regime/plateau-regime=concept（运行区制）
+strike-point-sweeping	divertor-physics	method	sibling:detachment-control/impurity-seeding=method（热负荷控制技术）
+reattachment	divertor-physics	concept	sibling:plasma-detachment/detachment-front=concept（区制转变）
+divertor-erosion	divertor-physics	concept	sibling:erosion/disruption-erosion/elm-induced-erosion=concept
+buckling	structural-mechanics	concept	sibling:cracking/thermal-fatigue=concept（失稳/损伤模式）
+stress-relaxation	structural-mechanics	concept	sibling:cracking/thermal-fatigue=concept（失稳/损伤模式）
+fatigue-crack-growth	structural-mechanics	concept	sibling:cracking/thermal-fatigue=concept（失稳/损伤模式）
+seismic-analysis	structural-mechanics	method	sibling:fatigue-analysis=method（结构评估方法）
+plasma-start-up	plasma-control	concept	sibling:plasma-ramp-up/plasma-ramp-down=concept（放电阶段）
+disruption-avoidance	plasma-control	method	sibling:detachment-control=method（实时控制策略）
+runaway-mitigation	plasma-control	method	sibling:detachment-control=method（实时控制策略）
+plasma-current-ramp	plasma-control	concept	sibling:plasma-ramp-up/plasma-ramp-down=concept（放电阶段）
+physics-informed-neural-network	computational-methods	method	sibling:neural-network-transport=method
+bayesian-optimization	computational-methods	method	sibling:design-optimization=method
+transfer-learning	computational-methods	method	rule:机器学习方法
+gaussian-process	computational-methods	method	rule:代理模型/概率建模方法
+beryllide	breeding-material	material	sibling:beryllium=material
+pebble-packing-fraction	breeding-material	metric	rule:分数（体积分数）
+crush-load	breeding-material	metric	rule:量（脆性破碎载荷）
+lithium-burnup	breeding-material	metric	sibling:burnup/burnup-fraction=metric
+joule-heating	nuclear-fusion	nuclear-fusion	plan:直接采用 domain-label（nuclear-fusion）
+lorentz-force	nuclear-fusion	nuclear-fusion	plan:直接采用 domain-label（nuclear-fusion）
+flux-swing	nuclear-fusion	nuclear-fusion	plan:直接采用 domain-label（nuclear-fusion）
+volt-second	nuclear-fusion	nuclear-fusion	plan:直接采用 domain-label（nuclear-fusion）
+type-i-elm	nuclear-fusion	nuclear-fusion	plan:直接采用 domain-label（nuclear-fusion）
+grassy-elm	nuclear-fusion	nuclear-fusion	plan:直接采用 domain-label（nuclear-fusion）
+elm-free-regime	nuclear-fusion	nuclear-fusion	plan:直接采用 domain-label（nuclear-fusion）
+elm-frequency	metric	metric	plan:直接采用 domain-label（metric）
+pedestal-height	metric	metric	plan:直接采用 domain-label（metric）
+h-mode-power-threshold	metric	metric	plan:直接采用 domain-label（metric）
+squareness	metric	metric	plan:直接采用 domain-label（metric）
+separatrix-density	metric	metric	plan:直接采用 domain-label（metric）
+fluence-limit	metric	metric	plan:直接采用 domain-label（metric）
+end-of-life	metric	metric	plan:直接采用 domain-label（metric）
+runaway-plateau	nuclear-fusion	nuclear-fusion	plan:直接采用 domain-label（nuclear-fusion）
+operational-lifetime	metric	metric	plan:直接采用 domain-label（metric）

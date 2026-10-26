@@ -3313,86 +3313,86 @@ sector-assembly	method	扇区组装	sector assembly		active	On-site assembly pro
 gravity-support	system	重力支撑	gravity support		active	Structural system that transfers the dead weight of the tokamak (magnets, vacuum vessel, in-vessel components) to the basemat through pedestals or columns while accommodating thermal expansion	corpus
 in-wall-shielding	concept	壁内屏蔽	in-wall shielding		active	Neutron and gamma shielding layers (typically borated steel or water) integrated within the double-wall structure of the vacuum vessel to protect ex-vessel components and allow hands-on maintenance	corpus
 vessel-thermal-shield	system	真空室热屏蔽	vessel thermal shield		active	Actively cooled (typically 80 K helium gas) thermal radiation shield positioned between the vacuum vessel (at ~200 C) and the cryostat (at ~4 K) to minimize heat load on the cryogenic system	corpus
-poloidal-field-power-supply	electrical-power-systems	en	Poloidal Field Power Supply		Power supply system for PF coils
-thyristor-converter	electrical-power-systems	en	Thyristor Converter		Thyristor-based AC-DC converter for magnet power supplies
-switching-network	electrical-power-systems	en	Switching Network		Fast switching network unit for plasma breakdown
-energy-dump	electrical-power-systems	en	Energy Dump		Circuit for safely dissipating stored magnet energy during quench
-weight-window-generator	computational-methods	en	Weight Window Generator		Automated tool for generating space-energy weight windows
-global-variance-reduction	computational-methods	en	Global Variance Reduction		Variance reduction method targeting uniform uncertainty across entire problem domain
-mesh-based-weight-window	computational-methods	en	Mesh-Based Weight Window		Weight window defined on structured or unstructured spatial mesh
-energy-biasing	computational-methods	en	Energy Biasing		Variance reduction technique biasing particle energy sampling toward important energy ranges
-ultrasonic-testing	nde-testing	en	Ultrasonic Testing		Non-destructive examination using ultrasonic waves to detect internal flaws
-radiographic-testing	nde-testing	en	Radiographic Testing		Non-destructive examination using X-ray or gamma-ray imaging
-eddy-current-testing	nde-testing	en	Eddy Current Testing		Non-destructive examination detecting surface and near-surface defects via electromagnetic induction
-dye-penetrant	nde-testing	en	Dye Penetrant Testing		Non-destructive examination detecting surface-breaking defects via capillary action of dye
-variance-of-variance	computational-methods	en	Variance of the Variance		Second-order convergence diagnostic for Monte Carlo tally reliability
-adjoint-flux	computational-methods	en	Adjoint Flux		Importance function obtained by solving the adjoint transport equation
-response-matrix	computational-methods	en	Response Matrix		Matrix relating boundary or interface fluxes for coupled region calculations
-tallying-efficiency	computational-methods	en	Tallying Efficiency		Metric quantifying the computational cost to achieve a given tally precision
-visible-spectroscopy	plasma-diagnostics	en	Visible Spectroscopy		Optical emission spectroscopy in the visible wavelength range for impurity and edge plasma diagnostics
-gamma-spectrometer	plasma-diagnostics	en	Gamma Spectrometer		Detector system for measuring gamma-ray energy spectra from fusion plasmas and activated components
-x-ray-crystal-spectrometer	plasma-diagnostics	en	X-Ray Crystal Spectrometer		Bragg crystal spectrometer for high-resolution X-ray line emission measurements
-divertor-spectroscopy	plasma-diagnostics	en	Divertor Spectroscopy		Optical spectroscopic diagnostics dedicated to divertor plasma characterization
-fueling-rate	plasma-fueling	en	Fueling Rate		Rate of fuel particle delivery into the plasma
-pellet-penetration	plasma-fueling	en	Pellet Penetration		Depth to which a fuel pellet penetrates into the plasma before complete ablation
-deep-fueling	plasma-fueling	en	Deep Fueling		Fueling strategy targeting particle deposition in the plasma core region
-deuterium-pellet	plasma-fueling	en	Deuterium Pellet		Cryogenic solid deuterium pellet used for plasma fueling
-hot-pressing	component-fabrication	en	Hot Pressing		Fabrication technique applying heat and pressure simultaneously to consolidate powder or layered materials
-cold-spray	component-fabrication	en	Cold Spray		Solid-state coating process depositing powder particles at supersonic velocity without melting
-powder-metallurgy	component-fabrication	en	Powder Metallurgy		Materials processing route using metal or ceramic powder consolidation via pressing and sintering
-functional-gradient-material	component-fabrication	en	Functional Gradient Material		Material with spatially varying composition or microstructure for graded property transition
-roughing-pump	vacuum-technology	en	Roughing Pump		Pump used for initial evacuation from atmospheric pressure to medium vacuum
-helium-leak-test	vacuum-technology	en	Helium Leak Test		Standard leak detection method using helium as tracer gas with mass spectrometric detection
-mass-spectrometer	vacuum-technology	en	Mass Spectrometer		Instrument for identifying gas species by mass-to-charge ratio separation
-roots-pump	vacuum-technology	en	Roots Pump		Positive displacement vacuum pump using counter-rotating lobed rotors
-in-vessel-transporter	remote-handling	en	In-Vessel Transporter		Remote handling vehicle operating inside the vacuum vessel for blanket and divertor replacement
-remote-cutting	remote-handling	en	Remote Cutting		Cutting of pipes and components performed by remote handling tools in activated environments
-remote-welding	remote-handling	en	Remote Welding		Welding of pipes and components performed by remote handling tools in activated environments
-viewing-system	remote-handling	en	Viewing System		Camera and lighting system providing visual feedback for remote handling operations
-liquid-metal-embrittlement	corrosion-compatibility	en	Liquid Metal Embrittlement		Degradation of structural material ductility due to contact with liquid metals
-pitting-corrosion	corrosion-compatibility	en	Pitting Corrosion		Localized corrosion forming small cavities in metal surfaces
-corrosion-allowance	corrosion-compatibility	en	Corrosion Allowance		Additional wall thickness added to structural design to account for material loss by corrosion
-dissolution-rate	corrosion-compatibility	en	Dissolution Rate		Rate of structural material mass loss into a flowing liquid metal or coolant
-power-coupling	plasma-heating	en	Power Coupling		Efficiency of RF power transfer from antenna or waveguide to the plasma
-parasitic-absorption	plasma-heating	en	Parasitic Absorption		Unintended RF power absorption by plasma edge, antenna structure, or Faraday screen
-rf-sheath	plasma-heating	en	RF Sheath		Rectified sheath potential formed near antenna structures due to RF fields
-antenna-phasing	plasma-heating	en	Antenna Phasing		Relative phase setting between antenna straps to control launched wave spectrum
-x-point-radiator	divertor-physics	en	X-Point Radiator		Radiation enhancement regime near the X-point for divertor heat flux mitigation
-strike-point-sweeping	divertor-physics	en	Strike Point Sweeping		Controlled oscillation of the divertor strike point to distribute heat load over a wider area
-reattachment	divertor-physics	en	Reattachment		Transition from detached to attached divertor plasma regime
-divertor-erosion	divertor-physics	en	Divertor Erosion		Material removal from divertor target surfaces due to plasma particle and heat flux bombardment
-buckling	structural-mechanics	en	Buckling		Structural instability mode where a member deflects laterally under compressive load
-stress-relaxation	structural-mechanics	en	Stress Relaxation		Time-dependent decrease of stress in a constrained component at elevated temperature
-fatigue-crack-growth	structural-mechanics	en	Fatigue Crack Growth		Progressive extension of a crack under cyclic loading described by da/dN curves
-seismic-analysis	structural-mechanics	en	Seismic Analysis		Structural assessment of components and buildings under earthquake loading
-plasma-start-up	plasma-control	en	Plasma Start-Up		Initial phase of plasma discharge including gas breakdown and current ramp-up
-disruption-avoidance	plasma-control	en	Disruption Avoidance		Real-time control strategy to steer plasma away from disruptive boundaries
-runaway-mitigation	plasma-control	en	Runaway Mitigation		Techniques to suppress or safely terminate runaway electron beams after disruptions
-plasma-current-ramp	plasma-control	en	Plasma Current Ramp		Controlled increase or decrease of plasma current during start-up or shutdown phases
-physics-informed-neural-network	computational-methods	en	Physics-Informed Neural Network		Neural network architecture constrained by physics equations for improved generalization
-bayesian-optimization	computational-methods	en	Bayesian Optimization		Surrogate-model-based sequential optimization strategy for expensive objective functions
-transfer-learning	computational-methods	en	Transfer Learning		Machine learning technique that reuses pre-trained models for new but related tasks
-gaussian-process	computational-methods	en	Gaussian Process		Non-parametric probabilistic model providing uncertainty-quantified predictions
-beryllide	breeding-material	en	Beryllide		Intermetallic beryllium compound such as Be12Ti or Be12V used as neutron multiplier
-pebble-packing-fraction	breeding-material	en	Pebble Packing Fraction		Volumetric fraction occupied by ceramic or beryllium pebbles in a packed bed
-crush-load	breeding-material	en	Crush Load		Mechanical load at which a ceramic pebble undergoes brittle fracture
-lithium-burnup	breeding-material	en	Lithium Burnup		Depletion of lithium-6 in breeding material due to neutron transmutation reactions
-joule-heating	nuclear-fusion	en	Joule Heating		Resistive power dissipation in conductors or plasma due to electric current flow
-lorentz-force	nuclear-fusion	en	Lorentz Force		Electromagnetic body force on a current-carrying conductor in a magnetic field
-flux-swing	nuclear-fusion	en	Flux Swing		Total change in magnetic flux available from the central solenoid for plasma current induction
-volt-second	nuclear-fusion	en	Volt-Second		Unit of magnetic flux; the total volt-second capability determines maximum achievable plasma current flat-top duration
-type-i-elm	nuclear-fusion	en	Type-I ELM		Large periodic edge-localized mode occurring in standard H-mode with high pedestal pressure
-grassy-elm	nuclear-fusion	en	Grassy ELM		Small high-frequency ELM regime with reduced energy loss per event compared to type-I ELMs
-elm-free-regime	nuclear-fusion	en	ELM-Free Regime		H-mode operating regime in which edge-localized modes are suppressed by resonant magnetic perturbation or other means
-elm-frequency	metric	en	ELM Frequency		Repetition rate of edge-localized mode bursts typically measured in hertz
-pedestal-height	metric	en	Pedestal Height		Pressure or temperature value at the top of the H-mode pedestal defining the pedestal performance
-h-mode-power-threshold	metric	en	H-Mode Power Threshold		Minimum heating power required to trigger the transition from L-mode to H-mode confinement
-squareness	metric	en	Squareness		Plasma shape parameter describing the rectangularity of the plasma cross-section beyond triangularity
-separatrix-density	metric	en	Separatrix Density		Electron density at the last closed flux surface which strongly influences divertor conditions and detachment
-fluence-limit	metric	en	Fluence Limit		Maximum allowable neutron fluence for a structural component based on material property degradation criteria
-end-of-life	metric	en	End of Life		Design condition at which a component reaches its maximum allowable damage or degradation and must be replaced
-runaway-plateau	nuclear-fusion	en	Runaway Plateau		Quasi-steady phase following a disruption current quench in which a runaway electron beam carries the remaining plasma current
-operational-lifetime	metric	en	Operational Lifetime		Total cumulative operating time or number of cycles a fusion component is qualified to endure before replacement
+poloidal-field-power-supply	system		Poloidal Field Power Supply		active	Power supply system for PF coils [domain: electrical-power-systems]	corpus
+thyristor-converter	device		Thyristor Converter		active	Thyristor-based AC-DC converter for magnet power supplies [domain: electrical-power-systems]	corpus
+switching-network	device		Switching Network		active	Fast switching network unit for plasma breakdown [domain: electrical-power-systems]	corpus
+energy-dump	device		Energy Dump		active	Circuit for safely dissipating stored magnet energy during quench [domain: electrical-power-systems]	corpus
+weight-window-generator	code		Weight Window Generator		active	Automated tool for generating space-energy weight windows [domain: computational-methods]	corpus
+global-variance-reduction	method		Global Variance Reduction		active	Variance reduction method targeting uniform uncertainty across entire problem domain [domain: computational-methods]	corpus
+mesh-based-weight-window	method		Mesh-Based Weight Window		active	Weight window defined on structured or unstructured spatial mesh [domain: computational-methods]	corpus
+energy-biasing	method		Energy Biasing		active	Variance reduction technique biasing particle energy sampling toward important energy ranges [domain: computational-methods]	corpus
+ultrasonic-testing	method		Ultrasonic Testing		active	Non-destructive examination using ultrasonic waves to detect internal flaws [domain: nde-testing]	corpus
+radiographic-testing	method		Radiographic Testing		active	Non-destructive examination using X-ray or gamma-ray imaging [domain: nde-testing]	corpus
+eddy-current-testing	method		Eddy Current Testing		active	Non-destructive examination detecting surface and near-surface defects via electromagnetic induction [domain: nde-testing]	corpus
+dye-penetrant	method		Dye Penetrant Testing		active	Non-destructive examination detecting surface-breaking defects via capillary action of dye [domain: nde-testing]	corpus
+variance-of-variance	metric		Variance of the Variance		active	Second-order convergence diagnostic for Monte Carlo tally reliability [domain: computational-methods]	corpus
+adjoint-flux	concept		Adjoint Flux		active	Importance function obtained by solving the adjoint transport equation [domain: computational-methods]	corpus
+response-matrix	concept		Response Matrix		active	Matrix relating boundary or interface fluxes for coupled region calculations [domain: computational-methods]	corpus
+tallying-efficiency	metric		Tallying Efficiency		active	Metric quantifying the computational cost to achieve a given tally precision [domain: computational-methods]	corpus
+visible-spectroscopy	diagnostic		Visible Spectroscopy		active	Optical emission spectroscopy in the visible wavelength range for impurity and edge plasma diagnostics [domain: plasma-diagnostics]	corpus
+gamma-spectrometer	diagnostic		Gamma Spectrometer		active	Detector system for measuring gamma-ray energy spectra from fusion plasmas and activated components [domain: plasma-diagnostics]	corpus
+x-ray-crystal-spectrometer	diagnostic		X-Ray Crystal Spectrometer		active	Bragg crystal spectrometer for high-resolution X-ray line emission measurements [domain: plasma-diagnostics]	corpus
+divertor-spectroscopy	diagnostic		Divertor Spectroscopy		active	Optical spectroscopic diagnostics dedicated to divertor plasma characterization [domain: plasma-diagnostics]	corpus
+fueling-rate	metric		Fueling Rate		active	Rate of fuel particle delivery into the plasma [domain: plasma-fueling]	corpus
+pellet-penetration	metric		Pellet Penetration		active	Depth to which a fuel pellet penetrates into the plasma before complete ablation [domain: plasma-fueling]	corpus
+deep-fueling	method		Deep Fueling		active	Fueling strategy targeting particle deposition in the plasma core region [domain: plasma-fueling]	corpus
+deuterium-pellet	concept		Deuterium Pellet		active	Cryogenic solid deuterium pellet used for plasma fueling [domain: plasma-fueling]	corpus
+hot-pressing	method		Hot Pressing		active	Fabrication technique applying heat and pressure simultaneously to consolidate powder or layered materials [domain: component-fabrication]	corpus
+cold-spray	method		Cold Spray		active	Solid-state coating process depositing powder particles at supersonic velocity without melting [domain: component-fabrication]	corpus
+powder-metallurgy	method		Powder Metallurgy		active	Materials processing route using metal or ceramic powder consolidation via pressing and sintering [domain: component-fabrication]	corpus
+functional-gradient-material	material		Functional Gradient Material		active	Material with spatially varying composition or microstructure for graded property transition [domain: component-fabrication]	corpus
+roughing-pump	device		Roughing Pump		active	Pump used for initial evacuation from atmospheric pressure to medium vacuum [domain: vacuum-technology]	corpus
+helium-leak-test	method		Helium Leak Test		active	Standard leak detection method using helium as tracer gas with mass spectrometric detection [domain: vacuum-technology]	corpus
+mass-spectrometer	diagnostic		Mass Spectrometer		active	Instrument for identifying gas species by mass-to-charge ratio separation [domain: vacuum-technology]	corpus
+roots-pump	device		Roots Pump		active	Positive displacement vacuum pump using counter-rotating lobed rotors [domain: vacuum-technology]	corpus
+in-vessel-transporter	device		In-Vessel Transporter		active	Remote handling vehicle operating inside the vacuum vessel for blanket and divertor replacement [domain: remote-handling]	corpus
+remote-cutting	method		Remote Cutting		active	Cutting of pipes and components performed by remote handling tools in activated environments [domain: remote-handling]	corpus
+remote-welding	method		Remote Welding		active	Welding of pipes and components performed by remote handling tools in activated environments [domain: remote-handling]	corpus
+viewing-system	system		Viewing System		active	Camera and lighting system providing visual feedback for remote handling operations [domain: remote-handling]	corpus
+liquid-metal-embrittlement	concept		Liquid Metal Embrittlement		active	Degradation of structural material ductility due to contact with liquid metals [domain: corrosion-compatibility]	corpus
+pitting-corrosion	concept		Pitting Corrosion		active	Localized corrosion forming small cavities in metal surfaces [domain: corrosion-compatibility]	corpus
+corrosion-allowance	metric		Corrosion Allowance		active	Additional wall thickness added to structural design to account for material loss by corrosion [domain: corrosion-compatibility]	corpus
+dissolution-rate	metric		Dissolution Rate		active	Rate of structural material mass loss into a flowing liquid metal or coolant [domain: corrosion-compatibility]	corpus
+power-coupling	concept		Power Coupling		active	Efficiency of RF power transfer from antenna or waveguide to the plasma [domain: plasma-heating]	corpus
+parasitic-absorption	concept		Parasitic Absorption		active	Unintended RF power absorption by plasma edge, antenna structure, or Faraday screen [domain: plasma-heating]	corpus
+rf-sheath	concept		RF Sheath		active	Rectified sheath potential formed near antenna structures due to RF fields [domain: plasma-heating]	corpus
+antenna-phasing	method		Antenna Phasing		active	Relative phase setting between antenna straps to control launched wave spectrum [domain: plasma-heating]	corpus
+x-point-radiator	concept		X-Point Radiator		active	Radiation enhancement regime near the X-point for divertor heat flux mitigation [domain: divertor-physics]	corpus
+strike-point-sweeping	method		Strike Point Sweeping		active	Controlled oscillation of the divertor strike point to distribute heat load over a wider area [domain: divertor-physics]	corpus
+reattachment	concept		Reattachment		active	Transition from detached to attached divertor plasma regime [domain: divertor-physics]	corpus
+divertor-erosion	concept		Divertor Erosion		active	Material removal from divertor target surfaces due to plasma particle and heat flux bombardment [domain: divertor-physics]	corpus
+buckling	concept		Buckling		active	Structural instability mode where a member deflects laterally under compressive load [domain: structural-mechanics]	corpus
+stress-relaxation	concept		Stress Relaxation		active	Time-dependent decrease of stress in a constrained component at elevated temperature [domain: structural-mechanics]	corpus
+fatigue-crack-growth	concept		Fatigue Crack Growth		active	Progressive extension of a crack under cyclic loading described by da/dN curves [domain: structural-mechanics]	corpus
+seismic-analysis	method		Seismic Analysis		active	Structural assessment of components and buildings under earthquake loading [domain: structural-mechanics]	corpus
+plasma-start-up	concept		Plasma Start-Up		active	Initial phase of plasma discharge including gas breakdown and current ramp-up [domain: plasma-control]	corpus
+disruption-avoidance	method		Disruption Avoidance		active	Real-time control strategy to steer plasma away from disruptive boundaries [domain: plasma-control]	corpus
+runaway-mitigation	method		Runaway Mitigation		active	Techniques to suppress or safely terminate runaway electron beams after disruptions [domain: plasma-control]	corpus
+plasma-current-ramp	concept		Plasma Current Ramp		active	Controlled increase or decrease of plasma current during start-up or shutdown phases [domain: plasma-control]	corpus
+physics-informed-neural-network	method		Physics-Informed Neural Network		active	Neural network architecture constrained by physics equations for improved generalization [domain: computational-methods]	corpus
+bayesian-optimization	method		Bayesian Optimization		active	Surrogate-model-based sequential optimization strategy for expensive objective functions [domain: computational-methods]	corpus
+transfer-learning	method		Transfer Learning		active	Machine learning technique that reuses pre-trained models for new but related tasks [domain: computational-methods]	corpus
+gaussian-process	method		Gaussian Process		active	Non-parametric probabilistic model providing uncertainty-quantified predictions [domain: computational-methods]	corpus
+beryllide	material		Beryllide		active	Intermetallic beryllium compound such as Be12Ti or Be12V used as neutron multiplier [domain: breeding-material]	corpus
+pebble-packing-fraction	metric		Pebble Packing Fraction		active	Volumetric fraction occupied by ceramic or beryllium pebbles in a packed bed [domain: breeding-material]	corpus
+crush-load	metric		Crush Load		active	Mechanical load at which a ceramic pebble undergoes brittle fracture [domain: breeding-material]	corpus
+lithium-burnup	metric		Lithium Burnup		active	Depletion of lithium-6 in breeding material due to neutron transmutation reactions [domain: breeding-material]	corpus
+joule-heating	nuclear-fusion		Joule Heating		active	Resistive power dissipation in conductors or plasma due to electric current flow [domain: nuclear-fusion]	corpus
+lorentz-force	nuclear-fusion		Lorentz Force		active	Electromagnetic body force on a current-carrying conductor in a magnetic field [domain: nuclear-fusion]	corpus
+flux-swing	nuclear-fusion		Flux Swing		active	Total change in magnetic flux available from the central solenoid for plasma current induction [domain: nuclear-fusion]	corpus
+volt-second	nuclear-fusion		Volt-Second		active	Unit of magnetic flux; the total volt-second capability determines maximum achievable plasma current flat-top duration [domain: nuclear-fusion]	corpus
+type-i-elm	nuclear-fusion		Type-I ELM		active	Large periodic edge-localized mode occurring in standard H-mode with high pedestal pressure [domain: nuclear-fusion]	corpus
+grassy-elm	nuclear-fusion		Grassy ELM		active	Small high-frequency ELM regime with reduced energy loss per event compared to type-I ELMs [domain: nuclear-fusion]	corpus
+elm-free-regime	nuclear-fusion		ELM-Free Regime		active	H-mode operating regime in which edge-localized modes are suppressed by resonant magnetic perturbation or other means [domain: nuclear-fusion]	corpus
+elm-frequency	metric		ELM Frequency		active	Repetition rate of edge-localized mode bursts typically measured in hertz [domain: metric]	corpus
+pedestal-height	metric		Pedestal Height		active	Pressure or temperature value at the top of the H-mode pedestal defining the pedestal performance [domain: metric]	corpus
+h-mode-power-threshold	metric		H-Mode Power Threshold		active	Minimum heating power required to trigger the transition from L-mode to H-mode confinement [domain: metric]	corpus
+squareness	metric		Squareness		active	Plasma shape parameter describing the rectangularity of the plasma cross-section beyond triangularity [domain: metric]	corpus
+separatrix-density	metric		Separatrix Density		active	Electron density at the last closed flux surface which strongly influences divertor conditions and detachment [domain: metric]	corpus
+fluence-limit	metric		Fluence Limit		active	Maximum allowable neutron fluence for a structural component based on material property degradation criteria [domain: metric]	corpus
+end-of-life	metric		End of Life		active	Design condition at which a component reaches its maximum allowable damage or degradation and must be replaced [domain: metric]	corpus
+runaway-plateau	nuclear-fusion		Runaway Plateau		active	Quasi-steady phase following a disruption current quench in which a runaway electron beam carries the remaining plasma current [domain: nuclear-fusion]	corpus
+operational-lifetime	metric		Operational Lifetime		active	Total cumulative operating time or number of cycles a fusion component is qualified to endure before replacement [domain: metric]	corpus
 cate	code	活化腐蚀产物源项分析程序	CATE	CATE	active	Water-cooled-loop activated corrosion product source term analysis code (NCEPU; CATE-V2.0/V3.0 line)	corpus
 pactole	code	PACTOLE程序	PACTOLE		active	CEA code for activated corrosion product source term in PWR primary circuits	corpus
 pactiter	code	PACTITER程序	PACTITER		active	CEA code for activated corrosion product source term in fusion water-cooled loops	corpus
