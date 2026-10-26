@@ -1,6 +1,7 @@
 # Project Snapshot — fusion-terms
 
 **Generated**: 2026-10-25
+**Updated**: 2026-10-27 (registry evidence bundle adoption; `scripts/registry_evidence_bundle.py` + `artifacts/registry-evidence/` — see `docs/notes/2026-10-27-dev-orchestrator-evidence-adoption.md`)
 **Release**: `v2026.10.25` (tag → commit 8299146); registry counts below are that release's
 
 ## Architecture
@@ -27,7 +28,8 @@ fusion-terms/
 │   ├── extract_iaea_glossary.py
 │   ├── fetch_iter_glossary.py
 │   ├── diff_terminology_source.py
-│   └── ocr_gbt4960.py
+│   ├── ocr_gbt4960.py
+│   └── registry_evidence_bundle.py  # read-only registry gate evidence bundle (--profile/--compare/--reuse)
 ├── pyproject.toml              # pytest + ruff + mypy config
 └── .github/workflows/ci.yml    # CI: pytest, mypy, ruff, validate_registry
 ```
@@ -70,6 +72,10 @@ ruff check . && ruff format --check .               # Lint + format check
 - Runs on PR + push to main/master
 - Python 3.10/3.11/3.12 matrix
 - Gates: pytest (45% cov), mypy (`pipeline/` only), ruff, compileall, validate_registry
+- Evidence bundle (read-only gate capture): `scripts/registry_evidence_bundle.py --compare` (default
+  `--profile w0`) captures gate inputs/outputs into `artifacts/registry-evidence/<UTC-stamp>/`;
+  bundles are machine-local and gitignored (only `artifacts/registry-evidence/README.md` is
+  tracked). `--profile all` is expected to fail until T-4973 W1 completes.
 - **`ruff format --check .` also covers fenced code blocks inside Markdown.** ruff is
   pinned (`ruff==0.17.2` in `requirements-dev.txt`, `ruff-pre-commit` rev in
   `.pre-commit-config.yaml`) because an unpinned floor silently reddened CI for two

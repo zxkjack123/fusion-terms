@@ -21,6 +21,7 @@
 - **工作集与依据文件**（`#T-4973`）：`.github/plans/t4973-batches/` —— 112 个批文件 + 5 个集合清单 + README，附映射表 `category-map-shift99.tsv`、`category-map-sixcol80.tsv` 与依据文件 `names-basis-t0_6.tsv`、`defs-basis-t0_7.tsv`。
 - **门禁 RED→GREEN 可复跑记录**（`#T-4973`）：`.github/plans/t4973-batches/red-green.md`（含受控对比：旧 validator 对三类畸形语料静默通过 exit 0，加严后 exit 1）。
 - **严格结构门禁**（`#T-4973`）：`pipeline/validate_registry.py` 新增 16 类 `category` 白名单，以及 concepts 恰 8 列 / evidence 恰 5 列的列数断言；配套 3 个真实语料锚定用例（`tests/test_registry_validator.py` 共 15 用例）与 2 个 history fixture。
+- **只读校验证据打包**（`#T-4973`）：`scripts/registry_evidence_bundle.py`（`--profile {w0,all}` / `--compare` / `--reuse <bundle>`）把 registry 机械校验的输入、快照哈希、证据哈希与比对结果落成机器本地 bundle，复用前校验执行指纹与全部哈希；缺失证据文件显式拒绝。配套 `tests/test_registry_evidence_bundle.py`（指纹漂移 / 篡改 / 缺失 / w0-vs-all 范围 / 比对失败）。产物目录 `artifacts/registry-evidence/` 按 `.gitignore` 仅保留 `README.md`，历史 bundle 只作留档、不声明为当前验收证据。证据哈希只发现意外改动，不证明作者身份，**不替代**双语语义复核。
 
 ### Changed
 
