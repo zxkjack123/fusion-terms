@@ -3313,46 +3313,46 @@ sector-assembly	method	扇区组装	sector assembly		active	On-site assembly pro
 gravity-support	system	重力支撑	gravity support		active	Structural system that transfers the dead weight of the tokamak (magnets, vacuum vessel, in-vessel components) to the basemat through pedestals or columns while accommodating thermal expansion	corpus
 in-wall-shielding	concept	壁内屏蔽	in-wall shielding		active	Neutron and gamma shielding layers (typically borated steel or water) integrated within the double-wall structure of the vacuum vessel to protect ex-vessel components and allow hands-on maintenance	corpus
 vessel-thermal-shield	system	真空室热屏蔽	vessel thermal shield		active	Actively cooled (typically 80 K helium gas) thermal radiation shield positioned between the vacuum vessel (at ~200 C) and the cryostat (at ~4 K) to minimize heat load on the cryogenic system	corpus
-poloidal-field-power-supply	system		Poloidal Field Power Supply		active	Power supply system for PF coils [domain: electrical-power-systems]	corpus
-thyristor-converter	device		Thyristor Converter		active	Thyristor-based AC-DC converter for magnet power supplies [domain: electrical-power-systems]	corpus
-switching-network	device		Switching Network		active	Fast switching network unit for plasma breakdown [domain: electrical-power-systems]	corpus
-energy-dump	device		Energy Dump		active	Circuit for safely dissipating stored magnet energy during quench [domain: electrical-power-systems]	corpus
-weight-window-generator	code		Weight Window Generator		active	Automated tool for generating space-energy weight windows [domain: computational-methods]	corpus
-global-variance-reduction	method		Global Variance Reduction		active	Variance reduction method targeting uniform uncertainty across entire problem domain [domain: computational-methods]	corpus
-mesh-based-weight-window	method		Mesh-Based Weight Window		active	Weight window defined on structured or unstructured spatial mesh [domain: computational-methods]	corpus
-energy-biasing	method		Energy Biasing		active	Variance reduction technique biasing particle energy sampling toward important energy ranges [domain: computational-methods]	corpus
-ultrasonic-testing	method		Ultrasonic Testing		active	Non-destructive examination using ultrasonic waves to detect internal flaws [domain: nde-testing]	corpus
-radiographic-testing	method		Radiographic Testing		active	Non-destructive examination using X-ray or gamma-ray imaging [domain: nde-testing]	corpus
-eddy-current-testing	method		Eddy Current Testing		active	Non-destructive examination detecting surface and near-surface defects via electromagnetic induction [domain: nde-testing]	corpus
-dye-penetrant	method		Dye Penetrant Testing		active	Non-destructive examination detecting surface-breaking defects via capillary action of dye [domain: nde-testing]	corpus
-variance-of-variance	metric		Variance of the Variance		active	Second-order convergence diagnostic for Monte Carlo tally reliability [domain: computational-methods]	corpus
-adjoint-flux	concept		Adjoint Flux		active	Importance function obtained by solving the adjoint transport equation [domain: computational-methods]	corpus
-response-matrix	concept		Response Matrix		active	Matrix relating boundary or interface fluxes for coupled region calculations [domain: computational-methods]	corpus
-tallying-efficiency	metric		Tallying Efficiency		active	Metric quantifying the computational cost to achieve a given tally precision [domain: computational-methods]	corpus
-visible-spectroscopy	diagnostic		Visible Spectroscopy		active	Optical emission spectroscopy in the visible wavelength range for impurity and edge plasma diagnostics [domain: plasma-diagnostics]	corpus
-gamma-spectrometer	diagnostic		Gamma Spectrometer		active	Detector system for measuring gamma-ray energy spectra from fusion plasmas and activated components [domain: plasma-diagnostics]	corpus
-x-ray-crystal-spectrometer	diagnostic		X-Ray Crystal Spectrometer		active	Bragg crystal spectrometer for high-resolution X-ray line emission measurements [domain: plasma-diagnostics]	corpus
-divertor-spectroscopy	diagnostic		Divertor Spectroscopy		active	Optical spectroscopic diagnostics dedicated to divertor plasma characterization [domain: plasma-diagnostics]	corpus
-fueling-rate	metric		Fueling Rate		active	Rate of fuel particle delivery into the plasma [domain: plasma-fueling]	corpus
-pellet-penetration	metric		Pellet Penetration		active	Depth to which a fuel pellet penetrates into the plasma before complete ablation [domain: plasma-fueling]	corpus
-deep-fueling	method		Deep Fueling		active	Fueling strategy targeting particle deposition in the plasma core region [domain: plasma-fueling]	corpus
-deuterium-pellet	concept		Deuterium Pellet		active	Cryogenic solid deuterium pellet used for plasma fueling [domain: plasma-fueling]	corpus
-hot-pressing	method		Hot Pressing		active	Fabrication technique applying heat and pressure simultaneously to consolidate powder or layered materials [domain: component-fabrication]	corpus
-cold-spray	method		Cold Spray		active	Solid-state coating process depositing powder particles at supersonic velocity without melting [domain: component-fabrication]	corpus
-powder-metallurgy	method		Powder Metallurgy		active	Materials processing route using metal or ceramic powder consolidation via pressing and sintering [domain: component-fabrication]	corpus
-functional-gradient-material	material		Functional Gradient Material		active	Material with spatially varying composition or microstructure for graded property transition [domain: component-fabrication]	corpus
-roughing-pump	device		Roughing Pump		active	Pump used for initial evacuation from atmospheric pressure to medium vacuum [domain: vacuum-technology]	corpus
-helium-leak-test	method		Helium Leak Test		active	Standard leak detection method using helium as tracer gas with mass spectrometric detection [domain: vacuum-technology]	corpus
-mass-spectrometer	diagnostic		Mass Spectrometer		active	Instrument for identifying gas species by mass-to-charge ratio separation [domain: vacuum-technology]	corpus
-roots-pump	device		Roots Pump		active	Positive displacement vacuum pump using counter-rotating lobed rotors [domain: vacuum-technology]	corpus
-in-vessel-transporter	device		In-Vessel Transporter		active	Remote handling vehicle operating inside the vacuum vessel for blanket and divertor replacement [domain: remote-handling]	corpus
-remote-cutting	method		Remote Cutting		active	Cutting of pipes and components performed by remote handling tools in activated environments [domain: remote-handling]	corpus
-remote-welding	method		Remote Welding		active	Welding of pipes and components performed by remote handling tools in activated environments [domain: remote-handling]	corpus
-viewing-system	system		Viewing System		active	Camera and lighting system providing visual feedback for remote handling operations [domain: remote-handling]	corpus
-liquid-metal-embrittlement	concept		Liquid Metal Embrittlement		active	Degradation of structural material ductility due to contact with liquid metals [domain: corrosion-compatibility]	corpus
-pitting-corrosion	concept		Pitting Corrosion		active	Localized corrosion forming small cavities in metal surfaces [domain: corrosion-compatibility]	corpus
-corrosion-allowance	metric		Corrosion Allowance		active	Additional wall thickness added to structural design to account for material loss by corrosion [domain: corrosion-compatibility]	corpus
-dissolution-rate	metric		Dissolution Rate		active	Rate of structural material mass loss into a flowing liquid metal or coolant [domain: corrosion-compatibility]	corpus
+poloidal-field-power-supply	system	极向场电源	Poloidal Field Power Supply		active	Power supply system for PF coils [domain: electrical-power-systems]	corpus
+thyristor-converter	device	可控硅变流器	Thyristor Converter		active	Thyristor-based AC-DC converter for magnet power supplies [domain: electrical-power-systems]	corpus
+switching-network	device	切换网络	Switching Network		active	Fast switching network unit for plasma breakdown [domain: electrical-power-systems]	corpus
+energy-dump	device	卸能回路	Energy Dump		active	Circuit for safely dissipating stored magnet energy during quench [domain: electrical-power-systems]	corpus
+weight-window-generator	code	权窗生成器	Weight Window Generator		active	Automated tool for generating space-energy weight windows [domain: computational-methods]	corpus
+global-variance-reduction	method	全局减方差	Global Variance Reduction		active	Variance reduction method targeting uniform uncertainty across entire problem domain [domain: computational-methods]	corpus
+mesh-based-weight-window	method	网格权窗	Mesh-Based Weight Window		active	Weight window defined on structured or unstructured spatial mesh [domain: computational-methods]	corpus
+energy-biasing	method	能量偏倚	Energy Biasing		active	Variance reduction technique biasing particle energy sampling toward important energy ranges [domain: computational-methods]	corpus
+ultrasonic-testing	method	超声检测	Ultrasonic Testing		active	Non-destructive examination using ultrasonic waves to detect internal flaws [domain: nde-testing]	corpus
+radiographic-testing	method	射线检测	Radiographic Testing		active	Non-destructive examination using X-ray or gamma-ray imaging [domain: nde-testing]	corpus
+eddy-current-testing	method	涡流检测	Eddy Current Testing		active	Non-destructive examination detecting surface and near-surface defects via electromagnetic induction [domain: nde-testing]	corpus
+dye-penetrant	method	渗透检测	Dye Penetrant Testing		active	Non-destructive examination detecting surface-breaking defects via capillary action of dye [domain: nde-testing]	corpus
+variance-of-variance	metric	方差的方差	Variance of the Variance		active	Second-order convergence diagnostic for Monte Carlo tally reliability [domain: computational-methods]	corpus
+adjoint-flux	concept	伴随通量	Adjoint Flux		active	Importance function obtained by solving the adjoint transport equation [domain: computational-methods]	corpus
+response-matrix	concept	响应矩阵	Response Matrix		active	Matrix relating boundary or interface fluxes for coupled region calculations [domain: computational-methods]	corpus
+tallying-efficiency	metric	计数效率	Tallying Efficiency		active	Metric quantifying the computational cost to achieve a given tally precision [domain: computational-methods]	corpus
+visible-spectroscopy	diagnostic	可见光谱诊断	Visible Spectroscopy		active	Optical emission spectroscopy in the visible wavelength range for impurity and edge plasma diagnostics [domain: plasma-diagnostics]	corpus
+gamma-spectrometer	diagnostic	γ谱仪	Gamma Spectrometer		active	Detector system for measuring gamma-ray energy spectra from fusion plasmas and activated components [domain: plasma-diagnostics]	corpus
+x-ray-crystal-spectrometer	diagnostic	X射线晶体谱仪	X-Ray Crystal Spectrometer		active	Bragg crystal spectrometer for high-resolution X-ray line emission measurements [domain: plasma-diagnostics]	corpus
+divertor-spectroscopy	diagnostic	偏滤器光谱诊断	Divertor Spectroscopy		active	Optical spectroscopic diagnostics dedicated to divertor plasma characterization [domain: plasma-diagnostics]	corpus
+fueling-rate	metric	加料率	Fueling Rate		active	Rate of fuel particle delivery into the plasma [domain: plasma-fueling]	corpus
+pellet-penetration	metric	弹丸穿透深度	Pellet Penetration		active	Depth to which a fuel pellet penetrates into the plasma before complete ablation [domain: plasma-fueling]	corpus
+deep-fueling	method	深部加料	Deep Fueling		active	Fueling strategy targeting particle deposition in the plasma core region [domain: plasma-fueling]	corpus
+deuterium-pellet	concept	氘弹丸	Deuterium Pellet		active	Cryogenic solid deuterium pellet used for plasma fueling [domain: plasma-fueling]	corpus
+hot-pressing	method	热压	Hot Pressing		active	Fabrication technique applying heat and pressure simultaneously to consolidate powder or layered materials [domain: component-fabrication]	corpus
+cold-spray	method	冷喷涂	Cold Spray		active	Solid-state coating process depositing powder particles at supersonic velocity without melting [domain: component-fabrication]	corpus
+powder-metallurgy	method	粉末冶金	Powder Metallurgy		active	Materials processing route using metal or ceramic powder consolidation via pressing and sintering [domain: component-fabrication]	corpus
+functional-gradient-material	material	功能梯度材料	Functional Gradient Material		active	Material with spatially varying composition or microstructure for graded property transition [domain: component-fabrication]	corpus
+roughing-pump	device	粗抽泵	Roughing Pump		active	Pump used for initial evacuation from atmospheric pressure to medium vacuum [domain: vacuum-technology]	corpus
+helium-leak-test	method	氦检漏	Helium Leak Test		active	Standard leak detection method using helium as tracer gas with mass spectrometric detection [domain: vacuum-technology]	corpus
+mass-spectrometer	diagnostic	质谱仪	Mass Spectrometer		active	Instrument for identifying gas species by mass-to-charge ratio separation [domain: vacuum-technology]	corpus
+roots-pump	device	罗茨泵	Roots Pump		active	Positive displacement vacuum pump using counter-rotating lobed rotors [domain: vacuum-technology]	corpus
+in-vessel-transporter	device	真空室内转运装置	In-Vessel Transporter		active	Remote handling vehicle operating inside the vacuum vessel for blanket and divertor replacement [domain: remote-handling]	corpus
+remote-cutting	method	远程切割	Remote Cutting		active	Cutting of pipes and components performed by remote handling tools in activated environments [domain: remote-handling]	corpus
+remote-welding	method	远程焊接	Remote Welding		active	Welding of pipes and components performed by remote handling tools in activated environments [domain: remote-handling]	corpus
+viewing-system	system	观察系统	Viewing System		active	Camera and lighting system providing visual feedback for remote handling operations [domain: remote-handling]	corpus
+liquid-metal-embrittlement	concept	液态金属脆化	Liquid Metal Embrittlement		active	Degradation of structural material ductility due to contact with liquid metals [domain: corrosion-compatibility]	corpus
+pitting-corrosion	concept	点蚀	Pitting Corrosion		active	Localized corrosion forming small cavities in metal surfaces [domain: corrosion-compatibility]	corpus
+corrosion-allowance	metric	腐蚀裕量	Corrosion Allowance		active	Additional wall thickness added to structural design to account for material loss by corrosion [domain: corrosion-compatibility]	corpus
+dissolution-rate	metric	溶解速率	Dissolution Rate		active	Rate of structural material mass loss into a flowing liquid metal or coolant [domain: corrosion-compatibility]	corpus
 power-coupling	concept		Power Coupling		active	Efficiency of RF power transfer from antenna or waveguide to the plasma [domain: plasma-heating]	corpus
 parasitic-absorption	concept		Parasitic Absorption		active	Unintended RF power absorption by plasma edge, antenna structure, or Faraday screen [domain: plasma-heating]	corpus
 rf-sheath	concept		RF Sheath		active	Rectified sheath potential formed near antenna structures due to RF fields [domain: plasma-heating]	corpus
