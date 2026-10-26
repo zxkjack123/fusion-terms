@@ -3918,7 +3918,7 @@ current-hole	en	Fusion/nuclear engineering term referring to 'current hole' in t
 current-hole	zh	聚变/核工程术语，指“电流空洞”这一技术概念。	internal:dict-improvements
 current-lead	en	Fusion/nuclear engineering term referring to 'current lead' in technical context.	internal:dict-improvements
 current-lead	zh	聚变/核工程术语，指“电流引线”这一技术概念。	internal:dict-improvements
-current-profile-control	en	Fusion/nuclear engineering term referring to 'current profile control' in technical context.	internal:dict-improvements
+current-profile-control	en	A technique for controlling the plasma current distribution by means of auxiliary heating and non-inductive current drive, in order to produce the optimum plasma configuration and to improve the plasma confinement.	GB/T-4960.9
 current-quench	en	Fusion/nuclear engineering term referring to 'current quench' in technical context.	internal:dict-improvements
 current-quench	zh	聚变/核工程术语，指“电流猝灭”这一技术概念。	internal:dict-improvements
 curvature-drift	en	Fusion/nuclear engineering term referring to 'curvature drift' in technical context.	internal:dict-improvements
@@ -3932,7 +3932,7 @@ data-pipeline	zh	聚变/核工程术语，指“数据管线”这一技术概�
 dcll	en	Fusion/nuclear engineering term referring to 'dual-coolant lithium-lead' in technical context.	internal:dict-improvements
 dcll	zh	聚变/核工程术语，指“双冷锂铅包层”这一技术概念。	internal:dict-improvements
 dd-reaction	en	Fusion/nuclear engineering term referring to 'D-D reaction' in technical context.	internal:dict-improvements
-debye-sheath	en	Fusion/nuclear engineering term referring to 'Debye sheath' in technical context.	internal:dict-improvements
+debye-sheath	en	The transition region formed between an electrically neutral plasma and the solid surface in contact with it. Although the plasma itself is approximately an equipotential region, a strong potential gradient exists inside the plasma sheath, which does not remain electrically neutral; it is also called the sheath.	GB/T-4960.9
 debye-shielding	en	Fusion/nuclear engineering term referring to 'Debye shielding' in technical context.	internal:dict-improvements
 debye-shielding	zh	聚变/核工程术语，指“德拜屏蔽”这一技术概念。	internal:dict-improvements
 decay	en	Fusion/nuclear engineering term referring to 'decay' in technical context.	internal:dict-improvements
@@ -3956,7 +3956,7 @@ deferred-dismantling	zh	聚变/核工程术语，对应英文“deferred dismant
 defined-deck-area	zh	聚变/核工程术语，对应英文“defined deck area”。	internal:dict-improvements
 demountable-coil	en	Fusion/nuclear engineering term referring to 'demountable coil' in technical context.	internal:dict-improvements
 demountable-coil	zh	聚变/核工程术语，指“可拆卸线圈”这一技术概念。	internal:dict-improvements
-density-control	en	Fusion/nuclear engineering term referring to 'density control' in technical context.	internal:dict-improvements
+density-control	en	The methods and techniques for controlling the plasma density by external fuelling in order to obtain the optimum plasma configuration.	GB/T-4960.9
 density-peaking	en	Fusion/nuclear engineering term referring to 'density peaking' in technical context.	internal:dict-improvements
 density-peaking	zh	聚变/核工程术语，指“密度峰化”这一技术概念。	internal:dict-improvements
 density-pump-out	en	Fusion/nuclear engineering term referring to 'density pump-out' in technical context.	internal:dict-improvements
@@ -4071,7 +4071,7 @@ double-pancake	zh	聚变/核工程术语，对应英文“Double pancake”。	i
 drawdown	zh	聚变/核工程术语，对应英文“drawdown”。	internal:dict-improvements
 drift-kinetics	en	Fusion/nuclear engineering term referring to 'drift kinetics' in technical context.	internal:dict-improvements
 drift-kinetics	zh	聚变/核工程术语，指“漂移动理学”这一技术概念。	internal:dict-improvements
-drift-wave	en	Fusion/nuclear engineering term referring to 'drift wave' in technical context.	internal:dict-improvements
+drift-wave	en	In a non-uniform plasma, a wave formed by a drift flow that arises perpendicular to both the magnetic field and the gradient direction when gradients such as those of temperature, density or magnetic field strength appear.	GB/T-4960.9
 driven-equipment	zh	聚变/核工程术语，对应英文“driven equipment”。	internal:dict-improvements
 dry-storage	zh	聚变/核工程术语，对应英文“dry storage”。	internal:dict-improvements
 dt-fuel-cycle	en	Fusion/nuclear engineering term referring to 'D-T fuel cycle' in technical context.	internal:dict-improvements
@@ -4108,7 +4108,7 @@ electromagnetic-force	zh	聚变/核工程术语，指“电磁力”这一技术
 electron-beam	zh	聚变/核工程术语，对应英文“Electron Beam”。	internal:dict-improvements
 electron-bernstein-wave	en	Fusion/nuclear engineering term referring to 'electron Bernstein wave' in technical context.	internal:dict-improvements
 electron-bernstein-wave	zh	聚变/核工程术语，指“电子伯恩斯坦波”这一技术概念。	internal:dict-improvements
-electrostatic-confinement	en	Fusion/nuclear engineering term referring to 'electrostatic confinement' in technical context.	internal:dict-improvements
+electrostatic-confinement	en	Confinement of a plasma by means of an electric field.	GB/T-4960.9
 elimination-practical	zh	聚变/核工程术语，对应英文“elimination, practical”。	internal:dict-improvements
 elm-control	en	Fusion/nuclear engineering term referring to 'ELM control' in technical context.	internal:dict-improvements
 elm-control	zh	聚变/核工程术语，指“ELM控制”这一技术概念。	internal:dict-improvements
@@ -4178,7 +4178,7 @@ erosion-corrosion	en	Fusion/nuclear engineering term referring to 'erosion-corro
 erosion-corrosion	zh	聚变/核工程术语，指“冲蚀-腐蚀”这一技术概念。	internal:dict-improvements
 erosion-redeposition	en	Fusion/nuclear engineering term referring to 'erosion-redeposition' in technical context.	internal:dict-improvements
 erosion-redeposition	zh	聚变/核工程术语，指“侵蚀再沉积”这一技术概念。	internal:dict-improvements
-error-field	en	Fusion/nuclear engineering term referring to 'error field' in technical context.	internal:dict-improvements
+error-field	en	In a tokamak the magnetic field distributions of the toroidal field coils and the poloidal field coils are theoretically both axisymmetric, but deviations in the manufactured shape and the installation position of the magnet coils, current leads, eddy currents in metal components and ferromagnetic substances all lead to a non-axisymmetric magnetic field. Among these, the non-axisymmetric magnetic field caused by deviations in the installation position of the toroidal field and poloidal field coils is the most important source of the error field.	GB/T-4960.9
 eruption-cloud	zh	聚变/核工程术语，对应英文“eruption cloud”。	internal:dict-improvements
 eruption-volcanic	zh	聚变/核工程术语，对应英文“eruption, volcanic”。	internal:dict-improvements
 essential-services	zh	聚变/核工程术语，对应英文“essential services”。	internal:dict-improvements
@@ -4252,7 +4252,7 @@ first-of-a-kind	zh	聚变/核工程术语，指“首台堆”这一技术概念
 first-plasma	en	Fusion/nuclear engineering term referring to 'first plasma' in technical context.	internal:dict-improvements
 first-plasma	zh	聚变/核工程术语，指“首次等离子体”这一技术概念。	internal:dict-improvements
 first-responders	zh	聚变/核工程术语，对应英文“first responders”。	internal:dict-improvements
-fishbone-instability	en	Fusion/nuclear engineering term referring to 'fishbone instability' in technical context.	internal:dict-improvements
+fishbone-instability	en	A magnetohydrodynamic instability (MHD) driven by energetic particles; in experiments a periodic bursting signal shaped like a fish bone has been observed.	GB/T-4960.9
 fissile-material	zh	聚变/核工程术语，对应英文“fissile material”。	internal:dict-improvements
 fissile-nuclide	zh	聚变/核工程术语，对应英文“fissile nuclide”。	internal:dict-improvements
 fission-fragment	zh	聚变/核工程术语，对应英文“fission fragment”。	internal:dict-improvements
@@ -4333,7 +4333,7 @@ fusion-neutron-application	zh	聚变/核工程术语，指“聚变中子应用�
 fusion-performance	zh	聚变/核工程术语，对应英文“Fusion Performance”。	internal:dict-improvements
 fusion-pilot-plant	en	Fusion/nuclear engineering term referring to 'fusion pilot plant' in technical context.	internal:dict-improvements
 fusion-pilot-plant	zh	聚变/核工程术语，指“聚变试验电站”这一技术概念。	internal:dict-improvements
-fusion-power-plant	en	Fusion/nuclear engineering term referring to 'fusion power plant' in technical context.	internal:dict-improvements
+fusion-power-plant	en	A power plant whose energy is supplied by nuclear fusion reactions. The plan for international fusion research is first to build ITER and then to build a demonstration fusion power plant.	GB/T-4960.9
 fusion-product-spectrum	en	Fusion/nuclear engineering term referring to 'fusion product spectrum' in technical context.	internal:dict-improvements
 fusion-product-spectrum	zh	聚变/核工程术语，指“聚变产物能谱”这一技术概念。	internal:dict-improvements
 fusion-reactor	en	Fusion/nuclear engineering term referring to 'fusion reactor' in technical context.	internal:dict-improvements
@@ -4364,7 +4364,7 @@ global-alfven-eigenmode	en	Fusion/nuclear engineering term referring to 'global 
 global-alfven-eigenmode	zh	聚变/核工程术语，指“全局Alfvén本征模”这一技术概念。	internal:dict-improvements
 grad-b-drift	en	Fusion/nuclear engineering term referring to 'grad-B drift' in technical context.	internal:dict-improvements
 grad-b-drift	zh	聚变/核工程术语，指“∇B漂移”这一技术概念。	internal:dict-improvements
-grad-shafranov-equation	en	Fusion/nuclear engineering term referring to 'Grad-Shafranov equation' in technical context.	internal:dict-improvements
+grad-shafranov-equation	en	A partial differential equation that describes the macroscopic magnetohydrodynamic equilibrium of a plasma in a tokamak. It is named after the American scholar Grad and the former Soviet scholar Shafranov, who derived it at the same time.	GB/T-4960.9
 graded-approach	zh	聚变/核工程术语，对应英文“graded approach”。	internal:dict-improvements
 grain-boundary	en	Fusion/nuclear engineering term referring to 'grain boundary' in technical context.	internal:dict-improvements
 grain-boundary	zh	聚变/核工程术语，指“晶界”这一技术概念。	internal:dict-improvements
@@ -4383,7 +4383,7 @@ gyrokinetics	en	Fusion/nuclear engineering term referring to 'gyrokinetics' in t
 gyrokinetics	zh	聚变/核工程术语，指“回旋动理学”这一技术概念。	internal:dict-improvements
 habit-survey	zh	聚变/核工程术语，对应英文“habit survey”。	internal:dict-improvements
 half-life-t	zh	聚变/核工程术语，对应英文“half-life, T½”。	internal:dict-improvements
-halo-current	en	Fusion/nuclear engineering term referring to 'halo current' in technical context.	internal:dict-improvements
+halo-current	en	During a vertical displacement event, the current that flows along the magnetic field lines on the outside of the confined plasma region after the plasma has touched the vacuum vessel wall and been scraped off. NOTE: The path of the current intersects material surfaces, causing strong heating and deformation of the material; the effects of the halo current are not axisymmetric, and can cause large damage and also pose a potential threat to the device.	GB/T-4960.9
 hands-on-recycling	en	Fusion/nuclear engineering term referring to 'hands-on recycling' in technical context.	internal:dict-improvements
 hands-on-recycling	zh	聚变/核工程术语，指“可徒手回收材料”这一技术概念。	internal:dict-improvements
 harmonic-heating	en	Fusion/nuclear engineering term referring to 'harmonic heating' in technical context.	internal:dict-improvements
@@ -4539,7 +4539,7 @@ institutional-control	zh	聚变/核工程术语，对应英文“institutional c
 intake	zh	聚变/核工程术语，对应英文“intake”。	internal:dict-improvements
 integrated-management-system	zh	聚变/核工程术语，对应英文“integrated management system”。	internal:dict-improvements
 interacting-event	zh	聚变/核工程术语，对应英文“interacting event”。	internal:dict-improvements
-interchange-instability	en	Fusion/nuclear engineering term referring to 'interchange instability' in technical context.	internal:dict-improvements
+interchange-instability	en	A macroscopic magnetohydrodynamic instability in which the plasma and the magnetic field exchange places; it is also called the flute instability.	GB/T-4960.9
 interconnect	en	Fusion/nuclear engineering term referring to 'interconnect' in technical context.	internal:dict-improvements
 interconnect	zh	聚变/核工程术语，指“互联网络”这一技术概念。	internal:dict-improvements
 interested-party	zh	聚变/核工程术语，对应英文“interested party”。	internal:dict-improvements
@@ -4551,7 +4551,7 @@ intermediate-heat-exchanger	zh	聚变/核工程术语，指“中间换热器”
 intermediate-level-waste	zh	聚变/核工程术语，指“中放废物”这一技术概念。	internal:dict-improvements
 internal-exposure	zh	聚变/核工程术语，对应英文“internal exposure”。	internal:dict-improvements
 internal-kink-mode	en	Fusion/nuclear engineering term referring to 'internal kink mode' in technical context.	internal:dict-improvements
-internal-transport-barrier	en	Fusion/nuclear engineering term referring to 'internal transport barrier' in technical context.	internal:dict-improvements
+internal-transport-barrier	en	A barrier that forms spontaneously inside the plasma and impedes the transport of particles and energy.	GB/T-4960.9
 international-nuclear-and-radiological-event-scale	zh	聚变/核工程术语，对应英文“International Nuclear and Radiological Event Scale (INES)”。	internal:dict-improvements
 interplate-tectonic-processes	zh	聚变/核工程术语，对应英文“interplate tectonic processes”。	internal:dict-improvements
 interpreter	en	Fusion/nuclear engineering term referring to 'interpreter' in technical context.	internal:dict-improvements
@@ -4610,9 +4610,9 @@ justification	zh	聚变/核工程术语，对应英文“justification”。	int
 kbm	en	Fusion/nuclear engineering term referring to 'kinetic ballooning mode' in technical context.	internal:dict-improvements
 kbm	zh	聚变/核工程术语，指“动理学气球模”这一技术概念。	internal:dict-improvements
 kerma-k	zh	聚变/核工程术语，对应英文“kerma, K”。	internal:dict-improvements
-kink-mode	en	Fusion/nuclear engineering term referring to 'kink mode' in technical context.	internal:dict-improvements
+kink-mode	en	A macroscopic instability that causes the plasma to be twisted as a whole.	GB/T-4960.9
 knowledge-management	zh	聚变/核工程术语，对应英文“knowledge management”。	internal:dict-improvements
-l-h-transition	en	Fusion/nuclear engineering term referring to 'L-H transition' in technical context.	internal:dict-improvements
+l-h-transition	en	The transition from a low-confinement mode to a high-confinement mode.	GB/T-4960.9
 l-mode	en	In the plasma of a magnetically confined device, an operating mode in which the confinement becomes poorer as the auxiliary heating power is raised.	GB/T-4960.9
 laminar-flow	en	Fusion/nuclear engineering term referring to 'laminar flow' in technical context.	internal:dict-improvements
 laminar-flow	zh	聚变/核工程术语，指“层流”这一技术概念。	internal:dict-improvements
@@ -4671,7 +4671,7 @@ lithium-6-enrichment	en	Fusion/nuclear engineering term referring to 'lithium-6 
 lithium-6-enrichment	zh	聚变/核工程术语，指“锂-6富集”这一技术概念。	internal:dict-improvements
 load-following	en	Fusion/nuclear engineering term referring to 'load-following' in technical context.	internal:dict-improvements
 load-following	zh	聚变/核工程术语，指“负荷跟踪”这一技术概念。	internal:dict-improvements
-locked-mode	en	Fusion/nuclear engineering term referring to 'locked mode' in technical context.	internal:dict-improvements
+locked-mode	en	A state in which the frequency of a rotating magnetohydrodynamic mode is locked.	GB/T-4960.9
 logic	zh	聚变/核工程术语，对应英文“logic”。	internal:dict-improvements
 long-leg-divertor	en	Fusion/nuclear engineering term referring to 'long-leg divertor' in technical context.	internal:dict-improvements
 long-leg-divertor	zh	聚变/核工程术语，指“长腿偏滤器”这一技术概念。	internal:dict-improvements
@@ -4706,7 +4706,7 @@ magnet-feeder	en	Fusion/nuclear engineering term referring to 'magnet feeder' in
 magnet-feeder	zh	聚变/核工程术语，指“磁体馈线”这一技术概念。	internal:dict-improvements
 magnet-power	en	Fusion/nuclear engineering term referring to 'magnet power' in technical context.	internal:dict-improvements
 magnet-power	zh	聚变/核工程术语，指“磁体功耗”这一技术概念。	internal:dict-improvements
-magnetic-axis	en	Fusion/nuclear engineering term referring to 'magnetic axis' in technical context.	internal:dict-improvements
+magnetic-axis	en	In the equilibrium configuration of a plasma, the point at which the radius of the magnetic surface is zero forms a circular locus along the toroidal direction.	GB/T-4960.9
 magnetic-helicity	en	Fusion/nuclear engineering term referring to 'magnetic helicity' in technical context.	internal:dict-improvements
 magnetic-helicity	zh	聚变/核工程术语，指“磁螺旋度”这一技术概念。	internal:dict-improvements
 magnetic-island	en	In a non-ideal plasma, when two parallel magnetic fields of opposite direction are brought close together, any perturbation perpendicular to the field lines can make the field lines slip relative to the plasma and overlap, and closed field lines may even be formed between the two oppositely directed parallel fields. A magnetic island is the region of magnetic field space enclosed by these closed field lines.	GB/T-4960.9
@@ -5645,7 +5645,7 @@ thermal-shock	zh	聚变/核工程术语，指“热冲击”这一技术概念�
 thermodiffusion	en	Fusion/nuclear engineering term referring to 'thermodiffusion' in technical context.	internal:dict-improvements
 thermodiffusion	zh	聚变/核工程术语，指“热扩散”这一技术概念。	internal:dict-improvements
 thermodynamic-diameter	zh	聚变/核工程术语，对应英文“thermodynamic diameter”。	internal:dict-improvements
-thermonuclear-fusion	en	Fusion/nuclear engineering term referring to 'thermonuclear fusion' in technical context.	internal:dict-improvements
+thermonuclear-fusion	en	A fusion reaction that is brought about by the use of a high temperature.	GB/T-4960.9
 theta-pinch	en	A magnetic confinement concept in which a plasma in a cylindrical geometric configuration is confined by means of a poloidal current and an axial magnetic field.	GB/T-4960.9
 thorium-series	zh	聚变/核工程术语，对应英文“thorium series”。	internal:dict-improvements
 thread	en	Fusion/nuclear engineering term referring to 'thread' in technical context.	internal:dict-improvements
@@ -5668,7 +5668,7 @@ tokamak-building	zh	聚变/核工程术语，指“托卡马克厂房”这一�
 tokamak-pit	en	Fusion/nuclear engineering term referring to 'tokamak pit' in technical context.	internal:dict-improvements
 tokamak-pit	zh	聚变/核工程术语，指“托卡马克堆坑”这一技术概念。	internal:dict-improvements
 tore-supra	zh	聚变/核工程术语，对应英文“Tore Supra”。	internal:dict-improvements
-toroidal-alfven-eigenmode	en	Fusion/nuclear engineering term referring to 'toroidal Alfvén eigenmode' in technical context.	internal:dict-improvements
+toroidal-alfven-eigenmode	en	An Alfven gap mode caused by toroidal effects.	GB/T-4960.9
 toroidal-current	zh	聚变/核工程术语，对应英文“Toroidal Current”。	internal:dict-improvements
 toroidal-field-coil	en	Fusion/nuclear engineering term referring to 'toroidal field coil' in technical context.	internal:dict-improvements
 toroidal-field-coil	zh	聚变/核工程术语，指“纵场线圈”这一技术概念。	internal:dict-improvements
@@ -5681,7 +5681,7 @@ transmutation	en	Fusion/nuclear engineering term referring to 'transmutation' in
 transmutation	zh	聚变/核工程术语，指“嬗变”这一技术概念。	internal:dict-improvements
 transnational-emergency	zh	聚变/核工程术语，对应英文“transnational emergency”。	internal:dict-improvements
 transport	zh	聚变/核工程术语，指“输运”这一技术概念。	internal:dict-improvements
-transport-barrier	en	Fusion/nuclear engineering term referring to 'transport barrier' in technical context.	internal:dict-improvements
+transport-barrier	en	Under a certain operating mode (for example, H-mode) there may exist a region of low transport, which corresponds to a steep pressure gradient; such a region is called a transport barrier.	GB/T-4960.9
 transport-equation	en	Fusion/nuclear engineering term referring to 'transport equation' in technical context.	internal:dict-improvements
 transport-equation	zh	聚变/核工程术语，指“输运方程”这一技术概念。	internal:dict-improvements
 transport-index	zh	聚变/核工程术语，对应英文“transport index (TI)”。	internal:dict-improvements
@@ -5727,7 +5727,7 @@ turbulent-diffusion	en	Fusion/nuclear engineering term referring to 'turbulent d
 turbulent-diffusion	zh	聚变/核工程术语，指“湍流扩散输运”这一技术概念。	internal:dict-improvements
 turbulent-flow	en	Fusion/nuclear engineering term referring to 'turbulent flow' in technical context.	internal:dict-improvements
 turbulent-flow	zh	聚变/核工程术语，指“湍流”这一技术概念。	internal:dict-improvements
-turbulent-transport	en	Fusion/nuclear engineering term referring to 'turbulent transport' in technical context.	internal:dict-improvements
+turbulent-transport	en	The transport caused by turbulence in the plasma.	GB/T-4960.9
 two-fluid-model	en	Fusion/nuclear engineering term referring to 'two-fluid model' in technical context.	internal:dict-improvements
 two-fluid-model	zh	聚变/核工程术语，指“双流体模型”这一技术概念。	internal:dict-improvements
 two-phase-flow	en	Fusion/nuclear engineering term referring to 'two-phase flow' in technical context.	internal:dict-improvements
