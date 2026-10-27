@@ -3721,7 +3721,7 @@ bypass	zh	为控制、隔离或维护而绕开部件的流路。	internal:dict-i
 cable-in-conduit-conductor	en	A superconducting conductor design consisting of a cable enclosed in a conduit through which the coolant is forced to flow, so that the conductor is cooled along its length.	corpus
 cable-in-conduit-conductor	zh	一种超导导体结构，电缆置于导管之内，冷却剂在导管中强制流动，从而沿导体全长实施冷却。	corpus
 cache-miss	en	A failed cache lookup that requires access to main memory.	corpus
-cache-miss	zh	聚变/核工程术语，指“缓存未命中”这一技术概念。	internal:dict-improvements
+cache-miss	zh	缓存未命中是需要访问主存的缓存查找失败。	corpus
 calculation	en	The act or process of using numbers to find out an amount.	https://www.oxfordlearnersdictionaries.com/definition/english/calculation
 calculation	zh	计算是利用数字求出某个数值的行为或过程。	https://www.oxfordlearnersdictionaries.com/definition/english/calculation
 calibration	zh	聚变/核工程术语，对应英文“calibration”。	internal:dict-improvements
@@ -3841,7 +3841,7 @@ containment-system	zh	聚变/核工程术语，对应英文“containment system
 contamination	zh	聚变/核工程术语，对应英文“contamination”。	internal:dict-improvements
 contamination-zone	zh	聚变/核工程术语，对应英文“contamination zone”。	internal:dict-improvements
 continuous-energy	en	Continuous-energy Monte Carlo, as distinct from multigroup.	corpus
-continuous-energy	zh	聚变/核工程术语，指“连续能量”这一技术概念。	internal:dict-improvements
+continuous-energy	zh	连续能量指连续能量蒙特卡罗，区别于多群方法。	corpus
 continuum-radiation	en	A bremsstrahlung plus recombination continuum spectrum.	corpus
 continuum-radiation	zh	连续辐射是由轫致辐射与复合辐射构成的连续谱。	corpus
 contour-plot	en	Fusion/nuclear engineering term referring to 'contour plot' in technical context.	internal:dict-improvements
@@ -4009,7 +4009,7 @@ dielectric-wall-accelerator	en	Compact pulsed ion accelerator concept intended f
 dielectric-wall-accelerator	zh	面向束驱动聚变的紧凑型脉冲离子加速器方案。	corpus
 diffusion	zh	聚变/核工程术语，对应英文“diffusion”。	internal:dict-improvements
 diffusion-equation	en	A simplified form of the neutron transport equation.	corpus
-diffusion-equation	zh	聚变/核工程术语，指“扩散方程”这一技术概念。	internal:dict-improvements
+diffusion-equation	zh	扩散方程是中子输运方程的简化形式。	corpus
 digital-engineering	en	Fusion/nuclear engineering term referring to 'digital engineering' in technical context.	internal:dict-improvements
 digital-engineering	zh	聚变/核工程术语，指“数字工程”这一技术概念。	internal:dict-improvements
 digital-twin	en	A real-time digital simulation mirror of a fusion device.	corpus
@@ -4100,7 +4100,7 @@ edge-transport-barrier	zh	边缘输运垒是等离子体边缘处与 H 模台基
 effective-half-life	zh	聚变/核工程术语，对应英文“effective half-life”。	internal:dict-improvements
 effusive-eruption	zh	聚变/核工程术语，对应英文“effusive eruption”。	internal:dict-improvements
 eigenvalue-problem	en	A criticality problem formulated as an eigenvalue problem for keff.	corpus
-eigenvalue-problem	zh	聚变/核工程术语，指“本征值问题”这一技术概念。	internal:dict-improvements
+eigenvalue-problem	zh	本征值问题是针对 keff 建立的本征值临界问题。	corpus
 electrical-grid-connection	en	The interface between a fusion plant and the external power grid.	corpus
 electrical-grid-connection	zh	电网接入是聚变电厂与外部电网之间的接口。	corpus
 electromagnetic-force	en	Forces acting on conducting structures during disruptions and fast transients.	corpus
@@ -4147,14 +4147,14 @@ end-plug	zh	聚变/核工程术语，指“端塞”这一技术概念。	intern
 end-point	zh	聚变/核工程术语，对应英文“end point”。	internal:dict-improvements
 end-state	zh	聚变/核工程术语，对应英文“end state”。	internal:dict-improvements
 endf-format	en	The Evaluated Nuclear Data File (ENDF) format.	corpus
-endf-format	zh	聚变/核工程术语，指“ENDF格式”这一技术概念。	internal:dict-improvements
+endf-format	zh	ENDF格式是评价核数据文件格式。	corpus
 energetic-particle	en	Supra-thermal ion population, produced by neutral beam injection, ion cyclotron resonance heating, or fusion alpha particles, that can drive Alfven eigenmode instabilities.	corpus
 energetic-particle	zh	由中性束注入、离子回旋共振加热或聚变 α 粒子产生的超热离子，可驱动阿尔芬本征模不稳定性。	corpus
 energetic-particle-mode	en	A non-perturbative fast-ion driven mode in the Alfven continuum.	corpus
 energetic-particle-mode	zh	高能粒子模是 Alfvén 连续谱中由快离子驱动的非微扰模。	corpus
 energy-breakeven	zh	聚变/核工程术语，对应英文“Energy Breakeven”。	internal:dict-improvements
 energy-cutoff	en	The minimum energy used in particle tracking.	corpus
-energy-cutoff	zh	聚变/核工程术语，指“能量截断”这一技术概念。	internal:dict-improvements
+energy-cutoff	zh	能量截断是粒子跟踪中采用的最低能量。	corpus
 energy-fluence	zh	聚变/核工程术语，对应英文“energy fluence”。	internal:dict-improvements
 enforcement	zh	聚变/核工程术语，对应英文“enforcement”。	internal:dict-improvements
 enriched-uranium	zh	聚变/核工程术语，对应英文“enriched uranium”。	internal:dict-improvements
@@ -4261,7 +4261,7 @@ fissionable-material	zh	聚变/核工程术语，对应英文“fissionable mate
 fissionable-nuclide	zh	聚变/核工程术语，对应英文“fissionable nuclide”。	internal:dict-improvements
 fixed-contamination	zh	聚变/核工程术语，对应英文“fixed contamination”。	internal:dict-improvements
 fixed-source	en	An external source problem, used for shielding and activation calculations.	corpus
-fixed-source	zh	聚变/核工程术语，指“固定源”这一技术概念。	internal:dict-improvements
+fixed-source	zh	固定源是用于屏蔽与活化计算的外源问题。	corpus
 flange	en	Fusion/nuclear engineering term referring to 'flange' in technical context.	internal:dict-improvements
 flange	zh	聚变/核工程术语，指“法兰”这一技术概念。	internal:dict-improvements
 flat-top	en	Fusion/nuclear engineering term referring to 'Flat-Top' in technical context.	internal:dict-improvements
@@ -4492,7 +4492,7 @@ ignition-condition	en	The condition for a self-sustaining fusion reaction: for a
 immediate-dismantling	zh	聚变/核工程术语，对应英文“immediate dismantling”。	internal:dict-improvements
 immobilization	zh	聚变/核工程术语，对应英文“immobilization”。	internal:dict-improvements
 importance-function	en	The adjoint flux, used for variance reduction.	corpus
-importance-function	zh	聚变/核工程术语，指“重要性函数”这一技术概念。	internal:dict-improvements
+importance-function	zh	重要性函数是用于方差缩减的共轭通量。	corpus
 impurity-accumulation	en	Accumulation of high-Z impurities in the plasma core.	corpus
 impurity-accumulation	zh	杂质积聚是高 Z 杂质在芯部的聚积。	corpus
 impurity-screening	en	Measures taken to keep impurities from entering the plasma, for example the siliconization, boronization and lithiumization of the first wall.	GB/T-4960.9
@@ -4524,7 +4524,7 @@ inertial-fusion-energy	zh	聚变/核工程术语，指“惯性聚变能”这�
 ines	zh	聚变/核工程术语，对应英文“INES”。	internal:dict-improvements
 infant	zh	聚变/核工程术语，对应英文“infant”。	internal:dict-improvements
 infiniband	en	A high-bandwidth, low-latency interconnect.	corpus
-infiniband	zh	聚变/核工程术语，指“InfiniBand”这一技术概念。	internal:dict-improvements
+infiniband	zh	InfiniBand 是高带宽、低延迟的互联网络。	corpus
 ingestion-and-commodities-planning-distance	zh	聚变/核工程术语，对应英文“ingestion and commodities planning distance (ICPD)”。	internal:dict-improvements
 initial-condition	en	The initial state of the solution at t=0.	corpus
 initial-condition	zh	初始条件是t=0时解的状态。	corpus
@@ -4541,7 +4541,7 @@ integrated-management-system	zh	聚变/核工程术语，对应英文“integrat
 interacting-event	zh	聚变/核工程术语，对应英文“interacting event”。	internal:dict-improvements
 interchange-instability	en	A macroscopic magnetohydrodynamic instability in which the plasma and the magnetic field exchange places; it is also called the flute instability.	GB/T-4960.9
 interconnect	en	The network that connects the nodes of an HPC system.	corpus
-interconnect	zh	聚变/核工程术语，指“互联网络”这一技术概念。	internal:dict-improvements
+interconnect	zh	互联网络是连接 HPC 系统各节点的网络。	corpus
 interested-party	zh	聚变/核工程术语，对应英文“interested party”。	internal:dict-improvements
 interim-storage	en	Fusion/nuclear engineering term referring to 'interim storage' in technical context.	internal:dict-improvements
 interim-storage	zh	聚变/核工程术语，指“中间贮存”这一技术概念。	internal:dict-improvements
@@ -4811,7 +4811,7 @@ monitoring	zh	聚变/核工程术语，对应英文“monitoring”。	internal:
 monte-carlo-method	en	Stochastic sampling method used for particle transport and for numerical integration.	corpus
 monte-carlo-method	zh	用于粒子输运与数值积分的随机抽样方法。	corpus
 multigroup	en	A multigroup discretization of the energy variable.	corpus
-multigroup	zh	聚变/核工程术语，指“多群”这一技术概念。	internal:dict-improvements
+multigroup	zh	多群是对能量变量的多群离散。	corpus
 multilateral-approval	zh	聚变/核工程术语，对应英文“multilateral approval”。	internal:dict-improvements
 multipactor	en	A secondary electron multiplication discharge in RF components.	corpus
 multipactor	zh	二次电子倍增放电是射频部件中由二次电子倍增引起的放电。	corpus
@@ -4949,7 +4949,7 @@ orbit-loss	en	Fast ion loss caused by a large orbit width exceeding confinement.
 orbit-loss	zh	轨道损失是轨道宽度超出约束范围的快离子损失。	corpus
 orphan-source	zh	聚变/核工程术语，对应英文“orphan source”。	internal:dict-improvements
 os-process	en	An OS-level process, distinct from the PROCESS code.	corpus
-os-process	zh	聚变/核工程术语，指“进程”这一技术概念。	internal:dict-improvements
+os-process	zh	进程是运行在操作系统层面的进程，区别于 PROCESS 程序。	corpus
 other-nuclear-or-radiological-emergency	zh	聚变/核工程术语，对应英文“other nuclear or radiological emergency”。	internal:dict-improvements
 other-response-actions	zh	聚变/核工程术语，对应英文“other response actions”。	internal:dict-improvements
 outer-fuel-cycle	en	Fusion/nuclear engineering term referring to 'outer fuel cycle' in technical context.	internal:dict-improvements
@@ -5184,7 +5184,7 @@ quench-detection	zh	用于及时发现超导磁体失超起始、以使保护系
 quench-protection	en	The provisions by which a superconducting magnet is protected against the consequences of a quench, in particular the safe discharge of the magnetic energy stored in the magnet.	corpus
 quench-protection	zh	使超导磁体免受失超后果影响的各项措施，特别是把磁体中储存的磁能安全泄放。	corpus
 queue	en	A job scheduling queue, also referred to as a partition.	corpus
-queue	zh	聚变/核工程术语，指“队列”这一技术概念。	internal:dict-improvements
+queue	zh	队列是用于作业调度的队列，也称作分区。	corpus
 quiescent-h-mode	en	ELM-free H-mode regime characterized by an edge harmonic oscillation.	corpus
 quiescent-h-mode	zh	无边缘局域模、伴随边缘谐振荡的 H 模运行状态。	corpus
 radiation	zh	聚变/核工程术语，指“辐射”这一技术概念。	internal:dict-improvements
@@ -5316,7 +5316,7 @@ resolved-resonance-region	zh	聚变/核工程术语，指“分辨共振区”�
 resonance-self-shielding	en	Fusion/nuclear engineering term referring to 'resonance self-shielding' in technical context.	internal:dict-improvements
 resonance-self-shielding	zh	聚变/核工程术语，指“共振自屏效应”这一技术概念。	internal:dict-improvements
 response-function	en	The response kernel of a detector or tally.	corpus
-response-function	zh	聚变/核工程术语，指“响应函数”这一技术概念。	internal:dict-improvements
+response-function	zh	响应函数是探测器或计数器的响应核。	corpus
 response-organization	zh	聚变/核工程术语，对应英文“response organization”。	internal:dict-improvements
 response-spectrum	zh	聚变/核工程术语，对应英文“response spectrum”。	internal:dict-improvements
 response-time	zh	聚变/核工程术语，对应英文“response time (of a component)”。	internal:dict-improvements
@@ -5393,7 +5393,7 @@ scenario-development	en	Fusion/nuclear engineering term referring to 'scenario d
 scenario-development	zh	聚变/核工程术语，指“运行场景开发”这一技术概念。	internal:dict-improvements
 scram	zh	聚变/核工程术语，对应英文“scram”。	internal:dict-improvements
 scratch-filesystem	en	A temporary high-speed storage filesystem on HPC systems.	corpus
-scratch-filesystem	zh	聚变/核工程术语，指“临时文件系统”这一技术概念。	internal:dict-improvements
+scratch-filesystem	zh	临时文件系统是 HPC 系统上用于临时存放数据的高速存储。	corpus
 screening	zh	聚变/核工程术语，对应英文“screening”。	internal:dict-improvements
 screening-distance-value	zh	聚变/核工程术语，对应英文“screening distance value (SDV)”。	internal:dict-improvements
 screening-probability-level	zh	聚变/核工程术语，对应英文“screening probability level (SPL)”。	internal:dict-improvements
@@ -5479,7 +5479,7 @@ somatic-effect	zh	聚变/核工程术语，对应英文“somatic effect”。	i
 sorption	zh	聚变/核工程术语，对应英文“sorption”。	internal:dict-improvements
 source	zh	聚变/核工程术语，对应英文“source”。	internal:dict-improvements
 source-convergence	en	Convergence of the fission source distribution.	corpus
-source-convergence	zh	聚变/核工程术语，指“源收敛”这一技术概念。	internal:dict-improvements
+source-convergence	zh	源收敛指裂变源分布的收敛。	corpus
 source-material	zh	聚变/核工程术语，对应英文“source material”。	internal:dict-improvements
 source-monitoring	zh	聚变/核工程术语，对应英文“source monitoring”。	internal:dict-improvements
 source-region	zh	聚变/核工程术语，对应英文“source region”。	internal:dict-improvements
@@ -5545,7 +5545,7 @@ strike-point	en	The location where the separatrix intersects the divertor target
 strike-point	zh	打击点是分界面与偏滤器靶板相交的位置。	corpus
 strombolian-eruption	zh	聚变/核工程术语，对应英文“strombolian eruption”。	internal:dict-improvements
 strong-scaling	en	A scaling regime with fixed problem size and increasing processors.	corpus
-strong-scaling	zh	聚变/核工程术语，指“强扩展”这一技术概念。	internal:dict-improvements
+strong-scaling	zh	强扩展是问题规模固定、处理器数量增加时的扩展方式。	corpus
 strongly-penetrating-radiation	zh	聚变/核工程术语，对应英文“strongly penetrating radiation”。	internal:dict-improvements
 structural-integrity	en	Fusion/nuclear engineering term referring to 'Structural Integrity' in technical context.	internal:dict-improvements
 structural-integrity	zh	聚变/核工程术语，指“结构完整性”这一技术概念。	internal:dict-improvements
@@ -5657,7 +5657,7 @@ tilt-instability	en	A global CT/spheromak MHD instability of magnetic axis tilt.
 tilt-instability	zh	倾斜不稳定性是磁轴倾斜的全局CT/球马克MHD不稳定性。	corpus
 time-based-maintenance	zh	聚变/核工程术语，对应英文“time based maintenance”。	internal:dict-improvements
 time-cutoff	en	The maximum time used in particle tracking.	corpus
-time-cutoff	zh	聚变/核工程术语，指“时间截断”这一技术概念。	internal:dict-improvements
+time-cutoff	zh	时间截断是粒子跟踪中采用的最长时间。	corpus
 tissue-equivalent-material	zh	聚变/核工程术语，对应英文“tissue equivalent material”。	internal:dict-improvements
 tissue-substitute	zh	聚变/核工程术语，对应英文“tissue substitute”。	internal:dict-improvements
 tissue-weighting-factor-wt	zh	聚变/核工程术语，对应英文“tissue weighting factor, wT”。	internal:dict-improvements
@@ -5683,7 +5683,7 @@ transnational-emergency	zh	聚变/核工程术语，对应英文“transnational
 transport	zh	聚变/核工程术语，指“输运”这一技术概念。	internal:dict-improvements
 transport-barrier	en	Under a certain operating mode (for example, H-mode) there may exist a region of low transport, which corresponds to a steep pressure gradient; such a region is called a transport barrier.	GB/T-4960.9
 transport-equation	en	The Boltzmann transport equation for particle transport.	corpus
-transport-equation	zh	聚变/核工程术语，指“输运方程”这一技术概念。	internal:dict-improvements
+transport-equation	zh	输运方程是描述粒子输运的玻尔兹曼方程。	corpus
 transport-index	zh	聚变/核工程术语，对应英文“transport index (TI)”。	internal:dict-improvements
 transportation	zh	聚变/核工程术语，对应英文“transportation”。	internal:dict-improvements
 trapped-particle	en	In a toroidal magnetic confinement device, a particle that, because energy and magnetic moment are conserved, cannot travel along the toroidal direction and is confined to move back and forth within a certain region.	GB/T-4960.9
@@ -5815,7 +5815,7 @@ wccb	zh	水冷陶瓷增殖剂包层方案，作为中国参考设计。	corpus
 wcpb	en	Fusion/nuclear engineering term referring to 'water-cooled pebble bed' in technical context.	internal:dict-improvements
 wcpb	zh	聚变/核工程术语，指“水冷球床包层”这一技术概念。	internal:dict-improvements
 weak-scaling	en	A scaling regime with problem size proportional to the processor count.	corpus
-weak-scaling	zh	聚变/核工程术语，指“弱扩展”这一技术概念。	internal:dict-improvements
+weak-scaling	zh	弱扩展是问题规模随处理器数量成比例增大的扩展方式。	corpus
 weight-window	en	Variance reduction technique that bounds the particle weights within specified regions.	corpus
 weight-window	zh	在指定区域内限制粒子权重的方差缩减技术。	corpus
 west	zh	聚变/核工程术语，对应英文“WEST”。	internal:dict-improvements
