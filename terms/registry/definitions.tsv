@@ -3823,7 +3823,7 @@ confinement-function	en	The safety function that provides containment barriers f
 confinement-function	zh	包容功能是为放射性物质提供包容屏障的安全功能。	corpus
 confinement-scaling	en	An empirical or semi-empirical expression showing how various plasma parameters (for example confinement and power threshold) vary with the operating conditions of a tokamak; it is summarized from a large amount of experimental data.	GB/T-4960.9
 conformal-mesh	en	A body-fitted unstructured mesh that follows the geometry.	corpus
-conformal-mesh	zh	聚变/核工程术语，指“适体网格”这一技术概念。	internal:dict-improvements
+conformal-mesh	zh	适体网格是贴合几何形状的非结构化网格。	corpus
 consequence-assessment	zh	聚变/核工程术语，对应英文“consequence assessment”。	internal:dict-improvements
 consignee	zh	聚变/核工程术语，对应英文“consignee”。	internal:dict-improvements
 consignment	zh	聚变/核工程术语，对应英文“consignment”。	internal:dict-improvements
@@ -3938,7 +3938,7 @@ debye-shielding	zh	德拜屏蔽是等离子体中对电荷的屏蔽。	corpus
 decay	en	The process by which a radioactive substance changes to a different form by sending out radiation.	https://www.oxfordlearnersdictionaries.com/definition/english/decay
 decay	zh	衰变是放射性物质通过发出辐射而转变为另一种形态的过程。	https://www.oxfordlearnersdictionaries.com/definition/english/decay
 decay-chain	en	A sequence of successive radioactive decays.	corpus
-decay-chain	zh	聚变/核工程术语，指“衰变链”这一技术概念。	internal:dict-improvements
+decay-chain	zh	衰变链是一系列连续的放射性衰变。	corpus
 decay-constant	zh	聚变/核工程术语，对应英文“decay constant, λ”。	internal:dict-improvements
 decay-gamma-source	en	A photon source from the radioactive decay of activated materials.	corpus
 decay-gamma-source	zh	衰变光子源是活化材料放射性衰变产生的光子源。	corpus
@@ -4226,7 +4226,7 @@ external-kink	en	Current-driven kink instability outside the plasma boundary.	co
 external-kink	zh	外扭曲模是等离子体边界外的电流驱动扭曲不稳定性。	corpus
 external-zone	zh	聚变/核工程术语，对应英文“external zone”。	internal:dict-improvements
 faceted-geometry	en	Triangulated surface geometry, as used by DAGMC.	corpus
-faceted-geometry	zh	聚变/核工程术语，指“面片化几何”这一技术概念。	internal:dict-improvements
+faceted-geometry	zh	面片化几何是由三角面片构成、DAGMC 等代码使用的表面几何。	corpus
 facilities-and-activities	zh	聚变/核工程术语，对应英文“facilities and activities”。	internal:dict-improvements
 facility	zh	聚变/核工程术语，对应英文“facility”。	internal:dict-improvements
 facility-emergency	zh	聚变/核工程术语，对应英文“facility emergency”。	internal:dict-improvements
@@ -4369,7 +4369,7 @@ graded-approach	zh	聚变/核工程术语，对应英文“graded approach”。
 grain-boundary	en	Fusion/nuclear engineering term referring to 'grain boundary' in technical context.	internal:dict-improvements
 grain-boundary	zh	聚变/核工程术语，指“晶界”这一技术概念。	internal:dict-improvements
 graveyard	en	The outer boundary region of a Monte Carlo geometry.	corpus
-graveyard	zh	聚变/核工程术语，指“墓碑区”这一技术概念。	internal:dict-improvements
+graveyard	zh	墓碑区是蒙特卡罗几何的外部边界区域。	corpus
 gray	zh	聚变/核工程术语，对应英文“gray (Gy)”。	internal:dict-improvements
 grid-integration	en	Fusion/nuclear engineering term referring to 'grid integration' in technical context.	internal:dict-improvements
 grid-integration	zh	聚变/核工程术语，指“电网集成”这一技术概念。	internal:dict-improvements
@@ -4424,7 +4424,7 @@ hepa-filter	en	Fusion/nuclear engineering term referring to 'HEPA filter' in tec
 hepa-filter	zh	聚变/核工程术语，指“高效空气过滤器”这一技术概念。	internal:dict-improvements
 hereditary-effect	zh	聚变/核工程术语，对应英文“hereditary effect”。	internal:dict-improvements
 hexahedral-mesh	en	A hexahedral mesh used for FEM calculations.	corpus
-hexahedral-mesh	zh	聚变/核工程术语，指“六面体网格”这一技术概念。	internal:dict-improvements
+hexahedral-mesh	zh	六面体网格是用于有限元计算的网格划分。	corpus
 high-beta	en	Plasma regime in which beta, the ratio of plasma pressure to magnetic pressure, approaches or exceeds unity; required for p-B11 fusion.	corpus
 high-beta	zh	比压 β（等离子体压强与磁压之比）接近或超过 1 的等离子体状态，为 p-B11 聚变所必需。	corpus
 high-cycle-fatigue	en	Fusion/nuclear engineering term referring to 'high-cycle fatigue' in technical context.	internal:dict-improvements
@@ -4485,7 +4485,7 @@ ideal-mhd-stability	zh	理想MHD稳定性是不考虑电阻效应的MHD稳定性
 ifmif-dones	zh	聚变/核工程术语，对应英文“IFMIF-DONES”。	internal:dict-improvements
 ifmif-eveda	zh	聚变/核工程术语，对应英文“IFMIF/EVEDA”。	internal:dict-improvements
 iges-format	en	The Initial Graphics Exchange Specification format.	corpus
-iges-format	zh	聚变/核工程术语，指“IGES格式”这一技术概念。	internal:dict-improvements
+iges-format	zh	IGES格式是初始图形交换规范格式。	corpus
 igneous-rock	zh	聚变/核工程术语，对应英文“igneous rock”。	internal:dict-improvements
 ignition	zh	聚变/核工程术语，指“点火”这一技术概念。	internal:dict-improvements
 ignition-condition	en	The condition for a self-sustaining fusion reaction: for a deuterium-tritium plasma, the heating by alpha particles equals the heat loss of the plasma.	GB/T-4960.9
@@ -4594,7 +4594,7 @@ isotope-production	zh	聚变/核工程术语，指“同位素生产”这一技
 isotope-separation	en	Process to separate the hydrogen isotopes (H, D, T).	corpus
 isotope-separation	zh	同位素分离是将氢同位素氕（H）、氘（D）、氚（T）分开的过程。	corpus
 isotopic-composition	en	The relative abundance of the isotopes in a material.	corpus
-isotopic-composition	zh	聚变/核工程术语，指“同位素组成”这一技术概念。	internal:dict-improvements
+isotopic-composition	zh	同位素组成是材料中各同位素的相对丰度。	corpus
 item-important-to-safety	zh	聚变/核工程术语，对应英文“item important to safety”。	internal:dict-improvements
 iter-to-demo	en	Transition phase from the ITER experimental results to the design of DEMO.	corpus
 iter-to-demo	zh	从 ITER 实验结果过渡到 DEMO 设计的阶段。	corpus
@@ -4634,7 +4634,7 @@ lawson-s-criteria	zh	聚变/核工程术语，对应英文“Lawson's Criteria�
 leading-edge	en	Fusion/nuclear engineering term referring to 'leading edge' in technical context.	internal:dict-improvements
 leading-edge	zh	聚变/核工程术语，指“前缘”这一技术概念。	internal:dict-improvements
 lethargy	en	The logarithmic energy variable u = ln(E0/E).	corpus
-lethargy	zh	聚变/核工程术语，指“对数能降”这一技术概念。	internal:dict-improvements
+lethargy	zh	对数能降是对数能量变量 u = ln(E0/E)。	corpus
 level	zh	聚变/核工程术语，对应英文“level”。	internal:dict-improvements
 licence	zh	聚变/核工程术语，对应英文“licence”。	internal:dict-improvements
 licensee	zh	聚变/核工程术语，对应英文“licensee”。	internal:dict-improvements
@@ -5312,9 +5312,9 @@ resistive-mhd	en	Magnetohydrodynamic model that includes a finite plasma resisti
 resistive-mhd	zh	包含有限等离子体电阻率的磁流体力学模型。	corpus
 resistive-wall-mode	en	An external kink magnetohydrodynamic instability that exists in the presence of a non-ideal conducting wall. It grows on the time scale of the penetration of the magnetic field through the wall and usually has to be controlled by means of external control coils.	GB/T-4960.9
 resolved-resonance-region	en	An energy range in which individual resonances are resolved.	corpus
-resolved-resonance-region	zh	聚变/核工程术语，指“分辨共振区”这一技术概念。	internal:dict-improvements
+resolved-resonance-region	zh	分辨共振区是各共振可被分辨的能量区间。	corpus
 resonance-self-shielding	en	Flux depression in the resonance energy range.	corpus
-resonance-self-shielding	zh	聚变/核工程术语，指“共振自屏效应”这一技术概念。	internal:dict-improvements
+resonance-self-shielding	zh	共振自屏效应是共振能区内的通量凹陷。	corpus
 response-function	en	The response kernel of a detector or tally.	corpus
 response-function	zh	响应函数是探测器或计数器的响应核。	corpus
 response-organization	zh	聚变/核工程术语，对应英文“response organization”。	internal:dict-improvements
@@ -5351,7 +5351,7 @@ runup	zh	聚变/核工程术语，对应英文“runup”。	internal:dict-impro
 rupture-disc	en	Fusion/nuclear engineering term referring to 'rupture disc' in technical context.	internal:dict-improvements
 rupture-disc	zh	聚变/核工程术语，指“爆破片”这一技术概念。	internal:dict-improvements
 s-alpha-beta	en	The thermal scattering law data, written S(alpha,beta).	corpus
-s-alpha-beta	zh	聚变/核工程术语，指“S(α,β)”这一技术概念。	internal:dict-improvements
+s-alpha-beta	zh	S(α,β) 是用于束缚原子散射的热散射律数据。	corpus
 safe-state	zh	聚变/核工程术语，对应英文“safe state”。	internal:dict-improvements
 safeguards-agreement	zh	聚变/核工程术语，对应英文“safeguards agreement”。	internal:dict-improvements
 safety	zh	聚变/核工程术语，对应英文“safety”。	internal:dict-improvements
@@ -5525,13 +5525,13 @@ steel	zh	钢是铁与碳混合制成的一种坚硬金属。	https://www.oxfordl
 stellarator-optimization	en	The numerical optimization of three-dimensional stellarator plasma geometry, in which coil or boundary shapes are varied to improve confinement, stability and neoclassical transport.	corpus
 stellarator-optimization	zh	对三维仿星器等离子体几何的数值优化，通过改变线圈或边界形状以改善约束、稳定性与新古典输运。	corpus
 step-format	en	The ISO 10303 standard CAD exchange format.	corpus
-step-format	zh	聚变/核工程术语，指“STEP格式”这一技术概念。	internal:dict-improvements
+step-format	zh	STEP格式是 ISO 10303 标准 CAD 交换格式。	corpus
 stimulated-brillouin-scattering	en	Fusion/nuclear engineering term referring to 'stimulated Brillouin scattering' in technical context.	internal:dict-improvements
 stimulated-brillouin-scattering	zh	聚变/核工程术语，指“受激布里渊散射”这一技术概念。	internal:dict-improvements
 stimulated-raman-scattering	en	Fusion/nuclear engineering term referring to 'stimulated Raman scattering' in technical context.	internal:dict-improvements
 stimulated-raman-scattering	zh	聚变/核工程术语，指“受激拉曼散射”这一技术概念。	internal:dict-improvements
 stl-format	en	The Stereolithography triangle mesh format.	corpus
-stl-format	zh	聚变/核工程术语，指“STL格式”这一技术概念。	internal:dict-improvements
+stl-format	zh	STL格式是立体光刻三角网格格式。	corpus
 stochastic-analysis	zh	聚变/核工程术语，对应英文“stochastic analysis”。	internal:dict-improvements
 stochastic-effect	zh	聚变/核工程术语，对应英文“stochastic effect”。	internal:dict-improvements
 storage	zh	聚变/核工程术语，对应英文“storage”。	internal:dict-improvements
@@ -5579,7 +5579,7 @@ supply-chain	zh	供应链是聚变部件的制造与原材料供应体系。	cor
 surface-contaminated-object	zh	聚变/核工程术语，对应英文“surface contaminated object (SCO)”。	internal:dict-improvements
 surface-faulting	zh	聚变/核工程术语，对应英文“surface faulting”。	internal:dict-improvements
 surface-mesh	en	A triangulated surface representation of a geometry.	corpus
-surface-mesh	zh	聚变/核工程术语，指“表面网格”这一技术概念。	internal:dict-improvements
+surface-mesh	zh	表面网格是几何的三角化表面表示。	corpus
 surface-morphology	en	Fusion/nuclear engineering term referring to 'surface morphology' in technical context.	internal:dict-improvements
 surface-morphology	zh	聚变/核工程术语，指“表面形貌”这一技术概念。	internal:dict-improvements
 surface-recombination	en	Fusion/nuclear engineering term referring to 'surface recombination' in technical context.	internal:dict-improvements
@@ -5623,7 +5623,7 @@ temperature-pedestal	en	The H-mode edge temperature pedestal structure.	corpus
 temperature-pedestal	zh	温度基座是 H 模边界温度基座结构。	corpus
 temporary-relocation	zh	聚变/核工程术语，对应英文“temporary relocation”。	internal:dict-improvements
 tetrahedral-mesh	en	A tetrahedral mesh used for FEM and Monte Carlo calculations.	corpus
-tetrahedral-mesh	zh	聚变/核工程术语，指“四面体网格”这一技术概念。	internal:dict-improvements
+tetrahedral-mesh	zh	四面体网格是用于有限元与蒙特卡罗计算的网格划分。	corpus
 tf-ripple	en	In a tokamak, the use of a finite number of discrete toroidal field coils makes the magnitude of the toroidal magnetic field fluctuate to some extent along the toroidal direction. The "ripple" in such a magnetic field traps particles and causes power loss.	GB/T-4960.9
 tftr	zh	聚变/核工程术语，对应英文“TFTR”。	internal:dict-improvements
 therapeutic-exposure	zh	聚变/核工程术语，对应英文“therapeutic exposure”。	internal:dict-improvements
@@ -5638,7 +5638,7 @@ thermal-hydraulics	zh	热工水力是对聚变冷却系统中传热与流动的�
 thermal-quench	en	Fusion/nuclear engineering term referring to 'thermal quench' in technical context.	internal:dict-improvements
 thermal-quench	zh	聚变/核工程术语，指“热猝灭”这一技术概念。	internal:dict-improvements
 thermal-scattering	en	Neutron scattering from atoms bound in a material at thermal energies.	corpus
-thermal-scattering	zh	聚变/核工程术语，指“热散射”这一技术概念。	internal:dict-improvements
+thermal-scattering	zh	热散射是热能量下束缚原子对中子的散射。	corpus
 thermal-shield	zh	聚变/核工程术语，指“冷屏”这一技术概念。	internal:dict-improvements
 thermal-shock	en	Single-pulse high heat flux damage to the PFC.	corpus
 thermal-shock	zh	热冲击是单脉冲高热流对PFC造成的损伤。	corpus
@@ -5743,7 +5743,7 @@ unilateral-approval	zh	聚变/核工程术语，对应英文“unilateral approv
 unirradiated-thorium	zh	聚变/核工程术语，对应英文“unirradiated thorium”。	internal:dict-improvements
 unirradiated-uranium	zh	聚变/核工程术语，对应英文“unirradiated uranium”。	internal:dict-improvements
 unresolved-resonance-region	en	An energy range in which resonances overlap statistically.	corpus
-unresolved-resonance-region	zh	聚变/核工程术语，指“非分辨共振区”这一技术概念。	internal:dict-improvements
+unresolved-resonance-region	zh	非分辨共振区是共振统计重叠的能量区间。	corpus
 unrestricted-linear-energy-transfer-l	zh	聚变/核工程术语，对应英文“unrestricted linear energy transfer, L∞”。	internal:dict-improvements
 unrestricted-use	zh	聚变/核工程术语，对应英文“unrestricted use”。	internal:dict-improvements
 unsealed-source	zh	聚变/核工程术语，对应英文“unsealed source”。	internal:dict-improvements
@@ -5778,13 +5778,13 @@ vertical-stability	en	Axisymmetric stability of an elongated plasma.	corpus
 vertical-stability	zh	垂直稳定性是拉长等离子体的轴对称稳定性。	corpus
 vlasov-equation	en	The kinetic equation describing a high-temperature plasma whose collisional mean free path is far larger than the characteristic length of the system.	GB/T-4960.9
 void-region	en	Non-material space in a Monte Carlo geometry.	corpus
-void-region	zh	聚变/核工程术语，指“空区域”这一技术概念。	internal:dict-improvements
+void-region	zh	空区域是蒙特卡罗几何中的无材料空间。	corpus
 void-swelling	en	A volume increase in materials caused by vacancy clustering under irradiation.	corpus
 void-swelling	zh	辐照肿胀是辐照下空位聚集引起的材料体积增大。	corpus
 volumetric-neutron-source	en	Fusion/nuclear engineering term referring to 'volumetric neutron source' in technical context.	internal:dict-improvements
 volumetric-neutron-source	zh	聚变/核工程术语，指“体中子源”这一技术概念。	internal:dict-improvements
 voxel-model	en	A structured voxelized geometry representation.	corpus
-voxel-model	zh	聚变/核工程术语，指“体素模型”这一技术概念。	internal:dict-improvements
+voxel-model	zh	体素模型是结构化的体素化几何表示。	corpus
 wall	en	A long, solid structure that rises straight up from the ground and surrounds, divides or protects an area.	https://www.oxfordlearnersdictionaries.com/definition/english/wall
 wall	zh	壁是自地面直立延伸、用于围合、分隔或防护某一区域的实体结构。	https://www.oxfordlearnersdictionaries.com/definition/english/wall
 wall-load	zh	聚变/核工程术语，对应英文“Wall load”。	internal:dict-improvements
@@ -5805,7 +5805,7 @@ water-cooled	zh	以加压水作为冷却剂的冷却方案。	corpus
 water-radiolysis	en	Fusion/nuclear engineering term referring to 'water radiolysis' in technical context.	internal:dict-improvements
 water-radiolysis	zh	聚变/核工程术语，指“水辐解”这一技术概念。	internal:dict-improvements
 watertight-geometry	en	Gap-free geometry, as required by codes such as DAGMC.	corpus
-watertight-geometry	zh	聚变/核工程术语，指“水密几何”这一技术概念。	internal:dict-improvements
+watertight-geometry	zh	水密几何是无缝隙几何，DAGMC 等代码要求如此。	corpus
 wave-absorption	en	Absorption of RF wave power by the plasma.	corpus
 wave-absorption	zh	波吸收是等离子体对射频波功率的吸收。	corpus
 wave-plasma-interaction	en	Coupling and energy transfer between electromagnetic waves and plasma.	corpus
