@@ -3858,7 +3858,7 @@ coolant	en	Fusion/nuclear engineering term referring to 'coolant' in technical c
 coolant	zh	聚变/核工程术语，指“冷却剂”这一技术概念。	internal:dict-improvements
 coolant-chemistry	en	Chemical control of the coolant in a blanket.	corpus
 coolant-chemistry	zh	冷却剂化学是对增殖包层冷却剂的化学控制。	corpus
-coolant-purification	en	Fusion/nuclear engineering term referring to 'coolant purification' in technical context.	internal:dict-improvements
+coolant-purification	en	A supporting process of the cooling system.	corpus
 coolant-purification	zh	聚变/核工程术语，指“冷却剂纯化”这一技术概念。	internal:dict-improvements
 cooldown	zh	聚变/核工程术语，对应英文“Cooldown”。	internal:dict-improvements
 cooling	en	The act of becoming cool or cooler, or of making somebody or something become cool or cooler.	https://www.oxfordlearnersdictionaries.com/definition/english/cool_2
@@ -3919,7 +3919,7 @@ current-hole	zh	电流空洞是等离子体中心附近环向电流密度近乎�
 current-lead	en	A conductor that carries current between a room-temperature bus and a cryogenic coil, thermally optimized to limit heat conduction into the cold mass.	corpus
 current-lead	zh	连接室温母线与低温线圈的导体，经热优化以限制传入冷质量的热传导。	corpus
 current-profile-control	en	A technique for controlling the plasma current distribution by means of auxiliary heating and non-inductive current drive, in order to produce the optimum plasma configuration and to improve the plasma confinement.	GB/T-4960.9
-current-quench	en	Fusion/nuclear engineering term referring to 'current quench' in technical context.	internal:dict-improvements
+current-quench	en	A disruption phase in which the plasma current decays.	corpus
 current-quench	zh	聚变/核工程术语，指“电流猝灭”这一技术概念。	internal:dict-improvements
 curvature-drift	en	Particle drift caused by magnetic field line curvature.	corpus
 curvature-drift	zh	曲率漂移是由磁力线曲率引起的粒子漂移。	corpus
@@ -3988,7 +3988,7 @@ detriment	zh	聚变/核工程术语，对应英文“detriment”。	internal:di
 detritiation	en	Removal of tritium from gas, water, or solid process streams.	corpus
 detritiation	zh	从气体、水或固体工艺流中脱除氚。	corpus
 deuterium	zh	聚变/核工程术语，指“氘”这一技术概念。	internal:dict-improvements
-deuterium-processing	en	Fusion/nuclear engineering term referring to 'deuterium processing' in technical context.	internal:dict-improvements
+deuterium-processing	en	Processing on the deuterium side of the fuel cycle.	corpus
 deuterium-processing	zh	聚变/核工程术语，指“氘处理”这一技术概念。	internal:dict-improvements
 deuterium-tritium	en	The mixture of deuterium and tritium used as the primary fusion fuel.	corpus
 deuterium-tritium	zh	氘氚是作为主要聚变燃料使用的氘与氚混合物。	corpus
@@ -4187,10 +4187,10 @@ etg-mode	zh	电子温度梯度模是电子回旋半径尺度上驱动电子热�
 evacuation	zh	聚变/核工程术语，对应英文“evacuation”。	internal:dict-improvements
 evaluation	en	The act of forming an opinion of the amount, value or quality of something after thinking about it carefully.	https://www.oxfordlearnersdictionaries.com/definition/english/evaluation
 evaluation	zh	评估是经过仔细思考后对某事物的数量、价值或质量形成判断的行为。	https://www.oxfordlearnersdictionaries.com/definition/english/evaluation
-eveda	en	Fusion/nuclear engineering term referring to 'Engineering Validation and Engineering Design Activities' in technical context.	internal:dict-improvements
+eveda	en	The Engineering Validation and Engineering Design Activities phase of IFMIF.	corpus
 eveda	zh	聚变/核工程术语，指“工程验证与工程设计活动”这一技术概念。	internal:dict-improvements
 event	zh	聚变/核工程术语，对应英文“event”。	internal:dict-improvements
-ex-vessel	en	Fusion/nuclear engineering term referring to 'ex-vessel' in technical context.	internal:dict-improvements
+ex-vessel	en	A general ex-vessel context beyond LOCA-specific concepts.	corpus
 ex-vessel	zh	聚变/核工程术语，指“堆外”这一技术概念。	internal:dict-improvements
 ex-vessel-component	en	Fusion/nuclear engineering term referring to 'Ex-Vessel Component' in technical context.	internal:dict-improvements
 ex-vessel-component	zh	聚变/核工程术语，指“真空室外部件”这一技术概念。	internal:dict-improvements
@@ -4411,7 +4411,7 @@ helicon-wave	en	Bounded whistler wave used for plasma heating and current drive.
 helicon-wave	zh	螺旋波是用于等离子体加热和电流驱动的有界哨声波。	corpus
 helium-bubble	en	Helium accumulation forming bubbles in a material from (n,alpha) reactions.	corpus
 helium-bubble	zh	氦泡是材料中由(n,alpha)反应产生的氦聚集形成的气泡。	corpus
-helium-coolant	en	Fusion/nuclear engineering term referring to 'helium coolant' in technical context.	internal:dict-improvements
+helium-coolant	en	Helium used as a blanket or coolant working fluid.	corpus
 helium-coolant	zh	聚变/核工程术语，指“氦冷却剂”这一技术概念。	internal:dict-improvements
 helium-cooled	en	Coolant scheme that uses high-pressure helium gas.	corpus
 helium-cooled	zh	以高压氦气作为冷却剂的冷却方案。	corpus
@@ -4443,7 +4443,7 @@ high-recycling	en	High recycling regime in the SOL/divertor.	corpus
 high-recycling	zh	高再循环是SOL或偏滤器中的高再循环区间。	corpus
 high-temperature-superconductor	en	A superconductor with a critical temperature Tc above 30 K, the class of materials that includes REBCO, YBCO and Bi-2212.	corpus
 high-temperature-superconductor	zh	临界温度Tc高于30 K的一类超导体，包括REBCO、YBCO和Bi-2212等材料。	corpus
-histogram	en	Fusion/nuclear engineering term referring to 'histogram' in technical context.	internal:dict-improvements
+histogram	en	A chart that shows a frequency distribution.	corpus
 histogram	zh	聚变/核工程术语，指“直方图”这一技术概念。	internal:dict-improvements
 hohlraum	en	A high-Z cylindrical cavity used in indirect-drive inertial confinement fusion, in which laser energy is converted into X-rays that drive the capsule implosion.	corpus
 hohlraum	zh	间接驱动惯性约束聚变中使用的高原子序数圆柱腔，激光能量在其中转换为 X 射线以驱动靶丸内爆。	corpus
@@ -4500,7 +4500,7 @@ impurity-source	en	The impurity production yield and spatial distribution at the
 impurity-source	zh	杂质源是壁上杂质的产额与空间分布。	corpus
 impurity-transport	en	Transport of impurity ions within the confined plasma.	corpus
 impurity-transport	zh	杂质离子在约束等离子体中的输运。	corpus
-in-vessel	en	Fusion/nuclear engineering term referring to 'in-vessel' in technical context.	internal:dict-improvements
+in-vessel	en	A general in-vessel context beyond LOCA-specific concepts.	corpus
 in-vessel	zh	聚变/核工程术语，指“堆内”这一技术概念。	internal:dict-improvements
 in-vessel-component	en	A component mounted directly inside the vacuum vessel of a tokamak, such as the blanket, the divertor, part of the fuelling system, the internal pumping system, and diagnostic sensors.	GB/T-4960.9
 in-vessel-components	zh	聚变/核工程术语，对应英文“In-vessel components”。	internal:dict-improvements
@@ -4531,7 +4531,7 @@ initial-condition	zh	初始条件是t=0时解的状态。	corpus
 initiating-event	zh	聚变/核工程术语，对应英文“initiating event”。	internal:dict-improvements
 initiator	zh	聚变/核工程术语，对应英文“initiator”。	internal:dict-improvements
 inner-cordoned-off-area	zh	聚变/核工程术语，对应英文“inner cordoned off area”。	internal:dict-improvements
-inner-fuel-cycle	en	Fusion/nuclear engineering term referring to 'inner fuel cycle' in technical context.	internal:dict-improvements
+inner-fuel-cycle	en	The inner cycle that directly recirculates plasma exhaust.	corpus
 inner-fuel-cycle	zh	聚变/核工程术语，指“内燃料循环”这一技术概念。	internal:dict-improvements
 inspection	zh	聚变/核工程术语，对应英文“inspection”。	internal:dict-improvements
 inspection-imaging-device	zh	聚变/核工程术语，对应英文“inspection imaging device”。	internal:dict-improvements
@@ -4660,7 +4660,7 @@ liner-implosion	en	Fusion/nuclear engineering term referring to 'liner implosion
 liner-implosion	zh	聚变/核工程术语，指“衬套内爆”这一技术概念。	internal:dict-improvements
 linker	en	A linking tool that operates on object files.	corpus
 linker	zh	链接器是用于链接目标文件的工具。	corpus
-liquid-lithium-purification	en	Fusion/nuclear engineering term referring to 'liquid lithium purification' in technical context.	internal:dict-improvements
+liquid-lithium-purification	en	A key process for liquid lithium purification in IFMIF/ELTL.	corpus
 liquid-lithium-purification	zh	聚变/核工程术语，指“液态锂纯化”这一技术概念。	internal:dict-improvements
 liquid-metal	en	Liquid metal in general, not only as a coolant.	corpus
 liquid-metal	zh	液态金属指一般意义上的液态金属，不限于冷却剂。	corpus
@@ -4952,7 +4952,7 @@ os-process	en	An OS-level process, distinct from the PROCESS code.	corpus
 os-process	zh	进程是运行在操作系统层面的进程，区别于 PROCESS 程序。	corpus
 other-nuclear-or-radiological-emergency	zh	聚变/核工程术语，对应英文“other nuclear or radiological emergency”。	internal:dict-improvements
 other-response-actions	zh	聚变/核工程术语，对应英文“other response actions”。	internal:dict-improvements
-outer-fuel-cycle	en	Fusion/nuclear engineering term referring to 'outer fuel cycle' in technical context.	internal:dict-improvements
+outer-fuel-cycle	en	The outer cycle: blanket tritium extraction, purification, storage and injection.	corpus
 outer-fuel-cycle	zh	聚变/核工程术语，指“外燃料循环”这一技术概念。	internal:dict-improvements
 outgassing	en	Release of adsorbed gases from the walls of a vacuum vessel.	corpus
 outgassing	zh	出气是真空室壁面吸附气体的释放。	corpus
@@ -5107,13 +5107,13 @@ pressure-driven-mode	en	MHD mode driven by the pressure gradient, such as the ba
 pressure-driven-mode	zh	压力驱动模是由等离子体压力梯度驱动的MHD模，典型例子为气球模。	corpus
 pressure-pedestal	en	The H-mode edge pressure pedestal structure.	corpus
 pressure-pedestal	zh	压力基座是 H 模边界压力基座结构。	corpus
-pressurized-water	en	Fusion/nuclear engineering term referring to 'pressurized water' in technical context.	internal:dict-improvements
+pressurized-water	en	A coolant type concept, for pressurized water.	corpus
 pressurized-water	zh	聚变/核工程术语，指“加压水”这一技术概念。	internal:dict-improvements
 pressurizer	en	Fusion/nuclear engineering term referring to 'pressurizer' in technical context.	internal:dict-improvements
 pressurizer	zh	聚变/核工程术语，指“稳压器”这一技术概念。	internal:dict-improvements
 pretreatment	zh	聚变/核工程术语，对应英文“pretreatment (of waste)”。	internal:dict-improvements
 preventive-maintenance	zh	聚变/核工程术语，对应英文“preventive maintenance”。	internal:dict-improvements
-primary-heat-transfer	en	Fusion/nuclear engineering term referring to 'primary heat transfer' in technical context.	internal:dict-improvements
+primary-heat-transfer	en	A primary-loop thermal transfer concept.	corpus
 primary-heat-transfer	zh	聚变/核工程术语，指“一回路传热”这一技术概念。	internal:dict-improvements
 primary-limit	zh	聚变/核工程术语，对应英文“primary limit”。	internal:dict-improvements
 primary-loop	en	The primary coolant circuit that removes heat from the blanket and the divertor.	corpus
@@ -5262,7 +5262,7 @@ recuperator	en	Fusion/nuclear engineering term referring to 'recuperator' in tec
 recuperator	zh	聚变/核工程术语，指“回热器”这一技术概念。	internal:dict-improvements
 redeposition	en	The deposition again of material that has previously been eroded from a surface, so that eroded material is returned to the surfaces instead of being permanently removed.	corpus
 redeposition	zh	先前已从表面被侵蚀的材料重新沉积下来的过程，使被侵蚀的材料返回表面而不是被永久去除。	corpus
-reduced-activation	en	Fusion/nuclear engineering term referring to 'reduced activation' in technical context.	internal:dict-improvements
+reduced-activation	en	A general reduced-activation concept across materials.	corpus
 reduced-activation	zh	聚变/核工程术语，指“低活化”这一技术概念。	internal:dict-improvements
 reduced-mhd	en	A simplified MHD model valid for low-beta, large-aspect-ratio plasmas.	corpus
 reduced-mhd	zh	约化MHD是适用于低比压、大环径比等离子体的简化 MHD 模型。	corpus
@@ -5511,7 +5511,7 @@ stark-broadening	zh	斯塔克展宽是电场造成的谱线展宽。	corpus
 state-of-destination	zh	聚变/核工程术语，对应英文“State of destination”。	internal:dict-improvements
 state-of-origin	zh	聚变/核工程术语，对应英文“State of origin”。	internal:dict-improvements
 state-of-transit	zh	聚变/核工程术语，对应英文“State of transit”。	internal:dict-improvements
-station-blackout	en	Fusion/nuclear engineering term referring to 'station blackout' in technical context.	internal:dict-improvements
+station-blackout	en	A member of the LOCA/LOFA/LOVA accident family.	corpus
 station-blackout	zh	聚变/核工程术语，指“全厂断电事故”这一技术概念。	internal:dict-improvements
 steady-state-high-beta	en	An advanced tokamak target scenario that combines high beta with steady state.	corpus
 steady-state-high-beta	zh	稳态高β运行是兼具高β与稳态运行的先进托卡马克目标场景。	corpus
@@ -5635,7 +5635,7 @@ thermal-force	en	The friction force component from a temperature gradient.	corpu
 thermal-force	zh	热力是温度梯度产生的摩擦力分量。	corpus
 thermal-hydraulics	en	The analysis of heat transfer and fluid flow in fusion cooling systems.	corpus
 thermal-hydraulics	zh	热工水力是对聚变冷却系统中传热与流动的分析。	corpus
-thermal-quench	en	Fusion/nuclear engineering term referring to 'thermal quench' in technical context.	internal:dict-improvements
+thermal-quench	en	A disruption phase in which thermal energy is rapidly lost.	corpus
 thermal-quench	zh	聚变/核工程术语，指“热猝灭”这一技术概念。	internal:dict-improvements
 thermal-scattering	en	Neutron scattering from atoms bound in a material at thermal energies.	corpus
 thermal-scattering	zh	热散射是热能量下束缚原子对中子的散射。	corpus
@@ -5697,7 +5697,7 @@ tritium-breeding	en	Fusion/nuclear engineering term referring to 'tritium breedi
 tritium-breeding	zh	聚变/核工程术语，指“氚增殖”这一技术概念。	internal:dict-improvements
 tritium-building	en	Fusion/nuclear engineering term referring to 'tritium building' in technical context.	internal:dict-improvements
 tritium-building	zh	聚变/核工程术语，指“氚厂房”这一技术概念。	internal:dict-improvements
-tritium-carrier	en	Fusion/nuclear engineering term referring to 'tritium carrier' in technical context.	internal:dict-improvements
+tritium-carrier	en	The tritium transport role played by PbLi and similar materials in a blanket.	corpus
 tritium-carrier	zh	聚变/核工程术语，指“氚载体”这一技术概念。	internal:dict-improvements
 tritium-confinement	en	Fusion/nuclear engineering term referring to 'tritium confinement' in technical context.	internal:dict-improvements
 tritium-confinement	zh	聚变/核工程术语，指“氚包容”这一技术概念。	internal:dict-improvements
@@ -5798,11 +5798,11 @@ waste-heat-recovery	en	The recovery of useful energy from low-grade thermal outp
 waste-heat-recovery	zh	余热回收是从低品位热输出中回收可用能量的过程。	corpus
 waste-package	en	A waste form plus container, as accepted at a disposal facility.	corpus
 waste-package	zh	废物包是废物体加容器、被处置场接收的形式。	corpus
-water-coolant	en	Fusion/nuclear engineering term referring to 'water coolant' in technical context.	internal:dict-improvements
+water-coolant	en	A blanket or divertor coolant working fluid, corresponding to helium coolant.	corpus
 water-coolant	zh	聚变/核工程术语，指“水冷却剂”这一技术概念。	internal:dict-improvements
 water-cooled	en	Coolant scheme that uses pressurized water.	corpus
 water-cooled	zh	以加压水作为冷却剂的冷却方案。	corpus
-water-radiolysis	en	Fusion/nuclear engineering term referring to 'water radiolysis' in technical context.	internal:dict-improvements
+water-radiolysis	en	A key process for coolant hydrogen concentration and safety analysis.	corpus
 water-radiolysis	zh	聚变/核工程术语，指“水辐解”这一技术概念。	internal:dict-improvements
 watertight-geometry	en	Gap-free geometry, as required by codes such as DAGMC.	corpus
 watertight-geometry	zh	水密几何是无缝隙几何，DAGMC 等代码要求如此。	corpus
@@ -5812,7 +5812,7 @@ wave-plasma-interaction	en	Coupling and energy transfer between electromagnetic 
 wave-plasma-interaction	zh	波等离子体相互作用是电磁波与等离子体之间的耦合与能量传递。	corpus
 wccb	en	Water-cooled ceramic breeder blanket concept, used as the Chinese reference design.	corpus
 wccb	zh	水冷陶瓷增殖剂包层方案，作为中国参考设计。	corpus
-wcpb	en	Fusion/nuclear engineering term referring to 'water-cooled pebble bed' in technical context.	internal:dict-improvements
+wcpb	en	A water-cooled pebble-bed blanket concept.	corpus
 wcpb	zh	聚变/核工程术语，指“水冷球床包层”这一技术概念。	internal:dict-improvements
 weak-scaling	en	A scaling regime with problem size proportional to the processor count.	corpus
 weak-scaling	zh	弱扩展是问题规模随处理器数量成比例增大的扩展方式。	corpus
