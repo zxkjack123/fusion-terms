@@ -1923,6 +1923,26 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 - **本组进度（D2-4 `B17–B21` 组）**：本批完成后 **2/5 批**（`b17`、`b18`）；`b21` 完成后由**父代理**统一执行本组 D2-4 抽检 + W0 证据束 `--compare`
 - **下一步**：`w1_b_b19` 起串行推进；**W1-A + W1-B B01–B18 累计迁移**：`en_boilerplate` 746 → **319**（−427）、`corpus` 48 → **751**
 
+#### T1.B18R — 返工执行记录（IMPR-2，2026-10-27，#T-4973）commits `5e518f4`（取据表，docs）+ `f5dccdd`（-EN + 留证行）+ 本批 log commit（-ZH + 本节）
+
+> 本节为 §「T1.B18 / T1.B19 返工（IMPR-2）」返工的实施留痕。**不篡**上文 T1.B18-EN / T1.B18-ZH 历史条目（其「✅ DONE」含义仍按返工节 §1 = 「已写入，未验收」）。
+
+- **范围**：**仅 B18 的 9 个 glue id**（`calculation`、`material`、`performance`、`neutron`、`simulation`、`evaluation`、`method`、`mode`、`device`）；其余 **11 个 `corpus` 行逐字未改**（`git diff` 证据）。**批规模 20 id 不变**。
+- **来源（本轮授权 = 「接受出版社词典（推荐）」）**：9 个 glue id 全部改用 **OUP（Oxford Learner's Dictionaries，出版社词典）** 的**匹配义项**，并**保留原句定位**；义项：`performance` = 第 3 义项（how well something works = 机器/器件工作好坏，**非**第 1 义项「表演」、**非**第 4 义项「执行/完成」）、`mode` = 第 2 义项（equipment operating setup = 设备运行方式）、`material` = 第 1 义项（physical substance）、`device` = 第 1 义项（constructed object/equipment）、其余为第 1 义项。固定义项 + 逐字原句 + URL + 探针状态见新增来源表 `.github/plans/t4973-batches/glue-sources-b18.tsv`（8 列 × 9 行）。
+- **原句独立核对（非采信二手摘要）**：全部 9 条 `quote_verbatim` **逐字取自原 HTML**（`/tmp/opencode/t4973-authority/ox_*.html`），**含 `neutron`**——原 `evidence.tsv` 摘录为**截断句** `a very small piece of matter`，本轮**未采用**该截断句，改采 OUP 页原句全句 `a very small piece of matter (= a substance) that carries no electric charge and that forms part of the nucleus (= central part) of an atom`（提取留证 `/tmp/opencode/t4973-b18r/html_extract.txt`）。
+- **义项修正（RED → GREEN，均为实跑）**：
+  - `D1 performance`：en `carrying out or accomplishing` 命中 **1 → 0**；zh `执行或完成某项任务或功能` 命中 **1 → 0**（新 zh 起句 = `性能指机器或系统运行的好坏程度…`）
+  - `D3 device`：`natural object` / `自然物` 无据对比 **1 → 0** / **1 → 0**（**未**为凑长度补入无据内容）
+  - `D4` 百科/词典级来源：9 个 glue id 中原为 `wikipedia`/`wiktionary` 的 `source` **18 行**（en+zh）**→ 0 行**
+  - `D5` 留证缺口：`evidence.tsv` 中与 `definitions.tsv` 同 URL 的留证行 **0 → 9**（5 列、`quote` 与来源表逐字一致、`added_at=2026-10-27`；`non-5-col rows = 0`、`glued_source_rows` 未增）
+  - 断言脚本 + 前后输出：`/tmp/opencode/t4973-b18r/red_assert.sh`、`red_b18_exit.txt`（RED_OVERALL=1）、`green_b18_postfix.txt`（RED_OVERALL=0）
+- **门禁（实跑，`/tmp/opencode/t4973-b18r/`）**：`--lang en` **exit 0**、`--lang zh` **exit 0**、`--lang both`（批收口，`--expect 20`）**exit 0**；`python -m pipeline.validate_registry` **exit 0**（`6132 definitions`、`3177 evidence rows`）；`python -m pytest -q` **exit 0**。不变量：`definitions.tsv` 行数 **6132**；本批改动 `(id,lang)` = 9 en + 9 zh（两次 commit 各 9/9）。
+- **URL 真实探测（两条工具路径结果**分别**记录，未以 `--no-net` 充作通过）**：
+  - **curl 路径（本计划 §6 指定证据路径）**：9/9 **HTTP 200**（含 `material` → `…/material_1` 302→200 follow）；记录 `/tmp/opencode/t4973-b18r/probe_b18r1.txt`；
+  - **门禁 urllib 路径**：`--check-urls` → **exit 1**，9 条 `def_url_status: … answered 403`（OUP 反爬对默认 `Python-urllib` UA 返回 403；**非**网络不可达）—— 记录 `/tmp/opencode/t4973-b18r/gate_b18_en.txt`。**该差异不改变本批判据**（§6 AC 以 curl 探测为准），但**列为剩余风险**：若后续任何门禁以 `--check-urls`（默认 UA）扫描全集，这 9 条会报 403；处置（UA/白名单）属**改门禁**，本轮**不做**，上抛父代理裁定。
+- **未做（按本轮纪律）**：**未跑 W0**（`registry_row_audit.py --audit`、`registry_evidence_bundle.py --compare` 均**未执行**，按 §5 修正留待 `T1.B21` 后一次性执行）；**未跑 `T1.B20-*` / `T1.B21-*`**；**未改** `pipeline/`、`scripts/`、`concepts.tsv`、`allowlist_*`；**未 push**、**未 `--amend`**、**未**任何 hook 旁路（各次提交 pre-commit 7 项正常执行）。
+- **剩余**：`T1.B19R-*`（7 个 glue id + 4 个复核项）**未开始**；B18 **不自称组级 accepted**（待父代理 D2-4 第五组独立验收）。
+
 #### T1.B19-EN / T1.B19-ZH — ✅ DONE（2026-10-27，#T-4973）commits `c213a94`（-EN）+ 本批 log commit（-ZH）
 
 - 批次：`.github/plans/t4973-batches/w1_b_b19.ids`（**20** id）；**W1-B 组第 19 批**（34 批 / 679 id）⇒ 属 D2-4 的 `B17–B21` 组第 3 批（本组抽检 + W0 证据束由父代理统一执行，本批不代替）
