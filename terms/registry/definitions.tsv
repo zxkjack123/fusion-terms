@@ -3802,7 +3802,7 @@ computational-fluid-dynamics	zh	对流体流动进行数值模拟的方法。	co
 computational-mesh	en	Fusion/nuclear engineering term referring to 'computational mesh' in technical context.	internal:dict-improvements
 computational-mesh	zh	聚变/核工程术语，指“计算网格”这一技术概念。	internal:dict-improvements
 computational-model	zh	聚变/核工程术语，对应英文“computational model”。	internal:dict-improvements
-compute-node	en	Fusion/nuclear engineering term referring to 'compute node' in technical context.	internal:dict-improvements
+compute-node	en	An HPC cluster worker node, distinct from a mesh node.	corpus
 compute-node	zh	聚变/核工程术语，指“计算节点”这一技术概念。	internal:dict-improvements
 computer-system-validation	zh	聚变/核工程术语，对应英文“computer system validation”。	internal:dict-improvements
 computer-system-verification	zh	聚变/核工程术语，对应英文“computer system verification”。	internal:dict-improvements
@@ -3833,7 +3833,7 @@ construction	zh	聚变/核工程术语，对应英文“construction”。	inter
 construction-schedule	en	The construction timeline for large fusion devices.	corpus
 construction-schedule	zh	建造进度是大型聚变装置的建造时间表。	corpus
 consumer-product	zh	聚变/核工程术语，对应英文“consumer product”。	internal:dict-improvements
-container	en	Fusion/nuclear engineering term referring to 'container' in technical context.	internal:dict-improvements
+container	en	OS-level virtualization for reproducible computing.	corpus
 container	zh	聚变/核工程术语，指“容器”这一技术概念。	internal:dict-improvements
 container-waste	zh	聚变/核工程术语，对应英文“container, waste”。	internal:dict-improvements
 containment	zh	聚变/核工程术语，指“安全壳”这一技术概念。	internal:dict-improvements
@@ -3851,7 +3851,7 @@ controlled-area	zh	聚变/核工程术语，指“控制区”这一技术概念
 controlled-state	zh	聚变/核工程术语，对应英文“controlled state”。	internal:dict-improvements
 conventional-island	en	Fusion/nuclear engineering term referring to 'conventional island' in technical context.	internal:dict-improvements
 conventional-island	zh	聚变/核工程术语，指“常规岛”这一技术概念。	internal:dict-improvements
-convergence-criterion	en	Fusion/nuclear engineering term referring to 'convergence criterion' in technical context.	internal:dict-improvements
+convergence-criterion	en	A threshold for iterative solution convergence.	corpus
 convergence-criterion	zh	聚变/核工程术语，指“收敛准则”这一技术概念。	internal:dict-improvements
 conveyance	zh	聚变/核工程术语，对应英文“conveyance”。	internal:dict-improvements
 coolant	en	Fusion/nuclear engineering term referring to 'coolant' in technical context.	internal:dict-improvements
@@ -3861,7 +3861,7 @@ coolant-chemistry	zh	冷却剂化学是对增殖包层冷却剂的化学控制�
 coolant-purification	en	Fusion/nuclear engineering term referring to 'coolant purification' in technical context.	internal:dict-improvements
 coolant-purification	zh	聚变/核工程术语，指“冷却剂纯化”这一技术概念。	internal:dict-improvements
 cooldown	zh	聚变/核工程术语，对应英文“Cooldown”。	internal:dict-improvements
-cooling	en	Fusion/nuclear engineering term referring to 'cooling' in technical context.	internal:dict-improvements
+cooling	en	Removal of heat, usually resulting in a lower temperature or a phase change.	https://en.wikipedia.org/wiki/Cooling
 cooling	zh	聚变/核工程术语，指“冷却”这一技术概念。	internal:dict-improvements
 cooling-tower	en	A structure that rejects waste heat to the atmosphere.	corpus
 cooling-tower	zh	冷却塔是向大气排放废热的构筑物。	corpus
@@ -3876,7 +3876,7 @@ coulomb-barrier	zh	原子核发生聚变反应必须克服的静电能量势垒�
 coulomb-collision	en	Binary scattering of charged particles through the Coulomb interaction.	corpus
 coulomb-collision	zh	库仑碰撞是带电粒子通过库仑相互作用的二体散射。	corpus
 countermeasure	zh	聚变/核工程术语，对应英文“countermeasure”。	internal:dict-improvements
-cpu-core	en	Fusion/nuclear engineering term referring to 'CPU core' in technical context.	internal:dict-improvements
+cpu-core	en	A processor core, distinct from a plasma core.	corpus
 cpu-core	zh	聚变/核工程术语，指“CPU核心”这一技术概念。	internal:dict-improvements
 cracking	en	PFC surface cracking from thermal cycling or shock.	corpus
 cracking	zh	裂纹是热循环或冲击引起的PFC表面开裂。	corpus
@@ -3924,7 +3924,7 @@ current-quench	zh	聚变/核工程术语，指“电流猝灭”这一技术概�
 curvature-drift	en	Particle drift caused by magnetic field line curvature.	corpus
 curvature-drift	zh	曲率漂移是由磁力线曲率引起的粒子漂移。	corpus
 d-he3-reaction	en	A controlled fusion reaction between deuterium and helium: D + He-3 -> p + He-4 + 18.4 MeV. Note: because the fuel is not radioactive and does not directly produce neutrons, this reaction has safety and environmental advantages over the D-T reaction, but the fusion conditions required are more demanding.	GB/T-4960.9
-damage	en	Fusion/nuclear engineering term referring to 'damage' in technical context.	internal:dict-improvements
+damage	en	Any change in a thing that degrades it away from its initial state.	https://en.wikipedia.org/wiki/Damage
 damage	zh	聚变/核工程术语，指“损伤”这一技术概念。	internal:dict-improvements
 dangerous-source	zh	聚变/核工程术语，对应英文“dangerous source”。	internal:dict-improvements
 data-pipeline	en	Fusion/nuclear engineering term referring to 'data pipeline' in technical context.	internal:dict-improvements
@@ -3935,7 +3935,7 @@ dd-reaction	en	A fusion reaction between deuterons. Its branches are D + D -> n 
 debye-sheath	en	The transition region formed between an electrically neutral plasma and the solid surface in contact with it. Although the plasma itself is approximately an equipotential region, a strong potential gradient exists inside the plasma sheath, which does not remain electrically neutral; it is also called the sheath.	GB/T-4960.9
 debye-shielding	en	Debye shielding / screening of electric charges in plasma.	corpus
 debye-shielding	zh	德拜屏蔽是等离子体中对电荷的屏蔽。	corpus
-decay	en	Fusion/nuclear engineering term referring to 'decay' in technical context.	internal:dict-improvements
+decay	en	The process by which an unstable atomic nucleus loses energy by radiation.	https://en.wikipedia.org/wiki/Radioactive_decay
 decay	zh	聚变/核工程术语，指“衰变”这一技术概念。	internal:dict-improvements
 decay-chain	en	Fusion/nuclear engineering term referring to 'decay chain' in technical context.	internal:dict-improvements
 decay-chain	zh	聚变/核工程术语，指“衰变链”这一技术概念。	internal:dict-improvements
@@ -4322,7 +4322,7 @@ functional-indicator	zh	聚变/核工程术语，对应英文“functional indic
 fundamental-safety-function	zh	聚变/核工程术语，对应英文“fundamental safety function”。	internal:dict-improvements
 fusion-demonstrator	en	Fusion/nuclear engineering term referring to 'fusion demonstrator' in technical context.	internal:dict-improvements
 fusion-demonstrator	zh	聚变/核工程术语，指“聚变验证堆”这一技术概念。	internal:dict-improvements
-fusion-device	en	Fusion/nuclear engineering term referring to 'fusion device' in technical context.	internal:dict-improvements
+fusion-device	en	A general experimental device for fusion.	corpus
 fusion-device	zh	聚变/核工程术语，指“聚变装置”这一技术概念。	internal:dict-improvements
 fusion-industry	en	Fusion/nuclear engineering term referring to 'fusion industry' in technical context.	internal:dict-improvements
 fusion-industry	zh	聚变/核工程术语，指“聚变产业”这一技术概念。	internal:dict-improvements
@@ -4526,7 +4526,7 @@ infant	zh	聚变/核工程术语，对应英文“infant”。	internal:dict-imp
 infiniband	en	Fusion/nuclear engineering term referring to 'InfiniBand' in technical context.	internal:dict-improvements
 infiniband	zh	聚变/核工程术语，指“InfiniBand”这一技术概念。	internal:dict-improvements
 ingestion-and-commodities-planning-distance	zh	聚变/核工程术语，对应英文“ingestion and commodities planning distance (ICPD)”。	internal:dict-improvements
-initial-condition	en	Fusion/nuclear engineering term referring to 'initial condition' in technical context.	internal:dict-improvements
+initial-condition	en	The initial state of the solution at t=0.	corpus
 initial-condition	zh	聚变/核工程术语，指“初始条件”这一技术概念。	internal:dict-improvements
 initiating-event	zh	聚变/核工程术语，对应英文“initiating event”。	internal:dict-improvements
 initiator	zh	聚变/核工程术语，对应英文“initiator”。	internal:dict-improvements
@@ -4662,7 +4662,7 @@ linker	en	Fusion/nuclear engineering term referring to 'linker' in technical con
 linker	zh	聚变/核工程术语，指“链接器”这一技术概念。	internal:dict-improvements
 liquid-lithium-purification	en	Fusion/nuclear engineering term referring to 'liquid lithium purification' in technical context.	internal:dict-improvements
 liquid-lithium-purification	zh	聚变/核工程术语，指“液态锂纯化”这一技术概念。	internal:dict-improvements
-liquid-metal	en	Fusion/nuclear engineering term referring to 'liquid metal' in technical context.	internal:dict-improvements
+liquid-metal	en	Liquid metal in general, not only as a coolant.	corpus
 liquid-metal	zh	聚变/核工程术语，指“液态金属”这一技术概念。	internal:dict-improvements
 liquid-metal-coolant	en	Coolant based on liquid metals such as lithium, lithium-lead, or tin.	corpus
 liquid-metal-coolant	zh	采用锂、锂铅或锡等液态金属的冷却剂。	corpus
@@ -4815,7 +4815,7 @@ multigroup	zh	聚变/核工程术语，指“多群”这一技术概念。	inte
 multilateral-approval	zh	聚变/核工程术语，对应英文“multilateral approval”。	internal:dict-improvements
 multipactor	en	A secondary electron multiplication discharge in RF components.	corpus
 multipactor	zh	二次电子倍增放电是射频部件中由二次电子倍增引起的放电。	corpus
-multiphysics	en	Fusion/nuclear engineering term referring to 'multiphysics' in technical context.	internal:dict-improvements
+multiphysics	en	Simultaneous solution of multiple physics domains.	corpus
 multiphysics	zh	聚变/核工程术语，指“多物理场”这一技术概念。	internal:dict-improvements
 multiple-barriers	zh	聚变/核工程术语，对应英文“multiple barriers”。	internal:dict-improvements
 multiple-mirror	en	Fusion/nuclear engineering term referring to 'multiple mirror' in technical context.	internal:dict-improvements
@@ -4858,11 +4858,11 @@ neutron-economy	en	Fusion/nuclear engineering term referring to 'neutron economy
 neutron-economy	zh	聚变/核工程术语，指“中子经济性”这一技术概念。	internal:dict-improvements
 neutron-multiplier	en	Material such as beryllium or lead that produces extra neutrons for tritium breeding.	corpus
 neutron-multiplier	zh	铍、铅等通过核反应为氚增殖提供额外中子的材料。	corpus
-neutron-shielding	en	Fusion/nuclear engineering term referring to 'neutron shielding' in technical context.	internal:dict-improvements
+neutron-shielding	en	Shielding that is specific to neutrons only.	corpus
 neutron-shielding	zh	聚变/核工程术语，指“中子屏蔽”这一技术概念。	internal:dict-improvements
 neutron-spectrum	en	Energy distribution of the neutron flux.	corpus
 neutron-spectrum	zh	中子通量随能量变化的分布（中子能谱）。	corpus
-neutron-transport	en	Fusion/nuclear engineering term referring to 'neutron transport' in technical context.	internal:dict-improvements
+neutron-transport	en	Neutron transport in the most general sense.	corpus
 neutron-transport	zh	聚变/核工程术语，指“中子输运”这一技术概念。	internal:dict-improvements
 neutronics	en	The study of neutron transport, shielding, activation and breeding in fusion reactors.	corpus
 neutronics	zh	中子学是研究聚变堆中中子输运、屏蔽、活化与增殖的学科。	corpus
@@ -4901,7 +4901,7 @@ nuclear-facility	zh	聚变/核工程术语，对应英文“nuclear facility”�
 nuclear-fuel	zh	聚变/核工程术语，对应英文“nuclear fuel”。	internal:dict-improvements
 nuclear-fuel-cycle	zh	聚变/核工程术语，对应英文“nuclear fuel cycle”。	internal:dict-improvements
 nuclear-fuel-cycle-facility	zh	聚变/核工程术语，对应英文“nuclear fuel cycle facility”。	internal:dict-improvements
-nuclear-fusion	en	Fusion/nuclear engineering term referring to 'nuclear fusion' in technical context.	internal:dict-improvements
+nuclear-fusion	en	Nuclear fusion in the most general sense.	corpus
 nuclear-fusion	zh	聚变/核工程术语，指“核聚变”这一技术概念。	internal:dict-improvements
 nuclear-installation	zh	聚变/核工程术语，对应英文“nuclear installation”。	internal:dict-improvements
 nuclear-island	en	Fusion/nuclear engineering term referring to 'nuclear island' in technical context.	internal:dict-improvements
@@ -4914,7 +4914,7 @@ nuclear-security	zh	聚变/核工程术语，对应英文“nuclear security”�
 nuclear-security-event	zh	聚变/核工程术语，对应英文“nuclear security event”。	internal:dict-improvements
 nuclide-inventory	en	The radioisotope composition and activity of activated materials.	corpus
 nuclide-inventory	zh	核素产额是活化材料中放射性同位素的组成与活度。	corpus
-numerical-solution	en	Fusion/nuclear engineering term referring to 'numerical solution' in technical context.	internal:dict-improvements
+numerical-solution	en	A discrete approximation to the governing equations.	corpus
 numerical-solution	zh	聚变/核工程术语，指“数值解”这一技术概念。	internal:dict-improvements
 observed-cause	zh	聚变/核工程术语，对应英文“observed cause”。	internal:dict-improvements
 occupancy-factor	zh	聚变/核工程术语，对应英文“occupancy factor”。	internal:dict-improvements
@@ -5248,7 +5248,7 @@ rayleigh-taylor-instability	zh	当密度不同的流体界面被加速时在该�
 re-erosion	en	Fusion/nuclear engineering term referring to 're-erosion' in technical context.	internal:dict-improvements
 re-erosion	zh	聚变/核工程术语，指“再侵蚀”这一技术概念。	internal:dict-improvements
 reactivity	zh	聚变/核工程术语，对应英文“reactivity, ρ”。	internal:dict-improvements
-reactor	en	Fusion/nuclear engineering term referring to 'reactor' in technical context.	internal:dict-improvements
+reactor	en	A device used to sustain a controlled fission nuclear chain reaction.	https://en.wikipedia.org/wiki/Nuclear_reactor
 reactor	zh	聚变/核工程术语，指“堆”这一技术概念。	internal:dict-improvements
 real-time-control	en	Feedback control system that operates on plasma timescales.	corpus
 real-time-control	zh	在等离子体时间尺度上运行的反馈控制系统。	corpus
@@ -5401,7 +5401,7 @@ sdk	en	Fusion/nuclear engineering term referring to 'SDK' in technical context.	
 sdk	zh	聚变/核工程术语，指“SDK”这一技术概念。	internal:dict-improvements
 seabed-disposal	zh	聚变/核工程术语，对应英文“seabed disposal”。	internal:dict-improvements
 sealed-source	zh	聚变/核工程术语，对应英文“sealed source”。	internal:dict-improvements
-sealing	en	Fusion/nuclear engineering term referring to 'sealing' in technical context.	internal:dict-improvements
+sealing	en	A device or material that joins systems together to contain pressure, prevent leakage of fluid, or exclude contamination.	https://en.wikipedia.org/wiki/Seal_(mechanical)
 sealing	zh	聚变/核工程术语，指“密封”这一技术概念。	internal:dict-improvements
 secondary-loop	en	The secondary coolant circuit that carries heat to the power conversion system.	corpus
 secondary-loop	zh	二回路是将热量输送到动力转换系统的二次冷却剂回路。	corpus
@@ -5520,7 +5520,7 @@ steam-generator	en	A heat exchanger in which steam is produced from the primary 
 steam-generator	zh	蒸汽发生器是利用一回路冷却剂产生蒸汽的换热器。	corpus
 steam-turbine	en	A turbine driven by steam within the Rankine cycle.	corpus
 steam-turbine	zh	汽轮机是在朗肯循环中由蒸汽驱动的透平。	corpus
-steel	en	Fusion/nuclear engineering term referring to 'steel' in technical context.	internal:dict-improvements
+steel	en	An alloy of iron and carbon with improved mechanical properties compared to pure iron.	https://en.wikipedia.org/wiki/Steel
 steel	zh	聚变/核工程术语，指“钢”这一技术概念。	internal:dict-improvements
 stellarator-optimization	en	The numerical optimization of three-dimensional stellarator plasma geometry, in which coil or boundary shapes are varied to improve confinement, stability and neoclassical transport.	corpus
 stellarator-optimization	zh	对三维仿星器等离子体几何的数值优化，通过改变线圈或边界形状以改善约束、稳定性与新古典输运。	corpus
@@ -5648,7 +5648,7 @@ thermodynamic-diameter	zh	聚变/核工程术语，对应英文“thermodynamic 
 thermonuclear-fusion	en	A fusion reaction that is brought about by the use of a high temperature.	GB/T-4960.9
 theta-pinch	en	A magnetic confinement concept in which a plasma in a cylindrical geometric configuration is confined by means of a poloidal current and an axial magnetic field.	GB/T-4960.9
 thorium-series	zh	聚变/核工程术语，对应英文“thorium series”。	internal:dict-improvements
-thread	en	Fusion/nuclear engineering term referring to 'thread' in technical context.	internal:dict-improvements
+thread	en	A lightweight execution unit within a process.	corpus
 thread	zh	聚变/核工程术语，指“线程”这一技术概念。	internal:dict-improvements
 three-alpha-reaction	en	The p + 11B -> 3 alpha + 8.7 MeV reaction channel.	corpus
 three-alpha-reaction	zh	三α反应是p + 11B -> 3 alpha + 8.7 MeV的反应道。	corpus
@@ -5785,7 +5785,7 @@ volumetric-neutron-source	en	Fusion/nuclear engineering term referring to 'volum
 volumetric-neutron-source	zh	聚变/核工程术语，指“体中子源”这一技术概念。	internal:dict-improvements
 voxel-model	en	Fusion/nuclear engineering term referring to 'voxel model' in technical context.	internal:dict-improvements
 voxel-model	zh	聚变/核工程术语，指“体素模型”这一技术概念。	internal:dict-improvements
-wall	en	Fusion/nuclear engineering term referring to 'wall' in technical context.	internal:dict-improvements
+wall	en	A structure and surface that defines an area, carries a load, or provides shelter or security.	https://en.wikipedia.org/wiki/Wall
 wall	zh	聚变/核工程术语，指“壁”这一技术概念。	internal:dict-improvements
 wall-load	zh	聚变/核工程术语，对应英文“Wall load”。	internal:dict-improvements
 wall-pumping	en	Wall hydrogen absorption causing plasma density decrease.	corpus
