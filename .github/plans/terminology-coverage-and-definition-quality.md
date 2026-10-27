@@ -17,7 +17,8 @@ files_sha256:
   artifacts/translation_dict.json: "auto (执行时实测)"
 ---
 
-> 🔵 **状态：Phase 0（W0）✅ DONE（2026-10-26，收尾 commit `b175bab`）；D2-1 ~ D2-8 全部已裁决（选项 A，见文末《待裁决落地记录》）⇒ Phase 1（W1）**进行中**（2026-10-27 16:29 实测〔注：上一会话在该行记 `16:44`，与系统时钟实测不符，疑为上一会话时点笔误；其自身日志小节按「不篡历史时点」保留原样〕：`w1_a` **4/4 批 ✅**；`w1_b` **21/34 批**（2026-10-27 本会话实测：`b20` ✅ commits `aaaa49b`（-EN）+ `267c4d9`（-ZH + 日志）；`b21` ✅ commits `434d3c1`（-EN）+ 本批 log commit（-ZH + 日志））（2026-10-27 19:21 本会话实测〔时点以本节日志「T1.B17」条为凭〕：`b17` ✅ commits `5c28236`（-EN）+ `2fda643`（-EN 保真修订，独立 commit）+ `<b17-ZH 待父代理回填>`（-ZH + 日志）；`b01` ✅ commits `b578047`+`f58f0ff`；`b02` ✅ commits `7024be1`+`e67af8c`；`b03` ✅ commits `45313cc`+`0a8e722`；`b04` ✅ commits `c6b3529`+`5e91052`；`b05` ✅ commits `988eab9`+`d391298`；`b06` ✅ commits `4cfb390`+`83387f2`；`b07` ✅ commits `987d132`+`242f525`；`b08` ✅ commits `29c0e70`+`4045fc1`；`b09` ✅ commits `d6e135d`+`76364c0`〔原记 `本节`，2026-10-27 补记实录哈希〕；`b10` ✅ commits `79b48ac`+`397869b`；`b11` ✅ commits `2f4e184`+`6c88f94`；`b12` ✅ commits `89bbde9`+`c2bc22a`；`b13` ✅ commits `e1a13c3`+`be37b76`；`b14` ✅ commits `fd25fd2`+`4cffa2e`；`b15` ✅ commits `53d9949`+`b8c6ab2`；`b16` ✅ commits `88004e8`+`2058705`；**`B12–B16` 组满 5 批，D2-4 独立验收 = PASS**（全 100 id / 200 行逐行复核，blocking 0；W0 证据束 `--compare` exit 0 / status=pass，见文末「D2-4 第四组」条）；**`B07–B11` 组满 5 批，D2-4 独立验收 = PASS**（全 100 id / 200 行逐行复核，blocking 0；W0 证据束 `--compare` exit 0 / status=pass，见文末「D2-4 第三组」条））；`b18` ⚠️ **WRITTEN / NOT ACCEPTED（来源+语义验收 FAIL，待返工）** commits `8a42dca`（-EN）+ `2393c47`（-ZH + 日志）〔原 ⛔ BLOCKED；2026-10-27 **用户裁决 C（IMPR-2 修正解读）**：C = **先穷尽本地来源、再补权威外部依据**，**且不授权降低权威要求、不改工作集验收**；**2026-10-27 本轮用户经 `question` 选择「接受出版社词典（推荐）」⇒ 通用词 OUP/CUP **匹配义项 + 原句定位**可接受、核工程词优先专业来源（见返工节 §2）**；父代理改以 Wikipedia/Wiktionary 级 draft（`/tmp/opencode/t4973-glue-sources/glue-sources.tsv`）定稿 9 个 glue id ⇒ **来源权威性与义项均不达验收，判 FAIL**。**此前台账记的 `✅ DONE` 仅表示「已写入」，不等于 accepted**；见 §「T1.B18 / T1.B19 返工（IMPR-2）」〕；`b19` ⚠️ **WRITTEN / NOT ACCEPTED（同因 FAIL，待返工）** commits `c213a94`（-EN）+ `08f8901`（-ZH + 日志）〔原同因受阻（7 个 glue id：`decay`/`cooling`/`damage`/`sealing`/`reactor`/`steel`/`wall`）；**用户裁决 C 修正解读同 B18**；7 个 glue id 同判 FAIL，13 个非 glue id 中 4 个 notes 短于门禁下限者列为同批复核项；见 §「T1.B18 / T1.B19 返工（IMPR-2）」〕〔**B19R 返工已完成** `d6c677a`/`20c9c2a`/`16024d3`；**独立验收缺陷（reactor 义项错配等）已修** `bf47025`/`8e82ebc`/本批 log commit；**仍不自称 accepted**，待父代理 D2-4 第五组独立验收〕；**D2-4 第五组（`B17–B21`）验收暂停**（须待 B18/B19 返工后再跑，不得先行判 PASS）；**`w1_c` / W2 / W3 未开始**；off-plan `--self-test` 重锚已完成 `471ab41`；**`B02–B06` 组 D2-4 独立验收 = PASS**（首轮 FAIL 1 行 `current-lead` en 无据 `superconducting`，已最小返工 1 行并复跑四项门禁全 exit 0；返工后 W0 证据束 `--compare` **exit 0 / status=pass**，见文末 Bookkeeping 纠正第 7、8 条）。** — 本文件由 Plan Architect `mode=refine` 基于 PM 任务 **#T-4973** 的既有批次细化而来，并于 **`mode=improve`（2026-10-26，基线 `66197f2`）** 依据 W0 实测现实改口径：D2-7=A（W1 双侧重写 ⇒ 每批拆为 en/zh 两个 ≤30 min 子任务）、D2-8=A（来源白名单收窄）、D2-6=A（169 个拉丁名 id 补中文首选名）、批清单以 `.github/plans/t4973-batches/README.md` 为唯一权威（**119 批 / 2348 ids**）。
+> 🔵 **状态：Phase 0（W0）✅ DONE（2026-10-26，收尾 commit `b175bab`）；D2-1 ~ D2-8 全部已裁决（选项 A，见文末《待裁决落地记录》）⇒ Phase 1（W1）**进行中**（2026-10-27 22:25 `date` 实测：`w1_a` **4/4 批 ✅**；`w1_b` **21/34 批**（W1 子任务 **50/78**；总 **66/190 ≈ 35%**〔取整〕）（2026-10-27 本会话实测：`b20` ✅ commits `aaaa49b`（-EN）+ `267c4d9`（-ZH + 日志）；`b21` ✅ commits `434d3c1`（-EN）+ 本批 log commit（-ZH + 日志））（2026-10-27 19:21 本会话实测〔时点以本节日志「T1.B17」条为凭〕：`b17` ✅ commits `5c28236`（-EN）+ `2fda643`（-EN 保真修订，独立 commit）+ `<b17-ZH 待父代理回填>`（-ZH + 日志）；`b01` ✅ commits `b578047`+`f58f0ff`；`b02` ✅ commits `7024be1`+`e67af8c`；`b03` ✅ commits `45313cc`+`0a8e722`；`b04` ✅ commits `c6b3529`+`5e91052`；`b05` ✅ commits `988eab9`+`d391298`；`b06` ✅ commits `4cfb390`+`83387f2`；`b07` ✅ commits `987d132`+`242f525`；`b08` ✅ commits `29c0e70`+`4045fc1`；`b09` ✅ commits `d6e135d`+`76364c0`〔原记 `本节`，2026-10-27 补记实录哈希〕；`b10` ✅ commits `79b48ac`+`397869b`；`b11` ✅ commits `2f4e184`+`6c88f94`；`b12` ✅ commits `89bbde9`+`c2bc22a`；`b13` ✅ commits `e1a13c3`+`be37b76`；`b14` ✅ commits `fd25fd2`+`4cffa2e`；`b15` ✅ commits `53d9949`+`b8c6ab2`；`b16` ✅ commits `88004e8`+`2058705`；**`B12–B16` 组满 5 批，D2-4 独立验收 = PASS**（全 100 id / 200 行逐行复核，blocking 0；W0 证据束 `--compare` exit 0 / status=pass，见文末「D2-4 第四组」条）；**`B07–B11` 组满 5 批，D2-4 独立验收 = PASS**（全 100 id / 200 行逐行复核，blocking 0；W0 证据束 `--compare` exit 0 / status=pass，见文末「D2-4 第三组」条））；`b18` ⚠️ **WRITTEN / NOT ACCEPTED（来源+语义验收 FAIL，待返工）** commits `8a42dca`（-EN）+ `2393c47`（-ZH + 日志）〔原 ⛔ BLOCKED；2026-10-27 **用户裁决 C（IMPR-2 修正解读）**：C = **先穷尽本地来源、再补权威外部依据**，**且不授权降低权威要求、不改工作集验收**；**2026-10-27 本轮用户经 `question` 选择「接受出版社词典（推荐）」⇒ 通用词 OUP/CUP **匹配义项 + 原句定位**可接受、核工程词优先专业来源（见返工节 §2）**；父代理改以 Wikipedia/Wiktionary 级 draft（`/tmp/opencode/t4973-glue-sources/glue-sources.tsv`）定稿 9 个 glue id ⇒ **来源权威性与义项均不达验收，判 FAIL**。**此前台账记的 `✅ DONE` 仅表示「已写入」，不等于 accepted**；见 §「T1.B18 / T1.B19 返工（IMPR-2）」〕；`b19` ⚠️ **WRITTEN / NOT ACCEPTED（同因 FAIL，待返工）** commits `c213a94`（-EN）+ `08f8901`（-ZH + 日志）〔原同因受阻（7 个 glue id：`decay`/`cooling`/`damage`/`sealing`/`reactor`/`steel`/`wall`）；**用户裁决 C 修正解读同 B18**；7 个 glue id 同判 FAIL，13 个非 glue id 中 4 个 notes 短于门禁下限者列为同批复核项；见 §「T1.B18 / T1.B19 返工（IMPR-2）」〕〔**B19R 返工已完成** `d6c677a`/`20c9c2a`/`16024d3`；**独立验收缺陷（reactor 义项错配等）已修** `bf47025`/`8e82ebc`/本批 log commit；**仍不自称 accepted**，待父代理 D2-4 第五组独立验收〕；**D2-4 第五组（`B17–B21`）独立验收 = PASS**（2026-10-27，全 100 id / 200 行逐行复核，blocking 0；W0 证据束 `--compare` exit 0 / `status=pass`〔`20261027T142502Z-219275`，manifest SHA256 `3e55be2a…70f2`〕；URL `curl 16/16 HTTP 200`、urllib 默认 UA `16/16 403` 按用户 `question` 裁决「接受留存原文及 curl 证据」留存原文 + curl 证据、**仍不写 `--check-urls` 通过**；来源 84 id `corpus` + 16 id OUP；**B18/B19 现为 accepted**，历史 FAIL/修复链保留；循环同义定义 4 条质量限制如实登记、**不宣传高质量**；见文末「D2-4 第五组」条）；**下一组 `B22–B26` 未授权**；**`w1_c` / W2 / W3 未开始**；off-plan `--self-test` 重锚已完成 `471ab41`；**`B02–B06` 组 D2-4 独立验收 = PASS**（首轮 FAIL 1 行 `current-lead` en 无据 `superconducting`，已最小返工 1 行并复跑四项门禁全 exit 0；返工后 W0 证据束 `--compare` **exit 0 / status=pass**，见文末 Bookkeeping 纠正第 7、8 条）。** — 本文件由 Plan Architect `mode=refine` 基于 PM 任务 **#T-4973** 的既有批次细化而来，并于 **`mode=improve`（2026-10-26，基线 `66197f2`）** 依据 W0 实测现实改口径：D2-7=A（W1 双侧重写 ⇒ 每批拆为 en/zh 两个 ≤30 min 子任务）、D2-8=A（来源白名单收窄）、D2-6=A（169 个拉丁名 id 补中文首选名）、批清单以 `.github/plans/t4973-batches/README.md` 为唯一权威（**119 批 / 2348 ids**）。
+> 🟡 **Status：总体 `IN_PROGRESS` ｜ 本组（D2-4 第五组 `B17–B21`）`PASS / accepted` ｜ W1-B **21/34 批**，W1 子任务 **50/78**，总 **66/190 ≈ 35%**（取整）｜ 下一组 `B22–B26` **未授权** ｜ 落盘核验时点 2026-10-27 22:25 CST（`date` 实测）
 > W0 执行记录见文末 `## Execution Log` §「W0 数据完整性修复 + 门禁加严 — T0.4 ~ T0.13」；门禁 RED→GREEN 可复跑证据见 `.github/plans/t4973-batches/red-green.md`。
 > ~~所有基线数字为 **2026-10-26 在 HEAD `3cb3837`** 实测~~ → **W0 后的权威数字以文末「W0 收口数字」为准**（覆盖率 47.11%、W2 738、W3a 854 等）。
 
@@ -1941,7 +1942,7 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
   - **curl 路径（本计划 §6 指定证据路径）**：9/9 **HTTP 200**（含 `material` → `…/material_1` 302→200 follow）；记录 `/tmp/opencode/t4973-b18r/probe_b18r1.txt`；
   - **门禁 urllib 路径**：`--check-urls` → **exit 1**，9 条 `def_url_status: … answered 403`（OUP 反爬对默认 `Python-urllib` UA 返回 403；**非**网络不可达）—— 记录 `/tmp/opencode/t4973-b18r/gate_b18_en.txt`。**该差异不改变本批判据**（§6 AC 以 curl 探测为准），但**列为剩余风险**：若后续任何门禁以 `--check-urls`（默认 UA）扫描全集，这 9 条会报 403；处置（UA/白名单）属**改门禁**，本轮**不做**，上抛父代理裁定。
 - **未做（按本轮纪律）**：**未跑 W0**（`registry_row_audit.py --audit`、`registry_evidence_bundle.py --compare` 均**未执行**，按 §5 修正留待 `T1.B21` 后一次性执行）；**未跑 `T1.B20-*` / `T1.B21-*`**；**未改** `pipeline/`、`scripts/`、`concepts.tsv`、`allowlist_*`；**未 push**、**未 `--amend`**、**未**任何 hook 旁路（各次提交 pre-commit 7 项正常执行）。
-- **剩余**：`T1.B19R-*`（7 个 glue id + 4 个复核项）**未开始**；B18 **不自称组级 accepted**（待父代理 D2-4 第五组独立验收）。
+- **剩余**：`T1.B19R-*`（7 个 glue id + 4 个复核项）**未开始**；B18 **不自称组级 accepted**（待父代理 D2-4 第五组独立验收）。〔2026-10-27 后续状态：已通过 D2-4 第五组独立验收（**PASS**），见 §「D2-4 第五组（`B17–B21`）」；本条原文保留〕
 
 #### T1.B19R — 返工执行记录（IMPR-2，2026-10-27，#T-4973）commits `d6c677a`（取据表，docs）+ `20c9c2a`（-EN + 留证行）+ `16024d3`（-ZH + 本节）
 
@@ -1955,7 +1956,7 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 - **URL 真实探测（两路径分别记录，未以 `--no-net` 充作通过）**：**curl 路径**：OUP `decay`/`damage`/`seal`/`reactor`/`steel`/`wall` **200**，OUP `cooling` **404**（改用 `cool_2`→**200**）；~~**CUP 路径全部 520**（Cambridge 侧反爬/网关错误，**未采用**）~~ **[IMPR-3 更正：CUP 仅记当次/复跑 **520** 且用户侧复测曾见 **200 不稳定**，**不得**称 CUP 全站不可用；见下节 ④]**；记录 `/tmp/opencode/t4973-b19r/probe_b19r1.txt`。~~`reactor` 的 `GB/T-4960.9` 为仓内来源 ⇒ `probe_status = N/A(internal)`~~ **[IMPR-3 作废：`reactor` 来源已改 OUP URL ⇒ 非 internal；且 `probe_status` 须区分 curl/urllib 两路径]**。
 - **4 个复核项（`fusion-device`/`nuclear-fusion`/`neutron-transport`/`neutron-shielding`）结论**：仓内 `notes` 为唯一依据、无外部权威可引 ⇒ 来源表 `sense_slot` 显式标注「保留 notes 最小补足，**待父代理裁定是否纳入返工**」、`probe_status = N/A(internal)`、`source_locator = internal:terms/registry/concepts.tsv:<line>`；**本轮未改其数据**（是否返工属 D2 级，执行者不得自决）。
 - **未做（按本轮纪律）**：**未跑 W0**（`registry_row_audit.py --audit`、`registry_evidence_bundle.py --compare` 均未执行）；**未跑 `T1.B20-*` / `T1.B21-*`**；**未改** `pipeline/`、`scripts/`、`concepts.tsv`、`allowlist_*`；**未 push**、**未 `--amend`**、**未**任何 hook 旁路。
-- **剩余**：B18/B19 均**不自称组级 accepted**（待父代理 D2-4 第五组独立验收）；`--check-urls` 的 urllib UA 403 问题（见 T1.B18R 条）对 B19 的 6 条 OUP 来源同样成立。
+- **剩余**：B18/B19 均**不自称组级 accepted**（待父代理 D2-4 第五组独立验收）；`--check-urls` 的 urllib UA 403 问题（见 T1.B18R 条）对 B19 的 6 条 OUP 来源同样成立。〔2026-10-27 后续状态：D2-4 第五组验收 **PASS**，B18/B19 现为 **accepted**；`--check-urls` 403 仍为**已知问题**、**未**记为通过；本条原文保留〕
 
 #### T1.B19R fix — IMPR-3 修正记录（独立验收缺陷修复，2026-10-27，#T-4973）commits `bf47025`（docs：AC + 取据表）+ `8e82ebc`（-EN）+ 本批 log commit（-ZH + 本节）
 
@@ -1974,7 +1975,7 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 - **⑤ 机械门禁（本次实跑，`/tmp/opencode/t4973-b19fix/`）**：`--lang en` **exit 0**、`--lang zh` **exit 0**、`--lang both`（`--expect 20`）**exit 0**；`validate_registry --terms-dir terms` **exit 0**（`6132 definitions`、`3184 evidence rows`）；`pytest -q` **exit 0**。**注**：上述 `exit 0` **只是必要条件**；`--check-urls`（默认 UA）为 **403 / exit 1 ⇒ 未通过**，按 §2 IMPR-3 条**不得写 PASS**，只记**已知问题**。
 - **⑥ 范围 / 不变量**：`-EN` commit `git diff --numstat` = `definitions 1/1` + `evidence 1/1`（仅 `reactor` 的 `(id,lang)` 与对应留证行）；`-ZH` commit = `definitions 1/1`（仅 `reactor` 的 `zh` 行）；docs commit = 2 文件（取据表 + 主计划）；`definitions.tsv` 行数恒 **6132**。
 - **未做（按本轮纪律）**：**未跑 W0**（`registry_row_audit.py --audit`、`registry_evidence_bundle.py --compare` 均未执行）；**未 push**、**未 `--amend`**、**未**任何 hook 旁路；**未改** `pipeline/`、`scripts/`、`concepts.tsv`、`allowlist_*`。
-- **剩余**：B19 **不自称组级 accepted**（待父代理 D2-4 第五组独立验收）；4 条 `notes` 循环同义质量问题待父代理裁定。
+- **剩余**：B19 **不自称组级 accepted**（待父代理 D2-4 第五组独立验收）；4 条 `notes` 循环同义质量问题待父代理裁定。〔2026-10-27 后续状态：D2-4 第五组 **PASS**，B19 为 **accepted**；4 条循环同义定义的质量限制**如实保留**（`fusion-device`/`nuclear-fusion`/`neutron-transport`/`neutron-shielding`），改走外部权威仍属 D2 级待裁决；本条原文保留〕
 
 #### T1.B20-EN / T1.B20-ZH — ✅ DONE（2026-10-27，#T-4973）commits `aaaa49b`（-EN）+ 本批 log commit（-ZH + 本节）
 
@@ -1984,7 +1985,7 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 - **`-ZH`**（本批 log commit）：20 条 `zh` 行按同 id 已提交 `en` **语义等价**改写，`source` 同源 `corpus` ⇒ `--lang zh` **exit 0**、`--lang both`（`--expect 20`）**exit 0**、`validate_registry` **exit 0**、`pytest -q` **exit 0**；zh 长度均 ≥ 12；**20/20** 以 `preferred_zh` 原形起句；`git diff --numstat` = `20/20`（仅 `zh` 行）。
 - **不变量 / 语义巡检**：`definitions.tsv` 行数恒 **6132**（`3184 evidence rows` 不变）；20 条 en/zh 均为 `notes` 的**功能级等价展开**，**缩写未展开**（`OS`、`HPC`、`keff`、`ENDF`、`PROCESS` 按 `notes`/原形保留），**未新增 `notes` 之外的数值 / 材料 / 机理 / 计数词**（同 `thread`/`compute-node` 先例口径）。
 - **未做（按本轮纪律）**：**未跑 W0**；**未 push**、**未 `--amend`**、**未**任何 hook 旁路；**未改** `pipeline/`、`scripts/`、`concepts.tsv`、`allowlist_*`。
-- **剩余**：B20 **不自称组级 accepted**（待父代理 D2-4 第五组独立验收）；后续 `w1_b_b21`。
+- **剩余**：B20 **不自称组级 accepted**（待父代理 D2-4 第五组独立验收）；后续 `w1_b_b21`。〔2026-10-27 后续状态：D2-4 第五组 **PASS**，B20 为 **accepted**；本条原文保留〕
 
 #### T1.B21-EN / T1.B21-ZH — ✅ DONE（2026-10-27，#T-4973）commits `434d3c1`（-EN）+ 本批 log commit（-ZH + 本节）
 
@@ -1994,7 +1995,7 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 - **`-ZH`**（本批 log commit）：20 条 `zh` 行按同 id 已提交 `en` **语义等价**改写，`source` 同源 `corpus` ⇒ `--lang zh` **exit 0**、`--lang both`（`--expect 20`）**exit 0**、`validate_registry` **exit 0**、`pytest -q` **exit 0**；zh 长度均 ≥ 12；**20/20** 以 `preferred_zh` 原形起句（含 `S(α,β)`、`STEP格式`、`IGES格式`、`STL格式` 四个非纯汉字起句者）；`git diff --numstat` = `20/20`（仅 `zh` 行）。
 - **不变量 / 语义巡检**：`definitions.tsv` 行数恒 **6132**（`3184 evidence rows` 不变）；20 条 en/zh 均为 `notes` 的**功能级等价展开**，**未新增 `notes` 之外的数值 / 材料 / 机理 / 计数词**。
 - **未做（按本轮纪律）**：**未跑 W0**（本组 `B17–B21` 的 W0 稳定核对 + D2-4 抽检由**父代理**在 B21 稳定后一次执行）；**未 push**、**未 `--amend`**、**未**任何 hook 旁路；**未改** `pipeline/`、`scripts/`、`concepts.tsv`、`allowlist_*`。
-- **剩余**：B21 **不自称组级 accepted**；`B17–B21` 组 D2-4 独立验收 + W0 证据束由**父代理**执行。
+- **剩余**：B21 **不自称组级 accepted**；`B17–B21` 组 D2-4 独立验收 + W0 证据束由**父代理**执行。〔2026-10-27 后续状态：父代理已执行 ⇒ **PASS**（100 id / 200 行，W0 证据束 exit 0 / `status=pass`），见 §「D2-4 第五组（`B17–B21`）」；本条原文保留〕
 
 #### T1.B19-EN / T1.B19-ZH — ✅ DONE（2026-10-27，#T-4973）commits `c213a94`（-EN）+ 本批 log commit（-ZH）
 
@@ -2268,11 +2269,34 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 
 ### 7. 台账口径（与既有条目共存，不改历史行文）
 
-- 「批完成数」记法**不变**：W1-B 仍为 **19/34 批（已写入）**；但 **B18 / B19 的验收状态 = `NOT ACCEPTED`**，须在上述 6 个返工任务完成后由父代理重新签收。
-- **D2-4 第五组（`B17–B21`）验收暂停**：不得在 B18/B19 返工前判 PASS；组验收须在 `T1.B19R-3` 之后执行，且须把返工内容纳入抽样。
+- 「批完成数」记法**不变**：W1-B 仍为 **19/34 批（已写入）**〔2026-10-27 后续状态：现为 **21/34 批**（`b20`/`b21` 已写入）〕；但 **B18 / B19 的验收状态 = `NOT ACCEPTED`**〔2026-10-27 后续状态：返工 + IMPR-3 修复后经 D2-4 第五组独立验收 **PASS** ⇒ **B18 / B19 = accepted**；本句保留历史判定〕，须在上述 6 个返工任务完成后由父代理重新签收。
+- **D2-4 第五组（`B17–B21`）验收暂停**：不得在 B18/B19 返工前判 PASS；组验收须在 `T1.B19R-3` 之后执行，且须把返工内容纳入抽样。〔2026-10-27 已解除：返工 + IMPR-3 修复完成后，父代理执行组验收 = **PASS**（返工内容已纳入 100 id / 200 行全量复核），见 §「D2-4 第五组（`B17–B21`）」；本条原文保留〕
 - **Phase 1 完成定义不变**（`--expect-clean-all` + zh 模板清零 + `validate_registry` + `pytest`）；返工**不改变** W1 工作集、批数、每批 id 数。
 - **W1-B 后续批次顺序调整**：`T1.B20-*` / `T1.B21-*` 排在 `T1.B19R-3` 之后（先 B18/B19 修复，再 B20/B21）；`B22`–`B34`、`w1_c` 顺序不变。
 - 本轮回溯说明：`§「T1.B18」`/`§「T1.B18-EN / T1.B18-ZH」`/`§「T1.B19-EN / T1.B19-ZH」` 三条历史条目**原文保留**（不篡历史），其「✅ DONE」含义**已由本节 §1 修正为「已写入，未验收」**。
+
+#### D2-4 第五组（`B17–B21`）独立验收 + W0 证据束 — ✅ PASS（2026-10-27，#T-4973）
+
+> 本节由 Doc Maintainer 依据**父代理已执行**的组验收结果回填（父代理为验收执行者；本节只落账，不改数据、不重跑 W0）。
+
+- **Status**：`Independently accepted = PASS（本组 B17–B21）`；**总体 = `IN_PROGRESS`**（W1-B 21/34，W1 子任务 50/78，总 66/190 ≈ 35% 取整）；`next = B22–B26`（**未授权**，不得自动推进）。
+- **范围**：`w1_b_b17.ids` … `w1_b_b21.ids` 并集 → **100 ids / 200 definition rows**（`sort | uniq -d` = **0**，实测 `/tmp/opencode/t4973-g5/union.ids` = 100 行）。
+- **机械门禁（父代理独立复跑，非采信执行者自述）**：`registry_batch_verify --mode definitions --ids-file <并集> --expect 100 --lang both` → **exit 0** `verdict=PASS`；`pipeline.validate_registry --terms-dir terms` → **exit 0**（`3076 concepts / 10249 aliases / 3184 evidence rows / 6132 definitions`）；`pytest` → **175 passed**（exit 0）；`registry_row_audit --audit --expect-clean` → **exit 0**（`w0_is_clean = true`，`w0_non_zero_metrics = {}`）。
+- **数据面实测**：200 行 `source` = **168 `corpus`**（B17/B20/B21 及 B18 的 11 个非 glue id、B19 的 13 个非 glue id）+ **32 行 OUP URL = 16 个外部来源 id × 2 lang**（B18 9 id + B19 7 id）；en 长度 **41–146**、zh 长度 **13–42**；`(id,lang)` 对 = **200**（无重复/无缺行）；en 侧**全 ASCII**（非 ASCII 仅出现在 zh 行）。
+- **来源与义项（返工后终态，逐条复核）**：`performance` = OUP sense 3（「性能」，非「执行过程」）；`device` 无 `natural object` 无据对比；`sealing` = **动词 `seal` 的「close container」过程义（verb sense 2）**，非器件义；`damage` 覆盖「劣化」限定；`decay` = OUP 第 **3** 义项（`decay_sng_6`）；`reactor` = OUP **通用义**（`a large structure used to produce nuclear energy`），**已撤销** GB/T 热核堆子类义；16 个 glue id 的 `wikipedia/wiktionary` 终态 `source` 行 = **0**。
+- **URL 探测（两路径分别记录；不混记、不互证）**：
+  - **curl（浏览器 UA）**：**16/16 HTTP 200**（父代理实测）；
+  - **urllib 默认 UA（门禁 `--check-urls`）**：**16/16 HTTP 403**（OUP 反爬）⇒ 按 2026-10-27 用户 `question` 选择「**接受留存原文及 curl 证据**」**接受为已知问题**：**不反判来源无效、不改门禁代码、仍不写 `--check-urls` 通过**（`--check-urls` 状态 = `HTTP-403 / 未通过（已知问题）`）。
+  - **不得宣称 verified**：来源表 `probe_status` 只是**探测记录**，不是「原始出处已 verified」；**未做旁证（第二独立权威逐字比对）者一律不得写 `verified`**。
+- **来源表状态（本组验收后）**：`.github/plans/t4973-batches/glue-sources-b18.tsv` **9 行 accepted**（`probe_status` 已统一为**双路径** `PROBE-200(curl 浏览器 UA)/HTTP-403(python-urllib 默认 UA)`，原单值 `PROBE-200` 不再有效）；`glue-sources-b19.tsv` **11 行 accepted**（7 glue 双路径 + 4 复核项 `N/A(internal)`）；两侧均 8 列、`wikipedia/wiktionary` = 0、`UNSOURCED` = 0。
+- **保留的质量限制（明确不宣传「高质量」）**：
+  - **循环同义定义**：`nuclear-fusion`（notes `Nuclear fusion (general)`）、`neutron-transport`（`Neutron transport (general)`）两条释义以同义短语复述词条本身，**语义增益近零**；`fusion-device`、`neutron-shielding` 同属笔记最小补足（另 2 条短 notes 限制保持）。四条**忠实于仓内 notes、未新增无据内容**，但**不构成高质量释义**；改走外部权威分支属 **D2 级待裁决**（执行者不自决）。
+  - **核工程词 vs 通用词口径**：按用户授权，**核工程词优先专业来源**（IAEA / ISO / GB/T / ITER），**通用词**（`calculation`/`material`/`performance`/`neutron`/`simulation`/`evaluation`/`method`/`mode`/`device`/`decay`/`cooling`/`damage`/`sealing`/`reactor`/`steel`/`wall`）用**出版社词典（OUP）匹配义项 + 原句定位**；两类来源等级不同，**不得互相折算为「同等权威」**。
+- **历史 FAIL / 修复链（保留，不篡）**：B18 `8a42dca`+`2393c47`、B19 `c213a94`+`08f8901`（WRITTEN / NOT ACCEPTED：百科级来源 + D1/D3 义项与无据扩写）→ B18R `5e518f4`/`f5dccdd`、B19R `d6c677a`/`20c9c2a`/`16024d3` → **B19R fix（IMPR-3）** `bf47025`/`8e82ebc`（`reactor` 义项错配、`decay` 义项序号、`probe_status` 双路径、CUP 措辞）→ 本组 PASS。**B18/B19 现为 `accepted`**（仅指本组验收范围内），历史条目与 FAIL 判定**原文保留**。
+- **W0 证据束（本组权威；父代理执行，本子代理未重跑）**：`python3 scripts/registry_evidence_bundle.py --compare` → **exit 0**；目录 `/home/gw/opt/fusion-terms/artifacts/registry-evidence/20261027T142502Z-219275`；`manifest.json` SHA256 **`3e55be2a25cf62a8b4628a3662cf8a60ebe61c7bcd36feabb28d12cbc570f2f0`**（本子代理 `sha256sum` 复核逐字一致）；`profile=w0`、`batch_status=pass`、`gate=expect-clean`、`same_structured_result=true`、`incomplete=false`、`external_cli_entries=1`、`internal_cli_entries=4`。deferred warnings：`definitions.en_boilerplate=259`、`definitions.concepts_without_defs=10`。未使用 `--profile all`。
+- **实测 commit 哈希（本组）**：`git log --oneline` 实测 —— B20 `aaaa49b`（-EN）/`267c4d9`（-ZH）；B21 `434d3c1`（-EN）/`1ce5bdb`（-ZH + 日志）；B17 `5c28236`（-EN）+ `2fda643`（-EN 保真修订）+ `<b17-ZH 待父代理回填>`（**仍为占位**，见下）；B18/B19 返工与修复见上「历史 FAIL / 修复链」。
+- **遗留占位（本组唯一未闭合项）**：状态行（第 20 行）中 `b17` 的 `-ZH` 哈希仍为占位 `<b17-ZH 待父代理回填>`；按「不篡历史行文」未改写，**登记待回填**（不阻断本组 PASS）。
+- **下一步**：`w1_b_b22` 起串行推进（下一 D2-4 组 = `B22–B26`）——**须父代理授权**；`w1_c` / W1 收尾 / W2 / W3 未开始。
 
 ## Read-only registry evidence handoff gate
 
