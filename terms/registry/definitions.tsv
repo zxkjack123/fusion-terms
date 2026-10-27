@@ -3773,7 +3773,7 @@ cliff-edge-effect	zh	聚变/核工程术语，指“断崖效应”这一技术�
 closed-nuclear-fuel-cycle	zh	聚变/核工程术语，对应英文“closed nuclear fuel cycle”。	internal:dict-improvements
 closure	zh	聚变/核工程术语，对应英文“closure”。	internal:dict-improvements
 cloud-shine	zh	聚变/核工程术语，对应英文“cloud shine”。	internal:dict-improvements
-co-deposition	en	Fusion/nuclear engineering term referring to 'co-deposition' in technical context.	internal:dict-improvements
+co-deposition	en	Simultaneous deposition of eroded material with hydrogen isotopes.	corpus
 co-deposition	zh	聚变/核工程术语，指“共沉积”这一技术概念。	internal:dict-improvements
 coating-degradation	en	Fusion/nuclear engineering term referring to 'coating degradation' in technical context.	internal:dict-improvements
 coating-degradation	zh	聚变/核工程术语，指“涂层退化”这一技术概念。	internal:dict-improvements
@@ -3963,7 +3963,7 @@ density-pump-out	en	A transient density drop during the H-mode transition.	corpu
 density-pump-out	zh	密度泵出是 H 模转换期间密度暂时下降的现象。	corpus
 dependability	zh	聚变/核工程术语，对应英文“dependability”。	internal:dict-improvements
 depleted-uranium	zh	聚变/核工程术语，对应英文“depleted uranium”。	internal:dict-improvements
-deposition	en	Fusion/nuclear engineering term referring to 'deposition' in technical context.	internal:dict-improvements
+deposition	en	A material deposition process on wall surfaces.	corpus
 deposition	zh	聚变/核工程术语，指“沉积”这一技术概念。	internal:dict-improvements
 derived-limit	zh	聚变/核工程术语，对应英文“derived limit”。	internal:dict-improvements
 design	zh	聚变/核工程术语，指“设计”这一技术概念。	internal:dict-improvements
@@ -4272,7 +4272,7 @@ flow-channel-insert	en	Fusion/nuclear engineering term referring to 'flow channe
 flow-channel-insert	zh	聚变/核工程术语，指“流道插件”这一技术概念。	internal:dict-improvements
 flow-distribution	en	Fusion/nuclear engineering term referring to 'flow distribution' in technical context.	internal:dict-improvements
 flow-distribution	zh	聚变/核工程术语，指“流量分配”这一技术概念。	internal:dict-improvements
-flux-amplification	en	Fusion/nuclear engineering term referring to 'flux amplification' in technical context.	internal:dict-improvements
+flux-amplification	en	Dynamo-driven poloidal flux amplification in a spheromak.	corpus
 flux-amplification	zh	聚变/核工程术语，指“磁通放大”这一技术概念。	internal:dict-improvements
 flux-closure	en	Fusion/nuclear engineering term referring to 'flux closure' in technical context.	internal:dict-improvements
 flux-closure	zh	聚变/核工程术语，指“磁通闭合”这一技术概念。	internal:dict-improvements
@@ -4288,7 +4288,7 @@ flux-tube	en	Fusion/nuclear engineering term referring to 'flux tube' in technic
 flux-tube	zh	聚变/核工程术语，指“磁通管”这一技术概念。	internal:dict-improvements
 fokker-planck-equation	en	A kinetic equation that takes multiple small-angle scattering into account.	GB/T-4960.9
 food	zh	聚变/核工程术语，对应英文“food”。	internal:dict-improvements
-force-free-equilibrium	en	Fusion/nuclear engineering term referring to 'force-free equilibrium' in technical context.	internal:dict-improvements
+force-free-equilibrium	en	A plasma equilibrium satisfying J cross B equals zero.	corpus
 force-free-equilibrium	zh	聚变/核工程术语，指“无力平衡”这一技术概念。	internal:dict-improvements
 forced-convection	en	Fusion/nuclear engineering term referring to 'forced convection' in technical context.	internal:dict-improvements
 forced-convection	zh	聚变/核工程术语，指“强制对流”这一技术概念。	internal:dict-improvements
@@ -4312,7 +4312,7 @@ fuel-capsule	en	The spherical inertial confinement fusion target consisting of a
 fuel-capsule	zh	惯性约束聚变的球形靶，由包在烧蚀壳内的氘氚冰层构成，内爆以达到聚变条件。	corpus
 fuel-cycle	zh	聚变/核工程术语，指“燃料循环”这一技术概念。	internal:dict-improvements
 fuel-element	zh	聚变/核工程术语，对应英文“fuel element”。	internal:dict-improvements
-fuel-recycling	en	Fusion/nuclear engineering term referring to 'fuel recycling' in technical context.	internal:dict-improvements
+fuel-recycling	en	The hydrogen isotope adsorption-release cycle at the wall.	corpus
 fuel-recycling	zh	聚变/核工程术语，指“燃料再循环”这一技术概念。	internal:dict-improvements
 fuel-rod	zh	聚变/核工程术语，对应英文“fuel rod”。	internal:dict-improvements
 fully-non-inductive	en	Steady-state operation with 100% non-inductive current drive.	corpus
@@ -4334,7 +4334,7 @@ fusion-performance	zh	聚变/核工程术语，对应英文“Fusion Performance
 fusion-pilot-plant	en	First-of-a-kind fusion plant intended to demonstrate net electricity production.	corpus
 fusion-pilot-plant	zh	旨在验证净电能生产的首座聚变电站。	corpus
 fusion-power-plant	en	A power plant whose energy is supplied by nuclear fusion reactions. The plan for international fusion research is first to build ITER and then to build a demonstration fusion power plant.	GB/T-4960.9
-fusion-product-spectrum	en	Fusion/nuclear engineering term referring to 'fusion product spectrum' in technical context.	internal:dict-improvements
+fusion-product-spectrum	en	The energy distribution spectrum of fusion reaction products.	corpus
 fusion-product-spectrum	zh	聚变/核工程术语，指“聚变产物能谱”这一技术概念。	internal:dict-improvements
 fusion-reactor	en	A device that uses controlled fusion reactions to produce fusion energy.	GB/T-4960.9
 fusion-regulation	en	Fusion/nuclear engineering term referring to 'fusion regulation' in technical context.	internal:dict-improvements
@@ -4496,7 +4496,7 @@ importance-function	zh	聚变/核工程术语，指“重要性函数”这一�
 impurity-accumulation	en	Accumulation of high-Z impurities in the plasma core.	corpus
 impurity-accumulation	zh	杂质积聚是高 Z 杂质在芯部的聚积。	corpus
 impurity-screening	en	Measures taken to keep impurities from entering the plasma, for example the siliconization, boronization and lithiumization of the first wall.	GB/T-4960.9
-impurity-source	en	Fusion/nuclear engineering term referring to 'impurity source' in technical context.	internal:dict-improvements
+impurity-source	en	The impurity production yield and spatial distribution at the wall.	corpus
 impurity-source	zh	聚变/核工程术语，指“杂质源”这一技术概念。	internal:dict-improvements
 impurity-transport	en	Transport of impurity ions within the confined plasma.	corpus
 impurity-transport	zh	杂质离子在约束等离子体中的输运。	corpus
@@ -4618,7 +4618,7 @@ laminar-flow	en	Fusion/nuclear engineering term referring to 'laminar flow' in t
 laminar-flow	zh	聚变/核工程术语，指“层流”这一技术概念。	internal:dict-improvements
 large-freight-container	zh	聚变/核工程术语，对应英文“large freight container”。	internal:dict-improvements
 large-release-of-radioactive-material	zh	聚变/核工程术语，对应英文“large release of radioactive material”。	internal:dict-improvements
-laser-boron-fusion	en	Fusion/nuclear engineering term referring to 'laser-boron fusion' in technical context.	internal:dict-improvements
+laser-boron-fusion	en	A laser-driven fusion scheme based on p-11B.	corpus
 laser-boron-fusion	zh	聚变/核工程术语，指“激光硼聚变”这一技术概念。	internal:dict-improvements
 laser-driven-fusion	en	An inertial confinement fusion scheme that uses high-power laser beams as the driver to ablate and implode the fuel capsule.	corpus
 laser-driven-fusion	zh	一种惯性约束聚变方案，以高功率激光束作为驱动器烧蚀并内爆燃料靶丸。	corpus
@@ -4715,9 +4715,9 @@ magnetic-nozzle	en	Expanding magnetic field geometry used for direct energy conv
 magnetic-nozzle	zh	用于直接能量转换或推进系统排气的扩张磁场位形。	corpus
 magnetic-pressure	en	Fusion/nuclear engineering term referring to 'magnetic pressure' in technical context.	internal:dict-improvements
 magnetic-pressure	zh	聚变/核工程术语，指“磁压”这一技术概念。	internal:dict-improvements
-magnetic-reconnection	en	Fusion/nuclear engineering term referring to 'magnetic reconnection' in technical context.	internal:dict-improvements
+magnetic-reconnection	en	Topological rearrangement of magnetic field lines releasing energy.	corpus
 magnetic-reconnection	zh	聚变/核工程术语，指“磁重联”这一技术概念。	internal:dict-improvements
-magnetic-self-organization	en	Fusion/nuclear engineering term referring to 'magnetic self-organization' in technical context.	internal:dict-improvements
+magnetic-self-organization	en	Spontaneous relaxation of a plasma to an ordered equilibrium state.	corpus
 magnetic-self-organization	zh	聚变/核工程术语，指“磁自组织”这一技术概念。	internal:dict-improvements
 magnetic-well	en	A spatial region in which the magnetic field strength is a minimum, occurring in certain magnetic configurations.	GB/T-4960.9
 magnetized-target-fusion	en	Fusion/nuclear engineering term referring to 'magnetized target fusion' in technical context.	internal:dict-improvements
@@ -5063,7 +5063,7 @@ plasma-shaping	en	The control of the cross-sectional geometry of the plasma colu
 plasma-shaping	zh	对等离子体柱横截面几何形状的控制，主要以拉长比和三角形变来表征，以得到所要求的等离子体形状。	corpus
 plasma-surface-interaction	en	The collective term for the processes by which the plasma and the material surfaces facing it affect one another, covering both the modification of those surfaces by the plasma and the modification of the plasma by those surfaces.	corpus
 plasma-surface-interaction	zh	等离子体与其面对的材料表面相互影响的各类过程的统称，既包括等离子体对这些表面的改变，也包括这些表面对等离子体的改变。	corpus
-plasma-sustainment	en	Fusion/nuclear engineering term referring to 'plasma sustainment' in technical context.	internal:dict-improvements
+plasma-sustainment	en	Non-inductive sustainment of current and confinement.	corpus
 plasma-sustainment	zh	聚变/核工程术语，指“等离子体维持”这一技术概念。	internal:dict-improvements
 plasma-termination	en	Fusion/nuclear engineering term referring to 'Plasma Termination' in technical context.	internal:dict-improvements
 plasma-termination	zh	聚变/核工程术语，指“等离子体终止”这一技术概念。	internal:dict-improvements
@@ -5101,7 +5101,7 @@ predisposal-management	zh	聚变/核工程术语，对应英文“predisposal ma
 preferential-sputtering	en	Fusion/nuclear engineering term referring to 'preferential sputtering' in technical context.	internal:dict-improvements
 preferential-sputtering	zh	聚变/核工程术语，指“择优溅射”这一技术概念。	internal:dict-improvements
 preparedness-stage	zh	聚变/核工程术语，对应英文“preparedness stage”。	internal:dict-improvements
-presheath	en	Fusion/nuclear engineering term referring to 'presheath' in technical context.	internal:dict-improvements
+presheath	en	The ion acceleration transition region ahead of the Debye sheath.	corpus
 presheath	zh	聚变/核工程术语，指“预鞘”这一技术概念。	internal:dict-improvements
 pressure-driven-mode	en	Fusion/nuclear engineering term referring to 'pressure-driven mode' in technical context.	internal:dict-improvements
 pressure-driven-mode	zh	聚变/核工程术语，指“压力驱动模”这一技术概念。	internal:dict-improvements
@@ -5195,7 +5195,7 @@ radiation-collapse	zh	辐射坍塌是杂质辐射引起的等离子体温度坍�
 radiation-damage	en	Fusion/nuclear engineering term referring to 'radiation damage' in technical context.	internal:dict-improvements
 radiation-damage	zh	聚变/核工程术语，指“辐照损伤”这一技术概念。	internal:dict-improvements
 radiation-detriment	zh	聚变/核工程术语，对应英文“radiation detriment”。	internal:dict-improvements
-radiation-dominated-regime	en	Fusion/nuclear engineering term referring to 'radiation-dominated regime' in technical context.	internal:dict-improvements
+radiation-dominated-regime	en	A high-temperature regime where radiation loss exceeds fusion power.	corpus
 radiation-dominated-regime	zh	聚变/核工程术语，指“辐射主导区间”这一技术概念。	internal:dict-improvements
 radiation-emergency	zh	聚变/核工程术语，对应英文“radiation emergency”。	internal:dict-improvements
 radiation-generator	zh	聚变/核工程术语，对应英文“radiation generator”。	internal:dict-improvements
@@ -5438,7 +5438,7 @@ short-lived-waste	zh	聚变/核工程术语，对应英文“short lived waste�
 shutdown	zh	聚变/核工程术语，对应英文“shutdown”。	internal:dict-improvements
 shutdown-reactivity	zh	聚变/核工程术语，对应英文“shutdown reactivity”。	internal:dict-improvements
 shutdown-time	zh	聚变/核工程术语，对应英文“Shutdown Time”。	internal:dict-improvements
-side-reaction	en	Fusion/nuclear engineering term referring to 'side reaction' in technical context.	internal:dict-improvements
+side-reaction	en	A parasitic neutron-producing reaction channel in advanced fuels.	corpus
 side-reaction	zh	聚变/核工程术语，指“副反应”这一技术概念。	internal:dict-improvements
 sievert	zh	聚变/核工程术语，对应英文“sievert (Sv)”。	internal:dict-improvements
 significant-transboundary-release	zh	聚变/核工程术语，对应英文“significant transboundary release”。	internal:dict-improvements
@@ -5496,7 +5496,7 @@ spent-fuel	zh	聚变/核工程术语，对应英文“spent fuel”。	internal:
 spent-fuel-management	zh	聚变/核工程术语，对应英文“spent fuel management”。	internal:dict-improvements
 spent-fuel-management-facility	zh	聚变/核工程术语，对应英文“spent fuel management facility”。	internal:dict-improvements
 spent-source	zh	聚变/核工程术语，对应英文“spent source”。	internal:dict-improvements
-spheromak-merging	en	Fusion/nuclear engineering term referring to 'spheromak merging' in technical context.	internal:dict-improvements
+spheromak-merging	en	Spheromak merging under counter-helicity.	corpus
 spheromak-merging	zh	聚变/核工程术语，指“球马克并合”这一技术概念。	internal:dict-improvements
 spin-polarized-fuel	en	Fuel whose nuclear spins are aligned, enhancing the p-B11 fusion cross-section by about 50%.	corpus
 spin-polarized-fuel	zh	核自旋取向一致的燃料，可使 p-B11 聚变截面提高约 50%。	corpus
@@ -5584,7 +5584,7 @@ surface-morphology	en	Fusion/nuclear engineering term referring to 'surface morp
 surface-morphology	zh	聚变/核工程术语，指“表面形貌”这一技术概念。	internal:dict-improvements
 surface-recombination	en	Fusion/nuclear engineering term referring to 'surface recombination' in technical context.	internal:dict-improvements
 surface-recombination	zh	聚变/核工程术语，指“表面复合”这一技术概念。	internal:dict-improvements
-surface-roughening	en	Fusion/nuclear engineering term referring to 'surface roughening' in technical context.	internal:dict-improvements
+surface-roughening	en	Roughening of the wall surface morphology from plasma exposure.	corpus
 surface-roughening	zh	聚变/核工程术语，指“表面粗糙化”这一技术概念。	internal:dict-improvements
 surveillance	zh	聚变/核工程术语，对应英文“surveillance”。	internal:dict-improvements
 surveillance-testing	zh	聚变/核工程术语，对应英文“surveillance testing”。	internal:dict-improvements
@@ -5608,7 +5608,7 @@ target-tissue-or-organ	zh	聚变/核工程术语，对应英文“target tissue 
 task-related-monitoring	zh	聚变/核工程术语，对应英文“task related monitoring”。	internal:dict-improvements
 taylor-relaxation	en	Relaxation of a plasma to a minimum-energy state at constant helicity.	corpus
 taylor-relaxation	zh	Taylor弛豫是等离子体在螺旋度不变下向最小能量态的弛豫。	corpus
-taylor-state	en	Fusion/nuclear engineering term referring to 'Taylor state' in technical context.	internal:dict-improvements
+taylor-state	en	A force-free minimum-energy equilibrium state (curl B = lambda B).	corpus
 taylor-state	zh	聚变/核工程术语，指“Taylor态”这一技术概念。	internal:dict-improvements
 tbm	en	In-vessel test modules installed in ITER for the qualification of breeding blanket designs.	corpus
 tbm	zh	安装于 ITER 真空室内、用于验证增殖包层设计的实验模块。	corpus
@@ -5650,10 +5650,10 @@ theta-pinch	en	A magnetic confinement concept in which a plasma in a cylindrical
 thorium-series	zh	聚变/核工程术语，对应英文“thorium series”。	internal:dict-improvements
 thread	en	Fusion/nuclear engineering term referring to 'thread' in technical context.	internal:dict-improvements
 thread	zh	聚变/核工程术语，指“线程”这一技术概念。	internal:dict-improvements
-three-alpha-reaction	en	Fusion/nuclear engineering term referring to 'three-alpha reaction' in technical context.	internal:dict-improvements
+three-alpha-reaction	en	The p + 11B -> 3 alpha + 8.7 MeV reaction channel.	corpus
 three-alpha-reaction	zh	聚变/核工程术语，指“三α反应”这一技术概念。	internal:dict-improvements
 through-or-into	zh	聚变/核工程术语，对应英文“through or into”。	internal:dict-improvements
-tilt-instability	en	Fusion/nuclear engineering term referring to 'tilt instability' in technical context.	internal:dict-improvements
+tilt-instability	en	A global CT/spheromak MHD instability of magnetic axis tilt.	corpus
 tilt-instability	zh	聚变/核工程术语，指“倾斜不稳定性”这一技术概念。	internal:dict-improvements
 time-based-maintenance	zh	聚变/核工程术语，对应英文“time based maintenance”。	internal:dict-improvements
 time-cutoff	en	Fusion/nuclear engineering term referring to 'time cutoff' in technical context.	internal:dict-improvements
@@ -5788,7 +5788,7 @@ voxel-model	zh	聚变/核工程术语，指“体素模型”这一技术概念�
 wall	en	Fusion/nuclear engineering term referring to 'wall' in technical context.	internal:dict-improvements
 wall	zh	聚变/核工程术语，指“壁”这一技术概念。	internal:dict-improvements
 wall-load	zh	聚变/核工程术语，对应英文“Wall load”。	internal:dict-improvements
-wall-pumping	en	Fusion/nuclear engineering term referring to 'wall pumping' in technical context.	internal:dict-improvements
+wall-pumping	en	Wall hydrogen absorption causing plasma density decrease.	corpus
 wall-pumping	zh	聚变/核工程术语，指“壁抽气”这一技术概念。	internal:dict-improvements
 waste-classification	en	Categorization of radioactive waste according to its activity level.	corpus
 waste-classification	zh	按放射性活度水平对放射性废物进行分类。	corpus
