@@ -3215,3 +3215,12 @@ dissolution-precipitation-coefficient	internal:cate-3.0-deliverables/FUTURE-0305
 acp-filter-model	internal:cate-3.0-deliverables/FUTURE-030503-DD-007	2.3 过滤器计算模型	manual	2026-10-16
 half-value-layer	https://en.wikipedia.org/wiki/Half-value_layer	The half-value layer (HVL), or half-value thickness, is the thickness of the material at which the intensity of radiation entering it is reduced by one half.	manual	2026-10-25
 tenth-value-layer	https://en.wikipedia.org/wiki/Half-value_layer	A similar concept is the tenth-value layer or TVL. The TVL is the average amount of material needed to absorb 90% of all radiation, i.e., to reduce it to a tenth of the original intensity.	manual	2026-10-25
+calculation	https://www.oxfordlearnersdictionaries.com/definition/english/calculation	the act or process of using numbers to find out an amount	copilot	2026-10-27
+material	https://www.oxfordlearnersdictionaries.com/definition/english/material_1	a substance that things can be made from	copilot	2026-10-27
+performance	https://www.oxfordlearnersdictionaries.com/definition/english/performance	how well or badly you do something; how well or badly something works	copilot	2026-10-27
+neutron	https://www.oxfordlearnersdictionaries.com/definition/english/neutron	a very small piece of matter (= a substance) that carries no electric charge and that forms part of the nucleus (= central part) of an atom	copilot	2026-10-27
+simulation	https://www.oxfordlearnersdictionaries.com/definition/english/simulation	a situation in which a particular set of conditions is created artificially in order to study or experience something that could exist in reality	copilot	2026-10-27
+evaluation	https://www.oxfordlearnersdictionaries.com/definition/english/evaluation	the act of forming an opinion of the amount, value or quality of something after thinking about it carefully	copilot	2026-10-27
+method	https://www.oxfordlearnersdictionaries.com/definition/english/method	a particular way of doing something	copilot	2026-10-27
+mode	https://www.oxfordlearnersdictionaries.com/definition/english/mode	the way in which a piece of equipment is set to perform a particular task	copilot	2026-10-27
+device	https://www.oxfordlearnersdictionaries.com/definition/english/device	an object or a piece of equipment that has been designed to do a particular job	copilot	2026-10-27

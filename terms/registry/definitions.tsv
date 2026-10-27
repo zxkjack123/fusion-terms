@@ -3722,7 +3722,7 @@ cable-in-conduit-conductor	en	A superconducting conductor design consisting of a
 cable-in-conduit-conductor	zh	一种超导导体结构，电缆置于导管之内，冷却剂在导管中强制流动，从而沿导体全长实施冷却。	corpus
 cache-miss	en	Fusion/nuclear engineering term referring to 'cache miss' in technical context.	internal:dict-improvements
 cache-miss	zh	聚变/核工程术语，指“缓存未命中”这一技术概念。	internal:dict-improvements
-calculation	en	A deliberate mathematical process that transforms a set of inputs into one or more results.	https://en.wikipedia.org/wiki/Calculation
+calculation	en	The act or process of using numbers to find out an amount.	https://www.oxfordlearnersdictionaries.com/definition/english/calculation
 calculation	zh	计算是通过数学过程将一组输入变换为一个或多个结果的有意过程。	https://en.wikipedia.org/wiki/Calculation
 calibration	zh	聚变/核工程术语，对应英文“calibration”。	internal:dict-improvements
 calibration-of-a-dosimeter	zh	聚变/核工程术语，对应英文“calibration of a dosimeter”。	internal:dict-improvements
@@ -3994,7 +3994,7 @@ deuterium-tritium	en	The mixture of deuterium and tritium used as the primary fu
 deuterium-tritium	zh	氘氚是作为主要聚变燃料使用的氘与氚混合物。	corpus
 deuterium-tritium-reactions	zh	聚变/核工程术语，对应英文“Deuterium-Tritium Reactions”。	internal:dict-improvements
 deviation	zh	聚变/核工程术语，对应英文“deviation”。	internal:dict-improvements
-device	en	A constructed tool or instrument, as distinct from a natural object.	https://en.wikipedia.org/wiki/Device
+device	en	An object or a piece of equipment that has been designed to do a particular job.	https://www.oxfordlearnersdictionaries.com/definition/english/device
 device	zh	装置是构造出来的工具或器械，区别于自然物。	https://en.wikipedia.org/wiki/Device
 diagnostic-exposure	zh	聚变/核工程术语，对应英文“diagnostic exposure”。	internal:dict-improvements
 diagnostic-port	en	Fusion/nuclear engineering term referring to 'Diagnostic Port' in technical context.	internal:dict-improvements
@@ -4185,7 +4185,7 @@ essential-services	zh	聚变/核工程术语，对应英文“essential services
 etg-mode	en	A micro-instability at the electron gyroradius scale that drives electron heat transport.	corpus
 etg-mode	zh	电子温度梯度模是电子回旋半径尺度上驱动电子热输运的微观不稳定性。	corpus
 evacuation	zh	聚变/核工程术语，对应英文“evacuation”。	internal:dict-improvements
-evaluation	en	A systematic determination and assessment of a subject's merit and worth using criteria set by standards.	https://en.wikipedia.org/wiki/Evaluation
+evaluation	en	The act of forming an opinion of the amount, value or quality of something after thinking about it carefully.	https://www.oxfordlearnersdictionaries.com/definition/english/evaluation
 evaluation	zh	评估是依据标准设定的准则，对对象的优劣与价值作出系统判定。	https://en.wikipedia.org/wiki/Evaluation
 eveda	en	Fusion/nuclear engineering term referring to 'Engineering Validation and Engineering Design Activities' in technical context.	internal:dict-improvements
 eveda	zh	聚变/核工程术语，指“工程验证与工程设计活动”这一技术概念。	internal:dict-improvements
@@ -4742,7 +4742,7 @@ mantle-earth-s	zh	聚变/核工程术语，对应英文“mantle, Earth’s”�
 marfe	en	Multifaceted asymmetric radiation from the edge, a poloidally localized radiation instability.	corpus
 marfe	zh	MARFE 是来自边缘的多面非对称辐射，一种极向局域化的辐射不稳定性。	corpus
 mast-upgrade	zh	聚变/核工程术语，对应英文“MAST Upgrade”。	internal:dict-improvements
-material	en	A substance or mixture of substances that constitutes an object.	https://en.wikipedia.org/wiki/Material
+material	en	A substance that things can be made from.	https://www.oxfordlearnersdictionaries.com/definition/english/material_1
 material	zh	材料是构成物体的单一物质或多种物质的混合物。	https://en.wikipedia.org/wiki/Material
 material-ageing	zh	聚变/核工程术语，对应英文“material ageing”。	internal:dict-improvements
 material-migration	en	Net erosion, transport and redeposition of wall material inside the vessel.	corpus
@@ -4767,7 +4767,7 @@ merging-compression	en	Fusion/nuclear engineering term referring to 'merging-com
 merging-compression	zh	聚变/核工程术语，指“并合压缩”这一技术概念。	internal:dict-improvements
 mesh-generation	en	Generation of computational meshes for the finite element, finite volume, and CFD methods.	corpus
 mesh-generation	zh	为有限元、有限体积和计算流体力学方法生成计算网格。	corpus
-method	en	A prescribed process for completing a task.	https://en.wikipedia.org/wiki/Method
+method	en	A method is a particular way of doing something.	https://www.oxfordlearnersdictionaries.com/definition/english/method
 method	zh	方法是完成某项任务所规定的步骤与流程。	https://en.wikipedia.org/wiki/Method
 mhd-pressure-drop	en	Pressure loss due to the Lorentz force on liquid metal flow in a magnetic field.	corpus
 mhd-pressure-drop	zh	MHD压降是磁场中洛伦兹力作用于液态金属流动引起的压力损失。	corpus
@@ -4793,7 +4793,7 @@ mixed-material	zh	混合材料是由多种 PFC 材料共沉积形成的混合层
 mixed-pebble-bed	en	A binary pebble bed mixing breeder and multiplier materials.	corpus
 mixed-pebble-bed	zh	混合球床是混合增殖剂与倍增剂材料的二元球床。	corpus
 mixed-waste	zh	聚变/核工程术语，对应英文“mixed waste”。	internal:dict-improvements
-mode	en	A particular means of accomplishing something, or a particular state of a system.	https://en.wiktionary.org/wiki/mode
+mode	en	The way in which a piece of equipment is set to perform a particular task.	https://www.oxfordlearnersdictionaries.com/definition/english/mode
 mode	zh	模式是完成某事的特定方式，或系统所处的特定状态。	https://en.wiktionary.org/wiki/mode
 mode-conversion	en	A wave mode conversion heating mechanism at the ion-ion hybrid layer.	corpus
 mode-conversion	zh	模式转换是发生于离子-离子混杂层的波模式转换加热机制。	corpus
@@ -4850,7 +4850,7 @@ net-electricity	zh	聚变/核工程术语，指“净发电”这一技术概念
 net-energy	zh	聚变/核工程术语，对应英文“Net Energy”。	internal:dict-improvements
 neutral-beam-driven-frc	en	Field-reversed configuration sustained by tangential neutral beam injection, as in the TAE/ENN approach.	corpus
 neutral-beam-driven-frc	zh	由切向中性束注入维持的场反位形（FRC），即 TAE/ENN 方案。	corpus
-neutron	en	A subatomic particle with no electric charge whose mass is slightly greater than that of a proton.	https://en.wikipedia.org/wiki/Neutron
+neutron	en	A very small piece of matter that carries no electric charge and that forms part of the nucleus of an atom.	https://www.oxfordlearnersdictionaries.com/definition/english/neutron
 neutron	zh	中子是不带电荷、质量略大于质子的亚原子粒子。	https://en.wikipedia.org/wiki/Neutron
 neutron-activation	en	Activation of materials by neutron irradiation.	corpus
 neutron-activation	zh	中子活化是中子辐照引起的材料活化。	corpus
@@ -4989,7 +4989,7 @@ peeling-ballooning-mode	zh	剥离-气球模是耦合剥离模与气球模并触�
 peer-review	zh	聚变/核工程术语，对应英文“peer review”。	internal:dict-improvements
 pellet-ablation	en	Surface ablation of a fuel pellet in hot plasma.	corpus
 pellet-ablation	zh	弹丸烧蚀是高温等离子体中燃料弹丸的表面烧蚀。	corpus
-performance	en	The action or process of carrying out or accomplishing a task or function.	https://en.wikipedia.org/wiki/Performance
+performance	en	How well or badly something works, or how well or badly a task is done.	https://www.oxfordlearnersdictionaries.com/definition/english/performance
 performance	zh	性能是执行或完成某项任务或功能的过程与表现。	https://en.wikipedia.org/wiki/Performance
 performance-assessment	zh	聚变/核工程术语，对应英文“performance assessment”。	internal:dict-improvements
 performance-indicator	zh	聚变/核工程术语，对应英文“performance indicator”。	internal:dict-improvements
@@ -5442,7 +5442,7 @@ side-reaction	en	A parasitic neutron-producing reaction channel in advanced fuel
 side-reaction	zh	副反应是先进燃料中产生中子的寄生反应道。	corpus
 sievert	zh	聚变/核工程术语，对应英文“sievert (Sv)”。	internal:dict-improvements
 significant-transboundary-release	zh	聚变/核工程术语，对应英文“significant transboundary release”。	internal:dict-improvements
-simulation	en	An imitative representation of a process or system that could exist in the real world.	https://en.wikipedia.org/wiki/Simulation
+simulation	en	A situation in which a particular set of conditions is created artificially in order to study or experience something that could exist in reality.	https://www.oxfordlearnersdictionaries.com/definition/english/simulation
 simulation	zh	模拟是对现实世界中可能存在的过程或系统所作的模仿性再现。	https://en.wikipedia.org/wiki/Simulation
 single-failure-criterion	zh	聚变/核工程术语，对应英文“single failure criterion”。	internal:dict-improvements
 single-helical-state	en	A self-organized equilibrium of a reversed-field pinch in which a single dominant helical mode produces a quasi-helical magnetic structure.	corpus
