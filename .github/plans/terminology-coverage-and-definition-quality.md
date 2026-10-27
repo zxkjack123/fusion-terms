@@ -16,7 +16,7 @@ files_sha256:
   artifacts/translation_dict.json: "auto (执行时实测)"
 ---
 
-> 🔵 **状态：Phase 0（W0）✅ DONE（2026-10-26，收尾 commit `b175bab`）；D2-1 ~ D2-8 全部已裁决（选项 A，见文末《待裁决落地记录》）⇒ Phase 1（W1）**进行中**（2026-10-27 12:45 实测：`w1_a` **4/4 批 ✅**；`w1_b` **6/34 批**（`b01` ✅ commits `b578047`+`f58f0ff`；`b02` ✅ commits `7024be1`+`e67af8c`；`b03` ✅ commits `45313cc`+`0a8e722`；`b04` ✅ commits `c6b3529`+`5e91052`；`b05` ✅ commits `988eab9`+`d391298`；`b06` ✅ commits `4cfb390`+`83387f2`）；`w1_c` / W2 / W3 未开始；off-plan `--self-test` 重锚已完成 `471ab41`；**`B02–B06` 组 D2-4 独立验收 = PASS**（首轮 FAIL 1 行 `current-lead` en 无据 `superconducting`，已最小返工 1 行并复跑四项门禁全 exit 0；返工后 W0 证据束 `--compare` **exit 0 / status=pass**，见文末 Bookkeeping 纠正第 7、8 条）。** — 本文件由 Plan Architect `mode=refine` 基于 PM 任务 **#T-4973** 的既有批次细化而来，并于 **`mode=improve`（2026-10-26，基线 `66197f2`）** 依据 W0 实测现实改口径：D2-7=A（W1 双侧重写 ⇒ 每批拆为 en/zh 两个 ≤30 min 子任务）、D2-8=A（来源白名单收窄）、D2-6=A（169 个拉丁名 id 补中文首选名）、批清单以 `.github/plans/t4973-batches/README.md` 为唯一权威（**119 批 / 2348 ids**）。
+> 🔵 **状态：Phase 0（W0）✅ DONE（2026-10-26，收尾 commit `b175bab`）；D2-1 ~ D2-8 全部已裁决（选项 A，见文末《待裁决落地记录》）⇒ Phase 1（W1）**进行中**（2026-10-27 16:35 实测：`w1_a` **4/4 批 ✅**；`w1_b` **7/34 批**（`b01` ✅ commits `b578047`+`f58f0ff`；`b02` ✅ commits `7024be1`+`e67af8c`；`b03` ✅ commits `45313cc`+`0a8e722`；`b04` ✅ commits `c6b3529`+`5e91052`；`b05` ✅ commits `988eab9`+`d391298`；`b06` ✅ commits `4cfb390`+`83387f2`；`b07` ✅ commits `987d132`+本节）；`w1_c` / W2 / W3 未开始；off-plan `--self-test` 重锚已完成 `471ab41`；**`B02–B06` 组 D2-4 独立验收 = PASS**（首轮 FAIL 1 行 `current-lead` en 无据 `superconducting`，已最小返工 1 行并复跑四项门禁全 exit 0；返工后 W0 证据束 `--compare` **exit 0 / status=pass**，见文末 Bookkeeping 纠正第 7、8 条）。** — 本文件由 Plan Architect `mode=refine` 基于 PM 任务 **#T-4973** 的既有批次细化而来，并于 **`mode=improve`（2026-10-26，基线 `66197f2`）** 依据 W0 实测现实改口径：D2-7=A（W1 双侧重写 ⇒ 每批拆为 en/zh 两个 ≤30 min 子任务）、D2-8=A（来源白名单收窄）、D2-6=A（169 个拉丁名 id 补中文首选名）、批清单以 `.github/plans/t4973-batches/README.md` 为唯一权威（**119 批 / 2348 ids**）。
 > W0 执行记录见文末 `## Execution Log` §「W0 数据完整性修复 + 门禁加严 — T0.4 ~ T0.13」；门禁 RED→GREEN 可复跑证据见 `.github/plans/t4973-batches/red-green.md`。
 > ~~所有基线数字为 **2026-10-26 在 HEAD `3cb3837`** 实测~~ → **W0 后的权威数字以文末「W0 收口数字」为准**（覆盖率 47.11%、W2 738、W3a 854 等）。
 
@@ -1571,6 +1571,25 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
   - 证据留存：`/tmp/opencode/t4973-b06/`（`red_{en,zh}_before.txt`、`green_{en,zh,both}.txt`、`mutlog_{m1,m1z,ctrl}.txt`、`validate_{en,zh}.txt`、`pytest_{en,zh}.txt`、`zh_fix.json`）
 - **不变量 / 全量门禁**：`data_rows` 恒 **6132**；列分布恒 `{4}`；`git diff --numstat` = `20/20`（-EN）+ `20/20`（-ZH），改动 (id,lang) 对恰为本批 id；`validate_registry`（`registry OK: 3076 concepts, 10249 aliases, 3168 evidence rows, 6132 definitions`）/ `pytest -q` → 全部 **exit 0**；audit `clean_metrics`：`bad_category 0 / malformed_cols 0 / zh_en_corruption 0 / glued_source_rows 0 / non5_cols 0`，`en_boilerplate **559**`、`concepts_without_defs 10`（W1-C 待办，非本批范围）
 - **下一步**：`w1_b_b07` 起串行推进（下一抽检组 `B07–B11`）；**W1-A + W1-B B01–B06 累计迁移**：`en_boilerplate` 746 → **559**（−187 = A 组 67 + B 组 B01–B06 120）、`corpus` 48 → **289**
+
+#### T1.B07-EN / T1.B07-ZH — ✅ DONE（2026-10-27 16:21）commits `987d132`（-EN）+ 本节（-ZH）
+
+- 批次：`.github/plans/t4973-batches/w1_b_b07.ids`（**20** id）；**W1-B 组第 7 批**（34 批 / 679 id）⇒ 属 D2-4 的 `B07–B11` 组第 1 批
+- **W1-B 分型**（同 B01–B06 实测）：`en`/`zh` 双侧改写前皆为占位模板（en **20/20** 命中 `def_boilerplate_regex`、zh **20/20** 含 `聚变/核工程术语`），双侧 source 均 `internal:dict-improvements` ⇒ 依 **D2-8=A** 以 `concepts.tsv` 第 7 列 `notes` 为唯一依据 ⇒ source 一律 **`corpus`**
+- **`-EN`**（commit `987d132`）：20 条 `en` 行改写
+  - 门禁：`--lang en` → **exit 0** `verdict=PASS`（改写前 RED：**exit 1**，`red_en_before.txt`）；`validate_registry --terms-dir terms` → **exit 0**；`pytest -q` → **exit 0**
+  - en 最短 **49** / 最长 101（均值 69.7）；套话 **0/20**；全 ASCII（无 >127 字符）；source **20/20** `corpus`
+    - 最短一条 = `gas-turbine`（`A turbine driven by gas within the Brayton cycle.` = **49 字符**，与 notes「Turbine driven by gas in Brayton cycle」逐字对应）；按「忠实依据 > 凑长度」口径**不加 notes 之外的属性**（B02 `current-lead` / `modular-coil` 无据 `superconducting` 返工教训）
+    - **自校修复 1 行**：`heat-exchanger` 初稿 `…between two fluids.` —— notes 仅「between fluids」，`two` 属 notes 外计数限定 ⇒ 最小修订为 `…between fluids.`（自身长度 59 ≥ 40，仍 PASS）；复跑 `--lang en` **exit 0**
+- **`-ZH`**（本节）：20 条 `zh` 行由模板改写为真实释义（与同 id 已提交 en **语义等价**，依据 = notes + en；source **20/20** `corpus`）
+  - 门禁：`--lang zh` → **exit 0**（改写前 RED：**exit 1**，`red_zh_before.txt`）；`--lang both`（批收口）→ **exit 0**；`validate_registry` → **exit 0**；`pytest -q` → **exit 0**
+  - zh 最短 **15** / 最长 39（均值 24.1）；模板残留 **0/20**；`指“en”` **0/20**；source **20/20** `corpus`；**20/20** 含该 concept `preferred_zh` 术语字面
+  - **恢复性修复 0 行**：本批 zh 侧既有行皆为模板（无真实释义），不存在「既有 zh 与 en 语义冲突」情形 ⇒ 无恢复性修复
+  - 迁移：`internal:dict-improvements` 4228 → **4188**；`corpus` 289 → **329**；audit `en_boilerplate` **559 → 539**（en 行零改动）
+- **本批语料分型观察**：本批为**电厂热工 / 动力转换族**（`steam-generator` … `plant-layout` 共 14 条）+ **同位素-不稳定性族**（`superconducting-magnet`、`coulomb-collision`、`itg-mode`、`tem`、`etg-mode`、`peeling-ballooning-mode`）。各条为 notes 的类别 / 功能级等价展开；`superconducting-magnet` 的「超导线 / 临界温度以下」**逐字来自 notes**（notes = `Magnet wound from superconducting wire operating below critical temperature`），非无据限定；`peeling-ballooning-mode` 的 `edge localized modes (ELMs)` 为 notes 中 `ELMs` 的缩写展开，未新增属性
+- **能失败证明**：改前 RED 双侧均 **exit 1**（`red_en_before.txt` / `red_zh_before.txt`，真实语料非人工构造）；证据留存 `/tmp/opencode/t4973-b07/`
+- **不变量 / 全量门禁**：`data_rows` 恒 **6132**；`git diff --numstat` = `20/20`（-EN）+ `20/20`（-ZH），改动 (id,lang) 对恰为本批 id；audit `w0_clean_metrics`：`bad_category 0 / malformed_cols 0 / zh_en_corruption 0 / glued_source_rows 0 / non5_cols 0`，`w0_is_clean = true`；`en_boilerplate **539**`、`concepts_without_defs 10`（W1-C 待办，非本批范围）
+- **下一步**：`w1_b_b08` 起串行推进（本组 `B07–B11` 满 5 批时触发 D2-4 抽检，由父代理执行）；**W1-A + W1-B B01–B07 累计迁移**：`en_boilerplate` 746 → **539**（−207 = A 组 67 + B 组 B01–B07 140）、`corpus` 48 → **329**
 
 #### 会话收口 — 优雅中断（**预算依据为实测，非"感知"**）— 2026-10-26 21:37
 
