@@ -691,7 +691,7 @@ files_sha256:
 
 **批次提交纪律**：每个子任务单独 commit（`-EN`、`-ZH` 各一次），message 形如 `feat(registry): rewrite definitions W1-B-01 en (#T-4973)` / `… zh (#T-4973)`；`git diff --stat` 只含 `terms/registry/definitions.tsv`（显式引用外部权威时才 +`evidence.tsv`）。
 
-**Phase 1 说明（抽检，落实 D2-4）**：每完成 5 个**批**（即 10 个子任务；批序 B05/B10/B15/B20/B25/B30/C1 完成后各一次）执行一次抽检：
+**Phase 1 说明（抽检，落实 D2-4）**：每完成 5 个**批**（即 10 个子任务；批序 ~~B05/B10/B15/B20/B25/B30/C1~~ **该列已废弃** —— 未计入 `w1_a` 的 4 批，整体偏移 4 批；**定稿 cadence**：首组 `A1–A4 + B01` 已 PASS，后续 `B02–B06`、`B07–B11`、`B12–B16`、`B17–B21`、`B22–B26`、`B27–B31`、`B32–B34 + C1`，见 §「会话恢复 — Bookkeeping 纠正」第 3 条）执行一次抽检：
 `.venv/bin/python scripts/registry_batch_verify.py --mode definitions --ids-file <最近 5 批的 ids 文件并集> --expect <并集行数> --lang both` → exit 0，另取 **≥8 行**产出摘要交独立 agent 复核语义（zh 侧须与 en 侧同义、且与该 concept 的 `preferred_zh` 一致）；复核 FAIL > 0 → 该 5 批返工（不得只改被抽中的行）。
 
 ### Phase 2: W2 — allowlist 机械补齐（738 行，排除 35 专名）
@@ -1408,8 +1408,8 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 - **组级验收**：`registry_batch_verify --mode definitions --ids-file …/w1_a.ids --expect 67 --lang both` → **exit 0**（67 id 双侧全绿）
 - **组级迁移（W1-A 累计）**：`internal:*` 4535 → **4468**（−67）；`GB/T-4960.9` 551 → **617**（+66）；`corpus` 48 → **49**（+1，`x-point`）；audit `en_boilerplate` 746 → **679**（−67）
 - **组内裁决累计**：`x-point` 无据从句删除；`plasma-gun` / `turbulent-transport` 简短但忠实（维持）；GB/T 条款号统一不写入 en；`limiter` 词头（类 4）与 `RF加热` 词头（类 4b）编辑性不动；`toroidal-alfven-eigenmode` 措辞按指定依据
-- **组内 zh 恢复性修复累计 7 行**：`lawson-criterion`、`magnetic-island`、`vertical-displacement-event`（A1）；`electrostatic-confinement`（门禁 RED，A2）、`halo-current`（A2）；`dt-reaction`、`dd-reaction`、`d-he3-reaction`（A3，类 7）；`in-vessel-component`（A4）
-- **下一步**：进入 W1-B 组（34 批次 / 694 id），并在第 5 个批次完成时执行 **D2-4 抽检**
+- **组内 zh 恢复性修复累计 9 行**（~~原文写 7~~，2026-10-27 账面纠正：逐项清单实为 9 行，见 §「会话恢复 — Bookkeeping 纠正」）：`lawson-criterion`、`magnetic-island`、`vertical-displacement-event`（A1）；`electrostatic-confinement`（门禁 RED，A2）、`halo-current`（A2）；`dt-reaction`、`dd-reaction`、`d-he3-reaction`（A3，类 7）；`in-vessel-component`（A4）
+- **下一步**：进入 W1-B 组（34 批次 / 679 id）（~~694~~，2026-10-27 账面纠正：`w1_b.ids` 实测 679），并在第 5 个批次完成时执行 **D2-4 抽检**（该 cadence 表述见 §「会话恢复 — Bookkeeping 纠正」第 3 条定稿版）
 
 #### 裁决 4 — `registry_batch_verify.py --self-test` 重锚（**off-plan**，用户裁决 A）— ✅ DONE（2026-10-26 21:30）
 
@@ -1456,7 +1456,7 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
   - en 侧（B01-EN）：`def_boilerplate_regex`（复原套话）／`def_len_en`（截断到 10 字符）／`def_source_unknown`（写 `internal:dict-improvements`）→ 三者均 **exit 1**
   - zh 侧（B01-ZH）：`def_boilerplate_mark`（复原模板）／`def_len_zh`（截断到 `台基。`）／`def_source_unknown`（写 `internal:dict-improvements`）→ 三者均 **exit 1**
 - **不变量 / 全量门禁**：`data_rows` 恒 **6132**；列分布恒 `{4}`；`git diff --numstat` = `20/20`（-EN）+ `20/20`（-ZH）；改动 (id,lang) 对恰为批次 id（-EN 全为 `en`、-ZH 全为 `zh`），en 行在 -ZH 阶段改动数 **0**；`validate_registry` / `pytest -q` / `ruff format --check .` / `ruff check .` / `mypy pipeline/` → 全部 **exit 0**
-- **下一步**：`w1_b_b02` 起串行推进；**D2-4 抽检在第 5 个批次完成时执行**（W1-A 4 批 + B01 ⇒ 该批即 **B04 完成时**触发）
+- **下一步**：`w1_b_b02` 起串行推进；**D2-4 抽检在第 5 个批次完成时执行**（W1-A 4 批 + B01 ⇒ 该批即 **B04 完成时**触发）〔2026-10-27 注记：**本行的 `B04 触发` 口径已废弃**（计数基准错误，漏计 W1-A 4 批）；定稿见 §「会话恢复 — Bookkeeping 纠正」第 3 条〕
 
 #### T1.B02-EN / T1.B02-ZH — ✅ DONE（2026-10-27 11:25）commits `7024be1`（-EN）+ 本节（-ZH）
 
@@ -1480,7 +1480,7 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
   - 证据留存：`/tmp/opencode/t4973-b02/`（`red_{en,zh,both}_before.txt`、`green_{en,zh,both}.txt`、`mutlog_*.txt`、`mut_control.tsv`）
 - **逐行依据留痕（物理期间无凭空扩写）**：20 条 en 释义逐条为 `notes` 的直接展开，未引入 notes 之外的实体/数值/项目名；`hohlraum` 的 `high-Z`、`fuel-capsule` 的 `DT ice / ablator shell`、`island-divertor` 的 `W7-X`、`rayleigh-taylor-instability` 的「加速界面 + ICF 内爆劣化」、`compact-toroid` 的「FRC + spheromak」均**逐字或等价见于 notes**；安防/物理疑点 **0**
 - **不变量 / 全量门禁**：`data_rows` 恒 **6132**（`registry OK: 3076 concepts, 10249 aliases, 3168 evidence rows, 6132 definitions`）；列分布恒 `{4}`；`git diff --numstat` = `20/20`（-EN）+ `20/20`（-ZH），改动 (id,lang) 对恰为本批 id（-EN 全 `en`、-ZH 全 `zh`），en 行在 -ZH 阶段改动数 **0**；`validate_registry` / `pytest -q` → 全部 **exit 0**
-- **下一步**：`w1_b_b03` 起串行推进；**D2-4 抽检按 §Phase 1 说明在 `w1_b` 第 5 批（B05）完成后触发**（W1-A 4 批 + B01/B02 已达 6 批，B01 日志所记 B04 为笔误口径，以 §Phase 1 正文 `B05` 为准）
+- **下一步**：`w1_b_b03` 起串行推进；**D2-4 抽检按 §Phase 1 说明在 `w1_b` 第 5 批（B05）完成后触发**（W1-A 4 批 + B01/B02 已达 6 批，B01 日志所记 B04 为笔误口径，以 §Phase 1 正文 `B05` 为准）〔2026-10-27 注记：**本行的 `B05` 口径亦已废弃** —— 原 §Phase 1 正文的 `B05/B10/…` 列同样漏计 W1-A 4 批；定稿见 §「会话恢复 — Bookkeeping 纠正」第 3 条〕
 
 #### 会话收口 — 优雅中断（**预算依据为实测，非"感知"**）— 2026-10-26 21:37
 
@@ -1492,8 +1492,26 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
   - **T1.B01-EN / T1.B01-ZH**（W1-B 首批，20 id）：commits `b578047` + `f58f0ff`；`--lang both` **exit 0**；`internal:*` 4468 → **4428**；`corpus` 49 → **89**
   - **W1-A 组**（4 批 / 67 id）已收口：`e2e2809`/`05b7223`、`89a2fb2`/`c87e1ba`、`2a01af3`/`d924a94`、`ec556e9`/`534ed89`
 - **本轮收口态门禁**：`--self-test` / `w1_a --lang both` / `w1_a_b04 --lang both` / `w1_b_b01 --lang both` / `validate_registry` / `pytest -q` / `ruff format --check .` / `ruff check .` / `mypy pipeline/` / `registry_row_audit --audit --expect-clean` → **全部 exit 0**；`data_rows` 恒 **6132**
-- **下一步（恢复后立即执行）**：`w1_b_b02` 起按同一循环串行推进至 `b34`（每批 `-EN` → 独立核验 → 仓外 RED → commit；`-ZH` → 门禁 + 批内恢复性修复 → 日志 + commit）；**D2-4 抽检在 B04 完成时触发**（W1-A 4 批 + B01 已占 5 批中的 1 批）
-- **未做**：**未 push**（无授权；`origin/master` 仍停 `3cb3837`，本地领先 **36** 个 commit）；W1 收尾清扫 / `registry_row_audit.py` 新指标（裁决 3=A）/ W1-C / W2 / W3 均未开始
+- **下一步（恢复后立即执行）**：`w1_b_b02` 起按同一循环串行推进至 `b34`（每批 `-EN` → 独立核验 → 仓外 RED → commit；`-ZH` → 门禁 + 批内恢复性修复 → 日志 + commit）；**D2-4 抽检在 B04 完成时触发**（W1-A 4 批 + B01 已占 5 批中的 1 批）〔2026-10-27 注记：**本行的 `B04 触发` 口径已废弃**；定稿见 §「会话恢复 — Bookkeeping 纠正」第 3 条〕
+- **未做**：**未 push**（无授权；`origin/master` 仍停 `3cb3837`，本地领先 **36** 个 commit）〔2026-10-27 注记：`36` 为**该时点**实测值，**保留不篡**；当前实测（HEAD `e67af8c`）`origin/master..HEAD` = **45** 个 commit〕；W1 收尾清扫 / `registry_row_audit.py` 新指标（裁决 3=A）/ W1-C / W2 / W3 均未开始
+
+#### 会话恢复 — Bookkeeping 纠正（2026-10-27，#T-4973，**单独 commit**）
+
+> 本小节为**账面纠正**（不涉及 `terms/` 数据改动）；纪律：独立 commit，不与 W1 批次 commit 混装。所有纠正**只改口径数字 / 追加注记，不篡改历史时点事实**。
+
+1. **W1-A 组内 zh 恢复性修复累计数纠正：7 → 9**。原条目（§「W1-A 组收口」）文字写「累计 7 行」，但**逐项清单实为 9 行**（`lawson-criterion`、`magnetic-island`、`vertical-displacement-event`、`electrostatic-confinement`、`halo-current`、`dt-reaction`、`dd-reaction`、`d-he3-reaction`、`in-vessel-component`）⇒ 以清单为准取 **9**。
+2. **W1-B 规模纠正：694 → 679**。`.github/plans/t4973-batches/w1_b.ids` 实测 `wc -l` = **679**（34 批 = 20×33 + 19）。694 系笔误；批数与每批大小仍以 `.github/plans/t4973-batches/README.md` 为唯一权威。
+3. **D2-4 抽检 cadence 定稿（含计数基准纠正）**：
+   - **计数基准** = W1 的**全部 39 批**（`w1_a` 4 + `w1_b` 34 + `w1_c` 1），**不是**仅 `w1_b`。
+   - **首组 = `A1–A4 + B01`（5 批，87 id / 174 定义行）已 PASS**：100% 机械门禁（`--mode definitions --lang both` exit 0）+ 独立复核（≥8 行语义）**PASS**。**证据来源 = 历史会话证据**（父代理转述；本会话未复跑该组抽检）。
+   - **后续分组**：`B02–B06`、`B07–B11`、`B12–B16`、`B17–B21`、`B22–B26`、`B27–B31`、`B32–B34 + C1`。
+   - **废弃声明**：§Phase 1 正文原列 `B05/B10/B15/B20/B25/B30/C1` **已废弃**（漏计 `w1_a` 4 批 ⇒ 整体偏移 4 批）；历史日志中 `B04 完成时触发`（B01、B02 条目）与 `B05 完成后触发`（B03 前条目）**均已废弃**。一律以本 cadence 为准。
+4. **本地 ahead 数（历史 vs 当前，两者对应各自时点，非冲突）**：历史条目所记「本地领先 **36** 个 commit」= **历史时点事实，保留不篡**；**当前实测**（2026-10-27 11:33，HEAD `e67af8c`）`git rev-list --count origin/master..HEAD` = **45**。
+5. **Deferred（已接受，**不修改这两条**）**：
+   - `kink-mode`：GB/T 条款 `2.1.150` 的**术语名与 `concepts.tsv` `notes` 存在冲突**；
+   - `impurity-screening`：GB/T `2.1.127` 的 **`notes` 与既有 zh 释义语义冲突**。
+   两条**已接受为 deferred**：本计划内**不改这两条**（不纳入 W1 批次返工，不代表门禁失败）。
+6. **W0 证据束 manifest 核实**：`/home/gw/opt/fusion-terms/artifacts/registry-evidence/20261026T231857Z-1984529/manifest.json` — SHA256 实测 `b6396fa58b389f27adefb38aa12b0986f2ec91f7ae80eede8247f6c64c833cfe`，与父代理给定值**逐字一致**（复核命令：`sha256sum <path>`，exit 0）。
 
 ## Read-only registry evidence handoff gate
 
