@@ -16,7 +16,7 @@ files_sha256:
   artifacts/translation_dict.json: "auto (执行时实测)"
 ---
 
-> 🔵 **状态：Phase 0（W0）✅ DONE（2026-10-26，收尾 commit `b175bab`）；D2-1 ~ D2-8 全部已裁决（选项 A，见文末《待裁决落地记录》）⇒ Phase 1（W1）**进行中**（2026-10-27 12:05 实测：`w1_a` **4/4 批 ✅**；`w1_b` **6/34 批**（`b01` ✅ commits `b578047`+`f58f0ff`；`b02` ✅ commits `7024be1`+`e67af8c`；`b03` ✅ commits `45313cc`+`0a8e722`；`b04` ✅ commits `c6b3529`+`5e91052`；`b05` ✅ commits `988eab9`+`d391298`；`b06` ✅ commits `4cfb390`+本节）；`w1_c` / W2 / W3 未开始；off-plan `--self-test` 重锚已完成 `471ab41`）。** — 本文件由 Plan Architect `mode=refine` 基于 PM 任务 **#T-4973** 的既有批次细化而来，并于 **`mode=improve`（2026-10-26，基线 `66197f2`）** 依据 W0 实测现实改口径：D2-7=A（W1 双侧重写 ⇒ 每批拆为 en/zh 两个 ≤30 min 子任务）、D2-8=A（来源白名单收窄）、D2-6=A（169 个拉丁名 id 补中文首选名）、批清单以 `.github/plans/t4973-batches/README.md` 为唯一权威（**119 批 / 2348 ids**）。
+> 🔵 **状态：Phase 0（W0）✅ DONE（2026-10-26，收尾 commit `b175bab`）；D2-1 ~ D2-8 全部已裁决（选项 A，见文末《待裁决落地记录》）⇒ Phase 1（W1）**进行中**（2026-10-27 12:45 实测：`w1_a` **4/4 批 ✅**；`w1_b` **6/34 批**（`b01` ✅ commits `b578047`+`f58f0ff`；`b02` ✅ commits `7024be1`+`e67af8c`；`b03` ✅ commits `45313cc`+`0a8e722`；`b04` ✅ commits `c6b3529`+`5e91052`；`b05` ✅ commits `988eab9`+`d391298`；`b06` ✅ commits `4cfb390`+`83387f2`）；`w1_c` / W2 / W3 未开始；off-plan `--self-test` 重锚已完成 `471ab41`；**`B02–B06` 组 D2-4 独立验收 = PASS**（首轮 FAIL 1 行 `current-lead` en 无据 `superconducting`，已最小返工 1 行并复跑四项门禁全 exit 0；返工后 W0 证据束 `--compare` **exit 0 / status=pass**，见文末 Bookkeeping 纠正第 7、8 条）。** — 本文件由 Plan Architect `mode=refine` 基于 PM 任务 **#T-4973** 的既有批次细化而来，并于 **`mode=improve`（2026-10-26，基线 `66197f2`）** 依据 W0 实测现实改口径：D2-7=A（W1 双侧重写 ⇒ 每批拆为 en/zh 两个 ≤30 min 子任务）、D2-8=A（来源白名单收窄）、D2-6=A（169 个拉丁名 id 补中文首选名）、批清单以 `.github/plans/t4973-batches/README.md` 为唯一权威（**119 批 / 2348 ids**）。
 > W0 执行记录见文末 `## Execution Log` §「W0 数据完整性修复 + 门禁加严 — T0.4 ~ T0.13」；门禁 RED→GREEN 可复跑证据见 `.github/plans/t4973-batches/red-green.md`。
 > ~~所有基线数字为 **2026-10-26 在 HEAD `3cb3837`** 实测~~ → **W0 后的权威数字以文末「W0 收口数字」为准**（覆盖率 47.11%、W2 738、W3a 854 等）。
 
@@ -1602,6 +1602,19 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
    - `impurity-screening`：GB/T `2.1.127` 的 **`notes` 与既有 zh 释义语义冲突**。
    两条**已接受为 deferred**：本计划内**不改这两条**（不纳入 W1 批次返工，不代表门禁失败）。
 6. **W0 证据束 manifest 核实**：`/home/gw/opt/fusion-terms/artifacts/registry-evidence/20261026T231857Z-1984529/manifest.json` — SHA256 实测 `b6396fa58b389f27adefb38aa12b0986f2ec91f7ae80eede8247f6c64c833cfe`，与父代理给定值**逐字一致**（复核命令：`sha256sum <path>`，exit 0）。
+7. **D2-4 `B02–B06` 组独立验收 + 最小返工（2026-10-27，父代理执行）**：
+   - **规模**：**100 ids / 200 definition rows**（`.github/plans/t4973-batches/w1_b_b0{2..6}.ids` 并集，`sort | uniq -d` = **0**）。
+   - **机械门禁（父代理独立复跑，非采信执行者自述）**：`registry_batch_verify --mode definitions --ids-file <并集> --expect 100 --lang both` → **exit 0** `verdict=PASS`；`pipeline.validate_registry --terms-dir terms` → **exit 0**（`6132 definitions` 不变）；`pytest -q` → **exit 0**。
+   - **数据面核对**：200 行 `source` **全为 `corpus`**（en 100 / zh 100）；en 长度 min/max = **40/200**；zh 长度 min/max = **12/48**。逐 commit 语种核验：4 个 `-EN` commit 恒 `20/20` 且**仅 `en` 行**；4 个 `-ZH` commit 恒 `20/20` 且**仅 `zh` 行**（+ 本计划日志，符合「数据改动 + 日志同 commit」惯例）。
+   - **独立语义复核**（委派 `acceptance-verifier`，read-only；样本 = B02–B06 每批前 2 id 共 **10 行** + 复核者自抽 `random.seed(4973)` **6 行**，合计 **16 行 ≥ 8**）：首轮 **verdict = FAIL（blocking 1 行）** —— `current-lead` 的 **en** 含 notes 之外的无据扩写 `superconducting`（notes = `Conductor connecting room-temperature bus to cryogenic coil`；zh = 「低温线圈」），与本计划既有裁决（B02 `modular-coil` 删除同类无据 `superconducting`）**自相矛盾**。
+   - **返工（最小面 = 1 行）**：`terms/registry/definitions.tsv` `current-lead en` 删除 `superconducting`（len 165 → **150**，仍 ≥40）；**zh 行不动**、`source` 保持 `corpus`；`git diff --numstat` = **1/1**。返工后重跑：`w1_b_b02 --lang both` **exit 0**、并集 `--lang both` **exit 0**、`validate_registry` **exit 0**、`pytest -q` **exit 0** ⇒ **该组验收转为 PASS**。
+   - **非阻塞 caution（未采纳，保持最小 diff）**：`neutron-multiplier` zh「通过核反应」经复核判为 notes 的**等价展开**（PASS），复核者建议可选消歧为「…提供额外中子的材料」。
+   - **证据留存**：`/tmp/opencode/t4973-b02b06/d2-4-acceptance-b02-b06.md`（含门禁输出、逐行判定、返工前后文本）；各批 RED/GREEN 与突变证据在 `/tmp/opencode/t4973-b0{2,3,4,5,6}/`。
+8. **本组 W0 证据束（返工后重跑，作为交付证据；命令逐字为 `python3 scripts/registry_evidence_bundle.py --compare`）**：
+   - **exit code = 0**；CLI 结构化摘要：`status=pass`、`profile=w0`、`gate=expect-clean`、`same_structured_result=true`、`incomplete=false`、`external_cli_entries=1`、`internal_cli_entries=4`。
+   - **evidence 目录**：`/home/gw/opt/fusion-terms/artifacts/registry-evidence/20261027T043934Z-2893528`；**`manifest.json` SHA256** = `03b91a62d2fa0ff4007dff538d32325d2fceea494d017250c767947d17baa72f`。
+   - **deferred warnings（w0 profile 下延后的 W1 指标，不构成 W0 failure）**：`definitions.en_boilerplate=559`、`definitions.concepts_without_defs=10`（baseline 与 batch 两侧同值 ⇒ `same_structured_result=true`）。
+   - **口径说明**：返工**前**亦跑过一次同命令（`20261027T043146Z-2778499`，manifest SHA256 `229d30da7c74247eeaea97f4ffece755026213f91d32283e2c538587ea100d9e`，同样 exit 0 / pass）；因该束对应 `current-lead` 修复**前**的数据，**以返工后的 `20261027T043934Z-2893528` 为本组权威证据束**。未使用 `--profile all`，未削弱任何门禁。
 
 ## Read-only registry evidence handoff gate
 

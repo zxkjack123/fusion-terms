@@ -3916,7 +3916,7 @@ current-driven-mode	en	Fusion/nuclear engineering term referring to 'current-dri
 current-driven-mode	zh	聚变/核工程术语，指“电流驱动模”这一技术概念。	internal:dict-improvements
 current-hole	en	Fusion/nuclear engineering term referring to 'current hole' in technical context.	internal:dict-improvements
 current-hole	zh	聚变/核工程术语，指“电流空洞”这一技术概念。	internal:dict-improvements
-current-lead	en	A conductor that carries current between a room-temperature bus and a cryogenic superconducting coil, thermally optimized to limit heat conduction into the cold mass.	corpus
+current-lead	en	A conductor that carries current between a room-temperature bus and a cryogenic coil, thermally optimized to limit heat conduction into the cold mass.	corpus
 current-lead	zh	连接室温母线与低温线圈的导体，经热优化以限制传入冷质量的热传导。	corpus
 current-profile-control	en	A technique for controlling the plasma current distribution by means of auxiliary heating and non-inductive current drive, in order to produce the optimum plasma configuration and to improve the plasma confinement.	GB/T-4960.9
 current-quench	en	Fusion/nuclear engineering term referring to 'current quench' in technical context.	internal:dict-improvements
