@@ -16,7 +16,7 @@ files_sha256:
   artifacts/translation_dict.json: "auto (执行时实测)"
 ---
 
-> 🔵 **状态：Phase 0（W0）✅ DONE（2026-10-26，收尾 commit `b175bab`）；D2-1 ~ D2-8 全部已裁决（选项 A，见文末《待裁决落地记录》）⇒ Phase 1（W1）**进行中**（2026-10-27 16:29 实测〔注：上一会话在该行记 `16:44`，与系统时钟实测不符，疑为上一会话时点笔误；其自身日志小节按「不篡历史时点」保留原样〕：`w1_a` **4/4 批 ✅**；`w1_b` **12/34 批**（`b01` ✅ commits `b578047`+`f58f0ff`；`b02` ✅ commits `7024be1`+`e67af8c`；`b03` ✅ commits `45313cc`+`0a8e722`；`b04` ✅ commits `c6b3529`+`5e91052`；`b05` ✅ commits `988eab9`+`d391298`；`b06` ✅ commits `4cfb390`+`83387f2`；`b07` ✅ commits `987d132`+`242f525`；`b08` ✅ commits `29c0e70`+`4045fc1`；`b09` ✅ commits `d6e135d`+`76364c0`〔原记 `本节`，2026-10-27 补记实录哈希〕；`b10` ✅ commits `79b48ac`+`397869b`；`b11` ✅ commits `2f4e184`+`6c88f94`；`b12` ✅ commits `89bbde9`+`<b12-ZH 待 b13 同步行回填>`；**`B07–B11` 组满 5 批，D2-4 独立验收 = PASS**（全 100 id / 200 行逐行复核，blocking 0；W0 证据束 `--compare` exit 0 / status=pass，见文末「D2-4 第三组」条））；`w1_c` / W2 / W3 未开始；off-plan `--self-test` 重锚已完成 `471ab41`；**`B02–B06` 组 D2-4 独立验收 = PASS**（首轮 FAIL 1 行 `current-lead` en 无据 `superconducting`，已最小返工 1 行并复跑四项门禁全 exit 0；返工后 W0 证据束 `--compare` **exit 0 / status=pass**，见文末 Bookkeeping 纠正第 7、8 条）。** — 本文件由 Plan Architect `mode=refine` 基于 PM 任务 **#T-4973** 的既有批次细化而来，并于 **`mode=improve`（2026-10-26，基线 `66197f2`）** 依据 W0 实测现实改口径：D2-7=A（W1 双侧重写 ⇒ 每批拆为 en/zh 两个 ≤30 min 子任务）、D2-8=A（来源白名单收窄）、D2-6=A（169 个拉丁名 id 补中文首选名）、批清单以 `.github/plans/t4973-batches/README.md` 为唯一权威（**119 批 / 2348 ids**）。
+> 🔵 **状态：Phase 0（W0）✅ DONE（2026-10-26，收尾 commit `b175bab`）；D2-1 ~ D2-8 全部已裁决（选项 A，见文末《待裁决落地记录》）⇒ Phase 1（W1）**进行中**（2026-10-27 16:29 实测〔注：上一会话在该行记 `16:44`，与系统时钟实测不符，疑为上一会话时点笔误；其自身日志小节按「不篡历史时点」保留原样〕：`w1_a` **4/4 批 ✅**；`w1_b` **13/34 批**（`b01` ✅ commits `b578047`+`f58f0ff`；`b02` ✅ commits `7024be1`+`e67af8c`；`b03` ✅ commits `45313cc`+`0a8e722`；`b04` ✅ commits `c6b3529`+`5e91052`；`b05` ✅ commits `988eab9`+`d391298`；`b06` ✅ commits `4cfb390`+`83387f2`；`b07` ✅ commits `987d132`+`242f525`；`b08` ✅ commits `29c0e70`+`4045fc1`；`b09` ✅ commits `d6e135d`+`76364c0`〔原记 `本节`，2026-10-27 补记实录哈希〕；`b10` ✅ commits `79b48ac`+`397869b`；`b11` ✅ commits `2f4e184`+`6c88f94`；`b12` ✅ commits `89bbde9`+`c2bc22a`；`b13` ✅ commits `e1a13c3`+`<b13-ZH 待下一批同步行回填>`；**`B07–B11` 组满 5 批，D2-4 独立验收 = PASS**（全 100 id / 200 行逐行复核，blocking 0；W0 证据束 `--compare` exit 0 / status=pass，见文末「D2-4 第三组」条））；`w1_c` / W2 / W3 未开始；off-plan `--self-test` 重锚已完成 `471ab41`；**`B02–B06` 组 D2-4 独立验收 = PASS**（首轮 FAIL 1 行 `current-lead` en 无据 `superconducting`，已最小返工 1 行并复跑四项门禁全 exit 0；返工后 W0 证据束 `--compare` **exit 0 / status=pass**，见文末 Bookkeeping 纠正第 7、8 条）。** — 本文件由 Plan Architect `mode=refine` 基于 PM 任务 **#T-4973** 的既有批次细化而来，并于 **`mode=improve`（2026-10-26，基线 `66197f2`）** 依据 W0 实测现实改口径：D2-7=A（W1 双侧重写 ⇒ 每批拆为 en/zh 两个 ≤30 min 子任务）、D2-8=A（来源白名单收窄）、D2-6=A（169 个拉丁名 id 补中文首选名）、批清单以 `.github/plans/t4973-batches/README.md` 为唯一权威（**119 批 / 2348 ids**）。
 > W0 执行记录见文末 `## Execution Log` §「W0 数据完整性修复 + 门禁加严 — T0.4 ~ T0.13」；门禁 RED→GREEN 可复跑证据见 `.github/plans/t4973-batches/red-green.md`。
 > ~~所有基线数字为 **2026-10-26 在 HEAD `3cb3837`** 实测~~ → **W0 后的权威数字以文末「W0 收口数字」为准**（覆盖率 47.11%、W2 738、W3a 854 等）。
 
@@ -1740,6 +1740,23 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
    - **evidence 目录**：`/home/gw/opt/fusion-terms/artifacts/registry-evidence/20261027T043934Z-2893528`；**`manifest.json` SHA256** = `03b91a62d2fa0ff4007dff538d32325d2fceea494d017250c767947d17baa72f`。
    - **deferred warnings（w0 profile 下延后的 W1 指标，不构成 W0 failure）**：`definitions.en_boilerplate=559`、`definitions.concepts_without_defs=10`（baseline 与 batch 两侧同值 ⇒ `same_structured_result=true`）。
    - **口径说明**：返工**前**亦跑过一次同命令（`20261027T043146Z-2778499`，manifest SHA256 `229d30da7c74247eeaea97f4ffece755026213f91d32283e2c538587ea100d9e`，同样 exit 0 / pass）；因该束对应 `current-lead` 修复**前**的数据，**以返工后的 `20261027T043934Z-2893528` 为本组权威证据束**。未使用 `--profile all`，未削弱任何门禁。
+
+#### T1.B13-EN / T1.B13-ZH — ✅ DONE（2026-10-27）commits `e1a13c3`（-EN）+ 本批 log commit（-ZH）
+
+- 批次：`.github/plans/t4973-batches/w1_b_b13.ids`（**20** id）；**W1-B 组第 13 批**（34 批 / 679 id）⇒ 属 D2-4 的 `B12–B16` 组第 2 批（本组抽检 + W0 证据束由父代理统一执行，本批不代替）
+- **W1-B 分型**（同 B01–B12 实测）：双侧改写前皆为占位模板（en **20/20** `def_boilerplate_regex`、zh **20/20** `聚变/核工程术语`），双侧 source 皆 `internal:dict-improvements` ⇒ 依 **D2-8=A** 以 `notes` 为唯一依据 ⇒ source 一律 **`corpus`**
+- **`-EN`**（commit `e1a13c3`）：20 条 `en` 行改写
+  - 门禁：`--lang en` → **exit 0** `verdict=PASS`（改写前 RED：**exit 1**，`red_en_before.txt`）；`validate_registry --terms-dir terms` → **exit 0**；`pytest -q` → **exit 0**
+  - en 最短 **44** / 最长 **75**；套话 **0/20**；**全 ASCII（0/20 含 >127 字符）**；source **20/20** `corpus`
+  - **无据属性自检：首轮后逐条对照 notes 返工 12 行**（去掉 notes 未出现的 `inertial confinement fusion` 扩写（改用 notes 原缩写 `ICF`）、`instability-driven`、`resulting`、`caused`（×3）、`emitted`、`forms`、`formed`、`ones`、`fields`，改为 notes 逐字等价表达）；最终 **0 例** notes 之外的数量 / 材料 / 温度 / 效率 / 百分比 / 年份限定（对照既有返工教训 B02 `modular-coil`、B05 `current-lead` 的无据 `superconducting`、B07 `heat-exchanger` 的无据 `two`）
+- **`-ZH`**（本批 log commit）：20 条 `zh` 行由模板改写为真实释义（与同 id 已提交 en **语义等价**，依据 = notes + en；source **20/20** `corpus`）
+  - 门禁：`--lang zh` → **exit 0**（改写前 RED：**exit 1**，`red_zh_before.txt`）；`--lang both`（批收口）→ **exit 0**；`validate_registry` → **exit 0**；`pytest -q` → **exit 0**
+  - zh 最短 **16** / 最长 **27**；模板残留 **0/20**；`指“en”` **0/20**；source **20/20** `corpus`；**20/20** 以该 concept `preferred_zh` 原形起句（含 `捕食-被捕食振荡`）
+  - **恢复性修复 0 行**：本批 zh 侧既有行皆为模板（无真实释义）⇒ 无「既有 zh 与 en 语义冲突」情形
+  - 迁移：`internal:dict-improvements` → **3948**；`corpus` → **569**；audit `en_boilerplate` → **419**；W1 全域 zh 模板余 **391 → 371** 行（口径：`w1_a`+`w1_b`+`w1_c` id 子集内 `聚变/核工程术语` 残留；**非**全表计数）
+- **能失败证明**：改前 RED 双侧均 **exit 1**（真实语料，非人工构造）；证据留存 `/tmp/opencode/t4973-b13/`
+- **不变量 / 全量门禁**：`data_rows` 恒 **6132**；`git diff --numstat` = `20/20`（-EN，仅 `en` 行）+ `20/20`（-ZH，仅 `zh` 行），改动 (id,lang) 对恰为本批 id；audit `w0_is_clean = true`；`en_boilerplate **419**`、`concepts_without_defs 10`（W1-C 待办，非本批范围）
+- **下一步**：`w1_b_b14` 起串行推进；**W1-A + W1-B B01–B13 累计迁移**：`en_boilerplate` 746 → **419**（−327）、`corpus` 48 → **569**
 
 ## Read-only registry evidence handoff gate
 
