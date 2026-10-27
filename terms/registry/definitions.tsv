@@ -5248,7 +5248,7 @@ rayleigh-taylor-instability	zh	当密度不同的流体界面被加速时在该�
 re-erosion	en	Fusion/nuclear engineering term referring to 're-erosion' in technical context.	internal:dict-improvements
 re-erosion	zh	聚变/核工程术语，指“再侵蚀”这一技术概念。	internal:dict-improvements
 reactivity	zh	聚变/核工程术语，对应英文“reactivity, ρ”。	internal:dict-improvements
-reactor	en	A device that can sustain and control a self-sustaining fusion reaction, also called a fusion reactor.	GB/T-4960.9
+reactor	en	A large structure used to produce nuclear energy, also called a nuclear reactor.	https://www.oxfordlearnersdictionaries.com/definition/english/reactor
 reactor	zh	堆是能维持和控制自持聚变反应的装置，又称聚变堆。	GB/T-4960.9
 real-time-control	en	Feedback control system that operates on plasma timescales.	corpus
 real-time-control	zh	在等离子体时间尺度上运行的反馈控制系统。	corpus
