@@ -16,7 +16,7 @@ files_sha256:
   artifacts/translation_dict.json: "auto (执行时实测)"
 ---
 
-> 🔵 **状态：Phase 0（W0）✅ DONE（2026-10-26，收尾 commit `b175bab`）；D2-1 ~ D2-8 全部已裁决（选项 A，见文末《待裁决落地记录》）⇒ Phase 1（W1）**进行中**（2026-10-27 11:25 实测：`w1_a` **4/4 批 ✅**；`w1_b` **2/34 批**（`b01` ✅ commits `b578047`+`f58f0ff`；`b02` ✅ commits `7024be1`+本节）；`w1_c` / W2 / W3 未开始；off-plan `--self-test` 重锚已完成 `471ab41`）。** — 本文件由 Plan Architect `mode=refine` 基于 PM 任务 **#T-4973** 的既有批次细化而来，并于 **`mode=improve`（2026-10-26，基线 `66197f2`）** 依据 W0 实测现实改口径：D2-7=A（W1 双侧重写 ⇒ 每批拆为 en/zh 两个 ≤30 min 子任务）、D2-8=A（来源白名单收窄）、D2-6=A（169 个拉丁名 id 补中文首选名）、批清单以 `.github/plans/t4973-batches/README.md` 为唯一权威（**119 批 / 2348 ids**）。
+> 🔵 **状态：Phase 0（W0）✅ DONE（2026-10-26，收尾 commit `b175bab`）；D2-1 ~ D2-8 全部已裁决（选项 A，见文末《待裁决落地记录》）⇒ Phase 1（W1）**进行中**（2026-10-27 11:25 实测：`w1_a` **4/4 批 ✅**；`w1_b` **3/34 批**（`b01` ✅ commits `b578047`+`f58f0ff`；`b02` ✅ commits `7024be1`+`e67af8c`；`b03` ✅ commits `45313cc`+本节）；`w1_c` / W2 / W3 未开始；off-plan `--self-test` 重锚已完成 `471ab41`）。** — 本文件由 Plan Architect `mode=refine` 基于 PM 任务 **#T-4973** 的既有批次细化而来，并于 **`mode=improve`（2026-10-26，基线 `66197f2`）** 依据 W0 实测现实改口径：D2-7=A（W1 双侧重写 ⇒ 每批拆为 en/zh 两个 ≤30 min 子任务）、D2-8=A（来源白名单收窄）、D2-6=A（169 个拉丁名 id 补中文首选名）、批清单以 `.github/plans/t4973-batches/README.md` 为唯一权威（**119 批 / 2348 ids**）。
 > W0 执行记录见文末 `## Execution Log` §「W0 数据完整性修复 + 门禁加严 — T0.4 ~ T0.13」；门禁 RED→GREEN 可复跑证据见 `.github/plans/t4973-batches/red-green.md`。
 > ~~所有基线数字为 **2026-10-26 在 HEAD `3cb3837`** 实测~~ → **W0 后的权威数字以文末「W0 收口数字」为准**（覆盖率 47.11%、W2 738、W3a 854 等）。
 
@@ -1481,6 +1481,29 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 - **逐行依据留痕（物理期间无凭空扩写）**：20 条 en 释义逐条为 `notes` 的直接展开，未引入 notes 之外的实体/数值/项目名；`hohlraum` 的 `high-Z`、`fuel-capsule` 的 `DT ice / ablator shell`、`island-divertor` 的 `W7-X`、`rayleigh-taylor-instability` 的「加速界面 + ICF 内爆劣化」、`compact-toroid` 的「FRC + spheromak」均**逐字或等价见于 notes**；安防/物理疑点 **0**
 - **不变量 / 全量门禁**：`data_rows` 恒 **6132**（`registry OK: 3076 concepts, 10249 aliases, 3168 evidence rows, 6132 definitions`）；列分布恒 `{4}`；`git diff --numstat` = `20/20`（-EN）+ `20/20`（-ZH），改动 (id,lang) 对恰为本批 id（-EN 全 `en`、-ZH 全 `zh`），en 行在 -ZH 阶段改动数 **0**；`validate_registry` / `pytest -q` → 全部 **exit 0**
 - **下一步**：`w1_b_b03` 起串行推进；**D2-4 抽检按 §Phase 1 说明在 `w1_b` 第 5 批（B05）完成后触发**（W1-A 4 批 + B01/B02 已达 6 批，B01 日志所记 B04 为笔误口径，以 §Phase 1 正文 `B05` 为准）〔2026-10-27 注记：**本行的 `B05` 口径亦已废弃** —— 原 §Phase 1 正文的 `B05/B10/…` 列同样漏计 W1-A 4 批；定稿见 §「会话恢复 — Bookkeeping 纠正」第 3 条〕
+
+#### T1.B03-EN / T1.B03-ZH — ✅ DONE（2026-10-27 11:47）commits `45313cc`（-EN）+ 本节（-ZH）
+
+- 批次：`.github/plans/t4973-batches/w1_b_b03.ids`（**20** id）；**W1-B 组第 3 批**（34 批 / 679 id）
+- **W1-B 分型**（同 B01/B02 实测）：`en`/`zh` 双侧皆为占位模板，双侧 source 均 `internal:dict-improvements` ⇒ 依 **D2-8=A** 以 `concepts.tsv` 第 7 列 `notes`（仓内语料）为唯一依据 ⇒ source 一律 **`corpus`**
+- **`-EN`**（commit `45313cc`）：20 条 `en` 行改写
+  - 门禁：`--ids-file …/w1_b_b03.ids --expect 20 --lang en` → **exit 0** `verdict=PASS`（改写前 RED：**exit 1**，20×`def_boilerplate_regex` + 20×`def_source_unknown`，属设计内红）
+  - en 最短 **55** / 最长 135；套话 **0/20**；全 ASCII；source **20/20** `corpus`
+  - 迁移：`internal:dict-improvements` 4388 → **4368**；`corpus` 129 → **149**；audit `en_boilerplate` 639 → **619**
+- **`-ZH`**（本节）：20 条 `zh` 行由模板改写为真实释义（与同 id 已提交 en **语义等价**，依据 = notes + en；source **20/20** `corpus`）
+  - 门禁：`--lang zh` → **exit 0**（改写前 RED：**exit 1**，20×`def_boilerplate_mark` + 20×`def_source_unknown`）；`--lang both`（批收口）→ **exit 0**
+  - zh 最短 **16** / 最长 **47**（均值 26.4）；模板 0/20；`指“en”` 0/20；source **20/20** `corpus`
+  - 迁移：`internal:*` 4368 → **4348**；`corpus` 149 → **169**；audit `en_boilerplate` **619 → 619**（en 行零改动）
+  - `pytest -q` → **exit 0**（批收口）
+  - **书写约定沿用**：zh 同位素用上标式（`¹¹B`、`α`），与 T1.A3 批确立约定一致；en 侧用 ASCII 形式
+- **本批自校 1 处**（commit 前完成，未扩大改动面/不变量）：`magnetic-nozzle` en 初稿含 `propulsion system exhaust` 措辞冗长，按 notes「for DEC or propulsion exhaust」收束为 `for direct energy conversion or for the exhaust of a propulsion system`（不引入 notes 之外的实体/数值/项目名）
+- **能失败证明**（仓外副本 + `--repo-root`，**零触碰仓内文件**；未变异对照 `ctrl` exit 0）
+  - en 侧：`def_boilerplate_regex`（复原套话）／`def_len_en`（截断为 `short.`）／`def_source_unknown`（写 `internal:dict-improvements`）→ 三者均 **exit 1**
+  - zh 侧：`def_boilerplate_mark`（复原 `聚变/核工程术语…` 模板）／`def_len_zh`（截断为 `太短。`）→ 两者均 **exit 1**
+  - 证据留存：`/tmp/opencode/t4973-b03/`（`red_{en,zh}_before.txt`、`green_{en,zh,both}.txt`、`mutlog_{m1,m2,m3,m1z,m2z,ctrl}.txt`、`mutlog_summary.txt`）
+- **逐行依据留痕**：20 条 en/zh 释义逐条为 `notes` 的直接展开（如 `cryogenic-target` 的 `18 K`、`spin-polarized-fuel` 的 `~50%`、`neutral-beam-driven-frc` 的 `TAE/ENN`、`high-beta` 的 `β` 均为 notes 逐字内容）；`high-beta` 的「β = 等离子体压强与磁压之比」为教科书本位释义（类别/功能级），未引入 notes 之外的项目名/数值；物理与安防疑点 **0**
+- **不变量 / 全量门禁**：`data_rows` 恒 **6132**（`registry OK: 3076 concepts, 10249 aliases, 3168 evidence rows, 6132 definitions`）；列分布恒 `{4}`；`git diff --numstat` = `20/20`（-EN）+ `20/20`（-ZH），改动 (id,lang) 对恰为本批 id（-EN 全 `en`、-ZH 全 `zh`），`en` 行在 `-ZH` 阶段改动数 **0**；`validate_registry` / `pytest -q` → 全部 **exit 0**
+- **下一步**：`w1_b_b04` 起串行推进；**D2-4 抽检 cadence** 以 §「会话恢复 — Bookkeeping 纠正」第 3 条为准（本批属 `B02–B06` 组）
 
 #### 会话收口 — 优雅中断（**预算依据为实测，非"感知"**）— 2026-10-26 21:37
 
