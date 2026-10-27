@@ -1854,7 +1854,7 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 - **本组进度（D2-4 `B17–B21` 组）**：本批完成后 **1/5 批**（`b17`）；`b21` 完成后由**父代理**统一执行本组 D2-4 抽检 + W0 证据束 `--compare`
 - **下一步**：`w1_b_b18` 起串行推进；**W1-A + W1-B B01–B17 累计迁移**：`en_boilerplate` 746 → **339**（−407 = A 组 67 + B 组 B01–B17 340）、`corpus` 48 → **729**
 
-#### T1.B18 — ⛔ BLOCKED（2026-10-27 19:30，#T-4973；**本批零数据改动、无数据 commit**）
+#### T1.B18 — ⛔ BLOCKED（2026-10-27 19:25〔= 本条记录 commit 的实际提交时点，`git show -s --format=%ci` 实测〕，#T-4973；**本批零数据改动、无数据 commit**）
 
 - 批次：`.github/plans/t4973-batches/w1_b_b18.ids`（**20** id）；**W1-B 组第 18 批**（34 批 / 679 id）⇒ 属 D2-4 的 `B17–B21` 组第 2 批
 - **阻断原因（无据 ⇒ 按用户口径 BLOCKED，不填字）**：本批 20 id 中 **9 个**的 `concepts.tsv` `notes` **不是释义而是元注记** —— 逐字 `Generic academic glue word for translation`：
@@ -1874,6 +1874,7 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 - **影响面（同判据实测，全 W1 批次扫描）**：glue id **只落在 `b18`（9 个）与 `b19`（7 个：`decay`、`cooling`、`damage`、`sealing`、`reactor`、`steel`、`wall`；其中除 `reactor` 外 6 个在 D2-2 清单内）**；**`b20`–`b34` 及 `w1_a` / `w1_c` 不含任何 glue id** ⇒ **B19 同因受阻**，其 13 个非 glue id 不受影响；其余批次可照常串行推进（见 `/tmp/opencode/t4973-b18/glue-scope.txt`）。
 - **能失败证明（RED，改前态）**：`--lang en` → **exit 1**；`--lang zh` → **exit 1**（真实语料，非人工构造）；证据 `/tmp/opencode/t4973-b18/{red_en_before.txt, red_zh_before.txt, glue-scope.txt}` —— 其中 RED 的成因集合同时包含「9 个无据 glue id」与「11 个本可改写的模板 id」，故 **RED 存在不等于本批可 GREEN**。
 - **未触碰**：`terms/registry/*` 零改动（`git status` 干净）；`concepts.tsv` / `tools` / 阈值一律未改；本会话**未** `push`、**未** amend、**未** 任何 hook 旁路。
+- **残留风险扫描（read-only，供父代理规划恢复；判据 = `notes` 匹配 `generic academic glue word|todo|tbd|placeholder|空`）**：全 **W1-B（34 批 / 679 id）**扫描 → **命中 16 条，且全部落在 `b18`（9）/ `b19`（7）**；**`b20`–`b34` 命中 0**（证据 `/tmp/opencode/t4973-b18/residual-note-risk-scan.txt`）⇒ 除 `b18`/`b19` 外，其余批次的 `notes` **均具定义性内容**，可按 B17 同流程无阻断串行推进。
 
 ## Read-only registry evidence handoff gate
 
