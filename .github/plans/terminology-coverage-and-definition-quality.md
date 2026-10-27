@@ -2013,6 +2013,14 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
   - C 中「不接受百科/词典级来源」的**范围经本轮选择修正为**：**Wikipedia / Wiktionary 仍不接受**（仅可作检索线索，**不得**写入终态 `source`）；**出版社词典（OUP / CUP）在「通用词」上接受**，条件是 **① 义项匹配 `preferred_zh` 的领域义 + ② 保留原句定位（真实原句逐字 + URL + 义项序号/小节）**；**核工程词优先专业来源**（出版社词典仅在专业来源不可得时作为次级依据，且须在来源表 `sense_slot` 标注）。
 - 因此本计划**撤回**此前台账「用户裁决 C：…URL 全部 HTTP 200…」所隐含的「已可接受」含义：C + 本轮授权的执行结果须按 **§4 来源政策**重做并按 **§6 验收标准**重新签收。
 
+- **⛔ IMPR-3 追加真实选择（2026-10-27，operational，逐字；优先于本节上一条的网络 AC 表述）**：父代理经 `question` 工具有效呈递后，用户**显式选择「接受留存原文及 curl 证据」**。据此本计划的**网络 AC 修正为三条**：
+  1. **来源可达性以 `curl` 真实探测 HTTP 200 为准**，并**留存抓取原文**（本轮 B18R/B19R 的 OUP 页面留存于 `/tmp/opencode/t4973-b19r/ox_*.html`）；
+  2. 每条 glue 行须做**逐句语义核验**：义项须与 `preferred_zh` 的领域义对齐，且定义文本逐句可回溯到留存原句 / 仓内词表原句；
+  3. 门禁 `scripts/registry_batch_verify.py --check-urls` 以 **`python-urllib` 默认 UA** 请求 OUP / CUP 返回 **HTTP 403**（反爬），**记为本轮已知问题**：**不以 403 反判来源无效**，**也不得为此修改门禁代码**（§3「源码 gate 不变」继续有效）。
+  - **三要素**：主体 = **用户**；载体/时点 = 2026-10-27 经父代理 `question` 的**真实选择**（逐字「接受留存原文及 curl 证据」）；范围 = 上述 1/2/3。
+  - **边界（不得越界）**：本修正**只**覆盖「网络探测口径」，**不改** §4 的来源等级、`source` 白名单与「Wikipedia / Wiktionary 不接受」；`--check-urls` 的 urllib 403 **不得**被记为 PASS，只能记为**已知问题**。
+  - **机械命令与签收的关系（重申）**：`registry_batch_verify.py`（含 `--check-urls`）、`validate_registry`、`pytest` 的 `exit 0` **只是必要条件**；任一机械命令**未通过**（exit≠0 / 403 / SKIPPED-NET / exit 124）**不得写 PASS**，须如实记录实际输出并按上述三条 AC 另行核验来源与语义。
+
 ### 3. 明确不予采信的推论（防止误判回流）
 
 | # | 被提出的推论 | 判定 | 依据 |
@@ -2039,7 +2047,7 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 | `sense_slot` | 本轮采用的**义项**（须与 `preferred_zh` 的领域义一致） | 非空；禁止取与该首选名冲突的义项（「性能」不得取「执行过程」、「密封」不得取「密封件」） |
 | `quote_verbatim` | **真实原文**（逐字摘录，**非**转述） | 非空且长度 ≥ 20 字符 |
 | `source_locator` | URL 或 `internal:<file>:<line>`，**并附页码/条款/小节** | 非空 |
-| `probe_status` | `PROBE-200` / `UNVERIFIED-URL` / `N/A(internal)` | 三值之一 |
+| `probe_status` | 取值：`PROBE-200(curl 浏览器 UA)/HTTP-403(python-urllib 默认 UA)`（外部 URL **双路径分别记录**，IMPR-3；403 = 已知问题，**非**来源无效） / `PROBE-200` / `UNVERIFIED-URL` / `N/A(internal)` | 非空；外部 URL 行**须分别**记录 curl 与 urllib 两条路径结果 |
 | `defect_fixed` | 修复的缺陷编号（`D1`/`D2`/`D3`/`D4`/`-`） | 非空 |
 
 - **不预设任何未核来源**：父代理 draft `/tmp/opencode/t4973-glue-sources/glue-sources.tsv` **不是证据**，仅可作为「待核候选」；每行须重新走「本地优先 → 权威外部」搜索，未核到 = `UNSOURCED`，**不得填字**。
