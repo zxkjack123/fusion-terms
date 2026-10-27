@@ -3861,7 +3861,7 @@ coolant-chemistry	zh	冷却剂化学是对增殖包层冷却剂的化学控制�
 coolant-purification	en	Fusion/nuclear engineering term referring to 'coolant purification' in technical context.	internal:dict-improvements
 coolant-purification	zh	聚变/核工程术语，指“冷却剂纯化”这一技术概念。	internal:dict-improvements
 cooldown	zh	聚变/核工程术语，对应英文“Cooldown”。	internal:dict-improvements
-cooling	en	Removal of heat, usually resulting in a lower temperature or a phase change.	https://en.wikipedia.org/wiki/Cooling
+cooling	en	The act of becoming cool or cooler, or of making somebody or something become cool or cooler.	https://www.oxfordlearnersdictionaries.com/definition/english/cool_2
 cooling	zh	冷却是移走热量、通常导致温度降低或相变的过程。	https://en.wikipedia.org/wiki/Cooling
 cooling-tower	en	A structure that rejects waste heat to the atmosphere.	corpus
 cooling-tower	zh	冷却塔是向大气排放废热的构筑物。	corpus
@@ -3924,7 +3924,7 @@ current-quench	zh	聚变/核工程术语，指“电流猝灭”这一技术概�
 curvature-drift	en	Particle drift caused by magnetic field line curvature.	corpus
 curvature-drift	zh	曲率漂移是由磁力线曲率引起的粒子漂移。	corpus
 d-he3-reaction	en	A controlled fusion reaction between deuterium and helium: D + He-3 -> p + He-4 + 18.4 MeV. Note: because the fuel is not radioactive and does not directly produce neutrons, this reaction has safety and environmental advantages over the D-T reaction, but the fusion conditions required are more demanding.	GB/T-4960.9
-damage	en	Any change in a thing that degrades it away from its initial state.	https://en.wikipedia.org/wiki/Damage
+damage	en	Physical harm caused to something which makes it less useful or valuable.	https://www.oxfordlearnersdictionaries.com/definition/english/damage
 damage	zh	损伤是使物体偏离其初始状态的任何变化。	https://en.wikipedia.org/wiki/Damage
 dangerous-source	zh	聚变/核工程术语，对应英文“dangerous source”。	internal:dict-improvements
 data-pipeline	en	Fusion/nuclear engineering term referring to 'data pipeline' in technical context.	internal:dict-improvements
@@ -3935,7 +3935,7 @@ dd-reaction	en	A fusion reaction between deuterons. Its branches are D + D -> n 
 debye-sheath	en	The transition region formed between an electrically neutral plasma and the solid surface in contact with it. Although the plasma itself is approximately an equipotential region, a strong potential gradient exists inside the plasma sheath, which does not remain electrically neutral; it is also called the sheath.	GB/T-4960.9
 debye-shielding	en	Debye shielding / screening of electric charges in plasma.	corpus
 debye-shielding	zh	德拜屏蔽是等离子体中对电荷的屏蔽。	corpus
-decay	en	The process by which an unstable atomic nucleus loses energy by radiation.	https://en.wikipedia.org/wiki/Radioactive_decay
+decay	en	The process by which a radioactive substance changes to a different form by sending out radiation.	https://www.oxfordlearnersdictionaries.com/definition/english/decay
 decay	zh	衰变是不稳定原子核通过辐射释放能量而转变的过程。	https://en.wikipedia.org/wiki/Radioactive_decay
 decay-chain	en	Fusion/nuclear engineering term referring to 'decay chain' in technical context.	internal:dict-improvements
 decay-chain	zh	聚变/核工程术语，指“衰变链”这一技术概念。	internal:dict-improvements
@@ -5248,7 +5248,7 @@ rayleigh-taylor-instability	zh	当密度不同的流体界面被加速时在该�
 re-erosion	en	Fusion/nuclear engineering term referring to 're-erosion' in technical context.	internal:dict-improvements
 re-erosion	zh	聚变/核工程术语，指“再侵蚀”这一技术概念。	internal:dict-improvements
 reactivity	zh	聚变/核工程术语，对应英文“reactivity, ρ”。	internal:dict-improvements
-reactor	en	A device used to sustain a controlled fission nuclear chain reaction.	https://en.wikipedia.org/wiki/Nuclear_reactor
+reactor	en	A device that can sustain and control a self-sustaining fusion reaction, also called a fusion reactor.	GB/T-4960.9
 reactor	zh	堆是用于维持受控裂变链式反应的装置。	https://en.wikipedia.org/wiki/Nuclear_reactor
 real-time-control	en	Feedback control system that operates on plasma timescales.	corpus
 real-time-control	zh	在等离子体时间尺度上运行的反馈控制系统。	corpus
@@ -5401,7 +5401,7 @@ sdk	en	Fusion/nuclear engineering term referring to 'SDK' in technical context.	
 sdk	zh	聚变/核工程术语，指“SDK”这一技术概念。	internal:dict-improvements
 seabed-disposal	zh	聚变/核工程术语，对应英文“seabed disposal”。	internal:dict-improvements
 sealed-source	zh	聚变/核工程术语，对应英文“sealed source”。	internal:dict-improvements
-sealing	en	A device or material that joins systems together to contain pressure, prevent leakage of fluid, or exclude contamination.	https://en.wikipedia.org/wiki/Seal_(mechanical)
+sealing	en	The action of closing a container, joint or opening tightly so that air, liquid or gas cannot get in or out.	https://www.oxfordlearnersdictionaries.com/definition/english/seal
 sealing	zh	密封是用以连接系统、保持压力、防止流体泄漏或阻止污染的器件或材料。	https://en.wikipedia.org/wiki/Seal_(mechanical)
 secondary-loop	en	The secondary coolant circuit that carries heat to the power conversion system.	corpus
 secondary-loop	zh	二回路是将热量输送到动力转换系统的二次冷却剂回路。	corpus
@@ -5520,7 +5520,7 @@ steam-generator	en	A heat exchanger in which steam is produced from the primary 
 steam-generator	zh	蒸汽发生器是利用一回路冷却剂产生蒸汽的换热器。	corpus
 steam-turbine	en	A turbine driven by steam within the Rankine cycle.	corpus
 steam-turbine	zh	汽轮机是在朗肯循环中由蒸汽驱动的透平。	corpus
-steel	en	An alloy of iron and carbon with improved mechanical properties compared to pure iron.	https://en.wikipedia.org/wiki/Steel
+steel	en	A strong, hard metal that is made of a mixture of iron and carbon.	https://www.oxfordlearnersdictionaries.com/definition/english/steel
 steel	zh	钢是铁与碳的合金，其力学性能优于纯铁。	https://en.wikipedia.org/wiki/Steel
 stellarator-optimization	en	The numerical optimization of three-dimensional stellarator plasma geometry, in which coil or boundary shapes are varied to improve confinement, stability and neoclassical transport.	corpus
 stellarator-optimization	zh	对三维仿星器等离子体几何的数值优化，通过改变线圈或边界形状以改善约束、稳定性与新古典输运。	corpus
@@ -5785,7 +5785,7 @@ volumetric-neutron-source	en	Fusion/nuclear engineering term referring to 'volum
 volumetric-neutron-source	zh	聚变/核工程术语，指“体中子源”这一技术概念。	internal:dict-improvements
 voxel-model	en	Fusion/nuclear engineering term referring to 'voxel model' in technical context.	internal:dict-improvements
 voxel-model	zh	聚变/核工程术语，指“体素模型”这一技术概念。	internal:dict-improvements
-wall	en	A structure and surface that defines an area, carries a load, or provides shelter or security.	https://en.wikipedia.org/wiki/Wall
+wall	en	A long, solid structure that rises straight up from the ground and surrounds, divides or protects an area.	https://www.oxfordlearnersdictionaries.com/definition/english/wall
 wall	zh	壁是界定区域、承受载荷或提供遮蔽与防护的结构与表面。	https://en.wikipedia.org/wiki/Wall
 wall-load	zh	聚变/核工程术语，对应英文“Wall load”。	internal:dict-improvements
 wall-pumping	en	Wall hydrogen absorption causing plasma density decrease.	corpus
