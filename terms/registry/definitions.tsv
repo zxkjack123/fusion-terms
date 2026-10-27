@@ -5249,7 +5249,7 @@ re-erosion	en	Fusion/nuclear engineering term referring to 're-erosion' in techn
 re-erosion	zh	聚变/核工程术语，指“再侵蚀”这一技术概念。	internal:dict-improvements
 reactivity	zh	聚变/核工程术语，对应英文“reactivity, ρ”。	internal:dict-improvements
 reactor	en	A large structure used to produce nuclear energy, also called a nuclear reactor.	https://www.oxfordlearnersdictionaries.com/definition/english/reactor
-reactor	zh	堆是能维持和控制自持聚变反应的装置，又称聚变堆。	GB/T-4960.9
+reactor	zh	堆是用于产生核能的大型结构（装置），又称核反应堆。	https://www.oxfordlearnersdictionaries.com/definition/english/reactor
 real-time-control	en	Feedback control system that operates on plasma timescales.	corpus
 real-time-control	zh	在等离子体时间尺度上运行的反馈控制系统。	corpus
 recombination-radiation	en	The radiation produced when an ion and an electron recombine.	GB/T-4960.9
