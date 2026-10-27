@@ -1505,6 +1505,27 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 - **不变量 / 全量门禁**：`data_rows` 恒 **6132**（`registry OK: 3076 concepts, 10249 aliases, 3168 evidence rows, 6132 definitions`）；列分布恒 `{4}`；`git diff --numstat` = `20/20`（-EN）+ `20/20`（-ZH），改动 (id,lang) 对恰为本批 id（-EN 全 `en`、-ZH 全 `zh`），`en` 行在 `-ZH` 阶段改动数 **0**；`validate_registry` / `pytest -q` → 全部 **exit 0**
 - **下一步**：`w1_b_b04` 起串行推进；**D2-4 抽检 cadence** 以 §「会话恢复 — Bookkeeping 纠正」第 3 条为准（本批属 `B02–B06` 组）
 
+#### T1.B04-EN / T1.B04-ZH — ✅ DONE（2026-10-27 11:55）commits `c6b3529`（-EN）+ 本节（-ZH）
+
+- 批次：`.github/plans/t4973-batches/w1_b_b04.ids`（**20** id）；**W1-B 组第 4 批**（34 批 / 679 id）
+- **W1-B 分型**（同 B01–B03 实测）：`en`/`zh` 双侧皆为占位模板，双侧 source 均 `internal:dict-improvements` ⇒ 依 **D2-8=A** 以 `concepts.tsv` 第 7 列 `notes` 为唯一依据 ⇒ source 一律 **`corpus`**
+- **`-EN`**（commit `c6b3529`）：20 条 `en` 行改写
+  - 门禁：`--lang en` → **exit 0** `verdict=PASS`（改写前 RED：**exit 1**）
+  - en 最短 **43** / 最长 98（均值 69.5）；套话 **0/20**；全 ASCII；source **20/20** `corpus`
+  - 迁移：`internal:dict-improvements` 4348 → **4328**；`corpus` 169 → **189**；audit `en_boilerplate` 619 → **599**
+- **`-ZH`**（本节）：20 条 `zh` 行由模板改写为真实释义（与同 id 已提交 en **语义等价**，依据 = notes + en；source **20/20** `corpus`）
+  - 门禁：`--lang zh` → **exit 0**（改写前 RED：**exit 1**）；`--lang both`（批收口）→ **exit 0**
+  - zh 最短 **12** / 最长 30（均值 20.2）；模板 0/20；`指“en”` 0/20；source **20/20** `corpus`
+    - 最短两条 = `hcll` / `hcpb`（各 12 字：「欧盟的氦冷锂铅包层方案。」/「欧盟的氦冷球床包层方案。」）——**恰为门禁下限 12**，与 notes 逐字对应（`European helium-cooled … blanket concept`），不凑长度（同 T1.A1 `plasma-gun` 口径）
+  - 迁移：`internal:*` 4328 → **4308**；`corpus` 189 → **209**；audit `en_boilerplate` **599 → 599**（en 行零改动）
+  - `pytest -q` → **exit 0**（批收口）
+- **本批语料分型观察**：本批 20 个 id 中 `hccb`/`wccb`（中国参考设计）与 `hcll`/`hcpb`/`dcll`（欧盟方案）的**归属信息**（「中国参考设计」/「European」）**逐字见于 notes**，故保留；未引入 notes 之外的装置名/数值
+- **能失败证明**（仓外副本 + `--repo-root`，**零触碰仓内文件**；未变异对照 `ctrl` exit 0）
+  - en 侧：`def_boilerplate_regex`（复原套话）→ **exit 1**；zh 侧：`def_boilerplate_mark`（复原模板）→ **exit 1**
+  - 证据留存：`/tmp/opencode/t4973-b04/`（`red_{en,zh}_before.txt`、`green_{en,zh,both}.txt`、`mutlog_{m1,m1z,ctrl}.txt`、`validate_{en,zh}.txt`、`pytest_{en,zh}.txt`）
+- **不变量 / 全量门禁**：`data_rows` 恒 **6132**；列分布恒 `{4}`；`git diff --numstat` = `20/20`（-EN）+ `20/20`（-ZH），改动 (id,lang) 对恰为本批 id；`validate_registry` / `pytest -q` → 全部 **exit 0**
+- **下一步**：`w1_b_b05` 起串行推进；本批属 D2-4 cadence 的 `B02–B06` 组（见 §「会话恢复 — Bookkeeping 纠正」第 3 条）
+
 #### 会话收口 — 优雅中断（**预算依据为实测，非"感知"**）— 2026-10-26 21:37
 
 - **`[CTX: est≈140k, budget=262144, reason=硬信号（本会话 compaction 事件 6 次，且 harness 持续裁剪工具结果与推理）]`**
