@@ -17,7 +17,7 @@ files_sha256:
   artifacts/translation_dict.json: "auto (执行时实测)"
 ---
 
-> 🔵 **状态：Phase 0（W0）✅ DONE（2026-10-26，收尾 commit `b175bab`）；D2-1 ~ D2-8 全部已裁决（选项 A，见文末《待裁决落地记录》）⇒ Phase 1（W1）**进行中**（2026-10-27 16:29 实测〔注：上一会话在该行记 `16:44`，与系统时钟实测不符，疑为上一会话时点笔误；其自身日志小节按「不篡历史时点」保留原样〕：`w1_a` **4/4 批 ✅**；`w1_b` **19/34 批**（2026-10-27 19:21 本会话实测〔时点以本节日志「T1.B17」条为凭〕：`b17` ✅ commits `5c28236`（-EN）+ `2fda643`（-EN 保真修订，独立 commit）+ `<b17-ZH 待父代理回填>`（-ZH + 日志）；`b01` ✅ commits `b578047`+`f58f0ff`；`b02` ✅ commits `7024be1`+`e67af8c`；`b03` ✅ commits `45313cc`+`0a8e722`；`b04` ✅ commits `c6b3529`+`5e91052`；`b05` ✅ commits `988eab9`+`d391298`；`b06` ✅ commits `4cfb390`+`83387f2`；`b07` ✅ commits `987d132`+`242f525`；`b08` ✅ commits `29c0e70`+`4045fc1`；`b09` ✅ commits `d6e135d`+`76364c0`〔原记 `本节`，2026-10-27 补记实录哈希〕；`b10` ✅ commits `79b48ac`+`397869b`；`b11` ✅ commits `2f4e184`+`6c88f94`；`b12` ✅ commits `89bbde9`+`c2bc22a`；`b13` ✅ commits `e1a13c3`+`be37b76`；`b14` ✅ commits `fd25fd2`+`4cffa2e`；`b15` ✅ commits `53d9949`+`b8c6ab2`；`b16` ✅ commits `88004e8`+`2058705`；**`B12–B16` 组满 5 批，D2-4 独立验收 = PASS**（全 100 id / 200 行逐行复核，blocking 0；W0 证据束 `--compare` exit 0 / status=pass，见文末「D2-4 第四组」条）；**`B07–B11` 组满 5 批，D2-4 独立验收 = PASS**（全 100 id / 200 行逐行复核，blocking 0；W0 证据束 `--compare` exit 0 / status=pass，见文末「D2-4 第三组」条））；`b18` ⚠️ **WRITTEN / NOT ACCEPTED（来源+语义验收 FAIL，待返工）** commits `8a42dca`（-EN）+ `2393c47`（-ZH + 日志）〔原 ⛔ BLOCKED；2026-10-27 **用户裁决 C（IMPR-2 修正解读）**：C = **先穷尽本地来源、再补权威外部依据**，**且不授权降低权威要求、不改工作集验收**；父代理改以 Wikipedia/Wiktionary 级 draft（`/tmp/opencode/t4973-glue-sources/glue-sources.tsv`）定稿 9 个 glue id ⇒ **来源权威性与义项均不达验收，判 FAIL**。**此前台账记的 `✅ DONE` 仅表示「已写入」，不等于 accepted**；见 §「T1.B18 / T1.B19 返工（IMPR-2）」〕；`b19` ⚠️ **WRITTEN / NOT ACCEPTED（同因 FAIL，待返工）** commits `c213a94`（-EN）+ `08f8901`（-ZH + 日志）〔原同因受阻（7 个 glue id：`decay`/`cooling`/`damage`/`sealing`/`reactor`/`steel`/`wall`）；**用户裁决 C 修正解读同 B18**；7 个 glue id 同判 FAIL，13 个非 glue id 中 4 个 notes 短于门禁下限者列为同批复核项；见 §「T1.B18 / T1.B19 返工（IMPR-2）」〕；**D2-4 第五组（`B17–B21`）验收暂停**（须待 B18/B19 返工后再跑，不得先行判 PASS）；**`w1_c` / W2 / W3 未开始**；off-plan `--self-test` 重锚已完成 `471ab41`；**`B02–B06` 组 D2-4 独立验收 = PASS**（首轮 FAIL 1 行 `current-lead` en 无据 `superconducting`，已最小返工 1 行并复跑四项门禁全 exit 0；返工后 W0 证据束 `--compare` **exit 0 / status=pass**，见文末 Bookkeeping 纠正第 7、8 条）。** — 本文件由 Plan Architect `mode=refine` 基于 PM 任务 **#T-4973** 的既有批次细化而来，并于 **`mode=improve`（2026-10-26，基线 `66197f2`）** 依据 W0 实测现实改口径：D2-7=A（W1 双侧重写 ⇒ 每批拆为 en/zh 两个 ≤30 min 子任务）、D2-8=A（来源白名单收窄）、D2-6=A（169 个拉丁名 id 补中文首选名）、批清单以 `.github/plans/t4973-batches/README.md` 为唯一权威（**119 批 / 2348 ids**）。
+> 🔵 **状态：Phase 0（W0）✅ DONE（2026-10-26，收尾 commit `b175bab`）；D2-1 ~ D2-8 全部已裁决（选项 A，见文末《待裁决落地记录》）⇒ Phase 1（W1）**进行中**（2026-10-27 16:29 实测〔注：上一会话在该行记 `16:44`，与系统时钟实测不符，疑为上一会话时点笔误；其自身日志小节按「不篡历史时点」保留原样〕：`w1_a` **4/4 批 ✅**；`w1_b` **19/34 批**（2026-10-27 19:21 本会话实测〔时点以本节日志「T1.B17」条为凭〕：`b17` ✅ commits `5c28236`（-EN）+ `2fda643`（-EN 保真修订，独立 commit）+ `<b17-ZH 待父代理回填>`（-ZH + 日志）；`b01` ✅ commits `b578047`+`f58f0ff`；`b02` ✅ commits `7024be1`+`e67af8c`；`b03` ✅ commits `45313cc`+`0a8e722`；`b04` ✅ commits `c6b3529`+`5e91052`；`b05` ✅ commits `988eab9`+`d391298`；`b06` ✅ commits `4cfb390`+`83387f2`；`b07` ✅ commits `987d132`+`242f525`；`b08` ✅ commits `29c0e70`+`4045fc1`；`b09` ✅ commits `d6e135d`+`76364c0`〔原记 `本节`，2026-10-27 补记实录哈希〕；`b10` ✅ commits `79b48ac`+`397869b`；`b11` ✅ commits `2f4e184`+`6c88f94`；`b12` ✅ commits `89bbde9`+`c2bc22a`；`b13` ✅ commits `e1a13c3`+`be37b76`；`b14` ✅ commits `fd25fd2`+`4cffa2e`；`b15` ✅ commits `53d9949`+`b8c6ab2`；`b16` ✅ commits `88004e8`+`2058705`；**`B12–B16` 组满 5 批，D2-4 独立验收 = PASS**（全 100 id / 200 行逐行复核，blocking 0；W0 证据束 `--compare` exit 0 / status=pass，见文末「D2-4 第四组」条）；**`B07–B11` 组满 5 批，D2-4 独立验收 = PASS**（全 100 id / 200 行逐行复核，blocking 0；W0 证据束 `--compare` exit 0 / status=pass，见文末「D2-4 第三组」条））；`b18` ⚠️ **WRITTEN / NOT ACCEPTED（来源+语义验收 FAIL，待返工）** commits `8a42dca`（-EN）+ `2393c47`（-ZH + 日志）〔原 ⛔ BLOCKED；2026-10-27 **用户裁决 C（IMPR-2 修正解读）**：C = **先穷尽本地来源、再补权威外部依据**，**且不授权降低权威要求、不改工作集验收**；**2026-10-27 本轮用户经 `question` 选择「接受出版社词典（推荐）」⇒ 通用词 OUP/CUP **匹配义项 + 原句定位**可接受、核工程词优先专业来源（见返工节 §2）**；父代理改以 Wikipedia/Wiktionary 级 draft（`/tmp/opencode/t4973-glue-sources/glue-sources.tsv`）定稿 9 个 glue id ⇒ **来源权威性与义项均不达验收，判 FAIL**。**此前台账记的 `✅ DONE` 仅表示「已写入」，不等于 accepted**；见 §「T1.B18 / T1.B19 返工（IMPR-2）」〕；`b19` ⚠️ **WRITTEN / NOT ACCEPTED（同因 FAIL，待返工）** commits `c213a94`（-EN）+ `08f8901`（-ZH + 日志）〔原同因受阻（7 个 glue id：`decay`/`cooling`/`damage`/`sealing`/`reactor`/`steel`/`wall`）；**用户裁决 C 修正解读同 B18**；7 个 glue id 同判 FAIL，13 个非 glue id 中 4 个 notes 短于门禁下限者列为同批复核项；见 §「T1.B18 / T1.B19 返工（IMPR-2）」〕；**D2-4 第五组（`B17–B21`）验收暂停**（须待 B18/B19 返工后再跑，不得先行判 PASS）；**`w1_c` / W2 / W3 未开始**；off-plan `--self-test` 重锚已完成 `471ab41`；**`B02–B06` 组 D2-4 独立验收 = PASS**（首轮 FAIL 1 行 `current-lead` en 无据 `superconducting`，已最小返工 1 行并复跑四项门禁全 exit 0；返工后 W0 证据束 `--compare` **exit 0 / status=pass**，见文末 Bookkeeping 纠正第 7、8 条）。** — 本文件由 Plan Architect `mode=refine` 基于 PM 任务 **#T-4973** 的既有批次细化而来，并于 **`mode=improve`（2026-10-26，基线 `66197f2`）** 依据 W0 实测现实改口径：D2-7=A（W1 双侧重写 ⇒ 每批拆为 en/zh 两个 ≤30 min 子任务）、D2-8=A（来源白名单收窄）、D2-6=A（169 个拉丁名 id 补中文首选名）、批清单以 `.github/plans/t4973-batches/README.md` 为唯一权威（**119 批 / 2348 ids**）。
 > W0 执行记录见文末 `## Execution Log` §「W0 数据完整性修复 + 门禁加严 — T0.4 ~ T0.13」；门禁 RED→GREEN 可复跑证据见 `.github/plans/t4973-batches/red-green.md`。
 > ~~所有基线数字为 **2026-10-26 在 HEAD `3cb3837`** 实测~~ → **W0 后的权威数字以文末「W0 收口数字」为准**（覆盖率 47.11%、W2 738、W3a 854 等）。
 
@@ -1947,6 +1947,8 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 ## T1.B18 / T1.B19 返工（IMPR-2，2026-10-27，基线 `08f8901`）
 
 > 本节由 Plan Architect `mode=improve`（父代理委派，PM **#T-4973**）写入。**本轮只改主计划文件**：未改任何数据文件、未 `commit`、未 `push`。本节结论**优先于**文末 `## Execution Log` 中 T1.B18 / T1.B19 的既有「✅ DONE」条目。
+>
+> **入库记录（2026-10-27，Academic Writer 子代理回填）**：plan-architect 的上述未提交修改已由**独立 docs commit** 原样入库（`47bd9ff`，+280/−4，**未清理、未覆盖**）；随后在同一节内做了两项**授权/排序修正**（§2 用户授权改按本轮 `question` 真实选择；§5 删除错误的 W0 前置要求），改动随本节的第二个 docs commit 入库。**本轮未改** `pipeline/`、`scripts/`、`terms/registry/concepts.tsv`、`allowlist_*`。
 
 ### 1. 验收判定：来源 + 语义 = **FAIL**（「已写入」≠ accepted）
 
@@ -1970,16 +1972,14 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 
 > 注：D1–D3 为**已确认缺陷**（须修）；D4 为**制度性缺陷**（该两批的外部来源整体不满足 C —— **16 个 glue id 全部**为百科/词典级，须按 §4 重取）；D5 为**留证制度缺口**（须补齐）。**未列入本表**的其余行（B18 的 **11** 个 `corpus` 行、B19 的 **13** 个 `corpus` 行；其中 B19 有 4 个 `notes` 短于门禁下限者另列为 `T1.B19R-1` 复核项）本轮**不改写**，仅在批收口时回归验证。
 
-### 2. 用户裁决 C（IMPR-2 修正解读）— 授权边界（逐字可追溯）
+### 2. 用户授权（IMPR-2 修正记录；以 **2026-10-27 本轮 `question` 真实选择**为准）
 
-- **来源**：本 improve 轮【父代理委派 prompt】原文：「**用户选C=查完整本地来源再补权威外部依据，不改工作集验收**」「**记录用户C不授权降低权威要求**」。
-- **三要素**：主体 = **用户**；时点/载体 = 2026-10-27 经**父代理委派 prompt** 传达（**非**本子代理自证）；范围 = 上述两句逐字范围。
-- **C 授权的内容**：① 先**穷尽本地来源**（仓内 `notes` / `artifacts/terminology_sources/*.tsv` / `evidence.tsv` / 既有 zh 释义 / allowlist）；② 本地不足以定稿时**再补权威外部依据**（IAEA Safety Glossary / ISO 921 / GB/T / ITER glossary / 标准·教科书条目）。
-- **C 明确不授权**（IMPR-2 追加记录，防止再次降格）：
-  - ✗ 降低权威要求 —— Wikipedia / Wiktionary / 同类百科·词典级来源**不得**作为终态 `source`；
-  - ✗ 缩小或调整 W1 工作集 —— B18 / B19 各 **20 id 不变**，其余批次文件与批数不变；
-  - ✗ 追认 `8a42dca` / `2393c47` / `c213a94` / `08f8901` 的已写内容为可接受。
-- 因此本计划**撤回**此前台账「用户裁决 C：…URL 全部 HTTP 200…」所隐含的「已可接受」含义：C 的执行结果须按 **§4 来源政策**重做并按 **§6 验收标准**重新签收。
+- **本轮真实选择（operational，逐字）**：2026-10-27 父代理经 `question` 工具呈递，用户**明确选择「接受出版社词典（推荐）」** —— **通用词**允许以**出版社词典（OUP / CUP 等）的匹配义项**定稿，**并保留原句定位**；**核工程词**优先**专业来源**（IAEA / ISO / GB/T / ITER / 标准·教科书）。
+- **三要素**：主体 = **用户**；载体/时点 = 2026-10-27 经父代理 `question` 呈递的**用户选择**（逐字「接受出版社词典（推荐）」，**非**本子代理自证）；范围 = 上述两句。
+- **与前记「用户裁决 C」的继承关系（不删除历史行文，只修正范围）**：
+  - C **仍然有效**的部分：① **先穷尽本地来源**（仓内 `notes` / `artifacts/terminology_sources/*.tsv` / `evidence.tsv` / 既有 zh 释义 / allowlist）；② 本地不足以定稿时**再补权威外部依据**；③ **不改工作集验收**（B18 / B19 各 **20 id 不变**，其余批次文件与批数不变）；④ **不追认** `8a42dca` / `2393c47` / `c213a94` / `08f8901` 的已写内容为可接受。
+  - C 中「不接受百科/词典级来源」的**范围经本轮选择修正为**：**Wikipedia / Wiktionary 仍不接受**（仅可作检索线索，**不得**写入终态 `source`）；**出版社词典（OUP / CUP）在「通用词」上接受**，条件是 **① 义项匹配 `preferred_zh` 的领域义 + ② 保留原句定位（真实原句逐字 + URL + 义项序号/小节）**；**核工程词优先专业来源**（出版社词典仅在专业来源不可得时作为次级依据，且须在来源表 `sense_slot` 标注）。
+- 因此本计划**撤回**此前台账「用户裁决 C：…URL 全部 HTTP 200…」所隐含的「已可接受」含义：C + 本轮授权的执行结果须按 **§4 来源政策**重做并按 **§6 验收标准**重新签收。
 
 ### 3. 明确不予采信的推论（防止误判回流）
 
@@ -1993,9 +1993,10 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 
 ### 4. 返工来源政策（不预设任何未核来源）
 
-- **来源等级**（裁决 C 的权威要求；`definitions.tsv` 的 `source` 字段取值）：
+- **来源等级**（本轮授权 = 出版社词典（**通用词**）+ 专业来源（**核工程词优先**）；`definitions.tsv` 的 `source` 字段取值）：
   1. **仓内**：`corpus`（= 该 concept 的 `notes` / 既有 zh 释义；三套权威词表以 `artifacts/terminology_sources/{iaea_safety_glossary_raw.tsv,iter_glossary_raw.tsv,gbt4960_9_terms.tsv}` 为准）、`GB/T-4960.9`、`ITER-glossary`、`IAEA-safety-glossary`；
-  2. **仓外权威**：`https://<IAEA / ISO / GB / ITER / 标准或教科书具体页>`，**须附页码 / 条款 / 小节定位**。
+  2. **专业外权威（核工程词优先）**：`https://<IAEA / ISO / GB / ITER / 标准或教科书具体页>`，**须附页码 / 条款 / 小节定位**；
+  3. **出版社词典（本轮新增接受；限通用词）**：OUP `https://www.oxfordlearnersdictionaries.com/definition/english/<word>` 或 CUP `https://dictionary.cambridge.org/dictionary/english/<word>`，**须 ① 义项匹配 `preferred_zh` 领域义 ② 保留原句定位**（真实原句**逐字** + 义项序号/小节）；来源表中须显式记录取的是第几义项。
 - **不接受**：Wikipedia / Wiktionary 作为终态 `source`（仅可作检索线索，**不得**写入 `source` 字段）；`internal:*`；空 `source`。
 - **来源表**（逐行 **8 列**，顺序 = `concept_id` / `preferred_en` / `preferred_zh` / `sense_slot` / `quote_verbatim` / `source_locator` / `probe_status` / `defect_fixed`；任一列缺失或为空 ⇒ 该行 `UNSOURCED`）：
 
@@ -2014,19 +2015,17 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 
 ### 5. 执行顺序与前置（不达成即 BLOCKED）
 
-顺序（**严格串行**）：① W0 稳定核对 → ② `T1.B18R-1` 取据 → ③ `T1.B18R-2` / `T1.B18R-3` 修复 → ④ `T1.B19R-1` 取据 → ⑤ `T1.B19R-2` / `T1.B19R-3` 修复 → ⑥ D2-4 第五组（`B17–B21`）组验收（**由父代理执行，本计划不代替**）→ ⑦ 之后才可推进 `T1.B20-*` / `T1.B21-*`。
+顺序（**严格串行**）：① `T1.B18R-1` 取据 → ② `T1.B18R-2` / `T1.B18R-3` 修复 → ③ `T1.B19R-1` 取据 → ④ `T1.B19R-2` / `T1.B19R-3` 修复 → ⑤ D2-4 第五组（`B17–B21`）组验收（**由父代理执行，本计划不代替**）→ ⑥ 之后才可推进 `T1.B20-*` / `T1.B21-*`。
 
-**W0 稳定前置（返工开工前一次跑完；两条均须 exit 0）**：
+**⛔ W0 前置要求已作废（IMPR-2 修正，2026-10-27；原「返工开工前一次跑完」排序错误）**：
 
-```bash
-cd /home/gw/opt/fusion-terms
-.venv/bin/python scripts/registry_row_audit.py --audit --expect-clean
-.venv/bin/python scripts/registry_evidence_bundle.py --compare
-```
+- 本组（`B17–B21`）的 **W0 稳定核对只在 `T1.B21` 完成、且本组验收稳定之后由父代理跑一次**（`registry_row_audit.py --audit --expect-clean` + `registry_evidence_bundle.py --compare`）；**不是**返工的前置。
+- **本次返工（`T1.B18R-*` / `T1.B19R-*`）禁止跑 W0**（即禁止跑上述两条**组级**命令），亦**禁止**推进 `T1.B20-*` / `T1.B21-*`。
+- 返工自身的验收命令**仅限**：`registry_batch_verify.py --mode definitions`（`--lang en` / `--lang zh` / 默认 `both`）、`python -m pipeline.validate_registry`、`python -m pytest -q`，以及**逐 URL 真实探测**（`curl -o /dev/null -w '%{http_code}'`，每次 ≤20 s）。
 
 **BLOCKED 条件（任一命中 ⇒ 停止该批、上抛父代理；禁止填字、禁止降格入库、禁止缩工作集）**：
-- 某 id 的**本地来源 + 权威外部来源均未核到**可引原文（含页码/URL 定位）⇒ 该 id 标 `UNSOURCED`；
-- 外部来源**仅**能取到 Wikipedia/Wiktionary 级 ⇒ 该 id 标 `UNSOURCED`；
+- 某 id 的**本地来源 + 授权外部来源均未核到**可引原文（含页码/URL 定位）⇒ 该 id 标 `UNSOURCED`；
+- 外部来源**仅**能取到 Wikipedia/Wiktionary 级、且**无**授权来源（专业来源 / 出版社词典匹配义项）可用 ⇒ 该 id 标 `UNSOURCED`；
 - URL 真实探测不可达且**无**可联网环境独立复核 ⇒ 该 id 记 `UNVERIFIED-URL`（见 §6 URL 探测条款）。
 
 ### 6. 返工任务（6 个 ≤30 min 子任务；**原批次规模不变**）
@@ -2112,7 +2111,7 @@ cd /home/gw/opt/fusion-terms
   - ✅ [ZH 侧批验收] `[T-A]` `.venv/bin/python scripts/registry_batch_verify.py --mode definitions --ids-file .github/plans/t4973-batches/w1_b_b18.ids --expect 20 --lang zh` → **exit 0**
   - ✅ [批收口（双侧）] `[T-A]` `.venv/bin/python scripts/registry_batch_verify.py --mode definitions --ids-file .github/plans/t4973-batches/w1_b_b18.ids --expect 20` → **exit 0**
   - ✅ [不变量] `[T-A]` `awk -F'\t' '!/^#/ && NF>0' terms/registry/definitions.tsv | wc -l` → **6132**；`git diff --numstat -- terms/registry/definitions.tsv` 仅含本批返回工行（9 `en` + 9 `zh`，按批序分两次 commit）
-  - ✅ [门禁不退化] `[T-A]` `.venv/bin/python -m pipeline.validate_registry` → exit 0；`.venv/bin/python -m pytest -q` → exit 0；`.venv/bin/python scripts/registry_row_audit.py --audit --expect-clean` → exit 0
+  - ✅ [门禁不退化] `[T-A]` `.venv/bin/python -m pipeline.validate_registry` → exit 0；`.venv/bin/python -m pytest -q` → exit 0（**注**：`registry_row_audit.py --audit --expect-clean` 属 **W0 组级**命令，按 §5 修正**本轮不跑**，留待 `T1.B21` 后由父代理一次性执行）
 - **能失败证明（反例锚定）**：把 `performance` 的 `zh` 行改回 `性能是执行或完成某项任务或功能的过程与表现` → 「D1 禁止项」与「`--lang both` exit 0」**至少一条必须 FAIL**。
 - **潜在风险**：zh 侧长度下限 12 字符在义项修正后可能不足 ⇒ 以**不加无据内容**为前提补足（宁标 `UNSOURCED`/上抛，不得加无据对比句）。
 - **预留歧义标注**：
@@ -2180,7 +2179,7 @@ cd /home/gw/opt/fusion-terms
   - ✅ [D2 劣化义覆盖（damage·zh）] `[T-A]` `awk -F'\t' '$1=="damage" && $2=="zh"' terms/registry/definitions.tsv | grep -cE '劣化|退化|性能下降'` → **≥ 1**
   - ✅ [ZH 侧批验收 + 批收口] `[T-A]` `… --ids-file .github/plans/t4973-batches/w1_b_b19.ids --expect 20 --lang zh` → exit 0；`… --expect 20`（默认 `--lang both`）→ **exit 0**
   - ✅ [不变量] `[T-A]` `awk -F'\t' '!/^#/ && NF>0' terms/registry/definitions.tsv | wc -l` → **6132**
-  - ✅ [门禁不退化 + 组材料] `[T-A]` `.venv/bin/python -m pipeline.validate_registry` → exit 0；`.venv/bin/python -m pytest -q` → exit 0；`.venv/bin/python scripts/registry_row_audit.py --audit --expect-clean` → exit 0；`.venv/bin/python scripts/registry_evidence_bundle.py --compare` → exit 0（输出存 `/tmp/opencode/t4973-b19r/`，连同 `glue-sources-b1{8,9}.tsv` 一并交父代理）
+  - ✅ [门禁不退化 + 组材料] `[T-A]` `.venv/bin/python -m pipeline.validate_registry` → exit 0；`.venv/bin/python -m pytest -q` → exit 0（**注**：`registry_row_audit.py --audit --expect-clean` 与 `registry_evidence_bundle.py --compare` 属 **W0 组级**命令，按 §5 修正**本轮不跑**，留待 `T1.B21` 后由父代理一次性执行）。组验收材料 = 本批 `--lang en`/`--lang zh`/`--lang both` 批次门禁输出 + 真 URL 探测输出 + `glue-sources-b1{8,9}.tsv`，存 `/tmp/opencode/t4973-b19r/` 交父代理
 - **能失败证明（反例锚定）**：把 `sealing` 的 `zh` 行改回 `密封是用以连接系统…的器件或材料` → 「D1 禁止项」与「`--lang both` exit 0」**至少一条必须 FAIL**。
 - **潜在风险**：组验收材料不足（缺 probe 输出 / 缺来源表）⇒ 父代理无法判 PASS；本节已把材料清单固定为上述四条。
 - **预留歧义标注**：
