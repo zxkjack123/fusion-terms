@@ -1943,6 +1943,18 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 - **未做（按本轮纪律）**：**未跑 W0**（`registry_row_audit.py --audit`、`registry_evidence_bundle.py --compare` 均**未执行**，按 §5 修正留待 `T1.B21` 后一次性执行）；**未跑 `T1.B20-*` / `T1.B21-*`**；**未改** `pipeline/`、`scripts/`、`concepts.tsv`、`allowlist_*`；**未 push**、**未 `--amend`**、**未**任何 hook 旁路（各次提交 pre-commit 7 项正常执行）。
 - **剩余**：`T1.B19R-*`（7 个 glue id + 4 个复核项）**未开始**；B18 **不自称组级 accepted**（待父代理 D2-4 第五组独立验收）。
 
+#### T1.B19R — 返工执行记录（IMPR-2，2026-10-27，#T-4973）commits `d6c677a`（取据表，docs）+ `20c9c2a`（-EN + 留证行）+ 本批 log commit（-ZH + 本节）
+
+- **范围**：**仅 B19 的 7 个 glue id**（`decay`、`cooling`、`damage`、`sealing`、`reactor`、`steel`、`wall`）；其余 **13 行逐字未改**（含 4 个短 `notes` 复核项）。**批规模 20 id 不变**。
+- **来源（本轮授权 + §4 政策：**核工程词优先专业来源**）**：6 个取 **OUP 出版社词典**匹配义项（`decay`=物理义「radioactive substance changes to a different form by sending out radiation」；`cooling`=OUP `cool_2` 动词义（**OUP 无 `cooling` 词条**：`/cooling` → 404）；`damage`=义项 1（`less attractive, useful or valuable` 即**劣化限定**的来源）；`sealing`=**动词 `seal`** 的「close container」**过程义**（非 device 义）；`steel`、`wall`）；`reactor` 改用 **GB/T-4960.9**（`热核反应堆`/`聚变堆`：**聚变适配**，替换原「fission chain reaction」的裂变单一定义）。
+- **原句独立核对**：7 条 `quote_verbatim` 均逐字取自本轮实抓 HTML（`/tmp/opencode/t4973-b19r/ox_*.html`）或仓内国标表（`gbt4960_9_terms.tsv:556/533/347/378`）。
+- **义项修正（RED → GREEN，实跑）**：`sealing` 器件义 en/zh 命中 **1/1 → 0/0**；`damage` 劣化义 zh **0 → 1**；`reactor` 裂变单一定义 en **1 → 0** 且含 `fusion` **0 → 1**；7 个 glue id 的 `wikipedia/wiktionary` 来源行 **14 → 0**；`evidence.tsv` 留证行 **0 → 7**。断言 + 输出：`/tmp/opencode/t4973-b19r/assert_b19.sh`、`green_b19_postfix.txt`（RED_OVERALL=0）。
+- **门禁（实跑，`/tmp/opencode/t4973-b19r/`）**：`--lang en` **exit 0**、`--lang zh` **exit 0**、`--lang both`（`--expect 20`）**exit 0**；`validate_registry` **exit 0**（`6132 definitions`、`3184 evidence rows`）；`pytest -q` **exit 0**。不变量：`definitions.tsv` **6132** 行；本批改动 = 7 en + 7 zh（两次 commit 各 7/7）。
+- **URL 真实探测（两路径分别记录，未以 `--no-net` 充作通过）**：**curl 路径**：OUP `decay`/`damage`/`seal`/`reactor`/`steel`/`wall` **200**，OUP `cooling` **404**（改用 `cool_2`→**200**）；**CUP 路径全部 520**（Cambridge 侧反爬/网关错误，**未采用**）；记录 `/tmp/opencode/t4973-b19r/probe_b19r1.txt`。`reactor` 的 `GB/T-4960.9` 为仓内来源 ⇒ `probe_status = N/A(internal)`。
+- **4 个复核项（`fusion-device`/`nuclear-fusion`/`neutron-transport`/`neutron-shielding`）结论**：仓内 `notes` 为唯一依据、无外部权威可引 ⇒ 来源表 `sense_slot` 显式标注「保留 notes 最小补足，**待父代理裁定是否纳入返工**」、`probe_status = N/A(internal)`、`source_locator = internal:terms/registry/concepts.tsv:<line>`；**本轮未改其数据**（是否返工属 D2 级，执行者不得自决）。
+- **未做（按本轮纪律）**：**未跑 W0**（`registry_row_audit.py --audit`、`registry_evidence_bundle.py --compare` 均未执行）；**未跑 `T1.B20-*` / `T1.B21-*`**；**未改** `pipeline/`、`scripts/`、`concepts.tsv`、`allowlist_*`；**未 push**、**未 `--amend`**、**未**任何 hook 旁路。
+- **剩余**：B18/B19 均**不自称组级 accepted**（待父代理 D2-4 第五组独立验收）；`--check-urls` 的 urllib UA 403 问题（见 T1.B18R 条）对 B19 的 6 条 OUP 来源同样成立。
+
 #### T1.B19-EN / T1.B19-ZH — ✅ DONE（2026-10-27，#T-4973）commits `c213a94`（-EN）+ 本批 log commit（-ZH）
 
 - 批次：`.github/plans/t4973-batches/w1_b_b19.ids`（**20** id）；**W1-B 组第 19 批**（34 批 / 679 id）⇒ 属 D2-4 的 `B17–B21` 组第 3 批（本组抽检 + W0 证据束由父代理统一执行，本批不代替）
