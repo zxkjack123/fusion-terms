@@ -3818,7 +3818,7 @@ conditional-risk	zh	聚变/核工程术语，对应英文“conditional risk”�
 conditioning	zh	聚变/核工程术语，对应英文“conditioning”。	internal:dict-improvements
 confinement	zh	聚变/核工程术语，对应英文“Confinement”。	internal:dict-improvements
 confinement-barrier	en	Physical barrier that prevents the release of radioactive material.	corpus
-confinement-barrier	zh	聚变/核工程术语，指“包容屏障”这一技术概念。	internal:dict-improvements
+confinement-barrier	zh	阻止放射性物质释放的物理屏障。	corpus
 confinement-function	en	Fusion/nuclear engineering term referring to 'confinement function' in technical context.	internal:dict-improvements
 confinement-function	zh	聚变/核工程术语，指“包容功能”这一技术概念。	internal:dict-improvements
 confinement-scaling	en	An empirical or semi-empirical expression showing how various plasma parameters (for example confinement and power threshold) vary with the operating conditions of a tokamak; it is summarized from a large amount of experimental data.	GB/T-4960.9
@@ -3899,7 +3899,7 @@ cross-field-cooling	zh	聚变/核工程术语，指“横向冷却”这一技�
 cross-field-transport	en	Fusion/nuclear engineering term referring to 'cross-field transport' in technical context.	internal:dict-improvements
 cross-field-transport	zh	聚变/核工程术语，指“垂直输运”这一技术概念。	internal:dict-improvements
 cross-section	en	Probability of a nuclear reaction per unit target density, commonly expressed in barns.	corpus
-cross-section	zh	聚变/核工程术语，指“截面”这一技术概念。	internal:dict-improvements
+cross-section	zh	单位靶密度下发生核反应的概率，通常以靶恩表示。	corpus
 crust-earth-s	zh	聚变/核工程术语，对应英文“crust, Earth’s”。	internal:dict-improvements
 cryogenic	zh	聚变/核工程术语，对应英文“Cryogenic”。	internal:dict-improvements
 cryogenic-power	en	Fusion/nuclear engineering term referring to 'cryogenic power' in technical context.	internal:dict-improvements
@@ -4195,7 +4195,7 @@ ex-vessel	zh	聚变/核工程术语，指“堆外”这一技术概念。	inter
 ex-vessel-component	en	Fusion/nuclear engineering term referring to 'Ex-Vessel Component' in technical context.	internal:dict-improvements
 ex-vessel-component	zh	聚变/核工程术语，指“真空室外部件”这一技术概念。	internal:dict-improvements
 ex-vessel-loca	en	Loss-of-coolant accident caused by a coolant leak outside the vacuum vessel.	corpus
-ex-vessel-loca	zh	聚变/核工程术语，指“真空室外失冷事故”这一技术概念。	internal:dict-improvements
+ex-vessel-loca	zh	冷却剂泄漏发生在真空室外部的失冷事故。	corpus
 exb-drift	en	Fusion/nuclear engineering term referring to 'E×B drift' in technical context.	internal:dict-improvements
 exb-drift	zh	聚变/核工程术语，指“E×B漂移”这一技术概念。	internal:dict-improvements
 excepted-package	zh	聚变/核工程术语，对应英文“excepted package”。	internal:dict-improvements
@@ -4332,7 +4332,7 @@ fusion-neutron-application	en	Fusion/nuclear engineering term referring to 'fusi
 fusion-neutron-application	zh	聚变/核工程术语，指“聚变中子应用”这一技术概念。	internal:dict-improvements
 fusion-performance	zh	聚变/核工程术语，对应英文“Fusion Performance”。	internal:dict-improvements
 fusion-pilot-plant	en	First-of-a-kind fusion plant intended to demonstrate net electricity production.	corpus
-fusion-pilot-plant	zh	聚变/核工程术语，指“聚变试验电站”这一技术概念。	internal:dict-improvements
+fusion-pilot-plant	zh	旨在验证净电能生产的首座聚变电站。	corpus
 fusion-power-plant	en	A power plant whose energy is supplied by nuclear fusion reactions. The plan for international fusion research is first to build ITER and then to build a demonstration fusion power plant.	GB/T-4960.9
 fusion-product-spectrum	en	Fusion/nuclear engineering term referring to 'fusion product spectrum' in technical context.	internal:dict-improvements
 fusion-product-spectrum	zh	聚变/核工程术语，指“聚变产物能谱”这一技术概念。	internal:dict-improvements
@@ -4340,7 +4340,7 @@ fusion-reactor	en	A device that uses controlled fusion reactions to produce fusi
 fusion-regulation	en	Fusion/nuclear engineering term referring to 'fusion regulation' in technical context.	internal:dict-improvements
 fusion-regulation	zh	聚变/核工程术语，指“聚变监管”这一技术概念。	internal:dict-improvements
 fusion-roadmap	en	Strategic plan for achieving commercial fusion energy.	corpus
-fusion-roadmap	zh	聚变/核工程术语，指“聚变路线图”这一技术概念。	internal:dict-improvements
+fusion-roadmap	zh	实现商业聚变能的战略规划。	corpus
 gain-curve	en	Fusion/nuclear engineering term referring to 'gain curve' in technical context.	internal:dict-improvements
 gain-curve	zh	聚变/核工程术语，指“增益曲线”这一技术概念。	internal:dict-improvements
 gap-release	zh	聚变/核工程术语，对应英文“gap release”。	internal:dict-improvements
@@ -4470,7 +4470,7 @@ hydrogen-isotope-exchange	zh	聚变/核工程术语，指“氢同位素交换�
 hydrogen-retention	en	Fusion/nuclear engineering term referring to 'hydrogen retention' in technical context.	internal:dict-improvements
 hydrogen-retention	zh	聚变/核工程术语，指“氢滞留”这一技术概念。	internal:dict-improvements
 hydrogen-safety	en	Prevention of hydrogen and tritium explosion hazards.	corpus
-hydrogen-safety	zh	聚变/核工程术语，指“氢安全”这一技术概念。	internal:dict-improvements
+hydrogen-safety	zh	防止氢和氚爆炸危险的措施。	corpus
 hydrogen-trapping	en	Fusion/nuclear engineering term referring to 'hydrogen trapping' in technical context.	internal:dict-improvements
 hydrogen-trapping	zh	聚变/核工程术语，指“氢捕获”这一技术概念。	internal:dict-improvements
 hypocentre	zh	聚变/核工程术语，对应英文“hypocentre”。	internal:dict-improvements
@@ -4507,7 +4507,7 @@ in-vessel-components	zh	聚变/核工程术语，对应英文“In-vessel compon
 in-vessel-inspection	en	Fusion/nuclear engineering term referring to 'in-vessel inspection' in technical context.	internal:dict-improvements
 in-vessel-inspection	zh	聚变/核工程术语，指“真空室内检测”这一技术概念。	internal:dict-improvements
 in-vessel-loca	en	Loss-of-coolant accident caused by a coolant leak inside the vacuum vessel.	corpus
-in-vessel-loca	zh	聚变/核工程术语，指“真空室内失冷事故”这一技术概念。	internal:dict-improvements
+in-vessel-loca	zh	冷却剂泄漏发生在真空室内的失冷事故。	corpus
 incident	zh	聚变/核工程术语，对应英文“incident”。	internal:dict-improvements
 independent-assessment	zh	聚变/核工程术语，对应英文“independent assessment”。	internal:dict-improvements
 independent-equipment	zh	聚变/核工程术语，对应英文“independent equipment”。	internal:dict-improvements
@@ -4597,7 +4597,7 @@ isotopic-composition	en	Fusion/nuclear engineering term referring to 'isotopic c
 isotopic-composition	zh	聚变/核工程术语，指“同位素组成”这一技术概念。	internal:dict-improvements
 item-important-to-safety	zh	聚变/核工程术语，对应英文“item important to safety”。	internal:dict-improvements
 iter-to-demo	en	Transition phase from the ITER experimental results to the design of DEMO.	corpus
-iter-to-demo	zh	聚变/核工程术语，指“ITER到DEMO”这一技术概念。	internal:dict-improvements
+iter-to-demo	zh	从 ITER 实验结果过渡到 DEMO 设计的阶段。	corpus
 itg-mode	en	Fusion/nuclear engineering term referring to 'ion temperature gradient mode' in technical context.	internal:dict-improvements
 itg-mode	zh	聚变/核工程术语，指“离子温度梯度模”这一技术概念。	internal:dict-improvements
 itpea	zh	聚变/核工程术语，对应英文“ITPEA”。	internal:dict-improvements
@@ -4639,7 +4639,7 @@ level	zh	聚变/核工程术语，对应英文“level”。	internal:dict-impro
 licence	zh	聚变/核工程术语，对应英文“licence”。	internal:dict-improvements
 licensee	zh	聚变/核工程术语，对应英文“licensee”。	internal:dict-improvements
 licensing	en	Regulatory approval process for the construction and operation of a fusion plant.	corpus
-licensing	zh	聚变/核工程术语，指“许可证”这一技术概念。	internal:dict-improvements
+licensing	zh	聚变装置建造与运行的监管审批过程。	corpus
 licensing-basis	zh	聚变/核工程术语，对应英文“licensing basis”。	internal:dict-improvements
 licensing-pathway	en	Fusion/nuclear engineering term referring to 'licensing pathway' in technical context.	internal:dict-improvements
 licensing-pathway	zh	聚变/核工程术语，指“许可路径”这一技术概念。	internal:dict-improvements
@@ -4679,9 +4679,9 @@ long-lived-waste	zh	聚变/核工程术语，对应英文“long lived waste”�
 long-pulse	en	Extended plasma discharge lasting hundreds to thousands of seconds.	corpus
 long-pulse	zh	持续数百至数千秒的长时间等离子体放电。	corpus
 loss-of-coolant-accident	en	Accident scenario involving the loss of the primary coolant flow.	corpus
-loss-of-coolant-accident	zh	聚变/核工程术语，指“失冷事故”这一技术概念。	internal:dict-improvements
+loss-of-coolant-accident	zh	以丧失一次冷却剂流动为特征的事故情景。	corpus
 loss-of-flow-accident	en	Accident scenario involving a reduced coolant flow rate.	corpus
-loss-of-flow-accident	zh	聚变/核工程术语，指“失流事故”这一技术概念。	internal:dict-improvements
+loss-of-flow-accident	zh	冷却剂流量下降的事故情景。	corpus
 loss-of-vacuum-accident	en	Fusion/nuclear engineering term referring to 'loss of vacuum accident' in technical context.	internal:dict-improvements
 loss-of-vacuum-accident	zh	聚变/核工程术语，指“失真空事故”这一技术概念。	internal:dict-improvements
 low-cycle-fatigue	en	Fusion/nuclear engineering term referring to 'low-cycle fatigue' in technical context.	internal:dict-improvements
@@ -4861,7 +4861,7 @@ neutron-multiplier	zh	铍、铅等通过核反应为氚增殖提供额外中子�
 neutron-shielding	en	Fusion/nuclear engineering term referring to 'neutron shielding' in technical context.	internal:dict-improvements
 neutron-shielding	zh	聚变/核工程术语，指“中子屏蔽”这一技术概念。	internal:dict-improvements
 neutron-spectrum	en	Energy distribution of the neutron flux.	corpus
-neutron-spectrum	zh	聚变/核工程术语，指“中子能谱”这一技术概念。	internal:dict-improvements
+neutron-spectrum	zh	中子通量随能量变化的分布（中子能谱）。	corpus
 neutron-transport	en	Fusion/nuclear engineering term referring to 'neutron transport' in technical context.	internal:dict-improvements
 neutron-transport	zh	聚变/核工程术语，指“中子输运”这一技术概念。	internal:dict-improvements
 neutronics	en	Fusion/nuclear engineering term referring to 'neutronics' in technical context.	internal:dict-improvements
@@ -5009,7 +5009,7 @@ pfirsch-schlueter-current	zh	聚变/核工程术语，指“Pfirsch-Schlüter电
 pfirsch-schlueter-regime	en	Fusion/nuclear engineering term referring to 'Pfirsch-Schlüter regime' in technical context.	internal:dict-improvements
 pfirsch-schlueter-regime	zh	聚变/核工程术语，指“Pfirsch-Schlüter区”这一技术概念。	internal:dict-improvements
 photon-transport	en	Simulation of gamma-ray and X-ray transport through matter.	corpus
-photon-transport	zh	聚变/核工程术语，指“光子输运”这一技术概念。	internal:dict-improvements
+photon-transport	zh	γ 射线和 X 射线在物质中输运的模拟。	corpus
 phreatic-eruption	zh	聚变/核工程术语，对应英文“phreatic eruption”。	internal:dict-improvements
 phreatomagmatic-eruption	zh	聚变/核工程术语，对应英文“phreatomagmatic eruption”。	internal:dict-improvements
 physical-ageing	zh	聚变/核工程术语，对应英文“physical ageing”。	internal:dict-improvements
@@ -5150,7 +5150,7 @@ proton-boron-fusion	zh	无中子聚变反应，质子与 ¹¹B 反应生成三�
 prototype-reactor	en	Fusion/nuclear engineering term referring to 'prototype reactor' in technical context.	internal:dict-improvements
 prototype-reactor	zh	聚变/核工程术语，指“原型堆”这一技术概念。	internal:dict-improvements
 public-acceptance	en	Societal acceptance of fusion energy technology.	corpus
-public-acceptance	zh	聚变/核工程术语，指“公众接受度”这一技术概念。	internal:dict-improvements
+public-acceptance	zh	社会对聚变能技术的接受程度。	corpus
 public-private-partnership	en	Fusion/nuclear engineering term referring to 'public-private partnership' in technical context.	internal:dict-improvements
 public-private-partnership	zh	聚变/核工程术语，指“公私合作”这一技术概念。	internal:dict-improvements
 publication-iaea	zh	聚变/核工程术语，对应英文“publication, IAEA”。	internal:dict-improvements
@@ -5279,7 +5279,7 @@ regulatory-approval	zh	聚变/核工程术语，指“审批许可”这一技�
 regulatory-body	zh	聚变/核工程术语，对应英文“regulatory body”。	internal:dict-improvements
 regulatory-control	zh	聚变/核工程术语，对应英文“regulatory control”。	internal:dict-improvements
 regulatory-framework	en	Legal and regulatory structure governing the safety of fusion plants.	corpus
-regulatory-framework	zh	聚变/核工程术语，指“监管框架”这一技术概念。	internal:dict-improvements
+regulatory-framework	zh	管辖聚变装置安全的法律与监管体系。	corpus
 regulatory-inspection	zh	聚变/核工程术语，对应英文“regulatory inspection”。	internal:dict-improvements
 relative-biological-effectiveness	zh	聚变/核工程术语，对应英文“relative biological effectiveness (RBE)”。	internal:dict-improvements
 relative-biological-effectiveness-weighted-absorbed-dose-adt	zh	聚变/核工程术语，对应英文“relative biological effectiveness (RBE) weighted absorbed dose, ADT”。	internal:dict-improvements
@@ -5600,7 +5600,7 @@ systems-engineering	zh	聚变/核工程术语，指“系统工程”这一技�
 t-15md	zh	聚变/核工程术语，对应英文“T-15MD”。	internal:dict-improvements
 tailings	zh	聚变/核工程术语，对应英文“tailings”。	internal:dict-improvements
 tallying	en	Scoring of quantities such as flux, dose, and heating in Monte Carlo transport calculations.	corpus
-tallying	zh	聚变/核工程术语，指“计数统计”这一技术概念。	internal:dict-improvements
+tallying	zh	在蒙特卡罗输运计算中对通量、剂量、核热等量的计数。	corpus
 tank	zh	聚变/核工程术语，对应英文“tank”。	internal:dict-improvements
 target-fabrication	en	Manufacturing of inertial confinement fusion fuel targets to the precision required for their implosion.	corpus
 target-fabrication	zh	按内爆所需精度制造惯性约束聚变燃料靶的过程。	corpus
@@ -5710,7 +5710,7 @@ tritium-recycling	zh	聚变/核工程术语，对应英文“Tritium Recycling�
 tritium-release	en	Fusion/nuclear engineering term referring to 'tritium release' in technical context.	internal:dict-improvements
 tritium-release	zh	聚变/核工程术语，指“氚释放”这一技术概念。	internal:dict-improvements
 tritium-self-sufficiency	en	Ability of a fusion plant to breed all of the tritium that it consumes.	corpus
-tritium-self-sufficiency	zh	聚变/核工程术语，指“氚自持”这一技术概念。	internal:dict-improvements
+tritium-self-sufficiency	zh	聚变装置自行增殖其消耗的全部氚的能力。	corpus
 tungsten-accumulation	en	Fusion/nuclear engineering term referring to 'tungsten accumulation' in technical context.	internal:dict-improvements
 tungsten-accumulation	zh	聚变/核工程术语，指“钨积聚”这一技术概念。	internal:dict-improvements
 tungsten-fuzz	en	Fusion/nuclear engineering term referring to 'tungsten fuzz' in technical context.	internal:dict-improvements
@@ -5768,7 +5768,7 @@ vacuum-pumps	zh	聚变/核工程术语，对应英文“Vacuum Pumps”。	inter
 vapor-shielding	en	Fusion/nuclear engineering term referring to 'vapor shielding' in technical context.	internal:dict-improvements
 vapor-shielding	zh	聚变/核工程术语，指“蒸汽屏蔽”这一技术概念。	internal:dict-improvements
 variance-reduction	en	Techniques used to improve the statistical efficiency of Monte Carlo calculations.	corpus
-variance-reduction	zh	聚变/核工程术语，指“方差缩减”这一技术概念。	internal:dict-improvements
+variance-reduction	zh	提高蒙特卡罗计算统计效率的方法。	corpus
 ventilation-zone	en	Fusion/nuclear engineering term referring to 'ventilation zone' in technical context.	internal:dict-improvements
 ventilation-zone	zh	聚变/核工程术语，指“通风分区”这一技术概念。	internal:dict-improvements
 venture-capital	en	Fusion/nuclear engineering term referring to 'venture capital' in technical context.	internal:dict-improvements
@@ -5791,7 +5791,7 @@ wall-load	zh	聚变/核工程术语，对应英文“Wall load”。	internal:di
 wall-pumping	en	Fusion/nuclear engineering term referring to 'wall pumping' in technical context.	internal:dict-improvements
 wall-pumping	zh	聚变/核工程术语，指“壁抽气”这一技术概念。	internal:dict-improvements
 waste-classification	en	Categorization of radioactive waste according to its activity level.	corpus
-waste-classification	zh	聚变/核工程术语，指“废物分级”这一技术概念。	internal:dict-improvements
+waste-classification	zh	按放射性活度水平对放射性废物进行分类。	corpus
 waste-form	en	Fusion/nuclear engineering term referring to 'waste form' in technical context.	internal:dict-improvements
 waste-form	zh	聚变/核工程术语，指“废物体”这一技术概念。	internal:dict-improvements
 waste-heat-recovery	en	Fusion/nuclear engineering term referring to 'waste heat recovery' in technical context.	internal:dict-improvements
@@ -5817,7 +5817,7 @@ wcpb	zh	聚变/核工程术语，指“水冷球床包层”这一技术概念�
 weak-scaling	en	Fusion/nuclear engineering term referring to 'weak scaling' in technical context.	internal:dict-improvements
 weak-scaling	zh	聚变/核工程术语，指“弱扩展”这一技术概念。	internal:dict-improvements
 weight-window	en	Variance reduction technique that bounds the particle weights within specified regions.	corpus
-weight-window	zh	聚变/核工程术语，指“权窗”这一技术概念。	internal:dict-improvements
+weight-window	zh	在指定区域内限制粒子权重的方差缩减技术。	corpus
 west	zh	聚变/核工程术语，对应英文“WEST”。	internal:dict-improvements
 winding-surface	en	Fusion/nuclear engineering term referring to 'winding surface' in technical context.	internal:dict-improvements
 winding-surface	zh	聚变/核工程术语，指“绕组面”这一技术概念。	internal:dict-improvements

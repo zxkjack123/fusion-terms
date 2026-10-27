@@ -16,7 +16,7 @@ files_sha256:
   artifacts/translation_dict.json: "auto (执行时实测)"
 ---
 
-> 🔵 **状态：Phase 0（W0）✅ DONE（2026-10-26，收尾 commit `b175bab`）；D2-1 ~ D2-8 全部已裁决（选项 A，见文末《待裁决落地记录》）⇒ Phase 1（W1）**进行中**（2026-10-27 11:25 实测：`w1_a` **4/4 批 ✅**；`w1_b` **3/34 批**（`b01` ✅ commits `b578047`+`f58f0ff`；`b02` ✅ commits `7024be1`+`e67af8c`；`b03` ✅ commits `45313cc`+本节）；`w1_c` / W2 / W3 未开始；off-plan `--self-test` 重锚已完成 `471ab41`）。** — 本文件由 Plan Architect `mode=refine` 基于 PM 任务 **#T-4973** 的既有批次细化而来，并于 **`mode=improve`（2026-10-26，基线 `66197f2`）** 依据 W0 实测现实改口径：D2-7=A（W1 双侧重写 ⇒ 每批拆为 en/zh 两个 ≤30 min 子任务）、D2-8=A（来源白名单收窄）、D2-6=A（169 个拉丁名 id 补中文首选名）、批清单以 `.github/plans/t4973-batches/README.md` 为唯一权威（**119 批 / 2348 ids**）。
+> 🔵 **状态：Phase 0（W0）✅ DONE（2026-10-26，收尾 commit `b175bab`）；D2-1 ~ D2-8 全部已裁决（选项 A，见文末《待裁决落地记录》）⇒ Phase 1（W1）**进行中**（2026-10-27 12:05 实测：`w1_a` **4/4 批 ✅**；`w1_b` **6/34 批**（`b01` ✅ commits `b578047`+`f58f0ff`；`b02` ✅ commits `7024be1`+`e67af8c`；`b03` ✅ commits `45313cc`+`0a8e722`；`b04` ✅ commits `c6b3529`+`5e91052`；`b05` ✅ commits `988eab9`+`d391298`；`b06` ✅ commits `4cfb390`+本节）；`w1_c` / W2 / W3 未开始；off-plan `--self-test` 重锚已完成 `471ab41`）。** — 本文件由 Plan Architect `mode=refine` 基于 PM 任务 **#T-4973** 的既有批次细化而来，并于 **`mode=improve`（2026-10-26，基线 `66197f2`）** 依据 W0 实测现实改口径：D2-7=A（W1 双侧重写 ⇒ 每批拆为 en/zh 两个 ≤30 min 子任务）、D2-8=A（来源白名单收窄）、D2-6=A（169 个拉丁名 id 补中文首选名）、批清单以 `.github/plans/t4973-batches/README.md` 为唯一权威（**119 批 / 2348 ids**）。
 > W0 执行记录见文末 `## Execution Log` §「W0 数据完整性修复 + 门禁加严 — T0.4 ~ T0.13」；门禁 RED→GREEN 可复跑证据见 `.github/plans/t4973-batches/red-green.md`。
 > ~~所有基线数字为 **2026-10-26 在 HEAD `3cb3837`** 实测~~ → **W0 后的权威数字以文末「W0 收口数字」为准**（覆盖率 47.11%、W2 738、W3a 854 等）。
 
@@ -1547,6 +1547,30 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
   - 证据留存：`/tmp/opencode/t4973-b05/`（`red_{en,zh}_before.txt`、`green_{en,zh,both}.txt`、`mutlog_{m1,m1z,ctrl}.txt`、`validate_{en,zh}.txt`、`pytest_{en,zh}.txt`、`en_fix.json`）
 - **不变量 / 全量门禁**：`data_rows` 恒 **6132**；列分布恒 `{4}`；`git diff --numstat` = `20/20`（-EN）+ `20/20`（-ZH），改动 (id,lang) 对恰为本批 id；`validate_registry` / `pytest -q` → 全部 **exit 0**
 - **下一步**：`w1_b_b06` 起串行推进；**本批完成后 `B02–B06` 组满 5 批** ⇒ 父代理将在 B06 后统一执行该组 D2-4 抽检与一次 W0/全集 gate（本次不跑 W0）
+
+#### T1.B06-EN / T1.B06-ZH — ✅ DONE（2026-10-27 12:07）commits `4cfb390`（-EN）+ 本节（-ZH）
+
+- 批次：`.github/plans/t4973-batches/w1_b_b06.ids`（**20** id）；**W1-B 组第 6 批**（34 批 / 679 id）⇒ **D2-4 的 `B02–B06` 组满 5 批**
+- **W1-B 分型**（同 B01–B05 实测）：`en`/`zh` 双侧皆为占位模板，双侧 source 均 `internal:dict-improvements` ⇒ 依 **D2-8=A** 以 `concepts.tsv` 第 7 列 `notes` 为唯一依据 ⇒ source 一律 **`corpus`**
+- **`-EN`**（commit `4cfb390`）：20 条 `en` 行改写
+  - 门禁：`--lang en` → **exit 0** `verdict=PASS`（改写前 RED：**exit 1**）
+  - en 最短 **40** / 最长 92（均值 69.2）；套话 **0/20**；全 ASCII；source **20/20** `corpus`
+    - 最短一条 = `neutron-spectrum`（`Energy distribution of the neutron flux.` = **恰 40 字符**，与 notes「Energy distribution of the neutron flux」逐字对应）⇒ **顶到门禁下限但不越界**；按「忠实依据 > 凑长度」口径**不加冗余修饰**（T1.A1 `plasma-gun` / T1.B04 `hcll` 同口径）
+  - 迁移：`internal:dict-improvements` 4268 → **4248**；`corpus` 249 → **269**；audit `en_boilerplate` 579 → **559**
+- **`-ZH`**（本节）：20 条 `zh` 行由模板改写为真实释义（与同 id 已提交 en **语义等价**，依据 = notes + en；source **20/20** `corpus`）
+  - 门禁：`--lang zh` → **exit 0**（改写前 RED：**exit 1**）；`--lang both`（批收口）→ **exit 0**
+  - **本批 zh 侧首轮被门禁抓到真实 RED（非人工构造）**：`neutron-spectrum` 初稿「中子通量随能量的分布。」= **11 字符 < 12** ⇒ `--lang zh` **exit 1**（`def_len_zh`）；修正为「中子通量随能量变化的分布（中子能谱）。」（**16 字符**，同义展开，不引入新事实）后 **exit 0**。**该 RED→GREEN 即 ZH 侧实测能失败证据之一**
+  - zh 最短 **13** / 最长 26（均值 18.1）；模板 0/20；`指“en”` 0/20；source **20/20** `corpus`
+  - 迁移：`internal:*` 4248 → **4228**；`corpus` 269 → **289**；audit `en_boilerplate` **559 → 559**（en 行零改动）
+  - `pytest -q` → **exit 0**（批收口）
+- **本批语料分型观察**：本批为**蒙特卡罗方法 + 装置/安全监管族**（`variance-reduction`、`weight-window`、`tallying`、`cross-section`、`neutron-spectrum`、`photon-transport`、`fusion-pilot-plant`、`tritium-self-sufficiency`、`licensing`、`fusion-roadmap`、`iter-to-demo`、`public-acceptance`、`regulatory-framework`、LOCA 三件套、`waste-classification`、`hydrogen-safety`、`confinement-barrier`）。各条为 notes 的类别/功能级等价展开；`cross-section` 的「以靶恩表示」为教科书本位单位表述（类别级），未引入 notes 之外的数值
+- **组级复核（`B02–B06`，非正式 D2-4 抽检）**：`registry_batch_verify --mode definitions --ids-file <b02–b06 并集>`（**100** id，`uniq -d` = 0）`--lang both` → **exit 0** `verdict=PASS`；证据 `/tmp/opencode/t4973-b02b06/group_check.txt`
+  - **正式 D2-4 抽检**（≥8 行语义复核 + 该组机械门禁）由**父代理**在 B06 后统一执行（本次会话按委派口径不跑 W0 / 不跑抽检）
+- **能失败证明**（仓外副本 + `--repo-root`，**零触碰仓内文件**；未变异对照 `ctrl` exit 0）
+  - en 侧：`def_boilerplate_regex`（复原套话）→ **exit 1**；zh 侧：`def_boilerplate_mark`（复原模板）→ **exit 1**；另有上文两侧真实 `def_len_*` RED
+  - 证据留存：`/tmp/opencode/t4973-b06/`（`red_{en,zh}_before.txt`、`green_{en,zh,both}.txt`、`mutlog_{m1,m1z,ctrl}.txt`、`validate_{en,zh}.txt`、`pytest_{en,zh}.txt`、`zh_fix.json`）
+- **不变量 / 全量门禁**：`data_rows` 恒 **6132**；列分布恒 `{4}`；`git diff --numstat` = `20/20`（-EN）+ `20/20`（-ZH），改动 (id,lang) 对恰为本批 id；`validate_registry`（`registry OK: 3076 concepts, 10249 aliases, 3168 evidence rows, 6132 definitions`）/ `pytest -q` → 全部 **exit 0**；audit `clean_metrics`：`bad_category 0 / malformed_cols 0 / zh_en_corruption 0 / glued_source_rows 0 / non5_cols 0`，`en_boilerplate **559**`、`concepts_without_defs 10`（W1-C 待办，非本批范围）
+- **下一步**：`w1_b_b07` 起串行推进（下一抽检组 `B07–B11`）；**W1-A + W1-B B01–B06 累计迁移**：`en_boilerplate` 746 → **559**（−187 = A 组 67 + B 组 B01–B06 120）、`corpus` 48 → **289**
 
 #### 会话收口 — 优雅中断（**预算依据为实测，非"感知"**）— 2026-10-26 21:37
 
