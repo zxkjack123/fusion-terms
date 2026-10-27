@@ -1526,6 +1526,28 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 - **不变量 / 全量门禁**：`data_rows` 恒 **6132**；列分布恒 `{4}`；`git diff --numstat` = `20/20`（-EN）+ `20/20`（-ZH），改动 (id,lang) 对恰为本批 id；`validate_registry` / `pytest -q` → 全部 **exit 0**
 - **下一步**：`w1_b_b05` 起串行推进；本批属 D2-4 cadence 的 `B02–B06` 组（见 §「会话恢复 — Bookkeeping 纠正」第 3 条）
 
+#### T1.B05-EN / T1.B05-ZH — ✅ DONE（2026-10-27 12:00）commits `988eab9`（-EN）+ 本节（-ZH）
+
+- 批次：`.github/plans/t4973-batches/w1_b_b05.ids`（**20** id）；**W1-B 组第 5 批**（34 批 / 679 id）
+- **W1-B 分型**（同 B01–B04 实测）：`en`/`zh` 双侧皆为占位模板，双侧 source 均 `internal:dict-improvements` ⇒ 依 **D2-8=A** 以 `concepts.tsv` 第 7 列 `notes` 为唯一依据 ⇒ source 一律 **`corpus`**
+- **`-EN`**（commit `988eab9`）：20 条 `en` 行改写
+  - 门禁：`--lang en` → **exit 0** `verdict=PASS`（改写前 RED：**exit 1**）
+  - en 最短 **54** / 最长 172（均值 83.0）；套话 **0/20**；全 ASCII；source **20/20** `corpus`
+  - 迁移：`internal:dict-improvements` 4308 → **4288**；`corpus` 209 → **229**；audit `en_boilerplate` 599 → **579**
+  - **本批自校 1 处（门禁 RED 的真实触发，非人工构造）**：首轮 `computational-fluid-dynamics` en 稿 `Numerical simulation of fluid flows.` = **36 字符 < 40** ⇒ `--lang en` **exit 1**（`def_len_en`）。修正为 `Numerical simulation of fluid flows based on the discretized governing equations.`（**不引入 notes 之外的实体/数值**，仅补足「基于离散化控制方程」这一 notes 语义的等价展开）后 **exit 0**。**该 RED→GREEN 即为 EN 侧的实测能失败证据之一**（`/tmp/opencode/t4973-b05/green_en.txt` 首轮 FAIL 记录在案）
+- **`-ZH`**（本节）：20 条 `zh` 行由模板改写为真实释义（与同 id 已提交 en **语义等价**，依据 = notes + en；source **20/20** `corpus`）
+  - 门禁：`--lang zh` → **exit 0**（改写前 RED：**exit 1**）；`--lang both`（批收口）→ **exit 0**
+  - zh 最短 **14** / 最长 45（均值 21.4）；模板 0/20；`指“en”` 0/20；source **20/20** `corpus`
+  - 迁移：`internal:*` 4288 → **4268**；`corpus` 229 → **249**；audit `en_boilerplate` **579 → 579**（en 行零改动）
+  - `pytest -q` → **exit 0**（批收口）
+- **本批语料分型观察**：本批为**理论/数值方法族**（`gyrokinetics`、`drift-kinetics`、`resistive-mhd`、`ideal-mhd`、`flux-surface`、`free-boundary-equilibrium`、`monte-carlo-method`、`finite-element-method`、`finite-volume-method`、`particle-in-cell`、`computational-fluid-dynamics`、`mesh-generation`）。各条为 notes 的类别级等价展开；`energetic-particle` 的 `NBI/ICRH/AE` 缩写按 notes 逐项**展开为全称**（中性束注入／离子回旋共振加热／阿尔芬本征模），未新增缩写之外的机理
+- **能失败证明**（仓外副本 + `--repo-root`，**零触碰仓内文件**；未变异对照 `ctrl` exit 0）
+  - en 侧：`def_boilerplate_regex`（复原套话）→ **exit 1**；另有上文真实 `def_len_en` RED（首轮 36 字符）
+  - zh 侧：`def_boilerplate_mark`（复原模板）→ **exit 1**
+  - 证据留存：`/tmp/opencode/t4973-b05/`（`red_{en,zh}_before.txt`、`green_{en,zh,both}.txt`、`mutlog_{m1,m1z,ctrl}.txt`、`validate_{en,zh}.txt`、`pytest_{en,zh}.txt`、`en_fix.json`）
+- **不变量 / 全量门禁**：`data_rows` 恒 **6132**；列分布恒 `{4}`；`git diff --numstat` = `20/20`（-EN）+ `20/20`（-ZH），改动 (id,lang) 对恰为本批 id；`validate_registry` / `pytest -q` → 全部 **exit 0**
+- **下一步**：`w1_b_b06` 起串行推进；**本批完成后 `B02–B06` 组满 5 批** ⇒ 父代理将在 B06 后统一执行该组 D2-4 抽检与一次 W0/全集 gate（本次不跑 W0）
+
 #### 会话收口 — 优雅中断（**预算依据为实测，非"感知"**）— 2026-10-26 21:37
 
 - **`[CTX: est≈140k, budget=262144, reason=硬信号（本会话 compaction 事件 6 次，且 harness 持续裁剪工具结果与推理）]`**
