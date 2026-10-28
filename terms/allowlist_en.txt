@@ -1900,3 +1900,24 @@ irradiation-campaign
 irradiation-capsule
 dpa-rate
 fusion-power-density
+# --- T-4973 W2 batch 28 ---
+erosion-redeposition
+first-wall-lifetime
+systems-engineering
+reliability-engineering
+rams-analysis
+nuclear-island
+conventional-island
+turbine-island
+environmental-impact-assessment
+digital-engineering
+mean-time-between-failures
+EU-DEMO
+K-DEMO
+us-burning-plasma
+plasma-exhaust
+heat-flux-limit
+partial-detachment
+reduced-order-model
+multi-physics-coupling
+multi-scale-modeling
