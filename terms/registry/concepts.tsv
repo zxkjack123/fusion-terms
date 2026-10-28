@@ -386,28 +386,28 @@ catia	code	CATIA三维设计软件	CATIA		active	3D CAD/CAM/CAE software (Dassau
 # -- Plasma equilibrium / transport / MHD
 corsica	code	CORSICA托卡马克集成模拟程序	CORSICA		active	Integrated tokamak modeling code (LLNL)	corpus
 imas	code	集成建模与分析套件	IMAS		active	Integrated Modelling & Analysis Suite (ITER standard data model)	corpus
-jintrac	code	JINTRAC	JINTRAC		active	JET suite of integrated tokamak transport codes	corpus
-gacode	code	GACODE	GACODE		active	General Atomics suite of gyrokinetic / transport codes	corpus
-tgyro	code	TGYRO	TGYRO		active	Transport solver calling gyrokinetic codes (GACODE family)	corpus
-gyro	code	GYRO	GYRO		active	Global gyrokinetic simulation code (General Atomics)	corpus
-cgyro	code	CGYRO	CGYRO		active	Continuum gyrokinetic code on GPUs (GACODE family)	corpus
-gs2	code	GS2	GS2		active	Flux-tube gyrokinetic code (Univ. Maryland / UKAEA)	corpus
-orb5	code	ORB5	ORB5		active	Global PIC gyrokinetic code (EPFL / EUROfusion)	corpus
-gkw	code	GKW	GKW		active	GyroKinetic Workshop code (flux-tube, Eulerian)	corpus
-jorek	code	JOREK	JOREK		active	Non-linear MHD code for ELMs, disruptions, and 3D instabilities	corpus
-nimrod	code	NIMROD	NIMROD		active	Non-Ideal MHD with Rotation, Open Discussion (extended MHD code)	corpus
-m3d-c1	code	M3D-C1	M3D-C1		active	3D extended MHD code (PPPL)	corpus
-mars-f	code	MARS-F	MARS-F		active	Resistive MHD stability code for RWM, RMP response	corpus
-nova	code	NOVA	NOVA		active	Ideal MHD / Alfvén eigenmode stability code (PPPL)	corpus
-mishka	code	MISHKA	MISHKA		active	MHD Instabilities in Spherical/Helical/Kink Approximation code	corpus
-helena	code	HELENA	HELENA		active	Fixed-boundary Grad-Shafranov equilibrium solver	corpus
-cliste	code	CLISTE	CLISTE		active	Equilibrium reconstruction code (IPP Garching)	corpus
-chease	code	CHEASE	CHEASE		active	Cubic Hermite Element Axisymmetric Static Equilibrium code	corpus
+jintrac	code	JINTRAC集成输运程序	JINTRAC		active	JET suite of integrated tokamak transport codes	corpus
+gacode	code	GACODE回旋动理学程序套件	GACODE		active	General Atomics suite of gyrokinetic / transport codes	corpus
+tgyro	code	TGYRO输运求解程序	TGYRO		active	Transport solver calling gyrokinetic codes (GACODE family)	corpus
+gyro	code	GYRO回旋动理学程序	GYRO		active	Global gyrokinetic simulation code (General Atomics)	corpus
+cgyro	code	CGYRO连续谱回旋动理学程序	CGYRO		active	Continuum gyrokinetic code on GPUs (GACODE family)	corpus
+gs2	code	GS2磁通管回旋动理学程序	GS2		active	Flux-tube gyrokinetic code (Univ. Maryland / UKAEA)	corpus
+orb5	code	ORB5全局回旋动理学粒子模拟程序	ORB5		active	Global PIC gyrokinetic code (EPFL / EUROfusion)	corpus
+gkw	code	GKW回旋动理学程序	GKW		active	GyroKinetic Workshop code (flux-tube, Eulerian)	corpus
+jorek	code	JOREK非线性磁流体程序	JOREK		active	Non-linear MHD code for ELMs, disruptions, and 3D instabilities	corpus
+nimrod	code	NIMROD扩展磁流体程序	NIMROD		active	Non-Ideal MHD with Rotation, Open Discussion (extended MHD code)	corpus
+m3d-c1	code	M3D-C1三维扩展磁流体程序	M3D-C1		active	3D extended MHD code (PPPL)	corpus
+mars-f	code	MARS-F电阻磁流体稳定性程序	MARS-F		active	Resistive MHD stability code for RWM, RMP response	corpus
+nova	code	NOVA阿尔芬本征模程序	NOVA		active	Ideal MHD / Alfvén eigenmode stability code (PPPL)	corpus
+mishka	code	MISHKA磁流体不稳定性程序	MISHKA		active	MHD Instabilities in Spherical/Helical/Kink Approximation code	corpus
+helena	code	HELENA平衡求解程序	HELENA		active	Fixed-boundary Grad-Shafranov equilibrium solver	corpus
+cliste	code	CLISTE平衡重建程序	CLISTE		active	Equilibrium reconstruction code (IPP Garching)	corpus
+chease	code	CHEASE轴对称平衡程序	CHEASE		active	Cubic Hermite Element Axisymmetric Static Equilibrium code	corpus
 
 # -- SOL / divertor / edge plasma
-eirene	code	EIRENE	EIRENE		active	Monte Carlo kinetic neutral gas transport code	corpus
-solps	code	SOLPS	SOLPS		active	SOL Plasma Simulator (B2-EIRENE coupling); predecessor of SOLPS-ITER	corpus
-b2	code	B2	B2		active	Multi-fluid SOL/divertor plasma code (coupled with EIRENE)	corpus
+eirene	code	EIRENE中性气体输运程序	EIRENE		active	Monte Carlo kinetic neutral gas transport code	corpus
+solps	code	SOLPS偏滤器等离子体模拟程序	SOLPS		active	SOL Plasma Simulator (B2-EIRENE coupling); predecessor of SOLPS-ITER	corpus
+b2	code	B2多流体边界等离子体程序	B2		active	Multi-fluid SOL/divertor plasma code (coupled with EIRENE)	corpus
 edge2d-eirene	code	EDGE2D-EIRENE	EDGE2D-EIRENE		active	2D fluid edge plasma + neutral kinetic code	corpus
 soledge2d	code	SOLEDGE2D	SOLEDGE2D		active	2D/3D edge transport code (CEA)	corpus
 div3d	code	DIV3D	DIV3D		active	3D field-line tracing code for divertor design	corpus
