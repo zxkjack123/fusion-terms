@@ -1671,3 +1671,23 @@ fast-wave-current-drive
 ferromagnetic-inserts
 field-shaping-coil
 flat-top-current
+# --- T-4973 W2 batch 17 ---
+flat-top-pulse-length
+fuelling
+fuel-of-fusion
+glow-discharge-plasma
+hard-core-pinch-device
+helicity-injection-current-drive
+high-field-ecrh-launch
+high-frequency-confinement
+high-frequency-plug
+high-heat-flux
+high-heat-flux-components
+induction-coil
+inductively-driven-plasmas
+iron-core-transformer
+joffe-s-bar
+l-h-threshold-power
+limiter-system
+linear-pinch
+lip-seal
