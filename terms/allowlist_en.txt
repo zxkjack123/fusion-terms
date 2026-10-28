@@ -1942,3 +1942,24 @@ grid-stability
 proliferation-resistance
 fusion-safety-advantage
 clean-energy
+# --- T-4973 W2 batch 30 ---
+net-zero
+dual-coolant
+self-cooled
+scll
+coolant-compatibility
+life-cycle-assessment
+carbon-footprint
+recycling-rate
+decay-storage
+water-use
+wall-plug-efficiency
+heating-and-current-drive
+calorimetry
+nano-structured-ferritic-alloy
+tungsten-fiber-composite
+tungsten-laminate
+nuclear-heating-rate
+transmutation-rate
+primary-knock-on-atom
+appm
