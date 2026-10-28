@@ -1,0 +1,13 @@
+# T-4973 T2.0 denylist conflict recompute (read-only; ids files untouched)
+# W2 ids = 738 ; zh_conflicts = 10 ; en_conflicts = 2
+concept_id	preferred_zh	preferred_en	zh_in_denylist	en_token_in_denylist	batch
+halo-current	晕电流	halo current	yes	no	b01
+line-radiation	线辐射	line radiation	yes	no	b01
+system	系统	system	yes	yes	b04
+calculation	计算	calculation	yes	no	b04
+material	材料	material	yes	no	b04
+simulation	模拟	simulation	yes	no	b04
+mode	模式	mode	yes	yes	b04
+device	装置	device	yes	no	b05
+magnetic-moment	磁矩	magnetic moment	yes	no	b12
+mode-number	模数	mode number	yes	no	b12
