@@ -1608,3 +1608,24 @@ plasma-radiation
 plasma-shock-wave
 plasma-volume
 plasma-wave
+# --- T-4973 W2 batch 14 ---
+plasmoid
+poloidal-beta-beta-poloidal
+project-sherwood
+pseudosonic-waves
+q-limit
+radio-frequency-wave
+ramp-down-time
+recombination-coefficient
+resistive-ballooning-modes
+screw-instability
+second-stability
+second-stability-regime
+separatrix-points
+screw-pinch
+single-fluid-model
+single-null-equilibrium
+stochastic-heating
+super-alfvenic-velocity
+superthermal-radiation
+tearing-mode-instability
