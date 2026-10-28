@@ -1774,3 +1774,24 @@ iter-units-of-account
 international-tokamak-reactor
 mockup
 model-coil
+# --- T-4973 W2 batch 22 ---
+remote-handling-class
+safety-system-support-feature
+scheduled-down-time
+shut-down-time
+steady-state-fusion-reactor
+support-systems
+iter-test-blanket-module
+thermonuclear-reactor
+thermonuclear-reactor-blanket
+wall-loading
+first-wall-cooling
+supercritical-co2
+recuperator
+recompression-brayton-cycle
+lithium-6-enrichment
+packing-fraction
+tritium-production-rate
+quasi-poloidal-symmetry
+omnigeneity
+bounce-averaged-drift
