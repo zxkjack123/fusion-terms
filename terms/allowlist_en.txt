@@ -1754,3 +1754,23 @@ soft-x-rays-camera
 survey-spectrometer
 abnormal-operating-conditions
 active-environment
+# --- T-4973 W2 batch 21 ---
+alpha-power
+alternative-fuels
+blanket-materials
+blanket-shield
+ceramic-breeders
+compliant-material
+conceptual-design-activity
+cordey-pass
+down-time
+d-t-operation
+duty-factor
+dwell-time
+engineering-design-activity
+fusion-fission-hybrid-reactor
+fusion-product
+iter-units-of-account
+international-tokamak-reactor
+mockup
+model-coil
