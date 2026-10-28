@@ -1545,3 +1545,24 @@ internal-mode
 internal-reconnection-event
 ion-acoustic-wave
 ion-cyclotron-current-drive
+# --- T-4973 W2 batch 11 ---
+ion-cyclotron-emission
+ion-plasma-frequency
+ion-wave-instability
+isotropic-plasma
+kelvin-helmholtz-instability
+kinetic-instability
+kinetic-pressure
+kinetic-theory
+kruskal-limit
+landau-damping
+langmuir-frequency
+line-tying
+loss-cone
+loss-cone-instability
+low-beta-plasma
+low-field-side
+low-temperature-plasma
+macroinstability-macroscopic-instability
+magnetic-mach-number
+magnetic-mirror-configuration
