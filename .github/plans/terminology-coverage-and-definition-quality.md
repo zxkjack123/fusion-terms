@@ -2562,6 +2562,25 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 - **本组（D2-4 `B32–B34 + C1`）进度**：本批完成 ⇒ **4/4 批**（`b32`/`b33`/`b34`/`c1` 全部写入）。**W1 子任务 78/78 全部写入**（W1-A 8 + W1-B 68 + W1-C 2）。
 - **未做（按本轮纪律）**：**未跑 W0**（组级命令留给本组稳定且独立验收通过后**一次**执行）；**未 push**、**未 `--amend`**、**未**任何 hook 旁路。
 
+#### 第八组（D2-4 `B32–B34 + C1`）**独立验收 = PASS** + W0 证据束（2026-10-28，#T-4973）
+
+- **授权来源（逐字）**：用户 2026-10-28 显式授权执行本组 —— “**授权做B32-B34 + C1**”。本组工作全部落在该授权范围内（**末组**）；**W2 / W3 / W4 仍 `UNAUTHORIZED`**。
+- **本组批级成交**：`b32` **`ebbd426`**（-EN）+ **`eae4c6a`**（-EN 保真修订 6 行）+ 本批 log commit；`b33` **`08b6d3b`**（-EN）+ 本批 log commit；`b34` **`6d86d43`**（-EN）+ 本批 log commit；`c1` **`02b91b7`**（-EN：新增 en 10 行 + `evidence.tsv` 10 行）+ **`779f68b`**（-ZH：新增 zh 10 行 + 本节）。
+- **独立验收（权威）**：委派 `acceptance-verifier`（**read-only**），验收对象 @ **`779f68b`**，子会话 **`ses_e7da4db6bffe6MrfnrAxgH60QV`**。判定逐字 —— **`VERDICT=PASS`；`SEVERITY`=HIGH confidence；`BLOCKING=0`；`WARNINGS=4`**。三源交叉核对（计划验收标准 L630–682 + 执行者声明 + 实际 artifact）+ **全 69 id / 138 行逐行**语义与来源复核（**非抽检**）。
+- **V1–V6 独立复跑（复核方本人执行，不接受自报）**：V1 组级批门禁 `--ids-file grp8.ids --expect 69 --lang both` ⇒ **exit 0**（`verdict=PASS`）；V2 `registry_row_audit --audit --expect-clean-all` ⇒ **exit 0**（`is_clean=true`、`non_zero_metrics={}`、`en_boilerplate=0`、`concepts_without_defs=0`）；V3 Phase-1 zh 模板计数（`w1_a|w1_b|w1_c` 口径）⇒ **`ZH_TEMPLATE_COUNT=0`**；V4 `pipeline.validate_registry --terms-dir terms` ⇒ **exit 0**（`3076 concepts, 10249 aliases, 3203 evidence rows, 6152 definitions`）；V5 `pytest -q` ⇒ **exit 0**（`231 passed`）；V6 **反例锚定** `--expect 68`（真值 69）⇒ **exit 1**（`ids_count: expected 68, found 69`）⇒ **门禁可失败已被证明**。
+- **复核要点（摘录，非全文）**：69/69 各恰 1 en + 1 zh 行、`source=corpus`；`preferred_zh` 起句 **69/69**；模板残留 **0**、`指“` **0**；en 全 ASCII、长度 **51–129**；zh 长度 **19–66**；**notes 外实词机械扫描** `b33`/`b34`/`c1` = **0**（`c1` 唯一命中为形态复数 `terms`←`term`）、`b32` 11 项全为屈折形态（`mitigates`/`uses`/`generates`/`aims`/`biases`/`extracts`/`replaces`/`statistical`/`thyristors`）与 `PF → poloidal field` 缩写展开（notes 的 `[domain: electrical-power-systems]` 亦给 `electrical`）⇒ **无一条越出 `notes` 边界**；改动触及 id **69/69 全在本批内、越界 id = 0**；`concepts.tsv` / `scripts/` / `pipeline/` / `allowlist*` / 批次 `.ids` **零改动**；**派发 / 重试 / 重入队行为无影响**（纯数据 + 文档）。
+- **C1 证据溯源裁定（D2-8=A）**：复核方判 **ACCEPTABLE** —— 10 条新增 `corpus` 证据行 `quote` 与同 id `notes` **逐字相同（10/10 精确匹配）**；10 个 concept 原有的 `internal:*` 证据行（`cate-3.0-deliverables` / `thesis-郭庆洋-2020` / `dify-kb/Activation-Corrosion-Products-OSCAR`）**原样保留、未改未删（各 1 条）**；`corpus` 属 `registry_batch_verify.py` 白名单取值、`validate_registry` 仅拒 `internal:TODO`、无重复三元组；释义对 `GB/T`/`ITER`/`IAEA`/`ISO`/`ASTM`/`DOI` 等外部权威标记扫描 **0 命中**。
+- **已登记局限（4 项 warnings，均不阻塞；如实登记、不宣传质量）**：
+  - **W1**：C1 新增 `corpus` 证据行 `quote==notes` 属**同源自证**（notes 本身无指向内部文档的 provenance 列）⇒ 相对既有 `internal:*` 行**未增加独立证据强度**；`corpus` 作为 `evidence.tsv` 源取值**首次出现**（pre-existing 0 行）。本条**在计划内已先行披露**（见 `T1.C1-EN/-ZH` 节）。
+  - **W2**：`B32–B34 + C1` 的 59 条 zh 改动中 **仅 11 条**为 `聚变/核工程术语` 模板替换，**48 条**为 T0.7b（`c2c4b7e`）已改写行的**规范化 + 保真**⇒ 摘要口径**不得**表述为「59 条全为模板替换」。
+  - **W3**：若干释义为 `notes` 近逐字复述（如 `weight-window-generator` 仅 `for`→`that`、`switching-network` 仅介词回退），D2-8=A 允许但**编辑增量价值低** ⇒ **不得**据本组宣传「高质量释义」。
+  - **W4**：本组**未**由复核方运行 W0 证据束（按计划纪律留给父代理在稳定且独立验收后**一次**执行）⇒ 见下条，已由父代理执行。
+- **W0 证据束（本组权威）**：**生成性执行**（用户口径「稳定且独立验收后**一次**」，非 `--profile all`）—— `python3 scripts/registry_evidence_bundle.py --compare` ⇒ **exit 0**，产出 `/home/gw/opt/fusion-terms/artifacts/registry-evidence/20261028T120252Z-1652354`（本文件父代理实跑，**仅此一次**）。**manifest SHA256 实测 `a292e07bcf17d9194f4fc8d1db9748eead82c638615e72b50168e38472b70f65`**；`profile=w0`、`gate=expect-clean`、`batch_status=pass`、`same_structured_result=true`、`incomplete=false`、`external_cli_entries=1`、`internal_cli_entries=4`、`execution_fingerprint=5f3289e8e10cba0c7cd41d694aaed8fdeb3383de2a32ec631660f96d3cc8eac5`。
+  - **本组 W0 与第七组 W0 的实质差异（可机械核验）**：本次 `baseline[]` 与 `batch[]` 两个条目（`validate_registry` / `registry_row_audit`）的 **`non_zero_metrics = {}` 且 `warnings = []`** —— 即第七组的 deferred 两值 **`definitions.en_boilerplate = 59 → 0`**、**`definitions.concepts_without_defs = 10 → 0`**，**双零**。这与 W1 收口口径自洽（59 + 10 = 本组 69 个 id，均已写入）。
+  - **披露**：本组该脚本合计执行 **1 次**（无 `--reuse` 复现）。`artifacts/registry-evidence/*` 属 `.gitignore`（第 92 行）⇒ **不随 commit 入库**，以 manifest SHA256 与目录名留痕。
+- **W1 相位级状态（区分组级 PASS 与相位级 acceptance）**：`B32–B34 + C1` 组级 = **ACCEPTED**（本节）；**W1 子任务 78/78 全部写入**（W1-A 8 + W1-B 68 + W1-C 2），相位级收口闸门四条命令（`--expect-clean-all` / zh 模板清零 / `validate_registry`=6152 / `pytest`）**全部 exit 0**。**组级 PASS 不自动等于「W1 相位 accepted」** —— W1 的相位级验收以本组 + 前七组均 ACCEPTED 为条件，本文件在此声明**前八组均 ACCEPTED**（首组 `A1–A4 + B01`、第二至第七组见各节）。
+- **未做（按本轮纪律）**：**未 push**、**未 `--amend`**、**未**任何 hook 旁路；**未启动 W2 / W3 / W4**。
+
 ## Read-only registry evidence handoff gate
 
 Run the current Phase 0 gate with:
