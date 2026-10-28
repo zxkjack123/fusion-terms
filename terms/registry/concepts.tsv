@@ -151,7 +151,7 @@ coil-complexity	metric	线圈复杂度	coil complexity		active	Measure of coil g
 
 # ---- Reversed field pinch (反场箍缩)
 reversed-field-pinch	device	反场箍缩	reversed field pinch	RFP	active	Toroidal confinement with reversed toroidal field at edge	corpus
-rfx-mod	device	RFX-mod	RFX-mod		active	Largest reversed field pinch experiment (Padova, Italy)	corpus
+rfx-mod	device	RFX-mod装置	RFX-mod		active	Largest reversed field pinch experiment (Padova, Italy)	corpus
 dynamo-effect	concept	发电机效应	dynamo effect		active	Self-organization sustaining reversed-field equilibrium	corpus
 single-helical-state	concept	单螺旋态	single helical state	SHAx	active	Self-organized quasi-helical equilibrium in RFP	corpus
 pulsed-poloidal-current-drive	method	脉冲极向电流驱动	pulsed poloidal current drive	PPCD	active	Active fluctuation suppression by current profile control	corpus
@@ -166,7 +166,7 @@ spheromak	device	球马克	spheromak		active	Compact toroid with both toroidal a
 flux-confinement	concept	磁通约束	flux confinement		active	Confinement of poloidal flux within FRC separatrix	corpus
 translation	concept	平移	translation		active	Acceleration and merging of FRC plasmoids	corpus
 rotational-instability	concept	旋转不稳定性	rotational instability		active	n=2 rotational mode limiting FRC lifetime	corpus
-c-2w	device	C-2W	C-2W		active	TAE Technologies advanced beam-driven FRC device (Norman)	corpus
+c-2w	device	C-2W装置	C-2W		active	TAE Technologies advanced beam-driven FRC device (Norman)	corpus
 magneto-inertial-fusion	concept	磁化惯性聚变	magneto-inertial fusion	MIF	active	Hybrid approach compressing magnetized target plasma	corpus
 
 # ---- Inertial confinement fusion (惯性约束聚变)
@@ -218,10 +218,10 @@ plasma-beta	metric	等离子体比压	plasma beta		active	Ratio of plasma pressu
 high-beta	concept	高比压	high beta		active	Plasma regime with β approaching or exceeding unity; required for p-B11	corpus
 enn	organization	新奥	ENN		active	ENN Energy Research Institute (新奥能源研究院)	corpus
 enn-compact-fusion	device	新奥紧凑聚变装置	ENN compact fusion device		active	ENN's compact FRC/mirror-based p-B11 experimental device series	corpus
-rexie	device	REXIE	REXIE		active	ENN rotating-field FRC experiment (Rotating EXperiment for Ions and Electrons)	corpus
-kmax	device	KMAX	KMAX		active	ENN compact magnetized plasma experiment	corpus
+rexie	device	REXIE装置	REXIE		active	ENN rotating-field FRC experiment (Rotating EXperiment for Ions and Electrons)	corpus
+kmax	device	KMAX装置	KMAX		active	ENN compact magnetized plasma experiment	corpus
 enn-cst	device	新奥球形托卡马克	ENN compact spherical tokamak	ENN-CST	active	ENN compact spherical tokamak device (EXL-50)	corpus
-exl-50	device	EXL-50	EXL-50		active	ENN spherical tokamak; exploratory device for p-B11 path	corpus
+exl-50	device	EXL-50装置	EXL-50		active	ENN spherical tokamak; exploratory device for p-B11 path	corpus
 rotating-magnetic-field	method	旋转磁场	rotating magnetic field	RMF	active	Current drive method for FRC via externally applied rotating B-field	corpus
 odd-parity-rotating-magnetic-field	method	奇宇称旋转磁场	odd-parity rotating magnetic field	RMFo	active	RMF variant with axial field reversal; used in FRC sustainment	corpus
 neutral-beam-driven-frc	concept	中性束驱动场反	neutral beam driven FRC		active	Sustaining FRC via tangential neutral beam injection (TAE/ENN approach)	corpus
@@ -261,9 +261,9 @@ neutron-multiplier	concept	中子倍增剂	neutron multiplier		active	Material (
 
 # ---- Fusion engineering: structural materials (结构材料)
 rafm-steel	material	低活化铁素体/马氏体钢	RAFM steel	RAFM	active	Reduced-activation ferritic/martensitic steel	corpus
-eurofer	material	EUROFER	EUROFER		active	European RAFM reference steel (EUROFER97)	corpus
-clf-1	material	CLF-1	CLF-1		active	China Low-activation Ferritic steel (CLAM family)	corpus
-clam	material	CLAM	CLAM		active	China Low Activation Martensitic steel	corpus
+eurofer	material	EUROFER钢	EUROFER		active	European RAFM reference steel (EUROFER97)	corpus
+clf-1	material	CLF-1钢	CLF-1		active	China Low-activation Ferritic steel (CLAM family)	corpus
+clam	material	中国低活化马氏体钢	CLAM		active	China Low Activation Martensitic steel	corpus
 vanadium-alloy	material	钒合金	vanadium alloy		active	V-4Cr-4Ti class low-activation structural material	corpus
 sic-sic-composite	material	碳化硅复合材料	SiC/SiC composite	SiC/SiC	active	Silicon carbide fiber-reinforced SiC matrix composite	corpus
 ods-steel	material	氧化物弥散强化钢	ODS steel	ODS	active	Oxide dispersion strengthened ferritic steel	corpus
@@ -289,24 +289,24 @@ activation-analysis	method	活化分析	activation analysis		active	Calculation/
 shutdown-dose-rate	metric	停堆剂量率	shutdown dose rate	SDDR	active	Contact/distance dose rate after reactor shutdown	corpus
 neutron-source	device	中子源	neutron source		active	14 MeV neutron source for fusion materials testing	corpus
 ifmif	device	国际聚变材料辐照装置	IFMIF	IFMIF	active	International Fusion Materials Irradiation Facility	corpus
-dones	device	DONES	DONES		active	DEMO-Oriented Neutron Source (IFMIF successor in EU)	corpus
+dones	device	DONES中子源装置	DONES		active	DEMO-Oriented Neutron Source (IFMIF successor in EU)	corpus
 fusion-neutron	concept	聚变中子	fusion neutron		active	14.1 MeV neutron from D-T reaction	corpus
 
 # ---- Major fusion devices (重要聚变装置)
 cfetr	device	中国聚变工程试验堆	CFETR	CFETR	active	China Fusion Engineering Test Reactor	corpus
 cfetr-design	concept	CFETR设计	CFETR design		active	Design activities and parameter studies for CFETR	corpus
 demo	device	示范堆	DEMO	DEMO	active	Demonstration fusion power plant (generic milestone)	corpus
-jet	device	JET	JET		active	Joint European Torus (largest tokamak, Culham)	corpus
-jt-60sa	device	JT-60SA	JT-60SA		active	Japan Torus superconducting upgrade at QST Naka	corpus
-diii-d	device	DIII-D	DIII-D		active	GA tokamak at San Diego (largest US tokamak)	corpus
-asdex-upgrade	device	ASDEX Upgrade	ASDEX Upgrade	AUG	active	Axially Symmetric Divertor EXperiment Upgrade at IPP Garching	corpus
-hl-2a	device	HL-2A	HL-2A		active	Tokamak at SWIP Chengdu (earlier generation)	corpus
-hl-2m	device	HL-2M	HL-2M		active	Next-generation tokamak at SWIP Chengdu	corpus
-kstar	device	KSTAR	KSTAR		active	Korea Superconducting Tokamak Advanced Research	corpus
-sparc	device	SPARC	SPARC		active	Compact high-field HTS tokamak (CFS/MIT)	corpus
-arc	device	ARC	ARC		active	Affordable Robust Compact reactor concept (CFS/MIT pilot plant design)	corpus
-step	device	STEP	STEP		active	Spherical Tokamak for Energy Production (UKAEA)	corpus
-nstx-u	device	NSTX-U	NSTX-U		active	National Spherical Torus Experiment Upgrade at PPPL	corpus
+jet	device	JET托卡马克	JET		active	Joint European Torus (largest tokamak, Culham)	corpus
+jt-60sa	device	JT-60SA托卡马克	JT-60SA		active	Japan Torus superconducting upgrade at QST Naka	corpus
+diii-d	device	DIII-D托卡马克	DIII-D		active	GA tokamak at San Diego (largest US tokamak)	corpus
+asdex-upgrade	device	ASDEX升级装置	ASDEX Upgrade	AUG	active	Axially Symmetric Divertor EXperiment Upgrade at IPP Garching	corpus
+hl-2a	device	HL-2A托卡马克	HL-2A		active	Tokamak at SWIP Chengdu (earlier generation)	corpus
+hl-2m	device	HL-2M托卡马克	HL-2M		active	Next-generation tokamak at SWIP Chengdu	corpus
+kstar	device	KSTAR托卡马克	KSTAR		active	Korea Superconducting Tokamak Advanced Research	corpus
+sparc	device	SPARC托卡马克	SPARC		active	Compact high-field HTS tokamak (CFS/MIT)	corpus
+arc	device	ARC紧凑聚变堆	ARC		active	Affordable Robust Compact reactor concept (CFS/MIT pilot plant design)	corpus
+step	device	STEP球形托卡马克	STEP		active	Spherical Tokamak for Energy Production (UKAEA)	corpus
+nstx-u	device	NSTX-U球形环装置	NSTX-U		active	National Spherical Torus Experiment Upgrade at PPPL	corpus
 mast-u	device	MAST-U	MAST-U		active	Mega Amp Spherical Tokamak Upgrade at CCFE	corpus
 cfetrcoolact	device	BEST	BEST		active	Blanket Engineering and Shielding Test facility (a.k.a. CFETRCOOLACT)	corpus
 sg-iii	device	神光三号	SG-III		active	Shenguang-III laser facility for ICF at CAEP	corpus
