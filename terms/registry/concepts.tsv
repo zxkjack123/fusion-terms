@@ -962,7 +962,7 @@ side-reaction	concept	副反应	side reaction		active	Parasitic neutron-producin
 radiation-dominated-regime	concept	辐射主导区间	radiation-dominated regime		active	High-temperature regime where radiation loss exceeds fusion power	corpus
 laser-boron-fusion	concept	激光硼聚变	laser-boron fusion		active	Laser-driven p-11B fusion scheme	corpus
 hb11-energy	organization	HB11能源公司	HB11 Energy		active	Australian laser p-B11 fusion company	corpus
-lpp-fusion	organization	LPP Fusion	LPP Fusion		active	US dense plasma focus p-B11 fusion company	corpus
+lpp-fusion	organization	LPP聚变公司	LPP Fusion		active	US dense plasma focus p-B11 fusion company	corpus
 fusion-product-spectrum	concept	聚变产物能谱	fusion product spectrum		active	Energy distribution spectrum of fusion reaction products	corpus
 power-density	metric	功率密度	power density		active	Fusion power per unit volume	corpus
 # ==== Batch 48: Core Plasma-Wall Interaction Processes ====
@@ -1001,7 +1001,7 @@ wcll	system	水冷锂铅包层	water-cooled lithium-lead	WCLL	active	EU water-co
 loss-of-vacuum-accident	concept	失真空事故	loss of vacuum accident	LOVA	active	Design basis accident: loss of vacuum boundary integrity	corpus
 neutron-activation	concept	中子活化	neutron activation		active	Activation of materials by neutron irradiation	corpus
 neutron-camera	diagnostic	中子照相机	neutron camera		active	Spatially-resolved neutron emission diagnostic	corpus
-helias	device	HELIAS	HELIAS		active	Helical-axis advanced stellarator concept	corpus
+helias	device	HELIAS仿星器	HELIAS		active	Helical-axis advanced stellarator concept	corpus
 quasi-symmetric-stellarator	concept	准对称仿星器	quasi-symmetric stellarator	QSS	active	Stellarator with quasi-symmetry in |B|	corpus
 coolant-loop	system	冷却回路	coolant loop		active	Primary/secondary coolant circulation loop	corpus
 power-conversion-system	system	能量转换系统	power conversion system	PCS	active	Heat-to-electricity conversion system	corpus
@@ -1149,18 +1149,18 @@ goodness-of-fit	metric	拟合优度	goodness of fit		active	Statistical measure 
 
 # ==== Batch 56: HPC / Parallel Computing / Workflow ====
 mpi	code	消息传递接口	MPI	MPI	active	Message Passing Interface for distributed parallel computing	corpus
-openmp	code	OpenMP	OpenMP	OpenMP	active	Shared-memory parallel programming API	corpus
+openmp	code	OpenMP共享内存并行编程接口	OpenMP	OpenMP	active	Shared-memory parallel programming API	corpus
 gpu-offloading	method	GPU卸载	GPU offloading		active	Offloading computation to GPU accelerators	corpus
-slurm	code	SLURM	SLURM	SLURM	active	Simple Linux Utility for Resource Management	corpus
-pbs	code	PBS	PBS	PBS	active	Portable Batch System job scheduler	corpus
+slurm	code	SLURM作业调度系统	SLURM	SLURM	active	Simple Linux Utility for Resource Management	corpus
+pbs	code	PBS批处理作业系统	PBS	PBS	active	Portable Batch System job scheduler	corpus
 batch-job	concept	批作业	batch job		active	Non-interactive queued computational job	corpus
 compute-node	concept	计算节点	compute node		active	HPC cluster worker node (distinct from mesh node)	corpus
 cpu-core	concept	CPU核心	CPU core		active	Processor core (distinct from plasma core)	corpus
 walltime	metric	墙钟时间	walltime		active	Elapsed real-time for a job	corpus
 scalability	metric	可扩展性	scalability		active	Performance improvement with added resources	corpus
 load-balancing	method	负载均衡	load balancing		active	Distributing work evenly across processors	corpus
-apptainer	code	Apptainer	Apptainer		active	HPC container runtime (formerly Singularity)	corpus
-singularity	code	Singularity	Singularity		active	Former name of Apptainer container runtime	corpus
+apptainer	code	Apptainer容器运行时	Apptainer		active	HPC container runtime (formerly Singularity)	corpus
+singularity	code	Singularity容器运行时	Singularity		active	Former name of Apptainer container runtime	corpus
 container	concept	容器	container		active	OS-level virtualization for reproducible computing	corpus
 ci-cd	method	持续集成/持续部署	CI/CD	CI/CD	active	Continuous Integration / Continuous Deployment	corpus
 regression-test	method	回归测试	regression test		active	Testing to ensure changes don't break existing functionality	corpus
@@ -1175,7 +1175,7 @@ weak-scaling	concept	弱扩展	weak scaling		active	Problem size proportional to
 memory-bandwidth	metric	内存带宽	memory bandwidth		active	Data transfer rate between memory and CPU	corpus
 cache-miss	concept	缓存未命中	cache miss		active	Failed cache lookup requiring main memory access	corpus
 interconnect	concept	互联网络	interconnect		active	Network connecting HPC nodes	corpus
-infiniband	concept	InfiniBand	InfiniBand		active	High-bandwidth low-latency interconnect	corpus
+infiniband	concept	InfiniBand高速互连	InfiniBand		active	High-bandwidth low-latency interconnect	corpus
 job-scheduler	code	作业调度器	job scheduler		active	Software managing HPC job queue	corpus
 queue	concept	队列	queue		active	Job scheduling queue/partition	corpus
 ssh-tunnel	method	SSH隧道	SSH tunnel		active	Encrypted forwarding of network connections	corpus
@@ -1190,8 +1190,8 @@ collision-estimator	method	碰撞估计器	collision estimator		active	MC tally 
 surface-current-tally	method	面电流计数	surface current tally		active	MC tally counting particles crossing a surface	corpus
 cell-flux-tally	method	栅元通量计数	cell flux tally		active	MC tally averaging flux over a cell volume	corpus
 mesh-tally	method	网格计数	mesh tally		active	MC tally on a superimposed mesh	corpus
-cadis	method	CADIS	CADIS	CADIS	active	Consistent Adjoint Driven Importance Sampling	corpus
-fw-cadis	method	FW-CADIS	FW-CADIS	FW-CADIS	active	Forward-Weighted CADIS for global variance reduction	corpus
+cadis	method	一致性伴随驱动重要性抽样	CADIS	CADIS	active	Consistent Adjoint Driven Importance Sampling	corpus
+fw-cadis	method	前向加权一致性伴随驱动重要性抽样	FW-CADIS	FW-CADIS	active	Forward-Weighted CADIS for global variance reduction	corpus
 source-biasing	method	源偏倚	source biasing		active	Biasing source particle sampling for variance reduction	corpus
 geometry-splitting	method	几何劈裂	geometry splitting		active	Cell importance-based variance reduction	corpus
 russian-roulette	method	俄罗斯轮盘赌	Russian roulette		active	Probabilistic particle termination for variance reduction	corpus
@@ -1225,7 +1225,7 @@ continuous-energy	concept	连续能量	continuous energy	CE	active	Continuous-en
 multigroup	concept	多群	multigroup	MG	active	Multigroup discretization of energy variable	corpus
 ace-format	concept	ACE格式	ACE format	ACE	active	A Compact ENDF data format for MC codes	corpus
 endf-format	concept	ENDF格式	ENDF format	ENDF	active	Evaluated Nuclear Data File format	corpus
-njoy	code	NJOY	NJOY	NJOY	active	Nuclear data processing code system	corpus
+njoy	code	NJOY核数据处理程序	NJOY	NJOY	active	Nuclear data processing code system	corpus
 cross-section-processing	method	截面处理	cross section processing		active	Processing evaluated data into transport-ready format	corpus
 thermal-scattering	concept	热散射	thermal scattering		active	Neutron scattering from bound atoms at thermal energies	corpus
 s-alpha-beta	concept	S(α,β)	S(alpha,beta)		active	Thermal scattering law data	corpus
@@ -1252,9 +1252,9 @@ burnup	metric	燃耗深度	burnup		active	Integrated energy production per unit 
 csg	method	构造实体几何	constructive solid geometry	CSG	active	Boolean-based solid modeling	corpus
 b-rep	method	边界表示	boundary representation	B-rep	active	Surface-based solid representation	corpus
 faceted-geometry	concept	面片化几何	faceted geometry		active	Triangulated surface geometry (DAGMC etc)	corpus
-cubit	code	Cubit	Cubit		active	Sandia/Coreform mesh generation tool	corpus
-trelis	code	Trelis	Trelis		active	Former commercial Cubit; now Coreform Cubit	corpus
-mcam	code	MCAM	MCAM		active	MC Auto-Modeling system	corpus
+cubit	code	Cubit网格生成工具	Cubit		active	Sandia/Coreform mesh generation tool	corpus
+trelis	code	Trelis网格生成工具	Trelis		active	Former commercial Cubit; now Coreform Cubit	corpus
+mcam	code	MCAM自动建模系统	MCAM		active	MC Auto-Modeling system	corpus
 tetrahedral-mesh	concept	四面体网格	tetrahedral mesh		active	Tet mesh for FEM/MC	corpus
 hexahedral-mesh	concept	六面体网格	hexahedral mesh		active	Hex mesh for FEM	corpus
 voxel-model	concept	体素模型	voxel model		active	Structured voxelized geometry	corpus
@@ -1268,17 +1268,17 @@ graveyard	concept	墓碑区	graveyard		active	MC geometry outer boundary region	
 void-region	concept	空区域	void region		active	Non-material space in MC geometry	corpus
 watertight-geometry	concept	水密几何	watertight geometry		active	Gap-free geometry required by DAGMC	corpus
 surface-mesh	concept	表面网格	surface mesh		active	Triangulated surface representation	corpus
-opencascade	code	OpenCASCADE	OpenCASCADE	OCC	active	Open-source CAD kernel	corpus
-moab	code	MOAB	MOAB		active	Mesh-Oriented datABase	corpus
-dagmc	code	DAGMC	DAGMC		active	Direct Accelerated Geometry Monte Carlo	corpus
-paramak	code	Paramak	Paramak		active	Parametric fusion geometry generator	corpus
+opencascade	code	OpenCASCADE开源CAD内核	OpenCASCADE	OCC	active	Open-source CAD kernel	corpus
+moab	code	MOAB网格数据库	MOAB		active	Mesh-Oriented datABase	corpus
+dagmc	code	DAGMC直接加速几何蒙特卡罗工具	DAGMC		active	Direct Accelerated Geometry Monte Carlo	corpus
+paramak	code	Paramak参数化聚变几何生成器	Paramak		active	Parametric fusion geometry generator	corpus
 cad-simplification	method	CAD简化	CAD simplification		active	Removing detail for MC/FEM	corpus
 conformal-mesh	concept	适体网格	conformal mesh		active	Body-fitted unstructured mesh	corpus
 
 # ==== Batch 60: Radiation Protection & Dosimetry ====
 ambient-dose-equivalent	metric	周围剂量当量	ambient dose equivalent		active	H*(10) operational dose quantity	corpus
 dose-conversion-coefficient	metric	剂量转换系数	dose conversion coefficient	DCC	active	Fluence-to-dose conversion factor	corpus
-icrp	organization	ICRP	ICRP	ICRP	active	International Commission on Radiological Protection	corpus
+icrp	organization	国际放射防护委员会	ICRP	ICRP	active	International Commission on Radiological Protection	corpus
 quality-factor	metric	品质因子	quality factor		active	Radiation quality factor Q (not circuit Q)	corpus
 organ-dose	metric	器官剂量	organ dose		active	Absorbed dose to specific organ	corpus
 committed-effective-dose	metric	待积有效剂量	committed effective dose		active	Integrated effective dose from internal exposure	corpus
@@ -1355,7 +1355,7 @@ flow-distribution	concept	流量分配	flow distribution		active	Coolant flow al
 pressure-vessel	system	压力容器	pressure vessel		active	Pressure-retaining vessel	corpus
 
 # ==== Batch 63: Software Engineering ====
-api	concept	API	API	API	active	Application Programming Interface	corpus
+api	concept	应用程序编程接口	API	API	active	Application Programming Interface	corpus
 sdk	concept	SDK	SDK	SDK	active	Software Development Kit	corpus
 refactoring	method	重构	refactoring		active	Code restructuring without changing behavior	corpus
 software-dependency	concept	软件依赖	dependency		active	Software package dependency (not physical)	corpus
