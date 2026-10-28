@@ -2026,3 +2026,24 @@ in-wall-shielding
 vessel-thermal-shield
 poloidal-field-power-supply
 thyristor-converter
+# --- T-4973 W2 batch 34 ---
+switching-network
+energy-dump
+weight-window-generator
+global-variance-reduction
+mesh-based-weight-window
+energy-biasing
+ultrasonic-testing
+radiographic-testing
+eddy-current-testing
+dye-penetrant
+variance-of-variance
+adjoint-flux
+response-matrix
+tallying-efficiency
+visible-spectroscopy
+x-ray-crystal-spectrometer
+divertor-spectroscopy
+fueling-rate
+pellet-penetration
+deep-fueling
