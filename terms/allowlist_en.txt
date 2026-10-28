@@ -1921,3 +1921,24 @@ partial-detachment
 reduced-order-model
 multi-physics-coupling
 multi-scale-modeling
+# --- T-4973 W2 batch 29 ---
+design-optimization
+commercialization-pathway
+social-license
+fusion-industry
+workforce-development
+venture-capital
+private-investment
+disruption-mitigation-system
+disruption-force
+disruption-runaway
+in-vessel-inspection
+end-effector
+blanket-replacement
+cassette-replacement
+energy-security
+decarbonization
+grid-stability
+proliferation-resistance
+fusion-safety-advantage
+clean-energy
