@@ -408,32 +408,32 @@ chease	code	CHEASE轴对称平衡程序	CHEASE		active	Cubic Hermite Element Axi
 eirene	code	EIRENE中性气体输运程序	EIRENE		active	Monte Carlo kinetic neutral gas transport code	corpus
 solps	code	SOLPS偏滤器等离子体模拟程序	SOLPS		active	SOL Plasma Simulator (B2-EIRENE coupling); predecessor of SOLPS-ITER	corpus
 b2	code	B2多流体边界等离子体程序	B2		active	Multi-fluid SOL/divertor plasma code (coupled with EIRENE)	corpus
-edge2d-eirene	code	EDGE2D-EIRENE	EDGE2D-EIRENE		active	2D fluid edge plasma + neutral kinetic code	corpus
-soledge2d	code	SOLEDGE2D	SOLEDGE2D		active	2D/3D edge transport code (CEA)	corpus
-div3d	code	DIV3D	DIV3D		active	3D field-line tracing code for divertor design	corpus
-emc3-eirene	code	EMC3-EIRENE	EMC3-EIRENE		active	3D Monte Carlo plasma-neutral code for stellarators / 3D tokamaks	corpus
-uedge	code	UEDGE	UEDGE		active	2D edge plasma fluid code (LLNL)	corpus
+edge2d-eirene	code	EDGE2D-EIRENE二维边界等离子体程序	EDGE2D-EIRENE		active	2D fluid edge plasma + neutral kinetic code	corpus
+soledge2d	code	SOLEDGE2D边界输运程序	SOLEDGE2D		active	2D/3D edge transport code (CEA)	corpus
+div3d	code	DIV3D磁力线追踪程序	DIV3D		active	3D field-line tracing code for divertor design	corpus
+emc3-eirene	code	EMC3-EIRENE三维等离子体中性粒子程序	EMC3-EIRENE		active	3D Monte Carlo plasma-neutral code for stellarators / 3D tokamaks	corpus
+uedge	code	UEDGE二维边界等离子体程序	UEDGE		active	2D edge plasma fluid code (LLNL)	corpus
 
 # -- Neutronics / nuclear analysis
-fluka	code	FLUKA	FLUKA		active	Monte Carlo particle transport code (CERN / INFN)	corpus
-geant4	code	Geant4	Geant4		active	Monte Carlo toolkit for particle physics & radiation transport	corpus
-phits	code	PHITS	PHITS		active	Particle and Heavy Ion Transport code System (JAEA)	corpus
-fispact-ii	code	FISPACT-II	FISPACT-II		active	Inventory / activation / transmutation calculation code (UKAEA)	corpus
-r2smesh	code	R2Smesh	R2Smesh		active	Rigorous 2-Step mesh-based shutdown dose rate method	corpus
-d1s	code	D1S	D1S		active	Direct 1-Step method for SDDR in MCNP	corpus
-supermc	code	SuperMC	SuperMC		active	Super Monte Carlo code for nuclear design (FDS team, INEST)	corpus
-tripoli	code	TRIPOLI	TRIPOLI		active	Monte Carlo 3D particle transport code (CEA)	corpus
+fluka	code	FLUKA蒙特卡罗粒子输运程序	FLUKA		active	Monte Carlo particle transport code (CERN / INFN)	corpus
+geant4	code	Geant4蒙特卡罗粒子输运工具包	Geant4		active	Monte Carlo toolkit for particle physics & radiation transport	corpus
+phits	code	PHITS粒子与重离子输运程序	PHITS		active	Particle and Heavy Ion Transport code System (JAEA)	corpus
+fispact-ii	code	FISPACT-II活化与嬗变计算程序	FISPACT-II		active	Inventory / activation / transmutation calculation code (UKAEA)	corpus
+r2smesh	code	R2Smesh网格化停堆剂量率方法	R2Smesh		active	Rigorous 2-Step mesh-based shutdown dose rate method	corpus
+d1s	code	D1S直接一步法	D1S		active	Direct 1-Step method for SDDR in MCNP	corpus
+supermc	code	SuperMC蒙特卡罗核设计程序	SuperMC		active	Super Monte Carlo code for nuclear design (FDS team, INEST)	corpus
+tripoli	code	TRIPOLI蒙特卡罗粒子输运程序	TRIPOLI		active	Monte Carlo 3D particle transport code (CEA)	corpus
 
 # -- Nuclear data libraries
-jeff	code	JEFF	JEFF		active	Joint Evaluated Fission and Fusion File (NEA)	corpus
-jendl	code	JENDL	JENDL		active	Japanese Evaluated Nuclear Data Library (JAEA)	corpus
-cendl	code	CENDL	CENDL		active	Chinese Evaluated Nuclear Data Library (CIAE)	corpus
-tendl	code	TENDL	TENDL		active	TALYS-based Evaluated Nuclear Data Library	corpus
-eaf	code	EAF	EAF		active	European Activation File (activation cross-sections)	corpus
-irdff	code	IRDFF	IRDFF		active	International Reactor Dosimetry and Fusion File (IAEA)	corpus
+jeff	code	联合评价裂变与聚变文件	JEFF		active	Joint Evaluated Fission and Fusion File (NEA)	corpus
+jendl	code	日本评价核数据库	JENDL		active	Japanese Evaluated Nuclear Data Library (JAEA)	corpus
+cendl	code	中国评价核数据库	CENDL		active	Chinese Evaluated Nuclear Data Library (CIAE)	corpus
+tendl	code	TALYS评价核数据库	TENDL		active	TALYS-based Evaluated Nuclear Data Library	corpus
+eaf	code	欧洲活化文件	EAF		active	European Activation File (activation cross-sections)	corpus
+irdff	code	国际反应堆剂量学与聚变文件	IRDFF		active	International Reactor Dosimetry and Fusion File (IAEA)	corpus
 
 # -- Structural / thermal / EM / multi-physics
-abaqus	code	Abaqus	Abaqus		active	Finite element structural / thermal analysis software	corpus
+abaqus	code	Abaqus有限元分析软件	Abaqus		active	Finite element structural / thermal analysis software	corpus
 nastran	code	Nastran	Nastran		active	Finite element structural analysis code (MSC / Siemens)	corpus
 fluent	code	Fluent	Fluent		active	CFD solver (ANSYS family)	corpus
 cfx	code	CFX	CFX		active	CFD solver for turbomachinery / multi-phase (ANSYS family)	corpus
