@@ -1482,3 +1482,24 @@ cusped-geometry
 cyclotron-instability
 cyclotron-resonance
 cyclotron-resonance-heating
+# --- T-4973 W2 batch 08 ---
+cylindrical-approximation
+d-alpha-light
+d-shaped-plasma
+degenerate-configuration
+diamagnetic-effect
+diamagnetic-plasma
+dispersion-relation
+displacement-of-plasma
+disruptive-instability
+dissociative-recombination
+divertor-physics
+double-null-equilibrium
+drift-cyclotron-resonance-instability
+drift-dissipative-instability
+drift-instability
+drift-kinetic-theory
+drift-orbits
+drift-surface
+driven-current
+dusty-plasma
