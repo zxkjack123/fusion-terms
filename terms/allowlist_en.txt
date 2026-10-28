@@ -1566,3 +1566,24 @@ low-temperature-plasma
 macroinstability-macroscopic-instability
 magnetic-mach-number
 magnetic-mirror-configuration
+# --- T-4973 W2 batch 12 ---
+magnetic-moment
+magnetic-viscosity
+magneto-acoustic-cyclotron-instability
+magnetohydrodynamic-shock-wave
+magnetohydrodynamic-turbulence
+magnetosonic-waves
+magnetohydrodynamic-instability
+minimum-average-b-configuration
+minimum-b-configuration
+mirror-instability
+mode-number
+monster-sawteeth
+multifaced-asymmetric-radiation-from-the-edge
+multipole-geometry-configuration
+negative-mass-instability
+neo-classical-theory
+neutral-drag-instability
+neutralized-plasma
+non-circular-cross-section
+null-point
