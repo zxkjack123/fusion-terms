@@ -3854,7 +3854,7 @@ conventional-island	zh	常规岛：聚变电站中布置汽轮发电机、冷却
 convergence-criterion	en	A threshold for iterative solution convergence.	corpus
 convergence-criterion	zh	收敛准则是迭代求解收敛的判定阈值。	corpus
 conveyance	zh	聚变/核工程术语，对应英文“conveyance”。	internal:dict-improvements
-coolant	en	A generic coolant working fluid concept; specific coolant types are separate concepts in the registry.	corpus
+coolant	en	A liquid that is used for cooling, such as an engine or a nuclear reactor.	https://www.oxfordlearnersdictionaries.com/definition/english/coolant
 coolant	zh	冷却剂：通用冷却工质概念；更具体的冷却剂种类在注册表中单独立项。	corpus
 coolant-chemistry	en	Chemical control of the coolant in a blanket.	corpus
 coolant-chemistry	zh	冷却剂化学是对增殖包层冷却剂的化学控制。	corpus
@@ -4018,7 +4018,7 @@ direct-cause	zh	聚变/核工程术语，对应英文“direct cause”。	inter
 direct-disposal	zh	聚变/核工程术语，对应英文“direct disposal”。	internal:dict-improvements
 direct-energy-conversion	en	Conversion of the kinetic energy of charged particles into electricity without an intermediate thermal cycle.	corpus
 direct-energy-conversion	zh	不经中间热循环而将带电粒子动能直接转换为电能。	corpus
-direct-internal-recycling	en	Recovery of unburned fuel directly from the exhaust gas and its reinjection into the plasma.	corpus
+direct-internal-recycling	en	Recovery and reinjection of unburned fuel directly from the exhaust.	corpus
 direct-internal-recycling	zh	直接内循环：直接从排气中回收未燃尽燃料并回注的处理方式。	corpus
 directional-dose-equivalent	zh	聚变/核工程术语，对应英文“directional dose equivalent”。	internal:dict-improvements
 discharge	zh	聚变/核工程术语，对应英文“discharge”。	internal:dict-improvements
