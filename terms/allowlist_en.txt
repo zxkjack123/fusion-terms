@@ -1963,3 +1963,24 @@ nuclear-heating-rate
 transmutation-rate
 primary-knock-on-atom
 appm
+# --- T-4973 W2 batch 31 ---
+energy-confinement
+particle-confinement
+impurity-confinement
+momentum-confinement
+fuel-processing
+deuterium-extraction
+torus-exhaust
+quench-propagation
+training-quench
+high-field-side
+neutron-multiplier-zone
+first-wall-panel
+back-supporting-structure
+stiffening-grid
+evaluated-nuclear-data
+cross-section-library
+reaction-rate-library
+decay-data-library
+thermocouple
+strain-gauge
