@@ -6142,3 +6142,13 @@ acp-deposition-coefficient	en	A rate coefficient for the deposition of particula
 acp-erosion-coefficient	en	A rate coefficient for the erosion of deposited corrosion products back into the coolant stream.	corpus
 dissolution-precipitation-coefficient	en	A rate coefficient for the dissolution of the oxide layer and the precipitation of dissolved species in coolant loops.	corpus
 acp-filter-model	en	A model of the removal of activated corrosion products by the coolant purification filter in source term codes.	corpus
+cate	zh	活化腐蚀产物源项分析程序：用于水冷回路活化腐蚀产物源项计算的 CATE 程序（NCEPU；CATE-V2.0/V3.0 版本线）。	corpus
+pactole	zh	PACTOLE程序：CEA 开发的、用于压水堆一回路活化腐蚀产物源项计算的程序。	corpus
+pactiter	zh	PACTITER程序：CEA 开发的、用于聚变水冷回路活化腐蚀产物源项计算的程序。	corpus
+tract	zh	TRACT程序：UKAEA 开发的、用于聚变水冷回路活化腐蚀产物源项计算的程序。	corpus
+oscar	zh	OSCAR程序：CEA/Framatome/EDF 开发的活化腐蚀产物计算程序，其 Oscar-fusion 变体用于聚变冷却回路。	corpus
+acp-source-term	zh	活化腐蚀产物源项：冷却剂回路中活化腐蚀产物活度的空间与时间分布。	corpus
+acp-deposition-coefficient	zh	沉积系数：颗粒态腐蚀产物沉积到冷却剂回路表面的速率系数。	corpus
+acp-erosion-coefficient	zh	侵蚀系数：已沉积腐蚀产物被侵蚀回冷却剂流中的速率系数。	corpus
+dissolution-precipitation-coefficient	zh	溶解沉淀系数：冷却剂回路中氧化层溶解与溶解态核素沉淀的速率系数。	corpus
+acp-filter-model	zh	过滤器计算模型：源项程序中描述冷却剂净化过滤器对活化腐蚀产物去除的模型。	corpus
