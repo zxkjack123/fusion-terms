@@ -1416,3 +1416,14 @@ near-surface-disposal
 geological-disposal
 decay-gamma-source
 rigorous-two-step
+# --- T-4973 W2 batch 04 ---
+pebble-bed
+mixed-pebble-bed
+alumina-coating
+erbium-oxide
+dbtt-shift
+boron-powder-injection
+nitrogen-seeding
+hartmann-number
+mhd-pressure-drop
+flow-channel-insert
