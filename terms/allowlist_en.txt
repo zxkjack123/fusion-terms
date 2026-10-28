@@ -1650,3 +1650,24 @@ balance-burning
 bitter-coil
 bumper-limiters
 bumpy-torus
+# --- T-4973 W2 batch 16 ---
+bundle-divertor
+central-solenoid-model-coil
+compact-device
+critical-density
+critical-surface
+current-limit
+dense-plasma-focus-device
+divertor-arrangement
+divertor-configuration
+doublet-device
+elmo-bumpy-torus
+elmo-bumpy-torus-s
+middleplane
+equatorial-port-extension
+ergodic-magnetic-divertor
+fast-wave-antennas
+fast-wave-current-drive
+ferromagnetic-inserts
+field-shaping-coil
+flat-top-current
