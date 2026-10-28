@@ -4190,7 +4190,7 @@ evaluation	zh	评估是经过仔细思考后对某事物的数量、价值或质
 eveda	en	The Engineering Validation and Engineering Design Activities phase of IFMIF.	corpus
 eveda	zh	工程验证与工程设计活动是 IFMIF 项目的一个阶段。	corpus
 event	zh	聚变/核工程术语，对应英文“event”。	internal:dict-improvements
-ex-vessel	en	A general ex-vessel context beyond LOCA-specific concepts.	corpus
+ex-vessel	en	Located outside the tokamak vacuum vessel; the term states position relative to the vacuum vessel only and sets no outer bound.	https://www.iter.org/machine/vacuum-vessel
 ex-vessel	zh	堆外指超越 LOCA 特定概念的一般堆外语境。	corpus
 ex-vessel-component	en	A collective term for components outside the vacuum vessel but inside the biological shield.	corpus
 ex-vessel-component	zh	真空室外部件是真空室外、生物屏蔽内部件的统称。	corpus
@@ -4500,7 +4500,7 @@ impurity-source	en	The impurity production yield and spatial distribution at the
 impurity-source	zh	杂质源是壁上杂质的产额与空间分布。	corpus
 impurity-transport	en	Transport of impurity ions within the confined plasma.	corpus
 impurity-transport	zh	杂质离子在约束等离子体中的输运。	corpus
-in-vessel	en	A general in-vessel context beyond LOCA-specific concepts.	corpus
+in-vessel	en	Located inside the tokamak vacuum vessel; the in-vessel components comprise the blanket, the divertor, the fuelling and internal pumping systems, the port plugs, the in-vessel coils and diagnostic sensors mounted directly on the vessel.	ITER-glossary
 in-vessel	zh	堆内指超越 LOCA 特定概念的一般堆内语境。	corpus
 in-vessel-component	en	A component mounted directly inside the vacuum vessel of a tokamak, such as the blanket, the divertor, part of the fuelling system, the internal pumping system, and diagnostic sensors.	GB/T-4960.9
 in-vessel-components	zh	聚变/核工程术语，对应英文“In-vessel components”。	internal:dict-improvements
@@ -5107,13 +5107,13 @@ pressure-driven-mode	en	MHD mode driven by the pressure gradient, such as the ba
 pressure-driven-mode	zh	压力驱动模是由等离子体压力梯度驱动的MHD模，典型例子为气球模。	corpus
 pressure-pedestal	en	The H-mode edge pressure pedestal structure.	corpus
 pressure-pedestal	zh	压力基座是 H 模边界压力基座结构。	corpus
-pressurized-water	en	A coolant type concept, for pressurized water.	corpus
+pressurized-water	en	Water kept under pressure so that it stays liquid above its normal boiling point; for example, the primary coolant of a pressurized water reactor is water at about 15.5 MPa and 330 degrees Celsius.	https://www.osti.gov/servlets/purl/2376331
 pressurized-water	zh	加压水是一种冷却剂类型概念。	corpus
 pressurizer	en	A pressure control vessel that maintains the pressure of a cooling loop system (WCLL/DCLL blanket loop).	corpus
 pressurizer	zh	稳压器是维持冷却回路系统压力的压力控制容器（WCLL/DCLL 包层回路）。	corpus
 pretreatment	zh	聚变/核工程术语，对应英文“pretreatment (of waste)”。	internal:dict-improvements
 preventive-maintenance	zh	聚变/核工程术语，对应英文“preventive maintenance”。	internal:dict-improvements
-primary-heat-transfer	en	A primary-loop thermal transfer concept.	corpus
+primary-heat-transfer	en	Removal of heat from the fusion chamber by the primary coolant loop, which transfers it to the intermediate loop; this primary loop is the primary heat transfer system (PHTS).	https://www.osti.gov/servlets/purl/3452321
 primary-heat-transfer	zh	一回路传热是一回路的热量传递概念。	corpus
 primary-limit	zh	聚变/核工程术语，对应英文“primary limit”。	internal:dict-improvements
 primary-loop	en	The primary coolant circuit that removes heat from the blanket and the divertor.	corpus
@@ -5262,7 +5262,7 @@ recuperator	en	Fusion/nuclear engineering term referring to 'recuperator' in tec
 recuperator	zh	聚变/核工程术语，指“回热器”这一技术概念。	internal:dict-improvements
 redeposition	en	The deposition again of material that has previously been eroded from a surface, so that eroded material is returned to the surfaces instead of being permanently removed.	corpus
 redeposition	zh	先前已从表面被侵蚀的材料重新沉积下来的过程，使被侵蚀的材料返回表面而不是被永久去除。	corpus
-reduced-activation	en	A general reduced-activation concept across materials.	corpus
+reduced-activation	en	Applies to materials whose neutron activation leaves waste that becomes recyclable after a shorter period; ITER states that the timetable of 100 years for recycling activated material could be reduced for future devices through the continued development of low activation materials.	https://www.iter.org/machine/safety-and-environment
 reduced-activation	zh	低活化是跨材料的一般低活化概念。	corpus
 reduced-mhd	en	A simplified MHD model valid for low-beta, large-aspect-ratio plasmas.	corpus
 reduced-mhd	zh	约化MHD是适用于低比压、大环径比等离子体的简化 MHD 模型。	corpus
@@ -5368,7 +5368,7 @@ safety-culture	zh	聚变/核工程术语，对应英文“safety culture”。	i
 safety-feature	zh	聚变/核工程术语，对应英文“safety feature (for design extension conditions)”。	internal:dict-improvements
 safety-function	zh	聚变/核工程术语，指“安全功能”这一技术概念。	internal:dict-improvements
 safety-group	zh	聚变/核工程术语，对应英文“safety group”。	internal:dict-improvements
-safety-important-component	en	A safety-important component, not to be confused with SiC/SiC composite.	corpus
+safety-important-component	en	A component belonging to the items classified as important to safety: items that are part of a safety group and/or whose malfunction or failure could lead to radiation exposure of site personnel or members of the public, an item here being a structure, system or component.	IAEA-safety-glossary
 safety-important-component	zh	安全重要物项是安全重要物项概念，须与 SiC/SiC 复合材料区分。	corpus
 safety-indicator	zh	聚变/核工程术语，对应英文“safety indicator”。	internal:dict-improvements
 safety-issues	zh	聚变/核工程术语，对应英文“safety issues”。	internal:dict-improvements
@@ -5812,7 +5812,7 @@ wave-plasma-interaction	en	Coupling and energy transfer between electromagnetic 
 wave-plasma-interaction	zh	波等离子体相互作用是电磁波与等离子体之间的耦合与能量传递。	corpus
 wccb	en	Water-cooled ceramic breeder blanket concept, used as the Chinese reference design.	corpus
 wccb	zh	水冷陶瓷增殖剂包层方案，作为中国参考设计。	corpus
-wcpb	en	A water-cooled pebble-bed blanket concept.	corpus
+wcpb	en	A breeder blanket design in which the breeder is held as a pebble bed and is cooled by water; it is studied alongside helium cooled and water cooled breeder blanket designs, among them the helium cooled pebble bed (HCPB) and the water cooled ceramic breeder (WCCB).	https://www.osti.gov/servlets/purl/2006672
 wcpb	zh	水冷球床包层是以水冷却的球床包层概念。	corpus
 weak-scaling	en	A scaling regime with problem size proportional to the processor count.	corpus
 weak-scaling	zh	弱扩展是问题规模随处理器数量成比例增大的扩展方式。	corpus
