@@ -1879,3 +1879,24 @@ hts-magnet
 demountable-coil
 jointed-magnet
 no-insulation-coil
+# --- T-4973 W2 batch 27 ---
+high-field-magnet
+equilibrium-field-coil
+commercial-fusion
+manufacturing-readiness-level
+elm-control
+rmp-coil
+plasma-shape-control
+scenario-development
+tritium-doubling-time
+tritium-processing-time
+tritium-inventory-control
+tritium-confinement
+direct-internal-recycling
+neutron-economy
+dust-safety
+volumetric-neutron-source
+irradiation-campaign
+irradiation-capsule
+dpa-rate
+fusion-power-density
