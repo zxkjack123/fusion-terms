@@ -1629,3 +1629,24 @@ stochastic-heating
 super-alfvenic-velocity
 superthermal-radiation
 tearing-mode-instability
+# --- T-4973 W2 batch 15 ---
+tearing-magnetic-islands
+thermal-particles
+transport-matrix-coefficient
+transport-scaling
+trapped-particle-instability
+triple-alpha-process
+turbulent-heating
+two-fluid-model-and-multi-fluid-model
+two-stream-instability
+universal-alfven-wave-instability
+velocity-space-instability
+whistler-wave
+whistler-wave-instability
+air-core-transformer
+auxiliary-heating-power
+baffle-element
+balance-burning
+bitter-coil
+bumper-limiters
+bumpy-torus
