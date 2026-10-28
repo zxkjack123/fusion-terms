@@ -3006,11 +3006,11 @@ ex-fusion	company	EX-Fusion公司	EX-Fusion		active	Japanese company developing 
 blue-laser-fusion	company	蓝激光聚变公司	Blue Laser Fusion		active	US company developing diode-pumped laser-driven IFE	corpus
 novatron	company	Novatron公司	Novatron		active	Swedish company developing magnetic mirror fusion reactor	corpus
 thea-energy	company	西娅能源公司	Thea Energy		active	US company developing planar-coil stellarator (formerly Princeton Stellarators)	corpus
-openstar-technologies	company	OpenStar Technologies	OpenStar Technologies		active	UK company developing stellarator fusion reactor	corpus
-gauss-fusion	company	Gauss Fusion	Gauss Fusion		active	German company developing HTS magnets and stellarator technology	corpus
-helicity-space	company	Helicity Space	Helicity Space		active	US company developing compact toroid fusion for space propulsion	corpus
-kronos-fusion-energy	company	Kronos Fusion Energy	Kronos Fusion Energy		active	US company developing advanced-fuel compact fusion	corpus
-princeton-stellarators	company	Princeton Stellarators	Princeton Stellarators		active	Former name of Thea Energy; PPPL-spinoff stellarator company	corpus
+openstar-technologies	company	OpenStar技术公司	OpenStar Technologies		active	UK company developing stellarator fusion reactor	corpus
+gauss-fusion	company	高斯聚变公司	Gauss Fusion		active	German company developing HTS magnets and stellarator technology	corpus
+helicity-space	company	螺旋度空间公司	Helicity Space		active	US company developing compact toroid fusion for space propulsion	corpus
+kronos-fusion-energy	company	克洛诺斯聚变能源公司	Kronos Fusion Energy		active	US company developing advanced-fuel compact fusion	corpus
+princeton-stellarators	company	普林斯顿仿星器公司	Princeton Stellarators		active	Former name of Thea Energy; PPPL-spinoff stellarator company	corpus
 
 # ---- Batch B: Fusion Commercialization Terms (2026-04-17) ----
 fusion-industry-association	organization	聚变工业协会	Fusion Industry Association	FIA	active	Global trade association tracking private fusion investment and milestones	corpus
@@ -3039,7 +3039,7 @@ alternative-confinement	concept	替代约束方案	alternative confinement		acti
 techno-economic-analysis	concept	技术经济分析	techno-economic analysis	TEA	active	Integrated assessment of technical feasibility and economic viability	corpus
 milestone-based-development	concept	里程碑驱动开发	milestone-based development		active	Development model linking funding tranches to technical milestones	corpus
 public-private-partnership	concept	公私合作	public-private partnership	PPP	active	Joint government-industry framework for fusion development	corpus
-arpa-e	organization	ARPA-E	ARPA-E		active	US Advanced Research Projects Agency–Energy; funds innovative fusion	corpus
+arpa-e	organization	美国能源部高级研究计划局	ARPA-E		active	US Advanced Research Projects Agency–Energy; funds innovative fusion	corpus
 fusion-energy-sciences	organization	聚变能源科学	Fusion Energy Sciences		active	US DOE Office of Science program funding fusion research	corpus
 
 # ---- Batch D: Power Balance & Grid Economics (2026-04-17) ----
@@ -3084,7 +3084,7 @@ equilibrium-field-coil	concept	平衡场线圈	equilibrium field coil	EF coil	ac
 # ---- Industrialization (工业化)
 commercial-fusion	concept	商业聚变	commercial fusion		active	Fusion energy as a commercially viable electricity source	corpus
 manufacturing-readiness-level	metric	制造就绪度	manufacturing readiness level	MRL	active	Scale measuring manufacturing maturity (MRL 1–10)	corpus
-a-fns	facility	A-FNS	A-FNS		active	Advanced Fusion Neutron Source; Japanese 14-MeV neutron irradiation facility	corpus
+a-fns	facility	先进聚变中子源装置	A-FNS		active	Advanced Fusion Neutron Source; Japanese 14-MeV neutron irradiation facility	corpus
 
 # ---- Batch G: Plasma Control (2026-04-17) ----
 elm-control	concept	ELM控制	ELM control		active	Methods to suppress or mitigate edge-localized modes	corpus
@@ -3131,8 +3131,8 @@ digital-engineering	concept	数字工程	digital engineering		active	Model-based
 mean-time-between-failures	metric	平均故障间隔时间	mean time between failures	MTBF	active	Average elapsed time between inherent failures of a component during operation	corpus
 
 # ---- Batch M: Major Reactor Programs (2026-04-17) ----
-eu-demo	device	EU-DEMO	EU-DEMO		active	European Demonstration Fusion Power Plant design led by EUROfusion	corpus
-k-demo	device	K-DEMO	K-DEMO		active	Korean Demonstration Fusion Power Plant concept by KFE	corpus
+eu-demo	device	欧洲聚变示范堆	EU-DEMO		active	European Demonstration Fusion Power Plant design led by EUROfusion	corpus
+k-demo	device	韩国聚变示范堆	K-DEMO		active	Korean Demonstration Fusion Power Plant concept by KFE	corpus
 iter-organization	organization	ITER国际组织	ITER Organization	IO	active	International organization responsible for building and operating ITER	corpus
 us-burning-plasma	concept	美国燃烧等离子体计划	US burning plasma program		active	US community-driven program for achieving and studying self-heated burning plasmas	corpus
 
