@@ -1427,3 +1427,16 @@ nitrogen-seeding
 hartmann-number
 mhd-pressure-drop
 flow-channel-insert
+# --- T-4973 W2 batch 05 ---
+fusion-reactor
+fusion-device
+liquid-metal
+cooling-system
+conceptual-design
+structural-design
+computational-method
+S(alpha,beta)
+biological-shielding
+chemical-sputtering
+sputtering-yield
+desorption
