@@ -120,3 +120,46 @@ git status --porcelain .github/plans/t4973-batches/   # 应无输出（幂等）
 - 后续每个批次任务：`--ids-file <本目录的某个批文件>` → 用 `scripts/registry_batch_verify.py`
   （对应模式）验收 → commit（message 带 `#T-4973`）。
 - 门禁 RED→GREEN 证据（T0.11 交付）：见同目录 `red-green.md`。
+
+## W3b（D2-6=A 工作集，T3.0 产出，2026-10-28）
+
+**为什么需要独立工作集**：D2-6=A 要求为 **169 个** `preferred_zh == preferred_en` 且不含 CJK 的
+concept 补中文首选名；实测这批 id **全部不在 `w3.ids`**（交集 0），其中 **9** 个在 `w2.ids`、
+**28** 个为专名（`company`/`organization`/`facility`，`proper_excluded`）。既有 5 个集合均无法承接
+⇒ 新增 `w3b.ids`（169 → 9 批：20×8 + 9）。
+
+| 项 | 值 |
+|---|---|
+| `w3b.ids` | **169** |
+| 批文件 | `w3b_b01.ids` … `w3b_b09.ids` |
+| 每批大小 | 20×8 + 9 |
+| `w2.ids ∩ w3b.ids` | **9**（`vmec`/`desc`/`simsopt`/`c-2u`/`eu-demo`/`gamma-10`/`helion-trenta`/`k-demo`/`start-device`） |
+| `w3.ids ∩ w3b.ids` | **0** |
+| category 构成 | code 97 / device 30 / company 23 / organization 6 / material 5 / concept 5 / method 2 / facility 1 |
+
+生成命令（确定性、可复跑；`split` 序号从 00 起，需 +1 重命名为 `b01…b09`）：
+
+```bash
+python3 -c "import re;rows=[l.rstrip('\n').split('\t') for l in open('terms/registry/concepts.tsv',encoding='utf-8') if not l.startswith('#') and l.strip()];ids=[r[0] for r in rows if len(r)==8 and r[2]==r[3] and r[2] and not re.search(r'[\u3400-\u9fff]',r[2])];open('/tmp/opencode/t4973-w3b/w3b.ids','w').write('\n'.join(ids)+'\n');print(len(ids))"
+split -l 20 -d -a 2 --additional-suffix=.ids /tmp/opencode/t4973-w3b/w3b.ids /tmp/opencode/t4973-w3b/w3b_b
+```
+
+> ⚠️ 不要用 `mv` 顺序重命名 `b00→b01…`（会级联覆盖，只剩 1 个文件）；必须 `cp` 到目标名（见 T3.0 执行记录）。
+
+自检：
+
+```bash
+wc -l .github/plans/t4973-batches/w3b.ids                                  # 169
+find .github/plans/t4973-batches -maxdepth 1 -name 'w3b_b*.ids' | wc -l    # 9
+cat .github/plans/t4973-batches/w3b_b*.ids | wc -l                         # 169
+comm -12 <(sort .../w2.ids) <(sort .../w3b.ids) | wc -l                     # 9
+comm -12 <(sort .../w3.ids) <(sort .../w3b.ids) | wc -l                     # 0
+```
+
+**能失败证明（变异法）**：副本中删 `w3b_b01.ids` 一行 → 合计 169 → **168**（已实测）。
+
+**执行约束**：
+- 批验收 `.venv/bin/python scripts/registry_batch_verify.py --mode names --ids-file <w3b_bNN.ids> --expect <N> --check-urls` → exit 0；**禁止** `--allow-latin-names`。
+- 只改 `terms/registry/concepts.tsv` 的 `preferred_zh` 槽位；不得改 `preferred_en`/`category`/`notes`。
+- **28 个专名**（company/organization/facility）补中文名后**仍不得进入 IME 词表**（`proper_excluded` 口径不变）。
+- 中文名须为**可读中文术语名**（不得以拉丁串/拼音/无意义音译充数），且**不含空白**（`build_terms` 空白禁令）。
