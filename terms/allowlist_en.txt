@@ -1354,3 +1354,23 @@ acceptable-tritium-dose
 # --- radiation protection / shielding metrics (HVL / TVL) ---
 half-value-layer
 tenth-value-layer
+# --- T-4973 W2 batch 01 ---
+cfetr-design
+halo-current
+deuterium-tritium-plasma
+dt-fuel-cycle
+line-radiation
+thermal-force
+debye-shielding
+plasma-resistivity
+field-line-tracing
+lower-hybrid-heating
+neutral-beam-current-drive
+high-recycling
+ceramic-breeder
+wcll
+loss-of-vacuum-accident
+quasi-symmetric-stellarator
+power-conversion-system
+maintenance-period
+gyrokinetic-simulation
