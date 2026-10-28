@@ -2068,3 +2068,24 @@ Reattachment
 divertor-erosion
 Buckling
 stress-relaxation
+# --- T-4973 W2 batch 36 ---
+fatigue-crack-growth
+seismic-analysis
+disruption-avoidance
+runaway-mitigation
+physics-informed-neural-network
+bayesian-optimization
+transfer-learning
+gaussian-process
+Beryllide
+pebble-packing-fraction
+crush-load
+lithium-burnup
+joule-heating
+lorentz-force
+flux-swing
+Volt-Second
+type-i-elm
+grassy-elm
+elm-free-regime
+elm-frequency
