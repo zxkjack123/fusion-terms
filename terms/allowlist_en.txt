@@ -1837,3 +1837,24 @@ z-machine
 center-column
 cs-free-startup
 merging-compression
+# --- T-4973 W2 batch 25 ---
+high-elongation
+START
+first-plasma
+net-electricity
+fusion-demonstrator
+modular-fusion-reactor
+isotope-production
+fusion-neutron-application
+private-fusion-investment
+recirculating-power-fraction
+plant-efficiency
+scientific-q
+engineering-q
+compact-fusion
+high-field-approach
+alternative-confinement
+techno-economic-analysis
+milestone-based-development
+public-private-partnership
+baseload
