@@ -1374,3 +1374,24 @@ quasi-symmetric-stellarator
 power-conversion-system
 maintenance-period
 gyrokinetic-simulation
+# --- T-4973 W2 batch 02 ---
+gyro-bohm-scaling
+turbulent-diffusion
+particle-pinch
+thermodiffusion
+external-kink
+sausage-instability
+pressure-driven-mode
+current-driven-mode
+ideal-mhd-stability
+resistive-instability
+global-alfven-eigenmode
+parallel-heat-flux
+filament
+divertor-leg
+flux-tube
+connection-length
+wetted-area
+fuel-cycle
+protium
+tritium-storage
