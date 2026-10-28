@@ -2047,3 +2047,24 @@ divertor-spectroscopy
 fueling-rate
 pellet-penetration
 deep-fueling
+# --- T-4973 W2 batch 35 ---
+deuterium-pellet
+hot-pressing
+cold-spray
+functional-gradient-material
+roots-pump
+in-vessel-transporter
+viewing-system
+liquid-metal-embrittlement
+pitting-corrosion
+corrosion-allowance
+dissolution-rate
+parasitic-absorption
+rf-sheath
+antenna-phasing
+x-point-radiator
+strike-point-sweeping
+Reattachment
+divertor-erosion
+Buckling
+stress-relaxation
