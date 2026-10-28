@@ -5836,7 +5836,7 @@ zonal-flow	en	Flow that is symmetric in the toroidal and poloidal directions and
 zonal-flow	zh	在环向和极向均对称、用于调节等离子体湍流的流动。	corpus
 adjoint-flux	en	The importance function obtained by solving the adjoint transport equation.	corpus
 adjoint-flux	zh	伴随通量：通过求解伴随输运方程得到的重要性函数。	corpus
-antenna-phasing	en	Fusion/nuclear engineering term referring to 'Antenna Phasing' in technical context.	internal:dict-improvements
+antenna-phasing	en	Relative phase setting between antenna straps to control launched wave spectrum.	corpus
 antenna-phasing	zh	射频天线各条带之间的相对相位设定，用于控制发射波的平行折射率谱。	corpus
 appm	en	Fusion/nuclear engineering term corresponding to 'appm'.	internal:dict-improvements
 appm	zh	聚变/核工程术语，指“appm”这一技术概念。	internal:dict-improvements
@@ -5862,7 +5862,7 @@ cold-spray	en	A solid-state coating process depositing powder particles at super
 cold-spray	zh	冷喷涂：在固态下以超音速喷射颗粒并沉积成涂层、不使粉末熔化的工艺。	corpus
 coolant-compatibility	en	Fusion/nuclear engineering term corresponding to 'coolant compatibility'.	internal:dict-improvements
 coolant-compatibility	zh	聚变/核工程术语，指“coolant compatibility”这一技术概念。	internal:dict-improvements
-corrosion-allowance	en	Fusion/nuclear engineering term referring to 'Corrosion Allowance' in technical context.	internal:dict-improvements
+corrosion-allowance	en	Additional wall thickness added to structural design to account for material loss by corrosion.	corpus
 corrosion-allowance	zh	为补偿运行期腐蚀造成的材料损失，在结构设计中额外增加的壁厚。	corpus
 critical-current-density	en	Fusion/nuclear engineering term corresponding to 'critical current density'.	internal:dict-improvements
 critical-current-density	zh	聚变/核工程术语，指“critical current density”这一技术概念。	internal:dict-improvements
@@ -5894,11 +5894,11 @@ deuterium-retention	en	Fusion/nuclear engineering term corresponding to 'deuteri
 deuterium-retention	zh	聚变/核工程术语，指“deuterium retention”这一技术概念。	internal:dict-improvements
 dissimilar-metal-weld	en	Fusion/nuclear engineering term corresponding to 'dissimilar metal weld'.	internal:dict-improvements
 dissimilar-metal-weld	zh	聚变/核工程术语，指“dissimilar metal weld”这一技术概念。	internal:dict-improvements
-dissolution-rate	en	Fusion/nuclear engineering term referring to 'Dissolution Rate' in technical context.	internal:dict-improvements
+dissolution-rate	en	Rate of structural material mass loss into a flowing liquid metal or coolant.	corpus
 dissolution-rate	zh	结构材料在流动液态金属或冷却剂中的质量损失速率。	corpus
 dissolved-hydrogen	en	Fusion/nuclear engineering term corresponding to 'dissolved hydrogen'.	internal:dict-improvements
 dissolved-hydrogen	zh	聚变/核工程术语，指“dissolved hydrogen”这一技术概念。	internal:dict-improvements
-divertor-erosion	en	Fusion/nuclear engineering term referring to 'Divertor Erosion' in technical context.	internal:dict-improvements
+divertor-erosion	en	Material removal from divertor target surfaces due to plasma particle and heat flux bombardment.	corpus
 divertor-erosion	zh	偏滤器靶板表面在等离子体粒子与热流轰击下发生材料去除的过程。	corpus
 divertor-spectroscopy	en	Optical spectroscopic diagnostics dedicated to divertor plasma characterization.	corpus
 divertor-spectroscopy	zh	偏滤器光谱诊断：专门用于偏滤器等离子体特性测量的光谱诊断方法。	corpus
@@ -5954,7 +5954,7 @@ grid-stability	en	Fusion/nuclear engineering term corresponding to 'grid stabili
 grid-stability	zh	聚变/核工程术语，指“grid stability”这一技术概念。	internal:dict-improvements
 heating-and-current-drive	en	Fusion/nuclear engineering term corresponding to 'heating and current drive'.	internal:dict-improvements
 heating-and-current-drive	zh	聚变/核工程术语，指“heating and current drive”这一技术概念。	internal:dict-improvements
-helium-leak-test	en	Fusion/nuclear engineering term referring to 'Helium Leak Test' in technical context.	internal:dict-improvements
+helium-leak-test	en	A standard leak detection method using helium as a tracer gas with mass spectrometric detection.	corpus
 helium-leak-test	zh	以氦为示踪气体、经质谱检测实现泄漏定位与定量的标准检漏方法。	corpus
 helium-refrigerator	en	Fusion/nuclear engineering term corresponding to 'helium refrigerator'.	internal:dict-improvements
 helium-refrigerator	zh	聚变/核工程术语，指“helium refrigerator”这一技术概念。	internal:dict-improvements
@@ -5966,7 +5966,7 @@ hts-tape	en	Fusion/nuclear engineering term corresponding to 'HTS tape'.	interna
 hts-tape	zh	聚变/核工程术语，指“HTS tape”这一技术概念。	internal:dict-improvements
 impurity-confinement	en	Fusion/nuclear engineering term corresponding to 'impurity confinement'.	internal:dict-improvements
 impurity-confinement	zh	聚变/核工程术语，指“impurity confinement”这一技术概念。	internal:dict-improvements
-in-vessel-transporter	en	Fusion/nuclear engineering term referring to 'In-Vessel Transporter' in technical context.	internal:dict-improvements
+in-vessel-transporter	en	A remote handling vehicle operating inside the vacuum vessel for blanket and divertor replacement.	corpus
 in-vessel-transporter	zh	在真空容器内运行的遥控操作运输装置，用于包层与偏滤器等部件更换。	corpus
 in-wall-shielding	en	Fusion/nuclear engineering term corresponding to 'in-wall shielding'.	internal:dict-improvements
 in-wall-shielding	zh	聚变/核工程术语，指“in-wall shielding”这一技术概念。	internal:dict-improvements
@@ -5982,11 +5982,11 @@ life-cycle-assessment	en	Fusion/nuclear engineering term corresponding to 'life-
 life-cycle-assessment	zh	聚变/核工程术语，指“life-cycle assessment”这一技术概念。	internal:dict-improvements
 liquid-helium	en	Fusion/nuclear engineering term corresponding to 'liquid helium'.	internal:dict-improvements
 liquid-helium	zh	聚变/核工程术语，指“liquid helium”这一技术概念。	internal:dict-improvements
-liquid-metal-embrittlement	en	Fusion/nuclear engineering term referring to 'Liquid Metal Embrittlement' in technical context.	internal:dict-improvements
+liquid-metal-embrittlement	en	Degradation of structural material ductility due to contact with liquid metals.	corpus
 liquid-metal-embrittlement	zh	结构材料因接触液态金属而塑性下降的退化现象。	corpus
 magnet-protection-system	en	Fusion/nuclear engineering term corresponding to 'magnet protection system'.	internal:dict-improvements
 magnet-protection-system	zh	聚变/核工程术语，指“magnet protection system”这一技术概念。	internal:dict-improvements
-mass-spectrometer	en	Fusion/nuclear engineering term referring to 'Mass Spectrometer' in technical context.	internal:dict-improvements
+mass-spectrometer	en	An instrument for identifying gas species by mass-to-charge ratio separation.	corpus
 mass-spectrometer	zh	按质荷比分离并识别气体组分的仪器。	corpus
 mesh-based-weight-window	en	A weight window defined on a structured or unstructured spatial mesh.	corpus
 mesh-based-weight-window	zh	网格权窗：在结构化或非结构化空间网格上定义的权窗。	corpus
@@ -6008,7 +6008,7 @@ nuclear-heating-rate	en	Fusion/nuclear engineering term corresponding to 'nuclea
 nuclear-heating-rate	zh	聚变/核工程术语，指“nuclear heating rate”这一技术概念。	internal:dict-improvements
 nucleate-boiling	en	Fusion/nuclear engineering term corresponding to 'nucleate boiling'.	internal:dict-improvements
 nucleate-boiling	zh	聚变/核工程术语，指“nucleate boiling”这一技术概念。	internal:dict-improvements
-parasitic-absorption	en	Fusion/nuclear engineering term referring to 'Parasitic Absorption' in technical context.	internal:dict-improvements
+parasitic-absorption	en	Unintended RF power absorption by plasma edge, antenna structure, or Faraday screen.	corpus
 parasitic-absorption	zh	等离子体边界、天线结构或法拉第屏蔽上非预期的射频功率吸收。	corpus
 particle-confinement	en	Fusion/nuclear engineering term corresponding to 'particle confinement'.	internal:dict-improvements
 particle-confinement	zh	聚变/核工程术语，指“particle confinement”这一技术概念。	internal:dict-improvements
@@ -6016,13 +6016,13 @@ pellet-penetration	en	The depth to which a fuel pellet penetrates into the plasm
 pellet-penetration	zh	弹丸穿透深度：燃料弹丸进入等离子体后、在完全烧蚀前所达到的深度。	corpus
 permeation-rate	en	Fusion/nuclear engineering term corresponding to 'permeation rate'.	internal:dict-improvements
 permeation-rate	zh	聚变/核工程术语，指“permeation rate”这一技术概念。	internal:dict-improvements
-pitting-corrosion	en	Fusion/nuclear engineering term referring to 'Pitting Corrosion' in technical context.	internal:dict-improvements
+pitting-corrosion	en	Localized corrosion forming small cavities in metal surfaces.	corpus
 pitting-corrosion	zh	在金属表面形成小孔坑的局部腐蚀。	corpus
 poloidal-field-power-supply	en	The electrical power supply system for the poloidal field coils.	corpus
 poloidal-field-power-supply	zh	极向场电源：为极向场线圈供电的电源系统。	corpus
 powder-metallurgy	en	A materials processing route using metal or ceramic powder consolidation via pressing and sintering.	corpus
 powder-metallurgy	zh	粉末冶金：通过压制与烧结使金属或陶瓷粉末固结的材料制备路线。	corpus
-power-coupling	en	Fusion/nuclear engineering term referring to 'Power Coupling' in technical context.	internal:dict-improvements
+power-coupling	en	Efficiency of RF power transfer from antenna or waveguide to the plasma.	corpus
 power-coupling	zh	射频功率由天线或波导传输至等离子体的效率。	corpus
 primary-knock-on-atom	en	Fusion/nuclear engineering term corresponding to 'primary knock-on atom'.	internal:dict-improvements
 primary-knock-on-atom	zh	聚变/核工程术语，指“primary knock-on atom”这一技术概念。	internal:dict-improvements
@@ -6040,21 +6040,21 @@ radiographic-testing	en	Non-destructive examination using X-ray or gamma-ray ima
 radiographic-testing	zh	射线检测：利用X射线或伽马射线成像的无损检测方法。	corpus
 reaction-rate-library	en	Fusion/nuclear engineering term corresponding to 'reaction rate library'.	internal:dict-improvements
 reaction-rate-library	zh	聚变/核工程术语，指“reaction rate library”这一技术概念。	internal:dict-improvements
-reattachment	en	Fusion/nuclear engineering term referring to 'Reattachment' in technical context.	internal:dict-improvements
+reattachment	en	Transition from detached to attached divertor plasma regime.	corpus
 reattachment	zh	偏滤器等离子体由脱靶态向附着态转变的过程。	corpus
 recycling-rate	en	Fusion/nuclear engineering term corresponding to 'recycling rate'.	internal:dict-improvements
 recycling-rate	zh	聚变/核工程术语，指“recycling rate”这一技术概念。	internal:dict-improvements
-remote-cutting	en	Fusion/nuclear engineering term referring to 'Remote Cutting' in technical context.	internal:dict-improvements
+remote-cutting	en	Cutting of pipes and components performed by remote handling tools in activated environments.	corpus
 remote-cutting	zh	在活化环境下由遥控操作工具完成的管道与部件切割。	corpus
-remote-welding	en	Fusion/nuclear engineering term referring to 'Remote Welding' in technical context.	internal:dict-improvements
+remote-welding	en	Welding of pipes and components performed by remote handling tools in activated environments.	corpus
 remote-welding	zh	在活化环境下由遥控操作工具完成的管道与部件焊接。	corpus
 response-matrix	en	A matrix relating boundary or interface fluxes for coupled region calculations.	corpus
 response-matrix	zh	响应矩阵：用于耦合分区计算、关联边界或界面通量的矩阵。	corpus
-rf-sheath	en	Fusion/nuclear engineering term referring to 'RF Sheath' in technical context.	internal:dict-improvements
+rf-sheath	en	Rectified sheath potential formed near antenna structures due to RF fields.	corpus
 rf-sheath	zh	射频场作用下在天线结构附近形成的整流鞘电位。	corpus
 rf-window	en	Fusion/nuclear engineering term corresponding to 'RF window'.	internal:dict-improvements
 rf-window	zh	聚变/核工程术语，指“RF window”这一技术概念。	internal:dict-improvements
-roots-pump	en	Fusion/nuclear engineering term referring to 'Roots Pump' in technical context.	internal:dict-improvements
+roots-pump	en	A positive displacement vacuum pump using counter-rotating lobed rotors.	corpus
 roots-pump	zh	利用反向旋转叶形转子实现容积式抽气的真空泵。	corpus
 roughing-pump	en	A pump used for initial evacuation from atmospheric pressure to medium vacuum.	corpus
 roughing-pump	zh	粗抽泵：用于自大气压抽至中真空的初始抽气泵。	corpus
@@ -6070,7 +6070,7 @@ stiffening-grid	en	Fusion/nuclear engineering term corresponding to 'stiffening 
 stiffening-grid	zh	聚变/核工程术语，指“stiffening grid”这一技术概念。	internal:dict-improvements
 strain-gauge	en	Fusion/nuclear engineering term corresponding to 'strain gauge'.	internal:dict-improvements
 strain-gauge	zh	聚变/核工程术语，指“strain gauge”这一技术概念。	internal:dict-improvements
-strike-point-sweeping	en	Fusion/nuclear engineering term referring to 'Strike Point Sweeping' in technical context.	internal:dict-improvements
+strike-point-sweeping	en	Controlled oscillation of the divertor strike point to distribute heat load over a wider area.	corpus
 strike-point-sweeping	zh	使偏滤器打击点受控往复移动、以将热负荷展布于更大面积的技术。	corpus
 structural-material	en	Fusion/nuclear engineering term corresponding to 'structural material'.	internal:dict-improvements
 structural-material	zh	聚变/核工程术语，指“structural material”这一技术概念。	internal:dict-improvements
@@ -6110,7 +6110,7 @@ variance-of-variance	en	A second-order convergence diagnostic for Monte Carlo ta
 variance-of-variance	zh	方差的方差：用于评估蒙特卡罗计数可靠性的二阶收敛诊断量。	corpus
 vessel-thermal-shield	en	Fusion/nuclear engineering term corresponding to 'vessel thermal shield'.	internal:dict-improvements
 vessel-thermal-shield	zh	聚变/核工程术语，指“vessel thermal shield”这一技术概念。	internal:dict-improvements
-viewing-system	en	Fusion/nuclear engineering term referring to 'Viewing System' in technical context.	internal:dict-improvements
+viewing-system	en	A camera and lighting system providing visual feedback for remote handling operations.	corpus
 viewing-system	zh	为遥控操作提供视觉反馈的摄像与照明系统。	corpus
 visible-spectroscopy	en	Optical emission spectroscopy in the visible wavelength range for impurity and edge plasma diagnostics.	corpus
 visible-spectroscopy	zh	可见光谱诊断：用于杂质与边界等离子体诊断的可见波段光发射光谱测量。	corpus
@@ -6124,7 +6124,7 @@ weight-window-generator	en	An automated tool that generates space-energy weight 
 weight-window-generator	zh	权窗生成器：自动生成空间-能量权窗的工具。	corpus
 weld-inspection	en	Fusion/nuclear engineering term corresponding to 'weld inspection'.	internal:dict-improvements
 weld-inspection	zh	聚变/核工程术语，指“weld inspection”这一技术概念。	internal:dict-improvements
-x-point-radiator	en	Fusion/nuclear engineering term referring to 'X-Point Radiator' in technical context.	internal:dict-improvements
+x-point-radiator	en	Radiation enhancement regime near the X-point for divertor heat flux mitigation.	corpus
 x-point-radiator	zh	为缓解偏滤器热流而在X点附近形成的辐射增强运行区制。	corpus
 x-ray-crystal-spectrometer	en	A Bragg crystal spectrometer for high-resolution X-ray line emission measurements.	corpus
 x-ray-crystal-spectrometer	zh	X射线晶体谱仪：用于高分辨X射线线发射测量的布拉格晶体谱仪。	corpus
