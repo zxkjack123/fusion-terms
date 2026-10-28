@@ -1587,3 +1587,24 @@ neutral-drag-instability
 neutralized-plasma
 non-circular-cross-section
 null-point
+# --- T-4973 W2 batch 13 ---
+open-magnetic-configuration
+operating-point
+operating-space
+optimized-shear
+pedestal-physics
+peeling-mode
+pfirsch-schulueter-regime
+pinch-effect
+plasma-chemistry
+plasma-diffusion-and-mobility
+plasma-geometry
+plasma-neutrality-and-debye-shield
+plasma-oscillation
+plasma-pressure
+plasma-profiles
+plasma-purity
+plasma-radiation
+plasma-shock-wave
+plasma-volume
+plasma-wave
