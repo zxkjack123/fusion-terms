@@ -1691,3 +1691,24 @@ l-h-threshold-power
 limiter-system
 linear-pinch
 lip-seal
+# --- T-4973 W2 batch 18 ---
+low-aspect-ratio
+magnetic-field-component
+magnetic-pumping
+magnetic-quench-detection
+main-transmission-line
+molecular-ion-injection-concept
+nb-sn-superconductor
+nb-al-superconductor
+nbti-alloy-superconductor
+negative-ion-neutral-injector
+neutral-beam
+ohmic-heating-system
+operating-margins
+operating-parameter
+overturning-moment
+pancake-winding
+particle-exhaust
+pinch-device
+plasma-heating
+poloidal-divertor
