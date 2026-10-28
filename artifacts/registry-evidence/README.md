@@ -5,7 +5,7 @@ Capture mechanical registry checks and their inputs; this does not replace bilin
 
 ## Commands
 Run `python3 scripts/registry_evidence_bundle.py --compare` (default `--profile w0`).
-Use `--profile all` to check full quality; unfinished W1 work currently makes it fail.
+Use `--profile all` to check full quality (stricter than `w0`; passes once W1 is complete).
 Use `--reuse <bundle>` with the original profile to revalidate saved evidence.
 
 ## Layout

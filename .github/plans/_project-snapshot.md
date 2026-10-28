@@ -1,7 +1,7 @@
 # Project Snapshot — fusion-terms
 
 **Generated**: 2026-10-25
-**Updated**: 2026-10-27 (registry evidence bundle adoption; `scripts/registry_evidence_bundle.py` + `artifacts/registry-evidence/` — see `docs/notes/2026-10-27-dev-orchestrator-evidence-adoption.md`)
+**Updated**: 2026-10-28 (T-4973 W1 complete — `--profile all` evidence gate now passes; snapshot registry counts re-verified against `pipeline.validate_registry`; evidence-bundle adoption context: `docs/notes/2026-10-27-dev-orchestrator-evidence-adoption.md`)
 **Release**: `v2026.10.25` (tag → commit 8299146); registry counts below are that release's
 
 ## Architecture
@@ -75,7 +75,8 @@ ruff check . && ruff format --check .               # Lint + format check
 - Evidence bundle (read-only gate capture): `scripts/registry_evidence_bundle.py --compare` (default
   `--profile w0`) captures gate inputs/outputs into `artifacts/registry-evidence/<UTC-stamp>/`;
   bundles are machine-local and gitignored (only `artifacts/registry-evidence/README.md` is
-  tracked). `--profile all` is expected to fail until T-4973 W1 completes.
+  tracked). `--profile all` now passes (T-4973 W1 complete; verified `--compare --profile all`
+  ⇒ exit 0, `status=pass`) and is the stricter pre-release profile.
 - **`ruff format --check .` also covers fenced code blocks inside Markdown.** ruff is
   pinned (`ruff==0.17.2` in `requirements-dev.txt`, `ruff-pre-commit` rev in
   `.pre-commit-config.yaml`) because an unpinned floor silently reddened CI for two
