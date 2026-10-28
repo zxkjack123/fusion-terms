@@ -207,3 +207,16 @@ python3 -c "import json;d=json.load(open('/tmp/cov.json'));assert d['coverage_pc
   1. 7 个含空格 zh 的处置**授权来源**：验收代理无法从委派提示看到用户原话 → 本条由父代理补证：**用户 2026-10-28 在本会话经 `question` 工具对选项「跳过并记录（推荐）」作出选择**（选项集：跳过并记录 / 修正 registry / 放宽 build_terms / 原样写入并接受构建失败）。技术冲突本身已由验收代理独立复现。
   2. 文档口径差：§4.2 与计划 line 705 对 denylist 10 项的「写入/已存在」描述层级不同（cosmetic，无需动作）。
   3. `9c4c8b1` 删除 1 行 —— 经验收确认为**空行**（非词条），属基线修复；计划「不得删除既有行」按绝对措辞在此留痕。
+
+## 8. W3b 完成后的清理复跑（2026-10-28，W3b 收口时补记）
+
+W3b（D2-6=A，169 个拉丁名 concept 补中文首选名）完成后，按计划 line 737「若已先写，则须在 W3b 后重跑 T2.38 复算并清理」执行清理：
+
+| 动作 | 内容 |
+|---|---|
+| 替换（7 行） | `allowlist_zh.txt` 中 W2 写入的拉丁串按新中文首选名原位替换：`VMEC`→`VMEC三维平衡程序`、`DESC`→`DESC仿星器平衡优化程序`、`SIMSOPT`→`SIMSOPT仿星器优化框架`、`C-2U`→`C-2U装置`、`EU-DEMO`→`欧洲聚变示范堆`、`K-DEMO`→`韩国聚变示范堆`、`START`→`START球形托卡马克` |
+| 补写（2 行） | 先前因 zh 含空格被跳过的 `helion-trenta` / `gamma-10`，其新的中文首选名无空白 ⇒ 补入：`赫利昂Trenta装置`、`GAMMA10串列磁镜装置`（附节注释 `# --- T-4973 W3b cleanup ---`） |
+| 复跑结果 | `build_terms` exit 0，`artifacts/domain_terms.txt 4893 → 4902`（+9）；`coverage_pct 70.90`（不变：这 9 个 concept 已由 EN 侧覆盖）；`W2 6 / W3a 854 / proper_excluded 35` 不变 |
+| 门禁 | `sort terms/allowlist_zh.txt \| uniq -d \| wc -l` = 0；EN 空白项 = 0 |
+
+> 说明：本文 §4.5 所列「W3b 后须复跑 T2.38」已由本节关闭；W2 残余 6 项（§3.1）与 7 个空格项（§4.1）的**已知问题状态**不变。

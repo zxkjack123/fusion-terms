@@ -2122,6 +2122,22 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 - 交付物：`.github/plans/t4973-batches/coverage-after-w2.md`（逐批表 + 对账 + 例外登记 + 门禁证据）
 - **独立验收（环节 7）**：委派 `acceptance-verifier`（会话 `ses_e7d21cb8fffe3NTnfCjnTOUQpZ`，只读）→ **`PASS` / confidence HIGH / blocking 0 / warnings 3 / known-issue 1** @ `25e6bae`；37 批全量+子集双跑、变异法还原校验（sha256 前后一致）、40 commits 提交范围（仅 6 文件、registry 逐字节未变）、729/717→4893 三源对账均独立复现。warnings 已在 `coverage-after-w2.md` §7 登记（授权来源补证 / 文档口径差 / 空行删除留痕）。
 
+### T3.0 — ✅ DONE（W3b 工作集生成，2026-10-28 收口 `date` 实测同 T2.38）
+- 生成 `w3b.ids`（**169**）+ `w3b_b01.ids`…`w3b_b09.ids`（20×8 + 9），并在 `t4973-batches/README.md` 新增 W3b 节；commit `8493db1`
+- 验收实测：`wc -l w3b.ids` = **169**；批文件 **9**；`cat w3b_b*.ids | wc -l` = **169**；`w2.ids ∩ w3b.ids` = **9**；`w3.ids ∩ w3b.ids` = **0**
+- 能失败证明（变异法）：副本删 `w3b_b01.ids` 一行 → 合计 **168**（已实测），还原后 **169**
+- **执行坑（已记入 README）**：`mv b00→b01…` 顺序重命名会级联覆盖（只剩 1 个文件），必须 `cp` 到目标名
+
+### T3.44–T3.52 — ✅ DONE（W3b 9 批命名，commit `e618efc`…`0798257`）
+- 每批：`registry_batch_verify --mode names --ids-file w3b_b<NN>.ids --expect <N> --check-urls` → **exit 0**；`validate_registry` → **exit 0**；`git diff --numstat` = `<N>/<N>`（只改 `preferred_zh` 槽位）；**未使用** `--allow-latin-names`
+- 命名来源与口径：按仓内既有同类先例统一（`code` → `<ACRONYM>程序`/`<ACRONYM>软件`/功能中文名；`device` → `<代号>装置`/`<代号>托卡马克`；`company` → `<名称>公司`；`organization` → 中文机构名；`material` → 中文材料名；`concept/method` → 中文术语名），全表 **169/169** 通过「含 CJK / 无空白 / ≠ preferred_en / 无 preferred_zh 或 zh-alias 冲突」
+- **独立命名复核**：委派 `academic-writer`（会话 `ses_e7d02f8b9ffepFnJII5KHQ1HMo`）逐条复核 169 行 → **4 处修正已采纳**（`marfe`→边缘多面非对称辐射、`orb5`→ORB5全局回旋动理学粒子模拟程序、`supermc`→SuperMC蒙特卡罗核设计程序、`arpa-e`→美国能源部高级研究计划局），其余 165 行判为可接受
+- 冲突台账：`.github/plans/t4973-batches/w3-name-conflicts.tsv`（仅表头，**0 冲突**；逐批冲突扫描实测 0），commit `0d0c4a0`
+- **D2-6=A 闸门**：`preferred_zh == preferred_en && 无 CJK` 计数 **169 → 0** ✅
+- **清理 + T2.38 复跑**：`allowlist_zh.txt` 7 行拉丁串原位替换为新的中文首选名、补写先前因空格跳过的 2 行（`赫利昂Trenta装置`/`GAMMA10串列磁镜装置`）；`build_terms` exit 0，`artifacts/domain_terms.txt 4893 → 4902`；`coverage_pct 70.90` 不变（这 9 个 concept 已由 EN 侧覆盖）
+- 边界：本阶段只改 `terms/registry/concepts.tsv` 的 `preferred_zh` + 上述 1 个 allowlist 清理 commit；未改 `preferred_en`/`category`/`notes`/脚本/pipeline
+- **28 个专名**（company/organization/facility）虽已补中文名，仍属 `proper_excluded` ⇒ **不得进入 IME 词表**（口径不变）
+
 ## T1.B18 / T1.B19 返工（IMPR-2，2026-10-27，基线 `08f8901`）
 
 > 本节由 Plan Architect `mode=improve`（父代理委派，PM **#T-4973**）写入。**本轮只改主计划文件**：未改任何数据文件、未 `commit`、未 `push`。本节结论**优先于**文末 `## Execution Log` 中 T1.B18 / T1.B19 的既有「✅ DONE」条目。
