@@ -1984,3 +1984,24 @@ reaction-rate-library
 decay-data-library
 thermocouple
 strain-gauge
+# --- T-4973 W2 batch 32 ---
+neutron-flux-monitor
+tungsten-inert-gas-welding
+dissimilar-metal-weld
+weld-inspection
+nucleate-boiling
+film-boiling
+departure-from-nucleate-boiling
+thermal-stratification
+learning-curve
+unscheduled-outage
+fuel-cycle-cost
+capacity-credit
+ion-source
+rf-window
+beam-duct
+dummy-load
+critical-current-density
+hts-tape
+quench-heater
+magnet-protection-system
