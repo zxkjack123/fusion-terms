@@ -1395,3 +1395,24 @@ wetted-area
 fuel-cycle
 protium
 tritium-storage
+# --- T-4973 W2 batch 03 ---
+palladium-membrane
+getter-bed
+glovebox
+helicon-wave
+wave-plasma-interaction
+faraday-rotation
+material-migration
+embrittlement
+occupational-dose
+mean-free-path
+cyclotron-frequency
+magnetic-pressure
+hands-on-recycling
+remote-handling-recycling
+permanent-disposal-waste
+waste-form
+near-surface-disposal
+geological-disposal
+decay-gamma-source
+rigorous-two-step
