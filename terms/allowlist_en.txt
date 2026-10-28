@@ -2089,3 +2089,22 @@ type-i-elm
 grassy-elm
 elm-free-regime
 elm-frequency
+# --- T-4973 W2 batch 37 ---
+pedestal-height
+h-mode-power-threshold
+Squareness
+separatrix-density
+fluence-limit
+end-of-life
+runaway-plateau
+operational-lifetime
+CATE
+PACTOLE
+PACTITER
+TRACT
+OSCAR
+acp-source-term
+acp-deposition-coefficient
+acp-erosion-coefficient
+dissolution-precipitation-coefficient
+acp-filter-model
