@@ -1795,3 +1795,24 @@ tritium-production-rate
 quasi-poloidal-symmetry
 omnigeneity
 bounce-averaged-drift
+# --- T-4973 W2 batch 23 ---
+VMEC
+DESC
+SIMSOPT
+heliac
+w7-as
+winding-surface
+frc-stability
+frc-lifetime-scaling
+open-field-line
+flux-closure
+C-2U
+helion-trenta
+pulsed-non-ignition
+end-plug
+end-loss
+ioffe-bars
+baseball-coil
+gas-dynamic-trap
+gamma-10
+wham
