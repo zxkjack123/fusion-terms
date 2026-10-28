@@ -3783,7 +3783,7 @@ collisional-damping	zh	碰撞阻尼是波或振荡能量通过碰撞耗散的过
 colormap	en	A color mapping scheme used for visualization.	corpus
 colormap	zh	色标是用于可视化的颜色映射。	corpus
 commercial-fusion	en	Fusion energy used as a commercially viable source of electricity.	corpus
-commercial-fusion	zh	聚变/核工程术语，指“商业聚变”这一技术概念。	internal:dict-improvements
+commercial-fusion	zh	商业聚变：作为可商业化电力来源的聚变能。	corpus
 commercialization-pathway	en	Fusion/nuclear engineering term referring to 'commercialization pathway' in technical context.	internal:dict-improvements
 commercialization-pathway	zh	聚变/核工程术语，指“商业化路径”这一技术概念。	internal:dict-improvements
 commissioning	zh	聚变/核工程术语，对应英文“Commissioning”。	internal:dict-improvements
@@ -3903,7 +3903,7 @@ cross-section	zh	单位靶密度下发生核反应的概率，通常以靶恩表
 crust-earth-s	zh	聚变/核工程术语，对应英文“crust, Earth’s”。	internal:dict-improvements
 cryogenic	zh	聚变/核工程术语，对应英文“Cryogenic”。	internal:dict-improvements
 cryogenic-power	en	The electrical power consumed by the cryoplant that serves the superconducting magnets.	corpus
-cryogenic-power	zh	聚变/核工程术语，指“低温系统功耗”这一技术概念。	internal:dict-improvements
+cryogenic-power	zh	低温系统功耗：为超导磁体服务的低温装置所消耗的电功率。	corpus
 cryogenic-target	en	Fusion fuel target containing a deuterium-tritium ice layer held at a temperature of about 18 K.	corpus
 cryogenic-target	zh	含约 18 K 氘氚冰层的聚变燃料靶。	corpus
 cs-free-startup	en	Start-up of the plasma current without a central solenoid.	corpus
@@ -3911,7 +3911,7 @@ cs-free-startup	zh	无CS启动：不依靠中心螺线管来启动等离子体�
 csv-format	en	The Comma-Separated Values format, abbreviated CSV.	corpus
 csv-format	zh	CSV格式即逗号分隔值格式，缩写为 CSV。	corpus
 current-drive-power	en	The electrical power consumed by the non-inductive current drive systems.	corpus
-current-drive-power	zh	聚变/核工程术语，指“电流驱动功耗”这一技术概念。	internal:dict-improvements
+current-drive-power	zh	电流驱动功耗：非感应电流驱动系统所消耗的电功率。	corpus
 current-driven-mode	en	MHD mode driven by the current density gradient, such as the kink and tearing modes.	corpus
 current-driven-mode	zh	电流驱动模是由电流密度梯度驱动的MHD模，例如扭曲模和撕裂模。	corpus
 current-hole	en	A region of nearly zero toroidal current density near the plasma centre.	corpus
@@ -3955,7 +3955,7 @@ defense-in-depth	zh	纵深防御是面向核设施的多层安全设计理念。
 deferred-dismantling	zh	聚变/核工程术语，对应英文“deferred dismantling”。	internal:dict-improvements
 defined-deck-area	zh	聚变/核工程术语，对应英文“defined deck area”。	internal:dict-improvements
 demountable-coil	en	A magnet coil with joints that allow a sector to be removed for maintenance.	corpus
-demountable-coil	zh	聚变/核工程术语，指“可拆卸线圈”这一技术概念。	internal:dict-improvements
+demountable-coil	zh	可拆卸线圈：带有接头、可拆下扇区以便维护的磁体线圈。	corpus
 density-control	en	The methods and techniques for controlling the plasma density by external fuelling in order to obtain the optimum plasma configuration.	GB/T-4960.9
 density-peaking	en	Peaking of the density profile toward the plasma center.	corpus
 density-peaking	zh	密度峰化是密度剖面朝等离子体中心聚峰的现象。	corpus
@@ -3983,7 +3983,7 @@ determination-level	zh	聚变/核工程术语，对应英文“determination lev
 deterministic-analysis	zh	聚变/核工程术语，对应英文“deterministic analysis”。	internal:dict-improvements
 deterministic-effect	zh	聚变/核工程术语，对应英文“deterministic effect”。	internal:dict-improvements
 deterministic-safety-analysis	en	Safety analysis that uses bounding assumptions for postulated events.	corpus
-deterministic-safety-analysis	zh	聚变/核工程术语，指“确定论安全分析”这一技术概念。	internal:dict-improvements
+deterministic-safety-analysis	zh	确定论安全分析：对假想事件采用包络假设开展的安全分析。	corpus
 detriment	zh	聚变/核工程术语，对应英文“detriment”。	internal:dict-improvements
 detritiation	en	Removal of tritium from gas, water, or solid process streams.	corpus
 detritiation	zh	从气体、水或固体工艺流中脱除氚。	corpus
@@ -4019,7 +4019,7 @@ direct-disposal	zh	聚变/核工程术语，对应英文“direct disposal”。
 direct-energy-conversion	en	Conversion of the kinetic energy of charged particles into electricity without an intermediate thermal cycle.	corpus
 direct-energy-conversion	zh	不经中间热循环而将带电粒子动能直接转换为电能。	corpus
 direct-internal-recycling	en	Recovery of unburned fuel directly from the exhaust gas and its reinjection into the plasma.	corpus
-direct-internal-recycling	zh	聚变/核工程术语，指“直接内循环”这一技术概念。	internal:dict-improvements
+direct-internal-recycling	zh	直接内循环：直接从排气中回收未燃尽燃料并回注的处理方式。	corpus
 directional-dose-equivalent	zh	聚变/核工程术语，对应英文“directional dose equivalent”。	internal:dict-improvements
 discharge	zh	聚变/核工程术语，对应英文“discharge”。	internal:dict-improvements
 dislocation	en	A line defect in the crystal lattice of a material.	corpus
@@ -4111,7 +4111,7 @@ electron-bernstein-wave	zh	电子伯恩斯坦波是用于加热过密等离子�
 electrostatic-confinement	en	Confinement of a plasma by means of an electric field.	GB/T-4960.9
 elimination-practical	zh	聚变/核工程术语，对应英文“elimination, practical”。	internal:dict-improvements
 elm-control	en	Methods used to suppress or mitigate edge-localized modes.	corpus
-elm-control	zh	聚变/核工程术语，指“ELM控制”这一技术概念。	internal:dict-improvements
+elm-control	zh	ELM控制：抑制或缓解边缘局域模的方法。	corpus
 elm-induced-erosion	en	Wall erosion caused by ELM transient heat loads.	corpus
 elm-induced-erosion	zh	ELM诱发侵蚀是ELM瞬态热负荷造成的壁侵蚀。	corpus
 embrittlement	en	Loss of ductility in structural materials, arising from irradiation, helium or hydrogen.	corpus
@@ -4169,7 +4169,7 @@ epistemic-uncertainty	zh	聚变/核工程术语，对应英文“epistemic uncer
 equilibrium-equivalent-concentration	zh	聚变/核工程术语，对应英文“equilibrium equivalent concentration (EEC)”。	internal:dict-improvements
 equilibrium-factor	zh	聚变/核工程术语，对应英文“equilibrium factor”。	internal:dict-improvements
 equilibrium-field-coil	en	A poloidal field coil used for plasma position and shape control.	corpus
-equilibrium-field-coil	zh	聚变/核工程术语，指“平衡场线圈”这一技术概念。	internal:dict-improvements
+equilibrium-field-coil	zh	平衡场线圈：用于等离子体位置与形状控制的极向场线圈。	corpus
 equilibrium-radioactive	zh	聚变/核工程术语，对应英文“equilibrium, radioactive”。	internal:dict-improvements
 equipment-qualification	zh	聚变/核工程术语，对应英文“equipment qualification”。	internal:dict-improvements
 erosion	en	The removal of material from a plasma-facing surface as a result of the interaction of that surface with the plasma, so that the surface is progressively lost.	corpus
@@ -4338,7 +4338,7 @@ fusion-product-spectrum	en	The energy distribution spectrum of fusion reaction p
 fusion-product-spectrum	zh	聚变产物能谱是聚变反应产物的能量分布谱。	corpus
 fusion-reactor	en	A device that uses controlled fusion reactions to produce fusion energy.	GB/T-4960.9
 fusion-regulation	en	The regulatory framework that applies specifically to fusion energy facilities.	corpus
-fusion-regulation	zh	聚变/核工程术语，指“聚变监管”这一技术概念。	internal:dict-improvements
+fusion-regulation	zh	聚变监管：专门适用于聚变能设施的监管框架。	corpus
 fusion-roadmap	en	Strategic plan for achieving commercial fusion energy.	corpus
 fusion-roadmap	zh	实现商业聚变能的战略规划。	corpus
 gain-curve	en	The relationship between ICF energy gain and driver energy.	corpus
@@ -4436,7 +4436,7 @@ high-enriched-uranium	zh	聚变/核工程术语，对应英文“high enriched u
 high-field-approach	en	A fusion strategy that uses HTS magnets to obtain a high magnetic field in a compact geometry.	corpus
 high-field-approach	zh	高场路线：用高温超导磁体在紧凑位形中获得高磁场的聚变策略。	corpus
 high-field-magnet	en	A magnet that produces fields above about 10 T and is typically HTS-based.	corpus
-high-field-magnet	zh	聚变/核工程术语，指“高场磁体”这一技术概念。	internal:dict-improvements
+high-field-magnet	zh	高场磁体：产生约 10 T 以上磁场、通常基于 HTS 的磁体。	corpus
 high-level-waste	zh	聚变/核工程术语，指“高放废物”这一技术概念。	internal:dict-improvements
 high-linear-energy-transfer-radiation	zh	聚变/核工程术语，对应英文“high linear energy transfer (LET) radiation”。	internal:dict-improvements
 high-recycling	en	High recycling regime in the SOL/divertor.	corpus
@@ -4455,7 +4455,7 @@ hot-ion-mode	zh	离子温度远高于电子温度的运行模式，可抑制 p-B
 hot-spot-ignition	en	Ignition in which the central hot spot ignites the surrounding cold fuel.	corpus
 hot-spot-ignition	zh	中心热斑点火是中心热斑点燃周围冷燃料的点火方式。	corpus
 hts-magnet	en	A superconducting magnet that uses high-temperature superconductor such as REBCO or YBCO.	corpus
-hts-magnet	zh	聚变/核工程术语，指“高温超导磁体”这一技术概念。	internal:dict-improvements
+hts-magnet	zh	高温超导磁体：使用 REBCO/YBCO 等高温超导体的超导磁体。	corpus
 human-factors-engineering	zh	聚变/核工程术语，对应英文“human factors engineering”。	internal:dict-improvements
 human-intrusion	zh	聚变/核工程术语，对应英文“human intrusion”。	internal:dict-improvements
 hybrid-scenario	en	Operating scenario intermediate between the inductive and the fully non-inductive regime.	corpus
@@ -4603,7 +4603,7 @@ itg-mode	zh	离子温度梯度模是由离子温度梯度驱动的微观不稳�
 itpea	zh	聚变/核工程术语，对应英文“ITPEA”。	internal:dict-improvements
 iua	zh	聚变/核工程术语，对应英文“IUA”。	internal:dict-improvements
 jointed-magnet	en	A magnet whose segments are connected by demountable electrical joints.	corpus
-jointed-magnet	zh	聚变/核工程术语，指“接头磁体”这一技术概念。	internal:dict-improvements
+jointed-magnet	zh	接头磁体：各段之间以可拆卸电接头相连的磁体。	corpus
 json-format	en	The JavaScript Object Notation format, abbreviated JSON.	corpus
 json-format	zh	JSON格式即 JavaScript Object Notation 格式，缩写为 JSON。	corpus
 justification	zh	聚变/核工程术语，对应英文“justification”。	internal:dict-improvements
@@ -4642,7 +4642,7 @@ licensing	en	Regulatory approval process for the construction and operation of a
 licensing	zh	聚变装置建造与运行的监管审批过程。	corpus
 licensing-basis	zh	聚变/核工程术语，对应英文“licensing basis”。	internal:dict-improvements
 licensing-pathway	en	The regulatory route by which construction and operation permits are obtained.	corpus
-licensing-pathway	zh	聚变/核工程术语，指“许可路径”这一技术概念。	internal:dict-improvements
+licensing-pathway	zh	许可路径：获得建造与运行许可所遵循的监管路径。	corpus
 licensing-process	zh	聚变/核工程术语，对应英文“licensing process”。	internal:dict-improvements
 life-cycle-management	zh	聚变/核工程术语，对应英文“life cycle management”。	internal:dict-improvements
 life-lifetime	zh	聚变/核工程术语，对应英文“life, lifetime”。	internal:dict-improvements
@@ -4869,7 +4869,7 @@ neutronics	zh	中子学是研究聚变堆中中子输运、屏蔽、活化与增
 nitrogen-seeding	en	Deliberate injection of nitrogen to enhance divertor radiation and reduce heat load.	corpus
 nitrogen-seeding	zh	氮注入是有意注入氮以增强偏滤器辐射并降低热负荷。	corpus
 no-insulation-coil	en	An HTS coil wound without turn-to-turn insulation so that it protects itself.	corpus
-no-insulation-coil	zh	聚变/核工程术语，指“无绝缘线圈”这一技术概念。	internal:dict-improvements
+no-insulation-coil	zh	无绝缘线圈：为自保护而不设匝间绝缘绕制的 HTS 线圈。	corpus
 non-evaporable-getter	en	A solid getter material that is reused by activation through heating (Ti-Zr-V alloy).	corpus
 non-evaporable-getter	zh	非蒸散型吸气剂是通过加热活化反复使用的固体吸气材料（Ti-Zr-V 合金）。	corpus
 non-fixed-contamination	zh	聚变/核工程术语，对应英文“non-fixed contamination”。	internal:dict-improvements
@@ -5058,7 +5058,7 @@ plasma-ramp-up	zh	等离子体升流是初始的等离子体电流上升阶段�
 plasma-resistivity	en	Spitzer or anomalous resistivity of plasma.	corpus
 plasma-resistivity	zh	等离子体电阻率是Spitzer电阻率或反常电阻率。	corpus
 plasma-shape-control	en	Active control of the plasma cross-section geometry, including elongation and triangularity.	corpus
-plasma-shape-control	zh	聚变/核工程术语，指“等离子体形状控制”这一技术概念。	internal:dict-improvements
+plasma-shape-control	zh	等离子体形状控制：对等离子体截面几何（延伸比、三角形度）的主动控制。	corpus
 plasma-shaping	en	The control of the cross-sectional geometry of the plasma column, characterized in particular by its elongation and triangularity, so as to obtain a prescribed plasma shape.	corpus
 plasma-shaping	zh	对等离子体柱横截面几何形状的控制，主要以拉长比和三角形变来表征，以得到所要求的等离子体形状。	corpus
 plasma-surface-interaction	en	The collective term for the processes by which the plasma and the material surfaces facing it affect one another, covering both the modification of those surfaces by the plasma and the modification of the plasma by those surfaces.	corpus
@@ -5157,7 +5157,7 @@ publication-iaea	zh	聚变/核工程术语，对应英文“publication, IAEA”
 pulsed-non-ignition	en	A pulsed approach in which a field-reversed configuration is compressed without sustained ignition.	corpus
 pulsed-non-ignition	zh	脉冲非点火：在不以持续点火为目标的情况下压缩场反位形的脉冲途径。	corpus
 pumping-power	en	The electrical power consumed by the coolant circulation pumps.	corpus
-pumping-power	zh	聚变/核工程术语，指“泵送功耗”这一技术概念。	internal:dict-improvements
+pumping-power	zh	泵送功耗：冷却剂循环泵所消耗的电功率。	corpus
 purge-gas	en	Helium gas used to extract tritium from ceramic breeders.	corpus
 purge-gas	zh	吹扫气是用于从陶瓷增殖剂中提取氚的氦气。	corpus
 qualification	zh	聚变/核工程术语，对应英文“qualification”。	internal:dict-improvements
@@ -5334,7 +5334,7 @@ risk-constraint	zh	聚变/核工程术语，对应英文“risk constraint”。
 risk-monitor	zh	聚变/核工程术语，对应英文“risk monitor”。	internal:dict-improvements
 risk-projection-model	zh	聚变/核工程术语，对应英文“risk projection model”。	internal:dict-improvements
 rmp-coil	en	A resonant magnetic perturbation coil used for ELM suppression.	corpus
-rmp-coil	zh	聚变/核工程术语，指“RMP线圈”这一技术概念。	internal:dict-improvements
+rmp-coil	zh	RMP线圈：用于抑制 ELM 的共振磁扰动线圈。	corpus
 rock-igneous	zh	聚变/核工程术语，对应英文“rock, igneous”。	internal:dict-improvements
 root-cause	zh	聚变/核工程术语，对应英文“root cause”。	internal:dict-improvements
 root-uptake	zh	聚变/核工程术语，对应英文“root uptake”。	internal:dict-improvements
@@ -5390,7 +5390,7 @@ scatter-plot	en	A data visualization that is based on points.	corpus
 scatter-plot	zh	散点图是基于数据点的数据可视化。	corpus
 scenario	zh	聚变/核工程术语，对应英文“scenario”。	internal:dict-improvements
 scenario-development	en	The design and optimization of tokamak operational scenarios.	corpus
-scenario-development	zh	聚变/核工程术语，指“运行场景开发”这一技术概念。	internal:dict-improvements
+scenario-development	zh	运行场景开发：托卡马克运行场景的设计与优化。	corpus
 scram	zh	聚变/核工程术语，对应英文“scram”。	internal:dict-improvements
 scratch-filesystem	en	A temporary high-speed storage filesystem on HPC systems.	corpus
 scratch-filesystem	zh	临时文件系统是 HPC 系统上用于临时存放数据的高速存储。	corpus
@@ -5700,9 +5700,9 @@ tritium-building	zh	氚厂房是内设氚处理、贮存及回收设备的独立
 tritium-carrier	en	The tritium transport role played by PbLi and similar materials in a blanket.	corpus
 tritium-carrier	zh	氚载体是 PbLi 等在包层中承担氚输运的角色。	corpus
 tritium-confinement	en	A multi-barrier strategy that prevents tritium release to the environment.	corpus
-tritium-confinement	zh	聚变/核工程术语，指“氚包容”这一技术概念。	internal:dict-improvements
+tritium-confinement	zh	氚包容：防止氚向环境释放的多重屏障策略。	corpus
 tritium-inventory-control	en	Management of the tritium quantities held in all plant subsystems.	corpus
-tritium-inventory-control	zh	聚变/核工程术语，指“氚存量控制”这一技术概念。	internal:dict-improvements
+tritium-inventory-control	zh	氚存量控制：对全厂各子系统氚量的管理。	corpus
 tritium-processing	en	The process of extracting tritium from tritium-bearing fluids, device exhaust gases and leaked tritium-containing gases and safely storing it or turning it into plasma fuel. See also tritium plant.	GB/T-4960.9
 tritium-recovery	en	Extraction of tritium from the blanket breeder or from the plasma exhaust.	corpus
 tritium-recovery	zh	氚回收是从包层增殖材料或等离子体排气中提取氚。	corpus
