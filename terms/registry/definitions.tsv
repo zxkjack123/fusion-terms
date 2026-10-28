@@ -3785,7 +3785,7 @@ colormap	zh	色标是用于可视化的颜色映射。	corpus
 commercial-fusion	en	Fusion energy used as a commercially viable source of electricity.	corpus
 commercial-fusion	zh	商业聚变：作为可商业化电力来源的聚变能。	corpus
 commercialization-pathway	en	A strategic roadmap leading from research and development through a pilot plant to commercial fusion power deployment.	corpus
-commercialization-pathway	zh	聚变/核工程术语，指“商业化路径”这一技术概念。	internal:dict-improvements
+commercialization-pathway	zh	商业化路径：从研发经中试装置到商业聚变发电部署的战略路线图。	corpus
 commissioning	zh	聚变/核工程术语，对应英文“Commissioning”。	internal:dict-improvements
 common-mode-failure	zh	聚变/核工程术语，对应英文“common mode failure”。	internal:dict-improvements
 compact-fusion	en	An umbrella term for small high-field or alternative-confinement fusion approaches.	corpus
@@ -3850,7 +3850,7 @@ control	zh	聚变/核工程术语，对应英文“control”。	internal:dict-i
 controlled-area	zh	聚变/核工程术语，指“控制区”这一技术概念。	internal:dict-improvements
 controlled-state	zh	聚变/核工程术语，对应英文“controlled state”。	internal:dict-improvements
 conventional-island	en	The part of a fusion power plant that houses the turbine-generator, cooling systems and balance-of-plant equipment.	corpus
-conventional-island	zh	聚变/核工程术语，指“常规岛”这一技术概念。	internal:dict-improvements
+conventional-island	zh	常规岛：聚变电站中布置汽轮发电机、冷却系统与配套设施的部分。	corpus
 convergence-criterion	en	A threshold for iterative solution convergence.	corpus
 convergence-criterion	zh	收敛准则是迭代求解收敛的判定阈值。	corpus
 conveyance	zh	聚变/核工程术语，对应英文“conveyance”。	internal:dict-improvements
@@ -4011,7 +4011,7 @@ diffusion	zh	聚变/核工程术语，对应英文“diffusion”。	internal:di
 diffusion-equation	en	A simplified form of the neutron transport equation.	corpus
 diffusion-equation	zh	扩散方程是中子输运方程的简化形式。	corpus
 digital-engineering	en	A model-based engineering approach that uses integrated digital models for plant design and lifecycle management.	corpus
-digital-engineering	zh	聚变/核工程术语，指“数字工程”这一技术概念。	internal:dict-improvements
+digital-engineering	zh	数字工程：以集成数字模型开展电站设计与全寿期管理的模型化工程方法。	corpus
 digital-twin	en	A real-time digital simulation mirror of a fusion device.	corpus
 digital-twin	zh	数字孪生是聚变装置的实时数字化仿真镜像。	corpus
 direct-cause	zh	聚变/核工程术语，对应英文“direct cause”。	internal:dict-improvements
@@ -4082,7 +4082,7 @@ dust	zh	粉尘是由 PFC 侵蚀与破裂产生的微米级颗粒物。	corpus
 dust-generation	en	Dust production mechanism from plasma erosion and flaking.	corpus
 dust-generation	zh	粉尘产生是等离子体侵蚀和剥落造成的粉尘生成机制。	corpus
 dust-safety	en	Safety concerns arising from mobilization of radioactive or toxic dust in loss events.	corpus
-dust-safety	zh	聚变/核工程术语，指“粉尘安全”这一技术概念。	internal:dict-improvements
+dust-safety	zh	粉尘安全：事故工况下放射性/有毒粉尘再悬浮带来的安全问题。	corpus
 dust-transport	en	Dust dynamics, mobilization and transport inside the vacuum vessel.	corpus
 dust-transport	zh	粉尘输运是真空容器内粉尘的动力学、可动化与输运。	corpus
 dynamo-effect	en	The self-organization process in a reversed-field pinch by which dynamo action sustains the reversed toroidal flux and the associated equilibrium against resistive decay.	corpus
@@ -4162,7 +4162,7 @@ entombment	zh	聚变/核工程术语，对应英文“entombment”。	internal:
 entrance-surface-dose	zh	聚变/核工程术语，对应英文“entrance surface dose”。	internal:dict-improvements
 environment	zh	聚变/核工程术语，对应英文“environment”。	internal:dict-improvements
 environmental-impact-assessment	en	A systematic evaluation of the environmental effects of a proposed fusion facility.	corpus
-environmental-impact-assessment	zh	聚变/核工程术语，指“环境影响评价”这一技术概念。	internal:dict-improvements
+environmental-impact-assessment	zh	环境影响评价：对拟建聚变设施环境影响的系统性评估。	corpus
 epfl	zh	聚变/核工程术语，对应英文“EPFL”。	internal:dict-improvements
 epicentre	zh	聚变/核工程术语，对应英文“epicentre”。	internal:dict-improvements
 epistemic-uncertainty	zh	聚变/核工程术语，对应英文“epistemic uncertainty”。	internal:dict-improvements
@@ -4177,7 +4177,7 @@ erosion	zh	面向等离子体表面因与等离子体相互作用而发生材料
 erosion-corrosion	en	A material damage mechanism combining fluid erosion and electrochemical corrosion.	corpus
 erosion-corrosion	zh	冲蚀-腐蚀是流体冲刷与电化学腐蚀共同作用的材料损伤机制。	corpus
 erosion-redeposition	en	The cyclic process in which plasma-facing material is eroded and the eroded material is redeposited elsewhere.	corpus
-erosion-redeposition	zh	聚变/核工程术语，指“侵蚀再沉积”这一技术概念。	internal:dict-improvements
+erosion-redeposition	zh	侵蚀再沉积：面向等离子体材料被侵蚀、被侵蚀材料在其他位置再沉积的循环过程。	corpus
 error-field	en	In a tokamak the magnetic field distributions of the toroidal field coils and the poloidal field coils are theoretically both axisymmetric, but deviations in the manufactured shape and the installation position of the magnet coils, current leads, eddy currents in metal components and ferromagnetic substances all lead to a non-axisymmetric magnetic field. Among these, the non-axisymmetric magnetic field caused by deviations in the installation position of the toroidal field and poloidal field coils is the most important source of the error field.	GB/T-4960.9
 eruption-cloud	zh	聚变/核工程术语，对应英文“eruption cloud”。	internal:dict-improvements
 eruption-volcanic	zh	聚变/核工程术语，对应英文“eruption, volcanic”。	internal:dict-improvements
@@ -4466,9 +4466,9 @@ hydrogen-embrittlement	zh	氢脆：金属因溶解或被捕获的氢原子而丧
 hydrogen-isotope	en	The isotopes of hydrogen: protium H, deuterium D and tritium T.	corpus
 hydrogen-isotope	zh	氢同位素指氢的各种同位素，即氕（H）、氘（D）和氚（T）。	corpus
 hydrogen-isotope-exchange	en	Exchange reactions between the hydrogen isotopes H, D and T in materials or in the gas phase.	corpus
-hydrogen-isotope-exchange	zh	聚变/核工程术语，指“氢同位素交换”这一技术概念。	internal:dict-improvements
+hydrogen-isotope-exchange	zh	氢同位素交换：材料中或气相中氢同位素（H/D/T）之间的交换反应。	corpus
 hydrogen-retention	en	The total inventory of hydrogen isotopes retained in plasma-facing materials.	corpus
-hydrogen-retention	zh	聚变/核工程术语，指“氢滞留”这一技术概念。	internal:dict-improvements
+hydrogen-retention	zh	氢滞留：面向等离子体材料中滞留的氢同位素总量。	corpus
 hydrogen-safety	en	Prevention of hydrogen and tritium explosion hazards.	corpus
 hydrogen-safety	zh	防止氢和氚爆炸危险的措施。	corpus
 hydrogen-trapping	en	The retention of hydrogen isotopes at lattice defects such as vacancies, dislocations and grain boundaries.	corpus
@@ -4573,9 +4573,9 @@ ion-implantation	zh	离子注入：能量离子嵌入面向等离子体部件材
 ionization	zh	聚变/核工程术语，对应英文“Ionization”。	internal:dict-improvements
 ionizing-radiation	zh	聚变/核工程术语，对应英文“ionizing radiation”。	internal:dict-improvements
 irradiation-campaign	en	A planned series of material irradiation experiments carried out at a neutron source.	corpus
-irradiation-campaign	zh	聚变/核工程术语，指“辐照试验活动”这一技术概念。	internal:dict-improvements
+irradiation-campaign	zh	辐照试验活动：在中子源上按计划开展的一系列材料辐照实验。	corpus
 irradiation-capsule	en	An encapsulated specimen holder that is placed in a neutron irradiation facility.	corpus
-irradiation-capsule	zh	聚变/核工程术语，指“辐照容器”这一技术概念。	internal:dict-improvements
+irradiation-capsule	zh	辐照容器：放置在中子辐照装置内的封装的试样容器。	corpus
 irradiation-creep	en	Creep deformation enhanced by neutron irradiation.	corpus
 irradiation-creep	zh	辐照蠕变是中子辐照增强的蠕变变形。	corpus
 irradiation-embrittlement	en	Degradation of material ductility and toughness under neutron irradiation.	corpus
@@ -4855,7 +4855,7 @@ neutron	zh	中子是不带电荷、构成原子核组成部分的极小物质粒
 neutron-activation	en	Activation of materials by neutron irradiation.	corpus
 neutron-activation	zh	中子活化是中子辐照引起的材料活化。	corpus
 neutron-economy	en	The efficiency with which neutrons are used for tritium breeding and energy multiplication.	corpus
-neutron-economy	zh	聚变/核工程术语，指“中子经济性”这一技术概念。	internal:dict-improvements
+neutron-economy	zh	中子经济性：中子用于氚增殖与能量倍增的利用效率。	corpus
 neutron-multiplier	en	Material such as beryllium or lead that produces extra neutrons for tritium breeding.	corpus
 neutron-multiplier	zh	铍、铅等通过核反应为氚增殖提供额外中子的材料。	corpus
 neutron-shielding	en	Shielding that is specific to neutrons only.	corpus
@@ -4905,7 +4905,7 @@ nuclear-fusion	en	Nuclear fusion in the most general sense.	corpus
 nuclear-fusion	zh	核聚变指最一般意义上的核聚变。	corpus
 nuclear-installation	zh	聚变/核工程术语，对应英文“nuclear installation”。	internal:dict-improvements
 nuclear-island	en	The part of a fusion power plant that contains the tokamak or reactor, the blankets and the primary heat transfer systems.	corpus
-nuclear-island	zh	聚变/核工程术语，指“核岛”这一技术概念。	internal:dict-improvements
+nuclear-island	zh	核岛：聚变电站中容纳托卡马克/反应堆、包层与一回路传热系统的部分。	corpus
 nuclear-material	zh	聚变/核工程术语，对应英文“nuclear material”。	internal:dict-improvements
 nuclear-or-radiological-emergency	zh	聚变/核工程术语，对应英文“nuclear or radiological emergency”。	internal:dict-improvements
 nuclear-response-function	en	A response kernel used for nuclear heating, helium production, and similar quantities.	corpus
@@ -4969,7 +4969,7 @@ parametric-instability	en	In a plasma, a nonlinear instability in which a pump w
 parser	en	A software component that parses its input.	corpus
 parser	zh	解析器是解析其输入数据的软件组件。	corpus
 partial-detachment	en	A regime in which the plasma is detached from the outer divertor target but remains attached at the inner target.	corpus
-partial-detachment	zh	聚变/核工程术语，指“部分脱靶”这一技术概念。	internal:dict-improvements
+partial-detachment	zh	部分脱靶：等离子体与外靶板脱开、在内靶板仍保持连接的工作状态。	corpus
 particle-in-cell	en	Kinetic simulation method in which particles are tracked on a computational grid.	corpus
 particle-in-cell	zh	在计算网格上追踪粒子的动理学模拟方法。	corpus
 particle-pinch	en	Inward convective particle transport in tokamak plasmas.	corpus
@@ -5038,7 +5038,7 @@ plasma-detachment	en	The regime of divertor operation in which volumetric losses
 plasma-detachment	zh	偏滤器运行的一种区制，其中等离子体内的体积损失使到达偏滤器靶板的热流低于附着运行时到达的热流。	corpus
 plasma-equilibrium	en	A plasma state in which, for a plasma of a given spatial distribution and geometric configuration, the electromagnetic forces and the thermal pressure forces are in balance.	GB/T-4960.9
 plasma-exhaust	en	The transport and removal of particles and power from the plasma edge to the divertor or wall.	corpus
-plasma-exhaust	zh	聚变/核工程术语，指“等离子体排出”这一技术概念。	internal:dict-improvements
+plasma-exhaust	zh	等离子体排出：把粒子与功率从等离子体边缘输运并导出至偏滤器/壁的过程。	corpus
 plasma-facing-component	en	A component of the device that is directly exposed to the plasma, so that its surface forms part of the plasma-facing surface and its design is governed by the interaction of the plasma with that surface.	corpus
 plasma-facing-component	zh	直接暴露于等离子体的装置部件，其表面构成面向等离子体表面的一部分，设计取决于等离子体与该表面的相互作用。	corpus
 plasma-facing-material	en	Wall material selected for compatibility with the fusion plasma environment.	corpus
@@ -5288,7 +5288,7 @@ release	zh	聚变/核工程术语，对应英文“release”。	internal:dict-i
 reliability	zh	聚变/核工程术语，对应英文“reliability”。	internal:dict-improvements
 reliability-centred-maintenance	zh	聚变/核工程术语，对应英文“reliability centred maintenance (RCM)”。	internal:dict-improvements
 reliability-engineering	en	The engineering discipline that ensures plant components meet required failure-rate and lifetime targets.	corpus
-reliability-engineering	zh	聚变/核工程术语，指“可靠性工程”这一技术概念。	internal:dict-improvements
+reliability-engineering	zh	可靠性工程：确保电站部件达到所需失效率和寿命指标的工程学科。	corpus
 relief-valve	en	A pressure safety device that opens automatically on overpressure to discharge fluid and protect equipment.	corpus
 relief-valve	zh	安全阀是超压时自动开启泄放流体以保护设备的压力安全装置。	corpus
 relocation	zh	聚变/核工程术语，对应英文“relocation”。	internal:dict-improvements
@@ -5472,7 +5472,7 @@ small-freight-container	zh	聚变/核工程术语，对应英文“small freight
 snowflake-divertor	en	An advanced divertor whose second-order null point splits the heat flux.	corpus
 snowflake-divertor	zh	雪花偏滤器是二阶零点使热流分裂的先进偏滤器。	corpus
 social-license	en	The informal acceptance by local communities and the public for siting and operating a fusion facility.	corpus
-social-license	zh	聚变/核工程术语，指“社会许可”这一技术概念。	internal:dict-improvements
+social-license	zh	社会许可：当地社区与公众对聚变设施选址与运行的接受。	corpus
 software-dependency	en	A dependency on an external software package, not a physical dependency.	corpus
 software-dependency	zh	软件依赖是对外部软件包的依赖，而非物理依赖。	corpus
 somatic-effect	zh	聚变/核工程术语，对应英文“somatic effect”。	internal:dict-improvements
@@ -5596,7 +5596,7 @@ system-code-validation	zh	聚变/核工程术语，对应英文“system code va
 system-code-verification	zh	聚变/核工程术语，对应英文“system code verification”。	internal:dict-improvements
 system-validation	zh	聚变/核工程术语，对应英文“system validation”。	internal:dict-improvements
 systems-engineering	en	An interdisciplinary approach to designing, integrating and managing complex fusion plant systems over their life cycles.	corpus
-systems-engineering	zh	聚变/核工程术语，指“系统工程”这一技术概念。	internal:dict-improvements
+systems-engineering	zh	系统工程：在寿期内设计、集成并管理复杂聚变电站系统的跨学科方法。	corpus
 t-15md	zh	聚变/核工程术语，对应英文“T-15MD”。	internal:dict-improvements
 tailings	zh	聚变/核工程术语，对应英文“tailings”。	internal:dict-improvements
 tallying	en	Scoring of quantities such as flux, dose, and heating in Monte Carlo transport calculations.	corpus
@@ -5716,7 +5716,7 @@ tungsten-accumulation	zh	钨积聚是钨杂质在芯部的有害富集。	corpus
 tungsten-fuzz	en	A nano-fuzz surface structure on tungsten from low-energy He irradiation.	corpus
 tungsten-fuzz	zh	钨绒毛是低能He辐照在钨表面形成的纳米绒毛状表面结构。	corpus
 turbine-island	en	The sub-section of the conventional island that contains the steam turbines, generators and condensers.	corpus
-turbine-island	zh	聚变/核工程术语，指“汽轮机岛”这一技术概念。	internal:dict-improvements
+turbine-island	zh	汽轮机岛：常规岛中容纳汽轮机、发电机与凝汽器的子区段。	corpus
 turbulence-saturation	en	The nonlinear saturation mechanism of micro-instabilities.	corpus
 turbulence-saturation	zh	湍流饱和是微观不稳定性的非线性饱和机制。	corpus
 turbulence-spreading	en	Spatial diffusion of turbulence from unstable to stable regions.	corpus
@@ -5760,7 +5760,7 @@ urgent-protective-action	zh	聚变/核工程术语，对应英文“urgent prote
 urgent-protective-action-planning-zone	zh	聚变/核工程术语，对应英文“urgent protective action planning zone (UPZ)”。	internal:dict-improvements
 urgent-response-phase	zh	聚变/核工程术语，对应英文“urgent response phase”。	internal:dict-improvements
 us-burning-plasma	en	A US community-driven program for achieving and studying self-heated burning plasmas.	corpus
-us-burning-plasma	zh	聚变/核工程术语，指“美国燃烧等离子体计划”这一技术概念。	internal:dict-improvements
+us-burning-plasma	zh	美国燃烧等离子体计划：为实现并研究自加热燃烧等离子体的美国社区驱动计划。	corpus
 use	zh	聚变/核工程术语，对应英文“use”。	internal:dict-improvements
 vacancy	en	A missing atom site in the crystal lattice.	corpus
 vacancy	zh	空位是晶格中缺失原子的格点。	corpus
@@ -5782,7 +5782,7 @@ void-region	zh	空区域是蒙特卡罗几何中的无材料空间。	corpus
 void-swelling	en	A volume increase in materials caused by vacancy clustering under irradiation.	corpus
 void-swelling	zh	辐照肿胀是辐照下空位聚集引起的材料体积增大。	corpus
 volumetric-neutron-source	en	A fusion-spectrum neutron source used for component testing at reactor-relevant fluence.	corpus
-volumetric-neutron-source	zh	聚变/核工程术语，指“体中子源”这一技术概念。	internal:dict-improvements
+volumetric-neutron-source	zh	体中子源：用于在堆芯相关注量下开展部件试验的聚变谱中子源。	corpus
 voxel-model	en	A structured voxelized geometry representation.	corpus
 voxel-model	zh	体素模型是结构化的体素化几何表示。	corpus
 wall	en	A long, solid structure that rises straight up from the ground and surrounds, divides or protects an area.	https://www.oxfordlearnersdictionaries.com/definition/english/wall
