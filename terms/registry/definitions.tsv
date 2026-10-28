@@ -5511,7 +5511,7 @@ stark-broadening	zh	斯塔克展宽是电场造成的谱线展宽。	corpus
 state-of-destination	zh	聚变/核工程术语，对应英文“State of destination”。	internal:dict-improvements
 state-of-origin	zh	聚变/核工程术语，对应英文“State of origin”。	internal:dict-improvements
 state-of-transit	zh	聚变/核工程术语，对应英文“State of transit”。	internal:dict-improvements
-station-blackout	en	A member of the LOCA/LOFA/LOVA accident family.	corpus
+station-blackout	en	The complete loss of alternating current (ac) electric power to the essential and nonessential switchgear buses in a nuclear power plant, that is, loss of the offsite electric power system concurrent with turbine trip and unavailability of the onsite emergency ac power system; the loss of available ac power to buses fed by station batteries through inverters, or by alternate ac sources, is not counted as a station blackout.	https://www.govinfo.gov/content/pkg/CFR-2024-title10-vol1/xml/CFR-2024-title10-vol1-sec50-2.xml
 station-blackout	zh	全厂断电事故是 LOCA/LOFA/LOVA 事故家族的同族事故。	corpus
 steady-state-high-beta	en	An advanced tokamak target scenario that combines high beta with steady state.	corpus
 steady-state-high-beta	zh	稳态高β运行是兼具高β与稳态运行的先进托卡马克目标场景。	corpus
