@@ -3742,7 +3742,7 @@ cascade-damage	zh	级联损伤是高能粒子撞击产生的原子位移缺陷�
 cassette-replacement	en	Fusion/nuclear engineering term referring to 'cassette replacement' in technical context.	internal:dict-improvements
 cassette-replacement	zh	聚变/核工程术语，指“暗盒更换”这一技术概念。	internal:dict-improvements
 castellation	en	Slots machined into plasma-facing component tiles so that each tile is divided into smaller blocks; the resulting castellation relieves thermal stress and limits crack propagation.	corpus
-castellation	zh	聚变/核工程术语，指“切槽结构”这一技术概念。	internal:dict-improvements
+castellation	zh	切槽结构：在面向等离子体部件瓦块上机加工的槽，把整块瓦块分割成更小的块体；由此形成的切槽结构可释放热应力并限制裂纹扩展。	corpus
 cause	zh	聚变/核工程术语，对应英文“cause”。	internal:dict-improvements
 cbet	en	Fusion/nuclear engineering term referring to 'cross-beam energy transfer' in technical context.	internal:dict-improvements
 cbet	zh	聚变/核工程术语，指“交叉光束能量传递”这一技术概念。	internal:dict-improvements
@@ -3776,7 +3776,7 @@ cloud-shine	zh	聚变/核工程术语，对应英文“cloud shine”。	interna
 co-deposition	en	Simultaneous deposition of eroded material with hydrogen isotopes.	corpus
 co-deposition	zh	共沉积是侵蚀材料与氢同位素的同步沉积。	corpus
 coating-degradation	en	Gradual deterioration of a wall-conditioning coating while it is exposed to plasma; as exposure continues the coating progressively loses its conditioning function.	corpus
-coating-degradation	zh	聚变/核工程术语，指“涂层退化”这一技术概念。	internal:dict-improvements
+coating-degradation	zh	涂层退化：壁条件处理涂层在暴露于等离子体期间的逐渐劣化；随暴露持续，涂层逐步丧失其条件处理功能。	corpus
 coincidence	zh	聚变/核工程术语，对应英文“coincidence (as a feature of design)”。	internal:dict-improvements
 collisional-damping	en	Dissipation of wave or oscillation energy through collisions.	corpus
 collisional-damping	zh	碰撞阻尼是波或振荡能量通过碰撞耗散的过程。	corpus
@@ -3855,7 +3855,7 @@ convergence-criterion	en	A threshold for iterative solution convergence.	corpus
 convergence-criterion	zh	收敛准则是迭代求解收敛的判定阈值。	corpus
 conveyance	zh	聚变/核工程术语，对应英文“conveyance”。	internal:dict-improvements
 coolant	en	A working fluid whose purpose is to remove heat from a system; more specific coolant types, such as water coolant and helium coolant, are registered as separate concepts.	corpus
-coolant	zh	聚变/核工程术语，指“冷却剂”这一技术概念。	internal:dict-improvements
+coolant	zh	冷却剂：用于把热量从系统中移出的工质；更具体的冷却剂种类（如水冷却剂、氦冷却剂）在注册表中单独立项。	corpus
 coolant-chemistry	en	Chemical control of the coolant in a blanket.	corpus
 coolant-chemistry	zh	冷却剂化学是对增殖包层冷却剂的化学控制。	corpus
 coolant-purification	en	A supporting process of the cooling system.	corpus
@@ -3895,7 +3895,7 @@ criticality	zh	聚变/核工程术语，对应英文“criticality”。	interna
 criticality-accident	zh	聚变/核工程术语，对应英文“criticality accident”。	internal:dict-improvements
 criticality-safety-index	zh	聚变/核工程术语，对应英文“criticality safety index (CSI)”。	internal:dict-improvements
 cross-field-cooling	en	Cooling by heat transport directed across magnetic field lines; cross-field transport is much weaker than parallel transport, so it limits how widely heat spreads over the wall surface.	corpus
-cross-field-cooling	zh	聚变/核工程术语，指“横向冷却”这一技术概念。	internal:dict-improvements
+cross-field-cooling	zh	横向冷却：热量横越磁力线方向输运的冷却方式；横向输运远弱于平行输运，因此限制了热量在壁面上铺展的范围。	corpus
 cross-field-transport	en	Transport perpendicular to magnetic field lines across flux surfaces.	corpus
 cross-field-transport	zh	垂直输运是穿过磁面、垂直于磁力线的输运。	corpus
 cross-section	en	Probability of a nuclear reaction per unit target density, commonly expressed in barns.	corpus
@@ -4462,7 +4462,7 @@ hybrid-scenario	en	Operating scenario intermediate between the inductive and the
 hybrid-scenario	zh	介于感应运行与完全非感应运行之间的中间运行模式。	corpus
 hydrodynamic-dispersion	zh	聚变/核工程术语，对应英文“hydrodynamic dispersion”。	internal:dict-improvements
 hydrogen-embrittlement	en	Loss of ductility in metals caused by dissolved or trapped hydrogen atoms, so that the material fractures more readily than it would without hydrogen.	corpus
-hydrogen-embrittlement	zh	聚变/核工程术语，指“氢脆”这一技术概念。	internal:dict-improvements
+hydrogen-embrittlement	zh	氢脆：金属因溶解或被捕获的氢原子而丧失延性，因而比不含氢时更易断裂。	corpus
 hydrogen-isotope	en	The isotopes of hydrogen: protium H, deuterium D and tritium T.	corpus
 hydrogen-isotope	zh	氢同位素指氢的各种同位素，即氕（H）、氘（D）和氚（T）。	corpus
 hydrogen-isotope-exchange	en	Fusion/nuclear engineering term referring to 'hydrogen isotope exchange' in technical context.	internal:dict-improvements
@@ -4472,7 +4472,7 @@ hydrogen-retention	zh	聚变/核工程术语，指“氢滞留”这一技术概
 hydrogen-safety	en	Prevention of hydrogen and tritium explosion hazards.	corpus
 hydrogen-safety	zh	防止氢和氚爆炸危险的措施。	corpus
 hydrogen-trapping	en	Retention of hydrogen isotopes at lattice defects such as vacancies, dislocations and grain boundaries, which hold the isotopes more strongly than the undisturbed lattice does.	corpus
-hydrogen-trapping	zh	聚变/核工程术语，指“氢捕获”这一技术概念。	internal:dict-improvements
+hydrogen-trapping	zh	氢捕获：氢同位素被空位、位错、晶界等晶格缺陷滞留；这些缺陷对同位素的束缚强于未受扰动的晶格。	corpus
 hypocentre	zh	聚变/核工程术语，对应英文“hypocentre”。	internal:dict-improvements
 i-mode	en	An intermediate confinement regime combining L-mode density with H-mode temperature.	corpus
 i-mode	zh	I模是兼具 L 模密度与 H 模温度的中间约束模式。	corpus
@@ -4569,7 +4569,7 @@ iodine-thyroid-blocking	zh	聚变/核工程术语，对应英文“iodine thyroi
 ion	zh	聚变/核工程术语，对应英文“Ion”。	internal:dict-improvements
 ion-bernstein-wave	en	A plasma wave that propagates perpendicular to the magnetic field at harmonics of the ion cyclotron frequency.	GB/T-4960.9
 ion-implantation	en	Embedding of energetic ions into the near-surface layers of plasma-facing component material, so that the ions come to rest below the surface instead of being reflected.	corpus
-ion-implantation	zh	聚变/核工程术语，指“离子注入”这一技术概念。	internal:dict-improvements
+ion-implantation	zh	离子注入：能量离子嵌入面向等离子体部件材料的近表层，因而离子停留在表面之下而非被反射。	corpus
 ionization	zh	聚变/核工程术语，对应英文“Ionization”。	internal:dict-improvements
 ionizing-radiation	zh	聚变/核工程术语，对应英文“ionizing radiation”。	internal:dict-improvements
 irradiation-campaign	en	Fusion/nuclear engineering term referring to 'irradiation campaign' in technical context.	internal:dict-improvements
@@ -4632,7 +4632,7 @@ lava	zh	聚变/核工程术语，对应英文“lava”。	internal:dict-improve
 lawson-criterion	en	The criterion derived by Lawson for achieving controlled deuterium-tritium fusion; it requires the plasma temperature to be greater than 100 million degrees (10 keV) and the product of the plasma density and the plasma energy confinement time to be greater than 2 x 10^20 m^-3 s.	GB/T-4960.9
 lawson-s-criteria	zh	聚变/核工程术语，对应英文“Lawson's Criteria”。	internal:dict-improvements
 leading-edge	en	The exposed edge of a plasma-facing component tile that faces the upstream plasma flow; because the full parallel heat flux strikes it, the leading edge is critical for thermal loading.	corpus
-leading-edge	zh	聚变/核工程术语，指“前缘”这一技术概念。	internal:dict-improvements
+leading-edge	zh	前缘：面向等离子体部件瓦块朝向等离子体上游流的暴露边缘；由于承受全部平行热流，前缘对热负荷具有决定性影响。	corpus
 lethargy	en	The logarithmic energy variable u = ln(E0/E).	corpus
 lethargy	zh	对数能降是对数能量变量 u = ln(E0/E)。	corpus
 level	zh	聚变/核工程术语，对应英文“level”。	internal:dict-improvements
@@ -4761,7 +4761,7 @@ medical-radiological-equipment	zh	聚变/核工程术语，对应英文“medica
 melt-damage	en	Melting of a PFC surface caused by transient high heat loads.	corpus
 melt-damage	zh	熔化损伤是瞬态高热负荷所导致的 PFC 表面熔化。	corpus
 melt-layer	en	Transient liquid layer formed on the surface of a plasma-facing component when a disruption or an edge-localized mode deposits enough energy to melt the surface material.	corpus
-melt-layer	zh	聚变/核工程术语，指“熔化层”这一技术概念。	internal:dict-improvements
+melt-layer	zh	熔化层：当破裂或边缘局域模沉积的能量足以熔化表面材料时，在面向等离子体部件表面形成的瞬态液态层。	corpus
 member-of-the-public	zh	聚变/核工程术语，对应英文“member of the public”。	internal:dict-improvements
 merging-compression	en	Fusion/nuclear engineering term referring to 'merging-compression' in technical context.	internal:dict-improvements
 merging-compression	zh	聚变/核工程术语，指“并合压缩”这一技术概念。	internal:dict-improvements
@@ -4962,7 +4962,7 @@ package-waste	zh	聚变/核工程术语，对应英文“package, waste”。	in
 packaging	zh	聚变/核工程术语，对应英文“packaging”。	internal:dict-improvements
 palaeoseismicity	zh	聚变/核工程术语，对应英文“palaeoseismicity”。	internal:dict-improvements
 parallel-cooling	en	Cooling of plasma-facing components by heat transport along magnetic field lines; parallel transport dominates in the scrape-off layer and at divertor targets and is much faster than transport across the field.	corpus
-parallel-cooling	zh	聚变/核工程术语，指“平行冷却”这一技术概念。	internal:dict-improvements
+parallel-cooling	zh	平行冷却：沿磁力线方向输运热量的冷却方式；在刮削层与偏滤器靶板处平行输运占主导，且远快于横越磁力线的输运。	corpus
 parallel-transport	en	Transport that occurs along magnetic field lines.	corpus
 parallel-transport	zh	平行输运是沿磁力线发生的输运。	corpus
 parametric-instability	en	In a plasma, a nonlinear instability in which a pump wave whose amplitude exceeds a certain threshold interacts through mode coupling and causes other waves to appear.	GB/T-4960.9
@@ -5099,7 +5099,7 @@ predator-prey-oscillation	zh	捕食-被捕食振荡是湍流与带状流之间�
 predictive-maintenance	zh	聚变/核工程术语，对应英文“predictive maintenance”。	internal:dict-improvements
 predisposal-management	zh	聚变/核工程术语，对应英文“predisposal management (of waste)”。	internal:dict-improvements
 preferential-sputtering	en	Preferential ejection of the lighter element from a multi-component target, so that the surface composition of the target changes as sputtering proceeds.	corpus
-preferential-sputtering	zh	聚变/核工程术语，指“择优溅射”这一技术概念。	internal:dict-improvements
+preferential-sputtering	zh	择优溅射：多组分靶中较轻元素被优先溅射出去，因而随溅射进行靶的表面成分发生变化。	corpus
 preparedness-stage	zh	聚变/核工程术语，对应英文“preparedness stage”。	internal:dict-improvements
 presheath	en	The ion acceleration transition region ahead of the Debye sheath.	corpus
 presheath	zh	预鞘是Debye鞘层之前的离子加速过渡区。	corpus
@@ -5246,7 +5246,7 @@ ratcheting	zh	棘轮效应是循环载荷下材料单向塑性变形逐周累积
 rayleigh-taylor-instability	en	A hydrodynamic instability that develops at an interface between fluids of different density when the interface is accelerated, and which can degrade capsule implosions in inertial confinement fusion.	corpus
 rayleigh-taylor-instability	zh	当密度不同的流体界面被加速时在该界面处发展的流体动力学不稳定性，会劣化惯性约束聚变中的靶丸内爆。	corpus
 re-erosion	en	Erosion of material that was previously eroded and then redeposited on a surface; because that material has already been removed once, re-erosion forms part of the cyclic erosion and redeposition process at plasma-facing surfaces.	corpus
-re-erosion	zh	聚变/核工程术语，指“再侵蚀”这一技术概念。	internal:dict-improvements
+re-erosion	zh	再侵蚀：对先前已被侵蚀并再沉积到表面的材料再次发生的侵蚀；由于该材料已被移除过一次，再侵蚀属于面向等离子体表面侵蚀—再沉积循环过程的一部分。	corpus
 reactivity	zh	聚变/核工程术语，对应英文“reactivity, ρ”。	internal:dict-improvements
 reactor	en	A large structure used to produce nuclear energy, also called a nuclear reactor.	https://www.oxfordlearnersdictionaries.com/definition/english/reactor
 reactor	zh	堆是用于产生核能的大型结构（装置），又称核反应堆。	https://www.oxfordlearnersdictionaries.com/definition/english/reactor
@@ -5254,12 +5254,12 @@ real-time-control	en	Feedback control system that operates on plasma timescales.
 real-time-control	zh	在等离子体时间尺度上运行的反馈控制系统。	corpus
 recombination-radiation	en	The radiation produced when an ion and an electron recombine.	GB/T-4960.9
 recompression-brayton-cycle	en	A supercritical CO2 Brayton cycle variant that recompresses part of the working fluid in order to obtain higher efficiency than the simple recuperated cycle.	corpus
-recompression-brayton-cycle	zh	聚变/核工程术语，指“再压缩布雷顿循环”这一技术概念。	internal:dict-improvements
+recompression-brayton-cycle	zh	再压缩布雷顿循环：超临界二氧化碳布雷顿循环的一种变体，通过再压缩部分工质以获得高于简单回热循环的效率。	corpus
 recording-level	zh	聚变/核工程术语，对应英文“recording level”。	internal:dict-improvements
 recrystallization	en	New grain nucleation and growth during high-temperature annealing.	corpus
 recrystallization	zh	再结晶是高温退火过程中新晶粒的形核与长大。	corpus
 recuperator	en	A heat exchanger that recovers heat from the exhaust stream of a Brayton cycle and returns it to the working fluid before the fluid is heated again.	corpus
-recuperator	zh	聚变/核工程术语，指“回热器”这一技术概念。	internal:dict-improvements
+recuperator	zh	回热器：从布雷顿循环排气流中回收热量，并在工质再次被加热之前把该热量返回给工质的换热器。	corpus
 redeposition	en	The deposition again of material that has previously been eroded from a surface, so that eroded material is returned to the surfaces instead of being permanently removed.	corpus
 redeposition	zh	先前已从表面被侵蚀的材料重新沉积下来的过程，使被侵蚀的材料返回表面而不是被永久去除。	corpus
 reduced-activation	en	Applies to materials whose neutron activation leaves waste that becomes recyclable after a shorter period; ITER states that the timetable of 100 years for recycling activated material could be reduced for future devices through the continued development of low activation materials.	https://www.iter.org/machine/safety-and-environment
@@ -5414,7 +5414,7 @@ seismogenic-structure	zh	聚变/核工程术语，对应英文“seismogenic str
 seismotectonic-model	zh	聚变/核工程术语，对应英文“seismotectonic model”。	internal:dict-improvements
 self-assessment	zh	聚变/核工程术语，对应英文“self-assessment”。	internal:dict-improvements
 self-sputtering	en	Sputtering of a surface by its own redeposited species, in which ions of the same material that were earlier released and redeposited return to the surface and eject further atoms from it.	corpus
-self-sputtering	zh	聚变/核工程术语，指“自溅射”这一技术概念。	internal:dict-improvements
+self-sputtering	zh	自溅射：表面被其自身再沉积物种溅射；先前被释放并再沉积的同种材料离子返回表面，并从该表面再打出原子。	corpus
 senior-management	zh	聚变/核工程术语，对应英文“senior management”。	internal:dict-improvements
 service-conditions	zh	聚变/核工程术语，对应英文“service conditions”。	internal:dict-improvements
 service-life	zh	聚变/核工程术语，对应英文“service life”。	internal:dict-improvements
@@ -5568,7 +5568,7 @@ superconducting-joint	zh	两根超导导体之间的连接，其电阻尽可能�
 superconducting-magnet	en	A magnet wound from superconducting wire and operated below its critical temperature.	corpus
 superconducting-magnet	zh	超导磁体是由超导线绕制并在临界温度以下运行的磁体。	corpus
 supercritical-co2	en	Carbon dioxide used as a working fluid above its critical point of 31 degrees Celsius and 7.4 MPa, where it is neither a distinct liquid nor a distinct gas.	corpus
-supercritical-co2	zh	聚变/核工程术语，指“超临界二氧化碳”这一技术概念。	internal:dict-improvements
+supercritical-co2	zh	超临界二氧化碳：在其临界点（31 摄氏度、7.4 MPa）以上用作工质的二氧化碳；此时它既不是明确的液态也不是明确的气态。	corpus
 supercritical-co2-cycle	en	A high-efficiency Brayton cycle that uses supercritical CO2 as its working fluid.	corpus
 supercritical-co2-cycle	zh	超临界二氧化碳循环是以超临界二氧化碳为工质的高效布雷顿循环。	corpus
 supercritical-helium	zh	聚变/核工程术语，对应英文“Supercritical Helium”。	internal:dict-improvements
@@ -5581,9 +5581,9 @@ surface-faulting	zh	聚变/核工程术语，对应英文“surface faulting”�
 surface-mesh	en	A triangulated surface representation of a geometry.	corpus
 surface-mesh	zh	表面网格是几何的三角化表面表示。	corpus
 surface-morphology	en	Microscopic surface topography of plasma-facing components after plasma exposure, which is inspected to judge how the surface has been modified.	corpus
-surface-morphology	zh	聚变/核工程术语，指“表面形貌”这一技术概念。	internal:dict-improvements
+surface-morphology	zh	表面形貌：面向等离子体部件经等离子体暴露后的微观表面形貌，用于判断表面被改性的情况。	corpus
 surface-recombination	en	Recombination of atomic hydrogen into molecules at a material surface; this step occurs before desorption and affects how hydrogen isotopes leave the surface.	corpus
-surface-recombination	zh	聚变/核工程术语，指“表面复合”这一技术概念。	internal:dict-improvements
+surface-recombination	zh	表面复合：材料表面的原子态氢复合为分子；该步骤发生在脱附之前，并影响氢同位素离开表面的方式。	corpus
 surface-roughening	en	Roughening of the wall surface morphology from plasma exposure.	corpus
 surface-roughening	zh	表面粗糙化是等离子体暴露导致的壁面形貌粗糙化。	corpus
 surveillance	zh	聚变/核工程术语，对应英文“surveillance”。	internal:dict-improvements
@@ -5628,7 +5628,7 @@ tf-ripple	en	In a tokamak, the use of a finite number of discrete toroidal field
 tftr	zh	聚变/核工程术语，对应英文“TFTR”。	internal:dict-improvements
 therapeutic-exposure	zh	聚变/核工程术语，对应英文“therapeutic exposure”。	internal:dict-improvements
 thermal-desorption	en	Thermally activated release of species that have been implanted into or trapped within a material; increasing the temperature raises the release rate.	corpus
-thermal-desorption	zh	聚变/核工程术语，指“热脱附”这一技术概念。	internal:dict-improvements
+thermal-desorption	zh	热脱附：已注入或被捕获在材料中的物种在热激活下被释放；温度升高会提高释放速率。	corpus
 thermal-fatigue	en	Material fatigue caused by cyclic thermal loading.	corpus
 thermal-fatigue	zh	热疲劳是循环热载荷引起的材料疲劳。	corpus
 thermal-force	en	The friction force component from a temperature gradient.	corpus
@@ -5694,7 +5694,7 @@ tritium	zh	聚变/核工程术语，指“氚”这一技术概念。	internal:d
 tritium-accountancy	en	Quantitative tracking of the tritium inventory for nuclear safeguards.	corpus
 tritium-accountancy	zh	氚衡算是为核保障目的对氚存量进行的定量跟踪。	corpus
 tritium-breeding	en	Production of tritium in a breeding blanket through the Li-6(n,t) and Li-7(n,n't) reactions between blanket lithium and fusion neutrons.	corpus
-tritium-breeding	zh	聚变/核工程术语，指“氚增殖”这一技术概念。	internal:dict-improvements
+tritium-breeding	zh	氚增殖：增殖包层中锂与聚变中子经锂-6(n,t) 与锂-7(n,n't) 反应生成氚的过程。	corpus
 tritium-building	en	A dedicated separate building housing tritium processing, storage and recovery equipment.	corpus
 tritium-building	zh	氚厂房是内设氚处理、贮存及回收设备的独立专用建筑。	corpus
 tritium-carrier	en	The tritium transport role played by PbLi and similar materials in a blanket.	corpus
