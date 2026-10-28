@@ -2070,7 +2070,7 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
   2. `b24` 的 **8 条**最小补足/同义复述型（`in-vessel`、`ex-vessel`、`reduced-activation`、`pressurized-water`、`primary-heat-transfer`、`coolant-purification`、`deuterium-processing`、`station-blackout`）。
   3. `b22` 的 `stress-corrosion-cracking`/`microstructure`/`sdk`、`b23` 的 `design-pattern`/`documentation`/`computational-mesh` 同属最小补足型。
   - 上述条目**均忠实于仓内 notes、未新增无据内容**，但**不构成高质量释义**；改走外部权威分支属 **D2 级待裁决**。
-- **循环同义定义计数（本组新增）**：`pressurized-water`（`Coolant type concept`）、`primary-heat-transfer`（`Primary-loop thermal transfer concept`）、`reduced-activation`（`General … concept across materials`）、`in-vessel`/`ex-vessel`（`General … context beyond …`）、`safety-important-component`（消歧注记）**6 条**——语义增益近零，**如实登记、不宣传高质量**（与既有 `nuclear-fusion`/`neutron-transport` 同类）。
+- **循环同义定义计数（本组新增）**：`pressurized-water`（`Coolant type concept`）、`primary-heat-transfer`（`Primary-loop thermal transfer concept`）、`reduced-activation`（`General … concept across materials`）、`in-vessel`/`ex-vessel`（`General … context beyond …`）、`safety-important-component`（消歧注记）**6 条**〔父代理 2026-10-28 勘误：实为 **7 条**，漏计 `wcpb`（`A water-cooled pebble-bed blanket concept.` 同为名称展开）；7 条已由 §「D2-4 第六组（`B22–B26`）来源/语义返工」修复〕——语义增益近零，**如实登记、不宣传高质量**（与既有 `nuclear-fusion`/`neutron-transport` 同类）。
 - **下一步（父代理）**：`B22–B26` 组 D2-4 独立验收（100 id / 200 行）+ W0 证据束 `registry_evidence_bundle --compare` + `registry_row_audit --audit --expect-clean`；通过后可推进 `w1_b_b27`。**本执行者不执行 W0、不判组级 PASS。**
 
 #### T1.B19-EN / T1.B19-ZH — ✅ DONE（2026-10-27，#T-4973）commits `c213a94`（-EN）+ 本批 log commit（-ZH）
@@ -2373,6 +2373,34 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 - **实测 commit 哈希（本组）**：`git log --oneline` 实测 —— B20 `aaaa49b`（-EN）/`267c4d9`（-ZH）；B21 `434d3c1`（-EN）/`1ce5bdb`（-ZH + 日志）；B17 `5c28236`（-EN）+ `2fda643`（-EN 保真修订）+ `<b17-ZH 待父代理回填>`（**仍为占位**，见下）；B18/B19 返工与修复见上「历史 FAIL / 修复链」。
 - **遗留占位（本组唯一未闭合项）**：状态行（第 20 行）中 `b17` 的 `-ZH` 哈希仍为占位 `<b17-ZH 待父代理回填>`；按「不篡历史行文」未改写，**登记待回填**（不阻断本组 PASS）。
 - **下一步**：`w1_b_b22` 起串行推进（下一 D2-4 组 = `B22–B26`）——**须父代理授权**；`w1_c` / W1 收尾 / W2 / W3 未开始。
+
+#### D2-4 第六组（`B22–B26`）来源/语义返工 — ✅ 修复完成（2026-10-28，#T-4973）commits `097eafe`（-EN）+ 本批 log commit（-ZH + 本节）
+
+- **首次独立验收 = FAIL（执行侧 `d05d99e`）**：机械门禁全绿（100 ids / 200 行 `--lang both` exit 0、`validate_registry` exit 0、`pytest` 175 passed、`registry_row_audit --expect-clean` exit 0），但**语义复核判 FAIL**：**7 条**空/循环定义。门禁只判长度下限 / 套话与模板黑名单 / `source` 前缀白名单 / 行数与 lang 对，**不判义项、不判权威性、不探测 URL** ⇒ **机械绿不得签收**（口径同 §「1. 验收判定：来源 + 语义 = FAIL（「已写入」≠ accepted）」）。
+- **7 条缺陷清单（独立复核，逐条实测）**：`safety-important-component`（`notes` 仅消歧「注意与 SiC/SiC (sic-sic-composite) 区分」，无定义性内容）、`pressurized-water`（`A coolant type concept, for pressurized water.`）、`primary-heat-transfer`（`A primary-loop thermal transfer concept.`）、`reduced-activation`（`A general reduced-activation concept across materials.`）、`in-vessel` / `ex-vessel`（把 LOCA 范围界定语当定义：`A general in-vessel context beyond LOCA-specific concepts.`）、`wcpb`（名称展开：`A water-cooled pebble-bed blanket concept.`）。
+- **账面勘误（6 → 7）**：执行侧组记录原写「循环同义定义 … **6 条**」，**漏计 `wcpb`**（同为名称展开）；本条按独立复核更正为 **7 条**，并就地修订 §T1.B26 组记录该处原文（**不删除、不掩盖**）。
+- **用户裁决边界（本轮未新增裁决）**：通用英语词（B18/B19）经用户 `question` 接受 OUP/CUP 词典 + 留存原文 + `curl` 200；本组 7 条**均为核工程 / 聚变术语**，按既定政策**优先专业来源**——采用 IAEA Safety Glossary、ITER 官方页 / 词表、OSTI 托管的同行评议论文（`FST`）。**未**使用百科 / 词典类来源，**未**改工作集、**未**改判据、**未**改 `pipeline/`、`scripts/`、`concepts.tsv`、`aliases.tsv`、`allowlist_*`。
+- **返工提交**：`097eafe`（`-EN`：7 条 `en` 改写 + `evidence.tsv` **+7** 行诚证据行）；本 commit（`-ZH`：7 条 `zh` 改写 + 本节）。**未** `push`、**未** `--amend`、**未**任何 hook 旁路（两次提交 pre-commit 7 项正常执行、`pytest` Passed）。
+- **来源与判据摘录（逐条实测原文 / HTTP / sha256 见 `evidence.tsv` 新增 7 行）**：
+
+  | id | `source` | 判据摘录（实测原文） |
+  |---|---|---|
+  | `safety-important-component` | `IAEA-safety-glossary` | `item important to safety. An item that is part of a safety group and/or whose malfunction or failure could lead to radiation exposure of the site personnel or members of the public.`；图注 a `In this context, an item is a structure, system or component.`（印刷 167 / PDF p.179）⇒ 写成**部件子类**，**不宣称与 `item important to safety` 同义**，**不宣称 `SIC` 为 IAEA 官方缩写**（IAEA 2018 全文 0 命中 `safety important`） |
+  | `pressurized-water` | `https://www.osti.gov/servlets/purl/2376331` | `… simulated pressurized water reactor chemistry and conditions (330 C, 15.5 MPa)`（Bell et al., ORNL 2024, OSTI 2376331） |
+  | `primary-heat-transfer` | `https://www.osti.gov/servlets/purl/3452321` | `The PHTS refers to this primary loop, which removes heat from the fusion chamber and transfers it to the intermediate loop.`（FST 2026, OSTI 3452321） |
+  | `reduced-activation` | `https://www.iter.org/machine/safety-and-environment` | `This timetable of 100 years could possibly be reduced for future devices through the continued development of 'low activation' materials …` |
+  | `in-vessel` | `ITER-glossary` | `In-vessel components … mounted directly on the vessel`（ITER Fusion Glossary 词条原文；GB/T 2.2.63 真空室内部件同向） |
+  | `ex-vessel` | `https://www.iter.org/machine/vacuum-vessel` | `… components situated outside of the vacuum vessel (such as the magnets)` |
+  | `wcpb` | `https://www.osti.gov/servlets/purl/2006672` | `Two configurations of a water-cooled pebble bed (WCPB) blanket mockup …`；同段并列 `HCPB` / `HCLL` / `LLCB` / `WCCB` / `WCLL` ⇒ **保留并列关系，不偷换为 WCLL / HCPB 同义** |
+
+- **未取到的依据（如实登记，不编造）**：`reduced-activation` 的「合金成分替代（如以 W/Ta/V 替代 Mo/Nb）减少长寿命核素」机制句，**本轮无可实读专业来源**（IAEA 2018 PDF 与 GB/T 4960.9 均 0 命中 `low activation` / `reduced activation`；`iaea.org` 403、ITER 材料页 404）⇒ 定义**只写可证的一层**（活化材料回收时间表可因低活化材料开发而缩短），**不写**成分机制，登记为**已知局限**（非缺陷、不阻断）。
+- **`ex-vessel` 边界纪律**：现定义**只给相对真空室的位置关系、不设外边界**；`ex-vessel-component` 的 `notes`（`inside the biological shield`）**不作为泛称定义依据**（ITER `Bioshield` 包的是低温恒温器；ITER `outside of the vacuum vessel` 的例证是磁体，未给出「生物屏蔽内」上界）。
+- **命名域未动**：`SIC` / `SiC/SiC` 的大小写相似**不自动构成命名缺陷**，`concepts.tsv` 词头与 `aliases.tsv` **零改动**（命名问题不属本返工范围）。
+- **能失败证明（RED → GREEN，实跑）**：语义判据脚本 `/tmp/opencode/t4973-b2425r/semantic_red.py`（C1：逐条源判据短语必须出现在 `en` 行；C2：≥ 8 个非词头 / 非通用实词，抗循环定义）——**改前**（`HEAD` 版本）`exit 1`，20 条失败覆盖 **7/7** id（`reduced-activation` 实词 0、`pressurized-water` 仅 `coolant`、`safety-important-component` 仅 `sic`/`composite`、`wcpb` 仅 `blanket`；`red_semantic_before.txt`）；**改后** `exit 0`（`green_semantic.txt`）。批次门禁：`--lang en` exit 0 `verdict=PASS`、`--lang zh` exit 0、`--lang both --expect 7` exit 0；`validate_registry --terms-dir terms` exit 0（`6132 definitions` 恒不变、`evidence rows 3184 → 3191`）；`pytest -q` exit 0。
+- **范围核验**：`-EN` `git diff --numstat` = `7/7`（definitions `en`）+ `7/0`（evidence 新增）；`-ZH` = `7/7`（definitions `zh`）+ 本计划；`git diff --check` 干净。
+- **取代关系（口径边界）**：本条**取代** §T1.B24「登记的质量限制」中 `pressurized-water` / `primary-heat-transfer` / `reduced-activation` / `in-vessel` / `ex-vessel` 五条与 §T1.B25「⚠️ 词义风险登记」中 `safety-important-component` 一条的「最小补足 / 消歧即终态」结论，并修复 `wcpb` 的循环定义。**`T1.B24` 其余最小补足条目**（`coolant-purification` / `deuterium-processing` / `station-blackout`）与 **`b22` / `b23` 的最小补足条目**（`stress-corrosion-cracking` / `microstructure` / `sdk` / `design-pattern` / `documentation` / `computational-mesh`）**不在本次返工范围**，仍为已登记局限。
+- **后续（仍未完成）**：本组**返工后**须由父代理重跑 D2-4 独立验收（100 id / 200 行）与 W0 证据束（`registry_evidence_bundle --compare`，**一次**）；通过后方可推进 `w1_b_b27`。**执行侧不自称组级 accepted。**
+
 
 ## Read-only registry evidence handoff gate
 
