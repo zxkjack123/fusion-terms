@@ -2005,3 +2005,24 @@ critical-current-density
 hts-tape
 quench-heater
 magnet-protection-system
+# --- T-4973 W2 batch 33 ---
+cryostat-feedthrough
+cryodistribution
+mixed-material-layer
+deuterium-retention
+erosion-rate
+erosion-lifetime
+shielding-plug
+area-monitor
+gamma-streaming
+crud
+water-activation
+dissolved-hydrogen
+nitrogen-16
+tritium-release-rate
+sector-assembly
+gravity-support
+in-wall-shielding
+vessel-thermal-shield
+poloidal-field-power-supply
+thyristor-converter
