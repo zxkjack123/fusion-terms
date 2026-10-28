@@ -5512,7 +5512,7 @@ state-of-destination	zh	聚变/核工程术语，对应英文“State of destina
 state-of-origin	zh	聚变/核工程术语，对应英文“State of origin”。	internal:dict-improvements
 state-of-transit	zh	聚变/核工程术语，对应英文“State of transit”。	internal:dict-improvements
 station-blackout	en	The complete loss of alternating current (ac) electric power to the essential and nonessential switchgear buses in a nuclear power plant, that is, loss of the offsite electric power system concurrent with turbine trip and unavailability of the onsite emergency ac power system; the loss of available ac power to buses fed by station batteries through inverters, or by alternate ac sources, is not counted as a station blackout.	https://www.govinfo.gov/content/pkg/CFR-2024-title10-vol1/xml/CFR-2024-title10-vol1-sec50-2.xml
-station-blackout	zh	全厂断电事故是 LOCA/LOFA/LOVA 事故家族的同族事故。	corpus
+station-blackout	zh	全厂断电事故：核电厂中通往重要与非重要开关柜母线的交流电（ac）电源完全丧失，即厂外电力系统丧失、同时汽轮机脱扣且厂内应急交流电源不可用；经逆变器由厂内蓄电池供电的母线、或由备用交流电源供电的母线所损失的可用交流电，不计为全厂断电事故。	https://www.govinfo.gov/content/pkg/CFR-2024-title10-vol1/xml/CFR-2024-title10-vol1-sec50-2.xml
 steady-state-high-beta	en	An advanced tokamak target scenario that combines high beta with steady state.	corpus
 steady-state-high-beta	zh	稳态高β运行是兼具高β与稳态运行的先进托卡马克目标场景。	corpus
 steady-state-tokamak	zh	聚变/核工程术语，对应英文“Steady State Tokamak”。	internal:dict-improvements
