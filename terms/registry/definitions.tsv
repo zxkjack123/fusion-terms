@@ -3855,7 +3855,7 @@ convergence-criterion	en	A threshold for iterative solution convergence.	corpus
 convergence-criterion	zh	收敛准则是迭代求解收敛的判定阈值。	corpus
 conveyance	zh	聚变/核工程术语，对应英文“conveyance”。	internal:dict-improvements
 coolant	en	A liquid that is used for cooling, such as an engine or a nuclear reactor.	https://www.oxfordlearnersdictionaries.com/definition/english/coolant
-coolant	zh	冷却剂：通用冷却工质概念；更具体的冷却剂种类在注册表中单独立项。	corpus
+coolant	zh	冷却剂：用于冷却（如发动机或核反应堆）的液体。	https://www.oxfordlearnersdictionaries.com/definition/english/coolant
 coolant-chemistry	en	Chemical control of the coolant in a blanket.	corpus
 coolant-chemistry	zh	冷却剂化学是对增殖包层冷却剂的化学控制。	corpus
 coolant-purification	en	A supporting process of the cooling system.	corpus
@@ -4019,7 +4019,7 @@ direct-disposal	zh	聚变/核工程术语，对应英文“direct disposal”。
 direct-energy-conversion	en	Conversion of the kinetic energy of charged particles into electricity without an intermediate thermal cycle.	corpus
 direct-energy-conversion	zh	不经中间热循环而将带电粒子动能直接转换为电能。	corpus
 direct-internal-recycling	en	Recovery and reinjection of unburned fuel directly from the exhaust.	corpus
-direct-internal-recycling	zh	直接内循环：直接从排气中回收未燃尽燃料并回注的处理方式。	corpus
+direct-internal-recycling	zh	直接内循环：直接从排气中回收未燃尽燃料并回注。	corpus
 directional-dose-equivalent	zh	聚变/核工程术语，对应英文“directional dose equivalent”。	internal:dict-improvements
 discharge	zh	聚变/核工程术语，对应英文“discharge”。	internal:dict-improvements
 dislocation	en	A line defect in the crystal lattice of a material.	corpus
@@ -5058,7 +5058,7 @@ plasma-ramp-up	zh	等离子体升流是初始的等离子体电流上升阶段�
 plasma-resistivity	en	Spitzer or anomalous resistivity of plasma.	corpus
 plasma-resistivity	zh	等离子体电阻率是Spitzer电阻率或反常电阻率。	corpus
 plasma-shape-control	en	Active control of the plasma cross-section geometry, including elongation and triangularity.	corpus
-plasma-shape-control	zh	等离子体形状控制：对等离子体截面几何（延伸比、三角形度）的主动控制。	corpus
+plasma-shape-control	zh	等离子体形状控制：对等离子体截面几何（延伸比、三角形变）的主动控制。	corpus
 plasma-shaping	en	The control of the cross-sectional geometry of the plasma column, characterized in particular by its elongation and triangularity, so as to obtain a prescribed plasma shape.	corpus
 plasma-shaping	zh	对等离子体柱横截面几何形状的控制，主要以拉长比和三角形变来表征，以得到所要求的等离子体形状。	corpus
 plasma-surface-interaction	en	The collective term for the processes by which the plasma and the material surfaces facing it affect one another, covering both the modification of those surfaces by the plasma and the modification of the plasma by those surfaces.	corpus

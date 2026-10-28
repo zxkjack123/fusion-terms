@@ -2478,6 +2478,22 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 - **本组（D2-4 `B27–B31`）进度**：本批完成 ⇒ **5/5 批**。
 - **未做（按本轮纪律）**：**未跑 W0**（组级命令留给 `B27–B31` 稳定后**一次**执行）；**未 push**、**未 `--amend`**、**未**任何 hook 旁路。
 
+#### 第七组（D2-4 `B27–B31`）独立复核 → **FAIL（2 blocking）** → 返工完成（2026-10-28，#T-4973）commits `757c8b2`（-EN + `evidence.tsv`）+ 本 commit（-ZH + 本节）
+
+- **复核来源与口径**：`acceptance-verifier` 独立复核（子会话 `ses_e7f4bed31ffecrwWRuaM6UFBCw`，2026-10-28），复核对象 = `w1_b_b27`…`b31` 共 **100 id / 200 行**，另跑批判性复核（CT）同组裁决。**结论 `FAIL`，blocking = 2**。**教训复用（与 B18/B19 同级）**：父代理机械门禁全绿（批门禁 / 自建语义判据 / `validate_registry` / `pytest` / 范围检查）**不构成**语义验收，不得据机械 `exit 0` 判 accepted。
+- **O1（blocking）`coolant`（B27）循环式释义**：原行 `A generic coolant working fluid concept; specific coolant types are separate concepts in the registry.`（zh 同构）属**对 `preferred_en`/`notes` 的同义反复**（该 id `notes` = `Generic coolant working fluid concept`，本身**非定义性**）⇒ 依 D2-8=A「仅当显式引用外部权威时才要求 URL」+ B22–B26 已验收先例（`cooling` 行同源）改用**出版社词典**：
+  - 新释义：en `A liquid that is used for cooling, such as an engine or a nuclear reactor.` / zh `冷却剂：用于冷却（如发动机或核反应堆）的液体。`；`source`（en 与 zh）= `https://www.oxfordlearnersdictionaries.com/definition/english/coolant`（OUP Oxford Advanced Learner's Dictionary）。
+  - **新增 1 行 `evidence.tsv`**：`coolant | <同 URL> | a liquid that is used for cooling an engine, a nuclear reactor | copilot | 2026-10-28`（`quote` 逐字取自留存原文；`evidence.tsv` 行数 **3192 → 3193**）。
+  - **来源可复现证据（本轮实抓）**：`curl -A '<browser UA>' -L …` ⇒ **HTTP 200 / 70857 bytes**；留存原文 `/tmp/opencode/t4973-b2731/sbo2/oup_coolant.html`（逐字 quote 由该文件 `class="def"` 节点提取）。
+  - **如实披露（不计为 URL 检查通过）**：`--check-urls`（urllib 默认 UA）⇒ `def_url_status: coolant: source '…oup…/coolant' answered 403 (require 200)` ⇒ 门禁该次 **exit 1**。与 B22–B26 的用户裁决「接受留存原文及 curl 证据、**仍不写 `--check-urls` 通过**」同口径处置；本行 `source` 为真实可复现 URL，**但不宣称 urllib 200**。
+  - **已接受限制（如实登记，不宣传质量）**：OUP 义项限于 **liquid**；聚变装置中氦冷却剂为**气态**，该情形由兄弟概念 `helium-coolant` 承担，本行**不**扩写义项。
+- **O2（blocking）`direct-internal-recycling`（B30）越出 `notes`**：`notes` = `Recovery and reinjection of unburned fuel directly from exhaust`；原 en 含 `gas` 与 `into the plasma`（`notes` 未述介质与目的地）、原 zh 含「的处理方式」。修复 ⇒ en `Recovery and reinjection of unburned fuel directly from the exhaust.`、zh `直接内循环：直接从排气中回收未燃尽燃料并回注。`（`回注` = `reinjection` 直译，未添加目的地/介质）。
+- **C1（caution，已修）`plasma-shape-control`（B30）zh 用词**：原「三角形度」不在注册表允许族内（`aliases.tsv`：`等离子体三角形变` = preferred；`三角度`/`三角性` = forbidden；`负三角形变` 用于 `negative-triangularity`）⇒ 改为「**三角形变**」（1 个 token；行首仍为 `preferred_zh` `等离子体形状控制`）。
+- **C4（caution，未改）**：`延伸比`（`high-elongation` 的 `preferred_zh`）与 `等离子体拉长比`（`plasma-elongation` 的 preferred）为**既有命名双头冲突**，按复核方意见**本批不改**（属命名治理，非本组范围）。
+- **C3（caution，登记为已知限制，未修）**：W1-B 中 `notes` 短于门禁下限（40 字符）者 **158 / 679**（父代理本轮复算），其中**非定义性**者按复核方统计 **33** 个（**该 33 为复核方统计，父代理未逐条复算**）；`coolant` 为其中代表（本次按 O1 以外部权威来源处置）。**影响**：`B32–B34 + C1` 会再遇同类 id。**建议（仅登记，待批，未执行）**：在 W1 批次统一规格增加「`notes` 非定义性 ⇒ 必须外部权威来源 + `evidence.tsv` 行」规则。**`B32` 起未授权**，本项不自动执行。
+- **复核后复跑记录（本返工后实测）**：`b27` / `b30` `--lang en`、`--lang zh`、`--lang both` 各 **verdict=PASS（exit 0）**；**组级** `--ids-file` = 100 id 并集、`--expect 100 --lang both` ⇒ **verdict=PASS（exit 0）**；自建语义判据 `lang=both`（100 id）⇒ **failures=0**；`pipeline.validate_registry` **exit 0**（`3193 evidence rows` / `6132 definitions`）；`pytest -q` **exit 0**；`git diff --check` 干净。
+- **未做（按本轮纪律）**：**未跑 W0**（仍在独立复核通过后**一次**执行）；**未 push**、**未 `--amend`**、**未**任何 hook 旁路。
+
 ## Read-only registry evidence handoff gate
 
 Run the current Phase 0 gate with:
