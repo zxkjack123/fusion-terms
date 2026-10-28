@@ -2940,15 +2940,15 @@ w7-as	device	W7-AS	Wendelstein 7-AS	W7-AS	active	Predecessor of W7-X at IPP Garc
 winding-surface	concept	绕组面	winding surface		active	Toroidal surface on which stellarator coils are constrained during optimization	corpus
 type-one-energy	company	第一型能源公司	Type One Energy		active	US stellarator company developing optimized QI/QA designs	corpus
 proxima-fusion	company	普罗希马聚变公司	Proxima Fusion		active	German stellarator spinoff from Max Planck IPP	corpus
-renaissance-fusion	company	Renaissance Fusion	Renaissance Fusion		active	French stellarator company developing HTS magnet approach	corpus
+renaissance-fusion	company	文艺复兴聚变公司	Renaissance Fusion		active	French stellarator company developing HTS magnet approach	corpus
 
 # ---- P1: Field-Reversed Configuration (场反位形) ----
 frc-stability	concept	场反稳定性	FRC stability		active	Stability properties of field-reversed configurations including tilt and rotational modes	corpus
 frc-lifetime-scaling	concept	场反寿命定标	FRC lifetime scaling		active	Empirical and theoretical scaling laws for FRC confinement lifetime	corpus
 open-field-line	concept	开放磁力线	open field line		active	Magnetic field line that does not close within the confinement region	corpus
 flux-closure	concept	磁通闭合	flux closure		active	Process of forming closed poloidal flux surfaces in FRC/CT formation	corpus
-c-2u	device	C-2U	C-2U		active	TAE Technologies predecessor to C-2W	corpus
-helion-trenta	device	Helion Trenta	Helion Trenta		active	Helion Energy 7th-generation FRC prototype targeting net electricity	corpus
+c-2u	device	C-2U装置	C-2U		active	TAE Technologies predecessor to C-2W	corpus
+helion-trenta	device	赫利昂Trenta装置	Helion Trenta		active	Helion Energy 7th-generation FRC prototype targeting net electricity	corpus
 pulsed-non-ignition	concept	脉冲非点火	pulsed non-ignition		active	Helion approach: pulsed FRC compression without sustained ignition	corpus
 
 # ---- P1: Mirror (磁镜) ----
@@ -2957,21 +2957,21 @@ end-loss	concept	端损失	end loss		active	Particle and energy loss through mir
 ioffe-bars	device	Ioffe棒	Ioffe bars		active	Current-carrying bars creating minimum-B stabilization in mirrors	corpus
 baseball-coil	device	棒球线圈	baseball coil		active	Baseball-seam-shaped coil producing minimum-B mirror configuration	corpus
 gas-dynamic-trap	device	气体动力学阱	gas dynamic trap	GDT	active	Long mirror with high mirror ratio operating in gas-dynamic confinement regime	corpus
-gamma-10	device	GAMMA 10	GAMMA 10		active	Tandem mirror device at University of Tsukuba	corpus
+gamma-10	device	GAMMA10串列磁镜装置	GAMMA 10		active	Tandem mirror device at University of Tsukuba	corpus
 wham	device	WHAM	Wisconsin HTS Axisymmetric Mirror	WHAM	active	Modern high-field axisymmetric mirror experiment at UW-Madison	corpus
 axisymmetric-mirror	concept	轴对称磁镜	axisymmetric mirror		active	Mirror with azimuthal symmetry; revived by modern HTS magnets	corpus
 multiple-mirror	concept	多重磁镜	multiple mirror		active	Confinement scheme using series of linked mirror cells	corpus
 direct-energy-converter	device	直接能量转换器	direct energy converter		active	Device converting charged particle kinetic energy directly to electricity	corpus
-reata-engineering	company	Reata Engineering	Reata Engineering		active	US company developing commercial mirror fusion reactors	corpus
+reata-engineering	company	里塔工程公司	Reata Engineering		active	US company developing commercial mirror fusion reactors	corpus
 
 # ---- P2: Magnetized Target / MIF (磁化靶聚变) ----
 magnetized-target-fusion	concept	磁化靶聚变	magnetized target fusion		active	Approach compressing pre-magnetized plasma target to fusion conditions	corpus
 liner-implosion	concept	衬套内爆	liner implosion		active	Compression of magnetized plasma by imploding metal liner	corpus
 plasma-liner	concept	等离子体衬套	plasma liner		active	Converging plasma jets forming a compressing liner	corpus
 acoustic-driver	concept	声学驱动器	acoustic driver		active	Pneumatic piston driver for plasma compression (General Fusion concept)	corpus
-general-fusion	company	General Fusion	General Fusion		active	Canadian company developing magnetized target fusion with liquid metal	corpus
-hyperjet-fusion	company	HyperJet Fusion	HyperJet Fusion		active	US company developing plasma-liner-driven magneto-inertial fusion	corpus
-zap-energy	company	Zap Energy	Zap Energy		active	US company developing sheared-flow-stabilized Z-pinch	corpus
+general-fusion	company	通用聚变公司	General Fusion		active	Canadian company developing magnetized target fusion with liquid metal	corpus
+hyperjet-fusion	company	超喷流聚变公司	HyperJet Fusion		active	US company developing plasma-liner-driven magneto-inertial fusion	corpus
+zap-energy	company	扎普能源公司	Zap Energy		active	US company developing sheared-flow-stabilized Z-pinch	corpus
 sheared-flow-z-pinch	concept	剪切流Z箍缩	sheared-flow Z-pinch		active	Z-pinch stabilized by axial plasma flow shear	corpus
 
 # ---- P2: ICF → IFE Engineering (惯性聚变能) ----
@@ -2984,28 +2984,28 @@ stimulated-brillouin-scattering	concept	受激布里渊散射	stimulated Brillou
 stimulated-raman-scattering	concept	受激拉曼散射	stimulated Raman scattering	SRS	active	Laser-plasma instability: scattering from electron plasma waves	corpus
 maglif	concept	磁化衬套惯性聚变	magnetized liner inertial fusion	MagLIF	active	Sandia Z-machine approach combining magnetic field + liner implosion + laser preheat	corpus
 z-machine	device	Z装置	Z machine		active	Sandia pulsed-power facility for ICF and HED physics	corpus
-first-light-fusion	company	First Light Fusion	First Light Fusion		active	UK company developing projectile-driven ICF	corpus
-focused-energy	company	Focused Energy	Focused Energy		active	German-US company developing laser direct-drive IFE	corpus
-xcimer-energy	company	Xcimer Energy	Xcimer Energy		active	US company developing excimer-laser-driven IFE	corpus
+first-light-fusion	company	第一光聚变公司	First Light Fusion		active	UK company developing projectile-driven ICF	corpus
+focused-energy	company	聚焦能源公司	Focused Energy		active	German-US company developing laser direct-drive IFE	corpus
+xcimer-energy	company	Xcimer能源公司	Xcimer Energy		active	US company developing excimer-laser-driven IFE	corpus
 
 # ---- P3: Spherical Tokamak (球形托卡马克) ----
 center-column	system	中心柱	center column		active	Central structural and conductor column of spherical tokamak	corpus
 cs-free-startup	concept	无CS启动	CS-free start-up		active	Plasma current initiation without central solenoid	corpus
 merging-compression	concept	并合压缩	merging-compression		active	ST start-up method merging two spheromak/CT plasmas	corpus
 high-elongation	concept	高延伸比	high elongation		active	Vertically elongated plasma cross-section characteristic of ST	corpus
-tokamak-energy	company	Tokamak Energy	Tokamak Energy		active	UK company developing compact spherical tokamak with HTS magnets	corpus
-start-device	device	START	START		active	Small Tight Aspect Ratio Tokamak — pioneering ST at Culham	corpus
+tokamak-energy	company	托卡马克能源公司	Tokamak Energy		active	UK company developing compact spherical tokamak with HTS magnets	corpus
+start-device	device	START球形托卡马克	START		active	Small Tight Aspect Ratio Tokamak — pioneering ST at Culham	corpus
 
 # ---- Batch A: Private Fusion Companies (2026-04-17) ----
 energy-singularity	company	能量奇点	Energy Singularity		active	Shanghai-based company developing compact HTS tokamak (HH70/HH170)	corpus
 kyoto-fusioneering	company	京都聚变工程	Kyoto Fusioneering		active	Japanese company developing blanket/heat-exchange/tritium technologies	corpus
-marvel-fusion	company	Marvel Fusion	Marvel Fusion		active	German company developing laser-driven non-thermal ICF	corpus
-shine-technologies	company	SHINE Technologies	SHINE Technologies		active	US company using fusion neutrons for medical isotope production and industrial applications	corpus
-nt-tao	company	NT-Tao	NT-Tao		active	Israeli company developing compact high-field tokamak	corpus
-ex-fusion	company	EX-Fusion	EX-Fusion		active	Japanese company developing laser-driven IFE (Osaka Univ. spinoff)	corpus
-blue-laser-fusion	company	Blue Laser Fusion	Blue Laser Fusion		active	US company developing diode-pumped laser-driven IFE	corpus
-novatron	company	Novatron	Novatron		active	Swedish company developing magnetic mirror fusion reactor	corpus
-thea-energy	company	Thea Energy	Thea Energy		active	US company developing planar-coil stellarator (formerly Princeton Stellarators)	corpus
+marvel-fusion	company	Marvel聚变公司	Marvel Fusion		active	German company developing laser-driven non-thermal ICF	corpus
+shine-technologies	company	SHINE技术公司	SHINE Technologies		active	US company using fusion neutrons for medical isotope production and industrial applications	corpus
+nt-tao	company	NT-Tao公司	NT-Tao		active	Israeli company developing compact high-field tokamak	corpus
+ex-fusion	company	EX-Fusion公司	EX-Fusion		active	Japanese company developing laser-driven IFE (Osaka Univ. spinoff)	corpus
+blue-laser-fusion	company	蓝激光聚变公司	Blue Laser Fusion		active	US company developing diode-pumped laser-driven IFE	corpus
+novatron	company	Novatron公司	Novatron		active	Swedish company developing magnetic mirror fusion reactor	corpus
+thea-energy	company	西娅能源公司	Thea Energy		active	US company developing planar-coil stellarator (formerly Princeton Stellarators)	corpus
 openstar-technologies	company	OpenStar Technologies	OpenStar Technologies		active	UK company developing stellarator fusion reactor	corpus
 gauss-fusion	company	Gauss Fusion	Gauss Fusion		active	German company developing HTS magnets and stellarator technology	corpus
 helicity-space	company	Helicity Space	Helicity Space		active	US company developing compact toroid fusion for space propulsion	corpus
