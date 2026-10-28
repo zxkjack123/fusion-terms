@@ -6132,3 +6132,13 @@ half-value-layer	en	Thickness of a specified material that attenuates a beam of 
 half-value-layer	zh	将入射辐射强度衰减到一半（等价地，空气比释动能率减半）所需的指定材料厚度，HVL = ln 2 / μ，与线衰减系数互为倒数尺度，用于确定屏蔽层厚度。	internal:dict-improvements
 tenth-value-layer	en	Thickness of a specified material that attenuates a beam of radiation to one tenth of its incident intensity (90% attenuation). TVL = ln 10 / mu, i.e. about 3.32 times the half-value layer.	internal:dict-improvements
 tenth-value-layer	zh	将入射辐射强度衰减到十分之一（衰减 90%）所需的指定材料厚度，TVL = ln 10 / μ ≈ 3.32 × HVL。	internal:dict-improvements
+cate	en	A water-cooled-loop activated corrosion product source term analysis code (NCEPU; CATE-V2.0/V3.0 line).	corpus
+pactole	en	A CEA code for activated corrosion product source terms in PWR primary circuits.	corpus
+pactiter	en	A CEA code for activated corrosion product source terms in fusion water-cooled loops.	corpus
+tract	en	A UKAEA code for activated corrosion product source terms in fusion water-cooled loops.	corpus
+oscar	en	A CEA/Framatome/EDF code for activated corrosion products, with an Oscar-fusion variant for fusion cooling loops.	corpus
+acp-source-term	en	The spatial and temporal distribution of activated corrosion product activity in coolant loops.	corpus
+acp-deposition-coefficient	en	A rate coefficient for the deposition of particulate corrosion products onto coolant loop surfaces.	corpus
+acp-erosion-coefficient	en	A rate coefficient for the erosion of deposited corrosion products back into the coolant stream.	corpus
+dissolution-precipitation-coefficient	en	A rate coefficient for the dissolution of the oxide layer and the precipitation of dissolved species in coolant loops.	corpus
+acp-filter-model	en	A model of the removal of activated corrosion products by the coolant purification filter in source term codes.	corpus
