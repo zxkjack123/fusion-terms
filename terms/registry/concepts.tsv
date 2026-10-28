@@ -307,10 +307,10 @@ sparc	device	SPARC托卡马克	SPARC		active	Compact high-field HTS tokamak (CFS
 arc	device	ARC紧凑聚变堆	ARC		active	Affordable Robust Compact reactor concept (CFS/MIT pilot plant design)	corpus
 step	device	STEP球形托卡马克	STEP		active	Spherical Tokamak for Energy Production (UKAEA)	corpus
 nstx-u	device	NSTX-U球形环装置	NSTX-U		active	National Spherical Torus Experiment Upgrade at PPPL	corpus
-mast-u	device	MAST-U	MAST-U		active	Mega Amp Spherical Tokamak Upgrade at CCFE	corpus
-cfetrcoolact	device	BEST	BEST		active	Blanket Engineering and Shielding Test facility (a.k.a. CFETRCOOLACT)	corpus
+mast-u	device	MAST-U球形托卡马克	MAST-U		active	Mega Amp Spherical Tokamak Upgrade at CCFE	corpus
+cfetrcoolact	device	BEST包层与屏蔽测试装置	BEST		active	Blanket Engineering and Shielding Test facility (a.k.a. CFETRCOOLACT)	corpus
 sg-iii	device	神光三号	SG-III		active	Shenguang-III laser facility for ICF at CAEP	corpus
-omega	device	OMEGA	OMEGA		active	LLE Rochester 60-beam ICF laser facility	corpus
+omega	device	OMEGA激光装置	OMEGA		active	LLE Rochester 60-beam ICF laser facility	corpus
 laser-megajoule	device	兆焦耳激光装置	Laser Mégajoule	LMJ	active	French ICF megajoule laser facility	corpus
 
 # ---- Plasma control & operation (等离子体控制与运行)
@@ -366,26 +366,26 @@ zonal-flow	concept	带状流	zonal flow		active	Toroidally and poloidally symmet
 geodesic-acoustic-mode	concept	测地声模	geodesic acoustic mode	GAM	active	Oscillatory zonal-flow branch in toroidal geometry	corpus
 
 # ---- Simulation codes & nuclear data (仿真工具与核数据)
-efit	code	EFIT	EFIT		active	Equilibrium Fitting code for MHD equilibrium reconstruction	corpus
-transp	code	TRANSP	TRANSP		active	Time-dependent tokamak transport analysis code	corpus
-astra	code	ASTRA	ASTRA		active	Automated System for TRansport Analysis code	corpus
-solps-iter	code	SOLPS-ITER	SOLPS-ITER		active	Coupled plasma-neutral code for scrape-off layer / divertor modeling	corpus
-gene	code	GENE	GENE		active	Gyrokinetic Electromagnetic Numerical Experiment	corpus
-gtc	code	GTC	GTC		active	Gyrokinetic Toroidal Code (global particle-in-cell)	corpus
-bout-pp	code	BOUT++	BOUT++		active	Framework for plasma fluid simulations in curvilinear geometry	corpus
-mcnp	code	MCNP	MCNP		active	Monte Carlo N-Particle transport code (LANL)	corpus
-openmc	code	OpenMC	OpenMC		active	Open-source Monte Carlo particle transport code	corpus
-serpent	code	Serpent	Serpent		active	Monte Carlo reactor physics / neutronics code (VTT)	corpus
-fendl	code	FENDL	FENDL		active	Fusion Evaluated Nuclear Data Library (IAEA)	corpus
-endf	code	ENDF	ENDF		active	Evaluated Nuclear Data File (BNL/NNDC)	corpus
-comsol	code	COMSOL	COMSOL		active	Multi-physics finite element simulation platform	corpus
-ansys	code	ANSYS	ANSYS		active	Multi-physics engineering simulation software	corpus
-catia	code	CATIA	CATIA		active	3D CAD/CAM/CAE software (Dassault Systèmes)	corpus
+efit	code	EFIT平衡重建程序	EFIT		active	Equilibrium Fitting code for MHD equilibrium reconstruction	corpus
+transp	code	TRANSP托卡马克输运分析程序	TRANSP		active	Time-dependent tokamak transport analysis code	corpus
+astra	code	ASTRA输运分析程序	ASTRA		active	Automated System for TRansport Analysis code	corpus
+solps-iter	code	SOLPS-ITER偏滤器模拟程序	SOLPS-ITER		active	Coupled plasma-neutral code for scrape-off layer / divertor modeling	corpus
+gene	code	GENE回旋动理学程序	GENE		active	Gyrokinetic Electromagnetic Numerical Experiment	corpus
+gtc	code	GTC回旋动理学程序	GTC		active	Gyrokinetic Toroidal Code (global particle-in-cell)	corpus
+bout-pp	code	BOUT++等离子体流体模拟框架	BOUT++		active	Framework for plasma fluid simulations in curvilinear geometry	corpus
+mcnp	code	MCNP蒙特卡罗粒子输运程序	MCNP		active	Monte Carlo N-Particle transport code (LANL)	corpus
+openmc	code	OpenMC开源蒙特卡罗粒子输运程序	OpenMC		active	Open-source Monte Carlo particle transport code	corpus
+serpent	code	Serpent蒙特卡罗中子学程序	Serpent		active	Monte Carlo reactor physics / neutronics code (VTT)	corpus
+fendl	code	聚变评价核数据库	FENDL		active	Fusion Evaluated Nuclear Data Library (IAEA)	corpus
+endf	code	评价核数据文件	ENDF		active	Evaluated Nuclear Data File (BNL/NNDC)	corpus
+comsol	code	COMSOL多物理场仿真软件	COMSOL		active	Multi-physics finite element simulation platform	corpus
+ansys	code	ANSYS工程仿真软件	ANSYS		active	Multi-physics engineering simulation software	corpus
+catia	code	CATIA三维设计软件	CATIA		active	3D CAD/CAM/CAE software (Dassault Systèmes)	corpus
 
 # ---- Additional simulation codes (补充仿真工具)
 # -- Plasma equilibrium / transport / MHD
-corsica	code	CORSICA	CORSICA		active	Integrated tokamak modeling code (LLNL)	corpus
-imas	code	IMAS	IMAS		active	Integrated Modelling & Analysis Suite (ITER standard data model)	corpus
+corsica	code	CORSICA托卡马克集成模拟程序	CORSICA		active	Integrated tokamak modeling code (LLNL)	corpus
+imas	code	集成建模与分析套件	IMAS		active	Integrated Modelling & Analysis Suite (ITER standard data model)	corpus
 jintrac	code	JINTRAC	JINTRAC		active	JET suite of integrated tokamak transport codes	corpus
 gacode	code	GACODE	GACODE		active	General Atomics suite of gyrokinetic / transport codes	corpus
 tgyro	code	TGYRO	TGYRO		active	Transport solver calling gyrokinetic codes (GACODE family)	corpus
