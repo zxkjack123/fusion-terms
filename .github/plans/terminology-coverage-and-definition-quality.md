@@ -2120,6 +2120,7 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
   `covered 2181 | uncovered 895 | coverage_pct 70.9（47.11→70.90）| W2 6 | allowlist_only_coverage_pct 70.06`
 - `.venv/bin/python -m pytest -q` → **exit 0**（175 passed）；`.venv/bin/python -m pipeline.validate_registry` → `registry OK: 3076 concepts, 10249 aliases, 3203 evidence rows, 6152 definitions`
 - 交付物：`.github/plans/t4973-batches/coverage-after-w2.md`（逐批表 + 对账 + 例外登记 + 门禁证据）
+- **独立验收（环节 7）**：委派 `acceptance-verifier`（会话 `ses_e7d21cb8fffe3NTnfCjnTOUQpZ`，只读）→ **`PASS` / confidence HIGH / blocking 0 / warnings 3 / known-issue 1** @ `25e6bae`；37 批全量+子集双跑、变异法还原校验（sha256 前后一致）、40 commits 提交范围（仅 6 文件、registry 逐字节未变）、729/717→4893 三源对账均独立复现。warnings 已在 `coverage-after-w2.md` §7 登记（授权来源补证 / 文档口径差 / 空行删除留痕）。
 
 ## T1.B18 / T1.B19 返工（IMPR-2，2026-10-27，基线 `08f8901`）
 

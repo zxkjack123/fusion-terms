@@ -191,3 +191,19 @@ python3 -c "import json;d=json.load(open('/tmp/cov.json'));assert d['coverage_pc
   1. 7 个含空格 `preferred_zh`（§4.1）需后续命名/规范化后补写；
   2. 6 个 W2 残余 id（§3.1）受 denylist + D2-2=A 约束，机械手段无法覆盖；
   3. D2-6 的 9 个拉丁名 id 需在 **W3b 后重跑 T2.38** 清理（§4.5）。
+
+## 7. 独立验收（acceptance-verifier，环节 7）
+
+- 委派会话：`ses_e7d21cb8fffe3NTnfCjnTOUQpZ`；验收对象 = HEAD `25e6bae`；**只读复跑，未改仓**。
+- 判定：**`PASS`** / confidence HIGH / **blocking 0** / warnings 3 / known-issue 1。
+- 独立复跑要点（全部与执行者声明逐项一致）：
+  - `registry_coverage_report.py` exit 0：`coverage_pct 70.9`、`covered 2181`、`uncovered 895`、`W2 6`、`terms_file_entries 4893`；Phase 2 完成定义断言 exit 0。
+  - 37 批 `--mode allowlist`：31 批全量 exit 0；6 批全量 exit 1 且 **violations 恰为 predicted 的 7 个 `allow_zh_not_listed`，无其它违规**；排除子集后 6 批均 exit 0。
+  - `build_terms` exit 0 / `4893` 行；变异法 exit 1 → `cp` 还原（sha256 `13720677…8f5d` 前后一致，`git diff -- terms/` 为空）→ exit 0。
+  - EN 空白 0；zh 重复 0；`pytest -q` 175 passed；`validate_registry` 3076 / 6152。
+  - 提交范围：`6342c6a..HEAD` 40 commits 仅 6 个文件；`terms/registry/`、`scripts/`、`pipeline/`、`tests/`、`*.ids` 改动数 **0**；`git diff 6342c6a HEAD -- terms/registry/` 为空（registry 逐字节未变）。
+  - 计数：729 zh / 717 en 块内词条；`git numstat` 766/754 −37 节注释 = 729/717；`3462+1431=4893` 三源互证。
+- **warnings（不阻塞，已登记）**：
+  1. 7 个含空格 zh 的处置**授权来源**：验收代理无法从委派提示看到用户原话 → 本条由父代理补证：**用户 2026-10-28 在本会话经 `question` 工具对选项「跳过并记录（推荐）」作出选择**（选项集：跳过并记录 / 修正 registry / 放宽 build_terms / 原样写入并接受构建失败）。技术冲突本身已由验收代理独立复现。
+  2. 文档口径差：§4.2 与计划 line 705 对 denylist 10 项的「写入/已存在」描述层级不同（cosmetic，无需动作）。
+  3. `9c4c8b1` 删除 1 行 —— 经验收确认为**空行**（非词条），属基线修复；计划「不得删除既有行」按绝对措辞在此留痕。
