@@ -1461,3 +1461,24 @@ ambipolar-diffusion
 anomalous-diffusion
 anomalous-electron-thermal-conduction
 auxiliary-heating-additional-heating
+# --- T-4973 W2 batch 07 ---
+ballooning-instability
+bernstein-mode
+beta-value
+bohm-transport
+burn-fraction-of-thermonuclear-fuel
+central-electron-density
+closed-configuration
+cold-plasma
+collective-instabilities
+collective-phenomena
+collisional-plasma
+collisionless-plasma
+collisionless-shock-wave
+collisionless-tearing-instability
+controlled-thermonuclear-fusion
+core-confinement
+cusped-geometry
+cyclotron-instability
+cyclotron-resonance
+cyclotron-resonance-heating
