@@ -1858,3 +1858,24 @@ techno-economic-analysis
 milestone-based-development
 public-private-partnership
 baseload
+# --- T-4973 W2 batch 26 ---
+load-following
+dispatchable
+grid-integration
+capital-cost
+overnight-cost
+construction-cost
+availability-factor
+magnet-power
+cryogenic-power
+pumping-power
+current-drive-power
+licensing-pathway
+fusion-regulation
+public-dose
+site-boundary-dose
+recycling-limit
+hts-magnet
+demountable-coil
+jointed-magnet
+no-insulation-coil
