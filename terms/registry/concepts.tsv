@@ -1356,7 +1356,7 @@ pressure-vessel	system	压力容器	pressure vessel		active	Pressure-retaining v
 
 # ==== Batch 63: Software Engineering ====
 api	concept	应用程序编程接口	API	API	active	Application Programming Interface	corpus
-sdk	concept	SDK	SDK	SDK	active	Software Development Kit	corpus
+sdk	concept	软件开发工具包	SDK	SDK	active	Software Development Kit	corpus
 refactoring	method	重构	refactoring		active	Code restructuring without changing behavior	corpus
 software-dependency	concept	软件依赖	dependency		active	Software package dependency (not physical)	corpus
 unit-test	method	单元测试	unit test		active	Test of individual code units	corpus
@@ -1368,7 +1368,7 @@ binding	concept	绑定	binding		active	Language binding/interface	corpus
 callback	concept	回调	callback		active	Deferred function invocation	corpus
 asynchronous	concept	异步	asynchronous		active	Non-blocking execution model	corpus
 version-control	method	版本控制	version control		active	Source code version management	corpus
-git	code	Git	Git		active	Distributed version control system	corpus
+git	code	Git分布式版本控制系统	Git		active	Distributed version control system	corpus
 code-review	method	代码审查	code review		active	Peer review of source code	corpus
 debugging	method	调试	debugging		active	Finding and fixing defects	corpus
 logging	method	日志记录	logging		active	Runtime event recording	corpus
@@ -1377,8 +1377,8 @@ design-pattern	concept	设计模式	design pattern		active	Reusable software des
 object-oriented-programming	method	面向对象编程	object-oriented programming	OOP	active	OOP paradigm	corpus
 scripting	method	脚本编程	scripting		active	Interpreted script-based programming	corpus
 build-system	concept	构建系统	build system		active	CMake/Make/Meson etc	corpus
-cmake	code	CMake	CMake		active	Cross-platform build system generator	corpus
-makefile	concept	Makefile	Makefile		active	Make build specification file	corpus
+cmake	code	CMake跨平台构建工具	CMake		active	Cross-platform build system generator	corpus
+makefile	concept	Makefile构建文件	Makefile		active	Make build specification file	corpus
 linker	concept	链接器	linker		active	Object file linking tool	corpus
 compiler	concept	编译器	compiler		active	Source-to-binary translator	corpus
 interpreter	concept	解释器	interpreter		active	Runtime source code executor	corpus
@@ -1387,9 +1387,9 @@ package-manager	code	包管理器	package manager		active	pip/conda/apt etc	corp
 documentation	concept	文档	documentation		active	Software/project documentation	corpus
 
 # ==== Batch 64: Data Formats & Visualization ====
-hdf5	code	HDF5	HDF5	HDF5	active	Hierarchical Data Format 5	corpus
-vtk	code	VTK	VTK	VTK	active	Visualization Toolkit	corpus
-paraview	code	ParaView	ParaView		active	Open-source visualization application	corpus
+hdf5	code	HDF5分层数据格式	HDF5	HDF5	active	Hierarchical Data Format 5	corpus
+vtk	code	VTK可视化工具包	VTK	VTK	active	Visualization Toolkit	corpus
+paraview	code	ParaView可视化软件	ParaView		active	Open-source visualization application	corpus
 computational-mesh	concept	计算网格	computational mesh		active	General mesh for simulation	corpus
 structured-mesh	concept	结构网格	structured mesh		active	Regular topology mesh	corpus
 unstructured-mesh	concept	非结构网格	unstructured mesh		active	Irregular topology mesh	corpus
@@ -1402,13 +1402,13 @@ csv-format	concept	CSV格式	CSV format	CSV	active	Comma-Separated Values	corpus
 json-format	concept	JSON格式	JSON format	JSON	active	JavaScript Object Notation	corpus
 xml-format	concept	XML格式	XML format	XML	active	Extensible Markup Language	corpus
 yaml-format	concept	YAML格式	YAML format	YAML	active	YAML Ain't Markup Language	corpus
-netcdf	code	NetCDF	NetCDF		active	Network Common Data Form	corpus
-numpy	code	NumPy	NumPy		active	Python numerical array library	corpus
-scipy	code	SciPy	SciPy		active	Python scientific computing library	corpus
-matplotlib	code	Matplotlib	Matplotlib		active	Python plotting library	corpus
-pandas	code	Pandas	Pandas		active	Python data manipulation library	corpus
-gnuplot	code	Gnuplot	Gnuplot		active	Command-line plotting tool	corpus
-visit	code	VisIt	VisIt		active	LLNL visualization tool	corpus
+netcdf	code	NetCDF网络通用数据格式	NetCDF		active	Network Common Data Form	corpus
+numpy	code	NumPy数值计算库	NumPy		active	Python numerical array library	corpus
+scipy	code	SciPy科学计算库	SciPy		active	Python scientific computing library	corpus
+matplotlib	code	Matplotlib绘图库	Matplotlib		active	Python plotting library	corpus
+pandas	code	Pandas数据分析库	Pandas		active	Python data manipulation library	corpus
+gnuplot	code	Gnuplot命令行绘图工具	Gnuplot		active	Command-line plotting tool	corpus
+visit	code	VisIt可视化工具	VisIt		active	LLNL visualization tool	corpus
 data-pipeline	concept	数据管线	data pipeline		active	Automated data processing workflow	corpus
 scatter-plot	concept	散点图	scatter plot		active	Point-based data visualization	corpus
 histogram	concept	直方图	histogram		active	Frequency distribution chart	corpus
@@ -2930,16 +2930,16 @@ effective-ripple	metric	有效纹波	effective ripple	eps_eff	active	1/nu neocla
 quasi-poloidal-symmetry	concept	准极向对称	quasi-poloidal symmetry	QP	active	Quasi-symmetry along poloidal direction	corpus
 omnigeneity	concept	全向性	omnigeneity		active	Property that all trapped particles have zero net radial drift	corpus
 bounce-averaged-drift	concept	弹跳平均漂移	bounce-averaged drift		active	Guiding-center drift averaged over trapped particle bounce orbit	corpus
-vmec	code	VMEC	VMEC		active	Variational Moments Equilibrium Code for 3-D MHD equilibrium	corpus
-desc	code	DESC	DESC		active	Stellarator equilibrium and optimization code using spectral methods	corpus
-simsopt	code	SIMSOPT	SIMSOPT		active	Framework for stellarator optimization coupling VMEC/SPEC/DESC	corpus
+vmec	code	VMEC三维平衡程序	VMEC		active	Variational Moments Equilibrium Code for 3-D MHD equilibrium	corpus
+desc	code	DESC仿星器平衡优化程序	DESC		active	Stellarator equilibrium and optimization code using spectral methods	corpus
+simsopt	code	SIMSOPT仿星器优化框架	SIMSOPT		active	Framework for stellarator optimization coupling VMEC/SPEC/DESC	corpus
 torsatron	device	扭旋器	torsatron		active	Stellarator variant with continuous helical winding	corpus
 heliac	device	螺旋器变体	heliac		active	Stellarator variant with a helical magnetic axis	corpus
-ncsx	device	NCSX	NCSX		active	National Compact Stellarator Experiment (Princeton, cancelled)	corpus
+ncsx	device	NCSX紧凑仿星器实验装置	NCSX		active	National Compact Stellarator Experiment (Princeton, cancelled)	corpus
 w7-as	device	W7-AS	Wendelstein 7-AS	W7-AS	active	Predecessor of W7-X at IPP Garching	corpus
 winding-surface	concept	绕组面	winding surface		active	Toroidal surface on which stellarator coils are constrained during optimization	corpus
-type-one-energy	company	Type One Energy	Type One Energy		active	US stellarator company developing optimized QI/QA designs	corpus
-proxima-fusion	company	Proxima Fusion	Proxima Fusion		active	German stellarator spinoff from Max Planck IPP	corpus
+type-one-energy	company	第一型能源公司	Type One Energy		active	US stellarator company developing optimized QI/QA designs	corpus
+proxima-fusion	company	普罗希马聚变公司	Proxima Fusion		active	German stellarator spinoff from Max Planck IPP	corpus
 renaissance-fusion	company	Renaissance Fusion	Renaissance Fusion		active	French stellarator company developing HTS magnet approach	corpus
 
 # ---- P1: Field-Reversed Configuration (场反位形) ----
