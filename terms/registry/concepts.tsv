@@ -2444,26 +2444,26 @@ screening-probability-level	concept	筛选概率水平	screening probability lev
 seabed-disposal	concept	海底处置	seabed disposal		active		IAEA-safety-glossary
 sealed-source	concept	密封源	sealed source		active		IAEA-safety-glossary
 security	concept	安保	security		active		IAEA-safety-glossary
-segregation	concept		segregation		active		IAEA-safety-glossary
-seismogenic-structure	concept		seismogenic structure		active		IAEA-safety-glossary
-seismotectonic-model	concept		seismotectonic model		active		IAEA-safety-glossary
-self-assessment	concept		self-assessment		active		IAEA-safety-glossary
-senior-management	concept		senior management		active		IAEA-safety-glossary
-service-conditions	concept		service conditions		active		IAEA-safety-glossary
-service-life	concept		service life		active		IAEA-safety-glossary
-severe-accident-management	concept		severe accident management		active		IAEA-safety-glossary
-severe-deterministic-effect	concept		severe deterministic effect		active		IAEA-safety-glossary
-sheltering	concept		sheltering		active		IAEA-safety-glossary
-shipment	concept		shipment		active		IAEA-safety-glossary
-short-lived-waste	concept		short lived waste		active		IAEA-safety-glossary
-shutdown	concept		shutdown		active		IAEA-safety-glossary
-shutdown-reactivity	concept		shutdown reactivity		active		IAEA-safety-glossary
-sievert	concept		sievert (Sv)		active		IAEA-safety-glossary
-significant-transboundary-release	concept		significant transboundary release		active		IAEA-safety-glossary
-single-failure	concept		single failure		active		IAEA-safety-glossary
-single-failure-criterion	concept		single failure criterion		active		IAEA-safety-glossary
-site-area	concept		site area		active		IAEA-safety-glossary
-site-area-emergency	concept		site area emergency		active		IAEA-safety-glossary
+segregation	concept	分隔	segregation		active		IAEA-safety-glossary
+seismogenic-structure	concept	发震构造	seismogenic structure		active		IAEA-safety-glossary
+seismotectonic-model	concept	地震构造模型	seismotectonic model		active		IAEA-safety-glossary
+self-assessment	concept	自我评价	self-assessment		active		IAEA-safety-glossary
+senior-management	concept	最高管理层	senior management		active		IAEA-safety-glossary
+service-conditions	concept	服役条件	service conditions		active		IAEA-safety-glossary
+service-life	concept	服役期限	service life		active		IAEA-safety-glossary
+severe-accident-management	concept	严重事故管理	severe accident management		active		IAEA-safety-glossary
+severe-deterministic-effect	concept	严重确定性效应	severe deterministic effect		active		IAEA-safety-glossary
+sheltering	concept	隐蔽	sheltering		active		IAEA-safety-glossary
+shipment	concept	运输批次	shipment		active		IAEA-safety-glossary
+short-lived-waste	concept	短寿命废物	short lived waste		active		IAEA-safety-glossary
+shutdown	concept	停堆	shutdown		active		IAEA-safety-glossary
+shutdown-reactivity	concept	停堆反应性	shutdown reactivity		active		IAEA-safety-glossary
+sievert	concept	希沃特	sievert (Sv)		active		IAEA-safety-glossary
+significant-transboundary-release	concept	重大越境释放	significant transboundary release		active		IAEA-safety-glossary
+single-failure	concept	单一故障	single failure		active		IAEA-safety-glossary
+single-failure-criterion	concept	单一故障准则	single failure criterion		active		IAEA-safety-glossary
+site-area	concept	厂址区域	site area		active		IAEA-safety-glossary
+site-area-emergency	concept	厂址区域应急	site area emergency		active		IAEA-safety-glossary
 site-boundary	concept		site boundary		active		IAEA-safety-glossary
 site-characterization	concept		site characterization		active		IAEA-safety-glossary
 site-confirmation	concept		site confirmation (in the siting process for a disposal facility)		active		IAEA-safety-glossary
