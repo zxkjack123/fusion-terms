@@ -2650,3 +2650,17 @@ radionuclides-of-natural-origin
 radon-progeny
 reactivity
 recording-level
+# --- T-4973 W3a allowlist batch 34 ---
+reference-air-kerma-rate
+reference-individual
+reference-level
+reference-scenario
+referring-medical-practitioner
+regulatory-body
+regulatory-control
+regulatory-inspection
+relative-biological-effectiveness
+relative-biological-effectiveness-weighted-absorbed-dose-adt
+relative-risk
+reliability-centred-maintenance
+remedial-action
