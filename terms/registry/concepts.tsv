@@ -2504,26 +2504,26 @@ strongly-penetrating-radiation	concept	强穿透辐射	strongly penetrating radi
 structure	concept	构筑物	structure		active		IAEA-safety-glossary
 structures-systems-and-components	concept	构筑物、系统与部件	structures, systems and components (SSCs)		active		IAEA-safety-glossary
 sub-seabed-disposal	concept	海床下处置	sub-seabed disposal		active		IAEA-safety-glossary
-substantiation	concept		substantiation		active		IAEA-safety-glossary
-supervised-area	concept		supervised area		active		IAEA-safety-glossary
-supplier	concept		supplier (of a source)		active		IAEA-safety-glossary
-surface-contaminated-object	concept		surface contaminated object (SCO)		active		IAEA-safety-glossary
-surface-faulting	concept		surface faulting		active		IAEA-safety-glossary
-surveillance	concept		surveillance		active		IAEA-safety-glossary
-surveillance-testing	concept		surveillance testing		active		IAEA-safety-glossary
-survey	concept		survey		active		IAEA-safety-glossary
-system-code	concept		system code		active		IAEA-safety-glossary
-system-code-validation	concept		system code validation		active		IAEA-safety-glossary
-system-code-verification	concept		system code verification		active		IAEA-safety-glossary
-system-validation	concept		system validation		active		IAEA-safety-glossary
-tailings	concept		tailings		active		IAEA-safety-glossary
-tank	concept		tank		active		IAEA-safety-glossary
-target-tissue-or-organ	concept		target tissue or organ		active		IAEA-safety-glossary
-task-related-monitoring	concept		task related monitoring		active		IAEA-safety-glossary
-technological-obsolescence	concept		technological obsolescence		active		IAEA-safety-glossary
-temporary-relocation	concept		temporary relocation		active		IAEA-safety-glossary
-therapeutic-exposure	concept		therapeutic exposure		active		IAEA-safety-glossary
-thermodynamic-diameter	concept		thermodynamic diameter		active		IAEA-safety-glossary
+substantiation	concept	证实	substantiation		active		IAEA-safety-glossary
+supervised-area	concept	监督区	supervised area		active		IAEA-safety-glossary
+supplier	concept	供应方	supplier (of a source)		active		IAEA-safety-glossary
+surface-contaminated-object	concept	表面污染物体	surface contaminated object (SCO)		active		IAEA-safety-glossary
+surface-faulting	concept	地表断裂	surface faulting		active		IAEA-safety-glossary
+surveillance	concept	监督性检查	surveillance		active		IAEA-safety-glossary
+surveillance-testing	concept	监督试验	surveillance testing		active		IAEA-safety-glossary
+survey	concept	调查	survey		active		IAEA-safety-glossary
+system-code	concept	系统分析程序	system code		active		IAEA-safety-glossary
+system-code-validation	concept	系统程序确认	system code validation		active		IAEA-safety-glossary
+system-code-verification	concept	系统程序验证	system code verification		active		IAEA-safety-glossary
+system-validation	concept	系统确认	system validation		active		IAEA-safety-glossary
+tailings	concept	尾矿	tailings		active		IAEA-safety-glossary
+tank	concept	罐式容器	tank		active		IAEA-safety-glossary
+target-tissue-or-organ	concept	靶组织或器官	target tissue or organ		active		IAEA-safety-glossary
+task-related-monitoring	concept	任务相关监测	task related monitoring		active		IAEA-safety-glossary
+technological-obsolescence	concept	技术过时	technological obsolescence		active		IAEA-safety-glossary
+temporary-relocation	concept	临时搬迁	temporary relocation		active		IAEA-safety-glossary
+therapeutic-exposure	concept	治疗照射	therapeutic exposure		active		IAEA-safety-glossary
+thermodynamic-diameter	concept	热力学直径	thermodynamic diameter		active		IAEA-safety-glossary
 thorium-series	concept		thorium series		active		IAEA-safety-glossary
 through-or-into	concept		through or into		active		IAEA-safety-glossary
 time-based-maintenance	concept		time based maintenance		active		IAEA-safety-glossary
