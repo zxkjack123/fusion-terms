@@ -2283,26 +2283,26 @@ permanent-relocation	concept	永久性搬迁	permanent relocation		active		IAEA-
 permanent-shutdown	concept	永久停堆	permanent shutdown		active		IAEA-safety-glossary
 person-or-organization	concept	个人或组织	person or organization		active		IAEA-safety-glossary
 personal-dose-equivalent-hp	concept	个人剂量当量Hp	personal dose equivalent, Hp(d)		active		IAEA-safety-glossary
-phreatic-eruption	concept		phreatic eruption		active		IAEA-safety-glossary
-phreatomagmatic-eruption	concept		phreatomagmatic eruption		active		IAEA-safety-glossary
-physical-ageing	concept		physical ageing		active		IAEA-safety-glossary
-physical-diversity	concept		physical diversity		active		IAEA-safety-glossary
-physical-half-life	concept		physical half-life		active		IAEA-safety-glossary
-physical-model	concept		physical model		active		IAEA-safety-glossary
-physical-protection	concept		physical protection		active		IAEA-safety-glossary
-physical-separation	concept		physical separation		active		IAEA-safety-glossary
-physisorption	concept		physisorption		active		IAEA-safety-glossary
-planned-exposure-situation	concept		planned exposure situation		active		IAEA-safety-glossary
-planning-target-volume	concept		planning target volume		active		IAEA-safety-glossary
-plant-equipment	concept		plant equipment (for a nuclear power plant)		active		IAEA-safety-glossary
-plant-states	concept		plant states (considered in design)		active		IAEA-safety-glossary
-plinian-eruption	concept		plinian eruption		active		IAEA-safety-glossary
-pliocene	concept		Pliocene		active		IAEA-safety-glossary
-poison	concept		poison		active		IAEA-safety-glossary
-potential-alpha-energy	concept		potential alpha energy		active		IAEA-safety-glossary
-potential-exposure	concept		potential exposure		active		IAEA-safety-glossary
-practical-elimination	concept		practical elimination		active		IAEA-safety-glossary
-practice	concept		practice		active		IAEA-safety-glossary
+phreatic-eruption	concept	蒸汽喷发	phreatic eruption		active		IAEA-safety-glossary
+phreatomagmatic-eruption	concept	蒸汽岩浆喷发	phreatomagmatic eruption		active		IAEA-safety-glossary
+physical-ageing	concept	物理老化	physical ageing		active		IAEA-safety-glossary
+physical-diversity	concept	实体多样性	physical diversity		active		IAEA-safety-glossary
+physical-half-life	concept	物理半衰期	physical half-life		active		IAEA-safety-glossary
+physical-model	concept	物理模型	physical model		active		IAEA-safety-glossary
+physical-protection	concept	实物保护	physical protection		active		IAEA-safety-glossary
+physical-separation	concept	实体隔离	physical separation		active		IAEA-safety-glossary
+physisorption	concept	物理吸附	physisorption		active		IAEA-safety-glossary
+planned-exposure-situation	concept	计划照射情况	planned exposure situation		active		IAEA-safety-glossary
+planning-target-volume	concept	计划靶区	planning target volume		active		IAEA-safety-glossary
+plant-equipment	concept	电厂设备	plant equipment (for a nuclear power plant)		active		IAEA-safety-glossary
+plant-states	concept	电厂状态	plant states (considered in design)		active		IAEA-safety-glossary
+plinian-eruption	concept	普林尼式喷发	plinian eruption		active		IAEA-safety-glossary
+pliocene	concept	上新世	Pliocene		active		IAEA-safety-glossary
+poison	concept	中子毒物	poison		active		IAEA-safety-glossary
+potential-alpha-energy	concept	潜在α能量	potential alpha energy		active		IAEA-safety-glossary
+potential-exposure	concept	潜在照射	potential exposure		active		IAEA-safety-glossary
+practical-elimination	concept	实际消除	practical elimination		active		IAEA-safety-glossary
+practice	concept	实践	practice		active		IAEA-safety-glossary
 precautionary-action-zone	concept		precautionary action zone (PAZ)		active		IAEA-safety-glossary
 precautionary-urgent-protective-action	concept		precautionary urgent protective action		active		IAEA-safety-glossary
 predictive-maintenance	concept		predictive maintenance		active		IAEA-safety-glossary
