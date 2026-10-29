@@ -2163,26 +2163,26 @@ limit	concept	限值	limit		active		IAEA-safety-glossary
 linear-no-threshold-hypothesis	concept	线性无阈假设	linear–no threshold (LNT) hypothesis		active		IAEA-safety-glossary
 logic	concept	逻辑	logic		active		IAEA-safety-glossary
 long-lived-waste	concept	长寿命废物	long lived waste		active		IAEA-safety-glossary
-low-dispersible-radioactive-material	concept		low dispersible radioactive material		active		IAEA-safety-glossary
-low-enriched-uranium	concept		low enriched uranium (LEU)		active		IAEA-safety-glossary
-low-linear-energy-transfer-radiation	concept		low linear energy transfer (LET) radiation		active		IAEA-safety-glossary
-low-specific-activity-material	concept		low specific activity (LSA) material		active		IAEA-safety-glossary
-low-toxicity-alpha-emitters	concept		low toxicity alpha emitters		active		IAEA-safety-glossary
-lower-limit-of-detection	concept		lower limit of detection		active		IAEA-safety-glossary
-lung-absorption-type	concept		lung absorption type		active		IAEA-safety-glossary
-magma	concept		magma		active		IAEA-safety-glossary
-magma-chamber	concept		magma chamber		active		IAEA-safety-glossary
-main-safety-function	concept		main safety function		active		IAEA-safety-glossary
-magnitude	concept		magnitude (of an earthquake)		active		IAEA-safety-glossary
-maintenance-bypass	concept		maintenance bypass		active		IAEA-safety-glossary
-management	concept		management (of sealed radioactive sources)		active		IAEA-safety-glossary
-management-self-assessment	concept		management self-assessment		active		IAEA-safety-glossary
-management-system	concept		management system		active		IAEA-safety-glossary
-management-system-review	concept		management system review		active		IAEA-safety-glossary
-mantle-earth-s	concept		mantle, Earth’s		active		IAEA-safety-glossary
-material-ageing	concept		material ageing		active		IAEA-safety-glossary
-mathematical-model	concept		mathematical model		active		IAEA-safety-glossary
-maximum-normal-operating-pressure	concept		maximum normal operating pressure		active		IAEA-safety-glossary
+low-dispersible-radioactive-material	concept	低弥散放射性物质	low dispersible radioactive material		active		IAEA-safety-glossary
+low-enriched-uranium	concept	低浓缩铀	low enriched uranium (LEU)		active		IAEA-safety-glossary
+low-linear-energy-transfer-radiation	concept	低传能线密度辐射	low linear energy transfer (LET) radiation		active		IAEA-safety-glossary
+low-specific-activity-material	concept	低比活度物质	low specific activity (LSA) material		active		IAEA-safety-glossary
+low-toxicity-alpha-emitters	concept	低毒性α发射体	low toxicity alpha emitters		active		IAEA-safety-glossary
+lower-limit-of-detection	concept	探测下限	lower limit of detection		active		IAEA-safety-glossary
+lung-absorption-type	concept	肺部吸收类型	lung absorption type		active		IAEA-safety-glossary
+magma	concept	岩浆	magma		active		IAEA-safety-glossary
+magma-chamber	concept	岩浆房	magma chamber		active		IAEA-safety-glossary
+main-safety-function	concept	主要安全功能	main safety function		active		IAEA-safety-glossary
+magnitude	concept	震级	magnitude (of an earthquake)		active		IAEA-safety-glossary
+maintenance-bypass	concept	维修旁路	maintenance bypass		active		IAEA-safety-glossary
+management	concept	管理	management (of sealed radioactive sources)		active		IAEA-safety-glossary
+management-self-assessment	concept	管理自评估	management self-assessment		active		IAEA-safety-glossary
+management-system	concept	管理体系	management system		active		IAEA-safety-glossary
+management-system-review	concept	管理体系评审	management system review		active		IAEA-safety-glossary
+mantle-earth-s	concept	地幔	mantle, Earth’s		active		IAEA-safety-glossary
+material-ageing	concept	材料老化	material ageing		active		IAEA-safety-glossary
+mathematical-model	concept	数学模型	mathematical model		active		IAEA-safety-glossary
+maximum-normal-operating-pressure	concept	最大正常工作压力	maximum normal operating pressure		active		IAEA-safety-glossary
 maximum-potential-magnitude	concept		maximum potential magnitude		active		IAEA-safety-glossary
 mechanistic-model	concept		mechanistic model		active		IAEA-safety-glossary
 medical-exposure	concept		medical exposure		active		IAEA-safety-glossary
