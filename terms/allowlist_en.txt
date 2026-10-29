@@ -2699,3 +2699,20 @@ safety-culture
 safety-feature
 safety-group
 safety-indicator
+# --- T-4973 W3a allowlist batch 37 ---
+safety-issues
+safety-layers
+safety-limits
+safety-measure
+safety-of-radioactive-sources
+safety-related-item
+safety-related-system
+safety-standards
+safety-system
+safety-system-settings
+safety-system-support-features
+safety-task
+screening-distance-value
+screening-probability-level
+seabed-disposal
+sealed-source
