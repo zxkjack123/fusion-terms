@@ -1736,26 +1736,26 @@ iua	concept	IUA协定	IUA		active		ITER-glossary
 lawson-s-criteria	concept	聚变劳森判据	Lawson's Criteria		active		ITER-glossary
 lithium	concept		Lithium		active		ITER-glossary
 lower-ports	concept	下部窗口	Lower Ports		active		ITER-glossary
-major-plasma-radius	concept		Major Plasma Radius		active		ITER-glossary
-mast-upgrade	concept		MAST Upgrade		active		ITER-glossary
-nbtf	concept		NBTF		active		ITER-glossary
-nbti-conductor	concept		NbTi Conductor		active		ITER-glossary
-net-energy	concept		Net Energy		active		ITER-glossary
-plasma-shutdown	concept		Plasma Shutdown		active		ITER-glossary
-plasma-facing-components	concept		Plasma-Facing Components		active		ITER-glossary
-poloidal-direction	concept		Poloidal Direction		active		ITER-glossary
-poloidal-field-coils	concept		Poloidal Field Coils		active		ITER-glossary
-procurement-arrangement	concept		Procurement Arrangement		active		ITER-glossary
-ramp-up-time	concept		Ramp-Up Time		active		ITER-glossary
-resistive-heating	concept		Resistive Heating		active		ITER-glossary
-shield-block-module	concept		Shield Block Module		active		ITER-glossary
-shutdown-time	concept		Shutdown Time		active		ITER-glossary
-sst-1	concept		SST-1		active		ITER-glossary
-steady-state-tokamak	concept		Steady State Tokamak		active		ITER-glossary
-superconducting-magnets	concept		Superconducting Magnets		active		ITER-glossary
-superconductivity	concept		Superconductivity		active		ITER-glossary
-superconductor	concept		Superconductor		active		ITER-glossary
-supercritical-helium	concept		Supercritical Helium		active		ITER-glossary
+major-plasma-radius	concept	等离子体大半径R	Major Plasma Radius		active		ITER-glossary
+mast-upgrade	concept	MAST-U装置	MAST Upgrade		active		ITER-glossary
+nbtf	concept	中性束测试设施	NBTF		active		ITER-glossary
+nbti-conductor	concept	铌钛超导导体	NbTi Conductor		active		ITER-glossary
+net-energy	concept	净能量	Net Energy		active		ITER-glossary
+plasma-shutdown	concept	等离子体熄灭	Plasma Shutdown		active		ITER-glossary
+plasma-facing-components	concept	等离子体面向部件	Plasma-Facing Components		active		ITER-glossary
+poloidal-direction	concept	极向	Poloidal Direction		active		ITER-glossary
+poloidal-field-coils	concept	极向场线圈系统	Poloidal Field Coils		active		ITER-glossary
+procurement-arrangement	concept	采购安排	Procurement Arrangement		active		ITER-glossary
+ramp-up-time	concept	启动上升时间	Ramp-Up Time		active		ITER-glossary
+resistive-heating	concept	欧姆电阻加热	Resistive Heating		active		ITER-glossary
+shield-block-module	concept	屏蔽模块	Shield Block Module		active		ITER-glossary
+shutdown-time	concept	停机时间	Shutdown Time		active		ITER-glossary
+sst-1	concept	SST-1托卡马克	SST-1		active		ITER-glossary
+steady-state-tokamak	concept	稳态托卡马克	Steady State Tokamak		active		ITER-glossary
+superconducting-magnets	concept	超导磁体系统	Superconducting Magnets		active		ITER-glossary
+superconductivity	concept	超导电性	Superconductivity		active		ITER-glossary
+superconductor	concept	超导体	Superconductor		active		ITER-glossary
+supercritical-helium	concept	超临界氦	Supercritical Helium		active		ITER-glossary
 t-15md	concept		T-15MD		active		ITER-glossary
 tcv	concept		TCV		active		ITER-glossary
 tftr	concept		TFTR		active		ITER-glossary
