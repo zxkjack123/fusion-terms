@@ -1922,26 +1922,26 @@ deferred-dismantling	concept	延迟拆除	deferred dismantling		active		IAEA-saf
 defined-deck-area	concept	划定甲板区域	defined deck area		active		IAEA-safety-glossary
 dependability	concept	可信性	dependability		active		IAEA-safety-glossary
 depleted-uranium	concept	贫铀	depleted uranium		active		IAEA-safety-glossary
-derived-limit	concept		derived limit		active		IAEA-safety-glossary
-design-basis	concept		design basis		active		IAEA-safety-glossary
-design-basis-external-events	concept		design basis external events		active		IAEA-safety-glossary
-design-basis-probability-value	concept		design basis probability value (DBPV)		active		IAEA-safety-glossary
-design-extension-conditions	concept		design extension conditions		active		IAEA-safety-glossary
-design-life	concept		design life		active		IAEA-safety-glossary
-detection-limit	concept		detection limit		active		IAEA-safety-glossary
-determination-level	concept		determination level		active		IAEA-safety-glossary
-deterministic-analysis	concept		deterministic analysis		active		IAEA-safety-glossary
-deterministic-effect	concept		deterministic effect		active		IAEA-safety-glossary
-detriment	concept		detriment		active		IAEA-safety-glossary
-deviation	concept		deviation		active		IAEA-safety-glossary
-diagnostic-exposure	concept		diagnostic exposure		active		IAEA-safety-glossary
-diagnostic-reference-level	concept		diagnostic reference level		active		IAEA-safety-glossary
-diffusion	concept		diffusion		active		IAEA-safety-glossary
-direct-cause	concept		direct cause		active		IAEA-safety-glossary
-direct-disposal	concept		direct disposal		active		IAEA-safety-glossary
-directional-dose-equivalent	concept		directional dose equivalent		active		IAEA-safety-glossary
-discharge	concept		discharge		active		IAEA-safety-glossary
-dismantling	concept		dismantling		active		IAEA-safety-glossary
+derived-limit	concept	导出限值	derived limit		active		IAEA-safety-glossary
+design-basis	concept	设计基准	design basis		active		IAEA-safety-glossary
+design-basis-external-events	concept	设计基准外部事件	design basis external events		active		IAEA-safety-glossary
+design-basis-probability-value	concept	设计基准概率值	design basis probability value (DBPV)		active		IAEA-safety-glossary
+design-extension-conditions	concept	设计扩展工况	design extension conditions		active		IAEA-safety-glossary
+design-life	concept	设计寿期	design life		active		IAEA-safety-glossary
+detection-limit	concept	探测限	detection limit		active		IAEA-safety-glossary
+determination-level	concept	判定水平	determination level		active		IAEA-safety-glossary
+deterministic-analysis	concept	确定性分析	deterministic analysis		active		IAEA-safety-glossary
+deterministic-effect	concept	确定性效应	deterministic effect		active		IAEA-safety-glossary
+detriment	concept	辐射总危害	detriment		active		IAEA-safety-glossary
+deviation	concept	偏离	deviation		active		IAEA-safety-glossary
+diagnostic-exposure	concept	诊断照射	diagnostic exposure		active		IAEA-safety-glossary
+diagnostic-reference-level	concept	诊断参考水平	diagnostic reference level		active		IAEA-safety-glossary
+diffusion	concept	扩散	diffusion		active		IAEA-safety-glossary
+direct-cause	concept	直接原因	direct cause		active		IAEA-safety-glossary
+direct-disposal	concept	直接处置	direct disposal		active		IAEA-safety-glossary
+directional-dose-equivalent	concept	定向剂量当量	directional dose equivalent		active		IAEA-safety-glossary
+discharge	concept	排放	discharge		active		IAEA-safety-glossary
+dismantling	concept	拆除	dismantling		active		IAEA-safety-glossary
 dispersal	concept		dispersal		active		IAEA-safety-glossary
 dispersion	concept		dispersion		active		IAEA-safety-glossary
 disposal	concept		disposal		active		IAEA-safety-glossary
