@@ -2246,3 +2246,20 @@ contamination-zone
 controlled-state
 core-components
 corrective-maintenance
+# --- T-4973 W3a allowlist batch 11 ---
+cost-benefit-analysis
+critical
+critical-assembly
+critical-level
+criticality-accident
+criticality-safety-index
+crust-earth-s
+dangerous-source
+decay-constant
+decision-limit
+decommissioning-plan
+deep-sea-disposal
+defence-in-depth
+deferred-dismantling
+defined-deck-area
+depleted-uranium
