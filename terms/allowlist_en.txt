@@ -2149,3 +2149,16 @@ shutdown-time
 steady-state-tokamak
 superconducting-magnets
 supercritical-helium
+# --- T-4973 W3a allowlist batch 04 ---
+tore-supra
+toroidal-current
+toroidal-direction
+toroidal-field-coils
+tritium-recycling
+upper-ports
+vacuum-pumps
+wall-load
+abnormal-operation
+absorbed-fraction
+absorption-type-lung
+acceptable-limit
