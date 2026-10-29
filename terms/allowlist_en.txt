@@ -2593,3 +2593,23 @@ plinian-eruption
 potential-alpha-energy
 potential-exposure
 practical-elimination
+# --- T-4973 W3a allowlist batch 31 ---
+precautionary-action-zone
+precautionary-urgent-protective-action
+predictive-maintenance
+predisposal-management
+preparedness-stage
+pretreatment
+preventive-maintenance
+primary-limit
+prime-mover
+probabilistic-analysis
+processing
+projected-dose
+protection-and-safety
+protection-of-the-environment
+protection-quantities
+protection-system
+protective-action
+protective-task
+publication-iaea
