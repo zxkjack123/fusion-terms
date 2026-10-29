@@ -2103,26 +2103,26 @@ hypocentre	concept	震源	hypocentre		active		IAEA-safety-glossary
 iaea-publication	concept	国际原子能机构出版物	IAEA publication		active		IAEA-safety-glossary
 icru-sphere	concept	ICRU球	ICRU sphere		active		IAEA-safety-glossary
 igneous-rock	concept	火成岩	igneous rock		active		IAEA-safety-glossary
-immediate-dismantling	concept		immediate dismantling		active		IAEA-safety-glossary
-immobilization	concept		immobilization		active		IAEA-safety-glossary
-incident	concept		incident		active		IAEA-safety-glossary
-independent-assessment	concept		independent assessment		active		IAEA-safety-glossary
-independent-equipment	concept		independent equipment		active		IAEA-safety-glossary
-indicator	concept		indicator		active		IAEA-safety-glossary
-individual-dose	concept		individual dose		active		IAEA-safety-glossary
-individual-monitoring	concept		individual monitoring		active		IAEA-safety-glossary
-industrial-package	concept		industrial package		active		IAEA-safety-glossary
-ines	concept		INES		active		IAEA-safety-glossary
-infant	concept		infant		active		IAEA-safety-glossary
-ingestion-and-commodities-planning-distance	concept		ingestion and commodities planning distance (ICPD)		active		IAEA-safety-glossary
-initiating-event	concept		initiating event		active		IAEA-safety-glossary
-initiator	concept		initiator		active		IAEA-safety-glossary
-inner-cordoned-off-area	concept		inner cordoned off area		active		IAEA-safety-glossary
-inspection	concept		inspection		active		IAEA-safety-glossary
-inspection-imaging-device	concept		inspection imaging device		active		IAEA-safety-glossary
-institutional-control	concept		institutional control		active		IAEA-safety-glossary
-intake	concept		intake		active		IAEA-safety-glossary
-integrated-management-system	concept		integrated management system		active		IAEA-safety-glossary
+immediate-dismantling	concept	立即拆除	immediate dismantling		active		IAEA-safety-glossary
+immobilization	concept	固定化	immobilization		active		IAEA-safety-glossary
+incident	concept	意外事件	incident		active		IAEA-safety-glossary
+independent-assessment	concept	独立评价	independent assessment		active		IAEA-safety-glossary
+independent-equipment	concept	独立设备	independent equipment		active		IAEA-safety-glossary
+indicator	concept	指标	indicator		active		IAEA-safety-glossary
+individual-dose	concept	个人受照剂量	individual dose		active		IAEA-safety-glossary
+individual-monitoring	concept	个人监测	individual monitoring		active		IAEA-safety-glossary
+industrial-package	concept	工业货包	industrial package		active		IAEA-safety-glossary
+ines	concept	INES分级表	INES		active		IAEA-safety-glossary
+infant	concept	婴儿	infant		active		IAEA-safety-glossary
+ingestion-and-commodities-planning-distance	concept	食入与商品计划距离	ingestion and commodities planning distance (ICPD)		active		IAEA-safety-glossary
+initiating-event	concept	始发事件	initiating event		active		IAEA-safety-glossary
+initiator	concept	始发因素	initiator		active		IAEA-safety-glossary
+inner-cordoned-off-area	concept	内警戒区	inner cordoned off area		active		IAEA-safety-glossary
+inspection	concept	检查	inspection		active		IAEA-safety-glossary
+inspection-imaging-device	concept	检查成像装置	inspection imaging device		active		IAEA-safety-glossary
+institutional-control	concept	制度控制	institutional control		active		IAEA-safety-glossary
+intake	concept	摄入	intake		active		IAEA-safety-glossary
+integrated-management-system	concept	综合管理系统	integrated management system		active		IAEA-safety-glossary
 interacting-event	concept		interacting event		active		IAEA-safety-glossary
 interested-party	concept		interested party		active		IAEA-safety-glossary
 intermediate-bulk-container	concept		intermediate bulk container (IBC)		active		IAEA-safety-glossary
