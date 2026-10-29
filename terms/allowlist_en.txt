@@ -2732,3 +2732,21 @@ single-failure
 single-failure-criterion
 site-area
 site-area-emergency
+# --- T-4973 W3a allowlist batch 39 ---
+site-boundary
+site-characterization
+site-confirmation
+site-evaluation
+site-personnel
+site-response
+site-selection
+site-survey
+site-verification
+sl-1-sl-2
+small-freight-container
+somatic-effect
+source-material
+source-monitoring
+source-region
+special-arrangement
+special-facility
