@@ -2383,26 +2383,26 @@ reliability-centred-maintenance	concept	以可靠性为中心的维修	reliabili
 relocation	concept	搬迁	relocation		active		IAEA-safety-glossary
 remedial-action	concept	补救行动	remedial action		active		IAEA-safety-glossary
 remediation	concept	环境整治	remediation		active		IAEA-safety-glossary
-remediation-plan	concept		remediation plan		active		IAEA-safety-glossary
-remedy	concept		remedy		active		IAEA-safety-glossary
-removable-contamination	concept		removable contamination		active		IAEA-safety-glossary
-repair	concept		repair		active		IAEA-safety-glossary
-repository	concept		repository		active		IAEA-safety-glossary
-representative-person	concept		representative person		active		IAEA-safety-glossary
-reprocessing	concept		reprocessing		active		IAEA-safety-glossary
-requirement	concept		requirement (safety)		active		IAEA-safety-glossary
-research-reactor	concept		research reactor		active		IAEA-safety-glossary
-residual-dose	concept		residual dose		active		IAEA-safety-glossary
-response-organization	concept		response organization		active		IAEA-safety-glossary
-response-spectrum	concept		response spectrum		active		IAEA-safety-glossary
-response-time	concept		response time (of a component)		active		IAEA-safety-glossary
-restricted-linear-collision-stopping-power	concept		restricted linear collision stopping power		active		IAEA-safety-glossary
-restricted-use	concept		restricted use		active		IAEA-safety-glossary
-reuse	concept		reuse		active		IAEA-safety-glossary
-risk	concept		risk		active		IAEA-safety-glossary
-risk-assessment	concept		risk assessment		active		IAEA-safety-glossary
-risk-coefficient	concept		risk coefficient, γ		active		IAEA-safety-glossary
-risk-constraint	concept		risk constraint		active		IAEA-safety-glossary
+remediation-plan	concept	整治计划	remediation plan		active		IAEA-safety-glossary
+remedy	concept	纠正措施	remedy		active		IAEA-safety-glossary
+removable-contamination	concept	可去除污染	removable contamination		active		IAEA-safety-glossary
+repair	concept	返修	repair		active		IAEA-safety-glossary
+repository	concept	处置库	repository		active		IAEA-safety-glossary
+representative-person	concept	代表性人员	representative person		active		IAEA-safety-glossary
+reprocessing	concept	乏燃料后处理	reprocessing		active		IAEA-safety-glossary
+requirement	concept	安全要求	requirement (safety)		active		IAEA-safety-glossary
+research-reactor	concept	研究堆	research reactor		active		IAEA-safety-glossary
+residual-dose	concept	剩余剂量	residual dose		active		IAEA-safety-glossary
+response-organization	concept	响应组织	response organization		active		IAEA-safety-glossary
+response-spectrum	concept	响应谱	response spectrum		active		IAEA-safety-glossary
+response-time	concept	响应时间	response time (of a component)		active		IAEA-safety-glossary
+restricted-linear-collision-stopping-power	concept	有限碰撞线性阻止本领	restricted linear collision stopping power		active		IAEA-safety-glossary
+restricted-use	concept	限制使用	restricted use		active		IAEA-safety-glossary
+reuse	concept	再利用	reuse		active		IAEA-safety-glossary
+risk	concept	风险	risk		active		IAEA-safety-glossary
+risk-assessment	concept	风险评估	risk assessment		active		IAEA-safety-glossary
+risk-coefficient	concept	风险系数	risk coefficient, γ		active		IAEA-safety-glossary
+risk-constraint	concept	风险约束	risk constraint		active		IAEA-safety-glossary
 risk-monitor	concept		risk monitor		active		IAEA-safety-glossary
 risk-projection-model	concept		risk projection model		active		IAEA-safety-glossary
 rock-igneous	concept		rock, igneous		active		IAEA-safety-glossary
