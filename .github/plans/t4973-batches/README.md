@@ -161,5 +161,5 @@ comm -12 <(sort .../w3.ids) <(sort .../w3b.ids) | wc -l                     # 0
 **执行约束**：
 - 批验收 `.venv/bin/python scripts/registry_batch_verify.py --mode names --ids-file <w3b_bNN.ids> --expect <N> --check-urls` → exit 0；**禁止** `--allow-latin-names`。
 - 只改 `terms/registry/concepts.tsv` 的 `preferred_zh` 槽位；不得改 `preferred_en`/`category`/`notes`。
-- **28 个专名**（company/organization/facility）补中文名后**仍不得进入 IME 词表**（`proper_excluded` 口径不变）。
+- **30 个专名**（company 23 / organization 6 / facility 1）补中文名后**仍不得进入 IME 词表**（`proper_excluded` 口径不变；计划 improve 轮原记「28」经实测更正）。
 - 中文名须为**可读中文术语名**（不得以拉丁串/拼音/无意义音译充数），且**不含空白**（`build_terms` 空白禁令）。

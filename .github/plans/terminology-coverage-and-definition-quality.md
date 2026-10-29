@@ -770,7 +770,7 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 > 依据 §D4/D5：**W3a = 854**（未覆盖 ∩ `preferred_zh` 空 ∩ 非专名）。其中 **107** 行可从仓内 `GB/T-4960.9` zh 释义推导；**747** 行无仓内出处（仅 `对应英文“X”` 模板）⇒ 依 **D2-5=A** 允许 `preferred_en` + 权威仓外 URL（须 200）。
 > 任务书口径 1039（含 99 左移行 + 80 六列行）已按 §R-1/R-2 修正：99 行中文名**本就存在**（无需起草）；80 行中文名在 Phase 0 T0.6a/b 完成。
 > **D2-6=A（本轮 improve 新增范围，用户已裁决）**：`--mode names` 的 **CJK 硬判据保持字面不变**，由 W3 为 **169 个** `preferred_zh == preferred_en` 且无 CJK 的 id 补中文首选名；**不得走 `--allow-latin-names` 豁免**（该名单**不**得在 Phase 3 的任何批验收中出现）。
-> **⚠️ 实测构成（improve 轮核实，务必先读）**：这 169 个 id **全部不在** `w3.ids` 内（与 README「执行批次时必须注意」第 3 条的表述不符，以本条实测为准）。其分布：**132 个已覆盖**（未进入任何工作集）/ **9 个在 `w2.ids`**（`vmec`/`desc`/`simsopt`/`c-2u`/`eu-demo`/`gamma-10`/`helion-trenta`/`k-demo`/`start-device`）/ **28 个为专名**（`company`/`organization`/`facility`，属 `proper_excluded`，本批仅补中文首选名，**H2 仍禁止其入 IME 词表**）。因此该 169 集须**新增独立工作集 `w3b.ids`**（由 **T3.0** 生成）——既有 `w3.ids` 不含它们，直接对 `w3.ids` 跑 W3 无法覆盖 D2-6=A。
+> **⚠️ 实测构成（improve 轮核实，务必先读）**：这 169 个 id **全部不在** `w3.ids` 内（与 README「执行批次时必须注意」第 3 条的表述不符，以本条实测为准）。其分布：**132 个已覆盖**（未进入任何工作集）/ **9 个在 `w2.ids`**（`vmec`/`desc`/`simsopt`/`c-2u`/`eu-demo`/`gamma-10`/`helion-trenta`/`k-demo`/`start-device`）/ **30 个为专名**（`company` 23 + `organization` 6 + `facility` 1，属 `proper_excluded`，本批仅补中文首选名，**H2 仍禁止其入 IME 词表**；improve 轮原记「28」经 W3b 实测更正为 **30**）。因此该 169 集须**新增独立工作集 `w3b.ids`**（由 **T3.0** 生成）——既有 `w3.ids` 不含它们，直接对 `w3.ids` 跑 W3 无法覆盖 D2-6=A。
 > 复现命令（当前应输出 169；D2-6=A 完成后应为 0）：
 > ```bash
 > python3 -c "import csv,re;rows=[r for r in csv.reader(open('terms/registry/concepts.tsv',encoding='utf-8'),delimiter='\t') if r and not r[0].startswith('#')];print(sum(1 for r in rows if len(r)==8 and r[2]==r[3] and r[2] and not re.search(r'[\u3400-\u9fff]',r[2])))"
@@ -2136,7 +2136,8 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 - **D2-6=A 闸门**：`preferred_zh == preferred_en && 无 CJK` 计数 **169 → 0** ✅
 - **清理 + T2.38 复跑**：`allowlist_zh.txt` 7 行拉丁串原位替换为新的中文首选名、补写先前因空格跳过的 2 行（`赫利昂Trenta装置`/`GAMMA10串列磁镜装置`）；`build_terms` exit 0，`artifacts/domain_terms.txt 4893 → 4902`；`coverage_pct 70.90` 不变（这 9 个 concept 已由 EN 侧覆盖）
 - 边界：本阶段只改 `terms/registry/concepts.tsv` 的 `preferred_zh` + 上述 1 个 allowlist 清理 commit；未改 `preferred_en`/`category`/`notes`/脚本/pipeline
-- **28 个专名**（company/organization/facility）虽已补中文名，仍属 `proper_excluded` ⇒ **不得进入 IME 词表**（口径不变）
+- **30 个专名**（company 23 / organization 6 / facility 1）虽已补中文名，仍属 `proper_excluded` ⇒ **不得进入 IME 词表**（口径不变）
+- **独立验收（环节 7）**：委派 `acceptance-verifier`（只读，会话 `ses_e7cfa8cf0ffe4HEgEqocPrtMAt`）→ **`PASS` / confidence HIGH / blocking 0 / warnings 3** @ `c5a2509`；8/8 强制检查独立复现：D2-6=A 闸门 **169→0**、工作集 169/9 批/交集 9 与 0、9 批 `--mode names --check-urls` 全 PASS（并实测反例锚定：`rfx-mod` 改拉丁串 ⇒ exit 1）、逐列比对 **169/169 仅 col3 变化**（touched set 与 `w3b.ids` 精确相等）、全库 `preferred_zh` 重复 0 / 新名撞他人 zh-alias 0、专名 0 泄漏进 IME 表、清理后 `artifacts/domain_terms.txt` **4902**、命名抽检 **46 行 0 FAIL**。warnings 已登记：① 本机 `ls` 对 9 个同名 glob 输出非确定（**非仓库缺陷**，验收改用 python/find/git）；② 计划原写「28 个专名」实测为 **30**（本处已更正）；③ T3.0 workset 幂等性未固化进门禁（人工 `diff` 已验证一致）。
 
 ## T1.B18 / T1.B19 返工（IMPR-2，2026-10-27，基线 `08f8901`）
 
