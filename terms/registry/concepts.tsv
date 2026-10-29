@@ -2403,27 +2403,27 @@ risk	concept	风险	risk		active		IAEA-safety-glossary
 risk-assessment	concept	风险评估	risk assessment		active		IAEA-safety-glossary
 risk-coefficient	concept	风险系数	risk coefficient, γ		active		IAEA-safety-glossary
 risk-constraint	concept	风险约束	risk constraint		active		IAEA-safety-glossary
-risk-monitor	concept		risk monitor		active		IAEA-safety-glossary
-risk-projection-model	concept		risk projection model		active		IAEA-safety-glossary
-rock-igneous	concept		rock, igneous		active		IAEA-safety-glossary
-root-cause	concept		root cause		active		IAEA-safety-glossary
-root-uptake	concept		root uptake		active		IAEA-safety-glossary
-routine-monitoring	concept		routine monitoring		active		IAEA-safety-glossary
-runup	concept		runup		active		IAEA-safety-glossary
-safe-state	concept		safe state		active		IAEA-safety-glossary
-safeguards-agreement	concept		safeguards agreement		active		IAEA-safety-glossary
+risk-monitor	concept	风险监测器	risk monitor		active		IAEA-safety-glossary
+risk-projection-model	concept	风险预测模型	risk projection model		active		IAEA-safety-glossary
+rock-igneous	concept	火成岩类	rock, igneous		active		IAEA-safety-glossary
+root-cause	concept	根本原因	root cause		active		IAEA-safety-glossary
+root-uptake	concept	根部吸收	root uptake		active		IAEA-safety-glossary
+routine-monitoring	concept	常规监测	routine monitoring		active		IAEA-safety-glossary
+runup	concept	波浪爬高	runup		active		IAEA-safety-glossary
+safe-state	concept	安全状态	safe state		active		IAEA-safety-glossary
+safeguards-agreement	concept	保障监督协定	safeguards agreement		active		IAEA-safety-glossary
 safety	concept		safety		active		IAEA-safety-glossary
-safety-action	concept		safety action		active		IAEA-safety-glossary
-safety-actuation-system	concept		safety actuation system		active		IAEA-safety-glossary
-safety-assessment	concept		safety assessment		active		IAEA-safety-glossary
-safety-categorization	concept		safety categorization		active		IAEA-safety-glossary
-safety-category	concept		safety category		active		IAEA-safety-glossary
-safety-class	concept		safety class		active		IAEA-safety-glossary
-safety-committee	concept		safety committee		active		IAEA-safety-glossary
-safety-culture	concept		safety culture		active		IAEA-safety-glossary
-safety-feature	concept		safety feature (for design extension conditions)		active		IAEA-safety-glossary
-safety-group	concept		safety group		active		IAEA-safety-glossary
-safety-indicator	concept		safety indicator		active		IAEA-safety-glossary
+safety-action	concept	安全动作	safety action		active		IAEA-safety-glossary
+safety-actuation-system	concept	安全驱动系统	safety actuation system		active		IAEA-safety-glossary
+safety-assessment	concept	安全评价	safety assessment		active		IAEA-safety-glossary
+safety-categorization	concept	安全功能分级	safety categorization		active		IAEA-safety-glossary
+safety-category	concept	安全类别	safety category		active		IAEA-safety-glossary
+safety-class	concept	安全等级	safety class		active		IAEA-safety-glossary
+safety-committee	concept	安全委员会	safety committee		active		IAEA-safety-glossary
+safety-culture	concept	安全文化	safety culture		active		IAEA-safety-glossary
+safety-feature	concept	安全特征	safety feature (for design extension conditions)		active		IAEA-safety-glossary
+safety-group	concept	安全组	safety group		active		IAEA-safety-glossary
+safety-indicator	concept	安全指标	safety indicator		active		IAEA-safety-glossary
 safety-issues	concept		safety issues		active		IAEA-safety-glossary
 safety-layers	concept		safety layers		active		IAEA-safety-glossary
 safety-limits	concept		safety limits		active		IAEA-safety-glossary
