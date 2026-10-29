@@ -2279,3 +2279,18 @@ diagnostic-reference-level
 direct-cause
 direct-disposal
 directional-dose-equivalent
+# --- T-4973 W3a allowlist batch 13 ---
+disposal-facility
+disposal-system
+disused-sealed-source
+disused-source
+dose-and-dose-rate-effectiveness-factor
+dose-assessment
+dose-coefficient
+dose-concepts
+dose-conversion-convention
+dose-equivalent
+dose-equivalent-quantities
+dose-per-unit-intake
+dose-quantities
+dose-rate
