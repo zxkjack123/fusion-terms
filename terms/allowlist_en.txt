@@ -2785,3 +2785,21 @@ technological-obsolescence
 temporary-relocation
 therapeutic-exposure
 thermodynamic-diameter
+# --- T-4973 W3a allowlist batch 42 ---
+thorium-series
+through-or-into
+time-based-maintenance
+tissue-equivalent-material
+tissue-substitute
+tissue-weighting-factor-wt
+transboundary-exposure
+transboundary-movement
+transient-population-group
+transnational-emergency
+transport-index
+type-a-b-b-c-package
+ultimate-heat-sink
+ultimate-heat-transport-system
+unattached-fraction
+uncertainty-analysis
+uniform-hazard-response-spectrum
