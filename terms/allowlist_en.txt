@@ -2132,3 +2132,20 @@ helium-ash
 in-vessel-components
 lawson-s-criteria
 lower-ports
+# --- T-4973 W3a allowlist batch 03 ---
+major-plasma-radius
+mast-upgrade
+nbti-conductor
+net-energy
+plasma-shutdown
+plasma-facing-components
+poloidal-direction
+poloidal-field-coils
+procurement-arrangement
+ramp-up-time
+resistive-heating
+shield-block-module
+shutdown-time
+steady-state-tokamak
+superconducting-magnets
+supercritical-helium
