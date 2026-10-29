@@ -2542,3 +2542,22 @@ occupancy-factor
 off-site
 on-site
 open-nuclear-fuel-cycle
+# --- T-4973 W3a allowlist batch 28 ---
+operating-conditions
+operating-lifetime-operating-life
+operating-organization
+operating-period
+operating-personnel
+operational-bypass
+operational-criteria
+operational-intervention-level
+operational-limits-and-conditions
+operational-period
+operational-quantities
+operational-states
+operations-area
+operations-boundary
+optimization
+orphan-source
+other-nuclear-or-radiological-emergency
+other-response-actions
