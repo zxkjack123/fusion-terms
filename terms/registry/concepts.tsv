@@ -1756,29 +1756,29 @@ superconducting-magnets	concept	超导磁体系统	Superconducting Magnets		acti
 superconductivity	concept	超导电性	Superconductivity		active		ITER-glossary
 superconductor	concept	超导体	Superconductor		active		ITER-glossary
 supercritical-helium	concept	超临界氦	Supercritical Helium		active		ITER-glossary
-t-15md	concept		T-15MD		active		ITER-glossary
-tcv	concept		TCV		active		ITER-glossary
+t-15md	concept	T-15MD托卡马克	T-15MD		active		ITER-glossary
+tcv	concept	TCV装置	TCV		active		ITER-glossary
 tftr	concept		TFTR		active		ITER-glossary
-tore-supra	concept		Tore Supra		active		ITER-glossary
-toroidal-current	concept		Toroidal Current		active		ITER-glossary
-toroidal-direction	concept		Toroidal Direction		active		ITER-glossary
-toroidal-field-coils	concept		Toroidal Field Coils		active		ITER-glossary
-torus	concept		Torus		active		ITER-glossary
-tritium-recycling	concept		Tritium Recycling		active		ITER-glossary
-upper-ports	concept		Upper Ports		active		ITER-glossary
-vacuum-pumps	concept		Vacuum Pumps		active		ITER-glossary
-wall-load	concept		Wall load		active		ITER-glossary
-west	concept		WEST		active		ITER-glossary
+tore-supra	concept	ToreSupra托卡马克	Tore Supra		active		ITER-glossary
+toroidal-current	concept	环向电流	Toroidal Current		active		ITER-glossary
+toroidal-direction	concept	环向	Toroidal Direction		active		ITER-glossary
+toroidal-field-coils	concept	环向场线圈系统	Toroidal Field Coils		active		ITER-glossary
+torus	concept	环面	Torus		active		ITER-glossary
+tritium-recycling	concept	氚再循环	Tritium Recycling		active		ITER-glossary
+upper-ports	concept	上部窗口	Upper Ports		active		ITER-glossary
+vacuum-pumps	concept	真空泵	Vacuum Pumps		active		ITER-glossary
+wall-load	concept	壁负载	Wall load		active		ITER-glossary
+west	concept	WEST托卡马克	WEST		active		ITER-glossary
 
 # ---- Imported from IAEA-safety-glossary (2026-04-14) ----
-a1	concept		A1		active		IAEA-safety-glossary
-a2	concept		A2		active		IAEA-safety-glossary
-abnormal-operation	concept		abnormal operation		active		IAEA-safety-glossary
-absorbed-fraction	concept		absorbed fraction		active		IAEA-safety-glossary
-absorption	concept		absorption		active		IAEA-safety-glossary
-absorption-type-lung	concept		absorption type, lung		active		IAEA-safety-glossary
-accelerogram	concept		accelerogram		active		IAEA-safety-glossary
-acceptable-limit	concept		acceptable limit		active		IAEA-safety-glossary
+a1	concept	A1活度限值	A1		active		IAEA-safety-glossary
+a2	concept	A2活度限值	A2		active		IAEA-safety-glossary
+abnormal-operation	concept	异常运行	abnormal operation		active		IAEA-safety-glossary
+absorbed-fraction	concept	吸收份额	absorbed fraction		active		IAEA-safety-glossary
+absorption	concept	吸收	absorption		active		IAEA-safety-glossary
+absorption-type-lung	concept	肺吸收类型分类	absorption type, lung		active		IAEA-safety-glossary
+accelerogram	concept	加速度时程	accelerogram		active		IAEA-safety-glossary
+acceptable-limit	concept	可接受限值	acceptable limit		active		IAEA-safety-glossary
 acceptance-criteria	concept		acceptance criteria		active		IAEA-safety-glossary
 accident	concept		accident		active		IAEA-safety-glossary
 accident-conditions	concept		accident conditions		active		IAEA-safety-glossary
