@@ -1902,26 +1902,26 @@ controlled-state	concept	受控状态	controlled state		active		IAEA-safety-glos
 conveyance	concept	运载工具	conveyance		active		IAEA-safety-glossary
 core-components	concept	核心部件	core components		active		IAEA-safety-glossary
 corrective-maintenance	concept	纠正性维修	corrective maintenance		active		IAEA-safety-glossary
-cost-benefit-analysis	concept		cost–benefit analysis		active		IAEA-safety-glossary
-countermeasure	concept		countermeasure		active		IAEA-safety-glossary
-critical	concept		critical (adjective)		active		IAEA-safety-glossary
-critical-assembly	concept		critical assembly		active		IAEA-safety-glossary
-critical-level	concept		critical level		active		IAEA-safety-glossary
-criticality	concept		criticality		active		IAEA-safety-glossary
-criticality-accident	concept		criticality accident		active		IAEA-safety-glossary
-criticality-safety-index	concept		criticality safety index (CSI)		active		IAEA-safety-glossary
-crust-earth-s	concept		crust, Earth’s		active		IAEA-safety-glossary
-dangerous-source	concept		dangerous source		active		IAEA-safety-glossary
-decay-constant	concept		decay constant, λ		active		IAEA-safety-glossary
-decision-limit	concept		decision limit		active		IAEA-safety-glossary
-decommissioning-plan	concept		decommissioning plan		active		IAEA-safety-glossary
-decorporation	concept		decorporation		active		IAEA-safety-glossary
-deep-sea-disposal	concept		deep sea disposal		active		IAEA-safety-glossary
-defence-in-depth	concept		defence in depth		active		IAEA-safety-glossary
-deferred-dismantling	concept		deferred dismantling		active		IAEA-safety-glossary
-defined-deck-area	concept		defined deck area		active		IAEA-safety-glossary
-dependability	concept		dependability		active		IAEA-safety-glossary
-depleted-uranium	concept		depleted uranium		active		IAEA-safety-glossary
+cost-benefit-analysis	concept	成本效益分析	cost–benefit analysis		active		IAEA-safety-glossary
+countermeasure	concept	对策	countermeasure		active		IAEA-safety-glossary
+critical	concept	临界的	critical (adjective)		active		IAEA-safety-glossary
+critical-assembly	concept	临界装置	critical assembly		active		IAEA-safety-glossary
+critical-level	concept	临界水平	critical level		active		IAEA-safety-glossary
+criticality	concept	临界	criticality		active		IAEA-safety-glossary
+criticality-accident	concept	临界事故	criticality accident		active		IAEA-safety-glossary
+criticality-safety-index	concept	临界安全指数	criticality safety index (CSI)		active		IAEA-safety-glossary
+crust-earth-s	concept	地壳结构	crust, Earth’s		active		IAEA-safety-glossary
+dangerous-source	concept	危险源	dangerous source		active		IAEA-safety-glossary
+decay-constant	concept	衰变常数	decay constant, λ		active		IAEA-safety-glossary
+decision-limit	concept	判断限	decision limit		active		IAEA-safety-glossary
+decommissioning-plan	concept	退役计划	decommissioning plan		active		IAEA-safety-glossary
+decorporation	concept	促排	decorporation		active		IAEA-safety-glossary
+deep-sea-disposal	concept	深海处置	deep sea disposal		active		IAEA-safety-glossary
+defence-in-depth	concept	纵深防御策略	defence in depth		active		IAEA-safety-glossary
+deferred-dismantling	concept	延迟拆除	deferred dismantling		active		IAEA-safety-glossary
+defined-deck-area	concept	划定甲板区域	defined deck area		active		IAEA-safety-glossary
+dependability	concept	可信性	dependability		active		IAEA-safety-glossary
+depleted-uranium	concept	贫铀	depleted uranium		active		IAEA-safety-glossary
 derived-limit	concept		derived limit		active		IAEA-safety-glossary
 design-basis	concept		design basis		active		IAEA-safety-glossary
 design-basis-external-events	concept		design basis external events		active		IAEA-safety-glossary
