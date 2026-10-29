@@ -2243,26 +2243,26 @@ occupancy-factor	concept	居留因子	occupancy factor		active		IAEA-safety-glos
 off-site	concept	场外	off-site (area)		active		IAEA-safety-glossary
 on-site	concept	场内	on-site (area)		active		IAEA-safety-glossary
 open-nuclear-fuel-cycle	concept	开式核燃料循环	open nuclear fuel cycle		active		IAEA-safety-glossary
-operating-conditions	concept		operating conditions		active		IAEA-safety-glossary
-operating-lifetime-operating-life	concept		operating lifetime, operating life		active		IAEA-safety-glossary
-operating-organization	concept		operating organization		active		IAEA-safety-glossary
-operating-period	concept		operating period		active		IAEA-safety-glossary
-operating-personnel	concept		operating personnel		active		IAEA-safety-glossary
-operation	concept		operation		active		IAEA-safety-glossary
-operational-bypass	concept		operational bypass		active		IAEA-safety-glossary
-operational-criteria	concept		operational criteria		active		IAEA-safety-glossary
-operational-intervention-level	concept		operational intervention level (OIL)		active		IAEA-safety-glossary
-operational-limits-and-conditions	concept		operational limits and conditions		active		IAEA-safety-glossary
-operational-period	concept		operational period		active		IAEA-safety-glossary
-operational-quantities	concept		operational quantities		active		IAEA-safety-glossary
-operational-states	concept		operational states		active		IAEA-safety-glossary
-operations-area	concept		operations area		active		IAEA-safety-glossary
-operations-boundary	concept		operations boundary		active		IAEA-safety-glossary
-operator	concept		operator		active		IAEA-safety-glossary
-optimization	concept		optimization (of protection and safety)		active		IAEA-safety-glossary
-orphan-source	concept		orphan source		active		IAEA-safety-glossary
-other-nuclear-or-radiological-emergency	concept		other nuclear or radiological emergency		active		IAEA-safety-glossary
-other-response-actions	concept		other response actions		active		IAEA-safety-glossary
+operating-conditions	concept	运行工况	operating conditions		active		IAEA-safety-glossary
+operating-lifetime-operating-life	concept	运行寿期	operating lifetime, operating life		active		IAEA-safety-glossary
+operating-organization	concept	营运组织	operating organization		active		IAEA-safety-glossary
+operating-period	concept	运行期	operating period		active		IAEA-safety-glossary
+operating-personnel	concept	运行人员	operating personnel		active		IAEA-safety-glossary
+operation	concept	操作	operation		active		IAEA-safety-glossary
+operational-bypass	concept	运行旁路	operational bypass		active		IAEA-safety-glossary
+operational-criteria	concept	运行准则	operational criteria		active		IAEA-safety-glossary
+operational-intervention-level	concept	运行干预水平	operational intervention level (OIL)		active		IAEA-safety-glossary
+operational-limits-and-conditions	concept	运行限值和条件	operational limits and conditions		active		IAEA-safety-glossary
+operational-period	concept	运行时段	operational period		active		IAEA-safety-glossary
+operational-quantities	concept	实用量	operational quantities		active		IAEA-safety-glossary
+operational-states	concept	运行状态	operational states		active		IAEA-safety-glossary
+operations-area	concept	运行区	operations area		active		IAEA-safety-glossary
+operations-boundary	concept	运行边界	operations boundary		active		IAEA-safety-glossary
+operator	concept	操作员	operator		active		IAEA-safety-glossary
+optimization	concept	最优化	optimization (of protection and safety)		active		IAEA-safety-glossary
+orphan-source	concept	无主源	orphan source		active		IAEA-safety-glossary
+other-nuclear-or-radiological-emergency	concept	其他核或辐射应急	other nuclear or radiological emergency		active		IAEA-safety-glossary
+other-response-actions	concept	其他响应行动	other response actions		active		IAEA-safety-glossary
 overpack	concept		overpack		active		IAEA-safety-glossary
 package	concept		package		active		IAEA-safety-glossary
 package-waste	concept		package, waste		active		IAEA-safety-glossary
