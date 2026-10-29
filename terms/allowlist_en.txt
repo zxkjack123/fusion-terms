@@ -2178,3 +2178,18 @@ acute-intake
 additive-risk-projection-model
 aerodynamic-diameter
 aerodynamic-dispersion
+# --- T-4973 W3a allowlist batch 06 ---
+ageing-degradation
+agricultural-countermeasure
+air-kerma
+aleatory-uncertainty
+annual-dose
+annual-limit-on-exposure
+annual-limit-on-intake
+annual-risk
+anticipated-operational-occurrence
+anticipated-transient-without-scram
+area-monitoring
+area-survey
+arrangements
+assisted-operation
