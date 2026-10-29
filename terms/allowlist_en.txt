@@ -2421,3 +2421,16 @@ hydrodynamic-dispersion
 iaea-publication
 icru-sphere
 igneous-rock
+# --- T-4973 W3a allowlist batch 21 ---
+immediate-dismantling
+independent-assessment
+independent-equipment
+individual-dose
+individual-monitoring
+industrial-package
+ingestion-and-commodities-planning-distance
+initiating-event
+inner-cordoned-off-area
+inspection-imaging-device
+institutional-control
+integrated-management-system
