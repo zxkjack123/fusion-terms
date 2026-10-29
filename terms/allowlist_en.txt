@@ -2434,3 +2434,21 @@ inner-cordoned-off-area
 inspection-imaging-device
 institutional-control
 integrated-management-system
+# --- T-4973 W3a allowlist batch 22 ---
+interacting-event
+interested-party
+intermediate-bulk-container
+internal-exposure
+international-nuclear-and-radiological-event-scale
+interplate-tectonic-processes
+intrusion
+intrusion-barrier
+investigation-level
+iodine-thyroid-blocking
+ionizing-radiation
+irradiation-installation
+isolation
+item-important-to-safety
+kerma-k
+knowledge-management
+large-freight-container
