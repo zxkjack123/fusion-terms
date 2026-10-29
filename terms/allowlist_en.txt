@@ -2486,3 +2486,21 @@ mantle-earth-s
 material-ageing
 mathematical-model
 maximum-normal-operating-pressure
+# --- T-4973 W3a allowlist batch 25 ---
+maximum-potential-magnitude
+mechanistic-model
+medical-exposure
+medical-physicist
+medical-radiation-facility
+medical-radiation-technologist
+medical-radiological-equipment
+member-of-the-public
+minimization
+minimum-detectable-activity
+minimum-significant-activity
+mitigatory-action
+mixed-waste
+model-calibration
+model-validation
+model-verification
+multilateral-approval
