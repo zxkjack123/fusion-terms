@@ -1862,26 +1862,26 @@ channel	concept	通道	channel		active		IAEA-safety-glossary
 characterization	concept	表征	characterization		active		IAEA-safety-glossary
 characterization-of-waste	concept	废物表征	characterization of waste		active		IAEA-safety-glossary
 chemisorption	concept	化学吸附	chemisorption		active		IAEA-safety-glossary
-child	concept		child		active		IAEA-safety-glossary
-chronic-intake	concept		chronic intake		active		IAEA-safety-glossary
-cladding	concept		cladding		active		IAEA-safety-glossary
-cleanup	concept		cleanup		active		IAEA-safety-glossary
-clearance-rate	concept		clearance rate		active		IAEA-safety-glossary
-closed-nuclear-fuel-cycle	concept		closed nuclear fuel cycle		active		IAEA-safety-glossary
-closure	concept		closure		active		IAEA-safety-glossary
-cloud-shine	concept		cloud shine		active		IAEA-safety-glossary
-coincidence	concept		coincidence (as a feature of design)		active		IAEA-safety-glossary
-common-mode-failure	concept		common mode failure		active		IAEA-safety-glossary
-competent-authority	concept		competent authority		active		IAEA-safety-glossary
-compliance-assurance	concept		compliance assurance		active		IAEA-safety-glossary
-component	concept		component		active		IAEA-safety-glossary
-computational-model	concept		computational model		active		IAEA-safety-glossary
-computer-system-validation	concept		computer system validation		active		IAEA-safety-glossary
-computer-system-verification	concept		computer system verification		active		IAEA-safety-glossary
-concept-of-operations	concept		concept of operations		active		IAEA-safety-glossary
-conceptual-model	concept		conceptual model		active		IAEA-safety-glossary
-condition-based-maintenance	concept		condition based maintenance		active		IAEA-safety-glossary
-condition-indicator	concept		condition indicator		active		IAEA-safety-glossary
+child	concept	儿童	child		active		IAEA-safety-glossary
+chronic-intake	concept	慢性摄入	chronic intake		active		IAEA-safety-glossary
+cladding	concept	包壳	cladding		active		IAEA-safety-glossary
+cleanup	concept	清理	cleanup		active		IAEA-safety-glossary
+clearance-rate	concept	清除率	clearance rate		active		IAEA-safety-glossary
+closed-nuclear-fuel-cycle	concept	闭式核燃料循环	closed nuclear fuel cycle		active		IAEA-safety-glossary
+closure	concept	设施关闭	closure		active		IAEA-safety-glossary
+cloud-shine	concept	云团浸没照射	cloud shine		active		IAEA-safety-glossary
+coincidence	concept	同时性	coincidence (as a feature of design)		active		IAEA-safety-glossary
+common-mode-failure	concept	共模失效	common mode failure		active		IAEA-safety-glossary
+competent-authority	concept	主管部门	competent authority		active		IAEA-safety-glossary
+compliance-assurance	concept	符合性保证	compliance assurance		active		IAEA-safety-glossary
+component	concept	部件	component		active		IAEA-safety-glossary
+computational-model	concept	计算模型	computational model		active		IAEA-safety-glossary
+computer-system-validation	concept	计算机系统确认	computer system validation		active		IAEA-safety-glossary
+computer-system-verification	concept	计算机系统验证	computer system verification		active		IAEA-safety-glossary
+concept-of-operations	concept	运行构想	concept of operations		active		IAEA-safety-glossary
+conceptual-model	concept	概念模型	conceptual model		active		IAEA-safety-glossary
+condition-based-maintenance	concept	状态检修	condition based maintenance		active		IAEA-safety-glossary
+condition-indicator	concept	状态指标	condition indicator		active		IAEA-safety-glossary
 condition-monitoring	concept		condition monitoring		active		IAEA-safety-glossary
 conditional-probability-value	concept		conditional probability value (CPV)		active		IAEA-safety-glossary
 conditional-risk	concept		conditional risk		active		IAEA-safety-glossary
