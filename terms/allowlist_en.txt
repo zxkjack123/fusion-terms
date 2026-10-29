@@ -2452,3 +2452,17 @@ item-important-to-safety
 kerma-k
 knowledge-management
 large-freight-container
+# --- T-4973 W3a allowlist batch 23 ---
+large-release-of-radioactive-material
+late-effect
+latent-weakness
+licensing-basis
+licensing-process
+life-lifetime
+life-cycle-management
+life-management
+lifetime-dose
+lifetime-management
+lifetime-risk
+linear-no-threshold-hypothesis
+long-lived-waste
