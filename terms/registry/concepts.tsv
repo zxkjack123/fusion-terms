@@ -2544,20 +2544,20 @@ unattached-fraction	concept	未附着份额	unattached fraction		active		IAEA-sa
 uncertainty	concept	不确定度	uncertainty		active		IAEA-safety-glossary
 uncertainty-analysis	concept	不确定度分析	uncertainty analysis		active		IAEA-safety-glossary
 uniform-hazard-response-spectrum	concept	均匀危险反应谱	uniform hazard response spectrum		active		IAEA-safety-glossary
-unilateral-approval	concept		unilateral approval		active		IAEA-safety-glossary
-unirradiated-thorium	concept		unirradiated thorium		active		IAEA-safety-glossary
-unirradiated-uranium	concept		unirradiated uranium		active		IAEA-safety-glossary
-unrestricted-linear-energy-transfer-l	concept		unrestricted linear energy transfer, L∞		active		IAEA-safety-glossary
-unrestricted-use	concept		unrestricted use		active		IAEA-safety-glossary
-unsealed-source	concept		unsealed source		active		IAEA-safety-glossary
-uptake	concept		uptake		active		IAEA-safety-glossary
-uranium	concept		uranium		active		IAEA-safety-glossary
-uranium-enriched-in-the-isotope-uranium-235-or-uranium-233	concept		uranium enriched in the isotope uranium-235 or uranium-233		active		IAEA-safety-glossary
-uranium-series	concept		uranium series		active		IAEA-safety-glossary
-urgent-protective-action	concept		urgent protective action		active		IAEA-safety-glossary
-urgent-protective-action-planning-zone	concept		urgent protective action planning zone (UPZ)		active		IAEA-safety-glossary
-urgent-response-phase	concept		urgent response phase		active		IAEA-safety-glossary
-use	concept		use		active		IAEA-safety-glossary
+unilateral-approval	concept	单方面批准	unilateral approval		active		IAEA-safety-glossary
+unirradiated-thorium	concept	未辐照钍	unirradiated thorium		active		IAEA-safety-glossary
+unirradiated-uranium	concept	未辐照铀	unirradiated uranium		active		IAEA-safety-glossary
+unrestricted-linear-energy-transfer-l	concept	无限制传能线密度	unrestricted linear energy transfer, L∞		active		IAEA-safety-glossary
+unrestricted-use	concept	无限制使用	unrestricted use		active		IAEA-safety-glossary
+unsealed-source	concept	非密封源	unsealed source		active		IAEA-safety-glossary
+uptake	concept	摄取	uptake		active		IAEA-safety-glossary
+uranium	concept	铀	uranium		active		IAEA-safety-glossary
+uranium-enriched-in-the-isotope-uranium-235-or-uranium-233	concept	铀235或铀233富集铀	uranium enriched in the isotope uranium-235 or uranium-233		active		IAEA-safety-glossary
+uranium-series	concept	铀系	uranium series		active		IAEA-safety-glossary
+urgent-protective-action	concept	紧急防护行动	urgent protective action		active		IAEA-safety-glossary
+urgent-protective-action-planning-zone	concept	紧急防护行动规划区	urgent protective action planning zone (UPZ)		active		IAEA-safety-glossary
+urgent-response-phase	concept	紧急响应阶段	urgent response phase		active		IAEA-safety-glossary
+use	concept	使用	use		active		IAEA-safety-glossary
 
 # ---- Imported from GBT-4960.9 (2026-04-14) ----
 
