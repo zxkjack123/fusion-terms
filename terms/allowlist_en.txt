@@ -2716,3 +2716,19 @@ screening-distance-value
 screening-probability-level
 seabed-disposal
 sealed-source
+# --- T-4973 W3a allowlist batch 38 ---
+seismogenic-structure
+seismotectonic-model
+senior-management
+service-conditions
+service-life
+severe-accident-management
+severe-deterministic-effect
+short-lived-waste
+shutdown-reactivity
+sievert
+significant-transboundary-release
+single-failure
+single-failure-criterion
+site-area
+site-area-emergency
