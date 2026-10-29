@@ -34,3 +34,9 @@
 allowlist 数据边界、批门禁、反例、覆盖率和回归均通过；没有需要回滚或返工的 blocking defect。综合仍为 **PARTIAL**，因为 121/812 条短词的 IME 产品取舍属于 Type-B 人工口径，不能冒充 PASS。
 
 已知例外：3 个 denylist 阻塞、35 个 proper_excluded、9 个 W2 残余、self-test 19/24 漂移、names-mode `--check-urls` 空转。证据/释义补强由 PM **5072** 承接。
+
+## 用户裁决（2026-10-29）
+
+`question` 选择 **「接受全量词库基线」**：812 条新增中文词（含 121 条 1–2 字短词）整体保留，**不回滚**；短词影响登记为 **known-issue**，交后续词库维护/误召回评估处理。
+
+⇒ 本阶段**产品口径已裁决**，交付状态记 **ACCEPTED（known-issue: 121 条短词待误召回评估）**；机械化门禁与 blocking 结论不变（blocking 0）。
