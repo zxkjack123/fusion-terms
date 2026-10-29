@@ -1713,29 +1713,29 @@ cooldown	concept	降温冷却	Cooldown		active		ITER-glossary
 cooling-water-system	concept	冷却水系统	Cooling Water System		active		ITER-glossary
 correction-coils	concept	校正线圈	Correction Coils		active		ITER-glossary
 cryogenic	concept	低温技术	Cryogenic		active		ITER-glossary
-deuterium-tritium-reactions	concept		Deuterium-Tritium Reactions		active		ITER-glossary
+deuterium-tritium-reactions	concept	氘氚聚变反应	Deuterium-Tritium Reactions		active		ITER-glossary
 diagnostics	concept		Diagnostics		active		ITER-glossary
-divertor-channel	concept		Divertor Channel		active		ITER-glossary
-domestic-agencies	concept		Domestic Agencies		active		ITER-glossary
-double-pancake	concept		Double pancake		active		ITER-glossary
-electron-beam	concept		Electron Beam		active		ITER-glossary
-energy-breakeven	concept		Energy Breakeven		active		ITER-glossary
-epfl	concept		EPFL		active		ITER-glossary
-fuel-cycle-system	concept		Fuel Cycle System		active		ITER-glossary
-fusion-performance	concept		Fusion Performance		active		ITER-glossary
-helium-ash	concept		Helium ash		active		ITER-glossary
-ifmif-dones	concept		IFMIF-DONES		active		ITER-glossary
-ifmif-eveda	concept		IFMIF/EVEDA		active		ITER-glossary
-impurities	concept		Impurities		active		ITER-glossary
-in-vessel-components	concept		In-vessel components		active		ITER-glossary
-ion	concept		Ion		active		ITER-glossary
+divertor-channel	concept	偏滤器通道	Divertor Channel		active		ITER-glossary
+domestic-agencies	concept	国内机构	Domestic Agencies		active		ITER-glossary
+double-pancake	concept	双饼线圈	Double pancake		active		ITER-glossary
+electron-beam	concept	电子束	Electron Beam		active		ITER-glossary
+energy-breakeven	concept	能量收支平衡	Energy Breakeven		active		ITER-glossary
+epfl	concept	洛桑联邦理工学院	EPFL		active		ITER-glossary
+fuel-cycle-system	concept	燃料循环系统	Fuel Cycle System		active		ITER-glossary
+fusion-performance	concept	聚变性能	Fusion Performance		active		ITER-glossary
+helium-ash	concept	氦灰	Helium ash		active		ITER-glossary
+ifmif-dones	concept	IFMIF-DONES装置	IFMIF-DONES		active		ITER-glossary
+ifmif-eveda	concept	IFMIF-EVEDA工程	IFMIF/EVEDA		active		ITER-glossary
+impurities	concept	杂质	Impurities		active		ITER-glossary
+in-vessel-components	concept	真空室内构件	In-vessel components		active		ITER-glossary
+ion	concept	离子	Ion		active		ITER-glossary
 ionization	concept		Ionization		active		ITER-glossary
-isotope	concept		Isotope		active		ITER-glossary
-itpea	concept		ITPEA		active		ITER-glossary
-iua	concept		IUA		active		ITER-glossary
-lawson-s-criteria	concept		Lawson's Criteria		active		ITER-glossary
+isotope	concept	同位素	Isotope		active		ITER-glossary
+itpea	concept	ITPEA组织	ITPEA		active		ITER-glossary
+iua	concept	IUA协定	IUA		active		ITER-glossary
+lawson-s-criteria	concept	聚变劳森判据	Lawson's Criteria		active		ITER-glossary
 lithium	concept		Lithium		active		ITER-glossary
-lower-ports	concept		Lower Ports		active		ITER-glossary
+lower-ports	concept	下部窗口	Lower Ports		active		ITER-glossary
 major-plasma-radius	concept		Major Plasma Radius		active		ITER-glossary
 mast-upgrade	concept		MAST Upgrade		active		ITER-glossary
 nbtf	concept		NBTF		active		ITER-glossary
