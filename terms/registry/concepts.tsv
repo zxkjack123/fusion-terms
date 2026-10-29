@@ -2323,26 +2323,26 @@ protection-system	concept	保护系统	protection system		active		IAEA-safety-gl
 protective-action	concept	防护行动	protective action		active		IAEA-safety-glossary
 protective-task	concept	防护任务	protective task		active		IAEA-safety-glossary
 publication-iaea	concept	IAEA出版物	publication, IAEA		active		IAEA-safety-glossary
-qualification	concept		qualification		active		IAEA-safety-glossary
-qualified-equipment	concept		qualified equipment		active		IAEA-safety-glossary
-qualified-expert	concept		qualified expert		active		IAEA-safety-glossary
-qualified-life	concept		qualified life		active		IAEA-safety-glossary
-quality-assurance	concept		quality assurance		active		IAEA-safety-glossary
-quality-control	concept		quality control (QC)		active		IAEA-safety-glossary
-quality-factor-q	concept		quality factor, Q		active		IAEA-safety-glossary
-radiation-detriment	concept		radiation detriment		active		IAEA-safety-glossary
-radiation-emergency	concept		radiation emergency		active		IAEA-safety-glossary
-radiation-generator	concept		radiation generator		active		IAEA-safety-glossary
-radiation-protection-officer	concept		radiation protection officer		active		IAEA-safety-glossary
-radiation-protection-programme	concept		radiation protection programme		active		IAEA-safety-glossary
-radiation-risks	concept		radiation risks		active		IAEA-safety-glossary
-radiation-safety	concept		radiation safety		active		IAEA-safety-glossary
-radiation-source	concept		radiation source		active		IAEA-safety-glossary
-radiation-weighting-factor-wr	concept		radiation weighting factor, wR		active		IAEA-safety-glossary
-radioactive	concept		radioactive		active		IAEA-safety-glossary
-radioactive-contents	concept		radioactive contents		active		IAEA-safety-glossary
-radioactive-discharges	concept		radioactive discharges		active		IAEA-safety-glossary
-radioactive-equilibrium	concept		radioactive equilibrium		active		IAEA-safety-glossary
+qualification	concept	鉴定	qualification		active		IAEA-safety-glossary
+qualified-equipment	concept	鉴定合格设备	qualified equipment		active		IAEA-safety-glossary
+qualified-expert	concept	合格专家	qualified expert		active		IAEA-safety-glossary
+qualified-life	concept	鉴定寿命	qualified life		active		IAEA-safety-glossary
+quality-assurance	concept	质量保证	quality assurance		active		IAEA-safety-glossary
+quality-control	concept	质量控制	quality control (QC)		active		IAEA-safety-glossary
+quality-factor-q	concept	辐射品质因数	quality factor, Q		active		IAEA-safety-glossary
+radiation-detriment	concept	辐射危害	radiation detriment		active		IAEA-safety-glossary
+radiation-emergency	concept	辐射应急	radiation emergency		active		IAEA-safety-glossary
+radiation-generator	concept	辐射发生器	radiation generator		active		IAEA-safety-glossary
+radiation-protection-officer	concept	辐射防护负责人	radiation protection officer		active		IAEA-safety-glossary
+radiation-protection-programme	concept	辐射防护大纲	radiation protection programme		active		IAEA-safety-glossary
+radiation-risks	concept	辐射风险	radiation risks		active		IAEA-safety-glossary
+radiation-safety	concept	辐射安全	radiation safety		active		IAEA-safety-glossary
+radiation-source	concept	辐射源	radiation source		active		IAEA-safety-glossary
+radiation-weighting-factor-wr	concept	辐射权重因数	radiation weighting factor, wR		active		IAEA-safety-glossary
+radioactive	concept	放射性的	radioactive		active		IAEA-safety-glossary
+radioactive-contents	concept	放射性内容物	radioactive contents		active		IAEA-safety-glossary
+radioactive-discharges	concept	放射性排放	radioactive discharges		active		IAEA-safety-glossary
+radioactive-equilibrium	concept	放射性平衡	radioactive equilibrium		active		IAEA-safety-glossary
 radioactive-half-life	concept		radioactive half-life		active		IAEA-safety-glossary
 radioactive-material	concept		radioactive material		active		IAEA-safety-glossary
 radioactive-source	concept		radioactive source		active		IAEA-safety-glossary
