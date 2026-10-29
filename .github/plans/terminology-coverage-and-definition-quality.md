@@ -2154,7 +2154,8 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
   2. 证据实质缺失 —— `w3.ids` 内 **747/854** concept 的 zh 释义仍为占位模板（`聚变/核工程术语，对应英文“X”`）；854 条 evidence 行 **`quote` 全为空串**，其中 b16–b43 的 554 条来源全为裸 `IAEA-Safety-Glossary-2018`（非 URL）。计划允许的「D2-5=A：`preferred_en` + 权威仓外 URL（须 200）」**证据部分未落地**（命名部分已落地）。
 - **既有缺陷（W3a 未引入，已核）**：`registry_batch_verify.py --self-test` **19/24（exit 1）** —— `git diff --stat` 证明 W3a 未改 `scripts/`，在基线 `dda25c9^` 上同样失败。
 - **覆盖率口径**：`coverage_pct 70.90 → 72.17`（covered 2181→2220），但报告 `W3a` 桶仍为 **0** —— W3a 名字**未**写入 `allowlist`（本阶段不写 allowlist），属桶计数产物，非「未处理」。
-- **未签收**：W3a 命名可作为**可用基线**（130 行抽检 0 FAIL、冲突 0、列边界 100% 干净），但**不**判 `PASS`；T-4973 状态保持 `doing`，**W4 不启动**，处置待用户裁决（选项见 `w3a-acceptance.md` §5）。
+- **未签收为 PASS**：W3a 命名可作为**可用基线**（130 行抽检 0 FAIL、冲突 0、列边界 100% 干净），但**不**判 `PASS`；T-4973 状态保持 `doing`。
+- **用户裁决（2026-10-29，`question` 选项 A）**：**接受命名基线 + 另立证据任务** —— 854 个 `preferred_zh` 定为 W3a 基线（不改名）；747 行占位 zh 释义 / `quote` 全空 / b16–b43 裸来源 / names-mode `--check-urls` 空转 登记为 **known-issue**，由后续独立任务补强；**W4 终验不因本裁决自动启动**。裁决原文与边界见 `w3a-acceptance.md` §5。
 
 ## T1.B18 / T1.B19 返工（IMPR-2，2026-10-27，基线 `08f8901`）
 

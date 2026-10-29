@@ -103,4 +103,6 @@ dispatch: `if mode == "names": return check_names(corpus, ids)`   # 不传 check
 | C | 仅补 evidence 的 `quote`/URL（不改释义），把判据②落到可机器判定 | 高 | 中 |
 | D | 修 `registry_batch_verify.py` 让 `--check-urls` 在 names 模式生效（含 self-test 从 19/24 修复） | 高 | 中（涉及脚本变更，需单独授权） |
 
-> 在用户裁决前：T-4973 状态保持 `doing`，**不**标 done；W4 终验不启动。
+> **用户裁决（2026-10-29）**：通过 `question` 选择 **A（接受命名基线 + 另立证据任务）**。因此 854 个 `preferred_zh` 作为 W3a 可用基线保留；747 行占位释义、空 quote/裸来源与 names-mode `--check-urls` 空转登记为 **known-issue**，不阻塞命名基线。后续单独登记证据/释义补强任务；W4 终验本轮仍不直接启动。
+>
+> **边界说明**：后续 allowlist 落地与 W4 准备须按独立阶段的 acceptance criteria 执行；本验收记录不将其冒充为已完成。
