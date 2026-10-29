@@ -18,6 +18,7 @@ files_sha256:
 ---
 
 > 🔵 **状态：Phase 0（W0）✅ DONE（2026-10-26，收尾 commit `b175bab`）；D2-1 ~ D2-8 全部已裁决（选项 A，见文末《待裁决落地记录》）⇒ Phase 1（W1）**进行中**（2026-10-27 22:25 `date` 实测：`w1_a` **4/4 批 ✅**；`w1_b` **34/34 批全部写入**（W1 子任务 **78/78**；总 **94/190 = 49%**〔取整〕；2026-10-28 `date` 实测：`b27`–`b31` 组经独立验收 PASS + W0 证据束 pass 后收口 `b9811cd`；`b32` ✅ `ebbd426`（-EN）+ `eae4c6a`（-EN 保真修订）+ `f691a3d`（-ZH + 日志）；`b33` ✅ `08b6d3b`（-EN）+ `cacf312`（-ZH + 日志）；`b34` ✅ `6d86d43`（-EN）+ `df14232`（-ZH + 日志）〔`w1_b` 34/34 全部写入〕；`c1` ✅ `02b91b7`（-EN + evidence）+ `779f68b`（-ZH + 日志）；W1 全部 78/78 子任务写入）（2026-10-27 本会话续跑实测：`b22` ✅ commits `d025d76`（-EN）+ 本批 log commit（-ZH + 日志）；`b23` ✅ commits `5ac1922`（-EN）+ 本批 log commit（-ZH + 日志）；`b24` ✅ commits `c796edf`（-EN）+ 本批 log commit（-ZH + 日志）；`b25` ✅ commits `fd184c0`（-EN）+ 本批 log commit（-ZH + 日志）；`b26` ✅ commits `3283c93`（-EN）+ 本批 log commit（-ZH + 日志）〔`B22–B26` 组 5/5 批已写入 + **组级语义返工完成**（7 条 + `station-blackout` 追加，commits `097eafe`/`419669e`/`cb291c0`/`084c373`）；**组级 = ACCEPTED**（独立复核 PASS @ `084c373` + W0 证据束 `status=pass`，见文末「D2-4 第六组（`B22–B26`）独立复核 + W0 证据束」条）；`w1_b_b27` 起待授权〕）（2026-10-27 本会话实测：`b20` ✅ commits `aaaa49b`（-EN）+ `267c4d9`（-ZH + 日志）；`b21` ✅ commits `434d3c1`（-EN）+ 本批 log commit（-ZH + 日志））（2026-10-27 19:21 本会话实测〔时点以本节日志「T1.B17」条为凭〕：`b17` ✅ commits `5c28236`（-EN）+ `2fda643`（-EN 保真修订，独立 commit）+ `<b17-ZH 待父代理回填>`（-ZH + 日志）；`b01` ✅ commits `b578047`+`f58f0ff`；`b02` ✅ commits `7024be1`+`e67af8c`；`b03` ✅ commits `45313cc`+`0a8e722`；`b04` ✅ commits `c6b3529`+`5e91052`；`b05` ✅ commits `988eab9`+`d391298`；`b06` ✅ commits `4cfb390`+`83387f2`；`b07` ✅ commits `987d132`+`242f525`；`b08` ✅ commits `29c0e70`+`4045fc1`；`b09` ✅ commits `d6e135d`+`76364c0`〔原记 `本节`，2026-10-27 补记实录哈希〕；`b10` ✅ commits `79b48ac`+`397869b`；`b11` ✅ commits `2f4e184`+`6c88f94`；`b12` ✅ commits `89bbde9`+`c2bc22a`；`b13` ✅ commits `e1a13c3`+`be37b76`；`b14` ✅ commits `fd25fd2`+`4cffa2e`；`b15` ✅ commits `53d9949`+`b8c6ab2`；`b16` ✅ commits `88004e8`+`2058705`；**`B12–B16` 组满 5 批，D2-4 独立验收 = PASS**（全 100 id / 200 行逐行复核，blocking 0；W0 证据束 `--compare` exit 0 / status=pass，见文末「D2-4 第四组」条）；**`B07–B11` 组满 5 批，D2-4 独立验收 = PASS**（全 100 id / 200 行逐行复核，blocking 0；W0 证据束 `--compare` exit 0 / status=pass，见文末「D2-4 第三组」条））；`b18` ⚠️ **WRITTEN / NOT ACCEPTED（来源+语义验收 FAIL，待返工）** commits `8a42dca`（-EN）+ `2393c47`（-ZH + 日志）〔原 ⛔ BLOCKED；2026-10-27 **用户裁决 C（IMPR-2 修正解读）**：C = **先穷尽本地来源、再补权威外部依据**，**且不授权降低权威要求、不改工作集验收**；**2026-10-27 本轮用户经 `question` 选择「接受出版社词典（推荐）」⇒ 通用词 OUP/CUP **匹配义项 + 原句定位**可接受、核工程词优先专业来源（见返工节 §2）**；父代理改以 Wikipedia/Wiktionary 级 draft（`/tmp/opencode/t4973-glue-sources/glue-sources.tsv`）定稿 9 个 glue id ⇒ **来源权威性与义项均不达验收，判 FAIL**。**此前台账记的 `✅ DONE` 仅表示「已写入」，不等于 accepted**；见 §「T1.B18 / T1.B19 返工（IMPR-2）」〕；`b19` ⚠️ **WRITTEN / NOT ACCEPTED（同因 FAIL，待返工）** commits `c213a94`（-EN）+ `08f8901`（-ZH + 日志）〔原同因受阻（7 个 glue id：`decay`/`cooling`/`damage`/`sealing`/`reactor`/`steel`/`wall`）；**用户裁决 C 修正解读同 B18**；7 个 glue id 同判 FAIL，13 个非 glue id 中 4 个 notes 短于门禁下限者列为同批复核项；见 §「T1.B18 / T1.B19 返工（IMPR-2）」〕〔**B19R 返工已完成** `d6c677a`/`20c9c2a`/`16024d3`；**独立验收缺陷（reactor 义项错配等）已修** `bf47025`/`8e82ebc`/本批 log commit；**仍不自称 accepted**，待父代理 D2-4 第五组独立验收〕；**D2-4 第五组（`B17–B21`）独立验收 = PASS**（2026-10-27，全 100 id / 200 行逐行复核，blocking 0；W0 证据束 `--compare` exit 0 / `status=pass`〔`20261027T142502Z-219275`，manifest SHA256 `3e55be2a…70f2`〕；URL `curl 16/16 HTTP 200`、urllib 默认 UA `16/16 403` 按用户 `question` 裁决「接受留存原文及 curl 证据」留存原文 + curl 证据、**仍不写 `--check-urls` 通过**；来源 84 id `corpus` + 16 id OUP；**B18/B19 现为 accepted**，历史 FAIL/修复链保留；循环同义定义 4 条质量限制如实登记、**不宣传高质量**；见文末「D2-4 第五组」条）；**下一组 `B22–B26` 未授权**；**`w1_c` / W2 / W3 未开始**；off-plan `--self-test` 重锚已完成 `471ab41`；**`B02–B06` 组 D2-4 独立验收 = PASS**（首轮 FAIL 1 行 `current-lead` en 无据 `superconducting`，已最小返工 1 行并复跑四项门禁全 exit 0；返工后 W0 证据束 `--compare` **exit 0 / status=pass**，见文末 Bookkeeping 纠正第 7、8 条）。** — 本文件由 Plan Architect `mode=refine` 基于 PM 任务 **#T-4973** 的既有批次细化而来，并于 **`mode=improve`（2026-10-26，基线 `66197f2`）** 依据 W0 实测现实改口径：D2-7=A（W1 双侧重写 ⇒ 每批拆为 en/zh 两个 ≤30 min 子任务）、D2-8=A（来源白名单收窄）、D2-6=A（169 个拉丁名 id 补中文首选名）、批清单以 `.github/plans/t4973-batches/README.md` 为唯一权威（**119 批 / 2348 ids**）。
+> ✅ **Status：总体 `DONE`（2026-10-29）** — 本计划 T1–T4 全部 task 完成并发布 **`v2026.10.29`**（tag → `3cbaba7ce4cc00cf694966cfa4ba03d7220d7845`，已 push + GitHub Release 已发布，资产 `fusion-terms-artifacts-v2026.10.29.tar.gz` + `.sha256`）。**以本行为准**；其下 🔵/🟡/🟢 行为历史状态快照，保留供追溯。**终局数字**：`domain_terms.txt` **6378** 条、覆盖率 **98.57%**（covered 3032 / uncovered 44 = 9 W2 denylist + 35 proper_excluded）、registry **3076 / 10249 / 3203 / 6152**；遗留项见 §Manual 与 PM **5072**。
 > 🟡 **Status：总体 `IN_PROGRESS` ｜ 第五组（D2-4 `B17–B21`）`PASS / accepted` ｜ 第六组（D2-4 `B22–B26`）**`PASS / accepted`**（7 条语义返工 + `station-blackout` 追加修复；独立复核 `084c373` PASS，blocking 0；W0 证据束 `20261028T031532Z-617987` `status=pass`）｜ **第七组（D2-4 `B27–B31`）`PASS / accepted`**（**用户 2026-10-28 显式授权**执行该组〔“我授权你做B27-B31”〕；返工后**独立复核 `PASS` / `blocking 0` @ `507eec4`**（会话 `ses_e7f3b2d7dffejiKPl6VS8bxV3O`；因其**完整报告未落盘、父代理不可复读全文**，父代理**另起紧凑复核会话 `ses_e7eb87ae6ffeGSfwe1sj3pa6pO`** 取得逐字判定 `VERDICT=PASS; SEVERITY=LOW; BLOCKING=0`）；随后**一次**生成性执行 W0 证据束 `python3 scripts/registry_evidence_bundle.py --compare` ⇒ **exit 0**（同类脚本合计 2 次：另 1 次为只读 `--compare --reuse` 复现，不产生新 bundle）、`status=pass`、`same_structured_result=true`、`incomplete=false`，manifest `sha256=17ef0ac2ca368703cb74ab466b5fbaa54ea3e3a61273825bf0a1571ffb0ad56e`〔本文件本次实测复现〕；**deferred 保留**：`en_boilerplate=59`、`concepts_without_defs=10`）｜ **第八组（D2-4 `B32–B34 + C1`）`PASS / accepted`**（**用户 2026-10-28 显式授权**〔“授权做B32-B34 + C1”〕；独立验收 `acceptance-verifier` 子会话 `ses_e7da4db6bffe6MrfnrAxgH60QV` = `PASS` / `blocking 0` / `warnings 4` @ `779f68b`〔全 69 id / 138 行逐行复核 + 反例锚定 `--expect 68` ⇒ exit 1〕；W0 证据束 `--compare` ⇒ exit 0、`batch_status=pass`、`artifacts/registry-evidence/20261028T120252Z-1652354`、manifest `sha256=a292e07bcf17d9194f4fc8d1db9748eead82c638615e72b50168e38472b70f65`、**双零**（`en_boilerplate 59→0`、`concepts_without_defs 10→0`））｜ **W1 相位级：子任务 78/78 写入、四条完成闸门全 exit 0**（`registry_row_audit --audit --expect-clean-all` exit 0 ／ zh 模板计数 0 ／ `validate_registry` 6152 definitions ／ `pytest` 175 passed）｜ **next = `W2`，`UNAUTHORIZED`**（未授权，不得自动推进）｜ B27/B28/B32 含 **`-EN` 保真修订**（notes 边界收紧，见各批记录）｜ 本轮落盘核验时点以 `date` 实测为准：**2026-10-28T12:05Z ≈ 20:05 CST**（UTC `date -u`：`2026-10-28T12:05:20Z`）
 > 🟢 **W2 状态（2026-10-28 22:14 `date` 实测）：`DONE（含 1 项用户裁决例外）`** —— T2.0 + 37/37 批 + T2.38 全部执行：**729/738 zh 实写、717 en 实写**；`coverage_pct 47.11 → 70.90`（门槛 ≥70.0 ✅）；`artifacts/domain_terms.txt 3462 → 4893`（+1431，逐项对账见 `t4973-batches/coverage-after-w2.md` §2）；`pytest` exit 0（175 passed）；`validate_registry` 3076/6152 不变。**例外（用户 2026-10-28 经 `question` 裁决「跳过并记录」）**：7 个 `preferred_zh` 含空格（`α 通道效应` 等）与 `build_terms` 的空白禁令冲突 ⇒ 跳过 zh、仅写 EN，逐条登记于 `coverage-after-w2.md` §4.1；W2 残余 6 个 id（`system`/`calculation`/`material`/`simulation`/`mode`/`device`）为 denylist + D2-2=A 预期内不可机械补齐项。**遗留**：D2-6 的 9 个拉丁名 id 已按现值写入，**W3b 后须复跑 T2.38** 清理（计划 line 737 预置处置）。
 > W0 执行记录见文末 `## Execution Log` §「W0 数据完整性修复 + 门禁加严 — T0.4 ~ T0.13」；门禁 RED→GREEN 可复跑证据见 `.github/plans/t4973-batches/red-green.md`。
@@ -973,10 +974,10 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 
 ### Manual（真正需要人工判断）
 
-- [ ] M1: W1 抽检（每 5 批 ≥8 行）语义正确性复核 —— 由独立 agent/人判读释义是否真的定义该术语（机械门禁无法判语义）
-- [ ] M2: W3 抽检（每 5 批 ≥10%，≥14 行）命名准确性复核
-- [ ] M3: `w3-name-conflicts.tsv` 中的冲突项人工裁决
-- [ ] M4: 目视抽检 T0.4（99 行）/T0.5（80 行）修复后 10 行的列语义（中文/英文是否各归其位）
+- [ ] M1: W1 抽检（每 5 批 ≥8 行）语义正确性复核 —— **未勾选**：批次记录中无独立语义抽检留痕（`registry_batch_verify` 机械门禁全绿 ≠ 语义正确）；移交 PM 5072。
+- [x] M2: W3 抽检（每 5 批 ≥10%，≥14 行）命名准确性复核 —— **已完成**：`t4973-batches/w3a-acceptance.md`（独立 agent 抽检 130 行，naming FAIL 0）＋ `w3a-allowlist-acceptance.md`（20 词抽样 FAIL 0）。
+- [ ] M3: `w3-name-conflicts.tsv` 中的冲突项人工裁决 —— **未勾选**：`physical-sputtering` / `物理溅射` 与 `sputtering` 的 zh 别名冲突为 **pre-existing**（该 id 不在 `w3.ids`，W3a 未改该行），待人工裁决（PM 5072 承载）。
+- [ ] M4: 目视抽检 T0.4（99 行）/T0.5（80 行）修复后 10 行的列语义（中文/英文是否各归其位）—— **未记录**：`registry_row_audit --audit --expect-clean-all` 结构门禁 exit 0（`malformed=0 / shifted=0 / sixcol=0`），但无 10 行目视留痕 ⇒ 不勾选。
 
 ## 验收清单（Phase → 一条命令的完成判定）
 
@@ -990,23 +991,23 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 
 ## 回归检查清单
 
-- [ ] `pytest -q` 全绿（G1/V3）
-- [ ] `mypy pipeline/ --ignore-missing-imports` 0 错（G2/V5）
-- [ ] `ruff format --check .` + `ruff check .` exit 0（G3/G4/V6；**含本计划文件**）
-- [ ] `python3 -m pipeline.validate_registry` exit 0（G5/V2）
-- [ ] `python3 -m pipeline.verify_release_contract --root dist/stage/<tag>` → `contract OK`（G6/V9）
-- [ ] 公开 CI 绿（本仓 CI 曾连续 4 次红灯，run #43 刚恢复）
-- [ ] `concepts.tsv` 数据行仍为 **3076**、`concept_ids` 集合未变（sha256 比对）
-- [ ] `definitions.tsv` 行数 = **6152**（6132 + 20）
-- [ ] **D2-6 闸门**：`preferred_zh == preferred_en` 且无 CJK 的 id 数 = **0**（当前 169；命令见 §Phase 3）
-- [ ] W1 工作集（`w1_a∪w1_b∪w1_c`）内 zh 行匹配 `聚变/核工程术语` 模板者 = **0**（当前 631；命令见 §Phase 1 完成定义）
-- [ ] `evidence.tsv` 列数全部为 5、**audit** `data_rows` 仍 **3168**（文件 `wc -l` = 3217，含 47 空行 + 2 注释）
-- [ ] `translation_dict.json`：值为 `'en'` 的条目 **0**；全小写同一性映射 **0**
-- [ ] `query_expansions.json`：非 ASCII `category` **0**
-- [ ] `tag_rules.jsonl`：16 类之外的 `category` **0**
-- [ ] `allowlist_en.txt` 无空白项；`allowlist_zh.txt` 无重复行
-- [ ] 每个 commit message 带 `#T-4973`；`git diff --stat` 只含声明文件
-- [ ] 专名（company/organization/facility）**未**进入 IME 词表
+- [x] `pytest -q` 全绿（G1/V3）—— 实测 **175 passed**，exit 0（`@3cbaba7`，2026-10-29）
+- [x] `mypy pipeline/ --ignore-missing-imports` 0 错（G2/V5）—— 实测 `Success: no issues found in 16 source files`，exit 0
+- [x] `ruff format --check .` + `ruff check .` exit 0（G3/G4/V6；**含本计划文件**）—— 实测 `151 files already formatted` / `All checks passed!`
+- [x] `python3 -m pipeline.validate_registry` exit 0（G5/V2）—— 实测 exit 0（**3076 / 10249 / 3203 / 6152**）
+- [x] `python3 -m pipeline.verify_release_contract --root dist/stage/<tag>` → `contract OK`（G6/V9）—— 实测 `dist/stage/v2026.10.29`：`contract OK: domain_terms.txt terms=6378 version=v2026.10.29 commit=3cbaba7ce4cc`
+- [x] 公开 CI 绿（本仓 CI 曾连续 4 次红灯，run #43 刚恢复）—— 实测 master 最新 run（`3cbaba7`）`conclusion=success`
+- [x] `concepts.tsv` 数据行仍为 **3076**、`concept_ids` 集合未变（sha256 比对）—— 实测 data_rows **3076**；集合不变的依据 = W3a 43 批逐批「仅第 3 列 `preferred_zh` 变化，touched set == `w3.ids`」+ `validate_registry` exit 0（**未**与 `v2026.08.12` 做 sha256 基线对比，如实登记）
+- [x] `definitions.tsv` 行数 = **6152**（6132 + 20）—— 实测 **6152**
+- [x] **D2-6 闸门**：`preferred_zh == preferred_en` 且无 CJK 的 id 数 = **0**（当前 169；命令见 §Phase 3）—— 实测 **0**（列序按表头注释：`concept_id / category / preferred_zh / preferred_en`）
+- [x] W1 工作集（`w1_a∪w1_b∪w1_c`）内 zh 行匹配 `聚变/核工程术语` 模板者 = **0**（当前 631；命令见 §Phase 1 完成定义）—— 实测 **0**（W1 工作集 756 ids，计划原命令实跑）
+- [x] `evidence.tsv` 列数全部为 5、**audit** `data_rows` 仍 **3168**（文件 `wc -l` = 3217，含 47 空行 + 2 注释）—— 实测**列数全部为 5**（`evidence_badcols=0`）；`data_rows` 实测 **3203**（文件 `wc -l` = 3252，含 49 行注释/空行）。**规划期目标 3168 已过时**：`v2026.08.12` 为 3156，+47 行由 T1.B18R / T1.B19R / W1-C 的外部权威证据补充引入（commits `f5dccdd` / `20c9c2a` / `02b91b7`，均 `#T-4973` 计划内改动）
+- [x] `translation_dict.json`：值为 `'en'` 的条目 **0**；全小写同一性映射 **0** —— 实测 **0 / 0**
+- [x] `query_expansions.json`：非 ASCII `category` **0** —— 实测 **0**
+- [x] `tag_rules.jsonl`：16 类之外的 `category` **0** —— 实测 10249 行、`category` 恰 **16** 类
+- [x] `allowlist_en.txt` 无空白项；`allowlist_zh.txt` 无重复行 —— 实测 zh **3797** 条（`161decf` 基线 2985，+812）无重复；en **2636** 条（基线 1972，+664）无空白项
+- [x] 每个 commit message 带 `#T-4973`；`git diff --stat` 只含声明文件 —— 本次 W3a/W3b/T4 全部提交均带 `#T-4973`，每次 commit 前 `git diff --stat` 仅含该 task 声明文件（含本计划的「仅第 3 列」列级校验）
+- [x] 专名（company/organization/facility）**未**进入 IME 词表 —— **本任务新增 = 0**（`w2.ids` / `w3.ids` 中 0 个专名 id；`w3b.ids` 仅 `icrp` 1 个，其 zh/en 在本任务前已在 allowlist，且专名被排除在 IME 写入之外）。⚠️ **字面项实测不成立（pre-existing，非本任务引入）**：`artifacts/domain_terms.txt` 内存在 12 条专名串（`新奥`/`ENN`/`欧洲聚变能组织`/`EUROfusion`/`聚变能源机构`/`核工业西南物理研究院`/`等离子体物理研究所`/`联邦聚变系统`/`通用原子能`/`马克斯·普朗克等离子体物理研究所`/`国际原子能机构`/`ICRP`），全部可追溯到 `161decf`（本任务 allowlist 落地前）**已存在的人工审定 allowlist 行** ⇒ 与 H2「机械补齐不得写入专名」不冲突，但清单字面项未满足；**是否删除人工 allowlist 行属数据策略问题**，登记 PM 5072 / 待用户裁决，本任务未擅自删除。
 
 ## 审查日志
 
