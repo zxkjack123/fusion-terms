@@ -2402,3 +2402,22 @@ guidance-level-for-medical-exposure
 gut-transfer-factor
 habit-survey
 half-life-t
+# --- T-4973 W3a allowlist batch 20 ---
+hazard-assessment
+health-authority
+health-effects
+health-professional
+health-screening-programme
+health-surveillance
+helper-in-an-emergency
+hereditary-effect
+high-energy-radiation-therapy-equipment
+high-enriched-uranium
+high-linear-energy-transfer-radiation
+holocene-volcano
+human-factors-engineering
+human-intrusion
+hydrodynamic-dispersion
+iaea-publication
+icru-sphere
+igneous-rock
