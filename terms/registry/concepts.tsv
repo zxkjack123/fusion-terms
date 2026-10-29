@@ -2062,26 +2062,26 @@ fuel	concept	燃料物质	fuel		active		IAEA-safety-glossary
 fuel-assembly	concept	燃料组件	fuel assembly		active		IAEA-safety-glossary
 fuel-element	concept	燃料元件	fuel element		active		IAEA-safety-glossary
 fuel-rod	concept	燃料棒	fuel rod		active		IAEA-safety-glossary
-functional-diversity	concept		functional diversity		active		IAEA-safety-glossary
-functional-indicator	concept		functional indicator		active		IAEA-safety-glossary
-functional-isolation	concept		functional isolation		active		IAEA-safety-glossary
-fundamental-safety-function	concept		fundamental safety function		active		IAEA-safety-glossary
-gap-release	concept		gap release		active		IAEA-safety-glossary
-general-emergency	concept		general emergency		active		IAEA-safety-glossary
-generic-criteria	concept		generic criteria		active		IAEA-safety-glossary
-genetic-effect	concept		genetic effect		active		IAEA-safety-glossary
-geological-disposal-facility	concept		geological disposal facility		active		IAEA-safety-glossary
-geological-fault	concept		geological fault		active		IAEA-safety-glossary
-geological-record	concept		geological record		active		IAEA-safety-glossary
-geosphere	concept		geosphere		active		IAEA-safety-glossary
-graded-approach	concept		graded approach		active		IAEA-safety-glossary
-gray	concept		gray (Gy)		active		IAEA-safety-glossary
-ground-shine	concept		ground shine		active		IAEA-safety-glossary
-guidance-level	concept		guidance level		active		IAEA-safety-glossary
-guidance-level-for-medical-exposure	concept		guidance level for medical exposure		active		IAEA-safety-glossary
-gut-transfer-factor	concept		gut transfer factor		active		IAEA-safety-glossary
-habit-survey	concept		habit survey		active		IAEA-safety-glossary
-half-life-t	concept		half-life, T½		active		IAEA-safety-glossary
+functional-diversity	concept	功能多样性	functional diversity		active		IAEA-safety-glossary
+functional-indicator	concept	功能指标	functional indicator		active		IAEA-safety-glossary
+functional-isolation	concept	功能隔离	functional isolation		active		IAEA-safety-glossary
+fundamental-safety-function	concept	基本安全功能	fundamental safety function		active		IAEA-safety-glossary
+gap-release	concept	间隙释放	gap release		active		IAEA-safety-glossary
+general-emergency	concept	一般应急	general emergency		active		IAEA-safety-glossary
+generic-criteria	concept	通用准则	generic criteria		active		IAEA-safety-glossary
+genetic-effect	concept	遗传效应	genetic effect		active		IAEA-safety-glossary
+geological-disposal-facility	concept	地质处置设施	geological disposal facility		active		IAEA-safety-glossary
+geological-fault	concept	地质断层	geological fault		active		IAEA-safety-glossary
+geological-record	concept	地质记录	geological record		active		IAEA-safety-glossary
+geosphere	concept	地质圈	geosphere		active		IAEA-safety-glossary
+graded-approach	concept	分级方法	graded approach		active		IAEA-safety-glossary
+gray	concept	戈瑞	gray (Gy)		active		IAEA-safety-glossary
+ground-shine	concept	地表照射	ground shine		active		IAEA-safety-glossary
+guidance-level	concept	指导水平	guidance level		active		IAEA-safety-glossary
+guidance-level-for-medical-exposure	concept	医疗照射指导水平	guidance level for medical exposure		active		IAEA-safety-glossary
+gut-transfer-factor	concept	胃肠道转移因子	gut transfer factor		active		IAEA-safety-glossary
+habit-survey	concept	习惯调查	habit survey		active		IAEA-safety-glossary
+half-life-t	concept	半衰期T½	half-life, T½		active		IAEA-safety-glossary
 hazard	concept		hazard		active		IAEA-safety-glossary
 hazard-assessment	concept		hazard assessment		active		IAEA-safety-glossary
 health-authority	concept		health authority		active		IAEA-safety-glossary
