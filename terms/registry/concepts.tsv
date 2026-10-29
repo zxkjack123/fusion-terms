@@ -2484,26 +2484,26 @@ source-monitoring	concept	源监测	source monitoring		active		IAEA-safety-gloss
 source-region	concept	源区	source region		active		IAEA-safety-glossary
 special-arrangement	concept	特殊安排	special arrangement		active		IAEA-safety-glossary
 special-facility	concept	特殊设施	special facility		active		IAEA-safety-glossary
-special-fissionable-material	concept		special fissionable material		active		IAEA-safety-glossary
-special-form-radioactive-material	concept		special form radioactive material		active		IAEA-safety-glossary
-special-monitoring	concept		special monitoring		active		IAEA-safety-glossary
-special-population-group	concept		special population group		active		IAEA-safety-glossary
-spent-fuel	concept		spent fuel		active		IAEA-safety-glossary
-spent-fuel-management	concept		spent fuel management		active		IAEA-safety-glossary
-spent-fuel-management-facility	concept		spent fuel management facility		active		IAEA-safety-glossary
-spent-source	concept		spent source		active		IAEA-safety-glossary
-standards-dosimetry-laboratory	concept		standards dosimetry laboratory		active		IAEA-safety-glossary
-state-of-destination	concept		State of destination		active		IAEA-safety-glossary
-state-of-origin	concept		State of origin		active		IAEA-safety-glossary
-state-of-transit	concept		State of transit		active		IAEA-safety-glossary
-stochastic-analysis	concept		stochastic analysis		active		IAEA-safety-glossary
-stochastic-effect	concept		stochastic effect		active		IAEA-safety-glossary
-storage	concept		storage		active		IAEA-safety-glossary
-strombolian-eruption	concept		strombolian eruption		active		IAEA-safety-glossary
-strongly-penetrating-radiation	concept		strongly penetrating radiation		active		IAEA-safety-glossary
-structure	concept		structure		active		IAEA-safety-glossary
-structures-systems-and-components	concept		structures, systems and components (SSCs)		active		IAEA-safety-glossary
-sub-seabed-disposal	concept		sub-seabed disposal		active		IAEA-safety-glossary
+special-fissionable-material	concept	特殊可裂变材料	special fissionable material		active		IAEA-safety-glossary
+special-form-radioactive-material	concept	特殊形式放射性物质	special form radioactive material		active		IAEA-safety-glossary
+special-monitoring	concept	特殊监测	special monitoring		active		IAEA-safety-glossary
+special-population-group	concept	特殊人群	special population group		active		IAEA-safety-glossary
+spent-fuel	concept	乏燃料	spent fuel		active		IAEA-safety-glossary
+spent-fuel-management	concept	乏燃料管理	spent fuel management		active		IAEA-safety-glossary
+spent-fuel-management-facility	concept	乏燃料管理设施	spent fuel management facility		active		IAEA-safety-glossary
+spent-source	concept	报废源	spent source		active		IAEA-safety-glossary
+standards-dosimetry-laboratory	concept	标准剂量学实验室	standards dosimetry laboratory		active		IAEA-safety-glossary
+state-of-destination	concept	目的地国	State of destination		active		IAEA-safety-glossary
+state-of-origin	concept	起源国	State of origin		active		IAEA-safety-glossary
+state-of-transit	concept	过境国	State of transit		active		IAEA-safety-glossary
+stochastic-analysis	concept	随机分析	stochastic analysis		active		IAEA-safety-glossary
+stochastic-effect	concept	随机效应	stochastic effect		active		IAEA-safety-glossary
+storage	concept	贮存	storage		active		IAEA-safety-glossary
+strombolian-eruption	concept	斯特龙博利式喷发	strombolian eruption		active		IAEA-safety-glossary
+strongly-penetrating-radiation	concept	强穿透辐射	strongly penetrating radiation		active		IAEA-safety-glossary
+structure	concept	构筑物	structure		active		IAEA-safety-glossary
+structures-systems-and-components	concept	构筑物、系统与部件	structures, systems and components (SSCs)		active		IAEA-safety-glossary
+sub-seabed-disposal	concept	海床下处置	sub-seabed disposal		active		IAEA-safety-glossary
 substantiation	concept		substantiation		active		IAEA-safety-glossary
 supervised-area	concept		supervised area		active		IAEA-safety-glossary
 supplier	concept		supplier (of a source)		active		IAEA-safety-glossary
