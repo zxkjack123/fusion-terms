@@ -2769,3 +2769,19 @@ strombolian-eruption
 strongly-penetrating-radiation
 structures-systems-and-components
 sub-seabed-disposal
+# --- T-4973 W3a allowlist batch 41 ---
+supervised-area
+supplier
+surface-contaminated-object
+surface-faulting
+surveillance-testing
+system-code
+system-code-validation
+system-code-verification
+system-validation
+target-tissue-or-organ
+task-related-monitoring
+technological-obsolescence
+temporary-relocation
+therapeutic-exposure
+thermodynamic-diameter
