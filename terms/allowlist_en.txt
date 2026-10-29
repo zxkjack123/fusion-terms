@@ -2466,3 +2466,23 @@ lifetime-management
 lifetime-risk
 linear-no-threshold-hypothesis
 long-lived-waste
+# --- T-4973 W3a allowlist batch 24 ---
+low-dispersible-radioactive-material
+low-enriched-uranium
+low-linear-energy-transfer-radiation
+low-specific-activity-material
+low-toxicity-alpha-emitters
+lower-limit-of-detection
+lung-absorption-type
+magma-chamber
+main-safety-function
+magnitude
+maintenance-bypass
+management
+management-self-assessment
+management-system
+management-system-review
+mantle-earth-s
+material-ageing
+mathematical-model
+maximum-normal-operating-pressure
