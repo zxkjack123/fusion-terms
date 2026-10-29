@@ -2576,3 +2576,20 @@ permanent-relocation
 permanent-shutdown
 person-or-organization
 personal-dose-equivalent-hp
+# --- T-4973 W3a allowlist batch 30 ---
+phreatic-eruption
+phreatomagmatic-eruption
+physical-ageing
+physical-diversity
+physical-half-life
+physical-model
+physical-protection
+physical-separation
+planned-exposure-situation
+planning-target-volume
+plant-equipment
+plant-states
+plinian-eruption
+potential-alpha-energy
+potential-exposure
+practical-elimination
