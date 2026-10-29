@@ -3072,3 +3072,22 @@ OSCAR程序
 # --- T-4973 W3b cleanup (formerly space-blocked W2 zh) ---
 赫利昂Trenta装置
 GAMMA10串列磁镜装置
+# --- T-4973 W3a allowlist batch 01 ---
+附加加热
+ADITYA-U托卡马克
+AlcatorC-Mod装置
+MHD阿尔芬波
+α粒子加热
+射频天线
+中性束束线
+生物屏蔽层
+得失相当
+氚增殖技术
+更广泛方法协定
+燃烧
+燃烧等离子体
+法国原子能委员会
+装置调试
+等离子体约束时间
+降温冷却
+低温技术

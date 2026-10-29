@@ -2108,3 +2108,14 @@ acp-deposition-coefficient
 acp-erosion-coefficient
 dissolution-precipitation-coefficient
 acp-filter-model
+# --- T-4973 W3a allowlist batch 01 ---
+additional-heating
+alcator-c-mod
+alfv-n-waves
+alpha-heating
+breeding-technologies
+broader-approach
+burning-plasma
+confinement-time
+cooling-water-system
+correction-coils
