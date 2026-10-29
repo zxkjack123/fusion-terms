@@ -2679,3 +2679,23 @@ restricted-use
 risk-assessment
 risk-coefficient
 risk-constraint
+# --- T-4973 W3a allowlist batch 36 ---
+risk-monitor
+risk-projection-model
+rock-igneous
+root-cause
+root-uptake
+routine-monitoring
+safe-state
+safeguards-agreement
+safety-action
+safety-actuation-system
+safety-assessment
+safety-categorization
+safety-category
+safety-class
+safety-committee
+safety-culture
+safety-feature
+safety-group
+safety-indicator
