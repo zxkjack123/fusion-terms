@@ -2042,26 +2042,26 @@ facility-states	concept	设施状态	facility states (considered in design)		act
 facility-emergency	concept	设施应急	facility emergency		active		IAEA-safety-glossary
 failure	concept	失效	failure (technical)		active		IAEA-safety-glossary
 failure-mode	concept	失效模式	failure mode		active		IAEA-safety-glossary
-far-field	concept		far field		active		IAEA-safety-glossary
-fault-geological	concept		fault, geological		active		IAEA-safety-glossary
-feed	concept		feed		active		IAEA-safety-glossary
-first-responders	concept		first responders		active		IAEA-safety-glossary
-fissile-material	concept		fissile material		active		IAEA-safety-glossary
-fissile-nuclide	concept		fissile nuclide		active		IAEA-safety-glossary
-fission-fragment	concept		fission fragment		active		IAEA-safety-glossary
-fission-product	concept		fission product		active		IAEA-safety-glossary
-fissionable-material	concept		fissionable material		active		IAEA-safety-glossary
-fissionable-nuclide	concept		fissionable nuclide		active		IAEA-safety-glossary
-fixed-contamination	concept		fixed contamination		active		IAEA-safety-glossary
-food	concept		food		active		IAEA-safety-glossary
-free-field-ground-motion	concept		free field ground motion		active		IAEA-safety-glossary
-freight-container	concept		freight container		active		IAEA-safety-glossary
-frequency-of-exceedance	concept		frequency of exceedance		active		IAEA-safety-glossary
-fresh-fuel	concept		fresh fuel		active		IAEA-safety-glossary
-fuel	concept		fuel		active		IAEA-safety-glossary
-fuel-assembly	concept		fuel assembly		active		IAEA-safety-glossary
-fuel-element	concept		fuel element		active		IAEA-safety-glossary
-fuel-rod	concept		fuel rod		active		IAEA-safety-glossary
+far-field	concept	远场	far field		active		IAEA-safety-glossary
+fault-geological	concept	断层	fault, geological		active		IAEA-safety-glossary
+feed	concept	饲料	feed		active		IAEA-safety-glossary
+first-responders	concept	首批响应人员	first responders		active		IAEA-safety-glossary
+fissile-material	concept	易裂变材料	fissile material		active		IAEA-safety-glossary
+fissile-nuclide	concept	易裂变核素	fissile nuclide		active		IAEA-safety-glossary
+fission-fragment	concept	裂变碎片	fission fragment		active		IAEA-safety-glossary
+fission-product	concept	裂变产物	fission product		active		IAEA-safety-glossary
+fissionable-material	concept	可裂变材料	fissionable material		active		IAEA-safety-glossary
+fissionable-nuclide	concept	可裂变核素	fissionable nuclide		active		IAEA-safety-glossary
+fixed-contamination	concept	固定污染	fixed contamination		active		IAEA-safety-glossary
+food	concept	食品	food		active		IAEA-safety-glossary
+free-field-ground-motion	concept	自由场地地面运动	free field ground motion		active		IAEA-safety-glossary
+freight-container	concept	货运容器	freight container		active		IAEA-safety-glossary
+frequency-of-exceedance	concept	超越频率	frequency of exceedance		active		IAEA-safety-glossary
+fresh-fuel	concept	新燃料	fresh fuel		active		IAEA-safety-glossary
+fuel	concept	燃料物质	fuel		active		IAEA-safety-glossary
+fuel-assembly	concept	燃料组件	fuel assembly		active		IAEA-safety-glossary
+fuel-element	concept	燃料元件	fuel element		active		IAEA-safety-glossary
+fuel-rod	concept	燃料棒	fuel rod		active		IAEA-safety-glossary
 functional-diversity	concept		functional diversity		active		IAEA-safety-glossary
 functional-indicator	concept		functional indicator		active		IAEA-safety-glossary
 functional-isolation	concept		functional isolation		active		IAEA-safety-glossary
