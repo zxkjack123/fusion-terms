@@ -1982,26 +1982,26 @@ emergency-class	concept	应急类别	emergency class		active		IAEA-safety-glossa
 emergency-classification	concept	应急分级	emergency classification		active		IAEA-safety-glossary
 emergency-exposure	concept	应急照射	emergency exposure		active		IAEA-safety-glossary
 emergency-exposure-situation	concept	应急照射情况	emergency exposure situation		active		IAEA-safety-glossary
-emergency-phase	concept		emergency phase		active		IAEA-safety-glossary
-emergency-plan	concept		emergency plan		active		IAEA-safety-glossary
-emergency-planning-distance	concept		emergency planning distance		active		IAEA-safety-glossary
-emergency-preparedness	concept		emergency preparedness		active		IAEA-safety-glossary
-emergency-preparedness-category	concept		emergency preparedness category		active		IAEA-safety-glossary
-emergency-procedures	concept		emergency procedures		active		IAEA-safety-glossary
-emergency-response	concept		emergency response		active		IAEA-safety-glossary
-emergency-response-action	concept		emergency response action		active		IAEA-safety-glossary
-emergency-response-commander	concept		emergency response commander		active		IAEA-safety-glossary
-emergency-response-facility-or-location	concept		emergency response facility or location		active		IAEA-safety-glossary
-emergency-response-phase	concept		emergency response phase		active		IAEA-safety-glossary
-emergency-services	concept		emergency services		active		IAEA-safety-glossary
-emergency-worker	concept		emergency worker		active		IAEA-safety-glossary
-employer	concept		employer		active		IAEA-safety-glossary
-end-point	concept		end point		active		IAEA-safety-glossary
-end-state	concept		end state		active		IAEA-safety-glossary
-energy-fluence	concept		energy fluence		active		IAEA-safety-glossary
-enforcement	concept		enforcement		active		IAEA-safety-glossary
-enriched-uranium	concept		enriched uranium		active		IAEA-safety-glossary
-entombment	concept		entombment		active		IAEA-safety-glossary
+emergency-phase	concept	应急阶段	emergency phase		active		IAEA-safety-glossary
+emergency-plan	concept	应急计划	emergency plan		active		IAEA-safety-glossary
+emergency-planning-distance	concept	应急计划距离	emergency planning distance		active		IAEA-safety-glossary
+emergency-preparedness	concept	应急准备	emergency preparedness		active		IAEA-safety-glossary
+emergency-preparedness-category	concept	应急准备类别	emergency preparedness category		active		IAEA-safety-glossary
+emergency-procedures	concept	应急程序	emergency procedures		active		IAEA-safety-glossary
+emergency-response	concept	应急响应	emergency response		active		IAEA-safety-glossary
+emergency-response-action	concept	应急响应行动	emergency response action		active		IAEA-safety-glossary
+emergency-response-commander	concept	应急响应指挥官	emergency response commander		active		IAEA-safety-glossary
+emergency-response-facility-or-location	concept	应急响应设施或场所	emergency response facility or location		active		IAEA-safety-glossary
+emergency-response-phase	concept	应急响应阶段	emergency response phase		active		IAEA-safety-glossary
+emergency-services	concept	应急服务	emergency services		active		IAEA-safety-glossary
+emergency-worker	concept	应急工作人员	emergency worker		active		IAEA-safety-glossary
+employer	concept	用人单位	employer		active		IAEA-safety-glossary
+end-point	concept	终点	end point		active		IAEA-safety-glossary
+end-state	concept	最终状态	end state		active		IAEA-safety-glossary
+energy-fluence	concept	能量注量	energy fluence		active		IAEA-safety-glossary
+enforcement	concept	执法	enforcement		active		IAEA-safety-glossary
+enriched-uranium	concept	富集铀	enriched uranium		active		IAEA-safety-glossary
+entombment	concept	掩埋	entombment		active		IAEA-safety-glossary
 entrance-surface-dose	concept		entrance surface dose		active		IAEA-safety-glossary
 environment	concept		environment		active		IAEA-safety-glossary
 epicentre	concept		epicentre		active		IAEA-safety-glossary
