@@ -2343,26 +2343,26 @@ radioactive	concept	放射性的	radioactive		active		IAEA-safety-glossary
 radioactive-contents	concept	放射性内容物	radioactive contents		active		IAEA-safety-glossary
 radioactive-discharges	concept	放射性排放	radioactive discharges		active		IAEA-safety-glossary
 radioactive-equilibrium	concept	放射性平衡	radioactive equilibrium		active		IAEA-safety-glossary
-radioactive-half-life	concept		radioactive half-life		active		IAEA-safety-glossary
-radioactive-material	concept		radioactive material		active		IAEA-safety-glossary
-radioactive-source	concept		radioactive source		active		IAEA-safety-glossary
-radioactive-sources-safety-of	concept		radioactive sources, safety of		active		IAEA-safety-glossary
-radioactive-substance	concept		radioactive substance		active		IAEA-safety-glossary
-radioactive-waste-management	concept		radioactive waste management		active		IAEA-safety-glossary
-radioactive-waste-management-facility	concept		radioactive waste management facility		active		IAEA-safety-glossary
-radioactivity	concept		radioactivity		active		IAEA-safety-glossary
-radiological-assessor	concept		radiological assessor		active		IAEA-safety-glossary
-radiological-emergency	concept		radiological emergency		active		IAEA-safety-glossary
-radiological-medical-practitioner	concept		radiological medical practitioner		active		IAEA-safety-glossary
-radiological-procedure	concept		radiological procedure		active		IAEA-safety-glossary
-radiological-protection	concept		radiological protection		active		IAEA-safety-glossary
-radionuclides-of-artificial-origin	concept		radionuclides of artificial origin		active		IAEA-safety-glossary
-radionuclides-of-natural-origin	concept		radionuclides of natural origin		active		IAEA-safety-glossary
-radiopharmacist	concept		radiopharmacist		active		IAEA-safety-glossary
-radon	concept		radon		active		IAEA-safety-glossary
-radon-progeny	concept		radon progeny		active		IAEA-safety-glossary
-reactivity	concept		reactivity, ρ		active		IAEA-safety-glossary
-recording-level	concept		recording level		active		IAEA-safety-glossary
+radioactive-half-life	concept	放射性半衰期	radioactive half-life		active		IAEA-safety-glossary
+radioactive-material	concept	放射性物质	radioactive material		active		IAEA-safety-glossary
+radioactive-source	concept	放射源	radioactive source		active		IAEA-safety-glossary
+radioactive-sources-safety-of	concept	放射源安全	radioactive sources, safety of		active		IAEA-safety-glossary
+radioactive-substance	concept	放射性物料	radioactive substance		active		IAEA-safety-glossary
+radioactive-waste-management	concept	放射性废物管理	radioactive waste management		active		IAEA-safety-glossary
+radioactive-waste-management-facility	concept	放射性废物管理设施	radioactive waste management facility		active		IAEA-safety-glossary
+radioactivity	concept	放射性	radioactivity		active		IAEA-safety-glossary
+radiological-assessor	concept	辐射评估员	radiological assessor		active		IAEA-safety-glossary
+radiological-emergency	concept	放射性应急	radiological emergency		active		IAEA-safety-glossary
+radiological-medical-practitioner	concept	放射医疗执业人员	radiological medical practitioner		active		IAEA-safety-glossary
+radiological-procedure	concept	放射诊疗程序	radiological procedure		active		IAEA-safety-glossary
+radiological-protection	concept	辐射防护与安全	radiological protection		active		IAEA-safety-glossary
+radionuclides-of-artificial-origin	concept	人工放射性核素	radionuclides of artificial origin		active		IAEA-safety-glossary
+radionuclides-of-natural-origin	concept	天然来源放射性核素	radionuclides of natural origin		active		IAEA-safety-glossary
+radiopharmacist	concept	放射药剂师	radiopharmacist		active		IAEA-safety-glossary
+radon	concept	氡	radon		active		IAEA-safety-glossary
+radon-progeny	concept	氡子体	radon progeny		active		IAEA-safety-glossary
+reactivity	concept	反应性	reactivity, ρ		active		IAEA-safety-glossary
+recording-level	concept	记录水平	recording level		active		IAEA-safety-glossary
 redundancy	concept		redundancy		active		IAEA-safety-glossary
 reference-air-kerma-rate	concept		reference air kerma rate		active		IAEA-safety-glossary
 reference-individual	concept		reference individual		active		IAEA-safety-glossary
