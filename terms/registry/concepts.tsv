@@ -2123,26 +2123,26 @@ inspection-imaging-device	concept	检查成像装置	inspection imaging device		
 institutional-control	concept	制度控制	institutional control		active		IAEA-safety-glossary
 intake	concept	摄入	intake		active		IAEA-safety-glossary
 integrated-management-system	concept	综合管理系统	integrated management system		active		IAEA-safety-glossary
-interacting-event	concept		interacting event		active		IAEA-safety-glossary
-interested-party	concept		interested party		active		IAEA-safety-glossary
-intermediate-bulk-container	concept		intermediate bulk container (IBC)		active		IAEA-safety-glossary
-internal-exposure	concept		internal exposure		active		IAEA-safety-glossary
-international-nuclear-and-radiological-event-scale	concept		International Nuclear and Radiological Event Scale (INES)		active		IAEA-safety-glossary
-interplate-tectonic-processes	concept		interplate tectonic processes		active		IAEA-safety-glossary
-intervention	concept		intervention		active		IAEA-safety-glossary
-intraplate	concept		intraplate		active		IAEA-safety-glossary
-intrusion	concept		intrusion (human)		active		IAEA-safety-glossary
-intrusion-barrier	concept		intrusion barrier		active		IAEA-safety-glossary
-investigation-level	concept		investigation level		active		IAEA-safety-glossary
-iodine-thyroid-blocking	concept		iodine thyroid blocking		active		IAEA-safety-glossary
-ionizing-radiation	concept		ionizing radiation		active		IAEA-safety-glossary
-irradiation-installation	concept		irradiation installation		active		IAEA-safety-glossary
-isolation	concept		isolation (of radioactive waste in a disposal facility)		active		IAEA-safety-glossary
-item-important-to-safety	concept		item important to safety		active		IAEA-safety-glossary
-justification	concept		justification		active		IAEA-safety-glossary
-kerma-k	concept		kerma, K		active		IAEA-safety-glossary
-knowledge-management	concept		knowledge management		active		IAEA-safety-glossary
-large-freight-container	concept		large freight container		active		IAEA-safety-glossary
+interacting-event	concept	相互作用事件	interacting event		active		IAEA-safety-glossary
+interested-party	concept	利益相关方	interested party		active		IAEA-safety-glossary
+intermediate-bulk-container	concept	中型散装容器	intermediate bulk container (IBC)		active		IAEA-safety-glossary
+internal-exposure	concept	内照射	internal exposure		active		IAEA-safety-glossary
+international-nuclear-and-radiological-event-scale	concept	国际核与放射事件分级表	International Nuclear and Radiological Event Scale (INES)		active		IAEA-safety-glossary
+interplate-tectonic-processes	concept	板间构造过程	interplate tectonic processes		active		IAEA-safety-glossary
+intervention	concept	干预	intervention		active		IAEA-safety-glossary
+intraplate	concept	板内	intraplate		active		IAEA-safety-glossary
+intrusion	concept	侵入	intrusion (human)		active		IAEA-safety-glossary
+intrusion-barrier	concept	侵入屏障	intrusion barrier		active		IAEA-safety-glossary
+investigation-level	concept	调查水平	investigation level		active		IAEA-safety-glossary
+iodine-thyroid-blocking	concept	碘甲状腺阻断	iodine thyroid blocking		active		IAEA-safety-glossary
+ionizing-radiation	concept	电离辐射	ionizing radiation		active		IAEA-safety-glossary
+irradiation-installation	concept	辐照装置	irradiation installation		active		IAEA-safety-glossary
+isolation	concept	隔离	isolation (of radioactive waste in a disposal facility)		active		IAEA-safety-glossary
+item-important-to-safety	concept	对安全重要的物项	item important to safety		active		IAEA-safety-glossary
+justification	concept	正当性	justification		active		IAEA-safety-glossary
+kerma-k	concept	比释动能K	kerma, K		active		IAEA-safety-glossary
+knowledge-management	concept	知识管理	knowledge management		active		IAEA-safety-glossary
+large-freight-container	concept	大型货运容器	large freight container		active		IAEA-safety-glossary
 large-release-of-radioactive-material	concept		large release of radioactive material		active		IAEA-safety-glossary
 late-effect	concept		late effect		active		IAEA-safety-glossary
 latent-weakness	concept		latent weakness		active		IAEA-safety-glossary
