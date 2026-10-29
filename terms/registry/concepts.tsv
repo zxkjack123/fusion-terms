@@ -2464,26 +2464,26 @@ single-failure	concept	单一故障	single failure		active		IAEA-safety-glossary
 single-failure-criterion	concept	单一故障准则	single failure criterion		active		IAEA-safety-glossary
 site-area	concept	厂址区域	site area		active		IAEA-safety-glossary
 site-area-emergency	concept	厂址区域应急	site area emergency		active		IAEA-safety-glossary
-site-boundary	concept		site boundary		active		IAEA-safety-glossary
-site-characterization	concept		site characterization		active		IAEA-safety-glossary
-site-confirmation	concept		site confirmation (in the siting process for a disposal facility)		active		IAEA-safety-glossary
-site-evaluation	concept		site evaluation		active		IAEA-safety-glossary
-site-personnel	concept		site personnel		active		IAEA-safety-glossary
-site-response	concept		site (seismic) response		active		IAEA-safety-glossary
-site-selection	concept		site selection		active		IAEA-safety-glossary
-site-survey	concept		site survey		active		IAEA-safety-glossary
-site-verification	concept		site verification		active		IAEA-safety-glossary
-siting	concept		siting		active		IAEA-safety-glossary
-sl-1-sl-2	concept		SL-1, SL-2		active		IAEA-safety-glossary
-small-freight-container	concept		small freight container		active		IAEA-safety-glossary
-somatic-effect	concept		somatic effect		active		IAEA-safety-glossary
-sorption	concept		sorption		active		IAEA-safety-glossary
-source	concept		source		active		IAEA-safety-glossary
-source-material	concept		source material		active		IAEA-safety-glossary
-source-monitoring	concept		source monitoring		active		IAEA-safety-glossary
-source-region	concept		source region		active		IAEA-safety-glossary
-special-arrangement	concept		special arrangement		active		IAEA-safety-glossary
-special-facility	concept		special facility		active		IAEA-safety-glossary
+site-boundary	concept	厂址边界	site boundary		active		IAEA-safety-glossary
+site-characterization	concept	厂址表征	site characterization		active		IAEA-safety-glossary
+site-confirmation	concept	厂址确认	site confirmation (in the siting process for a disposal facility)		active		IAEA-safety-glossary
+site-evaluation	concept	厂址评价	site evaluation		active		IAEA-safety-glossary
+site-personnel	concept	厂址人员	site personnel		active		IAEA-safety-glossary
+site-response	concept	场地地震响应	site (seismic) response		active		IAEA-safety-glossary
+site-selection	concept	厂址选择	site selection		active		IAEA-safety-glossary
+site-survey	concept	厂址勘查	site survey		active		IAEA-safety-glossary
+site-verification	concept	厂址核查	site verification		active		IAEA-safety-glossary
+siting	concept	选址	siting		active		IAEA-safety-glossary
+sl-1-sl-2	concept	SL-1与SL-2地震水准	SL-1, SL-2		active		IAEA-safety-glossary
+small-freight-container	concept	小型货物容器	small freight container		active		IAEA-safety-glossary
+somatic-effect	concept	躯体效应	somatic effect		active		IAEA-safety-glossary
+sorption	concept	吸着	sorption		active		IAEA-safety-glossary
+source	concept	源	source		active		IAEA-safety-glossary
+source-material	concept	源材料	source material		active		IAEA-safety-glossary
+source-monitoring	concept	源监测	source monitoring		active		IAEA-safety-glossary
+source-region	concept	源区	source region		active		IAEA-safety-glossary
+special-arrangement	concept	特殊安排	special arrangement		active		IAEA-safety-glossary
+special-facility	concept	特殊设施	special facility		active		IAEA-safety-glossary
 special-fissionable-material	concept		special fissionable material		active		IAEA-safety-glossary
 special-form-radioactive-material	concept		special form radioactive material		active		IAEA-safety-glossary
 special-monitoring	concept		special monitoring		active		IAEA-safety-glossary
