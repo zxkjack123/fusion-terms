@@ -2183,26 +2183,26 @@ mantle-earth-s	concept	地幔	mantle, Earth’s		active		IAEA-safety-glossary
 material-ageing	concept	材料老化	material ageing		active		IAEA-safety-glossary
 mathematical-model	concept	数学模型	mathematical model		active		IAEA-safety-glossary
 maximum-normal-operating-pressure	concept	最大正常工作压力	maximum normal operating pressure		active		IAEA-safety-glossary
-maximum-potential-magnitude	concept		maximum potential magnitude		active		IAEA-safety-glossary
-mechanistic-model	concept		mechanistic model		active		IAEA-safety-glossary
-medical-exposure	concept		medical exposure		active		IAEA-safety-glossary
-medical-physicist	concept		medical physicist		active		IAEA-safety-glossary
-medical-radiation-facility	concept		medical radiation facility		active		IAEA-safety-glossary
-medical-radiation-technologist	concept		medical radiation technologist		active		IAEA-safety-glossary
-medical-radiological-equipment	concept		medical radiological equipment		active		IAEA-safety-glossary
-member-of-the-public	concept		member of the public		active		IAEA-safety-glossary
-migration	concept		migration		active		IAEA-safety-glossary
-minimization	concept		minimization (of waste)		active		IAEA-safety-glossary
-minimum-detectable-activity	concept		minimum detectable activity (MDA)		active		IAEA-safety-glossary
-minimum-significant-activity	concept		minimum significant activity (MSA)		active		IAEA-safety-glossary
-mitigatory-action	concept		mitigatory action		active		IAEA-safety-glossary
-mixed-waste	concept		mixed waste		active		IAEA-safety-glossary
-model	concept		model		active		IAEA-safety-glossary
-model-calibration	concept		model calibration		active		IAEA-safety-glossary
-model-validation	concept		model validation		active		IAEA-safety-glossary
-model-verification	concept		model verification		active		IAEA-safety-glossary
-monitoring	concept		monitoring		active		IAEA-safety-glossary
-multilateral-approval	concept		multilateral approval		active		IAEA-safety-glossary
+maximum-potential-magnitude	concept	最大潜在地震震级	maximum potential magnitude		active		IAEA-safety-glossary
+mechanistic-model	concept	机理模型	mechanistic model		active		IAEA-safety-glossary
+medical-exposure	concept	医疗照射	medical exposure		active		IAEA-safety-glossary
+medical-physicist	concept	医学物理师	medical physicist		active		IAEA-safety-glossary
+medical-radiation-facility	concept	医疗辐射设施	medical radiation facility		active		IAEA-safety-glossary
+medical-radiation-technologist	concept	医疗放射技师	medical radiation technologist		active		IAEA-safety-glossary
+medical-radiological-equipment	concept	医疗放射设备	medical radiological equipment		active		IAEA-safety-glossary
+member-of-the-public	concept	公众成员	member of the public		active		IAEA-safety-glossary
+migration	concept	迁移	migration		active		IAEA-safety-glossary
+minimization	concept	最小化	minimization (of waste)		active		IAEA-safety-glossary
+minimum-detectable-activity	concept	最小可探测活度	minimum detectable activity (MDA)		active		IAEA-safety-glossary
+minimum-significant-activity	concept	最小显著活度	minimum significant activity (MSA)		active		IAEA-safety-glossary
+mitigatory-action	concept	缓解行动	mitigatory action		active		IAEA-safety-glossary
+mixed-waste	concept	混合废物	mixed waste		active		IAEA-safety-glossary
+model	concept	模型	model		active		IAEA-safety-glossary
+model-calibration	concept	模型校准	model calibration		active		IAEA-safety-glossary
+model-validation	concept	模型确认	model validation		active		IAEA-safety-glossary
+model-verification	concept	模型验证	model verification		active		IAEA-safety-glossary
+monitoring	concept	监测	monitoring		active		IAEA-safety-glossary
+multilateral-approval	concept	多方批准	multilateral approval		active		IAEA-safety-glossary
 multiple-barriers	concept		multiple barriers		active		IAEA-safety-glossary
 multiple-safety-functions	concept		multiple safety functions		active		IAEA-safety-glossary
 multiplexing	concept		multiplexing		active		IAEA-safety-glossary
