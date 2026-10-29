@@ -1,2 +1,3 @@
 # T-4973 W3b name-conflict ledger; 0 conflicts found before T3.44 batch execution.
 # Columns: concept_id	proposed_preferred_zh	conflict_type	conflicting_owner	status
+physical-sputtering	物理溅射	zh-alias	sputtering	pre-existing (concept 不在 w3.ids；W3a 未修改该行，仅登记)
