@@ -2331,3 +2331,18 @@ end-point
 end-state
 energy-fluence
 enriched-uranium
+# --- T-4973 W3a allowlist batch 16 ---
+entrance-surface-dose
+epistemic-uncertainty
+equilibrium-radioactive
+equilibrium-equivalent-concentration
+equilibrium-factor
+equipment-qualification
+eruption-volcanic
+eruption-cloud
+essential-services
+excepted-package
+excess-risk
+excluded-exposure
+exclusive-use
+exempt-waste
