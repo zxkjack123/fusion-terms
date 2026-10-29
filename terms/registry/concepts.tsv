@@ -2223,26 +2223,26 @@ norm	concept	NORM物料	NORM		active		IAEA-safety-glossary
 norm-residue	concept	NORM残留物	NORM residue		active		IAEA-safety-glossary
 norm-waste	concept	NORM废物	NORM waste		active		IAEA-safety-glossary
 normal-operation	concept	正常运行	normal operation		active		IAEA-safety-glossary
-notification	concept		notification		active		IAEA-safety-glossary
-notification-point	concept		notification point		active		IAEA-safety-glossary
-notifying-state	concept		notifying State		active		IAEA-safety-glossary
-nuclear	concept		nuclear		active		IAEA-safety-glossary
-nuclear-accident	concept		nuclear accident		active		IAEA-safety-glossary
-nuclear-emergency	concept		nuclear emergency		active		IAEA-safety-glossary
-nuclear-facility	concept		nuclear facility		active		IAEA-safety-glossary
-nuclear-fuel	concept		nuclear fuel		active		IAEA-safety-glossary
-nuclear-fuel-cycle	concept		nuclear fuel cycle		active		IAEA-safety-glossary
-nuclear-fuel-cycle-facility	concept		nuclear fuel cycle facility		active		IAEA-safety-glossary
-nuclear-installation	concept		nuclear installation		active		IAEA-safety-glossary
-nuclear-material	concept		nuclear material		active		IAEA-safety-glossary
-nuclear-or-radiological-emergency	concept		nuclear or radiological emergency		active		IAEA-safety-glossary
-nuclear-security	concept		nuclear security		active		IAEA-safety-glossary
-nuclear-security-event	concept		nuclear security event		active		IAEA-safety-glossary
-observed-cause	concept		observed cause		active		IAEA-safety-glossary
-occupancy-factor	concept		occupancy factor		active		IAEA-safety-glossary
-off-site	concept		off-site (area)		active		IAEA-safety-glossary
-on-site	concept		on-site (area)		active		IAEA-safety-glossary
-open-nuclear-fuel-cycle	concept		open nuclear fuel cycle		active		IAEA-safety-glossary
+notification	concept	通报	notification		active		IAEA-safety-glossary
+notification-point	concept	通报点	notification point		active		IAEA-safety-glossary
+notifying-state	concept	通报国	notifying State		active		IAEA-safety-glossary
+nuclear	concept	核相关	nuclear		active		IAEA-safety-glossary
+nuclear-accident	concept	核事故	nuclear accident		active		IAEA-safety-glossary
+nuclear-emergency	concept	核应急	nuclear emergency		active		IAEA-safety-glossary
+nuclear-facility	concept	核设施	nuclear facility		active		IAEA-safety-glossary
+nuclear-fuel	concept	核燃料	nuclear fuel		active		IAEA-safety-glossary
+nuclear-fuel-cycle	concept	核燃料循环	nuclear fuel cycle		active		IAEA-safety-glossary
+nuclear-fuel-cycle-facility	concept	核燃料循环设施	nuclear fuel cycle facility		active		IAEA-safety-glossary
+nuclear-installation	concept	核装置	nuclear installation		active		IAEA-safety-glossary
+nuclear-material	concept	核材料	nuclear material		active		IAEA-safety-glossary
+nuclear-or-radiological-emergency	concept	核或辐射应急	nuclear or radiological emergency		active		IAEA-safety-glossary
+nuclear-security	concept	核安保	nuclear security		active		IAEA-safety-glossary
+nuclear-security-event	concept	核安保事件	nuclear security event		active		IAEA-safety-glossary
+observed-cause	concept	观察到的原因	observed cause		active		IAEA-safety-glossary
+occupancy-factor	concept	居留因子	occupancy factor		active		IAEA-safety-glossary
+off-site	concept	场外	off-site (area)		active		IAEA-safety-glossary
+on-site	concept	场内	on-site (area)		active		IAEA-safety-glossary
+open-nuclear-fuel-cycle	concept	开式核燃料循环	open nuclear fuel cycle		active		IAEA-safety-glossary
 operating-conditions	concept		operating conditions		active		IAEA-safety-glossary
 operating-lifetime-operating-life	concept		operating lifetime, operating life		active		IAEA-safety-glossary
 operating-organization	concept		operating organization		active		IAEA-safety-glossary
