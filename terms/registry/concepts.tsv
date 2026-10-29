@@ -2424,26 +2424,26 @@ safety-culture	concept	安全文化	safety culture		active		IAEA-safety-glossary
 safety-feature	concept	安全特征	safety feature (for design extension conditions)		active		IAEA-safety-glossary
 safety-group	concept	安全组	safety group		active		IAEA-safety-glossary
 safety-indicator	concept	安全指标	safety indicator		active		IAEA-safety-glossary
-safety-issues	concept		safety issues		active		IAEA-safety-glossary
-safety-layers	concept		safety layers		active		IAEA-safety-glossary
-safety-limits	concept		safety limits		active		IAEA-safety-glossary
-safety-measure	concept		safety measure		active		IAEA-safety-glossary
-safety-of-radioactive-sources	concept		safety of radioactive sources		active		IAEA-safety-glossary
-safety-related-item	concept		safety related item		active		IAEA-safety-glossary
-safety-related-system	concept		safety related system		active		IAEA-safety-glossary
-safety-standards	concept		safety standards		active		IAEA-safety-glossary
-safety-system	concept		safety system		active		IAEA-safety-glossary
-safety-system-settings	concept		safety system settings		active		IAEA-safety-glossary
-safety-system-support-features	concept		safety system support features		active		IAEA-safety-glossary
-safety-task	concept		safety task		active		IAEA-safety-glossary
-scenario	concept		scenario		active		IAEA-safety-glossary
-scram	concept		scram		active		IAEA-safety-glossary
-screening	concept		screening		active		IAEA-safety-glossary
-screening-distance-value	concept		screening distance value (SDV)		active		IAEA-safety-glossary
-screening-probability-level	concept		screening probability level (SPL)		active		IAEA-safety-glossary
-seabed-disposal	concept		seabed disposal		active		IAEA-safety-glossary
-sealed-source	concept		sealed source		active		IAEA-safety-glossary
-security	concept		security		active		IAEA-safety-glossary
+safety-issues	concept	安全问题	safety issues		active		IAEA-safety-glossary
+safety-layers	concept	安全层次	safety layers		active		IAEA-safety-glossary
+safety-limits	concept	安全限值	safety limits		active		IAEA-safety-glossary
+safety-measure	concept	安全措施	safety measure		active		IAEA-safety-glossary
+safety-of-radioactive-sources	concept	放射源安全措施	safety of radioactive sources		active		IAEA-safety-glossary
+safety-related-item	concept	安全相关物项	safety related item		active		IAEA-safety-glossary
+safety-related-system	concept	安全相关系统	safety related system		active		IAEA-safety-glossary
+safety-standards	concept	安全标准	safety standards		active		IAEA-safety-glossary
+safety-system	concept	安全系统	safety system		active		IAEA-safety-glossary
+safety-system-settings	concept	安全系统整定值	safety system settings		active		IAEA-safety-glossary
+safety-system-support-features	concept	安全系统辅助设施	safety system support features		active		IAEA-safety-glossary
+safety-task	concept	安全任务	safety task		active		IAEA-safety-glossary
+scenario	concept	情景	scenario		active		IAEA-safety-glossary
+scram	concept	紧急停堆	scram		active		IAEA-safety-glossary
+screening	concept	筛选	screening		active		IAEA-safety-glossary
+screening-distance-value	concept	筛选距离值	screening distance value (SDV)		active		IAEA-safety-glossary
+screening-probability-level	concept	筛选概率水平	screening probability level (SPL)		active		IAEA-safety-glossary
+seabed-disposal	concept	海底处置	seabed disposal		active		IAEA-safety-glossary
+sealed-source	concept	密封源	sealed source		active		IAEA-safety-glossary
+security	concept	安保	security		active		IAEA-safety-glossary
 segregation	concept		segregation		active		IAEA-safety-glossary
 seismogenic-structure	concept		seismogenic structure		active		IAEA-safety-glossary
 seismotectonic-model	concept		seismotectonic model		active		IAEA-safety-glossary
