@@ -2294,3 +2294,22 @@ dose-equivalent-quantities
 dose-per-unit-intake
 dose-quantities
 dose-rate
+# --- T-4973 W3a allowlist batch 14 ---
+double-contingency-principle
+driven-equipment
+dry-storage
+early-effect
+early-protective-actions
+early-release-of-radioactive-material
+early-response-phase
+earth-s-crust
+earth-s-mantle
+effective-half-life
+effusive-eruption
+elimination-practical
+emergency-action-level
+emergency-arrangements
+emergency-class
+emergency-classification
+emergency-exposure
+emergency-exposure-situation
