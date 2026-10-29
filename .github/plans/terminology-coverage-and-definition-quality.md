@@ -2168,7 +2168,7 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 - **覆盖率**：`artifacts/domain_terms.txt` **4902 → 6378**（+1476）；`coverage_pct` **72.17 → 98.57**（covered **2220 → 3032**，uncovered **856 → 44**）；`W3a` 桶 **0**；剩余 44 = **9**（W2 桶：6 个既有残余 + 上述 3 个 denylist 阻塞：`system`/`calculation`/`material`/`simulation`/`mode`/`device`/`area`/`control`/`diffusion`）+ **35**（`proper_excluded`，按 H2 永不入词表）。
 - **未解决**：W3a 证据/释义缺口按用户裁决另立 **PM 5072** 承接（747 行占位 zh 释义 + 854 条空 `quote`，见 `w3a-acceptance.md`）；本阶段不触碰 `definitions.tsv`/`evidence.tsv`。
 - **独立验收（环节 7）**：委派 `acceptance-verifier`（只读，会话 `ses_e784b1b00ffev9xjQVXYF1I6D3`）→ **`PARTIAL` / blocking 0 / warnings 4**，详见 `.github/plans/t4973-batches/w3a-allowlist-acceptance.md`。43/43 批门禁、851/851 全量可入集合、反例 exit 1→0、allowlist 行 discipline、build 6378、pytest 175、coverage 98.57% 均独立复现；20 条跨 20 批质量抽样 0 FAIL。
-- **PARTIAL 非阻塞原因**：812 条新增中文词中有 **121 条（3 单字 + 118 双字，14.90%）**属于短词/高频词头，独立验收认为均有英文概念支撑，但 IME 产品取舍仍需人工口径；另有 3 项记录性 warning（names-mode `--check-urls` 空转、逐批 build provenance 不能由 git 单独重放、denylist 口径应文文化）。不回滚，交 PM 5072/后续词库维护阶段。
+- **PARTIAL 非阻塞原因**：812 条新增中文词中有 **121 条（3 单字 + 118 双字，14.90%）**属于短词/高频词头，独立验收认为均有英文概念支撑，但 IME 产品取舍仍需人工口径；另有 3 项记录性 warning（names-mode `--check-urls` 空转、逐批 build provenance 不能由 git 单独重放、denylist 口径应文档化）。不回滚，交 PM 5072/后续词库维护阶段。
 
 ## T1.B18 / T1.B19 返工（IMPR-2，2026-10-27，基线 `08f8901`）
 
