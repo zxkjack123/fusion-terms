@@ -2263,3 +2263,19 @@ defence-in-depth
 deferred-dismantling
 defined-deck-area
 depleted-uranium
+# --- T-4973 W3a allowlist batch 12 ---
+derived-limit
+design-basis
+design-basis-external-events
+design-basis-probability-value
+design-extension-conditions
+design-life
+detection-limit
+determination-level
+deterministic-analysis
+deterministic-effect
+diagnostic-exposure
+diagnostic-reference-level
+direct-cause
+direct-disposal
+directional-dose-equivalent
