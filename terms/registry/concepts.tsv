@@ -1821,26 +1821,26 @@ arrangements	concept	应急响应安排	arrangements (for emergency response)		a
 assessment	concept	评价	assessment		active		IAEA-safety-glossary
 assisted-operation	concept	辅助运行	assisted operation		active		IAEA-safety-glossary
 attenuation	concept		attenuation		active		IAEA-safety-glossary
-attributable-risk	concept		attributable risk		active		IAEA-safety-glossary
-audit	concept		audit		active		IAEA-safety-glossary
-authorization	concept		authorization		active		IAEA-safety-glossary
-authorized-activity	concept		authorized activity		active		IAEA-safety-glossary
-authorized-discharge	concept		authorized discharge		active		IAEA-safety-glossary
-authorized-facility	concept		authorized facility		active		IAEA-safety-glossary
-authorized-limit	concept		authorized limit		active		IAEA-safety-glossary
-authorized-party	concept		authorized party		active		IAEA-safety-glossary
-authorized-termination-of-responsibility	concept		authorized termination of responsibility		active		IAEA-safety-glossary
-authorized-transfer	concept		authorized transfer		active		IAEA-safety-glossary
-authorized-use	concept		authorized use		active		IAEA-safety-glossary
-averted-dose	concept		averted dose		active		IAEA-safety-glossary
-backfill	concept		backfill		active		IAEA-safety-glossary
-background	concept		background		active		IAEA-safety-glossary
-barrier	concept		barrier		active		IAEA-safety-glossary
-bayesian-statistics	concept		Bayesian statistics		active		IAEA-safety-glossary
-becquerel	concept		becquerel (Bq)		active		IAEA-safety-glossary
-bias	concept		bias		active		IAEA-safety-glossary
-bioassay	concept		bioassay		active		IAEA-safety-glossary
-biological-half-life	concept		biological half-life		active		IAEA-safety-glossary
+attributable-risk	concept	归因风险	attributable risk		active		IAEA-safety-glossary
+audit	concept	审核	audit		active		IAEA-safety-glossary
+authorization	concept	授权	authorization		active		IAEA-safety-glossary
+authorized-activity	concept	获授权活动	authorized activity		active		IAEA-safety-glossary
+authorized-discharge	concept	授权排放	authorized discharge		active		IAEA-safety-glossary
+authorized-facility	concept	获授权设施	authorized facility		active		IAEA-safety-glossary
+authorized-limit	concept	授权限值	authorized limit		active		IAEA-safety-glossary
+authorized-party	concept	获授权方	authorized party		active		IAEA-safety-glossary
+authorized-termination-of-responsibility	concept	责任授权终止	authorized termination of responsibility		active		IAEA-safety-glossary
+authorized-transfer	concept	授权转移	authorized transfer		active		IAEA-safety-glossary
+authorized-use	concept	授权使用	authorized use		active		IAEA-safety-glossary
+averted-dose	concept	避免剂量	averted dose		active		IAEA-safety-glossary
+backfill	concept	回填	backfill		active		IAEA-safety-glossary
+background	concept	本底	background		active		IAEA-safety-glossary
+barrier	concept	屏障	barrier		active		IAEA-safety-glossary
+bayesian-statistics	concept	贝叶斯统计	Bayesian statistics		active		IAEA-safety-glossary
+becquerel	concept	贝可勒尔	becquerel (Bq)		active		IAEA-safety-glossary
+bias	concept	偏差	bias		active		IAEA-safety-glossary
+bioassay	concept	生物测定	bioassay		active		IAEA-safety-glossary
+biological-half-life	concept	生物半衰期	biological half-life		active		IAEA-safety-glossary
 biophysical-model	concept		biophysical model		active		IAEA-safety-glossary
 biosphere	concept		biosphere		active		IAEA-safety-glossary
 buffer	concept		buffer		active		IAEA-safety-glossary
