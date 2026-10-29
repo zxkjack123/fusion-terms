@@ -1942,26 +1942,26 @@ direct-disposal	concept	直接处置	direct disposal		active		IAEA-safety-glossa
 directional-dose-equivalent	concept	定向剂量当量	directional dose equivalent		active		IAEA-safety-glossary
 discharge	concept	排放	discharge		active		IAEA-safety-glossary
 dismantling	concept	拆除	dismantling		active		IAEA-safety-glossary
-dispersal	concept		dispersal		active		IAEA-safety-glossary
-dispersion	concept		dispersion		active		IAEA-safety-glossary
-disposal	concept		disposal		active		IAEA-safety-glossary
-disposal-facility	concept		disposal facility		active		IAEA-safety-glossary
-disposal-system	concept		disposal system		active		IAEA-safety-glossary
-disposition	concept		disposition		active		IAEA-safety-glossary
-disused-sealed-source	concept		disused sealed source		active		IAEA-safety-glossary
-disused-source	concept		disused source		active		IAEA-safety-glossary
-diversity	concept		diversity		active		IAEA-safety-glossary
-dose	concept		dose		active		IAEA-safety-glossary
-dose-and-dose-rate-effectiveness-factor	concept		dose and dose rate effectiveness factor (DDREF)		active		IAEA-safety-glossary
-dose-assessment	concept		dose assessment		active		IAEA-safety-glossary
-dose-coefficient	concept		dose coefficient		active		IAEA-safety-glossary
-dose-concepts	concept		dose concepts		active		IAEA-safety-glossary
-dose-conversion-convention	concept		dose conversion convention		active		IAEA-safety-glossary
-dose-equivalent	concept		dose equivalent		active		IAEA-safety-glossary
-dose-equivalent-quantities	concept		dose equivalent quantities (operational)		active		IAEA-safety-glossary
-dose-per-unit-intake	concept		dose per unit intake		active		IAEA-safety-glossary
-dose-quantities	concept		dose quantities		active		IAEA-safety-glossary
-dose-rate	concept		dose rate		active		IAEA-safety-glossary
+dispersal	concept	散布	dispersal		active		IAEA-safety-glossary
+dispersion	concept	弥散	dispersion		active		IAEA-safety-glossary
+disposal	concept	处置	disposal		active		IAEA-safety-glossary
+disposal-facility	concept	处置设施	disposal facility		active		IAEA-safety-glossary
+disposal-system	concept	处置系统	disposal system		active		IAEA-safety-glossary
+disposition	concept	处置去向	disposition		active		IAEA-safety-glossary
+disused-sealed-source	concept	废弃密封源	disused sealed source		active		IAEA-safety-glossary
+disused-source	concept	废弃源	disused source		active		IAEA-safety-glossary
+diversity	concept	多样性	diversity		active		IAEA-safety-glossary
+dose	concept	剂量	dose		active		IAEA-safety-glossary
+dose-and-dose-rate-effectiveness-factor	concept	剂量与剂量率效能因子	dose and dose rate effectiveness factor (DDREF)		active		IAEA-safety-glossary
+dose-assessment	concept	剂量评价	dose assessment		active		IAEA-safety-glossary
+dose-coefficient	concept	剂量系数	dose coefficient		active		IAEA-safety-glossary
+dose-concepts	concept	剂量概念	dose concepts		active		IAEA-safety-glossary
+dose-conversion-convention	concept	剂量转换约定	dose conversion convention		active		IAEA-safety-glossary
+dose-equivalent	concept	剂量当量	dose equivalent		active		IAEA-safety-glossary
+dose-equivalent-quantities	concept	剂量当量实用量	dose equivalent quantities (operational)		active		IAEA-safety-glossary
+dose-per-unit-intake	concept	单位摄入剂量	dose per unit intake		active		IAEA-safety-glossary
+dose-quantities	concept	剂量量	dose quantities		active		IAEA-safety-glossary
+dose-rate	concept	剂量率	dose rate		active		IAEA-safety-glossary
 double-contingency-principle	concept		double contingency principle		active		IAEA-safety-glossary
 drawdown	concept		drawdown		active		IAEA-safety-glossary
 driven-equipment	concept		driven equipment		active		IAEA-safety-glossary
