@@ -2162,3 +2162,19 @@ abnormal-operation
 absorbed-fraction
 absorption-type-lung
 acceptable-limit
+# --- T-4973 W3a allowlist batch 05 ---
+acceptance-criteria
+accident-conditions
+accident-management
+accident-precursor
+active-component
+activity-concentration
+activity-median-aerodynamic-diameter
+activity-median-thermodynamic-diameter
+actuated-equipment
+actuation-device
+acute-exposure
+acute-intake
+additive-risk-projection-model
+aerodynamic-diameter
+aerodynamic-dispersion
