@@ -2346,3 +2346,21 @@ excess-risk
 excluded-exposure
 exclusive-use
 exempt-waste
+# --- T-4973 W3a allowlist batch 17 ---
+exemption-level
+existing-exposure-situation
+explosive-eruption
+exposure-assessment
+exposure-categories
+exposure-due-to-radon
+exposure-pathway
+exposure-situations
+extended-planning-distance
+external-event
+external-exposure
+external-zone
+facilities-and-activities
+facility-states
+facility-emergency
+failure
+failure-mode
