@@ -2139,6 +2139,23 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 - **30 个专名**（company 23 / organization 6 / facility 1）虽已补中文名，仍属 `proper_excluded` ⇒ **不得进入 IME 词表**（口径不变）
 - **独立验收（环节 7）**：委派 `acceptance-verifier`（只读，会话 `ses_e7cfa8cf0ffe4HEgEqocPrtMAt`）→ **`PASS` / confidence HIGH / blocking 0 / warnings 3** @ `c5a2509`；8/8 强制检查独立复现：D2-6=A 闸门 **169→0**、工作集 169/9 批/交集 9 与 0、9 批 `--mode names --check-urls` 全 PASS（并实测反例锚定：`rfx-mod` 改拉丁串 ⇒ exit 1）、逐列比对 **169/169 仅 col3 变化**（touched set 与 `w3b.ids` 精确相等）、全库 `preferred_zh` 重复 0 / 新名撞他人 zh-alias 0、专名 0 泄漏进 IME 表、清理后 `artifacts/domain_terms.txt` **4902**、命名抽检 **46 行 0 FAIL**。warnings 已登记：① 本机 `ls` 对 9 个同名 glob 输出非确定（**非仓库缺陷**，验收改用 python/find/git）；② 计划原写「28 个专名」实测为 **30**（本处已更正）；③ T3.0 workset 幂等性未固化进门禁（人工 `diff` 已验证一致）。
 
+### T3.1–T3.43 — ⚠️ PARTIAL（W3a 854 名 / 43 批；数据门禁全绿，独立验收 PARTIAL，2026-10-29）
+
+- **授权**：用户 2026-10-29 会话原文「授权 W3a 854 名 / 43 批」。
+- **写入**：43 批逐个落表 `terms/registry/concepts.tsv` 的 `preferred_zh`；每批独立 commit（`d20eba6`…`4ead28b`），另有冲突台账 commit `dda25c9`。
+- **逐批门禁（43/43 实测）**：`registry_batch_verify --mode names --ids-file w3_b<NN>.ids --expect <N> --check-urls` → **exit 0**（b01–b42 expect 20、b43 expect 14；**未使用** `--allow-latin-names`）；`validate_registry` → **exit 0**；`git diff --numstat` = `<N>/<N>`；冲突扫描 `dup_preferred_zh=0 alias=0`。
+- **全量闸门**：`w3.ids --expect 854 --check-urls` → **exit 0**（`ids=854 expect=854 verdict=PASS`）；`registry_row_audit.py --audit --expect-clean-all` → **exit 0**（`is_clean:true`、`w3a_empty_zh=0`）；D2-6 残差 **0**；`pytest -q` **175 passed**。
+- **边界（逐列实测）**：`dda25c9^` vs `HEAD` → 行数 3076→3076、**touched 854**、diff 列模式 **`{(2,): 854}`（仅第 3 列）**、`touched == w3.ids`、无增删行、表头逐字节相同；`git diff --stat` 仅 `concepts.tsv` + `w3-name-conflicts.tsv`。
+- **命名口径**：IAEA 安全术语优先按「IAEA 中文对应词 + 仓内已接受先例」；同形/近义重复 27 处已按 `w3` 内定义限定词消歧（如 `absorption-type-lung`=肺吸收类型分类 vs `lung-absorption-type`=肺部吸收类型）；`fuel`→`燃料物质` 以避开 `fuels`=燃料 的既有 zh 别名。
+- **冲突台账**：`w3-name-conflicts.tsv` 新增 1 行 —— `physical-sputtering` / `物理溅射` 与 `sputtering` 的 zh 别名冲突，**pre-existing**、该 concept **不在 `w3.ids`**、W3a **未改该行**，仅登记待人工裁决（计划 M3 未勾选）。
+- **独立验收（环节 7，两个只读 `acceptance-verifier` 会话）**：`ses_e7a4cd173ffelqcNVMNw15h6sP`（b01–b15，抽样 45 行）与 `ses_e7a4cd173ffdU8NIkpZoWm4QhY`（b16–b43，抽样 85 行）→ 命名 **0 FAIL**、机械项全部复现；**综合判定 `PARTIAL`**，blocking **0**、warnings **4**，详见 `.github/plans/t4973-batches/w3a-acceptance.md`。
+- **PARTIAL 的两个实质原因（不得以门禁绿签收）**：
+  1. 判据②「依据可核验」**结构性空转** —— `check_names(corpus, ids, *, allow_latin_names=…)` 不接收 `check_urls`，dispatch 亦不传 ⇒ `--mode names --check-urls` 不探测任何 URL（该 flag 仅对 `--mode definitions` 生效）。
+  2. 证据实质缺失 —— `w3.ids` 内 **747/854** concept 的 zh 释义仍为占位模板（`聚变/核工程术语，对应英文“X”`）；854 条 evidence 行 **`quote` 全为空串**，其中 b16–b43 的 554 条来源全为裸 `IAEA-Safety-Glossary-2018`（非 URL）。计划允许的「D2-5=A：`preferred_en` + 权威仓外 URL（须 200）」**证据部分未落地**（命名部分已落地）。
+- **既有缺陷（W3a 未引入，已核）**：`registry_batch_verify.py --self-test` **19/24（exit 1）** —— `git diff --stat` 证明 W3a 未改 `scripts/`，在基线 `dda25c9^` 上同样失败。
+- **覆盖率口径**：`coverage_pct 70.90 → 72.17`（covered 2181→2220），但报告 `W3a` 桶仍为 **0** —— W3a 名字**未**写入 `allowlist`（本阶段不写 allowlist），属桶计数产物，非「未处理」。
+- **未签收**：W3a 命名可作为**可用基线**（130 行抽检 0 FAIL、冲突 0、列边界 100% 干净），但**不**判 `PASS`；T-4973 状态保持 `doing`，**W4 不启动**，处置待用户裁决（选项见 `w3a-acceptance.md` §5）。
+
 ## T1.B18 / T1.B19 返工（IMPR-2，2026-10-27，基线 `08f8901`）
 
 > 本节由 Plan Architect `mode=improve`（父代理委派，PM **#T-4973**）写入。**本轮只改主计划文件**：未改任何数据文件、未 `commit`、未 `push`。本节结论**优先于**文末 `## Execution Log` 中 T1.B18 / T1.B19 的既有「✅ DONE」条目。
