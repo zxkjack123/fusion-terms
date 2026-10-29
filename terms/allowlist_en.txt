@@ -2504,3 +2504,22 @@ model-calibration
 model-validation
 model-verification
 multilateral-approval
+# --- T-4973 W3a allowlist batch 26 ---
+multiple-barriers
+multiple-safety-functions
+multiplicative-risk-projection-model
+natural-analogue
+natural-background
+natural-source
+natural-uranium
+naturally-occurring-radioactive-material
+naturally-occurring-radionuclides
+near-field
+near-miss
+near-surface-disposal-facility
+non-fixed-contamination
+non-physical-ageing
+non-radiological-consequences
+norm-residue
+norm-waste
+normal-operation
