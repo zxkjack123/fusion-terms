@@ -1882,26 +1882,26 @@ concept-of-operations	concept	运行构想	concept of operations		active		IAEA-s
 conceptual-model	concept	概念模型	conceptual model		active		IAEA-safety-glossary
 condition-based-maintenance	concept	状态检修	condition based maintenance		active		IAEA-safety-glossary
 condition-indicator	concept	状态指标	condition indicator		active		IAEA-safety-glossary
-condition-monitoring	concept		condition monitoring		active		IAEA-safety-glossary
-conditional-probability-value	concept		conditional probability value (CPV)		active		IAEA-safety-glossary
-conditional-risk	concept		conditional risk		active		IAEA-safety-glossary
-conditioning	concept		conditioning		active		IAEA-safety-glossary
-consequence-assessment	concept		consequence assessment		active		IAEA-safety-glossary
-consignee	concept		consignee		active		IAEA-safety-glossary
-consignment	concept		consignment		active		IAEA-safety-glossary
-consignor	concept		consignor		active		IAEA-safety-glossary
-constraint	concept		constraint		active		IAEA-safety-glossary
-construction	concept		construction		active		IAEA-safety-glossary
-consumer-product	concept		consumer product		active		IAEA-safety-glossary
-container-waste	concept		container, waste		active		IAEA-safety-glossary
-containment-system	concept		containment system		active		IAEA-safety-glossary
-contamination	concept		contamination		active		IAEA-safety-glossary
-contamination-zone	concept		contamination zone		active		IAEA-safety-glossary
-control	concept		control		active		IAEA-safety-glossary
-controlled-state	concept		controlled state		active		IAEA-safety-glossary
-conveyance	concept		conveyance		active		IAEA-safety-glossary
-core-components	concept		core components		active		IAEA-safety-glossary
-corrective-maintenance	concept		corrective maintenance		active		IAEA-safety-glossary
+condition-monitoring	concept	状态监测	condition monitoring		active		IAEA-safety-glossary
+conditional-probability-value	concept	条件概率值	conditional probability value (CPV)		active		IAEA-safety-glossary
+conditional-risk	concept	条件风险	conditional risk		active		IAEA-safety-glossary
+conditioning	concept	废物整备	conditioning		active		IAEA-safety-glossary
+consequence-assessment	concept	后果评价	consequence assessment		active		IAEA-safety-glossary
+consignee	concept	收货方	consignee		active		IAEA-safety-glossary
+consignment	concept	托运件	consignment		active		IAEA-safety-glossary
+consignor	concept	发货方	consignor		active		IAEA-safety-glossary
+constraint	concept	约束条件	constraint		active		IAEA-safety-glossary
+construction	concept	建造	construction		active		IAEA-safety-glossary
+consumer-product	concept	消费品	consumer product		active		IAEA-safety-glossary
+container-waste	concept	废物容器	container, waste		active		IAEA-safety-glossary
+containment-system	concept	安全壳系统	containment system		active		IAEA-safety-glossary
+contamination	concept	污染	contamination		active		IAEA-safety-glossary
+contamination-zone	concept	污染区	contamination zone		active		IAEA-safety-glossary
+control	concept	控制	control		active		IAEA-safety-glossary
+controlled-state	concept	受控状态	controlled state		active		IAEA-safety-glossary
+conveyance	concept	运载工具	conveyance		active		IAEA-safety-glossary
+core-components	concept	核心部件	core components		active		IAEA-safety-glossary
+corrective-maintenance	concept	纠正性维修	corrective maintenance		active		IAEA-safety-glossary
 cost-benefit-analysis	concept		cost–benefit analysis		active		IAEA-safety-glossary
 countermeasure	concept		countermeasure		active		IAEA-safety-glossary
 critical	concept		critical (adjective)		active		IAEA-safety-glossary
