@@ -2143,26 +2143,26 @@ justification	concept	正当性	justification		active		IAEA-safety-glossary
 kerma-k	concept	比释动能K	kerma, K		active		IAEA-safety-glossary
 knowledge-management	concept	知识管理	knowledge management		active		IAEA-safety-glossary
 large-freight-container	concept	大型货运容器	large freight container		active		IAEA-safety-glossary
-large-release-of-radioactive-material	concept		large release of radioactive material		active		IAEA-safety-glossary
-late-effect	concept		late effect		active		IAEA-safety-glossary
-latent-weakness	concept		latent weakness		active		IAEA-safety-glossary
-lava	concept		lava		active		IAEA-safety-glossary
-level	concept		level		active		IAEA-safety-glossary
-licence	concept		licence		active		IAEA-safety-glossary
-licensee	concept		licensee		active		IAEA-safety-glossary
-licensing-basis	concept		licensing basis		active		IAEA-safety-glossary
-licensing-process	concept		licensing process		active		IAEA-safety-glossary
-life-lifetime	concept		life, lifetime		active		IAEA-safety-glossary
-life-cycle-management	concept		life cycle management		active		IAEA-safety-glossary
-life-management	concept		life management		active		IAEA-safety-glossary
-lifetime	concept		lifetime		active		IAEA-safety-glossary
-lifetime-dose	concept		lifetime dose		active		IAEA-safety-glossary
-lifetime-management	concept		lifetime management		active		IAEA-safety-glossary
-lifetime-risk	concept		lifetime risk		active		IAEA-safety-glossary
-limit	concept		limit		active		IAEA-safety-glossary
-linear-no-threshold-hypothesis	concept		linear–no threshold (LNT) hypothesis		active		IAEA-safety-glossary
-logic	concept		logic		active		IAEA-safety-glossary
-long-lived-waste	concept		long lived waste		active		IAEA-safety-glossary
+large-release-of-radioactive-material	concept	大量放射性物质释放	large release of radioactive material		active		IAEA-safety-glossary
+late-effect	concept	晚期效应	late effect		active		IAEA-safety-glossary
+latent-weakness	concept	潜在弱点	latent weakness		active		IAEA-safety-glossary
+lava	concept	熔岩	lava		active		IAEA-safety-glossary
+level	concept	水平	level		active		IAEA-safety-glossary
+licence	concept	许可证件	licence		active		IAEA-safety-glossary
+licensee	concept	许可证持有者	licensee		active		IAEA-safety-glossary
+licensing-basis	concept	许可基准	licensing basis		active		IAEA-safety-glossary
+licensing-process	concept	许可证办理过程	licensing process		active		IAEA-safety-glossary
+life-lifetime	concept	寿命	life, lifetime		active		IAEA-safety-glossary
+life-cycle-management	concept	全寿期管理	life cycle management		active		IAEA-safety-glossary
+life-management	concept	寿命管理	life management		active		IAEA-safety-glossary
+lifetime	concept	寿期	lifetime		active		IAEA-safety-glossary
+lifetime-dose	concept	终生剂量	lifetime dose		active		IAEA-safety-glossary
+lifetime-management	concept	寿期管理	lifetime management		active		IAEA-safety-glossary
+lifetime-risk	concept	终生风险	lifetime risk		active		IAEA-safety-glossary
+limit	concept	限值	limit		active		IAEA-safety-glossary
+linear-no-threshold-hypothesis	concept	线性无阈假设	linear–no threshold (LNT) hypothesis		active		IAEA-safety-glossary
+logic	concept	逻辑	logic		active		IAEA-safety-glossary
+long-lived-waste	concept	长寿命废物	long lived waste		active		IAEA-safety-glossary
 low-dispersible-radioactive-material	concept		low dispersible radioactive material		active		IAEA-safety-glossary
 low-enriched-uranium	concept		low enriched uranium (LEU)		active		IAEA-safety-glossary
 low-linear-energy-transfer-radiation	concept		low linear energy transfer (LET) radiation		active		IAEA-safety-glossary
