@@ -2523,3 +2523,22 @@ non-radiological-consequences
 norm-residue
 norm-waste
 normal-operation
+# --- T-4973 W3a allowlist batch 27 ---
+notification-point
+notifying-state
+nuclear-accident
+nuclear-emergency
+nuclear-facility
+nuclear-fuel
+nuclear-fuel-cycle
+nuclear-fuel-cycle-facility
+nuclear-installation
+nuclear-material
+nuclear-or-radiological-emergency
+nuclear-security
+nuclear-security-event
+observed-cause
+occupancy-factor
+off-site
+on-site
+open-nuclear-fuel-cycle
