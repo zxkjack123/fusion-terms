@@ -2363,26 +2363,26 @@ radon	concept	氡	radon		active		IAEA-safety-glossary
 radon-progeny	concept	氡子体	radon progeny		active		IAEA-safety-glossary
 reactivity	concept	反应性	reactivity, ρ		active		IAEA-safety-glossary
 recording-level	concept	记录水平	recording level		active		IAEA-safety-glossary
-redundancy	concept		redundancy		active		IAEA-safety-glossary
-reference-air-kerma-rate	concept		reference air kerma rate		active		IAEA-safety-glossary
-reference-individual	concept		reference individual		active		IAEA-safety-glossary
-reference-level	concept		reference level		active		IAEA-safety-glossary
-reference-scenario	concept		reference scenario		active		IAEA-safety-glossary
-referring-medical-practitioner	concept		referring medical practitioner		active		IAEA-safety-glossary
-registrant	concept		registrant		active		IAEA-safety-glossary
-registration	concept		registration		active		IAEA-safety-glossary
-regulatory-body	concept		regulatory body		active		IAEA-safety-glossary
-regulatory-control	concept		regulatory control		active		IAEA-safety-glossary
-regulatory-inspection	concept		regulatory inspection		active		IAEA-safety-glossary
-relative-biological-effectiveness	concept		relative biological effectiveness (RBE)		active		IAEA-safety-glossary
-relative-biological-effectiveness-weighted-absorbed-dose-adt	concept		relative biological effectiveness (RBE) weighted absorbed dose, ADT		active		IAEA-safety-glossary
-relative-risk	concept		relative risk		active		IAEA-safety-glossary
-release	concept		release		active		IAEA-safety-glossary
-reliability	concept		reliability		active		IAEA-safety-glossary
-reliability-centred-maintenance	concept		reliability centred maintenance (RCM)		active		IAEA-safety-glossary
-relocation	concept		relocation		active		IAEA-safety-glossary
-remedial-action	concept		remedial action		active		IAEA-safety-glossary
-remediation	concept		remediation		active		IAEA-safety-glossary
+redundancy	concept	冗余	redundancy		active		IAEA-safety-glossary
+reference-air-kerma-rate	concept	参考空气比释动能率	reference air kerma rate		active		IAEA-safety-glossary
+reference-individual	concept	参考个体	reference individual		active		IAEA-safety-glossary
+reference-level	concept	参考水平	reference level		active		IAEA-safety-glossary
+reference-scenario	concept	参考情景	reference scenario		active		IAEA-safety-glossary
+referring-medical-practitioner	concept	转诊医师	referring medical practitioner		active		IAEA-safety-glossary
+registrant	concept	登记证持有者	registrant		active		IAEA-safety-glossary
+registration	concept	登记	registration		active		IAEA-safety-glossary
+regulatory-body	concept	监管机构	regulatory body		active		IAEA-safety-glossary
+regulatory-control	concept	监管控制	regulatory control		active		IAEA-safety-glossary
+regulatory-inspection	concept	监管检查	regulatory inspection		active		IAEA-safety-glossary
+relative-biological-effectiveness	concept	相对生物效应	relative biological effectiveness (RBE)		active		IAEA-safety-glossary
+relative-biological-effectiveness-weighted-absorbed-dose-adt	concept	RBE加权吸收剂量	relative biological effectiveness (RBE) weighted absorbed dose, ADT		active		IAEA-safety-glossary
+relative-risk	concept	相对风险	relative risk		active		IAEA-safety-glossary
+release	concept	释放	release		active		IAEA-safety-glossary
+reliability	concept	可靠性	reliability		active		IAEA-safety-glossary
+reliability-centred-maintenance	concept	以可靠性为中心的维修	reliability centred maintenance (RCM)		active		IAEA-safety-glossary
+relocation	concept	搬迁	relocation		active		IAEA-safety-glossary
+remedial-action	concept	补救行动	remedial action		active		IAEA-safety-glossary
+remediation	concept	环境整治	remediation		active		IAEA-safety-glossary
 remediation-plan	concept		remediation plan		active		IAEA-safety-glossary
 remedy	concept		remedy		active		IAEA-safety-glossary
 removable-contamination	concept		removable contamination		active		IAEA-safety-glossary
