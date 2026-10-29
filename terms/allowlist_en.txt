@@ -2632,3 +2632,21 @@ radiation-weighting-factor-wr
 radioactive-contents
 radioactive-discharges
 radioactive-equilibrium
+# --- T-4973 W3a allowlist batch 33 ---
+radioactive-half-life
+radioactive-material
+radioactive-source
+radioactive-sources-safety-of
+radioactive-substance
+radioactive-waste-management
+radioactive-waste-management-facility
+radiological-assessor
+radiological-emergency
+radiological-medical-practitioner
+radiological-procedure
+radiological-protection
+radionuclides-of-artificial-origin
+radionuclides-of-natural-origin
+radon-progeny
+reactivity
+recording-level
