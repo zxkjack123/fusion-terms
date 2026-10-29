@@ -2157,6 +2157,17 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 - **未签收为 PASS**：W3a 命名可作为**可用基线**（130 行抽检 0 FAIL、冲突 0、列边界 100% 干净），但**不**判 `PASS`；T-4973 状态保持 `doing`。
 - **用户裁决（2026-10-29，`question` 选项 A）**：**接受命名基线 + 另立证据任务** —— 854 个 `preferred_zh` 定为 W3a 基线（不改名）；747 行占位 zh 释义 / `quote` 全空 / b16–b43 裸来源 / names-mode `--check-urls` 空转 登记为 **known-issue**，由后续独立任务补强；**W4 终验不因本裁决自动启动**。裁决原文与边界见 `w3a-acceptance.md` §5。
 
+### T3.43A — ✅ DONE（W3a allowlist 落地，**计划外**·用户授权；43 批，2026-10-29）
+
+- **授权**：用户 2026-10-29 经 `question` 选择「**全量落地，逐批提交**」（原始问题：W3a 的 854 个名字尚未进入 allowlist，落地属计划外文件变更）。**计划原文 §Phase 3 的修改内容只列 `concepts.tsv`（必要时 `evidence.tsv`）**，本阶段据此单列为**计划外授权增量**，不改写 W3 原文边界。
+- **做法**：按既有 `w3_b01…w3_b43` 工作集逐批把中文首选名写入 `terms/allowlist_zh.txt`；对 `preferred_en` 含空格的 concept 补 `concept_id` 行到 `terms/allowlist_en.txt`（`--mode allowlist` 的短语规则要求 EN 侧以 id 形式背书）。
+- **实写**：`allowlist_zh.txt` 非注释行 **2986 → 3798**（**+812** 条名，另 +43 条 `# --- T-4973 W3a allowlist batch NN ---` 节注释，共 +855 行）；`allowlist_en.txt` 非注释行 **2021 → 2685**（**+664** 个 id，另 +43 条节注释，共 +707 行）。**43 个独立 commit** `d9f80ed`…`ff408e2`，每批仅 2 文件（`allowlist_zh` / `allowlist_en`）。
+- **逐批门禁（43/43）**：`registry_batch_verify.py --mode allowlist --ids-file <批> --expect <N>` → **exit 0**；`sort allowlist_zh.txt | uniq -d | wc -l` = **0**；`grep -v '^#' allowlist_en.txt | grep -c ' '` = **0**；`pipeline.build_terms --config config.toml` → **exit 0**（逐批记录 `artifacts/domain_terms.txt` 行数）。
+- **偏离（3 个 denylist 阻塞，按既有行为跳过并登记）**：`area`(区域, b06) / `control`(控制, b10) / `diffusion`(扩散, b12) 的 zh 名在 `terms/denylist.txt` 中 ⇒ 写入为静默 no-op，故**不写入**；这 3 批改以排除该 id 的子集 ids 文件验收（`--expect 19`）并 exit 0，**未伪造全量 PASS**。
+- **全量闸门**：`--mode allowlist --ids-file <851 合集> --expect 851` → **exit 0**（`851 = 854 − 3`）；`--mode names --ids-file w3.ids --expect 854 --check-urls` → **exit 0**（命名未退化）；`registry_row_audit --audit --expect-clean-all` → **exit 0**；`validate_registry` → **exit 0**（3076 concepts / 10249 aliases / 3203 evidence / 6152 definitions）；D2-6 残差 **0**；`pytest` → **exit 0（175 tests）**。
+- **覆盖率**：`artifacts/domain_terms.txt` **4902 → 6378**（+1476）；`coverage_pct` **72.17 → 98.57**（covered **2220 → 3032**，uncovered **856 → 44**）；`W3a` 桶 **0**；剩余 44 = **9**（W2 桶：6 个既有残余 + 上述 3 个 denylist 阻塞：`system`/`calculation`/`material`/`simulation`/`mode`/`device`/`area`/`control`/`diffusion`）+ **35**（`proper_excluded`，按 H2 永不入词表）。
+- **未解决**：W3a 证据/释义缺口按用户裁决另立 **PM 5072** 承接（747 行占位 zh 释义 + 854 条空 `quote`，见 `w3a-acceptance.md`）；本阶段不触碰 `definitions.tsv`/`evidence.tsv`。
+
 ## T1.B18 / T1.B19 返工（IMPR-2，2026-10-27，基线 `08f8901`）
 
 > 本节由 Plan Architect `mode=improve`（父代理委派，PM **#T-4973**）写入。**本轮只改主计划文件**：未改任何数据文件、未 `commit`、未 `push`。本节结论**优先于**文末 `## Execution Log` 中 T1.B18 / T1.B19 的既有「✅ DONE」条目。

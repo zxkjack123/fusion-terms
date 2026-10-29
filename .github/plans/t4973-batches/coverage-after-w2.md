@@ -220,3 +220,21 @@ W3b（D2-6=A，169 个拉丁名 concept 补中文首选名）完成后，按计�
 | 门禁 | `sort terms/allowlist_zh.txt \| uniq -d \| wc -l` = 0；EN 空白项 = 0 |
 
 > 说明：本文 §4.5 所列「W3b 后须复跑 T2.38」已由本节关闭；W2 残余 6 项（§3.1）与 7 个空格项（§4.1）的**已知问题状态**不变。
+
+## 9. W3a allowlist 落地（计划外·用户授权，2026-10-29）
+
+W3a 的 854 个中文首选名写完后**未进 allowlist**（W3 原文只写 `concepts.tsv`）⇒ coverage 报告 `W3a: 0`、覆盖率停在 72.17%。用户 2026-10-29 经 `question` 裁决「全量落地，逐批提交」，按 `w3_b01…w3_b43` 逐批写入并提交（`d9f80ed`…`ff408e2`，43 个 commit）。
+
+| 项 | 值 |
+|---|---|
+| `allowlist_zh.txt` 非注释行 | 2986 → **3798**（**+812** 个名 + 43 条节注释） |
+| `allowlist_en.txt` 非注释行 | 2021 → **2685**（**+664** 个 id + 43 条节注释；短语 EN 需 id 背书） |
+| 逐批门禁 | `--mode allowlist` **43/43 exit 0**；`zh uniq -d` = 0；`en 空格` = 0；`build_terms` exit 0 |
+| 全量门禁 | `--mode allowlist` 851/851 **exit 0**；`--mode names` 854/854 **exit 0** |
+| `artifacts/domain_terms.txt` | 4902 → **6378** |
+| `coverage_pct` | 72.17 → **98.57**（covered 2220 → **3032**，uncovered 856 → **44**） |
+| 覆盖桶 | `W3a` **0**；`W2` **9**；`proper_excluded` **35** |
+
+**已知例外（不变）**：`area`/`control`/`diffusion` 的 zh 名在 `terms/denylist.txt` 中，写入为静默 no-op ⇒ 未写入；这 3 批以排除该 id 的子集验收（`--expect 19`）并 exit 0。该 3 项与既有 6 项共同构成 `W2` 桶的 9 个残余。**35 个专名**（company/organization/facility）按 H2 永不入词表。
+
+> 证据/释义缺口（747 行占位 zh 释义、854 条空 `quote`）不在本阶段范围，由 **PM 5072** 承接；W3a 命名与 allowlist 落地不受其阻塞。
