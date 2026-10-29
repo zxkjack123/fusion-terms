@@ -2002,26 +2002,26 @@ energy-fluence	concept	能量注量	energy fluence		active		IAEA-safety-glossary
 enforcement	concept	执法	enforcement		active		IAEA-safety-glossary
 enriched-uranium	concept	富集铀	enriched uranium		active		IAEA-safety-glossary
 entombment	concept	掩埋	entombment		active		IAEA-safety-glossary
-entrance-surface-dose	concept		entrance surface dose		active		IAEA-safety-glossary
-environment	concept		environment		active		IAEA-safety-glossary
-epicentre	concept		epicentre		active		IAEA-safety-glossary
-epistemic-uncertainty	concept		epistemic uncertainty		active		IAEA-safety-glossary
-equilibrium-radioactive	concept		equilibrium, radioactive		active		IAEA-safety-glossary
-equilibrium-equivalent-concentration	concept		equilibrium equivalent concentration (EEC)		active		IAEA-safety-glossary
-equilibrium-factor	concept		equilibrium factor		active		IAEA-safety-glossary
-equipment-qualification	concept		equipment qualification		active		IAEA-safety-glossary
-eruption-volcanic	concept		eruption, volcanic		active		IAEA-safety-glossary
-eruption-cloud	concept		eruption cloud		active		IAEA-safety-glossary
-essential-services	concept		essential services		active		IAEA-safety-glossary
-evacuation	concept		evacuation		active		IAEA-safety-glossary
-event	concept		event		active		IAEA-safety-glossary
-excepted-package	concept		excepted package		active		IAEA-safety-glossary
-exception	concept		exception		active		IAEA-safety-glossary
-excess-risk	concept		excess risk		active		IAEA-safety-glossary
-excluded-exposure	concept		excluded exposure		active		IAEA-safety-glossary
-exclusion	concept		exclusion		active		IAEA-safety-glossary
-exclusive-use	concept		exclusive use		active		IAEA-safety-glossary
-exempt-waste	concept		exempt waste		active		IAEA-safety-glossary
+entrance-surface-dose	concept	入射表面剂量	entrance surface dose		active		IAEA-safety-glossary
+environment	concept	环境	environment		active		IAEA-safety-glossary
+epicentre	concept	震中	epicentre		active		IAEA-safety-glossary
+epistemic-uncertainty	concept	认知不确定性	epistemic uncertainty		active		IAEA-safety-glossary
+equilibrium-radioactive	concept	放射性平衡态	equilibrium, radioactive		active		IAEA-safety-glossary
+equilibrium-equivalent-concentration	concept	平衡当量浓度	equilibrium equivalent concentration (EEC)		active		IAEA-safety-glossary
+equilibrium-factor	concept	平衡因子	equilibrium factor		active		IAEA-safety-glossary
+equipment-qualification	concept	设备鉴定	equipment qualification		active		IAEA-safety-glossary
+eruption-volcanic	concept	火山喷发	eruption, volcanic		active		IAEA-safety-glossary
+eruption-cloud	concept	喷发云	eruption cloud		active		IAEA-safety-glossary
+essential-services	concept	基本服务	essential services		active		IAEA-safety-glossary
+evacuation	concept	撤离	evacuation		active		IAEA-safety-glossary
+event	concept	事件	event		active		IAEA-safety-glossary
+excepted-package	concept	例外货包	excepted package		active		IAEA-safety-glossary
+exception	concept	例外	exception		active		IAEA-safety-glossary
+excess-risk	concept	超额风险	excess risk		active		IAEA-safety-glossary
+excluded-exposure	concept	被排除的照射	excluded exposure		active		IAEA-safety-glossary
+exclusion	concept	排除	exclusion		active		IAEA-safety-glossary
+exclusive-use	concept	专用	exclusive use		active		IAEA-safety-glossary
+exempt-waste	concept	豁免废物	exempt waste		active		IAEA-safety-glossary
 exemption	concept		exemption		active		IAEA-safety-glossary
 exemption-level	concept		exemption level		active		IAEA-safety-glossary
 existing-exposure-situation	concept		existing exposure situation		active		IAEA-safety-glossary
