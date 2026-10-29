@@ -2083,26 +2083,26 @@ gut-transfer-factor	concept	胃肠道转移因子	gut transfer factor		active		I
 habit-survey	concept	习惯调查	habit survey		active		IAEA-safety-glossary
 half-life-t	concept	半衰期T½	half-life, T½		active		IAEA-safety-glossary
 hazard	concept		hazard		active		IAEA-safety-glossary
-hazard-assessment	concept		hazard assessment		active		IAEA-safety-glossary
-health-authority	concept		health authority		active		IAEA-safety-glossary
-health-effects	concept		health effects (of radiation)		active		IAEA-safety-glossary
-health-professional	concept		health professional		active		IAEA-safety-glossary
-health-screening-programme	concept		health screening programme		active		IAEA-safety-glossary
-health-surveillance	concept		health surveillance		active		IAEA-safety-glossary
-helper-in-an-emergency	concept		helper in an emergency		active		IAEA-safety-glossary
-hereditary-effect	concept		hereditary effect		active		IAEA-safety-glossary
-high-energy-radiation-therapy-equipment	concept		high energy radiation therapy equipment		active		IAEA-safety-glossary
-high-enriched-uranium	concept		high enriched uranium (HEU)		active		IAEA-safety-glossary
-high-linear-energy-transfer-radiation	concept		high linear energy transfer (LET) radiation		active		IAEA-safety-glossary
-holocene	concept		Holocene		active		IAEA-safety-glossary
-holocene-volcano	concept		Holocene volcano		active		IAEA-safety-glossary
-human-factors-engineering	concept		human factors engineering		active		IAEA-safety-glossary
-human-intrusion	concept		human intrusion		active		IAEA-safety-glossary
-hydrodynamic-dispersion	concept		hydrodynamic dispersion		active		IAEA-safety-glossary
-hypocentre	concept		hypocentre		active		IAEA-safety-glossary
-iaea-publication	concept		IAEA publication		active		IAEA-safety-glossary
-icru-sphere	concept		ICRU sphere		active		IAEA-safety-glossary
-igneous-rock	concept		igneous rock		active		IAEA-safety-glossary
+hazard-assessment	concept	危害评价	hazard assessment		active		IAEA-safety-glossary
+health-authority	concept	卫生主管部门	health authority		active		IAEA-safety-glossary
+health-effects	concept	健康效应	health effects (of radiation)		active		IAEA-safety-glossary
+health-professional	concept	卫生专业人员	health professional		active		IAEA-safety-glossary
+health-screening-programme	concept	健康筛查计划	health screening programme		active		IAEA-safety-glossary
+health-surveillance	concept	健康监护	health surveillance		active		IAEA-safety-glossary
+helper-in-an-emergency	concept	应急助手	helper in an emergency		active		IAEA-safety-glossary
+hereditary-effect	concept	遗传性效应	hereditary effect		active		IAEA-safety-glossary
+high-energy-radiation-therapy-equipment	concept	高能放射治疗设备	high energy radiation therapy equipment		active		IAEA-safety-glossary
+high-enriched-uranium	concept	高富集铀	high enriched uranium (HEU)		active		IAEA-safety-glossary
+high-linear-energy-transfer-radiation	concept	高传能线密度辐射	high linear energy transfer (LET) radiation		active		IAEA-safety-glossary
+holocene	concept	全新世	Holocene		active		IAEA-safety-glossary
+holocene-volcano	concept	全新世火山	Holocene volcano		active		IAEA-safety-glossary
+human-factors-engineering	concept	人因工程	human factors engineering		active		IAEA-safety-glossary
+human-intrusion	concept	人类侵入	human intrusion		active		IAEA-safety-glossary
+hydrodynamic-dispersion	concept	水动力弥散	hydrodynamic dispersion		active		IAEA-safety-glossary
+hypocentre	concept	震源	hypocentre		active		IAEA-safety-glossary
+iaea-publication	concept	国际原子能机构出版物	IAEA publication		active		IAEA-safety-glossary
+icru-sphere	concept	ICRU球	ICRU sphere		active		IAEA-safety-glossary
+igneous-rock	concept	火成岩	igneous rock		active		IAEA-safety-glossary
 immediate-dismantling	concept		immediate dismantling		active		IAEA-safety-glossary
 immobilization	concept		immobilization		active		IAEA-safety-glossary
 incident	concept		incident		active		IAEA-safety-glossary
