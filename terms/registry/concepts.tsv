@@ -1779,27 +1779,27 @@ absorption	concept	吸收	absorption		active		IAEA-safety-glossary
 absorption-type-lung	concept	肺吸收类型分类	absorption type, lung		active		IAEA-safety-glossary
 accelerogram	concept	加速度时程	accelerogram		active		IAEA-safety-glossary
 acceptable-limit	concept	可接受限值	acceptable limit		active		IAEA-safety-glossary
-acceptance-criteria	concept		acceptance criteria		active		IAEA-safety-glossary
-accident	concept		accident		active		IAEA-safety-glossary
-accident-conditions	concept		accident conditions		active		IAEA-safety-glossary
-accident-management	concept		accident management		active		IAEA-safety-glossary
-accident-precursor	concept		accident precursor		active		IAEA-safety-glossary
-accuracy	concept		accuracy		active		IAEA-safety-glossary
-active-component	concept		active component		active		IAEA-safety-glossary
+acceptance-criteria	concept	验收准则	acceptance criteria		active		IAEA-safety-glossary
+accident	concept	事故	accident		active		IAEA-safety-glossary
+accident-conditions	concept	事故工况	accident conditions		active		IAEA-safety-glossary
+accident-management	concept	事故管理	accident management		active		IAEA-safety-glossary
+accident-precursor	concept	事故先兆	accident precursor		active		IAEA-safety-glossary
+accuracy	concept	准确度	accuracy		active		IAEA-safety-glossary
+active-component	concept	能动部件	active component		active		IAEA-safety-glossary
 activity	concept		activity		active		IAEA-safety-glossary
-activity-concentration	concept		activity concentration		active		IAEA-safety-glossary
-activity-median-aerodynamic-diameter	concept		activity median aerodynamic diameter (AMAD)		active		IAEA-safety-glossary
-activity-median-thermodynamic-diameter	concept		activity median thermodynamic diameter (AMTD)		active		IAEA-safety-glossary
-actuated-equipment	concept		actuated equipment		active		IAEA-safety-glossary
-actuation-device	concept		actuation device		active		IAEA-safety-glossary
-acute-exposure	concept		acute exposure		active		IAEA-safety-glossary
-acute-intake	concept		acute intake		active		IAEA-safety-glossary
-additive-risk-projection-model	concept		additive risk projection model		active		IAEA-safety-glossary
-adsorption	concept		adsorption		active		IAEA-safety-glossary
-advection	concept		advection		active		IAEA-safety-glossary
-aerodynamic-diameter	concept		aerodynamic diameter		active		IAEA-safety-glossary
-aerodynamic-dispersion	concept		aerodynamic dispersion		active		IAEA-safety-glossary
-ageing	concept		ageing		active		IAEA-safety-glossary
+activity-concentration	concept	活度浓度	activity concentration		active		IAEA-safety-glossary
+activity-median-aerodynamic-diameter	concept	活度中位空气动力学直径	activity median aerodynamic diameter (AMAD)		active		IAEA-safety-glossary
+activity-median-thermodynamic-diameter	concept	活度中位热力学直径	activity median thermodynamic diameter (AMTD)		active		IAEA-safety-glossary
+actuated-equipment	concept	执行设备	actuated equipment		active		IAEA-safety-glossary
+actuation-device	concept	驱动装置	actuation device		active		IAEA-safety-glossary
+acute-exposure	concept	急性照射	acute exposure		active		IAEA-safety-glossary
+acute-intake	concept	急性摄入	acute intake		active		IAEA-safety-glossary
+additive-risk-projection-model	concept	加性风险投影模型	additive risk projection model		active		IAEA-safety-glossary
+adsorption	concept	吸附	adsorption		active		IAEA-safety-glossary
+advection	concept	平流	advection		active		IAEA-safety-glossary
+aerodynamic-diameter	concept	空气动力学直径	aerodynamic diameter		active		IAEA-safety-glossary
+aerodynamic-dispersion	concept	气载颗粒扩散	aerodynamic dispersion		active		IAEA-safety-glossary
+ageing	concept	老化	ageing		active		IAEA-safety-glossary
 ageing-degradation	concept		ageing degradation		active		IAEA-safety-glossary
 agricultural-countermeasure	concept		agricultural countermeasure		active		IAEA-safety-glossary
 air-kerma	concept		air kerma		active		IAEA-safety-glossary
