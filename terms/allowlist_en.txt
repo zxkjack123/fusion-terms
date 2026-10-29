@@ -2803,3 +2803,15 @@ ultimate-heat-transport-system
 unattached-fraction
 uncertainty-analysis
 uniform-hazard-response-spectrum
+# --- T-4973 W3a allowlist batch 43 ---
+unilateral-approval
+unirradiated-thorium
+unirradiated-uranium
+unrestricted-linear-energy-transfer-l
+unrestricted-use
+unsealed-source
+uranium-enriched-in-the-isotope-uranium-235-or-uranium-233
+uranium-series
+urgent-protective-action
+urgent-protective-action-planning-zone
+urgent-response-phase
