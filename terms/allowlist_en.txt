@@ -2664,3 +2664,18 @@ relative-biological-effectiveness-weighted-absorbed-dose-adt
 relative-risk
 reliability-centred-maintenance
 remedial-action
+# --- T-4973 W3a allowlist batch 35 ---
+remediation-plan
+removable-contamination
+representative-person
+requirement
+research-reactor
+residual-dose
+response-organization
+response-spectrum
+response-time
+restricted-linear-collision-stopping-power
+restricted-use
+risk-assessment
+risk-coefficient
+risk-constraint
