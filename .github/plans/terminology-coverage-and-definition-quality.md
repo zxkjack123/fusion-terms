@@ -2171,6 +2171,32 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 - **PARTIAL 非阻塞原因**：812 条新增中文词中有 **121 条（3 单字 + 118 双字，14.90%）**属于短词/高频词头，独立验收认为均有英文概念支撑，但 IME 产品取舍仍需人工口径；另有 3 项记录性 warning（names-mode `--check-urls` 空转、逐批 build provenance 不能由 git 单独重放、denylist 口径应文档化）。不回滚，交 PM 5072/后续词库维护阶段。
 - **用户裁决（2026-10-29，`question`）**：**接受全量词库基线** —— 812 条（含 121 条 1–2 字短词）整体保留、**不回滚**；短词误召回风险登记为 known-issue，交后续词库维护/评估。⇒ 本阶段交付状态 **ACCEPTED**（blocking 0；产品口径已裁决）。
 
+### T4.1 — ✅ DONE（全量终验，7/7 门禁 exit 0，2026-10-29）
+
+- 记录文件：`.github/plans/t4973-batches/final-verification.md`（命令 + 实测输出 + 复跑方式）。
+- 实测：`registry_row_audit --audit --expect-clean-all` **0**；`pytest` **0**（175 tests）；`mypy pipeline/` **0**（`16 source files`）；`ruff format --check .` **0**（150 files）；`ruff check .` **0**；`validate_registry` **0**（3076/10249/3203/6152）；`registry_coverage_report.py` → `coverage_pct 98.57`（阈值 ≥78.0）、`allowlist_only 97.79`、`incl_allowlist 98.80`。
+- 覆盖率终值：covered **3032** / uncovered **44**（= 9 W2 残余 + 35 proper_excluded），`terms_file_entries 6378`。
+- 边界：无数据改动（仅新增 1 个记录文件）；工作区除既有未跟踪 `iaea_fusion.html` 外干净。
+
+### T4.2 — ✅ DONE（发布包 + 契约验证，2026-10-29）
+
+- `pipeline.release_pack --tag v2026.10.26 --include-registry-exports --substitutions --vale-substitute --force` → **exit 0**，`contract OK: domain_terms.txt terms=6378 version=v2026.10.26`，产物 `dist/stage/v2026.10.26` + `dist/fusion-terms-artifacts-v2026.10.26.tar.gz`（`dist/` 被 gitignore，未入库）。
+- `pipeline.verify_release_contract --root dist/stage/v2026.10.26` → **exit 0**，`contract OK ... terms=6378`。
+- `pytest tests/test_release_pack.py tests/test_verify_release_contract.py` → **exit 0**（9 passed）。
+
+### T4.3 — ✅ DONE（本机 IME 同步，2026-10-29）
+
+- 备份：`~/.config/fcitx/rime/wordlists/domain_terms.txt` → `/tmp/opencode/domain_terms.txt.bak`（45666 B, mtime 2026-10-25）。
+- `pipeline.sync_to_fcitx --input artifacts/domain_terms.txt --dest ~/.config/fcitx/rime/wordlists/domain_terms.txt` → **exit 0**。
+- 验收：两侧 `wc -l` 均 **6378**；`sha256sum` **逐字相同**（`d5941d9f19eb8683dd92d3e37ea5ea3e173199063a9312a3201c9bd24a92456f`）；`pytest tests/test_sync_to_fcitx.py` **exit 0**（4 passed）。
+- 可逆性：原文件已备份，回滚 = `cp /tmp/opencode/domain_terms.txt.bak <dest>`。
+
+### T4.4 — ⚠️ PARTIAL（文档收尾已做；**计划归档按用户裁决不做**，2026-10-29）
+
+- 已做：`CHANGELOG.md` Unreleased 新增「W3a 中文首选名与 IME 词表覆盖」条目，并把旧陈述「`--self-test` 24/24」按实测更正为 **19/24**（漂移指向 PM 5072）；`.github/plans/_project-snapshot.md` 刷新 `Updated` 与计数（concepts 3076 / definitions 6152 / evidence 3203 / aliases 10249；allowlist 改为 raw `wc -l` 口径 3929 / 2817）；commit `af5228b`。
+- **未做（用户裁决，`question` 选「同步 IME + 文档收尾，不归档」）**：主计划**不**移入 `.github/plans/completed/`。理由：PM **5072**（W3a 证据/释义补强）仍为 `todo`，归档会误示缺口已关闭。归档动作待 5072 收口后执行。
+- 计划内 M3（`w3-name-conflicts.tsv` 冲突项人工裁决）**仍未勾选**：台账中 `physical-sputtering`/`物理溅射` 为 pre-existing 且不在 `w3.ids`，等 5072/人工裁决。
+
 ## T1.B18 / T1.B19 返工（IMPR-2，2026-10-27，基线 `08f8901`）
 
 > 本节由 Plan Architect `mode=improve`（父代理委派，PM **#T-4973**）写入。**本轮只改主计划文件**：未改任何数据文件、未 `commit`、未 `push`。本节结论**优先于**文末 `## Execution Log` 中 T1.B18 / T1.B19 的既有「✅ DONE」条目。
