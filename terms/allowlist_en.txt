@@ -2313,3 +2313,21 @@ emergency-class
 emergency-classification
 emergency-exposure
 emergency-exposure-situation
+# --- T-4973 W3a allowlist batch 15 ---
+emergency-phase
+emergency-plan
+emergency-planning-distance
+emergency-preparedness
+emergency-preparedness-category
+emergency-procedures
+emergency-response
+emergency-response-action
+emergency-response-commander
+emergency-response-facility-or-location
+emergency-response-phase
+emergency-services
+emergency-worker
+end-point
+end-state
+energy-fluence
+enriched-uranium
