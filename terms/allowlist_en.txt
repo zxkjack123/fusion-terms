@@ -2207,3 +2207,14 @@ averted-dose
 bayesian-statistics
 becquerel
 biological-half-life
+# --- T-4973 W3a allowlist batch 08 ---
+biophysical-model
+burnable-absorber
+calibration-of-a-dosimeter
+canister-waste
+capable-fault
+capable-volcanic-field
+capable-volcano
+carers-and-comforters
+cargo-aircraft
+characterization-of-waste
