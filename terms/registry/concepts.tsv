@@ -1800,26 +1800,26 @@ advection	concept	平流	advection		active		IAEA-safety-glossary
 aerodynamic-diameter	concept	空气动力学直径	aerodynamic diameter		active		IAEA-safety-glossary
 aerodynamic-dispersion	concept	气载颗粒扩散	aerodynamic dispersion		active		IAEA-safety-glossary
 ageing	concept	老化	ageing		active		IAEA-safety-glossary
-ageing-degradation	concept		ageing degradation		active		IAEA-safety-glossary
-agricultural-countermeasure	concept		agricultural countermeasure		active		IAEA-safety-glossary
-air-kerma	concept		air kerma		active		IAEA-safety-glossary
-aircraft	concept		aircraft		active		IAEA-safety-glossary
-aleatory-uncertainty	concept		aleatory uncertainty		active		IAEA-safety-glossary
-alert	concept		alert		active		IAEA-safety-glossary
-annual-dose	concept		annual dose		active		IAEA-safety-glossary
-annual-limit-on-exposure	concept		annual limit on exposure (ALE)		active		IAEA-safety-glossary
-annual-limit-on-intake	concept		annual limit on intake (ALI)		active		IAEA-safety-glossary
-annual-risk	concept		annual risk		active		IAEA-safety-glossary
-anticipated-operational-occurrence	concept		anticipated operational occurrence		active		IAEA-safety-glossary
-anticipated-transient-without-scram	concept		anticipated transient without scram (ATWS)		active		IAEA-safety-glossary
-applicant	concept		applicant		active		IAEA-safety-glossary
-approval	concept		approval		active		IAEA-safety-glossary
-area	concept		area		active		IAEA-safety-glossary
-area-monitoring	concept		area monitoring		active		IAEA-safety-glossary
-area-survey	concept		area survey		active		IAEA-safety-glossary
-arrangements	concept		arrangements (for emergency response)		active		IAEA-safety-glossary
-assessment	concept		assessment		active		IAEA-safety-glossary
-assisted-operation	concept		assisted operation		active		IAEA-safety-glossary
+ageing-degradation	concept	老化退化	ageing degradation		active		IAEA-safety-glossary
+agricultural-countermeasure	concept	农业对策	agricultural countermeasure		active		IAEA-safety-glossary
+air-kerma	concept	空气比释动能	air kerma		active		IAEA-safety-glossary
+aircraft	concept	飞机撞击	aircraft		active		IAEA-safety-glossary
+aleatory-uncertainty	concept	偶然不确定性	aleatory uncertainty		active		IAEA-safety-glossary
+alert	concept	预警	alert		active		IAEA-safety-glossary
+annual-dose	concept	年剂量	annual dose		active		IAEA-safety-glossary
+annual-limit-on-exposure	concept	年照射限值	annual limit on exposure (ALE)		active		IAEA-safety-glossary
+annual-limit-on-intake	concept	年摄入量上限	annual limit on intake (ALI)		active		IAEA-safety-glossary
+annual-risk	concept	年风险	annual risk		active		IAEA-safety-glossary
+anticipated-operational-occurrence	concept	预期运行事件	anticipated operational occurrence		active		IAEA-safety-glossary
+anticipated-transient-without-scram	concept	未能停堆预期瞬态	anticipated transient without scram (ATWS)		active		IAEA-safety-glossary
+applicant	concept	申请者	applicant		active		IAEA-safety-glossary
+approval	concept	批准	approval		active		IAEA-safety-glossary
+area	concept	区域	area		active		IAEA-safety-glossary
+area-monitoring	concept	区域监测	area monitoring		active		IAEA-safety-glossary
+area-survey	concept	区域辐射调查	area survey		active		IAEA-safety-glossary
+arrangements	concept	应急响应安排	arrangements (for emergency response)		active		IAEA-safety-glossary
+assessment	concept	评价	assessment		active		IAEA-safety-glossary
+assisted-operation	concept	辅助运行	assisted operation		active		IAEA-safety-glossary
 attenuation	concept		attenuation		active		IAEA-safety-glossary
 attributable-risk	concept		attributable risk		active		IAEA-safety-glossary
 audit	concept		audit		active		IAEA-safety-glossary
