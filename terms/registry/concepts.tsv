@@ -2303,26 +2303,26 @@ potential-alpha-energy	concept	潜在α能量	potential alpha energy		active		IA
 potential-exposure	concept	潜在照射	potential exposure		active		IAEA-safety-glossary
 practical-elimination	concept	实际消除	practical elimination		active		IAEA-safety-glossary
 practice	concept	实践	practice		active		IAEA-safety-glossary
-precautionary-action-zone	concept		precautionary action zone (PAZ)		active		IAEA-safety-glossary
-precautionary-urgent-protective-action	concept		precautionary urgent protective action		active		IAEA-safety-glossary
-predictive-maintenance	concept		predictive maintenance		active		IAEA-safety-glossary
-predisposal-management	concept		predisposal management (of waste)		active		IAEA-safety-glossary
-preparedness-stage	concept		preparedness stage		active		IAEA-safety-glossary
-pretreatment	concept		pretreatment (of waste)		active		IAEA-safety-glossary
-preventive-maintenance	concept		preventive maintenance		active		IAEA-safety-glossary
-primary-limit	concept		primary limit		active		IAEA-safety-glossary
-prime-mover	concept		prime mover		active		IAEA-safety-glossary
-probabilistic-analysis	concept		probabilistic analysis		active		IAEA-safety-glossary
-procedure	concept		procedure		active		IAEA-safety-glossary
-processing	concept		processing (of waste)		active		IAEA-safety-glossary
-projected-dose	concept		projected dose		active		IAEA-safety-glossary
-protection-and-safety	concept		protection and safety		active		IAEA-safety-glossary
-protection-of-the-environment	concept		protection of the environment		active		IAEA-safety-glossary
-protection-quantities	concept		protection quantities		active		IAEA-safety-glossary
-protection-system	concept		protection system		active		IAEA-safety-glossary
-protective-action	concept		protective action		active		IAEA-safety-glossary
-protective-task	concept		protective task		active		IAEA-safety-glossary
-publication-iaea	concept		publication, IAEA		active		IAEA-safety-glossary
+precautionary-action-zone	concept	预防行动区	precautionary action zone (PAZ)		active		IAEA-safety-glossary
+precautionary-urgent-protective-action	concept	预防性紧急防护行动	precautionary urgent protective action		active		IAEA-safety-glossary
+predictive-maintenance	concept	预测性维修	predictive maintenance		active		IAEA-safety-glossary
+predisposal-management	concept	处置前管理	predisposal management (of waste)		active		IAEA-safety-glossary
+preparedness-stage	concept	准备阶段	preparedness stage		active		IAEA-safety-glossary
+pretreatment	concept	预处理	pretreatment (of waste)		active		IAEA-safety-glossary
+preventive-maintenance	concept	预防性维修	preventive maintenance		active		IAEA-safety-glossary
+primary-limit	concept	初级限值	primary limit		active		IAEA-safety-glossary
+prime-mover	concept	原动机	prime mover		active		IAEA-safety-glossary
+probabilistic-analysis	concept	概率分析	probabilistic analysis		active		IAEA-safety-glossary
+procedure	concept	程序	procedure		active		IAEA-safety-glossary
+processing	concept	废物处理	processing (of waste)		active		IAEA-safety-glossary
+projected-dose	concept	预期剂量	projected dose		active		IAEA-safety-glossary
+protection-and-safety	concept	防护与安全	protection and safety		active		IAEA-safety-glossary
+protection-of-the-environment	concept	环境保护	protection of the environment		active		IAEA-safety-glossary
+protection-quantities	concept	防护量	protection quantities		active		IAEA-safety-glossary
+protection-system	concept	保护系统	protection system		active		IAEA-safety-glossary
+protective-action	concept	防护行动	protective action		active		IAEA-safety-glossary
+protective-task	concept	防护任务	protective task		active		IAEA-safety-glossary
+publication-iaea	concept	IAEA出版物	publication, IAEA		active		IAEA-safety-glossary
 qualification	concept		qualification		active		IAEA-safety-glossary
 qualified-equipment	concept		qualified equipment		active		IAEA-safety-glossary
 qualified-expert	concept		qualified expert		active		IAEA-safety-glossary
