@@ -2750,3 +2750,22 @@ source-monitoring
 source-region
 special-arrangement
 special-facility
+# --- T-4973 W3a allowlist batch 40 ---
+special-fissionable-material
+special-form-radioactive-material
+special-monitoring
+special-population-group
+spent-fuel
+spent-fuel-management
+spent-fuel-management-facility
+spent-source
+standards-dosimetry-laboratory
+state-of-destination
+state-of-origin
+state-of-transit
+stochastic-analysis
+stochastic-effect
+strombolian-eruption
+strongly-penetrating-radiation
+structures-systems-and-components
+sub-seabed-disposal
