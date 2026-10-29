@@ -2218,3 +2218,19 @@ capable-volcano
 carers-and-comforters
 cargo-aircraft
 characterization-of-waste
+# --- T-4973 W3a allowlist batch 09 ---
+chronic-intake
+clearance-rate
+closed-nuclear-fuel-cycle
+cloud-shine
+coincidence
+common-mode-failure
+competent-authority
+compliance-assurance
+computational-model
+computer-system-validation
+computer-system-verification
+concept-of-operations
+conceptual-model
+condition-based-maintenance
+condition-indicator
