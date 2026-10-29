@@ -2022,26 +2022,26 @@ excluded-exposure	concept	被排除的照射	excluded exposure		active		IAEA-saf
 exclusion	concept	排除	exclusion		active		IAEA-safety-glossary
 exclusive-use	concept	专用	exclusive use		active		IAEA-safety-glossary
 exempt-waste	concept	豁免废物	exempt waste		active		IAEA-safety-glossary
-exemption	concept		exemption		active		IAEA-safety-glossary
-exemption-level	concept		exemption level		active		IAEA-safety-glossary
-existing-exposure-situation	concept		existing exposure situation		active		IAEA-safety-glossary
-explosive-eruption	concept		explosive eruption		active		IAEA-safety-glossary
-exposure	concept		exposure		active		IAEA-safety-glossary
-exposure-assessment	concept		exposure assessment		active		IAEA-safety-glossary
-exposure-categories	concept		exposure categories		active		IAEA-safety-glossary
-exposure-due-to-radon	concept		exposure due to radon		active		IAEA-safety-glossary
-exposure-pathway	concept		exposure pathway		active		IAEA-safety-glossary
-exposure-situations	concept		exposure situations		active		IAEA-safety-glossary
-extended-planning-distance	concept		extended planning distance (EPD)		active		IAEA-safety-glossary
-external-event	concept		external event		active		IAEA-safety-glossary
-external-exposure	concept		external exposure		active		IAEA-safety-glossary
-external-zone	concept		external zone		active		IAEA-safety-glossary
-facilities-and-activities	concept		facilities and activities		active		IAEA-safety-glossary
-facility	concept		facility		active		IAEA-safety-glossary
-facility-states	concept		facility states (considered in design)		active		IAEA-safety-glossary
-facility-emergency	concept		facility emergency		active		IAEA-safety-glossary
-failure	concept		failure (technical)		active		IAEA-safety-glossary
-failure-mode	concept		failure mode		active		IAEA-safety-glossary
+exemption	concept	豁免	exemption		active		IAEA-safety-glossary
+exemption-level	concept	豁免水平	exemption level		active		IAEA-safety-glossary
+existing-exposure-situation	concept	现存照射情况	existing exposure situation		active		IAEA-safety-glossary
+explosive-eruption	concept	爆炸式喷发	explosive eruption		active		IAEA-safety-glossary
+exposure	concept	照射	exposure		active		IAEA-safety-glossary
+exposure-assessment	concept	照射评价	exposure assessment		active		IAEA-safety-glossary
+exposure-categories	concept	照射类别	exposure categories		active		IAEA-safety-glossary
+exposure-due-to-radon	concept	氡所致照射	exposure due to radon		active		IAEA-safety-glossary
+exposure-pathway	concept	照射途径	exposure pathway		active		IAEA-safety-glossary
+exposure-situations	concept	照射情况	exposure situations		active		IAEA-safety-glossary
+extended-planning-distance	concept	扩展计划距离	extended planning distance (EPD)		active		IAEA-safety-glossary
+external-event	concept	外部事件	external event		active		IAEA-safety-glossary
+external-exposure	concept	外照射	external exposure		active		IAEA-safety-glossary
+external-zone	concept	外围区	external zone		active		IAEA-safety-glossary
+facilities-and-activities	concept	设施与活动	facilities and activities		active		IAEA-safety-glossary
+facility	concept	设施	facility		active		IAEA-safety-glossary
+facility-states	concept	设施状态	facility states (considered in design)		active		IAEA-safety-glossary
+facility-emergency	concept	设施应急	facility emergency		active		IAEA-safety-glossary
+failure	concept	失效	failure (technical)		active		IAEA-safety-glossary
+failure-mode	concept	失效模式	failure mode		active		IAEA-safety-glossary
 far-field	concept		far field		active		IAEA-safety-glossary
 fault-geological	concept		fault, geological		active		IAEA-safety-glossary
 feed	concept		feed		active		IAEA-safety-glossary
