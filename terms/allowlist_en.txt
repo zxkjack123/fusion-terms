@@ -2561,3 +2561,18 @@ optimization
 orphan-source
 other-nuclear-or-radiological-emergency
 other-response-actions
+# --- T-4973 W3a allowlist batch 29 ---
+package-waste
+passenger-aircraft
+passive-component
+peak-ground-acceleration
+peer-review
+performance-assessment
+performance-indicator
+performance-standard
+periodic-maintenance
+periodic-safety-review
+permanent-relocation
+permanent-shutdown
+person-or-organization
+personal-dose-equivalent-hp
