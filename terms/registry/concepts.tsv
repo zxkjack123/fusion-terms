@@ -2263,26 +2263,26 @@ optimization	concept	最优化	optimization (of protection and safety)		active		
 orphan-source	concept	无主源	orphan source		active		IAEA-safety-glossary
 other-nuclear-or-radiological-emergency	concept	其他核或辐射应急	other nuclear or radiological emergency		active		IAEA-safety-glossary
 other-response-actions	concept	其他响应行动	other response actions		active		IAEA-safety-glossary
-overpack	concept		overpack		active		IAEA-safety-glossary
-package	concept		package		active		IAEA-safety-glossary
-package-waste	concept		package, waste		active		IAEA-safety-glossary
-packaging	concept		packaging		active		IAEA-safety-glossary
-palaeoseismicity	concept		palaeoseismicity		active		IAEA-safety-glossary
-passenger-aircraft	concept		passenger aircraft		active		IAEA-safety-glossary
-passive-component	concept		passive component		active		IAEA-safety-glossary
-pathway	concept		pathway		active		IAEA-safety-glossary
-patient	concept		patient		active		IAEA-safety-glossary
-peak-ground-acceleration	concept		peak ground acceleration		active		IAEA-safety-glossary
-peer-review	concept		peer review		active		IAEA-safety-glossary
-performance-assessment	concept		performance assessment		active		IAEA-safety-glossary
-performance-indicator	concept		performance indicator		active		IAEA-safety-glossary
-performance-standard	concept		performance standard		active		IAEA-safety-glossary
-periodic-maintenance	concept		periodic maintenance		active		IAEA-safety-glossary
-periodic-safety-review	concept		periodic safety review		active		IAEA-safety-glossary
-permanent-relocation	concept		permanent relocation		active		IAEA-safety-glossary
-permanent-shutdown	concept		permanent shutdown		active		IAEA-safety-glossary
-person-or-organization	concept		person or organization		active		IAEA-safety-glossary
-personal-dose-equivalent-hp	concept		personal dose equivalent, Hp(d)		active		IAEA-safety-glossary
+overpack	concept	外包装容器	overpack		active		IAEA-safety-glossary
+package	concept	货包	package		active		IAEA-safety-glossary
+package-waste	concept	废物包装件	package, waste		active		IAEA-safety-glossary
+packaging	concept	包装	packaging		active		IAEA-safety-glossary
+palaeoseismicity	concept	古地震活动性	palaeoseismicity		active		IAEA-safety-glossary
+passenger-aircraft	concept	客机	passenger aircraft		active		IAEA-safety-glossary
+passive-component	concept	非能动部件	passive component		active		IAEA-safety-glossary
+pathway	concept	途径	pathway		active		IAEA-safety-glossary
+patient	concept	患者	patient		active		IAEA-safety-glossary
+peak-ground-acceleration	concept	峰值地面加速度	peak ground acceleration		active		IAEA-safety-glossary
+peer-review	concept	同行评审	peer review		active		IAEA-safety-glossary
+performance-assessment	concept	性能评价	performance assessment		active		IAEA-safety-glossary
+performance-indicator	concept	性能指标	performance indicator		active		IAEA-safety-glossary
+performance-standard	concept	性能标准	performance standard		active		IAEA-safety-glossary
+periodic-maintenance	concept	定期维修	periodic maintenance		active		IAEA-safety-glossary
+periodic-safety-review	concept	定期安全审查	periodic safety review		active		IAEA-safety-glossary
+permanent-relocation	concept	永久性搬迁	permanent relocation		active		IAEA-safety-glossary
+permanent-shutdown	concept	永久停堆	permanent shutdown		active		IAEA-safety-glossary
+person-or-organization	concept	个人或组织	person or organization		active		IAEA-safety-glossary
+personal-dose-equivalent-hp	concept	个人剂量当量Hp	personal dose equivalent, Hp(d)		active		IAEA-safety-glossary
 phreatic-eruption	concept		phreatic eruption		active		IAEA-safety-glossary
 phreatomagmatic-eruption	concept		phreatomagmatic eruption		active		IAEA-safety-glossary
 physical-ageing	concept		physical ageing		active		IAEA-safety-glossary
