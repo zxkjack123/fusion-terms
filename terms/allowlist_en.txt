@@ -2364,3 +2364,21 @@ facility-states
 facility-emergency
 failure
 failure-mode
+# --- T-4973 W3a allowlist batch 18 ---
+far-field
+fault-geological
+first-responders
+fissile-material
+fissile-nuclide
+fission-fragment
+fission-product
+fissionable-material
+fissionable-nuclide
+fixed-contamination
+free-field-ground-motion
+freight-container
+frequency-of-exceedance
+fresh-fuel
+fuel-assembly
+fuel-element
+fuel-rod
