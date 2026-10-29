@@ -1,7 +1,7 @@
 # Project Snapshot — fusion-terms
 
 **Generated**: 2026-10-25
-**Updated**: 2026-10-28 (T-4973 W1 complete — `--profile all` evidence gate now passes; snapshot registry counts re-verified against `pipeline.validate_registry`; evidence-bundle adoption context: `docs/notes/2026-10-27-dev-orchestrator-evidence-adoption.md`)
+**Updated**: 2026-10-29 (T-4973 W3a naming + allowlist and T4.1/T4.2/T4.3 re-verified; PM 5072 evidence/释义 follow-up remains open; snapshot counts re-verified against `pipeline.validate_registry`)
 **Release**: `v2026.10.25` (tag → commit 8299146); registry counts below are that release's
 
 ## Architecture
@@ -9,16 +9,16 @@
 ```
 fusion-terms/
 ├── terms/
-│   ├── allowlist_zh.txt        # 2306 lines — Chinese approved terms
-│   ├── allowlist_en.txt        # 1356 lines — English approved terms
+│   ├── allowlist_zh.txt        # 3929 raw lines — Chinese approved terms
+│   ├── allowlist_en.txt        # 2817 raw lines — English approved terms
 │   ├── synonyms.tsv            # 53 lines — alias→preferred mappings
 │   ├── denylist.txt            # 639 lines — noise/boilerplate tokens
 │   ├── stopwords_zh.txt        # Chinese stopwords
 │   ├── stopwords_en.txt        # English stopwords
 │   └── registry/               # Deeper terminology metadata
 │       ├── concepts.tsv        # 3076 concepts
-│       ├── definitions.tsv     # 6132 definitions (bilingual)
-│       ├── evidence.tsv        # 3168 evidence rows
+│       ├── definitions.tsv     # 6152 definitions (bilingual)
+│       ├── evidence.tsv        # 3203 evidence rows
 │       └── aliases.tsv         # 10249 alias mappings
 ├── pipeline/                   # Python package: build, validation, indexing
 ├── tests/                      # pytest test suite
