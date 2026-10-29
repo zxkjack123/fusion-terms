@@ -1692,27 +1692,27 @@ hot-cathode-ion-gauge	device	热阴极电离规	hot cathode ionization gauge		ac
 diamagnetic-flux-signal	diagnostic	反磁通信号	diamagnetic flux signal		active	抗磁环诊断输出的等离子体储能信号	corpus
 
 # ---- Imported from ITER-glossary (2026-04-14) ----
-additional-heating	concept		Additional Heating		active		ITER-glossary
-aditya-u	concept		ADITYA-U		active		ITER-glossary
-alcator-c-mod	concept		Alcator C-Mod		active		ITER-glossary
-alfv-n-waves	concept		Alfvén waves		active		ITER-glossary
-alpha-heating	concept		Alpha heating		active		ITER-glossary
-antenna	concept		Antenna		active		ITER-glossary
-beamlines	concept		Beamlines		active		ITER-glossary
-bioshield	concept		Bioshield		active		ITER-glossary
-breakeven	concept		Breakeven		active		ITER-glossary
-breeding-technologies	concept		Breeding Technologies		active		ITER-glossary
-broader-approach	concept		Broader Approach		active		ITER-glossary
-burn	concept		Burn		active		ITER-glossary
-burning-plasma	concept		Burning Plasma		active		ITER-glossary
-cea	concept		CEA		active		ITER-glossary
-commissioning	concept		Commissioning		active		ITER-glossary
+additional-heating	concept	附加加热	Additional Heating		active		ITER-glossary
+aditya-u	concept	ADITYA-U托卡马克	ADITYA-U		active		ITER-glossary
+alcator-c-mod	concept	AlcatorC-Mod装置	Alcator C-Mod		active		ITER-glossary
+alfv-n-waves	concept	MHD阿尔芬波	Alfvén waves		active		ITER-glossary
+alpha-heating	concept	α粒子加热	Alpha heating		active		ITER-glossary
+antenna	concept	射频天线	Antenna		active		ITER-glossary
+beamlines	concept	中性束束线	Beamlines		active		ITER-glossary
+bioshield	concept	生物屏蔽层	Bioshield		active		ITER-glossary
+breakeven	concept	得失相当	Breakeven		active		ITER-glossary
+breeding-technologies	concept	氚增殖技术	Breeding Technologies		active		ITER-glossary
+broader-approach	concept	更广泛方法协定	Broader Approach		active		ITER-glossary
+burn	concept	燃烧	Burn		active		ITER-glossary
+burning-plasma	concept	燃烧等离子体	Burning Plasma		active		ITER-glossary
+cea	concept	法国原子能委员会	CEA		active		ITER-glossary
+commissioning	concept	装置调试	Commissioning		active		ITER-glossary
 confinement	concept		Confinement		active		ITER-glossary
-confinement-time	concept		Confinement Time		active		ITER-glossary
-cooldown	concept		Cooldown		active		ITER-glossary
-cooling-water-system	concept		Cooling Water System		active		ITER-glossary
-correction-coils	concept		Correction Coils		active		ITER-glossary
-cryogenic	concept		Cryogenic		active		ITER-glossary
+confinement-time	concept	等离子体约束时间	Confinement Time		active		ITER-glossary
+cooldown	concept	降温冷却	Cooldown		active		ITER-glossary
+cooling-water-system	concept	冷却水系统	Cooling Water System		active		ITER-glossary
+correction-coils	concept	校正线圈	Correction Coils		active		ITER-glossary
+cryogenic	concept	低温技术	Cryogenic		active		ITER-glossary
 deuterium-tritium-reactions	concept		Deuterium-Tritium Reactions		active		ITER-glossary
 diagnostics	concept		Diagnostics		active		ITER-glossary
 divertor-channel	concept		Divertor Channel		active		ITER-glossary
