@@ -2382,3 +2382,23 @@ fresh-fuel
 fuel-assembly
 fuel-element
 fuel-rod
+# --- T-4973 W3a allowlist batch 19 ---
+functional-diversity
+functional-indicator
+functional-isolation
+fundamental-safety-function
+gap-release
+general-emergency
+generic-criteria
+genetic-effect
+geological-disposal-facility
+geological-fault
+geological-record
+graded-approach
+gray
+ground-shine
+guidance-level
+guidance-level-for-medical-exposure
+gut-transfer-factor
+habit-survey
+half-life-t
