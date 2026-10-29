@@ -1962,26 +1962,26 @@ dose-equivalent-quantities	concept	剂量当量实用量	dose equivalent quantit
 dose-per-unit-intake	concept	单位摄入剂量	dose per unit intake		active		IAEA-safety-glossary
 dose-quantities	concept	剂量量	dose quantities		active		IAEA-safety-glossary
 dose-rate	concept	剂量率	dose rate		active		IAEA-safety-glossary
-double-contingency-principle	concept		double contingency principle		active		IAEA-safety-glossary
-drawdown	concept		drawdown		active		IAEA-safety-glossary
-driven-equipment	concept		driven equipment		active		IAEA-safety-glossary
-dry-storage	concept		dry storage		active		IAEA-safety-glossary
-early-effect	concept		early effect		active		IAEA-safety-glossary
-early-protective-actions	concept		early protective actions		active		IAEA-safety-glossary
-early-release-of-radioactive-material	concept		early release of radioactive material		active		IAEA-safety-glossary
-early-response-phase	concept		early response phase		active		IAEA-safety-glossary
-earth-s-crust	concept		Earth’s crust		active		IAEA-safety-glossary
-earth-s-mantle	concept		Earth’s mantle		active		IAEA-safety-glossary
-effective-half-life	concept		effective half-life		active		IAEA-safety-glossary
-effusive-eruption	concept		effusive eruption		active		IAEA-safety-glossary
-elimination-practical	concept		elimination, practical		active		IAEA-safety-glossary
-emergency	concept		emergency		active		IAEA-safety-glossary
-emergency-action-level	concept		emergency action level (EAL)		active		IAEA-safety-glossary
-emergency-arrangements	concept		emergency arrangements		active		IAEA-safety-glossary
-emergency-class	concept		emergency class		active		IAEA-safety-glossary
-emergency-classification	concept		emergency classification		active		IAEA-safety-glossary
-emergency-exposure	concept		emergency exposure		active		IAEA-safety-glossary
-emergency-exposure-situation	concept		emergency exposure situation		active		IAEA-safety-glossary
+double-contingency-principle	concept	双重偶然原则	double contingency principle		active		IAEA-safety-glossary
+drawdown	concept	水位下降	drawdown		active		IAEA-safety-glossary
+driven-equipment	concept	被驱动设备	driven equipment		active		IAEA-safety-glossary
+dry-storage	concept	干式贮存	dry storage		active		IAEA-safety-glossary
+early-effect	concept	早期效应	early effect		active		IAEA-safety-glossary
+early-protective-actions	concept	早期防护行动	early protective actions		active		IAEA-safety-glossary
+early-release-of-radioactive-material	concept	放射性物质早期释放	early release of radioactive material		active		IAEA-safety-glossary
+early-response-phase	concept	早期响应阶段	early response phase		active		IAEA-safety-glossary
+earth-s-crust	concept	地球地壳	Earth’s crust		active		IAEA-safety-glossary
+earth-s-mantle	concept	地球地幔	Earth’s mantle		active		IAEA-safety-glossary
+effective-half-life	concept	有效半衰期	effective half-life		active		IAEA-safety-glossary
+effusive-eruption	concept	溢流式喷发	effusive eruption		active		IAEA-safety-glossary
+elimination-practical	concept	实际消除法	elimination, practical		active		IAEA-safety-glossary
+emergency	concept	应急	emergency		active		IAEA-safety-glossary
+emergency-action-level	concept	应急行动水平	emergency action level (EAL)		active		IAEA-safety-glossary
+emergency-arrangements	concept	应急安排	emergency arrangements		active		IAEA-safety-glossary
+emergency-class	concept	应急类别	emergency class		active		IAEA-safety-glossary
+emergency-classification	concept	应急分级	emergency classification		active		IAEA-safety-glossary
+emergency-exposure	concept	应急照射	emergency exposure		active		IAEA-safety-glossary
+emergency-exposure-situation	concept	应急照射情况	emergency exposure situation		active		IAEA-safety-glossary
 emergency-phase	concept		emergency phase		active		IAEA-safety-glossary
 emergency-plan	concept		emergency plan		active		IAEA-safety-glossary
 emergency-planning-distance	concept		emergency planning distance		active		IAEA-safety-glossary
