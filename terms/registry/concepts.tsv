@@ -2203,26 +2203,26 @@ model-validation	concept	模型确认	model validation		active		IAEA-safety-glos
 model-verification	concept	模型验证	model verification		active		IAEA-safety-glossary
 monitoring	concept	监测	monitoring		active		IAEA-safety-glossary
 multilateral-approval	concept	多方批准	multilateral approval		active		IAEA-safety-glossary
-multiple-barriers	concept		multiple barriers		active		IAEA-safety-glossary
-multiple-safety-functions	concept		multiple safety functions		active		IAEA-safety-glossary
-multiplexing	concept		multiplexing		active		IAEA-safety-glossary
-multiplicative-risk-projection-model	concept		multiplicative risk projection model		active		IAEA-safety-glossary
-natural-analogue	concept		natural analogue		active		IAEA-safety-glossary
-natural-background	concept		natural background		active		IAEA-safety-glossary
-natural-source	concept		natural source		active		IAEA-safety-glossary
-natural-uranium	concept		natural uranium		active		IAEA-safety-glossary
-naturally-occurring-radioactive-material	concept		naturally occurring radioactive material (NORM)		active		IAEA-safety-glossary
-naturally-occurring-radionuclides	concept		naturally occurring radionuclides		active		IAEA-safety-glossary
-near-field	concept		near field		active		IAEA-safety-glossary
-near-miss	concept		near miss		active		IAEA-safety-glossary
-near-surface-disposal-facility	concept		near surface disposal facility		active		IAEA-safety-glossary
-non-fixed-contamination	concept		non-fixed contamination		active		IAEA-safety-glossary
-non-physical-ageing	concept		non-physical ageing		active		IAEA-safety-glossary
-non-radiological-consequences	concept		non-radiological consequences		active		IAEA-safety-glossary
-norm	concept		NORM		active		IAEA-safety-glossary
-norm-residue	concept		NORM residue		active		IAEA-safety-glossary
-norm-waste	concept		NORM waste		active		IAEA-safety-glossary
-normal-operation	concept		normal operation		active		IAEA-safety-glossary
+multiple-barriers	concept	多重屏障	multiple barriers		active		IAEA-safety-glossary
+multiple-safety-functions	concept	多重安全功能	multiple safety functions		active		IAEA-safety-glossary
+multiplexing	concept	多路复用	multiplexing		active		IAEA-safety-glossary
+multiplicative-risk-projection-model	concept	乘法风险预测模型	multiplicative risk projection model		active		IAEA-safety-glossary
+natural-analogue	concept	天然类比	natural analogue		active		IAEA-safety-glossary
+natural-background	concept	天然本底	natural background		active		IAEA-safety-glossary
+natural-source	concept	天然源	natural source		active		IAEA-safety-glossary
+natural-uranium	concept	天然铀	natural uranium		active		IAEA-safety-glossary
+naturally-occurring-radioactive-material	concept	天然放射性物质	naturally occurring radioactive material (NORM)		active		IAEA-safety-glossary
+naturally-occurring-radionuclides	concept	天然放射性核素	naturally occurring radionuclides		active		IAEA-safety-glossary
+near-field	concept	近场	near field		active		IAEA-safety-glossary
+near-miss	concept	未遂事件	near miss		active		IAEA-safety-glossary
+near-surface-disposal-facility	concept	近地表处置设施	near surface disposal facility		active		IAEA-safety-glossary
+non-fixed-contamination	concept	非固定污染	non-fixed contamination		active		IAEA-safety-glossary
+non-physical-ageing	concept	非物理老化	non-physical ageing		active		IAEA-safety-glossary
+non-radiological-consequences	concept	非放射性后果	non-radiological consequences		active		IAEA-safety-glossary
+norm	concept	NORM物料	NORM		active		IAEA-safety-glossary
+norm-residue	concept	NORM残留物	NORM residue		active		IAEA-safety-glossary
+norm-waste	concept	NORM废物	NORM waste		active		IAEA-safety-glossary
+normal-operation	concept	正常运行	normal operation		active		IAEA-safety-glossary
 notification	concept		notification		active		IAEA-safety-glossary
 notification-point	concept		notification point		active		IAEA-safety-glossary
 notifying-state	concept		notifying State		active		IAEA-safety-glossary
