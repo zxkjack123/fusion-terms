@@ -1841,27 +1841,27 @@ becquerel	concept	贝可勒尔	becquerel (Bq)		active		IAEA-safety-glossary
 bias	concept	偏差	bias		active		IAEA-safety-glossary
 bioassay	concept	生物测定	bioassay		active		IAEA-safety-glossary
 biological-half-life	concept	生物半衰期	biological half-life		active		IAEA-safety-glossary
-biophysical-model	concept		biophysical model		active		IAEA-safety-glossary
-biosphere	concept		biosphere		active		IAEA-safety-glossary
-buffer	concept		buffer		active		IAEA-safety-glossary
-burnable-absorber	concept		burnable absorber		active		IAEA-safety-glossary
-bypass	concept		bypass		active		IAEA-safety-glossary
-calibration	concept		calibration		active		IAEA-safety-glossary
-calibration-of-a-dosimeter	concept		calibration of a dosimeter		active		IAEA-safety-glossary
-canister-waste	concept		canister, waste		active		IAEA-safety-glossary
-capable-fault	concept		capable fault		active		IAEA-safety-glossary
-capable-volcanic-field	concept		capable volcanic field		active		IAEA-safety-glossary
-capable-volcano	concept		capable volcano		active		IAEA-safety-glossary
-carers-and-comforters	concept		carers and comforters		active		IAEA-safety-glossary
-cargo-aircraft	concept		cargo aircraft		active		IAEA-safety-glossary
+biophysical-model	concept	生物物理模型	biophysical model		active		IAEA-safety-glossary
+biosphere	concept	生物圈	biosphere		active		IAEA-safety-glossary
+buffer	concept	缓冲储存	buffer		active		IAEA-safety-glossary
+burnable-absorber	concept	可燃吸收体	burnable absorber		active		IAEA-safety-glossary
+bypass	concept	旁路	bypass		active		IAEA-safety-glossary
+calibration	concept	校准	calibration		active		IAEA-safety-glossary
+calibration-of-a-dosimeter	concept	剂量计校准	calibration of a dosimeter		active		IAEA-safety-glossary
+canister-waste	concept	废物罐	canister, waste		active		IAEA-safety-glossary
+capable-fault	concept	能动断层	capable fault		active		IAEA-safety-glossary
+capable-volcanic-field	concept	能动火山区	capable volcanic field		active		IAEA-safety-glossary
+capable-volcano	concept	能动火山	capable volcano		active		IAEA-safety-glossary
+carers-and-comforters	concept	照护人员	carers and comforters		active		IAEA-safety-glossary
+cargo-aircraft	concept	货运飞机	cargo aircraft		active		IAEA-safety-glossary
 carrier	concept		carrier		active		IAEA-safety-glossary
-cause	concept		cause		active		IAEA-safety-glossary
-certificate	concept		certificate		active		IAEA-safety-glossary
-certification	concept		certification		active		IAEA-safety-glossary
-channel	concept		channel		active		IAEA-safety-glossary
-characterization	concept		characterization		active		IAEA-safety-glossary
-characterization-of-waste	concept		characterization of waste		active		IAEA-safety-glossary
-chemisorption	concept		chemisorption		active		IAEA-safety-glossary
+cause	concept	原因	cause		active		IAEA-safety-glossary
+certificate	concept	证书	certificate		active		IAEA-safety-glossary
+certification	concept	认证	certification		active		IAEA-safety-glossary
+channel	concept	通道	channel		active		IAEA-safety-glossary
+characterization	concept	表征	characterization		active		IAEA-safety-glossary
+characterization-of-waste	concept	废物表征	characterization of waste		active		IAEA-safety-glossary
+chemisorption	concept	化学吸附	chemisorption		active		IAEA-safety-glossary
 child	concept		child		active		IAEA-safety-glossary
 chronic-intake	concept		chronic intake		active		IAEA-safety-glossary
 cladding	concept		cladding		active		IAEA-safety-glossary
