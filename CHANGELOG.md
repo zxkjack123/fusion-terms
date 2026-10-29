@@ -17,6 +17,22 @@
 
 ### Added
 
+- （待发布）
+
+### Changed
+
+- （待发布）
+
+### Fixed
+
+- （待发布）
+
+## v2026.10.29
+
+2026-10-29 · 术语覆盖率 98.57%（47.11% → 98.57%）、W3a 854 个中文首选名、IME 词表 6378 条
+
+### Added
+
 - **Registry 数据质量工具链**（`#T-4973`）：`scripts/registry_coverage_report.py`（覆盖率口径固化；输出 W1/W2/W3 工作集与总覆盖率）、`scripts/registry_row_audit.py`（结构审计：畸形列 / 错位行 / 6 列行 / evidence 列数 / zh 占位污染 / 套话计数，双门禁剖面 `--expect-clean` 与 `--expect-clean-all`）、`scripts/registry_batch_verify.py`（批次机械门禁；当前 `--self-test` 实测 19/24，漂移由 PM 5072 承接）。
 - **W3a 中文首选名与 IME 词表覆盖**（`#T-4973`）：854/854 个 `preferred_zh` 已写入并通过命名门禁；812 条中文名与 664 个英文短语 concept_id 已按用户授权分 43 批进入 allowlist；`domain_terms.txt` **6378** 条，覆盖率 **98.57%**。121 条 1–2 字短词保留为已裁决 known-issue，后续做误召回评估；747 条占位释义与证据 quote 缺口由 PM 5072 承接。
 - **工作集与依据文件**（`#T-4973`）：`.github/plans/t4973-batches/` —— 112 个批文件 + 5 个集合清单 + README，附映射表 `category-map-shift99.tsv`、`category-map-sixcol80.tsv` 与依据文件 `names-basis-t0_6.tsv`、`defs-basis-t0_7.tsv`。

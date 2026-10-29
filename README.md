@@ -97,14 +97,14 @@ The four tables under `terms/registry/` are themselves a **graph data model**:
 
 Current size (counted from data rows in `terms/registry/`, excluding comment
 and blank lines; as of
-[v2026.08.12](https://github.com/zxkjack123/fusion-terms/tree/v2026.08.12)):
+[v2026.10.29](https://github.com/zxkjack123/fusion-terms/tree/v2026.10.29)):
 
 | Table | Data rows |
 |---|---|
-| `concepts.tsv` | 3064 |
-| `aliases.tsv` | 10232 |
-| `evidence.tsv` | 3156 |
-| `definitions.tsv` | 6128 |
+| `concepts.tsv` | 3076 |
+| `aliases.tsv` | 10249 |
+| `evidence.tsv` | 3203 |
+| `definitions.tsv` | 6152 |
 
 Historical snapshot
 [v2026.04.14.1](https://github.com/zxkjack123/fusion-terms/tree/v2026.04.14.1)
@@ -226,7 +226,7 @@ Pin the tag in your integration/build pipeline, build a self-contained
 release root (or tarball), and generate & verify the manifest.
 
 ```bash
-TAG=v2026.08.12
+TAG=v2026.10.29
 
 git clone https://github.com/zxkjack123/fusion-terms.git
 cd fusion-terms
@@ -256,7 +256,7 @@ If you do not want to run the build pipeline, download the release tarball
 published by this repository and verify it locally.
 
 ```bash
-TAG=v2026.03.29
+TAG=v2026.10.29
 ASSET="fusion-terms-artifacts-${TAG}.tar.gz"
 URL="https://github.com/zxkjack123/fusion-terms/releases/download/${TAG}/${ASSET}"
 
@@ -270,8 +270,9 @@ tar -xzf "$ASSET"
 python3 -m pipeline.verify_release_contract --root .
 ```
 
-Note: release tarballs are currently published through `v2026.03.29`; later
-versions (up to `v2026.08.12`) exist as git tags only. For the latest data,
+Note: release tarballs are published from `v2026.10.29` onwards (each release
+ships `fusion-terms-artifacts-<tag>.tar.gz` + `.sha256`). Earlier versions
+(`v2026.04.14` … `v2026.10.25`) exist as git tags only. For the latest data,
 prefer Method A.
 
 ## Development & Contribution

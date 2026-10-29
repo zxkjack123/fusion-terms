@@ -2,7 +2,7 @@
 
 **Generated**: 2026-10-25
 **Updated**: 2026-10-29 (T-4973 W3a naming + allowlist and T4.1/T4.2/T4.3 re-verified; PM 5072 evidence/释义 follow-up remains open; snapshot counts re-verified against `pipeline.validate_registry`)
-**Release**: `v2026.10.25` (tag → commit 8299146); registry counts below are that release's
+**Release**: `v2026.10.29` (tag → release commit); registry counts below are that release's
 
 ## Architecture
 
@@ -93,4 +93,4 @@ ruff check . && ruff format --check .               # Lint + format check
 ## Tag Convention
 
 - Semantic versioning: `vYYYY.MM.DD[.N]`
-- Latest tags: v2026.10.25, v2026.08.12
+- Latest tags: v2026.10.29, v2026.10.25, v2026.08.12

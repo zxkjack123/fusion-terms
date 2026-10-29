@@ -2197,6 +2197,16 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 - **未做（用户裁决，`question` 选「同步 IME + 文档收尾，不归档」）**：主计划**不**移入 `.github/plans/completed/`。理由：PM **5072**（W3a 证据/释义补强）仍为 `todo`，归档会误示缺口已关闭。归档动作待 5072 收口后执行。
 - 计划内 M3（`w3-name-conflicts.tsv` 冲突项人工裁决）**仍未勾选**：台账中 `physical-sputtering`/`物理溅射` 为 pre-existing 且不在 `w3.ids`，等 5072/人工裁决。
 
+### T4.5 — ✅ DONE（发布 v2026.10.29：版本号 + 文档 + 清理 + 打包 + tag + push，2026-10-29）
+
+- **授权**：用户 2026-10-29 会话指令「full test & version bump & update docs & cleanup & commit & push & release」（三要素齐备：主体=用户；载体=本会话指令；范围=本仓 `master` + `v2026.10.29` tag）。
+- **full test（版本号变更前实测）**：`pytest` **0**（175 tests）；`mypy pipeline/` **0**；`ruff format --check .` **0**（151 files）；`ruff check .` **0**；`validate_registry` **0**（3076/10249/3203/6152）；`registry_row_audit --expect-clean-all` **0**；`build_terms` **0**（6378）；`registry_coverage_report` **0**（`coverage_pct 98.57`、covered 3032 / uncovered 44）。
+- **version bump**：CalVer `v2026.10.29`（上一版 `v2026.10.25`）。`CHANGELOG.md` 把 `Unreleased` 内容移入新版本段并保留新的空 `Unreleased`（Added/Changed/Fixed 占位）。
+- **update docs**：`README.md` / `README.zh-CN.md` 同步——Registry 规模表更新为 3076/10249/3203/6152 且版本链接指向 `v2026.10.29`；方式 A / 方式 B 的示例 `TAG` 统一改为 `v2026.10.29`；release 资产说明改为「自 `v2026.10.29` 起发布 tarball + `.sha256`，更早版本仅 tag」。`_project-snapshot.md` 的 `Release` 行与 `Latest tags` 同步。
+- **cleanup**：实测**无**被跟踪的构建垃圾（`git ls-files | grep -E '(dist|__pycache__|\.mypy_cache|\.pytest_cache)/'` 为空）；`git diff --check` 干净。仓内缓存目录（`__pycache__` / `.mypy_cache` / `.pytest_cache` / `.ruff_cache`）与 `dist/` 旧产物均为 gitignore 覆盖的本地状态，**删除动作被权限策略拒绝**（`Permission denied: shell`）⇒ 标 `[SKIPPED-PERMISSION]`，未以任何方式绕过；不影响仓库内容。
+- **release**：`release_pack --tag v2026.10.29 --include-registry-exports --substitutions --vale-substitute` → 见下游 `dist/stage/v2026.10.29` + `dist/fusion-terms-artifacts-v2026.10.29.tar.gz`；`verify_release_contract` 期望 `terms=6378`；随后打 annotated tag `v2026.10.29` 并推送 `master` + tag（无 force）。
+- **边界**：仅改 `CHANGELOG.md` / `README.md` / `README.zh-CN.md` / `_project-snapshot.md` / 本计划文件；`terms/`、`pipeline/`、`scripts/`、`tests/` 零改动。
+
 ## T1.B18 / T1.B19 返工（IMPR-2，2026-10-27，基线 `08f8901`）
 
 > 本节由 Plan Architect `mode=improve`（父代理委派，PM **#T-4973**）写入。**本轮只改主计划文件**：未改任何数据文件、未 `commit`、未 `push`。本节结论**优先于**文末 `## Execution Log` 中 T1.B18 / T1.B19 的既有「✅ DONE」条目。
