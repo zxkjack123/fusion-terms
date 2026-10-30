@@ -19,6 +19,8 @@ files_sha256:
 
 > 🔵 **状态：Phase 0（W0）✅ DONE（2026-10-26，收尾 commit `b175bab`）；D2-1 ~ D2-8 全部已裁决（选项 A，见文末《待裁决落地记录》）⇒ Phase 1（W1）**进行中**（2026-10-27 22:25 `date` 实测：`w1_a` **4/4 批 ✅**；`w1_b` **34/34 批全部写入**（W1 子任务 **78/78**；总 **94/190 = 49%**〔取整〕；2026-10-28 `date` 实测：`b27`–`b31` 组经独立验收 PASS + W0 证据束 pass 后收口 `b9811cd`；`b32` ✅ `ebbd426`（-EN）+ `eae4c6a`（-EN 保真修订）+ `f691a3d`（-ZH + 日志）；`b33` ✅ `08b6d3b`（-EN）+ `cacf312`（-ZH + 日志）；`b34` ✅ `6d86d43`（-EN）+ `df14232`（-ZH + 日志）〔`w1_b` 34/34 全部写入〕；`c1` ✅ `02b91b7`（-EN + evidence）+ `779f68b`（-ZH + 日志）；W1 全部 78/78 子任务写入）（2026-10-27 本会话续跑实测：`b22` ✅ commits `d025d76`（-EN）+ 本批 log commit（-ZH + 日志）；`b23` ✅ commits `5ac1922`（-EN）+ 本批 log commit（-ZH + 日志）；`b24` ✅ commits `c796edf`（-EN）+ 本批 log commit（-ZH + 日志）；`b25` ✅ commits `fd184c0`（-EN）+ 本批 log commit（-ZH + 日志）；`b26` ✅ commits `3283c93`（-EN）+ 本批 log commit（-ZH + 日志）〔`B22–B26` 组 5/5 批已写入 + **组级语义返工完成**（7 条 + `station-blackout` 追加，commits `097eafe`/`419669e`/`cb291c0`/`084c373`）；**组级 = ACCEPTED**（独立复核 PASS @ `084c373` + W0 证据束 `status=pass`，见文末「D2-4 第六组（`B22–B26`）独立复核 + W0 证据束」条）；`w1_b_b27` 起待授权〕）（2026-10-27 本会话实测：`b20` ✅ commits `aaaa49b`（-EN）+ `267c4d9`（-ZH + 日志）；`b21` ✅ commits `434d3c1`（-EN）+ 本批 log commit（-ZH + 日志））（2026-10-27 19:21 本会话实测〔时点以本节日志「T1.B17」条为凭〕：`b17` ✅ commits `5c28236`（-EN）+ `2fda643`（-EN 保真修订，独立 commit）+ `<b17-ZH 待父代理回填>`（-ZH + 日志）；`b01` ✅ commits `b578047`+`f58f0ff`；`b02` ✅ commits `7024be1`+`e67af8c`；`b03` ✅ commits `45313cc`+`0a8e722`；`b04` ✅ commits `c6b3529`+`5e91052`；`b05` ✅ commits `988eab9`+`d391298`；`b06` ✅ commits `4cfb390`+`83387f2`；`b07` ✅ commits `987d132`+`242f525`；`b08` ✅ commits `29c0e70`+`4045fc1`；`b09` ✅ commits `d6e135d`+`76364c0`〔原记 `本节`，2026-10-27 补记实录哈希〕；`b10` ✅ commits `79b48ac`+`397869b`；`b11` ✅ commits `2f4e184`+`6c88f94`；`b12` ✅ commits `89bbde9`+`c2bc22a`；`b13` ✅ commits `e1a13c3`+`be37b76`；`b14` ✅ commits `fd25fd2`+`4cffa2e`；`b15` ✅ commits `53d9949`+`b8c6ab2`；`b16` ✅ commits `88004e8`+`2058705`；**`B12–B16` 组满 5 批，D2-4 独立验收 = PASS**（全 100 id / 200 行逐行复核，blocking 0；W0 证据束 `--compare` exit 0 / status=pass，见文末「D2-4 第四组」条）；**`B07–B11` 组满 5 批，D2-4 独立验收 = PASS**（全 100 id / 200 行逐行复核，blocking 0；W0 证据束 `--compare` exit 0 / status=pass，见文末「D2-4 第三组」条））；`b18` ⚠️ **WRITTEN / NOT ACCEPTED（来源+语义验收 FAIL，待返工）** commits `8a42dca`（-EN）+ `2393c47`（-ZH + 日志）〔原 ⛔ BLOCKED；2026-10-27 **用户裁决 C（IMPR-2 修正解读）**：C = **先穷尽本地来源、再补权威外部依据**，**且不授权降低权威要求、不改工作集验收**；**2026-10-27 本轮用户经 `question` 选择「接受出版社词典（推荐）」⇒ 通用词 OUP/CUP **匹配义项 + 原句定位**可接受、核工程词优先专业来源（见返工节 §2）**；父代理改以 Wikipedia/Wiktionary 级 draft（`/tmp/opencode/t4973-glue-sources/glue-sources.tsv`）定稿 9 个 glue id ⇒ **来源权威性与义项均不达验收，判 FAIL**。**此前台账记的 `✅ DONE` 仅表示「已写入」，不等于 accepted**；见 §「T1.B18 / T1.B19 返工（IMPR-2）」〕；`b19` ⚠️ **WRITTEN / NOT ACCEPTED（同因 FAIL，待返工）** commits `c213a94`（-EN）+ `08f8901`（-ZH + 日志）〔原同因受阻（7 个 glue id：`decay`/`cooling`/`damage`/`sealing`/`reactor`/`steel`/`wall`）；**用户裁决 C 修正解读同 B18**；7 个 glue id 同判 FAIL，13 个非 glue id 中 4 个 notes 短于门禁下限者列为同批复核项；见 §「T1.B18 / T1.B19 返工（IMPR-2）」〕〔**B19R 返工已完成** `d6c677a`/`20c9c2a`/`16024d3`；**独立验收缺陷（reactor 义项错配等）已修** `bf47025`/`8e82ebc`/本批 log commit；**仍不自称 accepted**，待父代理 D2-4 第五组独立验收〕；**D2-4 第五组（`B17–B21`）独立验收 = PASS**（2026-10-27，全 100 id / 200 行逐行复核，blocking 0；W0 证据束 `--compare` exit 0 / `status=pass`〔`20261027T142502Z-219275`，manifest SHA256 `3e55be2a…70f2`〕；URL `curl 16/16 HTTP 200`、urllib 默认 UA `16/16 403` 按用户 `question` 裁决「接受留存原文及 curl 证据」留存原文 + curl 证据、**仍不写 `--check-urls` 通过**；来源 84 id `corpus` + 16 id OUP；**B18/B19 现为 accepted**，历史 FAIL/修复链保留；循环同义定义 4 条质量限制如实登记、**不宣传高质量**；见文末「D2-4 第五组」条）；**下一组 `B22–B26` 未授权**；**`w1_c` / W2 / W3 未开始**；off-plan `--self-test` 重锚已完成 `471ab41`；**`B02–B06` 组 D2-4 独立验收 = PASS**（首轮 FAIL 1 行 `current-lead` en 无据 `superconducting`，已最小返工 1 行并复跑四项门禁全 exit 0；返工后 W0 证据束 `--compare` **exit 0 / status=pass**，见文末 Bookkeeping 纠正第 7、8 条）。** — 本文件由 Plan Architect `mode=refine` 基于 PM 任务 **#T-4973** 的既有批次细化而来，并于 **`mode=improve`（2026-10-26，基线 `66197f2`）** 依据 W0 实测现实改口径：D2-7=A（W1 双侧重写 ⇒ 每批拆为 en/zh 两个 ≤30 min 子任务）、D2-8=A（来源白名单收窄）、D2-6=A（169 个拉丁名 id 补中文首选名）、批清单以 `.github/plans/t4973-batches/README.md` 为唯一权威（**119 批 / 2348 ids**）。
 > ✅ **Status：总体 `DONE`（2026-10-29）** — 本计划 T1–T4 全部 task 完成并发布 **`v2026.10.29`**（tag → `3cbaba7ce4cc00cf694966cfa4ba03d7220d7845`，已 push + GitHub Release 已发布，资产 `fusion-terms-artifacts-v2026.10.29.tar.gz` + `.sha256`）。**以本行为准**；其下 🔵/🟡/🟢 行为历史状态快照，保留供追溯。**终局数字**：`domain_terms.txt` **6378** 条、覆盖率 **98.57%**（covered 3032 / uncovered 44 = 9 W2 denylist + 35 proper_excluded）、registry **3076 / 10249 / 3203 / 6152**；遗留项见 §Manual 与 PM **5072**。
+>
+> ⚠️ **数字 supersede（2026-10-30，`#T-5110` / `v2026.10.30` 补丁）**：专名已按方案 D（范围化）机械排除。**当前状态**：`domain_terms.txt` **6375** 条、覆盖率 **98.54%**（covered **3031** / uncovered **45** = 9 W2 denylist + **36** proper_excluded）。差异**唯一**来源是 `ICRP` 原先靠拉丁串 `ICRP` 计入 covered，现进入 `proper_excluded`；上行的 6378 / 98.57% 保留为 `v2026.10.29` 的**发布记录**，不再是当前状态。详见文末 §`v2026.10.30` 补丁（`#T-5110`）。
 > 🟡 **Status：总体 `IN_PROGRESS` ｜ 第五组（D2-4 `B17–B21`）`PASS / accepted` ｜ 第六组（D2-4 `B22–B26`）**`PASS / accepted`**（7 条语义返工 + `station-blackout` 追加修复；独立复核 `084c373` PASS，blocking 0；W0 证据束 `20261028T031532Z-617987` `status=pass`）｜ **第七组（D2-4 `B27–B31`）`PASS / accepted`**（**用户 2026-10-28 显式授权**执行该组〔“我授权你做B27-B31”〕；返工后**独立复核 `PASS` / `blocking 0` @ `507eec4`**（会话 `ses_e7f3b2d7dffejiKPl6VS8bxV3O`；因其**完整报告未落盘、父代理不可复读全文**，父代理**另起紧凑复核会话 `ses_e7eb87ae6ffeGSfwe1sj3pa6pO`** 取得逐字判定 `VERDICT=PASS; SEVERITY=LOW; BLOCKING=0`）；随后**一次**生成性执行 W0 证据束 `python3 scripts/registry_evidence_bundle.py --compare` ⇒ **exit 0**（同类脚本合计 2 次：另 1 次为只读 `--compare --reuse` 复现，不产生新 bundle）、`status=pass`、`same_structured_result=true`、`incomplete=false`，manifest `sha256=17ef0ac2ca368703cb74ab466b5fbaa54ea3e3a61273825bf0a1571ffb0ad56e`〔本文件本次实测复现〕；**deferred 保留**：`en_boilerplate=59`、`concepts_without_defs=10`）｜ **第八组（D2-4 `B32–B34 + C1`）`PASS / accepted`**（**用户 2026-10-28 显式授权**〔“授权做B32-B34 + C1”〕；独立验收 `acceptance-verifier` 子会话 `ses_e7da4db6bffe6MrfnrAxgH60QV` = `PASS` / `blocking 0` / `warnings 4` @ `779f68b`〔全 69 id / 138 行逐行复核 + 反例锚定 `--expect 68` ⇒ exit 1〕；W0 证据束 `--compare` ⇒ exit 0、`batch_status=pass`、`artifacts/registry-evidence/20261028T120252Z-1652354`、manifest `sha256=a292e07bcf17d9194f4fc8d1db9748eead82c638615e72b50168e38472b70f65`、**双零**（`en_boilerplate 59→0`、`concepts_without_defs 10→0`））｜ **W1 相位级：子任务 78/78 写入、四条完成闸门全 exit 0**（`registry_row_audit --audit --expect-clean-all` exit 0 ／ zh 模板计数 0 ／ `validate_registry` 6152 definitions ／ `pytest` 175 passed）｜ **next = `W2`，`UNAUTHORIZED`**（未授权，不得自动推进）｜ B27/B28/B32 含 **`-EN` 保真修订**（notes 边界收紧，见各批记录）｜ 本轮落盘核验时点以 `date` 实测为准：**2026-10-28T12:05Z ≈ 20:05 CST**（UTC `date -u`：`2026-10-28T12:05:20Z`）
 > 🟢 **W2 状态（2026-10-28 22:14 `date` 实测）：`DONE（含 1 项用户裁决例外）`** —— T2.0 + 37/37 批 + T2.38 全部执行：**729/738 zh 实写、717 en 实写**；`coverage_pct 47.11 → 70.90`（门槛 ≥70.0 ✅）；`artifacts/domain_terms.txt 3462 → 4893`（+1431，逐项对账见 `t4973-batches/coverage-after-w2.md` §2）；`pytest` exit 0（175 passed）；`validate_registry` 3076/6152 不变。**例外（用户 2026-10-28 经 `question` 裁决「跳过并记录」）**：7 个 `preferred_zh` 含空格（`α 通道效应` 等）与 `build_terms` 的空白禁令冲突 ⇒ 跳过 zh、仅写 EN，逐条登记于 `coverage-after-w2.md` §4.1；W2 残余 6 个 id（`system`/`calculation`/`material`/`simulation`/`mode`/`device`）为 denylist + D2-2=A 预期内不可机械补齐项。**遗留**：D2-6 的 9 个拉丁名 id 已按现值写入，**W3b 后须复跑 T2.38** 清理（计划 line 737 预置处置）。
 > W0 执行记录见文末 `## Execution Log` §「W0 数据完整性修复 + 门禁加严 — T0.4 ~ T0.13」；门禁 RED→GREEN 可复跑证据见 `.github/plans/t4973-batches/red-green.md`。
@@ -148,7 +150,7 @@ files_sha256:
 | # | 裁决项 | 裁决内容 | 来源 |
 |---|--------|---------|------|
 | H1 | definitions 质量 | **全部重写** 746 行 en 套话（含其 48 行 zh 损坏的孪生行） | 父代理委派 prompt 明示 |
-| H2 | 专名 | **不入** IME 词表（company/organization/facility = 35 行排除） | 同上 |
+| H2 | 专名 | **机械补齐不得写入** IME 词表（company/organization/facility）；专名统一登记到 `terms/proper_names.txt` 台账、逐条可审计（`EXCLUDE_FROM_IME` 排除 / `ALLOW_IN_IME` 保留并写明理由）。`v2026.10.30`（`#T-5110`）已把该裁决机械化：**83** 条排除（其中 3 条拉丁串实际命中词表）+ **9** 条中文机构名保留 | 同上 + `#T-5110` 用户裁决（方案 D 范围化） |
 | H3 | W3 | **并入本批次**（不拆到后续批次） | 同上 |
 
 > **授权归因**：H1–H3 三要素齐全（主体 = 用户；时点/载体 = 本计划任务的父代理委派 prompt；范围 = 上述三句逐字范围）。除此之外本计划**不含**任何"已授权"声明；`code` 类与其它新发现项一律进 §待裁决，不得自行裁决。
@@ -1008,6 +1010,8 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 - [x] `allowlist_en.txt` 无空白项；`allowlist_zh.txt` 无重复行 —— 实测 zh **3797** 条（`161decf` 基线 2985，+812）无重复；en **2636** 条（基线 1972，+664）无空白项
 - [x] 每个 commit message 带 `#T-4973`；`git diff --stat` 只含声明文件 —— 本次 W3a/W3b/T4 全部提交均带 `#T-4973`，每次 commit 前 `git diff --stat` 仅含该 task 声明文件（含本计划的「仅第 3 列」列级校验）
 - [x] 专名（company/organization/facility）**未**进入 IME 词表 —— **本任务新增 = 0**（`w2.ids` / `w3.ids` 中 0 个专名 id；`w3b.ids` 仅 `icrp` 1 个，其 zh/en 在本任务前已在 allowlist，且专名被排除在 IME 写入之外）。⚠️ **字面项实测不成立（pre-existing，非本任务引入）**：`artifacts/domain_terms.txt` 内存在 12 条专名串（`新奥`/`ENN`/`欧洲聚变能组织`/`EUROfusion`/`聚变能源机构`/`核工业西南物理研究院`/`等离子体物理研究所`/`联邦聚变系统`/`通用原子能`/`马克斯·普朗克等离子体物理研究所`/`国际原子能机构`/`ICRP`），全部可追溯到 `161decf`（本任务 allowlist 落地前）**已存在的人工审定 allowlist 行** ⇒ 与 H2「机械补齐不得写入专名」不冲突，但清单字面项未满足；**是否删除人工 allowlist 行属数据策略问题**，登记 PM 5072 / 待用户裁决，本任务未擅自删除。
+
+**→ 2026-10-30 已闭环（`#T-5110`）**：该 12 条串经实测 provenance 为**批量 alias 同步**（`5f3a808`，2026-03-19，一次同步 `+561 zh / +573 en`；`d0bfe48`，2026-04-04，补 `ICRP`），**不是**逐条人工裁决。用户选择方案 D（范围化）后，3 条拉丁串（`ENN` / `EUROfusion` / `ICRP`）已从词表机械排除，9 条中文机构名保留并在 `terms/proper_names.txt` 的 `ALLOW_IN_IME` 段逐条写明理由；其余 **80** 条登记在 `EXCLUDE_FROM_IME`（多词或未入 allowlist，天然不命中词表）。
 
 ## 审查日志
 
@@ -2724,3 +2728,77 @@ hashes, comparison result, and successful status. It never trusts a mutable
 top-level `batch_status` field. The summary reports one external project entry
 and four internal CLI checks; this is an outer-entry reduction only, not a
 claim about validator/audit calls, model turns, or RPC calls.
+
+## v2026.10.30 补丁（#T-5110）
+
+> **Status：DONE（2026-10-30）** — 方案 D（范围化）已落地：新增专名台账、build 排除机制、发布前机械门禁，并保留 9 条中文机构名；本节 supersede 本计划中关于当前 IME 词表数量与覆盖率的现状性数字。`v2026.10.29` 的历史发布记录保持原样。
+
+### Phase Record
+
+- `phase_goal`：让 registry 中 `company` / `organization` / `facility` 类的 `preferred_zh` / `preferred_en` 全部在专名台账中有且仅有一处可审计归属，并让发布构建无法把 `EXCLUDE_FROM_IME` 条目带入 IME 词表。
+- `phase_exit`：以下命令均实跑并 exit 0；反例测试能以 exit 1 / 异常证明门禁不会真空通过；发布 stage 的 `domain_terms.txt`、台账副本和 release contract 一致。
+- `accepted_baseline`：`v2026.10.29` 已发布，基线为 `domain_terms.txt` 6378 条、覆盖率 98.57%；本补丁只改变专名台账定义的 3 条实际命中拉丁串（`ENN` / `EUROfusion` / `ICRP`）。
+
+### 交付物与行为
+
+- 新增 `terms/proper_names.txt`：**83** 条 `EXCLUDE_FROM_IME` + **9** 条 `ALLOW_IN_IME`。台账覆盖 registry proper-name 类别的 **92** 个字符串；9 条中文机构名保留且逐条写明理由。
+- 新增 `pipeline/proper_names.py` 与 `scripts/check_proper_names_ledger.py`。门禁检查：
+  `LEDGER_MISSING_ENTRY`、`LEDGER_UNKNOWN_ENTRY`、`LEDGER_SECTION_OVERLAP`、
+  `WORDLIST_LEAK`、`ALLOW_NOT_IN_ALLOWLIST`、`ALLOW_NOT_IN_WORDLIST`；
+  exit 0 = 通过，exit 1 = 违规，exit 2 = 输入错误；`--self-test` 自证正反路径。
+- `pipeline.build_terms` 默认读取 `terms/proper_names.txt`；支持 `--exclude-file` 与
+  `--no-exclude-file`。排除发生在 denylist / synonyms 归一之后，且同时检查 synonym target，
+  因此别名不能绕过专名排除。stats 新增 `proper_name_exclude_file`、
+  `counts.proper_name_excluded`、`proper_name_excluded_terms`。
+- `pipeline.release_pack` 将台账复制进发布包，并在构建后执行门禁；门禁失败即阻断发布。
+
+### 实测收口数字
+
+| 项目 | 实测结果 | 命令 / 证据 |
+|---|---:|---|
+| IME 词表 | **6375** 条；`proper_name_excluded=3` | `.venv/bin/python -m pipeline.build_terms --config config.toml` |
+| 实际排除项 | `ENN` / `EUROfusion` / `ICRP` | `artifacts/domain_terms_build_stats.json` |
+| 台账门禁 | `registry=92, exclude=83, allow=9, wordlist=6375`，exit 0 | `.venv/bin/python scripts/check_proper_names_ledger.py` |
+| 门禁自测 | `valid=0, negative=1`，exit 0 | `.venv/bin/python scripts/check_proper_names_ledger.py --self-test` |
+| 覆盖率 | covered **3031** / uncovered **45** / **98.54%** | `.venv/bin/python scripts/registry_coverage_report.py --json /tmp/opencode/cov_after_ledger.json` |
+| 专名排除分类 | proper_excluded **36** = organization 8 / company 25 / facility 3 | 同上 JSON |
+| registry | 3076 / 10249 / 3203 / 6152 | `.venv/bin/python -m pipeline.validate_registry --terms-dir terms` |
+| row audit | `w0_is_clean: true`，exit 0 | `.venv/bin/python scripts/registry_row_audit.py --expect-clean-all` |
+| tests | 全量 pytest 通过；新增测试 **11 passed** | `.venv/bin/python -m pytest -q` |
+| lint / types | ruff format + ruff check 通过；`mypy pipeline/` 成功 | `.venv/bin/ruff format --check .`; `.venv/bin/ruff check .`; `.venv/bin/mypy pipeline/` |
+
+### 口径与 provenance 更正
+
+- 覆盖率由 **98.57%**（covered 3032 / uncovered 44）更正为 **98.54%**（covered 3031 /
+  uncovered 45）。唯一原因是 `ICRP` 原先仅由拉丁串命中，现按台账进入 `proper_excluded`；
+  36 条 proper-excluded 与 9 条 W2 denylist 共同构成 45 条 uncovered。
+- 先前“覆盖率不变”以及“10 个命中 id 全属 proper_excluded”的判断均不成立，已由本节和
+  `CHANGELOG.md` 更正，不得继续作为当前状态引用。
+- 触发本台账的 12 条历史专名串来自批量 alias 同步：`5f3a808`（2026-03-19，一次同步
+  `+561 zh / +573 en`）与 `d0bfe48`（2026-04-04，补 `ICRP`），不是逐条人工裁决。
+
+### 计划外/遗留项边界
+
+- 本补丁不删除、不修改 pre-existing 未跟踪的 `iaea_fusion.html`，也不提交未跟踪的
+  `.opencode/`；仓内缓存目录与旧 `dist/stage/*` 产物因 shell 权限策略拒绝删除，标记为
+  `[SKIPPED-PERMISSION]`，不阻断本补丁。
+- M1（W1 语义抽检）、M4（T0.4/T0.5 10 行目视）与 M3（`physical-sputtering` /
+  `物理溅射` 与 `sputtering` 的 zh 别名冲突）仍按原计划登记，不伪装为本补丁已完成；M2
+  由既有 `w3a-acceptance.md` + `w3a-allowlist-acceptance.md` 支撑。
+- 本节的 6375 / 98.54% 是本补丁后的当前构建口径；旧章节中的 6378 / 98.57% 只作为
+  2026-10-29 的历史执行记录保留。
+
+### 执行记录
+
+- RED→GREEN：暂存 `pipeline/build_terms.py` 与 `pipeline/release_pack.py` 后，
+  `tests/test_proper_names_ledger.py` 实测 **7 failed**；恢复实现后 **11 passed**。
+- 发布门禁集成测试覆盖正常 release 与 ledger 不一致阻断；仓库级测试确认 3 条拉丁串不在
+  构建词表、9 条中文机构名仍在词表。
+- [Stage 0: EXITED — resumed from existing implementation; no `traces/checkpoint.json` was present]
+- [Stage 1: EXITED — acceptance criteria are the Phase Record and table above; all target files listed]
+- [Stage 2: EXITED — implementation diff limited to declared code/test/ledger/doc files]
+- [Stage 3: EXITED — acceptance commands above have recorded exit codes; RED and GREEN evidence retained]
+- [Stage 4: EXITED — no failing acceptance command]
+- [Stage 5: EXITED — ledger leak, stale-entry, missing-entry, synonym-target, and release-gate paths inspected]
+- [Stage 6: PENDING — commit/tag/release actions are the next phase]
+- [Stage 7: PENDING — report status must match this section after commit/release]

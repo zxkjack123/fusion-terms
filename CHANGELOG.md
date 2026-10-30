@@ -27,6 +27,51 @@
 
 - （待发布）
 
+## v2026.10.30
+
+2026-10-30 · 专名台账 + 机械门禁；IME 词表 6378 → **6375**（移除 3 条拉丁专名串），覆盖率口径更正为 **98.54%**
+
+### Added
+
+- **专名台账与机械门禁**（`#T-5110`）：
+  - `terms/proper_names.txt` —— registry 中全部 `company` / `organization` /
+    `facility` 类的 `preferred_zh` / `preferred_en` 逐条登记，分为
+    `EXCLUDE_FROM_IME`（**83** 条）与 `ALLOW_IN_IME`（**9** 条中文机构名，逐条写明保留理由）两段。
+  - `pipeline/proper_names.py` —— 台账解析 + 6 项一致性检查
+    （`LEDGER_MISSING_ENTRY` / `LEDGER_UNKNOWN_ENTRY` / `LEDGER_SECTION_OVERLAP` /
+    `WORDLIST_LEAK` / `ALLOW_NOT_IN_ALLOWLIST` / `ALLOW_NOT_IN_WORDLIST`），
+    `--self-test` 自带正反样例。
+  - `scripts/check_proper_names_ledger.py` —— 门禁 CLI（exit 0 通过 / 1 违规 /
+    2 输入错误），已接入 `pipeline.release_pack` 第 1b 步：台账与词表不一致时发布会直接失败。
+  - `tests/test_proper_names_ledger.py` —— 11 个用例：台账应用、`--no-exclude-file`、
+    同义词目标侧排除、6 类违规、release 阻断、仓库数据级校验。
+
+### Changed
+
+- `pipeline.build_terms`（`#T-5110`）—— 新增 `--exclude-file` / `--no-exclude-file`；
+  默认读取 `<terms-dir>/proper_names.txt` 的 `EXCLUDE_FROM_IME` 段，在 denylist / synonyms
+  归一**之后**做整串精确排除，同义词目标侧同样受限（别名无法把被排除的首选形式带回词表）。
+  build stats 新增 `proper_name_exclude_file`、`counts.proper_name_excluded`、
+  `proper_name_excluded_terms`。
+- `pipeline.release_pack`（`#T-5110`）—— 发布包新增 `terms/proper_names.txt` 源文件；
+  构建后强制执行台账门禁。
+- **IME 词表 6378 → 6375**（`#T-5110`）—— 实际移除 `ENN`、`EUROfusion`、`ICRP`
+  三条拉丁专名串；其余 80 条台账条目为多词英文或未进入 allowlist，天然不命中词表。
+  9 条中文机构名（新奥 / 欧洲聚变能组织 / 聚变能源机构 / 等离子体物理研究所 /
+  联邦聚变系统 / 通用原子能 / 国际原子能机构 / 马克斯·普朗克等离子体物理研究所 /
+  核工业西南物理研究院）按裁决保留。
+
+### Fixed
+
+- **覆盖率口径更正**（`#T-5110`）—— `registry_coverage_report` 由
+  covered 3032 / uncovered 44 / **98.57%** → covered **3031** / uncovered **45** /
+  **98.54%**。唯一原因是 `ICRP` 此前仅靠拉丁串命中而计入 covered，现进入
+  `proper_excluded`（36 条 = organization 8 / company 25 / facility 3；另 9 条为 W2 denylist）。
+  **此前"排除专名后覆盖率不变"的判断有误，以本行为准。**
+- **provenance 更正**（`#T-5110`）—— 触发本台账的 12 条专名串来自批量 alias 同步
+  （`5f3a808` 2026-03-19 一次同步 +561 zh / +573 en，`d0bfe48` 2026-04-04 补 `ICRP`），
+  **不是**逐条人工裁决。
+
 ## v2026.10.29
 
 2026-10-29 · 术语覆盖率 98.57%（47.11% → 98.57%）、W3a 854 个中文首选名、IME 词表 6378 条

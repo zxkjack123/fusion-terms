@@ -119,7 +119,8 @@ Design doc: `docs/dev/06-terminology-registry-upgrade.md`; version history:
 ```
 fusion-terms/
 ├── pipeline/     # generation toolchain (extract, build, export, release, validate)
-├── terms/        # human-reviewed inputs: allowlist/denylist/synonyms + registry
+├── terms/        # human-reviewed inputs: allowlist/denylist/synonyms + proper-name ledger + registry
+│   ├── proper_names.txt # ledger: registry proper names excluded from (or exempted for) the IME wordlist
 │   └── registry/ # the four registry tables (concepts/aliases/evidence/definitions)
 ├── artifacts/    # generated outputs (wordlists, dictionaries, substitution rules, registry exports)
 ├── sources/      # pointers to the external corpus (does not copy the whole corpus)
@@ -164,6 +165,13 @@ automatically added to the final wordlist.
 - Accepted terms → `terms/allowlist_zh.txt` / `terms/allowlist_en.txt`
 - Rejected noise → `terms/denylist.txt`
 - (Optional) alias normalization → `terms/synonyms.tsv`
+- Registry proper names (`company` / `organization` / `facility`) → `terms/proper_names.txt`
+  — an explicit ledger, not the IME wordlist. Every registry proper-name string must
+  appear exactly once under `EXCLUDE_FROM_IME` (latin acronyms, translated company
+  names) or `ALLOW_IN_IME` (retained Chinese institution names, reason required per line).
+  `scripts/check_proper_names_ledger.py` enforces this against the registry **and** the
+  built wordlist, so neither a new registry proper name nor a leaked exclusion can pass
+  unnoticed.
 
 Only the human-reviewed lists under `terms/` take part in the final build —
 **humans are the final authority**.
@@ -171,6 +179,10 @@ Only the human-reviewed lists under `terms/` take part in the final build —
 ### 3) Build the final wordlist
 
 - Outputs `artifacts/domain_terms.txt`.
+- The proper-name ledger is applied by default: `EXCLUDE_FROM_IME` strings are removed
+  after denylist/synonym normalization (an alias cannot smuggle an excluded preferred
+  form back in). Use `--no-exclude-file` only for debugging; `pipeline.release_pack`
+  runs the ledger gate on every release.
 
 Optional: sync to the local Fcitx/Rime wordlist path (default
 `~/.config/fcitx/rime/wordlists/domain_terms.txt`, see `config.toml`).

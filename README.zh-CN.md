@@ -107,7 +107,8 @@ OCR 提取内容质量检查与纠错**。
 ```
 fusion-terms/
 ├── pipeline/     # 生成工具链（提取、构建、导出、发布、校验）
-├── terms/        # 人工审定的输入：allowlist/denylist/synonyms + registry
+├── terms/        # 人工审定的输入：allowlist/denylist/synonyms + 专名台账 + registry
+│   ├── proper_names.txt # 专名台账：registry 专名在 IME 词表中的排除/保留裁决
 │   └── registry/ # 术语登记册四表（concepts/aliases/evidence/definitions）
 ├── artifacts/    # 生成产物（词表、字典、替换规则、Registry 导出）
 ├── sources/      # 外部语料指针（不复制整个语料库）
@@ -149,12 +150,20 @@ fixtures，可修改或通过 CLI 覆盖），输出：
 - 接受的术语 → `terms/allowlist_zh.txt` / `terms/allowlist_en.txt`
 - 拒绝的噪声术语 → `terms/denylist.txt`
 - （可选）别名归一 → `terms/synonyms.tsv`
+- registry 专名（`company` / `organization` / `facility`）→ `terms/proper_names.txt`
+  —— 用显式台账管理，而不是塞进 IME 词表。每个 registry 专名字符串必须在
+  `EXCLUDE_FROM_IME`（拉丁缩写、意译公司名）或 `ALLOW_IN_IME`（保留的中文机构名，
+  逐条写明理由）中**恰好出现一次**。`scripts/check_proper_names_ledger.py` 同时对照
+  registry 与构建出的词表，因此新增专名未登记、或排除项泄漏进词表都会失败。
 
 只有 `terms/` 下人工审定的清单参与最终构建——**人是最终裁决者**。
 
 ### 3) 构建最终词表
 
 - 输出 `artifacts/domain_terms.txt`
+- 默认应用专名台账：`EXCLUDE_FROM_IME` 条目在 denylist/同义词归一**之后**被整串移除
+  （别名无法把被排除的首选形式带回词表）。`--no-exclude-file` 仅供调试；
+  `pipeline.release_pack` 在每次发布时强制执行台账门禁。
 
 可选：同步到本地 Fcitx/Rime 词表路径（默认
 `~/.config/fcitx/rime/wordlists/domain_terms.txt`，见 `config.toml`）。
