@@ -1,0 +1,131 @@
+# terms/proper_names.txt — proper-name ledger for the IME wordlist (#T-5110)
+#
+# Why this file exists
+# --------------------
+# `artifacts/domain_terms.txt` is an IME (Fcitx/Rime) word list: it must only
+# contain strings a Chinese input method can actually compose. Organization /
+# company / facility names are typically Latin acronyms or multi-word English
+# phrases, and registry `preferred_zh` names for companies are often literal
+# translations nobody types. They therefore belong to the *registry* (concept
+# identity, export artifacts) and not to the IME word list.
+#
+# Semantics
+# ---------
+#   EXCLUDE_FROM_IME  exact whole-string matches removed by
+#                     `pipeline.build_terms` (deny/synonyms normalisation runs
+#                     first, so a synonym alias cannot smuggle an excluded
+#                     string back in). Multi-word entries are inert here because
+#                     the word list forbids whitespace, but they are listed so
+#                     the ledger stays a complete mirror of the registry.
+#   ALLOW_IN_IME      curated exemptions: kept in the word list on purpose.
+#                     Each line must state the reason; the gate verifies that the
+#                     string is still backed by terms/allowlist_{zh,en}.txt and
+#                     still present in the built word list.
+#
+# Format: `<term>\t<reason>` (one entry per line; `#` lines are comments).
+# Every registry `preferred_zh` / `preferred_en` of a proper-name concept
+# (category in company/organization/facility) MUST appear exactly once, in one
+# of the two sections. That invariant is enforced by
+# `scripts/check_proper_names_ledger.py` (wired into `pipeline.release_pack`).
+#
+# Provenance note: the 12 pre-existing strings that motivated this file were
+# introduced by bulk alias syncs (`5f3a808`, 2026-03-19; `d0bfe48`, 2026-04-04),
+# not by case-by-case editorial review.
+
+# --- EXCLUDE_FROM_IME ---
+# Registry proper-name strings that must not reach the IME word list.
+ENN	registry:enn:preferred_en (organization)
+EUROfusion	registry:eurofusion:preferred_en (organization)
+Fusion for Energy	registry:f4e:preferred_en (organization)
+Southwestern Institute of Physics	registry:swip:preferred_en (organization)
+Institute of Plasma Physics CAS	registry:asipp:preferred_en (organization)
+Commonwealth Fusion Systems	registry:cfs:preferred_en (organization)
+TAE技术公司	registry:tae-technologies:preferred_zh (organization)
+TAE Technologies	registry:tae-technologies:preferred_en (organization)
+赫利昂能源公司	registry:helion-energy:preferred_zh (organization)
+Helion Energy	registry:helion-energy:preferred_en (organization)
+General Atomics	registry:general-atomics:preferred_en (organization)
+Max Planck Institute for Plasma Physics	registry:ipp-garching:preferred_en (organization)
+International Atomic Energy Agency	registry:iaea:preferred_en (organization)
+HB11能源公司	registry:hb11-energy:preferred_zh (organization)
+HB11 Energy	registry:hb11-energy:preferred_en (organization)
+LPP聚变公司	registry:lpp-fusion:preferred_zh (organization)
+LPP Fusion	registry:lpp-fusion:preferred_en (organization)
+国际放射防护委员会	registry:icrp:preferred_zh (organization)
+ICRP	registry:icrp:preferred_en (organization)
+第一型能源公司	registry:type-one-energy:preferred_zh (company)
+Type One Energy	registry:type-one-energy:preferred_en (company)
+普罗希马聚变公司	registry:proxima-fusion:preferred_zh (company)
+Proxima Fusion	registry:proxima-fusion:preferred_en (company)
+文艺复兴聚变公司	registry:renaissance-fusion:preferred_zh (company)
+Renaissance Fusion	registry:renaissance-fusion:preferred_en (company)
+里塔工程公司	registry:reata-engineering:preferred_zh (company)
+Reata Engineering	registry:reata-engineering:preferred_en (company)
+通用聚变公司	registry:general-fusion:preferred_zh (company)
+General Fusion	registry:general-fusion:preferred_en (company)
+超喷流聚变公司	registry:hyperjet-fusion:preferred_zh (company)
+HyperJet Fusion	registry:hyperjet-fusion:preferred_en (company)
+扎普能源公司	registry:zap-energy:preferred_zh (company)
+Zap Energy	registry:zap-energy:preferred_en (company)
+第一光聚变公司	registry:first-light-fusion:preferred_zh (company)
+First Light Fusion	registry:first-light-fusion:preferred_en (company)
+聚焦能源公司	registry:focused-energy:preferred_zh (company)
+Focused Energy	registry:focused-energy:preferred_en (company)
+Xcimer能源公司	registry:xcimer-energy:preferred_zh (company)
+Xcimer Energy	registry:xcimer-energy:preferred_en (company)
+托卡马克能源公司	registry:tokamak-energy:preferred_zh (company)
+Tokamak Energy	registry:tokamak-energy:preferred_en (company)
+能量奇点	registry:energy-singularity:preferred_zh (company)
+Energy Singularity	registry:energy-singularity:preferred_en (company)
+京都聚变工程	registry:kyoto-fusioneering:preferred_zh (company)
+Kyoto Fusioneering	registry:kyoto-fusioneering:preferred_en (company)
+Marvel聚变公司	registry:marvel-fusion:preferred_zh (company)
+Marvel Fusion	registry:marvel-fusion:preferred_en (company)
+SHINE技术公司	registry:shine-technologies:preferred_zh (company)
+SHINE Technologies	registry:shine-technologies:preferred_en (company)
+NT-Tao公司	registry:nt-tao:preferred_zh (company)
+NT-Tao	registry:nt-tao:preferred_en (company)
+EX-Fusion公司	registry:ex-fusion:preferred_zh (company)
+EX-Fusion	registry:ex-fusion:preferred_en (company)
+蓝激光聚变公司	registry:blue-laser-fusion:preferred_zh (company)
+Blue Laser Fusion	registry:blue-laser-fusion:preferred_en (company)
+Novatron公司	registry:novatron:preferred_zh (company)
+Novatron	registry:novatron:preferred_en (company)
+西娅能源公司	registry:thea-energy:preferred_zh (company)
+Thea Energy	registry:thea-energy:preferred_en (company)
+OpenStar技术公司	registry:openstar-technologies:preferred_zh (company)
+OpenStar Technologies	registry:openstar-technologies:preferred_en (company)
+高斯聚变公司	registry:gauss-fusion:preferred_zh (company)
+Gauss Fusion	registry:gauss-fusion:preferred_en (company)
+螺旋度空间公司	registry:helicity-space:preferred_zh (company)
+Helicity Space	registry:helicity-space:preferred_en (company)
+克洛诺斯聚变能源公司	registry:kronos-fusion-energy:preferred_zh (company)
+Kronos Fusion Energy	registry:kronos-fusion-energy:preferred_en (company)
+普林斯顿仿星器公司	registry:princeton-stellarators:preferred_zh (company)
+Princeton Stellarators	registry:princeton-stellarators:preferred_en (company)
+聚变工业协会	registry:fusion-industry-association:preferred_zh (organization)
+Fusion Industry Association	registry:fusion-industry-association:preferred_en (organization)
+美国能源部高级研究计划局	registry:arpa-e:preferred_zh (organization)
+ARPA-E	registry:arpa-e:preferred_en (organization)
+聚变能源科学	registry:fusion-energy-sciences:preferred_zh (organization)
+Fusion Energy Sciences	registry:fusion-energy-sciences:preferred_en (organization)
+先进聚变中子源装置	registry:a-fns:preferred_zh (facility)
+A-FNS	registry:a-fns:preferred_en (facility)
+中子辐照设施	registry:neutron-irradiation-facility:preferred_zh (facility)
+neutron irradiation facility	registry:neutron-irradiation-facility:preferred_en (facility)
+加速器中子源	registry:accelerator-based-neutron-source:preferred_zh (facility)
+accelerator-based neutron source	registry:accelerator-based-neutron-source:preferred_en (facility)
+ITER国际组织	registry:iter-organization:preferred_zh (organization)
+ITER Organization	registry:iter-organization:preferred_en (organization)
+
+# --- ALLOW_IN_IME ---
+# Curated exemptions (retained in the IME word list).
+新奥	Chinese organization name, high frequency in fusion Chinese text (#T-5110 用户裁决) [enn:preferred_zh]
+欧洲聚变能组织	Chinese organization name, high frequency in fusion Chinese text (#T-5110 用户裁决) [eurofusion:preferred_zh]
+聚变能源机构	Chinese organization name, high frequency in fusion Chinese text (#T-5110 用户裁决) [f4e:preferred_zh]
+核工业西南物理研究院	Chinese organization name, high frequency in fusion Chinese text (#T-5110 用户裁决) [swip:preferred_zh]
+等离子体物理研究所	Chinese organization name, high frequency in fusion Chinese text (#T-5110 用户裁决) [asipp:preferred_zh]
+联邦聚变系统	Chinese organization name, high frequency in fusion Chinese text (#T-5110 用户裁决) [cfs:preferred_zh]
+通用原子能	Chinese organization name, high frequency in fusion Chinese text (#T-5110 用户裁决) [general-atomics:preferred_zh]
+马克斯·普朗克等离子体物理研究所	Chinese organization name, high frequency in fusion Chinese text (#T-5110 用户裁决) [ipp-garching:preferred_zh]
+国际原子能机构	Chinese organization name, high frequency in fusion Chinese text (#T-5110 用户裁决) [iaea:preferred_zh]

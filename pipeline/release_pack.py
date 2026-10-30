@@ -44,6 +44,33 @@ def _run_module(module: str, args: list[str]) -> None:
     )
 
 
+def _run_script(script: str, args: list[str]) -> None:
+    """Run a repo script with the same failure contract as ``_run_module``."""
+
+    path = Path(__file__).resolve().parent.parent / script
+    try:
+        proc = subprocess.run(
+            [sys.executable, str(path), *args],
+            check=False,
+            capture_output=True,
+            text=True,
+            timeout=300,
+        )
+    except subprocess.TimeoutExpired as te:
+        raise SystemExit(
+            f"release_pack failed: script {script} timed out after {te.timeout}s"
+        ) from te
+    if proc.returncode == 0:
+        return
+
+    stdout = proc.stdout.strip()
+    stderr = proc.stderr.strip()
+    msg = "\n".join([s for s in [stderr, stdout] if s])
+    raise SystemExit(
+        f"release_pack failed: script {script} exited {proc.returncode}\n{msg}"
+    )
+
+
 def _iter_files_recursive(root: Path) -> list[Path]:
     files: list[Path] = []
     for p in root.rglob("*"):
@@ -68,6 +95,7 @@ def _copy_terms_sources(*, terms_dir: Path, stage_dir: Path) -> list[str]:
         "allowlist_en.txt",
         "denylist.txt",
         "synonyms.tsv",
+        "proper_names.txt",
     ]:
         src = terms_dir / name
         if not src.exists():
@@ -195,6 +223,23 @@ def build_release_pack(
     rel_files: list[str] = ["domain_terms.txt"]
     if (stage_dir / "domain_terms_build_stats.json").exists():
         rel_files.append("domain_terms_build_stats.json")
+
+    # 1b) Gate: proper-name ledger must agree with the freshly built wordlist.
+    ledger_path = terms_dir / "proper_names.txt"
+    if ledger_path.exists():
+        _run_script(
+            "scripts/check_proper_names_ledger.py",
+            [
+                "--terms-dir",
+                str(terms_dir),
+                "--ledger",
+                str(ledger_path),
+                "--wordlist",
+                str(stage_dir / "domain_terms.txt"),
+            ],
+        )
+    else:
+        print(f"release_pack: proper-name ledger gate skipped (no {ledger_path})")
 
     # 2) Optional: include sources of truth for auditability.
     if include_terms_sources:

@@ -13,6 +13,7 @@ except ModuleNotFoundError:  # pragma: no cover
     import tomli as tomllib  # type: ignore
 
 from pipeline.common import ensure_dir, load_simple_list, load_synonyms_tsv
+from pipeline.proper_names import LEDGER_FILENAME, load_ledger
 
 _REPO_ROOT = Path(__file__).resolve().parent.parent
 
@@ -95,16 +96,25 @@ def normalize_terms(
     deny: set[str],
     synonyms: dict[str, str],
     keep_aliases: bool,
+    exclude: set[str] | None = None,
 ) -> set[str]:
+    """Normalise via synonyms and apply deny/exclude lists (exact whole terms).
+
+    ``exclude`` is the proper-name ledger's EXCLUDE_FROM_IME section. It is
+    applied to the input term and to its synonym target, so an alias cannot
+    smuggle an excluded preferred form back into the word list.
+    """
+
+    excluded = exclude or set()
     out: set[str] = set()
     for t in terms:
-        if t in deny:
+        if t in deny or t in excluded:
             continue
         preferred = synonyms.get(t, t)
-        if preferred in deny:
+        if preferred in deny or preferred in excluded:
             continue
         out.add(preferred)
-        if keep_aliases and preferred != t and t not in deny:
+        if keep_aliases and preferred != t and t not in deny and t not in excluded:
             out.add(t)
     return out
 
@@ -169,6 +179,19 @@ def main() -> None:
             "Default: <out-dir>/<output_stem>_build_stats.json"
         ),
     )
+    parser.add_argument(
+        "--exclude-file",
+        default=None,
+        help=(
+            "Proper-name ledger whose EXCLUDE_FROM_IME section is removed from "
+            f"the wordlist. Default: <terms-dir>/{LEDGER_FILENAME} when present."
+        ),
+    )
+    parser.add_argument(
+        "--no-exclude-file",
+        action="store_true",
+        help="Ignore the proper-name ledger (no EXCLUDE_FROM_IME filtering).",
+    )
 
     args = parser.parse_args()
 
@@ -183,6 +206,21 @@ def main() -> None:
     deny = load_simple_list(terms_dir / "denylist.txt")
     synonyms = load_synonyms_tsv(terms_dir / "synonyms.tsv")
 
+    exclude_path: Path | None = None
+    if not args.no_exclude_file:
+        exclude_path = (
+            Path(args.exclude_file).expanduser()
+            if args.exclude_file
+            else (terms_dir / LEDGER_FILENAME)
+        )
+        if not exclude_path.exists():
+            if args.exclude_file:
+                raise SystemExit(
+                    f"build_terms: --exclude-file not found: {exclude_path}"
+                )
+            exclude_path = None
+    exclude = load_ledger(exclude_path).exclude_terms if exclude_path else set()
+
     merged = set()
     merged |= allow_zh
     merged |= allow_en
@@ -192,16 +230,24 @@ def main() -> None:
         deny=deny,
         synonyms=synonyms,
         keep_aliases=args.keep_aliases,
+        exclude=exclude,
     )
 
     # Stats: how many inputs were normalized by synonyms.
     synonyms_mapped = 0
     for t in merged:
-        if t in deny:
+        if t in deny or t in exclude:
             continue
         preferred = synonyms.get(t, t)
-        if preferred != t and preferred not in deny:
+        if preferred != t and preferred not in deny and preferred not in exclude:
             synonyms_mapped += 1
+
+    excluded_hits = sorted(t for t in merged if t in exclude)
+    if exclude_path:
+        print(
+            f"proper-name ledger: {exclude_path} "
+            f"({len(exclude)} EXCLUDE terms, {len(excluded_hits)} allowed-list hits)"
+        )
 
     validate_no_whitespace_terms(
         final_terms,
@@ -242,17 +288,20 @@ def main() -> None:
         "schema_version": 1,
         "wordlist": str(out_path),
         "stats_path": str(stats_path),
+        "proper_name_exclude_file": str(exclude_path) if exclude_path else None,
         "counts": {
             "total": len(final_terms),
             "zh": len(zh),
             "en": len(en),
             "synonyms_mapped": int(synonyms_mapped),
+            "proper_name_excluded": len(excluded_hits),
             "added": len(added),
             "removed": len(removed),
         },
         # Keep full lists for auditability; consumers can ignore.
         "added": added,
         "removed": removed,
+        "proper_name_excluded_terms": excluded_hits,
     }
 
     _tmp = stats_path.with_suffix(".tmp")
