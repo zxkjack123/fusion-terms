@@ -3743,17 +3743,17 @@ cassette-replacement	en	A remote-handling operation that extracts and replaces d
 cassette-replacement	zh	暗盒更换：经专用维护端口提取并更换偏滤器暗盒的遥控操作。	corpus
 castellation	en	Castellated slots machined into plasma-facing component tiles in order to relieve thermal stress.	corpus
 castellation	zh	切槽结构：为释放热应力而在面向等离子体部件瓦块上机加工的槽。	corpus
-cause	zh	聚变/核工程术语，对应英文“cause”。	internal:dict-improvements
+cause	zh	直接原因（direct cause）：使初始事件的观察原因得以发生的潜在薄弱环节（以及该潜在薄弱环节之所以存在的原因）。针对直接原因制定的纠正行动有时称为修复（repairs）。潜在薄弱环节（latent weakness）：安全层某一要素中未被察觉的劣化。若该要素被要求执行某项功能，此种劣化可能导致其无法按预期发挥作用。观察原因（observed cause）：直接导致初始事件的故障、动作、遗漏或状态。根本原因（root cause）：初始事件的根本原因，纠正该原因即可防止初始事件再次发生（即根本原因是指未能发现并纠正相关的潜在薄弱环节，以及此种未能发现并纠正之所以发生的原因）。针对根本原因制定的纠正行动有时称为补救（remedies）。	translated:IAEA-safety-glossary
 cbet	en	The redistribution of laser energy between beams that cross inside a hohlraum.	corpus
 cbet	zh	交叉光束能量传递：黑腔内相交光束之间的激光能量再分配。	corpus
 cea	zh	法国替代能源与原子能委员会（CEA），是一家多学科研究机构。位于 ITER 附近的 CEA 卡达拉什（Cadarache）是磁约束聚变研究所（IRFM）和 WEST 托卡马克的所在地。	translated:ITER-glossary
-certificate	zh	聚变/核工程术语，对应英文“certificate”。	internal:dict-improvements
-certification	zh	聚变/核工程术语，对应英文“certification”。	internal:dict-improvements
+certificate	zh	由监管机构颁发的法律文件，其中说明认证所需满足的适用条件，并证明在满足这些条件的情况下符合监管要求。某些类型的货包需要证书 [2]。	translated:IAEA-safety-glossary
+certification	zh	认证：证书的颁发。	translated:IAEA-safety-glossary
 cfetr-design	en	Design activities and parameter studies carried out for the CFETR device.	corpus
 cfetr-design	zh	针对 CFETR 装置开展的设计活动与参数研究。	corpus
-channel	zh	聚变/核工程术语，对应英文“channel”。	internal:dict-improvements
-characterization	zh	聚变/核工程术语，对应英文“characterization”。	internal:dict-improvements
-characterization-of-waste	zh	聚变/核工程术语，对应英文“characterization of waste”。	internal:dict-improvements
+channel	zh	系统中相互连接的部件的组合，其产生单一输出。当单一输出信号与其他通道（例如来自监测通道或安全驱动通道的信号）的信号合并时，通道即失去其身份。上述定义仅适用于核安全的某一特定领域。通道一词在其通常含义下（因而通常无需专门定义）也用于多种场合。	translated:IAEA-safety-glossary
+characterization	zh	1. 确定特定场所中现存放射性核素的性质与活度。例如，表征即确定生物分析样品中或受放射性物质污染区域中存在的放射性核素（例如作为规划整治工作的第一步）。对于后一例子，应注意避免与术语场址表征（site characterization）现有且不同的定义相混淆。2. 确定某事物的特性。这是标准词典定义，本无须纳入单个术语表。此处纳入仅是为了将通常用法与（1）中所指的较为受限的用法相区分。废物表征（characterization of waste）：确定放射性废物的物理、力学、化学、放射学和生物学特性，以判明是否需要进行进一步调整、处理或整备，或判明其是否适合进一步操作、加工、贮存或处置。废物表征（依据监管机构制定或批准的要求实施）是废物处置前管理过程中的一个环节，该过程在不同步骤提供与过程控制有关的信息，并保证废物体或废物包将满足废物在加工、贮存、运输和处置方面的废物接受准则。场址表征（处置设施场址的）：在场址进行的详细地表与地下调查及活动，以确定场址的放射性状况，或评价候选处置场址以获取用于判定该场址是否适合作为处置设施场址的信息，并评价处置设施在该场址的长期性能。场址表征是处置设施选址过程中的一个阶段；它位于区域调查之后，并位于处置设施的场址确认之前。场址表征也可指任何其他获授权设施的选址过程。另见场址评价，其包含场址表征，且不专指处置设施场址；另见区域调查。	translated:IAEA-safety-glossary
+characterization-of-waste	zh	见 表征。	translated:IAEA-safety-glossary
 charge-exchange-loss	en	Energy loss from charge exchange between fast ions and neutrals.	corpus
 charge-exchange-loss	zh	电荷交换损失是快离子与中性粒子电荷交换造成的能量损失。	corpus
 check-valve	en	A valve that permits flow in one direction only and prevents backflow of the medium.	corpus
@@ -3762,22 +3762,22 @@ chemical-erosion	en	Erosion of carbon materials through chemical reaction with h
 chemical-erosion	zh	化学腐蚀是碳材料与氢同位素发生化学反应所导致的侵蚀。	corpus
 chemical-sputtering	en	The chemical ejection of surface atoms via reactive hydrogen species.	corpus
 chemical-sputtering	zh	化学溅射是反应性氢物种导致的表面原子化学抛出。	corpus
-chemisorption	zh	聚变/核工程术语，对应英文“chemisorption”。	internal:dict-improvements
-child	zh	聚变/核工程术语，对应英文“child”。	internal:dict-improvements
-chronic-intake	zh	聚变/核工程术语，对应英文“chronic intake”。	internal:dict-improvements
-cladding	zh	聚变/核工程术语，对应英文“cladding”。	internal:dict-improvements
-cleanup	zh	聚变/核工程术语，对应英文“cleanup”。	internal:dict-improvements
+chemisorption	zh	见 吸着。	translated:IAEA-safety-glossary
+child	zh	在剂量学中（例如在每单位摄入量所致剂量的表格中），儿童通常被假定为 10 岁。若作出此种假定，应予明确说明。另见婴儿和参考个体。	translated:IAEA-safety-glossary
+chronic-intake	zh	见 摄入。	translated:IAEA-safety-glossary
+cladding	zh	1. 直接施加于另一种材料之上的外部材料层，用以在化学反应性条件下提供保护（例如在铁素体材料上包覆以防腐蚀）。2. 通常指容纳核燃料芯块并提供裂变过程中产生的放射性核素包容（封闭手段）的材料管。包壳还可提供结构支撑。包壳管连同端盖或端塞通常也提供结构支撑。	translated:IAEA-safety-glossary
+cleanup	zh	见 退役。	translated:IAEA-safety-glossary
 clearance	zh	聚变/核工程术语，指“清洁解控”这一技术概念。	internal:dict-improvements
-clearance-rate	zh	聚变/核工程术语，对应英文“clearance rate”。	internal:dict-improvements
+clearance-rate	zh	见 清洁解控。	translated:IAEA-safety-glossary
 cliff-edge-effect	zh	聚变/核工程术语，指“断崖效应”这一技术概念。	internal:dict-improvements
-closed-nuclear-fuel-cycle	zh	聚变/核工程术语，对应英文“closed nuclear fuel cycle”。	internal:dict-improvements
-closure	zh	聚变/核工程术语，对应英文“closure”。	internal:dict-improvements
-cloud-shine	zh	聚变/核工程术语，对应英文“cloud shine”。	internal:dict-improvements
+closed-nuclear-fuel-cycle	zh	见 核燃料循环。	translated:IAEA-safety-glossary
+closure	zh	设施关闭：1. 在处置设施运行寿期末针对该处置设施实施的管理与技术行动——例如对所处置废物进行覆盖（针对近地表处置设施）或回填和/或密封（针对地质处置设施及通往该设施的通道）——以及终止并完成任何相关构筑物内的活动。对于其他类型的设施，则使用退役一词。选址、设计、建造、调试、运行和退役这几个术语通常用于界定获授权设施的寿期及相关许可过程的六个主要阶段。在放射性废物处置设施的特殊情况下，该序列中的退役由关闭替代。2. [在乏燃料或放射性废物被置入处置设施之后某一时刻完成全部作业。包括为使该设施达到长期安全状态所需的最终工程或其他工作。]（见参考文献 [5]。）	translated:IAEA-safety-glossary
+cloud-shine	zh	云团浸没照射：空气中羽流内放射性核素发出的伽马辐射。另见地面照射（ground shine）。天空反照（sky shine）：向上发射并被空气偏转回地面的辐射。天空反照的存在可能导致远离设施处的中子注量率升高。在屏蔽设计评价和环境监测方面，天空反照对于高能实验加速器设施以及配备医用放射治疗直线加速器的装置而言，可能是保健物理中的一项重要考虑因素。	translated:IAEA-safety-glossary
 co-deposition	en	Simultaneous deposition of eroded material with hydrogen isotopes.	corpus
 co-deposition	zh	共沉积是侵蚀材料与氢同位素的同步沉积。	corpus
 coating-degradation	en	The gradual deterioration of wall-conditioning coatings under plasma exposure.	corpus
 coating-degradation	zh	涂层退化：壁条件处理涂层在暴露于等离子体期间的逐渐劣化。	corpus
-coincidence	zh	聚变/核工程术语，对应英文“coincidence (as a feature of design)”。	internal:dict-improvements
+coincidence	zh	同时性：保护系统设计的一种特性，即须由若干通道给出两个或更多的重叠或同时的输出信号，方能由逻辑产生保护动作信号。	translated:IAEA-safety-glossary
 collisional-damping	en	Dissipation of wave or oscillation energy through collisions.	corpus
 collisional-damping	zh	碰撞阻尼是波或振荡能量通过碰撞耗散的过程。	corpus
 colormap	en	A color mapping scheme used for visualization.	corpus
@@ -3787,27 +3787,27 @@ commercial-fusion	zh	商业聚变：作为可商业化电力来源的聚变能�
 commercialization-pathway	en	A strategic roadmap leading from research and development through a pilot plant to commercial fusion power deployment.	corpus
 commercialization-pathway	zh	商业化路径：从研发经中试装置到商业聚变发电部署的战略路线图。	corpus
 commissioning	zh	装置调试，指电厂或反应堆的部件与系统在建造完成后投入运行，并经验证符合设计假设与性能准则的过程。	translated:ITER-glossary
-common-mode-failure	zh	聚变/核工程术语，对应英文“common mode failure”。	internal:dict-improvements
+common-mode-failure	zh	见 failure。	translated:IAEA-safety-glossary
 compact-fusion	en	An umbrella term for small high-field or alternative-confinement fusion approaches.	corpus
 compact-fusion	zh	紧凑聚变：对小尺寸高场或替代约束聚变路线的统称。	corpus
 compact-toroid	en	An umbrella term for compact toroidal configurations such as the field-reversed configuration and the spheromak, characterised by high beta and a simple cylindrical geometry.	corpus
 compact-toroid	zh	对场反位形与球马克等紧凑环形位形的统称，特征为高比压与简单的圆柱几何。	corpus
-competent-authority	zh	聚变/核工程术语，对应英文“competent authority”。	internal:dict-improvements
+competent-authority	zh	在[《运输》]条例方面为任何目的被指定或以其他方式被认定为主管部门的任何机构或当局。（见 SSR-6（Rev. 1）[2]。）! 本术语仅在与《运输条例》[2]相关时使用，以便与危险货物运输监管这一更广泛领域所用的术语保持一致。在其他情况下，应使用更为通用的术语监管机构，主管部门与其实质上同义。	translated:IAEA-safety-glossary
 compiler	en	A translator from source code to binary code.	corpus
 compiler	zh	编译器是把源代码翻译为二进制代码的翻译器。	corpus
-compliance-assurance	zh	聚变/核工程术语，对应英文“compliance assurance”。	internal:dict-improvements
-component	zh	聚变/核工程术语，对应英文“component”。	internal:dict-improvements
+compliance-assurance	zh	监管机构为在实践中确保各项条例的规定得到遵守而实施的一套系统性措施方案。符合性保证是主管部门为在实践中确保[《运输》]条例的规定得到遵守而实施的一套系统性措施方案。（见 SSR-6（Rev. 1）[2]。）该术语可在多种场合使用，含义基本相同，但往往没有明确定义。	translated:IAEA-safety-glossary
+component	zh	见 structures, systems and components。	translated:IAEA-safety-glossary
 computational-fluid-dynamics	en	Numerical simulation of fluid flows based on the discretized governing equations.	corpus
 computational-fluid-dynamics	zh	对流体流动进行数值模拟的方法。	corpus
 computational-mesh	en	A general computational mesh used for simulation.	corpus
 computational-mesh	zh	计算网格是用于仿真的通用网格。	corpus
-computational-model	zh	聚变/核工程术语，对应英文“computational model”。	internal:dict-improvements
+computational-model	zh	见 模型。	translated:IAEA-safety-glossary
 compute-node	en	An HPC cluster worker node, distinct from a mesh node.	corpus
 compute-node	zh	计算节点是HPC集群的工作节点，区别于网格节点。	corpus
-computer-system-validation	zh	聚变/核工程术语，对应英文“computer system validation”。	internal:dict-improvements
-computer-system-verification	zh	聚变/核工程术语，对应英文“computer system verification”。	internal:dict-improvements
-concept-of-operations	zh	聚变/核工程术语，对应英文“concept of operations”。	internal:dict-improvements
-conceptual-model	zh	聚变/核工程术语，对应英文“conceptual model”。	internal:dict-improvements
+computer-system-validation	zh	见 验证。	translated:IAEA-safety-glossary
+computer-system-verification	zh	见 校核。	translated:IAEA-safety-glossary
+concept-of-operations	zh	见 应急计划。	translated:IAEA-safety-glossary
+conceptual-model	zh	见 模型。	translated:IAEA-safety-glossary
 condenser	en	A device that condenses exhaust steam back into water.	corpus
 condenser	zh	凝汽器是将排汽冷凝回水的装置。	corpus
 condition-based-maintenance	zh	聚变/核工程术语，对应英文“condition based maintenance”。	internal:dict-improvements
