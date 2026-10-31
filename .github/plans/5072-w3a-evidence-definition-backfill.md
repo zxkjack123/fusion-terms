@@ -470,7 +470,7 @@ BOUNDARY
   - ✅ `[T-A]` backfill 输出 `updated=<N> matched_exact=<N>`；evidence 模式 `ids=<N> expect=<N> verdict=PASS` 且 exit 0
   - ✅ `[T-B]` slice 内 w3 evidence 非空 quote 数 = `<N>`
   - ✅ `[T-B]` slice 内 source 只允许 `{IAEA_URL, ITER_URL}` 两个值（Python 断言）
-  - ✅ `[T-B]` **探测次数**：`grep -o 'probes=[0-9]*' /tmp/opencode/t5072/ev_<NN>.green.txt` = `probes=2`（按唯一 URL 去重，不是按行数）
+  - ✅ `[T-B]` **探测次数**：`grep -o 'probes=[0-9]*' /tmp/opencode/t5072/ev_<NN>.green.txt` = **该批唯一 URL 数**（不是行数）：batch-01 = `probes=2`（72 ITER + 99 IAEA），batch-02…05 = `probes=1`（该批 100% 为 IAEA 行）。全量 854 仍须 `probes=2`（见 T1.6）。
   - ✅ `[T-B]` quote 不含 `\t`、`\n`、`\x03`（脚本已清洗；断言失败即拒绝）
   - ✅ `[T-C]` `git diff --stat` 只含 `terms/registry/evidence.tsv`；`git diff --cached --stat` 同
 - **能失败证明（变异法）**: 把某行 quote 清空 → 该批 evidence 模式报 `evidence_quote_empty`；把 source 改成裸名 `IAEA-Safety-Glossary-2018` → 报 `evidence_source_not_url`；把去重缓存删掉 → `probes=171`，本批 FAIL。
@@ -989,8 +989,8 @@ BOUNDARY
 | T0.2 | 2026-10-31 | `a9c8201` | 0 | self-test `27/27`；evidence RED：exit 1、`evidence_quote_empty` 854 条、**`probes=1`**（基线唯一 URL 只有 ITER 一个，782 条 IAEA 行为裸名）；无 `--ids-file` → exit 2 + `requires --ids-file`；真实探测 IAEA 200(0.80s)/ITER 200(1.11s)；ruff ok；变异证明：裸名+非空 quote → `evidence_source_not_url`、404 → `evidence_url_status`、删去重 → `probes=72` + `evidence_probe_dedup` |
 | T0.3 | 2026-10-31 | — | 0 | 只写 `/tmp/opencode/t5072/`；`w3.ids` 854 / `w3_placeholder.ids` 747；行型 **DEFINITION 431 / CROSS_REF 300 / CORRUPT 16**（交叉引用族 316）；解析 **direct 248 / ledger 68 / NO-TARGET 29**；`sha256sum -c manifests.sha256` exit 0；`comm` 差集 0；变异（删 BODY 判据）→ `(431, 316, 0)` 断言失败 |
 | T1.0 | 2026-10-31 | — | 0 | `/tmp/opencode/t5072/backfill_evidence.py` 落地（PUA 剥离、无 difflib、逐行改写以保非 w3 行字节不变）；dry-run `updated=854 matched_exact=854`；副本变更 **854 行 / 非 w3 变更 0**；854 非空 quote；source `IAEA 782 / ITER 72`；evidence 模式对副本 `PASS` + `probes=2`；失败证明：删 `--raw-iaea` → exit 1、删 `dose-quantities` en → exit 1；仓内无改动 |
-| T1.1–T1.5 | | | | |
-| T1.6 | | — | | |
+| T1.1–T1.5 | 2026-10-31 | `7d24cca` / `1dd618a` / `b2ce15f` / `e2a8744` / `6dd09c8` | 0 | 每批 `updated=matched_exact=171/171/171/171/170`；evidence 模式全部 `verdict=PASS` exit 0；`probes` 实测 **b01=2、b02=1、b03=1、b04=1、b05=1**（该批唯一 URL 数，非行数）；每批 `git diff --stat` 仅 `terms/registry/evidence.tsv`；数据断言：slice 内非空 quote = N、source ⊆ 2 URL、无 `\t`/`\n`/`\r`/`\x03` |
+| T1.6 | 2026-10-31 | — | 0 | 全量 854：`verdict=PASS` exit 0、**`probes=2`**；`evidence_quote_nonempty=854 sources=2 unique_urls=2`；`git diff --stat BASE..HEAD` = `854 insertions(+), 854 deletions(-)`；失败证明（副本）：quote 置空 → `evidence_quote_empty` exit 1、source 改裸名 → `evidence_source_not_url` exit 1 |
 | T2.0 | | — | | |
 | T2.01–T2.30 | | | | |
 | T2.31 | | — | | |
@@ -1001,6 +1001,7 @@ BOUNDARY
 **偏差记录（D1，2026-10-31）**：
 
 - `T0.2` 原验收写作 `probes=2`，实测基线为 `probes=1`：854 条 w3 evidence 行中仅 72 条 ITER 行走 URL，782 条 IAEA 行为裸名（`IAEA-Safety-Glossary-2018`），**没有可探测的 URL**。故 baseline 唯一 URL 数是 1，`probes=2` 是回填后的状态。已将 §0 该行改为「基线 1 → 回填后 2」、T0.2 验收改为 `probes=1`，并保留 T1.6/T3.1 的 `probes=2` 要求不变（回填把裸名改写成 IAEA URL 后即可达）。去重行为本身已由 self-test（合成 fixture `probes=2`）与真实 72 行 → 1 次探测共同证明。
+- 同一根因的第二个表现：**per-batch `probes=2` 不成立**。分批切片并非每批都含两种来源——实测 b01=2、b02…b05=1（b02–b05 为纯 IAEA 切片）。已把 T1.1–T1.5 的验收改为「该批唯一 URL 数」并写明各批期望值；**全量 854 仍要求 `probes=2`**（T1.6 实测通过），去重判据没有被放宽，只是把「按批」改为「按该批实际来源集」。
 
 ## 附录 A — evidence backfill 脚本（`/tmp/opencode/t5072/backfill_evidence.py`）
 
