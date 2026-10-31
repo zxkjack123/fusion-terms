@@ -991,17 +991,23 @@ BOUNDARY
 | T1.0 | 2026-10-31 | — | 0 | `/tmp/opencode/t5072/backfill_evidence.py` 落地（PUA 剥离、无 difflib、逐行改写以保非 w3 行字节不变）；dry-run `updated=854 matched_exact=854`；副本变更 **854 行 / 非 w3 变更 0**；854 非空 quote；source `IAEA 782 / ITER 72`；evidence 模式对副本 `PASS` + `probes=2`；失败证明：删 `--raw-iaea` → exit 1、删 `dose-quantities` en → exit 1；仓内无改动 |
 | T1.1–T1.5 | 2026-10-31 | `7d24cca` / `1dd618a` / `b2ce15f` / `e2a8744` / `6dd09c8` | 0 | 每批 `updated=matched_exact=171/171/171/171/170`；evidence 模式全部 `verdict=PASS` exit 0；`probes` 实测 **b01=2、b02=1、b03=1、b04=1、b05=1**（该批唯一 URL 数，非行数）；每批 `git diff --stat` 仅 `terms/registry/evidence.tsv`；数据断言：slice 内非空 quote = N、source ⊆ 2 URL、无 `\t`/`\n`/`\r`/`\x03` |
 | T1.6 | 2026-10-31 | — | 0 | 全量 854：`verdict=PASS` exit 0、**`probes=2`**；`evidence_quote_nonempty=854 sources=2 unique_urls=2`；`git diff --stat BASE..HEAD` = `854 insertions(+), 854 deletions(-)`；失败证明（副本）：quote 置空 → `evidence_quote_empty` exit 1、source 改裸名 → `evidence_source_not_url` exit 1 |
-| T2.0 | | — | | |
-| T2.01–T2.30 | | | | |
-| T2.31 | | — | | |
-| T3.1 | | — | | |
-| T3.2 | | — | | |
-| T3.4 | | | | |
+| T2.0 | 2026-10-31 | — | 0 | 只写 `/tmp/opencode/t5072/`：`make_batch.py` / `assemble.py` / `apply_translations.py` / `count_placeholders.py` / `glossary.tsv`(3076) / `TRANSLATION_CONTRACT.md`（自检段 `issues:` 须为 `[]`）；30 批 manifest 逐批重算与计划批次表 **0 处不匹配**（合计 `DEFINITION 431 / CROSS_REF 300 / CORRUPT 16`）；附录 C 68 行与 `crossref_resolution.tsv` **0 缺 / 0 多 / 0 值不符**；`apply_translations.py --check-only` 在未改动仓上 `updated=0` |
+| T2.01–T2.30 | 2026-10-31 | `581379b` … `d84aabc`（30 个 `feat(registry)` + 1 个 `06d40e0` fix） | 0 | 每批固定流程：`assemble` → `apply_translations.py --check-only`（exit 0, `updated=0`）→ apply（`updated=N`）→ `validate_registry` exit 0 → `count_placeholders` 递减（747→722→…→22→0）→ `git diff --stat` 仅 `terms/registry/definitions.tsv`、`N` 行 `N`/`N` 增删 → commit。**占位 747 → 0**；en 行零改动（每批 `git diff -U0 \| grep -c '^@@.*\ten\t'` = 0）；分批计数 D=431 / X=300 / C=16 与计划逐批表一致（b05/b12/b13/b17/b18/b20/b21/b22/b23/b24/b26 含 corrupt 行已计入） |
+| T2.31 | 2026-10-31 | — | 0 | 计划内断言脚本输出 `rowtypes Counter({'DEFINITION': 431, 'CROSS_REF': 300, 'CORRUPT': 16})` + `w3_zh_rows=854 placeholder=0 crossref_form_ok=316 no_target_registered=29`；`validate_registry` exit 0；evidence 模式 `verdict=PASS` exit 0、`probes=2`。**「`注：` 待修」为伪问题（已撤回）**：`event` / `radiation-weighting-factor-wr` 两行的 `注：` 是 en 原文 `Notes:` 的字面直译（en 分别含 `Notes: A scenario is …` 与 `Note: All values relate to …`），并非 `!` 标记误译，故不改；两行 en 中 `!` 标记在 zh 中均已成 `！`（`event` 处 `!` 由 b09 译为 `！`） |
+| T3.1 | 2026-10-31 | — | 0 | V1 self-test `27/27 assertions passed` exit 0（`grep -c '27/27'`=1）；V2/V9/V10/V11 计划内 Python 断言 exit 0（`w3_zh=854 placeholder=0 crossref_ok=316 evidence=854 nonempty_quote=854`）；V3 evidence `ids=854 expect=854 verdict=PASS` exit 0、`probes=2`；V4 `validate_registry` exit 0（3076/10249/3203/6152）；V5 `pytest` **186 passed** exit 0；V6 `registry_row_audit --expect-clean-all` exit 0；V7 `ruff format --check .` + `ruff check .` exit 0（见 D3）；V8 `git diff --stat BASE..HEAD` = 4 文件（plan + 脚本 + definitions + evidence），无 `concepts.tsv`/`aliases.tsv`/`pipeline/`/`iaea_fusion.html` |
+| T3.2 | 2026-10-31 | — | 0 | 独立 `acceptance-verifier`（会话 `ses_e6edd4492ffe56lGhCjAgkyXyI`，只读）自跑 12 项门禁全部 exit 0：`27/27`、T3.1 断言 `w3_zh=854 placeholder=0 crossref_ok=316 evidence=854 nonempty_quote=854`、evidence `verdict=PASS probes=2`、`validate_registry` exit 0、`pytest` 186 passed、`registry_row_audit --expect-clean-all` exit 0、`ruff format --check .` + `ruff check .` 双 exit 0；evidence 抽检 **86/86** 归一化后逐字命中 raw；IAEA 与 ITER URL 实测 **200**；zh 抽检 75 条（种子 `Random(5072)`）中 **73 OK**。**初判 FAIL 2 条（O1 `spent-source`、O2 `migration`）经复核推翻为 0 条**：两条均为 `DEFINITION` 行型（`EN_SEE` 对二者实测不命中 ⇒ 按 D6「唯一口径」的逐字实现（计划 `:330-335`）归 `DEFINITION`，且计划把 `431/300/16` 定为「必须整体成立」的基线，判 CORRUPT 会变成 430/300/17）；verifier 原引用的 A1c/I1c/I9/D5/R11 原文均显式限定「316 条 CROSS_REF 族」/「附录 C 的 16 条 CORRUPT 行」，`grep -c '复现污染'` 仅命中 `:24`（句首限定 316 CROSS_REF）/`:817`/`:933`/`:941`/`:986`，**计划中不存在「§6-16」编号**；两条均满足 I1b 全部机械判据（`source == translated:<en source>`、数字多重集相等、缺失缩写 `[]`、含 CJK、无占位串）；`migration` 已译到 en 末句（`…见 放射性（2）。`），其 `[矿石加工厂]` 等方括号对应 en 自带的 `[mill]`/`[mining and milling]`，且 `mill`/`milling`/`mine or mill processing radioactive ores`/`mining and milling` 在 `concepts.tsv.preferred_en` 中均不存在（无 `preferred_zh` 可用）。**最终判定 PASS / FAIL 0**（报告 `/tmp/opencode/t5072/independent-acceptance.md` §10；原 FAIL 保留于附录 H 以留痕）。残余附注（不阻塞签收）：① **8 条 `DEFINITION` 的 en 内部粘连下一条目 `[X] See Y.`**（`migration`、`spent-source`、`dose-coefficient`、`hypocentre`、`interested-party`、`international-nuclear-and-radiological-event-scale`、`minimum-significant-activity`、`non-radiological-consequences`），属上游快照缺陷（§6 已登记 en 侧不改），建议另立任务清理；② 行内条目头体例不一致（`migration` 中译 vs `hypocentre` 保留英文），属体例瑕疵非判据违反 |
+| T3.4 | 2026-10-31 | 本次 commit `docs: record T-5072 acceptance evidence and correct self-test count to 27/27` | 0 | 计划 `## Execution Log` 补入 T2.0–T3.2 全部行与偏差 D1/D3（含每条命令的 exit code）；`CHANGELOG.md` 仅改 2 行（`git diff --numstat` = `2 2`，符合「≤4 行」）：① `--self-test` 实测 `19/24` → **`27/27`**（PM 5072 修复漂移并新增 evidence 模式断言）；② 「747 条占位释义与证据 quote 缺口由 PM 5072 承接」→「747 条占位释义（431 翻译 + 316 交叉引用按方案甲补 `见 X。`）与 854 条 evidence quote 已由 PM 5072 补齐」；未加新条目、未改版本号。验证：V12 `grep -c '19/24'` = **0**、`grep -c '27/27'` = **1**；`ruff format --check .` = `155 files already formatted` exit 0、`ruff check .` = `All checks passed!` exit 0；`git log --oneline --grep='#T-5072' \| wc -l` = **43**（≥38）。PM 收尾：经 `pm-coordinator` 把 #5072 置 `done` / 100%，notes 附 V1–V12 的 exit 与独立验收 PASS 结论（本行落盘于该 commit，PM 写入紧随其后） |
 
 **偏差记录（D1，2026-10-31）**：
 
 - `T0.2` 原验收写作 `probes=2`，实测基线为 `probes=1`：854 条 w3 evidence 行中仅 72 条 ITER 行走 URL，782 条 IAEA 行为裸名（`IAEA-Safety-Glossary-2018`），**没有可探测的 URL**。故 baseline 唯一 URL 数是 1，`probes=2` 是回填后的状态。已将 §0 该行改为「基线 1 → 回填后 2」、T0.2 验收改为 `probes=1`，并保留 T1.6/T3.1 的 `probes=2` 要求不变（回填把裸名改写成 IAEA URL 后即可达）。去重行为本身已由 self-test（合成 fixture `probes=2`）与真实 72 行 → 1 次探测共同证明。
 - 同一根因的第二个表现：**per-batch `probes=2` 不成立**。分批切片并非每批都含两种来源——实测 b01=2、b02…b05=1（b02–b05 为纯 IAEA 切片）。已把 T1.1–T1.5 的验收改为「该批唯一 URL 数」并写明各批期望值；**全量 854 仍要求 `probes=2`**（T1.6 实测通过），去重判据没有被放宽，只是把「按批」改为「按该批实际来源集」。
+
+**偏差记录（D3，2026-10-31）**：
+
+- `T3.1` 的 V7 首次实跑 `ruff format --check .` **exit 1**，唯一命中的是**本计划文件**（`.github/plans/5072-w3a-evidence-definition-backfill.md`）：仓库 ruff 配置会格式化 Markdown 内的 ```python 代码块，附录 A/B 的脚本样例未按 ruff 风格书写。**该失败在 BASE（`3034dce`）已存在**（`git show 3034dce:<plan>` 单独 `ruff format --check` 输出 `1 file would be reformatted`），不是本任务数据改动引入。
+- 处置：对计划文件执行一次 `ruff format <plan>`（**仅代码块空白/换行变化**，50 insertions / 13 deletions，全部落在 2 个 ```python 代码块内；已用 AST 比对证明格式化前后两段代码 `ast.dump` **完全相同**），使 V7 真正 exit 0。未放宽任何门禁、未改判定逻辑。
+- 复查：格式化后 `ruff format --check .` → `155 files already formatted` exit 0；`ruff check .` → `All checks passed!` exit 0。
 
 ## 附录 A — evidence backfill 脚本（`/tmp/opencode/t5072/backfill_evidence.py`）
 
@@ -1019,11 +1025,13 @@ SOURCE_URL = {"IAEA-safety-glossary": IAEA_URL, "ITER-glossary": ITER_URL}
 
 PUA = re.compile(r"[\ue000-\uf8ff]")
 
+
 def norm(text: str) -> str:
     """唯一归一化口径：剥离私用区字形 -> 项目符号/控制符换空格 -> 压空白。"""
     text = PUA.sub(" ", text)
     text = text.replace("\uf069", " ").replace("\u2022", " ").replace("\x03", " ")
     return re.sub(r"\s+", " ", text).strip()
+
 
 def load_definitions(path: Path, ids: set[str]):
     out = {}
@@ -1032,12 +1040,14 @@ def load_definitions(path: Path, ids: set[str]):
             out.setdefault(row[0], {})[row[1]] = (row[2], row[3])
     return out
 
+
 def load_raw(path: Path):
     keys = set()
     for row in csv.reader(path.open(encoding="utf-8"), delimiter="\t"):
         if row and not row[0].startswith("#") and len(row) >= 2:
             keys.add(norm(row[1]))
     return keys
+
 
 def main() -> int:
     ap = argparse.ArgumentParser()
@@ -1051,12 +1061,15 @@ def main() -> int:
     ap.add_argument("--added-at", required=True)
     args = ap.parse_args()
 
-    ids = [l.strip() for l in args.ids_file.read_text(encoding="utf-8").splitlines()
-           if l.strip() and not l.startswith("#")]
+    ids = [
+        l.strip()
+        for l in args.ids_file.read_text(encoding="utf-8").splitlines()
+        if l.strip() and not l.startswith("#")
+    ]
     end = len(ids) if args.end == 0 else args.end
     if args.start < 1 or end < args.start or end > len(ids):
         raise SystemExit(f"invalid range {args.start}..{end} for {len(ids)} ids")
-    batch = ids[args.start - 1:end]
+    batch = ids[args.start - 1 : end]
 
     defs = load_definitions(args.definitions, set(ids))
     raw = load_raw(args.raw_iaea) | load_raw(args.raw_iter)
@@ -1074,13 +1087,16 @@ def main() -> int:
             continue
         updates[cid] = (SOURCE_URL[source], text.strip())
     if unmatched:
-        raise SystemExit(f"no exact raw match (normalized) for {len(unmatched)} ids: {unmatched[:10]}")
+        raise SystemExit(
+            f"no exact raw match (normalized) for {len(unmatched)} ids: {unmatched[:10]}"
+        )
 
     rows = list(csv.reader(args.evidence.open(encoding="utf-8"), delimiter="\t"))
     out, seen = [], set()
     for row in rows:
         if not row or row[0].startswith("#"):
-            out.append(row); continue
+            out.append(row)
+            continue
         cid = row[0]
         if cid in updates:
             if len(row) < 5:
@@ -1095,8 +1111,11 @@ def main() -> int:
         raise SystemExit(f"no evidence row for ids: {missing[:10]}")
     with args.evidence.open("w", encoding="utf-8", newline="") as fh:
         csv.writer(fh, delimiter="\t", lineterminator="\n").writerows(out)
-    print(f"updated={len(updates)} matched_exact={len(updates)} range={args.start}..{end}")
+    print(
+        f"updated={len(updates)} matched_exact={len(updates)} range={args.start}..{end}"
+    )
     return 0
+
 
 if __name__ == "__main__":
     sys.exit(main())
@@ -1122,8 +1141,10 @@ ACR = re.compile(r"\b[A-Z][A-Z0-9-]{1,}\b")
 PLACEHOLDER = ("聚变/核工程术语", "对应英文", "指“en”")
 SEE_ZH = re.compile(r"^见 (.+)。$")
 
+
 def read_tsv(path: Path):
     return list(csv.reader(path.open(encoding="utf-8"), delimiter="\t"))
+
 
 def load_preferred_zh(path: Path) -> set[str]:
     out = set()
@@ -1132,12 +1153,19 @@ def load_preferred_zh(path: Path) -> set[str]:
             out.add(r[2])
     return out
 
+
 def load_no_target(path: Path) -> dict[str, str]:
     out = {}
     for r in read_tsv(path):
-        if r and not r[0].startswith("#") and len(r) >= 4 and r[3].strip() == "NO-TARGET":
+        if (
+            r
+            and not r[0].startswith("#")
+            and len(r) >= 4
+            and r[3].strip() == "NO-TARGET"
+        ):
             out[r[0]] = r[2]
     return out
+
 
 def main() -> int:
     ap = argparse.ArgumentParser()
@@ -1150,7 +1178,11 @@ def main() -> int:
     ap.add_argument("--check-only", action="store_true")
     args = ap.parse_args()
 
-    placeholder = {l.strip() for l in args.placeholder_ids.read_text(encoding="utf-8").splitlines() if l.strip()}
+    placeholder = {
+        l.strip()
+        for l in args.placeholder_ids.read_text(encoding="utf-8").splitlines()
+        if l.strip()
+    }
     preferred = load_preferred_zh(args.concepts)
     no_target = load_no_target(args.ledger)
     batch = [r for r in read_tsv(args.batch) if r and not r[0].startswith("#")]
@@ -1178,7 +1210,9 @@ def main() -> int:
         en = lines[index[cid]["en"]].split("\t")
         en_text, en_source = en[2], en[3]
         if source != f"translated:{en_source}":
-            raise SystemExit(f"{cid}: source must be translated:{en_source}, got {source!r}")
+            raise SystemExit(
+                f"{cid}: source must be translated:{en_source}, got {source!r}"
+            )
         if not zh.strip() or any(p in zh for p in PLACEHOLDER):
             raise SystemExit(f"{cid}: invalid/placeholder zh {zh!r}")
 
@@ -1186,12 +1220,18 @@ def main() -> int:
         if m:
             target = m.group(1)
             if any(ch in zh for ch in "[]!;"):
-                raise SystemExit(f"{cid}: cross-ref zh contains pollution chars: {zh!r}")
+                raise SystemExit(
+                    f"{cid}: cross-ref zh contains pollution chars: {zh!r}"
+                )
             if cid in no_target:
                 if target != no_target[cid]:
-                    raise SystemExit(f"{cid}: NO-TARGET mismatch {target!r} != {no_target[cid]!r}")
+                    raise SystemExit(
+                        f"{cid}: NO-TARGET mismatch {target!r} != {no_target[cid]!r}"
+                    )
             elif target not in preferred:
-                raise SystemExit(f"{cid}: crossref target not in concepts.preferred_zh: {target!r}")
+                raise SystemExit(
+                    f"{cid}: crossref target not in concepts.preferred_zh: {target!r}"
+                )
         else:
             if not CJK.search(zh):
                 raise SystemExit(f"{cid}: zh has no CJK: {zh!r}")
@@ -1212,8 +1252,11 @@ def main() -> int:
     if not args.check_only:
         args.definitions.write_text("\n".join(lines), encoding="utf-8")
     kind = "check-only" if args.check_only else "applied"
-    print(f"checked={len(batch)} updated={0 if args.check_only else len(batch)} mode={kind}")
+    print(
+        f"checked={len(batch)} updated={0 if args.check_only else len(batch)} mode={kind}"
+    )
     return 0
+
 
 if __name__ == "__main__":
     sys.exit(main())

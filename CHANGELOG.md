@@ -78,8 +78,8 @@
 
 ### Added
 
-- **Registry 数据质量工具链**（`#T-4973`）：`scripts/registry_coverage_report.py`（覆盖率口径固化；输出 W1/W2/W3 工作集与总覆盖率）、`scripts/registry_row_audit.py`（结构审计：畸形列 / 错位行 / 6 列行 / evidence 列数 / zh 占位污染 / 套话计数，双门禁剖面 `--expect-clean` 与 `--expect-clean-all`）、`scripts/registry_batch_verify.py`（批次机械门禁；当前 `--self-test` 实测 19/24，漂移由 PM 5072 承接）。
-- **W3a 中文首选名与 IME 词表覆盖**（`#T-4973`）：854/854 个 `preferred_zh` 已写入并通过命名门禁；812 条中文名与 664 个英文短语 concept_id 已按用户授权分 43 批进入 allowlist；`domain_terms.txt` **6378** 条，覆盖率 **98.57%**。121 条 1–2 字短词保留为已裁决 known-issue，后续做误召回评估；747 条占位释义与证据 quote 缺口由 PM 5072 承接。
+- **Registry 数据质量工具链**（`#T-4973`）：`scripts/registry_coverage_report.py`（覆盖率口径固化；输出 W1/W2/W3 工作集与总覆盖率）、`scripts/registry_row_audit.py`（结构审计：畸形列 / 错位行 / 6 列行 / evidence 列数 / zh 占位污染 / 套话计数，双门禁剖面 `--expect-clean` 与 `--expect-clean-all`）、`scripts/registry_batch_verify.py`（批次机械门禁；当前 `--self-test` 实测 **27/27**，PM 5072 修复漂移并新增 evidence 模式断言）。
+- **W3a 中文首选名与 IME 词表覆盖**（`#T-4973`）：854/854 个 `preferred_zh` 已写入并通过命名门禁；812 条中文名与 664 个英文短语 concept_id 已按用户授权分 43 批进入 allowlist；`domain_terms.txt` **6378** 条，覆盖率 **98.57%**。121 条 1–2 字短词保留为已裁决 known-issue，后续做误召回评估；747 条占位释义（431 翻译 + 316 交叉引用按方案甲补 `见 X。`）与 854 条 evidence quote 已由 PM 5072 补齐。
 - **工作集与依据文件**（`#T-4973`）：`.github/plans/t4973-batches/` —— 112 个批文件 + 5 个集合清单 + README，附映射表 `category-map-shift99.tsv`、`category-map-sixcol80.tsv` 与依据文件 `names-basis-t0_6.tsv`、`defs-basis-t0_7.tsv`。
 - **门禁 RED→GREEN 可复跑记录**（`#T-4973`）：`.github/plans/t4973-batches/red-green.md`（含受控对比：旧 validator 对三类畸形语料静默通过 exit 0，加严后 exit 1）。
 - **严格结构门禁**（`#T-4973`）：`pipeline/validate_registry.py` 新增 16 类 `category` 白名单，以及 concepts 恰 8 列 / evidence 恰 5 列的列数断言；配套 3 个真实语料锚定用例（`tests/test_registry_validator.py` 共 15 用例）与 2 个 history fixture。
