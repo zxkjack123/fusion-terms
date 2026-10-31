@@ -4057,23 +4057,23 @@ dose	zh	1. 辐射在靶中沉积能量的量度。关于最重要的此类量度
 dose-and-dose-rate-effectiveness-factor	zh	指高剂量和/或高剂量率下单位有效剂量的风险或辐射总危害，与低剂量和低剂量率下相应值之比。用于根据高剂量和高剂量率下的观察结果与流行病学发现，估算低剂量和低剂量率下的风险系数。取代剂量率效能因子（DREF）。	translated:IAEA-safety-glossary
 dose-assessment	zh	见 评价。	translated:IAEA-safety-glossary
 dose-coefficient	zh	被国际放射防护委员会及其他方面用作单位摄入剂量的同义词，但有时也用于描述将活度量或活度浓度与剂量或剂量率相联系的其他系数，例如在某表面上方一指定距离处的外照射剂量率，该表面沉积有面活度为指定值的指定放射性核素。! 为避免混淆，剂量系数一词应谨慎使用。[剂量承诺] 见剂量概念。	translated:IAEA-safety-glossary
-dose-concepts	zh	聚变/核工程术语，对应英文“dose concepts”。	internal:dict-improvements
-dose-conversion-convention	zh	聚变/核工程术语，对应英文“dose conversion convention”。	internal:dict-improvements
-dose-equivalent	zh	聚变/核工程术语，对应英文“dose equivalent”。	internal:dict-improvements
-dose-equivalent-quantities	zh	聚变/核工程术语，对应英文“dose equivalent quantities (operational)”。	internal:dict-improvements
-dose-per-unit-intake	zh	聚变/核工程术语，对应英文“dose per unit intake”。	internal:dict-improvements
-dose-quantities	zh	聚变/核工程术语，对应英文“dose quantities”。	internal:dict-improvements
-dose-rate	zh	聚变/核工程术语，对应英文“dose rate”。	internal:dict-improvements
-double-contingency-principle	zh	聚变/核工程术语，对应英文“double contingency principle”。	internal:dict-improvements
+dose-concepts	zh	年剂量。一年内外照射所致剂量加上该年摄入放射性核素所致待积剂量。除另有说明外，指个人受照剂量。! 一般而言，这并不等同于所涉年份内实际交付的剂量；后者会包括往年摄入后仍留存于体内的放射性核素所致剂量，而会排除所涉年份内摄入的放射性核素在未来年份交付的剂量。避免剂量。由防护行动所避免的剂量。集体剂量。某人群所受的总辐射剂量。它是该人群全体成员个人受照剂量之和。若剂量持续超过一年，则年度个人受照剂量还必须随时间积分。除另有说明外，进行剂量积分的时间为无限长；若对时间积分施加有限上限，则称该集体剂量在该时刻被“截断”。尽管在原则上集体剂量积分的上限可以为无限大，但在多数集体剂量评价中，与高于确定性效应诱发阈值的个人受照剂量或剂量率相关联的那部分分量会被单独考虑。除另有说明外，相关剂量通常为有效剂量（集体有效剂量有正式定义）。单位：人-希沃特（person Sv）。严格说来，这只不过是一个希沃特，但使用人-希沃特这一单位是为了把集体剂量与剂量计所测量的个人受照剂量区分开来（正如，举例来说，用“人-小时”来计量投入某项任务的总工作量，而不是用时钟所显示的经过时间）。对比术语：个人受照剂量。待积剂量。预期由一次摄入所致的一生剂量。该术语部分取代 dose commitment。见剂量量：待积当量剂量与待积有效剂量。[剂量约定]。最终将由某一事件（例如放射性物质释放）、某一蓄意行动或某一实践活动的有限部分所致的总剂量。应酌情使用更为具体和精确的术语，例如待积剂量或集体剂量。个人受照剂量。个人所受的剂量。对比术语：集体剂量。终生剂量。个人在其一生中所受的总剂量。在实践中常近似为各年剂量之和。由于年剂量包含待积剂量，某些年剂量的某些部分可能实际上不会在该个人一生之内交付，因此这可能高估真实的终生剂量。对终生剂量的前瞻性评价，一生通常解释为 70 年。预期剂量。若不采取计划中的防护行动，预期会受到的剂量。剩余剂量。在防护行动终止之后（或已作出不采取防护行动的决定之后）预期会受到的剂量。剩余剂量适用于应急照射情况或现存照射情况。	translated:IAEA-safety-glossary
+dose-conversion-convention	zh	假定的潜在 α 能量照射量与有效剂量之间的关系。用于根据实测或估算的氡所致照射量估算剂量。另见照射量（4）。单位：mSv 每 J·h/m3。	translated:IAEA-safety-glossary
+dose-equivalent	zh	组织或器官中某一点的吸收剂量与引起该剂量的辐射类型的相应品质因子的乘积。一种旨在反映所造成危害程度的组织或器官剂量量度。由当量剂量。剂量当量也是国际辐射单位与测量委员会在定义下列实用量时使用的一个术语：周围剂量当量、定向剂量当量与个人剂量当量（见剂量当量实用量）。[有效剂量当量，HE]。一种旨在反映与该剂量相关联风险的剂量量度，按身体不同组织中剂量当量的加权和计算。	translated:IAEA-safety-glossary
+dose-equivalent-quantities	zh	周围剂量当量，H*(d)。在 ICRU 球中、位于与定向场方向相反的半径矢量上深度 d 处，由相应的定向并扩展场所产生的剂量当量。在辐射场中某一点定义的参数。在外部照射监测中用作有效剂量的可直接测量的替代量（即代用量）。对强贯穿辐射，推荐的 d 值为 10 mm。定向剂量当量，H′(d,Ω)。在 ICRU 球中、位于指定方向 Ω 的半径上深度 d 处，由相应的扩展场所产生的剂量当量。在辐射场中某一点定义的参数。在外部照射监测中用作皮肤当量剂量的可直接测量的替代量（即代用量）。对弱贯穿辐射，推荐的 d 值为 0.07 mm。个人剂量当量，Hp(d)。身体上某一指定点下方、适当深度 d 处的软组织中的剂量当量。在外部照射的个人监测中，用作组织或器官中当量剂量（或在 d = 10 mm 时用作有效剂量）的可直接测量的替代量（即代用量）。推荐的 d 值对强贯穿辐射为 10 mm，对弱贯穿辐射为 0.07 mm。Hp(0.07) 用于所有辐射类型的手部和足部监测。Hp(3) 用于眼晶状体的照射监测。“软组织”通常解释为 ICRU 球。国际辐射单位与测量委员会 [23, 24] 推荐其作为两个单独术语的简化形式，即参考文献 [25] 中定义的 [个人剂量当量，贯穿，Hp(d)] 与 [个人剂量当量，浅表，Hs(d)]。	translated:IAEA-safety-glossary
+dose-per-unit-intake	zh	由以特定方式（通常为食入或吸入）摄入特定化学形态的特定放射性核素的单位活度所致的待积有效剂量或待积当量剂量。其数值在 GSR Part 3 [1] 中作出规定，并由国际放射防护委员会推荐 [22]。就摄入而言，与剂量系数同义。单位：Sv/Bq。	translated:IAEA-safety-glossary
+dose-quantities	zh	吸收剂量，D。基本剂量学量 D，定义为：dε D= dm 其中 dε 是电离辐射授予某一体积元中物质的平均能量，dm 是该体积元中物质的质量。能量可以对任何已定义的体积取平均，平均剂量等于该体积中授予的总能量除以该体积中的质量。吸收剂量是定义在一点上的量；至于组织或器官中的平均剂量，见器官剂量。吸收剂量的 SI 单位为焦耳每千克（J/kg），称为戈瑞（Gy）（过去曾使用 rad）。相对生物效能（RBE）加权吸收剂量，ADT。量 ADT,R，定义为：AD= T,R DT,R × RBE T,R 其中 DT,R 是 R 类辐射在组织或器官 T 中平均授予的吸收剂量，RBET,R 是该 R 类辐射在组织或器官 T 中产生严重确定性效应的相对生物效能。当辐射场由具有不同 RBET,R 值的不同辐射类型组成时，RBE 加权吸收剂量由下式给出：= ADT ∑D T,R × RBE T,R RBE 加权吸收剂量的单位是戈瑞（Gy），等于 1 J/kg。RBE 加权吸收剂量是对组织或器官剂量的一种量度，旨在反映发生严重确定性效应的风险。任何类型辐射对指定组织或器官的 RBE 加权吸收剂量值都可以直接比较。待积有效剂量，E(τ)。量 E(τ)，定义为：E(τ ) = ∑ w ⋅ H (τ ) T T 其中 HT(τ) 是在摄入放射性物质后所经过的积分时间 τ 内对组织或器官 T 的待积当量剂量，wT 是组织或器官 T 的组织权重因子。若未指定 τ，则对成人取 50 年，对儿童的摄入取至 70 岁的时间。也就是说，对儿童的摄入，为 70 年减去年龄的年数：因此，举例来说，对 10 岁儿童为 60 年。待积当量剂量，HT(τ)。量 HT(τ)，定义为：t 0 +τ H T (τ ) = ∫ t0 H T (t ) dt 其中 t0 是摄入时刻，H T (t ) 是组织或器官 T 中时刻 t 的当量剂量率，τ 是在摄入放射性物质后所经过的积分时间。若未指定 τ，则对成人取 50 年，对儿童的摄入取至 70 岁的时间。也就是说，对儿童的摄入，为 70 年减去年龄的年数：因此举例来说，对 10 岁儿童为 60 年。有效剂量，E。量 E，定义为各组织或器官当量剂量的求和，其中每一项均乘以相应的组织权重因子：=E ∑w ⋅ H T T 其中 HT 是组织或器官 T 中的当量剂量，wT 是组织或器官 T 的组织权重因子。由当量剂量的定义可以得出：E= ∑w ⋅ ∑w ⋅ D R T,R 其中 wR 是 R 类辐射的辐射权重因子，DT,R 是 R 类辐射在组织或器官 T 中平均授予的吸收剂量。有效剂量的 SI 单位为焦耳每千克（J/kg），称为希沃特（Sv）。对该量的说明见参考文献 [26] 的附件 B。rem 等于 0.01 Sv，有时被用作当量剂量和有效剂量的单位。在 IAEA 出版物中不应使用该单位，除非直接引用其他出版物，此时应在括号中补充以希沃特表示的数值。有效剂量是一种旨在反映该剂量可能引起的辐射危害的剂量量度。有效剂量不能用于量化较高剂量，也不能用于就与确定性效应相关的任何医学治疗的必要性作出决定。任何类型辐射、任何照射方式所致照射的有效剂量值都可以直接比较。当量剂量，HT。量 HT,R，定义为：= w R ⋅ DT,R H T,R 其中 DT,R 是 R 类辐射在组织或器官 T 中平均授予的吸收剂量，wR 是 R 类辐射的辐射权重因子。当辐射场由具有不同 wR 值的不同辐射类型组成时，当量剂量为：= HT ∑w ⋅ D R T,R 当量剂量的 SI 单位为焦耳每千克（J/kg），称为希沃特（Sv）。对该量的说明见参考文献 [26] 的附件 B。rem 等于 0.01 Sv，有时被用作当量剂量和有效剂量的单位。在 IAEA 出版物中不应使用该单位，除非直接引用其他出版物，此时应在括号中补充以希沃特表示的数值。当量剂量是一种旨在反映所造成危害程度的组织或器官剂量量度。当量剂量不能用于量化较高剂量，也不能用于就与确定性效应相关的任何医学治疗的必要性作出决定。任何类型辐射对指定组织或器官的当量剂量值都可以直接比较。器官剂量。人体指定组织或器官 T 中的平均吸收剂量 DT，由下式给出：1 εT = DT mT ∫ D= mT ⋅ dm m T 其中 mT 是该组织或器官的质量，D 是质量元 dm 中的吸收剂量，ε T 是授予的总能量。有时称为组织剂量。	translated:IAEA-safety-glossary
+dose-rate	zh	1. 单位时间内的剂量。! 虽然原则上剂量率可以按任何时间单位定义（例如年剂量在技术上就是一种剂量率），但在 IAEA 出版物中，剂量率一词只应在短时间段的语境中使用，例如每秒剂量或每小时剂量。2. 在关注点上测得的、单位时间内的周围剂量当量或定向剂量当量（视情况而定）。（见 SSR-6 (Rev. 1) [2]。）! 这一用法专用于《运输条例》[2]。[剂量率效能因子（DREF）] 高剂量率下单位有效剂量的风险与低剂量率下单位有效剂量的风险之比。	translated:IAEA-safety-glossary
+double-contingency-principle	zh	见 单一故障准则。	translated:IAEA-safety-glossary
 double-null	en	A divertor configuration with two X-points, one upper and one lower.	corpus
 double-null	zh	双零位形是具有上、下两个 X 点的偏滤器位形。	corpus
 double-pancake	zh	双饼线圈，是 ITER 环向场与极向场超导磁体的构成单元。双饼是绕制成线圈精确形状的双层螺旋超导体（环向场磁体为 D-形，极向场磁体为环形）。六至九个双饼叠装后形成最终的磁体组件。	translated:ITER-glossary
-drawdown	zh	聚变/核工程术语，对应英文“drawdown”。	internal:dict-improvements
+drawdown	zh	沿海厂址水位的下降。	translated:IAEA-safety-glossary
 drift-kinetics	en	Kinetic theory formulated in the guiding-centre approximation.	corpus
 drift-kinetics	zh	以导向中心近似表述的动理学理论。	corpus
 drift-wave	en	In a non-uniform plasma, a wave formed by a drift flow that arises perpendicular to both the magnetic field and the gradient direction when gradients such as those of temperature, density or magnetic field strength appear.	GB/T-4960.9
-driven-equipment	zh	聚变/核工程术语，对应英文“driven equipment”。	internal:dict-improvements
-dry-storage	zh	聚变/核工程术语，对应英文“dry storage”。	internal:dict-improvements
+driven-equipment	zh	由原动机驱动的部件，例如泵或阀门。	translated:IAEA-safety-glossary
+dry-storage	zh	见 贮存。	translated:IAEA-safety-glossary
 dt-fuel-cycle	en	The closed fuel cycle specific to deuterium-tritium fusion.	corpus
 dt-fuel-cycle	zh	氘氚燃料循环是氘氚聚变特有的闭合燃料循环。	corpus
 dt-reaction	en	The reaction that at present offers the most promising route to the application of fusion energy: D + T -> n + He-4 + 17.6 MeV. It is also called the D-T reaction or D-T burn.	GB/T-4960.9
@@ -4087,18 +4087,18 @@ dust-transport	en	Dust dynamics, mobilization and transport inside the vacuum ve
 dust-transport	zh	粉尘输运是真空容器内粉尘的动力学、可动化与输运。	corpus
 dynamo-effect	en	The self-organization process in a reversed-field pinch by which dynamo action sustains the reversed toroidal flux and the associated equilibrium against resistive decay.	corpus
 dynamo-effect	zh	反向场箍缩中的自组织过程，通过发电机作用维持反向环向磁通及相应平衡，抵抗电阻衰减。	corpus
-early-effect	zh	聚变/核工程术语，对应英文“early effect”。	internal:dict-improvements
-early-protective-actions	zh	聚变/核工程术语，对应英文“early protective actions”。	internal:dict-improvements
-early-release-of-radioactive-material	zh	聚变/核工程术语，对应英文“early release of radioactive material”。	internal:dict-improvements
-early-response-phase	zh	聚变/核工程术语，对应英文“early response phase”。	internal:dict-improvements
-earth-s-crust	zh	聚变/核工程术语，对应英文“Earth’s crust”。	internal:dict-improvements
-earth-s-mantle	zh	聚变/核工程术语，对应英文“Earth’s mantle”。	internal:dict-improvements
+early-effect	zh	见 健康效应。	translated:IAEA-safety-glossary
+early-protective-actions	zh	见 防护行动。	translated:IAEA-safety-glossary
+early-release-of-radioactive-material	zh	一种放射性物质释放，对此有必要采取场外防护行动，但这些行动不太可能及时充分发挥效果。另见大量放射性物质释放与纵深防御。	translated:IAEA-safety-glossary
+early-response-phase	zh	见 应急响应阶段。	translated:IAEA-safety-glossary
+earth-s-crust	zh	地球最外层的固态圈层。地壳占地球体积不到 1%，其厚度从大洋之下约 6 km 变化到山脉之下约 60 km。	translated:IAEA-safety-glossary
+earth-s-mantle	zh	地球的一个固态圈层，厚约 2300 km，位于地壳与地核之间。玄武质岩浆由地幔岩石的部分熔融形成。	translated:IAEA-safety-glossary
 eddy-current	en	A current induced in conducting structures by transient magnetic field changes.	corpus
 eddy-current	zh	涡流是由瞬态磁场变化在导体结构中感应的电流。	corpus
 edge-transport-barrier	en	A transport barrier at the plasma edge associated with the H-mode pedestal.	corpus
 edge-transport-barrier	zh	边缘输运垒是等离子体边缘处与 H 模台基相关的输运垒。	corpus
-effective-half-life	zh	聚变/核工程术语，对应英文“effective half-life”。	internal:dict-improvements
-effusive-eruption	zh	聚变/核工程术语，对应英文“effusive eruption”。	internal:dict-improvements
+effective-half-life	zh	见 半衰期。	translated:IAEA-safety-glossary
+effusive-eruption	zh	见 eruption。	translated:IAEA-safety-glossary
 eigenvalue-problem	en	A criticality problem formulated as an eigenvalue problem for keff.	corpus
 eigenvalue-problem	zh	本征值问题是针对 keff 建立的本征值临界问题。	corpus
 electrical-grid-connection	en	The interface between a fusion plant and the external power grid.	corpus
@@ -4109,18 +4109,18 @@ electron-beam	zh	电子束，指在相邻路径上以相同速度和方向运动
 electron-bernstein-wave	en	An electrostatic wave used for heating overdense plasmas.	corpus
 electron-bernstein-wave	zh	电子伯恩斯坦波是用于加热过密等离子体的静电波。	corpus
 electrostatic-confinement	en	Confinement of a plasma by means of an electric field.	GB/T-4960.9
-elimination-practical	zh	聚变/核工程术语，对应英文“elimination, practical”。	internal:dict-improvements
+elimination-practical	zh	见 实际消除。	translated:IAEA-safety-glossary
 elm-control	en	Methods used to suppress or mitigate edge-localized modes.	corpus
 elm-control	zh	ELM控制：抑制或缓解边缘局域模的方法。	corpus
 elm-induced-erosion	en	Wall erosion caused by ELM transient heat loads.	corpus
 elm-induced-erosion	zh	ELM诱发侵蚀是ELM瞬态热负荷造成的壁侵蚀。	corpus
 embrittlement	en	Loss of ductility in structural materials, arising from irradiation, helium or hydrogen.	corpus
 embrittlement	zh	脆化是结构材料因辐照、氦或氢而丧失延性的现象。	corpus
-emergency	zh	聚变/核工程术语，对应英文“emergency”。	internal:dict-improvements
-emergency-action-level	zh	聚变/核工程术语，对应英文“emergency action level (EAL)”。	internal:dict-improvements
-emergency-arrangements	zh	聚变/核工程术语，对应英文“emergency arrangements”。	internal:dict-improvements
-emergency-class	zh	聚变/核工程术语，对应英文“emergency class”。	internal:dict-improvements
-emergency-classification	zh	聚变/核工程术语，对应英文“emergency classification”。	internal:dict-improvements
+emergency	zh	一种非例行的情况或事件，需要采取迅速行动，主要用以减轻对人的生命、健康、财产和环境的危害或不利后果。这包括核应急与辐射应急，以及常规应急，例如火灾、危险化学品释放、风暴或地震。这还包括虽然危害只是被感知到的、但为减轻其影响而有理由采取迅速行动的情况。与应急有关的术语和定义取自 GSR Part 7 [15]。另见应急类别。核应急或辐射应急。存在或被认为存在由下列原因所致危害的应急：(a) 核链式反应或链式反应产物衰变所产生的能量；或 (b) 辐射照射。(a) 与 (b) 分别近似代表核应急与辐射应急。然而，这并不是精确的区分。当对危害性质作明确区分无关紧要时（例如国家辐射应急计划），某些情况下使用辐射应急一词，其含义实质上相同。跨国应急。对不止一个国家具有实际的、潜在的或被认为的放射学意义的核应急或辐射应急。这可能包括：(1) 放射性物质的显著越境释放（然而，跨国应急并不必然意味着放射性物质的显著越境释放）；(2) 设施发生的一般应急，或其他可能造成放射性物质显著越境释放（大气或水体）的事件；(3) 发现已越境运输或疑似已越境运输的危险源丢失或被非法移走；(4) 导致国际贸易或旅行受到显著干扰的应急；(5) 需要在事发国为外国国民或使馆采取防护行动的应急；(6) 导致或可能导致严重确定性效应，并涉及可能对国际安全产生严重影响的故障和/或问题（例如设备或软件方面的故障和/或问题）的应急；(7) 由于实际存在或被认为存在的放射学危害，导致或可能导致不止一个国家民众高度关切的应急。	translated:IAEA-safety-glossary
+emergency-action-level	zh	见 水平。	translated:IAEA-safety-glossary
+emergency-arrangements	zh	在准备阶段建立的一整套基础设施要素，为具备履行应对核应急或辐射应急所需的某项特定职能或任务的能力所必需。这些要素可包括：权限与职责、组织、协调、人员、计划、程序、设施、设备或培训。	translated:IAEA-safety-glossary
+emergency-class	zh	一组需要有类似立即应急响应的条件。这是用于向响应组织和公众传达所需响应水平的术语。属于某一给定应急类别的事件由针对该设施、源或活动的特定准则界定；若超过这些准则，即表明应归入规定的级别。对每一应急类别，响应组织的初始行动都是预先确定的。IAEA 安全标准规定了五个应急类别，即一般应急、厂址区域应急、设施应急、预警和其他核应急或辐射应急 [15]：(a) 一般应急。对于处于应急准备类别 I 或 II 的设施，指需要在场内和场外采取预防性紧急防护行动、紧急防护行动和早期防护行动以及其他应急响应行动的应急。宣布一般应急时，应根据与应急有关的现有信息迅速采取适当行动，以减轻应急在场内的后果，并保护场内和场外的人员。(b) 厂址区域应急。对于处于应急准备类别 I 或 II 的设施，指需要在场内和厂址附近采取防护行动和其他应急响应行动的应急。宣布厂址区域应急时，应迅速采取行动：(i) 减轻应急在场内的后果并保护场内人员；(ii) 在根据可观察的条件、可靠的评价和/或监测结果认为确有必要时，提高在场外采取防护行动和其他应急响应行动的戒备状态；以及 (iii) 开展场外监测、采样和分析。(c) 设施应急。对于处于应急准备类别 I、II 或 III 的设施，指需要在设施处和场内采取防护行动和其他应急响应行动、但不需要在场外采取防护行动的应急。宣布设施应急时，应迅速采取行动以减轻应急的后果并保护人员。(d) 预警。对于处于应急准备类别 I、II 或 III 的设施，指需要采取行动以评价和减轻设施处潜在后果的事件。宣布预警时，应迅速采取行动以评价和减轻该事件的潜在后果，并提高场内响应组织的戒备状态。(e) 其他核应急或辐射应急。处于应急准备类别 IV 的应急，指需要在任何地点采取防护行动和其他应急响应行动的应急。宣布此类应急时，应迅速采取行动：减轻应急在场内的后果；保护附近人员（例如工作人员、应急工作人员和公众），并确定在何处以及为哪些人需要采取防护行动和其他应急响应行动；评价和减轻该事件的潜在后果；以及提高场内响应组织的戒备状态。	translated:IAEA-safety-glossary
+emergency-classification	zh	由经授权的官员对应急进行分级、以宣布适用应急类别的过程。应急类别一经宣布，响应组织即启动该应急类别的预先确定的应急响应行动。	translated:IAEA-safety-glossary
 emergency-exposure	zh	聚变/核工程术语，对应英文“emergency exposure”。	internal:dict-improvements
 emergency-exposure-situation	zh	聚变/核工程术语，对应英文“emergency exposure situation”。	internal:dict-improvements
 emergency-phase	zh	聚变/核工程术语，对应英文“emergency phase”。	internal:dict-improvements
