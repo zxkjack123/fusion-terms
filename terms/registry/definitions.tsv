@@ -3939,7 +3939,7 @@ decay	en	The process by which a radioactive substance changes to a different for
 decay	zh	衰变是放射性物质通过发出辐射而转变为另一种形态的过程。	https://www.oxfordlearnersdictionaries.com/definition/english/decay
 decay-chain	en	A sequence of successive radioactive decays.	corpus
 decay-chain	zh	衰变链是一系列连续的放射性衰变。	corpus
-decay-constant	zh	对于处于特定能态的放射性核素，dP 除以 dt 之商，其中 dP 是该能态下的单个核在时间间隔 dt 内发生自发核跃迁的可能性。λ = −(1/N)(dN/dt) = A/N，式中 N 为时刻 t 存在的所关注核的数目，A 为活度。衰变常数是一个比例常数，描述单个核在微分时间间隔内自发由较高能态向较低能态发生核跃迁的可能性。它也对应于：λ = −lim(∆t → 0)[(∆N/N)/∆t] = −(1/N)(dN/dt) = A/N。单位：每秒的倒数（s–1）。活度等于衰变常数乘以所存在放射性核素的核数目。衰变常数与放射性核素的放射性半衰期 T½ 通过下式相联系：λ = ln 2 / T1。	translated:IAEA-safety-glossary
+decay-constant	zh	对于处于特定能态的放射性核素，dP 除以 dt 之商，其中 dP 是该能态下的单个核在时间间隔 dt 内发生自发核跃迁的可能性。dP 1 dN A λ== − = dt N dt N，式中 N 为时刻 t 存在的所关注核的数目，A 为活度。衰变常数是一个比例常数，描述单个核在微分时间间隔内自发由较高能态向较低能态发生核跃迁的可能性。它亦对应于：∆N / N 1 dN A λ= − lim = − = ∆t → 0 ∆t N dt N。单位：每秒的倒数（s–1）。活度等于衰变常数乘以所存在放射性核素的核数目。衰变常数与放射性核素的放射性半衰期 T½ 通过下式相联系：ln 2 λ= T1。	translated:IAEA-safety-glossary
 decay-gamma-source	en	A photon source from the radioactive decay of activated materials.	corpus
 decay-gamma-source	zh	衰变光子源是活化材料放射性衰变产生的光子源。	corpus
 decision-limit	zh	见 最小显著活度。	translated:IAEA-safety-glossary
