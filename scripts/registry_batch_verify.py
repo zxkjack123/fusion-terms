@@ -643,6 +643,7 @@ SELF_TEST_RESTORED_CASES: frozenset[int] = frozenset(
         0,  # malformed: 6-column row (poloidal-field-power-supply)
         1,  # malformed: left-shifted row (energy-security)
         3,  # malformed: boilerplate + 指“en” + non-whitelisted source (adjoint-flux)
+        4,  # malformed: preferred_zh absent from allowlist_zh.txt (same concept)
     }
 )
 
@@ -658,7 +659,9 @@ def _build_restored_defect_corpus(real_root: Path, dest: Path) -> Corpus:
     * ``energy-security`` — the row was left-shifted, so the zh slot holds the
       English name instead of ``能源安全``;
     * ``adjoint-flux`` — the zh definition was the low-information template that
-      leaked the language label (``聚变/核工程术语，指“en”这一技术概念。``).
+      leaked the language label (``聚变/核工程术语，指“en”这一技术概念。``), and
+      the en definition was the boilerplate sentence with a non-whitelisted
+      ``internal:dict-improvements`` source.
 
     Only the copies under ``dest`` are mutated; ``real_root`` is never written.
     Row counts are preserved, so every ``file:line`` anchor in
@@ -695,10 +698,28 @@ def _build_restored_defect_corpus(real_root: Path, dest: Path) -> Corpus:
             # defect: low-information template that leaked the language label
             fields[DEF_COL_TEXT] = f"{BOILERPLATE_ZH_MARK}，指“en”这一技术概念。"
             definitions[index] = "\t".join(fields)
+        elif fields[DEF_COL_LANG] == "en":
+            # defect: boilerplate en text with a non-whitelisted source.  W1-B-33
+            # replaced the real en row with a corpus definition, so restoring only
+            # the zh row no longer exercises ``def_boilerplate_regex`` or
+            # ``def_source_unknown`` on line 5837.
+            fields[DEF_COL_TEXT] = (
+                "Fusion/nuclear engineering term referring to 'adjoint flux' "
+                "in technical context."
+            )
+            fields[DEF_COL_SOURCE] = "internal:dict-improvements"
+            definitions[index] = "\t".join(fields)
     (registry / "definitions.tsv").write_text("\n".join(definitions), encoding="utf-8")
 
     for name in ("allowlist_zh.txt", "allowlist_en.txt"):
         shutil.copyfile(real_root / "terms" / name, dest / "terms" / name)
+
+    # defect: ``极向场电源`` (the preferred_zh of poloidal-field-power-supply) was
+    # added to the real allowlist by W2-batch-33, so the ``allow_zh_not_listed``
+    # sample is re-created by dropping that line from the copy only.
+    allowlist_zh = (dest / "terms" / "allowlist_zh.txt").read_text(encoding="utf-8")
+    kept = [line for line in allowlist_zh.split("\n") if line.strip() != "极向场电源"]
+    (dest / "terms" / "allowlist_zh.txt").write_text("\n".join(kept), encoding="utf-8")
     return Corpus(dest)
 
 
@@ -754,37 +775,41 @@ def run_self_test(corpus: Corpus) -> int:
             print(f"  FAIL  {label}{(' — ' + extra) if extra else ''}")
             failures.append(label)
 
-    print("self-test: rule-level assertions on real corpus text")
-    definitions = corpus.definitions()
-    adjoint_en = definitions["adjoint-flux"]["en"][0][1]
-    aspect_en = definitions["aspect-ratio"]["en"][0][1]
-    expect(
-        BOILERPLATE_EN_RE.match(adjoint_en) is not None,
-        "boilerplate regex fires on the real adjoint-flux en text",
-        f"regex did not match {adjoint_en[:60]!r}",
-    )
-    expect(
-        BOILERPLATE_EN_RE.match(aspect_en) is None,
-        "boilerplate regex does not fire on a real ITER definition",
-    )
-    expect(
-        corpus.allowlist_en_space_lines() == [],
-        "allowlist_en.txt has no whitespace on non-comment lines",
-    )
-    expect(
-        CJK_RE.search("托卡马克") is not None
-        and CJK_RE.search("energy security") is None,
-        "CJK detector separates 托卡马克 from 'energy security'",
-    )
-
-    print("self-test: mode verdicts on real corpus rows")
+    # The restored copy is built once, before *both* the rule-level section and the
+    # mode-verdict section, and removed once in the ``finally`` below.  Building it
+    # twice would leak a temp tree on any early return.
     restored_root = Path(tempfile.mkdtemp(prefix="t0_2_selftest_restored_"))
     try:
-        # Three samples sit on rows that later data repairs removed (see
-        # SELF_TEST_RESTORED_CASES); they run against a copy of the real corpus in
-        # which those defects are re-created.  The rules — and every assertion,
-        # including its file:line anchor — are unchanged.
+        # Samples in SELF_TEST_RESTORED_CASES sit on rows that later data repairs
+        # fixed; they run against a copy of the real corpus in which those defects
+        # are re-created.  The rules — and every assertion, including its
+        # file:line anchor — are unchanged.
         restored = _build_restored_defect_corpus(corpus.root, restored_root)
+
+        print("self-test: rule-level assertions on restored corpus text")
+        definitions = restored.definitions()
+        adjoint_en = definitions["adjoint-flux"]["en"][0][1]
+        aspect_en = definitions["aspect-ratio"]["en"][0][1]
+        expect(
+            BOILERPLATE_EN_RE.match(adjoint_en) is not None,
+            "boilerplate regex fires on the restored adjoint-flux en text",
+            f"regex did not match {adjoint_en[:60]!r}",
+        )
+        expect(
+            BOILERPLATE_EN_RE.match(aspect_en) is None,
+            "boilerplate regex does not fire on a real ITER definition",
+        )
+        expect(
+            corpus.allowlist_en_space_lines() == [],
+            "allowlist_en.txt has no whitespace on non-comment lines",
+        )
+        expect(
+            CJK_RE.search("托卡马克") is not None
+            and CJK_RE.search("energy security") is None,
+            "CJK detector separates 托卡马克 from 'energy security'",
+        )
+
+        print("self-test: mode verdicts on real corpus rows")
         for index, (label, mode, ids, expect_ok, expected) in enumerate(
             SELF_TEST_CASES
         ):
