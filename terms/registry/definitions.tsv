@@ -3810,12 +3810,12 @@ concept-of-operations	zh	见 应急计划。	translated:IAEA-safety-glossary
 conceptual-model	zh	见 模型。	translated:IAEA-safety-glossary
 condenser	en	A device that condenses exhaust steam back into water.	corpus
 condenser	zh	凝汽器是将排汽冷凝回水的装置。	corpus
-condition-based-maintenance	zh	聚变/核工程术语，对应英文“condition based maintenance”。	internal:dict-improvements
-condition-indicator	zh	聚变/核工程术语，对应英文“condition indicator”。	internal:dict-improvements
-condition-monitoring	zh	聚变/核工程术语，对应英文“condition monitoring”。	internal:dict-improvements
-conditional-probability-value	zh	聚变/核工程术语，对应英文“conditional probability value (CPV)”。	internal:dict-improvements
-conditional-risk	zh	聚变/核工程术语，对应英文“conditional risk”。	internal:dict-improvements
-conditioning	zh	聚变/核工程术语，对应英文“conditioning”。	internal:dict-improvements
+condition-based-maintenance	zh	见 预测性维修。	translated:IAEA-safety-glossary
+condition-indicator	zh	见 指标。	translated:IAEA-safety-glossary
+condition-monitoring	zh	见 监测。	translated:IAEA-safety-glossary
+conditional-probability-value	zh	某一类特定事件将造成不可接受的放射性后果的条件概率的上界。该术语用于场址评价中的详细事件筛选过程。	translated:IAEA-safety-glossary
+conditional-risk	zh	见 风险。	translated:IAEA-safety-glossary
+conditioning	zh	见 放射性废物管理。	translated:IAEA-safety-glossary
 confinement	zh	聚变/核工程术语，对应英文“Confinement”。	internal:dict-improvements
 confinement-barrier	en	Physical barrier that prevents the release of radioactive material.	corpus
 confinement-barrier	zh	阻止放射性物质释放的物理屏障。	corpus
@@ -3824,36 +3824,36 @@ confinement-function	zh	包容功能是为放射性物质提供包容屏障的�
 confinement-scaling	en	An empirical or semi-empirical expression showing how various plasma parameters (for example confinement and power threshold) vary with the operating conditions of a tokamak; it is summarized from a large amount of experimental data.	GB/T-4960.9
 conformal-mesh	en	A body-fitted unstructured mesh that follows the geometry.	corpus
 conformal-mesh	zh	适体网格是贴合几何形状的非结构化网格。	corpus
-consequence-assessment	zh	聚变/核工程术语，对应英文“consequence assessment”。	internal:dict-improvements
-consignee	zh	聚变/核工程术语，对应英文“consignee”。	internal:dict-improvements
-consignment	zh	聚变/核工程术语，对应英文“consignment”。	internal:dict-improvements
-consignor	zh	聚变/核工程术语，对应英文“consignor”。	internal:dict-improvements
-constraint	zh	聚变/核工程术语，对应英文“constraint”。	internal:dict-improvements
-construction	zh	聚变/核工程术语，对应英文“construction”。	internal:dict-improvements
+consequence-assessment	zh	见 评价。	translated:IAEA-safety-glossary
+consignee	zh	任何有权接收托运件交付的个人、组织或政府。（参见 SSR-6 (Rev. 1) [2]。）	translated:IAEA-safety-glossary
+consignment	zh	由发货方提交运输的任何包装或多个包装，或一批放射性物质装载物。（参见 SSR-6 (Rev. 1) [2]。）	translated:IAEA-safety-glossary
+consignor	zh	任何为运输准备托运件的个人、组织或政府。（参见 SSR-6 (Rev. 1) [2]。）	translated:IAEA-safety-glossary
+constraint	zh	个人剂量（见剂量约束）或个人风险（见风险约束）的一种预期且与源相关的值，它在计划照射情形中用作该源防护与安全最优化的参数，并作为界定最优化备选方案范围的边界。	translated:IAEA-safety-glossary
+construction	zh	制造和组装设施部件、实施土建工程、安装部件与设备以及进行相关试验的过程。选址、设计、建造、调试、运行和退役这些术语通常用于界定经授权设施及其相关许可证审批过程的寿期中的六个主要阶段。在放射性废物处置设施的特殊情形中，该序列中的退役由关闭所取代。	translated:IAEA-safety-glossary
 construction-schedule	en	The construction timeline for large fusion devices.	corpus
 construction-schedule	zh	建造进度是大型聚变装置的建造时间表。	corpus
-consumer-product	zh	聚变/核工程术语，对应英文“consumer product”。	internal:dict-improvements
+consumer-product	zh	一种器件或制成品，其中已被刻意掺入放射性核素，或通过活化产生放射性核素，或该器件或制成品会产生电离。	translated:IAEA-safety-glossary
 container	en	OS-level virtualization for reproducible computing.	corpus
 container	zh	容器是用于可复现计算的操作系统级虚拟化。	corpus
-container-waste	zh	聚变/核工程术语，对应英文“container, waste”。	internal:dict-improvements
+container-waste	zh	见 waste container。	translated:IAEA-safety-glossary
 containment	zh	聚变/核工程术语，指“安全壳”这一技术概念。	internal:dict-improvements
-containment-system	zh	聚变/核工程术语，对应英文“containment system”。	internal:dict-improvements
-contamination	zh	聚变/核工程术语，对应英文“contamination”。	internal:dict-improvements
-contamination-zone	zh	聚变/核工程术语，对应英文“contamination zone”。	internal:dict-improvements
+containment-system	zh	1. 一种在结构上封闭的实体屏障（尤其是在核设施中），用于防止或控制放射性物质的释放与扩散，以及与其相关的系统。2. 由设计者规定的、旨在运输期间保持放射性物质的包装组件总成。（参见 SSR-6 (Rev. 1) [2]。）「安全壳系统」与 containment 一词在安全领域的一般用法相一致，而与「封闭系统」（confinement system）和「封闭」（confinement）不同。	translated:IAEA-safety-glossary
+contamination	zh	1. 存在于表面之上、或固体、液体或气体（包括人体）之内的放射性物质，其存在是非故意的或不合需要的，或指造成其在这些位置出现的过程。该词也较不正式地用于指某一量，即表面（或表面单位面积）上的活度。污染不包括退役完成后场址上残留的放射性物质。! 污染一词可能带有并非本意的含义。污染一词仅指放射性的存在，并不表示所涉危害的大小。2. 表面上存在放射性物质，其数量超过 β 和 γ 发射体及低毒性 α 发射体的 0.4 Bq/cm2，或超过所有其他 α 发射体的 0.04 Bq/cm2。（参见 SSR-6 (Rev. 1) [2]。）这是污染的一种监管定义，专用于《运输条例》[2]。低于 0.4 Bq/cm2 或 0.04 Bq/cm2 的水平按科学定义 (1) 仍将被视为污染。固定污染。非固定污染以外的污染。（参见 SSR-6 (Rev. 1) [2]。）非固定污染。在常规运输条件下可从表面去除的污染。（参见 SSR-6 (Rev. 1) [2]。）也称为可去除污染。	translated:IAEA-safety-glossary
+contamination-zone	zh	由于实际或潜在的空气污染或松散表面污染超过规定水平而需要采取特殊防护行动的区域。	translated:IAEA-safety-glossary
 continuous-energy	en	Continuous-energy Monte Carlo, as distinct from multigroup.	corpus
 continuous-energy	zh	连续能量指连续能量蒙特卡罗，区别于多群方法。	corpus
 continuum-radiation	en	A bremsstrahlung plus recombination continuum spectrum.	corpus
 continuum-radiation	zh	连续辐射是由轫致辐射与复合辐射构成的连续谱。	corpus
 contour-plot	en	A visualization of isolines or isosurfaces.	corpus
 contour-plot	zh	等值线图是等值线或等值面的可视化。	corpus
-control	zh	聚变/核工程术语，对应英文“control”。	internal:dict-improvements
+control	zh	1. 指导、调节或约束的功能或权力，或（通常以 controls 的形式）指导、调节或约束的手段。应注意，英文 control 一词在安全相关语境中的通常含义比其在某些其他语言中的通常译法和其他类似词语的含义略「更强」（更为主动）。例如，control 通常不仅意味着检查或监测某事，还意味着确保在检查或监测结果表明有此需要时采取纠正或强制执行措施。这与该对应词在法语和西班牙语中较为有限的用法形成对照。机构控制（institutional control）。由国家法律指定的当局或机构对放射性废物场址实施的控制。这种控制可以是主动的（监测、监督、补救工作），也可以是被动的（土地使用控制），并且可能是设施设计（例如近地表处置设施）中的一个因素。最常用于描述对关闭后的处置设施或正在退役的设施所实施的控制。也指对已解除监管控制、但以遵守其未来使用的特定限制为条件而释放的场址所施加的控制，以确保这些限制得到遵守。机构控制一词比监管控制更一般（即监管控制可被视为机构控制的一种特殊形式）。机构控制措施可以是被动的，可以出于与防护或安全无关的原因而施加（尽管它们仍可能对防护与安全有一定影响），可以由不符合监管机构定义的组织实施，并可能适用于不属于设施和活动范围的情形。因此，与监管控制相比，某种形式的机构控制可能被认为更有可能在更远的未来持续存在。监管控制（regulatory control）。1. 监管机构出于核安全与辐射防护或核安保方面的原因对设施和活动实施的任何形式的控制或监管。在 IAEA 核安保丛书中，「脱离监管控制」一语用于描述核材料或其他放射性物质在无适当授权的情况下存在的情形，其原因或是控制因某种原因失效，或是控制从未存在。另见机构控制。2. [监管机构出于辐射防护或放射源安全或安保方面的原因对设施或活动实施的任何形式的控制或监管。]（参见参考文献 [14]。）! 这一定义为《放射源安全与安保行为准则》[14] 所特有。2. 用于核对由实验推得的推断的比较标准。在防护与安全中，对照最常是未受某一特定源照射的样本或人群组；将受照射的样本或人群组中特定效应的发生情况与对照中的发生情况进行比较，以提供有关可能归因于该照射的效应的某些指示。例如，病例-对照研究是一种常见的流行病学研究类型，其中将受某一特定源辐射照射的人群中健康效应的发生率（「病例」）与未受照射的类似人群（「对照」）中的发生率进行比较，以调查该源所致照射是否可能导致健康效应。	translated:IAEA-safety-glossary
 controlled-area	zh	聚变/核工程术语，指“控制区”这一技术概念。	internal:dict-improvements
-controlled-state	zh	聚变/核工程术语，对应英文“controlled state”。	internal:dict-improvements
+controlled-state	zh	见 电厂状态。	translated:IAEA-safety-glossary
 conventional-island	en	The part of a fusion power plant that houses the turbine-generator, cooling systems and balance-of-plant equipment.	corpus
 conventional-island	zh	常规岛：聚变电站中布置汽轮发电机、冷却系统与配套设施的部分。	corpus
 convergence-criterion	en	A threshold for iterative solution convergence.	corpus
 convergence-criterion	zh	收敛准则是迭代求解收敛的判定阈值。	corpus
-conveyance	zh	聚变/核工程术语，对应英文“conveyance”。	internal:dict-improvements
+conveyance	zh	(a) 公路或铁路运输：任何车辆；(b) 水路运输：任何船舶，或船舶的任何货舱、隔舱或划定甲板区域；(c) 空运：任何航空器。（参见 SSR-6 (Rev. 1) [2]。）	translated:IAEA-safety-glossary
 coolant	en	A liquid that is used for cooling, such as an engine or a nuclear reactor.	https://www.oxfordlearnersdictionaries.com/definition/english/coolant
 coolant	zh	冷却剂：用于冷却（如发动机或核反应堆）的液体。	https://www.oxfordlearnersdictionaries.com/definition/english/coolant
 coolant-chemistry	en	Chemical control of the coolant in a blanket.	corpus
@@ -3866,16 +3866,16 @@ cooling	zh	冷却是使物体变冷或温度降低的过程。	https://www.oxfor
 cooling-tower	en	A structure that rejects waste heat to the atmosphere.	corpus
 cooling-tower	zh	冷却塔是向大气排放废热的构筑物。	corpus
 cooling-water-system	zh	冷却水系统用于排出 ITER 多种系统产生的热量，由托卡马克冷却水系统、部件冷却水系统、冷冻水系统和排热系统组成。	translated:ITER-glossary
-core-components	zh	聚变/核工程术语，对应英文“core components”。	internal:dict-improvements
-corrective-maintenance	zh	聚变/核工程术语，对应英文“corrective maintenance”。	internal:dict-improvements
+core-components	zh	反应堆堆芯中除燃料组件以外的核心部件，它们用于为堆芯构造提供结构支撑，或者是插入反应堆堆芯用于堆芯监测、流量控制或其他技术目的并作为堆芯要素处理的工具、装置或其他物品。核心部件的例子有反应性控制装置或停堆装置、中子源、假燃料、燃料管道、仪表、限流器和可燃毒物。	translated:IAEA-safety-glossary
+corrective-maintenance	zh	见 维护。	translated:IAEA-safety-glossary
 corrosion-product	en	A driver of radiation dose in the cooling loop.	corpus
 corrosion-product	zh	腐蚀产物是冷却回路辐射剂量的驱动因素。	corpus
-cost-benefit-analysis	zh	聚变/核工程术语，对应英文“cost–benefit analysis”。	internal:dict-improvements
+cost-benefit-analysis	zh	见 分析。	translated:IAEA-safety-glossary
 coulomb-barrier	en	Electrostatic energy barrier that interacting nuclei must overcome for nuclear fusion to occur.	corpus
 coulomb-barrier	zh	原子核发生聚变反应必须克服的静电能量势垒。	corpus
 coulomb-collision	en	Binary scattering of charged particles through the Coulomb interaction.	corpus
 coulomb-collision	zh	库仑碰撞是带电粒子通过库仑相互作用的二体散射。	corpus
-countermeasure	zh	聚变/核工程术语，对应英文“countermeasure”。	internal:dict-improvements
+countermeasure	zh	旨在减轻事故放射性后果的行动。对策是干预的形式。它们可以是防护行动或补救行动，在可能时应使用这些更具体的术语。对策（countermeasure）和农业对策（agricultural countermeasure）这两个术语在 GSR Part 7 [15] 中未使用。农业对策。为减少食品或农林业产品在到达消费者之前的污染而采取的行动。请注意，对受污染食品或农林业产品的销售、移动或使用所施加的限制（即防止其到达消费者的措施）属于对策，但不被视为农业对策。「从摇篮到坟墓」方法。一种考虑设施、活动或产品寿期中所有阶段的方法。例如，放射源安全与安保的「从摇篮到坟墓」方法。见老化管理。见寿期管理。	translated:IAEA-safety-glossary
 cpu-core	en	A processor core, distinct from a plasma core.	corpus
 cpu-core	zh	CPU核心是处理器核心，区别于等离子体核心。	corpus
 cracking	en	PFC surface cracking from thermal cycling or shock.	corpus
@@ -3884,7 +3884,7 @@ creep	en	Time-dependent plastic deformation under sustained stress at elevated t
 creep	zh	蠕变是高温下持续应力作用下的随时间变化的塑性变形。	corpus
 creep-fatigue-interaction	en	The coupled assessment of creep and fatigue damage in high-temperature structural components (RCC-MRx).	corpus
 creep-fatigue-interaction	zh	蠕变-疲劳交互是高温结构件蠕变损伤与疲劳损伤的耦合评估（RCC-MRx）。	corpus
-critical	zh	聚变/核工程术语，对应英文“critical (adjective)”。	internal:dict-improvements
+critical	zh	! 鉴于该词附有许多特殊含义，在使用形容词 critical 的较常见英语含义（即表示极为重要，或作为动词 criticize 的派生用法）时应特别小心。1. 反应性为零的。也较宽松地用于反应性大于零的情形。见临界。2. 与可归因于某一特定源的最高剂量或风险有关的。例如，如关键照射途径或关键放射性核素。3. 能够维持核链式反应的。例如，如临界质量。	translated:IAEA-safety-glossary
 critical-assembly	zh	聚变/核工程术语，对应英文“critical assembly”。	internal:dict-improvements
 critical-balance	en	A nonlinear balance state between parallel and perpendicular time scales.	corpus
 critical-balance	zh	临界平衡是平行与垂直时间尺度之间的非线性平衡状态。	corpus
