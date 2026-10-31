@@ -4215,30 +4215,30 @@ exposure	zh	1. 受到辐照的状态或情形。! 不应将照射用作剂量的
 exposure-assessment	zh	见 剂量评价。	translated:IAEA-safety-glossary
 exposure-categories	zh	医疗照射。患者为自身的医学或牙科诊断（诊断照射）或医学治疗（治疗照射）目的而受到的照射；照护者和陪护者受到的照射；以及作为生物医学研究计划一部分而受到照射的志愿者所受到的照射。见患者。职业照射。工作人员在其工作过程中受到的照射。公众照射。公众成员因计划照射情况、应急照射情况和现存照射情况中的源而受到的照射，不包括任何职业照射或医疗照射。	translated:IAEA-safety-glossary
 exposure-due-to-radon	zh	见 照射。	translated:IAEA-safety-glossary
-exposure-pathway	zh	聚变/核工程术语，对应英文“exposure pathway”。	internal:dict-improvements
-exposure-situations	zh	聚变/核工程术语，对应英文“exposure situations”。	internal:dict-improvements
+exposure-pathway	zh	辐射或放射性核素得以到达人体并造成照射的途径。照射途径可以非常简单，例如来自气载放射性核素的外照射途径；也可以是一条更为复杂的链条，例如饮用食用了受沉积放射性核素污染的牧草的奶牛所产牛奶而造成的内照射途径。	translated:IAEA-safety-glossary
+exposure-situations	zh	! 照射情况由受照个人的受照情形所表明；例如，它不能用来表征某个管辖区或地理区域，尽管出于实际目的有时会作此类概括性假定。三类大范围照射情况被用作组织 GSR Part 3 [1] 中所确立安全要求的基础。以“情况”作出的这些界定（源自参考文献 [26]）并未清晰划界，也并非在概念上彼此区分，而且对这三类照射情况的描述并不总是足以明确判定某一特定情形适用哪一类照射情况。在安全标准中，针对特定情形最适宜的照射情况类型是在考虑实际因素后确定的。应急照射情况。因事故、恶意行为或其他意外事件而产生的照射情况，需要采取迅速行动以避免或减少不利后果。应急中的照射既可包括职业照射，也可包括公众照射，还可包括直接导致应急照射情况的非计划照射，以及在应急中采取行动以减轻应急后果的应急工作人员和援助人员所受的计划照射。应急中的照射只能通过防护行动和其他响应行动来减少。现存照射情况。在需要就控制必要性作出决定时已经存在的照射情况。现存照射情况包括可加以控制的天然本底辐射照射；来自从未受监管控制的以往实践所残留的放射性物质的照射；以及在宣布应急结束之后源自核应急或辐射应急的残留放射性物质所致的照射。见 GSR Part 3 [1] 第 5.1 段和要求 52。计划照射情况。因源的计划运行、或因导致某源所致照射的计划活动而产生的照射情况。由于可在开展有关活动之前就作出防护与安全安排，相关照射及其发生概率能够从一开始就受到限制。控制计划照射情况下照射的主要手段，是对设施、设备和运行程序进行良好设计。在计划照射情况下，预期会出现一定水平的照射。	translated:IAEA-safety-glossary
 extended-mhd	en	An MHD model that includes two-fluid, FLR and kinetic closure effects.	corpus
 extended-mhd	zh	扩展MHD是包含双流体、有限拉莫尔半径与动理学闭合效应的 MHD 模型。	corpus
-extended-planning-distance	zh	聚变/核工程术语，对应英文“extended planning distance (EPD)”。	internal:dict-improvements
-external-event	zh	聚变/核工程术语，对应英文“external event”。	internal:dict-improvements
-external-exposure	zh	聚变/核工程术语，对应英文“external exposure”。	internal:dict-improvements
+extended-planning-distance	zh	见 应急计划距离。	translated:IAEA-safety-glossary
+external-event	zh	与设施运行或活动实施无关、但可能对设施或活动的安全产生影响的事件。核设施外部事件的典型例子包括地震、龙卷风、海啸和飞机坠撞。就废物管理中的长期安全安全评价而言，相关的外部事件是指可能对多重屏障的功能产生影响的事件。	translated:IAEA-safety-glossary
+external-exposure	zh	见 照射。	translated:IAEA-safety-glossary
 external-kink	en	Current-driven kink instability outside the plasma boundary.	corpus
 external-kink	zh	外扭曲模是等离子体边界外的电流驱动扭曲不稳定性。	corpus
-external-zone	zh	聚变/核工程术语，对应英文“external zone”。	internal:dict-improvements
+external-zone	zh	紧邻拟议场址区周边、并针对其影响来考虑人口分布与人口密度以及土地和水域利用状况以规划有效应急响应行动的区域。用于设施选址的语境。这就是若设施已建成时将成为应急计划区的区域。	translated:IAEA-safety-glossary
 faceted-geometry	en	Triangulated surface geometry, as used by DAGMC.	corpus
 faceted-geometry	zh	面片化几何是由三角面片构成、DAGMC 等代码使用的表面几何。	corpus
-facilities-and-activities	zh	聚变/核工程术语，对应英文“facilities and activities”。	internal:dict-improvements
-facility	zh	聚变/核工程术语，对应英文“facility”。	internal:dict-improvements
-facility-emergency	zh	聚变/核工程术语，对应英文“facility emergency”。	internal:dict-improvements
-facility-states	zh	聚变/核工程术语，对应英文“facility states (considered in design)”。	internal:dict-improvements
-failure	zh	聚变/核工程术语，对应英文“failure (technical)”。	internal:dict-improvements
-failure-mode	zh	聚变/核工程术语，对应英文“failure mode”。	internal:dict-improvements
-far-field	zh	聚变/核工程术语，对应英文“far field”。	internal:dict-improvements
+facilities-and-activities	zh	一个通用术语，涵盖核设施、所有电离辐射源的使用、所有放射性废物管理活动、放射性物质运输，以及人们可能受到源自天然或人工源的辐射照射的任何其他实践或情形。“设施”包括：核设施；辐照装置；某些采矿和原料加工设施，例如铀矿；放射性废物管理设施；以及在达到需要考虑防护与安全的规模上生产、加工、使用、处理、贮存或处置放射性物质——或安装辐射发生器——的任何其他场所。“活动”包括：用于工业、研究和医疗目的的辐射源的生产、使用、进口和出口；放射性物质运输；设施退役；诸如流出物排放之类的放射性废物管理活动；以及受以往活动残留物影响的场址整治的某些方面。其意图是涵盖任何引入附加辐射源或附加照射途径，或改变现有源的照射途径网络，从而使人员所受照射、照射可能性或受照人数增加的人类活动。“设施与活动”一词意在提供一个替代源与实践（或干预）这一术语体系的说法，用以指称总体类别的情形。例如，一项实践可能涉及许多不同的设施和/或活动，而源的一般定义 (1) 在某些情况下过于宽泛：一项设施或活动可能构成一个源，也可能涉及许多源的使用，取决于所采用的解释。“设施与活动”一词非常宽泛，还包括那些可能无需或难以实施监管控制、或只能实施极少监管控制的设施与活动：应使用更具体的术语“经许可的设施”和“经许可的活动”，以区分那些已获得任何形式许可的设施与活动。在《基本安全原则》（安全基本法则）中，“用于和平目的的现有和新建设施与活动”一语为方便起见被简称为“设施与活动”，作为一个通用术语，涵盖可能使人员受到源自天然或人工源的辐射风险照射的任何人类活动（见 SF-1 [17] 第 1.9 段）。GSR Part 4 (Rev. 1) [11] 中列出的设施与活动如下：“设施”包括：(a) 核动力厂；(b) 其他反应堆（例如研究堆和临界装置）；(c) 浓缩设施和核燃料制造设施；(d) 用于生成六氟化铀 (UF6) 的转化设施；(e) 乏燃料贮存设施和后处理厂；(f) 对放射性废物进行处理、整备、贮存或处置的放射性废物管理设施；(g) 生产、加工、使用、处理或贮存放射性物质的任何其他场所；(h) 用于医疗、工业、研究及其他目的的辐照装置，以及安装辐射发生器的任何场所；(i) 进行放射性矿石（例如铀矿石和钍矿石）开采和加工的设施。“活动”包括：(a) 用于医疗、工业、研究及其他目的的辐射源的生产、使用、进口和出口；(b) 放射性物质运输；(c) 设施退役和放射性废物处置库的关闭；(d) 曾进行放射性矿石开采和加工的设施的收尾；(e) 诸如流出物排放之类的放射性废物管理活动；(f) 受以往活动残留物影响的场址的整治。	translated:IAEA-safety-glossary
+facility	zh	见 设施与活动。	translated:IAEA-safety-glossary
+facility-emergency	zh	见 应急类别。	translated:IAEA-safety-glossary
+facility-states	zh	研究堆和核燃料循环设施安全标准中所使用的设施状态概念，与核动力厂的厂状态概念大致相当。相关术语和定义见厂状态（设计中考虑的）（即运行状态、正常运行、预期运行事件、事故工况、设计基准事故、设计扩展工况、受控状态、安全状态）；另见厂的设备（就核动力厂而言）：安全特性（就设计扩展工况而言）。1. 设施状态（为设计目的所考虑的研究堆设施的假定状态）。运行状态；事故工况；设计扩展工况；预期的；正常的；设计基准；运行的；运行；事故；无；发生；有；堆芯；显著的；燃料；熔化；退化。见 SSR-3 [29]。2. 设施状态（为设计目的所考虑的核燃料循环设施的假定状态）。运行状态；事故工况；正常的；预期的；设计基准；设计扩展；运行；运行；事故；工况；事件。见 SSR-4 [30]。	translated:IAEA-safety-glossary
+failure	zh	构筑物、系统或部件丧失在验收准则范围内发挥功能的能力。! 请注意，当构筑物、系统或部件变得无法发挥功能时，即被认为失效，无论当时是否需要其发挥功能。! 例如，备用系统中的失效可能直到该系统被要求发挥功能时才显现，或是在试验期间，或是在其所备用的系统失效之时。失效可能是例如硬件故障、软件故障、系统故障、操作员失误或维修失误的结果。共因失效。两个或多个构筑物、系统或部件因单一特定事件或原因而发生的失效。例如，导致失效（可能是不同类型的失效）的单一特定事件或原因可以是设计缺陷、制造缺陷、运行与维修失误、自然现象、人为诱发事件、信号饱和，或厂内任何其他运行或失效所致的非预期级联效应，或环境条件的改变。共因对于系统而言可以是内部的或外部的。共模失效。两个或多个构筑物、系统或部件因单一特定事件或原因而以相同方式或相同模式发生的失效。共模失效是共因失效的一种类型，其中构筑物、系统或部件以相同方式失效（尽管它们可能并不彼此邻近）。	translated:IAEA-safety-glossary
+failure-mode	zh	构筑物、系统或部件发生失效的方式或状态。	translated:IAEA-safety-glossary
+far-field	zh	处置设施之外的地质圈，由周围的地质地层构成，其与处置设施的距离使得就建模目的而言可将处置设施视为单一实体，而不区分各个废物包的影响。出于实际目的，这通常被简单地理解为近场之外的地质圈。	translated:IAEA-safety-glossary
 faraday-rotation	en	The rotation of the plane of polarization of light after it has passed through a magnetized plasma.	GB/T-4960.9
 fast-wave	en	The fast magnetosonic wave branch used in ICRF heating.	corpus
 fast-wave	zh	快波是用于 ICRF 加热的快磁声波支。	corpus
-fault-geological	zh	聚变/核工程术语，对应英文“fault, geological”。	internal:dict-improvements
-feed	zh	聚变/核工程术语，对应英文“feed”。	internal:dict-improvements
+fault-geological	zh	见 地质断层。	translated:IAEA-safety-glossary
+feed	zh	拟直接饲喂食用动物的任何单一材料或多种材料，无论其经过加工、半加工或为原料。	translated:IAEA-safety-glossary
 filament	en	Coherent field-aligned density structure in the SOL (also called a blob).	corpus
 filament	zh	等离子体丝状体是刮削层中沿磁场排列的相干密度结构，也称blob。	corpus
 finite-element-method	en	Numerical method for solving partial differential equations on mesh elements.	corpus
@@ -4251,15 +4251,15 @@ first-of-a-kind	en	The cost baseline of a first-built fusion power plant.	corpus
 first-of-a-kind	zh	首台堆是首座建造聚变动力堆的成本基线。	corpus
 first-plasma	en	The project milestone at which a new fusion device first sustains plasma.	corpus
 first-plasma	zh	首次等离子体：新聚变装置首次实现持续等离子体的里程碑。	corpus
-first-responders	zh	聚变/核工程术语，对应英文“first responders”。	internal:dict-improvements
+first-responders	zh	应急服务部门中最先到达应急现场作出响应的成员。	translated:IAEA-safety-glossary
 fishbone-instability	en	A magnetohydrodynamic instability (MHD) driven by energetic particles; in experiments a periodic bursting signal shaped like a fish bone has been observed.	GB/T-4960.9
-fissile-material	zh	聚变/核工程术语，对应英文“fissile material”。	internal:dict-improvements
-fissile-nuclide	zh	聚变/核工程术语，对应英文“fissile nuclide”。	internal:dict-improvements
-fission-fragment	zh	聚变/核工程术语，对应英文“fission fragment”。	internal:dict-improvements
-fission-product	zh	聚变/核工程术语，对应英文“fission product”。	internal:dict-improvements
-fissionable-material	zh	聚变/核工程术语，对应英文“fissionable material”。	internal:dict-improvements
-fissionable-nuclide	zh	聚变/核工程术语，对应英文“fissionable nuclide”。	internal:dict-improvements
-fixed-contamination	zh	聚变/核工程术语，对应英文“fixed contamination”。	internal:dict-improvements
+fissile-material	zh	1. 含有任何易裂变核素的材料。易裂变核素。能够以各种能量的中子维持自持核链式反应、但主要靠慢中子维持的核素，特别是 233U、235U、239Pu 和 241Pu。2. 铀-233、235U、239Pu 和 241Pu。本定义排除以下各项：(a) 未经辐照的天然铀或贫化铀；(b) 仅在热中子反应堆中受过辐照的天然铀或贫化铀；(c) 易裂变核素总量低于 0.25 g 的材料；(d) (a)、(b) 或 (c) 的任何组合。这些排除仅当货包中——或在未包装装运时整批货物中——不存在其他含易裂变核素的材料时才有效。（见 SSR-6 (Rev. 1) [2]。）本定义为《运输条例》[2] 所特有。与放射性物质的情况一样，这并不是一个科学定义，而是为服务于特定监管目的而设计的定义。另见可裂变材料。	translated:IAEA-safety-glossary
+fissile-nuclide	zh	见 易裂变材料。	translated:IAEA-safety-glossary
+fission-fragment	zh	由核裂变产生的原子核，其携带着该次裂变所产生的动能。仅用于这些粒子本身具有动能、因而可能构成危害的语境，而不论这些粒子是否具有放射性。在其他情况下，使用更常用的术语“裂变产物”。	translated:IAEA-safety-glossary
+fission-product	zh	由核裂变产生的放射性核素。用于所关注的潜在危害是该放射性核素所发射辐射的语境。	translated:IAEA-safety-glossary
+fissionable-material	zh	含有任何可裂变核素的材料。可裂变核素。能够维持自持核链式反应的核素，例如 238U，包括以快中子维持自持核链式反应。另见易裂变材料。	translated:IAEA-safety-glossary
+fissionable-nuclide	zh	见 可裂变材料。	translated:IAEA-safety-glossary
+fixed-contamination	zh	见 污染。	translated:IAEA-safety-glossary
 fixed-source	en	An external source problem, used for shielding and activation calculations.	corpus
 fixed-source	zh	固定源是用于屏蔽与活化计算的外源问题。	corpus
 flange	en	A disc-shaped connecting part used to join pipes or vessels.	corpus
@@ -4287,7 +4287,7 @@ flux-surface	zh	极向磁通为常数的嵌套环形曲面。	corpus
 flux-tube	en	Tube-shaped region bounded by magnetic field lines.	corpus
 flux-tube	zh	磁通管是由磁力线围成的管状等离子体区域。	corpus
 fokker-planck-equation	en	A kinetic equation that takes multiple small-angle scattering into account.	GB/T-4960.9
-food	zh	聚变/核工程术语，对应英文“food”。	internal:dict-improvements
+food	zh	拟供人食用的任何物质，无论其经过加工、半加工或为原料。这包括食品和饮料（淡水除外）、口香糖以及用于食品制备或加工的物质；不包括化妆品、烟草或药物。此语境中的食用是指经口摄入。	translated:IAEA-safety-glossary
 force-free-equilibrium	en	A plasma equilibrium satisfying J cross B equals zero.	corpus
 force-free-equilibrium	zh	无力平衡是满足J cross B等于零的等离子体平衡。	corpus
 forced-convection	en	Fluid flow that is driven by a pump or fan.	corpus
@@ -4298,7 +4298,7 @@ frc-stability	en	The stability properties of a field-reversed configuration, inc
 frc-stability	zh	场反稳定性：场反位形的稳定性性质，包括倾斜模与旋转模。	corpus
 free-boundary-equilibrium	en	Equilibrium solution in which the plasma-coil interaction is treated self-consistently.	corpus
 free-boundary-equilibrium	zh	自洽处理等离子体与线圈相互作用的平衡解。	corpus
-free-field-ground-motion	zh	聚变/核工程术语，对应英文“free field ground motion”。	internal:dict-improvements
+free-field-ground-motion	zh	在地面上给定点处、假定振动特性未受构筑物和设施影响时由地震引起而会出现的运动。	translated:IAEA-safety-glossary
 freight-container	zh	聚变/核工程术语，对应英文“freight container”。	internal:dict-improvements
 frenkel-pair	en	An irradiation-produced pair of an interstitial atom and a vacancy.	corpus
 frenkel-pair	zh	Frenkel缺陷对是辐照产生的间隙原子与空位对。	corpus
