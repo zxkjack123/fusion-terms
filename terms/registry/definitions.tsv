@@ -4121,31 +4121,31 @@ emergency-action-level	zh	见 水平。	translated:IAEA-safety-glossary
 emergency-arrangements	zh	在准备阶段建立的一整套基础设施要素，为具备履行应对核应急或辐射应急所需的某项特定职能或任务的能力所必需。这些要素可包括：权限与职责、组织、协调、人员、计划、程序、设施、设备或培训。	translated:IAEA-safety-glossary
 emergency-class	zh	一组需要有类似立即应急响应的条件。这是用于向响应组织和公众传达所需响应水平的术语。属于某一给定应急类别的事件由针对该设施、源或活动的特定准则界定；若超过这些准则，即表明应归入规定的级别。对每一应急类别，响应组织的初始行动都是预先确定的。IAEA 安全标准规定了五个应急类别，即一般应急、厂址区域应急、设施应急、预警和其他核应急或辐射应急 [15]：(a) 一般应急。对于处于应急准备类别 I 或 II 的设施，指需要在场内和场外采取预防性紧急防护行动、紧急防护行动和早期防护行动以及其他应急响应行动的应急。宣布一般应急时，应根据与应急有关的现有信息迅速采取适当行动，以减轻应急在场内的后果，并保护场内和场外的人员。(b) 厂址区域应急。对于处于应急准备类别 I 或 II 的设施，指需要在场内和厂址附近采取防护行动和其他应急响应行动的应急。宣布厂址区域应急时，应迅速采取行动：(i) 减轻应急在场内的后果并保护场内人员；(ii) 在根据可观察的条件、可靠的评价和/或监测结果认为确有必要时，提高在场外采取防护行动和其他应急响应行动的戒备状态；以及 (iii) 开展场外监测、采样和分析。(c) 设施应急。对于处于应急准备类别 I、II 或 III 的设施，指需要在设施处和场内采取防护行动和其他应急响应行动、但不需要在场外采取防护行动的应急。宣布设施应急时，应迅速采取行动以减轻应急的后果并保护人员。(d) 预警。对于处于应急准备类别 I、II 或 III 的设施，指需要采取行动以评价和减轻设施处潜在后果的事件。宣布预警时，应迅速采取行动以评价和减轻该事件的潜在后果，并提高场内响应组织的戒备状态。(e) 其他核应急或辐射应急。处于应急准备类别 IV 的应急，指需要在任何地点采取防护行动和其他应急响应行动的应急。宣布此类应急时，应迅速采取行动：减轻应急在场内的后果；保护附近人员（例如工作人员、应急工作人员和公众），并确定在何处以及为哪些人需要采取防护行动和其他应急响应行动；评价和减轻该事件的潜在后果；以及提高场内响应组织的戒备状态。	translated:IAEA-safety-glossary
 emergency-classification	zh	由经授权的官员对应急进行分级、以宣布适用应急类别的过程。应急类别一经宣布，响应组织即启动该应急类别的预先确定的应急响应行动。	translated:IAEA-safety-glossary
-emergency-exposure	zh	聚变/核工程术语，对应英文“emergency exposure”。	internal:dict-improvements
-emergency-exposure-situation	zh	聚变/核工程术语，对应英文“emergency exposure situation”。	internal:dict-improvements
-emergency-phase	zh	聚变/核工程术语，对应英文“emergency phase”。	internal:dict-improvements
-emergency-plan	zh	聚变/核工程术语，对应英文“emergency plan”。	internal:dict-improvements
-emergency-planning-distance	zh	聚变/核工程术语，对应英文“emergency planning distance”。	internal:dict-improvements
+emergency-exposure	zh	见 应急照射情况。	translated:IAEA-safety-glossary
+emergency-exposure-situation	zh	见 照射情况。	translated:IAEA-safety-glossary
+emergency-phase	zh	见 应急响应阶段。	translated:IAEA-safety-glossary
+emergency-plan	zh	对应急响应的目标、政策和运行构想的描述，以及对系统、协调、有效响应的组织结构、权限和职责的描述。应急计划是制定其他计划、程序和检查单的基础。应急计划在若干不同层级编制：国际、国家、地区、地方和设施。它们可包含所有相关组织和机构计划开展的全部活动，也可主要涉及某一特定组织要开展的行动。应急计划中列出的具体任务的完成细节载于应急程序中。运行构想。对假想核应急或放射性应急的理想响应的简要描述，用于确保参与应急响应能力建设的全体人员和组织具有共同的理解。	translated:IAEA-safety-glossary
+emergency-planning-distance	zh	扩展计划距离与食入和商品计划距离。扩展计划距离（EPD）。设施周围的一个区域，在该区域内作出应急安排，以便在宣布一般应急之后开展监测，并识别出在重大放射性释放之后的一段时间内需要在场外采取应急响应行动的区域，该时间段应足以使公众成员的随机性效应风险得以有效降低。扩展计划距离内的区域用于规划目的，可能并非为识别需要采取诸如迁移等早期防护行动的区域而实际开展监测的区域。尽管需要在准备阶段努力做好在该区域内采取有效早期防护行动的准备，但实际区域将取决于应急时的实际情况。作为预防措施，可能需要在扩展计划距离内采取某些紧急行动，以降低公众成员的随机性效应风险。食入和商品计划距离（ICPD）。设施周围的一个区域，针对该区域作出应急安排，以便在宣布一般应急之后采取有效的应急响应行动，从而降低公众成员的随机性效应风险，并减轻因分销、销售和消费食品、牛奶和饮用水以及使用除食品以外可能受到重大放射性释放污染的商品而造成的非放射性后果。食入和商品计划距离内的区域用于规划目的，以准备开展监测和控制商品（包括食品）的应急响应行动，无论其用于国内使用还是国际贸易。实际区域将根据应急时的实际情况确定。作为预防措施，可能需要在食入和商品计划距离内采取某些紧急防护行动，以防止食入食品、牛奶或饮用水，并防止使用在重大放射性释放之后可能受到污染的商品。	translated:IAEA-safety-glossary
 emergency-planning-zone	zh	聚变/核工程术语，指“应急计划区”这一技术概念。	internal:dict-improvements
-emergency-preparedness	zh	聚变/核工程术语，对应英文“emergency preparedness”。	internal:dict-improvements
-emergency-preparedness-category	zh	聚变/核工程术语，对应英文“emergency preparedness category”。	internal:dict-improvements
-emergency-procedures	zh	聚变/核工程术语，对应英文“emergency procedures”。	internal:dict-improvements
-emergency-response	zh	聚变/核工程术语，对应英文“emergency response”。	internal:dict-improvements
-emergency-response-action	zh	聚变/核工程术语，对应英文“emergency response action”。	internal:dict-improvements
-emergency-response-commander	zh	聚变/核工程术语，对应英文“emergency response commander”。	internal:dict-improvements
-emergency-response-facility-or-location	zh	聚变/核工程术语，对应英文“emergency response facility or location”。	internal:dict-improvements
-emergency-response-phase	zh	聚变/核工程术语，对应英文“emergency response phase”。	internal:dict-improvements
-emergency-services	zh	聚变/核工程术语，对应英文“emergency services”。	internal:dict-improvements
-emergency-worker	zh	聚变/核工程术语，对应英文“emergency worker”。	internal:dict-improvements
-employer	zh	聚变/核工程术语，对应英文“employer”。	internal:dict-improvements
+emergency-preparedness	zh	采取能够有效减轻应急对人的生命、健康、财产和环境造成的后果的行动的能力。应急准备类别。通过危害评价所评估的危害的类别，为以分级方法应用 GSR Part 7 [15] 中规定的要求提供依据，并为制定针对核应急或放射性应急的、经通用论证并优化的准备与响应安排提供依据。GSR Part 7 [15] 的表 1 描述了各应急准备类别。准备阶段。在核应急或放射性应急之前建立有效应急响应安排的阶段或时期。	translated:IAEA-safety-glossary
+emergency-preparedness-category	zh	见 应急准备。	translated:IAEA-safety-glossary
+emergency-procedures	zh	一套详细描述应急工作人员在应急中应采取的行动的指令。	translated:IAEA-safety-glossary
+emergency-response	zh	为减轻应急对人的生命、健康、财产和环境造成的后果而实施行动。应急响应还为恢复正常的社会和经济活动提供基础。应急响应行动。为应对核应急或放射性应急而采取的、旨在减轻应急对人的生命、健康、财产和环境造成的后果的行动。应急响应行动包括防护行动和其他响应行动。也称应急行动。其他响应行动。防护行动以外的应急响应行动。最常见的其他响应行动有：医学检查、咨询和治疗；登记和长期医学随访；提供心理辅导；以及公共信息通报和旨在减轻非放射性后果并为公众提供安抚的其他行动。	translated:IAEA-safety-glossary
+emergency-response-action	zh	见 应急响应。	translated:IAEA-safety-glossary
+emergency-response-commander	zh	负责指挥所有响应某一应急的组织实施响应的个人（包括对放射性危害的响应、对常规危害的响应以及执法）。也称为事件指挥官。	translated:IAEA-safety-glossary
+emergency-response-facility-or-location	zh	支持应急响应所必需的设施或场所，其特定职能应在准备阶段予以指派，且其需在应急条件下可供使用。应急响应设施或场所分为两种不同类型：事先设立的（例如核电厂的技术支持中心）和在应急时指定的（例如医学筛查与分类区）。对这两种类型，均需事先做好准备，以确保其在应急条件下的可运行性。取决于应急准备类别和应急的性质，应急响应设施可被指定为应急响应场所。对于核电厂和处于应急准备类别 1 的其他设施，应急响应设施（其与主控室和辅助控制室相分离）包括：技术支持中心，在应急中可从该处向主控室中的运行人员提供技术支持；运行支持中心，在设施处或其附近执行任务的人员可从该处维持运行控制；以及应急中心，场内的应急响应从该处进行管理。	translated:IAEA-safety-glossary
+emergency-response-phase	zh	从探测到需要采取应急响应的状态之时起，直至所有应急响应行动全部完成的时间段。	translated:IAEA-safety-glossary
+emergency-services	zh	通常可资利用并履行应急响应职能的地方场外响应组织。这些组织可包括警察、消防员和救援队、救护车服务以及危险材料控制小组。	translated:IAEA-safety-glossary
+emergency-worker	zh	在应急响应中作为工作人员承担特定职责的人员。应急工作人员可包括由登记证持有者和许可证持有者直接和间接雇用的工作人员，以及响应组织的人员，例如警官、消防员、医务人员以及用于撤离的车辆的驾驶员和乘员。应急工作人员可在应急之前被指定为应急工作人员，也可未被如此指定。未在应急之前被指定为应急工作人员的应急工作人员，在应急之前不一定是工作人员。	translated:IAEA-safety-glossary
+employer	zh	因双方商定的关系而对该个人或组织所雇用的工作人员负有公认的责任、承诺和义务的个人或组织。！自雇人员被视为既是雇主又是工作人员。	translated:IAEA-safety-glossary
 end-effector	en	A tool or device attached to the end of a manipulator to perform specific maintenance tasks such as cutting, welding or gripping.	corpus
 end-effector	zh	末端执行器：安装在操纵器末端、用于执行切割、焊接或抓取等特定维护任务的工具或装置。	corpus
 end-loss	en	Particle and energy loss through the ends of a mirror configuration.	corpus
 end-loss	zh	端损失：粒子与能量经由磁镜位形端部的损失。	corpus
 end-plug	en	An electrostatic or magnetic plug at the ends of a mirror configuration that reduces particle loss.	corpus
 end-plug	zh	端塞：置于磁镜位形两端、用于减少粒子损失的静电塞或磁塞。	corpus
-end-point	zh	聚变/核工程术语，对应英文“end point”。	internal:dict-improvements
-end-state	zh	聚变/核工程术语，对应英文“end state”。	internal:dict-improvements
+end-point	zh	1. 过程的最终阶段，尤指观察到效应的那个点。该词用法较为宽松，用于描述一系列不同的结果或后果。例如，术语「生物终点」用于描述可能由照射引起的健康效应（或该健康效应的概率）。2. 作为分析或评价计算结果的放射性或其他防护或安全量度。常见的终点包括剂量或风险的估计值、某一事件或某类事件（例如反应堆堆芯损坏）的估计频率或概率、人群中预期的健康效应数量、放射性核素的环境预测浓度等。3. 界定某一特定任务或过程将被视为完成之处的预定判据。此用法常出现在去污或环境整治等情境中，其中终点通常是超过该污染水平即认为无需进一步去污或环境整治的污染水平。在此类情境中，该判据也可为定义 2 意义上的终点——此类判据常依据被视为可接受的剂量或风险水平计算得出——但其对实际去污或环境整治作业的适用属于定义 3 的意义。	translated:IAEA-safety-glossary
+end-state	zh	1. 放射性废物在放射性废物管理最终阶段所处的状态，此时废物处于被动安全状态，不依赖制度控制。在放射性废物管理情境中，最终状态指处置。2. 界定某一特定任务或过程将被视为完成之处的预定判据。用于退役活动时，指设施退役的最终状态；用于环境整治时，指在退役和/或环境整治活动结束时场址的最终状况，包括对场址及留存构筑物的放射性和物理状况的批准。	translated:IAEA-safety-glossary
 endf-format	en	The Evaluated Nuclear Data File (ENDF) format.	corpus
 endf-format	zh	ENDF格式是评价核数据文件格式。	corpus
 energetic-particle	en	Supra-thermal ion population, produced by neutral beam injection, ion cyclotron resonance heating, or fusion alpha particles, that can drive Alfven eigenmode instabilities.	corpus
@@ -4155,16 +4155,16 @@ energetic-particle-mode	zh	高能粒子模是 Alfvén 连续谱中由快离子�
 energy-breakeven	zh	能量收支平衡，即 Q = 1 的条件，意为等离子体脉冲期间产生的总聚变功率等于注入到加热等离子体各系统中的功率。	translated:ITER-glossary
 energy-cutoff	en	The minimum energy used in particle tracking.	corpus
 energy-cutoff	zh	能量截断是粒子跟踪中采用的最低能量。	corpus
-energy-fluence	zh	聚变/核工程术语，对应英文“energy fluence”。	internal:dict-improvements
-enforcement	zh	聚变/核工程术语，对应英文“enforcement”。	internal:dict-improvements
-enriched-uranium	zh	聚变/核工程术语，对应英文“enriched uranium”。	internal:dict-improvements
-entombment	zh	聚变/核工程术语，对应英文“entombment”。	internal:dict-improvements
-entrance-surface-dose	zh	聚变/核工程术语，对应英文“entrance surface dose”。	internal:dict-improvements
-environment	zh	聚变/核工程术语，对应英文“environment”。	internal:dict-improvements
+energy-fluence	zh	见 注量。	translated:IAEA-safety-glossary
+enforcement	zh	监管机构对运营者实施制裁，旨在纠正并酌情惩处不遵守授权条件的行为。	translated:IAEA-safety-glossary
+enriched-uranium	zh	见 铀。	translated:IAEA-safety-glossary
+entombment	zh	见 退役。	translated:IAEA-safety-glossary
+entrance-surface-dose	zh	接受放射诊断检查的患者，在辐射入射表面处照射野中心的吸收剂量，以在空气中并含反散射的方式表示。	translated:IAEA-safety-glossary
+environment	zh	人、动物和植物生存或发育并维系一切生命与发育的条件；尤指受人类活动影响的此类条件。另见环境保护。	translated:IAEA-safety-glossary
 environmental-impact-assessment	en	A systematic evaluation of the environmental effects of a proposed fusion facility.	corpus
 environmental-impact-assessment	zh	环境影响评价：对拟建聚变设施环境影响的系统性评估。	corpus
 epfl	zh	位于洛桑的瑞士联邦理工学院（EPFL），是瑞士等离子体中心和 TCV 托卡马克的所在地。	translated:ITER-glossary
-epicentre	zh	聚变/核工程术语，对应英文“epicentre”。	internal:dict-improvements
+epicentre	zh	地震震源（即 hypocentre）正上方的地表点。	translated:IAEA-safety-glossary
 epistemic-uncertainty	zh	聚变/核工程术语，对应英文“epistemic uncertainty”。	internal:dict-improvements
 equilibrium-equivalent-concentration	zh	聚变/核工程术语，对应英文“equilibrium equivalent concentration (EEC)”。	internal:dict-improvements
 equilibrium-factor	zh	聚变/核工程术语，对应英文“equilibrium factor”。	internal:dict-improvements
