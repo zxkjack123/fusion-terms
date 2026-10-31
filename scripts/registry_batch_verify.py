@@ -16,10 +16,22 @@ Modes
     placeholder (``指“en”``), (d) clear the length floor (en >= 40 chars,
     zh >= 12 chars), and (e) carry a whitelisted ``source``
     (``http(s)://...`` / ``GB/T-4960.9`` / ``ITER-glossary`` /
-    ``IAEA-safety-glossary`` / ``corpus``); ``internal:TODO`` is rejected.
+    ``IAEA-safety-glossary`` / ``translated:IAEA-safety-glossary`` /
+    ``translated:ITER-glossary`` / ``corpus``); ``internal:TODO`` is rejected.
     With ``--check-urls`` every http(s) source is probed and must answer 200;
     ``--no-net`` prints ``SKIPPED-NET`` and skips the probes instead of
     silently passing.
+
+``evidence``
+    For every id in ``--ids-file``: ``terms/registry/evidence.tsv`` must hold at
+    least one row with a non-empty ``quote``.  With ``--check-urls`` a row that
+    carries a quote must point at an ``http(s)://`` source, and every referenced
+    URL must answer 200 (a browser ``User-Agent`` is sent; some publishers answer
+    403 to the default ``Python-urllib`` agent).  Probes are deduplicated by
+    unique URL and ``probes=<n>`` is printed, so a batch that shares one upstream
+    source costs one request instead of one per row.  ``--ids-file`` is
+    mandatory: the repository as a whole still has non-W3 evidence rows with empty
+    quotes, so a repo-wide run would always be red.
 
 ``names``
     For every id: ``terms/registry/concepts.tsv`` must hold a ``preferred_zh``
@@ -74,6 +86,8 @@ SCHEMA_CONCEPTS = (
 )
 SCHEMA_DEFINITIONS = ("concept_id", "lang", "definition", "source")
 
+SCHEMA_EVIDENCE = ("concept_id", "source", "quote", "added_by", "added_at")
+
 COL_ID = SCHEMA_CONCEPTS.index("concept_id")
 COL_ZH = SCHEMA_CONCEPTS.index("preferred_zh")
 COL_EN = SCHEMA_CONCEPTS.index("preferred_en")
@@ -83,6 +97,10 @@ DEF_COL_LANG = SCHEMA_DEFINITIONS.index("lang")
 DEF_COL_TEXT = SCHEMA_DEFINITIONS.index("definition")
 DEF_COL_SOURCE = SCHEMA_DEFINITIONS.index("source")
 N_DEF_COLS = len(SCHEMA_DEFINITIONS)
+
+EV_COL_SOURCE = SCHEMA_EVIDENCE.index("source")
+EV_COL_QUOTE = SCHEMA_EVIDENCE.index("quote")
+N_EV_COLS = len(SCHEMA_EVIDENCE)
 
 #: The W1 placeholder that must disappear from every ``en`` definition.
 BOILERPLATE_EN_RE = re.compile(
@@ -97,7 +115,17 @@ CJK_RE = re.compile(r"[\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff]")
 WHITESPACE_RE = re.compile(r"\s")
 
 DEF_SOURCE_WHITELIST = frozenset(
-    {"GB/T-4960.9", "ITER-glossary", "IAEA-safety-glossary", "corpus"}
+    {
+        "GB/T-4960.9",
+        "ITER-glossary",
+        "IAEA-safety-glossary",
+        "corpus",
+        # zh rows translated from the upstream en definition (PM #5072); the
+        # prefix states explicitly that the Chinese text is derived, not an
+        # independent Chinese authority.
+        "translated:IAEA-safety-glossary",
+        "translated:ITER-glossary",
+    }
 )
 DEF_SOURCE_FORBIDDEN = "internal:TODO"
 HTTP_SOURCE_RE = re.compile(r"^https?://")
@@ -109,7 +137,7 @@ URL_TIMEOUT_S = 15.0
 RULE_COLUMNS = "concept_cols"
 RULE_ZH_EMPTY = "names_zh_empty"
 
-MODES = ("definitions", "names", "allowlist")
+MODES = ("definitions", "names", "allowlist", "evidence")
 
 
 # --------------------------------------------------------------------------- #
@@ -182,10 +210,12 @@ class Corpus:
         self.definitions_path = root / "terms" / "registry" / "definitions.tsv"
         self.allowlist_zh_path = root / "terms" / "allowlist_zh.txt"
         self.allowlist_en_path = root / "terms" / "allowlist_en.txt"
+        self.evidence_path = root / "terms" / "registry" / "evidence.tsv"
         self._concepts: dict[str, tuple[int, list[str]]] | None = None
         self._definitions: dict[str, dict[str, list[tuple[int, str, str]]]] | None = (
             None
         )
+        self._evidence: dict[str, list[tuple[int, str, str]]] | None = None
         self._allowlist_zh: set[str] | None = None
         self._allowlist_en: set[str] | None = None
 
@@ -214,6 +244,19 @@ class Corpus:
             self._definitions = table
         return self._definitions
 
+    def evidence(self) -> dict[str, list[tuple[int, str, str]]]:
+        """``concept_id -> [(lineno, source, quote), ...]``."""
+        if self._evidence is None:
+            table: dict[str, list[tuple[int, str, str]]] = {}
+            for lineno, fields in _iter_rows(self.evidence_path):
+                if len(fields) != N_EV_COLS:
+                    continue
+                table.setdefault(fields[0], []).append(
+                    (lineno, fields[EV_COL_SOURCE], fields[EV_COL_QUOTE])
+                )
+            self._evidence = table
+        return self._evidence
+
     def allowlist_zh(self) -> set[str]:
         if self._allowlist_zh is None:
             self._allowlist_zh = {
@@ -240,9 +283,16 @@ class Corpus:
 
 
 def http_status(url: str, timeout: float = URL_TIMEOUT_S) -> int | None:
-    """Return the HTTP status for ``url``, or ``None`` when unreachable."""
+    """Return the HTTP status for ``url``, or ``None`` when unreachable.
+
+    The IAEA PDF host answers ``403`` to the default ``Python-urllib`` agent and
+    ``200`` to a browser agent, so a plain ``urlopen`` would report a false red.
+    """
+    request = urllib.request.Request(  # noqa: S310 - explicit http(s) sources only
+        url, headers={"User-Agent": "Mozilla/5.0 (compatible; fusion-terms/1.0)"}
+    )
     try:
-        with urllib.request.urlopen(url, timeout=timeout) as response:  # noqa: S310
+        with urllib.request.urlopen(request, timeout=timeout) as response:  # noqa: S310
             return int(response.status)
     except urllib.error.HTTPError as exc:
         return int(exc.code)
@@ -381,6 +431,110 @@ def check_definitions(
             f"SKIPPED-NET: HTTP verification disabled by --no-net "
             f"({len(http_sources)} http source(s) in scope)"
         )
+    return violations
+
+
+# --------------------------------------------------------------------------- #
+# Mode: evidence
+# --------------------------------------------------------------------------- #
+
+
+def check_evidence(
+    corpus: Corpus,
+    ids: Sequence[str],
+    *,
+    check_urls: bool = False,
+    no_net: bool = False,
+    url_probe: Callable[[str], int | None] | None = None,
+    out: Callable[[str], None] = print,
+) -> list[Violation]:
+    """Require a non-empty quote per id, and optionally a live http(s) source.
+
+    Two independent rules run here:
+
+    * quote presence — every id in ``--ids-file`` needs at least one evidence row
+      whose ``quote`` is not blank;
+    * source resolvability — with ``--check-urls``, a row that carries a quote must
+      point at an ``http(s)://`` source, and every referenced URL must answer 200.
+
+    URL probes are deduplicated by unique source string and run over *all* rows of
+    the ids in scope, quoted or not: the W3a backfill spends hundreds of rows on the
+    same two upstream URLs, so probing per row would exceed the time budget, and a
+    dead source must surface even while a batch is still mid-backfill.
+    ``probes=<n>`` is printed so callers and the self-test can assert that the
+    dedup actually happened.
+    """
+    index = corpus.evidence()
+    probe = url_probe if url_probe is not None else http_status
+    violations: list[Violation] = []
+    cache: dict[str, int | None] = {}
+    probe_calls = 0
+    #: url -> [(concept_id, lineno), ...] for every http(s) source in scope.
+    url_rows: dict[str, list[tuple[str, int]]] = {}
+
+    for cid in ids:
+        rows = index.get(cid, [])
+        if not rows:
+            violations.append(
+                Violation(
+                    "evidence_missing",
+                    str(corpus.evidence_path),
+                    f"no evidence row for id {cid!r}",
+                )
+            )
+            continue
+        quoted = [row for row in rows if row[2].strip()]
+        if not quoted:
+            violations.append(
+                Violation(
+                    "evidence_quote_empty",
+                    _loc(corpus.evidence_path, rows[0][0]),
+                    f"{cid}: every evidence row has an empty quote",
+                )
+            )
+        for lineno, source, quote in rows:
+            stripped = source.strip()
+            if HTTP_SOURCE_RE.match(stripped):
+                url_rows.setdefault(stripped, []).append((cid, lineno))
+            elif check_urls and quote.strip():
+                violations.append(
+                    Violation(
+                        "evidence_source_not_url",
+                        _loc(corpus.evidence_path, lineno),
+                        f"{cid}: source {source!r} is not an http(s) URL",
+                    )
+                )
+
+    if check_urls:
+        if no_net:
+            out(
+                "SKIPPED-NET: URL verification disabled by --no-net "
+                f"({len(url_rows)} unique URL source(s))"
+            )
+        else:
+            for url in sorted(url_rows):
+                cache[url] = probe(url)
+                probe_calls += 1
+                status = cache[url]
+                if status == 200:
+                    continue
+                for cid, lineno in url_rows[url]:
+                    violations.append(
+                        Violation(
+                            "evidence_url_status",
+                            _loc(corpus.evidence_path, lineno),
+                            f"{cid}: source {url!r} answered {status!r} (require 200)",
+                        )
+                    )
+            if probe_calls != len(url_rows):
+                violations.append(
+                    Violation(
+                        "evidence_probe_dedup",
+                        str(corpus.evidence_path),
+                        f"probe_calls={probe_calls} unique_sources={len(url_rows)}",
+                    )
+                )
+            out(f"probes={probe_calls}")
     return violations
 
 
@@ -762,6 +916,22 @@ def _build_synthetic_corpus(
     return Corpus(root)
 
 
+def _build_synthetic_evidence_corpus(root: Path) -> Corpus:
+    """Evidence fixture for the ``--mode evidence`` branches (no real rows have quotes)."""
+    registry = root / "terms" / "registry"
+    registry.mkdir(parents=True, exist_ok=True)
+    rows = [
+        "# concept_id\tsource\tquote\tadded_by\tadded_at",
+        "unit-alpha\thttps://example.org/a\tFirst quote.\tself-test\t2026-10-31",
+        "unit-alpha\thttps://example.org/b\tSecond quote.\tself-test\t2026-10-31",
+        "unit-alpha\thttps://example.org/a\tThird quote.\tself-test\t2026-10-31",
+        "unit-beta\thttps://example.org/a\t\tself-test\t2026-10-31",
+        "unit-gamma\tIAEA-Safety-Glossary-2018\tBare-name quote.\tself-test\t2026-10-31",
+    ]
+    (registry / "evidence.tsv").write_text("\n".join(rows) + "\n", encoding="utf-8")
+    return Corpus(root)
+
+
 def run_self_test(corpus: Corpus) -> int:
     failures: list[str] = []
     checks = 0
@@ -878,6 +1048,50 @@ def run_self_test(corpus: Corpus) -> int:
             "allowlist_en whitespace lint fires on a synthetic spaced line",
             repr(sorted(spaced_rules)),
         )
+
+        print("self-test: evidence mode (synthetic fixture, no network)")
+        evidence = _build_synthetic_evidence_corpus(tmp_root / "evidence_case")
+        empty_rules = {v.rule for v in check_evidence(evidence, ["unit-beta"])}
+        expect(
+            empty_rules == {"evidence_quote_empty"},
+            "empty evidence quote fails with evidence_quote_empty",
+            repr(sorted(empty_rules)),
+        )
+        not_url_out: list[str] = []
+        not_url = check_evidence(
+            evidence,
+            ["unit-gamma"],
+            check_urls=True,
+            url_probe=lambda _url: 200,
+            out=not_url_out.append,
+        )
+        expect(
+            {v.rule for v in not_url} == {"evidence_source_not_url"}
+            and not_url_out == ["probes=0"],
+            "bare-name evidence source fails with evidence_source_not_url",
+            repr([v.as_dict() for v in not_url]) + f" out={not_url_out}",
+        )
+        probed: list[str] = []
+        calls: list[str] = []
+
+        def probe(url: str) -> int:
+            calls.append(url)
+            return 404
+
+        missing = check_evidence(
+            evidence,
+            ["unit-alpha"],
+            check_urls=True,
+            url_probe=probe,
+            out=probed.append,
+        )
+        expect(
+            {v.rule for v in missing} == {"evidence_url_status"}
+            and calls == ["https://example.org/a", "https://example.org/b"]
+            and probed == ["probes=2"],
+            "404 evidence source fails with evidence_url_status (probes deduplicated)",
+            repr([v.as_dict() for v in missing]) + f" calls={calls} out={probed}",
+        )
     finally:
         shutil.rmtree(tmp_root, ignore_errors=True)
 
@@ -992,6 +1206,14 @@ def main(argv: list[str] | None = None) -> int:
             return 2
         return run_self_test(corpus)
 
+    if args.mode == "evidence" and args.ids_file is None:
+        print(
+            "registry_batch_verify: --mode evidence requires --ids-file "
+            "(repo-wide evidence is not green: non-w3 rows keep empty quotes)",
+            file=sys.stderr,
+        )
+        return 2
+
     if args.mode is None or args.ids_file is None:
         print(
             "registry_batch_verify: --mode and --ids-file are required "
@@ -1009,6 +1231,8 @@ def main(argv: list[str] | None = None) -> int:
     needed = [corpus.concepts_path]
     if args.mode == "definitions":
         needed = [corpus.definitions_path]
+    elif args.mode == "evidence":
+        needed = [corpus.evidence_path]
     elif args.mode == "allowlist":
         needed = [
             corpus.concepts_path,
@@ -1051,8 +1275,17 @@ def main(argv: list[str] | None = None) -> int:
                 no_net=args.no_net,
             )
         )
-    else:
+    elif args.mode == "allowlist":
         violations.extend(check_allowlist(corpus, ids))
+    elif args.mode == "evidence":
+        violations.extend(
+            check_evidence(
+                corpus,
+                ids,
+                check_urls=args.check_urls,
+                no_net=args.no_net,
+            )
+        )
 
     verdict = "PASS" if not violations else "FAIL"
     header = (
