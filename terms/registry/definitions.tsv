@@ -5337,51 +5337,51 @@ rmp-coil	en	A resonant magnetic perturbation coil used for ELM suppression.	corp
 rmp-coil	zh	RMP线圈：用于抑制 ELM 的共振磁扰动线圈。	corpus
 rock-igneous	zh	见 火成岩。	translated:IAEA-safety-glossary
 root-cause	zh	见 原因。	translated:IAEA-safety-glossary
-root-uptake	zh	聚变/核工程术语，对应英文“root uptake”。	internal:dict-improvements
+root-uptake	zh	见 摄取。	translated:IAEA-safety-glossary
 rotation-reversal	en	Spontaneous reversal of the rotation direction at the density transition.	corpus
 rotation-reversal	zh	旋转反转是密度转换处自发发生的旋转方向反转。	corpus
 rotational-instability	en	An n=2 rotational mode that can grow in a field-reversed configuration and, if uncontrolled, degrades the plasma and limits its lifetime.	corpus
 rotational-instability	zh	场反位形中可能增长的一种 n=2 旋转模，若不受控将劣化等离子体并限制其寿命。	corpus
-routine-monitoring	zh	聚变/核工程术语，对应英文“routine monitoring”。	internal:dict-improvements
+routine-monitoring	zh	见 监测。	translated:IAEA-safety-glossary
 rsae	en	A gap mode in the reversed shear region, also called the Alfven cascade.	corpus
 rsae	zh	反剪切Alfvén本征模是反剪切区中的间隙模，又称 Alfvén 级联。	corpus
 runaway-electron-damage	en	Deep localized PFC damage from runaway electron impact.	corpus
 runaway-electron-damage	zh	逃逸电子损伤是逃逸电子撞击造成的深层局域PFC损伤。	corpus
-runup	zh	聚变/核工程术语，对应英文“runup”。	internal:dict-improvements
+runup	zh	水体沿海滩或结构物向上的突然涌升。	translated:IAEA-safety-glossary
 rupture-disc	en	A non-reclosing safety device that ruptures on overpressure to relieve pressure.	corpus
 rupture-disc	zh	爆破片是超压时主动破裂泄放压力的非重闭式安全装置。	corpus
 s-alpha-beta	en	The thermal scattering law data, written S(alpha,beta).	corpus
 s-alpha-beta	zh	S(α,β) 是用于束缚原子散射的热散射律数据。	corpus
-safe-state	zh	聚变/核工程术语，对应英文“safe state”。	internal:dict-improvements
-safeguards-agreement	zh	聚变/核工程术语，对应英文“safeguards agreement”。	internal:dict-improvements
+safe-state	zh	见 电厂状态。	translated:IAEA-safety-glossary
+safeguards-agreement	zh	IAEA 与一个或多个成员国之间的一项协定，其中包含一个或多个此类国家作出的承诺，即不以有助于推进任何军事目的的方式使用某些物项，并赋予 IAEA 观察此类承诺遵守情况的权利。此类协定可涉及：(a) 一项 IAEA 项目；(b) 核能领域的一项双边或多边安排，根据该安排可请 IAEA 实施保障监督；或 (c) 一国单方面提交 IAEA 保障监督的任何核活动。	translated:IAEA-safety-glossary
 safety	zh	聚变/核工程术语，对应英文“safety”。	internal:dict-improvements
-safety-action	zh	聚变/核工程术语，对应英文“safety action”。	internal:dict-improvements
-safety-actuation-system	zh	聚变/核工程术语，对应英文“safety actuation system”。	internal:dict-improvements
-safety-assessment	zh	聚变/核工程术语，对应英文“safety assessment”。	internal:dict-improvements
+safety-action	zh	由安全驱动系统采取的单一动作。例如，插入控制棒、关闭安全壳阀门或操作安全注射泵。	translated:IAEA-safety-glossary
+safety-actuation-system	zh	见 电厂设备。	translated:IAEA-safety-glossary
+safety-assessment	zh	见 评价。	translated:IAEA-safety-glossary
 safety-case	zh	聚变/核工程术语，指“安全论证”这一技术概念。	internal:dict-improvements
-safety-categorization	zh	聚变/核工程术语，对应英文“safety categorization”。	internal:dict-improvements
-safety-category	zh	聚变/核工程术语，对应英文“safety category”。	internal:dict-improvements
-safety-class	zh	聚变/核工程术语，对应英文“safety class”。	internal:dict-improvements
+safety-categorization	zh	对于核电厂，指依据安全重要性，将不同电厂状态下（包括正常运行的所有模式）为履行主要安全功能所需的功能划分为有限数目的安全类别。参见参考文献 [18, 53]。	translated:IAEA-safety-glossary
+safety-category	zh	见 安全功能分级。	translated:IAEA-safety-glossary
+safety-class	zh	见 安全分级。	translated:IAEA-safety-glossary
 safety-classification	zh	聚变/核工程术语，指“安全分级”这一技术概念。	internal:dict-improvements
-safety-committee	zh	聚变/核工程术语，对应英文“safety committee”。	internal:dict-improvements
-safety-culture	zh	聚变/核工程术语，对应英文“safety culture”。	internal:dict-improvements
-safety-feature	zh	聚变/核工程术语，对应英文“safety feature (for design extension conditions)”。	internal:dict-improvements
+safety-committee	zh	由营运组织召集的一组专家，就经许可的设施运行的安全问题提供咨询。	translated:IAEA-safety-glossary
+safety-culture	zh	组织和个人所具有的特征与态度的集合，它确立：防护与安全问题作为最高优先事项，得到与其重要性相称的关注。更详细的讨论参见参考文献 [54]。	translated:IAEA-safety-glossary
+safety-feature	zh	见 电厂设备。	translated:IAEA-safety-glossary
 safety-function	zh	聚变/核工程术语，指“安全功能”这一技术概念。	internal:dict-improvements
-safety-group	zh	聚变/核工程术语，对应英文“safety group”。	internal:dict-improvements
+safety-group	zh	为针对某一特定始发事件执行所需的全部动作而指定的设备组合，以确保不超过设计基准中针对预期运行事件和设计基准事故所规定的限值。！术语“组”也（配合各种限定形容词，如维修组、调试组）用于更明显的含义，即从事某一特定工作领域的一群人。如果存在与安全组相混淆的任何可能，此类术语可能需要加以定义。	translated:IAEA-safety-glossary
 safety-important-component	en	A component belonging to the items classified as important to safety: items that are part of a safety group and/or whose malfunction or failure could lead to radiation exposure of site personnel or members of the public, an item here being a structure, system or component.	IAEA-safety-glossary
 safety-important-component	zh	安全重要物项：属于“重要安全物项”（item important to safety）范畴的部件，即构成安全组的物项，和/或其失效可能导致厂区人员或公众受照的物项；该条目中的 item 指构筑物、系统或部件。	IAEA-safety-glossary
-safety-indicator	zh	聚变/核工程术语，对应英文“safety indicator”。	internal:dict-improvements
-safety-issues	zh	聚变/核工程术语，对应英文“safety issues”。	internal:dict-improvements
-safety-layers	zh	聚变/核工程术语，对应英文“safety layers”。	internal:dict-improvements
-safety-limits	zh	聚变/核工程术语，对应英文“safety limits”。	internal:dict-improvements
+safety-indicator	zh	在评估中用于度量源、设施或活动的放射性影响，或防护与安全规定执行情况的一种量，而非对剂量或风险的预测。此类量最常用于对剂量或风险的预测不大可能可靠的情形；例如，处置库的长期评估。它们通常为：(a) 剂量或风险量的示例性计算，用以指示剂量或风险的可能量级，以便与准则比较；或 (b) 其他量，如放射性核素浓度或通量，这些量被认为能更可靠地指示影响，并可与其他相关数据进行比较。	translated:IAEA-safety-glossary
+safety-issues	zh	对现行安全标准或实践的偏离，或由电厂事件所查明的设施设计或实践中的薄弱环节；因其对纵深防御、安全裕度或安全文化的影响而具有潜在的安全影响。	translated:IAEA-safety-glossary
+safety-layers	zh	为确保实现所要求的安全功能而提供的非能动系统、自动或手动触发的安全系统，或行政控制。通常表述为：(a) 硬件（即非能动安全系统和能动安全系统）；(b) 软件，包括人员与程序以及计算机软件；(c) 管理控制，特别是防止纵深防御退化（通过质量管理、预防性维修、监督试验等），并对确实发生的退化所反馈的经验作出适当响应（例如确定根本原因、采取纠正措施）。另见纵深防御。	translated:IAEA-safety-glossary
+safety-limits	zh	见 限值。	translated:IAEA-safety-glossary
 safety-margin	en	The margin between a design value and the safety limit.	corpus
 safety-margin	zh	核安全裕度是设计值与安全限值之间的余量。	corpus
-safety-measure	zh	聚变/核工程术语，对应英文“safety measure”。	internal:dict-improvements
-safety-of-radioactive-sources	zh	聚变/核工程术语，对应英文“safety of radioactive sources”。	internal:dict-improvements
-safety-related-item	zh	聚变/核工程术语，对应英文“safety related item”。	internal:dict-improvements
-safety-related-system	zh	聚变/核工程术语，对应英文“safety related system”。	internal:dict-improvements
-safety-standards	zh	聚变/核工程术语，对应英文“safety standards”。	internal:dict-improvements
-safety-system-support-features	zh	聚变/核工程术语，对应英文“safety system support features”。	internal:dict-improvements
+safety-measure	zh	为满足《安全要求》中的要求而可能采取的任何行动、可能施加的任何条件或可能遵循的任何程序。	translated:IAEA-safety-glossary
+safety-of-radioactive-sources	zh	[旨在尽可能降低涉及放射源的事故可能性、并在发生此类事故时减轻其后果的措施。]（参见参考文献 [14]。）	translated:IAEA-safety-glossary
+safety-related-item	zh	见 电厂设备。	translated:IAEA-safety-glossary
+safety-related-system	zh	见 电厂设备。	translated:IAEA-safety-glossary
+safety-standards	zh	依据《IAEA 规约》第 III 条第 A 款第 6 项第 8 目发布的各项标准 [44]。为保护人类和环境免受电离辐射、并尽可能减小对生命和财产的危害而制定的要求、条例、标准、规则、实践准则或建议。1997 年以来在 IAEA 安全标准丛书中发布的安全标准被指定为安全基本法则、安全要求或安全导则。1997 年之前在（已停止运作的）安全丛书中所发布的一些安全标准被指定为安全标准、准则、条例或规则。此外，在（已停止运作的）安全丛书中发布的一些出版物并非安全标准，尤其是被指定为安全实践或程序与数据的那些。其他 IAEA 出版物，如安全报告和 TECDOCs（其中大多数是依据《规约》第 VIII 条发布的），并非安全标准。	translated:IAEA-safety-glossary
+safety-system-support-features	zh	见 电厂设备。	translated:IAEA-safety-glossary
 safety-task	zh	聚变/核工程术语，对应英文“safety task”。	internal:dict-improvements
 sausage-instability	en	A magnetohydrodynamic instability that may occur in a plasma column carrying a strong axial current. Some perturbation makes the magnetized plasma column contract at certain places and its cross-section thinner; because the poloidal magnetic field produced by the current is inversely proportional to the plasma radius, the field is strengthened there and this strengthened field compresses the plasma further, so the column radius keeps shrinking, the plasma column becomes sausage-shaped and is finally cut off.	GB/T-4960.9
 sawtooth	en	A periodic relaxation oscillation of the temperature and density in the plasma core, which appears as a sawtooth-shaped waveform in soft X-ray measurement signals.	GB/T-4960.9
