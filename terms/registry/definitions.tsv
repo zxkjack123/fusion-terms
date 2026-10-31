@@ -5003,32 +5003,32 @@ permanent-shutdown	zh	见 停堆。	translated:IAEA-safety-glossary
 permeation	en	Diffusion of hydrogen isotopes through solid materials.	corpus
 permeation	zh	氢同位素在固体材料中的扩散渗透。	corpus
 person-or-organization	zh	任何组织、公司、合伙企业、商号、协会、信托、遗产、公共或私营机构、团体、政治或行政实体，或依据国家立法指定的、对任何影响防护与安全的行动负有责任和权力的其他人员。本术语取代法人一词，而在法律文本中，法人一词与「自然人」相对，自然人指个人。	translated:IAEA-safety-glossary
-personal-dose-equivalent-hp	zh	聚变/核工程术语，对应英文“personal dose equivalent, Hp(d)”。	internal:dict-improvements
+personal-dose-equivalent-hp	zh	见 dose equivalent quantities。	translated:IAEA-safety-glossary
 pfirsch-schlueter-current	en	A neoclassical current arising from the pressure gradient in toroidal geometry.	corpus
 pfirsch-schlueter-current	zh	Pfirsch-Schlüter电流是环形几何中由压力梯度产生的新经典电流。	corpus
 pfirsch-schlueter-regime	en	The high collisionality neoclassical transport regime.	corpus
 pfirsch-schlueter-regime	zh	Pfirsch-Schlüter区是高碰撞率的新经典输运区。	corpus
 photon-transport	en	Simulation of gamma-ray and X-ray transport through matter.	corpus
 photon-transport	zh	γ 射线和 X 射线在物质中输运的模拟。	corpus
-phreatic-eruption	zh	聚变/核工程术语，对应英文“phreatic eruption”。	internal:dict-improvements
-phreatomagmatic-eruption	zh	聚变/核工程术语，对应英文“phreatomagmatic eruption”。	internal:dict-improvements
-physical-ageing	zh	聚变/核工程术语，对应英文“physical ageing”。	internal:dict-improvements
-physical-diversity	zh	聚变/核工程术语，对应英文“physical diversity”。	internal:dict-improvements
-physical-half-life	zh	聚变/核工程术语，对应英文“physical half-life”。	internal:dict-improvements
-physical-model	zh	聚变/核工程术语，对应英文“physical model”。	internal:dict-improvements
-physical-protection	zh	聚变/核工程术语，对应英文“physical protection”。	internal:dict-improvements
-physical-separation	zh	聚变/核工程术语，对应英文“physical separation”。	internal:dict-improvements
+phreatic-eruption	zh	见 eruption。	translated:IAEA-safety-glossary
+phreatomagmatic-eruption	zh	见 eruption。	translated:IAEA-safety-glossary
+physical-ageing	zh	见 老化。	translated:IAEA-safety-glossary
+physical-diversity	zh	见 多样性。	translated:IAEA-safety-glossary
+physical-half-life	zh	见 放射性半衰期。	translated:IAEA-safety-glossary
+physical-model	zh	见 模型。	translated:IAEA-safety-glossary
+physical-protection	zh	见 防护。	translated:IAEA-safety-glossary
+physical-separation	zh	通过几何方式（距离、方位等）、通过适当的屏障，或通过二者的组合所实现的隔离。	translated:IAEA-safety-glossary
 physical-sputtering	en	Ejection of surface atoms by energetic ion bombardment.	corpus
 physical-sputtering	zh	物理溅射是高能离子轰击所导致的表面原子溅出。	corpus
-physisorption	zh	聚变/核工程术语，对应英文“physisorption”。	internal:dict-improvements
+physisorption	zh	见 吸着。	translated:IAEA-safety-glossary
 pipe-whip-restraint	en	A structural restraint that limits the whip motion of a high-energy pipe after rupture (nuclear-class piping safety requirement).	corpus
 pipe-whip-restraint	zh	管道甩击约束装置是限制高能管道断裂后甩击运动的结构约束件（核级管道安全要求）。	corpus
-planned-exposure-situation	zh	聚变/核工程术语，对应英文“planned exposure situation”。	internal:dict-improvements
-planning-target-volume	zh	聚变/核工程术语，对应英文“planning target volume”。	internal:dict-improvements
-plant-equipment	zh	聚变/核工程术语，对应英文“plant equipment (for a nuclear power plant)”。	internal:dict-improvements
+planned-exposure-situation	zh	见 照射情况。	translated:IAEA-safety-glossary
+planning-target-volume	zh	放射治疗中用于规划医学治疗的一种几何学概念，其中考虑患者运动与待受照组织运动的净效应、组织大小和形状的变化，以及射束几何（如射束大小和射束方向）的变化。	translated:IAEA-safety-glossary
+plant-equipment	zh	电厂设备：对安全重要的物项a、对安全不重要的物项a。	translated:IAEA-safety-glossary
 plant-layout	en	The physical arrangement and spatial design of plant buildings and systems.	corpus
 plant-layout	zh	电站布局是电厂建筑物与系统的物理布置与空间设计。	corpus
-plant-states	zh	聚变/核工程术语，对应英文“plant states (considered in design)”。	internal:dict-improvements
+plant-states	zh	! 以下条目（术语和定义）涉及设计阶段的考虑（即借助假设情景进行的考虑）。! 在选择、使用和关联已定义术语及其他词语时需审慎，以便清楚地作出区分并可由此推断出如下各项之间的区别，例如：事件与情势（见 event 条目）；事故与其他偶发事件；实际的（即现存的）、可能的（即可能存在的）或潜在的（即可能变成的）与假设的（即设定的或假定的）；以及客观观察或确定的事项与主观决定或宣称的事项。! 例如，“工况”（conditions）一词在各术语中既用于设计所设定的规则之意（如运行限值和工况），也用于运行的环境情形之意（如电厂工况）；还用于兼跨设计与运行的术语中（如事故工况、使用工况）。! 因此，起草者和审查者需牢记文本所涉及的是设计还是运行，抑或二者兼有。设计中的潜在、设定或假定事项需与运行中观察或确定的事项相区分；而无论在设计中还是在运行中，所决定或宣称的事项（如应急状态）均需与前者（即潜在的、设定的、假定的、观察的和确定的事项）相区分。在研究堆和核燃料循环设施安全标准中所使用的设施状态（facility states）概念，与核动力厂的电厂状态（plant states）概念大体相当。除另有说明外，归入“电厂状态”一组的各术语定义适用于核动力厂、研究堆和核燃料循环设施。另见事件（event）、模型（model）、概率安全评价（probabilistic safety assessment）、不确定性（uncertainty）。运行状态 事故工况 设计扩展工况 预期 正常运行 设计基准 运行 事故 无 发生 显著 有堆芯 燃料 熔化 退化 事故工况。事故工况（accident conditions）。偏离正常运行，其发生频度低于预期运行事件而严重程度高于预期运行事件。事故工况包括设计基准事故和设计扩展工况。此类偏离的示例包括燃料严重破损或失水事故（LOCA）。另见 accident 和 event。预期运行事件（anticipated operational occurrence）。运行过程偏离正常运行，预计在设施运行寿期内至少发生一次，但鉴于适当的设计措施，不会对安全重要物项造成任何显著损坏，也不会导致事故工况。预期运行事件的示例包括正常电源丧失，以及汽轮机脱扣、正常运行电厂中个别物项的故障、个别控制设备的功能失效和主冷却剂泵失电等故障。一些国家和组织将本概念称为异常运行（以与正常运行相对照）。超设计基准事故（beyond design basis accident）。其事故工况比设计基准事故更为严重的设定事故。受控状态（controlled state）。在预期运行事件或事故工况之后出现的电厂状态，在该状态下能够确保基本安全功能的实现，并可维持足够长的时间以实施达到安全状态的措施。设计基准事故（design basis accident）。导致事故工况的设定事故，设施按既定设计准则和保守方法针对该事故进行设计，且其放射性物质释放保持在可接受的限值之内。设计扩展工况（design extension conditions）。未在设计基准事故中予以考虑、但在设施设计过程中按最佳估算方法予以考虑的设定事故工况，且其放射性物质释放保持在可接受的限值之内。对于核动力厂和研究堆，设计扩展工况包括无显著燃料退化的事件中的工况和有反应堆堆芯熔化的事件中的工况。正常运行（normal operation）。在规定运行限值和工况范围内的运行。对于核动力厂，这包括启动、功率运行、停堆过程、停堆状态、维修、试验和换料。运行状态（operational states）。在正常运行和预期运行事件下所定义的状态。一些国家和组织将本概念称为运行工况（以与事故工况相对照）。安全状态（safe state）。在预期运行事件或事故工况之后出现的电厂状态，在该状态下反应堆处于次临界，且基本安全功能能够得到确保并可长期保持稳定。	translated:IAEA-safety-glossary
 plasma-breakdown	en	The startup phase at the beginning of a plasma discharge.	corpus
 plasma-breakdown	zh	等离子体击穿是等离子体放电的启动阶段。	corpus
 plasma-confinement	en	The maintenance of a hot plasma within a bounded region so that it stays together long enough for thermonuclear fusion reactions to take place. The plasma tends to spread out under its own pressure and to lose energy, and any contact with the vessel wall would sharply lower its temperature, so some means must be provided to hold the hot plasma in place.	GB/T-4960.9
@@ -5068,9 +5068,9 @@ plasma-sustainment	zh	等离子体维持是电流与约束的非感应维持。	
 plasma-termination	en	The phase at the end of a plasma discharge.	corpus
 plasma-termination	zh	等离子体终止是放电结束的阶段。	corpus
 plateau-regime	en	A collisionality regime of a plasma in which the effective Coulomb collision frequency is equal to or greater than the poloidal transit frequency, while the mean free path length is smaller than the connection length. In this state the transport coefficients are independent of the collision frequency.	GB/T-4960.9
-plinian-eruption	zh	聚变/核工程术语，对应英文“plinian eruption”。	internal:dict-improvements
-pliocene	zh	聚变/核工程术语，对应英文“Pliocene”。	internal:dict-improvements
-poison	zh	聚变/核工程术语，对应英文“poison”。	internal:dict-improvements
+plinian-eruption	zh	见 eruption。	translated:IAEA-safety-glossary
+pliocene	zh	地质时间的一个区间，自 5.3 百万年前延续至 2.6 百万年前。	translated:IAEA-safety-glossary
+poison	zh	一种凭借其高中子吸收截面来降低反应性（通常在反应堆堆芯中）的物质。[可燃毒物]。因吸收中子而效能下降的毒物。! 更倾向于使用“可燃吸收体”（burnable absorber）这一术语。	translated:IAEA-safety-glossary
 poloidal-asymmetry	en	Poloidal non-uniform distribution of high-Z impurity density.	corpus
 poloidal-asymmetry	zh	极向不对称性是高Z杂质密度的极向非均匀分布。	corpus
 poloidal-field-coil	en	A coil of the magnet system that produces the poloidal magnetic field of the device, that is, the field in the poloidal direction; the term is not to be confused with PFC, which stands for plasma-facing component.	corpus
@@ -5078,8 +5078,8 @@ poloidal-field-coil	zh	磁体系统中产生装置极向场的线圈，所产生
 port-cell	en	The ITER space that houses port equipment.	corpus
 port-cell	zh	端口室是 ITER 中布置端口设备的空间。	corpus
 postulated-initiating-event	zh	聚变/核工程术语，指“假设始发事件”这一技术概念。	internal:dict-improvements
-potential-alpha-energy	zh	聚变/核工程术语，对应英文“potential alpha energy”。	internal:dict-improvements
-potential-exposure	zh	聚变/核工程术语，对应英文“potential exposure”。	internal:dict-improvements
+potential-alpha-energy	zh	在 222Rn 或 220Rn 的衰变产物沿衰变链衰变过程中最终释放的总α能量。! 注意，氡衰变产物的定义包括直至但不包括 210Pb 的衰变链。潜在α能量照射量。个体在受 222Rn 或 220Rn 衰变产物照射的时间段内，空气中潜在α能量浓度的时间积分。! 这不是一种潜在照射。用于测量由 222Rn 或 220Rn 衰变产物所致的照射，尤其是职业照射。单位：J·h/m3。	translated:IAEA-safety-glossary
+potential-exposure	zh	前瞻性考虑的照射，预期不会确定地发生，但可能由源处的预期运行事件或事故引起，或由具有概率性质的事件或事件序列引起，包括设备故障和操作失误。! 潜在照射不是一种照射，也不是照射的一种类型。潜在照射在计划照射情形中予以考虑。潜在照射包括因具有概率性质的事件或事件序列中的源所致的前瞻性考虑（即假设的或设定的）照射，包括由事故、设备故障、操作失误、自然事件或现象（如飓风、地震和洪水）以及无意的人类侵入（如在机构控制取消后对近地表处置设施的人类侵入）所致的照射。对于地质处置设施，对不确定的过程和事件的长期作用的评价会导致对长期潜在照射的预测。	translated:IAEA-safety-glossary
 power-balance	en	Balance between the external heating power, the fusion power produced, and the power carried away by the loss channels.	corpus
 power-balance	zh	外部加热功率、产生的聚变功率与各损失通道带走功率之间的平衡。	corpus
 power-degradation	en	Degradation of confinement as heating power increases.	corpus
@@ -5088,16 +5088,16 @@ power-deposition-profile	en	The spatial distribution of externally deposited hea
 power-deposition-profile	zh	功率沉积分布是等离子体中外部沉积加热功率的空间分布。	corpus
 power-exhaust	en	The process of safely exhausting plasma thermal power to the divertor or wall.	corpus
 power-exhaust	zh	功率排出是将等离子体热功率安全导出至偏滤器或壁的过程。	corpus
-practical-elimination	zh	聚变/核工程术语，对应英文“practical elimination”。	internal:dict-improvements
-practice	zh	聚变/核工程术语，对应英文“practice”。	internal:dict-improvements
-precautionary-action-zone	zh	聚变/核工程术语，对应英文“precautionary action zone (PAZ)”。	internal:dict-improvements
-precautionary-urgent-protective-action	zh	聚变/核工程术语，对应英文“precautionary urgent protective action”。	internal:dict-improvements
+practical-elimination	zh	“实际消除”一词曾用于核动力厂设计要求中，以表达如下概念：对于核动力厂，只要（1）相关事件序列在物理上不可能发生，或（2）这些序列“可被有高度信心地认为极不可能出现”[18]，情景中某些假设事件序列潜在发生的可能性就可被认为已排除（“实际消除”）。! “实际消除”一词具有误导性，因为它实际上涉及的是将事件序列从假设情景中排除的可能性，而非安全性的实际可行问题。该词也很容易被误解、曲解或误译为主张通过实际措施“消除”“事故”（或将“practically”理解为“几乎”之意）。以自然语言清晰起草会更为可取。	translated:IAEA-safety-glossary
+practice	zh	任何引入额外照射源或额外照射途径，或改变现有源的照射途径网络，从而使人的照射、受照可能性或受照人数增加的人类活动。! 放射性废物是伴有某些有益效应的实践的结果，例如以核方式发电或放射性同位素的诊断应用。因此，这种废物的管理只是整体实践的一部分。设施和活动（facilities and activities）一语旨在为源与实践（或干预）的术语体系提供一种替代表述，用以指称各种一般类别的状况。诸如“经授权的实践”“受控实践”和“受监管的实践”等术语，用于将须接受监管控制的实践与符合实践定义但无需控制或不适于控制的其他活动区分开来。	translated:IAEA-safety-glossary
+precautionary-action-zone	zh	见 emergency planning zones。	translated:IAEA-safety-glossary
+precautionary-urgent-protective-action	zh	见 紧急防护行动。	translated:IAEA-safety-glossary
 precession-drift	en	The toroidal precession drift of trapped particles.	corpus
 precession-drift	zh	进动漂移是俘获粒子沿环向的进动。	corpus
 predator-prey-oscillation	en	A nonlinear oscillation between turbulence and zonal flows.	corpus
 predator-prey-oscillation	zh	捕食-被捕食振荡是湍流与带状流之间的非线性振荡。	corpus
-predictive-maintenance	zh	聚变/核工程术语，对应英文“predictive maintenance”。	internal:dict-improvements
-predisposal-management	zh	聚变/核工程术语，对应英文“predisposal management (of waste)”。	internal:dict-improvements
+predictive-maintenance	zh	见 维护。	translated:IAEA-safety-glossary
+predisposal-management	zh	见 放射性废物管理。	translated:IAEA-safety-glossary
 preferential-sputtering	en	The preferential ejection of the lighter element from a multi-component target.	corpus
 preferential-sputtering	zh	择优溅射：多组分靶中较轻元素被优先溅射出去。	corpus
 preparedness-stage	zh	聚变/核工程术语，对应英文“preparedness stage”。	internal:dict-improvements
