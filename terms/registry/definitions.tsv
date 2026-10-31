@@ -4649,13 +4649,13 @@ life-lifetime	zh	设计寿期。设施或部件预期按其制造时所依据的
 life-management	zh	见 ageing management。	translated:IAEA-safety-glossary
 lifetime	zh	见 寿命。	translated:IAEA-safety-glossary
 lifetime-dose	zh	见 剂量概念。	translated:IAEA-safety-glossary
-lifetime-management	zh	聚变/核工程术语，对应英文“lifetime management”。	internal:dict-improvements
-lifetime-risk	zh	聚变/核工程术语，对应英文“lifetime risk”。	internal:dict-improvements
-limit	zh	聚变/核工程术语，对应英文“limit”。	internal:dict-improvements
+lifetime-management	zh	见 ageing management。	translated:IAEA-safety-glossary
+lifetime-risk	zh	见 风险。	translated:IAEA-safety-glossary
+limit	zh	限值：指在某些特定活动或情形中所使用的、不得被超过的某一量的值。！limit（限值）一词只应用于表示不得被超过的判据；例如，超过该限值会导致某种形式的法律制裁被援引的情形。！用于其他目的的判据——例如用以表明需要开展更深入的调查或对程序进行审查，或作为向监管机构报告的阈值——应使用其他术语描述，如参考水平。acceptable limit（可接受限值）。指监管机构可接受的限值。可接受限值一词通常用于指事故（或潜在照射，若其发生）的预测放射性后果的限值，该限值在已考虑该事故或潜在照射发生概率的情况下（即基于其不大可能发生的前提）为相关监管机构所接受。authorized limit（授权限值）一词应用于指剂量或风险的限值，或放射性核素释放量的限值，这些限值在假定其很可能发生的前提下为监管机构所接受。annual limit on exposure (ALE)（年照射限值）。指一年内会导致吸入年摄入量限值（ALI）的潜在α能照射量。用于由 222Rn 或 220Rn 的衰变产物所致的照射。单位为 J·h/m3。annual limit on intake (ALI)（年摄入量限值）。指参考人在一年内通过吸入、食入或经皮肤对某一给定放射性核素的摄入量，该摄入量会导致待积剂量等于相应剂量限值。年摄入量限值以活度单位表示。见参考文献 [21, 22]。authorized limit（授权限值）。指由监管机构确立或正式接受的、对某一可测量量的限值。！凡有可能，应优先使用 authorized limit 而非 prescribed limit。authorized limit 与 prescribed limit 含义相当，但在辐射安全和放射性废物管理安全中，特别是在排放限值的语境下，authorized limit 更为常用。derived limit（导出限值）。指基于某一模型设定的、对某一可测量量的限值，其满足可被假定为确保满足某一初级限值。dose limit（剂量限值）。指在计划照射情况下个人所受有效剂量或当量剂量的、不得被超过的值。operational limits and conditions（运行限值和条件）。指由监管机构批准的、规定某一获准设施安全运行所需的参数限值、功能能力以及设备和人员性能水平的一整套规则。[prescribed limit]（规定限值）。指由监管机构确立或接受的限值。首选 authorized limit 一词。primary limit（初级限值）。指对个人所受剂量或风险的限值。safety limits（安全限值）。指对运行参数的限值，在获准设施已被证明是安全的范围之内。安全限值是超出正常运行的那些运行限值和条件之外的限值。[secondary limit]（次级限值）。指与某一初级限值相对应的、对某一可测量量的限值。！此类限值符合导出限值的定义，应使用 derived limit。例如，年摄入量限值是一项导出限值，对应于工作人员年有效剂量的初级限值。	translated:IAEA-safety-glossary
 limiter	en	A component installed in the tokamak vacuum vessel and used to limit the plasma boundary. In most devices it is arranged poloidally, but a toroidal arrangement is also used.	GB/T-4960.9
 line-radiation	en	Characteristic spectral line radiation from bound-bound transitions.	corpus
 line-radiation	zh	线辐射是由束缚-束缚跃迁产生的特征谱线辐射。	corpus
-linear-no-threshold-hypothesis	zh	聚变/核工程术语，对应英文“linear–no threshold (LNT) hypothesis”。	internal:dict-improvements
+linear-no-threshold-hypothesis	zh	线性无阈假设：指随机效应的风险在所有低于确定性效应发生水平的剂量与剂量率水平下均与剂量成正比的假设。也就是说，任何非零剂量都意味着随机效应风险非零。这是 IAEA 的安全标准（以及国际辐射防护委员会的建议）所依据的工作假设。对于低剂量和低剂量率，该假设尚未得到证明——事实上很可能无法证明——但就放射生物学而言，它被认为是据以制定安全标准的最站得住脚的假定。其他假设则推测，在低剂量和/或低剂量率下随机效应的风险是：(a) 大于线性无阈假设所意味着的风险（超线性假设）；(b) 小于线性无阈假设所意味着的风险（亚线性假设）；(c) 在某一剂量或剂量率阈值以下为零（阈值假设）；或 (d) 在某一剂量或剂量率阈值以下为负，即低剂量和低剂量率使个人免受随机效应和/或其他类型危害（毒物兴奋效应假设）。‘living’ probabilistic safety assessment（“活”概率安全评价）见 probabilistic safety assessment (PSA)。	translated:IAEA-safety-glossary
 liner-implosion	en	The compression of a magnetized plasma by the implosion of a metal liner.	corpus
 liner-implosion	zh	衬套内爆：通过金属衬套内爆对磁化等离子体进行的压缩。	corpus
 linker	en	A linking tool that operates on object files.	corpus
@@ -4672,10 +4672,10 @@ lithium-6-enrichment	zh	锂-6富集：把增殖包层用锂中锂-6 的丰度提
 load-following	en	The ability to adjust power output so that it follows fluctuations in demand.	corpus
 load-following	zh	负荷跟踪：调节功率输出以匹配需求波动的能力。	corpus
 locked-mode	en	A state in which the frequency of a rotating magnetohydrodynamic mode is locked.	GB/T-4960.9
-logic	zh	聚变/核工程术语，对应英文“logic”。	internal:dict-improvements
+logic	zh	逻辑：指按照预定规则，由若干二进制输入信号生成所需的二进制输出信号。该术语也用于指用于生成此信号的设备类型（例如逻辑门、逻辑板）。	translated:IAEA-safety-glossary
 long-leg-divertor	en	A divertor with an extended outer leg that increases the radiation volume.	corpus
 long-leg-divertor	zh	长腿偏滤器是外腿延长以增大辐射体积的偏滤器。	corpus
-long-lived-waste	zh	聚变/核工程术语，对应英文“long lived waste”。	internal:dict-improvements
+long-lived-waste	zh	见 waste classes。	translated:IAEA-safety-glossary
 long-pulse	en	Extended plasma discharge lasting hundreds to thousands of seconds.	corpus
 long-pulse	zh	持续数百至数千秒的长时间等离子体放电。	corpus
 loss-of-coolant-accident	en	Accident scenario involving the loss of the primary coolant flow.	corpus
@@ -4686,22 +4686,22 @@ loss-of-vacuum-accident	en	Design basis accident: loss of vacuum boundary integr
 loss-of-vacuum-accident	zh	失真空事故是真空边界完整性丧失的设计基准事故。	corpus
 low-cycle-fatigue	en	Fatigue occurring under high strain amplitude.	corpus
 low-cycle-fatigue	zh	低周疲劳是高应变幅下发生的疲劳损伤。	corpus
-low-dispersible-radioactive-material	zh	聚变/核工程术语，对应英文“low dispersible radioactive material”。	internal:dict-improvements
-low-enriched-uranium	zh	聚变/核工程术语，对应英文“low enriched uranium (LEU)”。	internal:dict-improvements
+low-dispersible-radioactive-material	zh	低弥散放射性物质：指弥散性有限且非粉末形式的固体放射性物质，或封装在密封容器中的此类固体放射性物质。（见 SSR-6 (Rev. 1) [2]。）！此用法为《运输条例》[2] 所特有，在其他场合应避免使用。	translated:IAEA-safety-glossary
+low-enriched-uranium	zh	见 铀。	translated:IAEA-safety-glossary
 low-level-waste	zh	聚变/核工程术语，指“低放废物”这一技术概念。	internal:dict-improvements
-low-linear-energy-transfer-radiation	zh	聚变/核工程术语，对应英文“low linear energy transfer (LET) radiation”。	internal:dict-improvements
-low-specific-activity-material	zh	聚变/核工程术语，对应英文“low specific activity (LSA) material”。	internal:dict-improvements
+low-linear-energy-transfer-radiation	zh	见 辐射。	translated:IAEA-safety-glossary
+low-specific-activity-material	zh	低比活度物质：指其性质上具有有限比活度的放射性物质，或适用估算平均比活度限值的放射性物质。（见 SSR-6 (Rev. 1) [2]。）！在确定估算平均比活度时，低比活度物质周围的外部屏蔽材料要求不予考虑。！此用法为《运输条例》[2] 所特有，在其他场合应避免使用。	translated:IAEA-safety-glossary
 low-temperature-superconductor	en	A superconductor with a critical temperature Tc below 30 K, the class of materials that includes NbTi and Nb3Sn.	corpus
 low-temperature-superconductor	zh	临界温度Tc低于30 K的一类超导体，包括NbTi和Nb3Sn等材料。	corpus
-low-toxicity-alpha-emitters	zh	聚变/核工程术语，对应英文“low toxicity alpha emitters”。	internal:dict-improvements
+low-toxicity-alpha-emitters	zh	低毒性α发射体：天然铀；贫化铀；天然钍；235U 或 238U；232Th；含于矿石或物理与化学精矿中的 Th 和 230Th；或半衰期短于 10 天的α发射体。（见 SSR-6 (Rev. 1) [2]。）	translated:IAEA-safety-glossary
 lower-hybrid-wave	en	A radio-frequency wave whose frequency lies between the ion and electron cyclotron frequencies. It has an electric field component parallel to the magnetic field and can therefore accelerate electrons moving along the magnetic field lines.	GB/T-4960.9
-lower-limit-of-detection	zh	聚变/核工程术语，对应英文“lower limit of detection”。	internal:dict-improvements
+lower-limit-of-detection	zh	见 最小可探测活度。	translated:IAEA-safety-glossary
 lower-ports	zh	下部窗口，指进入 ITER 真空室的下层通道口。9 个下部窗口将为远程操作、诊断、加热和真空系统提供进入真空室的通道。	translated:ITER-glossary
-lung-absorption-type	zh	聚变/核工程术语，对应英文“lung absorption type”。	internal:dict-improvements
+lung-absorption-type	zh	肺部吸收类型：指用于区分吸入的放射性核素从呼吸道转移到血液的不同速率的分类。参考文献 [38] 将物质分为四种肺部吸收类型：(a) V 型（极快）指为剂量学目的假定被瞬时吸收进入血液的物质；(b) F 型（快）指易于被吸收进入血液的物质；(c) M 型（中等）指吸收进入血液速率居中的物质；(d) S 型（慢）指相对不溶、仅缓慢被吸收进入血液的物质。肺部吸收类型取代了先前在参考文献 [20–22] 中推荐的 [吸入类别] D（天）、M（月）和 Y（年）（常被非正式地称为“肺类别”）。肺部吸收类型 F 与吸入类别 D 之间、肺部吸收类型 M 与吸入类别 M 之间以及肺部吸收类型 S 与吸入类别 Y 之间存在近似对应关系。另见 gut transfer factor（肠转移因子），即胃肠道中摄入的放射性核素的一个类似概念。	translated:IAEA-safety-glossary
 maglif	en	A Sandia Z-machine approach that combines an applied magnetic field, liner implosion and laser preheat.	corpus
 maglif	zh	磁化衬套惯性聚变：桑迪亚 Z 装置上把外加磁场、衬套内爆与激光预热相结合的一种途径。	corpus
-magma	zh	聚变/核工程术语，对应英文“magma”。	internal:dict-improvements
-magma-chamber	zh	聚变/核工程术语，对应英文“magma chamber”。	internal:dict-improvements
+magma	zh	岩浆：指熔融岩石（800–1200°C）的混合物，其中还可含有悬浮晶体、溶解气体，有时还含有气泡。岩浆由地壳或地幔中既有岩石的熔融而形成。岩浆的成分和气体含量通常控制火山的喷发类型。一般而言，温度较高、黏度较低的岩浆（例如玄武岩）使气体能够更有效地分离，从而限制喷发的爆炸性；而温度较低、黏度较高的岩浆（例如安山岩、英安岩、流纹岩）在喷发时更可能发生剧烈碎裂。	translated:IAEA-safety-glossary
+magma-chamber	zh	岩浆房：指充满岩浆并在火山喷发期间被抽取的地下储库。这些储库中的岩浆可部分结晶或与新岩浆混合，从而随时间改变喷发的成分或危害。	translated:IAEA-safety-glossary
 magnet-feeder	en	The system that connects the superconducting magnet circuits with their power supply and their cryogenic supply, comprising the current leads and the cryogenic connections.	corpus
 magnet-feeder	zh	把超导磁体回路与其供电电源和低温供给连接起来的系统，由电流引线和低温连接件组成。	corpus
 magnet-power	en	The electrical power consumed by the magnet system, whether resistive or cryogenic.	corpus
@@ -4725,29 +4725,29 @@ magnetized-target-fusion	zh	磁化靶聚变：把预先磁化的等离子体靶�
 magneto-inertial-fusion	en	A hybrid fusion approach that combines magnetic and inertial confinement by imploding a magnetized target plasma to fusion conditions.	corpus
 magneto-inertial-fusion	zh	一种结合磁约束与惯性约束的混合聚变途径，通过内爆磁化靶等离子体达到聚变条件。	corpus
 magnetohydrodynamics	en	The science that studies the motion of electrically conducting fluids (liquids and plasmas) interacting with a magnetic field; also called hydromagnetics (hydromagnetic).	GB/T-4960.9
-magnitude	zh	聚变/核工程术语，对应英文“magnitude (of an earthquake)”。	internal:dict-improvements
-main-safety-function	zh	聚变/核工程术语，对应英文“main safety function”。	internal:dict-improvements
+magnitude	zh	震级：指与以地震波形式释放的能量相关的地震大小的量度。地震震级指某一标准化标度上的数值，例如矩震级、面波震级、体波震级、地方震级或持续时间震级，但不限于此。maximum potential magnitude（最大潜在震级）。指地震危险性分析中使用的、表征某一震源产生地震潜力的参考值。最大潜在震级的计算方法取决于所考虑的震源类型以及地震危险性分析中将采用的方法。	translated:IAEA-safety-glossary
+main-safety-function	zh	见 安全功能。	translated:IAEA-safety-glossary
 maintenance	zh	聚变/核工程术语，指“维护”这一技术概念。	internal:dict-improvements
-maintenance-bypass	zh	聚变/核工程术语，对应英文“maintenance bypass”。	internal:dict-improvements
+maintenance-bypass	zh	见 旁路。	translated:IAEA-safety-glossary
 major-plasma-radius	zh	等离子体大半径，指等离子体最大宽度所在高度处最外闭合磁面的中心，即环体的大半径。	translated:ITER-glossary
 makefile	en	A build specification file used by the make tool.	corpus
 makefile	zh	Makefile 是 make 工具的构建规格文件。	corpus
-management	zh	聚变/核工程术语，对应英文“management (of sealed radioactive sources)”。	internal:dict-improvements
-management-self-assessment	zh	聚变/核工程术语，对应英文“management self-assessment”。	internal:dict-improvements
-management-system	zh	聚变/核工程术语，对应英文“management system”。	internal:dict-improvements
-management-system-review	zh	聚变/核工程术语，对应英文“management system review”。	internal:dict-improvements
+management	zh	管理：[指与放射源的制造、供应、接收、拥有、贮存、使用、转让、进口、出口、运输、维护、再循环或处置有关的行政与运行活动。]（见参考文献 [14]。）！此用法为《放射源安全与保安行为准则》[14] 所特有。	translated:IAEA-safety-glossary
+management-self-assessment	zh	见 评价。	translated:IAEA-safety-glossary
+management-system	zh	管理体系：指为确立方针和目标并使这些目标得以高效且有效地实现而建立的一组相互关联或相互作用的要素（体系）。管理体系的组成部分包括组织结构、资源以及组织过程。管理（在 ISO 9000 中）[39] 被定义为指导和控制某一组织的协调活动。管理体系将某一组织的所有要素整合为一个协调一致的体系，以使该组织的所有目标得以实现。这些要素包括组织结构、资源和过程。人员、设备和组织文化以及成文的方针和过程构成管理体系的组成部分。组织的过程必须针对对该组织提出的全部要求，这些要求例如在 IAEA 安全标准和其他国际准则与标准中确立。integrated management system（一体化管理体系）。指针对设施和活动的一个单一协调一致的管理体系，其中某一组织的所有组成部分被整合起来，以使该组织的目标得以实现。被整合的这些组织组成部分包括组织结构、资源以及组织过程。	translated:IAEA-safety-glossary
+management-system-review	zh	管理体系评审：指由某一组织的高级管理层定期、系统地对其实施方针并在实现组织目的和目标方面管理体系的适宜性、充分性、有效性和效率所作的评定。	translated:IAEA-safety-glossary
 manipulator	en	A remotely operated robotic arm used for in-vessel maintenance, inspection and component handling.	corpus
 manipulator	zh	操纵器：用于真空室内维护、检查与部件操作的遥控机械臂。	corpus
-mantle-earth-s	zh	聚变/核工程术语，对应英文“mantle, Earth’s”。	internal:dict-improvements
+mantle-earth-s	zh	见 地球地幔。	translated:IAEA-safety-glossary
 marfe	en	Multifaceted asymmetric radiation from the edge, a poloidally localized radiation instability.	corpus
 marfe	zh	MARFE 是来自边缘的多面非对称辐射，一种极向局域化的辐射不稳定性。	corpus
 mast-upgrade	zh	兆安球形托卡马克（MAST），位于英国（UK）的卡勒姆聚变能源中心（Culham Centre for Fusion Energy）。参见该网页。	translated:ITER-glossary
 material	en	A substance that things can be made from.	https://www.oxfordlearnersdictionaries.com/definition/english/material_1
 material	zh	材料是可以用来制造成品的物质。	https://www.oxfordlearnersdictionaries.com/definition/english/material_1
-material-ageing	zh	聚变/核工程术语，对应英文“material ageing”。	internal:dict-improvements
+material-ageing	zh	见 物理老化。	translated:IAEA-safety-glossary
 material-migration	en	Net erosion, transport and redeposition of wall material inside the vessel.	corpus
 material-migration	zh	材料迁移是真空室内壁材料净侵蚀、输运与再沉积的统称。	corpus
-mathematical-model	zh	聚变/核工程术语，对应英文“mathematical model”。	internal:dict-improvements
+mathematical-model	zh	见 模型。	translated:IAEA-safety-glossary
 maximum-credible-accident	en	The most severe postulated accident scenario used for safety analysis.	corpus
 maximum-credible-accident	zh	最大可信事故是安全分析所采用的最严重假设事故场景。	corpus
 maximum-normal-operating-pressure	zh	聚变/核工程术语，对应英文“maximum normal operating pressure”。	internal:dict-improvements
