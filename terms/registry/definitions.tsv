@@ -5382,25 +5382,25 @@ safety-related-item	zh	见 电厂设备。	translated:IAEA-safety-glossary
 safety-related-system	zh	见 电厂设备。	translated:IAEA-safety-glossary
 safety-standards	zh	依据《IAEA 规约》第 III 条第 A 款第 6 项第 8 目发布的各项标准 [44]。为保护人类和环境免受电离辐射、并尽可能减小对生命和财产的危害而制定的要求、条例、标准、规则、实践准则或建议。1997 年以来在 IAEA 安全标准丛书中发布的安全标准被指定为安全基本法则、安全要求或安全导则。1997 年之前在（已停止运作的）安全丛书中所发布的一些安全标准被指定为安全标准、准则、条例或规则。此外，在（已停止运作的）安全丛书中发布的一些出版物并非安全标准，尤其是被指定为安全实践或程序与数据的那些。其他 IAEA 出版物，如安全报告和 TECDOCs（其中大多数是依据《规约》第 VIII 条发布的），并非安全标准。	translated:IAEA-safety-glossary
 safety-system-support-features	zh	见 电厂设备。	translated:IAEA-safety-glossary
-safety-task	zh	聚变/核工程术语，对应英文“safety task”。	internal:dict-improvements
+safety-task	zh	对一个或多个指示特定假设始发事件的变量的感测，信号处理，为防止超出设计基准中所规定限值而所需安全行动的启动与完成，以及安全系统支持功能中某些服务的启动与完成。	translated:IAEA-safety-glossary
 sausage-instability	en	A magnetohydrodynamic instability that may occur in a plasma column carrying a strong axial current. Some perturbation makes the magnetized plasma column contract at certain places and its cross-section thinner; because the poloidal magnetic field produced by the current is inversely proportional to the plasma radius, the field is strengthened there and this strengthened field compresses the plasma further, so the column radius keeps shrinking, the plasma column becomes sausage-shaped and is finally cut off.	GB/T-4960.9
 sawtooth	en	A periodic relaxation oscillation of the temperature and density in the plasma core, which appears as a sawtooth-shaped waveform in soft X-ray measurement signals.	GB/T-4960.9
 sawtooth-crash	en	Within sawtooth activity, the phenomenon in which the core of a tokamak undergoes a local break-up and the central temperature collapses rapidly.	GB/T-4960.9
 scatter-plot	en	A data visualization that is based on points.	corpus
 scatter-plot	zh	散点图是基于数据点的数据可视化。	corpus
-scenario	zh	聚变/核工程术语，对应英文“scenario”。	internal:dict-improvements
+scenario	zh	一组假设的或假定的条件和/或事件。最常用于分析或评价中，用以代表待建模的可能未来条件和/或事件，例如核设施可能发生的事故，或处置设施及其周围环境的可能未来演变。一个情景可代表单一时间点或单一事件的条件，也可代表条件和/或事件（包括过程）的时间历程。见事件。参考情景。基于未来人们极有可能从事的、可能导致人员侵入处置设施的、且可被评价的活动（如施工、采矿或钻探），对处置设施及其周围环境所作的一种假设但可能的演变。	translated:IAEA-safety-glossary
 scenario-development	en	The design and optimization of tokamak operational scenarios.	corpus
 scenario-development	zh	运行场景开发：托卡马克运行场景的设计与优化。	corpus
-scram	zh	聚变/核工程术语，对应英文“scram”。	internal:dict-improvements
+scram	zh	核反应堆在应急情况下的快速停堆。亦见预期瞬态未能紧急停堆（ATWS）。	translated:IAEA-safety-glossary
 scratch-filesystem	en	A temporary high-speed storage filesystem on HPC systems.	corpus
 scratch-filesystem	zh	临时文件系统是 HPC 系统上用于临时存放数据的高速存储。	corpus
-screening	zh	聚变/核工程术语，对应英文“screening”。	internal:dict-improvements
-screening-distance-value	zh	聚变/核工程术语，对应英文“screening distance value (SDV)”。	internal:dict-improvements
-screening-probability-level	zh	聚变/核工程术语，对应英文“screening probability level (SPL)”。	internal:dict-improvements
+screening	zh	一类分析，旨在把对防护或安全而言不太重要的因素从进一步考虑中剔除，以便集中于更为重要的因素。这通常通过考虑非常悲观的假设情景来实现。筛选通常在分析的早期阶段进行，以便缩小分析或评价中需要详细考虑的因素范围。	translated:IAEA-safety-glossary
+screening-distance-value	zh	距设施的距离，超过该距离后，出于筛选目的，某一特定类型外部事件的潜在源可被忽略。	translated:IAEA-safety-glossary
+screening-probability-level	zh	某一特定类型事件的年发生概率的一个数值，低于该值时，出于筛选目的，此类事件可被忽略。	translated:IAEA-safety-glossary
 sdk	en	A Software Development Kit, commonly abbreviated SDK.	corpus
 sdk	zh	SDK 是 Software Development Kit（软件开发工具包）的缩写。	corpus
-seabed-disposal	zh	聚变/核工程术语，对应英文“seabed disposal”。	internal:dict-improvements
-sealed-source	zh	聚变/核工程术语，对应英文“sealed source”。	internal:dict-improvements
+seabed-disposal	zh	见 处置。	translated:IAEA-safety-glossary
+sealed-source	zh	见 源。	translated:IAEA-safety-glossary
 sealing	en	The action of closing a container, joint or opening tightly so that air, liquid or gas cannot get in or out.	https://www.oxfordlearnersdictionaries.com/definition/english/seal
 sealing	zh	密封是使容器、连接处或开口保持紧密、阻止空气、液体或气体进出的工艺过程。	https://www.oxfordlearnersdictionaries.com/definition/english/seal
 secondary-loop	en	The secondary coolant circuit that carries heat to the power conversion system.	corpus
@@ -5408,40 +5408,40 @@ secondary-loop	zh	二回路是将热量输送到动力转换系统的二次冷�
 secondary-waste	zh	聚变/核工程术语，指“二次废物”这一技术概念。	internal:dict-improvements
 sector-sub-assembly	en	The pre-assembly of a vacuum vessel sector with thermal shield and plasma-facing components.	corpus
 sector-sub-assembly	zh	扇区子装配是真空室扇区与热屏蔽、面向等离子体部件的预组装。	corpus
-security	zh	聚变/核工程术语，对应英文“security”。	internal:dict-improvements
-segregation	zh	聚变/核工程术语，对应英文“segregation”。	internal:dict-improvements
-seismogenic-structure	zh	聚变/核工程术语，对应英文“seismogenic structure”。	internal:dict-improvements
-seismotectonic-model	zh	聚变/核工程术语，对应英文“seismotectonic model”。	internal:dict-improvements
-self-assessment	zh	聚变/核工程术语，对应英文“self-assessment”。	internal:dict-improvements
+security	zh	见 核安保。	translated:IAEA-safety-glossary
+segregation	zh	1. 见放射性废物管理（1）。2. 通过距离或借助某种形式的屏障，对构筑物、系统和部件进行物理分隔，以降低共因失效的可能性。3. 运输货包与人员、未曝光的照相胶片及危险货物的分隔，以及含易裂变材料的运输货包彼此之间的分隔。（见 SSR-6 (Rev. 1) [2]。）	translated:IAEA-safety-glossary
+seismogenic-structure	zh	展现出地震活动，或表现出历史地表破裂或古地震作用效应，并且很可能在关注时段内产生大地震的构造。	translated:IAEA-safety-glossary
+seismotectonic-model	zh	见 模型。	translated:IAEA-safety-glossary
+self-assessment	zh	见 评价。	translated:IAEA-safety-glossary
 self-sputtering	en	Sputtering of a surface by its own redeposited species.	corpus
 self-sputtering	zh	自溅射：表面被其自身再沉积物种溅射。	corpus
-senior-management	zh	聚变/核工程术语，对应英文“senior management”。	internal:dict-improvements
-service-conditions	zh	聚变/核工程术语，对应英文“service conditions”。	internal:dict-improvements
-service-life	zh	聚变/核工程术语，对应英文“service life”。	internal:dict-improvements
+senior-management	zh	对一个组织进行最高层级指导、控制和评价的人员。	translated:IAEA-safety-glossary
+service-conditions	zh	构筑物、系统或部件在服役期内存在或预计存在的物理条件。服役条件包括环境条件（例如湿度条件；热学、化学、电气、机械和辐射条件），以及运行条件（正常运行时的条件、由差错引发的条件）和事件期间及事件之后的条件。	translated:IAEA-safety-glossary
+service-life	zh	见 寿命。	translated:IAEA-safety-glossary
 severe-accident	zh	聚变/核工程术语，指“严重事故”这一技术概念。	internal:dict-improvements
-severe-accident-management	zh	聚变/核工程术语，对应英文“severe accident management”。	internal:dict-improvements
-severe-deterministic-effect	zh	聚变/核工程术语，对应英文“severe deterministic effect”。	internal:dict-improvements
+severe-accident-management	zh	见 事故管理。	translated:IAEA-safety-glossary
+severe-deterministic-effect	zh	见 确定性效应。	translated:IAEA-safety-glossary
 shape-control	en	Control of plasma elongation, triangularity, and squareness.	corpus
 shape-control	zh	对等离子体拉长比、三角度与方形度进行控制。	corpus
 shared-library	en	A dynamically linked library, such as a .so or .dll file.	corpus
 shared-library	zh	共享库是动态链接的库（.so/.dll）。	corpus
 sheared-flow-z-pinch	en	A Z-pinch configuration stabilized by shear in the axial plasma flow.	corpus
 sheared-flow-z-pinch	zh	剪切流Z箍缩：依靠轴向等离子体流剪切获得稳定性的 Z 箍缩位形。	corpus
-sheltering	zh	聚变/核工程术语，对应英文“sheltering”。	internal:dict-improvements
+sheltering	zh	短期利用某一构筑物防护气载烟羽和/或已沉积的放射性物质。隐蔽是一项紧急防护行动，用于屏蔽外照射，并减少通过吸入途径摄入气载放射性核素。	translated:IAEA-safety-glossary
 shield-block-module	zh	在 ITER 中，包层被细分为若干模块，以便能够通过赤道窗口相对容易地更换。共有 440 个独立扇段，每个尺寸为 1 × 1.5 米、重约 4.5 吨。每个扇段都有一个可拆卸的第一壁，它直接面向等离子体并排出等离子体热负荷，以及一个专用于中子屏蔽的半永久性包层屏蔽体。（另见「第一壁」First Wall）。	translated:ITER-glossary
 shielding-labyrinth	en	A shielding penetration whose internal geometry is stepped or offset in a labyrinth pattern, so that no straight path through the duct exists and the radiation streaming along it is attenuated by repeated scattering.	corpus
 shielding-labyrinth	zh	内部几何呈阶梯或错位迷宫形式的一种屏蔽穿透，因不存在直穿路径，沿通道穿射的辐射经多次散射而被减弱。	corpus
 shielding-penetration	en	An opening or duct through a radiation shield that provides a path along which radiation can stream through the shield, so that the shielding effectiveness is locally reduced at that location.	corpus
 shielding-penetration	zh	辐射屏蔽体上供辐射穿越的开口或管道，辐射可沿其穿射而过，使该处的屏蔽效果局部降低。	corpus
-shipment	zh	聚变/核工程术语，对应英文“shipment”。	internal:dict-improvements
-short-lived-waste	zh	聚变/核工程术语，对应英文“short lived waste”。	internal:dict-improvements
-shutdown	zh	聚变/核工程术语，对应英文“shutdown”。	internal:dict-improvements
-shutdown-reactivity	zh	聚变/核工程术语，对应英文“shutdown reactivity”。	internal:dict-improvements
+shipment	zh	一个货包从起点到终点的特定移动。（见 SSR-6 (Rev. 1) [2]。）	translated:IAEA-safety-glossary
+short-lived-waste	zh	见 waste classes。	translated:IAEA-safety-glossary
+shutdown	zh	设施运行的停止。永久停堆。设施运行的停止，且无意在未来重新开始运行。在设施永久停堆与退役计划获得批准之间，可能存在一个过渡期。在此类过渡期内，设施的运行授权仍然有效，除非监管机构基于设施相关危害的降低而批准了对该授权的修改。在此过渡期内，可依照设施的运行授权或经修改的授权开展某些退役准备行动。	translated:IAEA-safety-glossary
+shutdown-reactivity	zh	见 reactivity。	translated:IAEA-safety-glossary
 shutdown-time	zh	从燃烧结束到等离子体状态结束之间的时间跨度；属于运行时间的一部分。	translated:ITER-glossary
 side-reaction	en	A parasitic neutron-producing reaction channel in advanced fuels.	corpus
 side-reaction	zh	副反应是先进燃料中产生中子的寄生反应道。	corpus
-sievert	zh	聚变/核工程术语，对应英文“sievert (Sv)”。	internal:dict-improvements
-significant-transboundary-release	zh	聚变/核工程术语，对应英文“significant transboundary release”。	internal:dict-improvements
+sievert	zh	等效剂量和有效剂量的 SI 单位，等于 1 J/kg。	translated:IAEA-safety-glossary
+significant-transboundary-release	zh	放射性物质向环境的释放，该释放可能导致由该释放所致、超出国界的剂量或污染水平超过防护行动和其他响应行动（包括食品限制和贸易限制）的通用准则。	translated:IAEA-safety-glossary
 simulation	en	A situation in which a particular set of conditions is created artificially in order to study or experience something that could exist in reality.	https://www.oxfordlearnersdictionaries.com/definition/english/simulation
 simulation	zh	模拟是人为构造一组特定条件，以研究或体验现实中可能存在的情形。	https://www.oxfordlearnersdictionaries.com/definition/english/simulation
 single-failure-criterion	zh	聚变/核工程术语，对应英文“single failure criterion”。	internal:dict-improvements
