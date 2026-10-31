@@ -5233,10 +5233,10 @@ radiological-medical-practitioner	zh	在辐射的医学应用方面受过专门�
 radiological-procedure	zh	涉及电离辐射的医学影像程序或治疗程序——例如诊断放射学、核医学或放射治疗中的程序，或计划程序、影像引导介入程序或其他涉及辐射的介入程序——其由辐射发生器、含密封源或非密封源的装置施予，或通过向患者施用的放射性药物施予。	translated:IAEA-safety-glossary
 radiological-protection	zh	见 防护。	translated:IAEA-safety-glossary
 radionuclides-of-artificial-origin	zh	见 天然来源放射性核素。	translated:IAEA-safety-glossary
-radionuclides-of-natural-origin	zh	聚变/核工程术语，对应英文“radionuclides of natural origin”。	internal:dict-improvements
-radiopharmacist	zh	聚变/核工程术语，对应英文“radiopharmacist”。	internal:dict-improvements
-radon	zh	聚变/核工程术语，对应英文“radon”。	internal:dict-improvements
-radon-progeny	zh	聚变/核工程术语，对应英文“radon progeny”。	internal:dict-improvements
+radionuclides-of-natural-origin	zh	在地球上以显著数量天然存在的放射性核素。该术语通常用于指原初放射性核素 40K、235U、238U、Th 及其放射性衰变产物。与人工来源放射性核素、人为放射性核素和人造放射性核素（三者含义相同）相对照，也与人工放射性核素（其不包括同样天然存在的人工来源放射性核素）相对照。! 人工来源放射性核素可以包括同样天然存在的放射性核素，但不得包括天然来源放射性核素。	translated:IAEA-safety-glossary
+radiopharmacist	zh	在放射药剂学方面受过专门教育和培训，并有能力配制和发放用于医学诊断和放射性核素治疗目的的放射性药品的卫生专业人员。人员的能力通常由国家通过设有对放射药剂师进行注册、认可或认证的正式机制来评定。尚未建立此种机制的国家，需要评定许可证持有者提名的任何拟担任放射药剂师的人员的教育、培训和能力，并依据国际标准或已建立此种制度的国家的标准，决定该人员是否能够履行放射药剂师的职能。	translated:IAEA-safety-glossary
+radon	zh	1. 氡元素任一同位素的任意组合。就 IAEA 安全标准而言，氡指 220Rn 和 222Rn。2. [222Rn。]在与钍射气（220Rn）对照时使用。	translated:IAEA-safety-glossary
+radon-progeny	zh	220Rn 和 222Rn 的短寿命放射性衰变产物。对于 222Rn，包括直至但不包括 210Pb 的衰变链，即 218Po、Pb、214Bi 和 214Po，以及痕量 218At 和 210Tl。半衰期为 22.3 年的铅-210 及其放射性子体——210Bi 和 210Po，以及痕量 206Hg 和 206Tl——严格来说都是 222Rn 的子体，但它们未列入本清单，因为其通常不会以显著数量以空气载带形式存在。对于 220Rn，包括 216Po、212Pb、212Bi、212Po 和 208Tl。	translated:IAEA-safety-glossary
 rami	en	Reliability, Availability, Maintainability and Inspectability analysis.	corpus
 rami	zh	RAMI分析是可靠性、可用性、可维修性和可检查性分析。	corpus
 rankine-cycle	en	A steam-turbine thermodynamic cycle used for power conversion.	corpus
@@ -5247,7 +5247,7 @@ rayleigh-taylor-instability	en	A hydrodynamic instability that develops at an in
 rayleigh-taylor-instability	zh	当密度不同的流体界面被加速时在该界面处发展的流体动力学不稳定性，会劣化惯性约束聚变中的靶丸内爆。	corpus
 re-erosion	en	Erosion of material that was redeposited on the surface after an earlier erosion step.	corpus
 re-erosion	zh	再侵蚀：对经先前侵蚀后再沉积到表面的材料再次发生的侵蚀。	corpus
-reactivity	zh	聚变/核工程术语，对应英文“reactivity, ρ”。	internal:dict-improvements
+reactivity	zh	对于核链式反应介质：ρ= 1 − k eff	translated:IAEA-safety-glossary
 reactor	en	A large structure used to produce nuclear energy, also called a nuclear reactor.	https://www.oxfordlearnersdictionaries.com/definition/english/reactor
 reactor	zh	堆是用于产生核能的大型结构（装置），又称核反应堆。	https://www.oxfordlearnersdictionaries.com/definition/english/reactor
 real-time-control	en	Feedback control system that operates on plasma timescales.	corpus
@@ -5255,7 +5255,7 @@ real-time-control	zh	在等离子体时间尺度上运行的反馈控制系统�
 recombination-radiation	en	The radiation produced when an ion and an electron recombine.	GB/T-4960.9
 recompression-brayton-cycle	en	An sCO2 Brayton cycle variant that uses recompression for higher efficiency.	corpus
 recompression-brayton-cycle	zh	再压缩布雷顿循环：采用再压缩以提高效率的超临界二氧化碳布雷顿循环变体。	corpus
-recording-level	zh	聚变/核工程术语，对应英文“recording level”。	internal:dict-improvements
+recording-level	zh	见 水平。	translated:IAEA-safety-glossary
 recrystallization	en	New grain nucleation and growth during high-temperature annealing.	corpus
 recrystallization	zh	再结晶是高温退火过程中新晶粒的形核与长大。	corpus
 recuperator	en	A heat exchanger that recovers exhaust heat for reuse in a Brayton cycle.	corpus
@@ -5266,33 +5266,33 @@ reduced-activation	en	Applies to materials whose neutron activation leaves waste
 reduced-activation	zh	低活化：描述材料经中子活化后其活化产物能在更短时间内达到可回收水平的一种属性；ITER 指出，通过持续开发低活化材料，未来装置的活化材料回收时间表有望缩短。	https://www.iter.org/machine/safety-and-environment
 reduced-mhd	en	A simplified MHD model valid for low-beta, large-aspect-ratio plasmas.	corpus
 reduced-mhd	zh	约化MHD是适用于低比压、大环径比等离子体的简化 MHD 模型。	corpus
-redundancy	zh	聚变/核工程术语，对应英文“redundancy”。	internal:dict-improvements
-reference-air-kerma-rate	zh	聚变/核工程术语，对应英文“reference air kerma rate”。	internal:dict-improvements
-reference-individual	zh	聚变/核工程术语，对应英文“reference individual”。	internal:dict-improvements
-reference-level	zh	聚变/核工程术语，对应英文“reference level”。	internal:dict-improvements
-reference-scenario	zh	聚变/核工程术语，对应英文“reference scenario”。	internal:dict-improvements
-referring-medical-practitioner	zh	聚变/核工程术语，对应英文“referring medical practitioner”。	internal:dict-improvements
-registrant	zh	聚变/核工程术语，对应英文“registrant”。	internal:dict-improvements
-registration	zh	聚变/核工程术语，对应英文“registration”。	internal:dict-improvements
+redundancy	zh	提供替代的（相同或多样化的）构筑物、系统和部件，使任何单一构筑物、系统或部件无论任何其他构筑物、系统或部件的运行状态或故障如何，都能执行所需功能。	translated:IAEA-safety-glossary
+reference-air-kerma-rate	zh	见 比释动能。	translated:IAEA-safety-glossary
+reference-individual	zh	为辐射防护目的，由国际辐射防护委员会界定其特征的理想化人体。八个参考个体——新生儿；一岁儿童；五岁儿童；十岁儿童；男性和女性 15 岁少年；以及男性和女性成人——的参考值见文献 [49]。这些参考值基于西欧和北美人群的数据，但文献 [49] 还提供了关于完全正常个体之间因年龄、性别、族裔和其他因素而产生的个体差异的补充信息。这是对参考人概念的细化。	translated:IAEA-safety-glossary
+reference-level	zh	见 水平。	translated:IAEA-safety-glossary
+reference-scenario	zh	见 情景。	translated:IAEA-safety-glossary
+referring-medical-practitioner	zh	依照国家要求可将个人转诊至放射医学从业者以接受医疗照射的卫生专业人员。	translated:IAEA-safety-glossary
+registrant	zh	现行登记证的持有者。	translated:IAEA-safety-glossary
+registration	zh	对低风险或中等风险设施和活动的一种授权形式，据此，对该实践负有责任的人员或组织已酌情编制并向监管机构提交关于设施和设备的安全评定。该实践或使用在酌情附加条件或限制的情况下获得授权。登记对安全评定的要求以及适用于设施和活动的条件或限制，不如颁发许可证那样严格。适合采用登记的典型设施和活动是具备以下情形者：(a) 安全能够在很大程度上通过设施和设备的设计得到保证；(b) 运行程序便于遵循；(c) 安全培训要求极少；以及 (d) 运行中安全问题方面的历史记录很少。登记最适合于运行不发生显著变化的设施和活动。另见登记证持有者。不应需要派生术语；登记是授权过程的产物，而具有现行登记的设施或活动即为已授权设施或活动。[Regulatory Authority] 由政府为与防护和安全相关的监管目的而指定或以其他方式承认的一个或多个机构。	translated:IAEA-safety-glossary
 regulatory-approval	en	Government approval for the construction and operation of a nuclear facility.	corpus
 regulatory-approval	zh	审批许可是政府对核设施建造与运行的批准。	corpus
-regulatory-body	zh	聚变/核工程术语，对应英文“regulatory body”。	internal:dict-improvements
-regulatory-control	zh	聚变/核工程术语，对应英文“regulatory control”。	internal:dict-improvements
+regulatory-body	zh	1. 由国家政府指定、具有开展监管过程（包括颁发授权）的法定权力，从而对核安全、辐射安全、放射性废物安全和运输安全实施监管的一个机构或一个机构体系。监管机构一般为一国实体，依法设立并被赋予权力，其组织、管理、职能、过程、职责和能力须符合 IAEA 安全标准的要求。负责放射性物质运输安全监管的国家主管机构（见 SSR-6 (Rev. 1) [2]）包括在本描述之内，负责防护和安全的监管机构亦包括在内。! 取代监管当局（Regulatory Authority）一词，该词不应再使用。 2. [就每一缔约方而言，指该缔约方赋予法定权力以颁发许可证并监管核设施选址、设计、建造、调试、运行或退役的一个或多个机构。]（见文献 [4]。） 3. [指缔约方赋予法定权力以监管乏燃料或放射性废物管理安全任何方面（包括颁发许可证）的一个或多个机构。]（见文献 [5]。） 4. [由国家政府指定、具有对放射源实施监管控制（包括颁发授权）的法定权力，从而监管放射源安全或保安一个或多个方面的一个实体或组织，或一个实体或组织体系。]（见文献 [14]。）	translated:IAEA-safety-glossary
+regulatory-control	zh	见 控制。	translated:IAEA-safety-glossary
 regulatory-framework	en	Legal and regulatory structure governing the safety of fusion plants.	corpus
 regulatory-framework	zh	管辖聚变装置安全的法律与监管体系。	corpus
-regulatory-inspection	zh	聚变/核工程术语，对应英文“regulatory inspection”。	internal:dict-improvements
-relative-biological-effectiveness	zh	聚变/核工程术语，对应英文“relative biological effectiveness (RBE)”。	internal:dict-improvements
-relative-biological-effectiveness-weighted-absorbed-dose-adt	zh	聚变/核工程术语，对应英文“relative biological effectiveness (RBE) weighted absorbed dose, ADT”。	internal:dict-improvements
-relative-risk	zh	聚变/核工程术语，对应英文“relative risk”。	internal:dict-improvements
-release	zh	聚变/核工程术语，对应英文“release”。	internal:dict-improvements
-reliability	zh	聚变/核工程术语，对应英文“reliability”。	internal:dict-improvements
-reliability-centred-maintenance	zh	聚变/核工程术语，对应英文“reliability centred maintenance (RCM)”。	internal:dict-improvements
+regulatory-inspection	zh	见 检查。	translated:IAEA-safety-glossary
+relative-biological-effectiveness	zh	衡量不同辐射类型诱发特定健康效应的相对有效性的量度，以两种不同辐射类型产生相同程度的规定生物学终点所需的吸收剂量的反比表示。在引起确定性效应发生方面，相对生物效应的取值选为使对应急准备和响应具有重要意义的严重确定性效应具有代表性。用于选定严重确定性效应发生的组织或器官特异性与辐射类型特异性的 RBET,R 取值如下表所示。	translated:IAEA-safety-glossary
+relative-biological-effectiveness-weighted-absorbed-dose-adt	zh	见剂量量：吸收剂量。	translated:IAEA-safety-glossary
+relative-risk	zh	见 风险。	translated:IAEA-safety-glossary
+release	zh	释放或使被释放、或允许或使被允许自由移动或流动的动作或过程。! 释放既用于物理的“科学”含义（见排放（1）），也用于“监管”含义（见解控），还用于诸如能量释放之类的通常含义。	translated:IAEA-safety-glossary
+reliability	zh	系统、部件或物项在规定时间段内和在规定运行条件下，在被要求时满足其最低性能要求的概率。例如，基于计算机的系统的可靠性包括硬件的可靠性（通常为定量量度）和软件的可靠性（由于没有普遍公认的软件可靠性定量方法，通常为定性量度）。另见可用性。	translated:IAEA-safety-glossary
+reliability-centred-maintenance	zh	见 维护。	translated:IAEA-safety-glossary
 reliability-engineering	en	The engineering discipline that ensures plant components meet required failure-rate and lifetime targets.	corpus
 reliability-engineering	zh	可靠性工程：确保电站部件达到所需失效率和寿命指标的工程学科。	corpus
 relief-valve	en	A pressure safety device that opens automatically on overpressure to discharge fluid and protect equipment.	corpus
 relief-valve	zh	安全阀是超压时自动开启泄放流体以保护设备的压力安全装置。	corpus
-relocation	zh	聚变/核工程术语，对应英文“relocation”。	internal:dict-improvements
-remedial-action	zh	聚变/核工程术语，对应英文“remedial action”。	internal:dict-improvements
+relocation	zh	为避免沉积的放射性物质所致长期照射而将人员从某一地区非紧急撤出或长期排除在外。搬迁是一项早期防护行动。它可以替代撤离这一紧急防护行动。另见撤离。如果返回不可预见，搬迁被视为永久性搬迁；否则为临时搬迁。[rem] 剂量当量和有效剂量当量的单位，等于 0.01 Sv。为 röntgen equivalent man 的缩写。	translated:IAEA-safety-glossary
+remedial-action	zh	为预防或减少在紧急情况或现有照射情况下原本可能发生的照射，而移除源或降低其量级（以活度或数量计）。补救行动也可称为防护行动，但防护行动不一定是补救行动。另见补救和防护行动。	translated:IAEA-safety-glossary
 remediation	zh	聚变/核工程术语，对应英文“remediation”。	internal:dict-improvements
 remediation-plan	zh	聚变/核工程术语，对应英文“remediation plan”。	internal:dict-improvements
 remedy	zh	聚变/核工程术语，对应英文“remedy”。	internal:dict-improvements
