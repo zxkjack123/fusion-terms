@@ -4510,59 +4510,59 @@ in-vessel-loca	en	Loss-of-coolant accident caused by a coolant leak inside the v
 in-vessel-loca	zh	冷却剂泄漏发生在真空室内的失冷事故。	corpus
 incident	zh	意外事件：指任何非预期的事件，包括操作失误、设备故障、始发事件、事故先兆、未遂事件或其他差错，或未经授权的行为（恶意或非恶意），从防护与安全的角度看其后果或潜在后果不可忽略。另见 event 和 INES。！意外事件一词有时（例如在 INES 2008 年手册 [8] 中）被用于描述实际上属于轻微事故的事件，即仅以严重程度较低而与事故相区分的事件。！这种区分在一般用法中几乎没有依据，在一般用法中意外事件可以是轻微的也可以是重大的，正如事故一样；然而与事故不同，意外事件可以由故意行为引起。此处给出的意外事件定义是依据 accident 和 event 两个条目以及 SF-1 [17] 中对该词的解释推导得出的。[nuclear incident]（核事件）。指具有同一来源的、造成核损害的任何单一事件或一系列事件，或（但仅就预防措施而言）造成此类损害的严重而紧迫威胁的情况。见参考文献 [35]。！这一用法为《核损害补充赔偿公约》[35] 所特有，且仅用于该公约之目的，在其他情况下应避免使用。另见 [nuclear damage]。	translated:IAEA-safety-glossary
 independent-assessment	zh	见 评价。	translated:IAEA-safety-glossary
-independent-equipment	zh	聚变/核工程术语，对应英文“independent equipment”。	internal:dict-improvements
-indicator	zh	聚变/核工程术语，对应英文“indicator”。	internal:dict-improvements
-individual-dose	zh	聚变/核工程术语，对应英文“individual dose”。	internal:dict-improvements
-individual-monitoring	zh	聚变/核工程术语，对应英文“individual monitoring”。	internal:dict-improvements
+independent-equipment	zh	具备以下两个特征的设备：(a) 其执行所需功能的能力不受其他设备运行或故障的影响。(b) 其执行所需功能的能力不受以下情况发生的影响：即发生其被要求执行功能所针对的始发事件所产生的后果。	translated:IAEA-safety-glossary
+indicator	zh	状态指标。构筑物、系统或部件的这样一种特性：可对其观察、测量或跟踪其趋势，以推断或直接指示该构筑物、系统或部件当前及今后在验收准则内执行功能的能力。功能指标。一种状态指标，其直接指示构筑物、系统或部件当前在验收准则内执行功能的能力。性能指标。过程的这样一种特性：可对其观察、测量或跟踪其趋势，以推断或直接指示该过程当前及今后的绩效，并特别强调令人满意的安全绩效。	translated:IAEA-safety-glossary
+individual-dose	zh	见 剂量概念。	translated:IAEA-safety-glossary
+individual-monitoring	zh	见 监测。	translated:IAEA-safety-glossary
 inductive-operation	en	Operation in which the plasma current is driven by the transformer action of the central solenoid.	corpus
 inductive-operation	zh	由中心螺线管的变压器作用驱动等离子体电流的运行方式。	corpus
-industrial-package	zh	聚变/核工程术语，对应英文“industrial package”。	internal:dict-improvements
+industrial-package	zh	见 货包。	translated:IAEA-safety-glossary
 inertial-confinement-fusion	en	A fusion approach in which a fuel target is imploded, using its own inertia to confine the plasma while compression and heating drive fusion reactions.	corpus
 inertial-confinement-fusion	zh	一种聚变途径，内爆燃料靶并以其自身惯性约束等离子体，由压缩与加热驱动聚变反应。	corpus
 inertial-fusion-energy	en	The use of inertial confinement fusion as a power-plant energy source.	corpus
 inertial-fusion-energy	zh	惯性聚变能：把惯性约束聚变用作电站能源的应用方向。	corpus
-ines	zh	聚变/核工程术语，对应英文“INES”。	internal:dict-improvements
-infant	zh	聚变/核工程术语，对应英文“infant”。	internal:dict-improvements
+ines	zh	见 国际核与放射事件分级表。	translated:IAEA-safety-glossary
+infant	zh	在剂量学中，除非另有说明，婴儿假定为三个月龄，与婴儿有关的年量（例如年剂量、年摄入量）指自出生起算的那一年。三个月龄婴儿的数值旨在适用于生命的第一年。在内照射剂量学的通常用法中，婴儿取为 100 日龄。另见儿童和参考个体。“知情客户”能力。一个组织对所供应的产品或所提供的服务具有清晰认识和理解的能力。	translated:IAEA-safety-glossary
 infiniband	en	A high-bandwidth, low-latency interconnect.	corpus
 infiniband	zh	InfiniBand 是高带宽、低延迟的互联网络。	corpus
-ingestion-and-commodities-planning-distance	zh	聚变/核工程术语，对应英文“ingestion and commodities planning distance (ICPD)”。	internal:dict-improvements
+ingestion-and-commodities-planning-distance	zh	见 应急计划距离。	translated:IAEA-safety-glossary
 initial-condition	en	The initial state of the solution at t=0.	corpus
 initial-condition	zh	初始条件是t=0时解的状态。	corpus
-initiating-event	zh	聚变/核工程术语，对应英文“initiating event”。	internal:dict-improvements
-initiator	zh	聚变/核工程术语，对应英文“initiator”。	internal:dict-improvements
-inner-cordoned-off-area	zh	聚变/核工程术语，对应英文“inner cordoned off area”。	internal:dict-improvements
+initiating-event	zh	已识别的、导致预计运行事件或事故工况的事件。本术语（常简称为始发因素）用于事件报告与分析，即在此类事件已经发生时使用。在设计阶段考虑假设事件时，使用假设始发事件这一术语。假设始发事件（PIE）。在设计中所识别的、能够导致预计运行事件或事故工况的假设事件。假设始发事件的主要起因可能是可信的设备故障和操作员差错（设施内部和外部）、人为诱发事件或自然事件。	translated:IAEA-safety-glossary
+initiator	zh	见 始发事件。	translated:IAEA-safety-glossary
+inner-cordoned-off-area	zh	在应急情况下由首批响应人员在潜在辐射危害周围设立的区域，在该区域内采取防护行动和其他响应行动，以保护首批响应人员和公众免受可能的照射和污染。	translated:IAEA-safety-glossary
 inner-fuel-cycle	en	The inner cycle that directly recirculates plasma exhaust.	corpus
 inner-fuel-cycle	zh	内燃料循环是等离子体排气直接回流的内部循环。	corpus
-inspection	zh	聚变/核工程术语，对应英文“inspection”。	internal:dict-improvements
-inspection-imaging-device	zh	聚变/核工程术语，对应英文“inspection imaging device”。	internal:dict-improvements
-institutional-control	zh	聚变/核工程术语，对应英文“institutional control”。	internal:dict-improvements
-intake	zh	聚变/核工程术语，对应英文“intake”。	internal:dict-improvements
-integrated-management-system	zh	聚变/核工程术语，对应英文“integrated management system”。	internal:dict-improvements
-interacting-event	zh	聚变/核工程术语，对应英文“interacting event”。	internal:dict-improvements
+inspection	zh	1. 为评价构筑物、系统和部件及材料，以及运行活动、技术过程、组织过程、程序和人员能力而进行的检查、观察、监督、测量或试验。在役检查。由营运组织或代表其在运行寿期内对构筑物、系统和部件进行的检查，目的是识别老化相关的退化或状态，这些退化或状态若不予处理，可能导致构筑物、系统和部件的失效。由营运组织或代表其对运行活动、过程等进行的检查，通常用自我评价和审核等术语来描述。监管检查。由监管机构或代表其进行的检查。2. 对是否符合某一要求所作的评价。	translated:IAEA-safety-glossary
+inspection-imaging-device	zh	专门设计用于对人体或货运运载工具进行成像、以探测人体上或人体内、或货物或车辆内藏匿物体的成像装置。在某些类型的检查成像装置中，利用电离辐射通过背散射、透射或两者兼用的方式产生图像。其他类型的检查成像装置利用电场与磁场、超声与声波、核磁共振、微波、太赫兹射线、毫米波、红外辐射或可见光进行成像。	translated:IAEA-safety-glossary
+institutional-control	zh	见 控制。	translated:IAEA-safety-glossary
+intake	zh	1. 通过吸入或食入或经由皮肤将放射性核素摄入体内的行为或过程。摄入的其他照射途径是注射（例如在核医学中）和经由伤口的摄入，有别于经由（完好）皮肤的摄入。2. 在给定时间段内或由于给定事件而摄入体内的放射性核素的活度。急性摄入。在足够短的时间段内发生的摄入，以致为评价所致待积剂量的目的可将其视为瞬时摄入。! 急性摄入所致的照射不一定是急性照射。对于滞留于体内的长寿命放射性核素，急性摄入将导致慢性（即长期）照射。慢性摄入。在延长的时间段内发生的摄入，以致为评价所致待积剂量的目的不能将其视为单次瞬时摄入。然而，慢性摄入可作为一系列急性摄入来处理。	translated:IAEA-safety-glossary
+integrated-management-system	zh	见 管理体系。	translated:IAEA-safety-glossary
+interacting-event	zh	与设施相互作用、以可能对安全产生不利影响的方式影响厂址人员或对安全重要的物项的事件或相关事件序列。	translated:IAEA-safety-glossary
 interchange-instability	en	A macroscopic magnetohydrodynamic instability in which the plasma and the magnetic field exchange places; it is also called the flute instability.	GB/T-4960.9
 interconnect	en	The network that connects the nodes of an HPC system.	corpus
 interconnect	zh	互联网络是连接 HPC 系统各节点的网络。	corpus
-interested-party	zh	聚变/核工程术语，对应英文“interested party”。	internal:dict-improvements
+interested-party	zh	对某一组织、企业、系统等的活动和绩效有所关切或有利害关系的个人、公司等。利益相关方一词在广义上使用，指对组织的绩效有利害关系的个人或群体。能够影响事件的人可能实际上成为利益相关方——不论其“利益”是否被视为“真实”——就其意见需要予以考虑这一点而言。利益相关方需要被指明为相关方。利益相关方通常包括下列各方：顾客、业主、营运者、雇员、供应商、合作伙伴和工会；受监管的行业或专业人员；科学团体；职责可能涵盖核能的政府机构或监管机构（国家、区域和地方）；媒体；公众（个人、社区团体和利益团体）；以及其他国家，特别是已订立协定就可能的越境影响交换信息的邻国，或参与某些技术或材料出口或进口的国家 [36]。! 术语［利益相关者］与利益相关方在同样广义上使用，且同样的限定条件也是必要的。! 利益相关者一词的用法存在争议，含义误导且过于包罗万象，难以清晰使用。鉴于存在误解和失实的可能性，不鼓励使用该术语，而宜使用利益相关方。《核法律手册》[36] 指出：“由于对谁在某一特定核相关活动中具有真实利益存在不同看法，迄今尚未提出利益相关者的权威定义，也不可能有任何定义会被各方接受。”［临时贮存］见贮存。	translated:IAEA-safety-glossary
 interim-storage	en	Controlled temporary storage of radioactive waste before final disposal.	corpus
 interim-storage	zh	中间贮存是放射性废物最终处置前的受控暂存。	corpus
-intermediate-bulk-container	zh	聚变/核工程术语，对应英文“intermediate bulk container (IBC)”。	internal:dict-improvements
+intermediate-bulk-container	zh	一种可移动的包装，其：(a) 容量不超过 3 m3；(b) 为机械装卸而设计；(c) 能耐受装卸和运输中产生的应力，这一点由试验确定。（见 SSR-6 (Rev. 1) [2]。）	translated:IAEA-safety-glossary
 intermediate-heat-exchanger	en	A heat exchanger placed between the primary and the secondary loops.	corpus
 intermediate-heat-exchanger	zh	中间换热器是设置在一回路与二回路之间的换热器。	corpus
 intermediate-level-waste	zh	聚变/核工程术语，指“中放废物”这一技术概念。	internal:dict-improvements
-internal-exposure	zh	聚变/核工程术语，对应英文“internal exposure”。	internal:dict-improvements
+internal-exposure	zh	见 照射。	translated:IAEA-safety-glossary
 internal-kink-mode	en	A magnetohydrodynamic instability that occurs in the central region of the plasma.	GB/T-4960.9
 internal-transport-barrier	en	A barrier that forms spontaneously inside the plasma and impedes the transport of particles and energy.	GB/T-4960.9
-international-nuclear-and-radiological-event-scale	zh	聚变/核工程术语，对应英文“International Nuclear and Radiological Event Scale (INES)”。	internal:dict-improvements
-interplate-tectonic-processes	zh	聚变/核工程术语，对应英文“interplate tectonic processes”。	internal:dict-improvements
+international-nuclear-and-radiological-event-scale	zh	INES 是为各国用于就与辐射源相关事件的安全重要性向公众沟通而制定的分级表。! INES 不应与应急分级系统相混淆，也不应作为应急响应行动的依据。! 在 2008 年 INES 手册 [8] 中，安全标准中的术语和用法与 INES 中所使用的称谓之间存在根本性的不一致。! INES 2008 的术语——特别是意外事件和事故这两个术语的使用——不同于安全标准中的术语，也不同于这两个词通常的英文含义，应格外注意避免这两个领域之间的混淆。! 简言之，按安全标准定义会被视为事故的事件，在 INES 2008 术语中可能是事故或意外事件（即不是事故）（见意外事件和事故 (1)）。这并非日常的严重问题，因为这两个领域彼此相当独立且目的迥异。然而，在与新闻媒体和公众沟通时，它是潜在的混淆来源。关于事件、意外事件和事故等术语的进一步信息，见与这些术语相关的信息说明。［国际核运输］见运输 (1)。	translated:IAEA-safety-glossary
+interplate-tectonic-processes	zh	发生在地球各构造板块之间界面处的构造过程。	translated:IAEA-safety-glossary
 interpreter	en	A program that executes source code at runtime.	corpus
 interpreter	zh	解释器是在运行时执行源代码的程序。	corpus
 interstitial-atom	en	An atom displaced to an interstitial lattice position.	corpus
 interstitial-atom	zh	间隙原子是位移到晶格间隙位置的原子。	corpus
-intervention	zh	聚变/核工程术语，对应英文“intervention”。	internal:dict-improvements
-intraplate	zh	聚变/核工程术语，对应英文“intraplate”。	internal:dict-improvements
+intervention	zh	旨在减少或避免由不属于受控实践的源、或因事故后果而失控的源所致照射或照射可能性的任何行动。本定义比参考文献 [37] 中的定义略为明确（尽管不一定与之不一致）。设施与活动一词旨在为源与实践（或干预）的术语提供一种替代，用以指称各类情形。在应急准备与应急响应中，现已改用防护行动和保护策略这两个概念。	translated:IAEA-safety-glossary
+intraplate	zh	就构造过程而言，指位于地球构造板块内部的。	translated:IAEA-safety-glossary
 intrinsic-rotation	en	Spontaneous plasma rotation that occurs without external momentum input.	corpus
 intrinsic-rotation	zh	本征旋转是无外部动量输入时自发产生的等离子体旋转。	corpus
-intrusion	zh	聚变/核工程术语，对应英文“intrusion (human)”。	internal:dict-improvements
+intrusion	zh	见 人类侵入。	translated:IAEA-safety-glossary
 intrusion-barrier	zh	聚变/核工程术语，对应英文“intrusion barrier”。	internal:dict-improvements
 investigation-level	zh	聚变/核工程术语，对应英文“investigation level”。	internal:dict-improvements
 iodine-thyroid-blocking	zh	聚变/核工程术语，对应英文“iodine thyroid blocking”。	internal:dict-improvements
