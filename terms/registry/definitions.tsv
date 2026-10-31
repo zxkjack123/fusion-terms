@@ -5293,19 +5293,19 @@ relief-valve	en	A pressure safety device that opens automatically on overpressur
 relief-valve	zh	安全阀是超压时自动开启泄放流体以保护设备的压力安全装置。	corpus
 relocation	zh	为避免沉积的放射性物质所致长期照射而将人员从某一地区非紧急撤出或长期排除在外。搬迁是一项早期防护行动。它可以替代撤离这一紧急防护行动。另见撤离。如果返回不可预见，搬迁被视为永久性搬迁；否则为临时搬迁。[rem] 剂量当量和有效剂量当量的单位，等于 0.01 Sv。为 röntgen equivalent man 的缩写。	translated:IAEA-safety-glossary
 remedial-action	zh	为预防或减少在紧急情况或现有照射情况下原本可能发生的照射，而移除源或降低其量级（以活度或数量计）。补救行动也可称为防护行动，但防护行动不一定是补救行动。另见补救和防护行动。	translated:IAEA-safety-glossary
-remediation	zh	聚变/核工程术语，对应英文“remediation”。	internal:dict-improvements
-remediation-plan	zh	聚变/核工程术语，对应英文“remediation plan”。	internal:dict-improvements
-remedy	zh	聚变/核工程术语，对应英文“remedy”。	internal:dict-improvements
+remediation	zh	为减少陆地现有污染所致的辐射照射而可采取的任何措施，其作用方式或针对污染本身（即源），或针对通向人的照射途径。并不意味要完全清除污染。不鼓励把清理、复原和恢复用作环境整治的同义词。此类用语可能被理解为：污染出现之前的状态能够重新达到，土地可以无条件地重新使用，而通常并非如此（例如由于整治行动本身的影响）。环境整治常被用于把土地区域恢复到适合在机构控制下有限使用的状态。在某些语境中（例如范围更广的化学工业），环境整治与恢复这两个词被用来描述总体恢复工作的不同部分。清理一词用于退役语境。另见去污。	translated:IAEA-safety-glossary
+remediation-plan	zh	一份文件，其中列出为实施该方法并实现整治策略的目标、从而满足环境整治的法律与监管要求所必需的各种活动与行动及其时间安排。	translated:IAEA-safety-glossary
+remedy	zh	针对根本原因设计的纠正措施。另见原因：根本原因。	translated:IAEA-safety-glossary
 remote-handling-recycling	en	Recycling requiring remote handling equipment.	corpus
 remote-handling-recycling	zh	远程操控回收是需要遥控操作设备进行的材料回收。	corpus
-removable-contamination	zh	聚变/核工程术语，对应英文“removable contamination”。	internal:dict-improvements
-repair	zh	聚变/核工程术语，对应英文“repair”。	internal:dict-improvements
-repository	zh	聚变/核工程术语，对应英文“repository”。	internal:dict-improvements
-representative-person	zh	聚变/核工程术语，对应英文“representative person”。	internal:dict-improvements
-reprocessing	zh	聚变/核工程术语，对应英文“reprocessing”。	internal:dict-improvements
-requirement	zh	聚变/核工程术语，对应英文“requirement (safety)”。	internal:dict-improvements
-research-reactor	zh	聚变/核工程术语，对应英文“research reactor”。	internal:dict-improvements
-residual-dose	zh	聚变/核工程术语，对应英文“residual dose”。	internal:dict-improvements
+removable-contamination	zh	见污染（2）：非固定污染。	translated:IAEA-safety-glossary
+repair	zh	对不合格品采取的一种措施，使其能为预期用途所接受（见参考文献 [39]）。另见原因：直接原因。	translated:IAEA-safety-glossary
+repository	zh	与处置设施同义。	translated:IAEA-safety-glossary
+representative-person	zh	其所受剂量可代表人群中受照程度较高的个体所受剂量的个人。代表性人员一般是一个假设的建构，而非人群中的实际成员。该概念用于判定合规性，或用于前瞻性评价。在估算代表性人员的剂量时，对所受照射的人群考虑若干因素：(i) 该源的全部相关照射途径以及所考虑的全部地点；(ii) 环境中放射性核素的空间分布，以确保受照程度较高的个体被纳入；(iii) 随年龄变化的生理参数以及关于膳食、习惯、居住和使用当地资源的信息；(iv) 剂量学模型和适当的剂量系数。将代表性人员概念应用于潜在照射（例如将来可能因放射性废物处置而发生的照射）较为复杂，原因在于：剂量（若发生）与受到该剂量的概率两者都相关，而这两个参数本质上彼此独立。因此，人群就剂量而言可以是均一的，但就风险而言则不然；更重要的是，反之亦然。一种可能的做法是定义这样一位代表性人员：其在风险方面具有合理的代表性，并且是可能承受最高风险的那些人的典型。ICRP 第 101 号出版物 [51] 指出，代表性人员所受剂量“等同于并取代‘临界组’中的平均剂量”，并就评价代表性人员所受剂量给出指导。临界组的概念仍然有效。另见公众成员。	translated:IAEA-safety-glossary
+reprocessing	zh	一种过程或操作，其目的是从乏燃料中提取放射性同位素以供进一步使用。	translated:IAEA-safety-glossary
+requirement	zh	由《基本安全原则》（IAEA 安全基础）[17] 或 IAEA 安全要求出版物，或由（国家或国际）法律或法规所确立或要求的事项。! 在 IAEA 出版物中，要求（以及‘required’和其他由动词‘to require’派生的词）只应在此意义上使用。应当注意避免混淆：应避免把‘requirement’用于泛指某种必要之物的更一般意义。要求，包括带编号的‘总体’要求，均以‘shall’式陈述表达。转述（引用）的要求，例如在安全导则中的要求，采用诸如‘it is required to…’这样的表述加以转述。	translated:IAEA-safety-glossary
+research-reactor	zh	[主要用于产生和利用中子通量及电离辐射以开展研究及其他目的的核反应堆，包括与该反应堆相关的实验设施，以及同一场址上与该研究堆的安全运行直接相关的放射性物质贮存、操作和处理设施。通常称为临界装置的设施也包括在内。] ! 本定义专用于《研究堆安全行为准则》[52]。	translated:IAEA-safety-glossary
+residual-dose	zh	见 剂量概念。	translated:IAEA-safety-glossary
 resistive-heating	zh	见 欧姆加热。	translated:ITER-glossary
 resistive-instability	en	An instability caused by the finite electrical conductivity of the plasma.	GB/T-4960.9
 resistive-mhd	en	Magnetohydrodynamic model that includes a finite plasma resistivity.	corpus
@@ -5317,26 +5317,26 @@ resonance-self-shielding	en	Flux depression in the resonance energy range.	corpu
 resonance-self-shielding	zh	共振自屏效应是共振能区内的通量凹陷。	corpus
 response-function	en	The response kernel of a detector or tally.	corpus
 response-function	zh	响应函数是探测器或计数器的响应核。	corpus
-response-organization	zh	聚变/核工程术语，对应英文“response organization”。	internal:dict-improvements
-response-spectrum	zh	聚变/核工程术语，对应英文“response spectrum”。	internal:dict-improvements
-response-time	zh	聚变/核工程术语，对应英文“response time (of a component)”。	internal:dict-improvements
-restricted-linear-collision-stopping-power	zh	聚变/核工程术语，对应英文“restricted linear collision stopping power”。	internal:dict-improvements
-restricted-use	zh	聚变/核工程术语，对应英文“restricted use”。	internal:dict-improvements
-reuse	zh	聚变/核工程术语，对应英文“reuse”。	internal:dict-improvements
+response-organization	zh	由国家指定或认定、负责管理或实施应急响应任何方面的组织。这还包括为支持应急响应的管理和/或实施所必需的那些组织或部门，例如气象部门。	translated:IAEA-safety-glossary
+response-spectrum	zh	由加速度记录图计算得到的曲线，给出具有给定阻尼比的阻尼单自由度线性振子的峰值响应（以加速度、速度或位移表示）随其固有频率或振动周期变化的函数关系。均匀危险响应谱。其各谱纵坐标具有相等超越概率的响应谱。	translated:IAEA-safety-glossary
+response-time	zh	部件自收到要求其达到某一输出状态的信号起，到达到该规定输出状态所需的时间。! 注意，这与应急响应无关。	translated:IAEA-safety-glossary
+restricted-linear-collision-stopping-power	zh	见 线性能量传递。	translated:IAEA-safety-glossary
+restricted-use	zh	见 使用。	translated:IAEA-safety-glossary
+reuse	zh	见 minimization of waste。	translated:IAEA-safety-glossary
 reversed-shear	en	A configuration whose non-monotonic q-profile has a central minimum.	corpus
 reversed-shear	zh	反磁剪切是 q 剖面非单调且中心存在最小值的位形。	corpus
 richtmyer-meshkov-instability	en	An instability arising when a shock traverses a density interface.	corpus
 richtmyer-meshkov-instability	zh	Richtmyer-Meshkov不稳定性是激波穿过密度界面时产生的不稳定性。	corpus
-risk	zh	聚变/核工程术语，对应英文“risk”。	internal:dict-improvements
-risk-assessment	zh	聚变/核工程术语，对应英文“risk assessment”。	internal:dict-improvements
-risk-coefficient	zh	聚变/核工程术语，对应英文“risk coefficient, γ”。	internal:dict-improvements
-risk-constraint	zh	聚变/核工程术语，对应英文“risk constraint”。	internal:dict-improvements
-risk-monitor	zh	聚变/核工程术语，对应英文“risk monitor”。	internal:dict-improvements
-risk-projection-model	zh	聚变/核工程术语，对应英文“risk projection model”。	internal:dict-improvements
+risk	zh	! 视语境而定，风险一词既可作为定量量度使用（例如在定义（1）和（2）中），也可作为定性概念使用（定义（3）和（4）中常如此）。1. 表征与照射或潜在照射相关的危害、危险或有害后果发生机会的多属性量。它与诸如特定有害后果可能发生的概率以及此类后果的大小和性质等量相关。用数学术语表示，一般可写为一组三元组 R = { S i pi X i }，其中 Si 是情景 i 的标识或描述，pi 是该情景的概率，Xi 是该情景后果的量度。风险概念有时也被认为包含各情景概率 pi 的不确定性。2. 特定（通常为不希望发生的）后果的适当量度的数学均值（期望值）：=R ∑ p ⋅C i i i	translated:IAEA-safety-glossary
+risk-assessment	zh	见 评价。	translated:IAEA-safety-glossary
+risk-coefficient	zh	假定由单位当量剂量或有效剂量的照射所导致的一生的风险或辐射危害。	translated:IAEA-safety-glossary
+risk-constraint	zh	一种前瞻性的、与源相关的个人风险值，在计划照射情形中用作优化该源防护与安全的参数，并在确定优化方案的范围时作为边界。风险约束是一种与源相关的值，为受某一源风险最大的个人提供基本防护水平。该风险是造成剂量的非预期事件的概率与该剂量所致危害的概率的函数。风险约束相当于剂量约束，但适用于潜在照射。[风险因子] ! 有时被误用为风险系数的同义词。这与风险因子一词通常的医学用法不同，医学上它指影响个体风险的因素，应避免将其用作风险系数的同义词。! 风险因子只应在医学意义上使用。	translated:IAEA-safety-glossary
+risk-monitor	zh	一种电厂专用的实时分析工具，用于根据系统和部件的实际状态确定瞬时风险。在任何给定时刻，风险监测器按各系统和/或部件的已知状态反映电厂的当前配置；例如是否存在因维修或试验而退出运行的部件。风险监测器所用的模型以该设施的“活”概率安全评价为基础，并与其保持一致。	translated:IAEA-safety-glossary
+risk-projection-model	zh	见 模型。	translated:IAEA-safety-glossary
 rmp-coil	en	A resonant magnetic perturbation coil used for ELM suppression.	corpus
 rmp-coil	zh	RMP线圈：用于抑制 ELM 的共振磁扰动线圈。	corpus
-rock-igneous	zh	聚变/核工程术语，对应英文“rock, igneous”。	internal:dict-improvements
-root-cause	zh	聚变/核工程术语，对应英文“root cause”。	internal:dict-improvements
+rock-igneous	zh	见 火成岩。	translated:IAEA-safety-glossary
+root-cause	zh	见 原因。	translated:IAEA-safety-glossary
 root-uptake	zh	聚变/核工程术语，对应英文“root uptake”。	internal:dict-improvements
 rotation-reversal	en	Spontaneous reversal of the rotation direction at the density transition.	corpus
 rotation-reversal	zh	旋转反转是密度转换处自发发生的旋转方向反转。	corpus
