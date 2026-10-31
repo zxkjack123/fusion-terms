@@ -4942,25 +4942,25 @@ operational-period	zh	见 运行寿期。	translated:IAEA-safety-glossary
 operational-quantities	zh	用于涉及外照射的监测和调查等实际应用的量。实用量是为测量和评估人体内剂量之目的而定义的。在内照射剂量学中，尚未定义可直接提供当量剂量或有效剂量评估的实用剂量量。评估由人体内放射性核素所致照射的当量剂量或有效剂量采用不同的方法。这些方法大多基于各种活度测量以及生物动力学模型（计算模型）的应用。可以利用与外照射或与放射性核素摄入相关的辐射场及放射性核素的可测量特性来估算防护量，并证明符合涉及防护量的要求。这些可测量的量称为实用量。	translated:IAEA-safety-glossary
 operational-states	zh	见 电厂状态。	translated:IAEA-safety-glossary
 operations-area	zh	见 区域。	translated:IAEA-safety-glossary
-operations-boundary	zh	聚变/核工程术语，对应英文“operations boundary”。	internal:dict-improvements
-operator	zh	聚变/核工程术语，对应英文“operator”。	internal:dict-improvements
-optimization	zh	聚变/核工程术语，对应英文“optimization (of protection and safety)”。	internal:dict-improvements
+operations-boundary	zh	见 运行区。	translated:IAEA-safety-glossary
+operator	zh	任何申请授权，或已获授权和/或负责在开展活动时或在与任何核设施或电离辐射源有关的事务中确保安全的个人或组织。运营者除其他外包括私人、政府机构、托运人或承运人、许可证持有者、医院、自雇人员。! 运营者有时被用来指运行人员（例如主控室操作员）。若按此方式使用，应特别注意确保不存在任何混淆的可能。运营者要么包括在使用或运输源的过程中直接控制某设施或活动的人员（如射线照相人员或承运人），要么在源不受控制的情况下（如丢失的源、被非法移走的源或再入大气层的卫星），包括在源失去控制之前对其负责的人员。与运行组织同义。	translated:IAEA-safety-glossary
+optimization	zh	1. 在考虑经济和社会因素的情况下，确定何种水平的防护与安全能使个人剂量的大小、受到照射的个人（工作人员和公众成员）人数以及照射的可能性保持在合理可行尽量低（ALARA）的过程。2. 对患者的辐射剂量进行与医疗目的相称的管理。用于患者的医疗照射。「防护与安全的最优化已得到实施」是指防护与安全的最优化已得到应用，且该过程的结果已得到落实。! 这与所涉过程或实践的最优化不同。应使用诸如防护与安全的最优化这样的明确术语。! 不应使用缩写 ALARA 来表示防护与安全的最优化。	translated:IAEA-safety-glossary
 orbit-loss	en	Fast ion loss caused by a large orbit width exceeding confinement.	corpus
 orbit-loss	zh	轨道损失是轨道宽度超出约束范围的快离子损失。	corpus
-orphan-source	zh	聚变/核工程术语，对应英文“orphan source”。	internal:dict-improvements
+orphan-source	zh	见 源。	translated:IAEA-safety-glossary
 os-process	en	An OS-level process, distinct from the PROCESS code.	corpus
 os-process	zh	进程是运行在操作系统层面的进程，区别于 PROCESS 程序。	corpus
-other-nuclear-or-radiological-emergency	zh	聚变/核工程术语，对应英文“other nuclear or radiological emergency”。	internal:dict-improvements
-other-response-actions	zh	聚变/核工程术语，对应英文“other response actions”。	internal:dict-improvements
+other-nuclear-or-radiological-emergency	zh	见 应急类别。	translated:IAEA-safety-glossary
+other-response-actions	zh	见 应急响应行动。	translated:IAEA-safety-glossary
 outer-fuel-cycle	en	The outer cycle: blanket tritium extraction, purification, storage and injection.	corpus
 outer-fuel-cycle	zh	外燃料循环是包层氚提取、纯化、储存与注入的循环。	corpus
 outgassing	en	Release of adsorbed gases from the walls of a vacuum vessel.	corpus
 outgassing	zh	出气是真空室壁面吸附气体的释放。	corpus
-overpack	zh	聚变/核工程术语，对应英文“overpack”。	internal:dict-improvements
-package	zh	聚变/核工程术语，对应英文“package”。	internal:dict-improvements
-package-waste	zh	聚变/核工程术语，对应英文“package, waste”。	internal:dict-improvements
-packaging	zh	聚变/核工程术语，对应英文“packaging”。	internal:dict-improvements
-palaeoseismicity	zh	聚变/核工程术语，对应英文“palaeoseismicity”。	internal:dict-improvements
+overpack	zh	1. 见放射性废物管理（1）。2. 单个托运人为盛装一个或多个货包并便于运输过程中的装卸和堆放而形成一个单元所使用的外包封容器。（见 SSR-6 (Rev. 1) [2]。）	translated:IAEA-safety-glossary
+package	zh	包装作业的完整产物，由为运输作好准备的包装及其内容物组成。《[运输]条例》[2] 所涵盖的、受《运输条例》第 IV 节 [2] 的活动限值和材料限制约束并满足相应要求的货包类型为：(a) 例外货包；(b) 1 型工业货包（IP-1 型）；(c) 2 型工业货包（IP-2 型）；(d) 3 型工业货包（IP-3 型）；(e) A 型货包；(f) B(U) 型货包；(g) B(M) 型货包；(h) C 型货包。装有易裂变材料或六氟化铀的货包须满足附加要求。（见 SSR-6 (Rev. 1) [2]。）这些货包类型的详细规格和要求在 SSR-6 (Rev. 1) [2] 中规定。	translated:IAEA-safety-glossary
+package-waste	zh	见 废物包。	translated:IAEA-safety-glossary
+packaging	zh	1. 一个或多个容器以及容器履行包容和其他安全功能所需的其他任何部件或材料。（见 SSR-6 (Rev. 1) [2]。）2. 见放射性废物管理（1）。	translated:IAEA-safety-glossary
+palaeoseismicity	zh	史前或历史地震的证据，表现为断层上的位移，或地面变形（即液化、海啸、滑坡）等次生效应。	translated:IAEA-safety-glossary
 parallel-cooling	en	Cooling by heat transport along the magnetic field lines in the scrape-off layer and at the divertor.	corpus
 parallel-cooling	zh	平行冷却：沿磁力线方向在刮削层与偏滤器处输运热量的冷却方式。	corpus
 parallel-transport	en	Transport that occurs along magnetic field lines.	corpus
@@ -4974,35 +4974,35 @@ particle-in-cell	en	Kinetic simulation method in which particles are tracked on 
 particle-in-cell	zh	在计算网格上追踪粒子的动理学模拟方法。	corpus
 particle-pinch	en	Inward convective particle transport in tokamak plasmas.	corpus
 particle-pinch	zh	粒子箍缩是托卡马克等离子体中向内的对流粒子输运。	corpus
-passenger-aircraft	zh	聚变/核工程术语，对应英文“passenger aircraft”。	internal:dict-improvements
+passenger-aircraft	zh	见 飞机撞击。	translated:IAEA-safety-glossary
 passing-particle	en	In a toroidal magnetic confinement device, a particle that is not captured into a "banana orbit".	GB/T-4960.9
-passive-component	zh	聚变/核工程术语，对应英文“passive component”。	internal:dict-improvements
-pathway	zh	聚变/核工程术语，对应英文“pathway”。	internal:dict-improvements
-patient	zh	聚变/核工程术语，对应英文“patient”。	internal:dict-improvements
-peak-ground-acceleration	zh	聚变/核工程术语，对应英文“peak ground acceleration”。	internal:dict-improvements
+passive-component	zh	其功能不依赖于诸如驱动、机械运动或供电等外部输入的部件。非能动部件没有运动部件，并且例如在履行其功能时只经历压力、温度或流体流量的变化。此外，某些以不可逆的作用或变化为基础而以极高可靠性发挥功能的部件可归入此类。非能动部件的例子有热交换器、管道、容器、电缆和构筑物。需要强调，本定义必然是概括性的，能动部件的相应定义也是如此。某些部件，如爆破片、止回阀、安全阀、注入器以及某些固态电子器件，具有在将其定为能动部件或非能动部件之前需特别考虑的特性。凡不是非能动部件的部件即为能动部件。另见部件、堆芯部件以及构筑物、系统和部件。	translated:IAEA-safety-glossary
+pathway	zh	见 照射途径。	translated:IAEA-safety-glossary
+patient	zh	接受卫生专业人员和/或其代理人服务的个人，这些服务旨在：(a) 促进健康；(b) 预防疾病和伤害；(c) 监测健康；(d) 维持健康；以及 (e) 对疾病、障碍和伤害进行医学治疗，以达到治愈，或在无法治愈时达到最佳的舒适和功能。包括某些无症状的个人。就 IAEA 安全标准中关于医疗照射的要求而言，「患者」一词仅指那些正在接受放射学诊疗程序的个人。	translated:IAEA-safety-glossary
+peak-ground-acceleration	zh	加速度记录图上显示的地面加速度的最大绝对值；地震在某一场址产生的最大的地面加速度。	translated:IAEA-safety-glossary
 pebble-bed	en	A packed bed of ceramic breeder or multiplier pebbles in a solid breeder blanket.	corpus
 pebble-bed	zh	球床是固体增殖包层中陶瓷增殖剂或倍增剂小球的填充床。	corpus
 pedestal	en	The steep-gradient region at the outer edge of the plasma in H-mode operation, in which the plasma profiles change rapidly over a narrow radial extent between the confined core and the plasma boundary.	corpus
 pedestal	zh	H模运行下等离子体外边缘的陡梯度区域，位于约束芯部与等离子体边界之间，其剖面在狭窄径向范围内迅速变化。	corpus
 peeling-ballooning-mode	en	An MHD instability that couples peeling and ballooning modes and triggers ELMs.	corpus
 peeling-ballooning-mode	zh	剥离-气球模是耦合剥离模与气球模并触发边缘局域模（ELM）的磁流体不稳定性。	corpus
-peer-review	zh	聚变/核工程术语，对应英文“peer review”。	internal:dict-improvements
+peer-review	zh	由同一职业中的其他人对商业、专业或学术方面的效率、能力等进行的审查或评审。同行评审还指：由相关领域的专家对申请资助的科学研究项目进行评价；学术期刊将收到的拟发表论文送交外部专家，请其就该论文的适宜性和价值提出意见的过程；审稿。	translated:IAEA-safety-glossary
 pellet-ablation	en	Surface ablation of a fuel pellet in hot plasma.	corpus
 pellet-ablation	zh	弹丸烧蚀是高温等离子体中燃料弹丸的表面烧蚀。	corpus
 performance	en	How well or badly something works, or how well or badly a task is done.	https://www.oxfordlearnersdictionaries.com/definition/english/performance
 performance	zh	性能指机器或系统运行的好坏程度，或任务完成的好坏程度。	https://www.oxfordlearnersdictionaries.com/definition/english/performance
-performance-assessment	zh	聚变/核工程术语，对应英文“performance assessment”。	internal:dict-improvements
-performance-indicator	zh	聚变/核工程术语，对应英文“performance indicator”。	internal:dict-improvements
-performance-standard	zh	聚变/核工程术语，对应英文“performance standard”。	internal:dict-improvements
-periodic-maintenance	zh	聚变/核工程术语，对应英文“periodic maintenance”。	internal:dict-improvements
-periodic-safety-review	zh	聚变/核工程术语，对应英文“periodic safety review”。	internal:dict-improvements
+performance-assessment	zh	见 评价。	translated:IAEA-safety-glossary
+performance-indicator	zh	见 指标。	translated:IAEA-safety-glossary
+performance-standard	zh	对构筑物、系统或部件或其他设备项目、人员或程序所要求的性能的描述，其目的是确保高水平的安全。	translated:IAEA-safety-glossary
+periodic-maintenance	zh	见 维护。	translated:IAEA-safety-glossary
+periodic-safety-review	zh	按固定时间间隔对现有设施（或活动）的安全进行的系统再评估，以处理老化、修改、运行经验、技术发展和场址方面因素的累积效应，旨在确保设施（或活动）在整个服役寿期内保持高水平的安全。	translated:IAEA-safety-glossary
 permanent-disposal-waste	en	Activated material that is not recyclable and requires geological disposal.	corpus
 permanent-disposal-waste	zh	永久处置废物是不可回收、需要地质处置的活化材料。	corpus
-permanent-relocation	zh	聚变/核工程术语，对应英文“permanent relocation”。	internal:dict-improvements
-permanent-shutdown	zh	聚变/核工程术语，对应英文“permanent shutdown”。	internal:dict-improvements
+permanent-relocation	zh	见 搬迁。	translated:IAEA-safety-glossary
+permanent-shutdown	zh	见 停堆。	translated:IAEA-safety-glossary
 permeation	en	Diffusion of hydrogen isotopes through solid materials.	corpus
 permeation	zh	氢同位素在固体材料中的扩散渗透。	corpus
-person-or-organization	zh	聚变/核工程术语，对应英文“person or organization”。	internal:dict-improvements
+person-or-organization	zh	任何组织、公司、合伙企业、商号、协会、信托、遗产、公共或私营机构、团体、政治或行政实体，或依据国家立法指定的、对任何影响防护与安全的行动负有责任和权力的其他人员。本术语取代法人一词，而在法律文本中，法人一词与「自然人」相对，自然人指个人。	translated:IAEA-safety-glossary
 personal-dose-equivalent-hp	zh	聚变/核工程术语，对应英文“personal dose equivalent, Hp(d)”。	internal:dict-improvements
 pfirsch-schlueter-current	en	A neoclassical current arising from the pressure gradient in toroidal geometry.	corpus
 pfirsch-schlueter-current	zh	Pfirsch-Schlüter电流是环形几何中由压力梯度产生的新经典电流。	corpus
