@@ -3885,22 +3885,22 @@ creep	zh	蠕变是高温下持续应力作用下的随时间变化的塑性变�
 creep-fatigue-interaction	en	The coupled assessment of creep and fatigue damage in high-temperature structural components (RCC-MRx).	corpus
 creep-fatigue-interaction	zh	蠕变-疲劳交互是高温结构件蠕变损伤与疲劳损伤的耦合评估（RCC-MRx）。	corpus
 critical	zh	! 鉴于该词附有许多特殊含义，在使用形容词 critical 的较常见英语含义（即表示极为重要，或作为动词 criticize 的派生用法）时应特别小心。1. 反应性为零的。也较宽松地用于反应性大于零的情形。见临界。2. 与可归因于某一特定源的最高剂量或风险有关的。例如，如关键照射途径或关键放射性核素。3. 能够维持核链式反应的。例如，如临界质量。	translated:IAEA-safety-glossary
-critical-assembly	zh	聚变/核工程术语，对应英文“critical assembly”。	internal:dict-improvements
+critical-assembly	zh	由裂变材料组成、旨在以低功率水平维持受控裂变链式反应的装置，用于研究反应堆堆芯的几何与组成。临界装置——作为设计并用于维持核反应的装置——可能频繁改变反应堆堆芯与栅格的构型，且可能频繁被用作某一反应堆堆芯构型的模拟体。[critical group] 对给定辐射源的照射而言相当均一、且可代表从该给定源受到最高有效剂量或当量剂量（视适用而定）的个体的公众成员群体。参见 representative person。[hypothetical critical group] 就其成员受给定辐射源所致风险而言相当均一、且可代表最可能受该给定源风险的个体的假设个体群体。	translated:IAEA-safety-glossary
 critical-balance	en	A nonlinear balance state between parallel and perpendicular time scales.	corpus
 critical-balance	zh	临界平衡是平行与垂直时间尺度之间的非线性平衡状态。	corpus
 critical-gradient	en	The threshold gradient above which micro-instabilities drive strong transport.	corpus
 critical-gradient	zh	临界梯度是高于该值时微不稳定性将驱动强输运的阈值梯度。	corpus
-critical-level	zh	聚变/核工程术语，对应英文“critical level”。	internal:dict-improvements
-criticality	zh	聚变/核工程术语，对应英文“criticality”。	internal:dict-improvements
-criticality-accident	zh	聚变/核工程术语，对应英文“criticality accident”。	internal:dict-improvements
-criticality-safety-index	zh	聚变/核工程术语，对应英文“criticality safety index (CSI)”。	internal:dict-improvements
+critical-level	zh	见 最小显著活度。	translated:IAEA-safety-glossary
+criticality	zh	核链式反应介质处于链式反应恰好自持（即临界）时的状态，亦即反应性为零时的状态。该词常被略微更宽松地用来指反应性大于零的状态。	translated:IAEA-safety-glossary
+criticality-accident	zh	见 事故。	translated:IAEA-safety-glossary
+criticality-safety-index	zh	分配给装有裂变材料的货包、外包装或货运集装箱的一个数值，用于控制装裂变材料的货包、外包装或货运集装箱的累积。（见 SSR-6 (Rev. 1) [2]。）临界安全指数的计算程序，以及货运集装箱内或运输工具上临界安全指数总和的限值，规定于《运输条例》[2] 第 V 和 VI 节。	translated:IAEA-safety-glossary
 cross-field-cooling	en	Cooling by heat transport directed perpendicular to the magnetic field lines.	corpus
 cross-field-cooling	zh	横向冷却：沿垂直于磁力线方向输运热量的冷却方式。	corpus
 cross-field-transport	en	Transport perpendicular to magnetic field lines across flux surfaces.	corpus
 cross-field-transport	zh	垂直输运是穿过磁面、垂直于磁力线的输运。	corpus
 cross-section	en	Probability of a nuclear reaction per unit target density, commonly expressed in barns.	corpus
 cross-section	zh	单位靶密度下发生核反应的概率，通常以靶恩表示。	corpus
-crust-earth-s	zh	聚变/核工程术语，对应英文“crust, Earth’s”。	internal:dict-improvements
+crust-earth-s	zh	见 地球地壳。	translated:IAEA-safety-glossary
 cryogenic	zh	低温技术，指用于描述处于极低温度（低于 -150 °C）下物质与材料的术语。	translated:ITER-glossary
 cryogenic-power	en	The electrical power consumed by the cryoplant that serves the superconducting magnets.	corpus
 cryogenic-power	zh	低温系统功耗：为超导磁体服务的低温装置所消耗的电功率。	corpus
@@ -3926,7 +3926,7 @@ curvature-drift	zh	曲率漂移是由磁力线曲率引起的粒子漂移。	cor
 d-he3-reaction	en	A controlled fusion reaction between deuterium and helium: D + He-3 -> p + He-4 + 18.4 MeV. Note: because the fuel is not radioactive and does not directly produce neutrons, this reaction has safety and environmental advantages over the D-T reaction, but the fusion conditions required are more demanding.	GB/T-4960.9
 damage	en	Physical harm caused to something which makes it less useful or valuable.	https://www.oxfordlearnersdictionaries.com/definition/english/damage
 damage	zh	损伤是物体所受的物理损害，使其偏离初始状态、可用性或价值降低，即性能劣化。	https://www.oxfordlearnersdictionaries.com/definition/english/damage
-dangerous-source	zh	聚变/核工程术语，对应英文“dangerous source”。	internal:dict-improvements
+dangerous-source	zh	见 源。	translated:IAEA-safety-glossary
 data-pipeline	en	An automated workflow for data processing.	corpus
 data-pipeline	zh	数据管线是自动化的数据处理工作流。	corpus
 dcll	en	Helium/lithium-lead dual-coolant blanket concept.	corpus
@@ -3939,21 +3939,21 @@ decay	en	The process by which a radioactive substance changes to a different for
 decay	zh	衰变是放射性物质通过发出辐射而转变为另一种形态的过程。	https://www.oxfordlearnersdictionaries.com/definition/english/decay
 decay-chain	en	A sequence of successive radioactive decays.	corpus
 decay-chain	zh	衰变链是一系列连续的放射性衰变。	corpus
-decay-constant	zh	聚变/核工程术语，对应英文“decay constant, λ”。	internal:dict-improvements
+decay-constant	zh	对于处于特定能态的放射性核素，dP 除以 dt 之商，其中 dP 是该能态下的单个核在时间间隔 dt 内发生自发核跃迁的可能性。λ = −(1/N)(dN/dt) = A/N，式中 N 为时刻 t 存在的所关注核的数目，A 为活度。衰变常数是一个比例常数，描述单个核在微分时间间隔内自发由较高能态向较低能态发生核跃迁的可能性。它也对应于：λ = −lim(∆t → 0)[(∆N/N)/∆t] = −(1/N)(dN/dt) = A/N。单位：每秒的倒数（s–1）。活度等于衰变常数乘以所存在放射性核素的核数目。衰变常数与放射性核素的放射性半衰期 T½ 通过下式相联系：λ = ln 2 / T1。	translated:IAEA-safety-glossary
 decay-gamma-source	en	A photon source from the radioactive decay of activated materials.	corpus
 decay-gamma-source	zh	衰变光子源是活化材料放射性衰变产生的光子源。	corpus
-decision-limit	zh	聚变/核工程术语，对应英文“decision limit”。	internal:dict-improvements
+decision-limit	zh	见 最小显著活度。	translated:IAEA-safety-glossary
 decommissioning	zh	聚变/核工程术语，指“退役”这一技术概念。	internal:dict-improvements
-decommissioning-plan	zh	聚变/核工程术语，对应英文“decommissioning plan”。	internal:dict-improvements
-decorporation	zh	聚变/核工程术语，对应英文“decorporation”。	internal:dict-improvements
+decommissioning-plan	zh	见 退役。	translated:IAEA-safety-glossary
+decorporation	zh	借以将已掺入体内的放射性核素从人体中移除的生物学过程所起的作用。促排可由化学制剂或生物制剂加以促进。	translated:IAEA-safety-glossary
 deep-penetration	en	Neutron streaming through thick shielding.	corpus
 deep-penetration	zh	深穿透指中子穿过厚屏蔽层的输运。	corpus
-deep-sea-disposal	zh	聚变/核工程术语，对应英文“deep sea disposal”。	internal:dict-improvements
-defence-in-depth	zh	聚变/核工程术语，对应英文“defence in depth”。	internal:dict-improvements
+deep-sea-disposal	zh	见 处置。	translated:IAEA-safety-glossary
+defence-in-depth	zh	为阻止预期运行事件升级，并在运行状态下、且对某些屏障亦在事故工况下维持置于辐射源或放射性物质与工作人员、公众成员或环境之间的实体屏障的有效性，而对不同层次的多样化设备与程序所作的层级化设置。纵深防御的目的为：(a) 补偿人为引发的事件和部件失效；(b) 通过避免对设施及屏障本身造成损坏来维持屏障的有效性；(c) 在这些屏障未能完全有效的情况下，保护工作人员、公众成员和环境在事故工况下免受伤害。《基本安全原则》（IAEA 安全基本法则）[17]（第 3.31 段）指出：“纵深防御主要通过若干相继且独立的防护层次的组合来实施，这些层次必须发生失效，才可能对人或环境造成有害影响。若某一防护层次或屏障失效，则后续层次或屏障仍可起作用。若得到妥善实施，纵深防御可确保没有任何单一的技术、人为或组织失效能够导致有害影响，并确保可能引起重大有害影响的失效组合具有极低的概率。各防护层次的独立有效性是纵深防御的必要要素。”SSR-2/1 (Rev. 1) [18] 中讨论了五个纵深防御层次（进一步信息见 SSR-2/1 (Rev. 1) [18]）：(a) 第一层防御的目的是防止偏离正常运行以及安全重要物项的失效。(b) 第二层防御的目的是探测并控制偏离正常运行，以防止预期运行事件升级为事故工况。(c) 第三层防御的目的是防止反应堆堆芯损坏以及需要场外防护行动的放射性物质释放，并借助固有和/或工程安全特性、安全系统和程序使电厂恢复到安全状态。(d) 第四层防御的目的是防止由第三层防御失效所导致的事故的进展并缓解其后果，其方式是防止导致放射性物质大量释放或早期释放的事故序列发生。(e) 第五层即最后一层防御的目的是缓解可能由事故导致的大量放射性物质释放或早期放射性物质释放的放射性后果。国际核安全咨询组（INSAG）确定了五个纵深防御层次（进一步信息见参考文献 [19]）：(a) 第 1 层：防止异常运行和失效。(b) 第 2 层：控制异常运行并探测失效。(c) 第 3 层：控制设计基准内的事故。(d) 第 4 层：控制严重电厂工况，包括防止事故进展和缓解严重事故的后果。(e) 第 5 层：缓解放射性物质重大释放的放射性后果。这些防御层次有时被归并为三个安全层次：硬件、软件和管理控制。在废物处置的语境中，多重屏障一词被用来描述类似的概念。注意，纵深防御在 IAEA 核安保丛书中用于核安保语境时具有不同含义。	translated:IAEA-safety-glossary
 defense-in-depth	en	A multi-layered safety design philosophy for nuclear facilities.	corpus
 defense-in-depth	zh	纵深防御是面向核设施的多层安全设计理念。	corpus
-deferred-dismantling	zh	聚变/核工程术语，对应英文“deferred dismantling”。	internal:dict-improvements
-defined-deck-area	zh	聚变/核工程术语，对应英文“defined deck area”。	internal:dict-improvements
+deferred-dismantling	zh	见 退役。	translated:IAEA-safety-glossary
+defined-deck-area	zh	船舶露天甲板上，或滚装船或渡船的车辆甲板上，被分配用于装载放射性物质的区域。（见 SSR-6 (Rev. 1) [2]。）	translated:IAEA-safety-glossary
 demountable-coil	en	A magnet coil with joints that allow a sector to be removed for maintenance.	corpus
 demountable-coil	zh	可拆卸线圈：带有接头、可拆下扇区以便维护的磁体线圈。	corpus
 density-control	en	The methods and techniques for controlling the plasma density by external fuelling in order to obtain the optimum plasma configuration.	GB/T-4960.9
@@ -3961,25 +3961,25 @@ density-peaking	en	Peaking of the density profile toward the plasma center.	corp
 density-peaking	zh	密度峰化是密度剖面朝等离子体中心聚峰的现象。	corpus
 density-pump-out	en	A transient density drop during the H-mode transition.	corpus
 density-pump-out	zh	密度泵出是 H 模转换期间密度暂时下降的现象。	corpus
-dependability	zh	聚变/核工程术语，对应英文“dependability”。	internal:dict-improvements
-depleted-uranium	zh	聚变/核工程术语，对应英文“depleted uranium”。	internal:dict-improvements
+dependability	zh	描述系统总体可信性的一般术语，即可有理由地依赖该系统的程度。可靠性、可用性和安全性是可信性的属性。	translated:IAEA-safety-glossary
+depleted-uranium	zh	见 铀。	translated:IAEA-safety-glossary
 deposition	en	A material deposition process on wall surfaces.	corpus
 deposition	zh	沉积是壁面上的材料沉积过程。	corpus
-derived-limit	zh	聚变/核工程术语，对应英文“derived limit”。	internal:dict-improvements
+derived-limit	zh	见 限值。	translated:IAEA-safety-glossary
 design	zh	聚变/核工程术语，指“设计”这一技术概念。	internal:dict-improvements
-design-basis	zh	聚变/核工程术语，对应英文“design basis”。	internal:dict-improvements
-design-basis-external-events	zh	聚变/核工程术语，对应英文“design basis external events”。	internal:dict-improvements
-design-basis-probability-value	zh	聚变/核工程术语，对应英文“design basis probability value (DBPV)”。	internal:dict-improvements
-design-extension-conditions	zh	聚变/核工程术语，对应英文“design extension conditions”。	internal:dict-improvements
-design-life	zh	聚变/核工程术语，对应英文“design life”。	internal:dict-improvements
+design-basis	zh	按既定准则在设施的结构、系统和部件及设备的设计中明确加以考虑的条件与事件的范围，使设施能够承受这些条件与事件而不超过批准限值。作名词使用，含义如上。也常作形容词使用，用于特定类别的条件或事件，意为「已纳入设计基准」；例如设计基准事故、设计基准外部事件和设计基准地震。	translated:IAEA-safety-glossary
+design-basis-external-events	zh	在设施全部或任一部分的设计基准中加以考虑的外部事件或外部事件的组合。	translated:IAEA-safety-glossary
+design-basis-probability-value	zh	某一特定类型的事件导致不可接受放射性后果的年概率值。它是筛选概率水平与条件概率值之比。该术语用于场址评价的详细事件筛选过程。	translated:IAEA-safety-glossary
+design-extension-conditions	zh	见 电厂状态。	translated:IAEA-safety-glossary
+design-life	zh	见 寿命。	translated:IAEA-safety-glossary
 design-pattern	en	A software design solution that is reusable.	corpus
 design-pattern	zh	设计模式是可复用的软件设计方案。	corpus
 desorption	en	The release of adsorbed species from a surface.	corpus
 desorption	zh	脱附是吸附物种从表面释放的过程。	corpus
 detachment-front	en	The spatial boundary of the detached radiating region above the divertor target.	corpus
 detachment-front	zh	脱靶前沿是偏滤器靶板上方脱靶辐射区的空间边界。	corpus
-detection-limit	zh	聚变/核工程术语，对应英文“detection limit”。	internal:dict-improvements
-determination-level	zh	聚变/核工程术语，对应英文“determination level”。	internal:dict-improvements
+detection-limit	zh	见 最小可探测活度。	translated:IAEA-safety-glossary
+determination-level	zh	见 最小可探测活度。	translated:IAEA-safety-glossary
 deterministic-analysis	zh	聚变/核工程术语，对应英文“deterministic analysis”。	internal:dict-improvements
 deterministic-effect	zh	聚变/核工程术语，对应英文“deterministic effect”。	internal:dict-improvements
 deterministic-safety-analysis	en	Safety analysis that uses bounding assumptions for postulated events.	corpus
