@@ -5488,14 +5488,14 @@ special-arrangement	zh	经主管部门批准的那些规定，据此可运输不
 special-facility	zh	一种设施，在发生核或辐射应急时，若其所在地区被下令采取紧急防护行动，则需对该设施采取预先确定的设施特定行动。例子包括：在采取某些防止火灾或爆炸的行动之前无法撤离的化工厂，以及为维持电话服务而必须有人在岗的电信中心。这未必是“设施和活动”一语所指意义上的设施。	translated:IAEA-safety-glossary
 special-fissionable-material	zh	见 核材料。	translated:IAEA-safety-glossary
 special-form-radioactive-material	zh	不易弥散的固态放射性物质，或装有放射性物质的密封包壳。（见 SSR-6 (Rev. 1) [2]。）	translated:IAEA-safety-glossary
-special-monitoring	zh	聚变/核工程术语，对应英文“special monitoring”。	internal:dict-improvements
-special-population-group	zh	聚变/核工程术语，对应英文“special population group”。	internal:dict-improvements
+special-monitoring	zh	见 监测。	translated:IAEA-safety-glossary
+special-population-group	zh	在核或辐射紧急事件中，为使有效防护行动得以采取而必须为其作出特殊安排的那部分公众成员。示例包括残疾人、住院患者和囚犯。	translated:IAEA-safety-glossary
 spectral-transfer	en	Turbulent energy cascade transfer in wavenumber space.	corpus
 spectral-transfer	zh	能谱级联是波数空间中湍流能量的级联转移。	corpus
-spent-fuel	zh	聚变/核工程术语，对应英文“spent fuel”。	internal:dict-improvements
-spent-fuel-management	zh	聚变/核工程术语，对应英文“spent fuel management”。	internal:dict-improvements
-spent-fuel-management-facility	zh	聚变/核工程术语，对应英文“spent fuel management facility”。	internal:dict-improvements
-spent-source	zh	聚变/核工程术语，对应英文“spent source”。	internal:dict-improvements
+spent-fuel	zh	1. 经辐照后从反应堆中卸出的核燃料，因其易裂变材料耗竭、毒物积累或辐射损伤而在其现有形态下不再可用。分词“spent”表明乏燃料不能以其现有形态用作燃料（例如在报废源中的情形）。然而在实践中（如下文第(2)条），乏燃料通常用来指已用作燃料但将不再使用的燃料，无论其是否仍可使用（这种情况或许更准确地应称为“废弃燃料”）。2. [已在反应堆堆芯中经过辐照并被永久移出反应堆堆芯的核燃料。]（见参考文献[5]。）	translated:IAEA-safety-glossary
+spent-fuel-management	zh	与乏燃料的操作或贮存相关的所有活动，不包括场外运输。还可能涉及排放。（见参考文献[5]。）	translated:IAEA-safety-glossary
+spent-fuel-management-facility	zh	主要目的为乏燃料管理的任何设施或装置。（见参考文献[5]。）	translated:IAEA-safety-glossary
+spent-source	zh	见源(2)。[利益相关方] 见有关各方。！使用利益相关方一词时采用的是与有关各方相同的广义含义，并且需要作出相同的限定。利益相关方一词的用法存在争议，含义易引起误解，且过于包罗万象而难以明确使用。鉴于存在误解和歪曲的可能性，不鼓励使用该词，而宜使用有关各方。比喻而言，“在某事中有利益关系”意味着可能因事态发展而有所得或有所失，或对其怀有兴趣。《核法律手册》[36]指出：“由于对于谁在某项核相关活动中具有真正的利益存在不同看法，迄今尚未提出关于利益相关方的权威定义，也不大可能有任何定义会被各方普遍接受。”	translated:IAEA-safety-glossary
 spheromak-merging	en	Spheromak merging under counter-helicity.	corpus
 spheromak-merging	zh	球马克并合是反螺旋度条件下的球马克并合。	corpus
 spin-polarized-fuel	en	Fuel whose nuclear spins are aligned, enhancing the p-B11 fusion cross-section by about 50%.	corpus
@@ -5505,12 +5505,12 @@ sputtering	zh	高能粒子撞击使表面原子被射出的过程，也是面向
 sst-1	zh	印度稳态超导托卡马克（SST-1）于 2013 年在古吉拉特邦的等离子体研究所全面调试完成，并于 2019 年升级。SST-1 是一台中型托卡马克，可产生重复性等离子体放电，持续时间可达约 500 ms，等离子体电流超过 75000 A，中心场强为 1.5 T。见本网站。	translated:ITER-glossary
 staircase-transport	en	Self-organized staircase-like transport barrier structures in the profiles.	corpus
 staircase-transport	zh	阶梯输运是剖面中自组织形成的阶梯状输运垒结构。	corpus
-standards-dosimetry-laboratory	zh	聚变/核工程术语，对应英文“standards dosimetry laboratory”。	internal:dict-improvements
+standards-dosimetry-laboratory	zh	由相关国家主管当局指定的实验室，其拥有为制定、维持或改进辐射剂量学初级标准或次级标准所必需的认证或认可。	translated:IAEA-safety-glossary
 stark-broadening	en	Spectral line broadening from electric fields.	corpus
 stark-broadening	zh	斯塔克展宽是电场造成的谱线展宽。	corpus
-state-of-destination	zh	聚变/核工程术语，对应英文“State of destination”。	internal:dict-improvements
-state-of-origin	zh	聚变/核工程术语，对应英文“State of origin”。	internal:dict-improvements
-state-of-transit	zh	聚变/核工程术语，对应英文“State of transit”。	internal:dict-improvements
+state-of-destination	zh	计划向之进行或实际发生越境转移的国家。（见参考文献[5]。）	translated:IAEA-safety-glossary
+state-of-origin	zh	计划从之发起或实际发起越境转移的国家。（见参考文献[5]。）	translated:IAEA-safety-glossary
+state-of-transit	zh	除起源国或目的地国以外，计划通过或实际通过其领土进行越境转移的任何国家。（见参考文献[5]。）	translated:IAEA-safety-glossary
 station-blackout	en	The complete loss of alternating current (ac) electric power to the essential and nonessential switchgear buses in a nuclear power plant, that is, loss of the offsite electric power system concurrent with turbine trip and unavailability of the onsite emergency ac power system; the loss of available ac power to buses fed by station batteries through inverters, or by alternate ac sources, is not counted as a station blackout.	https://www.govinfo.gov/content/pkg/CFR-2024-title10-vol1/xml/CFR-2024-title10-vol1-sec50-2.xml
 station-blackout	zh	全厂断电事故：核电厂中通往重要与非重要开关柜母线的交流电（ac）电源完全丧失，即厂外电力系统丧失、同时汽轮机脱扣且厂内应急交流电源不可用；经逆变器由厂内蓄电池供电的母线、或由备用交流电源供电的母线所损失的可用交流电，不计为全厂断电事故。	https://www.govinfo.gov/content/pkg/CFR-2024-title10-vol1/xml/CFR-2024-title10-vol1-sec50-2.xml
 steady-state-high-beta	en	An advanced tokamak target scenario that combines high beta with steady state.	corpus
@@ -5532,9 +5532,9 @@ stimulated-raman-scattering	en	A laser-plasma instability involving scattering o
 stimulated-raman-scattering	zh	受激拉曼散射：激光受电子等离子体波散射的一类激光—等离子体不稳定性。	corpus
 stl-format	en	The Stereolithography triangle mesh format.	corpus
 stl-format	zh	STL格式是立体光刻三角网格格式。	corpus
-stochastic-analysis	zh	聚变/核工程术语，对应英文“stochastic analysis”。	internal:dict-improvements
-stochastic-effect	zh	聚变/核工程术语，对应英文“stochastic effect”。	internal:dict-improvements
-storage	zh	聚变/核工程术语，对应英文“storage”。	internal:dict-improvements
+stochastic-analysis	zh	见 概率分析。	translated:IAEA-safety-glossary
+stochastic-effect	zh	见 健康效应。	translated:IAEA-safety-glossary
+storage	zh	将放射源、放射性物质、乏燃料或放射性废物保存在为其提供包容的设施中，并具有回取意图。本定义归纳自《乏燃料管理安全和放射性废物管理安全联合公约》[5]、《放射源安全与保安行为准则》[14]以及 GSR Part 5 [56]。！根据定义，贮存是一种中间措施，因此只有在将短期临时贮存与废物较长期的最终去向相对照时，使用[中间贮存]一词才是恰当的。！上文所定义的贮存不应被描述为中间贮存。！在许多情况下，本定义中唯一重要的要素是处置（无回取意图）与贮存（有回取意图）之间的区别。在此类情况下，无需给出定义；可在首次使用处置或贮存一词时以脚注形式作出区分（例如：“使用处置一词表明无意回取废物。若打算在未来任何时候回取废物，则使用贮存一词。”）。对于贮存与处置合建设施中的贮存，可在设施关闭时决定是将贮存设施运行期间贮存的废物移出，还是将其包封在混凝土中予以处置；在此类情形下，回取意图的问题可留待设施关闭时再定。与处置相对照。干式贮存。在空气或惰性气体等气态介质中的贮存。干式贮存设施包括以容器、筒仓或拱顶库贮存乏燃料的设施。湿式贮存。在水或其他液体中的贮存。湿式贮存的普遍方式是将乏燃料组件或乏燃料元件贮存在水或其他液体的水池中，通常支承在格架或置于篮筐中和/或置于同样装有液体的罐中。池中包围燃料的液体起散热和辐射屏蔽作用，而格架或其他装置确保维持次临界的几何构型。	translated:IAEA-safety-glossary
 strain-sensitivity	en	The dependence of critical current on mechanical strain in Nb3Sn conductors.	corpus
 strain-sensitivity	zh	应变敏感性是 Nb3Sn 导体中临界电流对机械应变的依赖关系。	corpus
 streaming	en	The streaming of radiation through ducts or gaps in a shield.	corpus
@@ -5543,22 +5543,22 @@ stress-corrosion-cracking	en	A cracking mode that is assisted by the environment
 stress-corrosion-cracking	zh	应力腐蚀开裂是由环境作用促成的开裂模式。	corpus
 strike-point	en	The location where the separatrix intersects the divertor target.	corpus
 strike-point	zh	打击点是分界面与偏滤器靶板相交的位置。	corpus
-strombolian-eruption	zh	聚变/核工程术语，对应英文“strombolian eruption”。	internal:dict-improvements
+strombolian-eruption	zh	见 eruption。	translated:IAEA-safety-glossary
 strong-scaling	en	A scaling regime with fixed problem size and increasing processors.	corpus
 strong-scaling	zh	强扩展是问题规模固定、处理器数量增加时的扩展方式。	corpus
-strongly-penetrating-radiation	zh	聚变/核工程术语，对应英文“strongly penetrating radiation”。	internal:dict-improvements
+strongly-penetrating-radiation	zh	见 辐射。	translated:IAEA-safety-glossary
 structural-integrity	en	The ability of a structure to maintain its safety function under all conditions.	corpus
 structural-integrity	zh	结构完整性是结构在所有工况下保持安全功能的能力。	corpus
-structure	zh	聚变/核工程术语，对应英文“structure”。	internal:dict-improvements
+structure	zh	见 structures, systems and components。	translated:IAEA-safety-glossary
 structured-mesh	en	A mesh with a regular, structured topology.	corpus
 structured-mesh	zh	结构网格是拓扑规则的结构化网格。	corpus
-structures-systems-and-components	zh	聚变/核工程术语，对应英文“structures, systems and components (SSCs)”。	internal:dict-improvements
-sub-seabed-disposal	zh	聚变/核工程术语，对应英文“sub-seabed disposal”。	internal:dict-improvements
+structures-systems-and-components	zh	一个总称，涵盖设施或活动中有助于防护与安全的所有要素（物项），但人为因素除外。就人类工效学——研究人员在其工作环境中效率的学科——是其设计中的一个要素而言，人为因素可体现在构筑物、系统与部件之中。另见核心部件。部件。构成系统的部分之一。部件可以是硬件部件（例如导线、晶体管、集成电路、电动机、继电器、螺线管、管道、管件、泵、储罐、阀门），也可以是软件部件（例如模块、例程、程序、软件功能）。部件可由其他部件构成。另见能动部件、非能动部件和核心部件。构筑物。一种非能动要素（例如建筑物、容器、屏蔽体）。系统。按设计相互作用以执行特定（能动）功能的一组部件，其中系统的一个要素可以是另一个系统，称为子系统。示例包括机械系统、电气系统以及仪表与控制系统。另见部件。	translated:IAEA-safety-glossary
+sub-seabed-disposal	zh	见 处置。	translated:IAEA-safety-glossary
 subcooled-boiling	en	Boiling that occurs at a temperature below the saturation temperature.	corpus
 subcooled-boiling	zh	过冷沸腾是在低于饱和温度的条件下发生的沸腾。	corpus
 subcritical-turbulence	en	Finite-amplitude turbulence maintained below the linear critical gradient.	corpus
 subcritical-turbulence	zh	亚临界湍流是维持在线性临界梯度以下的有限幅度湍流。	corpus
-substantiation	zh	聚变/核工程术语，对应英文“substantiation”。	internal:dict-improvements
+substantiation	zh	见 设备鉴定。	translated:IAEA-safety-glossary
 super-h-mode	en	A high-performance H-mode with a very wide and tall pedestal.	corpus
 super-h-mode	zh	超级H模是具有很宽、很高基座的高性能 H 模。	corpus
 super-x-divertor	en	An extended-leg divertor that increases the target radius to reduce heat flux.	corpus
@@ -5572,12 +5572,12 @@ supercritical-co2	zh	超临界二氧化碳：在临界点（31 摄氏度、7.4 M
 supercritical-co2-cycle	en	A high-efficiency Brayton cycle that uses supercritical CO2 as its working fluid.	corpus
 supercritical-co2-cycle	zh	超临界二氧化碳循环是以超临界二氧化碳为工质的高效布雷顿循环。	corpus
 supercritical-helium	zh	在 1 个大气压的浴槽中，只要温度不升至 4.2 K 以上，氦就会保持液态。若将 ITER 的线圈置于这样的冷却剂浴中，且其运行中出现高热脉冲，则大部分氦必须排放，以避免产生大的超压。为避免这一点，ITER 的线圈采用泵送的超临界氦运行，温度刚好高于临界温度，从而在无超压风险的情况下保留液氦的大部分传热特性。	translated:ITER-glossary
-supervised-area	zh	聚变/核工程术语，对应英文“supervised area”。	internal:dict-improvements
-supplier	zh	聚变/核工程术语，对应英文“supplier (of a source)”。	internal:dict-improvements
+supervised-area	zh	见 区域。	translated:IAEA-safety-glossary
+supplier	zh	任何个人或组织，注册者或许可证持有者就源的设计、制造、生产或建造向其全部或部分分派职责。源的进口方被视为该源的供应方。供应方（指源的）一词包括源的设计者、制造者、生产者、建造者、组装者、安装者、分销者、销售者、进口方或出口方。	translated:IAEA-safety-glossary
 supply-chain	en	The manufacturing and raw material supply chain for fusion components.	corpus
 supply-chain	zh	供应链是聚变部件的制造与原材料供应体系。	corpus
-surface-contaminated-object	zh	聚变/核工程术语，对应英文“surface contaminated object (SCO)”。	internal:dict-improvements
-surface-faulting	zh	聚变/核工程术语，对应英文“surface faulting”。	internal:dict-improvements
+surface-contaminated-object	zh	本身不是放射性的、但其表面分布有放射性物质的固体物体。（见 SSR-6 (Rev. 1) [2]。）！这一用法为《运输条例》[2]所特有，在其他场合应避免使用。	translated:IAEA-safety-glossary
+surface-faulting	zh	地震时断层两侧的差异运动造成地表的永久性错动或撕裂。	translated:IAEA-safety-glossary
 surface-mesh	en	A triangulated surface representation of a geometry.	corpus
 surface-mesh	zh	表面网格是几何的三角化表面表示。	corpus
 surface-morphology	en	The microscopic surface topography of plasma-facing components after plasma exposure.	corpus
@@ -5586,8 +5586,8 @@ surface-recombination	en	The recombination of atomic hydrogen at a material surf
 surface-recombination	zh	表面复合：原子态氢在脱附之前于材料表面发生的复合。	corpus
 surface-roughening	en	Roughening of the wall surface morphology from plasma exposure.	corpus
 surface-roughening	zh	表面粗糙化是等离子体暴露导致的壁面形貌粗糙化。	corpus
-surveillance	zh	聚变/核工程术语，对应英文“surveillance”。	internal:dict-improvements
-surveillance-testing	zh	聚变/核工程术语，对应英文“surveillance testing”。	internal:dict-improvements
+surveillance	zh	一种为核实设施或构筑物完整性而进行的检查。例如，在放射性废物处置设施的情形下，监督性检查指对设施的实体检查，以核实其完整性以及保护和保持非能动屏障的能力。	translated:IAEA-safety-glossary
+surveillance-testing	zh	为核实构筑物、系统与部件在被要求发挥作用时仍能运行或有能力执行其功能而进行的定期试验。	translated:IAEA-safety-glossary
 survey	zh	聚变/核工程术语，对应英文“survey”。	internal:dict-improvements
 synchrotron-radiation	en	Radiation emitted by a charged particle in a magnetic field as a consequence of its gyration (circulatory motion) in that field.	GB/T-4960.9
 system	zh	聚变/核工程术语，指“系统”这一技术概念。	internal:dict-improvements
