@@ -5689,7 +5689,7 @@ transportation	zh	见 输运。	translated:IAEA-safety-glossary
 trapped-particle	en	In a toroidal magnetic confinement device, a particle that, because energy and magnetic moment are conserved, cannot travel along the toroidal direction and is confined to move back and forth within a certain region.	GB/T-4960.9
 traveling-wave-direct-energy-converter	en	Direct energy converter concept in which a traveling electromagnetic wave decelerates the charged particles.	corpus
 traveling-wave-direct-energy-converter	zh	利用行电磁波使带电粒子减速的直接能量转换器方案。	corpus
-treatment	zh	聚变/核工程术语，对应英文“treatment”。	internal:dict-improvements
+treatment	zh	见 放射性废物管理。	translated:IAEA-safety-glossary
 tritium	zh	聚变/核工程术语，指“氚”这一技术概念。	internal:dict-improvements
 tritium-accountancy	en	Quantitative tracking of the tritium inventory for nuclear safeguards.	corpus
 tritium-accountancy	zh	氚衡算是为核保障目的对氚存量进行的定量跟踪。	corpus
@@ -5732,36 +5732,36 @@ two-fluid-model	en	A plasma model that treats electrons and ions as separate, co
 two-fluid-model	zh	双流体模型是将电子与离子作为两套相互耦合的流体处理的等离子体模型。	corpus
 two-phase-flow	en	Flow in which gas and liquid phases are present together.	corpus
 two-phase-flow	zh	两相流是气相与液相同时存在的流动。	corpus
-type-a-b-b-c-package	zh	聚变/核工程术语，对应英文“Type A/B(U)/B(M)/C package”。	internal:dict-improvements
-ultimate-heat-sink	zh	聚变/核工程术语，对应英文“ultimate heat sink”。	internal:dict-improvements
-ultimate-heat-transport-system	zh	聚变/核工程术语，对应英文“ultimate heat transport system”。	internal:dict-improvements
-unattached-fraction	zh	聚变/核工程术语，对应英文“unattached fraction”。	internal:dict-improvements
-uncertainty	zh	聚变/核工程术语，对应英文“uncertainty”。	internal:dict-improvements
-uncertainty-analysis	zh	聚变/核工程术语，对应英文“uncertainty analysis”。	internal:dict-improvements
-uniform-hazard-response-spectrum	zh	聚变/核工程术语，对应英文“uniform hazard response spectrum”。	internal:dict-improvements
-unilateral-approval	zh	聚变/核工程术语，对应英文“unilateral approval”。	internal:dict-improvements
-unirradiated-thorium	zh	聚变/核工程术语，对应英文“unirradiated thorium”。	internal:dict-improvements
-unirradiated-uranium	zh	聚变/核工程术语，对应英文“unirradiated uranium”。	internal:dict-improvements
+type-a-b-b-c-package	zh	见 货包。	translated:IAEA-safety-glossary
+ultimate-heat-sink	zh	一种介质，即使所有其他排热手段均已丧失或不足，始终能够接受所传递的余热。该介质通常为水体或大气。	translated:IAEA-safety-glossary
+ultimate-heat-transport-system	zh	停堆后为将余热输送到最终热阱所需的系统与部件。	translated:IAEA-safety-glossary
+unattached-fraction	zh	氡衰变产物潜在 α 能量中来自未附着于环境气溶胶粒子的原子所占的份额。	translated:IAEA-safety-glossary
+uncertainty	zh	偶然不确定度（aleatory uncertainty）。现象所固有的不确定度。偶然不确定度（或称随机性不确定度）通过以概率分布模型描述现象的方式加以考虑。偶然不确定度与以随机方式发生的事件或现象有关，例如设备物项的随机失效 [11]。认知不确定度（epistemic uncertainty）。可归因于对某一现象认识不完整的不确定度，它影响对该现象建模的能力。认知不确定度体现为多种可行模型、多种专家解释与统计置信度。认知不确定度与所考虑某一问题的知识状态相关联。在对任何物理现象进行分析或建立分析模型时，都会作出简化与假设。即使对于相对简单的问题，模型也可能省略某些被认为对求解不重要的方面。此外，相关科学与工程学科内的知识状态也可能不完整。简化与知识的不完整会导致对特定问题结果预测中的不确定度。	translated:IAEA-safety-glossary
+uncertainty-analysis	zh	见 分析。	translated:IAEA-safety-glossary
+uniform-hazard-response-spectrum	zh	见 响应谱。	translated:IAEA-safety-glossary
+unilateral-approval	zh	见 批准。	translated:IAEA-safety-glossary
+unirradiated-thorium	zh	每克 232Th 中 233U 含量不超过 10–7 g 的钍。（见 SSR-6（Rev. 1）[2]。）尽管使用了未辐照钍这一术语，但问题实际上并不在于该钍是否受到过辐照，而在于 233U（一种易裂变材料）的含量是否显著高于天然存在的钍中的痕量水平。！此用法为《运输条例》[2] 所专有。	translated:IAEA-safety-glossary
+unirradiated-uranium	zh	每克 U 中钚含量不超过 2 × 103 Bq、每克 235U 中裂变产物含量不超过 9 × 106 Bq、且每克 235U 中 236U 含量不超过 5 × 10–3 g 的铀。（见 SSR-6（Rev. 1）[2]。）尽管使用了未辐照铀这一术语，但问题实际上并不在于该铀是否受到过辐照，而在于钚（一种易裂变材料）的含量是否显著高于天然存在的铀中的痕量水平。！此用法为《运输条例》[2] 所专有。	translated:IAEA-safety-glossary
 unresolved-resonance-region	en	An energy range in which resonances overlap statistically.	corpus
 unresolved-resonance-region	zh	非分辨共振区是共振统计重叠的能量区间。	corpus
-unrestricted-linear-energy-transfer-l	zh	聚变/核工程术语，对应英文“unrestricted linear energy transfer, L∞”。	internal:dict-improvements
-unrestricted-use	zh	聚变/核工程术语，对应英文“unrestricted use”。	internal:dict-improvements
-unsealed-source	zh	聚变/核工程术语，对应英文“unsealed source”。	internal:dict-improvements
+unrestricted-linear-energy-transfer-l	zh	见 线性能量传递。	translated:IAEA-safety-glossary
+unrestricted-use	zh	见 使用。	translated:IAEA-safety-glossary
+unsealed-source	zh	见 源。	translated:IAEA-safety-glossary
 unstructured-mesh	en	A mesh with an irregular, unstructured topology.	corpus
 unstructured-mesh	zh	非结构网格是拓扑不规则的非结构化网格。	corpus
 upper-port	en	One of the port classifications of a tokamak.	corpus
 upper-port	zh	上端口是托卡马克端口分类之一。	corpus
 upper-ports	zh	通往 ITER 真空容器的上部入口。18 个上部窗口将为远程操作、诊断、加热和真空系统提供进入容器的通道。	translated:ITER-glossary
-uptake	zh	聚变/核工程术语，对应英文“uptake”。	internal:dict-improvements
-uranium	zh	聚变/核工程术语，对应英文“uranium”。	internal:dict-improvements
-uranium-enriched-in-the-isotope-uranium-235-or-uranium-233	zh	聚变/核工程术语，对应英文“uranium enriched in the isotope uranium-235 or uranium-233”。	internal:dict-improvements
-uranium-series	zh	聚变/核工程术语，对应英文“uranium series”。	internal:dict-improvements
-urgent-protective-action	zh	聚变/核工程术语，对应英文“urgent protective action”。	internal:dict-improvements
-urgent-protective-action-planning-zone	zh	聚变/核工程术语，对应英文“urgent protective action planning zone (UPZ)”。	internal:dict-improvements
-urgent-response-phase	zh	聚变/核工程术语，对应英文“urgent response phase”。	internal:dict-improvements
+uptake	zh	1. 放射性核素从生物系统的一个部分进入另一部分的各种过程的通称。用于多种情形，尤其用于描述存在若干贡献过程时的总体效应；例如根部摄取，即放射性核素通过植物根系从土壤转移到植物。2. 放射性核素从呼吸道、胃肠道或经由皮肤进入体液的各种过程，或摄入量中通过这些过程进入体液的那一份额。也指从摄入部位转移到身体器官或组织的物质数量。	translated:IAEA-safety-glossary
+uranium	zh	贫化铀（depleted uranium）。235U 质量百分数低于天然铀中所含者的铀。（见 SSR-6（Rev. 1）[2]。）！此用法为《运输条例》[2] 所专有。富集铀（enriched uranium）。235U 质量百分数高于 0.72% 的铀。（见 SSR-6（Rev. 1）[2]。）！此用法为《运输条例》[2] 所专有。高富集铀（HEU）。含 20% 或更多同位素 235U 的铀。HEU 被视为特殊可裂变材料及直接使用材料。（见参考文献 [44]。）即按质量计含 20% 或更多同位素 235U。低富集铀（LEU）。含低于 20% 同位素 235U 的富集铀。LEU 被视为特殊可裂变材料及间接使用材料。（见参考文献 [45]。）即按质量计含低于 20% 同位素 235U。天然铀（natural uranium）。含天然存在的铀同位素分布（按质量计约 99.28% 238U 与 0.72% 235U）的铀（可以是经化学分离的）。（见 SSR-6（Rev. 1）[2]。）！此用法为《运输条例》[2] 所专有。在所有情形下，均存在极少量质量百分数的 234U。包括 234U 在内的天然存在铀同位素分布（按质量计约 99.285% 238U、0.710% 235U 与 0.005% 234U）对应约 48.9% 234U、2.2% 235U 与 48.9% 238U（按活度计）。	translated:IAEA-safety-glossary
+uranium-enriched-in-the-isotope-uranium-235-or-uranium-233	zh	含同位素 235U 或 233U 或两者，且其数量使这些同位素之和与同位素 238U 的丰度比高于自然界中同位素 235U 与 238U 之比的铀（见参考文献 [40–44]）。《核材料与核设施实物保护公约》的最后文件于 2005 年七月 8 日获得核准。	translated:IAEA-safety-glossary
+uranium-series	zh	238U 的衰变链。即 238U、234Th、234Pa、234U、230Th、226Ra、222Rn、218Po、214Pb、214Bi 和 214Po、Pb、210Bi、210Po 以及（稳定的）206Pb，另含痕量 218At、210Tl、209Pb、206Hg 和 206Tl。	translated:IAEA-safety-glossary
+urgent-protective-action	zh	见 防护行动。	translated:IAEA-safety-glossary
+urgent-protective-action-planning-zone	zh	见 应急计划区。	translated:IAEA-safety-glossary
+urgent-response-phase	zh	见 应急响应阶段。	translated:IAEA-safety-glossary
 us-burning-plasma	en	A US community-driven program for achieving and studying self-heated burning plasmas.	corpus
 us-burning-plasma	zh	美国燃烧等离子体计划：为实现并研究自加热燃烧等离子体的美国社区驱动计划。	corpus
-use	zh	聚变/核工程术语，对应英文“use”。	internal:dict-improvements
+use	zh	批准使用（authorized use）。按照某一批准，对来自经批准设施或活动的放射性物质或放射性物体所进行的使用。此术语主要用于与解控相对照，因为解控意味着对该使用不再有进一步监管控制，而批准使用的授权则可能规定或禁止特定用途。属限制使用的一种形式。限制使用（restricted use）。对出于辐射防护与安全原因而施加限制的区域或材料所进行的使用。限制通常表述为禁止特定活动（例如建造房屋、种植或收获特定食物）或规定特定程序（例如材料仅可在设施内循环利用或再利用）。不受限制使用（unrestricted use）。对区域或材料在没有任何基于辐射学的限制的情况下所进行的使用。！对区域或材料的使用可能存在其他限制，例如对某块土地使用的规划限制或与材料化学性质有关的限制。！在某些情形下，这些限制除其主要预期效果外，还可能对辐射照射产生附带影响，但除非限制的主要原因是辐射学方面的，该使用仍归类为不受限制使用。不受限制使用与限制使用相对照。	translated:IAEA-safety-glossary
 vacancy	en	A missing atom site in the crystal lattice.	corpus
 vacancy	zh	空位是晶格中缺失原子的格点。	corpus
 vacuum-pumps	zh	将气体（通常为空气）从腔室中抽除、使其处于真空状态的泵。ITER 中使用了多种类型的泵，取决于所需真空的品质和程度。	translated:ITER-glossary
