@@ -4750,19 +4750,19 @@ material-migration	zh	材料迁移是真空室内壁材料净侵蚀、输运与�
 mathematical-model	zh	见 模型。	translated:IAEA-safety-glossary
 maximum-credible-accident	en	The most severe postulated accident scenario used for safety analysis.	corpus
 maximum-credible-accident	zh	最大可信事故是安全分析所采用的最严重假设事故场景。	corpus
-maximum-normal-operating-pressure	zh	聚变/核工程术语，对应英文“maximum normal operating pressure”。	internal:dict-improvements
-maximum-potential-magnitude	zh	聚变/核工程术语，对应英文“maximum potential magnitude”。	internal:dict-improvements
-mechanistic-model	zh	聚变/核工程术语，对应英文“mechanistic model”。	internal:dict-improvements
-medical-exposure	zh	聚变/核工程术语，对应英文“medical exposure”。	internal:dict-improvements
-medical-physicist	zh	聚变/核工程术语，对应英文“medical physicist”。	internal:dict-improvements
-medical-radiation-facility	zh	聚变/核工程术语，对应英文“medical radiation facility”。	internal:dict-improvements
-medical-radiation-technologist	zh	聚变/核工程术语，对应英文“medical radiation technologist”。	internal:dict-improvements
-medical-radiological-equipment	zh	聚变/核工程术语，对应英文“medical radiological equipment”。	internal:dict-improvements
+maximum-normal-operating-pressure	zh	指在运输条件下，在对应于环境条件的温度和太阳辐射条件下、于一年期间内在无排放、无辅助系统外部冷却或无运行控制的情况下，安全壳系统中将会形成的、高于平均海平面大气压力的最大压力。（见 SSR-6（Rev. 1）[2]。）！本用法专用于《运输条例》[2]。	translated:IAEA-safety-glossary
+maximum-potential-magnitude	zh	见 震级。	translated:IAEA-safety-glossary
+mechanistic-model	zh	见 模型。	translated:IAEA-safety-glossary
+medical-exposure	zh	见 照射类别。	translated:IAEA-safety-glossary
+medical-physicist	zh	在把物理学应用于医学的概念和技术方面接受过专业教育和培训、并有能力在医学物理学的一个或多个子领域（专业）中独立执业的卫生专业人员。人员的能力通常由国家对各专业（例如诊断放射学、放射治疗、核医学）的医学物理师实行注册、认可或认证的正式机制来评定。尚未建立此类机制的国家，需要评定许可证持有者提议担任医学物理师的任何个人的教育、培训和能力，并依据国际认可标准或已建立此类认可制度的国家的标准，决定该个人能否在所需专业范围内履行医学物理师的职能。	translated:IAEA-safety-glossary
+medical-radiation-facility	zh	实施放射诊疗程序的医疗设施。	translated:IAEA-safety-glossary
+medical-radiation-technologist	zh	在医疗放射技术方面接受过专业教育和培训、有能力受放射医疗执业人员委派在医疗放射技术的一个或多个专业中实施放射诊疗程序的卫生专业人员。人员的能力通常由国家对各专业（例如诊断放射学、放射治疗、核医学）的医疗放射技师实行注册、认可或认证的正式机制来评定。尚未建立此类机制的国家，需要评定许可证持有者提议担任医疗放射技师的任何个人的教育、培训和能力，并依据国际标准或已建立此类制度的国家的标准，决定该个人能否在所需专业范围内履行医疗放射技师的职能。	translated:IAEA-safety-glossary
+medical-radiological-equipment	zh	用于医疗辐射设施中实施放射诊疗程序、且或者对个人产生照射、或者直接控制或影响此种照射程度的放射设备。该术语适用于辐射发生器，例如 X 射线机或医用直线加速器；适用于含密封源的装置，例如 60Co 远距治疗装置；适用于在涉及电离辐射的医学成像程序中用于采集图像的装置，	translated:IAEA-safety-glossary
 melt-damage	en	Melting of a PFC surface caused by transient high heat loads.	corpus
 melt-damage	zh	熔化损伤是瞬态高热负荷所导致的 PFC 表面熔化。	corpus
 melt-layer	en	The transient liquid layer formed on a plasma-facing component surface by disruption or edge-localized mode heat loads.	corpus
 melt-layer	zh	熔化层：破裂或边缘局域模热负荷在面向等离子体部件表面形成的瞬态液态层。	corpus
-member-of-the-public	zh	聚变/核工程术语，对应英文“member of the public”。	internal:dict-improvements
+member-of-the-public	zh	就防护与安全而言，在一般意义上指人群中的任何个人，但受到职业照射或医疗照射者除外。为验证是否符合公众照射的年剂量限值，所指为代表性人员。	translated:IAEA-safety-glossary
 merging-compression	en	A spherical tokamak start-up method in which two spheromak or compact torus plasmas are merged.	corpus
 merging-compression	zh	并合压缩：把两个球马克或紧凑环等离子体并合起来的球形托卡马克启动方法。	corpus
 mesh-generation	en	Generation of computational meshes for the finite element, finite volume, and CFD methods.	corpus
@@ -4775,54 +4775,54 @@ micro-tearing-mode	en	A tearing instability at the gyroradius scale that contrib
 micro-tearing-mode	zh	微撕裂模是回旋半径尺度上导致电子热输运的撕裂不稳定性。	corpus
 microstructure	en	The structure of a material at the microscopic scale.	corpus
 microstructure	zh	微观结构是材料在微观尺度上的结构。	corpus
-migration	zh	聚变/核工程术语，对应英文“migration”。	internal:dict-improvements
+migration	zh	放射性核素在环境中由于自然过程而发生的迁移。最常见的是放射性核素随地下水流动而发生的迁移。[矿石加工厂] 见 [处理放射性矿石的矿山或矿石加工厂]。[矿石加工] 见 [采矿与矿石加工]。[处理放射性矿石的矿山或矿石加工厂] 指开采、[矿石加工] 或处理含铀系或钍系放射性核素矿石的设施。处理放射性矿石的矿山，是指所产出矿石中含铀系或钍系放射性核素的量或浓度足以值得开采，或者当这些核素与正在开采的其他物质共存时其量或浓度达到监管机构所确定需要采取辐射防护措施程度的任何矿山。处理放射性矿石的矿石加工厂，是指处理来自此处所定义的、处理放射性矿石的矿山的放射性矿石以产出物理或化学精矿的任何设施。本条仅限于那些旨在提取铀系或钍系放射性核素的采矿和加工作业，以及那些旨在从矿石中提取其他物质且此种提取构成显著放射性危害的作业。严格地说，在矿物加工语境下，矿石加工厂是用于处理矿石以减小其粒径、特别是通过破碎或研磨来减小的设施。然而，[矿石加工厂] 一词是在更广的意义上使用的，指其中还可能进行其他加工（例如湿法冶金加工）的设施。！鉴于可能造成混淆，不建议在本表述中或其他地方以这种更广的意义使用 [矿石加工厂] 一词。本条仅为提供信息而列入。除放射性一词外，各词均按通常的词典含义使用。见 放射性（2）。	translated:IAEA-safety-glossary
 milestone-based-development	en	A development model in which funding tranches are linked to the achievement of technical milestones.	corpus
 milestone-based-development	zh	里程碑驱动开发：把各期资金与既定技术里程碑达成情况挂钩的开发模式。	corpus
-minimization	zh	聚变/核工程术语，对应英文“minimization (of waste)”。	internal:dict-improvements
-minimum-detectable-activity	zh	聚变/核工程术语，对应英文“minimum detectable activity (MDA)”。	internal:dict-improvements
-minimum-significant-activity	zh	聚变/核工程术语，对应英文“minimum significant activity (MSA)”。	internal:dict-improvements
+minimization	zh	将放射性废物的数量和活度降至在合理可行的范围内尽可能低水平的过程，贯穿从设施或活动的设计直至退役的所有阶段，其方式是减少所产生的废物量，并采用再循环和再利用以及通过处理降低其活度等手段，同时适当考虑二次废物和一次废物。废物最小化不应与减容相混淆。见 放射性废物管理。再循环（recycling）。将废材料转化为新产品的过程。再循环减少了有用材料的浪费、原材料的使用和能源的使用。再循环通过减少常规废物的处置需求，有助于减少（由焚烧引起的）空气污染和减少（由使用填埋场引起的）水污染，并且还有助于减少温室气体的排放。再利用（reuse）。物品在此前已被使用之后再次使用。再利用包括常规再利用，即物品再次用于执行相同的功能，以及物品再次用于执行不同功能的再利用。	translated:IAEA-safety-glossary
+minimum-detectable-activity	zh	若存在于样品中则会产生在某一置信水平下将被探测到（即被认为高于本底）的计数率的放射性。该「某一置信水平」通常设定为 95%；也就是说，含恰好等于最小可探测活度的样品，由于随机涨落，将有 5% 的次数被判为不含放射性。最小可探测活度有时称为探测限或探测下限。含最小可探测活度的样品所产生的计数率称为判定水平。	translated:IAEA-safety-glossary
+minimum-significant-activity	zh	若存在于样品中则会产生在某一置信水平下能够可靠地与背景相区分的计数率的放射性。含恰好等于最小显著活度的样品，由于随机涨落，将有 50% 的次数被判为不含放射性，而真正的背景样品将有 95% 的次数被判为不含放射性。最小显著活度有时称为判断限。含最小显著活度的样品所产生的计数率称为临界水平。[采矿与矿石加工] 在产出含铀系或钍系放射性核素放射性矿石的矿山中采矿——这些核素的量或浓度足以值得开采，或者当与正在开采的其他物质共存时其量或浓度达到监管机构所确定需要采取辐射防护措施的程度——以及处理来自此类矿山的放射性矿石以产出化学精矿。本条仅限于那些旨在提取铀系或钍系放射性核素的采矿和加工作业，以及那些旨在从矿石中提取其他物质且此种提取构成显著放射性危害的作业。严格地说，在矿物加工语境下，矿石加工是将矿石处理以减小其粒径，特别是通过破碎或研磨。然而，在本条的语境下，[矿石加工] 一词是在更广的意义上使用的，以包括其他加工（例如湿法冶金加工）。！鉴于可能造成混淆，不建议在本表述中或其他地方以这种更广的意义使用 [矿石加工] 一词。采矿包括原地浸出，也称为溶液采矿或原地回收，其做法是溶解地下的矿石中的矿物并将所得溶液泵送至地表，以便回收这些矿物。本条仅为提供信息而列入。采矿和 [矿石加工] 两个术语应按其通常的词典含义使用，必要时加以限定（例如使用放射性矿石一词）。另见 处理放射性矿石的矿山或矿石加工厂。[采矿与矿石加工废物（MMW）] 见 废物。	translated:IAEA-safety-glossary
 minority-heating	en	An ICRF heating scheme based on minority ion resonance.	corpus
 minority-heating	zh	少数粒子加热是基于少数离子共振的 ICRF 加热方案。	corpus
 mitigation	en	Action taken to mitigate a risk or an off-normal event in the fusion context.	corpus
 mitigation	zh	在聚变语境下对风险或异常事件采取的缓解措施。	corpus
-mitigatory-action	zh	聚变/核工程术语，对应英文“mitigatory action”。	internal:dict-improvements
+mitigatory-action	zh	见 防护行动。	translated:IAEA-safety-glossary
 mix-instability	en	Material mixing at the shell-fuel interface during implosion.	corpus
 mix-instability	zh	混合不稳定性是内爆过程中壳层与燃料界面材料的混合。	corpus
 mixed-material	en	Co-deposited layers of multiple PFC materials (e.g. Be-W).	corpus
 mixed-material	zh	混合材料是由多种 PFC 材料共沉积形成的混合层（如 Be-W）。	corpus
 mixed-pebble-bed	en	A binary pebble bed mixing breeder and multiplier materials.	corpus
 mixed-pebble-bed	zh	混合球床是混合增殖剂与倍增剂材料的二元球床。	corpus
-mixed-waste	zh	聚变/核工程术语，对应英文“mixed waste”。	internal:dict-improvements
+mixed-waste	zh	见 waste。	translated:IAEA-safety-glossary
 mode	en	The way in which a piece of equipment is set to perform a particular task.	https://www.oxfordlearnersdictionaries.com/definition/english/mode
 mode	zh	模式是设备为完成特定任务而设定的运行方式。	https://www.oxfordlearnersdictionaries.com/definition/english/mode
 mode-conversion	en	A wave mode conversion heating mechanism at the ion-ion hybrid layer.	corpus
 mode-conversion	zh	模式转换是发生于离子-离子混杂层的波模式转换加热机制。	corpus
-model	zh	聚变/核工程术语，对应英文“model”。	internal:dict-improvements
-model-calibration	zh	聚变/核工程术语，对应英文“model calibration”。	internal:dict-improvements
-model-validation	zh	聚变/核工程术语，对应英文“model validation”。	internal:dict-improvements
-model-verification	zh	聚变/核工程术语，对应英文“model verification”。	internal:dict-improvements
+model	zh	对真实系统以及该系统内各种现象发生方式所作的分析性或物理性表述或量化，用于预测或评估该真实系统在规定（通常是假设的）条件下的行为。计算模型。实现数学模型的计算工具。概念模型。用于描述一个系统（或其一部分）的一组定性假设。这些假设通常至少涵盖系统的几何与维数、初始条件和边界条件、时间依赖性，以及相关物理、化学和生物过程与现象的性质。数学模型。为表示概念模型而设计的一组数学方程。机理模型（生物物理模型）。对假定的或已证实的、发生在分子水平、细胞水平、器官水平或整个生物体水平上的辐射诱发生物物理过程的表述。物理模型。以不同尺度和/或使用不同材料对某一结构或部件所作的物理性表述，其性能可与真实结构或部件的性能相关联。风险投影模型。一种概念模型，例如根据有关高剂量和/或高剂量率所致风险的流行病学证据来估算低剂量和低剂量率下辐射照射所致风险的模型。加性风险投影模型。一种风险投影模型，其中假定照射导致的可归因风险与剂量成正比，但与效应的自然概率无关。乘性风险投影模型。一种风险投影模型，其中假定照射导致的可归因风险与剂量成正比，且与该效应的自然概率成正比。地震构造模型。表征所关注场址周围区域地震源的模型，包括地震源特征中的偶然不确定性和认知不确定性。	translated:IAEA-safety-glossary
+model-calibration	zh	见 校准。	translated:IAEA-safety-glossary
+model-validation	zh	见 验证。	translated:IAEA-safety-glossary
+model-verification	zh	见 校核。	translated:IAEA-safety-glossary
 modular-coil	en	A non-planar coil of a stellarator; one of several modular units whose shaped windings generate the rotational transform and the confining magnetic field.	corpus
 modular-coil	zh	仿星器的非平面线圈，为若干模块化单元之一，其成形绕组产生旋转变换与约束磁场。	corpus
 modular-fusion-reactor	en	A fusion reactor built from factory-produced modules so that deployment can be scaled up.	corpus
 modular-fusion-reactor	zh	模块化聚变堆：由工厂制造的模块构成、便于规模化部署的聚变堆。	corpus
 momentum-transport	en	The radial transport of toroidal angular momentum.	corpus
 momentum-transport	zh	动量输运是环向角动量的径向输运。	corpus
-monitoring	zh	聚变/核工程术语，对应英文“monitoring”。	internal:dict-improvements
+monitoring	zh	1. 为与评估或控制辐射照射或放射性物质所致照射有关的目的，对剂量、剂量率或活度进行的测量，以及对结果的解释。「测量」一词的使用有些宽松。剂量的「测量」往往是指测量某一剂量当量量，作为无法直接测量的剂量量的替代（即代用）。此外，采样可作为测量的预备步骤。测量实际上可能是对辐射水平、空气放射性浓度、污染水平、放射性物质数量或个人剂量的测量。这些测量的结果可用于评估放射性危害，或评估由照射引起或可能引起的剂量。监测可按两种不同方式细分：按测量地点，分为个人监测、工作场所监测、源监测和环境监测；按监测目的，分为常规监测、任务相关监测和特殊监测。区域监测。工作场所监测的一种形式，即通过在一区域内的不同点位进行测量来对该区域实施监测。与使用固定式监测仪进行的测量相对。环境监测。对环境中的源所致外照射剂量率、或环境介质中放射性核素浓度的测量。与源监测相对。个人监测。利用个人佩戴的设备所进行的测量，或对个人体内或体表、或摄入体内的放射性物质数量的测量，或对个人从体内排出的放射性物质数量的测量所实施的监测。亦称个人监测（personal monitoring）。对工作人员而言，通常与工作场所监测相对。例如，它包括使用呼吸带空气采样器对摄入体内的放射性物质数量进行的测量。[personal monitoring]（个人监测）。与个人监测同义。此种用法可能造成混淆，不鼓励使用，宜改用个人监测。[personnel monitoring]（人员监测）。个人监测与工作场所监测的结合。此种用法可能造成混淆，不鼓励使用，宜视情况改用个人监测和/或工作场所监测。常规监测。与持续运行相关的监测，其目的在于：(1) 证明工作条件（包括个人剂量水平）保持满意；以及 (2) 满足监管要求。常规监测可以是个人监测或工作场所监测。对比术语：任务相关监测和特殊监测。源监测。对释放到环境中的放射性核素的活度、或对设施或活动内源所致外照射剂量率的测量。与环境监测相对。特殊监测。为调查工作场所中信息不足以证明已得到充分控制的某一特定情况而设计的监测，其方式是提供详细信息以阐明任何问题并确定今后的程序。特殊监测通常在新设施的调试阶段、在对设施或程序作重大修改之后、或在异常情况下（例如事故之后）开展作业时进行。特殊监测可以是个人监测或工作场所监测。对比术语：常规监测和任务相关监测。任务相关监测。与某一特定操作相关的监测，用以提供数据支持对该操作的即时管理决策。任务相关监测可以是个人监测或工作场所监测。对比术语：常规监测和特殊监测。工作场所监测。在工作环境中进行测量所实施的监测。通常与个人监测相对。2. 对放射性参数或其他参数进行的连续或定期测量，或对结构、系统或部件状态的确定。采样可作为测量的预备步骤。尽管这一概念与定义 (1) 并无本质不同，但本定义更适合于主要关注安全（即把源置于受控状态）而非防护（即控制照射）的那些类型的监测。本定义尤其适用于通过跟踪电厂变量来监测核设施的状态，或通过跟踪水通量等变量来监测废物处置设施的长期性能。这些示例与定义 (1) 的不同之处在于，常规测量本身并无特别意义；监测只是为了在出现意外偏差时将其探测出来。状态监测。对结构、系统和部件的性能或物理特性进行连续或定期的试验、检查、测量或趋势分析，以指示当前或未来的性能以及失效的可能性。状态监测通常以非侵入方式进行。	translated:IAEA-safety-glossary
 monte-carlo-method	en	Stochastic sampling method used for particle transport and for numerical integration.	corpus
 monte-carlo-method	zh	用于粒子输运与数值积分的随机抽样方法。	corpus
 multigroup	en	A multigroup discretization of the energy variable.	corpus
 multigroup	zh	多群是对能量变量的多群离散。	corpus
-multilateral-approval	zh	聚变/核工程术语，对应英文“multilateral approval”。	internal:dict-improvements
+multilateral-approval	zh	见 批准。	translated:IAEA-safety-glossary
 multipactor	en	A secondary electron multiplication discharge in RF components.	corpus
 multipactor	zh	二次电子倍增放电是射频部件中由二次电子倍增引起的放电。	corpus
 multiphysics	en	Simultaneous solution of multiple physics domains.	corpus
 multiphysics	zh	多物理场是多个物理域的同步求解。	corpus
-multiple-barriers	zh	聚变/核工程术语，对应英文“multiple barriers”。	internal:dict-improvements
+multiple-barriers	zh	见 屏障。	translated:IAEA-safety-glossary
 multiple-mirror	en	A confinement scheme that uses a series of linked mirror cells.	corpus
 multiple-mirror	zh	多重磁镜：使用串联多个磁镜单元的约束方案。	corpus
-multiple-safety-functions	zh	聚变/核工程术语，对应英文“multiple safety functions”。	internal:dict-improvements
-multiplexing	zh	聚变/核工程术语，对应英文“multiplexing”。	internal:dict-improvements
-multiplicative-risk-projection-model	zh	聚变/核工程术语，对应英文“multiplicative risk projection model”。	internal:dict-improvements
+multiple-safety-functions	zh	见 屏障。	translated:IAEA-safety-glossary
+multiplexing	zh	在单一数据信道上发送和接收两路或多路信号或消息；例如采用时分、频分或脉码技术。	translated:IAEA-safety-glossary
+multiplicative-risk-projection-model	zh	见 风险预测模型。	translated:IAEA-safety-glossary
 muon-catalyzed-fusion	en	Low-temperature fusion mediated by muons that replace the electrons of the fuel molecules.	corpus
 muon-catalyzed-fusion	zh	由 μ 子替代燃料分子中的电子而实现的低温聚变。	corpus
 natural-analogue	zh	聚变/核工程术语，对应英文“natural analogue”。	internal:dict-improvements
