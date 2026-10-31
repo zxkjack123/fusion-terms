@@ -190,6 +190,12 @@ BOUNDARY
 3. **29 条 `NO-TARGET` 交叉引用**（附录 C.2）：目标在 `concepts.tsv` 中无对应非空 `preferred_zh`（概念不存在，或概念存在但 `preferred_zh` 为空，如 `radiation-safety → safety`）。按用户裁决逐条登记并写 `见 <英文目标>。`（英文原样保留、可搜索、不伪造中文名）；补登概念属 `concepts.tsv` 变更，超出本任务边界，另案处理。
 4. **`w3-name-conflicts.tsv` 的 physical-sputtering 冲突**：父任务遗留，另案裁决，不在本任务。
 5. **1040 条非 w3 空 quote**：`--mode evidence` 裸跑必红；本任务只对 854 条 w3 负责（G3）。
+6. **上游快照里的 en 定义有 284 条是「章节级」长文本**（T1.0 实测，`definitions.tsv` en 列，基线 `3034dce`）：
+   - 长度分布：`>300` 字符 **284** 条 / `>1000` **78** / `>2000` **26** / `>3000` **13** / `>5000` **4**；最长 `assessment` **7621** 字符（IAEA 整节），中位数仅 139。
+   - 影响：这些 id 的 evidence quote 继承同一段文本，因而是**章节级**引文（含相邻条目），不是条目级单句。它满足 A2（非空 quote + URL 200 + 与 raw 逐字相等），但人工可读性差。
+   - **不截断的理由**：截断会破坏「归一化后与 raw 逐字相等」这一唯一机械校验口径（B4），并把启发式切片规则引入 284 行；修正 en 定义本身属 `definitions.tsv` en 列改动，超出本任务范围。
+   - 后续建议：另立任务把章节级 en 定义切成条目级引文（并同步 zh），本任务只保证「引文可核验」。
+7. **`plant-states` 等 1 条 en 定义含 `\x03` 控制符**：quote 落表时统一走 `norm()`（控制符→空格），因此 evidence 侧不再有控制符；`definitions.tsv` en 列本身的控制符未修（超范围）。
 
 ## 7. 执行计划
 
@@ -982,7 +988,7 @@ BOUNDARY
 | T0.1 | 2026-10-31 | `5735da8` | 0 | self-test `24/24`；`--mode names … --expect 854` PASS；ruff ok；变异证明 删 index 3 → `19/24`、删 en 恢复 → `21/24`；`/tmp` 无残留副本（`ls /tmp \| grep -c t0_2_selftest_restored_` = 0） |
 | T0.2 | 2026-10-31 | `a9c8201` | 0 | self-test `27/27`；evidence RED：exit 1、`evidence_quote_empty` 854 条、**`probes=1`**（基线唯一 URL 只有 ITER 一个，782 条 IAEA 行为裸名）；无 `--ids-file` → exit 2 + `requires --ids-file`；真实探测 IAEA 200(0.80s)/ITER 200(1.11s)；ruff ok；变异证明：裸名+非空 quote → `evidence_source_not_url`、404 → `evidence_url_status`、删去重 → `probes=72` + `evidence_probe_dedup` |
 | T0.3 | 2026-10-31 | — | 0 | 只写 `/tmp/opencode/t5072/`；`w3.ids` 854 / `w3_placeholder.ids` 747；行型 **DEFINITION 431 / CROSS_REF 300 / CORRUPT 16**（交叉引用族 316）；解析 **direct 248 / ledger 68 / NO-TARGET 29**；`sha256sum -c manifests.sha256` exit 0；`comm` 差集 0；变异（删 BODY 判据）→ `(431, 316, 0)` 断言失败 |
-| T1.0 | | — | | |
+| T1.0 | 2026-10-31 | — | 0 | `/tmp/opencode/t5072/backfill_evidence.py` 落地（PUA 剥离、无 difflib、逐行改写以保非 w3 行字节不变）；dry-run `updated=854 matched_exact=854`；副本变更 **854 行 / 非 w3 变更 0**；854 非空 quote；source `IAEA 782 / ITER 72`；evidence 模式对副本 `PASS` + `probes=2`；失败证明：删 `--raw-iaea` → exit 1、删 `dose-quantities` en → exit 1；仓内无改动 |
 | T1.1–T1.5 | | | | |
 | T1.6 | | — | | |
 | T2.0 | | — | | |
