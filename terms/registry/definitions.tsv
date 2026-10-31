@@ -3746,7 +3746,7 @@ castellation	zh	切槽结构：为释放热应力而在面向等离子体部件�
 cause	zh	聚变/核工程术语，对应英文“cause”。	internal:dict-improvements
 cbet	en	The redistribution of laser energy between beams that cross inside a hohlraum.	corpus
 cbet	zh	交叉光束能量传递：黑腔内相交光束之间的激光能量再分配。	corpus
-cea	zh	聚变/核工程术语，对应英文“CEA”。	internal:dict-improvements
+cea	zh	法国替代能源与原子能委员会（CEA），是一家多学科研究机构。位于 ITER 附近的 CEA 卡达拉什（Cadarache）是磁约束聚变研究所（IRFM）和 WEST 托卡马克的所在地。	translated:ITER-glossary
 certificate	zh	聚变/核工程术语，对应英文“certificate”。	internal:dict-improvements
 certification	zh	聚变/核工程术语，对应英文“certification”。	internal:dict-improvements
 cfetr-design	en	Design activities and parameter studies carried out for the CFETR device.	corpus
@@ -3786,7 +3786,7 @@ commercial-fusion	en	Fusion energy used as a commercially viable source of elect
 commercial-fusion	zh	商业聚变：作为可商业化电力来源的聚变能。	corpus
 commercialization-pathway	en	A strategic roadmap leading from research and development through a pilot plant to commercial fusion power deployment.	corpus
 commercialization-pathway	zh	商业化路径：从研发经中试装置到商业聚变发电部署的战略路线图。	corpus
-commissioning	zh	聚变/核工程术语，对应英文“Commissioning”。	internal:dict-improvements
+commissioning	zh	装置调试，指电厂或反应堆的部件与系统在建造完成后投入运行，并经验证符合设计假设与性能准则的过程。	translated:ITER-glossary
 common-mode-failure	zh	聚变/核工程术语，对应英文“common mode failure”。	internal:dict-improvements
 compact-fusion	en	An umbrella term for small high-field or alternative-confinement fusion approaches.	corpus
 compact-fusion	zh	紧凑聚变：对小尺寸高场或替代约束聚变路线的统称。	corpus
@@ -3860,12 +3860,12 @@ coolant-chemistry	en	Chemical control of the coolant in a blanket.	corpus
 coolant-chemistry	zh	冷却剂化学是对增殖包层冷却剂的化学控制。	corpus
 coolant-purification	en	A supporting process of the cooling system.	corpus
 coolant-purification	zh	冷却剂纯化是冷却系统的配套工艺。	corpus
-cooldown	zh	聚变/核工程术语，对应英文“Cooldown”。	internal:dict-improvements
+cooldown	zh	降温冷却，通常指为将大型超导磁体系统的热量排出、把温度降至运行点所需的冷却时段。	translated:ITER-glossary
 cooling	en	The act of becoming cool or cooler, or of making somebody or something become cool or cooler.	https://www.oxfordlearnersdictionaries.com/definition/english/cool_2
 cooling	zh	冷却是使物体变冷或温度降低的过程。	https://www.oxfordlearnersdictionaries.com/definition/english/cool_2
 cooling-tower	en	A structure that rejects waste heat to the atmosphere.	corpus
 cooling-tower	zh	冷却塔是向大气排放废热的构筑物。	corpus
-cooling-water-system	zh	聚变/核工程术语，对应英文“Cooling Water System”。	internal:dict-improvements
+cooling-water-system	zh	冷却水系统用于排出 ITER 多种系统产生的热量，由托卡马克冷却水系统、部件冷却水系统、冷冻水系统和排热系统组成。	translated:ITER-glossary
 core-components	zh	聚变/核工程术语，对应英文“core components”。	internal:dict-improvements
 corrective-maintenance	zh	聚变/核工程术语，对应英文“corrective maintenance”。	internal:dict-improvements
 corrosion-product	en	A driver of radiation dose in the cooling loop.	corpus
@@ -3901,7 +3901,7 @@ cross-field-transport	zh	垂直输运是穿过磁面、垂直于磁力线的输�
 cross-section	en	Probability of a nuclear reaction per unit target density, commonly expressed in barns.	corpus
 cross-section	zh	单位靶密度下发生核反应的概率，通常以靶恩表示。	corpus
 crust-earth-s	zh	聚变/核工程术语，对应英文“crust, Earth’s”。	internal:dict-improvements
-cryogenic	zh	聚变/核工程术语，对应英文“Cryogenic”。	internal:dict-improvements
+cryogenic	zh	低温技术，指用于描述处于极低温度（低于 -150 °C）下物质与材料的术语。	translated:ITER-glossary
 cryogenic-power	en	The electrical power consumed by the cryoplant that serves the superconducting magnets.	corpus
 cryogenic-power	zh	低温系统功耗：为超导磁体服务的低温装置所消耗的电功率。	corpus
 cryogenic-target	en	Fusion fuel target containing a deuterium-tritium ice layer held at a temperature of about 18 K.	corpus
@@ -3992,7 +3992,7 @@ deuterium-processing	en	Processing on the deuterium side of the fuel cycle.	corp
 deuterium-processing	zh	氘处理是燃料循环氘侧的处理环节。	corpus
 deuterium-tritium	en	The mixture of deuterium and tritium used as the primary fusion fuel.	corpus
 deuterium-tritium	zh	氘氚是作为主要聚变燃料使用的氘与氚混合物。	corpus
-deuterium-tritium-reactions	zh	聚变/核工程术语，对应英文“Deuterium-Tritium Reactions”。	internal:dict-improvements
+deuterium-tritium-reactions	zh	氘氚聚变反应，指氢的两种同位素氘与氚的原子核之间通过核聚变释放能量的反应，产物为氦核与中子。	translated:ITER-glossary
 deviation	zh	聚变/核工程术语，对应英文“deviation”。	internal:dict-improvements
 device	en	An object or a piece of equipment that has been designed to do a particular job.	https://www.oxfordlearnersdictionaries.com/definition/english/device
 device	zh	装置是为完成特定工作而设计制造的物体或设备。	https://www.oxfordlearnersdictionaries.com/definition/english/device
@@ -4050,7 +4050,7 @@ divertor-leg	en	Magnetic flux path from the X-point to the divertor target (inne
 divertor-leg	zh	偏滤器腿是从X点到偏滤器靶板的磁通路径，分为内侧和外侧。	corpus
 documentation	en	Documentation describing software or a project.	corpus
 documentation	zh	文档是描述软件或项目的资料。	corpus
-domestic-agencies	zh	聚变/核工程术语，对应英文“Domestic Agencies”。	internal:dict-improvements
+domestic-agencies	zh	国内机构，指由七个 ITER 成员方各自设立、以履行对 ITER 的实物采购职责的机构。实物采购指在项目建设阶段，成员方并非只向 ITER 组织提供现金，而是以系统、部件以及就欧洲而言的建筑等形式，提供其参与份额中 90% 的「实物」。	translated:ITER-glossary
 doppler-broadening	en	Spectral line broadening from thermal motion.	corpus
 doppler-broadening	zh	多普勒展宽是热运动造成的谱线展宽。	corpus
 dose	zh	聚变/核工程术语，对应英文“dose”。	internal:dict-improvements
@@ -4067,7 +4067,7 @@ dose-rate	zh	聚变/核工程术语，对应英文“dose rate”。	internal:di
 double-contingency-principle	zh	聚变/核工程术语，对应英文“double contingency principle”。	internal:dict-improvements
 double-null	en	A divertor configuration with two X-points, one upper and one lower.	corpus
 double-null	zh	双零位形是具有上、下两个 X 点的偏滤器位形。	corpus
-double-pancake	zh	聚变/核工程术语，对应英文“Double pancake”。	internal:dict-improvements
+double-pancake	zh	双饼线圈，是 ITER 环向场与极向场超导磁体的构成单元。双饼是绕制成线圈精确形状的双层螺旋超导体（环向场磁体为 D-形，极向场磁体为环形）。六至九个双饼叠装后形成最终的磁体组件。	translated:ITER-glossary
 drawdown	zh	聚变/核工程术语，对应英文“drawdown”。	internal:dict-improvements
 drift-kinetics	en	Kinetic theory formulated in the guiding-centre approximation.	corpus
 drift-kinetics	zh	以导向中心近似表述的动理学理论。	corpus
@@ -4105,7 +4105,7 @@ electrical-grid-connection	en	The interface between a fusion plant and the exter
 electrical-grid-connection	zh	电网接入是聚变电厂与外部电网之间的接口。	corpus
 electromagnetic-force	en	Forces acting on conducting structures during disruptions and fast transients.	corpus
 electromagnetic-force	zh	电磁力是破裂与快速瞬变期间作用于导体结构上的力。	corpus
-electron-beam	zh	聚变/核工程术语，对应英文“Electron Beam”。	internal:dict-improvements
+electron-beam	zh	电子束，指在相邻路径上以相同速度和方向运动、通常由阴极等单一源发射的电子流。	translated:ITER-glossary
 electron-bernstein-wave	en	An electrostatic wave used for heating overdense plasmas.	corpus
 electron-bernstein-wave	zh	电子伯恩斯坦波是用于加热过密等离子体的静电波。	corpus
 electrostatic-confinement	en	Confinement of a plasma by means of an electric field.	GB/T-4960.9
@@ -4152,7 +4152,7 @@ energetic-particle	en	Supra-thermal ion population, produced by neutral beam inj
 energetic-particle	zh	由中性束注入、离子回旋共振加热或聚变 α 粒子产生的超热离子，可驱动阿尔芬本征模不稳定性。	corpus
 energetic-particle-mode	en	A non-perturbative fast-ion driven mode in the Alfven continuum.	corpus
 energetic-particle-mode	zh	高能粒子模是 Alfvén 连续谱中由快离子驱动的非微扰模。	corpus
-energy-breakeven	zh	聚变/核工程术语，对应英文“Energy Breakeven”。	internal:dict-improvements
+energy-breakeven	zh	能量收支平衡，即 Q = 1 的条件，意为等离子体脉冲期间产生的总聚变功率等于注入到加热等离子体各系统中的功率。	translated:ITER-glossary
 energy-cutoff	en	The minimum energy used in particle tracking.	corpus
 energy-cutoff	zh	能量截断是粒子跟踪中采用的最低能量。	corpus
 energy-fluence	zh	聚变/核工程术语，对应英文“energy fluence”。	internal:dict-improvements
@@ -4163,7 +4163,7 @@ entrance-surface-dose	zh	聚变/核工程术语，对应英文“entrance surfac
 environment	zh	聚变/核工程术语，对应英文“environment”。	internal:dict-improvements
 environmental-impact-assessment	en	A systematic evaluation of the environmental effects of a proposed fusion facility.	corpus
 environmental-impact-assessment	zh	环境影响评价：对拟建聚变设施环境影响的系统性评估。	corpus
-epfl	zh	聚变/核工程术语，对应英文“EPFL”。	internal:dict-improvements
+epfl	zh	位于洛桑的瑞士联邦理工学院（EPFL），是瑞士等离子体中心和 TCV 托卡马克的所在地。	translated:ITER-glossary
 epicentre	zh	聚变/核工程术语，对应英文“epicentre”。	internal:dict-improvements
 epistemic-uncertainty	zh	聚变/核工程术语，对应英文“epistemic uncertainty”。	internal:dict-improvements
 equilibrium-equivalent-concentration	zh	聚变/核工程术语，对应英文“equilibrium equivalent concentration (EEC)”。	internal:dict-improvements
@@ -4330,7 +4330,7 @@ fusion-neutron	en	Neutron of 14.1 MeV energy produced by the deuterium-tritium r
 fusion-neutron	zh	氘氚反应产生的能量为 14.1 MeV 的中子。	corpus
 fusion-neutron-application	en	Non-electricity applications that use the 14 MeV neutrons produced by fusion reactions.	corpus
 fusion-neutron-application	zh	聚变中子应用：利用聚变产生的 14 MeV 中子的非发电类应用。	corpus
-fusion-performance	zh	聚变/核工程术语，对应英文“Fusion Performance”。	internal:dict-improvements
+fusion-performance	zh	聚变性能，指聚变反应过程中的功率放大倍数 Q，或能量约束时间。	translated:ITER-glossary
 fusion-pilot-plant	en	First-of-a-kind fusion plant intended to demonstrate net electricity production.	corpus
 fusion-pilot-plant	zh	旨在验证净电能生产的首座聚变电站。	corpus
 fusion-power-plant	en	A power plant whose energy is supplied by nuclear fusion reactions. The plan for international fusion research is first to build ITER and then to build a demonstration fusion power plant.	GB/T-4960.9
@@ -4482,8 +4482,8 @@ ideal-mhd	en	Magnetohydrodynamic model that assumes infinite conductivity, i.e. 
 ideal-mhd	zh	假设电导率无限大（无电阻率）的磁流体力学模型。	corpus
 ideal-mhd-stability	en	MHD stability analysis that ignores resistive effects.	corpus
 ideal-mhd-stability	zh	理想MHD稳定性是不考虑电阻效应的MHD稳定性分析。	corpus
-ifmif-dones	zh	聚变/核工程术语，对应英文“IFMIF-DONES”。	internal:dict-improvements
-ifmif-eveda	zh	聚变/核工程术语，对应英文“IFMIF/EVEDA”。	internal:dict-improvements
+ifmif-dones	zh	国际聚变材料辐照设施/面向 DEMO 的中子源（IFMIF-DONES）将是一座研究基础设施，用于对未来聚变电厂（如 DEMO，即示范聚变反应堆原型）所用材料进行测试、验证与鉴定。该设施目前正在西班牙格拉纳达（Granada）建设，西班牙、克罗地亚和日本为主要项目牵头方。参见该网站。	translated:ITER-glossary
+ifmif-eveda	zh	国际聚变材料辐照设施，位于日本那珂（Naka）。IFMIF 属于 Broader Approach 协议的一部分，是一项国际科学研究计划，旨在测试材料用于聚变反应堆的适用性。IFMIF 由欧洲与日本共同开发，将利用基于粒子加速器的中子源产生大的中子通量，并在合适的量与时间周期内，测试材料在接近聚变反应堆内壁预期工况下的长期行为。工程验证与工程设计活动（EVEDA）目前正在进行。更多内容见 IFMIF/EVEDA。	translated:ITER-glossary
 iges-format	en	The Initial Graphics Exchange Specification format.	corpus
 iges-format	zh	IGES格式是初始图形交换规范格式。	corpus
 igneous-rock	zh	聚变/核工程术语，对应英文“igneous rock”。	internal:dict-improvements
@@ -4503,7 +4503,7 @@ impurity-transport	zh	杂质离子在约束等离子体中的输运。	corpus
 in-vessel	en	Located inside the tokamak vacuum vessel; the in-vessel components comprise the blanket, the divertor, the fuelling and internal pumping systems, the port plugs, the in-vessel coils and diagnostic sensors mounted directly on the vessel.	ITER-glossary
 in-vessel	zh	堆内：位于托卡马克真空室内部；真空室内部件包括包层、偏滤器、加料与内部抽气系统、端口塞、真空室内线圈以及直接安装在真空室上的诊断传感器。	ITER-glossary
 in-vessel-component	en	A component mounted directly inside the vacuum vessel of a tokamak, such as the blanket, the divertor, part of the fuelling system, the internal pumping system, and diagnostic sensors.	GB/T-4960.9
-in-vessel-components	zh	聚变/核工程术语，对应英文“In-vessel components”。	internal:dict-improvements
+in-vessel-components	zh	真空室内构件包括包层、偏滤器、加料与内部抽气系统、窗口插件、真空室内线圈，以及直接安装在真空室上的诊断传感器。	translated:ITER-glossary
 in-vessel-inspection	en	Remote inspection of plasma-facing and structural components inside the vacuum vessel during maintenance windows.	corpus
 in-vessel-inspection	zh	真空室内检测：在维护窗口期对真空容器内面向等离子体部件与结构部件实施的遥控检查。	corpus
 in-vessel-loca	en	Loss-of-coolant accident caused by a coolant leak inside the vacuum vessel.	corpus
@@ -4566,7 +4566,7 @@ intrusion	zh	聚变/核工程术语，对应英文“intrusion (human)”。	int
 intrusion-barrier	zh	聚变/核工程术语，对应英文“intrusion barrier”。	internal:dict-improvements
 investigation-level	zh	聚变/核工程术语，对应英文“investigation level”。	internal:dict-improvements
 iodine-thyroid-blocking	zh	聚变/核工程术语，对应英文“iodine thyroid blocking”。	internal:dict-improvements
-ion	zh	聚变/核工程术语，对应英文“Ion”。	internal:dict-improvements
+ion	zh	离子，指因获得或失去一个或多个绕核电子而带电的原子。完全电离的原子是指所有电子均被剥离的原子。	translated:ITER-glossary
 ion-bernstein-wave	en	A plasma wave that propagates perpendicular to the magnetic field at harmonics of the ion cyclotron frequency.	GB/T-4960.9
 ion-implantation	en	The embedding of energetic ions into the near-surface layers of plasma-facing component material.	corpus
 ion-implantation	zh	离子注入：能量离子嵌入面向等离子体部件材料的近表层。	corpus
@@ -4586,7 +4586,7 @@ island-divertor	zh	利用等离子体边缘磁岛拓扑的偏滤器方案（用�
 isolation	zh	聚变/核工程术语，对应英文“isolation (of radioactive waste in a disposal facility)”。	internal:dict-improvements
 isolation-valve	en	A shut-off valve that cuts off or connects the medium flow in a line.	corpus
 isolation-valve	zh	隔离阀是切断或接通管路中介质流的截断阀。	corpus
-isotope	zh	聚变/核工程术语，对应英文“Isotope”。	internal:dict-improvements
+isotope	zh	同位素，指同一元素的若干版本之一，其原子核中中子数不同而质子数相同。	translated:ITER-glossary
 isotope-effect	en	Dependence of confinement on hydrogen isotope mass.	corpus
 isotope-effect	zh	同位素效应是约束性能对氢同位素质量的依赖关系。	corpus
 isotope-production	en	A near-term fusion application that produces isotopes for medical or industrial use.	corpus
@@ -4600,8 +4600,8 @@ iter-to-demo	en	Transition phase from the ITER experimental results to the desig
 iter-to-demo	zh	从 ITER 实验结果过渡到 DEMO 设计的阶段。	corpus
 itg-mode	en	A micro-instability driven by the ion temperature gradient, and a major driver of ion heat transport.	corpus
 itg-mode	zh	离子温度梯度模是由离子温度梯度驱动的微观不稳定性，是离子热输运的主要驱动因素。	corpus
-itpea	zh	聚变/核工程术语，对应英文“ITPEA”。	internal:dict-improvements
-iua	zh	聚变/核工程术语，对应英文“IUA”。	internal:dict-improvements
+itpea	zh	国际托卡马克物理与工程活动（ITPEA）为国际协调的聚变研究活动提供框架。ITPEA 延续了多年来在国际层面开展的托卡马克物理与工程研发活动，这些活动形成了对 ITER 设计至关重要的广泛工程与物理基础，并对所有聚变计划以及总体迈向聚变能的进展具有价值。（该名称于 2025 年底由 ITPA 更改而来。）ITPEA 在 ITER 的主持下运作。参见 ITER 网站上托管的 ITPEA 页面。	translated:ITER-glossary
+iua	zh	ITER 项目的建造阶段与运行阶段成本估算，采用一种称为 ITER 记账单位（IUA）的内部货币进行量化，该单位设立于 1989 年。IUA 与欧元的换算基准已由各成员方商定，并每年更新。由于七个 ITER 成员方协作建造 ITER，各自负责在其领土内以本国货币采购实物硬件，因此 IUA 被设计用于随时间一致地衡量实物贡献的价值，并抵消市场波动的影响。	translated:ITER-glossary
 jointed-magnet	en	A magnet whose segments are connected by demountable electrical joints.	corpus
 jointed-magnet	zh	接头磁体：各段之间以可拆卸电接头相连的磁体。	corpus
 json-format	en	The JavaScript Object Notation format, abbreviated JSON.	corpus
@@ -4630,7 +4630,7 @@ late-effect	zh	聚变/核工程术语，对应英文“late effect”。	interna
 latent-weakness	zh	聚变/核工程术语，对应英文“latent weakness”。	internal:dict-improvements
 lava	zh	聚变/核工程术语，对应英文“lava”。	internal:dict-improvements
 lawson-criterion	en	The criterion derived by Lawson for achieving controlled deuterium-tritium fusion; it requires the plasma temperature to be greater than 100 million degrees (10 keV) and the product of the plasma density and the plasma energy confinement time to be greater than 2 x 10^20 m^-3 s.	GB/T-4960.9
-lawson-s-criteria	zh	聚变/核工程术语，对应英文“Lawson's Criteria”。	internal:dict-improvements
+lawson-s-criteria	zh	1955 年，英国物理学家 John Lawson（1923-2008）证明聚变条件取决于三个关键参数：温度（T）、密度（n）和约束时间（τ）。（劳森判据）	translated:ITER-glossary
 leading-edge	en	The exposed edge of a plasma-facing component tile that faces the upstream plasma flow and is critical for thermal loading.	corpus
 leading-edge	zh	前缘：面向等离子体部件瓦块朝向等离子体上游流的暴露边缘，对热负荷至关重要。	corpus
 lethargy	en	The logarithmic energy variable u = ln(E0/E).	corpus
@@ -4696,7 +4696,7 @@ low-temperature-superconductor	zh	临界温度Tc低于30 K的一类超导体，�
 low-toxicity-alpha-emitters	zh	聚变/核工程术语，对应英文“low toxicity alpha emitters”。	internal:dict-improvements
 lower-hybrid-wave	en	A radio-frequency wave whose frequency lies between the ion and electron cyclotron frequencies. It has an electric field component parallel to the magnetic field and can therefore accelerate electrons moving along the magnetic field lines.	GB/T-4960.9
 lower-limit-of-detection	zh	聚变/核工程术语，对应英文“lower limit of detection”。	internal:dict-improvements
-lower-ports	zh	聚变/核工程术语，对应英文“Lower Ports”。	internal:dict-improvements
+lower-ports	zh	下部窗口，指进入 ITER 真空室的下层通道口。9 个下部窗口将为远程操作、诊断、加热和真空系统提供进入真空室的通道。	translated:ITER-glossary
 lung-absorption-type	zh	聚变/核工程术语，对应英文“lung absorption type”。	internal:dict-improvements
 maglif	en	A Sandia Z-machine approach that combines an applied magnetic field, liner implosion and laser preheat.	corpus
 maglif	zh	磁化衬套惯性聚变：桑迪亚 Z 装置上把外加磁场、衬套内爆与激光预热相结合的一种途径。	corpus
@@ -4729,7 +4729,7 @@ magnitude	zh	聚变/核工程术语，对应英文“magnitude (of an earthquake
 main-safety-function	zh	聚变/核工程术语，对应英文“main safety function”。	internal:dict-improvements
 maintenance	zh	聚变/核工程术语，指“维护”这一技术概念。	internal:dict-improvements
 maintenance-bypass	zh	聚变/核工程术语，对应英文“maintenance bypass”。	internal:dict-improvements
-major-plasma-radius	zh	聚变/核工程术语，对应英文“Major Plasma Radius”。	internal:dict-improvements
+major-plasma-radius	zh	等离子体大半径，指等离子体最大宽度所在高度处最外闭合磁面的中心，即环体的大半径。	translated:ITER-glossary
 makefile	en	A build specification file used by the make tool.	corpus
 makefile	zh	Makefile 是 make 工具的构建规格文件。	corpus
 management	zh	聚变/核工程术语，对应英文“management (of sealed radioactive sources)”。	internal:dict-improvements
@@ -4741,7 +4741,7 @@ manipulator	zh	操纵器：用于真空室内维护、检查与部件操作的�
 mantle-earth-s	zh	聚变/核工程术语，对应英文“mantle, Earth’s”。	internal:dict-improvements
 marfe	en	Multifaceted asymmetric radiation from the edge, a poloidally localized radiation instability.	corpus
 marfe	zh	MARFE 是来自边缘的多面非对称辐射，一种极向局域化的辐射不稳定性。	corpus
-mast-upgrade	zh	聚变/核工程术语，对应英文“MAST Upgrade”。	internal:dict-improvements
+mast-upgrade	zh	兆安球形托卡马克（MAST），位于英国（UK）的卡勒姆聚变能源中心（Culham Centre for Fusion Energy）。参见该网页。	translated:ITER-glossary
 material	en	A substance that things can be made from.	https://www.oxfordlearnersdictionaries.com/definition/english/material_1
 material	zh	材料是可以用来制造成品的物质。	https://www.oxfordlearnersdictionaries.com/definition/english/material_1
 material-ageing	zh	聚变/核工程术语，对应英文“material ageing”。	internal:dict-improvements
@@ -4833,8 +4833,8 @@ natural-source	zh	聚变/核工程术语，对应英文“natural source”。	i
 natural-uranium	zh	聚变/核工程术语，对应英文“natural uranium”。	internal:dict-improvements
 naturally-occurring-radioactive-material	zh	聚变/核工程术语，对应英文“naturally occurring radioactive material (NORM)”。	internal:dict-improvements
 naturally-occurring-radionuclides	zh	聚变/核工程术语，对应英文“naturally occurring radionuclides”。	internal:dict-improvements
-nbtf	zh	聚变/核工程术语，对应英文“NBTF”。	internal:dict-improvements
-nbti-conductor	zh	聚变/核工程术语，对应英文“NbTi Conductor”。	internal:dict-improvements
+nbtf	zh	在位于意大利帕多瓦（Padua）的 Consorzio RFX 中性束测试设施（NBTF）中，ITER 中性束注入将在投入运行之前，在两个试验台上进行测试：SPIDER（一个 ITER-尺度的负离子源）和 MITICA（一台全尺寸的 ITER 中性束注入器）。参见该 ITER 网页。	translated:ITER-glossary
+nbti-conductor	zh	铌钛超导导体，指由铌钛化合物制成的柔性超导体，适用于在 4.5 K 的氦冷却剂条件下使用至 10T。	translated:ITER-glossary
 near-field	zh	聚变/核工程术语，对应英文“near field”。	internal:dict-improvements
 near-miss	zh	聚变/核工程术语，对应英文“near miss”。	internal:dict-improvements
 near-surface-disposal	zh	聚变/核工程术语，指“近地表处置”这一技术概念。	internal:dict-improvements
