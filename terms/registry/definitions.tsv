@@ -5444,50 +5444,50 @@ sievert	zh	等效剂量和有效剂量的 SI 单位，等于 1 J/kg。	translate
 significant-transboundary-release	zh	放射性物质向环境的释放，该释放可能导致由该释放所致、超出国界的剂量或污染水平超过防护行动和其他响应行动（包括食品限制和贸易限制）的通用准则。	translated:IAEA-safety-glossary
 simulation	en	A situation in which a particular set of conditions is created artificially in order to study or experience something that could exist in reality.	https://www.oxfordlearnersdictionaries.com/definition/english/simulation
 simulation	zh	模拟是人为构造一组特定条件，以研究或体验现实中可能存在的情形。	https://www.oxfordlearnersdictionaries.com/definition/english/simulation
-single-failure-criterion	zh	聚变/核工程术语，对应英文“single failure criterion”。	internal:dict-improvements
+single-failure-criterion	zh	一种施加于系统的准则（或要求），即系统必须能在存在任何单一故障的情况下执行其任务。为确保满足单一故障准则，设计中通常设置两个或更多独立（冗余）的系统或系列来实现同一安全功能。双偶然原则（double contingency principle）。例如在核燃料循环设施工艺设计中应用的一种原则，即工艺设计必须包含足够的安全特征，使得除非工艺条件同时发生至少两起不太可能且独立的变化，否则不可能发生临界事故。	translated:IAEA-safety-glossary
 single-helical-state	en	A self-organized equilibrium of a reversed-field pinch in which a single dominant helical mode produces a quasi-helical magnetic structure.	corpus
 single-helical-state	zh	反向场箍缩的一种自组织平衡态，其中单一占优螺旋模产生准螺旋磁结构。	corpus
 single-null	en	The standard divertor configuration having a single X-point.	corpus
 single-null	zh	单零位形是只有一个 X 点的标准偏滤器位形。	corpus
 single-phase-flow	en	Flow of a fluid that remains in a single phase.	corpus
 single-phase-flow	zh	单相流是流体始终处于单一相的流动。	corpus
-site-area	zh	聚变/核工程术语，对应英文“site area”。	internal:dict-improvements
-site-area-emergency	zh	聚变/核工程术语，对应英文“site area emergency”。	internal:dict-improvements
-site-boundary	zh	聚变/核工程术语，对应英文“site boundary”。	internal:dict-improvements
-site-characterization	zh	聚变/核工程术语，对应英文“site characterization”。	internal:dict-improvements
-site-confirmation	zh	聚变/核工程术语，对应英文“site confirmation (in the siting process for a disposal facility)”。	internal:dict-improvements
-site-evaluation	zh	聚变/核工程术语，对应英文“site evaluation”。	internal:dict-improvements
-site-personnel	zh	聚变/核工程术语，对应英文“site personnel”。	internal:dict-improvements
-site-response	zh	聚变/核工程术语，对应英文“site (seismic) response”。	internal:dict-improvements
-site-selection	zh	聚变/核工程术语，对应英文“site selection”。	internal:dict-improvements
-site-survey	zh	聚变/核工程术语，对应英文“site survey”。	internal:dict-improvements
-site-verification	zh	聚变/核工程术语，对应英文“site verification”。	internal:dict-improvements
-siting	zh	聚变/核工程术语，对应英文“siting”。	internal:dict-improvements
+site-area	zh	见 区域。	translated:IAEA-safety-glossary
+site-area-emergency	zh	见 应急类别。	translated:IAEA-safety-glossary
+site-boundary	zh	见 厂址区域。	translated:IAEA-safety-glossary
+site-characterization	zh	见 表征。	translated:IAEA-safety-glossary
+site-confirmation	zh	处置设施选址过程的最后阶段，以对优选厂址的详细调查为基础，这些调查提供安全评价所需的厂址特定信息。该阶段包括处置设施设计的最终确定，以及编制许可证申请并提交给监管机构。对于处置设施，厂址确认在厂址表征之后进行。	translated:IAEA-safety-glossary
+site-evaluation	zh	对厂址上可能影响该厂址上设施或活动安全的那些因素的分析。这包括厂址表征、考虑可能影响设施或活动安全特征从而可能导致放射性物质释放和/或可能影响此类物质在环境中弥散的因素，以及与安全相关的人口和通行问题（例如撤离的可行性、人员和资源的位置）。针对某一场址，对可能产生危害的外部事件起因的分析，这些危害对该厂址上建造的核电厂的安全具有潜在后果。对于核电厂，厂址评价通常涉及以下阶段：(a) 厂址选择阶段。在调查广大区域、剔除不适宜厂址并对剩余厂址进行筛选和比较之后，选定一个或多个优选候选厂址。(b) 厂址表征阶段。该阶段进一步划分为：——厂址验证，其中主要依据预先确定的厂址排除准则核实厂址容纳核电厂的适宜性；——厂址确认，其中确定用于分析和详细设计目的所需的厂址特征。(c) 运行前阶段。在设施开始建造之后、开始运行之前，继续开展前几个阶段已开始的研究和调查，以完成并完善厂址特征的评价。所获得的厂址数据可对最终设计中使用的模拟模型作出最终评定。(d) 运行阶段。在设施的整个寿期内开展适当的安全相关厂址评价活动，主要借助监测和定期安全审查。	translated:IAEA-safety-glossary
+site-personnel	zh	在获批准设施的厂址区域内长期或临时工作的所有人员。	translated:IAEA-safety-glossary
+site-response	zh	在规定的地面运动荷载作用下，厂址处岩柱或土柱的行为表现。	translated:IAEA-safety-glossary
+site-selection	zh	见 选址。	translated:IAEA-safety-glossary
+site-survey	zh	见 选址。	translated:IAEA-safety-glossary
+site-verification	zh	见 厂址评价。	translated:IAEA-safety-glossary
+siting	zh	为设施选择适宜厂址的过程，包括对相关设计基准的适当评价和确定。核装置的选址过程一般包括厂址勘测和厂址选择。厂址勘测。在调查广大区域并剔除不适宜厂址之后，确定核装置候选厂址的过程。厂址选择。在安全和其他考虑的基础上，通过筛选和比较对剩余厂址进行评价，以选定一个或多个优选候选厂址的过程。另见厂址评价。处置设施的选址过程对其长期安全尤为关键；因此它可能是一个格外繁复的过程，并分为以下阶段：——概念与规划；——区域勘测；——厂址表征；——厂址确认。选址、设计、建造、调试、运行和退役这些术语通常用于界定获批准设施寿期及相应许可过程的六个主要阶段。在放射性废物处置设施的特殊情形下，该序列中的退役由关闭替代。	translated:IAEA-safety-glossary
 size-scaling	en	The scaling of confinement with device size.	corpus
 size-scaling	zh	尺寸标度是约束性能随装置尺寸的标度关系。	corpus
-sl-1-sl-2	zh	聚变/核工程术语，对应英文“SL-1, SL-2”。	internal:dict-improvements
+sl-1-sl-2	zh	设施设计基准中考虑的（代表地震潜在影响的地面运动）水准。SL-1 对应比 SL-2 较轻、可能性较大的地震。在一些国家，SL-1 对应每年超越概率为 10–2 的水准，SL-2 对应每年超越概率为 10–4 的水准。	translated:IAEA-safety-glossary
 slow-wave	en	The slow electrostatic wave branch in the lower hybrid range.	corpus
 slow-wave	zh	慢波是低杂波范围内的慢静电波支。	corpus
-small-freight-container	zh	聚变/核工程术语，对应英文“small freight container”。	internal:dict-improvements
+small-freight-container	zh	见 货运容器。	translated:IAEA-safety-glossary
 snowflake-divertor	en	An advanced divertor whose second-order null point splits the heat flux.	corpus
 snowflake-divertor	zh	雪花偏滤器是二阶零点使热流分裂的先进偏滤器。	corpus
 social-license	en	The informal acceptance by local communities and the public for siting and operating a fusion facility.	corpus
 social-license	zh	社会许可：当地社区与公众对聚变设施选址与运行的接受。	corpus
 software-dependency	en	A dependency on an external software package, not a physical dependency.	corpus
 software-dependency	zh	软件依赖是对外部软件包的依赖，而非物理依赖。	corpus
-somatic-effect	zh	聚变/核工程术语，对应英文“somatic effect”。	internal:dict-improvements
-sorption	zh	聚变/核工程术语，对应英文“sorption”。	internal:dict-improvements
-source	zh	聚变/核工程术语，对应英文“source”。	internal:dict-improvements
+somatic-effect	zh	见 健康效应。	translated:IAEA-safety-glossary
+sorption	zh	原子、分子或粒子与固–液或固–气界面处固体表面的相互作用。在放射性核素迁移语境中用于描述孔隙水或地下水中放射性核素与土壤或母岩的相互作用，以及地表水体中放射性核素与悬浮泥沙和床沙的相互作用。一个通用术语，包括吸收（主要发生在固体孔隙内的相互作用）和吸附（发生在固体表面上的相互作用）。所涉及的过程也可划分为化学吸附（与基质形成化学键合）和物理吸附（物理吸引，例如借助弱静电力）。在实践中，吸着有时可能难以与影响迁移的其他因素（例如过滤或弥散）相区分。	translated:IAEA-safety-glossary
+source	zh	1. 任何可能引起辐射照射的事物——例如通过发射电离辐射，或通过释放放射性物质或放射性物质——并且为防护与安全的目的可作为单一实体对待。例如，释放氡的物料是环境中的源；用于灭菌的伽马辐照装置是食品辐照保藏和其他产品灭菌实践的源；X 射线装置可以是放射诊断实践的源；核电厂属于利用核裂变发电的实践的一部分，可被视为一个源（例如就向环境的排放而言），或被视为源的集合（例如就职业辐射防护目的而言）。位于同一地点或厂址的复杂设施或多个设施，可酌情视为单一源，以便适用安全标准。天然源（natural source）。天然存在的辐射源，例如太阳和恒星（宇宙辐射源）以及岩石和土壤（陆地辐射源），或任何其他其放射性实际上完全仅由天然来源放射性核素所致的物料，例如矿物加工的产品或残余物；但不包括供核设施使用的放射性物质和在核设施中产生的放射性废物。天然源的例子包括与原料（例如给料、中间产品、最终产品、副产品、废物）加工相关的天然存在放射性物质（NORM）。辐射发生器（radiation generator）。能够产生电离辐射（例如 X 射线、中子、电子或其他带电粒子）并可用于科学、工业或医疗目的的装置。辐射源（radiation source）。[辐射发生器，或研究堆和动力堆核燃料循环之外的放射源或其他放射性物质。] ！该定义见于 2001 年版《放射源安全与保安行为准则》，但未纳入 2004 年版（见参考文献 [14]）。2. 用作辐射源的放射性物质。例如用于医学应用或工业仪表中的那些源。当然，这些也是 (1) 中所定义的源，但 (2) 中的这种用法较为狭义。危险源（dangerous source）。一种源，若不受控制，可能引起足以造成严重确定性效应的照射。该分类用于确定对应急安排的需求，不应与其他目的的源分类相混淆。危险源一词与参考文献 [55] 中建议的放射性物质危险量（D 值）相关。废弃源（disused source）。不再使用、也不打算用于其已获批准的实践的一种放射源。（见参考文献 [14]。）！废弃源仍可能构成重大辐射危害。它与乏源的区别在于它可能仍能执行其功能：它可能只是因为不再需要而被弃用。《乏燃料管理安全和放射性废物管理安全联合公约》[5] 提到“废弃密封源”，但未对其作出定义。废弃密封源（disused sealed source）。一种放射源，其所含放射性物质永久密封在包壳中或紧密固结为固体形态（不包括反应堆燃料元件），且不再使用、也不打算用于其已获批准的实践。该定义系依据废弃源的定义（见上文）和密封源的定义（见下文）给出。无主源（orphan source）。不受监管控制的放射源，其原因或为从未处于监管控制之下，或为已被遗弃、丢失、错放、被盗或以其他未经正当授权的方式转移。（见参考文献 [14]。）放射源 1. 含有用作辐射源的放射性物质的源。2. [永久密封在包壳中或紧密固结为固体形态、且不免于监管控制的放射性物质。这还包括放射源发生泄漏或破损时释放的任何放射性物质，但不包括为处置而封装的物料，也不包括研究堆和动力堆核燃料循环内的核材料。]（见参考文献 [14]。）！该定义专属于《放射源安全与保安行为准则》[14]。密封源（sealed source）。一种放射源，其中的放射性物质 (a) 永久密封在包壳中，或 (b) 紧密固结为固体形态。《乏燃料管理安全和放射性废物管理安全联合公约》的定义 [5] 是 (a) 永久密封在包壳中或 (b) 紧密固结为固体形态的放射性物质，不包括反应堆燃料元件。在放射性物质运输语境中使用的“特殊形式放射性物质”一词，其含义基本相同。废弃密封源：见源（source）之废弃源。乏源（spent source）。因放射性衰变而不再适于其预期用途的源。！乏源仍可能构成辐射危害。非密封源（unsealed source）。其放射性物质既非 (a) 永久密封在包壳中，也非 (b) 紧密固结为固体形态的放射源。易受侵害源（vulnerable source）。其控制不足以就长期安全和保安提供保证，从而可能相对容易被未经授权人员获取的放射源。	translated:IAEA-safety-glossary
 source-convergence	en	Convergence of the fission source distribution.	corpus
 source-convergence	zh	源收敛指裂变源分布的收敛。	corpus
-source-material	zh	聚变/核工程术语，对应英文“source material”。	internal:dict-improvements
-source-monitoring	zh	聚变/核工程术语，对应英文“source monitoring”。	internal:dict-improvements
-source-region	zh	聚变/核工程术语，对应英文“source region”。	internal:dict-improvements
+source-material	zh	含天然存在的同位素混合物的铀；贫化同位素 235 的铀；钍；上述任何物质以金属、合金、化合物或浓缩物形式存在者；含有上述一种或多种物质且其浓度由[IAEA]理事会不时确定的任何其他材料；以及[IAEA]理事会不时确定的其他此类材料。（见参考文献 [44]。）另见核材料。	translated:IAEA-safety-glossary
+source-monitoring	zh	见 监测。	translated:IAEA-safety-glossary
+source-region	zh	体内含一种或多种放射性核素的区域。用于内照射剂量学；例如用于对靶组织产生照射的放射性核素。	translated:IAEA-safety-glossary
 source-term	zh	聚变/核工程术语，指“源项”这一技术概念。	internal:dict-improvements
-special-arrangement	zh	聚变/核工程术语，对应英文“special arrangement”。	internal:dict-improvements
-special-facility	zh	聚变/核工程术语，对应英文“special facility”。	internal:dict-improvements
-special-fissionable-material	zh	聚变/核工程术语，对应英文“special fissionable material”。	internal:dict-improvements
-special-form-radioactive-material	zh	聚变/核工程术语，对应英文“special form radioactive material”。	internal:dict-improvements
+special-arrangement	zh	经主管部门批准的那些规定，据此可运输不满足[《运输》规章]所有适用要求的托运货物。（见 SSR-6 (Rev. 1) [2]。）	translated:IAEA-safety-glossary
+special-facility	zh	一种设施，在发生核或辐射应急时，若其所在地区被下令采取紧急防护行动，则需对该设施采取预先确定的设施特定行动。例子包括：在采取某些防止火灾或爆炸的行动之前无法撤离的化工厂，以及为维持电话服务而必须有人在岗的电信中心。这未必是“设施和活动”一语所指意义上的设施。	translated:IAEA-safety-glossary
+special-fissionable-material	zh	见 核材料。	translated:IAEA-safety-glossary
+special-form-radioactive-material	zh	不易弥散的固态放射性物质，或装有放射性物质的密封包壳。（见 SSR-6 (Rev. 1) [2]。）	translated:IAEA-safety-glossary
 special-monitoring	zh	聚变/核工程术语，对应英文“special monitoring”。	internal:dict-improvements
 special-population-group	zh	聚变/核工程术语，对应英文“special population group”。	internal:dict-improvements
 spectral-transfer	en	Turbulent energy cascade transfer in wavenumber space.	corpus
