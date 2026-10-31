@@ -981,7 +981,7 @@ BOUNDARY
 | T0.0 | 2026-10-31 | — | 1 | BASE=`3034dce`（计划入库后重测）；`red-selftest.txt` = `19/24 assertions passed` exit 1；`validate_exit=0`；`w3.ids`=854；工作区仅 `?? iaea_fusion.html` |
 | T0.1 | 2026-10-31 | `5735da8` | 0 | self-test `24/24`；`--mode names … --expect 854` PASS；ruff ok；变异证明 删 index 3 → `19/24`、删 en 恢复 → `21/24`；`/tmp` 无残留副本（`ls /tmp \| grep -c t0_2_selftest_restored_` = 0） |
 | T0.2 | 2026-10-31 | `a9c8201` | 0 | self-test `27/27`；evidence RED：exit 1、`evidence_quote_empty` 854 条、**`probes=1`**（基线唯一 URL 只有 ITER 一个，782 条 IAEA 行为裸名）；无 `--ids-file` → exit 2 + `requires --ids-file`；真实探测 IAEA 200(0.80s)/ITER 200(1.11s)；ruff ok；变异证明：裸名+非空 quote → `evidence_source_not_url`、404 → `evidence_url_status`、删去重 → `probes=72` + `evidence_probe_dedup` |
-| T0.3 | | — | | |
+| T0.3 | 2026-10-31 | — | 0 | 只写 `/tmp/opencode/t5072/`；`w3.ids` 854 / `w3_placeholder.ids` 747；行型 **DEFINITION 431 / CROSS_REF 300 / CORRUPT 16**（交叉引用族 316）；解析 **direct 248 / ledger 68 / NO-TARGET 29**；`sha256sum -c manifests.sha256` exit 0；`comm` 差集 0；变异（删 BODY 判据）→ `(431, 316, 0)` 断言失败 |
 | T1.0 | | — | | |
 | T1.1–T1.5 | | | | |
 | T1.6 | | — | | |
