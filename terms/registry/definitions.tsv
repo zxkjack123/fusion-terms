@@ -4825,20 +4825,20 @@ multiplexing	zh	在单一数据信道上发送和接收两路或多路信号或�
 multiplicative-risk-projection-model	zh	见 风险预测模型。	translated:IAEA-safety-glossary
 muon-catalyzed-fusion	en	Low-temperature fusion mediated by muons that replace the electrons of the fuel molecules.	corpus
 muon-catalyzed-fusion	zh	由 μ 子替代燃料分子中的电子而实现的低温聚变。	corpus
-natural-analogue	zh	聚变/核工程术语，对应英文“natural analogue”。	internal:dict-improvements
-natural-background	zh	聚变/核工程术语，对应英文“natural background”。	internal:dict-improvements
+natural-analogue	zh	自然界中存在的一种情境，用作影响人造系统的诸过程的模型。使用天然类比可以得出结论，这些结论有助于对现有或规划中的核设施的安全性作出判断。特别是，含有放射性核素、且其极长时间尺度上的迁移历史可供分析的矿床，可用作天然类比，其结果可用于对这些或类似放射性核素在长时间尺度上在地质圈中潜在行为的建模。	translated:IAEA-safety-glossary
+natural-background	zh	见 本底。	translated:IAEA-safety-glossary
 natural-convection	en	Fluid flow that is driven by buoyancy forces.	corpus
 natural-convection	zh	自然对流是由浮力驱动的流体流动。	corpus
-natural-source	zh	聚变/核工程术语，对应英文“natural source”。	internal:dict-improvements
-natural-uranium	zh	聚变/核工程术语，对应英文“natural uranium”。	internal:dict-improvements
-naturally-occurring-radioactive-material	zh	聚变/核工程术语，对应英文“naturally occurring radioactive material (NORM)”。	internal:dict-improvements
-naturally-occurring-radionuclides	zh	聚变/核工程术语，对应英文“naturally occurring radionuclides”。	internal:dict-improvements
+natural-source	zh	见 源。	translated:IAEA-safety-glossary
+natural-uranium	zh	见 铀。	translated:IAEA-safety-glossary
+naturally-occurring-radioactive-material	zh	除天然放射性核素外不含显著数量其他放射性核素的放射性物质。「显著数量」的确切定义属于监管决定。其天然放射性核素的活度浓度已因某种过程而改变的物质，纳入天然放射性物质（NORM）之列。除非明确指涉各种不同的物质，天然放射性物质或 NORM 应使用单数形式。	translated:IAEA-safety-glossary
+naturally-occurring-radionuclides	zh	见 天然来源放射性核素。	translated:IAEA-safety-glossary
 nbtf	zh	在位于意大利帕多瓦（Padua）的 Consorzio RFX 中性束测试设施（NBTF）中，ITER 中性束注入将在投入运行之前，在两个试验台上进行测试：SPIDER（一个 ITER-尺度的负离子源）和 MITICA（一台全尺寸的 ITER 中性束注入器）。参见该 ITER 网页。	translated:ITER-glossary
 nbti-conductor	zh	铌钛超导导体，指由铌钛化合物制成的柔性超导体，适用于在 4.5 K 的氦冷却剂条件下使用至 10T。	translated:ITER-glossary
-near-field	zh	聚变/核工程术语，对应英文“near field”。	internal:dict-improvements
-near-miss	zh	聚变/核工程术语，对应英文“near miss”。	internal:dict-improvements
+near-field	zh	处置设施中与废物包邻近或与之相接触的开挖区域，包括填充或密封材料，以及其特性已经或可能因该处置设施或其内容物而改变的主体介质／岩石的相应部分。另见远场。	translated:IAEA-safety-glossary
+near-miss	zh	本可能由一系列实际发生的事件连锁导致、但因当时的条件而未发生的潜在重要事件。另见事件、意外事件和安全。	translated:IAEA-safety-glossary
 near-surface-disposal	zh	聚变/核工程术语，指“近地表处置”这一技术概念。	internal:dict-improvements
-near-surface-disposal-facility	zh	聚变/核工程术语，对应英文“near surface disposal facility”。	internal:dict-improvements
+near-surface-disposal-facility	zh	见 处置设施。	translated:IAEA-safety-glossary
 negative-triangularity	en	Plasma shaping with an inward-pointing D-shape, showing improved confinement.	corpus
 negative-triangularity	zh	负三角形变是呈向内指向 D 形并显示约束改善的等离子体位形。	corpus
 neoclassical-impurity-transport	en	Collision-driven inward or outward impurity transport.	corpus
@@ -4872,34 +4872,34 @@ no-insulation-coil	en	An HTS coil wound without turn-to-turn insulation so that 
 no-insulation-coil	zh	无绝缘线圈：为自保护而不设匝间绝缘绕制的 HTS 线圈。	corpus
 non-evaporable-getter	en	A solid getter material that is reused by activation through heating (Ti-Zr-V alloy).	corpus
 non-evaporable-getter	zh	非蒸散型吸气剂是通过加热活化反复使用的固体吸气材料（Ti-Zr-V 合金）。	corpus
-non-fixed-contamination	zh	聚变/核工程术语，对应英文“non-fixed contamination”。	internal:dict-improvements
+non-fixed-contamination	zh	见 污染。	translated:IAEA-safety-glossary
 non-inductive-operation	en	Operation in which the plasma current is sustained by external current drive and by the bootstrap current.	corpus
 non-inductive-operation	zh	由外部电流驱动和自举电流维持等离子体电流的运行方式。	corpus
-non-physical-ageing	zh	聚变/核工程术语，对应英文“non-physical ageing”。	internal:dict-improvements
-non-radiological-consequences	zh	聚变/核工程术语，对应英文“non-radiological consequences”。	internal:dict-improvements
+non-physical-ageing	zh	见 老化。	translated:IAEA-safety-glossary
+non-radiological-consequences	zh	核或放射紧急情况、或应急响应所产生的，影响人的生命、健康、财产或环境的不利心理、社会或经济后果。该定义仅与应急准备和响应有关 [15]。[非随机性效应] 见健康效应（辐射的）：确定性效应：严重确定性效应。	translated:IAEA-safety-glossary
 non-thermal-plasma	en	Plasma whose ion velocity distribution is non-Maxwellian, which is relevant to the p-B11 reactivity.	corpus
 non-thermal-plasma	zh	离子速度分布偏离麦克斯韦分布的等离子体，与 p-B11 反应率相关。	corpus
 nonlinear-coupling	en	Nonlinear interaction between different modes or scales.	corpus
 nonlinear-coupling	zh	非线性耦合是不同模式或尺度之间的非线性相互作用。	corpus
-norm	zh	聚变/核工程术语，对应英文“NORM”。	internal:dict-improvements
-norm-residue	zh	聚变/核工程术语，对应英文“NORM residue”。	internal:dict-improvements
-norm-waste	zh	聚变/核工程术语，对应英文“NORM waste”。	internal:dict-improvements
-normal-operation	zh	聚变/核工程术语，对应英文“normal operation”。	internal:dict-improvements
-notification	zh	聚变/核工程术语，对应英文“notification”。	internal:dict-improvements
-notification-point	zh	聚变/核工程术语，对应英文“notification point”。	internal:dict-improvements
-notifying-state	zh	聚变/核工程术语，对应英文“notifying State”。	internal:dict-improvements
+norm	zh	见 naturally occurring radioactive material。	translated:IAEA-safety-glossary
+norm-residue	zh	来自某一过程、且含有天然放射性物质（NORM）或被其污染的残留物料。NORM 残留物可能是废物，也可能不是废物。	translated:IAEA-safety-glossary
+norm-waste	zh	见 waste。	translated:IAEA-safety-glossary
+normal-operation	zh	见 电厂状态。	translated:IAEA-safety-glossary
+notification	zh	1. 由个人或组织提交给监管机构的文件，用以通报打算实施某项实践或以其他方式使用某个源的意向。这包括托运人按《运输条例》[2] 第 V 节的要求，就某批货物将过境或进入其国家一事向有关主管机构作出的通报。2. 迅速提交给国家或国际当局、详细说明已发生的紧急情况或可能发生的紧急情况的报告；例如《及早通报核事故公约》[7] 所要求者。3. 在发现紧急情况后为向所有负有应急响应责任的组织发出警报而采取的一整套行动。	translated:IAEA-safety-glossary
+notification-point	zh	经指定并已作出安排的组织，负责接收通报（含义 (3)）并及时启动预定行动，以激活应急响应的某一部分。	translated:IAEA-safety-glossary
+notifying-state	zh	负责就具有实际、潜在或被感知放射性意义的事件，向可能受影响的国家和 IAEA 进行通报（见通报 (2)）的国家。这包括：(a) 依照《及早通报核事故公约》[7] 第 1 条，对设施或活动（包括空间物体）拥有管辖权或控制权的缔约国；(b) 最初探测到或发现跨国紧急情况证据的国家，例如通过下列方式：探测到来源不明的大气辐射水平显著升高；在跨境货运中探测到污染；发现可能源自另一国家的危险源；或诊断出可能由本国境外照射所致的临床症状。	translated:IAEA-safety-glossary
 nth-of-a-kind	en	The steady-state cost baseline for series production.	corpus
 nth-of-a-kind	zh	第N台堆是批量化生产情况下的稳态成本基线。	corpus
 ntv	en	A plasma braking torque arising from non-axisymmetric magnetic fields.	corpus
 ntv	zh	新经典环向粘滞是由非轴对称磁场引起的等离子体制动转矩。	corpus
-nuclear	zh	聚变/核工程术语，对应英文“nuclear”。	internal:dict-improvements
-nuclear-accident	zh	聚变/核工程术语，对应英文“nuclear accident”。	internal:dict-improvements
+nuclear	zh	严格而言：与原子核有关的；与核裂变或核聚变中释放的能量有关的，或使用该能量的（形容词）。注意：形容词「nuclear」在许多短语中用来修饰它无法在逻辑上修饰的名词。必须记住，此类短语的含义可能并不清楚（与 nuclear 一词本身相对照）。注意：这些短语因此可能需要加以解释，其用法也可能易于被误解、误述或误译。注意：此类短语包括：核事故；核共同体；核紧急情况；核设施；核燃料；核事件；核装置；核材料；核医学；（a）核动力；核安全；以及核安保。	translated:IAEA-safety-glossary
+nuclear-accident	zh	见 事故。	translated:IAEA-safety-glossary
 nuclear-data-library	en	A collection of evaluated nuclear data files, such as ENDF and JEFF.	corpus
 nuclear-data-library	zh	核数据库是评估核数据文件的集合，如 ENDF、JEFF。	corpus
-nuclear-emergency	zh	聚变/核工程术语，对应英文“nuclear emergency”。	internal:dict-improvements
-nuclear-facility	zh	聚变/核工程术语，对应英文“nuclear facility”。	internal:dict-improvements
-nuclear-fuel	zh	聚变/核工程术语，对应英文“nuclear fuel”。	internal:dict-improvements
-nuclear-fuel-cycle	zh	聚变/核工程术语，对应英文“nuclear fuel cycle”。	internal:dict-improvements
+nuclear-emergency	zh	见 应急。	translated:IAEA-safety-glossary
+nuclear-facility	zh	1. 在其中生产、加工、使用、处理、贮存或处置核材料的设施（包括相关建筑物和设备）。亦称核燃料循环设施。另见设施与活动和核装置。2. [在其中生产、加工、使用、处理、贮存或处置核材料的设施（包括相关建筑物和设备），条件是若对该设施造成损坏或对之加以干扰可能导致大量辐射或放射性物质的释放。]（见参考文献 [40–43]。）注意：这一用法专用于经修订的《核材料与核设施实物保护公约》[40–43]，仅为该公约之目的，在其他场合适用应予避免。《核材料与核设施实物保护公约》的最后文件于 2005 年七月 8 日获得核准。3. [「民用设施及其相关土地、建筑物和设备，在其中以需要考虑安全的规模生产、加工、使用、处理、贮存或处置放射性物质」。]（引自参考文献 [5]。）注意：这一用法专用于《乏燃料管理安全和放射性废物管理安全联合公约》[5]，仅为该联合公约之目的，在其他场合适用应予避免。与获授权设施基本同义，因而比核装置更为宽泛。请注意，这与保障监督术语不同，在保障监督术语中 installation 比 facility 更为宽泛。	translated:IAEA-safety-glossary
+nuclear-fuel	zh	呈制成元件形态、用以装入民用核动力厂或研究堆反应堆堆芯的可裂变核材料。新燃料。新燃料或未辐照燃料，包括由对先前已辐照燃料进行后处理所回收的可裂变材料制成的燃料。	translated:IAEA-safety-glossary
+nuclear-fuel-cycle	zh	与核能生产相关的全部作业。核燃料循环中与核能生产相关的作业包括下列各项：（a）铀矿石或钍矿石的开采与加工；（b）铀的浓缩；（c）核燃料的制造；（d）核反应堆（包括研究堆）的运行；（e）乏燃料的后处理；（f）与核能生产相关作业有关的一切废物管理活动（包括退役）；（g）任何相关的研究与开发活动。闭式核燃料循环。铀的开采、加工、转化、浓缩，核燃料制造，反应堆运行，发电或其他能源产品生产，为回收裂变材料而进行的后处理，后处理裂变材料的贮存，（对高放射性裂变产物的）处置，以及所有废物的最终终态。开式核燃料循环。铀的开采、加工、转化、浓缩，核燃料制造，反应堆运行，发电或其他能源产品生产，乏燃料的贮存，处置，以及所有废物的最终终态。	translated:IAEA-safety-glossary
 nuclear-fuel-cycle-facility	zh	聚变/核工程术语，对应英文“nuclear fuel cycle facility”。	internal:dict-improvements
 nuclear-fusion	en	Nuclear fusion in the most general sense.	corpus
 nuclear-fusion	zh	核聚变指最一般意义上的核聚变。	corpus
