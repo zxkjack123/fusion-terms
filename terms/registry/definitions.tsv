@@ -3980,11 +3980,11 @@ detachment-front	en	The spatial boundary of the detached radiating region above 
 detachment-front	zh	脱靶前沿是偏滤器靶板上方脱靶辐射区的空间边界。	corpus
 detection-limit	zh	见 最小可探测活度。	translated:IAEA-safety-glossary
 determination-level	zh	见 最小可探测活度。	translated:IAEA-safety-glossary
-deterministic-analysis	zh	聚变/核工程术语，对应英文“deterministic analysis”。	internal:dict-improvements
-deterministic-effect	zh	聚变/核工程术语，对应英文“deterministic effect”。	internal:dict-improvements
+deterministic-analysis	zh	对关键参数采用单一数值（视其概率为 1）、并由此得到单一结果值的分析。就核装置安全而言，例如这意味着聚焦于事故类型、放射性物质释放及后果，而不考虑不同事件序列的概率。通常采用基于专家判断和对所模拟现象的认识的“最佳估算”值或“保守”值。对照术语：概率分析或随机分析。参见概率分析。	translated:IAEA-safety-glossary
+deterministic-effect	zh	见 健康效应。	translated:IAEA-safety-glossary
 deterministic-safety-analysis	en	Safety analysis that uses bounding assumptions for postulated events.	corpus
 deterministic-safety-analysis	zh	确定论安全分析：对假想事件采用包络假设开展的安全分析。	corpus
-detriment	zh	聚变/核工程术语，对应英文“detriment”。	internal:dict-improvements
+detriment	zh	见 辐射危害。	translated:IAEA-safety-glossary
 detritiation	en	Removal of tritium from gas, water, or solid process streams.	corpus
 detritiation	zh	从气体、水或固体工艺流中脱除氚。	corpus
 deuterium	zh	聚变/核工程术语，指“氘”这一技术概念。	internal:dict-improvements
@@ -3993,13 +3993,13 @@ deuterium-processing	zh	氘处理是燃料循环氘侧的处理环节。	corpus
 deuterium-tritium	en	The mixture of deuterium and tritium used as the primary fusion fuel.	corpus
 deuterium-tritium	zh	氘氚是作为主要聚变燃料使用的氘与氚混合物。	corpus
 deuterium-tritium-reactions	zh	氘氚聚变反应，指氢的两种同位素氘与氚的原子核之间通过核聚变释放能量的反应，产物为氦核与中子。	translated:ITER-glossary
-deviation	zh	聚变/核工程术语，对应英文“deviation”。	internal:dict-improvements
+deviation	zh	偏离规定要求。	translated:IAEA-safety-glossary
 device	en	An object or a piece of equipment that has been designed to do a particular job.	https://www.oxfordlearnersdictionaries.com/definition/english/device
 device	zh	装置是为完成特定工作而设计制造的物体或设备。	https://www.oxfordlearnersdictionaries.com/definition/english/device
-diagnostic-exposure	zh	聚变/核工程术语，对应英文“diagnostic exposure”。	internal:dict-improvements
+diagnostic-exposure	zh	见 医疗照射。	translated:IAEA-safety-glossary
 diagnostic-port	en	A port that integrates diagnostic systems.	corpus
 diagnostic-port	zh	诊断端口是集成诊断系统的端口。	corpus
-diagnostic-reference-level	zh	聚变/核工程术语，对应英文“diagnostic reference level”。	internal:dict-improvements
+diagnostic-reference-level	zh	见 水平。	translated:IAEA-safety-glossary
 diagnostics	zh	聚变/核工程术语，对应英文“Diagnostics”。	internal:dict-improvements
 diamagnetic-drift	en	Fluid drift driven by a pressure gradient.	corpus
 diamagnetic-drift	zh	抗磁漂移是由压力梯度驱动的流体漂移。	corpus
@@ -4007,32 +4007,32 @@ diamond-window	en	A vacuum window for ECRH microwave transmission made of CVD di
 diamond-window	zh	金刚石窗口是 CVD 金刚石材料的 ECRH 微波传输真空窗口（低损耗/高功率）。	corpus
 dielectric-wall-accelerator	en	Compact pulsed ion accelerator concept intended for beam-driven fusion.	corpus
 dielectric-wall-accelerator	zh	面向束驱动聚变的紧凑型脉冲离子加速器方案。	corpus
-diffusion	zh	聚变/核工程术语，对应英文“diffusion”。	internal:dict-improvements
+diffusion	zh	放射性核素相对于其所分布介质的运动，在浓度梯度作用下发生。通常用于描述气载放射性核素（例如来自排放或由事故所致者）相对于空气的运动，以及溶解态放射性核素（例如在地下水或地表水中，来自废物处置后的迁移，或地表水中来自排放者）相对于水的运动。参见平流（此时放射性核素并不相对于载带介质运动，而是随其一起运动）和弥散。	translated:IAEA-safety-glossary
 diffusion-equation	en	A simplified form of the neutron transport equation.	corpus
 diffusion-equation	zh	扩散方程是中子输运方程的简化形式。	corpus
 digital-engineering	en	A model-based engineering approach that uses integrated digital models for plant design and lifecycle management.	corpus
 digital-engineering	zh	数字工程：以集成数字模型开展电站设计与全寿期管理的模型化工程方法。	corpus
 digital-twin	en	A real-time digital simulation mirror of a fusion device.	corpus
 digital-twin	zh	数字孪生是聚变装置的实时数字化仿真镜像。	corpus
-direct-cause	zh	聚变/核工程术语，对应英文“direct cause”。	internal:dict-improvements
-direct-disposal	zh	聚变/核工程术语，对应英文“direct disposal”。	internal:dict-improvements
+direct-cause	zh	见 原因。	translated:IAEA-safety-glossary
+direct-disposal	zh	见 处置。	translated:IAEA-safety-glossary
 direct-energy-conversion	en	Conversion of the kinetic energy of charged particles into electricity without an intermediate thermal cycle.	corpus
 direct-energy-conversion	zh	不经中间热循环而将带电粒子动能直接转换为电能。	corpus
 direct-internal-recycling	en	Recovery and reinjection of unburned fuel directly from the exhaust.	corpus
 direct-internal-recycling	zh	直接内循环：直接从排气中回收未燃尽燃料并回注。	corpus
-directional-dose-equivalent	zh	聚变/核工程术语，对应英文“directional dose equivalent”。	internal:dict-improvements
-discharge	zh	聚变/核工程术语，对应英文“discharge”。	internal:dict-improvements
+directional-dose-equivalent	zh	见 剂量当量实用量。	translated:IAEA-safety-glossary
+discharge	zh	1. 有计划且受控地将（通常为气态或液态的）放射性物质释放到环境。严格而言，指释放放射性物质的行为或过程，但也用于指所释放的放射性物质。授权排放。按照授权进行的排放。放射性排放物。源自设施与活动范围内源项、以气体、气溶胶、液体或固体形式排放到环境的放射性物质，其目的一般是稀释和弥散。2. [作为一项正当实践，在监管机构所授权的限值内，将受监管核设施正常运行期间产生的液态或气态放射性物质有计划且受控地释放到环境。]（见参考文献 [5]。）	translated:IAEA-safety-glossary
 dislocation	en	A line defect in the crystal lattice of a material.	corpus
 dislocation	zh	位错是材料晶格中的线缺陷。	corpus
-dismantling	zh	聚变/核工程术语，对应英文“dismantling”。	internal:dict-improvements
+dismantling	zh	见 退役。	translated:IAEA-safety-glossary
 dispatchable	en	A power source whose output can be controlled on demand.	corpus
 dispatchable	zh	可调度电源：输出可按需控制的电源。	corpus
-dispersal	zh	聚变/核工程术语，对应英文“dispersal”。	internal:dict-improvements
-dispersion	zh	聚变/核工程术语，对应英文“dispersion”。	internal:dict-improvements
-disposal	zh	聚变/核工程术语，对应英文“disposal”。	internal:dict-improvements
-disposal-facility	zh	聚变/核工程术语，对应英文“disposal facility”。	internal:dict-improvements
-disposal-system	zh	聚变/核工程术语，对应英文“disposal system”。	internal:dict-improvements
-disposition	zh	聚变/核工程术语，对应英文“disposition”。	internal:dict-improvements
+dispersal	zh	放射性物质在环境中的散布。在通常用语中与弥散同义，但倾向于作一般性使用，不意味涉及任何特定过程或现象，例如物质从包容中逸出后的失控扩散，或因密封源、特殊形式放射性物质或低弥散放射性物质受损（或被破坏）而造成的散布。	translated:IAEA-safety-glossary
+dispersion	zh	放射性核素在空气（空气动力弥散）或水（水动力弥散）中的散布，主要由影响介质中不同分子速度的物理过程造成。常作更广义使用，泛指导致羽流散布的所有过程（包括分子扩散）。大气弥散和水动力弥散这两个术语即按此更广义的含义，分别用于空气中和水中的羽流。在通常用语中与散布同义，但弥散多按上文所定义的更具体含义使用，而散布通常（虽非普遍）用作更一般的表述。参见平流和扩散。	translated:IAEA-safety-glossary
+disposal	zh	1. 将废物置入适当设施而不打算回取。在一些国家，处置一词被用来涵盖向环境排放流出物。在一些国家，处置一词在管理上的用法宽泛到例如涵盖废物的焚烧或废物在运营者之间的转移。! 在 IAEA 出版物中，处置只应按照上文给出的较严格定义使用。! 在许多情况下，本定义中唯一重要的要素是处置（无意回取）与贮存（有意回取）之间的区分。在此类情况下，不必给出定义；可在首次使用处置或贮存一词时以脚注形式作出区分（例如：“使用‘处置’一词表明无意回取废物。若打算在将来任何时候回取废物，则使用‘贮存’一词。”）。! 处置一词意味着不打算回取，且要重新接近该废物需采取刻意行动；它并不意味着不可能回取。对于贮存与处置合一的设施，可能在其关闭时决定：是将贮存设施运行期间贮存的废物移走，还是将其浇注于混凝土中予以处置；此时回取意图的问题可留待设施关闭时再定。与贮存相对照。直接处置。将乏燃料作为废物处置。地质处置。在地质处置设施中处置。参见处置库。“中等深度处置”一词有时用于低放废物和中放废物的处置，例如在钻孔中（即介于近地表处置与地质处置之间）。近地表处置。在近地表处置设施中，在工程覆盖层之下、带或不带附加工程屏障的处置。海床下处置。在海床之下岩层中的地质处置设施中处置。2. [将乏燃料或放射性废物置入适当设施而不打算回取。]（见参考文献 [5]。）3. 不打算回取而将废物清除的行为或过程。深海处置和海底处置这两个术语并不严格符合定义（1）或（2），但与处置的日常含义一致，并如此使用。深海处置。将装在容器中的废物包置于深海海底的处置。! 常用但不正式的“海洋倾倒”一词不应在 IAEA 出版物中使用。截至 1982 年，曾按《1972 年伦敦公约》[16] 的要求实施该做法。海底处置。将装在合适容器中的废物置入深海海底沉积层中一定深度。这可以通过直接置入实现，也可以将废物装入专门设计的“穿透器”，在投入海中时自行嵌入沉积物中实现。	translated:IAEA-safety-glossary
+disposal-facility	zh	将废物置入其中进行处置的工程设施。与处置库同义。处置系统。指处置设施场址的特性、处置设施的设计、实体构筑物与物项、控制程序、废物特性以及其他要素所构成的系统，这些要素以不同方式并在不同时间尺度上对处置安全功能的履行作出贡献。地质处置设施。位于地下（通常在地表以下数百米或更深）、处于稳定地质建造中、用以使放射性核素长期隔离于生物圈的放射性废物处置设施。近地表处置设施。位于地球表面或地表数十米以内的放射性废物处置设施。在带工程覆盖层的近地表处置设施中处置废物的做法，也称为废物的“浅地层埋藏”。	translated:IAEA-safety-glossary
+disposal-system	zh	见 处置设施。	translated:IAEA-safety-glossary
+disposition	zh	将放射性废物发运至或安排发运至某一指定的（中间或最终）去向，例如以处理、处置或贮存为目的。	translated:IAEA-safety-glossary
 disruption-erosion	en	Severe wall erosion during plasma disruption events.	corpus
 disruption-erosion	zh	破裂侵蚀是等离子体破裂事件中的严重壁侵蚀。	corpus
 disruption-force	en	Transient electromagnetic loads on in-vessel components caused by the rapid current decay of a disruption.	corpus
@@ -4043,9 +4043,9 @@ disruption-prediction	en	Early warning of plasma disruptions based on machine-le
 disruption-prediction	zh	基于机器学习或物理模型的等离子体破裂早期预警。	corpus
 disruption-runaway	en	Relativistic electrons generated during the current quench phase of a disruption, which can damage PFCs.	corpus
 disruption-runaway	zh	破裂逃逸电子：破裂电流淬灭阶段产生的、可能损伤面向等离子体部件的相对论电子。	corpus
-disused-sealed-source	zh	聚变/核工程术语，对应英文“disused sealed source”。	internal:dict-improvements
-disused-source	zh	聚变/核工程术语，对应英文“disused source”。	internal:dict-improvements
-diversity	zh	聚变/核工程术语，对应英文“diversity”。	internal:dict-improvements
+disused-sealed-source	zh	见 废弃源。	translated:IAEA-safety-glossary
+disused-source	zh	见 源。	translated:IAEA-safety-glossary
+diversity	zh	为执行某一已确定的功能而设置两个或更多相互独立（冗余）的系统或部件，且这些不同的系统或部件具有不同的属性，以降低包括共模失效在内的共因失效的可能性。此类属性的例子有：不同的运行工况、不同的工作原理或不同的设计团队（提供功能多样性），以及不同尺寸的设备、不同的制造商和设备类型（提供设备多样性），这些设备采用不同的物理方法（提供实体多样性）。功能多样性。在过程工程应用中于功能层面上应用多样性（例如使跳闸动作同时由压力限值和温度限值触发）。	translated:IAEA-safety-glossary
 divertor-leg	en	Magnetic flux path from the X-point to the divertor target (inner/outer).	corpus
 divertor-leg	zh	偏滤器腿是从X点到偏滤器靶板的磁通路径，分为内侧和外侧。	corpus
 documentation	en	Documentation describing software or a project.	corpus
@@ -4053,10 +4053,10 @@ documentation	zh	文档是描述软件或项目的资料。	corpus
 domestic-agencies	zh	国内机构，指由七个 ITER 成员方各自设立、以履行对 ITER 的实物采购职责的机构。实物采购指在项目建设阶段，成员方并非只向 ITER 组织提供现金，而是以系统、部件以及就欧洲而言的建筑等形式，提供其参与份额中 90% 的「实物」。	translated:ITER-glossary
 doppler-broadening	en	Spectral line broadening from thermal motion.	corpus
 doppler-broadening	zh	多普勒展宽是热运动造成的谱线展宽。	corpus
-dose	zh	聚变/核工程术语，对应英文“dose”。	internal:dict-improvements
-dose-and-dose-rate-effectiveness-factor	zh	聚变/核工程术语，对应英文“dose and dose rate effectiveness factor (DDREF)”。	internal:dict-improvements
-dose-assessment	zh	聚变/核工程术语，对应英文“dose assessment”。	internal:dict-improvements
-dose-coefficient	zh	聚变/核工程术语，对应英文“dose coefficient”。	internal:dict-improvements
+dose	zh	1. 辐射在靶中沉积能量的量度。关于最重要的此类量度的定义，见剂量量和剂量概念。2. 视上下文而定，指吸收剂量、待积当量剂量、待积有效剂量、当量剂量、有效剂量或器官剂量。待积剂量。待积当量剂量或待积有效剂量。	translated:IAEA-safety-glossary
+dose-and-dose-rate-effectiveness-factor	zh	指高剂量和/或高剂量率下单位有效剂量的风险或辐射总危害，与低剂量和低剂量率下相应值之比。用于根据高剂量和高剂量率下的观察结果与流行病学发现，估算低剂量和低剂量率下的风险系数。取代剂量率效能因子（DREF）。	translated:IAEA-safety-glossary
+dose-assessment	zh	见 评价。	translated:IAEA-safety-glossary
+dose-coefficient	zh	被国际放射防护委员会及其他方面用作单位摄入剂量的同义词，但有时也用于描述将活度量或活度浓度与剂量或剂量率相联系的其他系数，例如在某表面上方一指定距离处的外照射剂量率，该表面沉积有面活度为指定值的指定放射性核素。! 为避免混淆，剂量系数一词应谨慎使用。[剂量承诺] 见剂量概念。	translated:IAEA-safety-glossary
 dose-concepts	zh	聚变/核工程术语，对应英文“dose concepts”。	internal:dict-improvements
 dose-conversion-convention	zh	聚变/核工程术语，对应英文“dose conversion convention”。	internal:dict-improvements
 dose-equivalent	zh	聚变/核工程术语，对应英文“dose equivalent”。	internal:dict-improvements
