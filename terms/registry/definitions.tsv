@@ -5100,7 +5100,7 @@ predictive-maintenance	zh	见 维护。	translated:IAEA-safety-glossary
 predisposal-management	zh	见 放射性废物管理。	translated:IAEA-safety-glossary
 preferential-sputtering	en	The preferential ejection of the lighter element from a multi-component target.	corpus
 preferential-sputtering	zh	择优溅射：多组分靶中较轻元素被优先溅射出去。	corpus
-preparedness-stage	zh	聚变/核工程术语，对应英文“preparedness stage”。	internal:dict-improvements
+preparedness-stage	zh	见 应急准备。	translated:IAEA-safety-glossary
 presheath	en	The ion acceleration transition region ahead of the Debye sheath.	corpus
 presheath	zh	预鞘是Debye鞘层之前的离子加速过渡区。	corpus
 pressure-driven-mode	en	MHD mode driven by the pressure gradient, such as the ballooning mode.	corpus
@@ -5111,38 +5111,38 @@ pressurized-water	en	Water kept under pressure so that it stays liquid above its
 pressurized-water	zh	加压水：施加压力使其在高于常压沸点温度下仍保持液态的水；例如压水堆一回路冷却剂即为约 15.5 MPa、330 摄氏度的加压水。	https://www.osti.gov/servlets/purl/2376331
 pressurizer	en	A pressure control vessel that maintains the pressure of a cooling loop system (WCLL/DCLL blanket loop).	corpus
 pressurizer	zh	稳压器是维持冷却回路系统压力的压力控制容器（WCLL/DCLL 包层回路）。	corpus
-pretreatment	zh	聚变/核工程术语，对应英文“pretreatment (of waste)”。	internal:dict-improvements
-preventive-maintenance	zh	聚变/核工程术语，对应英文“preventive maintenance”。	internal:dict-improvements
+pretreatment	zh	见 放射性废物管理。	translated:IAEA-safety-glossary
+preventive-maintenance	zh	见 维护。	translated:IAEA-safety-glossary
 primary-heat-transfer	en	Removal of heat from the fusion chamber by the primary coolant loop, which transfers it to the intermediate loop; this primary loop is the primary heat transfer system (PHTS).	https://www.osti.gov/servlets/purl/3452321
 primary-heat-transfer	zh	一回路传热：由一回路冷却剂回路把聚变腔室的热量移出、并输送给中间回路的传热过程；该主回路即一回路传热系统（PHTS）。	https://www.osti.gov/servlets/purl/3452321
-primary-limit	zh	聚变/核工程术语，对应英文“primary limit”。	internal:dict-improvements
+primary-limit	zh	见 限值。	translated:IAEA-safety-glossary
 primary-loop	en	The primary coolant circuit that removes heat from the blanket and the divertor.	corpus
 primary-loop	zh	一回路是将热量从包层与偏滤器导出的主冷却剂回路。	corpus
-prime-mover	zh	聚变/核工程术语，对应英文“prime mover”。	internal:dict-improvements
+prime-mover	zh	在致动装置发出指令时把能量转换为动作的部件，例如电动机、电磁线圈操作器或气动操作器。	translated:IAEA-safety-glossary
 private-flux-region	en	The magnetic flux region below the X-point between the inner and outer divertor legs.	corpus
 private-flux-region	zh	私有磁通区是 X 点下方、内外偏滤器腿之间的磁通区域。	corpus
 private-fusion-investment	en	Venture and private-equity capital invested in commercial fusion companies.	corpus
 private-fusion-investment	zh	私营聚变投资：投向商业聚变公司的风险投资与私募股权资本。	corpus
 private-investment	en	Non-governmental funding directed at the development and commercialization of fusion energy.	corpus
 private-investment	zh	私人投资：投向聚变能开发与商业化的非政府资金。	corpus
-probabilistic-analysis	zh	聚变/核工程术语，对应英文“probabilistic analysis”。	internal:dict-improvements
-procedure	zh	聚变/核工程术语，对应英文“procedure”。	internal:dict-improvements
-processing	zh	聚变/核工程术语，对应英文“processing (of waste)”。	internal:dict-improvements
+probabilistic-analysis	zh	概率分析常被视为随机分析的同义词。然而严格说来，“stochastic”（随机）直接传达的是随机性（或至少是表观随机性）的概念，而“probabilistic”（概率）则直接与概率相关，因而只间接涉及随机性。自然事件或过程更宜被描述为“stochastic”（如随机效应），而“probabilistic”更适于描述对随机事件或过程及其后果的数学分析（严格地说，只有当分析方法本身含有随机性要素时，这种分析才算是“stochastic”，例如蒙特卡罗分析）。	translated:IAEA-safety-glossary
+procedure	zh	按一定顺序或方式实施的一系列规定动作。为开展某项活动或执行某个过程而需采取的动作集合，通常在一组指令中加以规定。	translated:IAEA-safety-glossary
+processing	zh	见 放射性废物管理。	translated:IAEA-safety-glossary
 procurement-arrangement	zh	采购安排（Procurement Arrangement）是 ITER 独特的创设。每一份此类文件规定电厂系统、部件或场址建造的采购事宜，并详细列出所有必要的技术规格与管理要求。每份采购安排的价值以 ITER 记账单位（ITER Units of Account，IUAs）表示。目前计划通过约 140 份单独的采购安排来实施建设 ITER 的各项工作包。	translated:ITER-glossary
 profile-stiffness	en	The tendency of transport to maintain profiles near the critical gradient.	corpus
 profile-stiffness	zh	剖面刚性是输运使剖面保持在临界梯度附近的倾向。	corpus
-projected-dose	zh	聚变/核工程术语，对应英文“projected dose”。	internal:dict-improvements
+projected-dose	zh	见 剂量概念。	translated:IAEA-safety-glossary
 prompt-loss	en	Fast ion loss on the first orbit after birth.	corpus
 prompt-loss	zh	瞬时损失是快离子在产生后的第一条轨道上发生的损失。	corpus
 prompt-redeposition	en	Sputtered particle near-field redeposition under magnetic confinement.	corpus
 prompt-redeposition	zh	即时再沉积是磁约束下溅射粒子的近场再沉积。	corpus
 protection	zh	聚变/核工程术语，指“防护”这一技术概念。	internal:dict-improvements
-protection-and-safety	zh	聚变/核工程术语，对应英文“protection and safety”。	internal:dict-improvements
-protection-of-the-environment	zh	聚变/核工程术语，对应英文“protection of the environment”。	internal:dict-improvements
-protection-quantities	zh	聚变/核工程术语，对应英文“protection quantities”。	internal:dict-improvements
-protection-system	zh	聚变/核工程术语，对应英文“protection system”。	internal:dict-improvements
-protective-action	zh	聚变/核工程术语，对应英文“protective action”。	internal:dict-improvements
-protective-task	zh	聚变/核工程术语，对应英文“protective task”。	internal:dict-improvements
+protection-and-safety	zh	保护人员免受过电离辐射照射或因放射性物质所致照射，以及源的安全，包括实现这一点的手段，以及预防事故和在事故确实发生时减轻其后果的手段。安全主要关注对源保持控制，而（辐射）防护主要关注控制辐射照射及其效应。显然二者密切相关：如果所涉源处于受控状态，辐射防护（或放射防护）就简单得多，因此安全必然有助于防护。源有许多不同类型，因此安全可称为核设施安全、辐射安全、放射性废物管理安全或放射性物质运输安全，但（此意义上的）防护主要关注保护人员免遭照射，无论源为何，因此始终是辐射防护。就 IAEA 安全标准而言，防护与安全包括保护人员免遭电离辐射以及安全；它不包括与辐射无关的安全方面。防护与安全既涉及正常情况下的辐射风险，也涉及事件所致辐射风险，还涉及对反应堆堆芯、核链式反应、放射源或任何其他辐射源失去控制可能造成的其他直接后果。安全措施包括预防事件的行动，以及为在事件发生时减轻其后果所作的安排。	translated:IAEA-safety-glossary
+protection-of-the-environment	zh	对以下方面的保护与养护：非人类物种，包括动物和植物，及其生物多样性；环境商品与服务，如食物和饲料的生产；用于农业、林业、渔业和旅游业的资源；用于精神、文化和娱乐活动的舒适性资源；土壤、水和空气等介质；以及碳、氮、水循环等自然过程。另见环境。	translated:IAEA-safety-glossary
+protection-quantities	zh	为放射防护目的而制定的剂量量，可量化人体受电离的照射程度。	translated:IAEA-safety-glossary
+protection-system	zh	见 电厂设备。	translated:IAEA-safety-glossary
+protective-action	zh	1. 为避免或减少在应急照射情况或现有照射情况下本来可能受到的剂量而采取的行动。另见补救行动。这与辐射防护有关（见防护（1）以及防护与安全）。早期防护行动。核或放射紧急情况下可在数日至数周内实施且仍然有效的防护行动。最常见的早期防护行动是搬迁以及对可能受污染影响的食品实行较长期限的消费限制。减轻行动。营运者或其他方的即时行动：（1）降低出现会导致需要场内或场外应急响应行动的照射或放射性物质释放的状况的可能性；或（2）改善源的状态，该状态可能导致需要场内或场外应急响应行动的照射或放射性物质释放。紧急防护行动。核或放射紧急情况下必须迅速（通常在数小时至一天内）采取才能有效的防护行动，若延迟则其有效性将明显降低。紧急防护行动包括碘甲状腺阻断、撤离、短期隐蔽、减少意外食入的行动、对个人的去污，以及防止食入可能受到污染的食品、牛奶和饮用水。预防性紧急防护行动是在放射性物质释放或照射之前或之后不久，依据当时情况采取的紧急防护行动，以避免或尽量减少严重确定性效应。2. 要求操作某一特定安全致动装置的保护系统行动。这与防护的定义（2）有关。	translated:IAEA-safety-glossary
+protective-task	zh	至少生成那些为确保完成某一给定始发事件所要求的安全任务而必需的防护行动。	translated:IAEA-safety-glossary
 protium	en	The lightest hydrogen isotope, with mass number 1.	corpus
 protium	zh	氕是最轻的氢同位素，其质量数为1。	corpus
 proton-boron-fusion	en	Aneutronic fusion reaction in which a proton reacts with boron-11 to produce three alpha particles.	corpus
@@ -5153,20 +5153,20 @@ public-acceptance	en	Societal acceptance of fusion energy technology.	corpus
 public-acceptance	zh	社会对聚变能技术的接受程度。	corpus
 public-private-partnership	en	A joint government-industry framework for carrying out fusion development.	corpus
 public-private-partnership	zh	公私合作：政府与产业界联合开展聚变开发的框架。	corpus
-publication-iaea	zh	聚变/核工程术语，对应英文“publication, IAEA”。	internal:dict-improvements
+publication-iaea	zh	见 国际原子能机构出版物。	translated:IAEA-safety-glossary
 pulsed-non-ignition	en	A pulsed approach in which a field-reversed configuration is compressed without sustained ignition.	corpus
 pulsed-non-ignition	zh	脉冲非点火：在不以持续点火为目标的情况下压缩场反位形的脉冲途径。	corpus
 pumping-power	en	The electrical power consumed by the coolant circulation pumps.	corpus
 pumping-power	zh	泵送功耗：冷却剂循环泵所消耗的电功率。	corpus
 purge-gas	en	Helium gas used to extract tritium from ceramic breeders.	corpus
 purge-gas	zh	吹扫气是用于从陶瓷增殖剂中提取氚的氦气。	corpus
-qualification	zh	聚变/核工程术语，对应英文“qualification”。	internal:dict-improvements
-qualified-equipment	zh	聚变/核工程术语，对应英文“qualified equipment”。	internal:dict-improvements
-qualified-expert	zh	聚变/核工程术语，对应英文“qualified expert”。	internal:dict-improvements
-qualified-life	zh	聚变/核工程术语，对应英文“qualified life”。	internal:dict-improvements
-quality-assurance	zh	聚变/核工程术语，对应英文“quality assurance”。	internal:dict-improvements
-quality-control	zh	聚变/核工程术语，对应英文“quality control (QC)”。	internal:dict-improvements
-quality-factor-q	zh	聚变/核工程术语，对应英文“quality factor, Q”。	internal:dict-improvements
+qualification	zh	确定系统或部件是否适于运行使用的过程。鉴定一般在针对特定设施和系统类别以及特定应用的特定鉴定要求的背景下进行。鉴定可以分阶段完成：例如，第一步，对已有设备进行鉴定（通常在系统实现过程的早期），然后，第二步，对集成系统进行鉴定（即在最终实现的设计中）。鉴定可以依赖在特定设施设计框架之外进行的活动（这称为“通用鉴定”或“预鉴定”）。预鉴定可显著减少设施特定鉴定所需的工作量；但仍须满足应用特定的鉴定要求，并证明已满足这些要求。设备鉴定。生成并保持证据，以确保设备在规定使用条件下按需运行，满足系统性能要求。另见 GSR Part 4 (Rev. 1) [11]。对特定设备或特定条件使用更具体的术语；例如，抗震鉴定是设备鉴定的一种形式，涉及地震时可能遇到的条件。证明某设备项能够执行其功能，是设备鉴定的重要组成部分，有时称为实证。	translated:IAEA-safety-glossary
+qualified-equipment	zh	经认证已满足与其安全功能相关条件的设备鉴定要求的设备。	translated:IAEA-safety-glossary
+qualified-expert	zh	因获得适当委员会或学会的认证、专业执照或学历资格与经验，被正式认定在某一相关专业领域具有专长的个人，例如医学物理、辐射防护、职业健康、消防安全、质量管理或任何相关工程或安全专业。	translated:IAEA-safety-glossary
+qualified-life	zh	见 寿命。	translated:IAEA-safety-glossary
+quality-assurance	zh	管理系统的一项功能，即提供将满足规定要求的置信。! IAEA 在其关于涉及使用电离辐射的设施和活动的安全的管理系统安全标准中，修订了质量保证这一主题领域的要求和导则。! 修订后的标准采用了质量管理和管理系统这两个术语，以取代质量保证和质量保证大纲这两个术语。需要采取计划的和系统的行动，以提供足够的置信，确信某一物项、过程或服务将满足给定的质量要求；例如许可证中规定的要求。该表述由国际标准化组织出版物 ISO 921:1997 [9] 中的表述略作修改而来，把“产品或服务”改为“物项、过程或服务”，并增加了该示例。质量保证的更一般定义（为使某一构筑物、系统或部件在使用中能满意地运行而提供置信所需的所有计划和系统行动）以及相关术语的定义，可见于国际标准化组织出版物 ISO 9000:2015 [39]。	translated:IAEA-safety-glossary
+quality-control	zh	质量管理的一部分，旨在验证构筑物、系统和部件符合预定要求。本定义取自 ISO 921:1997（核能：词汇）[9]。质量控制及相关术语的更一般定义可见于 ISO 9000:2015 [39]。	translated:IAEA-safety-glossary
+quality-factor-q	zh	用以乘组织或器官中的吸收剂量以反映该辐射相对生物效能的一个数，其结果为剂量当量。见参考文献 [37]，但仍被定义为传能线密度的函数，用于计算监测中所用的剂量当量量。GSR Part 3 [1] 还指出，ICRU 球体内 10 mm 深度处的平均品质因数 Q 可作为 GSR Part 3 未规定其值的辐射类型的辐射权重因数取值（见辐射权重因数）。[rad] 吸收剂量单位，等于 0.01 Gy。röntgen absorbed dose 或 radiation absorbed dose 的缩写。	translated:IAEA-safety-glossary
 quasi-axisymmetry	en	A form of quasi-symmetry in which the magnetic field strength is approximately independent of the toroidal angle, so that guiding-centre orbits resemble those in an axisymmetric tokamak.	corpus
 quasi-axisymmetry	zh	一种准对称形式，其磁场强度近似与环向角无关，使导向中心轨道类似轴对称托卡马克中的轨道。	corpus
 quasi-helical-symmetry	en	A form of quasi-symmetry in which the magnetic field strength varies along a helical direction, giving orbits comparable to those in a tokamak while retaining a helical field structure.	corpus
@@ -5194,10 +5194,10 @@ radiation-collapse	en	Collapse of the plasma temperature from impurity radiation
 radiation-collapse	zh	辐射坍塌是杂质辐射引起的等离子体温度坍塌。	corpus
 radiation-damage	en	Lattice defects and property degradation from neutron or ion irradiation.	corpus
 radiation-damage	zh	辐照损伤是中子或离子辐照引起的晶格缺陷和材料性能退化。	corpus
-radiation-detriment	zh	聚变/核工程术语，对应英文“radiation detriment”。	internal:dict-improvements
+radiation-detriment	zh	某一受照群体及其后代因该群体受源辐射照射而最终将承受的总危害。在其第 60 号出版物 [37] 中，国际放射防护委员会定义了辐射危害的一种量度，其量纲为概率，因此也可视为风险的一种量度。	translated:IAEA-safety-glossary
 radiation-dominated-regime	en	A high-temperature regime where radiation loss exceeds fusion power.	corpus
 radiation-dominated-regime	zh	辐射主导区间是辐射损失超过聚变功率的高温区间。	corpus
-radiation-emergency	zh	聚变/核工程术语，对应英文“radiation emergency”。	internal:dict-improvements
+radiation-emergency	zh	见 核或辐射应急。	translated:IAEA-safety-glossary
 radiation-generator	zh	聚变/核工程术语，对应英文“radiation generator”。	internal:dict-improvements
 radiation-hardening	en	Hardening and embrittlement of a material from neutron irradiation.	corpus
 radiation-hardening	zh	辐照硬化是材料受中子辐照产生的硬化与脆化。	corpus
