@@ -3724,18 +3724,18 @@ cache-miss	en	A failed cache lookup that requires access to main memory.	corpus
 cache-miss	zh	缓存未命中是需要访问主存的缓存查找失败。	corpus
 calculation	en	The act or process of using numbers to find out an amount.	https://www.oxfordlearnersdictionaries.com/definition/english/calculation
 calculation	zh	计算是利用数字求出某个数值的行为或过程。	https://www.oxfordlearnersdictionaries.com/definition/english/calculation
-calibration	zh	聚变/核工程术语，对应英文“calibration”。	internal:dict-improvements
-calibration-of-a-dosimeter	zh	聚变/核工程术语，对应英文“calibration of a dosimeter”。	internal:dict-improvements
+calibration	zh	在规定的条件下，确定由测量仪器或测量系统所指示的量值、或由实物量具或参考物质所代表的量值，与由测量标准所复现的相应量值之间关系的一组操作 [12]。该定义以前为「对仪器、部件或系统进行的测量或调整，以确保其准确度或响应是可接受的」。校准可用陈述、校准函数、校准图、校准曲线或校准表表示。在某些情况下，它可以包括对示值的加法或乘法修正及相关的测量不确定度。校准不应与测量系统的调整（常被误称为「自校准」）或校准的验证相混淆。剂量计的校准。用校准因子对剂量计进行表征的过程。校准因子是被测量量的约定真值与参考条件下剂量计示值之商。若剂量计在参考条件下使用，则被测量量的值为示值与校准因子之积。若剂量计在非参考条件下使用，则被测量量的值为示值、校准因子和附加修正因子之积。模型校准。将模型的预测与被建模系统的现场观测和/或实验测量进行比较，并在必要时对模型进行偏差调整，以实现对测量和/或观测数据的最佳拟合的过程。！该术语的这一用法并未被普遍接受。模型确认（model validation）和模型验证（model verification）这两个术语更常用于描述与模型相关的类似过程。另见偏差（bias）。	translated:IAEA-safety-glossary
+calibration-of-a-dosimeter	zh	见 校准。	translated:IAEA-safety-glossary
 callback	en	A function invocation that is deferred until later.	corpus
 callback	zh	回调是被推迟调用的函数调用。	corpus
-canister-waste	zh	聚变/核工程术语，对应英文“canister, waste”。	internal:dict-improvements
-capable-fault	zh	聚变/核工程术语，对应英文“capable fault”。	internal:dict-improvements
-capable-volcanic-field	zh	聚变/核工程术语，对应英文“capable volcanic field”。	internal:dict-improvements
-capable-volcano	zh	聚变/核工程术语，对应英文“capable volcano”。	internal:dict-improvements
+canister-waste	zh	见 waste container。	translated:IAEA-safety-glossary
+capable-fault	zh	见 地质断层。	translated:IAEA-safety-glossary
+capable-volcanic-field	zh	见 能动火山。	translated:IAEA-safety-glossary
+capable-volcano	zh	见 volcano。	translated:IAEA-safety-glossary
 capsule-implosion	en	Driven inward compression of an ICF capsule.	corpus
 capsule-implosion	zh	靶丸内爆是惯性约束聚变靶丸受驱动向内压缩的过程。	corpus
-carers-and-comforters	zh	聚变/核工程术语，对应英文“carers and comforters”。	internal:dict-improvements
-cargo-aircraft	zh	聚变/核工程术语，对应英文“cargo aircraft”。	internal:dict-improvements
+carers-and-comforters	zh	出于自愿、在其职业之外帮助接受放射学程序以进行医学诊断或医学治疗的患者获得照护、支持和安慰的人员。	translated:IAEA-safety-glossary
+cargo-aircraft	zh	见 飞机撞击。	translated:IAEA-safety-glossary
 carrier	zh	聚变/核工程术语，对应英文“carrier”。	internal:dict-improvements
 cascade-damage	en	Atomic displacement defect cascade from energetic particle impact.	corpus
 cascade-damage	zh	级联损伤是高能粒子撞击产生的原子位移缺陷级联。	corpus
@@ -4847,7 +4847,7 @@ neoclassical-tearing-mode	en	A tearing mode whose magnetic island perturbation a
 neoclassical-transport	en	The classical transport theory applied to a toroidal magnetic confinement system when the toroidal effect of the plasma is taken into account. Because of this toroidal effect, the plasma is divided, according to the collision frequency of the charged particles, into a fluid regime with a high collision frequency, a trapped-particle (banana) regime with a low collision frequency, and a transition regime between the two, the plateau regime. In determining the transport coefficients the neoclassical theory takes the toroidal configuration of the magnetic field into account and includes Coulomb collision effects; the transport coefficients are generally equivalent coefficients averaged over a magnetic flux surface.	GB/T-4960.9
 net-electricity	en	The project milestone at which electricity output exceeds total plant consumption.	corpus
 net-electricity	zh	净发电：发电量超过电站自身全部消耗的里程碑。	corpus
-net-energy	zh	聚变/核工程术语，对应英文“Net Energy”。	internal:dict-improvements
+net-energy	zh	当聚变等离子体脉冲期间产生的总功率超过为加热等离子体而注入的热功率时，即达到净能量。见「能量得失相当」（Energy Breakeven）。	translated:ITER-glossary
 neutral-beam-driven-frc	en	Field-reversed configuration sustained by tangential neutral beam injection, as in the TAE/ENN approach.	corpus
 neutral-beam-driven-frc	zh	由切向中性束注入维持的场反位形（FRC），即 TAE/ENN 方案。	corpus
 neutron	en	A very small piece of matter that carries no electric charge and that forms part of the nucleus of an atom.	https://www.oxfordlearnersdictionaries.com/definition/english/neutron
@@ -5128,7 +5128,7 @@ private-investment	zh	私人投资：投向聚变能开发与商业化的非政�
 probabilistic-analysis	zh	聚变/核工程术语，对应英文“probabilistic analysis”。	internal:dict-improvements
 procedure	zh	聚变/核工程术语，对应英文“procedure”。	internal:dict-improvements
 processing	zh	聚变/核工程术语，对应英文“processing (of waste)”。	internal:dict-improvements
-procurement-arrangement	zh	聚变/核工程术语，对应英文“Procurement Arrangement”。	internal:dict-improvements
+procurement-arrangement	zh	采购安排（Procurement Arrangement）是 ITER 独特的创设。每一份此类文件规定电厂系统、部件或场址建造的采购事宜，并详细列出所有必要的技术规格与管理要求。每份采购安排的价值以 ITER 记账单位（ITER Units of Account，IUAs）表示。目前计划通过约 140 份单独的采购安排来实施建设 ITER 的各项工作包。	translated:ITER-glossary
 profile-stiffness	en	The tendency of transport to maintain profiles near the critical gradient.	corpus
 profile-stiffness	zh	剖面刚性是输运使剖面保持在临界梯度附近的倾向。	corpus
 projected-dose	zh	聚变/核工程术语，对应英文“projected dose”。	internal:dict-improvements
@@ -5306,7 +5306,7 @@ reprocessing	zh	聚变/核工程术语，对应英文“reprocessing”。	inter
 requirement	zh	聚变/核工程术语，对应英文“requirement (safety)”。	internal:dict-improvements
 research-reactor	zh	聚变/核工程术语，对应英文“research reactor”。	internal:dict-improvements
 residual-dose	zh	聚变/核工程术语，对应英文“residual dose”。	internal:dict-improvements
-resistive-heating	zh	聚变/核工程术语，对应英文“Resistive Heating”。	internal:dict-improvements
+resistive-heating	zh	见 欧姆加热。	translated:ITER-glossary
 resistive-instability	en	An instability caused by the finite electrical conductivity of the plasma.	GB/T-4960.9
 resistive-mhd	en	Magnetohydrodynamic model that includes a finite plasma resistivity.	corpus
 resistive-mhd	zh	包含有限等离子体电阻率的磁流体力学模型。	corpus
@@ -5428,7 +5428,7 @@ shared-library	zh	共享库是动态链接的库（.so/.dll）。	corpus
 sheared-flow-z-pinch	en	A Z-pinch configuration stabilized by shear in the axial plasma flow.	corpus
 sheared-flow-z-pinch	zh	剪切流Z箍缩：依靠轴向等离子体流剪切获得稳定性的 Z 箍缩位形。	corpus
 sheltering	zh	聚变/核工程术语，对应英文“sheltering”。	internal:dict-improvements
-shield-block-module	zh	聚变/核工程术语，对应英文“Shield Block Module”。	internal:dict-improvements
+shield-block-module	zh	在 ITER 中，包层被细分为若干模块，以便能够通过赤道窗口相对容易地更换。共有 440 个独立扇段，每个尺寸为 1 × 1.5 米、重约 4.5 吨。每个扇段都有一个可拆卸的第一壁，它直接面向等离子体并排出等离子体热负荷，以及一个专用于中子屏蔽的半永久性包层屏蔽体。（另见「第一壁」First Wall）。	translated:ITER-glossary
 shielding-labyrinth	en	A shielding penetration whose internal geometry is stepped or offset in a labyrinth pattern, so that no straight path through the duct exists and the radiation streaming along it is attenuated by repeated scattering.	corpus
 shielding-labyrinth	zh	内部几何呈阶梯或错位迷宫形式的一种屏蔽穿透，因不存在直穿路径，沿通道穿射的辐射经多次散射而被减弱。	corpus
 shielding-penetration	en	An opening or duct through a radiation shield that provides a path along which radiation can stream through the shield, so that the shielding effectiveness is locally reduced at that location.	corpus
@@ -5437,7 +5437,7 @@ shipment	zh	聚变/核工程术语，对应英文“shipment”。	internal:dict
 short-lived-waste	zh	聚变/核工程术语，对应英文“short lived waste”。	internal:dict-improvements
 shutdown	zh	聚变/核工程术语，对应英文“shutdown”。	internal:dict-improvements
 shutdown-reactivity	zh	聚变/核工程术语，对应英文“shutdown reactivity”。	internal:dict-improvements
-shutdown-time	zh	聚变/核工程术语，对应英文“Shutdown Time”。	internal:dict-improvements
+shutdown-time	zh	从燃烧结束到等离子体状态结束之间的时间跨度；属于运行时间的一部分。	translated:ITER-glossary
 side-reaction	en	A parasitic neutron-producing reaction channel in advanced fuels.	corpus
 side-reaction	zh	副反应是先进燃料中产生中子的寄生反应道。	corpus
 sievert	zh	聚变/核工程术语，对应英文“sievert (Sv)”。	internal:dict-improvements
@@ -5502,7 +5502,7 @@ spin-polarized-fuel	en	Fuel whose nuclear spins are aligned, enhancing the p-B11
 spin-polarized-fuel	zh	核自旋取向一致的燃料，可使 p-B11 聚变截面提高约 50%。	corpus
 sputtering	en	The ejection of atoms from a surface as a result of the impact of energetic particles; a process by which the surface material of a plasma-facing surface is removed by particle bombardment.	corpus
 sputtering	zh	高能粒子撞击使表面原子被射出的过程，也是面向等离子体表面材料因粒子轰击而被去除的一种机制。	corpus
-sst-1	zh	聚变/核工程术语，对应英文“SST-1”。	internal:dict-improvements
+sst-1	zh	印度稳态超导托卡马克（SST-1）于 2013 年在古吉拉特邦的等离子体研究所全面调试完成，并于 2019 年升级。SST-1 是一台中型托卡马克，可产生重复性等离子体放电，持续时间可达约 500 ms，等离子体电流超过 75000 A，中心场强为 1.5 T。见本网站。	translated:ITER-glossary
 staircase-transport	en	Self-organized staircase-like transport barrier structures in the profiles.	corpus
 staircase-transport	zh	阶梯输运是剖面中自组织形成的阶梯状输运垒结构。	corpus
 standards-dosimetry-laboratory	zh	聚变/核工程术语，对应英文“standards dosimetry laboratory”。	internal:dict-improvements
@@ -5515,7 +5515,7 @@ station-blackout	en	The complete loss of alternating current (ac) electric power
 station-blackout	zh	全厂断电事故：核电厂中通往重要与非重要开关柜母线的交流电（ac）电源完全丧失，即厂外电力系统丧失、同时汽轮机脱扣且厂内应急交流电源不可用；经逆变器由厂内蓄电池供电的母线、或由备用交流电源供电的母线所损失的可用交流电，不计为全厂断电事故。	https://www.govinfo.gov/content/pkg/CFR-2024-title10-vol1/xml/CFR-2024-title10-vol1-sec50-2.xml
 steady-state-high-beta	en	An advanced tokamak target scenario that combines high beta with steady state.	corpus
 steady-state-high-beta	zh	稳态高β运行是兼具高β与稳态运行的先进托卡马克目标场景。	corpus
-steady-state-tokamak	zh	聚变/核工程术语，对应英文“Steady State Tokamak”。	internal:dict-improvements
+steady-state-tokamak	zh	一种温度、反应率和中子通量等条件不随时间明显变化的托卡马克。	translated:ITER-glossary
 steam-generator	en	A heat exchanger in which steam is produced from the primary coolant.	corpus
 steam-generator	zh	蒸汽发生器是利用一回路冷却剂产生蒸汽的换热器。	corpus
 steam-turbine	en	A turbine driven by steam within the Rankine cycle.	corpus
@@ -5571,7 +5571,7 @@ supercritical-co2	en	CO2 used as a working fluid above its critical point of 31 
 supercritical-co2	zh	超临界二氧化碳：在临界点（31 摄氏度、7.4 MPa）以上用作工质的二氧化碳。	corpus
 supercritical-co2-cycle	en	A high-efficiency Brayton cycle that uses supercritical CO2 as its working fluid.	corpus
 supercritical-co2-cycle	zh	超临界二氧化碳循环是以超临界二氧化碳为工质的高效布雷顿循环。	corpus
-supercritical-helium	zh	聚变/核工程术语，对应英文“Supercritical Helium”。	internal:dict-improvements
+supercritical-helium	zh	在 1 个大气压的浴槽中，只要温度不升至 4.2 K 以上，氦就会保持液态。若将 ITER 的线圈置于这样的冷却剂浴中，且其运行中出现高热脉冲，则大部分氦必须排放，以避免产生大的超压。为避免这一点，ITER 的线圈采用泵送的超临界氦运行，温度刚好高于临界温度，从而在无超压风险的情况下保留液氦的大部分传热特性。	translated:ITER-glossary
 supervised-area	zh	聚变/核工程术语，对应英文“supervised area”。	internal:dict-improvements
 supplier	zh	聚变/核工程术语，对应英文“supplier (of a source)”。	internal:dict-improvements
 supply-chain	en	The manufacturing and raw material supply chain for fusion components.	corpus
@@ -5597,7 +5597,7 @@ system-code-verification	zh	聚变/核工程术语，对应英文“system code 
 system-validation	zh	聚变/核工程术语，对应英文“system validation”。	internal:dict-improvements
 systems-engineering	en	An interdisciplinary approach to designing, integrating and managing complex fusion plant systems over their life cycles.	corpus
 systems-engineering	zh	系统工程：在寿期内设计、集成并管理复杂聚变电站系统的跨学科方法。	corpus
-t-15md	zh	聚变/核工程术语，对应英文“T-15MD”。	internal:dict-improvements
+t-15md	zh	在莫斯科库尔恰托夫研究所运行的托卡马克。T-15MD 是对历史性 T-15 装置的升级——后者是首个使用超导磁体控制等离子体的托卡马克。	translated:ITER-glossary
 tailings	zh	聚变/核工程术语，对应英文“tailings”。	internal:dict-improvements
 tallying	en	Scoring of quantities such as flux, dose, and heating in Monte Carlo transport calculations.	corpus
 tallying	zh	在蒙特卡罗输运计算中对通量、剂量、核热等量的计数。	corpus
@@ -5612,7 +5612,7 @@ taylor-state	en	A force-free minimum-energy equilibrium state (curl B = lambda B
 taylor-state	zh	Taylor态是满足curl B = lambda B的无力最小能量平衡态。	corpus
 tbm	en	In-vessel test modules installed in ITER for the qualification of breeding blanket designs.	corpus
 tbm	zh	安装于 ITER 真空室内、用于验证增殖包层设计的实验模块。	corpus
-tcv	zh	聚变/核工程术语，对应英文“TCV”。	internal:dict-improvements
+tcv	zh	由洛桑瑞士联邦理工学院（EPFL）作为瑞士等离子体中心的一部分运行的托卡马克。见本网页。	translated:ITER-glossary
 tearing-mode	en	A class of resistive magnetohydrodynamic instability that was predicted theoretically for the tokamak and has since been confirmed experimentally (corresponding to tearing mode instability).	GB/T-4960.9
 techno-economic-analysis	en	An integrated assessment of the technical feasibility and economic viability of a design.	corpus
 techno-economic-analysis	zh	技术经济分析：对方案技术可行性与经济可行性的综合评价。	corpus
@@ -5667,9 +5667,9 @@ tokamak-building	en	The main building that houses a fusion facility.	corpus
 tokamak-building	zh	托卡马克厂房是容纳聚变设施的主体建筑。	corpus
 tokamak-pit	en	The underground pit structure of a tokamak device, inside the bioshield.	corpus
 tokamak-pit	zh	托卡马克堆坑是托卡马克装置的地下基坑结构（生物屏蔽内）。	corpus
-tore-supra	zh	聚变/核工程术语，对应英文“Tore Supra”。	internal:dict-improvements
+tore-supra	zh	法国磁聚变研究所 IRFM（CEA 卡达拉舍研究中心）的一项超导聚变实验，其目标尤其在于演示托卡马克的长脉冲运行。Tore Supra 已升级，配备了主动冷却的钨偏滤器（WEST 项目），以作为 ITER 的试验平台。	translated:ITER-glossary
 toroidal-alfven-eigenmode	en	An Alfven gap mode caused by toroidal effects.	GB/T-4960.9
-toroidal-current	zh	聚变/核工程术语，对应英文“Toroidal Current”。	internal:dict-improvements
+toroidal-current	zh	在托卡马克等离子体中驱动环向电流的基本手段，利用了这样一个事实：由中心螺线管产生的大部分磁力线穿过其孔径向下，并且直到延伸到等离子体外侧（即径向更远处）才自行闭合。螺线管与等离子体之间的这种「磁通链接」使得螺线管中电流的变化能够驱动等离子体中的电流（麦克斯韦定律 Maxwell's Laws）。	translated:ITER-glossary
 toroidal-field-coil	en	A coil of the magnet system that produces the toroidal magnetic field of the device, that is, the field directed along the toroidal direction of the torus.	corpus
 toroidal-field-coil	zh	磁体系统中产生装置纵场的线圈，其磁场方向沿环形装置的环向。	corpus
 transboundary-exposure	zh	聚变/核工程术语，对应英文“transboundary exposure”。	internal:dict-improvements
@@ -5706,7 +5706,7 @@ tritium-inventory-control	zh	氚存量控制：对全厂各子系统氚量的管
 tritium-processing	en	The process of extracting tritium from tritium-bearing fluids, device exhaust gases and leaked tritium-containing gases and safely storing it or turning it into plasma fuel. See also tritium plant.	GB/T-4960.9
 tritium-recovery	en	Extraction of tritium from the blanket breeder or from the plasma exhaust.	corpus
 tritium-recovery	zh	氚回收是从包层增殖材料或等离子体排气中提取氚。	corpus
-tritium-recycling	zh	聚变/核工程术语，对应英文“Tritium Recycling”。	internal:dict-improvements
+tritium-recycling	zh	从气流（包括等离子体排出流和厂房大气）中去除氚，并以安全方式将其返回用作等离子体燃料或送入贮存的过程。	translated:ITER-glossary
 tritium-release	en	Release of bred tritium from ceramic breeder pebbles.	corpus
 tritium-release	zh	氚释放是陶瓷增殖剂小球中增殖氚的释放。	corpus
 tritium-self-sufficiency	en	Ability of a fusion plant to breed all of the tritium that it consumes.	corpus
@@ -5751,7 +5751,7 @@ unstructured-mesh	en	A mesh with an irregular, unstructured topology.	corpus
 unstructured-mesh	zh	非结构网格是拓扑不规则的非结构化网格。	corpus
 upper-port	en	One of the port classifications of a tokamak.	corpus
 upper-port	zh	上端口是托卡马克端口分类之一。	corpus
-upper-ports	zh	聚变/核工程术语，对应英文“Upper Ports”。	internal:dict-improvements
+upper-ports	zh	通往 ITER 真空容器的上部入口。18 个上部窗口将为远程操作、诊断、加热和真空系统提供进入容器的通道。	translated:ITER-glossary
 uptake	zh	聚变/核工程术语，对应英文“uptake”。	internal:dict-improvements
 uranium	zh	聚变/核工程术语，对应英文“uranium”。	internal:dict-improvements
 uranium-enriched-in-the-isotope-uranium-235-or-uranium-233	zh	聚变/核工程术语，对应英文“uranium enriched in the isotope uranium-235 or uranium-233”。	internal:dict-improvements
@@ -5764,7 +5764,7 @@ us-burning-plasma	zh	美国燃烧等离子体计划：为实现并研究自加�
 use	zh	聚变/核工程术语，对应英文“use”。	internal:dict-improvements
 vacancy	en	A missing atom site in the crystal lattice.	corpus
 vacancy	zh	空位是晶格中缺失原子的格点。	corpus
-vacuum-pumps	zh	聚变/核工程术语，对应英文“Vacuum Pumps”。	internal:dict-improvements
+vacuum-pumps	zh	将气体（通常为空气）从腔室中抽除、使其处于真空状态的泵。ITER 中使用了多种类型的泵，取决于所需真空的品质和程度。	translated:ITER-glossary
 vapor-shielding	en	A self-protecting radiation shield from liquid metal evaporation.	corpus
 vapor-shielding	zh	蒸汽屏蔽是液态金属蒸发形成的自保护辐射屏蔽。	corpus
 variance-reduction	en	Techniques used to improve the statistical efficiency of Monte Carlo calculations.	corpus
@@ -5787,7 +5787,7 @@ voxel-model	en	A structured voxelized geometry representation.	corpus
 voxel-model	zh	体素模型是结构化的体素化几何表示。	corpus
 wall	en	A long, solid structure that rises straight up from the ground and surrounds, divides or protects an area.	https://www.oxfordlearnersdictionaries.com/definition/english/wall
 wall	zh	壁是自地面直立延伸、用于围合、分隔或防护某一区域的实体结构。	https://www.oxfordlearnersdictionaries.com/definition/english/wall
-wall-load	zh	聚变/核工程术语，对应英文“Wall load”。	internal:dict-improvements
+wall-load	zh	等离子体粒子、中子和电磁辐射对托卡马克面向等离子体表面造成的应力，应尽量减小以防止损伤。	translated:ITER-glossary
 wall-pumping	en	Wall hydrogen absorption causing plasma density decrease.	corpus
 wall-pumping	zh	壁抽气是壁吸收氢导致等离子体密度下降。	corpus
 waste-classification	en	Categorization of radioactive waste according to its activity level.	corpus
@@ -5818,7 +5818,7 @@ weak-scaling	en	A scaling regime with problem size proportional to the processor
 weak-scaling	zh	弱扩展是问题规模随处理器数量成比例增大的扩展方式。	corpus
 weight-window	en	Variance reduction technique that bounds the particle weights within specified regions.	corpus
 weight-window	zh	在指定区域内限制粒子权重的方差缩减技术。	corpus
-west	zh	聚变/核工程术语，对应英文“WEST”。	internal:dict-improvements
+west	zh	法国 Tore Supra 托卡马克的升级，使其成为 ITER 的试验平台，增加了辅助磁体线圈和新的类 ITER 钨偏滤器（ITER-like）。见此处 West 网站。	translated:ITER-glossary
 winding-surface	en	The toroidal surface on which stellarator coils are constrained during optimization.	corpus
 winding-surface	zh	绕组面：仿星器线圈在优化过程中被约束所在的环形曲面。	corpus
 workforce-development	en	Training, education and recruitment programs that build the skilled labor force for fusion deployment.	corpus
