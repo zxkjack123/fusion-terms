@@ -4165,13 +4165,13 @@ environmental-impact-assessment	en	A systematic evaluation of the environmental 
 environmental-impact-assessment	zh	环境影响评价：对拟建聚变设施环境影响的系统性评估。	corpus
 epfl	zh	位于洛桑的瑞士联邦理工学院（EPFL），是瑞士等离子体中心和 TCV 托卡马克的所在地。	translated:ITER-glossary
 epicentre	zh	地震震源（即 hypocentre）正上方的地表点。	translated:IAEA-safety-glossary
-epistemic-uncertainty	zh	聚变/核工程术语，对应英文“epistemic uncertainty”。	internal:dict-improvements
-equilibrium-equivalent-concentration	zh	聚变/核工程术语，对应英文“equilibrium equivalent concentration (EEC)”。	internal:dict-improvements
-equilibrium-factor	zh	聚变/核工程术语，对应英文“equilibrium factor”。	internal:dict-improvements
+epistemic-uncertainty	zh	见 不确定度。	translated:IAEA-safety-glossary
+equilibrium-equivalent-concentration	zh	与自身短寿命子体处于放射性平衡的 222Rn 或 220Rn 的活度浓度，该浓度所对应的潜在 α 能量浓度与实际（非平衡）混合物相同。222Rn 的平衡当量浓度（EEC）由下式给出：EEC 222Rn = (0.104 × C(218Po)) + (0.514 × C(214Pb)) + (0.382 × C(214Bi))，其中 C(x) 为核素 x 在空气中的活度浓度。1 Bq/m3 的 EEC 222Rn 对应于 5.56 × 10–6 mJ/m3。220Rn 的平衡当量浓度由下式给出：EEC 220Rn = (0.913 × C(212Pb)) + (0.087 × C(212Bi))，其中 C(x) 为核素 x 在空气中的活度浓度。1 Bq/m3 的 EEC 220Rn 对应于 7.57 × 10–5 mJ/m3。	translated:IAEA-safety-glossary
+equilibrium-factor	zh	222Rn 的平衡当量浓度与实际的 Rn 活度浓度之比。	translated:IAEA-safety-glossary
 equilibrium-field-coil	en	A poloidal field coil used for plasma position and shape control.	corpus
 equilibrium-field-coil	zh	平衡场线圈：用于等离子体位置与形状控制的极向场线圈。	corpus
-equilibrium-radioactive	zh	聚变/核工程术语，对应英文“equilibrium, radioactive”。	internal:dict-improvements
-equipment-qualification	zh	聚变/核工程术语，对应英文“equipment qualification”。	internal:dict-improvements
+equilibrium-radioactive	zh	见 放射性平衡。	translated:IAEA-safety-glossary
+equipment-qualification	zh	见 鉴定。	translated:IAEA-safety-glossary
 erosion	en	The removal of material from a plasma-facing surface as a result of the interaction of that surface with the plasma, so that the surface is progressively lost.	corpus
 erosion	zh	面向等离子体表面因与等离子体相互作用而发生材料去除、表面逐渐损耗的过程。	corpus
 erosion-corrosion	en	A material damage mechanism combining fluid erosion and electrochemical corrosion.	corpus
@@ -4179,17 +4179,17 @@ erosion-corrosion	zh	冲蚀-腐蚀是流体冲刷与电化学腐蚀共同作用�
 erosion-redeposition	en	The cyclic process in which plasma-facing material is eroded and the eroded material is redeposited elsewhere.	corpus
 erosion-redeposition	zh	侵蚀再沉积：面向等离子体材料被侵蚀、被侵蚀材料在其他位置再沉积的循环过程。	corpus
 error-field	en	In a tokamak the magnetic field distributions of the toroidal field coils and the poloidal field coils are theoretically both axisymmetric, but deviations in the manufactured shape and the installation position of the magnet coils, current leads, eddy currents in metal components and ferromagnetic substances all lead to a non-axisymmetric magnetic field. Among these, the non-axisymmetric magnetic field caused by deviations in the installation position of the toroidal field and poloidal field coils is the most important source of the error field.	GB/T-4960.9
-eruption-cloud	zh	聚变/核工程术语，对应英文“eruption cloud”。	internal:dict-improvements
-eruption-volcanic	zh	聚变/核工程术语，对应英文“eruption, volcanic”。	internal:dict-improvements
-essential-services	zh	聚变/核工程术语，对应英文“essential services”。	internal:dict-improvements
+eruption-cloud	zh	火山爆发式喷发期间在火山口上方形成的由火山碎屑和气体组成的云。多数爆发式活动期间形成的火山碎屑和气体的垂直柱体称为喷发柱或强羽流，其包括动量主导区和浮力主导区。喷发云可在重力作用下迅速侧向扩展，在能量最强的喷发中尤为如此，并可能顺风漂移数千千米。大喷发云可在数日内环绕地球。	translated:IAEA-safety-glossary
+eruption-volcanic	zh	见 volcanic eruption。	translated:IAEA-safety-glossary
+essential-services	zh	为使核动力厂安全系统始终保持可运行状态所必需的资源供应，包括电力、燃气、水、压缩空气、燃料和润滑剂。	translated:IAEA-safety-glossary
 etg-mode	en	A micro-instability at the electron gyroradius scale that drives electron heat transport.	corpus
 etg-mode	zh	电子温度梯度模是电子回旋半径尺度上驱动电子热输运的微观不稳定性。	corpus
-evacuation	zh	聚变/核工程术语，对应英文“evacuation”。	internal:dict-improvements
+evacuation	zh	在核或辐射应急中为避开或减少短期照射而将人员从某一区域迅速、临时地撤出。撤离是一项紧急防护行动。预计其仅维持较短时间（例如一天至数周）。若撤离无法在这一较短时间内解除，则应以迁居替代。撤离可基于可观测的状况或电厂状况作为预防性紧急防护行动采取。另见迁居。	translated:IAEA-safety-glossary
 evaluation	en	The act of forming an opinion of the amount, value or quality of something after thinking about it carefully.	https://www.oxfordlearnersdictionaries.com/definition/english/evaluation
 evaluation	zh	评估是经过仔细思考后对某事物的数量、价值或质量形成判断的行为。	https://www.oxfordlearnersdictionaries.com/definition/english/evaluation
 eveda	en	The Engineering Validation and Engineering Design Activities phase of IFMIF.	corpus
 eveda	zh	工程验证与工程设计活动是 IFMIF 项目的一个阶段。	corpus
-event	zh	聚变/核工程术语，对应英文“event”。	internal:dict-improvements
+event	zh	在对事件的报告与分析中，事件是指运行者并非有意造成的任何发生情况，包括操作失误、设备故障或其他意外事故，以及其他人蓄意的行为，其后果或潜在后果从防护与安全的角度看不可忽略。! 与事件的报告和分析有关的术语与安全标准中所用的术语并不一致，应特别小心避免造成混淆。! 特别是，上文给出的事件定义在本质上与安全标准中事故的定义（1）相同。这一差异源自以下事实：事件的报告与分析直接关注的是，一个可能发展为具有重大后果的事故的事件是否确实如此发展；事故这类术语仅用于描述最终结果，因此需要其他术语来描述较早的阶段。另见始发事件，以及始发事件：假想始发事件。事件一词也用于「特征、事件和过程」这一表述中，在放射性废物处置设施选址评价的背景下，该表述与场址和设施相关联。与场址有关的有关特征、事件和过程，是指那些可能影响处置设施长期性能、从而可能影响安全的特征、事件和过程。这些内容在安全论证及作为其支撑的安全评价中予以处理。各类事件与状况列于下表。事件 状况（包括预计运行事件） 事件 情景： 情况 情景：（包括始发事件、事故 假想的 （包括运行工况、 前兆和未遂事件） 事件 事故工况） 情况 事故 故意原因 例如急性 运行 核与 例如慢性（非故意 （未经授权行为： 潜在 状态、 放射性 潜在 原因） 恶意与 照射 设计基准 应急、 照射 非恶意） 事故 超设计 （例如破坏、 工况 基准事故 盗窃） 工况 注：情景是一组假定的或设定的状况和/或事件。情景可表示单一时间点上的状况或单个事件，也可表示状况和/或事件的时间历程。预计运行事件；超设计基准事故；设计基准事故：见电厂状态（设计中考虑的）。这些术语使用以下属性：急性与慢性；实际与假想；非故意与故意原因；恶意与非恶意；核与放射性。词典（《简明牛津英语词典》[27]）定义：状况：与某一事件或某一行动相关联或对其有影响的事实或条件。发生：某事发生的这一事实或其频度；一起事件或一个事件。情况：一个人所处的境况集合。	translated:IAEA-safety-glossary
 ex-vessel	en	Located outside the tokamak vacuum vessel; the term states position relative to the vacuum vessel only and sets no outer bound.	https://www.iter.org/machine/vacuum-vessel
 ex-vessel	zh	堆外：位于托卡马克真空室外部；该词仅给出相对真空室的位置关系，不设定外边界。	https://www.iter.org/machine/vacuum-vessel
 ex-vessel-component	en	A collective term for components outside the vacuum vessel but inside the biological shield.	corpus
@@ -4198,23 +4198,23 @@ ex-vessel-loca	en	Loss-of-coolant accident caused by a coolant leak outside the 
 ex-vessel-loca	zh	冷却剂泄漏发生在真空室外部的失冷事故。	corpus
 exb-drift	en	Particle drift perpendicular to both the E and B fields.	corpus
 exb-drift	zh	E×B漂移是同时垂直于 E 场与 B 场的粒子漂移。	corpus
-excepted-package	zh	聚变/核工程术语，对应英文“excepted package”。	internal:dict-improvements
-exception	zh	聚变/核工程术语，对应英文“exception”。	internal:dict-improvements
-excess-risk	zh	聚变/核工程术语，对应英文“excess risk”。	internal:dict-improvements
-excluded-exposure	zh	聚变/核工程术语，对应英文“excluded exposure”。	internal:dict-improvements
-exclusion	zh	聚变/核工程术语，对应英文“exclusion”。	internal:dict-improvements
-exclusive-use	zh	聚变/核工程术语，对应英文“exclusive use”。	internal:dict-improvements
-exempt-waste	zh	聚变/核工程术语，对应英文“exempt waste”。	internal:dict-improvements
-exemption	zh	聚变/核工程术语，对应英文“exemption”。	internal:dict-improvements
-exemption-level	zh	聚变/核工程术语，对应英文“exemption level”。	internal:dict-improvements
-existing-exposure-situation	zh	聚变/核工程术语，对应英文“existing exposure situation”。	internal:dict-improvements
+excepted-package	zh	见 货包。	translated:IAEA-safety-glossary
+exception	zh	例外（exception）和除外（excepted）这两个术语有时用于描述安全标准中的某些要求或导则不视为适用的情形。在这方面，例外的效果可与豁免和排除的效果相比较。然而，这实际上是英文术语 exception 的一种通常用法，并非专门术语。豁免和排除这两个术语必然与不予适用的具体理由相关联，而例外则不然。《运输条例》[2] 中的「例外货包」一词即为此种用法的一个例子；货包若满足《运输条例》规定的条件，可不受《运输条例》特定要求的约束。	translated:IAEA-safety-glossary
+excess-risk	zh	见 风险。	translated:IAEA-safety-glossary
+excluded-exposure	zh	不认为可通过监管手段加以控制的照射。被排除的照射这一术语最常用于那些最难加以控制的天然源所致照射，例如地球表面宇宙辐射所致照射、人体内的 40K，或天然放射性核素活度浓度低于 IAEA 安全标准中相应值的天然存在放射性物质（NORM）。该概念与解控（通常用于材料）和豁免（与设施和活动或源有关）这两个概念相关。另见排除。	translated:IAEA-safety-glossary
+exclusion	zh	以某类照射不认为可通过所涉监管手段加以控制为理由，有意将这类照射排除在某一监管手段的范围之外。	translated:IAEA-safety-glossary
+exclusive-use	zh	在[《运输》]条例如此要求时，由单一托运人独家使用某一运输工具或某一大型货运容器，其全部初始、中间和最终装卸与运输均按托运人或收货人的指示进行。（见 SSR-6 (Rev. 1) [2]。）	translated:IAEA-safety-glossary
+exempt-waste	zh	见 waste。	translated:IAEA-safety-glossary
+exemption	zh	监管机构判定某一源或实践无需接受某些或全部方面的监管控制，其依据是源或实践所致照射和潜在照射过小，不值得适用这些方面；或者依据是不论剂量或风险的实际水平如何，这都是最优的防护方案。另见解控（1）和排除。	translated:IAEA-safety-glossary
+exemption-level	zh	见 水平。	translated:IAEA-safety-glossary
+existing-exposure-situation	zh	见 照射情况。	translated:IAEA-safety-glossary
 expansion-joint	en	A flexible compensating element that absorbs the thermal expansion displacement of a pipe.	corpus
 expansion-joint	zh	膨胀节是吸收管道热膨胀位移的柔性补偿元件。	corpus
-explosive-eruption	zh	聚变/核工程术语，对应英文“explosive eruption”。	internal:dict-improvements
-exposure	zh	聚变/核工程术语，对应英文“exposure”。	internal:dict-improvements
-exposure-assessment	zh	聚变/核工程术语，对应英文“exposure assessment”。	internal:dict-improvements
-exposure-categories	zh	聚变/核工程术语，对应英文“exposure categories”。	internal:dict-improvements
-exposure-due-to-radon	zh	聚变/核工程术语，对应英文“exposure due to radon”。	internal:dict-improvements
+explosive-eruption	zh	见 eruption。	translated:IAEA-safety-glossary
+exposure	zh	1. 受到辐照的状态或情形。! 不应将照射用作剂量的同义词。剂量是对照射所致效应的度量。对电离辐射的照射可依据受照个人的身份划分为不同的照射类别；依据照射发生的情形划分为不同的照射情况；并可依据照射的来源划分。急性照射。在短时间内受到的照射。通常用于指持续时间足够短、以致所致剂量可视为瞬时的照射（例如不足一小时）。外照射。来自体外源的辐射所致的照射。与内照射相对。内照射。来自体内源的辐射所致的照射。与外照射相对。越境照射。一国公众成员因另一国通过事故、排放或废物处置释放的放射性物质而受到的照射。另见潜在照射。2. X 射线或 γ 辐射在空气中产生的同一符号的全部离子的电荷之和，此时光子在适当小的空气体积元中释放的全部电子均在空气中被完全阻止，该和除以体积元中空气的质量。单位：C/kg（过去曾使用伦琴（R））。3. 个人在一定时期（例如一年）内所受空气中潜在 α 能量浓度或相应平衡当量浓度的时间积分。用于与 222Rn 或 220Rn 的衰变产物所致照射有关的情形。对于潜在 α 能量浓度，SI 单位为 J·h/m3；对于平衡当量浓度，SI 单位为 Bq·h/m3。氡所致照射。在规定时段内对氡活度浓度的时间积分。氡所致照射是一种量测量，它与计入平衡因子的潜在 α 能量照射相关，因此与有效剂量相关。4. [“[T]he 个人所受照射的某放射性核素的空气浓度 … 与照射时间的乘积。更一般地，当空气浓度随时间变化时，则为个人所受照射的某放射性核素的空气浓度在照射时间上的积分。”]该定义逐字引自参考文献 [28]，其反映了尤其在气载氡情形中所见的一种对照射的宽松用法。此处列出该用法仅供参考，但不提倡。	translated:IAEA-safety-glossary
+exposure-assessment	zh	见 剂量评价。	translated:IAEA-safety-glossary
+exposure-categories	zh	医疗照射。患者为自身的医学或牙科诊断（诊断照射）或医学治疗（治疗照射）目的而受到的照射；照护者和陪护者受到的照射；以及作为生物医学研究计划一部分而受到照射的志愿者所受到的照射。见患者。职业照射。工作人员在其工作过程中受到的照射。公众照射。公众成员因计划照射情况、应急照射情况和现存照射情况中的源而受到的照射，不包括任何职业照射或医疗照射。	translated:IAEA-safety-glossary
+exposure-due-to-radon	zh	见 照射。	translated:IAEA-safety-glossary
 exposure-pathway	zh	聚变/核工程术语，对应英文“exposure pathway”。	internal:dict-improvements
 exposure-situations	zh	聚变/核工程术语，对应英文“exposure situations”。	internal:dict-improvements
 extended-mhd	en	An MHD model that includes two-fluid, FLR and kinetic closure effects.	corpus
