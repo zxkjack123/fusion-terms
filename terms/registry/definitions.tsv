@@ -4563,15 +4563,15 @@ intraplate	zh	就构造过程而言，指位于地球构造板块内部的。	tr
 intrinsic-rotation	en	Spontaneous plasma rotation that occurs without external momentum input.	corpus
 intrinsic-rotation	zh	本征旋转是无外部动量输入时自发产生的等离子体旋转。	corpus
 intrusion	zh	见 人类侵入。	translated:IAEA-safety-glossary
-intrusion-barrier	zh	聚变/核工程术语，对应英文“intrusion barrier”。	internal:dict-improvements
-investigation-level	zh	聚变/核工程术语，对应英文“investigation level”。	internal:dict-improvements
-iodine-thyroid-blocking	zh	聚变/核工程术语，对应英文“iodine thyroid blocking”。	internal:dict-improvements
+intrusion-barrier	zh	见 屏障。	translated:IAEA-safety-glossary
+investigation-level	zh	见 水平。	translated:IAEA-safety-glossary
+iodine-thyroid-blocking	zh	在涉及放射性碘的核应急或辐射应急中，施用稳定碘的化合物（通常为碘化钾）以防止或减少甲状腺对放射性碘同位素的摄取。碘甲状腺阻断是一项紧急防护行动。「稳定碘预防」「甲状腺阻断」或「碘封闭」等术语有时被用来描述同一概念，但 IAEA 出版物中优先采用碘甲状腺阻断这一说法。	translated:IAEA-safety-glossary
 ion	zh	离子，指因获得或失去一个或多个绕核电子而带电的原子。完全电离的原子是指所有电子均被剥离的原子。	translated:ITER-glossary
 ion-bernstein-wave	en	A plasma wave that propagates perpendicular to the magnetic field at harmonics of the ion cyclotron frequency.	GB/T-4960.9
 ion-implantation	en	The embedding of energetic ions into the near-surface layers of plasma-facing component material.	corpus
 ion-implantation	zh	离子注入：能量离子嵌入面向等离子体部件材料的近表层。	corpus
 ionization	zh	聚变/核工程术语，对应英文“Ionization”。	internal:dict-improvements
-ionizing-radiation	zh	聚变/核工程术语，对应英文“ionizing radiation”。	internal:dict-improvements
+ionizing-radiation	zh	见 辐射。	translated:IAEA-safety-glossary
 irradiation-campaign	en	A planned series of material irradiation experiments carried out at a neutron source.	corpus
 irradiation-campaign	zh	辐照试验活动：在中子源上按计划开展的一系列材料辐照实验。	corpus
 irradiation-capsule	en	An encapsulated specimen holder that is placed in a neutron irradiation facility.	corpus
@@ -4580,10 +4580,10 @@ irradiation-creep	en	Creep deformation enhanced by neutron irradiation.	corpus
 irradiation-creep	zh	辐照蠕变是中子辐照增强的蠕变变形。	corpus
 irradiation-embrittlement	en	Degradation of material ductility and toughness under neutron irradiation.	corpus
 irradiation-embrittlement	zh	辐照脆化是中子辐照下材料延性与韧性下降的现象。	corpus
-irradiation-installation	zh	聚变/核工程术语，对应英文“irradiation installation”。	internal:dict-improvements
+irradiation-installation	zh	容纳粒子加速器、X 射线装置或大型放射源、且能够产生高辐射场的构筑物或装置。辐照装置包括用于外照射放射治疗的装置、用于商品灭菌或保存的装置，以及某些用于工业射线照相的装置。	translated:IAEA-safety-glossary
 island-divertor	en	A divertor concept that exploits the magnetic island topology at the plasma edge, used in W7-X, to spread the exhaust heat load over a larger wetted area.	corpus
 island-divertor	zh	利用等离子体边缘磁岛拓扑的偏滤器方案（用于 W7-X），将排出的热负荷铺展到更大的润湿面积。	corpus
-isolation	zh	聚变/核工程术语，对应英文“isolation (of radioactive waste in a disposal facility)”。	internal:dict-improvements
+isolation	zh	将放射性废物在物理上与人和环境分隔开并加以滞留。在处置设施中把放射性废物连同其相关危害一并隔离，涉及：尽量减小可能降低处置设施完整性的各种因素的影响；为大多数长寿命放射性核素提供极低的迁移性，以阻碍其从处置设施中迁移；以及使人员在没有专门技术能力的情况下难以接近废物。设计特征旨在为短寿命废物提供数百年量级的隔离（一种包容功能），并为中放废物和高放废物提供至少数千年量级的隔离。隔离是地质处置的一项固有特征。	translated:IAEA-safety-glossary
 isolation-valve	en	A shut-off valve that cuts off or connects the medium flow in a line.	corpus
 isolation-valve	zh	隔离阀是切断或接通管路中介质流的截断阀。	corpus
 isotope	zh	同位素，指同一元素的若干版本之一，其原子核中中子数不同而质子数相同。	translated:ITER-glossary
@@ -4595,7 +4595,7 @@ isotope-separation	en	Process to separate the hydrogen isotopes (H, D, T).	corpu
 isotope-separation	zh	同位素分离是将氢同位素氕（H）、氘（D）、氚（T）分开的过程。	corpus
 isotopic-composition	en	The relative abundance of the isotopes in a material.	corpus
 isotopic-composition	zh	同位素组成是材料中各同位素的相对丰度。	corpus
-item-important-to-safety	zh	聚变/核工程术语，对应英文“item important to safety”。	internal:dict-improvements
+item-important-to-safety	zh	见 电厂设备。	translated:IAEA-safety-glossary
 iter-to-demo	en	Transition phase from the ITER experimental results to the design of DEMO.	corpus
 iter-to-demo	zh	从 ITER 实验结果过渡到 DEMO 设计的阶段。	corpus
 itg-mode	en	A micro-instability driven by the ion temperature gradient, and a major driver of ion heat transport.	corpus
@@ -4606,18 +4606,18 @@ jointed-magnet	en	A magnet whose segments are connected by demountable electrica
 jointed-magnet	zh	接头磁体：各段之间以可拆卸电接头相连的磁体。	corpus
 json-format	en	The JavaScript Object Notation format, abbreviated JSON.	corpus
 json-format	zh	JSON格式即 JavaScript Object Notation 格式，缩写为 JSON。	corpus
-justification	zh	聚变/核工程术语，对应英文“justification”。	internal:dict-improvements
+justification	zh	1. 针对计划照射情形判定某一实践总体上是否具有正当性的过程；即判定引入或继续该实践给个人和社会带来的预期利益是否超过该实践所造成的危害（包括辐射危害）。2. 针对应急照射情形或现存照射情形判定拟议的防护行动或补救行动总体上是否可能具有正当性的过程；即判定引入或继续该防护行动或补救行动给个人和社会带来的预期利益（包括辐射危害的减少）是否超过该行动的成本以及该行动所造成的任何危害或损害。	translated:IAEA-safety-glossary
 kbm	en	The kinetic extension of the ideal ballooning mode, important at high beta.	corpus
 kbm	zh	动理学气球模是理想气球模的动理学推广，在高比压下较为重要。	corpus
-kerma-k	zh	聚变/核工程术语，对应英文“kerma, K”。	internal:dict-improvements
+kerma-k	zh	量 K，定义为：dE tr K= dm，其中 dEtr 为不带电电离粒子在质量为 dm 的物质中释放的所有带电电离粒子的初始动能之和。比释动能的 SI 单位为焦耳每千克（J/kg），称为戈瑞（Gy）。kerma 最初是 kinetic energy released in matter 的首字母缩略词，但现在已被接受为一个词。空气比释动能。空气的比释动能值。在带电粒子平衡条件下，空气比释动能（以戈瑞计）在数值上近似等于空气吸收剂量（以戈瑞计）。参考空气比释动能率。在参考距离 1 m 处、对空气衰减和散射作修正后的空气中空气比释动能率。该量以 1 m 处的 µGy/h 表示。	translated:IAEA-safety-glossary
 kink-mode	en	A macroscopic instability that causes the plasma to be twisted as a whole.	GB/T-4960.9
-knowledge-management	zh	聚变/核工程术语，对应英文“knowledge management”。	internal:dict-improvements
+knowledge-management	zh	识别、管理和共享一个组织的知识，并使各类人群能够共同创造新知识以帮助实现该组织目标的综合性、系统性方法。在管理体系的语境下，知识管理有助于组织从其自身经验中获得洞察和理解。知识管理中的具体活动有助于组织更好地获取、记录、存储和利用知识。「知识」一词常被用来指人类在漫长岁月中积累的大量事实和原理。显性知识是载于诸如文件、图纸、计算书、设计、数据库、程序和手册之中的知识。隐性知识是存在于个人头脑中、通常未以任何形式被捕获或转移的知识（若被捕获或转移，它就会成为显性知识）。知识不同于信息：数据产生信息，而知识是通过获取、理解和解释信息而获得的。知识和信息都由真实的陈述构成，但知识服务于某一目的：知识赋予有效行动的能力。对一个组织而言，知识就是对信息的获取、理解和解释。知识可用于诸如下列目的：解决问题和学习；形成判断和意见；决策、预测和战略规划；生成可行的行动备选方案并采取行动以实现预期结果。知识还能保护智力资产免于衰减，增强智慧，并提供更大的灵活性。	translated:IAEA-safety-glossary
 l-h-transition	en	The transition from a low-confinement mode to a high-confinement mode.	GB/T-4960.9
 l-mode	en	In the plasma of a magnetically confined device, an operating mode in which the confinement becomes poorer as the auxiliary heating power is raised.	GB/T-4960.9
 laminar-flow	en	Flow at low Reynolds number that is ordered.	corpus
 laminar-flow	zh	层流是低雷诺数下呈现有序状态的流动。	corpus
-large-freight-container	zh	聚变/核工程术语，对应英文“large freight container”。	internal:dict-improvements
-large-release-of-radioactive-material	zh	聚变/核工程术语，对应英文“large release of radioactive material”。	internal:dict-improvements
+large-freight-container	zh	见 货运容器。	translated:IAEA-safety-glossary
+large-release-of-radioactive-material	zh	一种放射性物质释放，对其而言，在适用时间和适用区域上有限的场外防护行动不足以保护人和环境。另见放射性物质早期释放；另见纵深防御。	translated:IAEA-safety-glossary
 laser-boron-fusion	en	A laser-driven fusion scheme based on p-11B.	corpus
 laser-boron-fusion	zh	激光硼聚变是基于p-11B的激光驱动聚变方案。	corpus
 laser-driven-fusion	en	An inertial confinement fusion scheme that uses high-power laser beams as the driver to ablate and implode the fuel capsule.	corpus
@@ -4626,29 +4626,29 @@ laser-energy-balance	en	The partition of laser energy and the absorption efficie
 laser-energy-balance	zh	激光能量平衡是激光能量的分配及其吸收效率。	corpus
 laser-plasma-interaction	en	Interaction of laser light with plasma at the critical surface, which governs energy coupling and parametric instabilities.	corpus
 laser-plasma-interaction	zh	激光与等离子体在临界面的相互作用，决定能量耦合与参量不稳定性。	corpus
-late-effect	zh	聚变/核工程术语，对应英文“late effect”。	internal:dict-improvements
-latent-weakness	zh	聚变/核工程术语，对应英文“latent weakness”。	internal:dict-improvements
-lava	zh	聚变/核工程术语，对应英文“lava”。	internal:dict-improvements
+late-effect	zh	见 健康效应。	translated:IAEA-safety-glossary
+latent-weakness	zh	见 原因。	translated:IAEA-safety-glossary
+lava	zh	由火山或喷发裂隙以溢流穹丘或熔岩流形式喷出地表的熔融岩石。熔岩刚从火山口喷出时是温度极高的液体，通常为 700–1200°C。熔岩流的黏度相差许多个数量级，这对其流动特性有强烈影响。[法人] 依国家立法指定、对任何具有防护与安全影响的行动负有责任和权力的任何组织、公司、合伙企业、商号、协会、信托、遗产、公共或私人机构、团体、政治或行政实体或其他人员。在法律文本中与「自然人」（即个人）相对。另见申请人、许可证件和登记。	translated:IAEA-safety-glossary
 lawson-criterion	en	The criterion derived by Lawson for achieving controlled deuterium-tritium fusion; it requires the plasma temperature to be greater than 100 million degrees (10 keV) and the product of the plasma density and the plasma energy confinement time to be greater than 2 x 10^20 m^-3 s.	GB/T-4960.9
 lawson-s-criteria	zh	1955 年，英国物理学家 John Lawson（1923-2008）证明聚变条件取决于三个关键参数：温度（T）、密度（n）和约束时间（τ）。（劳森判据）	translated:ITER-glossary
 leading-edge	en	The exposed edge of a plasma-facing component tile that faces the upstream plasma flow and is critical for thermal loading.	corpus
 leading-edge	zh	前缘：面向等离子体部件瓦块朝向等离子体上游流的暴露边缘，对热负荷至关重要。	corpus
 lethargy	en	The logarithmic energy variable u = ln(E0/E).	corpus
 lethargy	zh	对数能降是对数能量变量 u = ln(E0/E)。	corpus
-level	zh	聚变/核工程术语，对应英文“level”。	internal:dict-improvements
-licence	zh	聚变/核工程术语，对应英文“licence”。	internal:dict-improvements
-licensee	zh	聚变/核工程术语，对应英文“licensee”。	internal:dict-improvements
+level	zh	清洁解控水平。由监管机构制定、以活度浓度表示的水平值，处于或低于该值时，可对已申报或已获批准实践中的辐射源解除监管控制。另见清洁解控（1）。诊断参考水平。医学影像中使用的一种水平，用于指示在常规条件下，某项特定医学影像放射学程序中给予患者的剂量或所施用的放射性药物量对于该程序而言是否异常高或异常低 [1]。对于放射性药物的使用，诊断参考水平是针对标准化患者群体或标准模体的典型检查以及针对定义宽泛的设备类型而言的活度水平。在诊断性能和技术性能方面采用良好实践和正常实践的标准程序中，只要未超过诊断参考水平，即表明实践良好。应急行动水平（EAL）。用于检测、识别和确定应急等级的、针对可观察条件的具体而预先确定的准则。应急行动水平可以代表仪表读数、某台设备的状态或任何可观察事件，例如火灾。豁免水平。由监管机构制定、以活度浓度、总活度、剂量率或辐射能量表示的水平值，处于或低于该值时，辐射源无需接受监管控制的某些方面或所有方面。监管机构也可在接到申报后逐案给予豁免。尽管豁免水平这一术语严格说来在此类情形下并不适用，监管机构仍可制定豁免准则，以类似方式表述，或改写为以基于适当剂量评价的年剂量表述。（见 GSR Part 3 [1] 及 RS-G-1.7 [13] 第 5.12 段。）豁免水平的值在 GSR Part 3 [1] 附表 I 的表 I.1 和表 I.2 中给出。调查水平。有效剂量、摄入量或单位面积或单位体积污染量等某一量的值，处于或高于该值时将开展调查。运行干预水平（OIL）。与通用准则相对应的某一可测量量的设定水平。运行干预水平通常以剂量率或所释放放射性物质的活度、时间积分的空气活度浓度、地面或表面浓度，或环境、食品或水样品中放射性核素的活度浓度来表示。运行干预水平用于依据环境测量结果立即且直接地（无需进一步评价）确定适当的防护行动。记录水平。由监管机构规定的剂量、照射或摄入量水平，处于或高于该值时，工作人员的剂量、照射或摄入量值应记入其个人照射记录。参考水平。对于应急照射情形或现存照射情形，指高于该水平即不宜计划允许照射发生、低于该水平则继续实施防护与安全最优化的剂量、风险或活度浓度水平。为参考水平选定的值将取决于所考虑照射的当时情况。	translated:IAEA-safety-glossary
+licence	zh	1. 由监管机构颁发、授予开展与某一设施或活动有关的特定活动的授权的法律文件。许可证件是授权过程的产物（尽管有时使用许可证办理过程这一术语），持有现行许可证件的实践即为已获批准的实践。授权可采取其他形式，例如登记或认证。2. [监管机构授予申请人、使其对核设施的选址、设计、建造、调试、运行或退役承担责任的任何授权。]（见参考文献 [4]。）3. [监管机构授予的、开展与乏燃料管理或放射性废物管理有关的任何活动的任何授权、准许或认证。]（见参考文献 [5]。）！公约 [4, 5] 中的定义（2）和（3）在范围上比定义（1）中 IAEA 的通常用法略为宽泛。！在 IAEA 的用法中，许可证件是授权的一种特定类型，通常代表对整座设施或整个活动的运行的首要授权。许可证件所附的条件可能要求许可证持有者在开展特定活动之前取得进一步的、更为具体的授权或批准。	translated:IAEA-safety-glossary
+licensee	zh	现行许可证件的持有者。许可证持有者是对某一设施或活动负有总体责任的个人或组织。	translated:IAEA-safety-glossary
 licensing	en	Regulatory approval process for the construction and operation of a fusion plant.	corpus
 licensing	zh	聚变装置建造与运行的监管审批过程。	corpus
-licensing-basis	zh	聚变/核工程术语，对应英文“licensing basis”。	internal:dict-improvements
+licensing-basis	zh	适用于核设施的一组监管要求。除一组监管要求之外，许可基准还可包括监管机构与许可证持有者之间达成的协议和承诺（例如以往来函件的形式或技术会议上所作陈述的形式）。	translated:IAEA-safety-glossary
 licensing-pathway	en	The regulatory route by which construction and operation permits are obtained.	corpus
 licensing-pathway	zh	许可路径：获得建造与运行许可所遵循的监管路径。	corpus
-licensing-process	zh	聚变/核工程术语，对应英文“licensing process”。	internal:dict-improvements
-life-cycle-management	zh	聚变/核工程术语，对应英文“life cycle management”。	internal:dict-improvements
-life-lifetime	zh	聚变/核工程术语，对应英文“life, lifetime”。	internal:dict-improvements
-life-management	zh	聚变/核工程术语，对应英文“life management”。	internal:dict-improvements
-lifetime	zh	聚变/核工程术语，对应英文“lifetime”。	internal:dict-improvements
-lifetime-dose	zh	聚变/核工程术语，对应英文“lifetime dose”。	internal:dict-improvements
+licensing-process	zh	见 许可证件。	translated:IAEA-safety-glossary
+life-cycle-management	zh	全寿期管理（或称寿命管理），其中适当认识到在寿期的各个阶段都可能存在需要考虑的影响。一个例子是对产品、过程和服务的处理方式，其中认识到在产品寿期的各个阶段（原材料的提取和加工、制造、运输和分销、使用和再利用，以及回收和废物管理）都存在环境影响和经济后果。「全寿期循环」（life cycle）一词（相对于寿命 lifetime）意味着寿命确实是循环性的（如回收或后处理的情形）。另见「从摇篮到坟墓」方法和老化管理。	translated:IAEA-safety-glossary
+life-lifetime	zh	设计寿期。设施或部件预期按其制造时所依据的技术规格运行的时期。运行寿期、运行寿命 1. 已获批准的设施被用于其既定目的直至退役或关闭的时期。也使用运行期和运行阶段这两个同义词。2. [乏燃料设施或放射性废物管理设施被用于其既定目的的时期。就处置设施而言，该时期始于乏燃料或放射性废物首次被置入设施之时，止于设施关闭之时。]（见参考文献 [5]。）鉴定寿命。通过试验、分析或经验证明某一构筑物、系统或部件能够在特定运行条件下在接受准则范围内发挥功能，同时保持其在设计基准事故或设计基准地震的事故工况下履行其安全功能的能力的时期。服役期限。构筑物、系统或部件从初始运行到最终退出服役的时期。	translated:IAEA-safety-glossary
+life-management	zh	见 ageing management。	translated:IAEA-safety-glossary
+lifetime	zh	见 寿命。	translated:IAEA-safety-glossary
+lifetime-dose	zh	见 剂量概念。	translated:IAEA-safety-glossary
 lifetime-management	zh	聚变/核工程术语，对应英文“lifetime management”。	internal:dict-improvements
 lifetime-risk	zh	聚变/核工程术语，对应英文“lifetime risk”。	internal:dict-improvements
 limit	zh	聚变/核工程术语，对应英文“limit”。	internal:dict-improvements
