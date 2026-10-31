@@ -44,7 +44,7 @@ adjudication: "方案甲 — 按目标中文名补齐（用户裁决 2026-10-31�
 | w3 空 `quote` | **854 / 854** | 100% 为空 |
 | 全库非 w3 空 `quote` | **1040** | 本任务不修；构成 `--mode evidence` 全库跑必红的原因（G3） |
 | w3 evidence 来源 | **782** `IAEA-Safety-Glossary-2018`（裸名）+ **72** ITER URL | 裸名无法做 URL 探测 |
-| evidence 去重后唯一 URL 数 | **2** | URL 探测只跑 2 次（B5） |
+| evidence 去重后唯一 URL 数 | **基线 1 → 回填后 2** | 基线仅 72 条 ITER 行走 URL（782 条 IAEA 为裸名，无法探测）⇒ T0.2 RED 实测 `probes=1`；T1.6 回填后 IAEA+ITER 两个 ⇒ `probes=2`（B5） |
 | 全库非 w3 `corresponding to` 套话变体 | **99** | 本任务不修，登记为已知限制（C4） |
 | `registry_batch_verify.py --self-test` | **19/24，exit 1** | 修 T0.1 后 24/24；加 evidence 模式断言后 27/27 |
 | `pipeline.validate_registry` | **exit 0** | 3076 concepts / 10249 aliases / 3203 evidence / 6152 definitions |
@@ -288,14 +288,14 @@ BOUNDARY
   - ✅ `[T-A]` `.venv/bin/python scripts/registry_batch_verify.py --self-test` → exit 0 且输出 `27/27 assertions passed`
   - ✅ `[T-A]` `.venv/bin/python scripts/registry_batch_verify.py --mode evidence --ids-file .github/plans/t4973-batches/w3.ids --expect 854 --check-urls > /tmp/opencode/t5072/red-evidence.txt 2>&1; echo $?` → `1`（RED：当前 854 条空 quote）
   - ✅ `[T-B]` `grep -c 'evidence_quote_empty' /tmp/opencode/t5072/red-evidence.txt` = `854`
-  - ✅ `[T-B]` **probes 去重**：`grep -o 'probes=[0-9]*' /tmp/opencode/t5072/red-evidence.txt` = `probes=2`（唯一 URL 2 个，不是 854）
+  - ✅ `[T-B]` **probes 去重**：`grep -o 'probes=[0-9]*' /tmp/opencode/t5072/red-evidence.txt` = `probes=1`（基线 854 行中只有 72 条 ITER 行是 URL，782 条 IAEA 行为裸名 ⇒ 唯一 URL 1 个，不是 854；回填后 T1.6 要求 `probes=2`）
   - ✅ `[T-A]` 无 `--ids-file` 时：`.venv/bin/python scripts/registry_batch_verify.py --mode evidence` → exit ≠ 0 且 stderr 含 `requires --ids-file`（G3）
   - ✅ `[T-B]` `python3 - <<'PY'` 探针：`http_status(IAEA_URL)==200` 且 `http_status(ITER_URL)==200`（真实网络；失败则记录 `[URL-FAIL]`，不得用 `--no-net` 通过）
   - ✅ `[T-A]` `.venv/bin/ruff format --check scripts/registry_batch_verify.py` 与 `.venv/bin/ruff check scripts/registry_batch_verify.py` → exit 0
 - **能失败证明（变异法）**:
   - 给任一 evidence 行填入非空 quote 并把 source 改成 `IAEA-Safety-Glossary-2018`（裸名），`--mode evidence --check-urls` 必须报 `evidence_source_not_url`；
   - 把 URL 改成 `https://example.org/missing`，`url_probe` 返回 404，必须报 `evidence_url_status`；
-  - 删掉去重逻辑（对每行都调 `url_probe`）→ `probe_calls == len(unique_urls)` 断言失败，`probes=854`。
+  - 删掉去重逻辑（对每行都调 `url_probe`）→ `probe_calls == len(unique_urls)` 断言失败并新增 `evidence_probe_dedup`；基线实测同一 ITER URL 被探测 **72** 次（`probes=72`），回填后为 `probes=854`。
 - **提交**: `git add scripts/registry_batch_verify.py && git commit -m 'feat(scripts): add evidence acceptance mode with 3 self-test assertions and dedup URL probe (#T-5072)'`
 - **边界**: 不改 `check_names` / `check_definitions` / `check_allowlist` 的现有判定；不改 `SELF_TEST_CASES` 既有 24 条的期望值。
 
@@ -978,9 +978,9 @@ BOUNDARY
 | Task | 日期 | commit | exit | 关键输出 |
 |---|---|---|---|---|
 | **plan-rev2** | **2026-10-31** | — | — | **revised after CT (REFUTED) + user adjudication 2026-10-31**：用户裁定 316 条 CROSS_REF 采用**方案甲（按目标中文名补齐，zh = `见 <preferred_zh>。`）**，无目标行逐条登记（附录 C），16 条污染行隔离且 zh 不复现污染。吸收 CT 5 项 blocker：**B1** 行型三分 431/300/16 + 解析 287/29；**B2** evidence 模式 +3 断言（24→27）；**B3** 变异数字改为 19/24 与 21/24；**B4** 归一化加 PUA 剥离、854/854 逐字匹配、删除 difflib；**B5** URL 探测按唯一 URL 去重（probes=2）。另吸收 C1–C6、G1–G3。任务总数 47，commit 估算 38。 |
-| T0.0 | | — | | |
-| T0.1 | | | | |
-| T0.2 | | | | |
+| T0.0 | 2026-10-31 | — | 1 | BASE=`3034dce`（计划入库后重测）；`red-selftest.txt` = `19/24 assertions passed` exit 1；`validate_exit=0`；`w3.ids`=854；工作区仅 `?? iaea_fusion.html` |
+| T0.1 | 2026-10-31 | `5735da8` | 0 | self-test `24/24`；`--mode names … --expect 854` PASS；ruff ok；变异证明 删 index 3 → `19/24`、删 en 恢复 → `21/24`；`/tmp` 无残留副本（`ls /tmp \| grep -c t0_2_selftest_restored_` = 0） |
+| T0.2 | 2026-10-31 | `a9c8201` | 0 | self-test `27/27`；evidence RED：exit 1、`evidence_quote_empty` 854 条、**`probes=1`**（基线唯一 URL 只有 ITER 一个，782 条 IAEA 行为裸名）；无 `--ids-file` → exit 2 + `requires --ids-file`；真实探测 IAEA 200(0.80s)/ITER 200(1.11s)；ruff ok；变异证明：裸名+非空 quote → `evidence_source_not_url`、404 → `evidence_url_status`、删去重 → `probes=72` + `evidence_probe_dedup` |
 | T0.3 | | — | | |
 | T1.0 | | — | | |
 | T1.1–T1.5 | | | | |
@@ -991,6 +991,10 @@ BOUNDARY
 | T3.1 | | — | | |
 | T3.2 | | — | | |
 | T3.4 | | | | |
+
+**偏差记录（D1，2026-10-31）**：
+
+- `T0.2` 原验收写作 `probes=2`，实测基线为 `probes=1`：854 条 w3 evidence 行中仅 72 条 ITER 行走 URL，782 条 IAEA 行为裸名（`IAEA-Safety-Glossary-2018`），**没有可探测的 URL**。故 baseline 唯一 URL 数是 1，`probes=2` 是回填后的状态。已将 §0 该行改为「基线 1 → 回填后 2」、T0.2 验收改为 `probes=1`，并保留 T1.6/T3.1 的 `probes=2` 要求不变（回填把裸名改写成 IAEA URL 后即可达）。去重行为本身已由 self-test（合成 fixture `probes=2`）与真实 72 行 → 1 次探测共同证明。
 
 ## 附录 A — evidence backfill 脚本（`/tmp/opencode/t5072/backfill_evidence.py`）
 
