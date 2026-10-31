@@ -5198,41 +5198,41 @@ radiation-detriment	zh	某一受照群体及其后代因该群体受源辐射照
 radiation-dominated-regime	en	A high-temperature regime where radiation loss exceeds fusion power.	corpus
 radiation-dominated-regime	zh	辐射主导区间是辐射损失超过聚变功率的高温区间。	corpus
 radiation-emergency	zh	见 核或辐射应急。	translated:IAEA-safety-glossary
-radiation-generator	zh	聚变/核工程术语，对应英文“radiation generator”。	internal:dict-improvements
+radiation-generator	zh	见 源。	translated:IAEA-safety-glossary
 radiation-hardening	en	Hardening and embrittlement of a material from neutron irradiation.	corpus
 radiation-hardening	zh	辐照硬化是材料受中子辐照产生的硬化与脆化。	corpus
 radiation-induced-segregation	en	Irradiation-driven solute segregation in alloys.	corpus
 radiation-induced-segregation	zh	辐照偏析是合金中辐照驱动的溶质偏析。	corpus
 radiation-protection	zh	聚变/核工程术语，指“辐射防护”这一技术概念。	internal:dict-improvements
-radiation-protection-officer	zh	聚变/核工程术语，对应英文“radiation protection officer”。	internal:dict-improvements
-radiation-protection-programme	zh	聚变/核工程术语，对应英文“radiation protection programme”。	internal:dict-improvements
-radiation-risks	zh	聚变/核工程术语，对应英文“radiation risks”。	internal:dict-improvements
-radiation-safety	zh	聚变/核工程术语，对应英文“radiation safety”。	internal:dict-improvements
+radiation-protection-officer	zh	在某一类实践所涉辐射防护事项上具备技术能力、并由登记证持有者、许可证持有者或雇主指定负责监督监管要求实施的人员。	translated:IAEA-safety-glossary
+radiation-protection-programme	zh	旨在对辐射防护措施给予充分考虑的系统性安排。（见 SSR-6 (Rev. 1) [2]。）	translated:IAEA-safety-glossary
+radiation-risks	zh	照射所致的有害健康效应（包括此类效应发生的可能性），以及可能作为下列情形的直接后果而产生的任何其他安全相关风险（包括对环境的风险）：(a) 受到照射；(b) 放射性物质（包括放射性废物）的存在或其向环境的释放；(c) 对反应堆堆芯、核链式反应、放射源或任何其他辐射源失去控制。（见 SF-1 [17]。）就 IAEA 安全标准而言，假定不存在低于该水平即无相关辐射风险的辐射剂量阈值。安全要求与安全导则规定了其所指的照射及其他辐射风险。	translated:IAEA-safety-glossary
+radiation-safety	zh	见 safety。	translated:IAEA-safety-glossary
 radiation-shielding	en	The class of structures and material arrangements placed between a radiation source and the region to be protected, whose function is to attenuate the radiation field before it reaches that region.	corpus
 radiation-shielding	zh	设置在辐射源与需要保护的区域之间、用于在辐射到达该区域之前将其减弱的各类结构与材料布置。	corpus
-radiation-source	zh	聚变/核工程术语，对应英文“radiation source”。	internal:dict-improvements
-radiation-weighting-factor-wr	zh	聚变/核工程术语，对应英文“radiation weighting factor, wR”。	internal:dict-improvements
+radiation-source	zh	见 源。	translated:IAEA-safety-glossary
+radiation-weighting-factor-wr	zh	组织或器官中的吸收剂量与之相乘、以反映该辐射在低剂量下诱发随机性效应的相对生物效能的数值，其乘积即为当量剂量。该数值由国际放射防护委员会选定，以代表相关的相对生物效能，并与以往在剂量当量定义中为品质因子推荐的数值大致相容。参考文献 [26] 中推荐的辐射权重因数值列于下文。辐射类型 wR 光子，所有能量 1 电子与 μ 子，所有能量a 质子与带电 π 介子 2 α 粒子、裂变碎片、重离子 中子 中子能量的连续函数：注：所有数值均针对入射于人体的辐射，或对于内照射源，针对由摄入的放射性核素所发射的辐射。a 不包括结合于人体脱氧核糖核酸（DNA）的放射性核素所发射的俄歇电子，对此适用特殊的微剂量学考虑。对于未列入表中的辐射类型与能量，wR 可取为等于 ICRU 球体内 10 mm 深度处的 Q，并可按如下方式求得：1 ∞ Q= D 0 ∫ Q(L) DL dL 其中 D 为吸收剂量，Q(L) 为以水中的非限制线能量转移 L 表示的品质因子，见参考文献 [37] 的规定，DL 为 D 在 L 上的分布。1 当 L ≤ 10 时 Q= (L) 0.32L − 2.2 当 10 < L < 100 时 300 / L 当 L ≥ 100 时 其中 L 以 keV/µm 表示。	translated:IAEA-safety-glossary
 radiative-divertor	en	A divertor configured so that most of the power is radiated away before it reaches the target plates.	GB/T-4960.9
 radio-frequency-heating	en	A means of heating a plasma in which radio-frequency waves (electromagnetic waves) transfer their energy to the plasma as they propagate through it. See also radio-frequency wave.	GB/T-4960.9
-radioactive	zh	聚变/核工程术语，对应英文“radioactive”。	internal:dict-improvements
-radioactive-contents	zh	聚变/核工程术语，对应英文“radioactive contents”。	internal:dict-improvements
-radioactive-discharges	zh	聚变/核工程术语，对应英文“radioactive discharges”。	internal:dict-improvements
-radioactive-equilibrium	zh	聚变/核工程术语，对应英文“radioactive equilibrium”。	internal:dict-improvements
-radioactive-half-life	zh	聚变/核工程术语，对应英文“radioactive half-life”。	internal:dict-improvements
-radioactive-material	zh	聚变/核工程术语，对应英文“radioactive material”。	internal:dict-improvements
-radioactive-source	zh	聚变/核工程术语，对应英文“radioactive source”。	internal:dict-improvements
-radioactive-sources-safety-of	zh	聚变/核工程术语，对应英文“radioactive sources, safety of”。	internal:dict-improvements
-radioactive-substance	zh	聚变/核工程术语，对应英文“radioactive substance”。	internal:dict-improvements
+radioactive	zh	1. 具有放射性；发射电离辐射或粒子，或与电离辐射或粒子的发射有关。（形容词）！这是“科学”定义，不应与“监管”定义（2）相混淆。2. 因具有放射性而在国家法律中或由监管机构指定为须接受监管控制。（形容词）！这是“监管”定义，不应与“科学”定义（1）相混淆。	translated:IAEA-safety-glossary
+radioactive-contents	zh	包装内的放射性物质，连同包装内任何受污染或已活化的固体、液体和气体。（见 SSR-6 (Rev. 1) [2]。）	translated:IAEA-safety-glossary
+radioactive-discharges	zh	见 排放。	translated:IAEA-safety-glossary
+radioactive-equilibrium	zh	放射性衰变链（或其一部分）中，链内（或链的该部分内）各放射性核素的活度均相同的状态。当母核素的半衰期远长于任何衰变产物时，并在经过相当于寿命最长的衰变产物半衰期若干倍的时间之后，即达到此状态。因此，也使用“久期平衡”一词（此处“久期”意为“最终的”，与“暂时平衡”相对照）。	translated:IAEA-safety-glossary
+radioactive-half-life	zh	见 半衰期。	translated:IAEA-safety-glossary
+radioactive-material	zh	1. 因具有放射性而在国家法律中或由监管机构指定为须接受监管控制的物质。！这是放射性（2）的“监管”含义，不应与放射性（1）的“科学”含义相混淆：“具有放射性；发射电离辐射或粒子，或与电离辐射或粒子的发射有关”。！放射性（1）的“科学”含义——如在放射性物料一语中——仅指放射性的存在，并不表明所涉危害的大小。！使用放射性物料一语也是为了表明所指的是放射性（见放射性（1））的“科学”含义，而不是放射性物质一语所暗示的放射性（见放射性（2））的“监管”含义。！然而，在一些国家，放射性物料一语被用于“监管”目的。因此，澄清任何此类含义上的区分至关重要。在一些国家的监管术语中，放射性物质一旦成为放射性废物即不再属于放射性物质；放射性物料一语则用于涵盖两者，即放射性物料包括放射性物质和放射性废物。放射性物质应使用单数，除非明确提及存在各种类型的放射性物质。2. 含放射性核素、且货件中的活度浓度与总活度均超过[《运输条例》[2]第 IV 节]所规定数值的任何物质。（见 SSR-6 (Rev. 1) [2]。）！此用法为《运输条例》[2]所特有，在其他场合应予避免。	translated:IAEA-safety-glossary
+radioactive-source	zh	见 源。	translated:IAEA-safety-glossary
+radioactive-sources-safety-of	zh	见 放射源安全措施。	translated:IAEA-safety-glossary
+radioactive-substance	zh	见 放射性物质。	translated:IAEA-safety-glossary
 radioactive-waste	zh	聚变/核工程术语，指“放射性废物”这一技术概念。	internal:dict-improvements
-radioactive-waste-management	zh	聚变/核工程术语，对应英文“radioactive waste management”。	internal:dict-improvements
-radioactive-waste-management-facility	zh	聚变/核工程术语，对应英文“radioactive waste management facility”。	internal:dict-improvements
-radioactivity	zh	聚变/核工程术语，对应英文“radioactivity”。	internal:dict-improvements
-radiological-assessor	zh	聚变/核工程术语，对应英文“radiological assessor”。	internal:dict-improvements
-radiological-emergency	zh	聚变/核工程术语，对应英文“radiological emergency”。	internal:dict-improvements
-radiological-medical-practitioner	zh	聚变/核工程术语，对应英文“radiological medical practitioner”。	internal:dict-improvements
-radiological-procedure	zh	聚变/核工程术语，对应英文“radiological procedure”。	internal:dict-improvements
-radiological-protection	zh	聚变/核工程术语，对应英文“radiological protection”。	internal:dict-improvements
-radionuclides-of-artificial-origin	zh	聚变/核工程术语，对应英文“radionuclides of artificial origin”。	internal:dict-improvements
+radioactive-waste-management	zh	1. 涉及放射性废物的操作、预处理、处理、整备、运输、贮存和处置的所有行政与运行活动。放射性废物管理 处置前 处置 管理 工艺 贮存 运输 预处理 处理 整备 分拣 去污 活度 固定化 外包装容器 移除	translated:IAEA-safety-glossary
+radioactive-waste-management-facility	zh	1. 专门设计用于操作、处理、整备、贮存或永久处置放射性废物的设施。2. [任何以放射性废物管理为首要目的的设施或装置，包括正在退役过程中的核设施，但仅当其被缔约国指定为放射性废物管理设施时。]（见参考文献 [5]。）	translated:IAEA-safety-glossary
+radioactivity	zh	原子发生自发随机衰变、通常伴随辐射发射的现象。！在 IAEA 出版物中，放射性一词应仅用于指称该现象。！若要指称物理量或某一数量的放射性物质，应使用活度。	translated:IAEA-safety-glossary
+radiological-assessor	zh	在发生核应急或放射性应急时，通过开展辐射巡测、进行剂量评估、控制污染、确保应急工作人员的辐射防护，并就防护行动和其他应对行动提出建议，从而协助营运者或场外响应组织的人员或团队。辐射评估员可以是辐射防护负责人。	translated:IAEA-safety-glossary
+radiological-emergency	zh	见 应急。	translated:IAEA-safety-glossary
+radiological-medical-practitioner	zh	在辐射的医学应用方面受过专门教育和培训的卫生专业人员，能够独立实施或监督某一特定专业的放射诊疗程序。人员的能力通常由国家通过建立对特定专业（如放射学、放射治疗、核医学、牙科、心脏病学）放射医疗执业人员进行登记、认可或认证的正式机制来评定。尚未建立此类机制的国家，需评定许可证持有者提议担任放射医疗执业人员的任何个人的教育、培训和能力，并依据国际标准或已建立此类制度的国家的标准，判定该个人是否能够在所需专业范围内承担放射医疗执业人员的职能。	translated:IAEA-safety-glossary
+radiological-procedure	zh	涉及电离辐射的医学影像程序或治疗程序——例如诊断放射学、核医学或放射治疗中的程序，或计划程序、影像引导介入程序或其他涉及辐射的介入程序——其由辐射发生器、含密封源或非密封源的装置施予，或通过向患者施用的放射性药物施予。	translated:IAEA-safety-glossary
+radiological-protection	zh	见 防护。	translated:IAEA-safety-glossary
+radionuclides-of-artificial-origin	zh	见 天然来源放射性核素。	translated:IAEA-safety-glossary
 radionuclides-of-natural-origin	zh	聚变/核工程术语，对应英文“radionuclides of natural origin”。	internal:dict-improvements
 radiopharmacist	zh	聚变/核工程术语，对应英文“radiopharmacist”。	internal:dict-improvements
 radon	zh	聚变/核工程术语，对应英文“radon”。	internal:dict-improvements
