@@ -5588,24 +5588,24 @@ surface-roughening	en	Roughening of the wall surface morphology from plasma expo
 surface-roughening	zh	表面粗糙化是等离子体暴露导致的壁面形貌粗糙化。	corpus
 surveillance	zh	一种为核实设施或构筑物完整性而进行的检查。例如，在放射性废物处置设施的情形下，监督性检查指对设施的实体检查，以核实其完整性以及保护和保持非能动屏障的能力。	translated:IAEA-safety-glossary
 surveillance-testing	zh	为核实构筑物、系统与部件在被要求发挥作用时仍能运行或有能力执行其功能而进行的定期试验。	translated:IAEA-safety-glossary
-survey	zh	聚变/核工程术语，对应英文“survey”。	internal:dict-improvements
+survey	zh	区域调查。处置设施选址过程的一个早期阶段，在此期间对广大区域进行考察，以排除不适宜的地区，并鉴别其他可能含有适宜场址的地区。区域调查之后是场址表征。区域调查也可指任何其他经授权设施的选址过程。另见场址评价，场址评价包含场址表征，且并非专指处置设施场址。习惯调查。对公众成员行为中可能影响其照射的那些方面——例如膳食、食物消费速率或在不同地区的居留情况——所作的评价，通常旨在表征代表性人员。	translated:IAEA-safety-glossary
 synchrotron-radiation	en	Radiation emitted by a charged particle in a magnetic field as a consequence of its gyration (circulatory motion) in that field.	GB/T-4960.9
 system	zh	聚变/核工程术语，指“系统”这一技术概念。	internal:dict-improvements
-system-code	zh	聚变/核工程术语，对应英文“system code”。	internal:dict-improvements
-system-code-validation	zh	聚变/核工程术语，对应英文“system code validation”。	internal:dict-improvements
-system-code-verification	zh	聚变/核工程术语，对应英文“system code verification”。	internal:dict-improvements
-system-validation	zh	聚变/核工程术语，对应英文“system validation”。	internal:dict-improvements
+system-code	zh	一种计算模型，能够模拟诸如核电厂这类复杂系统的瞬态性能。系统分析程序通常包含热工水力学、中子学和传热方程，且必须包含用于模拟泵和分离器等部件性能的专用模型。系统分析程序通常还模拟电厂所采用的控制逻辑，并能够预测事故的演变过程。	translated:IAEA-safety-glossary
+system-code-validation	zh	见 验证。	translated:IAEA-safety-glossary
+system-code-verification	zh	见 校核。	translated:IAEA-safety-glossary
+system-validation	zh	见 验证。	translated:IAEA-safety-glossary
 systems-engineering	en	An interdisciplinary approach to designing, integrating and managing complex fusion plant systems over their life cycles.	corpus
 systems-engineering	zh	系统工程：在寿期内设计、集成并管理复杂聚变电站系统的跨学科方法。	corpus
 t-15md	zh	在莫斯科库尔恰托夫研究所运行的托卡马克。T-15MD 是对历史性 T-15 装置的升级——后者是首个使用超导磁体控制等离子体的托卡马克。	translated:ITER-glossary
-tailings	zh	聚变/核工程术语，对应英文“tailings”。	internal:dict-improvements
+tailings	zh	对矿石进行加工以提取铀系或钍系放射性核素后产生的残留物，或为其他目的加工矿石所产生的类似残留物。	translated:IAEA-safety-glossary
 tallying	en	Scoring of quantities such as flux, dose, and heating in Monte Carlo transport calculations.	corpus
 tallying	zh	在蒙特卡罗输运计算中对通量、剂量、核热等量的计数。	corpus
-tank	zh	聚变/核工程术语，对应英文“tank”。	internal:dict-improvements
+tank	zh	罐式容器。便携式罐体（包括罐式集装箱）、公路罐车、铁路罐车或盛装固体、液体或气体的容器，用于运输气体时其容量不小于 450 L。（见 SSR-6 (Rev. 1) [2]。）！此用法专用于《运输条例》[2]，在其他情况下应避免使用。	translated:IAEA-safety-glossary
 target-fabrication	en	Manufacturing of inertial confinement fusion fuel targets to the precision required for their implosion.	corpus
 target-fabrication	zh	按内爆所需精度制造惯性约束聚变燃料靶的过程。	corpus
-target-tissue-or-organ	zh	聚变/核工程术语，对应英文“target tissue or organ”。	internal:dict-improvements
-task-related-monitoring	zh	聚变/核工程术语，对应英文“task related monitoring”。	internal:dict-improvements
+target-tissue-or-organ	zh	靶组织或器官。辐射所指向的组织或器官，或为评估剂量所针对的辐射敏感组织或器官。用于内照射剂量学，通常与源区相关。	translated:IAEA-safety-glossary
+task-related-monitoring	zh	见 监测。	translated:IAEA-safety-glossary
 taylor-relaxation	en	Relaxation of a plasma to a minimum-energy state at constant helicity.	corpus
 taylor-relaxation	zh	Taylor弛豫是等离子体在螺旋度不变下向最小能量态的弛豫。	corpus
 taylor-state	en	A force-free minimum-energy equilibrium state (curl B = lambda B).	corpus
@@ -5616,17 +5616,17 @@ tcv	zh	由洛桑瑞士联邦理工学院（EPFL）作为瑞士等离子体中心
 tearing-mode	en	A class of resistive magnetohydrodynamic instability that was predicted theoretically for the tokamak and has since been confirmed experimentally (corresponding to tearing mode instability).	GB/T-4960.9
 techno-economic-analysis	en	An integrated assessment of the technical feasibility and economic viability of a design.	corpus
 techno-economic-analysis	zh	技术经济分析：对方案技术可行性与经济可行性的综合评价。	corpus
-technological-obsolescence	zh	聚变/核工程术语，对应英文“technological obsolescence”。	internal:dict-improvements
+technological-obsolescence	zh	见 非物理老化。	translated:IAEA-safety-glossary
 tem	en	A micro-instability driven by trapped electrons in magnetic wells.	corpus
 tem	zh	俘获电子模是由磁阱中俘获电子驱动的微观不稳定性。	corpus
 temperature-pedestal	en	The H-mode edge temperature pedestal structure.	corpus
 temperature-pedestal	zh	温度基座是 H 模边界温度基座结构。	corpus
-temporary-relocation	zh	聚变/核工程术语，对应英文“temporary relocation”。	internal:dict-improvements
+temporary-relocation	zh	见 搬迁。	translated:IAEA-safety-glossary
 tetrahedral-mesh	en	A tetrahedral mesh used for FEM and Monte Carlo calculations.	corpus
 tetrahedral-mesh	zh	四面体网格是用于有限元与蒙特卡罗计算的网格划分。	corpus
 tf-ripple	en	In a tokamak, the use of a finite number of discrete toroidal field coils makes the magnitude of the toroidal magnetic field fluctuate to some extent along the toroidal direction. The "ripple" in such a magnetic field traps particles and causes power loss.	GB/T-4960.9
 tftr	zh	聚变/核工程术语，对应英文“TFTR”。	internal:dict-improvements
-therapeutic-exposure	zh	聚变/核工程术语，对应英文“therapeutic exposure”。	internal:dict-improvements
+therapeutic-exposure	zh	见 医疗照射。	translated:IAEA-safety-glossary
 thermal-desorption	en	The thermally activated release of species implanted into or trapped in a material.	corpus
 thermal-desorption	zh	热脱附：已注入或被捕获在材料中的物种在热激活下被释放。	corpus
 thermal-fatigue	en	Material fatigue caused by cyclic thermal loading.	corpus
@@ -5644,23 +5644,23 @@ thermal-shock	en	Single-pulse high heat flux damage to the PFC.	corpus
 thermal-shock	zh	热冲击是单脉冲高热流对PFC造成的损伤。	corpus
 thermodiffusion	en	Temperature-gradient-driven particle flux (Soret effect in plasmas).	corpus
 thermodiffusion	zh	热扩散是温度梯度驱动的粒子通量，即等离子体中的Soret效应。	corpus
-thermodynamic-diameter	zh	聚变/核工程术语，对应英文“thermodynamic diameter”。	internal:dict-improvements
+thermodynamic-diameter	zh	见 活度中位空气动力学直径。	translated:IAEA-safety-glossary
 thermonuclear-fusion	en	A fusion reaction that is brought about by the use of a high temperature.	GB/T-4960.9
 theta-pinch	en	A magnetic confinement concept in which a plasma in a cylindrical geometric configuration is confined by means of a poloidal current and an axial magnetic field.	GB/T-4960.9
-thorium-series	zh	聚变/核工程术语，对应英文“thorium series”。	internal:dict-improvements
+thorium-series	zh	钍系。232Th 的衰变链。即 232Th、228Ra、228Ac、228Th、224Ra、220Rn、216Po、212Pb、212Bi、212Po（64%）、Tl（36%）和（稳定的）208Pb。[thoron] 氡-220。！此用法在 IAEA 安全标准中已停止使用，应避免使用。[thoron progeny] 220Rn 的（短寿命）放射性衰变产物。！此用法在 IAEA 安全标准中已停止使用，应避免使用。即 216Po（有时称为钍 A）、212Pb（钍 B）、212Bi（钍 C）、Po（钍 C′，64%）和 208Tl（钍 C″，36%）。稳定衰变产物 208Pb 有时称为钍 D。	translated:IAEA-safety-glossary
 thread	en	A lightweight execution unit within a process.	corpus
 thread	zh	线程是进程内的轻量级执行单元。	corpus
 three-alpha-reaction	en	The p + 11B -> 3 alpha + 8.7 MeV reaction channel.	corpus
 three-alpha-reaction	zh	三α反应是p + 11B -> 3 alpha + 8.7 MeV的反应道。	corpus
-through-or-into	zh	聚变/核工程术语，对应英文“through or into”。	internal:dict-improvements
+through-or-into	zh	经由或进入。货物在其中运输所经由或进入的国家，但明确不包括货物经航空运输飞越的国家，前提是在这些国家无计划停靠（见 SSR-6 (Rev. 1) [2]）。！此用法专用于《运输条例》[2]，在其他情况下应避免使用。	translated:IAEA-safety-glossary
 tilt-instability	en	A global CT/spheromak MHD instability of magnetic axis tilt.	corpus
 tilt-instability	zh	倾斜不稳定性是磁轴倾斜的全局CT/球马克MHD不稳定性。	corpus
-time-based-maintenance	zh	聚变/核工程术语，对应英文“time based maintenance”。	internal:dict-improvements
+time-based-maintenance	zh	见 定期维修。	translated:IAEA-safety-glossary
 time-cutoff	en	The maximum time used in particle tracking.	corpus
 time-cutoff	zh	时间截断是粒子跟踪中采用的最长时间。	corpus
-tissue-equivalent-material	zh	聚变/核工程术语，对应英文“tissue equivalent material”。	internal:dict-improvements
-tissue-substitute	zh	聚变/核工程术语，对应英文“tissue substitute”。	internal:dict-improvements
-tissue-weighting-factor-wt	zh	聚变/核工程术语，对应英文“tissue weighting factor, wT”。	internal:dict-improvements
+tissue-equivalent-material	zh	组织等效材料。经设计在受照射时具有与软组织相似的相互作用特性的材料。用于制作模体，例如 ICRU 球。ICRU 球中使用的组织等效材料密度为 1 g/cm3，按质量计的元素组成为 76.2% 氧、11.1% 碳、10.1% 氢和 2.6% 氮，但其他各种组成（例如水）的材料被认为适用于特定应用 [23]。术语组织替代物也用于表示相同含义。	translated:IAEA-safety-glossary
+tissue-substitute	zh	见 组织等效材料。	translated:IAEA-safety-glossary
+tissue-weighting-factor-wt	zh	组织权重因数 wT。用于辐射防护目的、对组织或器官的当量剂量所乘的因子，用以计入不同组织或器官对辐射诱发随机性效应敏感性的差异 [26]。用于计算有效剂量的推荐组织权重因数见下表：组织或器官 wT ∑ wT 红骨髓、结肠、肺、胃、乳腺、其余组织a 0.12 0.72 性腺 0.08 0.08 膀胱、食管、肝、甲状腺 0.04 0.16 骨表面、脑、唾液腺、皮肤 0.01 0.04 总计 1.00 a 其余组织（0.12）的 wT 适用于这 13 个器官和组织按性别各自的算术平均剂量：肾上腺、胸外（ET）区、胆囊、心脏、肾、淋巴结、肌肉、口腔黏膜、胰腺、前列腺（男性）、小肠、脾、胸腺、子宫/宫颈（女性）。	translated:IAEA-safety-glossary
 tokamak-assembly	en	A collective term for ITER machine assembly engineering.	corpus
 tokamak-assembly	zh	托卡马克装配是 ITER 主机装配工程的统称。	corpus
 tokamak-building	en	The main building that houses a fusion facility.	corpus
@@ -5672,20 +5672,20 @@ toroidal-alfven-eigenmode	en	An Alfven gap mode caused by toroidal effects.	GB/T
 toroidal-current	zh	在托卡马克等离子体中驱动环向电流的基本手段，利用了这样一个事实：由中心螺线管产生的大部分磁力线穿过其孔径向下，并且直到延伸到等离子体外侧（即径向更远处）才自行闭合。螺线管与等离子体之间的这种「磁通链接」使得螺线管中电流的变化能够驱动等离子体中的电流（麦克斯韦定律 Maxwell's Laws）。	translated:ITER-glossary
 toroidal-field-coil	en	A coil of the magnet system that produces the toroidal magnetic field of the device, that is, the field directed along the toroidal direction of the torus.	corpus
 toroidal-field-coil	zh	磁体系统中产生装置纵场的线圈，其磁场方向沿环形装置的环向。	corpus
-transboundary-exposure	zh	聚变/核工程术语，对应英文“transboundary exposure”。	internal:dict-improvements
-transboundary-movement	zh	聚变/核工程术语，对应英文“transboundary movement”。	internal:dict-improvements
-transient-population-group	zh	聚变/核工程术语，对应英文“transient population group”。	internal:dict-improvements
+transboundary-exposure	zh	见 照射。	translated:IAEA-safety-glossary
+transboundary-movement	zh	越境转移。1. 放射性物质从一国经由或进入另一国的任何移动。2. [乏燃料或放射性废物从原产国运至目的国的任何运输。]（见参考文献 [5]。）	translated:IAEA-safety-glossary
+transient-population-group	zh	暂住人群。在可事先识别的地点（如露营地）短期（数日至数周）居留的公众成员。不包括可能途经某一地区的公众成员。	translated:IAEA-safety-glossary
 translation	en	The acceleration of a detached field-reversed plasmoid along a guide field and its subsequent merging with a target, used for plasma heating, fuelling and current drive.	corpus
 translation	zh	将分离的场反等离子体团沿引导磁场加速并随后与靶合并，用于等离子体加热、加料与电流驱动。	corpus
 transmutation	en	Nuclear transformation of one element into another under irradiation.	corpus
 transmutation	zh	在辐照下一种元素转变为另一种元素的核转变。	corpus
-transnational-emergency	zh	聚变/核工程术语，对应英文“transnational emergency”。	internal:dict-improvements
+transnational-emergency	zh	见 应急。	translated:IAEA-safety-glossary
 transport	zh	聚变/核工程术语，指“输运”这一技术概念。	internal:dict-improvements
 transport-barrier	en	Under a certain operating mode (for example, H-mode) there may exist a region of low transport, which corresponds to a steep pressure gradient; such a region is called a transport barrier.	GB/T-4960.9
 transport-equation	en	The Boltzmann transport equation for particle transport.	corpus
 transport-equation	zh	输运方程是描述粒子输运的玻尔兹曼方程。	corpus
-transport-index	zh	聚变/核工程术语，对应英文“transport index (TI)”。	internal:dict-improvements
-transportation	zh	聚变/核工程术语，对应英文“transportation”。	internal:dict-improvements
+transport-index	zh	运输指数。分配给货包、外包装或货运容器，或分配给未包装的 LSA-I 或 SCO-I 或 SCO-III 的一个数值，用于对辐射照射实施控制。（见 SSR-6 (Rev. 1) [2]。）货包或外包装的运输指数值（连同表面剂量率）用于确定该货包或外包装所属的类别（I-WHITE、II-YELLOW 或 III-YELLOW）。运输指数高于 10 的货包或外包装仅可在独家使用条件下运输。运输指数的计算程序见《运输条例》[2] 第 V 节。实质上，运输指数是距货载外表面 1 m 处的最大剂量率，以 mrem/h 表示（或 mSv/h 的数值乘以 100），并在规定情况下乘以 1（小型货载）至 10（大型货载）之间的系数。（见 SSR-6 (Rev. 1) [2]。）	translated:IAEA-safety-glossary
+transportation	zh	见 输运。	translated:IAEA-safety-glossary
 trapped-particle	en	In a toroidal magnetic confinement device, a particle that, because energy and magnetic moment are conserved, cannot travel along the toroidal direction and is confined to move back and forth within a certain region.	GB/T-4960.9
 traveling-wave-direct-energy-converter	en	Direct energy converter concept in which a traveling electromagnetic wave decelerates the charged particles.	corpus
 traveling-wave-direct-energy-converter	zh	利用行电磁波使带电粒子减速的直接能量转换器方案。	corpus
