@@ -4900,48 +4900,48 @@ nuclear-emergency	zh	见 应急。	translated:IAEA-safety-glossary
 nuclear-facility	zh	1. 在其中生产、加工、使用、处理、贮存或处置核材料的设施（包括相关建筑物和设备）。亦称核燃料循环设施。另见设施与活动和核装置。2. [在其中生产、加工、使用、处理、贮存或处置核材料的设施（包括相关建筑物和设备），条件是若对该设施造成损坏或对之加以干扰可能导致大量辐射或放射性物质的释放。]（见参考文献 [40–43]。）注意：这一用法专用于经修订的《核材料与核设施实物保护公约》[40–43]，仅为该公约之目的，在其他场合适用应予避免。《核材料与核设施实物保护公约》的最后文件于 2005 年七月 8 日获得核准。3. [「民用设施及其相关土地、建筑物和设备，在其中以需要考虑安全的规模生产、加工、使用、处理、贮存或处置放射性物质」。]（引自参考文献 [5]。）注意：这一用法专用于《乏燃料管理安全和放射性废物管理安全联合公约》[5]，仅为该联合公约之目的，在其他场合适用应予避免。与获授权设施基本同义，因而比核装置更为宽泛。请注意，这与保障监督术语不同，在保障监督术语中 installation 比 facility 更为宽泛。	translated:IAEA-safety-glossary
 nuclear-fuel	zh	呈制成元件形态、用以装入民用核动力厂或研究堆反应堆堆芯的可裂变核材料。新燃料。新燃料或未辐照燃料，包括由对先前已辐照燃料进行后处理所回收的可裂变材料制成的燃料。	translated:IAEA-safety-glossary
 nuclear-fuel-cycle	zh	与核能生产相关的全部作业。核燃料循环中与核能生产相关的作业包括下列各项：（a）铀矿石或钍矿石的开采与加工；（b）铀的浓缩；（c）核燃料的制造；（d）核反应堆（包括研究堆）的运行；（e）乏燃料的后处理；（f）与核能生产相关作业有关的一切废物管理活动（包括退役）；（g）任何相关的研究与开发活动。闭式核燃料循环。铀的开采、加工、转化、浓缩，核燃料制造，反应堆运行，发电或其他能源产品生产，为回收裂变材料而进行的后处理，后处理裂变材料的贮存，（对高放射性裂变产物的）处置，以及所有废物的最终终态。开式核燃料循环。铀的开采、加工、转化、浓缩，核燃料制造，反应堆运行，发电或其他能源产品生产，乏燃料的贮存，处置，以及所有废物的最终终态。	translated:IAEA-safety-glossary
-nuclear-fuel-cycle-facility	zh	聚变/核工程术语，对应英文“nuclear fuel cycle facility”。	internal:dict-improvements
+nuclear-fuel-cycle-facility	zh	见 核设施。	translated:IAEA-safety-glossary
 nuclear-fusion	en	Nuclear fusion in the most general sense.	corpus
 nuclear-fusion	zh	核聚变指最一般意义上的核聚变。	corpus
-nuclear-installation	zh	聚变/核工程术语，对应英文“nuclear installation”。	internal:dict-improvements
+nuclear-installation	zh	1. 属于核燃料循环一部分、须经授权的任何核设施，但不包括铀矿石或钍矿石的开采或加工设施以及放射性废物处置设施。因此，本定义包括：核电厂；研究堆（包括次临界装置和临界装置）以及任何毗邻的放射性同位素生产设施；乏燃料贮存设施；铀浓缩设施；核燃料制造设施；转化设施；乏燃料后处理设施；核燃料循环设施所产生的放射性废物的处置前管理设施；以及与核燃料循环相关的研究与开发设施。2. [就每一缔约方而言，指在其管辖下的任何陆上民用核电厂，包括位于同一厂址并直接与该核电厂运行相关的此类放射性物质贮存、装卸和处理设施。当所有核燃料元件均已从反应堆堆芯永久移出、并已按照经批准的程序安全贮存，且一项退役计划已获监管机构同意时，该电厂即不再是核装置。]（见参考文献 [4]。）	translated:IAEA-safety-glossary
 nuclear-island	en	The part of a fusion power plant that contains the tokamak or reactor, the blankets and the primary heat transfer systems.	corpus
 nuclear-island	zh	核岛：聚变电站中容纳托卡马克/反应堆、包层与一回路传热系统的部分。	corpus
-nuclear-material	zh	聚变/核工程术语，对应英文“nuclear material”。	internal:dict-improvements
-nuclear-or-radiological-emergency	zh	聚变/核工程术语，对应英文“nuclear or radiological emergency”。	internal:dict-improvements
+nuclear-material	zh	钚，但同位素浓度超过 80% 的 238Pu 除外；U；在 235 或 233 同位素中富集的铀；除矿石或矿石残渣形式以外、含有自然界中所存在同位素混合物的铀；含上述一种或多种物质的任何材料。（见参考文献 [40–43]。）核材料是生产核武器或其他核爆炸装置所必需的。在全面保障监督协定下，IAEA 核查所有受保障监督的核材料均已申报并置于保障监督之下。某些非核材料对于核材料的使用或生产必不可少，在某些协定下也可能受到 IAEA 保障监督。《核材料与核设施实物保护公约》的最后文件于 2005 年七月 8 日获得核准。IAEA《规约》[44] 使用“特殊可裂变材料”一词，其含义实质上即此处所定义的核材料，但明确不包括源材料。就 IAEA 保障监督协定而言，核材料被定义为“《[IAEA 规约]》第 XX 条所定义的任何源材料……或特殊可裂变材料……”[45]。其含义与此处所定义的核材料实质上相同。《核能领域第三方责任巴黎公约》[46] 使用“核物质”一词，系指核燃料（天然铀和贫化铀除外）以及放射性产物或放射性废物。另见源材料。	translated:IAEA-safety-glossary
+nuclear-or-radiological-emergency	zh	见 应急。	translated:IAEA-safety-glossary
 nuclear-response-function	en	A response kernel used for nuclear heating, helium production, and similar quantities.	corpus
 nuclear-response-function	zh	核响应函数是用于核热、氦产生等量的响应核。	corpus
-nuclear-security	zh	聚变/核工程术语，对应英文“nuclear security”。	internal:dict-improvements
-nuclear-security-event	zh	聚变/核工程术语，对应英文“nuclear security event”。	internal:dict-improvements
+nuclear-security	zh	1. 对涉及核材料、其他放射性物质、相关设施或相关活动的犯罪或故意未经授权的行为进行预防、探测和响应。见 IAEA《核安保丛书》第 20 号 [47]。在 IAEA 关于核安保的出版物中，该词常被简称为安保。出于与核武器不扩散有关的原因而对核材料实行的安保，不属于 IAEA 安全标准和 IAEA《核安保丛书》的范围。2. 对涉及核材料、其他放射性物质或其相关设施的盗窃、破坏、未经授权进入、非法转移或其他恶意行为进行预防、探测和响应。见 IAEA GOV/2005/50。这包括但不限于：对核材料或其他放射性物质（无论是否知悉该物质的性质）的盗窃、破坏及其他恶意行为、非法贩运和未经授权转移进行预防、探测和响应。本定义中的响应要素是指旨在“逆转”未经授权进入或未经授权行为的直接后果的行动（例如回收材料）。对可能随后发生的放射性后果的响应被视为安全的一部分。安全（safety）与安保（security）这两个一般术语之间并没有确切的区分。一般而言，安保涉及人员可能对他人造成或威胁造成伤害的故意行为；安全则涉及人员（及环境）因受到辐射照射而产生有害后果这一更广泛的问题，无论其原因为何。安保安排与安全安排之间的相互作用取决于具体情形。安全安排与安保安排相互作用的领域例如包括：监管基础设施；核装置和其他设施的设计与建造中的工程规定；对核装置和其他设施出入的控制；放射源的分类；源的设计；放射源和放射性物质管理的安保；脱离监管控制的源的回收；应急响应计划；以及放射性废物管理。一般意义上的“安保”还涵盖与全球安全有关的议题——人类生活的可持续性——即能源安全、环境安全、粮食安全和水安全，以及核安保——核能的使用与所有这一切都相关。对安全标准、特别是 IAEA 安全标准丛书 Nos SF-1 [17]、GSR Part 3 [1] 和 GSR Part 7 [15] 的共同赞助，强化了保护人与保护环境的全球视野。	translated:IAEA-safety-glossary
+nuclear-security-event	zh	对核安保具有潜在或实际影响、必须予以应对的事件。此类事件包括涉及或针对核材料、其他放射性物质、相关设施或相关活动的犯罪或故意未经授权行为。例如，核安保事件（如破坏核设施或引爆放射性散布装置）可能引发核或辐射应急。	translated:IAEA-safety-glossary
 nuclide-inventory	en	The radioisotope composition and activity of activated materials.	corpus
 nuclide-inventory	zh	核素产额是活化材料中放射性同位素的组成与活度。	corpus
 numerical-solution	en	A discrete approximation to the governing equations.	corpus
 numerical-solution	zh	数值解是控制方程的离散近似解。	corpus
-observed-cause	zh	聚变/核工程术语，对应英文“observed cause”。	internal:dict-improvements
-occupancy-factor	zh	聚变/核工程术语，对应英文“occupancy factor”。	internal:dict-improvements
+observed-cause	zh	见 原因。	translated:IAEA-safety-glossary
+occupancy-factor	zh	某一场所被个人或群体占用的典型时间份额。	translated:IAEA-safety-glossary
 occupational-radiation-exposure	en	Radiation exposure received during the course of work.	corpus
 occupational-radiation-exposure	zh	职业辐射照射是工作过程中受到的辐射照射。	corpus
 off-normal-event	en	An unexpected change in the operating state of a power plant or of a component that does not cause an unplanned shutdown.	GB/T-4960.9
-off-site	zh	聚变/核工程术语，对应英文“off-site (area)”。	internal:dict-improvements
+off-site	zh	厂址区域之外。	translated:IAEA-safety-glossary
 omnigeneity	en	The property of a magnetic configuration in which all trapped particles have zero net radial drift.	corpus
 omnigeneity	zh	全向性：磁位形的一种性质，即所有被捕获粒子的净径向漂移均为零。	corpus
-on-site	zh	聚变/核工程术语，对应英文“on-site (area)”。	internal:dict-improvements
+on-site	zh	厂址区域之内。	translated:IAEA-safety-glossary
 open-field-line	en	A magnetic field line that does not close within the confinement region.	corpus
 open-field-line	zh	开放磁力线：在约束区内不闭合的磁力线。	corpus
-open-nuclear-fuel-cycle	zh	聚变/核工程术语，对应英文“open nuclear fuel cycle”。	internal:dict-improvements
-operating-conditions	zh	聚变/核工程术语，对应英文“operating conditions”。	internal:dict-improvements
-operating-lifetime-operating-life	zh	聚变/核工程术语，对应英文“operating lifetime, operating life”。	internal:dict-improvements
-operating-organization	zh	聚变/核工程术语，对应英文“operating organization”。	internal:dict-improvements
-operating-period	zh	聚变/核工程术语，对应英文“operating period”。	internal:dict-improvements
-operating-personnel	zh	聚变/核工程术语，对应英文“operating personnel”。	internal:dict-improvements
-operation	zh	聚变/核工程术语，对应英文“operation”。	internal:dict-improvements
-operational-bypass	zh	聚变/核工程术语，对应英文“operational bypass”。	internal:dict-improvements
-operational-criteria	zh	聚变/核工程术语，对应英文“operational criteria”。	internal:dict-improvements
-operational-intervention-level	zh	聚变/核工程术语，对应英文“operational intervention level (OIL)”。	internal:dict-improvements
-operational-limits-and-conditions	zh	聚变/核工程术语，对应英文“operational limits and conditions”。	internal:dict-improvements
-operational-period	zh	聚变/核工程术语，对应英文“operational period”。	internal:dict-improvements
-operational-quantities	zh	聚变/核工程术语，对应英文“operational quantities”。	internal:dict-improvements
-operational-states	zh	聚变/核工程术语，对应英文“operational states”。	internal:dict-improvements
-operations-area	zh	聚变/核工程术语，对应英文“operations area”。	internal:dict-improvements
+open-nuclear-fuel-cycle	zh	见 核燃料循环。	translated:IAEA-safety-glossary
+operating-conditions	zh	见 运行状态。	translated:IAEA-safety-glossary
+operating-lifetime-operating-life	zh	见 寿命。	translated:IAEA-safety-glossary
+operating-organization	zh	1. 申请授权或已获授权运行某一获授权设施或开展某一获授权活动、并对其安全负责的任何组织或个人。！注意，此类组织在运行开始之前即可为营运组织。除其他外，这包括私人个人、政府机构、发货人或承运人、许可证持有者、医院和自雇人员。营运组织既包括在源的使用期间直接控制某一设施或活动的人员（例如放射技师或承运人），也包括在源不受控制的情形下（例如丢失的源、被非法移走的源或再入大气层的卫星）在失去对该源的控制之前对该源负责的人员。在实践中，对于获授权设施，营运组织通常也是登记证持有者或许可证持有者。然而，保留这两个单独术语是为了指称两种不同的身份。另见 operator。2. 承担核设施选址、设计、建造、装置调试和/或运行的组织（及其承包商）。！这一用法为有关放射性废物管理安全的文件所特有，其中选址相应地被理解为一个多阶段过程。！这一差异部分反映了选址在处置库安全中的特别关键作用。	translated:IAEA-safety-glossary
+operating-period	zh	见 运行寿期。	translated:IAEA-safety-glossary
+operating-personnel	zh	从事获授权设施运行或获授权活动实施的个体工作人员。！在没有与营运组织意义上的 operator 相混淆的风险时，可将其简称为 operator(s)。	translated:IAEA-safety-glossary
+operation	zh	为实现获授权设施建造目的而开展的全部活动。对于核电厂，这包括维修、换料、在役检查及其他相关活动。选址、设计、建造、装置调试、运行和退役这些术语通常用于划分获授权设施的寿期及相应许可过程的六个主要阶段。对于放射性废物处置设施这一特殊情况，该序列中的退役由关闭所取代。另见异常运行和正常运行。	translated:IAEA-safety-glossary
+operational-bypass	zh	见 旁路。	translated:IAEA-safety-glossary
+operational-criteria	zh	在核或辐射应急的响应中用于确定是否需要采取适当防护行动和其他响应行动的可测量量的值或可观察条件（即可观察项）。应急中使用的运行准则包括运行干预水平（OILs）、应急行动水平（EALs）、特定可观察条件（即可观察项）以及厂址状况的其他指标。运行准则有时被称为触发条件。	translated:IAEA-safety-glossary
+operational-intervention-level	zh	见 水平。	translated:IAEA-safety-glossary
+operational-limits-and-conditions	zh	见 限值。	translated:IAEA-safety-glossary
+operational-period	zh	见 运行寿期。	translated:IAEA-safety-glossary
+operational-quantities	zh	用于涉及外照射的监测和调查等实际应用的量。实用量是为测量和评估人体内剂量之目的而定义的。在内照射剂量学中，尚未定义可直接提供当量剂量或有效剂量评估的实用剂量量。评估由人体内放射性核素所致照射的当量剂量或有效剂量采用不同的方法。这些方法大多基于各种活度测量以及生物动力学模型（计算模型）的应用。可以利用与外照射或与放射性核素摄入相关的辐射场及放射性核素的可测量特性来估算防护量，并证明符合涉及防护量的要求。这些可测量的量称为实用量。	translated:IAEA-safety-glossary
+operational-states	zh	见 电厂状态。	translated:IAEA-safety-glossary
+operations-area	zh	见 区域。	translated:IAEA-safety-glossary
 operations-boundary	zh	聚变/核工程术语，对应英文“operations boundary”。	internal:dict-improvements
 operator	zh	聚变/核工程术语，对应英文“operator”。	internal:dict-improvements
 optimization	zh	聚变/核工程术语，对应英文“optimization (of protection and safety)”。	internal:dict-improvements
