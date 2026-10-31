@@ -4299,27 +4299,27 @@ frc-stability	zh	场反稳定性：场反位形的稳定性性质，包括倾斜
 free-boundary-equilibrium	en	Equilibrium solution in which the plasma-coil interaction is treated self-consistently.	corpus
 free-boundary-equilibrium	zh	自洽处理等离子体与线圈相互作用的平衡解。	corpus
 free-field-ground-motion	zh	在地面上给定点处、假定振动特性未受构筑物和设施影响时由地震引起而会出现的运动。	translated:IAEA-safety-glossary
-freight-container	zh	聚变/核工程术语，对应英文“freight container”。	internal:dict-improvements
+freight-container	zh	一种运输设备物品，具有永久性，并因此足够坚固而适于重复使用；专门设计以便于货物以一种或另一种运输方式在无中间倒装的情况下运输，设计为可被固定和/或易于搬运，并配有用于这些目的的附件。货运容器不包括车辆。小型货运容器。内部容积不超过 3 m3 的货运容器。（见 SSR-6 (Rev. 1) [2]。）大型货运容器。内部容积超过 3 m3 的货运容器。（见 SSR-6 (Rev. 1) [2]。）	translated:IAEA-safety-glossary
 frenkel-pair	en	An irradiation-produced pair of an interstitial atom and a vacancy.	corpus
 frenkel-pair	zh	Frenkel缺陷对是辐照产生的间隙原子与空位对。	corpus
-frequency-of-exceedance	zh	聚变/核工程术语，对应英文“frequency of exceedance”。	internal:dict-improvements
-fresh-fuel	zh	聚变/核工程术语，对应英文“fresh fuel”。	internal:dict-improvements
+frequency-of-exceedance	zh	在指定的时间区间内，某一厂址或某一区域内将超越某一规定水平地震危险性的频率。在概率地震危险性分析中，通常假定为一年时间区间（即年频率）。当该频率很小且不可能超过单位值（在规定区间内）时，若假定该随机过程为泊松过程，则该数值趋近于同一事件的概率。	translated:IAEA-safety-glossary
+fresh-fuel	zh	见 核燃料。	translated:IAEA-safety-glossary
 friction-force	en	The collisional friction force between different particle species.	corpus
 friction-force	zh	摩擦力是不同粒子种类之间的碰撞摩擦作用力。	corpus
-fuel	zh	聚变/核工程术语，对应英文“fuel”。	internal:dict-improvements
-fuel-assembly	zh	聚变/核工程术语，对应英文“fuel assembly”。	internal:dict-improvements
+fuel	zh	见 核燃料。	translated:IAEA-safety-glossary
+fuel-assembly	zh	一组燃料元件及相关部件，其作为一个整体装入反应堆堆芯，并随后从堆芯卸出。	translated:IAEA-safety-glossary
 fuel-capsule	en	The spherical inertial confinement fusion target consisting of a deuterium-tritium ice layer enclosed in an ablator shell, which implodes to reach fusion conditions.	corpus
 fuel-capsule	zh	惯性约束聚变的球形靶，由包在烧蚀壳内的氘氚冰层构成，内爆以达到聚变条件。	corpus
 fuel-cycle	zh	聚变/核工程术语，指“燃料循环”这一技术概念。	internal:dict-improvements
-fuel-element	zh	聚变/核工程术语，对应英文“fuel element”。	internal:dict-improvements
+fuel-element	zh	一根核燃料棒、其包壳以及构成结构实体所必需的任何相关部件。在轻水反应堆中通常称为燃料棒。	translated:IAEA-safety-glossary
 fuel-recycling	en	The hydrogen isotope adsorption-release cycle at the wall.	corpus
 fuel-recycling	zh	燃料再循环是壁处氢同位素的吸附-释放循环。	corpus
-fuel-rod	zh	聚变/核工程术语，对应英文“fuel rod”。	internal:dict-improvements
+fuel-rod	zh	见 燃料元件。	translated:IAEA-safety-glossary
 fully-non-inductive	en	Steady-state operation with 100% non-inductive current drive.	corpus
 fully-non-inductive	zh	完全非感应运行是采用 100% 非感应电流驱动的稳态运行。	corpus
-functional-diversity	zh	聚变/核工程术语，对应英文“functional diversity”。	internal:dict-improvements
-functional-indicator	zh	聚变/核工程术语，对应英文“functional indicator”。	internal:dict-improvements
-fundamental-safety-function	zh	聚变/核工程术语，对应英文“fundamental safety function”。	internal:dict-improvements
+functional-diversity	zh	见 多样性。	translated:IAEA-safety-glossary
+functional-indicator	zh	见 指标。	translated:IAEA-safety-glossary
+fundamental-safety-function	zh	见 安全功能。	translated:IAEA-safety-glossary
 fusion-demonstrator	en	A pre-commercial fusion device intended to validate integrated plant operation.	corpus
 fusion-demonstrator	zh	聚变验证堆：用于验证整厂集成运行的商业化前装置。	corpus
 fusion-device	en	A general experimental device for fusion.	corpus
@@ -4343,45 +4343,45 @@ fusion-roadmap	en	Strategic plan for achieving commercial fusion energy.	corpus
 fusion-roadmap	zh	实现商业聚变能的战略规划。	corpus
 gain-curve	en	The relationship between ICF energy gain and driver energy.	corpus
 gain-curve	zh	增益曲线是惯性约束聚变能量增益随驱动能量的变化关系。	corpus
-gap-release	zh	聚变/核工程术语，对应英文“gap release”。	internal:dict-improvements
+gap-release	zh	裂变产物从燃料棒间隙的释放（尤其是在反应堆堆芯中），该释放发生在燃料包壳失效之后立即出现，是燃料损伤或燃料失效的第一个放射性征兆。	translated:IAEA-safety-glossary
 gas-balance	en	The balance of gas injection, recycling and pumping in a device.	corpus
 gas-balance	zh	气体平衡是装置内气体注入、再循环与抽气的平衡。	corpus
 gas-turbine	en	A turbine driven by gas within the Brayton cycle.	corpus
 gas-turbine	zh	燃气轮机是在布雷顿循环中由燃气驱动的透平。	corpus
 gasket	en	A sealing element between flanges or joints that prevents fluid leakage.	corpus
 gasket	zh	密封垫片是法兰或接头间防止流体泄漏的密封元件。	corpus
-general-emergency	zh	聚变/核工程术语，对应英文“general emergency”。	internal:dict-improvements
-generic-criteria	zh	聚变/核工程术语，对应英文“generic criteria”。	internal:dict-improvements
-genetic-effect	zh	聚变/核工程术语，对应英文“genetic effect”。	internal:dict-improvements
+general-emergency	zh	见 应急类别。	translated:IAEA-safety-glossary
+generic-criteria	zh	预计剂量或已受剂量的水平，达到该水平即应采取防护行动和其他响应行动。此处所定义的通用准则一语仅与应急准备和应急响应有关。	translated:IAEA-safety-glossary
+genetic-effect	zh	见 遗传性效应。	translated:IAEA-safety-glossary
 geodesic-acoustic-mode	en	Oscillatory branch of the zonal flow in toroidal geometry.	corpus
 geodesic-acoustic-mode	zh	环形位形中带状流的振荡分支。	corpus
 geological-disposal	zh	聚变/核工程术语，指“地质处置”这一技术概念。	internal:dict-improvements
-geological-disposal-facility	zh	聚变/核工程术语，对应英文“geological disposal facility”。	internal:dict-improvements
-geological-fault	zh	聚变/核工程术语，对应英文“geological fault”。	internal:dict-improvements
-geological-record	zh	聚变/核工程术语，对应英文“geological record”。	internal:dict-improvements
-geosphere	zh	聚变/核工程术语，对应英文“geosphere”。	internal:dict-improvements
+geological-disposal-facility	zh	见 处置设施。	translated:IAEA-safety-glossary
+geological-fault	zh	地球中曾发生相对位移的平面状或缓弯状破裂面或破裂带。能动断层。在地表或地表附近具有显著位移潜力的地质断层。若依据地质、地球物理、大地测量或地震学资料（包括古地震学与地貌学资料），下列条件之一适用，则该地质断层应被视为能动断层：(a) 该地质断层显示出在某一时期内具有重复性过去运动或多次运动（显著变形和/或错位）的证据，该时期之短足以使人有理由推断在地表或地表附近可能发生进一步运动。(b) 已证明其与某一已知能动断层具有构造关系，以致一者的运动可能引起另一者在地表或地表附近发生运动。(c) 与发震构造相关的最大潜在地震足够大，且处于某一深度，以致有理由推断，在厂址的地球动力学环境中，地表或地表附近可能发生运动 [33]。在高度活动区，地震资料与地质资料一致显示地震复发间隔较短，数万年量级的时段对于能动断层的评价可能是适宜的。在活动性较低的区域，可能需要长得多的时段。	translated:IAEA-safety-glossary
+geological-record	zh	地球某一垂向剖面上的岩层层序。亦称地层记录。最老的岩层位于该剖面的底部，依次较年轻的岩层出现在层序中较高的位置。地质学家利用地质记录为沉积物确定相对年龄。火山地层学往往很复杂，其沉积物的特征是侧向延伸范围相对有限、表现出快速的相变，并经历了多期侵蚀与谷地再充填。	translated:IAEA-safety-glossary
+geosphere	zh	岩石圈中不被视为生物圈组成部分的那些部分。在安全评价中，通常用于将底土和岩石（位于受通常人类活动、特别是农业活动影响的深度以下）与属于生物圈的土壤区分开来。“宽限期”。在无需人员行动的事件中某一安全功能得以得到保证的时间段。典型的“宽限期”为 20 min 至 12 h。“宽限期”可通过驱动的自动化、采用非能动系统或材料的固有特性（例如安全壳结构的热容量），或这些方式的任意组合来实现。	translated:IAEA-safety-glossary
 global-alfven-eigenmode	en	Shear-Alfvén gap eigenmode with a global structure.	corpus
 global-alfven-eigenmode	zh	全局Alfvén本征模是剪切Alfvén间隙中具有全局空间结构的本征模。	corpus
 grad-b-drift	en	Particle drift caused by a magnetic field gradient.	corpus
 grad-b-drift	zh	∇B漂移是由磁场梯度引起的粒子漂移。	corpus
 grad-shafranov-equation	en	A partial differential equation that describes the macroscopic magnetohydrodynamic equilibrium of a plasma in a tokamak. It is named after the American scholar Grad and the former Soviet scholar Shafranov, who derived it at the same time.	GB/T-4960.9
-graded-approach	zh	聚变/核工程术语，对应英文“graded approach”。	internal:dict-improvements
+graded-approach	zh	1. 对于某一控制系统（例如监管体系或安全系统）而言，指这样一种过程或方法：其中所采用的控制措施和条件的严格程度，在切实可行的范围内，与失去控制的可能性、可能的后果以及相关的风险水平相称。分级方法的一个一般性示例是：借助某种结构化方法，根据具体情形、所采用的监管体系、所采用的管理体系等，改变各项要求适用的严格程度。例如，可采用这样一种方法：(1) 确定某一产品或服务的重要性和复杂性；(2) 确定该产品或服务对健康、安全、安保、环境以及实现质量和组织目标的潜在影响；(3) 考虑产品失效或服务执行不当所导致的后果。采用分级方法旨在确保必要的分析、文件和行动水平与下列因素相称，例如：任何放射性危害和非放射性危害的大小、设施的性质和具体特征，以及设施寿期中所处的阶段。2. 与设施和活动或源的特征、以及与照射的大小和可能性相称的安全要求的应用。另见排除、豁免、解控和优化。	translated:IAEA-safety-glossary
 grain-boundary	en	The interface between two crystalline grains.	corpus
 grain-boundary	zh	晶界是两个晶粒之间的界面。	corpus
 graveyard	en	The outer boundary region of a Monte Carlo geometry.	corpus
 graveyard	zh	墓碑区是蒙特卡罗几何的外部边界区域。	corpus
-gray	zh	聚变/核工程术语，对应英文“gray (Gy)”。	internal:dict-improvements
+gray	zh	kerma 和吸收剂量的 SI 单位，等于 1 J/kg。	translated:IAEA-safety-glossary
 grid-integration	en	The technical and regulatory process of connecting a power plant to the electrical grid.	corpus
 grid-integration	zh	电网集成：把电站接入电网的技术与监管过程。	corpus
-ground-shine	zh	聚变/核工程术语，对应英文“ground shine”。	internal:dict-improvements
-guidance-level	zh	聚变/核工程术语，对应英文“guidance level”。	internal:dict-improvements
-guidance-level-for-medical-exposure	zh	聚变/核工程术语，对应英文“guidance level for medical exposure”。	internal:dict-improvements
-gut-transfer-factor	zh	聚变/核工程术语，对应英文“gut transfer factor”。	internal:dict-improvements
+ground-shine	zh	沉积在地面上的放射性核素发出的伽马辐射。地表照射作为外照射的照射途径而令人关注，主要——但并非仅限——对伽马辐射而言。地表照射也可用来表示入射到地面上并由地面反射回来的辐射。另见云照射。	translated:IAEA-safety-glossary
+guidance-level	zh	见 水平。	translated:IAEA-safety-glossary
+guidance-level-for-medical-exposure	zh	见 水平。	translated:IAEA-safety-glossary
+gut-transfer-factor	zh	见 fractional absorption in the gastrointestinal tract, f1, or in the alimentary tract, fA。	translated:IAEA-safety-glossary
 gyro-bohm-scaling	en	Turbulent transport scaling stronger than Bohm (gyro-radius dependent).	corpus
 gyro-bohm-scaling	zh	旋回Bohm标度是强于Bohm并依赖旋回半径的湍流输运标度。	corpus
 gyrokinetics	en	Reduced kinetic theory obtained by averaging over the fast gyro-motion of the particles.	corpus
 gyrokinetics	zh	对粒子快速回旋运动取平均而得到的约化动理学理论。	corpus
-habit-survey	zh	聚变/核工程术语，对应英文“habit survey”。	internal:dict-improvements
+habit-survey	zh	见 调查。	translated:IAEA-safety-glossary
 half-life-t	zh	聚变/核工程术语，对应英文“half-life, T½”。	internal:dict-improvements
 halo-current	en	During a vertical displacement event, the current that flows along the magnetic field lines on the outside of the confined plasma region after the plasma has touched the vacuum vessel wall and been scraped off. NOTE: The path of the current intersects material surfaces, causing strong heating and deformation of the material; the effects of the halo current are not axisymmetric, and can cause large damage and also pose a potential threat to the device.	GB/T-4960.9
 hands-on-recycling	en	Material recyclable with hands-on contact (dose below 10 μSv/h) per SEAFP.	corpus
