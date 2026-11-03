@@ -21,8 +21,10 @@ files_sha256:
 
 # Plan: 四阶段收口（PM #5184 / FUSION-TERMS id240）
 
-> **Status**: COMPLETED（2026-11-03 收口；`date` 实测 `Tue Nov  3 03:06:54 PM CST 2026`）——**20 个 Task 全部执行并提交**，执行区间 **`115da74..3d54c3e`**，独立验收（acceptance-verifier，`/tmp/opencode/t5184-final-acceptance.md`）**V1–V9 全 PASS**，探针 P1 `--self-test` = 27/27、P2 `pytest -q` = 178 passed。父计划 **M4 已勾（10/10 PASS）；M1 保持未勾（55 PASS / 9 FAIL / 0 UNDECIDABLE，未达 64/64）；M3 保持未勾（`待用户裁决 (D2)`）**。计划文件已按完成计划归档规则移至 `.github/plans/completed/5184-four-stage-closeout.md`。
+> **Status**: COMPLETED（2026-11-03 收口；`date` 实测 `Tue Nov  3 03:06:54 PM CST 2026`）——**20 个 Task 全部执行并提交**，执行区间 **`115da74..3d54c3e`**，独立验收（acceptance-verifier，`/tmp/opencode/t5184-final-acceptance.md`）**V1–V9 全 PASS**，探针 P1 `--self-test` = 27/27、P2 `pytest -q` = **186 passed**（2026-11-03 收口后复跑实测；首次验收报告自述 178，差异见下「P2 计数更正」）。父计划 **M4 已勾（10/10 PASS）；M1 保持未勾（55 PASS / 9 FAIL / 0 UNDECIDABLE，未达 64/64）；M3 保持未勾（`待用户裁决 (D2)`）**。计划文件已按完成计划归档规则移至 `.github/plans/completed/5184-four-stage-closeout.md`。
 > **历史状态（保留，勿抹）**：初始 2026-11-02 为 ACTIVE；2026-11-03 IMPROVE-1 阶段为 `T1.2 AC FAIL / 未完成`，见下行与 §Execution Log E1。
+> **P2 计数更正（2026-11-03 收口后实测；不猜原因）**：首次验收 `/tmp/opencode/t5184-final-acceptance.md` 自述 P2 = 「178 tests passed」；本轮复跑 `.venv/bin/python -m pytest -q` 实测 `============================= 186 passed in 6.70s =============================`（退出码 0，完整输出 `/tmp/opencode/t5184-pytest-final.txt`）。**178 与 186 的差异属事实差异，本轮不作归因推断**（未确认首次抄录有误，亦未确认期间代码/测试变化）；当前口径取 **186**，178 作为历史自述原样保留。
+> **IMPROVE-1 阻塞语句已由 E2 取代**：「T1.2 未完成 ⇒ T1.3 / S2–S4 不得启动」仅为 IMPROVE-1 时刻（HEAD = `52dc8e8`）的门控陈述；§Execution Log E2 已记录 20 Task 全部完成、独立验收 V1–V9 PASS，故该句**不得作为当前状态引用**。
 > **本计划只做四件事，且按用户批准的顺序串行**：**S1 状态回写 → S2 术语冲突查证 → S3 小样目视核验 → S4 分批语义抽检**。
 > **四阶段的共同性质**：**除 `docs/reviews/t5184/` 下的报告与状态行外，不写任何数据**。`terms/`、`artifacts/`、`pipeline/`、`scripts/` 四阶段全程只读（S1/S2/S3/S4 均逐条断言 `git diff --stat -- terms/ artifacts/ pipeline/ scripts/` 为空）。
 > **每阶段独立 commit，commit message 必带 `#T-5184`，不 push。**
@@ -718,7 +720,7 @@ grep -c '^- \[x\] M[134]:' "$PARENT" || true
     "report": "/tmp/opencode/t5184-final-acceptance.md",
     "verifier": "acceptance-verifier",
     "verdict": "V1-V9 全 PASS",
-    "probes": {"P1": "registry_batch_verify --self-test 27/27 assertions passed", "P2": "pytest -q 178 tests passed"}
+    "probes": {"P1": "registry_batch_verify --self-test 27/27 assertions passed", "P2": "pytest -q 186 passed (2026-11-03 收口后复跑实测；首次验收自述 178，差异未归因，见 frontmatter 下方「P2 计数更正」)"}
   },
   "parent_plan_manual_items": {
     "M1": "未勾 — 抽检 64 中 PASS 55 / FAIL 9 / UNDECIDABLE 0，未达 64/64",
@@ -739,6 +741,7 @@ grep -c '^- \[x\] M[134]:' "$PARENT" || true
 5. **E1 保留**：T1.2 初次 AC#5 FAIL 的 finding 与 `52dc8e8` 原样保留，未 amend / 未 revert / 未改写；IMPROVE-1 后的独立复验结论并存记录，不覆盖历史。
 6. **归档**：按「已执行的计划 → `completed/`」规则，本文件移动至 `.github/plans/completed/5184-four-stage-closeout.md`；`docs/reviews/t5184/README.md` 以绝对路径指向归档位置。
 7. **未 push**：`git status -sb` = `## master...origin/master [ahead N]`，收口 commit 追加于 20 个执行 commit 之后。
+8. **P2 计数复跑更正（本轮文档修正 commit）**：复跑 `.venv/bin/python -m pytest -q` 实测 **186 passed**（`/tmp/opencode/t5184-pytest-final.txt`），与首次验收自述 178 存在事实差异；本轮仅按实测口径改写计数并明示差异，**不归因、不推测**首次计数来源。本轮文档修正 commit 同样不计入 20 个执行 commit，故收口后 `#T-5184` commit 总数为 **20 执行 + 2 文档收口/修正 = 22**（以 `git log --oneline 115da74..HEAD --grep='#T-5184' | wc -l` 实测为准）。
 
 **收口复验命令（只读）**：
 

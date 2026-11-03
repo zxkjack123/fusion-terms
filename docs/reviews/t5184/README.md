@@ -4,7 +4,8 @@
 
 判定：PASS / FAIL / UNDECIDABLE。UNDECIDABLE 不计 PASS；M1 需 64/64 PASS，M4 需 10/10 PASS；M3 待裁决保持未勾。
 
-> **收口口径（本文件 = 执行事实索引，非验收结论本身）**：执行区间 **`115da74..3d54c3e`（20 个 commit，全部 `#T-5184`）**；独立验收另有 `/tmp/opencode/t5184-final-acceptance.md`（acceptance-verifier，2026-11-03T14:59:54+08:00），V1–V9 全 PASS，探针 P1 `registry_batch_verify --self-test` = `27/27`、P2 `pytest -q` = 178 tests 全通过。
+> **收口口径（本文件 = 执行事实索引，非验收结论本身）**：执行区间 **`115da74..3d54c3e`（20 个 commit，全部 `#T-5184`）**；独立验收另有 `/tmp/opencode/t5184-final-acceptance.md`（acceptance-verifier，2026-11-03T14:59:54+08:00），V1–V9 全 PASS，探针 P1 `registry_batch_verify --self-test` = `27/27`、P2 `pytest -q` = **186 passed**。
+> **P2 计数更正（2026-11-03，本收口后复跑实测；不猜原因）**：首次验收报告 `/tmp/opencode/t5184-final-acceptance.md` 自述 P2 为「178 tests passed」；本轮按 doublecheck 要求复跑 `.venv/bin/python -m pytest -q`，实测输出 `============================= 186 passed in 6.70s =============================`（退出码 0，完整输出存 `/tmp/opencode/t5184-pytest-final.txt`）。**两数不一致（178 vs 186）为事实差异，本轮不做归因推断**——既未确认首次报告抄录有误，也未确认代码/测试在期间变化；仅以本次实测 **186** 为当前口径，并保留首次自述 178 作为历史记录。
 > **哈希口径（固定用已验收区间，不用 `HEAD~20`）**：下方所有复算命令一律锚定 **`115da74..3d54c3e`**。**不得**改用 `HEAD~20..HEAD`——本次收口会新增文档 commit 使 `HEAD` 前移，`HEAD~20` 会静默滑出已验收区间并把收口 commit 计入，导致「20 个 commit / 数据零改动 / 行数断言」全部失真。
 > **本收口 commit 不在 20 个执行 commit 之内**：它只更新 `docs/reviews/t5184/README.md` 与计划文件（归档至 `completed/`），因此区间取 `115da74..3d54c3e` 而非 `..HEAD`。
 > **计划归档位置**：`.github/plans/completed/5184-four-stage-closeout.md`（绝对路径 `/home/gw/opt/fusion-terms/.github/plans/completed/5184-four-stage-closeout.md`）。
@@ -58,8 +59,12 @@ accepted_baseline: HEAD 115da74；无 checkpoint；仅执行计划未跟踪。
 
 T1.1：86e9b00；T1.2：52dc8e8；T1.3：791d189。
 T1.2 **初次 AC#5 FAIL**（旧白名单空转且按字面不可满足，命令块未设 `set -e`，AC 失败仍生成 52dc8e8）——该 finding **保留，不抹历史、不改写 52dc8e8**；IMPROVE-1 修订 AC 后由 acceptance-verifier 独立复验，AC 7/7。后续所有 Task 以 `set -euo pipefail` + 提交前 `git diff --cached` 范围断言执行。
+
+> **T1.2 阻塞语句的历史地位（2026-11-03 收口补记）**：计划中「**T1.2 未完成 ⇒ T1.3 / S2–S4 不得启动**」一句是 **IMPROVE-1 当时（`git rev-parse HEAD` = `52dc8e8`）** 的有效门控陈述，其作用范围仅限那一时刻。**该阻塞已由 §Execution Log E2 明确取代**——E2 记录 20 个 Task 全部执行并提交、执行区间 `115da74..3d54c3e`、独立验收 V1–V9 全 PASS；T1.2 经 IMPROVE-1 修订 AC 后复验 7/7 PASS，T1.3 及其后 S2–S4 均已实际执行完成。因此**该句不得作为当前状态引用**，仅在时间序上解释「为何当时未启动下游阶段」。
 T1.3：pm-coordinator 已追加 #5184 备注并回读 status=doing；保留原备注前缀。
 Receipt: /home/gw/opt/copilot-agents/.receipts/T5184-status-writeback.r1.json
+
+> **T1.2 阻塞语句的历史地位（2026-11-03 收口补记，不覆盖历史）**：计划中「**T1.2 未完成 ⇒ T1.3 / S2–S4 不得启动**」一句只在 **IMPROVE-1 当时（`git rev-parse HEAD` = `52dc8e8`）** 有效，**该阻塞已由 §Execution Log E2 明确取代**——E2 记录 20 个 Task 全部执行提交（区间 `115da74..3d54c3e`）、独立验收 V1–V9 全 PASS，T1.2 经 IMPROVE-1 修订 AC 后复验 7/7 PASS，T1.3 及 S2–S4 均已实际完成。故该句**不得作为当前状态引用**，只用于解释时间序上「当时为何未启动下游阶段」。
 
 ## S2 / S3 / S4 执行记录
 
