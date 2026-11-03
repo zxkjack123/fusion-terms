@@ -7,11 +7,13 @@ revised_at: "2026-10-31T15:46:53+08:00"
 git_commit: "b0bef07"
 mode: "refine"
 revision: "2"
-status: "active"
+status: "done-execution (data unreleased)"
 pm_task: "5072"
 title: "T-4973 W3a 证据与释义补强"
 adjudication: "方案甲 — 按目标中文名补齐（用户裁决 2026-10-31）"
 ---
+
+> **状态回写（2026-11-03，PM #5184）**：执行与独立验收已完成；**数据未进入任何发布 tag**（`git tag --contains d84aabc`=0），不得宣称已发布。
 
 # Plan: T-4973 W3a 证据与释义补强（PM #5072）
 

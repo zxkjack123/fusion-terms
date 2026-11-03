@@ -976,10 +976,10 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 
 ### Manual（真正需要人工判断）
 
-- [ ] M1: W1 抽检（每 5 批 ≥8 行）语义正确性复核 —— **未勾选**：批次记录中无独立语义抽检留痕（`registry_batch_verify` 机械门禁全绿 ≠ 语义正确）；移交 PM 5072。
+- [ ] M1: W1 抽检（每 5 批 ≥8 行）语义正确性复核 —— **未勾选**：批次记录中无独立语义抽检留痕（`registry_batch_verify` 机械门禁全绿 ≠ 语义正确）；移交 PM 5072。｜**PM #5184 收口中**：证据见 docs/reviews/t5184/（M1→m1-summary.md；M3→m3-physical-sputtering.md；M4→m4-column-semantics.md），未产出/未通过前保持未勾。
 - [x] M2: W3 抽检（每 5 批 ≥10%，≥14 行）命名准确性复核 —— **已完成**：`t4973-batches/w3a-acceptance.md`（独立 agent 抽检 130 行，naming FAIL 0）＋ `w3a-allowlist-acceptance.md`（20 词抽样 FAIL 0）。
-- [ ] M3: `w3-name-conflicts.tsv` 中的冲突项人工裁决 —— **未勾选**：`physical-sputtering` / `物理溅射` 与 `sputtering` 的 zh 别名冲突为 **pre-existing**（该 id 不在 `w3.ids`，W3a 未改该行），待人工裁决（PM 5072 承载）。
-- [ ] M4: 目视抽检 T0.4（99 行）/T0.5（80 行）修复后 10 行的列语义（中文/英文是否各归其位）—— **未记录**：`registry_row_audit --audit --expect-clean-all` 结构门禁 exit 0（`malformed=0 / shifted=0 / sixcol=0`），但无 10 行目视留痕 ⇒ 不勾选。
+- [ ] M3: `w3-name-conflicts.tsv` 中的冲突项人工裁决 —— **未勾选**：`physical-sputtering` / `物理溅射` 与 `sputtering` 的 zh 别名冲突为 **pre-existing**（该 id 不在 `w3.ids`，W3a 未改该行），待人工裁决（PM 5072 承载）。｜**PM #5184 收口中**：证据见 docs/reviews/t5184/（M1→m1-summary.md；M3→m3-physical-sputtering.md；M4→m4-column-semantics.md），未产出/未通过前保持未勾。
+- [ ] M4: 目视抽检 T0.4（99 行）/T0.5（80 行）修复后 10 行的列语义（中文/英文是否各归其位）—— **未记录**：`registry_row_audit --audit --expect-clean-all` 结构门禁 exit 0（`malformed=0 / shifted=0 / sixcol=0`），但无 10 行目视留痕 ⇒ 不勾选。｜**PM #5184 收口中**：证据见 docs/reviews/t5184/（M1→m1-summary.md；M3→m3-physical-sputtering.md；M4→m4-column-semantics.md），未产出/未通过前保持未勾。
 
 ## 验收清单（Phase → 一条命令的完成判定）
 
@@ -2199,7 +2199,7 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 ### T4.4 — ⚠️ PARTIAL（文档收尾已做；**计划归档按用户裁决不做**，2026-10-29）
 
 - 已做：`CHANGELOG.md` Unreleased 新增「W3a 中文首选名与 IME 词表覆盖」条目，并把旧陈述「`--self-test` 24/24」按实测更正为 **19/24**（漂移指向 PM 5072）；`.github/plans/_project-snapshot.md` 刷新 `Updated` 与计数（concepts 3076 / definitions 6152 / evidence 3203 / aliases 10249；allowlist 改为 raw `wc -l` 口径 3929 / 2817）；commit `af5228b`。
-- **未做（用户裁决，`question` 选「同步 IME + 文档收尾，不归档」）**：主计划**不**移入 `.github/plans/completed/`。理由：PM **5072**（W3a 证据/释义补强）仍为 `todo`，归档会误示缺口已关闭。归档动作待 5072 收口后执行。
+- **未做（用户裁决，`question` 选「同步 IME + 文档收尾，不归档」）**：主计划**不**移入 `.github/plans/completed/`。理由：PM **5072**（W3a 证据/释义补强）仍为 `todo`（2026-11-03 实测：5072 执行完成、独立验收 PASS，但数据未发布；归档仍暂缓。），归档会误示缺口已关闭。归档动作待 5072 收口后执行。
 - 计划内 M3（`w3-name-conflicts.tsv` 冲突项人工裁决）**仍未勾选**：台账中 `physical-sputtering`/`物理溅射` 为 pre-existing 且不在 `w3.ids`，等 5072/人工裁决。
 
 ### T4.5 — ✅ DONE（发布 v2026.10.29：版本号 + 文档 + 清理 + 打包 + tag + push，2026-10-29）

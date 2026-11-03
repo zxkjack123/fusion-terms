@@ -31,3 +31,7 @@ contract_exit=0
 - M1/M3/M4 均未勾，后续依据语义证据分别判断。
 - B2 与原计划漂移：当前仅执行计划未跟踪，未发现历史 iaea_fusion.html；不据此修改任何数据。
 - 数据目录 terms/、artifacts/、pipeline/、scripts/ 全程只读。
+
+## 状态回写结果
+
+5072 frontmatter 已标记 done-execution (data unreleased)，新增当前状态注记；历史 ACTIVE 标题和历史 todo 叙述保留为历史记录，以新增注记说明当前状态。父计划 M1/M3/M4 只追加证据入口，不提前勾选；归档仍暂缓。实际执行日期使用 date 实测值，未沿用计划示例日期。
