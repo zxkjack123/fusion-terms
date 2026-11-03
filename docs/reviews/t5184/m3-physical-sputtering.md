@@ -140,3 +140,57 @@ en2zh_short['physical sputtering'] = None
 判定: PASS
 
 > §4 汇总：H1 `PASS` / H2 `PASS` / H3 `UNDECIDABLE` / H4 `PASS`。**H3 的 UNDECIDABLE 不计入 PASS**，M3 因此不得勾选（待用户裁决）。全报告**不宣称成因**：§1 只登记三类并存事实，未判定该 alias 行由何流程、何时、因何写入。
+
+## §5 三选项建议（只出建议，不动数据）
+
+> **共同前提**：本阶段**没有**数据写权限（父代理委派口径：S2 默认只输出证据与裁决建议）。下列三项均为**提案**，任一项的实际执行都需用户先行裁决；本报告不声称任何一项已获实施许可。
+> **共同约束**：三项都只触及 `terms/registry/` 的 zh 命名，不改 `definitions`/`evidence`/`concepts.notes`；改后需重建 `artifacts/translation_dict.json` 与 `artifacts/query_expansions.json`，故「机械影响」均含一次 artifacts 重建。
+
+### 选项 A 删除 `物理溅射 → sputtering` 这条 zh alias（`aliases.tsv:397`）
+
+- **做法**：删除 `terms/registry/aliases.tsv:397`（`物理溅射 / sputtering / zh / alias / comment=physical sputtering zh`）。按 §2 实测，`zh2en` 与 `alias_index` 的 zh 侧映射由 alias 行生成、`concepts.preferred_zh` 未被消费（证据：`zh2en` 中以 `physical-sputtering` 为值的条目数 = 0，而 `concepts.tsv:712` 早已登记 `preferred_zh=物理溅射`）⇒ **单删会把「错指向」变成「无指向」**，因此完整形态为 **A′ = 删除 397 行 + 新增一条 `物理溅射 / physical-sputtering / zh / preferred`**。
+- **优点**：消除 §1 的三处并存事实；与 H1/H2 的层级判定（上位=`溅射`，下位=`物理溅射`/`化学溅射`）一致；修复后 `物理溅射` 在 zh→en 方向可达 `physical-sputtering`，补回 H4 实测的丢失。
+- **缺点**：A′ 是两处数据改动（删 1 行 + 加 1 行），且新行的 `kind=preferred` 会与 `concepts.tsv:712` 的 `preferred_zh` 形成第二处「首选名」声明，需保证两处一致；若 H3 最终裁决为「`物理溅射` 确是溅射的通用中文同义词」，则 A′ 反而删掉了一个成立的上位别名。
+- **机械影响**：`aliases.tsv` ±1 行（A′ 净 0 行）；受影响产物 `artifacts/translation_dict.json`（`zh2en['物理溅射']`：`sputtering` → `physical-sputtering`）、`artifacts/query_expansions.json`（`alias_index` 与两个 concept 的 `all_terms`）、`artifacts/vale/accept.txt`/`reject.txt` 及 `terminology_substitutions.tsv`（由 aliases 派生）。**预期回归**：`pipeline.validate_registry`、`scripts/registry_row_audit.py --audit`、`scripts/registry_batch_verify.py --self-test` 需重跑。
+- **风险**：中。若只删不补（漏做 A′ 的后半步），`物理溅射` 会从「指向错误概念」退化为「无 zh→en 映射」，对下游查询是净损失；`vale` 词表重建若有缓存未刷新，会出现 accept/reject 与 dict 不一致。**未验证项**：artifacts 生成器对 `kind=preferred`/`alias` 的处理差异本次未读源码确认，属 `[⚠️ 待验证]`。
+- 可逆性: **高**。纯行级增删，反向操作即恢复；且可先备份 `aliases.tsv` 的 397 行原文（本报告 §1 已逐字留存原始行），`git revert` 单 commit 即可完全回退。
+- **成本**：低（约 15 min：改 2 行 + 重建 artifacts + 跑 3 个门禁）。
+
+### 选项 B 改 `physical-sputtering` 的 `preferred_zh`（`concepts.tsv:712` 第 3 列）
+
+- **做法**：把 `concepts.tsv:712` 的 `preferred_zh` 由 `物理溅射` 改为另一中文名（例如「离子溅射」或「物理溅射（离子轰击）」），从而让 `物理溅射` 只保留 `sputtering` alias 的身份。
+- **优点**：不改 `aliases.tsv`，冲突在「首选名」层一次性消解；`zh2en` 的 zh→en 粗化（H4）保持原样但仍自洽。
+- **缺点**：`preferred_zh` 是 concept 的**规范中文名**，被 IME 导出、`concepts.tsv` 文档与外部引用共用；改名会波及所有引用该概念中文名的位置，且新名的选取需要领域命名权威——本阶段**无**该权威依据（H3 已 UNDECIDABLE，改名的语义前提同样不可得）。此外 `aliases.tsv:7050` 的 forbidden 行注释已把「物理溅射(产额)」当作正确形式，说明词表内部对「物理溅射」的用法另有约定，B 会与该行注释产生新的不一致。
+- **机械影响**：`concepts.tsv` 1 行 1 列；派生影响面比 A 大（`registry_exports.json`、IME 导出、`query_expansions` 的 concept 名、可能的 `dist/` 产物）；`scripts/registry_row_audit.py` 的列断言与 `pipeline.validate_registry` 的名称一致性检查需重跑。
+- **风险**：**高**。属规范名变更，影响面超出本冲突；新名无来源支撑（`artifacts/terminology_sources/` 6 文件对相关串 0 命中），等于用未证实的命名替换已登记命名。
+- 可逆性: 中。单行可 revert，但若已重建 artifacts 并外发（如 `dist/` 打包或 IME 词表），需同步回收下游副本。
+- **成本**：中（约 30 min：选名需领域判断 + 重建 + 3 门禁 + 下游核对）。
+
+### 选项 C 维持现状，登记为已知歧义
+
+- **做法**：`aliases.tsv` / `concepts.tsv` 均不改；在 `w3-name-conflicts.tsv` 已有登记（`:3`，`pre-existing`）之外，把 §1 的三处并存事实与 §2 的投影不对称结论写入本报告，并把 H3 标为待裁决项。
+- **优点**：与 H3 = `UNDECIDABLE` 的证据状态严格一致——**不在依据不可得时做不可逆的命名决策**；零数据风险、零下游回归；保留全部原始证据供后续裁决。
+- **缺点**：H4 实测的 zh→en 不可达（`物理溅射` 只能到 `sputtering`，`physical-sputtering` 在该方向不可达）继续存在；查询「物理溅射」的用法若本意是下位概念，会持续得到上位概念的结果。
+- **机械影响**：无。`terms/`、`artifacts/` 零 diff。
+- **风险**：低（技术风险）；但**遗留风险**是歧义长期驻留，后续若有人按 `物理溅射` 批量生成双语对照，会把 `physical-sputtering` 的用例系统性译成 `sputtering`。
+- 可逆性: **完全可逆**（无改动可回退）。
+- **成本**：零（本报告即产物）。
+
+## §6 推荐与裁决请求
+
+**推荐（条件式，非执行指令）**：
+
+1. **若用户裁决 H3 = 不成立**（即 `物理溅射` 在中文技术语境中专指物理机制的溅射，不作 `sputtering` 的通用同义词）⇒ **推荐选项 A 的完整形态 A′**。依据：H1/H2 已判 `PASS`，层级为「`溅射`（上位）⊃ `物理溅射` / `化学溅射`（并列下位）」；`aliases.tsv:397` 的 `comment` 字段自身写着 `physical sputtering zh`，与其挂载目标 `sputtering` 不一致（§1 事实 1）；A′ 同时修复 H4 实测的 zh→en 不可达，而 B 需要无来源支撑的新命名、C 保留 H4 的丢失。
+2. **若用户裁决 H3 = 成立**（`物理溅射` 确为通用同义词）⇒ **推荐选项 C**（维持），并需另行决定 `concepts.tsv:712` 的 `preferred_zh` 是否随之调整——该问题超出本冲突范围，本报告不代为决定。
+3. **若用户暂不裁决 H3**（当前证据状态）⇒ **推荐选项 C 作为默认**，保持 `w3-name-conflicts.tsv:3` 的 `pre-existing` 登记不变，M3 保持未勾。**不得**以「上游没有该串」为由推进 A/B——§4 已说明上游无该串仅反映术语表覆盖范围，不构成否定证据。
+
+**裁决请求（待用户裁决 (D2)）**：
+
+| 编号 | 待决事项 | 需要的用户输入 | 本报告能提供 / 不能提供 |
+|---|---|---|---|
+| D2-1 | H3 是否成立：`物理溅射` 可否作为 `sputtering` 的通用中文同义词 | 领域裁决，或提供可引用的中文权威（教材/标准/文献）条目 | **能**：§1 原行、§2 投影实测、§4 上游 0 命中清单。**不能**：仓内无该串的上游权威，无法自证 |
+| D2-2 | 若 H3 不成立，选 A′ 还是 B | 是否接受「删除 397 行 + 新增 preferred alias」的两步改动（A′），或接受规范名变更（B） | **能**：三项的做法/优缺点/机械影响/风险/可逆性/成本对比。**不能**：新中文名的领域命名依据 |
+| D2-3 | 若选 A′，是否同批重建 `artifacts/` 并重跑 3 个门禁 | 是否授权一次数据写窗口 | **能**：受影响产物清单（§5 A 的机械影响）。**不能**：本阶段无写权限，需另行派单 |
+
+> **状态声明**：S2 的查证工作到此完成（冲突全集扫描 + 原行证据 + 下游投影实测 + 语义层级与来源可得性 + 三选项建议），但 **M3 的语义是「人工裁决」，裁决未发生**，故父计划 M3 行**保持未勾**，仅追加 `S2 查证完成` 的状态注记。
+> **不宣称事项**：本报告不判定该 alias 行的写入原因/流程/时间（不宣称根因）；不判定上游术语表对「物理溅射」的态度（无该串）；不评估 `chemical-sputtering` 之外的并列机制是否有缺登记。
