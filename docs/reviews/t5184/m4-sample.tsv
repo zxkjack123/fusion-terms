@@ -1,0 +1,11 @@
+# concept_id	category	preferred_zh	preferred_en	preferred_abbr	status	notes	source
+appm	metric	原子百万分率	appm		active	Atomic parts per million: unit for measuring transmutation product concentration (He, H) or impurity levels in irradiated materials	corpus
+decay-storage	concept	衰变贮存	decay storage		active	Interim storage period allowing short-lived radionuclides to decay to clearance levels before recycling or disposal	corpus
+gas-production	metric	气体产生	gas production		active	Generation of helium and hydrogen gas in structural materials by transmutation reactions under neutron irradiation, measured in appm	corpus
+neutron-flux-monitor	device	中子通量监测器	neutron flux monitor		active	Detector system for real-time monitoring of neutron flux levels in and around a fusion device, used for power calibration and safety interlocks	corpus
+stiffening-grid	system	加强筋格栅	stiffening grid		active	Internal grid of ribs or plates within a blanket module providing structural rigidity against electromagnetic and pressure loads	corpus
+poloidal-field-power-supply	system	极向场电源	Poloidal Field Power Supply		active	Power supply system for PF coils [domain: electrical-power-systems]	corpus
+tallying-efficiency	metric	计数效率	Tallying Efficiency		active	Metric quantifying the computational cost to achieve a given tally precision [domain: computational-methods]	corpus
+roots-pump	device	罗茨泵	Roots Pump		active	Positive displacement vacuum pump using counter-rotating lobed rotors [domain: vacuum-technology]	corpus
+divertor-erosion	concept	偏滤器侵蚀	Divertor Erosion		active	Material removal from divertor target surfaces due to plasma particle and heat flux bombardment [domain: divertor-physics]	corpus
+lithium-burnup	metric	锂消耗	Lithium Burnup		active	Depletion of lithium-6 in breeding material due to neutron transmutation reactions [domain: breeding-material]	corpus
