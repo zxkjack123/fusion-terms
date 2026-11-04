@@ -394,7 +394,6 @@ divertor	divertor	en	preferred	preferred en
 
 溅射	sputtering	zh	preferred	preferred zh
 sputtering	sputtering	en	preferred	preferred en
-物理溅射	sputtering	zh	alias	physical sputtering zh
 chemical sputtering	chemical-sputtering	en	preferred	preferred en (phrase)
 
 侵蚀	erosion	zh	preferred	preferred zh
@@ -2499,6 +2498,7 @@ magnet cooling	magnet-cooling	en	preferred
 chemical erosion	chemical-erosion	en	preferred
 化学腐蚀	chemical-erosion	zh	preferred
 physical sputtering	physical-sputtering	en	preferred
+物理溅射	physical-sputtering	zh	preferred	zh preferred (M3 A': moved from sputtering alias)
 dust	dust	en	preferred
 粉尘	dust	zh	preferred
 fusion dust	dust	en	alias

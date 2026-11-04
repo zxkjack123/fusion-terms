@@ -1315,9 +1315,9 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 燃耗分数	燃耗份额	deprecated	zh	internal:dict-improvements
 燃耗率	燃烧份额	forbidden	zh	混淆burn fraction与burnup：正确为 燃烧份额
 爆聚速度	内爆速度	deprecated	zh	非标准：应为 内爆速度
-物理喷溅	physical sputtering	forbidden	zh	误译sputtering：正确为 物理溅射
-物理溅射率	physical sputtering	forbidden	zh	率暗示时间量纲：正确为 物理溅射(产额)
-物理飞溅	physical sputtering	forbidden	zh	误译sputtering：正确为 物理溅射
+物理喷溅	物理溅射	forbidden	zh	误译sputtering：正确为 物理溅射
+物理溅射率	物理溅射	forbidden	zh	率暗示时间量纲：正确为 物理溅射(产额)
+物理飞溅	物理溅射	forbidden	zh	误译sputtering：正确为 物理溅射
 物理驱动神经网络	物理信息神经网络	deprecated	zh	非标准(driven≠informed)：应为 物理信息神经网络
 物质迁移	材料迁移	forbidden	zh	误译material(材料≠物质)：正确为 材料迁移
 特兰斯普	TRANSP	forbidden	zh	AI transliteration of code token
