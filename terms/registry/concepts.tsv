@@ -1063,7 +1063,7 @@ waste-form	concept	废物体	waste form		active	Solidified radioactive waste mat
 waste-package	concept	废物包	waste package		active	Waste form plus container, as accepted at disposal facility	corpus
 near-surface-disposal	concept	近地表处置	near-surface disposal		active	Disposal of LILW in engineered facilities at ≤30 m depth	corpus
 geological-disposal	concept	地质处置	geological disposal		active	Deep underground disposal of HLW in geological repository	corpus
-nuclide-inventory	concept	核素产额	nuclide inventory		active	Radioisotope composition and activity of activated materials	corpus
+nuclide-inventory	concept	核素存量	nuclide inventory		active	Radioisotope composition and activity of activated materials	corpus
 decay-gamma-source	concept	衰变光子源	decay gamma source		active	Photon source from radioactive decay of activated materials	corpus
 rigorous-two-step	method	严格两步法	rigorous two-step method		active	Coupled MCNP+FISPACT method for shutdown dose rate calculation	corpus
 rami	concept	RAMI分析	RAMI		active	Reliability, Availability, Maintainability and Inspectability analysis	corpus

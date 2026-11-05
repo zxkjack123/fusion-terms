@@ -3173,7 +3173,7 @@
     "nuclear-quality-assurance": "核质量保证",
     "nucleate boiling": "泡核沸腾",
     "nucleate-boiling": "泡核沸腾",
-    "nuclide inventory": "核素产额",
+    "nuclide inventory": "核素存量",
     "null point": "零点",
     "number density": "原子密度",
     "numerical solution": "数值解",
@@ -6265,7 +6265,7 @@
     }
   },
   "metadata": {
-    "generated_at": "2026-11-04",
+    "generated_at": "2026-11-05",
     "pairs_en2zh": 4677,
     "pairs_en2zh_short": 396,
     "pairs_zh2en": 3417
@@ -8130,7 +8130,7 @@
     "核数据评价": "evaluated nuclear data",
     "核热": "nuclear heating",
     "核热沉积率": "nuclear heating rate",
-    "核素产额": "nuclide inventory",
+    "核素存量": "nuclide inventory",
     "核素清单": "nuclide inventory",
     "核聚变": "nuclear fusion",
     "核能沉积": "nuclear heating",

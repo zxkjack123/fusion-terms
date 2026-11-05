@@ -960,6 +960,7 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 核变换	嬗变	forbidden	zh	误译transmutation：正确为 嬗变
 核废料	放射性废物	deprecated	zh	应使用"放射性废物"或具体分类
 核数据图书馆	核数据库	forbidden	zh	误译library：正确为 核数据库
+核素产额	核素存量	deprecated	zh	误译inventory(存量≠产额)：正确为 核素存量
 核裂变产率	裂变产额	forbidden	zh	误译yield(产额≠产率)：正确为 裂变产额
 核转变	嬗变	forbidden	zh	非标准：正确为 嬗变
 格拉德-沙弗拉诺夫方程	Grad-Shafranov方程	forbidden	zh	误音译人名：正确保留 Grad-Shafranov方程

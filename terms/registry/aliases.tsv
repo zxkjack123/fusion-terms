@@ -5309,7 +5309,8 @@ deep geological disposal	geological-disposal	en	alias
 地质处置	geological-disposal	zh	preferred
 深地质处置	geological-disposal	zh	alias
 nuclide inventory	nuclide-inventory	en	preferred
-核素产额	nuclide-inventory	zh	preferred
+核素存量	nuclide-inventory	zh	preferred
+核素产额	nuclide-inventory	zh	deprecated	误译inventory(存量≠产额)：正确为 核素存量
 核素清单	nuclide-inventory	zh	alias
 decay gamma source	decay-gamma-source	en	preferred
 decay photon source	decay-gamma-source	en	alias

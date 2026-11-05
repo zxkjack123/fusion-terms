@@ -4913,7 +4913,7 @@ nuclear-response-function	zh	核响应函数是用于核热、氦产生等量的
 nuclear-security	zh	1. 对涉及核材料、其他放射性物质、相关设施或相关活动的犯罪或故意未经授权的行为进行预防、探测和响应。见 IAEA《核安保丛书》第 20 号 [47]。在 IAEA 关于核安保的出版物中，该词常被简称为安保。出于与核武器不扩散有关的原因而对核材料实行的安保，不属于 IAEA 安全标准和 IAEA《核安保丛书》的范围。2. 对涉及核材料、其他放射性物质或其相关设施的盗窃、破坏、未经授权进入、非法转移或其他恶意行为进行预防、探测和响应。见 IAEA GOV/2005/50。这包括但不限于：对核材料或其他放射性物质（无论是否知悉该物质的性质）的盗窃、破坏及其他恶意行为、非法贩运和未经授权转移进行预防、探测和响应。本定义中的响应要素是指旨在“逆转”未经授权进入或未经授权行为的直接后果的行动（例如回收材料）。对可能随后发生的放射性后果的响应被视为安全的一部分。安全（safety）与安保（security）这两个一般术语之间并没有确切的区分。一般而言，安保涉及人员可能对他人造成或威胁造成伤害的故意行为；安全则涉及人员（及环境）因受到辐射照射而产生有害后果这一更广泛的问题，无论其原因为何。安保安排与安全安排之间的相互作用取决于具体情形。安全安排与安保安排相互作用的领域例如包括：监管基础设施；核装置和其他设施的设计与建造中的工程规定；对核装置和其他设施出入的控制；放射源的分类；源的设计；放射源和放射性物质管理的安保；脱离监管控制的源的回收；应急响应计划；以及放射性废物管理。一般意义上的“安保”还涵盖与全球安全有关的议题——人类生活的可持续性——即能源安全、环境安全、粮食安全和水安全，以及核安保——核能的使用与所有这一切都相关。对安全标准、特别是 IAEA 安全标准丛书 Nos SF-1 [17]、GSR Part 3 [1] 和 GSR Part 7 [15] 的共同赞助，强化了保护人与保护环境的全球视野。	translated:IAEA-safety-glossary
 nuclear-security-event	zh	对核安保具有潜在或实际影响、必须予以应对的事件。此类事件包括涉及或针对核材料、其他放射性物质、相关设施或相关活动的犯罪或故意未经授权行为。例如，核安保事件（如破坏核设施或引爆放射性散布装置）可能引发核或辐射应急。	translated:IAEA-safety-glossary
 nuclide-inventory	en	The radioisotope composition and activity of activated materials.	corpus
-nuclide-inventory	zh	核素产额是活化材料中放射性同位素的组成与活度。	corpus
+nuclide-inventory	zh	核素存量是活化材料中放射性同位素的组成与活度。	corpus
 numerical-solution	en	A discrete approximation to the governing equations.	corpus
 numerical-solution	zh	数值解是控制方程的离散近似解。	corpus
 observed-cause	zh	见 原因。	translated:IAEA-safety-glossary
