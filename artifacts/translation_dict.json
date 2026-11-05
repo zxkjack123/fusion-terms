@@ -3443,7 +3443,7 @@
     "plasma stored energy": "等离子体储能",
     "plasma sustainment": "等离子体维持",
     "plasma temperature": "等离子体温度",
-    "plasma termination": "等离子体终止",
+    "plasma termination": "等离子体熄灭",
     "plasma triangularity": "等离子体三角形变",
     "plasma volume": "等离子体体积",
     "plasma wave": "等离子体波",
@@ -3474,7 +3474,6 @@
     "plasma-surface interaction": "等离子体表面相互作用",
     "plasma-surface-interaction": "等离子体表面相互作用",
     "plasma-temperature": "等离子体温度",
-    "plasma-termination": "等离子体终止",
     "plasma-wall coupling": "等离子体-材料互作",
     "plasma-wall interaction": "等离子体表面相互作用",
     "plasmoid": "等离子体团",
@@ -6266,9 +6265,9 @@
   },
   "metadata": {
     "generated_at": "2026-11-05",
-    "pairs_en2zh": 4677,
+    "pairs_en2zh": 4676,
     "pairs_en2zh_short": 396,
-    "pairs_zh2en": 3417
+    "pairs_zh2en": 3418
   },
   "schema_version": 2,
   "zh2en": {
@@ -8926,6 +8925,7 @@
     "等离子体波": "plasma wave",
     "等离子体温度": "plasma temperature",
     "等离子体激波": "plasma shock wave",
+    "等离子体熄灭": "Plasma Shutdown",
     "等离子体物理": "plasma",
     "等离子体物理研究所": "Institute of Plasma Physics CAS",
     "等离子体状态估计": "plasma state estimation",
@@ -8938,7 +8938,7 @@
     "等离子体破裂": "disruption",
     "等离子体约束": "plasma confinement",
     "等离子体纯度": "plasma purity",
-    "等离子体终止": "Plasma Termination",
+    "等离子体终止": "Plasma Shutdown",
     "等离子体维持": "plasma sustainment",
     "等离子体聚焦装置": "dense plasma focus",
     "等离子体脱靶": "plasma detachment",

@@ -6545,6 +6545,7 @@ burn phase	burn-phase	en	preferred	preferred en
 burn-phase	burn-phase	en	alias	hyphenated form
 plasma termination	plasma-shutdown	en	alias	merged from plasma-termination (retired preferred form)
 等离子体终止	plasma-shutdown	zh	alias	merged from plasma-termination (retired preferred form)
+等离子体熄灭	plasma-shutdown	zh	preferred	preferred zh
 component cooling water system	component-cooling-water-system	en	preferred	preferred en
 部件冷却水系统	component-cooling-water-system	zh	preferred	preferred zh
 CCWS	component-cooling-water-system	abbr	preferred	canonical abbr
@@ -7701,9 +7702,9 @@ neutron-fluence	fluence	en	alias	hyphenated neutron form
 血浆击穿	plasma-breakdown	zh	forbidden	AI误译plasma(等离子体≠血浆)：正确为 等离子体击穿
 等离子体故障	plasma-breakdown	zh	forbidden	AI误译breakdown(击穿≠故障)：正确为 等离子体击穿
 # -- plasma-shutdown (等离子体熄灭) — merged from plasma-termination
-等离子体终端	plasma-shutdown	zh	forbidden	AI误译termination(终止≠终端)：正确为 等离子体终止
-血浆终止	plasma-shutdown	zh	forbidden	AI误译plasma(等离子体≠血浆)：正确为 等离子体终止
-等离子体结束	plasma-shutdown	zh	forbidden	误译termination(终止≠结束)：正确为 等离子体终止
+等离子体终端	plasma-shutdown	zh	forbidden	AI误译termination(终止≠终端)：正确为 等离子体熄灭
+血浆终止	plasma-shutdown	zh	forbidden	AI误译plasma(等离子体≠血浆)：正确为 等离子体熄灭
+等离子体结束	plasma-shutdown	zh	forbidden	误译termination(终止≠结束)：正确为 等离子体熄灭
 # -- plasma-material-interaction (等离子体-材料互作)
 血浆材料互作	plasma-material-interaction	zh	forbidden	AI误译plasma(等离子体≠血浆)：正确为 等离子体-材料互作
 血浆材料耦合	plasma-material-interaction	zh	forbidden	AI误译plasma(等离子体≠血浆)：正确为 等离子体-材料互作

@@ -1562,8 +1562,8 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 等离子体次半径	等离子体小半径	forbidden	zh	误译minor：正确为 等离子体小半径
 等离子体比压值	等离子体比压	deprecated	zh	internal:dict-improvements
 等离子体细丝	等离子体丝状体	forbidden	zh	误译filament(丝状体≠细丝)：正确为 等离子体丝状体
-等离子体终端	等离子体终止	forbidden	zh	AI误译termination(终止≠终端)：正确为 等离子体终止
-等离子体结束	等离子体终止	forbidden	zh	误译termination(终止≠结束)：正确为 等离子体终止
+等离子体终端	等离子体熄灭	forbidden	zh	AI误译termination(终止≠终端)：正确为 等离子体熄灭
+等离子体结束	等离子体熄灭	forbidden	zh	误译termination(终止≠结束)：正确为 等离子体熄灭
 等离子体维护	等离子体维持	forbidden	zh	误译sustainment：正确为 等离子体维持
 等离子体脱离	等离子体脱靶	forbidden	zh	误译detachment：正确为 等离子体脱靶
 等离子体表面交互	等离子体表面相互作用	forbidden	zh	误译interaction：正确为 等离子体表面相互作用
@@ -1776,7 +1776,7 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 血浆材料互作	等离子体-材料互作	forbidden	zh	AI误译plasma(等离子体≠血浆)：正确为 等离子体-材料互作
 血浆材料耦合	等离子体-材料互作	forbidden	zh	AI误译plasma(等离子体≠血浆)：正确为 等离子体-材料互作
 血浆注入	杂质注入	forbidden	zh	AI误译plasma→血浆：正确为 杂质注入
-血浆终止	等离子体终止	forbidden	zh	AI误译plasma(等离子体≠血浆)：正确为 等离子体终止
+血浆终止	等离子体熄灭	forbidden	zh	AI误译plasma(等离子体≠血浆)：正确为 等离子体熄灭
 血浆脱离	等离子体脱靶	forbidden	zh	AI误译plasma(等离子体≠血浆)：正确为 等离子体脱靶
 血浆表面相互作用	等离子体表面相互作用	forbidden	zh	AI误译plasma(等离子体≠血浆)：正确为 等离子体表面相互作用
 血浆边界	刮削层	forbidden	zh	AI误译plasma+boundary：正确为 刮削层
