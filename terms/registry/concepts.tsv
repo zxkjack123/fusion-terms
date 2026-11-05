@@ -344,7 +344,7 @@ current-profile-control	concept	电流剖面控制	current profile control		acti
 # ---- Plasma theory & simulation (等离子体理论与仿真)
 gyrokinetics	concept	回旋动理学	gyrokinetics		active	Reduced kinetic theory averaging over fast gyro-motion	corpus
 drift-kinetics	concept	漂移动理学	drift kinetics		active	Kinetic theory in guiding-center approximation	corpus
-turbulent-transport	concept	湍流输运	turbulent transport		active	Anomalous transport driven by micro-turbulence	corpus
+turbulent-transport	concept	湍流输运	turbulent transport		active	Transport caused by turbulence in the plasma	corpus
 transport-barrier	concept	输运垒	transport barrier		active	Region of reduced turbulent transport (edge or internal)	corpus
 internal-transport-barrier	concept	内输运垒	internal transport barrier	ITB	active	Transport barrier inside the plasma mid-radius	corpus
 flux-surface	concept	磁面	flux surface		active	Nested toroidal surface of constant poloidal flux	corpus
