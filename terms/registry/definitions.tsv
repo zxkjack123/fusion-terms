@@ -5348,8 +5348,8 @@ rsae	zh	反剪切Alfvén本征模是反剪切区中的间隙模，又称 Alfvén
 runaway-electron-damage	en	Deep localized PFC damage from runaway electron impact.	corpus
 runaway-electron-damage	zh	逃逸电子损伤是逃逸电子撞击造成的深层局域PFC损伤。	corpus
 runup	zh	水体沿海滩或结构物向上的突然涌升。	translated:IAEA-safety-glossary
-rupture-disc	en	A non-reclosing safety device that ruptures on overpressure to relieve pressure.	corpus
-rupture-disc	zh	爆破片是超压时主动破裂泄放压力的非重闭式安全装置。	corpus
+rupture-disc	en	A non-reclosing pressure relief device that bursts at set pressure differential to relieve overpressure.	corpus
+rupture-disc	zh	爆破片是超压时破裂泄放压力的非重闭式安全装置。	corpus
 s-alpha-beta	en	The thermal scattering law data, written S(alpha,beta).	corpus
 s-alpha-beta	zh	S(α,β) 是用于束缚原子散射的热散射律数据。	corpus
 safe-state	zh	见 电厂状态。	translated:IAEA-safety-glossary
