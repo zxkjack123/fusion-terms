@@ -3933,8 +3933,8 @@ dcll	en	Helium/lithium-lead dual-coolant blanket concept.	corpus
 dcll	zh	氦/锂铅双冷却剂包层方案。	corpus
 dd-reaction	en	A fusion reaction between deuterons. Its branches are D + D -> n + He-3 and D + D -> p + T, which, with equal probability, produce a helium nucleus plus a neutron or tritium plus a proton while releasing energy.	GB/T-4960.9
 debye-sheath	en	The transition region formed between an electrically neutral plasma and the solid surface in contact with it. Although the plasma itself is approximately an equipotential region, a strong potential gradient exists inside the plasma sheath, which does not remain electrically neutral; it is also called the sheath.	GB/T-4960.9
-debye-shielding	en	Debye shielding / screening of electric charges in plasma.	corpus
-debye-shielding	zh	德拜屏蔽是等离子体中对电荷的屏蔽。	corpus
+debye-shielding	en	Debye shielding is the electrostatic screening of an electric charge in a plasma by the surrounding cloud of oppositely charged particles; the screened potential decays as exp(−r/λ_D) over the characteristic distance λ_D (Debye length).	corpus
+debye-shielding	zh	德拜屏蔽是等离子体中的电荷被周围异号电荷云屏蔽的现象，屏蔽后电势在特征距离（德拜长度 λ_D）上近似按指数衰减。	corpus
 decay	en	The process by which a radioactive substance changes to a different form by sending out radiation.	https://www.oxfordlearnersdictionaries.com/definition/english/decay
 decay	zh	衰变是放射性物质通过发出辐射而转变为另一种形态的过程。	https://www.oxfordlearnersdictionaries.com/definition/english/decay
 decay-chain	en	A sequence of successive radioactive decays.	corpus
