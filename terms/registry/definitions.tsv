@@ -5065,8 +5065,8 @@ plasma-surface-interaction	en	The collective term for the processes by which the
 plasma-surface-interaction	zh	等离子体与其面对的材料表面相互影响的各类过程的统称，既包括等离子体对这些表面的改变，也包括这些表面对等离子体的改变。	corpus
 plasma-sustainment	en	Non-inductive sustainment of current and confinement.	corpus
 plasma-sustainment	zh	等离子体维持是电流与约束的非感应维持。	corpus
-plasma-termination	en	The phase at the end of a plasma discharge.	corpus
-plasma-termination	zh	等离子体终止是放电结束的阶段。	corpus
+# retired (merged): plasma-termination en -> plasma-shutdown (T-5259)
+# retired (merged): plasma-termination zh -> plasma-shutdown (T-5259)
 plateau-regime	en	A collisionality regime of a plasma in which the effective Coulomb collision frequency is equal to or greater than the poloidal transit frequency, while the mean free path length is smaller than the connection length. In this state the transport coefficients are independent of the collision frequency.	GB/T-4960.9
 plinian-eruption	zh	见 eruption。	translated:IAEA-safety-glossary
 pliocene	zh	地质时间的一个区间，自 5.3 百万年前延续至 2.6 百万年前。	translated:IAEA-safety-glossary

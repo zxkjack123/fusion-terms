@@ -1533,7 +1533,7 @@ plasma-breakdown	concept	等离子体击穿	Plasma Breakdown		active	放电启�
 loop-voltage	metric	环电压	Loop Voltage		active	放电启动关键参数	corpus
 flat-top	concept	平顶段	Flat-Top		active	等离子体电流稳态运行阶段	corpus
 burn-phase	concept	燃烧阶段	Burn Phase		active	D-T 燃烧运行阶段	corpus
-plasma-termination	concept	等离子体终止	Plasma Termination		active	放电结束阶段	corpus
+# retired (merged): plasma-termination -> plasma-shutdown (T-5259)
 component-cooling-water-system	system	部件冷却水系统	Component Cooling Water System	CCWS	active	ITER PBS 27	corpus
 chilled-water-system	system	冷冻水系统	Chilled Water System	CHWS	active	ITER PBS 28	corpus
 port-cell	concept	端口室	Port Cell		active	ITER 端口设备布置空间	corpus
