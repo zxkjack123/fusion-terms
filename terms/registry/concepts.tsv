@@ -179,7 +179,7 @@ fuel-capsule	concept	靶丸	fuel capsule		active	DT ice/ablator shell target for
 ablator	concept	烧蚀层	ablator		active	Outer capsule layer providing implosion drive	corpus
 rayleigh-taylor-instability	concept	瑞利-泰勒不稳定性	Rayleigh-Taylor instability	RTI	active	Hydrodynamic instability at accelerating density interface	corpus
 ignition	concept	点火	ignition		active	Self-sustaining thermonuclear burn condition	corpus
-lawson-criterion	concept	劳森判据	Lawson criterion		active	Minimum n·τ·T product for fusion energy gain	corpus
+lawson-criterion	concept	劳森判据	Lawson criterion		active	Two threshold conditions for D-T fusion: T > 10 keV and n·τ_E > 2×10^20 m^-3·s; a criterion, whereas fusion triple product is a figure of merit	corpus
 energy-gain	metric	能量增益	energy gain	Q	active	Ratio of fusion energy output to input energy	corpus
 nif	device	NIF	National Ignition Facility	NIF	active	192-beam laser ICF facility at LLNL	corpus
 z-pinch	device	Z箍缩	Z-pinch		active	Magnetically driven ICF / pulsed power approach	corpus
