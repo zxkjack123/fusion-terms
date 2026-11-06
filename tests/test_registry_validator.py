@@ -430,3 +430,143 @@ def test_validate_registry_rejects_four_column_evidence(tmp_path: Path) -> None:
     assert p.returncode != 0
     combined = (p.stdout or "") + "\n" + (p.stderr or "")
     assert "expected 5 columns" in combined
+
+
+# --- O-6 (#5315): preferred-name consistency + acronym reverse assertion ---
+
+
+def _min_terms(tmp_path: Path) -> Path:
+    terms_dir = tmp_path / "terms"
+    terms_dir.mkdir(parents=True, exist_ok=True)
+    (terms_dir / "allowlist_zh.txt").write_text("\n", encoding="utf-8")
+    (terms_dir / "allowlist_en.txt").write_text("\n", encoding="utf-8")
+    return terms_dir
+
+
+def test_validate_registry_rejects_zh_preferred_alias_mismatch(tmp_path: Path) -> None:
+    """A zh/preferred alias must not contradict its concept's preferred_zh."""
+    repo_root = Path(__file__).resolve().parents[1]
+    terms_dir = _min_terms(tmp_path)
+    _write_registry_tables(
+        terms_dir,
+        concepts=(
+            "# concept_id\tcategory\tpreferred_zh\tpreferred_en\tpreferred_abbr\tstatus\tnotes\tsource\n"
+            "tokamak\tconcept\t托卡马克\ttokamak\t\tactive\t\t\n"
+        ),
+        aliases=(
+            "# alias\tconcept_id\tlang\tkind\n"
+            "托卡马克\ttokamak\tzh\tpreferred\n"
+            "托卡马克装置\ttokamak\tzh\tpreferred\n"
+        ),
+        evidence="tokamak\thttps://example.com\t\t\t2026-02-04\n",
+    )
+    p = _run_validator(repo_root, terms_dir)
+    assert p.returncode != 0, "expected failure for contradicting zh/preferred alias"
+    combined = (p.stdout or "") + "\n" + (p.stderr or "")
+    assert "preferred_zh" in combined and "contradicts" in combined
+
+
+def test_validate_registry_allows_grandfathered_mismatch(tmp_path: Path) -> None:
+    """Legacy mismatch pairs are grandfathered so the gate can ship without data edits."""
+    repo_root = Path(__file__).resolve().parents[1]
+    terms_dir = _min_terms(tmp_path)
+    _write_registry_tables(
+        terms_dir,
+        concepts=(
+            "# concept_id\tcategory\tpreferred_zh\tpreferred_en\tpreferred_abbr\tstatus\tnotes\tsource\n"
+            "sawtooth\tconcept\t锯齿\tsawtooth\t\tactive\t\t\n"
+        ),
+        aliases=(
+            "# alias\tconcept_id\tlang\tkind\n锯齿不稳定性\tsawtooth\tzh\tpreferred\n"
+        ),
+        evidence="sawtooth\thttps://example.com\t\t\t2026-02-04\n",
+    )
+    p = _run_validator(repo_root, terms_dir)
+    assert p.returncode == 0, f"grandfathered pair must pass:\n{p.stdout}\n{p.stderr}"
+
+
+def test_validate_registry_skips_check_when_concept_preferred_zh_empty(
+    tmp_path: Path,
+) -> None:
+    """With no concept-level zh name there is nothing to contradict."""
+    repo_root = Path(__file__).resolve().parents[1]
+    terms_dir = _min_terms(tmp_path)
+    _write_registry_tables(
+        terms_dir,
+        concepts=(
+            "# concept_id\tcategory\tpreferred_zh\tpreferred_en\tpreferred_abbr\tstatus\tnotes\tsource\n"
+            "beryllium\tconcept\t\tberyllium\t\tactive\t\t\n"
+        ),
+        aliases=("# alias\tconcept_id\tlang\tkind\n铍\tberyllium\tzh\tpreferred\n"),
+        evidence="beryllium\thttps://example.com\t\t\t2026-02-04\n",
+    )
+    p = _run_validator(repo_root, terms_dir)
+    assert p.returncode == 0, (
+        f"empty preferred_zh must be skipped:\n{p.stdout}\n{p.stderr}"
+    )
+
+
+def test_validate_registry_rejects_invented_acronym_in_translated_zh(
+    tmp_path: Path,
+) -> None:
+    """A translated zh definition must not introduce acronyms absent from en/preferred_en."""
+    repo_root = Path(__file__).resolve().parents[1]
+    terms_dir = _min_terms(tmp_path)
+    _write_registry_tables(
+        terms_dir,
+        concepts=(
+            "# concept_id\tcategory\tpreferred_zh\tpreferred_en\tpreferred_abbr\tstatus\tnotes\tsource\n"
+            "plasma\tconcept\t等离子体\tplasma\t\tactive\t\t\n"
+        ),
+        aliases=(
+            "# alias\tconcept_id\tlang\tkind\n"
+            "等离子体\tplasma\tzh\tpreferred\n"
+            "plasma\tplasma\ten\tpreferred\n"
+        ),
+        evidence="plasma\thttps://example.com\t\t\t2026-02-04\n",
+        definitions=(
+            "# concept_id\tlang\tdefinition\tsource\n"
+            "plasma\ten\tPlasma is an ionized gas.\tcorpus\n"
+            "plasma\tzh\t等离子体是电离气体（XYZQ 模型）。\ttranslated:test\n"
+        ),
+    )
+    p = _run_validator(repo_root, terms_dir)
+    assert p.returncode != 0, "expected failure for invented acronym XYZQ"
+    combined = (p.stdout or "") + "\n" + (p.stderr or "")
+    assert "XYZQ" in combined and "acronym" in combined.lower()
+
+
+def test_validate_registry_allows_acronym_present_in_en_or_preferred_en(
+    tmp_path: Path,
+) -> None:
+    """Acronyms sourced from the en row or from concepts.preferred_en are legitimate."""
+    repo_root = Path(__file__).resolve().parents[1]
+    terms_dir = _min_terms(tmp_path)
+    _write_registry_tables(
+        terms_dir,
+        concepts=(
+            "# concept_id\tcategory\tpreferred_zh\tpreferred_en\tpreferred_abbr\tstatus\tnotes\tsource\n"
+            "neutral-beam-injection\tconcept\t\tNBI\t\tactive\t\t\n"
+            "mast-upgrade\tdevice\tMAST升级\tMAST Upgrade\t\tactive\t\t\n"
+        ),
+        aliases=(
+            "# alias\tconcept_id\tlang\tkind\n"
+            "中性束注入\tneutral-beam-injection\tzh\tpreferred\n"
+            "NBI\tneutral-beam-injection\ten\tpreferred\n"
+            "MAST升级\tmast-upgrade\tzh\tpreferred\n"
+            "MAST Upgrade\tmast-upgrade\ten\tpreferred\n"
+        ),
+        evidence=(
+            "neutral-beam-injection\thttps://example.com\t\t\t2026-02-04\n"
+            "mast-upgrade\thttps://example.com\t\t\t2026-02-04\n"
+        ),
+        definitions=(
+            "# concept_id\tlang\tdefinition\tsource\n"
+            "neutral-beam-injection\ten\tHeating by neutral beam injection (NBI).\tcorpus\n"
+            "neutral-beam-injection\tzh\t通过中性束注入（NBI）加热。\ttranslated:test\n"
+            "mast-upgrade\ten\tUpgraded spherical tokamak.\tcorpus\n"
+            "mast-upgrade\tzh\tMAST 装置是升级后的球形托卡马克。\ttranslated:test\n"
+        ),
+    )
+    p = _run_validator(repo_root, terms_dir)
+    assert p.returncode == 0, f"legitimate acronyms must pass:\n{p.stdout}\n{p.stderr}"

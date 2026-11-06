@@ -12,6 +12,24 @@ from pipeline.common import load_simple_list
 
 CONCEPT_ID_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 
+# --- O-6 / #5315 guard rails -------------------------------------------------
+# Uppercase tokens are treated as acronyms when auditing translated zh rows.
+ACRONYM_RE = re.compile(r"\b[A-Z][A-Z0-9]{1,12}\b")
+
+# Legacy zh/preferred aliases whose text intentionally differs from the concept's
+# preferred_zh. Measured 2026-11-07: 9 rows disagree in total, of which 4 have an
+# empty concept-level name (skipped below) and 5 are listed here. Rewriting them is
+# data work tracked in a separate task; until then the gate must not go red on them.
+_GRANDFATHERED_ZH_PREFERRED_MISMATCHES = frozenset(
+    {
+        ("sawtooth", "锯齿不稳定性"),
+        ("fusion-triple-product", "三重积"),
+        ("plasma-detachment", "脱靶"),
+        ("debye-sheath", "鞘层"),
+        ("d1s", "直接一步法"),
+    }
+)
+
 # Allowed provenance values for the concepts.tsv ``source`` column.
 # Use a prefix-based allowlist so that ``GB/T-4960.x`` variants all pass.
 _ALLOWED_SOURCE_PREFIXES = ("corpus", "GB/T-", "ITER-", "IAEA-", "")
@@ -112,6 +130,8 @@ def validate_registry(terms_dir: Path) -> None:
 
     # ---- concepts.tsv ----
     concept_ids: set[str] = set()
+    concept_preferred_zh: dict[str, str] = {}
+    concept_preferred_en: dict[str, str] = {}
     for r in concepts_rows:
         if len(r.fields) < 2:
             _fail(r.path, r.lineno, "expected at least 2 columns: concept_id, category")
@@ -134,6 +154,12 @@ def validate_registry(terms_dir: Path) -> None:
         if concept_id in concept_ids:
             _fail(r.path, r.lineno, f"duplicate concept_id {concept_id!r}")
         concept_ids.add(concept_id)
+        concept_preferred_zh[concept_id] = (
+            r.fields[2].strip() if len(r.fields) >= 3 else ""
+        )
+        concept_preferred_en[concept_id] = (
+            r.fields[3].strip() if len(r.fields) >= 4 else ""
+        )
 
         # Validate source column (8th field, index 7) if present.
         source = r.fields[7].strip() if len(r.fields) >= 8 else ""
@@ -204,6 +230,22 @@ def validate_registry(terms_dir: Path) -> None:
             forbidden_or_deprecated.add(alias)
         if kind == "preferred":
             concepts_with_preferred.add(concept_id)
+
+        # O-6 / #5315: a zh/preferred alias must not contradict the concept's own
+        # preferred_zh (prevents the "two canonical Chinese names" class of defect).
+        if kind == "preferred" and lang == "zh":
+            concept_zh = concept_preferred_zh.get(concept_id, "")
+            if (
+                concept_zh
+                and concept_zh != alias
+                and (concept_id, alias) not in _GRANDFATHERED_ZH_PREFERRED_MISMATCHES
+            ):
+                _fail(
+                    r.path,
+                    r.lineno,
+                    f"zh/preferred alias {alias!r} contradicts concepts.preferred_zh "
+                    f"{concept_zh!r} for concept {concept_id!r}",
+                )
 
         # Alias must map to exactly one concept (avoid drift).
         if alias in alias_to_concept and alias_to_concept[alias] != concept_id:
@@ -276,6 +318,8 @@ def validate_registry(terms_dir: Path) -> None:
     allowed_def_langs = {"zh", "en"}
     definitions_count = 0
     seen_defs: set[tuple[str, str]] = set()
+    zh_definitions: dict[str, tuple[str, str, Path, int]] = {}
+    en_definitions: dict[str, str] = {}
     for r in definitions_rows:
         if len(r.fields) != 4:
             _fail(
@@ -304,7 +348,27 @@ def validate_registry(terms_dir: Path) -> None:
                 f"duplicate definition for ({cid!r}, {lang!r})",
             )
         seen_defs.add((cid, lang))
+        if lang == "zh":
+            zh_definitions[cid] = (defn, source, r.path, r.lineno)
+        elif lang == "en":
+            en_definitions[cid] = defn
         definitions_count += 1
+
+    # ---- translated zh must not introduce acronyms absent from en / preferred_en ----
+    for cid, (defn, source, path, lineno) in zh_definitions.items():
+        if not source.startswith("translated:"):
+            continue
+        allowed = set(ACRONYM_RE.findall(en_definitions.get(cid, ""))) | set(
+            ACRONYM_RE.findall(concept_preferred_en.get(cid, ""))
+        )
+        extra = sorted(set(ACRONYM_RE.findall(defn)) - allowed)
+        if extra:
+            _fail(
+                path,
+                lineno,
+                "translated zh definition introduces acronym(s) absent from "
+                f"en/preferred_en: {', '.join(extra)}",
+            )
 
     # ---- bridge check: forbidden/deprecated shouldn't leak into IME allowlists ----
     allow_zh = load_simple_list(terms_dir / "allowlist_zh.txt")
