@@ -188,3 +188,43 @@ python3 -m pipeline.validate_registry
 | 活文档 | 本审计报告、`docs/reviews/5072-status-reconciliation.md` | 本条即登记；后续新写引用请使用 `completed/` 路径 |
 
 **影响评估**：计划引用为 Markdown 文本，不参与任何脚本/门禁解析（`grep` 全库无代码读取该路径）⇒ **零功能影响**，仅为人工跳转便利问题。
+
+---
+
+## 10. 5184 M3/M1 修复计划入库并归档（2026-11-07）
+
+### 10.1 背景
+
+`.github/plans/5184-m3-m1-repair.md` 自 `5184` 收口以来**一直未跟踪**（用户 2026-11-05 裁决「保持未跟踪」）。至 2026-11-07 该计划 `status` 已为 **`DONE`**（M3 关闭 `#T-5257`；M1 按 R11 收口 `#T-5259`；§10 manual 三项已判读签署），继续滞留未跟踪会使**唯一权威执行台账只存在于本地文件系统**，与仓库「完成的计划移入 `completed/`」惯例相悖。用户 2026-11-07 授权处理此项。
+
+### 10.2 入库前体检
+
+| 检查 | 结果 |
+|---|---|
+| 规模 | 191,095 B / 1257 行（入库前） |
+| `status:` | `DONE — 2026-11-06` |
+| 行首未勾项 | **3**（`D1` 无延期项 / `P1` 远端 tag 探测 / `P2` release contract） |
+| 敏感内容扫描（`sk-`/`AKIA`/`ghp_`/`ZETA` 等） | **0 命中** |
+| `completed/` 同名冲突 | 无 |
+
+### 10.3 归档前补齐 3 个探针（实测）
+
+| 项 | 命令 | 实测结果 |
+|---|---|---|
+| `P1` | `git ls-remote --tags origin \| grep v2026.10.30` | **exit=0**：`refs/tags/v2026.10.30` = `883c0a1`（deref `fa34be1`）⇒ 已发布 tag 未被本计划触碰 |
+| `P2` | `python3 -m pipeline.verify_release_contract --root dist/stage/v2026.10.30` | **exit=0**：`contract OK: domain_terms.txt terms=6375 version=v2026.10.30 commit=fa34be1f6d6d` |
+| `D1` | — | 确认无服务重启/部署项 ⇒ 无延期项 |
+
+补齐后：**行首未勾项 = 0**。
+
+### 10.4 执行
+
+- 物理移动 `plans/` → `completed/`（该文件此前未被跟踪，故 git 记为 **新增文件**而非 rename：`1257 insertions(+), 0 deletions`）。
+- 最终内容 sha256 = `3e1e95e36004a54583ce8de72100beab177e6a1092f9521b4028e791e4d138ca`（191,375 B / 1257 行）；相对入库前 `c77eca63…`（191,095 B）的 +280 B 差异**全部来自上述 3 条探针注记**，无其他改动。
+- commit `256bfe0`，尾标 `#T-5184`。
+
+**计划库现状：active 2 / completed 27。** active 2 = `_project-snapshot.md`（非计划快照）、`publication-program-lre-scientificdata.md`（并发会话）。
+
+### 10.5 引用面（如实登记）
+
+全仓 **9 个 `.md`** 引用旧路径 `.github/plans/5184-m3-m1-repair.md`：`completed/terminology-coverage-and-definition-quality.md`、本报告、`5072-status-reconciliation.md`、`docs/reviews/t5184/repair-m1-{b1,b2,b3,b4,execution}.md`、`repair-a-prime-forbidden-crosscheck.md`。**均不改写**（审计产物/已冻结记录）；后续引用请用 `completed/` 路径。零功能影响（无代码读取该路径）。
