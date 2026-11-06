@@ -23,7 +23,7 @@
 1. **任务级 checkbox = 证据**：`#### ✅ Task n.m: …` 标题或任务内 `- ✅ …` 验收条目。
 2. **清单级 `- [ ]` = 模板噪声，不参与完成判定**：
    - 「回归检查清单」「验收标准」块中的 `- [ ]`——尤其是**从未勾选却与任务块 ✅ 并存**的；
-   - 引用**历史基线数字**的条目（如 `concepts.tsv 行数 = 1476`、`≥ 2947`、`≥ 2398`）——注册表此后已扩到 3208，这些阈值对今天的仓库已无判别力；
+   - 引用**历史基线数字**的条目（如 `concepts.tsv 行数 = 1476`、`≥ 2947`、`≥ 2398`）——注册表此后已扩到 **3075 concepts**（`validate_registry` 权威口径），这些阈值对今天的仓库已无判别力；
    - `无歧义`/probe/deferred/list-style 形式的块。
 3. **外部锚点复核**：归档前用**与基线无关的当前事实**复核（concept_id 存在性、`evidence.tsv` 的 `internal:registry-gap-review:batchN` 行数、allowlist 关键 token、`artifacts/*` 当前实测值），而非依赖计划里的旧数字。
 4. **例外（升级为 AMBIGUOUS）**：若清单级 `- [ ]` 是**唯一**完成信号（既无 ✅ 任务标题、也无任何完成/归档标记），一律判 (d) 而非 (a)，即使内容看起来已完成。
@@ -55,7 +55,7 @@
 | `repo-hardening-2026-03-24.md` | 2026-10-25 | 0/10 | (b) SUPERSEDED | 首行「已归档 —— 由 `repo-hardening-2026-04-14.md` 周期取代并完成（task 23/23）；🔴 项已修复经 `full-repo-2026-03-25.md` 复核确认」；23 个 ✅ 任务；替代方 `repo-hardening-2026-04-14.md` 确实已在 `completed/` | **保留**，见下 ⚠️ | 同上 |
 | `short-token-segregation.md` | 2026-04-14 | 0/7 | (a) DONE（弱证据，已归档） | 单独「✅ 状态：已归档」；6/6 ✅ 任务；核心断言可实证：`en2zh` 无 ≤2 字符 ASCII 键、`en2zh_short` 每条含 `concept_id`+`zh`（396 条） | `git mv` | 清单里 `registry_exports.json` 的 `pairs_en2zh_short` 字段未单独核验 |
 | `translation-enhancement.md` | 2026-04-14 | 0/7 | (a) DONE（弱证据，已归档） | 单独「✅ 状态：已归档」；12/12 ✅ 任务；主线产出 `translation_dict.json` 存在且三桶完整（en2zh 4676 / en2zh_short 396 / zh2en 3418） | `git mv` | 无 |
-| `_project-snapshot.md` | 2026-10-29 | 0/0 | 非计划 | 快照文件不是执行计划 | 不动 | ⚠️ 计数已明显过期：快照写 concepts 3076 / aliases 10249 / evidence 3203 / domain_terms 未列；今天实测 **concepts 3208 / aliases 10270 / evidence 3202**，且 `Updated` 停在 2026-10-29（8 天，刚越 7 天门限） |
+| `_project-snapshot.md` | 2026-10-29 | 0/0 | 非计划 | 快照文件不是执行计划 | 不动 | ⚠️ 计数已明显过期：快照写 concepts 3076 / aliases 10249 / evidence 3203 / domain_terms 未列；`validate_registry` 权威口径今天为 **3075 concepts / 10250 aliases / 3202 evidence / 6150 definitions**（注：`3208`/`10270` 是本报告早期用「非注释原始行数」量出的**不同口径**，不是注册表漂移），且 `Updated` 停在 2026-10-29（8 天，刚越 7 天门限） |
 
 ### 明确未归档的两项
 
@@ -99,9 +99,9 @@
 
 1. **`repo-hardening-2026-03-24.md` 去留**：(b) 证据充分，但属「历史周期记录」类簇整理，需决定是否与其它历史周期计划一并归档；同时决定是否补一份 `docs/reviews/full-repo-2026-03-24.md` 的缺失说明。
 2. **弱证据档位政策**：`fix-translation-dict-gaps`、`mcp-dict-improvements-2026-04`、`repo-improvement-2026-03-25`、`short-token-segregation`、`translation-enhancement` 只有「✅ 状态：已归档」一句、无任务计数。若政策要求「完成证据必须含任务计数或数据锚点」，这 5 份需回滚；本次已逐条用当前数据实证其主要断言（见上表），固判归档。
-3. **`_project-snapshot.md` 刷新**：concepts 3076→3208、aliases 10249→10270、evidence 3203→3202，`Updated` 2026-10-29 已越 7 天门限。属 doc-maintainer 常规职责，本次未改（不在授权动作内）。
+3. **`_project-snapshot.md` 刷新**：按 `validate_registry` 权威口径应为 concepts **3076→3075**、aliases **10249→10250**、evidence **3203→3202**（definitions 6152→6150 亦可补），`Updated` 2026-10-29 已越 7 天门限。属 doc-maintainer 常规职责，本次未改（不在授权动作内）。⚠️ **口径警告：不得使用「非注释原始行数」（concepts 3408/3208、aliases 11569/10989），该口径与门禁不一致。**
 4. **旧基线阈值清理**：已归档计划正文中的 `≥ 2947`、`≥ 2398`、`concepts.tsv 行数 = 1476` 等阈值已永久失真。本次遵守「绝不编辑归档文件内容」，故**只在报告中记录**；若要修正需单独立项（且应在归档前做，现在只能加注）。
-5. **`vale/terminology_substitute.yml` 缺失**：`substitute-supplement-batch80.md` 断言该文件存在并含 5 条 swap，仓库中不存在。需确认是路径变更（可能在 `vale/` 之外或有新名）还是真实缺口。
+5. ~~**`vale/terminology_substitute.yml` 缺失**~~ → **核正（2026-11-06 复测）**：该文件**存在**于 `artifacts/vale/terminology_substitute.yml`（75,738 bytes，mtime 2026-11-04），先前判定为**路径误判**（检索了 `vale/` 而非 `artifacts/vale/`）。⇒ `substitute-supplement-batch80.md` 的断言成立，**无缺口**。
 6. **`evidence.tsv` 行数口径**：计数为 3202（`wc -l` 3203 行含表头），快照与 `t4973-batches/final-verification.md` 均写 3203 —— 差 1 是表头，建议统一口径。
 
 ## 复核方法（可复跑）
