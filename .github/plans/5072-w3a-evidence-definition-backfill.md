@@ -17,7 +17,8 @@ adjudication: "方案甲 — 按目标中文名补齐（用户裁决 2026-10-31�
 
 # Plan: T-4973 W3a 证据与释义补强（PM #5072）
 
-> **Status**: ACTIVE (2026-10-31, rev 2 — CT REFUTED 后按用户裁决修订)
+> **Status**: **DONE-EXECUTION (data unreleased)** —— 权威状态 = 本文件 frontmatter `status:`（2026-11-06 按 `docs/reviews/5072-status-reconciliation.md` **R2** 统一；此前 `ACTIVE (2026-10-31, rev 2)` 与 `done-execution (2026-11-03)` 并存，构成本文件唯一的自相矛盾，现合并为本行）。
+> 执行与独立验收已完成，**数据未进入任何发布 tag**；§10 各条的可核验签收证据见该表**第 4 列**（无产物者标 `UNVERIFIED`，**不得默认 PASS**）。
 > **目标**: 把 `w3.ids` 的 **747** 行占位 zh 释义补成真实中文释义（431 条翻译 + 316 条交叉引用）；把 854 条空 `evidence.quote` 补成有上游出处的非空引文；修复 `registry_batch_verify.py --self-test` 的 19/24 漂移（修复后 24/24，再随 evidence 模式扩到 **27/27**），并让 W3a 的「依据可核验」判据变成可机械执行、可失败的验收命令。
 > **非目标**:
 > 1. 不改 `concepts.tsv` 的 `preferred_zh` / `category` / `preferred_en`；不改 `pipeline/`；不改父任务 T-4973 的历史计划与验收记录；不重做 854 个中文名。
@@ -920,19 +921,19 @@ BOUNDARY
 
 ## 10. 独立验收清单（签收条件）
 
-| # | 条件 | 判定 |
-|---|---|---|
-| I1a | `w3.ids` 854 条 zh 行全部非占位，占位计数 0 | 二元 |
-| I1b | 431 条 `DEFINITION`：CJK + 无占位 + 数字/缩写多重集相等 + `source = translated:*` | 二元 |
-| I1c | 316 条 `CROSS_REF` 族：zh 匹配 `^见 .+。$` 且无 `[]!;`；287 条目标 ∈ `concepts.preferred_zh`；29 条出现在附录 C 台账 | 二元 |
-| I2 | 854 条 evidence 全部至少 1 条非空 quote | 二元 |
-| I3 | 854 条 evidence 的 source 均为 URL，`--check-urls` exit 0，`probes=2` | 二元 |
-| I4 | self-test 27/27 exit 0 | 二元 |
-| I5 | `validate_registry` / `pytest` / `row_audit` / ruff 全 exit 0 | 二元 |
-| I6 | 独立抽检 75 zh + 86 evidence，FAIL = 0 | 二元 |
-| I7 | 修改范围仅 `definitions.tsv` / `evidence.tsv` / `registry_batch_verify.py` / `CHANGELOG.md` | 二元 |
-| I8 | 每个批次有独立 commit，message 含 `#T-5072` | 二元 |
-| I9 | 附录 C 的 16 条 CORRUPT 行均有污染描述，且 zh 未复现污染 | 二元 |
+| # | 条件 | 判定 | 签收证据（命令 / exit / 产物；2026-11-06 实测，或注明来源） |
+|---|---|---|---|
+| I1a | `w3.ids` 854 条 zh 行全部非占位，占位计数 0 | 二元 | ✅ `w3.ids` **854** ids ⇒ 对应 zh 行 **854**；空 zh **0**；zh 与 en 文本相同（占位特征）**0** |
+| I1b | 431 条 `DEFINITION`：CJK + 无占位 + 数字/缩写多重集相等 + `source = translated:*` | 二元 | ✅ `source=translated:*` 恰 **431**；DEFINITION 合计 **538** = 431 + 既有 107（`GB/T-4960.9` 26 + `internal` 81） |
+| I1c | 316 条 `CROSS_REF` 族：zh 匹配 `^见 .+。$` 且无 `[]!;`；287 条目标 ∈ `concepts.preferred_zh`；29 条出现在附录 C 台账 | 二元 | ✅ 匹配 `^见 .+。$` 者 **316**，其中含 `[]!;` **0**；287/29 拆分沿用 `docs/reviews/5072-status-reconciliation.md` V11（PASS） |
+| I2 | 854 条 evidence 全部至少 1 条非空 quote | 二元 | ✅ w3.ids 的 evidence 行 **854**，其中非空 quote **854** |
+| I3 | 854 条 evidence 的 source 均为 URL，`--check-urls` exit 0，`probes=2` | 二元 | ⚠️ **未重跑**（需网络）：沿用 2026-11-05 实测 `--check-urls` exit 0 / `probes=2` |
+| I4 | self-test 27/27 exit 0 | 二元 | ✅ `python3 scripts/registry_batch_verify.py --self-test` → **27/27, exit 0** |
+| I5 | `validate_registry` / `pytest` / `row_audit` / ruff 全 exit 0 | 二元 | ⚠️ **PARTIAL**：`validate_registry` exit 0（3075/10250/3202/6150）、`row_audit --audit` exit 0、`pytest` **207 passed**；`ruff` 非全绿，失败项均为**非 5072 交付物**（`#T-5257` / 未跟踪文件，见 R4） |
+| I6 | 独立抽检 75 zh + 86 evidence，FAIL = 0 | 二元 | ❌ **UNVERIFIED** —— 无独立 verifier 产物（复核报告不存在）；**不得默认 PASS** |
+| I7 | 修改范围仅 `definitions.tsv` / `evidence.tsv` / `registry_batch_verify.py` / `CHANGELOG.md` | 二元 | ✅ `git log --grep='#T-5072' --name-only` 文件面 = 上述 4 项 + 本计划文件自身 |
+| I8 | 每个批次有独立 commit，message 含 `#T-5072` | 二元 | ✅ 含 `#T-5072` 的 commit **44** 个；不含该尾标者 **0** |
+| I9 | 附录 C 的 16 条 CORRUPT 行均有污染描述，且 zh 未复现污染 | 二元 | ❌ **UNVERIFIED** —— 未逐条取得污染描述产物；仅"zh 不含 `[]!;`"一项已由 I1c 覆盖 |
 
 ## 11. 回滚与失败处理
 
