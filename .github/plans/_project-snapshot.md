@@ -1,25 +1,25 @@
 # Project Snapshot — fusion-terms
 
 **Generated**: 2026-10-25
-**Updated**: 2026-10-29 (T-4973 W3a naming + allowlist and T4.1/T4.2/T4.3 re-verified; PM 5072 evidence/释义 follow-up remains open; snapshot counts re-verified against `pipeline.validate_registry`)
-**Release**: `v2026.10.29` (tag → release commit); registry counts below are that release's
+**Updated**: 2026-11-06 (M3 closeout + M1 D1–D9 repair + allowlist backfill; counts re-measured with `python3 -m pipeline.validate_registry` — **use that caliber only**, not raw non-comment line counts)
+**Release**: `v2026.10.29` (tag → release commit)；**下方 registry 计数为 2026-11-06 HEAD 实测值，不是该 release 的值**
 
 ## Architecture
 
 ```
 fusion-terms/
 ├── terms/
-│   ├── allowlist_zh.txt        # 3929 raw lines — Chinese approved terms
+│   ├── allowlist_zh.txt        # 4090 raw lines — Chinese approved terms
 │   ├── allowlist_en.txt        # 2817 raw lines — English approved terms
 │   ├── synonyms.tsv            # 53 lines — alias→preferred mappings
 │   ├── denylist.txt            # 639 lines — noise/boilerplate tokens
 │   ├── stopwords_zh.txt        # Chinese stopwords
 │   ├── stopwords_en.txt        # English stopwords
 │   └── registry/               # Deeper terminology metadata
-│       ├── concepts.tsv        # 3076 concepts
-│       ├── definitions.tsv     # 6152 definitions (bilingual)
-│       ├── evidence.tsv        # 3203 evidence rows
-│       └── aliases.tsv         # 10249 alias mappings
+│       ├── concepts.tsv        # 3075 concepts
+│       ├── definitions.tsv     # 6150 definitions (bilingual)
+│       ├── evidence.tsv        # 3202 evidence rows
+│       └── aliases.tsv         # 10250 alias mappings
 ├── pipeline/                   # Python package: build, validation, indexing
 ├── tests/                      # pytest test suite
 ├── scripts/                    # Data import/extraction utilities
