@@ -38,8 +38,7 @@ def _run_projection_export(out_dir: Path) -> None:
         check=False,
     )
     assert result.returncode == 0, (
-        "projection export failed:\n"
-        f"stdout={result.stdout}\nstderr={result.stderr}"
+        f"projection export failed:\nstdout={result.stdout}\nstderr={result.stderr}"
     )
 
 
@@ -58,10 +57,10 @@ def test_m3_a_prime_removes_historical_alias() -> None:
 
 
 def test_m3_a_prime_adds_exact_preferred_row() -> None:
-    assert sum(
-        row[:4] == [ALIAS, CONCEPT, "zh", "preferred"]
-        for row in _physical_rows()
-    ) == 1
+    assert (
+        sum(row[:4] == [ALIAS, CONCEPT, "zh", "preferred"] for row in _physical_rows())
+        == 1
+    )
 
 
 def test_m3_a_prime_keeps_single_concept_ownership() -> None:
@@ -72,8 +71,12 @@ def test_m3_a_prime_projection_values(tmp_path: Path) -> None:
     _run_projection_export(tmp_path)
 
     query = json.loads((tmp_path / "query_expansions.json").read_text(encoding="utf-8"))
-    translation = json.loads((tmp_path / "translation_dict.json").read_text(encoding="utf-8"))
-    substitutions = (tmp_path / "terminology_substitutions.tsv").read_text(encoding="utf-8")
+    translation = json.loads(
+        (tmp_path / "translation_dict.json").read_text(encoding="utf-8")
+    )
+    substitutions = (tmp_path / "terminology_substitutions.tsv").read_text(
+        encoding="utf-8"
+    )
 
     # The translation dictionary stores the concept's preferred English label;
     # alias_index is the stable concept-id projection.
