@@ -967,12 +967,12 @@ sort terms/allowlist_zh.txt | uniq -d | wc -l            # 期望 0
 
 ### Deferred (needs restart / deployment)
 
-- [ ] D1: 无（本仓库无服务进程；`release_pack` 产物为静态文件，不需要重启）
+- [x] D1: 无（本仓库无服务进程；`release_pack` 产物为静态文件，不需要重启）｜**确认 2026-11-06**：本计划无服务重启/部署项，此项为「无延期项」占位
 
 ### Probe (best-effort, run if available)
 
-- [ ] P1: `.venv/bin/python scripts/registry_batch_verify.py --mode definitions --ids-file .venv-nonexistent --expect 0` → 应 exit ≠ 0（负向探针：确认脚本对缺失 ids 文件报错而非静默 PASS）
-- [ ] P2: `git rev-parse HEAD` 与 `git status --porcelain`（每批提交前）；若有脏文件 → 先解释来源
+- [x] P1: `.venv/bin/python scripts/registry_batch_verify.py --mode definitions --ids-file .venv-nonexistent --expect 0` → 应 exit ≠ 0（负向探针：确认脚本对缺失 ids 文件报错而非静默 PASS）｜**实测 2026-11-06：exit=2**，`registry_batch_verify: ids file not found: .venv-nonexistent`（非静默 PASS）
+- [x] P2: `git rev-parse HEAD` 与 `git status --porcelain`（每批提交前）；若有脏文件 → 先解释来源｜**实测 2026-11-06**：`HEAD=e109f88`、`tracked_dirty=0`
 
 ### Manual（真正需要人工判断）
 
