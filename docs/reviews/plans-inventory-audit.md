@@ -158,3 +158,33 @@ python3 -m pipeline.validate_registry
 - 本次移动 **6** 份：上表 5 份 + `repo-hardening-2026-03-24`，全部 **R100（内容零改动）**，单个 commit。
 - 计划库现状：**active 4 / completed 25**。active 4 = `5184-m3-m1-repair.md`（在办）、`_project-snapshot.md`（非计划快照）、`publication-program-lre-scientificdata.md`（并发会话）、`terminology-coverage-and-definition-quality.md`（父计划台账）。
 - 可逆性：全部为 `git mv`，`git revert` 即还原。
+
+---
+
+## 9. 父计划归档（2026-11-06，用户授权「做父计划归档」）
+
+### 9.1 归档前体检
+
+| 检查 | 结果 |
+|---|---|
+| 行首未勾项 `^- \[ \]` | **0** |
+| 行首已勾项 `^- \[x\]` | **24** |
+| `M1`–`M4` 手动验收 | **4/4 已勾**（M1 于 `7be0b14` 按 R11 收口；M3 于 `ea5411d` 关闭） |
+| 归档前补齐的 3 项 | `D1`（确认无延期项）、`P1`（负向探针**实测 exit=2** + `ids file not found`，非静默 PASS）、`P2`（实测 `HEAD=e109f88`、`tracked_dirty=0`）｜commit `bd2bb94` |
+
+### 9.2 执行
+
+`git mv .github/plans/terminology-coverage-and-definition-quality.md .github/plans/completed/` ⇒ **R100（内容零改动，sha256 `833be597cfe2a9b6`）**。
+
+**计划库现状：active 3 / completed 26。** active 3 = `5184-m3-m1-repair.md`（在办）、`_project-snapshot.md`（非计划快照）、`publication-program-lre-scientificdata.md`（并发会话）。
+
+### 9.3 旧路径引用面（如实登记，本次不改写）
+
+全仓 15 个 `.md` 引用旧路径 `.github/plans/terminology-coverage-and-definition-quality.md`，分两类：
+
+| 类 | 文件 | 处置 |
+|---|---|---|
+| 历史留痕（审计产物 / 已完成计划 / 批次台账） | `t4973-batches/{README,red-green,w3a-acceptance}.md`、`completed/{5184-four-stage-closeout,5072-w3a-evidence-definition-backfill,registry-evidence-adoption}.md`、`docs/reviews/t5184/repair-m1-b3-suggestion.md`、`repair-m1-b4-merge.md` | **不改写**（审计产物与已冻结记录；路径语义仍指向同一文件，现位于 `completed/`） |
+| 活文档 | 本审计报告、`docs/reviews/5072-status-reconciliation.md` | 本条即登记；后续新写引用请使用 `completed/` 路径 |
+
+**影响评估**：计划引用为 Markdown 文本，不参与任何脚本/门禁解析（`grep` 全库无代码读取该路径）⇒ **零功能影响**，仅为人工跳转便利问题。
