@@ -115,3 +115,46 @@ awk -F'\t' '$2 ~ /registry-gap-review:batch[0-9]/ {b=$2; sub(/.*batch/,"",b); pr
 # 当前注册表实测
 python3 -m pipeline.validate_registry
 ```
+
+---
+
+## 8. 归档策略裁决（2026-11-06，用户授权「做第 2 项」）
+
+### 8.0 先更正一处执行不一致
+
+上文 §4 表格把 5 份「弱证据」计划（`fix-translation-dict-gaps`、`mcp-dict-improvements-2026-04`、`repo-improvement-2026-03-25`、`short-token-segregation`、`translation-enhancement`）的 action 列写为 `git mv`，但 2026-11-06 复核发现**它们当时并未实际移动**（`plans/` 仍在、`completed/` 无；`124bb8b` 的 13 个 R100 移动不含它们）。本次已把「裁决 → 移动」补齐，故该表现已与实际一致。
+
+### 8.1 5 份弱证据计划的逐条核验（每份 ≥2 条机械可核验断言）
+
+| 计划 | 断言（来自计划原文） | 实测 | 结论 |
+|---|---|---|---|
+| `short-token-segregation` | ① `en2zh` 无 ≤2 字符 ASCII 键（原 39 个）② `en2zh_short` 396 条且每条含 `concept_id`+`zh` | ① **0 个** ② **396 条**，样本 `{'A': {'concept_id':'aspect-ratio','zh':'纵横比'}}`；`schema_version=2` | ✅ 确认归档 |
+| `fix-translation-dict-gaps` | ① `lithium ceramic pebble bed`→锂陶瓷球床 ② `lithium ceramic`→锂陶瓷 ③ 术语族可解析（增殖包层/环向场线圈/接触剂量） | ① `en2zh['lithium ceramic pebble bed']='锂陶瓷球床'` ② `='锂陶瓷'` ③ `breeding blanket`/`toroidal field coil`/`contact dose rate` 均可解析；`in-vessel`/`ex-vessel` 概念存在 | ✅ 确认归档 |
+| `mcp-dict-improvements-2026-04` | ① `D-T`→氘氚 ② `实验包层模块`→test blanket module | ① `zh2en['D-T']='deuterium-tritium'`、`en2zh['deuterium-tritium']='氘氚'` ② `zh2en['实验包层模块']='test blanket module'`、反向 `=实验包层模块` | ✅ 确认归档 |
+| `translation-enhancement` | ① glue 概念落库 ② `internal:translation:glue-vocabulary` 证据存在 | ① `system/mode/device/calculation/material/simulation` 均 1 concept + 2 aliases，`en2zh` 分别 = 系统/模式/装置/计算/材料/模拟 ② 证据行 **25** 条 | ✅ 确认归档 |
+| `repo-improvement-2026-03-25` | ① `extract()` 542→≤200 行 ② `--rime-script` 改为 config 驱动 + 回退默认 | ① **135 行**（`pipeline/extract_candidates.py:1123`）② 3 个脚本均读 `rime_cfg.get("import_script")` | ⚠️ **确认归档，但登记一处计划内部矛盾**（见 8.2） |
+
+### 8.2 发现的计划内部矛盾（`repo-improvement-2026-03-25`）
+
+- 修改内容（`:230`）明确要求「改为从 config 加载的值，**否则回退到现有默认值**」⇒ 回退字面量**必须保留**；
+- 但验收标准（`:239`）却写「`grep -rn "~/.local/bin/rime_import_wordlist.py" pipeline/` → **0 匹配**」，且 `:537` 该断言**至今未勾**；
+- 实测：`config.toml [rime]` **未定义 `import_script`**，故回退字面量必然生效 ⇒ 3 个 tracked 文件仍含该路径（`rime_export.py:93`、`rime_import_safe.py:347`、`generate_dict_yaml.py:151`）。
+
+**裁决**：实现符合「修改内容」的设计意图（config 驱动 + 回退），**不接受 `:239` 的字面 0 匹配口径**（该断言与 `:230` 自相矛盾，不可同时满足）。计划归档文件**内容不改**（冻结原则），矛盾记录于本节。**不**据此重开该计划；若日后要消除硬编码，应另立任务并把 `import_script` 写进 `config.toml`。
+
+### 8.3 `repo-hardening-2026-03-24.md` 去留
+
+| 判据 | 证据 | 结论 |
+|---|---|---|
+| 被取代 | 首行自述「由 `repo-hardening-2026-04-14.md` 周期取代并完成（task 勾选 23/23）」；取代方**已归档** | 支持归档 |
+| 复核存在性 | 引用的替代复核 `.github/reviews/full-repo-2026-03-25.md` **存在**（10,092 B） | 支持 |
+| 缺失引用 | `../reviews/full-repo-2026-03-24.md` 不存在 —— **该缺口已由计划首行自行声明** | 不构成阻塞 |
+| 23/23 任务 | 头部 `✅ Task N.N` 23 处 | 支持 |
+
+**裁决：归档**（`git mv` → `completed/`，R100，内容零改动）。
+
+### 8.4 执行结果
+
+- 本次移动 **6** 份：上表 5 份 + `repo-hardening-2026-03-24`，全部 **R100（内容零改动）**，单个 commit。
+- 计划库现状：**active 4 / completed 25**。active 4 = `5184-m3-m1-repair.md`（在办）、`_project-snapshot.md`（非计划快照）、`publication-program-lre-scientificdata.md`（并发会话）、`terminology-coverage-and-definition-quality.md`（父计划台账）。
+- 可逆性：全部为 `git mv`，`git revert` 即还原。
