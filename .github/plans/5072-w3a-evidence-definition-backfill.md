@@ -927,13 +927,13 @@ BOUNDARY
 | I1b | 431 条 `DEFINITION`：CJK + 无占位 + 数字/缩写多重集相等 + `source = translated:*` | 二元 | ✅ `source=translated:*` 恰 **431**；DEFINITION 合计 **538** = 431 + 既有 107（`GB/T-4960.9` 26 + `internal` 81） |
 | I1c | 316 条 `CROSS_REF` 族：zh 匹配 `^见 .+。$` 且无 `[]!;`；287 条目标 ∈ `concepts.preferred_zh`；29 条出现在附录 C 台账 | 二元 | ✅ 匹配 `^见 .+。$` 者 **316**，其中含 `[]!;` **0**；287/29 拆分沿用 `docs/reviews/5072-status-reconciliation.md` V11（PASS） |
 | I2 | 854 条 evidence 全部至少 1 条非空 quote | 二元 | ✅ w3.ids 的 evidence 行 **854**，其中非空 quote **854** |
-| I3 | 854 条 evidence 的 source 均为 URL，`--check-urls` exit 0，`probes=2` | 二元 | ⚠️ **未重跑**（需网络）：沿用 2026-11-05 实测 `--check-urls` exit 0 / `probes=2` |
+| I3 | 854 条 evidence 的 source 均为 URL，`--check-urls` exit 0，`probes=2` | 二元 | ✅ `registry_batch_verify --mode evidence --ids-file w3.ids --expect 854 --check-urls` → **verdict=PASS / probes=2 / ids=854 / exit 0**（2026-11-06 重跑） |
 | I4 | self-test 27/27 exit 0 | 二元 | ✅ `python3 scripts/registry_batch_verify.py --self-test` → **27/27, exit 0** |
 | I5 | `validate_registry` / `pytest` / `row_audit` / ruff 全 exit 0 | 二元 | ⚠️ **PARTIAL**：`validate_registry` exit 0（3075/10250/3202/6150）、`row_audit --audit` exit 0、`pytest` **207 passed**；`ruff` 非全绿，失败项均为**非 5072 交付物**（`#T-5257` / 未跟踪文件，见 R4） |
-| I6 | 独立抽检 75 zh + 86 evidence，FAIL = 0 | 二元 | ❌ **UNVERIFIED** —— 无独立 verifier 产物（复核报告不存在）；**不得默认 PASS** |
+| I6 | 独立抽检 75 zh + 86 evidence，FAIL = 0 | 二元 | ✅ **PASS**（2026-11-06，`acceptance-verifier` 只读）：zh 75 → in-scope PASS **70** / FAIL **0**；evidence 86 → 命中 **86** / FAIL **0**；抽样指纹见 `docs/reviews/5072-i6-i9-verification.md` §2 |
 | I7 | 修改范围仅 `definitions.tsv` / `evidence.tsv` / `registry_batch_verify.py` / `CHANGELOG.md` | 二元 | ✅ `git log --grep='#T-5072' --name-only` 文件面 = 上述 4 项 + 本计划文件自身 |
 | I8 | 每个批次有独立 commit，message 含 `#T-5072` | 二元 | ✅ 含 `#T-5072` 的 commit **44** 个；不含该尾标者 **0** |
-| I9 | 附录 C 的 16 条 CORRUPT 行均有污染描述，且 zh 未复现污染 | 二元 | ❌ **UNVERIFIED** —— 未逐条取得污染描述产物；仅"zh 不含 `[]!;`"一项已由 I1c 覆盖 |
+| I9 | 附录 C 的 16 条 CORRUPT 行均有污染描述，且 zh 未复现污染 | 二元 | ✅ **PASS（16/16 全量非抽样）**：C.1 存在/描述存在/zh == 台账/无污染残余 均通过；附加 token 泄漏检验 0 泄漏。见 `docs/reviews/5072-i6-i9-verification.md` §3.4 |
 
 ## 11. 回滚与失败处理
 
