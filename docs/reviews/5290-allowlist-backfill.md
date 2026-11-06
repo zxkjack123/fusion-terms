@@ -75,3 +75,15 @@ Audience: repository developers / agents（内部技术产物 ⇒ `[de-ai-fier: 
 - 并发三路径（`docs/publication/`、`evaluation/`、`.github/plans/publication-program-lre-scientificdata.md`）未读为判据、未改、未 stage。
 - 钩子全程启用，未使用 `--no-verify`。
 - 回滚：`git revert <本 commit>`（单文件、纯追加，完全可逆）。
+
+---
+
+## 6.1 政策定案（2026-11-06 用户裁决）与关闭
+
+- **裁决**：用户 2026-11-06 经 `question` 选定「**按政策归档并关闭（推荐）**」。
+- **定案内容**（**零数据改动**，仅口径）：
+  1. **3 条纯 ASCII 装置名**（`W7-X` / `HSX` / `NIF`）⇒ 记为 **no-op**：已在 `allowlist_en.txt`，`allowlist_zh.txt` 为中文 IME 词表，不收录拉丁名；
+  2. **5 条含空格短语面**（`α 通道效应`、`α 功率`、`ITER 试验包层模块`、`L-H 转换阈值功率`、`逃逸 α 粒子探测器`）⇒ **永久排除**：受 `build_terms` 的 token-only 契约约束（与 T-4973 W2 同类例外一致）；
+  3. **37 条 `EXCLUDE_FROM_IME`**（机构/公司名）⇒ **跟随 P1 裁决（2026-11-06「保留排除」）**，维持现状。
+- **结论**：`preferred_zh` 覆盖补齐任务（`#5290`）**到此关闭**；残余 **45** 条均为政策排除，**不是未完成工作**。后续 `registry_batch_verify --mode allowlist` 对这 45 个 id 仍会报 `allow_zh_not_listed`，属**预期行为**，无需重复排查。
+- **若日后改变政策**：需分别修改 `terms/proper_names.txt` 语义（37 条）、`pipeline/build_terms.py` 的空白规则（5 条）、或说明拉丁名的 IME 收益（3 条），并各自走授权流程。
