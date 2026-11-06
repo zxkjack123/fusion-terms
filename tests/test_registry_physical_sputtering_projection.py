@@ -86,7 +86,10 @@ def test_m3_a_prime_projection_values(tmp_path: Path) -> None:
     assert ALIAS not in query["concepts"]["sputtering"]["all_terms"]
     assert translation["en2zh"]["physical sputtering"] == ALIAS
     assert translation["zh2en"]["溅射"] == "sputtering"
-    assert "物理溅射率\t物理溅射\t" in substitutions
+    # The 率/产额 (rate/yield) forms belong to the metric concept `sputtering-yield`,
+    # not to the phenomenon `physical-sputtering` (M1 follow-up, #5322): the target
+    # of this substitution is therefore the zh preferred name 溅射产额.
+    assert "物理溅射率\t溅射产额\t" in substitutions
 
 
 def test_exporter_rejects_multi_concept_alias(tmp_path: Path) -> None:

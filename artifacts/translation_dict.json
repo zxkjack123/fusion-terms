@@ -6264,7 +6264,7 @@
     }
   },
   "metadata": {
-    "generated_at": "2026-11-05",
+    "generated_at": "2026-11-07",
     "pairs_en2zh": 4676,
     "pairs_en2zh_short": 396,
     "pairs_zh2en": 3418
@@ -8558,7 +8558,7 @@
     "版本控制": "version control",
     "物理信息神经网络": "Physics-Informed Neural Network",
     "物理溅射": "physical sputtering",
-    "物理溅射产额": "physical sputtering",
+    "物理溅射产额": "sputtering yield",
     "特征线法": "method of characteristics",
     "环向场纹波": "toroidal field ripple",
     "环向场线圈": "toroidal field coil",

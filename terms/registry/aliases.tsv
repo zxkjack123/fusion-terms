@@ -4563,7 +4563,7 @@ parametric decay	parametric-instability	en	alias	decay form
 台基区	pedestal	zh	alias	region form
 H模台基	pedestal	zh	alias	H-mode form
 弹丸烧蚀速率	pellet-ablation	zh	alias	rate form
-物理溅射产额	physical-sputtering	zh	alias	yield form
+物理溅射产额	sputtering-yield	zh	alias	yield form
 physical sputtering yield	physical-sputtering	en	alias	yield form
 等离子体物理	plasma	zh	alias	physics form
 坪区输运	plateau-regime	zh	alias	transport form
@@ -7048,7 +7048,7 @@ sputtering yield	sputtering-yield	en	preferred	preferred en (phrase)
 sputtering-yield	sputtering-yield	en	alias	IME token-only form
 溅射产额	sputtering-yield	zh	preferred	preferred zh
 溅射率	sputtering-yield	zh	forbidden	率暗示时间量纲：正确为 溅射产额
-物理溅射率	physical-sputtering	zh	forbidden	率暗示时间量纲：正确为 物理溅射(产额)
+物理溅射率	sputtering-yield	zh	forbidden	率暗示时间量纲：正确为 溅射产额
 desorption	desorption	en	preferred	preferred en
 脱附	desorption	zh	preferred	preferred zh
 解吸	desorption	zh	deprecated	非标准：应为 脱附
