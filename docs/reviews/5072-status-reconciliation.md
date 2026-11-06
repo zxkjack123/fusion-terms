@@ -226,3 +226,22 @@ self-test 27/27）**可从仓库证据完全复现，属实完成**；但「独�
 - **依据**：台账语义（`pipeline/proper_names.py` 文件头）明确「机构/公司名属 registry 身份，不属 IME 词表」；中文输入法实际极少键入全称。
 - **对本报告结论的影响**：§4 记录的「12 个专名待裁决」中，**中文机构名这 8 项至此定案**（另 3 项为纯 ASCII 装置名，已在 `allowlist_en.txt`，本就不属 zh IME 词表；余 1 项为计数口径差）。⇒ **本报告 R1（5072 归档）的前置阻断已解除**。
 - **仍未执行（需另行授权，本次不做）**：R2（统一 `L10`/`L20` 状态行）、R3（§10 表格补「命令 + exit + 产物路径」或标 `UNVERIFIED`）、R5/R6（归档 5072 与父计划链）。上述三项均为**写操作**，未包含在本次「保留排除」裁决内。
+
+---
+
+## 7. 归档执行（2026-11-06）
+
+**R1/R6 前置全部满足**：
+
+| 前置 | 状态 | 证据 |
+|---|---|---|
+| P1：8 个中文机构名政策 | ✅ 已裁决「保留排除」 | `8dcca19`；本文 §4.1 |
+| R2：状态行统一 | ✅ 已落地 | `baf400a`（`DONE-EXECUTION (data unreleased)` 唯一陈述） |
+| R3：§10 签收证据列 | ✅ 已落地 | `baf400a` + `3a6622e` + `5d08200`；终态 **10 ✅ / 1 ⚠️ / 0 ❌** |
+| I6：75 zh + 86 evidence | ✅ 独立验收 **PASS**（FAIL 0/0） | `3a6622e`；`docs/reviews/5072-i6-i9-verification.md` |
+| I9：16 条 CORRUPT | ✅ 全量 **16/16 PASS** | 同上 §3.4 |
+| I3：URL 探针 | ✅ 重跑 **PASS**（`probes=2`） | 同上 §4 |
+
+**执行**：`git mv .github/plans/5072-w3a-evidence-definition-backfill.md .github/plans/completed/` —— rename **R100**（内容零改动，sha256 不变）。原路径不再存在。
+
+**未纳入本次**：**父计划**（`.github/plans/terminology-coverage-and-definition-quality.md`）的归档。R1 的链条虽指向「随后归档父计划」，但该文件同时是 M1–M4 的**唯一权威台账**与历史快照载体，归档需单独确认（本会话未获该项授权）。它的四个 manual 项现全部 `- [x]`（M1 于 `7be0b14` 按 R11 收口）。
