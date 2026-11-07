@@ -4363,12 +4363,12 @@ flux coordinates	flux-coordinate	en	alias	plural
 磁力线追踪	field-line-tracing	zh	preferred
 field-line tracing	field-line-tracing	en	preferred
 field line tracing	field-line-tracing	en	alias	no hyphen
-锯齿不稳定性	sawtooth	zh	preferred
+锯齿不稳定性	sawtooth	zh	alias	同义（非首选）
 sawtooth instability	sawtooth	en	preferred
 电流驱动	current-drive	zh	preferred
 current drive	current-drive	en	preferred
 CD	current-drive	abbr	preferred	canonical abbr
-三重积	fusion-triple-product	zh	preferred
+三重积	fusion-triple-product	zh	alias	同义（非首选）
 triple product	fusion-triple-product	en	preferred
 nTτ	fusion-triple-product	en	alias	formula notation
 # ==== Batch 50: new concepts — heating/CD ====
@@ -4388,14 +4388,14 @@ ignition condition	ignition-condition	en	preferred
 ignition criterion	ignition-condition	en	alias	synonym
 点火判据	ignition-condition	zh	alias	synonym
 # ==== Batch 50: new concepts — divertor/SOL ====
-脱靶	plasma-detachment	zh	preferred
+脱靶	plasma-detachment	zh	alias	同义（非首选）
 detachment	plasma-detachment	en	preferred
 偏滤器脱靶	plasma-detachment	zh	alias	divertor context
 高再循环	high-recycling	zh	preferred
 high recycling	high-recycling	en	preferred
 high-recycling regime	high-recycling	en	alias	regime form
 高再循环区	high-recycling	zh	alias	regime form
-鞘层	debye-sheath	zh	preferred
+鞘层	debye-sheath	zh	alias	同义（非首选）
 sheath	debye-sheath	en	preferred
 # ==== Batch 50: new concepts — blanket/material ====
 陶瓷增殖剂	ceramic-breeder	zh	preferred
@@ -5322,7 +5322,8 @@ rigorous 2-step	rigorous-two-step	en	alias
 严格两步法	rigorous-two-step	zh	preferred
 Direct One-Step method	d1s	en	alias
 direct 1-step method	d1s	en	alias
-直接一步法	d1s	zh	preferred
+D1S直接一步法	d1s	zh	preferred	preferred zh
+直接一步法	d1s	zh	alias	同义（非首选）
 RAMI	rami	en	preferred
 RAMI分析	rami	zh	preferred
 reliability availability maintainability inspectability	rami	en	alias	full expansion

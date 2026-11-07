@@ -466,25 +466,6 @@ def test_validate_registry_rejects_zh_preferred_alias_mismatch(tmp_path: Path) -
     assert "preferred_zh" in combined and "contradicts" in combined
 
 
-def test_validate_registry_allows_grandfathered_mismatch(tmp_path: Path) -> None:
-    """Legacy mismatch pairs are grandfathered so the gate can ship without data edits."""
-    repo_root = Path(__file__).resolve().parents[1]
-    terms_dir = _min_terms(tmp_path)
-    _write_registry_tables(
-        terms_dir,
-        concepts=(
-            "# concept_id\tcategory\tpreferred_zh\tpreferred_en\tpreferred_abbr\tstatus\tnotes\tsource\n"
-            "sawtooth\tconcept\t锯齿\tsawtooth\t\tactive\t\t\n"
-        ),
-        aliases=(
-            "# alias\tconcept_id\tlang\tkind\n锯齿不稳定性\tsawtooth\tzh\tpreferred\n"
-        ),
-        evidence="sawtooth\thttps://example.com\t\t\t2026-02-04\n",
-    )
-    p = _run_validator(repo_root, terms_dir)
-    assert p.returncode == 0, f"grandfathered pair must pass:\n{p.stdout}\n{p.stderr}"
-
-
 def test_validate_registry_skips_check_when_concept_preferred_zh_empty(
     tmp_path: Path,
 ) -> None:

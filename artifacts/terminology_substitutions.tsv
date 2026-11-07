@@ -1683,8 +1683,8 @@ wastepackage	waste package	forbidden	en	auto-added for coverage uplift
 联合沉积	共沉积	forbidden	zh	误译co-：正确为 共沉积
 联系长度	连接长度	forbidden	zh	误译connection(连接≠联系)：正确为 连接长度
 联邦融合系统	联邦聚变系统	forbidden	zh	误译fusion：正确为 联邦聚变系统
-聚变三参数	三重积	forbidden	zh	误译：正确为 聚变三乘积
-聚变三重积	三重积	deprecated	zh	非标准：应为 聚变三乘积
+聚变三参数	聚变三乘积	forbidden	zh	误译：正确为 聚变三乘积
+聚变三重积	聚变三乘积	deprecated	zh	非标准：应为 聚变三乘积
 聚变产品光谱	聚变产物能谱	forbidden	zh	误译product+spectrum：正确为 聚变产物能谱
 聚变产物光谱	聚变产物能谱	forbidden	zh	误译spectrum(能谱≠光谱)：正确为 聚变产物能谱
 聚变倍增	聚变增益因子	forbidden	zh	倍增=doubling, wrong term

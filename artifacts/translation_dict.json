@@ -6267,7 +6267,7 @@
     "generated_at": "2026-11-07",
     "pairs_en2zh": 4676,
     "pairs_en2zh_short": 396,
-    "pairs_zh2en": 3418
+    "pairs_zh2en": 3419
   },
   "schema_version": 2,
   "zh2en": {
@@ -6359,6 +6359,7 @@
     "D-T反应": "D-T reaction",
     "D-T等离子体": "deuterium-tritium plasma",
     "D-³He反应": "D-³He reaction",
+    "D1S直接一步法": "D1S",
     "DAC": "derived air concentration",
     "DAQ": "data acquisition",
     "DBA": "design basis accident",

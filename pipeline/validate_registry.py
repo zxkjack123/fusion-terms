@@ -16,19 +16,6 @@ CONCEPT_ID_RE = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 # Uppercase tokens are treated as acronyms when auditing translated zh rows.
 ACRONYM_RE = re.compile(r"\b[A-Z][A-Z0-9]{1,12}\b")
 
-# Legacy zh/preferred aliases whose text intentionally differs from the concept's
-# preferred_zh. Measured 2026-11-07: 9 rows disagree in total, of which 4 have an
-# empty concept-level name (skipped below) and 5 are listed here. Rewriting them is
-# data work tracked in a separate task; until then the gate must not go red on them.
-_GRANDFATHERED_ZH_PREFERRED_MISMATCHES = frozenset(
-    {
-        ("sawtooth", "锯齿不稳定性"),
-        ("fusion-triple-product", "三重积"),
-        ("plasma-detachment", "脱靶"),
-        ("debye-sheath", "鞘层"),
-        ("d1s", "直接一步法"),
-    }
-)
 
 # Allowed provenance values for the concepts.tsv ``source`` column.
 # Use a prefix-based allowlist so that ``GB/T-4960.x`` variants all pass.
@@ -235,11 +222,7 @@ def validate_registry(terms_dir: Path) -> None:
         # preferred_zh (prevents the "two canonical Chinese names" class of defect).
         if kind == "preferred" and lang == "zh":
             concept_zh = concept_preferred_zh.get(concept_id, "")
-            if (
-                concept_zh
-                and concept_zh != alias
-                and (concept_id, alias) not in _GRANDFATHERED_ZH_PREFERRED_MISMATCHES
-            ):
+            if concept_zh and concept_zh != alias:
                 _fail(
                     r.path,
                     r.lineno,
