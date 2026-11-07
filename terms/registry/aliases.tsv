@@ -4564,7 +4564,7 @@ parametric decay	parametric-instability	en	alias	decay form
 H模台基	pedestal	zh	alias	H-mode form
 弹丸烧蚀速率	pellet-ablation	zh	alias	rate form
 物理溅射产额	sputtering-yield	zh	alias	yield form
-physical sputtering yield	physical-sputtering	en	alias	yield form
+physical sputtering yield	sputtering-yield	en	alias	yield form
 等离子体物理	plasma	zh	alias	physics form
 坪区输运	plateau-regime	zh	alias	transport form
 极向非对称	poloidal-asymmetry	zh	alias	variant

@@ -248,9 +248,9 @@ ENRICH = [
     ("H模台基", "pedestal", "zh", "alias", "H-mode form"),
     # pellet-ablation
     ("弹丸烧蚀速率", "pellet-ablation", "zh", "alias", "rate form"),
-    # physical-sputtering
-    ("物理溅射产额", "physical-sputtering", "zh", "alias", "yield form"),
-    ("physical sputtering yield", "physical-sputtering", "en", "alias", "yield form"),
+    # sputtering-yield (retargeted from physical-sputtering, #5322)
+    ("物理溅射产额", "sputtering-yield", "zh", "alias", "yield form"),
+    ("physical sputtering yield", "sputtering-yield", "en", "alias", "yield form"),
     # plasma
     ("等离子体物理", "plasma", "zh", "alias", "physics form"),
     # plateau-regime
