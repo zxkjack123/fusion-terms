@@ -97,14 +97,14 @@ The four tables under `terms/registry/` are themselves a **graph data model**:
 
 Current size (counted from data rows in `terms/registry/`, excluding comment
 and blank lines; as of
-[v2026.10.29](https://github.com/zxkjack123/fusion-terms/tree/v2026.10.29)):
+[v2026.11.08](https://github.com/zxkjack123/fusion-terms/tree/v2026.11.08)):
 
 | Table | Data rows |
 |---|---|
-| `concepts.tsv` | 3076 |
-| `aliases.tsv` | 10249 |
-| `evidence.tsv` | 3203 |
-| `definitions.tsv` | 6152 |
+| `concepts.tsv` | 3075 |
+| `aliases.tsv` | 10251 |
+| `evidence.tsv` | 3202 |
+| `definitions.tsv` | 6150 |
 
 Historical snapshot
 [v2026.04.14.1](https://github.com/zxkjack123/fusion-terms/tree/v2026.04.14.1)
@@ -238,7 +238,7 @@ Pin the tag in your integration/build pipeline, build a self-contained
 release root (or tarball), and generate & verify the manifest.
 
 ```bash
-TAG=v2026.10.29
+TAG=v2026.11.08
 
 git clone https://github.com/zxkjack123/fusion-terms.git
 cd fusion-terms
@@ -268,7 +268,7 @@ If you do not want to run the build pipeline, download the release tarball
 published by this repository and verify it locally.
 
 ```bash
-TAG=v2026.10.29
+TAG=v2026.11.08
 ASSET="fusion-terms-artifacts-${TAG}.tar.gz"
 URL="https://github.com/zxkjack123/fusion-terms/releases/download/${TAG}/${ASSET}"
 

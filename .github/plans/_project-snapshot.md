@@ -1,7 +1,7 @@
 # Project Snapshot — fusion-terms
 
 **Generated**: 2026-10-25
-**Updated**: 2026-11-06 (M3 closeout + M1 D1–D9 repair + allowlist backfill; counts re-measured with `python3 -m pipeline.validate_registry` — **use that caliber only**, not raw non-comment line counts)
+**Updated**: 2026-11-08 (v2026.11.08 release; counts re-measured with `python3 -m pipeline.validate_registry` — **use that caliber only**)
 **Release**: `v2026.10.29` (tag → release commit)；**下方 registry 计数为 2026-11-06 HEAD 实测值，不是该 release 的值**
 
 ## Architecture
@@ -19,7 +19,7 @@ fusion-terms/
 │       ├── concepts.tsv        # 3075 concepts
 │       ├── definitions.tsv     # 6150 definitions (bilingual)
 │       ├── evidence.tsv        # 3202 evidence rows
-│       └── aliases.tsv         # 10250 alias mappings
+│       └── aliases.tsv         # 10251 alias mappings
 ├── pipeline/                   # Python package: build, validation, indexing
 ├── tests/                      # pytest test suite
 ├── scripts/                    # Data import/extraction utilities

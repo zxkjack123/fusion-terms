@@ -85,14 +85,14 @@ OCR 提取内容质量检查与纠错**。
 ## Registry 规模
 
 当前规模（直接统计自 `terms/registry/` 数据行，不含注释/空行；截至
-[v2026.10.29](https://github.com/zxkjack123/fusion-terms/tree/v2026.10.29)）：
+[v2026.11.08](https://github.com/zxkjack123/fusion-terms/tree/v2026.11.08)）：
 
 | 表 | 数据行数 |
 |---|---|
-| `concepts.tsv` | 3076 |
-| `aliases.tsv` | 10249 |
-| `evidence.tsv` | 3203 |
-| `definitions.tsv` | 6152 |
+| `concepts.tsv` | 3075 |
+| `aliases.tsv` | 10251 |
+| `evidence.tsv` | 3202 |
+| `definitions.tsv` | 6150 |
 
 历史快照
 [v2026.04.14.1](https://github.com/zxkjack123/fusion-terms/tree/v2026.04.14.1)
@@ -215,7 +215,7 @@ fixtures，可修改或通过 CLI 覆盖），输出：
 生成并校验 manifest。
 
 ```bash
-TAG=v2026.10.29
+TAG=v2026.11.08
 
 git clone https://github.com/zxkjack123/fusion-terms.git
 cd fusion-terms
@@ -243,7 +243,7 @@ python3 -m pipeline.verify_release_contract --root "dist/stage/$TAG"
 不想运行构建流水线时，直接下载本仓库发布的 release tarball 并本地验证。
 
 ```bash
-TAG=v2026.10.29
+TAG=v2026.11.08
 ASSET="fusion-terms-artifacts-${TAG}.tar.gz"
 URL="https://github.com/zxkjack123/fusion-terms/releases/download/${TAG}/${ASSET}"
 

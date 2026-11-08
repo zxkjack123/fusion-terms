@@ -10452,7 +10452,6 @@ base load power	baseload	en	alias	spaced form
 secondary coolant loop	secondary-loop	en	alias	expanded form
 主冷却回路	primary-loop	zh	alias	qualified zh
 EC current drive	eccd	en	alias	short form
-bolometry	bolometer	en	alias	technique name
 辐射功率测量	bolometer	zh	alias	descriptive zh
 
 # --- Batch W: Fusion Materials Extended (2026-04-18) ---

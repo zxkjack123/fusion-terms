@@ -27,6 +27,28 @@
 
 - （待发布）
 
+## v2026.11.08
+
+2026-11-08 · 物理溅射归属修正 + W1 语义缺陷修复 + validator 首选名/缩写护栏；registry **3075 concepts / 10251 aliases / 3202 evidence / 6150 definitions**
+
+### Added
+
+- **validator 首选名一致性规则**（`#T-5315`）：`aliases.tsv` 的 `zh/preferred` 行必须等于该概念的 `concepts.preferred_zh`（概念侧为空时跳过），阻止「一个概念两个中文首选名」类缺陷重现。
+- **translated-zh 缩写反向断言**（`#T-5315`）：`source=translated:*` 的 zh 定义不得引入 `en` 定义与 `concepts.preferred_en` 之外的缩写（此前该门禁只存在于一次性 `/tmp` 脚本且为单向）。
+- **IME 词表覆盖补齐**（`#T-5290`）：`terms/allowlist_zh.txt` 补入 **160** 条 token-only 的 `preferred_zh`（205 条缺口中的合规子集；其余 45 条按政策排除：37 条专名 `EXCLUDE_FROM_IME`、3 条纯 ASCII 装置名、5 条含空格短语）。
+
+### Changed
+
+- **`物理溅射产额` / `物理溅射率` / `physical sputtering yield` 改指 `sputtering-yield`**（`#T-5322`）：与「溅射」家族（溅射产额/溅射率/溅射系数…）对齐；写作门禁的替换目标与中英词典同步修正。
+- **计划库治理**：归档 19 份已完成/被取代计划；`terminology-coverage-and-definition-quality`（M1–M4 全绿）与 `5072` 收口；`5184` 修复计划入库归档。
+
+### Fixed
+
+- **M3 A′**（`#T-5257`）：`物理溅射` 从 `sputtering` 的 alias 迁为 `physical-sputtering` 的 zh preferred；重建全部发布投影。
+- **M1 D1–D9**（`#T-5259`）：`turbulent-transport`、`debye-shielding`、`rupture-disc`、`nuclide-inventory`（`核素产额`→`核素存量`）、`lawson-criterion`、`plasma-termination`（并入 `plasma-shutdown`）六项已修；`poloidal-field-coil`、`pfirsch-schlueter-regime`、`nuclear-fusion` 三项以 `UNDECIDABLE` 书面归档（阻断在授权边界之外）。
+- **O-6 祖父名单清零**（`#T-5326`）：删除 5 条「一概念两个 zh preferred」重复声明（同义形式保留为 `alias`），validator 的豁免机制随之移除。
+- **`bolometry/bolometer`** 重复别名行删除（`#T-5332`）。
+
 ## v2026.10.30
 
 2026-10-30 · 专名台账 + 机械门禁；IME 词表 6378 → **6375**（移除 3 条拉丁专名串），覆盖率口径更正为 **98.54%**
